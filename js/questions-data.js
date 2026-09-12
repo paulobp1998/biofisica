@@ -863,6 +863,797 @@ const QUESTIONS_DATA = [
       "Opção D é incorreta: N varia entre 20 e 21 entre os nuclídeos."
     ],
     nursingApplication: "Compreender as relações entre isóbaros e isótopos permite ao enfermeiro interpretar relatórios laboratoriais e entender as reações de decaimento: por exemplo, quando o Potássio-40 no organismo sofre decaimento beta, ele transmuta-se no seu isóbaro Cálcio-40, mantendo a massa A inalterada."
+  },
+  // ==========================================
+  // TÓPICO 1: NOVAS QUESTÕES (106 a 110)
+  // ==========================================
+  {
+    id: 106,
+    topicId: 1,
+    question: "A força é uma grandeza física vetorial. Num sistema de tração esquelética hospitalar, duas forças perpendiculares entre si com módulos de 30 N e 40 N atuam simultaneamente sobre um pino ortopédico no membro do doente. Qual é o módulo da força resultante aplicada sobre o pino?",
+    options: [
+      "70 N",
+      "10 N",
+      "50 N",
+      "1200 N"
+    ],
+    correctIndex: 2,
+    explanation: "Por ser uma grandeza vetorial, a resultante de duas forças concorrentes perpendiculares entre si (ângulo de 90°) é calculada pelo Teorema de Pitágoras: R = √(F₁² + F₂²) = √(30² + 40²) = √(900 + 1600) = √2500 = 50 N. Não se podem somar algebricamente grandezas vetoriais com direções distintas.",
+    distractorAnalysis: [
+      "Opção A (70 N) comete o erro clássico de somar algebricamente os módulos (30 + 40), o que só seria válido se as duas forças tivessem rigorosamente a mesma direção e o mesmo sentido.",
+      "Opção B (10 N) subtrai os módulos (40 - 30), o que só ocorreria se atuassem na mesma linha reta em sentidos rigorosamente opostos.",
+      "Opção D (1200 N) multiplica os valores dos módulos, o que não tem qualquer significado físico na determinação da resultante de forças."
+    ],
+    nursingApplication: "Em ortopedia, sistemas de tração esquelética e cutânea (como a tração de Russell ou tração de Buck) utilizam roldanas e pesos calibrados para alinhar fragmentos de fraturas. O enfermeiro deve compreender a composição vetorial das forças: alterar o ângulo de um cabo ou a posição do membro modifica completamente a direção e o módulo da força resultante transmitida ao osso fraturado."
+  },
+  {
+    id: 107,
+    topicId: 1,
+    question: "Ao mobilizar um doente acamado com lençol de transferência, o enfermeiro constata que é necessária uma força maior para colocar o corpo em movimento a partir do repouso do que para manter o seu deslizamento suave. Que princípio biofísico do atrito explica este facto?",
+    options: [
+      "A aceleração da gravidade diminui assim que o doente entra em movimento retilíneo.",
+      "O coeficiente de atrito estático (μ_e) entre os tecidos em repouso é superior ao coeficiente de atrito cinético (μ_c) entre superfícies em movimento relativo.",
+      "A massa do doente reduz-se à medida que a velocidade de deslizamento aumenta.",
+      "A força normal exercida pelo colchão anula-se completamente durante o movimento."
+    ],
+    correctIndex: 1,
+    explanation: "Em física do contacto, as microasperezas entre duas superfícies em repouso entrelaçam-se intimamente, exigindo uma força limite superior para romper as adesões microscópicas (atrito estático máximo, F_atrito_e = μ_e · N). Uma vez iniciado o movimento relativo, o atrito cinético (F_atrito_c = μ_c · N) é menor porque as superfícies apenas deslizam sobre as pontas das asperezas, sendo sempre μ_e > μ_c.",
+    distractorAnalysis: [
+      "Opção A é incorreta: a aceleração da gravidade (g) é constante e invariável com o estado de movimento no leito.",
+      "Opção C viola a conservação da massa newtoniana: a massa de um doente é invariável à escala das velocidades hospitalares.",
+      "Opção D é falsa: a força normal N continua presente e igual ao peso perpendicular ao colchão durante o deslizamento."
+    ],
+    nursingApplication: "O uso de lençóis de transferência de baixo atrito (feitos de tecidos técnicos sintéticos deslizantes com coeficiente μ muito reduzido) diminui em mais de 60% a força de atrito requerida para mover o doente. Isto protege simultaneamente a coluna do enfermeiro contra esforços excessivos e reduz as forças de cisalhamento que lesam a pele frágil do doente idoso."
+  },
+  {
+    id: 108,
+    topicId: 1,
+    question: "Na linguagem hospitalar quotidiana, diz-se frequentemente que 'o doente pesa 70 kg'. Do ponto de vista da física e da biofísica rigorosa, qual é a distinção fundamental entre MASSA e PESO?",
+    options: [
+      "Massa e peso são grandezas exatamente equivalentes, sendo ambas forças vetoriais medidas em quilogramas.",
+      "A Massa é uma grandeza escalar intrínseca que mede a inércia da matéria (em kg), enquanto o Peso é uma força vetorial atrativa (em Newton, P = m·g) exercida pela gravidade sobre essa massa.",
+      "A Massa depende do local onde o doente se encontra, enquanto o Peso é invariável em qualquer planeta do universo.",
+      "O Peso é uma grandeza escalar medida em Pascals e a Massa é uma grandeza vetorial medida em Joules."
+    ],
+    correctIndex: 1,
+    explanation: "A Massa (m) é uma propriedade escalar intrínseca que quantifica a quantidade de matéria e a sua inércia, sendo medida em quilogramas (kg) no SI. O Peso (P) é uma força vetorial (P = m · g) resultante da interação gravitacional entre o corpo e a Terra, sendo medido em Newtons (N). Um doente com 70 kg de massa tem na Terra um peso real de aproximadamente P = 70 × 9,8 = 686 N.",
+    distractorAnalysis: [
+      "Opção A confunde uma propriedade escalar da matéria com uma força vetorial, perpetuando o erro de senso comum de medir forças em kg.",
+      "Opção C inverte completamente os conceitos: a massa é constante em qualquer ponto do universo, enquanto o peso varia com a aceleração da gravidade local g.",
+      "Opção D atribui unidades totalmente erróneas (Pascal é unidade de pressão e Joule é de energia/trabalho)."
+    ],
+    nursingApplication: "Em farmacologia clínica e cálculo de dosagem terapêutica (mg/kg/dia), os enfermeiros utilizam a massa corporal (kg). Contudo, ao calcular a sobrecarga mecânica articular, a resistência do leito ou as tensões em próteses, o parâmetro biomecânico relevante é a força Peso (em Newton), que multiplica a massa pela aceleração gravitacional."
+  },
+  {
+    id: 109,
+    topicId: 1,
+    question: "Um membro inferior de um doente acamado com fratura encontra-se sujeito a um sistema mecânico de alinhamento. Para garantir que o membro permaneça completamente imóvel sem sofrer qualquer translação indesejada, que condição de equilíbrio de forças tem de ser rigorosamente satisfeita?",
+    options: [
+      "A resultante das forças que atuam no membro deve ser não-nula para mantê-lo sob tensão ativa contínua.",
+      "A soma vetorial de todas as forças aplicadas ao membro deve ser rigorosamente nula (∑Fx = 0 e ∑Fy = 0).",
+      "Apenas a força exercida pelos pesos suspensos precisa de ser igual ao dobro do peso do doente.",
+      "As forças devem atuar exclusivamente num único eixo vertical, sendo impossível haver forças horizontais."
+    ],
+    correctIndex: 1,
+    explanation: "A primeira condição de equilíbrio (equilíbrio de translação estático) da mecânica newtoniana postula que a soma vetorial de todas as forças externas aplicadas a um corpo tem de ser igual ao vetor nulo (∑F = 0). No plano cartesiano, isto desdobra-se na exigência simultânea de que a soma das componentes horizontais seja zero (∑Fx = 0) e a soma das componentes verticais seja zero (∑Fy = 0).",
+    distractorAnalysis: [
+      "Opção A está incorreta: se a resultante fosse não-nula, o membro aceleraria (F = m·a), deslocando-se e desalinhando os topos ósseos da fratura.",
+      "Opção C propõe uma relação arbitrária perigosa que provocaria tração excessiva e lesão neurológica ou vascular no membro.",
+      "Opção D é incorreta: sistemas de tração utilizam frequentemente cabos diagonais com componentes horizontais e verticais em simultâneo."
+    ],
+    nursingApplication: "O controlo da posição e dos cabos de tração é uma responsabilidade vigilante de enfermagem: se os pesos de tração tocarem no chão ou se os cabos ficarem presos nas roldanas da cama, o equilíbrio de forças é quebrado (∑F ≠ 0), provocando dor aguda ao doente e desvio dos fragmentos ósseos fraturados."
+  },
+  {
+    id: 110,
+    topicId: 1,
+    question: "Sabendo que a pressão é a razão entre força e área (P = F / A), por que motivo uma agulha hipodérmica ultra-fina (calibre fino, como 27G) penetra a pele e os tecidos com enorme facilidade mediante uma força muscular manual minúscula do enfermeiro?",
+    options: [
+      "Porque a agulha emite uma corrente elétrica que desintegra a derme antes do contacto.",
+      "Porque a ponta biselada da agulha tem uma área de contacto microscópica (A minúsculo), fazendo com que uma força reduzida (F) gere uma pressão local colossal (P) que supera a tensão de rutura mecânica da pele.",
+      "Porque as agulhas hipodérmicas eliminam a pressão atmosférica dentro do tecido biológico.",
+      "Porque a pele humana tem uma complacência infinita que atrai o metal para o seu interior."
+    ],
+    correctIndex: 1,
+    explanation: "Pela fórmula P = F / A, a pressão é inversamente proporcional à área de contacto. A ponta biselada de uma agulha de pequeno calibre possui uma área de secção da ordem de frações de milímetro quadrado (A ≈ 10⁻⁷ m²). Uma força de compressão manual de apenas 2 N exercida pelo enfermeiro gera na ponta uma pressão local superior a 20 MegaPascals (20 000 000 Pa), superando instantaneamente a resistência à tração da epiderme com mínimo traumatismo tecidual.",
+    distractorAnalysis: [
+      "Opção A é fantasiosa: agulhas comuns de injeção são mecânicas e não utilizam eletricidade.",
+      "Opção C é falsa: a penetração depende da pressão mecânica de cisalhamento pontual e não de alterações na pressão atmosférica.",
+      "Opção D não possui fundamento físico: os tecidos oferecem resistência mecânica à deformação e penetração."
+    ],
+    nursingApplication: "Na administração de fármacos subcutâneos e intramusculares, a escolha do calibre da agulha (ex: agulhas finas de insulina 30G-32G vs agulhas intramusculares 21G-23G) rege a relação pressão/força e o conforto do utente: agulhas mais finas exigem menos força para transpor a pele, causando menos dor e lesão tissular."
+  },
+
+  // ==========================================
+  // TÓPICO 2: NOVAS QUESTÕES (206 a 210)
+  // ==========================================
+  {
+    id: 206,
+    topicId: 2,
+    question: "O Momento de uma Força (ou Torque, τ = F · d · sen θ) mede a capacidade que uma força tem de produzir rotação em torno de um ponto de apoio. De que forma o braço da alavanca (d) influencia a força muscular necessária para manter uma articulação em equilíbrio?",
+    options: [
+      "Quanto mais próximo da articulação o músculo estiver inserido (menor braço d), menor é a força que o músculo tem de gerar.",
+      "Quanto maior for o braço da força resistente (distância da carga ao ponto de apoio), maior será o torque que a carga produz, exigindo muito maior força muscular para manter o equilíbrio rotacional.",
+      "O braço da alavanca só tem efeito se o corpo estiver em queda livre no vácuo.",
+      "O torque articular é sempre constante e independente da distância ao ponto de apoio."
+    ],
+    correctIndex: 1,
+    explanation: "Para haver equilíbrio rotacional numa articulação, a soma dos momentos tem de ser nula: M_potência = M_resistência => F_músculo · d_músculo = F_carga · d_carga. Se uma carga externa estiver muito afastada da articulação (maior d_carga), ela gera um momento resistente muito maior. Para equilibrar, o músculo necessita de contrair com uma força F_músculo substancialmente superior.",
+    distractorAnalysis: [
+      "Opção A inverte a relação: se d_músculo é menor, o músculo precisa de gerar MAIOR força para produzir o mesmo momento (F = M / d).",
+      "Opção C é absurda, pois o momento de força é o princípio universal da mecânica de rotação dos corpos rígidos.",
+      "Opção D ignora a dependência direta do torque em relação à distância d (τ = F·d)."
+    ],
+    nursingApplication: "Ao transportar objetos pesados (ou caixas de soros hospitalares), o enfermeiro deve segurar o peso o mais junto possível ao tronco. Se estender os braços à frente, a distância (d) da carga à articulação lombar triplica, triplicando o momento fletor na coluna e multiplicando a tensão nos músculos e discos lombares para milhares de Newtons."
+  },
+  {
+    id: 207,
+    topicId: 2,
+    question: "O movimento de elevação do corpo sobre as pontas dos pés (flexão plantar pelo trícipe sural no tornozelo) é o exemplo anatómico clássico de uma alavanca de 2.ª classe (inter-resistente). Qual é a principal característica biomecânica deste tipo de alavanca?",
+    options: [
+      "A força resistente situa-se entre o ponto de apoio (metatarsos) e a força potente (tendão de Aquiles), apresentando sempre vantagem mecânica de força (VM > 1).",
+      "O ponto de apoio situa-se sempre entre a potência e a resistência, tendo vantagem mecânica nula.",
+      "A força potente situa-se no meio, obrigando o músculo a fazer o triplo do peso do corpo.",
+      "Não permite qualquer sustentação de carga, funcionando apenas como amortecedor passivo."
+    ],
+    correctIndex: 0,
+    explanation: "Na alavanca de 2.ª classe (inter-resistente), a resistência (peso do corpo transmitido pela tíbia ao tornozelo) localiza-se entre o ponto de apoio (cabeças dos metatarsos no chão) e a potência (tração do tendão de Aquiles no calcâneo). Como o braço de potência é sempre maior que o braço de resistência, a vantagem mecânica de força é superior a 1 (VM > 1), permitindo erguer todo o peso corporal com relativa facilidade muscular.",
+    distractorAnalysis: [
+      "Opção B descreve uma alavanca de 1.ª classe (interfixa).",
+      "Opção C descreve uma alavanca de 3.ª classe (interpotente).",
+      "Opção D é contrária à função biomecânica primária da marcha humana."
+    ],
+    nursingApplication: "A alavanca inter-resistente do tornozelo é o mecanismo biofísico que viabiliza a marcha bípede e o equilíbrio em ortostatismo prolongado. No internamento, doentes com repouso prolongado ou lesão do tendão de Aquiles perdem esta vantagem mecânica de sustentação, necessitando de reabilitação motora e apoio de enfermagem na transferência para a poltrona."
+  },
+  {
+    id: 208,
+    topicId: 2,
+    question: "Num ensaio de tração com registo da curva Tensão-Deformação de um material de borracha ou elastómero sintético (como o látex ou silicone de luvas cirúrgicas), o que delimita o chamado 'Limite Elástico'?",
+    options: [
+      "O ponto a partir do qual o material se transforma num gás rarefeito.",
+      "O valor máximo de tensão que o material pode suportar de modo a que, após a cessação da força, ainda consiga regressar integralmente à sua forma e comprimento originais sem deformação plástica residual.",
+      "O ponto em que a temperatura do material atinge o zero absoluto.",
+      "O ponto em que a força de tração se anula espontaneamente por ressonância quântica."
+    ],
+    correctIndex: 1,
+    explanation: "O Limite Elástico é o ponto de transição crítico numa curva tensão-deformação: abaixo desse limite, a deformação é estritamente elástica e reversível (o corpo recupera a sua geometria inicial ao descarregar a força). Ultrapassado o limite elástico, o material entra em regime plástico, sofrendo rearranjos microscópicos irreversíveis que deixam uma deformação permanente residual, mesmo após retirar a carga.",
+    distractorAnalysis: [
+      "Opção A confunde deformação mecânica de sólidos com transições de fase termodinâmicas.",
+      "Opção C é falsa: a elasticidade e o limite elástico não dependem do zero absoluto de temperatura.",
+      "Opção D é incorreta: a força de tração não se anula por efeitos quânticos em materiais macroscópicos."
+    ],
+    nursingApplication: "Ao calçar luvas cirúrgicas de látex ou nitrilo, o profissional de enfermagem estica o material. Se a tração for excessiva e ultrapassar o limite elástico, a luva fica com folgas permanentes, perde a adesão anatómica às mãos e pode rasgar (atingindo a tensão de rutura), quebrando a barreira assética e o isolamento de proteção biológica."
+  },
+  {
+    id: 209,
+    topicId: 2,
+    question: "Em ciência dos materiais, um material como o vidro de uma ampola farmacêutica é classificado como 'frágil', ao passo que o colagénio ou o aço cirúrgico são 'tenazes'. O que define biofisicamente um material Frágil?",
+    options: [
+      "É um material que se deforma plasticamente durante semanas antes de quebrar.",
+      "É um material que fratura subitamente com pouca ou nenhuma deformação plástica prévia assim que ultrapassa o seu limite elástico, absorvendo pouca energia antes da rutura.",
+      "É um material que flui espontaneamente à temperatura ambiente como a água.",
+      "É um material que possui um Módulo de Young rigorosamente igual a zero."
+    ],
+    correctIndex: 1,
+    explanation: "A fragilidade não significa necessariamente falta de resistência mecânica (o vidro é muito duro e resiste bem à compressão), mas sim a incapacidade de sofrer deformação plástica: sob tração ou flexão, assim que atinge a tensão crítica, propaga fendas à velocidade do som e quebra catastroficamente com absorção mínima de energia mecânica. Pelo contrário, materiais tenazes deformam-se plasticamente absorvendo grande energia antes da fratura.",
+    distractorAnalysis: [
+      "Opção A descreve um comportamento dúctil com fluência plástica prolongada, o oposto de fragilidade.",
+      "Opção C descreve um fluido viscoso de Newton.",
+      "Opção D é incorreta: materiais frágeis como o vidro têm alto Módulo de Young (são muito rígidos até quebrarem)."
+    ],
+    nursingApplication: "Ao abrir ampolas de vidro contendo medicação endovenosa, a fragilidade do vidro faz com que a quebra ocorra por propagação instantânea de fenda ao longo da linha de pré-corte. O enfermeiro deve proteger os dedos com uma compressa estéril e inspecionar a solução com agulhas com filtro, prevenindo cortes nas mãos e aspiração de microfragmentos de vidro para a seringa."
+  },
+  {
+    id: 210,
+    topicId: 2,
+    question: "Muitos tecidos biológicos humanos, como os ligamentos e os discos intervertebrais, apresentam comportamento Viscoelástico. O que caracteriza a Viscoelasticidade num tecido?",
+    options: [
+      "O tecido comporta-se exatamente como um metal puro, sem qualquer dependência temporal.",
+      "A resposta de deformação mecânica combina propriedades elásticas (recuperação) e propriedades viscosas (dissipação de energia), dependendo da velocidade e da duração temporal com que a força é aplicada.",
+      "O tecido perde toda a sua água quando comprimido e nunca mais recupera o volume.",
+      "O Módulo de Young do tecido é negativo em todas as temperaturas corporais."
+    ],
+    correctIndex: 1,
+    explanation: "A viscoelasticidade é o comportamento em que os materiais exibem características simultaneamente elásticas (sólido de Hooke) e viscosas (fluido de Newton). Nos tecidos viscoelásticos, a resposta mecânica depende do tempo e da taxa de deformação: se uma carga for aplicada muito rapidamente, o tecido responde com maior rigidez e resistência; se a carga for mantida ao longo do tempo, ocorre relaxamento de tensões e fluência (creep).",
+    distractorAnalysis: [
+      "Opção A é incorreta: os metais à temperatura ambiente têm comportamento elasto-plástico quase independente do tempo em baixas tensões.",
+      "Opção C é falsa: os tecidos viscoelásticos recuperam a sua hidratação e forma inicial quando a carga é retirada.",
+      "Opção D é uma impossibilidade física (o módulo de elasticidade de materiais reais é sempre positivo)."
+    ],
+    nursingApplication: "Devido à viscoelasticidade dos discos intervertebrais, quando um enfermeiro aplica uma mobilização rápida e brusca a um doente, os tecidos biológicos não têm tempo de se adaptar e absorvem a carga como estruturas rígidas, aumentando o risco de lesão. Movimentos progressivos e controlados permitem a acomodação viscoelástica segura dos tecidos."
+  },
+
+  // ==========================================
+  // TÓPICO 3: NOVAS QUESTÕES (306 a 310)
+  // ==========================================
+  {
+    id: 306,
+    topicId: 3,
+    question: "O tecido ósseo é um compósito de cristais de hidroxiapatite e fibras de colagénio. Se um osso for submetido a descalcificação ácida (remoção de toda a hidroxiapatite inorgânica, restando apenas a matriz de colagénio), qual será o comportamento mecânico resultante desse osso?",
+    options: [
+      "Fica extremamente quebradiço e pulveriza-se sob a mais ligeira pressão dos dedos.",
+      "Mantém a sua forma anatómica externa, mas torna-se extraordinariamente flexível e elástico como borracha, podendo ser dobrado ou atado num nó sem se quebrar.",
+      "Aumenta a sua resistência à compressão axial para o dobro do normal.",
+      "Transforma-se instantaneamente num líquido transparente à temperatura corporal."
+    ],
+    correctIndex: 1,
+    explanation: "Esta clássica experiência biomecânica demonstra os papéis da matriz bifásica: sem os cristais de hidroxiapatite mineral (que conferem a rigidez e a dureza), resta apenas a rede tridimensional de colagénio tipo I. O colagénio possui alta resistência à tração e grande flexibilidade elástica, fazendo com que o osso descalcificado se curve facilmente sem quebrar. Em contrapartida, se o osso for calcinado ao fogo (queimando o colagénio e deixando apenas o mineral), torna-se rijo mas frágil como giz.",
+    distractorAnalysis: [
+      "Opção A descreve o resultado da calcinação térmica (remoção do colagénio), e não da descalcificação.",
+      "Opção C é falsa: sem hidroxiapatite, a resistência à compressão é praticamente nula.",
+      "Opção D é incorreta: o colagénio continua a ser uma matriz fibrosa sólida e estruturada."
+    ],
+    nursingApplication: "Em patologias como o raquitismo infantil ou a osteomalácia no adulto (deficiência severa de vitamina D e cálcio), a mineralização da matriz óssea é deficiente. Os ossos dos membros inferiores contêm proporção excessiva de colagénio não-mineralizado, tornando-se maleáveis e curvando-se sob o peso corporal (deformidades em varo ou valgo das pernas)."
+  },
+  {
+    id: 307,
+    topicId: 3,
+    question: "Os discos intervertebrais da coluna funcionam como amortecedores biomecânicos compostos por um anel fibroso periférico e um núcleo pulposo central gelatinoso. Sob que combinação de solicitações mecânicas o disco intervertebral apresenta MAIOR risco de sofrer rutura do anel e herniação discal?",
+    options: [
+      "Compressão axial uniforme em decúbito dorsal plano de repouso.",
+      "Flexão acentuada do tronco combinada com esforço de torção (rotação axial) e carga de compressão assimétrica.",
+      "Imersão ambiental em água aquecida em piscina de reabilitação.",
+      "Tração cervical fisiológica suave com colar cervical."
+    ],
+    correctIndex: 1,
+    explanation: "Na flexão do tronco, a face anterior dos corpos vertebrais aproxima-se, comprimindo a porção anterior do disco e forçando o núcleo pulposo gelatinoso para trás (no sentido posterior/póstero-lateral). Se a este movimento se juntar uma força de rotação (torção), metade das lamelas de colagénio do anel fibroso entram em tensão extrema enquanto a outra metade relaxa. A soma de flexão com torção sob carga gera o pico de tensão de cisalhamento que rasga o anel fibroso, provocando hérnia discal.",
+    distractorAnalysis: [
+      "Opção A é a situação de menor pressão intradiscal de todo o ciclo diário (cerca de 25 mmHg de pressão no disco).",
+      "Opção C alivia a pressão mecânica nos discos através da flutuação.",
+      "Opção D é uma terapêutica descompressiva que afasta os corpos vertebrais e reduz a compressão do disco."
+    ],
+    nursingApplication: "A hérnia discal lombar (L4-L5 ou L5-S1) é a lesão ocupacional musculoesquelética mais prevalente nos profissionais de saúde. Para proteger a coluna, o enfermeiro nunca deve rodar o tronco (torção) enquanto inclina o corpo para a frente (flexão) a prestar cuidados a um doente no leito."
+  },
+  {
+    id: 308,
+    topicId: 3,
+    question: "A Lei de Wolff na fisiologia osteomuscular postula que o osso vivo se remodela e adapta a sua densidade e arquitetura interna em resposta às cargas mecânicas que sobre ele atuam. Que mecanismo biofísico celular está na base desta adaptação?",
+    options: [
+      "A circulação de ar dentro dos canais ósseos que sopra cálcio para a medula.",
+      "A deformação mecânica do osso gera diminutas tensões elétricas (efeito piezoelétrico) e fluxo de fluido intersticial nos canalículos que ativam os osteócitos a estimular a deposição óssea pelos osteoblastos.",
+      "A gravidade atrai diretamente átomos de chumbo da atmosfera para substituir as células ósseas.",
+      "A ausência de movimento faz com que os ossos aumentem de densidade mineral por acumulação passiva."
+    ],
+    correctIndex: 1,
+    explanation: "O osso possui propriedades piezoelétricas: quando submetido a tensões mecânicas cíclicas de compressão e flexão durante a marcha, a matriz de colagénio e hidroxiapatite gera minúsculos diferenciais de potencial elétrico. Simultaneamente, as forças comprimem os canalículos ósseos gerando fluxos de fluido (shear stress) detetados pelos osteócitos, que sinalizam os osteoblastos para reforçar as trabéculas ósseas nas áreas de maior tensão.",
+    distractorAnalysis: [
+      "Opção A é uma ficção anatómica: não há circulação de ar nos ossos humanos.",
+      "Opção C é falsa: a mineralização depende do metabolismo de fosfato de cálcio mediado pela vitamina D e paratormona.",
+      "Opção D contraria o princípio biológico: a imobilidade e ausência de carga inibem os osteoblastos e ativam a reabsorção osteoclástica."
+    ],
+    nursingApplication: "Em doentes acamados em repouso absoluto prolongado (ou doentes com lesões neurológicas paralisantes), a ausência de cargas mecânicas e do efeito piezoelétrico suspende o estímulo da Lei de Wolff. Ocorre desmineralização óssea acelerada (osteoporose de desuso) e hipercalciúria, predispondo a litíase renal e fraturas por fragilidade no primeiro levante."
+  },
+  {
+    id: 309,
+    topicId: 3,
+    question: "Os tendões ligam os músculos aos ossos e são constituídos por feixes compactos e paralelos de colagénio tipo I. Qual é a principal propriedade mecânica que permite aos tendões transmitir eficientemente a força gerada pelo músculo?",
+    options: [
+      "Comportam-se como líquidos perfeitos sem qualquer rigidez estrutural.",
+      "Elevadíssima resistência à tração unidirecional com deformação elástica relativamente pequena (~4 a 8%), transmitindo o esforço quase instantaneamente com mínima perda de energia mecânica.",
+      "Grande capacidade de contração química independente gerada por mitocôndrias próprias.",
+      "Capacidade de girar a 360 graus como parafusos metálicos para enrolar o membro."
+    ],
+    correctIndex: 1,
+    explanation: "A microarquitetura dos tendões consiste em fibrilhas de colagénio orientadas paralelamente ao longo do eixo longitudinal de tração. Esta estrutura unidirecional confere uma resistência à tração excecional (cerca de 50 a 100 MPa) com alta rigidez. Um tendão elástico de mais funcionaria como um elástico frouxo, dissipando a energia e atrasando a resposta motora do membro esquelético.",
+    distractorAnalysis: [
+      "Opção A confunde estruturas conjuntivas densas com fluidos corporais.",
+      "Opção C é falsa: o tendão é um transmissor passivo de força e não possui maquinaria contrátil ativa de miofilamentos.",
+      "Opção D é biologicamente impossível e anatomicamente absurda."
+    ],
+    nursingApplication: "Se um tendão for forçado para além da sua deformação elástica fisiológica (> 8-10% de estiramento relativo), as fibras de colagénio sofrem micro-roturas (tendinite/tendinose) ou rotura completa. O enfermeiro deve instruir doentes em recuperação ortopédica sobre a progressão lenta de cargas para permitir a remodelação tendinosa sem recidivas."
+  },
+  {
+    id: 310,
+    topicId: 3,
+    question: "A relação comprimento-tensão muscular demonstra que a força ativa máxima que um músculo esquelético consegue desenvolver depende do grau de estiramento prévio dos seus sarcómeros. Em que situação a força de contração ativa é MÁXIMA?",
+    options: [
+      "Quando o músculo está completamente esticado até ao limite anatómico de rotura das fáscias.",
+      "Quando os sarcómeros se encontram no seu comprimento de repouso fisiológico ideal (~2,0 a 2,2 μm), permitindo o número máximo de pontes cruzadas entre os filamentos de actina e miosina.",
+      "Quando o músculo está totalmente encurtado ao máximo, com os filamentos de actina a colidirem no centro do sarcómero.",
+      "A força muscular é rigorosamente idêntica em qualquer comprimento por ser independente de pontes moleculares."
+    ],
+    correctIndex: 1,
+    explanation: "Pela teoria do filamento deslizante de Huxley, a força muscular depende diretamente do número de pontes cruzadas de miosina ligadas aos filamentos de actina. No comprimento ótimo de repouso (L₀), a sobreposição entre filamentos finos e grossos é máxima. Se o músculo for esticado em demasia, os filamentos afastam-se e as cabeças de miosina não conseguem alcançar a actina; se for encurtado em demasia, os filamentos de actina sobrepõem-se no centro e interferem negativamente.",
+    distractorAnalysis: [
+      "Opção A diminui a força ativa para valores próximos de zero devido à ausência de sobreposição dos miofilamentos.",
+      "Opção C reduz a força de contração por colisão dos filamentos e impedimento estérico molecular.",
+      "Opção D ignora a base biofísica molecular e fisiológica da contração muscular."
+    ],
+    nursingApplication: "Este princípio é crucial na biomecânica de doentes com paresias ou contraturas articulares: manter um membro permanentemente imobilizado em flexão encurta cronicamente os sarcómeros, provocando atrofia muscular e perda dramática de força. O posicionamento funcional fisiológico garantido pelo enfermeiro preserva o comprimento ótimo dos sarcómeros."
+  },
+
+  // ==========================================
+  // TÓPICO 4: NOVAS QUESTÕES (406 a 410)
+  // ==========================================
+  {
+    id: 406,
+    topicId: 4,
+    question: "Pela Equação da Continuidade para fluidos incompressíveis (Q = A · v = constante), o caudal volumétrico Q mantém-se constante ao longo de um circuito fechado. Considerando que a área de secção transversal total somada de todos os capilares sistémicos é cerca de 800 a 1000 vezes maior do que a área da artéria Aorta, o que sucede à velocidade média do sangue nos capilares?",
+    options: [
+      "A velocidade média do sangue nos capilares atinge valores supersónicos para acelerar a oxigenação.",
+      "A velocidade média do sangue reduz-se drasticamente para valores mínimos (< 1 mm/s), proporcionando o tempo necessário para as trocas gasosas e metabólicas entre o sangue e os tecidos.",
+      "A velocidade média do sangue nos capilares é exatamente igual à velocidade na aorta.",
+      "O fluxo de sangue cessa completamente e torna-se um sólido indeformável de Hooke."
+    ],
+    correctIndex: 1,
+    explanation: "Como Q = A · v, a velocidade média de escoamento é inversamente proporcional à área de secção: v = Q / A. Embora um capilar individual seja microscópico, o corpo humano possui biliões de capilares dispostos em paralelo, cuja área de secção transversal total combinada ultrapassa 2500 a 3000 cm² (contra cerca de 3 a 4 cm² da aorta). Consequentemente, a velocidade cai de ~30-40 cm/s na aorta para menos de 0,05 cm/s (0,5 mm/s) nos capilares.",
+    distractorAnalysis: [
+      "Opção A é fisicamente absurda e provocaria a destruição dos capilares por forças de cisalhamento.",
+      "Opção C viola diretamente a lei da conservação da massa descrita pela Equação da Continuidade.",
+      "Opção D é uma afirmação sem sentido físico ou biológico."
+    ],
+    nursingApplication: "A velocidade lentíssima do sangue na rede capilar é uma condição biofísica essencial da vida: se o sangue escoasse rapidamente pelos capilares, não haveria tempo suficiente para a difusão do oxigénio e da glicose para as células, nem para a recolha do dióxido de carbono e resíduos metabólicos. O enfermeiro avalia indiretamente esta perfusão capilar através do teste do tempo de preenchimento capilar (normal < 2 segundos)."
+  },
+  {
+    id: 407,
+    topicId: 4,
+    question: "O Princípio de Bernoulli estabelece que, ao longo de uma linha de corrente de escoamento, a soma da pressão estática, da pressão dinâmica e da energia potencial gravítica é constante (P + 1/2 ρ·v² + ρ·g·h = constante). O que sucede à pressão lateral exercida pelo sangue contra a parede vascular numa zona onde a artéria sofre um estreitamento severo (estenose)?",
+    options: [
+      "A pressão lateral aumenta para o dobro do normal na zona estreitada.",
+      "Devido ao aumento forçado da velocidade do sangue na constrição (Equação da Continuidade), a energia cinética (pressão dinâmica) sobe acentuadamente, provocando uma queda da pressão lateral estática que pode favorecer o colapso vascular transitório.",
+      "A velocidade anula-se e a viscosidade do sangue sobe para o infinito.",
+      "A pressão lateral permanece perfeitamente inalterada porque o sangue não obedece a leis físicas."
+    ],
+    correctIndex: 1,
+    explanation: "Pela Equação da Continuidade, ao passar por uma estenose (menor secção A), a velocidade v do fluido aumenta bruscamente. Pelo Princípio de Bernoulli, com o aumento substancial do termo de pressão dinâmica (1/2 ρ·v²), a pressão lateral P que o sangue exerce perpendicularmente contra as paredes do vaso tem de diminuir para conservar a energia total. Em vasos elásticos com paredes fragilizadas, esta diminuição de pressão lateral pode colapsar a artéria.",
+    distractorAnalysis: [
+      "Opção A confunde a pressão de impacto frontal a montante da obstrução com a pressão lateral no interior do jacto de estenose.",
+      "Opção C é absurda: a velocidade aumenta na estenose e a viscosidade intrínseca do sangue não vai para o infinito.",
+      "Opção D é falsa: o sangue e o sistema circulatório obedecem rigorosamente aos princípios físicos de conservação da energia."
+    ],
+    nursingApplication: "Este fenómeno de Bernoulli, associado à turbulência a jusante da estenose, é responsável pelas vibrações parietais que os profissionais de enfermagem auscultam e sentem como 'frémito' ou sopro vascular (como nas fístulas arteriovenosas de doentes em hemodiálise ou nas estenoses carotídeas)."
+  },
+  {
+    id: 408,
+    topicId: 4,
+    question: "A viscosidade dos fluidos varia marcadamente com a temperatura corporal. O que sucede à viscosidade do sangue humano quando a temperatura central de um doente desce para valores de hipotermia grave (< 32 °C)?",
+    options: [
+      "A viscosidade diminui drasticamente, tornando o sangue fluido como água pura.",
+      "A viscosidade sanguínea aumenta significativamente, elevando a resistência vascular ao escoamento e dificultando a microcirculação periférica dos tecidos.",
+      "A viscosidade permanece rigorosamente inalterada porque é fixada geneticamente pelas hemácias.",
+      "O sangue ferve e transforma-se em vapor dentro dos vasos periféricos."
+    ],
+    correctIndex: 1,
+    explanation: "Nos líquidos, a viscosidade resulta das forças intermoleculares de atração de Van der Waals. O abaixamento da temperatura reduz a energia cinética das moléculas, permitindo que as forças atrativas intermoleculares e a fricção entre eritrócitos atuem com maior intensidade. Por cada redução de 1 °C na temperatura do sangue, a viscosidade sobe cerca de 2 a 3%, agravando a resistência circulatória e a sobrecarga de trabalho do coração.",
+    distractorAnalysis: [
+      "Opção A descreve o efeito do aquecimento, e não da hipotermia.",
+      "Opção C é falsa: a viscosidade é uma propriedade física fortemente dependente do estado térmico molecular.",
+      "Opção D é um disparate termodinâmico completo."
+    ],
+    nursingApplication: "No bloco operatório e cuidados intensivos, o enfermeiro tem como prioridade a prevenção e reversão ativa da hipotermia (utilizando mantas térmicas de ar aquecido forçado e aquecedores de fluidos intravenosos). O sangue frio e viscoso obstrui a microcirculação, diminui a entrega de oxigénio tecidual e agrava perturbações da coagulação (tríade da morte no trauma: hipotermia, acidose e coagulopatia)."
+  },
+  {
+    id: 409,
+    topicId: 4,
+    question: "O coração bombeia o sangue de forma intermitente e pulsátil (débito sistólico na ejeção e fluxo nulo na diástole ventricular). Qual é o mecanismo biofísico elástico vascular (Efeito Windkessel) que converte este fluxo pulsátil num escoamento quase contínuo nas arteríolas e capilares periféricos?",
+    options: [
+      "A complacência elástica das paredes da aorta e grandes artérias, que se expandem elasticamente durante a sístole acumulando energia potencial elástica e recolhem elasticamente durante a diástole impulsionando o sangue para a frente.",
+      "A contração mecânica dos alvéolos pulmonares que aspiram o sangue por vácuo contínuo.",
+      "A presença de válvulas venosas na aorta ascendente que bloqueiam a circulação no inverno.",
+      "A aceleração centrípeta da rotação da Terra que impele os glóbulos vermelhos."
+    ],
+    correctIndex: 0,
+    explanation: "A aorta e as artérias centrais são altamente complacentes (ricas em elastina). Durante a sístole ventricular rápida, cerca de 50% do volume ejetado fica temporariamente retido na dilatação elástica da raiz aórtica. Quando a válvula aórtica se fecha na diástole, as paredes distendidas da aorta retraem-se elasticamente (recoil elástico), restituindo a energia potencial acumulada sob a forma de trabalho mecânico e mantendo o fluxo sanguíneo em escoamento contínuo durante a diástole.",
+    distractorAnalysis: [
+      "Opção B confunde a mecânica ventilatória pulmonar com a dinâmica arterial aórtica sistémica.",
+      "Opção C é anatomicamente falsa: a aorta não possui válvulas venosas e a circulação arterial não se bloqueia com o clima.",
+      "Opção D apresenta uma explicação fantasiosa sem nexo na hemodinâmica cardiovascular."
+    ],
+    nursingApplication: "Com o envelhecimento e a arteriosclerose, a aorta perde as suas fibras elásticas de elastina e sofre deposição de colagénio e cálcio, tornando-se uma 'tubagem rígida'. Sem o Efeito Windkessel elástico, a pressão arterial sistólica dispara e a diastólica cai, gerando a chamada hipertensão sistólica isolada do idoso, diagnosticada e monitorizada diariamente pelo enfermeiro."
+  },
+  {
+    id: 410,
+    topicId: 4,
+    question: "No choque distributivo/séptico, ocorre uma libertação maciça de mediadores inflamatórios e óxido nítrico que provoca vasodilatação arteriolar generalizada. De acordo com a Lei de Poiseuille e a equação da pressão arterial média (PAM = Débito Cardíaco × Resistência Vascular Periférica), qual é a consequência hemodinâmica direta desta vasodilatação?",
+    options: [
+      "Aumento drástico e descontrolado da pressão arterial média do doente.",
+      "Queda abrupta e crítica da Resistência Vascular Periférica total (RVP), conduzindo a hipotensão arterial severa e falência de perfusão orgânica.",
+      "Aumento imediato da viscosidade do sangue para valores semelhantes aos da pasta de dentes.",
+      "Encerramento imediato das válvulas bicúspide e aórtica por paragem cardíaca reflexa."
+    ],
+    correctIndex: 1,
+    explanation: "Pela Lei de Poiseuille, a resistência arteriolar depende inversamente da 4.ª potência do raio (R ∝ 1/r⁴). Quando os esfíncteres pré-capilares e arteríolas dilatam simultaneamente em todo o corpo, a Resistência Vascular Periférica (RVP) desaba. Como a pressão arterial média depende do produto do débito cardíaco pela resistência (PAM = DC × RVP), a pressão arterial despenca para níveis de choque profundo que não garantem a perfusão celular.",
+    distractorAnalysis: [
+      "Opção A é o oposto do que ocorre: a vasodilatação generalizada reduz a pressão e não a aumenta.",
+      "Opção C é falsa: a vasodilatação per se não eleva a viscosidade intrínseca do sangue.",
+      "Opção D não descreve a fisiopatologia hemodinâmica primária do choque distributivo séptico."
+    ],
+    nursingApplication: "No reconhecimento precoce do choque séptico, o enfermeiro identifica a hipotensão refratária e o lactato elevado. Como a causa física primária é a perda catastrófica de resistência vascular periférica (vasoplegia), a conduta clínica prescrita passa pela administração de aminas vasoativas vasoconstritoras (como a noradrenalina em perfusão contínua) para forçar o fecho arteriolar e restabelecer a PAM mínima de 65 mmHg."
+  },
+
+  // ==========================================
+  // TÓPICO 5: NOVAS QUESTÕES (506 a 510)
+  // ==========================================
+  {
+    id: 506,
+    topicId: 5,
+    question: "Nos equipamentos hospitalares de radiologia convencional e tomografia, os Raios X são produzidos quando eletrões de alta energia acelerados por uma diferença de potencial colidem com um ânodo metálico (geralmente de tungsténio). Qual é o mecanismo físico responsável pela produção da maior fração (~80-90%) dos Raios X num tubo radiológico?",
+    options: [
+      "Fusão termonuclear dos núcleos de tungsténio com libertação de neutrões térmicos.",
+      "Radiação de Travagem (ou Bremsstrahlung), na qual os eletrões rápidos são desacelerados e desviados pelo campo elétrico intenso dos núcleos do tungsténio, convertendo a sua perda de energia cinética num espectro contínuo de fotões de Raios X.",
+      "Efeito piezoelétrico gerado pelo aquecimento mecânico do vidro do tubo.",
+      "Decaimento radioativo alfa natural do tungsténio à temperatura ambiente."
+    ],
+    correctIndex: 1,
+    explanation: "A radiação de travagem (termo alemão Bremsstrahlung, 'radiação de travagem') ocorre quando um eletrão projetil passa nas proximidades do núcleo atómico do tungsténio. A atração eletrostática positiva do núcleo desvia a trajetória do eletrão e desacelera-o bruscamente. Pelo eletromagnetismo clássico, uma carga elétrica acelerada/desacelerada emite radiação eletromagnética sob a forma de fotões de Raios X de energias variadas, formando o espectro contínuo utilizado no diagnóstico médico.",
+    distractorAnalysis: [
+      "Opção A descreve reações de fusão nuclear em estrelas ou bombas de hidrogénio, impossíveis num tubo de raios X hospitalar.",
+      "Opção C confunde o efeito piezoelétrico de transdutores de ecografia com a física dos tubos de vácuo radiológicos.",
+      "Opção D é incorreta: o tungsténio natural é um metal estável que não sofre decaimento alfa espontâneo."
+    ],
+    nursingApplication: "Num tubo de raios X, apenas cerca de 1% da energia cinética dos eletrões é convertida em raios X úteis; os restantes 99% são transformados em calor extremo! Por esta razão física, os equipamentos de radiologia e TC hospitalares possuem sistemas de refrigeração sofisticados a óleo e ânodos giratórios para dissipar o calor, evitando que o ânodo derreta."
+  },
+  {
+    id: 507,
+    topicId: 5,
+    question: "Cerca de 70% a 80% do volume celular humano é constituído por água. Quando a radiação ionizante atravessa as células vivas, a maior parte dos danos no DNA celular é produzida por ação INDIRETA através de que processo físico-químico?",
+    options: [
+      "Congelamento instantâneo da água citoplasmática com quebra mecânica das membranas.",
+      "Radiólise da água, onde a radiação quebra as moléculas de H₂O gerando radicais livres altamente reativos (como o radical hidroxilo, OH•) que atacam quimicamente as pontes de hidrogénio e bases do DNA.",
+      "Transformação das moléculas de água em átomos de chumbo por transmutação quântica.",
+      "Evaporação imediata de todo o sangue com desidratação celular explosiva."
+    ],
+    correctIndex: 1,
+    explanation: "A interação da radiação ionizante com a matéria biológica ocorre por dois caminhos: efeito direto (o fotão ou partícula ioniza diretamente a molécula de DNA) e efeito indireto (o mais comum e frequente). No efeito indireto, a radiação ioniza a água celular abundante (H₂O + radiação -> H₂O⁺ + e⁻), desencadeando reações em cadeia que formam espécies reativas de oxigénio e radicais livres (OH•, H•, H₂O₂), moléculas com eletrões desemparelhados que lesam o DNA e as enzimas celulares.",
+    distractorAnalysis: [
+      "Opção A é falsa: a radiação ionizante deposita energia quântica e não arrefece o meio celular.",
+      "Opção C é alquimia fictícia: fotões de raios X não transformam oxigénio ou hidrogénio em chumbo.",
+      "Opção D é absurda para as doses de radiação utilizadas em diagnóstico ou terapêutica médica."
+    ],
+    nursingApplication: "A eficácia da radioterapia no combate a tumores sólidos depende fortemente da presença de oxigénio tecidual (Efeito do Oxigénio), pois o O₂ 'fixa' as lesões químicas causadas pelos radicais livres da radiólise no DNA tumoral. Em doentes anémicos ou com má perfusão tecidual, a hipóxia tumoral torna as células malignas muito mais resistentes à radioterapia."
+  },
+  {
+    id: 508,
+    topicId: 5,
+    question: "Na dosimetria das radiações hospitalares, existem diferentes grandezas para quantificar a radiação. Qual é o significado físico da grandeza 'Dose Absorvida' e qual é a sua unidade no Sistema Internacional (SI)?",
+    options: [
+      "Mede a intensidade da luz visível na sala de cirurgia, expressa em lúmens.",
+      "Mede a energia média de radiação ionizante depositada por unidade de massa de matéria (1 Joule por quilograma), expressa em Gray (Gy).",
+      "Mede o número de enfermeiros presentes no serviço, expresso em unidades per capita.",
+      "Mede a percentagem de oxigénio no ar medicinal, expressa em quilopascals."
+    ],
+    correctIndex: 1,
+    explanation: "A Dose Absorvida (D) quantifica a quantidade de energia radiante depositada pela radiação ionizante em qualquer material por unidade de massa (D = dE / dm). No Sistema Internacional de Unidades (SI), é expressa em Gray (1 Gy = 1 J/kg). Para avaliar o risco biológico nos tecidos humanos, multiplica-se a dose absorvida por fatores de ponderação da radiação e do tecido, obtendo-se a Dose Equivalente e Dose Eficaz, expressas em Sievert (Sv).",
+    distractorAnalysis: [
+      "Opção A descreve a fotometria ótica de iluminação ambiente (lúmens).",
+      "Opção C é uma contagem de recursos humanos sem relação com dosimetria de radiação.",
+      "Opção D refere a pressão parcial de gases medicinais e não a absorção de energia ionizante."
+    ],
+    nursingApplication: "Em oncologia radioterápica, a prescrição médica para tratamento de tumores é expressa em Grays (ex: dose total de 60 Gy fracionada em 30 sessões de 2 Gy diárias). O enfermeiro acompanha o doente na gestão dos efeitos secundários locais decorrentes desta dose absorvida nos tecidos sãos adjacentes (radiodermite, xerostomia, disfagia)."
+  },
+  {
+    id: 509,
+    topicId: 5,
+    question: "Os profissionais de saúde ocupacionalmente expostos a radiações ionizantes (como enfermeiros em salas de hemodinâmica, cardiologia de intervenção ou bloco operatório com arco em C) utilizam obrigatoriamente um Dosímetro Pessoal de lapela. Qual é a finalidade deste dispositivo?",
+    options: [
+      "Funciona como um escudo ativo que desvia os raios X para longe do corpo do profissional.",
+      "Mede e regista retrospetivamente a dose acumulada de radiação ionizante absorvida pelo profissional ao longo do tempo, garantindo que os limites anuais de dose de segurança (20 mSv/ano) não são excedidos.",
+      "Emite um choque elétrico preventivo sempre que a máquina de raios X é ligada.",
+      "Desinfeta o vestuário cirúrgico através de micro-ondas contínuas."
+    ],
+    correctIndex: 1,
+    explanation: "O dosímetro pessoal (geralmente termoluminescente - TLD ou de luminescência opticamente estimulada - OSL) é um instrumento de monitorização passiva individual: os cristais armazenam a energia da radiação que incide no profissional. Periodicamente, o dosímetro é lido em laboratório de radioproteção para calcular a dose efetiva acumulada, assegurando que o enfermeiro permanece abaixo do limite legal regulamentar de dose ocupacional (20 mSv por ano na média quinquenal).",
+    distractorAnalysis: [
+      "Opção A é incorreta: o dosímetro não é uma blindagem e não impede a radiação de incidir no corpo.",
+      "Opção C é fantasiosa: o dosímetro é um dispositivo passivo de leitura e não emite choques elétricos.",
+      "Opção D é incorreta: o dosímetro serve unicamente para medição de dose e não possui função de desinfeção."
+    ],
+    nursingApplication: "O uso do dosímetro pessoal à altura do tronco (e por baixo do avental de chumbo, ou duplo dosímetro com um exterior) é uma obrigação deontológica e legal do enfermeiro em serviços com radiação. Permite à Comissão de Radioproteção do hospital monitorizar a segurança ocupacional e intervir caso haja quebra nas boas práticas de proteção."
+  },
+  {
+    id: 510,
+    topicId: 5,
+    question: "A Radioterapia Oncológica divide-se primariamente em Teleterapia (radioterapia por feixe externo) e Braquiterapia. O que caracteriza a modalidade de Braquiterapia em termos físicos e de administração clínica?",
+    options: [
+      "O doente é colocado dentro de uma câmara hiperbárica sem qualquer fonte radioativa.",
+      "Consiste na colocação de fontes radioativas seladas (como sementes ou fios de Iodo-125, Césio-137 ou Irídio-192) diretamente no interior ou em contacto íntimo com o tecido tumoral a tratar.",
+      "Utiliza um acelerador linear colocado a vários quilómetros de distância do hospital.",
+      "Baseia-se na ingestão de água mineral engarrafada aquecida no micro-ondas."
+    ],
+    correctIndex: 1,
+    explanation: "O termo 'braqui' provém do grego brakhys (curto/próximo). Na braquiterapia, as fontes radioativas encapsuladas seladas são implantadas diretamente no órgão ou leito tumoral (ex: cancro da próstata, útero, colo uterino). Isto permite debitar uma dose de radiação ionizante letal altíssima concentrada no tumor, enquanto a dose nos tecidos saudáveis circundantes decai abruptamente devido à Lei do Inverso do Quadrado da Distância.",
+    distractorAnalysis: [
+      "Opção A descreve a medicina hiperbárica oxigenada.",
+      "Opção C confunde braquiterapia com teleterapia e exagera absurdamente as distâncias (aceleradores lineares ficam a cerca de 1 metro do doente na sala de tratamento).",
+      "Opção D não possui qualquer relação com o tratamento oncológico de física nuclear."
+    ],
+    nursingApplication: "Nos doentes internados submetidos a braquiterapia temporária ginecológica com fontes de alta taxa de dose, o doente torna-se temporariamente uma 'fonte emissora de radiação'. O enfermeiro organiza os cuidados de enfermagem (higiene, sinais vitais, administração de analgesia) de forma extremamente planeada e rápida, mantendo a distância máxima e utilizando biombos plúmbeos móveis para cumprir o princípio ALARA."
+  },
+
+  // ==========================================
+  // TÓPICO 6: NOVAS QUESTÕES (606 a 610)
+  // ==========================================
+  {
+    id: 606,
+    topicId: 6,
+    question: "Ao analisar o gráfico da Energia de Ligação por Nucleão em função do Número de Massa (A), observa-se que a curva atinge o seu valor máximo e pico de estabilidade absoluta perto do nuclídeo de Ferro-56 (⁵⁶₂₆Fe, com cerca de 8,8 MeV por nucleão). Que conclusão fundamental da física nuclear se extrai deste gráfico?",
+    options: [
+      "O ferro é o elemento mais radioativo e instável da natureza.",
+      "Núcleos muito leves aumentam a sua estabilidade sofrendo reações de FUSÃO nuclear, enquanto núcleos muito pesados (como o Urânio) aumentam a sua estabilidade sofrendo reações de FISSÃO nuclear, caminhando ambos em direção à região do Ferro.",
+      "Todos os núcleos atómicos transformam-se espontaneamente em átomos de oxigénio em meio biológico.",
+      "A energia de ligação nuclear é independente do número de nucleões e constante em todos os elementos."
+    ],
+    correctIndex: 1,
+    explanation: "A curva de energia de ligação por nucleão revela a estabilidade intrínseca dos núcleos: o Ferro-56 e o Níquel-62 têm a maior energia de ligação por partícula, sendo os núcleos mais fortemente coesos do universo. Elementos leves à esquerda (como hidrogénio e deutério) ganham estabilidade e libertam colossal energia fundindo-se (Fusão Nuclear); elementos muito pesados à direita (como Urânio-235) ganham estabilidade e libertam energia dividindo-se (Fissão Nuclear).",
+    distractorAnalysis: [
+      "Opção A inverte o conceito: maior energia de ligação por nucleão significa MAIOR estabilidade e não instabilidade radioativa.",
+      "Opção C é falsa: não ocorrem transmutações nucleares espontâneas gerais para oxigénio.",
+      "Opção D é incorreta: a energia por nucleão varia significativamente desde ~1 MeV (deutério) até 8,8 MeV (ferro) e ~7,5 MeV (urânio)."
+    ],
+    nursingApplication: "A fissão nuclear controlada nos reatores baseia-se precisamente nesta caminhada do Urânio pesado em direção a fragmentos médios mais estáveis. É através da fissão nuclear de alvos de Urânio-235 que são produzidos a nível mundial os radioisótopos essenciais usados diariamente em hospitais (como o Molibdénio-99, que dá origem ao Tecnécio-99m)."
+  },
+  {
+    id: 607,
+    topicId: 6,
+    question: "A Força Nuclear Forte apresenta uma característica denominada 'Saturação Nuclear'. O que significa esta propriedade física das forças que unem os protões e neutrões?",
+    options: [
+      "Cada nucleão é capaz de interagir simultaneamente com todos os outros biliões de átomos da sala.",
+      "Cada nucleão só consegue interagir e exercer atração nuclear forte com os seus nucleões vizinhos mais imediatos, devido ao alcance finito e ultracurto da força forte (~1 a 2 femtómetros).",
+      "A força nuclear forte só atua se o núcleo estiver submerso em solução de cloreto de sódio a 0,9%.",
+      "A força forte satura quando o átomo atinge a velocidade da luz no sangue."
+    ],
+    correctIndex: 1,
+    explanation: "Ao contrário da força gravitacional ou da força eletrostática de Coulomb (cujo alcance é infinito e cada carga repele todas as outras cargas presentes no sistema com lei 1/r²), a Força Nuclear Forte satura rapidamente. Como o seu alcance é restrito a cerca de 1,5 × 10⁻¹⁵ m, um nucleão atrai apenas os nucleões com os quais está em contacto direto. Isto explica por que adicionar protões além de certo ponto desestabiliza o núcleo (a repulsão de Coulomb atua sobre todo o núcleo, enquanto a força forte não cresce com os nucleões distantes).",
+    distractorAnalysis: [
+      "Opção A confunde uma força de alcance subatómico de curto alcance com forças de campo infinito macroscópico.",
+      "Opção C é incorreta: a força nuclear forte atua no vácuo do núcleo e não depende de soluções salinas externas.",
+      "Opção D é absurda: a força forte satura por limites de alcance espacial e não pela velocidade de fluxo sanguíneo."
+    ],
+    nursingApplication: "A saturação da força nuclear forte é o motivo pelo qual não existem elementos químicos estáveis com número atómico ilimitado (todos os elementos com Z > 82, como o Bismuto, Polónio, Rádio e Urânio, são radioativos e instáveis). Esta instabilidade natural fornece os radionuclídeos terapêuticos utilizados na oncologia."
+  },
+  {
+    id: 608,
+    topicId: 6,
+    question: "O Tempo de Meia-Vida Física (ou período de semidesintegração, T_1/2) de um radioisótopo é uma constante física fundamental e invariável. Qual é a sua definição exata?",
+    options: [
+      "O tempo necessário para que um doente internado recupere metade do seu peso corporal.",
+      "O intervalo de tempo necessário para que o número de núcleos radioativos de uma amostra (ou a sua atividade radioativa) decaia para metade do seu valor inicial.",
+      "O tempo que um feixe de raios X demora a atravessar o tórax de um doente adulto.",
+      "O período em que um radiofármaco permanece congelado no frigorífico antes de expirar a validade."
+    ],
+    correctIndex: 1,
+    explanation: "A meia-vida física (T_1/2) é o tempo característico em que a probabilidade de decaimento faz com que metade dos átomos radioativos de uma dada amostra se desintegrem espontaneamente: N(t) = N₀ · (1/2)^(t / T_1/2). É uma constante física intrínseca de cada radionuclídeo, não sendo alterada por temperatura, pressão, reações químicas ou meio biológico.",
+    distractorAnalysis: [
+      "Opção A descreve a evolução ponderal nutricional do doente e não a física nuclear.",
+      "Opção C descreve o tempo de trânsito fotónico (que é de nanossegundos, à velocidade da luz).",
+      "Opção D confunde validade farmacológica de estabilidade química com a desintegração radioativa do núcleo."
+    ],
+    nursingApplication: "O cálculo de decaimento em função do tempo decorrido é indispensável na enfermagem em medicina nuclear: se uma dose de Tecnécio-99m (T_1/2 = 6 horas) tiver uma atividade de 800 MBq às 08h00, às 14h00 (após 6h) a atividade terá caído para 400 MBq, e às 20h00 (após 12h) para 200 MBq. O enfermeiro deve verificar rigorosamente a hora de calibração para garantir que o doente recebe a atividade prescrita."
+  },
+  {
+    id: 609,
+    topicId: 6,
+    question: "A Atividade Radioativa (A) de uma fonte é definida como o número de desintegrações nucleares espontâneas que ocorrem por unidade de tempo (A = -dN/dt = λ·N). Qual é a unidade de Atividade Radioativa no Sistema Internacional (SI)?",
+    options: [
+      "Newton (N)",
+      "Becquerel (Bq), que corresponde a 1 desintegração nuclear por segundo.",
+      "Pascal (Pa)",
+      "Volt por metro (V/m)"
+    ],
+    correctIndex: 1,
+    explanation: "A unidade oficial SI para atividade radioativa é o Becquerel (Bq), nomeado em honra de Henri Becquerel (descobridor da radioatividade espontânea). Um Becquerel equivale a uma desintegração nuclear por segundo (1 Bq = 1 s⁻¹). A unidade histórica anterior, ainda frequentemente usada na prática clínica médica, é o Curie (Ci), onde 1 Ci = 3,7 × 10¹⁰ Bq (correspondente à atividade de 1 grama de Rádio-226).",
+    distractorAnalysis: [
+      "Opção A é a unidade SI de força (Newton).",
+      "Opção C é a unidade SI de pressão (Pascal).",
+      "Opção D é a unidade SI de intensidade de campo elétrico."
+    ],
+    nursingApplication: "Nas prescrições hospitalares em serviços de medicina nuclear, as doses administradas aos doentes são prescritas em Megabecquerels (MBq) ou Gigabecquerels (GBq), ou milicuries (mCi) (por exemplo: 370 MBq de ⁹⁹ᵐTc para cintigrafia óssea, ou 3,7 GBq de ¹³¹I para ablação tiroideia). O enfermeiro confere estas unidades no calibrador de doses antes da injeção."
+  },
+  {
+    id: 610,
+    topicId: 6,
+    question: "Alguns núcleos atómicos resultantes de um decaimento corpuscular prévio ficam retidos temporariamente num estado excitado antes de emitirem a radiação gama de desexcitação, sendo chamados de 'isómeros nucleares' ou estados metastáveis (assinalados com a letra 'm', como no ⁹⁹ᵐTc). Qual é a importância médica deste estado metastável do Tecnécio-99m?",
+    options: [
+      "Permite que o elemento se transforme em mercúrio tóxico dentro do corpo do doente.",
+      "Permite que o núcleo permaneça num estado excitado durante horas (meia-vida de 6 h), tempo suficiente para ser preparado, acoplado a fármacos específicos, transportado, injetado e detetado pela câmara gama na emissão de 140 keV.",
+      "Faz com que o núcleo emita partículas alfa pesadas que destroem o fígado do utente.",
+      "Impede que o doente emita qualquer tipo de calor biológico durante 3 dias."
+    ],
+    correctIndex: 1,
+    explanation: "Na maioria das desintegrações nucleares, a emissão gama ocorre em frações infinitesimais de segundo (< 10⁻¹² s). No entanto, em certos núcleos como o Tecnécio-99m, a transição isomérica para o estado fundamental é 'quanticamente desfavorecida', conferindo-lhe uma meia-vida metastável excecional de 6,01 horas. Este intervalo de tempo é a janela perfeita para a logística radiofarmacêutica hospitalar e aquisição imagiológica.",
+    distractorAnalysis: [
+      "Opção A é falsa: o tecnécio desexcita-se emitindo um fotão gama e transforma-se em Tecnécio-99 fundamental estável (Z=43), e não em mercúrio (Z=80).",
+      "Opção C é incorreta: o ⁹⁹ᵐTc é um emissor gama puro sem emissão alfa.",
+      "Opção D é uma afirmação sem sentido médico ou biológico."
+    ],
+    nursingApplication: "O estado metastável do ⁹⁹ᵐTc permite que os serviços de enfermagem e medicina nuclear eluam o tecnécio pela manhã a partir do gerador de molibdénio, preparem a medicação radiomarcada na câmara de fluxo laminar e realizem cintigrafias a dezenas de doentes ao longo de todo o turno de trabalho com máxima segurança e eficácia."
+  },
+
+  // ==========================================
+  // TÓPICO 7: NOVAS QUESTÕES (706 a 710)
+  // ==========================================
+  {
+    id: 706,
+    topicId: 7,
+    question: "No decaimento radioativo Beta Mais (β⁺), utilizado na tecnologia imagiológica de PET (Tomografia por Emissão de Positrões), que partícula é ejetada do núcleo atómico instável?",
+    options: [
+      "Um núcleo pesado de Hélio com carga +2 e massa 4.",
+      "Um positrão (a antipartícula do eletrão, possuindo a mesma massa minúscula do eletrão, mas carga elétrica positiva +1).",
+      "Um neutrão rápido com carga zero e alta capacidade magnética.",
+      "Um átomo de hidrogénio gasoso com velocidade lenta."
+    ],
+    correctIndex: 1,
+    explanation: "No decaimento beta positivo (β⁺), típico de núcleos com excesso de protões (razão N/Z demasiado baixa), um protão nuclear transforma-se num neutrão através da força fraca: p⁺ -> n + e⁺ + νe. A partícula emitida (e⁺) é o positrão, que possui carga elétrica positiva (+1) e massa rigorosamente igual à do eletrão ordinário.",
+    distractorAnalysis: [
+      "Opção A descreve uma partícula alfa.",
+      "Opção C descreve a emissão de neutrões em reações de fissão nuclear.",
+      "Opção D é incorreta: núcleos emitem partículas subatómicas elementares ou núcleos de hélio, não átomos neutros completos de hidrogénio."
+    ],
+    nursingApplication: "O principal radiofármaco emissores de positrões em oncologia é a ¹⁸F-FDG. Ao administrar a injeção endovenosa ao doente, o enfermeiro sabe que cada emissão de positrão resultará, frações de milímetro adiante nos tecidos, na criação de dois fotões de aniquilação gama que permitem localizar metástases com resolução milimétrica."
+  },
+  {
+    id: 707,
+    topicId: 7,
+    question: "Quando a radiação eletromagnética Gama (γ) interage com a matéria tecidual, ela transfere a sua energia através de três mecanismos físicos fundamentais. Qual destes processos predomina nas gamas de energia média utilizadas habitualmente em radiodiagnóstico e medicina nuclear (~100 keV a 1 MeV)?",
+    options: [
+      "Efeito Compton (ou difusão inelástica Compton), no qual o fotão gama colide com um eletrão da periferia atómica, cedendo parte da sua energia e sendo desviado com menor frequência.",
+      "Fissão espontânea dos átomos de oxigénio da água celular.",
+      "Solidificação criogénica do plasma sanguíneo com formação de cristais de gelo.",
+      "Desintegração total de todos os protões do núcleo biológico."
+    ],
+    correctIndex: 0,
+    explanation: "Nas energias de fotões comuns em imagiologia médica (~100 keV a vários MeV), o mecanismo dominante de interação com tecidos moles é o Efeito Compton: o fotão gama de alta energia colide com um eletrão das camadas externas (fracamente ligado), ejeta o eletrão (eletrão Compton ionizante) e emerge com energia reduzida e trajetória desviada (radiação dispersa/espalhada).",
+    distractorAnalysis: [
+      "Opção B descreve a quebra de núcleos pesados e não a interação de fotões gama com a matéria tecidual.",
+      "Opção C confunde a deposição de energia eletromagnética com hipotermia criogénica.",
+      "Opção D é contrária às leis de conservação da física nuclear (fotões gama não aniquilam protões)."
+    ],
+    nursingApplication: "O Efeito Compton é a principal fonte de radiação de dispersão (scatter) no bloco operatório e salas de hemodinâmica: o feixe que atinge o doente dispersa-se em todas as direções pelo efeito Compton. É esta radiação espalhada a partir do corpo do doente que atinge a equipa de enfermagem, justificando o uso obrigatório de aventais de chumbo e óculos plumbíferos protetores de cristalino."
+  },
+  {
+    id: 708,
+    topicId: 7,
+    question: "Na blindagem contra a radiação gama e raios X, o parâmetro denominado 'Camada Hemirredutora' (HVL - Half-Value Layer) de um material atenuador é definido como:",
+    options: [
+      "A espessura de material necessária para reduzir a intensidade do feixe de radiação a metade (50%) do seu valor inicial.",
+      "O tempo que a radiação demora a atravessar uma folha de papel dobrada ao meio.",
+      "A percentagem de eletrões que permanecem no estado de repouso após a colisão.",
+      "O peso em toneladas de uma barreira de chumbo puro de espessura infinita."
+    ],
+    correctIndex: 0,
+    explanation: "A atenuação da radiação gama na matéria segue uma lei exponencial: I(x) = I₀ · e^(-μ·x). A Camada Hemirredutora (HVL) é a espessura x necessária para que I(x) = I₀ / 2 (ou seja, atenuação de 50%). Por exemplo, se a HVL do chumbo para uma determinada energia for de 4 mm, uma placa de 4 mm reduz a radiação a 50%; duas placas (8 mm) reduzem para 25%; e três placas (12 mm) reduzem para 12,5%.",
+    distractorAnalysis: [
+      "Opção B confunde espessura física de absorção com tempo de trânsito cinético.",
+      "Opção C confunde coeficientes de atenuação fotónica com contagem quântica de eletrões.",
+      "Opção D é uma descrição sem qualquer relevância matemática para o conceito de HVL."
+    ],
+    nursingApplication: "O cálculo de HVL orienta o dimensionamento dos biombos plúmbeos nas enfermarias de medicina nuclear e a espessura das portas e paredes dos quartos de doentes tratados com Iodo-131: adicionar camadas calculadas de blindagem reduz a exposição nos corredores e postos de enfermagem para níveis rigorosamente seguros e inferiores aos limites legais."
+  },
+  {
+    id: 709,
+    topicId: 7,
+    question: "A grandeza biofísica 'Transferência Linear de Energia' (LET - Linear Energy Transfer) mede a energia média depositada pela radiação por unidade de distância percorrida no tecido biológico (keV/μm). Como se comparam as partículas alfa (α) e os fotões gama (γ) quanto ao seu LET?",
+    options: [
+      "As partículas alfa são radiações de baixo LET e os raios gama são radiações de alto LET.",
+      "As partículas alfa são radiações de ALTO LET (depositam muita energia num percurso minúsculo, causando danos densos e irreparáveis no DNA), enquanto os raios gama são de BAIXO LET (as ionizações são esparsas ao longo de um percurso longo, permitindo maior reparação enzimática celular).",
+      "Ambas possuem rigorosamente o mesmo valor de LET em todos os tecidos humanos.",
+      "O LET de qualquer radiação anula-se na presença de oxigénio gasoso."
+    ],
+    correctIndex: 1,
+    explanation: "Partículas pesadas e com dupla carga elétrica como a partícula alfa (α) possuem alto LET (~100-200 keV/μm): arrancam eletrões em grande densidade linear ao longo de micras, provocando quebras duplas complexas nas duas cadeias do DNA que as enzimas celulares raramente conseguem reparar. Os raios gama (γ) são radiação de baixo LET (~0,2-2 keV/μm), produzindo ionizações esparsas e maior probabilidade de reparação perfeita do DNA pelas polimerases e ligases celulares.",
+    distractorAnalysis: [
+      "Opção A inverte as propriedades biofísicas fundamentais de LET das radiações.",
+      "Opção C é falsa: a diferença de LET entre alfa e gama é de centenas de vezes.",
+      "Opção D não tem qualquer fundamento na radiobiologia."
+    ],
+    nursingApplication: "O alto LET das partículas alfa explica porque novos fármacos oncológicos (terapia alfa direcionada, como o Rádio-223) são tão eficazes na erradicação de metástases tumorais ósseas resistentes a quimioterapia: a alta densidade de ionização destrói as células cancerosas de forma definitiva e independente do ciclo celular."
+  },
+  {
+    id: 710,
+    topicId: 7,
+    question: "Em caso de acidente ou derrame com líquidos biológicos (urina, vómito) de um doente submetido a terapêutica ablativa com radioisótopos (contaminação radioativa externa da pele do profissional de saúde), qual é a conduta IMEDIATA de descontaminação cutânea recomendada para o enfermeiro?",
+    options: [
+      "Aplicar lixívia pura e esfregar vigorosamente com escova de cerdas duras até sangrar a epiderme.",
+      "Despir de imediato a roupa contaminada (que retém tipicamente a maior parte do contaminante) e lavar a pele afetada com água tépida e sabão neutro suavemente sem friccionar, evitando abrasões que facilitariam a absorção sistémica do radiofármaco.",
+      "Ignorar a exposição, pois a pele é imune a qualquer tipo de radiofármaco.",
+      "Expor a pele ao calor de um secador de ar quente para queimar a radiação."
+    ],
+    correctIndex: 1,
+    explanation: "O protocolo de emergência para contaminação externa cutânea exige: 1) Remoção imediata das roupas contaminadas (que retêm até 80-90% dos contaminantes radioativos); 2) Lavagem copiosa da pele sob água corrente tépida (nunca quente, para não vasodilatar os capilares dérmicos) com sabão suave neutro; 3) A lavagem deve ser feita sem esfregar agressivamente, pois escoriações na pele quebrariam a barreira do estrato córneo, transformando uma contaminação externa numa gravíssima contaminação interna por absorção capilar.",
+    distractorAnalysis: [
+      "Opção A é perigosíssima e contraindicada: lacerar a pele cria portas de entrada vascular direta para o radioisótopo no organismo.",
+      "Opção C é uma negligência grave perante os riscos de radiolesão cutânea e contaminação cruzada.",
+      "Opção D não remove a matéria radioativa e apenas lesaria termicamente a pele."
+    ],
+    nursingApplication: "Esta conduta é um pilar da segurança nos serviços de internamento de medicina nuclear: após a descontaminação, o enfermeiro mede a atividade residual na pele com um monitor de contaminação de superfície (contador Geiger-Müller com sonda de janela fina) até atingir os níveis basais de segurança antes de retomar a atividade clínica."
+  },
+
+  // ==========================================
+  // TÓPICO 8: NOVAS QUESTÕES (806 a 810)
+  // ==========================================
+  {
+    id: 806,
+    topicId: 8,
+    question: "Por definição rigorosa na física atómica e nuclear, os nuclídeos classificados como ISÓTONOS são aqueles que:",
+    options: [
+      "Possuem o mesmo número atómico Z e o mesmo número de massa A.",
+      "Possuem rigorosamente o mesmo número de neutrões (N = A - Z), mas números atómicos Z e números de massa A diferentes (como o ¹⁴₆C, ¹⁵₇N e ¹⁶₈O, todos com N = 8 neutrões).",
+      "Possuem a mesma densidade volúmica e a mesma temperatura de fusão.",
+      "São exclusivamente gases nobres que não reagem com o oxigénio."
+    ],
+    correctIndex: 1,
+    explanation: "ISÓTONOS têm o mesmo 'N' (mesmo número de Neutrões, N = A - Z). Como possuem números atómicos Z diferentes, são elementos químicos totalmente distintos com propriedades químicas diferentes, mas cujos núcleos contêm a mesma quantidade de neutrões. Exemplo: Carbono-14 (A=14, Z=6 => N=8), Azoto-15 (A=15, Z=7 => N=8) e Oxigénio-16 (A=16, Z=8 => N=8).",
+    distractorAnalysis: [
+      "Opção A descreve o mesmo nuclídeo idêntico (mesmo elemento e mesmo isótopo).",
+      "Opção C confunde propriedades termodinâmicas macroscópicas com a estrutura do núcleo atómico.",
+      "Opção D confunde a família de isótonos com o grupo 18 da tabela periódica (gases nobres)."
+    ],
+    nursingApplication: "Saber distinguir com clareza Isótopos (mesmo Z / mesmo elemento), Isóbaros (mesmo A / mesma massa) e Isótonos (mesmo N / mesmos neutrões) é uma competência basilar exigida nas avaliações universitárias de Biofísica para o 1.º ano de enfermagem, sedimentando a correta nomenclatura de fármacos e reações de desintegração."
+  },
+  {
+    id: 807,
+    topicId: 8,
+    question: "No organismo de um doente que recebe um radiofármaco, a taxa de desaparecimento da radioatividade decorre simultaneamente da desintegração física nuclear e da eliminação fisiológica (renal e biliar). Como se define a 'Meia-Vida Efetiva' (T_e) e de que forma se relaciona com a meia-vida física (T_f) e biológica (T_b)?",
+    options: [
+      "T_e é a soma simples de T_f com T_b (T_e = T_f + T_b).",
+      "T_e é dada pela média harmónica: 1/T_e = 1/T_f + 1/T_b (sendo a meia-vida efetiva sempre menor do que a menor das meias-vidas individuais).",
+      "T_e é independente da excreção renal e depende apenas da fase da lua.",
+      "T_e é sempre infinita em doentes jovens com boa saúde."
+    ],
+    correctIndex: 1,
+    explanation: "A meia-vida efetiva (T_e) quantifica a rapidez real com que a radioatividade decresce no corpo do utente. Como os dois processos de eliminação ocorrem em paralelo (decaimento nuclear intrínseco com constante λ_f e depuração biológica com constante λ_b), as taxas somam-se: λ_e = λ_f + λ_b. Como λ = ln 2 / T, tem-se 1/T_e = 1/T_f + 1/T_b => T_e = (T_f · T_b) / (T_f + T_b). Por consequência matemática, T_e é sempre mais curta do que qualquer uma das meias-vidas isoladas.",
+    distractorAnalysis: [
+      "Opção A comete o erro grave de somar diretamente tempos em vez de taxas de decaimento/depuração.",
+      "Opção C é falsa: a depuração de radiofármacos depende da fisiologia renal e hepática do doente.",
+      "Opção D é incorreta: a eliminação biológica e o decaimento físico ocorrem continuamente em qualquer faixa etária."
+    ],
+    nursingApplication: "Esta fórmula tem enorme relevância clínica para o enfermeiro: ao incentivar ativamente a hidratação oral forçada e a micção frequente num doente após exame cintigráfico ou terapêutica radiometabólica, o enfermeiro acelera a depuração renal, encurtando dramaticamente a meia-vida biológica (T_b) e a meia-vida efetiva (T_e), reduzindo substancialmente a dose de radiação absorvida pela bexiga e pelo corpo do utente!"
+  },
+  {
+    id: 808,
+    topicId: 8,
+    question: "O Rádio-223 (²²³Ra / Xofigo) é um radiofármaco emissor de partículas alfa utilizado na prática oncológica no tratamento de metástases ósseas dolorosas do cancro da próstata resistente. Qual é o fundamento biofísico da sua ação seletiva no esqueleto?",
+    options: [
+      "O Rádio pertence ao mesmo grupo químico alcalino-terroso que o Cálcio (Grupo 2 da Tabela Periódica), mimetizando o cálcio e integrando-se ativamente nas áreas de elevada renovação óssea (metástases osteoblásticas), onde as suas partículas alfa destroem as células tumorais com alcance ultracurto.",
+      "O Rádio liga-se exclusivamente aos glóbulos brancos da circulação cerebral.",
+      "O Rádio transforma o osso em ouro coloidal que alivia a dor por compressão mecânica.",
+      "O Rádio emite apenas ondas de calor semelhantes às de um saco de água quente hospitalar."
+    ],
+    correctIndex: 0,
+    explanation: "Na tabela periódica, o Rádio (Ra) situa-se no Grupo 2, abaixo do Cálcio (Ca), partilhando propriedades químicas semelhantes de ião divalente (Ra²⁺). O organismo reconhece o Rádio como um análogo do cálcio e incorpora-o avidamente na matriz mineral de hidroxiapatite nos focos de remodelação óssea rápida característicos das metástases tumorais. Uma vez fixado no osso, emite 4 partículas alfa altamente energéticas que provocam quebras duplas letais no DNA das células cancerosas num raio minúsculo (< 100 μm), preservando a medula óssea a distâncias maiores.",
+    distractorAnalysis: [
+      "Opção B confunde osso com leucócitos cerebrais.",
+      "Opção C é alquimia mitológica.",
+      "Opção D confunde energia ionizante nuclear com calor termodinâmico macroscópico."
+    ],
+    nursingApplication: "Ao administrar Rádio-223 endovenoso ou ao prestar cuidados ao doente, o enfermeiro sabe que a via principal de eliminação deste radiofármaco é gastrointestinal/fecal (cerca de 60% nas fezes). O plano de cuidados de enfermagem inclui o manuseamento meticuloso de arrastadeiras, uso de luvas e lavagem das mãos, orientando o utente para descarregar a sanita duas vezes após cada utilização para proteger a sua família."
+  },
+  {
+    id: 809,
+    topicId: 8,
+    question: "A esmagadora maioria dos serviços hospitalares de medicina nuclear possui um equipamento blindado denominado 'Gerador de Molibdénio-Tecnécio' (conhecido na gíria como a 'vaca de tecnécio'). Como funciona biofisicamente este sistema gerador pai-filho?",
+    options: [
+      "O gerador funciona com pilhas comuns de lítio que sintetizam tecnécio a partir de água destilada.",
+      "O radioisótopo-pai Molibdénio-99 (⁹⁹Mo, T_1/2 ≈ 66 horas) decai por emissão beta para o radioisótopo-filho Tecnécio-99m (⁹⁹ᵐTc, T_1/2 ≈ 6 horas); o enfermeiro ou técnico elui diariamente o tecnécio filho através da passagem de soro fisiológico estéril pela coluna de alumina.",
+      "O gerador queima barras de urânio enriquecido diretamente no balcão da farmácia hospitalar.",
+      "O gerador congela o molibdénio para evitar qualquer emissão de radiação antes do Natal."
+    ],
+    correctIndex: 1,
+    explanation: "Como a meia-vida do ⁹⁹ᵐTc é de apenas 6 horas, seria logisticamente impossível transportá-lo de reatores distantes todos os dias. O gerador resolve este problema: o ⁹⁹Mo (pai, meia-vida longa de 66h) fica fortemente adsorvido numa coluna de óxido de alumínio (alumina). À medida que decai, gera o ⁹⁹ᵐTc (filho). O ião pertecnetato de tecnécio liga-se fracamente à alumina e é facilmente lavado ('ordenhado' ou eluído) fazendo passar soro fisiológico estéril (NaCl 0,9%), obtendo-se uma solução pura e pronta de ⁹⁹ᵐTc para radiomarcação de fármacos.",
+    distractorAnalysis: [
+      "Opção A é contrária à física: baterias químicas não realizam transmutações nucleares.",
+      "Opção C é perigosa e falsa: a fissão de urânio ocorre em reatores industriais controlados, e não nos serviços clínicos hospitalares.",
+      "Opção D não possui fundamentação na física médica."
+    ],
+    nursingApplication: "A eluição do gerador de ⁹⁹Mo/⁹⁹ᵐTc é um procedimento diário que exige técnica assética rigorosa para manter a esterilidade da solução injetável de pertecnetato de sódio. O enfermeiro ou radiofarmacêutico realiza testes de controlo de qualidade (como a pesquisa de contaminação por molibdénio - breakthrough de ⁹⁹Mo) antes da injeção no doente."
+  },
+  {
+    id: 810,
+    topicId: 8,
+    question: "No internamento hospitalar, as fraldas, compressas e materiais descartáveis com fluidos de um doente submetido a terapêutica com radioisótopos (como o Iodo-131) tornam-se resíduos radioativos. Qual é o princípio biofísico de segurança adotado na gestão e eliminação destes resíduos hospitalares?",
+    options: [
+      "São imediatamente deitados no lixo comum ou incinerados no mesmo dia sem proteção.",
+      "São armazenados em recipientes devidamente blindados e identificados num abrigo de resíduos radioativos durante pelo menos 10 meias-vidas físicas, até a sua radioatividade decair espontaneamente para níveis residuais inferiores aos limites regulamentares de isenção.",
+      "São fervidos com desinfetante para eliminar a radioatividade do núcleo atómico.",
+      "São lavados na máquina de lavar roupa da enfermaria com detergente enzimático comum."
+    ],
+    correctIndex: 1,
+    explanation: "Ao contrário dos resíduos químicos ou biológicos patogénicos (que podem ser destruídos por calor ou produtos químicos), a taxa de desintegração radioativa de um núcleo atómico é INALTERÁVEL por processos físicos ou químicos humanos. A única forma de eliminar a radioatividade é esperar pelo decaimento espontâneo no tempo. Como regra geral de radioproteção, após 10 meias-vidas (10 × T_1/2), a atividade residual desce para menos de 0,1% (1/2¹⁰ = 1/1024 ≈ 0,098%) do valor inicial, permitindo a sua desclassificação segura.",
+    distractorAnalysis: [
+      "Opção A viola gravíssimamente a lei de radioproteção e contaminaria os circuitos de lixo público e trabalhadores camarários.",
+      "Opção C é falsa: nem o calor nem os agentes químicos conseguem alterar a meia-vida ou desativar núcleos radioativos.",
+      "Opção D espalharia a contaminação radioativa por toda a roupa hospitalar de outros doentes."
+    ],
+    nursingApplication: "Para o Iodo-131 (T_1/2 = 8 dias), 10 meias-vidas correspondem a cerca de 80 dias (cerca de 2 meses e meio) de armazenamento blindado antes da eliminação como resíduo hospitalar convencional. O enfermeiro assegura a correta separação destes resíduos em contentores plúmbeos dedicados, prevenindo incidentes radiológicos no hospital."
   }
 ];
 
