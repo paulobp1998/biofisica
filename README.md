@@ -4,9 +4,9 @@ Plataforma educativa online, interativa, moderna e **100% gratuita**, concebida 
 
 ---
 
-## 🎯 Conteúdos Programáticos (8 Tópicos Certificados)
+## 🎯 Conteúdos Programáticos (8 Tópicos • 400 Questões Clínicas Certificadas)
 
-Todos os tópicos e perguntas foram concebidos com base estrita no programa curricular oficial, sem alucinações e com fundamentação física comprovada ligada à prática clínica diária de enfermagem:
+O banco contém exatamente **50 questões rigorosas por tópico** (total de **400 questões** no banco global), concebidas estritamente a partir do programa curricular oficial, sem alucinações e com fundamentação física comprovada aliada à prática clínica diária de enfermagem:
 
 1. **Força, Estado de Equilíbrio e Equilíbrio de Forças:** Leis de Newton, vetores, condições de repouso e Movimento Retilíneo e Uniforme, relação entre força e área na pressão mecânica ($P = F/A$) e prevenção de lesões por pressão (escaras).
 2. **Alavancas, Elasticidade dos Corpos e Resistência dos Materiais:** Alavancas anatómicas (1ª, 2ª e 3ª classe), vantagem mecânica, Lei de Hooke, Módulo de Young e reologia de materiais.

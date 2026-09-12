@@ -111,21 +111,24 @@ class QuizEngine {
     return this.getCurrentState();
   }
 
-  // Inicia uma simulação global de exame (perguntas aleatórias de todos os tópicos)
-  startExamSimulation(numQuestions = 16) {
+  // Inicia uma simulação global de exame (20 perguntas equilibradas de todos os tópicos = escala 0 a 20 valores)
+  startExamSimulation(numQuestions = 20) {
     this.mode = 'exam';
     this.activeTopicId = null;
-    // Garante representatividade de todos os tópicos disponíveis
-    let selected = [];
+    let pool = [];
     TOPICS_DATA.forEach(t => {
       const topicQuestions = QUESTIONS_DATA.filter(q => q.topicId === t.id);
       const shuffled = this.shuffleArray(topicQuestions);
-      // Pega pelo menos 2 questões de cada um dos 8 tópicos (= 16 questões)
-      selected.push(...shuffled.slice(0, 2));
+      // Pelo menos 2 de cada um dos 8 tópicos (= 16 questões garantidas)
+      pool.push(...shuffled.slice(0, 2));
     });
+    // Adiciona mais 4 questões aleatórias de tópicos distintos para perfazer exatamente 20 questões
+    const remaining = QUESTIONS_DATA.filter(q => !pool.some(p => p.id === q.id));
+    const extra = this.shuffleArray(remaining).slice(0, 4);
+    const selected = this.shuffleArray([...pool, ...extra]);
 
     // Baralha a ordem final do exame
-    this.currentQuestions = this.shuffleArray(selected).map(q => this.prepareQuestion(q));
+    this.currentQuestions = selected.map(q => this.prepareQuestion(q));
     this.currentIndex = 0;
     this.userAnswers = [];
     this.isAnswered = false;

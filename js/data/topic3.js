@@ -1,0 +1,953 @@
+/**
+ * Tópico 3: Aplicação da Elasticidade e Resistência ao Sistema Osteomuscular
+ * 50 Questões Científicas Rigorosas para o 1.º Ano de Enfermagem
+ */
+
+const TOPIC_3_QUESTIONS = [
+  {
+    id: 301,
+    topicId: 3,
+    question: "O tecido ósseo é um biomaterial compósito bifásico. Quais são as duas fases primárias que o constituem e quais as suas respetivas funções mecânicas predominantes?",
+    options: [
+      "Uma fase inorgânica mineral (cristais de hidroxiapatite, ~65%) que confere dureza e resistência à compressão, e uma fase orgânica (~35%, principalmente colagénio tipo I) que confere flexibilidade e resistência à tração.",
+      "Uma fase lipídica pura (90%) para amortecimento hidrostático e uma fase celular de osteócitos rígidos (10%).",
+      "Uma fase mineral de carbonato de cálcio puro sem colagénio e uma fase gasosa de azoto sob pressão.",
+      "Uma matriz líquida de plasma ósseo sem componentes minerais sólidos."
+    ],
+    correctIndex: 0,
+    explanation: "O osso combina a resistência à compressão e rigidez de uma cerâmica mineral (cristais de hidroxiapatite de cálcio [Ca₁₀(PO₄)₆(OH)₂], ~65% do peso seco) com a flexibilidade e tenacidade à tração de um polímero fibroso (fibras de colagénio tipo I, ~35%). Este arranjo compósito confere ao esqueleto uma resistência mecânica incomparavelmente superior à de qualquer um dos componentes isolados.",
+    distractorAnalysis: [
+      "Opção B confunde medula óssea amarela com a matriz óssea estrutural.",
+      "Opção C ignora o papel estrutural fulcral do colagénio e confunde hidroxiapatite com carbonato de cálcio simples.",
+      "Opção D descreve um fluido sem estrutura esquelética sólida."
+    ],
+    nursingApplication: "Na osteogénese imperfeita ('doença dos ossos de vidro'), há uma mutação genética na síntese do colagénio tipo I: o osso mantém o mineral mas perde a flexibilidade orgânica, tornando-se frágil como porcelana. O enfermeiro deve manusear estes recém-nascidos e crianças com suporte plano acolchoado em bloco, pois a simples rotação ou troca de fralda pode fraturar membros."
+  },
+  {
+    id: 302,
+    topicId: 3,
+    question: "Em relação ao tipo de solicitação mecânica, sob que forma de esforço o tecido ósseo cortical humano apresenta a sua MÁXIMA resistência à rotura?",
+    options: [
+      "Compressão longitudinal (ao longo do eixo dos ósteons).",
+      "Tração transversal pura.",
+      "Cisalhamento (corte) perpendicular.",
+      "Torção axial rápida."
+    ],
+    correctIndex: 0,
+    explanation: "Devido à sua matriz mineral de hidroxiapatite e orientação paralela dos sistemas de Havers (ósteons), o osso cortical é mais resistente à compressão longitudinal (suporta tensões de rotura de 130 a 190 MPa), apresenta resistência intermediária à tração (80 a 130 MPa) e é muito vulnerável ao cisalhamento e à torção (rotura a apenas 50 a 70 MPa).",
+    distractorAnalysis: [
+      "Opção B é incorreta; o osso resiste significativamente menos à tração do que à compressão.",
+      "Opção C é incorreta; o cisalhamento é uma das solicitações mais destrutivas para o osso.",
+      "Opção D é incorreta; a torção gera tensões de cisalhamento que fraturam o osso com torques relativamente baixos."
+    ],
+    nursingApplication: "Este gradiente de resistência mecânica (Compressão > Tração > Cisalhamento/Torção) é a chave para compreender a traumatologia: uma carga axial moderada é bem tolerada pelo fémur, mas um movimento rotacional violento do pé preso ao solo gera torção com fratura helicoidal imediata da tíbia."
+  },
+  {
+    id: 303,
+    topicId: 3,
+    question: "O osso cortical (compacto) e o osso esponjoso (trabecular) desempenham papéis mecânicos distintos. Qual é a principal diferença no Módulo de Young (rigidez elástica) entre estes dois tipos de tecido ósseo?",
+    options: [
+      "O osso cortical possui um Módulo de Young muito superior (~14 a 20 GPa), enquanto o osso esponjoso tem Módulo de Young muito inferior (~0,1 a 4 GPa) devido à sua elevada porosidade trabecular.",
+      "O osso esponjoso é dez vezes mais rígido do que o osso cortical em todas as direções.",
+      "Ambos possuem rigorosamente o mesmo Módulo de Young de 200 GPa, idêntico ao do aço cirúrgico.",
+      "O Módulo de Young do osso cortical é nulo porque o osso compacto não sofre qualquer deformação elástica."
+    ],
+    correctIndex: 0,
+    explanation: "O osso cortical possui baixa porosidade (5 a 10%), formando a parede externa densa das diáfises com alto Módulo de Young (~14 a 20 GPa). O osso trabecular possui alta porosidade (50 a 90%) preenchida por medula óssea, o que lhe confere um Módulo de Young aparente muito menor (0,1 a 4 GPa), funcionando como uma estrutura celular porosa capaz de absorver grande quantidade de energia de deformação mecânica por esmagamento elástico nas epífises articulares.",
+    distractorAnalysis: [
+      "Opção B inverte os valores; o osso compacto é muito mais rígido do que o trabecular.",
+      "Opção C confunde os valores biológicos com os de metais industriais como o aço.",
+      "Opção D violaria a física dos sólidos; o osso deforma-se elasticamente em cada passo da marcha."
+    ],
+    nursingApplication: "A estrutura em favo de mel do osso esponjoso nas vértebras e colo do fémur atua como um 'amortecedor de choques' biológico. Em doentes osteoporóticos com perda severa de trabéculas, cargas compressivas habituais provocam fraturas por afundamento vertebral com cifose dorsal progressiva e dor crónica incapacitante."
+  },
+  {
+    id: 304,
+    topicId: 3,
+    question: "Por que razão biomecânica a diáfise dos ossos longos humanos (como o fémur, tíbia e úmero) possui uma arquitetura tubular oca (cilindro oco preenchido por canal medular) em vez de ser uma barra de osso maciço?",
+    options: [
+      "Porque um cilindro oco afasta a massa da linha neutra central, maximizando o Momento de Inércia da secção transversal e oferecendo máxima resistência à flexão e torção com o mínimo peso ósseo possível.",
+      "Porque o vazio interno serve exclusivamente para diminuir a temperatura dos membros inferiores.",
+      "Para permitir que o ar ambiente circule livremente no interior dos membros.",
+      "Porque o osso maciço seria incapaz de suportar forças de compressão axial simples."
+    ],
+    correctIndex: 0,
+    explanation: "Na flexão e na torção, as tensões mecânicas máximas ocorrem nas fibras mais periféricas e são nulas no centro geométrico (linha neutra). Ao concentrar a densa massa óssea na periferia formando um tubo cilíndrico oco, a natureza maximiza o Momento de Inércia (I) e o Momento Polar (J). Para a mesma quantidade de massa óssea, um osso tubular é muito mais resistente à flexão do que uma haste maciça, poupando energia metabólica vital na locomoção.",
+    distractorAnalysis: [
+      "Opção B confunde a biologia medular com um sistema de refrigeração térmico inexistente.",
+      "Opção C é falsa; os ossos são vascularizados e contêm medula hemato-adiposa, sem qualquer espaço gasoso.",
+      "Opção D é incorreta; uma barra maciça suporta bem a compressão axial, mas seria excessivamente pesada e metabolicamente dispendiosa para o organismo."
+    ],
+    nursingApplication: "O conhecimento da geometria tubular dos ossos longos ajuda o enfermeiro a compreender a colocação de cavilhas intramedulares em fraturas femorais: a haste metálica introduzida no canal oco restaura a rigidez estrutural à flexão, permitindo carga precoce no pós-operatório."
+  },
+  {
+    id: 305,
+    topicId: 3,
+    question: "A célebre 'Lei de Wolff' formulada pelo cirurgião Julius Wolff no século XIX estabelece qual princípio fundamental da mecanobiologia óssea?",
+    options: [
+      "O osso vivo remodela a sua microarquitetura e densidade em resposta direta às cargas e solicitações mecânicas funcionais a que é submetido (aumento de massa sob carga, reabsorção por desuso).",
+      "O tecido ósseo atinge a maturidade biológica aos 20 anos e nunca mais sofre alterações celulares até à morte.",
+      "O osso regenera-se exclusivamente através da secreção contínua de cartilagem hialina sem mineralização.",
+      "A fratura óssea é um processo puramente inorgânico independente da circulação sanguínea."
+    ],
+    correctIndex: 0,
+    explanation: "A Lei de Wolff descreve a adaptação funcional do esqueleto: onde o osso é submetido a maiores tensões mecânicas compressivas ou trativas regulares, os osteoblastos sintetizam nova matriz óssea e as trabéculas alinham-se ao longo das linhas principais de tensão. Inversamente, na ausência prolongada de carga mecânica (imobilização, repouso no leito prolongado, microgravidade espacial), os osteoclastos reabsorvem matriz, causando rápida osteopenia.",
+    distractorAnalysis: [
+      "Opção B ignora o turnover ósseo celular permanente ao longo de toda a vida humana.",
+      "Opção C confunde ossificação endocondral fetal com os processos gerais de remodelação óssea lamelar.",
+      "Opção D ignora a vascularização fundamental do periósteo e endósteo na consolidação de fraturas."
+    ],
+    nursingApplication: "A Lei de Wolff é o fundamento da prescrição de mobilização precoce e bipedestação pelo enfermeiro: doentes mantidos semanas acamados perdem até 1% de massa óssea trabecular por semana. O levante precoce e a marcha assistida exercem as cargas mecânicas essenciais para estimular a osteogénese e prevenir a osteoporose de desuso e hipercalcemia por reabsorção."
+  },
+  {
+    id: 306,
+    topicId: 3,
+    question: "Qual é o fenómeno biofísico intrínseco à matriz óssea colagénica que traduz deformações mecânicas em sinais elétricos celulares (mecanotransdução) para ativação dos osteoblastos?",
+    options: [
+      "Efeito Piezoelétrico e potenciais de streaming eletrocinéticos gerados pelo escoamento do fluido intersticial lacuno-canalicular sob compressão.",
+      "Efeito Fotoelétrico produzido pela radiação infravermelha do sangue.",
+      "Efeito Doppler acústico emitido pela cartilagem articular.",
+      "Emissão termiónica de positrões pela medula amarela."
+    ],
+    correctIndex: 0,
+    explanation: "Quando o osso é comprimido e deformado elasticamente, as fibras assimétricas de colagénio geram minúsculos potenciais elétricos superficiais de natureza piezoelétrica (cargas negativas nas zonas de compressão, estimulando osteoblastos; cargas positivas em tração, ativando osteoclastos). Adicionalmente, o escoamento do fluido intersticial pelos canalículos dos osteócitos gera potenciais de streaming que abrem canais de cálcio mecano-sensíveis, convertendo estresse mecânico em sinalização celular osteogénica.",
+    distractorAnalysis: [
+      "Opção B confunde mecanotransdução com o efeito fotoelétrico de Einstein em superfícies metálicas sob luz ultravioleta/raios X.",
+      "Opção C refere-se à variação aparente de frequência ondulatória por movimento de fontes sonoras.",
+      "Opção D descreve fenómenos de física nuclear totalmente inexistentes no tecido ósseo fisiológico."
+    ],
+    nursingApplication: "A mecanotransdução explica a indicação médica de dispositivos de estimulação eletromagnética pulsátil ou ultrassons de baixa intensidade que o enfermeiro programa e aplica em fraturas com atraso de consolidação ou pseudoartroses, 'mimetizando' os potenciais piezoelétricos naturais para estimular a união do foco de fratura."
+  },
+  {
+    id: 307,
+    topicId: 3,
+    question: "Na anatomia biomecânica do colo do fémur, a convergência das trabéculas ósseas de compressão e de tração delimita uma zona central triangular de menor densidade óssea conhecida como:",
+    options: [
+      "Triângulo de Ward, local de grande vulnerabilidade a fraturas de stress e fraturas osteoporóticas da anca.",
+      "Canal de Volkmann proximal.",
+      "Espaço de Disse perissinusoidal.",
+      "Forame magno trocantérico."
+    ],
+    correctIndex: 0,
+    explanation: "No colo femoral, as linhas de tensão organizam-se em dois grandes sistemas trabeculares: o sistema trabecular principal de compressão (que vai da cabeça femoral ao córtex medial/calcar) e o sistema principal de tração (do trocânter maior ao bordo superior do colo). No ponto onde estas trajetórias se cruzam e divergem, forma-se o Triângulo de Ward — uma área central com escassa densidade trabecular que se torna extremamente frágil com a perda óssea senil.",
+    distractorAnalysis: [
+      "Opção B é um canal vascular microscópico que perfura o osso compacto transversalmente.",
+      "Opção C é um espaço anatómico e histológico no parênquima hepático.",
+      "Opção D é uma combinação incorreta de termos anatómicos."
+    ],
+    nursingApplication: "Na densitometria óssea (DXA), o valor de T-score na área do Triângulo de Ward e colo femoral é um preditor direto do risco de fratura da anca. O enfermeiro utiliza esta avaliação para implementar planos individualizados de prevenção de quedas (calçado antiderrapante, iluminação noturna, retirada de tapetes, uso de protetores de anca)."
+  },
+  {
+    id: 308,
+    topicId: 3,
+    question: "Quando um doente idoso sofre uma queda simples da própria altura com impacto direto no grande trocânter da anca, qual é o mecanismo biomecânico primário que desencadeia a fratura do colo femoral?",
+    options: [
+      "O colo do fémur é submetido a uma flexão aguda violenta com forças de cisalhamento e tração excessivas no córtex superior, ultrapassando a baixa resistência à tração do osso osteoporótico.",
+      "A pressão hidrostática da urina na bexiga faz explodir a cavidade acetabular.",
+      "A rotação puramente concêntrica do músculo psoas-ilíaco corta o fémur sem qualquer força externa.",
+      "A diminuição instantânea da gravidade local provoca descompressão explosiva do canal medular."
+    ],
+    correctIndex: 0,
+    explanation: "O colo femoral funciona como uma viga em consola (cantilever). No impacto lateral contra o pavimento, a força do impacto atua no grande trocânter enquanto a cabeça do fémur é contida pelo acetábulo. Isto sujeita o colo a um momento fletor colossal com cisalhamento acentuado: o córtex superior é puxado sob tração intensa e o inferior comprimido. Como o osso senil osteoporótico é frágil e tem baixa resistência à tração, o colo rompe-se catastroficamente.",
+    distractorAnalysis: [
+      "Opção B é anatomicamente e fisiologicamente descabida.",
+      "Opção C exagera o papel dos músculos internos na ausência de forças traumáticas externas de impacto.",
+      "Opção D é fisicamente absurda."
+    ],
+    nursingApplication: "No pós-operatório de osteossíntese ou artroplastia da anca, os cuidados de enfermagem são cruciais: posicionar o membro operado em ligeira abdução com almofada entre as pernas (evitando adução e rotações que luxam a prótese) e manter vigilância rigorosa de sinais de hemorragia ou síndrome compartimental."
+  },
+  {
+    id: 309,
+    topicId: 3,
+    question: "Na curva tensão-deformação característica dos ligamentos articulares e tendões musculares submetidos a tração uniaxial, como se designa a região inicial não-linear caracterizada por baixas tensões mecânicas para alongamentos iniciais substanciais?",
+    options: [
+      "Região do 'Pé' (toe region), resultante da desondulação e retificação progressiva das fibras onduladas (crimp) de colagénio de repouso.",
+      "Região de rotura cominutiva plástica.",
+      "Região de escoamento isotrópico de Bingham.",
+      "Região de endurecimento por choque supersónico."
+    ],
+    correctIndex: 0,
+    explanation: "Em estado de repouso, as fibras de colagénio tipo I nos ligamentos e tendões apresentam uma ondulação natural microscópica ('crimp pattern'). Quando o tecido começa a ser tracionado, a região inicial da curva (toe region, deformações até 2 a 4%) reflete simplesmente o estiramento suave e alinhamento retilíneo dessas ondas com tensão muito baixa. Só após a retificação de todas as fibras é que a curva se torna retilínea na fase elástica linear com alto Módulo de Young.",
+    distractorAnalysis: [
+      "Opção B confunde a fase inicial reversível de adaptação com o ponto final de rotura destrutiva.",
+      "Opção C refere-se a fluidos de tensão de cedência em reologia química.",
+      "Opção D introduz termos de aerodinâmica militar sem relação com tecidos biológicos."
+    ],
+    nursingApplication: "A existência da 'toe region' confere aos ligamentos e tendões a complacência mecânica essencial para amortecer solavancos articulares em movimentos normais sem gerar tensões bruscas. Exercícios de aquecimento e mobilização passiva suave orientados pelo enfermeiro retificam o colagénio com segurança antes de esforços mecânicos maiores."
+  },
+  {
+    id: 310,
+    topicId: 3,
+    question: "Uma entorse da articulação tibiotársica (tornozelo) é classificada em três graus clínicos de gravidade com base na biomecânica de lesão do ligamento talofibular anterior. O que ocorre estruturalmente numa entorse de Grau II?",
+    options: [
+      "Rotura parcial das fibras de colagénio com ultrapassagem do limite elástico, resultando em frouxidão articular moderada, edema, equimose e dor significativa.",
+      "Alongamento microscópico benigno estritamente contido na região elástica linear, sem qualquer rotura de fibras nem frouxidão.",
+      "Secção anatómica completa de 100% dos ligamentos com luxação articular total imediata.",
+      "Calcificação óssea instantânea do tendão de Aquiles sem lesão ligamentar."
+    ],
+    correctIndex: 0,
+    explanation: "Na entorse de Grau I, há microestiramento na região elástica/início plástico sem perda de continuidade estrutural das fibras ligamentares. Na entorse de Grau II, a deformação ultrapassa largamente o limite elástico e ocorrem micro e macrorroturas de uma porção substancial das fibras de colagénio, provocando edema marcado, hematoma e laxidão articular detetável. Na entorse de Grau III, há rotura ligamentar completa com instabilidade severa.",
+    distractorAnalysis: [
+      "Opção B descreve estritamente a entorse de Grau I (ligeira).",
+      "Opção C descreve a entorse de Grau III (rotura total).",
+      "Opção D é uma condição patológica crónica inexistente como mecanismo agudo de entorse."
+    ],
+    nursingApplication: "No atendimento e acompanhamento de enfermagem a uma entorse de Grau II do tornozelo, o enfermeiro aplica o protocolo PRICE/POLICE: Proteção e Carga Otimizada, Gelo (vasoconstrição local para conter edema), Compressão com ligadura elástica e Elevação do membro acima do nível cardíaco para favorecer a drenagem veno-linfática."
+  },
+  {
+    id: 311,
+    topicId: 3,
+    question: "Os tecidos moles periarticulares (como ligamentos, tendões e cápsulas) são viscoelásticos. Qual das seguintes propriedades NÃO é uma característica típica do comportamento viscoelástico?",
+    options: [
+      "Rigidez mecânica instantânea estritamente independente da taxa ou velocidade de deformação (strain rate).",
+      "Fluência mecânica (creep, deformação progressiva sob carga constante no tempo).",
+      "Relaxamento de tensões (queda da resistência mecânica sob deformação constante).",
+      "Histerese elástica (dissipação de energia térmica durante ciclos de carga e descarga)."
+    ],
+    correctIndex: 0,
+    explanation: "Os materiais viscoelásticos são profundamente dependentes da taxa de deformação (strain rate-dependent): quanto mais rápido um tendão ou ligamento é esticado, mais rígido ele se torna (maior Módulo de Young aparente) e maior é a sua tensão de rotura. Dizer que a sua rigidez é independente da velocidade de deformação é FALSO, sendo essa uma característica exclusiva de sólidos puramente elásticos ideais.",
+    distractorAnalysis: [
+      "Opções B, C e D são manifestações universais comprovadas da viscoelasticidade dos tecidos biológicos ricos em colagénio e água ligada a proteoglicanos."
+    ],
+    nursingApplication: "Como o osso e os ligamentos são mais rígidos a altas velocidades de impacto, um traumatismo súbito e de alta energia (como num acidente de mota) provoca tipicamente rotura ligamentar em pleno corpo da substância, enquanto um estiramento lento em doentes acamados tende a causar avulsão óssea na inserção periosteal."
+  },
+  {
+    id: 312,
+    topicId: 3,
+    question: "A cartilagem articular hialina reveste as extremidades ósseas das articulações sinoviais. Qual é o mecanismo biofísico primário ('weeping lubrication' ou lubrificação por exsudações) que lhe permite suportar pressões colossais com coeficiente de atrito quase nulo (μ ≈ 0,002 a 0,02)?",
+    options: [
+      "A sua matriz poroelástica de agrecanos hidrofílicos expele água e eletrólitos sob compressão articular, formando uma película fluida pressurizada entre as superfícies em contacto que suporta a carga; na descompressão, o fluido é reabsorvido.",
+      "A presença de uma camada espessa de teflon sintetizada pelas células endoteliais dos vasos cartilagíneos.",
+      "A rotação de micro-esferas de titânio segregadas pela membrana sinovial.",
+      "A combustão contínua de glicose na cavidade articular que elimina qualquer contacto físico."
+    ],
+    correctIndex: 0,
+    explanation: "A cartilagem hialina é um tecido avascular poroelástico: 70 a 80% do seu peso é água, retida por glicosaminoglicanos sulfatados (agrecanos) de carga elétrica negativa fixa. Quando a articulação é comprimida pelo peso corporal, a água é lentamente forçada para fora dos microporos da matriz para o espaço articular (weeping lubrication), criando uma almofada fluida hidrodinâmica que suporta mais de 90% da carga mecânica sem atrito direto entre os sólidos.",
+    distractorAnalysis: [
+      "Opção B confunde tecidos vivos com polímeros industriais de flúor; a cartilagem adulta é avascular.",
+      "Opção C é ficção científica; não existem esferas metálicas na sinóvia biológica.",
+      "Opção D descreveria uma inflamação destrutiva impossível, já que a queima com chamas destruiria a articulação."
+    ],
+    nursingApplication: "Na osteoartrose, a degradação da matriz de agrecanos e colagénio compromete este mecanismo hidrodinâmico: o fluido já não é retido adequadamente, gerando contacto direto osso-com-osso, atrito abrasivo doloroso, crepitação articular e limitação severa da mobilidade, exigindo intervenções de enfermagem para gestão de dor e exercícios em piscina aquecida (hidroterapia)."
+  },
+  {
+    id: 313,
+    topicId: 3,
+    question: "A nível molecular e biomecânico, qual é a unidade funcional contrátil do músculo esquelético responsável pela geração de tensão ativa através da teoria do deslizamento dos miofilamentos?",
+    options: [
+      "O Sarcómero, delimitado entre duas linhas Z sucessivas, contendo filamentos finos de actina e filamentos grossos de miosina.",
+      "A fibra colagénica de Sharpey do periósteo.",
+      "O canal central de Havers do osso cortical.",
+      "O eritrócito desnucleado do capilar perimicial."
+    ],
+    correctIndex: 0,
+    explanation: "O sarcómero é a unidade contrátil elementar do músculo estriado esquelético. Durante a contração muscular, os iões cálcio (Ca²⁺) ligam-se à troponina C, expondo os sítios de ligação na actina; as cabeças globulares de miosina hidrolisam ATP, ligam-se à actina e realizam o golpe de força (power stroke), tracionando os filamentos finos em direção ao centro do sarcómero (linha M) e encurtando a distância entre as linhas Z.",
+    distractorAnalysis: [
+      "Opção B refere-se a fibras de fixação do periósteo à matriz óssea, sem função contrátil ativa.",
+      "Opção C é o canal de passagem de vasos e nervos no osso compacto.",
+      "Opção D é uma célula sanguínea anucleada de transporte de oxigénio."
+    ],
+    nursingApplication: "No doente em paragem cardiorrespiratória ou após a morte biológica, o esgotamento total do ATP intracelular impede o desprendimento das cabeças de miosina da actina, fixando o músculo num estado de rigidez mecânica permanente e irreversível (rigor mortis). O enfermeiro deve realizar os cuidados pós-morte ao corpo antes do estabelecimento pleno deste fenómeno cadavérico."
+  },
+  {
+    id: 314,
+    topicId: 3,
+    question: "A curva da 'Relação Força-Comprimento' do músculo esquelético estabelece que a força ativa máxima de contração isométrica é obtida em que estado?",
+    options: [
+      "No comprimento de repouso ótimo (L₀), onde ocorre a sobreposição geométrica máxima entre as pontes cruzadas de miosina e os sítios de ligação dos filamentos de actina.",
+      "No encurtamento extremo do músculo até a 20% do comprimento de repouso.",
+      "No estiramento hiper-máximo onde os filamentos de miosina e actina se separam completamente.",
+      "Apenas quando o músculo está completamente desnervado e paralisado."
+    ],
+    correctIndex: 0,
+    explanation: "A geração de força muscular ativa depende estritamente do número de pontes cruzadas funcionais estabelecidas simultaneamente entre actina e miosina. No comprimento de repouso ótimo (L₀, sarcómero entre ~2,0 e 2,2 μm), a sobreposição é máxima. Se o músculo for excessivamente encurtado, os filamentos de actina chocam e interferem entre si; se for excessivamente estirado, os filamentos separam-se e as pontes de miosina deixam de conseguir alcançar a actina.",
+    distractorAnalysis: [
+      "Opção B provoca declínio da força por colisão mútua dos filamentos finos no centro da banda H.",
+      "Opção C anula a força ativa porque a separação física impede a formação de pontes cruzadas.",
+      "Opção D descreve atrofia por denervação flácida com perda progressiva de força muscular."
+    ],
+    nursingApplication: "No posicionamento do doente no leito, a manutenção de articulações em posições funcionais neutras (ex: pés a 90° com apoio de suporte para evitar 'pé caído', joelhos e ancas ligeiramente fletidos) garante que os músculos operem próximo de L₀, prevenindo contraturas musculares em encurtamento crónico e preservando a força para a reabilitação."
+  },
+  {
+    id: 315,
+    topicId: 3,
+    question: "Na dinâmica das contrações musculares esqueléticas, como se classifica uma contração na qual o músculo gera tensão enquanto é forçado a ALONGAR-SE por uma carga externa superior à sua força interna (ex: fase de descida de uma escada ou apoio de um membro)?",
+    options: [
+      "Contração Excêntrica.",
+      "Contração Concêntrica.",
+      "Contração Isométrica pura.",
+      "Contração Isocinética estática."
+    ],
+    correctIndex: 0,
+    explanation: "Na contração excêntrica (ou trabalho negativo), o músculo produz força de frenagem enquanto o seu comprimento total aumenta sob ação de uma carga externa que supera a força das pontes cruzadas. Biomecanicamente, a contração excêntrica consegue gerar forças absolutas superiores às contrações concêntricas com menor consumo de oxigénio e ATP, mas impõe enormes tensões de cisalhamento que provocam microlesões ultraestruturais na linha Z dos sarcómeros.",
+    distractorAnalysis: [
+      "Opção B descreve a contração na qual o músculo encurta à medida que vence a carga (trabalho positivo).",
+      "Opção C define a contração na qual a tensão aumenta mas o comprimento muscular externo permanece inalterado.",
+      "Opção D descreve um exercício executado a velocidade angular estritamente constante por equipamento robotizado."
+    ],
+    nursingApplication: "A descida de rampas ou escadas por doentes requer potente ação excêntrica do quadríceps. Em doentes idosos com fraqueza muscular, a incapacidade de sustentar a contração excêntrica é a principal causa de 'falha do joelho' e quedas catastróficas, exigindo que o enfermeiro se posicione sempre abaixo do doente na escada para garantir o apoio de segurança."
+  },
+  {
+    id: 316,
+    topicId: 3,
+    question: "Do ponto de vista bioenergético e termodinâmico, qual é o rendimento mecânico médio (eficiência mecânica) do músculo esquelético humano na conversão de energia química (ATP) em trabalho mecânico útil?",
+    options: [
+      "Aproximadamente 20% a 25% de trabalho mecânico, dissipando-se os restantes 75% a 80% sob a forma de calor corporal.",
+      "Praticamente 100%, operando como uma máquina térmica de Carnot perfeita sem libertação de calor.",
+      "Menos de 0,5%, sendo o músculo um órgão termicamente inerte.",
+      "Mais de 95% em forma de ondas de rádio para comunicação neural."
+    ],
+    correctIndex: 0,
+    explanation: "A eficiência mecânica máxima do músculo esquelético varia entre 20% e 25%: de cada 100 Joules de energia livre de Gibbs libertados pela hidrólise de ATP nas pontes de miosina e bombas iónicas, apenas 20 a 25 J são convertidos em trabalho mecânico externo. A grande maioria (75-80%) é dissipada como calor no sarcoplasma, sendo este o pilar fundamental da termorregulação e homeotermia humana.",
+    distractorAnalysis: [
+      "Opção B violaria o Segundo Princípio da Termodinâmica e o ciclo de Carnot.",
+      "Opção C subestima grosseiramente o trabalho muscular real do coração e locomoção.",
+      "Opção D é uma fantasia sem base em biofísica muscular."
+    ],
+    nursingApplication: "Este elevado calor residual é vital na clínica: quando um doente pós-cirúrgico acorda hipotérmico no Bloco Operatório ou UCPA, o reflexo fisiológico de tremor muscular (shivering) desencadeia contrações repetidas sem trabalho útil, mobilizando 100% da energia na produção de calor para restabelecer a temperatura corporal central (37 °C). O enfermeiro monitoriza o consumo acrescido de O₂ associado a estes tremores."
+  },
+  {
+    id: 317,
+    topicId: 3,
+    question: "Na artroplastia total da anca com prótese metálica tradicional (haste femoral em liga de cobalto-crómio ou titânio), o fenómeno indesejável de 'Stress Shielding' (blindagem contra o estresse) decorre diretamente de qual discordância biofísica?",
+    options: [
+      "Do facto de a haste metálica apresentar um Módulo de Young muito mais elevado (110 a 210 GPa) do que o osso cortical circundante (~18 GPa), absorvendo a maior parte das cargas mecânicas e privando o osso da tensão necessária para a sua manutenção pela Lei de Wolff.",
+      "Da passagem de corrente elétrica alternada de alta voltagem da prótese para a medula óssea.",
+      "Da dissolução imediata do osso devido ao pH ácido do metal estéril.",
+      "Da atração gravitacional superior que o metal exerce sobre os osteoclastos."
+    ],
+    correctIndex: 0,
+    explanation: "Pelas leis da mecânica de compósitos em paralelo, estruturas mais rígidas (maior E) suportam uma fração desproporcionalmente maior da carga total. Como as ligas de Co-Cr (E ≈ 210 GPa) e Titânio (E ≈ 110 GPa) são muito mais rígidas do que o osso cortical (E ≈ 18 GPa), a haste femoral metálica 'blinda' o osso proximal da anca, descarregando o esforço apenas na extremidade distal. Privado de estresse fisiológico, o osso proximal reabsorve-se progressivamente por desuso (Lei de Wolff), podendo causar soltura assética da prótese.",
+    distractorAnalysis: [
+      "Opção B é falsa; as próteses são passivas e não conduzem correntes elétricas externas.",
+      "Opção C confunde corrosão química com a resposta biológica de remodelação por perda de estresse mecânico.",
+      "Opção D inventa uma força gravitacional impossível a nível celular."
+    ],
+    nursingApplication: "O conhecimento do stress shielding motiva o desenvolvimento de próteses com polímeros modernos de baixo módulo e guias de reabilitação específicas: o enfermeiro educa o doente a cumprir a progressão rigorosa de apoio de peso prescrita pela ortopedia para modular as tensões no membro e assegurar a longevidade funcional da prótese."
+  },
+  {
+    id: 318,
+    topicId: 3,
+    question: "O Polietileno de Ultra-Alto Peso Molecular (UHMWPE) é amplamente utilizado como componente de deslizamento acetabular em próteses de anca. Qual é a principal complicação biológica a longo prazo resultante do desgaste mecânico deste biomaterial?",
+    options: [
+      "A libertação contínua de partículas microscópicas de desgaste (débris) que ativam macrófagos, desencadeando osteólise periprotésica inflamatória e eventual descolamento da prótese.",
+      "A produção de insulina não controlada pelos tecidos articulares circundantes.",
+      "A transformação do polietileno em gás hélio tóxico no interior da articulação.",
+      "A calcificação completa de todas as veias profundas do membro inferior."
+    ],
+    correctIndex: 0,
+    explanation: "Ao longo de milhões de passos da marcha, o atrito cíclico da cabeça metálica ou cerâmica contra o componente de UHMWPE gera triliões de partículas microscópicas de polietileno (0,1 a 1 μm). Os macrófagos sinoviais fagocitam estas partículas mas não conseguem degradá-las, libertando citocinas pró-inflamatórias (TNF-α, IL-1, IL-6) e mediadores osteoclastogénicos (RANKL). Isto provoca destruição óssea massiva ao redor da prótese (osteólise periprotésica) e soltura assética tardia.",
+    distractorAnalysis: [
+      "Opção B confunde patologias endócrinas pancreáticas com desgaste articular local.",
+      "Opção C é quimicamente absurda, pois o polietileno consiste em cadeias de carbono e hidrogénio sem hélio.",
+      "Opção D confunde descolamento assético com trombose venosa profunda."
+    ],
+    nursingApplication: "Em consultas de enfermagem de seguimento a doentes com artroplastias com mais de 10 anos de implantação, a queixa insidiosa de dor na virilha ou na coxa ao caminhar deve alertar o enfermeiro para a suspeita de osteólise por débris de polietileno, exigindo encaminhamento urgente para radiografia de controlo antes que ocorra fratura periprotésica."
+  },
+  {
+    id: 319,
+    topicId: 3,
+    question: "Durante a flexão forçada do tronco para levantar um doente pesado sem fletir os joelhos, o disco intervertebral lumbossacrado (L5-S1) é submetido a uma compressão estimada de várias centenas de quilogramas-força (milhares de Newtons). Qual é a estrutura interna do disco responsável por resistir a essa força compressiva e redistribuí-la hidrostática e omnidirecionalmente?",
+    options: [
+      "O Núcleo Pulposo (nucleus pulposus), rico em proteoglicanos hidrofílicos que retêm água sob elevada pressão osmótica e hidrostática.",
+      "A apófise espinhosa posterior da vértebra dorsal.",
+      "O ligamento amarelo situado posteriormente ao canal raquidiano.",
+      "A dura-máter espinhal e as raízes da cauda equina."
+    ],
+    correctIndex: 0,
+    explanation: "O núcleo pulposo comporta-se hidromecanicamente como uma almofada hidráulica incompressível no centro do disco: tem um teor hídrico de 70 a 90% contido por uma malha de colagénio tipo II e agrecanos. Quando a coluna é comprimida axialmente, a pressão interna no núcleo pulposo eleva-se e transmite a tensão uniformemente em todas as direções (princípio de Pascal) contra o anel fibroso periférico e os pratos cartilagíneos vertebrais.",
+    distractorAnalysis: [
+      "Opção B é uma projeção óssea posterior para fixação ligamentar e muscular, sem função de amortecimento intersomático.",
+      "Opção C une as lâminas vertebrais posteriormente, conferindo resistência elástica à flexão mas sem absorver compressão axial intervertebral direta.",
+      "Opção D são estruturas neurológicas e meníngeas extremamente frágeis e suscetíveis a compressão patológica."
+    ],
+    nursingApplication: "Com o envelhecimento e a desidratação discal, o núcleo pulposo perde a sua capacidade hidrostática elástica de redistribuir pressões. Como resultado, as cargas compressivas concentram-se diretamente nas paredes do anel fibroso, tornando a coluna do adulto e do enfermeiro especialmente propensa a fissuras anulares e hérnias de disco se não forem adotadas posturas adequadas."
+  },
+  {
+    id: 320,
+    topicId: 3,
+    question: "Uma fratura do tipo 'Espiroide' (ou helicoidal) numa diáfise óssea longa (como na tíbia ou úmero) é produzida quase invariavelmente por qual mecanismo físico de solicitação mecânica?",
+    options: [
+      "Torção pura ou combinada em torno do eixo longitudinal do osso.",
+      "Compressão axial pura perfeitamente simétrica.",
+      "Impacto contundente estritamente paralelo ao bordo da tíbia.",
+      "Exposição a campos elétricos estáticos durante exames de eletrocardiograma."
+    ],
+    correctIndex: 0,
+    explanation: "A solicitação de torção gera tensões de cisalhamento máximas no plano transversal e longitudinal, que por sua vez induzem tensões de tração máxima orientadas a 45° em relação ao eixo longo do osso. Como o tecido ósseo é notavelmente fraco em tração e cisalhamento, a fratura inicia-se e propaga-se ao longo desta espiral a 45°, produzindo a linha de fratura helicoidal característica com extremidades pontiagudas cortantes.",
+    distractorAnalysis: [
+      "Opção B produz fraturas impactadas transversas ou fraturas cominutivas por esmagamento trabecular.",
+      "Opção C (impacto direto perpendicular) produz tipicamente fraturas transversas ou com terceiro fragmento em asa de borboleta por flexão pura.",
+      "Opção D é uma impossibilidade física absoluta; o ECG utiliza apenas registos passivos de microvoltagens cardíacas."
+    ],
+    nursingApplication: "Nas fraturas espiroides, as pontas ósseas espiculadas afiadas podem facilmente perfurar músculos adjacentes, artérias principais (ex: artéria tibial anterior ou artéria braquial) e a própria pele. O enfermeiro deve imobilizar o membro imediatamente na posição encontrada, sem tentar reduções intempestivas que lacerariam vasos e nervos."
+  },
+  {
+    id: 321,
+    topicId: 3,
+    question: "Na síndrome compartimental aguda pós-traumática de um membro (frequente após fraturas diafisárias da perna ou antebraço), qual é o fenómeno biofísico patológico de pressão tecidual interna que conduz à isquemia muscular e necrose?",
+    options: [
+      "A elevação contínua da pressão hidrostática no interior de um compartimento muscular osteofascial rígido e inextensível, superando a pressão de perfusão capilar arteriolar e colapsando a microcirculação veno-capilar.",
+      "A diminuição da pressão intracompartimental até atingir o vácuo absoluto de Torricelli.",
+      "A calcificação imediata de todos os músculos do compartimento em menos de 10 minutos.",
+      "A perda total de massa óssea do membro através dos poros da pele."
+    ],
+    correctIndex: 0,
+    explanation: "Os compartimentos anatómicos musculares dos membros são delimitados por fascias aponevróticas extremamente rígidas e inextensíveis (baixo módulo de complacência elástica). O sangramento ou edema pós-fratura eleva a pressão intracompartimental de valores normais (<8-10 mmHg) para mais de 30-40 mmHg, aproximando-se da pressão diastólica arterial. A microcirculação capilar colapsa, cessando a perfusão tecidual com hipóxia celular rápida, necrose muscular irreversível e perda de função neurológica.",
+    distractorAnalysis: [
+      "Opção B é o oposto da patologia; a pressão atinge valores patologicamente elevados, nunca vácuo.",
+      "Opção C confunde necrose isquémica aguda com miosite ossificante crónica tardia.",
+      "Opção D viola a conservação de massa e a integridade anatómica cutânea."
+    ],
+    nursingApplication: "A deteção precoce da síndrome compartimental é uma competência crítica do enfermeiro: vigilância dos '6 Ps' (Dor intensa desproporcionada e que não cede a opióides / Pain, Palidez / Pallor, Parestesias / Paresthesia, Paralisia / Paralysis, ausência de Pulsos / Pulselessness e Poiquilotermia / Poikilothermia). Qualquer suspeita exige desaperto imediato de ligaduras e notificação urgente para fasciotomia cirúrgica de descompressão."
+  },
+  {
+    id: 322,
+    topicId: 3,
+    question: "A resistência mecânica de um tendão à tração é proporcionada predominantemente por qual molécula proteica fibrilar e por qual tipo de ligações intramoleculares?",
+    options: [
+      "Fibras de Colagénio tipo I organizadas em tripla hélice paralelamente ao eixo longitudinal, reforçadas por ligações cruzadas covalentes (cross-links) intermoleculares de piridinolina e lisiloxidase.",
+      "Moléculas de albumina globular livre dispersas em líquido sinovial aquoso.",
+      "Proteínas contráteis de actina sem qualquer ligação transversal.",
+      "Polímeros inorgânicos de sílica cristalina pura."
+    ],
+    correctIndex: 0,
+    explanation: "O colagénio tipo I compõe cerca de 70 a 80% do peso seco dos tendões. As suas cadeias polipeptídicas organizam-se numa tripla hélice dextrogira estabilizada por ligações cruzadas covalentes mediadas enzimaticamente pela lisiloxidase. Estas pontes cruzadas intermoleculares e interfibrilares bloqueiam o deslizamento prematuro sob tração, conferindo aos tendões uma resistência mecânica à tração prodigiosa de 50 a 100 MPa (comparável à de alguns cabos metálicos industriais leves).",
+    distractorAnalysis: [
+      "Opção B é a principal proteína plasmática circulante solúvel, sem qualquer função elástica estrutural.",
+      "Opção C é um componente do citoesqueleto intracelular e sarcómero, não da matriz extracelular tendinosa.",
+      "Opção D descreve minerais de quartzo/areia inexistentes na bioquímica humana."
+    ],
+    nursingApplication: "Em doentes submetidos a antibioterapia com fluoroquinolonas (como o ciprofloxacino ou levofloxacino) ou corticoterapia prolongada, ocorre inibição da síntese de colagénio e destruição das ligações cruzadas. O enfermeiro deve alertar para o risco elevado de tendinite e rotura espontânea do tendão de Aquiles, orientando o doente a suspender esforços físicos e comunicar dor no calcanhar imediatamente."
+  },
+  {
+    id: 323,
+    topicId: 3,
+    question: "O osso humano apresenta comportamento 'Viscoelástico' demonstrado em ensaios laboratoriais. Isto significa que a sua resposta à fratura depende da velocidade com que a carga mecânica é aplicada (strain rate). Quando o osso é carregado a uma taxa de deformação MUITO ELEVADA (impacto rápido), o que sucede?",
+    options: [
+      "O Módulo de Young e a resistência à rotura do osso aumentam significativamente, acumulando muito maior energia elástica antes de partir numa fratura altamente cominutiva com múltiplos fragmentos.",
+      "O osso transforma-se instantaneamente num líquido gelatinoso sem qualquer fragmentação.",
+      "O osso quebra a uma tensão próxima de zero como se fosse algodão desfiado.",
+      "O osso perde todo o seu teor mineral por evaporação piezoelétrica instantânea."
+    ],
+    correctIndex: 0,
+    explanation: "Devido à viscoelasticidade (atrito do fluido intersticial que escoa nos canalículos e comportamento dos polímeros de colagénio), o osso comporta-se de forma mais rígida e resistente sob impactos rápidos (alta strain rate, como em acidentes de viação): o seu Módulo de Young pode aumentar até 30-50%. Contudo, isto permite armazenar uma quantidade massiva de energia de deformação que, ao ultrapassar o limite, dissipa-se violentamente estilhaçando o osso em múltiplos fragmentos cominutivos e destruindo os tecidos moles circundantes.",
+    distractorAnalysis: [
+      "Opção B é contrária à realidade; o osso torna-se mais rígido e vítreo, nunca líquido.",
+      "Opção C inverte a resposta reológica; a resistência aumenta com a velocidade de carga, nunca diminui.",
+      "Opção D é uma afirmação fantasiosa sem qualquer sentido físico."
+    ],
+    nursingApplication: "Compreender a biofísica da alta taxa de deformação ajuda o enfermeiro a prever o quadro clínico no acolhimento de urgência: acidentes de alta energia (automóvel, atropelamento) resultam em fraturas cominutivas graves com perda de substância óssea, laceração muscular extensa e choque hemorrágico, ao passo que quedas da própria altura (baixa energia) provocam habitualmente fraturas simples de traço único."
+  },
+  {
+    id: 324,
+    topicId: 3,
+    question: "Nos ligamentos da coluna vertebral humana, o 'Ligamento Amarelo' (ligamentum flavum) une as lâminas das vértebras adjacentes e apresenta uma coloração amarelada única. Qual é a sua particularidade biofísica e molecular distintiva?",
+    options: [
+      "Apresenta uma percentagem invulgarmente elevada de Elastina (~60 a 70%) em relação ao Colagénio, conferindo-lhe uma extensibilidade elástica enorme com retorno rápido e tensão de pré-tensão elástica contínua.",
+      "É constituído por 100% de hidroxiapatite inorgânica fundida sem qualquer proteína.",
+      "É um vaso sanguíneo oco que drena a circulação coronária para a medula raquidiana.",
+      "Não possui elasticidade mecânica, atuando como uma barra de ferro imutável."
+    ],
+    correctIndex: 0,
+    explanation: "Ao contrário da quase totalidade dos ligamentos corporais (onde o colagénio predomina largamente), o ligamento amarelo contém cerca de dois terços de fibras de elastina. Isto confere-lhe uma elasticidade quase pura de borracha: pode esticar até 50% além do seu comprimento de repouso sem sofrer deformação plástica permanente. Durante a flexão da coluna ele alonga-se, e na extensão encurta-se sem enrugar ou projetar-se para dentro do canal vertebral, mantendo a coluna em pré-tensão elástica protetora contínua.",
+    distractorAnalysis: [
+      "Opção B descreveria um osso totalmente mineralizado, o que impediria qualquer flexão vertebral.",
+      "Opção C confunde um ligamento da coluna com anastomoses cardiovasculares sistémicas.",
+      "Opção D nega a propriedade fundamental da elastina (a proteína mais elástica do corpo humano)."
+    ],
+    nursingApplication: "Na punção lombar e na anestesia epidural, o enfermeiro auxilia o médico observando a progressão da agulha de Tuohy: o avanço através do ligamento amarelo oferece uma resistência elástica característica ('sensação de borracha densa'), seguida de uma súbita 'perda de resistência' ao entrar no espaço epidural. Conhecer esta biofísica tátil assegura a colaboração serena no procedimento."
+  },
+  {
+    id: 325,
+    topicId: 3,
+    question: "A osteoporose é uma patologia óssea metabólica de alta prevalência na população idosa. Do ponto de vista da resistência dos materiais e biomecânica estrutural, qual é a alteração primária observada no tecido ósseo osteoporótico?",
+    options: [
+      "Redução da massa óssea total e degradação da microarquitetura trabecular (com afilamento e desconexão das trabéculas e adelgaçamento do córtex), reduzindo drasticamente o Módulo de Young aparente e a energia necessária para a fratura.",
+      "Aumento colossal da quantidade de hidroxiapatite que torna o osso mais pesado e indestrutível.",
+      "Substituição de todo o cálcio esquelético por átomos de ferro e cobre.",
+      "Desaparecimento dos canais vasculares com retenção de líquido sob pressão gasosa."
+    ],
+    correctIndex: 0,
+    explanation: "Na osteoporose, a atividade de reabsorção dos osteoclastos supera a taxa de síntese dos osteoblastos, resultando na perda de volume trabecular ósseo, perfuração de placas ósseas e perda de conectividade tridimensional trabecular. O osso torna-se uma estrutura porosa frágil: a sua resistência à compressão e tenacidade caem para uma fração dos valores jovens, fraturando com energias de impacto insignificantes (fraturas de fragilidade).",
+    distractorAnalysis: [
+      "Opção B descreveria a osteopetrose ('ossos de mármore'), que é uma doença genética rara completamente diferente.",
+      "Opção C é biologicamente impossível e contraria o metabolismo mineral fosfocálcico.",
+      "Opção D inventa fenómenos vasculares que não correspondem à patogénese osteometabólica."
+    ],
+    nursingApplication: "O doente com osteoporose severa necessita de cuidados de enfermagem minuciosos na mobilização: nunca tracionar os membros com força ou aplicar pressões pontuais com os dedos sobre as costelas ou braços, pois até a técnica incorreta de medição da pressão arterial com insuflação brutal da braçadeira pode provocar desconforto extremo ou microfraturas em ossos osteopénicos."
+  },
+  {
+    id: 326,
+    topicId: 3,
+    question: "O fenómeno de 'Histerese Mecânica' na cartilagem articular e nos discos intervertebrais é responsável por qual função fisiológica essencial durante a marcha e salto?",
+    options: [
+      "Amortecimento e dissipação de energia mecânica de choque sob a forma de calor no líquido sinovial e matriz colagénica, protegendo o cérebro e as articulações axiais de picos perigosos de aceleração.",
+      "Geração de impulsos elétricos para acionar o marcapasso sinusal cardíaco.",
+      "Evaporação da água corporal para reduzir o peso do esqueleto em 50%.",
+      "Eliminação total de todas as forças de gravidade durante o contacto do pé com o solo."
+    ],
+    correctIndex: 0,
+    explanation: "Quando o pé atinge o solo na corrida ou no salto, ondas de choque mecânico transmitem-se ascendentemente pelo esqueleto. Graças à histerese viscoelástica das cartilagens articulares e dos discos intervertebrais, uma parcela considerável da energia cinética do impacto não é devolvida elasticamente (o que faria o corpo ricochetear como uma bola dura), sendo antes absorvida e dissipada no atrito viscoso do líquido sinovial intersticial sob a forma de calor benigno inofensivo.",
+    distractorAnalysis: [
+      "Opção B confunde a condução mecânica espinhal com a eletrofisiologia autónoma do nó sinoauricular.",
+      "Opção C violaria a homeostase hídrica e a conservação de energia elementar.",
+      "Opção D nega as leis da gravitação de Newton."
+    ],
+    nursingApplication: "Em doentes com artroplastia total ou amputação de membros inferiores, as próteses modernas incorporam componentes viscoelásticos de elastómero e fibra de carbono com laços de histerese calculados pelo fabricante. O enfermeiro reabilitador acompanha a adaptação da marcha, verificando se o amortecimento da prótese previne a dor lombar compensatória reflexa."
+  },
+  {
+    id: 327,
+    topicId: 3,
+    question: "Na análise biomecânica do salto e corrida, o 'Tendão de Aquiles' (tendão do calcâneo) atua como um acumulador mecânico de energia elástica extraordinário. Como se descreve a sua função no ciclo de alongamento-encurtamento (stretch-shortening cycle)?",
+    options: [
+      "Durante a fase de contacto inicial e dorsiflexão do tornozelo, o tendão é esticado passivamente armazenando energia elástica potencial de deformação (U = 1/2 k·x²); essa energia é subitamente restituída na descompressão (recoil elástico) impulsionando o corpo para a frente com enorme poupança de ATP metabólico.",
+      "O tendão contrai-se ativamente hidrolisando ATP como se fosse um sarcómero muscular.",
+      "O tendão quebra propositadamente em cada passo e reconstitui-se em microssegundos.",
+      "O tendão permanece completamente rígido como uma barra de aço fundido sem qualquer alongamento mensurável."
+    ],
+    correctIndex: 0,
+    explanation: "O tendão do calcâneo funciona como uma mola elástica de alta eficiência biológica: durante o apoio do pé na marcha e corrida, as fibras de colagénio sofrem deformação elástica reversível (armazenando energia mecânica elástica). Na fase de impulsão (push-off), o tendão encurta rapidamente libertando essa energia mecânica acumulada por retorno elástico passivo. Este mecanismo de mola reduz o custo energético metabólico da locomoção humana em até 50% comparado a um sistema puramente muscular ativo.",
+    distractorAnalysis: [
+      "Opção B confunde tecido conjuntivo tendinoso passivo com sarcómeros contráteis de miofibrilhas.",
+      "Opção C é absurda; roturas de tendão exigem cirurgia ou imobilização de meses e impedem a marcha.",
+      "Opção D ignora a deformação elástica fisiológica documentada do tendão (alongamento de 4 a 8% sob carga máxima)."
+    ],
+    nursingApplication: "A ruptura do tendão de Aquiles é uma lesão traumática incapacitante súbita. No exame clínico auxiliado pelo enfermeiro, o Teste de Thompson (compressão manual da barriga da perna com o doente em decúbito ventral: a ausência de flexão plantar passiva do pé indica descontinuidade mecânica do tendão) confirma a perda total de transmissão da força do tríceps sural ao calcâneo."
+  },
+  {
+    id: 328,
+    topicId: 3,
+    question: "O tecido ósseo possui capacidade ímpar de regeneração estrutural através da formação de 'Calo Ósseo' após uma fratura. Qual é a sucessão de fases biomecânicas e histológicas que restaura a rigidez original do osso?",
+    options: [
+      "Fase inflamatória com hematoma de fratura -> Calo mole fibrocartilagíneo (baixa rigidez elástica, união inicial) -> Calo duro de osso trabecular imaturo / tecido ósseo entrançado (mineralização) -> Remodelação lamelar contínua pela Lei de Wolff orientando os novos ósteons ao longo das linhas de carga.",
+      "Fusão instantânea por calor gerado pelo atrito dos fragmentos sem qualquer proliferação celular.",
+      "Formação de uma camada permanente de cartilagem que nunca se mineraliza ao longo da vida.",
+      "Necrose avascular total com absorção do membro residual."
+    ],
+    correctIndex: 0,
+    explanation: "A consolidação da fratura por via secundária obedece a uma evolução mecânica precisa: 1) O hematoma de fratura fornece fatores de crescimento e citocinas; 2) Proliferação de fibroblastos e condroblastos formando o calo cartilagíneo mole (que tolera altas deformações elásticas iniciais); 3) Ossificação endocondral convertendo o calo mole em calo duro de osso entrançado mineralizado, diminuindo a deformação no foco para menos de 2%; 4) Remodelação orientada por osteoclastos e osteoblastos durante meses a anos, recanalizando a medula e restaurando a geometria cilíndrica ótima.",
+    distractorAnalysis: [
+      "Opção B descreve um processo mecânico industrial de soldadura por fricção inexistente na biologia.",
+      "Opção C descreveria uma pseudoartrose fibrocartilagínea patológica que requer nova intervenção cirúrgica.",
+      "Opção D descreve uma catástrofe isquémica gangrenosa pós-traumática."
+    ],
+    nursingApplication: "O sucesso da consolidação depende criticamente da estabilidade biomecânica garantida pelo enfermeiro: nas primeiras semanas, movimentações grosseiras ou apoios indevidos no membro gessado geram deformações relativas excessivas (>10-15%) no foco da fratura, que rompem os neovasos capilares e impedem a mineralização do calo mole, evoluindo para não-consolidação (pseudoartrose)."
+  },
+  {
+    id: 329,
+    topicId: 3,
+    question: "As fáscias musculares profundas (como a fascia lata na coxa) são tecidos conjuntivos densos e inextensíveis que envolvem grupos musculares em compartimentos fechados. Qual é o seu benefício mecânico durante a marcha na circulação de retorno venoso?",
+    options: [
+      "Ao conterem rigidamente os músculos em contração, transformam o aumento do diâmetro muscular em elevadas pressões hidrostáticas transitórias no compartimento, comprimindo as veias profundas e ejetando o sangue em direção ao coração através de válvulas unidirecionais ('Bomba Muscular da Barriga da Perna').",
+      "Impedem a passagem de impulsos nervosos do cérebro para os músculos.",
+      "Absorvem o ácido láctico convertendo-o instantaneamente em oxigénio gasoso.",
+      "Servem exclusivamente como isolador térmico contra o ar condicionado hospitalar."
+    ],
+    correctIndex: 0,
+    explanation: "A rigidez mecânica (alto Módulo de Young sob tração) das fáscias aponevróticas impede que os músculos se expandam lateralmente sem resistência quando encurtam durante a contração. Consequentemente, o ventre muscular em expansão gera pressões hidrostáticas internas que comprimem o plexo venoso profundo intramuscular e a veia poplítea/femoral. Graças às válvulas parietais unidirecionais das veias, o sangue é 'espremido' superiormente em direção ao átrio direito, funcionando como um verdadeiro coração periférico.",
+    distractorAnalysis: [
+      "Opção B seria letal, paralisando a condução motora axonal dos nervos periféricos.",
+      "Opção C viola as vias metabólicas bioquímicas do ciclo de Cori no fígado.",
+      "Opção D confunde tecido conjuntivo de tração com tecido adiposo subcutâneo isolante."
+    ],
+    nursingApplication: "Em doentes imobilizados no leito cirúrgico ou em UCI, a inatividade muscular elimina o funcionamento desta bomba mecânica fáscio-muscular, provocando estase venosa profunda nas veias dos membros inferiores (Tríade de Virchow). O enfermeiro implementa dispositivos de compressão pneumática intermitente (CPI) que insuflam sequencialmente mangas nas pernas para reproduzir mecanicamente as ondas pressóricas da bomba muscular."
+  },
+  {
+    id: 330,
+    topicId: 3,
+    question: "O fenómeno de 'Afrouxamento Assético' de uma prótese articular do joelho ou anca sem qualquer infeção bacteriana é primariamente desencadeado por qual cascata biomecânica?",
+    options: [
+      "Desgaste mecânico cíclico de superfícies de atrito -> libertação de micropartículas de desgaste -> reação inflamatória mediada por osteoclastos -> reabsorção óssea periprotésica (osteólise) -> perda de fixação mecânica do implante.",
+      "Perda súbita de gravidade dentro da cápsula articular que faz o metal flutuar.",
+      "Oxidação imediata do titânio pela presença de oxigénio molecular no ar inalado.",
+      "Ataque direto do sistema imunitário contra os átomos de titânio por produção de anticorpos anti-titânio específicos."
+    ],
+    correctIndex: 0,
+    explanation: "O descolamento assético é a causa mais comum de falência a longo prazo das artroplastias articulares: não resulta de bactérias, mas da resposta biológica ao desgaste mecânico contínuo de polietileno, cimento ósseo ou metais. As micropartículas (débris) atraem macrófagos e células gigantes que ativam a reabsorção osteoclástica na interface osso-implante. O osso de suporte desaparece e o implante ganha micromovimentos instáveis dolorosos.",
+    distractorAnalysis: [
+      "Opção B é absurda do ponto de vista da física gravitacional.",
+      "Opção C é falsa; o titânio forma uma camada passivadora de dióxido de titânio (TiO₂) altamente estável e biocompatível.",
+      "Opção D é incorreta; o titânio é biologicamente inerte e não atua como antigénio na síntese clássica de anticorpos humorais."
+    ],
+    nursingApplication: "O enfermeiro ensina o doente com artroplastia a evitar atividades de impacto repetitivo de alta energia (como correr ou saltar), incentivando modalidades de baixo impacto articular (natação, bicicleta estática, caminhada regular) para diminuir a taxa anual de desgaste e maximizar a longevidade funcional da prótese."
+  },
+  {
+    id: 331,
+    topicId: 3,
+    question: "No contexto da mecânica do traumatismo ósseo infantil, por que motivo as crianças sofrem frequentemente fraturas em 'Ramo Verde' (greenstick fracture) em vez das fraturas cominutivas clássicas observadas nos adultos?",
+    options: [
+      "Porque o osso em crescimento possui maior proporção de colagénio orgânico hidratado e menor teor de mineralização inorgânica, conferindo-lhe maior ductilidade e deformabilidade plástica (o córtex flete e rompe apenas no bordo convexo sob tração, enquanto o bordo côncavo permanece contínuo sob compressão).",
+      "Porque os ossos das crianças são constituídos exclusivamente por cartilagem elástica sem qualquer vaso sanguíneo.",
+      "Porque a membrana de periósteo das crianças é extremamente frágil e desaparece antes da puberdade.",
+      "Porque a gravidade atua com menos de metade da aceleração sobre corpos com peso inferior a 30 kg."
+    ],
+    correctIndex: 0,
+    explanation: "O osso da criança tem menor mineralização de hidroxiapatite e uma matriz de colagénio muito flexível com periósteo espesso e resistente. Quando submetido a uma força de flexão violenta, comporta-se tal como um ramo de árvore jovem e verde: encurva-se plasticamente e sofre fratura incompleta apenas no bordo externo sob tração máxima, mantendo a continuidade óssea e periosteal intacta no lado oposto sob compressão.",
+    distractorAnalysis: [
+      "Opção B confunde os núcleos de ossificação diafisários consolidados com a cartilagem de crescimento puramente fisária.",
+      "Opção C inverte a realidade anatómica; o periósteo pediátrico é notavelmente espesso, altamente vascularizado e osteogénico.",
+      "Opção D viola a Lei da Gravitação Universal de Newton."
+    ],
+    nursingApplication: "Nas fraturas em ramo verde do antebraço ou perna de crianças, o alinhamento anatómico e a integridade funcional são preservados muito mais facilmente pelo periósteo intacto. O enfermeiro orienta a família sobre os cuidados com o gesso e tranquiliza os pais quanto ao excelente prognóstico e rápida remodelação óssea infantil."
+  },
+  {
+    id: 332,
+    topicId: 3,
+    question: "A rigidez e resistência de uma placa de osteossíntese metálica aparafusada sobre uma fratura do fémur dependem criticamente da sua espessura. Pela fórmula do momento de inércia retangular de uma viga (I = b · h³ / 12), duplicar a espessura (h) da placa metálica aumenta a sua resistência à flexão em quantas vezes?",
+    options: [
+      "8 vezes (2³ = 8).",
+      "2 vezes apenas.",
+      "4 vezes (2² = 4).",
+      "16 vezes (2⁴ = 16)."
+    ],
+    correctIndex: 0,
+    explanation: "Para uma secção transversal retangular de largura b e espessura/altura h, o Momento de Inércia à flexão é proporcional ao cubo da espessura: I = b · h³ / 12. Se a espessura h for duplicada (multiplicada por 2) mantendo-se a mesma largura b, o momento de inércia e a rigidez à flexão são multiplicados por 2³ = 8. Uma pequena alteração na espessura de um implante produz um impacto gigantesco na sua resistência mecânica.",
+    distractorAnalysis: [
+      "Opção B assume erroneamente uma dependência linear que violaria a teoria de flexão de vigas de Euler-Bernoulli.",
+      "Opção C seria a variação da área de secção ou da resistência à torção circular plana.",
+      "Opção D (16 vezes) aplica-se a cilindros circulares maciços onde o raio varia à 4.ª potência (r⁴), não a vigas retangulares finas."
+    ],
+    nursingApplication: "Compreender como a espessura governa a rigidez permite ao enfermeiro valorizar a fragilidade de placas de reconstrução maleáveis e finas usadas na clavícula ou fíbula, que não foram desenhadas para suportar carga total imediata de marcha, reforçando com o doente a proibição absoluta de apoiar o pé no solo precocemente."
+  },
+  {
+    id: 333,
+    topicId: 3,
+    question: "A 'Fadiga Óssea' (bone fatigue) que conduz a fraturas de stress em recrutas militares, desportistas ou doentes com osteoporose resulta de qual fenómeno microestrutural cumulativo?",
+    options: [
+      "Acumulação progressiva de microfissuras na matriz mineral e lamelas ósseas decorrente de ciclos repetidos de carga mecânica diária a uma velocidade superior à capacidade biológica de reparação e remodelação celular pelos osteoblastos.",
+      "Infiltração de ar gasoso nos canais de Havers através de poros da epiderme durante a respiração.",
+      "Perda súbita de todos os eletrões do cálcio metálico devido ao atrito de tecidos.",
+      "Combustão espontânea de fosfatos na medula óssea provocada pelo ácido láctico."
+    ],
+    correctIndex: 0,
+    explanation: "Em cada passo da marcha e corrida, o osso sofre microlesões mecânicas subclínicas impercetíveis. Em condições normais de repouso intercalado, os osteócitos detetam as microfissuras e ativam unidades de remodelação óssea (BMUs) que reabsorvem a área danificada e depositam osso novo. Se o indivíduo for submetido a esforços repetitivos exaustivos contínuos sem repouso biológico adequado, a taxa de iniciação e propagação de microfissuras supera a taxa de osteogénese, coalescendo numa linha macroscópica de fratura por fadiga (fratura de stress).",
+    distractorAnalysis: [
+      "Opção B violaria a estanquicidade tecidual e as leis fisiológicas de barreira cutânea e hematose.",
+      "Opção C é uma afirmação quimicamente incorreta e desprovida de sentido biológico.",
+      "Opção D inventa reações de combustão endotérmica/exotérmica impossíveis nos tecidos vivos."
+    ],
+    nursingApplication: "Fraturas de stress nos metatarsos ('fratura de marcha') ou na tíbia manifestam-se inicialmente por dor insidiosa aos esforços que alivia em repouso, frequentemente sem alterações visíveis no raio-X convencional inicial. O enfermeiro que atua em saúde ocupacional ou triagem clínica deve recomendar repouso de carga imediato e encaminhar para ressonância magnética precoce."
+  },
+  {
+    id: 334,
+    topicId: 3,
+    question: "O cimento ósseo acrílico utilizado na fixação de próteses ortopédicas de artroplastia é o Polimetilmetacrilato (PMMA). Qual é o seu papel mecânico primário na interface entre a prótese metálica e o tecido ósseo do doente?",
+    options: [
+      "Funciona como uma argamassa de redistribuição uniforme de tensões mecânicas, preenchendo todos os interstícios entre o implante e as trabéculas ósseas para evitar picos concentrados de tensão (stress concentrations) que fraturariam o osso.",
+      "Atua como uma cola biológica covalente que se funde quimicamente no DNA dos osteoblastos.",
+      "Serve para acelerar a decomposição biológica do osso para dar espaço a um fémur 100% plástico.",
+      "Gera uma corrente elétrica galvânica para manter a circulação sanguínea artificial."
+    ],
+    correctIndex: 0,
+    explanation: "O PMMA não é uma 'cola' adesiva no sentido químico tradicional; ele atua puramente como um espaçador mecânico de travamento (interlocking) mecânico tridimensional. Ao polimerizar in situ na cavidade medular, molda-se perfeitamente às irregularidades trabeculares do osso esponjoso e à superfície rugosa do metal. Isso distribui o peso corporal uniformemente por uma ampla área de contacto (σ = F / A), eliminando concentrações perigosas de tensão pontual no osso.",
+    distractorAnalysis: [
+      "Opção B confunde intertravamento mecânico macroscópico com reações químicas genéticas covalentes.",
+      "Opção C é contrária ao objetivo clínico ortopédico de preservação e sustentação óssea duradoura.",
+      "Opção D inventa correntes galvânicas prejudiciais que provocariam necrose e osteólise."
+    ],
+    nursingApplication: "Durante a preparação e cimentação com PMMA na sala operatória, o enfermeiro sabe que a polimerização é uma reação altamente exotérmica (liberta calor, atingindo até 70 a 80 °C na fase de cura). O enfermeiro e cirurgião irrigam o campo cirúrgico copiosamente com soro fisiológico frio para evitar necrose térmica do osso adjacente e queda da tensão arterial (síndrome de implantação do cimento ósseo)."
+  },
+  {
+    id: 335,
+    topicId: 3,
+    question: "Qual das seguintes articulações sinoviais humanas possui fibrocartilagens de reforço intra-articulares (Meniscos) cuja função biofísica primária é aumentar a congruência articular e a área de contacto, reduzindo substancialmente as pressões de contacto locais (P = F / A)?",
+    options: [
+      "A articulação do Joelho (femorotibial).",
+      "A articulação interfalângica distal dos dedos das mãos.",
+      "A sutura sagital craniana entre os ossos parietais.",
+      "A articulação tibiofibular média sindesmótica."
+    ],
+    correctIndex: 0,
+    explanation: "Os côndilos femorais são convexos e os pratos tibiais são quase planos ou ligeiramente convexos lateralmente: a congruência geométrica natural entre eles é mínima, o que geraria minúsculas áreas de contacto e tensões compressivas esmagadoras. Os meniscos medial e lateral de fibrocartilagem aumentam a área de apoio em até 3 vezes, absorvendo cerca de 50 a 70% da carga compressiva axial e transformando tensões verticais em tensões circunferenciais de tração na periferia ('hoop stresses').",
+    distractorAnalysis: [
+      "Opção B possui articulações trocleares pequenas e congruentes estabilizadas por ligamentos colaterais sem meniscos.",
+      "Opção C é uma sinartrose/sutura fibrosa fixa do crânio sem qualquer movimento sinovial.",
+      "Opção D é uma membrana fibrosa sindesmótica interóssea sem cavidade articular meniscal."
+    ],
+    nursingApplication: "Após uma meniscectomia total (extirpação cirúrgica do menisco por lesão complexa), a área de contacto femorotibial diminui drasticamente, multiplicando as pressões de contacto sobre a cartilagem articular remanescente por um fator de 2 a 3. Isso acelera a artrose degenerativa, exigindo reabilitação e reforço muscular do quadríceps coordenados pelo enfermeiro."
+  },
+  {
+    id: 336,
+    topicId: 3,
+    question: "A rigidez elástica de um músculo em repouso passivo durante o seu alongamento depende primariamente de qual proteína sarcomérica gigante, considerada a maior cadeia polipeptídica simples do corpo humano?",
+    options: [
+      "Titina (ou conectina), que funciona como uma mola molecular que ancora a miosina à linha Z do sarcómero.",
+      "Mioglobina globular sarcoplasmática.",
+      "Hemoglobina tetramérica intravascular.",
+      "Tropomiosina reguladora filamentar."
+    ],
+    correctIndex: 0,
+    explanation: "A Titina é uma macromolécula gigantesca com peso molecular superior a 3800 kDa que se estende desde a linha Z até à linha M do sarcómero. No músculo estriado relaxado, a titina atua como uma mola elástica passiva molecular bidirecional: impede que o sarcómero seja esticado além dos limites fisiológicos seguros, desenvolve a tensão elástica passiva de repouso e garante a centralização rigorosa dos filamentos grossos de miosina no centro do sarcómero.",
+    distractorAnalysis: [
+      "Opção B é uma proteína de transporte intracelular de oxigénio no miócito, sem propriedades elásticas de mola estrutural.",
+      "Opção C é uma proteína do sangue no interior dos glóbulos vermelhos.",
+      "Opção D é uma molécula reguladora que bloqueia os sítios de ligação da actina na ausência de cálcio, sem atuar como a mola passiva longitudinal principal."
+    ],
+    nursingApplication: "Em doentes acamados ou paralisados por lesão neurológica superior, o encurtamento adaptativo crónico da titina e do colagénio perimicial culmina em espasticidade e contraturas articulares permanentes. O enfermeiro executa mobilizações passivas diárias em toda a amplitude de movimento articular para manter a extensibilidade da titina sarcomérica e do tecido conjuntivo."
+  },
+  {
+    id: 337,
+    topicId: 3,
+    question: "Quando um enfermeiro aplica uma tala gessada de imobilização num membro fraturado, é de rigor clínico imperativo verificar se o bordo do gesso não exerce compressão focal mecânica sobre o 'Nervo Fibular Comum' (ciático poplíteo externo) no colo da fíbula. Qual é a complicação biomecânica e motora imediata se este nervo for submetido a isquemia por compressão contínua?",
+    options: [
+      "Paresia ou paralisia dos músculos do compartimento anterior e lateral da perna, manifestando-se por incapacidade de realizar dorsiflexão e eversão do pé ('Pé Caído' ou pé pendente).",
+      "Perda irreversível da visão e da audição bilateral.",
+      "Paragem respiratória súbita por colapso do diafragma.",
+      "Aumento imediato da frequência de pulso para 300 bpm."
+    ],
+    correctIndex: 0,
+    explanation: "O nervo fibular comum contorna superficialmente o colo ósseo da fíbula (peróneo), estando coberto apenas por pele e fáscia fina. Se a tala ou o gesso apertado exercer uma pressão mecânica focal sobre este ponto, a microcirculação intraneural (vasa nervorum) é ocluída com isquemia axonal e desmielinização mecânica (neuropraxia ou axonotmese). O doente perde a inervação dos músculos tibial anterior e fibulares, arrastando a ponta do pé ao caminhar ('pé caído' / drop foot).",
+    distractorAnalysis: [
+      "Opções B e C afetam órgãos sensoriais centrais e troncos autonómicos vitais do tronco encefálico sem qualquer relação com a fíbula.",
+      "Opção D descreve uma arritmia cardíaca grave não relacionada com lesão de nervos periféricos do membro inferior."
+    ],
+    nursingApplication: "A vigilância neurovascular periférica é um cuidado de enfermagem elementar nos doentes com talas ou trações: inspecionar o colo da fíbula acolchoando-o com algodão ortopédico e avaliar rotineiramente a capacidade do doente para estender o hálux e levantar a ponta do pé ativamente contra a gravidade."
+  },
+  {
+    id: 338,
+    topicId: 3,
+    question: "Em biomecânica, qual é o papel funcional e reológico dos 'Proteoglicanos' (compostos por cadeias de condroitin-sulfato e queratan-sulfato ligadas ao ácido hialurónico) na matriz da cartilagem articular?",
+    options: [
+      "Apresentam elevadíssima densidade de cargas elétricas negativas fixas (iões sulfato e carboxilo) que se repelem mutuamente e atraem osmoticamente grandes volumes de água, gerando uma pressão de intumescência interna (swelling pressure) que resiste à compressão axial.",
+      "Atuam como placas metálicas rígidas que impedem a deformação do colagénio.",
+      "Destroem continuamente a cartilagem articular para impedir que as articulações se mexam.",
+      "São enzimas proteolíticas destinadas a degradar as proteínas do sangue extravasado."
+    ],
+    correctIndex: 0,
+    explanation: "As cadeias de glicosaminoglicanos dos proteoglicanos contêm milhões de grupos ionizados SO₃⁻ e COO⁻. Esta 'densidade de carga fixa' negativa atrai catiões móveis (Na⁺) para o interior da cartilagem, criando um forte gradiente osmótico de Donnan que suga água para o tecido. A água tenta expandir a matriz, mas é contida pela malha inextensível de fibras de colagénio tipo II: este equilíbrio cria uma pressão de tumescência elástica permanente (~0,2 a 0,3 MPa) pronta a absorver impactos mecânicos repentinos.",
+    distractorAnalysis: [
+      "Opção B confunde matriz biológica hidrofílica com blindagens metálicas inorgânicas.",
+      "Opção C descreveria uma ação patológica destrutiva contrária à sobrevivência da articulação.",
+      "Opção D descreve proteases ativadas na fibrinólise ou inflamação, não elementos estruturais da matriz."
+    ],
+    nursingApplication: "Com a idade e o sedentarismo crónico, a síntese de proteoglicanos diminui e as cadeias encurtam-se, reduzindo a capacidade da cartilagem de reter água e resistir a impactos. O enfermeiro encoraja o doente a manter hidratação adequada e atividade física regular de baixo impacto para estimular o metabolismo dos condrócitos por bombeamento de fluidos."
+  },
+  {
+    id: 339,
+    topicId: 3,
+    question: "A fixação cirúrgica externa de fraturas expostas graves (Fixador Externo de Ilizarov ou fixadores tubulares) baseia-se em princípios de resistência de materiais para conseguir a união óssea. Qual é o conceito biomecânico de 'Estabilidade Relativa' com micromovimentos controlados promovido por estes fixadores?",
+    options: [
+      "Permitir uma ligeira flexão elástica controlada no foco de fratura sob carga axial (deformação relativa de 2% a 10%), estimulando ativamente a osteogénese e a formação exuberante de calo ósseo periosteal pela Lei de Wolff.",
+      "Exigir imobilização molecular absoluta com zero micromovimentos, porque qualquer movimento nanométrico destrói imediatamente o osso.",
+      "Manter o membro em rotação perpétua por intermédio de motores elétricos.",
+      "Dissolver completamente os fragmentos ósseos e substituí-los por ar comprimido."
+    ],
+    correctIndex: 0,
+    explanation: "Na biomecânica moderna da fixação óssea (Perren), a rigidez excessiva do implante (estabilidade absoluta, strain < 2%) induz consolidação primária lenta sem calo periosteal visível. Por outro lado, fixadores externos fornecem 'estabilidade relativa': a estrutura é suficientemente rígida para manter o alinhamento axial e rotacional dos ossos, mas suficientemente flexível sob carga fisiológica para permitir microdeformações axiais fisiológicas (strain entre 2% e 10%), que atuam como potente estímulo mecânico para a rápida diferenciação e maturação do calo ósseo.",
+    distractorAnalysis: [
+      "Opção B confunde estabilidade relativa com os requisitos estritos de placas rígidas de compressão interfragmentar (AO clássica).",
+      "Opção C é ficção sem respaldo terapêutico.",
+      "Opção D é um disparate biológico."
+    ],
+    nursingApplication: "Nos doentes com fixadores externos, o enfermeiro tem duas missões essenciais: 1) Cuidados estéreis rigorosos no local de inserção dos pinos e fios de Kirschner na pele para evitar infeções bacterianas (flebite de trajeto e osteomielite); 2) Encorajar a carga axial progressiva com muletas conforme autorização do ortopedista, ativando as microdeformações benéficas de consolidação."
+  },
+  {
+    id: 340,
+    topicId: 3,
+    question: "Durante a marcha humana normal, a força de reação vertical do solo (Ground Reaction Force, GRF) transmitida através do calcanhar e esqueleto atinge picos de intensidade correspondentes a aproximadamente:",
+    options: [
+      "1,1 a 1,3 vezes o peso corporal na marcha regular, podendo ultrapassar 2,5 a 3 vezes o peso corporal na corrida e salto.",
+      "Exatamente 0,01 vezes o peso corporal, pois os músculos anulam quase toda a gravidade.",
+      "Cerca de 100 vezes o peso corporal em cada passo normal da marcha.",
+      "Zero Newtons devido à sustentação magnética do ar atmosférico."
+    ],
+    correctIndex: 0,
+    explanation: "Ao caminhar sobre uma plataforma de forças biomecânica, o registo da força vertical do solo exibe uma curva clássica com duplo pico (em forma de M): o primeiro pico (ao amortecer o calcanhar) e o segundo pico (à impulsão dos dedos) atingem cerca de 110% a 130% do peso corporal do indivíduo (1,1 a 1,3 × PC). Na corrida, o impacto inicial atinge facilmente 2,5 a 3 vezes o peso do corpo, exigindo absorção de energia pelas cartilagens, meniscos e tendões.",
+    distractorAnalysis: [
+      "Opção B subestima grosseiramente as forças dinâmicas reais que desaceleram a massa do corpo.",
+      "Opção C é um valor catastrófico irreal que esmagaria instantaneamente o fémur e a bacia.",
+      "Opção D violaria as leis fundamentais de Newton de contacto corpo-solo."
+    ],
+    nursingApplication: "Num doente obeso pesando 120 kg, cada passo simples descarrega mais de 1400 N de força sobre as cartilagens do joelho e tornozelo. O enfermeiro que realiza educação para a saúde na osteoartrose enfatiza que uma perda modesta de 5 kg de peso corporal reduz em cerca de 15 a 20 kg a carga cumulativa sobre o joelho a cada passo dado ao longo do dia."
+  },
+  {
+    id: 341,
+    topicId: 3,
+    question: "Em doentes acamados com tração esquelética transcondiliana (fio de Kirschner transfixando a tíbia proximal com estribo e pesos suspensos), qual é a complicação mecânica que ocorre se os pesos tocarem no chão ou se a cama for encostada à parede do quarto?",
+    options: [
+      "A força de tração F_T cai a zero (ou diminui drasticamente), cessando o alinhamento mecânico contínuo da fratura e permitindo que o espasmo muscular encurte e desvie os fragmentos ósseos.",
+      "O fio metálico de Kirschner aquece até aos 100 °C por condução térmica.",
+      "A fratura consolida duas vezes mais depressa por ausência de peso.",
+      "O doente desenvolve automaticamente hipertensão intracraniana aguda."
+    ],
+    correctIndex: 0,
+    explanation: "A tração esquelética é um sistema de equilíbrio de forças dinâmico e contínuo. A força de tração longitudinal é fornecida exclusivamente pela força peso do bloco de contrapeso suspenso livremente no ar (P = m · g). Se o peso assentar no solo ou se a roldana encostar à parede, o chão passa a suportar o peso através da força normal (N), a tensão na corda anula-se, e os poderosos músculos da coxa (quadríceps e isquiotibiais) contraem-se em espasmo, cavalgando e desviando os fragmentos ósseos com dor lancinante no doente.",
+    distractorAnalysis: [
+      "Opção B inventa um fenómeno de transferência de calor inexistente no sistema puramente mecânico.",
+      "Opção C é contrária à medicina ortopédica; o desalinhamento dos topos ósseos impede a união anatómica adequada.",
+      "Opção D associa patologias neurológicas centrais que nada têm a ver com a tração mecânica do membro inferior."
+    ],
+    nursingApplication: "A regra de ouro da vigilância de trações esqueléticas em enfermagem é: os pesos de tração devem permanecer SEMPRE livremente suspensos no ar, sem tocar no solo, na estrutura da cama ou em móveis, e a corda deve correr perfeitamente alinhada no sulco da roldana."
+  },
+  {
+    id: 342,
+    topicId: 3,
+    question: "O colo cirúrgico do úmero no ombro é um local biomecanicamente frequente de fratura em idosos. Qual é a razão física e anatómica para a grande incidência de fraturas neste ponto após uma queda com o braço estendido?",
+    options: [
+      "Representa a transição geométrica e estrutural entre o osso esponjoso trabecular da cabeça umeral e o osso cortical tubular rígido e denso da diáfise, gerando uma zona de concentração natural de tensões de cisalhamento e flexão.",
+      "Porque o colo do úmero é desprovido de qualquer célula viva osteocítica.",
+      "Porque o úmero é o único osso do corpo humano que não contém cálcio.",
+      "Porque os músculos deltoide e peitoral maior empurram o osso para o interior da cavidade torácica."
+    ],
+    correctIndex: 0,
+    explanation: "As junções anatómicas entre segmentos ósseos de diferente geometria e rigidez mecânica são zonas de descontinuidade estrutural: a cabeça do úmero é larga e constituída por osso esponjoso complacente (baixo E), enquanto a diáfise umeral é um cilindro fino de osso cortical rígido (alto E). Ao apoiar a mão no solo numa queda, as ondas de flexão e compressão concentram tensões máximas exatamente nesta zona de transição geométrica (colo cirúrgico), provocando a sua rotura.",
+    distractorAnalysis: [
+      "Opção B é falsa; o colo é profusamente vascularizado pelas artérias circunflexas umerais.",
+      "Opção C é absurda; o úmero possui a mineralização padrão de hidroxiapatite como qualquer osso longo.",
+      "Opção D descreve vetores musculares descontextualizados da fratura por queda."
+    ],
+    nursingApplication: "Em doentes idosos com fratura do colo do úmero tratada conservadoramente com suspensório braquial (tipo Gilchrist ou velpeau), o enfermeiro vigia a integridade da pele no cotovelo e tórax, orienta a mobilização precoce ativa dos dedos e punho para prevenir o edema e a rigidez articular da mão, e apoia no alívio da dor."
+  },
+  {
+    id: 343,
+    topicId: 3,
+    question: "No contexto da biocompatibilidade e osteointegração de implantes metálicos ortopédicos permanentes, qual é o metal mais biocompatível e com menor Módulo de Young relativo (mais próximo do osso humano)?",
+    options: [
+      "Ligas de Titânio (como Ti-6Al-4V), com Módulo de Young de cerca de 100 a 110 GPa e excelente capacidade de osteointegração direta.",
+      "Chumbo puro (Pb) com Módulo de Young de 16 GPa.",
+      "Mercúrio líquido (Hg) à temperatura ambiente.",
+      "Aço carbono não inoxidável comum de construção civil."
+    ],
+    correctIndex: 0,
+    explanation: "As ligas de titânio (especialmente Ti-6Al-4V) são o padrão de ouro na fixação óssea ortopédica: possuem elevada resistência mecânica, excelente resistência à corrosão devido à camada passivadora de TiO₂, biocompatibilidade ímpar (os osteoblastos aderem diretamente à superfície mineralizando osso - osteointegração de Brånemark) e apresentam um Módulo de Young (~105-110 GPa) consideravelmente mais próximo do osso cortical (~18 GPa) do que o aço inoxidável 316L (~200 GPa) ou ligas de Cobalto-Crómio (~210 GPa).",
+    distractorAnalysis: [
+      "Opção B é um metal altamente tóxico e deformável plasticamente que provocaria saturnismo letal no doente.",
+      "Opção C é um líquido tóxico à temperatura corporal totalmente inadequado para implantes estruturais.",
+      "Opção D oxida e corrói com libertação de ferrugem tóxica em meio salino biológico."
+    ],
+    nursingApplication: "Saber que o implante do doente é de titânio é vital para o enfermeiro na programação de exames: o titânio é um material não-ferromagnético (paramagnético muito fraco), o que permite a realização segura de Ressonância Magnética Nuclear (RMN) sob indicação e parâmetros técnicos radiológicos autorizados, ao contrário de próteses ferromagnéticas antigas."
+  },
+  {
+    id: 344,
+    topicId: 3,
+    question: "O fenómeno mecânico de 'Creep' (fluência) é clinicamente observado na perda de estatura dos seres humanos ao longo do dia. Por que motivo um indivíduo mede cerca de 1 a 2 cm a menos à noite quando comparado com a sua altura matinal?",
+    options: [
+      "Devido à compressão axial estática contínua do peso corporal sobre os discos intervertebrais durante o dia em posição bípede, que expulsa lentamente o fluido intersticial do núcleo pulposo através dos microporos cartilagíneos (fluência com perda de espessura discal); à noite em decúbito, o fluido é reabsorvido osmoticamente.",
+      "Porque as vértebras encolhem por desidratação mineral irreversível e são reconstruídas a cada madrugada.",
+      "Porque os músculos das pernas dissolvem o colagénio durante as horas de sol.",
+      "Devido à dilatação térmica provocada pelo calor das lâmpadas elétricas do teto."
+    ],
+    correctIndex: 0,
+    explanation: "Os discos intervertebrais são estruturas viscoelásticas bifásicas. Sob a carga compressiva gravitacional mantida ao longo de 16 horas em pé ou sentado, ocorre o escoamento lento dependente do tempo (creep) de água do núcleo pulposo para as vértebras e capilares adjacentes, reduzindo em cerca de 10% a espessura de cada um dos 23 discos intervertebrais somados. Durante o sono em decúbito horizontal (sem carga axial), a pressão de tumescência osmótica dos proteoglicanos suga a água de volta, restaurando a altura normal pela manhã.",
+    distractorAnalysis: [
+      "Opção B confunde escoamento de fluidos discais com reabsorção e síntese óssea de vértebras sólidas.",
+      "Opção C é uma afirmação biologicamente falsa.",
+      "Opção D é uma especulação térmica sem sentido físico nos tecidos corporais."
+    ],
+    nursingApplication: "Esta desidratação discal diária acentua-se drasticamente com a idade: o idoso tem menor teor de água nos discos e recupera menos espessura à noite. O enfermeiro deve ter este facto em consideração ao aferir a estatura do doente para cálculo de Índice de Massa Corporal (IMC) ou áreas de dosagem quimioterápica, padronizando a medição sempre no mesmo período do dia."
+  },
+  {
+    id: 345,
+    topicId: 3,
+    question: "A aponevrose plantar (fáscia plantar) desempenha um papel biomecânico indispensável na marcha através do chamado 'Efeito Molinete' (Windlass mechanism). Como funciona este mecanismo na fase de impulsão do pé?",
+    options: [
+      "A dorsiflexão dos dedos (especialmente do hálux) traciona e enrola a fáscia plantar em redor das cabeças dos metatarsos, encurtando a fáscia e elevando o arco longitudinal medial do pé, transformando o pé numa alavanca rígida e estável para a impulsão.",
+      "A flexão plantar amolece a fáscia transformando o pé num saco de líquido inerte.",
+      "O tendão de Aquiles desliga-se temporariamente da tíbia para permitir o movimento.",
+      "A gravidade inverte a sua direção sobre a planta do pé durante 0,1 segundos."
+    ],
+    correctIndex: 0,
+    explanation: "O mecanismo do guincho/molinete (Windlass mechanism, descrito por Hicks em 1954) compara a fáscia plantar a um cabo preso no calcâneo e nas falanges proximais dos dedos: na fase terminal da marcha, ao elevar o calcanhar e dobrar o hálux em dorsiflexão contra o chão, a fáscia plantar é esticada mecanicamente sobre a 'roldana' da cabeça do 1.º metatarso. Esta tração aproxima o calcâneo dos dedos, tranca os ossos do tarso e eleva a abóbada plantar, criando uma alavanca propulsora rígida e de grande eficiência biomecânica.",
+    distractorAnalysis: [
+      "Opção B contraria a função da fáscia que visa rigidez estrutural, não amolecimento.",
+      "Opção C é um absurdo anatómico de descontinuidade estrutural tendinosa.",
+      "Opção D é uma violação grosseira das leis da gravidade."
+    ],
+    nursingApplication: "Em doentes com fascite plantar (inflamação e microrroturas na inserção proximal da fáscia no calcâneo por sobrecarga), o enfermeiro recomenda calçado com bom suporte do arco longitudinal medial e ensina exercícios de estiramento suave da fáscia e do tendão de Aquiles antes do levante matinal para prevenir a dor aguda aos primeiros passos."
+  },
+  {
+    id: 346,
+    topicId: 3,
+    question: "Na avaliação funcional da marcha de um doente com lesão do nervo glúteo superior ou fraqueza severa do músculo glúteo médio, qual é o sinal biomecânico clássico de desequilíbrio pélvico observado (Marcha de Trendelenburg)?",
+    options: [
+      "A queda (inclinação para baixo) da hemipelve oposta (lado são sem carga) durante a fase de apoio unilateral no membro afetado, decorrente da incapacidade do glúteo médio de gerar o torque abdutor necessário para estabilizar a bacia na horizontal.",
+      "A extensão espasmódica forçada dos dois membros superiores em direção ao teto.",
+      "A rotação da cabeça em 180° sobre o atlas.",
+      "O aumento imediato da temperatura corporal em 5 graus Celsius."
+    ],
+    correctIndex: 0,
+    explanation: "Em apoio monopodal (um só pé no chão), o peso de todo o corpo tende a inclinar a bacia para o lado sem apoio por efeito da gravidade. O músculo glúteo médio do lado apoiado contrai-se vigorosamente exercendo um torque abdutor de alavanca de 1.ª classe no quadril para manter a pelve nivelada horizontalmente. Se houver paresia do glúteo médio ou luxação da anca, a bacia descai para o lado oposto contralateral (Sinal de Trendelenburg positivo).",
+    distractorAnalysis: [
+      "Opção B e C são manifestações neurológicas e anatómicas estapafúrdias sem qualquer relação com a marcha de Trendelenburg.",
+      "Opção D introduz variáveis metabólicas/infecciosas sem sentido biomecânico."
+    ],
+    nursingApplication: "O reconhecimento da marcha de Trendelenburg pelo enfermeiro no pós-operatório de cirurgias da anca é crucial: a instabilidade pélvica eleva exponencialmente o risco de quedas. O enfermeiro prescreve e ensina o uso correto de uma canadiana (muleta) empunhada no lado CONTRALATERAL à lesão, criando uma base alargada de suporte que anula o momento desestabilizador da gravidade."
+  },
+  {
+    id: 347,
+    topicId: 3,
+    question: "O ligamento cruzado anterior (LCA) do joelho é uma das estruturas mais sujeitas a rotura em traumatismos desportivos e de tráfego. Biomecanicamente, qual é a principal restrição mecânica que o LCA confere à articulação femorotibial?",
+    options: [
+      "Impede a translação anterior excessiva da tíbia em relação ao fémur e restringe a rotação interna da tíbia.",
+      "Impede que a rótula se funda com a fíbula.",
+      "Bloqueia completamente o fluxo de sangue na artéria femoral.",
+      "Mantém o joelho permanentemente em hiperextensão a 180° sem permitir qualquer flexão."
+    ],
+    correctIndex: 0,
+    explanation: "O ligamento cruzado anterior (LCA) insere-se na área intercondilar anterior da tíbia e dirige-se obliquamente para cima e para trás até à face medial do côndilo femoral lateral. A sua função mecânica primária é atuar como o principal travão contra a translação anterior da tíbia relativamente ao fémur (fornecendo cerca de 85% da força de retenção estática anterior) e controlar a estabilidade rotacional femorotibial.",
+    distractorAnalysis: [
+      "Opção B refere-se a estruturas que nem sequer se articulam diretamente (a patela articula com o fémur, não com a cabeça da fíbula).",
+      "Opção C descreveria uma oclusão vascular letal.",
+      "Opção D impediria a marcha e a flexão normal do joelho."
+    ],
+    nursingApplication: "Na triagem de urgência a um doente com trauma do joelho e hemartrose volumosa imediata (derrame de sangue sob tensão articular), o enfermeiro apoia os testes clínicos de estabilidade (Teste de Lachman e Teste da Gaveta Anterior: o deslizamento anterior anormal da tíbia confirma a perda mecânica do LCA) e aplica crioterapia precoce para alívio sintomático."
+  },
+  {
+    id: 348,
+    topicId: 3,
+    question: "A rigidez articular matinal descrita por doentes com Artrite Reumatoide que melhora tipicamente após 30 a 60 minutos de movimento ativo é explicada biofisicamente por qual fenómeno reológico sinovial?",
+    options: [
+      "A tixotropia e aumento da viscosidade do líquido sinovial inflamado e dos tecidos periarticulares durante o repouso noturno; com o início dos movimentos e o atrito cinético, a taxa de cisalhamento fluidifica a sinóvia (diminui a viscosidade), facilitando o deslizamento articular.",
+      "A calcificação completa do osso durante o sono que se desfaz com o nascer do sol.",
+      "A diminuição da gravidade dentro do quarto durante a noite.",
+      "A paragem total da circulação venosa até que o doente se levante."
+    ],
+    correctIndex: 0,
+    explanation: "O líquido sinovial é um fluido biológico não-Newtoniano com comportamento marcadamente tixotrópico (a sua viscosidade η depende inversamente da taxa de cisalhamento e do tempo de repouso). Em repouso estático prolongado durante a noite, a polimerização de complexos proteicos na articulação inflamada torna o fluido altamente viscoso e gelatinoso ('espessamento tixotrópico'). Com o reinício dos movimentos articulares matinais, as tensões de cisalhamento quebram a rede macromolecular temporária, diminuindo drasticamente a viscosidade e aliviando a rigidez mecânica.",
+    distractorAnalysis: [
+      "Opção B é uma afirmação mitológica sem fundamentação patológica.",
+      "Opção C nega as leis da astrofísica e da gravidade constante na Terra.",
+      "Opção D levaria a gangrena venosa de todos os seres humanos durante o sono."
+    ],
+    nursingApplication: "Ao cuidar de doentes com artrite reumatoide, o enfermeiro programa os cuidados de higiene pessoal (banho morno matinal) para ajudar a fluidificar os tecidos por calor condutivo e orienta o doente a realizar exercícios suaves de mobilização ativa na cama antes de tentar colocar-se em pé, prevenindo quedas no levante matinal."
+  },
+  {
+    id: 349,
+    topicId: 3,
+    question: "O tecido ósseo alveolar dos maxilares suporta as raízes dentárias através do 'Ligamento Periodontal' (LPD). Qual é a função biomecânica principal deste ligamento sob as forças de mastigação?",
+    options: [
+      "Funciona como um sistema viscoelástico de suspensão elástica hidráulica que amortece as cargas compressivas oclusais, convertendo-as em tensões de tração fisiológicas sobre o osso alveolar circundante.",
+      "Bloqueia qualquer penetração de cálcio no esmalte dentário.",
+      "Impede que a saliva entre na cavidade oral.",
+      "Transforma todos os alimentos sólidos em vapor gasoso."
+    ],
+    correctIndex: 0,
+    explanation: "O ligamento periodontal é constituído por feixes ondulados de fibras colagénicas (fibras principais de Sharpey) imersas num gel viscoso de proteoglicanos e rico plexo vascular. Ao mastigar, o dente é comprimido na cavidade alveolar; o fluido intersticial do LPD é expelido lentamente pelos poros ósseos atuando como um amortecedor hidráulico viscoelástico ('hydraulic damper'), e as fibras oblíquas são colocadas sob tração, transmitindo a carga ao osso alveolar de forma difusa e protetora.",
+    distractorAnalysis: [
+      "Opção B confunde biofísica de amortecimento mastigatório com homeostase da mineralização.",
+      "Opção C confunde o ligamento perirradicular oculto no osso com os ductos das glândulas salivares.",
+      "Opção D é uma impossibilidade termodinâmica evidente."
+    ],
+    nursingApplication: "Em doentes entubados na UCI sob ventilação mecânica invasiva ou submetidos a exames endoscópicos com bocal protetor, o enfermeiro verifica cuidadosamente que o tubo ou bocal não apoia pontualmente sobre incisivos frágeis ou próteses dentárias móveis, prevenindo avulsões traumáticas por sobrecarga mecânica concentrada sobre o ligamento periodontal."
+  },
+  {
+    id: 350,
+    topicId: 3,
+    question: "Na reabilitação de doentes com fraqueza muscular após cirurgia ortopédica, qual é a vantagem biofísica dos exercícios em piscina aquecida de hidroterapia sobre a carga esquelética?",
+    options: [
+      "A força de impulsão hidrostática de Arquimedes (E = ρ_líquido · V_submerso · g) atua verticalmente de baixo para cima, reduzindo o peso aparente do doente suportado pelos ossos e articulações em até 90% (quando imerso até ao pescoço), permitindo mobilização ativa precoce sem sobrecarga compressiva no foco cirúrgico.",
+      "A água elimina a massa atómica de todos os músculos do doente.",
+      "A água quente anula a resistência do atrito e permite que o doente flutue no vácuo.",
+      "A piscina converte todo o tecido ósseo em titânio por osmose."
+    ],
+    correctIndex: 0,
+    explanation: "Pelo Princípio de Arquimedes, todo o corpo mergulhado num fluido sofre uma impulsão vertical de baixo para cima igual ao peso do volume de fluido deslocado. Num doente imerso até ao nível das cristas ilíacas, o peso aparente nas articulações dos membros inferiores cai para cerca de 50% do peso real; com imersão até ao apêndice xifoide cai para cerca de 25-30%; e imerso até ao pescoço resta apenas cerca de 10% da carga sobre o esqueleto. Isto possibilita treino de marcha e fortalecimento muscular seguro sem risco de dano mecânico ao enxerto ou implante.",
+    distractorAnalysis: [
+      "Opção B viola a lei de conservação da massa de Lavoisier.",
+      "Opção C confunde a densidade da água (que gera atrito e viscosidade resistente) com ausência de resistência e vácuo.",
+      "Opção D é uma fantasia quimicamente impossível."
+    ],
+    nursingApplication: "A hidroterapia e a hidroginástica orientadas por equipas multidisciplinares de saúde e enfermagem de reabilitação são o recurso de eleição para doentes com artroses graves, fraturas consolidadas em fase de carga ou obesidade mórbida, permitindo trabalhar a musculatura e o equilíbrio com mínimo impacto e máxima segurança física."
+  }
+];
