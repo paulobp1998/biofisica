@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-PT" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BioFísica Interativa | Enfermagem (1.º Ano)</title>
+  <meta name="description" content="Plataforma interativa e 100% gratuita para estudantes do 1.º ano de Licenciatura em Enfermagem praticarem os conteúdos de Biofísica com questões de escolha múltipla e aplicações clínicas.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🩺</text></svg>">
+</head>
+<body>
+
+  <!-- Barra de Navegação Superior -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-brand" id="nav-brand">
+        <span class="brand-icon">🩺</span>
+        <div class="brand-text">
+          <span>BioFísica</span>
+          <span class="brand-subtitle">Enfermagem • 1.º Ano</span>
+        </div>
+      </a>
+      <div class="nav-actions">
+        <button class="btn btn-outline btn-pill" id="audio-toggle" title="Ativar ou desativar efeitos sonoros">
+          🔔 Som Ativo
+        </button>
+        <button class="btn-icon" id="theme-toggle" title="Alternar entre modo claro e escuro">
+          🌙
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal Dinâmico -->
+  <main class="main-container">
+
+    <!-- ================================================================= -->
+    <!-- VISTA 1: PÁGINA INICIAL / DASHBOARD -->
+    <!-- ================================================================= -->
+    <section id="view-home" class="active-view">
+      
+      <div class="hero-section">
+        <span class="hero-tag">100% Gratuito • Ensino Universitário</span>
+        <h1 class="hero-title">Prática Interativa de Biofísica Médica</h1>
+        <p class="hero-desc">
+          Consolida os conceitos físicos das tuas aulas com questões clínicas rigorosas de escolha múltipla (4 opções, apenas 1 correta), justificações científicas detalhadas e aplicação direta aos cuidados diários de Enfermagem.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" id="btn-start-exam">
+            🎯 Simulação Global de Exame (16 Questões)
+          </button>
+          <button class="btn btn-outline" id="btn-view-study">
+            📖 Resumos Teóricos & Fórmulas
+          </button>
+          <button class="btn btn-outline" id="btn-view-stats">
+            📊 As Minhas Estatísticas
+          </button>
+        </div>
+      </div>
+
+      <h2 class="section-title">
+        <span>📚</span> Escolhe um Tópico para Praticar:
+      </h2>
+      
+      <!-- Grelha dos 8 Tópicos -->
+      <div class="topics-grid" id="topics-grid">
+        <!-- Inserido dinamicamente via JS -->
+      </div>
+
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- VISTA 2: ECRÃ DO QUIZ / PERGUNTAS -->
+    <!-- ================================================================= -->
+    <section id="view-quiz" class="hidden">
+      <div class="quiz-container">
+        
+        <div class="quiz-header">
+          <span class="quiz-topic-badge" id="quiz-topic-badge">Tópico</span>
+          <button class="btn btn-outline btn-sm" id="btn-exit-quiz">✕ Interromper</button>
+        </div>
+
+        <div class="quiz-progress-info">
+          <span id="quiz-progress-text">Pergunta 1 de 5</span>
+          <span>Escolha Múltipla</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" id="quiz-progress-bar"></div>
+        </div>
+
+        <div class="question-box">
+          <h3 class="question-text" id="question-text">Enunciado da pergunta científica aqui...</h3>
+        </div>
+
+        <!-- Opções A, B, C, D -->
+        <div class="options-container" id="options-container">
+          <!-- Inserido dinamicamente via JS -->
+        </div>
+
+        <!-- Caixa de Feedback e Explicação Detalhada -->
+        <div class="feedback-card hidden" id="feedback-card">
+          <h4 class="feedback-title" id="feedback-title">Feedback</h4>
+          <div class="feedback-explanation" id="feedback-explanation"></div>
+          <div class="feedback-distractors" id="feedback-distractors"></div>
+          <div class="feedback-nursing" id="feedback-nursing"></div>
+        </div>
+
+        <div class="quiz-footer">
+          <button class="btn btn-primary hidden" id="btn-next">
+            Próxima Pergunta ➔
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- VISTA 3: ECRÃ DE RESULTADOS -->
+    <!-- ================================================================= -->
+    <section id="view-results" class="hidden">
+      <div class="results-container">
+        
+        <div class="results-hero">
+          <div id="result-grade">
+            <!-- Nota em círculo (0-20 valores) -->
+          </div>
+          <div id="result-classification">
+            <!-- Classificação (Excelente, Bom, etc.) -->
+          </div>
+          <div id="result-stats-summary"></div>
+        </div>
+
+        <div id="result-topic-breakdown">
+          <!-- Barra de aproveitamento por tópico -->
+        </div>
+
+        <div class="result-review-list" id="result-review-list">
+          <!-- Todas as perguntas respondidas com correção -->
+        </div>
+
+        <div class="results-actions">
+          <button class="btn btn-primary" id="btn-retry-quiz">
+            🔄 Repetir este Teste
+          </button>
+          <button class="btn btn-outline" id="btn-home-from-results">
+            🏠 Voltar ao Início
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- VISTA 4: RESUMOS TEÓRICOS E FÓRMULAS -->
+    <!-- ================================================================= -->
+    <section id="view-study" class="hidden">
+      <div class="study-container">
+        <div class="view-header">
+          <div>
+            <h2>📖 Síntese Rápida de Biofísica</h2>
+            <p style="color: var(--text-secondary);">Conceitos nucleares, leis físicas e notas clínicas de enfermagem organizadas por tópico.</p>
+          </div>
+          <button class="btn btn-outline btn-sm" id="btn-home-from-study">
+            🏠 Voltar ao Início
+          </button>
+        </div>
+
+        <div class="accordion-list" id="study-topics-accordion">
+          <!-- Inserido dinamicamente via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- VISTA 5: ESTATÍSTICAS E HISTÓRICO LOCAL -->
+    <!-- ================================================================= -->
+    <section id="view-stats" class="hidden">
+      <div class="stats-container">
+        <div class="view-header">
+          <div>
+            <h2>📊 O Teu Histórico de Desempenho</h2>
+            <p style="color: var(--text-secondary);">Registo das tuas tentativas guardadas no navegador para acompanhares o teu estudo.</p>
+          </div>
+          <button class="btn btn-outline btn-sm" id="btn-home-from-stats">
+            🏠 Voltar ao Início
+          </button>
+        </div>
+
+        <div id="stats-content">
+          <!-- Inserido dinamicamente via JS -->
+        </div>
+
+        <div style="margin-top: 2rem; text-align: right;">
+          <button class="btn btn-outline btn-sm" id="btn-clear-stats" style="color: var(--color-danger); border-color: var(--border-subtle);">
+            🗑️ Limpar Histórico Local
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p><strong>BioFísica Médica para o 1.º Ano de Enfermagem</strong> • Conteúdos programáticos certificados</p>
+    <p style="margin-top: 0.35rem; font-size: 0.8rem;">Plataforma Educativa 100% Gratuita e Acessível • Sem fins lucrativos • Desenvolvido para apoio ao estudo universitário</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/questions-data.js"></script>
+  <script src="js/quiz-engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
