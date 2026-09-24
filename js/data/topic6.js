@@ -17,9 +17,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "O núcleo atómico dos elementos da tabela periódica é composto exclusivamente por protões (carga +1e) e neutrões (carga 0). A massa do protão (m_p ≈ 1,00728 u) é muito próxima da massa do neutrão (m_n ≈ 1,00866 u), sendo ambos cerca de 1836 vezes mais massivos do que o eletrão orbital circundante (m_e ≈ 0,00055 u). Praticamente 99,95% de toda a massa do átomo concentra-se no núcleo.",
     "distractorAnalysis": [
-      "Opção B confunde partículas nucleares com a nuvem eletrónica extranuclear e fotões de radiação pura.",
-      "Opção C ignora os protões e afirma falsamente que os neutrões não têm massa (possuem ~1,675 × 10⁻²⁷ kg).",
-      "Opção D descreve produtos de decaimento radioativo emitidos por núcleos instáveis, não a estrutura fundamental estável."
+      "Está incorreta: confunde partículas nucleares com a nuvem eletrónica extranuclear e fotões de radiação pura.",
+      "Está incorreta: ignora os protões e afirma falsamente que os neutrões não têm massa (possuem ~1,675 × 10⁻²⁷ kg).",
+      "Está incorreta: descreve produtos de decaimento radioativo emitidos por núcleos instáveis, não a estrutura fundamental estável."
     ],
     "nursingApplication": "A compreensão do número de protões (Z) e neutrões (N) é essencial em medicina nuclear: o comportamento químico de um radiofármaco no corpo do doente (como a captação de iodo pela tiroide) depende unicamente de Z, enquanto a sua radioatividade para diagnóstico ou terapia decorre do desequilíbrio de N no núcleo."
   },
@@ -36,7 +36,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Na simbologia nuclear padrão: 1) Z (Número Atómico) indica o número de protões no núcleo, determinando a identidade química e a posição do elemento na Tabela Periódica; 2) A (Número de Massa) representa a soma total de protões e neutrões (A = Z + N). O número de neutrões N obtém-se subtraindo N = A - Z. No exemplo do Iodo-131 (¹³¹₅₃I): Z = 53 protões, A = 131 nucleões e N = 131 - 53 = 78 neutrões.",
     "distractorAnalysis": [
-      "Opções B, C e D misturam conceitos elétricos, termodinâmicos e cinemáticos sem qualquer fundamento na convenção IUPAC/IUPAP da física nuclear."
+      "Está incorreta: misturam conceitos elétricos, termodinâmicos e cinemáticos sem qualquer fundamento na convenção IUPAC/IUPAP da física nuclear.",
+      "Está incorreta: misturam conceitos elétricos, termodinâmicos e cinemáticos sem qualquer fundamento na convenção IUPAC/IUPAP da física nuclear.",
+      "Está incorreta: misturam conceitos elétricos, termodinâmicos e cinemáticos sem qualquer fundamento na convenção IUPAC/IUPAP da física nuclear."
     ],
     "nursingApplication": "Na administração de radiofármacos hospitalares, o enfermeiro valida a prescrição confrontando rigorosamente a notação nuclear no rótulo blindado do frasco: diferenciar Iodo-131 (¹³¹I, emissor beta destrutivo usado em cancro da tiroide) de Iodo-123 (¹²³I, emissor gama puro para cintigrafia de diagnóstico) previne erros terapêuticos graves de sobredosagem radioativa."
   },
@@ -53,8 +55,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "O átomo tem um raio médio da ordem de 10⁻¹⁰ metros (0,1 nm), enquanto o seu núcleo mede apenas cerca de 10⁻¹⁵ a 10⁻¹⁴ metros (1 a 10 fm). Em analogia clássica: se o átomo tivesse o tamanho de um estádio de futebol com 100 metros de diâmetro, o núcleo seria do tamanho de uma pequena formiga ou grão de areia (1 milímetro) no centro do relvado! Toda a matéria dos corpos humanos é, do ponto de vista do volume espacial, esmagadoramente vácuo permeado por campos eletromagnéticos.",
     "distractorAnalysis": [
-      "Opção B inverte drasticamente as frações volumétricas; o núcleo ocupa menos de 10⁻¹² do volume atómico.",
-      "Opções C e D violam as escalas microscópicas subatómicas elementares."
+      "Está incorreta: inverte drasticamente as frações volumétricas; o núcleo ocupa menos de 10⁻¹² do volume atómico.",
+      "Está incorreta: violam as escalas microscópicas subatómicas elementares.",
+      "Está incorreta: violam as escalas microscópicas subatómicas elementares."
     ],
     "nursingApplication": "O facto de o átomo ser quase inteiramente espaço vazio explica a tremenda penetrância dos Raios X e da radiação Gama: a esmagadora maioria dos fotões atravessa triliões de átomos do corpo do doente sem colidir com nenhum núcleo compacto central, sendo atenuados apenas quando interagem com os eletrões da nuvem atómica."
   },
@@ -71,9 +74,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Como o raio nuclear é dado por R = R₀ · A¹/³ (onde R₀ ≈ 1,2 fm), o volume do núcleo é V = 4/3 π R³ ∝ A. A densidade mássica nuclear é a razão entre a massa total (M ≈ A · m_u) e o volume V: ρ = M / V ≈ m_u / (4/3 π R₀³). Como o número de massa A se cancela no numerador e denominador, a densidade nuclear é CONSTANTE para todos os elementos, atingindo o valor colossal de ~2,3 × 10¹⁷ kg/m³ (idêntica à densidade de uma estrela de neutrões).",
     "distractorAnalysis": [
-      "Opção B confunde a densidade da matéria nuclear condensada com gases à pressão atmosférica.",
-      "Opção C confunde a densidade nuclear com a densidade macroscópica de líquidos moleculares.",
-      "Opção D viola a definição física de densidade de massa sólida."
+      "Está incorreta: confunde a densidade da matéria nuclear condensada com gases à pressão atmosférica.",
+      "Está incorreta: confunde a densidade nuclear com a densidade macroscópica de líquidos moleculares.",
+      "Está incorreta: viola a definição física de densidade de massa sólida."
     ],
     "nursingApplication": "Compreender que o núcleo possui uma densidade de 200 milhões de toneladas/cm³ ajuda o enfermeiro a visualizar a extrema concentração de energia contida no núcleo: qualquer perturbação ou desintegração nessa matéria ultra-densa liberta energias milhões de vezes superiores às das reações químicas convencionais dos medicamentos."
   },
@@ -90,9 +93,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A Força Nuclear Forte é a mais potente das quatro forças fundamentais da física: a distâncias nucleares (~1 fm), ela é cerca de 100 vezes mais forte do que a repulsão eletrostática de Coulomb entre protões e 10³⁸ vezes mais intensa do que a gravidade. É uma força puramente atrativa que atua indistintamente entre protões e protões, neutrões e neutrões, ou protões e neutrões. O seu alcance é estritamente limitado: decai exponencialmente para zero a distâncias superiores a 2,5 a 3 femtómetros.",
     "distractorAnalysis": [
-      "Opção B é um erro de 38 ordens de magnitude; a gravidade entre nucleões microscópicos é totalmente insignificante.",
-      "Opção C refere-se ao campo geomagnético planetário, incapaz de estabilizar átomos.",
-      "Opção D refere-se a forças intermoleculares de pontes de hidrogénio a nível biológico macroscópico."
+      "Está incorreta: é um erro de 38 ordens de magnitude; a gravidade entre nucleões microscópicos é totalmente insignificante.",
+      "Está incorreta: refere-se ao campo geomagnético planetário, incapaz de estabilizar átomos.",
+      "Está incorreta: refere-se a forças intermoleculares de pontes de hidrogénio a nível biológico macroscópico."
     ],
     "nursingApplication": "O equilíbrio dinâmico entre a Força Nuclear Forte (atrativa de curto alcance) e a Força Eletrostática de Coulomb (repulsiva de longo alcance) é a chave de toda a física médica: quando um núcleo tem excesso de protões ou neutrões, a força forte não consegue conter a repulsão, originando o decaimento radioativo espontâneo utilizado nos radiofármacos que o enfermeiro administra."
   },
@@ -109,9 +112,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Experiências de espalhamento nuclear e estrutura de níveis comprovam a propriedade de 'independência de carga' da Força Forte: as forças nucleares fortes f(p-p), f(n-n) e f(p-n) são perfeitamente idênticas na componente nuclear pura (descontando a repulsão eletrostática de Coulomb que só afeta os protões). A nível da cromodinâmica quântica, a força forte entre nucleões decorre da troca de mésons pi (piões) entre os quarks que os constituem.",
     "distractorAnalysis": [
-      "Opção B é falsa; os neutrões participam plenamente da atração nuclear forte, sendo cruciais para a estabilidade.",
-      "Opção C confunde o estado físico termodinâmico da matéria com a física do núcleo atómico.",
-      "Opção D violaria o princípio de curto alcance da força forte (que cai a zero a distâncias superiores a 3 fm)."
+      "Está incorreta porque ; os neutrões participam plenamente da atração nuclear forte, sendo cruciais para a estabilidade.",
+      "Está incorreta: confunde o estado físico termodinâmico da matéria com a física do núcleo atómico.",
+      "Está incorreta: violaria o princípio de curto alcance da força forte (que cai a zero a distâncias superiores a 3 fm)."
     ],
     "nursingApplication": "A independência de carga explica por que adicionar neutrões a um núcleo de número atómico elevado fornece 'cola nuclear forte' adicional sem aumentar a repulsão eletrostática, estabilizando núcleos pesados que de outro modo seriam instáveis."
   },
@@ -128,9 +131,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Como a força nuclear forte tem alcance muito curto (~1-2 fm) e só atrai nucleões vizinhos imediatos, enquanto a repulsão coulombiana entre protões tem longo alcance (1/r) e atua entre todos os protões do núcleo simultaneamente, a repulsão elétrica total cresce com Z(Z-1)/2 (crescimento quadrático). Para compensar essa repulsão crescente em núcleos volumosos, o núcleo necessita de um número desproporcionalmente maior de neutrões para diluir a carga positiva e fornecer coesão nuclear forte adicional, elevando N/Z de 1,0 até ~1,5 no chumbo (Z=82).",
     "distractorAnalysis": [
-      "Opção B violaria a estabilidade observada em toda a tabela dos nuclídeos.",
-      "Opção C é um absurdo físico; núcleos pesados sem neutrões explodiriam instantaneamente por repulsão eletrostática pura.",
-      "Opção D afirma o oposto da realidade biofísica da estabilidade nuclear."
+      "Está incorreta: violaria a estabilidade observada em toda a tabela dos nuclídeos.",
+      "Está incorreta: é um absurdo físico; núcleos pesados sem neutrões explodiriam instantaneamente por repulsão eletrostática pura.",
+      "Está incorreta: afirma o oposto da realidade biofísica da estabilidade nuclear."
     ],
     "nursingApplication": "Compreender a curva N/Z permite ao enfermeiro prever o tipo de decaimento de um radioisótopo: núcleos com excesso de neutrões (acima da faixa de estabilidade) decaem por emissão beta negativa (β⁻), enquanto núcleos deficientes em neutrões (abaixo da faixa) decaem por emissão de positrões (β⁺) ou captura eletrónica, como o Flúor-18 utilizado no exame PET."
   },
@@ -147,9 +150,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "O Chumbo-208 (²⁰⁸₈₂Pb) é o nuclídeo estável mais pesado conhecido na natureza (possui uma 'dupla magia' com Z=82 e N=126). Para Z ≥ 83 (começando no Bismuto-209, que tem semivida extremamente longa, e todos os seguintes: Polónio-84, Rádon-86, Rádio-88, Urânio-92), o número colossal de protões gera uma repulsão coulombiana tão avassaladora que a força nuclear forte é incapaz de manter o núcleo estável indefinidamente. Todos sofrem decaimento radioativo espontâneo (sobretudo por emissão de partículas alfa e fissão).",
     "distractorAnalysis": [
-      "Opção B é falsa; existem centenas de isótopos estáveis entre Z=11 e Z=82 (como Ferro, Cobre, Prata, Ouro).",
-      "Opção C é ficção; a tabela periódica termina atualmente no elemento Oganésson (Z=118).",
-      "Opção D é uma negação absurda da radioatividade descoberta por Becquerel e o casal Curie."
+      "Está incorreta porque ; existem centenas de isótopos estáveis entre Z=11 e Z=82 (como Ferro, Cobre, Prata, Ouro).",
+      "Está incorreta: é ficção; a tabela periódica termina atualmente no elemento Oganésson (Z=118).",
+      "Está incorreta: é uma negação absurda da radioatividade descoberta por Becquerel e o casal Curie."
     ],
     "nursingApplication": "Radioisótopos pesados como o Rádio-223 (²²³Ra, emissor de partículas alfa aprovado no tratamento de metástases ósseas no cancro da próstata resistente à castração) situam-se acima de Z=82. O enfermeiro administra este alfa-emissor monitorizando parâmetros hematológicos (vigilância de mielossupressão)."
   },
@@ -166,9 +169,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Se somarmos a massa de 2 protões livres e 2 neutrões livres (como os que formam o núcleo de Hélio-4, partícula alfa), a soma das massas é m_separados = 4,03188 u. Contudo, ao medir a massa real do núcleo de He-4 ligado num espetrómetro de massa de precisão, verifica-se que m_núcleo = 4,00151 u! Há uma perda real de massa de Δm = 0,03037 u (cerca de 0,75% da massa total). Essa 'massa desaparecida' foi convertida em Energia de Ligação Nuclear durante a fusão dos nucleões.",
     "distractorAnalysis": [
-      "Opção B violaria a conservação de energia e a estabilidade da matéria.",
-      "Opção C confunde uma propriedade fundamental quântico-relativista da matéria com erros empíricos de pesagem.",
-      "Opção D descreve uma contração geométrica fantasiosa sem sentido físico."
+      "Está incorreta: violaria a conservação de energia e a estabilidade da matéria.",
+      "Está incorreta: confunde uma propriedade fundamental quântico-relativista da matéria com erros empíricos de pesagem.",
+      "Está incorreta: descreve uma contração geométrica fantasiosa sem sentido físico."
     ],
     "nursingApplication": "O defeito de massa é a prova experimental direta da equação de Albert Einstein: ele confirma que a massa e a energia são duas faces da mesma moeda física universal. Na medicina nuclear, é precisamente essa energia de ligação libertada nas transições nucleares que é aproveitada na imagiologia e radioterapia."
   },
@@ -185,9 +188,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A Energia de Ligação Nuclear (B = Δm · c²) é a energia de coesão do núcleo. Para estilhaçar um núcleo estável nos seus protões e neutrões constituintes livres, é obrigatório fornecer externamente uma energia igual a B. Como a velocidade da luz ao quadrado é um número gigantesco (c² ≈ 9 × 10¹⁶ m²/s²), uma minúscula fração de grama de defeito de massa liberta energias colossais. No sistema de unidades nucleares: 1 unidade de massa atómica (u) equivale a 931,5 Megaeletrão-Volts (MeV).",
     "distractorAnalysis": [
-      "Opção B confunde energias nucleares de milhões de eV com consumo elétrico de baixa voltagem.",
-      "Opção C confunde mecânica macroscópica musculoesquelética com forças nucleares subatómicas.",
-      "Opção D confunde hemodinâmica vascular com a física do núcleo atómico."
+      "Está incorreta: confunde energias nucleares de milhões de eV com consumo elétrico de baixa voltagem.",
+      "Está incorreta: confunde mecânica macroscópica musculoesquelética com forças nucleares subatómicas.",
+      "Está incorreta: confunde hemodinâmica vascular com a física do núcleo atómico."
     ],
     "nursingApplication": "Para o núcleo de Hélio-4, a energia de ligação total é de cerca de 28,3 MeV. Comparativamente, a quebra de uma ligação química de glicose ou ATP liberta apenas alguns eletrão-volts (~2 a 5 eV). As reações nucleares envolvem energias cerca de 1.000.000 de vezes superiores às reações químicas celulares, justificando os cuidados extremos com a proteção contra radiações."
   },
@@ -204,9 +207,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A curva de B/A vs A parte de valores baixos em núcleos muito leves (ex: Deutério, ²H, com B/A ≈ 1,1 MeV/nucleão), sobe acentuadamente até atingir o patamar máximo na região dos elementos de transição de massa intermediária (⁵⁶Fe com 8,79 MeV/nucleão e ⁶²Ni com 8,8 MeV/nucleão) e depois decai lentamente para os elementos pesados (²³⁸U com ~7,6 MeV/nucleão). Os núcleos de ferro e níquel são os mais firmemente ligados: não libertam energia por fusão nem por fissão.",
     "distractorAnalysis": [
-      "Opção B é incorreta; o protão isolado de ¹H tem energia de ligação zero (B = 0, pois não tem nucleões adicionais ligados).",
-      "Opção C inverte a estabilidade; o Urânio é pesado e instável, encontrando-se na cauda descendente da curva.",
-      "Opção D nega a morfologia universal clássica da curva de energia de ligação de Aston."
+      "Está incorreta porque ; o protão isolado de ¹H tem energia de ligação zero (B = 0, pois não tem nucleões adicionais ligados).",
+      "Está incorreta: inverte a estabilidade; o Urânio é pesado e instável, encontrando-se na cauda descendente da curva.",
+      "Está incorreta: nega a morfologia universal clássica da curva de energia de ligação de Aston."
     ],
     "nursingApplication": "A curva de B/A dita as duas grandes fontes de energia nuclear: 1) Núcleos muito leves abaixo do Ferro libertam energia ao fundirem-se (Fusão Nuclear das estrelas); 2) Núcleos muito pesados acima do Ferro libertam energia ao dividirem-se em fragmentos médios (Fissão Nuclear em reatores), processo que produz os radioisótopos médicos utilizados no hospital."
   },
@@ -223,7 +226,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Analogamente às camadas eletrónicas dos gases nobres (2, 10, 18, 36... eletrões que conferem inércia química), o potencial nuclear médio com forte acoplamento spin-órbita organiza os protões e neutrões em níveis quânticos discretos. O preenchimento completo de uma camada ocorre para os Números Mágicos: 2, 8, 20, 28, 50, 82 (e 126 para neutrões). Núcleos com números mágicos de protões e/ou neutrões (como o ⁴₂He com 2p/2n, ¹⁶₈O com 8p/8n, ⁴⁰₂₀Ca com 20p/20n e ²⁰⁸₈₂Pb com 82p/126n) possuem abundância cósmica extraordinária e energia de ligação elevadíssima.",
     "distractorAnalysis": [
-      "Opções B, C e D propõem termos matemáticos ou clínicos sem qualquer suporte na mecânica quântica nuclear."
+      "Está incorreta: propõem termos matemáticos ou clínicos sem qualquer suporte na mecânica quântica nuclear.",
+      "Está incorreta: propõem termos matemáticos ou clínicos sem qualquer suporte na mecânica quântica nuclear.",
+      "Está incorreta: propõem termos matemáticos ou clínicos sem qualquer suporte na mecânica quântica nuclear."
     ],
     "nursingApplication": "O conhecimento dos números mágicos explica a estabilidade extrema das partículas Alfa (núcleo de ⁴₂He com 2 protões e 2 neutrões, 'duplamente mágico'): a sua coesão nuclear colossal faz com que núcleos pesados e instáveis ejetem preferencialmente aglomerados alfa pré-formados no decaimento radioativo alfa, em vez de ejetarem protões ou neutrões isolados."
   },
@@ -240,9 +245,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A grande maioria dos estados nucleares excitados desexcita-se quase instantaneamente (em picosssegundos, ~10⁻¹² s) por emissão gama. Contudo, quando há uma grande diferença de spin nuclear e paridade entre o estado excitado e o estado fundamental, a desexcitação é mecanicamente retardada por regras de seleção quântica: o estado torna-se 'metaestável' (isómero nuclear, indicado por 'm'). O ⁹⁹ᵐTc permanece nesse estado excitado com uma semivida física de cerca de 6,01 horas antes de decair por Transição Isomérica para o ⁹⁹Tc, emitindo um fotão gama puro de 140 keV.",
     "distractorAnalysis": [
-      "Opção B causaria aniquilação do elemento químico, o que não ocorre na transição isomérica (Z e A mantêm-se rigorosamente constantes).",
-      "Opção C confunde propriedades nucleares com ferromagnetismo macroscópico.",
-      "Opção D é uma distorção dos estados físicos de mudança de fase."
+      "Está incorreta: causaria aniquilação do elemento químico, o que não ocorre na transição isomérica (Z e A mantêm-se rigorosamente constantes).",
+      "Está incorreta: confunde propriedades nucleares com ferromagnetismo macroscópico.",
+      "Está incorreta: é uma distorção dos estados físicos de mudança de fase."
     ],
     "nursingApplication": "O Tecnécio-99m é o 'cavalo de batalha' da medicina nuclear mundial (usado em mais de 80% de todas as cintigrafias diagnósticas): a sua semivida metaestável de 6 horas é ideal (tempo suficiente para preparar o radiofármaco, administrar ao doente e adquirir as imagens numa câmara gama, com decaimento rápido subsequente que minimiza a dose de radiação residual para o doente e equipa de enfermagem)."
   },
@@ -259,7 +264,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "O Molibdénio-99 (semivida T_1/2 ≈ 66 horas) é produzido primariamente em reatores nucleares de investigação através da fissão de alvos de Urânio-235: ²³⁵U + n -> fragmentos de fissão (incluindo ⁹⁹Mo) + 2 a 3 neutrões + 200 MeV. Após dissolução do alvo em células quentes blindadas, o ⁹⁹Mo é extraído quimicamente e acondicionado em colunas cromatográficas de alumina para fabrico dos geradores hospitalares de tecnécio.",
     "distractorAnalysis": [
-      "Opções B, C e D descrevem processos químicos e biológicos incapazes de transmutar elementos atómicos ou gerar reações nucleares de fissão."
+      "Está incorreta: descrevem processos químicos e biológicos incapazes de transmutar elementos atómicos ou gerar reações nucleares de fissão.",
+      "Está incorreta: descrevem processos químicos e biológicos incapazes de transmutar elementos atómicos ou gerar reações nucleares de fissão.",
+      "Está incorreta: descrevem processos químicos e biológicos incapazes de transmutar elementos atómicos ou gerar reações nucleares de fissão."
     ],
     "nursingApplication": "A cadeia global de fornecimento de ⁹⁹Mo depende de poucos reatores nucleares no mundo: quando ocorre paragem técnica de um reator, há escassez imediata de geradores de tecnécio nos hospitais. O enfermeiro de medicina nuclear gere a lista de espera e prioriza os doentes oncológicos e cardiológicos mais críticos para a realização de cintigrafias."
   },
@@ -276,9 +283,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Num sistema pai-filho onde a semivida do pai é moderadamente superior à do filho (T_pai = 66 h vs T_filho = 6 h, razão ~11:1), atinge-se o Equilíbrio Transiente após cerca de 23 horas: a atividade do filho atinge o pico máximo e depois decai com a semivida aparente do pai. Como o MoO₄²⁻ (molibdato) liga-se fortemente à resina de óxido de alumínio e o TcO₄⁻ (pertecnetato) tem afinidade muito fraca, a passagem asséptica de NaCl a 0,9% elui seletivamente o pertecnetato de ⁹⁹ᵐTc puro no frasco de vácuo, regenerando-se nova atividade máxima em 24 horas.",
     "distractorAnalysis": [
-      "Opção B confunde processos nucleares radioquímicos espontâneos com eletricidade de rede.",
-      "Opção C violaria todas as normas de radioproteção e higiene farmacêutica estéril.",
-      "Opção D é perigosa; os geradores pesam dezenas de quilos devido à blindagem de chumbo e não devem sofrer impactos mecânicos."
+      "Está incorreta: confunde processos nucleares radioquímicos espontâneos com eletricidade de rede.",
+      "Está incorreta: violaria todas as normas de radioproteção e higiene farmacêutica estéril.",
+      "Está incorreta: é perigosa; os geradores pesam dezenas de quilos devido à blindagem de chumbo e não devem sofrer impactos mecânicos."
     ],
     "nursingApplication": "Na manipulação do gerador de tecnécio na câmara de fluxo laminar blindada, o profissional de saúde e o enfermeiro executam a eluição em condições estritas de assepsia para injetáveis (ausência de pirogénios e bactérias) e realizam o teste de controlo de qualidade para 'fuga de molibdénio' (Mo breakthrough): o limite máximo legal de contaminação por Mo-99 na solução de ⁹⁹ᵐTc é de apenas 0,15 kBq por MBq."
   },
@@ -295,9 +302,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Isótopos emissores de positrões (β⁺) são núcleos com 'excesso de protões' (abaixo da faixa de estabilidade): requerem a adição forçada de um protão ao núcleo contra a barreira de Coulomb. Isto só é exequível acelerando protões a altíssima velocidade num Cíclotron. No caso do ¹⁸F: um feixe de protões de alta energia atinge um alvo de água enriquecida com Oxigénio-18 [H₂¹⁸O]; o protão é absorvido e um neutrão é ejetado (reação ¹⁸₈O + p -> ¹⁸₉F + n). O ¹⁸F produzido é de imediato ligado quimicamente à molécula de desoxiglicose num módulo de síntese robotizado para produzir a ¹⁸F-FDG.",
     "distractorAnalysis": [
-      "Opção B confunde ondas eletromagnéticas domésticas com física de aceleradores de partículas de megavoltagem.",
-      "Opção C é um método mecânico de separação densitológica celular.",
-      "Opção D confunde um instrumento passivo de medição de radiação com fontes ativas de aceleração nuclear."
+      "Está incorreta: confunde ondas eletromagnéticas domésticas com física de aceleradores de partículas de megavoltagem.",
+      "Está incorreta: é um método mecânico de separação densitológica celular.",
+      "Está incorreta: confunde um instrumento passivo de medição de radiação com fontes ativas de aceleração nuclear."
     ],
     "nursingApplication": "Devido à semivida física ultracurta do Flúor-18 (apenas 110 minutos = menos de 2 horas!), o tempo é ouro na enfermagem de PET: o atraso de apenas 2 horas na administração da ¹⁸F-FDG ao doente reduz a radioatividade da seringa para metade (1 meia-vida) por decaimento físico contínuo dentro da blindagem de tungsténio."
   },
@@ -314,9 +321,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Na física clássica de Newton, se uma partícula não tiver energia suficiente para superar uma barreira de potencial elétrico, fica aprisionada para sempre (probabilidade de escape zero). Na mecânica quântica (resolvida por George Gamow em 1928), a partícula alfa comporta-se como uma onda quântica: a sua função de onda decai exponencialmente dentro da barreira de potencial mas emerge com amplitude diferente de zero do outro lado. Isto permite à partícula alfa 'tunelar' através da barreira proibida, sendo ejetada a alta velocidade.",
     "distractorAnalysis": [
-      "Opção B é uma metáfora absurda sem sustentação física.",
-      "Opção C contradiz a termodinâmica de decaimento espontâneo contínuo a qualquer temperatura corporal.",
-      "Opção D é uma afirmação sem sentido físico."
+      "Está incorreta: é uma metáfora absurda sem sustentação física.",
+      "Está incorreta: contradiz a termodinâmica de decaimento espontâneo contínuo a qualquer temperatura corporal.",
+      "Está incorreta: é uma afirmação sem sentido físico."
     ],
     "nursingApplication": "O tunelamento quântico explica a gigantesca variação das semividas dos emissores alfa na medicina (Lei de Geiger-Nuttall): pequenas variações na energia da partícula alfa alteram a probabilidade de tunelamento em dezenas de ordens de grandeza, fazendo com que o Urânio-238 tenha uma meia-vida de 4,5 mil milhões de anos, enquanto o Polónio-214 decai em escassos microssegundos."
   },
@@ -333,9 +340,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Segundo o Modelo Padrão da física de partículas (Gell-Mann e Zweig): os hadrões bariónicos são formados por três quarks de spin 1/2. O quark 'up' (u) possui carga fracionária +2/3 e o quark 'down' (d) possui carga -1/3. O protão tem a combinação uud: (+2/3) + (+2/3) + (-1/3) = +1e. O neutrão tem a combinação udd: (+2/3) + (-1/3) + (-1/3) = 0e. Os quarks trocam continuamente glúons (os mediadores da Força Forte) mantendo-se em confinamento de cor perpétuo.",
     "distractorAnalysis": [
-      "Opção B confunde leptões com quarks fermiónicos constitutivos.",
-      "Opção C viola a conservação de carga e a física bariónica.",
-      "Opção D descreve o modelo atomista indivisível da Grécia Antiga superado no século XX."
+      "Está incorreta: confunde leptões com quarks fermiónicos constitutivos.",
+      "Está incorreta: viola a conservação de carga e a física bariónica.",
+      "Está incorreta: descreve o modelo atomista indivisível da Grécia Antiga superado no século XX."
     ],
     "nursingApplication": "No decaimento beta negativo (β⁻) que o enfermeiro encontra em doentes tratados com Iodo-131, o que ocorre a nível subatómico íntimo é a conversão de um quark down num quark up (d -> u + e⁻ + ν̄_e): o neutrão (udd) transforma-se num protão (uud), emitindo um eletrão rápido (partícula beta) e um antineutrino do elétrão."
   },
@@ -352,8 +359,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Como a massa do quark d é maior que a do quark u (m_d ≈ 4,7 MeV vs m_u ≈ 2,2 MeV), a massa de repouso do neutrão (udd) é cerca de 1,29 MeV maior que a do protão (uud). Como na física as partículas decaem espontaneamente para estados de menor energia/massa, um neutrão livre isolado no vácuo é INSTÁVEL: desintegra-se espontaneamente por força nuclear fraca em protão, eletrão e antineutrino com uma meia-vida de cerca de 880 segundos (~14,7 minutos). Dentro de núcleos estáveis, a forte energia de ligação inibe este decaimento.",
     "distractorAnalysis": [
-      "Opção B e C são especulações fantasiosas sem base física.",
-      "Opção D nega a diferença de massas medida experimentalmente com alta precisão."
+      "Está incorreta: são especulações fantasiosas sem base física.",
+      "Está incorreta: nega a diferença de massas medida experimentalmente com alta precisão.",
+      "Está incorreta: nega a diferença de massas medida experimentalmente com alta precisão."
     ],
     "nursingApplication": "A instabilidade do neutrão livre fora do núcleo é uma salvaguarda biológica natural: neutrões libertados em reatores ou terapias de captura neutrónica (BNCT) decaem rapidamente em protões e eletrões inócuos se escaparem para o ambiente, reduzindo a permanência de feixes neutrónicos descontrolados."
   },
@@ -370,8 +378,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Os neutrões nascem na fissão com energias cinéticas muito elevadas (neutrões rápidos, v ≈ 20.000 km/s). Contudo, a probabilidade quântica (secção eficaz de captura induzida de fissão, σ_fissão) de um átomo de ²³⁵U capturar um neutrão e cindi-lo é centenas de vezes superior para neutrões lentos em equilíbrio térmico à temperatura ambiente (~0,025 eV, v ≈ 2,2 km/s). O moderador é constituído por núcleos de massa atómica semelhante à do neutrão (hidrogénio ou deutério da água): em cada colisão elástica frontal, o neutrão transfere grande parte da sua energia cinética para o núcleo moderador, travando suavemente até ao regime térmico.",
     "distractorAnalysis": [
-      "Opção B descreve a função das 'barras de controlo' ou de paragem de emergência (feitas de Cádmio ou Boro, que são venenos neutrónicos absorvedores), e não do moderador.",
-      "Opção C e D são impossibilidades mecânicas e atómicas."
+      "Está incorreta: descreve a função das 'barras de controlo' ou de paragem de emergência (feitas de Cádmio ou Boro, que são venenos neutrónicos absorvedores), e não do moderador.",
+      "Está incorreta: são impossibilidades mecânicas e atómicas.",
+      "Está incorreta: são impossibilidades mecânicas e atómicas."
     ],
     "nursingApplication": "A compreensão de que neutrões rápidos podem ser travados por materiais ricos em hidrogénio é o esteio da blindagem contra neutrões: salas com aceleradores lineares médicos de alta energia (>10 MV) onde surgem neutrões secundários por fotoneutrões utilizam portas e paredes com parafina ou polietileno borado (materiais com densos átomos de hidrogénio para moderar e boro para absorver neutrões), protegendo a circulação de enfermeiros."
   },
@@ -388,7 +397,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A Força Forte entre nucleões tem um comportamento fascinante: é fortemente atrativa na faixa de 0,8 a 2,0 fm (mantendo o núcleo coeso), mas torna-se violentamente REPULSIVA a distâncias inferiores a 0,5 fm ('core repulsivo' atribuído à sobreposição das nuvens de quarks e ao Princípio de Exclusão de Pauli entre quarks da mesma cor e sabor). Esta repulsão impede que os protões e neutrões caiam uns para dentro dos outros, garantindo que o núcleo atómico mantenha um volume físico mensurável e impedindo o colapso da matéria cósmica.",
     "distractorAnalysis": [
-      "Opções B, C e D descrevem cenários fantasiosos sem base nas equações de potencial de Yukawa ou cromodinâmica quântica."
+      "Está incorreta: descrevem cenários fantasiosos sem base nas equações de potencial de Yukawa ou cromodinâmica quântica.",
+      "Está incorreta: descrevem cenários fantasiosos sem base nas equações de potencial de Yukawa ou cromodinâmica quântica.",
+      "Está incorreta: descrevem cenários fantasiosos sem base nas equações de potencial de Yukawa ou cromodinâmica quântica."
     ],
     "nursingApplication": "Este equilíbrio quântico entre atração e repulsão no núcleo assegura a estabilidade mecânica dos elementos químicos que compõem o corpo humano (oxigénio, carbono, hidrogénio, cálcio), garantindo a solidez dos ossos e a integridade de todos os tecidos biológicos monitorizados na prática de enfermagem."
   },
@@ -405,9 +416,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A ativação neutrónica por captura radiativa (reação do tipo (n, γ)) ocorre quando um núcleo estável absorve um neutrão lento do fluxo do reator: o Cobalto-59 natural (Z=27, A=59) captura um neutrão tornando-se Cobalto-60 (Z=27, A=60). O novo núcleo encontra-se num estado excitado e liberta a energia excedente por emissão de fotões gama de captura. O ⁶⁰Co resultante é um radioisótopo artificial com semivida de cerca de 5,27 anos que decai por emissão β⁻ seguida de dois fotões gama altamente energéticos de 1,17 MeV e 1,33 MeV.",
     "distractorAnalysis": [
-      "Opção B confunde a alquimia medieval mítica com reações nucleares reais da física.",
-      "Opção C violaria o número atómico do cobalto e a mecânica das forças nucleares.",
-      "Opção D é incorreta porque a luz ultravioleta possui energia centenas de milhares de vezes inferior à necessária para transmutar núcleos estáveis."
+      "Está incorreta: confunde a alquimia medieval mítica com reações nucleares reais da física.",
+      "Está incorreta: violaria o número atómico do cobalto e a mecânica das forças nucleares.",
+      "Está incorreta porque a luz ultravioleta possui energia centenas de milhares de vezes inferior à necessária para transmutar núcleos estáveis."
     ],
     "nursingApplication": "As bombas de Cobalto-60 foram pioneiras na radioterapia oncológica moderna (teleterapia). Embora amplamente substituídas por aceleradores lineares elétricos (que não utilizam fontes radioativas permanentes), ainda existem unidades de Cobalto em muitos países e no sistema 'Gamma Knife' de radiocirurgia cerebral estocástica, onde o enfermeiro vigia o posicionamento milimétrico do doente."
   },
@@ -424,8 +435,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A secção eficaz (cross section, σ) é a área transversal fictícia efetiva com que um núcleo alvo se apresenta à partícula incidente para que ocorra uma reação nuclear específica (espalhamento, captura, fissão): expressa-se em barns (1 b = 10⁻²⁴ cm² = 10⁻²⁸ m², aproximadamente a área geométrica de um núcleo pesado). Quanto maior for a secção eficaz de um núcleo para uma determinada reação, maior é a probabilidade estatística de colisão produtiva.",
     "distractorAnalysis": [
-      "Opção B confunde uma grandeza subatómica quântica microscópica com dimensões de engenharia civil.",
-      "Opção C e D misturam rotinas clínicas hospitalares sem qualquer ligação à física nuclear."
+      "Está incorreta: confunde uma grandeza subatómica quântica microscópica com dimensões de engenharia civil.",
+      "Está incorreta: misturam rotinas clínicas hospitalares sem qualquer ligação à física nuclear.",
+      "Está incorreta: misturam rotinas clínicas hospitalares sem qualquer ligação à física nuclear."
     ],
     "nursingApplication": "A secção eficaz governa a escolha de materiais de proteção: o Boro-10 e o Cádmio-113 possuem secções eficazes colossais de captura para neutrões térmicos (milhares de barns), sendo por isso adicionados a plásticos e betões de blindagem para absorver neutrões secundários em salas de radioterapia e proteger o posto de enfermagem."
   },
@@ -442,9 +454,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Pela eletrodinâmica clássica de Maxwell, um eletrão em órbita circular acelerada deveria perder energia continuamente por radiação e espiralar para dentro do núcleo em 10⁻¹¹ segundos (átomo clássico instável). Bohr postulou que: 1) Os eletrões movem-se apenas em órbitas estacionárias permitidas com momento angular quantizado (L = n · ℏ); 2) O átomo não irradia nos estados estacionários; 3) A radiação só é emitida ou absorvida durante uma transição quântica entre dois níveis (ΔE = E₂ - E₁ = h · f).",
     "distractorAnalysis": [
-      "Opção B descreve a catástrofe eletrodinâmica clássica que a teoria quântica de Bohr veio precisamente resolver.",
-      "Opção C ignora a quantização estrita dos níveis de energia atómicos.",
-      "Opção D é uma afirmação sem base na física quântica fundamental."
+      "Está incorreta: descreve a catástrofe eletrodinâmica clássica que a teoria quântica de Bohr veio precisamente resolver.",
+      "Está incorreta: ignora a quantização estrita dos níveis de energia atómicos.",
+      "Está incorreta: é uma afirmação sem base na física quântica fundamental."
     ],
     "nursingApplication": "O modelo de Bohr explica a génese da Radiação X Característica e a base da espectrofotometria utilizada nos oxímetros de pulso que o enfermeiro coloca no dedo do doente: a absorção quantizada de luz vermelha (660 nm) e infravermelha (940 nm) pelos eletrões da oxi-hemoglobina e desoxi-hemoglobina permite calcular a saturação periférica de oxigénio (SpO₂) instantânea."
   },
@@ -461,7 +473,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Em núcleos artificiais transurânicos extremamente pesados como o Califórnio-252 (Z=98, T_1/2 ≈ 2,6 anos), a repulsão eletrostática entre os seus 98 protões é tão colossal que a barreira contra a fissão pode ser superada por tunelamento quântico espontâneo: cerca de 3,1% de todas as desintegrações do ²⁵²Cf são fissões espontâneas, cada uma ejetando em média 3,8 neutrões rápidos. Constitui uma fonte de neutrões compacta e potente sem necessidade de reator nuclear.",
     "distractorAnalysis": [
-      "Opções B, C e D são nuclídeos leves perfeitamente estáveis que nunca sofrem fissão nuclear espontânea."
+      "Está incorreta: são nuclídeos leves perfeitamente estáveis que nunca sofrem fissão nuclear espontânea.",
+      "Está incorreta: são nuclídeos leves perfeitamente estáveis que nunca sofrem fissão nuclear espontânea.",
+      "Está incorreta: são nuclídeos leves perfeitamente estáveis que nunca sofrem fissão nuclear espontânea."
     ],
     "nursingApplication": "Fontes seladas de Califórnio-252 exigem cuidados de radioproteção singulares por parte do enfermeiro: blindagens comuns de chumbo (adequadas para raios gama) são ineficazes contra neutrões rápidos, exigindo contentores volumosos de parafina hidrogenada borada ou água para travar os neutrões antes do chumbo."
   },
@@ -478,8 +492,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A força nuclear forte inclui uma energia de emparelhamento (pairing energy): protões com spins opostos emparelham-se entre si com grande ganho de estabilidade, e o mesmo fazem os neutrões. Núcleos Par-Par (Z par e N par) são os mais estáveis e abundantes (mais de 160 nuclídeos estáveis). Núcleos Par-Ímpar ou Ímpar-Par têm estabilidade intermediária (~100 estáveis). Núcleos Ímpar-Ímpar possuem um protão desemparelhado e um neutrão desemparelhado, sendo energeticamente muito desfavoráveis: existem apenas 4 núcleos ímpar-ímpar leves estáveis em toda a natureza (²H, ⁶Li, ¹⁰B e ¹⁴N).",
     "distractorAnalysis": [
-      "Opções B e C invertem a física da energia de emparelhamento da fórmula semi-empírica de massa de Weizsäcker.",
-      "Opção D é refutada pela abundância de elementos como o Azoto-14 (o gás mais abundante na atmosfera terrestre com Z=7 e N=7)."
+      "Está incorreta: invertem a física da energia de emparelhamento da fórmula semi-empírica de massa de Weizsäcker.",
+      "Está incorreta: é refutada pela abundância de elementos como o Azoto-14 (o gás mais abundante na atmosfera terrestre com Z=7 e N=7).",
+      "Está incorreta: é refutada pela abundância de elementos como o Azoto-14 (o gás mais abundante na atmosfera terrestre com Z=7 e N=7)."
     ],
     "nursingApplication": "O efeito de emparelhamento de spin explica por que a maioria dos radiofármacos emissores beta instáveis administrados pelo enfermeiro são nuclídeos ímpar-ímpar ou ímpar-par que decaem rapidamente em busca da configuração par-par de menor energia e maior estabilidade termodinâmica."
   },
@@ -496,9 +511,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A identidade química de um elemento é definida exclusivamente pelo seu Número Atómico Z (número de protões). A Transmutação Nuclear ocorre quando Z se altera: seja por decaimento radioativo espontâneo (ex: emissão alfa onde Z diminui em 2; decaimento beta onde um neutrão vira protão aumentando Z em 1) ou por reações nucleares induzidas em laboratório (descoberta por Rutherford em 1919 ao transmutar azoto em oxigénio: ¹⁴N + α -> ¹⁷O + p). Realizou-se assim o antigo sonho da alquimia de transformar um elemento químico noutro.",
     "distractorAnalysis": [
-      "Opção B é um fenómeno de dissolução molecular puramente químico sem alteração dos núcleos atómicos.",
-      "Opção C descreve uma transição de fase termodinâmica clássica (fusão da água).",
-      "Opção D é uma resposta autonómica fisiológica cardiovascular."
+      "Está incorreta: é um fenómeno de dissolução molecular puramente químico sem alteração dos núcleos atómicos.",
+      "Está incorreta: descreve uma transição de fase termodinâmica clássica (fusão da água).",
+      "Está incorreta: é uma resposta autonómica fisiológica cardiovascular."
     ],
     "nursingApplication": "No internamento de um doente com cancro diferenciado da tiroide que toma uma cápsula oral de Iodo-131 (¹³¹₅₃I), ocorre uma transmutação nuclear em tempo real dentro das células neoplásicas: cada átomo de Iodo-131 transmuta-se espontaneamente num átomo de Xénon-131 estável (¹³¹₅₄Xe) ao emitir uma partícula beta negativa que destrói o DNA do tumor."
   },
@@ -515,9 +530,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A Força Nuclear Fraca é a única interação fundamental capaz de mudar o 'sabor' dos quarks (mediada pelos bosões vetoriais intermediários massivos W⁺, W⁻ e Z⁰). Sem a interação fraca, protões e neutrões não poderiam transformar-se uns nos outros: não existiria decaimento beta negativo (n -> p + e⁻ + ν̄_e) nem emissão de positrões (p -> n + e⁺ + ν_e), e as reações de fusão nuclear que alimentam a luz do Sol não poderiam ocorrer.",
     "distractorAnalysis": [
-      "Opção B descreve a gravidade newtoniana macroscópica.",
-      "Opção C descreve o atrito eletrostático molecular mecânico.",
-      "Opção D descreve o ferromagnetismo de dipolos atómicos."
+      "Está incorreta: descreve a gravidade newtoniana macroscópica.",
+      "Está incorreta: descreve o atrito eletrostático molecular mecânico.",
+      "Está incorreta: descreve o ferromagnetismo de dipolos atómicos."
     ],
     "nursingApplication": "A força nuclear fraca rege diretamente a emissão do positrão do Flúor-18 no exame PET que o enfermeiro programa e apoia: a transformação fraca p -> n liberta o positrão que colidirá com um eletrão tecidual, gerando os fotões de aniquilação que desenham o mapa metabólico tumoral no monitor."
   },
@@ -534,9 +549,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Embora os fotões não possuam massa de repouso (m₀ = 0), eles transportam momento linear relativista dado pela relação de De Broglie / Einstein: p = h / λ = E / c. Quando um feixe intenso de radiação eletromagnética é absorvido ou refletido por um obstáculo, a taxa de transferência de momento por unidade de área por segundo gera uma força real e mensurável (Pressão de Radiação: P = I / c para absorção total). Em biofísica celular moderna, feixes de laser infravermelho concentrados utilizam esta pressão para manipular organelos vivos sem lhes tocar ('pinças óticas', Prémio Nobel de 2018).",
     "distractorAnalysis": [
-      "Opção B exagera grotescamente uma força microscópica subnanonewtoniana que é impercetível macroscopicamente para o ser humano.",
-      "Opção C é um disparate sem relação com a física fotónica.",
-      "Opção D nega a equação universal de Einstein que dota os fotões de energia E = h · f e momento linear."
+      "Está incorreta: exagera grotescamente uma força microscópica subnanonewtoniana que é impercetível macroscopicamente para o ser humano.",
+      "Está incorreta: é um disparate sem relação com a física fotónica.",
+      "Está incorreta: nega a equação universal de Einstein que dota os fotões de energia E = h · f e momento linear."
     ],
     "nursingApplication": "As pinças óticas baseadas na pressão de radiação fotónica são hoje utilizadas na investigação avançada de enfermagem e hematologia para medir a viscoelasticidade da membrana dos glóbulos vermelhos e a força mecânica de adesão de bactérias patogénicas aos cateteres vasculares."
   },
@@ -553,9 +568,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Após sofrer um decaimento alfa ou beta, o núcleo filho frequentemente não se encontra no seu estado fundamental, mas num estado nuclear excitado com excesso de energia mecânica quântica. A desexcitação ocorre através da emissão de um ou mais fotões de altíssima energia (fotões gama, γ): como o fotão gama é radiação eletromagnética pura (sem massa e sem carga elétrica), o núcleo perde energia sem alterar o seu número atómico (ΔZ = 0) nem o seu número de massa (ΔA = 0). O nuclídeo pai e o filho permanecem sendo o mesmo elemento químico.",
     "distractorAnalysis": [
-      "Opção B violaria as leis de conservação de carga de férmions leptões.",
-      "Opção C descreve a eletrólise química molecular da água, sem relação com transições nucleares.",
-      "Opção D descreve uma transição térmica externa que não excita nem desexcita níveis nucleares de MeV."
+      "Está incorreta: violaria as leis de conservação de carga de férmions leptões.",
+      "Está incorreta: descreve a eletrólise química molecular da água, sem relação com transições nucleares.",
+      "Está incorreta: descreve uma transição térmica externa que não excita nem desexcita níveis nucleares de MeV."
     ],
     "nursingApplication": "Os fotões gama puros emitidos em transições nucleares (como os 140 keV do Tecnécio-99m) possuem altíssima penetrância nos tecidos humanos e são detetados externamente pela câmara gama sem provocar danos teciduais locais severos (baixo LET), tornando-os ideais para diagnósticos imagiológicos seguros em enfermagem e medicina."
   },
@@ -572,7 +587,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Carl Friedrich von Weizsäcker modelou o núcleo como uma gota de fluido incompressível carregada: 1) Energia de volume (+a_v · A): atração forte entre vizinhos; 2) Energia de superfície (-a_s · A²/³): correção para os nucleões superficiais com menos ligações (tensão superficial nuclear); 3) Energia de Coulomb (-a_c · Z²/A¹/³): repulsão elétrica destrutiva entre protões; 4) Energia de assimetria (-a_a · (A-2Z)²/A): penalização quântica quando N se afasta de Z; 5) Energia de emparelhamento (δ): bónus de estabilidade para núcleos Par-Par.",
     "distractorAnalysis": [
-      "Opções B, C e D são invenções absurdas que misturam meteorologia, clínica geral e mecânica clássica sem relação com a física nuclear."
+      "Está incorreta: são invenções absurdas que misturam meteorologia, clínica geral e mecânica clássica sem relação com a física nuclear.",
+      "Está incorreta: são invenções absurdas que misturam meteorologia, clínica geral e mecânica clássica sem relação com a física nuclear.",
+      "Está incorreta: são invenções absurdas que misturam meteorologia, clínica geral e mecânica clássica sem relação com a física nuclear."
     ],
     "nursingApplication": "O modelo da gota líquida elucida perfeitamente por que a fissão nuclear ocorre em núcleos volumosos: a repulsão de Coulomb supera a tensão superficial da gota, fazendo-a oscilar, estrangular-se e cindir-se em duas gotas menores, princípio que fundamenta a produção dos radiofármacos que o enfermeiro manipula."
   },
@@ -589,9 +606,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A Pureza Radionuclídica define a razão entre a atividade do radionuclídeo correto e a atividade radioativa total do eluato: se uma amostra de ⁹⁹ᵐTc contiver traços de ⁹⁹Mo (Molibdénio-99), o doente receberá uma dose desnecessária e perigosa de radiação beta interna no fígado e medula óssea durante semanas (devido à meia-vida de 66 horas do Mo-99). O teste do eluato na câmara de ionização blindada com chumbo ('Mo-breakthrough test') garante que a contaminação por Mo-99 não ultrapassa 0,15 kBq por MBq de Tc-99m no momento da injeção.",
     "distractorAnalysis": [
-      "Opção B confunde pureza radioisotópica com aditivos energéticos alimentares.",
-      "Opção C descreve uma inspeção visual de partículas macroscópicas límpidas, que avalia o aspeto físico, não a pureza dos núcleos atómicos.",
-      "Opção D refere-se a limpeza de embalagens terciárias secundárias de transporte."
+      "Está incorreta: confunde pureza radioisotópica com aditivos energéticos alimentares.",
+      "Está incorreta: descreve uma inspeção visual de partículas macroscópicas límpidas, que avalia o aspeto físico, não a pureza dos núcleos atómicos.",
+      "Está incorreta: refere-se a limpeza de embalagens terciárias secundárias de transporte."
     ],
     "nursingApplication": "A administração de radiofármacos pelo enfermeiro exige a verificação dos boletins de controlo de qualidade assinados pelo radiofarmacêutico: administrar uma dose com pureza radionuclídica violada submeteria o doente a irradiação interna severa desnecessária por contaminantes radioativos de vida longa."
   },
@@ -608,9 +625,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Na marcação radiofarmacêutica: 1) Pureza Radionuclídica = 100% dos átomos radioativos são ⁹⁹ᵐTc; 2) Pureza Radioquímica = o ⁹⁹ᵐTc está quimicamente quelado na molécula carreadora correta (ex: MDP para osso, DMSA para córtex renal, Sestamibi para miocárdio). Se a ligação química falhar e houver ⁹⁹ᵐTc livre (pertecnetato não-reduzido), o radioisótopo acumula-se no estômago, tiroide e glândulas salivares, arruinando a qualidade diagnóstica da imagem óssea e irradiando órgãos saudáveis.",
     "distractorAnalysis": [
-      "Opção B refere-se a contaminação por metais pesados tóxicos inorgânicos (pureza química).",
-      "Opção C define a 'Esterilidade Microbiológica' ou pureza biológica do injetável.",
-      "Opção D é um parâmetro pneumático secundário de acondicionamento sob vácuo estéril."
+      "Está incorreta: refere-se a contaminação por metais pesados tóxicos inorgânicos (pureza química).",
+      "Está incorreta: define a 'Esterilidade Microbiológica' ou pureza biológica do injetável.",
+      "Está incorreta: é um parâmetro pneumático secundário de acondicionamento sob vácuo estéril."
     ],
     "nursingApplication": "Se o enfermeiro detetar captação intensa inesperada de radioatividade na tiroide e no estômago durante uma cintigrafia óssea que deveria concentrar-se exclusivamente no esqueleto, suspeita de falha na pureza radioquímica do kit de marcação (oxidação prematura do cloreto estanoso redutor), registando o incidente para repetição do controlo radioquímico por cromatografia de camada fina (TLC)."
   },
@@ -627,8 +644,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Dois núcleos de carga positiva repelem-se com força que cresce assintoticamente com 1/r²: a barreira de Coulomb atinge picos de vários MeV. À temperatura ambiente (energia térmica de ~0,025 eV), a probabilidade de colisão nuclear é zero absoluto. Para transmutar um núcleo num acelerador de partículas (cíclotron), é indispensável acelerar as partículas projéteis a velocidades relativistas (mais de 10% da velocidade da luz) com energias de dezenas de milhões de eletrão-volts (MeV), permitindo vencer a barreira eletrostática e penetrar no raio de alcance da atração nuclear forte.",
     "distractorAnalysis": [
-      "Opção B fornece frações de eletrão-volt (0,03 eV), milhões de vezes abaixo da barreira de Coulomb.",
-      "Opções C e D não possuem a intensidade física necessária para acelerar partículas subatómicas contra campos nucleares."
+      "Está incorreta: fornece frações de eletrão-volt (0,03 eV), milhões de vezes abaixo da barreira de Coulomb.",
+      "Está incorreta: não possuem a intensidade física necessária para acelerar partículas subatómicas contra campos nucleares.",
+      "Está incorreta: não possuem a intensidade física necessária para acelerar partículas subatómicas contra campos nucleares."
     ],
     "nursingApplication": "Os cíclotrons hospitalares onde se produzem radioisótopos para os exames dos doentes são instalados em 'bunkers' com paredes de betão armado de 1,5 a 2 metros de espessura: o enfermeiro sabe que a aceleração dos feixes a energias de MeV gera campos intensos de radiação e neutrões secundários que exigem blindagem civil maciça."
   },
@@ -645,7 +663,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Na experiência de Chadwick: partículas alfa atingiram um alvo de berílio (⁹Be + α -> ¹²C + n), emitindo uma radiação desconhecida que atravessava espessos blocos de chumbo sem ser desviada por campos elétricos ou magnéticos (logo, desprovida de carga elétrica). Ao interpor uma placa de parafina (composta por hidrocarbonetos com núcleos de hidrogénio/protões de massa quase idêntica à do neutrão), a transferência mecânica de momento linear em choques elásticos frontais ejetou protões velozes detetados numa câmara de ionização. A aplicação das leis de conservação de energia e momento linear de Newton permitiu a Chadwick calcular com precisão matemática a massa da nova partícula: o Neutrão.",
     "distractorAnalysis": [
-      "Opções B, C e D descrevem experiências eletroquímicas ou termodinâmicas sem qualquer relevância para a descoberta das partículas subatómicas fundamentais."
+      "Está incorreta: descrevem experiências eletroquímicas ou termodinâmicas sem qualquer relevância para a descoberta das partículas subatómicas fundamentais.",
+      "Está incorreta: descrevem experiências eletroquímicas ou termodinâmicas sem qualquer relevância para a descoberta das partículas subatómicas fundamentais.",
+      "Está incorreta: descrevem experiências eletroquímicas ou termodinâmicas sem qualquer relevância para a descoberta das partículas subatómicas fundamentais."
     ],
     "nursingApplication": "A experiência histórica de Chadwick estabelece um princípio basilar da radioproteção que o enfermeiro utiliza hoje: o melhor material para travar e proteger contra feixes perigosos de neutrões é a água, o polietileno ou a cera de parafina (substâncias ricas em átomos leves de hidrogénio que desaceleram neutrões por colisão de massas idênticas)."
   },
@@ -662,9 +682,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "O número atómico Z do elemento Carbono é rigorosamente 6 (todo e qualquer átomo de carbono possui obrigatoriamente 6 protões no seu núcleo, definindo a sua química orgânica tetravalente). Como o número de massa A deste isótopo radioativo é 14: o número de neutrões é N = A - Z = 14 - 6 = 8 neutrões. Como tem excesso de neutrões (N/Z = 8/6 ≈ 1,33, quando o estável ¹²C tem N/Z = 1,0), o Carbono-14 é radioativo e decai por emissão de partículas beta negativas para o Azoto-14 estável.",
     "distractorAnalysis": [
-      "Opção B descreveria um núcleo hipotético impossível de Z=14 (Silício) sem neutrões.",
-      "Opção C descreve a composição do átomo de Azoto-14 estável (Z=7, N=7).",
-      "Opção D descreveria o elemento Magnésio (Z=12)."
+      "Está incorreta: descreveria um núcleo hipotético impossível de Z=14 (Silício) sem neutrões.",
+      "Está incorreta: descreve a composição do átomo de Azoto-14 estável (Z=7, N=7).",
+      "Está incorreta: descreveria o elemento Magnésio (Z=12)."
     ],
     "nursingApplication": "Em estudos metabólicos de novos fármacos oncológicos ou farmacocinética clínica, moléculas marcadas com Carbono-14 (¹⁴C) são administradas a voluntários para rastrear a distribuição tecidual, excreção renal e vias de biotransformação hepática, monitorizando o enfermeiro a colheita precisa de amostras biológicas cronometradas."
   },
@@ -681,7 +701,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "O fator c² é o multiplicador universal da matéria condensada: como c² = (3 × 10⁸)² = 9 × 10¹⁶ J/kg, a aniquilação completa de apenas 1 grama (0,001 kg) de matéria libertaria uma energia titânica de E = 10⁻³ × 9 × 10¹⁶ = 9 × 10¹³ Joules (equivalente à explosão de mais de 20 mil toneladas de dinamite TNT!). Mesmo no defeito de massa nuclear (onde se converte apenas cerca de 0,1% a 0,7% da massa em energia), alguns gramas de radioisótopos fornecem os feixes de radiação que tratam milhares de doentes com cancro ao longo de anos num hospital.",
     "distractorAnalysis": [
-      "Opções B, C e D são formulações estapafúrdias que violam a teoria da relatividade e a conservação universal de massa e energia."
+      "Está incorreta: são formulações estapafúrdias que violam a teoria da relatividade e a conservação universal de massa e energia.",
+      "Está incorreta: são formulações estapafúrdias que violam a teoria da relatividade e a conservação universal de massa e energia.",
+      "Está incorreta: são formulações estapafúrdias que violam a teoria da relatividade e a conservação universal de massa e energia."
     ],
     "nursingApplication": "Esta prodigiosa densidade de energia nuclear explica a extrema eficácia e o respeito rigoroso exigido no manuseamento de radiofármacos: uma ampola de poucos mililitros de radioisótopos transporta uma atividade radiológica imensa, exigindo o uso de blindagens plúmbeas espessas e pinças de manuseamento à distância para proteger as mãos do enfermeiro."
   },
@@ -698,7 +720,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Na teoria da fissão de Bohr e Wheeler: o núcleo atómico comporta-se como uma gota de líquido. A Força Nuclear Forte atua como uma 'tensão superficial' nuclear que minimiza a área e força a gota a permanecer esférica e coesa. Por outro lado, a repulsão eletrostática de Coulomb entre todos os seus protões internos empurra a matéria para fora. Para que ocorra a fissão, o núcleo tem de sofrer uma deformação mecânica elipsoidal: se a energia de excitação superar a 'barreira de fissão' (~6 MeV no Urânio-235), o estrangulamento da gota acentua-se e a repulsão elétrica vence, rompendo o núcleo em dois fragmentos principais.",
     "distractorAnalysis": [
-      "Opções B, C e D referem fenómenos mecânicos e fisiológicos macroscópicos irrelevantes para as forças nucleares íntimas."
+      "Está incorreta: referem fenómenos mecânicos e fisiológicos macroscópicos irrelevantes para as forças nucleares íntimas.",
+      "Está incorreta: referem fenómenos mecânicos e fisiológicos macroscópicos irrelevantes para as forças nucleares íntimas.",
+      "Está incorreta: referem fenómenos mecânicos e fisiológicos macroscópicos irrelevantes para as forças nucleares íntimas."
     ],
     "nursingApplication": "A quebra da barreira de fissão em reatores nucleares de investigação produz os subprodutos medicinais purificados que abastecem diariamente os serviços hospitalares de oncologia e endocrinologia onde os enfermeiros cuidam de doentes com hipertiroidismo e neoplasias malignas."
   },
@@ -715,7 +739,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "O neutrino é um leptão sem carga elétrica que interage exclusivamente através da força nuclear fraca e da gravidade. A sua massa de repouso é tão infinitesimal que durante décadas foi considerada exatamente zero (experiências de oscilação de neutrinos galardoadas com o Prémio Nobel comprovaram que possuem uma massa minúscula mas não-nula, inferior a 0,1-1 eV/c²). Em comparação: o eletrão tem ~511.000 eV/c² e o protão tem ~938.000.000 eV/c².",
     "distractorAnalysis": [
-      "Opções B, C e D são bariões pesados e aglomerados nucleares com massas milhões a milhares de milhões de vezes superiores à do neutrino."
+      "Está incorreta: são bariões pesados e aglomerados nucleares com massas milhões a milhares de milhões de vezes superiores à do neutrino.",
+      "Está incorreta: são bariões pesados e aglomerados nucleares com massas milhões a milhares de milhões de vezes superiores à do neutrino.",
+      "Está incorreta: são bariões pesados e aglomerados nucleares com massas milhões a milhares de milhões de vezes superiores à do neutrino."
     ],
     "nursingApplication": "Devido à sua secção eficaz de interação quase nula e massa impercetível, os neutrinos emitidos no decaimento beta de radiofármacos hospitalares atravessam o corpo do doente e o próprio planeta Terra sem colidir com nenhum átomo nem causar qualquer ionização celular, não representando qualquer risco de dano radiobiológico para o doente ou equipa de saúde."
   },
@@ -732,7 +758,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Dos ~200 MeV libertados em cada fissão de ²³⁵U: cerca de 165 a 170 MeV surgem sob a forma de energia cinética dos dois fragmentos pesados de cisão (núcleos filhos de massa média como Bário, Criptónio, Iodo ou Molibdénio). Devido à forte carga positiva de ambos, eles são violentamente repelidos pela força de Coulomb a velocidades gigantescas. Ao colidirem com os átomos vizinhos do combustível, desaceleram em escassos micrómetros, dissipando toda essa energia cinética sob a forma de calor térmico colossal.",
     "distractorAnalysis": [
-      "Opções B, C e D são distorções grosseiras da termodinâmica e radiofísica da fissão nuclear."
+      "Está incorreta: são distorções grosseiras da termodinâmica e radiofísica da fissão nuclear.",
+      "Está incorreta: são distorções grosseiras da termodinâmica e radiofísica da fissão nuclear.",
+      "Está incorreta: são distorções grosseiras da termodinâmica e radiofísica da fissão nuclear."
     ],
     "nursingApplication": "Os fragmentos de fissão ejetados nessa reação contêm uma enorme riqueza de radioisótopos médicos que são extraídos e purificados quimicamente: o Iodo-131, Molibdénio-99 e Xénon-133 utilizados diariamente em enfermagem derivam diretamente desses fragmentos de fissão de alta energia cinética."
   },
@@ -749,9 +777,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Quando um radioisótopo é produzido com adição de transportador ('carrier-added'), há uma mistura de átomos radioativos e átomos estáveis 'frios' do mesmo elemento que competem pelos mesmos recetores biológicos. Numa preparação 'sem carreador adicionado' (NCA / carrier-free, como o Iodo-131 obtido por irradiação de Telúrio ou Tecnécio-99m de gerador): a quase totalidade dos átomos do elemento químico na solução são radioativos. Isto confere uma Atividade Específica elevadíssima, permitindo que microgramas minúsculos de fármaco saturem os recetores tumorais com doses radioativas massivas sem toxicidade química secundária.",
     "distractorAnalysis": [
-      "Opção B confunde conceitos de radioquímica analítica com logística postal de estafetas.",
-      "Opção C confunde propriedades químicas com deambulação do doente internado.",
-      "Opção D descreveria um placebo inócuo sem radioatividade."
+      "Está incorreta: confunde conceitos de radioquímica analítica com logística postal de estafetas.",
+      "Está incorreta: confunde propriedades químicas com deambulação do doente internado.",
+      "Está incorreta: descreveria um placebo inócuo sem radioatividade."
     ],
     "nursingApplication": "Radiofármacos NCA permitem administrar terapias dirigidas com volumes injetáveis ínfimos (poucos mililitros) no acesso venoso do doente, sem risco de efeitos colaterais farmacológicos de toxicidade ponderal de metais pesados."
   },
@@ -768,8 +796,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A 'Drip Line' nuclear (fronteira de gotejamento) define o limite absoluto da existência física de núcleos ligados: 1) Linha de gotejamento de neutrões (neutron drip line): ponto em que o excesso de neutrões é tão colossal que o último neutrão adicionado tem energia de ligação zero (B_n = 0); 2) Linha de gotejamento de protões (proton drip line): onde a repulsão eletrostática supera totalmente a atração forte e expele protões espontaneamente. Para lá destas fronteiras, núcleos atómicos não conseguem existir nem por uma fração de segundo.",
     "distractorAnalysis": [
-      "Opções B e C confundem a 'drip line' da física nuclear teórica com a câmara de gotejamento de fluidoterapia de enfermagem.",
-      "Opção D refere-se a saneamento e manutenção predial hospitalar."
+      "Está incorreta: confundem a 'drip line' da física nuclear teórica com a câmara de gotejamento de fluidoterapia de enfermagem.",
+      "Está incorreta: refere-se a saneamento e manutenção predial hospitalar.",
+      "Está incorreta: refere-se a saneamento e manutenção predial hospitalar."
     ],
     "nursingApplication": "Os radioisótopos médicos utilizados no hospital situam-se em zonas intermédias bem delineadas entre a linha de estabilidade e as drip lines: isto garante semividas clínicas úteis e mensuráveis (minutos a dias), permitindo a sua administração segura em fluidos corporais."
   },
@@ -786,9 +815,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "O Modelo da Gota Líquida baseia-se na constatação empírica de que a densidade da matéria nuclear e a energia de ligação por nucleão são praticamente constantes para núcleos médios e pesados (propriedade de saturação da força forte: cada nucleão só se liga aos seus vizinhos imediatos, tal como as moléculas de água numa gota líquida). Isto permite aplicar conceitos hidrodinâmicos macroscópicos — como volume, densidade, calor latente de vaporização (energia de separação de nucleões) e tensão superficial — para explicar com grande precisão a fissão nuclear e as massas atómicas.",
     "distractorAnalysis": [
-      "Opção B confunde modelos de física nuclear condensada com gases ideais térmicos.",
-      "Opção C é falsa; o núcleo é um corpo maciço contínuo e ultra-denso.",
-      "Opção D é uma negação de toda a estrutura nuclear moderna."
+      "Está incorreta: confunde modelos de física nuclear condensada com gases ideais térmicos.",
+      "Está incorreta porque ; o núcleo é um corpo maciço contínuo e ultra-denso.",
+      "Está incorreta: é uma negação de toda a estrutura nuclear moderna."
     ],
     "nursingApplication": "A analogia da gota líquida auxilia o enfermeiro a visualizar os processos de fissão e decaimento: o núcleo oscila como uma gota líquida instável sob as tensões eletrostáticas internas até que uma perturbação externa o faz cindir em fragmentos menores que emitem radiações ionizantes diagnósticas."
   },
@@ -805,9 +834,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Se todos os neutrões da fissão fossem emitidos instantaneamente ('neutrões imediatos', prompt neutrons, libertados em 10⁻¹⁴ s), o tempo de duplicação da reação em cadeia seria de microssegundos: qualquer variação insignificante na reatividade provocaria uma explosão incontrolável antes que qualquer sistema de controlo mecânico conseguisse mover as barras de absorção. A pequena fração de neutrões atrasados (~0,65% no ²³⁵U), que nascem do decaimento beta de fragmentos como o Bromo-87 com meias-vidas de segundos, eleva o tempo médio de resposta do reator para cerca de 0,1 segundos, permitindo aos computadores e operadores controlar o reator em regime crítico estacionário seguro.",
     "distractorAnalysis": [
-      "Opção B é um trocadilho grosseiro com atrasos de transporte hospitalar.",
-      "Opção C é incorreta; neutrões atrasados possuem energias cinéticas de centenas de keV capazes de atravessar tecidos.",
-      "Opção D confunde física de reatores com sistemas de climatização predial."
+      "Está incorreta: é um trocadilho grosseiro com atrasos de transporte hospitalar.",
+      "Está incorreta porque ; neutrões atrasados possuem energias cinéticas de centenas de keV capazes de atravessar tecidos.",
+      "Está incorreta: confunde física de reatores com sistemas de climatização predial."
     ],
     "nursingApplication": "A estabilidade proporcionada pelos neutrões atrasados assegura a operação pacífica contínua dos reatores de investigação dedicados à saúde: sem este princípio biofísico fundamental, a produção segura dos radioisótopos diários essenciais para exames de oncologia e cardiologia seria tecnicamente impossível."
   },
@@ -824,9 +853,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Os radionuclídeos primordiais foram sintetizados em eventos astrofísicos (supernovas e colisões de estrelas de neutrões) antes da formação da Terra: para terem sobrevivido até aos nossos dias (~4,54 × 10⁹ anos), têm de ter meias-vidas de milhares de milhões de anos. Os principais exemplos são: Urânio-238 (T_1/2 = 4,47 × 10⁹ anos), Tório-232 (T_1/2 = 14 × 10⁹ anos) e Potássio-40 (⁴⁰K, T_1/2 = 1,25 × 10⁹ anos), este último presente naturalmente em todos os alimentos ricos em potássio e no próprio corpo humano.",
     "distractorAnalysis": [
-      "Opção B descreve radionuclídeos artificiais de semivida curta produzidos em cíclotrons ou reatores.",
-      "Opção C é uma metáfora poética sem base na radiofísica dos elementos primordiais.",
-      "Opção D descreve isótopos efémeros que desapareceriam da Terra em poucos minutos."
+      "Está incorreta: descreve radionuclídeos artificiais de semivida curta produzidos em cíclotrons ou reatores.",
+      "Está incorreta: é uma metáfora poética sem base na radiofísica dos elementos primordiais.",
+      "Está incorreta: descreve isótopos efémeros que desapareceriam da Terra em poucos minutos."
     ],
     "nursingApplication": "O Potássio-40 (⁴⁰K) natural presente no cloreto de potássio e nos tecidos corporais faz com que todo o ser humano vivo seja ligeiramente radioativo: um adulto de 70 kg emite naturalmente cerca de 4000 desintegrações radioativas por segundo (4000 Bq) devido ao ⁴⁰K dos seus músculos. O enfermeiro usa este facto para tranquilizar doentes: a radioatividade é um fenómeno natural intrínseco à própria biologia."
   },
@@ -843,7 +872,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Isómeros nucleares são estados quânticos metaestáveis do mesmo núcleo: partilham o mesmo número de protões Z e mesmo número de neutrões N (logo, mesmo Z e mesmo A). A única diferença física reside na configuração de excitação dos seus nucleões nos níveis quânticos de energia: o isómero metaestável (ex: ⁹⁹ᵐTc) encontra-se num nível de energia superior (~142 keV acima do estado fundamental) e tem spin diferente (spin 1/2- vs 9/2+), decaindo para o estado fundamental (⁹⁹Tc) por emissão gama com semivida de 6 horas.",
     "distractorAnalysis": [
-      "Opções B, C e D referem atributos anatómicos, óticos e laboratoriais bizarros sem relação com estados quânticos de energia nuclear."
+      "Está incorreta: referem atributos anatómicos, óticos e laboratoriais bizarros sem relação com estados quânticos de energia nuclear.",
+      "Está incorreta: referem atributos anatómicos, óticos e laboratoriais bizarros sem relação com estados quânticos de energia nuclear.",
+      "Está incorreta: referem atributos anatómicos, óticos e laboratoriais bizarros sem relação com estados quânticos de energia nuclear."
     ],
     "nursingApplication": "A compreensão da transição isomérica do ⁹⁹ᵐTc para ⁹⁹Tc assegura ao enfermeiro que a molécula química que guia o radiofármaco no corpo não se altera durante a cintigrafia: o exame baseia-se na emissão do fotão de desexcitação isomérica pura enquanto o fármaco permanece nos tecidos-alvo."
   },
@@ -860,7 +891,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "O Número Bariónico (B) é uma quantidade conservada por simetrias fundamentais da física de partículas: em todas as reações de desintegração radioativa (alfa, beta, gama), fissão nuclear ou reações de ativação, o número total de protões e neutrões (número de massa total A) permanece RIGOROSAMENTE constante entre os reagentes iniciais e os produtos finais. Por exemplo, na fissão: ²³⁵U (A=235) + n (A=1) -> soma de A = 236; os produtos de cisão combinados com os neutrões emitidos somam sempre exatamente A = 236.",
     "distractorAnalysis": [
-      "Opções B, C e D são violações impossíveis das leis de conservação de massa atómica e número bariónico."
+      "Está incorreta: são violações impossíveis das leis de conservação de massa atómica e número bariónico.",
+      "Está incorreta: são violações impossíveis das leis de conservação de massa atómica e número bariónico.",
+      "Está incorreta: são violações impossíveis das leis de conservação de massa atómica e número bariónico."
     ],
     "nursingApplication": "O balanço do número de massa A e número atómico Z nas equações nucleares é a ferramenta matemática que permite aos profissionais de enfermagem e físicos médicos calcular a atividade radioativa residual de radiofármacos e garantir a correta rastreabilidade das doses administradas."
   },
@@ -877,9 +910,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A maioria dos radiofármacos emissores gama e beta é excretada em larga escala pelos rins: nas primeiras horas pós-administração, a urina do doente contém concentrações significativas de radioatividade não ligada. O contacto direto, salpicos ou derrames de urina contaminam superfícies e a pele dos profissionais. O enfermeiro deve usar EPI adequado (luvas duplas, avental impermeável), evitar derrames e assegurar que a urina de doentes internados em quartos de radioiodoterapia seja canalizada para tanques de decaimento blindados dedicados.",
     "distractorAnalysis": [
-      "Opção B provocaria contaminação radioativa severa de áreas limpas de higiene dos profissionais.",
-      "Opção C contaminaria o ar e o chão da enfermaria com aerossóis radioativos.",
-      "Opção D provocaria rutura catastrófica do saco com contaminação massiva do leito e chão do quarto."
+      "Está incorreta: provocaria contaminação radioativa severa de áreas limpas de higiene dos profissionais.",
+      "Está incorreta: contaminaria o ar e o chão da enfermaria com aerossóis radioativos.",
+      "Está incorreta: provocaria rutura catastrófica do saco com contaminação massiva do leito e chão do quarto."
     ],
     "nursingApplication": "A manipulação segura de excreções radioativas de doentes algaliados é um procedimento de enfermagem de alta responsabilidade técnica: utilizar sempre técnicas assépticas com barreiras de proteção, inspecionar a estanquicidade das conexões e rotular o saco coletor com o símbolo internacional do trifólio radioativo."
   },
@@ -896,8 +929,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A atração da força nuclear forte cria um 'poço quadrado de potencial' profundo no núcleo: os nucleões estão 'aprisionados' numa depressão de energia potencial de ~-40 a -50 MeV. Para que um nucleão se liberte e escape para o exterior, é necessário fornecer-lhe energia igual ou superior à sua 'energia de separação' (correspondente à altura do poço até ao nível zero). É este poço de potencial atrativo que confere estabilidade sólida e imutável aos átomos estáveis que formam o organismo humano.",
     "distractorAnalysis": [
-      "Opção B violaria o Princípio de Incerteza de Heisenberg (partículas confinadas a 1 fm possuem energia de ponto zero e momentos cinéticos muito elevados).",
-      "Opções C e D são metáforas cómicas desprovidas de qualquer rigor físico."
+      "Está incorreta: violaria o Princípio de Incerteza de Heisenberg (partículas confinadas a 1 fm possuem energia de ponto zero e momentos cinéticos muito elevados).",
+      "Está incorreta: são metáforas cómicas desprovidas de qualquer rigor físico.",
+      "Está incorreta: são metáforas cómicas desprovidas de qualquer rigor físico."
     ],
     "nursingApplication": "O poço de potencial nuclear explica por que o esqueleto e os tecidos dos doentes não se desintegram espontaneamente: os átomos estáveis de cálcio, fósforo e oxigénio residem confortavelmente no fundo de poços de potencial estáveis, mantendo a homeostase anatómica e estrutural do corpo humano."
   },
@@ -914,8 +948,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Na extremidade esquerda da curva de energia de ligação (A < 20), a curva sobe com declive vertiginoso: os protões isolados têm B/A = 0, enquanto o núcleo de Hélio-4 (partícula alfa) tem uma energia de ligação prodigiosa de ~28,3 MeV (7,1 MeV por nucleão). Na fusão estelar (ciclo protão-protão: 4 ¹H -> ⁴He + 2 e⁺ + 2 ν_e + 26,7 MeV), cerca de 0,7% de toda a massa do hidrogénio é convertida diretamente em pura energia fotónica e térmica pelo defeito de massa de Einstein (E = Δm · c²).",
     "distractorAnalysis": [
-      "Opção B confunde combustão química exotérmica simples (que apenas partilha eletrões externos e se esgotaria no Sol em poucos milhares de anos) com reações termonucleares nucleares sustentadas há 4,5 mil milhões de anos.",
-      "Opções C e D violam as leis fundamentais de conservação de energia e astrofísica."
+      "Está incorreta: confunde combustão química exotérmica simples (que apenas partilha eletrões externos e se esgotaria no Sol em poucos milhares de anos) com reações termonucleares nucleares sustentadas há 4,5 mil milhões de anos.",
+      "Está incorreta: violam as leis fundamentais de conservação de energia e astrofísica.",
+      "Está incorreta: violam as leis fundamentais de conservação de energia e astrofísica."
     ],
     "nursingApplication": "Toda a energia vital que move o planeta Terra e a vida biológica humana (desde os alimentos que os doentes consomem até à luz solar que sintetiza a Vitamina D na pele para fixação de cálcio ósseo) tem a sua origem primordial nas reações de fusão nuclear do Sol governadas pelo defeito de massa e pelas forças nucleares."
   },
@@ -932,9 +967,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Em física nuclear médica, composição do núcleo atómico por protões e neutrões explica-se pelo facto de que o núcleo atómico é constituído por protões (carga elétrica positiva +1e e massa ~1,0073 u) e neutrões (carga elétrica nula e massa ~1,0087 u), coletivamente designados por nucleões. O número atómico (Z) define o número de protões e a identidade do elemento químico; o número de neutrões (N) e o número de massa total A = Z + N definem a espécie isotópica específica.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "O enfermeiro identifica a notação nuclear nos radiofármacos (como o Iodo-131, com Z = 53 protões e N = 78 neutrões, totalizando A = 131 nucleões)."
   },
@@ -951,9 +986,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A aplicação na enfermagem para composição do núcleo atómico por protões e neutrões baseia-se no princípio: O enfermeiro identifica a notação nuclear nos radiofármacos (como o Iodo-131, com Z = 53 protões e N = 78 neutrões, totalizando A = 131 nucleões). Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "O enfermeiro identifica a notação nuclear nos radiofármacos (como o Iodo-131, com Z = 53 protões e N = 78 neutrões, totalizando A = 131 nucleões)."
   },
@@ -970,9 +1005,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A análise teórica e experimental confirma que O número atómico (Z) define o número de protões e a identidade do elemento químico; o número de neutrões (N) e o número de massa total A = Z + N definem a espécie isotópica específica. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "O enfermeiro identifica a notação nuclear nos radiofármacos (como o Iodo-131, com Z = 53 protões e N = 78 neutrões, totalizando A = 131 nucleões)."
   },
@@ -989,9 +1024,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "Em física nuclear médica, escala dimensional e densidade nuclear extrema explica-se pelo facto de que o raio do núcleo atómico é da ordem de 1 a 10 femtómetros (1 fm = 10⁻¹⁵ m), cerca de 100.000 vezes menor do que o raio do átomo completo (10⁻¹⁰ m). Como quase toda a massa do átomo está confinada neste volume minúsculo, a densidade da matéria nuclear é astronómica: cerca de 2,3 · 10¹⁴ g/cm³ (1 cm³ pesaria 230 milhões de toneladas!).",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "O enfermeiro compreende que o átomo é essencialmente espaço vazio, o que explica por que radiações de alta energia conseguem atravessar milhares de camadas celulares sem colisão direta."
   },
@@ -1008,9 +1043,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A aplicação na enfermagem para escala dimensional e densidade nuclear extrema baseia-se no princípio: O enfermeiro compreende que o átomo é essencialmente espaço vazio, o que explica por que radiações de alta energia conseguem atravessar milhares de camadas celulares sem colisão direta. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "O enfermeiro compreende que o átomo é essencialmente espaço vazio, o que explica por que radiações de alta energia conseguem atravessar milhares de camadas celulares sem colisão direta."
   },
@@ -1027,9 +1062,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A análise teórica e experimental confirma que Como quase toda a massa do átomo está confinada neste volume minúsculo, a densidade da matéria nuclear é astronómica: cerca de 2,3 · 10¹⁴ g/cm³ (1 cm³ pesaria 230 milhões de toneladas!). O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "O enfermeiro compreende que o átomo é essencialmente espaço vazio, o que explica por que radiações de alta energia conseguem atravessar milhares de camadas celulares sem colisão direta."
   },
@@ -1046,9 +1081,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "Em física nuclear médica, raio nuclear e a fórmula empírica R = R₀ · A^(1/3) explica-se pelo facto de que o raio nuclear (R) cresce com a raiz cúbica do número de massa A: R = R₀ · A^(1/3), onde a constante R₀ vale aproximadamente 1,2 femtómetros. Isto demonstra que o volume do núcleo é diretamente proporcional ao número total de nucleões, mantendo uma densidade nuclear uniforme e constante em todos os elementos da tabela periódica.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "O enfermeiro consolida a física subatómica básica que fundamenta a interação da radiação ionizante com a matéria biológica viva."
   },
@@ -1065,9 +1100,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "A aplicação na enfermagem para raio nuclear e a fórmula empírica R = R₀ · A^(1/3) baseia-se no princípio: O enfermeiro consolida a física subatómica básica que fundamenta a interação da radiação ionizante com a matéria biológica viva. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "O enfermeiro consolida a física subatómica básica que fundamenta a interação da radiação ionizante com a matéria biológica viva."
   },
@@ -1084,9 +1119,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A análise teórica e experimental confirma que Isto demonstra que o volume do núcleo é diretamente proporcional ao número total de nucleões, mantendo uma densidade nuclear uniforme e constante em todos os elementos da tabela periódica. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "O enfermeiro consolida a física subatómica básica que fundamenta a interação da radiação ionizante com a matéria biológica viva."
   },
@@ -1103,9 +1138,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "Em física nuclear médica, momento dipolar magnético nuclear e o spin dos nucleões explica-se pelo facto de que protões e neutrões possuem um momento angular intrínseco (spin = 1/2) que gera um pequeno momento magnético nuclear associado. Núcleos com número ímpar de protões ou neutrões (como o Hidrogénio-1, ¹H, com um único protão) possuem um spin líquido diferente de zero, atuando como microscópicos ímanes.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "Esta propriedade é a base física indispensável da Imagiologia por Ressonância Magnética (IRM): o enfermeiro sabe que o sinal de ressonância provém da orientação dos spins dos protões de hidrogénio da água corporal sob um campo magnético intenso."
   },
@@ -1122,9 +1157,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A aplicação na enfermagem para momento dipolar magnético nuclear e o spin dos nucleões baseia-se no princípio: Esta propriedade é a base física indispensável da Imagiologia por Ressonância Magnética (IRM): o enfermeiro sabe que o sinal de ressonância provém da orientação dos spins dos protões de hidrogénio da água corporal sob um campo magnético intenso. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "Esta propriedade é a base física indispensável da Imagiologia por Ressonância Magnética (IRM): o enfermeiro sabe que o sinal de ressonância provém da orientação dos spins dos protões de hidrogénio da água corporal sob um campo magnético intenso."
   },
@@ -1141,9 +1176,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "A análise teórica e experimental confirma que Núcleos com número ímpar de protões ou neutrões (como o Hidrogénio-1, ¹H, com um único protão) possuem um spin líquido diferente de zero, atuando como microscópicos ímanes. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "Esta propriedade é a base física indispensável da Imagiologia por Ressonância Magnética (IRM): o enfermeiro sabe que o sinal de ressonância provém da orientação dos spins dos protões de hidrogénio da água corporal sob um campo magnético intenso."
   },
@@ -1160,9 +1195,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Em física nuclear médica, núcleos espelho e simetria de carga nuclear explica-se pelo facto de que núcleos espelho são pares de isóbaros onde o número de protões de um é igual ao número de neutrões do outro (por exemplo, Carbono-11 com 6p e 5n vs Boro-11 com 5p e 6n). A comparação das suas massas revela que as forças nucleares entre dois protões, dois neutrões ou um protão e um neutrão são rigorosamente idênticas (independência de carga da força nuclear).",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "O Carbono-11 é um emissor de positrões utilizado em PET neurológico e oncológico que o enfermeiro reconhece nos protocolos avançados de diagnóstico tumoral."
   },
@@ -1179,9 +1214,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A aplicação na enfermagem para núcleos espelho e simetria de carga nuclear baseia-se no princípio: O Carbono-11 é um emissor de positrões utilizado em PET neurológico e oncológico que o enfermeiro reconhece nos protocolos avançados de diagnóstico tumoral. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "O Carbono-11 é um emissor de positrões utilizado em PET neurológico e oncológico que o enfermeiro reconhece nos protocolos avançados de diagnóstico tumoral."
   },
@@ -1198,9 +1233,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A análise teórica e experimental confirma que A comparação das suas massas revela que as forças nucleares entre dois protões, dois neutrões ou um protão e um neutrão são rigorosamente idênticas (independência de carga da força nuclear). O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "O Carbono-11 é um emissor de positrões utilizado em PET neurológico e oncológico que o enfermeiro reconhece nos protocolos avançados de diagnóstico tumoral."
   },
@@ -1217,9 +1252,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "Em física nuclear médica, Lei de Coulomb aplicada ao confinamento de protões no núcleo explica-se pelo facto de que segundo a Lei de Coulomb ($F_e = k \\cdot \\frac{q_1 \\cdot q_2}{r^2}$), dois protões separados por distâncias nucleares femtométricas (r ≈ 10⁻¹⁵ m) exercem entre si uma força repulsiva colossal superior a 230 Newtons. Aplicada a uma massa tão ínfima quanto a de um protão (1,67 · 10⁻²⁷ kg), esta força geraria uma aceleração repulsiva de 10²⁹ m/s², estilhaçando o núcleo em frações de segundo.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "Para que o núcleo exista de forma estável, é estritamente obrigatória a existência de uma força atrativa muito mais potente que contrabalance a repulsão eletrostática: a Força Nuclear Forte."
   },
@@ -1236,9 +1271,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A aplicação na enfermagem para Lei de Coulomb aplicada ao confinamento de protões no núcleo baseia-se no princípio: Para que o núcleo exista de forma estável, é estritamente obrigatória a existência de uma força atrativa muito mais potente que contrabalance a repulsão eletrostática: a Força Nuclear Forte. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "Para que o núcleo exista de forma estável, é estritamente obrigatória a existência de uma força atrativa muito mais potente que contrabalance a repulsão eletrostática: a Força Nuclear Forte."
   },
@@ -1255,9 +1290,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A análise teórica e experimental confirma que Aplicada a uma massa tão ínfima quanto a de um protão (1,67 · 10⁻²⁷ kg), esta força geraria uma aceleração repulsiva de 10²⁹ m/s², estilhaçando o núcleo em frações de segundo. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "Para que o núcleo exista de forma estável, é estritamente obrigatória a existência de uma força atrativa muito mais potente que contrabalance a repulsão eletrostática: a Força Nuclear Forte."
   },
@@ -1274,9 +1309,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "Em física nuclear médica, crescimento quadrático da repulsão coulombiana com Z explica-se pelo facto de que o número de pares de protões que se repelem no interior do núcleo cresce com o quadrado do número atómico: Pares = Z · (Z - 1) / 2. À medida que avançamos na tabela periódica para elementos pesados (como o Urânio com Z = 92), a repulsão eletrostática acumulada torna-se gigantesca, desestabilizando os núcleos.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "Por esta razão, não existem elementos químicos estáveis na natureza com Z > 82 (Chumbo); todos os elementos com Z ≥ 83 (Bismuto, Rádio, Urânio) são intrinsecamente radioativos."
   },
@@ -1293,9 +1328,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "A aplicação na enfermagem para crescimento quadrático da repulsão coulombiana com Z baseia-se no princípio: Por esta razão, não existem elementos químicos estáveis na natureza com Z > 82 (Chumbo); todos os elementos com Z ≥ 83 (Bismuto, Rádio, Urânio) são intrinsecamente radioativos. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "Por esta razão, não existem elementos químicos estáveis na natureza com Z > 82 (Chumbo); todos os elementos com Z ≥ 83 (Bismuto, Rádio, Urânio) são intrinsecamente radioativos."
   },
@@ -1312,9 +1347,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A análise teórica e experimental confirma que À medida que avançamos na tabela periódica para elementos pesados (como o Urânio com Z = 92), a repulsão eletrostática acumulada torna-se gigantesca, desestabilizando os núcleos. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "Por esta razão, não existem elementos químicos estáveis na natureza com Z > 82 (Chumbo); todos os elementos com Z ≥ 83 (Bismuto, Rádio, Urânio) são intrinsecamente radioativos."
   },
@@ -1331,9 +1366,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "Em física nuclear médica, papel dos neutrões como 'cimento' nuclear e diluidores de carga explica-se pelo facto de que os neutrões não possuem carga elétrica líquida (não sofrem repulsão coulombiana), mas exercem a potente atração da força nuclear forte com todos os nucleões vizinhos. Ao intercalarem-se entre os protões, os neutrões aumentam a distância média entre cargas positivas, diminuindo a força repulsiva eletrostática ($F \\propto 1/r^2$) e mantendo o núcleo coeso.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "O enfermeiro compreende porque núcleos de elementos pesados necessitam de muito mais neutrões do que protões para manter a integridade física."
   },
@@ -1350,9 +1385,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A aplicação na enfermagem para papel dos neutrões como 'cimento' nuclear e diluidores de carga baseia-se no princípio: O enfermeiro compreende porque núcleos de elementos pesados necessitam de muito mais neutrões do que protões para manter a integridade física. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "O enfermeiro compreende porque núcleos de elementos pesados necessitam de muito mais neutrões do que protões para manter a integridade física."
   },
@@ -1369,9 +1404,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "A análise teórica e experimental confirma que Ao intercalarem-se entre os protões, os neutrões aumentam a distância média entre cargas positivas, diminuindo a força repulsiva eletrostática ($F \\propto 1/r^2$) e mantendo o núcleo coeso. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "O enfermeiro compreende porque núcleos de elementos pesados necessitam de muito mais neutrões do que protões para manter a integridade física."
   },
@@ -1388,9 +1423,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Em física nuclear médica, barreira de potencial coulombiana e reações de fusão nuclear explica-se pelo facto de que para que dois núcleos positivos se fundam (como no centro do Sol ou num reator de fusão), eles têm de vencer a repulsão coulombiana aproximando-se a menos de 1 femtómetro. Isto exige temperaturas de milhões de graus Celsius para que a energia cinética térmica vença a barreira repulsiva de Coulomb.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "Este princípio explica porque a fusão nuclear emite muito mais energia do que qualquer processo químico, sendo o motor primordial de todo o Universo."
   },
@@ -1407,9 +1442,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A aplicação na enfermagem para barreira de potencial coulombiana e reações de fusão nuclear baseia-se no princípio: Este princípio explica porque a fusão nuclear emite muito mais energia do que qualquer processo químico, sendo o motor primordial de todo o Universo. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "Este princípio explica porque a fusão nuclear emite muito mais energia do que qualquer processo químico, sendo o motor primordial de todo o Universo."
   },
@@ -1426,9 +1461,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A análise teórica e experimental confirma que Isto exige temperaturas de milhões de graus Celsius para que a energia cinética térmica vença a barreira repulsiva de Coulomb. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "Este princípio explica porque a fusão nuclear emite muito mais energia do que qualquer processo químico, sendo o motor primordial de todo o Universo."
   },
@@ -1445,9 +1480,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "Em física nuclear médica, instabilidade nuclear por excesso de protões e decaimento beta mais (β+) explica-se pelo facto de que núcleos artificiais gerados em aceleradores com excesso relativo de protões sofrem repulsão coulombiana interna excessiva que supera o vale de estabilidade. Para restabelecer o equilíbrio, o núcleo transmuta espontaneamente um protão num neutrão, ejetando um positrão e um neutrino ($p \\rightarrow n + \\beta^+ + \\nu_e$).",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "Esta é a base física da produção de Flúor-18 e Gálio-68 para exames PET: o enfermeiro manuseia o radiofármaco protegido por blindagens de tungsténio."
   },
@@ -1464,9 +1499,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A aplicação na enfermagem para instabilidade nuclear por excesso de protões e decaimento beta mais (β+) baseia-se no princípio: Esta é a base física da produção de Flúor-18 e Gálio-68 para exames PET: o enfermeiro manuseia o radiofármaco protegido por blindagens de tungsténio. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "Esta é a base física da produção de Flúor-18 e Gálio-68 para exames PET: o enfermeiro manuseia o radiofármaco protegido por blindagens de tungsténio."
   },
@@ -1483,9 +1518,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A análise teórica e experimental confirma que Para restabelecer o equilíbrio, o núcleo transmuta espontaneamente um protão num neutrão, ejetando um positrão e um neutrino ($p \\rightarrow n + \\beta^+ + \\nu_e$). O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "Esta é a base física da produção de Flúor-18 e Gálio-68 para exames PET: o enfermeiro manuseia o radiofármaco protegido por blindagens de tungsténio."
   },
@@ -1502,9 +1537,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "Em física nuclear médica, intensidade relativa da Força Nuclear Forte no Universo explica-se pelo facto de que é a mais intensa de todas as quatro forças fundamentais da natureza, sendo cerca de 100 vezes mais forte do que a força eletromagnética e 10³⁸ vezes mais forte do que a gravidade. Esta enorme magnitude atrativa supera amplamente a repulsão eletrostática dos protões nas distâncias de equilíbrio do interior do núcleo (~1 fm).",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "O enfermeiro reconhece que a quebra ou rearranjo destas ligações na fissão e decaimento nuclear liberta energias milhões de vezes superiores às reações químicas normais."
   },
@@ -1521,9 +1556,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "A aplicação na enfermagem para intensidade relativa da Força Nuclear Forte no Universo baseia-se no princípio: O enfermeiro reconhece que a quebra ou rearranjo destas ligações na fissão e decaimento nuclear liberta energias milhões de vezes superiores às reações químicas normais. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "O enfermeiro reconhece que a quebra ou rearranjo destas ligações na fissão e decaimento nuclear liberta energias milhões de vezes superiores às reações químicas normais."
   },
@@ -1540,9 +1575,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A análise teórica e experimental confirma que Esta enorme magnitude atrativa supera amplamente a repulsão eletrostática dos protões nas distâncias de equilíbrio do interior do núcleo (~1 fm). O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "O enfermeiro reconhece que a quebra ou rearranjo destas ligações na fissão e decaimento nuclear liberta energias milhões de vezes superiores às reações químicas normais."
   },
@@ -1559,9 +1594,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "Em física nuclear médica, curtíssimo alcance femtométrico da Força Nuclear Forte explica-se pelo facto de que ao contrário da gravidade e da força elétrica (que têm alcance infinito decaindo com 1/r²), a força nuclear forte atua apenas a distâncias inferiores a 2 a 3 femtómetros (10⁻¹⁵ m). A distâncias superiores a 3 fm, a força atrativa decai exponencialmente para zero; a distâncias inferiores a 0,7 fm, torna-se fortemente repulsiva, impedindo o colapso dos nucleões num ponto singular.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "Este alcance ultracurto explica por que não sentimos a atração nuclear no dia a dia macroscópico, ficando confinado exclusivamente ao interior do núcleo atómico."
   },
@@ -1578,9 +1613,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A aplicação na enfermagem para curtíssimo alcance femtométrico da Força Nuclear Forte baseia-se no princípio: Este alcance ultracurto explica por que não sentimos a atração nuclear no dia a dia macroscópico, ficando confinado exclusivamente ao interior do núcleo atómico. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "Este alcance ultracurto explica por que não sentimos a atração nuclear no dia a dia macroscópico, ficando confinado exclusivamente ao interior do núcleo atómico."
   },
@@ -1597,9 +1632,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "A análise teórica e experimental confirma que A distâncias superiores a 3 fm, a força atrativa decai exponencialmente para zero; a distâncias inferiores a 0,7 fm, torna-se fortemente repulsiva, impedindo o colapso dos nucleões num ponto singular. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "Este alcance ultracurto explica por que não sentimos a atração nuclear no dia a dia macroscópico, ficando confinado exclusivamente ao interior do núcleo atómico."
   },
@@ -1616,9 +1651,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Em física nuclear médica, independência de carga elétrica da Força Forte explica-se pelo facto de que a atração nuclear forte é rigorosamente a mesma entre dois protões (p-p), entre dois neutrões (n-n) ou entre um protão e um neutrão (p-n), desde que nos mesmos estados quânticos de spin. Isto confirma que a carga elétrica não desempenha qualquer papel na interação forte primordial.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "Esta simetria de carga é fundamental para a física de partículas e para o modelo de camadas do núcleo atómico."
   },
@@ -1635,9 +1670,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A aplicação na enfermagem para independência de carga elétrica da Força Forte baseia-se no princípio: Esta simetria de carga é fundamental para a física de partículas e para o modelo de camadas do núcleo atómico. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "Esta simetria de carga é fundamental para a física de partículas e para o modelo de camadas do núcleo atómico."
   },
@@ -1654,9 +1689,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A análise teórica e experimental confirma que Isto confirma que a carga elétrica não desempenha qualquer papel na interação forte primordial. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "Esta simetria de carga é fundamental para a física de partículas e para o modelo de camadas do núcleo atómico."
   },
@@ -1673,9 +1708,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "Em física nuclear médica, propriedade de saturação da Força Nuclear explica-se pelo facto de que devido ao seu curto alcance, um nucleão atrai apenas os seus vizinhos mais imediatos em contacto direto, não interagindo com nucleões do lado oposto de um núcleo volumoso. Como resultado, a energia de ligação por nucleão atinge um patamar constante de cerca de 8 MeV por nucleão na maioria dos elementos da tabela periódica.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "Em núcleos muito grandes, a atração forte satura localmente, mas a repulsão elétrica (de alcance infinito) atua entre TODOS os protões, tornando os núcleos superpesados instáveis."
   },
@@ -1692,9 +1727,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A aplicação na enfermagem para propriedade de saturação da Força Nuclear baseia-se no princípio: Em núcleos muito grandes, a atração forte satura localmente, mas a repulsão elétrica (de alcance infinito) atua entre TODOS os protões, tornando os núcleos superpesados instáveis. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "Em núcleos muito grandes, a atração forte satura localmente, mas a repulsão elétrica (de alcance infinito) atua entre TODOS os protões, tornando os núcleos superpesados instáveis."
   },
@@ -1711,9 +1746,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A análise teórica e experimental confirma que Como resultado, a energia de ligação por nucleão atinge um patamar constante de cerca de 8 MeV por nucleão na maioria dos elementos da tabela periódica. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "Em núcleos muito grandes, a atração forte satura localmente, mas a repulsão elétrica (de alcance infinito) atua entre TODOS os protões, tornando os núcleos superpesados instáveis."
   },
@@ -1730,9 +1765,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "Em física nuclear médica, mediadores da força forte e os quarks constituintes explica-se pelo facto de que ao nível subatómico, a força nuclear forte primordial mantém os quarks unidos dentro dos protões e neutrões através da troca de 'glúons' (Cromodinâmica Quântica). A força residual entre nucleões no núcleo é mediada pela troca de 'mesões' (como os mesões pi ou piões), conforme previsto pelo físico japonês Hideki Yukawa.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "O conhecimento destas interações fundamentais permite aos profissionais de saúde valorizar a física avançada subjacente à imagiologia molecular e terapia com feixes de protões."
   },
@@ -1749,9 +1784,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "A aplicação na enfermagem para mediadores da força forte e os quarks constituintes baseia-se no princípio: O conhecimento destas interações fundamentais permite aos profissionais de saúde valorizar a física avançada subjacente à imagiologia molecular e terapia com feixes de protões. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "O conhecimento destas interações fundamentais permite aos profissionais de saúde valorizar a física avançada subjacente à imagiologia molecular e terapia com feixes de protões."
   },
@@ -1768,9 +1803,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A análise teórica e experimental confirma que A força residual entre nucleões no núcleo é mediada pela troca de 'mesões' (como os mesões pi ou piões), conforme previsto pelo físico japonês Hideki Yukawa. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "O conhecimento destas interações fundamentais permite aos profissionais de saúde valorizar a física avançada subjacente à imagiologia molecular e terapia com feixes de protões."
   },
@@ -1787,9 +1822,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "Em física nuclear médica, razão N/Z para núcleos atómicos leves estáveis (Z ≤ 20) explica-se pelo facto de que em elementos leves até ao Cálcio (Z = 20), os núcleos mais estáveis possuem um número de neutrões aproximadamente igual ao número de protões, ou seja, N/Z ≈ 1,0. Exemplos clássicos de estabilidade perfeita incluem o Carbono-12 (6p, 6n), o Azoto-14 (7p, 7n) e o Oxigénio-16 (8p, 8n).",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "Estes elementos constituem mais de 98% da massa dos tecidos do corpo humano, garantindo a extraordinária estabilidade molecular biológica da vida."
   },
@@ -1806,9 +1841,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A aplicação na enfermagem para razão N/Z para núcleos atómicos leves estáveis (Z ≤ 20) baseia-se no princípio: Estes elementos constituem mais de 98% da massa dos tecidos do corpo humano, garantindo a extraordinária estabilidade molecular biológica da vida. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "Estes elementos constituem mais de 98% da massa dos tecidos do corpo humano, garantindo a extraordinária estabilidade molecular biológica da vida."
   },
@@ -1825,9 +1860,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "A análise teórica e experimental confirma que Exemplos clássicos de estabilidade perfeita incluem o Carbono-12 (6p, 6n), o Azoto-14 (7p, 7n) e o Oxigénio-16 (8p, 8n). O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "Estes elementos constituem mais de 98% da massa dos tecidos do corpo humano, garantindo a extraordinária estabilidade molecular biológica da vida."
   },
@@ -1844,9 +1879,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Em física nuclear médica, desvio da razão N/Z para elementos pesados estáveis (Z > 20) explica-se pelo facto de que à medida que Z aumenta, a repulsão eletrostática coulombiana cresce muito mais depressa do que a atração nuclear; para compensar, o núcleo necessita de uma proporção crescente de neutrões. Nos elementos pesados estáveis (como o Chumbo-208, com 82p e 126n), a razão N/Z sobe gradualmente para cerca de 1,5 a 1,54.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "Qualquer núcleo que se afaste desta linha ideal ('vale de estabilidade') torna-se radioativo e procura regressar ao vale através de decaimentos nucleares espontâneos."
   },
@@ -1863,9 +1898,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A aplicação na enfermagem para desvio da razão N/Z para elementos pesados estáveis (Z > 20) baseia-se no princípio: Qualquer núcleo que se afaste desta linha ideal ('vale de estabilidade') torna-se radioativo e procura regressar ao vale através de decaimentos nucleares espontâneos. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "Qualquer núcleo que se afaste desta linha ideal ('vale de estabilidade') torna-se radioativo e procura regressar ao vale através de decaimentos nucleares espontâneos."
   },
@@ -1882,9 +1917,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A análise teórica e experimental confirma que Nos elementos pesados estáveis (como o Chumbo-208, com 82p e 126n), a razão N/Z sobe gradualmente para cerca de 1,5 a 1,54. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "Qualquer núcleo que se afaste desta linha ideal ('vale de estabilidade') torna-se radioativo e procura regressar ao vale através de decaimentos nucleares espontâneos."
   },
@@ -1901,9 +1936,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "Em física nuclear médica, decaimento de núcleos com excesso de neutrões (acima da faixa de estabilidade) explica-se pelo facto de que núcleos situados acima da faixa de estabilidade possuem neutrões a mais em relação ao número de protões. Decaem preferencialmente por emissão Beta Menos (β⁻), onde um neutrão em excesso converte-se num protão, ejetando um eletrão e um antineutrino ($n \\rightarrow p + \\beta^- + \\bar{\\nu}_e$), fazendo Z subir e aproximando o núcleo da estabilidade.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "O Iodo-131 e o Césio-137 são produtos típicos de fissão com excesso de neutrões que decaem por emissão β⁻ utilizada no tratamento do cancro da tiroide."
   },
@@ -1920,9 +1955,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A aplicação na enfermagem para decaimento de núcleos com excesso de neutrões (acima da faixa de estabilidade) baseia-se no princípio: O Iodo-131 e o Césio-137 são produtos típicos de fissão com excesso de neutrões que decaem por emissão β⁻ utilizada no tratamento do cancro da tiroide. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "O Iodo-131 e o Césio-137 são produtos típicos de fissão com excesso de neutrões que decaem por emissão β⁻ utilizada no tratamento do cancro da tiroide."
   },
@@ -1939,9 +1974,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A análise teórica e experimental confirma que Decaem preferencialmente por emissão Beta Menos (β⁻), onde um neutrão em excesso converte-se num protão, ejetando um eletrão e um antineutrino ($n \\rightarrow p + \\beta^- + \\bar{\\nu}_e$), fazendo Z subir e aproximando o núcleo da estabilidade. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "O Iodo-131 e o Césio-137 são produtos típicos de fissão com excesso de neutrões que decaem por emissão β⁻ utilizada no tratamento do cancro da tiroide."
   },
@@ -1958,9 +1993,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "Em física nuclear médica, decaimento de núcleos com excesso de protões (abaixo da faixa de estabilidade) explica-se pelo facto de que núcleos localizados abaixo da faixa de estabilidade possuem protões a mais em relação aos neutrões. Decaem por emissão Beta Mais (β⁺, ejetando um positrão) ou por Captura Eletrónica (CE, capturando um eletrão da camada K), convertendo um protão num neutrão e fazendo Z descer uma unidade.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "O Flúor-18 (¹⁸F, 9p e 9n, N/Z = 1,0 quando o oxigénio estável requer N/Z maior) decai por β⁺ com semivida de 110 minutos para Oxigénio-18 estável."
   },
@@ -1977,9 +2012,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "A aplicação na enfermagem para decaimento de núcleos com excesso de protões (abaixo da faixa de estabilidade) baseia-se no princípio: O Flúor-18 (¹⁸F, 9p e 9n, N/Z = 1,0 quando o oxigénio estável requer N/Z maior) decai por β⁺ com semivida de 110 minutos para Oxigénio-18 estável. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "O Flúor-18 (¹⁸F, 9p e 9n, N/Z = 1,0 quando o oxigénio estável requer N/Z maior) decai por β⁺ com semivida de 110 minutos para Oxigénio-18 estável."
   },
@@ -1996,9 +2031,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A análise teórica e experimental confirma que Decaem por emissão Beta Mais (β⁺, ejetando um positrão) ou por Captura Eletrónica (CE, capturando um eletrão da camada K), convertendo um protão num neutrão e fazendo Z descer uma unidade. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "O Flúor-18 (¹⁸F, 9p e 9n, N/Z = 1,0 quando o oxigénio estável requer N/Z maior) decai por β⁺ com semivida de 110 minutos para Oxigénio-18 estável."
   },
@@ -2015,9 +2050,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "Em física nuclear médica, decaimento de núcleos pesados com excesso global de nucleões (Z > 83) explica-se pelo facto de que núcleos gigantescos com excesso absoluto de nucleões e massa total elevada não conseguem atingir a estabilidade apenas por decaimentos beta. Aliviam a sua massa e carga expelindo blocos compactos de 2 protões e 2 neutrões sob a forma de partículas Alfa (núcleos de Hélio-4, ⁴He²⁺), reduzindo Z em 2 e A em 4 unidades.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "O Rádio-223 é um emissor alfa utilizado na enfermagem oncológica para tratar metástases ósseas dolorosas em cancro da próstata resistente à castração."
   },
@@ -2034,9 +2069,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A aplicação na enfermagem para decaimento de núcleos pesados com excesso global de nucleões (Z > 83) baseia-se no princípio: O Rádio-223 é um emissor alfa utilizado na enfermagem oncológica para tratar metástases ósseas dolorosas em cancro da próstata resistente à castração. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "O Rádio-223 é um emissor alfa utilizado na enfermagem oncológica para tratar metástases ósseas dolorosas em cancro da próstata resistente à castração."
   },
@@ -2053,9 +2088,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "A análise teórica e experimental confirma que Aliviam a sua massa e carga expelindo blocos compactos de 2 protões e 2 neutrões sob a forma de partículas Alfa (núcleos de Hélio-4, ⁴He²⁺), reduzindo Z em 2 e A em 4 unidades. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "O Rádio-223 é um emissor alfa utilizado na enfermagem oncológica para tratar metástases ósseas dolorosas em cancro da próstata resistente à castração."
   },
@@ -2072,9 +2107,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Em física nuclear médica, conceito de Defeito de Massa (Δm) explica-se pelo facto de que a massa real em repouso de qualquer núcleo atómico estável ligado é sempre rigorosamente INFERIOR à soma das massas individuais de todos os seus protões e neutrões livres constituintes. A diferença matemática $\\Delta m = [Z \\cdot m_p + (A - Z) \\cdot m_n] - M_{núcleo}$ é denominada Defeito de Massa.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "Esta massa 'desaparecida' não se aniquilou no nada: foi convertida em energia pura durante a formação do núcleo, de acordo com a teoria da relatividade."
   },
@@ -2091,9 +2126,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A aplicação na enfermagem para conceito de Defeito de Massa (Δm) baseia-se no princípio: Esta massa 'desaparecida' não se aniquilou no nada: foi convertida em energia pura durante a formação do núcleo, de acordo com a teoria da relatividade. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "Esta massa 'desaparecida' não se aniquilou no nada: foi convertida em energia pura durante a formação do núcleo, de acordo com a teoria da relatividade."
   },
@@ -2110,9 +2145,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A análise teórica e experimental confirma que A diferença matemática $\\Delta m = [Z \\cdot m_p + (A - Z) \\cdot m_n] - M_{núcleo}$ é denominada Defeito de Massa. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "Esta massa 'desaparecida' não se aniquilou no nada: foi convertida em energia pura durante a formação do núcleo, de acordo com a teoria da relatividade."
   },
@@ -2129,9 +2164,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "Em física nuclear médica, equação de equivalência massa-energia de Einstein (E = Δm · c²) explica-se pelo facto de que a energia e a massa são manifestações equivalentes da mesma grandeza física fundamental, relacionadas pela constante c² (onde c ≈ 3 · 10⁸ m/s, sendo c² ≈ 9 · 10¹⁶ m²/s²). Mesmo um defeito de massa microscópico da ordem de miligramas liberta uma quantidade colossal de energia: 1 grama de massa pura equivale a cerca de 9 · 10¹³ Joules (equivalente à explosão de 21 mil toneladas de TNT).",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "O enfermeiro compreende a física que governa a imensa energia libertada nos reatores nucleares que sintetizam os radioisótopos hospitalares diários."
   },
@@ -2148,9 +2183,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A aplicação na enfermagem para equação de equivalência massa-energia de Einstein (E = Δm · c²) baseia-se no princípio: O enfermeiro compreende a física que governa a imensa energia libertada nos reatores nucleares que sintetizam os radioisótopos hospitalares diários. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "O enfermeiro compreende a física que governa a imensa energia libertada nos reatores nucleares que sintetizam os radioisótopos hospitalares diários."
   },
@@ -2167,9 +2202,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A análise teórica e experimental confirma que Mesmo um defeito de massa microscópico da ordem de miligramas liberta uma quantidade colossal de energia: 1 grama de massa pura equivale a cerca de 9 · 10¹³ Joules (equivalente à explosão de 21 mil toneladas de TNT). O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "O enfermeiro compreende a física que governa a imensa energia libertada nos reatores nucleares que sintetizam os radioisótopos hospitalares diários."
   },
@@ -2186,9 +2221,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "Em física nuclear médica, unidade de massa atómica (u) e conversão para MeV explica-se pelo facto de que uma unidade de massa atómica unificada (1 u) é definida como exatamente 1/12 da massa de um átomo neutro de Carbono-12 em repouso ($1 u \\approx 1,66054 \\cdot 10^{-27}$ kg). Pela relação $E = m \\cdot c^2$, a conversão de 1 u de massa equivale a exatamente 931,5 Megaeletrão-Volts (MeV) de energia.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "Esta conversão direta permite calcular instantaneamente a energia libertada em qualquer reação de decaimento nuclear a partir das massas atómicas tabeladas."
   },
@@ -2205,9 +2240,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "A aplicação na enfermagem para unidade de massa atómica (u) e conversão para MeV baseia-se no princípio: Esta conversão direta permite calcular instantaneamente a energia libertada em qualquer reação de decaimento nuclear a partir das massas atómicas tabeladas. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "Esta conversão direta permite calcular instantaneamente a energia libertada em qualquer reação de decaimento nuclear a partir das massas atómicas tabeladas."
   },
@@ -2224,9 +2259,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A análise teórica e experimental confirma que Pela relação $E = m \\cdot c^2$, a conversão de 1 u de massa equivale a exatamente 931,5 Megaeletrão-Volts (MeV) de energia. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "Esta conversão direta permite calcular instantaneamente a energia libertada em qualquer reação de decaimento nuclear a partir das massas atómicas tabeladas."
   },
@@ -2243,9 +2278,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "Em física nuclear médica, conservação relativística de energia-massa em decaimentos nucleares explica-se pelo facto de que num decaimento nuclear espontâneo, a massa total dos produtos finais é ligeiramente menor do que a massa do núcleo original pai. Essa diferença de massa ($\\Delta m$) surge como energia cinética partilhada entre a partícula ejetada (alfa, beta), a partícula neutra (neutrino) e o fotão gama emitido.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "O enfermeiro reconhece que a energia cinética das partículas emitidas dita o seu alcance físico e o poder de penetração nos tecidos biológicos humanos."
   },
@@ -2262,9 +2297,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A aplicação na enfermagem para conservação relativística de energia-massa em decaimentos nucleares baseia-se no princípio: O enfermeiro reconhece que a energia cinética das partículas emitidas dita o seu alcance físico e o poder de penetração nos tecidos biológicos humanos. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "O enfermeiro reconhece que a energia cinética das partículas emitidas dita o seu alcance físico e o poder de penetração nos tecidos biológicos humanos."
   },
@@ -2281,9 +2316,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "A análise teórica e experimental confirma que Essa diferença de massa ($\\Delta m$) surge como energia cinética partilhada entre a partícula ejetada (alfa, beta), a partícula neutra (neutrino) e o fotão gama emitido. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "O enfermeiro reconhece que a energia cinética das partículas emitidas dita o seu alcance físico e o poder de penetração nos tecidos biológicos humanos."
   },
@@ -2300,9 +2335,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Em física nuclear médica, balanço de massa na aniquilação positrão-eletrão em PET explica-se pelo facto de que quando um positrão ($\beta^+$) colide com um eletrão ($e^-$) do tecido do doente, ambas as massas de repouso (2 $\times$ 0,511 MeV/c²) são integralmente aniquiladas. O defeito de massa total converte-se em dois fotões gama monocromáticos colineares de exatamente 511 keV de energia cada, emitidos a 180° um do outro.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "O enfermeiro sabe que a câmara PET deteta estes dois fotões em coincidência temporal estrita para reconstruir a localização exata do tumor metabólico."
   },
@@ -2319,9 +2354,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A aplicação na enfermagem para balanço de massa na aniquilação positrão-eletrão em PET baseia-se no princípio: O enfermeiro sabe que a câmara PET deteta estes dois fotões em coincidência temporal estrita para reconstruir a localização exata do tumor metabólico. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "O enfermeiro sabe que a câmara PET deteta estes dois fotões em coincidência temporal estrita para reconstruir a localização exata do tumor metabólico."
   },
@@ -2338,9 +2373,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A análise teórica e experimental confirma que O defeito de massa total converte-se em dois fotões gama monocromáticos colineares de exatamente 511 keV de energia cada, emitidos a 180° um do outro. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "O enfermeiro sabe que a câmara PET deteta estes dois fotões em coincidência temporal estrita para reconstruir a localização exata do tumor metabólico."
   },
@@ -2357,9 +2392,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "Em física nuclear médica, definição de Energia de Ligação Nuclear (Eb) explica-se pelo facto de que é a quantidade mínima de energia externa que seria necessário fornecer a um núcleo atómico para separar completamente todos os seus nucleões constituintes até ao infinito em repouso. Calcula-se diretamente multiplicando o defeito de massa por c²: $E_b = \\Delta m \\cdot c^2$.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "Quanto maior for a energia de ligação total, mais fortemente unidos e compactos estão os nucleões no interior do poço de potencial nuclear."
   },
@@ -2376,9 +2411,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A aplicação na enfermagem para definição de Energia de Ligação Nuclear (Eb) baseia-se no princípio: Quanto maior for a energia de ligação total, mais fortemente unidos e compactos estão os nucleões no interior do poço de potencial nuclear. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "Quanto maior for a energia de ligação total, mais fortemente unidos e compactos estão os nucleões no interior do poço de potencial nuclear."
   },
@@ -2395,9 +2430,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A análise teórica e experimental confirma que Calcula-se diretamente multiplicando o defeito de massa por c²: $E_b = \\Delta m \\cdot c^2$. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "Quanto maior for a energia de ligação total, mais fortemente unidos e compactos estão os nucleões no interior do poço de potencial nuclear."
   },
@@ -2414,9 +2449,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "Em física nuclear médica, Energia de Ligação por Nucleão (Eb / A) como índice de estabilidade explica-se pelo facto de que a estabilidade relativa de um núcleo não depende da energia de ligação total bruta, mas sim da Energia de Ligação dividida pelo número de massa: $E_b / A$. Representa a energia média necessária para arrancar um único nucleão do interior daquele núcleo específico.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "Núcleos com maior valor de $E_b / A$ são os mais firmemente ligados e os mais resistentes à desintegração espontânea na natureza."
   },
@@ -2433,9 +2468,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "A aplicação na enfermagem para Energia de Ligação por Nucleão (Eb / A) como índice de estabilidade baseia-se no princípio: Núcleos com maior valor de $E_b / A$ são os mais firmemente ligados e os mais resistentes à desintegração espontânea na natureza. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "Núcleos com maior valor de $E_b / A$ são os mais firmemente ligados e os mais resistentes à desintegração espontânea na natureza."
   },
@@ -2452,9 +2487,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A análise teórica e experimental confirma que Representa a energia média necessária para arrancar um único nucleão do interior daquele núcleo específico. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "Núcleos com maior valor de $E_b / A$ são os mais firmemente ligados e os mais resistentes à desintegração espontânea na natureza."
   },
@@ -2471,9 +2506,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "Em física nuclear médica, curva de energia de ligação por nucleão e o pico do Ferro-56 explica-se pelo facto de que a curva de $E_b / A$ começa em valores baixos para o deutério (~1,1 MeV/nucleão), sobe rapidamente nos núcleos leves, atinge um pico máximo absoluto de ~8,79 MeV/nucleão no Ferro-56 (⁵⁶Fe) e Níquel-62, e desce suavemente para ~7,6 MeV/nucleão no Urânio-238. O Ferro-56 é o núcleo termodinamicamente mais estável de todo o Universo conhecido.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "Todos os processos nucleares cósmicos tendem energeticamente para a região central do Ferro."
   },
@@ -2490,9 +2525,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A aplicação na enfermagem para curva de energia de ligação por nucleão e o pico do Ferro-56 baseia-se no princípio: Todos os processos nucleares cósmicos tendem energeticamente para a região central do Ferro. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "Todos os processos nucleares cósmicos tendem energeticamente para a região central do Ferro."
   },
@@ -2509,9 +2544,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "A análise teórica e experimental confirma que O Ferro-56 é o núcleo termodinamicamente mais estável de todo o Universo conhecido. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "Todos os processos nucleares cósmicos tendem energeticamente para a região central do Ferro."
   },
@@ -2528,9 +2563,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Em física nuclear médica, mecanismo energético da Fusão Nuclear em núcleos leves explica-se pelo facto de que quando dois núcleos muito leves com baixo $E_b / A$ (como isótopos de hidrogénio: deutério e trítio) se fundem para formar um núcleo mais pesado (Hélio-4 com $E_b / A \\approx 7,1$ MeV), o novo núcleo é muito mais estável. A subida na curva de $E_b / A$ liberta a diferença de energia sob a forma de calor e radiação limpa de fusão.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "A fusão nuclear é a fonte que alimenta as estrelas e é a meta da futura produção de energia limpa na Terra."
   },
@@ -2547,9 +2582,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A aplicação na enfermagem para mecanismo energético da Fusão Nuclear em núcleos leves baseia-se no princípio: A fusão nuclear é a fonte que alimenta as estrelas e é a meta da futura produção de energia limpa na Terra. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "A fusão nuclear é a fonte que alimenta as estrelas e é a meta da futura produção de energia limpa na Terra."
   },
@@ -2566,9 +2601,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A análise teórica e experimental confirma que A subida na curva de $E_b / A$ liberta a diferença de energia sob a forma de calor e radiação limpa de fusão. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "A fusão nuclear é a fonte que alimenta as estrelas e é a meta da futura produção de energia limpa na Terra."
   },
@@ -2585,9 +2620,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "Em física nuclear médica, mecanismo energético da Fissão Nuclear em núcleos pesados explica-se pelo facto de que quando um núcleo superpesado com menor $E_b / A$ (como o Urânio-235 ou Plutónio-239) se divide em dois núcleos de tamanho médio, os fragmentos resultantes possuem maior $E_b / A$ (~8,5 MeV). A subida na curva liberta cerca de 200 MeV de energia pura por cada núcleo cindido, além de neutrões rápidos adicionais.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "Este processo em reatores nucleares é o responsável direto pela geração do Molibdénio-99, o isótopo-pai de onde a enfermagem obtém o Tecnécio-99m hospitalar."
   },
@@ -2604,9 +2639,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A aplicação na enfermagem para mecanismo energético da Fissão Nuclear em núcleos pesados baseia-se no princípio: Este processo em reatores nucleares é o responsável direto pela geração do Molibdénio-99, o isótopo-pai de onde a enfermagem obtém o Tecnécio-99m hospitalar. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "Este processo em reatores nucleares é o responsável direto pela geração do Molibdénio-99, o isótopo-pai de onde a enfermagem obtém o Tecnécio-99m hospitalar."
   },
@@ -2623,9 +2658,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A análise teórica e experimental confirma que A subida na curva liberta cerca de 200 MeV de energia pura por cada núcleo cindido, além de neutrões rápidos adicionais. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "Este processo em reatores nucleares é o responsável direto pela geração do Molibdénio-99, o isótopo-pai de onde a enfermagem obtém o Tecnécio-99m hospitalar."
   },
@@ -2642,9 +2677,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "Em física nuclear médica, quantização dos níveis energéticos nucleares explica-se pelo facto de que tal como os eletrões orbitais ocupam níveis quânticos discretos de energia no átomo, também os protões e neutrões no interior do núcleo ocupam níveis de energia quânticos bem definidos (modelo de camadas nuclear). No entanto, enquanto as transições eletrónicas orbitais envolvem energias na escala de alguns eV a keV (luz e Raios X), as transições entre estados nucleares envolvem energias na escala de centenas de keV a vários MeV.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "O enfermeiro compreende a razão pela qual a radiação gama de origem nuclear é incomparavelmente mais energética do que a luz visível."
   },
@@ -2661,9 +2696,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "A aplicação na enfermagem para quantização dos níveis energéticos nucleares baseia-se no princípio: O enfermeiro compreende a razão pela qual a radiação gama de origem nuclear é incomparavelmente mais energética do que a luz visível. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "O enfermeiro compreende a razão pela qual a radiação gama de origem nuclear é incomparavelmente mais energética do que a luz visível."
   },
@@ -2680,9 +2715,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A análise teórica e experimental confirma que No entanto, enquanto as transições eletrónicas orbitais envolvem energias na escala de alguns eV a keV (luz e Raios X), as transições entre estados nucleares envolvem energias na escala de centenas de keV a vários MeV. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "O enfermeiro compreende a razão pela qual a radiação gama de origem nuclear é incomparavelmente mais energética do que a luz visível."
   },
@@ -2699,9 +2734,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "Em física nuclear médica, mecanismo da emissão de radiação gama (γ) explica-se pelo facto de que após um decaimento alfa ou beta, o núcleo filho resultante fica frequentemente num estado nuclear excitado de maior energia ($^A_Z\\text{X}^*$). A transição do núcleo excitado para o seu estado fundamental ocorre quase instantaneamente (em 10⁻¹² segundos), com a emissão da energia excedente sob a forma de um fotão gama puramente eletromagnético.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "A emissão gama não altera nem o número de protões Z nem o número de massa A do elemento químico original."
   },
@@ -2718,9 +2753,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A aplicação na enfermagem para mecanismo da emissão de radiação gama (γ) baseia-se no princípio: A emissão gama não altera nem o número de protões Z nem o número de massa A do elemento químico original. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "A emissão gama não altera nem o número de protões Z nem o número de massa A do elemento químico original."
   },
@@ -2737,9 +2772,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "A análise teórica e experimental confirma que A transição do núcleo excitado para o seu estado fundamental ocorre quase instantaneamente (em 10⁻¹² segundos), com a emissão da energia excedente sob a forma de um fotão gama puramente eletromagnético. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "A emissão gama não altera nem o número de protões Z nem o número de massa A do elemento químico original."
   },
@@ -2756,9 +2791,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Em física nuclear médica, conceito de Isómero Nuclear e estados metaestáveis (m) explica-se pelo facto de que em alguns núcleos atómicos específicos, a desexcitação gama é atrasada por regras de seleção quântica de spin, resultando num estado excitado metaestável com semivida mensurável em minutos ou horas. Estes estados excitados de longa duração são designados por 'isómeros nucleares' e identificados pela letra minúscula 'm' a seguir ao número de massa (por exemplo, ⁹⁹ᵐTc).",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "O Tecnécio-99m possui semivida de 6 horas, o que permite o tempo ideal para radiomarcação, injeção pelo enfermeiro e aquisição imagiológica em câmara gama antes do decaimento total."
   },
@@ -2775,9 +2810,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A aplicação na enfermagem para conceito de Isómero Nuclear e estados metaestáveis (m) baseia-se no princípio: O Tecnécio-99m possui semivida de 6 horas, o que permite o tempo ideal para radiomarcação, injeção pelo enfermeiro e aquisição imagiológica em câmara gama antes do decaimento total. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "O Tecnécio-99m possui semivida de 6 horas, o que permite o tempo ideal para radiomarcação, injeção pelo enfermeiro e aquisição imagiológica em câmara gama antes do decaimento total."
   },
@@ -2794,9 +2829,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A análise teórica e experimental confirma que Estes estados excitados de longa duração são designados por 'isómeros nucleares' e identificados pela letra minúscula 'm' a seguir ao número de massa (por exemplo, ⁹⁹ᵐTc). O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "O Tecnécio-99m possui semivida de 6 horas, o que permite o tempo ideal para radiomarcação, injeção pelo enfermeiro e aquisição imagiológica em câmara gama antes do decaimento total."
   },
@@ -2813,9 +2848,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "Em física nuclear médica, vantagem clínica ímpar do Tecnécio-99m em diagnóstico explica-se pelo facto de que o ⁹⁹ᵐTc emite fotões gama monocromáticos de 140 keV com ausência praticamente total de partículas beta corpusculares associadas. Os 140 keV têm energia suficiente para escapar do corpo do doente e atingir os cristais detetores da câmara gama, mas não causam a dose desnecessária de radiação tecidual local que partículas beta causariam.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "O enfermeiro sabe que o ⁹⁹ᵐTc é o radiofármaco 'cavalo de batalha' da medicina nuclear, usado em mais de 80% de todos os exames cintigráficos cardíacos, ósseos e renais."
   },
@@ -2832,9 +2867,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A aplicação na enfermagem para vantagem clínica ímpar do Tecnécio-99m em diagnóstico baseia-se no princípio: O enfermeiro sabe que o ⁹⁹ᵐTc é o radiofármaco 'cavalo de batalha' da medicina nuclear, usado em mais de 80% de todos os exames cintigráficos cardíacos, ósseos e renais. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "O enfermeiro sabe que o ⁹⁹ᵐTc é o radiofármaco 'cavalo de batalha' da medicina nuclear, usado em mais de 80% de todos os exames cintigráficos cardíacos, ósseos e renais."
   },
@@ -2851,9 +2886,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A análise teórica e experimental confirma que Os 140 keV têm energia suficiente para escapar do corpo do doente e atingir os cristais detetores da câmara gama, mas não causam a dose desnecessária de radiação tecidual local que partículas beta causariam. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "O enfermeiro sabe que o ⁹⁹ᵐTc é o radiofármaco 'cavalo de batalha' da medicina nuclear, usado em mais de 80% de todos os exames cintigráficos cardíacos, ósseos e renais."
   },
@@ -2870,9 +2905,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "Em física nuclear médica, conversão interna (CI) como alternativa à emissão gama explica-se pelo facto de que em vez de emitir um fotão gama, o núcleo excitado transfere diretamente a sua energia de desexcitação para um eletrão orbital da camada K mais interna, ejetando-o do átomo (eletrão de conversão interna). A vacância criada na camada K é preenchida por eletrões superiores, originando emissão secundária de Raios X característicos ou eletrões de Auger de baixíssima energia e alto dano celular local.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "Eletrões de Auger gerados por conversão interna têm sido explorados para terapia radionuclídica dirigida ao DNA celular de células tumorais."
   },
@@ -2889,9 +2924,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "A aplicação na enfermagem para conversão interna (CI) como alternativa à emissão gama baseia-se no princípio: Eletrões de Auger gerados por conversão interna têm sido explorados para terapia radionuclídica dirigida ao DNA celular de células tumorais. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "Eletrões de Auger gerados por conversão interna têm sido explorados para terapia radionuclídica dirigida ao DNA celular de células tumorais."
   },
@@ -2908,9 +2943,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A análise teórica e experimental confirma que A vacância criada na camada K é preenchida por eletrões superiores, originando emissão secundária de Raios X característicos ou eletrões de Auger de baixíssima energia e alto dano celular local. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "Eletrões de Auger gerados por conversão interna têm sido explorados para terapia radionuclídica dirigida ao DNA celular de células tumorais."
   },
@@ -2927,9 +2962,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "Em física nuclear médica, mecanismo da fissão nuclear induzida por neutrões térmicos explica-se pelo facto de que um neutrão de baixa energia (neutrão térmico, ~0,025 eV) colide e é absorvido por um núcleo físsil de Urânio-235, formando o estado instável ²³⁶U*, que oscila e divide-se em dois núcleos filhos menores e 2 a 3 neutrões rápidos. A reação em cadeia auto-sustentada é controlada em reatores nucleares através de barras absorventes de cádmio ou boro que absorvem o excesso de neutrões.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "Esta fissão controlada é a fábrica primordial que abastece os hospitais mundiais com radioisótopos cruciais."
   },
@@ -2946,9 +2981,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A aplicação na enfermagem para mecanismo da fissão nuclear induzida por neutrões térmicos baseia-se no princípio: Esta fissão controlada é a fábrica primordial que abastece os hospitais mundiais com radioisótopos cruciais. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "Esta fissão controlada é a fábrica primordial que abastece os hospitais mundiais com radioisótopos cruciais."
   },
@@ -2965,9 +3000,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "A análise teórica e experimental confirma que A reação em cadeia auto-sustentada é controlada em reatores nucleares através de barras absorventes de cádmio ou boro que absorvem o excesso de neutrões. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "Esta fissão controlada é a fábrica primordial que abastece os hospitais mundiais com radioisótopos cruciais."
   },
@@ -2984,9 +3019,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Em física nuclear médica, produção de Molibdénio-99 (⁹⁹Mo) como produto de fissão do ²³⁵U explica-se pelo facto de que alvos de Urânio-235 são bombardeados com neutrões térmicos no núcleo de reatores nucleares de investigação, gerando Molibdénio-99 com um rendimento de fissão de cerca de 6%. O ⁹⁹Mo é quimicamente extraído e purificado em laboratórios de alta segurança radiológica e transferido para colunas cromatográficas de alumina em geradores comerciais.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "O enfermeiro reconhece que eventuais paragens em reatores nucleares internacionais provocam escassez imediata de tecnécio nos serviços de medicina nuclear hospitalares."
   },
@@ -3003,9 +3038,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A aplicação na enfermagem para produção de Molibdénio-99 (⁹⁹Mo) como produto de fissão do ²³⁵U baseia-se no princípio: O enfermeiro reconhece que eventuais paragens em reatores nucleares internacionais provocam escassez imediata de tecnécio nos serviços de medicina nuclear hospitalares. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "O enfermeiro reconhece que eventuais paragens em reatores nucleares internacionais provocam escassez imediata de tecnécio nos serviços de medicina nuclear hospitalares."
   },
@@ -3022,9 +3057,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A análise teórica e experimental confirma que O ⁹⁹Mo é quimicamente extraído e purificado em laboratórios de alta segurança radiológica e transferido para colunas cromatográficas de alumina em geradores comerciais. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "O enfermeiro reconhece que eventuais paragens em reatores nucleares internacionais provocam escassez imediata de tecnécio nos serviços de medicina nuclear hospitalares."
   },
@@ -3041,9 +3076,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "Em física nuclear médica, produção de radioisótopos por captura neutrónica (reações n, γ) explica-se pelo facto de que ao irradiar elementos estáveis com o fluxo intenso de neutrões de um reator, os núcleos absorvem um neutrão e emitem um fotão gama prontamente, transmutando-se no isótopo seguinte. Exemplos clínicos incluem a produção de Cobalto-60 a partir de Cobalto-59 estável ($^{59}\\text{Co} + n \\rightarrow ^{60}\\text{Co}$) para teleterapia, e Iodo-131 a partir de Telúrio-130.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "O enfermeiro identifica fontes seladas de Cobalto-60 históricas em radioterapia e sabe das elevadas medidas de blindagem que exigem."
   },
@@ -3060,9 +3095,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A aplicação na enfermagem para produção de radioisótopos por captura neutrónica (reações n, γ) baseia-se no princípio: O enfermeiro identifica fontes seladas de Cobalto-60 históricas em radioterapia e sabe das elevadas medidas de blindagem que exigem. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "O enfermeiro identifica fontes seladas de Cobalto-60 históricas em radioterapia e sabe das elevadas medidas de blindagem que exigem."
   },
@@ -3079,9 +3114,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A análise teórica e experimental confirma que Exemplos clínicos incluem a produção de Cobalto-60 a partir de Cobalto-59 estável ($^{59}\\text{Co} + n \\rightarrow ^{60}\\text{Co}$) para teleterapia, e Iodo-131 a partir de Telúrio-130. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "O enfermeiro identifica fontes seladas de Cobalto-60 históricas em radioterapia e sabe das elevadas medidas de blindagem que exigem."
   },
@@ -3098,9 +3133,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "Em física nuclear médica, gerador hospitalar de Tecnécio (gerador de Molibdénio/Tecnécio) explica-se pelo facto de que dispositivo blindado ('vaca de tecnécio') contendo ⁹⁹Mo (pai, T₁/₂ = 66 horas) adsorvido numa coluna de óxido de alumínio; o ⁹⁹Mo decai por emissão β⁻ para ⁹⁹ᵐTc (filho, T₁/₂ = 6 horas). Como o tecnécio tem propriedades químicas diferentes do molibdénio, é facilmente eluído passando uma solução estéril de soro fisiológico a 0,9% (NaCl) através da coluna.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "O enfermeiro ou técnico elui o gerador diariamente em condições estéreis sob campânula de fluxo laminar blindada com chumbo na câmara quente."
   },
@@ -3117,9 +3152,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "A aplicação na enfermagem para gerador hospitalar de Tecnécio (gerador de Molibdénio/Tecnécio) baseia-se no princípio: O enfermeiro ou técnico elui o gerador diariamente em condições estéreis sob campânula de fluxo laminar blindada com chumbo na câmara quente. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "O enfermeiro ou técnico elui o gerador diariamente em condições estéreis sob campânula de fluxo laminar blindada com chumbo na câmara quente."
   },
@@ -3136,9 +3171,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A análise teórica e experimental confirma que Como o tecnécio tem propriedades químicas diferentes do molibdénio, é facilmente eluído passando uma solução estéril de soro fisiológico a 0,9% (NaCl) através da coluna. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "O enfermeiro ou técnico elui o gerador diariamente em condições estéreis sob campânula de fluxo laminar blindada com chumbo na câmara quente."
   },
@@ -3155,9 +3190,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "Em física nuclear médica, controlo de qualidade do eluído: teste de fuga de Molibdénio (breakthrough) explica-se pelo facto de que o ⁹⁹Mo é um emissor beta e gama de longa semivida e muito tóxico se injetado no doente; o eluído de ⁹⁹ᵐTc não pode conter mais de 0,15 kBq de ⁹⁹Mo por MBq de ⁹⁹ᵐTc. O teste é medido num ativímetro (calibrador de dose) usando uma câmara blindada com paredes espessas de chumbo que travam os fotões de 140 keV do Tc e deixam passar apenas os fotões de 740 keV do Mo.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "O enfermeiro confirma que o controlo de qualidade de radiofármacos foi formalmente aprovado antes da administração do radiofármaco por via endovenosa."
   },
@@ -3174,9 +3209,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A aplicação na enfermagem para controlo de qualidade do eluído: teste de fuga de Molibdénio (breakthrough) baseia-se no princípio: O enfermeiro confirma que o controlo de qualidade de radiofármacos foi formalmente aprovado antes da administração do radiofármaco por via endovenosa. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "O enfermeiro confirma que o controlo de qualidade de radiofármacos foi formalmente aprovado antes da administração do radiofármaco por via endovenosa."
   },
@@ -3193,9 +3228,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "A análise teórica e experimental confirma que O teste é medido num ativímetro (calibrador de dose) usando uma câmara blindada com paredes espessas de chumbo que travam os fotões de 140 keV do Tc e deixam passar apenas os fotões de 740 keV do Mo. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "O enfermeiro confirma que o controlo de qualidade de radiofármacos foi formalmente aprovado antes da administração do radiofármaco por via endovenosa."
   },
@@ -3212,9 +3247,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Em física nuclear médica, princípio de aceleração circular no Cíclotron de Lawrence explica-se pelo facto de que utiliza um forte campo magnético estático perpendicular para curvar as partículas carregadas (protões) em trajetórias circulares e um campo elétrico oscilante de alta radiofrequência entre dois elétrodos em forma de 'D' (Dee) para as acelerar a cada meia volta. À medida que ganham energia cinética, as partículas descrevem uma espiral para fora até atingirem o raio exterior com energias de 10 a 20 MeV.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "O feixe de protões de alta energia é ejetado contra alvos específicos para desencadear reações nucleares de transmutação artificial."
   },
@@ -3231,9 +3266,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A aplicação na enfermagem para princípio de aceleração circular no Cíclotron de Lawrence baseia-se no princípio: O feixe de protões de alta energia é ejetado contra alvos específicos para desencadear reações nucleares de transmutação artificial. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "O feixe de protões de alta energia é ejetado contra alvos específicos para desencadear reações nucleares de transmutação artificial."
   },
@@ -3250,9 +3285,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A análise teórica e experimental confirma que À medida que ganham energia cinética, as partículas descrevem uma espiral para fora até atingirem o raio exterior com energias de 10 a 20 MeV. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "O feixe de protões de alta energia é ejetado contra alvos específicos para desencadear reações nucleares de transmutação artificial."
   },
@@ -3269,9 +3304,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "Em física nuclear médica, síntese de Flúor-18 via reação nuclear ¹⁸O(p, n)¹⁸F explica-se pelo facto de que o feixe de protões acelerados no cíclotron atinge um alvo de água enriquecida com Oxigénio-18 ([H₂¹⁸O]); o protão penetra no núcleo do Oxigénio-18 e ejeta um neutrão, transmutando-o em Flúor-18. O Flúor-18 obtido como ião fluoreto [¹⁸F⁻] é imediatamente transportado por tubagens blindadas até ao sintetizador químico robotizado para marcar a desoxiglicose (¹⁸F-FDG).",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "Devido à semivida física do ¹⁸F de apenas 110 minutos, o cíclotron tem de operar diariamente perto dos centros hospitalares de imagiologia PET."
   },
@@ -3288,9 +3323,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A aplicação na enfermagem para síntese de Flúor-18 via reação nuclear ¹⁸O(p, n)¹⁸F baseia-se no princípio: Devido à semivida física do ¹⁸F de apenas 110 minutos, o cíclotron tem de operar diariamente perto dos centros hospitalares de imagiologia PET. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "Devido à semivida física do ¹⁸F de apenas 110 minutos, o cíclotron tem de operar diariamente perto dos centros hospitalares de imagiologia PET."
   },
@@ -3307,9 +3342,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A análise teórica e experimental confirma que O Flúor-18 obtido como ião fluoreto [¹⁸F⁻] é imediatamente transportado por tubagens blindadas até ao sintetizador químico robotizado para marcar a desoxiglicose (¹⁸F-FDG). O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "Devido à semivida física do ¹⁸F de apenas 110 minutos, o cíclotron tem de operar diariamente perto dos centros hospitalares de imagiologia PET."
   },
@@ -3326,9 +3361,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "Em física nuclear médica, produção de outros emissores ultracurtos: ¹¹C, ¹³N e ¹⁵O explica-se pelo facto de que o Carbono-11 tem semivida de 20 minutos, o Azoto-13 de 10 minutos e o Oxigénio-15 de apenas 2 minutos. Para utilizar estes isótopos (como a água marcada com Oxigénio-15 para perfusão cerebral ou amónia com Azoto-13 para fluxo miocárdico), o cíclotron tem de estar instalado obrigatoriamente no próprio hospital.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "O enfermeiro de medicina nuclear coordena a receção cronometrada ao minuto do radiofármaco, com o doente já posicionado na marquesa do tomógrafo PET."
   },
@@ -3345,9 +3380,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "A aplicação na enfermagem para produção de outros emissores ultracurtos: ¹¹C, ¹³N e ¹⁵O baseia-se no princípio: O enfermeiro de medicina nuclear coordena a receção cronometrada ao minuto do radiofármaco, com o doente já posicionado na marquesa do tomógrafo PET. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "O enfermeiro de medicina nuclear coordena a receção cronometrada ao minuto do radiofármaco, com o doente já posicionado na marquesa do tomógrafo PET."
   },
@@ -3364,9 +3399,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A análise teórica e experimental confirma que Para utilizar estes isótopos (como a água marcada com Oxigénio-15 para perfusão cerebral ou amónia com Azoto-13 para fluxo miocárdico), o cíclotron tem de estar instalado obrigatoriamente no próprio hospital. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "O enfermeiro de medicina nuclear coordena a receção cronometrada ao minuto do radiofármaco, com o doente já posicionado na marquesa do tomógrafo PET."
   },
@@ -3383,9 +3418,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "Em física nuclear médica, geradores de radionuclídeos sem cíclotron local: o gerador de ⁶⁸Ge/⁶⁸Ga explica-se pelo facto de que para centros hospitalares que não possuem cíclotron próprio, utilizam-se geradores portáteis onde o Germânio-68 (pai, T₁/₂ = 271 dias) decai gerando Gálio-68 (filho, emissor de positrões com T₁/₂ = 68 minutos). O Gálio-68 é utilizado na marcação de péptidos como o DOTA-TOC para diagnóstico de tumores neuroendócrinos e PSMA para cancro da próstata.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "O enfermeiro administra o radiofármaco de ⁶⁸Ga respeitando a semivida de 68 minutos, promovendo a hidratação e micção frequente para reduzir a dose na bexiga."
   },
@@ -3402,9 +3437,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A aplicação na enfermagem para geradores de radionuclídeos sem cíclotron local: o gerador de ⁶⁸Ge/⁶⁸Ga baseia-se no princípio: O enfermeiro administra o radiofármaco de ⁶⁸Ga respeitando a semivida de 68 minutos, promovendo a hidratação e micção frequente para reduzir a dose na bexiga. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "O enfermeiro administra o radiofármaco de ⁶⁸Ga respeitando a semivida de 68 minutos, promovendo a hidratação e micção frequente para reduzir a dose na bexiga."
   },
@@ -3421,9 +3456,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "A análise teórica e experimental confirma que O Gálio-68 é utilizado na marcação de péptidos como o DOTA-TOC para diagnóstico de tumores neuroendócrinos e PSMA para cancro da próstata. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "O enfermeiro administra o radiofármaco de ⁶⁸Ga respeitando a semivida de 68 minutos, promovendo a hidratação e micção frequente para reduzir a dose na bexiga."
   },
@@ -3440,9 +3475,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Em física nuclear médica, vantagem diagnóstica da tomografia PET sobre a SPECT convencional explica-se pelo facto de que a deteção em coincidência a 180° dos fotões de aniquilação no PET elimina a necessidade de colimadores físicos de chumbo que bloqueiam mais de 99% da radiação útil na SPECT. Isto confere à imagem PET uma sensibilidade centenas de vezes superior e uma resolução espacial subcentimétrica muito mais nítida para detetar micrometástases tumorais.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "O enfermeiro apoia o utente na preparação para o PET-CT oncológico, garantindo o repouso absoluto num quarto calmo e escuro após a injeção da ¹⁸F-FDG para evitar a captação muscular indesejada."
   },
@@ -3459,9 +3494,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A aplicação na enfermagem para vantagem diagnóstica da tomografia PET sobre a SPECT convencional baseia-se no princípio: O enfermeiro apoia o utente na preparação para o PET-CT oncológico, garantindo o repouso absoluto num quarto calmo e escuro após a injeção da ¹⁸F-FDG para evitar a captação muscular indesejada. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "O enfermeiro apoia o utente na preparação para o PET-CT oncológico, garantindo o repouso absoluto num quarto calmo e escuro após a injeção da ¹⁸F-FDG para evitar a captação muscular indesejada."
   },
@@ -3478,9 +3513,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A análise teórica e experimental confirma que Isto confere à imagem PET uma sensibilidade centenas de vezes superior e uma resolução espacial subcentimétrica muito mais nítida para detetar micrometástases tumorais. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "O enfermeiro apoia o utente na preparação para o PET-CT oncológico, garantindo o repouso absoluto num quarto calmo e escuro após a injeção da ¹⁸F-FDG para evitar a captação muscular indesejada."
   },
@@ -3497,9 +3532,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "Em física nuclear médica, paradoxo clássico da partícula alfa presa no núcleo atómico explica-se pelo facto de que pela física clássica, a partícula alfa dentro de um núcleo pesado possui energia cinética de cerca de 4 a 9 MeV, enquanto a barreira de repulsão coulombiana das bordas do núcleo atinge cerca de 25 a 30 MeV. Mecanicamente, seria impossível para a partícula alfa 'saltar por cima' de uma barreira três vezes superior à sua energia, prevendo que nenhum núcleo deveria sofrer decaimento alfa.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "A resolução deste enigma histórico por George Gamow em 1928 foi um dos maiores triunfos da física quântica moderna."
   },
@@ -3516,9 +3551,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A aplicação na enfermagem para paradoxo clássico da partícula alfa presa no núcleo atómico baseia-se no princípio: A resolução deste enigma histórico por George Gamow em 1928 foi um dos maiores triunfos da física quântica moderna. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "A resolução deste enigma histórico por George Gamow em 1928 foi um dos maiores triunfos da física quântica moderna."
   },
@@ -3535,9 +3570,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A análise teórica e experimental confirma que Mecanicamente, seria impossível para a partícula alfa 'saltar por cima' de uma barreira três vezes superior à sua energia, prevendo que nenhum núcleo deveria sofrer decaimento alfa. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "A resolução deste enigma histórico por George Gamow em 1928 foi um dos maiores triunfos da física quântica moderna."
   },
@@ -3554,9 +3589,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "Em física nuclear médica, mecanismo quântico de Tunelamento (Quantum Tunneling) explica-se pelo facto de que como a matéria tem comportamento ondulatório (equação de onda de Schrödinger e comprimento de onda de De Broglie), a função de onda da partícula alfa não se anula na barreira. Existe uma probabilidade matemática finita e não-nula de a função de onda atravessar a barreira de potencial proibida e emergir do outro lado, permitindo que a partícula alfa escape do núcleo.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "Este fenómeno de penetração de barreira quântica é a base física universal de todos os decaimentos alfa espontâneos."
   },
@@ -3573,9 +3608,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "A aplicação na enfermagem para mecanismo quântico de Tunelamento (Quantum Tunneling) baseia-se no princípio: Este fenómeno de penetração de barreira quântica é a base física universal de todos os decaimentos alfa espontâneos. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "Este fenómeno de penetração de barreira quântica é a base física universal de todos os decaimentos alfa espontâneos."
   },
@@ -3592,9 +3627,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A análise teórica e experimental confirma que Existe uma probabilidade matemática finita e não-nula de a função de onda atravessar a barreira de potencial proibida e emergir do outro lado, permitindo que a partícula alfa escape do núcleo. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "Este fenómeno de penetração de barreira quântica é a base física universal de todos os decaimentos alfa espontâneos."
   },
@@ -3611,9 +3646,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "Em física nuclear médica, Lei de Geiger-Nuttall e a dependência exponencial da semivida explica-se pelo facto de que a probabilidade de tunelamento quântico depende de forma extremamente sensível da energia da partícula alfa e da espessura da barreira coulombiana. Uma pequena variação na energia alfa (de 4 para 8 MeV) faz a semivida física do elemento radioativo desabar de milhares de milhões de anos (como no ²³⁸U) para escassos microssegundos (como no ²¹⁴Po).",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "Esta dependência exponencial explica por que diferentes emissores alfa apresentam tempos de vida tão vastamente heterogéneos na natureza."
   },
@@ -3630,9 +3665,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A aplicação na enfermagem para Lei de Geiger-Nuttall e a dependência exponencial da semivida baseia-se no princípio: Esta dependência exponencial explica por que diferentes emissores alfa apresentam tempos de vida tão vastamente heterogéneos na natureza. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "Esta dependência exponencial explica por que diferentes emissores alfa apresentam tempos de vida tão vastamente heterogéneos na natureza."
   },
@@ -3649,9 +3684,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "A análise teórica e experimental confirma que Uma pequena variação na energia alfa (de 4 para 8 MeV) faz a semivida física do elemento radioativo desabar de milhares de milhões de anos (como no ²³⁸U) para escassos microssegundos (como no ²¹⁴Po). O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "Esta dependência exponencial explica por que diferentes emissores alfa apresentam tempos de vida tão vastamente heterogéneos na natureza."
   },
@@ -3668,9 +3703,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Em física nuclear médica, natureza intrinsecamente estocástica e probabilística da desintegração radioativa explica-se pelo facto de que é absolutamente impossível prever em que momento exato um núcleo atómico instável específico e individual irá desintegrar-se. Cada núcleo tem uma probabilidade constante de decair por unidade de tempo ($\\lambda$, constante de decaimento), independentemente da sua idade anterior ('os núcleos atómicos não envelhecem').",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "A física nuclear lida rigorosamente com leis estatísticas de grandes números de átomos ($N(t) = N_0 \\cdot e^{-\\lambda t}$)."
   },
@@ -3687,9 +3722,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A aplicação na enfermagem para natureza intrinsecamente estocástica e probabilística da desintegração radioativa baseia-se no princípio: A física nuclear lida rigorosamente com leis estatísticas de grandes números de átomos ($N(t) = N_0 \\cdot e^{-\\lambda t}$). Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "A física nuclear lida rigorosamente com leis estatísticas de grandes números de átomos ($N(t) = N_0 \\cdot e^{-\\lambda t}$)."
   },
@@ -3706,9 +3741,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A análise teórica e experimental confirma que Cada núcleo tem uma probabilidade constante de decair por unidade de tempo ($\\lambda$, constante de decaimento), independentemente da sua idade anterior ('os núcleos atómicos não envelhecem'). O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "A física nuclear lida rigorosamente com leis estatísticas de grandes números de átomos ($N(t) = N_0 \\cdot e^{-\\lambda t}$)."
   },
@@ -3725,9 +3760,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "Em física nuclear médica, relevância clínica da natureza estocástica da radiação na dosimetria explica-se pelo facto de que como o decaimento e a subsequente interação com o DNA celular são processos aleatórios estocásticos governados pela probabilidade estatística quântica, qualquer dose pode teoricamente induzir uma alteração genética. Não existe uma dose mágica abaixo da qual a probabilidade de dano estocástico seja garantidamente zero.",
     "distractorAnalysis": [
-      "A primeira opção é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
-      "A segunda opção é incorreta; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
-      "A terceira opção confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
+      "Está incorreta: é uma metáfora absurda e biologicamente incoerente; as forças nucleares são subatómicas fundamentais.",
+      "Está incorreta porque ; a força da gravidade é 10³⁸ vezes mais fraca que a força nuclear e irrelevante no núcleo.",
+      "Está incorreta: confunde fenómenos macroscópicos climatéricos com forças quânticas fundamentais da natureza."
     ],
     "nursingApplication": "Esta constatação física reforça a responsabilidade profissional do enfermeiro em aplicar rigorosamente a radioproteção ALARA em todos os atos clínicos diários."
   },
@@ -3744,9 +3779,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A aplicação na enfermagem para relevância clínica da natureza estocástica da radiação na dosimetria baseia-se no princípio: Esta constatação física reforça a responsabilidade profissional do enfermeiro em aplicar rigorosamente a radioproteção ALARA em todos os atos clínicos diários. Esta prática garante a segurança radiológica do doente e da equipa.",
     "distractorAnalysis": [
-      "A primeira opção é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
-      "A segunda opção é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
-      "A terceira opção é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
+      "Está incorreta: é perigosa e ilegal; os radiofármacos exigem blindagens de chumbo ou tungsténio dimensionadas para o tipo de emissão.",
+      "Está incorreta: é absurda; a radioatividade é uma propriedade nuclear interna imutável por lavagens ou métodos químicos.",
+      "Está incorreta: é pseudocientífica; campos magnéticos estáticos comuns não revertem o decaimento nuclear espontâneo."
     ],
     "nursingApplication": "Esta constatação física reforça a responsabilidade profissional do enfermeiro em aplicar rigorosamente a radioproteção ALARA em todos os atos clínicos diários."
   },
@@ -3763,9 +3798,9 @@ const TOPIC_6_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "A análise teórica e experimental confirma que Não existe uma dose mágica abaixo da qual a probabilidade de dano estocástico seja garantidamente zero. O domínio destes conceitos permite ao enfermeiro compreender as bases da física nuclear hospitalar.",
     "distractorAnalysis": [
-      "A primeira opção viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
-      "A segunda opção viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
-      "A terceira opção inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
+      "Está incorreta: viola o conceito de defeito de massa e introduz ordens de magnitude macroscópicas erróneas.",
+      "Está incorreta: viola a Lei de Coulomb: cargas do mesmo sinal repelem-se com força que aumenta com o inverso do quadrado da distância.",
+      "Está incorreta: inverte totalmente a física nuclear: o Ferro-56 tem a maior energia de ligação por nucleão e é o mais estável."
     ],
     "nursingApplication": "Esta constatação física reforça a responsabilidade profissional do enfermeiro em aplicar rigorosamente a radioproteção ALARA em todos os atos clínicos diários."
   }

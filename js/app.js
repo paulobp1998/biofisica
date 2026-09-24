@@ -746,11 +746,37 @@ document.addEventListener('DOMContentLoaded', () => {
       <p><strong>Por que está certa a opção correta:</strong> ${result.explanation}</p>
     `;
 
+    function formatDistractorText(rawText) {
+      if (!rawText) return 'Está incorreta no contexto desta questão.';
+      let t = rawText.trim();
+      // Remover qualquer referência prévia a letras de opções geradas antes do baralhamento
+      t = t.replace(/^(?:As\s+)?Opç(?:ão|ões)\s+[A-D](?:\s*,\s*[A-D])*(?:\s+e\s+(?:Opção\s+)?[A-D])?\s*/i, '');
+      t = t.replace(/^(?:A\s+)?(?:primeira|segunda|terceira)\s+opção\s+(?:incorreta\s+)?/i, '');
+      t = t.replace(/^(?:A\s+)?Opção\s+[A-D]\s*/i, '');
+      t = t.replace(/^(?:Opção\s+incorreta\s*:?\s*)/i, '');
+      t = t.replace(/^[:\-\s]+/, '');
+
+      const matchPq = t.match(/^(?:está\s+(?:in)?correta|está\s+errada|é\s+(?:in)?correta|é\s+falsa|é\s+errada)\s*(?:porque\s+|pois\s+|já\s+que\s+)?(.*)/i);
+      if (matchPq) {
+        const body = matchPq[1].trim();
+        return body ? `Está incorreta porque ${body[0].toLowerCase() + body.slice(1)}` : 'Está incorreta no contexto desta questão.';
+      } else if (/^(?:porque|pois|já que)\s+/i.test(t)) {
+        return `Está incorreta ${t[0].toLowerCase() + t.slice(1)}`;
+      } else if (t.toLowerCase().startsWith('está') || t.toLowerCase().startsWith('é incorreta')) {
+        return t;
+      } else if (t.startsWith('(')) {
+        return `Está incorreta: ${t}`;
+      } else {
+        return `Está incorreta: ${t[0].toLowerCase() + t.slice(1)}`;
+      }
+    }
+
     let distractorsHtml = '<strong>Análise detalhada das restantes opções:</strong><ul>';
     const letters = ['A', 'B', 'C', 'D'];
     result.options.forEach((opt, idx) => {
       if (idx !== result.correctIndex && result.distractorAnalysis[idx]) {
-        distractorsHtml += `<li><strong>Opção ${letters[idx]}:</strong> ${result.distractorAnalysis[idx]}</li>`;
+        const cleanExplanation = formatDistractorText(result.distractorAnalysis[idx]);
+        distractorsHtml += `<li><strong>Opção ${letters[idx]}:</strong> ${cleanExplanation}</li>`;
       }
     });
     distractorsHtml += '</ul>';

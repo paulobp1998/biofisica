@@ -110,7 +110,10 @@ class QuizEngine {
       } else {
         // Determina o índice correspondente no array de distratores original
         const distractorOrigIdx = origIdx > q.correctIndex ? origIdx - 1 : origIdx;
-        shuffledDistractorAnalysis[newIdx] = q.distractorAnalysis[distractorOrigIdx];
+        const analysis = (q.distractorAnalysis && q.distractorAnalysis.length > 0)
+          ? (q.distractorAnalysis[distractorOrigIdx] || q.distractorAnalysis[0])
+          : 'Está incorreta no contexto desta questão.';
+        shuffledDistractorAnalysis[newIdx] = analysis;
       }
     });
 
