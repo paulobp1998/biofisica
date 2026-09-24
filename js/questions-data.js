@@ -73,7 +73,7 @@ const TOPICS_DATA = [
 ];
 
 
-// Agregação de todas as 400 questões científicas divididas por módulo
+// Agregação de todas as 1.600 questões científicas divididas por módulo (200 por tópico)
 const QUESTIONS_DATA = [
   ...TOPIC_1_QUESTIONS,
   ...TOPIC_2_QUESTIONS,

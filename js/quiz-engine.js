@@ -8,10 +8,14 @@ class QuizEngine {
     this.currentIndex = 0;
     this.userAnswers = [];
     this.isAnswered = false;
-    this.mode = 'topic'; // 'topic' ou 'exam'
+    this.mode = 'topic'; // 'topic', 'exam' ou 'custom'
+    this.feedbackMode = 'immediate'; // 'immediate' (Treino) ou 'delayed' (Frequência Real)
     this.activeTopicId = null;
+    this.customTitle = null;
     this.audioEnabled = true;
     this.audioCtx = null;
+    this.timerDuration = 0; // segundos
+    this.startTime = null;
   }
 
   // Inicializa o contexto de áudio web (sem ficheiros externos)
@@ -58,6 +62,29 @@ class QuizEngine {
     }
   }
 
+  playNeutralTap() {
+    if (!this.audioEnabled) return;
+    try {
+      this.initAudio();
+      if (!this.audioCtx) return;
+      if (this.audioCtx.state === 'suspended') {
+        this.audioCtx.resume();
+      }
+      const osc = this.audioCtx.createOscillator();
+      const gain = this.audioCtx.createGain();
+      osc.connect(gain);
+      gain.connect(this.audioCtx.destination);
+      const now = this.audioCtx.currentTime;
+      osc.frequency.setValueAtTime(440, now);
+      gain.gain.setValueAtTime(0.05, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.08);
+      osc.start(now);
+      osc.stop(now + 0.08);
+    } catch (e) {
+      // Ignorar erros de áudio
+    }
+  }
+
   // Algoritmo de baralhamento de Fisher-Yates
   shuffleArray(array) {
     const arr = [...array];
@@ -99,36 +126,68 @@ class QuizEngine {
     };
   }
 
-  // Inicia um teste focado num tópico específico
-  startTopicQuiz(topicId) {
+  // Inicia um teste focado num tópico específico com suporte a quantidade personalizada e modo
+  startTopicQuiz(topicId, count = 25, feedbackMode = 'immediate', timerSeconds = 0) {
     this.mode = 'topic';
+    this.feedbackMode = feedbackMode;
     this.activeTopicId = topicId;
+    this.customTitle = null;
+    this.timerDuration = timerSeconds;
+    this.startTime = Date.now();
+
     const rawQuestions = QUESTIONS_DATA.filter(q => q.topicId === topicId);
-    this.currentQuestions = this.shuffleArray(rawQuestions).map(q => this.prepareQuestion(q));
+    const shuffled = this.shuffleArray(rawQuestions);
+    const selected = (count && count > 0 && count < shuffled.length) ? shuffled.slice(0, count) : shuffled;
+    this.currentQuestions = selected.map(q => this.prepareQuestion(q));
     this.currentIndex = 0;
     this.userAnswers = [];
     this.isAnswered = false;
     return this.getCurrentState();
   }
 
-  // Inicia uma simulação global de exame (20 perguntas equilibradas de todos os tópicos = escala 0 a 20 valores)
-  startExamSimulation(numQuestions = 20) {
+  // Inicia uma simulação global de exame (20 ou 40 perguntas equilibradas de todos os tópicos)
+  startExamSimulation(numQuestions = 20, feedbackMode = 'immediate', timerSeconds = 0) {
     this.mode = 'exam';
+    this.feedbackMode = feedbackMode;
     this.activeTopicId = null;
+    this.customTitle = null;
+    this.timerDuration = timerSeconds;
+    this.startTime = Date.now();
+
+    const perTopic = Math.floor(numQuestions / TOPICS_DATA.length);
     let pool = [];
     TOPICS_DATA.forEach(t => {
       const topicQuestions = QUESTIONS_DATA.filter(q => q.topicId === t.id);
       const shuffled = this.shuffleArray(topicQuestions);
-      // Pelo menos 2 de cada um dos 8 tópicos (= 16 questões garantidas)
-      pool.push(...shuffled.slice(0, 2));
+      pool.push(...shuffled.slice(0, perTopic));
     });
-    // Adiciona mais 4 questões aleatórias de tópicos distintos para perfazer exatamente 20 questões
-    const remaining = QUESTIONS_DATA.filter(q => !pool.some(p => p.id === q.id));
-    const extra = this.shuffleArray(remaining).slice(0, 4);
-    const selected = this.shuffleArray([...pool, ...extra]);
+    const needed = numQuestions - pool.length;
+    if (needed > 0) {
+      const remaining = QUESTIONS_DATA.filter(q => !pool.some(p => p.id === q.id));
+      const extra = this.shuffleArray(remaining).slice(0, needed);
+      pool.push(...extra);
+    }
+    const selected = this.shuffleArray(pool);
 
     // Baralha a ordem final do exame
     this.currentQuestions = selected.map(q => this.prepareQuestion(q));
+    this.currentIndex = 0;
+    this.userAnswers = [];
+    this.isAnswered = false;
+    return this.getCurrentState();
+  }
+
+  // Inicia um teste customizado (ex: Caderno de Erros ou Marcadas)
+  startCustomQuiz(questions, title = 'Treino Personalizado', feedbackMode = 'immediate', timerSeconds = 0) {
+    this.mode = 'custom';
+    this.feedbackMode = feedbackMode;
+    this.activeTopicId = null;
+    this.customTitle = title;
+    this.timerDuration = timerSeconds;
+    this.startTime = Date.now();
+
+    const shuffled = this.shuffleArray(questions);
+    this.currentQuestions = shuffled.map(q => this.prepareQuestion(q));
     this.currentIndex = 0;
     this.userAnswers = [];
     this.isAnswered = false;
@@ -151,7 +210,10 @@ class QuizEngine {
       currentIndex: this.currentIndex,
       totalQuestions: this.currentQuestions.length,
       mode: this.mode,
+      feedbackMode: this.feedbackMode,
+      customTitle: this.customTitle,
       topic: topic,
+      questionId: q.originalId,
       question: q.question,
       options: q.options,
       isAnswered: this.isAnswered,
@@ -160,10 +222,34 @@ class QuizEngine {
   }
 
   submitAnswer(selectedIndex) {
-    if (this.isAnswered) return null;
-
     const currentQ = this.currentQuestions[this.currentIndex];
     const isCorrect = (selectedIndex === currentQ.correctIndex);
+
+    if (this.feedbackMode === 'delayed') {
+      // Modo Frequência Real (Feedback retardado, seleção alterável antes de avançar)
+      this.playNeutralTap();
+      this.isAnswered = true;
+      const answerRecord = {
+        questionId: currentQ.originalId,
+        topicId: currentQ.topicId,
+        questionText: currentQ.question,
+        options: currentQ.options,
+        selectedIndex: selectedIndex,
+        correctIndex: currentQ.correctIndex,
+        isCorrect: isCorrect,
+        explanation: currentQ.explanation,
+        distractorAnalysis: currentQ.distractorAnalysis,
+        nursingApplication: currentQ.nursingApplication
+      };
+      this.userAnswers[this.currentIndex] = answerRecord;
+      return {
+        isDelayed: true,
+        selectedIndex: selectedIndex
+      };
+    }
+
+    // Modo Treino (Feedback Imediato)
+    if (this.isAnswered) return null;
     this.isAnswered = true;
 
     this.playBeep(isCorrect);
@@ -192,6 +278,29 @@ class QuizEngine {
     return this.getCurrentState();
   }
 
+  // Finalização imediata forçada (ex: quando o cronómetro chega a 00:00)
+  forceFinishExam() {
+    for (let i = 0; i < this.currentQuestions.length; i++) {
+      if (!this.userAnswers[i]) {
+        const q = this.currentQuestions[i];
+        this.userAnswers[i] = {
+          questionId: q.originalId,
+          topicId: q.topicId,
+          questionText: q.question,
+          options: q.options,
+          selectedIndex: -1, // Sem resposta
+          correctIndex: q.correctIndex,
+          isCorrect: false,
+          explanation: q.explanation,
+          distractorAnalysis: q.distractorAnalysis,
+          nursingApplication: q.nursingApplication
+        };
+      }
+    }
+    this.currentIndex = this.currentQuestions.length;
+    return this.calculateSummary();
+  }
+
   calculateSummary() {
     const total = this.userAnswers.length;
     const correctCount = this.userAnswers.filter(a => a.isCorrect).length;
@@ -199,6 +308,13 @@ class QuizEngine {
     
     // Escala Portuguesa do Ensino Superior: 0 a 20 valores
     const grade20 = total > 0 ? Number(((correctCount / total) * 20).toFixed(1)) : 0;
+
+    const elapsedSeconds = this.startTime ? Math.round((Date.now() - this.startTime) / 1000) : 0;
+    const minutes = Math.floor(elapsedSeconds / 60);
+    const seconds = elapsedSeconds % 60;
+    const timeFormatted = `${minutes}m ${seconds.toString().padStart(2, '0')}s`;
+
+    const incorrectIds = this.userAnswers.filter(a => !a.isCorrect).map(a => a.questionId);
 
     let gradeClassification = "";
     let badgeClass = "";
@@ -238,12 +354,18 @@ class QuizEngine {
       totalQuestions: total,
       correctCount: correctCount,
       incorrectCount: total - correctCount,
+      incorrectIds: incorrectIds,
       percentage: percentage,
       grade20: grade20,
       classification: gradeClassification,
       badgeClass: badgeClass,
       topicBreakdown: topicBreakdown,
-      answers: this.userAnswers
+      answers: this.userAnswers,
+      feedbackMode: this.feedbackMode,
+      mode: this.mode,
+      customTitle: this.customTitle,
+      elapsedSeconds: elapsedSeconds,
+      timeFormatted: timeFormatted
     };
   }
 }
