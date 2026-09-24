@@ -1,8 +1,4 @@
-/**
- * Tópico 5: Radiações, Raios X, Aplicações Terapêuticas e Diagnóstico
- * 200 Questões Clínicas Rigorosas para o 1.º Ano de Enfermagem (IDs 5001 a 5200)
- */
-
+// Tópico 5: Radiações, Raios X, Aplicações Terapêuticas e Diagnóstico
 const TOPIC_5_QUESTIONS = [
   {
     "id": 5001,
@@ -884,16 +880,16 @@ const TOPIC_5_QUESTIONS = [
     "question": "O conceito de 'Quilovoltagem de Pico' (kVp) no comando de controlo do aparelho de Raios X determina primariamente qual característica física do feixe de radiação?",
     "options": [
       "A diferença de potencial elétrico aplicada entre o cátodo e o ânodo, determinando a energia cinética máxima dos eletrões e, consequentemente, a energia e o poder de PENETRAÇÃO dos fotões X emitidos (qualidade do feixe).",
-      "A corrente que atravessa o filamento, determinando apenas o número de fotões emitidos.",
-      "A velocidade de rotação da mesa cirúrgica em rotações por minuto.",
-      "A cor da luz piloto que se acende no painel de comando."
+      "A corrente elétrica que atravessa o filamento do cátodo, determinando unicamente a quantidade total de fotões emitidos sem alterar a sua penetração máxima.",
+      "A taxa de dose absorvida instantânea nos tecidos moles do doente medida exclusivamente em Grays por segundo.",
+      "O tempo total de exposição da ampola de Raios X medido diretamente em milissegundos pelo cronómetro de disparo."
     ],
     "correctIndex": 0,
     "explanation": "A quilovoltagem de pico (kVp, variando clinicamente de 40 kV em extremidades até 150 kV em tórax/TAC) estabelece a diferença de potencial elétrico acelerador: um eletrão acelerado por 100 kV adquire 100 keV de energia cinética. Quanto maior o kVp: maior é a energia máxima dos fotões Bremsstrahlung, maior é a sua frequência, menor o seu comprimento de onda e maior a sua PENETRÂNCIA através de tecidos densos ('qualidade' do feixe). Em contrapartida, o produto corrente-tempo (mAs) controla a 'quantidade' total de fotões gerados.",
     "distractorAnalysis": [
-      "Está incorreta: confunde kVp com os miliamperes-segundo (mAs, que governa a quantidade de fotões).",
-      "Está incorreta: referem atributos mecânicos e visuais secundários irrelevantes para a física quântica do feixe.",
-      "Está incorreta: referem atributos mecânicos e visuais secundários irrelevantes para a física quântica do feixe."
+      "Está incorreta porque a corrente do filamento é governada pelos miliamperes (mA), que controlam o número de eletrões emitidos por efeito termoiónico (quantidade do feixe).",
+      "Está incorreta porque a taxa de dose absorvida é uma grandeza dosimétrica resultante nos tecidos biológicos, não a definição eletrofísica do comando de kVp.",
+      "Está incorreta porque o tempo de exposição é uma grandeza temporal regulada pelo temporizador, que multiplicada pelos mA determina os miliamperes-segundo (mAs)."
     ],
     "nursingApplication": "Compreender que o kVp governa a penetração ajuda o enfermeiro a antecipar ajustes técnicos em doentes acamados de grande porte físico: ao radiografar um doente com derrame pleural massivo ou obesidade mórbida no leito, elevar o kVp é a única forma física de permitir que os fotões atravessem a densa camada líquida e cheguem ao detetor com contraste útil."
   },
