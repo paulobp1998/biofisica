@@ -4,14 +4,14 @@ Plataforma educativa online, interativa, moderna e **100% gratuita para sempre**
 
 ---
 
-## 🎯 Conteúdos Programáticos (8 Tópicos • 1.600 Questões Clínicas Certificadas)
+## 🎯 Conteúdos Programáticos (8 Tópicos • 2.400 Questões Clínicas Certificadas)
 
-O banco global contém exatamente **200 questões clínicas por tópico** (**total de 1.600 questões rigorosas**), concebidas estritamente a partir do programa curricular oficial, sem alucinações e com fundamentação biofísica comprovada aliada à prática clínica diária de enfermagem:
+O banco global contém **2.400 questões clínicas rigorosas** (com **1.000 questões dedicadas no Tópico 1** e 200 questões por tópico nos restantes módulos 2 a 8), concebidas estritamente a partir do programa curricular oficial, sem alucinações e com fundamentação biofísica comprovada aliada à prática clínica diária de enfermagem:
 
-1. **Força, Estado de Equilíbrio e Equilíbrio de Forças (IDs 1001 a 1200 • 200 Questões):**
-   - Grandezas vetoriais, 1.ª, 2.ª e 3.ª Leis de Newton, condições de equilíbrio de forças e momento nulo.
+1. **Força, Estado de Equilíbrio, Atrito, Tração e Pressão (IDs 1001 a 2000 • 1.000 Questões):**
+   - Grandezas vetoriais, 1.ª, 2.ª e 3.ª Leis de Newton, condições de equilíbrio estático e momento de forças.
    - Biofísica da pressão mecânica (P = F / A) nas proeminências ósseas e prevenção de lesões por pressão (úlceras/escaras).
-   *(Nota: em conformidade com as diretrizes curriculares, foram totalmente excluídos temas de centro de gravidade e ergonomia).*
+   - Forças de atrito estático e cinético, forças de cisalhamento dérmico, sistemas de tração esquelética e cutânea (Buck, Russell, Thomas-Splint), contratração (Trendelenburg) e ergonomia hospitalar.
 2. **Alavancas, Elasticidade dos Corpos e Resistência dos Materiais (IDs 2001 a 2200 • 200 Questões):**
    - Classes de alavancas anatómicas (1.ª, 2.ª e 3.ª classe) e instrumentos cirúrgicos (pinças, tesouras, porta-agulhas).
    - Vantagem mecânica de força e ganho de amplitude de movimento.
@@ -95,7 +95,7 @@ O banco global contém exatamente **200 questões clínicas por tópico** (**tot
   - **Modo Treino:** Explicações imediatas e detalhadas após cada clique, sem pressão de tempo.
   - **Modo Simulação Real:** Condições oficiais de frequência universitária (sem consulta durante a prova, seleções neutras, temporizador decrescente configurável e nota de 0 a 20 valores com revisão detalhada só no final).
 - **🔍 Motor de Pesquisa Rápida e Glossário Clínico [2E]:**
-  - Pesquisa instantânea em tempo real (< 5ms) nas 1.600 questões, resumos teóricos e aplicações de enfermagem.
+  - Pesquisa instantânea em tempo real (< 5ms) nas 2.400 questões, resumos teóricos e aplicações de enfermagem.
   - Atalho global de teclado (`Ctrl+K` ou `Cmd+K`) com destaque visual (*highlight*) das palavras-chave encontradas.
   - Acesso direto para praticar ou marcar qualquer questão a partir da própria pesquisa!
 - **🏆 Conquistas, Medalhas de Mérito e Streak Diário (🔥) [3F]:**
@@ -106,7 +106,7 @@ O banco global contém exatamente **200 questões clínicas por tópico** (**tot
   - Cabeçalho formal da Escola Superior de Enfermagem (Nome, Data, Turma), círculos de preenchimento manual e opção de Folha de Soluções com quebra de página automática no final.
 - **🔤 Controlo de Tamanho de Fonte (A- / A+) [4H]:**
   - Botões de ajuste imediato na barra de navegação superior para máxima legibilidade e conforto visual em smartphones, tablets e computadores.
-- **Configuração Flexível da Sessão:** Escolha entre 10, 25, 50 ou 200 questões por tópico, ou exames gerais de 20 e 40 questões.
+- **Configuração Flexível da Sessão:** Escolha entre 10, 25, 50 ou maratona completa do tópico (1.000 questões no Tópico 1 e 200 nos restantes tópicos), ou exames gerais de 20 e 40 questões.
 - **Baralhamento Inteligente (Fisher-Yates):** Em cada nova tentativa, a ordem das perguntas e a posição das 4 opções (A, B, C, D) são reordenadas dinamicamente.
 
 ---

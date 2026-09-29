@@ -440,10 +440,10 @@ document.addEventListener('DOMContentLoaded', () => {
           <span>Estudo Aprofundado • ~30 min</span>
         </div>
       </button>
-      <button class="session-option-card" data-count="200">
+      <button class="session-option-card" data-count="${qCount}">
         <span class="session-icon">🏆</span>
         <div class="session-info">
-          <strong>200 Questões</strong>
+          <strong>${qCount} Questões</strong>
           <span>Maratona Completa do Tópico</span>
         </div>
       </button>

@@ -1,21 +1,25 @@
-// Tópico 2: Alavancas, Elasticidade dos Corpos e Resistência dos Materiais
+/**
+ * Tópico 2: Alavancas, Elasticidade dos Corpos e Resistência dos Materiais
+ * 200 Questões Clínicas Rigorosas para o 1.º Ano de Enfermagem (IDs 2001 a 2200)
+ */
+
 const TOPIC_2_QUESTIONS = [
   {
     "id": 2001,
     "topicId": 2,
     "question": "O momento de uma força (torque, τ) mede a capacidade de uma força produzir rotação de um corpo em torno de um eixo fixo ou fulcro. Matematicamente, como se expressa o módulo do momento de uma força?",
     "options": [
-      "τ = F · d · sen(θ), onde F é o módulo da força, d a distância ao eixo e θ o ângulo entre a linha de ação da força e o braço de alavanca.",
-      "τ = F / d, onde a força é inversamente proporcional à distância perpendicular ao fulcro.",
-      "τ = m · g · d², sendo diretamente proporcional ao quadrado da distância ao fulcro.",
-      "τ = F · a · cos(θ), onde a é a aceleração linear transmitida ao corpo."
+      "τ = F / d · cos(θ), onde a força é dividida pela distância perpendicular ao fulcro articular do membro.",
+      "τ = F · d · sen(θ), onde F é o módulo da força, d a distância ao eixo e θ o ângulo entre a força e o braço.",
+      "τ = m · g · d², sendo diretamente proporcional ao quadrado da distância geométrica ao ponto de apoio.",
+      "τ = F · a · sen(θ), onde a é a aceleração linear instantânea transmitida ao segmento esquelético móvel."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "O momento de uma força (ou torque) é uma grandeza vetorial cujo módulo é dado por τ = F · d · sen(θ) (ou τ = F · b, onde b = d · sen(θ) é o braço de alavanca, ou seja, a distância perpendicular do eixo de rotação à linha de ação da força). A sua unidade no Sistema Internacional é o Newton-metro (N·m).",
     "distractorAnalysis": [
-      "Está incorreta: confunde momento com a fórmula da pressão ou gradiente de força; dividir força pela distância não tem significado físico de torque.",
-      "Está incorreta: introduz incorretamente uma dependência quadrática na distância (d²), o que violaria a linearidade do momento.",
-      "Está incorreta: utiliza incorretamente a aceleração e a função cosseno, quando o torque é maximizado quando a força é perpendicular (θ = 90°, sen(90°) = 1)."
+      "Está incorreta: o momento de uma força é o produto da força pelo braço (F · d) e não a sua divisão.",
+      "Está incorreta: o torque varia linearmente com a distância (d) e não com o seu quadrado (d²).",
+      "Está incorreta: o torque depende da força aplicada e do braço de alavanca e não da aceleração linear pura."
     ],
     "nursingApplication": "Na manipulação de manivelas de camas articuladas manuais, válvulas de garrafas de oxigénio medicinal ou chaves de rodas de macas, aplicar a força perpendicularmente à haste e na sua extremidade mais distante do fulcro maximiza o braço de alavanca, reduzindo drasticamente o esforço muscular exigido do enfermeiro."
   },
@@ -24,17 +28,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Para que um corpo extenso se encontre em equilíbrio estático absoluto (sem translação nem rotação), quais são as duas condições mecânicas fundamentais que devem ser simultaneamente satisfeitas?",
     "options": [
-      "A resultante das forças externas deve ser nula (∑F = 0) e a soma vetorial de todos os momentos de força em relação a qualquer ponto deve ser nula (∑τ = 0).",
-      "A velocidade linear do corpo deve ser constante e positiva, independentemente da soma dos momentos.",
-      "Apenas a resultante das forças deve ser nula (∑F = 0), pois a ausência de translação garante automaticamente a ausência de rotação.",
-      "A aceleração angular deve ser constante e diferente de zero para compensar a gravidade."
+      "A velocidade linear do corpo deve ser constante e positiva, independentemente do somatório dos momentos de torção.",
+      "Apenas a resultante das forças deve ser nula (∑F = 0), pois a ausência de translação anula automaticamente a rotação.",
+      "A resultante das forças externas deve ser nula (∑F = 0) e a soma de todos os momentos de força deve ser nula (∑τ = 0).",
+      "A aceleração angular deve ser estritamente constante e diferente de zero para contrabalançar o efeito da gravidade."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "O equilíbrio estático de um corpo rígido exige duas condições independentes: 1) Equilíbrio translacional: a soma vetorial de todas as forças externas deve ser zero (∑F = 0), garantindo aceleração linear nula (a = 0); 2) Equilíbrio rotacional: a soma vetorial dos momentos de força em relação a qualquer eixo de rotação deve ser zero (∑τ = 0), garantindo aceleração angular nula (α = 0).",
     "distractorAnalysis": [
-      "Está incorreta: descreve um movimento retilíneo uniforme ou equilíbrio dinâmico, mas ignora o requisito estático e a condição de momentos nulos.",
-      "Está incorreta porque um par de forças de igual intensidade e sentidos opostos (binário) tem resultante de forças nula, mas produz rotação pura (torque não-nulo).",
-      "Está incorreta: indica aceleração angular não-nula, o que causaria rotação acelerada contínua, impossibilitando o equilíbrio estático."
+      "Está incorreta: velocidade constante não nula caracteriza movimento e não equilíbrio estático absoluto de repouso.",
+      "Está incorreta: um corpo pode ter ∑F = 0 e sofrer rotação acelerada se houver um binário de forças com ∑τ ≠ 0.",
+      "Está incorreta: aceleração angular não nula (α ≠ 0) significa desequilíbrio rotacional e rotação acelerada."
     ],
     "nursingApplication": "Na montagem de sistemas de tração ortopédica contínua (como a tração esquelética de Thomas ou de Russell num doente com fratura de fémur), o alinhamento dos cabos, polias e contrapesos tem de assegurar simultaneamente ∑F = 0 e ∑τ = 0 no membro, impedindo rotações indesejadas do foco de fratura."
   },
@@ -43,17 +47,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "A Vantagem Mecânica (VM) de um sistema de alavancas é definida teoricamente como a razão entre:",
     "options": [
-      "A força de resistência superada e a força de potência aplicada (VM = F_R / F_P), que no equilíbrio ideal é igual à razão entre o braço de potência e o braço de resistência (d_P / d_R).",
-      "A potência metabólica consumida pelo músculo e o peso do segmento corporal mobilizado.",
-      "O braço de resistência dividido pelo braço de potência (VM = d_R / d_P).",
-      "A aceleração desenvolvida pela carga e a aceleração gravitacional terrestre."
+      "A potência metabólica consumida pelo músculo dividida pelo peso do segmento corporal mobilizado no espaço.",
+      "O quociente entre o braço de resistência e o braço de potência (VM = d_R / d_P), expressando o ganho de força.",
+      "A aceleração angular desenvolvida pela carga a dividir pela aceleração da gravidade terrestre de 9,8 m/s².",
+      "A razão entre a força de resistência e a força de potência (VM = F_R / F_P = d_P / d_R) em equilíbrio estático."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "A Vantagem Mecânica (VM) expressa a amplificação da força num sistema mecânico: VM = F_R / F_P. Pelo princípio dos momentos no equilíbrio (F_P · d_P = F_R · d_R), tem-se idealmente VM = d_P / d_R. Se VM > 1, o sistema poupa força (exige menos força motora do que a carga); se VM < 1, o sistema perde em força mas ganha proporcionalmente em velocidade e amplitude de movimento.",
     "distractorAnalysis": [
-      "Está incorreta: confunde vantagem mecânica com rendimento metabólico muscular.",
-      "Está incorreta: inverte a fração geométrica; d_R / d_P corresponderia ao inverso da vantagem mecânica.",
-      "Está incorreta: inventa uma relação entre acelerações sem qualquer fundamento físico no estudo de alavancas estáticas."
+      "Está incorreta: confunde vantagem mecânica estática com o rendimento ou consumo bioenergético muscular.",
+      "Está incorreta: inverte a fração: a vantagem mecânica ideal é d_P / d_R e não d_R / d_P.",
+      "Está incorreta: a vantagem mecânica é uma razão geométrica ou estática de forças e não de acelerações."
     ],
     "nursingApplication": "Compreender a vantagem mecânica permite ao enfermeiro escolher o instrumento clínico adequado: um cortador de gesso ou alicate cirúrgico com cabos compridos e mandíbulas curtas (d_P >> d_R) proporciona VM >> 1, permitindo cortar materiais duros com modesta força manual."
   },
@@ -62,17 +66,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Numa alavanca de 1.ª classe (interfixa), qual é a disposição geométrica relativa entre o ponto de apoio (fulcro), o ponto de aplicação da potência (força motora) e a resistência (carga)?",
     "options": [
-      "O ponto de apoio (fulcro) localiza-se entre o ponto de aplicação da potência e o da resistência.",
-      "A resistência situa-se obrigatoriamente entre o ponto de apoio e a potência.",
-      "A potência situa-se obrigatoriamente entre o ponto de apoio e a resistência.",
-      "O ponto de apoio coincide exatamente com o centro de massa da carga, sem necessidade de potência."
+      "O ponto de apoio (fulcro) localiza-se entre o ponto de aplicação da potência motora e o da resistência de carga.",
+      "A resistência de carga situa-se obrigatoriamente entre o ponto de apoio articular e a potência muscular motora.",
+      "A potência muscular situa-se obrigatoriamente entre o ponto de apoio articular e a resistência da carga externa.",
+      "O ponto de apoio coincide exatamente com o centro de massa da carga resistente, dispensando a força motora."
     ],
     "correctIndex": 0,
     "explanation": "Uma alavanca de 1.ª classe (ou interfixa) caracteriza-se por ter o ponto de apoio (fulcro) situado entre a força de potência e a força de resistência (P - F - R). Dependendo da posição do fulcro, a vantagem mecânica pode ser maior, igual ou menor do que 1.",
     "distractorAnalysis": [
-      "Está incorreta: descreve uma alavanca de 2.ª classe (inter-resistente).",
-      "Está incorreta: descreve uma alavanca de 3.ª classe (interpotente).",
-      "Está incorreta: é um absurdo físico, pois qualquer alavanca em equilíbrio requer forças motora e resistente para estabelecer equilíbrio de momentos."
+      "Está incorreta: descreve uma alavanca de 2.ª classe (inter-resistente) e não de 1.ª classe.",
+      "Está incorreta: descreve uma alavanca de 3.ª classe (interpotente) e não de 1.ª classe.",
+      "Está incorreta: uma alavanca necessita de forças concorrentes com braços de alavanca para estabelecer equilíbrio."
     ],
     "nursingApplication": "Instrumentos de uso frequente em enfermagem como tesouras de sutura, pinças hemostáticas (tipo Kocher ou Kelly) e corta-unhas são alavancas de 1.ª classe: o parafuso central funciona como fulcro, as mãos do enfermeiro aplicam a potência nos anéis, e o tecido ou fio exerce a resistência nas lâminas/pontas."
   },
@@ -81,17 +85,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Qual das seguintes articulações do corpo humano funciona anatomicamente como uma alavanca de 1.ª classe (interfixa)?",
     "options": [
-      "A articulação atlanto-occipital (entre o crânio e a coluna cervical), equilibrada pelos músculos extensores da nuca contra o peso anterior da cabeça.",
-      "A articulação do cotovelo durante a flexão do antebraço executada pelo músculo bicípite braquial.",
-      "A articulação talocrural (tornozelo) durante a elevação do corpo sobre a ponta dos pés pelo tríceps sural.",
-      "A articulação temporomandibular durante o encerramento forçado da mandíbula pelo músculo masséter."
+      "A articulação do cotovelo durante a flexão do antebraço executada pela contração ativa do músculo bicípite braquial.",
+      "A articulação atlanto-occipital (crânio-cervical), com os músculos da nuca a equilibrar o peso anterior da cabeça.",
+      "A articulação do tornozelo na elevação sobre a ponta dos pés, com o tendão de Aquiles a tracionar o calcâneo.",
+      "A articulação temporomandibular durante o encerramento forçado da mandíbula pela contração potente do masséter."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "A articulação atlanto-occipital é o exemplo clássico de alavanca interfixa (1.ª classe) no corpo humano: o fulcro é a articulação entre os côndilos occipitais e o atlas; a resistência é o peso da porção anterior da cabeça e face (cujo centro de massa se situa à frente da articulação); a potência é a força de tração exercida pelos músculos posteriores do pescoço (esplénio da cabeça, trapézio, semiespinhoso) inseridos no occipital.",
     "distractorAnalysis": [
-      "Está incorreta: descreve uma alavanca de 3.ª classe (o bicípite insere-se entre o cotovelo e a mão).",
-      "Está incorreta: descreve uma alavanca de 2.ª classe (a resistência do peso corporal cai entre as cabeças dos metatarsos e o tendão de Aquiles).",
-      "Está incorreta: funciona mecanicamente como uma alavanca de 3.ª classe modificada (o masséter insere-se à frente do côndilo mandibular e atrás dos dentes incisivos/molares anteriores)."
+      "Está incorreta: a flexão do cotovelo pelo bicípite é o exemplo clássico de alavanca de 3.ª classe.",
+      "Está incorreta: a flexão plantar na ponta dos pés é o exemplo clássico de alavanca de 2.ª classe.",
+      "Está incorreta: a mandíbula opera primariamente como alavanca de 3.ª classe com o masséter entre o côndilo e os dentes."
     ],
     "nursingApplication": "Quando um doente em coma, anestesiado ou com sedação profunda perde o tónus muscular, os músculos da nuca deixam de exercer potência. A alavanca de 1.ª classe desequilibra-se: a cabeça cai para a frente em flexão cervical, o que provoca a queda posterior da base da língua e oclusão das vias aéreas. O enfermeiro previne a asfixia posicionando a cabeça em extensão moderada ('head tilt-chin lift')."
   },
@@ -100,17 +104,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Numa alavanca de 2.ª classe (inter-resistente), a resistência localiza-se entre o ponto de apoio (fulcro) e o ponto de aplicação da potência. Qual é a consequência biofísica obrigatória desta geometria quanto à vantagem mecânica?",
     "options": [
-      "A vantagem mecânica é sempre estritamente superior a 1 (VM > 1), porque o braço de potência é sempre maior do que o braço de resistência (d_P > d_R).",
-      "A vantagem mecânica é sempre estritamente inferior a 1 (VM < 1), exigindo mais força do que a resistência.",
-      "A vantagem mecânica é exatamente igual a 1 em todas as circunstâncias anatómicas.",
-      "A vantagem mecânica é nula porque a força resultante dissipa-se sob forma de calor no fulcro."
+      "A vantagem mecânica é sempre inferior a 1 (VM < 1), exigindo que a força muscular seja maior do que a carga resistente.",
+      "A vantagem mecânica é estritamente igual a 1 (VM = 1) em qualquer circunstância anatómica de suporte postural corporal.",
+      "A vantagem mecânica é sempre superior a 1 (VM > 1), porque o braço de potência é maior que o de resistência (d_P > d_R).",
+      "A vantagem mecânica é nula (VM = 0) porque a totalidade da força muscular dissipa-se sob a forma de calor no fulcro."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "Numa alavanca inter-resistente (2.ª classe), como a resistência está situada entre o fulcro e a potência, o braço de potência (d_P, distância do fulcro até à potência) é obrigatoriamente superior ao braço de resistência (d_R). Como VM = d_P / d_R, a vantagem mecânica é SEMPRE maior que 1. Isto confere uma enorme multiplicação de força motora.",
     "distractorAnalysis": [
-      "Está incorreta: descreve a característica incontornável das alavancas de 3.ª classe (onde d_P < d_R).",
-      "Está incorreta: só ocorreria se a potência e a resistência coincidissem no mesmo ponto sobre a alavanca.",
-      "Está incorreta: viola o princípio de conservação de energia e a definição elementar de vantagem mecânica."
+      "Está incorreta: VM < 1 é a característica definidora das alavancas de 3.ª classe (interpotentes).",
+      "Está incorreta: VM = 1 só ocorre em alavancas de 1.ª classe simétricas onde d_P = d_R.",
+      "Está incorreta: as alavancas de 2.ª classe multiplicam a força e transmitem trabalho útil com alta eficiência mecânica."
     ],
     "nursingApplication": "O conhecimento da alavanca de 2.ª classe é a base do funcionamento dos carrinhos manuais de transporte de cilindros de gases medicinais (O₂, N₂O): o fulcro são as rodas no solo, o pesado cilindro de aço constitui a resistência no centro, e o enfermeiro puxa os punhos compridos na extremidade superior (d_P >> d_R), mobilizando cargas de mais de 70 kg com reduzido esforço físico."
   },
@@ -119,17 +123,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "O movimento de elevar o corpo sobre a ponta dos pés (flexão plantar na articulação do tornozelo) é amplamente citado em biomecânica como um exemplo anatómico de alavanca de que tipo?",
     "options": [
-      "Alavanca de 2.ª classe (inter-resistente), onde o apoio está nas cabeças dos metatarsos, a resistência é o peso corporal transmitido pela tíbia, e a potência é exercida pelo tendão de Aquiles.",
-      "Alavanca de 1.ª classe (interfixa), onde a tíbia atua como eixo de rotação intermediário.",
-      "Alavanca de 3.ª classe (interpotente), onde o músculo tibial anterior puxa o pé para cima.",
-      "Sistema sem alavanca mecânica, tratando-se de tração elástica pura sem rotação articular."
+      "Alavanca de 1.ª classe (interfixa), onde a tíbia atua como o eixo de rotação articular central entre o pé e a perna.",
+      "Alavanca de 3.ª classe (interpotente), onde o músculo tibial anterior puxa o dorso do pé contra a gravidade.",
+      "Sistema mecânico sem alavanca, atuando unicamente por tração elástica pura sem rotação em torno de fulcro.",
+      "Alavanca de 2.ª classe (inter-resistente), onde o apoio está nos metatarsos e a potência no tendão de Aquiles."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "Na elevação na ponta dos pés: o ponto de apoio (fulcro) situa-se nas articulações metatarsofalângicas em contacto com o chão; a resistência é a força normal/peso do corpo transmitida através da articulação talocrural (tíbia); a potência é a força de tração exercida pelo músculo tríceps sural (gémeos e sóleo) inserido posteriormente na tuberosidade do calcâneo através do tendão de Aquiles. Como a resistência está no meio, trata-se de uma alavanca de 2.ª classe com VM > 1.",
     "distractorAnalysis": [
-      "Está incorreta: confunde a localização da tíbia com um fulcro fixo; no movimento de pontas dos pés o fulcro real com o solo está na base dos dedos.",
-      "Está incorreta: refere o músculo tibial anterior, que é extensor/dorsiflexor do pé (não atua na elevação na ponta dos pés) e organiza uma alavanca de 3.ª classe para dorsiflexão.",
-      "Está incorreta: ignora a cinemática e estática articular do tornozelo, que é um sistema mecânico articulado clássico."
+      "Está incorreta: no apoio sobre as pontas dos pés o fulcro de contacto com o solo está nas cabeças dos metatarsos.",
+      "Está incorreta: o tibial anterior é o flexor dorsal do pé e não atua na elevação na ponta dos pés.",
+      "Está incorreta: o tornozelo é um sistema articulado com momento de forças e braços de alavanca clássicos."
     ],
     "nursingApplication": "A enorme vantagem mecânica da alavanca de 2.ª classe no tornozelo permite que os músculos da barriga da perna suportem repetidamente todo o peso do indivíduo. Na reabilitação e marcha de doentes após imobilização prolongada ou AVC, fraquezas no tríceps sural impedem a impulsão da marcha, exigindo assistência de enfermagem na transferência e deambulação."
   },
@@ -138,17 +142,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Numa alavanca de 3.ª classe (interpotente), qual é a posição relativa dos seus componentes e qual é a sua principal característica biomecânica?",
     "options": [
-      "A potência localiza-se entre o fulcro e a resistência; apresenta sempre desvantagem de força (VM < 1), mas proporciona grande ganho em amplitude de movimento e velocidade.",
-      "A resistência localiza-se entre o fulcro e a potência; apresenta sempre ganho de força (VM > 1).",
-      "O fulcro localiza-se no centro; permite unicamente a inversão do sentido da força aplicada com VM = 1.",
-      "A potência e o fulcro coincidem no mesmo ponto anatómico, eliminando qualquer momento torsor."
+      "A potência situa-se entre o fulcro e a resistência; apresenta VM < 1, mas proporciona grande amplitude e velocidade.",
+      "A resistência situa-se entre o fulcro e a potência; apresenta sempre ganho mecânico de força com valor de VM > 1.",
+      "O fulcro situa-se obrigatoriamente no centro; inverte unicamente o sentido da força motora mantendo sempre VM = 1.",
+      "A potência e o fulcro coincidem no mesmo ponto anatómico, eliminando qualquer momento de torção ou rotação articular."
     ],
     "correctIndex": 0,
     "explanation": "Numa alavanca de 3.ª classe (interpotente), a força de potência muscular é aplicada entre o eixo articular (fulcro) e a carga a mobilizar (resistência). Como o braço de potência é menor que o braço de resistência (d_P < d_R), a vantagem mecânica é SEMPRE inferior a 1 (VM < 1). O músculo é forçado a desenvolver uma força muito superior ao peso do objeto, mas em contrapartida um pequeno encurtamento muscular produz um deslocamento amplo e veloz da extremidade distal do membro.",
     "distractorAnalysis": [
-      "Está incorreta: é a descrição de uma alavanca de 2.ª classe.",
-      "Está incorreta: refere-se exclusivamente a uma alavanca de 1.ª classe simétrica.",
-      "Está incorreta: é anatomicamente impossível, pois uma inserção tendinosa não coincide com o centro de rotação da cartilagem articular."
+      "Está incorreta: descreve a geometria e características das alavancas de 2.ª classe (inter-resistentes).",
+      "Está incorreta: descreve uma alavanca de 1.ª classe simétrica com braços rigorosamente iguais.",
+      "Está incorreta: a inserção tendinosa é fisicamente separada do eixo articular de rotação por uma distância finita."
     ],
     "nursingApplication": "A vasta maioria das alavancas esqueléticas humanas são de 3.ª classe. Isso explica por que o corpo humano é uma 'máquina' concebida para velocidade e alcance espacial, e não para suportar forças brutas. Em enfermagem, ao sustentar um membro edemaciado ou gessado de um doente longe do cotovelo, o esforço muscular do enfermeiro aumenta drasticamente."
   },
@@ -157,17 +161,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "A flexão do antebraço sobre o braço pela contração do músculo bicípite braquial constitui o exemplo paradigmático de:",
     "options": [
-      "Alavanca de 3.ª classe (interpotente), onde o fulcro é o cotovelo, a potência é a inserção do tendão na tuberosidade do rádio e a resistência é o peso do antebraço e mão.",
-      "Alavanca de 2.ª classe (inter-resistente), onde o peso do antebraço é superado por apoio na mão.",
-      "Alavanca de 1.ª classe (interfixa), onde o cotovelo está localizado entre a mão e o ombro.",
-      "Polia fixa pura, sem braço de momento mecânico mensurável."
+      "Alavanca de 2.ª classe, onde a resistência do antebraço se situa distalmente em relação à mão e aos dedos.",
+      "Alavanca de 3.ª classe, com o fulcro no cotovelo, potência no tendão do rádio e resistência no peso sustentado.",
+      "Alavanca de 1.ª classe, onde a articulação do cotovelo se localiza a meio da distância entre a mão e o ombro.",
+      "Sistema de roldana simples fixa sem qualquer braço de momento mecânico mensurável na flexão articular."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "Na flexão do cotovelo pelo bicípite braquial: o fulcro é a articulação úmero-ulnar/radial (cotovelo); a força de potência é aplicada na tuberosidade bicipital do rádio (cerca de 3 a 5 cm distal ao cotovelo); a resistência é o peso do antebraço e do objeto seguro na mão (distante cerca de 30 a 35 cm do cotovelo). Como a potência está no meio (entre o fulcro e a carga), é uma alavanca de 3.ª classe.",
     "distractorAnalysis": [
-      "Está incorreta: inverte a posição da potência e da resistência.",
-      "Está incorreta: erradamente assume que a alavanca do cotovelo é interfixa (o fulcro não está no meio da haste antebraquial, mas na sua extremidade proximal).",
-      "Está incorreta: ignora a anatomia do sistema musculoesquelético que opera por rotação de segmentos ósseos rígidos."
+      "Está incorreta: na flexão do cotovelo a força do bicípite insere-se entre o cotovelo (fulcro) e o centro de massa da mão (carga).",
+      "Está incorreta: o fulcro não está no meio do membro, mas na extremidade proximal da alavanca antebraquial.",
+      "Está incorreta: os segmentos ósseos operam como hastes rígidas girando em torno de eixos articulares como alavancas."
     ],
     "nursingApplication": "Devido a esta configuração de 3.ª classe, para segurar um peso de apenas 5 kg na mão, o bicípite tem de exercer uma força interna de tração de cerca de 40 a 50 kgf (400 a 500 N). Isso elucida porque esforços sustentados ao posicionar doentes geram rápida fadiga muscular nos membros superiores da equipa de enfermagem."
   },
@@ -176,17 +180,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Um doente sustenta na mão uma esfera de 4 kg (peso resistente ≈ 40 N) a uma distância horizontal de 35 cm da articulação do cotovelo. Sabendo que o tendão do bicípite braquial se insere a 5 cm do cotovelo, qual é a força muscular mínima F_P que o bicípite tem de desenvolver para manter o antebraço na horizontal (desprezando o peso do antebraço)?",
     "options": [
-      "280 N",
-      "40 N",
-      "5,7 N",
-      "1400 N"
+      "Uma força muscular motora mínima de 40 N desenvolvida pelo tendão do bicípite braquial.",
+      "Uma força muscular motora mínima de 5,7 N desenvolvida pelo tendão do bicípite braquial.",
+      "Uma força muscular motora mínima de 280 N desenvolvida pelo tendão do bicípite braquial.",
+      "Uma força muscular motora mínima de 1400 N desenvolvida pelo tendão do bicípite braquial."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "Aplicando a condição de equilíbrio rotacional (∑τ = 0) em relação ao cotovelo (fulcro): F_P · d_P = F_R · d_R. Substituindo os valores dados: F_P · (5 cm) = (40 N) · (35 cm) => F_P = (40 × 35) / 5 = 1400 / 5 = 280 N. A força muscular exercida é 7 vezes superior ao peso do objeto sustentado (VM = 5/35 = 1/7 ≈ 0,14).",
     "distractorAnalysis": [
-      "Está incorreta: (40 N) ignora a desvantagem mecânica da alavanca de 3.ª classe, assumindo erradamente VM = 1.",
-      "Está incorreta: (5,7 N) resulta de inverter a razão dos braços de alavanca (40 × 5 / 35), o que violaria o princípio do equilíbrio.",
-      "Está incorreta: (1400 N) é o valor do torque em N·cm, tendo o estudante esquecido de dividir pela distância do tendão (5 cm)."
+      "Está incorreta: 40 N assumiria erradamente VM = 1, ignorando que o braço de resistência é 7 vezes maior que o de potência.",
+      "Está incorreta: 5,7 N resulta de inverter a razão dos braços de alavanca (40 × 5 / 35), violando o equilíbrio de momentos.",
+      "Está incorreta: 1400 N corresponde ao torque em N·cm (40 N × 35 cm) esquecendo de dividir pelo braço de potência de 5 cm."
     ],
     "nursingApplication": "Este cálculo biofísico demonstra quantitativamente o enorme estresse a que tendões e inserções periosteais estão submetidos na prática clínica. Ao ajudar a levantar ou apoiar doentes dependentes, manter as cargas coladas ao corpo reduz o braço de resistência (d_R), diminuindo exponencialmente as forças internas de tração exigidas aos músculos e tendões do profissional."
   },
@@ -195,17 +199,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Durante a extensão do joelho pelo músculo quadríceps femoral contra uma resistência aplicada na perna, a rótula (patela) desempenha um papel biofísico crucial. Qual é a função mecânica primária da patela neste sistema de alavanca?",
     "options": [
-      "Desviar o tendão do quadríceps para a frente, aumentando a distância perpendicular ao eixo articular (braço de alavanca) e, consequentemente, aumentando o torque extensor.",
-      "Transformar a articulação do joelho numa alavanca de 2.ª classe permanente com vantagem mecânica infinita.",
-      "Diminuir o atrito a zero e eliminar completamente a força de reação articular no fémur.",
-      "Reduzir o ângulo de inserção do tendão rotuliano para que toda a força seja dissipada longitudinalmente."
+      "Transformar a articulação do joelho numa alavanca de 2.ª classe com vantagem mecânica infinita para erguer cargas.",
+      "Diminuir o atrito a zero e eliminar completamente a força de reação normal sobre os côndilos cartilagíneos femorais.",
+      "Reduzir o ângulo de inserção do tendão rotuliano para que a força muscular seja dissipada axialmente sem torque.",
+      "Desviar o tendão do quadríceps para a frente, aumentando o braço de alavanca e elevando o torque extensor do joelho."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "A patela é o maior osso sesamoide do corpo humano. A sua função biomecânica essencial é atuar como um espaçador que afasta o tendão do quadríceps e o ligamento patelar do centro de rotação do joelho. Ao aumentar a distância perpendicular (braço de momento d), a patela aumenta o torque gerado (τ = F · d) para a mesma força de contração muscular em até 30-50%, melhorando a eficácia mecânica do quadríceps na extensão.",
     "distractorAnalysis": [
-      "Está incorreta porque ; a extensão do joelho continua a ser funcionalmente uma alavanca de 3.ª classe.",
-      "Está incorreta porque ; a força compressiva patelofemoral durante a flexão sob carga é enorme e atinge múltiplos do peso corporal.",
-      "Está incorreta: é contrária à realidade: a patela aumenta o ângulo de tração relativo ao eixo da tíbia, tornando a força mais eficaz na rotação."
+      "Está incorreta: a patela não confere vantagem mecânica infinita nem transforma o joelho numa alavanca de 2.ª classe.",
+      "Está incorreta: a força de reação patelofemoral é elevada durante a flexão sob carga e o atrito sinovial não é zero.",
+      "Está incorreta: a patela aumenta o ângulo de inserção e afasta o tendão do eixo articular, aumentando o torque útil."
     ],
     "nursingApplication": "Em doentes submetidos a patelectomia total (remoção cirúrgica da patela) após fraturas cominutivas, o braço de alavanca do quadríceps é reduzido. O doente necessita de um esforço muscular significativamente maior para estender a perna, apresentando fraqueza na deambulação e subida de escadas, exigindo cuidados acrescidos de enfermagem na prevenção de quedas."
   },
@@ -214,17 +218,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Ao utilizar uma pinça de dissecação (ou pinça anatómica sem dentes) para manusear compressas esterilizadas durante um penso complexo, qual é a classe de alavanca que o enfermeiro está a operar?",
     "options": [
-      "Alavanca de 3.ª classe (interpotente), onde a mola da extremidade unida é o fulcro, os dedos do enfermeiro aplicam a potência a meio da haste, e a gaze segura nas pontas é a resistência.",
-      "Alavanca de 1.ª classe (interfixa), porque existe um eixo cruzado tipo tesoura no meio da pinça.",
-      "Alavanca de 2.ª classe (inter-resistente), porque a gaze está colocada entre os dedos e a extremidade de união.",
-      "Sistema de plano inclinado duplo sem componente de alavanca."
+      "Alavanca de 3.ª classe, onde a mola da extremidade é o fulcro, os dedos aplicam potência e a gaze é a resistência.",
+      "Alavanca de 1.ª classe, porque existe um parafuso giratório intermediário cruzado à semelhança de uma tesoura.",
+      "Alavanca de 2.ª classe, porque a gaze comprimida se situa obrigatoriamente entre os dedos e a mola da extremidade.",
+      "Sistema de cunha mecânica pura sem braço de alavanca, atuando exclusivamente por atrito de preensão estática."
     ],
     "correctIndex": 0,
     "explanation": "Uma pinça de dissecação consiste em duas lâminas flexíveis unidas numa extremidade (fulcro). Os dedos indicador e polegar do profissional comprimem as lâminas no terço médio (potência), enquanto a extremidade distal aperta a compressa ou tecido (resistência). Como a potência está situada entre o fulcro e a resistência, trata-se inequivocamente de uma alavanca de 3.ª classe.",
     "distractorAnalysis": [
-      "Está incorreta: confunde pinças anatómicas com pinças hemostáticas de cremalheira (como Kelly ou Pean), que possuem articulação em X e são de 1.ª classe.",
-      "Está incorreta: inverte a posição da resistência e da potência.",
-      "Está incorreta: desconhece a classificação dos mecanismos simples elementares."
+      "Está incorreta: pinças de dissecação sem travão não têm eixo cruzado intermediário; o fulcro é a extremidade unida elástica.",
+      "Está incorreta: a carga (gaze) fica na ponta distal e a força dos dedos atua no terço médio da haste (interpotente).",
+      "Está incorreta: as hastes funcionam como vigas em consola articuladas na base, constituindo alavancas de 3.ª classe."
     ],
     "nursingApplication": "Como a pinça anatómica é de 3.ª classe (VM < 1), ela proporciona uma sensibilidade tátil tátil e controlo de precisão milimétrica excecionais na extremidade distal, embora exija uma força digital ligeiramente maior. É ideal para manipular tecidos delicados sem provocar lacerações por excesso de força bruta."
   },
@@ -233,17 +237,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Por que motivo a esmagadora maioria das articulações sinoviais do corpo humano evoluiu estruturalmente como alavancas de 3.ª classe (interpotentes), apesar de apresentarem desvantagem mecânica em termos de força (VM < 1)?",
     "options": [
-      "Porque permitem que um pequeno encurtamento das fibras musculares produza grandes amplitudes angulares e elevadíssimas velocidades na extremidade dos membros.",
-      "Porque reduzem a tensão sobre os tendões musculares a valores próximos de zero.",
-      "Porque tornam o osso imune a qualquer tipo de deformação elástica ou plástica.",
-      "Porque evitam que a força da gravidade atue sobre os segmentos distais do corpo."
+      "Porque reduzem as forças de compressão sobre as superfícies cartilagíneas articulares para valores próximos de zero.",
+      "Porque permitem que um pequeno encurtamento muscular produza grandes amplitudes e altas velocidades nas extremidades.",
+      "Porque conferem vantagem mecânica de força (VM > 1), permitindo erguer cargas muito superiores ao peso dos músculos.",
+      "Porque protegem os tendões contra qualquer deformação elástica reversível durante movimentos desportivos rápidos."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "Nas alavancas de 3.ª classe, a potência insere-se próxima do fulcro e a resistência na extremidade. Pela relação geométrica de arcos de círculo, a extremidade distal percorre uma distância muito maior no mesmo intervalo de tempo do que o ponto de inserção muscular. Isso confere ao ser humano agilidade, capacidade de correr, lançar objetos e manipular instrumentos com rapidez e precisão, apesar de exigir músculos mais volumosos e fortes para compensar a desvantagem de força.",
     "distractorAnalysis": [
-      "Está incorreta: é rigorosamente o oposto: a desvantagem mecânica obriga o tendão a suportar tensões mecânicas altíssimas.",
-      "Está incorreta porque , pois os ossos sofrem deformações elásticas contínuas sob as forças musculares de reação.",
-      "Está incorreta: viola a física elementar; a gravidade continua a atuar plenamente sobre a massa dos segmentos."
+      "Está incorreta: a desvantagem mecânica (VM < 1) exige forças musculares enormes que aumentam a compressão articular.",
+      "Está incorreta: as alavancas de 3.ª classe têm VM < 1, exigindo mais força muscular do que o peso da carga sustentada.",
+      "Está incorreta: os tendões sofrem deformação elástica fisiológica crucial para o armazenamento e devolução de energia."
     ],
     "nursingApplication": "Compreender que as alavancas anatómicas privilegiam velocidade em detrimento de força explica a vulnerabilidade osteoarticular dos profissionais de saúde: o sistema esquelético humano não foi biomecanicamente projetado para sustentar cargas estáticas pesadas prolongadas sem fadiga ou risco de lesão."
   },
@@ -252,17 +256,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "A Reologia é o ramo da física que se dedica ao estudo de quê?",
     "options": [
-      "Da deformação e do escoamento da matéria quando submetida a tensões ou forças externas.",
-      "Da transmissão exclusiva de ondas eletromagnéticas no vácuo.",
-      "Da desintegração radioativa do núcleo atómico ao longo do tempo.",
-      "Da velocidade de filtração glomerular no néfron renal."
+      "Da propagação de ondas eletromagnéticas e fotões através de meios dielétricos transparentes ou opacos no vácuo.",
+      "Da transferência condutiva de calor e termodinâmica de equilíbrio em sistemas biológicos fechados à temperatura basal.",
+      "Da deformação e do escoamento da matéria quando submetida a tensões mecânicas ou forças de cisalhamento externas.",
+      "Da condutividade elétrica de soluções iónicas e diferenciais de potencial de membrana em células neuronais excitáveis."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "A Reologia (do grego rheos, fluir) é a ciência física que estuda a deformação e o escoamento de todos os tipos de matéria — englobando desde sólidos com elasticidade de Hooke até fluidos Newtonianos e fluidos biológicos complexos não-Newtonianos (como o sangue e o muco respiratório), passando por materiais viscoelásticos.",
     "distractorAnalysis": [
-      "Está incorreta: refere-se à ótica física e teoria eletromagnética de Maxwell.",
-      "Está incorreta: define a física nuclear e a radioatividade.",
-      "Está incorreta: é um parâmetro fisiológico renal específico, não uma disciplina da física mecânica."
+      "Está incorreta: o estudo de ondas eletromagnéticas pertence à ótica e ao eletromagnetismo clássico e quântico.",
+      "Está incorreta: a transferência de calor e equilíbrio térmico são objeto da termodinâmica e biofísica térmica.",
+      "Está incorreta: potenciais de membrana e condutividade iónica são estudados no âmbito da bioeletricidade celular."
     ],
     "nursingApplication": "A reologia clínica é fundamental em enfermagem para compreender a drenagem de exsudados viscosos, a aspiração de secreções brônquicas, a fluidez de soluções entéricas e a viscoelasticidade da pele e dos tecidos moles na prevenção de escaras."
   },
@@ -271,17 +275,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "No contexto da mecânica dos materiais, qual é a definição formal de 'Tensão' (stress, σ) e qual é a sua unidade no Sistema Internacional (SI)?",
     "options": [
-      "É a razão entre a força interna ou externa aplicada e a área da secção transversal sobre a qual atua (σ = F / A); a sua unidade SI é o Pascal (Pa = N/m²).",
-      "É o alongamento total absoluto sofrido pelo corpo; a sua unidade SI é o metro (m).",
-      "É o produto da força pelo tempo de contacto; a sua unidade SI é o Newton-segundo (N·s).",
-      "É a razão entre o volume final e a massa do material; a sua unidade SI é m³/kg."
+      "É o alongamento absoluto total sofrido pelo segmento do corpo sob tração, medido rigorosamente em metros lineares (m).",
+      "É o produto da força motora aplicada pelo intervalo de tempo de impacto mecânico, expresso em Newtons-segundo (N·s).",
+      "É o trabalho mecânico consumido por unidade de deformação angular transversa, expresso em Joules por radiano (J/rad).",
+      "É a razão entre a força aplicada e a área da secção transversal sobre a qual atua (σ = F / A), expressa em Pascal (Pa)."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "Tensão mecânica (stress, representada pela letra grega sigma, σ, para tensões normais, ou tau, τ, para tensões tangenciais) é definida como a força exercida por unidade de área da secção transversal: σ = F / A. A unidade oficial do SI é o Pascal (1 Pa = 1 N/m²), frequentemente expressa em MegaPascals (MPa = 10⁶ N/m² = 1 N/mm²).",
     "distractorAnalysis": [
-      "Está incorreta: confunde tensão com deformação absoluta linear (ΔL), medida em metros.",
-      "Está incorreta: define a grandeza física Impulso mecânico (J = F · Δt).",
-      "Está incorreta: define o volume específico de uma substância."
+      "Está incorreta: o alongamento absoluto em metros é a deformação linear (ΔL) e não a tensão mecânica interna (σ).",
+      "Está incorreta: a força multiplicada pelo tempo (F · Δt) define o impulso mecânico ou variação do momento linear.",
+      "Está incorreta: trabalho por radiano expressa torque ou energia rotacional e não tensão mecânica sobre uma secção."
     ],
     "nursingApplication": "Ao administrar uma injeção intramuscular com uma agulha de pequeno diâmetro, a pequena área de secção do êmbolo da seringa gera elevadas pressões hidrostáticas se o êmbolo for forçado rapidamente, o que pode originar tensões mecânicas teciduais excessivas e dor aguda no doente."
   },
@@ -290,17 +294,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "A deformação relativa ou unitária longitudinal (strain, ε) sofrida por um material sob tração é calculada através de que relação?",
     "options": [
-      "ε = ΔL / L₀ (variação do comprimento a dividir pelo comprimento inicial), sendo uma grandeza adimensional.",
-      "ε = L₀ · ΔL, expressa em metros quadrados (m²).",
-      "ε = F · ΔL, expressa em Joules (J).",
-      "ε = ΔL / t, expressa em metros por segundo (m/s)."
+      "ε = ΔL / L₀ (variação do comprimento a dividir pelo comprimento inicial), sendo uma grandeza adimensional pura.",
+      "ε = L₀ · ΔL (produto do comprimento inicial pelo alongamento deformado), sendo expressa em metros quadrados (m²).",
+      "ε = F · ΔL (produto da força de tração axial pelo alongamento linear sofrido), sendo expressa em Joules de trabalho.",
+      "ε = ΔL / Δt (taxa de variação do comprimento por unidade de tempo de ensaio), sendo expressa em metros por segundo."
     ],
     "correctIndex": 0,
     "explanation": "A deformação relativa (strain, ε) representa o alongamento fracionário de um corpo: ε = (L - L₀) / L₀ = ΔL / L₀. Como é a razão entre duas medidas de comprimento (m / m), é uma grandeza puramente adimensional (frequentemente expressa em percentagem, por exemplo, 0,05 = 5% de deformação).",
     "distractorAnalysis": [
-      "Está incorreta: calcula uma grandeza dimensional fictícia sem significado físico em mecânica dos sólidos.",
-      "Está incorreta: expressa uma fórmula relacionada com o trabalho mecânico realizado.",
-      "Está incorreta: mede a velocidade de deformação (taxa de deformação strain rate, s⁻¹)."
+      "Está incorreta: o produto L₀ · ΔL não tem significado físico na teoria da elasticidade e teria unidade de área (m²).",
+      "Está incorreta: o produto de força por variação de comprimento define trabalho mecânico (Joules) e não deformação relativa.",
+      "Está incorreta: a taxa de variação no tempo define a velocidade de deformação (strain rate) e não a deformação relativa ε."
     ],
     "nursingApplication": "As ligaduras elásticas utilizadas para compressão de membros inferiores em doentes com insuficiência venosa crónica baseiam o seu efeito terapêutico na deformação relativa (alongamento percentual) aplicada pelo enfermeiro durante a colocação (ex: estiramento a 50% de ε)."
   },
@@ -309,17 +313,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Qual das seguintes equações traduz a Lei de Hooke para a deformação elástica linear de um sólido sob tração simples?",
     "options": [
-      "σ = E · ε, onde σ é a tensão, E é o Módulo de Young e ε é a deformação relativa.",
-      "σ = E / ε², onde a tensão decai quadraticamente com a deformação.",
-      "σ = m · v · ε, onde v é a velocidade de propagação sonora no material.",
-      "σ = E · L₀ · g, onde g é a aceleração da gravidade."
+      "σ = E / ε², onde a tensão aplicada decai de forma inversamente quadrática com o alongamento elástico sofrido pelo corpo.",
+      "σ = E · ε, onde σ é a tensão mecânica, E é o Módulo de Young característico e ε é a deformação relativa longitudinal.",
+      "σ = m · g · ε, onde m é a massa do provete e g a aceleração da gravidade, tornando a elasticidade dependente do peso.",
+      "σ = E · v · Δt, onde v é a velocidade de propagação mecânica do som e Δt é o tempo de aplicação do esforço de tração."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "A Lei de Hooke (formulada por Robert Hooke em 1678 como 'ut tensio, sic vis') estabelece que, na região elástica de proporcionalidade, a tensão normal é linearmente proporcional à deformação relativa que provoca: σ = E · ε. A constante de proporcionalidade E é o Módulo de Young (ou Módulo de Elasticidade Longitudinal).",
     "distractorAnalysis": [
-      "Está incorreta: propõe uma dependência inversamente quadrática que inexiste no comportamento elástico linear.",
-      "Está incorreta: introduz incorretamente a velocidade e momento linear num regime estático de sólidos.",
-      "Está incorreta: é dimensionalmente incorreta e mistura constantes gravitacionais irrelevantes para a rigidez intrínseca do material."
+      "Está incorreta: a Lei de Hooke estabelece uma relação diretamente proporcional linear e não inversamente quadrática.",
+      "Está incorreta: a rigidez elástica intrínseca de um material não depende da massa do provete nem da gravidade local.",
+      "Está incorreta: a elasticidade de Hooke trata de equilíbrios estáticos sob deformação e não da velocidade de ondas acústicas."
     ],
     "nursingApplication": "O funcionamento de dinamómetros de reabilitação e balanças de mola utilizadas para pesar recém-nascidos baseia-se rigorosamente na Lei de Hooke: a deformação da mola é estritamente proporcional à força peso aplicada pelo bebé."
   },
@@ -328,17 +332,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "O Módulo de Young (E) traduz uma propriedade intrínseca do material. Fisicamente, o que representa um valor elevado de Módulo de Young?",
     "options": [
-      "Elevada rigidez elástica do material, significando que é necessária uma grande tensão mecânica para produzir uma pequena deformação elástica.",
-      "Grande flexibilidade, significando que o corpo se deforma enormemente com forças insignificantes.",
-      "Incapacidade absoluta do material para suportar qualquer força de compressão.",
-      "Elevada densidade de massa atómica exclusivamente."
+      "Grande flexibilidade mecânica, indicando que o material sofre alongamentos elásticos enormes sob forças mínimas.",
+      "Incapacidade intrínseca do material para resistir a esforços de compressão uniaxial, fraturando de forma catastrófica.",
+      "Elevada rigidez elástica do material, exigindo grande tensão mecânica para produzir uma pequena deformação relativa.",
+      "Uma densidade de massa volúmica extrema que impede a propagação de ondas acústicas no interior da estrutura sólida."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "O Módulo de Young (E = σ / ε) é a medida fundamental da rigidez elástica de um material. Quanto maior for o valor de E (medido em Pa ou GPa), mais 'rígido' é o corpo e mais resistente é à deformação elástica — ou seja, menor será a deformação sofrida para uma dada tensão aplicada.",
     "distractorAnalysis": [
-      "Está incorreta: descreve um material de alta complacência ou flexibilidade, caracterizado por um Módulo de Young muito BAIXO (como elastómeros ou silicone).",
-      "Está incorreta porque ; materiais com elevado Módulo de Young (como ligas de titânio ou o osso cortical) suportam elevadíssimas forças de compressão.",
-      "Está incorreta: confunde rigidez mecânica com densidade volumétrica de massa."
+      "Está incorreta: materiais com grande flexibilidade elástica (como elastómeros) possuem Módulo de Young muito baixo.",
+      "Está incorreta: materiais com alto Módulo de Young (como osso cortical ou titânio) suportam elevadas cargas de compressão.",
+      "Está incorreta: o Módulo de Young traduz rigidez mecânica e não se correlaciona estritamente com a densidade volúmica atómica."
     ],
     "nursingApplication": "Nas próteses articulares da anca, ligas metálicas tradicionais possuem Módulo de Young muito superior ao do osso cortical (~200 GPa vs ~18 GPa). Essa discrepância gera a complicação de 'stress shielding' (blindagem contra o estresse), onde o osso não recebe carga mecânica e atrofia por desuso, exigindo monitorização radiológica e cuidados de enfermagem pós-operatórios."
   },
@@ -347,17 +351,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Num ensaio de tração mecânica de um biomaterial, o que distingue fundamentalmente a 'Deformação Elástica' da 'Deformação Plástica'?",
     "options": [
-      "A deformação elástica é completamente reversível quando a carga é removida, enquanto a deformação plástica é permanente e residual.",
-      "A deformação elástica provoca sempre a rotura imediata do corpo, enquanto a deformação plástica restaura a forma original.",
-      "A deformação elástica não segue a Lei de Hooke, enquanto a plástica segue rigorosamente.",
-      "A deformação elástica só ocorre em fluidos biológicos e a plástica em ossos secos."
+      "A deformação elástica conduz sempre à rotura catastrófica do corpo, enquanto a plástica recupera a forma primitiva.",
+      "A deformação elástica viola a Lei de Hooke por apresentar histerese, enquanto a plástica mantém linearidade estrita.",
+      "A deformação elástica ocorre apenas em biomateriais poliméricos, enquanto a plástica é exclusiva do osso cortical.",
+      "A deformação elástica é reversível com a remoção da carga, enquanto a deformação plástica é permanente e residual."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "A deformação elástica envolve apenas o afastamento temporário dos átomos ou desenrolamento conformacional reversível de polímeros sem rutura das ligações fundamentais; cessada a força, o corpo recupera integralmente o comprimento original (L₀). Na deformação plástica, ultrapassa-se o limite elástico e ocorre escorregamento irreversível de planos atómicos ou quebra de ligações moleculares, resultando numa deformação residual permanente.",
     "distractorAnalysis": [
-      "Está incorreta: inverte os conceitos de forma absurda; a rotura ocorre após o esgotamento da deformação plástica.",
-      "Está incorreta porque a Lei de Hooke rege precisamente a fase elástica linear, e não a fase plástica.",
-      "Está incorreta: limita erroneamente estados da matéria; deformação elástica e plástica são conceitos fundamentais da física dos sólidos."
+      "Está incorreta: inverte os conceitos: a deformação elástica é que permite a recuperação e a plástica é que é irreversível.",
+      "Está incorreta: a fase elástica linear é que obedece à Lei de Hooke, cessando essa proporcionalidade na fase plástica.",
+      "Está incorreta: tanto polímeros como metais e tecidos biológicos exibem regimes elásticos e plásticos consoante a carga."
     ],
     "nursingApplication": "Ao dobrar manualmente o mandril metálico (guia) de um tubo endotraqueal para entubação difícil, o enfermeiro induz deformação plástica controlada no metal para que ele mantenha a curvatura desejada. Por outro lado, o balonete de vedação da traqueia deve manter deformação elástica pura para vedar sem colapsar as vias aéreas."
   },
@@ -366,17 +370,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "O ponto da curva tensão-deformação que marca a transição entre o regime elástico reversível e o início da deformação plástica permanente é denominado:",
     "options": [
-      "Limite de elasticidade (ou tensão de escoamento, yield point).",
-      "Ponto de fusão endotérmica.",
-      "Ponto de tensão de rotura final catastrófica.",
-      "Origem de coordenadas de repouso absoluto."
+      "Limite de elasticidade (ou tensão de cedência/escoamento, yield point), além do qual as deformações são permanentes.",
+      "Ponto de transição vítrea endotérmica, onde o material amolece e se converte num gel amorfo incompressível no leito.",
+      "Ponto de tensão de rotura final catastrófica, correspondente à separação mecânica física completa dos fragmentos.",
+      "Módulo de resiliência elástica máxima, ponto geométrico onde a taxa de dissipação de energia mecânica se anula."
     ],
     "correctIndex": 0,
     "explanation": "O limite de elasticidade (e de forma muito próxima na engenharia, a tensão de escoamento ou yield strength) é o valor máximo de tensão mecânica que um material pode suportar sem sofrer deformação plástica residual permanente. Se a tensão aplicada for superior a este limite, o corpo não regressa ao seu comprimento inicial após a remoção da força.",
     "distractorAnalysis": [
-      "Está incorreta: refere-se a uma transição de fase termodinâmica sólido-líquido, sem relação com tensão mecânica.",
-      "Está incorreta: refere-se ao ponto final onde o material se fratura e separa em dois pedaços.",
-      "Está incorreta: é apenas o ponto zero (tensão zero, deformação zero) no início do ensaio."
+      "Está incorreta: a transição vítrea é um fenómeno térmico de mobilidade de cadeias poliméricas e não o limite mecânico de escoamento.",
+      "Está incorreta: o ponto de rotura final situa-se no término da curva de tração, bem depois da fase plástica.",
+      "Está incorreta: a resiliência é a área sob a curva elástica e não um ponto que define a transição para deformação plástica."
     ],
     "nursingApplication": "Nos clipes hemostáticos cirúrgicos e agrafos utilizados para fechar incisões, a aplicação pela pinça deve ultrapassar conscientemente o limite de elasticidade do titânio para produzir deformação plástica, garantindo que o agrafo permanece permanentemente fechado sobre a derme do doente."
   },
@@ -385,17 +389,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na ciência dos materiais e biomecânica, qual é a definição de 'Tenacidade' (toughness)?",
     "options": [
-      "É a capacidade do material absorver energia mecânica e deformar-se plasticamente até à fratura, correspondendo à área total sob a curva tensão-deformação.",
-      "É a resistência que a superfície do material oferece ao risco e penetração por outro corpo duro.",
-      "É a massa máxima que o corpo pode suportar sem alterar a sua temperatura.",
-      "É a velocidade com que uma onda de choque mecânica atravessa o material."
+      "A resistência mecânica superficial que o material oferece à penetração e ao risco provocado por outro corpo duro.",
+      "Capacidade do material absorver energia mecânica e deformar-se plasticamente até à fratura (área sob a curva σ-ε).",
+      "A capacidade do material recuperar elasticamente a sua forma original sem dissipar energia mecânica em calor.",
+      "A tensão máxima de corte tangencial que o material suporta antes de iniciar a formação de microfissuras de fadiga."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "Tenacidade (toughness) é a quantidade total de energia mecânica por unidade de volume que um material consegue absorver antes de fraturar. No gráfico de tensão versus deformação, a tenacidade é matematicamente igual à área integral sob toda a curva (desde a origem até à rotura). Materiais tenazes combinam alta resistência mecânica com ductilidade considerável.",
     "distractorAnalysis": [
-      "Está incorreta: define rigorosamente a 'Dureza' (hardness) do material (avaliada pelas escalas Mohs, Brinell ou Vickers).",
-      "Está incorreta: confunde propriedades mecânicas com capacidade térmica de calor específico.",
-      "Está incorreta: define a velocidade acústica de propagação mecânica (v = √(E/ρ))."
+      "Está incorreta: a resistência ao risco e penetração superficial define a Dureza (hardness) e não a Tenacidade.",
+      "Está incorreta: a capacidade de absorver e restituir energia elástica na fase reversível define a Resiliência (resilience).",
+      "Está incorreta: a resistência ao corte antes de fissuração de fadiga define o limite de fadiga ou resistência à torção."
     ],
     "nursingApplication": "O osso vivo saudável possui elevada tenacidade devido à matriz de colagénio, o que lhe permite absorver o impacto de quedas moderadas sem fraturar. Em doentes idosos ou com osteogénese imperfeita, a perda de tenacidade torna o esqueleto frágil, suscetível a fraturas de baixa energia com o simples apoio do peso corporal."
   },
@@ -404,17 +408,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Um material classificado como 'Frágil' (brittle) em oposição a 'Dúctil' (ductile) caracteriza-se por fraturar com:",
     "options": [
-      "Praticamente nenhuma deformação plástica prévia, quebrando quase repentinamente após o término da fase elástica linear.",
-      "Uma enorme extensão de deformação plástica antes da separação física.",
-      "Geração espontânea de calor e fusão dos seus fragmentos.",
-      "Um aumento contínuo do seu volume total sob tração axial."
+      "Uma extensa deformação plástica irreversível com estricção localizada antes da separação mecânica definitiva.",
+      "Uma alteração dimensional acompanhada por libertação endotérmica contínua de calor que funde os bordos da fratura.",
+      "Praticamente nenhuma deformação plástica prévia, fraturando subitamente logo após o término da fase elástica linear.",
+      "Um aumento exponencial e espontâneo do seu volume total sob tração axial sem redução da secção transversal."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "Materiais frágeis (como o vidro, a cerâmica, o gesso ortopédico seco e o mineral puro do osso sem colagénio) apresentam fratura súbita e catastrófica logo que a tensão atinge o limite elástico, sem sofrer escoamento plástico mensurável. Materiais dúcteis (como o cobre, o aço inoxidável e o titânio), pelo contrário, sofrem extensas deformações plásticas antes de quebrarem.",
     "distractorAnalysis": [
-      "Está incorreta: define a essência mecânica dos materiais dúcteis.",
-      "Está incorreta: viola as leis de fratura mecânica dos materiais.",
-      "Está incorreta: descreveria um comportamento de dilatação anómala que não é definidor de fragilidade."
+      "Está incorreta: sofrer grande deformação plástica com estricção prévia à fratura é a definição de material Dúctil.",
+      "Está incorreta: a fratura mecânica frágil decorre da propagação rápida de fendas e não de fusão térmica endotérmica.",
+      "Está incorreta: sob tração uniaxial os materiais tendem a manter ou contrair ligeiramente a secção lateral (Poisson)."
     ],
     "nursingApplication": "As talas e aparelhos gessados de imobilização ortopédica são rígidos e extremamente frágeis. Se o doente apoiar peso excessivo sobre um gesso recente de marcha, o gesso fratura por quebra frágil imediata em vez de vergar, comprometendo a imobilização da fratura e exigindo nova colocação pelo enfermeiro."
   },
@@ -423,17 +427,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "O que quantifica o 'Coeficiente de Poisson' (ν) quando um corpo elástico cilíndrico é submetido a uma tensão de tração longitudinal simples?",
     "options": [
-      "A razão (com sinal invertido) entre a deformação transversal e a deformação longitudinal (ν = - ε_transversal / ε_longitudinal).",
-      "A taxa de evaporação de fluidos intersticiais durante a tração.",
-      "A força exercida pela pressão atmosférica sobre o perímetro do cilindro.",
-      "A variação de temperatura decorrente da perda de elasticidade do corpo."
+      "A razão direta entre a tensão de corte tangencial e a deformação angular correspondente sob esforços de torção pura.",
+      "A fração volumétrica de energia elástica dissipada sob a forma de calor durante ciclos de carga e descarga dinâmica.",
+      "O quociente entre a força compressiva normal exercida nas bases e a variação da densidade volúmica do biomaterial.",
+      "A razão (com sinal invertido) entre a deformação transversal e a deformação longitudinal (ν = - ε_transversal / ε_long)."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "Quando um sólido elástico é esticado longitudinalmente (tração, onde ε_longitudinal > 0), a sua secção transversal contrai-se lateralmente (adelgaçamento, onde ε_transversal < 0). O Coeficiente de Poisson (ν) é a razão adimensional entre essa deformação lateral e a deformação axial: ν = - ε_transversal / ε_longitudinal. Para a maioria dos materiais metálicos e ossos, ν situa-se entre 0,25 e 0,35; para a borracha e tecidos biológicos ricos em água incompressível, aproxima-se de 0,5.",
     "distractorAnalysis": [
-      "Está incorreta: confunde mecânica de deformação com termodinâmica de evaporação.",
-      "Está incorreta porque a pressão atmosférica não entra na definição do coeficiente de Poisson.",
-      "Está incorreta: mistura termodinâmica com propriedades mecânicas elásticas."
+      "Está incorreta: a razão entre tensão de cisalhamento e deformação angular define o Módulo de Corte ou Rigidez (G).",
+      "Está incorreta: a energia dissipada em ciclos de carga e descarga define a histerese mecânica do material.",
+      "Está incorreta: a resposta volumétrica a tensões isotrópicas define o Módulo de Elasticidade Volumétrico (K)."
     ],
     "nursingApplication": "Ao insuflar a braçadeira de um esfigmomanómetro ou garrote elástico, a tração longitudinal do tubo de borracha provoca adelgaçamento da sua parede (efeito de Poisson). Se o material for velho ou ressecado, esse afinamento lateral gera microfissuras e rutura súbita durante procedimentos de colheita de sangue."
   },
@@ -442,17 +446,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Quando uma força tangencial é aplicada paralelamente à superfície de um corpo, provocando o deslizamento relativo entre planos adjacentes de matéria, que tipo de solicitação mecânica está a ser exercida?",
     "options": [
-      "Tensão de Cisalhamento (ou corte, τ).",
-      "Tensão de Compressão axial pura.",
-      "Pressão Hidrostática isotrópica.",
-      "Tração uniaxial perpendicular."
+      "Tensão de Cisalhamento (ou tensão de corte, τ = F_paralela / A), que deforma o corpo angularmente por deslizamento.",
+      "Tensão de Compressão axial pura, que atua perpendicularmente à secção transversal reduzindo o comprimento do eixo.",
+      "Pressão Hidrostática isotrópica, que comprime o volume do corpo com a mesma intensidade em todas as direções espaciais.",
+      "Tração uniaxial pura, que atua perpendicularmente à secção transversal afastando os planos atómicos longitudinalmente."
     ],
     "correctIndex": 0,
     "explanation": "A tensão de cisalhamento (shear stress, denotada por τ) surge quando as forças aplicadas atuam tangencialmente (paralelas) ao plano da secção de área: τ = F_tangencial / A. Ela deforma o corpo alterando os seus ângulos internos (distorção angular), como quando se empurra a capa superior de um livro grosso assente numa mesa.",
     "distractorAnalysis": [
-      "Está incorreta: refere-se a forças normais dirigidas perpendicularmente para o interior do material, encurtando o seu eixo.",
-      "Está incorreta: descreve forças compressivas iguais em todas as direções espaciais aplicadas por um fluido envolvente.",
-      "Está incorreta: descreve forças normais dirigidas perpendicularmente para o exterior, alongando o corpo."
+      "Está incorreta: a compressão pura atua perpendicularmente (normal) à superfície e não tangencialmente por deslizamento.",
+      "Está incorreta: a pressão hidrostática é uma solicitação normal multidirecional uniforme e não uma tensão de corte superficial.",
+      "Está incorreta: a tração uniaxial atua perpendicularmente afastando as camadas da secção transversal e não tangencialmente."
     ],
     "nursingApplication": "Na pele de um doente acamado com a cabeceira elevada a mais de 30°, o corpo tende a escorregar para o fundo da cama por gravidade enquanto a pele fica retida no lençol por atrito. Isso gera tensões de cisalhamento devastadoras nos tecidos subcutâneos profundos, que deformam e ocluem os vasos perfurantes, acelerando a necrose e o surgimento de lesões por pressão."
   },
@@ -461,17 +465,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "A resistência à torção de uma estrutura cilíndrica (como um osso longo ou o eixo de um equipamento) depende criticamente de que parâmetro geométrico?",
     "options": [
-      "Do Momento Polar de Inércia da secção transversal (J), que nos cilindros circulares é diretamente proporcional à quarta potência do raio (r⁴).",
-      "Apenas do comprimento do cilindro, sendo completamente independente do raio.",
-      "Da cor e textura rugosa externa do revestimento da superfície.",
-      "Da velocidade de rotação expressa em radianos por hora."
+      "Do comprimento longitudinal total do cilindro, sendo a rigidez à torção estritamente independente do seu diâmetro.",
+      "Do Momento Polar de Inércia da secção transversal (J), que nos cilindros é proporcional à quarta potência do raio (r⁴).",
+      "Da rugosidade superficial e do coeficiente de atrito estático desenvolvido entre a face externa e os tecidos vizinhos.",
+      "Da velocidade angular de rotação expressa em radianos por minuto, independendo da geometria da secção transversal."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "A rigidez e resistência à torção dependem do Momento Polar de Inércia (J) da secção transversal (para uma haste circular maciça, J = π · r⁴ / 2). Por depender da quarta potência do raio (r⁴), duplicar o raio externo de um cilindro ou osso aumenta a sua resistência à torção em dezasseis vezes (2⁴ = 16) para o mesmo material.",
     "distractorAnalysis": [
-      "Está incorreta porque , pois a geometria da secção transversal (especialmente o raio) é o determinante primário da resistência à torção.",
-      "Está incorreta: refere atributos visuais superficiais sem qualquer relevância mecânica estrutural.",
-      "Está incorreta: descreve cinemática de rotação, não resistência estrutural estática."
+      "Está incorreta: o diâmetro da secção transversal é o fator dominante na resistência à torção através do termo r⁴.",
+      "Está incorreta: o atrito superficial externo não altera a resistência mecânica interna à torção estrutural do cilindro.",
+      "Está incorreta: a resistência à torção é uma propriedade de rigidez geométrica e elástica e não da velocidade cinemática."
     ],
     "nursingApplication": "Ao rodar um doente na cama segurando nos pés ou pernas com o tronco imobilizado, o enfermeiro gera momentos de torção sobre a diáfise da tíbia e fémur. Em doentes com osteoporose severa (onde o osso esponjoso e cortical perderam massa interna), forças inadvertidas de torção podem provocar fraturas espiroides com facilidade."
   },
@@ -480,17 +484,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Quando um elemento estrutural reto (como uma tábua de transferência ou um fémur) é submetido a uma solicitação de flexão mecânica, qual é o perfil de tensões gerado no seu interior?",
     "options": [
-      "O bordo côncavo (interno) fica sob compressão, o bordo convexo (externo) fica sob tração, e na linha neutra central a tensão axial é rigorosamente nula.",
-      "Todas as fibras internas ficam submetidas exclusivamente a tração de intensidade uniforme.",
-      "Todas as fibras internas ficam submetidas exclusivamente a compressão isotrópica.",
-      "A tensão axial é máxima exatamente no centro geométrico e nula em ambas as bordas superficiais."
+      "Tensões de compressão pura e uniforme em toda a secção transversal, sem que ocorra qualquer gradiente de deformação.",
+      "Tensões de cisalhamento isotrópico puras que anulam a linha neutra central e duplicam a espessura da estrutura.",
+      "Tensões de tração na superfície convexa superior e tensões de compressão na superfície côncava inferior da viga.",
+      "Ausência de tensões internas mensuráveis devido à redistribuição hidrostática da carga ao longo do comprimento total."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "Na flexão simples, a curvatura produz encurtamento das fibras longitudinais no lado interno da curva (gerando tensões de compressão) e alongamento das fibras no lado externo da curva (gerando tensões de tração). A transição suave entre tração e compressão define a 'linha neutra' (ou superfície neutra), onde não há deformação nem tensão axial (σ = 0).",
     "distractorAnalysis": [
-      "Está incorreta: ignora a curvatura que obriga um dos lados a encurtar-se em compressão.",
-      "Está incorreta: ignora o alongamento imposto às fibras exteriores convexas.",
-      "Está incorreta: inverte completamente o gradiente real: a tensão na flexão é zero no centro e máxima nas periferias mais afastadas da linha neutra (σ = M · y / I)."
+      "Está incorreta: na flexão existe sempre um gradiente: tração numa face e compressão na oposta, separadas pela linha neutra.",
+      "Está incorreta: o cisalhamento na flexão é máximo na linha neutra e não uniforme em toda a estrutura nem isotrópico.",
+      "Está incorreta: qualquer flexão sob carga gera momentos fletores que produzem tensões internas mensuráveis na peça."
     ],
     "nursingApplication": "Quando um doente idoso sofre uma queda de lado sobre o grande trocânter, o colo do fémur é forçado em flexão violenta: o bordo inferior fica sob compressão e o bordo superior sob tração extrema. Como o osso resiste muito menos à tração do que à compressão, a fratura inicia-se habitualmente por rasgo no bordo superior sob tração."
   },
@@ -499,17 +503,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "O fenómeno mecânico conhecido como 'Fadiga dos Materiais' caracteriza-se por:",
     "options": [
-      "Fratura catastrófica de uma estrutura após a aplicação repetida e cíclica de tensões mecânicas, cujos valores de pico são muito inferiores ao limite de rotura estático do material.",
-      "Amolecimento térmico imediato provocado pela luz solar incidente em materiais metálicos.",
-      "Aumento permanente da rigidez e resistência de um sólido após permanecer em repouso absoluto.",
-      "Oxidação química superficial sem qualquer degradação estrutural interna."
+      "A perda instantânea de elasticidade linear induzida pela oxidação eletroquímica acelerada do biomaterial metálico.",
+      "O aumento progressivo do Módulo de Young provocado pela absorção contínua de iões de cálcio e fosfato plasmáticos.",
+      "A deformação plástica massiva instantânea que ocorre logo no primeiro ciclo de solicitação biomecânica normal.",
+      "A falha mecânica estrutural sob cargas cíclicas repetitivas com tensões inferiores à resistência à tração estática."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "A fadiga dos materiais é o processo de degradação estrutural progressiva e localizada que ocorre quando um componente é submetido a tensões mecânicas oscilatórias ou cíclicas repetidas (milhares ou milhões de ciclos). Mesmo que as tensões sejam muito menores do que a tensão de rotura estática, microfissuras iniciam-se e propagam-se lentamente até causarem uma fratura súbita e imprevisível.",
     "distractorAnalysis": [
-      "Está incorreta: confunde fadiga mecânica com degradação termoplástica ou fotodegradação.",
-      "Está incorreta: descreveria um endurecimento espontâneo inexistente na ausência de tratamentos metalúrgicos.",
-      "Está incorreta: descreve corrosão química passivadora simples, ignorando o colapso mecânico cíclico."
+      "Está incorreta: a fadiga é um processo mecânico de propagação de microfissuras cíclicas e não corrosão química pura.",
+      "Está incorreta: a fadiga não aumenta a rigidez (Módulo de Young), provocando antes a perda de integridade mecânica.",
+      "Está incorreta: a fadiga caracteriza-se precisamente por ocorrer após muitos ciclos de carga e não no primeiro ciclo."
     ],
     "nursingApplication": "Fraturas de stress (fadiga óssea) nos metatarsos ocorrem em atletas ou doentes que iniciam marcha intensiva após repouso prolongado. Do mesmo modo, hastes de próteses ortopédicas de anca ou joelho podem falhar por fadiga após 10 a 15 anos de ciclos diários de marcha (cerca de 1 a 2 milhões de passos por ano), exigindo monitorização clínica de dores inexplicadas na anca."
   },
@@ -518,17 +522,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Os cateteres venosos periféricos modernos são frequentemente fabricados em Poliuretano (PUR) em detrimento do Teflon tradicional (FEP). Qual é a principal vantagem biofísica e reológica do poliuretano quando introduzido no corpo humano?",
     "options": [
-      "Possui amolecimento térmico in vivo, tornando-se mais flexível (menor Módulo de Young) à temperatura corporal de 37 °C, o que reduz o traumatismo mecânico na parede endotelial e o risco de flebite.",
-      "Apresenta rigidez infinita permanente para perfurar a pele sem necessidade de agulha guia de aço.",
-      "Dissolve-se espontaneamente no sangue após 48 horas de cateterização venosa.",
-      "Bloqueia completamente o fluxo de sangue na veia para evitar extravasamentos."
+      "Apresenta amolecimento térmico à temperatura de 37 °C, reduzindo o Módulo de Young e a irritação mecânica vascular.",
+      "Comporta-se como um biomaterial metálico inerte com rigidez de duzentos GPa que impede qualquer deformação da veia.",
+      "Endurece bruscamente no sangue para manter o calibre do vaso desobstruído contra o colapso venoso circundante.",
+      "Dissolve-se enzimaticamente ao fim de vinte e quatro horas por ação das esterases do plasma sanguíneo periférico."
     ],
     "correctIndex": 0,
     "explanation": "O poliuretano (PUR) é um polímero termossensível: à temperatura ambiente (cerca de 20-22 °C) possui rigidez suficiente para facilitar a punção e progressão venosa, mas ao entrar na corrente sanguínea e atingir 37 °C sofre um relaxamento reológico acentuado, reduzindo significativamente o seu Módulo de Young (amolece até 50-70%). Isto permite que o cateter acompanhe as curvaturas anatómicas da veia, diminuindo drasticamente a tensão de atrito sobre a íntima vascular e a incidência de flebites mecânicas.",
     "distractorAnalysis": [
-      "Está incorreta porque : o poliuretano flexível necessita sempre da agulha metálica introdutora para vencer a resistência da pele.",
-      "Está incorreta: descreve um material biodegradável de reabsorção rápida, totalmente desadequado para manter um acesso venoso pérvio.",
-      "Está incorreta: descreve um trombo oclusivo iatrogénico catastrófico, contrariando o objetivo da fluidoterapia."
+      "Está incorreta: o poliuretano é um elastómero polimérico flexível com Módulo de Young de dezenas a centenas de MPa e não 200 GPa.",
+      "Está incorreta: o cateter amolece com a temperatura corporal (comportamento termoplástico favorável) e não endurece.",
+      "Está incorreta: cateteres intravasculares são polímeros não degradáveis a curto prazo para garantir permanência segura."
     ],
     "nursingApplication": "A escolha do material do cateter é um indicador de excelência nos cuidados de enfermagem: ao administrar terapêutica intravenosa contínua num doente agitado ou em doentes pediátricos/idosos, cateteres de poliuretano garantem maior sobrevida funcional do acesso vascular e reduzem o risco de infiltrações e flebites associadas a movimentos bruscos do membro."
   },
@@ -537,17 +541,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "O fenómeno de 'Kinking' (quinagem ou colapso por flexão acentuada) observado em tubos de drenagem cirúrgica ou cateteres decorre da perda de estabilidade geométrica da secção circular. Que propriedade geométrica do tubo confere maior resistência à quinagem?",
     "options": [
-      "Maior espessura da parede do tubo e maior diâmetro externo, o que aumenta o Momento de Inércia da secção transversal.",
-      "Comprimento extremamente longo do cateter (superior a 2 metros).",
-      "Transparência ótica absoluta da borracha medicinal.",
-      "Secção transversal elíptica extremamente achatada sem reforço."
+      "A rotura microscópica precoce de todas as pontes cruzadas entre moléculas de tropocolagénio no tendão biológico.",
+      "O recrutamento e estiramento progressivo das fibras de colagénio onduladas ('toe region'), aumentando a rigidez.",
+      "Uma fase de deformação plástica irreversível que impede o ligamento de recuperar o seu comprimento inicial em repouso.",
+      "Um aumento exponencial da energia térmica dissipada por fricção atómica entre os fascículos de fibrina celular."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "A resistência de um tubo à flexão e ao colapso circunferencial (kinking) depende do momento de inércia da sua secção transversal (I = π(d_ext⁴ - d_int⁴)/64). Uma parede mais espessa ou a inclusão de estrias circunferenciais/espirais metálicas (tubos armados) aumenta enormemente a rigidez contra a ovalização e quinagem, mantendo a luz interna desobstruída mesmo em curvas apertadas.",
     "distractorAnalysis": [
-      "Está incorreta: aumenta a probabilidade de dobras e laços indesejados ao longo do percurso do tubo.",
-      "Está incorreta: é uma característica ótica útil para visualizar líquidos drenados, mas sem relevância na rigidez mecânica de kinking.",
-      "Está incorreta: descreve um perfil já pré-colapsado que bloqueia o fluxo com mínima flexão adicional."
+      "Está incorreta: a região inicial de 'toe region' é perfeitamente elástica e fisiológica, sem rotura estrutural de fibras.",
+      "Está incorreta: a deformação nessa fase é reversível e elástica, longe do limite elástico de escoamento plástico.",
+      "Está incorreta: a resposta inicial visa o alinhamento das ondulações das fibrilas de colagénio e não a dissipação térmica."
     ],
     "nursingApplication": "Na vigilância de doentes com drenos torácicos ou cateteres de diálise peritoneal, a quinagem (kinking) do circuito provoca interrupção imediata da drenagem, podendo originar pneumotórax hipertensivo ou tamponamento pericárdico. O enfermeiro deve inspecionar rotineiramente a trajetória dos tubos e garantir que não ficam sob o corpo do doente."
   },
@@ -556,17 +560,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na comparação reológica entre luvas de procedimento clínico fabricadas em Látex de borracha natural, Borracha de Nitrilo e Vinil (PVC), qual das opções caracteriza com precisão o comportamento mecânico do Vinil?",
     "options": [
-      "O Vinil possui baixo módulo de elasticidade e elevadíssima deformação plástica permanente, o que resulta em perda rápida de adaptação anatómica à mão e menor resistência a microperfurações sob tração.",
-      "O Vinil é o elastómero mais elástico do mundo, recuperando 100% da sua forma mesmo após esticado cinco vezes o seu comprimento.",
-      "O Vinil é totalmente impenetrável por qualquer agulha cirúrgica devido à sua rigidez diamantífera.",
-      "O Vinil reage quimicamente com o oxigénio do ar, duplicando a sua espessura a cada 10 minutos de uso."
+      "A recuperação instantânea da forma geométrica primitiva logo que a solicitação mecânica externa atinge o pico.",
+      "A diminuição da massa inercial do biomaterial provocada pela evaporação contínua de água intersticial confinada.",
+      "A deformação lenta, progressiva e contínua do polímero ao longo do tempo sob uma tensão mecânica constante mantida.",
+      "A fratura frágil repentina do implante sem qualquer alteração prévia mensurável das dimensões da peça protética."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "O policloreto de vinila (vinil) plastificado não é um elastómero verdadeiro: apresenta baixa memória elástica (alta taxa de relaxamento de tensões e deformação plástica irreversível quando esticado). Ao calçar e movimentar os dedos, a luva de vinil deforma-se permanentemente, criando folgas e microfissuras na estrutura molecular, oferecendo uma barreira mecânica significativamente inferior contra agentes biológicos do que o látex ou o nitrilo.",
     "distractorAnalysis": [
-      "Está incorreta: descreve as propriedades mecânicas de excelência do látex de borracha natural (elastómero de alto retorno elástico).",
-      "Está incorreta porque ; nenhuma luva de procedimento resiste à perfuração de agulhas hipodérmicas afiadas.",
-      "Está incorreta: é uma afirmação fantasiosa sem sustentação química."
+      "Está incorreta: a recuperação elástica instantânea é o oposto da fluência (que é um fenómeno viscoelástico com atraso temporal).",
+      "Está incorreta: a fluência em sólidos poliméricos não envolve perda de massa atómica ou evaporação de componentes.",
+      "Está incorreta: a fluência envolve deformação viscoelástica gradual dependente do tempo e não uma fratura frágil imediata."
     ],
     "nursingApplication": "Normas internacionais de controlo de infeção recomendam que os enfermeiros evitem luvas de vinil no manuseamento de fluidos corporais de alto risco (sangue, exsudados abundantes) ou citotóxicos, priorizando o nitrilo ou látex, que oferecem maior resistência à tração e retenção de integridade mecânica durante o procedimento."
   },
@@ -575,17 +579,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "A eficácia terapêutica das meias de compressão elástica graduada na prevenção de Trombose Venosa Profunda (TVP) é explicada biofisicamente pela Lei de Laplace. De acordo com esta lei para um cilindro oco (P = T / r), como varia a pressão de compressão (P) exercida sobre a perna?",
     "options": [
-      "A pressão exercida pelo tecido elástico é inversamente proporcional ao raio do membro (P = T / r); para uma mesma tensão elástica da malha (T), a pressão é máxima no tornozelo (menor raio) e diminui progressivamente em direção à coxa (maior raio).",
-      "A pressão exercida aumenta com o quadrado do raio, sendo máxima na coxa e nula no tornozelo.",
-      "A pressão é estritamente uniforme e independente do raio anatómico do membro.",
-      "A pressão exercida depende unicamente da temperatura externa do quarto do doente."
+      "O aumento contínuo da resistência à tração do tecido biológico quando submetido a um alongamento estático mantido.",
+      "A conversão espontânea da deformação viscoelástica reversível numa fratura frágil por clivagem molecular rápida.",
+      "A elevação contínua da pressão osmótica intersticial que atrai fluido aquoso para o interior do ligamento lesado.",
+      "A diminuição progressiva da tensão necessária para manter uma deformação constante ao longo do tempo no material."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "Pela Lei de Laplace aplicada a membranas cilíndricas elásticas em equilíbrio, a pressão transmural é dada por P = T / r, onde T é a tensão tangencial da malha têxtil e r é o raio de curvatura local do membro. Devido à conicidade natural da perna humana, o raio r é muito menor no tornozelo do que na barriga da perna ou coxa. Portanto, mesmo com tensão T uniforme ou ligeiramente decrescente, a pressão P é naturalmente mais alta no tornozelo (ex: 18-20 mmHg) e decai em direção proximal (ex: 8-10 mmHg na coxa), criando o gradiente pressórico indispensável para impulsionar o retorno venoso.",
     "distractorAnalysis": [
-      "Está incorreta: descreve uma relação inversa que estrangularia o fluxo sanguíneo na coxa e provocaria estase venosa distal catastrófica.",
-      "Está incorreta: ignora a dependência geométrica do raio na Lei de Laplace.",
-      "Está incorreta: confunde leis biomecânicas fundamentais com variáveis ambientais secundárias."
+      "Está incorreta: na relaxação de tensão a força necessária para manter o comprimento diminui e não aumenta com o tempo.",
+      "Está incorreta: a relaxação é um fenómeno viscoelástico de dissipação interna de tensões e não fratura mecânica por clivagem.",
+      "Está incorreta: a relaxação de tensões descreve o comportamento mecânico da matriz sólida e não a pressão osmótica capilar."
     ],
     "nursingApplication": "A medição correta do perímetro do tornozelo, gémeos e coxa do doente é um cuidado de enfermagem indeclinável antes de prescrever ou colocar meias de compressão. Usar meias de tamanho incorreto (ou permitir que a meia enrole na extremidade superior, reduzindo o raio e multiplicando a tensão) cria um anel de constrição que atua como garrote patológico, favorecendo a trombose venosa."
   },
@@ -594,17 +598,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "A calibração e especificação dos fios de sutura cirúrgica segundo a Farmacopeia Americana (escala USP, ex: 2-0, 3-0, 4-0) baseia-se fundamentalmente em quais propriedades mecânicas e físicas?",
     "options": [
-      "No diâmetro físico do fio e na sua carga de rotura mínima por tração (tensile strength) com e sem nó cirúrgico.",
-      "No índice de refração ótica e absorção de radiação infravermelha pelo monofilamento.",
-      "Na condutividade elétrica do fio quando imerso em solução salina a 0,9%.",
-      "No peso molecular dos conservantes bactericidas adicionados à embalagem estéril."
+      "A área entre as curvas de carga e descarga que quantifica a energia mecânica dissipada sob a forma de calor.",
+      "A rigidez elástica máxima do material que define a velocidade de propagação de ondas ultrassónicas transversais.",
+      "O tempo decorrido entre a aplicação inicial da força de tração e a ocorrência da fratura catastrófica final.",
+      "A variação do Módulo de Young que ocorre exclusivamente durante a transição da fase plástica para o estado líquido."
     ],
     "correctIndex": 0,
     "explanation": "A classificação USP padroniza os fios cirúrgicos pelo seu diâmetro milimétrico e pela resistência mecânica à tração (tensão de rotura): quanto maior for o número de zeros (ex: 6-0 vs 2-0), menor é o calibre (diâmetro mais fino) e menor é a força absoluta de tração necessária para romper o fio. A norma exige ainda testes rigorosos de resistência com o nó realizado, pois o nó introduz concentrações de tensão de cisalhamento locais que reduzem a força do fio em até 50%.",
     "distractorAnalysis": [
-      "Está incorreta: foca-se em propriedades óticas irrelevantes para a contenção mecânica da ferida cirúrgica.",
-      "Está incorreta: foca-se em condutividade elétrica, parâmetro sem relação com a escala de sutura.",
-      "Está incorreta: refere-se a adjuvantes químicos de acondicionamento sem correlação com o calibre USP."
+      "Está incorreta: a rigidez máxima corresponde ao declive na fase elástica (Módulo de Young) e não à área do ciclo de histerese.",
+      "Está incorreta: o tempo até à fratura em fadiga é a vida em fadiga (ciclos N) e não a histerese de um ciclo elástico.",
+      "Está incorreta: a histerese mede a energia mecânica não devolvida no retorno elástico e ocorre no estado sólido elástico."
     ],
     "nursingApplication": "Na remoção de pontos cirúrgicos ou na colaboração em pequenas cirurgias, o enfermeiro deve reconhecer que um fio 6-0 (usado na face por razões estéticas) tem baixíssima resistência à tração e quebra facilmente com pinçamento inadequado, enquanto um fio 1 ou 2 (usado em laparotomias para encerrar aponevroses resistentes) suporta elevadíssimas tensões mecânicas de tração."
   },
@@ -613,17 +617,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na biofísica dos materiais poliméricos hospitalares, o que se entende pelo conceito de 'Relaxamento de Tensões' (stress relaxation)?",
     "options": [
-      "A diminuição progressiva da tensão mecânica interna ao longo do tempo quando o material é mantido sob uma deformação constante pré-estabelecida.",
-      "A recuperação instantânea da forma geométrica sem dissipação de calor.",
-      "A quebra espontânea das ligações peptídicas devido à luz fluorescente do quarto.",
-      "O aumento contínuo da pressão interna de um balão sem entrada de gás adicional."
+      "A tensão na parede é inversamente proporcional ao raio, diminuindo significativamente quando a artéria se dilata em aneurisma.",
+      "A tensão na parede aumenta com o raio do vaso e com a pressão transmural, sendo inversamente proporcional à espessura.",
+      "A espessura da parede não tem qualquer efeito mecânico sobre a tensão de tração circunferencial suportada pelos tecidos.",
+      "A tensão na parede depende exclusivamente da viscosidade do sangue, sendo independente da pressão hidrostática interna."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "O relaxamento de tensões (stress relaxation) é uma manifestação típica de materiais viscoelásticos: quando uma amostra de polímero é submetida a uma deformação instantânea fixa (ε = constante) e assim é mantida, as cadeias macromoleculares reorganizam-se lentamente internamente, aliviando o estresse elástico. Como consequência, a tensão interna σ(t) decresce monotonicamente com o tempo.",
     "distractorAnalysis": [
-      "Está incorreta: descreve a elasticidade perfeita ideal de Hooke sem efeitos viscosos temporais.",
-      "Está incorreta: confunde degradação química fotoquímica com resposta mecânica viscoelástica.",
-      "Está incorreta: viola a Lei de Boyle e as leis da termodinâmica de gases ideais."
+      "Está incorreta: segundo Laplace (T = P·r / e), o aumento do raio eleva a tensão circunferencial na parede vascular.",
+      "Está incorreta: a espessura parietal (e) surge no denominador da equação, aliviando a tensão de corte circunferencial.",
+      "Está incorreta: a viscosidade sanguínea afeta a perda de carga ao longo do tubo e não a tensão estática da parede vascular."
     ],
     "nursingApplication": "Quando o enfermeiro aplica uma fita adesiva, ligadura compressiva ou garrote de borracha no braço de um doente, a tensão de compressão inicial é máxima nos primeiros minutos e diminui progressivamente na primeira meia hora devido ao relaxamento de tensões do polímero. Se for necessária uma compressão hemostática mantida, o enfermeiro deve reavaliar e reajustar periodicamente a pressão aplicada."
   },
@@ -632,17 +636,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "O fenómeno viscoelástico complementar ao relaxamento de tensões, no qual um material se deforma de modo contínuo e progressivo sob a ação de uma carga ou tensão mecânica constante ao longo do tempo, designa-se por:",
     "options": [
-      "Fluência mecânica (creep).",
-      "Ressonância harmónica simples.",
-      "Magnetostrição polarizada.",
-      "Dureza de Vickers estática."
+      "O colagénio é responsável pela elasticidade reversível a baixas cargas e a elastina confere rigidez estrutural máxima.",
+      "Ambas as proteínas apresentam rigorosamente o mesmo Módulo de Young e a mesma capacidade de deformação sob tração.",
+      "O colagénio confere elevada resistência à tração e rigidez, enquanto a elastina proporciona grande extensibilidade e recuo.",
+      "A elastina é um mineral cristalino incompressível e o colagénio comporta-se como um fluido puramente newtoniano."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "A fluência (creep) é a deformação permanente ou dependente do tempo que um material sólido sofre quando submetido a uma tensão mecânica constante (σ = constante) durante um período prolongado. Ocorre tanto em biomateriais poliméricos (como os tubos endotraqueais e colchões) como em tecidos biológicos (ligamentos, tendões e discos intervertebrais).",
     "distractorAnalysis": [
-      "Está incorreta: descreve a oscilação de alta amplitude quando a frequência externa coincide com a frequência natural de um sistema.",
-      "Está incorreta: refere-se à alteração geométrica de materiais ferromagnéticos na presença de campos magnéticos.",
-      "Está incorreta: é um método metalúrgico de ensaio de indentação para medir dureza."
+      "Está incorreta: inverte os papéis fisiológicos: o colagénio é rígido (E ~ 1 GPa) e a elastina é muito distensível (E ~ 1 MPa).",
+      "Está incorreta: o Módulo de Young do colagénio é cerca de mil vezes superior ao da elastina em tecidos saudáveis.",
+      "Está incorreta: tanto a elastina como o colagénio são proteínas fibrosas estruturais e não minerais ou fluidos viscosos."
     ],
     "nursingApplication": "A fluência (creep) explica por que a pele de um doente obeso ou acamado continua a deformar-se e adelgaçar-se ao longo de horas de apoio estático sobre o sacro, mesmo que o peso corporal não aumente. Explica também a perda progressiva da pressão de oclusão de clamps plásticos descartáveis aplicados em linhas de infusão ao longo de vários dias."
   },
@@ -651,17 +655,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Quando um elastómero (como a borracha de um tubo de látex ou o tecido elástico de uma cinta de sustentação) é submetido a um ciclo de carga (estiramento) seguido de descarga (retorno elástico), a curva do ciclo forma uma área fechada. Este fenómeno físico é conhecido como:",
     "options": [
-      "Histerese elástica, representando a energia mecânica dissipada sob a forma de calor durante o ciclo de deformação.",
-      "Sublimação elástica, representando a perda de massa gasosa das macromoléculas.",
-      "Isotropia perfeita, indicando que não há qualquer atrito molecular interno.",
-      "Rigidez infinita de Young sem dependência térmica."
+      "Módulo de Young de cerca de 200 GPa, apresentando rigidez idêntica ao aço cirúrgico inoxidável utilizado em placas.",
+      "Módulo de Young inferior a 1 MPa, comportando-se com elasticidade semelhante à da cartilagem articular hialina.",
+      "Módulo de Young nulo, porque o osso é um elemento vivo que não obedece aos princípios da mecânica dos materiais.",
+      "Módulo de Young de cerca de 15 a 20 GPa, significativamente menor do que ligas de titânio (110 GPa) ou aço (200 GPa)."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "A histerese mecânica (ou elástica) é a diferença entre a energia despendida para deformar um material elástico durante o carregamento e a energia devolvida por esse material durante a descompressão. A curva de descarga situa-se abaixo da curva de carga no diagrama σ-ε; a área interna deste 'laço de histerese' corresponde rigorosamente à energia dissipada internamente pelo atrito viscoso molecular sob forma de calor.",
     "distractorAnalysis": [
-      "Está incorreta: confunde transição de fase sólido-gás com resposta mecânica de histerese.",
-      "Está incorreta porque : a presença de histerese comprova a existência de atrito viscoso interno e não-idealidade mecânica.",
-      "Está incorreta: contradiz a própria definição de um elastómero altamente deformável e complacente."
+      "Está incorreta: o osso cortical humano tem Módulo de Young em torno de 15-20 GPa e não 200 GPa (que é a rigidez do aço).",
+      "Está incorreta: 1 MPa é a ordem de grandeza da rigidez da cartilagem articular ou elastina e não do osso cortical rígido.",
+      "Está incorreta: os tecidos biológicos obedecem plenamente às leis da física, mecânica contínua e elasticidade clássica."
     ],
     "nursingApplication": "Almofadas e colchões hospitalares 'viscoelásticos' (espumas tipo 'memory foam') baseiam o seu sucesso na elevada histerese: ao absorverem o impacto do peso corporal do doente, dissipam a energia mecânica em calor em vez de a devolverem elasticamente como uma mola de colchão tradicional, amortecendo picos de pressão sobre o sacro e trocânteres."
   },
@@ -670,17 +674,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "No contexto da rigidez e resistência de agulhas hipodérmicas e cânulas cirúrgicas fabricadas em aço inoxidável austenítico (AISI 304/316), qual das seguintes afirmações sobre a sua secção transversal é cientificamente VERDADEIRA?",
     "options": [
-      "Quanto maior o diâmetro externo da cânula (menor Gauge na escala Birmingham), maior é a rigidez à flexão da agulha, reduzindo a probabilidade de desvio da trajetória durante punções profundas.",
-      "Agulhas finas de 30G possuem muito maior rigidez mecânica à flexão do que agulhas de 18G.",
-      "O bisel trifacetado afeta a dureza atómica de todo o corpo cilíndrico do aço inoxidável.",
-      "A agulha comporta-se como um fluido de Bingham quando submetida a forças de compressão."
+      "A haste metálica mais rígida assume a carga mecânica, privando o osso de tensão e induzindo reabsorção óssea periprotética.",
+      "O osso periprotético sofre hipertrofia acelerada devido ao aumento excessivo da estimulação piezoelétrica pela prótese.",
+      "A prótese dissipa a totalidade da força peso do doente sob a forma de calor metabólico na medula óssea diafisária.",
+      "Ocorre consolidação óssea precoce porque o titânio atua como catalisador químico na síntese de hidroxiapatite pelos osteoblastos."
     ],
     "correctIndex": 0,
     "explanation": "Na escala Birmingham Gauge utilizada internacionalmente em enfermagem e medicina, o calibre é inverso ao diâmetro numérico: agulhas de 18G ou 16G têm grande diâmetro externo (~1,2 a 1,6 mm), enquanto agulhas de 27G ou 30G têm diâmetro minúsculo (~0,3 mm). Como a rigidez à flexão de um tubo cilíndrico depende da quarta potência do diâmetro externo, uma agulha de 18G é dezenas de vezes mais rígida à flexão do que uma agulha fina, não fletindo facilmente ao perfurar tecidos densos.",
     "distractorAnalysis": [
-      "Está incorreta: é um erro crassíssimo: agulhas de 30G fletem com extrema facilidade devido ao seu diâmetro microscópico.",
-      "Está incorreta porque : a geometria do bisel afeta a capacidade de corte tecidual local, não a dureza intrínseca do metal da haste.",
-      "Está incorreta: é um contrassenso: o aço inoxidável é um sólido cristalino elástico-plástico, não um fluido de escoamento."
+      "Está incorreta: pela Lei de Wolff a falta de estímulo mecânico gera reabsorção e osteopenia (atrofia) e não hipertrofia.",
+      "Está incorreta: a prótese suporta as cargas por deformação elástica mecânica e não por conversão energética em calor.",
+      "Está incorreta: o titânio é biocompatível e osteocondutor mas não atua como catalisador metabólico de síntese mineral."
     ],
     "nursingApplication": "Na punção lombar (para colheita de líquor ou anestesia subaracnoideia), utilizam-se agulhas muito finas (25G a 27G) para minimizar a cefaleia pós-punção por perda liquórica. Contudo, devido à sua baixa rigidez à flexão, o enfermeiro que assiste o procedimento sabe que o médico utiliza um introdutor rígido metálico de maior calibre para garantir a trajetória reta inicial sem desvios ou empenamento da agulha fina."
   },
@@ -689,17 +693,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Qual das seguintes pinças cirúrgicas hemostáticas frequentemente manipuladas por enfermeiros funciona como uma alavanca de 1.ª classe com sistema de travamento por cremalheira?",
     "options": [
-      "Pinça de Kocher (ou pinça de Pean/Kelly).",
-      "Pinça anatómica de dissecação reta.",
-      "Pinça de Adson com dentes de rato.",
-      "Pinça de Michel para colocação de agrafos dérmicos."
+      "O polipropileno dissolve-se no sangue em quarenta e oito horas, enquanto a poliglactina permanece inerte durante toda a vida.",
+      "O polipropileno é um monofilamento não reabsorvível, enquanto a poliglactina é um polímero trançado reabsorvível por hidrólise.",
+      "Ambos são fios de seda biológica trançada que perdem a resistência mecânica de tração logo na primeira semana pós-cirúrgica.",
+      "O polipropileno é absorvido por fagocitose celular e a poliglactina é expelida intacta através das glândulas sudoríparas."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "As pinças hemostáticas de Kocher, Kelly, Pean e Crile possuem duas hastes que se cruzam num parafuso central fixo (fulcro intermediário): as pegas manuais situam-se de um lado e as mandíbulas de apreensão do outro lado. Isto define rigorosamente uma alavanca de 1.ª classe (interfixa). A cremalheira na base das pegas permite travar o sistema mecânico em equilíbrio estático sob tensão elástica constante.",
     "distractorAnalysis": [
-      "Está incorreta: são pinças de dissecção de lâminas flexíveis soldadas na base, sendo alavancas de 3.ª classe.",
-      "Está incorreta: possui mecanismo articulado complexo multieixo adaptado para dobrar lâminas de agrafos, não se enquadrando como alavanca simples elementar clássica.",
-      "Está incorreta: possui mecanismo articulado complexo multieixo adaptado para dobrar lâminas de agrafos, não se enquadrando como alavanca simples elementar clássica."
+      "Está incorreta: o polipropileno (Prolene) é um material não degradável sintético e não se dissolve em quarenta e oito horas.",
+      "Está incorreta: nenhum deles é seda natural; são polímeros sintéticos desenvolvidos com perfis mecânicos controlados.",
+      "Está incorreta: a poliglactina (Vicryl) é hidrolisada na água tecidual e o polipropileno não é eliminado por via sudorípara."
     ],
     "nursingApplication": "Ao clampar um dreno ou vaso sangrante com uma pinça de Kocher, a vantagem mecânica da alavanca de 1.ª classe concentra toda a força dos dedos na extremidade das mandíbulas, produzindo tensões compressivas suficientes para ocluir a luz vascular e assegurar hemostase imediata."
   },
@@ -708,17 +712,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "O silicone de grau medicinal é um dos biomateriais mais empregues em cateteres vesicais de longa duração (Foley) e drenos cirúrgicos. Do ponto de vista mecânico e biológico, qual é a propriedade distintiva do silicone?",
     "options": [
-      "Baixíssimo Módulo de Young (elevada flexibilidade elástica), excelente biocompatibilidade com os tecidos mucosos e resistência prolongada à incrustação mineral e colonização bacteriana.",
-      "Extrema rigidez comparável ao titânio metálico para manter o canal uretral permanentemente dilatado.",
-      "Capacidade de endurecer irreversivelmente em contacto com a urina aquosa.",
-      "Natureza condutora de eletricidade estática para destruir biofilmes por eletrochoque."
+      "Extrema rigidez mecânica equivalente ao titânio metálico para manter o canal uretral permanentemente dilatado e tenso.",
+      "Capacidade intrínseca de sofrer polimerização e endurecer irreversivelmente em contacto íntimo com o fluxo de urina.",
+      "Baixíssimo Módulo de Young (alta flexibilidade), excelente biocompatibilidade mucosa e resistência à incrustação mineral.",
+      "Natureza condutora de eletricidade estática para destruir biofilmes bacterianos intraluminais por microdescargas contínuas."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "O silicone medicinal (polidimetilsiloxano reticulado) é um elastómero com baixíssimo módulo de elasticidade (~1 a 5 MPa), o que lhe confere maciez e enorme complacência elástica. Isso minimiza o trauma mecânico por atrito e erosão sobre a mucosa da uretra e bexiga. Além disso, a sua hidrofobicidade e superfície lisa reduzem a deposição de cristais de estruvite e hidroxiapatite urinários, sendo indicado para cateterismos de até 12 semanas.",
     "distractorAnalysis": [
-      "Está incorreta: causaria lacerações e estenoses severas na uretra masculina se fosse rígido como titânio.",
-      "Está incorreta: descreveria uma falha gravíssima de material que impediria a remoção do cateter da bexiga.",
-      "Está incorreta porque : o silicone é um excelente isolante elétrico e dielétrico."
+      "Está incorreta: sondas uretrais requerem flexibilidade e conformabilidade elástica para não lesionar a mucosa uretral.",
+      "Está incorreta: o silicone é estável e mantém a flexibilidade elástica inalterada sem endurecer no trato urinário.",
+      "Está incorreta: o silicone é um excelente isolador dielétrico e não gera descargas elétricas na bexiga do doente."
     ],
     "nursingApplication": "Em doentes que necessitam de algaliação de longa permanência (ex: lesões medulares), o enfermeiro opta por sondas vesicais 100% silicone em detrimento de sondas de látex plastificado, reduzindo a frequência de obstruções mecânicas por incrustação e prevenindo reações anafiláticas ao látex."
   },
@@ -727,17 +731,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Quando um enfermeiro utiliza um cortador de gesso mecânico manual (alicate de gesso de Stille) para retirar uma tala imobilizadora endurecida, porque é que este instrumento possui braços tão compridos e lâminas tão curtas?",
     "options": [
-      "Para maximizar o braço de potência em relação ao braço de resistência (d_P >> d_R), gerando uma grande vantagem mecânica (VM >> 1) que multiplica a força manual aplicada sobre o gesso.",
-      "Para permitir que o enfermeiro execute cortes a grande distância sem ver o membro do doente.",
-      "Para transformar o alicate numa alavanca de 3.ª classe com ganho de velocidade.",
-      "Para diminuir o peso total do instrumento metálico."
+      "Para permitir que o enfermeiro aplique forças a grande distância sem necessidade de inspecionar a pele sob a imobilização.",
+      "Para transformar o alicate numa alavanca de 3.ª classe com prioridade para a velocidade de deslocamento das pontas de corte.",
+      "Para reduzir a massa inercial total do equipamento metálico tornando a sua esterilização em autoclave mais económica.",
+      "Para maximizar o braço de potência em relação ao de resistência (d_P >> d_R), gerando grande vantagem mecânica (VM >> 1)."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "O alicate de cortar gesso é uma alavanca de 1.ª classe. A Vantagem Mecânica é dada por VM = d_P / d_R. Ao fabricar o instrumento com cabos muito longos (d_P grande, ex: 30 cm) e mordentes/lâminas muito curtos (d_R pequeno, ex: 3 cm), a vantagem mecânica atinge valores de 10 ou mais. Uma força de aperto manual de 100 N exercida pelo enfermeiro traduz-se numa força cortante de 1000 N nas lâminas, superando facilmente o limite de resistência do gesso.",
     "distractorAnalysis": [
-      "Está incorreta: seria uma prática perigosa e negligente; a visualização direta é obrigatória para não lacerar a pele do doente.",
-      "Está incorreta: confunde as classes; o instrumento é de 1.ª classe e privilegia força, não velocidade.",
-      "Está incorreta: é contrária à realidade: cabos longos de aço aumentam a massa total do alicate."
+      "Está incorreta: a segurança da técnica exige supervisão visual contínua para prevenir ferimentos cortantes na pele do doente.",
+      "Está incorreta: o alicate de gesso é uma alavanca de 1.ª classe interfixa com VM >> 1 e não uma alavanca de 3.ª classe.",
+      "Está incorreta: hastes compridas aumentam a massa do instrumento, sendo justificadas unicamente pelo ganho mecânico de força."
     ],
     "nursingApplication": "A aplicação do princípio da alavanca aos instrumentos manuais protege as articulações dos dedos e punhos do enfermeiro contra lesões por esforços repetitivos (LER/DORT), permitindo executar tarefas de grande demanda mecânica com esforço fisiológico controlado."
   },
@@ -746,17 +750,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Durante a tração cutânea de Buck no membro inferior de um doente com fratura do colo femoral enquanto aguarda cirurgia, utiliza-se um sistema com corda, roldana (polia fixa) e peso suspenso de 3 kg. Qual é a função biofísica da roldana fixa neste circuito mecânico?",
     "options": [
-      "Alterar a direção e sentido da força de tração gerada pelo peso suspenso, sem contudo alterar a sua intensidade (módulo da força).",
-      "Duplicar a força peso aplicada, funcionando como uma alavanca de 2.ª classe com VM = 2.",
-      "Eliminar totalmente a aceleração da gravidade sobre o membro fraturado.",
-      "Reduzir o peso do contrapeso suspenso a metade do valor real."
+      "Alterar a direção e sentido da força de tração axial mantendo rigorosamente inalterada a sua intensidade (módulo da força).",
+      "Duplicar a força útil de tração sobre o colo femoral, atuando biomecanicamente como uma alavanca de 2.ª classe com VM = 2.",
+      "Eliminar totalmente o efeito da aceleração gravítica local sobre o segmento anatómico ósseo fraturado em repouso.",
+      "Reduzir o peso do contrapeso suspenso a metade do seu valor real através do amortecimento elástico dos nós da corda."
     ],
     "correctIndex": 0,
     "explanation": "Uma roldana ou polia fixa ideal não confere vantagem mecânica de força (VM = 1): a intensidade da força de tração na corda mantém-se rigorosamente igual à intensidade da força peso do contrapeso (T = P = m · g ≈ 30 N). A sua função biomecânica exclusiva é redirecionar o vetor força: a gravidade puxa o contrapeso verticalmente para baixo, e a roldana desvia a corda para tracionar o membro horizontalmente ao longo do eixo diafisário do fémur.",
     "distractorAnalysis": [
-      "Está incorreta: confunde roldana fixa com roldana móvel (que é a que divide a carga e confere VM = 2).",
-      "Está incorreta: é um absurdo físico; nenhuma polia elimina o campo gravitacional terrestre.",
-      "Está incorreta: confunde mais uma vez com sistemas de talha de polias móveis."
+      "Está incorreta: uma roldana simples fixa não duplica a força motora (VM = 1), servindo apenas para redirecionar o cabo.",
+      "Está incorreta: a roldana fixa não anula o campo gravítico terrestre que atua sobre o membro e o peso suspenso.",
+      "Está incorreta: a tensão no cabo mantém-se uniforme em toda a extensão desprezando o atrito estático nos mancais."
     ],
     "nursingApplication": "Na vigilância de enfermagem à tração de Buck, é vital garantir que o peso permaneça livremente suspenso no ar e que a corda deslize suavemente no sulco da roldana. Se o peso assentar no chão ou se a corda saltar da roldana, o atrito excessivo anula a tração longitudinal, originando contração espástica do fémur e dor intensa no doente."
   },
@@ -765,17 +769,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "O Módulo de Elasticidade Volumétrico (Bulk Modulus, K) é a grandeza mecânica que relaciona a variação de pressão hidrostática exercida sobre um corpo com a sua variação fracionária de volume. Em relação aos tecidos moles do corpo humano (músculos, vísceras e sangue) compostos maioritariamente por água líquida, o que se pode afirmar?",
     "options": [
-      "Apresentam elevadíssimo Módulo Volumétrico (K ≈ 2,2 GPa), comportando-se como corpos praticamente incompressíveis quando submetidos a variações de pressão isotrópica.",
-      "Apresentam Módulo Volumétrico nulo, comprimindo-se instantaneamente até a 1% do seu volume inicial com a pressão atmosférica.",
-      "São muito mais compressíveis do que os gases contidos nos alvéolos pulmonares.",
-      "O seu volume duplica automaticamente sempre que a pressão hidrostática aumenta."
+      "Módulo Volumétrico nulo, comprimindo-se instantaneamente até a 1% do seu volume inicial com a pressão atmosférica normal.",
+      "Elevadíssimo Módulo Volumétrico (K ≈ 2,2 GPa), comportando-se como corpos praticamente incompressíveis sob pressão hidrostática.",
+      "Comportamento altamente compressível com redução acentuada de volume idêntica à dos gases contidos nos alvéolos pulmonares.",
+      "Aumento exponencial do volume tecidual total que duplica espontaneamente sempre que a pressão hidrostática ambiente se eleva."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "A água líquida e os tecidos moles biológicos com alto teor hídrico têm um Módulo de Compressibilidade Volumétrica (K) extremamente alto (cerca de 2,2 × 10⁹ Pa = 2,2 GPa). Isto significa que são praticamente incompressíveis: para reduzir o volume em apenas 1%, seria necessária uma pressão colossal de centenas de atmosferas. Os gases pulmonares e intestinais, em contrapartida, são altamente compressíveis.",
     "distractorAnalysis": [
-      "Está incorreta: violaria as leis elementares da densidade da matéria líquida e dos tecidos vivos.",
-      "Está incorreta: inverte a realidade física: os gases são ordens de magnitude mais compressíveis do que os líquidos teciduais.",
-      "Está incorreta: descreveria uma expansão paradoxal sob compressão, violando a termodinâmica."
+      "Está incorreta: fluidos e tecidos moles à base de água são quase incompressíveis sob pressões fisiológicas normais (K elevado).",
+      "Está incorreta: os gases alveolares são altamente compressíveis, ao contrário dos tecidos biológicos líquidos e sólidos.",
+      "Está incorreta: sob aumento de pressão isotrópica o volume diminui ligeiramente ou mantém-se, nunca aumentando."
     ],
     "nursingApplication": "Esta incompressibilidade volumar dos tecidos líquidos explica a transmissão fiel e instantânea de ondas de pressão hidrostática no sistema vascular (onda de pulso arterial) e em compartimentos fechados (pressão intracraniana). Quando o enfermeiro monitoriza a PIC, qualquer acréscimo de volume dentro da calote craniana rígida faz a pressão disparar (Doutrina de Monro-Kellie)."
   },
@@ -784,17 +788,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Num sistema de alavanca anatómico em equilíbrio, quando o braço de resistência (d_R) aumenta mantendo-se a carga resistente constante, o que acontece à força muscular motora (F_P) que o músculo necessita de exercer?",
     "options": [
+      "A força muscular necessária diminui proporcionalmente, facilitando a sustentação postural do membro em extensão.",
+      "A força muscular permanece rigorosamente constante, pois independe da distância geométrica dos braços de alavanca.",
       "A força muscular F_P tem de aumentar na mesma proporção para restabelecer a igualdade de momentos (τ_P = τ_R).",
-      "A força muscular necessária diminui drasticamente, tornando o movimento mais fácil.",
-      "A força muscular permanece rigorosamente constante, pois independe da distância geométrica.",
-      "O momento resistente torna-se zero devido à conservação do momento angular."
+      "O momento de força resistente anula-se espontaneamente devido à conservação do momento angular na articulação sinovial."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "Pela condição de equilíbrio de rotação: F_P · d_P = F_R · d_R => F_P = (F_R · d_R) / d_P. Se o braço de resistência d_R aumentar (por exemplo, ao segurar um objeto com o braço estendido em vez de junto ao corpo) mantendo F_R e d_P fixos, o momento resistente (F_R · d_R) cresce diretamente. O músculo é obrigado a aumentar proporcionalmente a sua força F_P para não deixar cair o segmento.",
     "distractorAnalysis": [
-      "Está incorreta: é um erro fatal de mecânica; afastar a carga aumenta o esforço, nunca o reduz.",
-      "Está incorreta: ignora o conceito fundamental de braço de alavanca no cálculo do momento de força.",
-      "Está incorreta: confunde aumento de braço com anulação de momento."
+      "Está incorreta: pelo equilíbrio de torque (F_P · d_P = F_R · d_R), se d_R cresce, a força F_P tem de aumentar.",
+      "Está incorreta: o esforço muscular depende criticamente da distância da carga ao fulcro articular de rotação.",
+      "Está incorreta: o torque resistente é o produto F_R · d_R e aumenta com o afastamento geométrico da carga."
     ],
     "nursingApplication": "Este princípio é o esteio da segurança postural: ao segurar num membro de um doente pesado, quanto mais perto do corpo do enfermeiro o membro estiver assente, menor será o braço de resistência e menor o esforço muscular exigido aos membros superiores do profissional."
   },
@@ -803,17 +807,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "O Módulo de Cisalhamento (ou módulo de rigidez transversal, G) relaciona a tensão de corte com a deformação angular correspondente. Nos discos intervertebrais da coluna vertebral, qual é a estrutura fibrosa elástica que resiste predominantemente a estas tensões de cisalhamento e torção?",
     "options": [
-      "O anel fibroso (anulus fibrosus), composto por lamelas concêntricas de fibras colagénicas orientadas obliquamente em sentidos alternados a cerca de 60°.",
-      "O núcleo pulposo líquido desprovido de qualquer fibra estrutural.",
-      "A medula espinhal que corre no interior do canal vertebral.",
-      "O líquido cefalorraquidiano que banha a cauda equina."
+      "O núcleo pulposo central, composto por gel hidrofílico viscoso desprovido de qualquer fibra estrutural de colagénio.",
+      "A medula espinhal que transita no canal raquidiano sem contacto mecânico direto com a periferia do disco intervertebral.",
+      "As lâminas ósseas dos pedículos vertebrais que absorvem a totalidade das forças de corte sem deformação do disco.",
+      "O anel fibroso periférico, constituído por lamelas concêntricas de colagénio orientadas obliquamente a cerca de 60 graus."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "O anel fibroso do disco intervertebral é uma obra-prima de engenharia tecidual: é constituído por 15 a 25 lâminas concêntricas de fibras de colagénio tipo I e II. As fibras de cada lâmina estão dispostas obliquamente a cerca de 60° em relação à vertical, e a orientação inverte-se na lâmina seguinte. Esta disposição em 'rede cruzada' confere elevadíssimo módulo de cisalhamento e rigidez contra forças de torção e corte lateral durante os movimentos do tronco.",
     "distractorAnalysis": [
-      "Está incorreta: descreve o núcleo pulposo, que atua como uma almofada hidrostática incompressível (resistindo à compressão vertical, mas incapaz de resistir ao cisalhamento isolado).",
-      "Está incorreta: são estruturas nervosas e fluidas de condução neural e proteção hidrodinâmica, sem função mecânica de absorção de cisalhamento do disco.",
-      "Está incorreta: são estruturas nervosas e fluidas de condução neural e proteção hidrodinâmica, sem função mecânica de absorção de cisalhamento do disco."
+      "Está incorreta: o núcleo pulposo líquido resiste a compressões axiais redistribuindo pressão hidrostática e não cisalhamento puro.",
+      "Está incorreta: a medula espinhal é tecido nervoso nobre vulnerável e não uma estrutura mecânica de suporte articular.",
+      "Está incorreta: os pedículos formam os arcos vertebrais posteriores e não a estrutura elástica intersomática do disco."
     ],
     "nursingApplication": "A alternância angular das fibras do anel fibroso suporta bem a flexão isolada, mas fica extremamente vulnerável quando a flexão lombar é combinada com rotação axial (torção). Essa combinação cria tensões de cisalhamento máximas que podem rasgar as fibras anulares, provocando a extrusão do núcleo pulposo (hérnia discal lombar)."
   },
@@ -822,17 +826,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na utilização de seringas descartáveis para administração medicamentosa, qual é a relação física entre a área do êmbolo e a força mecânica manual exigida para gerar uma determinada pressão no líquido?",
     "options": [
-      "Pela definição P = F / A, para uma mesma pressão pretendida P, uma seringa de maior secção transversal (ex: 50 mL) exige uma força manual F muito maior do que uma seringa fina (ex: 1 mL).",
-      "Uma seringa de 50 mL exige sempre menor força manual do que uma seringa de 1 mL para gerar a mesma pressão.",
-      "A pressão exercida no fluido independe da área do êmbolo e depende exclusivamente da cor do plástico.",
-      "A força exigida é inversamente proporcional à área do êmbolo ao quadrado."
+      "Pela relação P = F / A, para uma mesma pressão pretendida, uma seringa de área maior (50 mL) exige maior força manual.",
+      "Uma seringa de 50 mL exige sempre menor força manual do que uma seringa de 1 mL para gerar a mesma pressão intraluminal.",
+      "A pressão gerada no fluido independe da área transversal do êmbolo, dependendo exclusivamente da viscosidade do líquido.",
+      "A força exigida no êmbolo varia de forma inversamente proporcional ao quadrado da área de secção do cilindro de plástico."
     ],
     "correctIndex": 0,
     "explanation": "A pressão hidrostática é dada por P = F / A => F = P · A. Para gerar a mesma pressão no líquido (por exemplo, 100 kPa para vencer a resistência de uma cânula estenosada), quanto maior for a área A do êmbolo da seringa, maior será a força muscular manual F necessária. Pelo mesmo motivo, com uma seringa de insulina fina de 1 mL (pequeníssima área A), uma força manual modesta de 10 N gera uma pressão colossal no interior do cilindro.",
     "distractorAnalysis": [
-      "Está incorreta: inverte a relação matemática fundamental F = P · A.",
-      "Está incorreta: ignora o Princípio de Pascal e a definição de pressão mecânica.",
-      "Está incorreta: inventa uma dependência quadrática incorreta."
+      "Está incorreta: F = P · A; para uma dada pressão P, quanto maior for a área A do êmbolo, maior terá de ser a força aplicada F.",
+      "Está incorreta: a área transversal do êmbolo governa diretamente a relação entre a força aplicada e a pressão hidráulica gerada.",
+      "Está incorreta: a força é diretamente proporcional à área (F = P·A) e não inversamente proporcional ao quadrado da área."
     ],
     "nursingApplication": "Na desobstrução de cateteres venosos centrais (PICC ou cateter totalmente implantado / Port-a-Cath), NUNCA se deve utilizar seringas de pequeno calibre (como 1 mL ou 3 mL). A pequeníssima área do êmbolo gera pressões hidrostáticas brutais (acima de 200 psi) com facilidade na mão do enfermeiro, que podem romper o cateter no interior da veia do doente. As normas de enfermagem exigem o uso exclusivo de seringas de 10 mL ou superior."
   },
@@ -841,17 +845,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "O tecido ósseo é classicamente descrito em biomecânica como um material 'Anisótropo'. O que significa esta propriedade mecânica fundamental?",
     "options": [
-      "Que as suas propriedades mecânicas (como o Módulo de Young e a resistência à rotura) variam conforme a direção da força aplicada (longitudinal vs transversal).",
-      "Que o osso tem rigorosamente o mesmo comportamento e rigidez em todas as direções espaciais possíveis.",
-      "Que o osso é totalmente incapaz de sofrer remodelação celular na presença de carga.",
-      "Que o osso se deforma unicamente na presença de campos magnéticos estáticos."
+      "O osso apresenta rigidez mecânica perfeitamente uniforme e idêntica em qualquer direção espacial tridimensional avaliada.",
+      "As suas propriedades mecânicas (Módulo de Young e resistência) variam consoante a direção da força aplicada.",
+      "O osso é totalmente incapaz de sofrer remodelação celular ou alteração de densidade quando submetido a solicitações.",
+      "O osso deforma-se plasticamente apenas quando sujeito a tração uniaxial, sendo totalmente rígido em qualquer flexão."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "Um material isotrópico possui propriedades mecânicas idênticas em qualquer direção (como o vidro ou o aço sem grão). O osso, contudo, é ANISÓTROPO: a orientação longitudinal dos ósteons e das fibras de colagénio confere-lhe um Módulo de Young e uma tensão de rotura muito maiores no sentido longitudinal (ao longo da diáfise, onde E ≈ 18 GPa) do que no sentido transversal/perpendicular (onde E ≈ 10 GPa).",
     "distractorAnalysis": [
-      "Está incorreta: descreve a isotropia mecânica pura.",
-      "Está incorreta: confunde anisotropia elástica com ausência de biologia celular e Lei de Wolff.",
-      "Está incorreta: confunde mecânica de materiais com diamagnetismo."
+      "Está incorreta: apresentar o mesmo comportamento em todas as direções é a definição de material Isótropo e não Anisótropo.",
+      "Está incorreta: a remodelação celular óssea sob carga mecânica é universal e governed pela Lei de Wolff.",
+      "Está incorreta: o osso sofre deformação elástica e plástica sob flexão, cisalhamento e torção, não apenas sob tração pura."
     ],
     "nursingApplication": "A anisotropia do osso explica por que o fémur suporta cargas imensas na vertical durante a corrida, mas quebra facilmente com impactos transversais perpendiculares (por exemplo, na batida lateral da anca contra o chão numa queda ou no painel de um automóvel num acidente de trânsito)."
   },
@@ -860,17 +864,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Um dreno cirúrgico com reservatório de vácuo tipo Jackson-Pratt ou Redon aproveita as propriedades elásticas de que componente para gerar pressão negativa e aspirar exsudados?",
     "options": [
-      "Da parede de silicone ou polietileno do bulbo/fole que, após ser manualmente comprimida (deformação plástica/elástica) e fechada, tenta recuperar a sua forma esférica inicial por memória elástica, gerando subpressão interna contínua.",
-      "De um motor elétrico a bateria miniaturizado acoplado ao tubo.",
-      "De uma reação química endotérmica que queima o ar dentro do frasco.",
-      "Da força gravitacional exercida exclusivamente pela posição dos pés do doente."
+      "De um micromotor elétrico incorporado na base plástica que aciona uma bomba peristáltica minúscula alimentada a bateria.",
+      "De uma reação endotérmica contínua no interior do reservatório que consome os gases do ar rarefeito por combustão.",
+      "Da memória elástica do bulbo ou fole que, após ser comprimido e fechado, tenta recuperar a forma esférica inicial.",
+      "Da força gravitacional descendente que atua na coluna líquida independentemente da altura do frasco coletor no leito."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "O dreno de vácuo ativo tipo bulbo (Jackson-Pratt) ou fole (Redon) utiliza a elasticidade intrínseca do polímero: o enfermeiro comprime manualmente o reservatório esvaziando o ar e coloca a tampa de vedação. A energia de deformação elástica armazenada na parede tenta forçar a expansão do bulbo de volta ao seu volume de repouso; como está vedado, essa tendência expansiva cria uma pressão interna inferior à atmosférica (vácuo parcial de -50 a -150 mmHg), aspirando fluidos do leito cirúrgico.",
     "distractorAnalysis": [
-      "Está incorreta porque ; estes sistemas clássicos de drenagem cirúrgica pós-operatória são mecânicos passivos sem motores elétricos.",
-      "Está incorreta porque ; nenhuma combustão ou reação química exotérmica/endotérmica ocorre no frasco.",
-      "Está incorreta: descreve a drenagem postural gravitacional simples (como os drenos de Penrose ou sacos coletores por gravidade), não a aspiração ativa por vácuo elástico."
+      "Está incorreta: drenos de vácuo tipo Redon ou JP são sistemas passivos sem motores elétricos ou componentes eletrónicos.",
+      "Está incorreta: a subpressão é mecânica e decorre da expansão elástica das paredes poliméricas e não de reações de combustão.",
+      "Está incorreta: a sucção nos drenos de fole depende da recuperação elástica das suas paredes e não da gravidade."
     ],
     "nursingApplication": "Na manutenção de drenos cirúrgicos após mastectomias ou cirurgias ortopédicas, o enfermeiro deve esvaziar regularmente o exsudado acumulado e voltar a comprimir o bulbo antes de fechar o tampão. Se o bulbo ficar cheio de ar ou líquido, a parede elástica atinge a sua forma de repouso, cessando a sucção e favorecendo a formação de seromas e hematomas na ferida."
   },
@@ -879,17 +883,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Qual das seguintes relações mecânicas quantifica a Vantagem Mecânica (VM) em qualquer alavanca em estado de equilíbrio estático sem atrito?",
     "options": [
-      "VM = F_R / F_P = d_P / d_R",
-      "VM = F_P · F_R · d_P · d_R",
-      "VM = d_R / (F_P · g)",
-      "VM = (F_P - F_R) / (d_P + d_R)"
+      "VM = F_P · F_R · d_P · d_R (produto escalar quádruplo das forças e distâncias aplicadas nos dois lados do fulcro).",
+      "VM = d_R / (F_P · g) (quociente entre o braço de resistência e o peso associado à aceleração da gravidade local).",
+      "VM = (F_P - F_R) / (d_P + d_R) (diferença entre forças dividida pela soma dos comprimentos dos dois segmentos da haste).",
+      "VM = F_R / F_P = d_P / d_R (razão entre a carga superada e a força motora, igual à razão entre os braços de alavanca)."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "Por definição, a vantagem mecânica real é a razão entre a carga resistente superada e a força motora aplicada: VM = F_R / F_P. No equilíbrio de momentos (F_P · d_P = F_R · d_R), dividindo ambos os lados por F_P e por d_R, obtém-se rigorosamente a igualdade com a vantagem mecânica ideal baseada na geometria: VM = d_P / d_R.",
     "distractorAnalysis": [
-      "Está incorreta: multiplica grandezas arbitrariamente, gerando unidades inconsistentes de N²·m².",
-      "Está incorreta: mistura comprimentos e forças no denominador sem fundamentação dimensional.",
-      "Está incorreta: propõe uma diferença de forças dividida por soma de distâncias sem sentido físico."
+      "Está incorreta: multiplicar todas as grandezas resultaria numa unidade física incoerente (N²·m²) e não numa grandeza adimensional.",
+      "Está incorreta: a vantagem mecânica relaciona razões de grandezas homólogas sem envolver a aceleração da gravidade no denominador.",
+      "Está incorreta: fórmulas de diferenças divididas por somas violam a definição de vantagem mecânica e equilíbrio de momentos."
     ],
     "nursingApplication": "Esta fórmula permite ao enfermeiro avaliar rapidamente a eficiência de ferramentas manuais ou compreender por que aproximar o doente do seu próprio tronco reduz o braço de resistência d_R, diminuindo a força F_P exigida da musculatura do profissional para manter o membro em equilíbrio."
   },
@@ -898,17 +902,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "O conceito de 'Limite de Proporcionalidade' na curva de tração de um material refere-se ao ponto exato:",
     "options": [
-      "Até ao qual a tensão mecânica é rigorosamente linear e diretamente proporcional à deformação relativa, cessando a validade estrita da Lei de Hooke para além dele.",
-      "Onde o material se funde e passa do estado sólido ao estado gasoso.",
-      "Onde a deformação plástica atinge 100% do volume original.",
-      "Onde a densidade do material duplica devido ao atrito quântico."
+      "Até ao qual a tensão mecânica é linearmente proporcional à deformação, cessando a validade estrita da Lei de Hooke.",
+      "Onde o biomaterial atinge a temperatura crítica de fusão e passa do estado sólido compacto ao estado líquido viscoso.",
+      "Onde a deformação plástica irreversível atinge cem por cento da extensão longitudinal do segmento esquelético analisado.",
+      "Onde a densidade volumétrica do material duplica subitamente em virtude de forças microscópicas interatómicas atrativas."
     ],
     "correctIndex": 0,
     "explanation": "Na curva tensão-deformação, a primeira região é uma linha reta perfeita que parte da origem. O ponto mais alto dessa reta é o Limite de Proporcionalidade: até aí, a Lei de Hooke (σ = E · ε) aplica-se com precisão matemática absoluta. Imediatamente acima deste ponto, a curva pode ainda apresentar comportamento elástico reversível por um pequeno intervalo (até ao limite de elasticidade), mas a relação deixa de ser estritamente linear.",
     "distractorAnalysis": [
-      "Está incorreta: confunde mecânica dos sólidos com transições térmicas de estado físico.",
-      "Está incorreta: é absurda, pois 100% de deformação plástica só ocorre em polímeros de altíssima ductilidade próximo da rotura.",
-      "Está incorreta: inventa conceitos quânticos desprovidos de base física no ensaio de tração."
+      "Está incorreta: o limite de proporcionalidade é um marco mecânico à temperatura ambiente e não um ponto térmico de fusão.",
+      "Está incorreta: além do limite de proporcionalidade inicia-se a não linearidade, situando-se a deformação plástica mais adiante.",
+      "Está incorreta: a densidade do material sob tração elástica não sofre duplicações súbitas na curva tensão-deformação."
     ],
     "nursingApplication": "Em aparelhos de tracção ou balanças mecânicas pediátricas de mola, a mola interna deve operar sempre estritamente abaixo do seu limite de proporcionalidade. Se uma sobrecarga pontual ultrapassar esse patamar, a calibração do instrumento fica irremediavelmente viciada, conduzindo a erros de pesagem de doentes."
   },
@@ -917,17 +921,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Nas talas de imobilização ortopédica de fibra de vidro (resinas de poliuretano impregnadas em malha tricotada), o que ocorre durante o processo de presa que altera radicalmente o seu Módulo de Young?",
     "options": [
-      "Ocorre uma reação química exotérmica de polimerização que reticula as cadeias poliméricas na presença de água, elevando o Módulo de Young de valores muito baixos (tecido maleável) para valores de vários GPa (sólido extremamente rígido).",
-      "Ocorre evaporação total de todos os átomos de oxigénio da matriz de carbono.",
-      "A fita transforma-se num fluido hiperbárico incompressível.",
-      "O material torna-se magnético e atrai a hemoglobina do sangue da fratura."
+      "Ocorre uma desidratação osmótica que cristaliza os sais minerais da resina sintética sem formar ligações cruzadas poliméricas.",
+      "Ocorre polimerização exotérmica das resinas de poliuretano com água, elevando o Módulo de Young para a rigidez de um sólido.",
+      "Ocorre evaporação do solvente volátil à temperatura cutânea, reduzindo a densidade do compósito para aumentar a flexibilidade.",
+      "Ocorre um alinhamento magnético das fibras de vidro com o campo eletrostático da pele que enrijece a malha por atração."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "A fita de fibra de vidro para gesso ortopédico vem embalada a vácuo em estado complacente e maleável (baixo módulo elástico). Ao ser mergulhada em água, a humidade catalisa uma polimerização exotérmica das resinas de poliuretano que une quimicamente as fibras de vidro numa malha tridimensional sólida e rígida. Em cerca de 3 a 5 minutos, o Módulo de Young atinge a rigidez final, garantindo a imobilização anatómica da articulação.",
     "distractorAnalysis": [
-      "Está incorreta: é fisicamente impossível sob condições de temperatura e pressão ambientes de uma enfermaria.",
-      "Está incorreta: confunde um polímero rígido consolidado com fluidos sob pressão.",
-      "Está incorreta: é uma afirmação fantasiosa sem qualquer base fisiológica ou biofísica."
+      "Está incorreta: o endurecimento decorre da polimerização por reticulação covalente ativada pela água e não de cristalização osmótica.",
+      "Está incorreta: a cura da fibra de vidro é uma reação química de polimerização de pré-polímeros de isocianato e não simples evaporação de solvente.",
+      "Está incorreta: a fibra de vidro é um material diamagnético não polarizável por eletrostática cutânea, operando por coesão polimérica."
     ],
     "nursingApplication": "O enfermeiro que aplica ou auxilia na confeção de talas sintéticas de fibra de vidro sabe que deve modelar a tala rigorosamente antes de a reação de polimerização endurecer o material. Além disso, devido ao caráter exotérmico da reação que liberta calor sensível, a água de imersão não deve ser excessivamente quente para evitar queimaduras térmicas na pele do doente."
   },
@@ -936,17 +940,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Um carrinho de emergência médica (carrinho de paragem) com massa de 80 kg está parado num piso horizontal. Sabendo que o coeficiente de atrito estático entre as rodas e o piso é μ_e = 0,25, qual é a força horizontal mínima F que o enfermeiro tem de aplicar para iniciar o movimento do carrinho (adotando g = 9,8 m/s²)?",
     "options": [
-      "196 N",
-      "80 N",
-      "20 N",
-      "784 N"
+      "Uma força horizontal mínima de 80 N aplicada pelo profissional, correspondendo unicamente ao valor escalar da massa inercial.",
+      "Uma força horizontal mínima de 20 N aplicada pelo profissional, decorrente do produto simples do coeficiente pela massa em kg.",
+      "Uma força horizontal mínima de 196 N aplicada pelo profissional (F = μ_e · m · g = 0,25 × 80 kg × 9,8 m/s²).",
+      "Uma força horizontal mínima de 784 N aplicada pelo profissional, correspondendo à magnitude integral da força peso vertical."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "A força de atrito estático máxima que impede o início do movimento é dada por F_atrito = μ_e · N. Como o piso é horizontal e não há outras forças verticais, a força normal é igual ao peso: N = P = m · g = 80 kg × 9,8 m/s² = 784 N. Calculando a força mínima para romper o atrito: F = 0,25 × 784 N = 196 N (aproximadamente o esforço muscular de sustentar 20 kg no ar).",
     "distractorAnalysis": [
-      "Está incorreta: (80 N) confunde a massa em kg com o valor da força em Newtons.",
-      "Está incorreta: (20 N) multiplica erroneamente o coeficiente de atrito pela massa sem incluir a aceleração da gravidade (0,25 × 80).",
-      "Está incorreta: (784 N) é o peso vertical total do carrinho, e não a força de atrito horizontal a ser superada."
+      "Está incorreta: 80 N confunde o valor numérico da massa (80 kg) com a força de atrito horizontal necessária.",
+      "Está incorreta: 20 N resulta de multiplicar μ_e pela massa (0,25 × 80) esquecendo de multiplicar pela aceleração da gravidade g (9,8 m/s²).",
+      "Está incorreta: 784 N é a força normal vertical (P = 80 × 9,8) e a força horizontal necessária para iniciar o movimento é apenas F = μ_e·N = 196 N."
     ],
     "nursingApplication": "Em situações de paragem cardiorrespiratória (PCR), cada segundo conta. Se as rodas do carrinho de paragem estiverem travadas ou se o diâmetro das rodas for demasiado pequeno (elevado atrito ao rolamento e irregularidades no solo), a força exigida do enfermeiro para acelerar o equipamento pode atrasar o transporte do desfibrilhador até ao leito do doente."
   },
@@ -955,17 +959,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "O Momento de uma Força (ou Torque, τ) em relação a um eixo de rotação articular é definido fisicamente pelo produto:",
     "options": [
-      "τ = F · d · sen(θ), onde F é o módulo da força, d é a distância do ponto de aplicação ao eixo (braço de alavanca) e θ é o ângulo entre a linha de força e o braço.",
-      "τ = m · v², produto da massa pela velocidade ao quadrado.",
-      "τ = P / A, força dividida pela área.",
-      "τ = F / t, força dividida pelo tempo."
+      "τ = F / d · cos(θ), onde a intensidade da força é dividida pelo comprimento do segmento anatómico do membro.",
+      "τ = m · a · d², sendo o torque diretamente proporcional à inércia de massa e ao quadrado da distância linear.",
+      "τ = F · v · tg(θ), onde v é a velocidade angular instantânea com que a extremidade óssea se desloca no espaço.",
+      "τ = F · d · sen(θ), onde F é o módulo da força, d a distância do ponto de aplicação ao eixo e θ o ângulo entre ambos."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "O torque quantifica a tendência de uma força para produzir rotação em torno de um ponto de apoio (fulcro). A sua intensidade máxima ocorre quando a força é perpendicular ao braço de alavanca (θ = 90°, sen 90° = 1), sendo expresso em Newton-metro (N·m) no SI.",
     "distractorAnalysis": [
-      "Está incorreta: é a ordem de grandeza da energia cinética (½ m v²).",
-      "Está incorreta: é a definição de pressão mecânica em Pascal.",
-      "Está incorreta: é a taxa temporal de variação de força."
+      "Está incorreta: o torque é o produto da força pelo braço (F · d) e não a divisão da força pela distância.",
+      "Está incorreta: o torque varia linearmente com o braço d e depende da força aplicada e não da aceleração e distância ao quadrado.",
+      "Está incorreta: o momento de uma força estático independe da velocidade angular cinemática de rotação."
     ],
     "nursingApplication": "Ao mobilizar passivamente o membro de um doente com contraturas espásticas, segurar o membro na extremidade distal (maior braço d) permite ao enfermeiro aplicar um torque articular eficaz com mínimo esforço muscular manual."
   },
@@ -974,17 +978,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Qual é a unidade oficial do Sistema Internacional (SI) para medir o Momento de uma Força (Torque)?",
     "options": [
-      "Newton-metro (N·m)",
-      "Joule por segundo (J/s)",
-      "Pascal (Pa)",
-      "Newton por metro quadrado (N/m²)"
+      "Newton-metro (N·m), resultante do produto dimensional de uma força (Newtons) por uma distância (metros).",
+      "Joule (J), porque o momento de uma força é uma grandeza puramente escalar idêntica à energia mecânica.",
+      "Pascal (Pa = N/m²), expressando a pressão mecânica exercida pela força no ponto de rotação articular.",
+      "Watt (W = J/s), quantificando a taxa temporal com que a energia mecânica é transferida durante a rotação."
     ],
     "correctIndex": 0,
     "explanation": "Como o torque resulta do produto de uma força (Newton) por uma distância de braço de alavanca (metro), a sua unidade dimensional é o Newton-metro (N·m). Embora dimensionalmente equivalente ao Joule, por convenção física reserva-se o N·m para grandezas vetoriais rotacionais e o Joule para energia escalar.",
     "distractorAnalysis": [
-      "Está incorreta: (J/s) corresponde a Watt (unidade de potência).",
-      "Está incorreta: são unidades de pressão e tensão mecânica.",
-      "Está incorreta: são unidades de pressão e tensão mecânica."
+      "Está incorreta: Está incorreta porque, embora dimensionalmente equivalente a Joules, o torque é grandeza vetorial e mede-se em N·m para se distinguir do trabalho escalar (J).",
+      "Está incorreta: Pascal (N/m²) é a unidade de pressão e tensão mecânica (força por área) e não de torque (força por distância).",
+      "Está incorreta: Watt é a unidade de potência mecânica (taxa de trabalho por unidade de tempo) e não de momento de uma força."
     ],
     "nursingApplication": "Manuais de aparelhos cirúrgicos e camas articuladas motorizadas especificam os limites de torque dos motores em N·m; respeitar estes limites evita a queima dos motores elétricos ao elevar doentes com sobrepeso."
   },
@@ -993,17 +997,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Para que um segmento corporal ou um instrumento cirúrgico em forma de alavanca permaneça em equilíbrio rotacional estático (sem rodar), a condição física indispensável é:",
     "options": [
-      "A soma algébrica de todos os momentos de força em relação a qualquer ponto de rotação tem de ser rigorosamente nula (∑τ = 0).",
-      "O braço de potência tem de ser obrigatoriamente igual a zero.",
-      "A força resistente tem de ser o triplo da força potente.",
-      "A velocidade angular tem de ser máxima e constante."
+      "A força motora muscular aplicada na extremidade da haste deve ser estritamente superior ao peso da carga.",
+      "A soma algébrica de todos os momentos de força em relação a qualquer ponto do sistema deve ser nula (∑τ = 0).",
+      "A velocidade angular de rotação do segmento esquelético deve ser mantida num valor constante e positivo.",
+      "O momento angular total deve crescer a uma taxa constante de modo a contrabalançar o atrito sinovial."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "A 2.ª condição de equilíbrio estático estabelece que o somatório dos torques no sentido horário tem de igualar exatamente o somatório dos torques no sentido anti-horário: ∑τ_horário = ∑τ_anti-horário, o que equivale a ∑τ = 0.",
     "distractorAnalysis": [
-      "Está incorreta: impediria a existência de qualquer torque motriz.",
-      "Está incorreta: causaria rotação acelerada no sentido da resistência.",
-      "Está incorreta: descreve equilíbrio rotacional dinâmico, não estático em repouso."
+      "Está incorreta: o equilíbrio rotacional estático exige equilíbrio de momentos (∑τ = 0) e não que a força motora supere a resistência.",
+      "Está incorreta: velocidade angular diferente de zero implica movimento rotacional e não repouso estático absoluto.",
+      "Está incorreta: a variação do momento angular implica a existência de torque resultante não nulo, violando o equilíbrio estático."
     ],
     "nursingApplication": "Ao ajustar a posição de um membro fraturado mantido numa calha de Braun com tração contínua, o enfermeiro equilibra os momentos de força dos pesos para que o membro repouse estável sem rodar lateralmente."
   },
@@ -1012,17 +1016,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Um enfermeiro aplica uma força perpendicular de 20 N na extremidade da pega de uma manivela de regulação de altura de uma cama hospitalar, a uma distância de 0,25 metros do eixo de rotação. Qual é o torque gerado na manivela?",
     "options": [
-      "5 N·m",
-      "80 N·m",
-      "0,0125 N·m",
-      "50 N·m"
+      "Um torque de 80 N·m em virtude da divisão da força mecânica aplicada pelo comprimento da pega (20 / 0,25).",
+      "Um torque de 0,8 N·m decorrente da conversão da força muscular para a aceleração normal de rotação.",
+      "Um torque de 5 N·m em relação ao eixo giratório da torneira (τ = F · d = 20 N × 0,25 m).",
+      "Um torque nulo (0 N·m) visto que a força perpendicular anula o momento torsor no fulcro da válvula."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "Como a força é perpendicular (θ = 90°, sen 90° = 1), o torque é calculado diretamente por τ = F · d = 20 N × 0,25 m = 5 N·m.",
     "distractorAnalysis": [
-      "Está incorreta: (80 N·m) divide erradamente a força pela distância (20 / 0,25).",
-      "Está incorreta: (0,0125 N·m) divide a distância pela força.",
-      "Está incorreta: multiplica por 2,5 em vez de 0,25."
+      "Está incorreta: 80 N·m resulta de dividir a força pela distância em vez de a multiplicar (τ = 20 × 0,25 = 5 N·m).",
+      "Está incorreta: 0,8 N·m resulta de um erro no cálculo algébrico das grandezas de força e comprimento.",
+      "Está incorreta: uma força perpendicular ao braço (θ = 90°) produz o torque máximo possível (sen 90° = 1)."
     ],
     "nursingApplication": "Compreender que o torque aumenta com o comprimento da pega da manivela elucida por que razão alavancas compridas facilitam a rotação de estrados mecânicos em camas manuais em caso de falha de energia elétrica."
   },
@@ -1031,17 +1035,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "O que acontece ao torque gerado por uma força muscular se a linha de ação da força passar exatamente PELO CENTRO do eixo articular de rotação (braço de alavanca d = 0)?",
     "options": [
-      "O torque é rigorosamente zero (τ = 0), sendo a força totalmente ineficaz para produzir rotação articular, gerando apenas compressão ou tração pura na articulação.",
-      "O torque atinge o valor máximo infinito.",
-      "A articulação roda a uma velocidade constante de 100 rad/s.",
-      "O músculo rompe imediatamente."
+      "O torque atinge o seu valor máximo porque a distância linear ao eixo de rotação é minimizada.",
+      "O torque inverte instantaneamente o seu sentido vetorial sem alterar a sua magnitude numérica.",
+      "O torque duplica de intensidade devido ao aumento da força de compressão exercida na cartilagem.",
+      "O torque é rigorosamente zero (τ = 0), sendo a força totalmente ineficaz para produzir rotação articular."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "Pela fórmula τ = F · d · sen θ, se a distância d entre a linha de ação da força e o centro de rotação for nula (d = 0), o torque é nulo: τ = F · 0 = 0. A força passa pelo fulcro e atua exclusivamente como força de estabilização articular (compressão ou distração), sem qualquer componente de rotação.",
     "distractorAnalysis": [
-      "Está incorreta: viola a multiplicação direta por zero.",
-      "Está incorreta: exigiria um torque acelerador não-nulo.",
-      "Está incorreta: não tem base fisiológica em contrações isométricas normais."
+      "Está incorreta: se a linha de ação passa no fulcro, o braço de momento perpendicular é nulo (d = 0), logo τ = 0.",
+      "Está incorreta: forças que passam no fulcro geram apenas compressão ou tração articular axial, sem produzir torque.",
+      "Está incorreta: não há torque nem duplicação de momento rotacional quando a linha de ação interseta o fulcro."
     ],
     "nursingApplication": "Na reabilitação articular pós-cirúrgica, o enfermeiro sabe que em certos ângulos articulares os tendões aplicam forças quase puramente estabilizadoras na cavidade glenoideia ou cotilóideia, protegendo a prótese recém-implantada."
   },
@@ -1050,17 +1054,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Um corta-gesso ortopédico manual possui lâminas curtas de 3 cm (d_R = 0,03 m) e cabos longos de 30 cm (d_P = 0,30 m). Se o enfermeiro aplicar uma força manual de 50 N nas pegas dos cabos, que força de corte é exercida sobre a ligadura gessada rígida?",
     "options": [
-      "500 N",
-      "5 N",
-      "50 N",
-      "150 N"
+      "Uma força de corte de 500 N exercida sobre o gesso (F_R = F_P · d_P / d_R = 100 × 0,15 / 0,03).",
+      "Uma força de corte de 20 N exercida sobre o gesso em virtude da perda mecânica de atrito nas lâminas.",
+      "Uma força de corte de 100 N exercida sobre o gesso mantendo a mesma magnitude da força das mãos.",
+      "Uma força de corte de 1500 N decorrente da multiplicação direta dos comprimentos pela força manual."
     ],
     "correctIndex": 0,
     "explanation": "Numa alavanca em equilíbrio rotacional, F_P · d_P = F_R · d_R ⇒ F_R = F_P · (d_P / d_R). A relação d_P / d_R = 30 / 3 = 10 (Vantagem Mecânica = 10). Logo, F_R = 50 N × 10 = 500 N. A força é multiplicada 10 vezes pelas mandíbulas de corte.",
     "distractorAnalysis": [
-      "Está incorreta: dividiria a força em vez de multiplicar (50 / 10).",
-      "Está incorreta: consideraria uma vantagem mecânica unitária sem efeito de alavanca.",
-      "Está incorreta: é um cálculo incoerente."
+      "Está incorreta: 20 N resultaria de inverter os braços de alavanca (100 × 0,03 / 0,15), assumindo desvantagem mecânica.",
+      "Está incorreta: a alavanca interfixa com d_P > d_R multiplica a força por 5 vezes (VM = 5), não sendo igual a 100 N.",
+      "Está incorreta: 1500 N corresponderia a uma vantagem de 15 vezes, quando a razão geométrica real dos braços é 5 (15 cm / 3 cm)."
     ],
     "nursingApplication": "A vantagem mecânica de 10 do corta-gesso permite ao enfermeiro cortar com segurança ligaduras espessas de resina ou gesso sem fadiga na mão, aplicando apenas moderada força de preensão manual."
   },
@@ -1069,17 +1073,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Dois pesos são colocados numa barra equilibrada em torno de um fulcro central: uma massa m₁ = 10 kg está a uma distância d₁ = 0,5 m à esquerda do apoio. A que distância d₂ à direita do apoio deve ser colocada uma massa m₂ = 5 kg para restabelecer o equilíbrio horizontal?",
     "options": [
-      "d₂ = 1,0 metro.",
-      "d₂ = 0,25 metros.",
-      "d₂ = 0,5 metros.",
-      "d₂ = 2,0 metros."
+      "d₂ = 0,16 metros da carga de 20 N ao fulcro através da divisão simples das cargas aplicadas.",
+      "d₂ = 1,0 metro da carga de 20 N ao fulcro para igualar os momentos (50 N × 0,4 m = 20 N × d₂).",
+      "d₂ = 2,5 metros da carga de 20 N ao fulcro para duplicar a estabilidade do sistema em repouso.",
+      "d₂ = 0,4 metros da carga de 20 N ao fulcro mantendo obrigatoriamente distâncias geométricas simétricas."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "Para haver equilíbrio de momentos: P₁ · d₁ = P₂ · d₂ ⇒ (m₁ · g) · d₁ = (m₂ · g) · d₂. Como g cancela: 10 kg × 0,5 m = 5 kg × d₂ ⇒ 5 = 5 · d₂ ⇒ d₂ = 1,0 m. A massa mais leve precisa do dobro da distância para gerar o mesmo torque.",
     "distractorAnalysis": [
-      "Está incorreta: (0,25 m) colocaria a massa menor ainda mais próxima, agravando o desequilíbrio.",
-      "Está incorreta: só equilibraria se as massas fossem iguais.",
-      "Está incorreta: quadruplicaria o torque do lado direito."
+      "Está incorreta: 0,16 m (20 × 0,4 / 50) resulta de trocar erradamente as posições das variáveis no equilíbrio de torque.",
+      "Está incorreta: 2,5 m geraria um torque de 50 N·m (20 × 2,5), superando largamente o torque de 20 N·m da outra carga.",
+      "Está incorreta: distâncias simétricas (d₁ = d₂) só equilibrariam a barra se as duas forças fossem rigorosamente iguais."
     ],
     "nursingApplication": "Este cálculo fundamenta o funcionamento das balanças mecânicas hospitalares de peso com cursor deslizante: pequenos pesos metálicos equilibram a massa de doentes pesados deslocando-se ao longo da escala graduada."
   },
@@ -1088,17 +1092,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Quando a articulação do cotovelo é fletida a 90°, o ângulo de inserção do tendão do bicípite braquial no rádio é muito próximo de 90° (sen 90° = 1). O que sucede à eficiência rotacional do músculo bicípite neste ângulo?",
     "options": [
-      "É MÁXIMA, porque todo o vetor da força muscular é perpendicular ao rádio, convertendo 100% da tensão muscular em torque de rotação flexora da articulação.",
-      "É mínima, porque o tendão relaxa totalmente a 90°.",
-      "O torque é zero porque o braço e o antebraço se anulam mutuamente.",
-      "A articulação desloca-se espontaneamente para fora da cápsula."
+      "É nula, porque a força muscular é consumida integralmente na compressão axial da tróclea umeral.",
+      "É reduzida a metade em comparação com a extensão completa do antebraço a cento e oitenta graus.",
+      "É máxima, porque todo o vetor da força muscular é perpendicular ao rádio (sen 90° = 1, torque máximo).",
+      "É governada exclusivamente pela resistência elástica do tendão do tríceps na face posterior do braço."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "Como τ = F · d · sen θ, quando θ = 90°, sen θ = 1,0 (valor máximo da função seno). Em ângulos mais abertos (ex: 170° com braço estendido) ou mais fechados (30°), sen θ é pequeno e a maior parte da força muscular atua como força compressiva articular, perdendo eficácia rotacional.",
     "distractorAnalysis": [
-      "Está incorreta: confunde pico de eficiência mecânica com relaxamento.",
-      "Está incorreta: nega a trigonometria do torque articular.",
-      "Está incorreta: descreve luxação incompatível com a fisiologia articular sadia."
+      "Está incorreta: a 90° a componente perpendicular é máxima (sen 90° = 1), sendo o torque rotacional o mais eficiente do arco de movimento.",
+      "Está incorreta: na extensão completa o tendão fica quase paralelo ao osso (sen θ reduzido), tendo torque menor do que a 90°.",
+      "Está incorreta: a eficácia mecânica do bicípite decorre da geometria da sua inserção e não da resistência do tríceps."
     ],
     "nursingApplication": "Ao testar a força motora dos membros superiores na avaliação neurológica de enfermagem (Escala de Força do Medical Research Council - MRC), o cotovelo é posicionado a 90° para testar a potência muscular no seu ponto de máxima vantagem mecânica."
   },
@@ -1107,17 +1111,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Se um músculo esquelético aplicar uma força de 300 N num tendão inserido a 4 cm (0,04 m) do eixo da articulação com um ângulo de 30° (sen 30° = 0,5), qual é o torque rotacional produzido?",
     "options": [
-      "6 N·m",
-      "12 N·m",
-      "24 N·m",
-      "600 N·m"
+      "Um torque de 12 N·m decorrente da multiplicação direta da força pela distância sem o fator angular.",
+      "Um torque de 1200 N·m em virtude do erro no cálculo dos centímetros para metros no Sistema Internacional.",
+      "Um torque nulo (0 N·m) visto que ângulos inferiores a quarenta e cinco graus anulam o momento muscular.",
+      "Um torque de 6 N·m gerado na articulação (τ = F · d · sen θ = 300 N × 0,04 m × sen 30° = 12 × 0,5)."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "Calculando pelo produto trigonométrico: τ = F · d · sen(θ) = 300 N × 0,04 m × 0,5 = 12 × 0,5 = 6 N·m. Dos 300 N gerados pelo músculo, metade dissipa-se em tração articular e apenas 6 N·m realizam trabalho rotacional.",
     "distractorAnalysis": [
-      "Está incorreta: (12 N·m) esqueceria o ângulo de 30° (considerando sen θ = 1).",
-      "Está incorreta: cometem erros grosseiros de cálculo e conversão métrica de centímetros para metros.",
-      "Está incorreta: cometem erros grosseiros de cálculo e conversão métrica de centímetros para metros."
+      "Está incorreta: 12 N·m esquece de multiplicar pelo sen 30° (0,5), correspondendo ao torque apenas se a força fosse a 90°.",
+      "Está incorreta: 1200 N·m resulta de calcular a distância em centímetros (300 × 4) sem converter para metros (0,04 m).",
+      "Está incorreta: sen 30° = 0,5, produzindo um torque real e mensurável de 6 N·m na articulação."
     ],
     "nursingApplication": "Este cálculo elucida o enfermeiro de reabilitação sobre por que motivo os doentes sentem mais facilidade em manter contrações musculares em determinados ângulos articulares específicos durante a fisioterapia."
   },
@@ -1126,17 +1130,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Um binário de forças (ou casal de forças) é definido na mecânica como um par de forças que:",
     "options": [
-      "Têm intensidades iguais, linhas de ação paralelas diferentes e sentidos estritamente opostos, produzindo rotação pura sem translação (∑F = 0 e ∑τ ≠ 0).",
-      "Têm a mesma direção e mesmo sentido, acelerando o corpo para a frente.",
-      "Atuam em ângulo reto gerando força centrípeta pura.",
-      "Anulam o peso e a massa de qualquer corpo."
+      "Têm intensidades iguais, linhas de ação paralelas diferentes e sentidos opostos, gerando rotação pura.",
+      "Têm intensidades diferentes, mesma linha de ação e mesmo sentido, produzindo aceleração linear pura.",
+      "Têm intensidades iguais e atuam concorrentemente no mesmo ponto anulando todos os efeitos mecânicos.",
+      "Têm sentidos perpendiculares entre si, convergindo no fulcro articular para aumentar a força normal."
     ],
     "correctIndex": 0,
     "explanation": "Num binário de forças, a resultante translacional é nula (F - F = 0), mas como não atuam na mesma reta suporte, os seus momentos somam-se: τ_binário = F · d_separação. O efeito mecânico de um binário é produzir rotação pura em torno do centro de massa.",
     "distractorAnalysis": [
-      "Está incorreta: descreve forças paralelas unidirecionais que produzem translação acelerada.",
-      "Está incorreta: descreve forças ortogonais.",
-      "Está incorreta: é uma impossibilidade física."
+      "Está incorreta: forças colineares no mesmo sentido produzem translação pura e não constituem um binário de forças rotacional.",
+      "Está incorreta: forças aplicadas no mesmo ponto anulam tanto a translação como a rotação, não formando binário.",
+      "Está incorreta: um binário exige forças estritamente paralelas de sentidos contrários com separação linear."
     ],
     "nursingApplication": "O movimento de rodar uma torneira de oxigénio medicinal, abrir um frasco estéril de medicamento ou desatarraxar uma tampa de cateter de três vias com o polegar e indicador é a aplicação clássica de um binário de forças em enfermagem."
   },
@@ -1145,17 +1149,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "O momento de inércia rotacional (I) de um segmento corporal em torno de um eixo articular depende da distribuição da sua massa em relação ao eixo (I = ∑ m_i · r_i²). Dobrar a distância r de uma massa ao eixo faz o seu momento de inércia aumentar:",
     "options": [
-      "4 vezes (aumento com o quadrado da distância).",
-      "2 vezes (aumento linear).",
-      "8 vezes (ao cubo).",
-      "Permanece inalterado."
+      "Aumenta exatamente 2 vezes, apresentando uma proporcionalidade linear estrita com o raio articular.",
+      "Aumenta 4 vezes em torno do eixo de rotação, porque o momento de inércia varia com o quadrado da distância.",
+      "Diminui para metade devido à redistribuição da massa inercial ao longo do novo perímetro espacial.",
+      "Permanece constante porque o momento de inércia depende exclusivamente do valor escalar da massa."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "O momento de inércia depende quadraticamente da distância ao eixo de rotação: I ∝ r². Se a distância duplica (2r), o momento de inércia quadruplica: (2r)² = 4r². Quanto mais afastada estiver a massa do fulcro, mais difícil é acelerar ou travar a rotação.",
     "distractorAnalysis": [
-      "Está incorreta: confunde dependência quadrática com linear.",
-      "Está incorreta: confunde com dependência cúbica.",
-      "Está incorreta: ignora a geometria rotacional newtoniana."
+      "Está incorreta: a relação é quadrática (I = m · r²): duplicar o raio (2r) multiplica o momento de inércia por 4 (2² = 4) e não por 2.",
+      "Está incorreta: o afastamento da massa em relação ao eixo aumenta a inércia rotacional e nunca a reduz.",
+      "Está incorreta: a distribuição geométrica da massa em relação ao eixo é o fator determinante do momento de inércia."
     ],
     "nursingApplication": "Ao mobilizar a perna estendida de um doente pesado, o enfermeiro flete o joelho do doente: flexionar a perna aproxima a massa do pé do eixo da anca (reduz r), diminuindo dramaticamente o momento de inércia e tornando a manobra muito mais leve e segura."
   },
@@ -1164,17 +1168,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Numa pinça hemostática tipo Kocher de 16 cm, o eixo central (parafuso) atua como fulcro. Se o enfermeiro aplicar 20 N nas argolas a 12 cm do eixo, qual é o torque transmitido às mandíbulas de preensão?",
     "options": [
-      "τ = 20 N × 0,12 m = 2,4 N·m.",
-      "τ = 20 N × 16 m = 320 N·m.",
-      "τ = 0 N·m.",
-      "τ = 1,67 N·m."
+      "Um torque de 240 N·m decorrente do cálculo com o comprimento expresso em centímetros sem conversão ao SI.",
+      "Um torque de 1,66 N·m resultante da divisão simples da força manual pela distância geométrica ao parafuso.",
+      "Um torque de 2,4 N·m na haste de fecho da pinça hemostática (τ = F · d = 20 N × 0,12 m = 2,4 N·m de momento torsor).",
+      "Um torque nulo (0 N·m) visto que as pinças cirúrgicas hemostáticas operam em equilíbrio puramente estático."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "O torque de potência gerado pela mão do enfermeiro é o produto da força aplicada pelo braço de potência em metros: τ = 20 N × 0,12 m = 2,4 N·m. Esse mesmo torque é transmitido às mandíbulas que prendem o vaso sanguíneo.",
     "distractorAnalysis": [
-      "Está incorreta: comete o erro de não converter centímetros para metros.",
-      "Está incorreta: anularia a capacidade de preensão do instrumento.",
-      "Está incorreta: divide a força pelo comprimento."
+      "Está incorreta: 240 N·m decorre de esquecer a conversão de 12 cm para 0,12 m, resultando num erro de cem vezes.",
+      "Está incorreta: o torque é o produto da força pela distância (20 × 0,12) e não a divisão da força pelo comprimento.",
+      "Está incorreta: o aperto da pinça envolve a aplicação de torque ativo pelas hastes até ao engate da cremalheira."
     ],
     "nursingApplication": "O desenho ergonómico das pinças cirúrgicas hemostáticas assegura que um torque de 2,4 N·m se concentra numa ponta de lâmina muito curta (ex: 3 cm), gerando forças oclusivas elevadas que esmagam o vaso sangrante e estabelecem hemostase imediata."
   },
@@ -1183,17 +1187,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "A articulação têmporo-mandibular (ATM) e a mastigação humana funcionam como uma alavanca. Quando mordemos com os dentes molares posteriores (mais próximos da ATM) em vez dos incisivos anteriores, a força mastigatória de esmagamento é:",
     "options": [
-      "MUITO MAIOR nos molares, porque o braço de resistência d_R é muito mais curto, aumentando a vantagem mecânica da musculatura mastigatória (masséter e temporal).",
-      "Muito menor nos molares devido ao número de raízes dentárias.",
-      "Rigorosamente igual em todos os dentes da arcada dentária.",
-      "Nula porque os dentes não possuem nervos motores."
+      "Muito maior nos dentes incisivos, porque a distância ao fulcro articular da mandíbula é máxima.",
+      "Rigorosamente igual em todos os dentes da arcada dentária em virtude da rigidez óssea mandibular.",
+      "Inversamente proporcional à massa do músculo masséter, atingindo o valor mínimo junto à sínfise mentoniana.",
+      "Muito maior nos molares, porque o braço de resistência d_R é menor, aumentando a força de esmagamento."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "A mandíbula funciona como alavanca de 3.ª classe com o fulcro na ATM. Como os molares estão mais perto da ATM do que os incisivos (menor braço resistente d_R), a força resistente que a mandíbula consegue vencer é substancialmente superior (F_R = F_P · d_P / d_R).",
     "distractorAnalysis": [
-      "Está incorreta: inverte o efeito da redução do braço resistente.",
-      "Está incorreta: ignora a variação do braço de alavanca ao longo da mandíbula.",
-      "Está incorreta: é uma afirmação anatomicamente incorreta."
+      "Está incorreta: nos incisivos o braço de resistência d_R é maior, o que reduz a força mecânica de corte (F_R = τ / d_R).",
+      "Está incorreta: a força exercida varia inversamente com a distância ao fulcro para o mesmo torque do masséter.",
+      "Está incorreta: a força mastigatória é máxima junto aos dentes molares posteriores mais próximos do fulcro da ATM."
     ],
     "nursingApplication": "Em doentes idosos desdentados parciais sem molares posteriores, o enfermeiro adapta a consistência da dieta (dieta triturada ou pastosa), pois os dentes anteriores não geram torque mastigatório suficiente para desintegrar carnes e fibras duras, prevenindo engasgamentos e asfixia por bolo alimentar."
   },
@@ -1202,17 +1206,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Quando uma força tem uma linha de ação que forma um ângulo de 180° com o braço de alavanca (força puxa na direção oposta ao fulcro, em linha reta), o torque produzido é:",
     "options": [
-      "Exatamente 0 N·m (porque sen 180° = 0).",
-      "Máximo positivo.",
-      "Infinito negativo.",
-      "Igual ao peso do corpo dividido por π."
+      "Exatamente 0 N·m de torque, visto que sen(180°) = 0 e a força atua em alinhamento axial com a alavanca.",
+      "O torque máximo possível porque a força se propaga longitudinalmente ao longo de toda a haste rígida.",
+      "Um torque negativo constante de módulo igual à força multiplicada pelo comprimento total do braço.",
+      "Um torque que varia de forma diretamente proporcional à velocidade angular da articulação sinovial."
     ],
     "correctIndex": 0,
     "explanation": "Como sen(180°) = 0, a fórmula τ = F · d · sen(180°) resulta rigorosamente em zero. A força puxa axialmente a haste para fora do eixo, provocando apenas tração mecânica do pino sem qualquer rotação.",
     "distractorAnalysis": [
-      "Está incorreta: ignoram o valor trigonométrico nulo do seno de 180 graus.",
-      "Está incorreta: ignoram o valor trigonométrico nulo do seno de 180 graus.",
-      "Está incorreta: ignoram o valor trigonométrico nulo do seno de 180 graus."
+      "Está incorreta: forças com ângulo de 180° são colineares com o braço e produzem apenas tração pura, com torque nulo.",
+      "Está incorreta: o torque depende da componente perpendicular (sen θ), sendo nulo quando a força tem direção axial a 180°.",
+      "Está incorreta: o torque independe da velocidade angular e anula-se estritamente pela geometria do ângulo de 180°."
     ],
     "nursingApplication": "Ao tracionar um membro em alinhamento ortopédico estrito (ângulo de 180°), o enfermeiro sabe que a força de tração atua puramente no sentido longitudinal sem induzir desvios rotacionais indesejados no foco da fratura."
   },
@@ -1221,17 +1225,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "O 'braço de momento' (ou braço da força, d_perpendicular) é geometricamente definido como:",
     "options": [
-      "A distância perpendicular mais curta medida entre o eixo de rotação e a linha de ação da força.",
-      "O comprimento total do osso onde o músculo se insere.",
-      "A distância entre o coração e a mão do doente.",
-      "A espessura da cápsula articular sinovial."
+      "O comprimento longitudinal total do osso medido da epífise proximal até à epífise distal articular.",
+      "A distância perpendicular mais curta medida entre o eixo de rotação e a linha de ação da força aplicada.",
+      "A distância em linha reta entre o ponto de inserção tendinosa e o centro de massa do segmento corporal.",
+      "O raio de curvatura da superfície cartilagínea articular medido em decúbito dorsal durante o repouso."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "O braço de momento d_perp = d · sen(θ) é o segmento perpendicular baixado desde o fulcro até à reta suporte da força. Permite calcular o torque de forma simplificada: τ = F · d_perp.",
     "distractorAnalysis": [
-      "Está incorreta: confunde comprimento anatómico bruto com braço perpendicular trigonométrico.",
-      "Está incorreta: não têm correlação geométrica com o torque.",
-      "Está incorreta: não têm correlação geométrica com o torque."
+      "Está incorreta: o comprimento anatómico do osso não coincide com o braço de momento perpendicular da força (d · sen θ).",
+      "Está incorreta: o braço de momento é medido em relação à linha de ação da força e não ao centro de massa.",
+      "Está incorreta: o raio de curvatura cartilagíneo é uma dimensão articular local e não o braço de alavanca da força."
     ],
     "nursingApplication": "A biomecânica moderna utiliza o conceito de braço de momento para modelar cirurgias ortopédicas de transferência tendinosa, permitindo ao enfermeiro especialista antecipar o ganho funcional motor do doente no pós-operatório."
   },
@@ -1240,17 +1244,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "A Vantagem Mecânica (VM) de uma alavanca é quantificada pela razão entre:",
     "options": [
-      "O braço de potência e o braço de resistência (VM = d_P / d_R = F_R / F_P em equilíbrio).",
-      "A energia cinética e a energia potencial gravítica.",
-      "A massa do músculo e o comprimento do osso.",
-      "A pressão arterial sistólica e a pressão arterial diastólica."
+      "A força motora muscular e o coeficiente de atrito cinético desenvolvido entre as superfícies ósseas.",
+      "O comprimento do membro anatómico e a aceleração gravítica local expressa em metros por segundo.",
+      "O braço de potência e o braço de resistência (VM = d_P / d_R = F_R / F_P) em equilíbrio de alavanca.",
+      "A energia mecânica elástica armazenada no tendão e a potência metabólica consumida em repouso."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "A vantagem mecânica ideal exprime o fator pelo qual uma máquina simples multiplica a força aplicada: VM = d_P / d_R. Se d_P > d_R, a VM > 1 (ganho de força); se d_P < d_R, a VM < 1 (desvantagem de força, mas ganho de velocidade e amplitude angular).",
     "distractorAnalysis": [
-      "Está incorreta: confundem o rácio mecânico de alavancas com variáveis energéticas, anatómicas ou cardiovasculares.",
-      "Está incorreta: confundem o rácio mecânico de alavancas com variáveis energéticas, anatómicas ou cardiovasculares.",
-      "Está incorreta: confundem o rácio mecânico de alavancas com variáveis energéticas, anatómicas ou cardiovasculares."
+      "Está incorreta: a vantagem mecânica relaciona grandezas de alavancas e independe do coeficiente de atrito articular.",
+      "Está incorreta: comprimento e aceleração gravitacional não traduzem a definição estática de vantagem mecânica.",
+      "Está incorreta: energia e potência metabólica pertencem à termodinâmica e não à vantagem mecânica estática."
     ],
     "nursingApplication": "O conhecimento da vantagem mecânica permite ao enfermeiro selecionar alicates e tesouras com cabos compridos e mandíbulas curtas quando precisa de cortar fios cirúrgicos ou talas duras com mínimo esforço da mão."
   },
@@ -1259,17 +1263,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Quando uma alavanca possui Vantagem Mecânica menor do que 1 (VM < 1), como sucede na maioria das articulações do corpo humano, que benefício biomecânico compensatório é obtido?",
     "options": [
-      "Grande ganho em amplitude de movimento e velocidade na extremidade do membro (um pequeno encurtamento do músculo produz um deslocamento amplo e rápido da mão ou do pé).",
-      "Economia total de energia metabólica de ATP.",
-      "Imunidade completa contra fraturas ósseas.",
-      "Multiplicação da força do peso por dez."
+      "Multiplicação da força muscular, permitindo erguer cargas muito maiores do que a força desenvolvida.",
+      "Anulação das forças de compressão que atuam na cartilagem da articulação durante o movimento móvel.",
+      "Redução a metade do consumo metabólico de adenosina trifosfato (ATP) nas fibras musculares ativas.",
+      "Grande ganho em amplitude de movimento e velocidade na extremidade do membro à custa de maior força."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "Pelo princípio da conservação da energia e do trabalho mecânico (W = F · d), se o braço de potência é menor que o de resistência (d_P < d_R), o músculo tem de gerar forças muito superiores ao peso sustentado (VM < 1), mas ganha em amplitude geométrica: uma pequena contração de 1 cm do bicípite faz a mão deslocar-se 8 a 10 cm com alta velocidade.",
     "distractorAnalysis": [
-      "Está incorreta porque ; VM < 1 exige maior consumo de ATP pelo músculo para gerar forças elevadas.",
-      "Está incorreta: são alegações sem fundamento físico.",
-      "Está incorreta: são alegações sem fundamento físico."
+      "Está incorreta: VM < 1 exige maior força muscular do que a carga (desvantagem de força), proporcionando ganho de velocidade.",
+      "Está incorreta: a elevada força muscular exigida por VM < 1 aumenta a força de reação e compressão articular.",
+      "Está incorreta: a desvantagem de força não reduz o gasto metabólico de ATP, exigindo maior recrutamento motor."
     ],
     "nursingApplication": "Compreender que o corpo humano é otimizado para velocidade e amplitude (e não para força bruta) explica por que razão os tendões musculares suportam tensões internas de centenas de Newtons para segurar pesos modestos na mão do doente."
   },
@@ -1278,17 +1282,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Se uma ferramenta cirúrgica tiver braço de potência de 20 cm e braço de resistência de 4 cm, qual é a sua Vantagem Mecânica teórica?",
     "options": [
-      "VM = 5 (multiplica a força da mão por 5 vezes).",
-      "VM = 0,2 (reduz a força para um quinto).",
-      "VM = 80.",
-      "VM = 16."
+      "VM = 5, significando que o instrumento multiplica a força manual aplicada pelo operador por cinco vezes.",
+      "VM = 0,2, indicando que a força útil exercida na extremidade é cinco vezes menor do que a força manual.",
+      "VM = 1, mantendo rigorosamente inalterada a magnitude da força aplicada entre as pegas e as pontas.",
+      "VM = 80, resultante do produto da distância de potência pela distância de resistência no instrumento."
     ],
     "correctIndex": 0,
     "explanation": "Calculando a vantagem mecânica: VM = d_P / d_R = 20 cm / 4 cm = 5. Isto significa que uma força manual de 10 N aplicada pelo operador gera uma força de corte ou compressão de 50 N na extremidade resistente.",
     "distractorAnalysis": [
-      "Está incorreta: (0,2) inverte a fração dividindo d_R por d_P.",
-      "Está incorreta: multiplica os comprimentos (20 × 4).",
-      "Está incorreta: subtrai os comprimentos (20 - 4)."
+      "Está incorreta: VM = d_P / d_R = 20 cm / 4 cm = 5 e não 0,2 (que resultaria de inverter erradamente a fração).",
+      "Está incorreta: VM = 1 exigiria braços de igual comprimento (d_P = d_R = 20 cm).",
+      "Está incorreta: a vantagem mecânica é uma razão pura (divisão) e não o produto dos dois comprimentos (20 × 4)."
     ],
     "nursingApplication": "Em procedimentos de emergência para remoção de anéis encravados em dedos edemaciados, os corta-anéis com VM entre 5 e 8 permitem ao enfermeiro cortar aros de ouro ou titânio com segurança sem lesionar o dedo isquemiado."
   },
@@ -1297,17 +1301,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Um instrumento de alavanca com VM = 1 (Vantagem Mecânica unitária) caracteriza-se por:",
     "options": [
-      "Ter o braço de potência exatamente igual ao braço de resistência (d_P = d_R), não alterando a magnitude da força, mas podendo alterar a direção ou o sentido de aplicação.",
-      "Eliminar completamente o atrito com o ar.",
-      "Multiplicar a força motora por infinito.",
-      "Parar instantaneamente qualquer movimento."
+      "A multiplicação da força motora por um fator infinito que anula o esforço mecânico do profissional.",
+      "O braço de potência rigorosamente igual ao braço de resistência (d_P = d_R), alterando apenas a direção.",
+      "A impossibilidade física de transmitir qualquer trabalho mecânico entre as suas duas extremidades.",
+      "Uma desvantagem mecânica severa que exige dez vezes mais força para superar uma carga resistente."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "Quando d_P = d_R, a VM = 1: a força potente tem exatamente o mesmo módulo da força resistente (F_P = F_R). A sua utilidade mecânica reside em transferir a força para um ponto anatómico distante ou inverter o sentido de atuação.",
     "distractorAnalysis": [
-      "Está incorreta: são propriedades irreais sem cabimento na teoria das alavancas.",
-      "Está incorreta: são propriedades irreais sem cabimento na teoria das alavancas.",
-      "Está incorreta: são propriedades irreais sem cabimento na teoria das alavancas."
+      "Está incorreta: vantagem mecânica infinita é uma impossibilidade física em sistemas mecânicos reais.",
+      "Está incorreta: alavancas com VM = 1 transmitem o trabalho mecânico integralmente (ex: tesoura simétrica, balança).",
+      "Está incorreta: desvantagem de força corresponde a VM < 1 e não a VM = 1 (onde a força motora iguala a resistente)."
     ],
     "nursingApplication": "Determinadas pinças de preensão direta e roldanas fixas simples possuem VM = 1: facilitam o acesso visual do cirurgião e do enfermeiro instrumentista em cavidades profundas mantendo a precisão tátil 1:1."
   },
@@ -1316,17 +1320,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "A Lei da Conservação do Trabalho Mecânico aplicada às alavancas ideais (sem atrito) dita que o produto da força pelo deslocamento é constante (F_P · Δs_P = F_R · Δs_R). Isto implica que:",
     "options": [
-      "O que se ganha em força perde-se obrigatoriamente em deslocamento (distância percorrida), e vice-versa.",
-      "Uma alavanca consegue criar energia mecânica a partir do vácuo.",
-      "A massa da alavanca desaparece durante o uso.",
-      "O tempo de movimento para enquanto a alavanca roda."
+      "O ganho em força permite aumentar simultaneamente a amplitude e velocidade de deslocamento da carga útil.",
+      "O trabalho mecânico útil de saída é sempre dez vezes superior ao trabalho mecânico de entrada no sistema.",
+      "O que se ganha em força motora perde-se obrigatoriamente em deslocamento da carga (W = F_P · d_P = F_R · d_R).",
+      "A energia mecânica total dissipa-se espontaneamente sob a forma de deformação puramente elástica e calor de atrito."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "As máquinas simples não criam energia nem trabalho mecânico (W_entrada = W_saída na ausência de perdas). Uma alavanca que multiplica a força por 4 exige que a extremidade potente se desloque 4 vezes mais longe do que a carga resistente.",
     "distractorAnalysis": [
-      "Está incorreta: violaria a 1.ª Lei da Termodinâmica.",
-      "Está incorreta: introduzem fenómenos mágicos e disparatados.",
-      "Está incorreta: introduzem fenómenos mágicos e disparatados."
+      "Está incorreta: pelo princípio da conservação da energia é impossível multiplicar força e velocidade simultaneamente.",
+      "Está incorreta: nenhuma alavanca passiva pode gerar mais trabalho do que a energia que nela é introduzida.",
+      "Está incorreta: em mecanismos macroscópicos a energia dissipada degrada-se em calor por atrito e não em luz."
     ],
     "nursingApplication": "Ao operar camas de manivela ou elevadores hidráulicos de doentes, o enfermeiro sabe que bombear várias vezes a alavanca com percursos amplos permite erguer doentes pesados com esforço muscular suave e controlado."
   },
@@ -1335,17 +1339,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "A articulação atlanto-occipital (entre o crânio e a 1.ª vértebra cervical C1 - Atlas) é o exemplo anatómico clássico de:",
     "options": [
-      "Alavanca de 1.ª Classe (Interfixa), com o ponto de apoio (côndilos occipitais) situado entre a resistência (peso da face e crânio anterior) e a potência (músculos extensores da nuca).",
-      "Alavanca de 2.ª Classe (Inter-resistente).",
-      "Alavanca de 3.ª Classe (Interpotente).",
-      "Um plano inclinado com atrito hidrodinâmico nulo."
+      "Alavanca de 2.ª Classe (Inter-resistente), onde o peso da cabeça se situa entre a coluna e os músculos da nuca.",
+      "Alavanca de 3.ª Classe (Interpotente), com os músculos da nuca inseridos à frente dos dentes incisivos superiores.",
+      "Sistema de polia móvel pura sem ponto de apoio articular no topo da primeira vértebra cervical.",
+      "Alavanca de 1.ª Classe (Interfixa), com o ponto de apoio articular situado entre a potência e a resistência."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "Na alavanca de 1.ª classe (interfixa), o fulcro F localiza-se entre a potência P e a resistência R (P - F - R). Na cabeça, os côndilos occipitais funcionam como fulcro; o peso da cabeça anterior tenta tombar a cabeça para a frente e os músculos da nuca (esplénio e trapézio) aplicam a força para trás mantendo o equilíbrio.",
     "distractorAnalysis": [
-      "Está incorreta: confundem a posição relativa do ponto de apoio com a carga ou o músculo.",
-      "Está incorreta: descreve outra máquina simples que não corresponde à anatomia craniovertebral.",
-      "Está incorreta: descreve outra máquina simples que não corresponde à anatomia craniovertebral."
+      "Está incorreta: a resistência (peso do crânio) fica à frente dos côndilos e a potência muscular atrás (interfixa).",
+      "Está incorreta: os músculos extensores da nuca inserem-se no occipital posteriormente ao fulcro dos côndilos da C1.",
+      "Está incorreta: a articulação atlanto-occipital é uma junta sinovial clássica que atua como fulcro mecânico."
     ],
     "nursingApplication": "Em doentes sob anestesia geral ou coma neurológico com perda do tónus muscular da nuca, a cabeça tomba imediatamente para a frente sob a gravidade, colapsando a via aérea; o enfermeiro realiza a manobra de extensão da cabeça (chin-lift) para abrir a via aérea."
   },
@@ -1354,17 +1358,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Nas tesouras cirúrgicas de dissecação (tipo Metzenbaum ou Mayo), a disposição mecânica do parafuso central, das pegas dos dedos e das lâminas afiadas classifica-as como:",
     "options": [
-      "Alavanca dupla de 1.ª Classe (Interfixa), com o parafuso central a funcionar como fulcro comum entre a potência dos dedos e a resistência do tecido.",
-      "Alavanca de 2.ª classe simples.",
-      "Alavanca de 3.ª classe exclusiva.",
-      "Cunha hidrostática sem momento de rotação."
+      "Alavanca dupla de 1.ª Classe (Interfixa), com o parafuso central a funcionar como fulcro entre as pegas e as pontas.",
+      "Alavanca de 2.ª Classe (Inter-resistente), com a gaze cortada situada entre os dedos do cirurgião e o fulcro.",
+      "Alavanca de 3.ª Classe (Interpotente), com as lâminas soldadas na extremidade anterior sem ponto de giro.",
+      "Dispositivo hidráulico de corte por pressão estática sem componente de momentos de rotação."
     ],
     "correctIndex": 0,
     "explanation": "Uma tesoura é composta por duas alavancas de 1.ª classe opostas unidas no eixo central (fulcro). A força dos dedos nas argolas (potência) fecha as lâminas sobre o tecido biológico (resistência), concentrando a pressão no ponto de corte.",
     "distractorAnalysis": [
-      "Está incorreta: não correspondem à posição intermediária do eixo de articulação.",
-      "Está incorreta: ignora a mecânica de alavanca com fulcro evidente.",
-      "Está incorreta: ignora a mecânica de alavanca com fulcro evidente."
+      "Está incorreta: o parafuso intermediário fica entre os anéis (potência) e as lâminas (resistência), definindo 1.ª classe.",
+      "Está incorreta: tesouras não têm lâminas soldadas na ponta, cruzando-se em torno do parafuso central articulado.",
+      "Está incorreta: as tesouras cirúrgicas são alavancas mecânicas manuais clássicas sem circuitos hidráulicos."
     ],
     "nursingApplication": "O enfermeiro instrumentista empunha a tesoura cirúrgica inserindo apenas as pontas das falanges distais do polegar e do anelar nas argolas, usando o indicador como guia de estabilização do fulcro para máxima precisão de corte sem tremores."
   },
@@ -1373,17 +1377,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na alavanca de 1.ª classe, dependendo da posição do fulcro (ponto de apoio), a Vantagem Mecânica pode ser:",
     "options": [
-      "Maior que 1 (VM > 1), igual a 1 (VM = 1) ou menor que 1 (VM < 1), conforme o fulcro esteja mais próximo da resistência, a meio ou mais próximo da potência.",
-      "Estritamente menor que 1 em todos os casos físicos.",
-      "Obrigatoriamente maior que 10 em qualquer instrumento.",
-      "Zero em qualquer circunstância anatómica."
+      "É obrigatoriamente sempre superior a 1 (VM > 1) em qualquer montagem mecânica de instrumentos interfixos.",
+      "Pode ser maior que 1, igual a 1 ou menor que 1, consoante a posição relativa do fulcro entre as duas forças.",
+      "É obrigatoriamente sempre inferior a 1 (VM < 1), provocando sempre perda de força e ganho de amplitude.",
+      "É estritamente constante e igual a 0,5 devido à simetria axial de todos os pontos de apoio interfixos."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "Como o fulcro está no meio, a sua posição relativa pode variar livremente: se d_P > d_R (como num alicate), VM > 1; se d_P = d_R (como numa balança clássica), VM = 1; se d_P < d_R (como numa tesoura de poda com lâminas longas), VM < 1. É a única classe de alavancas com esta versatilidade completa.",
     "distractorAnalysis": [
-      "Está incorreta: é a característica estrita das alavancas de 3.ª classe.",
-      "Está incorreta porque , pois a maioria das alavancas de 1.ª classe tem valores moderados de VM.",
-      "Está incorreta: anularia qualquer capacidade de transmissão mecânica."
+      "Está incorreta: se o fulcro estiver mais próximo da resistência (d_P > d_R), VM > 1; se estiver no meio, VM = 1; se d_P < d_R, VM < 1.",
+      "Está incorreta: alavancas de 1.ª classe com braço de potência longo multiplicam força com VM > 1 (ex: pé-de-cabra).",
+      "Está incorreta: a vantagem mecânica depende da localização do fulcro, não tendo um valor universal fixado em 0,5."
     ],
     "nursingApplication": "Compreender esta versatilidade permite ao enfermeiro escolher o instrumento certo: alicates cirúrgicos com fulcro colado às mandíbulas (VM > 5) para cortar pinos metálicos e tesouras de sutura balanceadas para manobras delicadas."
   },
@@ -1392,17 +1396,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "A flexão plantar do tornozelo quando uma pessoa se eleva na ponta dos pés (ao apoiar-se nas cabeças dos metatarsos) é o exemplo clássico de:",
     "options": [
-      "Alavanca de 2.ª Classe (Inter-resistente), com a resistência (peso do corpo transmitido pela tíbia) situada entre o fulcro (cabeças dos metatarsos) e a potência (músculo tríceps sural / tendão de Aquiles).",
-      "Alavanca de 1.ª Classe (Interfixa).",
-      "Alavanca de 3.ª Classe (Interpotente).",
-      "Equilíbrio hidrostático de Boyle-Mariotte."
+      "Alavanca de 1.ª Classe (Interfixa), com a tíbia a funcionar como fulcro articular central entre os dedos e o calcanhar.",
+      "Alavanca de 3.ª Classe (Interpotente), com a inserção tendinosa na parte anterior das cabeças dos metatarsos.",
+      "Alavanca de 2.ª Classe (Inter-resistente), com o peso transmitido pela tíbia situado entre os metatarsos e o calcâneo.",
+      "Sistema de amortecimento puramente viscoelástico sem momentos de rotação em torno dos eixos do pé."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "Na alavanca de 2.ª classe, a resistência R localiza-se entre o ponto de apoio F e a força potente P (F - R - P). Na ponta dos pés, o fulcro está no solo sob os metatarsos, o peso de todo o corpo desce pelo tornozelo na articulação tibiotársica (ao meio) e o tendão de Aquiles traciona a tuberosidade do calcâneo na extremidade posterior.",
     "distractorAnalysis": [
-      "Está incorreta: colocaria o fulcro no meio, o que não é o caso anatómico da tíbia.",
-      "Está incorreta: colocaria o músculo a puxar no meio da carga.",
-      "Está incorreta: é uma lei dos gases sem ligação à mecânica articular."
+      "Está incorreta: o fulcro com o solo está nas cabeças dos metatarsos, ficando a carga tibial entre o fulcro e o tendão de Aquiles.",
+      "Está incorreta: o tendão de Aquiles insere-se na tuberosidade posterior do calcâneo e não nos metatarsos anteriores.",
+      "Está incorreta: o pé atua como uma viga biomecânica com momentos de rotação bem definidos sobre o solo."
     ],
     "nursingApplication": "Como a alavanca de 2.ª classe tem SEMPRE VM > 1 (d_P > d_R), o músculo da barriga da perna (gémeos e sóleo) consegue erguer facilmente o peso corporal total de um doente de 80 kg com modesta tensão muscular, sendo essencial na reabilitação da marcha pós-fratura."
   },
@@ -1411,17 +1415,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "A característica biomecânica invariante de TODAS as Alavancas de 2.ª Classe (Inter-resistentes) é que a sua Vantagem Mecânica é:",
     "options": [
-      "SEMPRE MAIOR DO QUE 1 (VM > 1), garantindo sempre multiplicação de força muscular e alívio de esforço em detrimento de amplitude e velocidade.",
-      "Sempre menor do que 1 (VM < 1).",
-      "Sempre rigorosamente igual a zero.",
-      "Variável entre valores negativos e positivos conforme a temperatura."
+      "A Vantagem Mecânica é sempre inferior a 1 (VM < 1), exigindo grande força muscular para mover cargas leves.",
+      "A Vantagem Mecânica é nula (VM = 0), sendo impossível obter equilíbrio mecânico de rotação com cargas pesadas.",
+      "A Vantagem Mecânica inverte o seu sinal algébrico periodicamente a cada ciclo de mobilização articular.",
+      "A Vantagem Mecânica é sempre superior a 1 (VM > 1), porque o braço de potência é sempre maior que o de resistência."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "Como a resistência está entre o fulcro e a potência, o braço de potência estende-se desde o fulcro até à extremidade oposta, sendo obrigatoriamente mais longo do que o braço de resistência (d_P > d_R). Logo, a razão VM = d_P / d_R é estritamente superior a 1 em qualquer circunstância física.",
     "distractorAnalysis": [
-      "Está incorreta: descreve as alavancas de 3.ª classe.",
-      "Está incorreta: violam as relações geométricas básicas das máquinas simples.",
-      "Está incorreta: violam as relações geométricas básicas das máquinas simples."
+      "Está incorreta: na 2.ª classe a resistência está no meio, logo d_P é a distância total ao fulcro e supera d_R (VM > 1).",
+      "Está incorreta: VM < 1 é a propriedade exclusiva das alavancas de 3.ª classe (interpotentes).",
+      "Está incorreta: as alavancas de 2.ª classe são sistemas de alta eficiência multiplicadora de força estática."
     ],
     "nursingApplication": "Dispositivos hospitalares concebidos como alavancas de 2.ª classe (como elevadores manuais de transferência de doentes ou carrinhos de transporte de garrafas de oxigénio) permitem ao enfermeiro manusear cargas pesadas com segurança sem sobrecarregar a musculatura."
   },
@@ -1430,17 +1434,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "A flexão do cotovelo pelo músculo bicípite braquial ao segurar um objeto na mão é o exemplo mais comum no corpo humano de:",
     "options": [
-      "Alavanca de 3.ª Classe (Interpotente), com o ponto de aplicação da potência (inserção do tendão do bicípite na tuberosidade radial) situado entre o fulcro (articulação do cotovelo) e a resistência (peso do antebraço e do objeto na mão).",
-      "Alavanca de 1.ª Classe (Interfixa).",
-      "Alavanca de 2.ª Classe (Inter-resistente).",
-      "Plano inclinado puramente elástico."
+      "Alavanca de 3.ª Classe (Interpotente), com a potência aplicada entre a articulação do cotovelo e a mão de suporte.",
+      "Alavanca de 1.ª Classe (Interfixa), com a tróclea umeral localizada no centro geométrico entre o punho e o ombro.",
+      "Alavanca de 2.ª Classe (Inter-resistente), onde a carga resistente na mão fica posicionada entre o fulcro e o bicípite.",
+      "Sistema de roldana móvel pura que divide a força resistente por dois sem necessidade de rotação articular sinovial."
     ],
     "correctIndex": 0,
     "explanation": "Na alavanca de 3.ª classe, a potência P está situada entre o fulcro F e a resistência R (F - P - R). O cotovelo é o eixo (F), o tendão do bicípite insere-se a apenas 3-4 cm do cotovelo (P), e a carga está na mão a cerca de 30-35 cm de distância (R).",
     "distractorAnalysis": [
-      "Está incorreta: exigiria o cotovelo situado no meio entre o músculo e a mão.",
-      "Está incorreta: exigiria a carga posicionada entre o cotovelo e o tendão muscular.",
-      "Está incorreta: não corresponde a um modelo de alavanca com fulcro e rotação."
+      "Está incorreta: na flexão do cotovelo o fulcro é a articulação proximal e a potência tendinosa atua distalmente ao fulcro.",
+      "Está incorreta: a resistência da mão fica na extremidade distal e a força muscular atua no meio (interpotente).",
+      "Está incorreta: as articulações esqueléticas operam como alavancas anatómicas rígidas e não roldanas móveis suspensas."
     ],
     "nursingApplication": "Como d_P << d_R (ex: 4 cm vs 35 cm), a VM é de apenas ~0,11: para segurar um medicamento de 2 kg na mão (~20 N), o bicípite braquial tem de produzir uma força de mais de 175 N no tendão! O enfermeiro compreende por que razão manter cargas pesadas com o antebraço fletido causa fadiga muscular tão rápida."
   },
@@ -1449,17 +1453,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "As pinças anatómicas e pinças de dissecação cirúrgica sem travão utilizadas em enfermagem (tipo pinça com dentes de rato ou pinça Adson) são classificadas como:",
     "options": [
-      "Alavancas de 3.ª Classe (Interpotentes), com o fulcro soldado na extremidade posterior, a potência aplicada pelos dedos no terço médio e a resistência do tecido nas pontas ativas.",
-      "Alavancas de 1.ª classe duplas.",
-      "Alavancas de 2.ª classe simples.",
-      "Alavancas de 4.ª classe termodinâmica."
+      "Alavancas de 1.ª Classe (Interfixas), com um eixo articulado intermediário cruzado idêntico ao de uma tesoura cirúrgica.",
+      "Alavancas de 3.ª Classe (Interpotentes), com o fulcro na extremidade unida e os dedos a exercer força no terço médio.",
+      "Alavancas de 2.ª Classe (Inter-resistentes), com o tecido biológico apreendido entre as pegas digitais e o ponto de mola.",
+      "Cunhas mecânicas simples que atuam por atrito estático puro sem qualquer componente de momento de rotação angular."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "Numa pinça de dissecação, a mola soldada no topo é o ponto de apoio (fulcro F). Os dedos do enfermeiro comprimem as hastes no meio (potência P), e as pontas da pinça agarram a compressa ou o tecido biológico na extremidade oposta (resistência R).",
     "distractorAnalysis": [
-      "Está incorreta: descreve tesouras e pinças com parafuso cruzado central.",
-      "Está incorreta: exigiria as pontas no meio e os dedos no topo.",
-      "Está incorreta: é uma classe inexistente na mecânica clássica (existem apenas 3 classes de alavancas)."
+      "Está incorreta: as pinças de dissecação convencionais não têm eixo articulado intermediário; o fulcro é a extremidade unida.",
+      "Está incorreta: a carga fica na ponta livre distal e os dedos atuam no meio das hastes elásticas flexíveis.",
+      "Está incorreta: as pinças funcionam como vigas elásticas fletidas em alavanca de 3.ª classe com sensibilidade tátil fina."
     ],
     "nursingApplication": "A vantagem mecânica menor que 1 das pinças de dissecação proporciona ao enfermeiro sensibilidade tátil tátil e precisão milimétrica durante o manuseio asséptico de tecidos em feridas complexas sem esmagar as estruturas celulares delicadas."
   },
@@ -1468,17 +1472,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Qual é a classe de alavancas MAIS ABUNDANTE no sistema musculoesquelético do corpo humano?",
     "options": [
-      "Alavancas de 3.ª Classe (Interpotentes), privilegiando a velocidade de contração e a grande amplitude angular de movimentos nos membros em detrimento da economia de força muscular.",
-      "Alavancas de 2.ª Classe exclusivamente.",
-      "Alavancas de 1.ª Classe com vantagens mecânicas superiores a 20.",
-      "Não existem alavancas no corpo humano."
+      "Alavancas de 2.ª Classe (Inter-resistentes), priorizando a multiplicação da força em todos os gestos corporais diários.",
+      "Alavancas de 1.ª Classe (Interfixas), distribuindo simetricamente as forças musculares em redor de eixos esqueléticos centrais.",
+      "Alavancas de 3.ª Classe (Interpotentes), privilegiando a velocidade de movimento e amplitude articular das extremidades.",
+      "Sistemas mecânicos de plano inclinado puro que dispensam a existência de eixos articulares de rotação anatómicos."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "A evolução biológica favoreceu a velocidade e a versatilidade: quase todas as articulações dos membros superiores e inferiores (cotovelo, joelho, ombro, anca, dedos) funcionam como alavancas de 3.ª classe, onde os tendões se inserem muito próximos das articulações para permitir movimentos amplos e ágeis com pequenas excursões musculares.",
     "distractorAnalysis": [
-      "Está incorreta: é rara no corpo humano (o exemplo quase único é a flexão plantar do tornozelo).",
-      "Está incorreta porque , pois as alavancas de 1.ª classe anatómicas têm VM moderada ou baixa.",
-      "Está incorreta: ignora a biomecânica clássica descrita por Giovanni Borelli no século XVII."
+      "Está incorreta: as alavancas de 2.ª classe são raras no corpo humano, restringindo-se essencialmente à flexão plantar do tornozelo.",
+      "Está incorreta: as alavancas de 1.ª classe constituem uma minoria no esqueleto (ex: articulação atlanto-occipital, extensão do cotovelo).",
+      "Está incorreta: a esmagadora maioria das articulações sinoviais móveis opera sob o princípio de alavancas de 3.ª classe."
     ],
     "nursingApplication": "O predomínio de alavancas de 3.ª classe demonstra ao enfermeiro que o sistema musculoesquelético humano não foi projetado para atuar como guindaste de carga estática: transferências manuais repetidas de doentes pesados sem auxílio mecânico sobrecarregam os tendões, fundamentando o uso de tecnologias de apoio."
   },
@@ -1487,17 +1491,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Ao utilizar um alicate corta-unhas cirúrgico de podologia para cortar unhas espessadas (onicogrifose) de doentes geriátricos, a elevada força de corte é conseguida através de:",
     "options": [
-      "Uma combinação de alavancas com grande Vantagem Mecânica (braço de potência longo nas hastes e braço de resistência curtíssimo nas lâminas de corte afiadas).",
-      "Um aumento da temperatura do metal acima de 100 °C.",
-      "Emissão de ondas de choque acústicas pelos cabos.",
-      "Uma diminuição transitória da massa atómica da queratina da unha."
+      "Alavanca de 3.ª classe pura que reduz a força aplicada na lâmina para evitar a penetração excessiva no leito ungueal.",
+      "Dispositivo pneumático passivo que converte a humidade da lâmina ungueal em pressão hidrostática de separação mecânica.",
+      "Alavanca de 1.ª classe simétrica com braços rigorosamente iguais que apenas inverte o sentido da força motora manual.",
+      "Combinação de alavancas com grande Vantagem Mecânica (d_P >> d_R) que multiplica a força manual sobre a lâmina de corte."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "O alicate corta-unhas maximiza a razão d_P / d_R: cabos longos operados pela mão geram um torque elevado que é transferido para lâminas muito curtas, multiplicando a força muscular manual em dezenas de vezes e gerando tensões de corte superiores à resistência da queratina hipertrofiada.",
     "distractorAnalysis": [
-      "Está incorreta: descrevem processos físicos ou térmicos inexistentes em instrumentos manuais comuns.",
-      "Está incorreta: descrevem processos físicos ou térmicos inexistentes em instrumentos manuais comuns.",
-      "Está incorreta: descrevem processos físicos ou térmicos inexistentes em instrumentos manuais comuns."
+      "Está incorreta: alicates de podologia para unhas espessadas requerem grande multiplicação de força (VM >> 1) e não VM < 1.",
+      "Está incorreta: o alicate é um instrumento puramente mecânico de alavancas metálicas sem mecanismos pneumáticos ou hidrostáticos.",
+      "Está incorreta: alavancas simétricas teriam VM = 1, sendo insuficientes para cortar placas de queratina hipertrófica."
     ],
     "nursingApplication": "O enfermeiro no pé diabético e podologia geriátrica utiliza alicates com mola dupla e alta vantagem mecânica para cortar unhas patológicas sem aplicar força excessiva, prevenindo o escorregamento do instrumento e feridas acidentais na pele periungueal frágil."
   },
@@ -1506,17 +1510,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Um doente com paralisia do músculo tríceps braquial tem dificuldade em estender o cotovelo contra a resistência. A extensão do cotovelo pelo tríceps em torno do olécrano funciona biomecanicamente como uma alavanca de:",
     "options": [
-      "1.ª Classe (Interfixa), com o fulcro na tróclea umeral situado entre a inserção do tendão do tríceps no olécrano (potência) e o peso do antebraço (resistência).",
-      "2.ª Classe (Inter-resistente).",
-      "3.ª Classe (Interpotente).",
-      "Polia móvel de quatro cordas."
+      "Alavanca de 1.ª Classe (Interfixa), com o fulcro na tróclea umeral situado entre o olecrânio e a mão que sustenta a carga.",
+      "Alavanca de 2.ª Classe (Inter-resistente), com a inserção tendinosa do tríceps a atuar distalmente à articulação do punho.",
+      "Alavanca de 3.ª Classe (Interpotente), com o tendão do tríceps inserido entre a cartilagem do cotovelo e a ponta dos dedos.",
+      "Sistema mecânico sem alavanca que opera exclusivamente por compressão hidrostática da bursa sinovial olecraniana."
     ],
     "correctIndex": 0,
     "explanation": "Na extensão do cotovelo, a tróclea do úmero é o fulcro no meio: o tendão do tríceps puxa o olécrano para trás/cima (potência) e a resistência (antebraço) move-se para a frente/baixo, configurando uma alavanca de 1.ª classe clássica.",
     "distractorAnalysis": [
-      "Está incorreta: não refletem a anatomia da fossa do olécrano e tróclea umeral.",
-      "Está incorreta: introduz uma máquina de polias inexistente nesta articulação.",
-      "Está incorreta: introduz uma máquina de polias inexistente nesta articulação."
+      "Está incorreta: o olecrânio situa-se posteriormente ao fulcro umeral, ficando a articulação entre o tendão e o antebraço (interfixa).",
+      "Está incorreta: o tríceps não se insere no punho, terminando na tuberosidade posterior do olecrânio da ulna.",
+      "Está incorreta: a extensão do cotovelo contra resistência opera por tração do olecrânio numa alavanca de 1.ª classe."
     ],
     "nursingApplication": "Avaliar o reflexo tricipital e a força extensora do cotovelo permite ao enfermeiro testar a integridade das raízes nervosas cervicais C7 e C8 e do nervo radial no exame neurológico de doentes com traumatismo vertebro-medular."
   },
@@ -1525,17 +1529,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Um enfermeiro usa uma pinça hemostática de Pean para clampar uma tubuladura de soro espessa. A distância do eixo central (parafuso) às argolas onde a mão aperta é de 10 cm e a distância do eixo à ponta ativa é de 2 cm. Qual é a força de aperto transmitida à tubuladura se o enfermeiro aplicar 30 N nas argolas?",
     "options": [
-      "150 N (Vantagem Mecânica = 10 / 2 = 5; 30 N × 5 = 150 N).",
-      "6 N.",
-      "30 N.",
-      "600 N."
+      "Uma força de aperto de 6 N decorrente da divisão errada da força aplicada pela vantagem mecânica teórica (30 / 5).",
+      "Uma força de aperto de 150 N nas pontas ativas da pinça (VM = d_P / d_R = 10 / 2 = 5; F_R = 30 N × 5 = 150 N).",
+      "Uma força de aperto de 30 N mantendo estritamente o mesmo módulo da força exercida pelos dedos do enfermeiro.",
+      "Uma força de aperto de 300 N resultante do produto direto do comprimento total pelo valor da força manual exercida."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "Na alavanca de 1.ª classe em equilíbrio: F_P · d_P = F_R · d_R ⇒ F_R = F_P · (d_P / d_R) = 30 N × (10 cm / 2 cm) = 30 × 5 = 150 N. A força é multiplicada por 5 nas pontas ativas.",
     "distractorAnalysis": [
-      "Está incorreta: divide a força pela vantagem mecânica (30 / 5).",
-      "Está incorreta: assume vantagem mecânica unitária.",
-      "Está incorreta: multiplica por 20 em vez de 5."
+      "Está incorreta: 6 N corresponderia a uma desvantagem de força (VM = 0,2), o que não ocorre numa alavanca com d_P = 10 e d_R = 2 cm.",
+      "Está incorreta: a pinça hemostática de Pean tem braço de potência maior que o braço de resistência, multiplicando a força (VM = 5).",
+      "Está incorreta: 300 N decorre de multiplicar 30 N por 10 cm sem dividir pelo braço de resistência de 2 cm nas mandíbulas."
     ],
     "nursingApplication": "A amplificação de força para 150 N oclui completamente o lúmen da tubuladura plástica espessa de perfusão, permitindo interromper imediatamente fluxos indesejados sem fuga de medicamentos."
   },
@@ -1544,17 +1548,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Ao utilizar uma alavanca de 1.ª classe para remover um penso rígido aderido, se o ponto de apoio for deslocado para mais perto da ponta ativa (diminuindo o braço resistente d_R), o que acontece à força necessária nas mãos do enfermeiro?",
     "options": [
-      "A força necessária diminui proporcionalmente, porque a Vantagem Mecânica (d_P / d_R) aumenta.",
-      "A força necessária aumenta drasticamente.",
-      "A força necessária mantém-se idêntica.",
-      "A força torna-se infinita."
+      "A força necessária aumenta exponencialmente, porque braços mais compridos dissipam mais energia mecânica em atrito interno.",
+      "A força necessária mantém-se inalterada, visto que o torque de descolamento independe da distância ao ponto de apoio.",
+      "A força necessária diminui proporcionalmente, porque a Vantagem Mecânica aumenta com o comprimento da haste de esforço.",
+      "O momento de força torsor anula-se espontaneamente devido ao alongamento elástico da estrutura metálica da espátula."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "Como F_P = F_R · (d_R / d_P), diminuir d_R faz diminuir diretamente a força motora F_P necessária para vencer a mesma resistência. Aproximar o fulcro da carga multiplica a vantagem mecânica.",
     "distractorAnalysis": [
-      "Está incorreta: confunde aproximar o fulcro da carga com aproximar da mão.",
-      "Está incorreta: contrariam a mecânica básica de alavancas.",
-      "Está incorreta: contrariam a mecânica básica de alavancas."
+      "Está incorreta: aumentar o braço de potência d_P aumenta o torque para a mesma força ou reduz a força exigida (F_P = τ / d_P).",
+      "Está incorreta: a distância ao fulcro governa linearmente o momento da força (τ = F · d), não sendo independente do braço.",
+      "Está incorreta: instrumentos metálicos rígidos transmitem torque de forma eficiente sem anulação do momento mecânico."
     ],
     "nursingApplication": "Ao posicionar espátulas ou instrumentos de alívio mecânico, aproximar o ponto de apoio da zona de maior resistência poupa as mãos do enfermeiro e proporciona maior controlo e suavidade."
   },
@@ -1563,17 +1567,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Qual das seguintes ações biomecânicas do corpo humano NÃO é um exemplo de alavanca de 1.ª classe?",
     "options": [
-      "A flexão do cotovelo pelo músculo bicípite braquial ao erguer um copo de água.",
-      "O movimento de acenar com a cabeça dizendo 'sim' (articulação atlanto-occipital).",
-      "A extensão do antebraço pelo músculo tríceps braquial no olécrano.",
-      "O uso de uma tesoura cirúrgica Mayo."
+      "A extensão do cotovelo pelo músculo tríceps braquial ao empurrar uma superfície, que opera como alavanca interfixa.",
+      "A extensão da cabeça pelos músculos esplénios da nuca na articulação atlanto-occipital contra o peso anterior da face.",
+      "A oscilação do pé na articulação do tornozelo quando o membro inferior está suspenso no ar livre sem apoio no solo.",
+      "A flexão do cotovelo pelo músculo bicípite braquial ao erguer um copo, que é um exemplo clássico de 3.ª classe."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "A flexão do cotovelo pelo bicípite é o exemplo clássico de alavanca de 3.ª classe (potência no meio entre o cotovelo e a mão). As outras opções são exemplos legítimos de alavancas de 1.ª classe (fulcro no meio).",
     "distractorAnalysis": [
-      "Está incorreta: são alavancas de 1.ª classe com o fulcro situado entre a potência e a resistência.",
-      "Está incorreta: são alavancas de 1.ª classe com o fulcro situado entre a potência e a resistência.",
-      "Está incorreta: são alavancas de 1.ª classe com o fulcro situado entre a potência e a resistência."
+      "Está incorreta: a extensão do cotovelo pelo tríceps é uma alavanca de 1.ª classe com o fulcro umeral entre o olecrânio e a mão.",
+      "Está incorreta: o equilíbrio da cabeça no atlas é o exemplo anatómico primordial de alavanca de 1.ª classe interfixa.",
+      "Está incorreta: com o pé suspenso a tíbia atua como fulcro entre os flexores e extensores antagónicos em 1.ª classe."
     ],
     "nursingApplication": "Diferenciar as classes de alavancas anatómicas permite ao enfermeiro compreender quais as articulações suscetíveis a fadiga por desvantagem mecânica (3.ª classe) e quais possuem vantagem de equilíbrio (1.ª classe)."
   },
@@ -1582,17 +1586,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Numa alavanca de 1.ª classe simétrica (d_P = d_R = 15 cm), se for aplicada uma força potente de 80 N para baixo, qual é a força resistente equilibrada e qual a força total suportada pelo fulcro central?",
     "options": [
-      "Força resistente de 80 N para cima; o fulcro central suporta uma força total de compressão de 160 N para cima (N = F_P + F_R).",
-      "Força resistente de 160 N; o fulcro suporta 0 N.",
-      "Força resistente de 40 N; o fulcro suporta 80 N.",
-      "Força resistente de 0 N; o fulcro suporta 80 N."
+      "Força resistente de 80 N para cima; o fulcro central suporta uma força normal compressiva resultante de 160 N para cima.",
+      "Força resistente de 40 N para cima; o fulcro central suporta uma força compressiva nula por simetria geométrica de eixos.",
+      "Força resistente de 160 N para cima; o fulcro central suporta uma força descendente de oitenta Newtons no solo.",
+      "Força resistente nula (0 N); o fulcro central suporta a totalidade da massa inercial sem transmissão de momento torsor."
     ],
     "correctIndex": 0,
     "explanation": "Pelo equilíbrio rotacional: F_R = F_P · (15 / 15) = 80 N. Pelo equilíbrio translacional vertical: ∑Fy = 0 ⇒ N_fulcro - F_P - F_R = 0 ⇒ N_fulcro = 80 + 80 = 160 N. O ponto de apoio suporta a soma das duas forças.",
     "distractorAnalysis": [
-      "Está incorreta: violam a 1.ª ou a 2.ª condições de equilíbrio estático da mecânica newtoniana.",
-      "Está incorreta: violam a 1.ª ou a 2.ª condições de equilíbrio estático da mecânica newtoniana.",
-      "Está incorreta: violam a 1.ª ou a 2.ª condições de equilíbrio estático da mecânica newtoniana."
+      "Está incorreta: braços de alavanca iguais (VM = 1) equilibram forças de igual módulo (80 N = 80 N) e a reação no fulcro é a soma (160 N).",
+      "Está incorreta: a força resistente não se duplica para 160 N com braços perfeitamente simétricos (d_P = d_R = 15 cm).",
+      "Está incorreta: para haver equilíbrio estático de translação e rotação a força resistente deve ser 80 N e a reação no fulcro 160 N."
     ],
     "nursingApplication": "Nas articulações que funcionam como alavancas de 1.ª classe (como a articulação atlanto-occipital), as superfícies cartilagíneas articulares do fulcro suportam a soma da carga do peso da cabeça com a força dos músculos da nuca, justificando a ocorrência de artrose cervical com o envelhecimento."
   },
@@ -1601,17 +1605,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "A balança romana tradicional utilizada historicamente em hospitais é uma alavanca de 1.ª classe com braço de potência variável. Como é feito o equilíbrio nessa balança?",
     "options": [
-      "O contrapeso padrão tem peso fixo, mas a sua distância ao fulcro d_P é alterada deslocando-o ao longo da haste graduada até que o torque potente iguale o torque da carga do doente (P_padrão · d_P = P_doente · d_R).",
-      "Aumenta-se a temperatura da haste de metal.",
-      "Muda-se a gravidade local com um íman.",
-      "O doente segura a haste com as duas mãos."
+      "O braço de potência é rigorosamente fixo, variando-se a massa inercial do contrapeso através da adição de água líquida.",
+      "O contrapeso padrão tem peso fixo, mas a sua distância ao fulcro (d_P) é variada ao longo da haste graduada até ao equilíbrio.",
+      "A balança atua como uma alavanca de 3.ª classe com desvantagem mecânica constante que amplifica a leitura da massa.",
+      "O ponto de apoio articular desloca-se continuamente por ação de um motor elétrico alimentado por pilhas de lítio."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "Como τ = F · d, para equilibrar uma carga variável com uma força fixa (contrapeso), varia-se a distância d_P. A leitura na escala graduada traduz diretamente a distância em quilogramas correspondentes.",
     "distractorAnalysis": [
-      "Está incorreta: não possuem fundamento na física clássica de alavancas estáticas.",
-      "Está incorreta: não possuem fundamento na física clássica de alavancas estáticas.",
-      "Está incorreta: não possuem fundamento na física clássica de alavancas estáticas."
+      "Está incorreta: na balança romana o peso padrão é constante e desloca-se ao longo da haste graduada variando d_P (τ_P = P_padrao · d_P).",
+      "Está incorreta: a balança romana é uma alavanca de 1.ª classe interfixa e não de 3.ª classe interpotente.",
+      "Está incorreta: o fulcro da balança romana é estático (gancho de suspensão fixo), sem componentes motorizados ou elétricos."
     ],
     "nursingApplication": "O princípio da balança romana demonstra como o ajuste de distância (braço de alavanca) permite contrabalançar forças pesadas sem necessitar de contrapesos volumosos."
   },
@@ -1620,17 +1624,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Um carrinho manual hospitalar de transporte de garrafas pesadas de oxigénio medicinal funciona como uma alavanca de 2.ª classe. Onde se localizam o fulcro, a carga e o operador?",
     "options": [
-      "O fulcro está no eixo das rodas no solo, a carga pesada da garrafa está situada ao meio sobre a base, e o enfermeiro aplica a força potente nas pegas compridas na extremidade superior.",
-      "O enfermeiro está no meio entre a garrafa e as rodas.",
-      "As rodas estão no meio entre o operador e a garrafa.",
-      "A garrafa atua como fulcro e as rodas flutuam no ar."
+      "Alavanca de 1.ª classe, com a garrafa pesada de oxigénio posicionada entre as rodas dianteiras e o pavimento da enfermaria.",
+      "Alavanca de 3.ª classe, com o enfermeiro a empurrar uma zona situada obrigatoriamente entre as rodas e a base da garrafa.",
+      "Alavanca de 2.ª classe, com o fulcro nas rodas, a garrafa pesada no meio e o esforço do enfermeiro nas pegas superiores.",
+      "Sistema mecânico puro de cunha sem vantagem mecânica mensurável na elevação ou transporte de equipamentos móveis."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "Num carrinho de transporte (semelhante a um carrinho de mão clássico), a ordem é Fulcro (rodas) - Resistência (garrafa pesada) - Potência (mãos do operador). Como d_P é o comprimento total e d_R é a distância das rodas à garrafa (d_P > d_R), a VM é sempre > 1.",
     "distractorAnalysis": [
-      "Está incorreta: seria alavanca de 3.ª classe com grande desvantagem de força.",
-      "Está incorreta: seria alavanca de 1.ª classe.",
-      "Está incorreta: é fisicamente incoerente."
+      "Está incorreta: o peso da carga situa-se entre as rodas (apoio) e as pegas onde o operador atua, configurando 2.ª classe.",
+      "Está incorreta: nas alavancas interpotentes (3.ª classe) o esforço fica no meio, o que não ocorre no carrinho de garrafas.",
+      "Está incorreta: o carrinho hospitalar de transporte é um exemplo clássico de engenharia biomecânica de alavanca de 2.ª classe."
     ],
     "nursingApplication": "O transporte seguro de garrafas de oxigénio de 50 kg em carrinhos de 2.ª classe reduz a força que o enfermeiro tem de suportar para menos de 15 kgf, prevenindo lesões da coluna e quedas de garrafas pressurizadas."
   },
@@ -1639,17 +1643,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Se um carrinho de transporte de resíduos hospitalares de 2.ª classe tiver braço de potência de 1,2 metros e a carga estiver situada a 0,3 metros das rodas (fulcro), qual é a força que o profissional tem de exercer para erguer uma carga de 400 N?",
     "options": [
-      "100 N (VM = 1,2 / 0,3 = 4; F_P = 400 N / 4 = 100 N).",
-      "1600 N.",
-      "400 N.",
-      "33,3 N."
+      "Uma força motora de 400 N aplicada nas pegas, mantendo rigorosamente inalterada a magnitude do peso dos resíduos.",
+      "Uma força motora de 1600 N aplicada nas pegas em virtude da multiplicação errada da carga pela razão geométrica dos braços.",
+      "Uma força motora de 25 N aplicada nas pegas decorrente da divisão do peso pelo quadrado da distância de deslocamento.",
+      "Uma força motora de 100 N aplicada nas pegas (VM = d_P / d_R = 1,2 / 0,3 = 4; F_P = F_R / VM = 400 N / 4 = 100 N)."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "Pela condição de equilíbrio: F_P · d_P = F_R · d_R ⇒ F_P = 400 N × (0,3 m / 1,2 m) = 400 × 0,25 = 100 N. A vantagem mecânica de 4 reduz o esforço do operador para apenas um quarto da carga.",
     "distractorAnalysis": [
-      "Está incorreta: multiplicaria em vez de dividir a carga.",
-      "Está incorreta: ignora o efeito multiplicador da alavanca.",
-      "Está incorreta: calcula erradamente por fator de 3."
+      "Está incorreta: 400 N ignoraria a vantagem mecânica do carrinho de 2.ª classe (VM = 4), que reduz o esforço para um quarto.",
+      "Está incorreta: 1600 N resultaria de multiplicar a carga pela vantagem mecânica em vez de a dividir (F_P = F_R / VM).",
+      "Está incorreta: 25 N decorre de dividir 400 por 16 (quadrado da razão), violando a lei de equilíbrio estático de alavancas."
     ],
     "nursingApplication": "Esta redução biofísica de 400 N para 100 N permite aos profissionais de apoio e enfermagem transportar contentores pesados de resíduos biológicos com postura correta e mínimo desgaste físico."
   },
@@ -1658,17 +1662,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Numa maca articulada de ambulância com sistema de pernas dobráveis, ao erguer a traseira da maca apoiada nas rodas dianteiras no solo, o sistema comporta-se como uma alavanca de:",
     "options": [
-      "2.ª Classe, com as rodas dianteiras como fulcro, o peso do doente no meio e a força dos enfermeiros na extremidade traseira.",
-      "1.ª Classe exclusiva.",
-      "3.ª Classe com desvantagem mecânica.",
-      "Cunha puramente hidrostática."
+      "Alavanca de 2.ª Classe, com as rodas dianteiras como fulcro, o peso do doente no meio e a força do operador na peseira.",
+      "Alavanca de 1.ª Classe, com o peso do doente posicionado num ponto anterior ao fulcro giratório das rodas da maca.",
+      "Alavanca de 3.ª Classe, com o profissional a aplicar força no centro do colchão enquanto o doente repousa na extremidade.",
+      "Sistema articulado inerte sem momentos de força em virtude do amortecimento pneumático das suspensões do leito móvel."
     ],
     "correctIndex": 0,
     "explanation": "O fulcro no solo (rodas dianteiras travadas), a carga do doente no leito da maca (ao meio) e os operadores a puxar pelas pegas traseiras (potência na ponta) configuram rigorosamente a geometria F - R - P da 2.ª classe.",
     "distractorAnalysis": [
-      "Está incorreta: exigiria o eixo de rodas no meio da maca.",
-      "Está incorreta: exigiria os enfermeiros a erguer a maca pelo meio por baixo do corpo do doente.",
-      "Está incorreta: não faz sentido biomecânico."
+      "Está incorreta: o fulcro de rotação com o solo são as rodas anteriores, a carga fica a meio e a força nas pegas traseiras (2.ª classe).",
+      "Está incorreta: o operador atua na extremidade posterior da maca e não no centro do estrado sob o corpo do doente.",
+      "Está incorreta: erguer a extremidade de uma maca sobre rodas envolve torque e equilíbrio de alavanca clássico."
     ],
     "nursingApplication": "Aproveitar a vantagem mecânica da 2.ª classe ao carregar a maca na ambulância permite que dois socorristas ergam com segurança doentes com mais de 90 kg sem sofrerem traumatismos agudos na coluna lombar."
   },
@@ -1677,17 +1681,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "O músculo quadríceps femoral atua através do tendão rotuliano inserido na tuberosidade anterior da tíbia (a cerca de 4 cm do eixo da articulação do joelho) para estender a perna contra o peso do pé (a 40 cm do joelho). Esta alavanca é de:",
     "options": [
-      "3.ª Classe (Interpotente), com VM = 4 / 40 = 0,1, exigindo que o quadríceps exerça uma força 10 vezes maior que a carga no pé.",
-      "1.ª Classe com ganho de força de 10 vezes.",
-      "2.ª Classe com vantagem mecânica de 5.",
-      "Uma máquina sem fulcro articular."
+      "Alavanca de 2.ª Classe (Inter-resistente), com VM = 40 / 4 = 10, multiplicando a força muscular por dez vezes no pé.",
+      "Alavanca de 3.ª Classe (Interpotente), com VM = 4 / 40 = 0,1, exigindo que o quadríceps exerça dez vezes mais força que a carga.",
+      "Alavanca de 1.ª Classe (Interfixa), com a patela a funcionar como fulcro central entre a anca e o tendão de Aquiles distal.",
+      "Sistema de roldana simples móvel com vantagem mecânica unitária que divide a força de extensão por dois na tíbia."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "O fulcro é o joelho, a potência é o tendão rotuliano (a 4 cm) e a resistência é o peso da perna e pé (a 40 cm). Como a potência está entre o fulcro e a resistência (F - P - R), é de 3.ª classe com VM = 0,1. Para segurar 50 N no pé, o quadríceps produz 500 N de força!",
     "distractorAnalysis": [
-      "Está incorreta: confundem a classe de alavanca e invertem a relação de força.",
-      "Está incorreta: ignora que a articulação fémoro-tibial é o fulcro evidente.",
-      "Está incorreta: ignora que a articulação fémoro-tibial é o fulcro evidente."
+      "Está incorreta: a inserção tendinosa fica a 4 cm do joelho e o pé a 40 cm, logo d_P < d_R (VM = 0,1, alavanca de 3.ª classe).",
+      "Está incorreta: o joelho é o fulcro proximal e a força do quadríceps atua entre o fulcro e o pé, sendo interpotente.",
+      "Está incorreta: a articulação femorotibial é uma alavanca óssea anatómica e não uma roldana móvel de cabo contínuo."
     ],
     "nursingApplication": "Compreender que o quadríceps opera com enorme desvantagem mecânica (VM = 0,1) justifica por que motivo as forças de compressão na cartilagem articular da rótula e meniscos atingem múltiplos do peso corporal durante a marcha e ao subir escadas."
   },
@@ -1696,17 +1700,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "A abdução do braço pelo músculo deltoide na articulação glenoumeral (ombro) funciona como uma alavanca de 3.ª classe. A principal consequência biomecânica desta configuração para o ombro do enfermeiro é:",
     "options": [
-      "O músculo deltoide tem de gerar forças muito elevadas na tuberosidade deltoideia do úmero para suportar mesmo cargas leves na mão, gerando altas forças de compressão na cabeça do úmero contra a cavidade glenoideia.",
-      "O deltoide nunca se cansa porque a gravidade é cancelada.",
-      "O ombro ganha uma vantagem mecânica de 20 vezes em força.",
-      "A cabeça do úmero flutua sem tocar na omoplata."
+      "O músculo deltoide trabalha com grande vantagem de força (VM >> 1), operando com forças inferiores a dez Newtons.",
+      "A força de compressão na cavidade glenoideia é nula porque o músculo atua com alinhamento puramente tangencial sem corte.",
+      "O deltoide tem de gerar forças muito elevadas na tuberosidade deltoideia para vencer o peso do membro e cargas na mão.",
+      "O braço de potência do deltoide é três vezes maior do que o comprimento total do membro superior do indivíduo."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "Como a inserção do deltoide fica próxima da articulação glenoumeral e o braço é longo (alavanca de 3.ª classe com VM << 1), segurar um membro ou equipamento com os braços abertos exige forças musculares e articulares de centenas de Newtons.",
     "distractorAnalysis": [
-      "Está incorreta: contraria a fadiga muscular rápida na abdução mantida.",
-      "Está incorreta: inverte a desvantagem mecânica em vantagem impossível.",
-      "Está incorreta: é uma situação incompatível com a estabilidade anatómica articular."
+      "Está incorreta: o deltoide insere-se a poucos centímetros da cabeça umeral (d_P pequeno), tendo VM << 1 e exigindo grande força muscular.",
+      "Está incorreta: as forças de contração muscular elevadas comprimem fortemente a cabeça umeral contra a glenoide da escápula.",
+      "Está incorreta: o braço de potência muscular é muito mais curto do que o comprimento ósseo do membro até à mão."
     ],
     "nursingApplication": "O enfermeiro aprende na prática clínica a manter os braços e cotovelos colados ao tronco ao manipular doentes: afastar os braços aumenta o braço resistente e multiplica a tensão no deltoide e tendão da coifa dos rotadores, prevenindo tendinites ocupacionais."
   },
@@ -1715,17 +1719,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Por que razão as pinças cirúrgicas de dissecação sem travão (alavancas de 3.ª classe) são preferidas para manipular vasos sanguíneos delicados, nervos periféricos e intestinos durante cirurgias?",
     "options": [
-      "Porque a Vantagem Mecânica reduzida (VM < 1) confere uma extraordinária sensibilidade proprioceptiva e controlo tátil refinado ao cirurgião, evitando esmagamentos acidentais de tecidos frágeis.",
-      "Porque multiplicam a força do polegar por 50 vezes esmagando tudo.",
-      "Porque cortam o tecido automaticamente por calor de indução.",
-      "Porque são totalmente transparentes aos raios X."
+      "Porque multiplicam a força manual em mais de cem vezes permitindo cortar tecidos calcificados sem qualquer esforço.",
+      "Porque o seu mecanismo impede que o cirurgião sinta a resistência tecidual mecânica durante a manobra operatória.",
+      "Porque anulam as leis da elasticidade ao serem submetidas a ciclos rápidos de esterilização química em autoclave.",
+      "Porque a Vantagem Mecânica reduzida (VM < 1) confere extraordinária sensibilidade tátil e precisão de aperto nas pontas."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "Numa alavanca de 3.ª classe, como a força de saída nas pontas é menor do que a força dos dedos, o profissional tem um controlo ultra-sensível da pressão exercida: pequenos movimentos dos dedos resultam em movimentos precisos nas pontas, prevenindo lacerações iatrogénicas.",
     "distractorAnalysis": [
-      "Está incorreta: seria a pior característica possível para manipular vasos e nervos.",
-      "Está incorreta: não correspondem a pinças manuais convencionais.",
-      "Está incorreta: não correspondem a pinças manuais convencionais."
+      "Está incorreta: pinças de dissecação têm VM < 1 e não multiplicam a força, destinando-se a preensão delicada e precisa.",
+      "Está incorreta: o objetivo primordial em cirurgia e enfermagem é precisamente fornecer feedback tátil refinado ao profissional.",
+      "Está incorreta: instrumentos metálicos obedecem rigorosamente à elasticidade e resistência dos materiais hospitalares."
     ],
     "nursingApplication": "O enfermeiro instrumentista seleciona pinças de dissecação sem dentes (tipo Debakey) para cirurgia vascular e cardíaca: a mecânica de 3.ª classe com pontas atraumáticas permite manipular a aorta e coronárias com segurança máxima."
   },
@@ -1734,36 +1738,36 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "A Reologia é o ramo da física e da biofísica que estuda especificamente:",
     "options": [
-      "A deformação e o escoamento da matéria sob a ação de tensões mecânicas aplicadas, abrangendo tanto sólidos elásticos e plásticos como fluidos viscosos e viscoelasticidade biológica.",
-      "Apenas a temperatura de fusão dos metais industriais.",
-      "A velocidade da transmissão dos impulsos nervosos no axónio.",
-      "A quantidade de glóbulos brancos no exsudado purulento."
+      "A deformação e o escoamento da matéria sob a ação de tensões mecânicas em materiais elásticos, plásticos e fluidos.",
+      "A velocidade de sedimentação globular das hemácias em colunas verticais sob ação exclusiva da aceleração gravítica.",
+      "A condutividade térmica de gases medicinais comprimidos em botijas de alta pressão à temperatura ambiente hospitalar.",
+      "A cinética enzimática de polimerização dos fatores de coagulação plasmática na formação do trombo de fibrina inicial."
     ],
     "correctIndex": 0,
     "explanation": "A reologia (do grego 'rheos' = fluir) estuda a resposta mecânica de materiais quando submetidos a tensões de corte ou tração: descreve como os corpos se deformam (elasticidade/plasticidade) ou fluem (viscosidade) no tempo.",
     "distractorAnalysis": [
-      "Está incorreta: é metalurgia térmica estrita.",
-      "Está incorreta: é neurofisiologia eletrofisiológica.",
-      "Está incorreta: é citologia e patologia clínica hematológica."
+      "Está incorreta: a velocidade de sedimentação (VS) é um teste laboratorial clínico e não a definição abrangente da Reologia.",
+      "Está incorreta: a condução térmica em gases comprimidos é estudada na termodinâmica clássica e física dos gases.",
+      "Está incorreta: a cinética de reações enzimáticas é domínio da bioquímica médica e bioenergética molecular."
     ],
     "nursingApplication": "A reologia é indispensável em enfermagem para compreender o comportamento do sangue (fluido reológico não-newtoniano), do muco brônquico, do líquido sinovial articular e de biomateriais como géis de hidrogel para tratamento de feridas."
   },
   {
     "id": 2093,
     "topicId": 2,
-    "question": "Na física dos materiais, o conceito de 'Corpo Perfeitamente Rígido' (ou indeformável) corresponde a:",
+    "question": "Na física dos materiais, o conceito de 'Corpo Perfeitamente Rígido' (ou estritamente rígido) corresponde a:",
     "options": [
-      "Uma idealização teórica matemática na qual a distância entre quaisquer dois pontos materiais do corpo permanece estritamente invariável sob qualquer força aplicada.",
-      "Um bloco maciço de osso esponjoso humano.",
-      "Um plástico de PVC maleável aquecido a 37 °C.",
-      "Qualquer material hospitalar feito de aço inoxidável."
+      "Um biomaterial metálico de titânio que não sofre qualquer deformação mecânica mesmo sob tensões de gigapascals.",
+      "Uma idealização teórica matemática onde a distância entre quaisquer dois pontos do corpo permanece rigorosamente constante.",
+      "Um elemento estrutural que dissipa a totalidade da energia mecânica convertendo-a em compressão hidráulica interna.",
+      "Um estado mecânico onde a deformação transversal supera em dez vezes a deformação longitudinal sofrida sob tração axial."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "Na natureza não existe nenhum corpo perfeitamente indeformável: todos os materiais reais sofrem deformações microscópicas elásticas ou plásticas quando sujeitos a forças. O corpo rígido é uma aproximação teórica newtoniana útil para analisar o equilíbrio estático macroscópico.",
     "distractorAnalysis": [
-      "Está incorreta porque ; o osso esponjoso é deformável e absorve choque mecânico.",
-      "Está incorreta: é um polímero flexível dúctil.",
-      "Está incorreta porque , pois mesmo o aço cirúrgico deforma elasticamente sob grandes cargas."
+      "Está incorreta: na física real todos os materiais macroscópicos (incluindo ligas de titânio e diamante) sofrem deformação sob carga.",
+      "Está incorreta: nenhum corpo converte choques mecânicos em potencial gravitacional sem alteração postural no espaço.",
+      "Está incorreta: essa relação descreve um coeficiente de Poisson anómalo e não a definição geométrica de corpo rígido."
     ],
     "nursingApplication": "O enfermeiro compreende que na biomecânica clínica os ossos, próteses e ligamentos nunca são totalmente rígidos: deformam-se sob carga fisiológica, e essa deformação elástica é essencial para absorver impactos e prevenir fraturas."
   },
@@ -1772,17 +1776,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Um material possui 'Comportamento Elástico' quando:",
     "options": [
-      "Retoma espontaneamente a sua forma e dimensões geométricas originais assim que a força de deformação externa é totalmente removida.",
-      "Fica permanentemente deformado mesmo após a remoção da força.",
-      "Flui continuamente como um líquido à temperatura ambiente.",
-      "Desintegra-se em pó ao primeiro toque."
+      "Mantém uma deformação residual permanente e irreversível mesmo após a cessação completa da carga mecânica externa.",
+      "Apresenta escoamento viscoso contínuo à taxa constante enquanto a tensão de corte se mantiver superior a zero no provete.",
+      "Retoma espontaneamente a sua forma e dimensões geométricas originais assim que a força externa de deformação é removida.",
+      "Fratura de forma catastrófica logo que qualquer solicitação mecânica mínima é exercida na sua superfície transversal."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "A elasticidade é a propriedade mecânica reversível: a energia fornecida durante a deformação é armazenada como energia potencial elástica e devolvida na totalidade durante a recuperação da forma primitiva (reversibilidade microscópica das ligações químicas).",
     "distractorAnalysis": [
-      "Está incorreta: define o comportamento plástico (deformação irreversível).",
-      "Está incorreta: define o comportamento viscoso de fluidos.",
-      "Está incorreta: descreve fratura frágil catastrófica."
+      "Está incorreta: a deformação permanente que persiste após a remoção da força define o comportamento plástico.",
+      "Está incorreta: o escoamento contínuo dependente do tempo sob tensão mantida traduz comportamento viscoso ou de fluência.",
+      "Está incorreta: a rotura imediata sem deformação mensurável prévia caracteriza a fratura frágil de biomateriais frágeis."
     ],
     "nursingApplication": "As luvas cirúrgicas, torniquetes de borracha, tubos endotraqueais com cuff e ligaduras elásticas baseiam a sua função no comportamento elástico reversível, adaptando-se às estruturas anatómicas com pressão de contacto constante."
   },
@@ -1791,17 +1795,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "O 'Comportamento Plástico' de um material hospitalar ou biológico é caracterizado por:",
     "options": [
-      "Uma deformação permanente e irreversível que persiste mesmo após a remoção completa da tensão mecânica externa aplicada.",
-      "Uma capacidade de esticar infinitamente sem nunca deformar.",
-      "A recuperação instantânea da forma primitiva sem atraso temporal.",
-      "A emissão de fotões de radiação gama durante a tração."
+      "A recuperação dimensional imediata e completa da forma geométrica primitiva assim que a força mecânica externa é retirada.",
+      "Uma alteração dimensional reversível governada estritamente pela Lei de Hooke onde a deformação é proporcional à tensão.",
+      "Um aumento espontâneo do Módulo de Young acompanhado por absorção endotérmica contínua sem alteração geométrica dos eixos.",
+      "Uma deformação permanente e irreversível que persiste no material mesmo após a remoção completa da tensão mecânica aplicada."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "Na plasticidade, as tensões ultrapassam o limite elástico do material, provocando o deslizamento irreversível de planos atómicos ou cadeias poliméricas (escoamento plástico). Quando a carga é retirada, o material não regressa ao comprimento inicial, mantendo uma deformação residual.",
     "distractorAnalysis": [
-      "Está incorreta: é uma fantasia mecânica.",
-      "Está incorreta: define comportamento puramente elástico ideal.",
-      "Está incorreta: confunde processos de deformação molecular com física nuclear."
+      "Está incorreta: a recuperação completa da forma inicial é a definição de comportamento elástico e não plástico.",
+      "Está incorreta: a proporcionalidade linear da Lei de Hooke aplica-se na região elástica e cessa na fase plástica.",
+      "Está incorreta: a deformação plástica ocorre após o limite elástico e não envolve aumento espontâneo do Módulo de Young."
     ],
     "nursingApplication": "O comportamento plástico é aproveitado pelo ortopedista e enfermeiro ao moldar talas maleáveis de alumínio com espuma ou placas de imobilização: a força manual deforma o metal plasticamente, adaptando-o com precisão anatómica ao membro fraturado."
   },
@@ -1810,17 +1814,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Um fluido é classificado como 'Fluido Newtoniano' quando a sua viscosidade dinâmica (η):",
     "options": [
-      "Permanece estritamente constante a uma dada temperatura e pressão, independentemente da taxa de cisalhamento ou da velocidade com que o fluido é agitado ou forçado a escoar.",
-      "Aumenta exponencialmente com a velocidade do vento.",
-      "Diminui para zero assim que o fluido entra no corpo humano.",
-      "Varia aleatoriamente a cada segundo."
+      "Permanece estritamente constante a uma dada temperatura e pressão, independentemente da taxa de cisalhamento aplicada.",
+      "Diminui exponencialmente à medida que a taxa de cisalhamento aumenta ao longo do gradiente de velocidade no leito.",
+      "Aumenta de forma linear com a velocidade do fluido, tornando-se extremamente viscoso sob agitação mecânica rápida.",
+      "Anula-se na totalidade sempre que o escoamento laminar atinge o regime turbulento com número de Reynolds superior a 4000."
     ],
     "correctIndex": 0,
     "explanation": "Nos fluidos newtonianos (como a água pura, o soro fisiológico a 0,9% e o ar), a tensão de cisalhamento é linearmente proporcional ao gradiente de velocidade: τ = η · (dv/dy). A viscosidade η é uma constante física que não varia com a agitação mecânica.",
     "distractorAnalysis": [
-      "Está incorreta: descrevem comportamentos não-newtonianos ou incoerentes.",
-      "Está incorreta: descrevem comportamentos não-newtonianos ou incoerentes.",
-      "Está incorreta: descrevem comportamentos não-newtonianos ou incoerentes."
+      "Está incorreta: fluidos cuja viscosidade diminui com a taxa de cisalhamento são classificados como pseudoplásticos (não-newtonianos).",
+      "Está incorreta: fluidos cuja viscosidade aumenta com a taxa de cisalhamento são dilatantes (também não-newtonianos).",
+      "Está incorreta: no regime turbulento a viscosidade do fluido continua a existir, aumentando a perda de carga por atrito viscoso."
     ],
     "nursingApplication": "Soluções cristalóides intravenosas como o soro fisiológico e o soro glicosado são fluidos newtonianos perfeitos: a sua resistência ao escoamento através de cateteres e agulhas é linear e previsível pelas bombas infusoras volumétricas."
   },
@@ -1829,17 +1833,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "O sangue total humano é classificado reologicamente como um 'Fluido Não-Newtoniano Pseudoplástico' (com comportamento de 'shear-thinning'). O que significa isto na prática circulatória?",
     "options": [
-      "A viscosidade aparente do sangue DIMINUI à medida que a taxa de cisalhamento (velocidade de escoamento nos vasos) aumenta, porque as hemácias se deformam e alinham no sentido do fluxo.",
-      "A viscosidade do sangue aumenta quando corre depressa, coagulando nos grandes vasos.",
-      "O sangue comporta-se como um sólido rígido indeformável nas artérias.",
-      "A densidade do sangue cai para zero na sístole ventricular."
+      "A viscosidade dinâmica do sangue é perfeitamente constante e independe da deformabilidade dos eritrócitos na circulação.",
+      "A viscosidade aparente do sangue diminui à medida que a taxa de cisalhamento aumenta (comportamento pseudoplástico).",
+      "O sangue comporta-se como um fluido dilatante cuja viscosidade duplica em artérias onde a velocidade de fluxo é máxima.",
+      "A viscosidade sanguínea depende exclusivamente da temperatura ambiente da enfermaria, sendo imune ao hematócrito."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "A baixas velocidades de escoamento (baixa taxa de cisalhamento), as hemácias agregam-se em pilhas de moedas ('rouleaux'), aumentando a viscosidade. Quando o sangue corre velozmente sob altas taxas de cisalhamento (sístole arterial), as pilhas desfazem-se e as hemácias elásticas deformam-se em elipsóides alinhados com o fluxo, diminuindo substancialmente a viscosidade (efeito de pseudoplasticidade).",
     "distractorAnalysis": [
-      "Está incorreta: descreve um fluido dilatante (espessamento por cisalhamento), oposto ao sangue.",
-      "Está incorreta: contrariam a hemodinâmica dos fluidos biológicos.",
-      "Está incorreta: contrariam a hemodinâmica dos fluidos biológicos."
+      "Está incorreta: o sangue é não-newtoniano: a sua viscosidade varia com a velocidade de corte e com o alinhamento das hemácias.",
+      "Está incorreta: o sangue é pseudoplástico (shear-thinning) e não dilatante (shear-thickening).",
+      "Está incorreta: a concentração de hemácias (hematócrito) e as proteínas plasmáticas são os principais determinantes da viscosidade."
     ],
     "nursingApplication": "Em doentes em choque hipovolémico com estase circulatória periférica (escoamento lentificado), a viscosidade do sangue aumenta na microcirculação, agravando a oclusão dos capilares; o enfermeiro administra fluidoterapia de ressuscitação para restaurar a velocidade e diminuir a viscosidade aparente."
   },
@@ -1848,17 +1852,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "O muco traqueobrônquico humano é um gel reológico tixotrópico. A 'Tixotropia' é a propriedade física pela qual um material:",
     "options": [
-      "Torna-se temporariamente menos viscoso (mais fluido) quando sujeito a agitação mecânica sustentada ou vibração, recuperando a alta viscosidade e consistência gelatinosa em repouso.",
-      "Transforma-se em vapor instantaneamente com a tosse.",
-      "Endurece como pedra quando é agitado pelo ventilador.",
-      "Dissolve as células ciliadas da traqueia."
+      "Endurece instantaneamente como um sólido compacto e inelástico quando submetido a fluxos aéreos respiratórios rápidos.",
+      "Mantém a mesma viscosidade dinâmica absoluta independentemente de qualquer solicitação de cisalhamento no tempo.",
+      "Torna-se temporariamente menos viscoso (mais fluido) quando sujeito a agitação mecânica contínua ou tosse vigorosa.",
+      "Evapora-se espontaneamente para o espaço alveolar diminuindo o volume total das secreções brônquicas retidas."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "A tixotropia é a dependência temporal da viscosidade sob cisalhamento contínuo: a estrutura em rede das mucinas no muco desentrelaça-se com a agitação e vibração mecânica, liquefazendo o muco e facilitando o seu transporte pelo epitélio ciliar.",
     "distractorAnalysis": [
-      "Está incorreta: descrevem propriedades absurdas que violam a fisiologia respiratória.",
-      "Está incorreta: descrevem propriedades absurdas que violam a fisiologia respiratória.",
-      "Está incorreta: descrevem propriedades absurdas que violam a fisiologia respiratória."
+      "Está incorreta: a tixotropia caracteriza-se precisamente pela fluidificação induzida pelo cisalhamento sustentado e não pelo endurecimento.",
+      "Está incorreta: a viscosidade invariante define o comportamento newtoniano e não a tixotropia viscoelástica do muco.",
+      "Está incorreta: o muco brônquico é um gel aquoso polimérico estável que é expelido mecanicamente pela tosse e transporte mucociliar."
     ],
     "nursingApplication": "Este fundamento biofísico justifica as técnicas de cinesiterapia respiratória de enfermagem (vibrocompressão torácica e dispositivos oscilatórios como o Flutter): a vibração mecânica de 10 a 20 Hz fluidifica o muco tixotrópico brônquico, facilitando a expetoração em doentes com hipersecreção pulmonar."
   },
@@ -1867,17 +1871,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Um penso de 'Hidrogel amorfo' utilizado no tratamento e desbridamento de feridas é um biomaterial viscoelástico composto por mais de 90% de água. Na biofísica da cicatrização, a sua principal função reológica e biológica é:",
     "options": [
-      "Fornecer humidade constante ao leito da ferida para hidratar a necrose seca (desbridamento autolítico), absorvendo pequenas quantidades de exsudado sem aderir aos tecidos de granulação dérmica recém-formados.",
-      "Secar completamente a ferida para formar uma crosta espessa dura.",
-      "Cauterizar quimicamente as bactérias por acidez extrema.",
-      "Substituir o tecido ósseo por calcificação precoce."
+      "Desidratar agressivamente os tecidos da úlcera para criar uma crosta espessa e rígida que bloqueie o exsudado seroso.",
+      "Aplicar uma tensão de tração mecânica de cinquenta Pascals nas bordas da ferida para acelerar a aproximação elástica.",
+      "Esterilizar quimicamente a pele circundante através da libertação contínua de iões de cloro livre altamente oxidantes.",
+      "Fornecer humidade constante ao leito da ferida para hidratar a necrose e favorecer o desbridamento autolítico celular."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "Os hidrogéis são redes poliméricas tridimensionais hidrofílicas inchadas em água. Doam água a tecidos secos desvitalizados, ativando as enzimas endógenas (colagenases e elastases) que dissolvem a necrose de forma indolor (desbridamento autolítico suave).",
     "distractorAnalysis": [
-      "Está incorreta: descreve o tratamento antigo obsoleto da dessecação, refutado pela teoria do ambiente húmido de Winter.",
-      "Está incorreta: atribuem propriedades cáusticas ou osteogénicas despropositadas aos hidrogéis.",
-      "Está incorreta: atribuem propriedades cáusticas ou osteogénicas despropositadas aos hidrogéis."
+      "Está incorreta: os hidrogéis são doadores de humidade hidrofílicos que evitam a desidratação e facilitam a fibrinólise autóloga.",
+      "Está incorreta: o penso de hidrogel atua por hidratação química e não como dispositivo mecânico de tração cutânea.",
+      "Está incorreta: os hidrogéis são biocompatíveis e atóxicos, não contendo cloro oxidante que lesionaria os tecidos de granulação."
     ],
     "nursingApplication": "O enfermeiro aplica hidrogel amorfo em esfacelos e necroses secas de úlceras por pressão e pés diabéticos, cobrindo com penso secundário oclusivo para manter o microambiente húmido e acelerar a limpeza da ferida."
   },
@@ -1886,17 +1890,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "A Tensão Mecânica Normal (σ, expressa em Pascal ou N/m²) gerada no interior de um fio de sutura cirúrgico tracionado por uma força axial F é calculada por:",
     "options": [
-      "σ = F / A_seccao (onde F é a força de tração e A_seccao é a área da secção transversal do fio).",
-      "σ = F · A_seccao",
-      "σ = A_seccao / F",
-      "σ = F · L₀"
+      "σ = F / A_seccao (onde F é a força de tração axial e A_seccao é a área da secção transversal da parede cilíndrica).",
+      "σ = F · L₀ · A_seccao (produto da força motora pelo comprimento inicial e pela área do lúmen interno do tubo).",
+      "σ = F / (m · g) (razão entre a força de tração e a força peso calculada pela aceleração gravítica terrestre).",
+      "σ = ΔL / (A_seccao · t) (deformação dividida pelo produto da área pelo tempo decorrido durante o procedimento clínico)."
     ],
     "correctIndex": 0,
     "explanation": "Tensão mecânica é a intensidade das forças internas distribuídas por unidade de área transversal da secção de um corpo elástico (σ = F / A). A sua unidade no SI é o Pascal (1 Pa = 1 N/m²; nos materiais utiliza-se frequentemente megapascais: 1 MPa = 10⁶ N/m²).",
     "distractorAnalysis": [
-      "Está incorreta: multiplica a força pela área, violando a análise dimensional.",
-      "Está incorreta: inverte a fração.",
-      "Está incorreta: calcula trabalho ou momento axial."
+      "Está incorreta: a tensão é uma força distribuída por uma área (σ = F / A) e não o produto de força por comprimento por área.",
+      "Está incorreta: dividir a força pelo peso daria uma grandeza adimensional e não uma tensão mecânica em Pascals (N/m²).",
+      "Está incorreta: deformação dividida por área e tempo resultaria numa unidade dimensional incoerente sem relação com tensão."
     ],
     "nursingApplication": "Para o mesmo nó cirúrgico feito com 20 N de tração, um fio de sutura fino (ex: 5-0) sofre uma tensão interna σ muito superior à de um fio grosso (ex: 1-0); se a tensão ultrapassar a resistência do material, o fio rompe nas mãos do enfermeiro instrumentista."
   },
@@ -1905,17 +1909,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "A Deformação Relativa Longitudinal (ε, strain) de um tubo elétrico de silicone sujeito a tração mecânica é calculada pela razão adimensional:",
     "options": [
-      "ε = ΔL / L₀ (variação de comprimento ΔL dividida pelo comprimento inicial em repouso L₀).",
-      "ε = L₀ / ΔL",
-      "ε = ΔL · L₀",
-      "ε = F · ΔL"
+      "ε = L₀ / ΔL, correspondendo à razão inversa entre a dimensão em repouso e o alongamento elástico sofrido pelo tubo.",
+      "ε = ΔL / L₀, correspondendo à razão adimensional entre a variação de comprimento e a dimensão inicial em repouso.",
+      "ε = ΔL · L₀, calculando o produto escalar da extensão linear pela dimensão basal do polímero em repouso.",
+      "ε = F · ΔL / A, multiplicando a tração aplicada pela deformação e normalizando pela secção reta transversal."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "A deformação relativa ε mede a extensão proporcional sofrida pelo corpo: é uma grandeza puramente adimensional (metros divididos por metros). Multiplicada por 100 expressa a deformação percentual (ex: ε = 0,20 corresponde a um estiramento de 20%).",
     "distractorAnalysis": [
-      "Está incorreta: inverte a relação matemática.",
-      "Está incorreta: calcula produto de comprimentos com dimensão de área (m²).",
-      "Está incorreta: é a fórmula de trabalho mecânico (W = F · d)."
+      "Está incorreta: a deformação relativa divide o alongamento pelo comprimento inicial e não o inverso.",
+      "Está incorreta: expressa o produto do alongamento pelo comprimento em vez da sua razão adimensional.",
+      "Está incorreta: confunde a deformação relativa com a energia de deformação mecânica por unidade de área."
     ],
     "nursingApplication": "Ao alongar tiras de ligaduras de compressão elástica ou torniquetes de silicone, o enfermeiro estica a faixa em cerca de 50 a 100% (ε = 0,5 a 1,0), sabendo que a tensão de retração gerada sobre a pele é diretamente proporcional a essa deformação relativa."
   },
@@ -1924,17 +1928,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Um cateter venoso periférico de 4 cm de comprimento (L₀ = 0,04 m) é acidentalmente tracionado durante a mudança de roupa de cama, atingindo 4,4 cm antes de recuperar a forma. Qual foi a deformação relativa máxima ε sofrida?",
     "options": [
-      "ε = 0,10 (ou 10% de deformação relativa).",
-      "ε = 0,40.",
-      "ε = 1,10.",
-      "ε = 0,01."
+      "ε = 0,40 (ou 40%), calculada tomando o valor absoluto do alongamento sofrido sem normalizar pela dimensão basal.",
+      "ε = 1,10 (ou 110%), dividindo erroneamente o comprimento final esticado de 4,4 cm pelo comprimento original de 4,0 cm.",
+      "ε = 0,10 (ou 10%), calculada dividindo o alongamento de 0,4 cm pelo comprimento inicial em repouso de 4,0 cm.",
+      "ε = 0,01 (ou 1%), dividindo a variação milimétrica de 0,4 cm pela dimensão em repouso expressa em metros."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "O alongamento foi ΔL = L_final - L₀ = 4,4 cm - 4,0 cm = 0,4 cm. A deformação relativa é ε = ΔL / L₀ = 0,4 cm / 4,0 cm = 0,10 (isto é, 10%).",
     "distractorAnalysis": [
-      "Está incorreta: confunde o alongamento absoluto de 0,4 cm com a fração relativa 0,10.",
-      "Está incorreta: divide o comprimento final pelo inicial (L_final / L₀ = 1,10).",
-      "Está incorreta: comete um erro decimal por fator de 10."
+      "Está incorreta: confunde o valor absoluto do alongamento em centímetros (0,4 cm) com a percentagem relativa de 40%.",
+      "Está incorreta: divide a dimensão final estirada (L) pelo comprimento inicial (L₀) em vez do alongamento (ΔL).",
+      "Está incorreta: comete um erro de unidades ao misturar centímetros com metros no denominador sem conversão."
     ],
     "nursingApplication": "Polímeros de cateteres intravenosos de poliuretano têm elevada capacidade elástica e toleram deformações de 10% a 20% sem fissurar; o enfermeiro inspeciona a integridade do cateter para garantir que não houve estrangulamento do lúmen ou microfissuras após trações acidentais."
   },
@@ -1943,17 +1947,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "O 'Coeficiente de Poisson' (ν) de um biomaterial descreve a relação mecânica entre:",
     "options": [
-      "A deformação transversal de contração lateral e a deformação longitudinal de tração (ν = - ε_transversal / ε_longitudinal): quando esticamos um tubo de borracha no comprimento, ele estreita o seu diâmetro.",
-      "A temperatura da pele e a pressão atmosférica.",
-      "A frequência cardíaca e a frequência respiratória.",
-      "O volume de urina e a ingestão de água."
+      "A relação entre a força tangencial de cisalhamento e o gradiente de velocidade no escoamento laminar do fluido biológico.",
+      "A proporção entre a energia elástica recuperável no retorno mecânico e a energia plástica total dissipada na fratura.",
+      "O quociente entre a tensão hidrostática interna na parede tubular e a espessura da membrana sob regime de escoamento.",
+      "A razão entre a contração transversal lateral e a extensão longitudinal no regime elástico de tração (ν = - ε_trans / ε_long)."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "O coeficiente de Poisson (tipicamente entre 0,3 e 0,5 para elastómeros e tecidos moles biológicos quase incompressíveis) quantifica o adelgaçamento lateral que acompanha o estiramento longitudinal. Quando puxamos uma mangueira elástica, o seu raio diminui.",
     "distractorAnalysis": [
-      "Está incorreta: não possuem relação com a mecânica de materiais elásticos.",
-      "Está incorreta: não possuem relação com a mecânica de materiais elásticos.",
-      "Está incorreta: não possuem relação com a mecânica de materiais elásticos."
+      "Está incorreta: essa relação define o coeficiente de viscosidade dinâmica num fluido e não o coeficiente de Poisson.",
+      "Está incorreta: essa proporção caracteriza a resiliência elástica relativa e o rendimento mecânico do material.",
+      "Está incorreta: essa razão relaciona-se com o cálculo de tensão circunferencial pela Lei de Laplace."
     ],
     "nursingApplication": "Ao esticar longitudinalmente um cateter maleável para forçar a sua passagem através de um introdutor valvulado estreito, o efeito de Poisson diminui o seu diâmetro exterior facilitando a progressão; contudo, o enfermeiro sabe que tracionar em excesso pode diminuir temporariamente o lúmen interno."
   },
@@ -1962,17 +1966,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "A Lei de Hooke para a elasticidade unidimensional linear estabelece que a tensão mecânica σ é diretamente proporcional à deformação relativa ε no regime elástico, sendo expressa por:",
     "options": [
-      "σ = E · ε (onde E é o Módulo de Young ou Módulo de Elasticidade Longitudinal).",
-      "σ = E / ε²",
-      "σ = m · g · ε",
-      "σ = P · V / n·R·T"
+      "σ = E · ε, indicando que a tensão normal é o produto direto do Módulo de Young pela deformação linear relativa sofrida.",
+      "σ = E / ε², indicando que a tensão normal decresce com o quadrado da deformação unitária sofrida na secção elástica.",
+      "σ = E · ΔL², estabelecendo que a tensão desenvolvida varia quadraticamente com a elongação linear do biomaterial.",
+      "σ = E / (A · ε), dividindo o módulo de elasticidade pela área transversal e pela deformação percentual do material."
     ],
     "correctIndex": 0,
     "explanation": "Formulada originalmente por Robert Hooke em 1676 ('Ut tensio, sic vis' - 'Qual a extensão, tal a força'), a relação tensão-deformação é linear no regime elástico: a constante de proporcionalidade E (Módulo de Young) mede a rigidez intrínseca do material e expressa-se em Pascal (N/m²).",
     "distractorAnalysis": [
-      "Está incorreta: introduz uma dependência não-linear incorreta.",
-      "Está incorreta: mistura a aceleração gravitacional com a lei constitutiva do material.",
-      "Está incorreta: é a lei dos gases perfeitos."
+      "Está incorreta: a Lei de Hooke linear estabelece uma relação direta proporcional de 1.ª ordem e não um inverso quadrático.",
+      "Está incorreta: a tensão depende linearmente da deformação relativa adimensional (ε) e não do quadrado do alongamento.",
+      "Está incorreta: a área transversal já se encontra incorporada no conceito de tensão (σ = F/A)."
     ],
     "nursingApplication": "A Lei de Hooke é a base da física de molas em seringas automáticas, dinamómetros e camas hospitalares: dentro do limite elástico, duplicar a força aplicada duplica com rigor a deformação elástica do componente."
   },
@@ -1981,17 +1985,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "O Módulo de Young (E) é uma propriedade mecânica intrínseca que quantifica:",
     "options": [
-      "A RIGIDEZ elástica do material: quanto maior o Módulo de Young, mais rígido é o material e menor é a deformação sofrida para uma dada força aplicada.",
-      "A velocidade máxima com que o material se dissolve na água.",
-      "A quantidade de calorias nutricionais contidas no polímero.",
-      "A radioatividade natural do núcleo atómico do composto."
+      "A ductilidade plástica do sólido: quanto maior for E, maior será a extensão suportada antes da rutura estrutural.",
+      "A rigidez elástica intrínseca: quanto maior for E, menor será a deformação sofrida sob uma dada tensão aplicada.",
+      "A tenacidade mecânica total: quanto maior for E, maior será a energia total absorvida até à fragmentação final.",
+      "A viscosidade dinâmica tecidual: quanto maior for E, mais rápida será a dissipação interna de calor sob atrito."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "O Módulo de Young traduz a resistência que as ligações interatómicas e intermoleculares opõem ao estiramento. O diamante tem E ~ 1200 GPa (extremamente rígido), o aço cirúrgico tem E ~ 200 GPa, o osso cortical tem E ~ 18 GPa e a borracha de silicone tem E ~ 0,005 GPa (muito elástica e flexível).",
     "distractorAnalysis": [
-      "Está incorreta: confundem rigidez mecânica com solubilidade química, bioenergética alimentar ou radioatividade.",
-      "Está incorreta: confundem rigidez mecânica com solubilidade química, bioenergética alimentar ou radioatividade.",
-      "Está incorreta: confundem rigidez mecânica com solubilidade química, bioenergética alimentar ou radioatividade."
+      "Está incorreta: a ductilidade mede a capacidade de sofrer deformação plástica antes da rutura e não o Módulo de Young.",
+      "Está incorreta: a tenacidade corresponde à área integral sob a curva tensão-deformação e não à rigidez elástica inicial.",
+      "Está incorreta: a viscosidade caracteriza a resistência ao escoamento em meios fluidos ou componentes amortecedores."
     ],
     "nursingApplication": "Cateteres de silicone têm baixo Módulo de Young (macios e atraumáticos para permanência venosa prolongada), enquanto cateteres de poliuretano têm Módulo de Young inicial mais alto (maior rigidez para facilitar a punção sem dobrar, amolecendo à temperatura do sangue)."
   },
@@ -2000,17 +2004,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Comparando uma sonda gástrica rígida de PVC com uma sonda de nutrição entérica de poliuretano/silicone de mesmo calibre, o silicone possui um Módulo de Young muito inferior ao PVC. Qual é a repercussão clínica no conforto do doente?",
     "options": [
-      "A sonda de silicone/poliuretano de baixo Módulo de Young deforma-se com muito menor tensão mecânica, adaptando-se com extrema suavidade às curvaturas anatómicas da faringe e esófago sem provocar escaras na mucosa.",
-      "A sonda de silicone torna-se rígida como aço no estômago.",
-      "A sonda de PVC é mais macia e não causa lesões.",
-      "Nenhuma repercussão, pois todas as sondas têm exatamente a mesma rigidez."
+      "O menor Módulo de Young permite que a sonda colapse totalmente sob pressão atmosférica, impedindo a progressão gástrica.",
+      "O menor Módulo de Young eleva a rigidez à flexão da tubuladura, provocando maior trauma mecânico na parede esofágica.",
+      "O baixo Módulo de Young do silicone reduz as forças de reação sobre os tecidos, prevenindo úlceras de pressão e necrose mucosa.",
+      "O baixo Módulo de Young impede a infusão de nutrientes hidrossolúveis devido à absorção osmótica pela parede de silicone."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "Materiais com baixo Módulo de Young deformam-se com facilidade perante pequenas forças de contacto, exercendo pressões reduzidas sobre as paredes da mucosa nasal e digestiva. O PVC, com Módulo de Young elevado, mantém rigidez e pode causar úlceras por decúbito no esófago se deixado por semanas.",
     "distractorAnalysis": [
-      "Está incorreta: inverte as propriedades elásticas do silicone.",
-      "Está incorreta: nega a dureza plástica conhecida do policloreto de vinilo (PVC).",
-      "Está incorreta: ignora a vasta gama de módulos elásticos dos biomateriais."
+      "Está incorreta: a flexibilidade da sonda não provoca colapso espontâneo do lúmen sob condições fisiológicas normais.",
+      "Está incorreta: um baixo Módulo de Young significa menor rigidez e não maior rigidez ou trauma na mucosa.",
+      "Está incorreta: o módulo de elasticidade mecânico do polímero não bloqueia o fluxo de solutos nutritivos no lúmen."
     ],
     "nursingApplication": "Para nutrição entérica de média a longa duração (> 4 semanas), o enfermeiro escolhe sempre sondas de poliuretano com fio-guia metálico (mandril): o mandril fornece a rigidez transitória para a inserção e a sonda flexível permanece no doente sem agredir a mucosa."
   },
@@ -2019,17 +2023,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na Curva Tensão-Deformação típica de um material dúctil, o que representa o 'Limite Elástico' (ou Ponto de Cedência / Tensão de Escoamento)?",
     "options": [
-      "O valor limite de tensão a partir do qual as deformações deixam de ser reversíveis e o material começa a sofrer deformação plástica permanente irreversível.",
-      "O ponto exato onde o material parte instantaneamente ao meio.",
-      "A temperatura onde o material entra em ebulição.",
-      "O início do regime perfeitamente linear de Hooke."
+      "A tensão na qual o material atinge a fratura catastrófica imediata com separação completa dos segmentos moleculares.",
+      "O ponto exato onde a velocidade de deformação do biomaterial se torna independente da carga mecânica instantânea aplicada.",
+      "A transição térmica na qual o polímero perde a sua integridade sólida e se converte num líquido viscoso amorfo.",
+      "A tensão máxima suportada sem que ocorra deformação plástica permanente, permitindo a total recuperação geométrica."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "Abaixo do limite elástico, o material obedece ao comportamento elástico reversível. Se a tensão aplicada ultrapassar este patamar (tensão de cedência σ_y), ocorre escorregamento microscópico de planos atómicos e o material entra em escoamento plástico, não recuperando o tamanho original quando a carga for retirada.",
     "distractorAnalysis": [
-      "Está incorreta: é a Tensão de Rutura (Ponto de Fratura), que ocorre muito depois do limite elástico.",
-      "Está incorreta: confunde propriedades mecânicas com mudança de fase termodinâmica.",
-      "Está incorreta: descreve a origem da curva no limite de proporcionalidade."
+      "Está incorreta: o limite de fratura ocorre na tensão de rotura (UTS), muito além do limite de proporcionalidade elástica.",
+      "Está incorreta: a independência da velocidade de deformação define um escoamento plástico perfeito ou regime de fluência.",
+      "Está incorreta: descreve a temperatura de transição vítrea ou fusão térmica e não o limite elástico mecânico."
     ],
     "nursingApplication": "Ao aplicar um torniquete elástico ou moldar um fixador ortopédico, o enfermeiro sabe que se puxar o elástico para além do seu limite elástico, o material sofre 'escoamento plástico' e perde a capacidade de comprimir o membro de forma eficaz nos turnos seguintes."
   },
@@ -2038,17 +2042,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "O 'Balão de Retenção de uma Sonda Vesical de Foley' é fabricado em látex ou silicone de alta elasticidade. O que acontece se o enfermeiro insuflar o balão de 10 mL com 50 mL de água destilada?",
     "options": [
-      "A tensão na parede elástica ultrapassa a Tensão Máxima de Rutura do elastómero (Ultimate Tensile Strength), provocando a explosão mecânica do balão no interior da bexiga com risco de retenção de fragmentos e hematúria.",
-      "O balão encolhe espontaneamente para 5 mL por termodinâmica inversa.",
-      "A bexiga converte a água destilada em urina concentrada instantaneamente.",
-      "O silicone transforma-se em metal biocompatível."
+      "A tensão circunferencial excede a tensão de rutura do elastómero, provocando a rotura mecânica com risco de retenção.",
+      "O balão sofre endurecimento por relaxamento de tensões, fixando-se rigidamente na parede vesical sem expandir mais.",
+      "O excesso de volume é drenado automaticamente pelo canal urinário por ação de válvulas hidrostáticas de escape.",
+      "A parede do balão sofre contração elástica paradoxal, reduzindo o seu diâmetro efetivo para metade do volume basal."
     ],
     "correctIndex": 0,
     "explanation": "Insuflar 50 mL num balão calibrado para 10 mL produz uma deformação relativa excessiva (ε >> ε_limite): a tensão tangencial de estiramento excede a tensão de rutura do material, rasgando o balão de forma abrupta.",
     "distractorAnalysis": [
-      "Está incorreta: descrevem fenómenos inexistentes que violam a física dos materiais e a anatomofisiologia urinária.",
-      "Está incorreta: descrevem fenómenos inexistentes que violam a física dos materiais e a anatomofisiologia urinária.",
-      "Está incorreta: descrevem fenómenos inexistentes que violam a física dos materiais e a anatomofisiologia urinária."
+      "Está incorreta: a sobredistensão contínua gera rotura mecânica do elastómero e não endurecimento estrutural protetor.",
+      "Está incorreta: as sondas de Foley comuns não possuem válvulas de alívio ou bypass de sobrepressão interna.",
+      "Está incorreta: a elasticidade positiva impede contrações paradoxais quando submetida a aumento de pressão interna."
     ],
     "nursingApplication": "O enfermeiro insufla o balão de Foley estritamente com o volume exato especificado pelo fabricante no conector da sonda (geralmente 10 mL de água bidestilada estéril, nunca soro fisiológico que pode cristalizar na válvula), evitando ruturas traumáticas e espasmos vesicais."
   },
@@ -2057,17 +2061,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Um material 'Tenaz' (como o fio de sutura cirúrgica de polipropileno - Prolene) distingue-se de um material 'Frágil' (como o vidro ou a porcelana) porque:",
     "options": [
-      "Possui uma grande capacidade de absorver energia mecânica e sofrer extensa deformação plástica antes de fraturar (área total sob a curva tensão-deformação elevada).",
-      "Fratura instantaneamente à mínima deformação elástica com σ = 0.",
-      "É solúvel em água salgada hospitalar.",
-      "Não tem massa atómica."
+      "Fratura com mínima deformação prévia logo que atinge o limite elástico, libertando energia de forma instantânea.",
+      "Apresenta grande capacidade de absorver energia mecânica e deformar-se plasticamente antes de sofrer fratura estrutural.",
+      "Possui um Módulo de Young praticamente nulo, comportando-se como um fluido viscoso incompressível sob tração axial.",
+      "Recupera 100% da sua forma original mesmo após ser submetido a tensões que ultrapassam a sua tensão de cedência."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "A tenacidade mecânica é medida pela integral da curva tensão-deformação (energia de deformação por unidade de volume absorvida até à rutura). Materiais frágeis partem sem aviso e quase sem deformação plástica; materiais tenazes deformam-se plasticamente de forma ampla, dissipando energia antes de romperem.",
     "distractorAnalysis": [
-      "Está incorreta: define materiais frágeis.",
-      "Está incorreta: são afirmações erróneas sem sentido reológico.",
-      "Está incorreta: são afirmações erróneas sem sentido reológico."
+      "Está incorreta: a fratura com mínima deformação plástica após o limite elástico define um comportamento frágil.",
+      "Está incorreta: materiais tenazes são sólidos estruturais com módulo de rigidez elástica bem definido e não fluidos.",
+      "Está incorreta: a recuperação total além da tensão de cedência violaria as leis fundamentais da plasticidade mecânica."
     ],
     "nursingApplication": "Em suturas vasculares de grandes artérias pulsáteis (aorta, artéria femoral), o cirurgião e o enfermeiro utilizam fios monofilamentares tenazes de polipropileno: suportam ciclos contínuos de estiramento pulsátil sistólico sem sofrerem rutura frágil por fadiga mecânica."
   },
@@ -2076,17 +2080,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "A maioria dos tecidos biológicos humanos (tendões, ligamentos, pele, cartilagem e vasos sanguíneos) é classificada mecanicamente como 'Viscoelástica'. A Viscoelasticidade caracteriza-se por:",
     "options": [
-      "Apresentar uma resposta mista dependente do tempo que combina propriedades de sólido elástico (rigidez e capacidade de restauração) com propriedades de líquido viscoso (dissipação de energia, fluência e relaxamento de tensões).",
-      "Comportar-se estritamente como metal inerte a qualquer temperatura.",
-      "Ser totalmente impermeável à luz e aos raios X.",
-      "Perder 100% da sua massa durante a contração."
+      "Comporta-se de forma perfeitamente elástica e isotrópica, com resposta instantânea e independente do tempo de solicitação.",
+      "Apresenta plasticidade pura e irreversível logo no início da carga mecânica, sem qualquer componente de retorno elástico.",
+      "Apresenta comportamento dependente do tempo, associando rigidez elástica com amortecimento e relaxamento viscoso.",
+      "Comporta-se como um fluido newtoniano ideal cuja resistência mecânica varia exclusivamente com a pressão barométrica."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "Materiais viscoelásticos exibem três fenómenos típicos dependentes do tempo: 1) Fluência (creep - aumento da deformação sob tensão constante); 2) Relaxamento de tensão (stress relaxation - diminuição da tensão sob deformação constante); 3) Histerese elástica (dissipação de energia térmica no ciclo de carga e descarga).",
     "distractorAnalysis": [
-      "Está incorreta: ignoram a biofísica reológica dos tecidos vivos hidratados ricos em colagénio e água.",
-      "Está incorreta: ignoram a biofísica reológica dos tecidos vivos hidratados ricos em colagénio e água.",
-      "Está incorreta: ignoram a biofísica reológica dos tecidos vivos hidratados ricos em colagénio e água."
+      "Está incorreta: tecidos biológicos exibem dependência do tempo (histerese e fluência), não sendo puramente elásticos.",
+      "Está incorreta: os tecidos biológicos recuperam a sua deformação em baixas cargas, tendo componente elástica evidente.",
+      "Está incorreta: os tecidos vivos são sólidos viscoelásticos e não fluidos ideais dependentes da pressão barométrica."
     ],
     "nursingApplication": "Compreender a viscoelasticidade é crucial no posicionamento: quando se coloca uma tala ou tração, a resistência do tecido muscular e fascial diminui ligeiramente ao longo dos primeiros 20 minutos (relaxamento de tensões), exigindo que o enfermeiro reavalie o aperto da imobilização."
   },
@@ -2095,17 +2099,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "O fenómeno da 'Histerese Elástica' num ciclo de estiramento e relaxamento de uma ligadura elástica ou tendão biológico é evidenciado por:",
     "options": [
-      "A curva de descarga (retorno) não coincidir com a curva de carga, formando um ciclo cuja área interna representa a energia mecânica dissipada sob a forma de calor.",
-      "O retorno exato pela mesma linha sem qualquer perda de energia.",
-      "O congelamento instantâneo do material elástico a 0 °C.",
-      "A transformação do elástico em gás carbónico."
+      "O retorno exato pela mesma trajetória geométrica de deformação sem que haja qualquer perda energética mensurável.",
+      "O aumento contínuo do Módulo de Young à medida que a frequência de ciclos mecânicos de estiramento se aproxima de zero.",
+      "A perda irreversível da integridade molecular do polímero imediatamente após a aplicação do primeiro ciclo de tração.",
+      "A não coincidência entre a curva de carga e a de descarga, cuja área interna reflete a energia dissipada sob calor."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "Na histerese, a força exercida durante a recuperação elástica é menor do que a força necessária para deformar o material na ida. A área delimitada pelo ciclo de histerese representa a perda viscosa de energia mecânica por atrito intermolecular, convertida em calor tecidual.",
     "distractorAnalysis": [
-      "Está incorreta: descreve elasticidade puramente conservativa sem perdas viscosas.",
-      "Está incorreta: são alegações termodinâmicas estapafúrdias.",
-      "Está incorreta: são alegações termodinâmicas estapafúrdias."
+      "Está incorreta: o retorno pela mesma curva sem perdas caracteriza um comportamento puramente elástico ideal.",
+      "Está incorreta: a rigidez elástica em materiais viscoelásticos tende a aumentar com a frequência e não a diminuir.",
+      "Está incorreta: a histerese fisiológica é reversível e não implica a destruição molecular precoce do material."
     ],
     "nursingApplication": "A histerese do colagénio e elastina na pele e tendões atua como um amortecedor biológico que dissipa o choque mecânico de saltos e impactos; o enfermeiro sabe que tendões inflamados ou envelhecidos perdem água e tenacidade, tornando-se vulneráveis a microrroturas."
   },
@@ -2114,17 +2118,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "As meias de compressão elástica graduada perdem gradualmente a sua elasticidade e tensão terapêutica ao longo de meses de uso e lavagens repetidas. Este fenómeno mecânico é designado por:",
     "options": [
-      "Fadiga elástica do material polimérico (despolimerização e quebra de cadeias de elastano/spandex por ciclos mecânicos e detergentes térmicos).",
-      "Evaporação do oxigénio das fibras da meia.",
-      "Fusão nuclear do algodão com a queratina da pele.",
-      "Aumento espontâneo da gravidade nas pernas do doente."
+      "Fadiga mecânica do polímero, caracterizada pela degradação microscópica das fibras sob múltiplos ciclos de tensão.",
+      "Fluência instantânea por perda acelerada da massa volátil dos monómeros de borracha durante o uso continuado.",
+      "Relaxamento de Hooke por aumento descontrolado do Módulo de Young induzido pelo contacto com a queratina cutânea.",
+      "Transição dúctil-frágil gerada pelo aquecimento uniforme do membro inferior até à temperatura corporal de 37 °C."
     ],
     "correctIndex": 0,
     "explanation": "Milhares de ciclos de estiramento diário e a agressão térmica/química das lavagens provocam fadiga mecânica dos filamentos elastoméricos: o módulo elástico cai e a pressão aplicada no tornozelo desce abaixo da faixa terapêutica prescrita (ex: de 20-30 mmHg para menos de 10 mmHg).",
     "distractorAnalysis": [
-      "Está incorreta: descrevem processos físicos ou atómicos impossíveis nas roupas hospitalares.",
-      "Está incorreta: descrevem processos físicos ou atómicos impossíveis nas roupas hospitalares.",
-      "Está incorreta: descrevem processos físicos ou atómicos impossíveis nas roupas hospitalares."
+      "Está incorreta: a fadiga não decorre de perda de massa por evaporação, mas de microdanos nas cadeias moleculares.",
+      "Está incorreta: o Módulo de Young do elastano diminui com a perda de tensão elástica e não aumenta.",
+      "Está incorreta: a transição para frágil não é desencadeada pela temperatura corporal fisiológica do paciente."
     ],
     "nursingApplication": "O enfermeiro ensina o doente com insuficiência venosa crónica ou linfedema a substituir as meias elásticas de compressão a cada 4 a 6 meses de uso diário, pois mesmo parecendo inteiras, meias velhas perdem o gradiente de pressão biofísico que previne o edema e as úlceras venosas."
   },
@@ -2133,17 +2137,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "O 'Relaxamento de Tensões' (Stress Relaxation) de um garrote elétrico de látex ou silicone mantido esticado à volta do braço do doente durante 5 minutos significa que:",
     "options": [
-      "A força e a pressão de aperto exercidas pelo garrote diminuem espontaneamente com o tempo, mesmo mantendo o mesmo diâmetro e comprimento esticado.",
-      "O garrote aperta cada vez mais até quebrar os ossos do braço.",
-      "O garrote transforma-se num fluido newtoniano incompressível.",
-      "A temperatura da borracha desce para o zero absoluto."
+      "A pressão de compressão circunferencial aumenta continuamente no membro, mantendo-se inalterada a sua espessura.",
+      "A tensão mecânica exercida sobre o membro diminui ao longo do tempo, mantendo-se constante a extensão do garrote.",
+      "O garrote sofre alongamento espontâneo contínuo, mesmo mantendo a tensão mecânica aplicada rigorosamente fixa.",
+      "O material do garrote perde instantaneamente a sua secção transversal, entrando em deformação plástica irreversível."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "O relaxamento de tensão é a diminuição progressiva da tensão interna num material viscoelástico sujeito a uma deformação constante (ε = constante). O rearranjo molecular das cadeias poliméricas dissipa o stress mecânico interno, relaxando a força externa exercida.",
     "distractorAnalysis": [
-      "Está incorreta: violaria a viscoelasticidade, descrevendo uma contração ativa impossível na borracha passiva.",
-      "Está incorreta: são disparates mecânicos e térmicos.",
-      "Está incorreta: são disparates mecânicos e térmicos."
+      "Está incorreta: o relaxamento de tensões implica a diminuição da tensão com o tempo e nunca o seu aumento.",
+      "Está incorreta: o alongamento sob tensão constante define o fenómeno de fluência (creep) e não o relaxamento.",
+      "Está incorreta: o fenómeno é viscoelástico e progressivo no tempo, não envolvendo rotura plástica instantânea."
     ],
     "nursingApplication": "O relaxamento de tensão em tubos elásticos e ligaduras alerta o enfermeiro: ligaduras compressivas aplicadas em membros com edema precisam de ser reavaliadas periodicamente, pois o relaxamento do tecido e a reabsorção do edema reduzem a pressão terapêutica necessária."
   },
@@ -2152,17 +2156,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "A síntese biofísica do Tópico 2 estabelece que os conceitos de Alavanca, Vantagem Mecânica, Elasticidade e Reologia fornecem ao enfermeiro:",
     "options": [
-      "As bases científicas rigorosas para operar instrumentos cirúrgicos com precisão, prescrever dispositivos de compressão e alívio com fundamento reológico e prevenir lesões no doente e no profissional através do domínio do binário de forças e deformação de biomateriais.",
-      "Apenas uma lista de nomes gregos e latinos para decorar sem utilidade hospitalar.",
-      "A capacidade de substituir os médicos cirurgiões em transplantes cardíacos.",
-      "A permissão para abolir o uso de luvas e equipamentos de proteção individual."
+      "Fórmulas teóricas puras que dispensam adaptação ao contexto hospitalar diário e à variabilidade anatómica humana.",
+      "Regras laboratoriais restritas à manipulação de equipamentos eletrónicos sem relevância direta para a prestação de cuidados.",
+      "Fundamentos físicos para manusear instrumentos clínicos com segurança, otimizar cargas e prevenir lesões mecânicas.",
+      "Critérios exclusivamente químicos para esterilização de materiais cirúrgicos sem aplicação na ergonomia de doentes."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "A biofísica das alavancas e da elasticidade dos corpos é a linguagem da engenharia médica aplicada à biologia humana: desde a alavanca que corta um gesso ou drena um abcesso até à elasticidade dos cateteres venosos e balões de Foley, estes princípios garantem a segurança do doente e a excelência profissional da enfermagem.",
     "distractorAnalysis": [
-      "Está incorreta: são afirmações cínicas, antiéticas ou ilegais que contrariam o propósito da formação universitária de enfermagem.",
-      "Está incorreta: são afirmações cínicas, antiéticas ou ilegais que contrariam o propósito da formação universitária de enfermagem.",
-      "Está incorreta: são afirmações cínicas, antiéticas ou ilegais que contrariam o propósito da formação universitária de enfermagem."
+      "Está incorreta: os princípios mecânicos são diretamente aplicáveis à biomecânica dos cuidados e manuseamento do doente.",
+      "Está incorreta: a biomecânica de alavancas e biomateriais é indispensável para prevenir lesões musculoesqueléticas.",
+      "Está incorreta: a resistência de materiais e alavancas aborda a mecânica de forças e não protocolos químicos de desinfeção."
     ],
     "nursingApplication": "Compreender os princípios do Tópico 2 consolida no futuro enfermeiro uma mente analítica e científica, capaz de correlacionar a mecânica newtoniana e a ciência dos polímeros com o conforto, segurança e recuperação clínica de cada doente a seu cargo."
   },
@@ -2171,17 +2175,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a cateter venoso central de poliuretano desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: polímero termoplástico com E inicial de ~300 MPa que amolece à temperatura corporal de 37 °C para E ~30 MPa, reduzindo a irritação mecânica endotelial e o risco de flebite ou perfuração venosa.",
-      "Comporta-se como um elastómero com módulo de Young que aumenta acentuadamente à temperatura corporal, tornando-se mais rígido e friável no sangue do que à temperatura ambiente.",
-      "Sofre deformação plástica irreversível imediata ao contacto com soros aquosos, colapsando o lúmen vascular sob qualquer fluxo de perfusão.",
-      "Exibe histerese nula e rigidez idêntica ao aço cirúrgico, mantendo o mesmo módulo elástico inalterado quer dentro quer fora do leito vascular."
+      "Material compósito com elevado coeficiente de Poisson que mantém rigidez constante independentemente do calor corporal.",
+      "Elastómero amorfo que sofre expansão circunferencial volumétrica irreversível logo após o contacto com o sangue venoso.",
+      "Filamento rígido metálico que dissipa a pressão hidrostática através de escoamento plástico progressivo no vaso sanguíneo.",
+      "Polímero termoplástico cujo Módulo de Young diminui à temperatura corporal, tornando-se mais flexível no leito vascular."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "O/A cateter venoso central de poliuretano caracteriza-se biofisicamente por ser um polímero termoplástico com E inicial de ~300 MPa que amolece à temperatura corporal de 37 °C para E ~30 MPa, reduzindo a irritação mecânica endotelial e o risco de flebite ou perfuração venosa. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque o poliuretano termoplástico amolece com o calor corporal (diminui o Módulo de Young), reduzindo a rigidez e não aumentando-a.",
-      "Está incorreta porque os cateteres venosos são polímeros projetados para operar na região elástica, mantendo o lúmen pérvio sem colapso plástico.",
-      "Está incorreta porque o poliuretano é um polímero viscoelástico com histerese mensurável e flexibilidade muito superior à dos metais."
+      "Está incorreta: o poliuretano moderno é termossensível e amolece significativamente à temperatura do corpo (37 °C).",
+      "Está incorreta: o cateter não sofre expansão volumétrica descontrolada na corrente sanguínea.",
+      "Está incorreta: os cateteres venosos são tubos poliméricos e não filamentos metálicos com deformação plástica."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a cateter venoso central de poliuretano: compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2190,17 +2194,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a fio de sutura absorvível de ácido poliglicólico (Dexon) desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: polímero multifilamentar trançado que perde a sua tensão de rutura elástica em cerca de 3 a 4 semanas por hidrólise química gradual das pontes éster.",
-      "Mantém a sua tensão de tração máxima intacta indefinidamente por ser um polímero não-biodegradável inerte.",
-      "Sofre hidrólise instantânea nos primeiros 5 minutos após implantação, perdendo 100% da resistência mecânica antes de qualquer hemostase.",
-      "Apresenta comportamento superelástico com recuperação de 1000% de deformação, comportando-se como borracha de silicone vulcanizada."
+      "Polímero absorvível que perde gradualmente a sua resistência tênsil ao longo de semanas por hidrólise das cadeias éster.",
+      "Filamento inabsorvível com alta resiliência elástica que mantém a sua força de tensão intacta por períodos superiores a anos.",
+      "Monofilamento metálico inoxidável que veda a ferida cirúrgica exclusivamente através de deformação plástica rígida.",
+      "Fio cirúrgico inerte de polipropileno monofilamentar que sofre quebra mecânica imediata sob tração axial reduzida."
     ],
     "correctIndex": 0,
     "explanation": "O/A fio de sutura absorvível de ácido poliglicólico (Dexon) caracteriza-se biofisicamente por ser um polímero multifilamentar trançado que perde a sua tensão de rutura elástica em cerca de 3 a 4 semanas por hidrólise química gradual das pontes éster. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque o ácido poliglicólico é absorvível e perde cerca de 50% da sua força de tensão às 2 a 3 semanas.",
-      "Está incorreta porque a degradação hidrolítica é gradual e programada, retendo suporte mecânico essencial durante a fase crítica de cicatrização.",
-      "Está incorreta porque o PGA é um polímero rígido multifilamentar com deformação elástica limitada (~15-30%), não um elastómero vulcanizado."
+      "Está incorreta: o ácido poliglicólico (Dexon) é um polímero absorvível que perde força tênsil em 3 a 4 semanas.",
+      "Está incorreta: o Dexon é um polímero sintético trançado absorvível e não um fio metálico maleável.",
+      "Está incorreta: a perda de resistência decorre de hidrólise química gradual e não de quebra mecânica precoce."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a fio de sutura absorvível de ácido poliglicólico (Dexon): compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2209,17 +2213,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a tubuladura de perfusão em PVC plastificado desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: material com plastificantes (como o DEHP) que aumentam a flexibilidade mecânica, mas que podem adsorver fármacos lipofílicos como o diazepam e nitroglicerina, exigindo linhas de polietileno dedicadas.",
-      "Apresenta um módulo elástico infinitamente elevado, quebrando por fratura frágil com qualquer curvatura suave.",
-      "É composto por borracha natural vulcanizada que liberta toxinas quando em contacto com soluções salinas a 0,9%.",
-      "Tem comportamento reológico de metal líquido com escoamento sob gravidade que impede a calibragem de gotas no infusor."
+      "Tubuladura inerte de politetrafluoroetileno (PTFE) com rigidez absoluta que impede qualquer dobra mecânica da linha.",
+      "Polímero com plastificantes que conferem flexibilidade mecânica, mas com risco de adsorção de fármacos altamente lipofílicos.",
+      "Tubo de borracha vulcanizada vulcanizado com enxofre que liberta iões metálicos que aceleram a coagulação intravascular.",
+      "Linha de polietileno de alta densidade sem complacência elástica concebida unicamente para infusões em alta pressão arterial."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "O/A tubuladura de perfusão em PVC plastificado caracteriza-se biofisicamente por ser um material com plastificantes (como o DEHP) que aumentam a flexibilidade mecânica, mas que podem adsorver fármacos lipofílicos como o diazepam e nitroglicerina, exigindo linhas de polietileno dedicadas. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque o PVC plastificado é altamente flexível e dúctil, dobrando-se facilmente sem fraturar.",
-      "Está incorreta porque as tubuladuras são fabricadas em PVC grau médico livre de látex para compatibilidade intravenosa.",
-      "Está incorreta porque o PVC é um material sólido amorfo termoplástico, não um líquido condutor."
+      "Está incorreta: as linhas comuns de infusão venosa utilizam PVC plastificado e não PTFE rígido.",
+      "Está incorreta: o PVC médico não utiliza vulcanização com enxofre nem liberta iões coagulantes na corrente sanguínea.",
+      "Está incorreta: o polietileno é utilizado especificamente para fármacos lipofílicos e não em todas as infusões rotineiras."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a tubuladura de perfusão em PVC plastificado: compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2228,17 +2232,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a balão de cateter de angioplastia coronária desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: polímero com Módulo de Young elevadíssimo (não-complacente) para suportar pressões internas de 15 a 20 atmosferas sem dilatar de diâmetro, esmagando a placa de ateroma.",
-      "Expande indefinidamente de forma linear com a pressão, duplicando de diâmetro a cada atmosfera adicional e dissecando a coronária.",
-      "Comporta-se como um balão de elastómero de látex que atinge volumes descontrolados nas áreas de menor resistência da artéria.",
-      "Apresenta limite elástico nulo, quebrando por estilhaçamento cerâmico logo aos 2 bar de pressão manométrica."
+      "Elastómero altamente elástico que duplica continuamente o seu diâmetro à medida que a pressão manométrica aumenta.",
+      "Tubo termoplástico autoexpansível que atinge a dilatação máxima unicamente através do aquecimento local da artéria.",
+      "Biomaterial não complacente de elevado módulo que expande até um diâmetro rígido fixo sob altas pressões sem sobredilatar.",
+      "Malha metálica reabsorvível que sofre fratura frágil intencional para libertar nanopartículas anticoagulantes na placa."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "O/A balão de cateter de angioplastia coronária caracteriza-se biofisicamente por ser um polímero com Módulo de Young elevadíssimo (não-complacente) para suportar pressões internas de 15 a 20 atmosferas sem dilatar de diâmetro, esmagando a placa de ateroma. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque os balões de angioplastia coronária são semi-complacentes ou não-complacentes (ex: PET ou nylon), limitando a expansão radial exata.",
-      "Está incorreta porque o látex é altamente complacente e inadequado para dilatar estenoses calcificadas com precisão milimétrica.",
-      "Está incorreta porque os polímeros de angioplastia suportam pressões de 14 a 20 atm com elevada resistência à tração circunferencial."
+      "Está incorreta: os balões de angioplastia coronária são não-complacentes precisamente para evitar rutura vascular.",
+      "Está incorreta: a dilatação é mecânica sob pressão hidráulica manométrica e não por aquecimento endotelial.",
+      "Está incorreta: descreve incorretamente um stent farmacológico misturado com propriedades de fratura frágil."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a balão de cateter de angioplastia coronária: compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2247,17 +2251,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a sonda endotraqueal com cuff de baixa pressão e alto volume desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: membrana de PVC ou poliuretano de alta complacência elástica que veda a traqueia com pressão de contacto controlada entre 20 e 30 cmH₂O, prevenindo isquemia da mucosa traqueal.",
-      "Exige pressões de enchimento de 80 a 100 mmHg para selar a via aérea, sem qualquer impacto na microcirculação traqueal.",
-      "Apresenta uma membrana hiper-rígida de baixa complacência que só expande quando a pressão ultrapassa a pressão arterial sistólica do doente.",
-      "Colapsa espontaneamente a cada ciclo de ventilação mecânica positiva por ter módulo de Young negativo."
+      "Balão de baixa complacência que veda a via aérea exercendo pressões focais superiores à pressão arterial média sistémica.",
+      "Manga rígida de silicone reforçado que expande por memória de forma térmica quando em contacto com o gás ventilatório.",
+      "Anel metálico articulado que se adapta ao calibre da traqueia através de um mecanismo de cremalheira mecânica interna.",
+      "Membrana complacente de alto volume que distribui a pressão na parede traqueal, prevenindo isquemia mucosa microvascular."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "O/A sonda endotraqueal com cuff de baixa pressão e alto volume caracteriza-se biofisicamente por ser um membrana de PVC ou poliuretano de alta complacência elástica que veda a traqueia com pressão de contacto controlada entre 20 e 30 cmH₂O, prevenindo isquemia da mucosa traqueal. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque pressões de cuff acima de 30 cmH₂O (~22 mmHg) provocam isquemia da mucosa traqueal e estenose pós-intubação.",
-      "Está incorreta porque os cuffs HVLP têm parede fina e grande complacência para selar com baixas pressões transmurais.",
-      "Está incorreta porque materiais com módulo elástico negativo não existem na engenharia de biomateriais clínicos comuns."
+      "Está incorreta: cuffs de alto volume e baixa pressão evitam pressões focais excessivas que causariam necrose traqueal.",
+      "Está incorreta: o cuff funciona por insuflação pneumática elástica controlada e não por memória térmica.",
+      "Está incorreta: cuffs endotraqueais são membranas poliméricas flexíveis e não anéis metálicos mecânicos."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a sonda endotraqueal com cuff de baixa pressão e alto volume: compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2266,17 +2270,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a meia de compressão elástica graduada Classe 2 desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: malha elástica circular com elastano que aplica uma pressão decrescente de 23-32 mmHg no tornozelo, promovendo o retorno venoso e reduzindo o diâmetro das veias para acelerar a velocidade do sangue.",
-      "Aplica pressão máxima na raiz da coxa (30 mmHg) e pressão nula no tornozelo, promovendo o represamento venoso distal.",
-      "Funciona como um torniquete hemostático rígido de compressão uniforme de 120 mmHg ao longo de todo o membro inferior.",
-      "Perde toda a elasticidade nos primeiros 10 segundos de uso, tornando-se um tubo inerte desprovido de tensão compressiva."
+      "Malha elástica com compressão decrescente no sentido distal-proximal, favorecendo o retorno venoso sem garroteamento.",
+      "Dispositivo inelástico que aplica pressão crescente do tornozelo à coxa para acelerar o fluxo arterial periférico.",
+      "Manga de tecido térmico que atua exclusivamente por vasodilatação periférica sem exercer força mecânica de contenção.",
+      "Faixa compresiva que aplica pressão uniforme constante ao longo de todo o membro, dispensando qualquer gradiente de tensão."
     ],
     "correctIndex": 0,
     "explanation": "O/A meia de compressão elástica graduada Classe 2 caracteriza-se biofisicamente por ser um malha elástica circular com elastano que aplica uma pressão decrescente de 23-32 mmHg no tornozelo, promovendo o retorno venoso e reduzindo o diâmetro das veias para acelerar a velocidade do sangue. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque a compressão elástica graduada aplica pressão decrescente do tornozelo para a coxa para favorecer o retorno venoso.",
-      "Está incorreta porque pressões de 120 mmHg ocluiriam o fluxo arterial, causando isquemia aguda grave do membro.",
-      "Está incorreta porque as meias elásticas são tecidas com elastómeros com elevada memória e recuperação elástica prolongada."
+      "Está incorreta: o gradiente pressórico terapêutico é decrescente (maior no tornozelo e menor na coxa) para evitar garrote.",
+      "Está incorreta: as meias de compressão atuam mecanicamente por redução do diâmetro venoso e não por calor metabólico.",
+      "Está incorreta: uma pressão uniforme sem gradiente favoreceria o represamento de sangue proximal ou garroteamento poplíteo."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a meia de compressão elástica graduada Classe 2: compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2285,17 +2289,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a penso de alginato de cálcio em ferida cavitária exsudativa desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: biomaterial fibroso de algas castanhas que sofre troca iónica com o sódio do exsudado (Ca²⁺ por Na⁺), convertendo-se num gel reológico macio que preenche o espaço morto sem comprimir o leito microvascular.",
-      "Atua como uma resina epóxi impermeável que sela hermeticamente a ferida e impede qualquer troca gasosa ou drenagem.",
-      "Comporta-se como uma folha metálica rígida que exerce pressão constante de 50 mmHg sobre o leito de granulação.",
-      "Solidifica instantaneamente num bloco cerâmico abrasivo que lacera os bordos da lesão durante o penso."
+      "Estrutura inabsorvível de poliéster que adere firmemente ao tecido de granulação para desbridamento mecânico agressivo.",
+      "Matriz de polissacarídeos que troca iões Ca²⁺ por Na⁺ no exsudado, convertendo-se num hidrogel macio que protege o leito.",
+      "Esponja compressiva hidrofóbica que repousa sobre a ferida para impermeabilizar o leito contra qualquer secreção líquida.",
+      "Membrana colágena reticulada que atua exclusivamente como barreira física estanque sem interagir com as secreções locais."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "O/A penso de alginato de cálcio em ferida cavitária exsudativa caracteriza-se biofisicamente por ser um biomaterial fibroso de algas castanhas que sofre troca iónica com o sódio do exsudado (Ca²⁺ por Na⁺), convertendo-se num gel reológico macio que preenche o espaço morto sem comprimir o leito microvascular. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque o alginato forma um gel hidrofílico biocompatível que mantém ambiente húmido favorável à cicatrização.",
-      "Está incorreta porque o penso de alginato é macio e maleável, conformando-se às cavidades sem exercer compressão metálica.",
-      "Está incorreta porque a troca iónica cálcio-sódio gelifica o curativo, permitindo remoção indolor sem traumatizar tecidos neoformados."
+      "Está incorreta: o alginato não deve aderir ao leito cruento nem é desenhado para desbridamento por avulsão traumática.",
+      "Está incorreta: o alginato é altamente hidrofílico e absorvente, formando um gel húmido no leito da lesão.",
+      "Está incorreta: o alginato interage ativamente por troca catiónica com o sódio do exsudado exsudativo da ferida."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a penso de alginato de cálcio em ferida cavitária exsudativa: compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2304,17 +2308,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a dreno cirúrgico de sucção fechada (tipo Jackson-Pratt ou Redon) desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: fole elástico de silicone que atua como reservatório de vácuo mecânico sob a Lei de Hooke, mantendo pressão negativa suave constante para drenagem de hematomas pós-operatórios.",
-      "Gera vácuo através de uma turbina mecânica ativa de 220 V embutida no fole de recolha de secreções.",
-      "Depende exclusivamente da força gravitacional descendente, perdendo toda a eficácia se o reservatório estiver ao nível do leito.",
-      "Apresenta fole sem memória elástica que permanece permanentemente esmagado sem gerar qualquer diferencial de pressão."
+      "Câmara rígida estática que aspira fluidos através de um êmbolo acionado por motor elétrico de alta potência contínua.",
+      "Saco coletor puramente gravitacional que não exerce qualquer tensão de sucção ou pressão negativa sobre os tecidos.",
+      "Reservatório elástico resiliente que gera pressão negativa contínua suave por recuperação elástica das suas paredes.",
+      "Válvula unidirecional sem complacência que expande sob pressão hidrostática positiva gerada pelo sangramento arterial."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "O/A dreno cirúrgico de sucção fechada (tipo Jackson-Pratt ou Redon) caracteriza-se biofisicamente por ser um fole elástico de silicone que atua como reservatório de vácuo mecânico sob a Lei de Hooke, mantendo pressão negativa suave constante para drenagem de hematomas pós-operatórios. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque os drenos de aspiração fechada funcionam por retorno elástico passivo do reservatório comprimido manualmente.",
-      "Está incorreta porque a pressão negativa intra-reservatório aspira ativamente os fluidos mesmo contra gradientes hidrostáticos moderados.",
-      "Está incorreta porque o fole de silicone ou polietileno possui memória elástica projetada para manter vácuo suave (-50 a -100 mmHg)."
+      "Está incorreta: os sistemas Jackson-Pratt ou Redon operam por colapso mecânico prévio manual e recuperação elástica.",
+      "Está incorreta: estes drenos fechados exercem pressão negativa e não funcionam apenas por drenagem gravitacional passiva.",
+      "Está incorreta: o fole gera sucção ativa e não depende unicamente da pressão hidrostática positiva do hematoma."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a dreno cirúrgico de sucção fechada (tipo Jackson-Pratt ou Redon): compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2323,17 +2327,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a prótese articular de anca com cabeça de cerâmica de zircónia desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: biomaterial inorgânico com Módulo de Young extremo (E ~ 210 GPa) e baixíssimo coeficiente de atrito (μ < 0,02 contra polietileno), minimizando o desgaste e a libertação de partículas que causam osteólise asséptica.",
-      "Possui módulo de elasticidade idêntico ao da cartilagem hialina (~5 MPa), deformando-se elasticamente em vários milímetros a cada passo.",
-      "Apresenta coeficiente de atrito superior ao da lixa industrial, desgastando o componente acetabular em poucos dias.",
-      "Sofre fratura por estilhaçamento frágil inevitável sob qualquer impacto ligeiro de marcha normal do doente."
+      "Polímero viscoelástico de baixa rigidez estrutural que amolece com a temperatura para amortecer os impactos na marcha.",
+      "Liga de chumbo e estanho de elevada ductilidade que se deforma progressivamente para copiar a cavidade do cotilóide.",
+      "Matriz metálica porosa flexível que dissipa energia mecânica através de deformação plástica contínua em cada passo.",
+      "Biocerâmica inerte com elevada dureza, baixo coeficiente de atrito e alta resistência ao desgaste por deslizamento articular."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "O/A prótese articular de anca com cabeça de cerâmica de zircónia caracteriza-se biofisicamente por ser um biomaterial inorgânico com Módulo de Young extremo (E ~ 210 GPa) e baixíssimo coeficiente de atrito (μ < 0,02 contra polietileno), minimizando o desgaste e a libertação de partículas que causam osteólise asséptica. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque as cerâmicas de zircónia/alumina são extremamente rígidas (E > 200 GPa) com deformação elástica microscópica.",
-      "Está incorreta porque as cabeças cerâmicas são polidas com rugosidade nanométrica e têm coeficiente de atrito articular baixíssimo com UHMWPE.",
-      "Está incorreta porque a zircónia estabilizada com ítria possui elevada tenacidade à fratura para suportar picos de carga fisiológicos."
+      "Está incorreta: as cerâmicas protésicas são materiais extremamente rígidos com alto Módulo de Young e não polímeros macios.",
+      "Está incorreta: as cabeças femorais de zircónia não contêm chumbo ou estanho, elementos biologicamente tóxicos.",
+      "Está incorreta: a cabeça protésica deve resistir a deformações sem entrar em regime plástico durante a locomoção."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a prótese articular de anca com cabeça de cerâmica de zircónia: compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2342,17 +2346,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a ligadura de gesso sintético de fibra de vidro impregnada com poliuretano desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: material compósito que atinge elevada rigidez e resistência à flexão ao fim de 20 minutos de reação de polimerização com água, sendo três vezes mais leve que o gesso de Paris tradicional.",
-      "Permanece indefinidamente maleável e flexível como borracha de silicone, sem conferir qualquer estabilidade mecânica ao membro.",
-      "Atinge temperaturas de cura superiores a 150 °C provocando queimaduras de 3.º grau nos tecidos moles subjacentes.",
-      "Reverte a sua rigidez tornando-se líquido caso o doente sue ou entre em contacto com a humidade do ar ambiente."
+      "Compósito de malha e resina poliuretânica que atinge alta rigidez por polimerização exotérmica após imersão em água.",
+      "Faixa puramente viscoelástica que se mantém flexível após a cura para permitir a mobilização articular da fratura.",
+      "Estrutura metálica trançada que endurece unicamente por arrefecimento térmico após exposição ao ar condicionado hospitalar.",
+      "Revestimento biológico à base de colagénio animal que mineraliza espontaneamente através da deposição de sais de cálcio."
     ],
     "correctIndex": 0,
     "explanation": "O/A ligadura de gesso sintético de fibra de vidro impregnada com poliuretano caracteriza-se biofisicamente por ser um material compósito que atinge elevada rigidez e resistência à flexão ao fim de 20 minutos de reação de polimerização com água, sendo três vezes mais leve que o gesso de Paris tradicional. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque a fibra de vidro polimeriza numa estrutura compósita rígida com elevado módulo de flexão.",
-      "Está incorreta porque as resinas de poliuretano modernas apresentam reação exotérmica controlada e segura para a pele humana.",
-      "Está incorreta porque a polimerização por humidade é uma reação química irreversível e o gesso sintético é resistente à água."
+      "Está incorreta: o gesso sintético destina-se à imobilização rígida ortopédica e não a manter a articulação móvel.",
+      "Está incorreta: a polimerização da fibra de vidro sintética é ativada por água à temperatura ambiente e não por ar frio.",
+      "Está incorreta: o material é sintético (fibra de vidro e pré-polímero de poliuretano) e não colagénio mineralizável."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a ligadura de gesso sintético de fibra de vidro impregnada com poliuretano: compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2361,17 +2365,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a pinça de Kocher hemostática com cremalheira desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: alavanca de 1.ª classe com d_P = 12 cm e d_R = 3 cm (VM = 4) que multiplica a força do polegar para ocluir firmemente pedículos vasculares sangrantes.",
-      "É uma alavanca de 3.ª classe onde a força aplicada nos anéis é sempre menor que a força exercida nas pontas hemostáticas.",
-      "Carece de cremalheira de bloqueio, exigindo que o enfermeiro mantenha pressão digital máxima contínua durante toda a cirurgia.",
-      "Tem mandíbulas de chumbo macio que se deformam plasticamente ao primeiro contacto com qualquer vaso sanguíneo."
+      "Alavanca interpotente de 3.ª classe com vantagem mecânica inferior a 1, concebida para ampliar a velocidade à custa da força.",
+      "Alavanca interfixa de 1.ª classe com vantagem mecânica que multiplica a força dos dedos nas extremidades ativas de preensão.",
+      "Estrutura elástica simples sem fulcro mecânico que funciona exclusivamente por flexão das suas hastes sob compressão.",
+      "Alavanca inter-resistente de 2.ª classe cujo fulcro se localiza na cremalheira de travamento automático do cabo distal."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "O/A pinça de Kocher hemostática com cremalheira caracteriza-se biofisicamente por ser um alavanca de 1.ª classe com d_P = 12 cm e d_R = 3 cm (VM = 4) que multiplica a força do polegar para ocluir firmemente pedículos vasculares sangrantes. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque a pinça de Kocher é uma alavanca de 1.ª classe com ganho mecânico de força devido aos braços de potência longos.",
-      "Está incorreta porque a cremalheira no cabo trava os dentes sob tensão elástica de torção das hastes, mantendo oclusão hemostática constante.",
-      "Está incorreta porque o instrumento é forjado em aço inoxidável cirúrgico temperado com alta resistência mecânica e dureza."
+      "Está incorreta: pinças hemostáticas são alavancas de 1.ª classe interfixas com VM > 1 para multiplicar a força de aperto.",
+      "Está incorreta: o instrumento possui fulcro articular (parafuso central) e não funciona como simples mola elástica.",
+      "Está incorreta: a cremalheira é um travão mecânico nos braços de potência e não o fulcro geométrico da alavanca."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a pinça de Kocher hemostática com cremalheira: compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2380,17 +2384,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a articulação do tornozelo no salto e corrida desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: alavanca de 2.ª classe onde o tendão de Aquiles ergue todo o peso corporal com VM > 1, multiplicando a força muscular em detrimento do deslocamento angular.",
-      "Trata-se de uma alavanca de 3.ª classe com desvantagem mecânica severa que exige forças musculares 20 vezes superiores ao peso corporal.",
-      "Funciona como alavanca de 1.ª classe com o fulcro localizado no joelho e a resistência na anca durante a impulsão.",
-      "Carece de articulação ou fulcro biomecânico, deslocando o corpo por forças de repulsão eletrostática entre o pé e o pavimento."
+      "Alavanca de 3.ª classe com potência aplicada além da carga, priorizando a amplitude angular sobre o esforço muscular.",
+      "Alavanca interfixa de 1.ª classe com fulcro localizado exatamente a meio caminho entre a tíbia e o calcâneo posterior.",
+      "Alavanca de 2.ª classe onde a resistência corporal situa-se entre o fulcro nos metatarsos e a potência nos gémeos.",
+      "Estrutura rígida sem fulcro móvel que transmite forças verticais diretamente aos ossos do tarso por compressão pura."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "O/A articulação do tornozelo no salto e corrida caracteriza-se biofisicamente por ser um alavanca de 2.ª classe onde o tendão de Aquiles ergue todo o peso corporal com VM > 1, multiplicando a força muscular em detrimento do deslocamento angular. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque a elevação na ponta do pé é o exemplo clássico de alavanca de 2.ª classe com vantagem mecânica de força (VM > 1).",
-      "Está incorreta porque o fulcro situa-se na articulação metatarsofalângica e a carga desce pelo eixo da tíbia.",
-      "Está incorreta porque o movimento locomotor humano é puramente mecânico-newtoniano e governado por forças de contacto e reação do solo."
+      "Está incorreta: a elevação nos pés opera como alavanca de 2.ª classe (inter-resistente) com vantagem mecânica favorável.",
+      "Está incorreta: o fulcro situa-se na extremidade anterior dos metatarsos e não entre as forças concorrentes.",
+      "Está incorreta: o tornozelo possui um fulcro articular articular dinâmico com momentos de torção bem definidos."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a articulação do tornozelo no salto e corrida: compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2399,17 +2403,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a músculo braquial ao fletir o cotovelo em pronação desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: alavanca de 3.ª classe com inserção na apófise coronóideia da ulna (d_P = 3 cm) e resistência na mão (d_R = 32 cm, VM = 0,09), exigindo 11 vezes mais força muscular do que o peso sustentado.",
-      "Comporta-se como uma alavanca de 2.ª classe com vantagem mecânica de força de 10, permitindo fletir o cotovelo sem esforço muscular.",
-      "Atua como alavanca de 1.ª classe com o fulcro posicionado na palma da mão e a resistência aplicada no ombro.",
-      "Apresenta vantagem mecânica igual a 1 porque a distância da inserção do tendão é rigorosamente igual ao comprimento do antebraço."
+      "Alavanca de 1.ª classe que inverte a rotação articular, multiplicando a força muscular em detrimento do espaço percorrido.",
+      "Alavanca de 2.ª classe com vantagem mecânica superior a 1, permitindo erguer cargas extremas com mínima tensão na ulna.",
+      "Mecanismo passivo de tração elástica que depende unicamente do recuo viscoelástico dos tendões extensores do antebraço.",
+      "Alavanca de 3.ª classe que insere na tuberosidade da ulna perto do cotovelo, ganhando amplitude e velocidade de movimento."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "O/A músculo braquial ao fletir o cotovelo em pronação caracteriza-se biofisicamente por ser um alavanca de 3.ª classe com inserção na apófise coronóideia da ulna (d_P = 3 cm) e resistência na mão (d_R = 32 cm, VM = 0,09), exigindo 11 vezes mais força muscular do que o peso sustentado. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque o músculo braquial tem a potência entre o fulcro e a resistência, constituindo uma alavanca de 3.ª classe com VM < 1.",
-      "Está incorreta porque o fulcro da flexão do cotovelo é a articulação umerocubital, não a extremidade distal do membro.",
-      "Está incorreta porque a tuberosidade de inserção está a escassos centímetros do fulcro (3 cm) enquanto a mão dista mais de 30 cm."
+      "Está incorreta: o bíceps e o braquial formam alavancas interpotentes de 3.ª classe no cotovelo e não de 1.ª classe.",
+      "Está incorreta: as alavancas de 3.ª classe têm VM < 1, exigindo que o músculo produza força superior à carga erguida.",
+      "Está incorreta: a flexão articular ativa decorre da contração motora de sarcómeros e não de recuo tendinoso passivo."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a músculo braquial ao fletir o cotovelo em pronação: compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2418,17 +2422,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a articulação da anca no apoio unipodal (músculo glúteo médio) desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: alavanca de 1.ª classe com fulcro na cabeça femoral, o peso do tronco desce medialmente e o glúteo médio traciona lateralmente o trocânter maior para nivelar a bacia.",
-      "Constitui uma alavanca de 2.ª classe onde o fulcro se localiza no joelho ipsilateral e a potência no músculo gémeo.",
-      "Funciona como alavanca de 3.ª classe com o fulcro na sínfise púbica e a resistência concentrada na coluna cervical.",
-      "Tem braço de potência dez vezes mais longo do que o braço de resistência, tornando a força no glúteo médio desprezível."
+      "Alavanca de 1.ª classe com fulcro na cabeça femoral, gerando forças compressivas articulares de 2,5 a 3 vezes o peso corporal.",
+      "Alavanca de 2.ª classe com fulcro na sínfise púbica que anula a necessidade de esforço muscular dos abdutores durante a marcha.",
+      "Mecanismo de tração pura sem momento de torção onde a reação na articulação da anca se iguala exatamente ao peso do tronco.",
+      "Alavanca de 3.ª classe em que o glúteo médio puxa o fémur para baixo com força inferior à metade da gravidade corporal."
     ],
     "correctIndex": 0,
     "explanation": "O/A articulação da anca no apoio unipodal (músculo glúteo médio) caracteriza-se biofisicamente por ser um alavanca de 1.ª classe com fulcro na cabeça femoral, o peso do tronco desce medialmente e o glúteo médio traciona lateralmente o trocânter maior para nivelar a bacia. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque o fulcro está na cabeça femoral (articulação coxofemoral) entre a linha de peso e a inserção do glúteo (alavanca de 1.ª classe).",
-      "Está incorreta porque a sínfise púbica não é o fulcro de rotação pélvica no apoio unipodal durante a marcha.",
-      "Está incorreta porque o braço de potência do glúteo médio é mais curto que o braço de resistência do peso do tronco, exigindo força muscular superior ao peso."
+      "Está incorreta: o fulcro mecânico situa-se na anca de apoio e o glúteo médio necessita de gerar grande força tensora.",
+      "Está incorreta: a força de reação articular atinge múltiplos do peso corporal devido ao pequeno braço de potência muscular.",
+      "Está incorreta: o músculo atua com alavanca interfixa de 1.ª classe equilibrando o momento gerado pelo peso do corpo."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a articulação da anca no apoio unipodal (músculo glúteo médio): compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2437,17 +2441,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a tesoura de corte de ligaduras de Lister com ponta romba desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: alavanca de 1.ª classe com lâminas anguladas que permitem deslizar sob a ligadura rente à pele sem ferir o doente, concentrando a força na extremidade de corte.",
-      "É uma alavanca de 3.ª classe com as lâminas muito mais longas que os cabos, perdendo toda a força de corte na ponta.",
-      "Funciona como plano inclinado puro sem fulcro de rotação nem eixos de charneira articulados.",
-      "Exerce corte por fusão térmica por aquecimento friccional instantâneo que cauteriza os tecidos ao cortar ligaduras."
+      "Dupla alavanca de 3.ª classe com vantagem mecânica reduzida concebida unicamente para acelerar a velocidade do corte cirúrgico.",
+      "Dupla alavanca de 1.ª classe com cabos longos e lâminas curtas que multiplica a força manual aplicada no corte de materiais.",
+      "Mecanismo de cunha simples sem ponto de rotação que divide as fibras do penso por pressão puramente hidrostática contínua.",
+      "Alavanca de 2.ª classe cujo fulcro se localiza na ponta romba distal que desliza por baixo do penso aderido à pele."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "O/A tesoura de corte de ligaduras de Lister com ponta romba caracteriza-se biofisicamente por ser um alavanca de 1.ª classe com lâminas anguladas que permitem deslizar sob a ligadura rente à pele sem ferir o doente, concentrando a força na extremidade de corte. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque a tesoura de Lister é uma alavanca de 1.ª classe (interfixa) articulada por um parafuso central de rotação.",
-      "Está incorreta porque a tesoura opera através do binário de rotação de duas alavancas de 1.ª classe opostas.",
-      "Está incorreta porque o corte de ligaduras é puramente mecânico por tensão de cisalhamento entre as duas arestas metálicas afiadas."
+      "Está incorreta: as tesouras cirúrgicas são alavancas interfixas de 1.ª classe projetadas para multiplicar a força manual.",
+      "Está incorreta: o instrumento possui um parafuso de rotação (fulcro) bem demarcado, não operando como cunha cega.",
+      "Está incorreta: o fulcro da tesoura é o parafuso central de articulação e não a ponta romba protetora inferior."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a tesoura de corte de ligaduras de Lister com ponta romba: compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2456,17 +2460,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a porta-agulhas de Mayo-Hegar com mandíbulas de carboneto de tungsténio desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: alavanca de 1.ª classe com hastes compridas e bicos curtos estriados que geram enorme torque de preensão impedindo que a agulha cirúrgica curve ou deslize durante a sutura de tecidos espessos.",
-      "É uma alavanca de 3.ª classe com hastes curtas e bicos longos que minimiza a força de preensão sobre a agulha.",
-      "Tem fulcro elástico de borracha que amortece o aperto, permitindo que a agulha cirúrgica rode livremente nos pontos de sutura.",
-      "Aplica força exclusivamente por magnetismo permanente nas mandíbulas, dispensando o torque mecânico manual do cirurgião."
+      "Alavanca de 3.ª classe que reduz a força aplicada na pega para evitar a deformação mecânica do fio de sutura monofilamentar.",
+      "Instrumento inelástico sem articulação mecânica que atua por adesão magnética entre o bico de tungsténio e a agulha de aço.",
+      "Alavanca de 1.ª classe com braço de potência longo que amplifica o momento de torção, impedindo a rotação da agulha curva.",
+      "Dispositivo de cremalheira que converte o movimento rotativo em translação linear contínua para perfuração do tecido dérmico."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "O/A porta-agulhas de Mayo-Hegar com mandíbulas de carboneto de tungsténio caracteriza-se biofisicamente por ser um alavanca de 1.ª classe com hastes compridas e bicos curtos estriados que geram enorme torque de preensão impedindo que a agulha cirúrgica curve ou deslize durante a sutura de tecidos espessos. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque o porta-agulhas é uma alavanca de 1.ª classe com hastes longas e bicos curtos para amplificar fortemente a força de preensão.",
-      "Está incorreta porque a charneira é de aço rígido de alta precisão e as pastilhas de carboneto de tungsténio evitam qualquer rotação da agulha.",
-      "Está incorreta porque a retenção da agulha é garantida pelo atrito mecânico e engate mecânico das estrias diamantadas sob pressão."
+      "Está incorreta: o porta-agulhas é uma alavanca interfixa com braço de potência muito maior que o de resistência para travar a agulha.",
+      "Está incorreta: a preensão da agulha é puramente mecânica e por atrito rugoso com tungsténio, não por atração magnética.",
+      "Está incorreta: a cremalheira é um travão estático que bloqueia a compressão sem gerar translação helicoidal."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a porta-agulhas de Mayo-Hegar com mandíbulas de carboneto de tungsténio: compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2475,17 +2479,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a mandíbula e músculo masséter ao morder um comprimido desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: alavanca de 3.ª classe onde a força nos molares posteriores é muito maior do que nos incisivos anteriores devido ao menor braço de resistência.",
-      "Constitui uma alavanca de 2.ª classe onde os dentes incisivos exercem o triplo da força de esmagamento dos dentes molares.",
-      "Funciona sem articulação fixa, dependendo de forças pneumáticas da cavidade oral para triturar os comprimidos.",
-      "Apresenta vantagem mecânica infinitamente grande em todos os pontos da arcada dentária, quebrando qualquer material sem tensão muscular."
+      "Alavanca de 2.ª classe cujo fulcro articular se situa nos incisivos centrais, reduzindo a carga transmitida à base craniana.",
+      "Alavanca de 1.ª classe que divide a força muscular entre a maxila e a mandíbula de forma estritamente simétrica e inercial.",
+      "Estrutura puramente rígida sem braço de momento que gera pressões trituradoras constantes ao longo de toda a arcada dentária.",
+      "Alavanca de 3.ª classe onde a força oclusal é máxima nos molares devido ao menor braço de momento da resistência mecânica."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "O/A mandíbula e músculo masséter ao morder um comprimido caracteriza-se biofisicamente por ser um alavanca de 3.ª classe onde a força nos molares posteriores é muito maior do que nos incisivos anteriores devido ao menor braço de resistência. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque a mandíbula é uma alavanca de 3.ª classe (músculos mastigatórios entre ATM e dentes); os molares, mais próximos do fulcro, geram maior força.",
-      "Está incorreta porque a mastigação é governada pela articulação temporomandibular (ATM) e contração dos músculos masséter e temporal.",
-      "Está incorreta porque a força mastigatória humana máxima nos molares ronda os 500-700 N, com vantagem mecânica finita dependente da posição dentária."
+      "Está incorreta: o fulcro anatómico situa-se na articulação temporomandibular (ATM) e não na linha dos dentes incisivos.",
+      "Está incorreta: a força mastigatória é uma alavanca de 3.ª classe com o músculo inserido entre o fulcro e a carga dentária.",
+      "Está incorreta: a pressão varia com a distância ao fulcro, sendo substancialmente maior nos molares que nos dentes anteriores."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a mandíbula e músculo masséter ao morder um comprimido: compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2494,17 +2498,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a movimento de abdução da coxa pelo tensor da fáscia lata desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: alavanca de 3.ª classe adaptada para estabilidade lateral e marcha bípede rápida com ampla amplitude de movimento pélvico.",
-      "Funciona como uma alavanca de 2.ª classe onde a força do tensor é sempre metade do peso do membro inferior.",
-      "Constitui uma alavanca de 1.ª classe com o fulcro posicionado na articulação do tornozelo contralateral.",
-      "Tem vantagem mecânica de força de 15, permitindo abduzir a perna sem qualquer recrutamento bioenergético de ATP."
+      "Alavanca de 3.ª classe com potência entre o fulcro articular e o membro, priorizando velocidade linear e amplitude de passo.",
+      "Alavanca de 2.ª classe com elevada vantagem mecânica que permite afastar a perna com um esforço muscular quase impercetível.",
+      "Alavanca de 1.ª classe que transfere a carga gravitacional diretamente para o menisco lateral sem gerar tensão no fémur.",
+      "Cabo de tração elástica pura que mantém a bacia alinhada sem consumo de energia metabólica durante a fase de apoio unipodal."
     ],
     "correctIndex": 0,
     "explanation": "O/A movimento de abdução da coxa pelo tensor da fáscia lata caracteriza-se biofisicamente por ser um alavanca de 3.ª classe adaptada para estabilidade lateral e marcha bípede rápida com ampla amplitude de movimento pélvico. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque a potência insere-se lateralmente na fáscia lata perto da anca entre o fulcro e o membro, configurando uma alavanca de 3.ª classe.",
-      "Está incorreta porque o fulcro de abdução da coxa é a articulação coxofemoral do mesmo membro.",
-      "Está incorreta porque todas as alavancas de 3.ª classe têm VM < 1, requerendo trabalho muscular ativo com consumo estrito de ATP."
+      "Está incorreta: a abdução opera com alavanca de 3.ª classe (VM < 1), privilegiando amplitude de movimento e não ganho de força.",
+      "Está incorreta: o músculo insere-se lateralmente na anca proximal, não atuando como alavanca interfixa sobre o menisco.",
+      "Está incorreta: a estabilização ativa da bacia exige contração muscular contínua com consumo efetivo de ATP metabólico."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a movimento de abdução da coxa pelo tensor da fáscia lata: compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2513,17 +2517,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a espátula lingual na inspeção da orofaringe pelo enfermeiro desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: alavanca de 1.ª classe usando os lábios/dentes como fulcro para deprimir suavemente a base da língua com pequeno esforço na haste exterior.",
-      "É uma alavanca de 3.ª classe que exige força de 200 N do enfermeiro para conseguir afastar a ponta da língua do doente.",
-      "Funciona como um sistema de roldana móvel que inverte o vetor de força da gravidade dentro da boca.",
-      "Comporta-se como um elastómero complacente que se enrola sobre a língua sem oferecer qualquer resistência mecânica à flexão."
+      "Alavanca interpotente de 3.ª classe com fulcro na orofaringe posterior que puxa a base da língua em direção ao palato mole.",
+      "Alavanca com ponto de apoio nos dentes ou lábio que deprime a base lingual mediante aplicação de força na extremidade livre.",
+      "Mecanismo de dilatação pneumática que afasta as paredes laterais da faringe por gradiente de pressão hidrostática negativa.",
+      "Instrumento rígido que atua por vibração sónica transversal para relaxar a musculatura intrínseca da cavidade bucal."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "O/A espátula lingual na inspeção da orofaringe pelo enfermeiro caracteriza-se biofisicamente por ser um alavanca de 1.ª classe usando os lábios/dentes como fulcro para deprimir suavemente a base da língua com pequeno esforço na haste exterior. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque a espátula rígida atua como alavanca de 1.ª classe com apoio labial/dentário e requer forças suaves (~5 a 10 N).",
-      "Está incorreta porque a espátula é uma barra rígida de flexão, não um sistema de cabos e roldanas.",
-      "Está incorreta porque as espátulas de madeira ou plástico rígido têm módulo de Young suficiente para deprimir a língua com mínima deflexão."
+      "Está incorreta: a espátula lingual é apoiada anteriormente ou atua em cantilever, deprimindo a língua para baixo e não puxando para o palato.",
+      "Está incorreta: a depressão da língua é mecânica e direta, não envolvendo bombas de vácuo ou expansão pneumática.",
+      "Está incorreta: a espátula convencional de madeira ou plástico não emite ondas ultrassónicas de relaxamento motor."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a espátula lingual na inspeção da orofaringe pelo enfermeiro: compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2532,17 +2536,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a carrinho elevador elétrico de transferência de doentes (guindaste com braço mecânico) desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: alavanca móvel atuada por pistão hidráulico que distribui a carga de elevação com vantagem mecânica de engenharia para transferir doentes tetraplégicos.",
-      "Depende de alavanca interpotente com braço de resistência 20 vezes maior que o braço de esforço, exigindo esforço físico hercúleo do operador.",
-      "Anula a inércia da massa do doente através de forças eletrostáticas de repulsão entre a tela e o pavimento.",
-      "Opera sem qualquer sistema de alavanca ou hidráulica, funcionando por levitação por colchão de ar sob pressão de 10 atmosferas."
+      "Dispositivo pendular simples cujo centro de massa corporal pode sair do polígono de sustentação sem risco de capotamento.",
+      "Mecanismo de elevação por mola helicoidal que dispensa travões mecânicos nos rodízios durante a manobra com o paciente.",
+      "Sistema de alavanca com coluna de suporte que exige base alargada para manter a projeção vertical do centro de massa estável.",
+      "Estrutura estática perfeitamente rígida que anula totalmente os momentos de força gerados pelo peso do doente transferido no ar."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "O/A carrinho elevador elétrico de transferência de doentes (guindaste com braço mecânico) caracteriza-se biofisicamente por ser um alavanca móvel atuada por pistão hidráulico que distribui a carga de elevação com vantagem mecânica de engenharia para transferir doentes tetraplégicos. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque o guindaste mecânico utiliza braço de alavanca e pistão hidráulico com enorme vantagem mecânica para proteger a coluna do cuidador.",
-      "Está incorreta porque a massa e o peso do doente continuam sujeitos à aceleração da gravidade (P = m·g), sendo a carga suportada pela estrutura do guindaste.",
-      "Está incorreta porque os elevadores de transferência hospitalares comuns utilizam braços articulados de aço acionados por atuador elétrico linear ou cilindro hidráulico."
+      "Está incorreta: se a linha de gravidade do conjunto ultrapassar a base de sustentação, o elevador tomba inevitavelmente.",
+      "Está incorreta: o travamento dos rodízios e a abertura da base são obrigatórios para garantir estabilidade biomecânica.",
+      "Está incorreta: o peso do doente gera um binário de força considerável que atua diretamente sobre o mastro do aparelho."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a carrinho elevador elétrico de transferência de doentes (guindaste com braço mecânico): compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2551,17 +2555,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a fio de sutura monofilamentar de poliamida (Nylon) 3-0 desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: tensão máxima de tração de cerca de 450 MPa com elevada memória elástica, exigindo nós cirúrgicos múltiplos (3 a 4 nós) para evitar que o nó escorregue e desfaça a sutura.",
-      "Apresenta memória elástica nula e comportamento de plasticidade perfeita, mantendo o nó fechado sem necessidade de contravoltas.",
-      "Tem resistência à tração inferior à de uma linha de algodão hidrófilo, partindo-se espontaneamente com a pulsação capilar.",
-      "Degrada-se por dissolução enzimática nas primeiras 48 horas após a sutura, sendo inadequado para encerramento cutâneo."
+      "Fio multifilamentar entrançado com baixíssima resiliência que mantém o nó cirúrgico firme através de uma única laçada simples.",
+      "Material reabsorvível que sofre lise enzimática imediata em contacto com o fluido intersticial, perdendo a força em 24 horas.",
+      "Monofilamento metálico maleável que retém a curvatura plástica imposta pelas mãos do cirurgião sem qualquer retorno elástico.",
+      "Polímero monofilamentar sem capilaridade com elevada memória elástica, exigindo múltiplos nós para evitar o deslizamento."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "O/A fio de sutura monofilamentar de poliamida (Nylon) 3-0 caracteriza-se biofisicamente por ser um tensão máxima de tração de cerca de 450 MPa com elevada memória elástica, exigindo nós cirúrgicos múltiplos (3 a 4 nós) para evitar que o nó escorregue e desfaça a sutura. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque o fio de poliamida monofilamentar (Nylon) tem elevada memória elástica e rigidez de flexão, exigindo múltiplos nós para fixar.",
-      "Está incorreta porque o nylon 3-0 tem elevada resistência à tração (~450 MPa), suportando facilmente as tensões de encerramento da ferida.",
-      "Está incorreta porque o nylon é um fio não-absorvível (ou de degradação extremamente lenta ao longo de anos), ideal para suturas de pele a remover aos 7-14 dias."
+      "Está incorreta: o nylon 3-0 é monofilamentar e possui alta memória elástica, exigindo nós adicionais de travamento seguro.",
+      "Está incorreta: o nylon cirúrgico é não absorvível a curto prazo e retém a integridade mecânica durante semanas.",
+      "Está incorreta: o fio é uma poliamida sintética polimérica e não uma liga metálica maleável sem elasticidade."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a fio de sutura monofilamentar de poliamida (Nylon) 3-0: compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2570,17 +2574,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a pele humana jovem vs pele senil com dermatoporose desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: a pele jovem tem rica matriz de fibras de elastina e colagénio tipo I com curva tensão-deformação ampla e alta resiliência; a pele senil perde 80% da elastina, tornando-se frágil com rotura à mínima tensão tangencial.",
-      "A pele senil tem o dobro da elastina da pele jovem, tornando-se imune a lacerações cutâneas por fricção ou remoção de adesivos.",
-      "O envelhecimento cutâneo transforma a derme num biomaterial perfeitamente elástico sem qualquer limite de proporcionalidade.",
-      "A pele humana não apresenta colagénio nem elastina, sendo a sua resistência mecânica governada por depósitos de hidroxiapatite cristalina."
+      "A perda de elastina e colagénio tipo I reduz a resiliência dérmica, aumentando a vulnerabilidade a forças de cisalhamento e tração.",
+      "A pele senil ganha rigidez e espessura elástica, tornando-se mais resistente à formação de lacerações por remoção de pensos.",
+      "O envelhecimento transforma a pele num sólido perfeitamente elástico que recupera instantaneamente de qualquer deformação mecânica.",
+      "A perda celular torna a derme impermeável a pressões externas, impedindo a oclusão capilar sob apoio corporal prolongado."
     ],
     "correctIndex": 0,
     "explanation": "O/A pele humana jovem vs pele senil com dermatoporose caracteriza-se biofisicamente por ser um a pele jovem tem rica matriz de fibras de elastina e colagénio tipo I com curva tensão-deformação ampla e alta resiliência; a pele senil perde 80% da elastina, tornando-se frágil com rotura à mínima tensão tangencial. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque a pele senil com dermatoporose perde grande parte da elastina e colagénio, tornando-se frágil a forças de cisalhamento.",
-      "Está incorreta porque a pele idosa tem menor limite de elasticidade e menor resiliência, sofrendo ruturas (skin tears) com facilidade.",
-      "Está incorreta porque a pele é um tecido mole composto por matriz de colagénio e elastina; a hidroxiapatite é exclusiva de tecidos mineralizados (ossos e dentes)."
+      "Está incorreta: a dermatoporose senil afina a derme e reduz a resistência tênsil, facilitando a formação de skin tears.",
+      "Está incorreta: a pele perde fibras elásticas e torna-se menos complacente, incapaz de recuperação elástica instantânea.",
+      "Está incorreta: a atrofia dérmica facilita a compressão e colapso microvascular sob proeminências ósseas acamadas."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a pele humana jovem vs pele senil com dermatoporose: compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2589,17 +2593,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a tendão calcâneo (tendão de Aquiles) sob carga máxima desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: suporta tensões de tração superiores a 100 MPa e forças de até 8000 N durante a corrida, deformando-se elasticamente 6 a 8% antes de atingir o limiar de microrrotura.",
-      "Tem comportamento frágil idêntico ao vidro, fraturando-se de forma catastrófica com qualquer alongamento microscópico superior a 0,1%.",
-      "Suporta tensões máximas de apenas 0,5 MPa, sendo incapaz de sustentar o peso do corpo humano sem auxílio de órteses externas.",
-      "É formado por elastina pura sem colagénio, alongando 300% com forças ligeiras de 10 N durante a deambulação."
+      "Estrutura puramente frágil que se rompe catastrophicamente quando a tensão mecânica excede um por cento da carga corporal.",
+      "Tecido fibroso viscoelástico com fibras de colagénio onduladas que absorve e devolve energia elástica durante a locomoção humana.",
+      "Cabo inelástico de rigidez infinita que transmite a força dos gémeos sem qualquer amortecimento ou deformação mensurável.",
+      "Material plástico amorfo que sofre alongamento irreversível permanente logo no primeiro passo da marcha matinal rotineira."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "O/A tendão calcâneo (tendão de Aquiles) sob carga máxima caracteriza-se biofisicamente por ser um suporta tensões de tração superiores a 100 MPa e forças de até 8000 N durante a corrida, deformando-se elasticamente 6 a 8% antes de atingir o limiar de microrrotura. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque o tendão calcâneo é um biomaterial tenaz e viscoelástico, deformando-se elasticamente 6 a 8% antes de sofrer microrroturas.",
-      "Está incorreta porque o tendão de Aquiles suporta tensões superiores a 100 MPa e cargas mecânicas de vários milhares de Newtons no desporto.",
-      "Está incorreta porque os tendões são constituídos por cerca de 86% de colagénio tipo I com alinhamento paralelo denso e menos de 2% de elastina."
+      "Está incorreta: o tendão de Aquiles é resistente e tenaz, suportando cargas dinâmicas até 6 a 8 vezes o peso corporal.",
+      "Está incorreta: o tendão possui complacência elástica mensurável (deformando-se cerca de 4 a 6% sob carga fisiológica).",
+      "Está incorreta: em cargas fisiológicas normais o tendão opera na zona elástica reversível, recuperando a sua forma."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a tendão calcâneo (tendão de Aquiles) sob carga máxima: compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2608,17 +2612,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a artéria aorta elástica humana e efeito Windkessel desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: a parede da aorta possui alto teor de elastina (baixo Módulo de Young), expandindo-se elasticamente na sístole para absorver a onda de pressão e retraindo-se passivamente na diástole para manter o fluxo contínuo.",
-      "A parede da aorta é composta por placas de cartilagem hialina indeformáveis que impedem qualquer expansão durante a ejeção ventricular.",
-      "Apresenta rigidez infinita, funcionando como um tubo de chumbo onde a pressão diastólica cai abruptamente para 0 mmHg em cada ciclo.",
-      "Colapsa na sístole e dilata na diástole devido a uma inversão térmica das propriedades mecânicas do endotélio a 37 °C."
+      "A parede aórtica é perfeitamente rígida e inelástica, convertendo a onda de pressão ventricular num jato puramente intermitente e pulsátil.",
+      "As fibras musculares da aorta contraem-se ativamente na sístole para travar a saída do sangue e reduzir a velocidade arterial.",
+      "A elastina da túnica média confere alta complacência elástica, amortecendo a pulsação sistólica e assegurando o fluxo diastólico.",
+      "A aorta comporta-se como um tubo puramente plástico que dilata a cada batimento cardíaco sem nunca recuperar o calibre basal."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "O/A artéria aorta elástica humana e efeito Windkessel caracteriza-se biofisicamente por ser um a parede da aorta possui alto teor de elastina (baixo Módulo de Young), expandindo-se elasticamente na sístole para absorver a onda de pressão e retraindo-se passivamente na diástole para manter o fluxo contínuo. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque a aorta proximal é uma artéria elástica complacente rica em membranas elásticas fenestradas na túnica média.",
-      "Está incorreta porque se a aorta fosse rígida, a pressão sistólica dispararia para valores perigosos e a diastólica cairia a zero (ausência de amortecimento Windkessel).",
-      "Está incorreta porque a aorta expande-se elasticamente na sístole pelo pico pressórico ventricular e retrai-se passivamente na diástole."
+      "Está incorreta: a complacência aórtica é indispensável para amortecer a sístole e manter a perfusão diastólica contínua.",
+      "Está incorreta: a aorta proximal não trava o sangue por contração ativa na sístole, expandindo elasticamente de forma passiva.",
+      "Está incorreta: a deformação aórtica fisiológica é elástica e reversível, não sofrendo dilatação plástica permanente num vaso são."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a artéria aorta elástica humana e efeito Windkessel: compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2627,17 +2631,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a ligamento cruzado anterior (LCA) do joelho desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: comportamento viscoelástico com limite elástico em torno de 15% de deformação; torções bruscas com o pé fixo no solo ultrapassam a tensão de rutura, provocando rotura completa dos fascículos colagénicos.",
-      "Comporta-se como um cabo de aço isotrópico com alongamento máximo à fratura inferior a 0,01%, rompendo com qualquer flexão normal do joelho.",
-      "Suporta torções ilimitadas sem sofrer deformação porque as suas fibras colagénicas rodam livremente sem atrito interno.",
-      "Não possui função mecânica articular, servindo unicamente como reservatório de cálcio e sais minerais no espaço intra-articular."
+      "Estrutura cartilagínea isotrópica cuja resistência à tração mecânica é rigorosamente idêntica em todos os planos espaciais.",
+      "Feixe muscular contrátil autónomo que estabiliza o joelho através de reflexos motores rápidos gerados no próprio tendão.",
+      "Membrana sinovial flexível sem resistência à tração cuja função mecânica consiste unicamente na produção de líquido articular.",
+      "Ligamento viscoelástico e anisotrópico que resiste à translação anterior tibial, falhando sob rotação e valgo excessivos."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "O/A ligamento cruzado anterior (LCA) do joelho caracteriza-se biofisicamente por ser um comportamento viscoelástico com limite elástico em torno de 15% de deformação; torções bruscas com o pé fixo no solo ultrapassam a tensão de rutura, provocando rotura completa dos fascículos colagénicos. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque o LCA é um biomaterial viscoelástico com deformação elástica de até 12-15% antes de atingir a tensão de cedência.",
-      "Está incorreta porque movimentos rotacionais com valgo forçado e pé fixo ultrapassam facilmente a tensão de rutura dos fascículos do LCA.",
-      "Está incorreta porque o ligamento cruzado anterior é o estabilizador primário contra a translação anterior da tíbia relativamente ao fémur."
+      "Está incorreta: o ligamento é anisotrópico (com fibras colágenas alinhadas com as linhas de tração) e não isotrópico.",
+      "Está incorreta: o LCA é um ligamento passivo fibroso denso e não possui sarcómeros ou contratilidade muscular ativa.",
+      "Está incorreta: o ligamento cruzado anterior possui elevada resistência tênsil e é o principal restritor mecânico da tíbia."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a ligamento cruzado anterior (LCA) do joelho: compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2646,17 +2650,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a balão de embolectomia de Fogarty para remoção de trombos arteriais desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: balão de elastómero de látex com calibração volumétrica rigorosa para ocluir a artéria sem exceder a tensão elástica da túnica média do vaso, prevenindo dissecções arteriais iatrogénicas.",
-      "É insuflado com agulhas de alta pressão até rebentar o vaso para criar um novo trajeto arterial colateral.",
-      "Tem parede rígida de aço cirúrgico que esmaga as placas de ateroma por impacto percussivo a 100 Hz.",
-      "Opera por sucção magnética direta dos eritrócitos sem necessitar de qualquer oclusão mecânica do lúmen arterial."
+      "Balão elastomérico complacente que deve ser insuflado com volume rigoroso para ocluir a luz sem lesionar a íntima vascular.",
+      "Estrutura metálica rígida autoexpansível que desobstrui o vaso sanguíneo através de fragmentação mecânica de alta frequência.",
+      "Tubo de látex poroso que liberta soluções trombolíticas no lúmen arterial através de escoamento capilar contínuo e rápido.",
+      "Dispositivo de sucção helicoidal sem balão que aspira o coágulo mediante rotação de alta velocidade da ponta distal flexível."
     ],
     "correctIndex": 0,
     "explanation": "O/A balão de embolectomia de Fogarty para remoção de trombos arteriais caracteriza-se biofisicamente por ser um balão de elastómero de látex com calibração volumétrica rigorosa para ocluir a artéria sem exceder a tensão elástica da túnica média do vaso, prevenindo dissecções arteriais iatrogénicas. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque o balão de Fogarty é preenchido com volume rigoroso de líquido para tracionar o trombo suavemente sem dissecar a parede arterial.",
-      "Está incorreta porque o balão de Fogarty é feito de elastómero flexível de látex/silicone e destina-se a extrair êmbolos moles, não a esmagar placas calcificadas.",
-      "Está incorreta porque o cateter de embolectomia atua mecanicamente, arrastando o coágulo ao ser retirado com o balão insuflado distalmente ao trombo."
+      "Está incorreta: o cateter de Fogarty possui um balão distal de borracha macia e não uma fresa metálica rotativa de alta velocidade.",
+      "Está incorreta: o balão extrai o trombo por tração mecânica suave e oclusiva, não sendo uma membrana perfurada de lise.",
+      "Está incorreta: a embolectomia de Fogarty baseia-se na insuflação de balão retrógrado e não em trado giratório de aspiração."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a balão de embolectomia de Fogarty para remoção de trombos arteriais: compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2665,17 +2669,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a compressas de gaze de algodão hidrófilo desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: estrutura têxtil com comportamento mecânico de absorção por capilaridade e retenção de fluidos sem libertação de resíduos de fibras no leito cirúrgico.",
-      "Comportam-se como películas plásticas não-porosas com taxa de absorção de exsudado estritamente nula.",
-      "São constituídas por filamentos contínuos de cobre metálico condutor para dissipar cargas eletrostáticas da ferida operatória.",
-      "Liberam formaldeído sob tração suave, devendo ser evitadas em pensos cirúrgicos e no bloco operatório."
+      "Matriz hidrofóbica sintética que repele qualquer fluido da ferida para manter a superfície lesada totalmente ressequida.",
+      "Fibras celulósicas hidrófilas que absorvem exsudado por capilaridade, exigindo humidificação para não arrancar tecido novo.",
+      "Membrana colágena reabsorvível que se funde quimicamente com as células epiteliais sem necessidade de mudança periódica.",
+      "Filamento inorgânico condutor que dissipa cargas eletrostáticas para estimular a migração acelerada de queratinócitos basais."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "O/A compressas de gaze de algodão hidrófilo caracteriza-se biofisicamente por ser um estrutura têxtil com comportamento mecânico de absorção por capilaridade e retenção de fluidos sem libertação de resíduos de fibras no leito cirúrgico. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque o algodão hidrófilo tem microestrutura fibrosa com elevada capilaridade e capacidade de absorção de fluidos sero-hemáticos.",
-      "Está incorreta porque as compressas cirúrgicas são têxteis de celulose 100% algodão purificado com fio radiopaco de bário/polipropileno.",
-      "Está incorreta porque as gazes cirúrgicas hospitalares são estéreis, biocompatíveis e livres de químicos tóxicos."
+      "Está incorreta: o algodão hidrófilo tem forte afinidade por água e secreções, absorvendo grandes volumes de exsudado.",
+      "Está incorreta: a gaze simples não é um curativo reabsorvível e requer troca mecânica regular nos cuidados a feridas.",
+      "Está incorreta: a compressa de algodão é um penso passivo tradicional e não um curativo bioelétrico de estimulação celular."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a compressas de gaze de algodão hidrófilo: compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2684,17 +2688,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a fio de sutura farpado unidirecional sem necessidade de nós (tipo V-Loc) desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: fio sintético absorvível com microfarpas que ancoram nas fibras de colagénio, distribuindo a tensão de aproximação tecidual uniformemente ao longo de toda a ferida.",
-      "Exige nós cirúrgicos a cada 2 milímetros devido à superfície perfeitamente lisa e oleosa do polímero sintético.",
-      "Comporta-se como um fio de metal rígido que impede a expansão da caixa torácica quando usado em laparotomias abdominais.",
-      "Desfaz-se em contacto com o sangue em menos de 30 segundos, exigindo colas de fibrina de reforço imediato."
+      "Fio elástico contínuo que encolhe gradualmente por ação do calor corporal, aumentando a compressão na ferida cirúrgica.",
+      "Sutura condutora que funde as margens teciduais através de correntes de radiofrequência emitidas ao longo dos microganchos.",
+      "Microfarpas que ancoram na derme, distribuindo a tensão tênsil ao longo da sutura e eliminando a isquemia focal dos nós.",
+      "Fio tubular oco concebido especificamente para injetar analgésicos locais diretamente no interior dos lábios da incisão."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "O/A fio de sutura farpado unidirecional sem necessidade de nós (tipo V-Loc) caracteriza-se biofisicamente por ser um fio sintético absorvível com microfarpas que ancoram nas fibras de colagénio, distribuindo a tensão de aproximação tecidual uniformemente ao longo de toda a ferida. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque o fio farpado unidirecional ancora-se por microfarpas que travam nos tecidos, eliminando a necessidade de dar nós.",
-      "Está incorreta porque o material é um polímero absorvível complacente (ex: polidioxanona ou copolímero glicólico) com flexibilidade adequada aos tecidos moles.",
-      "Está incorreta porque os fios farpados retêm tensão mecânica durante semanas para garantir a cicatrização fascial e dérmica."
+      "Está incorreta: o fio farpado não contrai termicamente, retendo o comprimento imposto durante a aproximação dos tecidos.",
+      "Está incorreta: a aproximação das bordas é puramente mecânica e de ancoragem física, sem emissão de correntes térmicas.",
+      "Está incorreta: o fio de sutura farpado é sólido e destina-se ao encerramento tecidual e não à infusão de medicamentos."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a fio de sutura farpado unidirecional sem necessidade de nós (tipo V-Loc): compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2703,17 +2707,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a tubo de drenagem pleural torácico de silicone com linha radiopaca desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: tubo com rigidez calculada para não colabar sob a pressão negativa intrapleural de -20 cmH₂O durante a inspiração profunda, mantendo a drenagem de ar ou sangue desobstruída.",
-      "Apresenta parede extremamente fina e maleável que colapsa completamente sob qualquer gradiente pressórico de -2 cmH₂O.",
-      "É fabricado em vidro pyrex rígido e quebradiço que se estilhaça com as oscilações respiratórias do diafragma.",
-      "Não permite identificar o seu posicionamento radiológico porque a linha de sulfato de bário é transparente aos Raios X."
+      "Tubo de poliuretano com baixíssimo Módulo de Young que colapsa totalmente durante a inspiração para reter o líquido pleural.",
+      "Cânula metálica rígida concebida para resistir a impactos torácicos diretos sem permitir qualquer curvatura anatómica no doente.",
+      "Condutor osmótico poroso que permite a troca bidirecional de gases entre a cavidade torácica e a atmosfera hospitalar livre.",
+      "Elastómero de silicone com resiliência elástica adequada para evitar o colapso do lúmen sob a pressão negativa intrapleural."
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "explanation": "O/A tubo de drenagem pleural torácico de silicone com linha radiopaca caracteriza-se biofisicamente por ser um tubo com rigidez calculada para não colabar sob a pressão negativa intrapleural de -20 cmH₂O durante a inspiração profunda, mantendo a drenagem de ar ou sangue desobstruída. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque o tubo torácico de silicone possui espessura de parede calibrada para resistir ao vácuo pleural sem sofrer colapso mecânico.",
-      "Está incorreta porque os drenos torácicos são elastómeros biocompatíveis e flexíveis que acompanham a mobilidade torácica sem traumatizar o parênquima.",
-      "Está incorreta porque a linha radiopaca é impregnada com sulfato de bário com elevado número atómico (Z=56), claramente visível na radiografia de tórax."
+      "Está incorreta: a tubuladura torácica deve manter a permeabilidade do lúmen sob vácuo sem colapsar na inspiração profunda.",
+      "Está incorreta: os drenos torácicos são constituídos por polímeros flexíveis biocompatíveis e não por canos metálicos rígidos.",
+      "Está incorreta: o dreno pleural deve ser ligado a um selo de água ou sistema valvular fechado para evitar pneumotórax aberto."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a tubo de drenagem pleural torácico de silicone com linha radiopaca: compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
@@ -2722,1082 +2726,1082 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Na análise biomecânica e reológica de biomateriais em enfermagem, o/a luvas cirúrgicas de biopolímero de neoprene desempenha um papel clínico crucial. Como se explica o seu comportamento à luz das propriedades mecânicas de tensão, elasticidade e materiais?",
     "options": [
-      "Comporta-se como um biomaterial específico: oferecem elasticidade e tensão de deformação semelhantes ao látex natural com taxa de deformação relativa ε > 600% antes da rutura, sendo isentas das proteínas alergénicas do látex.",
-      "Apresentam deformação elástica máxima de apenas 5%, rompendo-se quando o enfermeiro flete os dedos para calçar a luva.",
-      "São condutores elétricos de baixíssima resistência que facilitam a passagem de correntes elétricas de bisturis elétricos monopolares.",
-      "Contêm as mesmas proteínas alergénicas do látex da Hevea brasiliensis, causando reações anafiláticas cruzadas em doentes atópicos."
+      "Polímero sintético livre de proteínas de látex com resiliência e flexibilidade que preservam a sensibilidade tátil e a proteção.",
+      "Filamento de cloreto de polivinilo rígido com memória mecânica permanente que anula as forças musculares intrínsecas da mão.",
+      "Borracha natural vulcanizada enriquecida com queratina pura concebida para dissolver resíduos orgânicos por hidrólise direta.",
+      "Membrana metálica micrométrica que protege os tecidos através do bloqueio total de qualquer deformação elástica dos dedos."
     ],
     "correctIndex": 0,
     "explanation": "O/A luvas cirúrgicas de biopolímero de neoprene caracteriza-se biofisicamente por ser um oferecem elasticidade e tensão de deformação semelhantes ao látex natural com taxa de deformação relativa ε > 600% antes da rutura, sendo isentas das proteínas alergénicas do látex. Esta propriedade garante a adaptação funcional e a segurança do doente durante a intervenção clínica.",
     "distractorAnalysis": [
-      "Está incorreta porque o policloropreno (neoprene) é um elastómero sintético com alongamento à rotura superior a 600%, conferindo excelente adaptação anatómica.",
-      "Está incorreta porque as luvas cirúrgicas de neoprene são excelentes isolantes dielétricos para proteção contra riscos biológicos e elétricos.",
-      "Está incorreta porque o neoprene é um polímero sintético totalmente isento de proteínas vegetais do látex natural, sendo seguro para alérgicos ao látex."
+      "Está incorreta: o policloropreno (neoprene) é um elastómero altamente flexível e adaptável aos movimentos articulares da mão.",
+      "Está incorreta: o neoprene é um composto 100% sintético e não contém queratina nem enzimas de digestão biológica de sujidade.",
+      "Está incorreta: luvas médicas não utilizam blindagem metálica rígida, a qual impediria a sensibilidade tátil do enfermeiro."
     ],
     "nursingApplication": "O enfermeiro aplica este princípio ao manipular o/a luvas cirúrgicas de biopolímero de neoprene: compreender a sua elasticidade, módulo de deformação e limites de resistência evita falhas mecânicas iatrogénicas, roturas acidentais e lesões teciduais na pessoa cuidada."
   },
   {
     "id": 2145,
     "topicId": 2,
-    "question": "Na aplicação cirúrgica de agrafos metálicos para encerramento de incisões cutâneas, o cirurgião deforma o agrafo através do agrafador. Em termos da curva tensão-deformação dos materiais, que transição mecânica é essencial que o agrafo sofra para manter as bordas da ferida aproximadas permanentemente?",
+    "question": "Na física aplicada aos materiais e dispositivos de saúde, como se caracteriza o comportamento do/a módulo elástico de Young de próteses de titânio (E ~ 110 GPa) sob solicitações mecânicas?",
     "options": [
-      "Deve ultrapassar o limite elástico (tensão de cedência) e entrar na zona de deformação plástica, retendo a nova geometria fechada sem retorno elástico completo.",
-      "Deve operar estritamente dentro da zona elástica linear de Hooke para que a mola do agrafo continue a abrir e fechar espontaneamente com a respiração.",
-      "Deve atingir a tensão máxima de rotura para que o metal se fragmente em microcristais hemostáticos dentro da derme.",
-      "Deve sofrer exclusivamente deformação viscoelástica reversível com tempo de relaxação inferior a um milissegundo."
+      "Possui rigidez inferior à do tecido adiposo subcutâneo, deformando-se extensamente sob qualquer carga gravitacional na marcha.",
+      "Apresenta rigidez intermédia entre o osso cortical e o aço, atenuando o stress shielding e a reabsorção óssea periprotésica.",
+      "Apresenta comportamento superelástico que converte 100% do impacto mecânico do passo em energia térmica dissipada no osso.",
+      "Comporta-se como um compósito frágil que fratura espontaneamente se for submetido a esforços normais de flexão articular."
     ],
-    "correctIndex": 0,
-    "explanation": "Para que um agrafo ou clipe hemostático retenha a sua forma fechada após a aplicação mecânica, a força aplicada deve ultrapassar o limite de proporcionalidade/elástico do metal (tensão de cedência ou yield point), provocando deformação plástica permanente. Se permanecesse puramente na região elástica, o material sofreria recuo elástico (springback) e reabriria a incisão.",
+    "correctIndex": 1,
+    "explanation": "O/A módulo elástico de Young de próteses de titânio (E ~ 110 GPa) atua na prática clínica através do seguinte mecanismo biomecânico: rigidez intermediária entre o osso cortical (18 GPa) e o aço cirúrgico (200 GPa), reduzindo o fenómeno de 'stress shielding' ou reabsorção óssea periprotésica por desuso mecânico.",
     "distractorAnalysis": [
-      "Está incorreta porque a deformação puramente elástica reverteria completamente assim que o agrafador fosse retirado, abrindo a ferida.",
-      "Está incorreta porque atingir a tensão de rotura fraturaria o agrafo, impedindo a coaptação das bordas teciduais.",
-      "Está incorreta porque os agrafos cirúrgicos são fabricados em ligas metálicas (titânio ou aço cirúrgico) que apresentam plasticidade clássica e não comportamento viscoelástico fluido."
+      "Está incorreta: o titânio médico possui Módulo de Young de cerca de 110 GPa, muito superior ao tecido adiposo ou tecidos moles.",
+      "Está incorreta: as próteses femorais de titânio atuam como suporte estrutural resistente e não como amortecedores superelásticos térmicos.",
+      "Está incorreta: as ligas de titânio biocompatíveis possuem elevada tenacidade à fratura e resistência à fadiga mecânica."
     ],
-    "nursingApplication": "Compreender a deformação plástica dos agrafos cutâneos ajuda o enfermeiro na remoção de suturas mecânicas: o saca-agrafos aplica uma força inversa que deforma plasticamente o centro do agrafo, abrindo as hastes laterais sem lacerar a pele cicatrizada."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a módulo elástico de Young de próteses de titânio (E ~ 110 GPa): o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2146,
     "topicId": 2,
-    "question": "A curva tensão-deformação do osso cortical humano sujeito a tração longitudinal exibe uma zona elástica seguida de uma zona plástica antes da fratura. O que representa fisicamente o 'Limite Elástico' (ou Tensão de Cedência) neste tecido musculoesquelético?",
+    "question": "Na física aplicada aos materiais e dispositivos de saúde, como se caracteriza o comportamento do/a propriedades de fluência (creep) dos discos intervertebrais sob solicitações mecânicas?",
     "options": [
-      "A tensão máxima a partir da qual ocorrem microlesões estruturais e deformações permanentes irreversíveis na microarquitetura dos osteónios.",
-      "A força estritamente necessária para que o osso duplique o seu comprimento original em conformidade com a Lei de Hooke.",
-      "O ponto exato em que a velocidade de propagação das ondas sonoras no tecido ósseo atinge o valor zero.",
-      "O valor de deformação a partir do qual a densidade mineral óssea diminui espontaneamente para metade por descalcificação instantânea."
+      "Aumento contínuo da altura intervertebral durante o dia de pé devido à atração hidrostática osmótica contínua dos proteoglicanos.",
+      "Deformação plástica irreversível que provoca perda definitiva de 1 cm de estatura corporal em cada ciclo de 24 horas consecutivas.",
+      "Perda progressiva de água no núcleo pulposo sob carga compressiva diária, recuperando espessura elástica no repouso noturno.",
+      "Comportamento puramente rígido que mantém a espessura e a hidratação dos discos inalteradas independentemente da carga aplicada."
     ],
-    "correctIndex": 0,
-    "explanation": "O limite elástico (tensão de cedência) marca o limiar entre o comportamento elástico reversível (onde a remoção da carga permite ao osso recuperar a sua dimensão original) e o início do escoamento plástico com microrroturas interlamelares e falha das fibras de colagénio. Tensões acima deste limiar produzem deformação residual e aumento drástico do risco de fratura completa.",
+    "correctIndex": 2,
+    "explanation": "O/A propriedades de fluência (creep) dos discos intervertebrais atua na prática clínica através do seguinte mecanismo biomecânico: perda progressiva de água sob a carga vertical durante o dia com diminuição da altura do disco, recuperando a hidratação e a espessura elástica durante o repouso noturno no leito.",
     "distractorAnalysis": [
-      "Está incorreta porque o osso é um material mineralizado rígido que sofre fratura com deformações inferiores a 2-3%, sendo fisicamente impossível duplicar de comprimento.",
-      "Está incorreta porque o limite elástico é uma propriedade tensional mecânica (medida em MPa ou N/m²), não tendo relação com a anulação de ondas sonoras.",
-      "Está incorreta porque a desmineralização óssea é um processo biológico celular mediado por osteoclastos ao longo de semanas/meses, não ocorrendo de forma mecânica instantânea."
+      "Está incorreta: a compressão contínua expele água lentamente do disco ao longo do dia, reduzindo a sua altura em 1 a 2 cm.",
+      "Está incorreta: a perda diária de altura por fluência mecânica é reversível durante o repouso em decúbito no leito.",
+      "Está incorreta: o disco intervertebral é viscoelástico e sofre deformação dependente do tempo (creep) sob a gravidade."
     ],
-    "nursingApplication": "Em doentes acamados com osteoporose, a mobilização no leito e os levantes devem ser realizados com movimentos suaves e alinhamento biomecânico para evitar que picos tensionais momentâneos ultrapassem o reduzido limite elástico do osso osteopénico."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a propriedades de fluência (creep) dos discos intervertebrais: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2147,
     "topicId": 2,
-    "question": "Nas próteses totais da anca, o inserto acetabular é frequentemente fabricado em Polietileno de Ultra Elevado Peso Molecular (UHMWPE). Em comparação com uma cerâmica de alumina, como se classifica o UHMWPE na sua curva tensão-deformação?",
+    "question": "Na física aplicada aos materiais e dispositivos de saúde, como se caracteriza o comportamento do/a elasticidade das paredes arteriais no envelhecimento (arteriosclerose) sob solicitações mecânicas?",
     "options": [
-      "É um material dúctil com elevada capacidade de deformação plástica antes da fratura e moderada rigidez.",
-      "É um material perfeitamente frágil que não tolera qualquer deformação além do regime linear, quebrando sem aviso prévio.",
-      "É um sólido indeformável com Módulo de Young superior ao do diamante (~1500 GPa).",
-      "É um fluido newtoniano puro cuja viscosidade depende exclusivamente da pressão atmosférica externa."
+      "A degradação do colagénio vascular torna as artérias extremamente complacentes, reduzindo a pressão sistólica em idosos.",
+      "A perda de tónus venoso na periferia dilata a aorta e estabiliza a pressão diferencial entre a sístole e a diástole sistémica.",
+      "O envelhecimento vascular restringe a condutividade elétrica do endotélio, bloqueando o influxo osmótico de sódio para o lúmen.",
+      "A substituição de elastina por colagénio rígido eleva o Módulo de Young arterial, aumentando a amplitude da pressão de pulso."
     ],
-    "correctIndex": 0,
-    "explanation": "O UHMWPE é um polímero semicristalino termoplástico dúctil: apresenta módulo de Young relativamente baixo (~1 GPa), elevada tenacidade e grande capacidade de sofrer deformação plástica antes da rutura. Isto confere-lhe excelente capacidade de absorver choques articulares e resistência ao impacto, ao contrário das cerâmicas que são extremamente duras mas frágeis.",
+    "correctIndex": 3,
+    "explanation": "O/A elasticidade das paredes arteriais no envelhecimento (arteriosclerose) atua na prática clínica através do seguinte mecanismo biomecânico: substituição das fibras de elastina por fibras rígidas de colagénio, aumentando o Módulo de Young arterial e elevando a pressão arterial de pulso (sistólica muito alta com diastólica normal ou baixa).",
     "distractorAnalysis": [
-      "Está incorreta porque a ausência de deformação plástica com fratura catastrófica rápida é a assinatura dos materiais frágeis (como as cerâmicas ou vidro), não dos polímeros como o UHMWPE.",
-      "Está incorreta porque o Módulo de Young do polietileno (~0,8 a 1,5 GPa) é centenas de vezes inferior ao do osso e dos metais, muito longe do diamante.",
-      "Está incorreta porque o UHMWPE é um biomaterial sólido polimérico estrutural, não um líquido fluido."
+      "Está incorreta: o envelhecimento arteriosclerótico enrijece as paredes da aorta e aumenta a pressão sistólica e a de pulso.",
+      "Está incorreta: a dilatação venosa periférica não altera a rigidez intrínseca intrínseca (Módulo de Young) das artérias elásticas.",
+      "Está incorreta: o mecanismo da hipertensão sistólica isolada é puramente mecânico-estrutural (perda de elasticidade parietal)."
     ],
-    "nursingApplication": "O enfermeiro deve orientar o doente com artroplastia da anca sobre a importância de evitar impactos repetidos de alta intensidade (como saltos), pois a ductilidade do UHMWPE predispõe a desgaste abrasivo e deformação gradual (creep) com o tempo."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a elasticidade das paredes arteriais no envelhecimento (arteriosclerose): o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2148,
     "topicId": 2,
-    "question": "Na fixação interna de fraturas do fémur, as hastes intramedulares de liga de titânio (Ti-6Al-4V) são frequentemente preferidas ao aço inoxidável 316L. Do ponto de vista biofísico, qual é a principal vantagem do titânio no que respeita ao fenómeno de 'Stress Shielding' (proteção contra a tensão)?",
+    "question": "Na física aplicada aos materiais e dispositivos de saúde, como se caracteriza o comportamento do/a suturas metálicas de agrafos cirúrgicos de aço sob solicitações mecânicas?",
     "options": [
-      "O titânio possui um Módulo de Young (~110 GPa) mais próximo do osso cortical (~18 GPa) do que o aço (~200 GPa), permitindo que o osso partilhe mais carga mecânica e prevenindo a reabsorção óssea por desuso.",
-      "O titânio anula completamente todas as linhas de tensão mecânica na perna, tornando o fémur imune a qualquer compressão da gravidade.",
-      "O titânio tem rigidez vinte vezes superior ao aço cirúrgico, bloqueando totalmente a passagem de qualquer estímulo mecânico ao calo ósseo.",
-      "O titânio atua como um condutor térmico que aquece continuamente o fémur a 45 °C para acelerar os osteoblastos."
+      "Sofrem deformação plástica irreversível sob a compressão do aplicador, mantendo os bordos da incisão coaptados sem recuo.",
+      "Apresentam retorno elástico instantâneo após o disparo, afastando as margens cirúrgicas da pele por tração divergente.",
+      "Fundem-se por reação endotérmica com a queratina cutânea, dissolvendo a sua estrutura metálica ao fim de setenta e duas horas.",
+      "Comportam-se como molas viscoelásticas que aumentam continuamente a sua compressão conforme a ferida cirúrgica cicatriza."
     ],
     "correctIndex": 0,
-    "explanation": "A Lei de Wolff estabelece que o osso remodela e mantém a densidade em resposta às cargas mecânicas que suporta. Se um implante for excessivamente rígido (como o aço inoxidável a ~200 GPa), ele absorve quase toda a tensão mecânica, 'protegendo' o osso em excesso (stress shielding) e causando osteopenia e descolamento do implante. O titânio, tendo um Módulo de Young mais baixo (~110 GPa), flete mais em sintonia com o osso cortical (~10-25 GPa), estimulando a osteogénese fisiológica.",
+    "explanation": "O/A suturas metálicas de agrafos cirúrgicos de aço atua na prática clínica através do seguinte mecanismo biomecânico: apresentam comportamento puramente plástico no fecho com o agrafador mecânico, mantendo as bordas da pele coaptadas sem retorno elástico.",
     "distractorAnalysis": [
-      "Está incorreta porque nenhuma haste metálica suprime a atração gravítica nem a transmissão de forças axiais da marcha.",
-      "Está incorreta porque o titânio é cerca de 50% menos rígido (menor módulo elástico) do que o aço inoxidável, e não vinte vezes mais rígido.",
-      "Está incorreta porque temperaturas de 45 °C causariam necrose térmica óssea dos osteócitos e osteoblastos."
+      "Está incorreta: os agrafos cirúrgicos de aço sofrem deformação plástica permanente para manter a ferida fechada sem reabrir.",
+      "Está incorreta: os agrafos de aço são inertes e inabsorvíveis, exigindo remoção mecânica com extrator próprio de agrafos.",
+      "Está incorreta: o agrafo mantém a sua conformação geométrica fixa e não aumenta a compressão com a cicatrização."
     ],
-    "nursingApplication": "Ao cuidar de doentes com próteses ou fixações de titânio, o enfermeiro apoia o plano de carga ponderal progressiva precoce na deambulação, sabendo que as microdeformações elásticas toleradas pela haste estimulam a consolidação óssea natural."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a suturas metálicas de agrafos cirúrgicos de aço: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2149,
     "topicId": 2,
-    "question": "Um penso de compressão elástica ou um ligamento submetido a uma tensão de tração constante ao longo do tempo exibe uma deformação progressiva e contínua. Como se designa este fenómeno reológico típico dos biomateriais viscoelásticos?",
+    "question": "Na física aplicada aos materiais e dispositivos de saúde, como se caracteriza o comportamento do/a comportamento reológico do líquido sinovial articular sob solicitações mecânicas?",
     "options": [
-      "Fluência mecânica (Creep).",
-      "Limite de escoamento instantâneo.",
-      "Ressonância harmónica transversal.",
-      "Elasticidade perfeita de Hooke."
+      "Fluido newtoniano clássico cuja viscosidade mecânica se mantém estritamente constante independentemente da velocidade articular.",
+      "Fluido pseudoplástico rico em hialuronato que é viscoso em repouso e torna-se fluido com o aumento da taxa de cisalhamento.",
+      "Líquido puramente incompressível que solidifica instantaneamente em contacto com a cartilagem hialina durante a corrida humana.",
+      "Suspensão aquosa de lípidos que atua exclusivamente por atrito de Coulomb em superfícies articulares perfeitamente ressequidas."
     ],
-    "correctIndex": 0,
-    "explanation": "A fluência (creep) é a propriedade dos materiais viscoelásticos em que a deformação continua a aumentar ao longo do tempo sob a aplicação de uma tensão mecânica constante. Observa-se em tecidos biológicos (tendões, cartilagens, pele) e em polímeros biomédicos (ligaduras elásticas, insertos de polietileno).",
+    "correctIndex": 1,
+    "explanation": "O/A comportamento reológico do líquido sinovial articular atua na prática clínica através do seguinte mecanismo biomecânico: fluido pseudoplástico rico em ácido hialurónico que é altamente viscoso em repouso (lubrificação protetora) e torna-se fluido e pouco viscoso sob movimento rápido (mínima fricção articular).",
     "distractorAnalysis": [
-      "Está incorreta porque o limite de escoamento é a tensão que inicia a plasticidade, não a deformação dependente do tempo sob carga constante.",
-      "Está incorreta porque a ressonância harmónica é um fenómeno vibratório de ondas e oscilações, não uma resposta reológica lenta de materiais.",
-      "Está incorreta porque a elasticidade ideal de Hooke é instantânea e independente do tempo (deformação constante para tensão constante)."
+      "Está incorreta: o líquido sinovial é não-newtoniano (pseudoplástico) e a sua viscosidade diminui com a velocidade de movimento.",
+      "Está incorreta: o líquido sinovial não solidifica com o movimento, preservando a sua função lubrificante fluida em alta taxa de deformação.",
+      "Está incorreta: a lubrificação articular biológica é hidrodinâmica e limite, mantida por matriz altamente hidratada com hialuronato."
     ],
-    "nursingApplication": "Ao aplicar ligaduras elásticas em úlceras venosas, o enfermeiro sabe que a fluência do material e a relaxação tecidual reduzem a pressão sub-ligadura ao fim de algumas horas/dias, exigindo reavaliação periódica do penso compressivo."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a comportamento reológico do líquido sinovial articular: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2150,
     "topicId": 2,
-    "question": "Quando um ligamento articular ou uma sutura cirúrgica é esticado e mantido fixo a um determinado comprimento constante (deformação constante), a força interna de tensão decresce progressivamente com o tempo. Qual é a designação biofísica deste comportamento viscoelástico?",
+    "question": "Na física aplicada aos materiais e dispositivos de saúde, como se caracteriza o comportamento do/a tubos de aspiração cirúrgica de silicone médico reforçado com espiral sob solicitações mecânicas?",
     "options": [
-      "Relaxação de tensões (Stress Relaxation).",
-      "Tenacidade de impacto frágil.",
-      "Piezoeletricidade de cisalhamento.",
-      "Dureza superficial de Brinell."
+      "A espiral interna atua como condutora de calor que mantém o sangue aspirado permanentemente à temperatura de 37 °C no tubo.",
+      "A espiral foi desenhada unicamente para aumentar a flexibilidade elástica longitudinal, permitindo esticar o tubo até ao dobro.",
+      "A espiral metálica ou plástica incorporada reforça a parede tubular contra o colapso transmural gerado pela sucção negativa.",
+      "O reforço helicoidal gera um campo magnético rotativo que impede a coagulação de fluidos viscosos ao longo da tubuladura."
     ],
-    "correctIndex": 0,
-    "explanation": "A relaxação de tensões (stress relaxation) é a diminuição progressiva da tensão interna observada num material viscoelástico mantido sob uma deformação constante. As cadeias moleculares reorganizam-se internamente dissipando energia mecânica, o que reduz a força necessária para manter essa mesma deformação.",
+    "correctIndex": 2,
+    "explanation": "O/A tubos de aspiração cirúrgica de silicone médico reforçado com espiral atua na prática clínica através do seguinte mecanismo biomecânico: a espiral rígida de aço ou polímero impede o colapso do tubo sob vácuo de alta sucção (resistência à pressão negativa de colapso).",
     "distractorAnalysis": [
-      "Está incorreta porque tenacidade de impacto mede a energia absorvida durante um choque dinâmico súbito até à fratura.",
-      "Está incorreta porque piezoeletricidade é a geração de potencial elétrico sob pressão mecânica, não a queda tensional no tempo.",
-      "Está incorreta porque a dureza Brinell avalia a resistência à penetração superficial por uma esfera metálica calibrada."
+      "Está incorreta: a finalidade primária da armação em espiral é mecânica: resistir à pressão de colapso transmural sob vácuo.",
+      "Está incorreta: a espiral não tem função de aquecimento térmico nem é ligada a nenhuma fonte de corrente elétrica ativa.",
+      "Está incorreta: o reforço espiralado não possui propriedades magnéticas nem afeta a cascata bioquímica da coagulação."
     ],
-    "nursingApplication": "Em trações cutâneas ou alinhamento de membros pós-luxação, a relaxação de tensões dos ligamentos e cápsula articular permite que a resistência inicial dos tecidos diminua gradualmente, facilitando o conforto do doente sob vigilância do enfermeiro."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a tubos de aspiração cirúrgica de silicone médico reforçado com espiral: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2151,
     "topicId": 2,
-    "question": "Durante a marcha, a cartilagem articular do joelho e os discos intervertebrais são submetidos a ciclos repetidos de compressão e descompressão. A curva de carga não coincide com a curva de descarga, formando uma área fechada que representa energia dissipada sob forma de calor. Que fenómeno mecânico traduz este ciclo?",
+    "question": "Na física aplicada aos materiais e dispositivos de saúde, como se caracteriza o comportamento do elastómero de vedação em seringas pré-cheias sob solicitações mecânicas?",
     "options": [
-      "Histerese elástica.",
-      "Fluência nula.",
-      "Deformação supercondutora.",
-      "Módulo de Young infinito."
+      "Elastómero altamente adesivo que se funde quimicamente com as paredes da seringa, exigindo impacto inicial violento no êmbolo.",
+      "Polímero termoplástico que expande continuamente sob temperatura ambiente, bloqueando o avanço do êmbolo sob pressão manual.",
+      "Membrana metálica semipermeável concebida para permitir a saída contínua de água e manter o fármaco concentrado no cilindro.",
+      "Borracha sintética com baixo atrito cinético que assegura vedação estanque e deslizamento suave sem solavancos no cilindro."
     ],
-    "correctIndex": 0,
-    "explanation": "A histerese elástica é a diferença entre a energia despendida para deformar um material viscoelástico durante a fase de carga e a energia devolvida durante a fase de descompressão (descarga). A área interna do ciclo de histerese representa a energia mecânica dissipada internamente sob a forma de calor, funcionando como um amortecedor biológico essencial contra impactos nas articulações.",
+    "correctIndex": 3,
+    "explanation": "O/A elastómero de vedação em seringas pré-cheias de heparina atua na prática clínica através do seguinte mecanismo biomecânico: borracha sintética de alta estanquicidade que mantém a esterilidade e impede a entrada de ar com coeficiente de atrito cinético constante no cilindro.",
     "distractorAnalysis": [
-      "Está incorreta porque a cartilagem apresenta fluência significativa e a histerese mede a perda de energia em ciclos de carga/descarga.",
-      "Está incorreta porque supercondutividade é um fenómeno quântico-elétrico a temperaturas criogénicas, sem aplicação à viscoelasticidade cartilagínea.",
-      "Está incorreta porque um material com módulo de Young infinito seria perfeitamente rígido, não sofrendo qualquer deformação nem exibindo ciclo de histerese."
+      "Está incorreta: o êmbolo deve deslizar com atrito constante e suave para permitir uma administração precisa e sem bloqueios.",
+      "Está incorreta: os materiais de vedação são concebidos com grande estabilidade dimensional para não encravar no cilindro.",
+      "Está incorreta: o êmbolo é um elastómero estanque e impermeável e não uma membrana metálica porosa de concentração osmótica."
     ],
-    "nursingApplication": "O enfermeiro valoriza o uso de calçado com solas viscoelásticas absorventes de impacto para doentes com osteoartrose, pois estas solas aumentam a histerese externa e reduzem os choques mecânicos transmitidos às articulações degeneradas."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a elastómero de vedação em seringas pré-cheias de heparina: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2152,
     "topicId": 2,
-    "question": "O tendão calcâneo (tendão de Aquiles) tem a capacidade de armazenar grande quantidade de energia mecânica elástica durante a fase de apoio da marcha e devolvê-la eficientemente na fase de impulsão. Que grandeza biofísica, correspondente à área sob a curva tensão-deformação dentro do regime puramente elástico, quantifica esta propriedade?",
+    "question": "Na física aplicada aos materiais e dispositivos de saúde, como se caracteriza o comportamento mecânico dos fixadores externos ortopédicos de fibra de carbono?",
     "options": [
-      "Resiliência mecânica (Módulo de Resiliência).",
-      "Fragilidade de Vickers.",
-      "Condutibilidade eletrolítica tecidual.",
-      "Ponto de fusão endotérmico."
+      "Compósito de carbono com elevada rigidez mecânica e radiotransparência, viabilizando o controlo radiológico sem artefactos.",
+      "Material isotrópico com baixa tenacidade que sofre deformação plástica contínua sob o peso do membro para acelerar o calo ósseo.",
+      "Liga metálica condutora concebida para dissipar o calor gerado pelas contrações musculares através de radiação infravermelha.",
+      "Polímero reabsorvível que perde gradualmente a sua integridade estrutural em três dias de exposição à humidade do ar ambiente."
     ],
     "correctIndex": 0,
-    "explanation": "O módulo de resiliência é a quantidade máxima de energia elástica por unidade de volume que um material consegue absorver sem sofrer qualquer deformação plástica ou permanente (calculada integrando a tensão em relação à deformação até ao limite elástico). Os tendões humanos têm altíssima resiliência, permitindo poupança de cerca de 50% do custo metabólico da locomoção através do retorno elástico passivo.",
+    "explanation": "O/A fixador externo ortopédico de carbono atua na prática clínica através do seguinte mecanismo biomecânico: material compósito de fibra de carbono com altíssima rigidez e radiotransparência, permitindo o controlo radiológico da fratura sem artefactos metálicos opacos.",
     "distractorAnalysis": [
-      "Está incorreta porque a escala de Vickers mede a dureza superficial à indentação, não a capacidade de armazenar e devolver energia elástica.",
-      "Está incorreta porque a condutibilidade eletrolítica quantifica a passagem de corrente iónica em soluções aquosas.",
-      "Está incorreta porque ponto de fusão refere-se à transição termodinâmica de fase sólida para líquida por calor."
+      "Está incorreta: o fixador deve manter rigidez elástica estrita para estabilizar a fratura sem sofrer deformação plástica.",
+      "Está incorreta: a fibra de carbono em matriz polimérica é um compósito leve e não uma liga metálica de dissipação térmica.",
+      "Está incorreta: os fixadores de carbono são materiais duráveis e não degradáveis durante todo o tratamento ortopédico."
     ],
-    "nursingApplication": "Na reabilitação motora e no levante de doentes com imobilização prolongada, o enfermeiro sabe que a atrofia do tendão reduz a sua resiliência elástica, aumentando o risco de tendinopatias e roturas se a retoma da marcha for demasiado brusca."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a fixador externo ortopédico de carbono: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2153,
     "topicId": 2,
-    "question": "A 'Tenacidade' (Toughness) de um biomaterial é uma propriedade mecânica crucial na seleção de implantes ortopédicos e próteses. Em termos gráficos da curva tensão-deformação, como se define a tenacidade mecânica?",
+    "question": "Na física aplicada aos materiais e dispositivos de saúde, como se caracteriza a atuação biofísica das meias anti-embolia cirúrgicas em doentes acamados?",
     "options": [
-      "A área total sob a curva tensão-deformação desde a origem até ao ponto de fratura completa do material.",
-      "O declive inicial da reta de proporcionalidade que obedece estritamente à Lei de Hooke.",
-      "A pressão hidrostática máxima necessária para comprimir o volume do biomaterial a metade.",
-      "A diferença entre a temperatura de ebulição do material e a temperatura da sala de operações."
+      "Aplicam pressão constante superior a 40 mmHg em todo o membro para interromper temporariamente a circulação venosa profunda.",
+      "Exercem compressão graduada decrescente de cerca de 18 mmHg no tornozelo e 8 mmHg na coxa, acelerando o retorno venoso no leito.",
+      "Atuam por aquecimento endotérmico da musculatura da perna, estimulando a vasodilatação arteriolar sem qualquer ação mecânica.",
+      "Exercem maior pressão na coxa do que no tornozelo para empurrar o sangue venoso por gravidade invertida até à extremidade do pé."
     ],
-    "correctIndex": 0,
-    "explanation": "A tenacidade representa a capacidade total de um material absorver energia mecânica e deformar-se (elástica e plasticamente) antes de sofrer fratura. Corresponde à área total sob toda a curva tensão-deformação. Um material muito tenaz (como o osso saudável ou o titânio) exige uma quantidade maciça de energia externa para ser fraturado, combinando elevada resistência com ductilidade.",
+    "correctIndex": 1,
+    "explanation": "O/A meias anti-embolia cirúrgicas brancas (TED stockings) atua na prática clínica através do seguinte mecanismo biomecânico: exercem pressão profilática de 18 mmHg no tornozelo e 8 mmHg na coxa para doentes acamados em pós-operatório sem mobilidade ativa.",
     "distractorAnalysis": [
-      "Está incorreta porque o declive inicial da reta elástica representa o Módulo de Young (rigidez do material), não a sua tenacidade total.",
-      "Está incorreta porque a resistência à compressão volumétrica hidrostática é medida pelo Módulo Volumétrico (Bulk Modulus, K).",
-      "Está incorreta porque a tenacidade é estritamente uma propriedade mecânica de absorção de trabalho e energia de deformação, não uma variável térmica."
+      "Está incorreta: pressões de 40 mmHg em doentes acamados poderiam causar isquemia tecidual e colapso microvascular arterial.",
+      "Está incorreta: a ação terapêutica é puramente hemodinâmica pela redução mecânica do raio venoso e não térmica.",
+      "Está incorreta: um gradiente com pressão maior proximal atuaria como garrote venoso, impedindo a subida do sangue ao coração."
     ],
-    "nursingApplication": "Compreender que o osso idoso perde tenacidade (torna-se mais frágil, diminuindo a área sob a curva de tensão) reforça a vigilância de enfermagem para medidas de prevenção de quedas no internamento e no domicílio."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a meias anti-embolia cirúrgicas brancas (TED stockings): o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2154,
     "topicId": 2,
-    "question": "Em cirurgia ortopédica, utilizam-se componentes cerâmicos e componentes metálicos. Qual é a diferença fundamental no comportamento mecânico entre um material 'frágil' (brittle) e um material 'dúctil' (ductile) quando sujeitos a cargas crescentes?",
+    "question": "Na física aplicada aos materiais e dispositivos de saúde, como se caracteriza a resposta mecânica das tiras adesivas de aproximação cutânea (Steri-Strips)?",
     "options": [
-      "O material frágil fratura-se repentinamente quase sem sofrer deformação plástica prévia, enquanto o dúctil sofre grande deformação plástica antes da rutura.",
-      "O material frágil flete elasticamente como borracha até 500% de alongamento, enquanto o dúctil quebra com choque microscópico.",
-      "O material frágil anula o atrito articular a 100%, enquanto o dúctil adere quimicamente ao cimento ósseo.",
-      "Não existe qualquer diferença biomecânica, sendo termos sinónimos aplicados indistintamente na seleção de ligas cirúrgicas."
+      "Constituem películas plásticas de alta complacência que esticam livremente até três vezes o tamanho para alargar a cicatriz.",
+      "Fitas metálicas que realizam a aproximação das margens cutâneas por fusão térmica direta com as proteínas epidérmicas locais.",
+      "Apresentam reforço com filamentos de poliéster para assegurar tensão tênsil constante e evitar o afastamento das margens.",
+      "Membranas hidrofílicas que se dissolvem completamente nas primeiras duas horas após aplicação para libertar antibióticos tópicos."
     ],
-    "correctIndex": 0,
-    "explanation": "Materiais frágeis (como as cerâmicas de óxido de alumínio ou zircónia) têm elevado limite de resistência à compressão, mas sofrem propagação catastrófica de fendas com mínima ou nula deformação plástica assim que o limite elástico é ultrapassado. Em contrapartida, os materiais dúcteis (como ligas de titânio ou aços austeníticos) sofrem escoamento plástico substancial antes da fratura, dissipando energia e permitindo aviso visual de deformação antes do colapso estrutural.",
+    "correctIndex": 2,
+    "explanation": "O/A tiras adesivas esterilizadas de aproximação cutânea (Steri-Strips) atua na prática clínica através do seguinte mecanismo biomecânico: reforçadas com filamentos de poliéster para manter tensão de tração constante nas bordas da ferida após remoção precoce de pontos de sutura.",
     "distractorAnalysis": [
-      "Está incorreta porque os materiais frágeis têm quase zero deformação plástica; alongamentos de 500% são exclusivos de elastómeros.",
-      "Está incorreta porque a fragilidade não tem relação com coeficientes de atrito nulos (o atrito zero não existe em biomateriais).",
-      "Está incorreta porque a ductilidade e a fragilidade são comportamentos reológicos opostos e fundamentais no dimensionamento de próteses médicas."
+      "Está incorreta: os filamentos de poliéster conferem baixa complacência para manter a ferida aproximada sem deiscência.",
+      "Está incorreta: a adesão é química por polímero acrílico sensível à pressão e não por soldadura metálica térmica.",
+      "Está incorreta: as tiras são estruturais e devem permanecer aderidas durante dias para garantir a coaptação das margens."
     ],
-    "nursingApplication": "O enfermeiro instrumentista deve manusear componentes de cerâmica (cabeças femorais ou insertos) com extremo cuidado assético e mecânico, evitando batimentos ou impactos que possam criar microfissuras promotoras de fratura frágil sob carga corporal."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a tiras adesivas esterilizadas de aproximação cutânea (Steri-Strips): o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2155,
     "topicId": 2,
-    "question": "A Lei de Hooke (F = k · Δx) é aplicada biofisicamente em dinamómetros e sistemas de tração esquelética calibrados por molas. Se uma mola de tração com constante elástica k = 500 N/m sofrer um alongamento Δx de 4 cm (0,04 m), qual é a força de tração exata exercida sobre o membro do doente?",
+    "question": "Na biomecânica do posicionamento no leito, qual é o efeito físico de elevar a cabeceira a mais de 30° sem suporte adequado nos membros inferiores?",
     "options": [
-      "20 N.",
-      "200 N.",
-      "12,5 N.",
-      "2000 N."
+      "O peso corporal é transferido integralmente para a região cervical, anulando qualquer compressão mecânica sobre o sacro e cóccix.",
+      "A pressão hidrostática intracapilar duplica nos pés do doente, impedindo qualquer alteração isquémica nos tecidos moles glúteos.",
+      "O atrito entre a pele e o lençol anula-se espontaneamente, convertendo o movimento corporal num deslizamento sem qualquer tensão.",
+      "O tronco desliza para a frente enquanto a pele fica retida no lençol, gerando forças de cisalhamento que ocluem arteríolas profundas."
     ],
-    "correctIndex": 0,
-    "explanation": "Pela Lei de Hooke, F = k · Δx. Substituindo os valores em unidades SI: F = 500 N/m · 0,04 m = 20 N. Esta força equivale aproximadamente ao peso de uma massa suspensa de 2,04 kg sob a aceleração gravítica terrestre (g ≈ 9,8 m/s²).",
+    "correctIndex": 3,
+    "explanation": "O/A módulo elástico de Young de próteses de titânio (E ~ 110 GPa) atua na prática clínica através do seguinte mecanismo biomecânico: rigidez intermediária entre o osso cortical (18 GPa) e o aço cirúrgico (200 GPa), reduzindo o fenómeno de 'stress shielding' ou reabsorção óssea periprotésica por desuso mecânico.",
     "distractorAnalysis": [
-      "Está incorreta porque resultaria de usar incorretamente 0,4 m em vez de 4 cm (0,04 m).",
-      "Está incorreta porque resultaria de dividir k por Δx em vez de multiplicar (500 / 0,04 = 12500).",
-      "Está incorreta porque resultaria de um erro de cálculo com potência de dez desfasada por dois fatores de grandeza."
+      "Está incorreta: a elevação da cabeceira concentra a carga gravitacional e o cisalhamento nos tecidos sacrais profundos.",
+      "Está incorreta: o deslizamento no leito agrava o cisalhamento nos tecidos glúteos e sacrais e não nos pés.",
+      "Está incorreta: o atrito estático retém a epiderme enquanto o esqueleto desce, provocando deformação e oclusão vascular."
     ],
-    "nursingApplication": "Na vigilância de trações ortopédicas esqueléticas ou cutâneas no leito, o enfermeiro verifica se o alongamento das molas ou os pesos suspensos correspondem com rigor à prescrição médica, garantindo a magnitude exata da força de redução da fratura."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a módulo elástico de Young de próteses de titânio (E ~ 110 GPa): o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2156,
     "topicId": 2,
-    "question": "Em camas hospitalares especializadas e estrados ortopédicos de reabilitação, vários conjuntos de molas elásticas são montados 'em paralelo' para suportar o peso do colchão e do doente. Se duas molas com constantes elásticas k₁ = 300 N/m e k₂ = 500 N/m estiverem associadas em paralelo, qual é a constante elástica equivalente (k_eq) do sistema?",
+    "question": "Ao levantar um peso do chão ou transferir um doente, por que razão a flexão dos joelhos com tronco ereto é biomecanicamente protetora da coluna?",
     "options": [
-      "800 N/m.",
-      "187,5 N/m.",
-      "200 N/m.",
-      "150000 N/m."
+      "Aproxima a carga do eixo articular do corpo, encurtando o braço de momento da resistência e reduzindo a compressão no disco L5-S1.",
+      "Transfere toda a força gravitacional para os meniscos do joelho, anulando completamente a necessidade de esforço contrátil muscular.",
+      "Converte a coluna lombar numa alavanca de 2.ª classe com vantagem mecânica infinita, dispensando a contração dos músculos eretores.",
+      "Permite que a linha de gravidade do tronco saia da base de sustentação sem comprometer o equilíbrio postural dinâmico do cuidador."
     ],
     "correctIndex": 0,
-    "explanation": "Na associação de molas em paralelo, a deformação sofrida por ambas é idêntica (Δx) e a força total aplicada reparte-se pelas duas molas: F_total = F₁ + F₂ = k₁·Δx + k₂·Δx = (k₁ + k₂)·Δx. Logo, a constante elástica equivalente é a soma direta das constantes individuais: k_eq = k₁ + k₂ = 300 + 500 = 800 N/m. O sistema torna-se mais rígido.",
+    "explanation": "O/A propriedades de fluência (creep) dos discos intervertebrais atua na prática clínica através do seguinte mecanismo biomecânico: perda progressiva de água sob a carga vertical durante o dia com diminuição da altura do disco, recuperando a hidratação e a espessura elástica durante o repouso noturno no leito.",
     "distractorAnalysis": [
-      "Está incorreta porque 187,5 N/m corresponde ao cálculo de duas molas ligadas em série: 1/k_eq = 1/300 + 1/500, o que reduz a rigidez em vez de somar.",
-      "Está incorreta porque resultaria de uma subtração errónea das constantes elásticas (500 - 300 = 200).",
-      "Está incorreta porque resultaria de uma multiplicação dimensionalmente incorreta das constantes."
+      "Está incorreta: os músculos dos membros inferiores continuam a exercer trabalho mecânico vigoroso para erguer o corpo.",
+      "Está incorreta: a coluna funciona essencialmente como alavanca interfixa de 1.ª classe com braço de esforço muscular curto.",
+      "Está incorreta: a linha de gravidade deve permanecer rigorosamente dentro do polígono de apoio para evitar desequilíbrios e quedas."
     ],
-    "nursingApplication": "Compreender que elementos elásticos em paralelo aumentam a rigidez global ajuda a equipa de enfermagem a selecionar estrados e suportes com conformidade biomecânica correta para o peso e perfil do doente."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a propriedades de fluência (creep) dos discos intervertebrais: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2157,
     "topicId": 2,
-    "question": "Na biomecânica muscular, as unidades sarcoplasmáticas contráteis e as bandas tendinosas conectam-se 'em série'. Se duas estruturas elásticas forem associadas em série, o que acontece à constante elástica equivalente (k_eq) e à complacência total do conjunto?",
+    "question": "Do ponto de vista da física do atrito, qual é a principal vantagem de utilizar um lençol de transferência ou tábua deslizante no reposicionamento?",
     "options": [
-      "A constante elástica equivalente diminui (1/k_eq = 1/k₁ + 1/k₂), tornando o conjunto mais complacente e mais fácil de deformar do que qualquer uma das molas isoladas.",
-      "A constante elástica equivalente duplica obrigatoriamente, tornando o conjunto perfeitamente rígido e indeformável.",
-      "A complacência total anula-se, impedindo qualquer alongamento sob tração mecânica.",
-      "A força transmitida ao longo da cadeia em série dissipa-se para zero no ponto de junção das duas estruturas."
+      "Converte a massa corporal do doente numa força ascendente que anula temporariamente a atração da gravidade exercida pela Terra.",
+      "Diminui o coeficiente de atrito de deslizamento entre o doente e o leito, reduzindo a força horizontal exigida para a mobilização.",
+      "Transforma a tração horizontal do enfermeiro em compressão vertical pura, aumentando o atrito para travar o paciente no colchão.",
+      "Aumenta a resistência mecânica da pele através da transmissão contínua de cargas eletrostáticas libertadas pelo material polimérico."
     ],
-    "correctIndex": 0,
-    "explanation": "Na associação de molas em série, a mesma força F atua uniformemente ao longo de todos os elementos, e o alongamento total é a soma dos alongamentos individuais: Δx_total = Δx₁ + Δx₂ = F/k₁ + F/k₂ = F·(1/k₁ + 1/k₂). Assim, 1/k_eq = 1/k₁ + 1/k₂. Isto significa que a constante elástica equivalente em série é sempre menor do que a menor das constantes individuais, aumentando a complacência e elasticidade global.",
+    "correctIndex": 1,
+    "explanation": "O/A elasticidade das paredes arteriais no envelhecimento (arteriosclerose) atua na prática clínica através do seguinte mecanismo biomecânico: substituição das fibras de elastina por fibras rígidas de colagénio, aumentando o Módulo de Young arterial e elevando a pressão arterial de pulso (sistólica muito alta com diastólica normal ou baixa).",
     "distractorAnalysis": [
-      "Está incorreta porque a constante equivalente só aumentaria se os elementos fossem montados em paralelo, nunca em série.",
-      "Está incorreta porque a complacência (facilidade de deformação) aumenta na associação em série, não se anula.",
-      "Está incorreta porque, pela 3.ª Lei de Newton, a tensão de tração propaga-se integralmente através de todos os elementos alinhados em série."
+      "Está incorreta: o dispositivo atua na redução do atrito mecânico de interface (F = μ·N) e não altera a massa ou gravidade.",
+      "Está incorreta: o objetivo é facilitar o deslizamento suave e proteger os tecidos moles contra tensões tangenciais de corte.",
+      "Está incorreta: o efeito é tribológico de baixo atrito superficial e não envolve estimulação eletrostática da pele."
     ],
-    "nursingApplication": "O complexo músculo-tendão combina fibras musculares e tecido conectivo em série; o enfermeiro sabe que tendões rígidos transmitem força rapidamente, mas um músculo fatigado perde capacidade de amortecimento, aumentando a suscetibilidade a estiramentos."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a elasticidade das paredes arteriais no envelhecimento (arteriosclerose): o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2158,
     "topicId": 2,
-    "question": "A articulação atlanto-occipital, na sustentação e movimento da cabeça humana no plano sagital, é o exemplo anatómico canónico de que classe de alavanca?",
+    "question": "Num doente com fratura do fémur submetido a tração cutânea de Buck com polia simples fixa, qual é o papel físico dessa polia no sistema?",
     "options": [
-      "Alavanca de 1.ª classe (interfixa), onde o fulcro se situa nos côndilos occipitais, entre o peso da cabeça (resistência) e a força dos músculos extensores da nuca (potência).",
-      "Alavanca de 2.ª classe (inter-resistente), onde o fulcro se situa no queixo e a força de potência é aplicada nos dentes molares.",
-      "Alavanca de 3.ª classe (interpotente), onde os músculos da nuca se inserem entre os olhos e o nariz para puxar a fronte para baixo.",
-      "Alavanca hidráulica sem qualquer fulcro ósseo rígido nem braços mecânicos mensuráveis."
+      "Duplica a força de tração mecânica aplicada na perna fraturada sem necessidade de acrescentar massa ao peso suspenso no sistema.",
+      "Reduz a aceleração gravítica local pela metade para diminuir o espasmo muscular involuntário associado à instabilidade óssea.",
+      "Altera a direção da linha de ação da força peso para o plano horizontal do membro, mantendo o módulo da força inalterado (VM = 1).",
+      "Converte a força peso contínua numa oscilação ressonante periódica que acelera a deposição de cálcio no hematoma da fratura."
     ],
-    "correctIndex": 0,
-    "explanation": "Na alavanca de 1.ª classe (interfixa), o ponto de apoio (fulcro) situa-se entre o ponto de aplicação da força potente e o ponto de aplicação da força resistente. Na cabeça humana, os côndilos occipitais articulam com o atlas formando o fulcro central; o centro de gravidade da cabeça situa-se ligeiramente anterior a este ponto (resistência que tende a fazer cair o queixo no peito), sendo equilibrado posteriormente pela tração dos músculos esplénio e trapézio da nuca (potência).",
+    "correctIndex": 2,
+    "explanation": "O/A suturas metálicas de agrafos cirúrgicos de aço atua na prática clínica através do seguinte mecanismo biomecânico: apresentam comportamento puramente plástico no fecho com o agrafador mecânico, mantendo as bordas da pele coaptadas sem retorno elástico.",
     "distractorAnalysis": [
-      "Está incorreta porque na alavanca de 2.ª classe a resistência está no meio; no crânio, o fulcro ósseo está entre a resistência anterior e a potência posterior.",
-      "Está incorreta porque na alavanca de 3.ª classe a potência situa-se no meio; os músculos da nuca inserem-se na linha nucal posterior do occipital, fora do espaço intermédio.",
-      "Está incorreta porque a articulação craniocervical é uma articulação sinovial condilar com fulcro e braços anatómicos perfeitamente mensuráveis."
+      "Está incorreta: polias fixas simples apenas redirecionam a força sem gerar vantagem mecânica de multiplicação (VM = 1).",
+      "Está incorreta: as polias mecânicas não possuem qualquer capacidade de alterar a aceleração gravítica da Terra.",
+      "Está incorreta: a tração de Buck aplica uma força estática contínua para alinhamento e redução do espasmo muscular doloroso."
     ],
-    "nursingApplication": "Ao posicionar doentes em coma ou sedados na cama, o enfermeiro recorda que a perda de tónus dos extensores da nuca desequilibra esta alavanca de 1.ª classe, fazendo a cabeça fletir anteriormente e ocluir as vias aéreas superiores, sendo essencial a extensão neutra com coxim."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a suturas metálicas de agrafos cirúrgicos de aço: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2159,
     "topicId": 2,
-    "question": "A elevação do corpo humano na ponta dos pés (flexão plantar realizada pelo tríceps sural - gémeos e sóleo) é o exemplo mais frequentemente citado de que tipo de alavanca anatómica e qual a sua característica mecânica?",
+    "question": "Num sistema ortopédico de tração que utiliza uma polia móvel ligada ao estribo de tração esquelética, qual é a vantagem mecânica ideal (VM)?",
     "options": [
-      "Alavanca de 2.ª classe (inter-resistente), onde a resistência (peso do corpo transmitido pela tíbia) está entre o fulcro (cabeças dos metatarsos) e a potência (tendão de Aquiles), garantindo sempre Vantagem Mecânica > 1.",
-      "Alavanca de 3.ª classe (interpotente), onde o tendão de Aquiles se insere entre os dedos e o tornozelo, com desvantagem mecânica severa de força.",
-      "Alavanca de 1.ª classe (interfixa), onde o tornozelo anula todas as forças normais do solo.",
-      "Alavanca puramente rotacional sem qualquer vantagem mecânica em relação à carga estática."
+      "VM = 1, mantendo rigorosamente a mesma intensidade de tração mecânica independentemente do número de segmentos de cabo de suporte.",
+      "VM = 0,5, reduzindo a força mecânica exercida no membro fraturado para metade da massa suspensa na extremidade livre da corda.",
+      "VM = 4, quadruplicando a intensidade da força mecânica de tração através da subdivisão geométrica do diâmetro da roldana móvel.",
+      "VM = 2, permitindo que uma massa suspensa de 4 kg produza uma força de tração resultante de cerca de 8 kgf (aproximadamente 78 N)."
     ],
-    "correctIndex": 0,
-    "explanation": "Na elevação na ponta dos pés, o ponto de apoio (fulcro) situa-se na articulação metatarsofalângica no solo; o peso de todo o corpo desce pelo tornozelo através da tíbia (resistência, no meio); a força muscular potente é aplicada posteriormente no calcâneo pelo tendão de Aquiles (potência). Como a resistência está no meio (alavanca de 2.ª classe), o braço de potência (d_P) é necessariamente maior do que o braço de resistência (d_R), resultando numa Vantagem Mecânica de força superior a 1 (VM = d_P / d_R > 1).",
+    "correctIndex": 3,
+    "explanation": "O/A comportamento reológico do líquido sinovial articular atua na prática clínica através do seguinte mecanismo biomecânico: fluido pseudoplástico rico em ácido hialurónico que é altamente viscoso em repouso (lubrificação protetora) e torna-se fluido e pouco viscoso sob movimento rápido (mínima fricção articular).",
     "distractorAnalysis": [
-      "Está incorreta porque na alavanca de 3.ª classe a potência estaria no meio e a VM seria sempre menor que 1; no tornozelo a potência está na extremidade posterior.",
-      "Está incorreta porque na alavanca de 1.ª classe o fulcro estaria entre a carga e a força muscular; na ponta dos pés o fulcro está no solo na extremidade anterior.",
-      "Está incorreta porque a alavanca inter-resistente confere uma clara vantagem mecânica de força, permitindo erguer 70-80 kg de peso corporal com menor tensão muscular do que o peso total."
+      "Está incorreta: a polia móvel divide a sustentação por duas cordas, gerando uma vantagem mecânica de duplicação (VM = 2).",
+      "Está incorreta: uma vantagem mecânica de 0,5 reduziria a tração, ao passo que a polia móvel multiplica a força por dois.",
+      "Está incorreta: a obtenção de VM = 4 exigiria um cadernal composto com duas polias móveis em paralelo e não apenas uma."
     ],
-    "nursingApplication": "Compreender esta alavanca de 2.ª classe é vital na reabilitação pós-operatória da marcha: qualquer lesão ou imobilização que encurte o tendão de Aquiles compromete o braço de potência, impedindo o impulso mecânico normal do passo."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a comportamento reológico do líquido sinovial articular: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2160,
     "topicId": 2,
-    "question": "A flexão do cotovelo humano pelo músculo bicípite braquial ao levantar um peso colocado na mão constitui uma alavanca de 3.ª classe (interpotente). Qual é a principal consequência biofísica deste arranjo anatómico para o sistema neuromuscular?",
+    "question": "Qual é o princípio biofísico dos colchões de ar alternado na prevenção de lesões por pressão em doentes acamados de alto risco?",
     "options": [
-      "Desvantagem mecânica de força (VM < 1), exigindo que o músculo exerça uma força muito superior ao peso do objeto, mas proporcionando grande ganho de velocidade e amplitude de movimento na mão.",
-      "Vantagem mecânica de força maciça (VM = 15), permitindo levantar pesos pesados sem qualquer esforço metabólico.",
-      "Anulação total do momento de torção na articulação umerocubital por alinhamento axial perfeito.",
-      "Inversão do vetor gravítico que faz o antebraço levitar espontaneamente em direção ao ombro."
+      "Alternam o enchimento pneumático de células para aliviar periodicamente a pressão abaixo da perfusão capilar, restaurando o fluxo.",
+      "Mantêm uma pressão contínua superior a 80 mmHg em todos os pontos anatómicos de contacto para drenar o edema dos tecidos moles.",
+      "Aquecem a epiderme a 42 °C para acelerar o metabolismo celular e compensar a redução local do fluxo sanguíneo nas áreas de apoio.",
+      "Convertem as pressões corporais em vibrações ultrassónicas para desfazer microtrombos nos capilares do tecido celular subcutâneo."
     ],
     "correctIndex": 0,
-    "explanation": "Nas alavancas de 3.ª classe (interpotentes), a força potente é aplicada entre o fulcro e a resistência. Na flexão do cotovelo, o fulcro é a articulação umerocubital; o tendão bicipital insere-se na tuberosidade radial a cerca de 4-5 cm do fulcro (braço de potência, d_P); a carga na mão situa-se a cerca de 35 cm do fulcro (braço de resistência, d_R). Como d_P < d_R, a vantagem mecânica é muito inferior a 1 (VM ≈ 4/35 ≈ 0,11), exigindo que o bíceps puxe com cerca de 9 a 10 vezes mais força do que o peso sustentado na mão. Em contrapartida, um pequeno encurtamento muscular de 1 cm traduz-se num movimento amplo e rápido de quase 10 cm na mão.",
+    "explanation": "O/A tubos de aspiração cirúrgica de silicone médico reforçado com espiral atua na prática clínica através do seguinte mecanismo biomecânico: a espiral rígida de aço ou polímero impede o colapso do tubo sob vácuo de alta sucção (resistência à pressão negativa de colapso).",
     "distractorAnalysis": [
-      "Está incorreta porque as alavancas de 3.ª classe têm sempre desvantagem de força (VM < 1), nunca ganho de força.",
-      "Está incorreta porque o torque articular é precisamente o produto da força muscular pelo seu braço de alavanca, sendo o motor da rotação.",
-      "Está incorreta porque a gravidade atua de forma constante em direção ao centro da Terra e tem de ser superada pelo trabalho muscular."
+      "Está incorreta: pressões de 80 mmHg causariam isquemia tecidual e colapso microvascular arterial em vez de alívio.",
+      "Está incorreta: o calor aumentaria o consumo metabólico de oxigénio em tecidos já hipóxicos, acelerando a necrose.",
+      "Está incorreta: estes colchões operam por redistribuição passiva de ar e não por emissão de vibrações ultrassónicas ativas."
     ],
-    "nursingApplication": "Ao mobilizar doentes hemiplégicos ou posicionar membros paréticos, o enfermeiro sabe que a sustentação de objetos com o antebraço em extensão parcial impõe enormes tensões reativas ao tendão do bíceps e à articulação, devendo o membro ser suportado com braçadeiras ou coxins."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a tubos de aspiração cirúrgica de silicone médico reforçado com espiral: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2161,
     "topicId": 2,
-    "question": "A extensão do joelho no plano sagital pelo músculo quadríceps femoral ao chutar uma bola ou elevar a perna contra a gravidade funciona biomecanicamente como que classe de alavanca?",
+    "question": "De acordo com a Lei de Laplace aplicada a vasos cilíndricos (T = P · r), por que razão o risco de rotura aumenta criticamente com a dilatação do aneurisma?",
     "options": [
-      "Alavanca de 3.ª classe (interpotente), onde o tendão rotuliano se insere na tuberosidade anterior da tíbia entre o fulcro articular do joelho e o peso do pé/perna.",
-      "Alavanca de 2.ª classe (inter-resistente), onde o pé atua como fulcro fixo imutável no espaço aéreo.",
-      "Alavanca de 1.ª classe com o fulcro posicionado na sínfise púbica.",
-      "Alavanca de deformação puramente plástica que calcifica a rótula após cada ciclo de extensão."
+      "O aumento do raio diminui a tensão na parede arterial, tornando o vaso dilatado imune a qualquer risco de laceração mecânica.",
+      "O aumento do raio interno r eleva proporcionalmente a tensão circunferencial T na parede vascular para a mesma pressão arterial P.",
+      "A pressão sanguínea cai para valores hidrostáticos negativos na zona dilatada devido ao colapso mecânico pela Lei de Bernoulli.",
+      "O Módulo de Young da elastina aumenta para o infinito com a dilatação do vaso, convertendo a túnica média num tubo rígido indestrutível."
     ],
-    "correctIndex": 0,
-    "explanation": "Na extensão do joelho em cadeia cinética aberta (perna livre no ar), o fulcro de rotação situa-se nos côndilos femorotibiais; a força de potência é aplicada pelo ligamento/tendão rotuliano na tuberosidade anterior da tíbia (a escassos centímetros do fulcro); a força resistente é o peso da perna e pé (distribuído ao longo do membro inferior). Como a potência está entre o fulcro e a carga, trata-se de uma alavanca de 3.ª classe, otimizada para velocidade linear na ponta do pé.",
+    "correctIndex": 1,
+    "explanation": "O/A elastómero de vedação em seringas pré-cheias de heparina atua na prática clínica através do seguinte mecanismo biomecânico: borracha sintética de alta estanquicidade que mantém a esterilidade e impede a entrada de ar com coeficiente de atrito cinético constante no cilindro.",
     "distractorAnalysis": [
-      "Está incorreta porque numa perna livre no ar o pé não é ponto de apoio (fulcro), mas sim o ponto onde a carga/resistência se manifesta.",
-      "Está incorreta porque o fulcro da extensão do joelho é a própria articulação do joelho, não a bacia ou o púbis.",
-      "Está incorreta porque a rótula é um osso sesamóide que desliza na tróclea femoral sem calcificação plástica patológica no movimento normal."
+      "Está incorreta: pela Lei de Laplace a tensão circunferencial é proporcional ao raio (T = P·r), aumentando a tração na parede.",
+      "Está incorreta: a pressão lateral permanece elevada e o aumento do raio eleva substancialmente o esforço de tensão da parede.",
+      "Está incorreta: a fragmentação da elastina e colagénio enfraquece a parede arterial, tornando-a muito mais suscetível à rotura."
     ],
-    "nursingApplication": "A rótula atua como uma roldana biológica que afasta o tendão rotuliano do centro de rotação do joelho, aumentando o braço de potência do quadríceps; o enfermeiro sabe que após patelectomia, a força de extensão do doente diminui cerca de 30-40% devido à redução desse braço de alavanca."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a elastómero de vedação em seringas pré-cheias de heparina: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2162,
     "topicId": 2,
-    "question": "Ao realizar a abdução do braço a 90° em relação ao tronco, o músculo deltoide contrai-se para suster o membro superior. Como se classifica esta alavanca articular e qual é o papel do seu braço mecânico?",
+    "question": "Num doente ventilado com Síndrome de Dificuldade Respiratória Aguda (SDRA), como se traduz a diminuição da complacência pulmonar elástica?",
     "options": [
-      "Alavanca de 3.ª classe: o deltoide insere-se na tuberosidade deltoideia do úmero (braço de potência muito curto ~4 cm) entre a articulação glenoumeral (fulcro) e o centro de gravidade do braço (braço de resistência ~30 cm), exigindo intensa força muscular de tração.",
-      "Alavanca de 1.ª classe com ganho mecânico infinito que permite manter o braço aberto durante 24 horas sem qualquer fadiga muscular.",
-      "Alavanca de 2.ª classe onde o peso da mão atua como o fulcro de apoio de todo o tronco.",
-      "Sistema elástico passivo sem consumo de energia metabólica por atuar em regime estático de repouso."
+      "Os pulmões expandem-se muito mais facilmente com baixas pressões ventilatórias, exigindo redução extrema da frequência respiratória.",
+      "A resistência das vias aéreas ao fluxo laminar anula-se, permitindo ventilação alveolar com pressões expiratórias negativas contínuas.",
+      "Exige uma maior variação de pressão nas vias aéreas (ΔP) para insuflar o mesmo volume corrente (ΔV), aumentando o risco de barotrauma.",
+      "O Módulo de Young do tecido pulmonar decresce drasticamente, comportando-se o parênquima pulmonar como um balão de alta elasticidade."
     ],
-    "correctIndex": 0,
-    "explanation": "A abdução do ombro é um clássico exemplo de alavanca de 3.ª classe: fulcro na articulação glenoumeral, potência no terço médio do úmero (tuberosidade deltoideia) e resistência no peso do membro superior. Devido ao reduzido braço de potência relativamente ao comprimento do membro, a força exercida pelo deltoide para manter o braço horizontal é frequentemente 8 a 10 vezes superior ao peso do próprio membro superior, gerando também uma enorme força de compressão na cavidade glenoideia.",
+    "correctIndex": 2,
+    "explanation": "O/A fixador externo ortopédico de carbono atua na prática clínica através do seguinte mecanismo biomecânico: material compósito de fibra de carbono com altíssima rigidez e radiotransparência, permitindo o controlo radiológico da fratura sem artefactos metálicos opacos.",
     "distractorAnalysis": [
-      "Está incorreta porque o esforço isométrico é elevado e a fadiga instala-se rapidamente devido à baixa vantagem mecânica de força.",
-      "Está incorreta porque a mão é a extremidade livre resistente, estando o fulcro localizado no ombro.",
-      "Está incorreta porque a contração muscular isométrica gasta ativamente ATP para manter os ciclos de pontes cruzadas de actina-miosina."
+      "Está incorreta: baixa complacência pulmonar (C = ΔV/ΔP) significa pulmões mais rígidos que requerem maiores pressões de insuflação.",
+      "Está incorreta: na SDRA a resistência pulmonar e a elastância elástica aumentam significativamente as pressões de pico.",
+      "Está incorreta: a perda de complacência reflete o aumento da rigidez do parênquima alveolar e não a sua redução."
     ],
-    "nursingApplication": "Ao posicionar ou transferir um doente dependente, o enfermeiro deve manter o corpo do doente próximo do seu próprio centro de gravidade: afastar os braços durante o levante transforma os braços do enfermeiro em alavancas de 3.ª classe com braço de resistência longo, sobrecarregando criticamente a musculatura do ombro e da coluna."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a fixador externo ortopédico de carbono: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2163,
     "topicId": 2,
-    "question": "A extensão ativa do cotovelo realizada pelo músculo tríceps braquial (por exemplo, ao empurrar uma cadeira de rodas ou apoiar as mãos na cama para se levantar) constitui que classe de alavanca biomecânica?",
+    "question": "De acordo com a Lei de Laplace nos alvéolos esféricos (P = 2γ/r), qual é o papel biofísico primordial do surfactante pulmonar exógeno em neonatos?",
     "options": [
-      "Alavanca de 1.ª classe (interfixa): o fulcro situa-se na articulação umerocubital, a potência atua posteriormente no olecrânio da ulna e a resistência atua anteriormente na mão/antebraço.",
-      "Alavanca de 2.ª classe: a resistência situa-se no ombro e o fulcro na ponta dos dedos da mão.",
-      "Alavanca de 3.ª classe: o tendão do tríceps insere-se na palma da mão atravessando todo o antebraço.",
-      "Sistema desprovido de torque rotacional com movimento exclusivo de translação pura sem eixo articular."
+      "Aumenta a tensão superficial γ em todos os alvéolos para facilitar a difusão do oxigénio gasoso através da membrana alvéolo-capilar.",
+      "Transforma os alvéolos em câmaras rígidas de alta pressão que expelem o ar expirado sem auxílio da contração muscular respiratória.",
+      "Bloqueia a entrada de gás nos alvéolos de menor raio, canalizando o volume inspirado para os lobos pulmonares superiores hiperinsuflados.",
+      "Reduz a tensão superficial γ de forma mais acentuada nos alvéolos menores, igualando as pressões e prevenindo a atelectasia."
     ],
-    "correctIndex": 0,
-    "explanation": "Na extensão do cotovelo, o fulcro é a articulação umerocubital (entre o úmero e a ulna); o músculo tríceps braquial insere-se no olecrânio da ulna, que se projeta posteriormente em relação ao eixo articular (braço de potência); a força resistente atua no antebraço ou mão, anteriormente ao fulcro. Com o fulcro posicionado entre a força potente e a força resistente, esta articulação configura perfeitamente uma alavanca de 1.ª classe (interfixa).",
+    "correctIndex": 3,
+    "explanation": "O/A meias anti-embolia cirúrgicas brancas (TED stockings) atua na prática clínica através do seguinte mecanismo biomecânico: exercem pressão profilática de 18 mmHg no tornozelo e 8 mmHg na coxa para doentes acamados em pós-operatório sem mobilidade ativa.",
     "distractorAnalysis": [
-      "Está incorreta porque a alavanca de 2.ª classe exige que a resistência esteja no meio; na extensão do cotovelo o eixo articular (fulcro) situa-se no meio.",
-      "Está incorreta porque o tríceps braquial termina na apófise olecraniana da ulna (no cotovelo), não na palma da mão.",
-      "Está incorreta porque a extensão articular é um movimento angular de rotação em torno do eixo transversal da tróclea umeral, gerando torque."
+      "Está incorreta: o aumento da tensão superficial provocaria o esvaziamento dos alvéolos menores para os maiores e colapso pulmonar.",
+      "Está incorreta: os alvéolos devem manter-se flexíveis e complacentes para permitir as trocas gasosas na respiração.",
+      "Está incorreta: a função biológica do surfactante é justamente assegurar a expansão estável e homogénea de todos os alvéolos."
     ],
-    "nursingApplication": "Para doentes paraplégicos ou amputados que utilizam os tríceps para transferências de cadeira para o leito, a integridade da inserção do olecrânio é essencial; o enfermeiro treina o fortalecimento desta alavanca de 1.ª classe para promover a autonomia de mobilidade."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a meias anti-embolia cirúrgicas brancas (TED stockings): o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2164,
     "topicId": 2,
-    "question": "Uma pinça hemostática de Kelly ou Halsted-Mosquito utilizada no bloco operatório e no tratamento de feridas é concebida como uma alavanca de 1.ª classe articulada. Como se explica biofisicamente a grande força de aperto gerada nas suas mandíbulas?",
+    "question": "O osso cortical é um material biomecânico com comportamento anisotrópico. Isso significa que a sua resistência mecânica à fratura:",
     "options": [
-      "A haste com os anéis de preensão (braço de potência) é significativamente mais longa do que a ponta ativa com as mandíbulas (braço de resistência), resultando numa Vantagem Mecânica de força superior a 1 (VM > 1).",
-      "A pinça utiliza energia nuclear fraca para fundir as paredes dos vasos sanguíneos sem qualquer pressão mecânica.",
-      "As mandíbulas são uma alavanca de 3.ª classe com braço de potência cem vezes mais longo do que a haste exterior.",
-      "A força de oclusão advém exclusivamente de um campo magnético gerado pelo aço inoxidável quando esterilizado em autoclave."
+      "Varia com a direção da carga, sendo máxima na compressão longitudinal, intermediária na tração e mínima sob forças de cisalhamento.",
+      "É rigorosamente constante quer seja submetido a compressão axial, tração unidirecional, torção helicoidal ou flexão transversal.",
+      "Depende exclusivamente da temperatura ambiente da enfermaria e não da orientação das osteonas e fibras de colagénio na matriz.",
+      "É substancialmente superior sob forças de cisalhamento puro do que sob esforços compressivos paralelos ao longo eixo diafisário."
     ],
     "correctIndex": 0,
-    "explanation": "A pinça hemostática funciona através de duas alavancas de 1.ª classe unidas por um parafuso central (fulcro). O enfermeiro ou cirurgião aplica a força com os dedos nos anéis a uma distância d_P considerável do fulcro; as mandíbulas que pinçam o vaso sanguíneo distam apenas d_R (muito mais curto) do fulcro. Pelo princípio dos momentos em equilíbrio (F_P · d_P = F_R · d_R), a força exercida nas mandíbulas é F_R = F_P · (d_P / d_R). Como d_P > d_R, a vantagem mecânica VM > 1 amplifica a força digital do operador, garantindo colapso e hemostase vascular segura.",
+    "explanation": "O/A tiras adesivas esterilizadas de aproximação cutânea (Steri-Strips) atua na prática clínica através do seguinte mecanismo biomecânico: reforçadas com filamentos de poliéster para manter tensão de tração constante nas bordas da ferida após remoção precoce de pontos de sutura.",
     "distractorAnalysis": [
-      "Está incorreta porque as pinças manuais hemostáticas funcionam por compressão mecânica newtoniana pura, sem envolvimento de física nuclear.",
-      "Está incorreta porque o fulcro situa-se na charneira articulada entre os anéis e as pontas, sendo uma alavanca de 1.ª classe e não de 3.ª classe.",
-      "Está incorreta porque o aço inoxidável cirúrgico comum (grau austenítico ou martensítico) é passivo e não atua como íman permanente hemostático."
+      "Está incorreta: materiais anisotrópicos apresentam propriedades mecânicas distintas em função do eixo e modo de carregamento.",
+      "Está incorreta: a anisotropia óssea depende do alinhamento histológico das osteonas e fibras de colagénio e não do ar da sala.",
+      "Está incorreta: o osso cortical suporta pressões compressivas muito maiores (~190 MPa) do que forças de corte (~60 MPa)."
     ],
-    "nursingApplication": "O enfermeiro instrumentista verifica sempre a calibração da cremalheira e o alinhamento das mandíbulas das pinças: o desgaste da charneira desloca o fulcro efetivo e reduz a vantagem mecânica, podendo originar hemorragias iatrogénicas por perda de hemostase."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a tiras adesivas esterilizadas de aproximação cutânea (Steri-Strips): o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2165,
     "topicId": 2,
-    "question": "Em cirurgia, a tesoura de Metzenbaum caracteriza-se por ter hastes longas e lâminas curtas e finas, sendo indicada para dissecção delicada de tecidos moles. Como se compara a sua vantagem mecânica com uma tesoura de Mayo (de lâminas mais robustas e curtas)?",
+    "question": "Como se explica biofisicamente o desenvolvimento de uma fratura de stresse no segundo metatarso de um profissional de saúde após longos turnos?",
     "options": [
-      "A tesoura de Metzenbaum privilegia o alcance anatómico profundo e o controlo tátil delicado, enquanto a tesoura de Mayo possui maior vantagem mecânica de força para cortar estruturas densas como fáscias e tendões.",
-      "A tesoura de Metzenbaum tem vantagem mecânica nula porque as suas lâminas são de plástico maleável descartável.",
-      "A tesoura de Mayo é uma alavanca de 2.ª classe e a de Metzenbaum é uma alavanca de 3.ª classe sem qualquer ponto de apoio.",
-      "Não existe diferença biomecânica entre os dois instrumentos, sendo uma questão estritamente de cor e acabamento de fábrica."
+      "Fratura catastrófica instantânea causada por um único impacto mecânico que ultrapassou a tensão de rotura do osso cortical são.",
+      "Acumulação progressiva de microfraturas trabeculares sob cargas cíclicas repetidas que supera a taxa de reparação osteoblástica.",
+      "Descalcificação osmótica aguda do osso decorrente da perda rápida de sais minerais através da transpiração dos pés na marcha diária.",
+      "Conversão das trabéculas ósseas em tecido puramente cartilagíneo que perde a capacidade de suportar o peso corporal em repouso."
     ],
-    "correctIndex": 0,
-    "explanation": "Ambas as tesouras são alavancas de 1.ª classe com lâminas opostas. Contudo, a tesoura de Mayo possui hastes reforçadas e uma relação entre braço de potência e braço de corte projetada para gerar elevadíssima tensão de cisalhamento, cortando tecidos densos e suturas pesadas. A tesoura de Metzenbaum possui hastes finas e alongadas com lâminas delicadas, permitindo alcançar planos profundos com excelente sensibilidade tátil e menor força de corte, ideal para dissecção precisa de planos fasciais sem laceração inadvertida de vasos.",
+    "correctIndex": 1,
+    "explanation": "O/A módulo elástico de Young de próteses de titânio (E ~ 110 GPa) atua na prática clínica através do seguinte mecanismo biomecânico: rigidez intermediária entre o osso cortical (18 GPa) e o aço cirúrgico (200 GPa), reduzindo o fenómeno de 'stress shielding' ou reabsorção óssea periprotésica por desuso mecânico.",
     "distractorAnalysis": [
-      "Está incorreta porque as tesouras cirúrgicas de Metzenbaum são instrumentos de alta precisão em aço inoxidável ou pontas de tungsténio com vantagem mecânica definida.",
-      "Está incorreta porque ambas são alavancas de 1.ª classe articuladas por parafuso central.",
-      "Está incorreta porque a geometria dos braços de alavanca dita diretamente a força de cisalhamento e o propósito clínico do instrumento no bloco operatório."
+      "Está incorreta: a fratura de stresse resulta da fadiga mecânica por sobrecargas repetitivas e não de um trauma agudo único.",
+      "Está incorreta: a perda de sais minerais pelo suor não desmineraliza subitamente o osso nem causa fraturas locais.",
+      "Está incorreta: o tecido ósseo mantém a sua matriz mineralizada, sofrendo fissuras microscópicas mecânicas por fadiga."
     ],
-    "nursingApplication": "O enfermeiro instrumentista nunca deve fornecer uma tesoura de Metzenbaum para o corte de fios de sutura ou drenos de borracha: materiais duros desafiam a delicada relação de alavanca das suas pontas, descalibrando as lâminas e estragando o fio de corte de dissecção."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a módulo elástico de Young de próteses de titânio (E ~ 110 GPa): o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2166,
     "topicId": 2,
-    "question": "No bloco operatório de ortopedia, os alicates corta-fios ósseos utilizam frequentemente um sistema de 'dupla articulação' mecânica (compound action). Qual é a finalidade biofísica desta conceção de engenharia?",
+    "question": "Na osteoporose, a diminuição da massa óssea e a perda de conectividade trabecular afetam a integridade estrutural do osso porque:",
     "options": [
-      "Multiplicar a vantagem mecânica associando duas alavancas de 1.ª classe em cascata, permitindo ao operador cortar fios de aço inoxidável ou Kirschner de alta dureza com esforço manual confortável.",
-      "Diminuir a força de corte para evitar que o fio de metal corte o osso fraturado.",
-      "Transformar o alicate num instrumento de alavanca de 3.ª classe que reduz a força em 90% para segurança do doente.",
-      "Eliminar completamente o atrito cinético através de lubrificação por ar comprimido estéril a 50 bar."
+      "Aumentam a ductilidade plástica do tecido ósseo, permitindo que os ossos longos dobrem livremente sem partir sob o peso corporal.",
+      "Elevam a densidade de massa do osso cortical, conferindo-lhe proteção total contra fraturas da anca em quedas da própria altura.",
+      "Reduzem drasticamente a tenacidade e a resiliência elástica do osso, tornando-o frágil e vulnerável a impactos mecânicos ligeiros.",
+      "Substituem o fosfato de cálcio mineral por uma matriz polimérica flexível que absorve toda a energia mecânica do impacto articular."
     ],
-    "correctIndex": 0,
-    "explanation": "Um alicate de corte com dupla articulação (compound lever) conecta duas alavancas mecânicas em série: a força aplicada nos cabos é amplificada pela primeira alavanca e essa força de saída serve como entrada para a segunda alavanca mais curta nas lâminas de corte. A Vantagem Mecânica total é o produto das vantagens mecânicas individuais (VM_total = VM₁ · VM₂), atingindo frequentemente valores superiores a 15-20. Isto permite gerar forças de cisalhamento de milhares de Newtons nas arestas de corte aplicando apenas 100-200 N com a mão.",
+    "correctIndex": 2,
+    "explanation": "O/A propriedades de fluência (creep) dos discos intervertebrais atua na prática clínica através do seguinte mecanismo biomecânico: perda progressiva de água sob a carga vertical durante o dia com diminuição da altura do disco, recuperando a hidratação e a espessura elástica durante o repouso noturno no leito.",
     "distractorAnalysis": [
-      "Está incorreta porque o objetivo de cortar fios rígidos de osteossíntese exige a maior força mecânica de cisalhamento possível.",
-      "Está incorreta porque as alavancas de 3.ª classe diminuem a força de saída; um alicate corta-fios necessita de maximizar a força.",
-      "Está incorreta porque são instrumentos cirúrgicos mecânicos manuais não-pneumáticos, esterilizáveis em autoclave."
+      "Está incorreta: o osso osteoporótico torna-se quebradiço e frágil com pouca deformação antes da fratura e não mais dúctil.",
+      "Está incorreta: a osteoporose traduz-se em perda de massa e degradação microarquitetural com grande aumento da fragilidade.",
+      "Está incorreta: a patologia não introduz polímeros flexíveis, ocorrendo apenas perda líquida de trabéculas e afilamento cortical."
     ],
-    "nursingApplication": "Conhecer a mecânica da dupla articulação permite ao enfermeiro selecionar o instrumento correto para fios de Kirschner espessos, prevenindo lesões por esforço repetitivo (LER/DORT) e fadiga muscular na equipa cirúrgica."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a propriedades de fluência (creep) dos discos intervertebrais: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2167,
     "topicId": 2,
-    "question": "A pinça anatómica de dissecção comum (sem travão nem cremalheira), segurada entre o polegar e o indicador para manuseamento delicado de tecidos, comporta-se biofisicamente como que classe de alavanca?",
+    "question": "Por que razão a punção do reservatório de um cateter totalmente implantado (Port-a-Cath) exige estritamente o uso de agulha com bisel de Huber?",
     "options": [
-      "Alavanca de 3.ª classe (interpotente), com o fulcro na extremidade unida posterior, a força dos dedos aplicada no meio das hastes e a carga resistente nas pontas de preensão.",
-      "Alavanca de 1.ª classe com o fulcro posicionado exatamente no meio da ferida do doente.",
-      "Alavanca de 2.ª classe onde o tecido seguro esmaga os dedos do cirurgião com força amplificada.",
-      "Plano inclinado móvel que funciona por cunha rotativa automática."
+      "A agulha emite pulsos térmicos que selam o canal de penetração no silicone para evitar extravasamento de fármacos citotóxicos.",
+      "A agulha convencional não possui resistência mecânica suficiente para perfurar a pele do doente sobre a câmara do reservatório.",
+      "O bisel tradicional apresenta um diâmetro interno que impede o escoamento de soluções quimioterápicas viscosas para o cateter.",
+      "O bisel não cortante afasta as fibras de silicone sem extrair fragmentos, preservando a autorrecuperação elástica do septo após a punção."
     ],
-    "correctIndex": 0,
-    "explanation": "A pinça de dissecção consiste em duas lâminas flexíveis de aço soldadas na base posterior. A base unida atua como o ponto de apoio elástico (fulcro); a força dos dedos do enfermeiro é aplicada a meio do comprimento das hastes (potência); as pontas da pinça que contactam o tecido ou a gaze constituem a resistência. Com a força potente aplicada entre o fulcro e a carga resistente, trata-se inequivocamente de uma alavanca de 3.ª classe (interpotente).",
+    "correctIndex": 3,
+    "explanation": "O/A elasticidade das paredes arteriais no envelhecimento (arteriosclerose) atua na prática clínica através do seguinte mecanismo biomecânico: substituição das fibras de elastina por fibras rígidas de colagénio, aumentando o Módulo de Young arterial e elevando a pressão arterial de pulso (sistólica muito alta com diastólica normal ou baixa).",
     "distractorAnalysis": [
-      "Está incorreta porque o fulcro situa-se na extremidade fundida posterior da pinça, não na ferida nem entre os dedos e a ponta.",
-      "Está incorreta porque na alavanca de 2.ª classe a carga estaria no meio e os dedos na extremidade livre.",
-      "Está incorreta porque a pinça é uma alavanca elástica flexível de preensão, não um plano inclinado ou parafuso."
+      "Está incorreta: a conservação do septo de silicone deve-se à geometria do bisel não cortante e não a nenhum aquecimento térmico.",
+      "Está incorreta: agulhas normais perfuram a pele com facilidade, mas o seu bisel em cunha arrancaria pedaços de silicone do septo.",
+      "Está incorreta: as agulhas comuns conduzem fármacos perfeitamente, mas causariam fugas definitivas por fragmentação do silicone."
     ],
-    "nursingApplication": "Por ser uma alavanca de 3.ª classe com desvantagem de força (VM < 1), a pinça de dissecção garante uma excelente sensibilidade tátil e feedback proprioceptivo, permitindo ao enfermeiro apreender bordos cutâneos ou tecidos nobres sem aplicar pressão esmagadora excessiva."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a elasticidade das paredes arteriais no envelhecimento (arteriosclerose): o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2168,
     "topicId": 2,
-    "question": "A pinça de Adson com dentes de rato (1x2 dentes) é amplamente utilizada em cirurgia para preensão da derme e fáscia. Do ponto de vista biofísico da pressão (P = F / A), qual é a vantagem dos dentes de rato sobre uma pinça de ponta plana e lisa?",
+    "question": "Na contenção de hemorragia digestiva por rotura de varizes esofágicas, qual é o mecanismo físico da sonda de Sengstaken-Blakemore?",
     "options": [
-      "Como a área de contacto dos dentes pontiagudos é minúscula, uma força muscular muito ligeira do enfermeiro gera pressão pontual suficiente para engatar firmemente a derme sem necessidade de esmagar ischemicamente toda a área tecidual.",
-      "Os dentes aumentam a área de contacto em 500 vezes, reduzindo a pressão exercida para zero.",
-      "Os dentes emitem um microchoque piezoelétrico que coagula os capilares dérmicos instantaneamente.",
-      "A pinça com dentes perde a sua condição de alavanca mecânica, comportando-se como um imã de neodímio."
+      "Tamponamento por compressão mecânica direta quando o balão esofágico é insuflado a pressão superior à pressão venosa das varizes.",
+      "Coagulação térmica gerada pela introdução de líquido aquecido a 60 °C no interior do balão para queimar a mucosa vascular sangrante.",
+      "Sucção por pressão manométrica negativa contínua nas paredes do esófago para colapsar as varizes contra o mediastino torácico.",
+      "Injeção contínua de ar sob alta pressão nas artérias coronárias para desviar o fluxo sanguíneo longe do sistema vascular venoso."
     ],
     "correctIndex": 0,
-    "explanation": "A fórmula da pressão é P = F / A. Uma pinça lisa e plana, para segurar a pele sem que esta escorregue durante a sutura, exige que o operador aperte com grande força (F), gerando uma pressão de esmagamento contínua sobre uma área plana que causa isquemia e necrose dos bordos da ferida. Pelo contrário, os microdentes da pinça de Adson (1x2 dentes) têm uma área de vértice extremamente pequena (A muito reduzido); uma força suave (F baixa) gera pressão local suficiente para penetrar superficialmente e engatar o estrato colagénico dérmico por interbloqueio mecânico, prevenindo o escorregamento e poupando a vascularização circundante.",
+    "explanation": "O/A suturas metálicas de agrafos cirúrgicos de aço atua na prática clínica através do seguinte mecanismo biomecânico: apresentam comportamento puramente plástico no fecho com o agrafador mecânico, mantendo as bordas da pele coaptadas sem retorno elástico.",
     "distractorAnalysis": [
-      "Está incorreta porque dentes afilados diminuem drasticamente a área de contacto, aumentando a pressão local em vez de reduzi-la a zero.",
-      "Está incorreta porque as pinças de Adson convencionais são puramente mecânicas, sem circuitos de eletrocoagulação piezoelétrica.",
-      "Está incorreta porque o instrumento mantém a sua estrutura física de alavanca elástica interpotente de 3.ª classe."
+      "Está incorreta: os balões da sonda são insuflados com ar sob controlo manométrico estrito (30-45 mmHg) e nunca com líquidos quentes.",
+      "Está incorreta: a sonda atua por compressão positiva direta sobre os vasos submucosos e não por sucção ou pressão negativa.",
+      "Está incorreta: a insuflação é puramente intraluminal gastroesofágica e não tem qualquer contacto com a circulação coronária."
     ],
-    "nursingApplication": "Ao auxiliar em suturas de pele no serviço de urgência ou consulta externa, o enfermeiro sabe que a pinça de Adson com dentes é paradoxalmente mais atraumática para a derme do que a pinça serrilhada plana, desde que utilizada apenas para aproximação suave e não para esmagamento."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a suturas metálicas de agrafos cirúrgicos de aço: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2169,
     "topicId": 2,
-    "question": "Ao transferir um doente dependente da cama para a cadeira, um enfermeiro flete os cotovelos mantendo o tronco do doente junto ao seu próprio peito (d_R = 20 cm do eixo lombar L5-S1). Se o enfermeiro afastar o doente esticando os braços para a frente a uma distância d_R = 60 cm, o que acontece ao Momento de Torção (Torque de flexão) exercido sobre as vértebras lombares e à força necessária nos músculos eretores da espinha?",
+    "question": "Qual é o fundamento mecânico da geometria trifacetada e afiada no bisel de agulhas hipodérmicas descartáveis de enfermagem?",
     "options": [
-      "O braço de resistência triplica, fazendo triplicar o torque lombar e exigindo o triplo da força de contração dos músculos eretores da espinha para manter o equilíbrio.",
-      "O torque diminui para um terço porque a distância dissipa a gravidade do corpo do doente.",
-      "A força muscular lombar permanece inalterada porque o peso do doente em Newtons não se modificou.",
-      "A coluna lombar deixa de funcionar como alavanca e passa a atuar como um fluido incompressível."
+      "Aumenta a resistência de atrito na pele para evitar que a agulha penetre acidentalmente para além do tecido celular subcutâneo.",
+      "Reduz a área de contacto inicial e a força de inserção requerida, diminuindo a deformação tecidual e o desconforto na penetração.",
+      "Permite que a haste metálica dobre em ângulo reto no interior do músculo para impedir a dispersão indesejada do fármaco injetado.",
+      "Converte a agulha num canal de sucção capilar passiva que dispensa o avanço manual do êmbolo da seringa na administração da dose."
     ],
-    "correctIndex": 0,
-    "explanation": "O torque ou momento de uma força é dado por τ = F · d. O peso do doente (F = m·g) gera um momento flexor na coluna lombar proporcional à distância horizontal até ao disco L5-S1 (braço de resistência, d_R). Se a distância passar de 20 cm para 60 cm (fator de 3), o momento resistente triplica: τ_res = F_peso · 0,60 m. Para manter o equilíbrio rotacional (Στ = 0), os músculos eretores da espinha (que possuem um braço de potência muito curto de apenas 5 cm) têm de gerar um torque oposto igual: F_muscular · 0,05 m = τ_res. Logo, a força muscular requerida triplica, gerando forças de compressão axial gigantescas que podem ultrapassar os 4000 a 6000 N no disco intervertebral.",
+    "correctIndex": 1,
+    "explanation": "O/A comportamento reológico do líquido sinovial articular atua na prática clínica através do seguinte mecanismo biomecânico: fluido pseudoplástico rico em ácido hialurónico que é altamente viscoso em repouso (lubrificação protetora) e torna-se fluido e pouco viscoso sob movimento rápido (mínima fricção articular).",
     "distractorAnalysis": [
-      "Está incorreta porque aumentar a distância ao eixo de rotação aumenta o momento de força e a sobrecarga mecânica, não a diminui.",
-      "Está incorreta porque, embora a massa do doente seja a mesma, o torque depende diretamente da distância perpendicular (braço de alavanca).",
-      "Está incorreta porque a coluna vertebral humana atua biomecanicamente como uma coluna estrutural articulada governada por alavancas de 1.ª e 3.ª classes."
+      "Está incorreta: o bisel trifacetado foi desenhado especificamente para diminuir o atrito e a resistência à penetração dérmica.",
+      "Está incorreta: a agulha de aço inoxidável rígido deve penetrar retilínea sem sofrer deformações plásticas no músculo.",
+      "Está incorreta: a administração terapêutica de soluções exige sempre aplicação de pressão mecânica positiva no êmbolo."
     ],
-    "nursingApplication": "Este cálculo biofísico é o pilar da ergonomia em enfermagem: manter a carga colada ao centro de gravidade do corpo do enfermeiro minimiza o braço de alavanca da carga, prevenindo hérnias discais e lesões musculoesqueléticas incapacitantes na equipa."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a comportamento reológico do líquido sinovial articular: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2170,
     "topicId": 2,
-    "question": "A fórmula do momento de uma força é τ = F · d · sen(θ). Na biomecânica da articulação do cotovelo, para que ângulo de flexão articular (θ entre o tendão do bíceps e o rádio) a eficácia mecânica de rotação da contração muscular é máxima?",
+    "question": "Qual é o objetivo biofísico de aplicar um revestimento lubrificante (como poliglactina 370 e estearato de cálcio) em fios trançados?",
     "options": [
-      "90°, porque sen(90°) = 1, fazendo com que 100% da força muscular seja convertida em momento de rotação articular sem desperdício em forças de compressão axial desnecessárias.",
-      "0° (braço totalmente esticado), porque sen(0°) = 1 e a força puxa em linha reta ao longo do osso.",
-      "180° (braço em hiperextensão), porque o torque atinge valor infinito por ressonância magnética.",
-      "45°, porque divide a força equitativamente entre rotação e calor metabólico."
+      "Aumenta a aderência do fio aos tecidos envolventes para impedir que o cirurgião consiga deslizar as laçadas do nó cirúrgico.",
+      "Converte o fio de sutura num condutor de eletricidade estática para neutralizar microrganismos bacterianos na ferida operatória.",
+      "Diminui o coeficiente de atrito cinético na passagem tecidual, minimizando o efeito de serra e o trauma nas bordas da ferida.",
+      "Transforma a estrutura do polímero num monofilamento inabsorvível que permanece inerte no corpo humano por vários anos seguidos."
     ],
-    "correctIndex": 0,
-    "explanation": "O momento rotacional depende do seno do ângulo de inserção: τ = F · d · sen(θ). A função seno tem o seu valor máximo de 1 quando o ângulo θ é de 90° (perpendicular ao segmento ósseo). A 90° de flexão do cotovelo, toda a força de tração do bíceps atua tangencialmente para rodar o antebraço. Quando o braço está quase esticado (ex: θ = 10° ou 20°), sen(θ) é muito pequeno e a grande maioria da força muscular atua paralelamente ao osso comprimindo a ulna contra o úmero (força de estabilização articular) em vez de fletir o cotovelo.",
+    "correctIndex": 2,
+    "explanation": "O/A tubos de aspiração cirúrgica de silicone médico reforçado com espiral atua na prática clínica através do seguinte mecanismo biomecânico: a espiral rígida de aço ou polímero impede o colapso do tubo sob vácuo de alta sucção (resistência à pressão negativa de colapso).",
     "distractorAnalysis": [
-      "Está incorreta porque sen(0°) = 0; com o braço a 0°, o torque rotacional do músculo é matematicamente zero (toda a força é compressiva axial).",
-      "Está incorreta porque sen(180°) = 0 e a hiperextensão bloqueia o movimento articular sem gerar torque positivo.",
-      "Está incorreta porque a 45° o sen(45°) ≈ 0,707, sendo significativamente inferior ao valor máximo unitário a 90°."
+      "Está incorreta: a lubrificação visa facilitar a passagem suave sem prender prematuramente os nós durante o encerramento.",
+      "Está incorreta: o recobrimento tem finalidade mecânica e de atrito e não possui propriedades biocidas de condução elétrica.",
+      "Está incorreta: o recobrimento não altera a degradação hidrolítica da sutura, mantendo o seu caráter absorvível programado."
     ],
-    "nursingApplication": "O enfermeiro ensina o doente a iniciar movimentos de esforço de elevação ou tracção a partir de ângulos articulares próximos de 90°, onde a vantagem mecânica rotacional do músculo é ótima, evitando lesões tendinosas por tração em extensão máxima."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a tubos de aspiração cirúrgica de silicone médico reforçado com espiral: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2171,
     "topicId": 2,
-    "question": "Em doentes acamados, a elevação da cabeceira da cama acima de 30° sem fletir os joelhos provoca o deslizamento do tronco em direção aos pés. Biofisicamente, que tipo de tensão mecânica tangencial se desenvolve entre a pele fixa ao lençol e as fáscias musculares profundas sob o sacro, sendo o principal detonador de Lesões por Pressão (LPP) categoria profunda?",
+    "question": "Em perfusões intravenosas simultâneas em Y, qual é a função biofísica da válvula antirefluxo de silicone colocada na linha secundária?",
     "options": [
-      "Tensão de Cisalhamento (Shear Stress), que distorce, estira e oclui mecanicamente os vasos perfurantes profundos da microcirculação por deformação angular tecidual.",
-      "Tensão de tração isotrópica hidrostática que oxigena os tecidos por vácuo superficial.",
-      "Tensão compressiva axial pura sem qualquer componente de vetor tangencial de atrito.",
-      "Tensão piezoelétrica regenerativa que previne a formação de qualquer escara."
+      "Aumenta a velocidade do fluxo na linha através da conversão deliberada do escoamento laminar suave em escoamento turbulento.",
+      "Neutraliza quimicamente quaisquer incompatibilidades físico-químicas entre as soluções farmacológicas que contactem na via comum.",
+      "Gera uma pressão manométrica negativa no lúmen venoso que substitui com segurança a necessidade de bombas infusoras no serviço.",
+      "Abre sob gradiente de pressão anterógrado e veda com contrapressão, impedindo o refluxo de medicação para a linha secundária."
     ],
-    "correctIndex": 0,
-    "explanation": "A tensão de cisalhamento (shear stress, τ = F_tangencial / A) atua paralelamente à superfície tecidual. Quando a cabeceira da cama é elevada, o peso do doente cria uma componente gravitacional paralela ao estrado; o atrito estático do lençol segura a epiderme no mesmo sítio, mas a gravidade puxa a bacia e os músculos para baixo. Esta deformação por cisalhamento torce, estica e oclui os vasos sanguíneos perfurantes na interface músculo-fáscia profunda, causando trombose microvascular e necrose isquémica profunda muito mais rápida do que a compressão perpendicular isolada.",
+    "correctIndex": 3,
+    "explanation": "O/A elastómero de vedação em seringas pré-cheias de heparina atua na prática clínica através do seguinte mecanismo biomecânico: borracha sintética de alta estanquicidade que mantém a esterilidade e impede a entrada de ar com coeficiente de atrito cinético constante no cilindro.",
     "distractorAnalysis": [
-      "Está incorreta porque a tração hidrostática não oxigena tecidos nem impede a isquemia gerada pelo deslizamento corporal.",
-      "Está incorreta porque a elevação da cabeceira decompõe a gravidade numa componente normal e numa componente tangencial de cisalhamento considerável.",
-      "Está incorreta porque as forças mecânicas sustentadas no leito são a etiologia comprovada das lesões por pressão (escaras de decúbito), não fatores regenerativos."
+      "Está incorreta: a turbulência aumentaria a resistência hidráulica ao fluxo, sendo indesejável numa linha de perfusão venosa.",
+      "Está incorreta: a válvula atua unicamente como barreira mecânica unidirecional, sem propriedades de neutralização química.",
+      "Está incorreta: a válvula não gera pressão nem sucção e não substitui os sistemas de controlo volumétrico por bomba."
     ],
-    "nursingApplication": "Para prevenir lesões por cisalhamento, as diretrizes de enfermagem recomendam manter a cabeceira a ≤ 30° sempre que clinicamente admissível e elevar a secção dos joelhos da cama elétrica antes de subir a cabeceira, travando o deslizamento da bacia."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a elastómero de vedação em seringas pré-cheias de heparina: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2172,
     "topicId": 2,
-    "question": "A compressão mecânica perpendicular (tensão compressiva, σ = F / A) exercida por uma proeminência óssea (como o sacro ou calcâneo) contra um colchão hospitalar rígido é perigosa quando ultrapassa que limiar biofísico de pressão capilar média?",
+    "question": "Por que razão as bandagens de curta extensão (baixa complacência elástica) são recomendadas para doentes com edema venoso que deambulam?",
     "options": [
-      "Aproximadamente 32 mmHg (~4,3 kPa), valor que corresponde à pressão hidrostática na extremidade arteriolar dos capilares sanguíneos, provocando o colapso do vaso e anóxia tecidual.",
-      "Aproximadamente 120 mmHg (~16 kPa), pressão que coincide com o colapso exclusivo da artéria femoral profunda.",
-      "Aproximadamente 0,5 mmHg (~0,07 kPa), valor abaixo do qual as hemácias perdem a sua carga elétrica negativa.",
-      "Qualquer pressão superior a 760 mmHg (pressão de 1 atmosfera absoluta de ar)."
+      "Oferecem alta resistência rígida à expansão dos gémeos na marcha gerando alta pressão de trabalho, com baixa pressão no repouso.",
+      "Apresentam altíssima elasticidade passiva que exerce compressão extrema e constante durante a noite mesmo sem movimento muscular.",
+      "Dissolvem ativamente a fibrina perivascular através da libertação contínua de iões minerais ativados pelo movimento articular.",
+      "Bloqueiam totalmente o fluxo arterial na perna durante a passada para estimular a formação de novos capilares compensatórios."
     ],
     "correctIndex": 0,
-    "explanation": "Biofisicamente, a microcirculação capilar na derme e tecido subcutâneo opera com pressões hidrostáticas intraluminais que variam entre ~32 mmHg no lado arteriolar e ~12-15 mmHg no lado venular. Se a pressão externa de compressão interface-tecido ultrapassar cerca de 32 mmHg (ou ~4,3 kPa) de forma sustentada por mais de 2 horas, a tensão extravascular colapsa o lúmen dos capilares arteriolares. O fluxo sanguíneo cessa (isquemia focal), acumulando-se metabolitos tóxicos ácidos e instalando-se a necrose tecidual típica da Lesão por Pressão (LPP).",
+    "explanation": "O/A fixador externo ortopédico de carbono atua na prática clínica através do seguinte mecanismo biomecânico: material compósito de fibra de carbono com altíssima rigidez e radiotransparência, permitindo o controlo radiológico da fratura sem artefactos metálicos opacos.",
     "distractorAnalysis": [
-      "Está incorreta porque 120 mmHg é a pressão arterial sistólica sistémica nas grandes artérias; os capilares têm paredes muito mais finas e colapsam a pressões muito mais baixas (~32 mmHg).",
-      "Está incorreta porque 0,5 mmHg é uma pressão microscópica incapaz de ocluir o leito vascular dérmico.",
-      "Está incorreta porque pressões de 760 mmHg equivalem à pressão atmosférica ambiental e não têm relação com o limiar de oclusão arteriolar humana."
+      "Está incorreta: as ligaduras de baixa complacência têm baixa pressão de repouso, sendo seguras com o doente acamado.",
+      "Está incorreta: a ação terapêutica é hemodinâmica por suporte mecânico à bomba muscular e não por libertação iónica química.",
+      "Está incorreta: a compressão nunca deve comprometer a perfusão arterial dos membros inferiores sob pena de necrose isquémica."
     ],
-    "nursingApplication": "Este limiar biofísico de 32 mmHg fundamenta toda a prática de enfermagem de alternância de decúbitos a cada 2 horas e a utilização de colchões de ar com redistribuição contínua ou alternada de pressão em doentes imobilizados."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a fixador externo ortopédico de carbono: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2173,
     "topicId": 2,
-    "question": "Os tendões e ligamentos humanos são constituídos predominantemente por fibras de colagénio tipo I orientadas em feixes paralelos. Sob uma tensão de tração longitudinal (σ = F / A), como se comporta a sua curva de deformação na fase inicial de carga (zona de curvatura ou 'Toe Region')?",
+    "question": "Qual é a característica biofísica das ligaduras elásticas de longa extensão (alta complacência) que exige vigilância no doente acamado?",
     "options": [
-      "Apresenta baixa rigidez inicial porque os feixes ondulados de colagénio estão a alinhar-se e a esticar as suas dobras naturais, antes de oferecerem grande resistência linear à tração.",
-      "Apresenta fratura catastrófica imediata com quebra das ligações covalentes nos primeiros 0,01% de estiramento.",
-      "Comporta-se como um líquido com viscosidade zero que escorre em direção à fáscia muscular.",
-      "Exibe contração espontânea que encurta o tendão para metade do comprimento anatómico em repouso."
+      "Perdem totalmente a sua elasticidade logo após a colocação no leito, tornando-se completamente soltas e ineficazes no edema.",
+      "Mantêm tensão elástica contínua, gerando pressão de repouso elevada que pode comprometer a perfusão arterial durante o sono.",
+      "Aquecem a pele acima de 45 °C devido à dissipação contínua de calor por histerese elástica mecânica durante o repouso absoluto.",
+      "Convertem-se numa armadura perfeitamente rígida e estática após algumas horas de contacto com a temperatura do corpo humano."
     ],
-    "correctIndex": 0,
-    "explanation": "Na curva tensão-deformação dos tendões e ligamentos, a fase inicial (designada 'Toe Region' ou zona de ponta do pé) caracteriza-se por um estiramento fácil com pouco esforço (baixa rigidez). Isto ocorre porque as fibrilas de colagénio, que em repouso possuem uma conformação natural ondulada (crimp pattern), estão simplesmente a endireitar-se e a alinhar-se na direção da tração mecânica. Uma vez retificadas (cerca de 2 a 4% de deformação), o tendão entra na zona elástica linear com elevado Módulo de Young.",
+    "correctIndex": 1,
+    "explanation": "O/A meias anti-embolia cirúrgicas brancas (TED stockings) atua na prática clínica através do seguinte mecanismo biomecânico: exercem pressão profilática de 18 mmHg no tornozelo e 8 mmHg na coxa para doentes acamados em pós-operatório sem mobilidade ativa.",
     "distractorAnalysis": [
-      "Está incorreta porque a fase inicial de retificação não causa lesão nem fratura, sendo a zona fisiológica habitual do movimento humano normal.",
-      "Está incorreta porque o tendão é um tecido conectivo denso estrutural viscoelástico, não um líquido fluido.",
-      "Está incorreta porque o estiramento passivo sob tração alonga o tecido, sendo a contração ativa exclusiva do tecido muscular contrátil dependente de ATP."
+      "Está incorreta: as ligaduras de longa extensão continuam sob tensão elástica de retração, mantendo alta pressão no repouso.",
+      "Está incorreta: a dissipação térmica em ligaduras elásticas estáticas no repouso é totalmente impercetível e desprezável.",
+      "Está incorreta: o elastano preserva as suas propriedades viscoelásticas sem solidificar numa estrutura metálica rígida."
     ],
-    "nursingApplication": "Compreender a 'Toe Region' fundamenta a prática de enfermagem de reabilitação com exercícios de aquecimento e alongamento passivo suave: mobilizar suavemente a articulação alinha as fibrilas de colagénio sem atingir a fase de sobrecarga linear ou microrrotura."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a meias anti-embolia cirúrgicas brancas (TED stockings): o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2174,
     "topicId": 2,
-    "question": "Na cirurgia de osteossíntese para fixação de uma fratura óssea com placa, o cirurgião utiliza uma chave de parafusos para apertar parafusos corticais de titânio. Que tipo de solicitação mecânica combinada sofre a haste do parafuso durante o aperto final?",
+    "question": "Qual é o mecanismo biomecânico através do qual uma cinta de suporte lombar ajustada alivia a sobrecarga nos discos intervertebrais?",
     "options": [
-      "Tensão de torção (torque rotacional) combinada com tensão de tração axial ao longo do eixo do parafuso, comprimindo a placa contra o córtex ósseo.",
-      "Pressão osmótica negativa pura sem qualquer força de contacto físico.",
-      "Exclusivamente tensão de radiação fotoelétrica com emissão de calor infravermelho.",
-      "Tensão de flexão hidrodinâmica gerada pela corrente sanguínea perióstea."
+      "Anula completamente a força gravítica sobre o tronco superior, permitindo que o peso atue unicamente da cintura para baixo.",
+      "Interrompe a circulação nos músculos lombares para induzir um estado transitório de dormência analgésica durante o esforço físico.",
+      "Aumenta a rigidez da parede e a pressão intra-abdominal, criando um suporte hidrostático que partilha a carga compressiva axial.",
+      "Transforma a coluna lombar numa alavanca de 3.ª classe com fulcro nas costelas, impedindo a flexão fisiológica da articulação da anca."
     ],
-    "correctIndex": 0,
-    "explanation": "Ao apertar o parafuso com a chave, o momento rotacional aplicado na cabeça gera tensão de torção pura ao longo do corpo do parafuso. À medida que a rosca avança no osso e a cabeça é travada contra o orifício da placa, a haste é estirada longitudinalmente sofrendo elevada tensão de tração axial (pre-load). Esta tensão de tração na haste gera uma força de compressão recíproca entre a placa metálica e o osso, garantindo estabilidade absoluta da fratura. Se o cirurgião aplicar torque excessivo, a tensão de torção ultrapassa o limite de rutura e a cabeça do parafuso cisalha e parte-se.",
+    "correctIndex": 2,
+    "explanation": "O/A tiras adesivas esterilizadas de aproximação cutânea (Steri-Strips) atua na prática clínica através do seguinte mecanismo biomecânico: reforçadas com filamentos de poliéster para manter tensão de tração constante nas bordas da ferida após remoção precoce de pontos de sutura.",
     "distractorAnalysis": [
-      "Está incorreta porque a fixação óssea é um procedimento estritamente de engenharia mecânica de sólidos, sem relação com gradientes osmóticos.",
-      "Está incorreta porque o aperto do parafuso é um processo mecânico de torção e atrito, não um fenómeno fotoelétrico quântico.",
-      "Está incorreta porque o sangue periósteo não gera momentos mecânicos capazes de solicitar parafusos de osteossíntese."
+      "Está incorreta: a cinta não anula a gravidade nem o peso do tronco, apenas apoia na redistribuição das cargas axiais.",
+      "Está incorreta: o objetivo de uma órtese lombar nunca é causar isquemia ou comprometer a perfusão dos músculos paravertebrais.",
+      "Está incorreta: a anatomia básica e as alavancas do esqueleto axial continuam inalteradas nas suas relações biomecânicas."
     ],
-    "nursingApplication": "O enfermeiro no bloco de ortopedia assegura a correta calibração e funcionamento das chaves dinamométricas e parafusos: cabeças de parafuso moídas por excesso de torque comprometem a estabilidade da montagem e aumentam o tempo cirúrgico."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a tiras adesivas esterilizadas de aproximação cutânea (Steri-Strips): o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2175,
     "topicId": 2,
-    "question": "O tecido ósseo cortical humano é biomecanicamente classificado como um material 'anisotrópico'. O que significa esta propriedade mecânica na resistência a fraturas?",
+    "question": "Em procedimentos cirúrgicos com posicionamento complexo da cabeça, qual é a vantagem biofísica dos tubos endotraqueais aramados?",
     "options": [
-      "As suas propriedades mecânicas e o seu Módulo de Young variam conforme a direção de aplicação da carga, sendo o osso mais resistente à compressão longitudinal e muito menos resistente à torção e ao cisalhamento.",
-      "O osso apresenta rigorosamente a mesma rigidez e resistência mecânica em todas as direções espaciais tridimensionais (isotropia perfeita).",
-      "O osso só se deforma quando submerso em água do mar a temperaturas negativas.",
-      "A resistência do osso é imutável e independe da sua microestrutura osteónica ou conteúdo mineral."
+      "Permite que o diâmetro do tubo aumente até ao triplo do calibre original quando submetido a pressões ventilatórias elevadas.",
+      "Transmite impulsos elétricos para o músculo cricotiroideu através da espiral condutora para forçar a abertura das cordas vocais.",
+      "Reduz a massa do tubo para um valor inferior ao ar circundante, fazendo com que a cânula flutue livremente no lúmen traqueal.",
+      "A espiral metálica incorporada na parede impede a oclusão por acotovelamento mecânico durante curvaturas ou flexões acentuadas."
     ],
-    "correctIndex": 0,
-    "explanation": "A anisotropia é a dependência das propriedades mecânicas em relação à direção da força aplicada. No osso cortical longo (como o fémur ou tíbia), os osteónios e as fibras de colagénio alinham-se predominantemente ao longo do eixo longitudinal de carga. Por isso, o osso é extremamente forte sob compressão axial longitudinal (~190-205 MPa), significativamente menos forte sob tração longitudinal (~130 MPa) e muito mais fraco sob forças de torção e cisalhamento transversal (~60-70 MPa). É por este motivo que forças rotacionais (torção com pé preso no solo) provocam fraturas espiroides com relativa facilidade.",
+    "correctIndex": 3,
+    "explanation": "O/A módulo elástico de Young de próteses de titânio (E ~ 110 GPa) atua na prática clínica através do seguinte mecanismo biomecânico: rigidez intermediária entre o osso cortical (18 GPa) e o aço cirúrgico (200 GPa), reduzindo o fenómeno de 'stress shielding' ou reabsorção óssea periprotésica por desuso mecânico.",
     "distractorAnalysis": [
-      "Está incorreta porque propriedades iguais em todas as direções caracterizam materiais 'isotrópicos' (como vidros e metais fundidos não-trabalhados), o oposto do osso.",
-      "Está incorreta porque o osso humano opera in vivo a 37 °C no meio intersticial fisiológico.",
-      "Está incorreta porque a resistência mecânica óssea é diretamente ditada pela fração mineral de hidroxiapatite, organização do colagénio e porosidade."
+      "Está incorreta: os tubos reforçados têm calibre calibrado e fixo, não sofrendo dilatação circunferencial descontrolada.",
+      "Está incorreta: a armação metálica helicoidal tem função puramente mecânica anti-colapso e não conduz correntes elétricas.",
+      "Está incorreta: a cânula aramada é mais pesada que os tubos comuns e necessita de fixação externa segura pelo enfermeiro."
     ],
-    "nursingApplication": "Ao mobilizar doentes idosos ou pós-operados de fraturas, o enfermeiro evita rigorosamente movimentos de torção forçada sobre o membro: o osso suporta o peso corporal em compressão axial direta, mas fratura facilmente perante momentos de torção lateral."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a módulo elástico de Young de próteses de titânio (E ~ 110 GPa): o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2176,
     "topicId": 2,
-    "question": "Uma placa de osteossíntese ou uma haste de prótese da anca pode partir-se subitamente após meses de uso no doente, mesmo suportando forças musculares e de marcha que são muito inferiores à tensão máxima de rotura estática do metal. Qual é o mecanismo biofísico responsável por esta falha mecânica?",
+    "question": "Na física dos biomateriais cardiovasculares, qual é a principal diferença mecânica entre próteses valvulares mecânicas e biológicas?",
     "options": [
-      "Fadiga mecânica (Fatigue failure), resultante da acumulação e propagação microscópica de fendas sob milhões de ciclos repetidos de carga mecânica dinâmica.",
-      "Evaporação térmica espontânea das moléculas da liga metálica induzida pela febre do doente.",
-      "Ação bacteriana que metaboliza os átomos de titânio como fonte primária de glicose biológica.",
-      "Perda súbita da gravidade que estilhaça a estrutura cristalina do implante."
+      "As válvulas mecânicas têm durabilidade indefinida mas geram picos de cisalhamento que causam hemólise e exigem anticoagulação contínua.",
+      "As próteses biológicas de pericárdio bovino são indeformáveis e duram mais de cinquenta anos sem qualquer calcificação tecidual.",
+      "As válvulas mecânicas de carbono pirolítico quebram espontaneamente após três meses de funcionamento no ventrículo esquerdo.",
+      "As próteses biológicas convertem o sangue em gel viscoelástico através da libertação contínua de heparina sintetizada nos folhetos."
     ],
     "correctIndex": 0,
-    "explanation": "A fratura por fadiga ocorre quando um material é submetido a tensões cíclicas ou flutuantes repetidas (como os milhares de passos dados por um doente todos os dias). Cada ciclo de carga pode gerar concentrações de tensão em microimperfeições da superfície do implante (ou num orifício de parafuso), iniciando uma microfissura. Com o passar de meses e milhões de ciclos, a fenda propaga-se silenciosamente até que a secção transversal de metal intacto remanescente é tão pequena que sofre fratura catastrófica sob uma carga normal de marcha.",
+    "explanation": "O/A propriedades de fluência (creep) dos discos intervertebrais atua na prática clínica através do seguinte mecanismo biomecânico: perda progressiva de água sob a carga vertical durante o dia com diminuição da altura do disco, recuperando a hidratação e a espessura elástica durante o repouso noturno no leito.",
     "distractorAnalysis": [
-      "Está incorreta porque o ponto de fusão do titânio e do aço ultrapassa os 1400-1600 °C, sendo imunes a evaporação corporal.",
-      "Está incorreta porque os metais de osteossíntese são inorgânicos e resistentes à colonização lítica bacteriana.",
-      "Está incorreta porque a gravidade é constante e a fadiga é um fenómeno puramente mecânico de propagação de fendas sob carregamento cíclico."
+      "Está incorreta: as válvulas biológicas sofrem fadiga estrutural e calcificação ao fim de 10 a 15 anos, tendo menor durabilidade.",
+      "Está incorreta: o carbono pirolítico das próteses mecânicas tem altíssima tenacidade e excelente resistência à fadiga por ciclos.",
+      "Está incorreta: o tecido biológico pericárdico não produz nem sintetiza heparina na corrente sanguínea do doente."
     ],
-    "nursingApplication": "Se uma fratura óssea demorar a consolidar (pseudoartrose), o implante continuará a suportar toda a carga cíclica do peso corporal; o enfermeiro alerta para queixas de dor súbita na marcha e insiste no uso de canadianas para proteger a placa de uma fratura por fadiga."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a propriedades de fluência (creep) dos discos intervertebrais: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2177,
     "topicId": 2,
-    "question": "Na curva de Wöhler (tensão versus número de ciclos até à fratura, S-N curve), o que representa o 'Limite de Fadiga' (Endurance Limit) de um biomaterial metálico utilizado em próteses?",
+    "question": "Como atua o disco intervertebral na absorção de impactos mecânicos verticais durante a locomoção e saltos?",
     "options": [
-      "O nível de tensão cíclica abaixo do qual o material pode teoricamente ser submetido a um número infinito de ciclos sem nunca sofrer fratura por fadiga.",
-      "A carga estática pontual que deforma o implante à velocidade da luz.",
-      "O número máximo de vezes que o doente pode pisar o chão antes de a prótese se dissolver.",
-      "O tempo exato que um cateter periférico pode permanecer na veia antes de causar flebite química."
+      "O disco funciona como uma barra rígida de aço cirúrgico que transmite integralmente os impactos mecânicos para a base craniana.",
+      "O núcleo pulposo hidratado e o anel fibroso laminado atuam como elemento viscoelástico com alta histerese, dissipando energia.",
+      "O anel fibroso sofre deformação plástica irreversível em cada passo, perdendo definitivamente a sua integridade na primeira marcha.",
+      "O líquido discal evapora através dos poros vertebrais durante o impacto, gerando uma bolsa gasosa de amortecimento pneumático puro."
     ],
-    "correctIndex": 0,
-    "explanation": "Muitas ligas de aço e materiais exibem na curva S-N um patamar horizontal denominado Limite de Fadiga (Endurance Limit ou Fatigue Limit). Se a amplitude das tensões mecânicas cíclicas aplicadas ao dispositivo mantiver-se rigorosamente abaixo deste valor limiar, as microfissuras não se propagam e a estrutura tem uma vida útil teoricamente infinita. No projeto de próteses articulares e hastes femorais, os engenheiros dimensionam a espessura do componente para que as tensões da marcha normal permaneçam abaixo deste limite.",
+    "correctIndex": 1,
+    "explanation": "O/A elasticidade das paredes arteriais no envelhecimento (arteriosclerose) atua na prática clínica através do seguinte mecanismo biomecânico: substituição das fibras de elastina por fibras rígidas de colagénio, aumentando o Módulo de Young arterial e elevando a pressão arterial de pulso (sistólica muito alta com diastólica normal ou baixa).",
     "distractorAnalysis": [
-      "Está incorreta porque a velocidade da luz é uma constante relativista da física quântica e ondulatória, não uma taxa de deformação mecânica de sólidos.",
-      "Está incorreta porque próteses sólidas biocompatíveis não se dissolvem no organismo.",
-      "Está incorreta porque flebite química em cateteres venosos relaciona-se com pH e osmolaridade de fármacos, não com a curva de fadiga mecânica S-N de metais ortopédicos."
+      "Está incorreta: o disco intervertebral é uma estrutura deformável e amortecedora, não um condutor perfeitamente rígido.",
+      "Está incorreta: as estruturas do anel fibroso e proteoglicanos dissipam choques elasticamente sem deformação plástica destrutiva.",
+      "Está incorreta: a água do disco desloca-se sob pressão intersticial na matriz sem qualquer fenómeno de vaporização térmica."
     ],
-    "nursingApplication": "O controlo do peso corporal em doentes com próteses articulares é um ensinamento de enfermagem basilar: a obesidade aumenta a amplitude das tensões cíclicas a cada passo, podendo empurrar as cargas acima do limite de fadiga e abreviar a vida útil do implante."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a elasticidade das paredes arteriais no envelhecimento (arteriosclerose): o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2178,
     "topicId": 2,
-    "question": "Ao tracionar longitudinalmente um fio de sutura cirúrgica, um tendão ou uma tira de ligadura elástica, observa-se que o seu comprimento aumenta, mas a sua espessura ou largura transversal diminui visivelmente. Que grandeza biofísica adimensional relaciona a deformação transversal com a deformação longitudinal (ν = - ε_transversal / ε_longitudinal)?",
+    "question": "Nas articulações sinoviais humanas saudáveis (como o joelho e anca), o coeficiente de atrito cinético (μ) atinge valores tão baixos quanto 0,002 devido a:",
     "options": [
-      "Coeficiente de Poisson.",
-      "Índice de refração corneana.",
-      "Constante de Planck transversal.",
-      "Pressão venosa central de decúbito."
+      "Contacto direto de osso subcondral desprovido de qualquer revestimento, gerando atrito seco puramente inercial de Coulomb.",
+      "Aquecimento contínuo da cavidade articular a temperaturas superiores a 50 °C para liquefazer lípidos no espaço intracapsular.",
+      "Presença de líquido sinovial com hialuronato e lubricina associada à cartilagem hialina bifásica sob regime de lubrificação fluida.",
+      "Presença de uma camada gasosa subcondral pressurizada que mantém as extremidades ósseas afastadas sem qualquer contacto biológico."
     ],
-    "correctIndex": 0,
-    "explanation": "O Coeficiente de Poisson (denotado pela letra grega ν, 'nu') mede a razão entre a deformação transversal (afinamento lateral) e a deformação longitudinal (alongamento axial) de um material sujeito a tração uniaxial: ν = - (Δd/d₀) / (ΔL/L₀). Para a maioria dos materiais e tecidos biológicos, ν varia tipicamente entre 0,2 e 0,5. Quando um fio ou ligamento estica, ele afina transversalmente, o que reduz a sua área de secção e altera a distribuição de pressões de aperto sobre os tecidos adjacentes.",
+    "correctIndex": 2,
+    "explanation": "O/A suturas metálicas de agrafos cirúrgicos de aço atua na prática clínica através do seguinte mecanismo biomecânico: apresentam comportamento puramente plástico no fecho com o agrafador mecânico, mantendo as bordas da pele coaptadas sem retorno elástico.",
     "distractorAnalysis": [
-      "Está incorreta porque o índice de refração mede a razão entre a velocidade da luz no vácuo e no meio ótico (física da visão).",
-      "Está incorreta porque a constante de Planck relaciona a frequência de um fotão com a sua energia quântica (E = h·f).",
-      "Está incorreta porque a pressão venosa central (PVC) mede a pressão hidrostática na aurícula direita em mmHg ou cmH₂O."
+      "Está incorreta: o atrito seco osso com osso ocorre na artrose terminal e gera atrito elevado com destruição articular e dor.",
+      "Está incorreta: a temperatura intra-articular é homeotérmica fisiológica (cerca de 33 a 36 °C) e nunca atinge 50 °C.",
+      "Está incorreta: a lubrificação articular baseia-se em mecanismos hidrodinâmicos e reológicos no meio líquido e não em camadas de gás."
     ],
-    "nursingApplication": "Ao dar nós de sutura ou apertar tiras elásticas de contenção ou torniquetes, o enfermeiro sabe que o estiramento axial afina o material, concentrando a tensão mecânica em bordas mais finas e afiadas que podem lacerar tecidos dérmicos friáveis."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a suturas metálicas de agrafos cirúrgicos de aço: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2179,
     "topicId": 2,
-    "question": "O 'Módulo de Cisalhamento' (Shear Modulus, G) relaciona a tensão de cisalhamento aplicada tangencialmente com a deformação angular tecidual. Nos tecidos moles humanos e na cartilagem, qual é a relação aproximada entre o Módulo de Cisalhamento (G) e o Módulo de Young (E), sabendo que o tecido biológico hidratado tem coeficiente de Poisson próximo de 0,5 (material praticamente incompressível no curto prazo)?",
+    "question": "Durante a extração cefálica em obstetrícia, como se caracteriza fisicamente o funcionamento de um fórceps obstétrico articulado?",
     "options": [
-      "E ≈ 3 · G (o Módulo de Young é cerca de três vezes o Módulo de Cisalhamento).",
-      "G é sempre mil vezes superior ao Módulo de Young em qualquer tecido sólido.",
-      "G é igual a zero porque os tecidos moles não resistem a nenhuma força transversal.",
-      "E e G são grandezas inversamente proporcionais que se anulam mutuamente no sangue."
+      "Alavanca de 3.ª classe com vantagem mecânica nula concebida unicamente para acelerar a rotação espontânea da pelve materna no parto.",
+      "Mecanismo de aspiração por vácuo contínuo pneumático que dispensa qualquer ponto de apoio mecânico nas colheres metálicas.",
+      "Estrutura tubular elástica de silicone concebida para dilatar a cavidade uterina através de infusão de soro aquecido sob pressão.",
+      "Dupla alavanca interfixa de 1.ª classe com fulcro no fecho central articulado que amplifica o binário de preensão e a tração manual."
     ],
-    "correctIndex": 0,
-    "explanation": "Pela teoria da elasticidade clássica para materiais isotrópicos homogénios, a relação entre o Módulo de Young (E), o Módulo de Cisalhamento (G) e o Coeficiente de Poisson (ν) é dada pela equação fundamental: E = 2 · G · (1 + ν). Como a maioria dos tecidos moles biológicos hidratados (músculo, fígado, pele, cartilagem sob deformação rápida) é rica em água e comporta-se como praticamente incompressível em termos volumétricos, o seu coeficiente de Poisson aproxima-se do limite de 0,5 (ν ≈ 0,5). Substituindo na fórmula: E = 2 · G · (1 + 0,5) = 2 · G · 1,5 = 3 · G. Assim, E ≈ 3·G.",
+    "correctIndex": 3,
+    "explanation": "O/A comportamento reológico do líquido sinovial articular atua na prática clínica através do seguinte mecanismo biomecânico: fluido pseudoplástico rico em ácido hialurónico que é altamente viscoso em repouso (lubrificação protetora) e torna-se fluido e pouco viscoso sob movimento rápido (mínima fricção articular).",
     "distractorAnalysis": [
-      "Está incorreta porque o módulo de cisalhamento é sempre uma fração do Módulo de Young (G = E / [2(1+ν)]), sendo matematicamente inferior a E.",
-      "Está incorreta porque os tecidos moles oferecem resistência elástica finita e mensurável ao cisalhamento devido à sua matriz extracelular colagénica.",
-      "Está incorreta porque ambos são módulos de rigidez elástica que aumentam juntos consoante o tecido seja mais denso e fibroso."
+      "Está incorreta: o fórceps possui fulcro articular cruzado funcionando como alavanca de 1.ª classe para multiplicação e controlo de tração.",
+      "Está incorreta: descreve o princípio do vácuo-extrator obstétrico (ventosa) e não o mecanismo metálico de colheres do fórceps.",
+      "Está incorreta: as colheres do fórceps são de aço inoxidável rígido para conferir tração e direção e não tubos infláveis."
     ],
-    "nursingApplication": "Na elastografia por ultrassons (técnica moderna para estadiamento de fibrose hepática ou nódulos mamários), a velocidade das ondas de cisalhamento permite ao clínico e ao enfermeiro quantificar o módulo de elasticidade G e E, detetando endurecimento tecidual patológico de forma não invasiva."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a comportamento reológico do líquido sinovial articular: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2180,
     "topicId": 2,
-    "question": "A cartilagem articular humana é submetida a elevadas pressões hidrostáticas durante a marcha e o salto. Que grandeza biofísica, denominada 'Módulo Volumétrico' (Bulk Modulus, K), traduz a resistência de um material à diminuição do seu volume sob uma pressão hidrostática uniforme (K = - ΔP / (ΔV/V₀))?",
+    "question": "Por que razão as fraturas causadas por forças de torção em ossos longos (como a tíbia de esquiadores) assumem tipicamente uma geometria em espiral?",
     "options": [
-      "A resistência à compressão volumétrica, que na cartilagem é extraordinariamente elevada devido ao seu alto conteúdo de água intersticial (~70-80%), tornando-a quase incompressível sob impactos rápidos.",
-      "A velocidade de sedimentação eritrocitária das hemácias na cartilagem articular avascular.",
-      "A capacidade da cartilagem gerar um campo de gravidade artificial para repelir o osso subcondral.",
-      "A taxa de evaporação de líquido sinovial através dos poros da pele do joelho."
+      "O momento de torção gera tensões máximas de tração e corte em planos helicoidais inclinados a 45° em relação ao longo eixo diafisário.",
+      "O osso longo funde-se instantaneamente sob torção mecânica, reorganizando a sua estrutura cristalina numa espiral de DNA celular.",
+      "As forças de torção afetam exclusivamente os nervos periféricos, cuja contração reflexa esmaga o osso numa linha transversal cega.",
+      "O canal medular expande-se centrifugamente sob pressão pneumática, partindo o córtex ósseo em fatias perfeitamente circulares."
     ],
     "correctIndex": 0,
-    "explanation": "O Módulo Volumétrico (Bulk Modulus, K) quantifica a resistência de uma substância a variações do seu volume quando submetida a uma pressão hidrostática omnidirecional: K = - ΔP / (ΔV/V₀). A água possui um módulo volumétrico altíssimo (~2,2 GPa), significando que é extremamente difícil comprimir o seu volume. Como a cartilagem articular saudável é constituída por cerca de 75-80% de água pressurizada no interior de uma malha densa de proteoglicanos carregados negativamente, sob impactos mecânicos súbitos (como a corrida), a água suporta instantaneamente mais de 90% da carga como pressão hidrostática, protegendo os condrócitos e o osso.",
+    "explanation": "O/A tubos de aspiração cirúrgica de silicone médico reforçado com espiral atua na prática clínica através do seguinte mecanismo biomecânico: a espiral rígida de aço ou polímero impede o colapso do tubo sob vácuo de alta sucção (resistência à pressão negativa de colapso).",
     "distractorAnalysis": [
-      "Está incorreta porque a velocidade de sedimentação é um teste hematológico em tubo de ensaio, não uma propriedade de compressão elástica de volume.",
-      "Está incorreta porque os tecidos biológicos não geram forças gravitacionais ativas repulsoras.",
-      "Está incorreta porque a cartilagem articular está contida hermeticamente dentro da cápsula articular selada pela membrana sinovial, sem qualquer evaporação para o exterior."
+      "Está incorreta: a falha em espiral obedece aos princípios mecânicos de tensões principais de tração a 45° sob torção pura.",
+      "Está incorreta: o mecanismo da fratura é estritamente mecânico sobre o tecido mineralizado e não causado por reflexo neural isolado.",
+      "Está incorreta: não ocorre expansão pneumática no canal medular, sendo a rotura originada por tensões de corte e tração na parede."
     ],
-    "nursingApplication": "O enfermeiro ensina doentes com lesões articulares sobre a importância da hidratação sistémica e do movimento suave contínuo: a imobilização absoluta prolongada drena a água intersticial da cartilagem, diminuindo o seu módulo volumétrico e a sua tolerância mecânica à carga."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a tubos de aspiração cirúrgica de silicone médico reforçado com espiral: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2181,
     "topicId": 2,
-    "question": "A aplicação de ligaduras elásticas compressivas em membros inferiores no tratamento de úlceras venosas é governada pela Lei de Laplace adaptada: P = (T · N · C) / (R · W), onde P é a pressão sub-ligadura, T a tensão de estiramento do tecido, N o número de camadas, R o raio de curvatura do membro e W a largura da faixa. De acordo com esta lei biofísica, em que região do membro a pressão exercida é naturalmente MAIOR para a mesma tensão de aplicação?",
+    "question": "Na avaliação da fragilidade e sarcopenia em idosos através da dinamometria manual com dinamómetro de Jamar, que princípio físico é utilizado?",
     "options": [
-      "No tornozelo, porque apresenta o menor raio de curvatura (R pequeno), fazendo com que a pressão seja inversamente proporcional a R (pressão mais elevada).",
-      "Na coxa, porque o raio de curvatura é muito maior (R grande), amplificando a pressão de compressão.",
-      "A pressão é exatamente igual em todos os pontos do membro, independentemente da anatomia óssea ou do perímetro da perna.",
-      "Na planta do pé onde a ligadura não toca, por indução eletrostática à distância."
+      "Medição da condutividade elétrica da pele do antebraço após estimulação galvânica dolorosa dos nervos motores superficiais.",
+      "Deformação elástica calibrada de uma lâmina ou célula de carga sob força isométrica máxima de preensão manual desenvolvida pelo doente.",
+      "Determinação da variação do volume de ar expirado pelos pulmões durante a manobra de contração dos dedos sobre a pega metálica.",
+      "Avaliação da aceleração gravitacional gerada no pavimento hospitalar pela queda balística de um peso padronizado de teste clínico."
     ],
-    "correctIndex": 0,
-    "explanation": "Pela Lei de Laplace, a pressão transmitida por uma membrana curva é inversamente proporcional ao raio de curvatura da superfície: P ∝ 1/R. Uma superfície com raio pequeno (como o tornozelo ou a crista anterior da tíbia) concentra a tensão da ligadura numa curvatura apertada, gerando uma pressão de compressão sub-ligadura muito mais elevada. Pelo contrário, na coxa ou na barriga da perna, o raio R é muito maior, resultando numa pressão significativamente menor para a mesma força de estiramento da ligadura. Este princípio físico cria naturalmente um gradiente pressórico decrescente distal-proximal favorável ao retorno venoso.",
+    "correctIndex": 1,
+    "explanation": "O/A elastómero de vedação em seringas pré-cheias de heparina atua na prática clínica através do seguinte mecanismo biomecânico: borracha sintética de alta estanquicidade que mantém a esterilidade e impede a entrada de ar com coeficiente de atrito cinético constante no cilindro.",
     "distractorAnalysis": [
-      "Está incorreta porque quanto maior o raio R (como na coxa), menor é a pressão sub-ligadura (P ∝ 1/R).",
-      "Está incorreta porque a pressão varia fortemente ao longo da perna em função das variações anatómicas do raio e das proeminências ósseas.",
-      "Está incorreta porque a pressão é uma grandeza de contacto mecânico direto entre a faixa esticada e a superfície cutânea."
+      "Está incorreta: a dinamometria de Jamar quantifica a força mecânica de preensão e não a resistência galvânica ou elétrica da pele.",
+      "Está incorreta: o aparelho mede a força estática dos músculos flexores dos dedos e não parâmetros ventilatórios pulmonares.",
+      "Está incorreta: o teste baseia-se na força muscular isométrica aplicada na pega do dinamómetro e não em impactos balísticos."
     ],
-    "nursingApplication": "O enfermeiro aplica acolchoamento de algodão sob a ligadura sobre o tendão de Aquiles, crista da tíbia e maléolos (onde o raio R é minúsculo) para evitar picos de pressão excessivos que provocariam necrose cutânea por compressão iatrogénica."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a elastómero de vedação em seringas pré-cheias de heparina: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2182,
     "topicId": 2,
-    "question": "Na insuflação do balão de retenção de um cateter vesical de Foley de duas vias, a Lei de Laplace para superfícies esféricas elásticas estabelece que a pressão intraluminal necessária para manter a curvatura é P = 2 · T / r, onde T é a tensão parietal da borracha e r o raio do balão. Por que motivo é estritamente proibido insuflar o balão com ar ou com soluções hipertónicas em vez de água destilada/estéril apirogénica?",
+    "question": "Na génese da flebite mecânica associada a cateteres venosos periféricos, qual é o papel desempenhado pela tensão de corte na parede venosa?",
     "options": [
-      "O ar é um gás altamente compressível que pode colapsar sob a pressão vesical ou sofrer microfuga por difusão através dos poros do silicone/látex fazendo o cateter exteriorizar-se, enquanto soluções hipertónicas podem cristalizar no microcanal de drenagem bloqueando a desinsuflação posterior.",
-      "O ar anula o peso da bexiga, fazendo com que o doente sinta náuseas contínuas por alteração da gravidade pélvica.",
-      "A água destilada dissipa correntes elétricas de 220 V que circulam habitualmente na urina humana.",
-      "Qualquer líquido que não seja ar reage quimicamente com o látex convertendo-o em mercúrio tóxico."
+      "A ponta do cateter atrai as hemácias por polarização eletrostática negativa contínua, obstruindo a veia por aglutinação iónica pura.",
+      "A rigidez do tubo converte o fluxo laminar de sangue num plasma gasoso de alta temperatura que queima quimicamente a camada íntima.",
+      "O atrito e o movimento repetido da ponta rígida contra o endotélio geram tensão de corte tangencial que desencadeia inflamação mecânica.",
+      "O cateter exerce uma força de sucção centrípeta que colapsa permanentemente a parede venosa em torno do canhão de fixação externa."
     ],
-    "correctIndex": 0,
-    "explanation": "A biofísica dos elastómeros de silicone e látex mostra que os gases sofrem difusão transmembranar passiva ao longo de dias através da fina parede do balão; além disso, sendo o ar um fluido compressível (ao contrário dos líquidos praticamente incompressíveis), as variações de pressão vesical provocam flutuações de volume com perda precoce da retenção do cateter. Por outro lado, soluções cristaloides (como cloreto de sódio a 0,9% ou glicosadas) sofrem evaporação microscópica de água ou gradientes osmóticos com a urina, precipitando cristais de sal ou açúcar no lúmen capilar de insuflação, o que impede a futura aspiração e remoção atraumática do cateter pelo enfermeiro.",
+    "correctIndex": 2,
+    "explanation": "O/A fixador externo ortopédico de carbono atua na prática clínica através do seguinte mecanismo biomecânico: material compósito de fibra de carbono com altíssima rigidez e radiotransparência, permitindo o controlo radiológico da fratura sem artefactos metálicos opacos.",
     "distractorAnalysis": [
-      "Está incorreta porque o cateter não altera a gravidade corporal nem o centro de massa vesical.",
-      "Está incorreta porque a urina é um eletrólito biológico normal sem tensões perigosas de alta voltagem.",
-      "Está incorreta porque a água estéril é quimicamente estável e inerte com o silicone e látex grau médico."
+      "Está incorreta: a causa da flebite mecânica é o trauma físico e fricção da ponta contra o vaso e não atração eletrostática de hemácias.",
+      "Está incorreta: o cateter não eleva a temperatura do sangue nem produz vaporização endotelial térmica no leito venoso.",
+      "Está incorreta: o cateter infunde soluções e não gera sucção centrípeta que colapse as paredes venosas vizinhas."
     ],
-    "nursingApplication": "O enfermeiro insufla sempre o balão de Foley exclusivamente com água estéril e com o volume exato gravado na haste do cateter (ex: 10 mL), prevenindo exteriorizações acidentais dolorosas ou retenções mecânicas por bloqueio da válvula."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a fixador externo ortopédico de carbono: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2183,
     "topicId": 2,
-    "question": "A pele humana senil perde grande parte da sua densidade de colagénio e elastina, exibindo acentuada perda de resiliência e comportamento viscoelástico degradado. Ao remover um penso com adesivo acrílico tradicional a alta velocidade (puxão rápido), que fenómeno biofísico da viscoelasticidade aumenta drasticamente o risco de provocar uma 'Skin Tear' (laceração cutânea traumática)?",
+    "question": "Comparando o gesso tradicional de Paris (sulfato de cálcio) com as ligaduras de fibra de vidro sintética em ortopedia, qual é a vantagem mecânica da fibra de vidro?",
     "options": [
-      "Os biomateriais viscoelásticos aumentam a sua rigidez aparente e tornam-se muito mais frágeis sob taxas de deformação elevadas (deformação rápida), concentrando a tensão na epiderme desidratada que fratura em vez de se esticar suavemente.",
-      "A remoção rápida arrefece a pele a temperaturas criogénicas que congelam os queratinócitos.",
-      "A velocidade rápida diminui a força de adesão para zero absoluto, impedindo qualquer lesão cutânea.",
-      "O adesivo acrílico funde-se quimicamente com os ossos da bacia se for puxado com pressa."
+      "Possui rigidez nula e comporta-se como borracha elástica, permitindo ao doente correr e saltar sem qualquer restrição articular.",
+      "Aumenta a densidade do membro em cerca de dez vezes para obrigar o doente a permanecer estritamente em repouso no leito.",
+      "Dissolve-se espontaneamente através da transpiração cutânea do doente ao fim de quarenta e oito horas de imobilização ortopédica.",
+      "Apresenta maior relação rigidez/peso e excelente resistência à flexão, sendo mais leve e resistente à quebra quando exposta à água."
     ],
-    "correctIndex": 0,
-    "explanation": "Os tecidos viscoelásticos (como a derme) são altamente dependentes da taxa de deformação (strain rate sensitivity): quando sujeitos a uma força rápida e brusca, as macromoléculas de elastina e colagénio não têm tempo para se desdobrar e reorganizar plasticamente; o tecido comporta-se como um sólido rígido e frágil com baixo alongamento à fratura, concentrando tensões de tração e cisalhamento na junção dermo-epidérmica atrófica, o que resulta no descolamento catastrófico da epiderme (skin tear). Quando a tração é muito lenta e paralela à pele, o tecido dissipa a energia por relaxação de tensões e descola sem rotura mecânica.",
+    "correctIndex": 3,
+    "explanation": "O/A meias anti-embolia cirúrgicas brancas (TED stockings) atua na prática clínica através do seguinte mecanismo biomecânico: exercem pressão profilática de 18 mmHg no tornozelo e 8 mmHg na coxa para doentes acamados em pós-operatório sem mobilidade ativa.",
     "distractorAnalysis": [
-      "Está incorreta porque a remoção mecânica rápida de adesivos não gera arrefecimento criogénico na derme.",
-      "Está incorreta porque puxar rapidamente aumenta a taxa de tensão e a força de cisalhamento transmitida às células basais da pele.",
-      "Está incorreta porque os adesivos cirúrgicos atuam estritamente sobre as camadas superficiais da epiderme, sem qualquer penetração óssea."
+      "Está incorreta: a fibra de vidro visa a imobilização rígida de fraturas e não permitir mobilização desportiva descontrolada.",
+      "Está incorreta: a fibra de vidro é cerca de três vezes mais leve que o gesso de Paris, reduzindo a fadiga do doente.",
+      "Está incorreta: a resina de poliuretano polimerizada é resistente à água e ao suor, mantendo a imobilização durante semanas."
     ],
-    "nursingApplication": "Em doentes idosos ou polimedicados com corticóides, o enfermeiro utiliza pensos com adesivo de silicone suave e remove-os sempre lentamente, puxando o adesivo rente e paralelamente à superfície cutânea com apoio da pele adjacente (técnica de 'baixo ângulo e baixa velocidade') para proteger a integridade tecidual."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a meias anti-embolia cirúrgicas brancas (TED stockings): o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2184,
     "topicId": 2,
-    "question": "Na cirurgia vascular e plástica, os fios de sutura monofilamentares de polipropileno (Prolene) apresentam grande 'Memória Elástica' em comparação com fios de seda cirúrgica trançada. O que significa biofisicamente a memória elástica de um fio de sutura?",
+    "question": "Na mecânica da marcha humana, durante a fase de impulsão (elevação do calcanhar), que esforço físico atua sobre o tendão de Aquiles?",
     "options": [
-      "A tendência do polímero de regressar espontaneamente à sua forma linear e rígida original de fabrico após ter sido enrolado ou dobrado para dar o nó cirúrgico, exigindo mais nós de segurança para evitar o afrouxamento.",
-      "A capacidade do fio memorizar o nome do doente através de chips magnéticos embutidos no polímero.",
-      "A perda total de toda a elasticidade do fio logo que entra em contacto com soro fisiológico.",
-      "A degradação química completa do fio em dióxido de carbono no espaço de 10 segundos."
+      "Grande tensão de tração mecânica que pode atingir duas a três vezes o peso corporal, com o pé atuando como alavanca de 2.ª classe.",
+      "Tensão pura de compressão axial exercida pelos ossos do tarso que empurra o tendão contra o pavimento da superfície de apoio.",
+      "Força de cisalhamento nula decorrente da levitação inercial do calcâneo provocada pela contração dos músculos anteriores da perna.",
+      "Tensão mecânica inferior a 5 N que é dissipada inteiramente pela flexão das articulações interfalângicas dos dedos do pé."
     ],
     "correctIndex": 0,
-    "explanation": "A 'memória elástica' de um fio cirúrgico é a propriedade física que reflete a rigidez à flexão e a recuperação elástica do material: os fios com elevada memória elástica (como o polipropileno monofilamentar ou o nylon) tendem a desfazer a curvatura imposta pelo cirurgião e a voltar à sua conformação retilínea de embalagem. Como resultado, os laços do nó cirúrgico tendem a escorregar e a desatar-se espontaneamente por descompressão elástica, sendo obrigatório aplicar nós de cirurgião adicionais (tipicamente 5 a 6 contravoltas) para travar a sutura com segurança.",
+    "explanation": "O/A tiras adesivas esterilizadas de aproximação cutânea (Steri-Strips) atua na prática clínica através do seguinte mecanismo biomecânico: reforçadas com filamentos de poliéster para manter tensão de tração constante nas bordas da ferida após remoção precoce de pontos de sutura.",
     "distractorAnalysis": [
-      "Está incorreta porque os fios cirúrgicos comuns são biomateriais poliméricos inertes passivos, sem microchips eletrónicos.",
-      "Está incorreta porque os polímeros sintéticos mantêm as suas propriedades elásticas na presença de soluções aquosas normais.",
-      "Está incorreta porque o polipropileno é um material permanente não-absorvível que persiste inalterado nos tecidos durante anos."
+      "Está incorreta: os tendões transmitem essencialmente forças mecânicas de tração uniaxial e não compressão axial de empurrão.",
+      "Está incorreta: a impulsão exige forças intensas produzidas pelo tríceps sural, atingindo centenas a milhares de Newtons.",
+      "Está incorreta: as forças exercidas no tendão de Aquiles são extraordinariamente elevadas durante a fase propulsiva da marcha."
     ],
-    "nursingApplication": "Ao preparar mesas cirúrgicas e inspecionar linhas de sutura de drenos ou acessos vasculares periféricos e centrais, o enfermeiro sabe que fios com alta memória exigem nós bem calibrados e contravoltas duplas para evitar exteriorizações acidentais de cateteres."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a tiras adesivas esterilizadas de aproximação cutânea (Steri-Strips): o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2185,
     "topicId": 2,
-    "question": "Os tubos endotraqueais modernos possuem balonetes (cuffs) concebidos segundo o princípio de 'Alto Volume e Baixa Pressão' (HVLP). Por que razão a pressão do cuff deve ser rotineiramente monitorizada pela equipa de enfermagem com manómetro calibrado para se manter rigorosamente na faixa de 20 a 30 cmH₂O (15 a 22 mmHg)?",
+    "question": "Por que razão biomecânica um doente com artrose dolorosa na anca direita deve utilizar a bengala de apoio na mão contralateral (esquerda)?",
     "options": [
-      "Pressões abaixo de 20 cmH₂O permitem microaspiração de secreções orofaríngeas (risco de Pneumonia Associada à Ventilação Mecânica), enquanto pressões acima de 30 cmH₂O ultrapassam a pressão de perfusão capilar da mucosa traqueal, causando isquemia, ulceração e futura estenose traqueal.",
-      "Pressões acima de 30 cmH₂O arrefecem o oxigénio a temperaturas de congelamento no interior dos brônquios.",
-      "A pressão de 20 cmH₂O serve unicamente para afinar a voz do doente caso este tente falar com o tubo colocado.",
-      "Abaixo de 20 cmH₂O o cuff explode por depressão barométrica pulmonar instantânea."
+      "Anula a força da gravidade sobre o lado direito do corpo através da criação de um campo elétrico de blindagem no membro inferior afetado.",
+      "Aumenta o braço de momento da força de apoio em relação à anca direita, reduzindo a força exigida aos abdutores e a compressão articular.",
+      "Obriga o doente a inclinar o tronco para o lado lesado para sobrecarregar a cabeça do fémur inflamada e estimular a cicatrização.",
+      "Reduz a base de sustentação do corpo para um único ponto de contacto, acelerando a velocidade de passada nos corredores hospitalares."
     ],
-    "correctIndex": 0,
-    "explanation": "A microcirculação arterial da mucosa que reveste os anéis cartilagíneos traqueais possui uma pressão capilar de perfusão de cerca de 30 a 32 cmH₂O (~22 mmHg). Se a pressão mecânica de compressão exercida pela parede elástica do cuff do tubo endotraqueal exceder os 30 cmH₂O de forma contínua, o fluxo sanguíneo capilar é ocluído (isquemia isquémica por compressão), levando a necrose da mucosa, destruição da cartilagem traqueal e estenose cicatricial grave ou fístula traqueoesofágica. Por outro lado, se a pressão for inferior a 20 cmH₂O (~15 mmHg), o balonete não veda as vias aéreas adequadamente, surgindo fugas de volume corrente e aspiração silenciosa de secreções contaminadas para os pulmões.",
+    "correctIndex": 1,
+    "explanation": "O/A módulo elástico de Young de próteses de titânio (E ~ 110 GPa) atua na prática clínica através do seguinte mecanismo biomecânico: rigidez intermediária entre o osso cortical (18 GPa) e o aço cirúrgico (200 GPa), reduzindo o fenómeno de 'stress shielding' ou reabsorção óssea periprotésica por desuso mecânico.",
     "distractorAnalysis": [
-      "Está incorreta porque a pressão mecânica estática do cuff não gera variações térmicas criogénicas no fluxo ventilatório.",
-      "Está incorreta porque o doente com tubo endotraqueal translaringeal não consegue emitir voz porque as cordas vocais estão imobilizadas pelo tubo.",
-      "Está incorreta porque pressões baixas significam menor tensão na parede elástica do cuff, com risco zero de explosão."
+      "Está incorreta: o efeito da bengala contralateral é puramente mecânico de binário de forças e alavancas e não gravitacional elétrico.",
+      "Está incorreta: o objetivo terapêutico é justamente diminuir a carga compressiva na cabeça femoral lesada para aliviar a dor.",
+      "Está incorreta: o uso da bengala alarga a base de sustentação postural, melhorando o equilíbrio e a estabilidade dinâmica."
     ],
-    "nursingApplication": "A monitorização da pressão do cuff com manómetro de pressão (cuffômetro) em cada turno é uma intervenção essencial de enfermagem nos cuidados intensivos, protegendo o doente contra lesões isquémicas traqueais e prevenindo infeções nosocomiais."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a módulo elástico de Young de próteses de titânio (E ~ 110 GPa): o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2186,
     "topicId": 2,
-    "question": "Um colchão de pressão alternada (APAM) para doentes de alto risco de úlceras de pressão opera através de células tubulares pneumáticas insufladas e desinsufladas ciclicamente por um compressor (ciclo de 10 a 15 minutos). Qual é o fundamento biofísico desta tecnologia na prevenção de necrose tecidual?",
+    "question": "O fio de sutura monofilamentar de polidioxanona (PDS) é frequentemente escolhido para o encerramento da parede abdominal porque:",
     "options": [
-      "Ao desinsuflar alternadamente células de ar sob determinadas regiões anatómicas, a pressão de interface cai temporariamente a zero, permitindo a reperfusão sanguínea dos capilares dérmicos antes que a anóxia celular atinja o limiar de morte tecidual irreversível.",
-      "O compressor gera ondas de ultrassons que destroem as bactérias da pele sem necessidade de higiene.",
-      "O ar alternado arrefece o doente a 15 °C para diminuir a circulação sanguínea na bacia.",
-      "O sistema altera a composição química do ar hospitalar, convertendo o oxigénio em hélio no colchão."
+      "Perde toda a sua resistência tênsil em quarenta e oito horas para que a parede muscular suporte imediatamente a carga pressórica.",
+      "Apresenta memória plástica nula e comporta-se como um fluido lubrificante que cola as fibras musculares por adesão celular direta.",
+      "Mantém a resistência tênsil por um período prolongado de várias semanas através de degradação hidrolítica lenta sem capilaridade.",
+      "Liberta continuamente iões de titânio metálico que transformam as bordas da fáscia muscular numa placa mineralizada rígida."
     ],
-    "correctIndex": 0,
-    "explanation": "A isquemia tecidual sob proeminências ósseas é um processo dependente do binómio 'pressão versus tempo'. Mesmo que a pressão compressiva aplicada seja moderadamente elevada durante o ciclo de insuflação de uma célula do colchão, a subsequente desinsuflação dessa câmara (cerca de 5 a 7 minutos depois) anula a carga mecânica externa sobre essa área de pele. Isto permite a abertura imediata dos esfíncteres pré-capilares com hiperemia reativa (reperfusão sanguínea abundante), fornecendo oxigénio e glicose e lavando os ácidos metabólicos acumulados antes que ocorra necrose tecidual irreversível.",
+    "correctIndex": 2,
+    "explanation": "O/A propriedades de fluência (creep) dos discos intervertebrais atua na prática clínica através do seguinte mecanismo biomecânico: perda progressiva de água sob a carga vertical durante o dia com diminuição da altura do disco, recuperando a hidratação e a espessura elástica durante o repouso noturno no leito.",
     "distractorAnalysis": [
-      "Está incorreta porque os colchões pneumáticos alternados operam por mecânica dos fluidos compressíveis de baixa pressão, sem emissão de ultrassons bactericidas.",
-      "Está incorreta porque o ar dos colchões é mantido à temperatura ambiente ou corporal, sendo a hipotermia grave um risco a evitar estritamente.",
-      "Está incorreta porque o compressor utiliza o ar ambiente normal sem transmutação gasosa para hélio."
+      "Está incorreta: a fáscia abdominal necessita de suporte prolongado (semanas) e uma sutura que falhasse em 48 h causaria evisceração.",
+      "Está incorreta: o PDS é um sólido polimérico estrutural resistente e não um líquido lubrificante adesivo de contacto.",
+      "Está incorreta: o PDS é um polímero sintético biodegradável (poliéster) e não contém iões metálicos de titânio mineral."
     ],
-    "nursingApplication": "O enfermeiro verifica regularmente se o compressor está regulado para o peso correto do doente e se as células estão a alternar ciclicamente: um colchão de ar descalibrado pode colapsar ('bottoming out') ou permanecer hiperinsuflado e rígido, anulando a prevenção biofísica de LPP."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a propriedades de fluência (creep) dos discos intervertebrais: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2187,
     "topicId": 2,
-    "question": "Um colchão hospitalar estático de espuma viscoelástica termo-reativa ('Memory Foam') conforma-se ao contorno corporal do doente com o calor e a pressão sustentada. De que forma a relação biofísica fundamental da pressão (P = F / A) explica a sua eficácia preventiva nas Lesões por Pressão (LPP)?",
+    "question": "Nos circuitos de circulação extracorporal e hemodiálise, o que sucede se a taxa de cisalhamento do sangue ultrapassar o limiar crítico (150 a 300 Pa)?",
     "options": [
-      "Ao moldar-se às curvaturas anatómicas do corpo, a área de superfície de contacto eficaz (A) aumenta significativamente; para o mesmo peso corporal (F), a pressão de interface (P) distribui-se de forma muito mais homogénea e os picos de pressão nas proeminências ósseas são reduzidos.",
-      "O colchão anula 90% da massa do doente através de levitação térmica de convecção.",
-      "A espuma reduz a área de contacto para focar o peso num único ponto sagrado, acelerando a circulação sanguínea.",
-      "O material endurece instantaneamente tornando-se rígido como granito para impedir qualquer afundamento corporal."
+      "As hemácias cristalizam instantaneamente numa matriz sólida que interrompe o fluxo de sangue no dialisador por solidificação pura.",
+      "O oxigénio gasoso desliga-se covalentemente dos núcleos atómicos de ferro, evaporando sob a forma de bolhas gasosas no oxigenador.",
+      "A viscosidade sanguínea aumenta para o infinito de acordo com a Lei de Poiseuille, bloqueando os filtros arteriais do circuito.",
+      "Ocorre deformação mecânica excessiva e rotura da membrana dos eritrócitos com hemólise intravascular e libertação de hemoglobina livre."
     ],
-    "correctIndex": 0,
-    "explanation": "Pela fórmula P = F / A, a pressão exercida sobre os tecidos é inversamente proporcional à área de contacto para uma força constante (peso do doente, F = m·g). Num colchão convencional de espuma densa e rígida, apenas as proeminências ósseas (sacro, calcâneos, trocânteres) tocam no leito, resultando numa área de suporte muito pequena (A reduzido) e em picos de pressão focais superiores a 60-80 mmHg que causam isquemia tecidual rápida. A espuma viscoelástica amolece com a temperatura corporal e deforma-se lentamente por fluência, 'abraçando' o tronco, coxas e flancos; ao expandir a área de contacto (A maior), a pressão distribui-se homogeneamente e cai para níveis seguros (< 25-30 mmHg) em quase toda a superfície corporal.",
+    "correctIndex": 3,
+    "explanation": "O/A elasticidade das paredes arteriais no envelhecimento (arteriosclerose) atua na prática clínica através do seguinte mecanismo biomecânico: substituição das fibras de elastina por fibras rígidas de colagénio, aumentando o Módulo de Young arterial e elevando a pressão arterial de pulso (sistólica muito alta com diastólica normal ou baixa).",
     "distractorAnalysis": [
-      "Está incorreta porque o peso e a massa do doente continuam sujeitos à aceleração da gravidade sem qualquer levitação térmica.",
-      "Está incorreta porque concentrar a carga numa área menor aumentaria a pressão a níveis extremos e causaria escaras graves imediatas.",
-      "Está incorreta porque a espuma viscoelástica conforma-se e afunda suavemente com o calor, o oposto de endurecer como pedra."
+      "Está incorreta: as células sanguíneas não cristalizam, sofrendo laceração mecânica e fragmentação traumática (hemólise).",
+      "Está incorreta: a ligação oxigénio-hemoglobina é de coordenação química e a hemólise decorre de rotura mecânica parietal.",
+      "Está incorreta: em altas taxas de cisalhamento o sangue (fluido pseudoplástico) diminui a sua viscosidade aparente até um patamar."
     ],
-    "nursingApplication": "O enfermeiro sabe que mesmo num colchão viscoelástico de alta especificação, doentes totalmente imóveis continuam a necessitar de reposicionamento regular, pois a redistribuição de pressão minimiza picos, mas não elimina a necessidade de reperfusão capilar periódica."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a elasticidade das paredes arteriais no envelhecimento (arteriosclerose): o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2188,
     "topicId": 2,
-    "question": "Os pensos hidrocoloides e hidrogéis utilizados no tratamento de feridas complexas são polímeros hidrofílicos que exibem propriedades reológicas específicas ao absorver exsudado. Qual é o comportamento mecânico característico de um hidrogel amorfo?",
+    "question": "No tratamento de feridas complexas, os hidrogéis amorfos exibem comportamento reológico tixotrópico. Isso significa clinicamente que:",
     "options": [
-      "Comporta-se como um biomaterial viscoelástico semi-sólido com capacidade de reter grande fração de água na sua rede polimérica tridimensional sem se dissolver, adaptando-se elasticamente ao leito irregular da ferida.",
-      "Transforma-se num pó abrasivo seco e cortante que escarifica a ferida a cada batimento cardíaco.",
-      "Solidifica numa placa cerâmica impermeável que necessita de broca cirúrgica para ser removida.",
-      "Apresenta viscosidade infinita que impede qualquer difusão de moléculas de água ou enzimas de desbridamento autolítico."
+      "A sua viscosidade diminui sob tensão de corte ao passar pela cânula aplicadora e aumenta em repouso, fixando-se no leito da lesão.",
+      "O gel endurece permanentemente como cimento dentário logo após contactar com o oxigénio atmosférico da ferida cirúrgica.",
+      "O produto transforma-se num vapor volátil que se dissipa no ar ambiente em menos de dez segundos após a saída da embalagem.",
+      "A densidade do composto varia de acordo com as fases lunares, exigindo aplicação restrita a horários de maré alta fisiológica."
     ],
     "correctIndex": 0,
-    "explanation": "Os hidrogéis são redes tridimensionais de polímeros hidrofílicos (como carboximetilcelulose, alginato ou poliacrilatos) interligados por ligações cruzadas. Mecanicamente, exibem comportamento viscoelástico: têm consistência maleável e elástica que lhes permite conformar-se intimamente às cavidades anatómicas de feridas complexas, absorvendo exsudado ou doando humidade controlada a tecidos necróticos secos para favorecer o desbridamento autolítico sem perder a integridade estrutural coesiva.",
+    "explanation": "O/A suturas metálicas de agrafos cirúrgicos de aço atua na prática clínica através do seguinte mecanismo biomecânico: apresentam comportamento puramente plástico no fecho com o agrafador mecânico, mantendo as bordas da pele coaptadas sem retorno elástico.",
     "distractorAnalysis": [
-      "Está incorreta porque os hidrogéis mantêm hidratação e ambiente húmido atraumático, nunca formando pós secos cortantes.",
-      "Está incorreta porque o penso é facilmente irrigável e lavável com soro fisiológico a 0,9% sem danificar o tecido de granulação.",
-      "Está incorreta porque a permeabilidade da matriz de hidrogel permite a difusão controlada de água, oxigénio e enzimas biológicas essenciais."
+      "Está incorreta: o hidrogel deve manter-se maleável e hidratado para criar um ambiente húmido favorável à cicatrização.",
+      "Está incorreta: o gel é constituído maioritariamente por água purificada retida em matriz polimérica e não evapora subitamente.",
+      "Está incorreta: a tixotropia é uma propriedade reológica mecânica intrínseca e não tem relação com ciclos gravitacionais lunares."
     ],
-    "nursingApplication": "Ao aplicar hidrogel numa úlcera com necrose seca ou fibrina, o enfermeiro sabe que a reologia do gel mantém a humidade no leito tecidual durante dias sem escorrer para a pele perilesional sã, protegendo os bordos contra a maceração mecânica e química."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a suturas metálicas de agrafos cirúrgicos de aço: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2189,
     "topicId": 2,
-    "question": "A parede das grandes artérias elásticas (como a aorta) exibe uma curva tensão-deformação característica em forma de 'J' (J-shaped curve). Em termos dos biomateriais estruturais da túnica média, como se explica esta transição mecânica entre baixas e altas pressões arteriais?",
+    "question": "Na substituição de grandes vasos por enxertos sintéticos de PTFE expandido (ePTFE) ou Dacron, qual é a relevância do seu Módulo de Young?",
     "options": [
-      "A baixas pressões fisiológicas, a elastina (com Módulo de Young baixo ~1 MPa) domina a deformação e confere grande complacência elástica; a pressões elevadas, as fibras de colagénio (com Módulo de Young elevado ~1000 MPa) são recrutadas e retificadas, tornando a parede muito rígida para proteger o vaso contra a rotura por dilatação aneurismática.",
-      "A aorta é formada exclusivamente por filamentos de vidro que quebram com pressões superiores a 80 mmHg.",
-      "As fibras de colagénio esticam a baixas pressões e a elastina só atua quando a pressão arterial ultrapassa os 300 mmHg.",
-      "A artéria não possui qualquer resposta elástica, mantendo um diâmetro rígido fixo idêntico a um tubo de ferro fundido."
+      "Deve ser estritamente igual a zero para permitir que a prótese colapse completamente a cada ciclo de pulsação arterial sistólica.",
+      "Deve ser equilibrado para evitar a dilatação aneurismática por fadiga mecânica sem gerar desfasamento de complacência na anastomose.",
+      "Tem de ser cem vezes superior ao do diamante para impedir que qualquer agulha cirúrgica consiga trespassar a parede do enxerto.",
+      "Diminui continuamente até que a prótese se dissolva por completo no prazo de uma semana após o restabelecimento da circulação."
     ],
-    "correctIndex": 0,
-    "explanation": "A curva em forma de 'J' das artérias traduz a cooperação biomecânica bifásica entre dois biomateriais com propriedades mecânicas muito contrastantes na matriz extracelular da túnica média: a elastina (muito extensível, com baixo Módulo de Young E ≈ 0,5 a 1 MPa) e o colagénio (muito resistente e rígido, com E ≈ 1000 MPa). A pressões normais (diastólica e sistólica ~80-120 mmHg), a parede é dominada pela elastina, amortecendo a ejeção cardíaca com grande distensibilidade elástica (efeito Windkessel). Se a pressão arterial subir perigosamente, as fibras de colagénio retificam-se e assumem a carga: a parede torna-se bruscamente muito mais rígida (o declive da curva tensão-deformação sobe verticalmente), impedindo a sobredistensão e protegendo a artéria da dissecção ou rutura.",
+    "correctIndex": 1,
+    "explanation": "O/A comportamento reológico do líquido sinovial articular atua na prática clínica através do seguinte mecanismo biomecânico: fluido pseudoplástico rico em ácido hialurónico que é altamente viscoso em repouso (lubrificação protetora) e torna-se fluido e pouco viscoso sob movimento rápido (mínima fricção articular).",
     "distractorAnalysis": [
-      "Está incorreta porque a aorta humana é um biomaterial orgânico altamente elástico e tolerante a sobrecargas fisiológicas contínuas.",
-      "Está incorreta porque a elastina é a primeira a esticar (menor módulo de Young); o colagénio é recrutado apenas no final como travão de segurança tensional.",
-      "Está incorreta porque se a aorta fosse rígida como ferro, não haveria efeito Windkessel e a circulação tecidual periférica cessaria na diástole."
+      "Está incorreta: uma prótese que colapsasse na sístole causaria oclusão vascular imediata e isquemia do território irrigado.",
+      "Está incorreta: o enxerto deve ser suturável pelo cirurgião, exigindo penetração limpa da agulha sem rasgar as fibras da parede.",
+      "Está incorreta: os enxertos sintéticos arteriais são definitivos e devem manter a sua integridade mecânica ao longo da vida do doente."
     ],
-    "nursingApplication": "Compreender a curva em 'J' permite ao enfermeiro reconhecer o perigo de crises hipertensivas súbitas: pressões extremas empurram o vaso para o limite da sua zona de proteção colagénica, aumentando a pós-carga cardíaca e o risco de rotura de aneurismas prévios."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a comportamento reológico do líquido sinovial articular: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2190,
     "topicId": 2,
-    "question": "Com o envelhecimento fisiológico e a arteriosclerose, a aorta humana perde fibras de elastina funcionais por fadiga mecânica cíclica ao longo de décadas e acumula colagénio rígido e calcificações na parede. Qual é a consequência biofísica direta na 'Velocidade da Onda de Pulso' (VOP / PWV) e na pressão arterial do idoso?",
+    "question": "Do ponto de vista da mecânica de contacto na articulação do joelho, qual é o papel essencial dos meniscos interno e externo?",
     "options": [
-      "O Módulo de Young da parede aórtica aumenta (artéria mais rígida), fazendo com que a Velocidade da Onda de Pulso aumente significativamente (pela equação de Moens-Korteweg), antecipando a onda de reflexão sistólica e aumentando a Pressão Arterial Sistólica e a Pressão de Pulso no idoso.",
-      "A velocidade da onda de pulso cai para zero e o sangue arterial deixa de circular no corpo humano.",
-      "A aorta torna-se infinitamente complacente como um balão de látex fino, diminuindo a pressão sistólica para 40 mmHg.",
-      "A rigidez arterial faz com que a pressão diastólica suba obrigatoriamente para valores superiores a 150 mmHg em todos os idosos."
+      "Eliminam por completo a transmissão de forças axiais da coxa para a perna, fazendo com que a tíbia flutue livremente no espaço.",
+      "Funcionam como rolamentos metálicos que giram a alta velocidade para liquefazer o osso subcondral durante a fase de apoio.",
+      "Aumentam a área de contacto articular tíbio-femoral, reduzindo a tensão de compressão média (tensão = F/A) sobre a cartilagem hialina.",
+      "Produzem hormonas de crescimento ósseo em resposta a estímulos dolorosos de torção mecânica aplicados na cápsula articular."
     ],
-    "correctIndex": 0,
-    "explanation": "A equação biofísica de Moens-Korteweg estabelece que a velocidade de propagação da onda de pulso é proporcional à raiz quadrada do Módulo de Young da parede arterial: VOP = √((E · h) / (2 · r · ρ)), onde E é o módulo elástico, h a espessura da parede, r o raio e ρ a densidade do sangue. Quando a aorta envelhece e enrijece (E aumenta), a VOP sobe de ~5 m/s num jovem para mais de 10-14 m/s num idoso. A onda de pressão refletida nas bifurcações arteriais periféricas regressa à aorta precocemente durante a sístole (em vez da diástole), somando-se à onda incidente e gerando o padrão clássico de Hipertensão Sistólica Isolada do idoso com alargamento da pressão de pulso (PAS muito elevada com PAD normal ou baixa).",
+    "correctIndex": 2,
+    "explanation": "O/A tubos de aspiração cirúrgica de silicone médico reforçado com espiral atua na prática clínica através do seguinte mecanismo biomecânico: a espiral rígida de aço ou polímero impede o colapso do tubo sob vácuo de alta sucção (resistência à pressão negativa de colapso).",
     "distractorAnalysis": [
-      "Está incorreta porque a rigidez arterial acelera a propagação da onda mecânica de pulso, nunca a anulando a zero.",
-      "Está incorreta porque o envelhecimento reduz a complacência elástica (artérias tornam-se mais duras, não mais elásticas como látex).",
-      "Está incorreta porque na hipertensão sistólica do idoso a pressão diastólica tende frequentemente a descer ou manter-se normal por perda de retração elástica na diástole."
+      "Está incorreta: os meniscos transmitem cerca de 50 a 70% da carga axial do joelho, redistribuindo-a por uma área mais ampla.",
+      "Está incorreta: os meniscos são estruturas fibrocartilaginosas sem componentes metálicos que amortecem e estabilizam a articulação.",
+      "Está incorreta: a sua função primordial é mecânica de transmissão e absorção de carga e não de síntese endócrina primária."
     ],
-    "nursingApplication": "O enfermeiro monitoriza a Pressão de Pulso (diferença entre sistólica e diastólica) nos doentes geriátricos como um biomarcador clínico prático da rigidez arterial e do risco cardiovascular, adaptando o controlo tensional e a prevenção de hipotensão ortostática."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a tubos de aspiração cirúrgica de silicone médico reforçado com espiral: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2191,
     "topicId": 2,
-    "question": "Na manobra de desobstrução de via aérea conhecida como 'Subluxação da Mandíbula' (Jaw-Thrust maneuver), indicada em doentes com suspeita de traumatismo vertebro-medular cervical, o enfermeiro apoia os dedos indicadores e médios nos ângulos da mandíbula e traciona a mandíbula para a frente e para cima. Como se classifica esta alavanca articular e qual a sua finalidade biomecânica?",
+    "question": "Durante as manobras de Suporte Básico de Vida (SBV), por que razão a descompressão torácica completa é tão crucial quanto a compressão esternal de 5 a 6 cm?",
     "options": [
-      "Alavanca de 3.ª classe com fulcro nas fossas mandibulares do osso temporal (ATM), onde a força potente aplicada no ângulo mandibular desloca a base da língua anteriormente sem necessitar de fletir nem estender a coluna cervical.",
-      "Alavanca de 1.ª classe com o fulcro posicionado na cartilagem tiroideia que esmaga as cordas vocais para abrir a glote.",
-      "Alavanca de 2.ª classe que roda os dentes incisivos em torno do nariz para fechar as narinas com força compressiva.",
-      "Manobra puramente passiva que utiliza sucção magnética para desobstruir a laringe sem aplicação de força manual externa."
+      "Evita que as costelas entrem em fusão química permanente com o músculo peitoral maior por excesso de calor gerado na fricção manual.",
+      "Permite que o ar atmosférico seja expelido passivamente pelas artérias pulmonares em direção ao exterior da traqueia do doente.",
+      "Anula a inércia gravítica do corpo humano, facilitando o transporte do doente na maca hospitalar durante as manobras de reanimação.",
+      "Permite o recuo elástico do tórax gerando pressão intratorácica negativa que promove o retorno venoso e o enchimento ventricular."
     ],
-    "correctIndex": 0,
-    "explanation": "Na manobra de subluxação da mandíbula (Jaw-thrust), o fulcro anatómico situa-se nas articulações temporomandibulares (ATM); a força manual potente do enfermeiro é aplicada bilateralmente nos ângulos mandibulares posteriores; a resistência mecânica é o peso da mandíbula e a tensão dos tecidos moles do pavimento da boca e língua. A tração anterior do arco mandibular traciona o músculo genioglosso e o osso hioide, afastando a base da língua da parede posterior da faringe. Como não exige hiperextensão do pescoço, é a técnica de eleição para manter a via aérea aberta sem movimentar o segmento ósseo instável da coluna cervical traumatizada.",
+    "correctIndex": 3,
+    "explanation": "O/A elastómero de vedação em seringas pré-cheias de heparina atua na prática clínica através do seguinte mecanismo biomecânico: borracha sintética de alta estanquicidade que mantém a esterilidade e impede a entrada de ar com coeficiente de atrito cinético constante no cilindro.",
     "distractorAnalysis": [
-      "Está incorreta porque a cartilagem tiroideia nunca é utilizada como fulcro de alavanca, o que causaria fratura laríngea e asfixia imediata.",
-      "Está incorreta porque o objetivo da manobra é anteriorizar a mandíbula para desobstrução respiratória e não rodar os dentes contra a face.",
-      "Está incorreta porque a manobra exige força manual vetorial precisa e contínua do profissional de emergência para superar o tónus dos tecidos relaxados."
+      "Está incorreta: a massagem cardíaca não gera calor capaz de provocar fusão química entre tecidos musculoesqueléticos.",
+      "Está incorreta: o fluxo sanguíneo segue o circuito vascular fechado e o ar entra e sai exclusivamente pelas vias aéreas.",
+      "Está incorreta: o objetivo hemodinâmico do alívio entre compressões é a recarga diastólica das câmaras cardíacas."
     ],
-    "nursingApplication": "O enfermeiro de emergência e cuidados intensivos treina a subluxação mandibular como procedimento de suporte avançado de vida em vítimas de politraumatismo, assegurando a oxigenação urgente com estabilização bimanual da coluna cervical alinhada."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a elastómero de vedação em seringas pré-cheias de heparina: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2192,
     "topicId": 2,
-    "question": "Os afastadores cirúrgicos autoestáticos (como o afastador de Weitlaner ou Gelpi), utilizados para expor planos anatómicos em cirurgias ortopédicas ou abdominais, dispõem de hastes com dentes articuladas por um fulcro e travadas por uma cremalheira curva com mola. Que princípio biofísico de equilíbrio estático da mecânica fundamenta o seu funcionamento?",
+    "question": "Nos primeiros 15° de abdução do braço, por que razão o músculo supraespinhoso é indispensável antes da ação vigorosa do deltoide?",
     "options": [
-      "A cremalheira mecânica bloqueia o recuo elástico das hastes aplicando uma reação normal que neutraliza o momento resistente dos tecidos retraídos, mantendo a condição de equilíbrio estático (Στ = 0) sem necessidade de esforço contínuo do enfermeiro ou cirurgião.",
-      "O instrumento funciona como um dínamo elétrico que converte o calor do sangue em força cinética perpétua de abertura.",
-      "O afastador cancela a inércia dos músculos através de campos gravitacionais locais no campo operatório.",
-      "O instrumento atua exclusivamente como uma roldana móvel que duplica o peso corporal do doente na mesa cirúrgica."
+      "A linha de ação do deltoide é quase paralela ao úmero nessa posição, gerando cisalhamento superior em vez de rotação articular.",
+      "O deltoide encontra-se totalmente paralisado em repouso e só pode ser ativado voluntariamente se a mão estiver acima da cabeça.",
+      "O supraespinhoso atua como alavanca de 2.ª classe que reduz o peso do membro superior para um valor estritamente nulo.",
+      "A articulação glenoumeral roda no sentido oposto nos primeiros graus devido à atração gravitacional do músculo grande dorsal."
     ],
     "correctIndex": 0,
-    "explanation": "Quando as lâminas do afastador de Weitlaner empurram os bordos musculares e fasciais da incisão cirúrgica, os tecidos biológicos elásticos esticados exercem uma força de retração oposta (reação elástica resistente) que tende a fechar o instrumento. Ao travar a cremalheira num determinado dente com mola, o mecanismo metálico rígido fornece uma força de bloqueio oposta que anula o torque de retorno elástico dos tecidos. Desta forma, a soma vetorial dos momentos de força em torno do fulcro é estritamente zero (Στ = 0), mantendo a ferida aberta em equilíbrio estático estável e libertando as mãos da equipa cirúrgica.",
+    "explanation": "O/A fixador externo ortopédico de carbono atua na prática clínica através do seguinte mecanismo biomecânico: material compósito de fibra de carbono com altíssima rigidez e radiotransparência, permitindo o controlo radiológico da fratura sem artefactos metálicos opacos.",
     "distractorAnalysis": [
-      "Está incorreta porque o afastador autoestático é um dispositivo estritamente mecânico de alavanca passiva com bloqueio por dentes, sem geradores elétricos.",
-      "Está incorreta porque o afastador opera segundo as leis da estática de Newton, sem qualquer alteração de campos gravitacionais.",
-      "Está incorreta porque não utiliza cabos nem roldanas, operando através de barras rígidas de alavanca articulada."
+      "Está incorreta: o deltoide está inervado e ativo, mas a sua orientação vetorial inicial puxa a cabeça do úmero contra o acrómio.",
+      "Está incorreta: nenhum músculo anula a massa do membro, necessitando o supraespinhoso de produzir o binário rotacional inicial.",
+      "Está incorreta: o movimento fisiológico de abdução é coordenado pelo manguito rotador para centralizar a cabeça na cavidade glenoide."
     ],
-    "nursingApplication": "O enfermeiro instrumentista verifica a calibração da mola e a ausência de folgas nos dentes da cremalheira: uma cremalheira com dentes gastos pode ceder subitamente sob a tensão dos tecidos retraídos, desestabilizando o campo cirúrgico e podendo traumatizar estruturas adjacentes."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a fixador externo ortopédico de carbono: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2193,
     "topicId": 2,
-    "question": "Na seleção de ligas metálicas para a cabeça femoral de próteses articulares de suporte de carga, as ligas de Cobalto-Crómio-Molibdénio (Co-Cr-Mo) são frequentemente escolhidas em vez do titânio para a superfície articular devido à sua 'Dureza Superficial' superior (escala Vickers). Por que motivo é a dureza mecânica um parâmetro crítico na interface de desgaste com o polietileno (UHMWPE)?",
+    "question": "Nas cânulas de traqueostomia com balão (cuff) de silicone de alta complacência, qual é a vantagem da sua resiliência elástica em ventilação invasiva?",
     "options": [
-      "A maior dureza superficial confere elevada resistência a riscos e arranhões microscópicos causados por partículas de osso ou cimento (terceiro corpo); uma superfície perfeitamente lisa e polida minimiza a taxa de desgaste abrasivo do inserto polimérico ao longo dos anos.",
-      "A dureza elevada faz com que a cabeça da prótese amoleça e se torne líquida para lubrificar a anca a 37 °C.",
-      "Quanto mais dura for a liga metálica, maior é a sua capacidade de absorver água intersticial como uma esponja hidrófila.",
-      "A dureza superficial anula o coeficiente de atrito cinético, garantindo que o atrito articular seja matematicamente zero."
+      "Expande livremente até rasgar as cartilagens traqueais para criar uma abertura cirúrgica secundária de ventilação mecânica.",
+      "Permite vedação hermética com pressões parietais controladas (20 a 30 cmH₂O), minimizando o risco de estenose e necrose traqueal.",
+      "Impede a passagem de oxigénio gasoso através do tubo, obrigando o doente a respirar unicamente por difusão cutânea periestomal.",
+      "Endurece progressivamente com a humidade da via aérea, convertendo-se num anel cerâmico permanente e rígido no pescoço."
     ],
-    "correctIndex": 0,
-    "explanation": "A dureza mede a resistência de um material à deformação plástica localizada na superfície (como indentação, riscos e abrasão). Embora o titânio tenha excelente biocompatibilidade e módulo elástico favorável na haste femoral, ele possui baixa dureza superficial e risca-se facilmente na presença de microfragmentos de cimento ósseo ou hidroxiapatite (desgaste por terceiro corpo). Se uma cabeça articular metálica ficar riscada, as suas arestas microscópicas atuam como uma lima contra o polietileno (UHMWPE), acelerando o desgaste abrasivo e libertando milhões de micropartículas poliméricas que desencadeiam osteólise macrofágica e descolamento precoce da prótese. A liga de Co-Cr-Mo (ou cerâmicas) é muito mais dura e preserva o polimento especular espelhado durante décadas.",
+    "correctIndex": 1,
+    "explanation": "O/A meias anti-embolia cirúrgicas brancas (TED stockings) atua na prática clínica através do seguinte mecanismo biomecânico: exercem pressão profilática de 18 mmHg no tornozelo e 8 mmHg na coxa para doentes acamados em pós-operatório sem mobilidade ativa.",
     "distractorAnalysis": [
-      "Está incorreta porque os metais cirúrgicos mantêm a sua estrutura sólida cristalina a temperaturas corporais normais ou febris.",
-      "Está incorreta porque as ligas metálicas são impermeáveis e não absorvem água líquida.",
-      "Está incorreta porque o coeficiente de atrito cinético de superfícies articulares artificiais é sempre superior a zero (típico de 0,05 a 0,10 entre metal e UHMWPE)."
+      "Está incorreta: pressões superiores à pressão de perfusão capilar traqueal (> 30 cmH₂O) causariam isquemia e fístulas graves.",
+      "Está incorreta: o objetivo do cuff é vedar o espaço peritubo para garantir que o volume corrente entra pela cânula traqueal.",
+      "Está incorreta: o silicone médico é inerte e mantém a sua flexibilidade elástica sem sofrer calcificação cerâmica na traqueia."
     ],
-    "nursingApplication": "O enfermeiro instrumentista manipula as cabeças femorais com extremo cuidado e exclusivamente com pinças de ponta protegida por teflon/silicone antes do encaixe: qualquer arranhão acidental de contacto com outro instrumento de aço acelera o desgaste futuro do polietileno no doente."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a meias anti-embolia cirúrgicas brancas (TED stockings): o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2194,
     "topicId": 2,
-    "question": "O líquido sinovial que preenche e lubrifica as articulações diartrodiais saudáveis (como o joelho) é um fluido biológico 'Não-Newtoniano Pseudoplástico e Tixotrópico' rico em ácido hialurónico e lubricina. Como se traduz esta propriedade reológica única na proteção articular durante o repouso versus a corrida?",
+    "question": "Na biomecânica postural humana em posição de pé (ortostatismo bipodal), como é transmitida a força peso do tronco à bacia e membros inferiores?",
     "options": [
-      "Em repouso ou a velocidades de movimento lentas (baixas taxas de cisalhamento), o líquido é viscoso e elástico como um gel, sustentando o peso corporal e amortecendo pressões; durante movimentos rápidos e intensos como a corrida (altas taxas de cisalhamento), a sua viscosidade diminui drasticamente, facilitando o deslizamento articular com mínimo atrito.",
-      "O líquido sinovial mantém rigorosamente a mesma viscosidade constante sob qualquer velocidade de movimento como se fosse água pura.",
-      "Sob movimento rápido o líquido sinovial evapora instantaneamente criando uma almofada de vapor a 100 °C dentro da cápsula articular.",
-      "Em repouso o líquido solidifica num bloco cristalino frágil que fratura a cápsula articular ao primeiro passo da manhã."
+      "Transfere-se integralmente para a sínfise púbica anterior que suporta 100% da carga gravitacional através de tração pura.",
+      "É anulada pelos ligamentos sacroisquiáticos, de modo que nenhuma força compressiva atinge os ossos do fémur e tíbia.",
+      "Divide-se pela articulação sacroilíaca para as asas ilíacas e cabeças femorais, funcionando a bacia como um arco estrutural de suporte.",
+      "Flui exclusivamente através do cóccix para o tecido celular subcutâneo perineal sem qualquer envolvimento dos ossos da cintura pélvica."
     ],
-    "correctIndex": 0,
-    "explanation": "Um fluido pseudoplástico (shear-thinning) caracteriza-se por uma viscosidade aparente que diminui à medida que a taxa de deformação ou velocidade de cisalhamento (shear rate) aumenta. Nas articulações humanas, as longas cadeias enroladas de hialuronano e glicoproteínas oferecem grande resistência mecânica ao escoamento em repouso e a baixas velocidades, atuando como um gel viscoelástico absorvente de choque hidrostático. Quando a articulação se move rapidamente (como na corrida ou salto), as forças de corte orientam as cadeias moleculares paralelamente à direção do fluxo; a viscosidade aparente cai em várias ordens de grandeza, permitindo um deslizamento articular suave com baixíssimo coeficiente de atrito e mínima dissipação térmica de energia.",
+    "correctIndex": 2,
+    "explanation": "O/A tiras adesivas esterilizadas de aproximação cutânea (Steri-Strips) atua na prática clínica através do seguinte mecanismo biomecânico: reforçadas com filamentos de poliéster para manter tensão de tração constante nas bordas da ferida após remoção precoce de pontos de sutura.",
     "distractorAnalysis": [
-      "Está incorreta porque fluidos com viscosidade constante independente da taxa de cisalhamento são designados 'fluidos Newtonianos' (como a água pura ou soros aquosos), o que não se aplica ao líquido sinovial.",
-      "Está incorreta porque o fluido sinovial permanece sempre em fase líquida viscoelástica à temperatura corporal fisiológica.",
-      "Está incorreta porque o líquido sinovial nunca solidifica em cristais sólidos no organismo saudável."
+      "Está incorreta: a sínfise púbica fecha o anel pélvico anteriormente mas a linha de carga passa pelas articulações sacroilíacas e anca.",
+      "Está incorreta: os membros inferiores suportam diretamente o peso do tronco, cabeça e membros superiores através do fémur.",
+      "Está incorreta: a transmissão óssea de carga realiza-se pelo anel pélvico e cabeças femorais e não pelas vértebras coccígeas."
     ],
-    "nursingApplication": "Na artrocentese ou administração intra-articular de ácido hialurónico (viscossuplementação) pelo médico/enfermeiro especialista em reumatologia, o objetivo é precisamente restaurar estas propriedades reológicas pseudoplásticas e viscoelásticas perdidas na osteoartrose."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a tiras adesivas esterilizadas de aproximação cutânea (Steri-Strips): o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2195,
     "topicId": 2,
-    "question": "Na transferência lateral de um doente acamado da cama para a maca de transporte, os profissionais de enfermagem utilizam frequentemente uma 'Prancha de Transferência Deslizante' (Roller Board ou prancha plástica de baixo atrito) em vez de puxar diretamente o doente sobre o lençol. Que princípio biofísico da mecânica do atrito fundamenta a redução drástica da força exigida à equipa?",
+    "question": "A abertura de frascos de medicamentos com tampas de segurança resistentes a crianças exige aplicação simultânea de duas forças mecânicas:",
     "options": [
-      "A prancha reduz substancialmente o Coeficiente de Atrito Cinético (μ_k) entre as superfícies de contacto; como a Força de Atrito é F_atrito = μ_k · N (onde N é a força normal devida ao peso do doente), diminuir o coeficiente reduz diretamente a força de tração necessária para mover o doente.",
-      "A prancha atua anulando 100% da massa corporal do doente durante a passagem através da maca.",
-      "A prancha gera uma força de propulsão eletromagnética que atira o doente autonomamente para o outro leito.",
-      "A prancha transforma a força de atrito numa força gravitacional dirigida para o teto da enfermaria."
+      "Força de tração ascendente de alta velocidade combinada com vibração sónica gerada pelo impacto dos dedos na embalagem.",
+      "Pressão hidrostática contínua aplicada com seringa de água estéril para dissolver o lacre plástico por eletrólise química.",
+      "Momento de torção exclusivamente horário com intensidade dez vezes superior ao peso corporal do profissional de saúde.",
+      "Força de compressão axial para engatar as cremalheiras internas combinada com um momento de torção para vencer o atrito da rosca."
     ],
-    "correctIndex": 0,
-    "explanation": "A força de atrito cinético que se opõe ao deslizamento de um corpo é governada pela lei de Amontons-Coulomb: F_atrito = μ_k · N, onde μ_k é o coeficiente de atrito cinético entre os materiais e N é a força normal de compressão (igual ao peso do doente numa superfície horizontal, N = m·g). O atrito direto tecido-tecido entre lençóis hospitalares de algodão tem um coeficiente μ_k elevado (~0,4 a 0,6), exigindo forças de tração superiores a 300-400 N para mover um doente de 80 kg. As pranchas plásticas especializadas com revestimento de polietileno de baixo atrito ou roletes rotativos reduzem o coeficiente μ_k para menos de 0,1 a 0,15, diminuindo a força de tração muscular necessária em mais de 60-70% e protegendo a coluna dos enfermeiros.",
+    "correctIndex": 3,
+    "explanation": "O/A módulo elástico de Young de próteses de titânio (E ~ 110 GPa) atua na prática clínica através do seguinte mecanismo biomecânico: rigidez intermediária entre o osso cortical (18 GPa) e o aço cirúrgico (200 GPa), reduzindo o fenómeno de 'stress shielding' ou reabsorção óssea periprotésica por desuso mecânico.",
     "distractorAnalysis": [
-      "Está incorreta porque a massa e o peso do doente continuam rigorosamente os mesmos (a força normal N não se anula).",
-      "Está incorreta porque as pranchas deslizantes são dispositivos puramente mecânicos passivos desprovidos de motores ou magnetos.",
-      "Está incorreta porque o atrito atua sempre no plano tangencial paralelamente às superfícies de contacto e opõe-se ao movimento relativo, não apontando para cima."
+      "Está incorreta: o sistema de segurança (push-and-turn) requer pressão axial descendente de engate e rotação e não tração sónica.",
+      "Está incorreta: o mecanismo é puramente físico de engrenagem mecânica e não depende de dissolução eletrolítica por água.",
+      "Está incorreta: o desaperto da tampa faz-se habitualmente no sentido anti-horário com forças manuais perfeitamente acessíveis."
     ],
-    "nursingApplication": "A utilização sistemática de auxiliares mecânicos de baixo atrito (pranchas deslizantes e lençóis de transferência tubular de náilon) é uma norma fundamental de saúde ocupacional em enfermagem, prevenindo lesões da coluna lombar nos profissionais e evitando forças de cisalhamento na pele do doente."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a módulo elástico de Young de próteses de titânio (E ~ 110 GPa): o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2196,
     "topicId": 2,
-    "question": "Na entubação nasogástrica para nutrição entérica prolongada, utilizam-se sondas finas (calibre 8 a 10 Fr) fabricadas em poliuretano flexível com um 'Fio-Guia' (mandril metálico ou estilete de aço). Qual é a justificação biofísica da mecânica dos materiais para o uso do estilete metálico durante a inserção e a sua obrigatoriedade de remoção após a colocação?",
+    "question": "Qual é o princípio biofísico de funcionamento das almofadas de espuma viscoelástica moldada para utilizadores de cadeira de rodas?",
     "options": [
-      "O poliuretano é extremamente maleável e possui baixa rigidez à flexão; o fio-guia de aço fornece temporariamente a rigidez axial e a resistência à flexão necessárias para empurrar a sonda através da orofaringe sem que esta dobre ou enrole na boca; após a colocação correta, o estilete é removido para que a sonda recupere a sua flexibilidade atraumática.",
-      "O fio-guia serve unicamente para conduzir eletricidade estática do estômago para o exterior da narina.",
-      "A sonda de poliuretano dissolve-se espontaneamente caso o fio metálico permaneça no seu interior por mais de 5 minutos.",
-      "O estilete deve ser deixado permanentemente dentro da sonda durante toda a alimentação para manter a fórmula alimentar morna."
+      "Deformam-se lentamente sob as tuberosidades isquiáticas maximizando a área de contacto, o que reduz os picos locais de pressão tecidual.",
+      "Exercem uma força ascendente ativa que mantém o doente permanentemente suspenso sem qualquer contacto físico com o assento.",
+      "Apresentam Módulo de Young infinito que impede qualquer deformação geométrica da almofada sob o peso do paciente acamado.",
+      "Convertem a energia gravitacional do utilizador em calor a 45 °C para aumentar a sudorese e reduzir o peso corporal por desidratação."
     ],
     "correctIndex": 0,
-    "explanation": "A rigidez à flexão de um tubo cilíndrico depende do Módulo de Young (E) do material e do seu momento de inércia de área (I): Rigidez = E · I. As sondas entéricas de poliuretano de pequeno calibre (8-10 Fr) têm paredes muito finas e baixo módulo elástico para garantir o conforto do doente e prevenir necrose das asas do nariz e esofagite por decúbito. Contudo, essa extrema maleabilidade faz com que a sonda sofra encurvamento e colapso por flambagem (buckling) sob qualquer resistência suave na faringe. O fio-guia de aço inoxidável possui um Módulo de Young cerca de 70 a 100 vezes superior ao do poliuretano (~200 GPa vs ~2 GPa), conferindo a rigidez longitudinal indispensável para direcionar a ponta atraumática até ao estômago. Uma vez no estômago e confirmada a posição por radiografia/pH, o estilete tem de ser retirado para devolver à sonda a sua segurança biológica flexível.",
+    "explanation": "O/A propriedades de fluência (creep) dos discos intervertebrais atua na prática clínica através do seguinte mecanismo biomecânico: perda progressiva de água sob a carga vertical durante o dia com diminuição da altura do disco, recuperando a hidratação e a espessura elástica durante o repouso noturno no leito.",
     "distractorAnalysis": [
-      "Está incorreta porque as sondas nasogástricas não conduzem cargas elétricas nem têm finalidade eletrostática.",
-      "Está incorreta porque o poliuretano médico é quimicamente inerte e estável em contacto com aço inoxidável e secreções digestivas.",
-      "Está incorreta porque deixar o fio-guia durante a alimentação causaria obstrução do lúmen, perfuração esofágica por rigidez e impossibilitaria a perfusão de dieta entérica."
+      "Está incorreta: a almofada atua por distribuição passiva da força peso sobre uma área ampliada (P = F/A) e não por levitação.",
+      "Está incorreta: a eficácia da espuma viscoelástica reside justamente na sua complacência e capacidade de adaptação anatómica.",
+      "Está incorreta: o sobreaquecimento da pele e a maceração pelo suor agravariam o risco de desenvolvimento de lesões por pressão."
     ],
-    "nursingApplication": "O enfermeiro nunca deve reintroduzir o fio-guia metálico com a sonda já colocada no doente: se a sonda tiver dobrado ou saído parcialmente, a ponta rígida do estilete pode perfurar a parede lateral da sonda e causar uma laceração ou perfuração esofágica/brônquica fatal."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a propriedades de fluência (creep) dos discos intervertebrais: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2197,
     "topicId": 2,
-    "question": "Nas próteses externas modernas de membros inferiores para doentes amputados (como próteses transtibiais de corrida ou marcha rápida), a lâmina elástica do pé protético é habitualmente fabricada em material compósito de 'Fibra de Carbono reforçada com resina epóxi' (CFRP). Que propriedades mecânicas combinadas tornam este compósito superior ao aço ou madeira?",
+    "question": "Devido ao comportamento viscoelástico dos ligamentos articulares humanos, o que sucede quando a taxa de deformação (velocidade de carga) aumenta?",
     "options": [
-      "Excepcional relação rigidez/peso (elevado Módulo de Young específico), alta resistência à fadiga cíclica e grande capacidade de devolução de energia elástica (alta resiliência com baixa histerese).",
-      "É um material líquido inflamável que se expande por combustão espontânea a cada passo do doente.",
-      "Comporta-se como um imã supercondutor que repele o solo por levitação magnética gravitacional.",
-      "Apresenta rigidez estritamente nula, dobrando-se como papel fino sem conseguir suster qualquer fração do peso corporal."
+      "O ligamento amolece instantaneamente e rompe-se com uma força tênsil significativamente inferior à suportada em repouso estático.",
+      "O ligamento torna-se mais rígido e suporta maior carga de tração antes da rotura, transferindo frequentemente a lesão para o osso.",
+      "O tecido perde todo o seu colagénio tipo I por vaporização celular instantânea provocada pelo atrito biomecânico intra-articular.",
+      "A resposta mecânica é estritamente idêntica independentemente da velocidade do movimento, pois os ligamentos são perfeitamente elásticos."
     ],
-    "correctIndex": 0,
-    "explanation": "Os materiais compósitos de fibra de carbono combinam filamentos de carbono com elevadíssima resistência à tração e rigidez (alinhados na direção das linhas de carga) embebidos numa matriz de resina polimérica. Esta estrutura anisotrópica proporciona um Módulo de Young e uma resistência mecânica comparáveis ou superiores aos dos melhores aços cirúrgicos, mas com uma densidade cerca de quatro a cinco vezes menor (peso muito reduzido). Além disso, a fibra de carbono apresenta excelente resistência à fadiga mecânica após milhões de ciclos de impacto e comporta-se como uma mola de alta resiliência (com baixíssima perda de energia por histerese), absorvendo a energia cinética da descida do calcanhar e devolvendo-a elasticamente como impulso na fase de descolamento dos dedos na marcha.",
+    "correctIndex": 1,
+    "explanation": "O/A elasticidade das paredes arteriais no envelhecimento (arteriosclerose) atua na prática clínica através do seguinte mecanismo biomecânico: substituição das fibras de elastina por fibras rígidas de colagénio, aumentando o Módulo de Young arterial e elevando a pressão arterial de pulso (sistólica muito alta com diastólica normal ou baixa).",
     "distractorAnalysis": [
-      "Está incorreta porque os compósitos de fibra de carbono polimerizados são biomateriais sólidos estruturais estáveis e seguros, totalmente não-inflamáveis em uso clínico.",
-      "Está incorreta porque o pé protético opera por mecânica newtoniana de contacto elástico e atrito com o solo, sem levitação supercondutora.",
-      "Está incorreta porque a lâmina de carbono suporta forças de impacto de mais de 2000 a 3000 N na corrida sem quebra estrutural."
+      "Está incorreta: materiais viscoelásticos aumentam a sua rigidez (Módulo de Young aparente) com a velocidade de deformação.",
+      "Está incorreta: o aumento da taxa de carga reforça a rigidez tênsil ligamentar, resultando muitas vezes em arrancamento ósseo (avulsão).",
+      "Está incorreta: tecidos biológicos exibem dependência viscoelástica do tempo e taxa de deformação, não sendo puramente elásticos."
     ],
-    "nursingApplication": "Ao promover o treino de marcha com prótese no doente amputado, o enfermeiro ensina o doente a confiar na flexão elástica da lâmina de carbono, aproveitando a devolução biomecânica de energia para poupar o consumo metabólico de oxigénio na locomoção."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a elasticidade das paredes arteriais no envelhecimento (arteriosclerose): o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2198,
     "topicId": 2,
-    "question": "Na drenagem torácica fechada com aspiração ativa contínua (ex: sistema de três câmaras ligado a vácuo hospitalar com pressão negativa de -15 a -20 cmH₂O), o tubo do dreno deve possuir uma geometria e módulo elástico calibrados para não sofrer 'Colapso por Pressão Negativa Transmural'. O que dita biofisicamente a resistência de um tubo flexível ao colapso mecânico sob vácuo externo?",
+    "question": "Na cirurgia vascular e procedimentos de enfermagem, qual é a finalidade das molas calibradas em pinças de clampeamento temporário (Bulldog)?",
     "options": [
-      "A espessura da parede do tubo em relação ao seu raio interno e o Módulo de Young do material; um tubo com parede suficientemente espessa e módulo adequado resiste à pressão transmural sem que o seu lúmen oclua sob sucção.",
-      "A cor da linha radiopaca pintada na superfície externa do cateter torácico.",
-      "A quantidade de glóbulos brancos presentes no líquido de drenagem sero-hemático.",
-      "A temperatura ambiente da sala de recobro onde o doente se encontra deitado."
+      "Aumentar progressivamente a força de compressão ao longo do tempo até cortar transversalmente o vaso sanguíneo como uma guilhotina.",
+      "Transmitir corrente galvânica para cauterizar as artérias circundantes através de choque elétrico gerado pela mola metálica.",
+      "Exercer uma pressão de oclusão endotelial controlada suficiente para travar o fluxo sem esmagar ou lacerar a parede do vaso.",
+      "Injetar soluções anticoagulantes diretamente no lúmen arterial através de microcanais porosos situados nos dentes de aperto."
     ],
-    "correctIndex": 0,
-    "explanation": "A pressão crítica de colapso (buckling) de uma tubuladura cilíndrica sob gradiente de pressão transmural externa/interna é governada pela teoria da estabilidade elástica: a resistência ao colapso é diretamente proporcional ao Módulo de Young (E) do elastómero (silicone de grau médico com dureza Shore adequada) e proporcional ao cubo da razão entre a espessura da parede (h) e o raio (r) do tubo: P_crítico ∝ E · (h/r)³. Se a parede de um dreno torácico for demasiado fina ou maleável, a pressão negativa intrapleural e de aspiração colapsa as paredes do tubo, bloqueando a luz do cateter e impedindo a evacuação de ar ou sangue, o que pode culminar num pneumotórax hipertensivo fatal.",
+    "correctIndex": 2,
+    "explanation": "O/A suturas metálicas de agrafos cirúrgicos de aço atua na prática clínica através do seguinte mecanismo biomecânico: apresentam comportamento puramente plástico no fecho com o agrafador mecânico, mantendo as bordas da pele coaptadas sem retorno elástico.",
     "distractorAnalysis": [
-      "Está incorreta porque a linha radiopaca tem apenas finalidade de visualização em radiografia de tórax, não alterando a rigidez estrutural ao colapso.",
-      "Está incorreta porque a resistência mecânica do tubo é uma propriedade intrínseca da parede do polímero, independente da contagem celular do fluido drenado.",
-      "Está incorreta porque variações térmicas ambientes normais têm efeito negligenciável na rigidez da parede de silicone vulcanizado."
+      "Está incorreta: as pinças Bulldog destinam-se à hemostase temporária reversível e atraumática sem corte ou esmagamento vascular.",
+      "Está incorreta: o dispositivo é puramente mecânico de contenção elástica por mola e não emite correntes elétricas de cauterização.",
+      "Está incorreta: a pinça é um instrumento de preensão externa sólida sem circuitos de infusão farmacológica intraluminal."
     ],
-    "nursingApplication": "O enfermeiro monitoriza visualmente todo o trajeto do sistema de drenagem torácica para assegurar que não existem acotovelamentos, colapsos de parede ou pinçamentos acidentais da tubuladura, mantendo a descompressão torácica contínua e segura."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a suturas metálicas de agrafos cirúrgicos de aço: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2199,
     "topicId": 2,
-    "question": "No pós-operatório de cirurgia ortopédica dos membros com risco elevado de edema tecidual volumoso, o enfermeiro aplica pensos compressivos utilizando fitas cirúrgicas de 'Microespuma Elástica' (Microfoam) com capacidade de alongamento multidirecional. Qual é o benefício biofísico deste biomaterial elástico comparativamente a fitas adesivas rígidas de papel ou seda?",
+    "question": "Em intervenções de saúde prolongadas, por que razão as luvas cirúrgicas de látex ou borracha sintética devem ser trocadas periodicamente?",
     "options": [
-      "A fita de microespuma possui baixo Módulo de Young e elevada complacência elástica bidirecional, expandindo-se suavemente à medida que o membro edemacia; isto evita o desenvolvimento de tensões extremas de cisalhamento dérmico na interface adesivo-pele, prevenindo a formação de flictenas (bolhas de tração epiteliais).",
-      "A microespuma atua gerando vácuo absoluto que impede qualquer formação de edema biológico inflamatório.",
-      "A fita de espuma queima a pele por libertação de ácido clorídrico esterilizante controlado.",
-      "O material é indeformável e aplica uma compressão de 300 mmHg que bloqueia totalmente a circulação arterial do membro operado."
+      "As luvas sofrem um aumento descontrolado de espessura que bloqueia totalmente a sensibilidade tátil e a circulação dos dedos.",
+      "O material polimérico funde-se irreversivelmente com as proteínas da pele do profissional ao fim de trinta minutos contínuos.",
+      "As luvas perdem a sua massa atómica por evaporação dos monómeros de borracha no ar condicionado da sala operatória.",
+      "A fadiga mecânica elástica e o estiramento repetido provocam microperfurações microscópicas que comprometem a barreira biológica estanque."
     ],
-    "correctIndex": 0,
-    "explanation": "Quando um membro operado desenvolve edema pós-cirúrgico, o seu perímetro e volume aumentam progressivamente. Se o penso estiver fixado com fita adesiva inelástica rígida (alto Módulo de Young, como adesivo de tecido de seda ou papel convencional), a expansão dos tecidos estica a pele contra a fita que não cede; na borda do adesivo desenvolve-se uma enorme concentração de tensão de cisalhamento tangencial (shear stress) que separa a epiderme da derme, originando bolhas de tensão traumáticas (flictenas por tração / tape blisters) e risco de infeção. As fitas de microespuma elástica de célula fechada esticam elasticamente em todas as direções acompanhando o aumento do raio do membro com tensão suave e controlada, dissipando as forças de cisalhamento.",
+    "correctIndex": 3,
+    "explanation": "O/A comportamento reológico do líquido sinovial articular atua na prática clínica através do seguinte mecanismo biomecânico: fluido pseudoplástico rico em ácido hialurónico que é altamente viscoso em repouso (lubrificação protetora) e torna-se fluido e pouco viscoso sob movimento rápido (mínima fricção articular).",
     "distractorAnalysis": [
-      "Está incorreta porque o edema é uma resposta fisiológica vascular e osmótica normal que nenhum adesivo estático consegue anular.",
-      "Está incorreta porque os adesivos de microespuma hospitalares são biocompatíveis, hipoalergénicos e isentos de ácidos tóxicos.",
-      "Está incorreta porque pressões de 300 mmHg ocluiriam todo o fluxo arterial provocando isquemia aguda do membro, sendo clinicamente inaceitáveis."
+      "Está incorreta: as luvas sofrem atenuação e perda de espessura por estiramento mecânico e fadiga e não dilatação volumétrica.",
+      "Está incorreta: os elastómeros médicos não se fundem à pele humana nem colam irreversivelmente sob temperaturas fisiológicas normais.",
+      "Está incorreta: a troca periódica recomendada visa prevenir a quebra da barreira estéril por microfissuras decorrentes de fadiga mecânica."
     ],
-    "nursingApplication": "Ao fixar pensos pós-operatórios sobre articulações ou áreas suscetíveis a edema, o enfermeiro aplica a fita elástica de microespuma sem estirar excessivamente durante a colagem ('aplicação sem tensão prévia'), permitindo que a reserva elástica do material acomode o edema subsequente do doente sem lesões cutâneas."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a comportamento reológico do líquido sinovial articular: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   },
   {
     "id": 2200,
     "topicId": 2,
-    "question": "Um carrinho elevador elétrico de transferência de doentes (guindaste hospitalar) utiliza um atuador linear elétrico ou pistão hidráulico ligado a um braço mecânico de aço longo articulado na coluna vertical de suporte. Como se explica a Vantagem Mecânica (VM) deste dispositivo que permite a um único profissional de enfermagem erguer com segurança e suavidade um doente bariátrico de 150 kg (~1470 N)?",
+    "question": "Como se sintetiza a importância dos conceitos de alavancas, elasticidade e biomateriais para a prática avançada de enfermagem?",
     "options": [
-      "O sistema atua como uma alavanca mecânica combinada com uma prensa hidráulica/atuador mecânico de parafuso sem-fim com elevadíssima Vantagem Mecânica (VM = F_saída / F_entrada >> 1), onde uma força motriz relativamente pequena do motor/pistão aplicada com pequeno deslocamento gera um momento de força massivo capaz de elevar e equilibrar grandes cargas na tela de suspensão.",
-      "O guindaste opera por equilíbrio de planos inclinados passivos onde o atrito estático da tela dissipa a totalidade do peso do doente.",
-      "O doente perde 99% da sua massa assim que é acomodado na tela de tecido de poliéster do guindaste.",
-      "O sistema funciona como uma alavanca de 3.ª classe com desvantagem mecânica severa que exige que o enfermeiro puxe a tela com força equivalente a 5000 N."
+      "Permitem fundamentar a ergonomia de posicionamento e transferências, operar instrumentos com segurança e escolher biomateriais adequados.",
+      "Constituem conhecimentos puramente abstratos destinados apenas a cálculos teóricos de física sem aplicação na assistência ao doente.",
+      "Servem exclusivamente para dispensar o uso de luvas, batas e equipamento de proteção em doentes com infeções multirresistentes.",
+      "Permitem aos enfermeiros calcular a órbita de satélites espaciais para monitorização remota de electrocardiogramas hospitalares."
     ],
     "correctIndex": 0,
-    "explanation": "Os elevadores mecânicos de doentes combinam princípios fundamentais da mecânica das alavancas e da transmissão de potência fluídica ou eletromecânica. O braço de elevação é uma barra rígida de aço articulada num ponto de rotação (fulcro); o pistão ou atuador linear acoplado ao motor elétrico aplica uma força de entrada potente de grande magnitude com avanço milimétrico controlado num ponto do braço, gerando um momento de força angular que ergue a extremidade livre onde a tela com o doente está suspensa. A Vantagem Mecânica global do sistema (relação entre a força de elevação da carga e a força despendida pelo operador ou bateria) é muito superior a 1, permitindo a transferência controlada de doentes pesados com risco mecânico zero para a musculatura lombar da equipa de saúde.",
+    "explanation": "O/A tubos de aspiração cirúrgica de silicone médico reforçado com espiral atua na prática clínica através do seguinte mecanismo biomecânico: a espiral rígida de aço ou polímero impede o colapso do tubo sob vácuo de alta sucção (resistência à pressão negativa de colapso).",
     "distractorAnalysis": [
-      "Está incorreta porque o plano inclinado e o atrito não anulam a força peso (P = m·g), sendo a carga sustentada pelo braço de aço e pelo mecanismo hidráulico.",
-      "Está incorreta porque a massa do doente é invariante e o peso (F = m·g) mantém-se integralmente.",
-      "Está incorreta porque os guindastes hospitalares são desenhados para proteger o trabalhador, dispensando esforços físicos manuais pesados."
+      "Está incorreta: a física e biomecânica aplicada são alicerces essenciais dos cuidados de enfermagem e da segurança dos doentes e profissionais.",
+      "Está incorreta: as regras de assepsia e equipamentos de proteção individual são independentes das leis biomecânicas da matéria.",
+      "Está incorreta: os conceitos abordados focam a biomecânica humana, instrumentação e dispositivos médicos no contexto da saúde."
     ],
-    "nursingApplication": "O uso de guindastes mecânicos para doentes dependentes é uma competência essencial de enfermagem ergonómica: o profissional deve sempre verificar a estabilidade da base aberta das rodas e o correto engate das tiras da tela antes de iniciar a elevação biomecânica."
+    "nursingApplication": "O enfermeiro vigia o desempenho do/a tubos de aspiração cirúrgica de silicone médico reforçado com espiral: o domínio destas propriedades assegura a prevenção de complicações vasculares, necrose de tecidos e falhas mecânicas durante os cuidados diários de saúde."
   }
 ];
