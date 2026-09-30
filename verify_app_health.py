@@ -15,7 +15,7 @@ def test_app():
     with open("index.html", "r", encoding="utf-8") as f:
         html = f.read()
 
-    scripts = re.findall(r'<script src="([^"]+)"></script>', html)
+    scripts = [s.split('?')[0] for s in re.findall(r'<script src="([^"]+)"></script>', html)]
     expected_scripts = [
         'js/data/topic1.js',
         'js/data/topic2.js',
