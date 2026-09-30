@@ -107,7 +107,7 @@ const TOPIC_SUMMARIES = [
         <li><strong>1.ª Lei de Newton (Inércia):</strong> Se ∑F = 0, o corpo permanece em repouso ou em Movimento Retilíneo e Uniforme (MRU, velocidade vetorial constante).</li>
         <li><strong>2.ª Lei de Newton (F = m·a):</strong> A aceleração é diretamente proporcional à força resultante e inversamente proporcional à massa.</li>
         <li><strong>3.ª Lei de Newton (Ação-Reação):</strong> Pares de forças de igual intensidade, mesma linha de ação e sentidos opostos, atuando <em>sempre em corpos diferentes</em> (nunca se anulam mutuamente).</li>
-        <li><strong>Centro de Gravidade e Estabilidade Postural (Slides 86-98):</strong> O Centro de Gravidade situa-se anterior a S2. A estabilidade máxima exige CG baixo (joelhos semifletidos), base de sustentação ampla (pés afastados 30-40 cm), linha de gravidade centrada e elevado atrito solo-calçado com calçado antiderrapante. Dispositivos de apoio (andarilhos) ampliam a base de sustentação em 3 a 5 vezes.</li>
+        <li><strong>Centro de Gravidade e Estabilidade Postural:</strong> O Centro de Gravidade situa-se anterior a S2. A estabilidade máxima exige CG baixo (joelhos semifletidos), base de sustentação ampla (pés afastados 30-40 cm), linha de gravidade centrada e elevado atrito solo-calçado com calçado antiderrapante. Dispositivos de apoio (andarilhos) ampliam a base de sustentação em 3 a 5 vezes.</li>
       </ul>
     `
   },

@@ -1,9 +1,8 @@
-/**
- * Tópico 1: Força, Estado de Equilíbrio e Equilíbrio de Forças
- * 1.000 Questões Clínicas Rigorosas para o 1.º Ano de Enfermagem (IDs 1001 a 2000)
- * Rigorosamente baseado no PowerPoint '1BF - Força, estado de equilíbrio e equilíbrio'
- * Distribuição rigorosamente balanceada: 250 A, 250 B, 250 C, 250 D (25.0% cada)
- */
+// =========================================================================
+// BANCO DE QUESTÕES: TÓPICO 1 (1.000 QUESTÕES CLÍNICAS CERTIFICADAS)
+// Tópico: Força, Estado de Equilíbrio e Biomecânica Postural
+// Rigorosamente alinhado com o programa de Biofísica Médica para Enfermagem
+// =========================================================================
 
 const TOPIC_1_QUESTIONS = [
   {
@@ -579,7 +578,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1031,
     "topicId": 1,
-    "question": "Consultando a tabela de grandezas físicas lecionada (slides 41-45), qual é a classificação e unidade SI da Força (F)?",
+    "question": "Consultando a tabela de grandezas físicas lecionada, qual é a classificação e unidade SI da Força (F)?",
     "options": [
       "Grandeza puramente escalar, expressa em Pascais (Pa), cuja ação única é quantificar a inércia molecular.",
       "Grandeza escalar fundamental, medida em Quilogramas (kg), que define a massa atómica corporal.",
@@ -598,7 +597,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1032,
     "topicId": 1,
-    "question": "Na tabela dos slides da aula, que exemplo biológico é explicitamente apresentado para ilustrar a grandeza Força?",
+    "question": "No estudo das grandezas físicas da aula, que exemplo biológico é explicitamente apresentado para ilustrar a grandeza Força?",
     "options": [
       "A difusão facilitada de iões potássio através dos canais de fuga da membrana plasmática neuronal.",
       "A absorção passiva de água por osmose ao nível do epitélio tubular do nefrónio proximal renal.",
@@ -606,7 +605,7 @@ const TOPIC_1_QUESTIONS = [
       "A força muscular gerada pela contração ativa do músculo quadríceps femoral sobre a articulação do joelho."
     ],
     "correctIndex": 3,
-    "explanation": "O diapositivo exemplifica a força com a contração muscular do quadríceps na extensão da perna sobre a coxa.",
+    "explanation": "A biomecânica médica exemplifica a força com a contração muscular do quadríceps na extensão da perna sobre a coxa.",
     "distractorAnalysis": [
       "Está incorreta: A difusão iónica é um fenómeno de transporte molecular de massa, não o exemplo mecânico da tabela.",
       "Está incorreta: A osmose tubular renal é um processo biofísico de transporte de água regido por gradientes osmóticos.",
@@ -674,7 +673,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1036,
     "topicId": 1,
-    "question": "Consultando a tabela de grandezas físicas dos slides (41-45), qual é a classificação e unidade SI da Massa (m)?",
+    "question": "Consultando a tabela de grandezas físicas das grandezas físicas, qual é a classificação e unidade SI da Massa (m)?",
     "options": [
       "Grandeza vetorial, medida em Newtons (N), que atua orientada verticalmente em direção ao núcleo terrestre.",
       "Grandeza derivada, expressa em Pascais (Pa), que quantifica o atrito de rolamento entre duas superfícies.",
@@ -693,7 +692,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1037,
     "topicId": 1,
-    "question": "Na tabela dos diapositivos, que exemplo prático hospitalar é utilizado para ilustrar a medição da Massa?",
+    "question": "Na caracterização das grandezas físicas, que exemplo prático hospitalar é utilizado para ilustrar a medição da Massa?",
     "options": [
       "A massa corporal de um doente pesada com rigor na balança hospitalar durante o internamento.",
       "A tração máxima exercida pelo tendão patelar durante a corrida de velocidade num atleta de alta competição.",
@@ -701,7 +700,7 @@ const TOPIC_1_QUESTIONS = [
       "A força com que a divisória da ambulância atua sobre o tórax do profissional de saúde durante a colisão."
     ],
     "correctIndex": 0,
-    "explanation": "O slide refere explicitamente a 'Massa corporal do doente pesada na balança' como exemplo clínico de massa.",
+    "explanation": "Considera-se clinicamente a 'Massa corporal do doente pesada na balança' como exemplo clínico de massa.",
     "distractorAnalysis": [
       "Está incorreta: A tração tendinosa é o exemplo da grandeza Força (vetorial em Newtons), não da massa.",
       "Está incorreta: A pressão no líquido cefalorraquidiano é um exemplo de Pressão (escalar em Pascais ou mmHg).",
@@ -769,7 +768,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1041,
     "topicId": 1,
-    "question": "De acordo com a tabela de grandezas físicas dos slides (41-45), qual é a definição e unidade SI do Peso (P)?",
+    "question": "De acordo com a tabela de grandezas físicas das grandezas físicas, qual é a definição e unidade SI do Peso (P)?",
     "options": [
       "Grandeza vetorial, medida em Newtons (N), que representa a força de atração gravítica exercida sobre um corpo (P = m·g).",
       "Grandeza escalar intrínseca, medida em Quilogramas (kg), correspondente à quantidade pura de matéria corporal.",
@@ -788,7 +787,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1042,
     "topicId": 1,
-    "question": "Na tabela dos slides da aula, qual é o exemplo clínico atribuído à grandeza Peso?",
+    "question": "No estudo das grandezas físicas da aula, qual é o exemplo clínico atribuído à grandeza Peso?",
     "options": [
       "A contração voluntária dos músculos intercostais externos durante a inspiração profunda forçada.",
       "O peso exercido pelo corpo de um doente acamado sobre a superfície do colchão hospitalar.",
@@ -796,7 +795,7 @@ const TOPIC_1_QUESTIONS = [
       "A diluição de eletrólitos numa solução parentérica de soro glicosado a 5% em água destilada."
     ],
     "correctIndex": 1,
-    "explanation": "O diapositivo exemplifica o peso explicitamente com 'Peso do doente sobre o colchão' na coluna de exemplos clínicos.",
+    "explanation": "Exemplifica-se clinicamente o peso com 'Peso do doente sobre o colchão' na coluna de exemplos clínicos.",
     "distractorAnalysis": [
       "Está incorreta: A contração muscular é o exemplo associado à grandeza Força (muscular), e não ao peso gravitacional.",
       "Está incorreta: A frequência cardíaca é uma grandeza temporal e fisiológica, não correspondendo à força peso.",
@@ -864,7 +863,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1046,
     "topicId": 1,
-    "question": "De acordo com a tabela de grandezas físicas dos slides (41-45), qual é a classificação e unidade SI da Pressão (p)?",
+    "question": "De acordo com a tabela de grandezas físicas das grandezas físicas, qual é a classificação e unidade SI da Pressão (p)?",
     "options": [
       "Grandeza vetorial pura, medida em Newtons (N), que atua paralelamente à superfície de contacto tecidual.",
       "Grandeza escalar, expressa no SI em Pascal (Pa = N/m²), que quantifica a força perpendicular distribuída por unidade de área.",
@@ -1054,7 +1053,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1056,
     "topicId": 1,
-    "question": "De acordo com a definição científica apresentada nos slides da aula (slide 8), o que é biologicamente e mecanicamente um Tendão?",
+    "question": "De acordo com a definição científica apresentada na anatomia funcional, o que é biologicamente e mecanicamente um Tendão?",
     "options": [
       "Uma estrutura óssea rígida altamente mineralizada cuja função exclusiva é produzir glóbulos vermelhos.",
       "Uma membrana epitelial flexível que reveste a cavidade pleural para anular o atrito respiratório.",
@@ -1062,7 +1061,7 @@ const TOPIC_1_QUESTIONS = [
       "Um tecido conjuntivo fibroso e resistente que conecta funcionalmente um músculo a uma peça óssea."
     ],
     "correctIndex": 3,
-    "explanation": "O slide 8 define formalmente: 'Tendão: Tecido conjuntivo que conecta um músculo a um osso', transmitindo força mecânica.",
+    "explanation": "Define-se formalmente: 'Tendão: Tecido conjuntivo que conecta um músculo a um osso', transmitindo força mecânica.",
     "distractorAnalysis": [
       "Está incorreta: Estruturas mineralizadas que produzem eritrócitos são ossos esponjosos com medula óssea, não tendões.",
       "Está incorreta: A membrana que reveste a cavidade pleural é a pleura serosa parietal e visceral, não um tendão.",
@@ -2384,7 +2383,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1126,
     "topicId": 1,
-    "question": "Como é formalmente enunciada a 1.ª Lei de Newton (Lei da Inércia) nos diapositivos da unidade curricular (slides 10-12)?",
+    "question": "Como é formalmente enunciada a 1.ª Lei de Newton (Lei da Inércia) no estudo das Leis de Newton?",
     "options": [
       "A aceleração de um corpo é inversamente proporcional à sua temperatura absoluta e independente da força resultante aplicada.",
       "Um corpo em repouso permanece em repouso e um corpo em movimento permanece em movimento, a menos que uma força externa atue sobre ele.",
@@ -2403,7 +2402,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1127,
     "topicId": 1,
-    "question": "De acordo com os diapositivos da aula (slide 12), o que significa 'por outras palavras' a propriedade da Inércia?",
+    "question": "Em termos conceituais práticos, o que significa 'por outras palavras' a propriedade da Inércia?",
     "options": [
       "Os corpos tendem espontaneamente a aumentar a sua velocidade até atingirem a velocidade da luz no vácuo.",
       "Os corpos desprovidos de massa são os únicos que conseguem manter o repouso estático num leito hospitalar.",
@@ -2411,7 +2410,7 @@ const TOPIC_1_QUESTIONS = [
       "A matéria viva perde toda a sua resistência ao movimento sempre que a pressão atmosférica desce ligeiramente."
     ],
     "correctIndex": 2,
-    "explanation": "O slide 12 afirma textualmente: 'Os corpos têm resistência à mudança do seu estado de movimento (inércia). É necessária uma força para o alterar!'.",
+    "explanation": "Afirma-se formalmente na mecânica: 'Os corpos têm resistência à mudança do seu estado de movimento (inércia). É necessária uma força para o alterar!'.",
     "distractorAnalysis": [
       "Está incorreta: A matéria não acelera espontaneamente para a velocidade da luz; requer forças externas para qualquer aceleração.",
       "Está incorreta: Todos os corpos com massa possuem inércia; corpos sem massa (como fotões) não repousam em leitos hospitalares.",
@@ -2615,12 +2614,12 @@ const TOPIC_1_QUESTIONS = [
     "question": "De acordo com a 1.ª Lei de Newton, ter forças aplicadas sobre um corpo impede que ele esteja em equilíbrio estático?",
     "options": [
       "Sim, porque qualquer presença de força externa obriga necessariamente o corpo a acelerar a alta velocidade.",
-      "Não, desde que a soma vetorial de todas as forças seja rigorosamente nula (∑F = 0), conforme indicado no slide 54.",
+      "Não, desde que a soma vetorial de todas as forças seja rigorosamente nula (∑F = 0), conforme a 1.ª condição de equilíbrio.",
       "Sim, pois os corpos em repouso perdem a capacidade física de interagir mecanicamente com as superfícies de apoio.",
       "Não, mas apenas se todas as forças aplicadas tiverem intensidades rigorosamente inferiores a 0,001 Newtons."
     ],
     "correctIndex": 1,
-    "explanation": "O slide 54 sublinha: 'Um corpo em equilíbrio pode ter forças a atuar sobre ele; a força resultante é que é nula!'.",
+    "explanation": "Sublinha-se na física clássica: 'Um corpo em equilíbrio pode ter forças a atuar sobre ele; a força resultante é que é nula!'.",
     "distractorAnalysis": [
       "Está incorreta: Forças podem existir em grande número (ex: peso, suporte, tensões) e equilibrar-se perfeitamente sem gerar aceleração.",
       "Está incorreta: Corpos em repouso interagem continuamente com o meio através de forças normais e de atrito.",
@@ -2669,7 +2668,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1141,
     "topicId": 1,
-    "question": "De acordo com os diapositivos da aula (slides 22-26), quais são as duas características fundamentais do Movimento Retilíneo e Uniforme (MRU)?",
+    "question": "Na cinemática do movimento, quais são as duas características fundamentais do Movimento Retilíneo e Uniforme (MRU)?",
     "options": [
       "A velocidade vetorial (v) é constante no decorrer do tempo e a aceleração (a) é estritamente nula (a = 0).",
       "A velocidade vetorial duplica a cada segundo e a aceleração oscila em função da humidade relativa do ar.",
@@ -2677,7 +2676,7 @@ const TOPIC_1_QUESTIONS = [
       "A massa do corpo dissipa-se continuamente sob a forma de calor até que o movimento cesse por completo."
     ],
     "correctIndex": 0,
-    "explanation": "Os slides 22 a 26 definem: 'A velocidade (v) é constante no decorrer do tempo' e 'A aceleração (a) é nula'.",
+    "explanation": "No MRU define-se formalmente: 'A velocidade (v) é constante no decorrer do tempo' e 'A aceleração (a) é nula'.",
     "distractorAnalysis": [
       "Está incorreta: Velocidade a duplicar caracteriza um movimento uniformemente acelerado, não um MRU.",
       "Está incorreta: Trajetória circular exige aceleração centrípeta e força centrípeta não nula, violando o MRU retilíneo.",
@@ -2859,7 +2858,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1151,
     "topicId": 1,
-    "question": "No desafio clínico dos diapositivos (slides 46-47), uma ambulância trava bruscamente a 80 km/h. Porque é que o enfermeiro de pé é projetado para a frente?",
+    "question": "No desafio clínico do transporte em ambulância, uma ambulância trava bruscamente a 80 km/h. Porque é que o enfermeiro de pé é projetado para a frente?",
     "options": [
       "Porque surge uma força mística repulsiva gerada pelo motor da ambulância que empurra fisicamente o profissional para a frente.",
       "Porque a gravidade da Terra inverte subitamente o seu sentido para a horizontal no instante exato da travagem dos travões.",
@@ -2867,7 +2866,7 @@ const TOPIC_1_QUESTIONS = [
       "Porque o ar interior da cabine sanitária arrefece bruscamente, criando uma corrente de sucção a vácuo na divisória."
     ],
     "correctIndex": 2,
-    "explanation": "O slide 47 explica: 'Pela 1ª Lei de Newton (Lei da inércia), o corpo do enfermeiro mantém a velocidade de 80 km/h até que uma força atue sobre ele'.",
+    "explanation": "Explica-se pelo princípio da inércia: 'Pela 1ª Lei de Newton (Lei da inércia), o corpo do enfermeiro mantém a velocidade de 80 km/h até que uma força atue sobre ele'.",
     "distractorAnalysis": [
       "Está incorreta: Não existe nenhuma força a empurrar para a frente; o corpo simplesmente mantém a velocidade que já possuía por inércia.",
       "Está incorreta: A gravidade atua na vertical para baixo; a desaceleração é horizontal e deve-se à travagem do veículo com o asfalto.",
@@ -3532,7 +3531,7 @@ const TOPIC_1_QUESTIONS = [
       "A pressão barométrica ambiente, que empurra o corpo para baixo por compressão direta do ar hospitalar."
     ],
     "correctIndex": 1,
-    "explanation": "Num plano inclinado (slide 55), o peso decompõe-se: Pt = P·sen(θ) é a força tangencial que tenta puxar o doente rampa abaixo.",
+    "explanation": "Num plano inclinado da mecânica, o peso decompõe-se: Pt = P·sen(θ) é a força tangencial que tenta puxar o doente rampa abaixo.",
     "distractorAnalysis": [
       "Está incorreta: A componente normal Pn = P·cos(θ) comprime o colchão e gera atrito, não sendo a força que faz o doente deslizar.",
       "Está incorreta: A rotação terrestre não atua com forças centrífugas significativas para deslizar corpos em rampas.",
@@ -4664,7 +4663,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1246,
     "topicId": 1,
-    "question": "Em resumo dos conceitos lecionados (slide 45), qual é o papel essencial da 1.ª Lei de Newton na compreensão do universo mecânico?",
+    "question": "Em resumo dos conceitos lecionados da mecânica de Newton, qual é o papel essencial da 1.ª Lei de Newton na compreensão do universo mecânico?",
     "options": [
       "Demonstra que a velocidade da luz é variável e depende exclusivamente da força exercida pelo coração humano.",
       "Estabelece a inércia como propriedade fundamental da matéria e define as condições de repouso ou movimento retilíneo uniforme com resultante nula.",
@@ -4672,7 +4671,7 @@ const TOPIC_1_QUESTIONS = [
       "Determina que a pressão atmosférica é a única força existente no universo capaz de alterar a velocidade de um corpo."
     ],
     "correctIndex": 1,
-    "explanation": "O slide 45 resume: 'As 3 Leis de Newton governam o repouso e o movimento: Inércia, aceleração e força, e ação-reação'.",
+    "explanation": "Em síntese conceptual: 'As 3 Leis de Newton governam o repouso e o movimento: Inércia, aceleração e força, e ação-reação'.",
     "distractorAnalysis": [
       "Está incorreta: A velocidade da luz no vácuo é uma constante universal que não depende do sistema cardiovascular.",
       "Está incorreta: Os seres biológicos obedecem rigorosamente a todas as leis da física clássica e termodinâmica.",
@@ -5234,7 +5233,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1276,
     "topicId": 1,
-    "question": "Nos diapositivos 14 a 16 da aula, como é caracterizado o utente bariátrico sob o ponto de vista biofísico da mecânica?",
+    "question": "Na mobilização e ergonomia clínica, como é caracterizado o utente bariátrico sob o ponto de vista biofísico da mecânica?",
     "options": [
       "Como um doente cujo peso é nulo devido à absorção da aceleração da gravidade pelas células adiposas.",
       "Como um indivíduo cuja massa se reduz a zero quando posicionado em decúbito dorsal horizontal no leito.",
@@ -5614,7 +5613,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1296,
     "topicId": 1,
-    "question": "No desafio clínico dos diapositivos 46 e 47, uma ambulância desloca-se a 80 km/h. Qual é o valor desta velocidade convertido para a unidade do SI (m/s)?",
+    "question": "No desafio clínico da travagem da ambulância, uma ambulância desloca-se a 80 km/h. Qual é o valor desta velocidade convertido para a unidade do SI (m/s)?",
     "options": [
       "Aproximadamente 8,0 m/s (obtido dividindo 80 km/h por dez de acordo com o sistema métrico).",
       "Aproximadamente 288 m/s (obtido multiplicando 80 km/h por 3,6 de forma cumulativa).",
@@ -5804,7 +5803,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1306,
     "topicId": 1,
-    "question": "No diapositivo 47 da aula, considerando um enfermeiro de massa 70 kg que se encontra de pé desprotegido na célula da ambulância a 80 km/h e para em 0,1 s, qual é a força média com que colide contra a divisória?",
+    "question": "Na dinâmica do transporte em emergência, considerando um enfermeiro de massa 70 kg que se encontra de pé desprotegido na célula da ambulância a 80 km/h e para em 0,1 s, qual é a força média com que colide contra a divisória?",
     "options": [
       "Aproximadamente 700 N (correspondendo unicamente ao seu peso corporal em repouso sobre o piso), violando as leis físicas.",
       "Aproximadamente 15.540 N (calculada por F = m · a = 70 kg · 222 m/s² = 15.540 N, correspondendo a mais de 1,5 toneladas de força).",
@@ -6089,7 +6088,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1321,
     "topicId": 1,
-    "question": "No diapositivo 47 da aula, que perigo biofísico adicional é expressamente destacado relativamente a equipamentos médicos soltos na célula sanitária?",
+    "question": "Na dinâmica do transporte em emergência, que perigo biofísico adicional é expressamente destacado relativamente a equipamentos médicos soltos na célula sanitária?",
     "options": [
       "Objetos soltos continuam a mover-se à velocidade de 80 km/h na desaceleração, comportando-se como projéteis de alta energia que podem ferir letalmente a equipa.",
       "Equipamentos médicos soltos perdem a sua calibração eletrónica devido ao campo magnético terrestre, contrariando as leis da mecânica clássica.",
@@ -7514,7 +7513,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1396,
     "topicId": 1,
-    "question": "No diapositivo 36 da aula, que questão biofísica fundamental é colocada e respondida com rigor?",
+    "question": "Na análise das forças de contacto e gravidade, que questão biofísica fundamental é colocada e respondida com rigor?",
     "options": [
       "Por que a pressão arterial sistólica é superior à diastólica durante o sono repousante?",
       "Por que o soro fisiológico a 0,9% conduz corrente elétrica melhor do que a água destilada?",
@@ -7522,10 +7521,10 @@ const TOPIC_1_QUESTIONS = [
       "Por que a Força Normal e o Peso NÃO são um par de ação e reação?, cumprindo as leis da mecânica."
     ],
     "correctIndex": 3,
-    "explanation": "O slide 36 dedica-se inteiramente a desmistificar a confusão clássica entre Peso e Força Normal na biomecânica.",
+    "explanation": "A biomecânica dedica especial atenção a desmistificar a confusão clássica entre Peso e Força Normal na biomecânica.",
     "distractorAnalysis": [
-      "Está incorreta: A hemodinâmica e a pressão arterial são abordadas noutros capítulos da biofísica, não no slide 36.",
-      "Está incorreta: A condutividade de eletrólitos é um tema de eletrofisiologia, não da mecânica de Newton do slide 36.",
+      "Está incorreta: A hemodinâmica e a pressão arterial são abordadas noutros capítulos da biofísica, não na mecânica de contacto.",
+      "Está incorreta: A condutividade de eletrólitos é um tema de eletrofisiologia, não da mecânica clássica de forças.",
       "Está incorreta: A cinética tumoral pertence à oncologia e biologia celular, fora do âmbito das leis do movimento."
     ],
     "nursingApplication": "Tema central e recorrente em avaliações de Biofísica para Enfermagem com base no programa curricular."
@@ -7552,7 +7551,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1398,
     "topicId": 1,
-    "question": "Qual é a segunda diferença fundamental entre o Peso (P) e a Força Normal (N) destacada no diapositivo 36?",
+    "question": "Qual é a segunda diferença fundamental entre o Peso (P) e a Força Normal (N) sob o ponto de vista das Leis de Newton?",
     "options": [
       "O Peso é uma força química covalente e a Normal é uma força nuclear de curto alcance mediada por gluões, contrariando as leis da mecânica clássica.",
       "Têm naturezas físicas completamente diferentes: o Peso é uma força gravitacional de campo à distância, enquanto a Normal é uma força eletromagnética de contacto.",
@@ -8084,7 +8083,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1426,
     "topicId": 1,
-    "question": "No desafio clínico dos diapositivos 46 e 47, quando o corpo do enfermeiro embate desprotegido contra a divisória rígida com uma força de 15.540 N, qual é a força que a divisória exerce sobre o enfermeiro?",
+    "question": "No desafio clínico da travagem da ambulância, quando o corpo do enfermeiro embate desprotegido contra a divisória rígida com uma força de 15.540 N, qual é a força que a divisória exerce sobre o enfermeiro?",
     "options": [
       "Zero N, porque a divisória é feita de material inanimado que apenas suporta passivamente o embate, violando as leis físicas.",
       "Exatamente 15.540 N dirigida contra o corpo do enfermeiro, sendo esta a força de reação que causa as lesões traumáticas catastróficas.",
@@ -9452,7 +9451,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1498,
     "topicId": 1,
-    "question": "Qual é a principal mensagem preventiva do Desafio Clínico da Ambulância (Slides 46-47) decorrente da aplicação combinada da 1.ª, 2.ª e 3.ª Leis?",
+    "question": "Qual é a principal mensagem preventiva do Desafio Clínico da Ambulância (da travagem da ambulância) decorrente da aplicação combinada da 1.ª, 2.ª e 3.ª Leis?",
     "options": [
       "As ambulâncias devem ser substituídas por helicópteros a jato que não obedecem a nenhuma das três leis da mecânica, o que não encontra qualquer fundamento na fisiologia do aparelho locomotor.",
       "Desacelerações súbitas geram forças inerciais de muitos g que resultam em forças mútuas de impacto devastadoras (milhares de Newtons); o cinto de segurança e a fixação de equipamentos são indispensáveis para salvar vidas.",
@@ -10188,7 +10187,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: Os coeficientes são distintos devido à dinâmica microscópica das microssoldaduras de contacto.",
       "Está incorreta: O atrito estático é real e substancial (μe habitualmente entre 0,3 e 1,0 em sólidos comuns)."
     ],
-    "nursingApplication": "Regra de ouro da mecânica lecionada nos diapositivos da aula de biofísica para enfermagem."
+    "nursingApplication": "Regra de ouro da mecânica lecionada na biofísica médica para enfermagem."
   },
   {
     "id": 1537,
@@ -10649,7 +10648,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1561,
     "topicId": 1,
-    "question": "Como é que uma tela ou tubo de transferência de baixo atrito (slide sheet) reduz o esforço dos enfermeiros na mobilização de um doente acamado?",
+    "question": "Como é que uma tela ou tubo de transferência de baixo atrito (tela de deslizamento) reduz o esforço dos enfermeiros na mobilização de um doente acamado?",
     "options": [
       "O tecido de náilon siliconizado ou teflon possui um coeficiente de atrito cinético ultra-baixo (μc < 0,1), diminuindo a força de atrito (Fat = μc·N) para uma fração modesta.",
       "A tela de transferência anula o peso do doente através da criação de um campo magnético de repulsão no leito, contrariando as leis da mecânica clássica.",
@@ -14829,7 +14828,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1781,
     "topicId": 1,
-    "question": "No corpo humano, qual é o exemplo clássico de Alavanca de 1.ª Classe (Interfixa) lecionado nos diapositivos da aula (Slide 71)?",
+    "question": "No corpo humano, qual é o exemplo clássico de Alavanca de 1.ª Classe (Interfixa) na articulação atlanto-occipital?",
     "options": [
       "A cabeça equilibrada sobre a articulação atlanto-occipital (entre o occipital e a primeira vértebra cervical C1 / atlas).",
       "O músculo quadríceps a estender a perna sobre a articulação do joelho na marcha, violando as leis físicas.",
@@ -15019,7 +15018,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1791,
     "topicId": 1,
-    "question": "No corpo humano, qual é o exemplo clássico de Alavanca de 2.ª Classe (Inter-resistente) apresentado nos diapositivos da aula (Slide 72)?",
+    "question": "No corpo humano, qual é o exemplo clássico de Alavanca de 2.ª Classe (Inter-resistente) na articulação tíbio-társica?",
     "options": [
       "A flexão do cotovelo segurando um haltere de cinco quilogramas na mão, contrariando as leis da mecânica clássica.",
       "A mastigação de alimentos duros pelos dentes incisivos da arcada dentária superior, contrariando as leis da mecânica clássica.",
@@ -15304,7 +15303,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1806,
     "topicId": 1,
-    "question": "No exemplo clássico da flexão do cotovelo pelo músculo bíceps braquial (Slides 80-85), quais são os três pontos anatómicos que constituem a alavanca?",
+    "question": "No exemplo clássico da flexão do cotovelo pelo músculo bíceps braquial no corpo humano, quais são os três pontos anatómicos que constituem a alavanca?",
     "options": [
       "Fulcro = A ponta das unhas dos dedos; Força Potente = O músculo grande dorsal; Força Resistente = O ar ambiente, o que não encontra qualquer fundamento na fisiologia do aparelho locomotor.",
       "Fulcro = Articulação do cotovelo (tróclea umeral/rádio); Força Potente = Inserção do tendão do bíceps na tuberosidade bicipital do rádio; Força Resistente = Peso do antebraço e mão (mais a carga segurada na mão).",
@@ -15394,12 +15393,12 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: Uma razão de 1:100 exigiria que o tendão estivesse a 3,5 metros do cotovelo, o que é uma aberração anatómica.",
       "Está incorreta: A geometria óssea de fixação tendinosa é estrutural e não oscila com o ritmo dos batimentos cardíacos."
     ],
-    "nursingApplication": "Fixa a proporção mnemónica fundamental (1:7) do cotovelo que serve de base a todos os exercícios dos slides 80-85."
+    "nursingApplication": "Fixa a proporção mnemónica fundamental (1:7) do cotovelo que serve de base a todos os exercícios da alavanca do cotovelo."
   },
   {
     "id": 1811,
     "topicId": 1,
-    "question": "No exercício biomecânico dos slides 80 a 83, com um antebraço de massa 2,5 kg cujo centro de gravidade dista 15 cm do cotovelo e g = 9,8 m/s², qual é o momento resistente gerado pelo peso do antebraço?",
+    "question": "No exercício biomecânico do cotovelo, com um antebraço de massa 2,5 kg cujo centro de gravidade dista 15 cm do cotovelo e g = 9,8 m/s², qual é o momento resistente gerado pelo peso do antebraço?",
     "options": [
       "Mantebraço = 2,5 × 15 = 37,5 N·m, sem converter os centímetros nem multiplicar pela gravidade.",
       "Mantebraço = 0 N·m, porque os segmentos anatómicos do próprio corpo nunca geram momento resistente.",
@@ -15407,7 +15406,7 @@ const TOPIC_1_QUESTIONS = [
       "Mantebraço = 980 N·m, assumindo que o antebraço pesa cem quilos na posição horizontal."
     ],
     "correctIndex": 2,
-    "explanation": "Conforme o slide 83: Mantebraço = Fantebraço × bantebraço = (2,5 × 9,8) × 0,15 = 3,675 N·m ≈ 3,68 N·m.",
+    "explanation": "Calcula-se pelo momento: Mantebraço = Fantebraço × bantebraço = (2,5 × 9,8) × 0,15 = 3,675 N·m ≈ 3,68 N·m.",
     "distractorAnalysis": [
       "Está incorreta: É obrigatório converter 15 cm para 0,15 m e multiplicar a massa por g para obter força em Newtons.",
       "Está incorreta: O antebraço tem massa e gravidade, pelo que o seu peso gera um momento resistente real que o bíceps tem de equilibrar.",
@@ -15418,7 +15417,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1812,
     "topicId": 1,
-    "question": "No exercício do slide 82, quando o utente segura um objeto de 1,0 kg na mão a uma distância de 30 cm do cotovelo (g = 9,8 m/s²), qual é o momento resistente da carga externa?",
+    "question": "No exercício da alavanca do antebraço, quando o utente segura um objeto de 1,0 kg na mão a uma distância de 30 cm do cotovelo (g = 9,8 m/s²), qual é o momento resistente da carga externa?",
     "options": [
       "MR = 1,0 × 30 = 30 N·m, esquecendo a aceleração gravítica e o sistema internacional de unidades.",
       "MR = 294 N·m, confundindo 30 centímetros com 30 metros de distância métrica.",
@@ -15426,7 +15425,7 @@ const TOPIC_1_QUESTIONS = [
       "MR = (1,0 kg × 9,8 m/s²) × 0,30 m = 2,94 N·m, garantindo o equilíbrio estático."
     ],
     "correctIndex": 3,
-    "explanation": "Slide 82: MR = FR · bR = (1 × 9,8) × 0,30 = 2,94 N·m.",
+    "explanation": "Cálculo resistente: MR = FR · bR = (1 × 9,8) × 0,30 = 2,94 N·m.",
     "distractorAnalysis": [
       "Está incorreta: A fórmula correta exige Newtons (kg × 9,8) e metros (0,30 m), resultando em 2,94 N·m.",
       "Está incorreta: 30 cm equivalem a 0,30 m e não a trinta metros de comprimento anatómico.",
@@ -15437,7 +15436,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1813,
     "topicId": 1,
-    "question": "No slide 84, ao somar o momento do peso do antebraço (3,68 N·m) com o momento da carga na mão (2,94 N·m), qual é o momento resistente total que o músculo bíceps tem de vencer para manter o equilíbrio?",
+    "question": "No sistema do antebraço, ao somar o momento do peso do antebraço (3,68 N·m) com o momento da carga na mão (2,94 N·m), qual é o momento resistente total que o músculo bíceps tem de vencer para manter o equilíbrio?",
     "options": [
       "Mtotal = 3,68 N·m + 2,94 N·m = 6,62 N·m, garantindo o equilíbrio estático.",
       "Mtotal = 3,68 - 2,94 = 0,74 N·m, subtraindo os momentos porque atuam em sentidos opostos.",
@@ -15445,7 +15444,7 @@ const TOPIC_1_QUESTIONS = [
       "Mtotal = 0 N·m, porque a mão anula completamente o peso do antebraço."
     ],
     "correctIndex": 0,
-    "explanation": "Slide 84: Ambos os pesos puxam o antebraço no sentido horário (para baixo); os seus momentos somam-se: 3,68 + 2,94 = 6,62 N·m.",
+    "explanation": "Equilíbrio de momentos: Ambos os pesos puxam o antebraço no sentido horário (para baixo); os seus momentos somam-se: 3,68 + 2,94 = 6,62 N·m.",
     "distractorAnalysis": [
       "Está incorreta: Ambas as forças têm o mesmo sentido (para baixo), pelo que os momentos se somam e não se subtraem.",
       "Está incorreta: Momentos que atuam no mesmo sentido somam-se linearmente e nunca se multiplicam.",
@@ -15456,7 +15455,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1814,
     "topicId": 1,
-    "question": "No slide 85, sabendo que a inserção tendinosa do bíceps no rádio dista 8 cm (0,08 m) do cotovelo e o momento total a equilibrar é 6,62 N·m, que força muscular (FE) deve o bíceps exercer?",
+    "question": "Para manter o equilíbrio, sabendo que a inserção tendinosa do bíceps no rádio dista 8 cm (0,08 m) do cotovelo e o momento total a equilibrar é 6,62 N·m, que força muscular (FE) deve o bíceps exercer?",
     "options": [
       "FE = 6,62 × 0,08 = 0,53 N, multiplicando o momento pela distância do tendão.",
       "FE = 6,62 N·m / 0,08 m = 82,75 N, garantindo o equilíbrio estático.",
@@ -15464,13 +15463,13 @@ const TOPIC_1_QUESTIONS = [
       "FE = 827,5 N, cometendo um erro de vírgula na divisão por oito centímetros."
     ],
     "correctIndex": 1,
-    "explanation": "Slide 85: ME = FE · bE ⇒ 6,62 = FE × 0,08 ⇒ FE = 6,62 / 0,08 = 82,75 N.",
+    "explanation": "Momento potente: ME = FE · bE ⇒ 6,62 = FE × 0,08 ⇒ FE = 6,62 / 0,08 = 82,75 N.",
     "distractorAnalysis": [
       "Está incorreta: Para isolar a força, divide-se o momento pelo braço potente (FE = M / bE).",
       "Está incorreta: 8,0 cm é a distância anatómica e não o valor da força expressa em Newtons.",
       "Está incorreta: A divisão de 6,62 por 0,08 resulta exatamente em 82,75 N."
     ],
-    "nursingApplication": "Conclui com exatidão matemática o exercício central dos slides do professor."
+    "nursingApplication": "Conclui com exatidão matemática o exercício central da biomecânica muscular do cotovelo."
   },
   {
     "id": 1815,
@@ -15589,7 +15588,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1821,
     "topicId": 1,
-    "question": "No problema do slide 75 e 76, uma barra de 3,6 m de comprimento total está dividida na proporção 3x = 3,6 m. Qual é o valor de x que define a geometria dos braços?",
+    "question": "Num problema de alavanca interfixa, uma barra de 3,6 m de comprimento total está dividida na proporção 3x = 3,6 m. Qual é o valor de x que define a geometria dos braços?",
     "options": [
       "x = 3,6 / 3 = 1,2 m, resultando num braço menor de 1,2 m e num braço maior de 2,4 m (2x).",
       "x = 3,6 × 3 = 10,8 m, esticando a barra para além do seu comprimento físico.",
@@ -15597,18 +15596,18 @@ const TOPIC_1_QUESTIONS = [
       "x = 3,6 m, assumindo que x é o comprimento total da própria barra."
     ],
     "correctIndex": 0,
-    "explanation": "Slide 75: 3x = 3,6 ⇒ x = 1,2 m. A barra tem uma secção de x (1,2 m) e outra de 2x (2,4 m), somando 3,6 m.",
+    "explanation": "Resolução: 3x = 3,6 ⇒ x = 1,2 m. A barra tem uma secção de x (1,2 m) e outra de 2x (2,4 m), somando 3,6 m.",
     "distractorAnalysis": [
       "Está incorreta: A operação matemática correta é a divisão linear simples: 3,6 / 3 = 1,2 m.",
-      "Está incorreta: Metade de 3,6 m seria 1,8 m e violaria a proporção 3x = 3,6 m dada no slide.",
+      "Está incorreta: Metade de 3,6 m seria 1,8 m e violaria a proporção 3x = 3,6 m dada no problema.",
       "Está incorreta: Se x fosse 3,6 m, 3x seria 10,8 m, ultrapassando o comprimento da barra."
     ],
-    "nursingApplication": "Validação dos passos preliminares de cálculo geométrico dos slides do professor."
+    "nursingApplication": "Validação dos passos preliminares de cálculo geométrico da biomecânica muscular do cotovelo."
   },
   {
     "id": 1822,
     "topicId": 1,
-    "question": "No slide 75, sabendo que a força resistente é de 20 N e atua no braço menor de 1,2 m, qual é o momento da força resistente?",
+    "question": "Numa barra em alavanca interfixa, sabendo que a força resistente é de 20 N e atua no braço menor de 1,2 m, qual é o momento da força resistente?",
     "options": [
       "MR = 20 / 1,2 = 16,67 N·m, dividindo a força pelo braço de alavanca.",
       "MR = FR · bR = 20 N × 1,2 m = 24 N·m, garantindo o equilíbrio estático.",
@@ -15616,18 +15615,18 @@ const TOPIC_1_QUESTIONS = [
       "MR = 240 N·m, acrescentando uma ordem de grandeza decimal à operação."
     ],
     "correctIndex": 1,
-    "explanation": "Slide 75: Momento da força resistente: MR = FR · bR = 20 × 1,2 = 24 N·m.",
+    "explanation": "Cálculo: Momento da força resistente: MR = FR · bR = 20 × 1,2 = 24 N·m.",
     "distractorAnalysis": [
       "Está incorreta: O momento é o produto (multiplicação) e não a divisão da força pela distância.",
       "Está incorreta: Força e distância têm grandezas e unidades distintas (N e m), não podendo ser somadas.",
       "Está incorreta: 20 × 1,2 é rigorosamente igual a 24,0 N·m."
     ],
-    "nursingApplication": "Cálculo fidedigno do momento resistente apresentado no slide 75."
+    "nursingApplication": "Cálculo fidedigno do momento resistente da alavanca em estudo."
   },
   {
     "id": 1823,
     "topicId": 1,
-    "question": "No slide 76, para equilibrar o momento resistente de 24 N·m sabendo que o braço da força potente é de 2,4 m, qual é a força potente necessária?",
+    "question": "Para equilibrar o sistema, para equilibrar o momento resistente de 24 N·m sabendo que o braço da força potente é de 2,4 m, qual é a força potente necessária?",
     "options": [
       "FP = 24 × 2,4 = 57,6 N, multiplicando o momento pelo braço potente.",
       "FP = 20 N, sendo obrigatório que a força potente seja igual à resistente.",
@@ -15635,18 +15634,18 @@ const TOPIC_1_QUESTIONS = [
       "FP = 2,4 N, confundindo a força potente com a distância do braço."
     ],
     "correctIndex": 2,
-    "explanation": "Slide 76: MP = FP · bP ⇒ 24 = FP × 2,4 ⇒ FP = 10 N. Uma força de apenas 10 N equilibra uma carga de 20 N!",
+    "explanation": "Condição de equilíbrio: MP = FP · bP ⇒ 24 = FP × 2,4 ⇒ FP = 10 N. Uma força de apenas 10 N equilibra uma carga de 20 N!",
     "distractorAnalysis": [
       "Está incorreta: Para calcular a força isola-se FP dividindo o momento pelo braço (FP = M / b).",
       "Está incorreta: Como o braço potente é o dobro do resistente (2,4 m vs 1,2 m), a força potente necessária é metade (10 N vs 20 N).",
       "Está incorreta: 2,4 m é a coordenada de distância do braço e não a intensidade de força potente em Newtons."
     ],
-    "nursingApplication": "Demonstra a amplificação de força (vantagem mecânica VM = 2) da alavanca interfixa do slide 76."
+    "nursingApplication": "Demonstra a amplificação de força (vantagem mecânica VM = 2) da alavanca interfixa em equilíbrio."
   },
   {
     "id": 1824,
     "topicId": 1,
-    "question": "Que tipo de alavanca está representada no exercício dos slides 75 e 76?",
+    "question": "Que tipo de alavanca está representada num sistema com o ponto de apoio (fulcro) situado entre a potência e a resistência?",
     "options": [
       "Alavanca inter-resistente (2.ª classe), onde a carga está necessariamente entre o fulcro e a força potente, violando as leis físicas.",
       "Alavanca interpotente (3.ª classe), com o bíceps a atuar entre o cotovelo e a mão, violando as leis físicas.",
@@ -15654,18 +15653,18 @@ const TOPIC_1_QUESTIONS = [
       "Alavanca interfixa (1.ª classe), na qual o ponto de apoio (fulcro) se localiza entre a força potente e a força resistente."
     ],
     "correctIndex": 3,
-    "explanation": "Slides 75 e 76 intitulam explicitamente: 'Alavanca interfixa', com fulcro intermediário entre FP e FR.",
+    "explanation": "Trata-se de uma: 'Alavanca interfixa', com fulcro intermediário entre FP e FR.",
     "distractorAnalysis": [
-      "Está incorreta: Na 2.ª classe a resistência está no meio, o que não corresponde ao esquema do slide 75.",
+      "Está incorreta: Na 2.ª classe a resistência está no meio, o que não corresponde à configuração interfixa.",
       "Está incorreta: Na 3.ª classe a força potente está no meio, com braço potente sempre menor que o resistente.",
       "Está incorreta: Trata-se de uma barra rígida mecânica clássica e não de um sistema fluídico fechado."
     ],
-    "nursingApplication": "Classificação correta e identificação visual dos elementos da alavanca dos slides 75-76."
+    "nursingApplication": "Classificação correta e identificação visual dos elementos da alavanca da alavanca interfixa."
   },
   {
     "id": 1825,
     "topicId": 1,
-    "question": "Qual é a vantagem mecânica ideal (VMI = bP / bR) do sistema de alavanca interfixa calculado nos slides 75 e 76?",
+    "question": "Qual é a vantagem mecânica ideal (VMI = bP / bR) do sistema de alavanca interfixa calculado para esta alavanca interfixa?",
     "options": [
       "VMI = 2,4 m / 1,2 m = 2,0, o que significa que o operador só precisa de exercer metade da força da carga para a equilibrar.",
       "VMI = 0,5, indicando que o operador precisa de exercer o dobro da força, contrariando as leis da mecânica clássica.",
@@ -15684,7 +15683,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1826,
     "topicId": 1,
-    "question": "No exercício dos slides 77 a 79, quer-se erguer uma carga de massa 500 kg com braço resistente de 0,3 m (g = 9,8 m/s²). Qual é o momento resistente a vencer?",
+    "question": "Num sistema de elevação por alavanca, quer-se erguer uma carga de massa 500 kg com braço resistente de 0,3 m (g = 9,8 m/s²). Qual é o momento resistente a vencer?",
     "options": [
       "MR = 500 × 0,3 = 150 N·m, sem multiplicar pela aceleração da gravidade.",
       "MR = FR · bR = (500 kg × 9,8 m/s²) × 0,3 m = 4900 N × 0,3 m = 1470 N·m.",
@@ -15692,18 +15691,18 @@ const TOPIC_1_QUESTIONS = [
       "MR = 14,7 N·m, cometendo um erro de duas ordens de grandeza decimal."
     ],
     "correctIndex": 1,
-    "explanation": "Slide 78: MR = FR · bR = (500 × 9,8) × 0,3 = 1470 N·m.",
+    "explanation": "Cálculo resistente: MR = FR · bR = (500 × 9,8) × 0,3 = 1470 N·m.",
     "distractorAnalysis": [
       "Está incorreta: A massa de 500 kg tem de ser convertida no peso em Newtons multiplicando por 9,8 m/s² (4900 N).",
       "Está incorreta: O cálculo do momento faz-se pelo produto e não pela divisão da força pelo braço.",
       "Está incorreta: 4900 × 0,3 = 1470 N·m com precisão exata."
     ],
-    "nursingApplication": "Validação fiel do momento resistente calculado no slide 78."
+    "nursingApplication": "Validação fiel do momento resistente calculado para a alavanca."
   },
   {
     "id": 1827,
     "topicId": 1,
-    "question": "No slide 79, sabendo que o operador apenas consegue exercer uma força equivalente a 30 kg (FP = 30 × 9,8 = 294 N), qual é o comprimento mínimo do braço potente (bP) para equilibrar os 1470 N·m?",
+    "question": "Na alavanca de elevação, sabendo que o operador apenas consegue exercer uma força equivalente a 30 kg (FP = 30 × 9,8 = 294 N), qual é o comprimento mínimo do braço potente (bP) para equilibrar os 1470 N·m?",
     "options": [
       "bP = 1470 × 294 = 432.180 m, multiplicando erradamente o momento pela força potente.",
       "bP = 1,5 m, estimando visualmente um comprimento confortável de alavanca.",
@@ -15711,18 +15710,18 @@ const TOPIC_1_QUESTIONS = [
       "bP = 50 m, dividindo por 29,4 em vez de 294 N."
     ],
     "correctIndex": 2,
-    "explanation": "Slide 79: MP = FP · bP ⇒ 1470 = (30 × 9,8) × bP ⇒ bP = 1470 / 294 = 5 m.",
+    "explanation": "Equilíbrio de momentos: MP = FP · bP ⇒ 1470 = (30 × 9,8) × bP ⇒ bP = 1470 / 294 = 5 m.",
     "distractorAnalysis": [
       "Está incorreta: Para obter a distância divide-se o momento pela força potente (bP = M / FP).",
       "Está incorreta: Com 1,5 m a força necessária seria de 980 N (100 kgf), o que ultrapassaria a capacidade do operador.",
       "Está incorreta: A divisão correta de 1470 por 294 resulta em 5,0 m exatos."
     ],
-    "nursingApplication": "Fidelidade ao cálculo completo e resolução do slide 79."
+    "nursingApplication": "Fidelidade ao cálculo completo e resolução da alavanca mecânica."
   },
   {
     "id": 1828,
     "topicId": 1,
-    "question": "O resultado do slide 79 (bP = 5 metros) traduz na prática o famoso princípio histórico de Arquimedes:",
+    "question": "O comprimento de 5 metros do braço potente traduz na prática o famoso princípio histórico de Arquimedes:",
     "options": [
       "'Todo o corpo que cai atinge o centro da Terra em menos de um segundo', o que não encontra qualquer fundamento na fisiologia do aparelho locomotor.",
       "'A energia mecânica é destruída sempre que se utiliza uma barra de aço', o que não encontra qualquer fundamento na fisiologia do aparelho locomotor.",
@@ -15736,12 +15735,12 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A conservação da energia garante que a energia mecânica não é destruída nas máquinas simples ideais.",
       "Está incorreta: Os princípios estáticos aplicam-se com todo o rigor a corpos rígidos e fluidos em equilíbrio."
     ],
-    "nursingApplication": "Contextualização histórica e científica do exercício dos slides 77-79."
+    "nursingApplication": "Contextualização histórica e científica do exercício do princípio das alavancas."
   },
   {
     "id": 1829,
     "topicId": 1,
-    "question": "Que 'preço' físico paga o operador no slide 79 para conseguir erguer a carga de 500 kg com apenas 30 kg de força?",
+    "question": "Que 'preço' físico paga o operador na alavanca para conseguir erguer a carga de 500 kg com apenas 30 kg de força?",
     "options": [
       "Tem de deslocar a extremidade do seu braço potente por uma distância muito maior (5 metros para erguer a carga apenas alguns centímetros), conservando o trabalho mecânico realizado.",
       "Perde massa muscular instantânea durante a descida da alavanca, o que viola de forma evidente as condições fundamentais da estática clássica e da mecânica newtoniana.",
@@ -15760,7 +15759,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1830,
     "topicId": 1,
-    "question": "Qual é a relação de vantagem mecânica neste sistema do slide 79 (500 kg suportados por 30 kg)?",
+    "question": "Qual é a relação de vantagem mecânica neste sistema de alavanca (500 kg suportados por 30 kg)?",
     "options": [
       "VM = 0,06, significando que o sistema consome dezassete vezes mais energia do que produz, violando as leis físicas.",
       "VM = 500 / 30 = 5,0 m / 0,3 m ≈ 16,7, o que representa uma amplificação de força de cerca de dezassete vezes.",
@@ -16053,7 +16052,7 @@ const TOPIC_1_QUESTIONS = [
       "Garantir que o ar condicionado do hospital arrefeça os membros inferiores mais depressa, violando as leis da mecânica e o repouso estático."
     ],
     "correctIndex": 0,
-    "explanation": "Conforme os slides 95 e 98: base ampla (30-40 cm) garante alta estabilidade estática e dinâmica, permitindo acomodar a carga junto ao corpo.",
+    "explanation": "Princípio da estabilidade postural: base ampla (30-40 cm) garante alta estabilidade estática e dinâmica, permitindo acomodar a carga junto ao corpo.",
     "distractorAnalysis": [
       "Está incorreta: O afastamento fisiológico dos pés não tem por finalidade evitar colisões traumáticas ósseas bizarras.",
       "Está incorreta: Os calçados devem ser simétricos, confortáveis e com piso antiderrapante para tração mecânica.",
@@ -16634,7 +16633,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1876,
     "topicId": 1,
-    "question": "Como é definido rigorosamente o Centro de Gravidade (CG) de um corpo humano, de acordo com o slide 87?",
+    "question": "Como é definido rigorosamente o Centro de Gravidade (CG) de um corpo humano na mecânica biológica?",
     "options": [
       "É o ponto exato da pele onde a temperatura corporal atinge os quarenta graus Celsius, o que compromete gravemente a estabilidade postural e o equilíbrio.",
       "É o órgão anatómico sólido localizado no interior do fígado que atrai o ferro dos alimentos, o que compromete gravemente a estabilidade postural e o equilíbrio.",
@@ -16642,13 +16641,13 @@ const TOPIC_1_QUESTIONS = [
       "É o ponto imaginário onde se considera concentrada toda a massa do corpo e onde atua a resultante de todas as forças gravíticas exercidas sobre cada uma das suas partes."
     ],
     "correctIndex": 3,
-    "explanation": "Slide 87: 'Ponto imaginário onde se considera concentrada toda a massa e onde atua a resultante de todas as forças gravíticas do corpo'.",
+    "explanation": "Definição biomecânica: 'Ponto imaginário onde se considera concentrada toda a massa e onde atua a resultante de todas as forças gravíticas do corpo'.",
     "distractorAnalysis": [
       "Está incorreta: O centro de gravidade é um ponto mecânico de equilíbrio e não um parâmetro térmico dérmico.",
       "Está incorreta: O CG não é um órgão anatómico palpável, mas um centro de massa físico imaginário.",
       "Está incorreta: A área de contacto com o solo define a base de sustentação e não o centro de gravidade."
     ],
-    "nursingApplication": "Fixa a definição textual exata do slide 87 da aula de Biofísica."
+    "nursingApplication": "Fixa a definição textual de Centro de Gravidade na aula de Biofísica."
   },
   {
     "id": 1877,
@@ -16729,7 +16728,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1881,
     "topicId": 1,
-    "question": "De acordo com o slide 87, onde se localiza o Centro de Gravidade no corpo humano de um adulto em posição anatómica ereta normal?",
+    "question": "Onde se localiza o Centro de Gravidade no corpo humano de um adulto em posição anatómica ereta normal?",
     "options": [
       "Na linha média, anterior à 2.ª vértebra sagrada (S2), cerca de 55% a 57% da altura total a partir do solo.",
       "Na ponta do nariz, exatamente sobre as cartilagens alares da face, contrariando as leis da mecânica clássica.",
@@ -16737,13 +16736,13 @@ const TOPIC_1_QUESTIONS = [
       "Abaixo da sola dos sapatos, enterrado a meio metro no chão, contrariando as leis da mecânica clássica."
     ],
     "correctIndex": 0,
-    "explanation": "Slide 87: 'Em posição anatómica ereta, situa-se na linha média anterior à 2ª vértebra sagrada (S2)'.",
+    "explanation": "Referência anatómica: 'Em posição anatómica ereta, situa-se na linha média anterior à 2ª vértebra sagrada (S2)'.",
     "distractorAnalysis": [
       "Está incorreta: O nariz situa-se na cabeça, a mais de 90% da altura corporal total.",
       "Está incorreta: A localização na linha média exclui qualquer desvio assimétrico para os membros superiores.",
       "Está incorreta: O CG situa-se no interior do volume anatómico pélvico do corpo e não debaixo do pavimento."
     ],
-    "nursingApplication": "Fixa a referência anatómica precisa de S2 lecionada no slide 87."
+    "nursingApplication": "Fixa a referência anatómica precisa de S2 na postura ereta humana."
   },
   {
     "id": 1882,
@@ -16824,7 +16823,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1886,
     "topicId": 1,
-    "question": "O que acontece à localização do Centro de Gravidade quando uma pessoa em pé eleva os dois braços acima da cabeça, conforme o slide 87?",
+    "question": "O que acontece à localização do Centro de Gravidade quando uma pessoa em pé eleva os dois braços acima da cabeça?",
     "options": [
       "O Centro de Gravidade desce imediatamente para a ponta dos dedos dos pés, violando as leis físicas.",
       "O Centro de Gravidade sobe vários centímetros na direção da cabeça, acompanhando a elevação da massa dos membros superiores.",
@@ -16832,13 +16831,13 @@ const TOPIC_1_QUESTIONS = [
       "O Centro de Gravidade mantém-se imóvel porque a posição dos braços não altera o peso, violando as leis físicas."
     ],
     "correctIndex": 1,
-    "explanation": "Slide 87: 'O centro de gravidade desloca-se com o movimento (por exemplo, sobe ao elevar os braços e avança ao inclinar o tronco)'.",
+    "explanation": "Comportamento biomecânico: 'O centro de gravidade desloca-se com o movimento (por exemplo, sobe ao elevar os braços e avança ao inclinar o tronco)'.",
     "distractorAnalysis": [
       "Está incorreta: Como os braços sobem, a distribuição média ponderada da massa desloca-se para cima e nunca para baixo.",
       "Está incorreta: O CG acompanha a geometria corporal e não se separa fisicamente como um projétil.",
       "Está incorreta: Embora o peso total seja o mesmo, a distribuição espacial da massa alterou-se, deslocando o baricentro."
     ],
-    "nursingApplication": "Aplicação direta do exemplo de mobilidade do CG lecionado no slide 87."
+    "nursingApplication": "Aplicação direta do exemplo de mobilidade do CG do centro de gravidade."
   },
   {
     "id": 1887,
@@ -16851,7 +16850,7 @@ const TOPIC_1_QUESTIONS = [
       "Permanece rigidamente colado à 2.ª vértebra sagrada sem se mover um milímetro, o que compromete gravemente a estabilidade postural e o equilíbrio."
     ],
     "correctIndex": 2,
-    "explanation": "Slide 87: 'avança ao inclinar o tronco'. A massa da cabeça, tórax e braços é projetada para a frente, puxando o baricentro conjunto nessa direção.",
+    "explanation": "Na mecânica corporal: 'avança ao inclinar o tronco'. A massa da cabeça, tórax e braços é projetada para a frente, puxando o baricentro conjunto nessa direção.",
     "distractorAnalysis": [
       "Está incorreta: O movimento no plano sagital altera o CG no eixo ântero-posterior e não de forma assimétrica para a janela.",
       "Está incorreta: A inclinação anterior puxa o CG para a frente e não para trás.",
@@ -16965,7 +16964,7 @@ const TOPIC_1_QUESTIONS = [
       "A temperatura corporal desce instantaneamente para zero graus Kelvin, o que viola de forma evidente as condições fundamentais da estática clássica e da mecânica newtoniana."
     ],
     "correctIndex": 0,
-    "explanation": "Conforme os slides 96 e 98: linha de gravidade próxima ou fora dos bordos da base gera condição de instabilidade severa.",
+    "explanation": "Na estabilidade postural: linha de gravidade próxima ou fora dos bordos da base gera condição de instabilidade severa.",
     "distractorAnalysis": [
       "Está incorreta: A saída da linha da base gera momento de rotação desestabilizador e não estabilidade acrescida.",
       "Está incorreta: A força gravitacional continua atuante, acelerando o corpo em queda em direção ao solo.",
@@ -17014,7 +17013,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1896,
     "topicId": 1,
-    "question": "Como é definida a Base de Sustentação (BS) no slide 87 da apresentação de Biofísica?",
+    "question": "Como é definida a Base de Sustentação (BS) na biomecânica da postura?",
     "options": [
       "É o peso total dos sapatos somado ao peso das meias do utente, o que compromete gravemente a estabilidade postural e o equilíbrio.",
       "É o raio de alcance dos braços quando a pessoa tenta tocar na parede, o que compromete gravemente a estabilidade postural e o equilíbrio.",
@@ -17022,13 +17021,13 @@ const TOPIC_1_QUESTIONS = [
       "É a área geométrica delimitada por todos os pontos de contacto de um corpo com a superfície que o suporta, incluindo o espaço intermédio entre eles."
     ],
     "correctIndex": 3,
-    "explanation": "Slide 87: 'Área geométrica delimitada por todos os pontos de contacto de um corpo com a superfície que o suporta'.",
+    "explanation": "Definição biomecânica: 'Área geométrica delimitada por todos os pontos de contacto de um corpo com a superfície que o suporta'.",
     "distractorAnalysis": [
       "Está incorreta: A base é uma medida geométrica de área bidimensional (m²) e não uma grandeza de massa ou peso.",
       "Está incorreta: O alcance dos membros superiores mede a amplitude articular e não a superfície de apoio.",
       "Está incorreta: A distância cérvico-umbilical é uma medida linear longitudinal do tronco."
     ],
-    "nursingApplication": "Memorização rigorosa da definição textual do slide 87."
+    "nursingApplication": "Memorização rigorosa da definição de base de sustentação."
   },
   {
     "id": 1897,
@@ -17060,7 +17059,7 @@ const TOPIC_1_QUESTIONS = [
       "A pessoa perde imediatamente a capacidade de respirar devido ao esforço de um só membro, o que compromete gravemente a estabilidade postural e o equilíbrio."
     ],
     "correctIndex": 1,
-    "explanation": "Com uma base minúscula, qualquer pequena oscilação da linha de gravidade ameaça sair fora dos bordos, aumentando o risco de queda (condição de instabilidade, slides 95 e 98).",
+    "explanation": "Com uma base minúscula, qualquer pequena oscilação da linha de gravidade ameaça sair fora dos bordos, aumentando o risco de queda (condição biomecânica de instabilidade).",
     "distractorAnalysis": [
       "Está incorreta: O ar circundante é um fluido de baixa densidade e não oferece suporte rígido de polígono de sustentação.",
       "Está incorreta: O centro de gravidade mantém-se ativo na massa corporal independentemente do tipo de apoio.",
@@ -17109,7 +17108,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1901,
     "topicId": 1,
-    "question": "De acordo com os slides 88 a 92 sobre como difere o centro de gravidade entre pessoas, qual é a principal diferença anatómica entre o homem e a mulher?",
+    "question": "Na variabilidade anatómica do centro de gravidade entre sexos, qual é a principal diferença anatómica entre o homem e a mulher?",
     "options": [
       "Nas mulheres o CG situa-se ligeiramente mais baixo (no interior da bacia/abdómen inferior) devido à pélvis mais larga e centro de massa inferior; nos homens situa-se ligeiramente mais alto (mais próximo do tórax) devido à cintura escapular mais ampla.",
       "Nas mulheres o CG fica na garganta e nos homens fica no calcanhar esquerdo, contrariando frontalmente as leis da conservação do momento e as diretrizes clínicas de segurança postural do doente.",
@@ -17117,13 +17116,13 @@ const TOPIC_1_QUESTIONS = [
       "Não existe absolutamente qualquer diferença, tendo ambos exatamente as mesmas proporções de massa, contrariando frontalmente as leis da conservação do momento e as diretrizes clínicas de segurança postural do doente."
     ],
     "correctIndex": 0,
-    "explanation": "Slides 89-92 mostram esquematicamente: homem com CG mais alto direcionado ao tórax/abdómen superior e mulher com CG mais baixo na bacia/interior do abdómen.",
+    "explanation": "A anatomia humana demonstra biomecanicamente: homem com CG mais alto direcionado ao tórax/abdómen superior e mulher com CG mais baixo na bacia/interior do abdómen.",
     "distractorAnalysis": [
       "Está incorreta: As referências anatómicas reais situam-se na região lombo-sagrada/pélvica e não na garganta ou pés.",
       "Está incorreta: Todas as pessoas possuem centro de gravidade como propriedade inerente da sua matéria biológica.",
       "Está incorreta: O dimorfismo sexual na distribuição de massa óssea e muscular reflete-se na altura do CG."
     ],
-    "nursingApplication": "Fidelidade ao conteúdo e ilustrações anatómicas dos slides 88-92."
+    "nursingApplication": "Fidelidade ao conteúdo e ilustrações anatómicas da biomecânica do centro de gravidade."
   },
   {
     "id": 1902,
@@ -17231,7 +17230,7 @@ const TOPIC_1_QUESTIONS = [
       "Nunca caem para a frente porque a cabeça grande atua como paraquedas aerodinâmico, o que viola de forma evidente as condições fundamentais da estática clássica e da mecânica newtoniana."
     ],
     "correctIndex": 2,
-    "explanation": "Para compensar o CG alto (fator de instabilidade), a criança alarga a base de sustentação (fator de estabilidade) e dobra ligeiramente os joelhos, ilustrando perfeitamente a tabela do slide 98.",
+    "explanation": "Para compensar o CG alto (fator de instabilidade), a criança alarga a base de sustentação (fator de estabilidade) e dobra ligeiramente os joelhos, ilustrando perfeitamente os princípios da estabilidade postural.",
     "distractorAnalysis": [
       "Está incorreta: A imaturidade neuromuscular e o CG alto impedem a marcha em linha estreita no primeiro ano de locomoção.",
       "Está incorreta: A locomoção infantil é terrestre e obedece integralmente ao peso gravitacional.",
@@ -17364,7 +17363,7 @@ const TOPIC_1_QUESTIONS = [
       "Caminhada permanente em pontas dos pés para esticar a coluna, o que não encontra qualquer fundamento na fisiologia do aparelho locomotor."
     ],
     "correctIndex": 1,
-    "explanation": "Conforme a tabela dos slides 95 e 98: base ampla (30-40 cm) garante estabilidade quando o controlo da linha de gravidade está desafiado por massa adicional anterior.",
+    "explanation": "Na estabilidade postural: base ampla (30-40 cm) garante estabilidade quando o controlo da linha de gravidade está desafiado por massa adicional anterior.",
     "distractorAnalysis": [
       "Está incorreta: Uma base em linha reta diminui a tolerância a oscilações laterais, facilitando a queda lateral.",
       "Está incorreta: Apoiar apenas nos calcanhares reduz a área de contacto e a tração de atrito.",
@@ -17421,7 +17420,7 @@ const TOPIC_1_QUESTIONS = [
       "Salta ritmicamente com os dois calcanhares juntos para ganhar impulsão, o que não encontra qualquer fundamento na fisiologia do aparelho locomotor."
     ],
     "correctIndex": 0,
-    "explanation": "Como ensina o slide 94 e 98: joelhos e ancas fletidos baixam o CG (condição de alta estabilidade), atuando como mecanismo fisiológico compensatório na velhice.",
+    "explanation": "Na biomecânica do idoso: joelhos e ancas fletidos baixam o CG (condição de alta estabilidade), atuando como mecanismo fisiológico compensatório na velhice.",
     "distractorAnalysis": [
       "Está incorreta: A hiperextensão elevaria o CG e reduziria os graus de liberdade necessários para correções de equilíbrio.",
       "Está incorreta: O cruzamento de membros inferiores provoca quedas catastróficas por bloqueio da base de apoio.",
@@ -17455,17 +17454,17 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Porque os chinelos aumentam a massa corporal do idoso em mais de trinta quilos, o que não encontra qualquer fundamento na fisiologia do aparelho locomotor.",
       "Porque sapatos sem salto atraem relâmpagos e descargas elétricas no corredor do hospital, o que não encontra qualquer fundamento na fisiologia do aparelho locomotor.",
-      "Porque diminui o atrito estático com o solo (Slide 97: meias em chão encerado geram baixo atrito) e impede que o pé transmita eficazmente os momentos de alavanca corretivos ao pavimento.",
+      "Porque diminui o atrito estático com o solo (ex: meias em chão encerado geram baixo atrito) e impede que o pé transmita eficazmente os momentos de alavanca corretivos ao pavimento.",
       "Porque o piso hospitalar dissolve a borracha dos sapatos em menos de cinco minutos, o que não encontra qualquer fundamento na fisiologia do aparelho locomotor."
     ],
     "correctIndex": 2,
-    "explanation": "Slide 97 e 98: o atrito solo-calçado elevado (sola de borracha com relevo em piso seco) é condição obrigatória de estabilidade; piso escorregadio impede a frenagem de qualquer desvio da LG.",
+    "explanation": "Na física do apoio: o atrito solo-calçado elevado (sola de borracha com relevo em piso seco) é condição obrigatória de estabilidade; piso escorregadio impede a frenagem de qualquer desvio da LG.",
     "distractorAnalysis": [
       "Está incorreta: O calçado comum tem massas de algumas centenas de gramas sem impacto na massa do sistema.",
       "Está incorreta: Descargas atmosféricas no interior de enfermarias climatizadas e protegidas são inexistentes.",
       "Está incorreta: Os polímeros de calçado hospitalar são altamente resistentes e não se dissolvem no chão limpo."
     ],
-    "nursingApplication": "Aplicação das diretrizes dos slides 97-98 à prevenção de acidentes e calçado geriátrico seguro."
+    "nursingApplication": "Aplicação das diretrizes dos da biomecânica do apoio à prevenção de acidentes e calçado geriátrico seguro."
   },
   {
     "id": 1920,
@@ -17516,7 +17515,7 @@ const TOPIC_1_QUESTIONS = [
       "Deita-se de lado e rola pelo chão como uma esfera rígida, o que não encontra qualquer fundamento na fisiologia do aparelho locomotor."
     ],
     "correctIndex": 1,
-    "explanation": "A base ampla (Slides 95 e 98: pés afastados à largura dos ombros: 30-40 cm) e a hiperlordose são as duas respostas mecânicas necessárias para estabilizar um baricentro anteriorizado.",
+    "explanation": "A base ampla (pés afastados à largura dos ombros: 30-40 cm) e a hiperlordose são as duas respostas mecânicas necessárias para estabilizar um baricentro anteriorizado.",
     "distractorAnalysis": [
       "Está incorreta: Andar em pontas dos pés elevaria ainda mais o CG, tornando a bipedestação bariatrica inviável.",
       "Está incorreta: A marcha em aceleração contínua causaria exaustão cardiorrespiratória e desequilíbrio dinâmico.",
@@ -17584,7 +17583,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1926,
     "topicId": 1,
-    "question": "De acordo com a tabela dos slides 94 e 98 ('Breve resumo dos conceitos lecionados'), qual é a 'Condição de alta estabilidade' relativa à altura do Centro de Gravidade (CG)?",
+    "question": "Na avaliação da estabilidade postural, qual é a 'Condição de alta estabilidade' relativa à altura do Centro de Gravidade (CG)?",
     "options": [
       "Mais Alto (em pontas dos pés ou tronco esticado).",
       "Mais Baixo (joelhos e ancas ligeiramente fletidos).",
@@ -17592,18 +17591,18 @@ const TOPIC_1_QUESTIONS = [
       "Suspenso no ar a dois metros de altura do leito."
     ],
     "correctIndex": 1,
-    "explanation": "Slide 94 e 98: 'Altura do centro de gravidade (CG) | Condição de alta estabilidade: Mais Baixo (joelhos e ancas ligeiramente fletidos)'.",
+    "explanation": "Critério de estabilidade: 'Altura do centro de gravidade (CG) | Condição de alta estabilidade: Mais Baixo (joelhos e ancas ligeiramente fletidos)'.",
     "distractorAnalysis": [
-      "Está incorreta: CG alto é explicitamente classificado nos slides como 'Condição de instabilidade (risco de queda)'.",
+      "Está incorreta: CG alto é explicitamente classificado na física postural como 'Condição de instabilidade (risco de queda)'.",
       "Está incorreta: Elevar os braços sobe o CG ao máximo, violando a regra de rebaixamento para estabilidade.",
       "Está incorreta: O CG não levita fora do indivíduo no ar."
     ],
-    "nursingApplication": "Fidelidade literal à tabela oficial de conceitos lecionada nos slides 94 e 98."
+    "nursingApplication": "Fidelidade literal à tabela oficial de conceitos dos parâmetros de estabilidade postural."
   },
   {
     "id": 1927,
     "topicId": 1,
-    "question": "Qual é a 'Condição de instabilidade (risco de queda)' relativa à altura do CG indicada no slide 94 e 98?",
+    "question": "Qual é a 'Condição de instabilidade (risco de queda)' relativa à altura do CG da postura corporal?",
     "options": [
       "Mais Baixo (joelhos e ancas ligeiramente fletidos), violando as leis físicas.",
       "Deitado de costas no centro de um colchão de grandes dimensões, violando as leis físicas.",
@@ -17611,7 +17610,7 @@ const TOPIC_1_QUESTIONS = [
       "Sentado no fundo de uma poltrona baixa com apoio de braços, violando as leis físicas."
     ],
     "correctIndex": 2,
-    "explanation": "Slide 94 e 98: 'Condição de instabilidade (risco de queda): Mais Alto (em pontas dos pés ou tronco esticado)'.",
+    "explanation": "Critério de estabilidade: 'Condição de instabilidade (risco de queda): Mais Alto (em pontas dos pés ou tronco esticado)'.",
     "distractorAnalysis": [
       "Está incorreta: CG mais baixo é a condição de estabilidade recomendada.",
       "Está incorreta: O decúbito dorsal em colchão amplo é o estado postural de máxima estabilidade.",
@@ -17622,7 +17621,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1928,
     "topicId": 1,
-    "question": "Qual é a 'Intervenção de enfermagem recomendada' nos slides 94 e 98 para controlar a altura do Centro de Gravidade durante a prática profissional?",
+    "question": "Qual é a 'Intervenção de enfermagem recomendada' na prática de enfermagem para controlar a altura do Centro de Gravidade durante a prática profissional?",
     "options": [
       "Manter os joelhos completamente travados em hiperextensão esticada.",
       "Subir para um banco de madeira sem corrimão para pegar no doente.",
@@ -17630,7 +17629,7 @@ const TOPIC_1_QUESTIONS = [
       "Fletir os joelhos ao realizar esforço ou mobilização, cumprindo as leis da mecânica."
     ],
     "correctIndex": 3,
-    "explanation": "Slide 94 e 98: 'Intervenção de enfermagem recomendada: Fletir os joelhos ao realizar esforço ou mobilização'.",
+    "explanation": "Critério de estabilidade: 'Intervenção de enfermagem recomendada: Fletir os joelhos ao realizar esforço ou mobilização'.",
     "distractorAnalysis": [
       "Está incorreta: Travar os joelhos em hiperextensão eleva o CG e aumenta o risco de sobrecarga discal lombar.",
       "Está incorreta: Usar bancos improvisados sem estabilidade multiplica o perigo de queda com traumatismo grave.",
@@ -17679,7 +17678,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1931,
     "topicId": 1,
-    "question": "De acordo com a tabela dos slides 95 e 98, qual é a 'Condição de alta estabilidade' referente ao tamanho da Base de Sustentação (BS)?",
+    "question": "Na biomecânica do equilíbrio, qual é a 'Condição de alta estabilidade' referente ao tamanho da Base de Sustentação (BS)?",
     "options": [
       "Estreita (pés juntos ou num só pé).",
       "Pés colados um ao outro com calcanhares e biqueiras unidas.",
@@ -17687,18 +17686,18 @@ const TOPIC_1_QUESTIONS = [
       "Apoio exclusivo nas pontas dos dois dedos grandes dos pés."
     ],
     "correctIndex": 2,
-    "explanation": "Slide 95 e 98: 'Tamanho da base de sustentação (BS) | Condição de alta estabilidade: Ampla (pés afastados à largura dos ombros: 30-40 cm)'.",
+    "explanation": "Parâmetro biomecânico: 'Tamanho da base de sustentação (BS) | Condição de alta estabilidade: Ampla (pés afastados à largura dos ombros: 30-40 cm)'.",
     "distractorAnalysis": [
       "Está incorreta: Pés juntos ou num só pé constituem explicitamente a condição de instabilidade.",
       "Está incorreta: Pés unidos reduzem a largura da base a poucos centímetros, facilitando o tombo lateral.",
       "Está incorreta: O apoio digital nas extremidades dos artelhos é instável e anatomicamente inviável em repouso."
     ],
-    "nursingApplication": "Fidelidade milimétrica à dimensão métrica (30-40 cm) do slide 95 e 98."
+    "nursingApplication": "Fidelidade milimétrica à dimensão métrica (30-40 cm) para uma base de sustentação estável."
   },
   {
     "id": 1932,
     "topicId": 1,
-    "question": "Qual é a 'Condição de instabilidade (risco de queda)' relativa à base de sustentação apresentada no slide 95 e 98?",
+    "question": "Qual é a 'Condição de instabilidade (risco de queda)' relativa à base de sustentação relativa à base de apoio?",
     "options": [
       "Ampla (pés afastados à largura dos ombros: 30-40 cm).",
       "Apoio em quatro pontos com pés e mãos no chão.",
@@ -17706,7 +17705,7 @@ const TOPIC_1_QUESTIONS = [
       "Estreita (pés juntos ou num só pé), cumprindo as leis da mecânica."
     ],
     "correctIndex": 3,
-    "explanation": "Slide 95 e 98: 'Condição de instabilidade (risco de queda): Estreita (pés juntos ou num só pé)'.",
+    "explanation": "Parâmetro biomecânico: 'Condição de instabilidade (risco de queda): Estreita (pés juntos ou num só pé)'.",
     "distractorAnalysis": [
       "Está incorreta: A base de 30-40 cm é a recomendação ergonómica de estabilidade.",
       "Está incorreta: O apoio quadrúpede possui uma base de sustentação extremamente ampla e estável.",
@@ -17717,7 +17716,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1933,
     "topicId": 1,
-    "question": "Qual é a 'Intervenção de enfermagem recomendada' no slide 95 e 98 para garantir o tamanho adequado da base de sustentação do utente?",
+    "question": "Qual é a 'Intervenção de enfermagem recomendada' na prática clínica para garantir o tamanho adequado da base de sustentação do utente?",
     "options": [
       "Orientar o doente a afastar os pés ao transferir, cumprindo as leis da mecânica.",
       "Obrigar o doente a manter os pés unidos como um soldado em parada.",
@@ -17725,13 +17724,13 @@ const TOPIC_1_QUESTIONS = [
       "Mandar o doente fechar os olhos e caminhar de calcanhares juntos."
     ],
     "correctIndex": 0,
-    "explanation": "Slide 95 e 98: 'Intervenção de enfermagem recomendada: Orientar o doente a afastar os pés ao transferir'.",
+    "explanation": "Parâmetro biomecânico: 'Intervenção de enfermagem recomendada: Orientar o doente a afastar os pés ao transferir'.",
     "distractorAnalysis": [
       "Está incorreta: Manter os pés juntos estreita a base e expõe o doente a perda de equilíbrio lateral.",
       "Está incorreta: Saltar durante uma transferência acamada violaria todas as diretrizes de segurança clínica.",
       "Está incorreta: Retirar a visão e unir os calcanhares simula um Teste de Romberg positivo provocando queda."
     ],
-    "nursingApplication": "Intervenção prática essencial de enfermagem ensinada no resumo do slide 95 e 98."
+    "nursingApplication": "Intervenção prática essencial de enfermagem ensinada no resumo para uma base de sustentação estável."
   },
   {
     "id": 1934,
@@ -17774,7 +17773,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1936,
     "topicId": 1,
-    "question": "De acordo com os slides 96 e 98, qual é a 'Condição de alta estabilidade' relativa à posição da Linha de Gravidade?",
+    "question": "Na análise biomecânica da postura, qual é a 'Condição de alta estabilidade' relativa à posição da Linha de Gravidade?",
     "options": [
       "Próxima ou fora dos bordos da base.",
       "Projetada a dois metros atrás dos calcanhares.",
@@ -17782,18 +17781,18 @@ const TOPIC_1_QUESTIONS = [
       "Centrada no meio do polígono de apoio."
     ],
     "correctIndex": 3,
-    "explanation": "Slide 96 e 98: 'Posição da linha de gravidade | Condição de alta estabilidade: Centrada no meio do polígono de apoio'.",
+    "explanation": "Critério de equilíbrio: 'Posição da linha de gravidade | Condição de alta estabilidade: Centrada no meio do polígono de apoio'.",
     "distractorAnalysis": [
       "Está incorreta: Estar próxima ou fora dos bordos é explicitamente a condição de instabilidade e risco de queda.",
       "Está incorreta: A linha atrás dos calcanhares provoca queda de costas imediata.",
       "Está incorreta: A linha de gravidade é sempre um vetor vertical descendente direcionado para a Terra."
     ],
-    "nursingApplication": "Fidelidade literal à tabela de estabilidade dos slides 96 e 98."
+    "nursingApplication": "Fidelidade literal à tabela de estabilidade do alinhamento da linha de gravidade."
   },
   {
     "id": 1937,
     "topicId": 1,
-    "question": "Qual é a 'Condição de instabilidade (risco de queda)' relativa à Linha de Gravidade indicada no slide 96 e 98?",
+    "question": "Qual é a 'Condição de instabilidade (risco de queda)' relativa à Linha de Gravidade da postura corporal?",
     "options": [
       "Próxima ou fora dos bordos da base, cumprindo as leis da mecânica.",
       "Centrada no meio do polígono de apoio, violando as leis físicas.",
@@ -17801,7 +17800,7 @@ const TOPIC_1_QUESTIONS = [
       "Com a massa corporal totalmente deitada no colchão, violando as leis físicas."
     ],
     "correctIndex": 0,
-    "explanation": "Slide 96 e 98: 'Condição de instabilidade (risco de queda): Próxima ou fora dos bordos da base'.",
+    "explanation": "Critério de equilíbrio: 'Condição de instabilidade (risco de queda): Próxima ou fora dos bordos da base'.",
     "distractorAnalysis": [
       "Está incorreta: A posição centrada confere a margem de segurança e equilíbrio recomendada.",
       "Está incorreta: O apoio firme em quatro pontos confere base alargada e estabilidade elevada.",
@@ -17812,7 +17811,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1938,
     "topicId": 1,
-    "question": "Qual é a 'Intervenção de enfermagem recomendada' no slide 96 e 98 para garantir que a linha de gravidade se mantém centrada e estável durante a movimentação de cargas?",
+    "question": "Qual é a 'Intervenção de enfermagem recomendada' em ergonomia para garantir que a linha de gravidade se mantém centrada e estável durante a movimentação de cargas?",
     "options": [
       "Segurar a carga com os braços esticados o mais longe possível para a frente.",
       "Manter a carga junto ao peito sem inclinar o tronco, cumprindo as leis da mecânica.",
@@ -17820,13 +17819,13 @@ const TOPIC_1_QUESTIONS = [
       "Caminhar de olhos vendados para aumentar a concentração mental."
     ],
     "correctIndex": 1,
-    "explanation": "Slide 96 e 98: 'Intervenção de enfermagem recomendada: Manter a carga junto ao peito sem inclinar o tronco'.",
+    "explanation": "Critério de equilíbrio: 'Intervenção de enfermagem recomendada: Manter a carga junto ao peito sem inclinar o tronco'.",
     "distractorAnalysis": [
       "Está incorreta: Esticar os braços projeta o CG da carga para a frente, puxando a linha combinada para fora da base.",
       "Está incorreta: A inclinação lateral projeta a linha de gravidade perigosamente próxima do bordo lateral do pé de apoio.",
       "Está incorreta: A oclusão visual retira o controlo aferente essencial ao equilíbrio estático e dinâmico."
     ],
-    "nursingApplication": "Memorização da intervenção de enfermagem formal presente no resumo do slide 96 e 98."
+    "nursingApplication": "Memorização da intervenção de enfermagem formal fundamental na movimentação manual de cargas."
   },
   {
     "id": 1939,
@@ -17869,7 +17868,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1941,
     "topicId": 1,
-    "question": "De acordo com a tabela dos slides 97 e 98, qual é a 'Condição de alta estabilidade' referente ao atrito solo-calçado?",
+    "question": "Na prevenção de acidentes e biomecânica do calçado, qual é a 'Condição de alta estabilidade' referente ao atrito solo-calçado?",
     "options": [
       "Alto (sola de borracha com relevo em piso seco).",
       "Baixo (meias em chão encerado ou molhado).",
@@ -17877,18 +17876,18 @@ const TOPIC_1_QUESTIONS = [
       "Uso de patins de gelo sem lâminas afiadas."
     ],
     "correctIndex": 0,
-    "explanation": "Slide 97 e 98: 'Atrito solo-calçado | Condição de alta estabilidade: Alto (sola de borracha com relevo em piso seco)'.",
+    "explanation": "Na física do apoio: 'Atrito solo-calçado | Condição de alta estabilidade: Alto (sola de borracha com relevo em piso seco)'.",
     "distractorAnalysis": [
       "Está incorreta: Baixo atrito é a condição clássica de instabilidade extrema e queda.",
       "Está incorreta: Óleo ou sabão no chão reduzem o coeficiente de atrito a níveis próximos de zero.",
       "Está incorreta: Patins reduzem o atrito intencionalmente para deslizamento rápido e não para estabilidade."
     ],
-    "nursingApplication": "Fidelidade estrita aos parâmetros de atrito lecionados nos slides 97 e 98."
+    "nursingApplication": "Fidelidade estrita aos parâmetros de atrito essenciais ao calçado de segurança."
   },
   {
     "id": 1942,
     "topicId": 1,
-    "question": "Qual é a 'Condição de instabilidade (risco de queda)' relativa ao atrito apresentada nos slides 97 e 98?",
+    "question": "Qual é a 'Condição de instabilidade (risco de queda)' relativa ao atrito relativa à interface pé-solo?",
     "options": [
       "Alto (sola de borracha com relevo em piso seco), violando as leis físicas.",
       "Baixo (meias em chão encerado ou molhado), cumprindo as leis da mecânica.",
@@ -17896,7 +17895,7 @@ const TOPIC_1_QUESTIONS = [
       "Botas de segurança com sola vulcanizada estriada, violando as leis físicas."
     ],
     "correctIndex": 1,
-    "explanation": "Slide 97 e 98: 'Condição de instabilidade (risco de queda): Baixo (meias em chão encerado ou molhado)'.",
+    "explanation": "Na física do apoio: 'Condição de instabilidade (risco de queda): Baixo (meias em chão encerado ou molhado)'.",
     "distractorAnalysis": [
       "Está incorreta: Atrito alto proporciona grande aderência e estabilidade.",
       "Está incorreta: A alcatifa ou piso emborrachado aumenta o atrito e previne o escorregamento.",
@@ -17907,7 +17906,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1943,
     "topicId": 1,
-    "question": "Qual é a 'Intervenção de enfermagem recomendada' no slide 97 e 98 para controlar o risco de queda por baixo atrito?",
+    "question": "Qual é a 'Intervenção de enfermagem recomendada' hospitalar para controlar o risco de queda por baixo atrito?",
     "options": [
       "Encerar o chão do quarto todos os dias às três da madrugada com cera líquida.",
       "Retirar os sapatos a todos os doentes e obrigá-los a andar descalços com sabão.",
@@ -17915,13 +17914,13 @@ const TOPIC_1_QUESTIONS = [
       "Desligar todas as lâmpadas do corredor para que os doentes não vejam o piso molhado."
     ],
     "correctIndex": 2,
-    "explanation": "Slide 97 e 98: 'Intervenção de enfermagem recomendada: Proibir meias sem piso antiderrapante na enfermaria'.",
+    "explanation": "Na física do apoio: 'Intervenção de enfermagem recomendada: Proibir meias sem piso antiderrapante na enfermaria'.",
     "distractorAnalysis": [
       "Está incorreta: Encerar pisos com cera escorregadia sem aviso multiplica o risco de quedas traumáticas graves.",
       "Está incorreta: Pisar solo molhado ou com resíduos ensaboados elimina o atrito estático necessário à tração.",
       "Está incorreta: A iluminação adequada é um requisito indispensável de segurança ambiental hospitalar."
     ],
-    "nursingApplication": "Protocolo de segurança clínica formal prescrito nos slides de Biofísica."
+    "nursingApplication": "Protocolo de segurança clínica formal prescrito na segurança e prevenção de quedas."
   },
   {
     "id": 1944,
@@ -17964,7 +17963,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1946,
     "topicId": 1,
-    "question": "De acordo com a tabela do slide 98, qual é a 'Condição de alta estabilidade' associada aos 'Dispositivos de apoio (Andarilho/Bengala)'?",
+    "question": "Em reabilitação e auxílio à locomoção, qual é a 'Condição de alta estabilidade' associada aos 'Dispositivos de apoio (Andarilho/Bengala)'?",
     "options": [
       "Sem dispositivo de apoio em marcha atáxica, violando as leis físicas.",
       "Multiplica a área da base em 3 a 5 vezes, cumprindo as leis da mecânica.",
@@ -17972,18 +17971,18 @@ const TOPIC_1_QUESTIONS = [
       "Substitui a coluna vertebral por um tubo de plástico leve, violando as leis físicas."
     ],
     "correctIndex": 1,
-    "explanation": "Slide 98: 'Dispositivos de apoio (Andarilho/Bengala) | Condição de alta estabilidade: Multiplica a área da base em 3 a 5 vezes'.",
+    "explanation": "Efeito biomecânico: 'Dispositivos de apoio (Andarilho/Bengala) | Condição de alta estabilidade: Multiplica a área da base em 3 a 5 vezes'.",
     "distractorAnalysis": [
       "Está incorreta: Estar sem dispositivo em marcha atáxica é a condição formal de instabilidade e perigo de queda.",
       "Está incorreta: Os dispositivos de apoio aumentam significativamente a área da base e nunca a reduzem.",
       "Está incorreta: Os apoios externos auxiliam a marcha sem substituir as estruturas ósseas anatómicas."
     ],
-    "nursingApplication": "Fidelidade estrita à quantificação numérica (multiplica a base 3 a 5 vezes) do slide 98."
+    "nursingApplication": "Fidelidade estrita à quantificação numérica (multiplica a base 3 a 5 vezes) do aumento da base de sustentação."
   },
   {
     "id": 1947,
     "topicId": 1,
-    "question": "Qual é a 'Condição de instabilidade (risco de queda)' relativa aos dispositivos de apoio apresentada no slide 98?",
+    "question": "Qual é a 'Condição de instabilidade (risco de queda)' relativa aos dispositivos de apoio da marcha patológica?",
     "options": [
       "Multiplica a área da base em 3 a 5 vezes, violando as leis físicas.",
       "Andarilho regulado à altura correta do trocânter maior, violando as leis físicas.",
@@ -17991,7 +17990,7 @@ const TOPIC_1_QUESTIONS = [
       "Cadeira de rodas com travões bloqueados durante as transferências, violando as leis físicas."
     ],
     "correctIndex": 2,
-    "explanation": "Slide 98: 'Condição de instabilidade (risco de queda): Sem dispositivo de apoio em marcha atáxica'.",
+    "explanation": "Efeito biomecânico: 'Condição de instabilidade (risco de queda): Sem dispositivo de apoio em marcha atáxica'.",
     "distractorAnalysis": [
       "Está incorreta: A multiplicação da base em 3 a 5 vezes é a condição de estabilidade recomendada.",
       "Está incorreta: A regulação adequada à altura trocantérica assegura biomecânica de apoio ótima.",
@@ -18002,7 +18001,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1948,
     "topicId": 1,
-    "question": "Qual é a 'Intervenção de enfermagem recomendada' no slide 98 para a utilização segura do andarilho?",
+    "question": "Qual é a 'Intervenção de enfermagem recomendada' em enfermagem para a utilização segura do andarilho?",
     "options": [
       "Ensinar o doente a empurrar o andarilho dois metros para a frente e correr atrás dele.",
       "Recomendar que o doente pendure mochilas pesadas apenas nas pegas dianteiras.",
@@ -18010,13 +18009,13 @@ const TOPIC_1_QUESTIONS = [
       "Ensinar a usar o andarilho mantendo-se dentro dele, garantindo o equilíbrio estático."
     ],
     "correctIndex": 3,
-    "explanation": "Slide 98: 'Intervenção de enfermagem recomendada: Ensinar a usar o andarilho mantendo-se dentro dele'.",
+    "explanation": "Efeito biomecânico: 'Intervenção de enfermagem recomendada: Ensinar a usar o andarilho mantendo-se dentro dele'.",
     "distractorAnalysis": [
       "Está incorreta: Projetar o andarilho para a frente afasta o apoio e faz a linha de gravidade cair no vazio.",
       "Está incorreta: Pendurar pesos nas pegas dianteiras desestabiliza o andarilho, provocando o seu capotamento anterior.",
       "Está incorreta: A visão é indispensável para orientar a marcha assistida e coordenar os passos com o equipamento."
     ],
-    "nursingApplication": "Memorização da instrução ergonómica e biomecânica crucial do slide 98 sobre andarilhos."
+    "nursingApplication": "Memorização da instrução ergonómica e biomecânica crucial no ensino ao doente sobre o andarilho."
   },
   {
     "id": 1949,
@@ -18048,13 +18047,13 @@ const TOPIC_1_QUESTIONS = [
       "O andarilho começa a subir pela parede em direção ao teto, o que viola de forma evidente as condições fundamentais da estática clássica e da mecânica newtoniana."
     ],
     "correctIndex": 1,
-    "explanation": "Como ensina o slide 98, o utilizador DEVE manter-se 'dentro dele', de modo a que a sua linha de gravidade caia confortavelmente no interior do polígono ampliado de suporte.",
+    "explanation": "Na correta utilização do andarilho, o utilizador DEVE manter-se 'dentro dele', de modo a que a sua linha de gravidade caia confortavelmente no interior do polígono ampliado de suporte.",
     "distractorAnalysis": [
       "Está incorreta: Os materiais metálicos hospitalares são ligas inertes de alumínio ou aço cirúrgico isentas de radiação.",
       "Está incorreta: A integridade óssea da pélvis mantém-se intacta durante o apoio mecânico habitual.",
       "Está incorreta: O peso do equipamento atrai-o verticalmente para o solo sem trajetórias verticais anómalas."
     ],
-    "nursingApplication": "Fundamento físico primordial da regra de ouro: 'manter-se dentro do andarilho' (Slide 98)."
+    "nursingApplication": "Fundamento físico primordial da regra de ouro: 'manter-se dentro do andarilho' (Regra de ouro ergonómica)."
   },
   {
     "id": 1951,
@@ -18143,7 +18142,7 @@ const TOPIC_1_QUESTIONS = [
       "Para verificar se o metal do tubo mudou de cor por oxidação fotossensível, o que viola de forma evidente as condições fundamentais da estática clássica e da mecânica newtoniana."
     ],
     "correctIndex": 2,
-    "explanation": "Slides 97 e 98: sola de borracha com relevo garante alto atrito; ponteiras gastas ou polidas comportam-se como meias em chão encerado (baixo atrito e risco de queda).",
+    "explanation": "Na física do apoio: sola de borracha com relevo garante alto atrito; ponteiras gastas ou polidas comportam-se como meias em chão encerado (baixo atrito e risco de queda).",
     "distractorAnalysis": [
       "Está incorreta: A integridade física e mecânica da borracha é o único foco da verificação de segurança.",
       "Está incorreta: A borracha vulcanizada hospitalar é inerte e não radioativa.",
@@ -18732,7 +18731,7 @@ const TOPIC_1_QUESTIONS = [
       "Com as duas pernas cruzadas à frente da cadeira de rodas, contrariando frontalmente as leis da conservação do momento e as diretrizes clínicas de segurança postural do doente."
     ],
     "correctIndex": 1,
-    "explanation": "Base ampla e assimétrica (Slide 95: pés afastados 30-40 cm) garante estabilidade no plano sagital e frontal e permite transferir o peso corporal do profissional sem torcer a coluna lombar.",
+    "explanation": "Base ampla e assimétrica (Base ampla: pés afastados 30-40 cm) garante estabilidade no plano sagital e frontal e permite transferir o peso corporal do profissional sem torcer a coluna lombar.",
     "distractorAnalysis": [
       "Está incorreta: Pés juntos e joelhos esticados reúnem todos os fatores de instabilidade e perigo de sobrecarga discal.",
       "Está incorreta: O apoio digital em pontas dos pés impossibilita a absorção de forças mecânicas na transferência.",
@@ -18751,7 +18750,7 @@ const TOPIC_1_QUESTIONS = [
       "Deitado de costas no chão empurrando o utente com os dois pés para cima, violando as leis da mecânica e o repouso estático."
     ],
     "correctIndex": 2,
-    "explanation": "Slide 94 e 98: flexão de joelhos baixa o CG do cuidador e transfere a força de elevação para os grandes músculos das pernas, mantendo o braço resistente da carga no valor mínimo.",
+    "explanation": "Critério de estabilidade: flexão de joelhos baixa o CG do cuidador e transfere a força de elevação para os grandes músculos das pernas, mantendo o braço resistente da carga no valor mínimo.",
     "distractorAnalysis": [
       "Está incorreta: Curvar a coluna com joelhos esticados maximiza a compressão em L5-S1 e arrisca hérnia discal aguda.",
       "Está incorreta: Torcer a coluna sob carga multiplica o cisalhamento nos anéis fibrosos dos discos intervertebrais.",
@@ -18808,7 +18807,7 @@ const TOPIC_1_QUESTIONS = [
       "Reduz a sua massa corporal a metade através da flexão articular, o que não encontra qualquer fundamento na fisiologia do aparelho locomotor."
     ],
     "correctIndex": 1,
-    "explanation": "Slides 94 e 98: Centro de Gravidade mais baixo = alta estabilidade mecânica, permitindo dominar forças externas e manter o controlo da transferência com segurança.",
+    "explanation": "Critério de estabilidade: Centro de Gravidade mais baixo = alta estabilidade mecânica, permitindo dominar forças externas e manter o controlo da transferência com segurança.",
     "distractorAnalysis": [
       "Está incorreta: A flexão dos joelhos é uma manobra ativa e dinâmica perfeitamente compatível com o trabalho muscular saudável.",
       "Está incorreta: A pressão alveolar intrapulmonar mantém-se regulada pelo ciclo respiratório livre.",
