@@ -73,17 +73,28 @@ const TOPICS_DATA = [
 ];
 
 
-// Agregação de todas as 2.400 questões científicas divididas por módulo (1.000 no Tópico 1 e 200 por tópico nos restantes)
-const QUESTIONS_DATA = [
-  ...TOPIC_1_QUESTIONS,
-  ...TOPIC_2_QUESTIONS,
-  ...TOPIC_3_QUESTIONS,
-  ...TOPIC_4_QUESTIONS,
-  ...TOPIC_5_QUESTIONS,
-  ...TOPIC_6_QUESTIONS,
-  ...TOPIC_7_QUESTIONS,
-  ...TOPIC_8_QUESTIONS
-];
+// =========================================================================
+// CONTROLO DE ACESSO DO DOCENTE POR TÓPICO
+// =========================================================================
+// Define quais os tópicos atualmente acessíveis aos estudantes (1 a 8).
+// Por determinação do docente: Apenas o Tópico 1 está ativo e acessível aos alunos.
+// Para desbloquear novos tópicos posteriormente, basta adicionar os respetivos IDs (ex: [1, 2]).
+const UNLOCKED_TOPIC_IDS = [1];
+
+// Banco integral de questões por tópico (totalmente preservado para desbloqueio futuro)
+const ALL_TOPIC_COLLECTIONS = {
+  1: TOPIC_1_QUESTIONS,
+  2: TOPIC_2_QUESTIONS,
+  3: TOPIC_3_QUESTIONS,
+  4: TOPIC_4_QUESTIONS,
+  5: TOPIC_5_QUESTIONS,
+  6: TOPIC_6_QUESTIONS,
+  7: TOPIC_7_QUESTIONS,
+  8: TOPIC_8_QUESTIONS
+};
+
+// Questões ativas disponibilizadas aos estudantes na plataforma
+const QUESTIONS_DATA = UNLOCKED_TOPIC_IDS.flatMap(id => ALL_TOPIC_COLLECTIONS[id] || []);
 
 // Resumo conciso de cada tópico para revisão rápida do estudante
 const TOPIC_SUMMARIES = [

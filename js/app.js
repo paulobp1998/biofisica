@@ -340,23 +340,42 @@ document.addEventListener('DOMContentLoaded', () => {
   function renderTopicCards() {
     topicsGrid.innerHTML = '';
     TOPICS_DATA.forEach(topic => {
-      const qCount = QUESTIONS_DATA.filter(q => q.topicId === topic.id).length;
+      const isUnlocked = typeof UNLOCKED_TOPIC_IDS !== 'undefined' ? UNLOCKED_TOPIC_IDS.includes(topic.id) : (topic.id === 1);
+      const qCount = (ALL_TOPIC_COLLECTIONS[topic.id] || []).length;
       const card = document.createElement('div');
-      card.className = 'topic-card';
-      card.innerHTML = `
-        <div class="topic-header">
-          <span class="topic-icon">${topic.icon}</span>
-          <span class="topic-badge">Tópico ${topic.id}</span>
-        </div>
-        <h3 class="topic-title">${topic.title}</h3>
-        <p class="topic-desc">${topic.description}</p>
-        <div class="topic-footer">
-          <span class="topic-count">${qCount} Questões Clínicas</span>
-          <button class="btn btn-primary btn-sm btn-start-topic" data-topic="${topic.id}">
-            Praticar ➔
-          </button>
-        </div>
-      `;
+      card.className = `topic-card ${isUnlocked ? '' : 'topic-card-locked'}`;
+
+      if (isUnlocked) {
+        card.innerHTML = `
+          <div class="topic-header">
+            <span class="topic-icon">${topic.icon}</span>
+            <span class="topic-badge">Tópico ${topic.id} • Ativo</span>
+          </div>
+          <h3 class="topic-title">${topic.title}</h3>
+          <p class="topic-desc">${topic.description}</p>
+          <div class="topic-footer">
+            <span class="topic-count">${qCount} Questões Clínicas</span>
+            <button class="btn btn-primary btn-sm btn-start-topic" data-topic="${topic.id}">
+              Praticar ➔
+            </button>
+          </div>
+        `;
+      } else {
+        card.innerHTML = `
+          <div class="topic-header">
+            <span class="topic-icon" style="filter: grayscale(1); opacity: 0.5;">${topic.icon}</span>
+            <span class="topic-badge topic-badge-locked" style="background: rgba(148, 163, 184, 0.15); color: var(--text-muted); border: 1px solid rgba(148, 163, 184, 0.35);">🔒 Bloqueado</span>
+          </div>
+          <h3 class="topic-title" style="color: var(--text-muted);">${topic.title}</h3>
+          <p class="topic-desc" style="color: var(--text-muted); opacity: 0.85;">${topic.description}</p>
+          <div class="topic-footer">
+            <span class="topic-count text-muted" style="color: var(--text-muted); font-size: 0.85rem;">🔒 Acesso Bloqueado pelo Docente</span>
+            <button class="btn btn-secondary btn-sm btn-locked-topic" data-topic="${topic.id}" style="opacity: 0.7; cursor: not-allowed;">
+              🔒 Bloqueado
+            </button>
+          </div>
+        `;
+      }
       topicsGrid.appendChild(card);
     });
 
@@ -364,6 +383,13 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.addEventListener('click', (e) => {
         const tId = parseInt(e.target.getAttribute('data-topic'), 10);
         openTopicSessionModal(tId);
+      });
+    });
+
+    document.querySelectorAll('.btn-locked-topic, .topic-card-locked').forEach(el => {
+      el.addEventListener('click', (e) => {
+        e.stopPropagation();
+        showToast('🔒 <strong>Tópico Bloqueado pelo Professor</strong><br>O acesso às questões deste tópico está suspenso até nova indicação do docente. Foca o teu estudo nas 1.000 questões do Tópico 1!', 'toast-info', 4500);
       });
     });
   }
@@ -400,6 +426,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   function openTopicSessionModal(topicId) {
+    if (typeof UNLOCKED_TOPIC_IDS !== 'undefined' && !UNLOCKED_TOPIC_IDS.includes(topicId)) {
+      showToast('🔒 <strong>Acesso Bloqueado</strong><br>Este tópico está temporariamente bloqueado pelo professor. Estuda o Tópico 1!', 'toast-warning', 4000);
+      return;
+    }
     const topic = TOPICS_DATA.find(t => t.id === topicId);
     const qCount = QUESTIONS_DATA.filter(q => q.topicId === topicId).length;
     resetSessionModalModes();
@@ -466,25 +496,48 @@ document.addEventListener('DOMContentLoaded', () => {
       timerSeconds: 0
     };
 
-    modalSessionTitle.textContent = `🎯 Simulação Global de Exame`;
-    modalSessionSubtitle.textContent = `Questões sorteadas proporcionalmente de todos os 8 tópicos da cadeira:`;
+    const isSingleTopic = typeof UNLOCKED_TOPIC_IDS !== 'undefined' && UNLOCKED_TOPIC_IDS.length === 1;
+    if (isSingleTopic) {
+      modalSessionTitle.textContent = `🎯 Simulação de Exame: Tópico 1`;
+      modalSessionSubtitle.textContent = `20 ou 40 questões sorteadas das 1.000 questões ativas do Tópico 1 (Tópicos 2 a 8 temporariamente bloqueados pelo docente):`;
 
-    sessionOptionsGrid.innerHTML = `
-      <button class="session-option-card selected" data-count="20">
-        <span class="session-icon">🎓</span>
-        <div class="session-info">
-          <strong>20 Questões (0 a 20 Val.)</strong>
-          <span>2 a 3 perguntas por tópico • ~20 min</span>
-        </div>
-      </button>
-      <button class="session-option-card" data-count="40">
-        <span class="session-icon">🏆</span>
-        <div class="session-info">
-          <strong>40 Questões (Exame Alargado)</strong>
-          <span>5 perguntas por tópico • ~40 min</span>
-        </div>
-      </button>
-    `;
+      sessionOptionsGrid.innerHTML = `
+        <button class="session-option-card selected" data-count="20">
+          <span class="session-icon">🎓</span>
+          <div class="session-info">
+            <strong>20 Questões (0 a 20 Val.)</strong>
+            <span>Simulação Padrão Tópico 1 • ~20 min</span>
+          </div>
+        </button>
+        <button class="session-option-card" data-count="40">
+          <span class="session-icon">🏆</span>
+          <div class="session-info">
+            <strong>40 Questões (Exame Alargado)</strong>
+            <span>Simulação Aprofundada Tópico 1 • ~40 min</span>
+          </div>
+        </button>
+      `;
+    } else {
+      modalSessionTitle.textContent = `🎯 Simulação Global de Exame`;
+      modalSessionSubtitle.textContent = `Questões sorteadas proporcionalmente dos tópicos ativos da cadeira:`;
+
+      sessionOptionsGrid.innerHTML = `
+        <button class="session-option-card selected" data-count="20">
+          <span class="session-icon">🎓</span>
+          <div class="session-info">
+            <strong>20 Questões (0 a 20 Val.)</strong>
+            <span>2 a 3 perguntas por tópico ativo • ~20 min</span>
+          </div>
+        </button>
+        <button class="session-option-card" data-count="40">
+          <span class="session-icon">🏆</span>
+          <div class="session-info">
+            <strong>40 Questões (Exame Alargado)</strong>
+            <span>5 perguntas por tópico ativo • ~40 min</span>
+          </div>
+        </button>
+      `;
+    }
 
     attachSessionCardListeners();
     modalSession.classList.remove('hidden');
@@ -1225,6 +1278,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (selectedTopic === 'all') {
       pool = quiz.shuffleArray(QUESTIONS_DATA);
+      const isSingleTopic = typeof UNLOCKED_TOPIC_IDS !== 'undefined' && UNLOCKED_TOPIC_IDS.length === 1;
+      sheetTitle = isSingleTopic ? 'Ficha de Avaliação e Treino: Tópico 1' : 'Simulação Geral Abrangente de Biofísica';
     } else if (selectedTopic === 'mistakes') {
       const mistakes = getMistakes();
       if (mistakes.length === 0) {
@@ -1243,6 +1298,10 @@ document.addEventListener('DOMContentLoaded', () => {
       sheetTitle = 'Ficha Especial: Perguntas Marcadas (⭐)';
     } else {
       const tId = parseInt(selectedTopic, 10);
+      if (typeof UNLOCKED_TOPIC_IDS !== 'undefined' && !UNLOCKED_TOPIC_IDS.includes(tId)) {
+        showToast('🔒 <strong>Tópico Bloqueado pelo Professor</strong><br>O acesso às questões deste tópico está suspenso temporariamente. Foca o teu estudo nas 1.000 questões do Tópico 1!', 'toast-warning', 4000);
+        return;
+      }
       pool = QUESTIONS_DATA.filter(q => q.topicId === tId);
       const tMeta = TOPICS_DATA.find(t => t.id === tId);
       sheetTitle = tMeta ? `Tópico ${tMeta.id}: ${tMeta.title}` : `Tópico ${tId}`;
@@ -1327,19 +1386,26 @@ document.addEventListener('DOMContentLoaded', () => {
     studyTopicsAccordion.innerHTML = '';
     TOPIC_SUMMARIES.forEach(item => {
       const topicMeta = TOPICS_DATA.find(t => t.id === item.topicId);
+      const isUnlocked = typeof UNLOCKED_TOPIC_IDS !== 'undefined' ? UNLOCKED_TOPIC_IDS.includes(item.topicId) : (item.topicId === 1);
       const accordionItem = document.createElement('div');
       accordionItem.className = 'accordion-item';
       accordionItem.innerHTML = `
         <div class="accordion-header">
-          <span>${topicMeta ? topicMeta.icon : '📖'} ${item.title}</span>
+          <span>${topicMeta ? topicMeta.icon : '📖'} ${item.title} ${isUnlocked ? '' : '<span style="font-size:0.75rem; background:rgba(148,163,184,0.18); padding:2px 8px; border-radius:12px; margin-left:8px; color:var(--text-muted); border:1px solid rgba(148,163,184,0.3);">🔒 Questões Bloqueadas</span>'}</span>
           <span class="accordion-arrow">▼</span>
         </div>
         <div class="accordion-body">
           ${item.summary}
           <div style="margin-top: 1rem; text-align: right;">
-            <button class="btn btn-sm btn-primary btn-study-practice" data-topic="${item.topicId}">
-              Fazer Teste deste Tópico ➔
-            </button>
+            ${isUnlocked ? `
+              <button class="btn btn-sm btn-primary btn-study-practice" data-topic="${item.topicId}">
+                Fazer Teste deste Tópico ➔
+              </button>
+            ` : `
+              <button class="btn btn-sm btn-secondary btn-study-locked" data-topic="${item.topicId}" style="opacity: 0.7; cursor: not-allowed;">
+                🔒 Questões Bloqueadas pelo Docente
+              </button>
+            `}
           </div>
         </div>
       `;
@@ -1361,6 +1427,12 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.addEventListener('click', (e) => {
         const tId = parseInt(e.target.getAttribute('data-topic'), 10);
         openTopicSessionModal(tId);
+      });
+    });
+
+    document.querySelectorAll('.btn-study-locked').forEach(btn => {
+      btn.addEventListener('click', () => {
+        showToast('🔒 <strong>Tópico Bloqueado pelo Professor</strong><br>O treino prático deste tópico está suspenso temporariamente. Foca o teu estudo nas 1.000 questões do Tópico 1!', 'toast-info', 4500);
       });
     });
   }

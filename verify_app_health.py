@@ -32,12 +32,11 @@ def test_app():
     assert scripts == expected_scripts, f"Scripts mismatch: {scripts}"
     print("✓ All 11 script tags in index.html are present and ordered correctly.")
 
-    # 2. Check UI text mentions of 2.400 questions
-    assert "2.400 Questões Clínicas" in html
-    assert "1.000 no Tópico 1 e 200 nos tópicos 2 a 8" in html
-    assert "Pesquisar em todo o banco de 2.400 questões" in html
-    assert "Pesquisa direta em 2.400 questões" in html
-    print("✓ UI metadata in index.html properly reflects 2.400 questions.")
+    # 2. Check UI text reflects active Topic 1 and locked topics 2-8
+    assert "1.000 Questões Clínicas Ativas (Tópico 1)" in html
+    assert "Tópicos 2 a 8" in html
+    assert "bloqueados" in html.lower()
+    print("✓ UI metadata in index.html properly reflects active Topic 1 (1.000 questions) and locked topics 2-8.")
 
     # 3. Load Questions Data
     all_questions = []

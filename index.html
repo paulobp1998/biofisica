@@ -59,14 +59,14 @@
     <section id="view-home" class="active-view">
       
       <div class="hero-section">
-        <span class="hero-tag">✨ 100% Gratuito • 2.400 Questões Clínicas • Ensino Superior</span>
+        <span class="hero-tag">✨ 100% Gratuito • 1.000 Questões Clínicas Ativas (Tópico 1) • Ensino Superior</span>
         <h1 class="hero-title">Prática Interativa de Biofísica Médica</h1>
         <p class="hero-desc">
-          Consolida os conteúdos das tuas aulas com <strong>2.400 questões clínicas</strong> rigorosas de escolha múltipla (1.000 no Tópico 1 e 200 nos tópicos 2 a 8), com justificações científicas completas, análise detalhada de distratores e aplicação direta aos cuidados diários de Enfermagem.
+          Consolida os conteúdos das tuas aulas com <strong>1.000 questões clínicas</strong> rigorosas do <strong>Tópico 1 (Força, Estado de Equilíbrio e Biomecânica)</strong>, com justificações científicas completas, análise detalhada de distratores e aplicação direta aos cuidados diários de Enfermagem. <em>(Nota: Os tópicos 2 a 8 encontram-se temporariamente bloqueados pelo docente para foco do estudo).</em>
         </p>
         <div class="hero-actions">
           <button class="btn btn-primary" id="btn-start-exam">
-            🎯 Simulação Global de Exame (Escala 0 a 20 Val.)
+            🎯 Simulação de Exame: Tópico 1 (Escala 0 a 20 Val.)
           </button>
           <button class="btn btn-outline" id="btn-view-study">
             📖 Resumos Teóricos & Fórmulas
@@ -87,7 +87,7 @@
           <button class="btn-hero-quick" id="btn-open-worksheet" title="Gerar ficha de perguntas formatada para impressão ou PDF">
             📄 Ficha de Trabalho em PDF
           </button>
-          <button class="btn-hero-quick" id="btn-hero-search" title="Pesquisar em todo o banco de 2.400 questões">
+          <button class="btn-hero-quick" id="btn-hero-search" title="Pesquisar no banco ativo de 1.000 questões">
             🔍 Glossário & Pesquisa
           </button>
         </div>
@@ -335,14 +335,14 @@
         <div class="modal-header">
           <div>
             <h3>🔍 Pesquisa Rápida & Glossário de Biofísica</h3>
-            <p class="modal-subtitle">Pesquisa direta em 2.400 questões, resumos teóricos, leis físicas e notas clínicas:</p>
+            <p class="modal-subtitle">Pesquisa direta no banco ativo do Tópico 1 (1.000 questões), resumos teóricos, leis físicas e notas clínicas:</p>
           </div>
           <button class="modal-close" id="btn-close-search-modal" aria-label="Fechar">✕</button>
         </div>
         <div class="modal-body">
           <div class="search-input-box">
             <span class="search-icon">🔍</span>
-            <input type="text" id="search-input" class="search-field" placeholder="Escreve uma palavra-chave (ex: Poiseuille, Reynolds, Bergonié, Iodo-131, atrito, cisalhamento)..." autocomplete="off">
+            <input type="text" id="search-input" class="search-field" placeholder="Escreve uma palavra-chave (ex: atrito, inércia, equilíbrio, alavanca, centro de gravidade, normal)..." autocomplete="off">
           </div>
           <div class="search-results-stats" id="search-results-stats">
             <span id="search-status-text">Digita pelo menos 2 caracteres para pesquisar</span>
@@ -372,15 +372,15 @@
           <div class="worksheet-form-group">
             <label for="worksheet-topic-select">Conteúdo / Tópico da Ficha:</label>
             <select id="worksheet-topic-select" class="worksheet-select">
-              <option value="all">🎯 Simulação Geral Abrangente (Todos os 8 Tópicos)</option>
-              <option value="1">Tópico 1: Força, Estado de Equilíbrio e Equilíbrio de Forças</option>
-              <option value="2">Tópico 2: Alavancas, Elasticidade e Resistência dos Materiais</option>
-              <option value="3">Tópico 3: Elasticidade e Resistência no Sistema Osteomuscular</option>
-              <option value="4">Tópico 4: Hidrodinâmica e Sistema Circulatório</option>
-              <option value="5">Tópico 5: Radiações, Raios X, Aplicações Terapêuticas e Diagnóstico</option>
-              <option value="6">Tópico 6: Núcleo Atómico e Forças Nucleares</option>
-              <option value="7">Tópico 7: Partículas Alfa, Beta e Radiação Gama</option>
-              <option value="8">Tópico 8: Isótopos, Isóbaros, Isótonos e Medicina Nuclear</option>
+              <option value="1" selected>Tópico 1: Força, Estado de Equilíbrio e Equilíbrio de Forças (Ativo - 1.000 Questões)</option>
+              <option value="all">🎯 Simulação Geral (Tópico 1 Ativo)</option>
+              <option value="2" disabled>🔒 Tópico 2: Alavancas, Elasticidade e Resistência dos Materiais (Bloqueado)</option>
+              <option value="3" disabled>🔒 Tópico 3: Elasticidade e Resistência no Sistema Osteomuscular (Bloqueado)</option>
+              <option value="4" disabled>🔒 Tópico 4: Hidrodinâmica e Sistema Circulatório (Bloqueado)</option>
+              <option value="5" disabled>🔒 Tópico 5: Radiações, Raios X, Aplicações Terapêuticas e Diagnóstico (Bloqueado)</option>
+              <option value="6" disabled>🔒 Tópico 6: Núcleo Atómico e Forças Nucleares (Bloqueado)</option>
+              <option value="7" disabled>🔒 Tópico 7: Partículas Alfa, Beta e Radiação Gama (Bloqueado)</option>
+              <option value="8" disabled>🔒 Tópico 8: Isótopos, Isóbaros, Isótonos e Medicina Nuclear (Bloqueado)</option>
               <option value="mistakes">📕 Apenas Perguntas do Meu Caderno de Erros</option>
               <option value="starred">⭐ Apenas Perguntas Marcadas com Estrela</option>
             </select>
@@ -418,7 +418,7 @@
 
   <!-- Rodapé -->
   <footer class="footer">
-    <p><strong>BioFísica Médica para o 1.º Ano de Enfermagem</strong> • 2.400 Questões Clínicas Certificadas (1.000 no Tópico 1 e 200 nos tópicos 2 a 8)</p>
+    <p><strong>BioFísica Médica para o 1.º Ano de Enfermagem</strong> • 1.000 Questões Clínicas Ativas (Tópico 1) • Tópicos 2 a 8 Temporariamente Bloqueados pelo Docente</p>
     <p style="margin-top: 0.35rem; font-size: 0.8rem;">Plataforma Educativa 100% Gratuita e Acessível • Sem custos de alojamento nem subscrição • Desenvolvido para apoio ao estudo universitário</p>
   </footer>
 

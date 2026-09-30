@@ -148,7 +148,7 @@ class QuizEngine {
     return this.getCurrentState();
   }
 
-  // Inicia uma simulação global de exame (20 ou 40 perguntas equilibradas de todos os tópicos)
+  // Inicia uma simulação de exame (20 ou 40 perguntas dos tópicos ativos autorizados pelo docente)
   startExamSimulation(numQuestions = 20, feedbackMode = 'immediate', timerSeconds = 0) {
     this.mode = 'exam';
     this.feedbackMode = feedbackMode;
@@ -157,18 +157,27 @@ class QuizEngine {
     this.timerDuration = timerSeconds;
     this.startTime = Date.now();
 
-    const perTopic = Math.floor(numQuestions / TOPICS_DATA.length);
+    const activeTopics = (typeof UNLOCKED_TOPIC_IDS !== 'undefined')
+      ? TOPICS_DATA.filter(t => UNLOCKED_TOPIC_IDS.includes(t.id))
+      : TOPICS_DATA;
+
     let pool = [];
-    TOPICS_DATA.forEach(t => {
-      const topicQuestions = QUESTIONS_DATA.filter(q => q.topicId === t.id);
-      const shuffled = this.shuffleArray(topicQuestions);
-      pool.push(...shuffled.slice(0, perTopic));
-    });
-    const needed = numQuestions - pool.length;
-    if (needed > 0) {
-      const remaining = QUESTIONS_DATA.filter(q => !pool.some(p => p.id === q.id));
-      const extra = this.shuffleArray(remaining).slice(0, needed);
-      pool.push(...extra);
+    if (activeTopics.length === 1) {
+      const topicQuestions = QUESTIONS_DATA.filter(q => q.topicId === activeTopics[0].id);
+      pool = this.shuffleArray(topicQuestions).slice(0, numQuestions);
+    } else {
+      const perTopic = Math.floor(numQuestions / activeTopics.length);
+      activeTopics.forEach(t => {
+        const topicQuestions = QUESTIONS_DATA.filter(q => q.topicId === t.id);
+        const shuffled = this.shuffleArray(topicQuestions);
+        pool.push(...shuffled.slice(0, perTopic));
+      });
+      const needed = numQuestions - pool.length;
+      if (needed > 0) {
+        const remaining = QUESTIONS_DATA.filter(q => !pool.some(p => p.id === q.id));
+        const extra = this.shuffleArray(remaining).slice(0, needed);
+        pool.push(...extra);
+      }
     }
     const selected = this.shuffleArray(pool);
 
