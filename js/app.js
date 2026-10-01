@@ -827,7 +827,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     let distractorsHtml = '<strong>Análise detalhada das restantes opções:</strong><ul>';
-    const letters = ['A', 'B', 'C', 'D'];
     result.options.forEach((opt, idx) => {
       if (idx !== result.correctIndex && result.distractorAnalysis[idx]) {
         const cleanExplanation = formatDistractorText(result.distractorAnalysis[idx]);
