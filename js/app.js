@@ -787,6 +787,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     feedbackCard.classList.remove('hidden');
+    const letters = ['A', 'B', 'C', 'D'];
+    const correctLetter = letters[result.correctIndex];
     if (result.isCorrect) {
       feedbackCard.classList.add('feedback-correct');
       feedbackTitle.innerHTML = '✅ <strong>Resposta Correta!</strong> Excelente raciocínio científico.';
@@ -796,7 +798,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     feedbackExplanation.innerHTML = `
-      <p><strong>Por que está certa a opção correta:</strong> ${result.explanation}</p>
+      <p><strong>Por que está certa a opção ${correctLetter}:</strong> ${result.explanation}</p>
     `;
 
     function formatDistractorText(rawText) {
@@ -953,7 +955,7 @@ document.addEventListener('DOMContentLoaded', () => {
           ${!ans.isCorrect ? `<p class="correct-highlight"><strong>Resposta correta:</strong> Opção ${letters[ans.correctIndex]} - ${ans.options[ans.correctIndex]}</p>` : ''}
         </div>
         <div class="review-explanation">
-          <p><strong>Justificação Científica:</strong> ${ans.explanation}</p>
+          <p><strong>Por que está certa a opção ${letters[ans.correctIndex]}:</strong> ${ans.explanation}</p>
         </div>
         <div class="review-nursing">
           <p><strong>💡 Relevância em Enfermagem:</strong> ${ans.nursingApplication}</p>
@@ -1361,7 +1363,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="print-sol-item">
             <p class="print-sol-q">Questão ${idx + 1}:</p>
             <p class="print-sol-ans">✓ Resposta Correta: Opção (${letters[q.correctIndex]}) - ${q.options[q.correctIndex]}</p>
-            <p class="print-sol-exp"><strong>Justificação:</strong> ${q.explanation}</p>
+            <p class="print-sol-exp"><strong>Por que está certa a opção ${letters[q.correctIndex]}:</strong> ${q.explanation}</p>
             <p class="print-sol-exp"><strong>💡 Relevância Clínica:</strong> ${q.nursingApplication}</p>
           </div>
         `;
