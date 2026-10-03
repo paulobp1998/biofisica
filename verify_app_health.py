@@ -27,16 +27,20 @@ def test_app():
         'js/data/topic8.js',
         'js/questions-data.js',
         'js/quiz-engine.js',
+        'js/lib/paho-mqtt.min.js',
+        'js/arena-network.js',
+        'js/arena-engine.js',
+        'js/arena-ui.js',
         'js/app.js'
     ]
     assert scripts == expected_scripts, f"Scripts mismatch: {scripts}"
-    print("✓ All 11 script tags in index.html are present and ordered correctly.")
+    print("✓ All 15 script tags in index.html are present and ordered correctly.")
 
     # 2. Check UI text reflects active Topic 1 and locked topics 2-8
-    assert "1.000 Questões Clínicas Ativas (Tópico 1)" in html
+    assert "500 Questões Clínicas Ativas (Tópico 1)" in html
     assert "Tópicos 2 a 8" in html
     assert "bloqueados" in html.lower()
-    print("✓ UI metadata in index.html properly reflects active Topic 1 (1.000 questions) and locked topics 2-8.")
+    print("✓ UI metadata in index.html properly reflects active Topic 1 (500 questions) and locked topics 2-8.")
 
     # 3. Load Questions Data
     all_questions = []
@@ -52,10 +56,10 @@ def test_app():
         all_questions.extend(data)
 
     print(f"✓ Topic counts: {topic_counts}")
-    assert topic_counts[1] == 1000, f"Topic 1 has {topic_counts[1]} questions (expected 1000)"
+    assert topic_counts[1] == 500, f"Topic 1 has {topic_counts[1]} questions (expected 500)"
     for t in range(2, 9):
         assert topic_counts[t] == 200, f"Topic {t} has {topic_counts[t]} questions (expected 200)"
-    assert len(all_questions) == 2400
+    assert len(all_questions) == 1900
 
     # 4. Check IDs are contiguous and distinct
     ids = [q["id"] for q in all_questions]
@@ -66,7 +70,7 @@ def test_app():
 
     # 5. Check search index simulation
     # Simulate user searching for common keywords: "Trendelenburg", "L5-S1", "Buck", "Poiseuille", "Reynolds"
-    keywords = ["Trendelenburg", "L5-S1", "Buck", "Poiseuille", "Reynolds", "Bohler", "Kirschner", "Wolff"]
+    keywords = ["Trendelenburg", "L5-S1", "Buck", "Poiseuille", "Reynolds", "Inércia", "Torque", "Bíceps"]
     for kw in keywords:
         matches = [q for q in all_questions if kw.lower() in q["question"].lower() or kw.lower() in q["explanation"].lower() or any(kw.lower() in opt.lower() for opt in q["options"])]
         print(f"  • Search '{kw}': {len(matches)} matching questions found.")
