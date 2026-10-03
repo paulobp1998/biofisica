@@ -2,6 +2,7 @@
  * BANCO DE QUESTÕES CERTIFICADAS - TÓPICO 1
  * Força, Estado de Equilíbrio e Biomecânica
  * Alinhado estritamente com os 105 slides do PowerPoint (1BF)
+ * Inclui Força Normal (Slides 33-36 e 59); Sem Lesões por Pressão
  * Total de Questões: 500
  */
 
@@ -85,7 +86,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1005,
     "topicId": 1,
-    "question": "Se o doente estiver com tendência para escorregar para a frente na poltrona (postura em saco de batatas com retroversão da bacia), que problema mecânico está a ocorrer?",
+    "question": "Se o doente estiver com tendência para escorregar para a frente na poltrona (postura em saco de batatas com retroversão da bacia), que intervenção postural estabiliza a bacia e previne o deslizamento?",
     "options": [
       "Aumentar o atrito das costas do doente aplicando talco ou amido na zona dorsal e no encosto estofado da poltrona.",
       "Fletir ligeiramente a bacia e apoiar bem os pés no piso ou estrado, alargando a base e garantindo que o CG fica retido na zona de suporte posterior.",
@@ -503,25 +504,6 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1027,
     "topicId": 1,
-    "question": "Em doentes com rotura aguda do tendão de Aquiles, o que acontece à capacidade mecânica de efetuar a marcha funcional?",
-    "options": [
-      "A vantagem mecânica aumenta consideravelmente, permitindo uma flexão plantar mais vigorosa compensada pela musculatura flexora intrínseca dos dedos.",
-      "O braço de resistência encurta espontaneamente até zero, permitindo que a articulação talocrural realize a marcha sem qualquer gasto energético basal.",
-      "Perde-se a transmissão da força potente (Fp = 0), tornando o doente completamente incapaz de elevar o calcanhar ou realizar a propulsão da passada (marcha claudicante sem impulsão).",
-      "O doente mantém a impulsão normal da passada, uma vez que a elevação do calcanhar depende primariamente do músculo tibial anterior e extensores."
-    ],
-    "correctIndex": 2,
-    "explanation": "Sem o tendão de Aquiles a alavanca de 2.ª classe é desativada: a contração do gémeo não puxa o calcâneo e o pé apenas bate plano no solo sem força propulsora.",
-    "distractorAnalysis": [
-      "Está incorreta: os músculos intrínsecos do pé são débeis e incapazes de gerar o torque necessário para elevar a massa corporal sem o tricípete sural.",
-      "Está incorreta: o braço de resistência é anatómico e a rotura do tendão elimina a aplicação da força potente, impedindo a flexão plantar contra a carga.",
-      "Está incorreta: o tibial anterior é flexor dorsal do pé; a impulsão e elevação do calcanhar dependem estritamente do tricípete sural e tendão de Aquiles."
-    ],
-    "nursingApplication": "Permite ao enfermeiro reconhecer o Sinal de Thompson (ausência de flexão plantar ao apertar a barriga da perna) no diagnóstico de rotura tendinosa."
-  },
-  {
-    "id": 1028,
-    "topicId": 1,
     "question": "Se uma alavanca de 3.ª classe tiver bp = 4 cm e br = 32 cm, que força potente Fp tem de ser aplicada para equilibrar uma carga resistente de 20 N na ponta?",
     "options": [
       "2,5 N (calculada invertendo erradamente a proporção dos braços de alavanca: Fp = 20 · (4 / 32) = 2,5 N).",
@@ -539,7 +521,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Mostra numericamente o 'custo de força' que o corpo humano paga para operar com alavancas interpotentes."
   },
   {
-    "id": 1029,
+    "id": 1028,
     "topicId": 1,
     "question": "Se a Alavanca de 3.ª Classe apresenta desvantagem de força (VM < 1, exigindo que os músculos façam muito mais força do que a carga), porque é que a evolução biológica selecionou esta classe para a quase totalidade do esqueleto humano?",
     "options": [
@@ -558,7 +540,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Responde a uma das dúvidas conceituais mais fascinantes dos estudantes de anatomia e fisiologia."
   },
   {
-    "id": 1030,
+    "id": 1029,
     "topicId": 1,
     "question": "Se os músculos humanos operassem como alavancas de 2.ª classe com grande vantagem de força (inserções tendinosas muito longe das articulações, junto às mãos e pés), que grave desvantagem anatómica resultaria?",
     "options": [
@@ -577,7 +559,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Demonstra a elegância do compromisso arquitetónico da anatomia humana entre compacidade, velocidade e gasto de força."
   },
   {
-    "id": 1031,
+    "id": 1030,
     "topicId": 1,
     "question": "Qual é a consequência fisiológica direta desta desvantagem mecânica de força (VM < 1) das alavancas do corpo humano durante o trabalho dos enfermeiros?",
     "options": [
@@ -596,7 +578,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fundamenta a consciência ergonómica ocupacional de autocuidado e preservação da integridade física do enfermeiro."
   },
   {
-    "id": 1032,
+    "id": 1031,
     "topicId": 1,
     "question": "No exemplo clássico da flexão do cotovelo pelo músculo bíceps braquial no corpo humano, quais são os três pontos anatómicos que constituem a alavanca?",
     "options": [
@@ -615,7 +597,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Figura central e obrigatória de todos os manuais e exames de biofísica para enfermagem."
   },
   {
-    "id": 1033,
+    "id": 1032,
     "topicId": 1,
     "question": "Qual é a razão aproximada entre o braço da carga na mão (br ≈ 35 cm) e o braço do tendão do bíceps (bp ≈ 5 cm) no cotovelo humano?",
     "options": [
@@ -634,7 +616,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fixa a proporção mnemónica fundamental (1:7) do cotovelo que serve de base a todos os exercícios da alavanca do cotovelo."
   },
   {
-    "id": 1034,
+    "id": 1033,
     "topicId": 1,
     "question": "No exercício da alavanca do antebraço, quando o utente segura um objeto de 1,0 kg na mão a uma distância de 30 cm do cotovelo (g = 9,8 m/s²), qual é o momento resistente da carga externa?",
     "options": [
@@ -653,7 +635,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fixa a aplicação direta da fórmula de momento resistente para uma carga segurada na mão."
   },
   {
-    "id": 1035,
+    "id": 1034,
     "topicId": 1,
     "question": "Como varia o momento gerado pelo bíceps em função do ângulo de flexão do cotovelo para uma mesma força de contração muscular?",
     "options": [
@@ -672,7 +654,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Explica porque é que transportar cargas com o cotovelo a 90° oferece maior eficácia biomecânica de torque."
   },
   {
-    "id": 1036,
+    "id": 1035,
     "topicId": 1,
     "question": "Qual é a vantagem evolutiva e prática de o corpo humano ter alavancas no cotovelo com desvantagem mecânica de força (VM < 1)?",
     "options": [
@@ -691,7 +673,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Compreensão biocibernética e evolutiva da arquitetura do aparelho locomotor."
   },
   {
-    "id": 1037,
+    "id": 1036,
     "topicId": 1,
     "question": "Que 'preço' físico paga o operador na alavanca para conseguir erguer a carga de 500 kg com apenas 30 kg de força?",
     "options": [
@@ -710,7 +692,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Enfatiza o princípio da conservação do trabalho mecânico nas alavancas."
   },
   {
-    "id": 1038,
+    "id": 1037,
     "topicId": 1,
     "question": "Qual é a relação de vantagem mecânica neste sistema de alavanca (500 kg suportados por 30 kg)?",
     "options": [
@@ -729,7 +711,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Consolidação matemática do conceito de vantagem mecânica em alavancas de grande multiplicação."
   },
   {
-    "id": 1039,
+    "id": 1038,
     "topicId": 1,
     "question": "Quando uma pessoa flete o tronco para a frente a partir da bacia para apanhar um objeto no chão, a coluna vertebral funciona biomecanicamente como uma alavanca:",
     "options": [
@@ -748,7 +730,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Explica a vulnerabilidade anatómica lombar e a causa física das lombalgias mecânicas."
   },
   {
-    "id": 1040,
+    "id": 1039,
     "topicId": 1,
     "question": "Porque é que o braço de alavanca dos músculos eretores da espinha (bp ≈ 5 cm) cria uma grande desvantagem de força na flexão do tronco?",
     "options": [
@@ -767,7 +749,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Demonstração física clara de porque a flexão do tronco com cargas é extremamente perigosa."
   },
   {
-    "id": 1041,
+    "id": 1040,
     "topicId": 1,
     "question": "Ao mobilizar um utente para a cabeceira da cama, que técnica ergonómica minimiza o braço de alavanca?",
     "options": [
@@ -786,7 +768,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Guia prático para mobilização no leito baseado nos princípios físicos de alavancas e trabalho."
   },
   {
-    "id": 1042,
+    "id": 1041,
     "topicId": 1,
     "question": "Que papel desempenha a rótula (patela) na biomecânica da alavanca do joelho?",
     "options": [
@@ -805,7 +787,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Conceito elegante de biomecânica músculo-esquelética sobre a função mecânica dos ossos sesamoides."
   },
   {
-    "id": 1043,
+    "id": 1042,
     "topicId": 1,
     "question": "Na mastigação, a mandíbula humana articula-se na articulação têmporo-mandibular (ATM) e funciona como uma alavanca de que classe quando os músculos masseter e temporal se contraem?",
     "options": [
@@ -824,7 +806,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Aplica as classes de alavancas a um sistema orofacial crucial na nutrição e cuidados de saúde."
   },
   {
-    "id": 1044,
+    "id": 1043,
     "topicId": 1,
     "question": "Qual é o movimento articular complexo que a ATM combina para além da simples rotação de alavanca?",
     "options": [
@@ -843,7 +825,45 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Compreensão aprofundada da cinemática mandibular nos cuidados de saúde e alimentação assistida."
   },
   {
+    "id": 1044,
+    "topicId": 1,
+    "question": "Uma pinça de disseção anatómica utilizada pelo enfermeiro para manipular compressas estéreis ou suturas funciona como que tipo de alavanca?",
+    "options": [
+      "Alavanca de 1.ª classe (interfixa), onde o fulcro se situa a meio das hastes metálicas, a força potente nas pontas distais e a resistência na mola de união posterior.",
+      "Alavanca de 2.ª classe (inter-resistente), onde o fulcro está nas pontas ativas, a resistência no centro das hastes e a força potente aplicada no vértice proximal.",
+      "Alavanca de 3.ª classe (interpotente), onde o fulcro está na união elástica posterior, os dedos aplicam a força potente no meio e a resistência está nas pontas da pinça.",
+      "Alavanca de 1.ª classe com multiplicação de força (VM > 5), concebida para esmagar tecidos biológicos através de um mecanismo de roldanas oculto na junção das hastes."
+    ],
+    "correctIndex": 2,
+    "explanation": "A pinça anatómica tem VM < 1, sacrificando força em troca de extrema precisão tátil e controlo milimétrico da preensão dos tecidos.",
+    "distractorAnalysis": [
+      "Está incorreta: a pinça de disseção não tem eixo articulado central; o ponto de apoio elástico localiza-se na extremidade proximal posterior.",
+      "Está incorreta: a resistência localiza-se nas pontas em contacto com a gaze ou tecido e o esforço manual é aplicado na região média das hastes.",
+      "Está incorreta: as pinças simples não possuem roldanas nem VM > 1, operando com desvantagem mecânica de força (3.ª classe) para preservar o controlo proprioceptivo."
+    ],
+    "nursingApplication": "Identificação e classificação biomecânica correta do instrumento cirúrgico mais comum."
+  },
+  {
     "id": 1045,
+    "topicId": 1,
+    "question": "Uma tesoura cirúrgica (de Mayo ou de Metzenbaum) utilizada para corte de fios ou tecidos funciona como que classe de alavanca?",
+    "options": [
+      "Alavanca de 2.ª classe (inter-resistente), onde o ponto de apoio se localiza na ponta afiada das lâminas e a força potente é aplicada pelo parafuso de fixação central.",
+      "Alavanca de 3.ª classe (interpotente), onde o fulcro está nos anéis proximais, os dedos aplicam potência no centro das hastes e o corte ocorre nas extremidades distais.",
+      "Plano inclinado duplo deslizante sem momento angular, onde as duas lâminas se movem unicamente por translação linear horizontal sob a tração dos tendões flexores da mão.",
+      "Alavanca de 1.ª classe (interfixa) dupla, onde o parafuso central funciona como fulcro comum entre os anéis dos dedos (força potente) e as lâminas de corte (força resistente)."
+    ],
+    "correctIndex": 3,
+    "explanation": "O fulcro (parafuso) fica estritamente entre a força potente dos dedos e a resistência do fio a cortar, caracterizando a 1.ª classe clássica.",
+    "distractorAnalysis": [
+      "Está incorreta: o fulcro da tesoura é o parafuso central articulado e não a extremidade das lâminas, caracterizando uma alavanca interfixa.",
+      "Está incorreta: a tesoura é de 1.ª classe porque o fulcro central interpõe-se entre a potência (anéis) e a resistência (lâminas).",
+      "Está incorreta: a tesoura atua como um sistema de alavancas rotacionais em torno de um eixo fixo e não por simples translação de planos inclinados."
+    ],
+    "nursingApplication": "Distinção mecânica fundamental entre pinças simples (3.ª classe) e tesouras (1.ª classe)."
+  },
+  {
+    "id": 1046,
     "topicId": 1,
     "question": "No desafio clínico do transporte em ambulância, uma ambulância trava bruscamente a 80 km/h. Porque é que o enfermeiro de pé é projetado para a frente?",
     "options": [
@@ -862,7 +882,26 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Demonstra a importância vital de o enfermeiro permanecer sentado e com cinto de segurança apertado durante o transporte de emergência."
   },
   {
-    "id": 1046,
+    "id": 1047,
+    "topicId": 1,
+    "question": "No momento em que os travões da ambulância atuam a 80 km/h, que força externa inicial é aplicada diretamente sobre a ambulância para a travar?",
+    "options": [
+      "A força normal exercida pelo peso da ambulância perpendicularmente à superfície da via de circulação.",
+      "A pressão hidráulica gerada pelas pinças de travão sobre o disco metálico acoplado a cada uma das rodas.",
+      "A força inercial do motor que puxa ativamente a carroçaria do veículo para trás durante a desaceleração.",
+      "A força de atrito estático/cinético entre a borracha dos pneus e o asfalto da estrada (atuando no sentido oposto ao movimento)."
+    ],
+    "correctIndex": 3,
+    "explanation": "A ambulância desacelera porque os pneus sofrem uma força externa de atrito com a estrada; o enfermeiro não fixado não sofre essa força.",
+    "distractorAnalysis": [
+      "Está incorreta: a força normal é vertical e equilibra o peso, não fornecendo força resultante horizontal para desacelerar o veículo.",
+      "Está incorreta: os travões internos criam o binário de travagem nas rodas, mas a força externa que atua sobre o veículo como um todo é o atrito no solo.",
+      "Está incorreta: as forças do motor são internas ao sistema mecânico do veículo; a paragem exige interação mecânica com o solo exterior."
+    ],
+    "nursingApplication": "Explica porque o veículo desacelera rapidamente enquanto os corpos soltos no interior continuam em movimento livre."
+  },
+  {
+    "id": 1048,
     "topicId": 1,
     "question": "Qual é a razão pela qual a inércia do enfermeiro é tanto mais perigosa quanto maior for a velocidade da ambulância?",
     "options": [
@@ -881,7 +920,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Justifica os limites de velocidade e condução defensiva das equipas de emergência pré-hospitalar."
   },
   {
-    "id": 1047,
+    "id": 1049,
     "topicId": 1,
     "question": "Numa ambulância que se desloca a 80 km/h em linha reta com velocidade perfeitamente constante (MRU), o enfermeiro de pé sente força para a frente?",
     "options": [
@@ -900,7 +939,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite prestar cuidados breves em reta uniforme, devendo o enfermeiro sentar-se assim que o veículo se aproxima de cruzamentos ou curvas."
   },
   {
-    "id": 1048,
+    "id": 1050,
     "topicId": 1,
     "question": "Quando dizemos vulgarmente que o enfermeiro 'foi projetado para a frente' na travagem da ambulância, que incorreção física reside nessa expressão?",
     "options": [
@@ -919,7 +958,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Compreender a inércia desmistifica a ideia de 'forças misteriosas' e foca a atenção na necessidade de retenção mecânica."
   },
   {
-    "id": 1049,
+    "id": 1051,
     "topicId": 1,
     "question": "Se a ambulância travar bruscamente a 80 km/h e a divisória estiver a 1 metro de distância do enfermeiro, quanto tempo demora aproximadamente a colidir se não se segurar?",
     "options": [
@@ -938,7 +977,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Mostra a impossibilidade biológica de 'segurar-se com as mãos' perante desacelerações a alta velocidade: o cinto é imperativo!"
   },
   {
-    "id": 1050,
+    "id": 1052,
     "topicId": 1,
     "question": "Se o piso da ambulância estivesse perfeitamente liso e sem qualquer atrito (gelo ideal), o que aconteceria ao enfermeiro durante a travagem?",
     "options": [
@@ -957,7 +996,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "O piso antiderrapante das ambulâncias fornece atrito para estabilidade na marcha, mas não substitui os cintos de segurança."
   },
   {
-    "id": 1051,
+    "id": 1053,
     "topicId": 1,
     "question": "Qual é o papel físico dos cintos de segurança dos assentos da cabine de cuidados da ambulância?",
     "options": [
@@ -976,7 +1015,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "O uso sistemático de cinto de segurança pelos enfermeiros reduz drasticamente traumatismos graves em colisões de ambulâncias."
   },
   {
-    "id": 1052,
+    "id": 1054,
     "topicId": 1,
     "question": "Qual é a consequência de não fixar a garrafa de oxigénio medicinal no respetivo suporte rígido da ambulância?",
     "options": [
@@ -995,7 +1034,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "O enfermeiro deve verificar diariamente o travamento mecânico dos suportes de cilindros de gases medicinais na ambulância."
   },
   {
-    "id": 1053,
+    "id": 1055,
     "topicId": 1,
     "question": "Qual é a função primordial do cinto de segurança de três pontos nos assentos da cabine de cuidados da ambulância?",
     "options": [
@@ -1014,7 +1053,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "O enfermeiro deve afivelar sempre o cinto de segurança, ajustando a sua posição para alcançar os comandos clínicos essenciais."
   },
   {
-    "id": 1054,
+    "id": 1056,
     "topicId": 1,
     "question": "Se um profissional de saúde viajar na ambulância sem cinto de segurança e a viatura sofrer uma colisão frontal, o seu corpo:",
     "options": [
@@ -1033,7 +1072,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Lesões cranianas graves e morte de profissionais em ambulâncias decorrem maioritariamente da não utilização do cinto de segurança."
   },
   {
-    "id": 1055,
+    "id": 1057,
     "topicId": 1,
     "question": "Qual das seguintes práticas de segurança em ambulância contraria diretamente os princípios da 1.ª Lei de Newton?",
     "options": [
@@ -1052,7 +1091,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Cuidados necessários devem ser prestados com o veículo imobilizado na berma se exigirem que o enfermeiro se levante do assento."
   },
   {
-    "id": 1056,
+    "id": 1058,
     "topicId": 1,
     "question": "Um aspirador de secreções portátil de 6 kg está pousado solto sobre a bancada da ambulância. Numa travagem a 72 km/h (20 m/s), o que dita a 1.ª Lei de Newton?",
     "options": [
@@ -1071,7 +1110,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Todos os dispositivos médicos móveis devem dispor de berços de ancoragem com fecho rápido homologados (norma EN 1789)."
   },
   {
-    "id": 1057,
+    "id": 1059,
     "topicId": 1,
     "question": "Se uma garrafa de oxigénio de 10 kg estiver mal fixada e a ambulância desacelerar a 10 m/s², que força inercial atua sobre o suporte defeituoso?",
     "options": [
@@ -1090,7 +1129,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Verificar a integridade das cintas de fixação de garrafas de O2 é uma rotina inegociável de segurança em enfermagem."
   },
   {
-    "id": 1058,
+    "id": 1060,
     "topicId": 1,
     "question": "Porque é que os tubos endotraqueais em doentes ventilados na ambulância devem ser meticulosamente fixados com fita ou fixador rígido?",
     "options": [
@@ -1109,7 +1148,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "A extubação acidental durante o transporte em ambulância é uma catástrofe clínica evitável por correta fixação inercial."
   },
   {
-    "id": 1059,
+    "id": 1061,
     "topicId": 1,
     "question": "Se um referencial estiver em repouso e outro se mover em relação a ele em MRU, como se comportam as leis da física em ambos?",
     "options": [
@@ -1128,7 +1167,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Explica porque um enfermeiro pode preparar com segurança uma medicação na bancada da ambulância se esta se mover em MRU suave."
   },
   {
-    "id": 1060,
+    "id": 1062,
     "topicId": 1,
     "question": "Uma ambulância em aceleração intensa ou travagem brusca constitui um referencial inercial?",
     "options": [
@@ -1147,7 +1186,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Explica porque a bordo de uma ambulância acelerada o enfermeiro sente forças 'invisíveis' a empurrá-lo: é a inércia do referencial acelerado!"
   },
   {
-    "id": 1061,
+    "id": 1063,
     "topicId": 1,
     "question": "Quando uma ambulância descreve uma curva circular com velocidade escalar constante, porque é que o movimento NÃO é um MRU?",
     "options": [
@@ -1166,26 +1205,26 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Aceleração centrípeta significa que atua uma força resultante não nula sobre a viatura, gerando forças inerciais laterais nos ocupantes."
   },
   {
-    "id": 1062,
+    "id": 1064,
     "topicId": 1,
-    "question": "Se um doente estiver deitado numa maca sem cintos durante uma curva rápida para a esquerda, para onde desliza o seu corpo?",
+    "question": "Que força real atua sobre os pneus da ambulância para obrigar o veículo a curvar numa rotunda?",
     "options": [
-      "Desliza para a direita em relação à maca, porque por inércia o seu corpo tende a prosseguir em linha reta para a frente.",
-      "Desliza para a esquerda em direção ao centro da curva, atraído pela inclinação lateral da superfície do colchão.",
-      "Desliza para a cabeceira da maca, impelido pela componente tangencial de aceleração imprimida pelo condutor.",
-      "Permanece estático sem qualquer tendência de deslizamento, pois o atrito do lençol anula todas as forças inerciais."
+      "A força de sustentação aerodinâmica gerada pela passagem do ar ambiente sobre o tejadilho e portas laterais da viatura.",
+      "A força elástica exercida pelos amortecedores da suspensão traseira ao fletirem em resposta à inclinação da carroçaria.",
+      "A força normal exercida verticalmente pelo piso sobre as quatro rodas que anula integralmente o efeito da aceleração centrípeta.",
+      "A força de atrito lateral (estático) exercida pelo asfalto sobre os pneus, apontando para o centro da curva como força centrípeta."
     ],
-    "correctIndex": 0,
-    "explanation": "A ambulância vira para a esquerda; o corpo, pela 1.ª Lei, quer seguir em frente, chocando contra a grade lateral direita da maca.",
+    "correctIndex": 3,
+    "explanation": "É o atrito lateral entre a borracha e o pavimento que fornece a força centrípeta necessária para curvar (Fc = m·v²/R).",
     "distractorAnalysis": [
-      "Está incorreta: numa curva à esquerda, a tendência inercial retilínea projeta o corpo para o lado exterior direito da curva.",
-      "Está incorreta: a inércia em curva não projeta o corpo longitudinalmente para a cabeceira, mas lateralmente em relação ao eixo da maca.",
-      "Está incorreta: o atrito entre lençóis é baixo e insuficiente para segurar o doente contra forças centrífugas moderadas em curva."
+      "Está incorreta: as forças aerodinâmicas em velocidades urbanas são reduzidas e não fornecem a força centrípeta indispensável para curvar.",
+      "Está incorreta: a suspensão controla o amortecimento vertical do chassis, mas a força lateral motriz para a rotação decorre do contacto com o solo.",
+      "Está incorreta: a força normal é perpendicular ao solo e equilibra o peso vertical do veículo, não possuindo componente horizontal na curva plana."
     ],
-    "nursingApplication": "Ajustar as correias de retenção transversal da maca antes de percursos com rotundas e curvas sinuosas é mandatório."
+    "nursingApplication": "Em piso molhado ou com óleo, a redução do atrito pode impedir a viatura de curvar, provocando despiste por inércia retilínea."
   },
   {
-    "id": 1063,
+    "id": 1065,
     "topicId": 1,
     "question": "Qual é a relação física entre a velocidade da ambulância na curva e a força lateral que o doente e o enfermeiro sentem?",
     "options": [
@@ -1204,7 +1243,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Conduzir a velocidade moderada em curvas reduz drasticamente as forças laterais sobre o doente transportado."
   },
   {
-    "id": 1064,
+    "id": 1066,
     "topicId": 1,
     "question": "O que acontece a uma ambulância se tentar curvar a alta velocidade num piso com gelo onde o atrito lateral seja nulo (μ = 0)?",
     "options": [
@@ -1223,7 +1262,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Em condições meteorológicas adversas com piso escorregadio, a velocidade de transporte deve ser drasticamente reduzida."
   },
   {
-    "id": 1065,
+    "id": 1067,
     "topicId": 1,
     "question": "No transporte de um utente crítico em ambulância, como se articulam a 1.ª Lei de Newton e a prevenção de eventos adversos?",
     "options": [
@@ -1242,7 +1281,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "A segurança no transporte pré e intra-hospitalar baseia-se diretamente na aplicação consciente da 1.ª Lei de Newton."
   },
   {
-    "id": 1066,
+    "id": 1068,
     "topicId": 1,
     "question": "No desafio clínico da travagem da ambulância, uma ambulância desloca-se a 80 km/h. Qual é o valor desta velocidade convertido para a unidade do SI (m/s)?",
     "options": [
@@ -1261,7 +1300,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite ao enfermeiro aplicar as equações fundamentais da física que exigem grandezas coerentes no SI."
   },
   {
-    "id": 1067,
+    "id": 1069,
     "topicId": 1,
     "question": "Se a ambulância a 80 km/h (22,2 m/s) colidir frontalmente contra um obstáculo rígido e imobilizar-se num intervalo de tempo de apenas 0,1 segundos (Δt = 0,1 s), qual é a aceleração média de paragem?",
     "options": [
@@ -1280,7 +1319,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Evidencia a violência extrema das variações cinemáticas sofridas pelos ocupantes em acidentes de viação."
   },
   {
-    "id": 1068,
+    "id": 1070,
     "topicId": 1,
     "question": "Qual é a distância de travagem aproximada percorrida pela ambulância durante a colisão de 0,1 segundos se a desaceleração for considerada uniforme?",
     "options": [
@@ -1299,7 +1338,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Demonstra a importância da zona de deformação programada das viaturas de emergência médica para absorver energia."
   },
   {
-    "id": 1069,
+    "id": 1071,
     "topicId": 1,
     "question": "Se a ambulância circulasse a 40 km/h (11,1 m/s) em vez de 80 km/h e parasse nos mesmos 0,1 segundos, o que aconteceria à aceleração de impacto?",
     "options": [
@@ -1318,7 +1357,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Reforça a condução moderada e prudente de ambulâncias mesmo em marcha de emergência para proteção da equipa."
   },
   {
-    "id": 1070,
+    "id": 1072,
     "topicId": 1,
     "question": "Se a desaceleração de paragem na colisão frontal da ambulância a 80 km/h for de 222 m/s², como se expressa este valor em múltiplos da aceleração da gravidade terrestre (g = 9,8 m/s²)?",
     "options": [
@@ -1337,7 +1376,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite comparar a severidade do choque com os limites de tolerância fisiológica do corpo humano."
   },
   {
-    "id": 1071,
+    "id": 1073,
     "topicId": 1,
     "question": "Na dinâmica do transporte em emergência, considerando um enfermeiro de massa 70 kg que se encontra de pé desprotegido na célula da ambulância a 80 km/h e para em 0,1 s, qual é a força média com que colide contra a divisória?",
     "options": [
@@ -1356,7 +1395,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Choca os estudantes com a realidade física: o impacto desprotegido contra a divisória é frequentemente fatal."
   },
   {
-    "id": 1072,
+    "id": 1074,
     "topicId": 1,
     "question": "Se o enfermeiro tentar segurar-se com os braços ao varão do teto da ambulância durante a colisão de 15.540 N, porque é que essa tentativa falha inevitavelmente?",
     "options": [
@@ -1375,7 +1414,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Destrói o mito perigoso de que é seguro viajar de pé segurando-se aos varões dentro da célula sanitária."
   },
   {
-    "id": 1073,
+    "id": 1075,
     "topicId": 1,
     "question": "Qual é a principal recomendação prática de segurança decorrente desta demonstração biofísica da 2.ª Lei de Newton na ambulância?",
     "options": [
@@ -1394,7 +1433,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Salva vidas na prática diária da emergência pré-hospitalar ao fundamentar cientificamente o uso do cinto de segurança."
   },
   {
-    "id": 1074,
+    "id": 1076,
     "topicId": 1,
     "question": "Porque é que as ambulâncias e viaturas de emergência modernas possuem airbags frontais e laterais além dos cintos de segurança?",
     "options": [
@@ -1413,7 +1452,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fundamenta a importância da segurança passiva veicular no transporte de doentes críticos e equipas de saúde."
   },
   {
-    "id": 1075,
+    "id": 1077,
     "topicId": 1,
     "question": "Numa maca de transporte em ambulância, os cintos de fixação transversal e de ombros do doente servem para:",
     "options": [
@@ -1432,7 +1471,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Reafirma a obrigatoriedade legal e ética do enfermeiro afivelar todos os cintos da maca em todas as transferências."
   },
   {
-    "id": 1076,
+    "id": 1078,
     "topicId": 1,
     "question": "Um monitor-desfibrilhador com massa de 5 kg solto sobre a bancada de uma ambulância a 80 km/h (22,2 m/s) que colide e para em 0,05 s embate na cabeça do enfermeiro com que força média aproximada?",
     "options": [
@@ -1451,7 +1490,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Choca os estudantes com o perigo extremo de deixar um monitor-desfibrilhador solto perto do utente ou enfermeiro."
   },
   {
-    "id": 1077,
+    "id": 1079,
     "topicId": 1,
     "question": "A norma europeia EN 1789 exige que todos os suportes de fixação de equipamentos médicos numa ambulância resistam a acelerações de pelo menos:",
     "options": [
@@ -1470,7 +1509,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fundamenta a auditoria e inspeção rigorosa das trincas e trincos dos suportes de mala e monitores na ambulância."
   },
   {
-    "id": 1078,
+    "id": 1080,
     "topicId": 1,
     "question": "Se um cinto de segurança de ambulância esticar 5 centímetros durante uma retenção controlada em vez de ser completamente rígido (alongamento nulo), que benefício biomecânico resulta?",
     "options": [
@@ -1489,26 +1528,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Explica a tecnologia dos cintos com fibras de alongamento programado nas viaturas de socorro."
   },
   {
-    "id": 1079,
-    "topicId": 1,
-    "question": "Em situações de emergência pré-hospitalar, a melhor forma de aplicar os princípios da 2.ª Lei durante a condução da ambulância é:",
-    "options": [
-      "Praticar uma condução defensiva suave, evitando travagens bruscas e curvas a alta velocidade para limitar as forças inerciais sobre doentes e equipamentos.",
-      "Conduzir à velocidade máxima permitida em todas as circunstâncias, pois chegar mais depressa reduz o tempo de exposição às forças inerciais.",
-      "Desligar o sistema de suspensão para que o veículo não oscile, eliminando as acelerações verticais durante o transporte.",
-      "Colocar todos os equipamentos soltos no chão da ambulância, pois próximos do solo ficam protegidos das forças inerciais."
-    ],
-    "correctIndex": 0,
-    "explanation": "Acelerações suaves (menor 'a') reduzem a força F = m·a gerada sobre passageiros, órgãos internos e equipamentos na célula sanitária.",
-    "distractorAnalysis": [
-      "Está incorreta: velocidade máxima constante aumenta as forças inerciais em curvas e travagens; a condução defensiva implica adaptar a velocidade às condições, não maximizá-la.",
-      "Está incorreta: desligar a suspensão aumentaria as acelerações verticais transmitidas ao habitáculo; a suspensão ativa atenua as irregularidades do pavimento.",
-      "Está incorreta: colocar equipamentos no chão não os protege de forças inerciais horizontais; os equipamentos devem ser fixados a suportes certificados para resistir às forças de colisão."
-    ],
-    "nursingApplication": "Garante a chegada segura da equipa e do utente ao hospital com o menor trauma físico possível."
-  },
-  {
-    "id": 1080,
+    "id": 1081,
     "topicId": 1,
     "question": "Para manter o equilíbrio, sabendo que a inserção tendinosa do bíceps no rádio dista 8 cm (0,08 m) do cotovelo e o momento total a equilibrar é 6,62 N·m, que força muscular (FE) deve o bíceps exercer?",
     "options": [
@@ -1527,7 +1547,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Conclui com exatidão matemática o exercício central da biomecânica muscular do cotovelo."
   },
   {
-    "id": 1081,
+    "id": 1082,
     "topicId": 1,
     "question": "Comparando a força exercida pelo bíceps (82,75 N) com o peso total suportado pelo membro (massa total = 3,5 kg ⇒ Peso = 34,3 N), que conclusão biomecânica fundamental se retira?",
     "options": [
@@ -1546,7 +1566,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Síntese conceptual sobre o custo biológico das alavancas interpotentes no corpo humano."
   },
   {
-    "id": 1082,
+    "id": 1083,
     "topicId": 1,
     "question": "Numa barra em alavanca interfixa, sabendo que a força resistente é de 20 N e atua no braço menor de 1,2 m, qual é o momento da força resistente?",
     "options": [
@@ -1565,7 +1585,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Cálculo fidedigno do momento resistente da alavanca em estudo."
   },
   {
-    "id": 1083,
+    "id": 1084,
     "topicId": 1,
     "question": "Num sistema de elevação por alavanca, quer-se erguer uma carga de massa 500 kg com braço resistente de 0,3 m (g = 9,8 m/s²). Qual é o momento resistente a vencer?",
     "options": [
@@ -1584,7 +1604,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Validação fiel do momento resistente calculado para a alavanca."
   },
   {
-    "id": 1084,
+    "id": 1085,
     "topicId": 1,
     "question": "Na alavanca de elevação, sabendo que o operador apenas consegue exercer uma força equivalente a 30 kg (FP = 30 × 9,8 = 294 N), qual é o comprimento mínimo do braço potente (bP) para equilibrar os 1470 N·m?",
     "options": [
@@ -1603,7 +1623,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fidelidade ao cálculo completo e resolução da alavanca mecânica."
   },
   {
-    "id": 1085,
+    "id": 1086,
     "topicId": 1,
     "question": "Qual é a razão biomecânica pela qual o calçado com salto alto e estreito é formalmente contraindicado no exercício da enfermagem?",
     "options": [
@@ -1622,7 +1642,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Solas rasas, largas e antiderrapantes são a recomendação internacional de ergonomia e segurança ocupacional em meio hospitalar."
   },
   {
-    "id": 1086,
+    "id": 1087,
     "topicId": 1,
     "question": "Numa paragem brusca de cadeira de rodas a 1,5 m/s, o que acontece ao centro de gravidade do doente sentado sem cinto?",
     "options": [
@@ -1641,7 +1661,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Travar suavemente e manter o utente com cinto pélvico previne a queda anterior para o solo da enfermaria."
   },
   {
-    "id": 1087,
+    "id": 1088,
     "topicId": 1,
     "question": "Em doentes neurológicos com espasticidade ou movimentos involuntários, qual é o benefício adicional do cinto pélvico na cadeira?",
     "options": [
@@ -1660,45 +1680,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Proporciona segurança postural e conforto, permitindo ao doente neurológico interagir com o ambiente com menor fadiga."
   },
   {
-    "id": 1088,
-    "topicId": 1,
-    "question": "Quando um doente em decúbito dorsal gira no leito plano passando para decúbito lateral (rolamento do tronco), sob o ponto de vista da altura do seu centro de gravidade ao longo do colchão:",
-    "options": [
-      "A altura do centro de gravidade duplica bruscamente durante a rotação, exigindo que o enfermeiro exerça uma força de tração superior ao peso total do tronco para vencer a barreira.",
-      "A altura do CG em relação ao colchão varia muito pouco se a manobra for realizada no plano horizontal, aproximando-se da facilidade de rotação de um cilindro em equilíbrio neutro.",
-      "O centro de gravidade desce abaixo da superfície inferior do colchão, criando um torque restaurador espontâneo que devolve o doente imediatamente ao decúbito dorsal de origem.",
-      "A coordenada vertical do centro de gravidade anula-se completamente, fazendo com que o corpo perca toda a sua inércia rotacional durante a transição postural entre decúbitos."
-    ],
-    "correctIndex": 1,
-    "explanation": "O tronco humano aproxima-se geometricamente de um cilindro; rolar sobre o leito plano requer muito menos esforço vertical do que levantar o doente no ar.",
-    "distractorAnalysis": [
-      "Está incorreta: o rolamento em leito plano mantém a altura do centro de gravidade quase constante, exigindo muito menor esforço do que a elevação vertical do tronco.",
-      "Está incorreta: o centro de gravidade do corpo humano situa-se anatomicamente dentro da região pélvica/abdominal, não descendo para baixo do colchão hospitalar.",
-      "Está incorreta: a inércia rotacional e a gravidade permanecem ativas; a manobra requer coordenação ergonómica para estabilizar a nova postura lateral."
-    ],
-    "nursingApplication": "Fundamenta as técnicas ergonómicas de rolamento lateral para higiene e posicionamento com mínimo esforço muscular da equipa."
-  },
-  {
     "id": 1089,
-    "topicId": 1,
-    "question": "Ao assistir um doente no levante para a borda da cama, como deve o enfermeiro posicionar o seu próprio corpo para garantir a estabilidade do conjunto?",
-    "options": [
-      "Pés afastados cerca de 30 a 40 cm (base ampla), joelhos e ancas ligeiramente fletidos, coluna ereta e posicionado lateralmente ao doente pronto para servir de anteparo de suporte.",
-      "Pés rigorosamente unidos, pernas totalmente hiperestendidas e tronco inclinado para a frente com os braços esticados para maximizar a alavanca mecânica sobre o colchão.",
-      "Posicionar-se atrás da cabeceira da cama inclinando o corpo para a frente sobre o leito, utilizando apenas a flexão da coluna lombar para içar o tronco do utente pelo pescoço.",
-      "Apoiar um joelho no chão e rodar o tronco vigorosamente para o lado oposto antes de tocar no doente, confiando na força inercial rápida do impulso para completar o levante."
-    ],
-    "correctIndex": 0,
-    "explanation": "Esta postura ergonómica rebaixa o centro de gravidade do profissional, alarga a sua base e coloca os membros inferiores prontos para gerar forças de apoio sem sobrecarga lombar.",
-    "distractorAnalysis": [
-      "Está incorreta: pés juntos e pernas estendidas reduzem a base de suporte e sobrecarregam perigosamente a coluna lombar com braço de alavanca excessivo.",
-      "Está incorreta: puxar o doente pelo pescoço com flexão lombar gera risco extremo de lesão discal no profissional e trauma cervical no utente.",
-      "Está incorreta: manobras baseadas em impulsos bruscos e torções da coluna violam os princípios ergonómicos e expõem ambos a desequilíbrios graves."
-    ],
-    "nursingApplication": "Combina os princípios do equilíbrio estável com a postura de segurança do cuidador na mobilização ativa assistida."
-  },
-  {
-    "id": 1090,
     "topicId": 1,
     "question": "No Romberg sensibilizado (teste de Romberg em tandem, com um pé colocado exatamente à frente do outro em linha reta), a base de sustentação:",
     "options": [
@@ -1717,7 +1699,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Teste clínico avançado utilizado para detetar défices subtis de equilíbrio em fases precoces de patologias neurológicas."
   },
   {
-    "id": 1091,
+    "id": 1090,
     "topicId": 1,
     "question": "Quais são os três sistemas sensoriais fisiológicos que trabalham em conjunto para informar o cérebro sobre a posição do Centro de Gravidade e manter o equilíbrio?",
     "options": [
@@ -1736,7 +1718,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fundamento biofísico e fisiológico indispensável para compreender porque a falência de um dos sistemas exige compensação pelos outros."
   },
   {
-    "id": 1092,
+    "id": 1091,
     "topicId": 1,
     "question": "Em doentes com doença de Parkinson que apresentam festinação e bloqueio da marcha (freezing), o que acontece à relação entre o Centro de Gravidade e a Base de Sustentação?",
     "options": [
@@ -1755,26 +1737,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Capacita o enfermeiro a utilizar pistas visuais no solo (linhas transversais coloridas) que ajudam a quebrar o freezing e a restabelecer o passo seguro."
   },
   {
-    "id": 1093,
-    "topicId": 1,
-    "question": "Quando dois enfermeiros auxiliam um doente com grande ataxia motora a caminhar, a distribuição ideal de forças é:",
-    "options": [
-      "Ambos os enfermeiros posicionados atrás do doente empurrando as suas ancas para a frente com as palmas das mãos para impedir que a velocidade da marcha diminua no corredor.",
-      "Um profissional caminha à frente puxando o doente pelas mãos esticadas e o outro vai atrás empurrando a coluna dorsal com um joelho apoiado no sacro durante a caminhada.",
-      "Um enfermeiro de cada lado, mantendo uma marcha sincronizada com o doente e apoiando suavemente os membros superiores ou o cinto de transferência sem puxar nem forçar o passo.",
-      "Um enfermeiro transporta o utente nas costas enquanto o segundo profissional eleva os pés do paciente com uma toalha para evitar qualquer contacto físico com o pavimento."
-    ],
-    "correctIndex": 2,
-    "explanation": "O suporte bilateral fornece forças restauradoras imediatas em ambos os planos laterais, limitando qualquer oscilação excessiva do centro de gravidade para fora da base.",
-    "distractorAnalysis": [
-      "Está incorreta: empurrar o doente por trás retira o controlo lateral do equilíbrio e projeta o centro de gravidade perigosamente para a frente da base.",
-      "Está incorreta: tracionar os braços para a frente e empurrar o sacro desestabiliza a mecânica postural e expõe o utente a subluxações articulares e quedas.",
-      "Está incorreta: carregar o utente nas costas é biomecanicamente perigoso para o profissional e elimina os objetivos terapêuticos de reeducação funcional da marcha."
-    ],
-    "nursingApplication": "Padroniza a assistência em marcha para doentes com elevado grau de dependência motora e sensorial."
-  },
-  {
-    "id": 1094,
+    "id": 1092,
     "topicId": 1,
     "question": "Porque é que os suportes de soro hospitalares móveis utilizam bases com 5 rodízios (base em estrela de cinco pontas) em vez de apenas 3 pernas triangulares?",
     "options": [
@@ -1793,7 +1756,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Evidencia a engenharia de segurança dos equipamentos médicos baseada nos princípios da física do equilíbrio."
   },
   {
-    "id": 1095,
+    "id": 1093,
     "topicId": 1,
     "question": "Quando uma equipa de quatro profissionais transporta uma vítima na prancha espinal pelas pegas laterais, a distribuição de forças deve garantir que:",
     "options": [
@@ -1812,7 +1775,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Ensina a técnica de transporte em equipa e a comunicação por comandos padronizados em trauma."
   },
   {
-    "id": 1096,
+    "id": 1094,
     "topicId": 1,
     "question": "No treino de marcha com obstáculos, porque é que o enfermeiro ensina o doente a levantar os joelhos mais alto e a olhar em frente (e não fixamente para a ponta dos pés)?",
     "options": [
@@ -1831,7 +1794,26 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Instrução pedagógica clássica que corrige a postura viciosa de doentes com medo de cair."
   },
   {
-    "id": 1097,
+    "id": 1095,
+    "topicId": 1,
+    "question": "Se um estudante tiver de resumir em três frases os três tipos de equilíbrio mecânico, a resposta correta é:",
+    "options": [
+      "O Estável resiste ao atrito; o Instável elimina a gravidade; o Indiferente duplica a massa inercial dos corpos rígidos hospitalares.",
+      "O Estável existe apenas no vácuo; o Instável atua na água fervente; o Indiferente manifesta-se nos gases ideais em expansão.",
+      "No Estável a perturbação eleva o CG e gera momento restaurador; no Instável o CG desce gerando momento de tombo; no Indiferente a altura do CG não varia.",
+      "No Estável a força normal é máxima; no Instável a força normal é nula; no Indiferente a força normal torna-se perpendicular à gravidade."
+    ],
+    "correctIndex": 2,
+    "explanation": "Síntese mnemónica e analítica perfeita baseada na resposta à perturbação e na variação da altitude do Centro de Gravidade em relação ao solo.",
+    "distractorAnalysis": [
+      "Está incorreta: a gravidade e a massa mantêm-se invariáveis em todas as classes de equilíbrio na física newtoniana clássica.",
+      "Está incorreta: as três classes de equilíbrio aplicam-se a todos os corpos macroscópicos do quotidiano e prática clínica hospitalar.",
+      "Está incorreta: em superfícies horizontais a força normal equilibra o peso (Fn = P) no repouso; a diferença reside no comportamento do CG sob perturbação."
+    ],
+    "nursingApplication": "Fixa os conceitos nucleares com clareza cristalina para sucesso nas avaliações e aplicação clínica."
+  },
+  {
+    "id": 1096,
     "topicId": 1,
     "question": "Qual é a relação fundamental entre a Base de Sustentação, a altura do Centro de Gravidade e o grau de Estabilidade de um sistema humano ou equipamento?",
     "options": [
@@ -1850,7 +1832,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Regra de ouro biomecânica transversal a todo o curso de Biofísica e ergonomia clínica de enfermagem."
   },
   {
-    "id": 1098,
+    "id": 1097,
     "topicId": 1,
     "question": "Como é definido rigorosamente o Centro de Gravidade (CG) de um corpo humano na mecânica biológica?",
     "options": [
@@ -1869,7 +1851,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fixa a definição textual de Centro de Gravidade na aula de Biofísica."
   },
   {
-    "id": 1099,
+    "id": 1098,
     "topicId": 1,
     "question": "No campo gravítico uniforme da superfície da Terra, qual é a relação prática entre o Centro de Massa (CM) e o Centro de Gravidade (CG) de uma pessoa?",
     "options": [
@@ -1888,7 +1870,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Clarifica a equivalência física entre Centro de Massa e Centro de Gravidade na biomecânica terrestre."
   },
   {
-    "id": 1100,
+    "id": 1099,
     "topicId": 1,
     "question": "Por que razão o Centro de Gravidade é designado por 'ponto imaginário'?",
     "options": [
@@ -1907,7 +1889,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Desmistifica o conceito de ponto de massa concentrada na modelação biomecânica."
   },
   {
-    "id": 1101,
+    "id": 1100,
     "topicId": 1,
     "question": "Qual é a importância fundamental de conhecer o Centro de Gravidade nos cuidados de enfermagem?",
     "options": [
@@ -1926,7 +1908,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Conecta o conceito físico de baricentro à prática quotidiana e segurança clínica do doente."
   },
   {
-    "id": 1102,
+    "id": 1101,
     "topicId": 1,
     "question": "Onde se localiza o Centro de Gravidade no corpo humano de um adulto em posição anatómica ereta normal?",
     "options": [
@@ -1945,26 +1927,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fixa a referência anatómica precisa de S2 na postura ereta humana."
   },
   {
-    "id": 1103,
-    "topicId": 1,
-    "question": "Em termos antropométricos percentuais, a localização do CG de um adulto ereto situa-se aproximadamente a que percentagem da sua altura total a partir da planta dos pés?",
-    "options": [
-      "A cerca de 25% a 30% da altura total, situando-se próximo da interlinha dos joelhos.",
-      "A cerca de 55% a 57% da altura total (cerca de 55% nas mulheres e 56-57% nos homens).",
-      "A cerca de 75% a 80% da altura total, localizando-se na região média do esterno.",
-      "A exatamente 50% da altura total, coincidindo com o centro geométrico da estatura."
-    ],
-    "correctIndex": 1,
-    "explanation": "Num indivíduo de 1,70 m de altura, o CG situa-se a cerca de 95 a 97 cm do chão, na cavidade pélvica anterior ao sacro (S2).",
-    "distractorAnalysis": [
-      "Está incorreta: o CG localiza-se na cavidade pélvica anterior a S2 (~55-57% da altura), e não nos joelhos (~25-30%).",
-      "Está incorreta: 75% a 80% situa-se no tórax superior; a maior massa de membros inferiores e pélvis posiciona o baricentro mais abaixo.",
-      "Está incorreta: o corpo humano não tem densidade nem massa simétricas; a massa do tronco e cabeça desloca o CG acima do ponto médio de 50%."
-    ],
-    "nursingApplication": "Quantifica a altura relativa do centro de gravidade no corpo humano adulto."
-  },
-  {
-    "id": 1104,
+    "id": 1102,
     "topicId": 1,
     "question": "A localização do CG anterior a S2 significa que, no plano ântero-posterior, o centro de gravidade se encontra:",
     "options": [
@@ -1983,7 +1946,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Integração da anatomia esquelética sagrada com a projeção vertical gravitacional."
   },
   {
-    "id": 1105,
+    "id": 1103,
     "topicId": 1,
     "question": "Que estrutura óssea serve de referência anatómica direta para localizar a segunda vértebra sagrada (S2) na palpação da coluna?",
     "options": [
@@ -2002,7 +1965,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Conhecimento de palpação anatómica e marcos de superfície de grande utilidade clínica."
   },
   {
-    "id": 1106,
+    "id": 1104,
     "topicId": 1,
     "question": "Num doente que flete profundamente o tronco com pernas estendidas na manobra de tocar com as mãos nos pés, onde se localiza o Centro de Gravidade?",
     "options": [
@@ -2021,7 +1984,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Demonstra que o centro de gravidade pode situar-se no espaço livre fora do corpo."
   },
   {
-    "id": 1107,
+    "id": 1105,
     "topicId": 1,
     "question": "Quando uma pessoa carrega um saco pesado ou balde unicamente na mão direita, como se desloca o Centro de Gravidade do sistema combinado (corpo + carga)?",
     "options": [
@@ -2040,7 +2003,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Explica o reflexo postural compensatório involuntário ao transportar cargas assimétricas."
   },
   {
-    "id": 1108,
+    "id": 1106,
     "topicId": 1,
     "question": "Durante o agachamento fisiológico (flexão de joelhos e ancas mantendo o tronco ereto), o que acontece à altura do Centro de Gravidade?",
     "options": [
@@ -2059,7 +2022,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Introduz o primeiro fator biomecânico de estabilidade: altura do centro de gravidade."
   },
   {
-    "id": 1109,
+    "id": 1107,
     "topicId": 1,
     "question": "Na variabilidade anatómica do centro de gravidade entre sexos, qual é a principal diferença anatómica entre o homem e a mulher?",
     "options": [
@@ -2078,7 +2041,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fidelidade ao conteúdo e ilustrações anatómicas da biomecânica do centro de gravidade."
   },
   {
-    "id": 1110,
+    "id": 1108,
     "topicId": 1,
     "question": "Em recém-nascidos e crianças pequenas, onde se localiza o Centro de Gravidade em comparação com o adulto?",
     "options": [
@@ -2097,26 +2060,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Explica a anatomia biomecânica pediátrica e a sua influência no centro de gravidade."
   },
   {
-    "id": 1111,
-    "topicId": 1,
-    "question": "À medida que a criança cresce e atinge a adolescência, o que acontece à posição relativa do seu Centro de Gravidade?",
-    "options": [
-      "O Centro de Gravidade sobe em direção à cintura escapular, devido ao desenvolvimento torácico e aumento proporcional do volume pulmonar durante a fase de puberdade.",
-      "O Centro de Gravidade desce progressivamente em termos percentuais, aproximando-se da 2.ª vértebra sagrada (S2) à medida que os membros inferiores crescem e o tronco se proporcionaliza.",
-      "O Centro de Gravidade mantém-se fixo na altura da vértebra T8 desde o nascimento, porque o alinhamento corporal infantil é idêntico ao da postura no adulto maduro.",
-      "O Centro de Gravidade oscila de forma aleatória entre a cabeça e a bacia, dependendo exclusivamente do padrão alimentar e do consumo diário de calorias metabólicas."
-    ],
-    "correctIndex": 1,
-    "explanation": "O crescimento alométrico dos membros inferiores e o desenvolvimento da pélvis baixam o baricentro, conferindo maior estabilidade estática e permitindo uma marcha madura com base estreita.",
-    "distractorAnalysis": [
-      "Está incorreta: nos primeiros anos a cabeça é desproporcionalmente grande (CG mais alto, ~T12); com o crescimento dos membros inferiores o CG desce relativamente.",
-      "Está incorreta: o crescimento modifica profundamente as proporções corporais relativas, descendo o CG do nível toracolombar para o sacro (S2).",
-      "Está incorreta: a posição do centro de gravidade segue o desenvolvimento morfológico e muscular previsível da anatomia humana."
-    ],
-    "nursingApplication": "Evolução ontogenética do baricentro corporal até à idade adulta."
-  },
-  {
-    "id": 1112,
+    "id": 1109,
     "topicId": 1,
     "question": "Durante a gestação avançada (terceiro trimestre), o que acontece à localização do Centro de Gravidade da grávida?",
     "options": [
@@ -2135,7 +2079,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Explica a alteração biomecânica essencial que ocorre na morfologia da grávida."
   },
   {
-    "id": 1113,
+    "id": 1110,
     "topicId": 1,
     "question": "Que adaptação postural involuntária e reflexa adota a grávida para impedir que a sua linha de gravidade saia da base de apoio para a frente?",
     "options": [
@@ -2154,45 +2098,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Descrição da postura hiperlordótica clássica e da marcha de base alargada da grávida."
   },
   {
-    "id": 1114,
-    "topicId": 1,
-    "question": "No idoso com cifose dorsal acentuada ('corcunda senil'), como se altera a projeção do Centro de Gravidade e da Linha de Gravidade?",
-    "options": [
-      "A Linha de Gravidade recua significativamente para trás dos calcanhares, aumentando a margem de estabilidade anterior e eliminando por completo qualquer perigo de queda frontal.",
-      "O Centro de Gravidade desloca-se exclusivamente no sentido lateral em direção ao trocânter maior dominante, mantendo o alinhamento sagital perfeitamente centrado no polígono de apoio.",
-      "A Linha de Gravidade permanece rigorosamente inalterada no centro geométrico da base de apoio devido à contração reflexa compensatória e potente do músculo transverso do abdómen.",
-      "O Centro de Gravidade e a Linha de Gravidade são projetados anteriormente (para a frente), aproximando-se perigosamente do bordo anterior da base de sustentação (ponta dos pés)."
-    ],
-    "correctIndex": 3,
-    "explanation": "Com a flexão rígida da coluna dorsal e anteriorização da cabeça, a margem de estabilidade anterior fica drasticamente reduzida (qualquer tropeção faz a LG sair da base e cair).",
-    "distractorAnalysis": [
-      "Está incorreta: A cifose projeta a cabeça e o tronco para a frente, aproximando a linha de gravidade da ponta dos pés e não dos calcanhares.",
-      "Está incorreta: O desvio principal da cifose ocorre no plano sagital (ântero-posterior) e não puramente no plano frontal em direção a um dos trocânteres.",
-      "Está incorreta: A deformidade postural rígida da coluna altera inevitavelmente a projeção da linha de gravidade, não sendo anulada pela musculatura abdominal."
-    ],
-    "nursingApplication": "Explica a causa biomecânica primordial da elevada taxa de quedas frontais na população idosa."
-  },
-  {
-    "id": 1115,
-    "topicId": 1,
-    "question": "Como é que a sarcopenia (perda de massa e força muscular com o envelhecimento) agrava a instabilidade do Centro de Gravidade no idoso?",
-    "options": [
-      "Aumenta a velocidade de condução nervosa aferente nos fusos neuromusculares, provocando respostas contráteis hiper-reativas que arremessam a linha de gravidade para fora dos limites dos pés.",
-      "Reduz a capacidade dos músculos extensores e flexores do tornozelo (tibial anterior e tricípite sural) de produzirem os momentos rápidos de correção de torque necessários para manter a LG centrada na base.",
-      "Substitui as fibras musculares esqueléticas por cartilagem hialina flexível que absorve a totalidade da força gravitacional, impedindo a flexão voluntária dos joelhos durante as transferências.",
-      "Provoca o aumento desproporcionado da massa e peso dos membros inferiores em relação ao tronco superior, o que rebaixa excessivamente o centro de gravidade para o interior do calcâneo."
-    ],
-    "correctIndex": 1,
-    "explanation": "A 'estratégia do tornozelo' (pequenas oscilações oscilatórias) exige força e velocidade de disparo muscular; a fraqueza muscular impede correções ágeis, transformando pequenas oscilações em quedas.",
-    "distractorAnalysis": [
-      "Está incorreta: A sarcopenia e o envelhecimento diminuem a massa muscular e a velocidade de resposta motora, em vez de provocarem hiper-reatividade veloz.",
-      "Está incorreta: O músculo sarcopénico é infiltrado por tecido adiposo e fibroso (mioesteatose) e perde capacidade de gerar força rápida e torque de correção.",
-      "Está incorreta: A sarcopenia leva à perda de massa muscular apendicular (membros mais fracos e magros) e não ao seu aumento de peso."
-    ],
-    "nursingApplication": "Associação entre fisiologia do envelhecimento muscular e perda do controlo estático do torque."
-  },
-  {
-    "id": 1116,
+    "id": 1111,
     "topicId": 1,
     "question": "Como é que o utente com obesidade androide geralmente compensa a anteriorização do seu Centro de Gravidade para conseguir manter-se de pé?",
     "options": [
@@ -2211,7 +2117,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Identifica a marcha do utente obeso como adaptação direta às leis do equilíbrio estático."
   },
   {
-    "id": 1117,
+    "id": 1112,
     "topicId": 1,
     "question": "Num doente submetido a amputação transfemoral unilateral (acima do joelho) de um dos membros inferiores, para onde se desloca o Centro de Gravidade global do corpo?",
     "options": [
@@ -2230,7 +2136,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Princípio fundamental de reabilitação e protetização em utentes amputados."
   },
   {
-    "id": 1118,
+    "id": 1113,
     "topicId": 1,
     "question": "Na avaliação da estabilidade postural, qual é a 'Condição de alta estabilidade' relativa à altura do Centro de Gravidade (CG)?",
     "options": [
@@ -2249,7 +2155,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fidelidade literal à tabela oficial de conceitos dos parâmetros de estabilidade postural."
   },
   {
-    "id": 1119,
+    "id": 1114,
     "topicId": 1,
     "question": "Qual é a 'Intervenção de enfermagem recomendada' na prática de enfermagem para controlar a altura do Centro de Gravidade durante a prática profissional?",
     "options": [
@@ -2268,7 +2174,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fixa a intervenção de enfermagem formal lecionada pelo professor no resumo final da aula."
   },
   {
-    "id": 1120,
+    "id": 1115,
     "topicId": 1,
     "question": "Ao subir escadas com canadianas, que regra mnemónica clássica de segurança biomecânica é ensinada aos utentes ('o bom sobe ao céu, o mau desce ao inferno')?",
     "options": [
@@ -2287,7 +2193,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Mnemónica clássica de enfermagem para transposição segura de escadas com ajudas técnicas."
   },
   {
-    "id": 1121,
+    "id": 1116,
     "topicId": 1,
     "question": "Durante o ciclo da marcha humana normal em terreno plano, como oscila espacialmente o Centro de Gravidade do indivíduo?",
     "options": [
@@ -2306,7 +2212,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Descrição da curva de translação sinusoidal do baricentro na locomoção humana."
   },
   {
-    "id": 1122,
+    "id": 1117,
     "topicId": 1,
     "question": "No modelo biomecânico da marcha como um 'pêndulo invertido', quando é que o Centro de Gravidade atinge a sua altura máxima e a sua velocidade mais baixa?",
     "options": [
@@ -2325,7 +2231,45 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Compreensão do intercâmbio entre energia cinética e potencial no pêndulo invertido da locomoção."
   },
   {
-    "id": 1123,
+    "id": 1118,
+    "topicId": 1,
+    "question": "Que cuidado biomecânico deve o enfermeiro ter relativamente à campainha de chamada de um doente acamado ou sentado?",
+    "options": [
+      "Colocar a campainha suspensa no painel de cabeceira a um metro de distância da cama, incentivando o alongamento ativo dos membros superiores do doente.",
+      "Fixar a campainha aos pés da cama para estimular a mobilidade articular dos membros inferiores e a dorsiflexão dos tornozelos durante a permanência no leito.",
+      "Garantir que a campainha está ao alcance imediato da mão do utente sem que este tenha de esticar ou inclinar o tronco para fora da cama ou cadeira para a alcançar.",
+      "Manter a campainha guardada na gaveta inferior da mesa de cabeceira para prevenir acionamentos acidentais durante as mudanças de decúbito no turno da noite."
+    ],
+    "correctIndex": 2,
+    "explanation": "Tentar alcançar um objeto fora do alcance obriga a inclinar o tronco; se o centro de gravidade ultrapassar a margem da cama ou cadeira sem apoio, o doente desaba para o chão.",
+    "distractorAnalysis": [
+      "Está incorreta: colocar a campainha longe força a inclinação do tronco para fora do leito, deslocando a Linha de Gravidade e provocando quedas da cama.",
+      "Está incorreta: a campainha aos pés do leito é inacessível para um doente deitado ou dependente, incentivando manobras perigosas de alcance.",
+      "Está incorreta: a campainha deve estar sempre acessível e visível junto à mão do utente para permitir pedidos imediatos de auxílio."
+    ],
+    "nursingApplication": "Prevenção de quedas por esforço de alcance desnecessário no espaço do leito."
+  },
+  {
+    "id": 1119,
+    "topicId": 1,
+    "question": "Quando o enfermeiro flete os seus próprios joelhos para baixar o seu Centro de Gravidade durante uma contenção ou mobilização difícil, que vantagem mecânica imediata obtém?",
+    "options": [
+      "Elimina a totalidade da compressão axial sobre os meniscos femorais, transferindo as cargas mecânicas diretamente para os ligamentos cruzados anteriores em repouso.",
+      "Aumenta a sua estabilidade estática e dinâmica tornando o seu corpo muito mais difícil de ser derrubado, e ganha um curso de extensão vertical favorável através dos quadríceps.",
+      "Diminui a pressão intra-abdominal a zero bar, prevenindo a formação de hérnias inguinais sem necessidade de ativação dos músculos da cintura pélvica e do diafragma.",
+      "Aumenta a inércia rotacional da cintura escapular em dez vezes, impedindo qualquer movimento involuntário dos braços do profissional perante a resistência do doente."
+    ],
+    "correctIndex": 1,
+    "explanation": "Critério de estabilidade: Centro de Gravidade mais baixo = alta estabilidade mecânica, permitindo dominar forças externas e manter o controlo da transferência com segurança.",
+    "distractorAnalysis": [
+      "Está incorreta: A flexão de joelhos aumenta a estabilidade pelo rebaixamento do baricentro e recrutamento dos quadríceps, não eliminando a carga nos meniscos.",
+      "Está incorreta: A manobra não reduz a pressão abdominal a zero; a musculatura do core é ativada para proteger a coluna lombar durante o esforço.",
+      "Está incorreta: A vantagem biomecânica fundamental é o aumento da margem de estabilidade postural contra forças desestabilizadoras externas."
+    ],
+    "nursingApplication": "Síntese ergonómica da aplicação prática da altura do centro de gravidade pelo profissional de saúde."
+  },
+  {
+    "id": 1120,
     "topicId": 1,
     "question": "Numa balança de braços iguais (alavanca interfixa), uma massa de 5 kg está a 0,4 metros à esquerda do fulcro. Que massa deve ser colocada a 0,2 metros à direita para manter a balança em equilíbrio rotacional horizontal?",
     "options": [
@@ -2344,7 +2288,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Demonstra a regra basilar das alavancas em problemas práticos de cálculo estático."
   },
   {
-    "id": 1124,
+    "id": 1121,
     "topicId": 1,
     "question": "Como se define uma Alavanca de 1.ª Classe (ou Alavanca Interfixa) na biomecânica clássica?",
     "options": [
@@ -2363,7 +2307,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Mnemónica clássica dos manuais: o prefixo 'inter' indica quem está no meio: inter-fixa = fulcro no meio!"
   },
   {
-    "id": 1125,
+    "id": 1122,
     "topicId": 1,
     "question": "Que valores pode assumir a Vantagem Mecânica (VM = bp / br) numa Alavanca de 1.ª Classe (Interfixa)?",
     "options": [
@@ -2382,7 +2326,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Mostra a versatilidade funcional da alavanca interfixa na engenharia e na anatomia humana."
   },
   {
-    "id": 1126,
+    "id": 1123,
     "topicId": 1,
     "question": "No corpo humano, qual é o exemplo clássico de Alavanca de 1.ª Classe (Interfixa) na articulação atlanto-occipital?",
     "options": [
@@ -2401,7 +2345,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Exemplo anatómico emblemático de alavanca de 1.ª classe no corpo humano presente em todos os exames de biofísica."
   },
   {
-    "id": 1127,
+    "id": 1124,
     "topicId": 1,
     "question": "Como se define uma Alavanca de 2.ª Classe (ou Alavanca Inter-resistente) na mecânica clássica?",
     "options": [
@@ -2420,7 +2364,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Mnemónica clássica: inter-resistente = a Resistência é quem se encontra entre os outros dois elementos!"
   },
   {
-    "id": 1128,
+    "id": 1125,
     "topicId": 1,
     "question": "Qual é a propriedade física universal e obrigatória de QUALQUER Alavanca de 2.ª Classe (Inter-resistente)?",
     "options": [
@@ -2439,7 +2383,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Regra de ouro teórica: alavanca de 2.ª classe é SEMPRE uma alavanca multiplicadora de força (vantagem de força)."
   },
   {
-    "id": 1129,
+    "id": 1126,
     "topicId": 1,
     "question": "Qual das seguintes ferramentas do quotidiano hospitalar ou comum representa uma Alavanca de 2.ª Classe (Inter-resistente)?",
     "options": [
@@ -2458,26 +2402,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite associar a geometria mecânica de transporte de cargas às alavancas de 2.ª classe."
   },
   {
-    "id": 1130,
-    "topicId": 1,
-    "question": "No corpo humano, qual é o exemplo clássico de Alavanca de 2.ª Classe (Inter-resistente) na articulação tíbio-társica?",
-    "options": [
-      "A extensão da cabeça sobre a coluna cervical através dos músculos da nuca e trapézio superior em postura neutra.",
-      "A flexão do cotovelo para aproximar a mão do ombro com uma carga pesada segurada firmemente na palma da mão.",
-      "A elevação do calcanhar sobre as pontas dos pés (flexão plantar na marcha realizada pelo músculo tríceps sural / tendão de Aquiles).",
-      "A abdução lateral do membro superior no plano frontal realizada pelo músculo deltoide médio na articulação glenoumeral."
-    ],
-    "correctIndex": 2,
-    "explanation": "Fulcro = cabeças dos metatarsos apoiadas no solo; Resistência = peso do corpo transmitido pela tíbia no tornozelo (no meio); Potência = tração do tríceps sural no calcâneo (na ponta).",
-    "distractorAnalysis": [
-      "Está incorreta: a articulação atlanto-occipital na extensão cervical é o exemplo clássico de alavanca de 1.ª classe (interfixa, fulcro central).",
-      "Está incorreta: a flexão do cotovelo pelo bíceps braquial é o exemplo clássico de alavanca de 3.ª classe (interpotente, potência central).",
-      "Está incorreta: no tornozelo em flexão plantar, as cabeças dos metatarsos são o fulcro (F), o peso corporal desce pela tíbia (R no meio) e o tendão puxa o calcâneo (P na ponta), sendo 2.ª classe."
-    ],
-    "nursingApplication": "Exemplo biomecânico humano de 2.ª classe mais famoso da literatura médica internacional."
-  },
-  {
-    "id": 1131,
+    "id": 1127,
     "topicId": 1,
     "question": "Como se define uma Alavanca de 3.ª Classe (ou Alavanca Interpotente) na física e biomecânica?",
     "options": [
@@ -2496,7 +2421,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Mnemónica definitiva: inter-potente = a Potência (força muscular) é quem está aplicada no meio!"
   },
   {
-    "id": 1132,
+    "id": 1128,
     "topicId": 1,
     "question": "Qual é a propriedade biomecânica obrigatória e universal de QUALQUER Alavanca de 3.ª Classe (Interpotente)?",
     "options": [
@@ -2515,7 +2440,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Conceito nuclear: a alavanca de 3.ª classe exige um esforço muscular muito maior do que o peso que se segura na mão!"
   },
   {
-    "id": 1133,
+    "id": 1129,
     "topicId": 1,
     "question": "Qual das seguintes ferramentas do quotidiano hospitalar é um exemplo clássico de uma Alavanca de 3.ª Classe (Interpotente)?",
     "options": [
@@ -2534,7 +2459,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite ao estudante classificar com segurança as pinças cirúrgicas e laboratoriais na 3.ª classe mecânica."
   },
   {
-    "id": 1134,
+    "id": 1130,
     "topicId": 1,
     "question": "Outro exemplo desportivo e mecânico comum de Alavanca de 3.ª Classe (Interpotente) é:",
     "options": [
@@ -2553,7 +2478,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fixa o princípio da troca de força por velocidade e alcance nas alavancas interpotentes."
   },
   {
-    "id": 1135,
+    "id": 1131,
     "topicId": 1,
     "question": "Que papel desempenha o músculo braquial anterior em conjunto com o bíceps na flexão do cotovelo?",
     "options": [
@@ -2572,7 +2497,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Complementa a anatomia funcional das alavancas do membro superior."
   },
   {
-    "id": 1136,
+    "id": 1132,
     "topicId": 1,
     "question": "Num problema de alavanca interfixa, uma barra de 3,6 m de comprimento total está dividida na proporção 3x = 3,6 m. Qual é o valor de x que define a geometria dos braços?",
     "options": [
@@ -2591,7 +2516,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Validação dos passos preliminares de cálculo geométrico da biomecânica muscular do cotovelo."
   },
   {
-    "id": 1137,
+    "id": 1133,
     "topicId": 1,
     "question": "Que tipo de alavanca está representada num sistema com o ponto de apoio (fulcro) situado entre a potência e a resistência?",
     "options": [
@@ -2610,7 +2535,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Classificação correta e identificação visual dos elementos da alavanca da alavanca interfixa."
   },
   {
-    "id": 1138,
+    "id": 1134,
     "topicId": 1,
     "question": "Qual é a vantagem mecânica ideal (VMI = bP / bR) do sistema de alavanca interfixa calculado para esta alavanca interfixa?",
     "options": [
@@ -2629,7 +2554,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Consolida a relação quantitativa entre razão de braços e multiplicação de força."
   },
   {
-    "id": 1139,
+    "id": 1135,
     "topicId": 1,
     "question": "Ao transpor um obstáculo ou degrau com uma cadeira de rodas, porque é que o enfermeiro deve pisar a alavanca posterior inferior (pedal de basculamento) da cadeira?",
     "options": [
@@ -2648,7 +2573,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Técnica ergonómica e segura de transposição de barreiras arquitetónicas na assistência ao doente."
   },
   {
-    "id": 1140,
+    "id": 1136,
     "topicId": 1,
     "question": "Porque é que as alavancas do corpo humano (predominantemente de 3.ª classe / interpotentes) exigem um conhecimento profundo de ergonomia por parte dos cuidadores?",
     "options": [
@@ -2667,26 +2592,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Consolidação biomecânica do paradoxo evolutivo das alavancas interpotentes humanas."
   },
   {
-    "id": 1141,
-    "topicId": 1,
-    "question": "Quando um enfermeiro necessita de travar uma maca pesada que se aproxima da porta da enfermaria, que postura biomecânica deve adotar?",
-    "options": [
-      "Fletir ligeiramente os joelhos, afastar os pés na direção anteroposterior e usar o peso corporal para contrariar a inércia da maca.",
-      "Manter os joelhos perfeitamente bloqueados e os pés juntos na ponta dos dedos para minimizar a base de sustentação.",
-      "Dobrar as costas para a frente com a coluna curvada em cifose extrema, puxando unicamente com os músculos lombares.",
-      "Saltar para o topo do colchão da maca em movimento para que o impacto dos pés atue como travão dinâmico."
-    ],
-    "correctIndex": 0,
-    "explanation": "Afastar os pés na direção do movimento alarga a base de apoio e permite que a linha de gravidade permaneça centrada durante a desaceleração.",
-    "distractorAnalysis": [
-      "Está incorreta: Pés juntos e joelhos bloqueados tornam o equilíbrio instável, aumentando exponencialmente o risco de queda do enfermeiro.",
-      "Está incorreta: Fletir a coluna sem fletir os joelhos sobrecarrega os discos intervertebrais L4-L5 e L5-S1 com risco de hérnia discal.",
-      "Está incorreta: Saltar para a maca é uma atitude perigosa que desestabiliza o equipamento e pode originar acidentes graves."
-    ],
-    "nursingApplication": "A postura correta protege o sistema musculoesquelético do enfermeiro ao absorver as forças inerciais da travagem."
-  },
-  {
-    "id": 1142,
+    "id": 1137,
     "topicId": 1,
     "question": "Porque é que o calçado com sola antiderrapante de borracha é indispensável para o enfermeiro ao travar ou acelerar cargas móveis?",
     "options": [
@@ -2705,7 +2611,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Calçado sem aderência multiplica o risco de quedas do profissional e perda de controlo de macas em corredores molhados."
   },
   {
-    "id": 1143,
+    "id": 1138,
     "topicId": 1,
     "question": "Um enfermeiro empurra um andarilho vazio (5 kg) e depois o mesmo andarilho com um doente apoiado (massa total 85 kg) com a mesma força de 30 N. A razão entre as acelerações (a_vazio / a_carregado) é:",
     "options": [
@@ -2724,7 +2630,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Sensibiliza para a diferença drástica de manuseamento entre equipamentos hospitalares vazios e com utentes."
   },
   {
-    "id": 1144,
+    "id": 1139,
     "topicId": 1,
     "question": "O uso de calçado com sola antiderrapante de borracha de alta fricção é uma exigência de segurança hospitalar porque:",
     "options": [
@@ -2741,6 +2647,101 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: o papel biomecânico da sola antiderrapante é a estabilidade de atrito no solo e não a alteração hemodinâmica pressórica."
     ],
     "nursingApplication": "Medida fundamental de saúde ocupacional na prevenção da principal causa de acidentes de trabalho em enfermagem: as quedas por escorregamento."
+  },
+  {
+    "id": 1140,
+    "topicId": 1,
+    "question": "Em doentes idosos internados, o uso de meias comuns de algodão sem sola antiderrapante para deambular no quarto é desaconselhado porque:",
+    "options": [
+      "As fibras de algodão acumulam cargas eletrostáticas que repelem o pavimento hospitalar, reduzindo a força normal de contacto entre os pés e o solo a valores mínimos.",
+      "O tecido de algodão apresenta um atrito excessivamente elevado que bloqueia o avanço da marcha no balanço, provocando tropeções mecânicos involuntários na fase de balanço.",
+      "O algodão tem um coeficiente de atrito muito baixo com o piso vinílico ou cerâmico, não permitindo as forças de reação necessárias para travar e mudar de direção com segurança.",
+      "As meias comuns alteram a linha de ação da força peso do idoso, deslocando o seu centro de gravidade para trás dos calcanhares durante a fase de apoio unipodal da marcha."
+    ],
+    "correctIndex": 2,
+    "explanation": "O coeficiente de atrito meia-piso é significativamente menor do que calçado-piso; qualquer ligeiro desequilíbrio resulta em escorregamento imediato e queda.",
+    "distractorAnalysis": [
+      "Está incorreta: as meias não anulam a força normal (que decorre da gravidade e suporte do solo), mas reduzem drasticamente o coeficiente de atrito estático.",
+      "Está incorreta: o algodão sobre piso polido tem baixo atrito superficial e predispõe a escorregadelas descontroladas, não ao bloqueio por excesso de atrito.",
+      "Está incorreta: as meias não deslocam o centro de gravidade anatómico do doente; o perigo reside na incapacidade do piso exercer força de atrito horizontal de retenção."
+    ],
+    "nursingApplication": "Regra de boas práticas e intervenção direta de enfermagem na prevenção de quedas de doentes vulneráveis."
+  },
+  {
+    "id": 1141,
+    "topicId": 1,
+    "question": "Como é que o uso de canadianas ou de um andarilho reduz a sobrecarga mecânica na articulação da anca ou joelho com artrose severa?",
+    "options": [
+      "Eliminando a força da gravidade que atua sobre os membros inferiores através de um sistema de alavanca de 3.ª classe com o solo.",
+      "Aumentando a amplitude de flexão do joelho lesionado para valores superiores a cento e vinte graus durante toda a fase de apoio.",
+      "Aumentando a área da base de sustentação e partilhando a força normal de suporte entre múltiplos pontos de apoio com o piso.",
+      "Reduzindo a velocidade de propagação do impulso nervoso nos axónios motores do membro inferior em reabilitação funcional."
+    ],
+    "correctIndex": 2,
+    "explanation": "Equilíbrio vertical: P = N_membro_são + N_membro_lesado + N_canadiana. Ao desviar 30 a 50% de N para as mãos e canadiana, alivia-se a articulação doente.",
+    "distractorAnalysis": [
+      "Está incorreta: os dispositivos de marcha não alteram a atração gravítica; proporcionam uma base maior e pontos de apoio mecânico adicionais.",
+      "Está incorreta: o objetivo do andarilho é estabilizar e descarregar articulações e não forçar amplitudes extremas de flexão no joelho.",
+      "Está incorreta: a função da auxiliar de marcha é puramente biomecânica e estrutural, não influenciando a eletrofisiologia dos nervos motores."
+    ],
+    "nursingApplication": "Fundamenta o treino da deambulação com canadianas ministrado pelo enfermeiro de reabilitação a doentes operados à anca."
+  },
+  {
+    "id": 1142,
+    "topicId": 1,
+    "question": "Se a ponteira de borracha de uma bengala estiver gasta, ressequida ou lisa, que perigo biomecânico decorre da 3.ª Lei de Newton?",
+    "options": [
+      "Aumenta a estabilidade do utente ao permitir que a bengala deslize livremente pelo piso em movimentos de rotação rápida.",
+      "Diminui a força normal exercida pelo solo sobre a ponteira, facilitando a marcha em superfícies rugosas ou inclinadas.",
+      "Anula o atrito cinético mas aumenta o atrito estático em cerca de oitenta por cento devido ao polimento da borracha.",
+      "Perde o atrito estático com o piso, correndo o risco grave de escorregar para o lado no momento em que o doente descarrega o seu peso."
+    ],
+    "correctIndex": 3,
+    "explanation": "A força que o chão faz na bengala tem componente vertical (suporte) e horizontal (atrito); sem atrito suficiente (Fat = μ·N), a ponteira desliza e o doente cai desamparado.",
+    "distractorAnalysis": [
+      "Está incorreta: o deslizamento livre de uma ponteira de bengala constitui uma instabilidade perigosa e a principal causa de quedas em idosos.",
+      "Está incorreta: a força normal depende da carga descarregada pelo utilizador; a borracha gasta perde coeficiente de atrito (μ).",
+      "Está incorreta: borracha ressequida ou polida perde drasticamente tanto o atrito estático como o cinético com o pavimento cerâmico."
+    ],
+    "nursingApplication": "Exige a inspeção rotineira e substituição periódica das ponteiras de borracha de todos os dispositivos de marcha dos utentes."
+  },
+  {
+    "id": 1143,
+    "topicId": 1,
+    "question": "Como é que as meias hospitalares antiderrapantes aumentam a segurança dos utentes idosos durante os levantes noturnos para ir à casa de banho?",
+    "options": [
+      "Possuem pontilhados de silicone ou borracha macia na sola que apresentam um elevado coeficiente de atrito estático com o piso, fornecendo as forças de retenção necessárias para a marcha sem escorregar.",
+      "Aumentam a massa aparente dos membros inferiores do doente, gerando uma força normal de compressão muito superior que ancora os calcanhares mesmo em superfícies lisas.",
+      "Libertam um composto adesivo temporário por pressão plantar que cola a sola ao pavimento vinílico, dispensando a necessidade de atrito mecânico de contacto entre as superfícies.",
+      "Atuam reduzindo a componente vertical da força peso do utente durante o ortostatismo, permitindo que a marcha ocorra com menor exigência mecânica sobre os músculos da perna."
+    ],
+    "correctIndex": 0,
+    "explanation": "Meias normais de algodão em pisos lisos têm μ < 0,2 (altíssimo risco); os pontos de silicone elevam μ > 0,6, restabelecendo a aderência e a força de reação propulsora.",
+    "distractorAnalysis": [
+      "Está incorreta: as meias não alteram a massa corporal nem o peso do utente (P = m·g); a sua função é unicamente aumentar o coeficiente de atrito estático (μe).",
+      "Está incorreta: as solas antiderrapantes operam por atrito mecânico seco e não por adesão química, permitindo o levante seguro sem prender o pé à marcha.",
+      "Está incorreta: a força peso permanece inalterada; o benefício físico reside na prevenção de derrapagens ao apoiar o pé no piso hospitalar."
+    ],
+    "nursingApplication": "Intervenção de enfermagem autónoma simples, de baixo custo e com enorme evidência na redução de quedas internadas."
+  },
+  {
+    "id": 1144,
+    "topicId": 1,
+    "question": "Se um doente calçar uma meia antiderrapante do avesso (com os pontos de silicone voltados para a pele e a malha lisa voltada para o chão), qual é a consequência biofísica?",
+    "options": [
+      "O atrito com o solo mantém-se rigorosamente inalterado, uma vez que a borracha de silicone transmite as suas propriedades de adesão através da malha têxtil.",
+      "A proteção é completamente anulada: a superfície em contacto com o piso passa a ser o algodão liso de baixo atrito, restabelecendo o perigo gravíssimo de escorregamento.",
+      "A força normal exercida pelo piso hospitalar duplica de intensidade, tornando a marcha do utente mais estável apesar da inversão inadvertida da meia.",
+      "O coeficiente de atrito dinâmico aumenta substancialmente, dado que a aderência do silicone à pele do pé melhora a transmissão de força na passada."
+    ],
+    "correctIndex": 1,
+    "explanation": "Para que o atrito atue, o material de alta fricção tem de estar na interface entre o pé e o pavimento; colocada do avesso, a meia comporta-se como uma meia comum escorregadia.",
+    "distractorAnalysis": [
+      "Está incorreta: a aderência mecânica exige contacto físico direto entre os relevos de silicone e o pavimento liso da enfermaria.",
+      "Está incorreta: a força normal depende unicamente do peso da pessoa e não do lado em que a meia está calçada.",
+      "Está incorreta: o contacto do silicone com a pele fixa a meia ao pé, mas deixa o tecido exterior escorregadio contra o piso."
+    ],
+    "nursingApplication": "Alerta o enfermeiro para a verificação visual obrigatória do correto posicionamento das meias antes de incentivar o levante."
   },
   {
     "id": 1145,
@@ -2859,25 +2860,6 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1151,
     "topicId": 1,
-    "question": "O que é a Linha de Gravidade (LG) na biomecânica da postura humana?",
-    "options": [
-      "É a linha horizontal imaginária que une as cristas ilíacas anteriores para avaliar a simetria da bacia no plano frontal ortostático.",
-      "É o traçado da curvatura da coluna vertebral no plano sagital que liga a vértebra C7 ao sacro para medir o ângulo de cifose dorsal.",
-      "É a linha vertical imaginária que passa pelo Centro de Gravidade e se projeta perpendicularmente em direção ao centro da Terra ao longo do vetor peso.",
-      "É o eixo oblíquo que atravessa a articulação do joelho e conecta os maléolos tibiais durante a fase de balanço da marcha funcional."
-    ],
-    "correctIndex": 2,
-    "explanation": "A linha de gravidade representa a direção de ação da força peso (P = m · g); para haver equilíbrio, esta linha tem obrigatoriamente de cair dentro da base de sustentação.",
-    "distractorAnalysis": [
-      "Está incorreta: a linha inter-ilíaca é um referencial horizontal anatómico e não a linha vertical gravítica de projeção do peso.",
-      "Está incorreta: o perfil sagital da coluna avalia curvaturas vertebrais (lordose/cifose), enquanto a Linha de Gravidade é rigorosamente vertical.",
-      "Está incorreta: a Linha de Gravidade é vertical e segue o vetor da força peso, não sendo um eixo oblíquo de alinhamento articular."
-    ],
-    "nursingApplication": "Definição concisa da linha de gravidade e seu significado físico."
-  },
-  {
-    "id": 1152,
-    "topicId": 1,
     "question": "Quando a linha de gravidade de um utente se desloca para além dos bordos da sua base de sustentação, o que acontece imediatamente ao equilíbrio?",
     "options": [
       "O equilíbrio é rompido e ocorre instabilidade com risco imediato de queda, a menos que o indivíduo realize uma resposta corretiva motora (dar um passo) para restaurar a base sob a nova posição da LG.",
@@ -2895,7 +2877,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Regra fundamental de ouro da estabilidade estática e dinâmica: a linha deve cair dentro da base."
   },
   {
-    "id": 1153,
+    "id": 1152,
     "topicId": 1,
     "question": "Durante a marcha normal humana, como se comporta a linha de gravidade em relação à base de sustentação?",
     "options": [
@@ -2914,7 +2896,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Conceito biomecânico avançado da marcha como perda e recuperação controlada do equilíbrio."
   },
   {
-    "id": 1154,
+    "id": 1153,
     "topicId": 1,
     "question": "Como é definida a Base de Sustentação (BS) na biomecânica da postura?",
     "options": [
@@ -2933,7 +2915,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Memorização rigorosa da definição de base de sustentação."
   },
   {
-    "id": 1155,
+    "id": 1154,
     "topicId": 1,
     "question": "Quando uma pessoa está de pé em repouso com os dois pés apoiados no chão a 30 cm de distância um do outro, a base de sustentação corresponde a:",
     "options": [
@@ -2952,7 +2934,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Esclarece que o espaço entre os apoios também pertence à base de sustentação."
   },
   {
-    "id": 1156,
+    "id": 1155,
     "topicId": 1,
     "question": "Se um indivíduo levantar um dos pés e ficar apoiado unicamente num só pé (apoio unipodal), o que acontece à sua base de sustentação?",
     "options": [
@@ -2971,26 +2953,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Compreensão do impacto drástico da redução da base de sustentação no apoio unipodal."
   },
   {
-    "id": 1157,
-    "topicId": 1,
-    "question": "Em decúbito dorsal completo no colchão do leito hospitalar, porque é que o doente se encontra no seu estado postural de máxima estabilidade física?",
-    "options": [
-      "Porque o atrito hidrostático entre a pele e o lençol hospitalar anula a totalidade da aceleração gravitacional da Terra, impedindo qualquer transmissão de forças de cisalhamento aos tecidos celulares.",
-      "Porque a pressão intersticial muscular diminui para valores próximos de zero bar, transformando o corpo do doente num sistema articulado rígido sem necessidade de regulação pelo tónus neuromuscular.",
-      "Porque a linha de gravidade deixa de exercer torque vertical sobre o esqueleto apendicular, transferindo a totalidade da massa corporal para os pontos de apoio cranianos e calcâneos em repouso.",
-      "Porque o seu Centro de Gravidade está na posição mais baixa possível junto à superfície do colchão e a sua Base de Sustentação é imensa (abrangendo praticamente toda a superfície posterior do corpo)."
-    ],
-    "correctIndex": 3,
-    "explanation": "Reúne simultaneamente as duas condições de ouro da estabilidade biomecânica máxima: CG extremamente baixo e base de sustentação máxima.",
-    "distractorAnalysis": [
-      "Está incorreta: A gravidade atua continuamente sobre o doente acamado e o atrito dos lençóis não anula as forças gravitacionais nem mecânicas.",
-      "Está incorreta: A estabilidade mecânica máxima decorre da base de apoio alargada e do centro de gravidade rebaixado, e não da anulação da pressão muscular.",
-      "Está incorreta: A linha de gravidade continua ativa e perpendicular ao leito, distribuindo o peso ao longo de toda a superfície de contacto posterior."
-    ],
-    "nursingApplication": "Justifica fisicamente a máxima segurança e estabilidade do decúbito dorsal."
-  },
-  {
-    "id": 1158,
+    "id": 1156,
     "topicId": 1,
     "question": "Em testes práticos clássicos de equilíbrio (como apoiar a cabeça na parede e levantar uma cadeira fletindo o tronco a 90°), porque é que as mulheres geralmente conseguem erguer-se e muitos homens perdem o equilíbrio?",
     "options": [
@@ -3009,7 +2972,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Explicação física de um teste popular de biomecânica baseado na posição do baricentro."
   },
   {
-    "id": 1159,
+    "id": 1157,
     "topicId": 1,
     "question": "Num homem adulto com ombros largos e peitoral desenvolvido (morfologia androide), que implicação biomecânica tem o seu CG mais elevado?",
     "options": [
@@ -3028,7 +2991,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Relação entre a morfologia corporal, altura do CG e risco de queda."
   },
   {
-    "id": 1160,
+    "id": 1158,
     "topicId": 1,
     "question": "Que consequência biomecânica direta tem o CG mais alto nas crianças pequenas que estão a aprender a andar?",
     "options": [
@@ -3047,26 +3010,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Justificação física da marcha de base alargada observada no desenvolvimento psicomotor infantil."
   },
   {
-    "id": 1161,
-    "topicId": 1,
-    "question": "Qual é a alteração da base de sustentação adotada pela grávida durante a marcha no terceiro trimestre?",
-    "options": [
-      "Estreitamento acentuado da distância intermaleolar com apoio monopodal prolongado, alinhando os passos numa única linha reta para acelerar o ritmo da passada.",
-      "Alargamento da base de sustentação (marcha anserina ou 'de pato'), afastando mais os pés lateralmente para aumentar a margem de segurança contra o desequilíbrio e quedas.",
-      "Manutenção de uma base estritamente unipedal com passos cruzados à frente do tronco, de forma a reduzir a sobrecarga compressiva sobre as articulações sacroilíacas.",
-      "Apoio exclusivo sobre as pontas dos pés (marcha em equino) com aproximação total dos joelhos, compensando a hiperlordose lombar fisiológica do final da gestação."
-    ],
-    "correctIndex": 1,
-    "explanation": "Na estabilidade postural: base ampla (30-40 cm) garante estabilidade quando o controlo da linha de gravidade está desafiado por massa adicional anterior.",
-    "distractorAnalysis": [
-      "Está incorreta: O estreitamento da base diminuiria a estabilidade mecânica, pelo que a grávida adota espontaneamente uma base mais alargada.",
-      "Está incorreta: Cruzar os pés durante a marcha aumentaria drasticamente o risco de tropeção e queda devido à redução da margem de estabilidade lateral.",
-      "Está incorreta: A grávida não caminha na ponta dos pés; apoia a planta do pé com afastamento lateral aumentado para alargar o polígono de sustentação."
-    ],
-    "nursingApplication": "Compreensão do padrão da marcha anserina materna como mecanismo estabilizador de base."
-  },
-  {
-    "id": 1162,
+    "id": 1159,
     "topicId": 1,
     "question": "Por que razão o uso de calçado inadequado (chinelos soltos ou sapatos sem salto e sem piso antiderrapante) é um perigo extremo para o idoso com CG anteriorizado?",
     "options": [
@@ -3085,7 +3029,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Aplicação das diretrizes dos da biomecânica do apoio à prevenção de acidentes e calçado geriátrico seguro."
   },
   {
-    "id": 1163,
+    "id": 1160,
     "topicId": 1,
     "question": "A adaptação de uma prótese transfemoral com peso calibrado visa, entre outros objetivos mecânicos:",
     "options": [
@@ -3104,7 +3048,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Finaliza a análise de variações antropométricas do baricentro com o conceito de reabilitação protética."
   },
   {
-    "id": 1164,
+    "id": 1161,
     "topicId": 1,
     "question": "Na biomecânica do equilíbrio, qual é a 'Condição de alta estabilidade' referente ao tamanho da Base de Sustentação (BS)?",
     "options": [
@@ -3123,7 +3067,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fidelidade milimétrica à dimensão métrica (30-40 cm) para uma base de sustentação estável."
   },
   {
-    "id": 1165,
+    "id": 1162,
     "topicId": 1,
     "question": "Qual é a 'Condição de instabilidade (risco de queda)' relativa à base de sustentação relativa à base de apoio?",
     "options": [
@@ -3142,7 +3086,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Identificação formal da condição de estreitamento perigoso da base de apoio."
   },
   {
-    "id": 1166,
+    "id": 1163,
     "topicId": 1,
     "question": "Qual é a 'Intervenção de enfermagem recomendada' na prática clínica para garantir o tamanho adequado da base de sustentação do utente?",
     "options": [
@@ -3161,7 +3105,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Intervenção prática essencial de enfermagem ensinada no resumo para uma base de sustentação estável."
   },
   {
-    "id": 1167,
+    "id": 1164,
     "topicId": 1,
     "question": "Na análise biomecânica da postura, qual é a 'Condição de alta estabilidade' relativa à posição da Linha de Gravidade?",
     "options": [
@@ -3180,7 +3124,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fidelidade literal à tabela de estabilidade do alinhamento da linha de gravidade."
   },
   {
-    "id": 1168,
+    "id": 1165,
     "topicId": 1,
     "question": "Qual é a 'Condição de instabilidade (risco de queda)' relativa à Linha de Gravidade da postura corporal?",
     "options": [
@@ -3199,7 +3143,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Reconhece o desvio periférico da linha de gravidade como gatilho de queda iminente."
   },
   {
-    "id": 1169,
+    "id": 1166,
     "topicId": 1,
     "question": "Se um indivíduo inclinar o tronco para a frente sem mover os pés, o que acontece à distância entre a Linha de Gravidade e o bordo anterior da sua base?",
     "options": [
@@ -3218,7 +3162,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Compreensão analítica da margem de estabilidade como distância métrica aos bordos."
   },
   {
-    "id": 1170,
+    "id": 1167,
     "topicId": 1,
     "question": "Num doente hemiplégico após AVC, porque é que a sua linha de gravidade se desvia frequentemente de forma assimétrica para o lado são?",
     "options": [
@@ -3237,7 +3181,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Aplicação da centralização da linha de gravidade na reabilitação motora do doente neurológico."
   },
   {
-    "id": 1171,
+    "id": 1168,
     "topicId": 1,
     "question": "Qual é a 'Intervenção de enfermagem recomendada' hospitalar para controlar o risco de queda por baixo atrito?",
     "options": [
@@ -3256,26 +3200,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Protocolo de segurança clínica formal prescrito na segurança e prevenção de quedas."
   },
   {
-    "id": 1172,
-    "topicId": 1,
-    "question": "Em doentes idosos internados, por que razão as 'meias com pontos de silicone antiderrapante' na sola são consideradas um dispositivo de segurança passiva altamente eficaz?",
-    "options": [
-      "Porque os nódulos de silicone aumentam dramaticamente o coeficiente de atrito superficial com o linóleo ou tijoleira do quarto, fornecendo a força tangencial necessária para manter o pé fixo no solo durante o levante da cama.",
-      "Porque os relevos de silicone funcionam como ventosas pneumáticas a vácuo que fixam permanentemente o calcâneo ao chão, impedindo a flexão do joelho e dispensando a contração dos músculos extensores da perna.",
-      "Porque o silicone conduz impulsos elétricos terapêuticos aos nervos plantares que estimulam ativamente a musculatura paravertebral lombar, rebaixando automaticamente o centro de gravidade do doente acamado.",
-      "Porque aumentam a massa dos membros inferiores em cerca de três quilos por perna, atuando como pesos estabilizadores que centram a linha de gravidade no bordo posterior do calcanhar durante a bipedestação."
-    ],
-    "correctIndex": 0,
-    "explanation": "O silicone tem uma aderência excelente em superfícies lisas e secas, compensando a falta de calçado fechado em utentes que se levantam à noite com urgência urinária.",
-    "distractorAnalysis": [
-      "Está incorreta: Os relevos de silicone fornecem atrito mecânico de contacto superficial, sem criar vácuo nem impedir o movimento fisiológico do passo.",
-      "Está incorreta: As meias antiderrapantes são dispositivos mecânicos passivos de fricção e não emitem correntes elétricas nem estimulam nervos plantares.",
-      "Está incorreta: As meias de silicone são muito leves e não atuam como lastros pesados, sendo a sua eficácia devida ao elevado coeficiente de atrito."
-    ],
-    "nursingApplication": "Demonstra a relevância clínica de uma intervenção de enfermagem de custo reduzido e alto impacto preventivo."
-  },
-  {
-    "id": 1173,
+    "id": 1169,
     "topicId": 1,
     "question": "Em reabilitação e auxílio à locomoção, qual é a 'Condição de alta estabilidade' associada aos 'Dispositivos de apoio (Andarilho/Bengala)'?",
     "options": [
@@ -3294,7 +3219,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fidelidade estrita à quantificação numérica (multiplica a base 3 a 5 vezes) do aumento da base de sustentação."
   },
   {
-    "id": 1174,
+    "id": 1170,
     "topicId": 1,
     "question": "Qual é a 'Intervenção de enfermagem recomendada' em enfermagem para a utilização segura do andarilho?",
     "options": [
@@ -3313,7 +3238,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Memorização da instrução ergonómica e biomecânica crucial no ensino ao doente sobre o andarilho."
   },
   {
-    "id": 1175,
+    "id": 1171,
     "topicId": 1,
     "question": "Geometricamente, porque é que um andarilho de quatro apoios multiplica a área da base de sustentação em 3 a 5 vezes?",
     "options": [
@@ -3332,7 +3257,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Demonstração geométrica de como o fecho convexo expande o polígono de sustentação."
   },
   {
-    "id": 1176,
+    "id": 1172,
     "topicId": 1,
     "question": "Se um doente com andarilho caminhar muito recuado (fora do perímetro do andarilho), qual é o erro biomecânico gravíssimo que está a cometer?",
     "options": [
@@ -3351,7 +3276,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fundamento físico primordial da regra de ouro: 'manter-se dentro do andarilho' (Regra de ouro ergonómica)."
   },
   {
-    "id": 1177,
+    "id": 1173,
     "topicId": 1,
     "question": "Que tipo de pavimento no hospital ou domicílio oferece maior risco para utentes que utilizam andarilhos com ponteiras de borracha?",
     "options": [
@@ -3370,7 +3295,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Identificação dos perigos ambientais mais prevalentes na mobilidade assistida."
   },
   {
-    "id": 1178,
+    "id": 1174,
     "topicId": 1,
     "question": "Por que razão o enfermeiro deve inspecionar periodicamente as ponteiras de borracha (tacos) de andarilhos e canadianas?",
     "options": [
@@ -3389,7 +3314,45 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Atividade de vigilância e manutenção preventiva essencial na segurança do utente."
   },
   {
-    "id": 1179,
+    "id": 1175,
+    "topicId": 1,
+    "question": "Que adaptação da marcha (marcha com gasto energético aumentado) é comum em doentes com medo de cair (ptofobia)?",
+    "options": [
+      "Aumentam o comprimento da passada para o dobro e correm na ponta dos pés para reduzir o tempo de exposição dos membros inferiores às forças de atrito do chão.",
+      "Caminham com uma base de apoio unipedal excessivamente estreita em linha reta fechando os olhos periodicamente para reduzir a sobrecarga sensorial do ambiente.",
+      "Realizam flexão profunda contínua do tronco com os membros superiores cruzados atrás da cabeça, mantendo passadas rápidas com apoio exclusivo nos calcanhares.",
+      "Diminuem o comprimento do passo, aumentam a largura da base de sustentação, diminuem a velocidade de marcha e aumentam o tempo de duplo apoio com os dois pés no chão."
+    ],
+    "correctIndex": 3,
+    "explanation": "Esta 'marcha cautelosa' é uma resposta de proteção que visa manter a linha de gravidade mais tempo dentro de uma base ampla, mas com custo metabólico elevado e rigidez articular.",
+    "distractorAnalysis": [
+      "Está incorreta: Doentes com receio de queda adotam uma marcha cautelosa com passos curtos e lentos, e não passadas longas ou corridas na ponta dos pés.",
+      "Está incorreta: O idoso com ptofobia afasta os pés para aumentar a base e manter o equilíbrio, dependendo intensamente do controlo visual do ambiente.",
+      "Está incorreta: A postura típica de proteção consiste em passos curtos, apoio duplo prolongado e base alargada com braços abertos para suporte."
+    ],
+    "nursingApplication": "Identificação clínica do padrão de marcha cautelosa induzido pelo medo de cair."
+  },
+  {
+    "id": 1176,
+    "topicId": 1,
+    "question": "Quais são os principais fatores de risco ambientais (extrínsecos) para quedas que devem ser ativamente eliminados pelo enfermeiro numa enfermaria hospitalar?",
+    "options": [
+      "Presença de cadeiras ergonómicas com apoio de braços estável, campainhas de chamada ao alcance da mão do utente e barras de apoio fixas instaladas nas paredes das instalações sanitárias do hospital.",
+      "Camas articuladas mantidas na posição mais baixa junto ao chão com rodas devidamente travadas e calçado fechado antiderrapante disponibilizado junto à mesa de cabeceira do doente acamado no quarto.",
+      "Iluminação noturna suave ao nível do rodapé, corredores hospitalares amplos e desimpedidos de equipamentos móveis e sinalização reflexiva colocada nas portas de saída das unidades de internamento.",
+      "Iluminação insuficiente ou encandeamento, pavimentos molhados sem sinalização, tapetes soltos, fios elétricos e tubos no chão do quarto, e camas com rodas destravadas ou em posição excessivamente alta."
+    ],
+    "correctIndex": 3,
+    "explanation": "A eliminação de perigos de tropeção e escorregamento garante que a base de sustentação do utente não seja perturbada por forças de atrito imprevisíveis ou barreiras mecânicas.",
+    "distractorAnalysis": [
+      "Está incorreta: Cadeiras com braços, campainhas acessíveis e barras de apoio são medidas preventivas protetoras e não fatores de risco ambientais.",
+      "Está incorreta: Camas baixas travadas e calçado antiderrapante reduzem o risco de quedas, constituindo intervenções de segurança indispensáveis.",
+      "Está incorreta: Luz de vigília baixa e corredores desimpedidos aumentam a visibilidade e o espaço seguro de circulação, prevenindo tropeções e desequilíbrios."
+    ],
+    "nursingApplication": "Auditoria ambiental de segurança do quarto e do ambiente circundante."
+  },
+  {
+    "id": 1177,
     "topicId": 1,
     "question": "Se um equipamento de tração hospitalar indica uma carga de 50 Newtons, que aceleração essa força imprimiria a uma massa de 10 kg sem atrito?",
     "options": [
@@ -3408,7 +3371,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Compreender a relação a = F/m ajuda a calcular com que rapidez uma maca ou cadeira de rodas acelera sob esforço."
   },
   {
-    "id": 1180,
+    "id": 1178,
     "topicId": 1,
     "question": "Se duas forças colineares no mesmo sentido (F1 = 70 N e F2 = 90 N) forem aplicadas numa cadeira de rodas de 20 kg desprovida de atrito, qual é a aceleração resultante?",
     "options": [
@@ -3427,7 +3390,26 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Demonstra a relação direta entre a força combinada exercida pelos profissionais e a resposta dinâmica do equipamento."
   },
   {
-    "id": 1181,
+    "id": 1179,
+    "topicId": 1,
+    "question": "Quando um enfermeiro tenta iniciar o movimento de uma cama de internamento de 140 kg em repouso, que fenómeno físico resiste inicialmente?",
+    "options": [
+      "A atração eletrostática entre o ar da enfermaria e a estrutura metálica pintada da cabeceira.",
+      "A emissão de fotões térmicos que repelem as mãos do profissional durante o contacto com a pega.",
+      "A inércia associada à massa da cama combinada com o atrito estático das rodas de borracha com o piso.",
+      "A perda contínua de massa gravitacional que torna a cama indefinidamente pesada no primeiro segundo."
+    ],
+    "correctIndex": 2,
+    "explanation": "Tirar um corpo do repouso exige vencer a sua inércia (tendência para permanecer em repouso) e a força de atrito estático inicial.",
+    "distractorAnalysis": [
+      "Está incorreta: Forças eletrostáticas com o ar ambiente são desprezíveis e não impedem o movimento de camas hospitalares.",
+      "Está incorreta: A radiação térmica infravermelha não gera forças mecânicas repulsoras mensuráveis nas mãos.",
+      "Está incorreta: A massa gravitacional é constante; a resistência inicial decorre da inércia mecânica e do atrito estático."
+    ],
+    "nursingApplication": "Fletir ligeiramente os joelhos e utilizar o peso do próprio corpo ajuda o enfermeiro a vencer a inércia inicial da cama."
+  },
+  {
+    "id": 1180,
     "topicId": 1,
     "question": "Para manter uma maca hospitalar em MRU a 1,0 m/s num corredor plano cujo atrito total de rolamento é de 35 N, que força deve o enfermeiro aplicar?",
     "options": [
@@ -3446,26 +3428,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Demonstra que o esforço contínuo do enfermeiro em piso plano destina-se exclusivamente a contrariar a força de atrito."
   },
   {
-    "id": 1182,
-    "topicId": 1,
-    "question": "Como é que a presença de um colchão com superfície muito escorregadia afeta o deslocamento inercial do doente numa paragem da maca?",
-    "options": [
-      "O baixo atrito anula a massa inercial do doente, impedindo qualquer movimento relativo sobre o colchão.",
-      "O colchão escorregadio inverte o sentido da 1.ª Lei de Newton, fazendo o doente colar-se à cabeceira da maca.",
-      "O baixo coeficiente de atrito reduz a força que se opõe ao deslizamento, permitindo que o doente deslize mais facilmente para a frente.",
-      "O baixo atrito transforma a energia cinética do doente em ondas sonoras que acionam a campainha de chamada."
-    ],
-    "correctIndex": 2,
-    "explanation": "Menor atrito significa menor força de travagem na interface colchão-corpo; a inércia predomina e o utente escorrega livremente.",
-    "distractorAnalysis": [
-      "Está incorreta: O atrito reduzido facilita o movimento; a massa inercial é uma constante intrínseca que não depende do atrito.",
-      "Está incorreta: As leis da mecânica newtoniana mantêm-se universais e invariáveis com o tipo de tecido do colchão.",
-      "Está incorreta: A energia cinética dissipa-se em atrito e calor microscópico, não gerando sinais acústicos na campainha."
-    ],
-    "nursingApplication": "Lençóis bem esticados e superfícies adequadas oferecem atrito seguro que auxilia na estabilidade do doente no leito."
-  },
-  {
-    "id": 1183,
+    "id": 1181,
     "topicId": 1,
     "question": "Numa transferência de doente de um piso para outro através de rampa exterior, que equipamento de segurança da maca deve ser ativado nas paragens?",
     "options": [
@@ -3484,7 +3447,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Travar a maca antes de soltar os manípulos em qualquer inclinação é um reflexo fundamental de segurança profissional."
   },
   {
-    "id": 1184,
+    "id": 1182,
     "topicId": 1,
     "question": "Para manter uma cadeira de rodas em equilíbrio dinâmico (velocidade constante de 1,0 m/s), porque é que o enfermeiro tem de continuar a empurrar?",
     "options": [
@@ -3503,7 +3466,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Pisos bem conservados e rodas limpas reduzem o atrito, exigindo menor força muscular para manter o equilíbrio dinâmico."
   },
   {
-    "id": 1185,
+    "id": 1183,
     "topicId": 1,
     "question": "Se a força de atrito de rolamento de uma maca for de 25 N e o enfermeiro aplicar exatamente 25 N no sentido do avanço, a maca:",
     "options": [
@@ -3522,7 +3485,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Ilustra que 'força igual ao atrito' não para o corpo; mantém o movimento uniforme estável e seguro."
   },
   {
-    "id": 1186,
+    "id": 1184,
     "topicId": 1,
     "question": "O que acontece à maca se o enfermeiro deixar subitamente de aplicar os 25 N de empurrão no corredor horizontal?",
     "options": [
@@ -3541,7 +3504,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "O atrito atua como um sistema de travagem passiva natural assim que o profissional cessa o empurrão voluntário."
   },
   {
-    "id": 1187,
+    "id": 1185,
     "topicId": 1,
     "question": "Se um enfermeiro largar subitamente os manípulos do carrinho de paragem enquanto corre a 2 m/s num corredor plano:",
     "options": [
@@ -3560,7 +3523,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Nunca soltar equipamentos pesados em movimento é uma regra fundamental de segurança e prevenção de acidentes de trabalho."
   },
   {
-    "id": 1188,
+    "id": 1186,
     "topicId": 1,
     "question": "Para acelerar uma maca com massa total de 100 kg a uma taxa de 0,5 m/s² num piso plano sem atrito, que força horizontal constante é necessária?",
     "options": [
@@ -3579,7 +3542,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Ajuda a equipa de enfermagem a dosear o esforço de empurrão inicial ao transportar doentes em corredores planos."
   },
   {
-    "id": 1189,
+    "id": 1187,
     "topicId": 1,
     "question": "Num ensaio clínico biomecânico, um enfermeiro aplica sucessivamente forças horizontais de 20 N, 40 N e 60 N sobre uma cadeira de rodas de 20 kg (sem atrito). Quais são as respetivas acelerações?",
     "options": [
@@ -3598,7 +3561,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Ilustra como pequenas variações no empurrão do profissional alteram a aceleração da cadeira."
   },
   {
-    "id": 1190,
+    "id": 1188,
     "topicId": 1,
     "question": "Quando um enfermeiro cessa completamente a força de empurrão horizontal sobre uma maca que se move num piso com atrito desprezável, o que acontece à aceleração?",
     "options": [
@@ -3617,7 +3580,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Explica a facilidade com que macas bem lubrificadas continuam a deslocar-se suavemente por inércia."
   },
   {
-    "id": 1191,
+    "id": 1189,
     "topicId": 1,
     "question": "Se a mesma força resultante horizontal de 120 N for aplicada a dois utentes em cadeiras de rodas (Utente 1 de 60 kg e Utente 2 de 120 kg), quais serão as respetivas acelerações (desprezando atrito)?",
     "options": [
@@ -3636,7 +3599,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Mostra ao enfermeiro que utentes mais pesados respondem mais lentamente a impulsos mecânicos de mesma intensidade."
   },
   {
-    "id": 1192,
+    "id": 1190,
     "topicId": 1,
     "question": "Quando duas forças horizontais opostas atuam sobre uma cadeira de rodas (F1 = 80 N para a direita e F2 = 50 N para a esquerda), qual é a aceleração de uma cadeira de 15 kg (sem atrito)?",
     "options": [
@@ -3655,7 +3618,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Mostra ao enfermeiro que forças de resistência (como atrito ou declives) subtraem-se à força propulsora útil."
   },
   {
-    "id": 1193,
+    "id": 1191,
     "topicId": 1,
     "question": "Dois enfermeiros empurram em conjunto uma maca de 120 kg no mesmo sentido ao longo do corredor, aplicando forças de 70 N e 50 N. Qual é a aceleração do conjunto (desprezando atrito)?",
     "options": [
@@ -3674,7 +3637,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Demonstra a eficácia do trabalho coordenado de dois profissionais no transporte rápido e seguro de utentes graves."
   },
   {
-    "id": 1194,
+    "id": 1192,
     "topicId": 1,
     "question": "Se um enfermeiro aplicar sozinho uma força de tração de 300 N sobre um utente de 160 kg em decúbito dorsal cujo atrito estático máximo com o leito seja de 450 N, o que acontecerá?",
     "options": [
@@ -3693,7 +3656,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Ensina que insistir em puxar sozinho quando o atrito não é vencido gera lesões lombares graves no profissional."
   },
   {
-    "id": 1195,
+    "id": 1193,
     "topicId": 1,
     "question": "O uso de telas de transferência deslizantes de baixo atrito reduz a força necessária para acelerar o utente bariátrico porque:",
     "options": [
@@ -3712,7 +3675,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fundamenta a prescrição e exigência de dispositivos ergonómicos de baixa fricção em serviços de internamento."
   },
   {
-    "id": 1196,
+    "id": 1194,
     "topicId": 1,
     "question": "Quando dois enfermeiros utilizam uma prancha de transferência (Rollbord) para passar um utente bariátrico da cama para a maca, o princípio dinâmico envolvido é:",
     "options": [
@@ -3731,7 +3694,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Promove a adoção de tecnologias ergonómicas seguras que protegem tanto o doente como os profissionais de enfermagem."
   },
   {
-    "id": 1197,
+    "id": 1195,
     "topicId": 1,
     "question": "Qual é a função primordial do sistema de travão central de acionamento por pedal nas macas modernas?",
     "options": [
@@ -3750,7 +3713,26 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Reforça a verificação rotineira do bom funcionamento dos travões como medida preventiva de quedas e colisões."
   },
   {
-    "id": 1198,
+    "id": 1196,
+    "topicId": 1,
+    "question": "Qual é a força resultante necessária para manter essa mesma cama de 150 kg a deslocar-se a essa velocidade constante de 0,6 m/s num piso liso sem atrito?",
+    "options": [
+      "90 N (calculada multiplicando a massa de 150 kg pela velocidade constante de 0,6 m/s).",
+      "1500 N (calculada multiplicando a massa pela aceleração da gravidade terrestre).",
+      "Zero N, pois velocidade constante em linha reta implica aceleração nula e força resultante nula (∑F = m·a = 0).",
+      "45 N (calculada dividindo a massa pelo quadrado da velocidade de circulação no corredor)."
+    ],
+    "correctIndex": 2,
+    "explanation": "Em movimento retilíneo uniforme (MRU), a = 0; logo, a força resultante é rigorosamente zero (1.ª Lei e 2.ª Lei em concordância).",
+    "distractorAnalysis": [
+      "Está incorreta: 150 · 0,6 = 90 kg·m/s é a quantidade de movimento (momento linear p), não uma força resultante em Newtons.",
+      "Está incorreta: 1500 N é o peso vertical do conjunto (m·g), que se encontra perfeitamente equilibrado pela força normal do chão.",
+      "Está incorreta: Dividir massa pelo quadrado da velocidade não produz dimensionalmente uma força mecânica."
+    ],
+    "nursingApplication": "Confirma que após o arranque, o esforço contínuo do profissional serve apenas para anular o atrito residual dos rodízios."
+  },
+  {
+    "id": 1197,
     "topicId": 1,
     "question": "Qual é o perigo mecânico de um enfermeiro tentar travar uma cadeira de rodas pesada em alta velocidade agarrando diretamente o aro metálico de propulsão manual das rodas?",
     "options": [
@@ -3769,7 +3751,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Orienta o enfermeiro a utilizar sempre as pegas superiores com luvas e a acionar os manípulos de travão mecânico certificados."
   },
   {
-    "id": 1199,
+    "id": 1198,
     "topicId": 1,
     "question": "Um estudante de enfermagem argumenta: 'Se a cada força de empurrão corresponde uma força de reação oposta e igual, então nenhuma maca se deveria conseguir mover'. Como deve o professor corrigir este erro?",
     "options": [
@@ -3788,7 +3770,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Resolve o paradoxo clássico da 3.ª Lei de Newton e capacita o estudante a analisar diagramas de corpo livre."
   },
   {
-    "id": 1200,
+    "id": 1199,
     "topicId": 1,
     "question": "Se o coeficiente de atrito entre o calçado e o piso for extremamente baixo (ex: piso molhado com água e sabão), porque é que o enfermeiro não consegue caminhar com eficácia?",
     "options": [
@@ -3807,7 +3789,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Justifica a regra rigorosa de segurança de sinalizar e secar imediatamente pisos molhados em instituições hospitalares."
   },
   {
-    "id": 1201,
+    "id": 1200,
     "topicId": 1,
     "question": "Qual é a relação direta entre a força de atrito exercida pelo piso e a capacidade de aceleração de um enfermeiro ao iniciar uma corrida de socorro?",
     "options": [
@@ -3826,7 +3808,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Conceito biofísico basilar: o atrito solo-pé não é apenas uma resistência, é o motor propulsor da locomoção terrestre."
   },
   {
-    "id": 1202,
+    "id": 1201,
     "topicId": 1,
     "question": "Se um enfermeiro de 65 kg tentar acelerar a 2 m/s² num piso hospitalar cujo atrito estático máximo entre sola e piso seja de apenas 80 N, o que acontecerá?",
     "options": [
@@ -3845,26 +3827,26 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Explica a física dos acidentes por escorregamento durante intervenções de emergência em pisos recém-lavados."
   },
   {
-    "id": 1203,
+    "id": 1202,
     "topicId": 1,
-    "question": "Se um enfermeiro utilizar uma toalha para secar a pele friável de um idoso esfregando-a vigorosamente para a frente e para trás, que erro mecânico está a cometer?",
+    "question": "O uso de tecidos de microfibra ou seda em vestuário e lençóis hospitalares para doentes com mobilidade reduzida tem que base física?",
     "options": [
-      "Aplica forças de corte tangenciais repetidas e elevadas que podem descolar a epiderme da derme, causando lesões por fricção.",
-      "Gera uma pressão perpendicular elevada que oclui os capilares superficiais e causa isquemia por compressão direta.",
-      "Cria uma diferença de temperatura na interface pele-colchão que provoca queimaduras de baixa intensidade por condução.",
-      "Produz uma força elétrica estática entre as fibras do lençol e a pele que danifica as proteínas da membrana celular."
+      "Reduzir drasticamente o coeficiente de atrito cinético entre o corpo do doente e a superfície do leito durante o reposicionamento.",
+      "Aumentar o peso aparente do doente para melhorar a sua ancoragem postural durante manobras de elevação no plano sagital.",
+      "Eliminar a força normal de contacto entre o dorso e o estrado através de fenómenos de sustentação aerodinâmica de interface.",
+      "Manter a pele do utente rigidamente colada ao lençol para impedir qualquer tipo de movimento relativo na cama articulada."
     ],
-    "correctIndex": 3,
-    "explanation": "A pele senil possui junção dermoepidérmica adelgaçada e menor colagénio; forças de cisalhamento (atrito F = μ·N) rasgam facilmente as camadas dérmicas.",
+    "correctIndex": 0,
+    "explanation": "Tecidos de baixo atrito reduzem a força tangencial exercida sobre a pele em cada tentativa de mobilização voluntária ou passiva no leito.",
     "distractorAnalysis": [
-      "Está incorreta: a pressão perpendicular que oclui capilares é o mecanismo da isquemia por pressão (eritema de pressão); as forças de deslizamento (cisalhamento) causam lesões por fricção diferentes da isquemia por compressão.",
-      "Está incorreta: as diferenças de temperatura na interface pele-colchão em condições normais de enfermagem são mínimas e insuficientes para causar queimaduras; as lesões por deslizamento são mecânicas, não térmicas.",
-      "Está incorreta: as forças eletrostáticas geradas pelo atrito entre lençol e pele não danificam proteínas da membrana; as lesões por deslizamento são macroscópicas e mecânicas, não moleculares."
+      "Está incorreta: tecidos técnicos e telas de deslizamento visam diminuir a resistência de fricção e não aumentar a fixação mecânica por peso.",
+      "Está incorreta: a força normal de suporte (Fn) continua presente; o benefício clínico consiste na redução do coeficiente de atrito (μ).",
+      "Está incorreta: fixar a pele ao lençol aumentaria perigosamente as forças de cisalhamento dérmico durante os movimentos no leito."
     ],
-    "nursingApplication": "Orienta a técnica de enfermagem correta de secagem por contacto suave (tamponamento com toalha macia) sem fricção em doentes frágeis."
+    "nursingApplication": "Promove a seleção adequada de têxteis de saúde com base em evidências ergonómicas e biomecânicas consolidadas."
   },
   {
-    "id": 1204,
+    "id": 1203,
     "topicId": 1,
     "question": "Para que as pernas de uma cadeira de banho não escorreguem no piso molhado do chuveiro durante o banho, os pés da cadeira devem possuir:",
     "options": [
@@ -3881,6 +3863,25 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: Azulejos cerâmicos e água não são ferromagnéticos, não aderindo a ímanes permanentes."
     ],
     "nursingApplication": "Regra de segurança crucial na prevenção de quedas de doentes dependentes no duche."
+  },
+  {
+    "id": 1204,
+    "topicId": 1,
+    "question": "Porque é que duas pessoas sentadas lado a lado numa enfermaria não sentem uma atração gravitacional visível entre os seus corpos?",
+    "options": [
+      "Porque as suas massas (~70 kg) são pequenas comparadas com a da Terra, gerando forças mútuas ínfimas (~10⁻⁷ N) que o atrito das cadeiras anula com facilidade.",
+      "Porque a atração gravítica entre massas sólidas manifesta-se no espaço apenas quando a distância de separação mútua for estritamente nula.",
+      "Porque os campos térmicos gerados pela circulação de sangue aquecido a 37 °C repelem as ondas gravitacionais no interior da enfermaria.",
+      "Porque a força normal exercida pelo assento das cadeiras anula completamente qualquer interação gravítica mútua no plano horizontal."
+    ],
+    "correctIndex": 0,
+    "explanation": "F = G · (m1·m2) / r² com G = 6,67·10⁻¹¹ N·m²/kg². Para dois adultos a 1 metro, a atração é de cerca de 3 · 10⁻⁷ N, facilmente mascarada pelo atrito.",
+    "distractorAnalysis": [
+      "Está incorreta: a atração gravítica atua a qualquer distância (F = G·m1·m2/r²), mas com massas humanas o seu valor é desprezável.",
+      "Está incorreta: a radiação térmica é radiação infravermelha eletromagnética e não interfere na constante ou força da gravitação universal.",
+      "Está incorreta: a força normal das cadeiras equilibra o peso vertical do corpo e não tem relação vetorial com a atração horizontal mútua."
+    ],
+    "nursingApplication": "Distingue a força do Peso (atração com o planeta Terra) da atração gravitacional mútua desprezável entre objetos comuns."
   },
   {
     "id": 1205,
@@ -3961,6 +3962,44 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1209,
     "topicId": 1,
+    "question": "Qual é a diferença fundamental entre o Atrito Estático (Fat,e) e o Atrito Cinético ou Dinâmico (Fat,c)?",
+    "options": [
+      "O atrito estático é sempre inferior ao cinético, razão pela qual é mais fácil iniciar o deslocamento de uma maca pesada parada do que mantê-la a rolar em velocidade estável.",
+      "O atrito estático atua unicamente em superfícies verticais sob forças de compressão, enquanto o cinético manifesta-se com exclusividade em planos horizontais e rampas.",
+      "O atrito estático atua quando não há movimento relativo entre as superfícies (evita o início do movimento); o atrito cinético atua quando já existe deslizamento relativo entre elas.",
+      "O atrito estático depende da força normal exercida pelo solo, ao passo que o atrito cinético depende unicamente da velocidade angular das rodas e da temperatura ambiental."
+    ],
+    "correctIndex": 2,
+    "explanation": "Estático = sem movimento relativo (v_rel = 0); Cinético = com deslizamento relativo (v_rel ≠ 0). Ambas são forças e medem-se em Newtons (N).",
+    "distractorAnalysis": [
+      "Está incorreta: o coeficiente de atrito estático é geralmente superior ao cinético (μe > μc), exigindo maior força para iniciar o movimento do que para mantê-lo.",
+      "Está incorreta: tanto o atrito estático como o cinético podem ocorrer em qualquer orientação espacial onde haja forças de contacto entre superfícies sólidas.",
+      "Está incorreta: o atrito cinético depende diretamente da força normal de contacto entre as superfícies (Fat,c = μc · N), e não apenas da velocidade ou temperatura."
+    ],
+    "nursingApplication": "Conceito biofísico basilar para diferenciar a força necessária para iniciar um movimento da força para o manter."
+  },
+  {
+    "id": 1210,
+    "topicId": 1,
+    "question": "Como se expressa matematicamente o valor máximo da Força de Atrito Estático no limiar do movimento?",
+    "options": [
+      "Fat,e_max = μe · N (onde μe é o coeficiente de atrito estático e N é o módulo da força normal de compressão).",
+      "Fat,e_max = μe / N (onde o atrito máximo é inversamente proporcional à força normal de suporte).",
+      "Fat,e_max = m · v² / 2 (onde o atrito é calculado pela energia cinética dos pneus do veículo).",
+      "Fat,e_max = μe · g · v (onde o atrito é obtido multiplicando o coeficiente pela gravidade e velocidade)."
+    ],
+    "correctIndex": 0,
+    "explanation": "O limiar de deslizamento depende diretamente da adesão dos materiais (μe) e da compressão mútua das superfícies (N): Fat,e_max = μe·N.",
+    "distractorAnalysis": [
+      "Está incorreta: O atrito máximo é diretamente proporcional à força normal N e não inversamente proporcional.",
+      "Está incorreta: m·v²/2 é a expressão matemática da energia cinética escalar, expressa em Joules e não em Newtons.",
+      "Está incorreta: No repouso estático a velocidade é zero (v = 0); incluir velocidade anularia a expressão estática."
+    ],
+    "nursingApplication": "Permite calcular o esforço de tração mínimo indispensável para conseguir mover qualquer equipamento hospitalar."
+  },
+  {
+    "id": 1211,
+    "topicId": 1,
     "question": "Em qualquer par de materiais em contacto (ex: borracha-vinil, tecido-pele, metal-aço), como se comparam os coeficientes de atrito estático (μe) e cinético (μc)?",
     "options": [
       "O coeficiente cinético é sempre dez vezes superior ao estático em todas as circunstâncias físicas.",
@@ -3978,26 +4017,45 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Regra de ouro da mecânica lecionada na biofísica médica para enfermagem."
   },
   {
-    "id": 1210,
+    "id": 1212,
     "topicId": 1,
-    "question": "Qual é a explicação física e molecular pela qual o coeficiente de atrito estático é maior que o cinético (μe > μc)?",
+    "question": "Para uma maca hospitalar com doente (massa total 120 kg, g = 10 m/s², N = 1200 N) com coeficientes μe = 0,10 e μc = 0,05, qual é a força horizontal mínima necessária apenas para tirar a maca do repouso?",
     "options": [
-      "No estado estático há mais tempo para estabelecer microsoldaduras moleculares profundas entre as asperezas das superfícies em repouso.",
-      "No estado cinético as superfícies fundem-se termicamente libertando fluidos lubrificantes que eliminam toda a resistência.",
-      "No estado estático a força da gravidade atua com o dobro da intensidade sobre as moléculas superficiais dos corpos imóveis.",
-      "No estado cinético o coeficiente de atrito anula-se devido à geração espontânea de um colchão de ar sob as superfícies."
+      "60 N (calculada multiplicando o coeficiente cinético pela massa total do doente e da maca).",
+      "120 N (calculada por Fat,e_max = μe · N = 0,10 · 1200 N = 120 N), garantindo o equilíbrio estático.",
+      "1200 N (calculada igualando a força horizontal diretamente ao peso vertical de todo o sistema).",
+      "12 N (calculada dividindo a força normal pela aceleração gravitacional local da Terra)."
     ],
-    "correctIndex": 0,
-    "explanation": "Durante o deslizamento cinético, os picos das asperezas apenas 'tocam de raspão' em alta cadência, sem tempo para estabelecer adesão molecular tão íntima.",
+    "correctIndex": 1,
+    "explanation": "Para iniciar o movimento a força aplicada tem de superar o atrito estático máximo: F > Fat,e_max = 0,10 · 1200 = 120 N (cerca de 12,2 kgf).",
     "distractorAnalysis": [
-      "Está incorreta: durante o deslizamento as asperezas apenas colidem e saltam sem tempo para estabelecer adesão molecular tão profunda.",
-      "Está incorreta: a gravidade é constante (P = m·g) e não se altera com o estado de movimento ou repouso relativo do corpo.",
-      "Está incorreta: o atrito cinético sólido não depende de colchões de ar espontâneos, mantendo-se o contacto real entre asperezas."
+      "Está incorreta: 60 N (0,05 · 1200 = 60 N) é a força suficiente apenas para MANTER o movimento após este já ter sido iniciado.",
+      "Está incorreta: 1200 N seria a força necessária para levantar a maca verticalmente no ar contra a gravidade.",
+      "Está incorreta: 12 N seria insuficiente para vencer o atrito estático das rodas de poliuretano no piso vinílico."
     ],
-    "nursingApplication": "Permite responder com clareza e profundidade científica a perguntas teóricas de exame."
+    "nursingApplication": "Permite calcular e antecipar o esforço físico muscular de arranque na movimentação de equipamentos hospitalares."
   },
   {
-    "id": 1211,
+    "id": 1213,
+    "topicId": 1,
+    "question": "Se um enfermeiro tentar iniciar o movimento de uma maca travada (onde as rodas não giram e os travões estão ativados), qual é o perigo biomecânico para o seu organismo?",
+    "options": [
+      "Como as rodas bloqueadas aumentam a resistência de arranque para o atrito de deslizamento com o piso, o esforço exigido dispara, podendo causar entorse muscular ou rotura ligamentar súbita no profissional.",
+      "A força resistente diminui de imediato porque o atrito de deslizamento de pneus de borracha travados no pavimento vinílico é inferior à resistência dos rolamentos lubrificados.",
+      "As rodas travadas convertem a força horizontal de empurrão em força normal vertical ascendente, duplicando o peso aparente do doente e da maca registado no solo.",
+      "O bloqueio das rodas impede o aparecimento de atrito com o piso, fazendo com que a resistência sentida pelo enfermeiro seja provocada exclusivamente pela inércia da maca."
+    ],
+    "correctIndex": 0,
+    "explanation": "Empurrar uma carga com travões ativos força uma tentativa de vencer o atrito de borracha arrastada (μe muito alto), expondo a coluna a cargas perigosas.",
+    "distractorAnalysis": [
+      "Está incorreta: o atrito de deslizamento (borracha no piso) é dezenas de vezes superior à resistência ao rolamento livre com rodas a girar.",
+      "Está incorreta: forças de atrito são puramente tangenciais à superfície e não alteram a atração gravitacional nem o peso real do doente.",
+      "Está incorreta: o travamento gera uma enorme força de atrito de escorregamento entre borracha e pavimento, não sendo a inércia a única resistência."
+    ],
+    "nursingApplication": "Sensibiliza para o hábito profissional essencial de verificar se os rodízios estão destravados antes de iniciar qualquer empurrão."
+  },
+  {
+    "id": 1214,
     "topicId": 1,
     "question": "Como é que a presença de um filme fino de água ou óleo entre duas superfícies altera o coeficiente de atrito?",
     "options": [
@@ -4016,7 +4074,83 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Explica porque derrames de soro fisiológico ou urina no chão aumentam imediatamente o risco de quedas graves por escorregamento."
   },
   {
-    "id": 1212,
+    "id": 1215,
+    "topicId": 1,
+    "question": "O que expressa o coeficiente de atrito (μ) em termos de grandezas físicas e unidades no Sistema Internacional?",
+    "options": [
+      "É expresso em Newtons por metro quadrado (N/m²), quantificando a pressão mecânica de cisalhamento desenvolvida no piso.",
+      "É um número adimensional (puro escalar sem unidades), representando a razão física entre duas forças perpendiculares: Fatrito e Força Normal.",
+      "É medido em Quilogramas-força, representando a massa mínima necessária para iniciar o movimento de rolamento na superfície.",
+      "É expresso em Joules por segundo (Watts), correspondendo à taxa de calor dissipada por atrito durante a marcha hospitalar."
+    ],
+    "correctIndex": 1,
+    "explanation": "Como μ é a razão entre duas forças expressas na mesma unidade (Newtons divididos por Newtons), o quociente não possui dimensão física ([μ] = 1).",
+    "distractorAnalysis": [
+      "Está incorreta: o coeficiente de atrito é a razão entre duas forças (μ = Fat / N); dividindo Newtons por Newtons obtém-se uma grandeza adimensional.",
+      "Está incorreta: quilogramas-força é unidade de força obsoleta; μ é uma constante adimensional de proporcionalidade interfacial.",
+      "Está incorreta: Watts quantifica potência mecânica ou térmica e não o coeficiente de atrito entre superfícies em contacto sólido."
+    ],
+    "nursingApplication": "Assegura a precisão conceitual dos estudantes de enfermagem em cálculos e análises tribológicas biomecânicas."
+  },
+  {
+    "id": 1216,
+    "topicId": 1,
+    "question": "De acordo com a clássica Lei de Amontons (Século XVII), o que acontece à força de atrito estático máximo entre um tijolo e uma mesa se o apoiarmos sobre a sua face de maior área em vez da face de menor área?",
+    "options": [
+      "A força de atrito é inversamente proporcional à força normal e depende do volume geométrico dos corpos em repouso.",
+      "A força de atrito duplica sempre que a área de contacto aparente é duplicada pelo reposicionamento postural do corpo.",
+      "A força de atrito de deslizamento é diretamente proporcional à carga normal e é independente da área aparente de contacto entre os corpos.",
+      "A força de atrito só existe em superfícies perfeitamente polidas que tenham sido previamente lubrificadas com água ou soro."
+    ],
+    "correctIndex": 2,
+    "explanation": "Aumentar a área aparente A diminui a pressão local (p = F/A); as duas variações compensam-se perfeitamente, mantendo a área real de contacto microscópico constante.",
+    "distractorAnalysis": [
+      "Está incorreta: as leis de Amontons (1699) estabelecem que Fat é diretamente proporcional à força normal e independe da área de apoio.",
+      "Está incorreta: a independência da área aparente de contacto é precisamente o postulado clássico da segunda lei de Amontons.",
+      "Está incorreta: o atrito manifesta-se em todas as superfícies sólidas secas reais e atinge valores máximos em superfícies rugosas sem lubrificação."
+    ],
+    "nursingApplication": "Demonstra um princípio físico contraintuitivo mas fundamental: espalhar a carga por maior área não altera a força de atrito total em sólidos rígidos."
+  },
+  {
+    "id": 1217,
+    "topicId": 1,
+    "question": "Porque é que a área aparente de contacto não entra na fórmula fundamental da força de atrito clássico (Fat = μ · N)?",
+    "options": [
+      "Porque os instrumentos cirúrgicos são imunes às leis da gravidade quando colocados dentro de campos esterilizados no bloco operatório.",
+      "Porque a área de contacto é uma grandeza vetorial que se cancela com a aceleração da gravidade terrestre na equação fundamental da dinâmica.",
+      "Porque a pressão atmosférica comprime os corpos materiais com a mesma intensidade em todas as direções do espaço anulando a área macroscópica.",
+      "Porque ao aumentar a área aparente a pressão diminui na mesma proporção, mantendo a área real de contacto microscópico dependente apenas da força normal."
+    ],
+    "correctIndex": 3,
+    "explanation": "Maior área aparente = menor pressão local = menor deformação por pico; a soma das microáreas de contacto real permanece rigorosamente idêntica para o mesmo N.",
+    "distractorAnalysis": [
+      "Está incorreta: a esterilização elimina microrganismos mas não altera a massa ou a atração gravítica universal dos instrumentos metálicos.",
+      "Está incorreta: a área é uma grandeza puramente escalar (m²) e não um vetor que se anule com acelerações na cinemática.",
+      "Está incorreta: a pressão atmosférica atua uniformemente mas não é a razão da independência do atrito seco em relação à área macroscópica."
+    ],
+    "nursingApplication": "Ensina o pensamento crítico e a distinção entre a 'área aparente' visível a olho nu e a 'área real' microscópica de contacto atómico."
+  },
+  {
+    "id": 1218,
+    "topicId": 1,
+    "question": "Como se concilia o facto de que aumentar a área de apoio reduz a pressão nos tecidos (prevenindo desconforto), mas não reduz a força total de atrito ao mover o doente?",
+    "options": [
+      "A pressão diminui mas o atrito aumenta exponencialmente por efeito de atração magnética gerada pela espuma viscoelástica do leito hospitalar.",
+      "A pressão e o atrito anulam-se mutuamente sempre que o corpo humano é colocado em decúbito dorsal perfeitamente alinhado na cama articulada.",
+      "A pressão mecânica dérmica local depende da área (p = F/A), mas a força total de atrito depende apenas da força normal e de μ (Fat = μ·Fn).",
+      "A força total de atrito depende exclusivamente do volume de ar contido no interior dos alvéolos pulmonares durante a fase inspiratória ativa."
+    ],
+    "correctIndex": 2,
+    "explanation": "Aumentar a área protege a pele e tecidos contra picos de compressão (p = F/A baixo), mas para movimentar o doente o enfermeiro tem de vencer a mesma força de atrito Fat = μ·N.",
+    "distractorAnalysis": [
+      "Está incorreta: colchões de espuma não geram campos magnéticos; o alívio pressórico decorre puramente da distribuição geométrica da força.",
+      "Está incorreta: o peso continua a ser suportado (∑Fn = P); a pressão é o quociente local e a força de atrito é a integral tangencial global.",
+      "Está incorreta: a força de atrito entre superfícies sólidas independe da ventilação alveolar ou do volume pulmonar inspiratório do doente."
+    ],
+    "nursingApplication": "Síntese conceitual de altíssimo valor pedagógico que desfaz uma das maiores confusões na aprendizagem de enfermagem."
+  },
+  {
+    "id": 1219,
     "topicId": 1,
     "question": "Se o coeficiente de atrito de deslizamento da borracha no vinil for μ_desl = 0,5 e o coeficiente de resistência ao rolamento de um rodízio bem lubrificado for μ_rol = 0,01, qual é a razão entre as forças necessárias para empurrar uma maca de 100 kg?",
     "options": [
@@ -4035,7 +4169,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Demonstra a magnitude colossal da vantagem mecânica proporcionada pelos rodízios no trabalho hospitalar diário."
   },
   {
-    "id": 1213,
+    "id": 1220,
     "topicId": 1,
     "question": "O que acontece quando os rodízios de uma maca ficam enredados com fios, cabelos e cotão do chão da enfermaria?",
     "options": [
@@ -4054,7 +4188,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fundamenta a importância da limpeza e manutenção técnica preventiva regular de todas as rodas e equipamentos móveis hospitalares."
   },
   {
-    "id": 1214,
+    "id": 1221,
     "topicId": 1,
     "question": "Se o coeficiente de atrito entre o corpo do doente de 80 kg e um lençol comum for μ = 0,5, mas ao usar uma tela deslizante cair para μ = 0,08, qual é a redução na força necessária para o puxar?",
     "options": [
@@ -4073,159 +4207,558 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Demonstração matemática incontestável do impacto protetor dos dispositivos ergonómicos de baixa fricção."
   },
   {
-    "id": 1215,
-    "topicId": 1,
-    "question": "Em doentes com fraturas de membros inferiores ou instabilidade da coluna vertebral, o benefício de utilizar dispositivos de transferência de baixo atrito é:",
-    "options": [
-      "Evitar solavancos, acelerações bruscas e forças de cisalhamento dolorosas nos focos de fratura através de deslizamento suave e contínuo.",
-      "Aumentar a tração axial dos membros fraturados através de puxões rápidos e vigorosos para alinhar os ossos sem recurso a analgesia.",
-      "Suspender os membros inferiores no ar sem qualquer suporte inferior durante a transferência para testar os reflexos osteotendinosos.",
-      "Reduzir o tempo de transferência para menos de um segundo, independentemente do conforto e das queixas álgicas do paciente mobilizado."
-    ],
-    "correctIndex": 0,
-    "explanation": "Com atrito reduzido, o movimento decorre com aceleração muito baixa (a ≈ 0) e sem puxões desfasados que deslocariam fragmentos ósseos.",
-    "distractorAnalysis": [
-      "Está incorreta: trações bruscas provocam dor lancinante, espasmo muscular reflexo e risco de lesão neurovascular no foco da fratura.",
-      "Está incorreta: membros com fratura devem estar estavelmente apoiados e alinhados para impedir microdeslocamentos dos topos ósseos.",
-      "Está incorreta: manobras de transferência exigem planeamento, suavidade e coordenação da equipa, e não pressa intempestiva e arriscada."
-    ],
-    "nursingApplication": "Garante a estabilização mecânica e a analgesia postural no manuseamento de doentes politraumatizados."
-  },
-  {
-    "id": 1216,
-    "topicId": 1,
-    "question": "Como é que a lubrificação periódica com massas lubrificantes ou óleo sintético reduz o atrito nos rolamentos de esferas das macas hospitalares?",
-    "options": [
-      "Aumenta o coeficiente de atrito entre os rolamentos metálicos para assegurar que a maca não ganhe velocidade excessiva no corredor.",
-      "Interpõe uma película fluida entre as esferas metálicas e o eixo, substituindo o atrito sólido seco pelo atrito viscoso fluido de valor muito inferior.",
-      "Anula a força da gravidade que comprime as esferas de aço contra a pista interna dos rolamentos dos rodízios hospitalares.",
-      "Converte a rotação circular das esferas metálicas num movimento linear oscilatório que arrefece o chassis do equipamento."
-    ],
-    "correctIndex": 1,
-    "explanation": "A lubrificação hidrodinâmica previne o desgaste adesivo e abrasivo, mantendo a resistência ao rolamento no valor mínimo de fábrica.",
-    "distractorAnalysis": [
-      "Está incorreta: a lubrificação visa reduzir drasticamente o atrito e o desgaste, tornando o rolamento suave e com esforço mínimo para o profissional.",
-      "Está incorreta: a gravidade continua a atuar nos componentes metálicos; o lubrificante impede o contacto direto metal-metal entre as asperezas.",
-      "Está incorreta: os rolamentos mantêm a sua cinemática de rotação pura contínua, reduzindo as perdas por atrito e dissipação de calor."
-    ],
-    "nursingApplication": "Permite compreender a importância da manutenção preventiva hospitalar na preservação da saúde dos enfermeiros."
-  },
-  {
-    "id": 1217,
-    "topicId": 1,
-    "question": "Qual é a exigência normativa das normas de segurança e saúde no trabalho (SST) para o calçado profissional de uso hospitalar em termos de solado?",
-    "options": [
-      "Que as camas possuam motores elétricos que acelerem o leito a velocidades superiores a cinco metros por segundo nas passagens.",
-      "Que os equipamentos possuam rodízios de diâmetro adequado, manutenção periódica e sistemas de travamento funcionalmente operacionais.",
-      "Que as camas hospitalares sejam completamente desprovidas de travões para facilitar a mobilização de emergência por qualquer pessoa.",
-      "Que as rodas das macas sejam fabricadas em ferro fundido não vulcanizado para aumentar o ruído e alertar os peões no corredor."
-    ],
-    "correctIndex": 1,
-    "explanation": "A classificação SRC exige testes de atrito rigorosos em pisos cerâmicos com detergente e em aço com glicerina, garantindo máxima proteção contra quedas.",
-    "distractorAnalysis": [
-      "Está incorreta: o transporte hospitalar deve ser executado a velocidade de marcha moderada e controlada para segurança do doente e do profissional.",
-      "Está incorreta: o sistema de travamento central ou por pedal individual é um requisito obrigatório de segurança para evitar quedas e deslizamento do leito.",
-      "Está incorreta: as normas exigem rodas com bandagem de borracha termoplástica ou poliuretano silencioso que amorteça impactos e reduza vibrações."
-    ],
-    "nursingApplication": "Orienta a aquisição e utilização de calçado de proteção individual certificado pelas equipas de enfermagem."
-  },
-  {
-    "id": 1218,
-    "topicId": 1,
-    "question": "Qual é a primeira medida preventiva imediata que a equipa hospitalar deve adotar antes de iniciar a higienização húmida de um corredor?",
-    "options": [
-      "Sinalizar a área com placas amarelas visíveis de 'Piso Escorregadio' e proceder à lavagem por metades longitudinais, mantendo sempre uma faixa seca e desimpedida para circulação.",
-      "Aguardar a evaporação natural do líquido à temperatura ambiente durante o turno de trabalho, orientando apenas verbalmente os doentes que transitam no local.",
-      "Orientar os profissionais a caminhar aceleradamente sobre o líquido para espalhar a película líquida, acelerando o retorno do atrito estático ao piso vinílico.",
-      "Cobrir o derrame com lençóis de pano comuns sem qualquer aviso visual, permitindo que o tráfego de macas continue normalmente sobre a superfície humedecida."
-    ],
-    "correctIndex": 0,
-    "explanation": "Lavar por metades garante um percurso seguro contínuo com piso seco e atrito adequado, prevenindo o trânsito sobre superfícies com coeficiente de atrito reduzido.",
-    "distractorAnalysis": [
-      "Está incorreta: líquidos derramados reduzem o coeficiente de atrito de forma crítica; não sinalizar nem secar de imediato representa negligência com alto risco de queda.",
-      "Está incorreta: caminhar sobre superfícies lubrificadas com passos rápidos aumenta drasticamente a probabilidade de escorregamento descontrolado do calcanhar.",
-      "Está incorreta: cobrir líquidos com lençóis soltos sem sinalização cria um perigo oculto de deslizamento da interface tecido-piso para quem transita."
-    ],
-    "nursingApplication": "Regra de boas práticas de segurança ambiental e prevenção de acidentes graves em instituições de saúde."
-  },
-  {
-    "id": 1219,
-    "topicId": 1,
-    "question": "Quando ocorre um derrame acidental de soro glicosado, sangue ou urina no chão da enfermaria, qual é o dever prioritário do enfermeiro que o deteta?",
-    "options": [
-      "Registar a ocorrência na plataforma informática para que a equipa de limpeza higienize o pavimento no próximo turno regular de trabalho.",
-      "Sinalizar ou delimitar imediatamente o local de derrame e providenciar a sua absorção e secagem rápida para restaurar o atrito seguro do piso.",
-      "Cobrir o líquido com um lençol de algodão comum para absorção passiva, permitindo que a passagem de pessoas prossiga normalmente.",
-      "Aguardar que o fluido seque por ventilação natural, alertando os utentes apenas se manifestarem dificuldade de deambulação no corredor."
-    ],
-    "correctIndex": 1,
-    "explanation": "Fluidos biológicos no piso diminuem imediatamente o atrito a níveis críticos; a intervenção imediata elimina a armadilha física de queda para doentes e colegas.",
-    "distractorAnalysis": [
-      "Está incorreta: adiar a intervenção para outro turno mantém uma armadilha biomecânica de queda iminente ativa no corredor da enfermaria.",
-      "Está incorreta: colocar um lençol solto sobre piso molhado cria um plano de deslizamento desprovido de atrito, agravando o risco de queda.",
-      "Está incorreta: fluidos como soro ou sangue reduzem criticamente o atrito e exigem sinalização e secagem imediatas para prevenir acidentes."
-    ],
-    "nursingApplication": "Promove a cultura de segurança ativa e corresponsabilidade de toda a equipa multiprofissional."
-  },
-  {
-    "id": 1220,
-    "topicId": 1,
-    "question": "Como funciona fisicamente o sistema de travão mecânico centralizado acionado por pedal nas camas e macas hospitalares?",
-    "options": [
-      "O pedal aciona um circuito hidráulico que drena o ar sob pressão dos pneus dos rodízios, fazendo assentar o chassis de aço diretamente sobre a superfície do pavimento do quarto.",
-      "O pedal atua sobre um mecanismo de cames e barras de aço que comprime sapatas de travão de alta fricção contra a banda de rolamento das rodas, gerando uma elevada força de atrito estático que impede a sua rotação.",
-      "O pedal recolhe mecanicamente as quatro rodas para dentro das pernas da cama, apoiando a estrutura metálica diretamente no chão para anular a força de reação normal do solo.",
-      "O pedal inverte a rotação das engrenagens internas dos rolamentos de esferas, forçando as rodas a girar continuamente no sentido contrário a qualquer empurrão executado pelo enfermeiro."
-    ],
-    "correctIndex": 1,
-    "explanation": "Ao bloquear mecanicamente o eixo e a roda por fricção, qualquer tentativa de mover a cama exige vencer o atrito estático de deslizamento borracha-piso em quatro rodas em simultâneo (Fat_max enorme).",
-    "distractorAnalysis": [
-      "Está incorreta: o travão de leito hospitalar é puramente mecânico (alavancas e sapatas de fricção rígidas) e não depende de esvaziamento pneumático.",
-      "Está incorreta: o mecanismo comprime sapatas internas contra as rodas sem recolher a estrutura, mantendo a cama erguida e travada sob apoio dos rodízios.",
-      "Está incorreta: o travão não é um motor ativo contrarrotativo, mas um sistema passivo de bloqueio por atrito estático que impede a rotação das rodas."
-    ],
-    "nursingApplication": "Permite ao enfermeiro compreender o princípio de segurança passiva que mantém as camas absolutamente fixas."
-  },
-  {
-    "id": 1221,
-    "topicId": 1,
-    "question": "Se um enfermeiro aplicar uma força horizontal de 180 N numa cama hospitalar travada cuja força de atrito estático máxima combinada nas quatro rodas seja de 350 N, qual é o valor da força de atrito estático que atua sobre a cama?",
-    "options": [
-      "A maca acelera imediatamente a dois metros por segundo ao quadrado no corredor devido à conservação da quantidade de movimento.",
-      "A maca começa a mover-se com velocidade constante porque qualquer força não nula supera automaticamente a inércia dos rodízios.",
-      "A força de atrito estático anula-se de imediato, permitindo que a maca entre em regime de deslizamento livre sem qualquer resistência.",
-      "A maca permanece perfeitamente imóvel em repouso estático, pois a força aplicada (180 N) é inferior à força de atrito estático máxima (Fat,max = 200 N)."
-    ],
-    "correctIndex": 3,
-    "explanation": "Propriedade auto-ajustável do atrito estático: Fat,e = F_aplicada = 180 N, garantindo ∑Fx = 180 - 180 = 0 N (repouso estático contínuo).",
-    "distractorAnalysis": [
-      "Está incorreta: se a força externa não supera o atrito estático máximo (180 N < 200 N), a aceleração é estritamente zero.",
-      "Está incorreta: para iniciar o movimento a partir do repouso, a força motriz tem obrigatoriamente de superar o limiar do atrito estático de pico.",
-      "Está incorreta: a força de atrito estático ajusta-se para exatamente 180 N em sentido oposto, equilibrando o empurrão (∑F = 0) e mantendo o repouso."
-    ],
-    "nursingApplication": "Testa com precisão a compreensão teórica avançada de que o atrito estático real é menor ou igual ao atrito estático máximo."
-  },
-  {
     "id": 1222,
     "topicId": 1,
-    "question": "Se um objeto de madeira colocado sobre uma placa de aço começar a deslizar exatamente quando a placa atinge uma inclinação de 30 graus (onde tan 30° ≈ 0,577), qual é o coeficiente de atrito estático entre esses dois materiais?",
+    "question": "Qual é a definição biofísica de Pressão estabelecida na tabela curricular lecionada?",
     "options": [
-      "Aproximadamente 0,58 (pois μe = tan θc = tan 30° ≈ 0,577), garantindo o equilíbrio estático.",
-      "Exatamente 1,00 (pois todos os coeficientes de atrito na natureza são iguais à unidade pura).",
-      "Aproximadamente 30,0 (calculado multiplicando o ângulo em graus pelo volume da placa de aço).",
-      "Zero (porque se o objeto começou a deslizar significa que o atrito deixou de existir)."
+      "Produto direto da massa do doente pela velocidade média de deslocamento durante a marcha assistida.",
+      "Trabalho mecânico total executado pelo miocárdio dividido pelo volume sistólico ejetado por batimento.",
+      "Força perpendicular distribuída por unidade de área de contacto (p = F / A).",
+      "Quantidade de calor transferida por convecção entre o corpo do utente e o ar ambiente da enfermaria."
     ],
-    "correctIndex": 0,
-    "explanation": "μe = tan θc = tan 30° ≈ 0,577. Este método clássico de rampa inclinada é utilizado em laboratório para medir coeficientes de atrito com precisão.",
+    "correctIndex": 2,
+    "explanation": "A pressão biomecânica quantifica a concentração de uma força normal sobre uma determinada área de superfície: p = F/A.",
     "distractorAnalysis": [
-      "Está incorreta: Os coeficientes de atrito variam continuadamente entre valores próximos de zero até superiores a 1,0 consoante os materiais.",
-      "Está incorreta: O coeficiente é adimensional e não se multiplica arbitrariamente por graus geométricos de ângulos.",
-      "Está incorreta: O atrito estático existia e impediu o movimento até aos 30°; o valor no limiar define exatamente μe."
+      "Está incorreta: pressão não é o produto da massa pela velocidade; essa fórmula corresponde ao momento linear (p = m·v), não à pressão.",
+      "Está incorreta: o trabalho cardíaco dividido pelo volume sistólico resulta numa grandeza energética, não na pressão biofísica superficial.",
+      "Está incorreta: a transferência de calor por convecção é uma grandeza termodinâmica, não a definição biofísica de pressão mecânica."
     ],
-    "nursingApplication": "Ensina o método experimental padrão da física para determinação de coeficientes tribológicos de superfícies."
+    "nursingApplication": "Reduzir a pressão mecânica de apoio sobre proeminências ósseas é um princípio biofísico de segurança postural."
   },
   {
     "id": 1223,
+    "topicId": 1,
+    "question": "Se uma cadeira de rodas de 15 kg transportar um utente de 75 kg, que força normal de suporte o piso plano exerce sobre as rodas em repouso estático?",
+    "options": [
+      "9,18 N para baixo, correspondendo à razão matemática entre a massa combinada e a gravidade local.",
+      "882 N para cima, equilibrando rigorosamente o peso combinado do utente e da cadeira (90 kg × 9,8 m/s² = 882 N).",
+      "90 N para cima, mantendo-se a força normal numericamente igual à massa total do sistema hospitalar.",
+      "8820 N para cima, decorrente de uma multiplicação por uma taxa de aceleração dez vezes inflacionada."
+    ],
+    "correctIndex": 1,
+    "explanation": "Massa total = 75 + 15 = 90 kg. Peso total = 90 × 9,8 = 882 N para baixo. Em repouso, a normal equilibra o peso: N = 882 N para cima.",
+    "distractorAnalysis": [
+      "Está incorreta: A força normal de suporte aponta para cima (sustentação), e o seu valor é 882 N e não 9,18 N.",
+      "Está incorreta: A força normal é uma força expressa em Newtons (882 N), não correspondendo ao valor de 90 kg.",
+      "Está incorreta: 8820 N seria a força para equilibrar uma massa de quase uma tonelada (900 kg)."
+    ],
+    "nursingApplication": "Em repouso horizontal estático, a força normal total é igual em módulo ao peso total do sistema sustentado."
+  },
+  {
+    "id": 1224,
+    "topicId": 1,
+    "question": "Porque é que as macas de transporte específicas para doentes bariátricos possuem rodízios de maior diâmetro e materiais de alta resistência?",
+    "options": [
+      "A aceleração duplica de intensidade, tornando o movimento do leito duas vezes mais rápido com o mesmo esforço muscular.",
+      "A aceleração reduz-se para metade do valor anterior (a = F/m), exigindo o dobro do tempo para atingir a mesma velocidade.",
+      "A aceleração permanece rigorosamente inalterada, uma vez que a força aplicada pelo profissional não sofreu qualquer variação.",
+      "A aceleração cai imediatamente para zero, fazendo com que a maca entre em repouso estático permanente no corredor."
+    ],
+    "correctIndex": 3,
+    "explanation": "Rodas maiores ultrapassam irregularidades com menor força horizontal e distribuem a alta força normal sem deformar o poliuretano.",
+    "distractorAnalysis": [
+      "Está incorreta: o aumento da massa inercial reduz a aceleração para uma dada força (a = F/m) e nunca a duplica.",
+      "Está incorreta: a aceleração depende inversamente da massa; duplicar a massa com força constante reduz a aceleração a metade.",
+      "Está incorreta: se a força for superior ao atrito, a maca continua a acelerar, mas com uma taxa de aceleração 50% menor."
+    ],
+    "nursingApplication": "Orienta o enfermeiro a selecionar sempre a maca bariátrica adequada antes de iniciar a transferência interdepartamental."
+  },
+  {
+    "id": 1225,
+    "topicId": 1,
+    "question": "Em declives hospitalares (rampas), a força adicional que a equipa tem de exercer para empurrar uma maca bariátrica de 200 kg a subir a velocidade constante decorre de:",
+    "options": [
+      "Aumento espontâneo da massa do conjunto provocado pelo aumento da altitude do piso.",
+      "Ter de equilibrar a componente do peso paralela ao plano inclinado (Pt = m·g·sen θ), que puxa a massa ladeira abaixo.",
+      "Uma força atrativa misteriosa exercida pelas lâmpadas fluorescentes localizadas no cimo da rampa.",
+      "Dissipação da pressão atmosférica sobre a superfície dos membros inferiores do doente."
+    ],
+    "correctIndex": 1,
+    "explanation": "No plano inclinado, o peso decompõe-se: Pn = m·g·cos θ (perpendicular) e Pt = m·g·sen θ (paralela descendente que tem de ser vencida).",
+    "distractorAnalysis": [
+      "Está incorreta: A massa não varia com a pequena diferença de cota entre pisos num edifício hospitalar.",
+      "Está incorreta: Lâmpadas fluorescentes não exercem atração gravitacional significativa sobre equipamentos móveis.",
+      "Está incorreta: A pressão atmosférica atua uniformemente em todas as faces da maca e do corpo, não gerando força descendente."
+    ],
+    "nursingApplication": "Alerta a enfermagem para a necessidade de pedir auxílio de múltiplos colegas ao transitar com utentes bariátricos em rampas."
+  },
+  {
+    "id": 1226,
+    "topicId": 1,
+    "question": "Quando um enfermeiro empurra uma maca exercendo uma força inclinada para baixo e para a frente (ângulo θ com a horizontal), qual é a consequência sobre a força normal e o atrito?",
+    "options": [
+      "A componente horizontal da força (Fx = F·cos θ) determina o movimento da maca, mantendo a força normal inalterada.",
+      "A componente vertical anula o peso do doente, reduzindo a força normal a zero e facilitando a mobilização.",
+      "A componente vertical da força (Fy = F · sen θ) soma-se ao peso, aumentando a força normal (N = P + Fy) e, consequentemente, o atrito.",
+      "Ambas as componentes se cancelam mutuamente, resultando numa força de atrito igual à que existiria sem inclinação."
+    ],
+    "correctIndex": 2,
+    "explanation": "Força inclinada para baixo: N = m·g + F·sen θ. Maior normal N gera maior atrito cinético (Fat = μc·N), exigindo mais esforço do enfermeiro.",
+    "distractorAnalysis": [
+      "Está incorreta: embora a componente horizontal (Fx = F·cos θ) cause o deslocamento, a componente vertical (Fy = F·sen θ) altera a força normal e o atrito, que não permanece inalterado.",
+      "Está incorreta: para anular o peso do doente, a componente vertical teria de ser igual e oposta ao peso, o que implicaria uma força de empurrar para cima e não para baixo; numa força oblíqua descendente, Fy soma-se ao peso.",
+      "Está incorreta: as componentes horizontal e vertical de uma força oblíqua não se cancelam entre si; são independentes e afetam grandezas distintas (aceleração horizontal e força normal)."
+    ],
+    "nursingApplication": "Ensina o enfermeiro a empurrar com os braços paralelos ao solo para não aumentar desnecessariamente a força normal e o atrito."
+  },
+  {
+    "id": 1227,
+    "topicId": 1,
+    "question": "Em contrapartida, se o enfermeiro puxar a maca ligeiramente para cima e para a frente, o que acontece à força normal de apoio?",
+    "options": [
+      "A força normal aumenta substancialmente (N = P + Fy), elevando o atrito de rolamento e provocando sobrecarga compressiva nas vértebras lombares do cuidador.",
+      "A força normal anula-se de imediato (N = 0), permitindo que a maca deslize sem qualquer atrito mas descontrolando a trajetória nos cruzamentos de corredores.",
+      "A força normal permanece inalterada (N = P), mas a coluna lombar sofre forças de compressão axial direta idênticas às de suportar o peso total do doente nos braços.",
+      "A força normal diminui (N = P - Fy), o que pode reduzir ligeiramente o atrito, mas a postura corporal do profissional fica muito mais instável e vulnerável a lesões."
+    ],
+    "correctIndex": 3,
+    "explanation": "Puxar para cima alivia parte da compressão vertical (N = m·g - F·sen θ), mas o custo postural na coluna e ombros não compensa essa redução de atrito.",
+    "distractorAnalysis": [
+      "Está incorreta: puxar para cima introduz uma componente vertical ascendente (Fy), reduzindo a normal (N = P - Fy) em vez de aumentá-la.",
+      "Está incorreta: a força normal só seria nula se a força de tração vertical igualasse ou superasse o peso total da maca (Fy ≥ P), o que não ocorre.",
+      "Está incorreta: a força normal sofre redução proporcional à componente vertical da tração; o principal risco decorre da postura assimétrica e instável."
+    ],
+    "nursingApplication": "Reforça a recomendação ergonómica de empurrar a uma altura ergonómica padronizada (ao nível dos cotovelos flexos a 90°)."
+  },
+  {
+    "id": 1228,
+    "topicId": 1,
+    "question": "Na análise das forças de contacto e gravidade, que questão biofísica fundamental é colocada e respondida com rigor?",
+    "options": [
+      "Por que a pressão arterial sistólica é superior à diastólica em adultos normotensos em repouso?",
+      "Por que o soro fisiológico a 0,9% tem maior condutividade elétrica do que a água destilada?",
+      "Por que as células em divisão mitótica consomem mais ATP do que as células em repouso?",
+      "Por que a Força Normal e o Peso NÃO constituem um par de ação e reação segundo a 3.ª Lei de Newton?"
+    ],
+    "correctIndex": 3,
+    "explanation": "A biomecânica dedica especial atenção a desmistificar a confusão clássica entre Peso e Força Normal na biomecânica.",
+    "distractorAnalysis": [
+      "Está incorreta: a diferença entre pressão sistólica e diastólica é explicada pela hemodinâmica cardiovascular, não pela 3.ª Lei de Newton; não é uma questão de biofísica mecânica.",
+      "Está incorreta: a condutividade elétrica do soro versus água destilada é explicada pela presença de iões em solução (eletroquímica), não pela 3.ª Lei de Newton.",
+      "Está incorreta: o consumo de ATP na mitose é uma questão de bioenergética celular, não de mecânica newtoniana; não se relaciona com a 3.ª Lei de Newton."
+    ],
+    "nursingApplication": "Tema central e recorrente em avaliações de Biofísica para Enfermagem com base no programa curricular."
+  },
+  {
+    "id": 1229,
+    "topicId": 1,
+    "question": "Qual é o primeiro e mais incontestável argumento físico que prova que a Força Normal (N) e o Peso (P) NÃO são um par ação-reação?",
+    "options": [
+      "Ambas as forças atuam sobre o MESMO corpo (o doente), enquanto pares ação-reação atuam sempre em corpos diferentes.",
+      "A força normal e o peso têm o mesmo ponto de aplicação e a mesma magnitude, cumprindo os critérios de um par ação-reação.",
+      "A força normal e o peso são paralelas e opostas, satisfazendo as condições vetoriais da 3.ª Lei de Newton.",
+      "A força normal é uma força de contacto enquanto o peso é uma força de campo, e a 3.ª Lei só se aplica a forças do mesmo tipo."
+    ],
+    "correctIndex": 0,
+    "explanation": "Se isolarmos o doente num DCL, vemos que tanto P (Terra puxa doente) como N (chão empurra doente) estão aplicadas no doente.",
+    "distractorAnalysis": [
+      "Está incorreta: ter a mesma magnitude não é suficiente para constituir um par ação-reação; é necessário que as forças atuem em corpos diferentes, o que não acontece aqui.",
+      "Está incorreta: ser paralelas e opostas é uma condição necessária mas não suficiente; a 3.ª Lei exige que sejam de igual intensidade, mesma natureza e em corpos diferentes.",
+      "Está incorreta: a 3.ª Lei de Newton aplica-se a todos os pares de forças, independentemente de serem de contacto ou de campo; o par ação-reação do peso é a força gravitacional que o doente exerce sobre a Terra."
+    ],
+    "nursingApplication": "Critério mnemónico infalível: 'se atuam no mesmo corpo, nunca podem ser par de ação e reação!'"
+  },
+  {
+    "id": 1230,
+    "topicId": 1,
+    "question": "Qual é a segunda diferença fundamental entre o Peso (P) e a Força Normal (N) sob o ponto de vista das Leis de Newton?",
+    "options": [
+      "O Peso atua exclusivamente na direção horizontal, enquanto a Força Normal atua obrigatoriamente na direção vertical descendente.",
+      "Têm naturezas físicas completamente diferentes: o Peso é uma força gravitacional de campo à distância, enquanto a Normal é uma força eletromagnética de contacto.",
+      "O Peso depende do coeficiente de atrito entre os tecidos, enquanto a Força Normal é uma constante que independe da massa do corpo.",
+      "O Peso só existe em corpos em movimento acelerado, enquanto a Força Normal só se manifesta em corpos mantidos em repouso absoluto."
+    ],
+    "correctIndex": 1,
+    "explanation": "Pares ação-reação partilham obrigatoriamente a mesma natureza física; gravítica só faz par com gravítica e contacto com contacto.",
+    "distractorAnalysis": [
+      "Está incorreta: o peso é vertical descendente (centro da Terra) e a normal é perpendicular à superfície de contacto (ortogonal ao plano).",
+      "Está incorreta: o peso independe do atrito (P = m·g) e a normal depende do suporte e das forças normais aplicadas ao corpo.",
+      "Está incorreta: o peso e a normal atuam tanto no repouso como no movimento, dependendo o peso da massa e a normal do contacto mecânico."
+    ],
+    "nursingApplication": "Reforça a compreensão profunda das interações físicas para além da simples observação visual dos vetores."
+  },
+  {
+    "id": 1231,
+    "topicId": 1,
+    "question": "Num plano inclinado com ângulo θ (como uma rampa hospitalar), porque é que a Normal e o Peso deixam até mesmo de ter a mesma direção?",
+    "options": [
+      "Porque em planos inclinados a atração gravítica da Terra passa a atuar obliquamente em direção ao topo da rampa.",
+      "Porque a força normal anula-se completamente assim que a inclinação atinge valores superiores a dez graus sexagesimais.",
+      "O Peso mantém-se vertical (apontando para o centro da Terra), enquanto a Normal fica perpendicular à rampa inclinada.",
+      "Porque a força normal inverte o seu sentido e aponta para baixo comprimindo a base metálica da rampa hospitalar."
+    ],
+    "correctIndex": 2,
+    "explanation": "Em superfícies inclinadas, N é perpendicular à rampa (direção normal) e P é vertical: deixam de ter a mesma linha de ação e N = P·cos θ ≠ P.",
+    "distractorAnalysis": [
+      "Está incorreta: o vetor peso é sempre rigorosamente vertical apontando para o centro de gravidade da Terra, qualquer que seja a inclinação da rampa.",
+      "Está incorreta: a força normal reduz-se com o cosseno do ângulo (Fn = P·cos θ), mas não se anula em inclinações normais de rampas.",
+      "Está incorreta: a força normal que a rampa exerce sobre o objeto aponta sempre perpendicularmente para fora da superfície de suporte."
+    ],
+    "nursingApplication": "Prova visual e matemática definitiva de que N e P são grandezas físicas independentes e não um par ação-reação."
+  },
+  {
+    "id": 1232,
+    "topicId": 1,
+    "question": "Se o doente apoiar as mãos firmemente num corrimão lateral fixo à parede enquanto se encontra na balança, a leitura obtida:",
+    "options": [
+      "Será inferior ao peso real, porque parte do peso é sustentado pela força vertical exercida pelo corrimão (N_balança = P - F_corrimão).",
+      "Será idêntico ao peso real, porque a balança mede a massa e não a força, sendo a massa invariável independentemente do apoio.",
+      "Será superior ao peso real, porque o corrimão adiciona uma força para baixo sobre o doente, aumentando a leitura da balança.",
+      "Será exatamente zero, porque qualquer força de apoio externo cancela integralmente o peso registado pelo sensor da balança."
+    ],
+    "correctIndex": 0,
+    "explanation": "Equilíbrio vertical: N_balança + F_mãos - P = 0 ⇒ N_balança = P - F_mãos. A força normal no prato diminui, falsificando a pesagem.",
+    "distractorAnalysis": [
+      "Está incorreta: a balança clínica mede força (peso aparente), não a massa em quilogramas diretamente; ao apoiar no corrimão, a leitura diminui porque parte da força é desviada para o corrimão.",
+      "Está incorreta: o corrimão exerce uma força vertical ascendente sobre o doente, não descendente; uma força para baixo do corrimão aumentaria a leitura, mas fisicamente o corrimão sustenta parte do peso.",
+      "Está incorreta: o apoio no corrimão reduz a leitura mas não a anula; apenas se toda a massa corporal fosse suspensa pelo corrimão é que a balança marcaria zero."
+    ],
+    "nursingApplication": "Alerta o enfermeiro para garantir que o utente não se apoia em nada durante a pesagem clínica de rotina."
+  },
+  {
+    "id": 1233,
+    "topicId": 1,
+    "question": "Num plano inclinado com ângulo de inclinação θ em relação ao solo horizontal, qual é a expressão matemática do módulo da força normal (N)?",
+    "options": [
+      "N = m · g · sen θ (a força normal é proporcional ao seno do ângulo de inclinação da rampa).",
+      "N = m · g · cos θ (a força normal equilibra apenas a componente perpendicular do peso).",
+      "N = m · g / cos θ (a força normal é obtida dividindo o peso total pelo cosseno do declive).",
+      "N = m · g (a força normal é sempre rigorosamente igual ao peso integral em qualquer superfície)."
+    ],
+    "correctIndex": 1,
+    "explanation": "Decompondo o peso no referencial da rampa: componente perpendicular Pn = P·cos θ; como não há movimento nessa direção, N = Pn = m·g·cos θ.",
+    "distractorAnalysis": [
+      "Está incorreta: m·g·sen θ é a componente paralela ao plano (Pt), responsável pela tendência de deslizar rampa abaixo.",
+      "Está incorreta: Dividir por cos θ daria uma força superior ao peso, o que violaria o equilíbrio estático do plano.",
+      "Está incorreta: N só é igual a m·g em superfícies puramente horizontais estáticas (onde cos 0° = 1)."
+    ],
+    "nursingApplication": "Permite calcular a força de contacto e a tração exercida sobre doentes em macas em rampas de acesso."
+  },
+  {
+    "id": 1234,
+    "topicId": 1,
+    "question": "À medida que inclinamos uma rampa ou a cabeceira de uma cama hospitalar (aumentando o ângulo θ de 0° para 60°), o que acontece à força normal de contacto entre o dorso e o leito?",
+    "options": [
+      "A força normal aumenta exponencialmente até atingir valores superiores à resistência do titânio.",
+      "A força normal permanece constante porque a massa do doente e a gravidade não foram alteradas.",
+      "A força normal diminui progressivamente (pois cos θ diminui com o aumento de θ), reduzindo a compressão perpendicular.",
+      "A força normal torna-se negativa, puxando ativamente o tronco do doente em direção ao teto."
+    ],
+    "correctIndex": 2,
+    "explanation": "Para θ = 0°, cos 0° = 1 e N = P; para θ = 60°, cos 60° = 0,5 e N = 0,5·P (a força normal cai para metade do peso).",
+    "distractorAnalysis": [
+      "Está incorreta: A função cosseno é decrescente entre 0° e 90°; a compressão normal diminui com a inclinação.",
+      "Está incorreta: Embora m e g sejam constantes, a componente normal depende do fator geométrico cos θ.",
+      "Está incorreta: Forças normais são de suporte compressivo; não puxam para cima nem adquirem valores negativos."
+    ],
+    "nursingApplication": "Mostra a alteração na distribuição de cargas quando elevamos a cabeceira da cama articulada em Fowler."
+  },
+  {
+    "id": 1235,
+    "topicId": 1,
+    "question": "Se a válvula expiratória do ventilador mantiver uma pressão positiva no final da expiração (PEEP de 10 cmH2O), qual é a sua função biomecânica?",
+    "options": [
+      "Aumentar o esforço muscular inspiratório diafragmático para forçar o relaxamento da musculatura intercostal externa.",
+      "Impedir que a pressão alveolar desça abaixo da pressão atmosférica durante a fase de insuflação rápida por jato contínuo.",
+      "Aplicar uma força contínua que mantém os alvéolos abertos e recrutados no final da expiração, evitando o colapso alveolar.",
+      "Anular completamente a difusão passiva de oxigénio gasoso através da membrana alvéolo-capilar pulmonar."
+    ],
+    "correctIndex": 2,
+    "explanation": "A PEEP mantém uma força normal de pressão positiva que impede o encerramento cíclico e a reabertura traumática (atelectrauma) dos alvéolos instáveis.",
+    "distractorAnalysis": [
+      "Está incorreta: a PEEP reduz o trabalho respiratório ao prevenir o colapso e manter os alvéolos pré-abertos na zona ótima da complacência.",
+      "Está incorreta: a PEEP atua no final da expiração (PEEP = Positive End-Expiratory Pressure) e não na fase inspiratória máxima.",
+      "Está incorreta: o recrutamento alveolar pela PEEP melhora substancialmente as trocas gasosas e a oxigenação arterial."
+    ],
+    "nursingApplication": "Compreensão essencial para a equipa de enfermagem na gestão de doentes críticos ventilados com insuficiência respiratória grave."
+  },
+  {
+    "id": 1236,
+    "topicId": 1,
+    "question": "Qual das quatro forças fundamentais comanda a coesão das moléculas orgânicas, a contração muscular, a força normal e o atrito?",
+    "options": [
+      "A Força Gravítica, que mantém os sarcómeros unidos através da atração do centro da Terra.",
+      "A Força Nuclear Fraca, que empurra o sangue venoso através das válvulas dos membros inferiores.",
+      "A Força Eletromagnética, que atua entre partículas eletricamente carregadas (protões e eletrões).",
+      "A Força Nuclear Forte, que gera os impulsos nervosos do cérebro para os membros periféricos."
+    ],
+    "correctIndex": 2,
+    "explanation": "Todas as interações químicas, biológicas e mecânicas de contacto do quotidiano são de natureza puramente eletromagnética.",
+    "distractorAnalysis": [
+      "Está incorreta: A gravidade é 10³⁶ vezes mais fraca que a eletromagnética na escala atómica; não explica ligações químicas nem atrito.",
+      "Está incorreta: A força nuclear fraca rege decaimentos subatómicos, sem papel na mecânica do retorno venoso.",
+      "Está incorreta: A condução nervosa decorre de gradientes eletroquímicos iónicos (eletromagnetismo) e não de forças nucleares fortes."
+    ],
+    "nursingApplication": "Mostra ao enfermeiro que praticamente todas as forças de suporte e manipulação que aplica são manifestações eletromagnéticas."
+  },
+  {
+    "id": 1237,
+    "topicId": 1,
+    "question": "Como se define rigorosamente a Força Normal (N) na mecânica e biomecânica hospitalar?",
+    "options": [
+      "É a força de atrito horizontal exercida pela superfície no plano de apoio para impedir o deslizamento tangencial de doentes e macas.",
+      "É a força de reação direta ao peso de um corpo, tendo sempre módulo idêntico a este quer a superfície seja horizontal ou inclinada.",
+      "É a pressão barométrica que a atmosfera exerce uniformemente de cima para baixo sobre qualquer objeto colocado sobre um estrado.",
+      "É a força de contacto perpendicular que uma superfície exerce sobre qualquer corpo apoiado nela, impedindo a penetração dos materiais."
+    ],
+    "correctIndex": 3,
+    "explanation": "O termo 'normal' na geometria significa perpendicular (em ângulo reto de 90° com o plano de contacto entre as superfícies).",
+    "distractorAnalysis": [
+      "Está incorreta: a força paralela que se opõe ao deslizamento é a força de atrito; a força normal atua sempre perpendicularmente à superfície.",
+      "Está incorreta: a força normal não é o par ação-reação do peso e varia com a inclinação do plano (N = m·g·cos θ), não sendo sempre igual a m·g.",
+      "Está incorreta: a força normal é uma força de contacto elástica microscópica da superfície, e não o resultado da pressão do ar atmosférico."
+    ],
+    "nursingApplication": "Conceito estruturante: a força normal aponta sempre para fora da superfície, fazendo um ângulo reto com o plano de apoio."
+  },
+  {
+    "id": 1238,
+    "topicId": 1,
+    "question": "Quando um doente se encontra de pé descalço no solo em repouso estático, a Força Normal exercida pelo piso sobre as plantas dos seus pés é:",
+    "options": [
+      "Metade do peso do doente porque a outra metade é suportada pela pressão arterial das pernas.",
+      "Exatamente igual em módulo ao peso total do doente, mantendo a aceleração vertical nula (N = P = m·g).",
+      "O dobro do peso do doente devido à amplificação dos tecidos adiposos dos calcanhares.",
+      "Zero Newtons porque corpos em repouso não interagem com o solo da enfermaria."
+    ],
+    "correctIndex": 1,
+    "explanation": "Pela 1.ª Lei: ∑Fy = N - P = 0 ⇒ N = P = m·g. A força normal de suporte equilibra com precisão o peso do utente.",
+    "distractorAnalysis": [
+      "Está incorreta: A pressão arterial é um fenómeno cardiovascular interno; o suporte mecânico de todo o corpo contra a gravidade é feito pelo piso.",
+      "Está incorreta: O módulo da normal é estritamente igual ao peso em superfície horizontal estática, sem duplicação.",
+      "Está incorreta: O apoio estático gera compressão de contacto real correspondente a todo o peso corporal."
+    ],
+    "nursingApplication": "Permite calcular a carga mecânica que as articulações dos membros inferiores sustentam na bipedestação."
+  },
+  {
+    "id": 1239,
+    "topicId": 1,
+    "question": "Se colocarmos uma massa adicional de 10 kg sobre o colo de um doente de 70 kg sentado numa cadeira de rodas, o que acontece à Força Normal exercida pelo assento sobre o doente?",
+    "options": [
+      "Mantém-se em 700 N porque o assento apenas reage ao contacto dos tecidos do utente, transmitindo o objeto o seu peso pelas pernas.",
+      "Diminui para 600 N porque a compressão muscular nas coxas amortece parte da força gravítica transmitida à estrutura da cadeira.",
+      "Aumenta para 1500 N porque a sobreposição de massas duplica o momento inercial do sistema e a aceleração gravítica correspondente.",
+      "Aumenta de 700 N para 800 N (adotando g = 10 m/s²), pois a normal tem de equilibrar o peso combinado do doente e da carga adicional."
+    ],
+    "correctIndex": 3,
+    "explanation": "Equilíbrio vertical: N - P_doente - P_carga = 0 ⇒ N = (70 + 10) · 10 = 800 N. Maior massa sobreposta exige maior força normal de suporte.",
+    "distractorAnalysis": [
+      "Está incorreta: todo o peso colocado no colo do utente é transmitido através do seu corpo ao assento, aumentando a força normal necessária.",
+      "Está incorreta: a deformação muscular viscoelástica não anula nem absorve peso estático; a totalidade das massas é suportada pelo assento.",
+      "Está incorreta: a gravidade é constante (g = 10 m/s²) e o peso é aditivo: o acréscimo de 10 kg adiciona exatamente 100 N aos 700 N iniciais."
+    ],
+    "nursingApplication": "Alerta o enfermeiro para o aumento da força normal e da pressão mecânica sobre o assento quando o doente segura objetos pesados."
+  },
+  {
+    "id": 1240,
+    "topicId": 1,
+    "question": "Se a cabeceira for elevada para a posição de Fowler alta a 60 graus (onde cos 60° = 0,5), qual passa a ser a força normal sobre o dorso (massa do tronco 40 kg, g = 10 m/s²)?",
+    "options": [
+      "400 N (mantendo-se perfeitamente constante independentemente da inclinação selecionada).",
+      "200 N (N = 400 · 0,5 = 200 N), reduzindo a compressão perpendicular no dorso para metade do peso.",
+      "346,4 N (pois o valor da normal estabiliza-se no ângulo inicial de regulação elétrica).",
+      "800 N (duplicando a compressão sobre a coluna cervical devido à ação da musculatura paravertebral)."
+    ],
+    "correctIndex": 1,
+    "explanation": "N = P · cos 60° = 400 · 0,5 = 200 N. À medida que o ângulo aumenta de 0° a 90°, cos θ decresce de 1 a 0, reduzindo a normal no dorso.",
+    "distractorAnalysis": [
+      "Está incorreta: A compressão perpendicular varia continuadamente com o cosseno do ângulo do estrado articulado.",
+      "Está incorreta: 346,4 N correspondia à inclinação prévia de 30°; a 60° a normal cai para 200 N.",
+      "Está incorreta: A força normal no dorso diminui com a inclinação e não duplica."
+    ],
+    "nursingApplication": "Mostra a redistribuição dinâmica de cargas entre o dorso e a bacia à medida que o doente é sentado na cama."
+  },
+  {
+    "id": 1241,
+    "topicId": 1,
+    "question": "Em fisioterapia, ao tracionar uma articulação ligeiramente para aliviar a compressão antes de realizar um movimento de deslizamento passivo, o objetivo é:",
+    "options": [
+      "Aumentar o coeficiente de atrito articular estático para permitir que as extremidades ósseas se fixem rigidamente na nova amplitude funcional sem deslizar.",
+      "Aumentar a força normal de compressão entre os meniscos para espremer mais líquido sinovial e bloquear temporariamente a mobilidade dos ligamentos cruzados.",
+      "Anular a força peso de todo o membro inferior para permitir que a musculatura agonista execute contrações isométricas em suspensão gravitacional nula.",
+      "Diminuir a força normal entre as superfícies cartilagíneas articulares (aliviando N), reduzindo assim o atrito estático máximo e facilitando a mobilização sem dor."
+    ],
+    "correctIndex": 3,
+    "explanation": "Fat_max = μe·N. Ao diminuir a força normal de compressão articular através de ligeira descompressão longitudinal, a força de atrito articular é minimizada.",
+    "distractorAnalysis": [
+      "Está incorreta: o objetivo da tração articular é reduzir o atrito e a dor por descompressão das superfícies cartilagíneas, não aumentar a fricção.",
+      "Está incorreta: a tração afasta as superfícies reduzindo a força normal (N), aliviando a compressão sobre meniscos e cartilagens articulares.",
+      "Está incorreta: a tração manual reduz a compressão articular local, mas não anula a ação da gravidade sobre a massa anatómica do membro."
+    ],
+    "nursingApplication": "Integra os princípios do atrito com as técnicas de mobilização articular utilizadas na reabilitação motora."
+  },
+  {
+    "id": 1242,
+    "topicId": 1,
+    "question": "Quando uma cadeira de rodas com um utente (massa total m) está em repouso estático numa rampa inclinada com ângulo θ, quais são as forças que atuam paralelamente ao plano inclinado?",
+    "options": [
+      "A força de atrito atua para a frente com intensidade de 200 N, empurrando a cadeira no sentido do topo da rampa inclinada por inércia motora.",
+      "A força de atrito é estritamente nula porque a cadeira de rodas se encontra com os travões mecânicos acionados em repouso estático absoluto.",
+      "A força de atrito estático atua ao longo da rampa (subindo), equilibrando a componente tangencial do peso (Fat,e = P·sen θ) para evitar o deslizamento.",
+      "A força de atrito converte-se numa força normal perpendicular ao piso que anula a gravidade local exercida sobre a massa total do utente."
+    ],
+    "correctIndex": 2,
+    "explanation": "No eixo paralelo ao plano (eixo x): ∑Fx = Pt - Fat,e = 0 ⇒ Fat,e = Pt = m·g·sen θ. O atrito estático equilibra exatamente a tendência de descida.",
+    "distractorAnalysis": [
+      "Está incorreta: a componente que tende a descer a rampa é Pt = P·sen θ; a força de atrito atua no sentido oposto (subindo a rampa) para travar.",
+      "Está incorreta: na rampa há uma tendência permanente de escorregamento descendente; o atrito estático dos travões atua com valor igual a P·sen θ.",
+      "Está incorreta: o atrito é uma força tangencial paralela à superfície da rampa e a força normal é perpendicular a ela, não se convertendo uma na outra."
+    ],
+    "nursingApplication": "Permite analisar as condições de segurança na imobilização de cadeiras de rodas e macas em rampas de acesso."
+  },
+  {
+    "id": 1243,
+    "topicId": 1,
+    "question": "Para minimizar as forças de cisalhamento na região sagrada ao elevar a cabeceira da cama articulada, a sequência correta de comandos elétricos que o enfermeiro deve executar é:",
+    "options": [
+      "Elevar a cabeceira a 60 graus de forma rápida e só depois fletir os joelhos para forçar o doente a manter-se sentado na cama.",
+      "Elevar a cabeceira e o estrado simultaneamente na velocidade máxima permitida pelos motores elétricos do equipamento hospitalar.",
+      "Elevar em primeiro lugar o segmento dos joelhos (Gatch) para criar o anteparo de suporte nas coxas e, só depois, elevar a cabeceira para a angulação prescrita.",
+      "Manter o segmento das pernas totalmente esticado e plano no chão enquanto a cabeceira sobe até à posição ortostática vertical completa."
+    ],
+    "correctIndex": 2,
+    "explanation": "Ao elevar os joelhos primeiro, a rampa das coxas fornece uma força normal de apoio que neutraliza imediatamente a componente descendente Pt antes de esta se desenvolver.",
+    "distractorAnalysis": [
+      "Está incorreta: subir a cabeceira antes dos joelhos faz o tronco deslizar para os pés, gerando elevadas forças de cisalhamento na pele da região sagrada.",
+      "Está incorreta: a elevação simultânea descontrolada não garante o anteparo prévio na raiz das coxas, aumentando o risco de deslizamento tecidual.",
+      "Está incorreta: membros inferiores esticados no plano favorecem o escorregamento anterior da bacia sob a componente paralela do peso corporal."
+    ],
+    "nursingApplication": "Técnica fundamental e padronizada de posicionamento no leito com leitos articulados hospitalares."
+  },
+  {
+    "id": 1244,
+    "topicId": 1,
+    "question": "Como é que o material e o acabamento das luvas de procedimento (látex, nitrilo ou vinil) influenciam a força de preensão manual do enfermeiro ao segurar instrumentos molhados?",
+    "options": [
+      "O vinil liso apresenta o maior coeficiente de atrito estático em presença de água e sangue, permitindo manipular pinças cirúrgicas com força muscular de aperto quase nula.",
+      "O acabamento e o material da luva são indiferentes para a preensão, uma vez que a força de aperto requerida depende exclusivamente da massa inercial do instrumento metálico.",
+      "O látex e o nitrilo microtexturado possuem um coeficiente de atrito estático superior em meio húmido, exigindo menor força de aperto muscular dos dedos para impedir que os objetos escorreguem.",
+      "As luvas de látex perdem toda a capacidade elástica em meio húmido, convertendo as forças de atrito superficial em forças repulsivas que empurram os objetos para fora da mão."
+    ],
+    "correctIndex": 2,
+    "explanation": "Fat_max = μe · N. Com um coeficiente μe mais alto nas pontas dos dedos, a força normal N (aperto muscular) necessária para segurar a pinça com segurança cai substancialmente.",
+    "distractorAnalysis": [
+      "Está incorreta: o vinil liso perde quase todo o atrito em meio húmido tornando-se extremamente escorregadio, exigindo força muscular excessiva para segurar objetos.",
+      "Está incorreta: a força normal de preensão necessária depende criticamente do coeficiente de atrito (Fat = μ·N); materiais com menor μ exigem maior aperto muscular.",
+      "Está incorreta: o látex mantém elasticidade e atrito relativamente elevados na presença de humidade, não gerando forças de repulsão física sobre instrumentos."
+    ],
+    "nursingApplication": "Permite ao profissional selecionar o equipamento de proteção individual que otimize a ergonomia e precisão técnica."
+  },
+  {
+    "id": 1245,
+    "topicId": 1,
+    "question": "Como se sintetiza a importância integrada do estudo das 4 Forças Fundamentais, da Força Normal e do Atrito na prática diária de enfermagem?",
+    "options": [
+      "Permite compreender como as forças invisíveis da gravidade e do eletromagnetismo governam o suporte corporal (Normal), a mobilidade e o risco de quedas e lesões (Atrito), fundamentando cuidados cientificamente seguros.",
+      "Trata-se de um conhecimento puramente teórico com utilidade restrita à engenharia civil, sem qualquer aplicação prática no posicionamento, mobilização e segurança física de utentes e enfermeiros.",
+      "Demonstra que o cuidado de enfermagem deve dispensar o uso de ajudas técnicas mecânicas e focar-se na força muscular empírica individual para suportar qualquer utente dependente no hospital.",
+      "Mostra que as forças mecânicas externas podem ser inteiramente substituídas por terapêutica farmacológica analgésica, tornando dispensável a ergonomia na prevenção de úlceras por pressão."
+    ],
+    "correctIndex": 0,
+    "explanation": "A física é a base mecânica de toda a assistência: desde a prevenção de quedas até ao posicionamento no leito e manuseamento seguro de doentes.",
+    "distractorAnalysis": [
+      "Está incorreta: a física alicerça diretamente a prevenção de lesões musculoesqueléticas nos cuidadores e a prevenção de quedas e lesões por corte nos utentes.",
+      "Está incorreta: a biomecânica prova a necessidade inegociável de utilizar princípios ergonómicos e ajudas técnicas mecânicas na movimentação de doentes.",
+      "Está incorreta: analgésicos não removem as forças físicas de compressão e cisalhamento nos tecidos, as quais causam isquemia e úlceras por pressão se não aliviadas."
+    ],
+    "nursingApplication": "Consolida a atitude científica e o rigor conceptual do estudante no cuidado humanizado e seguro em enfermagem."
+  },
+  {
+    "id": 1246,
+    "topicId": 1,
+    "question": "Como é que o enfermeiro e um colega podem reposicionar para trás na poltrona um doente que escorregou para a frente sem lesar a sua coluna?",
+    "options": [
+      "Puxando o doente unicamente pelas axilas para cima a partir de trás da poltrona com as costas do enfermeiro totalmente arqueadas e as pernas retas sem apoio de auxiliares de marcha.",
+      "Pedindo ao utente para inclinar o tronco subitamente para a frente enquanto um único profissional empurra as suas rótulas com força contra o fundo do assento da poltrona hospitalar.",
+      "Colocando-se um de cada lado, fletindo os joelhos e utilizando uma tela de deslizamento ou lençol sob a bacia para erguer e deslocar o doente para trás num movimento coordenado e ritmado.",
+      "Inclinando a poltrona para trás a noventa graus até que o doente fique de cabeça para baixo, deixando que o peso do tronco faça a bacia deslizar espontaneamente por pura inércia."
+    ],
+    "correctIndex": 2,
+    "explanation": "Erguer suavemente alivia a força normal e elimina o atrito de cisalhamento, permitindo que a bacia encaixe no fundo do assento sem sobrecarga lombar para a equipa.",
+    "distractorAnalysis": [
+      "Está incorreta: puxar pelas axilas gera risco de lesão no plexo braquial e ombros do doente, além de sobrecarregar com torque perigoso a coluna do enfermeiro.",
+      "Está incorreta: empurrar diretamente os joelhos causa dor, lesões fémoro-patelares e atrito de cisalhamento na pele da bacia contra o tecido do assento.",
+      "Está incorreta: bascular bruscamente uma poltrona para trás sem controlo expõe o doente a trauma craniano, alterações de pressão súbitas e pânico."
+    ],
+    "nursingApplication": "Ensina o procedimento correto de reposicionamento ergonómico em poltronas e cadeirões hospitalares."
+  },
+  {
+    "id": 1247,
+    "topicId": 1,
+    "question": "Qual é a força normal de compressão articular suportada pela articulação tibiotársica (tornozelo) no exemplo da pergunta anterior durante a elevação num só pé?",
+    "options": [
+      "200 N, calculada subtraindo a força do tendão de 500 N ao peso resistente de 700 N na articulação tibiotársica.",
+      "1200 N (a soma da força resistente do corpo de 700 N com a força de tração potente do tendão de 500 N, pois N_tornozelo = P + Fp = 700 + 500 = 1200 N).",
+      "50 N, calculada através da divisão simples entre o peso do corpo e a área de contacto superficial dos dedos dos pés.",
+      "Zero N, porque na fase de impulsão unipodal as forças articulares anulam-se no espaço entre os ossos do tarso."
+    ],
+    "correctIndex": 1,
+    "explanation": "O tornozelo situa-se entre as forças ascendentes e descendentes: para equilíbrio vertical ∑Fy = 0, a tíbia descarrega 700 N e o tendão puxa com 500 N para baixo sobre o tornozelo, totalizando 1200 N (1,2 kN) de compressão articular!",
+    "distractorAnalysis": [
+      "Está incorreta: na flexão plantar, tanto o peso como a tração do tendão de Aquiles comprimem o tálus contra o encaixe maleolar; as forças somam-se no fulcro articular.",
+      "Está incorreta: 50 N ignora a carga gravitacional e a potente tração muscular requerida para manter o corpo erguido em apoio unipodal.",
+      "Está incorreta: a articulação do tornozelo suporta forças normais de compressão muito elevadas (N = P + Fp), superiores ao próprio peso do indivíduo."
+    ],
+    "nursingApplication": "Evidencia a tremenda sobrecarga articular gerada pelas forças musculares internas mesmo em tarefas quotidianas simples."
+  },
+  {
+    "id": 1248,
+    "topicId": 1,
+    "question": "Num andarilho com rodas dianteiras e ponteiras traseiras, que mecanismo físico garante a segurança de paragem do doente?",
+    "options": [
+      "Um sistema de amortecedores pneumáticos que bloqueia as rodas e retrai os apoios sempre que a velocidade linear da passada ultrapassa meio metro por segundo.",
+      "As rodas dianteiras facilitam o deslizamento contínuo sem levantar o equipamento, enquanto as ponteiras de borracha traseiras funcionam como travão por atrito assim que o doente descarrega peso nas pegas.",
+      "Um sistema elétrico sensível à pressão que retrai as ponteiras de borracha e aplica discos de travagem hidráulica nos rodízios frontais do dispositivo.",
+      "O momento de inércia angular dos rodízios frontais que gera uma resistência giroscópica suficiente para imobilizar o doente na posição ortostática."
+    ],
+    "correctIndex": 1,
+    "explanation": "A pressão vertical nas pegas empurra as ponteiras de borracha contra o solo, aumentando a força normal (N) e a força de atrito (Fat = μ · N), parando o equipamento de imediato.",
+    "distractorAnalysis": [
+      "Está incorreta: o andarilho comum não tem amortecedores pneumáticos nem mecanismos retráteis; a travagem é por fricção das ponteiras traseiras.",
+      "Está incorreta: este equipamento é mecânico passivo, sem baterias, sensores de pressão ou sistemas de travagem hidráulica.",
+      "Está incorreta: a paragem depende da força normal aplicada nas ponteiras de borracha gerando atrito estático no solo, não de inércia giroscópica."
+    ],
+    "nursingApplication": "Compreensão do funcionamento biomecânico dos andarilhos de duas rodas."
+  },
+  {
+    "id": 1249,
+    "topicId": 1,
+    "question": "O que significa a regra de que as forças de um par ação-reação devem ter obrigatoriamente a mesma natureza física?",
+    "options": [
+      "A gravidade atua unicamente sobre o corpo do doente dependente, não atraindo a massa corporal do profissional de saúde durante a execução da transferência ativa.",
+      "A força muscular exercida pelos membros superiores do enfermeiro anula a força peso do doente, sem que ocorra qualquer transmissão mecânica de forças aos pés do cuidador.",
+      "Ao levantar o doente, o cuidador aplica uma força para cima e suporta o peso do utente; pela 3.ª Lei, essa carga transmite-se aos pés do profissional, aumentando a sua força normal no solo.",
+      "A força normal registada nos pés do enfermeiro mantém-se rigorosamente inalterada no solo, uma vez que a massa inercial adicional sustentada pertence a outro ser humano."
+    ],
+    "correctIndex": 2,
+    "explanation": "Uma força gravitacional não pode ter como reação uma força eletromagnética de contacto; interações ocorrem dentro da mesma força fundamental.",
+    "distractorAnalysis": [
+      "Está incorreta: a gravidade atua sobre todos os corpos proporcionalmente à sua massa no campo gravitacional terrestre (P = m·g).",
+      "Está incorreta: forças mecânicas transmitem-se através da cadeia cinética; a carga suportada nos braços reflete-se na compressão lombar e na reação do solo.",
+      "Está incorreta: ao suportar o peso adicional do utente, a força vertical descendente total aumenta (P_total = P_enf + P_doente), elevando a reação normal do solo."
+    ],
+    "nursingApplication": "Critério fundamental para demonstrar aos estudantes porque é que a Normal e o Peso não são par ação-reação."
+  },
+  {
+    "id": 1250,
+    "topicId": 1,
+    "question": "Quais são as quatro forças fundamentais conhecidas que regem todas as interações da natureza no Universo?",
+    "options": [
+      "Força Gravítica, Força Eletromagnética, Força Nuclear Forte e Força Nuclear Fraca.",
+      "Força Muscular, Força de Atrito, Força Normal e Força da Gravidade.",
+      "Força Vital, Força Centrípeta, Força Elástica e Força Térmica.",
+      "Força Atmosférica, Força Hidrostática, Força Barométrica e Força Magnética."
+    ],
+    "correctIndex": 0,
+    "explanation": "Toda a física clássica e moderna reconhece exatamente quatro interações fundamentais elementares irredutíveis.",
+    "distractorAnalysis": [
+      "Está incorreta: Força muscular, atrito e normal são manifestações macroscópicas da força eletromagnética, não forças fundamentais.",
+      "Está incorreta: Força vital é um conceito arcaico sem base física; centrípeta e elástica são expressões mecânicas derivadas.",
+      "Está incorreta: Pressões hidrostáticas e atmosféricas derivam de colisões de partículas regidas por forças eletromagnéticas e gravíticas."
+    ],
+    "nursingApplication": "Permite ao estudante compreender a árvore conceitual da física que unifica desde as células até ao movimento macroscópico."
+  },
+  {
+    "id": 1251,
     "topicId": 1,
     "question": "Qual das quatro forças fundamentais é responsável pela atração mútua entre massas, pelo Peso do doente e pela órbita dos planetas?",
     "options": [
@@ -4244,7 +4777,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fundamenta o cálculo do peso (P = m·g) e a influência da gravidade na circulação e postura do doente."
   },
   {
-    "id": 1224,
+    "id": 1252,
     "topicId": 1,
     "question": "Qual das quatro forças fundamentais é a mais forte de todas na natureza, mas possui um alcance ultracurto confinado ao interior do núcleo atómico?",
     "options": [
@@ -4263,7 +4796,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Esclarece a escala de atuação das forças da natureza e contextualiza o estudo da matéria viva."
   },
   {
-    "id": 1225,
+    "id": 1253,
     "topicId": 1,
     "question": "Ordenando as quatro forças fundamentais da mais intensa para a menos intensa, qual é a sequência correta?",
     "options": [
@@ -4282,7 +4815,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite ao estudante compreender porque a gravidade só se manifesta em corpos com grande quantidade de massa."
   },
   {
-    "id": 1226,
+    "id": 1254,
     "topicId": 1,
     "question": "Qual é a consequência da microgravidade no espaço (estação espacial) sobre a integridade biomecânica dos ossos dos astronautas?",
     "options": [
@@ -4301,7 +4834,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Ilustra de forma brilhante porque o enfermeiro deve incentivar a deambulação precoce e a carga funcional nos doentes acamados."
   },
   {
-    "id": 1227,
+    "id": 1255,
     "topicId": 1,
     "question": "De acordo com a definição científica ensinada na aula, como se conceitua uma Força?",
     "options": [
@@ -4320,7 +4853,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Na manipulação de doentes, compreender a força como interação ajuda a dosear o esforço de tração ou sustentação."
   },
   {
-    "id": 1228,
+    "id": 1256,
     "topicId": 1,
     "question": "Que tipo de grandeza física é a Força, considerando a necessidade de especificar direção e sentido?",
     "options": [
@@ -4339,7 +4872,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "O enfermeiro deve ter presente que puxar para a direita ou para a esquerda são forças distintas mesmo com o mesmo módulo."
   },
   {
-    "id": 1229,
+    "id": 1257,
     "topicId": 1,
     "question": "Quando duas forças de mesma intensidade atuam num corpo, o efeito mecânico resultante pode ser diferente se:",
     "options": [
@@ -4358,7 +4891,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Nas transferências com lençol móvel, a direção em que cada enfermeiro puxa determina a trajetória do doente."
   },
   {
-    "id": 1230,
+    "id": 1258,
     "topicId": 1,
     "question": "Porque é incorreto expressar formalmente uma força de tração ortopédica em 'quilogramas' numa ficha de enfermagem?",
     "options": [
@@ -4377,7 +4910,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "O rigor na terminologia física evita equívocos entre a massa pendurada num suporte de tração e a força exercida."
   },
   {
-    "id": 1231,
+    "id": 1259,
     "topicId": 1,
     "question": "Se representarmos graficamente um vetor força através de um segmento de reta orientado (flecha), o comprimento da flecha representa:",
     "options": [
@@ -4396,7 +4929,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "A interpretação de diagramas vetoriais em fichas biomecânicas facilita a análise da distribuição de forças nos doentes."
   },
   {
-    "id": 1232,
+    "id": 1260,
     "topicId": 1,
     "question": "Consultando a tabela de grandezas físicas lecionada, qual é a classificação e unidade SI da Força (F)?",
     "options": [
@@ -4415,7 +4948,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Identificar a força como vetorial alerta o enfermeiro para o alinhamento da tração em doentes ortopédicos."
   },
   {
-    "id": 1233,
+    "id": 1261,
     "topicId": 1,
     "question": "No estudo das grandezas físicas da aula, que exemplo biológico é explicitamente apresentado para ilustrar a grandeza Força?",
     "options": [
@@ -4434,7 +4967,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "O quadríceps é o principal extensor do joelho, crucial para o enfermeiro avaliar a estabilidade na bipedestação."
   },
   {
-    "id": 1234,
+    "id": 1262,
     "topicId": 1,
     "question": "Porque é que a Força não pode ser classificada como uma grandeza puramente escalar na análise biomecânica?",
     "options": [
@@ -4453,7 +4986,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Orientar a força no sentido anatómico correto previne luxações articulares em transferências no leito."
   },
   {
-    "id": 1235,
+    "id": 1263,
     "topicId": 1,
     "question": "Consultando a tabela de grandezas físicas das grandezas físicas, qual é a classificação e unidade SI da Massa (m)?",
     "options": [
@@ -4472,45 +5005,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "A pesagem do utente na balança hospitalar determina a massa em kg, crucial para cálculo de doses de fármacos."
   },
   {
-    "id": 1236,
-    "topicId": 1,
-    "question": "De acordo com a tabela de grandezas físicas das grandezas físicas, qual é a definição e unidade SI do Peso (P)?",
-    "options": [
-      "Grandeza vetorial, medida em Newtons (N), que representa a força de atração gravítica exercida sobre um corpo (P = m·g).",
-      "Grandeza escalar intrínseca, medida em Quilogramas (kg), correspondente à quantidade pura de matéria corporal.",
-      "Grandeza derivada, expressa em Pascais (Pa), que quantifica a área superficial ocupada pelo doente no colchão.",
-      "Grandeza constante que mede o trabalho metabólico cardíaco realizado pelo miocárdio em repouso estático."
-    ],
-    "correctIndex": 0,
-    "explanation": "O peso é a força vetorial gravítica (P = m·g), orientada verticalmente para o centro da Terra, expressa em Newtons (N).",
-    "distractorAnalysis": [
-      "Está incorreta: A massa é que é uma grandeza escalar medida em quilogramas; o peso é uma força vetorial medida em Newtons.",
-      "Está incorreta: A área é expressa em metros quadrados (m²) e a pressão em Pascais (Pa), não o peso corporal.",
-      "Está incorreta: O peso não é trabalho metabólico, mas sim a força com que a gravidade atrai a massa do indivíduo."
-    ],
-    "nursingApplication": "O peso do utente atua verticalmente sobre a cama e deve ser considerado na escolha de colchões adequados."
-  },
-  {
-    "id": 1237,
-    "topicId": 1,
-    "question": "No estudo das grandezas físicas da aula, qual é o exemplo clínico atribuído à grandeza Peso?",
-    "options": [
-      "A contração voluntária dos músculos intercostais externos durante a inspiração profunda forçada.",
-      "O peso exercido pelo corpo de um doente acamado sobre a superfície do colchão hospitalar.",
-      "A leitura digital da frequência cardíaca exibida no monitor de parâmetros vitais da UCI.",
-      "A diluição de eletrólitos numa solução parentérica de soro glicosado a 5% em água destilada."
-    ],
-    "correctIndex": 1,
-    "explanation": "Exemplifica-se clinicamente o peso com 'Peso do doente sobre o colchão' na coluna de exemplos clínicos.",
-    "distractorAnalysis": [
-      "Está incorreta: A contração muscular é o exemplo associado à grandeza Força (muscular), e não ao peso gravitacional.",
-      "Está incorreta: A frequência cardíaca é uma grandeza temporal e fisiológica, não correspondendo à força peso.",
-      "Está incorreta: A diluição de eletrólitos é um fenómeno da química de soluções e farmacotécnica hospitalar."
-    ],
-    "nursingApplication": "O peso do doente deitado sobre o colchão gera forças normais de suporte que distribuem a sustentação do corpo."
-  },
-  {
-    "id": 1238,
+    "id": 1264,
     "topicId": 1,
     "question": "Dimensionalmente, a que corresponde 1 Pascal (Pa) no Sistema Internacional de Unidades?",
     "options": [
@@ -4529,26 +5024,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Esta equivalência permite calcular a pressão exercida por calçados e apoios corporais em superfícies planas."
   },
   {
-    "id": 1239,
-    "topicId": 1,
-    "question": "Se um equipamento de pesagem hospitalar registar 90 kg para um utente, que grandeza física mediu diretamente através de uma célula de carga calibrada?",
-    "options": [
-      "Mede diretamente o volume plasmático total em litros através de ressonância mecânica nas células de carga.",
-      "Aferiu a força de compressão vertical (cerca de 882 N) e converteu-a matematicamente em massa de 90 kg através da divisão por g.",
-      "Avalia a densidade mineral óssea trabecular do calcâneo convertendo-a em quilogramas de hidroxiapatite.",
-      "Regista a velocidade média do metabolismo basal do doente através da dilatação térmica da balança."
-    ],
-    "correctIndex": 1,
-    "explanation": "As balanças eletrónicas modernas medem a força peso vertical sobre os sensores piezoelétricos e calibram a leitura para massa (m = P/g).",
-    "distractorAnalysis": [
-      "Está incorreta: Balanças não medem volume de plasma nem utilizam ressonância mecânica para fluidos biológicos.",
-      "Está incorreta: A densidade óssea requer densitometria radiológica DEXA e não sensores de carga de balança.",
-      "Está incorreta: O metabolismo basal é estimado por calorimetria indireta e não pela pesagem mecânica direta."
-    ],
-    "nursingApplication": "O enfermeiro deve assegurar que a balança está em piso plano e nivelado para que a célula de carga meça a força vertical correta."
-  },
-  {
-    "id": 1240,
+    "id": 1265,
     "topicId": 1,
     "question": "Se o músculo quadríceps exercer uma força de tração de 800 N no tendão patelar, que grandeza vetorial atua na tuberosidade tibial?",
     "options": [
@@ -4567,7 +5043,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Esta tração permite esticar o joelho e sustentar o peso corporal do utente na transição de sentado para de pé."
   },
   {
-    "id": 1241,
+    "id": 1266,
     "topicId": 1,
     "question": "Qual é a diferença entre 'equilíbrio estático' e 'ausência de forças' na física médica?",
     "options": [
@@ -4586,7 +5062,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Compreender que o doente no leito está sob forças reais equilibradas justifica a necessidade de posicionamentos adequados."
   },
   {
-    "id": 1242,
+    "id": 1267,
     "topicId": 1,
     "question": "O que significa afirmar que a massa inercial e a aceleração são grandezas inversamente proporcionais para uma força fixa?",
     "options": [
@@ -4605,7 +5081,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Explica a lentidão natural de resposta motora na mobilização de doentes obesos ou com edemas severos."
   },
   {
-    "id": 1243,
+    "id": 1268,
     "topicId": 1,
     "question": "Se a variação da quantidade de movimento (Δp) de um passageiro numa paragem de emergência for fixa (pois Δp = m·Δv é constante), o que acontece à força média sofrida se triplicarmos o tempo de travagem (Δt)?",
     "options": [
@@ -4624,7 +5100,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Princípio basilar da proteção contra impactos: quanto maior o tempo de desaceleração, menor a força letal."
   },
   {
-    "id": 1244,
+    "id": 1269,
     "topicId": 1,
     "question": "Matematicamente, como se expressa a relação vetorial entre a força de ação (F_A->B) e a força de reação (F_B->A)?",
     "options": [
@@ -4643,7 +5119,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite calcular forças transmitidas entre equipamentos e o corpo humano com precisão matemática."
   },
   {
-    "id": 1245,
+    "id": 1270,
     "topicId": 1,
     "question": "O que é necessário acontecer para que duas forças com a mesma intensidade e sentidos opostos se anulem perfeitamente (∑F = 0)?",
     "options": [
@@ -4662,26 +5138,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Distingue com clareza o conceito de 'equilíbrio de um corpo' (1.ª Lei) do conceito de 'interação mútua' (3.ª Lei)."
   },
   {
-    "id": 1246,
-    "topicId": 1,
-    "question": "Se dois enfermeiros executarem a transferência em conjunto, um puxando do lado da maca e outro apoiando do lado da cama, qual é a distribuição física do esforço?",
-    "options": [
-      "A força total requerida é dividida pelos dois profissionais (F1 + F2 = F_necessária) e os momentos fletores são simétricos e controlados, duplicando a segurança mecânica da manobra.",
-      "O esforço total é multiplicado pelo dobro, porque a interação simultânea entre dois operadores cria interferência destrutiva na linha de força de tração.",
-      "Apenas o profissional que empurra do lado da cama realiza trabalho mecânico útil, enquanto a ação de puxar na maca gera apenas atrito resistente no colchão.",
-      "A força resultante anula-se por ação de forças opostas de contacto, bloqueando o deslizamento do utente a menos que um dos operadores aplique força assimétrica."
-    ],
-    "correctIndex": 0,
-    "explanation": "O trabalho em equipa com divisão vetorial de forças é uma das principais recomendações de ergonomia hospitalar para prevenção de acidentes de trabalho.",
-    "distractorAnalysis": [
-      "Está incorreta: a coordenação entre dois operadores soma vetorialmente as forças aplicadas na mesma direção, reduzindo o esforço individual.",
-      "Está incorreta: tanto quem puxa como quem empurra/apoia aplica componentes úteis de força horizontal no mesmo sentido de translação.",
-      "Está incorreta: quando ambos sincronizam a tração e empurrão no mesmo sentido, as forças somam-se positivamente para vencer o atrito."
-    ],
-    "nursingApplication": "Promoção do trabalho em equipa e coordenação motora nas manobras de transferência complexas."
-  },
-  {
-    "id": 1247,
+    "id": 1271,
     "topicId": 1,
     "question": "Se a força resultante que atua sobre uma cadeira de rodas for estritamente nula (∑F = 0), quais são os dois únicos estados mecânicos possíveis?",
     "options": [
@@ -4700,7 +5157,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Se uma cadeira de rodas desliza a velocidade constante num corredor plano e sem atrito, a força resultante sobre ela é nula."
   },
   {
-    "id": 1248,
+    "id": 1272,
     "topicId": 1,
     "question": "Na cinemática do movimento, quais são as duas características fundamentais do Movimento Retilíneo e Uniforme (MRU)?",
     "options": [
@@ -4719,7 +5176,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Uma maca que desliza em linha reta com velocidade estável num corredor plano exemplifica o regime de MRU."
   },
   {
-    "id": 1249,
+    "id": 1273,
     "topicId": 1,
     "question": "Porque é que num Movimento Retilíneo e Uniforme (MRU) a força resultante aplicada sobre o corpo tem de ser igual a zero (∑F = 0)?",
     "options": [
@@ -4738,7 +5195,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Para manter uma maca em MRU num piso com atrito, o enfermeiro apenas precisa de aplicar uma força igual e oposta ao atrito."
   },
   {
-    "id": 1250,
+    "id": 1274,
     "topicId": 1,
     "question": "O que acontece à velocidade vetorial de um corpo em MRU se a sua trajetória efetuar uma curva suave, mantendo o velocímetro nos 20 km/h?",
     "options": [
@@ -4757,7 +5214,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Nas curvas em transporte de emergência, os doentes sentem forças inerciais laterais mesmo com velocidade constante."
   },
   {
-    "id": 1251,
+    "id": 1275,
     "topicId": 1,
     "question": "Qual das seguintes situações representa um corpo com aceleração estritamente nula?",
     "options": [
@@ -4776,7 +5233,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Apenas em velocidade uniforme retilínea o doente e os sistemas de infusão permanecem sem acelerações perturbadoras."
   },
   {
-    "id": 1252,
+    "id": 1276,
     "topicId": 1,
     "question": "Em caso de capotamento da viatura de emergência, o que determina o comportamento dos objetos soltos no habitáculo?",
     "options": [
@@ -4795,26 +5252,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "A cabine sanitária deve ser mantida desobstruída e limpa, sem qualquer equipamento ou caixa solta fora dos armários."
   },
   {
-    "id": 1253,
-    "topicId": 1,
-    "question": "Quando uma maca com um utente desliza em linha reta a 1,2 m/s constante num corredor plano de piso liso, qual é o seu estado mecânico?",
-    "options": [
-      "Equilíbrio estático absoluto, dado que a ausência de aceleração impede qualquer alteração de coordenadas no espaço.",
-      "Equilíbrio dinâmico translacional, onde a força resultante é nula (∑F = 0) e a velocidade vetorial se mantém inalterada.",
-      "Movimento caótico turbulento caracterizado por acelerações infinitesimais em todas as direções cartesianas.",
-      "Estado de ressonância mecânica destrutiva com emissão contínua de ondas de choque ultrassónicas no piso."
-    ],
-    "correctIndex": 1,
-    "explanation": "Equilíbrio dinâmico translacional é o estado em que um corpo se move em MRU (velocidade constante) com força resultante zero.",
-    "distractorAnalysis": [
-      "Está incorreta: Equilíbrio estático refere-se exclusivamente a repouso (v = 0); com v = 1,2 m/s o equilíbrio é dinâmico.",
-      "Está incorreta: Movimento uniforme retilíneo é perfeitamente regular e ordenado, e não caótico ou turbulento.",
-      "Está incorreta: Deslizar a 1,2 m/s num piso liso não gera ondas de choque ultrassónicas nem ressonâncias destrutivas."
-    ],
-    "nursingApplication": "Em equilíbrio dinâmico, o doente viaja confortável e sem sentir forças inerciais que o façam deslizar no colchão."
-  },
-  {
-    "id": 1254,
+    "id": 1277,
     "topicId": 1,
     "question": "Do ponto de vista da 1.ª Lei de Newton e da mecânica clássica, qual é a profunda semelhança entre o Repouso e o Movimento Retilíneo e Uniforme?",
     "options": [
@@ -4833,7 +5271,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite ao enfermeiro compreender que manter uma maca a velocidade constante não exige força resultante, apenas equilíbrio."
   },
   {
-    "id": 1255,
+    "id": 1278,
     "topicId": 1,
     "question": "O que é um 'referencial inercial' no contexto da aplicação das Leis de Newton na prática hospitalar?",
     "options": [
@@ -4852,7 +5290,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Compreender referenciais ajuda a analisar o movimento do doente em relação à maca versus em relação ao edifício hospitalar."
   },
   {
-    "id": 1256,
+    "id": 1279,
     "topicId": 1,
     "question": "Qual é a fórmula matemática compacta que expressa a condição necessária e suficiente da 1.ª Lei de Newton para repouso ou MRU?",
     "options": [
@@ -4871,7 +5309,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite resolver problemas de equilíbrio em sistemas de tração e posicionamento através de equações estáticas simples."
   },
   {
-    "id": 1257,
+    "id": 1280,
     "topicId": 1,
     "question": "Se a força resultante que atua sobre um corpo for constante em intensidade, direção e sentido, como se classifica o movimento desse corpo?",
     "options": [
@@ -4890,7 +5328,26 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite prever o aumento progressivo de velocidade de uma maca quando empurrada com força sustentada contínua."
   },
   {
-    "id": 1258,
+    "id": 1281,
+    "topicId": 1,
+    "question": "Se a cadeira de rodas com um utente (massa total 90 kg) descer uma rampa com uma inclinação que gera uma força paralela descendente de 90 N e o enfermeiro exercer uma força de retenção de 90 N para cima ao longo da rampa, qual é a aceleração?",
+    "options": [
+      "1,0 m/s², acelerando progressivamente em direção à base da rampa hospitalar de acesso.",
+      "9,8 m/s², provocando a queda livre da cadeira e dos ocupantes ao longo do plano inclinado.",
+      "Zero m/s², mantendo o conjunto uma descida a velocidade rigorosamente constante e segura (∑F = 90 - 90 = 0 N).",
+      "0,5 m/s², invertendo o movimento e subindo a rampa de forma automática e descontrolada."
+    ],
+    "correctIndex": 2,
+    "explanation": "∑F = F_enfermeiro - Pt = 90 - 90 = 0 N. Com força resultante nula, a aceleração é zero (a = 0) e a velocidade é constante (MRU).",
+    "distractorAnalysis": [
+      "Está incorreta: Para haver aceleração de 1 m/s², a força resultante teria de ser de 90 N a favor da descida (F_res = m·a = 90·1 = 90 N).",
+      "Está incorreta: 9,8 m/s² é a aceleração de queda livre vertical no vácuo, não de uma rampa suave sob contenção manual.",
+      "Está incorreta: Forças equilibradas geram equilíbrio dinâmico constante, não subida espontânea descontrolada."
+    ],
+    "nursingApplication": "Demonstra como o enfermeiro dosa com precisão o esforço físico para garantir uma velocidade de transporte segura e confortável."
+  },
+  {
+    "id": 1282,
     "topicId": 1,
     "question": "Após a mesma maca de 120 kg da pergunta anterior entrar em andamento a velocidade constante de 1 m/s, qual é a força horizontal de empurrão contínuo necessária para a manter em movimento (MRU)?",
     "options": [
@@ -4909,7 +5366,26 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Confirma analiticamente a lei física: manter o movimento requer substancialmente menos esforço do que o arranque."
   },
   {
-    "id": 1259,
+    "id": 1283,
+    "topicId": 1,
+    "question": "Se sobre um carrinho de emergência médica atuarem três forças horizontais e a soma vetorial for ∑F = 0, o que podemos afirmar com certeza sobre o seu movimento?",
+    "options": [
+      "O carrinho acelera obrigatoriamente para a direita com aceleração diretamente proporcional à maior das três forças aplicadas.",
+      "O carrinho inverte espontaneamente a sua trajetória para compensar a dissipação de energia térmica nas pegas ergonómicas.",
+      "O peso total do carrinho anula-se temporariamente, fazendo com que os quatro rodízios deixem de contactar com o solo.",
+      "O carrinho não tem qualquer aceleração linear (a = 0), encontrando-se ou parado em repouso estático ou em movimento retilíneo uniforme (MRU)."
+    ],
+    "correctIndex": 3,
+    "explanation": "Força resultante nula significa aceleração nula (1.ª e 2.ª Leis). O estado cinemático pode ser repouso (v = 0) ou MRU (v = cte).",
+    "distractorAnalysis": [
+      "Está incorreta: se a soma vetorial é zero (∑F = 0), a aceleração resultante é nula (a = 0), não podendo acelerar para a direita.",
+      "Está incorreta: a conservação do momento e a 1.ª Lei garantem que o corpo mantém o seu estado, sem inversões espontâneas sem força.",
+      "Está incorreta: as forças horizontais não anulam a atração gravítica vertical (peso) nem a força normal de suporte do solo."
+    ],
+    "nursingApplication": "Distingue com rigor o conceito de 'equilíbrio' (aceleração nula) do conceito restrito de 'repouso absoluto'."
+  },
+  {
+    "id": 1284,
     "topicId": 1,
     "question": "No âmbito da Biofísica Médica, qual é a definição formal do ramo da Mecânica?",
     "options": [
@@ -4928,7 +5404,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "O conhecimento da mecânica apoia o enfermeiro na análise do movimento de doentes e prevenção de lesões posturais."
   },
   {
-    "id": 1260,
+    "id": 1285,
     "topicId": 1,
     "question": "Em Biofísica, de que forma a Dinâmica se diferencia conceitualmente da Cinemática?",
     "options": [
@@ -4947,26 +5423,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite ao enfermeiro associar a velocidade de aceleração de uma cadeira de rodas à força necessária para a travar."
   },
   {
-    "id": 1261,
-    "topicId": 1,
-    "question": "Qual dos seguintes exemplos clínicos melhor ilustra uma força a produzir alteração do estado de movimento?",
-    "options": [
-      "Um utente que dorme tranquilamente num colchão de espuma sem qualquer alteração na sua posição no leito.",
-      "A leitura estável de um valor de temperatura axilar no termómetro digital após três minutos de medição.",
-      "Um enfermeiro a empurrar uma cadeira de rodas em repouso, fazendo-a acelerar ao longo do corredor hospitalar.",
-      "A visualização de uma radiografia de tórax num negatoscópio fixado na parede da sala de enfermagem."
-    ],
-    "correctIndex": 2,
-    "explanation": "Acelerar a cadeira de rodas a partir do repouso é uma mudança do estado de movimento originada por uma força muscular.",
-    "distractorAnalysis": [
-      "Está incorreta: O utente em repouso sem alteração de velocidade não está a sofrer variação do estado de movimento.",
-      "Está incorreta: A medição de temperatura é um fenómeno térmico de equilíbrio sem relação com aceleração mecânica.",
-      "Está incorreta: O negatoscópio fixo na parede está em repouso mecânico estático."
-    ],
-    "nursingApplication": "O esforço para tirar a cadeira de rodas do repouso requer a aplicação de uma força resultante não nula."
-  },
-  {
-    "id": 1262,
+    "id": 1286,
     "topicId": 1,
     "question": "Qual das seguintes situações clínicas evidencia uma força a produzir o efeito mecânico de deformação?",
     "options": [
@@ -4985,7 +5442,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "A deformação do tórax na RCP (5 a 6 cm no adulto) exige forças adequadas para bombear sangue sem fraturar costelas."
   },
   {
-    "id": 1263,
+    "id": 1287,
     "topicId": 1,
     "question": "Qual é a unidade gravada na escala de leitura de um dinamómetro concebido em conformidade com as normas do SI?",
     "options": [
@@ -5004,7 +5461,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Ao registar avaliações de força em relatórios clínicos, o enfermeiro deve utilizar o Newton para rigor internacional."
   },
   {
-    "id": 1264,
+    "id": 1288,
     "topicId": 1,
     "question": "Qual é a finalidade clínica do teste de dinamometria manual com dinamómetro Jamar na triagem de enfermagem em geriatria?",
     "options": [
@@ -5023,7 +5480,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "A identificação de baixa força de preensão alerta o enfermeiro para instituir intervenções precoces de prevenção de quedas."
   },
   {
-    "id": 1265,
+    "id": 1289,
     "topicId": 1,
     "question": "Num contexto de física médica, 1 kN (quiloNewton) corresponde exatamente a quantos Newtons?",
     "options": [
@@ -5042,7 +5499,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite converter especificações de resistência mecânica de guinchos e elevadores de doentes (frequentemente em kN)."
   },
   {
-    "id": 1266,
+    "id": 1290,
     "topicId": 1,
     "question": "Em Biofísica, como se distingue formalmente a 'direção' do 'sentido' de uma força?",
     "options": [
@@ -5061,7 +5518,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Ao posicionar um doente, dizer 'tração ao longo do membro inferior' define a direção; 'afastando do tronco' define o sentido."
   },
   {
-    "id": 1267,
+    "id": 1291,
     "topicId": 1,
     "question": "Num teste de dinamometria manual em geriatria, uma utente de 78 anos atinge 140 N de força máxima. O que quantifica este valor?",
     "options": [
@@ -5080,7 +5537,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite ao enfermeiro estratificar o risco de fragilidade física e planear intervenções de prevenção de quedas."
   },
   {
-    "id": 1268,
+    "id": 1292,
     "topicId": 1,
     "question": "Se um doente após cirurgia da mão aumentar a sua força de preensão de 80 N para 160 N na reabilitação, qual é o ganho mecânico?",
     "options": [
@@ -5099,7 +5556,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Evidencia a eficácia do plano de cuidados de enfermagem de reabilitação na recuperação da autonomia para as AVD."
   },
   {
-    "id": 1269,
+    "id": 1293,
     "topicId": 1,
     "question": "Ao comparar a força de preensão manual entre a mão dominante e a não dominante de um utente destro saudável, é expectável que:",
     "options": [
@@ -5118,7 +5575,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite ao enfermeiro detetar défices motores assimétricos subtis sugestivos de patologia neurológica unilateral."
   },
   {
-    "id": 1270,
+    "id": 1294,
     "topicId": 1,
     "question": "Qual é a consequência de aplicar uma força de mesma intensidade (ex: 200 N) mas com sentidos contrários num membro?",
     "options": [
@@ -5137,7 +5594,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Distingue claramente manobras de tração longitudinal (para alinhamento) de manobras de compressão articular."
   },
   {
-    "id": 1271,
+    "id": 1295,
     "topicId": 1,
     "question": "Se um doente com 70 kg de massa for transferido para uma enfermaria num hospital situado a grande altitude, a sua massa:",
     "options": [
@@ -5156,7 +5613,26 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Garante que as doses terapêuticas prescritas por quilograma de massa corporal mantêm a mesma base de cálculo."
   },
   {
-    "id": 1272,
+    "id": 1296,
+    "topicId": 1,
+    "question": "Qual é a direção e o sentido do vetor Peso de um doente em repouso numa cama hospitalar?",
+    "options": [
+      "Direção horizontal e sentido orientado para a cabeceira da cama articulada em qualquer inclinação.",
+      "Direção oblíqua a 45° com sentido orientado para o exterior da parede da enfermaria hospitalar.",
+      "Direção vertical em relação à linha do horizonte e sentido apontado para baixo, em direção ao centro da Terra.",
+      "Sentido para cima, opondo-se ativamente à atração gravitacional e sustentando o corpo no ar."
+    ],
+    "correctIndex": 2,
+    "explanation": "O peso é a atração gravítica exercida pela massa terrestre, apontando sempre verticalmente para baixo.",
+    "distractorAnalysis": [
+      "Está incorreta: A força peso nunca atua na direção horizontal; componentes horizontais requerem planos inclinados.",
+      "Está incorreta: A atração gravítica é estritamente radial em direção ao centro da Terra, não apontando a 45° para paredes.",
+      "Está incorreta: A força que aponta para cima é a força normal de suporte da cama, e não a força gravítica peso."
+    ],
+    "nursingApplication": "Compreender que o peso atua sempre verticalmente para baixo é a base para analisar doentes em camas inclinadas."
+  },
+  {
+    "id": 1297,
     "topicId": 1,
     "question": "Se um doente com 75 kg de massa corporal estiver internado num hospital onde g = 9,8 m/s², qual é o módulo do seu Peso?",
     "options": [
@@ -5175,7 +5651,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite dimensionar a resistência de redes de transferência e calcular forças de sustentação dos profissionais."
   },
   {
-    "id": 1273,
+    "id": 1298,
     "topicId": 1,
     "question": "Porque é que o Peso de um indivíduo varia se for medido em diferentes corpos celestes (ex: Terra vs Lua), mas a sua Massa não?",
     "options": [
@@ -5194,7 +5670,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Reforça a distinção clínica essencial: balanças medem massa por comparação; dinamómetros medem peso em Newtons."
   },
   {
-    "id": 1274,
+    "id": 1299,
     "topicId": 1,
     "question": "Se uma mesma força perpendicular de 600 N for aplicada sobre duas áreas diferentes (A1 = 0,2 m² e A2 = 0,05 m²), qual das áreas sofre maior pressão?",
     "options": [
@@ -5213,26 +5689,26 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Aumentar a área de contacto dos apoios é o método físico mais eficaz para reduzir a pressão pontual nos tecidos."
   },
   {
-    "id": 1275,
+    "id": 1300,
     "topicId": 1,
-    "question": "Um doente acamado com 60 kg de massa encontra-se no leito. Qual é a força peso com que a Terra o atrai (adotando g = 9,8 m/s²)?",
+    "question": "Se um astronauta-enfermeiro de 80 kg realizar uma missão na Estação Espacial Internacional em microgravidade (aparente g ≈ 0), qual é a sua massa e peso aparente?",
     "options": [
-      "588 N, orientada na direção vertical com sentido apontado para baixo.",
-      "6,12 N, orientada horizontalmente no sentido da cabeceira do leito hospitalar.",
-      "60 N, orientada perpendicularmente à superfície lateral da cama de internamento.",
-      "5880 N, orientada para cima no sentido de elevar o utente para fora do colchão."
+      "A sua massa reduz-se para 0 kg devido à ausência de gravidade, mas o seu peso aparente mantém-se em cerca de 784 N.",
+      "Tanto a sua massa inercial como o seu peso aparente tornam-se rigorosamente nulos assim que atinge a órbita espacial.",
+      "A sua massa duplica devido à dilatação inercial em órbita, mas o peso aparente reduz-se para metade do valor medido na Terra.",
+      "A sua massa permanece rigorosamente 80 kg, mas o seu peso aparente é praticamente nulo (0 N) devido ao estado de queda livre orbital."
     ],
-    "correctIndex": 0,
-    "explanation": "P = m·g = 60 kg × 9,8 m/s² = 588 N na direção vertical com sentido para baixo.",
+    "correctIndex": 3,
+    "explanation": "A massa (80 kg) é invariável; em microgravidade aparente (órbita em queda livre), o peso aparente é zero (sensação de imponderabilidade).",
     "distractorAnalysis": [
-      "Está incorreta: Dividir 60 por 9,8 (6,12) é um erro de cálculo e não tem sentido horizontal.",
-      "Está incorreta: 60 N seria se g fosse 1 m/s², o que não corresponde à gravidade terrestre.",
-      "Está incorreta: 5880 N resultaria de multiplicar por 98 m/s², um erro de uma ordem de grandeza decimal."
+      "Está incorreta: a massa é uma propriedade intrínseca da matéria (quantidade de substância e inércia) e não varia com a gravidade.",
+      "Está incorreta: a massa inercial nunca se anula; o corpo continua a ter 80 kg de inércia, apenas não há força normal de suporte da balança.",
+      "Está incorreta: a massa não se altera nem duplica em órbita; a microgravidade afeta apenas a força de contacto de suporte (peso aparente)."
     ],
-    "nursingApplication": "O peso de 588 N é a carga vertical que as estruturas do colchão e o leito articulado suportam continuamente."
+    "nursingApplication": "Mostra que mesmo em imponderabilidade a inércia do doente permanece intacta (acelerar um corpo de 80 kg requer a mesma força)."
   },
   {
-    "id": 1276,
+    "id": 1301,
     "topicId": 1,
     "question": "De acordo com a definição científica apresentada na anatomia funcional, o que é biologicamente e mecanicamente um Tendão?",
     "options": [
@@ -5251,7 +5727,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "O enfermeiro deve compreender que a integridade dos tendões é essencial para que a força muscular seja transmitida ao esqueleto."
   },
   {
-    "id": 1277,
+    "id": 1302,
     "topicId": 1,
     "question": "Do ponto de vista puramente mecânico, qual é a função primordial de um tendão no sistema musculoesquelético humano?",
     "options": [
@@ -5270,7 +5746,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Lesões ou inflamações tendinosas (tendinites) impedem a transmissão eficaz da força, limitando a mobilidade do doente."
   },
   {
-    "id": 1278,
+    "id": 1303,
     "topicId": 1,
     "question": "Num doente com fraqueza marcada do quadríceps pós-cirurgia, que dificuldade biomecânica direta é esperada na locomoção?",
     "options": [
@@ -5289,7 +5765,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "O enfermeiro deve prestar apoio com auxiliar de marcha (andarilho/canadiana) a doentes com défice do quadríceps."
   },
   {
-    "id": 1279,
+    "id": 1304,
     "topicId": 1,
     "question": "Em doentes idosos hospitalizados com imobilização prolongada no leito, que alteração biomecânica afeta frequentemente o tendão de Aquiles?",
     "options": [
@@ -5308,7 +5784,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "O uso de suportes de pés a 90° no leito e mobilização passiva pelo enfermeiro previne a deformidade em pé equino."
   },
   {
-    "id": 1280,
+    "id": 1305,
     "topicId": 1,
     "question": "Qual é a vantagem mecânica do armazenamento de energia elástica no tendão de Aquiles durante a fase de corrida ou marcha rápida?",
     "options": [
@@ -5327,7 +5803,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "A perda de elasticidade no idoso aumenta o custo metabólico da locomoção, acelerando a fadiga muscular e o risco de quedas."
   },
   {
-    "id": 1281,
+    "id": 1306,
     "topicId": 1,
     "question": "Qual é o risco mecânico de aplicar uma tala ou ligadura com tração excessiva que ultrapasse a tolerância elástica dos tecidos moles?",
     "options": [
@@ -5346,7 +5822,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "A vigilância frequente da cor, temperatura, tempo de preenchimento capilar e sensibilidade distal é um dever de enfermagem."
   },
   {
-    "id": 1282,
+    "id": 1307,
     "topicId": 1,
     "question": "Dois enfermeiros puxam uma maca hospitalar na mesma direção e no mesmo sentido horizontal, aplicando F1 = 120 N e F2 = 140 N. Qual é a força resultante?",
     "options": [
@@ -5365,7 +5841,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "O trabalho coordenado entre dois profissionais soma as forças, facilitando a deslocação de macas pesadas sem lesão muscular."
   },
   {
-    "id": 1283,
+    "id": 1308,
     "topicId": 1,
     "question": "Dois profissionais de saúde mobilizam um utente na cama com lençol de transferência, exercendo cada um uma força de 150 N no mesmo sentido. Qual é a intensidade total de tração?",
     "options": [
@@ -5384,7 +5860,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "A manobra a dois enfermeiros divide o esforço exigido, permitindo vencer o atrito do lençol com segurança lombar."
   },
   {
-    "id": 1284,
+    "id": 1309,
     "topicId": 1,
     "question": "Se três enfermeiros empurrarem uma cama pesada com forças paralelas e no mesmo sentido de 80 N, 90 N e 110 N, qual é a resultante aplicada à cama?",
     "options": [
@@ -5403,26 +5879,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "A coordenação por contagem de voz ('1, 2, 3!') sincroniza as forças no tempo, maximizando o somatório útil no início do movimento."
   },
   {
-    "id": 1285,
-    "topicId": 1,
-    "question": "Qual é a principal vantagem biofísica de sincronizar o esforço na mesma direção e sentido durante transferências de doentes?",
-    "options": [
-      "Reduzir o coeficiente de atrito cinético entre o colchão e o lençol para valores nulos durante o deslizamento.",
-      "Aumentar a massa inercial do sistema para garantir uma desaceleração progressiva e amortecida no leito.",
-      "Maximizar a força resultante útil na direção do movimento, reduzindo o esforço individual necessário e prevenindo sobrecargas lombares.",
-      "Eliminar a necessidade de ativação dos músculos paravertebrais dos enfermeiros durante a tração do doente."
-    ],
-    "correctIndex": 2,
-    "explanation": "A sincronização garante que as forças se somam perfeitamente (ângulo de 0°), atingindo o valor máximo possível da resultante.",
-    "distractorAnalysis": [
-      "Está incorreta: a sincronização das forças não altera o coeficiente de atrito entre os materiais, que depende das superfícies em contacto.",
-      "Está incorreta: a massa do sistema mantém-se constante; o objetivo é somar as forças na direção correta para facilitar a aceleração controlada.",
-      "Está incorreta: mesmo com esforço partilhado, os músculos estabilizadores do tronco mantêm-se obrigatoriamente ativos para proteger a coluna."
-    ],
-    "nursingApplication": "A liderança verbal clara do enfermeiro principal assegura a sincronia biomecânica de toda a equipa na transferência."
-  },
-  {
-    "id": 1286,
+    "id": 1310,
     "topicId": 1,
     "question": "Se dois enfermeiros puxarem uma maca em sentidos contrários ao longo do mesmo corredor, exercendo 180 N e 130 N, qual é a resultante?",
     "options": [
@@ -5441,7 +5898,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Esforços desalinhados ou opostos entre elementos da equipa geram fadiga inútil e risco de travagem brusca com desequilíbrio."
   },
   {
-    "id": 1287,
+    "id": 1311,
     "topicId": 1,
     "question": "Quando dois enfermeiros exercem forças colineares opostas de exatamente 150 N cada nas extremidades de uma maca, qual é o estado de movimento?",
     "options": [
@@ -5460,7 +5917,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "A igualdade de forças opostas garante a estabilidade de sustentação durante pausas táticas em manobras de transporte."
   },
   {
-    "id": 1288,
+    "id": 1312,
     "topicId": 1,
     "question": "Num procedimento de contra-tração manual para redução de uma luxação do ombro, um enfermeiro traciona o membro com 200 N enquanto outro aplica contra-tração no tórax com 200 N. Qual é a força resultante sobre o doente?",
     "options": [
@@ -5479,7 +5936,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "A técnica correta de contra-tração exige forças equilibradas para isolar a tensão mecânica na articulação lesada."
   },
   {
-    "id": 1289,
+    "id": 1313,
     "topicId": 1,
     "question": "Qual é a fórmula matemática geral para o módulo da resultante de duas forças colineares opostas F1 e F2 (onde F1 > F2)?",
     "options": [
@@ -5498,7 +5955,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "A base matemática simples da subtração vetorial apoia o cálculo de forças de atrito e resistência ao avanço."
   },
   {
-    "id": 1290,
+    "id": 1314,
     "topicId": 1,
     "question": "Se duas forças perpendiculares entre si (formando 90°) com intensidades de 30 N e 40 N atuarem no mesmo ponto de um suporte, qual é a intensidade da força resultante?",
     "options": [
@@ -5517,7 +5974,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite calcular a força real sobre cabos de sustentação e braços articulados quando existem componentes ortogonais."
   },
   {
-    "id": 1291,
+    "id": 1315,
     "topicId": 1,
     "question": "Num suporte hospitalar de parede, uma força horizontal de 60 N e uma força vertical de 80 N atuam no mesmo ponto de fixação. Qual é o módulo da força total suportada pelo parafuso?",
     "options": [
@@ -5536,1014 +5993,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Garante que os parafusos e suportes de parede de monitores e ventiladores são dimensionados para a carga vetorial real."
   },
   {
-    "id": 1292,
-    "topicId": 1,
-    "question": "Dois enfermeiros puxam um equipamento móvel de reanimação: um puxa para a frente com 90 N e outro puxa lateralmente a 90° com 120 N. Qual é a força resultante sentida pelo equipamento?",
-    "options": [
-      "210 N, resultante da adição linear dos módulos individuais de tração dos dois profissionais.",
-      "30 N, decorrente da diferença entre a tração lateral de 120 N e a tração frontal de 90 N.",
-      "10800 N, obtida pela multiplicação das intensidades dos dois vetores tracionadores perpendiculares.",
-      "150 N, calculada pela relação pitagórica: √(90² + 120²) = √(8100 + 14400) = √22500 = 150 N."
-    ],
-    "correctIndex": 3,
-    "explanation": "Para vetores perpendiculares de 90 N e 120 N: Fres = √(90² + 120²) = √(8100 + 14400) = √22500 = 150 N.",
-    "distractorAnalysis": [
-      "Está incorreta: A soma de 210 N ignora a deflexão a 90° entre os dois cabos de tração.",
-      "Está incorreta: 30 N só ocorreria se os enfermeiros puxassem em sentidos opostos na mesma reta.",
-      "Está incorreta: Multiplicar as forças comete um erro dimensional grave na física mecânica."
-    ],
-    "nursingApplication": "O equipamento mover-se-á obliquamente na direção da hipotenusa resultante, exigindo coordenação para não embater nas portas."
-  },
-  {
-    "id": 1293,
-    "topicId": 1,
-    "question": "Quando duas forças ortogonais de mesma intensidade F atuam num ponto material, qual é a expressão matemática do módulo da resultante?",
-    "options": [
-      "Fres = F·√2, pois Fres = √(F² + F²) = √(2F²) = F·√2 ≈ 1,414·F, garantindo o equilíbrio estático.",
-      "Fres = 2·F, dado que forças de mesma magnitude somam-se linearmente em qualquer orientação angular.",
-      "Fres = 0, porque forças perpendiculares cancelam-se mutuamente no ponto central de intersecção.",
-      "Fres = F / 2, correspondendo à dispersão geométrica perpendicular que reduz a força para metade."
-    ],
-    "correctIndex": 0,
-    "explanation": "Fres = √(F² + F²) = √(2·F²) = F·√2. Para duas forças de 100 N a 90°, a resultante é aproximadamente 141,4 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 2·F ocorreria apenas se as forças fossem paralelas no mesmo sentido (ângulo de 0°).",
-      "Está incorreta: Forças perpendiculares não se cancelam; geram uma resultante oblíqua a 45° entre ambas.",
-      "Está incorreta: A resultante nunca é menor do que as componentes individuais quando o ângulo é de 90°."
-    ],
-    "nursingApplication": "Permite estimar rapidamente o esforço resultante em diagonais de estruturas de contenção e fixação hospitalar."
-  },
-  {
-    "id": 1294,
-    "topicId": 1,
-    "question": "Qual é a orientação da força resultante produzida por duas forças perpendiculares de intensidades rigorosamente iguais (Fx = Fy = 50 N)?",
-    "options": [
-      "Alinha-se a 0° com a componente horizontal, anulando totalmente a ação da componente vertical.",
-      "Forma um ângulo exato de 45° com cada uma das componentes, dividindo o quadrante ao meio como bissetriz.",
-      "Orienta-se a 90° com a componente horizontal, ignorando por completo a presença da força vertical.",
-      "Aponta no sentido oposto de ambas as forças, retornando em direção à origem do sistema cartesiano."
-    ],
-    "correctIndex": 1,
-    "explanation": "Sendo as componentes iguais, tan(θ) = Fy / Fx = 50 / 50 = 1, o que corresponde ao ângulo de 45° (bissetriz do quadrante).",
-    "distractorAnalysis": [
-      "Está incorreta: A resultante não se alinha a 0°; a componente vertical puxa a direção para cima em diagonal.",
-      "Está incorreta: A resultante não se alinha a 90°; a componente horizontal desloca a orientação para a direita.",
-      "Está incorreta: A resultante atua no mesmo quadrante das componentes, apontando no sentido das duas forças aplicadas."
-    ],
-    "nursingApplication": "Compreender a direção resultante a 45° ajuda o enfermeiro a prever para onde uma maca se vai deslocar sob forças combinadas."
-  },
-  {
-    "id": 1295,
-    "topicId": 1,
-    "question": "Ao decompor uma força oblíqua F = 200 N que forma um ângulo de 60° com a horizontal, qual é o valor da componente horizontal Fx (adotando cos 60° = 0,5)?",
-    "options": [
-      "200 N, mantendo-se a componente horizontal com o valor integral da força oblíqua original.",
-      "173,2 N, correspondendo à componente vertical Fy obtida através da multiplicação por sen 60°.",
-      "100 N, calculado pelo produto Fx = F·cos(60°) = 200 × 0,5 = 100 N, garantindo o equilíbrio estático.",
-      "400 N, que resulta da divisão da força oblíqua pelo cosseno do ângulo formado com o plano."
-    ],
-    "correctIndex": 2,
-    "explanation": "A projeção horizontal de uma força com ângulo θ em relação ao solo é Fx = F·cos(θ): Fx = 200 × 0,5 = 100 N.",
-    "distractorAnalysis": [
-      "Está incorreta: A componente horizontal só seria 200 N se a força fosse estritamente horizontal (ângulo de 0°).",
-      "Está incorreta: 173,2 N é a componente vertical Fy = 200 × sen(60°) = 200 × 0,866, que atua na direção perpendicular.",
-      "Está incorreta: Dividir a força pelo cosseno violaria a trigonometria do triângulo retângulo (o cateto é F·cosθ)."
-    ],
-    "nursingApplication": "Mostra que puxar com ângulo de 60° reduz a força útil para avançar a maca para metade do esforço muscular exercido."
-  },
-  {
-    "id": 1296,
-    "topicId": 1,
-    "question": "Se um enfermeiro puxar uma alça de transferência com uma força F a um ângulo θ com a horizontal, como varia a força útil horizontal Fx se o ângulo θ diminuir para perto de 0°?",
-    "options": [
-      "A componente útil horizontal Fx aumenta, aproximando-se do valor total da força F exercida (pois cos 0° = 1).",
-      "A componente útil horizontal Fx anula-se completamente, tornando o deslizamento do utente impossível sem tração vertical.",
-      "A componente útil horizontal Fx reduz-se para metade do valor inicial devido à diminuição da inclinação angular dos braços.",
-      "A força muscular transforma-se exclusivamente numa componente vertical que comprime desnecessariamente o doente contra o colchão."
-    ],
-    "correctIndex": 0,
-    "explanation": "À medida que o ângulo θ diminui, cos(θ) aproxima-se de 1, aumentando a componente útil horizontal Fx = F·cos(θ).",
-    "distractorAnalysis": [
-      "Está incorreta: à medida que o ângulo com a horizontal tende para zero, o cosseno aumenta até ao valor máximo de 1, maximizando Fx.",
-      "Está incorreta: a redução do ângulo aumenta o rendimento horizontal (Fx = F·cos θ), uma vez que cos 0° > cos 30° > cos 60°.",
-      "Está incorreta: puxar horizontalmente quase a 0° elimina a componente vertical (sen 0° = 0), direcionando praticamente toda a força para a translação horizontal."
-    ],
-    "nursingApplication": "Puxar o mais próximo possível da horizontal maximiza a força de tração útil e minimiza o esforço do enfermeiro."
-  },
-  {
-    "id": 1297,
-    "topicId": 1,
-    "question": "Num plano cartesiano, se uma força muscular tiver componentes Fx = 40 N e Fy = 30 N, qual é o ângulo aproximado que ela forma com o eixo horizontal?",
-    "options": [
-      "Exatamente 90°, porque a componente horizontal anula qualquer inclinação angular no plano sagital.",
-      "Aproximadamente 37°, pois tan(θ) = Fy / Fx = 30 / 40 = 0,75, cujo arco-tangente corresponde a cerca de 36,9°.",
-      "Exatamente 0°, porque as componentes de 30 N e 40 N equilibram-se estritamente na linha do horizonte.",
-      "Cerca de 85°, dado que a força vertical domina de forma quase absoluta a orientação do vetor resultante."
-    ],
-    "correctIndex": 1,
-    "explanation": "O ângulo é obtido por tan(θ) = cateto oposto / cateto adjacente = 30 / 40 = 0,75, que corresponde a θ ≈ 36,9° ≈ 37°.",
-    "distractorAnalysis": [
-      "Está incorreta: 90° exigiria que Fx fosse igual a zero, o que contradiz a presença de 40 N na horizontal.",
-      "Está incorreta: 0° exigiria que Fy fosse igual a zero, o que contradiz a presença de 30 N na vertical.",
-      "Está incorreta: 85° exigiria que Fy fosse muito superior a Fx (tan 85° ≈ 11,4), o que não se verifica com 30 N e 40 N."
-    ],
-    "nursingApplication": "Determinar o ângulo de tração ajuda a compreender se uma manobra de mobilização está a ser ergonomicamente eficiente."
-  },
-  {
-    "id": 1298,
-    "topicId": 1,
-    "question": "Porque é que decompor uma força nas suas componentes horizontal e vertical é essencial na análise biomecânica em enfermagem?",
-    "options": [
-      "Porque a decomposição matemática reduz permanentemente a massa inercial dos doentes obesos hospitalizados.",
-      "Porque o Sistema Internacional proíbe a utilização de forças oblíquas em qualquer procedimento de cuidados.",
-      "Porque permite separar a fração de força que produz movimento útil daquela que comprime ou sobrecarrega as articulações.",
-      "Porque as forças oblíquas deixam de obedecer à gravidade newtoniana se não forem divididas em eixos."
-    ],
-    "correctIndex": 2,
-    "explanation": "A decomposição isola a componente que move o corpo (Fx) da componente que gera sobrecarga articular ou alívio de peso (Fy).",
-    "distractorAnalysis": [
-      "Está incorreta: A decomposição vetorial é uma ferramenta analítica matemática; não altera a massa física dos corpos.",
-      "Está incorreta: O SI não proíbe forças oblíquas; elas ocorrem naturalmente na tração e movimentação manual.",
-      "Está incorreta: As leis de Newton aplicam-se a vetores em qualquer orientação espacial, decompostos ou não."
-    ],
-    "nursingApplication": "Ajuda o enfermeiro a ajustar a postura para evitar componentes verticais parasitas que sobrecarreguem os ombros e a coluna."
-  },
-  {
-    "id": 1299,
-    "topicId": 1,
-    "question": "Qual é a recomendação biomecânica para o ângulo de tração ao puxar um doente com tela de transferência deslizante?",
-    "options": [
-      "Puxar com o ângulo mais baixo possível, o mais próximo do plano horizontal (paralelo à cama), maximizando o cosseno.",
-      "Puxar com ângulo estritamente vertical a 90° em relação ao colchão, de modo a anular a força horizontal útil.",
-      "Puxar com ângulo de 85° para maximizar a resistência de atrito estático das superfícies do leito articulado.",
-      "Puxar em círculos concêntricos para criar uma força centrífuga que projete o utente para o outro bordo."
-    ],
-    "correctIndex": 0,
-    "explanation": "Puxar paralelamente ao leito (θ próximo de 0°) faz com que cos(θ) ≈ 1, convertendo praticamente 100% do esforço em avanço útil.",
-    "distractorAnalysis": [
-      "Está incorreta: A 90°, cos(90°) = 0; toda a força seria para levantar o doente sem qualquer componente horizontal de deslizamento.",
-      "Está incorreta: A 85°, a componente útil horizontal é mínima (cos 85° ≈ 0,087), desperdiçando mais de 90% do esforço físico.",
-      "Está incorreta: Trações circulares geram instabilidade postural perigosa e risco de queda do doente para fora da cama."
-    ],
-    "nursingApplication": "Adotar uma postura com ancas fletidas permite ao enfermeiro puxar com alinhamento horizontal quase perfeito."
-  },
-  {
-    "id": 1300,
-    "topicId": 1,
-    "question": "Se um enfermeiro aplicar 200 N com ângulo de 30° (cos 30° ≈ 0,866) versus 60° (cos 60° = 0,5), qual é a diferença na força útil horizontal?",
-    "options": [
-      "A 60° a força útil é rigorosamente o dobro da obtida a 30° devido à maior elevação dos membros superiores.",
-      "A 30° a força útil é cerca de 173,2 N, enquanto a 60° é de apenas 100 N, representando uma perda de 73,2 N de eficácia útil.",
-      "Em ambos os ângulos a força horizontal útil é exatamente de 200 N, pois a magnitude do vetor original não se alterou.",
-      "A 30° a força útil é nula porque ângulos inferiores a 45° impedem a transmissão mecânica de tensão pelos braços."
-    ],
-    "correctIndex": 1,
-    "explanation": "Fx a 30° = 200 × 0,866 = 173,2 N; Fx a 60° = 200 × 0,5 = 100 N. Aumentar a inclinação desperdiça força muscular útil.",
-    "distractorAnalysis": [
-      "Está incorreta: A 60° o cosseno é menor (0,5 vs 0,866), logo a força útil é menor e não o dobro.",
-      "Está incorreta: A força útil varia com o cosseno do ângulo e só equivaleria a 200 N se o ângulo fosse perfeitamente 0°.",
-      "Está incorreta: A 30° a transmissão é altamente eficaz (quase 87% de aproveitamento da força total aplicada)."
-    ],
-    "nursingApplication": "Esta diferença de 73,2 N corresponde à diferença entre uma transferência fácil e uma manobra penosa com risco de lesão."
-  },
-  {
-    "id": 1301,
-    "topicId": 1,
-    "question": "Qual é a conclusão ergonómica fundamental decorrente do estudo da decomposição trigonométrica de forças em enfermagem?",
-    "options": [
-      "Os enfermeiros devem realizar todos os esforços corporais em ângulos superiores a 75° para exercitar os músculos do pescoço.",
-      "A decomposição de forças demonstra que puxar ou empurrar com os braços em rotação extrema previne tendinites nos pulsos.",
-      "As leis da trigonometria deixam de se aplicar sempre que mais do que um profissional participa na mesma manobra.",
-      "As forças devem ser aplicadas o mais alinhadas possível com a direção do deslocamento pretendido para maximizar o rendimento biomecânico."
-    ],
-    "correctIndex": 3,
-    "explanation": "Quanto menor o ângulo entre a linha de força e a trajetória (θ ≈ 0°), maior é a componente útil e menor o desperdício muscular.",
-    "distractorAnalysis": [
-      "Está incorreta: Ângulos acima de 75° desperdiçam mais de 75% da força em componentes inúteis e sobrecarregam as articulações.",
-      "Está incorreta: Posturas com rotação extrema aumentam as forças de cisalhamento e o risco de tendinopatias ocupacionais.",
-      "Está incorreta: As leis da trigonometria e da mecânica newtoniana são universais e regem o trabalho em equipa."
-    ],
-    "nursingApplication": "Fundamenta o princípio de 'puxar junto ao corpo e no alinhamento do movimento' ensinado na formação postural de enfermagem."
-  },
-  {
-    "id": 1302,
-    "topicId": 1,
-    "question": "Qual é o peso exato de uma utente idosa com 50 kg de massa corporal internada na enfermaria (adotando g = 9,8 m/s²)?",
-    "options": [
-      "490 N, obtido pela multiplicação direta P = m·g = 50 kg × 9,8 m/s², garantindo o equilíbrio estático.",
-      "5,10 N, que resulta da divisão da massa corporal pela aceleração gravítica local da enfermaria.",
-      "50 N, assumindo que a força peso é numericamente idêntica à massa registada na balança de pesagem.",
-      "4900 N, decorrente de uma multiplicação por um fator de gravidade dez vezes superior à terrestre."
-    ],
-    "correctIndex": 0,
-    "explanation": "P = m·g = 50 kg × 9,8 m/s² = 490 N na direção vertical com sentido para baixo.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir 50 por 9,8 (5,10) inverte a fórmula do peso e comete um erro dimensional na física.",
-      "Está incorreta: 50 N seria se g fosse 1 m/s², o que não é o caso na superfície da Terra.",
-      "Está incorreta: 4900 N corresponderia a uma gravidade de 98 m/s², inexistente no nosso planeta."
-    ],
-    "nursingApplication": "Determina a força gravítica vertical que atua sobre a utente e que tem de ser suportada pelos profissionais no levante."
-  },
-  {
-    "id": 1303,
-    "topicId": 1,
-    "question": "Se um doente com 70 kg de massa for mobilizado por dois enfermeiros, qual é a força peso total que o sistema gravítico atrai?",
-    "options": [
-      "7,14 N, correspondendo à razão fracionária entre a massa do doente e a aceleração gravítica g.",
-      "70 N, mantendo-se a equivalência estática nominal entre a leitura da balança e a força no SI.",
-      "686 N, sendo esta a força vertical descendente que a equipa tem de contrariar ao elevar o doente no ar.",
-      "6860 N, valor resultante de uma estimativa de impacto dinâmico em colisão de alta velocidade."
-    ],
-    "correctIndex": 2,
-    "explanation": "P = 70 kg × 9,8 m/s² = 686 N. Ao elevar o doente no ar sem apoio da cama, a equipa tem de exercer 686 N verticais para cima.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir massa por gravidade é uma operação incorreta sem significado físico de peso.",
-      "Está incorreta: O peso mede-se em Newtons (686 N) e não equivale numericamente aos quilogramas de massa.",
-      "Está incorreta: 6860 N é dez vezes o peso real de um adulto de 70 kg em repouso."
-    ],
-    "nursingApplication": "A dois enfermeiros, cada um suporta em média cerca de 343 N ao elevar o utente sem equipamentos auxiliares."
-  },
-  {
-    "id": 1304,
-    "topicId": 1,
-    "question": "Um utente com 85 kg de massa corporal inicia marcha assistida. Que força gravítica vertical atua sobre o solo no apoio bipodal estático?",
-    "options": [
-      "833 N, distribuída pelos pontos de contacto dos dois pés com o piso da enfermaria (P = 85 × 9,8).",
-      "8,67 N, obtida pela divisão da massa inercial corporal pela aceleração gravítica g.",
-      "85 N, considerando que o apoio em dois pés divide o peso do corpo por um fator escalar de dez.",
-      "8330 N, resultante de uma sobrecarga transitória instantânea provocada pela postura bípede ereta."
-    ],
-    "correctIndex": 0,
-    "explanation": "P = m·g = 85 kg × 9,8 m/s² = 833 N no total. Em apoio bipodal simétrico, cada pé suporta cerca de 416,5 N.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir 85 por 9,8 comete um erro matemático de inversão de grandezas fundamentais.",
-      "Está incorreta: O apoio bipodal não reduz a força gravítica total exercida pela Terra (P = 833 N).",
-      "Está incorreta: A postura bípede estática não decuplica o peso gravítico do corpo."
-    ],
-    "nursingApplication": "A divisão do peso pelos dois pés (cerca de 416,5 N em cada) ilustra como o apoio simétrico reduz a carga articular unilateral."
-  },
-  {
-    "id": 1305,
-    "topicId": 1,
-    "question": "Qual é o peso de um utente com 95 kg de massa corporal admitido no serviço de medicina interna (adotando g = 9,8 m/s²)?",
-    "options": [
-      "9,69 N, resultante da divisão indevida da massa pela aceleração da gravidade.",
-      "931 N, calculado por P = m·g = 95 kg × 9,8 m/s², garantindo o equilíbrio estático.",
-      "95 N, presumindo que a leitura da balança hospitalar expressa diretamente Newtons.",
-      "9310 N, que corresponderia a uma massa de quase uma tonelada em repouso estático."
-    ],
-    "correctIndex": 1,
-    "explanation": "P = 95 kg × 9,8 m/s² = 931 N de força gravítica orientada verticalmente para o solo.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir massa por gravidade é uma operação incorreta que não calcula o peso.",
-      "Está incorreta: 95 kg é a massa; o peso é a força atrativa em Newtons (931 N).",
-      "Está incorreta: 9310 N resultaria de um erro de multiplicação por 98 m/s²."
-    ],
-    "nursingApplication": "Mobilizar um doente de 931 N sem auxílio mecânico acarreta risco significativo de lesão discal lombar para a equipa."
-  },
-  {
-    "id": 1306,
-    "topicId": 1,
-    "question": "Uma maca de transporte de urgência tem 40 kg de massa e transporta um doente de 80 kg. Qual é o peso total do conjunto sobre o piso?",
-    "options": [
-      "12,24 N, calculada dividindo a massa combinada pela constante da gravidade local terrestre.",
-      "120 N, admitindo a igualdade numérica direta entre quilogramas de carga e Newtons de peso.",
-      "1176 N, resultante do peso combinado da massa total de 120 kg sujeita à gravidade terrestre (120 × 9,8).",
-      "11760 N, obtida através de uma amplificação arbitrária de dez vezes da força gravítica total."
-    ],
-    "correctIndex": 2,
-    "explanation": "Massa total = 40 + 80 = 120 kg. Peso total = m·g = 120 kg × 9,8 m/s² = 1176 N.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir a massa de 120 kg por 9,8 é matematicamente e fisicamente incorreto.",
-      "Está incorreta: 120 kg gera um peso de 1176 N no campo gravítico terrestre, e não de 120 N.",
-      "Está incorreta: 11760 N corresponderia a um conjunto pesadíssimo de 1200 kg de massa."
-    ],
-    "nursingApplication": "Este peso total de 1176 N atua sobre as quatro rodas, gerando as forças normais que determinam a resistência ao rolamento."
-  },
-  {
-    "id": 1307,
-    "topicId": 1,
-    "question": "Num procedimento de punção venosa periférica, porque é que uma agulha com bisel de área diminuta penetra facilmente na pele com pouca força?",
-    "options": [
-      "Porque a agulha anula a força de atrito cinético através da emissão espontânea de ondas sonoras ultrassónicas.",
-      "Porque a massa inercial da agulha é convertida integralmente em calor térmico que cauteriza os tecidos.",
-      "Porque a pequena área do bisel gera uma enorme pressão mecânica (p = F / A), superando a resistência elástica da derme.",
-      "Porque a agulha inverte a direção da gravidade terrestre no ponto exato da punção cutânea."
-    ],
-    "correctIndex": 2,
-    "explanation": "Pela relação p = F/A, uma área microscópica no bisel (ex: 0,1 mm²) transforma uma força modesta (1 N) numa pressão de 10 milhões de Pascais.",
-    "distractorAnalysis": [
-      "Está incorreta: A agulha não emite ultrassons; a penetração é um fenómeno mecânico de concentração de tensão e cisalhamento.",
-      "Está incorreta: A agulha metálica não se converte em calor cauterizador; a punção é puramente mecânica e atraumática.",
-      "Está incorreta: A punção não altera a gravidade local da Terra."
-    ],
-    "nursingApplication": "Compreender a relação p = F/A explica porque agulhas mais finas (menor calibre G) exigem menor força de penetração."
-  },
-  {
-    "id": 1308,
-    "topicId": 1,
-    "question": "Se um enfermeiro aplicar uma força de 2 N no bisel afiado de uma agulha com área de corte de 0,2 mm² (0,2 × 10⁻⁶ m²), qual é a pressão gerada na pele?",
-    "options": [
-      "0,4 Pa, que decorre da multiplicação direta da força pelo valor numérico da área em milímetros quadrados.",
-      "10 Pa, calculada pela divisão simples da força pela área sem conversão prévia de unidades ao SI.",
-      "4.000.000 Pa, calculada pela multiplicação da força pelo quadrado da área da secção reta transversal.",
-      "10.000.000 Pa (10 MPa), resultante da aplicação direta da relação p = F / A = 2 / (0,2 × 10⁻⁶)."
-    ],
-    "correctIndex": 3,
-    "explanation": "p = F / A = 2 N / (2 × 10⁻⁷ m²) = 10⁷ Pa = 10 MPa. Esta pressão massiva vence facilmente a resistência de corte da pele.",
-    "distractorAnalysis": [
-      "Está incorreta: Multiplicar força por área comete um erro dimensional primário (pressão é quociente e não produto).",
-      "Está incorreta: Não converter milímetros quadrados para metros quadrados origina um erro de seis ordens de grandeza decimal.",
-      "Está incorreta: A fórmula da pressão é p = F/A linear simples, e não quadrática na área."
-    ],
-    "nursingApplication": "Ilustra como instrumentos afiados geram pressões mecânicas colossais com forças musculares extremamente reduzidas."
-  },
-  {
-    "id": 1309,
-    "topicId": 1,
-    "question": "Comparando uma agulha de punção intramuscular de 21G (mais espessa) com uma agulha de 25G (mais fina), para a mesma força manual:",
-    "options": [
-      "A agulha mais fina de 25G gera uma pressão de ponta significativamente maior devido à sua menor área de secção reta de corte.",
-      "A agulha de 21G gera maior pressão porque possui maior comprimento longitudinal de caneta metálica.",
-      "Ambas as agulhas geram rigorosamente a mesma pressão, dado que a força manual aplicada pelo profissional é idêntica.",
-      "Nenhuma das agulhas gera pressão, pois a pressão mecânica só se manifesta em sistemas hidráulicos fechados."
-    ],
-    "correctIndex": 0,
-    "explanation": "p = F/A: mantendo a mesma força F, a agulha de menor diâmetro/área (25G) produz uma pressão mecânica de ponta superior.",
-    "distractorAnalysis": [
-      "Está incorreta: O comprimento da agulha não altera a pressão no ponto de corte da ponta; o que determina a pressão é a área de contacto.",
-      "Está incorreta: Mesma força sobre áreas diferentes gera pressões necessariamente diferentes (inversamente proporcionais à área).",
-      "Está incorreta: A pressão mecânica atua sempre que uma força de contacto perpendicular se distribui por uma superfície sólida ou biológica."
-    ],
-    "nursingApplication": "Explica porque agulhas pediátricas muito finas penetram os tecidos com menor desconforto doloroso mecânico."
-  },
-  {
-    "id": 1310,
-    "topicId": 1,
-    "question": "Se uma agulha perder o fio de corte (ponta romba ou dobrada por colisão acidental no frasco), o que acontece à força necessária para puncionar?",
-    "options": [
-      "A força necessária reduz-se para metade porque o metal rombo adquire propriedades magnéticas repelentes aos tecidos.",
-      "A força permanece inalterada, uma vez que a elasticidade da pele humana adapta-se instantaneamente à geometria do metal.",
-      "A força muscular necessária aumenta substancialmente, pois a maior área de contacto da ponta romba reduz a pressão para a mesma força.",
-      "A força necessária anula-se, penetrando a agulha romba por sucção osmótica sem necessidade de qualquer empurrão."
-    ],
-    "correctIndex": 2,
-    "explanation": "Com a ponta romba, a área A aumenta; para atingir a mesma pressão de corte (p = F/A), o enfermeiro tem de exercer uma força F muito maior.",
-    "distractorAnalysis": [
-      "Está incorreta: Pontas rombas não adquirem magnetismo; aumentam a resistência mecânica e o traumatismo tecidual.",
-      "Está incorreta: A pele oferece resistência mecânica real que tem de ser vencida por pressão; agulhas rombas causam grande dor e laceração.",
-      "Está incorreta: Não há sucção osmótica de agulhas; a penetração é puramente mecânica."
-    ],
-    "nursingApplication": "Agulhas que toquem em superfícies rígidas e fiquem rombas devem ser imediatamente substituídas antes de tocar no utente."
-  },
-  {
-    "id": 1311,
-    "topicId": 1,
-    "question": "Porque é que os enfermeiros devem utilizar calçado ergonómico com sola de base ampla e amortecimento em vez de calçado estreito?",
-    "options": [
-      "A sola ampla aumenta a área de distribuição da força peso (p = F / A), reduzindo a pressão pontual sobre a fáscia plantar e articulações.",
-      "A sola ampla reduz o coeficiente de atrito cinético com o pavimento, facilitando o deslizamento contínuo dos pés durante as transferências.",
-      "A sola ampla diminui a força peso total do corpo do profissional, reduzindo o trabalho mecânico exigido aos músculos das pernas.",
-      "A sola ampla converte a energia mecânica dos passos em energia térmica superficial, impedindo a fadiga dos ligamentos do tornozelo."
-    ],
-    "correctIndex": 0,
-    "explanation": "Ao aumentar a área de suporte A, a força peso F do enfermeiro dispersa-se, diminuindo a pressão mecânica (p = F/A) na planta do pé.",
-    "distractorAnalysis": [
-      "Está incorreta: solas hospitalares devem assegurar atrito estático elevado para evitar quedas e escorregamentos, e não facilitar o deslizamento.",
-      "Está incorreta: a força peso depende da massa corporal e da gravidade (P = m·g), não sendo alterada pelas dimensões da sola do calçado.",
-      "Está incorreta: o amortecimento dissipa energia por absorção viscoelástica do impacto e não por conversão térmica funcional nos ligamentos."
-    ],
-    "nursingApplication": "Solas com boa distribuição de pressão reduzem a fadiga podológica e previnem fasceítes plantares após turnos de 8 a 12 horas."
-  },
-  {
-    "id": 1312,
-    "topicId": 1,
-    "question": "Se um enfermeiro de 70 kg (peso ≈ 686 N) se apoiar nos dois pés sobre solas com área total combinada de 0,035 m², qual é a pressão média no solo?",
-    "options": [
-      "19.600 Pa (19,6 kPa), calculada pela razão direta p = F / A = 686 N / 0,035 m².",
-      "24.010 Pa, calculada por p = F × A = 686 × 0,035, multiplicando em vez de dividir.",
-      "9800 Pa, calculada por p = m / A = 70 / 0,035, usando a massa em vez do peso (força).",
-      "686 Pa, assumindo erroneamente que a pressão é numericamente igual ao valor do peso do doente."
-    ],
-    "correctIndex": 1,
-    "explanation": "p = F / A = 686 N / 0,035 m² = 19.600 Pa = 19,6 kPa.",
-    "distractorAnalysis": [
-      "Está incorreta: a pressão é p = F / A (divisão), não o produto F × A; multiplicar força por área não tem significado físico.",
-      "Está incorreta: a fórmula da pressão requer a força em Newtons (peso = m·g), não a massa em quilogramas; p = m/A não é dimensionalmente correto.",
-      "Está incorreta: a pressão (Pa) é a força por unidade de área; assumir p = F numericamente ignora a área de contacto, que altera completamente o resultado."
-    ],
-    "nursingApplication": "Demonstra a pressão mecânica real transmitida ao pavimento hospitalar durante a postura bípede ereta estática."
-  },
-  {
-    "id": 1313,
-    "topicId": 1,
-    "question": "Se o mesmo enfermeiro elevar um dos pés e ficar apoiado num único pé (área reduzida para metade, 0,0175 m²), o que acontece à pressão no solo?",
-    "options": [
-      "A pressão reduz-se para metade porque o organismo compensa automaticamente o esforço retirando massa inercial.",
-      "A pressão mantém-se rigorosamente idêntica a 19.600 Pa, dado que a gravidade atua unicamente sobre o pé suspenso.",
-      "A pressão duplica para 39.200 Pa (39,2 kPa), pois a mesma força peso total passa a concentrar-se em metade da área de contacto.",
-      "A pressão anula-se completamente, entrando o profissional num estado transitório de equilíbrio indiferente."
-    ],
-    "correctIndex": 2,
-    "explanation": "p = F / A: se A diminui para metade e F se mantém constante (686 N), a pressão mecânica de apoio dobra: 686 / 0,0175 = 39.200 Pa.",
-    "distractorAnalysis": [
-      "Está incorreta: A massa não varia; apoiar num só pé não elimina metade da matéria corporal.",
-      "Está incorreta: O peso total continua a atuar integralmente através do único membro que mantém contacto com o solo.",
-      "Está incorreta: O apoio unipodal não anula a pressão; pelo contrário, concentra a carga mecânica e desafia o equilíbrio postural."
-    ],
-    "nursingApplication": "Explica porque períodos prolongados de apoio unipodal ou calçado inadequado aceleram a sobrecarga articular no joelho e tornozelo."
-  },
-  {
-    "id": 1314,
-    "topicId": 1,
-    "question": "Porque é que uma força externa é indispensável para alterar a trajetória de um utente que caminha em linha reta?",
-    "options": [
-      "Porque a massa corporal diminui linearmente durante a caminhada, desestabilizando o alinhamento postural fisiológico da marcha.",
-      "Porque pela 1.ª Lei de Newton a velocidade vetorial mantém a sua direção constante por inércia, exigindo força para curvar.",
-      "Porque o centro de gravidade do corpo humano localiza-se fora da pelve durante qualquer mudança de direção no plano horizontal.",
-      "Porque a gravidade terrestre atua exclusivamente na direção perpendicular à marcha, anulando todas as acelerações laterais."
-    ],
-    "correctIndex": 1,
-    "explanation": "Mudar de direção implica alterar o vetor velocidade (gerando aceleração centrípeta), o que requer uma força resultante externa não nula.",
-    "distractorAnalysis": [
-      "Está incorreta: a massa do indivíduo permanece constante durante a marcha e não é a causa da necessidade de força para mudar de trajetória.",
-      "Está incorreta: o centro de gravidade desloca-se com o corpo e permanece dentro da região pélvica/tronco, não saindo do corpo na marcha normal.",
-      "Está incorreta: a gravidade é vertical e constante; a alteração de trajetória no plano horizontal depende de forças horizontais de atrito com o solo."
-    ],
-    "nursingApplication": "O enfermeiro deve apoiar o doente com instabilidade da marcha ao fazer curvas, momento em que a inércia desafia o equilíbrio."
-  },
-  {
-    "id": 1315,
-    "topicId": 1,
-    "question": "Se uma cadeira de rodas se deslocar em linha reta com velocidade rigorosamente constante de 1,2 m/s, qual é a sua aceleração?",
-    "options": [
-      "1,2 m/s², mantendo-se o valor numérico da aceleração idêntico à velocidade de deslocamento no corredor.",
-      "9,8 m/s², decorrente da atração gravitacional permanente que atua sobre o utente e o assento.",
-      "0 m/s², uma vez que não existe qualquer variação temporal no vetor velocidade (a = Δv / Δt = 0).",
-      "1,44 m/s², calculada pelo quadrado da velocidade instantânea dividida pelo tempo de observação."
-    ],
-    "correctIndex": 2,
-    "explanation": "Aceleração é a taxa de variação da velocidade no tempo (a = dv/dt). Se a velocidade é constante, a aceleração é zero.",
-    "distractorAnalysis": [
-      "Está incorreta: Velocidade mede deslocamento por tempo (m/s); aceleração mede variação de velocidade por tempo (m/s²).",
-      "Está incorreta: 9,8 m/s² é a aceleração da gravidade, mas no movimento horizontal a velocidade vertical é nula.",
-      "Está incorreta: 1,44 é o quadrado de 1,2, não tendo dimensão física de aceleração linear sem divisão por um raio."
-    ],
-    "nursingApplication": "A ausência de aceleração no MRU garante que o doente não sente forças de inércia a empurrá-lo para a frente ou para trás."
-  },
-  {
     "id": 1316,
-    "topicId": 1,
-    "question": "Se um objeto de monitorização estiver pousado no tampo de uma mesa de enfermagem em repouso, qual é a sua aceleração?",
-    "options": [
-      "9,8 m/s² orientada para o solo, porque todos os corpos na superfície da Terra estão continuamente a acelerar para baixo.",
-      "0 m/s², dado que o objeto se encontra em repouso estático sustentado pela mesa em equilíbrio estável.",
-      "1,0 m/s² orientada para o norte magnético, decorrente da rotação da Terra em torno do seu eixo polar.",
-      "Infinita, porque a ausência de movimento linear no plano horizontal anula o tempo no denominador da fórmula."
-    ],
-    "correctIndex": 1,
-    "explanation": "Estando em repouso no tampo da mesa, a velocidade é nula e constante, logo a aceleração é estritamente a = 0 m/s².",
-    "distractorAnalysis": [
-      "Está incorreta: A gravidade exerce uma força peso, mas a reação normal da mesa impede a queda, resultando em aceleração nula.",
-      "Está incorreta: A rotação terrestre não impõe aceleração linear de 1 m/s² aos objetos em repouso na mesa do posto de enfermagem.",
-      "Está incorreta: A aceleração é zero e não infinita; o repouso é a ausência de variação temporal de velocidade."
-    ],
-    "nursingApplication": "Equipamentos parados em superfícies horizontais planas mantêm aceleração nula e estabilidade biomecânica."
-  },
-  {
-    "id": 1317,
-    "topicId": 1,
-    "question": "Porque é que o cinto de segurança de uma cadeira de rodas hospitalar deve ser fixado ao nível da pelve e não do abdómen?",
-    "options": [
-      "Porque a cintura pélvica é uma estrutura óssea rígida capaz de suportar elevadas forças inerciais sem lesão visceral interna.",
-      "Porque a pelve é desprovida de inércia mecânica, comportando-se como um ponto material estritamente imaterial.",
-      "Porque o abdómen contém ar comprimido que empurra a fita do cinto para fora durante as manobras no corredor.",
-      "Porque a colocação pélvica facilita a circulação de correntes galvânicas curativas ao longo do membro inferior."
-    ],
-    "correctIndex": 0,
-    "explanation": "A pelve óssea suporta forças mecânicas sem deformação; cintos sobre o abdómen causam lacerações hepáticas e esplénicas graves.",
-    "distractorAnalysis": [
-      "Está incorreta: A pelve tem massa óssea substancial e obedece com rigor a todas as leis da inércia newtoniana.",
-      "Está incorreta: O abdómen é composto por tecidos moles e vísceras parenquimatosas/ocas compressíveis, não ar sob pressão.",
-      "Está incorreta: Cintos pélvicos são dispositivos puramente mecânicos de retenção, não gerando correntes galvânicas."
-    ],
-    "nursingApplication": "O cinto pélvico a 45° sobre as cristas ilíacas previne tanto a projeção anterior como o deslizamento sacral ('efeito submarino')."
-  },
-  {
-    "id": 1318,
-    "topicId": 1,
-    "question": "Qual é a consequência de transportar um monitor-desfibrilhador sobre o colchão da maca ao lado do doente sem fixação própria?",
-    "options": [
-      "O monitor perde instantaneamente a sua calibração de energia e descarrega choques espontâneos no doente.",
-      "Numa travagem ou manobra brusca, o monitor de 7 kg pode ser projetado contra o tórax ou crânio do doente por inércia.",
-      "O peso do monitor anula as ondas de pulso arterial do utente através de interferência mecânica direta.",
-      "O monitor converte o ritmo cardíaco do doente num traçado sinusoidal sem qualquer significado clínico."
-    ],
-    "correctIndex": 1,
-    "explanation": "O monitor solto comporta-se como um objeto em movimento livre; na travagem, choca contra o utente causando traumatismo secundário grave.",
-    "distractorAnalysis": [
-      "Está incorreta: Monitores homologados possuem proteções contra disparos acidentais; o risco primário é o trauma contundente mecânico.",
-      "Está incorreta: O monitor solto não anula ondas de pulso sistémicas, mas pode esmagar membros se tombar sobre eles.",
-      "Está incorreta: A interferência no ECG pode ocorrer por artefactos de movimento, mas o perigo letal é a lesão por impacto físico."
-    ],
-    "nursingApplication": "Monitores devem viajar sempre encaixados em suportes de parede ou suportes dedicados de maca devidamente travados."
-  },
-  {
-    "id": 1319,
-    "topicId": 1,
-    "question": "Num transporte de emergência intra-hospitalar, que recomendação previne o risco de projeção inercial do doente em corredores inclinados?",
-    "options": [
-      "Descer as rampas a correr com a maca destravada para que a inércia anule o peso total do conjunto transportado.",
-      "Pedir ao doente que se mantenha sentado de pernas cruzadas no bordo da maca sem segurar em manípulos de apoio.",
-      "Desligar a iluminação do corredor hospitalar para que as pupilas dilatadas compensem as desacelerações da maca.",
-      "Manter as grades laterais elevadas, afivelar os cintos de segurança da maca e conduzir a velocidade moderada e controlada."
-    ],
-    "correctIndex": 3,
-    "explanation": "Cintos e grades fornecem as forças externas necessárias para conter o corpo perante qualquer alteração de velocidade ou plano.",
-    "distractorAnalysis": [
-      "Está incorreta: Descer rampas a correr multiplica a energia cinética e torna a travagem inercial extremamente violenta e desgovernada.",
-      "Está incorreta: Sentar-se de pernas cruzadas no bordo eleva o centro de gravidade e anula a base de apoio, com risco quase certo de queda.",
-      "Está incorreta: A iluminação adequada é um requisito de segurança visual para antecipar obstáculos no trajeto hospitalar."
-    ],
-    "nursingApplication": "O cumprimento sistemático destas três medidas integra as metas internacionais de segurança do doente no transporte."
-  },
-  {
-    "id": 1320,
-    "topicId": 1,
-    "question": "Qual é a função biofísica primordial das grades laterais de uma cama ou maca hospitalar?",
-    "options": [
-      "Atuar como anteparos mecânicos externos que aplicam forças de reação sobre o doente, impedindo a sua projeção ou queda lateral por inércia.",
-      "Servir exclusivamente como ponto de apoio anatómico para a fixação de drenos cirúrgicos e bolsas coletoras de diurese vesical.",
-      "Elevar o centro de gravidade do leito hospitalar para facilitar o trabalho de mobilização postural executado pelo enfermeiro.",
-      "Isolar o leito contra variações de temperatura ambiente e correntes de ar na enfermaria através de uma barreira protetora."
-    ],
-    "correctIndex": 0,
-    "explanation": "As grades laterais exercem forças normais de suporte lateral quando o corpo rola ou se desloca lateralmente no leito.",
-    "distractorAnalysis": [
-      "Está incorreta: as bolsas e drenos devem ser fixados no chassis da cama abaixo do nível do leito e não nas grades móveis de proteção.",
-      "Está incorreta: a elevação do centro de gravidade diminui a estabilidade; as grades não têm essa função e visam a contenção física de segurança.",
-      "Está incorreta: as grades hospitalares são vazadas e tubulares, não fornecendo isolamento térmico contra correntes de ar ambiente."
-    ],
-    "nursingApplication": "As grades laterais levantadas e travadas são um cuidado essencial em doentes desorientados, sedados ou em transporte."
-  },
-  {
-    "id": 1321,
-    "topicId": 1,
-    "question": "Se um enfermeiro transportar uma maca numa rampa descendente com os pés do doente para a frente, como deve posicionar o seu corpo?",
-    "options": [
-      "O enfermeiro deve correr atrás da maca empurrando com toda a força para acelerar a descida até ao piso térreo.",
-      "O enfermeiro deve sentar-se sobre as pernas do doente na maca para aumentar a inércia do conjunto.",
-      "O enfermeiro deve soltar os manípulos e caminhar de lado sem tocar na maca até chegar ao fim da rampa.",
-      "O enfermeiro deve colocar-se à frente da maca (voltado para ela), travando e controlando a descida com o seu peso e pernas fletidas."
-    ],
-    "correctIndex": 3,
-    "explanation": "Colocar-se à frente permite exercer uma força ascendente ao longo da rampa, equilibrando a descida e prevenindo acelerações inerciais perigosas.",
-    "distractorAnalysis": [
-      "Está incorreta: Empurrar por trás numa descida acelera a maca descontroladamente, multiplicando a energia de impacto no final.",
-      "Está incorreta: Sentar-se sobre o doente viola todas as regras de segurança, conforto e biomecânica de enfermagem.",
-      "Está incorreta: Soltar a maca numa rampa resulta em descida desgovernada com risco gravíssimo de colisão fatal."
-    ],
-    "nursingApplication": "Controlar a descida a partir da frente com joelhos fletidos protege a coluna do enfermeiro e a vida do doente."
-  },
-  {
-    "id": 1322,
-    "topicId": 1,
-    "question": "Ao transpor uma soleira ou desnível de porta com uma cadeira de rodas, qual é o procedimento biomecânico correto?",
-    "options": [
-      "Acelerar com toda a força contra o ressalto para que a inércia faça a cadeira saltar por cima do obstáculo de pedra.",
-      "Pressionar a alavanca basculante inferior com o pé para elevar as rodas dianteiras, transpondo o obstáculo suavemente sem impacto inercial.",
-      "Pedir ao doente que salte da cadeira em andamento para diminuir a massa inercial durante a transposição da porta.",
-      "Puxar a cadeira de lado sobre duas rodas laterais para anular a força de atrito com o caixilho metálico."
-    ],
-    "correctIndex": 1,
-    "explanation": "Bascular a cadeira eleva as pequenas rodas dianteiras que de outro modo bateriam bruscamente no desnível, travando a cadeira e ejetando o utente.",
-    "distractorAnalysis": [
-      "Está incorreta: Bater com força no ressalto trava as rodas dianteiras instantaneamente, projetando o doente de cabeça contra o chão por inércia.",
-      "Está incorreta: O doente deve permanecer sentado e seguro; saltar em andamento é um risco gravíssimo de queda e fratura.",
-      "Está incorreta: Manobrar a cadeira inclinada em duas rodas laterais é perigoso e instável."
-    ],
-    "nursingApplication": "Utilizar a alavanca de pé na traseira da cadeira aplica o princípio do momento de forças para elevar a dianteira com facilidade."
-  },
-  {
-    "id": 1323,
-    "topicId": 1,
-    "question": "Ao descer uma rampa íngreme com uma cadeira de rodas ocupada, qual é a orientação recomendada para a segurança inercial do doente?",
-    "options": [
-      "Descer para a frente a correr para que a inércia compense o peso do utente através de sustentação aerodinâmica.",
-      "Soltar os travões e deixar a cadeira descer livremente enquanto o enfermeiro vigia o percurso à distância.",
-      "Descer de marcha-atrás (o enfermeiro caminha de costas à frente da cadeira), mantendo o doente encostado ao encosto por gravidade.",
-      "Colocar a cadeira de lado perpendicularmente ao declive para que o peso fique concentrado numa só roda."
-    ],
-    "correctIndex": 2,
-    "explanation": "Descer de costas faz com que a componente tangencial do peso apoie o doente contra o encosto traseiro, eliminando o risco de queda para a frente.",
-    "distractorAnalysis": [
-      "Está incorreta: Descer para a frente em rampa íngreme inclina o doente para o abismo, facilitando a projeção anterior numa travagem mínima.",
-      "Está incorreta: Soltar a cadeira em rampa é negligência grave com aceleração contínua e impacto inevitável.",
-      "Está incorreta: Colocar a cadeira de lado numa rampa cria um momento de capotamento lateral extremamente perigoso."
-    ],
-    "nursingApplication": "Descer rampas de costas com a cadeira de rodas é uma regra de ouro de boas práticas de enfermagem."
-  },
-  {
-    "id": 1324,
-    "topicId": 1,
-    "question": "Qual é a consequência biomecânica imediata de transportar um doente em cadeira de rodas sem utilizar os apoios de pés?",
-    "options": [
-      "A cadeira de rodas perde 50% da sua massa inercial, tornando-se incontrolável no plano horizontal do corredor.",
-      "O doente sofre uma diminuição imediata do débito cardíaco por cancelamento da 1.ª Lei de Newton nos membros.",
-      "As rodas traseiras da cadeira de rodas deixam de girar devido à interrupção do campo gravitacional dos eixos.",
-      "Os pés podem tocar no piso e ser fletidos bruscamente para trás por atrito e inércia da marcha, com risco de entorse ou fratura maleolar."
-    ],
-    "correctIndex": 3,
-    "explanation": "Se o pé toca no chão com a cadeira em andamento, o piso trava o pé enquanto a cadeira continua para a frente, provocando lesões graves no tornozelo.",
-    "distractorAnalysis": [
-      "Está incorreta: A massa inercial da cadeira é uma propriedade dos materiais e não depende do posicionamento dos pés.",
-      "Está incorreta: O débito cardíaco é regulado pelo sistema nervoso autónomo e volume sistólico, não pela 1.ª Lei nos membros.",
-      "Está incorreta: As rodas giram por rolamento mecânico nos rolamentos de esferas, sem qualquer interrupção gravitacional."
-    ],
-    "nursingApplication": "Assegurar os pés nos apoios próprios antes de mover a cadeira de rodas é um procedimento obrigatório de enfermagem."
-  },
-  {
-    "id": 1325,
-    "topicId": 1,
-    "question": "Porque é que o cinto de segurança não deve ser colocado frouxo ou com folga excessiva no utente em cadeira de rodas?",
-    "options": [
-      "Porque o cinto frouxo atrai correntes eletrostáticas do pavimento que provocam queimaduras superficiais na pele.",
-      "Porque a folga no cinto reduz a aceleração gravitacional da Terra no quarto de internamento hospitalar.",
-      "Porque a folga permite que o corpo ganhe velocidade relativa antes de ser subitamente travado, gerando um impacto inercial violento.",
-      "Porque o cinto solto aumenta o coeficiente de atrito cinético entre as rodas de borracha e o piso do hospital."
-    ],
-    "correctIndex": 2,
-    "explanation": "Com folga, o doente move-se livremente no espaço da folga e atinge o cinto com velocidade, sofrendo uma desaceleração num tempo Δt curtíssimo.",
-    "distractorAnalysis": [
-      "Está incorreta: Cintos de tecido polimérico não acumulam correntes eletrostáticas que queimem a pele por folga de colocação.",
-      "Está incorreta: A gravidade terrestre g é constante e independente do ajuste de correias mecânicas de cadeiras de rodas.",
-      "Está incorreta: O atrito das rodas com o piso depende da carga vertical total e do piso, não da folga do cinto."
-    ],
-    "nursingApplication": "O cinto deve estar perfeitamente ajustado (permitindo a passagem de dois dedos entre o cinto e o corpo para conforto e circulação)."
-  },
-  {
-    "id": 1326,
-    "topicId": 1,
-    "question": "Qual é a recomendação de condução ao manobrar uma maca com doente grave para dentro de um elevador hospitalar?",
-    "options": [
-      "Entrar suavemente sem embater nas ombreiras da porta e posicionar a maca no centro da cabine antes de acionar a descida ou subida.",
-      "Entrar a correr a alta velocidade para que a inércia da maca impeça o fecho automático das portas de correr.",
-      "Deixar a cabeceira da maca projetada para fora da cabine para que o doente possa respirar ar exterior do patamar.",
-      "Destravar todos os sistemas de travões para que a maca possa deslizar livremente durante as acelerações do elevador."
-    ],
-    "correctIndex": 0,
-    "explanation": "A entrada suave previne impactos inerciais e centraliza a carga na cabine, garantindo estabilidade e conforto ao utente.",
-    "distractorAnalysis": [
-      "Está incorreta: Entrar a correr multiplica o risco de colisão e traumatismo; sistemas de fotocélula na porta evitam o fecho sem necessidade de choques.",
-      "Está incorreta: Deixar a maca fora da cabine é um perigo extremo de esmagamento contra o poço do elevador!",
-      "Está incorreta: A maca deve ser travada no interior do elevador para não deslizar com as acelerações verticais e horizontais."
-    ],
-    "nursingApplication": "O posicionamento correto de macas em elevadores é uma competência elementar de segurança do transporte hospitalar."
-  },
-  {
-    "id": 1327,
-    "topicId": 1,
-    "question": "Qual é a razão biofísica pela qual é mais económico energeticamente para o enfermeiro manter uma maca a velocidade constante do que andar aos solavancos?",
-    "options": [
-      "A velocidade constante anula a massa inercial do conjunto móvel, eliminando a resistência muscular durante as passagens de portas.",
-      "A velocidade constante exige apenas vencer o atrito cinético (∑F = 0); os solavancos exigem acelerar repetidamente a massa (F = m·a), consumindo mais energia muscular.",
-      "Os solavancos reduzem a frequência cardíaca do profissional devido ao efeito mecânico de ressonância no miocárdio ventricular.",
-      "A velocidade constante elimina o coeficiente de atrito estático das rodas com o piso cerâmico, facilitando a condução da maca."
-    ],
-    "correctIndex": 1,
-    "explanation": "Acelerar repetidamente a massa exige trabalho muscular adicional (W = F·d = m·a·d) em cada aceleração, multiplicando a fadiga.",
-    "distractorAnalysis": [
-      "Está incorreta: a massa inercial é constante e não se anula em velocidade constante; a vantagem resulta de não ter de acelerar a massa (a = 0).",
-      "Está incorreta: o trabalho repetido de aceleração e travagem exige forças adicionais (F = m·a), gerando fadiga física precoce no profissional.",
-      "Está incorreta: o coeficiente de atrito é uma propriedade de contacto entre as superfícies (borracha e pavimento) e não é anulado pela velocidade."
-    ],
-    "nursingApplication": "Manter uma cadência regular de passada em transportes longos poupa energia muscular e proporciona conforto ao doente transportado."
-  },
-  {
-    "id": 1328,
-    "topicId": 1,
-    "question": "Que risco clínico direto decorre da oscilação inercial violenta de um sistema de soros durante travagens bruscas de uma maca?",
-    "options": [
-      "Aceleração excessiva do débito de perfusão com risco de sobrecarga volêmica aguda no sistema circulatório central do doente.",
-      "Desvio da agulha ou cateter para fora da veia provocado pelo refluxo de ar atmosférico através do filtro da câmara de gotejamento.",
-      "Aumento da pressão osmótica plasmática decorrente da vibração mecânica das moléculas de eletrólitos na câmara conta-gotas.",
-      "Tração mecânica sobre o cateter venoso periférico, com risco de exteriorização acidental do cateter ou laceração da veia puncionada."
-    ],
-    "correctIndex": 3,
-    "explanation": "A tubuladura esticada transmite a força inercial do frasco à cânula intravenosa, podendo arrancá-la e provocar flebite mecânica ou hematoma.",
-    "distractorAnalysis": [
-      "Está incorreta: embora possa ocorrer uma variação pontual de gotejamento, o perigo físico imediato é a tração mecânica direta sobre o acesso vascular.",
-      "Está incorreta: as câmaras de gotejamento possuem membranas hidrofóbicas que impedem a entrada de ar enquanto houver fluido na linha.",
-      "Está incorreta: a pressão osmótica depende da concentração molar de solutos e não de vibrações ou forças inerciais de desaceleração da maca."
-    ],
-    "nursingApplication": "O enfermeiro deve garantir folga suficiente na linha de perfusão e fixar o tubo ao membro com penso adesivo seguro."
-  },
-  {
-    "id": 1329,
-    "topicId": 1,
-    "question": "No transporte de um doente com Traumatismo Cranioencefálico (TCE) grave e hipertensão intracraniana, qual é o impacto de desacelerações bruscas?",
-    "options": [
-      "O encéfalo sofre movimentos inerciais no interior da caixa craniana, podendo aumentar a pressão intracraniana e agravar lesões secundárias.",
-      "Os ossos parietais e frontais sofrem desmineralização óssea aguda provocada pelas microvibrações inerciais do piso hospitalar.",
-      "Ocorre uma paragem imediata do fluxo sanguíneo carotídeo provocada pelo encerramento forçado das válvulas venosas jugulares.",
-      "O líquor cefalorraquidiano perde a sua densidade normal, deixando de exercer o efeito amortecedor hidrostático natural sobre o córtex."
-    ],
-    "correctIndex": 0,
-    "explanation": "O cérebro flutua no líquor; desacelerações inerciais projetam a massa encefálica contra as paredes ósseas do crânio (mecanismo de golpe-contragolpe).",
-    "distractorAnalysis": [
-      "Está incorreta: a desmineralização óssea é um processo metabólico crónico que requer semanas de imobilização e não ocorre em travagens de ambulância.",
-      "Está incorreta: as artérias carótidas mantêm o fluxo por gradiente de pressão gerado pelo miocárdio; as veias jugulares não têm válvulas obstrutivas centrais.",
-      "Está incorreta: a densidade física do líquor não é alterada por acelerações mecânicas, mantendo o seu papel hidrostático constante."
-    ],
-    "nursingApplication": "O transporte de doentes neurocríticos exige acelerações mínimas e alinhamento neutro da cabeça para proteger a perfusão cerebral."
-  },
-  {
-    "id": 1330,
-    "topicId": 1,
-    "question": "Ao transpor juntas de dilatação no pavimento de corredores hospitalares com um doente crítico na maca, que cuidado biomecânico deve ser tomado?",
-    "options": [
-      "Acelerar vigorosamente para que a maca salte sobre a junta de dilatação sem que as rodas toquem na ranhura.",
-      "Pedir ao doente que sustenha a respiração em apneia absoluta durante os dez metros seguintes à junta de dilatação.",
-      "Reduzir a velocidade para o mínimo antes da junta e transpor o desnível lentamente, amortecendo o impacto inercial vertical.",
-      "Inclinar a maca para trás apoiando-a apenas em duas rodas para diminuir a superfície de contacto."
-    ],
-    "correctIndex": 2,
-    "explanation": "Desníveis e juntas de piso geram acelerações verticais bruscas (trepidação inercial) que sobrecarregam drenos, feridas e acessos vasculares.",
-    "distractorAnalysis": [
-      "Está incorreta: Acelerar multiplica a violência do impacto mecânico nas rodas e transmite choques dolorosos à coluna do utente.",
-      "Está incorreta: A apneia não protege o corpo contra choques mecânicos articulares transmitidos pela estrutura da maca.",
-      "Está incorreta: Inclinar a maca em duas rodas é uma manobra instável com risco extremo de perda de controlo e queda do doente."
-    ],
-    "nursingApplication": "A redução da velocidade em desníveis é uma demonstração prática de empatia e cuidado biomecânico com o doente frágil."
-  },
-  {
-    "id": 1331,
-    "topicId": 1,
-    "question": "Qual é a condição estrita para que um doente numa cadeira de rodas possa ser considerado em equilíbrio translacional?",
-    "options": [
-      "A velocidade da cadeira de rodas deve ser superior a 15 km/h para que a inércia compense o peso do utente.",
-      "A soma vetorial de todas as forças externas que atuam sobre o doente e a cadeira deve ser igual a zero (∑F = 0).",
-      "O doente deve manter as duas mãos firmemente unidas sobre a cabeça durante todo o tempo de transporte.",
-      "A cadeira de rodas deve ser transportada exclusivamente sobre pisos de madeira encerada de alta densidade."
-    ],
-    "correctIndex": 1,
-    "explanation": "A primeira condição de equilíbrio (translacional) exige ∑F = 0, quer em repouso estático, quer em velocidade constante retilínea.",
-    "distractorAnalysis": [
-      "Está incorreta: Velocidades elevadas aumentam o risco e a energia cinética, não sendo condição para equilíbrio de forças.",
-      "Está incorreta: A posição das mãos não dita a condição matemática de equilíbrio do somatório vetorial de forças.",
-      "Está incorreta: O tipo de piso afeta o atrito, mas o equilíbrio depende estritamente de a resultante das forças ser nula."
-    ],
-    "nursingApplication": "O equilíbrio translacional garante um percurso suave, sem acelerações prejudiciais à recuperação do doente."
-  },
-  {
-    "id": 1332,
-    "topicId": 1,
-    "question": "Qual é a conduta ergonómica correta ao manobrar o carrinho de emergência em pisos com ligeira inclinação?",
-    "options": [
-      "Conduzir o equipamento puxando-o com apenas uma das mãos enquanto caminha de costas para observar os obstáculos à retaguarda.",
-      "Empurrar o carrinho com força máxima no início da descida para que a inércia vença o atrito com o piso até ao final da rampa.",
-      "Apoiar todo o peso do tronco sobre a bancada superior do carrinho para aumentar a aderência dos rodízios dianteiros ao solo.",
-      "Caminhar à frente ou manter as duas mãos firmes nas pegas de condução, aplicando força de retenção contínua para evitar a aceleração inercial."
-    ],
-    "correctIndex": 3,
-    "explanation": "Em planos inclinados atua a componente tangencial do peso; manter as duas mãos firmes assegura o controlo mecânico da trajetória.",
-    "distractorAnalysis": [
-      "Está incorreta: caminhar de costas com uma só mão reduz drasticamente o controlo do carrinho e aumenta muito o risco de tropeção e queda.",
-      "Está incorreta: empurrar o carrinho numa rampa descendente acelera a carga perigosamente, tornando a paragem de emergência impossível.",
-      "Está incorreta: debruçar-se sobre o carrinho desestabiliza a postura do enfermeiro e pode provocar o capotamento do equipamento médico."
-    ],
-    "nursingApplication": "A atenção contínua e controlo bimanual garantem a chegada rápida e segura do carrinho de paragem à cabeceira do utente."
-  },
-  {
-    "id": 1333,
-    "topicId": 1,
-    "question": "Qual das seguintes combinações de unidades no Sistema Internacional é dimensionalmente equivalente a 1 Newton?",
-    "options": [
-      "kg · m · s⁻² (quilograma metro por segundo ao quadrado).",
-      "kg · m² · s⁻² (quilograma metro quadrado por segundo ao quadrado).",
-      "kg · m · s⁻¹ (quilograma metro por segundo).",
-      "kg · m⁻¹ · s⁻² (quilograma por metro e por segundo ao quadrado)."
-    ],
-    "correctIndex": 0,
-    "explanation": "Dimensionalmente: [F] = [M] · [L] · [T]⁻² = kg · m/s² = kg · m · s⁻².",
-    "distractorAnalysis": [
-      "Está incorreta: kg·m²·s⁻² é a dimensão de Joule (unidade de trabalho e energia mecânica).",
-      "Está incorreta: kg·m·s⁻¹ é a dimensão de quantidade de movimento (momento linear) ou impulso.",
-      "Está incorreta: kg·m⁻¹·s⁻² é a dimensão de Pascal (unidade de pressão mecânica, N/m²)."
-    ],
-    "nursingApplication": "Evita erros em cálculos de biofísica aplicada à administração de trações mecânicas."
-  },
-  {
-    "id": 1334,
-    "topicId": 1,
-    "question": "Se um dispositivo ergonómico de elevação exerce uma força vertical ascendente de 700 N sobre um utente de 70 kg, que aceleração resultante vertical inicial imprime (adotando g = 10 m/s²)?",
-    "options": [
-      "10 m/s², acelerando o utente verticalmente com movimento uniformemente acelerado igual à aceleração da gravidade local.",
-      "Zero m/s², pois o peso do utente é P = m·g = 700 N, pelo que a força resultante é nula (700 N - 700 N = 0 N) e o corpo fica em equilíbrio.",
-      "5 m/s², correspondente à divisão direta da força aplicada pela aceleração gravitacional terrestre de referência.",
-      "1 m/s², resultante da diferença aritmética simples entre a massa corporal do doente e a tração exercida pelo arnês."
-    ],
-    "correctIndex": 1,
-    "explanation": "Força resultante = F_elevador - P = 700 N - (70 kg · 10 m/s²) = 0 N. Com F_res = 0, a = 0 (equilíbrio translacional).",
-    "distractorAnalysis": [
-      "Está incorreta: para acelerar a 10 m/s² para cima, a força de elevação teria de ser o dobro do peso (1400 N), aplicando ∑F = m·a.",
-      "Está incorreta: a aceleração resulta da 2.ª Lei (a = ∑F / m); dividir 700 N por 10 m/s² dá a massa em kg e não uma aceleração.",
-      "Está incorreta: grandezas com unidades diferentes (massa em kg e força em N) não podem ser subtraídas diretamente na física."
-    ],
-    "nursingApplication": "Demonstra que para elevar um doente do leito é necessário superar ligeiramente o peso no arranque."
-  },
-  {
-    "id": 1335,
-    "topicId": 1,
-    "question": "Se a força resultante sobre um carrinho de emergência for duplicada mantendo-se a massa inalterada, o que acontecerá à sua aceleração?",
-    "options": [
-      "A aceleração permanecerá rigorosamente inalterada porque a massa do carrinho com medicamentos é fixa.",
-      "A aceleração será reduzida para metade devido ao atrito parasita das rodas giratórias de borracha.",
-      "A aceleração aumentará quatro vezes de acordo com a lei quadrática da dissipação hidrodinâmica.",
-      "A aceleração será exatamente duplicada, pois a aceleração é diretamente proporcional à força resultante aplicada."
-    ],
-    "correctIndex": 3,
-    "explanation": "De a = F/m, se F passa a 2F com m constante, então a' = 2F/m = 2a (proporcionalidade direta).",
-    "distractorAnalysis": [
-      "Está incorreta: A aceleração varia em proporção direta com a força; se a força dobra, a aceleração tem de dobrar.",
-      "Está incorreta: A aceleração não se reduz para metade quando se aumenta o esforço motor na ausência de travões.",
-      "Está incorreta: A relação entre força e aceleração é linear simples, não exponencial quadrática."
-    ],
-    "nursingApplication": "Mostra ao enfermeiro que empurrar com o dobro da força faz o equipamento atingir a velocidade de marcha no dobro da rapidez."
-  },
-  {
-    "id": 1336,
-    "topicId": 1,
-    "question": "Se quisermos que um utente de 100 kg atinja a mesma aceleração de arranque que um utente de 50 kg, que ajuste de força deve ser feito pelo enfermeiro?",
-    "options": [
-      "O enfermeiro tem de duplicar a força aplicada (exercer duas vezes mais força sobre o utente de 100 kg).",
-      "O enfermeiro pode aplicar exatamente metade da força, pois a gravidade auxilia a massa superior.",
-      "O enfermeiro deve manter rigorosamente a mesma força e aguardar que o atrito estático se anule.",
-      "O enfermeiro tem de quadruplicar a força de acordo com o coeficiente de sustentação elástica."
-    ],
-    "correctIndex": 0,
-    "explanation": "Para manter a mesma aceleração a: F1 = m1·a = 50·a; F2 = m2·a = 100·a = 2·F1 (é necessária o dobro da força).",
-    "distractorAnalysis": [
-      "Está incorreta: Metade da força produziria apenas 25% da aceleração pretendida no corpo mais pesado.",
-      "Está incorreta: Manter a mesma força geraria apenas metade da aceleração, não a mesma.",
-      "Está incorreta: A força necessária é proporcional à massa (fator 2), não ao quadrado da massa (fator 4)."
-    ],
-    "nursingApplication": "Orienta a distribuição de tarefas na equipa: doentes com maior massa requerem assistência de dois profissionais."
-  },
-  {
-    "id": 1337,
-    "topicId": 1,
-    "question": "A tolerância biológica humana ao trauma de desaceleração súbita (forças em g) depende criticamente de:",
-    "options": [
-      "Duplica a força média de impacto sentida pelo corpo humano, agravando severamente o risco de lesões traumáticas internas.",
-      "Reduz a força média de impacto para metade (F = Δp / Δt), diminuindo significativamente a gravidade das lesões mecânicas.",
-      "Mantém a força média de impacto rigorosamente inalterada, dado que a velocidade inicial do veículo antes da colisão era constante.",
-      "Anula completamente a energia mecânica do choque antes de qualquer deformação dos tecidos biológicos do ocupante."
-    ],
-    "correctIndex": 1,
-    "explanation": "Estudos biomecânicos demonstram que o corpo tolera maiores acelerações se durarem milissegundos e forem transversais ao tórax.",
-    "distractorAnalysis": [
-      "Está incorreta: pelo teorema do impulso (F_média = Δp / Δt), aumentar o tempo de impacto reduz a força e não a duplica.",
-      "Está incorreta: a força média depende criticamente da duração do impacto; a velocidade inicial fixa apenas o momento linear inicial.",
-      "Está incorreta: a energia cinética dissipa-se em trabalho de deformação mecânica ao longo do tempo, não se anulando sem transferência de energia."
-    ],
-    "nursingApplication": "Fundamenta o posicionamento dos bancos na célula sanitária da ambulância (de costas para a marcha para apoiar as costas)."
-  },
-  {
-    "id": 1338,
-    "topicId": 1,
-    "question": "Se o tempo de deformação da viatura for aumentado de 0,1 s para 0,2 s (duplicando a duração da desaceleração), o que acontece ao valor de g suportado?",
-    "options": [
-      "O valor duplica para cerca de 45,4 g devido ao efeito de fadiga mecânica dos materiais de deformação.",
-      "O valor permanece em 22,7 g porque a velocidade inicial da viatura era rigorosamente de 80 km/h.",
-      "O valor cai para zero porque desacelerações superiores a 0,15 s são totalmente inócuas para o organismo.",
-      "O valor cai para metade (cerca de 11,3 g em vez de 22,7 g), reduzindo substancialmente a severidade potencial das lesões."
-    ],
-    "correctIndex": 3,
-    "explanation": "Como a = Δv/Δt, duplicar o denominador Δt reduz a aceleração e o número de g a metade (222 / 2 = 111 m/s² ⇒ 11,3 g).",
-    "distractorAnalysis": [
-      "Está incorreta: Aumentar a duração da colisão diminui a aceleração, nunca a duplica.",
-      "Está incorreta: A aceleração depende do tempo gasto a parar; mesma velocidade com mais tempo gera menor aceleração.",
-      "Está incorreta: 11,3 g continua a ser uma aceleração violenta e perigosa, longe de ser inócua para o organismo humano."
-    ],
-    "nursingApplication": "Ilustra o sucesso da tecnologia automóvel de zonas de absorção programada de impacto nos veículos de socorro."
-  },
-  {
-    "id": 1339,
-    "topicId": 1,
-    "question": "A que equivale, em termos comparativos da vida prática, ser projetado com uma força de 15.540 N contra uma parede rígida?",
-    "options": [
-      "Ao impacto resultante de cair desamparado de um prédio de vários andares ou ter a cabeça esmagada por uma prensa industrial.",
-      "A desacelerações superiores a 5 g provocadas por uma travagem brusca de emergência a 80 km/h.",
-      "A colisões frontais a velocidades superiores a 15 km/h contra obstáculos rígidos sem cinto de segurança.",
-      "A acelerações laterais superiores a 3 g durante manobras de evasão em estradas molhadas."
-    ],
-    "correctIndex": 2,
-    "explanation": "15.540 N equivale ao peso de uma massa de cerca de 1585 kg (P = m·g ⇒ m = 15540 / 9,8 ≈ 1585 kg), ou seja, um automóvel médio.",
-    "distractorAnalysis": [
-      "Está incorreta: travagens de emergência a 80 km/h podem gerar 5-8 g mas geralmente não atingem 22,7 g; a referência do problema são colisões de alta energia, não travagens normais.",
-      "Está incorreta: colisões a 15 km/h raramente geram 22,7 g; o limiar de 22,7 g corresponde a impactos de muito maior energia cinética.",
-      "Está incorreta: acelerações laterais de 3 g em manobras de evasão estão muito abaixo dos 22,7 g referidos; são perigosas, mas não atingem esse nível em condições normais de tráfego."
-    ],
-    "nursingApplication": "Desmistifica a falsa perceção de que 'uma pessoa consegue segurar-se com as mãos' numa colisão a 80 km/h."
-  },
-  {
-    "id": 1340,
-    "topicId": 1,
-    "question": "Em acidentes de viação, a fase denominada 'terceira colisão' na cinemática do trauma corresponde a:",
-    "options": [
-      "À colisão dos órgãos internos do corpo contra as paredes anatómicas das cavidades, por inércia, quando o corpo desacelera bruscamente.",
-      "Ao arrefecimento súbito dos órgãos internos causado pela entrada de ar frio através das vias respiratórias durante o impacto.",
-      "À compressão direta dos órgãos pelo músculo diafragma que contrai involuntariamente ao detetar a desaceleração brusca.",
-      "Ao colapso das veias cavas por redução da pressão venosa sistémica durante a fase de aceleração negativa."
-    ],
-    "correctIndex": 2,
-    "explanation": "1.ª colisão: veículo contra obstáculo; 2.ª colisão: ocupante contra o habitáculo/cinto; 3.ª colisão: órgãos internos contra o esqueleto.",
-    "distractorAnalysis": [
-      "Está incorreta: o arrefecimento súbito por ar frio não é um mecanismo de lesão interna em colisões; o ar inspirado durante impacto não tem temperatura suficientemente baixa para causar dano orgânico.",
-      "Está incorreta: embora o diafragma contraia durante impactos (produzindo o 'bater de ar'), não é o mecanismo primário das lesões por desaceleração nos órgãos maciços.",
-      "Está incorreta: o colapso das veias cavas por redução de pressão venosa não é o mecanismo principal de lesão em colisão; as lesões por desaceleração devem-se à inércia dos órgãos, não à variação da pressão venosa."
-    ],
-    "nursingApplication": "Orienta a avaliação diagnóstica de enfermagem para lesões viscerais ocultas mesmo sem ferimentos externos visíveis."
-  },
-  {
-    "id": 1341,
-    "topicId": 1,
-    "question": "Um frasco de vidro de soro de 500 mL (massa total aproximada 0,6 kg com o suporte) solto a 80 km/h que colide com a face de um ocupante em 0,02 s gera uma força de:",
-    "options": [
-      "666 N, obtida por a = Δv/Δt = 22,2/0,02 = 1110 m/s² e depois F = m·a = 0,6 · 1110 = 666 N.",
-      "333 N, calculada por F = 0,6 · (22,2 / 0,04) = 0,6 · 555 = 333 N, duplicando erroneamente o tempo de paragem.",
-      "1332 N, calculada por F = 0,6 · (22,2 / 0,01) = 0,6 · 2220 = 1332 N, dividindo o tempo de paragem por dois.",
-      "44,4 N, calculada por F = m · Δv = 0,6 · 22,2 / 0,6 = 22,2 N, confundindo impulso com força média."
-    ],
-    "correctIndex": 0,
-    "explanation": "a = 22,22 / 0,02 = 1111 m/s²; F = 0,6 · 1111 ≈ 666,6 N. Uma força de mais de 600 N numa área pontual quebra ossos faciais e perfura os olhos.",
-    "distractorAnalysis": [
-      "Está incorreta: usar Δt = 0,04 s (dobro do correto) reduz a aceleração para metade e a força para metade; o enunciado indica Δt = 0,02 s.",
-      "Está incorreta: usar Δt = 0,01 s (metade do correto) duplica a aceleração e a força; o Δt correto é 0,02 s conforme enunciado.",
-      "Está incorreta: F = m·Δv sem dividir pelo tempo calcula o impulso (unidade N·s), não a força média; a força média requer divisão por Δt."
-    ],
-    "nursingApplication": "Demonstra que mesmo objetos aparentemente inócuos e pequenos se tornam letais quando soltos em alta velocidade."
-  },
-  {
-    "id": 1342,
-    "topicId": 1,
-    "question": "Como se define fisicamente o Impulso (I) de uma força constante que atua sobre um corpo durante um intervalo de tempo Δt?",
-    "options": [
-      "O quociente entre a força aplicada e a aceleração média desenvolvida pelo corpo: I = F / a.",
-      "O produto do vetor força pelo intervalo de tempo de atuação: I = F · Δt (medido em Newton-segundo, N·s).",
-      "A soma da energia potencial com a energia cinética armazenada nos tecidos corporais: I = Ep + Ec.",
-      "A derivada da temperatura em relação ao espaço tridimensional euclidiano: I = dT / dx."
-    ],
-    "correctIndex": 1,
-    "explanation": "Por definição: I = F · Δt. Dimensionalmente, N · s = (kg·m/s²) · s = kg·m/s, que é a dimensão de quantidade de movimento.",
-    "distractorAnalysis": [
-      "Está incorreta: F/a é a massa inercial do corpo (m), não o impulso da força.",
-      "Está incorreta: Ep + Ec é a energia mecânica total do sistema, expressa em Joules (J) e não em N·s.",
-      "Está incorreta: dT/dx é um gradiente térmico espacial, sem relação com a mecânica clássica newtoniana."
-    ],
-    "nursingApplication": "Permite analisar colisões e variações bruscas de velocidade em contexto de transporte hospitalar."
-  },
-  {
-    "id": 1343,
-    "topicId": 1,
-    "question": "Porque é que os colchões hospitalares e almofadas de posicionamento utilizam espumas viscoelásticas que se deformam lentamente sob a pressão corporal?",
-    "options": [
-      "Para prolongar o tempo de adaptação mecânica e aumentar a área de distribuição da força de impacto, reduzindo a pressão local sobre a pele.",
-      "Para aumentar o coeficiente de atrito entre a bota e o solo, evitando que o pé escorregue durante a aterragem.",
-      "Para absorver a humidade do impacto e reduzir a temperatura da articulação tibiotársica durante o esforço prolongado.",
-      "Para criar uma câmara de pressão negativa que eleve o pé imediatamente após o impacto, reduzindo o tempo de contacto."
-    ],
-    "correctIndex": 2,
-    "explanation": "A deformação viscoelástica dissipa energia e acomoda a geometria corporal, reduzindo a pressão pontual (p = F/A).",
-    "distractorAnalysis": [
-      "Está incorreta: embora a aderência seja importante, a principal função biomecânica do acolchoamento não é o coeficiente de atrito, mas sim a absorção de energia cinética pela deformação.",
-      "Está incorreta: o acolchoamento não tem função de absorção de humidade nem de regulação térmica articular; essa função pertence a outros elementos do equipamento de proteção.",
-      "Está incorreta: não existe 'câmara de pressão negativa' no acolchoamento das botas; o mecanismo protetor é a deformação do material que aumenta Δt e a área de distribuição da força."
-    ],
-    "nursingApplication": "Permite ao enfermeiro escolher as almofadas de suporte postural mais adequadas a cada anatomia."
-  },
-  {
-    "id": 1344,
-    "topicId": 1,
-    "question": "Quando um utente cai no chão de linóleo sobre uma camada amortecedora de borracha espessa em vez de um piso de cerâmica rígida, a física da proteção consiste em:",
-    "options": [
-      "Prolongar a duração do impacto (Δt maior) graças à deformação do piso elástico, reduzindo assim a força média F = Δp / Δt.",
-      "Eliminar completamente o momento linear do atleta durante o salto, tornando o impacto com o solo nulo.",
-      "Aumentar a velocidade de aterragem para que o atleta contacte o solo com mais energia e se projete mais alto.",
-      "Converter toda a energia cinética em energia potencial elástica armazenada no piso, que é depois devolvida ao atleta."
-    ],
-    "correctIndex": 3,
-    "explanation": "F_médio = m·Δv / Δt. Aumentando o tempo de paragem através da resiliência do pavimento, a força diminui drasticamente, prevenindo fraturas de fémur.",
-    "distractorAnalysis": [
-      "Está incorreta: o piso elástico não elimina o momento linear; a variação de momento (Δp) depende da velocidade de impacto, que não é alterada pelo tipo de piso.",
-      "Está incorreta: aumentar a velocidade de aterragem aumenta a energia cinética e as forças de impacto; o objetivo do piso elástico é reduzir as forças, não aumentar a velocidade.",
-      "Está incorreta: embora alguma energia seja armazenada e devolvida, a função primária do piso de proteção é dissipar energia e prolongar o tempo de impacto, não maximizar a restituição elástica."
-    ],
-    "nursingApplication": "Fundamenta o investimento hospitalar em pavimentos amortecedores nas enfermarias de geriatria e psiquiatria."
-  },
-  {
-    "id": 1345,
     "topicId": 1,
     "question": "Qual é a relação conceitual correta entre a Massa de um corpo e a sua Inércia mecânica?",
     "options": [
@@ -6562,7 +6012,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Um utente com 120 kg tem o dobro da inércia de um utente com 60 kg, exigindo o dobro da força para a mesma aceleração."
   },
   {
-    "id": 1346,
+    "id": 1317,
     "topicId": 1,
     "question": "Qual das seguintes afirmações sintetiza com rigor a distinção física entre Massa e Peso?",
     "options": [
@@ -6581,7 +6031,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Distinguir massa de peso é essencial para calcular forças exercidas sobre leitos e macas a partir do registo na balança."
   },
   {
-    "id": 1347,
+    "id": 1318,
     "topicId": 1,
     "question": "Porque é que a distinção entre massa e peso é relevante ao empurrar um utente numa cadeira de rodas num corredor horizontal plano?",
     "options": [
@@ -6600,7 +6050,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Compreender que maior massa exige maior força de empurrão horizontal previne fadiga lombar em transportes hospitalares longos."
   },
   {
-    "id": 1348,
+    "id": 1319,
     "topicId": 1,
     "question": "Se um enfermeiro tentar travar uma cadeira de rodas em movimento aplicando uma força oposta de 100 N enquanto a inércia e o piso exercem 60 N no sentido do avanço, qual é a resultante de travagem?",
     "options": [
@@ -6619,7 +6069,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Compreender a desaceleração permite ao enfermeiro dosear a força de travagem em rampas hospitalares sem sobressaltos."
   },
   {
-    "id": 1349,
+    "id": 1320,
     "topicId": 1,
     "question": "Como é formalmente enunciada a 1.ª Lei de Newton (Lei da Inércia) no estudo das Leis de Newton?",
     "options": [
@@ -6638,7 +6088,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "A Lei da Inércia explica porque um doente numa maca em movimento tende a manter a marcha se a maca parar subitamente."
   },
   {
-    "id": 1350,
+    "id": 1321,
     "topicId": 1,
     "question": "Qual é a grandeza física escalar fundamental que serve de medida quantitativa da Inércia de um corpo?",
     "options": [
@@ -6657,7 +6107,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Um utente bariátrico de 130 kg possui maior inércia do que um utente de 65 kg, exigindo maiores forças para travar ou acelerar."
   },
   {
-    "id": 1351,
+    "id": 1322,
     "topicId": 1,
     "question": "Se um doente idoso sofrer uma paragem súbita dos pés por tropeçamento num obstáculo no chão, o que acontece ao seu tronco pela 1.ª Lei de Newton?",
     "options": [
@@ -6676,7 +6126,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "A remoção de cabos e tapetes soltos no corredor hospitalar elimina obstáculos que provocam quedas por inércia."
   },
   {
-    "id": 1352,
+    "id": 1323,
     "topicId": 1,
     "question": "Quando um enfermeiro transporta uma cadeira de rodas e para subitamente, que comportamento é esperado do corpo do doente se não estiver seguro?",
     "options": [
@@ -6695,7 +6145,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "O uso de cinto pélvico e a colocação dos pés nos respetivos apoios da cadeira de rodas evitam ejeções anteriores em travagens."
   },
   {
-    "id": 1353,
+    "id": 1324,
     "topicId": 1,
     "question": "De acordo com a 1.ª Lei de Newton, ter forças aplicadas sobre um corpo impede que ele esteja em equilíbrio estático?",
     "options": [
@@ -6714,7 +6164,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Mostra ao enfermeiro que o repouso do utente resulta de um balanço vetorial perfeito entre forças opostas."
   },
   {
-    "id": 1354,
+    "id": 1325,
     "topicId": 1,
     "question": "Como é que a 1.ª Lei de Newton explica que os passageiros de um veículo se sintam 'empurrados contra a porta' durante uma curva apertada para a esquerda?",
     "options": [
@@ -6733,7 +6183,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Nas curvas rápidas com a ambulância, os doentes deitados na maca necessitam de contenções laterais para não rolarem por inércia."
   },
   {
-    "id": 1355,
+    "id": 1326,
     "topicId": 1,
     "question": "Para fazer parar o corpo do enfermeiro que viaja a 80 km/h, o que é obrigatoriamente necessário de acordo com a 1.ª Lei de Newton?",
     "options": [
@@ -6752,64 +6202,45 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "A força externa exercida pelo cinto de segurança dissipa a velocidade de forma progressiva e controlada."
   },
   {
-    "id": 1356,
+    "id": 1327,
     "topicId": 1,
-    "question": "Durante o transporte de uma maca no corredor do hospital, o enfermeiro empurra com os pés do doente voltados para a frente. Numa travagem rápida, para onde se desloca o doente por inércia?",
+    "question": "Como atua o cinto pélvico de segurança na contenção inercial de um utente com fraqueza muscular do tronco?",
     "options": [
-      "Desloca-se para trás, comprimindo o crânio contra a cabeceira da maca com risco de traumatismo cervical grave.",
-      "Desloca-se lateralmente contra as grades de proteção devido ao efeito do atrito cinético com o colchão do leito.",
-      "Permanece rigorosamente imóvel em relação à maca, anulando a energia cinética através do tónus muscular basal.",
-      "Desloca-se para a frente, pressionando os pés contra o painel terminal da maca, que atua como barreira natural de retenção."
+      "Aplica uma força de restrição nas cristas ilíacas que impede o deslizamento anterior da bacia e mantém a estabilidade no assento.",
+      "Substitui a força dos músculos dorsais através de tração contínua que puxa a coluna lombar para cima em descompressão discal.",
+      "Aumenta a força normal exercida pelo assento ao elevar o centro de gravidade do utente para cima da linha dos apoios de braços.",
+      "Elimina as forças de atrito entre as coxas e o assento, permitindo que a bacia deslize livremente sem resistências mecânicas."
     ],
-    "correctIndex": 3,
-    "explanation": "Pela 1.ª Lei de Newton, o corpo continua o movimento para a frente no sentido da marcha; ter os pés para a frente protege o crânio.",
+    "correctIndex": 0,
+    "explanation": "O cinto pélvico ancora a bacia ao ângulo do assento, impedindo que a inércia em travagens ou o deslizamento postural ejetem o doente.",
     "distractorAnalysis": [
-      "Está incorreta: na travagem com os pés voltados para a frente o corpo tende a avançar no sentido original do movimento, ou seja, na direção dos pés.",
-      "Está incorreta: a desaceleração longitudinal produz deslocamento inercial puramente para a frente e não lateral a menos que haja curva associada.",
-      "Está incorreta: o doente deitado e relaxado não tem sustentação muscular rígida suficiente para impedir o deslizamento inercial."
+      "Está incorreta: o cinto pélvico exerce contenção anterior e oblíqua na bacia, não realizando tração vertical de descompressão na coluna.",
+      "Está incorreta: o cinto ajuda a fixar a bacia mantendo o centro de gravidade baixo e estável, e não elevando-o perigosamente.",
+      "Está incorreta: o objetivo do cinto é prevenir o escorregamento anterior da bacia, mantendo a postura adequada e segura no assento."
     ],
-    "nursingApplication": "Transportar o doente com os pés para a frente é a norma de segurança para proteger a cabeça e manter o contacto visual."
+    "nursingApplication": "A colocação correta do cinto pélvico a 45° evita o deslizamento sacral e protege a integridade física do utente frágil."
   },
   {
-    "id": 1357,
+    "id": 1328,
     "topicId": 1,
-    "question": "Qual é a velocidade com que o corpo de um doente desliza sobre o colchão se a maca a 2 m/s parar instantaneamente contra uma parede?",
+    "question": "Se uma cadeira de rodas for travada subitamente no elevador a 1 m/s e o doente estiver com cinto pélvico ajustado, que força atua sobre o cinto?",
     "options": [
-      "Para instantaneamente a 0 m/s no mesmo milissegundo em que a maca atinge o obstáculo rígido.",
-      "Inicia o deslizamento a 2 m/s em relação à maca, mantendo a velocidade original por inércia até o atrito ou anteparo o travar.",
-      "Adquire uma velocidade de 20 m/s devido à amplificação gravitacional induzida pelo impacto frontal.",
-      "Recua para trás a 2 m/s na direção oposta ao movimento prévio por efeito de ricochete elástico puro."
+      "Uma força gravitacional descendente que multiplica a massa do utente por um coeficiente escalar de vinte.",
+      "Uma força de tração horizontal exercida pela pelve do doente sobre o cinto, equilibrada pela força normal do cinto sobre o corpo.",
+      "Uma força puramente térmica que dissipa o suor da pele sob a forma de vapor condensado estéril.",
+      "Uma força nula, uma vez que os cintos de segurança são imunes a qualquer solicitação de tensão mecânica."
     ],
     "correctIndex": 1,
-    "explanation": "Pela 1.ª Lei de Newton, na ausência de forças prévias de retenção, o corpo mantém a sua velocidade inercial de 2 m/s.",
+    "explanation": "A inércia faz a bacia tender a avançar; o cinto é tracionado e exerce uma força de retenção sobre a pelve para a desacelerar.",
     "distractorAnalysis": [
-      "Está incorreta: Para parar a 0 m/s no mesmo instante que a maca seria necessária uma fixação rígida com cintos de retenção esticados.",
-      "Está incorreta: A velocidade não é amplificada dez vezes; a velocidade máxima inercial é a velocidade que o corpo já possuía.",
-      "Está incorreta: O corpo avança no sentido do movimento; o recuo só ocorreria após embate elástico com o painel dianteiro."
+      "Está incorreta: A força inercial na travagem horizontal é horizontal, não multiplicando a massa gravitacional vertical.",
+      "Está incorreta: A tensão mecânica no cinto não dissipa suor em vapor estéril.",
+      "Está incorreta: O cinto sofre tensão mecânica real mensurável em Newtons (F = m·a) que suporta a desaceleração do utente."
     ],
-    "nursingApplication": "Mostra porque mesmo a velocidades baixas (caminhada a 2 m/s ≈ 7,2 km/h) a inércia provoca deslizamentos perigosos no leito."
+    "nursingApplication": "O ajuste firme (sem folga excessiva) do cinto assegura que a desaceleração atue imediatamente sem embate inicial brusco."
   },
   {
-    "id": 1358,
-    "topicId": 1,
-    "question": "Se um doente for transportado numa maca em curva apertada para a direita sem grades laterais levantadas, o que dita a 1.ª Lei de Newton?",
-    "options": [
-      "O corpo tende a tombar para o lado direito da curva, acompanhando a inclinação angular dos rodízios da maca hospitalar.",
-      "O corpo tende a prosseguir em linha reta, deslizando para o bordo esquerdo da maca com elevado risco de queda e traumatismo.",
-      "O corpo sofre uma compressão vertical axial intensa contra o colchão provocada pelo aumento transitório da gravidade.",
-      "O corpo trava instantaneamente o seu movimento de translação linear, bloqueando as rodas traseiras da maca médica."
-    ],
-    "correctIndex": 1,
-    "explanation": "A maca vira para a direita; o corpo, por inércia, quer continuar em linha reta, pelo que se projeta em relação à maca para o lado esquerdo.",
-    "distractorAnalysis": [
-      "Está incorreta: ao virar para a direita, a inércia projeta o corpo para o lado exterior (esquerdo) da trajetória curvilínea.",
-      "Está incorreta: a aceleração da gravidade mantém-se rigorosamente g ≈ 9,8 m/s² e a inércia em curva atua no plano horizontal.",
-      "Está incorreta: o movimento do doente não trava os rodízios da maca; o risco imediato é a perda de apoio e queda lateral."
-    ],
-    "nursingApplication": "As grades laterais impedem a queda lateral por inércia nas mudanças de direção em corredores hospitalares."
-  },
-  {
-    "id": 1359,
+    "id": 1329,
     "topicId": 1,
     "question": "Numa paragem de emergência do elevador durante a descida rápida, que força atua sobre o suporte e frasco de soro fixado na maca?",
     "options": [
@@ -6828,7 +6259,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Os mastros de soro devem estar firmemente aparafusados à estrutura da maca para não cederem em travagens bruscas de elevadores."
   },
   {
-    "id": 1360,
+    "id": 1330,
     "topicId": 1,
     "question": "Durante o transporte de uma maca a correr no corredor, se a maca travar bruscamente, o que acontece ao frasco de soro suspenso no mastro?",
     "options": [
@@ -6847,7 +6278,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fixar o frasco de soro com estabilizador e segurar a linha de perfusão previne a tração acidental do cateter venoso periférico."
   },
   {
-    "id": 1361,
+    "id": 1331,
     "topicId": 1,
     "question": "Num utente submetido a cirurgia abdominal recente, porque é que as travagens e arranques bruscos da maca provocam dor incisional aguda?",
     "options": [
@@ -6866,7 +6297,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "A condução suave e cuidadosa da maca é um cuidado de enfermagem essencial para o controlo da dor aguda pós-operatória."
   },
   {
-    "id": 1362,
+    "id": 1332,
     "topicId": 1,
     "question": "Num doente com drenagem torácica sob selo de água em transporte de emergência, qual é a precaução inercial essencial com o dreno?",
     "options": [
@@ -6885,7 +6316,26 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "O transporte seguro de sistemas de drenagem torácica exige suportes fixos que mantenham o frasco vertical e abaixo do leito."
   },
   {
-    "id": 1363,
+    "id": 1333,
+    "topicId": 1,
+    "question": "Um carrinho de paragem cardiorrespiratória completamente equipado tem uma massa de cerca de 70 kg. O que dita a 1.ª Lei de Newton ao empurrá-lo?",
+    "options": [
+      "O carrinho move-se com esforço muscular negligenciável porque a sua massa considerável anula o atrito com o pavimento hospitalar.",
+      "O carrinho atinge instantaneamente a velocidade pretendida sem necessidade de fase de arranque devido à rigidez da sua estrutura metálica.",
+      "A massa de 70 kg facilita as mudanças de direção rápidas em corredores estreitos devido à menor inércia angular dos seus rodízios.",
+      "O carrinho oferece uma inércia substancial à alteração de velocidade, exigindo força muscular para arrancar e força contrária para travar."
+    ],
+    "correctIndex": 3,
+    "explanation": "Massa de 70 kg significa inércia considerável: o enfermeiro tem de exercer força para o acelerar e antecipar a distância de paragem.",
+    "distractorAnalysis": [
+      "Está incorreta: uma maior massa aumenta a força normal (Fn = m·g) e, consequentemente, aumenta a força de atrito de rolamento nos rodízios.",
+      "Está incorreta: a 1.ª e 2.ª Leis de Newton exigem a aplicação de uma força resultante ao longo do tempo (impulso) para acelerar a massa até à velocidade de marcha.",
+      "Está incorreta: corpos de maior massa possuem maior inércia, dificultando acelerações, travagens e manobras de mudança de direção."
+    ],
+    "nursingApplication": "Conduzir o carrinho de paragem com as duas mãos firmes previne colisões inerciais com portas, paredes e pessoas nos corredores."
+  },
+  {
+    "id": 1334,
     "topicId": 1,
     "question": "Porque é que as gavetas do carrinho de paragem devem ter trincos de segurança ou selo inviolável durante a deslocação?",
     "options": [
@@ -6904,7 +6354,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "O selo intacto garante à equipa que o carrinho está completo e que as gavetas não se abrirão durante a corrida de emergência."
   },
   {
-    "id": 1364,
+    "id": 1335,
     "topicId": 1,
     "question": "Em manobras que envolvam vencer a inércia de doentes pesados no leito, qual é a indicação prioritária de saúde ocupacional?",
     "options": [
@@ -6923,7 +6373,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "A cultura de pedir ajuda e recorrer a tecnologia assistiva de mobilização é um indicador de excelência e segurança clínica."
   },
   {
-    "id": 1365,
+    "id": 1336,
     "topicId": 1,
     "question": "Qual é a mensagem-chave da 1.ª Lei de Newton que todo o enfermeiro deve reter para a sua segurança pessoal e dos doentes?",
     "options": [
@@ -6942,7 +6392,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Esta mensagem biofísica fundamental fundamenta a cultura de segurança e prevenção de lesões na prática clínica diária."
   },
   {
-    "id": 1366,
+    "id": 1337,
     "topicId": 1,
     "question": "Ao transpor um pequeno degrau ou desnível de soleira de porta com uma cadeira de rodas, porque é que o enfermeiro deve inclinar ligeiramente a cadeira para trás sobre as rodas grandes traseiras?",
     "options": [
@@ -6961,7 +6411,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Instrui a técnica correta de condução e superação de desníveis arquitetónicos em contexto assistencial."
   },
   {
-    "id": 1367,
+    "id": 1338,
     "topicId": 1,
     "question": "O que acontece quando as rodas de um suporte de soro alto colidem subitamente contra o batente de uma porta enquanto o doente continua a caminhar para a frente puxando o mastro?",
     "options": [
@@ -6980,26 +6430,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Alerta para a necessidade de ensinar o doente a conduzir o suporte segurando na haste central e abrandando em soleiras."
   },
   {
-    "id": 1368,
-    "topicId": 1,
-    "question": "Qual é a razão biomecânica para sincronizar o movimento de transferência contando '1, 2, 3... e vamos' em voz alta com o doente e com o colega de equipa?",
-    "options": [
-      "Serve unicamente para elevar a frequência respiratória de todos os intervenientes, aumentando o consumo de oxigénio pelas mitocôndrias dos músculos paravertebrais dos enfermeiros.",
-      "Tem como finalidade verificar o nível de consciência e orientação no tempo do utente, dispensando a necessidade de alinhamento postural da coluna vertebral durante a tração.",
-      "Garante que a força de atrito entre o lençol e o colchão se transforme numa força eletromotriz de deslizamento espontâneo no instante exato da contagem do número três.",
-      "Garante a coordenação temporal exata das forças mecânicas (∑F), combinando os picos de aceleração de todos os intervenientes e evitando sobrecargas assimétricas inesperadas sobre um único profissional."
-    ],
-    "correctIndex": 3,
-    "explanation": "A sincronização motora aproveita o impulso conjunto (I = F · Δt), permitindo que um movimento suave e contínuo vença a inércia do doente sem solavancos lesivos.",
-    "distractorAnalysis": [
-      "Está incorreta: o objetivo da contagem não é alterar parâmetros metabólicos ou respiratórios, mas coordenar a mecânica vetorial de tração.",
-      "Está incorreta: a contagem é um recurso ergonómico de sincronização física e não substitui os testes clínicos formais de avaliação neurológica.",
-      "Está incorreta: o atrito entre materiais sólidos é puramente resistivo e mecânico, não gerando forças eletromotrizes de propulsão."
-    ],
-    "nursingApplication": "Impacto físico e cinemático da sincronização verbal nas transferências em equipa."
-  },
-  {
-    "id": 1369,
+    "id": 1339,
     "topicId": 1,
     "question": "Dimensionalmente, a unidade Newton (N) no Sistema Internacional de Unidades é equivalente a:",
     "options": [
@@ -7018,7 +6449,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "A análise dimensional assegura que as fórmulas biomecânicas utilizadas em enfermagem estão corretas antes do cálculo clínico."
   },
   {
-    "id": 1370,
+    "id": 1340,
     "topicId": 1,
     "question": "Que força resultante é necessária para acelerar uma maca de transporte com 80 kg de massa à taxa de 0,5 m/s²?",
     "options": [
@@ -7037,7 +6468,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Calcula o esforço muscular que o enfermeiro necessita de aplicar nos membros superiores para acelerar o transporte."
   },
   {
-    "id": 1371,
+    "id": 1341,
     "topicId": 1,
     "question": "Um utente bariátrico com 120 kg de massa corporal está posicionado no centro do leito articulado. Que força peso exerce sobre a cama?",
     "options": [
@@ -7056,7 +6487,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Exige camas bariátricas reforçadas com motores elétricos de elevação capazes de suportar cargas superiores a 2500 N."
   },
   {
-    "id": 1372,
+    "id": 1342,
     "topicId": 1,
     "question": "Para um doente bariátrico com 140 kg de massa corporal, qual é a força gravítica que atua sobre o seu corpo (g = 9,8 m/s²)?",
     "options": [
@@ -7075,7 +6506,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "A transferência deste doente exige obrigatoriamente o recurso a elevadores mecânicos de transferência (gruas) ou equipa reforçada."
   },
   {
-    "id": 1373,
+    "id": 1343,
     "topicId": 1,
     "question": "Porque é que é significativamente mais fácil empurrar um carrinho de pensos vazio do que um carrinho de emergência completamente carregado?",
     "options": [
@@ -7094,7 +6525,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "O transporte de carros pesados de emergência exige duas mãos firmes e calçado estável para controlar a inércia em curvas."
   },
   {
-    "id": 1374,
+    "id": 1344,
     "topicId": 1,
     "question": "Qual é a razão pela qual as manobras de arranque e paragem de transportes hospitalares devem ser sempre progressivas e suaves?",
     "options": [
@@ -7113,7 +6544,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Transportes suaves previnem náuseas, dores incisionais e deslocamentos acidentais de cateteres e drenos no pós-operatório."
   },
   {
-    "id": 1375,
+    "id": 1345,
     "topicId": 1,
     "question": "Uma bomba infusora de 2 kg está fixada a um suporte vertical de soro que se desloca em linha reta a 0,8 m/s constante. Qual é a força resultante na bomba?",
     "options": [
@@ -7132,7 +6563,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Assegura que os equipamentos não sofrem solavancos enquanto o transporte se mantiver a velocidade uniforme."
   },
   {
-    "id": 1376,
+    "id": 1346,
     "topicId": 1,
     "question": "Qual é a relação matemática entre a aceleração e a força resultante na 1.ª Lei de Newton quando o corpo se move em velocidade constante?",
     "options": [
@@ -7151,7 +6582,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite aos enfermeiros reconhecer que qualquer sobressalto ou aceleração sentida pelo doente denuncia uma força resultante não nula."
   },
   {
-    "id": 1377,
+    "id": 1347,
     "topicId": 1,
     "question": "Se a força externa de paragem for aplicada subitamente por uma parede rígida (divisória da cabine), porque é que a colisão é lesiva?",
     "options": [
@@ -7170,7 +6601,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Sistemas de absorção de impacto (estofos deformáveis, cintos com pré-tensores) aumentam o tempo de paragem Δt, reduzindo a força F."
   },
   {
-    "id": 1378,
+    "id": 1348,
     "topicId": 1,
     "question": "Se um objeto de 5 kg (ex: monitor multiparâmetros) estiver solto na bancada a 80 km/h e colidir com uma superfície em 0,02 segundos, que força média de impacto desenvolve?",
     "options": [
@@ -7189,7 +6620,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Justifica a regra rigorosa de que nenhum monitor ou mala de emergência pode viajar solto sobre as bancadas da ambulância!"
   },
   {
-    "id": 1379,
+    "id": 1349,
     "topicId": 1,
     "question": "Em doentes com quadro de agitação psicomotora no internamento, porque é que o uso exclusivo de grades sem acolchoamento pode ser insuficiente?",
     "options": [
@@ -7208,7 +6639,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "O acolchoamento das grades laterais é uma intervenção de enfermagem recomendada na prevenção de lesões por impacto mecânico."
   },
   {
-    "id": 1380,
+    "id": 1350,
     "topicId": 1,
     "question": "Qual é o enunciado formal da 2.ª Lei de Newton (Princípio Fundamental da Dinâmica)?",
     "options": [
@@ -7227,7 +6658,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite ao enfermeiro prever quanta força física precisa de mobilizar para iniciar o movimento de diferentes doentes."
   },
   {
-    "id": 1381,
+    "id": 1351,
     "topicId": 1,
     "question": "Matematicamente, como se expressa a 2.ª Lei de Newton para um corpo de massa constante m?",
     "options": [
@@ -7246,7 +6677,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "O enfermeiro usa esta fórmula mental para graduar o esforço de tração ou empurrão no transporte de cargas."
   },
   {
-    "id": 1382,
+    "id": 1352,
     "topicId": 1,
     "question": "Se quisermos calcular a aceleração que um objeto ou membro adquire a partir da força resultante e da massa, que fórmula utilizamos?",
     "options": [
@@ -7265,7 +6696,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Explica porque doentes com membros edemaciados e pesados exigem maior esforço para serem mobilizados à mesma taxa."
   },
   {
-    "id": 1383,
+    "id": 1353,
     "topicId": 1,
     "question": "A partir da expressão da 2.ª Lei, como se define a massa inercial m de um corpo?",
     "options": [
@@ -7284,7 +6715,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Ajuda a enfermagem a compreender que doentes de maior massa exigem sempre mais força para atingir a mesma cadência."
   },
   {
-    "id": 1384,
+    "id": 1354,
     "topicId": 1,
     "question": "O que acontece à direção e ao sentido da aceleração de um corpo segundo a 2.ª Lei de Newton?",
     "options": [
@@ -7303,7 +6734,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Garante que ao empurrar uma cadeira de rodas para a frente, o movimento acelerado ocorrerá exatamente para a frente."
   },
   {
-    "id": 1385,
+    "id": 1355,
     "topicId": 1,
     "question": "Se um carrinho de penso estiver inicialmente em repouso e nenhuma força resultante atuar sobre ele (∑F = 0), qual será a sua aceleração segundo a 2.ª Lei?",
     "options": [
@@ -7322,7 +6753,26 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Confirma que o equipamento permanece seguro e imóvel onde o enfermeiro o colocou."
   },
   {
-    "id": 1386,
+    "id": 1356,
+    "topicId": 1,
+    "question": "Durante o transporte de um doente numa maca, o enfermeiro nota que para duplicar a aceleração de arranque é necessário:",
+    "options": [
+      "Aplicar o dobro da força resultante na direção do movimento pretendido.",
+      "Aplicar a força resultante diretamente perpendicular ao plano do leito, sem componente horizontal.",
+      "Aplicar a força no sentido oposto ao movimento pretendido para criar um efeito de alavanca de 3.ª classe.",
+      "Dividir a força necessária pelo coeficiente de atrito estático antes de qualquer deslocamento."
+    ],
+    "correctIndex": 2,
+    "explanation": "Pela relação linear F = m·a, para obter 2a mantendo a mesma massa m, é imperativo exercer 2F.",
+    "distractorAnalysis": [
+      "Está incorreta: não é necessário o dobro da força; a resultante calculada é suficiente se aplicada na direção correta do movimento.",
+      "Está incorreta: uma força exclusivamente perpendicular ao leito apenas aumenta a força normal e o atrito, não gera deslocamento horizontal.",
+      "Está incorreta: aplicar força no sentido oposto ao movimento não cria alavanca útil; apenas aumenta a resistência e contraria o deslocamento pretendido."
+    ],
+    "nursingApplication": "Alerta o enfermeiro para a necessidade de coordenação de forças ao iniciar a marcha com macas pesadas."
+  },
+  {
+    "id": 1357,
     "topicId": 1,
     "question": "Num gráfico de Força Resultante (eixo vertical) em função da Aceleração (eixo horizontal) para um corpo rígido, o que representa o declive da reta?",
     "options": [
@@ -7341,26 +6791,26 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite determinar experimentalmente a massa de equipamentos ou segmentos corporais através de testes de dinamometria."
   },
   {
-    "id": 1387,
+    "id": 1358,
     "topicId": 1,
-    "question": "Qual é a principal razão pela qual doentes com obesidade severa acamados exigem um esforço muscular muito superior dos enfermeiros durante reposicionamentos no leito?",
+    "question": "Um carrinho de anestesia com massa de 60 kg move-se a velocidade constante de 1,2 m/s em linha reta. Qual é a força resultante total que atua sobre ele?",
     "options": [
-      "A sua temperatura corporal média é dez graus superior, amolecendo a espuma viscoelástica do colchão.",
-      "A sua grande massa inercial oferece elevada resistência a qualquer mudança no estado de repouso (F = m·a).",
-      "O seu tecido adiposo emite ondas gravitacionais locais que aumentam a atração pela Terra.",
-      "A circulação capilar periférica gera uma força eletromagnética que atrai os lençóis para o estrado."
+      "Exatamente 0 N, pois movimento retilíneo uniforme (velocidade constante) implica força resultante nula (1.ª Lei de Newton).",
+      "Igual ao peso do doente, pois sem qualquer força propulsora aplicada o doente desaceleraria e pararia no corredor.",
+      "Igual à força de atrito cinético, pois o doente em MRU precisa de uma força para compensar o atrito e manter a velocidade.",
+      "Igual à força normal multiplicada pelo coeficiente de atrito estático, pois é necessário superar o atrito inicial a cada passo."
     ],
     "correctIndex": 1,
-    "explanation": "Quanto maior a massa m, maior a inércia e maior a força F requerida para imprimir qualquer aceleração a (2.ª Lei).",
+    "explanation": "Velocidade constante em linha reta significa a = 0. Pela 2.ª Lei, se a = 0, então ∑F = m · 0 = 0 N.",
     "distractorAnalysis": [
-      "Está incorreta: A temperatura corporal de indivíduos com obesidade situa-se nos valores normais humanos (~36,5-37 °C).",
-      "Está incorreta: O corpo humano não emite ondas gravitacionais mensuráveis capazes de alterar o peso mecânico.",
-      "Está incorreta: A circulação sanguínea não gera campos eletromagnéticos macroscópicos de atração com lençóis."
+      "Está incorreta: a 1.ª Lei de Newton afirma que um corpo em MRU mantém essa velocidade sem força resultante; mas para manter a velocidade constante contra o atrito cinético é necessária uma força igual ao atrito, não ao peso.",
+      "Está incorreta: em MRU a força resultante é zero; a força aplicada pelo enfermeiro compensa o atrito, mas não iguala o peso do doente, que é suportado pelas rodas.",
+      "Está incorreta: em MRU o atrito relevante é o cinético (já em movimento); o atrito estático aplica-se ao momento inicial de arranque, não à manutenção da velocidade constante."
     ],
-    "nursingApplication": "Fundamenta a adoção obrigatória de ajudas técnicas (telas de transferência, elevadores) na mobilização de doentes pesados."
+    "nursingApplication": "Lembra o enfermeiro de que manter a marcha consome apenas a força necessária para anular o atrito das rodas."
   },
   {
-    "id": 1388,
+    "id": 1359,
     "topicId": 1,
     "question": "Na mobilização e ergonomia clínica, como é caracterizado o utente bariátrico sob o ponto de vista biofísico da mecânica?",
     "options": [
@@ -7379,7 +6829,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Sensibiliza a equipa de enfermagem para o planeamento biofísico prévio antes de qualquer mobilização bariátrica."
   },
   {
-    "id": 1389,
+    "id": 1360,
     "topicId": 1,
     "question": "Comparando um utente bariátrico com massa de 160 kg e um utente normoponderal de 80 kg, qual é a razão entre as forças necessárias para lhes imprimir a mesma aceleração de 0,4 m/s²?",
     "options": [
@@ -7398,7 +6848,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Alerta os profissionais para não tentarem mobilizar utentes bariátricos sem ajuda de colegas ou meios mecânicos."
   },
   {
-    "id": 1390,
+    "id": 1361,
     "topicId": 1,
     "question": "Qual é a relação entre a quantidade de movimento (p = m·v) de um utente bariátrico de 150 kg e de um utente de 50 kg ambos a deslocar-se a 1 m/s numa cadeira de rodas?",
     "options": [
@@ -7417,7 +6867,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Demonstra a magnitude da energia cinética e do impulso envolvidos no transporte de doentes com obesidade."
   },
   {
-    "id": 1391,
+    "id": 1362,
     "topicId": 1,
     "question": "Se um enfermeiro tentar travar bruscamente uma maca com um utente bariátrico de 200 kg a mover-se a 1,5 m/s em 0,3 segundos, qual é a intensidade média da força de desaceleração requerida?",
     "options": [
@@ -7436,26 +6886,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Evidencia que travar bruscamente uma maca pesada sobrecarrega a coluna lombar com forças superiores a 1 kN."
   },
   {
-    "id": 1392,
-    "topicId": 1,
-    "question": "Qual é a vantagem mecânica do princípio da 2.ª Lei quando a mobilização do utente bariátrico é realizada por quatro profissionais sincronizados em vez de um só?",
-    "options": [
-      "A aceleração necessária para iniciar o movimento diminui para zero, permitindo a translação da massa sem aplicação de forças externas.",
-      "O peso total do utente bariátrico é reduzido a um quarto devido ao aumento proporcional do número de vetores de suporte.",
-      "A força total aplicada é a soma das forças individuais (∑F = F1 + F2 + F3 + F4), reduzindo a carga biomecânica por enfermeiro a um nível seguro.",
-      "O coeficiente de atrito cinético do lençol de tração diminui de forma exponencial em função do número de operadores envolvidos."
-    ],
-    "correctIndex": 2,
-    "explanation": "Ao somar forças paralelas no mesmo sentido, a força requerida para acelerar a massa m é repartida igualmente por todos.",
-    "distractorAnalysis": [
-      "Está incorreta: qualquer início de movimento a partir do repouso exige aceleração (a > 0) e aplicação de força resultante positiva.",
-      "Está incorreta: a massa e o peso total do doente mantêm-se inalterados; o que é dividido por quatro é a parcela de força que cabe a cada operador.",
-      "Está incorreta: o coeficiente de atrito depende unicamente dos materiais em contacto (tecido e colchão) e não do número de profissionais."
-    ],
-    "nursingApplication": "Justifica os protocolos hospitalares de mobilização segura que exigem equipas multidisciplinares para doentes bariátricos."
-  },
-  {
-    "id": 1393,
+    "id": 1363,
     "topicId": 1,
     "question": "Para evitar lesões musculoesqueléticas nos enfermeiros ao acelerar uma carga pesada, a taxa de variação da velocidade (a = Δv/Δt) deve ser:",
     "options": [
@@ -7474,26 +6905,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Ensina a técnica de mobilização suave, gradual e ritmada, protegendo a saúde postural da equipa de enfermagem."
   },
   {
-    "id": 1394,
-    "topicId": 1,
-    "question": "Como é que um guincho elétrico hospitalar de transferência aplica a 2.ª Lei de Newton para levantar um utente de 180 kg em segurança?",
-    "options": [
-      "O motor desenvolve uma aceleração vertical elevada para encurtar o tempo de suspensão do utente no arnês acolchoado do guincho.",
-      "O motor elétrico aplica uma força de tração vertical ligeiramente superior ao peso no arranque (F > P) e igual ao peso durante a subida uniforme (F = P).",
-      "O equipamento mantém a tração do cabo rigorosamente inferior ao peso corporal para prevenir sobrecargas no braço mecânico da grua.",
-      "O sistema elétrico atua mantendo a aceleração vertical em valor nulo durante todo o percurso, inclusive no instante da partida do leito."
-    ],
-    "correctIndex": 1,
-    "explanation": "No arranque: F - P = m·a (com 'a' muito pequeno para subida suave); após atingir a velocidade de subida: a = 0 e F = P = m·g.",
-    "distractorAnalysis": [
-      "Está incorreta: as gruas de transferência hospitalares devem acelerar muito suavemente para evitar oscilações desconfortáveis ou perigosas no doente.",
-      "Está incorreta: se a força fosse inferior ao peso (F < P), a resultante seria dirigida para baixo e o doente não seria erguido do colchão.",
-      "Está incorreta: no instante do arranque é fisicamente indispensável uma ligeira aceleração ascendente (F > P) para que a velocidade suba de 0 até ao valor constante."
-    ],
-    "nursingApplication": "Permite ao enfermeiro operar guinchos de transferência compreendendo as fases mecânicas da elevação."
-  },
-  {
-    "id": 1395,
+    "id": 1364,
     "topicId": 1,
     "question": "Se um guincho hospitalar subir um utente de 150 kg com uma aceleração vertical constante de 0,2 m/s² (adotando g = 9,8 m/s²), qual é a tensão (T) suportada pelas correias?",
     "options": [
@@ -7512,7 +6924,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Explica porque as correias e o guincho bariátrico têm de ter uma carga de trabalho segura (SWL) certificada."
   },
   {
-    "id": 1396,
+    "id": 1365,
     "topicId": 1,
     "question": "Para produzir a desaceleração de 2 m/s² na maca bariátrica de 220 kg referida na pergunta anterior, que força de retenção constante deve atuar sobre ela?",
     "options": [
@@ -7531,7 +6943,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Evidencia que travar manualmente uma maca bariátrica requer o esforço equivalente a suster 45 kg na horizontal."
   },
   {
-    "id": 1397,
+    "id": 1366,
     "topicId": 1,
     "question": "O que acontece à força de travagem necessária se o tempo disponível para imobilizar uma maca for reduzido para metade?",
     "options": [
@@ -7550,7 +6962,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Ensina a antecipar obstáculos com antecedência para permitir travagens suaves e com forças controladas."
   },
   {
-    "id": 1398,
+    "id": 1367,
     "topicId": 1,
     "question": "Ao conduzir uma maca com um utente bariátrico num corredor, porque é que as curvas devem ser feitas a velocidade muito reduzida?",
     "options": [
@@ -7569,7 +6981,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Orienta a condução defensiva e segura de doentes com peso elevado em mudanças de direção nos serviços."
   },
   {
-    "id": 1399,
+    "id": 1368,
     "topicId": 1,
     "question": "Porque é que num veículo em colisão, um obstáculo rígido perfeitamente rígido (ex: muro de betão) produz uma desaceleração muito mais perigosa do que um rail de proteção maleável?",
     "options": [
@@ -7588,7 +7000,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Explica os princípios de engenharia rodoviária e a necessidade de amortecer desacelerações para preservar a vida."
   },
   {
-    "id": 1400,
+    "id": 1369,
     "topicId": 1,
     "question": "O que acontece aos órgãos internos de um passageiro (como o fígado, baço e aorta) durante uma desaceleração frontal de 22,7 g?",
     "options": [
@@ -7607,7 +7019,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Explica a fisiopatologia das lesões internas graves por desaceleração (trauma fechado de alta energia) em acidentes."
   },
   {
-    "id": 1401,
+    "id": 1370,
     "topicId": 1,
     "question": "Se o enfermeiro pesar 90 kg em vez de 70 kg nas mesmas condições de colisão (desaceleração de 222 m/s²), qual será a força de impacto sobre o seu corpo?",
     "options": [
@@ -7626,7 +7038,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Mostra que profissionais com maior massa inercial sofrem forças absolutas de retenção e impacto ainda mais elevadas."
   },
   {
-    "id": 1402,
+    "id": 1371,
     "topicId": 1,
     "question": "Quando dizemos que um ocupante de uma viatura sofreu uma desaceleração de 15 g numa colisão, o que significa esse valor em termos físicos?",
     "options": [
@@ -7645,7 +7057,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite à equipa de trauma prever a gravidade de lesões ocultas consoante a cinemática do embate."
   },
   {
-    "id": 1403,
+    "id": 1372,
     "topicId": 1,
     "question": "Se durante uma travagem violenta o tempo de desaceleração do corpo do enfermeiro passar de 0,05 s (embate rígido) para 0,25 s (retenção controlada pelo cinto), qual é o efeito sobre a força média?",
     "options": [
@@ -7664,26 +7076,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Mostra ao enfermeiro como um simples gesto (apertar o cinto) previne forças lesivas de milhares de Newtons."
   },
   {
-    "id": 1404,
-    "topicId": 1,
-    "question": "Qual é o perigo mecânico para um passageiro se o cinto de segurança for colocado com folga excessiva ou frouxo?",
-    "options": [
-      "Porque continuam o seu movimento à velocidade do veículo por inércia, atingindo os ocupantes com grande força de impacto.",
-      "Porque o campo magnético do habitáculo atrai os objetos metálicos soltos em direção à cabine de condução dianteira.",
-      "Porque os objetos soltos perdem a sua massa inercial durante a travagem, flutuando descontroladamente no ar do compartimento.",
-      "Porque as vibrações do piso aquecem os materiais até ao limite de combustão dos plásticos dos equipamentos de suporte."
-    ],
-    "correctIndex": 2,
-    "explanation": "Com folga, o passageiro desacelera num intervalo de tempo muito menor ao atingir o fim da folga, elevando a força F = m·a.",
-    "distractorAnalysis": [
-      "Está incorreta: a projeção dos objetos decorre puramente da inércia mecânica (1.ª Lei) e não de atração magnética artificial.",
-      "Está incorreta: a massa inercial é constante; a perigosidade resulta da conservação do momento linear (p = m·v) do objeto solto.",
-      "Está incorreta: os riscos críticos no transporte sanitário derivam de impactos mecânicos diretos por desaceleração e não de efeitos térmicos."
-    ],
-    "nursingApplication": "Instrui o profissional a ajustar e tensionar corretamente o cinto ao corpo antes do arranque da ambulância."
-  },
-  {
-    "id": 1405,
+    "id": 1373,
     "topicId": 1,
     "question": "Qual é o enunciado do Teorema do Impulso na mecânica clássica?",
     "options": [
@@ -7702,26 +7095,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fundamental para desenhar sistemas de amortecimento e proteção contra impactos no transporte de doentes."
   },
   {
-    "id": 1406,
-    "topicId": 1,
-    "question": "Durante o transporte de um doente com fratura da bacia, um arranque brusco com uma aceleração de 2 m/s² numa maca de 100 kg com o doente (massa total) gera que força inercial instantânea no foco de fratura?",
-    "options": [
-      "Uma força de cisalhamento proporcional à massa dos segmentos corporais desfasados (F = m · a), provocando microdeslocamento ósseo doloroso e risco hemorrágico.",
-      "Uma força de compressão nula em todos os planos, pois a aceleração linear do veículo não se transmite a estruturas anatómicas fragmentadas.",
-      "Uma força de tração puramente vertical que eleva a bacia do colchão, anulando o peso suportado pela superfície da maca hospitalar.",
-      "Uma força rotacional contínua que alinha espontaneamente os topos da fratura sem necessidade de fixação ou imobilização externa prévia."
-    ],
-    "correctIndex": 0,
-    "explanation": "Segmentos com massas diferentes aceleram a taxas distintas se não estiverem rigidamente imobilizados, gerando tensões internas F = m·a.",
-    "distractorAnalysis": [
-      "Está incorreta: a 2.ª Lei de Newton (F = m·a) garante que a aceleração da maca gera forças de inércia em todos os segmentos anatómicos com massa.",
-      "Está incorreta: a aceleração horizontal do veículo gera forças inerciais no plano anteroposterior e de cisalhamento, não forças verticais antigravíticas.",
-      "Está incorreta: forças inerciais bruscas produzem desalinhamento e instabilidade nos focos fraturários, agravando o risco de choque hemorrágico."
-    ],
-    "nursingApplication": "Instrui o enfermeiro a conduzir macas com utentes politraumatizados com acelerações ultrassuaves."
-  },
-  {
-    "id": 1407,
+    "id": 1374,
     "topicId": 1,
     "question": "Ao parar a cama de 150 kg que se desloca a 0,6 m/s num espaço de 0,3 metros, qual é a desaceleração sofrida e a força de retenção correspondente?",
     "options": [
@@ -7740,26 +7114,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite dosear a travagem manual suave para não projetar o doente em direção aos pés do leito."
   },
   {
-    "id": 1408,
-    "topicId": 1,
-    "question": "Com base na desaceleração de 980 m/s² da pergunta anterior, qual é a força de impacto gerada sobre o trocânter maior do fémur (m = 50 kg)?",
-    "options": [
-      "490 N (correspondente ao peso estático de repouso de 50 kg sobre o colchão da cama).",
-      "50 N (calculada dividindo a massa do utente pela constante elástica do linóleo de pavimento).",
-      "49.000 N (quase 5 toneladas de força de pico, calculada por F = m · a = 50 kg · 980 m/s² = 49.000 N).",
-      "5 N (força equivalente a segurar uma chávena de café com a ponta dos dedos polegar e indicador)."
-    ],
-    "correctIndex": 2,
-    "explanation": "F = m·a = 50 · 980 = 49.000 N. Esta força colossal excede largamente o limite de resistência mecânica à fratura de ossos osteoporóticos (~2 a 4 kN).",
-    "distractorAnalysis": [
-      "Está incorreta: 490 N é apenas o peso do tronco em repouso estático (50 · 9,8); na queda a força é multiplicada por 100.",
-      "Está incorreta: 50 N ignora a aceleração de paragem brutal decorrente da pequena distância de deformação no solo.",
-      "Está incorreta: 5 N é uma força minúscula, incompatível com a destruição trabecular óssea observada em fraturas de queda."
-    ],
-    "nursingApplication": "Evidencia o perigo biomecânico extremo das quedas e a necessidade vital de estratégias preventivas de enfermagem."
-  },
-  {
-    "id": 1409,
+    "id": 1375,
     "topicId": 1,
     "question": "Como é que a 2.ª Lei de Newton (F = m·a) se aplica à ejeção ventricular esquerda durante a sístole cardíaca?",
     "options": [
@@ -7778,7 +7133,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite ao enfermeiro relacionar a contratilidade cardíaca (inotropismo) com as leis fundamentais da física mecânica."
   },
   {
-    "id": 1410,
+    "id": 1376,
     "topicId": 1,
     "question": "Se o ventrículo esquerdo acelerar uma massa de sangue de 0,07 kg (70 mL) de 0 a 1,2 m/s no intervalo de tempo de 0,08 segundos, qual é a aceleração média do sangue e a força ejetiva correspondente?",
     "options": [
@@ -7797,7 +7152,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Quantifica o esforço mecânico direto de cada batimento na hemodinâmica cardiovascular."
   },
   {
-    "id": 1411,
+    "id": 1377,
     "topicId": 1,
     "question": "A ecocardiografia por Doppler tecidual mede a aceleração e velocidade de deformação do miocárdio (strain rate). O seu valor diagnóstico reside em:",
     "options": [
@@ -7816,7 +7171,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite ao enfermeiro de cardiologia interpretar relatórios ecocardiográficos fundamentados em conceitos biomecânicos."
   },
   {
-    "id": 1412,
+    "id": 1378,
     "topicId": 1,
     "question": "Durante o reflexo da tosse, o ar intrapulmonar é acelerado violentamente através de que mecanismo biofísico?",
     "options": [
@@ -7835,7 +7190,102 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite ao enfermeiro otimizar manobras de cinesiterapia respiratória e tosse assistida em doentes com acumulação de muco."
   },
   {
-    "id": 1413,
+    "id": 1379,
+    "topicId": 1,
+    "question": "Se um cuidador travar bruscamente uma cadeira de rodas a 1,5 m/s puxando os manípulos de repente, o que acontece ao tronco do utente sentado desprovido de cinto?",
+    "options": [
+      "O tronco é projetado para a frente por inércia à velocidade original de 1,5 m/s, com elevado risco de queda e traumatismo.",
+      "O tronco permanece estático em relação ao corredor, pois a interrupção do movimento cancela a inércia do doente.",
+      "O tronco roda para trás sobre o eixo das ancas, afastando-se do encosto e expondo a zona lombar ao impacto.",
+      "O tronco comprime-se verticalmente sobre a pelve, pois a paragem súbita converte o movimento horizontal em compressão axial."
+    ],
+    "correctIndex": 0,
+    "explanation": "Pela 1.ª Lei de Newton, a massa do tronco mantém o movimento para a frente quando a cadeira desacelera bruscamente (2.ª Lei: F = m·a ausente no tronco).",
+    "distractorAnalysis": [
+      "Está incorreta: pela 1.ª Lei de Newton, um corpo em movimento tende a continuar em movimento; parar a cadeira não cancela a inércia do tronco, que continua projetado para a frente.",
+      "Está incorreta: a rotação para trás pressupõe uma força de reação posterior, que não existe no cenário descrito; a inércia projeta o tronco para a frente, não para trás.",
+      "Está incorreta: a conversão de movimento horizontal em compressão axial vertical não ocorre por simples paragem numa superfície plana; a inércia mantém o vetor de movimento original."
+    ],
+    "nursingApplication": "Alerta a enfermagem para nunca realizar paragens bruscas e verificar sempre o uso de cintos de segurança pélvicos em cadeiras de rodas."
+  },
+  {
+    "id": 1380,
+    "topicId": 1,
+    "question": "Qual é a altura ideal dos manípulos de empurrão de uma maca ou carrinho hospitalar para otimizar a aplicação de forças da 2.ª Lei?",
+    "options": [
+      "Aproximadamente ao nível da cintura ou cotovelos fletidos (cerca de 90 a 100 cm do solo), permitindo forças horizontais eficientes com coluna ereta.",
+      "Ao nível dos joelhos (cerca de 50 cm do solo), para que o enfermeiro use a extensão das pernas como alavanca de impulso.",
+      "Ao nível dos ombros (cerca de 150 cm do solo), para maximizar a alavancagem dos membros superiores sobre a maca.",
+      "Ao nível do tornozelo (cerca de 10 cm do solo), para manter o centro de gravidade próximo do solo e aumentar a estabilidade."
+    ],
+    "correctIndex": 0,
+    "explanation": "Manípulos à altura dos cotovelos mantêm a linha de ação da força puramente horizontal (sem perdas verticais em Fy) e a coluna lombar alinhada.",
+    "distractorAnalysis": [
+      "Está incorreta: os manípulos ao nível dos joelhos forçariam a coluna a inclinar-se excessivamente para a frente durante o empurrão, aumentando o momento de força sobre L5-S1.",
+      "Está incorreta: manípulos ao nível dos ombros implicam que os braços apontem para baixo em vez de horizontalmente, reduzindo a eficiência da força horizontal e sobrecarregando os ombros.",
+      "Está incorreta: manípulos ao nível do tornozelo obrigariam o enfermeiro a agachar-se completamente, tornando a postura insustentável e ineficiente para gerar força horizontal prolongada."
+    ],
+    "nursingApplication": "Orienta a aquisição e regulação de camas e macas reguláveis em altura nos serviços hospitalares."
+  },
+  {
+    "id": 1381,
+    "topicId": 1,
+    "question": "Quando dois enfermeiros transportam uma maca pesada, a distribuição ideal de tarefas sob o ponto de vista da 2.ª Lei e da segurança é:",
+    "options": [
+      "Um profissional atrás a empurrar (fornecendo a força motora de aceleração na linha do movimento) e outro à frente a guiar a direção.",
+      "Ambos os profissionais a empurrar lateralmente, cada um de um lado, para equilibrar as forças e evitar desvios.",
+      "Um profissional a puxar pela cabeceira e outro a empurrar pelos pés, mantendo a maca em tração axial constante.",
+      "Ambos os profissionais atrás a empurrar em paralelo, maximizando a força total aplicada na direção do movimento."
+    ],
+    "correctIndex": 1,
+    "explanation": "O operador traseiro fornece propulsão ergonómica e visão panorâmica; o operador frontal orienta o vetor de velocidade e trava em emergências.",
+    "distractorAnalysis": [
+      "Está incorreta: empurrar lateralmente de ambos os lados gera forças perpendiculares ao movimento pretendido; as forças laterais opostas anulam-se e não contribuem para o deslocamento.",
+      "Está incorreta: puxar pela cabeceira e empurrar pelos pés aplica forças em sentidos opostos; essa configuração cria tensão axial na maca mas não um deslocamento eficiente num único sentido.",
+      "Está incorreta: com ambos os profissionais atrás, não há ninguém a guiar a direção e a maca pode desviar-se; além disso, o controlo do percurso em corredores com obstáculos requer um guia frontal."
+    ],
+    "nursingApplication": "Padroniza o procedimento de trabalho seguro em equipa para o transporte interdepartamental de doentes."
+  },
+  {
+    "id": 1382,
+    "topicId": 1,
+    "question": "Como se sintetiza a importância clínica e biofísica da 2.ª Lei de Newton (F = m·a) para a profissão de enfermagem?",
+    "options": [
+      "A 2.ª Lei demonstra que a força aplicada pelo profissional depende unicamente da sua altura corporal e comprimento dos membros, independentemente da massa real do doente.",
+      "A 2.ª Lei postula que corpos com maior massa exigem menor força motriz externa para acelerar até à velocidade confortável de marcha ao longo do corredor hospitalar.",
+      "Qualquer alteração na velocidade de um corpo exige a aplicação de uma força resultante proporcional à massa acelerada, comandando a segurança nas mobilizações, transportes e prevenção de lesões.",
+      "A 2.ª Lei estabelece que a aceleração de uma cadeira de rodas é totalmente independente da intensidade da força de empurrão aplicada pelas mãos do enfermeiro cuidador."
+    ],
+    "correctIndex": 2,
+    "explanation": "A relação F = m·a fundamenta desde o esforço para mobilizar doentes no leito até às forças letais em colisões veiculares e desacelerações de quedas.",
+    "distractorAnalysis": [
+      "Está incorreta: pela 2.ª Lei (F = m·a), a força necessária é diretamente proporcional à massa mobilizada e à aceleração pretendida, e não à altura do cuidador.",
+      "Está incorreta: quanto maior a massa inercial, maior a força necessária para obter a mesma aceleração (F = m·a); maior massa exige mais força, não menos.",
+      "Está incorreta: a aceleração adquirida é diretamente proporcional à força resultante exercida sobre a cadeira (a = F/m)."
+    ],
+    "nursingApplication": "Confere ao futuro enfermeiro uma base científica sólida de física aplicada à proteção da vida e da integridade física."
+  },
+  {
+    "id": 1383,
+    "topicId": 1,
+    "question": "Se um estudante de enfermagem quiser minimizar a força que os seus discos lombares suportam ao movimentar um doente pesado, qual é a diretriz da 2.ª Lei?",
+    "options": [
+      "Descer a rampa em passo de corrida acelerado para minimizar o tempo durante o qual o peso do doente atua sobre as rodas dianteiras.",
+      "Segurar a cadeira unicamente por um dos manípulos para permitir que a cadeira execute curvas livres e compense a inclinação do terreno.",
+      "Descer de costas (marcha a ré), com o enfermeiro a servir de anteparo e a utilizar o seu peso corporal e força muscular para controlar a velocidade da descida.",
+      "Pedir ao utente que incline o tronco o mais para a frente possível para elevar as rodas traseiras e reduzir o atrito com o piso inclinado."
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a: minimizar 'a' (eliminar picos de aceleração) e reduzir a fração de 'm' por profissional minimiza a força F suportada pelo organismo.",
+    "distractorAnalysis": [
+      "Está incorreta: correr na descida acumula energia cinética perigosa (Ec = ½mv²) e retira o controlo do enfermeiro sobre a desaceleração da cadeira.",
+      "Está incorreta: empurrar ou reter por um só manípulo cria momentos de força desequilibrados, fazendo a cadeira rodar e aumentando o risco de capotamento.",
+      "Está incorreta: inclinar o tronco do utente para a frente desloca a linha de gravidade para fora da base, provocando queda frontal do doente."
+    ],
+    "nursingApplication": "Prevenção eficaz de acidentes de trabalho e doenças profissionais musculoesqueléticas na enfermagem."
+  },
+  {
+    "id": 1384,
     "topicId": 1,
     "question": "Em resumo dos conceitos lecionados da mecânica de Newton, qual é o papel essencial da 1.ª Lei de Newton na compreensão do universo mecânico?",
     "options": [
@@ -7854,26 +7304,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "A 1.ª Lei fornece a base concetual para interpretar todo o comportamento dinâmico de doentes e equipamentos."
   },
   {
-    "id": 1414,
-    "topicId": 1,
-    "question": "Qual das seguintes afirmações sobre a simultaneidade do par ação-reação é fisicamente correta?",
-    "options": [
-      "Porque em repouso o coeficiente de atrito estático entre as superfícies da fechadura do travão é nulo, permitindo deslizamento instantâneo.",
-      "Porque a força peso da maca atua apenas quando a maca se encontra em movimento acelerado ao longo do pavimento hospitalar.",
-      "Porque para iniciar o movimento é necessário vencer o atrito estático das rodas e engrenagens mecânicas, que é superior ao atrito cinético de rolamento.",
-      "Porque as rodas da maca aumentam a sua massa inercial de repouso para o triplo sempre que permanecem imobilizadas por mais de uma hora."
-    ],
-    "correctIndex": 1,
-    "explanation": "A designação 'ação' e 'reação' é puramente convencional; ambas as forças são partes inseparáveis e simultâneas da mesma interação.",
-    "distractorAnalysis": [
-      "Está incorreta: o coeficiente de atrito estático em repouso é superior ao cinético (μe > μc); por isso o arranque exige sempre mais força do que a manutenção.",
-      "Está incorreta: a força peso (P = m·g) atua continuamente de forma idêntica tanto em repouso como em movimento.",
-      "Está incorreta: a massa inercial dos materiais metálicos e borrachas da maca é invariável; a resistência inicial advém do atrito estático superior."
-    ],
-    "nursingApplication": "Esclarece os estudantes de que não existe um atraso físico na resposta mecânica de apoio entre superfícies."
-  },
-  {
-    "id": 1415,
+    "id": 1385,
     "topicId": 1,
     "question": "Se um enfermeiro aplicar uma força de 80 N para empurrar uma cadeira de rodas, qual é a intensidade da força que a cadeira exerce sobre as mãos do enfermeiro?",
     "options": [
@@ -7892,7 +7323,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Sensibiliza para o facto de que as palmas das mãos e punhos do enfermeiro suportam a mesma carga que aplicam no equipamento."
   },
   {
-    "id": 1416,
+    "id": 1386,
     "topicId": 1,
     "question": "Quais são as quatro características geométricas e físicas universais de qualquer par ação-reação?",
     "options": [
@@ -7911,7 +7342,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite ao enfermeiro verificar sistematicamente se duas forças encontradas na prática formam ou não um par newtoniano."
   },
   {
-    "id": 1417,
+    "id": 1387,
     "topicId": 1,
     "question": "Se um enfermeiro de 70 kg e um utente bariátrico de 140 kg se empurrarem mutuamente num corredor liso, qual deles exerce maior força?",
     "options": [
@@ -7930,7 +7361,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Desmistifica o erro comum de pensar que o corpo com maior massa aplica mais força do que recebe."
   },
   {
-    "id": 1418,
+    "id": 1388,
     "topicId": 1,
     "question": "Se um objeto de 1 kg cair em direção à Terra por gravidade, qual é a intensidade da força que esse objeto exerce sobre o planeta Terra?",
     "options": [
@@ -7949,7 +7380,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Ilustra a universalidade do princípio da ação e reação até mesmo na gravitação astronómica."
   },
   {
-    "id": 1419,
+    "id": 1389,
     "topicId": 1,
     "question": "Porque é que as forças que constituem um par de ação e reação NUNCA se anulam mutuamente?",
     "options": [
@@ -7968,7 +7399,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Crucial para o enfermeiro compreender como os movimentos acontecem apesar da existência universal de reações iguais."
   },
   {
-    "id": 1420,
+    "id": 1390,
     "topicId": 1,
     "question": "Ao colar uma fita adesiva médica na pele de um utente e puxá-la para retirar, a força que a fita exerce puxando a epiderme é acompanhada por:",
     "options": [
@@ -7987,7 +7418,26 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Orienta a técnica de remoção cuidadosa de adesivos (tracionar paralelamente à pele) para minimizar tensões de corte dolorosas."
   },
   {
-    "id": 1421,
+    "id": 1391,
+    "topicId": 1,
+    "question": "Se um doente estiver de pé numa balança dentro de um elevador que arranca a acelerar para cima, o que acontece à relação entre a Normal e o Peso?",
+    "options": [
+      "A força normal permanece rigorosamente igual ao peso (N = P), uma vez que formam um par ação-reação indivisível que não pode ser alterado pela aceleração do elevador.",
+      "O peso gravítico do doente duplica por efeito da inércia, enquanto a força normal registada na balança diminui para compensar a variação de energia potencial do sistema.",
+      "A força normal torna-se inferior ao peso (N = m·(g - a)), indicando que a balança regista uma redução transitória de massa aparente durante a subida acelerada.",
+      "A Normal torna-se superior ao Peso (N = m·(g + a) > P), provando que não são ação-reação, pois o par de Newton teria obrigatoriamente intensidades sempre iguais."
+    ],
+    "correctIndex": 3,
+    "explanation": "Se fossem ação-reação teriam sempre o mesmo módulo por definição; o facto de N > P no elevador acelerado prova que não formam um par.",
+    "distractorAnalysis": [
+      "Está incorreta: a Normal e o Peso atuam no mesmo corpo e têm naturezas físicas distintas, não constituindo um par de ação-reação newtoniano.",
+      "Está incorreta: a aceleração do elevador não altera a atração gravítica da Terra sobre o corpo (P = m·g), mas sim a força de contacto com a balança.",
+      "Está incorreta: na aceleração ascendente a força resultante aponta para cima (N - P = m·a), resultando numa Normal aparente superior (N = m·(g + a))."
+    ],
+    "nursingApplication": "Argumento dinâmico irrefutável que consolida a distinção científica entre peso e força normal de suporte."
+  },
+  {
+    "id": 1392,
     "topicId": 1,
     "question": "Durante a fase de propulsão da marcha humana, como se aplica a 3.ª Lei de Newton entre o pé do enfermeiro e o solo?",
     "options": [
@@ -8006,7 +7456,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fundamenta a análise biomecânica do movimento humano e a prevenção de distúrbios da marcha em utentes."
   },
   {
-    "id": 1422,
+    "id": 1393,
     "topicId": 1,
     "question": "O que acontece à força que a maca exerce sobre as mãos do enfermeiro se a maca colidir subitamente contra o batente de uma porta e parar em seco?",
     "options": [
@@ -8025,7 +7475,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Instrui o enfermeiro a manter as mãos bem posicionadas e a desacelerar previamente em passagens estreitas."
   },
   {
-    "id": 1423,
+    "id": 1394,
     "topicId": 1,
     "question": "Quando o tórax do enfermeiro embate contra o cinto de segurança durante uma travagem violenta, o par de ação e reação consiste em:",
     "options": [
@@ -8044,7 +7494,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Ajuda o estudante a descrever corretamente o par de forças em qualquer cenário de emergência pré-hospitalar."
   },
   {
-    "id": 1424,
+    "id": 1395,
     "topicId": 1,
     "question": "Durante a realização de compressões torácicas em suporte básico de vida (RCP), o enfermeiro aplica uma força vertical para baixo de cerca de 400 a 500 N sobre o esterno do doente. Pela 3.ª Lei de Newton, qual é a força que o esterno exerce sobre as mãos do enfermeiro?",
     "options": [
@@ -8063,7 +7513,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Explica a fadiga física precoce do reanimador e justifica a recomendação de alternar a cada 2 minutos de compressões."
   },
   {
-    "id": 1425,
+    "id": 1396,
     "topicId": 1,
     "question": "Quando dois enfermeiros utilizam um lençol de transferência para posicionar um doente no leito, as forças que os profissionais aplicam no tecido são:",
     "options": [
@@ -8082,7 +7532,26 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite analisar as forças de preensão necessárias nos dedos para sustentar a tração sem deixar escapar o lençol."
   },
   {
-    "id": 1426,
+    "id": 1397,
+    "topicId": 1,
+    "question": "Quando um utente apoia o peso do corpo sobre uma canadiana ao caminhar, qual é a interação descrita pela 3.ª Lei de Newton entre a ponteira da canadiana e o solo?",
+    "options": [
+      "A força normal do membro inferior afetado anula-se de imediato, mesmo quando o pé contacta com o solo com força máxima.",
+      "Parte da força de sustentação é assumida pela canadiana, reduzindo proporcionalmente a força normal e a carga articular na perna lesionada.",
+      "A massa corporal do doente transfere-se integralmente para a estrutura de alumínio da canadiana através de ressonância mecânica.",
+      "O centro de gravidade do corpo desloca-se obrigatoriamente para fora do corpo humano, impedindo o apoio do membro são."
+    ],
+    "correctIndex": 1,
+    "explanation": "Ação e reação entre a borracha da ponteira e o pavimento hospitalar fornecem a força de reação de suporte e propulsão indispensável à marcha assistida.",
+    "distractorAnalysis": [
+      "Está incorreta: a descarga é parcial ou total conforme a marcha orientada; a força normal no membro reduz-se na proporção da força na canadiana.",
+      "Está incorreta: a massa biológica é constante; a canadiana fornece uma via adicional para aplicação de forças de reação normais de suporte.",
+      "Está incorreta: o centro de gravidade mantém-se contido dentro da base de suporte alargada pelo uso da canadiana e dos pés."
+    ],
+    "nursingApplication": "Ensina o enfermeiro a avaliar o apoio correto e a segurança das ponteiras de borracha dos dispositivos de marcha."
+  },
+  {
+    "id": 1398,
     "topicId": 1,
     "question": "Quando um utente se senta corretamente numa cadeira de rodas apoiando o dorso contra o encosto vertical, que par de ação-reação atua no plano horizontal entre o tronco e o encosto?",
     "options": [
@@ -8101,7 +7570,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Ensina a avaliar a acomodação ergonómica do dorso e o suporte postural em cadeiras de rodas adaptadas."
   },
   {
-    "id": 1427,
+    "id": 1399,
     "topicId": 1,
     "question": "Na ventilação mecânica invasiva por pressão positiva, como se manifesta a 3.ª Lei de Newton durante a fase de insuflação inspiratória?",
     "options": [
@@ -8120,45 +7589,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite ao enfermeiro de cuidados intensivos compreender a mecânica pulmonar e os alarmes de pressão de pico no ventilador."
   },
   {
-    "id": 1428,
-    "topicId": 1,
-    "question": "A administração de toxina botulínica em músculos hiperativos atua bloqueando a libertação de acetilcolina na placa motora. Qual é a repercussão biomecânica nas forças do par ação-reação muscular?",
-    "options": [
-      "Porque o enfermeiro posicionado na retaguarda aplica a força motriz principal na linha de marcha, enquanto o profissional à frente orienta e controla a trajetória nos corredores.",
-      "Porque ambos os enfermeiros devem puxar a maca a partir da frente para somar as suas energias cinéticas na mesma direção exata.",
-      "Porque a posição lateral dos dois cuidadores reduz a força de atrito das rodas através do aumento da estabilidade angular do chassi.",
-      "Porque puxar a maca de costas pela frente permite que o cuidador utilize a força dos músculos cervicais para acelerar o conjunto."
-    ],
-    "correctIndex": 1,
-    "explanation": "Ao reduzir o tónus muscular patológico, diminui-se a tração tendinosa e a força de reação articular de compressão, prevenindo contraturas fixas.",
-    "distractorAnalysis": [
-      "Está incorreta: puxar ambos pela frente dificulta a visibilidade do percurso e impede a aplicação eficiente de forças horizontais de empurrão.",
-      "Está incorreta: caminhar de lado junto à maca cria torções posturais na coluna lombar e reduz o controlo direcional nas curvas dos corredores.",
-      "Está incorreta: a força motriz deve ser gerada pelos grandes grupos musculares dos membros inferiores e glúteos em empurrão, e não pela coluna cervical."
-    ],
-    "nursingApplication": "Permite ao enfermeiro associar a terapêutica farmacológica neuromuscular aos objetivos biomecânicos da reabilitação postural."
-  },
-  {
-    "id": 1429,
-    "topicId": 1,
-    "question": "Num utente vítima de traumatismo colocado em decúbito dorsal sobre uma prancha rígida espinal, que par de ação-reação atua entre a região occipital do crânio e a prancha rígida?",
-    "options": [
-      "A força de atrito estático que os sapatos do enfermeiro exercem contra o piso, permitindo a tração de propulsão sem escorregar.",
-      "A força de sucção pneumática que o ar do corredor hospitalar exerce sobre a superfície frontal da maca em movimento retilíneo.",
-      "A força gravitacional atrativa exercida pela parede ao fundo do corredor que atrai a massa metálica da maca para a frente.",
-      "A força de compressão elástica exercida pelo colchão de espuma que empurra a estrutura da maca para diante de forma contínua."
-    ],
-    "correctIndex": 2,
-    "explanation": "A interação de contacto entre a cabeça e a prancha de madeira ou polietileno obedece à 3.ª Lei: forças normais de suporte iguais e opostas em corpos distintos.",
-    "distractorAnalysis": [
-      "Está incorreta: o enfermeiro empurra o solo para trás com os pés e o solo reage para a frente com atrito estático propulsor (3.ª Lei de Newton).",
-      "Está incorreta: a resistência do ar é uma força de arrasto que se opõe ao movimento e não uma força propulsora que puxe a maca para a frente.",
-      "Está incorreta: a atração gravitacional entre a parede e a maca é infinitesimalmente desprezável no contexto da mecânica hospitalar."
-    ],
-    "nursingApplication": "Orienta a correta colocação de acolchoamento sob a cabeça de utentes idosos cifóticos para não forçar a coluna cervical em hiperextensão na prancha."
-  },
-  {
-    "id": 1430,
+    "id": 1400,
     "topicId": 1,
     "question": "A bomba de compressão pneumática intermitente (sequencial) utilizada na profilaxia da trombose venosa profunda opera com base em:",
     "options": [
@@ -8177,7 +7608,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Competência de enfermagem na instalação e monitorização de dispositivos pneumáticos de compressão intermitente no bloco operatório e UCI."
   },
   {
-    "id": 1431,
+    "id": 1401,
     "topicId": 1,
     "question": "Quando um doente em recuperação segura com firmeza uma barra de apoio na parede da casa de banho e puxa para se levantar, a barra exerce sobre as mãos:",
     "options": [
@@ -8196,7 +7627,26 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Demonstra a importância da correta fixação de barras de apoio em paredes sólidas com buchas e parafusos adequados."
   },
   {
-    "id": 1432,
+    "id": 1402,
+    "topicId": 1,
+    "question": "Quando um enfermeiro compreende que a 3.ª Lei impõe que 'a força que aplico no utente é a força que o utente aplica em mim', que atitude profissional desenvolve?",
+    "options": [
+      "Uma atitude de segurança ergonómica, minimizando esforços manuais excessivos e utilizando ajudas mecânicas e técnicas posturais que protejam o seu sistema osteoarticular.",
+      "A certeza de que qualquer carga pesada pode ser levantada manualmente sem perigo, uma vez que o corpo humano possui rigidez óssea inquebrável.",
+      "A crença de que apoiar o peso do doente nos braços fletidos anula a compressão sobre as vértebras lombares através de equilíbrio estático perfeito.",
+      "A convicção de que trabalhar com velocidade acelerada elimina a transmissão de forças de reação entre as mãos do enfermeiro e o paciente."
+    ],
+    "correctIndex": 0,
+    "explanation": "Compreender a reciprocidade física da força protege a saúde ocupacional do enfermeiro e a integridade da pele e tecidos do utente.",
+    "distractorAnalysis": [
+      "Está incorreta: o tecido ósseo e discal possui limites de tolerância mecânica; cargas excessivas provocam microfraturas trabeculares e hérnias discais.",
+      "Está incorreta: sustentar peso nos membros superiores transmite a carga através da cintura escapular e coluna, aumentando a força normal nas vértebras.",
+      "Está incorreta: movimentos acelerados aumentam as forças inerciais dinâmicas (F = m·a), elevando o risco de lesões musculoesqueléticas agudas."
+    ],
+    "nursingApplication": "Molda a cultura de prevenção de acidentes e higiene postural que acompanha o enfermeiro ao longo de toda a carreira."
+  },
+  {
+    "id": 1403,
     "topicId": 1,
     "question": "Por que é incorreto afirmar que a força de reação da 3.ª Lei serve para equilibrar a força de ação?",
     "options": [
@@ -8215,7 +7665,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Resolve uma das maiores confusões conceituais que persistem entre estudantes de ciências da saúde."
   },
   {
-    "id": 1433,
+    "id": 1404,
     "topicId": 1,
     "question": "Em resumo, a compreensão rigorosa dos vetores, da 1.ª, 2.ª e 3.ª Leis de Newton e do equilíbrio prepara o futuro enfermeiro para:",
     "options": [
@@ -8234,7 +7684,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Conclui com chave de ouro o domínio conceptual das Leis de Newton no Módulo de Mecânica e Biofísica para Enfermagem."
   },
   {
-    "id": 1434,
+    "id": 1405,
     "topicId": 1,
     "question": "Ao aplicar uma tala de imobilização extensora do joelho, o objetivo biomecânico imediato é:",
     "options": [
@@ -8253,7 +7703,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "O enfermeiro monitoriza o pulso pedioso e a sensibilidade distal para garantir que a tala não causa compressão vascular."
   },
   {
-    "id": 1435,
+    "id": 1406,
     "topicId": 1,
     "question": "Se três enfermeiros sustentarem um membro inferior fraturado em repouso aplicando forças que equilibram o seu peso, qual é a aceleração do membro?",
     "options": [
@@ -8272,7 +7722,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "A imobilização perfeita com aceleração nula previne dor aguda e novos desvios dos fragmentos ósseos na fratura."
   },
   {
-    "id": 1436,
+    "id": 1407,
     "topicId": 1,
     "question": "Porque é que um doente com fratura óssea instável dos membros inferiores deve ser imobilizado com tala antes de qualquer transporte?",
     "options": [
@@ -8291,7 +7741,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "A imobilização rígida provisória de fraturas é um procedimento fundamental de suporte pré-hospitalar e hospitalar."
   },
   {
-    "id": 1437,
+    "id": 1408,
     "topicId": 1,
     "question": "Se no DCL de um membro inferior imobilizado num estrado ortopédico a soma vetorial de todas as forças for nula (∑Fx = 0 e ∑Fy = 0), qual é a conclusão física?",
     "options": [
@@ -8310,7 +7760,26 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Valida o alinhamento de trações de alinhamento em contexto de internamento cirúrgico de ortopedia."
   },
   {
-    "id": 1438,
+    "id": 1409,
+    "topicId": 1,
+    "question": "Qual é a instrução de enfermagem essencial dada a um doente idoso antes de se levantar da borda do leito (sentar antes de levantar)?",
+    "options": [
+      "Permanecer sentado na borda da cama com os pés bem apoiados no solo durante 1 a 2 minutos com calçado antiderrapante, permitindo a estabilização hemodinâmica da PA e a verificação do equilíbrio antes da bipedestação.",
+      "Levantar-se imediatamente num movimento explosivo em menos de dois segundos, aproveitando a quantidade de movimento do tronco para vencer a inércia postural antes que a pressão arterial desça.",
+      "Manter os olhos fechados e suster a respiração em apneia máxima durante o levante para aumentar a pressão intratorácica e acelerar o retorno venoso dos membros inferiores ao átrio direito.",
+      "Permanecer com os membros inferiores suspensos no ar sem tocar no solo durante dez minutos para permitir que a força normal desapareça por completo antes do início da deambulação."
+    ],
+    "correctIndex": 0,
+    "explanation": "Permite que o sistema barorrecetor compense o sequestro venoso esplâncnico e que os mecanorrecetores plantares estabeleçam o contacto estável e aderente com o solo.",
+    "distractorAnalysis": [
+      "Está incorreta: levantes rápidos em idosos desencadeiam síncopes imediatas por sequestro venoso esplâncnico e queda crítica de perfusão encefálica.",
+      "Está incorreta: a manobra de Valsalva (apneia forçada) diminui ainda mais o débito cardíaco após o alívio, agravando o risco de colapso circulatório e síncope.",
+      "Está incorreta: os pés devem estar firmemente apoiados no chão para fornecer uma base de sustentação estável e estímulo proprioceptivo mecânico essencial."
+    ],
+    "nursingApplication": "Intervenção de enfermagem fundamental ministrada diariamente no treino de atividades de vida diárias."
+  },
+  {
+    "id": 1410,
     "topicId": 1,
     "question": "Como se define cientificamente um estado de Equilíbrio Estável (Stable Equilibrium)?",
     "options": [
@@ -8329,7 +7798,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Conceito cardeal para desenhar posturas no leito e dispositivos de apoio que mantenham o doente seguro."
   },
   {
-    "id": 1439,
+    "id": 1411,
     "topicId": 1,
     "question": "O que acontece à energia potencial gravitacional (Ep) de um corpo em equilíbrio estável quando este sofre uma pequena perturbação?",
     "options": [
@@ -8348,7 +7817,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Conecta o princípio biomecânico da estabilidade ao princípio universal da física da minimização da energia potencial."
   },
   {
-    "id": 1440,
+    "id": 1412,
     "topicId": 1,
     "question": "Qual dos seguintes exemplos clínicos melhor ilustra um estado de Equilíbrio Estável em enfermagem?",
     "options": [
@@ -8367,7 +7836,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Ensina o enfermeiro a identificar e criar ambientes de repouso com máxima estabilidade passiva para utentes vulneráveis."
   },
   {
-    "id": 1441,
+    "id": 1413,
     "topicId": 1,
     "question": "O que acontece à energia potencial gravitacional (Ep) de um corpo que se encontra em equilíbrio instável quando sofre uma perturbação?",
     "options": [
@@ -8386,7 +7855,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Explica porque as quedas de doentes ocorrem tão rapidamente e com tanta violência uma vez ultrapassado o limiar de estabilidade."
   },
   {
-    "id": 1442,
+    "id": 1414,
     "topicId": 1,
     "question": "Qual das seguintes situações representa um exemplo clássico de Equilíbrio Instável na prática hospitalar de enfermagem?",
     "options": [
@@ -8405,26 +7874,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Destaca o cenário típico de alerta vermelho para acidentes que o enfermeiro deve evitar ativamente nos serviços."
   },
   {
-    "id": 1443,
-    "topicId": 1,
-    "question": "Qual é a atitude imediata e prioritária do enfermeiro ao identificar um doente acamado em postura de equilíbrio instável à borda do leito?",
-    "options": [
-      "Aproximar-se imediatamente, fornecer apoio e estabilização física com o próprio corpo (atuando como força restauradora externa) e reposicionar o doente em segurança no centro do leito.",
-      "Afastar-se rapidamente para o corredor de modo a acionar a campainha de emergência geral, evitando qualquer contacto físico direto com o doente antes da chegada da equipa médica.",
-      "Instruir verbalmente o doente a permanecer imóvel enquanto o profissional se dirige à sala de enfermagem para requisitar uma poltrona ergonómica de transferência e contenção mecânica.",
-      "Elevar de imediato a cabeceira da cama para um ângulo vertical de noventa graus, na expetativa de que a força da gravidade fixe a coluna do utente contra o colchão articulado do leito."
-    ],
-    "correctIndex": 0,
-    "explanation": "A intervenção de enfermagem precoce e presencial quebra o ciclo mecânico da queda antes que a linha de gravidade saia definitivamente da base de sustentação.",
-    "distractorAnalysis": [
-      "Está incorreta: afastar-se e abandonar o doente em equilíbrio instável à borda da cama culminará na sua queda antes de qualquer socorro chegar.",
-      "Está incorreta: um doente instável na borda não tem capacidade de manter a posição apenas com comandos verbais; a contenção presencial imediata é prioritária.",
-      "Está incorreta: verticalizar a cabeceira aumentaria o momento de flexão anterior do tronco, projetando o centro de gravidade ainda mais para fora do colchão."
-    ],
-    "nursingApplication": "Define o papel proativo do enfermeiro como agente protetor biomecânico ativo do doente internado."
-  },
-  {
-    "id": 1444,
+    "id": 1415,
     "topicId": 1,
     "question": "Como se define fisicamente o estado de Equilíbrio Indiferente ou Neutro (Neutral Equilibrium)?",
     "options": [
@@ -8443,7 +7893,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite ao profissional compreender o comportamento de objetos rolantes e móveis hospitalares planos."
   },
   {
-    "id": 1445,
+    "id": 1416,
     "topicId": 1,
     "question": "O que acontece à energia potencial gravitacional (Ep) e à altura do centro de gravidade (CG) de um corpo durante o deslocamento num Equilíbrio Indiferente?",
     "options": [
@@ -8462,7 +7912,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Conceito físico de grande precisão analítica: na posição neutra, a derivada da energia potencial é identicamente nula em todos os pontos."
   },
   {
-    "id": 1446,
+    "id": 1417,
     "topicId": 1,
     "question": "Qual dos seguintes exemplos clássicos da física melhor representa o Equilíbrio Indiferente?",
     "options": [
@@ -8481,7 +7931,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fixa a imagem clássica do livro de texto que permite memorizar a trindade dos três tipos de equilíbrio."
   },
   {
-    "id": 1447,
+    "id": 1418,
     "topicId": 1,
     "question": "Como varia a altitude do Centro de Gravidade (CG) de um corpo rígido quando este é ligeiramente perturbado nas três classes de equilíbrio?",
     "options": [
@@ -8500,7 +7950,45 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Regra de ouro mnemónica indispensável para responder a qualquer questão teórica e prática de equilíbrio."
   },
   {
-    "id": 1448,
+    "id": 1419,
+    "topicId": 1,
+    "question": "Porque é que um corpo em equilíbrio instável 'cai sozinho' assim que sofre a mais ligeira perturbação?",
+    "options": [
+      "Porque o atrito estático com o solo se converte instantaneamente numa força de propulsão horizontal que repele os apoios de sustentação para fora do plano anatómico do sistema.",
+      "Porque a perturbação eleva o centro de gravidade a patamares de energia potencial tão altos que a resistência do ar empurra ativamente a estrutura contra a base de suporte.",
+      "Porque a massa do corpo sofre um aumento súbito devido à aceleração centrífuga da Terra, tornando impossível a manutenção de qualquer força normal de sustentação no solo.",
+      "Porque como a perturbação faz o seu Centro de Gravidade descer (Δh < 0), a força da gravidade atua a favor do movimento, acelerando a descida do CG para o nível mais baixo possível."
+    ],
+    "correctIndex": 3,
+    "explanation": "A gravidade puxa sempre para baixo; se a inclinação baixa o CG, o peso gera um trabalho motor positivo que acelera a queda (dEp < 0 ⇒ dEc > 0).",
+    "distractorAnalysis": [
+      "Está incorreta: o atrito estático opõe-se ao deslizamento na base; a queda é governada pelo momento gerado pela força peso quando o centro de gravidade sai da base.",
+      "Está incorreta: no equilíbrio instável a perturbação diminui a altura do centro de gravidade (Δh < 0), de modo que a força da gravidade atua a favor do movimento de queda.",
+      "Está incorreta: a massa do corpo é uma propriedade invariante; o tombamento decorre do torque gravitacional desestabilizador e não de alterações de massa."
+    ],
+    "nursingApplication": "Conecta a cinemática da queda com o princípio da conservação da energia mecânica total (Ec + Ep = constante)."
+  },
+  {
+    "id": 1420,
+    "topicId": 1,
+    "question": "Em contrapartida, porque é que um corpo em equilíbrio estável 'resiste à perturbação e volta para trás'?",
+    "options": [
+      "Porque a inclinação força o CG a subir (Δh > 0), fazendo a gravidade atuar contra o movimento e gerando um momento restaurador de retorno.",
+      "Porque a força normal exercida pelo solo se transforma numa força de atração magnética que ancora o corpo ao pavimento.",
+      "Porque a perturbação anula o momento de inércia do corpo, fazendo cessar instantaneamente qualquer rotação nos membros.",
+      "Porque o ar ambiente hospitalar sopra com maior pressão no lado inclinado, empurrando o objeto de volta à posição de partida."
+    ],
+    "correctIndex": 0,
+    "explanation": "Elevar o CG exige fornecer trabalho externo (dEp > 0); cessada a força externa, a gravidade puxa o CG de volta para o ponto de menor energia potencial (o fundo do poço).",
+    "distractorAnalysis": [
+      "Está incorreta: a força restauradora é puramente mecânica gravitacional (momento do peso em relação ao ponto de apoio) e não magnética.",
+      "Está incorreta: o momento de inércia é determinado pela distribuição da massa e não se anula quando o corpo é inclinado.",
+      "Está incorreta: as forças aerodinâmicas do ar em repouso são negligenciáveis e não constituem a força restauradora de estabilidade."
+    ],
+    "nursingApplication": "Explica a estabilidade postural intrínseca de posições ergonómicas e leitos bem desenhados."
+  },
+  {
+    "id": 1421,
     "topicId": 1,
     "question": "No caso do cone apoiado na sua base circular plana, porque é que ele se encontra em Equilíbrio Estável?",
     "options": [
@@ -8519,26 +8007,45 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Ilustra a anatomia de uma postura segura de repouso: base ampla e centro de gravidade próximo do suporte."
   },
   {
-    "id": 1449,
+    "id": 1422,
     "topicId": 1,
-    "question": "Sob o ponto de vista da física do equilíbrio, porque é que o Decúbito Dorsal horizontal (doente deitado de costas na cama plana) é a postura mais estável de todas no ambiente hospitalar?",
+    "question": "No caso do cone perfeitamente equilibrado sobre o seu vértice invertido, porque é que essa configuração é um Equilíbrio Instável extremo?",
     "options": [
-      "Porque maximiza a área da base de sustentação (todo o dorso em contacto com o leito) e minimiza a altura do Centro de Gravidade em relação ao plano de apoio (h mínimo).",
-      "Porque anula integralmente a ação da aceleração da gravidade sobre o sistema musculoesquelético humano, permitindo que a pressão interna nos tecidos corporais atinja o valor zero.",
-      "Porque a força de atrito estático entre as roupas e o colchão se torna muito superior ao peso do utente, travando completamente qualquer rotação voluntária dos membros corporais.",
-      "Porque eleva o centro de massa até ao ponto mais alto compatível com as superfícies de apoio, convertendo a energia mecânica do corpo em equilíbrio puramente indiferente."
+      "Porque o vértice invertido gera uma força normal ascendente três vezes superior ao peso total do sólido cónico.",
+      "Porque a base é um ponto e o CG está na altura máxima; qualquer perturbação desvia a linha de gravidade e faz o CG descer no tombo (Δh < 0).",
+      "Porque a atração gravítica atua exclusivamente na direção horizontal quando os corpos estão apoiados em pontas agudas.",
+      "Porque o cone invertido transforma-se num pêndulo simples perfeitamente estável que resiste a qualquer tentativa de derrube."
     ],
-    "correctIndex": 0,
-    "explanation": "Base de sustentação imensa + CG rebaixado e centrado = configuração ideal de Equilíbrio Estável, onde qualquer perturbação exige grande energia para tombar o corpo.",
+    "correctIndex": 1,
+    "explanation": "Teoricamente é uma posição de equilíbrio estático (∑F = 0 se perfeitamente aprumado), mas na prática impossível de manter porque qualquer flutuação térmica ou brisa o desestabiliza irreversivelmente.",
     "distractorAnalysis": [
-      "Está incorreta: a gravidade continua a atuar de forma constante na postura deitada; a estabilidade resulta da ampla área de apoio e da baixa altura do centro de gravidade.",
-      "Está incorreta: o atrito entre o lençol e o corpo é finito e não impede pequenos movimentos nem dispensa a vigilância e os reposicionamentos periódicos.",
-      "Está incorreta: o decúbito dorsal minimiza a altura do centro de gravidade (em vez de elevá-lo), garantindo uma configuração de equilíbrio estável robusto."
+      "Está incorreta: em repouso a força normal é exatamente igual ao peso (Fn = P); o problema é a impossibilidade de manter a linha de gravidade no ponto.",
+      "Está incorreta: o vetor peso aponta sempre verticalmente para baixo e não se torna horizontal por apoio pontual.",
+      "Está incorreta: o cone sobre o vértice é o protótipo clássico de equilíbrio instável (pêndulo invertido), tombando à menor vibração."
     ],
-    "nursingApplication": "Explica porque é esta a posição de escolha para o repouso seguro de doentes inconscientes, sedados ou após cirurgias complexas."
+    "nursingApplication": "Ensina o conceito de 'equilíbrio teórico precário': matematicamente possível no papel, mas praticamente insustentável na realidade assistencial."
   },
   {
-    "id": 1450,
+    "id": 1423,
+    "topicId": 1,
+    "question": "No caso do cone deitado sobre a sua superfície lateral (geratriz), porque é que o seu comportamento é de Equilíbrio Indiferente?",
+    "options": [
+      "Porque a sua linha de gravidade sai imediatamente da base gerando uma rotação acelerada contínua no sentido do raio maior.",
+      "Porque a força normal anula o atrito com a mesa, permitindo que o cone levite a um milímetro da superfície de repouso.",
+      "Porque o seu CG mantém-se sempre à mesma altura do solo ao rolar sobre a geratriz (Δh = 0), não havendo tendência para regressar nem tombar.",
+      "Porque a massa do cone dissipa-se sob a forma de calor à medida que o sólido percorre a trajetória circular na bancada."
+    ],
+    "correctIndex": 2,
+    "explanation": "Como a geratriz é uma linha reta em contacto com o piso horizontal, rolar o cone não eleva nem baixa o CG (h = constante, Ep = constante); onde para, fica em equilíbrio.",
+    "distractorAnalysis": [
+      "Está incorreta: ao rolar na geratriz, a linha de gravidade passa sempre pela linha de contacto de apoio, mantendo o equilíbrio indiferente.",
+      "Está incorreta: a força normal sustenta o cone em contacto sólido real contínuo com a mesa, não ocorrendo levitação mecânica.",
+      "Está incorreta: a massa do sólido permanece rigorosamente constante durante o rolamento em equilíbrio neutro na superfície."
+    ],
+    "nursingApplication": "Consolida a compreensão das propriedades dos corpos rolantes com superfícies de revolução cónicas ou cilíndricas."
+  },
+  {
+    "id": 1424,
     "topicId": 1,
     "question": "Para transformar o decúbito lateral instável numa postura de Equilíbrio Estável seguro e confortável, onde deve o enfermeiro colocar almofadas de apoio postural?",
     "options": [
@@ -8557,26 +8064,45 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Técnica padronizada de posicionamento lateral a 30 graus, recomendada internacionalmente pelas diretrizes clínicas."
   },
   {
-    "id": 1451,
+    "id": 1425,
     "topicId": 1,
-    "question": "Quais são as características ergonómicas que tornam uma poltrona hospitalar de descanso um sistema de Equilíbrio Estável seguro para o utente?",
+    "question": "Porque é que a marcha no escuro ou a transição para um quarto mal iluminado é o cenário mais frequente de quedas graves em idosos internados?",
     "options": [
-      "Assento extremamente elevado que deixe os pés suspensos no ar, encosto completamente flexível e rodízios permanentemente livres para facilitar o balanço livre do tronco.",
-      "Ausência total de apoios laterais para os braços combinada com um estofamento excessivamente longo que obrigue o utente a escorregar a bacia até à extremidade anterior da poltrona.",
-      "Base de suporte cónica com apoio único central rotativo sobre uma mola flexível, projetada para induzir oscilações constantes do centro de gravidade durante o repouso.",
-      "Assento com altura adequada aos joelhos fletidos a 90°, encosto com apoio lombar, apoios laterais de braços estáveis e quatro pés antiderrapantes bem afastados no solo."
+      "Porque a escuridão arrefece os tecidos musculares periféricos de forma instantânea, provocando a paralisia espástica dos tendões de Aquiles e a fixação dos tornozelos ao pavimento.",
+      "Porque com a redução da proprioceção associada ao envelhecimento, a supressão súbita da visão impede o cérebro de corrigir os desvios da linha de gravidade a tempo de evitar a queda.",
+      "Porque a falta de luz visível impede a ativação fotoquímica do atrito entre os calçados e o chão, fazendo com que o coeficiente dinâmico de atrito diminua para valores nulos.",
+      "Porque durante a noite a pressão do ar dentro dos quartos desce bruscamente, forçando o centro de gravidade do idoso a inclinar-se involuntariamente para a sua retaguarda."
     ],
-    "correctIndex": 3,
-    "explanation": "Esta configuração maximiza a base de sustentação com quatro pontos fixos no solo, rebaixa o centro de gravidade e fornece apoios mecânicos para membros superiores e pés.",
+    "correctIndex": 1,
+    "explanation": "O idoso depende fortemente da âncora visual para manter o equilíbrio estável; retirar a luz equivale a fechar os olhos num Romberg sensibilizado enquanto se caminha.",
     "distractorAnalysis": [
-      "Está incorreta: assento alto com pés no ar e rodas soltas retira o apoio do solo e desestabiliza gravemente a postura do utente.",
-      "Está incorreta: a falta de braços e o deslizamento da bacia diminuem a base de sustentação, sobrecarregam o sacro e culminam em quedas frontais.",
-      "Está incorreta: um apoio cónico móvel cria equilíbrio instável, aumentando a fadiga muscular e o risco de tombamento em utentes débeis."
+      "Está incorreta: a escuridão afeta a entrada sensorial visual e não a temperatura interna muscular; o défice visual retira a âncora de compensação motora.",
+      "Está incorreta: as forças de atrito dependem da rugosidade e da força normal entre as superfícies de contacto, sendo totalmente independentes da iluminação.",
+      "Está incorreta: a pressão atmosférica do quarto não sofre variações noturnas desestabilizadoras; a queda deve-se à perda de orientação visual do horizonte."
     ],
-    "nursingApplication": "Critérios técnicos para a seleção do mobiliário de descanso e reabilitação em enfermarias hospitalares."
+    "nursingApplication": "Fundamenta a medida preventiva essencial de manter luz de presença de baixa intensidade acesa em todos os quartos de internamento durante a noite."
   },
   {
-    "id": 1452,
+    "id": 1426,
+    "topicId": 1,
+    "question": "No ciclo da marcha humana, o que se entende por 'Fase de Duplo Apoio' e como influencia a estabilidade do utente?",
+    "options": [
+      "É o momento em que os dois pés se encontram suspensos no ar em simultâneo, reduzindo a estabilidade a zero e exigindo apoio dos membros superiores contra as paredes do quarto.",
+      "É o período do ciclo em que ambos os pés contactam simultaneamente com o solo, proporcionando a base de sustentação mais ampla e a maior estabilidade do ciclo da marcha.",
+      "É o período em que o utente apoia um único pé no solo enquanto as duas mãos seguram firmemente a barra lateral da cama, duplicando a força normal sobre o membro oscilante.",
+      "É a fase em que o centro de gravidade é transferido forçadamente para a cabeça do doente para diminuir o trabalho mecânico dos músculos quadríceps durante o levante bípede."
+    ],
+    "correctIndex": 1,
+    "explanation": "Na marcha normal, o duplo apoio ocupa cerca de 20 a 22% do ciclo; nos idosos ou pessoas com medo de cair, esta fase é aumentada para maximizar o tempo em equilíbrio estável.",
+    "distractorAnalysis": [
+      "Está incorreta: a fase em que nenhum pé toca no solo ocorre na corrida (fase de voo), nunca estando presente na marcha humana deambulada.",
+      "Está incorreta: o duplo apoio refere-se estritamente ao contacto simultâneo de ambos os pés com o solo durante a passada, e não ao uso de membros superiores.",
+      "Está incorreta: o duplo apoio distribui o peso pelos dois membros inferiores no piso, garantindo uma ampla base de sustentação estável sem deslocar o CG para a cabeça."
+    ],
+    "nursingApplication": "Permite ao enfermeiro de reabilitação avaliar os parâmetros temporais da marcha e identificar estratégias compensatórias do utente."
+  },
+  {
+    "id": 1427,
     "topicId": 1,
     "question": "Para evitar a queda após um tropeçamento, que mecanismo neuromuscular reflexo e biomecânico o corpo saudável executa em milissegundos?",
     "options": [
@@ -8595,7 +8121,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Explica porque o treino da velocidade de reação motora do passo é um dos pilares mais eficazes da fisioterapia em idosos."
   },
   {
-    "id": 1453,
+    "id": 1428,
     "topicId": 1,
     "question": "Para otimizar o equilíbrio de um utente com fraqueza muscular durante a higiene corporal no chuveiro, a intervenção de enfermagem mais eficaz é:",
     "options": [
@@ -8614,7 +8140,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Adaptação ergonómica basilar recomendada em planos de alta e reabilitação de utentes dependentes."
   },
   {
-    "id": 1454,
+    "id": 1429,
     "topicId": 1,
     "question": "Como se sintetiza a importância integrada do estudo do Equilíbrio Translacional e dos seus Tipos (Estável, Instável e Indiferente) na profissão de enfermagem?",
     "options": [
@@ -8633,45 +8159,26 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Consolida a formação científica e a competência técnica dos estudantes de licenciatura em Enfermagem."
   },
   {
-    "id": 1455,
+    "id": 1430,
     "topicId": 1,
-    "question": "Qual é a 'Intervenção de enfermagem recomendada' em ergonomia para garantir que a linha de gravidade se mantém centrada e estável durante a movimentação de cargas?",
+    "question": "Num doente sentado numa cadeira com os pés apoiados no chão e as costas encostadas, qual é a sua base de sustentação?",
     "options": [
-      "Segurar a carga com os braços esticados para a frente.",
-      "Manter a carga junto ao peito sem inclinar o tronco.",
-      "Inclinar o tronco lateralmente ao levantar a carga.",
-      "Transportar a carga equilibrada sobre um dos ombros."
+      "Limita-se exclusivamente à superfície das nádegas sobre a almofada do assento da cadeira, sendo o apoio dos pés no solo irrelevante para a estabilidade.",
+      "Corresponde apenas à área delimitada pelas solas de ambos os pés no pavimento, uma vez que a cadeira funciona unicamente como acessório de conforto passivo.",
+      "É o polígono amplo que engloba a área de contacto das nádegas e coxas no assento, a planta dos pés no chão e todo o espaço livre entre a cadeira e os pés.",
+      "É definida unicamente pela área de contacto das costas com o encosto vertical da cadeira, onde se concentra a totalidade da reação normal à gravidade."
     ],
-    "correctIndex": 1,
-    "explanation": "Critério de equilíbrio: 'Intervenção de enfermagem recomendada: Manter a carga junto ao peito sem inclinar o tronco'.",
+    "correctIndex": 2,
+    "explanation": "Como existem múltiplos pontos de contacto (nádegas + pés), a área delimitada pelo perímetro exterior de todos eles forma uma base de sustentação consideravelmente grande e estável.",
     "distractorAnalysis": [
-      "Está incorreta: esticar os braços afasta a carga do corpo, projetando a linha de gravidade para a frente da base de suporte.",
-      "Está incorreta: inclinar o tronco desvia a linha de gravidade para os bordos da base, causando sobrecarga lombar assimétrica.",
-      "Está incorreta: colocar cargas no ombro eleva o centro de gravidade e desvia lateralmente a projeção do peso corporal."
+      "Está incorreta: O apoio dos pés no chão é parte integrante fundamental da base de sustentação do indivíduo sentado.",
+      "Está incorreta: O assento da cadeira suporta a maior fração do peso corporal e delimita, juntamente com os pés, o polígono total de sustentação.",
+      "Está incorreta: A base de sustentação contra a gravidade requer superfícies com suporte de força normal vertical, englobando o assento e os pés no solo."
     ],
-    "nursingApplication": "Memorização da intervenção de enfermagem formal fundamental na movimentação manual de cargas."
+    "nursingApplication": "Identifica a base de sustentação na posição sentada."
   },
   {
-    "id": 1456,
-    "topicId": 1,
-    "question": "Num andarilho sem rodas (andarilho de passos fixo), qual é a sequência correta de marcha recomendada pelo enfermeiro?",
-    "options": [
-      "Avançar simultaneamente o membro são e o andarilho enquanto se mantém o membro afetado suspenso no ar, concluindo com um salto com os dois pés para a frente sem apoiar as ponteiras de borracha no piso hospitalar.",
-      "Avançar primeiro o membro são até ultrapassar a linha frontal das pegas do andarilho, seguido do avanço do membro afetado e apenas no final levantar e posicionar o andarilho trinta centímetros atrás das costas.",
-      "Levantar o andarilho com ambas as mãos durante a fase de apoio monopodal do membro lesionado, arremessando a estrutura para a frente e avançando ambos os pés em simultâneo com joelhos em extensão rígida total.",
-      "Avançar o andarilho um passo curto para a frente e assentar os quatro apoios firmemente no chão; depois avançar o membro inferior afetado (ou mais fraco); e finalmente avançar o membro são para o interior do andarilho."
-    ],
-    "correctIndex": 3,
-    "explanation": "Esta sequência garante que durante a fase de apoio unipodal e transferência de carga o doente conta com o suporte estável dos quatro pontos no solo.",
-    "distractorAnalysis": [
-      "Está incorreta: O andarilho deve ser posicionado com os quatro apoios firmes no solo antes de avançar qualquer membro, evitando saltos ou desequilíbrios.",
-      "Está incorreta: Avançar o pé são à frente do andarilho deixa a linha de gravidade fora da base de suporte e desestabiliza completamente o dispositivo.",
-      "Está incorreta: Levantar o andarilho durante o apoio monopodal do membro fraco elimina a base de suporte e induz a queda imediata do doente."
-    ],
-    "nursingApplication": "Sequência pedagógica padronizada de marcha com andarilho de apoios fixos."
-  },
-  {
-    "id": 1457,
+    "id": 1431,
     "topicId": 1,
     "question": "No contexto biomecânico, qual é o 'ponto de aplicação' da força exercida pelo músculo bíceps braquial no antebraço?",
     "options": [
@@ -8690,7 +8197,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Conhecer a inserção do bíceps (a cerca de 5 a 8 cm do cotovelo) é fundamental para calcular o momento muscular gerado."
   },
   {
-    "id": 1458,
+    "id": 1432,
     "topicId": 1,
     "question": "O que representa o 'módulo' ou 'intensidade' de um vetor força exercido pelo músculo deltoide na abdução do braço?",
     "options": [
@@ -8709,7 +8216,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite quantificar se a contração muscular do deltoide é suficiente para vencer a resistência do peso do membro superior."
   },
   {
-    "id": 1459,
+    "id": 1433,
     "topicId": 1,
     "question": "Ao puxar um lençol de transferência com os braços muito elevados (ângulo de 60° com a cama), o que acontece à força útil de deslizamento?",
     "options": [
@@ -8728,7 +8235,26 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Manter os braços baixos e o lençol junto ao plano do leito (ângulo pequeno) poupa esforço e previne lombalgias."
   },
   {
-    "id": 1460,
+    "id": 1434,
+    "topicId": 1,
+    "question": "Ao empurrar uma maca inclinando os braços para baixo num ângulo de 45°, que efeito indesejado ocorre na componente vertical Fy?",
+    "options": [
+      "A componente vertical anula a força de atrito das rodas com o piso, tornando a maca instável e propensa a derrapagens involuntárias.",
+      "A componente vertical faz com que a maca comece a acelerar para trás em sentido oposto ao movimento pretendido pelo profissional.",
+      "A componente vertical atua para baixo, empurrando as rodas dianteiras contra o piso e aumentando a força normal e o atrito.",
+      "A componente vertical dissipa toda a energia muscular sob a forma de calor nas articulações dos membros inferiores do profissional."
+    ],
+    "correctIndex": 2,
+    "explanation": "Empurrar de cima para baixo (para a frente e para baixo) adiciona uma força vertical descendente que sobrecarrega as rodas dianteiras.",
+    "distractorAnalysis": [
+      "Está incorreta: empurrar para baixo aumenta a compressão sobre o chão (Fn = P + Fy), o que eleva a força de atrito em vez de a diminuir.",
+      "Está incorreta: a força vertical atua perpendicularmente ao plano de deslocamento, não gerando qualquer componente vetorial retrógrada horizontal.",
+      "Está incorreta: a sobrecarga biomecânica gerada decorre do aumento do atrito de rolamento das rodas e da postura desfavorável da coluna do cuidador."
+    ],
+    "nursingApplication": "Ajustar a altura dos manípulos da maca ao nível dos cotovelos permite empurrar na horizontal pura sem sobrecarregar as rodas."
+  },
+  {
+    "id": 1435,
     "topicId": 1,
     "question": "Se o enfermeiro estivesse a segurar uma ampola de vidro na mão sem apoios no momento da travagem a 80 km/h, a ampola:",
     "options": [
@@ -8747,7 +8273,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Alerta para o perigo de manipular materiais perfurocortantes soltos em ambulâncias em marcha de emergência."
   },
   {
-    "id": 1461,
+    "id": 1436,
     "topicId": 1,
     "question": "Qual é a consequência de tentar contrariar a inércia de um corpo a 80 km/h utilizando apenas a força muscular dos braços?",
     "options": [
@@ -8766,7 +8292,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Nenhum profissional consegue 'segurar-se' com os braços numa colisão ou travagem brusca de emergência."
   },
   {
-    "id": 1462,
+    "id": 1437,
     "topicId": 1,
     "question": "Se um doente for transportado com a cabeça voltada para a frente e a maca embater bruscamente numa porta fechada, qual é o risco biomecânico?",
     "options": [
@@ -8785,7 +8311,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Reforça a regra clássica de enfermagem: doente na maca viaja com os pés para a frente (exceto no interior de elevadores estreitos)."
   },
   {
-    "id": 1463,
+    "id": 1438,
     "topicId": 1,
     "question": "Se um enfermeiro travar uma maca de forma brusca mantendo a coluna fletida e os membros inferiores estendidos, que lesão biomecânica arrisca?",
     "options": [
@@ -8804,7 +8330,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Lombalgias ocupacionais em enfermagem resultam frequentemente de paragens e transferências com má técnica postural inercial."
   },
   {
-    "id": 1464,
+    "id": 1439,
     "topicId": 1,
     "question": "Ao acelerar uma maca pesada a partir do repouso, como deve o enfermeiro utilizar o seu próprio corpo de acordo com a 1.ª Lei de Newton?",
     "options": [
@@ -8823,7 +8349,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "O uso inteligente da biomecânica corporal permite movimentar cargas elevadas com mínimo esforço e máxima segurança."
   },
   {
-    "id": 1465,
+    "id": 1440,
     "topicId": 1,
     "question": "Se a força resultante sobre um corpo for perpendicular à sua velocidade instantânea a cada momento, que tipo de aceleração é produzida?",
     "options": [
@@ -8842,26 +8368,45 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Explica a força centrípeta necessária para curvar uma maca ou cadeira de rodas nos cruzamentos dos corredores."
   },
   {
-    "id": 1466,
+    "id": 1441,
     "topicId": 1,
-    "question": "Se um doente com perda de força conseguir acelerar o seu braço de 3 kg a uma taxa de apenas 0,5 m/s² no plano horizontal, que força resultante muscular os seus abdutores estão a gerar?",
+    "question": "Na dinâmica do transporte em emergência, que perigo biofísico adicional é expressamente destacado relativamente a equipamentos médicos soltos na célula sanitária?",
     "options": [
-      "1,5 N (calculada diretamente pela 2.ª Lei: F = m · a = 3 kg · 0,5 m/s² = 1,5 N).",
-      "6 N, calculada por F = m · a² = 3 · 0,5² = 3 · 0,25 = 0,75, e depois multiplicada por 8, confundindo com energia.",
-      "0,17 N, calculada por F = m / a = 3 / 0,5 = 6, e depois invertida para 1/6 = 0,17, invertendo a relação.",
-      "3 N, calculada por F = a / m = 0,5 / 3 = 0,17 e depois multiplicada por m² = 9, sem fundamento na 2.ª Lei."
+      "Aumenta a rigidez da coluna vertebral impedindo qualquer excursão respiratória do ocupante durante o trajeto de socorro.",
+      "Anula a quantidade de movimento do passageiro antes de ocorrer qualquer desaceleração mecânica da própria viatura.",
+      "Aumenta o tempo de desaceleração (Δt), reduzindo a desaceleração média e a força de pico exercida sobre o tórax do ocupante.",
+      "Impede que os ossos da bacia transmitam qualquer força normal ao assento da cabine durante manobras de emergência."
     ],
-    "correctIndex": 3,
-    "explanation": "F = m·a = 3 kg · 0,5 m/s² = 1,5 N. O músculo gera uma força resultante modesta mas real e quantificável.",
+    "correctIndex": 0,
+    "explanation": "Pela 1.ª Lei, objetos soltos mantêm a velocidade de 80 km/h; ao atingirem uma pessoa parada, transferem momento linear e forças brutais (2.ª Lei: F = m·a).",
     "distractorAnalysis": [
-      "Está incorreta: F = m·a² usa a aceleração ao quadrado, o que corresponde a uma fórmula de energia (Ec = ½mv²) não à força; a 2.ª Lei é F = m·a (não a²).",
-      "Está incorreta: F = m/a inverte a relação da 2.ª Lei de Newton; a força é proporcional à aceleração (F = m·a), não inversamente proporcional.",
-      "Está incorreta: F = a/m inverte tanto o numerador como o denominador da 2.ª Lei; multiplicar por m² depois não tem justificação na lei de Newton."
+      "Está incorreta: os cintos permitem respiração livre e atuam como retentores dinâmicos apenas sob desacelerações inerciais súbitas.",
+      "Está incorreta: a quantidade de movimento reduz-se progressivamente através da força exercida pelo cinto e não de forma instantânea antecipada.",
+      "Está incorreta: a força normal no assento continua a suportar o peso; o cinto atua no sentido horizontal retendo a projeção inercial frontal."
     ],
-    "nursingApplication": "Permite ao profissional documentar a evolução quantitativa objetiva do ganho de força motora do utente."
+    "nursingApplication": "Exige a cultura de segurança de trancar sempre todos os suportes de equipamentos antes da marcha."
   },
   {
-    "id": 1467,
+    "id": 1442,
+    "topicId": 1,
+    "question": "Qual é a analogia clássica do ovo cru para ensinar o Teorema do Impulso aos profissionais de saúde?",
+    "options": [
+      "O ovo lançado contra o lençol sofre uma variação total da quantidade de movimento significativamente inferior à do ovo que embate contra a parede.",
+      "O impacto no lençol reduz o tempo de desaceleração para valores mínimos, permitindo que a força média aplicada sobre a casca aumente suavemente.",
+      "Um ovo lançado com a mesma velocidade parte-se ao embater numa parede rígida (Δt minúsculo, F enorme), mas permanece intacto ao aterrar num lençol frouxo (Δt longo, F reduzida).",
+      "O lençol impede a fratura da casca porque a força normal de impacto exercida pelo tecido sobre o ovo é estritamente nula durante todo o contacto."
+    ],
+    "correctIndex": 2,
+    "explanation": "Mesma massa e mesma velocidade inicial significam a mesma variação de momento linear (Δp); o lençol prolonga o tempo, reduzindo a força abaixo do limiar de rutura da casca.",
+    "distractorAnalysis": [
+      "Está incorreta: a variação da quantidade de movimento (Δp) é idêntica nos dois casos, pois ambos partem da mesma velocidade e atingem o repouso.",
+      "Está incorreta: o lençol deformável aumenta o tempo de paragem (Δt), o que diminui a força média de impacto recebida pelo ovo (F = Δp/Δt).",
+      "Está incorreta: a força normal exercida pelo lençol não é nula, mas sim distribuída no tempo e na área superficial, mantendo-se reduzida."
+    ],
+    "nursingApplication": "Fixa a intuição de que superfícies maleáveis e adaptativas protegem contra fraturas ao prolongar o tempo de paragem."
+  },
+  {
+    "id": 1443,
     "topicId": 1,
     "question": "Porque é que as forças do par ação-reação têm obrigatoriamente a mesma linha de ação (mesma direção)?",
     "options": [
@@ -8880,7 +8425,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Ajuda a compreender o alinhamento corporal durante técnicas de tração e posicionamento em enfermagem."
   },
   {
-    "id": 1468,
+    "id": 1444,
     "topicId": 1,
     "question": "Para conseguir aplicar a força vertical descendente de 400-500 N de forma eficiente e sustentável durante as compressões torácicas, o enfermeiro deve posicionar-se com:",
     "options": [
@@ -8899,7 +8444,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Diretriz fundamental de técnica e eficácia das compressões de suporte avançado de vida recomendadas pelo ERC/AHA."
   },
   {
-    "id": 1469,
+    "id": 1445,
     "topicId": 1,
     "question": "Num andarilho de quatro pontas sem rodas, porque é que a marcha exige que o doente pouse o dispositivo totalmente no solo antes de transferir o peso corporal?",
     "options": [
@@ -8918,7 +8463,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Orienta a educação para a saúde do utente com défice de equilíbrio na utilização correta do andarilho de marcha."
   },
   {
-    "id": 1470,
+    "id": 1446,
     "topicId": 1,
     "question": "Ao empurrar os apoios de braços para se levantar da cadeira de rodas, como utiliza o utente a 3.ª Lei de Newton a seu favor?",
     "options": [
@@ -8937,7 +8482,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Orienta a técnica de reabilitação funcional para ensinar doentes pós-AVC ou idosos a levantar-se da cadeira de forma autónoma e segura."
   },
   {
-    "id": 1471,
+    "id": 1447,
     "topicId": 1,
     "question": "Porque é que as rodas da cadeira de rodas DEVEM estar rigorosamente travadas antes de o doente tentar levantar-se apoiando-se nos apoios de braços?",
     "options": [
@@ -8956,7 +8501,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Regra de segurança prioritária e obrigatória em qualquer serviço de saúde: travar sempre a cadeira antes de qualquer transferência."
   },
   {
-    "id": 1472,
+    "id": 1448,
     "topicId": 1,
     "question": "Na flexão do antebraço sobre o braço realizada pelo músculo bíceps braquial, quando o tendão do bíceps puxa o rádio para cima com uma força F, que força atua na sua inserção óssea?",
     "options": [
@@ -8975,7 +8520,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Explica como a sobrecarga excessiva contínua em tendões pode causar avulsões ósseas por tração mecánica."
   },
   {
-    "id": 1473,
+    "id": 1449,
     "topicId": 1,
     "question": "Qual é a função biomecânica de um colar cervical rígido colocado numa vítima de acidente de viação?",
     "options": [
@@ -8994,7 +8539,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Prática prioritária no trauma: o colar cervical transfere as forças da mandíbula e occipital para o tronco, protegendo a coluna cervical."
   },
   {
-    "id": 1474,
+    "id": 1450,
     "topicId": 1,
     "question": "Qual é a posição biomecanicamente ideal para a fixação de uma barra de apoio horizontal junto à sanita para auxiliar o levante?",
     "options": [
@@ -9013,26 +8558,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Recomendação ergonómica de adaptação ambiental na reabilitação e promoção da autonomia do doente idoso."
   },
   {
-    "id": 1475,
-    "topicId": 1,
-    "question": "Como é que a identificação das forças no DCL auxilia a equipa de enfermagem a prescrever ajudas técnicas ergonómicas aos doentes?",
-    "options": [
-      "Porque ao dobrar os joelhos o centro de gravidade baixa e o tronco mantém-se próximo da vertical, reduzindo drasticamente o braço de alavanca e o momento fletor na coluna.",
-      "Porque fletir os joelhos anula o peso da carga levantada, permitindo que a coluna lombar suporte apenas o peso da cabeça do profissional.",
-      "Porque dobrar as pernas transfere toda a compressão articular exclusivamente para os ossos do tarso, poupando a articulação do joelho.",
-      "Porque a extensão dos joelhos com o tronco inclinado a 90 graus gera um momento de força estabilizador benéfico para os discos lombares."
-    ],
-    "correctIndex": 2,
-    "explanation": "A prescrição de cadeiras, andarilhos ou transferidores baseia-se na mecânica das forças e momentos que o DCL revela de forma objetiva.",
-    "distractorAnalysis": [
-      "Está incorreta: o peso da carga não varia com a postura; a flexão dos joelhos reduz o braço de momento da carga em relação ao fulcro lombar L5-S1.",
-      "Está incorreta: a articulação fémuro-tibial suporta compressão mecânica adequada e fisiológica através dos meniscos e quadríceps.",
-      "Está incorreta: inclinar o tronco a 90° com pernas esticadas multiplica o braço de alavanca da carga, gerando picos extremos de tensão discal."
-    ],
-    "nursingApplication": "Eleva a prática de enfermagem a um patamar científico de excelência baseado na evidência biofísica e ergonómica."
-  },
-  {
-    "id": 1476,
+    "id": 1451,
     "topicId": 1,
     "question": "O que acontece à força de atrito no momento exato em que a força aplicada pelo enfermeiro supera Fat,e_max e a maca começa a deslizar?",
     "options": [
@@ -9051,26 +8577,26 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Explica a sensação física universal de que 'o mais difícil é tirar a maca do lugar; depois de começar a andar fica mais leve!'"
   },
   {
-    "id": 1477,
+    "id": 1452,
     "topicId": 1,
-    "question": "Qual é a recomendação ergonómica para a equipa de enfermagem para minimizar a sobrecarga articular lombar no pico de esforço de arranque de macas pesadas?",
+    "question": "Quando uma maca apresenta um rodízio 'preso' que arrasta no solo em vez de rolar, qual é o impacto no esforço do profissional que a empurra?",
     "options": [
-      "Travar o leito e puxar o doente com movimentos espasmódicos repetidos sem qualquer coordenação de equipa prévia.",
-      "Executar a tração com as pernas estendidas e coluna lombar totalmente fletida num ângulo agudo para esticar os ligamentos.",
-      "Manter o leito o mais baixo possível perto do solo para obrigar os profissionais a trabalhar completamente curvados.",
-      "Aplicar uma força inicial mais firme para vencer o atrito estático máximo e, assim que o movimento começar, manter um impulso suave e constante."
+      "O esforço diminui ligeiramente, pois a borracha ao arrastar no piso aquece e reduz espontaneamente o coeficiente de atrito cinético superficial ao longo do corredor.",
+      "O esforço permanece rigorosamente inalterado, uma vez que a massa total do doente e da maca é constante e a aceleração gravítica local não sofre variações com o bloqueio.",
+      "O esforço aumenta consideravelmente, pois uma roda travada arrasta no piso sob atrito de deslizamento (μ ~ 0,3 a 0,5) e gera um binário de torção que desvia continuamente a maca da trajetória.",
+      "O esforço torna-se nulo porque a roda presa funciona como um pivô mecânico de alavanca que impulsiona ativamente a frente da maca na direção do empurrão do cuidador."
     ],
-    "correctIndex": 3,
-    "explanation": "Utilizar a massa corporal e a potência dos quadríceps e glúteos protege os discos lombares contra forças de cisalhamento lesivas no momento de Fat,e_max.",
+    "correctIndex": 2,
+    "explanation": "A roda bloqueada dissipa grande força em cisalhamento e cria um momento de rotação assimétrico que obriga o enfermeiro a gastar força contínua para não bater nas paredes.",
     "distractorAnalysis": [
-      "Está incorreta: movimentos desfasados aumentam as forças de pico (F = m·a) e elevam o risco de lesão musculoesquelética lombar.",
-      "Está incorreta: puxar com pernas retas e coluna curvada cria braços de alavanca longos e sobrecargas compressivas lesivas nos discos L5-S1.",
-      "Está incorreta: a cama deve ser ajustada à altura dos trocânteres maiores dos profissionais para preservar as curvaturas fisiológicas."
+      "Está incorreta: o atrito de deslizamento da borracha é ordens de grandeza superior à resistência ao rolamento livre, aumentando exponencialmente o esforço.",
+      "Está incorreta: embora a força normal global seja constante (N = P), o coeficiente de atrito cinético de arrasto é muito maior que o coeficiente de rolamento.",
+      "Está incorreta: uma roda bloqueada gera resistência contrária assimétrica ao avanço, provocando desvio de trajetória e exigindo força corretiva contínua."
     ],
-    "nursingApplication": "Regra de ouro de higiene postural e proteção da saúde do trabalhador de enfermagem em contexto prático."
+    "nursingApplication": "Instrui o enfermeiro a retirar imediatamente do serviço e encaminhar para reparação qualquer maca com rodízios presos."
   },
   {
-    "id": 1478,
+    "id": 1453,
     "topicId": 1,
     "question": "Como é que inclinar o tronco para a frente auxilia o enfermeiro a aumentar a força propulsora útil sem escorregar ao empurrar uma maca?",
     "options": [
@@ -9089,7 +8615,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Técnica ergonómica clássica que ensina a utilizar a biomecânica corporal e o peso postural a favor da tarefa."
   },
   {
-    "id": 1479,
+    "id": 1454,
     "topicId": 1,
     "question": "Porque é que as meias antiderrapantes hospitalares de alta qualidade possuem pontos de silicone em ambas as faces (superior e inferior do pé)?",
     "options": [
@@ -9108,7 +8634,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Exemplo notável de design ergonómico orientado pela física e pela segurança clínica do doente frágil."
   },
   {
-    "id": 1480,
+    "id": 1455,
     "topicId": 1,
     "question": "Numa cadeira de rodas ergonómica adaptada, a estabilidade é considerada estável porque:",
     "options": [
@@ -9127,7 +8653,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fundamenta as regras de prescrição e ajuste dimensional de cadeiras de rodas personalizadas."
   },
   {
-    "id": 1481,
+    "id": 1456,
     "topicId": 1,
     "question": "Quando um doente sentado numa poltrona com encosto e apoios de braços se inclina ligeiramente para o lado para apanhar um livro e volta espontaneamente à posição ereta, isso demonstra que:",
     "options": [
@@ -9146,7 +8672,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Ilustra a resiliência dinâmica de posturas estáveis bem configuradas no internamento hospitalar."
   },
   {
-    "id": 1482,
+    "id": 1457,
     "topicId": 1,
     "question": "Como se define formalmente um estado de Equilíbrio Instável (Unstable Equilibrium)?",
     "options": [
@@ -9165,7 +8691,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite ao enfermeiro reconhecer antecipadamente situações de elevado risco mecânico e agir preventivamente."
   },
   {
-    "id": 1483,
+    "id": 1458,
     "topicId": 1,
     "question": "Porque é que tentar equilibrar um frasco de soro cilíndrico sobre o seu gargalo estreito invertido é um equilíbrio instável?",
     "options": [
@@ -9184,7 +8710,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Ilustra com objetos do quotidiano hospitalar a regra de ouro: base pequena + CG elevado = instabilidade crítica."
   },
   {
-    "id": 1484,
+    "id": 1459,
     "topicId": 1,
     "question": "Se colocarmos uma caixa retangular hospitalar com a sua face mais larga no solo e a inclinarmos ligeiramente sem ultrapassar o bordo da base, que linha geométrica determina se ela retorna ou tomba?",
     "options": [
@@ -9203,26 +8729,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Conceito central de biomecânica que liga os Tipos de Equilíbrio à Base de Sustentação do Bloco 8."
   },
   {
-    "id": 1485,
-    "topicId": 1,
-    "question": "Se um doente sentado na borda da cama com os pés suspensos no ar (sem tocar no chão) sofrer uma tontura súbita, o seu equilíbrio:",
-    "options": [
-      "Permanece em equilíbrio estável contínuo, pois a suspensão dos pés rebaixa o centro de massa do tronco para um nível inferior à superfície elástica do colchão hospitalar.",
-      "É mantido automaticamente pelas forças inerciais das pernas pendentes, que atuam como pêndulos restauradores capazes de neutralizar qualquer momento angular da coluna.",
-      "Transforma-se num equilíbrio neutro perfeito, no qual o tronco oscila livremente sem risco de queda devido à total ausência de forças de atrito entre o corpo e o ar ambiente.",
-      "Torna-se altamente instável, pois sem o apoio dos pés no solo não consegue gerar forças normais nem de atrito para restabelecer a posição, caindo se o enfermeiro não o segurar."
-    ],
-    "correctIndex": 3,
-    "explanation": "Pés no ar reduzem drasticamente o polígono de sustentação às tuberosidades isquiáticas; qualquer desvio da linha do CG resulta em momento de tombamento incontrolável.",
-    "distractorAnalysis": [
-      "Está incorreta: os pés suspensos reduzem a base de apoio apenas às nádegas, elevando a instabilidade perante desvios laterais ou anteriores do tronco.",
-      "Está incorreta: membros pendentes não conseguem produzir forças normais contra o solo para gerar momentos musculares compensatórios, facilitando o tombo.",
-      "Está incorreta: o doente com pés no ar está em equilíbrio precário e altamente instável; uma tontura projeta o centro de gravidade para fora da base, culminando em queda."
-    ],
-    "nursingApplication": "Regra de ouro: regular sempre a altura da cama para baixo até que os pés do utente assentem firmemente e planos no solo."
-  },
-  {
-    "id": 1486,
+    "id": 1460,
     "topicId": 1,
     "question": "Como é que os fármacos sedativos e ansiolíticos da classe das benzodiazepinas (ex: diazepam, lorazepam) afetam o equilíbrio biofísico dos doentes?",
     "options": [
@@ -9241,7 +8748,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Alerta clínico crucial: a prescrição de sedativos e hipnóticos duplica o risco estatístico de queda com fratura em idosos internados."
   },
   {
-    "id": 1487,
+    "id": 1461,
     "topicId": 1,
     "question": "Como é que a biomecânica moderna descreve o processo dinâmico da marcha humana normal sob o ponto de vista do equilíbrio?",
     "options": [
@@ -9260,7 +8767,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Conceito fascinante: caminhar é 'cair de forma controlada' e recuperar o equilíbrio a cada passada com extrema elegância mecânica."
   },
   {
-    "id": 1488,
+    "id": 1462,
     "topicId": 1,
     "question": "O que acontece quando o pé de oscilação do utente tropeça num obstáculo no chão (ex: tapete solto ou fio elétrico) durante o avanço?",
     "options": [
@@ -9279,7 +8786,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fundamenta a eliminação rigorosa de tapetes soltos e fios no chão nos programas hospitalares e domiciliários de prevenção de quedas."
   },
   {
-    "id": 1489,
+    "id": 1463,
     "topicId": 1,
     "question": "Se durante o amparo o doente estiver em queda franca e for demasiado pesado para ser sustentado no ar nos braços do enfermeiro, qual é a manobra segura recomendada para proteger ambos?",
     "options": [
@@ -9298,7 +8805,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Técnica ergonómica clássica e obrigatória ensinada internacionalmente nos cursos de manuseamento seguro de doentes."
   },
   {
-    "id": 1490,
+    "id": 1464,
     "topicId": 1,
     "question": "Sob o ponto de vista da física do equilíbrio, como se classifica o estado de um suporte de soro móvel tradicional com cinco rodízios pousado no piso plano?",
     "options": [
@@ -9317,7 +8824,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite analisar a segurança dos equipamentos e antecipar como as cargas adicionadas alteram a sua estabilidade."
   },
   {
-    "id": 1491,
+    "id": 1465,
     "topicId": 1,
     "question": "Como se define fisicamente o Momento de uma Força (ou Torque, M)?",
     "options": [
@@ -9336,7 +8843,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite ao enfermeiro compreender como pequenas forças em alavancas longas conseguem mover grandes cargas corporais."
   },
   {
-    "id": 1492,
+    "id": 1466,
     "topicId": 1,
     "question": "O que acontece ao momento gerado por uma força se dobrarmos a distância (o braço b) mantendo a mesma força F aplicada?",
     "options": [
@@ -9355,7 +8862,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Explica porque é muito mais fácil abrir uma porta empurrando junto ao puxador (longe das dobradiças) do que junto ao eixo."
   },
   {
-    "id": 1493,
+    "id": 1467,
     "topicId": 1,
     "question": "Para uma mesma força F aplicada no mesmo ponto do osso a uma distância d do centro articular, em que ângulo θ de inserção tendinosa o momento de rotação atinge o seu valor máximo?",
     "options": [
@@ -9374,7 +8881,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Explica porque a força de flexão do cotovelo é máxima quando o cotovelo se encontra fletido a cerca de 90°."
   },
   {
-    "id": 1494,
+    "id": 1468,
     "topicId": 1,
     "question": "O que acontece à componente de rotação de uma força muscular quando o ângulo de inserção tendinosa é muito pequeno (ex: tendão quase paralelo ao osso com θ = 10°)?",
     "options": [
@@ -9393,7 +8900,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Fundamenta a dupla função dos músculos esqueléticos: produzir movimento angular e estabilizar/coaptar articulações."
   },
   {
-    "id": 1495,
+    "id": 1469,
     "topicId": 1,
     "question": "Qual é a unidade padrão do Momento de uma Força (Torque) no Sistema Internacional de Unidades (SI)?",
     "options": [
@@ -9412,7 +8919,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Assegura a exatidão terminológica e científica na documentação de ensaios dinamométricos e posturais."
   },
   {
-    "id": 1496,
+    "id": 1470,
     "topicId": 1,
     "question": "Embora dimensionalmente o Momento de uma Força e o Trabalho Mecânico correspondam ao produto de Newtons por metros (N·m), porque é que o Torque NUNCA deve ser expresso em Joules?",
     "options": [
@@ -9431,7 +8938,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Distingue com rigor dois conceitos que partilham a mesma dimensão física fundamental ([M]·[L]²·[T]⁻²)."
   },
   {
-    "id": 1497,
+    "id": 1471,
     "topicId": 1,
     "question": "Qual é a expressão dimensional do Momento de uma Força em termos das grandezas fundamentais de Massa [M], Comprimento [L] e Tempo [T]?",
     "options": [
@@ -9450,7 +8957,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Permite a validação de equações biomecânicas avançadas através da análise dimensional."
   },
   {
-    "id": 1498,
+    "id": 1472,
     "topicId": 1,
     "question": "Se um dinamómetro isocinético computadorizado num centro de reabilitação registar um pico de torque extensor do joelho de 240 N·m a 60°/s, isso significa que:",
     "options": [
@@ -9469,7 +8976,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Capacita o enfermeiro a interpretar relatórios funcionais isocinéticos de doentes em reabilitação motora e desportiva."
   },
   {
-    "id": 1499,
+    "id": 1473,
     "topicId": 1,
     "question": "Como se converte um valor de torque tradicional expresso em quilograma-força metro (kgf·m) para a unidade oficial do SI em Newton-metro (adotando g = 9,8 m/s²)?",
     "options": [
@@ -9488,7 +8995,7 @@ const TOPIC_1_QUESTIONS = [
     "nursingApplication": "Assegura a exatidão na leitura de manuais de equipamentos biomédicos antigos ou de importação."
   },
   {
-    "id": 1500,
+    "id": 1474,
     "topicId": 1,
     "question": "Qual é a convenção matemática de sinais habitualmente adotada na física e biomecânica para o sentido do Momento de uma Força no plano sagital?",
     "options": [
@@ -9505,5 +9012,499 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: o momento de uma força é uma grandeza vetorial; no plano bidimensional o seu sentido é representado pelo sinal positivo ou negativo."
     ],
     "nursingApplication": "Permite somar algebricamente os torques que tendem a fletir ou estender uma articulação."
+  },
+  {
+    "id": 1475,
+    "topicId": 1,
+    "question": "Qual é a Segunda Condição de Equilíbrio (Condição de Equilíbrio Rotacional) para um corpo rígido que pode girar em redor de um eixo?",
+    "options": [
+      "A resultante de todas as forças aplicadas sobre o corpo tem de ser estritamente nula (∑F = 0), independentemente da linha de ação e ponto de aplicação.",
+      "O produto vetorial da massa pela velocidade linear do centro de gravidade tem de ser constante, garantindo que a energia cinética translacional se conserve.",
+      "A soma algébrica de todos os momentos de força em relação a qualquer eixo de rotação tem de ser rigorosamente nula: ∑M = 0 (ou ∑M_horário = ∑M_anti-horário).",
+      "A soma dos momentos no sentido horário tem de ser superior aos momentos anti-horários para compensar o atrito viscoso intrínseco das superfícies articulares."
+    ],
+    "correctIndex": 2,
+    "explanation": "Para que não haja aceleração angular (α = 0), o torque resultante externo tem de anular-se: ∑M = I · α = 0.",
+    "distractorAnalysis": [
+      "Está incorreta: a condição ∑F = 0 assegura apenas o equilíbrio translacional, podendo o corpo rodar sob a ação de um binário de forças se ∑M ≠ 0.",
+      "Está incorreta: a conservação do momento linear ou da velocidade não define equilíbrio rotacional estático, o qual exige anulação dos momentos (∑M = 0).",
+      "Está incorreta: no equilíbrio estático a soma dos momentos tem de ser rigorosamente nula (∑M = 0), sem prevalência de qualquer sentido de rotação."
+    ],
+    "nursingApplication": "Pilar central da estática de corpos extensos: ∑F = 0 (não translada) e ∑M = 0 (não roda)."
+  },
+  {
+    "id": 1476,
+    "topicId": 1,
+    "question": "O que acontece a um corpo extenso se sobre ele atuar um sistema de forças com força resultante nula (∑F = 0), mas com momento resultante não nulo (∑M ≠ 0)?",
+    "options": [
+      "O corpo não translada (o seu centro de gravidade não acelera em linha reta), mas entra em rotação acelerada em redor do seu centro de massa (binário de forças).",
+      "O corpo permanece rigorosamente imóvel em repouso absoluto, porque a anulação das forças lineares impede qualquer tipo de movimento na mecânica clássica.",
+      "O corpo inicia uma translação linear com velocidade constante ao longo do eixo vertical, enquanto o movimento angular é totalmente amortecido.",
+      "O centro de gravidade do corpo desloca-se em espiral descendente com perda progressiva de massa corporal por atrito dinâmico com o ar circundante."
+    ],
+    "correctIndex": 0,
+    "explanation": "Um par de forças iguais e opostas em linhas de ação diferentes (binário ou casal de forças) tem ∑F = 0 mas ∑M ≠ 0, gerando rotação pura.",
+    "distractorAnalysis": [
+      "Está incorreta: a condição ∑F = 0 garante apenas o equilíbrio translacional; com ∑M ≠ 0 existe aceleração angular rotacional.",
+      "Está incorreta: havendo ∑F = 0 o centro de massa não translada; apenas existe rotação em torno do centro de massa.",
+      "Está incorreta: a massa do corpo mantém-se inalterada e a ausência de força resultante impede qualquer translação em espiral do centro de massa."
+    ],
+    "nursingApplication": "Explica como giramos o volante de um carro ou a torneira da cama aplicando forças opostas com as duas mãos."
+  },
+  {
+    "id": 1477,
+    "topicId": 1,
+    "question": "Num alicate corta-fios ou tesoura de corte pesado de ligaduras, o braço de potência é muito mais longo do que o braço de resistência (bp >> br). Que efeito físico resulta?",
+    "options": [
+      "Uma perda total de força que impede o corte de ligaduras espessas, exigindo esforço manual excessivo nas lâminas cirúrgicas curtas.",
+      "Uma Vantagem Mecânica sempre inferior a 1 (VM < 1), diminuindo a força de corte disponível na extremidade ativa dos mordentes.",
+      "Uma Vantagem Mecânica muito superior a 1 (VM >> 1), multiplicando a força das mãos do enfermeiro para cortar materiais resistentes com facilidade.",
+      "Uma amplificação de velocidade nas lâminas à custa de uma redução drástica da força efetiva aplicada ao material biológico ou têxtil."
+    ],
+    "correctIndex": 2,
+    "explanation": "bp longo e br curto: Fr = Fp · (bp / br). Uma força manual modesta de 50 N pode gerar forças cortantes de centenas de Newtons nas lâminas curtas.",
+    "distractorAnalysis": [
+      "Está incorreta: quando o braço de potência é maior que o de resistência (bp > br), a força é amplificada e não diminuída.",
+      "Está incorreta: alicates e tesouras de corte são alavancas com bp > br, resultando sempre em vantagem mecânica superior a 1 (VM > 1).",
+      "Está incorreta: lâminas curtas com cabos longos maximizam a força de cisalhamento para cortar tecidos duros e não a velocidade das pontas."
+    ],
+    "nursingApplication": "Orienta a escolha de alicates e tesouras de gesso com cabos longos para retirar imobilizações sem esforço excessivo."
+  },
+  {
+    "id": 1478,
+    "topicId": 1,
+    "question": "No equilíbrio da cabeça na articulação atlanto-occipital, porque é que os músculos da nuca têm de estar em contração isométrica tónica contínua na postura de pé ereta?",
+    "options": [
+      "Porque o Centro de Gravidade da cabeça se localiza muito atrás dos côndilos occipitais, produzindo um momento extensor permanente que exige tração contínua dos músculos anteriores do pescoço.",
+      "Porque o Centro de Gravidade da cabeça localiza-se ligeiramente à frente dos côndilos occipitais, gerando um momento que faria a cabeça tombar para a frente sobre o peito se os músculos não contrabalançassem.",
+      "Porque o Centro de Gravidade coincide exatamente com o ponto de apoio articular nos côndilos, o que anula os momentos mas exige contração tónica para impedir a translação lateral do crânio.",
+      "Porque os músculos posteriores atuam como uma alavanca inter-resistente que comprime ativamente a coluna cervical para compensar a falta de ligamentos estabilizadores na articulação atlanto-axial."
+    ],
+    "correctIndex": 1,
+    "explanation": "O peso da cabeça gera um torque flexor para a frente (sentido horário); os músculos posteriores da nuca exercem uma tração descendente posterior (torque anti-horário) para manter ∑M = 0.",
+    "distractorAnalysis": [
+      "Está incorreta: o centro de gravidade da cabeça situa-se anteriormente aos côndilos occipitais, gerando um torque flexor e não extensor.",
+      "Está incorreta: o baricentro cefálico não coincide com o fulcro articular, situando-se ligeiramente anterior a este e criando um braço de alavanca resistente.",
+      "Está incorreta: a articulação atlanto-occipital é uma alavanca interfixa de 1.ª classe estabilizada por fortes ligamentos, não uma alavanca inter-resistente."
+    ],
+    "nursingApplication": "Explica porque quando uma pessoa sentada adormece, a cabeça 'cai' para a frente: o tónus muscular dos extensores desliga-se!"
+  },
+  {
+    "id": 1479,
+    "topicId": 1,
+    "question": "Quando um doente ou profissional adota a postura de 'cabeça projetada para a frente' (text neck, olhando para o telemóvel com flexão cervical acentuada), o braço br da cabeça aumenta de 4 cm para 12 cm. O que acontece à força exigida aos músculos da nuca?",
+    "options": [
+      "A força muscular exigida triplica (passando de 40 N para 120 N, cerca de 12 kgf contínuos), gerando fadiga muscular severa, dor cervical e sobrecarga nos discos intervertebrais.",
+      "A força muscular necessária diminui para um terço, pois a aproximação do queixo ao esterno descarrega as vértebras cervicais e alivia os ligamentos nucais.",
+      "A força muscular mantém-se absolutamente constante em 40 N, uma vez que o peso da cabeça é fixo e não depende da inclinação angular do segmento cefálico.",
+      "A força muscular anula-se por completo, passando o suporte cefálico a ser garantido passivamente pela elasticidade dos vasos cervicais e traqueia."
+    ],
+    "correctIndex": 0,
+    "explanation": "M_resistente = Fr · br: triplicando o braço de resistência br, o torque que faz a cabeça cair triplica, exigindo que os músculos da nuca gerem o triplo da força de tração.",
+    "distractorAnalysis": [
+      "Está incorreta: ao aumentar o braço de resistência de 4 cm para 12 cm, o momento de flexão triplica, exigindo o triplo da força muscular extensora.",
+      "Está incorreta: embora a massa cefálica seja constante, o aumento da distância horizontal ao fulcro cervical multiplica o torque exigido.",
+      "Está incorreta: as estruturas vasculares e viscerais não fornecem suporte mecânico; a carga é suportada pelos músculos eretores e discos cervicais."
+    ],
+    "nursingApplication": "Fundamenta a educação ergonómica de enfermagem na prevenção de cervicalgias ocupacionais e posturais."
+  },
+  {
+    "id": 1480,
+    "topicId": 1,
+    "question": "Quando o músculo bíceps braquial se encurta apenas 1 centímetro na sua inserção (a 4 cm do cotovelo), que distância aproximada se desloca a mão na extremidade do antebraço (a 32 cm do cotovelo)?",
+    "options": [
+      "A mão desloca-se exatamente 1 centímetro, mantendo a proporção linear direta do encurtamento das fibras do bíceps.",
+      "A mão desloca-se 0,125 centímetros, visto que a extremidade distal move-se oito vezes menos do que o tendão muscular.",
+      "A mão desloca-se cerca de 8 centímetros (amplificação de movimento de 8 vezes, proporcional à razão dos braços: 32 / 4 = 8).",
+      "A mão desloca-se 4 centímetros, acompanhando o comprimento exato do braço de potência entre a inserção e o cotovelo."
+    ],
+    "correctIndex": 2,
+    "explanation": "Pela geometria dos arcos: Δs_mão = Δs_músculo · (br / bp) = 1 cm · (32 / 4) = 8 cm. A velocidade e a distância da mão são multiplicadas por 8!",
+    "distractorAnalysis": [
+      "Está incorreta: numa alavanca interpotente o arco de movimento é amplificado proporcionalmente à razão br / bp (32 / 4 = 8 vezes).",
+      "Está incorreta: a mão está mais afastada do fulcro do que a inserção, percorrendo uma distância 8 vezes maior, e não menor.",
+      "Está incorreta: o deslocamento distal depende da razão angular dos arcos de circunferência (32/4 = 8 cm), e não do valor isolado de bp."
+    ],
+    "nursingApplication": "Ilustra numericamente a amplificação cinemática extraordinária das alavancas de 3.ª classe no membro superior."
+  },
+  {
+    "topicId": 1,
+    "question": "De acordo com os conceitos fundamentais de Biofísica lecionados, como se define a Força Normal (N)?",
+    "options": [
+      "Força tangencial que se opõe continuamente ao movimento relativo entre duas superfícies em contacto.",
+      "Força perpendicular exercida por uma superfície sobre o corpo que nela se apoia.",
+      "Força atrativa gravítica universal exercida pelo centro de massa da Terra sobre o corpo humano.",
+      "Força rotacional medida pelo produto da intensidade da força pelo respetivo braço de alavanca."
+    ],
+    "correctIndex": 1,
+    "explanation": "A Força Normal (N) define-se como a força perpendicular que a superfície de suporte exerce sobre qualquer corpo nela apoiado.",
+    "distractorAnalysis": [
+      "Está incorreta: A força tangencial oposta ao movimento relativo define a força de atrito e não a força normal.",
+      "Está incorreta: A atração gravítica universal define a força peso e não a força normal de contacto com a superfície.",
+      "Está incorreta: O produto da força pelo braço de alavanca perpendicular define o momento de uma força (torque)."
+    ],
+    "nursingApplication": "Compreender a força normal permite analisar como a superfície do leito ou cadeira sustenta passivamente o peso do doente.",
+    "id": 1481
+  },
+  {
+    "topicId": 1,
+    "question": "No Slide 36 da aula, coloca-se a questão: 'A força normal é um exemplo da 3.ª Lei de Newton?' Qual é a resposta física correta?",
+    "options": [
+      "Sim, porque em qualquer superfície plana horizontal a força normal tem a mesma intensidade e sentido oposto ao peso do doente.",
+      "Sim, porque a força normal e a força peso anulam-se mutuamente gerando equilíbrio estático permanente no corpo.",
+      "Não, porque a Força Normal e o Peso atuam sobre o mesmo corpo, enquanto os pares ação-reação atuam obrigatoriamente em corpos distintos.",
+      "Não, porque a 3.ª Lei de Newton apenas se aplica a corpos em movimento acelerado e nunca a corpos em repouso."
+    ],
+    "correctIndex": 2,
+    "explanation": "A Normal e o Peso não são par ação-reação: ambas atuam no mesmo corpo. O par do Peso atua no centro da Terra; o par da Normal atua na superfície de apoio.",
+    "distractorAnalysis": [
+      "Está incorreta: Ter a mesma intensidade e direção oposta em repouso horizontal não torna duas forças num par de ação-reação.",
+      "Está incorreta: Forças de ação e reação nunca atuam no mesmo corpo nem se anulam no mesmo ponto de aplicação.",
+      "Está incorreta: A 3.ª Lei de Newton aplica-se universalmente a todas as interações da mecânica, quer em repouso quer em movimento."
+    ],
+    "nursingApplication": "Este rigor físico impede o erro comum de considerar que forças que equilibram um corpo em repouso constituem pares ação-reação.",
+    "id": 1482
+  },
+  {
+    "topicId": 1,
+    "question": "Numa superfície plana perfeitamente horizontal, qual é a relação matemática entre a intensidade da Força Normal (N) e a Força Peso (P) de um doente de 70 kg em repouso (g = 9,8 m/s²)?",
+    "options": [
+      "N = P = m · g = 70 kg × 9,8 m/s² = 686 N, tendo a mesma intensidade mas sentidos verticais opostos.",
+      "N = P / g = 70 / 9,8 = 7,14 N, dividindo a massa do doente pela aceleração da gravidade.",
+      "N = 0 N, porque em repouso horizontal as superfícies não exercem qualquer força de sustentação.",
+      "N = 7000 N, multiplicando incorretamente a massa corporal por uma aceleração cem vezes superior."
+    ],
+    "correctIndex": 0,
+    "explanation": "Em superfície horizontal sem aceleração vertical, a força resultante vertical é nula: N - P = 0 ⇒ N = P = 70 × 9,8 = 686 N.",
+    "distractorAnalysis": [
+      "Está incorreta: A força peso e a normal são o produto m · g e não a divisão da massa pela gravidade.",
+      "Está incorreta: Se a força normal fosse nula o corpo afundar-se-ia pela ação desimpedida da gravidade.",
+      "Está incorreta: 70 × 9,8 resulta em 686 N exatos e não em 7000 N."
+    ],
+    "nursingApplication": "Calcular a força de sustentação normal exercida pelo leito ou maca permite dimensionar a resistência dos apoios hospitalares.",
+    "id": 1483
+  },
+  {
+    "topicId": 1,
+    "question": "De acordo com o Slide 59 (Corpo em equilíbrio num plano inclinado), que condição de equilíbrio se verifica para a componente perpendicular do peso (Pn)?",
+    "options": [
+      "Pn = Fa, onde a componente perpendicular do peso é diretamente equilibrada pelo atrito estático do plano.",
+      "Pn = N, onde a componente perpendicular do peso é exatamente equilibrada pela força normal da superfície.",
+      "Pn = Pt, onde a componente perpendicular tem de ser obrigatoriamente idêntica à componente tangencial.",
+      "Pn = 0 N, desaparecendo a compressão perpendicular quando o plano se encontra inclinado."
+    ],
+    "correctIndex": 1,
+    "explanation": "No plano inclinado, o equilíbrio na direção perpendicular à superfície exige que a Força Normal equilibre a componente normal do peso: Pn = N.",
+    "distractorAnalysis": [
+      "Está incorreta: A força de atrito (Fa) atua ao longo da superfície e equilibra a componente tangencial Pt e não Pn.",
+      "Está incorreta: As componentes Pn e Pt só seriam iguais num ângulo particular de 45° e não como condição geral.",
+      "Está incorreta: A componente perpendicular Pn = P · cos θ mantém-se ativa enquanto o plano não for estritamente vertical (90°)."
+    ],
+    "nursingApplication": "Ao transportar macas por rampas inclinadas, o enfermeiro sabe que a força normal de sustentação é igual a Pn.",
+    "id": 1484
+  },
+  {
+    "topicId": 1,
+    "question": "Ainda segundo o Slide 59, numa rampa inclinada em equilíbrio estático, que força equilibra a componente tangencial do peso (Pt) que tende a fazer deslizar o corpo?",
+    "options": [
+      "A Força de Gravidade universal que atrai o corpo para o centro do planeta.",
+      "A Força Nuclear Forte que mantém as moléculas da superfície unidas.",
+      "A Força de Atrito (Fa = Pt), que atua na direção tangencial em sentido contrário à descida.",
+      "A Força Normal (N = Pt), que atua perpendicularmente à superfície da rampa."
+    ],
+    "correctIndex": 2,
+    "explanation": "Na direção paralela à rampa inclinada, a componente tangencial do peso (Pt) é travada pela força de atrito: Pt = Fa.",
+    "distractorAnalysis": [
+      "Está incorreta: O peso global é que origina Pt e Pn; a gravidade gera a tendência de descida e não a sua contenção.",
+      "Está incorreta: A força nuclear forte atua apenas nos núcleos atómicos e não no atrito macroscópico da rampa.",
+      "Está incorreta: A força normal atua perpendicularmente à rampa e não tem componente ao longo do plano inclinado."
+    ],
+    "nursingApplication": "Para imobilizar uma cama numa rampa de transferência, os travões aumentam o atrito estático para que Fa equilibre Pt.",
+    "id": 1485
+  },
+  {
+    "topicId": 1,
+    "question": "O que acontece à intensidade da Força Normal (N = P · cos θ) à medida que aumentamos a inclinação (ângulo θ) de uma rampa hospitalar de transferência?",
+    "options": [
+      "A força normal permanece rigorosamente inalterada porque a massa do doente e da maca é constante.",
+      "A força normal aumenta exponencialmente, gerando maior compressão mecânica contra o chão da rampa.",
+      "A força normal diminui progressivamente, pois o cosseno do ângulo diminui de 1 (a 0°) para 0 (a 90°).",
+      "A força normal transforma-se subitamente em força centrípeta quando o ângulo atinge 30 graus."
+    ],
+    "correctIndex": 2,
+    "explanation": "Com o aumento da inclinação θ, cos θ diminui, pelo que a Força Normal N = P · cos θ diminui, aumentando a componente de deslizamento Pt.",
+    "distractorAnalysis": [
+      "Está incorreta: Embora o peso P seja constante, a sua projeção perpendicular sobre a superfície varia com o ângulo.",
+      "Está incorreta: A força normal diminui com a inclinação e não aumenta.",
+      "Está incorreta: Não há qualquer força centrípeta num sistema estático ou retilíneo de plano inclinado."
+    ],
+    "nursingApplication": "Com menor força normal em rampas íngremes, o atrito máximo diminui, aumentando o perigo de deslizamento descontrolado.",
+    "id": 1486
+  },
+  {
+    "topicId": 1,
+    "question": "Como se relaciona diretamente a Força Normal (N) com o valor máximo da Força de Atrito estático (Fa_max = μe · N) entre os pneus de uma maca e o pavimento?",
+    "options": [
+      "A força de atrito estático máximo é inversamente proporcional à força normal exercida sobre o pavimento.",
+      "A força de atrito estático máximo é diretamente proporcional à força normal (quanto maior for N, maior é o atrito disponível).",
+      "A força normal e a força de atrito são independentes, dependendo o atrito unicamente da velocidade da maca.",
+      "A força de atrito só existe quando a força normal for rigorosamente igual a zero."
+    ],
+    "correctIndex": 1,
+    "explanation": "Pela relação física clássica Fa_max = μe · N: quanto maior for a Força Normal N, maior é a força de atrito disponível para travar.",
+    "distractorAnalysis": [
+      "Está incorreta: A relação é diretamente proporcional e não inversamente proporcional.",
+      "Está incorreta: O atrito estático depende criticamente da força normal que comprime as duas superfícies.",
+      "Está incorreta: Sem força normal (N = 0) não existe qualquer contacto mecânico nem qualquer atrito."
+    ],
+    "nursingApplication": "Uma maca mais pesada exerce maior força normal, o que aumenta o atrito de travagem seguro dos seus rodízios.",
+    "id": 1487
+  },
+  {
+    "topicId": 1,
+    "question": "Quando um doente em pé se apoia numa balança hospitalar de plataforma e apoia parte do seu peso num corrimão fixo de apoio, o que acontece à leitura indicada pela balança?",
+    "options": [
+      "A balança indica um valor inferior porque ela mede a força normal exercida sobre a plataforma, que diminuiu.",
+      "A balança indica exatamente o mesmo peso porque a massa corporal do doente não se alterou.",
+      "A balança indica um valor superior devido à força de atrito adicional gerada pelas mãos no corrimão.",
+      "A leitura da balança oscila entre zero e o infinito por violação do princípio de conservação de energia."
+    ],
+    "correctIndex": 0,
+    "explanation": "A balança mede a Força Normal de reação na sua plataforma (N = P - F_corrimão). Ao apoiar as mãos, N diminui e a balança regista menor valor.",
+    "distractorAnalysis": [
+      "Está incorreta: Embora a massa corporal seja a mesma, a balança mede a força normal de contacto com a plataforma e não a massa direta.",
+      "Está incorreta: A força de apoio no corrimão subtrai carga à plataforma e nunca adiciona peso à leitura.",
+      "Está incorreta: Não há qualquer oscilação caótica; a leitura é estável e reflete o equilíbrio de forças verticais."
+    ],
+    "nursingApplication": "Para obter a pesagem real e rigorosa de um utente, este não pode estar apoiado em corrimões ou acompanhantes.",
+    "id": 1488
+  },
+  {
+    "topicId": 1,
+    "question": "Um doente de 80 kg encontra-se sentado numa cadeira de rodas em repouso plano horizontal (g = 9,8 m/s²). Se a cadeira tiver massa de 15 kg, qual é a força normal total exercida pelo chão sobre as quatro rodas?",
+    "options": [
+      "N = 80 × 9,8 = 784 N, desconsiderando a massa da própria cadeira de rodas.",
+      "N = (80 kg + 15 kg) × 9,8 m/s² = 95 kg × 9,8 m/s² = 931 N, suportando a massa total do sistema.",
+      "N = 15 × 9,8 = 147 N, contabilizando exclusivamente a estrutura mecânica da cadeira.",
+      "N = 95 N, esquecendo a multiplicação pelo valor da aceleração gravitacional g."
+    ],
+    "correctIndex": 1,
+    "explanation": "O chão tem de suportar a massa conjunta do utente e da cadeira: N = (80 + 15) × 9,8 = 95 × 9,8 = 931 N.",
+    "distractorAnalysis": [
+      "Está incorreta: A força normal no chão tem de sustentar tanto o doente como a cadeira de rodas.",
+      "Está incorreta: A força exercida sobre o chão inclui obrigatoriamente a carga do doente sentado.",
+      "Está incorreta: 95 kg tem de ser convertido em Newtons através da multiplicação pela gravidade g (9,8 m/s²)."
+    ],
+    "nursingApplication": "A determinação da força normal total sobre os rodízios é essencial para avaliar a resistência do piso e o esforço de tração.",
+    "id": 1489
+  },
+  {
+    "topicId": 1,
+    "question": "Durante a marcha normal de um doente, ao apoiar o pé no solo horizontal, que duas componentes de força de contacto o pavimento exerce sobre a sola do calçado?",
+    "options": [
+      "Uma componente vertical perpendicular (Força Normal) e uma componente horizontal paralela (Força de Atrito).",
+      "Uma força de atração gravítica para cima e uma força nuclear fraca tangencial ao calcanhar.",
+      "Apenas uma força normal estritamente vertical, sendo o atrito no solo inexistente na marcha humana.",
+      "Duas forças perpendiculares dirigidas ambas para baixo na direção do centro da Terra."
+    ],
+    "correctIndex": 0,
+    "explanation": "O contacto solo-pé decompõe-se na Força Normal (sustentação vertical anti-gravítica) e na Força de Atrito (propulsão e contenção horizontal).",
+    "distractorAnalysis": [
+      "Está incorreta: As forças de contacto solo-pé são eletromagnéticas normais e de atrito, sem forças nucleares.",
+      "Está incorreta: A força de atrito é indispensável para a marcha; sem ela, o pé escorregaria imediatamente no solo.",
+      "Está incorreta: A reação do chão sobre o pé aponta para cima (sustentação normal) e não para o centro da Terra."
+    ],
+    "nursingApplication": "A força normal garante que o corpo não se afunda no solo, enquanto o atrito fornece o impulso para a marcha segura.",
+    "id": 1490
+  },
+  {
+    "topicId": 1,
+    "question": "Numa alavanca interfixa em equilíbrio com uma força resistente FR = 40 N a uma distância bR = 1,2 m do fulcro, qual é a força potente (FP) necessária se o braço potente for bP = 2,4 m?",
+    "options": [
+      "FP = 96 N, multiplicando o momento resistente pelo comprimento do braço potente.",
+      "FP = 40 N, exigindo uma força idêntica independentemente da razão dos braços.",
+      "FP = (FR · bR) / bP = (40 × 1,2) / 2,4 = 48 / 2,4 = 20 N, garantindo o equilíbrio estático.",
+      "FP = 4,8 N, cometendo um erro de cálculo decimal na divisão dos momentos."
+    ],
+    "correctIndex": 2,
+    "explanation": "Pela Lei das Alavancas em equilíbrio: FP · bP = FR · bR ⇒ FP = (40 × 1,2) / 2,4 = 20 N.",
+    "distractorAnalysis": [
+      "Está incorreta: Para determinar a força potente divide-se o momento resistente pelo braço potente e não a multiplicação.",
+      "Está incorreta: A força potente só seria igual à resistente se os dois braços tivessem exatamente o mesmo comprimento.",
+      "Está incorreta: O quociente exato de 48 por 2,4 é 20 N e não 4,8 N."
+    ],
+    "nursingApplication": "Compreender que dobrar o braço potente reduz a força muscular necessária para metade auxilia na utilização de auxiliares mecânicos.",
+    "id": 1491
+  },
+  {
+    "topicId": 1,
+    "question": "Um sistema de alavanca interfixa suporta uma carga FR = 50 N a 0,8 m do ponto de apoio. Que momento resistente (MR) é gerado em torno do fulcro?",
+    "options": [
+      "MR = 50 / 0,8 = 62,5 N·m, dividindo a força pela distância perpendicular ao apoio.",
+      "MR = FR · bR = 50 N × 0,8 m = 40 N·m, correspondendo ao torque resistente gerado.",
+      "MR = 50 + 0,8 = 50,8 N·m, somando a força em Newtons com o braço em metros.",
+      "MR = 400 N·m, aplicando incorretamente uma multiplicação por dez ao produto."
+    ],
+    "correctIndex": 1,
+    "explanation": "O momento da força resistente calcula-se por MR = FR · bR = 50 N × 0,8 m = 40 N·m.",
+    "distractorAnalysis": [
+      "Está incorreta: O momento calcula-se pelo produto e nunca pela divisão da força pela distância.",
+      "Está incorreta: Não se podem somar grandezas com dimensões físicas distintas (Newtons com metros).",
+      "Está incorreta: O valor correto de 50 × 0,8 é exatamente 40 N·m."
+    ],
+    "nursingApplication": "O cálculo do torque gerado por cargas no leito permite avaliar o esforço articular exigido ao cuidador.",
+    "id": 1492
+  },
+  {
+    "topicId": 1,
+    "question": "Num exercício biomecânico do cotovelo (alavanca de 3.ª classe), se o antebraço tiver peso de 25 N a 15 cm do fulcro e segurar um objeto de 20 N a 30 cm, qual é o momento resistente total?",
+    "options": [
+      "M_total = 25 × 0,15 + 20 × 0,30 = 3,75 + 6,00 = 9,75 N·m em torno da articulação do cotovelo.",
+      "M_total = (25 + 20) × (15 + 30) = 45 × 45 = 2025 N·m, somando forças e distâncias em centímetros.",
+      "M_total = 45 N·m, somando apenas as duas forças verticais sem considerar as respetivas distâncias métricas.",
+      "M_total = 0,975 N·m, errando a posição da vírgula decimal na conversão de centímetros para metros."
+    ],
+    "correctIndex": 0,
+    "explanation": "M_total = (25 N × 0,15 m) + (20 N × 0,30 m) = 3,75 N·m + 6,00 N·m = 9,75 N·m.",
+    "distractorAnalysis": [
+      "Está incorreta: Não se podem somar braços nem usar centímetros diretamente sem converter para metros.",
+      "Está incorreta: O momento depende obrigatoriamente do braço de alavanca perpendicular e não apenas do peso.",
+      "Está incorreta: 3,75 + 6,00 = 9,75 N·m exatos."
+    ],
+    "nursingApplication": "Segurar objetos na mão aumenta consideravelmente o torque articular no cotovelo em virtude da distância.",
+    "id": 1493
+  },
+  {
+    "topicId": 1,
+    "question": "Se o momento resistente total a equilibrar no cotovelo for de 9,75 N·m e o tendão do bíceps se inserir a 8 cm (0,08 m) do fulcro articular, qual é a força muscular necessária?",
+    "options": [
+      "FE = 9,75 × 0,08 = 0,78 N, multiplicando o momento pelo braço potente do tendão.",
+      "FE = 8,0 N, confundindo a força muscular com o valor numérico em centímetros do braço.",
+      "FE = M_total / bE = 9,75 N·m / 0,08 m = 121,88 N, confirmando a desvantagem mecânica articular.",
+      "FE = 1218,8 N, deslocando indevidamente uma casa decimal para a direita no quociente."
+    ],
+    "correctIndex": 2,
+    "explanation": "FE = M / bE = 9,75 / 0,08 = 121,88 N. O bíceps tem de fazer mais de 120 N para equilibrar 45 N de carga total.",
+    "distractorAnalysis": [
+      "Está incorreta: Para achar a força potente divide-se o momento pelo braço potente e não a multiplicação.",
+      "Está incorreta: O braço de 8 cm (0,08 m) é uma distância geométrica e não a força expressa em Newtons.",
+      "Está incorreta: O quociente correto de 9,75 por 0,08 é 121,875 N."
+    ],
+    "nursingApplication": "A desvantagem mecânica do cotovelo explica a fadiga muscular rápida ao sustentar cargas com o antebraço a 90°.",
+    "id": 1494
+  },
+  {
+    "topicId": 1,
+    "question": "Numa alavanca interfixa de grande porte com uma carga de massa 400 kg (g = 9,8 m/s² ⇒ P = 3920 N) a 0,25 m do fulcro, qual é o momento resistente a ser vencido?",
+    "options": [
+      "MR = 400 × 0,25 = 100 N·m, esquecendo a multiplicação pela aceleração gravítica g.",
+      "MR = FR · bR = 3920 N × 0,25 m = 980 N·m, correspondendo ao torque resistente exato.",
+      "MR = 3920 / 0,25 = 15680 N·m, dividindo incorretamente o peso pelo comprimento do braço.",
+      "MR = 98 N·m, cometendo um erro de uma ordem decimal no cálculo do produto."
+    ],
+    "correctIndex": 1,
+    "explanation": "MR = FR · bR = (400 × 9,8) × 0,25 = 3920 × 0,25 = 980 N·m.",
+    "distractorAnalysis": [
+      "Está incorreta: A massa em kg tem de ser convertida em força/peso através de P = m · g (3920 N).",
+      "Está incorreta: O momento calcula-se pelo produto e nunca pelo quociente da força pelo braço.",
+      "Está incorreta: 3920 × 0,25 é rigorosamente igual a 980 N·m."
+    ],
+    "nursingApplication": "A estimativa dos momentos resistentes de equipamentos hospitalares pesados previne acidentes de trabalho.",
+    "id": 1495
+  },
+  {
+    "topicId": 1,
+    "question": "Considerando o momento resistente de 980 N·m, se o enfermeiro conseguir aplicar no máximo uma força equivalente a 25 kg (FP = 25 × 9,8 = 245 N), qual é o braço potente mínimo (bP)?",
+    "options": [
+      "bP = 980 × 245 = 240.100 m, multiplicando o momento pela força em vez de efetuar a divisão.",
+      "bP = MR / FP = 980 N·m / 245 N = 4,0 m, permitindo o equilíbrio estático com a força disponível.",
+      "bP = 2,5 m, estimando visualmente a alavanca a partir da massa do operador.",
+      "bP = 40 m, errando uma casa decimal na resolução da equação de equilíbrio de momentos."
+    ],
+    "correctIndex": 1,
+    "explanation": "bP = MR / FP = 980 / 245 = 4,0 m. São necessários 4 metros de braço potente para o operador conseguir erguer a carga.",
+    "distractorAnalysis": [
+      "Está incorreta: O braço potente é obtido pela divisão bP = MR / FP e não pelo produto.",
+      "Está incorreta: Um braço de 2,5 m exigiria uma força de 392 N (40 kgf), superior à capacidade do operador.",
+      "Está incorreta: 980 dividido por 245 resulta em 4,0 m exatos."
+    ],
+    "nursingApplication": "A regra das alavancas ensina que quanto mais longo for o braço da alavanca, menor é a força física necessária.",
+    "id": 1496
+  },
+  {
+    "topicId": 1,
+    "question": "De acordo com os conceitos de Biofísica lecionados, qual é a força fundamental responsável pela atração entre corpos que possuem massa, como o peso corporal?",
+    "options": [
+      "Força Nuclear Fraca, responsável pelas reações de fusão e decaimentos no núcleo.",
+      "Força Nuclear Forte, responsável pela coesão entre protões e neutrões atómicos.",
+      "Força da Gravidade (P = m · g), responsável pela atração mútua entre corpos com massa.",
+      "Força Eletromagnética, responsável pela atração entre cargas com sinais opostos."
+    ],
+    "correctIndex": 2,
+    "explanation": "A Força da Gravidade (P = m · g) é a força fundamental de atração entre todos os corpos com massa.",
+    "distractorAnalysis": [
+      "Está incorreta: A força nuclear fraca intervém em fenómenos de decaimento radioativo e fusão nuclear.",
+      "Está incorreta: A força nuclear forte atua apenas à escala subatómica mantendo os nucleões unidos.",
+      "Está incorreta: A força eletromagnética atua entre partículas eletricamente carregadas ou magnetizadas."
+    ],
+    "nursingApplication": "O peso do utente resulta da interação gravítica entre a sua massa corporal e o campo gravitacional terrestre.",
+    "id": 1497
+  },
+  {
+    "topicId": 1,
+    "question": "Qual das quatro forças fundamentais da natureza é descrita nos slides como a 'cola' que mantém os protões e os neutrões unidos no interior do núcleo atómico?",
+    "options": [
+      "Força Nuclear Fraca, mediadora do decaimento beta e emissões de positrões.",
+      "Força Nuclear Forte, que atua como 'cola' de curto alcance nos núcleos atómicos.",
+      "Força Gravítica, que atrai massas celestes a distâncias cosmológicas infinitas.",
+      "Força Eletrostática de Repulsão, que tenta afastar protões com cargas positivas."
+    ],
+    "correctIndex": 1,
+    "explanation": "A Força Nuclear Forte atua como a 'cola' que mantém protões e neutrões unidos no núcleo, superando a repulsão elétrica.",
+    "distractorAnalysis": [
+      "Está incorreta: A força fraca é responsável por decaimentos radioativos e não pela coesão estável dos nucleões.",
+      "Está incorreta: A gravidade é a mais fraca das quatro forças e tem impacto desprezável à escala nuclear.",
+      "Está incorreta: A repulsão eletrostática afasta os protões; é a força nuclear forte que os mantém unidos."
+    ],
+    "nursingApplication": "A estabilidade dos elementos químicos e radioisótopos usados em medicina depende da força nuclear forte.",
+    "id": 1498
+  },
+  {
+    "topicId": 1,
+    "question": "Em que fenómenos físicos e biológicos atua primariamente a Força Nuclear Fraca, conforme definido no sumário do Tópico 1?",
+    "options": [
+      "Na transmissão de impulsos elétricos ao longo dos axónios motores e fibras musculares.",
+      "Na atração gravítica exercida pela Terra sobre o corpo do doente deitado na cama hospitalar.",
+      "Em alguns tipos de decaimento radioativo (emissão de partículas) e em processos de fusão nuclear.",
+      "Na resistência de atrito estático que impede uma cadeira de rodas travada de deslizar."
+    ],
+    "correctIndex": 2,
+    "explanation": "A Força Nuclear Fraca atua à escala subnuclear em processos de decaimento radioativo e reações de fusão nuclear.",
+    "distractorAnalysis": [
+      "Está incorreta: A condução bioelétrica axonal é mediada por forças eletromagnéticas entre iões e cargas.",
+      "Está incorreta: A atração Terra-doente é governada pela força fundamental da gravidade.",
+      "Está incorreta: A resistência de atrito provém de interações eletromagnéticas de contacto entre superfícies."
+    ],
+    "nursingApplication": "A utilização de radioisótopos em imagiologia e radioterapia tem por base o decaimento governado pela força fraca.",
+    "id": 1499
+  },
+  {
+    "topicId": 1,
+    "question": "Qual é a razão pela qual as forças mecânicas de contacto do quotidiano hospitalar (como empurrar uma maca ou segurar um braço) têm origem eletromagnética?",
+    "options": [
+      "Porque resultam da repulsão entre as nuvens eletrónicas dos átomos das superfícies em contacto.",
+      "Porque dependem exclusivamente da atração gravitacional entre a mão do enfermeiro e a pele do doente.",
+      "Porque decorrem da libertação de radiação nuclear fraca no interior das células epidérmicas.",
+      "Porque são geradas pela quebra das forças nucleares fortes nas moléculas de queratina da pele."
+    ],
+    "correctIndex": 0,
+    "explanation": "No contacto físico, a repulsão eletromagnética entre as camadas de eletrões dos átomos impede que os corpos se atravessem.",
+    "distractorAnalysis": [
+      "Está incorreta: A força de atração gravítica entre dois corpos humanos é de magnitude nanométrica e impercetível.",
+      "Está incorreta: O contacto mecânico não envolve qualquer tipo de decaimento radioativo ou força nuclear fraca.",
+      "Está incorreta: As forças nucleares fortes limitam-se ao interior dos núcleos atómicos e não atuam no contacto mecânico."
+    ],
+    "nursingApplication": "Toda a força de contacto que o enfermeiro aplica na mobilização de doentes tem génese física eletromagnética.",
+    "id": 1500
   }
 ];
