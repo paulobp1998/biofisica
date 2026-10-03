@@ -723,6 +723,53 @@
       </div>
     </section>
 
+    <!-- Modal de Autenticação do Docente para a Arena (Master PIN) -->
+    <div id="modal-teacher-auth" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modal-teacher-title">
+      <div class="modal-card" style="max-width: 440px;">
+        <div class="modal-header">
+          <div>
+            <h3 id="modal-teacher-title" style="display: flex; align-items: center; gap: 0.5rem; margin: 0;">
+              <span>🔒</span> Acesso Reservado ao Docente
+            </h3>
+            <p class="modal-subtitle" style="margin-top: 0.35rem;">Apenas o docente pode criar ou projetar sessões da Arena em aula.</p>
+          </div>
+          <button class="modal-close" id="btn-close-teacher-modal" aria-label="Fechar">✕</button>
+        </div>
+        <div class="modal-body">
+          <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.5;">
+            Para impedir que os estudantes criem salas não autorizadas em casa, introduza o PIN Mestre de Docente:
+          </p>
+
+          <form id="form-teacher-auth" onsubmit="return false;" style="margin-bottom: 0.5rem;">
+            <div style="margin-bottom: 1rem;">
+              <label for="input-teacher-pin" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem; color: var(--text-primary);">
+                PIN Mestre de Docente:
+              </label>
+              <input 
+                type="password" 
+                id="input-teacher-pin" 
+                class="form-control" 
+                placeholder="••••••" 
+                maxlength="10" 
+                inputmode="numeric" 
+                autocomplete="off"
+                style="width: 100%; font-size: 1.5rem; letter-spacing: 0.35rem; text-align: center; padding: 0.75rem 1rem; border: 2px solid var(--border-color); border-radius: var(--radius-md); font-family: monospace;"
+              >
+            </div>
+
+            <div id="teacher-pin-error" class="hidden" style="color: #dc2626; font-size: 0.85rem; font-weight: 600; margin-bottom: 1rem; padding: 0.5rem 0.75rem; background: #fee2e2; border-radius: var(--radius-sm); border: 1px solid #fecaca; display: none; align-items: center; gap: 0.5rem;">
+              <span>⚠️</span> <span>PIN incorreto. Acesso restrito ao docente.</span>
+            </div>
+
+            <div style="display: flex; gap: 0.75rem; justify-content: flex-end; margin-top: 1.25rem;">
+              <button type="button" class="btn btn-outline" id="btn-cancel-teacher-modal">Cancelar</button>
+              <button type="submit" class="btn btn-primary" id="btn-confirm-teacher-pin">🔓 Desbloquear Acesso</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <!-- Modal para Seleção do Tamanho da Sessão -->
     <div id="modal-session" class="modal-backdrop hidden">
       <div class="modal-card">
@@ -896,22 +943,22 @@
   </footer>
 
   <!-- Banco de Questões por Tópico (2.400 questões certificadas no total) -->
-  <script src="js/data/topic1.js?v=2.6"></script>
-  <script src="js/data/topic2.js?v=2.6"></script>
-  <script src="js/data/topic3.js?v=2.6"></script>
-  <script src="js/data/topic4.js?v=2.6"></script>
-  <script src="js/data/topic5.js?v=2.6"></script>
-  <script src="js/data/topic6.js?v=2.6"></script>
-  <script src="js/data/topic7.js?v=2.6"></script>
-  <script src="js/data/topic8.js?v=2.6"></script>
-  <script src="js/questions-data.js?v=2.6"></script>
-  <script src="js/quiz-engine.js?v=2.6"></script>
+  <script src="js/data/topic1.js?v=2.7"></script>
+  <script src="js/data/topic2.js?v=2.7"></script>
+  <script src="js/data/topic3.js?v=2.7"></script>
+  <script src="js/data/topic4.js?v=2.7"></script>
+  <script src="js/data/topic5.js?v=2.7"></script>
+  <script src="js/data/topic6.js?v=2.7"></script>
+  <script src="js/data/topic7.js?v=2.7"></script>
+  <script src="js/data/topic8.js?v=2.7"></script>
+  <script src="js/questions-data.js?v=2.7"></script>
+  <script src="js/quiz-engine.js?v=2.7"></script>
 
   <!-- Arena BioFísica (Multiplayer em Tempo Real na Aula - 100% Gratuito) -->
   <script src="js/lib/paho-mqtt.min.js"></script>
-  <script src="js/arena-network.js?v=2.6"></script>
-  <script src="js/arena-engine.js?v=2.6"></script>
-  <script src="js/arena-ui.js?v=2.6"></script>
-  <script src="js/app.js?v=2.6"></script>
+  <script src="js/arena-network.js?v=2.7"></script>
+  <script src="js/arena-engine.js?v=2.7"></script>
+  <script src="js/arena-ui.js?v=2.7"></script>
+  <script src="js/app.js?v=2.7"></script>
 </body>
 </html>

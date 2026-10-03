@@ -3,6 +3,94 @@
  * Liga a UI dos ecrãs (Docente no Projetor e Aluno no Telemóvel) ao ArenaEngine e ArenaNetwork.
  */
 
+/**
+ * SHA-256 síncrono puro em JavaScript para validação segura do PIN de Docente
+ */
+function arenaSha256(ascii) {
+  function rightRotate(value, amount) {
+    return (value >>> amount) | (value << (32 - amount));
+  }
+  var mathPow = Math.pow;
+  var maxWord = mathPow(2, 32);
+  var lengthProperty = 'length';
+  var i, j;
+  var result = '';
+  var words = [];
+  var asciiBitLength = ascii[lengthProperty] * 8;
+  var hash = [];
+  var k = [];
+  var primeCounter = 0;
+
+  var isComposite = {};
+  for (var candidate = 2; primeCounter < 64; candidate++) {
+    if (!isComposite[candidate]) {
+      for (i = 0; i < 313; i += candidate) {
+        isComposite[i] = candidate;
+      }
+      hash[primeCounter] = (mathPow(candidate, 0.5) * maxWord) | 0;
+      k[primeCounter++] = (mathPow(candidate, 1 / 3) * maxWord) | 0;
+    }
+  }
+
+  ascii += '\x80';
+  while (ascii[lengthProperty] % 64 - 56) ascii += '\x00';
+  for (i = 0; i < ascii[lengthProperty]; i++) {
+    j = ascii.charCodeAt(i);
+    if (j >> 8) return;
+    words[i >> 2] |= j << ((3 - i) % 4) * 8;
+  }
+  words[words[lengthProperty]] = (asciiBitLength / maxWord) | 0;
+  words[words[lengthProperty]] = asciiBitLength;
+
+  for (j = 0; j < words[lengthProperty]; ) {
+    var w = words.slice(j, (j += 16));
+    var oldHash = hash;
+    hash = hash.slice(0, 8);
+
+    for (i = 0; i < 64; i++) {
+      var i2 = i + j;
+      var w15 = w[i - 15],
+        w2 = w[i - 2];
+      var a = hash[0],
+        e = hash[4];
+      var temp1 =
+        hash[7] +
+        (rightRotate(e, 6) ^ rightRotate(e, 11) ^ rightRotate(e, 25)) +
+        ((e & hash[5]) ^ (~e & hash[6])) +
+        k[i] +
+        (w[i] =
+          i < 16
+            ? w[i]
+            : (w[i - 16] +
+                (rightRotate(w15, 7) ^ rightRotate(w15, 18) ^ (w15 >>> 3)) +
+                w[i - 7] +
+                (rightRotate(w2, 17) ^ rightRotate(w2, 19) ^ (w2 >>> 10))) |
+              0);
+      var temp2 =
+        (rightRotate(a, 2) ^ rightRotate(a, 13) ^ rightRotate(a, 22)) +
+        ((a & hash[1]) ^ (a & hash[2]) ^ (hash[1] & hash[2]));
+
+      hash = [(temp1 + temp2) | 0].concat(hash);
+      hash[4] = (hash[4] + temp1) | 0;
+    }
+
+    for (i = 0; i < 8; i++) {
+      hash[i] = (hash[i] + oldHash[i]) | 0;
+    }
+  }
+
+  for (i = 0; i < 8; i++) {
+    for (j = 3; j + 1; j--) {
+      var b = (hash[i] >> (j * 8)) & 255;
+      result += (b < 16 ? 0 : '') + b.toString(16);
+    }
+  }
+  return result;
+}
+
+// Hash SHA-256 do PIN Mestre de Docente (456123)
+const ARENA_HOST_PIN_HASH = 'c1cf024576e9c756b252bd5035efc64c72c17affe236909ded190d266a5bfdf1';
+
 class ArenaUI {
   constructor() {
     this.net = new ArenaNetwork();
@@ -10,6 +98,7 @@ class ArenaUI {
     this.currentScreen = 'arena-screen-select';
     this.isMuted = false;
     this.selectedAvatar = '🩺';
+    this.pendingTeacherAction = null;
     this.initDOMElements();
     this.initEventListeners();
     this.initEngineListeners();
@@ -108,6 +197,15 @@ class ArenaUI {
     this.clientPodiumRankDisplay = document.getElementById('client-podium-rank-display');
     this.btnClientExitToHome = document.getElementById('btn-client-exit-to-home');
 
+    // Modal de Autenticação do Docente (PIN Mestre)
+    this.modalTeacherAuth = document.getElementById('modal-teacher-auth');
+    this.formTeacherAuth = document.getElementById('form-teacher-auth');
+    this.inputTeacherPin = document.getElementById('input-teacher-pin');
+    this.teacherPinError = document.getElementById('teacher-pin-error');
+    this.btnCloseTeacherModal = document.getElementById('btn-close-teacher-modal');
+    this.btnCancelTeacherModal = document.getElementById('btn-cancel-teacher-modal');
+    this.btnConfirmTeacherPin = document.getElementById('btn-confirm-teacher-pin');
+
     // Botões tácteis de voto (A, B, C, D)
     this.tactileBtns = [
       document.getElementById('btn-opt-0'),
@@ -115,6 +213,76 @@ class ArenaUI {
       document.getElementById('btn-opt-2'),
       document.getElementById('btn-opt-3')
     ];
+  }
+
+  isTeacherAuthenticated() {
+    try {
+      return sessionStorage.getItem('arena_host_authenticated') === 'true';
+    } catch (e) {
+      return false;
+    }
+  }
+
+  requestTeacherAuth(onSuccessAction) {
+    if (this.isTeacherAuthenticated()) {
+      if (typeof onSuccessAction === 'function') onSuccessAction();
+      return;
+    }
+    this.pendingTeacherAction = onSuccessAction;
+    if (this.inputTeacherPin) this.inputTeacherPin.value = '';
+    if (this.teacherPinError) {
+      this.teacherPinError.classList.add('hidden');
+      this.teacherPinError.style.display = 'none';
+    }
+    if (this.modalTeacherAuth) {
+      this.modalTeacherAuth.classList.remove('hidden');
+      setTimeout(() => {
+        if (this.inputTeacherPin) this.inputTeacherPin.focus();
+      }, 100);
+    }
+  }
+
+  closeTeacherAuthModal() {
+    if (this.modalTeacherAuth) {
+      this.modalTeacherAuth.classList.add('hidden');
+    }
+    this.pendingTeacherAction = null;
+    if (this.inputTeacherPin) this.inputTeacherPin.value = '';
+  }
+
+  verifyTeacherPin() {
+    if (!this.inputTeacherPin) return;
+    const pin = this.inputTeacherPin.value.trim();
+    if (!pin) {
+      this.showTeacherPinError("Por favor introduza o PIN de Docente.");
+      return;
+    }
+
+    const hashed = arenaSha256(pin);
+    if (hashed === ARENA_HOST_PIN_HASH) {
+      try {
+        sessionStorage.setItem('arena_host_authenticated', 'true');
+      } catch (e) {}
+
+      const action = this.pendingTeacherAction;
+      this.closeTeacherAuthModal();
+      if (typeof action === 'function') {
+        action();
+      }
+    } else {
+      this.showTeacherPinError("PIN incorreto. Acesso restrito ao docente.");
+      this.inputTeacherPin.value = '';
+      this.inputTeacherPin.focus();
+    }
+  }
+
+  showTeacherPinError(msg) {
+    if (this.teacherPinError) {
+      const span = this.teacherPinError.querySelector('span:last-child');
+      if (span) span.textContent = msg;
+      this.teacherPinError.classList.remove('hidden');
+      this.teacherPinError.style.display = 'flex';
+    }
   }
 
   showScreen(screenId) {
@@ -155,10 +323,12 @@ class ArenaUI {
       });
     }
 
-    // Escolha de Papel
+    // Escolha de Papel (Docente protegido com PIN Mestre)
     if (this.btnRoleHost) {
       this.btnRoleHost.addEventListener('click', () => {
-        this.showScreen('hostConfig');
+        this.requestTeacherAuth(() => {
+          this.showScreen('hostConfig');
+        });
       });
     }
 
@@ -170,7 +340,29 @@ class ArenaUI {
 
     if (this.btnRoleSimulation) {
       this.btnRoleSimulation.addEventListener('click', () => {
-        this.startSimulationSession();
+        this.requestTeacherAuth(() => {
+          this.startSimulationSession();
+        });
+      });
+    }
+
+    // Modal de Autenticação do Docente (PIN Mestre)
+    if (this.btnCloseTeacherModal) {
+      this.btnCloseTeacherModal.addEventListener('click', () => this.closeTeacherAuthModal());
+    }
+    if (this.btnCancelTeacherModal) {
+      this.btnCancelTeacherModal.addEventListener('click', () => this.closeTeacherAuthModal());
+    }
+    if (this.formTeacherAuth) {
+      this.formTeacherAuth.addEventListener('submit', (e) => {
+        e.preventDefault();
+        this.verifyTeacherPin();
+      });
+    }
+    if (this.btnConfirmTeacherPin) {
+      this.btnConfirmTeacherPin.addEventListener('click', (e) => {
+        e.preventDefault();
+        this.verifyTeacherPin();
       });
     }
 
@@ -201,6 +393,13 @@ class ArenaUI {
 
     if (this.btnCreateArenaRoom) {
       this.btnCreateArenaRoom.addEventListener('click', () => {
+        if (!this.isTeacherAuthenticated()) {
+          this.requestTeacherAuth(() => {
+            this.showScreen('hostConfig');
+          });
+          return;
+        }
+
         const topicId = parseInt(this.arenaConfigTopic ? this.arenaConfigTopic.value : '1', 10);
         const countBtn = this.arenaConfigCountGroup ? this.arenaConfigCountGroup.querySelector('.active') : null;
         const count = countBtn ? parseInt(countBtn.getAttribute('data-value'), 10) : 20;
@@ -757,6 +956,12 @@ class ArenaUI {
   }
 
   startSimulationSession() {
+    if (!this.isTeacherAuthenticated()) {
+      this.requestTeacherAuth(() => {
+        this.startSimulationSession();
+      });
+      return;
+    }
     this.engine.startHostSession({
       topicId: 1,
       count: 5, // 5 perguntas para demonstração rápida
