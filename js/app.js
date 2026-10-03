@@ -17,9 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const resultsView = document.getElementById('view-results');
   const studyView = document.getElementById('view-study');
   const statsView = document.getElementById('view-stats');
+  const arenaView = document.getElementById('view-arena');
 
   // Navegação e Topo
   const navBrand = document.getElementById('nav-brand');
+  const btnNavArena = document.getElementById('btn-nav-arena');
   const themeToggle = document.getElementById('theme-toggle');
   const audioToggle = document.getElementById('audio-toggle');
   const streakBadge = document.getElementById('streak-badge');
@@ -34,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnStartExam = document.getElementById('btn-start-exam');
   const btnViewStudy = document.getElementById('btn-view-study');
   const btnViewStats = document.getElementById('btn-view-stats');
+  const btnOpenArena = document.getElementById('btn-open-arena');
   const btnOpenMistakes = document.getElementById('btn-open-mistakes');
   const countMistakes = document.getElementById('count-mistakes');
   const btnOpenStarred = document.getElementById('btn-open-starred');
@@ -320,12 +323,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // 7. Navegação entre Vistas
   // =========================================================================
   function showView(view) {
-    [homeView, quizView, resultsView, studyView, statsView].forEach(v => {
-      v.classList.add('hidden');
-      v.classList.remove('active-view');
+    [homeView, quizView, resultsView, studyView, statsView, arenaView].forEach(v => {
+      if (v) {
+        v.classList.add('hidden');
+        v.classList.remove('active-view');
+      }
     });
-    view.classList.remove('hidden');
-    view.classList.add('active-view');
+    if (view) {
+      view.classList.remove('hidden');
+      view.classList.add('active-view');
+    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
@@ -333,6 +340,20 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
     showView(homeView);
   });
+
+  if (btnNavArena) {
+    btnNavArena.addEventListener('click', () => {
+      showView(arenaView);
+      if (window.arenaUI) window.arenaUI.showScreen('select');
+    });
+  }
+
+  if (btnOpenArena) {
+    btnOpenArena.addEventListener('click', () => {
+      showView(arenaView);
+      if (window.arenaUI) window.arenaUI.showScreen('select');
+    });
+  }
 
   // =========================================================================
   // 8. Renderização dos Tópicos no Dashboard
@@ -1554,4 +1575,31 @@ document.addEventListener('DOMContentLoaded', () => {
   // =========================================================================
   renderTopicCards();
   renderStudySection();
+
+  // Inicializar Arena BioFísica (Modo Batalha em Grupo ao Vivo)
+  if (typeof ArenaUI !== 'undefined') {
+    try {
+      window.arenaUI = new ArenaUI();
+
+      // Verificação de Parâmetros de URL (Deep Linking via QR Code ou Link Direto)
+      const urlParams = new URLSearchParams(window.location.search);
+      const hash = window.location.hash || '';
+      let pinFromUrl = urlParams.get('pin');
+      if (!pinFromUrl && hash.includes('pin=')) {
+        pinFromUrl = hash.split('pin=')[1].split('&')[0];
+      }
+
+      if (pinFromUrl) {
+        showView(arenaView);
+        window.arenaUI.showScreen('clientJoin');
+        const pinInput = document.getElementById('client-input-pin');
+        if (pinInput) pinInput.value = pinFromUrl.toUpperCase();
+      } else if (hash.includes('arena')) {
+        showView(arenaView);
+        window.arenaUI.showScreen('select');
+      }
+    } catch (err) {
+      console.warn("Aviso ao carregar ArenaUI:", err);
+    }
+  }
 });

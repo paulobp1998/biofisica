@@ -1844,3 +1844,967 @@ mark {
     font-size: 9pt;
   }
 }
+
+/* ==========================================================================
+   Arena BioFísica (Modo Batalha em Grupo na Aula - Formato B)
+   ========================================================================== */
+
+.arena-container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem 3rem 1rem;
+}
+
+.arena-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.arena-brand-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--color-brand);
+}
+
+.arena-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Ecrã de Seleção de Papel */
+.arena-card-hero {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 1.75rem;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.arena-badge-tag {
+  display: inline-block;
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.15) 0%, rgba(79, 70, 229, 0.15) 100%);
+  color: #7c3aed;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.35rem 0.9rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 1rem;
+}
+
+[data-theme="dark"] .arena-badge-tag {
+  color: #a78bfa;
+}
+
+.arena-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  line-height: 1.25;
+}
+
+.arena-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 750px;
+  margin: 0 auto 2rem auto;
+}
+
+.arena-roles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.arena-role-card {
+  background: var(--bg-surface-elevated);
+  border: 2px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.arena-role-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-brand);
+  box-shadow: var(--shadow-md);
+}
+
+.arena-role-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.85rem;
+}
+
+.arena-role-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.arena-role-card p {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  flex: 1;
+}
+
+.arena-sim-box {
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.08) 0%, rgba(2, 132, 199, 0.02) 100%);
+  border: 1px dashed rgba(2, 132, 199, 0.35);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  text-align: left;
+}
+
+/* Configuração Docente */
+.arena-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.arena-section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.arena-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.arena-label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.arena-select, .arena-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.arena-select:focus, .arena-input:focus {
+  outline: none;
+  border-color: var(--color-brand);
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+}
+
+.arena-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.btn-group-item {
+  padding: 0.55rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-subtle);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-group-item:hover {
+  border-color: var(--color-brand);
+}
+
+.btn-group-item.active {
+  background: var(--color-brand);
+  color: #fff;
+  border-color: var(--color-brand);
+}
+
+/* Ecrã Lobby no Projetor */
+.arena-lobby-container {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 1.75rem;
+}
+
+@media (max-width: 768px) {
+  .arena-lobby-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.arena-lobby-pin-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.arena-lobby-label {
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.arena-pin-display {
+  font-size: 3.8rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  color: var(--color-brand);
+  background: var(--bg-subtle);
+  border: 3px dashed var(--color-brand);
+  border-radius: var(--radius-md);
+  padding: 0.6rem 1rem;
+  margin: 1rem 0;
+  font-family: ui-monospace, monospace;
+}
+
+.arena-pin-instruction {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.arena-qr-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.arena-qr-code {
+  width: 210px;
+  height: 210px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  background: #fff;
+  padding: 8px;
+  box-shadow: var(--shadow-sm);
+}
+
+.arena-session-info-badge {
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: var(--bg-subtle);
+  color: var(--text-secondary);
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius-full);
+  display: inline-block;
+}
+
+.arena-lobby-teams-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.arena-lobby-teams-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.arena-pulse-indicator {
+  color: var(--color-success);
+  font-weight: 700;
+  font-size: 0.85rem;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+.arena-teams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.75rem;
+  flex: 1;
+  max-height: 380px;
+  overflow-y: auto;
+  padding-right: 0.25rem;
+}
+
+.arena-team-card {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  animation: slideInUp 0.3s ease;
+}
+
+@keyframes slideInUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.arena-lobby-footer-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+/* Ecrã de Pergunta em Direto no Projetor */
+.arena-live-question-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem;
+  box-shadow: var(--shadow-md);
+}
+
+.arena-question-meta-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.arena-q-index {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-brand);
+}
+
+.arena-q-topic {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.arena-timer-pill {
+  font-size: 1.2rem;
+  font-weight: 800;
+  background: var(--bg-subtle);
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+  padding: 0.35rem 0.9rem;
+  border-radius: var(--radius-full);
+  font-family: ui-monospace, monospace;
+}
+
+.arena-timer-track {
+  width: 100%;
+  height: 10px;
+  background: var(--bg-subtle);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  margin-bottom: 1.75rem;
+}
+
+.arena-timer-fill {
+  height: 100%;
+  background: var(--color-brand);
+  transition: width 1s linear, background-color 0.3s ease;
+}
+
+.arena-live-question-text {
+  font-size: 1.55rem;
+  font-weight: 800;
+  line-height: 1.35;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.arena-live-status-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  padding: 0.75rem 1rem;
+  background: var(--bg-subtle);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.arena-live-options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 680px) {
+  .arena-live-options-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.arena-live-opt {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 1.25rem 1.4rem;
+  border-radius: var(--radius-md);
+  border: 2px solid transparent;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  font-weight: 600;
+  background: var(--bg-subtle);
+}
+
+.opt-color-a {
+  border-color: #3b82f6;
+  background: rgba(59, 130, 246, 0.08);
+}
+.opt-color-b {
+  border-color: #10b981;
+  background: rgba(16, 185, 129, 0.08);
+}
+.opt-color-c {
+  border-color: #f59e0b;
+  background: rgba(245, 158, 11, 0.08);
+}
+.opt-color-d {
+  border-color: #8b5cf6;
+  background: rgba(139, 92, 246, 0.08);
+}
+
+.arena-opt-letter-tag {
+  background: var(--text-primary);
+  color: var(--bg-surface);
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+/* Ecrã de Revelação e Gráfico de Respostas */
+.arena-reveal-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem;
+  box-shadow: var(--shadow-md);
+}
+
+.arena-reveal-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.arena-badge-reveal {
+  font-size: 0.82rem;
+  font-weight: 700;
+  background: var(--color-success-light);
+  color: var(--color-success-dark);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.arena-chart-container {
+  background: var(--bg-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.arena-bars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  height: 180px;
+  align-items: flex-end;
+}
+
+.arena-bar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.arena-bar-track {
+  width: 100%;
+  max-width: 70px;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.arena-bar-fill {
+  width: 100%;
+  background: var(--text-muted);
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.95rem;
+  transition: height 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.arena-bar-item.bar-correct .arena-bar-fill {
+  background: var(--color-success);
+}
+
+.arena-bar-letter {
+  margin-top: 0.5rem;
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.opt-badge-a { color: #3b82f6; }
+.opt-badge-b { color: #10b981; }
+.opt-badge-c { color: #f59e0b; }
+.opt-badge-d { color: #8b5cf6; }
+
+.arena-explanation-box {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-left: 4px solid var(--color-brand);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+}
+
+.arena-nursing-box {
+  background: rgba(2, 132, 199, 0.06);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+  font-size: 0.92rem;
+  color: var(--text-primary);
+}
+
+/* Leaderboard */
+.arena-leaderboard-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem;
+  box-shadow: var(--shadow-md);
+}
+
+.arena-rankings-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 1.25rem;
+}
+
+.arena-ranking-row {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.9rem 1.25rem;
+  background: var(--bg-subtle);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  font-size: 1.05rem;
+  font-weight: 700;
+  transition: transform 0.2s;
+}
+
+.arena-rank-pos {
+  width: 55px;
+  font-size: 1.1rem;
+}
+
+.arena-rank-avatar {
+  font-size: 1.5rem;
+}
+
+.arena-rank-name {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.arena-rank-streak {
+  color: #f59e0b;
+  font-size: 0.9rem;
+}
+
+.arena-rank-score {
+  font-family: ui-monospace, monospace;
+  font-size: 1.2rem;
+  color: var(--color-brand);
+}
+
+.rank-gold {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(245, 158, 11, 0.05) 100%);
+  border-color: #f59e0b;
+}
+
+.rank-silver {
+  background: linear-gradient(135deg, rgba(148, 163, 184, 0.2) 0%, rgba(148, 163, 184, 0.06) 100%);
+  border-color: #94a3b8;
+}
+
+.rank-bronze {
+  background: linear-gradient(135deg, rgba(217, 119, 6, 0.15) 0%, rgba(217, 119, 6, 0.05) 100%);
+  border-color: #d97706;
+}
+
+/* Pódio Final */
+.arena-podium-card {
+  position: relative;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 1.75rem;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.arena-confetti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.arena-podium-pedestal-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1.25rem;
+  height: 290px;
+  margin: 2.5rem 0;
+}
+
+.arena-pedestal-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 160px;
+}
+
+.podium-avatar {
+  font-size: 2.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.podium-crown {
+  font-size: 2.2rem;
+  animation: float 2s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.podium-name {
+  font-weight: 800;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+.podium-score {
+  font-family: ui-monospace, monospace;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.podium-block {
+  width: 100%;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow-md);
+}
+
+.slot-first .podium-block {
+  height: 170px;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.slot-second .podium-block {
+  height: 125px;
+  background: linear-gradient(135deg, #94a3b8 0%, #64748b 100%);
+}
+
+.slot-third .podium-block {
+  height: 95px;
+  background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+}
+
+.arena-report-card {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.arena-hardest-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+  margin-bottom: 0.85rem;
+}
+
+.arena-badge-danger {
+  background: var(--color-danger-light);
+  color: var(--color-danger-dark);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-full);
+}
+
+/* ==========================================================================
+   Ecrãs do Telemóvel (Aluno / Equipa)
+   ========================================================================== */
+
+.arena-client-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+  max-width: 450px;
+  margin: 1rem auto;
+  box-shadow: var(--shadow-md);
+}
+
+.arena-client-brand {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.arena-avatar-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.avatar-opt {
+  font-size: 1.8rem;
+  background: var(--bg-subtle);
+  border: 2px solid transparent;
+  border-radius: var(--radius-full);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.avatar-opt:hover {
+  transform: scale(1.1);
+}
+
+.avatar-opt.active {
+  border-color: var(--color-brand);
+  background: var(--color-brand-light);
+  transform: scale(1.15);
+}
+
+.arena-waiting-pulse-box {
+  background: var(--bg-subtle);
+  border-radius: var(--radius-md);
+  padding: 2rem 1rem;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arena-spinner {
+  width: 44px;
+  height: 44px;
+  border: 4px solid var(--border-subtle);
+  border-top-color: var(--color-brand);
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.arena-client-voting-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+.arena-client-voting-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.arena-team-tag {
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--color-brand);
+}
+
+.arena-client-q-preview {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+  line-height: 1.35;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+}
+
+.arena-tactile-buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  min-height: 290px;
+}
+
+.btn-tactile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: var(--radius-md);
+  border: 3px solid transparent;
+  padding: 1.25rem 0.75rem;
+  cursor: pointer;
+  color: #fff;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+  user-select: none;
+  touch-action: manipulation;
+  box-shadow: var(--shadow-md);
+}
+
+.btn-tactile:active {
+  transform: scale(0.96);
+}
+
+.btn-tactile.selected {
+  border-color: #fff;
+  box-shadow: 0 0 0 4px var(--text-primary), var(--shadow-lg);
+  transform: scale(1.02);
+}
+
+.btn-tactile-a {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+}
+.btn-tactile-b {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+}
+.btn-tactile-c {
+  background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+}
+.btn-tactile-d {
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+}
+
+.btn-tactile-letter {
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.btn-tactile-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+  max-height: 2.8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0.95;
+}
+
+.arena-client-vote-status {
+  text-align: center;
+  margin-top: 1.25rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.92rem;
+  font-weight: 600;
+  background: var(--bg-surface);
+  border: 1px dashed var(--border-subtle);
+  color: var(--text-secondary);
+}
+
+.arena-client-vote-status.voted {
+  background: var(--color-success-light);
+  color: var(--color-success-dark);
+  border-color: var(--color-success);
+}
+
+.arena-streak-pill {
+  background: #fef3c7;
+  color: #b45309;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+}
+

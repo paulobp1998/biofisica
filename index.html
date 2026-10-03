@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BioFísica Interativa | Enfermagem (1.º Ano)</title>
   <meta name="description" content="Plataforma interativa e 100% gratuita para estudantes do 1.º ano de Licenciatura em Enfermagem praticarem os conteúdos de Biofísica com questões de escolha múltipla e aplicações clínicas.">
-  <link rel="stylesheet" href="css/style.css?v=2.5">
+  <link rel="stylesheet" href="css/style.css?v=2.6">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🩺</text></svg>">
 </head>
 <body>
@@ -25,6 +25,11 @@
         <div class="streak-badge" id="streak-badge" title="Dias consecutivos de estudo">
           🔥 <span id="streak-text">1 Dia</span>
         </div>
+
+        <!-- Arena BioFísica ao Vivo -->
+        <button class="btn btn-outline btn-pill" id="btn-nav-arena" title="Arena de Batalha em Grupo na Aula" style="border-color: #8b5cf6; color: #7c3aed; font-weight: 700;">
+          ⚔️ Arena ao Vivo
+        </button>
 
         <!-- 2E: Pesquisa Rápida / Glossário -->
         <button class="btn-search-nav" id="btn-open-search" title="Pesquisar questões, leis e conceitos (Ctrl+K)">
@@ -73,6 +78,9 @@
           </button>
           <button class="btn btn-outline" id="btn-view-stats">
             📊 As Minhas Estatísticas & Conquistas
+          </button>
+          <button class="btn btn-primary" id="btn-open-arena" style="background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%); border-color: #6366f1;">
+            ⚔️ Arena BioFísica (Batalha em Grupo ao Vivo)
           </button>
         </div>
 
@@ -258,6 +266,463 @@
       </div>
     </section>
 
+    <!-- ================================================================= -->
+    <!-- VISTA 6: ARENA BIOFÍSICA (BATALHA SÍNCRONA EM GRUPO - MODO KAHOOK) -->
+    <!-- ================================================================= -->
+    <section id="view-arena" class="hidden">
+      <div class="arena-container">
+        
+        <!-- HEADER DA ARENA -->
+        <div class="arena-header">
+          <div class="arena-brand-badge">
+            <span>⚔️</span> Arena BioFísica Médica
+          </div>
+          <div class="arena-header-actions">
+            <button class="btn btn-outline btn-sm" id="btn-arena-sound-toggle" title="Ativar/Desativar Efeitos Sonoros">
+              🔔 Som
+            </button>
+            <button class="btn btn-outline btn-sm" id="btn-arena-exit">
+              🏠 Sair da Arena
+            </button>
+          </div>
+        </div>
+
+        <!-- ECRÃ 1: ESCOLHA DE PAPEL (HOST OU CLIENTE OU SIMULAÇÃO) -->
+        <div id="arena-screen-select" class="arena-screen">
+          <div class="arena-card-hero">
+            <span class="arena-badge-tag">🎯 Team-Based Learning • Gamificação Formativa • Tempo Real</span>
+            <h2 class="arena-title">Batalha Interativa na Sala de Aula</h2>
+            <p class="arena-subtitle">
+              Divide a turma em equipas (por exemplo, <strong>1 telemóvel por cada grupo de 4 alunos</strong>). O professor projeta as perguntas na tela da sala e as equipas debatem e votam em direto com classificação ao vivo e pódio final!
+            </p>
+
+            <div class="arena-roles-grid">
+              <!-- Opção 1: Docente (Projetor) -->
+              <div class="arena-role-card" id="btn-role-host">
+                <div class="arena-role-icon">🖥️</div>
+                <h3>Projetar Batalha (Docente)</h3>
+                <p>Cria uma sala com PIN e QR Code no projetor da sala. Controla o ritmo das perguntas, gráficos de resposta e o pódio final.</p>
+                <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                  Criar Sala no Projetor ➔
+                </button>
+              </div>
+
+              <!-- Opção 2: Equipa (Telemóvel do Aluno) -->
+              <div class="arena-role-card" id="btn-role-client">
+                <div class="arena-role-icon">📱</div>
+                <h3>Entrar com a Equipa (Aluno)</h3>
+                <p>Introduz o PIN projetado na sala, escolhe o nome do teu grupo e vota nas opções A, B, C e D em cada ronda.</p>
+                <button class="btn btn-primary" style="width: 100%; margin-top: 1rem; background: var(--color-success); border-color: var(--color-success);">
+                  Entrar com PIN ➔
+                </button>
+              </div>
+            </div>
+
+            <!-- Opção 3: Modo Simulação / Teste Rápido do Professor -->
+            <div class="arena-sim-box">
+              <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+                <div>
+                  <strong>🤖 Queres testar o sistema agora no teu computador?</strong>
+                  <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.2rem;">
+                    Inicia uma simulação com 3 equipas virtuais controladas pelo computador para veres como funciona a batalha e o pódio.
+                  </p>
+                </div>
+                <button class="btn btn-outline" id="btn-role-simulation">
+                  ▶️ Testar Simulação Rápida
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ECRÃ 2: CONFIGURAÇÃO DA BATALHA (DOCENTE) -->
+        <div id="arena-screen-host-config" class="arena-screen hidden">
+          <div class="arena-card">
+            <h3 class="arena-section-title">⚙️ Configuração da Batalha</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Define as regras da sessão para a turma:</p>
+
+            <div class="arena-form-group">
+              <label class="arena-label">📚 Tópico Clínico:</label>
+              <select class="arena-select" id="arena-config-topic">
+                <option value="1" selected>Tópico 1: Força, Estado de Equilíbrio e Biomecânica (1.000 Questões)</option>
+              </select>
+            </div>
+
+            <div class="arena-form-group">
+              <label class="arena-label">🔢 Quantidade de Perguntas:</label>
+              <div class="arena-button-group" id="arena-config-count-group">
+                <button type="button" class="btn-group-item" data-value="5">5 Perguntas (Rápido)</button>
+                <button type="button" class="btn-group-item" data-value="10">10 Perguntas</button>
+                <button type="button" class="btn-group-item" data-value="15">15 Perguntas</button>
+                <button type="button" class="btn-group-item active" data-value="20">20 Perguntas (Recomendado)</button>
+              </div>
+            </div>
+
+            <div class="arena-form-group">
+              <label class="arena-label">⏱️ Tempo por Pergunta (para debate em grupo):</label>
+              <div class="arena-button-group" id="arena-config-time-group">
+                <button type="button" class="btn-group-item" data-value="30">30 Segundos</button>
+                <button type="button" class="btn-group-item active" data-value="45">45 Segundos (Recomendado)</button>
+                <button type="button" class="btn-group-item" data-value="60">60 Segundos</button>
+                <button type="button" class="btn-group-item" data-value="90">90 Segundos</button>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 1rem; justify-content: flex-end; margin-top: 2rem;">
+              <button class="btn btn-outline" id="btn-back-from-config">Voltar</button>
+              <button class="btn btn-primary" id="btn-create-arena-room">
+                Gerar Sala & PIN no Projetor ➔
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ECRÃ 3: SALA DE ESPERA / LOBBY (PROJETOR DO DOCENTE) -->
+        <div id="arena-screen-host-lobby" class="arena-screen hidden">
+          <div class="arena-lobby-container">
+            <div class="arena-lobby-pin-card">
+              <span class="arena-lobby-label">CÓDIGO PIN DA SALA:</span>
+              <div class="arena-pin-display" id="arena-display-pin">BF-0000</div>
+              <p class="arena-pin-instruction">
+                Os grupos devem aceder ao site no telemóvel e introduzir este PIN ou ler o QR Code abaixo:
+              </p>
+              <div class="arena-qr-wrapper">
+                <img id="arena-qr-image" src="" alt="QR Code da Sala" class="arena-qr-code">
+              </div>
+              <div class="arena-session-info-badge" id="arena-lobby-meta">
+                Tópico 1 • 20 Perguntas • 45s por Pergunta
+              </div>
+            </div>
+
+            <div class="arena-lobby-teams-card">
+              <div class="arena-lobby-teams-header">
+                <h3>Equipas Conectadas (<span id="arena-teams-count">0</span>)</h3>
+                <span class="arena-pulse-indicator">● Em Direto</span>
+              </div>
+              <div class="arena-teams-grid" id="arena-lobby-teams-grid">
+                <!-- Inserido dinamicamente via JS -->
+              </div>
+
+              <div class="arena-lobby-footer-actions">
+                <button class="btn btn-outline btn-sm" id="btn-add-mock-team">
+                  ➕ Adicionar Equipa de Demonstração
+                </button>
+                <button class="btn btn-primary btn-lg" id="btn-host-start-battle" style="font-size: 1.15rem; padding: 0.85rem 2rem;">
+                  🚀 Iniciar Batalha Agora!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ECRÃ 4: PERGUNTA EM DIRETO NO PROJETOR (DOCENTE) -->
+        <div id="arena-screen-host-question" class="arena-screen hidden">
+          <div class="arena-live-question-card">
+            <div class="arena-question-meta-bar">
+              <span class="arena-q-index" id="arena-live-q-index">Pergunta 1 de 20</span>
+              <span class="arena-q-topic" id="arena-live-q-topic">Tópico 1: Biomecânica</span>
+              <div class="arena-timer-pill" id="arena-live-timer">⏱️ 45s</div>
+            </div>
+
+            <div class="arena-timer-track">
+              <div class="arena-timer-fill" id="arena-timer-fill" style="width: 100%;"></div>
+            </div>
+
+            <div class="arena-live-body">
+              <h2 class="arena-live-question-text" id="arena-live-question-text">
+                Enunciado da pergunta...
+              </h2>
+
+              <div class="arena-live-status-row">
+                <span class="arena-answers-counter" id="arena-answers-counter">
+                  📥 0 de 0 equipas responderam
+                </span>
+                <div class="arena-host-quick-controls">
+                  <button class="btn btn-outline btn-sm" id="btn-host-pause-timer">⏸️ Pausar</button>
+                  <button class="btn btn-outline btn-sm" id="btn-host-skip-timer">⏩ Encerrar Pergunta</button>
+                </div>
+              </div>
+
+              <!-- As 4 Opções A, B, C, D -->
+              <div class="arena-live-options-grid" id="arena-live-options-grid">
+                <!-- Inserido dinamicamente via JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ECRÃ 5: REVELAÇÃO E EXPLICAÇÃO CLÍNICA NO PROJETOR (DOCENTE) -->
+        <div id="arena-screen-host-reveal" class="arena-screen hidden">
+          <div class="arena-reveal-card">
+            <div class="arena-reveal-header">
+              <span class="arena-badge-reveal">🎯 Resposta Correta Revelada</span>
+              <h3 id="arena-reveal-correct-letter" style="color: var(--color-success); font-size: 1.4rem;">
+                Opção [X] está Correta!
+              </h3>
+            </div>
+
+            <!-- Gráfico de Distribuição das Respostas da Turma -->
+            <div class="arena-chart-container">
+              <h4 style="margin-bottom: 0.75rem; color: var(--text-secondary); font-size: 0.95rem;">
+                📊 Distribuição de Votos das Equipas:
+              </h4>
+              <div class="arena-bars-grid" id="arena-bars-grid">
+                <!-- Barras A, B, C, D -->
+              </div>
+            </div>
+
+            <!-- Justificação Científica Completa & Distratores -->
+            <div class="arena-explanation-box">
+              <h4 style="color: var(--color-brand); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem;">
+                <span>🩺</span> Justificação Científica & Aplicação Clínica:
+              </h4>
+              <p id="arena-reveal-explanation" style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;"></p>
+              
+              <div id="arena-reveal-distractors" style="margin-top: 0.75rem; border-top: 1px dashed var(--border-subtle); padding-top: 0.75rem;">
+                <!-- Análise detalhada dos distratores -->
+              </div>
+
+              <div id="arena-reveal-nursing" class="arena-nursing-box" style="margin-top: 0.75rem;">
+                <!-- Aplicação aos Cuidados de Enfermagem -->
+              </div>
+            </div>
+
+            <div style="text-align: right; margin-top: 1.5rem;">
+              <button class="btn btn-primary btn-lg" id="btn-host-show-leaderboard">
+                Ver Classificação da Ronda ➔
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ECRÃ 6: LEADERBOARD / PLACAR PARCIAL NO PROJETOR (DOCENTE) -->
+        <div id="arena-screen-host-leaderboard" class="arena-screen hidden">
+          <div class="arena-leaderboard-card">
+            <div class="arena-leaderboard-header">
+              <h2>🏆 Classificação Atual da Batalha</h2>
+              <p style="color: var(--text-secondary);">Pontuações atualizadas em tempo real:</p>
+            </div>
+
+            <div class="arena-rankings-table" id="arena-rankings-table">
+              <!-- Linhas com 1.º, 2.º, 3.º etc. -->
+            </div>
+
+            <div style="text-align: right; margin-top: 2rem;">
+              <button class="btn btn-primary btn-lg" id="btn-host-next-question">
+                Próxima Pergunta ➔
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ECRÃ 7: PÓDIO FINAL E RAIO-X PEDAGÓGICO DA TURMA (DOCENTE) -->
+        <div id="arena-screen-host-podium" class="arena-screen hidden">
+          <div class="arena-podium-card">
+            <!-- Canvas de Confetis -->
+            <canvas id="arena-confetti-canvas" class="arena-confetti"></canvas>
+
+            <div class="arena-podium-header">
+              <span class="hero-tag">🎉 Batalha Concluída!</span>
+              <h2 style="font-size: 2.2rem; font-weight: 800; margin-top: 0.5rem;">
+                Pódio dos Campeões de Biofísica
+              </h2>
+            </div>
+
+            <!-- Estrutura Visual do Pódio (2.º, 1.º, 3.º) -->
+            <div class="arena-podium-pedestal-container" id="arena-podium-pedestal">
+              <!-- Inserido dinamicamente via JS -->
+            </div>
+
+            <!-- Tabela Completa de Resultados -->
+            <div class="arena-final-table-container">
+              <h3 style="margin-bottom: 1rem;">📋 Classificação Geral de Todos os Grupos:</h3>
+              <div class="arena-rankings-table" id="arena-final-rankings-table">
+                <!-- Ranking completo -->
+              </div>
+            </div>
+
+            <!-- Raio-X Pedagógico: As Perguntas com Mais Erros da Aula -->
+            <div class="arena-report-card">
+              <h3 style="color: var(--color-danger); display: flex; align-items: center; gap: 0.5rem;">
+                <span>🔬</span> Raio-X Pedagógico: Conceitos a Reforçar em Aula
+              </h3>
+              <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.92rem;">
+                As perguntas com maior taxa de erro entre as equipas nesta sessão. Oportunidade ideal para o docente clarificar estes temas:
+              </p>
+              <div class="arena-hardest-list" id="arena-hardest-list">
+                <!-- Perguntas mais erradas da turma com distratores -->
+              </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+              <button class="btn btn-primary btn-lg" id="btn-arena-finish-to-home">
+                🏠 Concluir e Voltar ao Início
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- =============================================================== -->
+        <!-- ECRÃS DO ALUNO / EQUIPA (NO TELEMÓVEL)                           -->
+        <!-- =============================================================== -->
+
+        <!-- ECRÃ 8: ENTRADA COM PIN NO TELEMÓVEL (ALUNO) -->
+        <div id="arena-screen-client-join" class="arena-screen hidden">
+          <div class="arena-client-card">
+            <div class="arena-client-brand">
+              <span style="font-size: 2.5rem;">📱</span>
+              <h2>Entrar na Batalha</h2>
+              <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                1 telemóvel por cada grupo de 4 alunos
+              </p>
+            </div>
+
+            <div class="arena-form-group">
+              <label class="arena-label">🔑 Código PIN da Sala:</label>
+              <input type="text" class="arena-input" id="client-input-pin" placeholder="Ex: BF-4829" maxlength="8" autocomplete="off" autocorrect="off" autocapitalize="characters">
+            </div>
+
+            <div class="arena-form-group">
+              <label class="arena-label">👥 Nome da Vossa Equipa:</label>
+              <input type="text" class="arena-input" id="client-input-name" placeholder="Ex: Grupo 1, As Alavancas, L5-S1..." maxlength="25">
+            </div>
+
+            <div class="arena-form-group">
+              <label class="arena-label">🎭 Escolham o Avatar do Grupo:</label>
+              <div class="arena-avatar-picker" id="client-avatar-picker">
+                <button type="button" class="avatar-opt active" data-avatar="🩺">🩺</button>
+                <button type="button" class="avatar-opt" data-avatar="💉">💉</button>
+                <button type="button" class="avatar-opt" data-avatar="🫀">🫀</button>
+                <button type="button" class="avatar-opt" data-avatar="🦴">🦴</button>
+                <button type="button" class="avatar-opt" data-avatar="⚡">⚡</button>
+                <button type="button" class="avatar-opt" data-avatar="🧬">🧬</button>
+                <button type="button" class="avatar-opt" data-avatar="🩹">🩹</button>
+                <button type="button" class="avatar-opt" data-avatar="🔬">🔬</button>
+                <button type="button" class="avatar-opt" data-avatar="🧪">🧪</button>
+                <button type="button" class="avatar-opt" data-avatar="🧤">🧤</button>
+              </div>
+            </div>
+
+            <button class="btn btn-primary btn-lg" id="btn-client-submit-join" style="width: 100%; margin-top: 1rem; padding: 0.9rem;">
+              Entrar na Batalha ➔
+            </button>
+            <button class="btn btn-outline btn-sm" id="btn-client-back-to-select" style="width: 100%; margin-top: 0.75rem;">
+              Voltar
+            </button>
+          </div>
+        </div>
+
+        <!-- ECRÃ 9: SALA DE ESPERA NO TELEMÓVEL (ALUNO) -->
+        <div id="arena-screen-client-lobby" class="arena-screen hidden">
+          <div class="arena-client-card" style="text-align: center;">
+            <div id="client-lobby-avatar" style="font-size: 3.5rem; margin-bottom: 0.5rem;">🩺</div>
+            <h2 id="client-lobby-team-name" style="font-size: 1.5rem; font-weight: 800; color: var(--color-brand);">
+              Equipa
+            </h2>
+            <div class="arena-badge-success" style="margin: 0.75rem auto; display: inline-flex; background: var(--color-success-light); color: var(--color-success-dark); padding: 0.25rem 0.75rem; border-radius: var(--radius-full); font-size: 0.85rem; font-weight: 700;">
+              ✅ Ligação Estabelecida à Sala
+            </div>
+
+            <div class="arena-waiting-pulse-box">
+              <div class="arena-spinner"></div>
+              <p style="font-weight: 600; margin-top: 0.75rem;">
+                Olhem para o projetor da sala!
+              </p>
+              <p style="color: var(--text-secondary); font-size: 0.88rem; margin-top: 0.25rem;">
+                O professor iniciará a batalha assim que todas as equipas entrarem.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ECRÃ 10: VOTO TÁCTIL NO TELEMÓVEL (ALUNO) -->
+        <div id="arena-screen-client-question" class="arena-screen hidden">
+          <div class="arena-client-voting-container">
+            <div class="arena-client-voting-header">
+              <div>
+                <span id="client-voting-team-badge" class="arena-team-tag">🩺 Equipa</span>
+                <span id="client-voting-q-badge" style="font-weight: 700; color: var(--text-primary); margin-left: 0.5rem;">P1/20</span>
+              </div>
+              <div class="arena-timer-pill" id="client-voting-timer">⏱️ 45s</div>
+            </div>
+
+            <!-- Resumo da Pergunta para o Grupo Acompanhar no Telemóvel -->
+            <div class="arena-client-q-preview" id="client-q-preview">
+              Leiam a pergunta no projetor e escolham a opção:
+            </div>
+
+            <!-- Os 4 Botões Tácteis Gigantes A, B, C, D -->
+            <div class="arena-tactile-buttons-grid">
+              <button class="btn-tactile btn-tactile-a" data-opt="0" id="btn-opt-0">
+                <span class="btn-tactile-letter">A</span>
+                <span class="btn-tactile-label" id="client-opt-label-0">Opção A</span>
+              </button>
+              <button class="btn-tactile btn-tactile-b" data-opt="1" id="btn-opt-1">
+                <span class="btn-tactile-letter">B</span>
+                <span class="btn-tactile-label" id="client-opt-label-1">Opção B</span>
+              </button>
+              <button class="btn-tactile btn-tactile-c" data-opt="2" id="btn-opt-2">
+                <span class="btn-tactile-letter">C</span>
+                <span class="btn-tactile-label" id="client-opt-label-2">Opção C</span>
+              </button>
+              <button class="btn-tactile btn-tactile-d" data-opt="3" id="btn-opt-3">
+                <span class="btn-tactile-letter">D</span>
+                <span class="btn-tactile-label" id="client-opt-label-3">Opção D</span>
+              </button>
+            </div>
+
+            <!-- Feedback de Resposta Selecionada -->
+            <div class="arena-client-vote-status" id="client-vote-status">
+              👆 Toquem na opção consensual do grupo
+            </div>
+          </div>
+        </div>
+
+        <!-- ECRÃ 11: RESULTADO DA RONDA NO TELEMÓVEL (ALUNO) -->
+        <div id="arena-screen-client-result" class="arena-screen hidden">
+          <div class="arena-client-card" style="text-align: center;">
+            <div id="client-result-icon" style="font-size: 3.5rem; margin-bottom: 0.5rem;">🎉</div>
+            <h2 id="client-result-title" style="font-size: 1.6rem; font-weight: 800;">
+              Resposta Certa!
+            </h2>
+            <div id="client-result-points" style="font-size: 1.3rem; font-weight: 700; color: var(--color-success); margin: 0.5rem 0;">
+              +1.250 Pontos
+            </div>
+            <div id="client-result-streak" class="arena-streak-pill" style="display: inline-flex;">
+              🔥 Sequência de 2 acertos!
+            </div>
+            <div style="margin-top: 1.5rem; padding: 1rem; background: var(--bg-subtle); border-radius: var(--radius-md);">
+              <div style="font-size: 0.85rem; color: var(--text-secondary);">Pontuação Acumulada do Grupo:</div>
+              <div id="client-result-total-score" style="font-size: 1.6rem; font-weight: 800; color: var(--color-brand); margin-top: 0.25rem;">
+                3.450 pts
+              </div>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.88rem; margin-top: 1.25rem;">
+              Olhem para a explicação no projetor da sala!
+            </p>
+          </div>
+        </div>
+
+        <!-- ECRÃ 12: PÓDIO FINAL NO TELEMÓVEL (ALUNO) -->
+        <div id="arena-screen-client-podium" class="arena-screen hidden">
+          <div class="arena-client-card" style="text-align: center;">
+            <div style="font-size: 4rem;">🏆</div>
+            <h2 style="font-size: 1.6rem; font-weight: 800; margin-top: 0.5rem;">Batalha Concluída!</h2>
+            <div id="client-podium-rank-display" style="font-size: 1.4rem; font-weight: 700; color: var(--color-brand); margin: 0.75rem 0;">
+              2.º Lugar no Pódio! 🥈
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">
+              Parabéns a toda a equipa pela discussão clínica e dedicação à Biofísica!
+            </p>
+            <button class="btn btn-outline" id="btn-client-exit-to-home" style="width: 100%; margin-top: 1.5rem;">
+              🏠 Voltar ao Início
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <!-- Modal para Seleção do Tamanho da Sessão -->
     <div id="modal-session" class="modal-backdrop hidden">
       <div class="modal-card">
@@ -431,16 +896,22 @@
   </footer>
 
   <!-- Banco de Questões por Tópico (2.400 questões certificadas no total) -->
-  <script src="js/data/topic1.js?v=2.5"></script>
-  <script src="js/data/topic2.js?v=2.5"></script>
-  <script src="js/data/topic3.js?v=2.5"></script>
-  <script src="js/data/topic4.js?v=2.5"></script>
-  <script src="js/data/topic5.js?v=2.5"></script>
-  <script src="js/data/topic6.js?v=2.5"></script>
-  <script src="js/data/topic7.js?v=2.5"></script>
-  <script src="js/data/topic8.js?v=2.5"></script>
-  <script src="js/questions-data.js?v=2.5"></script>
-  <script src="js/quiz-engine.js?v=2.5"></script>
-  <script src="js/app.js?v=2.5"></script>
+  <script src="js/data/topic1.js?v=2.6"></script>
+  <script src="js/data/topic2.js?v=2.6"></script>
+  <script src="js/data/topic3.js?v=2.6"></script>
+  <script src="js/data/topic4.js?v=2.6"></script>
+  <script src="js/data/topic5.js?v=2.6"></script>
+  <script src="js/data/topic6.js?v=2.6"></script>
+  <script src="js/data/topic7.js?v=2.6"></script>
+  <script src="js/data/topic8.js?v=2.6"></script>
+  <script src="js/questions-data.js?v=2.6"></script>
+  <script src="js/quiz-engine.js?v=2.6"></script>
+
+  <!-- Arena BioFísica (Multiplayer em Tempo Real na Aula - 100% Gratuito) -->
+  <script src="js/lib/paho-mqtt.min.js"></script>
+  <script src="js/arena-network.js?v=2.6"></script>
+  <script src="js/arena-engine.js?v=2.6"></script>
+  <script src="js/arena-ui.js?v=2.6"></script>
+  <script src="js/app.js?v=2.6"></script>
 </body>
 </html>
