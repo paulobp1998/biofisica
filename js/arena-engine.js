@@ -172,6 +172,15 @@ class ArenaEngine {
   // FLUXO DO DOCENTE (HOST)
   // =========================================================================
   startHostSession({ topicId = 1, count = 20, timePerQuestion = 45, isSimulated = false }) {
+    try {
+      if (typeof window !== 'undefined' && window.sessionStorage) {
+        if (window.sessionStorage.getItem('arena_host_authenticated') !== 'true') {
+          console.warn('[ArenaEngine] Acesso não autenticado como docente.');
+          return;
+        }
+      }
+    } catch (e) {}
+
     this.role = 'host';
     this.topicId = topicId;
     this.questionCount = count;
