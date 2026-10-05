@@ -16,24 +16,24 @@
 const TOPICS_DATA = [
   {
     id: 1,
-    title: "Força, Estado de Equilíbrio e Equilíbrio de Forças",
-    shortTitle: "Força e Equilíbrio",
+    title: "Força, Estado de Equilíbrio, Equilíbrio de Forças e Alavancas",
+    shortTitle: "Força, Equilíbrio e Alavancas",
     icon: "⚖️",
-    description: "Conceito de Mecânica e Força, Leis de Newton, Forças Fundamentais e Atrito, Condições de Equilíbrio, Alavancas Biomecânicas e Centro de Gravidade."
+    description: "Conceito de Mecânica e Força, Leis de Newton, Forças Fundamentais e Atrito, Condições de Equilíbrio, Centro de Gravidade e Alavancas Biomecânicas (1.ª, 2.ª e 3.ª classe, braços de força, momentos e vantagem mecânica)."
   },
   {
     id: 2,
-    title: "Elasticidade e Resistência dos Materiais",
-    shortTitle: "Elasticidade e Resistência",
+    title: "Elasticidade dos Corpos, Resistência dos Materiais e Aplicação ao Sistema Osteomedular",
+    shortTitle: "Elasticidade e Sistema Osteomedular",
     icon: "📐",
-    description: "Reologia e comportamento mecânico dos materiais, sólidos de Euclides e Hooke, plasticidade e viscoelasticidade, forças de compressão, tração, flexão, cisalhamento e torção, Lei de Hooke (F = k·ΔL) e Módulo de Young (σ = E·ε)."
+    description: "Reologia e comportamento mecânico dos materiais, sólidos de Euclides e Hooke, plasticidade e viscoelasticidade, as 5 grandes deformações, Lei de Hooke (F = k·ΔL) e Módulo de Young (σ = E·ε), estrutura bifásica do osso e resistência do sistema osteomedular."
   },
   {
     id: 3,
-    title: "Aplicação da Elasticidade e Resistência ao Sistema Osteomuscular",
-    shortTitle: "Sistema Osteomuscular",
-    icon: "🦴",
-    description: "Composição bifásica do osso (hidroxiapatite vs colagénio), solicitações mecânicas, fratura do fémur e bioenergética muscular."
+    title: "Leis Fundamentais da Hidrostática",
+    shortTitle: "Hidrostática",
+    icon: "💧",
+    description: "Pressão hidrostática fundamental (P = ρ·g·h), Princípio de Pascal, Princípio de Arquimedes e aplicações clínicas à pressão arterial e venosa, coluna hidrostática gravitacional, fluidoterapia e punções."
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ const TOPICS_DATA = [
   },
   {
     id: 5,
-    title: "Radiações, Raios X, Aplicações Terapêuticas e Diagnóstico",
+    title: "Radiações, Raios X, Meios de Diagnóstico e Aplicações Terapêuticas",
     shortTitle: "Radiações e Raios X",
     icon: "☢️",
     description: "Natureza dos Raios X, efeitos biológicos ionizantes, meios imagiológicos e princípios de radioproteção (ALARA) em enfermagem."
@@ -65,7 +65,7 @@ const TOPICS_DATA = [
   },
   {
     id: 8,
-    title: "Isótopos, Isóbaros, Isótonos e Aplicações Terapêuticas",
+    title: "Isótopos, Isóbaros, Isótonos e Respetivas Aplicações Terapêuticas",
     shortTitle: "Isótopos e Terapêutica",
     icon: "💊",
     description: "Famílias nucleares, radioisótopos em medicina nuclear (I-131, Tc-99m, F-18) e cuidados de enfermagem com radiofármacos."
@@ -85,7 +85,7 @@ const UNLOCKED_TOPIC_IDS = [1, 2];
 const ALL_TOPIC_COLLECTIONS = {
   1: TOPIC_1_QUESTIONS,
   2: TOPIC_2_QUESTIONS,
-  3: TOPIC_3_QUESTIONS,
+  3: typeof TOPIC_3_QUESTIONS !== 'undefined' ? TOPIC_3_QUESTIONS : [],
   4: TOPIC_4_QUESTIONS,
   5: TOPIC_5_QUESTIONS,
   6: TOPIC_6_QUESTIONS,
@@ -100,57 +100,82 @@ const QUESTIONS_DATA = UNLOCKED_TOPIC_IDS.flatMap(id => ALL_TOPIC_COLLECTIONS[id
 const TOPIC_SUMMARIES = [
   {
     topicId: 1,
-    title: "Tópico 1: Força, Estado de Equilíbrio e Equilíbrio de Forças",
+    title: "Tópico 1: Força, Estado de Equilíbrio, Equilíbrio de Forças e Alavancas",
     summary: `
       <ul>
         <li><strong>Conceito de Força:</strong> Grandeza vetorial caracterizada por módulo (intensidade), direção, sentido e ponto de aplicação. Unidade SI: Newton (N = kg·m/s²).</li>
-        <li><strong>1.ª Lei de Newton (Inércia):</strong> Se ∑F = 0, o corpo permanece em repouso ou em Movimento Retilíneo e Uniforme (MRU, velocidade vetorial constante).</li>
-        <li><strong>2.ª Lei de Newton (F = m·a):</strong> A aceleração é diretamente proporcional à força resultante e inversamente proporcional à massa.</li>
-        <li><strong>3.ª Lei de Newton (Ação-Reação):</strong> Pares de forças de igual intensidade, mesma linha de ação e sentidos opostos, atuando <em>sempre em corpos diferentes</em> (nunca se anulam mutuamente).</li>
-        <li><strong>Centro de Gravidade e Estabilidade Postural:</strong> O Centro de Gravidade situa-se anterior a S2. A estabilidade máxima exige CG baixo (joelhos semifletidos), base de sustentação ampla (pés afastados 30-40 cm), linha de gravidade centrada e elevado atrito solo-calçado com calçado antiderrapante. Dispositivos de apoio (andarilhos) ampliam a base de sustentação em 3 a 5 vezes.</li>
+        <li><strong>1.ª Lei de Newton (Inércia):</strong> Se ∑F = 0, o corpo permanece em repouso ou em Movimento Retilíneo e Uniforme (MRU, velocidade vetorial constante). Os corpos possuem inércia intrínseca (resistência à variação do movimento) proporcional à sua massa.</li>
+        <li><strong>2.ª Lei de Newton (F = m·a):</strong> A aceleração adquirida é diretamente proporcional à força resultante aplicada e inversamente proporcional à massa do corpo (a = F/m). Transferir um utente bariátrico exige forças consideravelmente superiores para vencer a inércia e acelerar a massa com segurança.</li>
+        <li><strong>3.ª Lei de Newton (Ação-Reação):</strong> Sempre que um corpo exerce uma força sobre outro, este exerce simultaneamente uma força de igual intensidade, mesma linha de ação e sentido oposto. Estas forças atuam <em>sempre em corpos diferentes</em> (nunca se anulam mutuamente).</li>
+        <li><strong>Força Normal e Força de Atrito:</strong> A força normal (N) atua perpendicularmente à superfície de contacto. O atrito estático (Fa ≤ μs · N) impede o início do escorregamento relativo, enquanto o atrito cinético (Fa = μc · N) atua durante o movimento relativo. Na enfermagem, o calçado antiderrapante assegura elevado coeficiente de atrito estático com o solo hospitalar.</li>
+        <li><strong>Centro de Gravidade e Estabilidade Postural:</strong> O Centro de Gravidade (CG) do corpo humano situa-se anatomicamente anterior à 2.ª vértebra sagrada (S2). A estabilidade postural máxima requer:
+          <ul>
+            <li>CG o mais rebaixado possível (flexão controlada dos joelhos);</li>
+            <li>Base de sustentação (BS) ampla (pés afastados cerca de 30 a 40 cm na largura dos ombros);</li>
+            <li>Linha de gravidade (vertical que passa no CG) estritamente centrada no interior da base de sustentação;</li>
+            <li>Dispositivos de apoio (ex: andarilhos) ampliam a área poligonal da base de sustentação em 3 a 5 vezes, prevenindo quedas graves.</li>
+          </ul>
+        </li>
+        <li><strong>Alavancas Biomecânicas e Momentos de Força:</strong>
+          <ul>
+            <li><em>Conceito de Alavanca:</em> Estrutura rígida que roda em torno de um eixo fixo (Fulcro ou Ponto de Apoio - PA), equilibrando uma Força Potente (FP, gerada pela contração muscular) contra uma Força Resistente (FR, peso do segmento corporal ou carga externa).</li>
+            <li><em>Momento de Força (Torque, M = F · d):</em> Mede a capacidade rotacional de uma força em relação ao eixo. Depende da intensidade da força e do braço de alavanca (distância perpendicular da linha de ação da força ao fulcro). Em equilíbrio estático rotacional: ∑M = 0 (FP · bp = FR · br).</li>
+            <li><em>1.ª Classe (Interfixas - Equilíbrio):</em> O fulcro situa-se entre a potência e a resistência (F - PA - R). Exemplo canónico no corpo humano: articulação atlanto-occipital (fulcro), onde os músculos extensores da nuca (potência) equilibram a tendência de queda anterior da cabeça (resistência gravitacional).</li>
+            <li><em>2.ª Classe (Inter-resistentes - Vantagem de Força):</em> A resistência situa-se entre o fulcro e a potência (PA - R - F). O braço de potência é sempre maior que o de resistência (Vantagem Mecânica VM = bp / br > 1). Exemplo: apoio na ponta dos pés (apoio metatarsal como fulcro, peso corporal na tíbia como resistência e tríceps sural/gémeos como potência). Permite elevar todo o peso corporal com menor tensão muscular.</li>
+            <li><em>3.ª Classe (Interpotentes - Velocidade e Amplitude):</em> A potência muscular situa-se entre o fulcro e a resistência (PA - F - R). O braço de potência é menor que o braço de resistência (VM < 1). É a alavanca mais prevalente no corpo humano (ex: flexão do antebraço pelo bicípite braquial com o cotovelo como fulcro). Sacrifica força em favor de grande velocidade angular e ampla amplitude de movimento das extremidades.</li>
+          </ul>
+        </li>
       </ul>
     `
   },
   {
     topicId: 2,
-    title: "Tópico 2: Elasticidade e Resistência dos Materiais",
+    title: "Tópico 2: Elasticidade dos Corpos, Resistência dos Materiais e Aplicação ao Sistema Osteomedular",
     summary: `
       <ul>
-        <li><strong>Reologia:</strong> Estuda as reações dos corpos a forças deformadoras.
+        <li><strong>Reologia:</strong> Ramo da física e biofísica que estuda as reações dos corpos à ação de forças deformadoras aplicadas.
           <ul>
-            <li><em>Sólidos de Euclides:</em> Modelos teóricos indeformáveis; distância interpartículas invariável sob qualquer força.</li>
-            <li><em>Sólidos de Hooke:</em> Deformação elástica diretamente proporcional à tensão; restituição integral da forma original após remoção da força (ex: mola).</li>
-            <li><em>Elasticidade:</em> Propriedade responsável pelo retorno de um corpo à sua forma original aquando do fim da força deformadora.</li>
-            <li><em>Corpos Plásticos:</em> Apenas ocorre deformação a partir de um determinado valor de tensão; mantêm permanentemente a deformação máxima (ex: plasticina).</li>
-            <li><em>Corpos Viscosos:</em> Deformação proporcional à tensão e ao tempo de aplicação; não restituem a sua forma original (ex: água, mel).</li>
-            <li><em>Corpos Viscoelásticos:</em> Deformação depende da tensão e do tempo de aplicação; dissipação de energia por histerese (ex: esponja, cartilagem, ossos e músculos).</li>
-            <li><em>Corpos Plastoviscoelásticos:</em> Comportam-se como corpos elásticos sob pequenas tensões; acima desse limiar, comportam-se como corpos plásticos (ex: massa de pão).</li>
+            <li><em>Sólidos de Euclides:</em> Modelos teóricos indeformáveis; distância interpartículas rigorosamente invariável perante qualquer intensidade de força.</li>
+            <li><em>Sólidos de Hooke:</em> Corpos perfeitamente elásticos; a deformação elástica é diretamente proporcional à intensidade da tensão mecânica aplicada, com restituição instantânea e integral da geometria original após remoção da força (ex: mola).</li>
+            <li><em>Elasticidade:</em> Propriedade física responsável pelo retorno de um corpo à sua forma original aquando do fim da força deformadora.</li>
+            <li><em>Corpos Plásticos:</em> Apresentam um limiar de escoamento a partir do qual sofrem deformação permanente irrecuperável, mantendo a forma deformada máxima mesmo após a remoção da carga (ex: plasticina).</li>
+            <li><em>Corpos Viscosos:</em> A taxa de deformação é diretamente proporcional à tensão e ao tempo de aplicação da força; não restituem a sua forma original (ex: água, mel, plasma).</li>
+            <li><em>Corpos Viscoelásticos:</em> Apresentam respostas elásticas e viscosas simultâneas dependentes do tempo de aplicação da tensão; dissipam energia mecânica sob forma de calor durante o ciclo de carga e descarga (histerese mecânica). Tecidos biológicos canónicos: cartilagem articular, ossos, discos intervertebrais, tendões e músculos.</li>
+            <li><em>Corpos Plastoviscoelásticos:</em> Comportam-se como corpos elásticos sob pequenas tensões mecânicas transitórias; acima de um determinado limiar crítico de tensão, passam a comportar-se como materiais plásticos deformáveis permanentemente (ex: massa de pão, polímeros biológicos complexos).</li>
           </ul>
         </li>
         <li><strong>Cinco Grandes Deformações Mecânicas:</strong>
           <ul>
-            <li><em>1. Compressão:</em> Forças convergentes; diminuição do comprimento (L) e aumento da área de secção (S). Exemplo canónico: fémur a suportar a carga corporal diária.</li>
-            <li><em>2. Tração:</em> Forças divergentes; aumento do comprimento (L) e diminuição da área de secção (S). Exemplo canónico: tração do tendão pelo músculo esquelético.</li>
-            <li><em>3. Flexão:</em> Deformação das arestas retilíneas em linhas curvas por ação de forças perpendiculares (transversais); plano neutro central onde a tensão a meio de um osso é nula!</li>
-            <li><em>4. Cisalhamento:</em> Deformação entre superfícies planas paralelas por ação de forças tangenciais opostas paralelas. Aplicação clínica: atrito tecidual no leito hospitalar.</li>
-            <li><em>5. Torção:</em> Rotação de um sólido em torno do seu eixo por ação de um momento de força (torque); tensão no eixo central é nula e tensão máxima concentrada na periferia do osso tubular oco.</li>
+            <li><em>1. Compressão:</em> Atuação de forças convergentes axiais; ocorre encurtamento longitudinal do comprimento (L) e aumento compensatório da área de secção transversal (S). Exemplo canónico biológico: o fémur e os corpos vertebrais a suportar a carga corporal gravitacional diária.</li>
+            <li><em>2. Tração:</em> Atuação de forças divergentes axiais; ocorre alongamento longitudinal do comprimento (L) e diminuição da área de secção transversal (S). Exemplo canónico: tração axial exercida sobre um tendão colagénico durante a contração muscular ativa.</li>
+            <li><em>3. Flexão:</em> Deformação de eixos retilíneos em perfis curvos devido à ação de forças transversais (perpendiculares); gera compressão no lado côncavo e tração no lado convexo, existindo um <strong>plano neutro central</strong> onde a tensão mecânica a meio da espessura do osso é estritamente nula!</li>
+            <li><em>4. Cisalhamento (Corte):</em> Deformação angular entre camadas planas paralelas induzida por forças tangenciais coplanares em sentidos opostos. Aplicação clínica direta em enfermagem: forças de atrito e cisalhamento na interface pele-lençol no leito hospitalar, cisalhando a microcirculação dérmica.</li>
+            <li><em>5. Torção:</em> Deformação rotacional em torno do eixo longitudinal originada por um momento de força torsor (torque); a tensão no eixo geométrico central é nula e a tensão mecânica máxima concentra-se na periferia da parede do osso tubular oco.</li>
           </ul>
         </li>
         <li><strong>Lei Fundamental da Elasticidade (Robert Hooke, 1660):</strong>
           <ul>
-            <li><em>Ut tensio, sic vis:</em> “Como a extensão, assim a força.” O alongamento das molas sujeitas a forças mecânicas é diretamente proporcional à intensidade das mesmas: <strong>F = k · ΔL</strong>.</li>
-            <li><em>k (N/m):</em> Constante elástica que mede a rigidez do corpo elástico em estudo (aplica-se a corpos com tamanho e espessura definidos e não exclusivamente ao material de que são feitos).</li>
+            <li><em>Ut tensio, sic vis:</em> “Como a extensão, assim a força.” O alongamento (ou compressão) de um corpo elástico sujeito a solicitações mecânicas é diretamente proporcional à intensidade da força aplicada: <strong>F = k · ΔL</strong>.</li>
+            <li><em>k (N/m):</em> Constante elástica que mede a rigidez mecânica de um corpo elástico em estudo. Aplica-se exclusivamente a corpos com geometria, tamanho e espessura definidos (e não apenas ao material intrínseco de que são constituídos).</li>
           </ul>
         </li>
         <li><strong>Lei de Hooke Generalizada e Módulo de Young (E):</strong>
           <ul>
-            <li><strong>σ = E · ε</strong>, onde σ é a tensão mecânica (F/A, em N/m² ou Pa), ε é a deformação relativa (ΔL/L₀, adimensional) e E é o Módulo de Young (rigidez intrínseca do material). Relação: <strong>k = (E · A) / L₀</strong>.</li>
-            <li><em>Aço (20 × 10¹⁰ N/m²):</em> Material extremamente rígido; suporta esforços massivos com mínima deformação estrutural.</li>
-            <li><em>Vidro (7 × 10¹⁰ N/m²):</em> Elevada rigidez teórica; contudo, apresenta grande fragilidade e fratura sem deformação plástica.</li>
-            <li><em>Prata (7,5 × 10¹⁰ N/m²):</em> Metal nobre com elevada rigidez mecânica e ductilidade sob solicitações controladas.</li>
-            <li><em>Osso (2 × 10¹⁰ N/m²):</em> Módulo 10 vezes menor que o aço; confere rigidez com extraordinária capacidade elástica de amortecimento.</li>
-            <li><em>Borracha (0,1 a 10 × 10⁷ N/m²):</em> Módulo extremamente baixo; sofre grandes deformações elásticas reversíveis sob cargas mínimas.</li>
-            <li><em>Implicações Clínicas:</em> O fenómeno de <strong>blindagem de tensões (stress shielding)</strong> ocorre quando próteses de aço (10× mais rígidas que o osso) absorvem as cargas, provocando reabsorção óssea periprotética pela Lei de Wolff.</li>
+            <li><strong>σ = E · ε</strong>, onde σ é a tensão mecânica normal (F / A, expressa em N/m² ou Pascal [Pa]), ε é a deformação relativa adimensional (ΔL / L₀) e E é o Módulo de Young (medida da rigidez intrínseca do material). Relação com a constante elástica do corpo: <strong>k = (E · A) / L₀</strong>.</li>
+            <li><em>Aço (20 × 10¹⁰ N/m²):</em> Material de elevadíssima rigidez elástica; suporta tensões mecânicas extremas com deformação quase impercetível.</li>
+            <li><em>Vidro (7 × 10¹⁰ N/m²):</em> Elevada rigidez teórica; contudo, apresenta fragilidade estrutural, atingindo a fratura catastrófica sem fase plástica.</li>
+            <li><em>Prata (7,5 × 10¹⁰ N/m²):</em> Metal com elevada rigidez mecânica e ductilidade sob solicitações controladas.</li>
+            <li><em>Osso (2 × 10¹⁰ N/m²):</em> Rigidez intrínseca dez vezes menor que a do aço metálico; confere estabilidade esquelética com excelente capacidade de amortecimento de choques mecânicos.</li>
+            <li><em>Borracha (0,1 a 10 × 10⁷ N/m²):</em> Módulo extremamente baixo; exibe extensibilidade monumental e deformações reversíveis sob cargas diminutas.</li>
+          </ul>
+        </li>
+        <li><strong>Aplicação da Elasticidade e Resistência ao Sistema Osteomedular:</strong>
+          <ul>
+            <li><em>Estrutura Bifásica do Tecido Ósseo:</em> O osso é um biomaterial compósito que conjuga a fase mineral inorgânica (cristais de hidroxiapatite [Ca₁₀(PO₄)₆(OH)₂], ~65% do peso seco), que confere dureza mineral e extraordinária resistência à <strong>compressão</strong>, com a matriz orgânica (fibras de colagénio tipo I, ~35%), que confere elasticidade, tenacidade e resistência à <strong>tração</strong>.</li>
+            <li><em>Hierarquia de Resistência do Osso Cortical:</em> O osso humano apresenta anisotropia mecânica acentuada: resiste em grau máximo à <strong>compressão longitudinal</strong> (130 a 190 MPa), de forma intermédia à <strong>tração axial</strong> (80 a 130 MPa) e é muito vulnerável ao <strong>cisalhamento transversal e à torção</strong> (rotura a apenas 50 a 70 MPa, explicando por que movimentos de torção com o pé bloqueado causam fraturas espiroidais da tíbia).</li>
+            <li><em>Arquitetura Tubular Oca dos Ossos Longos:</em> Os ossos longos diafisários (fémur, tíbia, úmero) possuem formato tubular oco com canal medular central. Esta morfologia concentra a massa óssea na periferia (onde as tensões de flexão e torção são máximas) e reduz a massa no eixo neutro (onde a tensão é nula), maximizando o momento de inércia da secção transversal e conferindo máxima resistência mecânica com peso biológico mínimo.</li>
+            <li><em>Osso Cortical (Compacto) vs. Osso Trabecular (Esponjoso):</em> O osso cortical compacto (baixa porosidade, 5-10%) apresenta elevado Módulo de Young (~14-20 GPa) para sustentação de carga; o osso esponjoso trabecular (alta porosidade, 50-90% preenchida por medula óssea) tem menor módulo aparente (~0,1-4 GPa), funcionando como uma estrutura celular porosa com extraordinária capacidade viscoelástica de amortecimento elástico e absorção de impactos articulares nas epífises.</li>
+            <li><em>Implicações Clínicas em Enfermagem:</em> Na osteoporose senil, a reabsorção trabecular acelerada no colo do fémur compromete severamente as linhas de transmissão de forças compressivas e de flexão, tornando o fémur proximal suscetível a fraturas graves com simples quedas da própria altura. Em artroplastias da anca, o fenómeno de <strong>blindagem de tensões (stress shielding)</strong> manifesta-se quando hastes femorais metálicas rígidas de aço (E = 20 × 10¹⁰ N/m²) absorvem a maioria das cargas mecânicas que deveriam incidir no osso cortical (E = 2 × 10¹⁰ N/m²); de acordo com a Lei de Wolff (o osso remodela-se em resposta às solicitações funcionais), a ausência de carga induz osteopenia e reabsorção óssea periprotética progressiva, aumentando o risco de soltura da prótese.</li>
           </ul>
         </li>
       </ul>
@@ -158,19 +183,20 @@ const TOPIC_SUMMARIES = [
   },
   {
     topicId: 3,
-    title: "Tópico 3: Aplicação da Elasticidade e Resistência ao Sistema Osteomuscular",
+    title: "Tópico 3: Leis Fundamentais da Hidrostática",
     summary: `
       <ul>
-        <li><strong>Estrutura Bifásica do Tecido Ósseo:</strong>
+        <li><strong>Conceito Fundamental de Pressão:</strong> Relação entre a intensidade da força perpendicular aplicada e a área da superfície de contacto: <strong>P = F / A</strong>. Unidade no SI: Pascal (1 Pa = 1 N/m²). Em contextos clínicos utiliza-se frequentemente o milímetro de mercúrio (1 mmHg ≈ 133,32 Pa) ou o centímetro de água (1 cmH₂O ≈ 98,06 Pa).</li>
+        <li><strong>Lei Fundamental da Hidrostática (Pressão Hidrostática, P = ρ · g · h):</strong> A pressão no seio de um líquido incompressível em repouso aumenta linearmente com a profundidade (h), sendo diretamente proporcional à densidade do fluido (ρ), à aceleração da gravidade (g) e à altura da coluna líquida.</li>
+        <li><strong>Princípio de Pascal:</strong> O acréscimo de pressão aplicado a um ponto de um fluido incompressível em repouso transmite-se integralmente e com igual intensidade a todos os pontos do líquido e às paredes do recipiente que o contém. Fundamenta o funcionamento de sistemas hidráulicos, seringas médicas e bombas de infusão.</li>
+        <li><strong>Princípio de Arquimedes (Impulsão):</strong> Qualquer corpo imerso total ou parcialmente num fluido em repouso sofre a ação de uma força vertical de baixo para cima (impulsão, I = ρ_fluido · V_deslocado · g) igual ao peso do volume de fluido deslocado. Aplicação em hidroterapia e reabilitação motora para diminuir a sobrecarga mecânica articular dos utentes.</li>
+        <li><strong>Aplicações Clínicas aos Cuidados de Enfermagem:</strong>
           <ul>
-            <li><em>Fase Inorgânica (60-65%):</em> Cristais de Hidroxiapatite [Ca₁₀(PO₄)₆(OH)₂] - confere dureza e enorme resistência à <strong>compressão</strong>.</li>
-            <li><em>Fase Orgânica (35%):</em> Fibras de Colagénio - confere flexibilidade, tenacidade e resistência à <strong>tração</strong>.</li>
+            <li><em>Efeito da Gravidade na Pressão Venosa:</em> Em decúbito dorsal horizontal, a pressão venosa sistémica é homogénea (~5 a 10 mmHg). Em ortostatismo (em pé), a coluna hidrostática de sangue (~1,3 m) adiciona um gradiente hidrostático (P = ρ·g·h) que eleva a pressão venosa nos membros inferiores para cerca de 90 mmHg, predispondo a estase venosa, edema e hipotensão ortostática na bipedestação súbita.</li>
+            <li><em>Altura da Bolsa de Perfusão Intravenosa:</em> Para que uma infusão endovenosa ocorra por gravidade, a bolsa de soro deve ser suspensa a uma altura vertical (~80 a 100 cm acima do ponto de punção venosa) cuja pressão hidrostática exercida (ΔP = ρ·g·h) supere a pressão intravascular da veia periférica (~10 a 15 mmHg), garantindo o fluxo anterógrado e prevenindo o refluxo de sangue na linha de infusão.</li>
+            <li><em>Dinâmica de Pressão em Seringas de Menor Calibre:</em> Pela relação P = F / A, para uma mesma força manual (F) exercida pelo polegar do enfermeiro no êmbolo, quanto menor for a área transversal (A) do êmbolo, exponencialmente maior será a pressão hidrostática interna gerada. Seringas pequenas (ex: 1 mL ou 3 mL) podem gerar pressões superiores a 200 psi (capazes de romper cateteres centrais como PICC, cujo limite de segurança é 25-30 psi), sendo mandatório o uso de seringas de 10 mL ou superiores para lavagem (*flush*) de acessos vasculares centrais.</li>
           </ul>
         </li>
-        <li><strong>Solicitações Mecânicas nos Ossos:</strong> O osso resiste muito bem à compressão axial, razoavelmente à tração e <em>muito mal à torção e ao cisalhamento transversal</em>.</li>
-        <li><strong>Geometria Tubular:</strong> Os ossos longos ocos maximizam o momento de inércia da secção transversal, oferecendo muito maior resistência à flexão com peso corporal mínimo.</li>
-        <li><strong>Fratura do Colo do Fémur:</strong> Na osteoporose senil, a reabsorção trabecular no colo femoral fragiliza a transmissão de cargas, provocando fraturas frequentes com quedas simples.</li>
-        <li><strong>Músculo:</strong> Converte energia química (hidrólise de ATP) em trabalho mecânico (~20-25%) e calor corporal (~75-80%, essencial na termorregulação).</li>
       </ul>
     `
   },

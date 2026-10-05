@@ -410,7 +410,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.btn-locked-topic, .topic-card-locked').forEach(el => {
       el.addEventListener('click', (e) => {
         e.stopPropagation();
-        showToast('🔒 <strong>Tópico Bloqueado pelo Professor</strong><br>O acesso às questões deste tópico está suspenso até nova indicação do docente. Foca o teu estudo nas 1.000 questões do Tópico 1!', 'toast-info', 4500);
+        showToast('🔒 <strong>Tópico Bloqueado pelo Professor</strong><br>O acesso às questões deste tópico está suspenso até nova indicação do docente. Foca o teu estudo nas 1.000 questões ativas dos Tópicos 1 e 2!', 'toast-info', 4500);
       });
     });
   }

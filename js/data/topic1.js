@@ -1,6 +1,6 @@
 /**
  * BANCO DE QUESTÕES CERTIFICADAS - TÓPICO 1
- * Força, Estado de Equilíbrio e Biomecânica
+ * Força, Estado de Equilíbrio, Equilíbrio de Forças e Alavancas
  * Alinhado estritamente com os 105 slides do PowerPoint (1BF)
  * Inclui Força Normal (Slides 33-36 e 59); Sem Lesões por Pressão
  * Total de Questões: 500
