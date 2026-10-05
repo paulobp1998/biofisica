@@ -1,5 +1,5 @@
 /**
- * Tópico 2: Elasticidade e Resistência dos Materiais
+ * Tópico 2: Elasticidade dos Corpos, Resistência dos Materiais e Aplicação ao Sistema Osteomedular
  * 500 Questões Clínicas e Científicas Rigorosas para o 1.º Ano de Enfermagem (IDs 2001 a 2500)
  * Alinhado estritamente com o PowerPoint AAA do Professor Paulo Pereira
  */

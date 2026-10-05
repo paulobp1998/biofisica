@@ -4,29 +4,21 @@ Plataforma educativa online, interativa, moderna e **100% gratuita para sempre**
 
 ---
 
-## 🎯 Conteúdos Programáticos (8 Tópicos • 2.400 Questões Clínicas Certificadas)
+## 🎯 Conteúdos Programáticos (8 Tópicos • 2.200 Questões Clínicas Certificadas)
 
-O banco global contém **2.400 questões clínicas rigorosas** (com **1.000 questões dedicadas no Tópico 1** e 200 questões por tópico nos restantes módulos 2 a 8), concebidas estritamente a partir do programa curricular oficial, sem alucinações e com fundamentação biofísica comprovada aliada à prática clínica diária de enfermagem:
+O banco global contém **2.200 questões clínicas rigorosas** (com **1.000 questões ativas nos Tópicos 1 e 2**, 500 em cada, e 200 questões por tópico nos restantes módulos 3 a 8), concebidas estritamente a partir do programa curricular oficial, sem alucinações e com fundamentação biofísica comprovada aliada à prática clínica diária de enfermagem:
 
-1. **Força, Estado de Equilíbrio, Atrito, Tração e Pressão (IDs 1001 a 2000 • 1.000 Questões):**
-   - Grandezas vetoriais, 1.ª, 2.ª e 3.ª Leis de Newton, condições de equilíbrio estático e momento de forças.
-   - Biofísica da pressão mecânica (P = F / A) nas proeminências ósseas e prevenção de lesões por pressão (úlceras/escaras).
-   - Forças de atrito estático e cinético, forças de cisalhamento dérmico, sistemas de tração esquelética e cutânea (Buck, Russell, Thomas-Splint), contratração (Trendelenburg) e ergonomia hospitalar.
-2. **Alavancas, Elasticidade dos Corpos e Resistência dos Materiais (IDs 2001 a 2200 • 200 Questões):**
-   - Classes de alavancas anatómicas (1.ª, 2.ª e 3.ª classe) e instrumentos cirúrgicos (pinças, tesouras, porta-agulhas).
-   - Vantagem mecânica de força e ganho de amplitude de movimento.
-   - Lei de Hooke (σ = E · ε), Módulo de Young, limite elástico e deformação plástica.
-   - Reologia e viscoelasticidade de biomateriais em enfermagem (cateteres venosos centrais, tubuladuras, drenos de sucção, balões de angioplastia e ligaduras elásticas).
-3. **Aplicação da Elasticidade e Resistência ao Sistema Osteomuscular (IDs 3001 a 3200 • 200 Questões):**
-   - Estrutura compósita bifásica do tecido ósseo: fase mineral inorgânica (hidroxiapatite, resistência à compressão) vs fase orgânica (colagénio tipo I, tenacidade e resistência à tração).
-   - Anisotropia mecânica e limites de resistência às solicitações (compressão > tração > cisalhamento).
-   - Lei de Wolff e mecanotransdução (fluxo nos canalículos, esclerostina e potenciais elétricos).
-   - Vantagem da geometria tubular oca dos ossos longos (momento de inércia da área I e peso reduzido).
-   - Biomecânica da anca e colo do fémur na marcha e apoio monopodal (força do glúteo médio e uso da bengala contralateral).
-   - Fisiopatologia mecânica da osteoporose senil e fraturas por fragilidade no idoso com quedas simples.
-   - Efeitos do repouso absoluto no leito (desmineralização, hipercalciúria e atrofia por desuso).
-   - Viscoelasticidade de tendões e ligamentos (toe region, fluência, relaxamento de tensão e entorses).
-   - Bioenergética muscular: hidrólise de ATP, pontes actina-miosina, rendimento mecânico (20-25%), calor dissipado (75-80%) e termorregulação (tremores na hipotermia/febre).
+1. **Força, Estado de Equilíbrio, Equilíbrio de Forças e Alavancas (IDs 1001 a 1500 • 500 Questões Ativas):**
+   - Grandezas vetoriais, 1.ª, 2.ª e 3.ª Leis de Newton, força normal, atrito estático e cinético hospitalar.
+   - Condições de equilíbrio estático (∑F = 0 e ∑M = 0), centro de gravidade (anterior a S2), linha de gravidade e base de sustentação na ergonomia e prevenção de quedas.
+   - Alavancas biomecânicas (1.ª classe / interfixas, 2.ª classe / inter-resistentes, 3.ª classe / interpotentes), braços de alavanca, momentos de força (torque M = F·d) e vantagem mecânica no corpo humano e instrumentos clínicos.
+2. **Elasticidade dos Corpos, Resistência dos Materiais e Aplicação ao Sistema Osteomedular (IDs 2001 a 2500 • 500 Questões Ativas):**
+   - Reologia: sólidos de Euclides vs sólidos de Hooke, corpos plásticos, viscosos, viscoelásticos e plastoviscoelásticos.
+   - As 5 grandes deformações: compressão (fémur), tração (tendões), flexão (plano neutro central), cisalhamento tecidual e torção (eixo neutro e tensão máxima na periferia de ossos tubulares ocos).
+   - Lei Fundamental da Elasticidade de Hooke (F = k · ΔL) e Lei Generalizada (σ = E · ε) com o Módulo de Young dos materiais canónicos (Aço, Vidro, Prata, Osso e Borracha).
+   - Biomecânica do sistema osteomedular: compósito bifásico (hidroxiapatite mineral ~65% para compressão vs colagénio tipo I ~35% para tração e flexibilidade), anisotropia mecânica (compressão > tração > cisalhamento/torção), arquitetura tubular oca dos ossos longos, osso cortical vs trabecular, fragilidade do colo do fémur na osteoporose senil e fenómeno de blindagem de tensões (*stress shielding*) em próteses de anca periprotéticas pela Lei de Wolff.
+3. **Leis Fundamentais da Hidrostática (IDs 3001 a 3200 • Bloqueado pelo Docente):**
+   - Pressão hidrostática fundamental (P = ρ·g·h), Princípio de Pascal, Princípio de Arquimedes e aplicações clínicas (coluna hidrostática gravitacional ortostática, pressão venosa periférica, altura da bolsa de infusão e calibres de seringas na infusão via cateter PICC).
 4. **Hidrodinâmica e Aplicações ao Sistema Circulatório (IDs 4001 a 4200 • 200 Questões):**
    - Princípio da Continuidade (Q = A · v = constante): velocidade máxima na aorta vs lentidão capilar para trocas gasosas.
    - Regime Laminar: lâminas concêntricas, perfil parabólico de velocidade e ausência de ruído.
