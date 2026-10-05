@@ -1321,7 +1321,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       const tId = parseInt(selectedTopic, 10);
       if (typeof UNLOCKED_TOPIC_IDS !== 'undefined' && !UNLOCKED_TOPIC_IDS.includes(tId)) {
-        showToast('🔒 <strong>Tópico Bloqueado pelo Professor</strong><br>O acesso às questões deste tópico está suspenso temporariamente. Foca o teu estudo nas 1.000 questões do Tópico 1!', 'toast-warning', 4000);
+        showToast('🔒 <strong>Tópico Bloqueado pelo Professor</strong><br>O acesso às questões deste tópico está suspenso temporariamente. Foca o teu estudo nas 1.000 questões ativas dos Tópicos 1 e 2!', 'toast-warning', 4000);
         return;
       }
       pool = QUESTIONS_DATA.filter(q => q.topicId === tId);

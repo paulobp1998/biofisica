@@ -23,10 +23,10 @@ const TOPICS_DATA = [
   },
   {
     id: 2,
-    title: "Alavancas, Elasticidade dos Corpos e Resistência dos Materiais",
-    shortTitle: "Alavancas e Elasticidade",
+    title: "Elasticidade e Resistência dos Materiais",
+    shortTitle: "Elasticidade e Resistência",
     icon: "📐",
-    description: "Classes de alavancas anatómicas, vantagem mecânica, Lei de Hooke, Módulo de Young e comportamento reológico."
+    description: "Reologia e comportamento mecânico dos materiais, sólidos de Euclides e Hooke, plasticidade e viscoelasticidade, forças de compressão, tração, flexão, cisalhamento e torção, Lei de Hooke (F = k·ΔL) e Módulo de Young (σ = E·ε)."
   },
   {
     id: 3,
@@ -77,9 +77,9 @@ const TOPICS_DATA = [
 // CONTROLO DE ACESSO DO DOCENTE POR TÓPICO
 // =========================================================================
 // Define quais os tópicos atualmente acessíveis aos estudantes (1 a 8).
-// Por determinação do docente: Apenas o Tópico 1 está ativo e acessível aos alunos.
-// Para desbloquear novos tópicos posteriormente, basta adicionar os respetivos IDs (ex: [1, 2]).
-const UNLOCKED_TOPIC_IDS = [1];
+// Tópicos 1 e 2 ativos e disponibilizados com 500 questões clínicas cada (total: 1.000 questões).
+// Tópicos 3 a 8 temporariamente bloqueados pelo docente para foco do estudo.
+const UNLOCKED_TOPIC_IDS = [1, 2];
 
 // Banco integral de questões por tópico (totalmente preservado para desbloqueio futuro)
 const ALL_TOPIC_COLLECTIONS = {
@@ -113,18 +113,46 @@ const TOPIC_SUMMARIES = [
   },
   {
     topicId: 2,
-    title: "Tópico 2: Alavancas, Elasticidade dos Corpos e Resistência dos Materiais",
+    title: "Tópico 2: Elasticidade e Resistência dos Materiais",
     summary: `
       <ul>
-        <li><strong>Alavancas no Corpo Humano:</strong>
+        <li><strong>Reologia:</strong> Estuda as reações dos corpos a forças deformadoras.
           <ul>
-            <li><em>1.ª Classe (Interfixa):</em> Fulcro no meio (Potência - Apoio - Resistência). Ex: Articulação atlanto-occipital (cabeça/pescoço). Equilíbrio.</li>
-            <li><em>2.ª Classe (Inter-resistente):</em> Resistência no meio (Apoio - Resistência - Potência). Ex: Fletir na ponta dos pés (tornozelo). Vantagem mecânica de força (VM > 1).</li>
-            <li><em>3.ª Classe (Interpotente):</em> Potência no meio (Apoio - Potência - Resistência). Ex: Bicípite braquial ao fletir o cotovelo. Desvantagem de força (VM < 1), mas ganho espetacular de velocidade e amplitude.</li>
+            <li><em>Sólidos de Euclides:</em> Modelos teóricos indeformáveis; distância interpartículas invariável sob qualquer força.</li>
+            <li><em>Sólidos de Hooke:</em> Deformação elástica diretamente proporcional à tensão; restituição integral da forma original após remoção da força (ex: mola).</li>
+            <li><em>Elasticidade:</em> Propriedade responsável pelo retorno de um corpo à sua forma original aquando do fim da força deformadora.</li>
+            <li><em>Corpos Plásticos:</em> Apenas ocorre deformação a partir de um determinado valor de tensão; mantêm permanentemente a deformação máxima (ex: plasticina).</li>
+            <li><em>Corpos Viscosos:</em> Deformação proporcional à tensão e ao tempo de aplicação; não restituem a sua forma original (ex: água, mel).</li>
+            <li><em>Corpos Viscoelásticos:</em> Deformação depende da tensão e do tempo de aplicação; dissipação de energia por histerese (ex: esponja, cartilagem, ossos e músculos).</li>
+            <li><em>Corpos Plastoviscoelásticos:</em> Comportam-se como corpos elásticos sob pequenas tensões; acima desse limiar, comportam-se como corpos plásticos (ex: massa de pão).</li>
           </ul>
         </li>
-        <li><strong>Reologia:</strong> Estudo da deformação da matéria: corpos indeformáveis (modelo teórico), sólidos elásticos (Hooke), corpos plásticos (deformação permanente irreversível) e corpos viscosos (escoamento sob tensão).</li>
-        <li><strong>Lei de Hooke e Módulo de Young (σ = E · ε):</strong> A tensão σ (N/m²) é proporcional à deformação relativa ε (ΔL/L₀). O Módulo de Young E traduz a <em>rigidez elástica</em> do material.</li>
+        <li><strong>Cinco Grandes Deformações Mecânicas:</strong>
+          <ul>
+            <li><em>1. Compressão:</em> Forças convergentes; diminuição do comprimento (L) e aumento da área de secção (S). Exemplo canónico: fémur a suportar a carga corporal diária.</li>
+            <li><em>2. Tração:</em> Forças divergentes; aumento do comprimento (L) e diminuição da área de secção (S). Exemplo canónico: tração do tendão pelo músculo esquelético.</li>
+            <li><em>3. Flexão:</em> Deformação das arestas retilíneas em linhas curvas por ação de forças perpendiculares (transversais); plano neutro central onde a tensão a meio de um osso é nula!</li>
+            <li><em>4. Cisalhamento:</em> Deformação entre superfícies planas paralelas por ação de forças tangenciais opostas paralelas. Aplicação clínica: atrito tecidual no leito hospitalar.</li>
+            <li><em>5. Torção:</em> Rotação de um sólido em torno do seu eixo por ação de um momento de força (torque); tensão no eixo central é nula e tensão máxima concentrada na periferia do osso tubular oco.</li>
+          </ul>
+        </li>
+        <li><strong>Lei Fundamental da Elasticidade (Robert Hooke, 1660):</strong>
+          <ul>
+            <li><em>Ut tensio, sic vis:</em> “Como a extensão, assim a força.” O alongamento das molas sujeitas a forças mecânicas é diretamente proporcional à intensidade das mesmas: <strong>F = k · ΔL</strong>.</li>
+            <li><em>k (N/m):</em> Constante elástica que mede a rigidez do corpo elástico em estudo (aplica-se a corpos com tamanho e espessura definidos e não exclusivamente ao material de que são feitos).</li>
+          </ul>
+        </li>
+        <li><strong>Lei de Hooke Generalizada e Módulo de Young (E):</strong>
+          <ul>
+            <li><strong>σ = E · ε</strong>, onde σ é a tensão mecânica (F/A, em N/m² ou Pa), ε é a deformação relativa (ΔL/L₀, adimensional) e E é o Módulo de Young (rigidez intrínseca do material). Relação: <strong>k = (E · A) / L₀</strong>.</li>
+            <li><em>Aço (20 × 10¹⁰ N/m²):</em> Material extremamente rígido; suporta esforços massivos com mínima deformação estrutural.</li>
+            <li><em>Vidro (7 × 10¹⁰ N/m²):</em> Elevada rigidez teórica; contudo, apresenta grande fragilidade e fratura sem deformação plástica.</li>
+            <li><em>Prata (7,5 × 10¹⁰ N/m²):</em> Metal nobre com elevada rigidez mecânica e ductilidade sob solicitações controladas.</li>
+            <li><em>Osso (2 × 10¹⁰ N/m²):</em> Módulo 10 vezes menor que o aço; confere rigidez com extraordinária capacidade elástica de amortecimento.</li>
+            <li><em>Borracha (0,1 a 10 × 10⁷ N/m²):</em> Módulo extremamente baixo; sofre grandes deformações elásticas reversíveis sob cargas mínimas.</li>
+            <li><em>Implicações Clínicas:</em> O fenómeno de <strong>blindagem de tensões (stress shielding)</strong> ocorre quando próteses de aço (10× mais rígidas que o osso) absorvem as cargas, provocando reabsorção óssea periprotética pela Lei de Wolff.</li>
+          </ul>
+        </li>
       </ul>
     `
   },

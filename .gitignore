@@ -1,0 +1,9 @@
+# Scratch generators, dumps and temporary files
+*.py
+!verify_app_health.py
+!master_audit.py
+*.json
+*.txt
+*.pptx
+.DS_Store
+/*.js
