@@ -7,3 +7,5 @@
 *.pptx
 .DS_Store
 /*.js
+audit/
+audit_review.md

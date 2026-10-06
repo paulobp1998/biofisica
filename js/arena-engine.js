@@ -399,8 +399,11 @@ class ArenaEngine {
     this.net.broadcastState({
       phase: 'REVEAL',
       questionIndex: this.currentQuestionIndex + 1,
+      question: q.question,
+      options: q.options,
       correctIndex: correctIdx,
       explanation: q.explanation,
+      distractorAnalysis: q.distractorAnalysis,
       nursingApplication: q.nursingApplication,
       optionCounts: optionCounts,
       resultsByTeam: Object.keys(this.currentAnswers).reduce((acc, tId) => {
@@ -524,8 +527,12 @@ class ArenaEngine {
       const myTeamId = this.net.teamId;
       const myResult = state.resultsByTeam && state.resultsByTeam[myTeamId];
       this.emitUI('client_round_result', {
+        question: state.question,
+        options: state.options,
         correctIndex: state.correctIndex,
         explanation: state.explanation,
+        distractorAnalysis: state.distractorAnalysis,
+        nursingApplication: state.nursingApplication,
         myResult: myResult || { isCorrect: false, points: 0, currentScore: 0 }
       });
       if (myResult && myResult.isCorrect) {

@@ -2719,37 +2719,47 @@ mark {
 }
 
 .arena-tactile-buttons-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  min-height: 290px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+@media (min-width: 641px) {
+  .arena-tactile-buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
 }
 
 .btn-tactile {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
+  justify-content: flex-start;
+  gap: 0.85rem;
   border-radius: var(--radius-md);
   border: 3px solid transparent;
-  padding: 1.25rem 0.75rem;
+  padding: 0.85rem 1.1rem;
+  min-height: 58px;
   cursor: pointer;
   color: #fff;
   transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
   user-select: none;
   touch-action: manipulation;
   box-shadow: var(--shadow-md);
+  text-align: left;
 }
 
 .btn-tactile:active {
-  transform: scale(0.96);
+  transform: scale(0.97);
 }
 
 .btn-tactile.selected {
   border-color: #fff;
   box-shadow: 0 0 0 4px var(--text-primary), var(--shadow-lg);
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .btn-tactile-a {
@@ -2766,20 +2776,35 @@ mark {
 }
 
 .btn-tactile-letter {
-  font-size: 2.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  font-size: 1.3rem;
   font-weight: 900;
   line-height: 1;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
 }
 
 .btn-tactile-label {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-weight: 600;
-  text-align: center;
-  max-height: 2.8em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  opacity: 0.95;
+  text-align: left;
+  line-height: 1.38;
+  white-space: normal;
+  word-break: break-word;
+  opacity: 1;
+  flex: 1;
 }
+
+.opt-badge-bg-a { background: #2563eb; color: #fff; }
+.opt-badge-bg-b { background: #059669; color: #fff; }
+.opt-badge-bg-c { background: #d97706; color: #fff; }
+.opt-badge-bg-d { background: #7c3aed; color: #fff; }
 
 .arena-client-vote-status {
   text-align: center;
@@ -2806,5 +2831,141 @@ mark {
   font-size: 0.85rem;
   padding: 0.25rem 0.75rem;
   border-radius: var(--radius-full);
+}
+
+/* Reveal no Ecrã do Host (Projetor) */
+.arena-reveal-question-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+  text-align: left;
+  box-shadow: var(--shadow-sm);
+}
+
+.arena-reveal-q-text {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.45;
+  color: var(--text-primary);
+  margin: 0.4rem 0 0;
+}
+
+.arena-reveal-options-container {
+  margin-bottom: 1.25rem;
+  text-align: left;
+}
+
+.arena-reveal-options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+@media (max-width: 640px) {
+  .arena-reveal-options-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.arena-reveal-option-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--border-subtle);
+  background: var(--bg-surface);
+  font-size: 0.92rem;
+  line-height: 1.35;
+  transition: all 0.2s ease;
+}
+
+.arena-reveal-option-card.is-correct {
+  border-color: var(--color-success);
+  background: rgba(16, 185, 129, 0.08);
+  font-weight: 600;
+}
+
+.arena-reveal-option-card.is-wrong {
+  opacity: 0.65;
+}
+
+.arena-reveal-option-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.arena-reveal-option-text {
+  flex: 1;
+  color: var(--text-primary);
+}
+
+.arena-reveal-correct-tag {
+  background: var(--color-success);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+
+/* Reveal no Telemóvel do Aluno */
+.arena-client-reveal-section {
+  margin-top: 1.25rem;
+  text-align: left;
+}
+
+.arena-client-reveal-q-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+}
+
+.arena-client-opt-item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--border-subtle);
+  background: var(--bg-surface);
+  font-size: 0.88rem;
+  line-height: 1.35;
+}
+
+.arena-client-opt-item.is-correct {
+  border-color: var(--color-success);
+  background: rgba(16, 185, 129, 0.1);
+  font-weight: 600;
+}
+
+.arena-client-opt-item.is-my-wrong {
+  border-color: var(--color-danger);
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.arena-client-opt-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 0.85rem;
+  color: #fff;
 }
 
