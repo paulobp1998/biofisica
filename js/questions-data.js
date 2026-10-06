@@ -84,7 +84,7 @@ const UNLOCKED_TOPIC_IDS = [1, 2];
 // Banco integral de questões por tópico (totalmente preservado para desbloqueio futuro)
 const ALL_TOPIC_COLLECTIONS = {
   1: TOPIC_1_QUESTIONS,
-  2: TOPIC_2_QUESTIONS,
+  2: typeof TOPIC_2_QUESTIONS !== 'undefined' ? TOPIC_2_QUESTIONS : (typeof TOPIC2_QUESTIONS !== 'undefined' ? TOPIC2_QUESTIONS : []),
   3: typeof TOPIC_3_QUESTIONS !== 'undefined' ? TOPIC_3_QUESTIONS : [],
   4: TOPIC_4_QUESTIONS,
   5: TOPIC_5_QUESTIONS,
