@@ -410,7 +410,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.btn-locked-topic, .topic-card-locked').forEach(el => {
       el.addEventListener('click', (e) => {
         e.stopPropagation();
-        showToast('🔒 <strong>Tópico Bloqueado pelo Professor</strong><br>O acesso às questões deste tópico está suspenso até nova indicação do docente. Foca o teu estudo nas 1.000 questões ativas dos Tópicos 1 e 2!', 'toast-info', 4500);
+        showToast('🔒 <strong>Tópico Bloqueado pelo Professor</strong><br>O acesso às questões deste tópico está suspenso até nova indicação do docente. Foca o teu estudo nas 500 questões ativas do Tópico 1!', 'toast-info', 4500);
       });
     });
   }
@@ -520,7 +520,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const isSingleTopic = typeof UNLOCKED_TOPIC_IDS !== 'undefined' && UNLOCKED_TOPIC_IDS.length === 1;
     if (isSingleTopic) {
       modalSessionTitle.textContent = `🎯 Simulação de Exame: Tópico 1`;
-      modalSessionSubtitle.textContent = `20 ou 40 questões sorteadas das 1.000 questões ativas do Tópico 1 (Tópicos 2 a 8 temporariamente bloqueados pelo docente):`;
+      modalSessionSubtitle.textContent = `20 ou 40 questões sorteadas das 500 questões ativas do Tópico 1 (Tópicos 2 a 8 temporariamente bloqueados pelo docente):`;
 
       sessionOptionsGrid.innerHTML = `
         <button class="session-option-card selected" data-count="20">
@@ -1326,7 +1326,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       const tId = parseInt(selectedTopic, 10);
       if (typeof UNLOCKED_TOPIC_IDS !== 'undefined' && !UNLOCKED_TOPIC_IDS.includes(tId)) {
-        showToast('🔒 <strong>Tópico Bloqueado pelo Professor</strong><br>O acesso às questões deste tópico está suspenso temporariamente. Foca o teu estudo nas 1.000 questões ativas dos Tópicos 1 e 2!', 'toast-warning', 4000);
+        showToast('🔒 <strong>Tópico Bloqueado pelo Professor</strong><br>O acesso às questões deste tópico está suspenso temporariamente. Foca o teu estudo nas 500 questões ativas do Tópico 1!', 'toast-warning', 4000);
         return;
       }
       pool = QUESTIONS_DATA.filter(q => q.topicId === tId);
@@ -1459,7 +1459,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.btn-study-locked').forEach(btn => {
       btn.addEventListener('click', () => {
-        showToast('🔒 <strong>Tópico Bloqueado pelo Professor</strong><br>O treino prático deste tópico está suspenso temporariamente. Foca o teu estudo nas 1.000 questões do Tópico 1!', 'toast-info', 4500);
+        showToast('🔒 <strong>Tópico Bloqueado pelo Professor</strong><br>O treino prático deste tópico está suspenso temporariamente. Foca o teu estudo nas 500 questões ativas do Tópico 1!', 'toast-info', 4500);
       });
     });
   }
