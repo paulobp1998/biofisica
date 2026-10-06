@@ -1,4 +1,4 @@
-const TOPIC2_QUESTIONS = [
+const TOPIC_2_QUESTIONS = [
   {
     "id": 2001,
     "topicId": 2,
@@ -9500,3 +9500,5 @@ const TOPIC2_QUESTIONS = [
     "nursingApplication": "Este domínio biofísico completo habilita o futuro enfermeiro com competências analíticas de excelência para a prática clínica e hospitalar moderna."
   }
 ];
+
+const TOPIC2_QUESTIONS = TOPIC_2_QUESTIONS;
