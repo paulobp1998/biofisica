@@ -171,7 +171,7 @@ class ArenaEngine {
   // =========================================================================
   // FLUXO DO DOCENTE (HOST)
   // =========================================================================
-  startHostSession({ topicId = 1, count = 20, timePerQuestion = 45, isSimulated = false }) {
+  startHostSession({ topicId = 1, count = 20, timePerQuestion = 45, isSimulated = false, customQuestions = null }) {
     try {
       if (typeof window !== 'undefined' && window.sessionStorage) {
         if (window.sessionStorage.getItem('arena_host_authenticated') !== 'true') {
@@ -183,7 +183,6 @@ class ArenaEngine {
 
     this.role = 'host';
     this.topicId = topicId;
-    this.questionCount = count;
     this.timePerQuestion = timePerQuestion;
     this.currentQuestionIndex = 0;
     this.teams = {};
@@ -195,8 +194,14 @@ class ArenaEngine {
     const pinDigits = Math.floor(1000 + Math.random() * 9000);
     const roomPin = `BF-${pinDigits}`;
 
-    // Selecionar perguntas aleatórias do tópico escolhido
-    this.questions = this.pickQuestions(this.topicId, this.questionCount);
+    // Selecionar perguntas: lista personalizada pelo docente OU sorteio aleatório
+    if (Array.isArray(customQuestions) && customQuestions.length > 0) {
+      this.questions = [...customQuestions];
+      this.questionCount = this.questions.length;
+    } else {
+      this.questionCount = count;
+      this.questions = this.pickQuestions(this.topicId, this.questionCount);
+    }
 
     // Ligar à rede
     this.net.connect({
@@ -205,17 +210,23 @@ class ArenaEngine {
       isSimulated: isSimulated
     });
 
+    const topicLabel = (Array.isArray(customQuestions) && customQuestions.length > 0)
+      ? `Seleção Manual do Docente (${this.questions.length} Perguntas)`
+      : this.getTopicName(this.topicId);
+
     this.emitUI('host_lobby_ready', {
       roomPin: roomPin,
       questionCount: this.questions.length,
       timePerQuestion: this.timePerQuestion,
-      topicName: this.getTopicName(this.topicId)
+      topicName: topicLabel
     });
   }
 
   pickQuestions(topicId, count) {
     let pool = [];
-    if (typeof ALL_TOPIC_COLLECTIONS !== 'undefined' && ALL_TOPIC_COLLECTIONS[topicId]) {
+    if ((topicId === 'all' || topicId === 'all-unlocked') && typeof QUESTIONS_DATA !== 'undefined') {
+      pool = [...QUESTIONS_DATA];
+    } else if (typeof ALL_TOPIC_COLLECTIONS !== 'undefined' && ALL_TOPIC_COLLECTIONS[topicId]) {
       pool = [...ALL_TOPIC_COLLECTIONS[topicId]];
     } else if (typeof TOPIC_1_QUESTIONS !== 'undefined') {
       pool = [...TOPIC_1_QUESTIONS];
@@ -233,8 +244,11 @@ class ArenaEngine {
   }
 
   getTopicName(topicId) {
+    if (topicId === 'all' || topicId === 'all-unlocked') {
+      return 'Todos os Tópicos Ativos';
+    }
     if (typeof TOPICS_DATA !== 'undefined') {
-      const t = TOPICS_DATA.find(item => item.id === topicId);
+      const t = TOPICS_DATA.find(item => item.id == topicId);
       if (t) return t.title;
     }
     return 'Tópico ' + topicId;

@@ -327,9 +327,14 @@
                     Inicia uma simulação com 3 equipas virtuais controladas pelo computador para veres como funciona a batalha e o pódio.
                   </p>
                 </div>
-                <button class="btn btn-outline" id="btn-role-simulation">
-                  ▶️ Testar Simulação Rápida
-                </button>
+                <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                  <button class="btn btn-outline" id="btn-role-custom-questions" style="font-weight: 600;">
+                    📋 Selecionar Perguntas (PIN)
+                  </button>
+                  <button class="btn btn-outline" id="btn-role-simulation">
+                    ▶️ Testar Simulação Rápida
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -350,7 +355,32 @@
               </select>
             </div>
 
-            <div class="arena-form-group">
+            <!-- SEÇÃO DE SELEÇÃO MANUAL DE PERGUNTAS (REQUER PIN) -->
+            <div class="arena-form-group arena-custom-config-box">
+              <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
+                <div>
+                  <h4 style="margin: 0; font-size: 1.05rem; display: flex; align-items: center; gap: 0.4rem; color: var(--text-primary);">
+                    <span>📋</span> Seleção Manual de Perguntas (Docente)
+                  </h4>
+                  <p id="arena-custom-config-desc" style="margin: 0.35rem 0 0; font-size: 0.88rem; color: var(--text-secondary);">
+                    Escolhe a dedo as perguntas exatas que vão aparecer no projetor da aula.
+                  </p>
+                </div>
+                <div style="display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap;">
+                  <button type="button" class="btn btn-outline btn-sm" id="btn-open-custom-questions" style="font-weight: 600; display: flex; align-items: center; gap: 0.4rem;">
+                    <span>🔒</span> Selecionar Perguntas ➔
+                  </button>
+                  <button type="button" class="btn btn-outline btn-sm hidden" id="btn-clear-custom-questions" style="color: var(--color-danger); border-color: var(--color-danger);" title="Voltar ao modo de sorteio aleatório">
+                    🗑️ Limpar Seleção
+                  </button>
+                </div>
+              </div>
+              <div id="arena-custom-active-badge" class="arena-custom-badge-container">
+                <!-- Preenchido via JS -->
+              </div>
+            </div>
+
+            <div class="arena-form-group" id="arena-config-count-container">
               <label class="arena-label">🔢 Quantidade de Perguntas:</label>
               <div class="arena-button-group" id="arena-config-count-group">
                 <button type="button" class="btn-group-item" data-value="5">5 Perguntas (Rápido)</button>
@@ -376,6 +406,129 @@
                 Gerar Sala & PIN no Projetor ➔
               </button>
             </div>
+          </div>
+        </div>
+
+        <!-- ECRÃ 2B: SELEÇÃO MANUAL DE PERGUNTAS (REQUER PIN DE DOCENTE) -->
+        <div id="arena-screen-host-custom-questions" class="arena-screen hidden">
+          <div class="arena-card arena-custom-screen-card">
+            
+            <!-- Cabeçalho da Seleção -->
+            <div class="arena-custom-header">
+              <div style="display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+                <div>
+                  <button type="button" class="btn btn-outline btn-sm" id="btn-custom-q-back" style="margin-bottom: 0.6rem;">
+                    ← Voltar à Configuração
+                  </button>
+                  <h2 style="font-size: 1.55rem; font-weight: 800; display: flex; align-items: center; gap: 0.5rem; margin: 0;">
+                    <span>📋</span> Seleção Manual de Perguntas da Arena
+                  </h2>
+                  <p style="color: var(--text-secondary); margin: 0.35rem 0 0; font-size: 0.92rem;">
+                    Pesquisa e marca as perguntas exatas que vão ser projetadas aos alunos durante a batalha.
+                  </p>
+                </div>
+
+                <!-- Resumo no Topo -->
+                <div class="arena-custom-summary-pill">
+                  <div class="arena-custom-pill-number" id="arena-custom-pill-count">0</div>
+                  <div class="arena-custom-pill-text">
+                    <span style="font-weight: 700; font-size: 0.92rem;">Perguntas Selecionadas</span>
+                    <span id="arena-custom-pill-time" style="font-size: 0.78rem; color: var(--text-secondary);">0 min estimados</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Toolbar de Filtros e Pesquisa -->
+            <div class="arena-custom-toolbar">
+              <div class="arena-custom-toolbar-row">
+                <!-- Filtro por Tópico -->
+                <div class="arena-custom-filter-item" style="flex: 1.2; min-width: 240px;">
+                  <label for="arena-custom-filter-topic" class="arena-custom-label">📚 Tópico:</label>
+                  <select id="arena-custom-filter-topic" class="arena-select">
+                    <option value="all-unlocked" selected>🎯 Tópicos Ativos (1 e 2 - 1.000 Questões)</option>
+                    <option value="1">Tópico 1: Força, Equilíbrio e Alavancas (500)</option>
+                    <option value="2">Tópico 2: Elasticidade e Sistema Osteomedular (500)</option>
+                    <option value="all">🌐 Banco Integral (Tópicos 1 a 8 - 2.200)</option>
+                    <option value="3">Tópico 3: Hidrostática (200)</option>
+                    <option value="4">Tópico 4: Hidrodinâmica Circulatória (200)</option>
+                    <option value="5">Tópico 5: Radiações e Raios X (200)</option>
+                    <option value="6">Tópico 6: Núcleo e Forças Nucleares (200)</option>
+                    <option value="7">Tópico 7: Partículas α, β e Gama (200)</option>
+                    <option value="8">Tópico 8: Isótopos e Terapêutica (200)</option>
+                  </select>
+                </div>
+
+                <!-- Campo de Pesquisa Instantânea -->
+                <div class="arena-custom-filter-item" style="flex: 2; min-width: 280px;">
+                  <label for="arena-custom-search-input" class="arena-custom-label">🔍 Pesquisa por ID ou Palavra-Chave:</label>
+                  <div style="position: relative;">
+                    <input 
+                      type="text" 
+                      id="arena-custom-search-input" 
+                      class="form-control" 
+                      placeholder="Ex: 1042, alavanca, atrito, cisalhamento, fémur, pascal..."
+                      style="width: 100%; padding-right: 2.2rem;"
+                    >
+                    <button type="button" id="btn-custom-clear-search" class="hidden" style="position: absolute; right: 0.6rem; top: 50%; transform: translateY(-50%); background: none; border: none; font-size: 1rem; cursor: pointer; color: var(--text-secondary);" title="Limpar pesquisa">✕</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Abas e Botões Rápidos -->
+              <div class="arena-custom-toolbar-actions">
+                <div class="arena-custom-tabs">
+                  <button type="button" class="arena-custom-tab active" id="tab-custom-all">
+                    Todas as Perguntas (<span id="count-tab-all">0</span>)
+                  </button>
+                  <button type="button" class="arena-custom-tab" id="tab-custom-selected">
+                    ⭐ Apenas Selecionadas (<span id="count-tab-selected">0</span>)
+                  </button>
+                </div>
+
+                <div class="arena-custom-quick-btns">
+                  <span style="font-size: 0.8rem; color: var(--text-secondary); align-self: center;">Adicionar:</span>
+                  <button type="button" class="btn btn-outline btn-sm" id="btn-quick-select-5">+5</button>
+                  <button type="button" class="btn btn-outline btn-sm" id="btn-quick-select-10">+10</button>
+                  <button type="button" class="btn btn-outline btn-sm" id="btn-quick-select-20">+20</button>
+                  <button type="button" class="btn btn-outline btn-sm" id="btn-custom-select-filtered" title="Marcar todas as perguntas visíveis">Marcar Visíveis</button>
+                  <button type="button" class="btn btn-outline btn-sm" id="btn-custom-clear-all" style="color: var(--color-danger); border-color: var(--color-danger);" title="Desmarcar todas as perguntas">Desmarcar Todas</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Lista de Cartões de Perguntas -->
+            <div id="arena-custom-questions-list" class="arena-custom-questions-list">
+              <!-- Inserido dinamicamente via JS -->
+            </div>
+
+            <!-- Botão de Carregar Mais -->
+            <div id="arena-custom-pagination" class="arena-custom-pagination-container">
+              <button type="button" class="btn btn-outline" id="btn-custom-load-more">
+                Mostrar Mais Perguntas...
+              </button>
+            </div>
+
+            <!-- Barra Fixa Inferior com Ações -->
+            <div class="arena-custom-sticky-footer">
+              <div class="arena-custom-footer-content">
+                <div class="arena-custom-footer-info">
+                  <span id="arena-custom-footer-badge" class="badge-selected-count">0 selecionadas</span>
+                  <span style="font-size: 0.85rem; color: var(--text-secondary); margin-left: 0.5rem;" id="arena-custom-footer-hint">
+                    Dica: 10 a 20 perguntas são ideais para uma aula de 45-60 min.
+                  </span>
+                </div>
+                <div class="arena-custom-footer-buttons">
+                  <button type="button" class="btn btn-outline" id="btn-custom-footer-cancel">
+                    Voltar
+                  </button>
+                  <button type="button" class="btn btn-primary" id="btn-custom-footer-save">
+                    💾 Confirmar Seleção & Ir para a Sala
+                  </button>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -984,22 +1137,22 @@
   </footer>
 
   <!-- Banco de Questões por Tópico (2.200 questões certificadas no total) -->
-  <script src="js/data/topic1.js?v=3.2"></script>
-  <script src="js/data/topic2.js?v=3.2"></script>
-  <script src="js/data/topic3.js?v=2.8"></script>
-  <script src="js/data/topic4.js?v=2.8"></script>
-  <script src="js/data/topic5.js?v=2.8"></script>
-  <script src="js/data/topic6.js?v=2.8"></script>
-  <script src="js/data/topic7.js?v=2.8"></script>
-  <script src="js/data/topic8.js?v=2.8"></script>
-  <script src="js/questions-data.js?v=3.2"></script>
-  <script src="js/quiz-engine.js?v=3.2"></script>
+  <script src="js/data/topic1.js?v=3.3"></script>
+  <script src="js/data/topic2.js?v=3.3"></script>
+  <script src="js/data/topic3.js?v=3.3"></script>
+  <script src="js/data/topic4.js?v=3.3"></script>
+  <script src="js/data/topic5.js?v=3.3"></script>
+  <script src="js/data/topic6.js?v=3.3"></script>
+  <script src="js/data/topic7.js?v=3.3"></script>
+  <script src="js/data/topic8.js?v=3.3"></script>
+  <script src="js/questions-data.js?v=3.3"></script>
+  <script src="js/quiz-engine.js?v=3.3"></script>
 
   <!-- Arena BioFísica (Multiplayer em Tempo Real na Aula - 100% Gratuito) -->
   <script src="js/lib/paho-mqtt.min.js"></script>
-  <script src="js/arena-network.js?v=3.2"></script>
-  <script src="js/arena-engine.js?v=3.2"></script>
-  <script src="js/arena-ui.js?v=3.2"></script>
-  <script src="js/app.js?v=3.2"></script>
+  <script src="js/arena-network.js?v=3.3"></script>
+  <script src="js/arena-engine.js?v=3.3"></script>
+  <script src="js/arena-ui.js?v=3.3"></script>
+  <script src="js/app.js?v=3.3"></script>
 </body>
 </html>

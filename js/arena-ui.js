@@ -91,6 +91,16 @@ function arenaSha256(ascii) {
 // Hash SHA-256 do PIN Mestre de Docente (456123)
 const ARENA_HOST_PIN_HASH = 'c1cf024576e9c756b252bd5035efc64c72c17affe236909ded190d266a5bfdf1';
 
+function arenaEscapeHtml(str) {
+  if (typeof str !== 'string') return '';
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
 class ArenaUI {
   constructor() {
     this.net = new ArenaNetwork();
@@ -100,9 +110,20 @@ class ArenaUI {
     this.selectedAvatar = '🩺';
     this.pendingTeacherAction = null;
     this.myCurrentVote = null;
+
+    // Estado da Seleção Manual de Perguntas do Docente
+    this.selectedCustomQuestionIds = new Set();
+    this.customFilterTopic = 'all-unlocked';
+    this.customSearchQuery = '';
+    this.customActiveTab = 'all';
+    this.customRenderLimit = 50;
+    this.allQuestionsPool = [];
+    this.loadSavedCustomQuestionIds();
+
     this.initDOMElements();
     this.initEventListeners();
     this.initEngineListeners();
+    this.updateHostConfigCustomBadge();
   }
 
   initDOMElements() {
@@ -110,6 +131,7 @@ class ArenaUI {
     this.screens = {
       select: document.getElementById('arena-screen-select'),
       hostConfig: document.getElementById('arena-screen-host-config'),
+      hostCustomQuestions: document.getElementById('arena-screen-host-custom-questions'),
       hostLobby: document.getElementById('arena-screen-host-lobby'),
       hostQuestion: document.getElementById('arena-screen-host-question'),
       hostReveal: document.getElementById('arena-screen-host-reveal'),
@@ -130,6 +152,7 @@ class ArenaUI {
     this.btnRoleHost = document.getElementById('btn-role-host');
     this.btnRoleClient = document.getElementById('btn-role-client');
     this.btnRoleSimulation = document.getElementById('btn-role-simulation');
+    this.btnRoleCustomQuestions = document.getElementById('btn-role-custom-questions');
 
     // Ecrã 2: Configuração Docente
     this.arenaConfigTopic = document.getElementById('arena-config-topic');
@@ -137,6 +160,34 @@ class ArenaUI {
     this.arenaConfigTimeGroup = document.getElementById('arena-config-time-group');
     this.btnBackFromConfig = document.getElementById('btn-back-from-config');
     this.btnCreateArenaRoom = document.getElementById('btn-create-arena-room');
+    this.btnOpenCustomQuestions = document.getElementById('btn-open-custom-questions');
+    this.btnClearCustomQuestions = document.getElementById('btn-clear-custom-questions');
+    this.arenaCustomActiveBadge = document.getElementById('arena-custom-active-badge');
+    this.arenaCustomConfigDesc = document.getElementById('arena-custom-config-desc');
+    this.arenaConfigCountContainer = document.getElementById('arena-config-count-container');
+
+    // Ecrã 2B: Seleção Manual de Perguntas (Docente)
+    this.btnCustomQBack = document.getElementById('btn-custom-q-back');
+    this.arenaCustomPillCount = document.getElementById('arena-custom-pill-count');
+    this.arenaCustomPillTime = document.getElementById('arena-custom-pill-time');
+    this.arenaCustomFilterTopic = document.getElementById('arena-custom-filter-topic');
+    this.arenaCustomSearchInput = document.getElementById('arena-custom-search-input');
+    this.btnCustomClearSearch = document.getElementById('btn-custom-clear-search');
+    this.tabCustomAll = document.getElementById('tab-custom-all');
+    this.tabCustomSelected = document.getElementById('tab-custom-selected');
+    this.countTabAll = document.getElementById('count-tab-all');
+    this.countTabSelected = document.getElementById('count-tab-selected');
+    this.btnQuickSelect5 = document.getElementById('btn-quick-select-5');
+    this.btnQuickSelect10 = document.getElementById('btn-quick-select-10');
+    this.btnQuickSelect20 = document.getElementById('btn-quick-select-20');
+    this.btnCustomSelectFiltered = document.getElementById('btn-custom-select-filtered');
+    this.btnCustomClearAll = document.getElementById('btn-custom-clear-all');
+    this.arenaCustomQuestionsList = document.getElementById('arena-custom-questions-list');
+    this.arenaCustomPagination = document.getElementById('arena-custom-pagination');
+    this.btnCustomLoadMore = document.getElementById('btn-custom-load-more');
+    this.arenaCustomFooterBadge = document.getElementById('arena-custom-footer-badge');
+    this.btnCustomFooterCancel = document.getElementById('btn-custom-footer-cancel');
+    this.btnCustomFooterSave = document.getElementById('btn-custom-footer-save');
 
     // Ecrã 3: Lobby Docente
     this.arenaDisplayPin = document.getElementById('arena-display-pin');
@@ -230,8 +281,8 @@ class ArenaUI {
     }
   }
 
-  requestTeacherAuth(onSuccessAction) {
-    if (this.isTeacherAuthenticated()) {
+  requestTeacherAuth(onSuccessAction, forcePrompt = false) {
+    if (!forcePrompt && this.isTeacherAuthenticated()) {
       if (typeof onSuccessAction === 'function') onSuccessAction();
       return;
     }
@@ -334,8 +385,16 @@ class ArenaUI {
     if (this.btnRoleHost) {
       this.btnRoleHost.addEventListener('click', () => {
         this.requestTeacherAuth(() => {
+          this.updateHostConfigCustomBadge();
           this.showScreen('hostConfig');
         });
+      });
+    }
+
+    // Atalho direto para Seleção Manual de Perguntas (REQUER SEMPRE PIN 456123)
+    if (this.btnRoleCustomQuestions) {
+      this.btnRoleCustomQuestions.addEventListener('click', () => {
+        this.openCustomQuestionsSection();
       });
     }
 
@@ -373,6 +432,24 @@ class ArenaUI {
       });
     }
 
+    // Configuração Docente: Seleção Manual de Perguntas (REQUER SEMPRE PIN 456123)
+    if (this.btnOpenCustomQuestions) {
+      this.btnOpenCustomQuestions.addEventListener('click', () => {
+        this.openCustomQuestionsSection();
+      });
+    }
+
+    if (this.btnClearCustomQuestions) {
+      this.btnClearCustomQuestions.addEventListener('click', () => {
+        if (confirm("Tens a certeza de que queres limpar as perguntas personalizadas e voltar ao modo aleatório?")) {
+          this.selectedCustomQuestionIds.clear();
+          this.saveCustomQuestionIds();
+          this.updateHostConfigCustomBadge();
+          this.updateCustomSelectionSummary();
+        }
+      });
+    }
+
     // Configuração Docente: Seletor de botões de contagem e tempo
     if (this.arenaConfigCountGroup) {
       this.arenaConfigCountGroup.querySelectorAll('.btn-group-item').forEach(btn => {
@@ -402,23 +479,202 @@ class ArenaUI {
       this.btnCreateArenaRoom.addEventListener('click', () => {
         if (!this.isTeacherAuthenticated()) {
           this.requestTeacherAuth(() => {
+            this.updateHostConfigCustomBadge();
             this.showScreen('hostConfig');
           });
           return;
         }
 
-        const topicId = parseInt(this.arenaConfigTopic ? this.arenaConfigTopic.value : '1', 10);
+        const topicId = this.arenaConfigTopic ? this.arenaConfigTopic.value : '1';
         const countBtn = this.arenaConfigCountGroup ? this.arenaConfigCountGroup.querySelector('.active') : null;
         const count = countBtn ? parseInt(countBtn.getAttribute('data-value'), 10) : 20;
         const timeBtn = this.arenaConfigTimeGroup ? this.arenaConfigTimeGroup.querySelector('.active') : null;
         const time = timeBtn ? parseInt(timeBtn.getAttribute('data-value'), 10) : 45;
 
+        // Se houver perguntas selecionadas manualmente pelo docente, usa-as!
+        const customQuestions = this.selectedCustomQuestionIds.size > 0 
+          ? this.getSelectedCustomQuestionsArray() 
+          : null;
+
         this.engine.startHostSession({
           topicId: topicId,
           count: count,
           timePerQuestion: time,
-          isSimulated: false
+          isSimulated: false,
+          customQuestions: customQuestions
         });
+      });
+    }
+
+    // Ecrã 2B: Navegação e Ações da Seleção Manual de Perguntas
+    if (this.btnCustomQBack) {
+      this.btnCustomQBack.addEventListener('click', () => {
+        this.updateHostConfigCustomBadge();
+        this.showScreen('hostConfig');
+      });
+    }
+
+    if (this.btnCustomFooterCancel) {
+      this.btnCustomFooterCancel.addEventListener('click', () => {
+        this.updateHostConfigCustomBadge();
+        this.showScreen('hostConfig');
+      });
+    }
+
+    if (this.btnCustomFooterSave) {
+      this.btnCustomFooterSave.addEventListener('click', () => {
+        this.saveCustomQuestionIds();
+        this.updateHostConfigCustomBadge();
+        this.showScreen('hostConfig');
+      });
+    }
+
+    // Filtro por Tópico no Seletor Manual
+    if (this.arenaCustomFilterTopic) {
+      this.arenaCustomFilterTopic.addEventListener('change', () => {
+        this.customFilterTopic = this.arenaCustomFilterTopic.value;
+        this.customRenderLimit = 50;
+        this.renderCustomQuestionsList();
+      });
+    }
+
+    // Pesquisa Instantânea com Debounce
+    let searchDebounceTimer = null;
+    if (this.arenaCustomSearchInput) {
+      this.arenaCustomSearchInput.addEventListener('input', () => {
+        const val = this.arenaCustomSearchInput.value;
+        if (this.btnCustomClearSearch) {
+          if (val.trim()) this.btnCustomClearSearch.classList.remove('hidden');
+          else this.btnCustomClearSearch.classList.add('hidden');
+        }
+        clearTimeout(searchDebounceTimer);
+        searchDebounceTimer = setTimeout(() => {
+          this.customSearchQuery = val;
+          this.customRenderLimit = 50;
+          this.renderCustomQuestionsList();
+        }, 150);
+      });
+    }
+
+    if (this.btnCustomClearSearch) {
+      this.btnCustomClearSearch.addEventListener('click', () => {
+        if (this.arenaCustomSearchInput) {
+          this.arenaCustomSearchInput.value = '';
+          this.customSearchQuery = '';
+          this.btnCustomClearSearch.classList.add('hidden');
+          this.customRenderLimit = 50;
+          this.renderCustomQuestionsList();
+        }
+      });
+    }
+
+    // Abas de Filtro: Todas as Perguntas vs Apenas Selecionadas
+    if (this.tabCustomAll) {
+      this.tabCustomAll.addEventListener('click', () => {
+        this.customActiveTab = 'all';
+        this.tabCustomAll.classList.add('active');
+        if (this.tabCustomSelected) this.tabCustomSelected.classList.remove('active');
+        this.customRenderLimit = 50;
+        this.renderCustomQuestionsList();
+      });
+    }
+
+    if (this.tabCustomSelected) {
+      this.tabCustomSelected.addEventListener('click', () => {
+        this.customActiveTab = 'selected';
+        this.tabCustomSelected.classList.add('active');
+        if (this.tabCustomAll) this.tabCustomAll.classList.remove('active');
+        this.customRenderLimit = 50;
+        this.renderCustomQuestionsList();
+      });
+    }
+
+    // Ações Rápidas de Seleção (+5, +10, +20, Marcar Visíveis, Desmarcar Todas)
+    const addQuickCount = (countToAdd) => {
+      const filtered = this.getFilteredQuestions();
+      let added = 0;
+      for (const q of filtered) {
+        if (!this.selectedCustomQuestionIds.has(q.id)) {
+          this.selectedCustomQuestionIds.add(q.id);
+          added++;
+          if (added >= countToAdd) break;
+        }
+      }
+      this.saveCustomQuestionIds();
+      this.updateHostConfigCustomBadge();
+      this.renderCustomQuestionsList();
+    };
+
+    if (this.btnQuickSelect5) this.btnQuickSelect5.addEventListener('click', () => addQuickCount(5));
+    if (this.btnQuickSelect10) this.btnQuickSelect10.addEventListener('click', () => addQuickCount(10));
+    if (this.btnQuickSelect20) this.btnQuickSelect20.addEventListener('click', () => addQuickCount(20));
+
+    if (this.btnCustomSelectFiltered) {
+      this.btnCustomSelectFiltered.addEventListener('click', () => {
+        const filtered = this.getFilteredQuestions();
+        filtered.forEach(q => this.selectedCustomQuestionIds.add(q.id));
+        this.saveCustomQuestionIds();
+        this.updateHostConfigCustomBadge();
+        this.renderCustomQuestionsList();
+      });
+    }
+
+    if (this.btnCustomClearAll) {
+      this.btnCustomClearAll.addEventListener('click', () => {
+        if (confirm("Tens a certeza de que queres desmarcar todas as perguntas selecionadas?")) {
+          this.selectedCustomQuestionIds.clear();
+          this.saveCustomQuestionIds();
+          this.updateHostConfigCustomBadge();
+          this.renderCustomQuestionsList();
+        }
+      });
+    }
+
+    // Paginação: Carregar Mais
+    if (this.btnCustomLoadMore) {
+      this.btnCustomLoadMore.addEventListener('click', () => {
+        this.customRenderLimit += 50;
+        this.renderCustomQuestionsList();
+      });
+    }
+
+    // Delegação de Eventos na Lista de Perguntas (Checkbox & Expandir Detalhes)
+    if (this.arenaCustomQuestionsList) {
+      this.arenaCustomQuestionsList.addEventListener('change', (e) => {
+        if (e.target && e.target.classList.contains('arena-custom-q-check')) {
+          const qid = parseInt(e.target.getAttribute('data-qid'), 10);
+          if (e.target.checked) {
+            this.selectedCustomQuestionIds.add(qid);
+          } else {
+            this.selectedCustomQuestionIds.delete(qid);
+          }
+          const card = e.target.closest('.arena-custom-q-card');
+          if (card) {
+            if (e.target.checked) card.classList.add('is-selected');
+            else card.classList.remove('is-selected');
+          }
+          this.saveCustomQuestionIds();
+          this.updateCustomSelectionSummary();
+          this.updateHostConfigCustomBadge();
+        }
+      });
+
+      this.arenaCustomQuestionsList.addEventListener('click', (e) => {
+        const toggleBtn = e.target.closest('.arena-custom-q-toggle-btn');
+        if (toggleBtn) {
+          const qid = toggleBtn.getAttribute('data-qid');
+          const details = document.getElementById(`details-q-${qid}`);
+          if (details) {
+            const isHidden = details.classList.contains('hidden');
+            if (isHidden) {
+              details.classList.remove('hidden');
+              toggleBtn.innerHTML = '<span>🔼 Ocultar Detalhes</span>';
+            } else {
+              details.classList.add('hidden');
+              toggleBtn.innerHTML = '<span>👁️ Ver Opções & Justificação</span>';
+            }
+          }
+        }
       });
     }
 
@@ -697,9 +953,14 @@ class ArenaUI {
 
       if (this.arenaRevealDistractors) {
         let daHtml = '<strong>Análise das opções incorretas:</strong><ul style="margin: 0.4rem 0 0 1.25rem; font-size: 0.92rem; color: var(--text-secondary);">';
+        let distractorCounter = 0;
         data.question.options.forEach((opt, idx) => {
-          if (idx !== data.question.correctIndex && data.question.distractorAnalysis && data.question.distractorAnalysis[idx]) {
-            daHtml += `<li><strong>Opção ${letters[idx]}:</strong> ${data.question.distractorAnalysis[idx]}</li>`;
+          if (idx !== data.question.correctIndex) {
+            const daText = data.question.distractorAnalysis && data.question.distractorAnalysis[distractorCounter];
+            distractorCounter++;
+            if (daText) {
+              daHtml += `<li><strong>Opção ${letters[idx]}:</strong> ${daText}</li>`;
+            }
           }
         });
         daHtml += '</ul>';
@@ -1031,5 +1292,244 @@ class ArenaUI {
       timePerQuestion: 25,
       isSimulated: true
     });
+  }
+
+  // =========================================================================
+  // GESTÃO E SELEÇÃO MANUAL DE PERGUNTAS (DOCENTE - REQUER PIN 456123)
+  // =========================================================================
+
+  loadSavedCustomQuestionIds() {
+    try {
+      const saved = localStorage.getItem('arena_custom_question_ids');
+      if (saved) {
+        const arr = JSON.parse(saved);
+        if (Array.isArray(arr)) {
+          this.selectedCustomQuestionIds = new Set(arr);
+        }
+      }
+    } catch (e) {
+      this.selectedCustomQuestionIds = new Set();
+    }
+  }
+
+  saveCustomQuestionIds() {
+    try {
+      localStorage.setItem('arena_custom_question_ids', JSON.stringify([...this.selectedCustomQuestionIds]));
+    } catch (e) {}
+  }
+
+  loadAllQuestionsPool() {
+    if (this.allQuestionsPool && this.allQuestionsPool.length > 0) return;
+    let all = [];
+    if (typeof ALL_TOPIC_COLLECTIONS !== 'undefined') {
+      for (let t = 1; t <= 8; t++) {
+        if (ALL_TOPIC_COLLECTIONS[t] && Array.isArray(ALL_TOPIC_COLLECTIONS[t])) {
+          all.push(...ALL_TOPIC_COLLECTIONS[t]);
+        }
+      }
+    } else if (typeof TOPIC_1_QUESTIONS !== 'undefined') {
+      all = [...TOPIC_1_QUESTIONS];
+    }
+    this.allQuestionsPool = all;
+  }
+
+  getFilteredQuestions() {
+    this.loadAllQuestionsPool();
+    const topicFilter = this.customFilterTopic;
+    const query = (this.customSearchQuery || '').trim().toLowerCase();
+
+    return this.allQuestionsPool.filter(q => {
+      // 1. Filtro por Tópico
+      if (topicFilter === 'all-unlocked') {
+        if (q.topicId !== 1 && q.topicId !== 2) return false;
+      } else if (topicFilter !== 'all') {
+        if (q.topicId != topicFilter) return false;
+      }
+
+      // 2. Filtro por Aba
+      if (this.customActiveTab === 'selected') {
+        if (!this.selectedCustomQuestionIds.has(q.id)) return false;
+      }
+
+      // 3. Pesquisa por Texto ou ID
+      if (query) {
+        const idMatch = String(q.id).toLowerCase().includes(query);
+        const textMatch = (q.question || '').toLowerCase().includes(query);
+        const nursingMatch = (q.nursingApplication || '').toLowerCase().includes(query);
+        const optionsMatch = Array.isArray(q.options) && q.options.some(opt => (opt || '').toLowerCase().includes(query));
+        if (!idMatch && !textMatch && !nursingMatch && !optionsMatch) {
+          return false;
+        }
+      }
+
+      return true;
+    });
+  }
+
+  getSelectedCustomQuestionsArray() {
+    this.loadAllQuestionsPool();
+    if (this.selectedCustomQuestionIds.size === 0) return [];
+    const qMap = new Map();
+    this.allQuestionsPool.forEach(q => qMap.set(q.id, q));
+    const res = [];
+    for (const id of this.selectedCustomQuestionIds) {
+      if (qMap.has(id)) {
+        res.push(qMap.get(id));
+      }
+    }
+    return res;
+  }
+
+  openCustomQuestionsSection() {
+    // SEMPRE exigir o PIN Mestre numérico (forcePrompt = true)
+    this.requestTeacherAuth(() => {
+      this.loadAllQuestionsPool();
+      this.customRenderLimit = 50;
+      this.renderCustomQuestionsList();
+      this.showScreen('hostCustomQuestions');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, true);
+  }
+
+  updateCustomSelectionSummary() {
+    const count = this.selectedCustomQuestionIds.size;
+    if (this.arenaCustomPillCount) this.arenaCustomPillCount.textContent = count;
+    if (this.arenaCustomPillTime) {
+      const estimatedMinutes = Math.round((count * 45) / 60);
+      this.arenaCustomPillTime.textContent = `~${estimatedMinutes} min estimados`;
+    }
+    if (this.arenaCustomFooterBadge) {
+      this.arenaCustomFooterBadge.textContent = `${count} ${count === 1 ? 'pergunta selecionada' : 'perguntas selecionadas'}`;
+    }
+    if (this.countTabSelected) {
+      this.countTabSelected.textContent = count;
+    }
+  }
+
+  updateHostConfigCustomBadge() {
+    if (!this.arenaCustomActiveBadge) return;
+    const count = this.selectedCustomQuestionIds.size;
+    if (count > 0) {
+      this.arenaCustomActiveBadge.innerHTML = `
+        <span class="arena-custom-badge-pill is-active">
+          <span>✅</span> <strong>${count} ${count === 1 ? 'pergunta manual ativa' : 'perguntas manuais ativas'}</strong> (substitui o sorteio aleatório)
+        </span>
+      `;
+      if (this.btnClearCustomQuestions) this.btnClearCustomQuestions.classList.remove('hidden');
+      if (this.arenaCustomConfigDesc) {
+        this.arenaCustomConfigDesc.textContent = `Estão ${count} perguntas personalizadas prontas a projetar. Podes alterá-las ou limpar para sorteio aleatório.`;
+      }
+    } else {
+      this.arenaCustomActiveBadge.innerHTML = `
+        <span class="arena-custom-badge-pill is-default">
+          <span>🎲</span> Modo aleatório ativo (o sistema sorteará perguntas do tópico escolhido)
+        </span>
+      `;
+      if (this.btnClearCustomQuestions) this.btnClearCustomQuestions.classList.add('hidden');
+      if (this.arenaCustomConfigDesc) {
+        this.arenaCustomConfigDesc.textContent = `Escolhe a dedo as perguntas exatas que vão aparecer no projetor da aula.`;
+      }
+    }
+  }
+
+  renderCustomQuestionsList() {
+    if (!this.arenaCustomQuestionsList) return;
+
+    const filtered = this.getFilteredQuestions();
+    const totalMatching = filtered.length;
+
+    // Atualizar contadores das abas
+    if (this.countTabAll) {
+      const poolSize = this.customFilterTopic === 'all-unlocked' 
+        ? this.allQuestionsPool.filter(q => q.topicId === 1 || q.topicId === 2).length 
+        : (this.customFilterTopic === 'all' ? this.allQuestionsPool.length : this.allQuestionsPool.filter(q => q.topicId == this.customFilterTopic).length);
+      this.countTabAll.textContent = poolSize;
+    }
+    if (this.countTabSelected) {
+      this.countTabSelected.textContent = this.selectedCustomQuestionIds.size;
+    }
+
+    this.updateCustomSelectionSummary();
+
+    if (totalMatching === 0) {
+      this.arenaCustomQuestionsList.innerHTML = `
+        <div style="text-align: center; padding: 3rem 1rem; color: var(--text-secondary); background: var(--bg-surface); border-radius: var(--radius-md); border: 1px dashed var(--border-subtle);">
+          <span style="font-size: 2.2rem; display: block; margin-bottom: 0.5rem;">🔍</span>
+          <h4 style="margin: 0; color: var(--text-primary); font-size: 1.1rem;">Nenhuma pergunta encontrada</h4>
+          <p style="margin: 0.35rem 0 0; font-size: 0.9rem;">
+            ${this.customActiveTab === 'selected' 
+              ? 'Ainda não selecionaste nenhuma pergunta nesta vista. Clica na aba "Todas as Perguntas" para pesquisar e marcar questões.' 
+              : 'Tenta ajustar o termo de pesquisa ou o filtro de tópicos.'}
+          </p>
+        </div>
+      `;
+      if (this.arenaCustomPagination) this.arenaCustomPagination.style.display = 'none';
+      return;
+    }
+
+    const itemsToDisplay = filtered.slice(0, this.customRenderLimit);
+    const letters = ['A', 'B', 'C', 'D'];
+
+    let html = '';
+    itemsToDisplay.forEach(q => {
+      const isSelected = this.selectedCustomQuestionIds.has(q.id);
+      let topicShort = `Tópico ${q.topicId}`;
+      if (typeof TOPICS_DATA !== 'undefined') {
+        const t = TOPICS_DATA.find(item => item.id == q.topicId);
+        if (t) topicShort = t.shortTitle || t.title;
+      }
+
+      html += `
+        <div class="arena-custom-q-card ${isSelected ? 'is-selected' : ''}" data-qid="${q.id}">
+          <div class="arena-custom-q-header">
+            <label class="arena-custom-checkbox-label" for="q-check-${q.id}">
+              <input type="checkbox" id="q-check-${q.id}" class="arena-custom-q-check" data-qid="${q.id}" ${isSelected ? 'checked' : ''}>
+              <span class="arena-custom-q-badge">#${q.id}</span>
+              <span class="arena-custom-q-topic-tag">${arenaEscapeHtml(topicShort)}</span>
+            </label>
+            <button type="button" class="arena-custom-q-toggle-btn" data-qid="${q.id}">
+              <span>👁️ Ver Opções & Justificação</span>
+            </button>
+          </div>
+          <div class="arena-custom-q-body">
+            <p class="arena-custom-q-text">${arenaEscapeHtml(q.question)}</p>
+          </div>
+          <div class="arena-custom-q-details hidden" id="details-q-${q.id}">
+            <div class="arena-custom-options-preview">
+              ${(q.options || []).map((opt, i) => `
+                <div class="arena-custom-opt-preview-item ${i === q.correctIndex ? 'is-correct' : ''}">
+                  <span class="arena-custom-opt-letter">${letters[i]}</span>
+                  <span class="arena-custom-opt-text">${arenaEscapeHtml(opt)}</span>
+                  ${i === q.correctIndex ? '<span class="arena-custom-correct-badge">✓ Correta</span>' : ''}
+                </div>
+              `).join('')}
+            </div>
+            <div class="arena-custom-exp-preview">
+              <strong>🩺 Justificação Científica:</strong> ${arenaEscapeHtml(q.explanation || '')}
+            </div>
+            ${q.nursingApplication ? `
+              <div class="arena-custom-nursing-preview">
+                <strong>🏥 Aplicação aos Cuidados de Enfermagem:</strong> ${arenaEscapeHtml(q.nursingApplication)}
+              </div>
+            ` : ''}
+          </div>
+        </div>
+      `;
+    });
+
+    this.arenaCustomQuestionsList.innerHTML = html;
+
+    // Controlar botão Carregar Mais
+    if (this.arenaCustomPagination) {
+      if (filtered.length > this.customRenderLimit) {
+        this.arenaCustomPagination.style.display = 'block';
+        if (this.btnCustomLoadMore) {
+          const remaining = filtered.length - this.customRenderLimit;
+          this.btnCustomLoadMore.textContent = `Mostrar Mais Perguntas (${remaining} restantes)...`;
+        }
+      } else {
+        this.arenaCustomPagination.style.display = 'none';
+      }
+    }
   }
 }
