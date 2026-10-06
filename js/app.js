@@ -848,10 +848,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     let distractorsHtml = '<strong>Análise detalhada das restantes opções:</strong><ul>';
+    let distractorCounter = 0;
     result.options.forEach((opt, idx) => {
-      if (idx !== result.correctIndex && result.distractorAnalysis[idx]) {
-        const cleanExplanation = formatDistractorText(result.distractorAnalysis[idx]);
-        distractorsHtml += `<li><strong>Opção ${letters[idx]}:</strong> ${cleanExplanation}</li>`;
+      if (idx !== result.correctIndex) {
+        const daText = result.distractorAnalysis && result.distractorAnalysis[distractorCounter];
+        distractorCounter++;
+        if (daText) {
+          const cleanExplanation = formatDistractorText(daText);
+          distractorsHtml += `<li><strong>Opção ${letters[idx]}:</strong> ${cleanExplanation}</li>`;
+        }
       }
     });
     distractorsHtml += '</ul>';
