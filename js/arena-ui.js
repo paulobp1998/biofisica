@@ -221,6 +221,7 @@ class ArenaUI {
     this.clientRevealQText = document.getElementById('client-reveal-q-text');
     this.clientRevealOptions = document.getElementById('client-reveal-options');
     this.clientRevealExpText = document.getElementById('client-reveal-exp-text');
+    this.clientRevealDistractors = document.getElementById('client-reveal-distractors');
     this.btnHostShowLeaderboard = document.getElementById('btn-host-show-leaderboard');
 
     // Ecrã 6: Leaderboard
@@ -953,14 +954,10 @@ class ArenaUI {
 
       if (this.arenaRevealDistractors) {
         let daHtml = '<strong>Análise das opções incorretas:</strong><ul style="margin: 0.4rem 0 0 1.25rem; font-size: 0.92rem; color: var(--text-secondary);">';
-        let distractorCounter = 0;
         data.question.options.forEach((opt, idx) => {
           if (idx !== data.question.correctIndex) {
-            const daText = data.question.distractorAnalysis && data.question.distractorAnalysis[distractorCounter];
-            distractorCounter++;
-            if (daText) {
-              daHtml += `<li><strong>Opção ${letters[idx]}:</strong> ${daText}</li>`;
-            }
+            const daText = this.getOptionDistractorExplanation(data.question, idx);
+            daHtml += `<li><strong>Opção ${letters[idx]}:</strong> ${daText}</li>`;
           }
         });
         daHtml += '</ul>';
@@ -1089,6 +1086,19 @@ class ArenaUI {
         this.clientRevealExpText.textContent = data.explanation || '';
       }
 
+      // Distratores no Telemóvel do Aluno
+      if (this.clientRevealDistractors) {
+        let daHtml = '<strong style="color: var(--text-secondary); display: block; margin-bottom: 0.3rem;">🔍 Porque estão incorretas as restantes 3 opções:</strong><ul style="margin: 0 0 0 1.15rem; padding: 0; color: var(--text-secondary); line-height: 1.4;">';
+        data.options.forEach((opt, idx) => {
+          if (idx !== data.correctIndex) {
+            const daText = this.getOptionDistractorExplanation(data, idx);
+            daHtml += `<li style="margin-bottom: 0.3rem;"><strong>Opção ${letters[idx]}:</strong> ${daText}</li>`;
+          }
+        });
+        daHtml += '</ul>';
+        this.clientRevealDistractors.innerHTML = daHtml;
+      }
+
       this.showScreen('clientResult');
     });
 
@@ -1111,6 +1121,44 @@ class ArenaUI {
   // =========================================================================
   // Helpers de Renderização
   // =========================================================================
+  getOptionDistractorExplanation(questionObj, optIdx) {
+    if (!questionObj || optIdx === questionObj.correctIndex) return null;
+    const da = questionObj.distractorAnalysis;
+    if (!da) return 'Esta opção é cientificamente incorreta no contexto da questão apresentada.';
+
+    let explanation = null;
+
+    // 1. Array com 4 posições indexado por opção
+    if (Array.isArray(da) && da.length === 4) {
+      explanation = da[optIdx];
+    }
+    // 2. Array com 3 posições (formato bruto na ordem de aparição dos distratores)
+    else if (Array.isArray(da) && da.length === 3) {
+      const dIdx = optIdx > questionObj.correctIndex ? optIdx - 1 : optIdx;
+      explanation = da[dIdx];
+    }
+    // 3. Objeto
+    else if (typeof da === 'object' && !Array.isArray(da)) {
+      const lettersList = ['A', 'B', 'C', 'D'];
+      explanation = da[lettersList[optIdx]] || da[optIdx];
+    }
+
+    // 4. Fallback de proteção
+    if (!explanation && Array.isArray(da) && da.length > 0) {
+      const validItems = da.filter(x => typeof x === 'string' && x.trim().length > 0);
+      if (validItems.length > 0) {
+        const fallbackIdx = optIdx > questionObj.correctIndex ? optIdx - 1 : optIdx;
+        explanation = validItems[fallbackIdx % validItems.length];
+      }
+    }
+
+    if (!explanation || typeof explanation !== 'string') {
+      explanation = 'Esta opção é cientificamente incorreta no contexto da questão apresentada.';
+    }
+
+    return explanation;
+  }
+
   renderLobbyTeams(teams) {
     if (this.arenaTeamsCount) this.arenaTeamsCount.textContent = teams.length;
     if (this.arenaLobbyTeamsGrid) {

@@ -772,6 +772,69 @@ document.addEventListener('DOMContentLoaded', () => {
     btnNext.classList.add('hidden');
   }
 
+  function formatDistractorText(rawText) {
+    if (!rawText) return 'Está incorreta no contexto desta questão.';
+    let t = rawText.trim();
+    // Remover qualquer referência prévia a letras de opções geradas antes do baralhamento
+    t = t.replace(/^(?:As\s+)?Opç(?:ão|ões)\s+[A-D](?:\s*,\s*[A-D])*(?:\s+e\s+(?:Opção\s+)?[A-D])?\s*/i, '');
+    t = t.replace(/^(?:A\s+)?(?:primeira|segunda|terceira)\s+opção\s+(?:incorreta\s+)?/i, '');
+    t = t.replace(/^(?:A\s+)?Opção\s+[A-D]\s*/i, '');
+    t = t.replace(/^(?:Opção\s+incorreta\s*:?\s*)/i, '');
+    t = t.replace(/^[:\-\s]+/, '');
+
+    const matchPq = t.match(/^(?:está\s+(?:in)?correta|está\s+errada|é\s+(?:in)?correta|é\s+falsa|é\s+errada)\s*(?:porque\s+|pois\s+|já\s+que\s+)?(.*)/i);
+    if (matchPq) {
+      const body = matchPq[1].trim();
+      return body ? `Está incorreta porque ${body[0].toLowerCase() + body.slice(1)}` : 'Está incorreta no contexto desta questão.';
+    } else if (/^(?:porque|pois|já que)\s+/i.test(t)) {
+      return `Está incorreta ${t[0].toLowerCase() + t.slice(1)}`;
+    } else if (t.toLowerCase().startsWith('está') || t.toLowerCase().startsWith('é incorreta')) {
+      return t;
+    } else if (t.startsWith('(')) {
+      return `Está incorreta: ${t}`;
+    } else {
+      return `Está incorreta: ${t[0].toLowerCase() + t.slice(1)}`;
+    }
+  }
+
+  function getOptionDistractorExplanation(questionObj, optIdx) {
+    if (optIdx === questionObj.correctIndex) return null;
+    const da = questionObj.distractorAnalysis;
+    if (!da) return 'Esta opção é cientificamente incorreta no contexto da questão apresentada.';
+
+    let explanation = null;
+
+    // 1. Array de 4 posições indexado diretamente por opção (preparado por quizEngine.prepareQuestion, onde a opção correta tem null)
+    if (Array.isArray(da) && da.length === 4) {
+      explanation = da[optIdx];
+    }
+    // 2. Array de 3 posições (formato bruto nativo do banco de dados na ordem de aparição dos distratores)
+    else if (Array.isArray(da) && da.length === 3) {
+      const dIdx = optIdx > questionObj.correctIndex ? optIdx - 1 : optIdx;
+      explanation = da[dIdx];
+    }
+    // 3. Objeto indexado por letras ou números
+    else if (typeof da === 'object' && !Array.isArray(da)) {
+      const lettersList = ['A', 'B', 'C', 'D'];
+      explanation = da[lettersList[optIdx]] || da[optIdx];
+    }
+
+    // 4. Fallback de proteção caso explanation seja nulo/vazio
+    if (!explanation && Array.isArray(da) && da.length > 0) {
+      const validItems = da.filter(x => typeof x === 'string' && x.trim().length > 0);
+      if (validItems.length > 0) {
+        const fallbackIdx = optIdx > questionObj.correctIndex ? optIdx - 1 : optIdx;
+        explanation = validItems[fallbackIdx % validItems.length];
+      }
+    }
+
+    if (!explanation || typeof explanation !== 'string') {
+      explanation = 'Esta opção é cientificamente incorreta no contexto da questão apresentada.';
+    }
+
+    return explanation;
+  }
+
   // Trata a seleção de uma opção
   function handleOptionClick(selectedIndex) {
     const isDelayed = quiz.feedbackMode === 'delayed';
@@ -822,41 +885,12 @@ document.addEventListener('DOMContentLoaded', () => {
       <p><strong>Por que está certa a opção ${correctLetter}:</strong> ${result.explanation}</p>
     `;
 
-    function formatDistractorText(rawText) {
-      if (!rawText) return 'Está incorreta no contexto desta questão.';
-      let t = rawText.trim();
-      // Remover qualquer referência prévia a letras de opções geradas antes do baralhamento
-      t = t.replace(/^(?:As\s+)?Opç(?:ão|ões)\s+[A-D](?:\s*,\s*[A-D])*(?:\s+e\s+(?:Opção\s+)?[A-D])?\s*/i, '');
-      t = t.replace(/^(?:A\s+)?(?:primeira|segunda|terceira)\s+opção\s+(?:incorreta\s+)?/i, '');
-      t = t.replace(/^(?:A\s+)?Opção\s+[A-D]\s*/i, '');
-      t = t.replace(/^(?:Opção\s+incorreta\s*:?\s*)/i, '');
-      t = t.replace(/^[:\-\s]+/, '');
-
-      const matchPq = t.match(/^(?:está\s+(?:in)?correta|está\s+errada|é\s+(?:in)?correta|é\s+falsa|é\s+errada)\s*(?:porque\s+|pois\s+|já\s+que\s+)?(.*)/i);
-      if (matchPq) {
-        const body = matchPq[1].trim();
-        return body ? `Está incorreta porque ${body[0].toLowerCase() + body.slice(1)}` : 'Está incorreta no contexto desta questão.';
-      } else if (/^(?:porque|pois|já que)\s+/i.test(t)) {
-        return `Está incorreta ${t[0].toLowerCase() + t.slice(1)}`;
-      } else if (t.toLowerCase().startsWith('está') || t.toLowerCase().startsWith('é incorreta')) {
-        return t;
-      } else if (t.startsWith('(')) {
-        return `Está incorreta: ${t}`;
-      } else {
-        return `Está incorreta: ${t[0].toLowerCase() + t.slice(1)}`;
-      }
-    }
-
     let distractorsHtml = '<strong>Análise detalhada das restantes opções:</strong><ul>';
-    let distractorCounter = 0;
     result.options.forEach((opt, idx) => {
       if (idx !== result.correctIndex) {
-        const daText = result.distractorAnalysis && result.distractorAnalysis[distractorCounter];
-        distractorCounter++;
-        if (daText) {
-          const cleanExplanation = formatDistractorText(daText);
-          distractorsHtml += `<li><strong>Opção ${letters[idx]}:</strong> ${cleanExplanation}</li>`;
-        }
+        const daText = getOptionDistractorExplanation(result, idx);
+        const cleanExplanation = formatDistractorText(daText);
+        distractorsHtml += `<li><strong>Opção ${letters[idx]}:</strong> ${cleanExplanation}</li>`;
       }
     });
     distractorsHtml += '</ul>';
@@ -981,6 +1015,17 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <div class="review-explanation">
           <p><strong>Por que está certa a opção ${letters[ans.correctIndex]}:</strong> ${ans.explanation}</p>
+        </div>
+        <div class="review-distractors" style="margin-top: 0.5rem; padding-top: 0.5rem; border-top: 1px dashed var(--border-subtle); font-size: 0.88rem; color: var(--text-secondary);">
+          <strong style="color: var(--text-primary); display: block; margin-bottom: 0.35rem;">Por que estão incorretas as restantes 3 opções:</strong>
+          <ul style="margin: 0 0 0 1.25rem; padding: 0;">
+            ${ans.options.map((opt, oIdx) => {
+              if (oIdx === ans.correctIndex) return '';
+              const daText = getOptionDistractorExplanation(ans, oIdx);
+              const cleanExplanation = formatDistractorText(daText);
+              return `<li style="margin-bottom: 0.25rem;"><strong>Opção ${letters[oIdx]}:</strong> ${cleanExplanation}</li>`;
+            }).join('')}
+          </ul>
         </div>
         <div class="review-nursing">
           <p><strong>💡 Relevância em Enfermagem:</strong> ${ans.nursingApplication}</p>
