@@ -64,10 +64,10 @@
     <section id="view-home" class="active-view">
       
       <div class="hero-section">
-        <span class="hero-tag">✨ 100% Gratuito • 1.000 Questões Clínicas Ativas (Tópicos 1 e 2) • Ensino Superior</span>
+        <span class="hero-tag">✨ 100% Gratuito • 500 Questões Clínicas Ativas (Tópico 1) • Ensino Superior</span>
         <h1 class="hero-title">Prática Interativa de Biofísica Médica</h1>
         <p class="hero-desc">
-          Consolida os conteúdos das tuas aulas com <strong>1.000 questões clínicas</strong> rigorosas dos <strong>Tópicos 1 e 2 (Força, Equilíbrio e Alavancas; Elasticidade e Sistema Osteomedular)</strong>, com justificações científicas completas, análise detalhada de distratores e aplicação direta aos cuidados diários de Enfermagem. <em>(Nota: Os tópicos 3 a 8 encontram-se temporariamente bloqueados pelo docente para foco do estudo).</em>
+          Consolida os conteúdos das tuas aulas com <strong>500 questões clínicas</strong> rigorosas do <strong>Tópico 1 (Força, Estado de Equilíbrio e Alavancas)</strong>, com justificações científicas completas, análise detalhada de distratores e aplicação direta aos cuidados diários de Enfermagem. <em>(Nota: Os tópicos 2 a 8 encontram-se temporariamente bloqueados pelo docente para foco do estudo).</em>
         </p>
         <div class="hero-actions">
           <button class="btn btn-primary" id="btn-start-exam">
@@ -95,7 +95,7 @@
           <button class="btn-hero-quick" id="btn-open-worksheet" title="Gerar ficha de perguntas formatada para impressão ou PDF">
             📄 Ficha de Trabalho em PDF
           </button>
-          <button class="btn-hero-quick" id="btn-hero-search" title="Pesquisar no banco ativo de 1.000 questões">
+          <button class="btn-hero-quick" id="btn-hero-search" title="Pesquisar no banco ativo de 500 questões">
             🔍 Glossário & Pesquisa
           </button>
         </div>
@@ -350,8 +350,8 @@
               <label class="arena-label">📚 Tópico Clínico:</label>
               <select class="arena-select" id="arena-config-topic">
                 <option value="1" selected>Tópico 1: Força, Estado de Equilíbrio e Alavancas (500 Questões)</option>
-                <option value="2">Tópico 2: Elasticidade e Sistema Osteomedular (500 Questões)</option>
-                <option value="all">🎯 Todos os Tópicos Ativos (1.000 Questões)</option>
+                <option value="2" disabled>🔒 Tópico 2: Elasticidade e Sistema Osteomedular (Bloqueado pelo Docente)</option>
+                <option value="all">🎯 Todos os Tópicos Ativos (500 Questões do Tópico 1)</option>
               </select>
             </div>
 
@@ -446,16 +446,16 @@
                 <div class="arena-custom-filter-item" style="flex: 1.2; min-width: 240px;">
                   <label for="arena-custom-filter-topic" class="arena-custom-label">📚 Tópico:</label>
                   <select id="arena-custom-filter-topic" class="arena-select">
-                    <option value="all-unlocked" selected>🎯 Tópicos Ativos (1 e 2 - 1.000 Questões)</option>
+                    <option value="all-unlocked" selected>🎯 Tópicos Ativos (Tópico 1 - 500 Questões)</option>
                     <option value="1">Tópico 1: Força, Equilíbrio e Alavancas (500)</option>
-                    <option value="2">Tópico 2: Elasticidade e Sistema Osteomedular (500)</option>
+                    <option value="2">🔒 Tópico 2: Elasticidade e Sistema Osteomedular (500 - Bloqueado aos Alunos)</option>
                     <option value="all">🌐 Banco Integral (Tópicos 1 a 8 - 2.200)</option>
-                    <option value="3">Tópico 3: Hidrostática (200)</option>
-                    <option value="4">Tópico 4: Hidrodinâmica Circulatória (200)</option>
-                    <option value="5">Tópico 5: Radiações e Raios X (200)</option>
-                    <option value="6">Tópico 6: Núcleo e Forças Nucleares (200)</option>
-                    <option value="7">Tópico 7: Partículas α, β e Gama (200)</option>
-                    <option value="8">Tópico 8: Isótopos e Terapêutica (200)</option>
+                    <option value="3">🔒 Tópico 3: Hidrostática (200 - Bloqueado)</option>
+                    <option value="4">🔒 Tópico 4: Hidrodinâmica Circulatória (200 - Bloqueado)</option>
+                    <option value="5">🔒 Tópico 5: Radiações e Raios X (200 - Bloqueado)</option>
+                    <option value="6">🔒 Tópico 6: Núcleo e Forças Nucleares (200 - Bloqueado)</option>
+                    <option value="7">🔒 Tópico 7: Partículas α, β e Gama (200 - Bloqueado)</option>
+                    <option value="8">🔒 Tópico 8: Isótopos e Terapêutica (200 - Bloqueado)</option>
                   </select>
                 </div>
 
@@ -1049,14 +1049,14 @@
         <div class="modal-header">
           <div>
             <h3>🔍 Pesquisa Rápida & Glossário de Biofísica</h3>
-            <p class="modal-subtitle">Pesquisa direta no banco ativo dos Tópicos 1 e 2 (1.000 questões), resumos teóricos, leis físicas e notas clínicas:</p>
+            <p class="modal-subtitle">Pesquisa direta no banco ativo do Tópico 1 (500 questões), resumos teóricos, leis físicas e notas clínicas:</p>
           </div>
           <button class="modal-close" id="btn-close-search-modal" aria-label="Fechar">✕</button>
         </div>
         <div class="modal-body">
           <div class="search-input-box">
             <span class="search-icon">🔍</span>
-            <input type="text" id="search-input" class="search-field" placeholder="Escreve uma palavra-chave (ex: atrito, inércia, equilíbrio, alavanca, Hooke, Young, compressão, torção)..." autocomplete="off">
+            <input type="text" id="search-input" class="search-field" placeholder="Escreve uma palavra-chave (ex: atrito, inércia, equilíbrio, alavanca, braço de força, momento, centro de gravidade)..." autocomplete="off">
           </div>
           <div class="search-results-stats" id="search-results-stats">
             <span id="search-status-text">Digita pelo menos 2 caracteres para pesquisar</span>
@@ -1087,8 +1087,8 @@
             <label for="worksheet-topic-select">Conteúdo / Tópico da Ficha:</label>
             <select id="worksheet-topic-select" class="worksheet-select">
               <option value="1" selected>Tópico 1: Força, Estado de Equilíbrio e Alavancas (Ativo - 500 Questões)</option>
-              <option value="2">Tópico 2: Elasticidade dos Corpos e Sistema Osteomedular (Ativo - 500 Questões)</option>
-              <option value="all">🎯 Simulação Geral (Tópicos 1 e 2 Ativos - 1.000 Questões)</option>
+              <option value="2" disabled>🔒 Tópico 2: Elasticidade dos Corpos e Sistema Osteomedular (Bloqueado pelo Docente)</option>
+              <option value="all">🎯 Simulação Geral (Tópico 1 Ativo - 500 Questões)</option>
               <option value="3" disabled>🔒 Tópico 3: Leis Fundamentais da Hidrostática (Bloqueado)</option>
               <option value="4" disabled>🔒 Tópico 4: Hidrodinâmica e Sistema Circulatório (Bloqueado)</option>
               <option value="5" disabled>🔒 Tópico 5: Radiações, Raios X, Meios de Diagnóstico e Terapêutica (Bloqueado)</option>
@@ -1132,27 +1132,27 @@
 
   <!-- Rodapé -->
   <footer class="footer">
-    <p><strong>BioFísica Médica para o 1.º Ano de Enfermagem</strong> • 1.000 Questões Clínicas Ativas (Tópicos 1 e 2) • Tópicos 3 a 8 Temporariamente Bloqueados pelo Docente</p>
+    <p><strong>BioFísica Médica para o 1.º Ano de Enfermagem</strong> • 500 Questões Clínicas Ativas (Tópico 1) • Tópicos 2 a 8 Temporariamente Bloqueados pelo Docente</p>
     <p style="margin-top: 0.35rem; font-size: 0.8rem;">Plataforma Educativa 100% Gratuita e Acessível • Sem custos de alojamento nem subscrição • Desenvolvido para apoio ao estudo universitário</p>
   </footer>
 
   <!-- Banco de Questões por Tópico (2.200 questões certificadas no total) -->
-  <script src="js/data/topic1.js?v=3.3"></script>
-  <script src="js/data/topic2.js?v=3.3"></script>
-  <script src="js/data/topic3.js?v=3.3"></script>
-  <script src="js/data/topic4.js?v=3.3"></script>
-  <script src="js/data/topic5.js?v=3.3"></script>
-  <script src="js/data/topic6.js?v=3.3"></script>
-  <script src="js/data/topic7.js?v=3.3"></script>
-  <script src="js/data/topic8.js?v=3.3"></script>
-  <script src="js/questions-data.js?v=3.3"></script>
-  <script src="js/quiz-engine.js?v=3.3"></script>
+  <script src="js/data/topic1.js?v=3.4"></script>
+  <script src="js/data/topic2.js?v=3.4"></script>
+  <script src="js/data/topic3.js?v=3.4"></script>
+  <script src="js/data/topic4.js?v=3.4"></script>
+  <script src="js/data/topic5.js?v=3.4"></script>
+  <script src="js/data/topic6.js?v=3.4"></script>
+  <script src="js/data/topic7.js?v=3.4"></script>
+  <script src="js/data/topic8.js?v=3.4"></script>
+  <script src="js/questions-data.js?v=3.4"></script>
+  <script src="js/quiz-engine.js?v=3.4"></script>
 
   <!-- Arena BioFísica (Multiplayer em Tempo Real na Aula - 100% Gratuito) -->
   <script src="js/lib/paho-mqtt.min.js"></script>
-  <script src="js/arena-network.js?v=3.3"></script>
-  <script src="js/arena-engine.js?v=3.3"></script>
-  <script src="js/arena-ui.js?v=3.3"></script>
-  <script src="js/app.js?v=3.3"></script>
+  <script src="js/arena-network.js?v=3.4"></script>
+  <script src="js/arena-engine.js?v=3.4"></script>
+  <script src="js/arena-ui.js?v=3.4"></script>
+  <script src="js/app.js?v=3.4"></script>
 </body>
 </html>

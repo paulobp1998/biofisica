@@ -1341,7 +1341,8 @@ class ArenaUI {
     return this.allQuestionsPool.filter(q => {
       // 1. Filtro por Tópico
       if (topicFilter === 'all-unlocked') {
-        if (q.topicId !== 1 && q.topicId !== 2) return false;
+        const unlocked = typeof UNLOCKED_TOPIC_IDS !== 'undefined' ? UNLOCKED_TOPIC_IDS : [1];
+        if (!unlocked.includes(q.topicId)) return false;
       } else if (topicFilter !== 'all') {
         if (q.topicId != topicFilter) return false;
       }
@@ -1440,8 +1441,9 @@ class ArenaUI {
 
     // Atualizar contadores das abas
     if (this.countTabAll) {
+      const unlocked = typeof UNLOCKED_TOPIC_IDS !== 'undefined' ? UNLOCKED_TOPIC_IDS : [1];
       const poolSize = this.customFilterTopic === 'all-unlocked' 
-        ? this.allQuestionsPool.filter(q => q.topicId === 1 || q.topicId === 2).length 
+        ? this.allQuestionsPool.filter(q => unlocked.includes(q.topicId)).length 
         : (this.customFilterTopic === 'all' ? this.allQuestionsPool.length : this.allQuestionsPool.filter(q => q.topicId == this.customFilterTopic).length);
       this.countTabAll.textContent = poolSize;
     }

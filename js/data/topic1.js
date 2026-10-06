@@ -2,7 +2,6 @@
  * BANCO DE QUESTÕES CERTIFICADAS - TÓPICO 1
  * Força, Estado de Equilíbrio, Equilíbrio de Forças e Alavancas
  * Alinhado estritamente com os 105 slides do PowerPoint (1BF)
- * Inclui Força Normal (Slides 33-36 e 59); Sem Lesões por Pressão
  * Total de Questões: 500
  */
 
@@ -29,40 +28,40 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1002,
     "topicId": 1,
-    "question": "Na extensão ativa da perna sobre a coxa, como atua o tendão do quadríceps na transmissão de força ao joelho?",
+    "question": "Na análise de uma alavanca anatómica, qual é a definição biofísica de \"Braço de Potência\" (bp)?",
     "options": [
-      "Transmite a força de contração do músculo quadríceps através da patela e do ligamento patelar à tuberosidade anterior da tíbia.",
-      "Puxa diretamente a apófise coracoide da escápula para fletir o membro inferior no plano coronal.",
-      "Empurra ativamente o astrágalo contra o maléolo lateral da fíbula para travar a rotação da tíbia.",
-      "Gera uma força eletromagnética repulsiva entre o fémur e a tíbia que dispensa a existência de contacto ósseo."
+      "A distância perpendicular medida entre a linha de ação da força potente (contração muscular) e o eixo de rotação (fulcro articular).",
+      "A massa total em quilogramas do segmento ósseo que é acelerado durante o movimento articular.",
+      "O comprimento total do osso medido entre as suas duas extremidades epifisárias articulares.",
+      "A velocidade máxima com que a extremidade do membro se desloca durante a rotação."
     ],
     "correctIndex": 0,
-    "explanation": "O quadríceps traciona a patela, que funciona como uma polia biomecânica aumentando o braço de alavanca sobre a tíbia.",
+    "explanation": "O braço de potência (bp) é a distância perpendicular da linha de ação da força potente ao fulcro. Determina o momento rotacional (M = Fp · bp) produzido pelo músculo.",
     "distractorAnalysis": [
-      "Está incorreta: A apófise coracoide localiza-se na escápula (membro superior), sem relação com o joelho ou quadríceps.",
-      "Está incorreta: O astrágalo (tálus) pertence ao tornozelo e não é o local de inserção do aparelho extensor do joelho.",
-      "Está incorreta: A articulação do joelho opera por forças mecânicas de contacto articular e tração tendinosa direta."
+      "Está incorreta: a massa do segmento é uma grandeza inercial escalar (kg) e não uma distância perpendicular (m).",
+      "Está incorreta: o comprimento total do osso não coincide necessariamente com o braço de alavanca perpendicular.",
+      "Está incorreta: a velocidade de deslocamento é uma grandeza cinemática e não uma dimensão geométrica da alavanca."
     ],
-    "nursingApplication": "Avaliar a extensão do joelho permite ao enfermeiro verificar a estabilidade do utente antes de autorizar o levante."
+    "nursingApplication": "Compreender os braços de alavanca permite ao enfermeiro reconhecer em que posições articulares o corpo tem maior facilidade mecânica para mobilizar cargas."
   },
   {
     "id": 1003,
     "topicId": 1,
-    "question": "Qual é o papel biomecânico da patela (rótula) como osso sesamóide incorporado no tendão do quadríceps?",
+    "question": "Em termos biofísicos, qual é a principal vantagem mecânica de uma Alavanca de 1.ª Classe (Interfixa) em equilíbrio estático?",
     "options": [
-      "Reduz a massa inercial total da perna para anular a 1.ª Lei de Newton durante a fase de balanço da marcha.",
-      "Afasta a linha de ação do tendão do centro de rotação articular, aumentando o braço de alavanca e o momento da força extensora.",
-      "Transforma a contração muscular em calor térmico para manter a temperatura do líquido sinovial a 42 °C.",
-      "Impede que a força muscular seja transmitida à tíbia, protegendo o menisco de qualquer sobrecarga axial."
+      "Anular integralmente a gravidade terrestre e dispensar o apoio de qualquer ponto de rotação articular.",
+      "Permitir o equilíbrio estável entre forças opostas com o fulcro posicionado entre os pontos de aplicação da potência e da resistência.",
+      "Garantir que a força potente necessária seja sempre inferior a 1% da força resistente, independentemente dos braços de alavanca.",
+      "Multiplicar instantaneamente a massa inercial do corpo humano para impedir qualquer aceleração involuntária."
     ],
     "correctIndex": 1,
-    "explanation": "Ao projetar o tendão para a frente, a patela aumenta a distância perpendicular (braço b) ao fulcro, ampliando o torque extensor.",
+    "explanation": "Na alavanca de 1.ª classe (interfixa), o ponto de apoio (fulcro) situa-se entre a força potente e a força resistente (F - PA - R), permitindo o equilíbrio estático do sistema (∑M = 0).",
     "distractorAnalysis": [
-      "Está incorreta: A patela não reduz a massa inercial nem anula leis fundamentais da física como a inércia.",
-      "Está incorreta: A função da patela é mecânica de polia articular e não um aquecedor para elevar a temperatura a 42 °C.",
-      "Está incorreta: A patela transmite eficientemente a força do quadríceps à tíbia através do ligamento patelar."
+      "Está incorreta: as alavancas operam sob as leis da gravidade e exigem obrigatoriamente um fulcro para haver equilíbrio de momentos.",
+      "Está incorreta: a relação de forças depende estritamente da razão entre os braços (Fp · bp = Fr · br), não sendo sempre inferior a 1%.",
+      "Está incorreta: as alavancas mecânicas transmitem momentos de força, não alterando a massa inercial do corpo."
     ],
-    "nursingApplication": "A patela permite que o quadríceps exerça grande momento de extensão do joelho com menor custo de esforço muscular."
+    "nursingApplication": "O modelo de alavanca interfixa exemplifica como os músculos da nuca equilibram o peso da cabeça sobre a coluna vertebral com mínimo dispêndio de energia."
   },
   {
     "id": 1004,
@@ -770,59 +769,59 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1041,
     "topicId": 1,
-    "question": "Que papel desempenha a rótula (patela) na biomecânica da alavanca do joelho?",
+    "question": "Na biomecânica do corpo humano, como se caracteriza a Alavanca de 2.ª Classe (Inter-resistente) quanto à sua Vantagem Mecânica (VM)?",
     "options": [
-      "Atua como um batente mecânico rígido que bloqueia a extensão aos 90 graus, reduzindo deliberadamente o braço potente do quadríceps para evitar sobrecarga nos ligamentos cruzados.",
-      "Converte a articulação do joelho numa alavanca inter-resistente pura, ancorando o peso do fémur diretamente no menisco medial para dispensar a contração contínua do quadríceps.",
-      "Atua como uma 'roldana anatómica' que afasta o tendão patelar do eixo de rotação articular, aumentando o braço de alavanca potente (bp) do quadríceps e maximizando o seu torque extensor.",
-      "Funciona como um amortecedor hidrostático que elimina as forças de compressão articular, transferindo toda a carga gravitacional diretamente para a pele da face anterior do joelho."
+      "Apresenta sempre Vantagem Mecânica superior a 1 (VM > 1), porque o braço de potência é sempre maior do que o braço de resistência (bp > br).",
+      "Apresenta sempre Vantagem Mecânica inferior a 1 (VM < 1), exigindo sempre forças musculares três vezes maiores do que a carga.",
+      "Apresenta Vantagem Mecânica nula (VM = 0), impossibilitando a realização de qualquer trabalho mecânico útil.",
+      "Possui Vantagem Mecânica infinita, dispensando a aplicação de qualquer força para erguer o peso corporal."
     ],
-    "correctIndex": 2,
-    "explanation": "A patela projeta a linha de ação do ligamento patelar para a frente, aumentando a distância perpendicular ao fulcro e tornando o quadríceps significativamente mais eficiente.",
+    "correctIndex": 0,
+    "explanation": "Nas alavancas de 2.ª classe (PA - R - F), a resistência situa-se entre o fulcro e a potência. Como bp > br, a vantagem mecânica é sempre superior a 1 (VM = bp / br > 1), proporcionando vantagem de força.",
     "distractorAnalysis": [
-      "Está incorreta: a patela aumenta o braço de alavanca e a eficácia mecânica do quadríceps, não funcionando como travão limitador da extensão.",
-      "Está incorreta: o joelho permanece uma alavanca de 3.ª classe interpotente; a patela atua como roldana anatómica móvel sem alterar a classe mecânica.",
-      "Está incorreta: a patela suporta elevadas forças compressivas retropatelares e não elimina a transmissão de carga mecânica entre o fémur e a tíbia."
+      "Está incorreta: a vantagem mecânica inferior a 1 é a característica definidora das alavancas de 3.ª classe (interpotentes).",
+      "Está incorreta: uma alavanca funcional possui vantagem mecânica positiva (VM > 0), permitindo equilibrar momentos de força.",
+      "Está incorreta: nenhuma máquina real possui vantagem infinita; a força necessária é reduzida mas finita e proporcional a br / bp."
     ],
-    "nursingApplication": "Conceito elegante de biomecânica músculo-esquelética sobre a função mecânica dos ossos sesamoides."
+    "nursingApplication": "A alavanca de 2.ª classe explica como o apoio na ponta dos pés permite elevar todo o peso do corpo com uma força muscular relativa menor."
   },
   {
     "id": 1042,
     "topicId": 1,
-    "question": "Na mastigação, a mandíbula humana articula-se na articulação têmporo-mandibular (ATM) e funciona como uma alavanca de que classe quando os músculos masseter e temporal se contraem?",
+    "question": "Por que razão a quase totalidade das alavancas musculoesqueléticas do corpo humano pertence à 3.ª Classe (Interpotente)?",
     "options": [
-      "Alavanca de 1.ª classe (interfixa), onde os dentes molares atuam como ponto de apoio central, a força potente é exercida na sínfise do queixo e a resistência articular localiza-se posteriormente na ATM.",
-      "Alavanca de 3.ª classe (interpotente), onde o fulcro é a ATM, a força potente é aplicada pelos músculos mastigatórios (masseter/temporal) no ramo ascendente da mandíbula, e a resistência está nos dentes.",
-      "Alavanca de 2.ª classe (inter-resistente), onde o fulcro é a ATM, a resistência dos alimentos situa-se no ramo mandibular e a força potente é aplicada na extremidade anterior do queixo pelo platisma.",
-      "Alavanca de 1.ª classe dupla, onde a articulação atlanto-occipital atua como fulcro comum, os músculos masseteres como resistência e a compressão oclusal nos dentes incisivos como força motora primária."
+      "Porque permite multiplicar a força muscular por dez vezes à custa da perda total de velocidade e amplitude.",
+      "Porque, apesar de exigir maior força muscular (VM < 1), proporciona grande velocidade angular e ampla amplitude de movimento das extremidades.",
+      "Porque elimina o atrito articular entre as superfícies ósseas e anula o efeito da aceleração gravítica.",
+      "Porque converte a contração muscular em calor térmico para aquecer os membros periféricos no repouso."
     ],
     "correctIndex": 1,
-    "explanation": "A ATM é posterior, o músculo masseter puxa para cima no meio (ramo mandibular), e o alimento oferece resistência nos dentes molares e incisivos mais à frente.",
+    "explanation": "As alavancas de 3.ª classe (PA - F - R) têm bp < br (VM < 1). Sacrificam força (o músculo tem de exercer forças elevadas), mas amplificam grandemente o deslocamento e a velocidade da extremidade do membro.",
     "distractorAnalysis": [
-      "Está incorreta: o fulcro anatómico situa-se posteriormente na ATM e os dentes constituem o ponto de aplicação da resistência aos alimentos.",
-      "Está incorreta: a força potente é aplicada no ramo mandibular pelos músculos mastigatórios (entre o fulcro na ATM e a resistência nos dentes).",
-      "Está incorreta: a mandíbula articula-se na ATM e atua como alavanca interpotente simples de 3.ª classe no encerramento da boca contra o alimento."
+      "Está incorreta: a alavanca de 3.ª classe não multiplica a força; exige força superior à resistência para compensar o braço potente mais curto.",
+      "Está incorreta: a classe da alavanca diz respeito à disposição geométrica de fulcro e forças, não à anulação do atrito ou da gravidade.",
+      "Está incorreta: a finalidade biomecânica primária da alavanca é a produção de movimento articular útil com velocidade e amplitude."
     ],
-    "nursingApplication": "Aplica as classes de alavancas a um sistema orofacial crucial na nutrição e cuidados de saúde."
+    "nursingApplication": "Compreender que o corpo humano privilegia a amplitude e velocidade ajuda o enfermeiro a entender por que razão levantar cargas pesadas gera tensões internas tão elevadas nas articulações."
   },
   {
     "id": 1043,
     "topicId": 1,
-    "question": "Qual é o movimento articular complexo que a ATM combina para além da simples rotação de alavanca?",
+    "question": "Quais são as duas condições fundamentais da Mecânica clássica para que um corpo rígido se encontre em equilíbrio estático absoluto?",
     "options": [
-      "Translação vertical descendente pura de ambos os côndilos mandibulares ao longo dos ramos da mandíbula, sem qualquer componente de rotação articular angular.",
-      "Combina rotação pura na cavidade inferior com translação anterior (deslizamento do côndilo para a frente) na cavidade superior, permitindo a abertura ampla da boca.",
-      "Circundução esferoidal completa em 360 graus na cavidade glenoideia, idêntica ao mecanismo biomecânico da articulação coxofemoral durante a locomoção bípede.",
-      "Cisalhamento lateral puro acompanhado pelo deslocamento posterior permanente do menisco articular, que bloqueia o movimento condilar após a primeira mastigação."
+      "A força resultante deve ser igual a 100 N e a aceleração gravitacional deve ser orientada horizontalmente.",
+      "A resultante de todas as forças deve ser nula (∑F = 0) e a soma de todos os momentos de força em relação a qualquer ponto deve ser nula (∑M = 0).",
+      "A velocidade vetorial do corpo deve ser crescente e a massa deve diminuir linearmente ao longo do tempo.",
+      "O atrito estático deve ser rigorosamente zero e a força normal deve atuar paralelamente à superfície de apoio."
     ],
     "correctIndex": 1,
-    "explanation": "A ATM é uma articulação sinovial bicondilar complexa do tipo gínglimo-artrodial (dobradiça e deslizamento).",
+    "explanation": "O equilíbrio estático exige: 1.ª Condição de Equilíbrio (translacional: ∑F = 0) e 2.ª Condição de Equilíbrio (rotacional: ∑M = 0).",
     "distractorAnalysis": [
-      "Está incorreta: a abertura da boca inicia-se com rotação pura condilar na cavidade inframeniscal antes de ocorrer a translação condilar anterior.",
-      "Está incorreta: a ATM é uma articulação sinovial bicondilar (gínglimo-artrodial) e não uma enartrose esferoidal como a anca ou o ombro.",
-      "Está incorreta: o disco articular move-se harmoniosamente com o côndilo sem cisalhamento lesivo ou bloqueio permanente na abertura fisiológica."
+      "Está incorreta: se a força resultante fosse 100 N, o corpo sofreria aceleração linear (a = F/m), violando o equilíbrio estático.",
+      "Está incorreta: velocidade crescente implica aceleração diferente de zero, situação incompatível com o estado de repouso ou MRU.",
+      "Está incorreta: o atrito e a força normal participam no equilíbrio; a normal atua sempre perpendicularmente à superfície de apoio."
     ],
-    "nursingApplication": "Compreensão aprofundada da cinemática mandibular nos cuidados de saúde e alimentação assistida."
+    "nursingApplication": "Estas duas condições regem o posicionamento de utentes acamados ou sentados, garantindo que não escorregam (translação) nem tombam (rotação)."
   },
   {
     "id": 1044,
@@ -1948,21 +1947,21 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1103,
     "topicId": 1,
-    "question": "Que estrutura óssea serve de referência anatómica direta para localizar a segunda vértebra sagrada (S2) na palpação da coluna?",
+    "question": "Em termos biofísicos, como se define o Centro de Gravidade (CG) do corpo humano?",
     "options": [
-      "O bordo superior da sínfise púbica palpável na linha média anterior da bacia durante o exame físico abdominal do utente acamado.",
-      "A apófise espinhosa da sétima vértebra cervical saliente na base posterior do pescoço aquando da flexão da coluna vertebral.",
-      "As cristas ilíacas superiores no ponto mais alto da cintura pélvica que se correlacionam habitualmente com o espaço discal L4-L5.",
-      "As espinhas ilíacas póstero-superiores (EIPS), identificáveis visualmente pelas 'covinhas de Vénus' na região lombar baixa/sagrada."
+      "O ponto anatómico no interior do crânio onde se concentra todo o pensamento motor voluntário.",
+      "O ponto geométrico onde se pode considerar concentrada toda a massa do corpo para efeitos de ação da força peso da gravidade.",
+      "A área delimitada pelos limites externos dos pés em contacto direto com o piso hospitalar.",
+      "O ponto de máxima pressão arterial sistólica medido na circulação arterial sistémica periférica."
     ],
-    "correctIndex": 3,
-    "explanation": "Uma linha horizontal imaginária unindo as duas espinhas ilíacas póstero-superiores passa exatamente pelo nível da vértebra sagrada S2.",
+    "correctIndex": 1,
+    "explanation": "O Centro de Gravidade (CG) é o ponto de aplicação da força gravítica resultante (peso) sobre o corpo humano. No adulto em posição anatómica ereta, situa-se no interior da bacia, logo à frente da 2.ª vértebra sagrada (S2).",
     "distractorAnalysis": [
-      "Está incorreta: A sínfise púbica localiza-se na face anterior da bacia e não permite referenciar as vértebras sagradas posteriores.",
-      "Está incorreta: A apófise de C7 situa-se na transição cervicotorácica e não na região sagrada da coluna vertebral.",
-      "Está incorreta: O nível das cristas ilíacas (linha de Tuffier) corresponde à vértebra L4, enquanto S2 é referenciada pelas EIPS."
+      "Está incorreta: o cérebro processa o controlo motor, mas não é o ponto de aplicação da resultante gravítica corporal.",
+      "Está incorreta: a área delimitada pelo contacto dos pés é a Base de Sustentação (BS), não o Centro de Gravidade.",
+      "Está incorreta: a pressão arterial é uma grandeza hidrodinâmica circulatória, sem relação com a definição do Centro de Gravidade."
     ],
-    "nursingApplication": "Conhecimento de palpação anatómica e marcos de superfície de grande utilidade clínica."
+    "nursingApplication": "Localizar e controlar a posição do CG do utente e do próprio profissional é o pilar de todas as técnicas seguras de mobilização e levante em enfermagem."
   },
   {
     "id": 1104,
@@ -2480,21 +2479,21 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1131,
     "topicId": 1,
-    "question": "Que papel desempenha o músculo braquial anterior em conjunto com o bíceps na flexão do cotovelo?",
+    "question": "Na flexão do antebraço (alavanca de 3.ª classe com o cotovelo como fulcro), se a carga na mão estiver a 30 cm do fulcro e a força potente muscular atuar a 5 cm do fulcro, que força muscular é necessária para sustentar uma carga de 40 N em equilíbrio horizontal?",
     "options": [
-      "Atua como antagonista extensor do cotovelo, travando a aceleração da flexão gerada pela contração primária do bíceps.",
-      "Funciona como músculo supinador acessório que só gera força de flexão quando o antebraço se encontra em pronação neutra.",
-      "É o flexor primário do cotovelo, inserindo-se na ulna e atuando também como alavanca de 3.ª classe com tração mecânica direta.",
-      "Atua como alavanca de 1.ª classe ao empurrar o olecrano posteriormente a partir da face dorsal da articulação umeroulnar."
+      "240 N, porque o braço de potência curto exige uma força muscular seis vezes superior à carga para igualar os momentos (Fp · 5 = 40 · 30).",
+      "6,67 N, porque as alavancas corporais reduzem sempre a força necessária em seis vezes.",
+      "40 N, porque na posição horizontal a força muscular é sempre exatamente igual ao peso da carga.",
+      "0 N, porque o cotovelo suporta todo o peso sem necessidade de qualquer contração muscular."
     ],
-    "correctIndex": 2,
-    "explanation": "O braquial anterior é um potente flexor interpotente que gera torque em conjunto com o bíceps e o braquiorradial.",
+    "correctIndex": 0,
+    "explanation": "Pelo equilíbrio de momentos: Fp · bp = Fr · br => Fp · 5 = 40 · 30 => Fp · 5 = 1200 => Fp = 240 N. A força muscular necessária é 6 vezes maior do que a carga.",
     "distractorAnalysis": [
-      "Está incorreta: o braquial anterior é agonista flexor (e não antagonista extensor), colaborando diretamente na flexão da articulação.",
-      "Está incorreta: ao inserir-se na ulna (que não roda durante a pronação/supinação), o braquial flexiona o cotovelo em qualquer posição do antebraço.",
-      "Está incorreta: o braquial situa-se na face anterior do braço e traciona anteriormente a ulna (alavanca de 3.ª classe), e não posteriormente."
+      "Está incorreta: 6,67 N seria o resultado se o braço de potência fosse 30 cm e o de resistência 5 cm (alavanca de 2.ª classe invertida).",
+      "Está incorreta: a força só seria igual a 40 N se os dois braços fossem idênticos (bp = br).",
+      "Está incorreta: sem contração muscular, o momento da carga faria o antebraço cair em extensão por ação da gravidade."
     ],
-    "nursingApplication": "Complementa a anatomia funcional das alavancas do membro superior."
+    "nursingApplication": "Demonstra o esforço muscular interno acrescido necessário para sustentar doentes ou materiais com os braços fletidos."
   },
   {
     "id": 1132,
@@ -2841,21 +2840,21 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1150,
     "topicId": 1,
-    "question": "Quando o joelho flete além de 90° num agachamento profundo sob carga, que força biomecânica sofre um aumento exponencial?",
+    "question": "Quando uma pessoa realiza uma flexão acentuada dos joelhos (agachamento profundo) sustentando uma carga, que efeito biomecânico ocorre na força de reação articular nos joelhos?",
     "options": [
-      "A força de tração longitudinal no ligamento colateral medial, que é excessivamente distendida pelo alargamento do espaço articular medial sob a carga do tronco.",
-      "A força de cisalhamento no tendão de Aquiles, decorrente do escorregamento anterior da tíbia sobre o tálus sob o peso corporal na descida profunda da bacia.",
-      "A força de atrito viscoso gerada pelo líquido sinovial, que endurece a articulação para travar passivamente a flexão e proteger os meniscos fibrocartilagíneos.",
-      "A força de compressão retropatelar (entre a face posterior da patela e a tróclea femoral), devida ao vetor resultante da tração combinada do quadríceps e do tendão patelar."
+      "A força de reação e compressão articular aumenta consideravelmente devido ao aumento do momento gerado pelo peso corporal e à forte tração dos músculos extensores.",
+      "A força articular anula-se completamente, fazendo com que a gravidade deixe de atuar sobre as pernas.",
+      "A força de atrito estático com o solo transforma-se instantaneamente em aceleração angular infinita.",
+      "A massa corporal do indivíduo dissipa-se para zero à medida que o centro de gravidade se aproxima do chão."
     ],
-    "correctIndex": 3,
-    "explanation": "Em flexões superiores a 90°, a componente resultante empurra a patela contra o fémur com forças que podem superar 5 a 7 vezes o peso corporal, recomendando-se fletir os joelhos até cerca de 90°.",
+    "correctIndex": 0,
+    "explanation": "À medida que o joelho flete sob carga, o braço de alavanca do peso corporal aumenta em relação ao fulcro articular, exigindo forças musculares muito mais elevadas para travar a queda, o que amplifica dramaticamente as forças compressivas articulares de contacto.",
     "distractorAnalysis": [
-      "Está incorreta: a força com aumento mais crítico e clinicamente documentado no agachamento profundo é a compressão retropatelar e não a tração colateral.",
-      "Está incorreta: o tendão de Aquiles atua no tornozelo e pé; a sobrecarga articular crítica na flexão acentuada do joelho concentra-se na articulação patelofemoral.",
-      "Está incorreta: o líquido sinovial proporciona lubrificação hidrodinâmica eficaz e não atua como travão viscoso rígido no agachamento profundo."
+      "Está incorreta: as forças articulares aumentam significativamente em vez de se anularem; a gravidade atua continuamente.",
+      "Está incorreta: o atrito estático com o piso garante a aderência dos pés e não gera aceleração infinita.",
+      "Está incorreta: a massa do corpo é rigorosamente constante e não se dissipa com a descida do centro de gravidade."
     ],
-    "nursingApplication": "Refinamento técnico sobre os limites de segurança da flexão dos joelhos no trabalho hospitalar."
+    "nursingApplication": "Ao mobilizar utentes, o enfermeiro deve evitar agachamentos profundos excessivos (>90°), optando por flexões moderadas para proteger as articulações dos membros inferiores."
   },
   {
     "id": 1151,
@@ -4118,7 +4117,7 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Localiza-se no manúbrio esternal ao nível de T2, representando o ponto de maior pressão hidrostática dos grandes vasos.",
       "Localiza-se no plano sagital mediano anteriormente à segunda vértebra sagrada (S2), sendo o ponto de aplicação do peso corporal total.",
-      "Localiza-se exatamente entre as duas rótulas dos joelhos, representando o ponto de equilíbrio de translação da marcha.",
+      "Localiza-se na base de sustentação entre os dois pés, representando o ponto de equilíbrio de translação da marcha.",
       "Localiza-se no forímen magno da base do crânio, sendo o centro de comando neuromotor das respostas de endireitamento."
     ],
     "correctIndex": 1,
@@ -4668,7 +4667,7 @@ const TOPIC_1_QUESTIONS = [
     "question": "Como é que o enfermeiro e um colega podem reposicionar para trás na poltrona um doente que escorregou para a frente sem lesar a sua coluna?",
     "options": [
       "Puxando o doente unicamente pelas axilas para cima a partir de trás da poltrona com as costas do enfermeiro totalmente arqueadas e as pernas retas sem apoio de auxiliares de marcha.",
-      "Pedindo ao utente para inclinar o tronco subitamente para a frente enquanto um único profissional empurra as suas rótulas com força contra o fundo do assento da poltrona hospitalar.",
+      "Pedindo ao utente para inclinar o tronco subitamente para a frente enquanto um único profissional empurra as suas pernas com força contra o fundo do assento da poltrona hospitalar.",
       "Colocando-se um de cada lado, fletindo os joelhos e utilizando uma tela de deslizamento ou lençol sob a bacia para erguer e deslocar o doente para trás num movimento coordenado e ritmado.",
       "Inclinando a poltrona para trás a noventa graus até que o doente fique de cabeça para baixo, deixando que o peso do tronco faça a bacia deslizar espontaneamente por pura inércia."
     ],
@@ -4676,7 +4675,7 @@ const TOPIC_1_QUESTIONS = [
     "explanation": "Erguer suavemente alivia a força normal e elimina o atrito de cisalhamento, permitindo que a bacia encaixe no fundo do assento sem sobrecarga lombar para a equipa.",
     "distractorAnalysis": [
       "Está incorreta: puxar pelas axilas gera risco de lesão no plexo braquial e ombros do doente, além de sobrecarregar com torque perigoso a coluna do enfermeiro.",
-      "Está incorreta: empurrar diretamente os joelhos causa dor, lesões fémoro-patelares e atrito de cisalhamento na pele da bacia contra o tecido do assento.",
+      "Está incorreta: empurrar diretamente os joelhos causa dor, lesões articulares e atrito de cisalhamento na pele da bacia contra o tecido do assento.",
       "Está incorreta: bascular bruscamente uma poltrona para trás sem controlo expõe o doente a trauma craniano, alterações de pressão súbitas e pânico."
     ],
     "nursingApplication": "Ensina o procedimento correto de reposicionamento ergonómico em poltronas e cadeirões hospitalares."
@@ -5026,21 +5025,21 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1265,
     "topicId": 1,
-    "question": "Se o músculo quadríceps exercer uma força de tração de 800 N no tendão patelar, que grandeza vetorial atua na tuberosidade tibial?",
+    "question": "Se uma força muscular de tração de 800 N atuar sobre um segmento ósseo através de um tendão, que elementos caracterizam rigorosamente esta grandeza vetorial na Biofísica?",
     "options": [
-      "Uma pressão puramente escalar de 800 Pa espalhada aleatoriamente por todos os ossos do pé e tarso.",
-      "Uma quantidade de matéria inercial de 800 kg adicionada transitoriamente à tíbia durante a contração muscular.",
-      "Uma força vetorial de 800 N com ponto de aplicação na tuberosidade da tíbia, orientada ao longo do ligamento patelar.",
-      "Um momento nulo que impede qualquer rotação ou movimento da perna em relação à articulação do joelho."
+      "Apenas um valor escalar positivo de 800 N, prescindindo de direção, sentido ou ponto de aplicação.",
+      "Módulo (800 N), direção (linha de ação do tendão), sentido (para o ventre muscular) e ponto de aplicação (inserção no osso).",
+      "Uma grandeza adimensional sem unidade que apenas descreve a cor e consistência do tecido biológico.",
+      "Uma grandeza dependente exclusivamente da pressão barométrica atmosférica medida na sala de internamento."
     ],
-    "correctIndex": 2,
-    "explanation": "A força muscular transmite-se através do tendão patelar, atuando como um vetor de 800 N no ponto de inserção tibial.",
+    "correctIndex": 1,
+    "explanation": "Uma força é uma grandeza vetorial definida rigorosamente por quatro elementos: módulo ou intensidade (ex: 800 N), direção (reta suporte), sentido (orientação) e ponto de aplicação (local anatómico onde a força é exercida).",
     "distractorAnalysis": [
-      "Está incorreta: 800 N é uma força em Newtons; a pressão é a força dividida pela área de inserção (em Pascais).",
-      "Está incorreta: A força muscular não altera a massa óssea da tíbia nem acrescenta matéria ao esqueleto.",
-      "Está incorreta: A força atua fora do eixo articular do joelho, gerando um momento extensor não nulo (M = F·b)."
+      "Está incorreta: grandezas vetoriais como a força exigem obrigatoriamente direção, sentido e ponto de aplicação, além do módulo escalar.",
+      "Está incorreta: a força possui unidade SI fundamental (Newton, N = kg·m/s²) e representa uma interação mecânica real.",
+      "Está incorreta: a força muscular interna depende da ativação neuromotora e não da pressão atmosférica ambiente."
     ],
-    "nursingApplication": "Esta tração permite esticar o joelho e sustentar o peso corporal do utente na transição de sentado para de pé."
+    "nursingApplication": "Compreender os vetores de força permite aos enfermeiros orientar corretamente talas, trações ortopédicas e linhas de puxamento em transferências."
   },
   {
     "id": 1266,
@@ -5710,21 +5709,21 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1301,
     "topicId": 1,
-    "question": "De acordo com a definição científica apresentada na anatomia funcional, o que é biologicamente e mecanicamente um Tendão?",
+    "question": "Qual é a função biofísica primordial da estrutura tendinosa que conecta um músculo ao esqueleto rígido?",
     "options": [
-      "Uma estrutura óssea rígida altamente mineralizada cuja função exclusiva é produzir glóbulos vermelhos.",
-      "Uma membrana epitelial flexível que reveste a cavidade pleural para anular o atrito respiratório.",
-      "Um feixe de fibras nervosas motoras mielinizadas encarregue de conduzir potenciais de ação pós-sinápticos.",
-      "Um tecido conjuntivo fibroso e resistente que conecta funcionalmente um músculo a uma peça óssea."
+      "Produzir atrito cinético máximo para travar permanentemente qualquer movimento articular.",
+      "Transmitir a força de tração gerada pela contração muscular à alavanca óssea, permitindo a produção de momento rotacional articular.",
+      "Anular as forças gravitacionais e converter a energia mecânica em radiação eletromagnética ionizante.",
+      "Armazenar todo o oxigénio corporal para abastecer os eritrócitos durante a fase de repouso noturno."
     ],
-    "correctIndex": 3,
-    "explanation": "Define-se formalmente: 'Tendão: Tecido conjuntivo que conecta um músculo a um osso', transmitindo força mecânica.",
+    "correctIndex": 1,
+    "explanation": "O tendão atua como um elemento mecânico transmissor de tração: transfere a força gerada pelo encurtamento das fibras musculares para o osso, gerando momento e rotação em torno do fulcro articular.",
     "distractorAnalysis": [
-      "Está incorreta: Estruturas mineralizadas que produzem eritrócitos são ossos esponjosos com medula óssea, não tendões.",
-      "Está incorreta: A membrana que reveste a cavidade pleural é a pleura serosa parietal e visceral, não um tendão.",
-      "Está incorreta: Feixes de fibras mielinizadas são nervos periféricos do sistema nervoso, não tendões conectivos."
+      "Está incorreta: as articulações e tendões minimizam o atrito através de bainhas sinoviais para maximizar o rendimento mecânico.",
+      "Está incorreta: os tendões operam por mecânica newtoniana clássica, sem envolver radiação eletromagnética ou anulação da gravidade.",
+      "Está incorreta: o oxigénio é transportado pela hemoglobina no sangue e armazenado no músculo pela mioglobina, não nos tendões."
     ],
-    "nursingApplication": "O enfermeiro deve compreender que a integridade dos tendões é essencial para que a força muscular seja transmitida ao esqueleto."
+    "nursingApplication": "A compreensão da transmissão de força mecânica pelos tendões é fundamental para avaliar limitações motoras e pós-operatórios ortopédicos."
   },
   {
     "id": 1302,
@@ -5748,59 +5747,59 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1303,
     "topicId": 1,
-    "question": "Num doente com fraqueza marcada do quadríceps pós-cirurgia, que dificuldade biomecânica direta é esperada na locomoção?",
+    "question": "Quando um utente apresenta fraqueza muscular marcada nos membros inferiores, que estratégia biomecânica fundamental deve o enfermeiro implementar para garantir a estabilidade do equilíbrio durante a locomoção?",
     "options": [
-      "Incapacidade completa de fletir os dedos das mãos ao manusear talheres ou copos durante as refeições.",
-      "Aceleração involuntária contínua do tronco para a frente que impede o utente de travar a sua marcha no corredor.",
-      "Aumento descontrolado da tensão arterial sistémica decorrente da ausência de tração no tendão patelar.",
-      "Dificuldade em estabilizar a extensão do joelho na fase de apoio da marcha, com risco iminente de 'cedência' articular e queda."
+      "Instruir o utente a manter os pés unidos e a cabeça fletida para trás para anular a base de sustentação.",
+      "Alargar a base de sustentação com um dispositivo de apoio (como um andarilho ou canadianas) e manter o Centro de Gravidade centrado na área de suporte.",
+      "Colocar o utente a calçar sapatos de sola lisa e polida para reduzir a zero a força de atrito com o pavimento.",
+      "Incentivar passos muito rápidos e longos para que a inércia compense integralmente a falta de suporte muscular."
     ],
-    "correctIndex": 3,
-    "explanation": "O quadríceps é o músculo extensor e estabilizador antigravítico do joelho no apoio; a sua fraqueza causa instabilidade e quedas.",
+    "correctIndex": 1,
+    "explanation": "A estabilidade do equilíbrio aumenta ao: 1) alargar a base de sustentação (BS) e 2) garantir que a linha de gravidade projetada a partir do CG permanece estritamente contida no polígono de suporte.",
     "distractorAnalysis": [
-      "Está incorreta: A flexão dos dedos da mão depende dos músculos flexores do antebraço e mão, sem relação com o quadríceps.",
-      "Está incorreta: A incapacidade de travar o tronco seria uma alteração cerebelar ou postural, não decorrente de fraqueza do joelho.",
-      "Está incorreta: A fraqueza do quadríceps não altera descontroladamente a pressão arterial sistémica de repouso."
+      "Está incorreta: unir os pés estreita a base de sustentação, tornando o equilíbrio extremamente instável e propício a quedas.",
+      "Está incorreta: solas lisas anulam o atrito estático com o chão, provocando deslizamento e quedas imediatas no solo hospitalar.",
+      "Está incorreta: passos rápidos com fraqueza muscular provocam descoordenação e impedem o controlo dinâmico do Centro de Gravidade."
     ],
-    "nursingApplication": "O enfermeiro deve prestar apoio com auxiliar de marcha (andarilho/canadiana) a doentes com défice do quadríceps."
+    "nursingApplication": "Ajustar andarilhos e canadianas e orientar a postura dos pés são intervenções primárias de enfermagem na prevenção de quedas intra-hospitalares."
   },
   {
     "id": 1304,
     "topicId": 1,
-    "question": "Em doentes idosos hospitalizados com imobilização prolongada no leito, que alteração biomecânica afeta frequentemente o tendão de Aquiles?",
+    "question": "De acordo com a 1.ª Lei de Newton (Lei da Inércia), qual é o comportamento mecânico de um corpo quando a resultante de todas as forças que sobre ele atuam for nula (∑F = 0)?",
     "options": [
-      "Retração tendinosa e perda de elasticidade, resultando em atitude em 'pé equino' que compromete o apoio plantar na marcha.",
-      "Aumento excessivo da extensibilidade longitudinal, impedindo a transmissão eficaz de qualquer força de tração aos ossos do tarso.",
-      "Perda imediata de todas as fibras de colagénio tipo I, com substituição completa por tecido cartilaginoso rígido e avascular.",
-      "Aumento substancial do comprimento de repouso das fibras que projeta o pé permanentemente em dorsiflexão extrema sustentada."
+      "Acelera instantaneamente até atingir a velocidade da luz no vácuo.",
+      "Permanece no seu estado de repouso ou de Movimento Retilíneo e Uniforme (MRU, velocidade vetorial constante).",
+      "Começa obrigatoriamente a rodar sobre si próprio com aceleração angular continuamente crescente.",
+      "Perde metade da sua massa inercial a cada segundo até desaparecer do espaço tridimensional."
     ],
-    "correctIndex": 0,
-    "explanation": "A imobilização em flexão plantar passiva encurta os sarcómeros e o tendão de Aquiles (pé equino), dificultando o levante.",
+    "correctIndex": 1,
+    "explanation": "A 1.ª Lei de Newton estabelece que, na ausência de uma força resultante não-nula (∑F = 0), um corpo persevera no seu estado de repouso ou de movimento retilíneo uniforme (MRU).",
     "distractorAnalysis": [
-      "Está incorreta: a imobilização sem carga produz retração, rigidez e encurtamento do tendão de Aquiles, e não um aumento da sua extensibilidade.",
-      "Está incorreta: o tendão imobilizado sofre desorganização das fibras de colagénio e adesões interfibrilares, mantendo a sua natureza conjuntiva densa.",
-      "Está incorreta: a posição de repouso espontâneo no leito sob ação da gravidade favorece a flexão plantar (pé equino) e não a dorsiflexão."
+      "Está incorreta: qualquer aceleração requer uma força resultante não-nula (F = m · a); aceleração até à velocidade da luz é fisicamente impossível.",
+      "Está incorreta: rotação acelerada exige a atuação de um momento resultante não-nulo (∑M ≠ 0).",
+      "Está incorreta: a massa inercial é uma propriedade invariável da matéria na mecânica clássica e não se dissipa."
     ],
-    "nursingApplication": "O uso de suportes de pés a 90° no leito e mobilização passiva pelo enfermeiro previne a deformidade em pé equino."
+    "nursingApplication": "Explica por que razão um utente transportado numa cadeira de rodas tende a continuar em movimento para a frente se a cadeira travar bruscamente sem cinto."
   },
   {
     "id": 1305,
     "topicId": 1,
-    "question": "Qual é a vantagem mecânica do armazenamento de energia elástica no tendão de Aquiles durante a fase de corrida ou marcha rápida?",
+    "question": "Na alavanca de 2.ª classe que atua no pé durante o apoio na ponta dos pés, porque é que a força potente muscular necessária é menor do que seria numa alavanca de 3.ª classe?",
     "options": [
-      "Eliminar completamente o trabalho mecânico ativo realizado pelos ventres musculares do tríceps sural durante todo o ciclo de locomoção.",
-      "Devolver elasticamente parte da energia mecânica na fase de impulsão ('efeito mola'), reduzindo o gasto metabólico dos músculos da perna.",
-      "Reduzir o atrito estático da sola do calçado contra o solo para valores próximos de zero, facilitando o deslizamento contínuo do pé.",
-      "Permitir que a amplitude articular do tornozelo aumente sem qualquer oposição até atingir ângulos de flexão incompatíveis com a marcha."
+      "Porque a aceleração da gravidade se torna negativa na zona dos membros inferiores.",
+      "Porque o ponto de aplicação da força resistente (peso do corpo) fica posicionado mais perto do fulcro (articulação metatarsofalângica) do que a força potente dos músculos gémeos (bp > br).",
+      "Porque os ossos do pé transmitem força por levitação magnética dispensando momentos de torção.",
+      "Porque a massa do corpo diminui para metade sempre que o calcanhar se eleva do solo."
     ],
     "correctIndex": 1,
-    "explanation": "Os tendões atuam como molas biológicas: acumulam energia potencial elástica na fase de carga e devolvem-na no recuo elástico.",
+    "explanation": "Na alavanca de 2.ª classe (inter-resistente: PA - R - F), o peso corporal atua entre os dedos (fulcro) e o calcanhar (potência). Como bp > br, a vantagem mecânica é maior que 1 (VM > 1), exigindo menor esforço muscular.",
     "distractorAnalysis": [
-      "Está incorreta: o armazenamento elástico reduz o custo metabólico muscular na propulsão, mas não elimina a necessidade de contração ativa do tríceps sural.",
-      "Está incorreta: o tendão armazena energia interna de deformação e não interfere diretamente no atrito entre a sola do calçado e o chão.",
-      "Está incorreta: a função do tendão de Aquiles é estabilizar a articulação e transmitir tração propulsora, mantendo a estabilidade dentro dos limites fisiológicos."
+      "Está incorreta: a aceleração gravitacional é invariável e atua sempre verticalmente para baixo com g ≈ 9,8 m/s².",
+      "Está incorreta: as forças são puramente de contacto mecânico articular e tração tendinosa, sem levitação magnética.",
+      "Está incorreta: a massa do corpo é rigorosamente invariável independentemente da postura ou apoio assumido."
     ],
-    "nursingApplication": "A perda de elasticidade no idoso aumenta o custo metabólico da locomoção, acelerando a fadiga muscular e o risco de quedas."
+    "nursingApplication": "Mostra como a biomecânica esquelética do pé foi otimizada para permitir ao ser humano elevar todo o peso do corpo durante a marcha diária com eficiência."
   },
   {
     "id": 1306,
@@ -8199,21 +8198,21 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1432,
     "topicId": 1,
-    "question": "O que representa o 'módulo' ou 'intensidade' de um vetor força exercido pelo músculo deltoide na abdução do braço?",
+    "question": "Na caracterização de um vetor força aplicado num segmento biomecânico, o que representa o seu \"Módulo\" ou \"Intensidade\"?",
     "options": [
-      "A velocidade angular com que a articulação glenoumeral roda durante o arco de movimento voluntário.",
-      "O ângulo exato formado pelo tendão com o plano horizontal no ponto de inserção umeral.",
-      "O tempo total decorrido desde o início da despolarização da placa motora neuromuscular.",
-      "A magnitude numérica do esforço contrátil, expressa em Newtons, independentemente da orientação espacial do segmento."
+      "A velocidade angular com que a articulação roda durante o arco de movimento voluntário.",
+      "O ângulo exato formado pela linha de ação da força com o plano horizontal.",
+      "O ponto anatómico específico onde o vetor de força é aplicado sobre a estrutura óssea.",
+      "O valor numérico escalar da grandeza física acompanhado da respetiva unidade de medida no SI (Newton, N)."
     ],
     "correctIndex": 3,
-    "explanation": "O módulo é o valor escalar positivo que quantifica o tamanho ou magnitude da força (em Newtons).",
+    "explanation": "O módulo (ou intensidade) de uma força é o seu valor numérico escalar absoluto (sempre não-negativo) expresso em Newtons (N), indicando a magnitude ou tamanho da força aplicada.",
     "distractorAnalysis": [
-      "Está incorreta: A velocidade angular é uma grandeza cinemática de rotação expressa em radianos por segundo.",
-      "Está incorreta: O ângulo com o plano horizontal define a direção geométrica do vetor força, não o seu módulo.",
-      "Está incorreta: O tempo de ativação é uma grandeza temporal neurofisiológica."
+      "Está incorreta: a velocidade angular é uma grandeza cinemática rotacional (rad/s), não o módulo de uma força.",
+      "Está incorreta: o ângulo com a horizontal define a direção e sentido do vetor no plano, não o seu módulo.",
+      "Está incorreta: o local onde a força atua no osso é o Ponto de Aplicação, não o Módulo."
     ],
-    "nursingApplication": "Permite quantificar se a contração muscular do deltoide é suficiente para vencer a resistência do peso do membro superior."
+    "nursingApplication": "Permite aos enfermeiros quantificar exatamente se a força de tração aplicada num doente ou equipamento cumpre a prescrição clínica (ex: tração cutânea de 20 N ou 50 N)."
   },
   {
     "id": 1433,
