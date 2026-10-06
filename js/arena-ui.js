@@ -99,6 +99,7 @@ class ArenaUI {
     this.isMuted = false;
     this.selectedAvatar = '🩺';
     this.pendingTeacherAction = null;
+    this.myCurrentVote = null;
     this.initDOMElements();
     this.initEventListeners();
     this.initEngineListeners();
@@ -159,10 +160,16 @@ class ArenaUI {
 
     // Ecrã 5: Revelação Pedagógica
     this.arenaRevealCorrectLetter = document.getElementById('arena-reveal-correct-letter');
+    this.arenaRevealQText = document.getElementById('arena-reveal-q-text');
+    this.arenaRevealOptionsGrid = document.getElementById('arena-reveal-options-grid');
     this.arenaBarsGrid = document.getElementById('arena-bars-grid');
     this.arenaRevealExplanation = document.getElementById('arena-reveal-explanation');
     this.arenaRevealDistractors = document.getElementById('arena-reveal-distractors');
     this.arenaRevealNursing = document.getElementById('arena-reveal-nursing');
+    this.clientRevealSection = document.getElementById('arena-client-reveal-section');
+    this.clientRevealQText = document.getElementById('client-reveal-q-text');
+    this.clientRevealOptions = document.getElementById('client-reveal-options');
+    this.clientRevealExpText = document.getElementById('client-reveal-exp-text');
     this.btnHostShowLeaderboard = document.getElementById('btn-host-show-leaderboard');
 
     // Ecrã 6: Leaderboard
@@ -526,6 +533,7 @@ class ArenaUI {
         btn.addEventListener('click', () => {
           this.tactileBtns.forEach(b => b.classList.remove('selected'));
           btn.classList.add('selected');
+          this.myCurrentVote = idx;
           this.engine.submitClientAnswer(idx);
 
           const letters = ['A', 'B', 'C', 'D'];
@@ -640,6 +648,28 @@ class ArenaUI {
         this.arenaRevealCorrectLetter.innerHTML = `Opção <span style="font-size: 1.6rem; text-decoration: underline;">${correctLtr}</span> está Correta! (${data.correctTeamsCount} de ${data.totalTeams} equipas acertaram)`;
       }
 
+      // Pergunta no Ecrã de Revelação do Anfitrião
+      if (this.arenaRevealQText) {
+        this.arenaRevealQText.textContent = data.question.question;
+      }
+
+      // As 4 opções A, B, C, D no Ecrã de Revelação do Anfitrião
+      if (this.arenaRevealOptionsGrid) {
+        this.arenaRevealOptionsGrid.innerHTML = '';
+        data.question.options.forEach((optText, idx) => {
+          const isCorrect = idx === data.question.correctIndex;
+          const ltr = letters[idx];
+          const optCard = document.createElement('div');
+          optCard.className = `arena-reveal-option-card ${isCorrect ? 'is-correct' : 'is-wrong'}`;
+          optCard.innerHTML = `
+            <div class="arena-reveal-option-badge opt-badge-bg-${ltr.toLowerCase()}">${ltr}</div>
+            <div class="arena-reveal-option-text">${optText}</div>
+            ${isCorrect ? '<span class="arena-reveal-correct-tag">✓ Correta</span>' : ''}
+          `;
+          this.arenaRevealOptionsGrid.appendChild(optCard);
+        });
+      }
+
       // Gráfico de Barras
       if (this.arenaBarsGrid) {
         this.arenaBarsGrid.innerHTML = '';
@@ -718,6 +748,7 @@ class ArenaUI {
     });
 
     this.engine.onUI('client_question_ready', (data) => {
+      this.myCurrentVote = null;
       if (this.clientVotingTeamBadge) this.clientVotingTeamBadge.textContent = `${this.net.avatar} ${this.net.teamName}`;
       if (this.clientVotingQBadge) this.clientVotingQBadge.textContent = `P${data.questionIndex}/${data.totalQuestions}`;
       if (this.clientVotingTimer) this.clientVotingTimer.textContent = `⏱️ ${data.timeRemaining}s`;
@@ -731,7 +762,8 @@ class ArenaUI {
           btn.classList.remove('selected');
           const labelSpan = btn.querySelector('.btn-tactile-label');
           if (labelSpan) {
-            labelSpan.textContent = data.options && data.options[idx] ? data.options[idx].substring(0, 45) + '...' : `Opção ${letters[idx]}`;
+            // Texto completo da opção no telemóvel, sem truncagem
+            labelSpan.textContent = data.options && data.options[idx] ? data.options[idx] : `Opção ${letters[idx]}`;
           }
         }
       });
@@ -763,6 +795,37 @@ class ArenaUI {
       }
       if (this.clientResultTotalScore) {
         this.clientResultTotalScore.textContent = `${data.myResult.currentScore || 0} pts`;
+      }
+
+      // Pergunta no Telemóvel do Aluno
+      if (this.clientRevealQText) {
+        this.clientRevealQText.textContent = data.question || '';
+      }
+
+      // As 4 opções A, B, C, D com a correta em verde no Telemóvel
+      if (this.clientRevealOptions) {
+        this.clientRevealOptions.innerHTML = '';
+        if (data.options && Array.isArray(data.options)) {
+          data.options.forEach((optText, idx) => {
+            const isThisCorrect = idx === data.correctIndex;
+            const isMyChoice = idx === this.myCurrentVote;
+            const ltr = letters[idx];
+            const optDiv = document.createElement('div');
+            optDiv.className = `arena-client-opt-item ${isThisCorrect ? 'is-correct' : (isMyChoice && !isCorrect ? 'is-my-wrong' : '')}`;
+            optDiv.innerHTML = `
+              <span class="arena-client-opt-badge opt-badge-bg-${ltr.toLowerCase()}">${ltr}</span>
+              <span class="arena-client-opt-text" style="flex: 1;">${optText}</span>
+              ${isThisCorrect ? '<span style="color: var(--color-success); font-weight: 700; font-size: 0.8rem; margin-left: 0.35rem;">✓ Correta</span>' : ''}
+              ${isMyChoice && !isCorrect ? '<span style="color: var(--color-danger); font-weight: 700; font-size: 0.8rem; margin-left: 0.35rem;">✗ A vossa</span>' : ''}
+            `;
+            this.clientRevealOptions.appendChild(optDiv);
+          });
+        }
+      }
+
+      // Explicação Científica no Telemóvel
+      if (this.clientRevealExpText) {
+        this.clientRevealExpText.textContent = data.explanation || '';
       }
 
       this.showScreen('clientResult');

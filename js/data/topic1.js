@@ -1245,7 +1245,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1066,
     "topicId": 1,
-    "question": "O que acontece a uma ambulância se tentar curvar a alta velocidade num piso com gelo onde o atrito lateral seja nulo (μ = 0)?",
+    "question": "O que acontece a uma ambulância se tentar curvar a alta velocidade num piso com gelo onde o atrito lateral seja nulo (onde o atrito com o solo é praticamente nulo)?",
     "options": [
       "A viatura roda sobre si mesma a 360 graus parando instantaneamente no centro geométrico da rotunda.",
       "A viatura decola verticalmente como um helicóptero de emergência médica através de propulsão inercial pura.",
@@ -1627,7 +1627,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a razão biomecânica pela qual o calçado com salto alto e estreito é formalmente contraindicado no exercício da enfermagem?",
     "options": [
-      "O salto estreito anula o coeficiente de atrito solo-calçado, tornando o chão encerado imune a qualquer força de atrito.",
+      "O salto estreito anula o atrito solo-calçado, tornando o chão encerado imune a qualquer força de atrito.",
       "O salto estreito reduz a massa óssea dos metatarsos em 80% através de desmineralização elástica instantânea.",
       "O salto estreito impede a propagação de ondas eletromagnéticas vitais entre o solo e o córtex cerebral do profissional.",
       "A área reduzida do salto concentra o peso corporal numa pressão mecânica extrema no calcanhar e desloca a linha de gravidade para a frente."
@@ -2604,7 +2604,7 @@ const TOPIC_1_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "Para exercer uma força para a frente ou para trás na maca, os pés têm de aplicar força oposta no chão (3.ª Lei); sem atrito, os pés escorregam.",
     "distractorAnalysis": [
-      "Está incorreta: a sola de borracha não altera a massa ou o peso corporal do profissional; atua apenas na interface de contacto aumentando o coeficiente de atrito.",
+      "Está incorreta: a sola de borracha não altera a massa ou o peso corporal do profissional; atua apenas na interface de contacto aumentando o atrito.",
       "Está incorreta: o papel biomecânico primordial do calçado é a estabilidade postural e aderência ao solo, não a ação desinfetante química do piso.",
       "Está incorreta: a inércia dos membros é determinada pela sua massa biológica intrínseca e não é anulada pelo calçado de trabalho."
     ],
@@ -2636,11 +2636,11 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Eliminar completamente o peso do profissional durante a movimentação e transferência de cargas elevadas no leito.",
       "Aumentar a amplitude de flexão dorsal do tornozelo para valores superiores a noventa graus sexagesimais na postura ereta.",
-      "Garantir um coeficiente de atrito estático elevado com o solo para que a reação do piso forneça propulsão segura sem escorregamento.",
+      "Garantir um atrito estático elevado com o solo para que a reação do piso forneça propulsão segura sem escorregamento.",
       "Reduzir a pressão arterial diastólica nas artérias plantares através da absorção de energia mecânica pelo elastómero."
     ],
     "correctIndex": 2,
-    "explanation": "Calçado adequado assegura que a força de atrito máxima (Fat_max = μ·N) é suficiente para prevenir escorregamentos nas mudanças de ritmo.",
+    "explanation": "Calçado adequado assegura que a força de atrito máxima (a força máxima de atrito) é suficiente para prevenir escorregamentos nas mudanças de ritmo.",
     "distractorAnalysis": [
       "Está incorreta: o calçado de borracha não altera o peso gravitacional da pessoa; atua melhorando a aderência de contacto com o piso.",
       "Está incorreta: a goniometria fisiológica do tornozelo é determinada pela anatomia articular e não pelo material da sola antiderrapante.",
@@ -2655,13 +2655,13 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "As fibras de algodão acumulam cargas eletrostáticas que repelem o pavimento hospitalar, reduzindo a força normal de contacto entre os pés e o solo a valores mínimos.",
       "O tecido de algodão apresenta um atrito excessivamente elevado que bloqueia o avanço da marcha no balanço, provocando tropeções mecânicos involuntários na fase de balanço.",
-      "O algodão tem um coeficiente de atrito muito baixo com o piso vinílico ou cerâmico, não permitindo as forças de reação necessárias para travar e mudar de direção com segurança.",
+      "O algodão tem um atrito muito baixo com o piso vinílico ou cerâmico, não permitindo as forças de reação necessárias para travar e mudar de direção com segurança.",
       "As meias comuns alteram a linha de ação da força peso do idoso, deslocando o seu centro de gravidade para trás dos calcanhares durante a fase de apoio unipodal da marcha."
     ],
     "correctIndex": 2,
-    "explanation": "O coeficiente de atrito meia-piso é significativamente menor do que calçado-piso; qualquer ligeiro desequilíbrio resulta em escorregamento imediato e queda.",
+    "explanation": "O atrito meia-piso é significativamente menor do que calçado-piso; qualquer ligeiro desequilíbrio resulta em escorregamento imediato e queda.",
     "distractorAnalysis": [
-      "Está incorreta: as meias não anulam a força normal (que decorre da gravidade e suporte do solo), mas reduzem drasticamente o coeficiente de atrito estático.",
+      "Está incorreta: as meias não anulam a força normal (que decorre da gravidade e suporte do solo), mas reduzem drasticamente o atrito estático.",
       "Está incorreta: o algodão sobre piso polido tem baixo atrito superficial e predispõe a escorregadelas descontroladas, não ao bloqueio por excesso de atrito.",
       "Está incorreta: as meias não deslocam o centro de gravidade anatómico do doente; o perigo reside na incapacidade do piso exercer força de atrito horizontal de retenção."
     ],
@@ -2697,10 +2697,10 @@ const TOPIC_1_QUESTIONS = [
       "Perde o atrito estático com o piso, correndo o risco grave de escorregar para o lado no momento em que o doente descarrega o seu peso."
     ],
     "correctIndex": 3,
-    "explanation": "A força que o chão faz na bengala tem componente vertical (suporte) e horizontal (atrito); sem atrito suficiente (Fat = μ·N), a ponteira desliza e o doente cai desamparado.",
+    "explanation": "A força que o chão faz na bengala tem componente vertical (suporte) e horizontal (atrito); sem atrito suficiente (Fat = ·N), a ponteira desliza e o doente cai desamparado.",
     "distractorAnalysis": [
       "Está incorreta: o deslizamento livre de uma ponteira de bengala constitui uma instabilidade perigosa e a principal causa de quedas em idosos.",
-      "Está incorreta: a força normal depende da carga descarregada pelo utilizador; a borracha gasta perde coeficiente de atrito (μ).",
+      "Está incorreta: a força normal depende da carga descarregada pelo utilizador; a borracha gasta perde atrito .",
       "Está incorreta: borracha ressequida ou polida perde drasticamente tanto o atrito estático como o cinético com o pavimento cerâmico."
     ],
     "nursingApplication": "Exige a inspeção rotineira e substituição periódica das ponteiras de borracha de todos os dispositivos de marcha dos utentes."
@@ -2710,15 +2710,15 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Como é que as meias hospitalares antiderrapantes aumentam a segurança dos utentes idosos durante os levantes noturnos para ir à casa de banho?",
     "options": [
-      "Possuem pontilhados de silicone ou borracha macia na sola que apresentam um elevado coeficiente de atrito estático com o piso, fornecendo as forças de retenção necessárias para a marcha sem escorregar.",
+      "Possuem pontilhados de silicone ou borracha macia na sola que apresentam um elevado atrito estático com o piso, fornecendo as forças de retenção necessárias para a marcha sem escorregar.",
       "Aumentam a massa aparente dos membros inferiores do doente, gerando uma força normal de compressão muito superior que ancora os calcanhares mesmo em superfícies lisas.",
       "Libertam um composto adesivo temporário por pressão plantar que cola a sola ao pavimento vinílico, dispensando a necessidade de atrito mecânico de contacto entre as superfícies.",
       "Atuam reduzindo a componente vertical da força peso do utente durante o ortostatismo, permitindo que a marcha ocorra com menor exigência mecânica sobre os músculos da perna."
     ],
     "correctIndex": 0,
-    "explanation": "Meias normais de algodão em pisos lisos têm μ < 0,2 (altíssimo risco); os pontos de silicone elevam μ > 0,6, restabelecendo a aderência e a força de reação propulsora.",
+    "explanation": "Meias normais de algodão em pisos lisos têm muito baixo (altíssimo risco); os pontos de silicone elevam atrito > 0,6, restabelecendo a aderência e a força de reação propulsora.",
     "distractorAnalysis": [
-      "Está incorreta: as meias não alteram a massa corporal nem o peso do utente (P = m·g); a sua função é unicamente aumentar o coeficiente de atrito estático (μe).",
+      "Está incorreta: as meias não alteram a massa corporal nem o peso do utente (P = m·g); a sua função é unicamente aumentar o atrito estático (atrito estático).",
       "Está incorreta: as solas antiderrapantes operam por atrito mecânico seco e não por adesão química, permitindo o levante seguro sem prender o pé à marcha.",
       "Está incorreta: a força peso permanece inalterada; o benefício físico reside na prevenção de derrapagens ao apoiar o pé no piso hospitalar."
     ],
@@ -2732,7 +2732,7 @@ const TOPIC_1_QUESTIONS = [
       "O atrito com o solo mantém-se rigorosamente inalterado, uma vez que a borracha de silicone transmite as suas propriedades de adesão através da malha têxtil.",
       "A proteção é completamente anulada: a superfície em contacto com o piso passa a ser o algodão liso de baixo atrito, restabelecendo o perigo gravíssimo de escorregamento.",
       "A força normal exercida pelo piso hospitalar duplica de intensidade, tornando a marcha do utente mais estável apesar da inversão inadvertida da meia.",
-      "O coeficiente de atrito dinâmico aumenta substancialmente, dado que a aderência do silicone à pele do pé melhora a transmissão de força na passada."
+      "O atrito dinâmico aumenta substancialmente, dado que a aderência do silicone à pele do pé melhora a transmissão de força na passada."
     ],
     "correctIndex": 1,
     "explanation": "Para que o atrito atue, o material de alta fricção tem de estar na interface entre o pé e o pavimento; colocada do avesso, a meia comporta-se como uma meia comum escorregadia.",
@@ -2967,7 +2967,7 @@ const TOPIC_1_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: A densidade óssea craniana não explica o teste da cadeira, cuja biomecânica assenta na localização do centro de gravidade e da base de apoio.",
       "Está incorreta: O sucesso no teste depende do alinhamento da linha de gravidade sobre a base de apoio dos pés e não de armazenamento elétrico ou ligamentar passivo.",
-      "Está incorreta: O coeficiente de atrito do calçado é independente do género do utente, decorrendo o desequilíbrio masculino da projeção anterior da linha de gravidade."
+      "Está incorreta: O atrito do calçado é independente do género do utente, decorrendo o desequilíbrio masculino da projeção anterior da linha de gravidade."
     ],
     "nursingApplication": "Explicação física de um teste popular de biomecânica baseado na posição do baricentro."
   },
@@ -3193,7 +3193,7 @@ const TOPIC_1_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "Na física do apoio: 'Intervenção de enfermagem recomendada: Proibir meias sem piso antiderrapante na enfermaria'.",
     "distractorAnalysis": [
-      "Está incorreta: meias de algodão comuns em chão liso ou encerado oferecem um coeficiente de atrito extremamente baixo, constituindo elevado risco de escorregamento.",
+      "Está incorreta: meias de algodão comuns em chão liso ou encerado oferecem um atrito extremamente baixo, constituindo elevado risco de escorregamento.",
       "Está incorreta: chinelos soltos sem contraforte traseiro desestabilizam o tornozelo, soltam-se com facilidade e impedem a transmissão eficaz de forças no apoio.",
       "Está incorreta: em superfícies de baixo atrito deve-se encurtar a passada para manter a linha de gravidade perpendicular ao solo; passos largos aumentam o risco de queda."
     ],
@@ -3283,14 +3283,14 @@ const TOPIC_1_QUESTIONS = [
       "Pisos encerados húmidos, tapetes soltos sem fixação e soleiras de portas salientes que possam prender as ponteiras de borracha ou fazê-las escorregar subitamente.",
       "Superfícies de betão rugoso seco e pavimentos vinílicos foscos de alto atrito dotados de faixas antiderrapantes texturadas nas zonas de circulação de doentes.",
       "Pisos nivelados com acabamento cerâmico mate totalmente secos e livres de quaisquer desníveis arquitetónicos ou barreiras físicas nos corredores de acesso.",
-      "Passadeiras de borracha de alta densidade devidamente fixadas com cola industrial contínua ao solo que oferecem um coeficiente de atrito estático superior a 0,8."
+      "Passadeiras de borracha de alta densidade devidamente fixadas com cola industrial contínua ao solo que oferecem um atrito estático superior a 0,8."
     ],
     "correctIndex": 0,
     "explanation": "A combinação de baixo atrito (chão molhado) com obstáculos físicos (tapetes soltos que deslizam ou tropeções em soleiras) é a causa de mais de 70% das quedas com dispositivos de marcha.",
     "distractorAnalysis": [
       "Está incorreta: Pavimentos rugosos e com alto atrito proporcionam boa aderência e segurança às ponteiras de borracha, reduzindo o risco de queda.",
       "Está incorreta: Pisos nivelados, secos e sem obstáculos são ideais para a deambulação segura com dispositivos de apoio.",
-      "Está incorreta: Passadeiras de borracha bem fixadas com elevado coeficiente de atrito garantem aderência firme e não constituem fator de risco."
+      "Está incorreta: Passadeiras de borracha bem fixadas com elevado atrito garantem aderência firme e não constituem fator de risco."
     ],
     "nursingApplication": "Identificação dos perigos ambientais mais prevalentes na mobilidade assistida."
   },
@@ -3301,7 +3301,7 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Porque ponteiras envelhecidas aumentam excessivamente o atrito estático com o solo, bloqueando bruscamente a marcha e provocando tombamento anterior por inércia.",
       "Porque o contacto contínuo da borracha com o piso hospitalar amolece o elastómero, aumentando a área de suporte e dificultando o levantamento voluntário do apoio.",
-      "Porque o desgaste da borracha desgasta o relevo estriado e expõe o metal tubular interior, reduzindo drasticamente o coeficiente de atrito com o solo e provocando escorregamento imprevisto.",
+      "Porque o desgaste da borracha desgasta o relevo estriado e expõe o metal tubular interior, reduzindo drasticamente o atrito com o solo e provocando escorregamento imprevisto.",
       "Porque a perda de espessura da borracha altera a flexibilidade do alumínio, impedindo que as forças musculares de compressão sejam absorvidas pela pega manual."
     ],
     "correctIndex": 2,
@@ -3419,7 +3419,7 @@ const TOPIC_1_QUESTIONS = [
       "70 N, correspondendo ao dobro obrigatório da resistência para impedir que a maca desacelere de forma súbita."
     ],
     "correctIndex": 0,
-    "explanation": "Para que o movimento seja uniforme (a = 0), a força resultante deve ser nula: F_aplicada - F_atrito = 0 ⇒ F_aplicada = 35 N.",
+    "explanation": "Para que o movimento seja uniforme (a = 0), a força resultante deve ser nula: F_aplicada - F_res = 0 ⇒ F_aplicada = 35 N.",
     "distractorAnalysis": [
       "Está incorreta: 0 N só manteria o movimento se não existisse qualquer atrito (vácuo ou superfície ideal perfeitamente lisa).",
       "Está incorreta: 350 N geraria uma força resultante de 315 N para a frente, provocando aceleração contínua e não velocidade constante.",
@@ -3457,7 +3457,7 @@ const TOPIC_1_QUESTIONS = [
       "Para contrariar a força normal exercida pelo piso, que se opõe à translação horizontal da cadeira de rodas em superfícies niveladas."
     ],
     "correctIndex": 2,
-    "explanation": "No mundo real com atrito, ∑F = F_enfermeiro - F_atrito = 0 ⇒ F_enfermeiro = F_atrito. A força muscular equilibra o atrito.",
+    "explanation": "No mundo real com atrito, ∑F = F_enfermeiro - F_res = 0 ⇒ F_enfermeiro = Fa. A força muscular equilibra o atrito.",
     "distractorAnalysis": [
       "Está incorreta: na velocidade constante a aceleração é nula; a força motora destina-se apenas a anular o atrito, mantendo a resultante nula.",
       "Está incorreta: a força peso atua na vertical para baixo em direção ao centro da Terra, não possuindo componente horizontal em piso plano.",
@@ -3478,7 +3478,7 @@ const TOPIC_1_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "Fres = 25 N - 25 N = 0 N ⇒ a = 0 m/s². A velocidade permanece constante de acordo com a 1.ª Lei de Newton.",
     "distractorAnalysis": [
-      "Está incorreta: se F_aplicada = F_atrito (25 N), a força resultante é nula (∑F = 0), logo a aceleração é rigorosamente zero (não acelera).",
+      "Está incorreta: se F_aplicada = Fa (25 N), a força resultante é nula (∑F = 0), logo a aceleração é rigorosamente zero (não acelera).",
       "Está incorreta: resultante nula com velocidade inicial não nula traduz equilíbrio dinâmico (MRU), não ocorrendo paragem instantânea.",
       "Está incorreta: o atrito opõe-se ao movimento mas nunca gera forças motoras no sentido contrário capazes de empurrar o objeto para trás."
     ],
@@ -3660,7 +3660,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "O uso de telas de transferência deslizantes de baixo atrito reduz a força necessária para acelerar o utente bariátrico porque:",
     "options": [
-      "Reduz a força de atrito (Fat = μ · N), permitindo que uma força de empurrão menor resulte numa força resultante positiva para acelerar a massa.",
+      "Reduz a força de atrito (a força de atrito), permitindo que uma força de empurrão menor resulte numa força resultante positiva para acelerar a massa.",
       "Diminui a inércia e a massa corporal real do utente ao distribuir o peso sobre uma película de polímero com elevada tensão superficial.",
       "Aumenta a componente vertical da gravidade, convertendo o trabalho muscular dos profissionais em energia potencial elástica no leito.",
       "Anula a necessidade de aplicar a 2.ª Lei de Newton, permitindo que a velocidade de translação aumente sem qualquer força resultante."
@@ -3668,7 +3668,7 @@ const TOPIC_1_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "A força motora necessária é F_motora = Fat + m·a. Ao reduzir o atrito Fat, a força que o enfermeiro precisa de fazer cai drasticamente.",
     "distractorAnalysis": [
-      "Está incorreta: as telas deslizantes reduzem o coeficiente de atrito superficial (μ), mas a massa inercial do utente permanece rigorosamente constante.",
+      "Está incorreta: as telas deslizantes reduzem o atrito superficial , mas a massa inercial do utente permanece rigorosamente constante.",
       "Está incorreta: os dispositivos deslizantes não alteram a gravidade nem armazenam energia elástica para mover o utente sozinhos.",
       "Está incorreta: a 2.ª Lei de Newton é universal; acelerar uma massa exige sempre uma força resultante não nula (∑F = m·a)."
     ],
@@ -3679,7 +3679,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Quando dois enfermeiros utilizam uma prancha de transferência (Rollbord) para passar um utente bariátrico da cama para a maca, o princípio dinâmico envolvido é:",
     "options": [
-      "Transformar o atrito de deslizamento em atrito de rolamento, diminuindo substancialmente o coeficiente de atrito e, logo, a força resistente.",
+      "Transformar o atrito de deslizamento em atrito de rolamento, diminuindo substancialmente o atrito e, logo, a força resistente.",
       "Aumentar o atrito superficial entre a prancha e o lençol para garantir que o utente não deslize com excessiva rapidez durante a passagem.",
       "Eliminar a força peso do utente ao transferir o suporte para o tecido tubular deslizante da prancha, anulando a aceleração da gravidade.",
       "Substituir o atrito de rolamento por atrito de deslizamento simples, pois o deslizamento oferece menor resistência mecânica entre superfícies sintéticas."
@@ -3772,7 +3772,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1199,
     "topicId": 1,
-    "question": "Se o coeficiente de atrito entre o calçado e o piso for extremamente baixo (ex: piso molhado com água e sabão), porque é que o enfermeiro não consegue caminhar com eficácia?",
+    "question": "Se o atrito entre o calçado e o piso for extremamente baixo (ex: piso molhado com água e sabão), porque é que o enfermeiro não consegue caminhar com eficácia?",
     "options": [
       "A pessoa consegue caminhar com passadas muito mais longas porque o atrito reduzido facilita o balanço livre das pernas.",
       "A velocidade da marcha aumenta espontaneamente até atingir um valor constante de equilíbrio cinemático no corredor.",
@@ -3810,28 +3810,28 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1201,
     "topicId": 1,
-    "question": "Se um enfermeiro de 65 kg tentar acelerar a 2 m/s² num piso hospitalar cujo atrito estático máximo entre sola e piso seja de apenas 80 N, o que acontecerá?",
+    "question": "Na flexão do antebraço pelo músculo bíceps braquial (alavanca de 3.ª classe ou interpotente), por que razão a força muscular desenvolvida pelo bíceps tem de ser muito superior ao peso do objeto sustentado na mão?",
     "options": [
-      "Necessita de uma força de reação horizontal de 130 N (F = m·a = 65·2); se o atrito máximo for menor, o profissional escorregará.",
-      "Acelera imediatamente a 2 m/s² independentemente das características de atrito do pavimento ou do tipo de sola do calçado.",
-      "A força necessária é de 650 N, correspondendo à multiplicação direta da massa pela aceleração da gravidade terrestre.",
-      "O profissional não necessita de qualquer força horizontal, dado que a aceleração é gerada pela flexão da coluna lombar."
+      "Porque o braço de potência (distância do cotovelo à inserção muscular no rádio) é muito menor do que o braço de resistência até à mão.",
+      "Porque o ponto de apoio articular no cotovelo se desloca continuamente para trás durante todo o arco de flexão do antebraço.",
+      "Porque o peso sustentado na mão anula o momento gerado pelo bíceps, exigindo forças de compressão axial puramente nulas no úmero.",
+      "Porque o bíceps atua como alavanca inter-resistente com vantagem mecânica infinita, impedindo o encurtamento rápido das miofibrilhas."
     ],
     "correctIndex": 0,
-    "explanation": "Fat_max = 80 N < F_necessária (130 N). Quando a força exigida excede o atrito máximo estático, ocorre deslizamento da sola (escorregamento).",
+    "explanation": "Nas alavancas de 3.ª classe (interpotentes), a potência situa-se entre o fulcro e a resistência. Pela condição de equilíbrio de rotação (P · bp = R · br), como bp é muito mais curto que br, a força potente P desenvolvida pelo músculo tem de ser várias vezes superior à resistência R, operando o sistema com desvantagem mecânica (VM < 1).",
     "distractorAnalysis": [
-      "Está incorreta: pela 2.ª Lei, a aceleração requer uma força resultante externa real (F = 130 N); se o piso não a fornecer, os pés derrapam.",
-      "Está incorreta: 650 N corresponde aproximadamente ao peso vertical do profissional (P = 65·10 N) e não à força horizontal motriz de arranque.",
-      "Está incorreta: a flexão da coluna é um movimento articular interno; a aceleração do centro de massa depende da força externa de reação do solo."
+      "Está incorreta: O fulcro anatómico da articulação do cotovelo mantém-se no seu eixo articular e não se desloca para trás.",
+      "Está incorreta: O peso sustentado na mão não anula o momento, gerando um torque resistente que o bíceps é obrigado a contrabalançar.",
+      "Está incorreta: A alavanca do bíceps é de 3.ª classe (interpotente) e não de 2.ª classe, possuindo desvantagem mecânica e não vantagem infinita."
     ],
-    "nursingApplication": "Explica a física dos acidentes por escorregamento durante intervenções de emergência em pisos recém-lavados."
+    "nursingApplication": "Compreender que o sistema musculoesquelético opera predominantemente com desvantagem mecânica alerta o enfermeiro para a enorme sobrecarga gerada nos tendões e articulações ao elevar pesos com os braços estendidos."
   },
   {
     "id": 1202,
     "topicId": 1,
     "question": "O uso de tecidos de microfibra ou seda em vestuário e lençóis hospitalares para doentes com mobilidade reduzida tem que base física?",
     "options": [
-      "Reduzir drasticamente o coeficiente de atrito cinético entre o corpo do doente e a superfície do leito durante o reposicionamento.",
+      "Reduzir drasticamente o atrito cinético entre o corpo do doente e a superfície do leito durante o reposicionamento.",
       "Aumentar o peso aparente do doente para melhorar a sua ancoragem postural durante manobras de elevação no plano sagital.",
       "Eliminar a força normal de contacto entre o dorso e o estrado através de fenómenos de sustentação aerodinâmica de interface.",
       "Manter a pele do utente rigidamente colada ao lençol para impedir qualquer tipo de movimento relativo na cama articulada."
@@ -3840,7 +3840,7 @@ const TOPIC_1_QUESTIONS = [
     "explanation": "Tecidos de baixo atrito reduzem a força tangencial exercida sobre a pele em cada tentativa de mobilização voluntária ou passiva no leito.",
     "distractorAnalysis": [
       "Está incorreta: tecidos técnicos e telas de deslizamento visam diminuir a resistência de fricção e não aumentar a fixação mecânica por peso.",
-      "Está incorreta: a força normal de suporte (Fn) continua presente; o benefício clínico consiste na redução do coeficiente de atrito (μ).",
+      "Está incorreta: a força normal de suporte (Fn) continua presente; o benefício clínico consiste na redução do atrito .",
       "Está incorreta: fixar a pele ao lençol aumentaria perigosamente as forças de cisalhamento dérmico durante os movimentos no leito."
     ],
     "nursingApplication": "Promove a seleção adequada de têxteis de saúde com base em evidências ergonómicas e biomecânicas consolidadas."
@@ -3858,7 +3858,7 @@ const TOPIC_1_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "As ventosas fornecem atrito estático elevado e força de retenção que impede que forças laterais acidentais desloquem a cadeira com o doente sentado.",
     "distractorAnalysis": [
-      "Está incorreta: ponteiras lisas reduzem perigosamente o coeficiente de atrito em piso húmido, provocando deslizamento descontrolado e quedas.",
+      "Está incorreta: ponteiras lisas reduzem perigosamente o atrito em piso húmido, provocando deslizamento descontrolado e quedas.",
       "Está incorreta: rodas livres sem travão em piso molhado eliminam a estabilidade estática, constituindo um risco inaceitável de acidente.",
       "Está incorreta: materiais têxteis ou feltro tornam-se escorregadios quando saturados com sabão e água, não garantindo fixação estável ao pavimento."
     ],
@@ -3905,40 +3905,40 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1206,
     "topicId": 1,
-    "question": "A que se deve microscopicamente a existência da Força de Atrito (Fat) entre duas superfícies sólidas em contacto aparente liso?",
+    "question": "No equilíbrio da cabeça sobre a coluna vertebral na articulação atlanto-occipital, que tipo de alavanca biomecânica está representada e onde se localiza o seu ponto de apoio (fulcro)?",
     "options": [
-      "À atração gravítica microscópica que atua entre as partículas de pó acumuladas sobre as superfícies de deslizamento.",
-      "À rugosidade microscópica das superfícies (asperezas que engatam) e à adesão eletromagnética nos pontos reais de contacto atómico.",
-      "À resistência aerodinâmica causada pela camada de ar retida entre as duas superfícies polidas em movimento relativo.",
-      "À alteração da massa inercial dos corpos materiais provocada pelo aumento da velocidade relativa de translação."
+      "Alavanca de 3.ª classe (interpotente), com a inserção dos músculos da nuca situada no meio entre o mento e a coluna cervical.",
+      "Alavanca de 1.ª classe (interfixa), com o fulcro nos côndilos occipitais situado entre o peso anterior da cabeça e a potência dos músculos da nuca.",
+      "Alavanca de 2.ª classe (inter-resistente), onde o peso da cabeça se situa na extremidade mais posterior da abóbada craniana.",
+      "Alavanca mista sem fulcro anatómico, onde as forças de sustentação craniana dispensam qualquer condição de equilíbrio de momentos."
     ],
     "correctIndex": 1,
-    "explanation": "Nenhuma superfície macroscópica é perfeitamente plana: sob o microscópio existem picos e vales que colidem e estabelecem ligações eletrostáticas adesivas de atrito.",
+    "explanation": "A articulação atlanto-occipital é o exemplo clássico de alavanca interfixa (1.ª classe) no corpo humano: o ponto de apoio (côndilos occipitais) situa-se entre a resistência (peso do crânio e face, cujo centro de gravidade é anterior ao apoio) e a potência (músculos extensores posteriores da nuca).",
     "distractorAnalysis": [
-      "Está incorreta: o atrito seco é originado pelas forças eletromagnéticas de contacto entre asperezas microscópicas e não pela gravidade.",
-      "Está incorreta: o atrito entre sólidos persiste mesmo no vácuo onde não há ar atmosférico, decorrendo do contacto entre asperezas.",
-      "Está incorreta: o atrito clássico independe da velocidade em primeira aproximação e não altera a massa inercial intrínseca dos corpos."
+      "Está incorreta: Não é uma alavanca interpotente; o ponto de apoio articular está entre a resistência anterior e a potência posterior.",
+      "Está incorreta: Nas alavancas inter-resistentes a resistência fica no meio, ao passo que no crânio o ponto de apoio é intermédio.",
+      "Está incorreta: Existe um fulcro anatómico bem definido nos côndilos occipitais, obedecendo rigorosamente à condição ∑M = 0."
     ],
-    "nursingApplication": "Permite ao profissional compreender porque é que mesmo pisos aparentemente polidos oferecem resistência ao deslizamento."
+    "nursingApplication": "Em doentes sedados ou com perda de tónus muscular, a cabeça tomba para a frente por ação da gravidade, exigindo apoio cervical imediato pelo enfermeiro para assegurar a permeabilidade da via aérea."
   },
   {
     "id": 1207,
     "topicId": 1,
-    "question": "Quando polimos muito uma superfície de aço inoxidável ou vidro até que fique extremamente lisa, o que acontece inicialmente ao coeficiente de atrito?",
+    "question": "Ao elevar o corpo na ponta dos pés (flexão plantar), que classe de alavanca mecânica atua no pé humano e qual é a sua principal característica física?",
     "options": [
-      "O atrito diminui progressivamente à medida que as rugosidades grosseiras são eliminadas, permitindo um deslizamento muito mais fácil.",
-      "O atrito aumenta de imediato porque a superfície polida retém humidade microscópica que cola as duas peças por capilaridade estática.",
-      "O atrito anula-se de forma completa e imediata, deixando de existir qualquer resistência ao deslizamento em superfícies sem estrias.",
-      "O atrito estático deixa de existir, passando o coeficiente a depender apenas da velocidade a que o material desliza no plano do leito."
+      "Alavanca de 1.ª classe (interfixa), na qual o apoio metatársico oscila entre a tíbia e a inserção posterior do tendão de Aquiles.",
+      "Alavanca de 3.ª classe (interpotente), onde o esforço muscular do tríceps sural é exercido obrigatoriamente com grande desvantagem mecânica.",
+      "Alavanca de 2.ª classe (inter-resistente), na qual o braço de potência é maior que o de resistência, conferindo vantagem mecânica (VM > 1).",
+      "Alavanca indeformável de rotação livre, onde a resistência corporal é integralmente absorvida pela cartilagem sem esforço tendinoso."
     ],
-    "correctIndex": 0,
-    "explanation": "O alisamento reduz o engrenamento mecânico das asperezas, diminuindo a resistência ao deslizamento até ao limite ótimo de acabamento superficial.",
+    "correctIndex": 2,
+    "explanation": "Na flexão plantar com apoio nas cabeças dos metatarsos (fulcro anterior), a carga corporal desce pela tíbia (resistência no meio) e o tríceps sural traciona o calcâneo (potência posterior). Como o braço de potência é superior ao braço de resistência (bp > br), esta alavanca possui vantagem mecânica (VM > 1).",
     "distractorAnalysis": [
-      "Está incorreta: o polimento inicial reduz o engrenamento mecânico das asperezas, diminuindo significativamente a resistência ao atrito.",
-      "Está incorreta: o atrito não se anula a zero; as forças de adesão molecular e o atrito cinético residual continuam sempre presentes.",
-      "Está incorreta: o atrito estático permanece presente em materiais polidos; as leis do atrito continuam a distinguir repouso e movimento."
+      "Está incorreta: O fulcro situa-se na extremidade anterior (cabeças dos metatarsos) e não entre a resistência e a potência.",
+      "Está incorreta: Não é uma alavanca interpotente; a carga resistente localiza-se no meio, caracterizando uma alavanca de 2.ª classe.",
+      "Está incorreta: A cartilagem não anula o esforço tendinoso; o tendão de Aquiles suporta elevadas forças de tração durante o movimento."
     ],
-    "nursingApplication": "Orienta o fabrico de calhas de macas e hastes de bombas de infusão com acabamento polido de baixo atrito."
+    "nursingApplication": "A vantagem mecânica da alavanca do pé permite erguer a totalidade do peso corporal com menor força muscular, mas uma rotura do tendão de Aquiles anula por completo a capacidade de marcha ativa."
   },
   {
     "id": 1208,
@@ -3962,7 +3962,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1209,
     "topicId": 1,
-    "question": "Qual é a diferença fundamental entre o Atrito Estático (Fat,e) e o Atrito Cinético ou Dinâmico (Fat,c)?",
+    "question": "Qual é a diferença fundamental entre o Atrito Estático (Fa) e o Atrito Cinético ou Dinâmico (Fa)?",
     "options": [
       "O atrito estático é sempre inferior ao cinético, razão pela qual é mais fácil iniciar o deslocamento de uma maca pesada parada do que mantê-la a rolar em velocidade estável.",
       "O atrito estático atua unicamente em superfícies verticais sob forças de compressão, enquanto o cinético manifesta-se com exclusividade em planos horizontais e rampas.",
@@ -3972,68 +3972,68 @@ const TOPIC_1_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "Estático = sem movimento relativo (v_rel = 0); Cinético = com deslizamento relativo (v_rel ≠ 0). Ambas são forças e medem-se em Newtons (N).",
     "distractorAnalysis": [
-      "Está incorreta: o coeficiente de atrito estático é geralmente superior ao cinético (μe > μc), exigindo maior força para iniciar o movimento do que para mantê-lo.",
+      "Está incorreta: o atrito estático é geralmente superior ao cinético (atrito estático superior ao cinético), exigindo maior força para iniciar o movimento do que para mantê-lo.",
       "Está incorreta: tanto o atrito estático como o cinético podem ocorrer em qualquer orientação espacial onde haja forças de contacto entre superfícies sólidas.",
-      "Está incorreta: o atrito cinético depende diretamente da força normal de contacto entre as superfícies (Fat,c = μc · N), e não apenas da velocidade ou temperatura."
+      "Está incorreta: o atrito cinético depende diretamente da força normal de contacto entre as superfícies (Fa = atrito cinético · N), e não apenas da velocidade ou temperatura."
     ],
     "nursingApplication": "Conceito biofísico basilar para diferenciar a força necessária para iniciar um movimento da força para o manter."
   },
   {
     "id": 1210,
     "topicId": 1,
-    "question": "Como se expressa matematicamente o valor máximo da Força de Atrito Estático no limiar do movimento?",
+    "question": "De acordo com os princípios de equilíbrio de corpos rígidos estudados, qual é a condição física indispensável para assegurar o equilíbrio estático de rotação?",
     "options": [
-      "Fat,e_max = μe · N (onde μe é o coeficiente de atrito estático e N é o módulo da força normal de compressão).",
-      "Fat,e_max = μe / N (onde o atrito máximo é inversamente proporcional à força normal de suporte).",
-      "Fat,e_max = m · v² / 2 (onde o atrito é calculado pela energia cinética dos pneus do veículo).",
-      "Fat,e_max = μe · g · v (onde o atrito é obtido multiplicando o coeficiente pela gravidade e velocidade)."
+      "A velocidade linear do corpo tem de atingir a aceleração máxima admitida pelo módulo de elasticidade do material.",
+      "O somatório de todos os momentos de força em relação ao ponto de rotação tem de ser rigorosamente nulo (∑M = 0).",
+      "A força potente tem de ser exatamente igual a zero em qualquer instante, dispensando a aplicação de momentos fletores.",
+      "O somatório das forças verticais tem de ser estritamente superior ao dobro do somatório das forças horizontais atuantes."
     ],
-    "correctIndex": 0,
-    "explanation": "O limiar de deslizamento depende diretamente da adesão dos materiais (μe) e da compressão mútua das superfícies (N): Fat,e_max = μe·N.",
+    "correctIndex": 1,
+    "explanation": "Para que um corpo rígido não sofra aceleração angular em torno de um eixo ou fulcro, a soma algébrica de todos os momentos de força tem de ser nula (∑M = 0), o que equivale a dizer que a soma dos momentos no sentido horário iguala a soma dos momentos no sentido anti-horário (P · bp = R · br).",
     "distractorAnalysis": [
-      "Está incorreta: O atrito máximo é diretamente proporcional à força normal N e não inversamente proporcional.",
-      "Está incorreta: m·v²/2 é a expressão matemática da energia cinética escalar, expressa em Joules e não em Newtons.",
-      "Está incorreta: No repouso estático a velocidade é zero (v = 0); incluir velocidade anularia a expressão estática."
+      "Está incorreta: O equilíbrio de rotação exige ausência de aceleração angular e não uma velocidade linear máxima.",
+      "Está incorreta: A força potente não tem de ser zero; tem de gerar um momento que anule perfeitamente o momento da resistência.",
+      "Está incorreta: A relação entre forças verticais e horizontais não define o equilíbrio de rotação, que depende do balanço nulo de momentos."
     ],
-    "nursingApplication": "Permite calcular o esforço de tração mínimo indispensável para conseguir mover qualquer equipamento hospitalar."
+    "nursingApplication": "O enfermeiro aplica a condição de anulação de momentos (∑M = 0) ao contrabalançar o peso do utente durante transferências da cama para a cadeira, evitando a rotação descontrolada do corpo."
   },
   {
     "id": 1211,
     "topicId": 1,
-    "question": "Em qualquer par de materiais em contacto (ex: borracha-vinil, tecido-pele, metal-aço), como se comparam os coeficientes de atrito estático (μe) e cinético (μc)?",
+    "question": "A grande maioria das alavancas musculoesqueléticas do corpo humano são de 3.ª classe (interpotentes com VM < 1). Qual é a contrapartida biomecânica vantajosa desta disposição anatómica?",
     "options": [
-      "O coeficiente cinético é sempre dez vezes superior ao estático em todas as circunstâncias físicas.",
-      "Ambos os coeficientes são rigorosamente idênticos em todas as superfícies da natureza.",
-      "O coeficiente estático é sempre zero enquanto o cinético atinge valores próximos do infinito.",
-      "O coeficiente de atrito estático é SEMPRE maior do que o coeficiente de atrito cinético (μe > μc)."
+      "Permite anular a tensão de cisalhamento nas fáscias profundas sem consumir qualquer quantidade de oxigénio muscular.",
+      "Garante que qualquer músculo consiga erguer pesos infinitos com um esforço contrátil microscópico e indetetável.",
+      "Amplifica notavelmente a velocidade e a amplitude de deslocamento na extremidade distal livre do membro anatómico.",
+      "Converte a energia térmica corporal em energia gravitacional pura, dispensando a vascularização dos tendões distais."
     ],
-    "correctIndex": 3,
-    "explanation": "Em toda a literatura e ensaios experimentais de física e tribologia, verifica-se invariavelmente a desigualdade universal: μe > μc.",
+    "correctIndex": 2,
+    "explanation": "Nas alavancas de 3.ª classe, como a potência está inserida muito próxima da articulação (bp pequeno), um pequeno encurtamento do músculo produz uma deslocação muito ampla e rápida da extremidade do membro (mão ou pé), conferindo grande agilidade e velocidade aos movimentos corporais.",
     "distractorAnalysis": [
-      "Está incorreta: O coeficiente cinético é sempre inferior ao estático; mover um corpo exige menos força do que arrancar.",
-      "Está incorreta: Os coeficientes são distintos devido à dinâmica microscópica das microssoldaduras de contacto.",
-      "Está incorreta: O atrito estático é real e substancial (μe habitualmente entre 0,3 e 1,0 em sólidos comuns)."
+      "Está incorreta: As alavancas interpotentes exigem maior consumo energético e esforço muscular, pois operam com desvantagem mecânica de força.",
+      "Está incorreta: As alavancas de 3.ª classe não multiplicam a força potente; exigem maior força muscular para sustentar uma dada resistência.",
+      "Está incorreta: A biomecânica musculoesquelética rege-se pelas leis da mecânica clássica e não por conversões térmico-gravitacionais fictícias."
     ],
-    "nursingApplication": "Regra de ouro da mecânica lecionada na biofísica médica para enfermagem."
+    "nursingApplication": "Reconhecer que os membros humanos privilegiam a velocidade e a amplitude em detrimento da força orienta o enfermeiro a mobilizar as articulações dos doentes com movimentos graduais e suaves, prevenindo sobrecargas."
   },
   {
     "id": 1212,
     "topicId": 1,
-    "question": "Para uma maca hospitalar com doente (massa total 120 kg, g = 10 m/s², N = 1200 N) com coeficientes μe = 0,10 e μc = 0,05, qual é a força horizontal mínima necessária apenas para tirar a maca do repouso?",
+    "question": "Numa alavanca anatómica em equilíbrio estático horizontal, se uma resistência de 120 N atua a 25 cm do ponto de apoio, que força potente muscular é necessária se o braço de potência for de apenas 5 cm?",
     "options": [
-      "60 N (calculada multiplicando o coeficiente cinético pela massa total do doente e da maca).",
-      "120 N (calculada por Fat,e_max = μe · N = 0,10 · 1200 N = 120 N), garantindo o equilíbrio estático.",
-      "1200 N (calculada igualando a força horizontal diretamente ao peso vertical de todo o sistema).",
-      "12 N (calculada dividindo a força normal pela aceleração gravitacional local da Terra)."
+      "24 N, calculada assumindo que a força potente é sempre inversamente proporcional à aceleração da gravidade.",
+      "120 N, calculada considerando que forças e resistências têm obrigatoriamente a mesma intensidade em equilíbrio.",
+      "600 N, calculada a partir da condição fundamental de equilíbrio de momentos de força (P · bp = R · br).",
+      "3000 N, calculada multiplicando o peso da resistência pelo quadrado do comprimento total do segmento ósseo."
     ],
-    "correctIndex": 1,
-    "explanation": "Para iniciar o movimento a força aplicada tem de superar o atrito estático máximo: F > Fat,e_max = 0,10 · 1200 = 120 N (cerca de 12,2 kgf).",
+    "correctIndex": 2,
+    "explanation": "Pela condição de equilíbrio de rotação (P · bp = R · br), temos: P · 5 cm = 120 N · 25 cm ⇒ P = 3000 / 5 = 600 N. Como o braço de potência é 5 vezes menor do que o braço de resistência, a força potente muscular tem de ser 5 vezes maior para equilibrar o sistema.",
     "distractorAnalysis": [
-      "Está incorreta: 60 N (0,05 · 1200 = 60 N) é a força suficiente apenas para MANTER o movimento após este já ter sido iniciado.",
-      "Está incorreta: 1200 N seria a força necessária para levantar a maca verticalmente no ar contra a gravidade.",
-      "Está incorreta: 12 N seria insuficiente para vencer o atrito estático das rodas de poliuretano no piso vinílico."
+      "Está incorreta: 24 N seria o valor se o braço de potência fosse de 25 cm e o de resistência de 5 cm, invertendo a relação mecânica.",
+      "Está incorreta: 120 N ignora a desproporção entre os comprimentos dos braços de alavanca, que exige compensação da força.",
+      "Está incorreta: 3000 N é o valor do momento resistente em N·cm, e não o valor da força potente isolada em Newtons."
     ],
-    "nursingApplication": "Permite calcular e antecipar o esforço físico muscular de arranque na movimentação de equipamentos hospitalares."
+    "nursingApplication": "Este cálculo demonstra ao enfermeiro por que razão pequenas cargas erguidas na mão impõem aos músculos e tendões forças de centenas de Newtons, justificando a ergonomia nas tarefas assistenciais."
   },
   {
     "id": 1213,
@@ -4046,7 +4046,7 @@ const TOPIC_1_QUESTIONS = [
       "O bloqueio das rodas impede o aparecimento de atrito com o piso, fazendo com que a resistência sentida pelo enfermeiro seja provocada exclusivamente pela inércia da maca."
     ],
     "correctIndex": 0,
-    "explanation": "Empurrar uma carga com travões ativos força uma tentativa de vencer o atrito de borracha arrastada (μe muito alto), expondo a coluna a cargas perigosas.",
+    "explanation": "Empurrar uma carga com travões ativos força uma tentativa de vencer o atrito de borracha arrastada (atrito estático elevado), expondo a coluna a cargas perigosas.",
     "distractorAnalysis": [
       "Está incorreta: o atrito de deslizamento (borracha no piso) é dezenas de vezes superior à resistência ao rolamento livre com rodas a girar.",
       "Está incorreta: forças de atrito são puramente tangenciais à superfície e não alteram a atração gravitacional nem o peso real do doente.",
@@ -4057,116 +4057,116 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1214,
     "topicId": 1,
-    "question": "Como é que a presença de um filme fino de água ou óleo entre duas superfícies altera o coeficiente de atrito?",
+    "question": "Na extensão do antebraço pelo músculo tríceps braquial no cotovelo, qual é a configuração geométrica que classifica esta alavanca anatómica como de 1.ª classe (interfixa)?",
     "options": [
-      "Aumenta a força de atrito estático em cerca de dez vezes, unindo as duas superfícies por efeito de adesão superficial.",
-      "Mantém a força de atrito perfeitamente inalterada, uma vez que os fluidos não interferem no contacto atómico dos sólidos.",
-      "Anula completamente a força normal de compressão, impedindo que os corpos exerçam qualquer pressão vertical mútua.",
-      "Atua como lubrificante hidrodinâmico, separando as rugosidades microscópicas e reduzindo drasticamente o coeficiente de atrito."
+      "A inserção do tríceps no olecrano situa-se posteriormente ao eixo articular do cotovelo, ficando o fulcro entre a potência e a resistência.",
+      "A resistência situa-se no olecrano da ulna, ficando localizada entre a articulação do cotovelo e o tendão do músculo bíceps.",
+      "A força potente é exercida na extremidade dos dedos da mão, puxando o antebraço em direção ao ombro com vantagem mecânica.",
+      "O cotovelo funciona como ponto de potência móvel, deslocando a articulação no plano sagital sem apoio esquelético fixo."
     ],
-    "correctIndex": 3,
-    "explanation": "Filmes líquidos impedem o contacto atómico direto entre os sólidos, substituindo o atrito sólido pelo atrito viscoso do fluido (muito inferior).",
+    "correctIndex": 0,
+    "explanation": "No cotovelo em extensão, o olecrano da ulna projeta-se para trás do eixo de rotação articular: o tríceps traciona o olecrano posteriormente (potência), a articulação do cotovelo situa-se no meio (fulcro) e o antebraço/mão projeta-se anteriormente (resistência), caracterizando uma alavanca interfixa (1.ª classe).",
     "distractorAnalysis": [
-      "Está incorreta: películas de líquido fluido atuam como lubrificantes reduzindo o atrito de deslizamento, não fixando rigidamente as superfícies.",
-      "Está incorreta: a camada de fluido separa as asperezas sólidas, substituindo o atrito seco por atrito viscoso muito inferior.",
-      "Está incorreta: a força normal de suporte mantém-se presente (sustenta o peso do corpo), sendo o coeficiente de atrito que diminui."
+      "Está incorreta: A resistência localiza-se no peso do antebraço e mão, e não no olecrano da ulna que recebe a potência.",
+      "Está incorreta: A força potente do tríceps atua no olecrano da ulna proximal e não na extremidade distal dos dedos.",
+      "Está incorreta: A articulação do cotovelo atua como fulcro anatómico estável em torno do qual se processa a rotação óssea."
     ],
-    "nursingApplication": "Explica porque derrames de soro fisiológico ou urina no chão aumentam imediatamente o risco de quedas graves por escorregamento."
+    "nursingApplication": "A alavanca interfixa do tríceps é fundamental na transferência do doente para a cadeira de rodas, onde a extensão dos cotovelos apoia o peso do tronco para aliviar a carga nos membros inferiores."
   },
   {
     "id": 1215,
     "topicId": 1,
-    "question": "O que expressa o coeficiente de atrito (μ) em termos de grandezas físicas e unidades no Sistema Internacional?",
+    "question": "Como se define o conceito físico de Vantagem Mecânica (VM) numa alavanca e que valor apresenta quando o braço de potência é superior ao braço de resistência (bp > br)?",
     "options": [
-      "É expresso em Newtons por metro quadrado (N/m²), quantificando a pressão mecânica de cisalhamento desenvolvida no piso.",
-      "É um número adimensional (puro escalar sem unidades), representando a razão física entre duas forças perpendiculares: Fatrito e Força Normal.",
-      "É medido em Quilogramas-força, representando a massa mínima necessária para iniciar o movimento de rolamento na superfície.",
-      "É expresso em Joules por segundo (Watts), correspondendo à taxa de calor dissipada por atrito durante a marcha hospitalar."
+      "Define-se pela razão VM = R / P = bp / br, sendo um valor estritamente superior a um (VM > 1), significando multiplicação da força.",
+      "Define-se pela soma escalar de todas as massas, sendo sempre igual a zero em qualquer sistema biológico equilibrado.",
+      "Define-se pela razão inversa VM = P / R = br / bp, apresentando um valor estritamente negativo em regimes estacionários.",
+      "Define-se pelo produto da potência pelo tempo, sendo uma grandeza expressa em Joules por segundo no Sistema Internacional."
     ],
-    "correctIndex": 1,
-    "explanation": "Como μ é a razão entre duas forças expressas na mesma unidade (Newtons divididos por Newtons), o quociente não possui dimensão física ([μ] = 1).",
+    "correctIndex": 0,
+    "explanation": "A Vantagem Mecânica quantifica o ganho de força proporcionado pela alavanca: VM = R / P = bp / br. Quando o braço de potência é maior do que o braço de resistência (bp > br), a vantagem mecânica é maior do que 1 (VM > 1), permitindo sustentar uma resistência grande com uma força potente reduzida.",
     "distractorAnalysis": [
-      "Está incorreta: o coeficiente de atrito é a razão entre duas forças (μ = Fat / N); dividindo Newtons por Newtons obtém-se uma grandeza adimensional.",
-      "Está incorreta: quilogramas-força é unidade de força obsoleta; μ é uma constante adimensional de proporcionalidade interfacial.",
-      "Está incorreta: Watts quantifica potência mecânica ou térmica e não o coeficiente de atrito entre superfícies em contacto sólido."
+      "Está incorreta: A vantagem mecânica é uma razão dimensional nula (adimensional) e não a soma das massas do sistema.",
+      "Está incorreta: A vantagem mecânica convencional define a razão entre resistência e potência (R/P), sendo estritamente positiva.",
+      "Está incorreta: O produto da força pelo tempo ou potência pelo tempo diz respeito a trabalho ou impulso e não a vantagem mecânica."
     ],
-    "nursingApplication": "Assegura a precisão conceitual dos estudantes de enfermagem em cálculos e análises tribológicas biomecânicas."
+    "nursingApplication": "Dispositivos hospitalares com braços de alavanca longos (como alavancas de elevação de camas e gruas de transferência) utilizam VM > 1 para facilitar a movimentação segura de doentes com mínimo esforço físico."
   },
   {
     "id": 1216,
     "topicId": 1,
-    "question": "De acordo com a clássica Lei de Amontons (Século XVII), o que acontece à força de atrito estático máximo entre um tijolo e uma mesa se o apoiarmos sobre a sua face de maior área em vez da face de menor área?",
+    "question": "Sob a perspetiva da biomecânica da coluna vertebral, por que razão erguer uma carga pesada mantendo-a encostada ao tronco reduz o risco de lombalgia em relação a erguê-la com os braços afastados?",
     "options": [
-      "A força de atrito é inversamente proporcional à força normal e depende do volume geométrico dos corpos em repouso.",
-      "A força de atrito duplica sempre que a área de contacto aparente é duplicada pelo reposicionamento postural do corpo.",
-      "A força de atrito de deslizamento é diretamente proporcional à carga normal e é independente da área aparente de contacto entre os corpos.",
-      "A força de atrito só existe em superfícies perfeitamente polidas que tenham sido previamente lubrificadas com água ou soro."
+      "Porque manter a carga encostada ao corpo reduz a massa inercial da carga em Newtons pela ação do calor corporal.",
+      "Porque minimiza a distância perpendicular (braço de momento) da carga ao eixo lombar L5-S1, diminuindo o torque de flexão na coluna.",
+      "Porque anula completamente o momento exercido pelos músculos eretores da espinha, eliminando as forças de compressão discal.",
+      "Porque transforma a coluna vertebral numa alavanca de 2.ª classe pura com o ponto de apoio situado no osso esterno anterior."
     ],
-    "correctIndex": 2,
-    "explanation": "Aumentar a área aparente A diminui a pressão local (p = F/A); as duas variações compensam-se perfeitamente, mantendo a área real de contacto microscópico constante.",
+    "correctIndex": 1,
+    "explanation": "O momento resistente que flete a coluna é dado por M = F · d. Ao manter a carga encostada ao peito ou abdómen, a distância d ao centro de rotação discal (L5-S1) é mínima. Se a carga for afastada, d duplica ou triplica, exigindo que os músculos lombares exerçam forças enormes para equilibrar o torque, multiplicando a compressão nos discos intervertebrais.",
     "distractorAnalysis": [
-      "Está incorreta: as leis de Amontons (1699) estabelecem que Fat é diretamente proporcional à força normal e independe da área de apoio.",
-      "Está incorreta: a independência da área aparente de contacto é precisamente o postulado clássico da segunda lei de Amontons.",
-      "Está incorreta: o atrito manifesta-se em todas as superfícies sólidas secas reais e atinge valores máximos em superfícies rugosas sem lubrificação."
+      "Está incorreta: A massa da carga permanece invariável; o que se reduz é a distância perpendicular e o momento resultante da força peso.",
+      "Está incorreta: Os músculos lombares continuam a atuar para manter a postura, mas a força necessária é muito menor.",
+      "Está incorreta: A coluna lombar atua fundamentalmente como alavanca de 1.ª classe com o disco como fulcro, mantendo essa classe funcional."
     ],
-    "nursingApplication": "Demonstra um princípio físico contraintuitivo mas fundamental: espalhar a carga por maior área não altera a força de atrito total em sólidos rígidos."
+    "nursingApplication": "Esta regra biomecânica fundamenta a principal recomendação ergonómica de enfermagem: mobilizar cargas e utentes sempre junto ao tronco, evitando a projeção anterior dos membros superiores para proteger a coluna."
   },
   {
     "id": 1217,
     "topicId": 1,
-    "question": "Porque é que a área aparente de contacto não entra na fórmula fundamental da força de atrito clássico (Fat = μ · N)?",
+    "question": "No corpo humano adulto em posição ortostática de repouso (posição anatómica), onde se localiza o Centro de Gravidade (CG) e o que representa esse ponto?",
     "options": [
-      "Porque o coeficiente de atrito cinético varia de forma inversamente proporcional à aceleração gravitacional local.",
-      "Porque a área de contacto é uma grandeza vetorial que se cancela com a aceleração da gravidade na equação dinâmica.",
-      "Porque a pressão atmosférica comprime os corpos materiais com a mesma intensidade em todas as direções do espaço.",
-      "Porque ao aumentar a área aparente a pressão diminui na mesma proporção, mantendo a área real de contacto constante."
+      "Localiza-se no manúbrio esternal ao nível de T2, representando o ponto de maior pressão hidrostática dos grandes vasos.",
+      "Localiza-se no plano sagital mediano anteriormente à segunda vértebra sagrada (S2), sendo o ponto de aplicação do peso corporal total.",
+      "Localiza-se exatamente entre as duas rótulas dos joelhos, representando o ponto de equilíbrio de translação da marcha.",
+      "Localiza-se no forímen magno da base do crânio, sendo o centro de comando neuromotor das respostas de endireitamento."
     ],
-    "correctIndex": 3,
-    "explanation": "Maior área aparente = menor pressão local = menor deformação por pico; a soma das microáreas de contacto real permanece rigorosamente idêntica para o mesmo N.",
+    "correctIndex": 1,
+    "explanation": "No ser humano adulto em posição anatómica ereta neutra, o centro de gravidade localiza-se na pelve, ligeiramente anterior à segunda vértebra sagrada (S2), correspondendo ao ponto imaginário onde se pode considerar concentrada toda a força peso resultante do corpo humano.",
     "distractorAnalysis": [
-      "Está incorreta: o coeficiente de atrito independe da gravidade terrestre, dependendo apenas das propriedades físico-químicas das superfícies.",
-      "Está incorreta: a área é uma grandeza puramente escalar (m²) e não um vetor que se possa anular com a aceleração da gravidade.",
-      "Está incorreta: a pressão atmosférica atua isotropicamente, mas não é a causa da independência entre o atrito seco e a área macroscópica."
+      "Está incorreta: O CG humano situa-se na pelve (S2) e não no tórax superior ou no esterno em posição bípede padrão.",
+      "Está incorreta: O ponto de equilíbrio articular do joelho é muito distal em relação ao centro de gravidade corporal global.",
+      "Está incorreta: O forímen magno aloja a transição bolbo-medular no crânio, encontrando-se muito acima do centro de gravidade corporal."
     ],
-    "nursingApplication": "Ensina o pensamento crítico e a distinção entre a 'área aparente' visível a olho nu e a 'área real' microscópica de contacto atómico."
+    "nursingApplication": "O controlo do centro de gravidade em S2 orienta a colocação de cintos de transferência pélvicos, permitindo ao enfermeiro guiar o centro de massa do doente com eficácia e segurança mecânica."
   },
   {
     "id": 1218,
     "topicId": 1,
-    "question": "Como se concilia o facto de que aumentar a área de apoio reduz a pressão nos tecidos (prevenindo desconforto), mas não reduz a força total de atrito ao mover o doente?",
+    "question": "De acordo com os princípios biomecânicos de estabilidade postural, qual é a consequência de fletir ligeiramente os joelhos e as ancas durante o posicionamento ou transferência de um doente?",
     "options": [
-      "A pressão diminui mas o atrito aumenta devido à compressão transversal dos tecidos pelo efeito de Poisson no leito.",
-      "A pressão e o atrito anulam-se mutuamente sempre que o corpo humano é colocado em decúbito dorsal perfeitamente alinhado.",
-      "A pressão mecânica dérmica local depende da área (p = F/A), mas a força total de atrito depende apenas da normal e de μ.",
-      "A força total de atrito depende diretamente do volume corporal total, independentemente do peso e da força normal do utente."
+      "Eleva o centro de gravidade do corpo, tornando a postura instável e aumentando a probabilidade de oscilações involuntárias.",
+      "Desce o centro de gravidade em direção à base de sustentação, aumentando significativamente a estabilidade mecânica do profissional.",
+      "Desloca a linha de gravidade para fora dos bordos da base de sustentação, induzindo um momento de queda para a frente.",
+      "Elimina a ação da força peso sobre os membros inferiores, convertendo o equilíbrio estático em equilíbrio indiferente."
     ],
-    "correctIndex": 2,
-    "explanation": "Aumentar a área protege a pele e tecidos contra picos de compressão (p = F/A baixo), mas para movimentar o doente o enfermeiro tem de vencer a mesma força de atrito Fat = μ·N.",
+    "correctIndex": 1,
+    "explanation": "Um corpo atinge maior estabilidade postural quando o seu centro de gravidade se encontra mais próximo do solo (mais baixo) e a sua linha de gravidade cai centrada na base de apoio. Fletir os joelhos e as ancas baixa o CG, aumentando a resistência a forças desestabilizadoras externas.",
     "distractorAnalysis": [
-      "Está incorreta: a deformação elástica dos tecidos amortece a pressão local, mas a força de atrito global continua dependente de Fat = μ·N.",
-      "Está incorreta: o peso continua a ser suportado (∑N = P); a pressão é o quociente local e a força de atrito é a resistência tangencial global.",
-      "Está incorreta: a força de atrito depende do peso e da força normal de suporte (Fat = μ·N), e não do volume geométrico do doente."
+      "Está incorreta: A flexão dos membros inferiores baixa o centro de gravidade, ao passo que a extensão máxima (em pontas dos pés) é que o eleva.",
+      "Está incorreta: Fletir os joelhos mantém a linha de gravidade bem centrada na base, prevenindo quedas e desequilíbrios.",
+      "Está incorreta: A força gravítica continua a atuar plenamente; a postura fletida otimiza os braços de alavanca musculares."
     ],
-    "nursingApplication": "Síntese conceitual de altíssimo valor pedagógico que desfaz uma das maiores confusões na aprendizagem de enfermagem."
+    "nursingApplication": "O enfermeiro adota rotineiramente a postura de joelhos semifletidos ao manipular doentes, rebaixando o seu próprio centro de gravidade para garantir estabilidade e força controlada."
   },
   {
     "id": 1219,
     "topicId": 1,
-    "question": "Se o coeficiente de atrito de deslizamento da borracha no vinil for μ_desl = 0,5 e o coeficiente de resistência ao rolamento de um rodízio bem lubrificado for μ_rol = 0,01, qual é a razão entre as forças necessárias para empurrar uma maca de 100 kg?",
+    "question": "Como se define a Base de Sustentação (BS) na postura bípede e que benefício biomecânico resulta de afastar os pés à largura dos ombros (cerca de 30 a 40 cm)?",
     "options": [
-      "Empurrar a maca a rolar exige 50 vezes menos força do que arrastá-la com as rodas bloqueadas (10 N a rolar vs 500 N a deslizar).",
-      "Empurrar a maca a rolar exige a mesma força porque a massa do doente acamado é de 100 kg em ambos os casos.",
-      "Arrastar a maca exige dez vezes menos força porque o atrito cinético de deslizamento lubrifica o piso hospitalar.",
-      "Empurrar a maca a rolar exige o dobro da força porque os rolamentos das rodas absorvem energia mecânica."
+      "É a área delimitada pelo perímetro do tórax; afastar os pés reduz a base e facilita o movimento de rotação do tronco.",
+      "É a massa dos membros inferiores; afastar os pés reduz a inércia rotacional do esqueleto apendicular durante o repouso.",
+      "É o polígono delimitado pelos pontos de apoio dos pés no solo; afastar os pés amplia a base e confere maior estabilidade postural.",
+      "É a distância vertical entre o CG e o chão; afastar os pés eleva essa distância, tornando o equilíbrio mais vulnerável."
     ],
-    "correctIndex": 0,
-    "explanation": "F_desl = 0,5 · 1000 = 500 N; F_rol = 0,01 · 1000 = 10 N. Razão: 500 / 10 = 50 vezes menos esforço muscular!",
+    "correctIndex": 2,
+    "explanation": "A base de sustentação é a área geométrica delimitada pelo contorno exterior dos pontos de apoio com a superfície. Afastar os pés à largura dos ombros alarga o polígono de sustentação, aumentando a margem de segurança para que a linha de gravidade não ultrapasse os bordos da base.",
     "distractorAnalysis": [
-      "Está incorreta: Mesma massa com mecanismos de atrito diferentes exige forças de deslocamento radicalmente diferentes.",
-      "Está incorreta: Deslizar rodas bloqueadas requer força colossal (500 N ~ 51 kgf), arruinando a borracha e o piso.",
-      "Está incorreta: Rolamentos de esferas com boa manutenção minimizam perdas, tornando o avanço extremamente suave e leve."
+      "Está incorreta: A base de sustentação define-se pelos apoios no pavimento (pés) e não pelo diâmetro do tórax.",
+      "Está incorreta: A base de sustentação é uma área geométrica de apoio e não a massa inercial dos membros inferiores.",
+      "Está incorreta: Afastar os pés não eleva o centro de gravidade; amplia a área de suporte horizontal, reforçando o equilíbrio."
     ],
-    "nursingApplication": "Demonstra a magnitude colossal da vantagem mecânica proporcionada pelos rodízios no trabalho hospitalar diário."
+    "nursingApplication": "Ao orientar doentes com risco de queda a afastar ligeiramente os pés ao levantar-se, o enfermeiro amplia a base de sustentação e diminui significativamente o risco de desequilíbrio postural."
   },
   {
     "id": 1220,
@@ -4190,21 +4190,21 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1221,
     "topicId": 1,
-    "question": "Se o coeficiente de atrito entre o corpo do doente de 80 kg e um lençol comum for μ = 0,5, mas ao usar uma tela deslizante cair para μ = 0,08, qual é a redução na força necessária para o puxar?",
+    "question": "No resumo curricular das condições de estabilidade e prevenção de quedas, como atua um andarilho ou um par de canadianas na segurança da marcha de um utente com défice motor?",
     "options": [
-      "A força diminui apenas 42 N (de 400 N para 358 N), correspondendo a uma redução modesta de 10% no esforço lombar dos profissionais de saúde.",
-      "A força de tração mantém-se em 800 N porque o peso do doente permanece constante e determina obrigatoriamente a resistência ao movimento.",
-      "A força de atrito diminui de 400 N para apenas 64 N (adotando g = 10 m/s²), uma redução espetacular de 84% no esforço exigido à equipa.",
-      "A força necessária reduz-se exatamente a metade (caindo para 200 N), visto que qualquer dispositivo auxiliar divide a carga por dois."
+      "Multiplica a área da base de sustentação em cerca de 3 a 5 vezes, acomodando oscilações da linha de gravidade com segurança.",
+      "Neutraliza o coeficiente de restituição dos tecidos ósseos, impedindo a fadiga elástica da cartilagem articular.",
+      "Desloca o centro de gravidade do corpo para o interior do solo, tornando a estabilidade puramente independente da gravidade.",
+      "Substitui as alavancas anatómicas de 3.ª classe dos membros inferiores por alavancas de 1.ª classe nos membros superiores."
     ],
-    "correctIndex": 2,
-    "explanation": "Fat_antigo = 0,5 · 800 = 400 N; Fat_novo = 0,08 · 800 = 64 N. Redução: 400 - 64 = 336 N (84% menos esforço manual).",
+    "correctIndex": 0,
+    "explanation": "Os conceitos lecionados destacam expressamente: dispositivos de apoio como andarilhos e canadianas multiplicam a área da base de sustentação em 3 a 5 vezes em comparação com o apoio podálico simples, garantindo que mesmo com oscilações posturais a linha de gravidade permaneça dentro da base segura.",
     "distractorAnalysis": [
-      "Está incorreta: com μ = 0,08 a nova força é 0,08 × 800 N = 64 N; a redução real é de 336 N (84%), muito superior a 42 N.",
-      "Está incorreta: o peso determina a normal, mas a força de atrito depende diretamente de μ (Fat = μ·N), descendo drasticamente com a tela.",
-      "Está incorreta: a tela de baixo atrito reduz a força proporcionalmente à queda de μ (de 0,5 para 0,08, ou seja, 84%), e não em apenas 50%."
+      "Está incorreta: O dispositivo de apoio atua na geometria da base de sustentação e não nas propriedades elásticas microscópicas do osso.",
+      "Está incorreta: O centro de gravidade permanece na pelve anatómica do indivíduo; o que se expande é o polígono de suporte no chão.",
+      "Está incorreta: O andarilho não altera a classe anatómica das alavancas corporais, atuando como suporte mecânico suplementar."
     ],
-    "nursingApplication": "Demonstração matemática incontestável do impacto protetor dos dispositivos ergonómicos de baixa fricção."
+    "nursingApplication": "O enfermeiro ensina o doente a caminhar posicionando-se sempre dentro do perímetro do andarilho, evitando que este seja projetado demasiado à frente da linha de gravidade."
   },
   {
     "id": 1222,
@@ -4270,14 +4270,14 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Aumento espontâneo da massa inercial do conjunto provocado pelo ganho progressivo de altitude no edifício hospitalar.",
       "Ter de equilibrar a componente do peso paralela ao plano inclinado (Pt = m·g·sen θ), que puxa a massa rampa abaixo.",
-      "Aumento do coeficiente de atrito cinético entre as rodas e o piso, que cresce proporcionalmente à inclinação da rampa.",
+      "Aumento do atrito cinético entre as rodas e o piso, que cresce proporcionalmente à inclinação da rampa.",
       "Diminuição da pressão atmosférica local, que gera um diferencial de pressão adverso contra a frente da maca hospitalar."
     ],
     "correctIndex": 1,
     "explanation": "No plano inclinado, o peso decompõe-se: Pn = m·g·cos θ (perpendicular) e Pt = m·g·sen θ (paralela descendente que tem de ser vencida).",
     "distractorAnalysis": [
       "Está incorreta: a massa inercial do corpo é uma propriedade intrínseca invariável com a pequena altitude de uma rampa hospitalar.",
-      "Está incorreta: o coeficiente de atrito depende dos materiais em contacto e não da inclinação geométrica do plano.",
+      "Está incorreta: o atrito depende dos materiais em contacto e não da inclinação geométrica do plano.",
       "Está incorreta: variações de pressão atmosférica numa rampa hospitalar são impercetíveis e não criam forças resistentes mensuráveis."
     ],
     "nursingApplication": "Alerta a enfermagem para a necessidade de pedir auxílio de múltiplos colegas ao transitar com utentes bariátricos em rampas."
@@ -4293,7 +4293,7 @@ const TOPIC_1_QUESTIONS = [
       "Ambas as componentes se cancelam mutuamente, resultando numa força de atrito igual à que existiria sem inclinação."
     ],
     "correctIndex": 2,
-    "explanation": "Força inclinada para baixo: N = m·g + F·sen θ. Maior normal N gera maior atrito cinético (Fat = μc·N), exigindo mais esforço do enfermeiro.",
+    "explanation": "Força inclinada para baixo: N = m·g + F·sen θ. Maior normal N gera maior atrito cinético (a força de atrito), exigindo mais esforço do enfermeiro.",
     "distractorAnalysis": [
       "Está incorreta: embora a componente horizontal (Fx = F·cos θ) cause o deslocamento, a componente vertical (Fy = F·sen θ) altera a força normal e o atrito, que não permanece inalterado.",
       "Está incorreta: para anular o peso do doente, a componente vertical teria de ser igual e oposta ao peso, o que implicaria uma força de empurrar para cima e não para baixo; numa força oblíqua descendente, Fy soma-se ao peso.",
@@ -4365,7 +4365,7 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "O Peso atua exclusivamente na direção horizontal, enquanto a Força Normal atua obrigatoriamente na direção vertical descendente.",
       "Têm naturezas físicas completamente diferentes: o Peso é uma força gravitacional de campo à distância, enquanto a Normal é uma força eletromagnética de contacto.",
-      "O Peso depende do coeficiente de atrito entre os tecidos, enquanto a Força Normal é uma constante que independe da massa do corpo.",
+      "O Peso depende do atrito entre os tecidos, enquanto a Força Normal é uma constante que independe da massa do corpo.",
       "O Peso só existe em corpos em movimento acelerado, enquanto a Força Normal só se manifesta em corpos mantidos em repouso absoluto."
     ],
     "correctIndex": 1,
@@ -4572,13 +4572,13 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Em fisioterapia, ao tracionar uma articulação ligeiramente para aliviar a compressão antes de realizar um movimento de deslizamento passivo, o objetivo é:",
     "options": [
-      "Aumentar o coeficiente de atrito articular estático para permitir que as extremidades ósseas se fixem rigidamente na nova amplitude funcional sem deslizar.",
+      "Aumentar o atrito articular estático para permitir que as extremidades ósseas se fixem rigidamente na nova amplitude funcional sem deslizar.",
       "Aumentar a força normal de compressão entre os meniscos para espremer mais líquido sinovial e bloquear temporariamente a mobilidade dos ligamentos cruzados.",
       "Anular a força peso de todo o membro inferior para permitir que a musculatura agonista execute contrações isométricas em suspensão gravitacional nula.",
       "Diminuir a força normal entre as superfícies cartilagíneas articulares (aliviando N), reduzindo assim o atrito estático máximo e facilitando a mobilização sem dor."
     ],
     "correctIndex": 3,
-    "explanation": "Fat_max = μe·N. Ao diminuir a força normal de compressão articular através de ligeira descompressão longitudinal, a força de atrito articular é minimizada.",
+    "explanation": "a força máxima de atrito. Ao diminuir a força normal de compressão articular através de ligeira descompressão longitudinal, a força de atrito articular é minimizada.",
     "distractorAnalysis": [
       "Está incorreta: o objetivo da tração articular é reduzir o atrito e a dor por descompressão das superfícies cartilagíneas, não aumentar a fricção.",
       "Está incorreta: a tração afasta as superfícies reduzindo a força normal (N), aliviando a compressão sobre meniscos e cartilagens articulares.",
@@ -4593,11 +4593,11 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "A força de atrito atua para a frente com intensidade de 200 N, empurrando a cadeira no sentido do topo da rampa inclinada por inércia motora.",
       "A força de atrito é estritamente nula porque a cadeira de rodas se encontra com os travões mecânicos acionados em repouso estático absoluto.",
-      "A força de atrito estático atua ao longo da rampa (subindo), equilibrando a componente tangencial do peso (Fat,e = P·sen θ) para evitar o deslizamento.",
+      "A força de atrito estático atua ao longo da rampa (subindo), equilibrando a componente tangencial do peso (Fa = P·sen θ) para evitar o deslizamento.",
       "A força de atrito converte-se numa força normal perpendicular ao piso que anula a gravidade local exercida sobre a massa total do utente."
     ],
     "correctIndex": 2,
-    "explanation": "No eixo paralelo ao plano (eixo x): ∑Fx = Pt - Fat,e = 0 ⇒ Fat,e = Pt = m·g·sen θ. O atrito estático equilibra exatamente a tendência de descida.",
+    "explanation": "No eixo paralelo ao plano (eixo x): ∑Fx = Pt - Fa = 0 ⇒ Fa = Pt = m·g·sen θ. O atrito estático equilibra exatamente a tendência de descida.",
     "distractorAnalysis": [
       "Está incorreta: a componente que tende a descer a rampa é Pt = P·sen θ; a força de atrito atua no sentido oposto (subindo a rampa) para travar.",
       "Está incorreta: na rampa há uma tendência permanente de escorregamento descendente; o atrito estático dos travões atua com valor igual a P·sen θ.",
@@ -4629,16 +4629,16 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Como é que o material e o acabamento das luvas de procedimento (látex, nitrilo ou vinil) influenciam a força de preensão manual do enfermeiro ao segurar instrumentos molhados?",
     "options": [
-      "O vinil liso apresenta o maior coeficiente de atrito estático em presença de água e sangue, permitindo manipular pinças cirúrgicas com força muscular de aperto quase nula.",
+      "O vinil liso apresenta o maior atrito estático em presença de água e sangue, permitindo manipular pinças cirúrgicas com força muscular de aperto quase nula.",
       "O acabamento e o material da luva são indiferentes para a preensão, uma vez que a força de aperto requerida depende exclusivamente da massa inercial do instrumento metálico.",
-      "O látex e o nitrilo microtexturado possuem um coeficiente de atrito estático superior em meio húmido, exigindo menor força de aperto muscular dos dedos para impedir que os objetos escorreguem.",
+      "O látex e o nitrilo microtexturado possuem um atrito estático superior em meio húmido, exigindo menor força de aperto muscular dos dedos para impedir que os objetos escorreguem.",
       "As luvas de látex perdem toda a capacidade elástica em meio húmido, convertendo as forças de atrito superficial em forças repulsivas que empurram os objetos para fora da mão."
     ],
     "correctIndex": 2,
-    "explanation": "Fat_max = μe · N. Com um coeficiente μe mais alto nas pontas dos dedos, a força normal N (aperto muscular) necessária para segurar a pinça com segurança cai substancialmente.",
+    "explanation": "a força máxima de atrito. Com um atrito estático mais alto nas pontas dos dedos, a força normal N (aperto muscular) necessária para segurar a pinça com segurança cai substancialmente.",
     "distractorAnalysis": [
       "Está incorreta: o vinil liso perde quase todo o atrito em meio húmido tornando-se extremamente escorregadio, exigindo força muscular excessiva para segurar objetos.",
-      "Está incorreta: a força normal de preensão necessária depende criticamente do coeficiente de atrito (Fat = μ·N); materiais com menor μ exigem maior aperto muscular.",
+      "Está incorreta: a força normal de preensão necessária depende criticamente do atrito (Fat = ·N); materiais com menor atrito exigem maior aperto muscular.",
       "Está incorreta: o látex mantém elasticidade e atrito relativamente elevados na presença de humidade, não gerando forças de repulsão física sobre instrumentos."
     ],
     "nursingApplication": "Permite ao profissional selecionar o equipamento de proteção individual que otimize a ergonomia e precisão técnica."
@@ -4711,7 +4711,7 @@ const TOPIC_1_QUESTIONS = [
       "O momento de inércia angular dos rodízios frontais que gera uma resistência giroscópica suficiente para imobilizar o doente na posição ortostática."
     ],
     "correctIndex": 1,
-    "explanation": "A pressão vertical nas pegas empurra as ponteiras de borracha contra o solo, aumentando a força normal (N) e a força de atrito (Fat = μ · N), parando o equipamento de imediato.",
+    "explanation": "A pressão vertical nas pegas empurra as ponteiras de borracha contra o solo, aumentando a força normal (N) e a força de atrito (a força de atrito), parando o equipamento de imediato.",
     "distractorAnalysis": [
       "Está incorreta: o andarilho comum não tem amortecedores pneumáticos nem mecanismos retráteis; a travagem é por fricção das ponteiras traseiras.",
       "Está incorreta: este equipamento é mecânico passivo, sem baterias, sensores de pressão ou sistemas de travagem hidráulica.",
@@ -5126,7 +5126,7 @@ const TOPIC_1_QUESTIONS = [
       "É necessário que as forças sejam geradas por fontes gravitacionais localizadas em hemisférios opostos do globo terrestre.",
       "É necessário que o corpo esteja aquecido a uma temperatura constante para manter estável a densidade dos tecidos.",
       "É necessário que ambas as forças estejam aplicadas simultaneamente sobre o mesmo corpo material.",
-      "É necessário que o coeficiente de atrito estático entre as superfícies de apoio seja estritamente nulo."
+      "É necessário que o atrito estático entre as superfícies de apoio seja estritamente nulo."
     ],
     "correctIndex": 2,
     "explanation": "O equilíbrio estático de um corpo (∑F = 0) exige forças concorrentes aplicadas nesse mesmo corpo que se compensem vetorialmente.",
@@ -5349,21 +5349,21 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1282,
     "topicId": 1,
-    "question": "Considere uma maca hospitalar com doente com massa total de 120 kg (força normal N = 1200 N, assumindo g = 10 m/s²) e coeficientes de atrito com o piso μe = 0,10 e μc = 0,05. Após entrar em andamento a velocidade constante de 1 m/s, qual é a força horizontal de empurrão contínuo necessária para a manter em movimento retilíneo e uniforme (MRU)?",
+    "question": "Num plano inclinado com ângulo de inclinação onde um corpo se encontra em equilíbrio estático, que relações de forças se verificam rigorosamente de acordo com os conceitos de Biofísica lecionados?",
     "options": [
-      "120 N (porque a força de atrito resistente mantém o mesmo valor estático inicial após o início do movimento da maca).",
-      "Zero N (admitindo erradamente que corpos em movimento retilíneo uniforme no hospital não enfrentam atrito de rolamento).",
-      "60 N (calculada por F = Fat,c = μc · N = 0,05 · 1200 N = 60 N), exatamente metade da força exigida no arranque inicial.",
-      "240 N (supondo incorretamente que a velocidade linear duplica a resistência de contacto com o pavimento da enfermaria)."
+      "A força peso é rigorosamente nula e as forças normais e de atrito equilibram-se mutuamente no vértice do plano inclinado.",
+      "A componente normal do peso é equilibrada pela força normal (Pn = N) e a componente tangencial do peso é equilibrada pelo atrito (Pt = Fa).",
+      "A força normal equilibra diretamente a componente tangencial do peso (N = Pt), sendo a componente perpendicular anulada pelo ar.",
+      "A força de atrito aponta sempre para baixo no plano, somando-se à componente tangencial para acelerar o corpo em repouso estático."
     ],
-    "correctIndex": 2,
-    "explanation": "Em MRU (a = 0): F_empurrão = Fat,c = μc · N = 0,05 · 1200 = 60 N. O esforço cai para metade após o repouso ser vencido.",
+    "correctIndex": 1,
+    "explanation": "Conforme explicitado no slide de Biofísica sobre equilíbrio no plano inclinado: o peso decompõe-se em duas componentes perpendiculares entre si. Em equilíbrio estático, a componente perpendicular do peso é equilibrada pela força normal (Pn = N) e a componente tangencial é equilibrada pela força de atrito (Pt = Fa).",
     "distractorAnalysis": [
-      "Está incorreta: o atrito cinético é significativamente menor do que o atrito estático de arranque inicial (μc < μe).",
-      "Está incorreta: para manter a velocidade constante na presença de atrito real com o solo é necessário aplicar força contínua igual ao atrito cinético.",
-      "Está incorreta: o atrito de rolamento e deslizamento a baixas velocidades clínicas não duplica com a velocidade da marcha."
+      "Está incorreta: O peso não é nulo; atua plenamente e decompõe-se nas componentes Pn e Pt em relação ao plano inclinado.",
+      "Está incorreta: A força normal equilibra a componente perpendicular Pn e não a componente tangencial Pt ao longo do plano.",
+      "Está incorreta: A força de atrito estático opõe-se à tendência de descida, apontando para cima ao longo do plano inclinado."
     ],
-    "nursingApplication": "Confirma analiticamente a lei física: manter o movimento requer substancialmente menos esforço do que o arranque."
+    "nursingApplication": "Ao elevar a cabeceira da cama hospitalar, o enfermeiro sabe que a componente tangencial Pt aumenta com a inclinação, exigindo medidas para prevenir que o utente deslize em direção ao fundo do leito."
   },
   {
     "id": 1283,
@@ -5797,7 +5797,7 @@ const TOPIC_1_QUESTIONS = [
     "explanation": "Os tendões atuam como molas biológicas: acumulam energia potencial elástica na fase de carga e devolvem-na no recuo elástico.",
     "distractorAnalysis": [
       "Está incorreta: o armazenamento elástico reduz o custo metabólico muscular na propulsão, mas não elimina a necessidade de contração ativa do tríceps sural.",
-      "Está incorreta: o tendão armazena energia interna de deformação e não interfere diretamente no coeficiente de atrito entre a sola do calçado e o chão.",
+      "Está incorreta: o tendão armazena energia interna de deformação e não interfere diretamente no atrito entre a sola do calçado e o chão.",
       "Está incorreta: a função do tendão de Aquiles é estabilizar a articulação e transmitir tração propulsora, mantendo a estabilidade dentro dos limites fisiológicos."
     ],
     "nursingApplication": "A perda de elasticidade no idoso aumenta o custo metabólico da locomoção, acelerando a fadiga muscular e o risco de quedas."
@@ -6094,7 +6094,7 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "A temperatura axilar média, expressa clinicamente em graus Celsius (°C).",
       "O volume plasmático circulante, medido em mililitros por quilograma de peso corporal.",
-      "O coeficiente de atrito estático, que é uma grandeza adimensional da superfície de contacto.",
+      "O atrito estático, que é uma grandeza adimensional da superfície de contacto.",
       "A massa inercial (m), medida no Sistema Internacional em quilogramas (kg)."
     ],
     "correctIndex": 3,
@@ -6102,7 +6102,7 @@ const TOPIC_1_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: A temperatura mede o grau de agitação térmica molecular, não a inércia mecânica de translação.",
       "Está incorreta: O volume plasmático é uma variável biológica hemodinâmica, não a medida da inércia global do corpo.",
-      "Está incorreta: O coeficiente de atrito mede a rugosidade entre superfícies, não a quantidade de matéria inercial."
+      "Está incorreta: O atrito mede a rugosidade entre superfícies, não a quantidade de matéria inercial."
     ],
     "nursingApplication": "Um utente bariátrico de 130 kg possui maior inércia do que um utente de 65 kg, exigindo maiores forças para travar ou acelerar."
   },
@@ -6397,7 +6397,7 @@ const TOPIC_1_QUESTIONS = [
     "question": "Ao transpor um pequeno degrau ou desnível de soleira de porta com uma cadeira de rodas, porque é que o enfermeiro deve inclinar ligeiramente a cadeira para trás sobre as rodas grandes traseiras?",
     "options": [
       "Porque levantar as rodas dianteiras diminui a massa total do conjunto doente-cadeira em mais de cinquenta por cento.",
-      "Porque as rodas grandes traseiras possuem menor coeficiente de atrito com a soleira do que as rodas dianteiras de borracha.",
+      "Porque as rodas grandes traseiras possuem menor atrito com a soleira do que as rodas dianteiras de borracha.",
       "Para permitir que o centro de gravidade suba verticalmente acima do nível dos ombros do utente para vencer o obstáculo.",
       "Porque os rodízios dianteiros chocariam no degrau, provocando uma desaceleração brusca e tombamento frontal do utente."
     ],
@@ -6710,7 +6710,7 @@ const TOPIC_1_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: O produto F·a tem unidades de N·m/s² = W/s, que não corresponde à grandeza massa.",
       "Está incorreta: a/F é o inverso da massa inercial (1/m), o que inverteria a proporcionalidade física.",
-      "Está incorreta: F/v representa o coeficiente de atrito viscoso linear em hidrodinâmica, não a massa do corpo."
+      "Está incorreta: F/v representa o atrito viscoso linear em hidrodinâmica, não a massa do corpo."
     ],
     "nursingApplication": "Ajuda a enfermagem a compreender que doentes de maior massa exigem sempre mais força para atingir a mesma cadência."
   },
@@ -6760,14 +6760,14 @@ const TOPIC_1_QUESTIONS = [
       "Aplicar o dobro da força resultante na direção do movimento pretendido.",
       "Aplicar a força resultante diretamente perpendicular ao plano do leito, sem componente horizontal.",
       "Aplicar a força no sentido oposto ao movimento pretendido para criar um efeito de alavanca de 3.ª classe.",
-      "Dividir a força necessária pelo coeficiente de atrito estático antes de qualquer deslocamento."
+      "Dividir a força necessária pelo atrito estático antes de qualquer deslocamento."
     ],
     "correctIndex": 0,
     "explanation": "Pela relação linear F = m·a, para obter 2a mantendo a mesma massa m, é imperativo exercer 2F.",
     "distractorAnalysis": [
       "Está incorreta: uma força resultante exclusivamente perpendicular ao plano do leito apenas aumentaria a força normal de contacto com o chão (e o consequente atrito), não gerando qualquer componente de aceleração horizontal na direção do corredor.",
       "Está incorreta: aplicar força no sentido oposto ao pretendido provocaria desaceleração ou recuo da maca, opondo-se ao deslocamento e não constituindo qualquer aplicação de alavancas para arrancar.",
-      "Está incorreta: para iniciar o movimento da maca, a força motriz horizontal aplicada deve superar a força de atrito estático máxima (F_motriz > μe · N) e não ser dividida por esse coeficiente adimensional."
+      "Está incorreta: para iniciar o movimento da maca, a força motriz horizontal aplicada deve superar a força de atrito estático máxima (F_motriz > atrito estático · N) e não ser dividida por esse coeficiente adimensional."
     ],
     "nursingApplication": "Alerta o enfermeiro para a necessidade de coordenação de forças ao iniciar a marcha com macas pesadas."
   },
@@ -6798,7 +6798,7 @@ const TOPIC_1_QUESTIONS = [
       "Exatamente 0 N, pois movimento retilíneo uniforme (velocidade constante) implica força resultante nula (1.ª Lei de Newton).",
       "Igual ao peso do carrinho, pois sem qualquer força propulsora aplicada o carrinho desaceleraria e pararia no corredor.",
       "Igual à força de atrito cinético, pois um móvel em MRU precisa de uma força resultante líquida contínua para compensar o atrito.",
-      "Igual à força normal multiplicada pelo coeficiente de atrito estático, pois é necessário superar o atrito estático a cada instante."
+      "Igual à força normal multiplicada pelo atrito estático, pois é necessário superar o atrito estático a cada instante."
     ],
     "correctIndex": 0,
     "explanation": "Velocidade constante em linha reta significa a = 0. Pela 2.ª Lei, se a = 0, então ∑F = m · 0 = 0 N.",
@@ -6969,14 +6969,14 @@ const TOPIC_1_QUESTIONS = [
       "Porque a força centrípeta necessária para curvar (Fc = m·v²/r) depende da massa e da velocidade ao quadrado.",
       "Porque a força centrípeta em curva é independente da massa e depende apenas do raio de curvatura da trajetória.",
       "Porque a força centrípeta é sempre constante em veículos de emergência, independentemente da velocidade de circulação.",
-      "Porque o coeficiente de atrito lateral dos pneus aumenta proporcionalmente à velocidade, compensando a força centrípeta."
+      "Porque o atrito lateral dos pneus aumenta proporcionalmente à velocidade, compensando a força centrípeta."
     ],
     "correctIndex": 0,
     "explanation": "Fc = m·v²/r: alta massa m e velocidade v multiplicam a força lateral necessária, aumentando o risco de capotamento ou desvio.",
     "distractorAnalysis": [
       "Está incorreta: a força centrípeta Fc = m·v²/r é diretamente proporcional à massa m; uma maca com utente de peso elevado exige uma força lateral muito superior para contornar a mesma curva.",
       "Está incorreta: a força centrípeta não é fixa nem constante; varia diretamente com a massa e com o quadrado da velocidade, exigindo abrandamento prévio para manter o controlo.",
-      "Está incorreta: o coeficiente de atrito lateral pneu-solo é aproximadamente constante; a velocidade excessiva, a força centrípeta necessária ultrapassa a força de atrito disponível, causando capotamento ou derrapagem."
+      "Está incorreta: o atrito lateral pneu-solo é aproximadamente constante; a velocidade excessiva, a força centrípeta necessária ultrapassa a força de atrito disponível, causando capotamento ou derrapagem."
     ],
     "nursingApplication": "Orienta a condução defensiva e segura de doentes com peso elevado em mudanças de direção nos serviços."
   },
@@ -7995,7 +7995,7 @@ const TOPIC_1_QUESTIONS = [
       "Porque a base é ampla e o CG é baixo; ao incliná-lo, o CG é forçado a subir (Δh > 0) e o peso gera um momento que restaura a posição inicial.",
       "Porque a sua base circular anula completamente a força gravitacional da Terra através de um campo geométrico de simetria cónica.",
       "Porque a massa de um cone concentra-se exclusivamente no seu vértice superior, tornando a base imune a tombamentos laterais.",
-      "Porque o coeficiente de atrito entre a base do cone e a mesa é infinito por definição teórica da estática dos corpos rígidos."
+      "Porque o atrito entre a base do cone e a mesa é infinito por definição teórica da estática dos corpos rígidos."
     ],
     "correctIndex": 0,
     "explanation": "Inclinando o cone até certo ângulo, a vertical que passa pelo CG continua a cair no interior do círculo da base, puxando o cone de volta à posição horizontal.",
@@ -8560,37 +8560,37 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1451,
     "topicId": 1,
-    "question": "O que acontece à força de atrito no momento exato em que a força aplicada pelo enfermeiro supera Fat,e_max e a maca começa a deslizar?",
+    "question": "De acordo com os conceitos de Biofísica apresentados nos slides, qual é a razão pela qual é mais difícil iniciar o movimento de uma maca hospitalar em repouso do que mantê-la em andamento uniforme?",
     "options": [
-      "A força de atrito duplica instantaneamente de valor para impedir que o corpo adquira aceleração perigosa no corredor.",
-      "A força de atrito cai abruptamente do valor estático máximo para o valor do atrito cinético (Fat,c = μc·N), facilitando o movimento contínuo.",
-      "A força de atrito anula-se por completo, tornando o deslizamento do leito imune a qualquer tipo de resistência mecânica.",
-      "A força de atrito inverte o seu sentido de atuação e passa a acelerar a carga no mesmo sentido do movimento do profissional."
+      "Porque o atrito estático que se opõe ao início do movimento é sempre superior ao atrito cinético que atua durante o deslizamento.",
+      "Porque a massa total da maca com o utente diminui progressivamente logo que as rodas começam a girar no corredor.",
+      "Porque a aceleração da gravidade atua apenas quando a maca se encontra parada, anulando-se durante o movimento em velocidade constante.",
+      "Porque a força normal exercida pelo piso duplica de intensidade assim que a velocidade da maca ultrapassa um metro por segundo."
     ],
-    "correctIndex": 1,
-    "explanation": "Uma vez quebrado o repouso, as microssoldaduras não têm tempo de se restabelecer plenamente, diminuindo a resistência ao avanço (Fat,c < Fat,e_max).",
+    "correctIndex": 0,
+    "explanation": "Os slides de Biofísica estabelecem de forma categórica: \"O atrito estático é sempre superior ao atrito cinético! É mais difícil empurrar uma maca em repouso do que uma maca em movimento\". O atrito estático impede o movimento de começar e exige maior força de arranque; uma vez em andamento, o atrito cinético oferece menor resistência.",
     "distractorAnalysis": [
-      "Está incorreta: uma vez iniciado o deslizamento, o atrito não aumenta; a transição para atrito cinético reduz a força de oposição.",
-      "Está incorreta: o atrito cinético continua a atuar durante todo o movimento de translação (Fat,c = μc·N), não sendo nulo.",
-      "Está incorreta: o atrito cinético opõe-se sempre ao movimento relativo das superfícies e nunca empurra o objeto para a frente."
+      "Está incorreta: A massa da maca e do utente é invariável, não diminuindo com o início ou manutenção do movimento.",
+      "Está incorreta: A gravidade atua continuamente com valor constante, independentemente do estado de repouso ou movimento da maca.",
+      "Está incorreta: A força normal depende do peso total e não se altera com a velocidade em pisos horizontais lisos."
     ],
-    "nursingApplication": "Explica a sensação física universal de que 'o mais difícil é tirar a maca do lugar; depois de começar a andar fica mais leve!'"
+    "nursingApplication": "Ao iniciar a deslocação de uma cama ou maca hospitalar, o profissional deve coordenar o esforço de arranque para vencer o atrito estático inicial com postura firme e estável, prevenindo lesões musculares."
   },
   {
     "id": 1452,
     "topicId": 1,
     "question": "Quando uma maca apresenta um rodízio 'preso' que arrasta no solo em vez de rolar, qual é o impacto no esforço do profissional que a empurra?",
     "options": [
-      "O esforço diminui ligeiramente, pois a borracha ao arrastar no piso aquece e reduz espontaneamente o coeficiente de atrito cinético superficial ao longo do corredor.",
+      "O esforço diminui ligeiramente, pois a borracha ao arrastar no piso aquece e reduz espontaneamente o atrito cinético superficial ao longo do corredor.",
       "O esforço permanece rigorosamente inalterado, uma vez que a massa total do doente e da maca é constante e a aceleração gravítica local não sofre variações com o bloqueio.",
-      "O esforço aumenta consideravelmente, pois uma roda travada arrasta no piso sob atrito de deslizamento (μ ~ 0,3 a 0,5) e gera um binário de torção que desvia continuamente a maca da trajetória.",
+      "O esforço aumenta consideravelmente, pois uma roda travada arrasta no piso sob atrito de deslizamento ( ~ 0,3 a 0,5) e gera um binário de torção que desvia continuamente a maca da trajetória.",
       "O esforço torna-se nulo porque a roda presa funciona como um pivô mecânico de alavanca que impulsiona ativamente a frente da maca na direção do empurrão do cuidador."
     ],
     "correctIndex": 2,
     "explanation": "A roda bloqueada dissipa grande força em cisalhamento e cria um momento de rotação assimétrico que obriga o enfermeiro a gastar força contínua para não bater nas paredes.",
     "distractorAnalysis": [
       "Está incorreta: o atrito de deslizamento da borracha é ordens de grandeza superior à resistência ao rolamento livre, aumentando exponencialmente o esforço.",
-      "Está incorreta: embora a força normal global seja constante (N = P), o coeficiente de atrito cinético de arrasto é muito maior que o coeficiente de rolamento.",
+      "Está incorreta: embora a força normal global seja constante (N = P), o atrito cinético de arrasto é muito maior que o coeficiente de rolamento.",
       "Está incorreta: uma roda bloqueada gera resistência contrária assimétrica ao avanço, provocando desvio de trajetória e exigindo força corretiva contínua."
     ],
     "nursingApplication": "Instrui o enfermeiro a retirar imediatamente do serviço e encaminhar para reparação qualquer maca com rodízios presos."
@@ -8622,14 +8622,14 @@ const TOPIC_1_QUESTIONS = [
       "Para prender firmemente o peito do pé ao lençol de cima durante o sono, impedindo mecanicamente que o utente confuso consiga sair da cama durante a noite sem autorização.",
       "Para exercer uma compressão elástica graduada de 40 mmHg sobre as veias dorsais do pé, substituindo as meias de compressão antitrombótica na profilaxia de tromboses venosas.",
       "Para garantir que mesmo que a meia rode ou se desloque em redor do pé durante a noite no leito, existirá sempre uma superfície de silicone voltada para o chão quando o utente pousar o pé.",
-      "Para duplicar matematicamente o coeficiente de atrito estático com o chão através da soma vetorial das duas camadas de silicone durante a fase de choque de calcanhar."
+      "Para duplicar matematicamente o atrito estático com o chão através da soma vetorial das duas camadas de silicone durante a fase de choque de calcanhar."
     ],
     "correctIndex": 2,
     "explanation": "A conceção de dupla face (double-tread) compensa a rotação natural do tecido nos lençóis, garantindo segurança mecânica independentemente da orientação da meia no momento do apoio.",
     "distractorAnalysis": [
       "Está incorreta: as meias não são dispositivos de contenção física de leito; a dupla face assegura proteção antiderrapante se a meia rodar no pé durante o repouso.",
       "Está incorreta: as meias antiderrapantes não exercem compressão graduada nem substituem o papel hemodinâmico das meias de compressão elástica antitrombóticas.",
-      "Está incorreta: o coeficiente de atrito atua unicamente na interface física em contacto real com o piso; a presença de silicone no dorso não duplica o valor de μ no solo."
+      "Está incorreta: o atrito atua unicamente na interface física em contacto real com o piso; a presença de silicone no dorso não duplica o valor de atrito no solo."
     ],
     "nursingApplication": "Exemplo notável de design ergonómico orientado pela física e pela segurança clínica do doente frágil."
   },
@@ -9242,23 +9242,23 @@ const TOPIC_1_QUESTIONS = [
     "id": 1486
   },
   {
+    "id": 1487,
     "topicId": 1,
-    "question": "Como se relaciona diretamente a Força Normal (N) com o valor máximo da Força de Atrito estático (Fa_max = μe · N) entre os pneus de uma maca e o pavimento?",
+    "question": "Nos slides de Biofísica é colocada a questão: \"A força normal é um exemplo da 3.ª Lei de Newton?\" Qual é a resposta cientificamente correta apresentada?",
     "options": [
-      "A força de atrito estático máximo é inversamente proporcional à força normal exercida sobre o pavimento.",
-      "A força de atrito estático máximo é diretamente proporcional à força normal (quanto maior for N, maior é o atrito disponível).",
-      "A força normal e a força de atrito são independentes, dependendo o atrito unicamente da velocidade da maca.",
-      "A força de atrito só existe quando a força normal for rigorosamente igual a zero."
+      "Sim, porque a força normal e o peso têm sempre módulos iguais e sentidos opostos, constituindo o par ação-reação perfeito.",
+      "Não, porque a Força Normal e o Peso atuam no mesmo corpo e têm naturezas físicas distintas, não sendo um par ação-reação.",
+      "Sim, desde que o corpo se encontre num plano inclinado onde a aceleração centrípeta da Terra neutralize o atrito estático.",
+      "Não, porque a 3.ª Lei de Newton foi revogada pela mecânica moderna e só se aplica a fluidos em regime turbulento de alta velocidade."
     ],
     "correctIndex": 1,
-    "explanation": "Pela relação física clássica Fa_max = μe · N: quanto maior for a Força Normal N, maior é a força de atrito disponível para travar.",
+    "explanation": "Os slides alertam expressamente para este conceito essencial: as forças de um par ação-reação da 3.ª Lei de Newton atuam obrigatoriamente em corpos diferentes e têm a mesma natureza física. O par de reação do Peso atua no centro da Terra (atração gravitacional); a Força Normal é uma força de contacto entre a superfície e o corpo (cujo par atua na superfície).",
     "distractorAnalysis": [
-      "Está incorreta: A relação é diretamente proporcional e não inversamente proporcional.",
-      "Está incorreta: O atrito estático depende criticamente da força normal que comprime as duas superfícies.",
-      "Está incorreta: Sem força normal (N = 0) não existe qualquer contacto mecânico nem qualquer atrito."
+      "Está incorreta: Embora possam ter intensidades iguais em repouso horizontal, atuam no mesmo corpo, o que invalida serem par ação-reação.",
+      "Está incorreta: A localização num plano inclinado não transforma Normal e Peso em par ação-reação; pelo contrário, nem sequer partilham a mesma direção.",
+      "Está incorreta: A 3.ª Lei de Newton é um princípio fundamental universal e plenamente válido na mecânica clássica."
     ],
-    "nursingApplication": "Uma maca mais pesada exerce maior força normal, o que aumenta o atrito de travagem seguro dos seus rodízios.",
-    "id": 1487
+    "nursingApplication": "Compreender que as forças normais resultam do contacto direto com superfícies de suporte orienta o enfermeiro na gestão das pressões de contacto e na escolha adequada de superfícies de redistribuição de apoio."
   },
   {
     "topicId": 1,

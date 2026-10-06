@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BioFísica Interativa | Enfermagem (1.º Ano)</title>
   <meta name="description" content="Plataforma interativa e 100% gratuita para estudantes do 1.º ano de Licenciatura em Enfermagem praticarem os conteúdos de Biofísica com questões de escolha múltipla e aplicações clínicas.">
-  <link rel="stylesheet" href="css/style.css?v=2.6">
+  <link rel="stylesheet" href="css/style.css?v=3.2">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🩺</text></svg>">
 </head>
 <body>
@@ -463,6 +463,24 @@
               </h3>
             </div>
 
+            <!-- Pergunta no Ecrã de Revelação -->
+            <div class="arena-reveal-question-card" id="arena-reveal-question-card">
+              <span class="arena-q-tag">❓ Enunciado da Pergunta:</span>
+              <h3 class="arena-reveal-q-text" id="arena-reveal-q-text">
+                Enunciado...
+              </h3>
+            </div>
+
+            <!-- As 4 Opções A, B, C, D com a Correta Destacada -->
+            <div class="arena-reveal-options-container">
+              <h4 style="margin-bottom: 0.6rem; color: var(--text-secondary); font-size: 0.95rem;">
+                📋 Opções de Resposta:
+              </h4>
+              <div class="arena-reveal-options-grid" id="arena-reveal-options-grid">
+                <!-- Opções A, B, C, D geradas dinamicamente -->
+              </div>
+            </div>
+
             <!-- Gráfico de Distribuição das Respostas da Turma -->
             <div class="arena-chart-container">
               <h4 style="margin-bottom: 0.75rem; color: var(--text-secondary); font-size: 0.95rem;">
@@ -693,14 +711,35 @@
             <div id="client-result-streak" class="arena-streak-pill" style="display: inline-flex;">
               🔥 Sequência de 2 acertos!
             </div>
-            <div style="margin-top: 1.5rem; padding: 1rem; background: var(--bg-subtle); border-radius: var(--radius-md);">
+            <div style="margin-top: 1rem; padding: 0.85rem; background: var(--bg-subtle); border-radius: var(--radius-md);">
               <div style="font-size: 0.85rem; color: var(--text-secondary);">Pontuação Acumulada do Grupo:</div>
-              <div id="client-result-total-score" style="font-size: 1.6rem; font-weight: 800; color: var(--color-brand); margin-top: 0.25rem;">
+              <div id="client-result-total-score" style="font-size: 1.5rem; font-weight: 800; color: var(--color-brand); margin-top: 0.25rem;">
                 3.450 pts
               </div>
             </div>
-            <p style="color: var(--text-secondary); font-size: 0.88rem; margin-top: 1.25rem;">
-              Olhem para a explicação no projetor da sala!
+
+            <!-- Pergunta, Opções A, B, C, D e Justificação no Telemóvel -->
+            <div class="arena-client-reveal-section" id="arena-client-reveal-section">
+              <div class="arena-client-reveal-q-box" id="client-reveal-q-box">
+                <span class="arena-q-tag">❓ Pergunta:</span>
+                <p id="client-reveal-q-text" style="font-weight: 700; margin: 0.35rem 0 0; font-size: 0.95rem; line-height: 1.4; color: var(--text-primary);"></p>
+              </div>
+
+              <div class="arena-client-reveal-options-container" style="margin: 0.75rem 0; text-align: left;">
+                <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary);">📋 Opções:</span>
+                <div class="arena-client-reveal-options" id="client-reveal-options" style="margin-top: 0.4rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                  <!-- Inserido dinamicamente via JS -->
+                </div>
+              </div>
+
+              <div class="arena-client-reveal-exp" id="client-reveal-exp" style="text-align: left; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 0.85rem; font-size: 0.88rem; line-height: 1.45;">
+                <strong style="color: var(--color-brand); display: block; margin-bottom: 0.25rem;">🩺 Justificação Científica:</strong>
+                <p id="client-reveal-exp-text" style="margin: 0; color: var(--text-primary);"></p>
+              </div>
+            </div>
+
+            <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 1rem;">
+              Aguardem pela próxima pergunta do professor!
             </p>
           </div>
         </div>
@@ -945,22 +984,22 @@
   </footer>
 
   <!-- Banco de Questões por Tópico (2.200 questões certificadas no total) -->
-  <script src="js/data/topic1.js?v=3.1"></script>
-  <script src="js/data/topic2.js?v=3.1"></script>
+  <script src="js/data/topic1.js?v=3.2"></script>
+  <script src="js/data/topic2.js?v=3.2"></script>
   <script src="js/data/topic3.js?v=2.8"></script>
   <script src="js/data/topic4.js?v=2.8"></script>
   <script src="js/data/topic5.js?v=2.8"></script>
   <script src="js/data/topic6.js?v=2.8"></script>
   <script src="js/data/topic7.js?v=2.8"></script>
   <script src="js/data/topic8.js?v=2.8"></script>
-  <script src="js/questions-data.js?v=3.1"></script>
-  <script src="js/quiz-engine.js?v=3.1"></script>
+  <script src="js/questions-data.js?v=3.2"></script>
+  <script src="js/quiz-engine.js?v=3.2"></script>
 
   <!-- Arena BioFísica (Multiplayer em Tempo Real na Aula - 100% Gratuito) -->
   <script src="js/lib/paho-mqtt.min.js"></script>
-  <script src="js/arena-network.js?v=2.8"></script>
-  <script src="js/arena-engine.js?v=2.8"></script>
-  <script src="js/arena-ui.js?v=2.8"></script>
-  <script src="js/app.js?v=2.8"></script>
+  <script src="js/arena-network.js?v=3.2"></script>
+  <script src="js/arena-engine.js?v=3.2"></script>
+  <script src="js/arena-ui.js?v=3.2"></script>
+  <script src="js/app.js?v=3.2"></script>
 </body>
 </html>

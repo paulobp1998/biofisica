@@ -671,7 +671,7 @@ const TOPIC_2_QUESTIONS = [
     "options": [
       "Representa a condutividade térmica do metal, medida em Joules por segundo e por metro quadrado de superfície.",
       "Representa a massa volúmica da barra deformada, expressa em quilogramas por metro cúbico no vácuo de laboratório.",
-      "Representa o coeficiente de atrito cinético entre o sólido e o solo, sendo uma grandeza adimensional pura.",
+      "Representa o calor específico molar do material metálico, expresso em joules por mole e por kelvin.",
       "Representa a constante elástica da mola (rigidez do corpo elástico em estudo), medida em Newton por metro (N/m)."
     ],
     "correctIndex": 3,
@@ -679,7 +679,7 @@ const TOPIC_2_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: A condutividade térmica pertence à termodinâmica e mede o fluxo de calor, não a rigidez elástica.",
       "Está incorreta: A massa volúmica (densidade) mede a massa por unidade de volume (kg/m³) e não a rigidez mecânica da mola.",
-      "Está incorreta: O coeficiente de atrito é adimensional e mede a resistência tangencial ao deslizamento entre superfícies."
+      "Está incorreta: O calor específico molar é uma grandeza termodinâmica e não a constante de elasticidade mecânica da mola."
     ],
     "nursingApplication": "Molas com elevado k são muito rígidas e exigem grandes forças para sofrer pequenos alongamentos, sendo ideais para suportar doentes bariátricos."
   },
@@ -4361,13 +4361,13 @@ const TOPIC_2_QUESTIONS = [
       "O atrito no leito transforma instantaneamente a epiderme num sólido de Hooke puro com recuperação de forma em nanosegundos."
     ],
     "correctIndex": 1,
-    "explanation": "A força de atrito tangencial F_atrito = μ · N atua paralelamente à superfície de contacto: se o enfermeiro puxar o doente antes de vencer o atrito estático, os tecidos da pele ficam 'ancorados' no lençol enquanto o esqueleto avança, provocando cisalhamento máximo.",
+    "explanation": "A força de atrito tangencial atua paralelamente à superfície de contacto: se o enfermeiro puxar o doente antes de vencer o atrito estático, os tecidos da pele ficam ancorados no lençol enquanto o esqueleto avança, provocando cisalhamento tecidual.",
     "distractorAnalysis": [
-      "Está incorreta: O coeficiente de atrito entre a pele humana e o algodão hospitalar é substancial (μ ≈ 0,4-0,6), nunca sendo zero.",
+      "Está incorreta: O atrito de contacto entre a pele humana e o lençol hospitalar é substancial e tangencial, nunca sendo zero.",
       "Está incorreta: A força de atrito é estritamente tangencial (paralela às superfícies de contacto) e não perpendicular à cama.",
       "Está incorreta: O atrito é uma força mecânica de contacto superficial resistente, não conferindo propriedades ideais de Hooke à pele."
     ],
-    "nursingApplication": "O uso de lençóis de deslizamento de baixo coeficiente de atrito (baixo μ) reduz a força necessária para mobilizar o doente e protege a pele contra forças cortantes."
+    "nursingApplication": "O uso de lençóis de transferência e superfícies deslizantes reduz a resistência ao movimento ao mobilizar o doente, protegendo a pele contra forças cortantes de cisalhamento."
   },
   {
     "id": 2231,
@@ -4429,21 +4429,21 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2234,
     "topicId": 2,
-    "question": "Em relação ao atrito de cisalhamento durante o posicionamento no leito, como atua o talco ou amido de milho aplicado na pele intacta de alguns doentes?",
+    "question": "Em relação ao atrito e cisalhamento durante o posicionamento no leito, como atua uma película ou penso protetor de silicone aplicado na pele íntegra?",
     "options": [
-      "Atua impermeabilizando a epiderme, bloqueando por completo a evaporação da sudação local.",
-      "Atua como lubrificante sólido particulado que reduz o coeficiente de atrito cinético (μ), diminuindo as forças tangenciais de corte.",
-      "Atua aumentando o coeficiente de atrito estático da superfície da cama, ancorando o doente de forma rígida ao colchão.",
-      "Atua inibindo a vasodilatação dos capilares dérmicos, reduzindo assim o risco global de isquemia tecidual por pressão direta."
+      "Atua impermeabilizando a epiderme, bloqueando por completo a oxigenação celular dos tecidos profundos.",
+      "Atua criando uma interface protetora que absorve o atrito mecânico superficial, diminuindo as forças tangenciais de corte na pele.",
+      "Atua aumentando a adesão rígida da superfície da cama, ancorando o doente de forma estática ao colchão.",
+      "Atua inibindo a vasodilatação dos capilares dérmicos, reduzindo assim o fluxo sanguíneo local."
     ],
     "correctIndex": 1,
-    "explanation": "Ao reduzir o coeficiente de atrito μ entre a pele e o tecido do pijama ou lençol, a força tangencial máxima (F_atrito = μ · N) diminui, atenuando a distorção tecidual.",
+    "explanation": "Ao absorver as forças de atrito entre a pele e o lençol, a interface protetora atenua a transmissão de tensões tangenciais para as camadas vasculares profundas da derme.",
     "distractorAnalysis": [
-      "Está incorreta: O pó não atua bloqueando a evaporação, mas sim secando a humidade e reduzindo a fricção mecânica.",
-      "Está incorreta: O objetivo é reduzir o atrito e não aumentá-lo (ancorar), de forma a facilitar o deslizamento controlado.",
-      "Está incorreta: O efeito do talco é puramente mecânico (redução do coeficiente μ) e não fisiológico direto na vasodilatação."
+      "Está incorreta: Os pensos de silicone modernos permitem a permeabilidade gasosa e não bloqueiam a oxigenação celular.",
+      "Está incorreta: O objetivo é amortecer e reduzir as tensões de atrito, e não ancorar rigidamente o doente ao colchão.",
+      "Está incorreta: O efeito protetor é mecânico superficial e não decorre da inibição fisiológica da vasodilatação capilar."
     ],
-    "nursingApplication": "Contudo, o enfermeiro sabe que o excesso de talco pode aglomerar-se com o suor e formar grumos abrasivos, preferindo-se na prática clínica moderna o uso de películas barreira transparentes ou pensos de silicone."
+    "nursingApplication": "O enfermeiro aplica pensos de silicone multicamadas nas proeminências ósseas (como a região sagrada e calcâneos) para dissipar forças de atrito e cisalhamento em doentes acamados com risco de lesão."
   },
   {
     "id": 2235,
@@ -5782,14 +5782,14 @@ const TOPIC_2_QUESTIONS = [
     "options": [
       "A força que causa a deformação do corpo elástico em estudo, expressa em newtons (N).",
       "A densidade volumétrica de massa do corpo elástico, expressa em quilogramas por metro cúbico.",
-      "O coeficiente de atrito estático entre as superfícies de contacto no leito do doente.",
+      "A resistividade elétrica do material condutor, expressa em ohm-metro no Sistema Internacional.",
       "A energia térmica dissipada por atrito molecular sob a forma de calor em calorias."
     ],
     "correctIndex": 0,
     "explanation": "Na equação F = k · ΔL, F representa a força deformadora (ou força elástica desenvolvida) medida na unidade do Sistema Internacional, o newton (N).",
     "distractorAnalysis": [
       "Está incorreta: A densidade de massa é uma propriedade física da matéria medida em kg/m³, não correspondendo à variável F.",
-      "Está incorreta: O coeficiente de atrito é uma grandeza adimensional que quantifica a resistência ao deslizamento.",
+      "Está incorreta: A resistividade elétrica é uma propriedade do transporte de corrente elétrica e não uma força deformadora.",
       "Está incorreta: A energia térmica mede-se em joules ou calorias, correspondendo a trabalho dissipado e não à força elástica."
     ],
     "nursingApplication": "Na tração ortopédica, a força F é fornecida pela massa suspensa multiplicada pela aceleração da gravidade (F = m · g)."
