@@ -100,6 +100,29 @@ def test_app():
         assert q["correctIndex"] == q["id"] % 4, f"Q#{q['id']} correctIndex != id % 4"
     print("✓ All 400 questions satisfy: 4 unique options, 3 distractors starting with 'Está incorreta: ', correctIndex == id % 4.")
 
+    # 8. Check Official AI Disclaimer Announcement in index.html
+    expected_ai_notice = (
+        "As perguntas e/ou respostas são geradas por inteligência artificial e, por isso, podem estar incorretas. "
+        "Caso encontre perguntas e/ou respostas que considere estarem incorretas, por favor copie o número da pergunta "
+        "e informe o docente na próxima aula. Obrigado pela atenção."
+    )
+    expected_ps = "Estão a ser efetuadas melhorias diárias ao site para que, num futuro próximo, todas as perguntas e respostas estejam corretas. Obrigado pela vossa atenção e bom estudo!"
+    assert expected_ai_notice in html, "Official AI Notice text missing or mismatch in index.html"
+    assert expected_ps in html, "Official PS text missing or mismatch in index.html"
+    print("✓ Official AI Disclaimer announcement text verified 100% exact in index.html.")
+
+    # 9. Check Question Number (Q#) display elements in index.html and js/app.js
+    assert 'id="quiz-qid-badge"' in html, "Missing quiz-qid-badge in index.html"
+    assert 'id="btn-copy-qid"' in html, "Missing btn-copy-qid in index.html"
+    assert 'id="quiz-qid-banner-tag"' in html, "Missing quiz-qid-banner-tag in index.html"
+    assert 'id="feedback-qid-tag"' in html, "Missing feedback-qid-tag in index.html"
+    with open("js/app.js", "r", encoding="utf-8") as f:
+        app_js = f.read()
+    assert "Pergunta Q${state.questionId}" in app_js, "Missing Pergunta Q${state.questionId} in app.js"
+    assert "Pergunta Q${ans.questionId}" in app_js, "Missing Pergunta Q${ans.questionId} in app.js"
+    assert "btn-copy-review-qid" in app_js, "Missing btn-copy-review-qid in app.js"
+    print("✓ Question ID (Q#) badge and clipboard copy mechanisms verified across UI and app logic.")
+
     print("=" * 80)
     print("RESULT: ALL APP COMPONENTS, DATA, LOGIC AND UI CHECKS ARE 100% OPERATIONAL!")
     print("=" * 80)
