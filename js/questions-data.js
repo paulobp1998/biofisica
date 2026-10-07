@@ -93,8 +93,33 @@ const ALL_TOPIC_COLLECTIONS = {
   8: TOPIC_8_QUESTIONS
 };
 
-// Questões ativas disponibilizadas aos estudantes na plataforma
-const QUESTIONS_DATA = UNLOCKED_TOPIC_IDS.flatMap(id => ALL_TOPIC_COLLECTIONS[id] || []);
+// Função global para carregar IDs de questões excluídas/eliminadas pelo docente
+function getExcludedQuestionIds() {
+  try {
+    if (typeof localStorage !== 'undefined') {
+      const saved = localStorage.getItem('biofisica_excluded_question_ids');
+      if (saved) {
+        const arr = JSON.parse(saved);
+        if (Array.isArray(arr)) return new Set(arr.map(Number));
+      }
+    }
+  } catch (e) {}
+  return new Set();
+}
+
+// Questões ativas disponibilizadas aos estudantes na plataforma (excluindo as eliminadas pelo docente)
+const ALL_UNLOCKED_RAW = UNLOCKED_TOPIC_IDS.flatMap(id => ALL_TOPIC_COLLECTIONS[id] || []);
+const QUESTIONS_DATA = ALL_UNLOCKED_RAW.filter(q => !getExcludedQuestionIds().has(q.id));
+
+function refreshQuestionsDataExclusions() {
+  const excluded = getExcludedQuestionIds();
+  QUESTIONS_DATA.length = 0;
+  ALL_UNLOCKED_RAW.forEach(q => {
+    if (!excluded.has(q.id)) {
+      QUESTIONS_DATA.push(q);
+    }
+  });
+}
 
 // Resumo conciso de cada tópico para revisão rápida do estudante
 const TOPIC_SUMMARIES = [
