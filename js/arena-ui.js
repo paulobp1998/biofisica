@@ -88,8 +88,8 @@ function arenaSha256(ascii) {
   return result;
 }
 
-// Hash SHA-256 do PIN Mestre de Docente (456123)
-const ARENA_HOST_PIN_HASH = 'c1cf024576e9c756b252bd5035efc64c72c17affe236909ded190d266a5bfdf1';
+// Hash SHA-256 criptográfico do PIN Mestre de Docente
+const ARENA_HOST_PIN_HASH = '7275efded424740efd68321692c99c485bb9648e802a1c1387eea032c3729aa6';
 
 function arenaEscapeHtml(str) {
   if (typeof str !== 'string') return '';
@@ -318,7 +318,8 @@ class ArenaUI {
     }
 
     const hashed = arenaSha256(pin);
-    if (hashed === ARENA_HOST_PIN_HASH) {
+    const hashedLower = arenaSha256(pin.toLowerCase());
+    if (hashed === ARENA_HOST_PIN_HASH || hashedLower === ARENA_HOST_PIN_HASH) {
       try {
         sessionStorage.setItem('arena_host_authenticated', 'true');
       } catch (e) {}
@@ -393,7 +394,7 @@ class ArenaUI {
       });
     }
 
-    // Atalho direto para Seleção Manual de Perguntas (REQUER SEMPRE PIN 456123)
+    // Atalho direto para Seleção Manual de Perguntas (REQUER SEMPRE PIN)
     if (this.btnRoleCustomQuestions) {
       this.btnRoleCustomQuestions.addEventListener('click', () => {
         this.openCustomQuestionsSection();
@@ -434,7 +435,7 @@ class ArenaUI {
       });
     }
 
-    // Configuração Docente: Seleção Manual de Perguntas (REQUER SEMPRE PIN 456123)
+    // Configuração Docente: Seleção Manual de Perguntas (REQUER SEMPRE PIN)
     if (this.btnOpenCustomQuestions) {
       this.btnOpenCustomQuestions.addEventListener('click', () => {
         this.openCustomQuestionsSection();
@@ -1344,7 +1345,7 @@ class ArenaUI {
   }
 
   // =========================================================================
-  // GESTÃO E SELEÇÃO MANUAL DE PERGUNTAS (DOCENTE - REQUER PIN 456123)
+  // GESTÃO E SELEÇÃO MANUAL DE PERGUNTAS (DOCENTE - REQUER PIN MESTRE)
   // =========================================================================
 
   loadSavedCustomQuestionIds() {

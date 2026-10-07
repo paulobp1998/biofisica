@@ -408,7 +408,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Abertura Segura do Painel do Docente (Requer PIN Mestre 456123)
+  // Abertura Segura do Painel do Docente (Requer Autenticação por PIN Mestre)
   const openTeacherPanel = () => {
     if (window.teacherManager) {
       window.teacherManager.requestAuthAndOpen();

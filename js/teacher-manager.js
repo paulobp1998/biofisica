@@ -1,10 +1,10 @@
 /**
  * Painel do Docente: Gestão e Auditoria do Banco de Questões de Biofísica Médica
  * Permite ao docente rever as perguntas do repositório (Tópicos 1 e 2 - 400 questões)
- * e selecionar questões para eliminação, com proteção obrigatória por PIN Mestre (456123).
+ * e selecionar questões para eliminação, com proteção obrigatória por PIN Mestre.
  */
 
-const TEACHER_MASTER_PIN_HASH = 'c1cf024576e9c756b252bd5035efc64c72c17affe236909ded190d266a5bfdf1';
+const TEACHER_MASTER_PIN_HASH = '7275efded424740efd68321692c99c485bb9648e802a1c1387eea032c3729aa6';
 
 class TeacherManager {
   constructor() {
@@ -111,11 +111,16 @@ class TeacherManager {
 
     if (!modal) {
       const pin = prompt("Área Reservada ao Docente. Introduza o PIN:");
-      if (pin === '456123') {
-        this.setAuth();
-        this.openView();
-      } else if (pin !== null) {
-        alert("PIN incorreto. Acesso reservado ao docente.");
+      if (pin !== null) {
+        const cleanPin = pin.trim();
+        const hashed = (typeof arenaSha256 === 'function') ? arenaSha256(cleanPin) : null;
+        const hashedLower = (typeof arenaSha256 === 'function') ? arenaSha256(cleanPin.toLowerCase()) : null;
+        if (hashed === TEACHER_MASTER_PIN_HASH || hashedLower === TEACHER_MASTER_PIN_HASH) {
+          this.setAuth();
+          this.openView();
+        } else {
+          alert("PIN incorreto. Acesso reservado ao docente.");
+        }
       }
       return;
     }
