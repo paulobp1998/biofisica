@@ -10,7 +10,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2001,
     "topicId": 2,
-    "question": "Qual é a definição exata de Reologia no estudo da Biofísica e Biomecânica?",
+    "question": "Qual é a definição exata de Reologia apresentada no estudo da Biofísica e Biomecânica?",
     "options": [
       "Estuda a composição química e o metabolismo oxidativo das mitocôndrias.",
       "Estuda as reações dos corpos a forças deformadoras.",
@@ -18,7 +18,7 @@ const TOPIC_2_QUESTIONS = [
       "Mede a atividade elétrica dos neurónios motores periféricos."
     ],
     "correctIndex": 1,
-    "explanation": "Reologia: Estuda as reações dos corpos a forças deformadoras'.",
+    "explanation": "Define-se textualmente: 'Reologia: Estuda as reações dos corpos a forças deformadoras'.",
     "distractorAnalysis": [
       "Está incorreta: A respiração celular e metabolismo oxidativo pertencem à bioquímica, não à reologia.",
       "Está incorreta: Propagação de ondas eletromagnéticas é objeto de estudo da ótica e radiação médica.",
@@ -29,7 +29,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2002,
     "topicId": 2,
-    "question": "O que caracteriza teoricamente os chamados 'Sólidos Indeformáveis' (modelos de Euclides)?",
+    "question": "O que caracteriza teoricamente o modelo de 'Sólidos indeformáveis' (sólidos de Euclides) na mecânica?",
     "options": [
       "Sofrem deformação diretamente proporcional ao quadrado da temperatura.",
       "Deformam-se facilmente como fluidos de alta viscosidade.",
@@ -37,7 +37,7 @@ const TOPIC_2_QUESTIONS = [
       "Dissipam energia mecânica sob a forma de histerese intensa."
     ],
     "correctIndex": 2,
-    "explanation": "Sólidos indeformáveis: Nunca sofrem deformação'.",
+    "explanation": "Indica-se categoricamente: 'Sólidos indeformáveis: Nunca sofrem deformação'.",
     "distractorAnalysis": [
       "Está incorreta: Os sólidos indeformáveis não sofrem qualquer deformação, nem térmica nem mecânica.",
       "Está incorreta: Fluidos viscosos são corpos deformáveis com escoamento contínuo.",
@@ -48,7 +48,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2003,
     "topicId": 2,
-    "question": "Na realidade física dos tecidos biológicos e dos materiais reais, existem sólidos perfeitamente indeformáveis?",
+    "question": "Na realidade física dos tecidos biológicos humanos, existem sólidos verdadeiramente indeformáveis?",
     "options": [
       "Sim, todos os ossos do corpo humano são perfeitamente indeformáveis.",
       "Sim, o tendão do calcâneo nunca se deforma sob qualquer tensão.",
@@ -56,7 +56,7 @@ const TOPIC_2_QUESTIONS = [
       "Não, o sólido indeformável é um modelo teórico; todos os materiais e tecidos reais sofrem deformação quando sujeitos a forças."
     ],
     "correctIndex": 3,
-    "explanation": "No modelo teórico dos Sólidos de Euclides, todos os corpos e materiais reais sofrem algum grau de alteração dimensional perante forças mecânicas suficientes.",
+    "explanation": "Conforme esclarecido ('Sólidos de Euclides: Modelos teóricos indeformáveis'), todos os corpos e materiais reais sofrem algum grau de alteração dimensional perante forças mecânicas suficientes.",
     "distractorAnalysis": [
       "Está incorreta: Os ossos sofrem microdeformações elásticas sob carga diária.",
       "Está incorreta: Os tendões alongam e transmitem tração mecânica com deformação mensurável.",
@@ -67,7 +67,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2004,
     "topicId": 2,
-    "question": "Qual é o objetivo prático do estudo da Reologia na avaliação da integridade tecidual e na biomecânica dos cuidados de saúde?",
+    "question": "Qual é o objetivo prático do estudo da Reologia no curso de Enfermagem?",
     "options": [
       "Compreender como os tecidos do corpo (ossos, músculos, cartilagens e pele) respondem a cargas mecânicas, pressões e deformações.",
       "Aprender a calcular a velocidade de saturação do oxigénio na hemoglobina.",
@@ -86,7 +86,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2005,
     "topicId": 2,
-    "question": "No âmbito da Reologia, como são tecnicamente designadas as forças mecânicas externas que atuam alterando as dimensões de um corpo?",
+    "question": "No âmbito da Reologia, as forças que atuam sobre os corpos são especificamente designadas por:",
     "options": [
       "Forças gravitacionais cósmicas.",
       "Forças deformadoras.",
@@ -105,7 +105,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2006,
     "topicId": 2,
-    "question": "Em termos de alteração de dimensões relativas, o que é a 'Deformação Mecânica' de um sólido sob ação de forças?",
+    "question": "De acordo com a síntese, o que acontece à distância entre as partículas de um Sólido de Euclides (modelo indeformável)?",
     "options": [
       "Diminui em 50% sob qualquer força compressiva.",
       "Aumenta exponencialmente com o tempo de aplicação da força.",
@@ -124,7 +124,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2007,
     "topicId": 2,
-    "question": "Qual das seguintes grandezas NÃO constitui um parâmetro de estudo fundamental da resposta reológica dos materiais aos esforços?",
+    "question": "Por que razão a Reologia dos materiais é indispensável para o estudo do aparelho locomotor humano?",
     "options": [
       "Porque os ossos são constituídos inteiramente por gases perfeitos em expansão.",
       "Porque as articulações humanas nunca suportam qualquer peso durante a vida.",
@@ -143,7 +143,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2008,
     "topicId": 2,
-    "question": "Por que razão os modelos de sólidos indeformáveis de Euclides são úteis na física, apesar de não existirem na natureza?",
+    "question": "No estudo da reologia e elasticidade, qual é o contraste conceptual entre os 'Sólidos indeformáveis' e os 'Sólidos de Hooke'?",
     "options": [
       "Os indeformáveis nunca sofrem deformação, enquanto os de Hooke apresentam deformação proporcional à intensidade da tensão.",
       "Os indeformáveis são líquidos e os de Hooke são gases rarefeitos.",
@@ -162,7 +162,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2009,
     "topicId": 2,
-    "question": "Qual é o comportamento esperado de um corpo real quando é submetido a forças deformadoras de intensidade crescente?",
+    "question": "Quanta energia mecânica é absorvida em deformação estrutural por um sólido puramente indeformável?",
     "options": [
       "Toda a energia mecânica disponível no sistema envolvente.",
       "Zero Joules, porque o corpo nunca sofre qualquer deformação dimensional.",
@@ -181,7 +181,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2010,
     "topicId": 2,
-    "question": "Em biofísica dos tecidos, que estrutura anatómica humana experimenta reações deformadoras constantes durante a locomoção?",
+    "question": "Quando cessa a aplicação de uma força sobre um sólido perfeitamente indeformável:",
     "options": [
       "O sólido sofre uma deformação plástica permanente tardia.",
       "O sólido contrai-se violentamente até se fragmentar.",
@@ -200,7 +200,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2011,
     "topicId": 2,
-    "question": "Qual é a definição física de 'Sólido de Hooke' (ou corpo perfeitamente elástico)?",
+    "question": "Qual é a definição formal de 'Elasticidade' apresentada de Biofísica?",
     "options": [
       "Tendência de um fluido biológico para aumentar a sua densidade sob aquecimento.",
       "Capacidade de um material de reter permanentemente a deformação máxima aplicada.",
@@ -219,7 +219,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2012,
     "topicId": 2,
-    "question": "Como se define formalmente a propriedade mecânica da 'Elasticidade'?",
+    "question": "O que caracteriza o comportamento reológico dos 'Sólidos de Hooke' (sólidos puramente elásticos)?",
     "options": [
       "A deformação elástica é diretamente proporcional à intensidade da tensão e há restituição integral da forma original.",
       "Apenas se deformam a partir de um limiar elevado de tensão mantendo a deformação máxima.",
@@ -227,7 +227,7 @@ const TOPIC_2_QUESTIONS = [
       "Apresentam deformação independente da força aplicada que varia com a luz solar."
     ],
     "correctIndex": 0,
-    "explanation": "Deformação proporcional à intensidade da tensão', e o complementa: 'Deformação elástica diretamente proporcional à tensão; restituição integral da forma original após remoção da tensão'.",
+    "explanation": "Define-se: 'Deformação proporcional à intensidade da tensão', e o complementa: 'Deformação elástica diretamente proporcional à tensão; restituição integral da forma original após remoção da tensão'.",
     "distractorAnalysis": [
       "Está incorreta: Esta descrição caracteriza os Corpos Plásticos, não os Sólidos de Hooke.",
       "Está incorreta: Não restituir a forma e fluir continuamente caracteriza os Corpos Viscosos.",
@@ -238,7 +238,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2013,
     "topicId": 2,
-    "question": "Qual é o objeto físico clássico utilizado no laboratório para demonstrar o comportamento de um Sólido de Hooke?",
+    "question": "Qual é o exemplo físico clássico apresentado para ilustrar um Sólido de Hooke?",
     "options": [
       "Uma barra de plasticina moldada à mão.",
       "Uma mola.",
@@ -257,7 +257,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2014,
     "topicId": 2,
-    "question": "O que acontece a um sólido perfeitamente elástico imediatamente após a remoção da força externa que o deformava?",
+    "question": "O que acontece a uma mola perfeitamente elástica após ser esticada dentro do seu limite e depois largada?",
     "options": [
       "Fica permanentemente esticada com a deformação máxima.",
       "Começa a escoar como um líquido viscoso.",
@@ -276,7 +276,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2015,
     "topicId": 2,
-    "question": "Qual é a relação matemática entre a força deformadora aplicada e a deformação resultante num Sólido de Hooke no regime elástico?",
+    "question": "Num Sólido de Hooke, se duplicarmos a intensidade da força deformadora aplicada (dentro do regime elástico), o que acontece à deformação?",
     "options": [
       "Permanece exatamente a mesma, pois a rigidez anula o efeito da força.",
       "Reduz-se para metade da deformação original.",
@@ -295,7 +295,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2016,
     "topicId": 2,
-    "question": "Qual é a diferença fundamental entre um corpo com comportamento elástico e um corpo com comportamento puramente plástico?",
+    "question": "Se um biomaterial for submetido a uma força e, ao retirar a força, não regressar de todo à sua configuração original:",
     "options": [
       "O seu comportamento não é puramente elástico, tendo ocorrido deformação plástica ou viscosa.",
       "O corpo obedece rigorosamente à definição de Sólido de Hooke.",
@@ -314,7 +314,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2017,
     "topicId": 2,
-    "question": "Se uma mola que opera em regime de Hooke alongar 2 cm sob uma força de 10 N, quanto alongará sob uma força de 20 N?",
+    "question": "Qual é a condição necessária para que a resposta mecânica de um corpo seja classificada como Sólido de Hooke?",
     "options": [
       "O corpo tem de ser aquecido acima de 100 ºC durante o teste.",
       "A deformação elástica tem de ser diretamente proporcional à tensão e a forma original deve ser integralmente restituída após a remoção da carga.",
@@ -333,7 +333,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2018,
     "topicId": 2,
-    "question": "O que acontece a uma estrutura elástica se a força aplicada ultrapassar o seu 'Limite Elástico'?",
+    "question": "Como atua a energia mecânica num sólido elástico quando este é deformado por uma força externa?",
     "options": [
       "Dissipa-se instantaneamente sob a forma de radiação gama de alta energia.",
       "Converte-se em massa inercial adicional que aumenta o peso do corpo.",
@@ -352,7 +352,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2019,
     "topicId": 2,
-    "question": "Nos tecidos biológicos humanos, que componente conjuntivo confere grande elasticidade às paredes dos grandes vasos como a aorta?",
+    "question": "Num gráfico de Tensão versus Deformação para um Sólido de Hooke ideal, qual é a geometria da curva?",
     "options": [
       "Uma curva sinusoidal com máximos e mínimos alternados.",
       "Uma parábola invertida que decresce até ao zero absoluto.",
@@ -371,7 +371,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2020,
     "topicId": 2,
-    "question": "O retorno elástico das estruturas biológicas após deformação transitória é vital para qual das seguintes funções fisiológicas?",
+    "question": "Qual é a forma de repouso de um corpo puramente elástico quando sobre ele não atua qualquer força deformadora?",
     "options": [
       "A sua configuração geométrica e comprimento originais de equilíbrio.",
       "Uma forma esférica achatada no vácuo.",
@@ -390,7 +390,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2021,
     "topicId": 2,
-    "question": "Como se caracterizam fisicamente os chamados 'Corpos Plásticos' sob a ação de forças deformadoras?",
+    "question": "Qual é a definição exata de 'Corpos Plásticos' apresentada de Biofísica?",
     "options": [
       "Nunca sofrem qualquer deformação sob forças intensas.",
       "Apenas ocorre deformação a partir de um determinado valor de tensão (limiar) e mantêm permanentemente a deformação máxima.",
@@ -398,7 +398,7 @@ const TOPIC_2_QUESTIONS = [
       "Flutuam no ar devido à perda imediata de massa inercial."
     ],
     "correctIndex": 1,
-    "explanation": "Apenas ocorre deformação a partir de um determinado valor de tensão' e o resume: '3. Corpos Plásticos: Só acusam deformação a partir de um limiar de tensão; mantêm permanentemente a deformação máxima'.",
+    "explanation": "Indica-se: 'Apenas ocorre deformação a partir de um determinado valor de tensão' e o resume: '3. Corpos Plásticos: Só acusam deformação a partir de um limiar de tensão; mantêm permanentemente a deformação máxima'.",
     "distractorAnalysis": [
       "Está incorreta: Nunca sofrer deformação é a definição de Sólido Indeformável.",
       "Está incorreta: Restituição integral da forma original é a definição de Sólido de Hooke / Elasticidade.",
@@ -409,7 +409,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2022,
     "topicId": 2,
-    "question": "O que é o 'Limiar de Tensão' (ou tensão de escoamento) característico dos materiais com plasticidade?",
+    "question": "Qual é o exemplo apresentado de Biofísica para ilustrar um Corpo Plástico?",
     "options": [
       "Água destilada.",
       "Uma mola de aço.",
@@ -428,7 +428,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2023,
     "topicId": 2,
-    "question": "Qual é o exemplo de material do dia a dia frequentemente utilizado para ilustrar o comportamento plástico típico?",
+    "question": "O que acontece se aplicarmos uma tensão mecânica INFERIOR ao limiar de tensão num corpo puramente plástico?",
     "options": [
       "Deforma-se imediatamente atingindo o comprimento máximo.",
       "Dissolve-se transformando-se num líquido viscoso transparente.",
@@ -447,7 +447,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2024,
     "topicId": 2,
-    "question": "O que acontece a um corpo plástico quando uma força externa que ultrapassou o seu limiar de escoamento é totalmente removida?",
+    "question": "Quando uma força acima do limiar deforma uma barra de plasticina e é posteriormente retirada, o que acontece à forma da plasticina?",
     "options": [
       "Mantém permanentemente a deformação máxima atingida, sem recuperar a forma original.",
       "Retorna espontaneamente e com grande velocidade ao seu formato inicial.",
@@ -455,7 +455,7 @@ const TOPIC_2_QUESTIONS = [
       "Contrai-se até atingir um volume dez vezes menor que o inicial."
     ],
     "correctIndex": 0,
-    "explanation": "Os destacam que os corpos plásticos 'mantêm permanentemente a deformação máxima', caracterizando uma deformação irreversível e permanente.",
+    "explanation": "Destaca-se que os corpos plásticos 'mantêm permanentemente a deformação máxima', caracterizando uma deformação irreversível e permanente.",
     "distractorAnalysis": [
       "Está incorreta: Retornar à forma inicial é a resposta de um sólido elástico de Hooke, não de um corpo plástico.",
       "Está incorreta: Após a retirada da força, o corpo plástico estabiliza na nova forma atingida sem deformação adicional contínua.",
@@ -466,7 +466,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2025,
     "topicId": 2,
-    "question": "Sob tensões mecânicas inferiores ao seu limiar plástico de escoamento, como se comporta um material plástico?",
+    "question": "Qual é a diferença essencial entre um Sólido de Hooke e um Corpo Plástico estabelecida na síntese?",
     "options": [
       "O sólido de Hooke nunca se deforma e o corpo plástico deforma-se sob qualquer força.",
       "O sólido de Hooke deforma proporcionalmente e recupera a forma original; o corpo plástico só deforma a partir de um limiar e mantém permanentemente a deformação.",
@@ -485,7 +485,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2026,
     "topicId": 2,
-    "question": "Qual é a principal consequência estrutural da deformação plástica irreversível nos biomateriais ortopédicos?",
+    "question": "Na caracterização dos corpos plásticos, a afirmação de que 'mantêm permanentemente a deformação máxima' significa que a deformação plástica é:",
     "options": [
       "Transiente e passageira, durando apenas 2 segundos.",
       "Completamente reversível por aplicação de calor moderado.",
@@ -504,7 +504,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2027,
     "topicId": 2,
-    "question": "A moldagem manual de uma porção de plasticina exemplifica que tipo de comportamento mecânico?",
+    "question": "Como se define o 'Limiar de tensão' no comportamento dos corpos plásticos?",
     "options": [
       "A temperatura máxima a que um material pode ser esterilizado em autoclave.",
       "O tempo em segundos necessário para um fluido viscoso evaporar.",
@@ -523,7 +523,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2028,
     "topicId": 2,
-    "question": "Qual é a distinção crucial entre a deformação elástica de uma mola e a deformação plástica da plasticina?",
+    "question": "Ao modelar plasticina com os dedos para criar uma tala de imobilização pedagógica, porque mantém ela o novo formato?",
     "options": [
       "Porque a força dos dedos superou o limiar de tensão e, sendo um corpo plástico, a plasticina conserva a deformação máxima aplicada.",
       "Porque as moléculas de ar no interior da plasticina congelaram instantaneamente.",
@@ -542,7 +542,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2029,
     "topicId": 2,
-    "question": "Na biomecânica do trauma ósseo, o que representa a transição da zona elástica para a zona plástica do osso?",
+    "question": "Em termos de classificação reológica, um material que só deforma após um limiar e não restitui a forma é indiscutivelmente:",
     "options": [
       "Um Sólido de Euclides.",
       "Um Corpo Plástico.",
@@ -561,7 +561,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2030,
     "topicId": 2,
-    "question": "Por que razão os implantes metálicos de fixação óssea (placas e parafusos) não devem ser submetidos a tensões na sua zona plástica em carga diária?",
+    "question": "Quando uma fratura óssea consolida com uma angulação anormal que o osso não consegue endireitar sozinho, que regime reológico foi atingido no trauma?",
     "options": [
       "Regime elétrico uniforme de Hooke com restituição total.",
       "Regime de corpo puramente indeformável de Euclides.",
@@ -580,7 +580,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2031,
     "topicId": 2,
-    "question": "Como se caracterizam os 'Corpos Viscosos' quanto à sua resposta mecânica à aplicação de forças?",
+    "question": "Qual é a característica reológica essencial dos 'Corpos Viscosos' (fluidos newtonianos) perante forças mecânicas?",
     "options": [
       "Nunca se deformam mesmo sob tensões de milhares de Newtons.",
       "Restituem integralmente a sua forma original no instante em que a força é retirada.",
@@ -588,7 +588,7 @@ const TOPIC_2_QUESTIONS = [
       "Apresentam deformação proporcional/dependente da tensão e do tempo de aplicação, e não restituem a sua forma original."
     ],
     "correctIndex": 3,
-    "explanation": "Deformação proporcional à tensão e ao tempo de aplicação' e o resume: '4. Corpos Viscosos: Deformação dependente da tensão e do tempo; não restituem a sua forma original'.",
+    "explanation": "Define-se: 'Deformação proporcional à tensão e ao tempo de aplicação' e o resume: '4. Corpos Viscosos: Deformação dependente da tensão e do tempo; não restituem a sua forma original'.",
     "distractorAnalysis": [
       "Está incorreta: Nunca se deformar caracteriza os sólidos indeformáveis de Euclides.",
       "Está incorreta: Restituir a forma original caracteriza os sólidos elásticos de Hooke.",
@@ -599,7 +599,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2032,
     "topicId": 2,
-    "question": "Nos fluidos e corpos com comportamento viscoso, de que variável fundamental depende diretamente a magnitude da deformação acumulada?",
+    "question": "O que acontece à forma de uma gota de fluido viscoso após cessar a força que a fez escoar?",
     "options": [
       "Não restitui a sua forma original, permanecendo na nova configuração atingida pelo escoamento.",
       "Recua instantaneamente para a forma original como se fosse um elástico.",
@@ -607,7 +607,7 @@ const TOPIC_2_QUESTIONS = [
       "Evapora 100% da sua massa em menos de um milissegundo."
     ],
     "correctIndex": 0,
-    "explanation": "O estabelece expressamente: 'não restituem a sua forma original'. Os fluidos viscosos dissipam a energia mecânica sob a forma de atrito interno entre camadas e não possuem força elástica restauradora.",
+    "explanation": "Estabelece-se expressamente: 'não restituem a sua forma original'. Os fluidos viscosos dissipam a energia mecânica sob a forma de atrito interno entre camadas e não possuem força elástica restauradora.",
     "distractorAnalysis": [
       "Está incorreta: Recuar instantaneamente é o comportamento de corpos com elasticidade de Hooke.",
       "Está incorreta: Cessar a força mecânica de cisalhamento não altera o ponto de solidificação ou congelamento do líquido.",
@@ -618,7 +618,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2033,
     "topicId": 2,
-    "question": "Qual das seguintes substâncias exemplifica tipicamente um corpo com comportamento de escoamento viscoso?",
+    "question": "Quais são os exemplos de corpos viscosos expressamente apresentados, 12 e 13 de Biofísica?",
     "options": [
       "Aço e Prata.",
       "Água e Mel.",
@@ -637,7 +637,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2034,
     "topicId": 2,
-    "question": "O que acontece a um fluido viscoso após a cessação das forças tangenciais de corte que provocaram o seu escoamento?",
+    "question": "Por que razão uma porção de mel demora muito mais tempo a escoar de uma colher do que uma porção igual de água?",
     "options": [
       "Porque a água tem maior densidade e atrai a gravidade com o triplo da força.",
       "Porque o mel possui um Módulo de Young superior ao do aço cortical.",
@@ -656,7 +656,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2035,
     "topicId": 2,
-    "question": "Como varia a resistência ao escoamento (viscosidade) do sangue humano com o aumento do hematócrito (concentração de glóbulos vermelhos)?",
+    "question": "Se uma tensão constante for mantida durante o dobro do tempo sobre um fluido puramente viscoso, o que acontece à deformação acumulada?",
     "options": [
       "A deformação cessa e reverte para zero.",
       "A deformação diminui para metade por acomodação molecular.",
@@ -675,7 +675,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2036,
     "topicId": 2,
-    "question": "Qual é a unidade do Sistema Internacional frequentemente associada à viscosidade dinâmica dos fluidos?",
+    "question": "Qual é o significado da 'dependência do tempo' na resposta mecânica dos corpos viscosos?",
     "options": [
       "A quantidade de deformação sofrida depende não apenas da força aplicada, mas criticamente da duração (tempo) durante a qual a força atua.",
       "O corpo só se deforma durante a noite quando a temperatura ambiente diminui.",
@@ -694,7 +694,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2037,
     "topicId": 2,
-    "question": "Se uma mesma força tangencial for aplicada a um líquido viscoso durante o dobro do tempo, o que acontece à deformação total por escoamento?",
+    "question": "O que acontece à energia mecânica fornecida para deformar ou fazer escoar um corpo puramente viscoso?",
     "options": [
       "Fica 100% armazenada na estrutura pronta para ser devolvida elasticamente.",
       "É totalmente dissipada sob a forma de calor devido ao atrito viscoso interno entre as camadas de fluido.",
@@ -713,7 +713,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2038,
     "topicId": 2,
-    "question": "Qual é o fluido biológico presente nas cavidades articulares que apresenta propriedades viscosas vitais para lubrificação e amortecimento?",
+    "question": "Na circulação humana e nas articulações sinoviais, o sangue e o líquido articular exibem comportamento reológico de:",
     "options": [
       "Sólidos perfeitamente indeformáveis de Euclides.",
       "Molas metálicas rígidas de Hooke.",
@@ -732,7 +732,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2039,
     "topicId": 2,
-    "question": "Em repouso horizontal prolongado no leito, o edema tecidual dos membros inferiores deprime-se à palpação (sinal de godet). Este fenómeno de escoamento lento reflete:",
+    "question": "Qual é a síntese textual exata dos Corpos Viscosos apresentada no resumo numerado?",
     "options": [
       "1. Sólidos de Euclides: Modelos teóricos indeformáveis.",
       "2. Sólidos de Hooke: Deformação elástica diretamente proporcional à tensão.",
@@ -751,7 +751,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2040,
     "topicId": 2,
-    "question": "A água e o mel diferem substancialmente na sua velocidade de escoamento. Esta diferença biomecânica traduz uma diferença em qual propriedade reológica?",
+    "question": "Ao inclinar uma ampola de medicação viscosa, a solução escorre lentamente para o bocal. Se a ampola for colocada de novo na vertical, a solução escorrida recua espontaneamente?",
     "options": [
       "Não, porque os corpos viscosos não restituem a sua forma original.",
       "Sim, sobe imediatamente pelo bocal como uma mola de Hooke.",
@@ -770,7 +770,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2041,
     "topicId": 2,
-    "question": "Como se definem conceitualmente os 'Corpos Viscoelásticos' na biofísica dos tecidos?",
+    "question": "Qual é a definição exata de 'Corpos Viscoelásticos' apresentada de Biofísica?",
     "options": [
       "Corpos perfeitamente indeformáveis cuja distância interpartículas é invariável.",
       "Deformação dependente da tensão e do tempo de aplicação, com dissipação de energia por histerese (ossos e músculos).",
@@ -789,7 +789,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2042,
     "topicId": 2,
-    "question": "O que é o fenómeno de 'Histerese Mecânica' observado durante ciclos sucessivos de carga e descarga em materiais viscoelásticos?",
+    "question": "Quais são os exemplos de corpos viscoelásticos especificamente referidos?",
     "options": [
       "Água e mel.",
       "Aço e vidro.",
@@ -808,7 +808,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2043,
     "topicId": 2,
-    "question": "Sob que forma é dissipada a energia mecânica absorvida durante um ciclo de histerese num tecido viscoelástico?",
+    "question": "Qual é o fenómeno biomecânico característico dos corpos viscoelásticos no qual ocorre perda e amortecimento de energia mecânica durante ciclos de carga e descarga?",
     "options": [
       "Decaimento radioativo beta.",
       "Pressão capilar superficial.",
@@ -816,7 +816,7 @@ const TOPIC_2_QUESTIONS = [
       "Dissipação de energia por histerese."
     ],
     "correctIndex": 3,
-    "explanation": "O destaca formalmente a propriedade única: 'dissipação de energia por histerese (ossos e músculos)'.",
+    "explanation": "Destaca-se formalmente a propriedade única: 'dissipação de energia por histerese (ossos e músculos)'.",
     "distractorAnalysis": [
       "Está incorreta: Decaimento beta é um fenómeno nuclear subatómico de física das radiações.",
       "Está incorreta: Pressão capilar é a força hidrostática distribuída na pele.",
@@ -827,7 +827,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2044,
     "topicId": 2,
-    "question": "Quais dos seguintes tecidos biológicos do corpo humano apresentam comportamento reológico predominantemente viscoelástico?",
+    "question": "Por que razão a combinação de elasticidade com viscosidade (viscoelasticidade) é tão vantajosa para ossos, músculos e cartilagens?",
     "options": [
       "Porque une a capacidade elástica de sustentação de carga e restituição de forma com o amortecimento viscoso dependente do tempo que dissipa choques mecânicos.",
       "Porque permite ao esqueleto transformar-se em água durante a corrida.",
@@ -846,7 +846,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2045,
     "topicId": 2,
-    "question": "O que é o fenómeno viscoelástico de 'Relaxação de Tensões' quando um ligamento ou tendão é mantido sob deformação constante ao longo do tempo?",
+    "question": "Ao comprimir uma esponja húmida ou uma cartilagem articular, o que se observa quanto à deformação produzida?",
     "options": [
       "A deformação ocorre instantaneamente e nunca depende do tempo.",
       "A deformação depende tanto da intensidade da tensão como do tempo de aplicação dessa tensão.",
@@ -854,7 +854,7 @@ const TOPIC_2_QUESTIONS = [
       "A cartilagem estica-se longitudinalmente como um tendão em tração pura."
     ],
     "correctIndex": 1,
-    "explanation": "O salienta: 'Deformação depende da tensão e do tempo de aplicação dessa tensão. Esponja, cartilagem'. Sob carga contínua, o fluido intersticial é expulso lentamente, aumentando a deformação ao longo do tempo.",
+    "explanation": "Salienta-se: 'Deformação depende da tensão e do tempo de aplicação dessa tensão. Esponja, cartilagem'. Sob carga contínua, o fluido intersticial é expulso lentamente, aumentando a deformação ao longo do tempo.",
     "distractorAnalysis": [
       "Está incorreta: A dependência temporal é a marca registada da viscoelasticidade, ao contrário dos sólidos puramente elásticos.",
       "Está incorreta: Esponjas e cartilagens são altamente deformáveis perante forças de compressão.",
@@ -865,7 +865,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2046,
     "topicId": 2,
-    "question": "O que é o fenómeno viscoelástico de 'Fluência' (creep) quando uma estrutura biológica é submetida a uma carga constante contínua ao longo do tempo?",
+    "question": "O que representa graficamente a 'Histerese' num ciclo de carga (compressão) e descarga (descompressão) de um tecido viscoelástico?",
     "options": [
       "Uma linha reta perfeita onde o caminho de ida e de volta coincidem exatamente.",
       "Um ponto único sem qualquer área interna.",
@@ -884,7 +884,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2047,
     "topicId": 2,
-    "question": "Por que razão a cartilagem articular do joelho absorve eficientemente os impactos repetidos da marcha e corrida sem fragmentar?",
+    "question": "Durante o impacto de cada passada na marcha de um enfermeiro, como atua a cartilagem do joelho e os discos da coluna?",
     "options": [
       "Atuam como sólidos de Euclides que transmitem o choque a 100% até ao crânio.",
       "Deformam-se plasticamente de forma permanente ficando achatados para sempre.",
@@ -903,7 +903,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2048,
     "topicId": 2,
-    "question": "Se comprimirmos e libertarmos rapidamente uma esponja húmida ou um disco intervertebral, a curva de deformação durante a compressão coincide com a curva de recuperação?",
+    "question": "A recuperação da forma de uma cartilagem articular após a remoção de uma carga prolongada:",
     "options": [
       "Ocorre gradualmente ao longo do tempo (recuperação dependente do tempo), em vez de ser instantânea.",
       "Ocorre em menos de um milissegundo como uma mola de aço ideal.",
@@ -922,7 +922,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2049,
     "topicId": 2,
-    "question": "A dependência da resposta mecânica dos ossos e tendões relativamente à velocidade de aplicação da carga (maior rigidez a altas velocidades de impacto) reflete:",
+    "question": "Se uma força for aplicada de forma extremamente rápida sobre um tecido viscoelástico comparativamente a uma força aplicada muito lentamente:",
     "options": [
       "O tecido deforma-se muito mais facilmente e comporta-se como mel líquido.",
       "O tecido responde com maior rigidez aparente à carga rápida devido à resistência do componente viscoso.",
@@ -941,7 +941,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2050,
     "topicId": 2,
-    "question": "Em imobilizações ortopédicas prolongadas com tração cutânea ou gessada contínua, que propriedade viscoelástica explica a distensão progressiva dos tecidos moles ao longo dos dias?",
+    "question": "Na biomecânica de Biofísica, a expressão '(ossos e músculos)' surge explicitamente associada a qual das seguintes classes de corpos?",
     "options": [
       "Sólidos de Euclides.",
       "Corpos Plásticos puros.",
@@ -960,7 +960,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2051,
     "topicId": 2,
-    "question": "Como se caracterizam os 'Corpos Plastoviscoelásticos' na classificação geral dos materiais?",
+    "question": "Qual é a característica reológica que define os 'Corpos Plastoviscoelásticos' de Biofísica?",
     "options": [
       "Nunca acusam qualquer deformação sob nenhuma tensão.",
       "Comportam-se exclusivamente como gases perfeitos no vácuo.",
@@ -968,7 +968,7 @@ const TOPIC_2_QUESTIONS = [
       "Apresentam características dos corpos plásticos, viscosos e elásticos em simultâneo."
     ],
     "correctIndex": 3,
-    "explanation": "Corpos plastoviscoelásticos: Apresentam características dos corpos plásticos, viscosos e elásticos'.",
+    "explanation": "Define-se expressamente: 'Corpos plastoviscoelásticos: Apresentam características dos corpos plásticos, viscosos e elásticos'.",
     "distractorAnalysis": [
       "Está incorreta: Nunca acusar deformação define os sólidos indeformáveis de Euclides.",
       "Está incorreta: Gases perfeitos pertencem à termodinâmica dos fluidos, não aos corpos reológicos sólidos/pastosos.",
@@ -979,7 +979,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2052,
     "topicId": 2,
-    "question": "Qual é o exemplo clássico do dia a dia frequentemente utilizado para ilustrar o comportamento de um corpo Plastoviscoelástico?",
+    "question": "De acordo com a síntese, como se comportam os corpos plastoviscoelásticos sob pequenas tensões mecânicas?",
     "options": [
       "Comportam-se como corpos elásticos (recuperando a sua forma inicial após a remoção da carga leve).",
       "Comportam-se imediatamente como fluidos de alta viscosidade que escoam sem retorno.",
@@ -987,7 +987,7 @@ const TOPIC_2_QUESTIONS = [
       "Anulam a gravidade terrestre e entram em levitação estática."
     ],
     "correctIndex": 0,
-    "explanation": "O especifica taxativamente: '6. Corpos plastoviscoelásticos: Comportam-se como corpos elásticos sob pequenas tensões; acima desse limiar, comportam-se como corpos plásticos'.",
+    "explanation": "Especifica-se taxativamente: '6. Corpos plastoviscoelásticos: Comportam-se como corpos elásticos sob pequenas tensões; acima desse limiar, comportam-se como corpos plásticos'.",
     "distractorAnalysis": [
       "Está incorreta: O escoamento plástico irreversível só se manifesta após superar o limiar de tensão.",
       "Está incorreta: Pequenas tensões são absorvidas elasticamente sem fragmentação.",
@@ -998,7 +998,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2053,
     "topicId": 2,
-    "question": "Como reage um corpo Plastoviscoelástico sob pequenas forças transitórias muito inferiores ao seu limiar plástico?",
+    "question": "O que acontece a um corpo plastoviscoelástico quando a tensão mecânica aplicada ultrapassa o seu limiar característico de elasticidade?",
     "options": [
       "Transforma-se instantaneamente num sólido de Euclides indeformável.",
       "Comporta-se como um corpo plástico, mantendo deformação permanente irreversível.",
@@ -1017,7 +1017,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2054,
     "topicId": 2,
-    "question": "O que acontece a um corpo Plastoviscoelástico quando a força mecânica aplicada ultrapassa o seu limiar crítico de tensão plástica?",
+    "question": "Qual é o exemplo do quotidiano apresentado para ilustrar um Corpo Plastoviscoelástico?",
     "options": [
       "Aço de alta resistência.",
       "Gelo seco a -78 ºC.",
@@ -1036,7 +1036,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2055,
     "topicId": 2,
-    "question": "A massa de pão, quando suavemente pressionada com um dedo e libertada de imediato, exibe ligeiro retorno elástico; contudo, se for amassada vigorosamente, deforma-se permanentemente e escoa. Isto comprova:",
+    "question": "Se pressionarmos muito suavemente a massa de pão com a ponta de um dedo (aplicando tensão bem abaixo do limiar) e retirarmos o dedo:",
     "options": [
       "Fica um buraco fundo permanente que nunca mais desaparece.",
       "A massa líquida escorre pela mesa fora sem parar.",
@@ -1044,7 +1044,7 @@ const TOPIC_2_QUESTIONS = [
       "A massa comporta-se elasticamente e recupera a sua forma original sem deformação permanente visível."
     ],
     "correctIndex": 3,
-    "explanation": "Abaixo do limiar plástico, o material opera no seu regime elástico inicial ('Comportam-se como corpos elásticos sob pequenas tensões'), recuperando a superfície original.",
+    "explanation": "Abaixo do limiar plástico, o material opera no seu regime elástico inicial (: 'Comportam-se como corpos elásticos sob pequenas tensões'), recuperando a superfície original.",
     "distractorAnalysis": [
       "Está incorreta: O buraco permanente só surge se a força exercida ultrapassar o limiar de tensão plástico.",
       "Está incorreta: Abaixo do limiar o material retém integridade elástica e não escoa livremente.",
@@ -1055,7 +1055,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2056,
     "topicId": 2,
-    "question": "Quais são as três componentes de comportamento mecânico que coexistem num corpo plastoviscoelástico?",
+    "question": "Quando um padeiro amassa vigorosamente a massa de pão superando o limiar de tensão e mantendo a força ao longo dos minutos:",
     "options": [
       "A massa sofre deformação plástica permanente combinada com escoamento viscoso dependente do tempo.",
       "A massa comporta-se como um sólido indeformável de Euclides.",
@@ -1074,7 +1074,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2057,
     "topicId": 2,
-    "question": "Que biomateriais poliméricos utilizados em moldagens odontológicas e certos curativos hidrocolóides mimetizam comportamento plastoviscoelástico?",
+    "question": "O que determina a transição entre a resposta elástica e a resposta plástica num corpo plastoviscoelástico?",
     "options": [
       "A altitude do laboratório em relação ao nível do mar.",
       "O valor da tensão aplicada relativamente ao limiar de tensão do material.",
@@ -1093,7 +1093,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2058,
     "topicId": 2,
-    "question": "Na escala dos 6 corpos da reologia mecânica, qual é o material que apresenta o comportamento reológico mais complexo?",
+    "question": "A capacidade de um corpo responder como elástico a forças ínfimas, mas fluir plasticamente com retenção da nova forma sob forças intensas e duradouras traduz:",
     "options": [
       "O comportamento indeformável de Euclides.",
       "A rigidez elástica linear do aço.",
@@ -1112,7 +1112,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2059,
     "topicId": 2,
-    "question": "Qual das seguintes categorias reológicas descreve com precisão um material que apresenta recuperação elástica parcial sob pequenas cargas, mas deforma permanentemente com fluxo viscoso sob cargas elevadas sustentadas?",
+    "question": "Na lista de síntese dos conceitos lecionados, qual é o nome formal do sexto e último tipo de corpo?",
     "options": [
       "Corpos Viscoelásticos.",
       "Corpos Plásticos puros.",
@@ -1131,7 +1131,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2060,
     "topicId": 2,
-    "question": "Qual é a relevância clínica de compreender o comportamento plastoviscoelástico de materiais de proteção e alívio de pressão na prevenção de escaras?",
+    "question": "Que propriedade dos Corpos Viscosos está também presente na resposta mecânica dos plastoviscoelásticos?",
     "options": [
       "A dependência da deformação em relação ao tempo de aplicação da força.",
       "A restituição instantânea e integral da forma em 0,001 segundos.",
@@ -1150,7 +1150,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2061,
     "topicId": 2,
-    "question": "Quais são as SEIS categorias fundamentais de corpos mecânicos estudadas na classificação reológica comparativa?",
+    "question": "Qual dos seguintes corpos da Reologia é definido como 'Modelos teóricos indeformáveis; distância interpartículas invariável sob qualquer força'?",
     "options": [
       "Sólidos de Hooke.",
       "Sólidos de Euclides.",
@@ -1158,7 +1158,7 @@ const TOPIC_2_QUESTIONS = [
       "Corpos Plásticos."
     ],
     "correctIndex": 1,
-    "explanation": "O estabelece formalmente no ponto 1: '1. Sólidos de Euclides: Modelos teóricos indeformáveis; distância interpartículas invariável sob qualquer força'.",
+    "explanation": "Estabelece-se formalmente no ponto 1: '1. Sólidos de Euclides: Modelos teóricos indeformáveis; distância interpartículas invariável sob qualquer força'.",
     "distractorAnalysis": [
       "Está incorreta: Sólidos de Hooke sofrem deformação proporcional à tensão com restituição integral.",
       "Está incorreta: Corpos Viscoelásticos sofrem deformação dependente do tempo com histerese.",
@@ -1169,7 +1169,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2062,
     "topicId": 2,
-    "question": "Qual dos 6 corpos mecânicos da reologia NUNCA sofre qualquer tipo de deformação sob nenhuma intensidade de força (modelo puramente teórico)?",
+    "question": "Qual corpo da Reologia é definido por 'Deformação elástica diretamente proporcional à tensão; restituição integral da forma original após remoção da tensão'?",
     "options": [
       "Corpos Viscosos.",
       "Sólidos de Euclides.",
@@ -1177,7 +1177,7 @@ const TOPIC_2_QUESTIONS = [
       "Corpos plastoviscoelásticos."
     ],
     "correctIndex": 2,
-    "explanation": "O estabelece formalmente no ponto 2: '2. Sólidos de Hooke: Deformação elástica diretamente proporcional à tensão; restituição integral da forma original após remoção da tensão'.",
+    "explanation": "Estabelece-se formalmente no ponto 2: '2. Sólidos de Hooke: Deformação elástica diretamente proporcional à tensão; restituição integral da forma original após remoção da tensão'.",
     "distractorAnalysis": [
       "Está incorreta: Corpos Viscosos não restituem a sua forma original.",
       "Está incorreta: Sólidos de Euclides nunca acusam qualquer deformação.",
@@ -1188,7 +1188,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2063,
     "topicId": 2,
-    "question": "Qual dos 6 corpos mecânicos se deforma proporcionalmente à tensão e recupera instantânea e integralmente a forma original após a remoção da carga?",
+    "question": "Qual corpo da Reologia é definido por 'Só acusam deformação a partir de um limiar de tensão; mantêm permanentemente a deformação máxima'?",
     "options": [
       "Sólidos de Euclides.",
       "Sólidos de Hooke.",
@@ -1196,7 +1196,7 @@ const TOPIC_2_QUESTIONS = [
       "Corpos Plásticos."
     ],
     "correctIndex": 3,
-    "explanation": "O estabelece formalmente no ponto 3: '3. Corpos Plásticos: Só acusam deformação a partir de um limiar de tensão; mantêm permanentemente a deformação máxima'.",
+    "explanation": "Estabelece-se formalmente no ponto 3: '3. Corpos Plásticos: Só acusam deformação a partir de um limiar de tensão; mantêm permanentemente a deformação máxima'.",
     "distractorAnalysis": [
       "Está incorreta: Sólidos de Euclides nunca se deformam sob qualquer tensão.",
       "Está incorreta: Sólidos de Hooke deparam-se com restituição elástica integral e deformam antes de qualquer limiar rígido.",
@@ -1207,7 +1207,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2064,
     "topicId": 2,
-    "question": "Qual dos 6 corpos mecânicos só se deforma a partir de um limiar crítico de tensão e mantém permanentemente a deformação sem qualquer recuperação elástica?",
+    "question": "Qual corpo da Reologia é definido por 'Deformação dependente da tensão e do tempo; não restituem a sua forma original'?",
     "options": [
       "Corpos Viscosos.",
       "Sólidos de Euclides.",
@@ -1215,7 +1215,7 @@ const TOPIC_2_QUESTIONS = [
       "Corpos Viscoelásticos."
     ],
     "correctIndex": 0,
-    "explanation": "O estabelece formalmente no ponto 4: '4. Corpos Viscosos: Deformação dependente da tensão e do tempo; não restituem a sua forma original'.",
+    "explanation": "Estabelece-se formalmente no ponto 4: '4. Corpos Viscosos: Deformação dependente da tensão e do tempo; não restituem a sua forma original'.",
     "distractorAnalysis": [
       "Está incorreta: Sólidos de Euclides são indeformáveis.",
       "Está incorreta: Sólidos de Hooke restituem integralmente a sua forma.",
@@ -1226,7 +1226,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2065,
     "topicId": 2,
-    "question": "Qual dos 6 corpos mecânicos apresenta escoamento contínuo proporcional à tensão e ao tempo, sem qualquer tendência de retorno à forma inicial?",
+    "question": "Qual corpo da Reologia é definido por 'Deformação dependente da tensão e do tempo; dissipação de energia por histerese (ossos e músculos)'?",
     "options": [
       "Corpos Plásticos.",
       "Corpos Viscoelásticos.",
@@ -1234,7 +1234,7 @@ const TOPIC_2_QUESTIONS = [
       "Sólidos de Hooke."
     ],
     "correctIndex": 1,
-    "explanation": "O estabelece formalmente no ponto 5: '5. Corpos Viscoelásticos: Deformação dependente da tensão e do tempo; dissipação de energia por histerese (ossos e músculos)'.",
+    "explanation": "Estabelece-se formalmente no ponto 5: '5. Corpos Viscoelásticos: Deformação dependente da tensão e do tempo; dissipação de energia por histerese (ossos e músculos)'.",
     "distractorAnalysis": [
       "Está incorreta: Corpos Plásticos mantêm deformação permanente sem componente de histerese biológica de suporte.",
       "Está incorreta: Sólidos de Euclides são indeformáveis.",
@@ -1245,7 +1245,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2066,
     "topicId": 2,
-    "question": "Qual dos 6 corpos mecânicos conjuga elasticidade e viscosidade, exibindo histerese mecânica e sendo o modelo dos tecidos conjuntivos vivos?",
+    "question": "Qual corpo da Reologia é definido por 'Comportam-se como corpos elásticos sob pequenas tensões; acima desse limiar, comportam-se como corpos plásticos'?",
     "options": [
       "Sólidos de Hooke.",
       "Corpos Viscosos.",
@@ -1253,7 +1253,7 @@ const TOPIC_2_QUESTIONS = [
       "Sólidos de Euclides."
     ],
     "correctIndex": 2,
-    "explanation": "O estabelece formalmente no ponto 6: '6. Corpos plastoviscoelásticos: Comportam-se como corpos elásticos sob pequenas tensões; acima desse limiar, comportam-se como corpos plásticos'.",
+    "explanation": "Estabelece-se formalmente no ponto 6: '6. Corpos plastoviscoelásticos: Comportam-se como corpos elásticos sob pequenas tensões; acima desse limiar, comportam-se como corpos plásticos'.",
     "distractorAnalysis": [
       "Está incorreta: Sólidos de Hooke mantêm comportamento elástico linear sem transição para escoamento plástico permanente.",
       "Está incorreta: Corpos Viscosos escoam continuamente e não possuem resposta elástica reversível.",
@@ -1264,7 +1264,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2067,
     "topicId": 2,
-    "question": "Qual é a associação CORRETA entre os modelos reológicos e os seus exemplos representativos (Hooke, Plástico, Viscoso, Viscoelástico e Plastoviscoelástico)?",
+    "question": "Qual é a associação CORRETA entre o tipo de corpo reológico e o exemplo prático indicado?",
     "options": [
       "Hooke: Mel | Viscoso: Mola | Plástico: Massa de pão",
       "Euclides: Esponja | Viscoelástico: Vidro | Plástico: Água",
@@ -1283,7 +1283,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2068,
     "topicId": 2,
-    "question": "Qual é a propriedade EXCLUSIVA que distingue os corpos viscoelásticos de todos os outros na resposta a ciclos de carga e descarga?",
+    "question": "Em qual dos 6 corpos reológicos a distância interpartículas é assumida como perfeitamente invariável sob qualquer solicitação mecânica?",
     "options": [
       "Nos Sólidos de Euclides.",
       "Nos Sólidos de Hooke.",
@@ -1302,7 +1302,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2069,
     "topicId": 2,
-    "question": "O osso humano e a cartilagem articular são classificados em qual das 6 categorias mecânicas da reologia?",
+    "question": "Qual é a diferença de restituição entre um Corpo Plástico e um Sólido de Hooke quando a força deformadora é totalmente removida?",
     "options": [
       "O corpo plástico recupera 100% da forma e o de Hooke fica permanentemente deformado.",
       "O sólido de Hooke restitui integralmente a sua forma original, enquanto o corpo plástico mantém permanentemente a deformação máxima.",
@@ -1321,7 +1321,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2070,
     "topicId": 2,
-    "question": "Qual dos 6 corpos mecânicos reúne de forma mais integrada propriedades elásticas sob baixas tensões e plasticidade com viscosidade acima do limiar?",
+    "question": "A propriedade de 'dissipação de energia por histerese' é atribuída no resumo de Paulo Pereira exclusivamente a qual classe?",
     "options": [
       "Aos Sólidos de Euclides.",
       "Aos Sólidos de Hooke puros.",
@@ -1340,7 +1340,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2071,
     "topicId": 2,
-    "question": "Como se define geometricamente a deformação por 'Compressão' na mecânica dos materiais?",
+    "question": "Como são caracterizadas as 'Forças de compressão', 24 e 30 de Biofísica?",
     "options": [
       "Forças tangenciais paralelas que cortam as superfícies.",
       "Momentos de rotação que torcem o osso em torno do seu eixo.",
@@ -1359,7 +1359,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2072,
     "topicId": 2,
-    "question": "Como atuam as forças que provocam deformação por Compressão relativamente ao eixo longitudinal da estrutura?",
+    "question": "O que acontece às dimensões geométricas de uma barra ou elemento estrutural sujeito a forças axiais de compressão?",
     "options": [
       "Diminuição do comprimento da barra (L) e Aumento da área de secção (S).",
       "Aumento do comprimento da barra (L) e Diminuição da área de secção (S).",
@@ -1378,7 +1378,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2073,
     "topicId": 2,
-    "question": "Qual é a consequência dimensional geométrica direta da solicitação de compressão pura numa haste ou coluna?",
+    "question": "Qual é o exemplo biomecânico clássico apresentado para ilustrar a deformação por Compressão no corpo humano?",
     "options": [
       "A rotação da tíbia ao desviar o pé no esqui na neve.",
       "Fémur suporta carga corporal diária.",
@@ -1397,7 +1397,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2074,
     "topicId": 2,
-    "question": "Qual é o osso longo do corpo humano que serve de exemplo biofísico de referência para suportar monumentais forças de compressão axial durante a postura ereta?",
+    "question": "Durante a posição de pé estática, que tipo de solicitação mecânica predomina ao longo do eixo da diáfise do fémur e tíbia?",
     "options": [
       "Torção em alta rotação angular.",
       "Tração divergente que afasta o joelho da bacia.",
@@ -1416,7 +1416,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2075,
     "topicId": 2,
-    "question": "Ao apoiar o peso do corpo sobre um membro inferior, que tipo de solicitação mecânica predomina na diáfise do fémur e nas vértebras lombares?",
+    "question": "Por que razão a área de secção transversal (S) aumenta quando uma barra sofre compressão axial?",
     "options": [
       "Porque a massa do corpo triplica por absorção de fotões solares.",
       "Porque as forças convergentes empurram as partículas para o espaço exterior.",
@@ -1435,7 +1435,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2076,
     "topicId": 2,
-    "question": "Se uma barra óssea sofrer compressão longitudinal axial, o que acontece à sua secção transversal perpendicular?",
+    "question": "Como se orientam no espaço os vetores de força que produzem compressão pura?",
     "options": [
       "Atuam na mesma linha de ação (colineares), apontando um em direção ao outro (sentidos convergentes).",
       "Atuam em linhas perpendiculares formando um ângulo de 90 graus entre si.",
@@ -1454,7 +1454,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2077,
     "topicId": 2,
-    "question": "Qual é a unidade do Sistema Internacional (SI) utilizada para expressar a tensão mecânica de compressão (força por unidade de área)?",
+    "question": "Os corpos vertebrais da coluna de um enfermeiro ao sustentar um doente suportam primariamente que tipo de força deformadora?",
     "options": [
       "Forças divergentes de tração que separam as vértebras.",
       "Forças convergentes de compressão axial que diminuem a espessura dos discos e corpos vertebrais.",
@@ -1473,7 +1473,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2078,
     "topicId": 2,
-    "question": "Por que razão as lesões de fratura por compressão dos corpos vertebrais são frequentes em utentes idosos com osteoporose severa?",
+    "question": "Quando uma força de compressão convergente excede a resistência mecânica máxima do osso cortical ou trabecular:",
     "options": [
       "O osso transforma-se imediatamente numa esponja viscoelástica perfeita.",
       "O osso estica indefinidamente até atingir o dobro do comprimento.",
@@ -1492,7 +1492,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2079,
     "topicId": 2,
-    "question": "Como é orientada a linha de ação das forças externas numa solicitação de compressão axial?",
+    "question": "No estudo das deformações mecânicas, a consequência longitudinal das forças convergentes na compressão é resumida pelo termo:",
     "options": [
       "Alongamento axial",
       "Rotação perimetral",
@@ -1500,7 +1500,7 @@ const TOPIC_2_QUESTIONS = [
       "Encurtamento longitudinal"
     ],
     "correctIndex": 3,
-    "explanation": "O especifica textualmente: '1. Compressão: Forças convergentes; encurtamento longitudinal; fémur suporta carga corporal diária'.",
+    "explanation": "Especifica-se textualmente: '1. Compressão: Forças convergentes; encurtamento longitudinal; fémur suporta carga corporal diária'.",
     "distractorAnalysis": [
       "Está incorreta: 'Aumento longitudinal' ou alongamento é a consequência da Tração.",
       "Está incorreta: Rotação é a consequência da Torção.",
@@ -1511,7 +1511,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2080,
     "topicId": 2,
-    "question": "Qual das seguintes estruturas anatómicas do aparelho locomotor tem como função biológica primordial amortecer forças axiais de compressão?",
+    "question": "Comparando Compressão e Tração, qual é o contraste dimensional fundamental entre ambas?",
     "options": [
       "Na Compressão há diminuição de L e aumento de S; na Tração há aumento de L e diminuição de S.",
       "Na Compressão o comprimento aumenta e na Tração o comprimento diminui.",
@@ -1530,7 +1530,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2081,
     "topicId": 2,
-    "question": "Como se define geometricamente a deformação por 'Tração' na mecânica dos corpos?",
+    "question": "Como são caracterizadas as 'Forças de tração', 24 e 31 de Biofísica?",
     "options": [
       "Forças convergentes que reduzem o comprimento do corpo.",
       "Forças divergentes que atuam no sentido de esticar e aumentar o comprimento longitudinal do corpo.",
@@ -1549,7 +1549,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2082,
     "topicId": 2,
-    "question": "Como atuam as forças que provocam deformação por Tração relativamente à estrutura mecânica?",
+    "question": "O que acontece às dimensões geométricas de uma barra sujeita a forças de tração?",
     "options": [
       "Diminuição do comprimento da barra (L) e Aumento da área de secção (S).",
       "Diminuição simultânea do comprimento e da secção transversal.",
@@ -1568,7 +1568,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2083,
     "topicId": 2,
-    "question": "Qual é o tecido biológico fibroso do aparelho locomotor que atua como exemplo clássico de resistência à solicitação de Tração pura?",
+    "question": "Qual é o exemplo biomecânico clássico apresentado para ilustrar a deformação por Tração no corpo humano?",
     "options": [
       "Fémur suporta carga corporal diária.",
       "Atrito e escorregamento no leito hospitalar.",
@@ -1587,7 +1587,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2084,
     "topicId": 2,
-    "question": "Qual é a consequência dimensional geométrica direta da atuação de forças de tração pura numa barra cilíndrica?",
+    "question": "Quando o tendão de Aquiles (calcâneo) é fortemente solicitado durante a fase de impulsão da marcha, as forças que nele atuam são:",
     "options": [
       "Forças divergentes de tração pura que aumentam o comprimento do tendão e diminuem ligeiramente a sua secção.",
       "Forças convergentes de compressão que esmagam o tendão contra o calcanhar.",
@@ -1606,7 +1606,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2085,
     "topicId": 2,
-    "question": "O que significa fisicamente caracterizar as forças de tração como 'divergentes'?",
+    "question": "O que significa dizer que as forças de tração são 'divergentes'?",
     "options": [
       "Que os vetores de força convergem e apontam um para o outro no interior da barra.",
       "Que os vetores de força têm sentidos opostos dirigidos para o exterior do corpo ao longo da mesma linha de ação.",
@@ -1625,7 +1625,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2086,
     "topicId": 2,
-    "question": "Na análise dimensional, o que acontece ao comprimento longitudinal (L) e à área de secção transversal (S) de um tendão quando este é tracionado?",
+    "question": "Na síntese, qual é a consequência longitudinal imediata das forças de tração?",
     "options": [
       "Encurtamento longitudinal maciço.",
       "Curvatura com plano neutro central nulo.",
@@ -1644,7 +1644,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2087,
     "topicId": 2,
-    "question": "Qual proteína estrutural fibrosa confere aos tendões e ligamentos a sua extraordinária resistência mecânica à tração?",
+    "question": "Um fio de sutura cirúrgica utilizado para encerrar uma incisão abdominal está sujeito a que tipo de esforço mecânico?",
     "options": [
       "Compressão convergente que achata o fio.",
       "Cisalhamento rotativo nuclear.",
@@ -1663,7 +1663,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2088,
     "topicId": 2,
-    "question": "Se um tendão for submetido a uma força de tração excessiva que ultrapasse a sua resistência limite, que evento lesivo ocorre?",
+    "question": "Uma barra metálica com comprimento inicial de 10 cm que, sob tração axial, passa a medir 10,2 cm sofreu:",
     "options": [
       "Uma deformação absoluta por tração de Δx = 0,2 cm com aumento longitudinal.",
       "Uma compressão volumétrica com diminuição de comprimento.",
@@ -1682,7 +1682,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2089,
     "topicId": 2,
-    "question": "Qual é a distinção geométrica primária entre uma força de compressão e uma força de tração aplicadas ao longo do mesmo eixo?",
+    "question": "Quando ocorre a rotura completa de um tendão muscular durante um esforço desportivo violento:",
     "options": [
       "A força de tração aplicada foi inferior ao limiar elástico mínimo.",
       "A força de tração divergente excedeu a tensão mecânica limite de rutura do tecido tendinoso.",
@@ -1701,7 +1701,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2090,
     "topicId": 2,
-    "question": "Quando uma barra cilíndrica de comprimento inicial L₀ e área S é submetida a uma força axial de tração F dentro do regime elástico, como varia o seu comprimento?",
+    "question": "Quando uma barra elástica de secção S e comprimento L é sujeita a tração F, o que acontece a uma barra de secção S e comprimento inicial L quando é sujeita a uma força de tração F nos trabalhos de Hooke?",
     "options": [
       "Perde toda a sua massa inercial evaporando no ar.",
       "Torna-se imune a qualquer alteração de forma.",
@@ -1709,7 +1709,7 @@ const TOPIC_2_QUESTIONS = [
       "Começa a girar em torno do seu eixo central a alta velocidade."
     ],
     "correctIndex": 2,
-    "explanation": "O refere textualmente: 'Quando uma barra de secção transversal S e comprimento inicial L é sujeita a uma força de tração F, sofre uma deformação dimensional mensurável'.",
+    "explanation": "Refere-se textualmente: 'Quando uma barra de secção transversal S e comprimento inicial L é sujeita a uma força de tração F, sofre uma deformação dimensional mensurável'.",
     "distractorAnalysis": [
       "Está incorreta: A massa é rigorosamente conservada na mecânica dos materiais de Hooke.",
       "Está incorreta: Apenas os sólidos indeformáveis são imunes a alterações dimensionais.",
@@ -1720,7 +1720,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2091,
     "topicId": 2,
-    "question": "Qual é a definição exata de deformação por 'Flexão' na resistência dos materiais?",
+    "question": "Qual é a definição exata de deformação por 'Flexão' apresentada na mecânica dos materiais?",
     "options": [
       "Deformação entre duas superfícies planas paralelas por ação de forças opostas paralelas.",
       "Rotação de um sólido em torno do seu eixo por ação de um momento de força.",
@@ -1739,7 +1739,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2092,
     "topicId": 2,
-    "question": "O que acontece à tensão mecânica no centro geométrico (plano neutro central) de uma barra submetida a flexão pura?",
+    "question": "O que acontece à tensão mecânica no plano neutro (centro geométrico) de um sólido sujeito a flexão pura?",
     "options": [
       "Tensão no centro é nula! (Tensão = 0 Pa no plano neutro).",
       "A tensão no centro atinge o valor máximo absoluto e infinito.",
@@ -1758,7 +1758,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2093,
     "topicId": 2,
-    "question": "Numa haste ou osso longo sujeito a flexão, que tipo de tensões mecânicas coexistem nas suas superfícies opostas côncava e convexa?",
+    "question": "Qual é o exemplo biomecânico apresentado de Biofísica para ilustrar a deformação por Flexão?",
     "options": [
       "Atrito e cisalhamento na pele sacra durante o arrasto no leito.",
       "Tensão a meio de um osso submetido a forças transversais.",
@@ -1766,7 +1766,7 @@ const TOPIC_2_QUESTIONS = [
       "Rotação helicoidal da perna no esqui alpino."
     ],
     "correctIndex": 1,
-    "explanation": "O especifica no ponto 3: '3. Flexão: Força transversal; curvatura com plano neutro central; tensão a meio de um osso'.",
+    "explanation": "Especifica-se no ponto 3: '3. Flexão: Força transversal; curvatura com plano neutro central; tensão a meio de um osso'.",
     "distractorAnalysis": [
       "Está incorreta: Atrito no leito é o exemplo de Cisalhamento.",
       "Está incorreta: Fémur a suportar peso axial é o exemplo de Compressão.",
@@ -1777,7 +1777,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2094,
     "topicId": 2,
-    "question": "Num osso longo cilíndrico sujeito a uma força transversal que o curva, onde se localizam as tensões de tração e de compressão?",
+    "question": "Quando uma viga ou osso longo verga e curva sob o efeito de flexão por forças perpendiculares, que tensões se desenvolvem nas suas faces opostas?",
     "options": [
       "Tensão de cisalhamento puro em ambas as faces sem qualquer diferença.",
       "Tensão nula em todas as superfícies da barra sólida.",
@@ -1796,7 +1796,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2095,
     "topicId": 2,
-    "question": "Quais são os três elementos caracterizadores fundamentais da deformação por Flexão na biomecânica?",
+    "question": "Como resume o os três elementos definidores da Flexão em Biofísica?",
     "options": [
       "Forças divergentes; aumento longitudinal; tração do tendão.",
       "Forças convergentes; encurtamento longitudinal; fémur suporta carga.",
@@ -1815,7 +1815,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2096,
     "topicId": 2,
-    "question": "Por que razão as fraturas por flexão em ossos longos têm tipicamente início na superfície convexa e não na côncava?",
+    "question": "Qual é o nome formal da linha ou superfície interior de uma barra em flexão onde o material não sofre nem tração nem compressão?",
     "options": [
       "Plano neutro (ou eixo neutro) central.",
       "Limiar de tensão plástica de ruptura.",
@@ -1834,7 +1834,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2097,
     "topicId": 2,
-    "question": "Como se orienta a linha de ação da força causadora de flexão relativamente ao eixo longitudinal retilíneo do corpo?",
+    "question": "Uma prancha rígida de transferência de doentes colocada entre a cama e a maca verga ligeiramente no centro sob o peso do utente. Que tipo de deformação mecânica está a ocorrer na prancha?",
     "options": [
       "Torção helicoidal.",
       "Flexão por ação de forças perpendiculares ao comprimento da prancha.",
@@ -1853,7 +1853,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2098,
     "topicId": 2,
-    "question": "Qual é a razão biomecânica pela qual os ossos longos diafisários (como o fémur e a tíbia) evoluíram como tubos ocos em vez de cilindros maciços?",
+    "question": "Nas fraturas por flexão em crianças (fratura incompleta em ramo verde), em qual das superfícies do osso tende a iniciar-se a linha de rotura estrutural?",
     "options": [
       "Exatamente no centro do plano neutro onde a tensão é zero.",
       "Na superfície côncava que sofre compressão pura.",
@@ -1872,7 +1872,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2099,
     "topicId": 2,
-    "question": "A transformação geométrica de eixos originalmente retilíneos em perfis curvos constitui a característica descritiva de qual tipo de deformação?",
+    "question": "A transformação geométrica de arestas retilíneas em linhas curvas é a assinatura descritiva de qual das deformações catalogadas na biomecânica?",
     "options": [
       "Compressão convergente.",
       "Tração divergente.",
@@ -1880,7 +1880,7 @@ const TOPIC_2_QUESTIONS = [
       "Flexão."
     ],
     "correctIndex": 3,
-    "explanation": "Deformação das arestas retilíneas de um sólido em linhas curvas por ação de forças perpendiculares (...) Flexão'.",
+    "explanation": "Define-se formalmente: 'Deformação das arestas retilíneas de um sólido em linhas curvas por ação de forças perpendiculares (...) Flexão'.",
     "distractorAnalysis": [
       "Está incorreta: Compressão encurta a barra mantendo as arestas retilíneas axiais.",
       "Está incorreta: Tração alonga a barra mantendo as arestas alinhadas no eixo.",
@@ -1891,7 +1891,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2100,
     "topicId": 2,
-    "question": "Qual é a grande vantagem adaptativa da existência de um plano neutro central com tensão mecânica nula numa estrutura submetida a flexão?",
+    "question": "Qual é a grande vantagem adaptativa biológica do facto de a tensão ser nula no centro de uma estrutura submetida a flexão?",
     "options": [
       "Permite que os ossos longos sejam cilindros ocos com canal medular central, poupando massa corporal sem perder resistência mecânica.",
       "Permite que os ossos se tornem líquidos durante o sono noturno.",
@@ -1910,7 +1910,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2101,
     "topicId": 2,
-    "question": "Qual é a definição exata de deformação por 'Cisalhamento' (ou corte) na mecânica dos materiais?",
+    "question": "Qual é a definição exata de deformação por 'Cisalhamento' apresentada na mecânica dos materiais?",
     "options": [
       "Deformação das arestas retilíneas em curvas por forças perpendiculares.",
       "Deformação entre duas superfícies planas paralelas por ação de forças opostas paralelas.",
@@ -1929,7 +1929,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2102,
     "topicId": 2,
-    "question": "Como são caracterizadas geometricamente as forças mecânicas que provocam deformação por Cisalhamento?",
+    "question": "Como são caracterizadas as forças que provocam Cisalhamento no resumo?",
     "options": [
       "Forças perpendiculares axiais que aumentam o comprimento.",
       "Forças centrífugas que giram a alta velocidade.",
@@ -1937,7 +1937,7 @@ const TOPIC_2_QUESTIONS = [
       "Forças nucleares fortes no interior do núcleo celular."
     ],
     "correctIndex": 2,
-    "explanation": "O especifica no ponto 4: '4. Cisalhamento: Forças tangenciais paralelas em sentidos opostos; atrito no leito'.",
+    "explanation": "Especifica-se no ponto 4: '4. Cisalhamento: Forças tangenciais paralelas em sentidos opostos; atrito no leito'.",
     "distractorAnalysis": [
       "Está incorreta: Forças perpendiculares axiais produzem tração ou compressão, não cisalhamento tangencial.",
       "Está incorreta: Forças rotativas centrífugas produzem torção ou acelerações curvas.",
@@ -1948,7 +1948,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2103,
     "topicId": 2,
-    "question": "Qual é o cenário clínico clássico de cuidados de enfermagem frequentemente associado a forças prejudiciais de Cisalhamento nos tecidos?",
+    "question": "Qual é o exemplo clínico e de cuidados de enfermagem apresentado para ilustrar o Cisalhamento?",
     "options": [
       "Fémur suportando a carga do peso diário.",
       "Tração do tendão pelo músculo quadríceps.",
@@ -1967,7 +1967,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2104,
     "topicId": 2,
-    "question": "O que acontece biomecanicamente às camadas profundas da pele e à microcirculação tecidual quando um doente escorrega pelo leito hospitalar?",
+    "question": "O que acontece biomecanicamente aos tecidos profundos e microcirculação quando um doente escorrega pelo leito (cisalhamento)?",
     "options": [
       "A pele externa fica aderida ao lençol por atrito enquanto a estrutura óssea desliza para baixo, distendendo, dobrando e ocluindo os microvasos sanguíneos subcutâneos.",
       "A pele arrefece instantaneamente congelando o sangue nos capilares.",
@@ -1986,7 +1986,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2105,
     "topicId": 2,
-    "question": "Qual é a diferença geométrica essencial entre as solicitações de Tração/Compressão (axiais normais) e o Cisalhamento (tangencial)?",
+    "question": "Qual é a diferença geométrica entre as forças de Tração/Compressão e as forças de Cisalhamento na biomecânica?",
     "options": [
       "Na tração as forças são perpendiculares e no cisalhamento são puramente gravitacionais.",
       "Na tração/compressão as forças atuam perpendicularmente à secção transversal (axiais), enquanto no cisalhamento atuam paralelamente (tangencialmente) às superfícies planas.",
@@ -1994,7 +1994,7 @@ const TOPIC_2_QUESTIONS = [
       "No cisalhamento as forças atuam exclusivamente no vácuo espacial."
     ],
     "correctIndex": 1,
-    "explanation": "A tração e compressão são solicitações normais/axiais (ortogonais à secção da barra). O cisalhamento é uma solicitação tangencial ('forças tangenciais paralelas em sentidos opostos') que faz deslizar planos paralelos uns sobre os outros.",
+    "explanation": "A tração e compressão são solicitações normais/axiais (ortogonais à secção da barra). O cisalhamento é uma solicitação tangencial (: 'forças tangenciais paralelas em sentidos opostos') que faz deslizar planos paralelos uns sobre os outros.",
     "distractorAnalysis": [
       "Está incorreta: A tração é axial e o cisalhamento é tangencial de contacto mecânico, não puramente gravitacional.",
       "Está incorreta: A orientação das forças (normal vs tangencial) é a distinção primária na resistência dos materiais.",
@@ -2005,7 +2005,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2106,
     "topicId": 2,
-    "question": "Por que razão as forças de cisalhamento combinadas com a fricção no leito aceleram drasticamente o surgimento de lesões por pressão profundas?",
+    "question": "O corte executado por uma tesoura cirúrgica ao seccionar um tecido biológico baseia-se primariamente em qual mecanismo reológico?",
     "options": [
       "Deformação por torção helicoidal de alta rotação.",
       "Compressão puramente convergente hidrostática.",
@@ -2024,7 +2024,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2107,
     "topicId": 2,
-    "question": "Ao reposicionar um doente acamado, que técnica de enfermagem elimina ou minimiza as forças de cisalhamento na pele sacra?",
+    "question": "Em que situação de internamento hospitalar as forças de cisalhamento sobre a região sacrococcígea são máximas?",
     "options": [
       "Com o doente perfeitamente deitado em decúbito dorsal plano horizontal a 0 graus.",
       "Quando o doente se encontra de pé com calçado antiderrapante.",
@@ -2043,7 +2043,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2108,
     "topicId": 2,
-    "question": "Num elemento cúbico de material sujeito a cisalhamento puro, o que acontece aos ângulos retos entre as suas faces paralelas?",
+    "question": "Para prevenir lesões de cisalhamento na pele de um utente dependente durante a mobilização no leito, que técnica deve ser adotada pela equipa?",
     "options": [
       "Elevar o corpo do doente utilizando lençol de transferência ou técnica em grupo, em vez de arrastar o corpo contra os lençóis.",
       "Puxar o doente rapidamente pelos pés sem pedir ajuda a colegas.",
@@ -2062,7 +2062,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2109,
     "topicId": 2,
-    "question": "A deformação angular provocada por planos adjacentes que deslizam paralelamente em sentidos opostos define qual mecanismo físico?",
+    "question": "No mecanismo de deformação por cisalhamento, o que acontece aos planos internos paralelos do material?",
     "options": [
       "Aproximam-se colidindo frontalmente ao longo do mesmo eixo.",
       "Deslizam paralelamente uns sobre os outros no sentido das forças aplicadas.",
@@ -2081,7 +2081,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2110,
     "topicId": 2,
-    "question": "Em qual das seguintes transferências clínicas a ocorrência de cisalhamento tecidual sobre a região sacrococcígea é mais crítica?",
+    "question": "As forças tangenciais exercidas pelo fluxo sanguíneo pulsátil sobre as células endoteliais da parede das artérias constituem um exemplo fisiológico de:",
     "options": [
       "Deformação por torção esquelética de alavancas.",
       "Compressão puramente convergente do antebraço.",
@@ -2100,7 +2100,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2111,
     "topicId": 2,
-    "question": "Qual é a definição exata de deformação por 'Torção' na mecânica e biomecânica?",
+    "question": "Qual é a definição exata de deformação por 'Torção' apresentada na mecânica dos materiais?",
     "options": [
       "Encurtamento longitudinal de uma barra por forças convergentes axiais.",
       "Deformação entre superfícies paralelas por atrito tangencial no leito.",
@@ -2108,7 +2108,7 @@ const TOPIC_2_QUESTIONS = [
       "Rotação de um sólido em torno do seu eixo por ação de um momento de força (torque)."
     ],
     "correctIndex": 3,
-    "explanation": "Torção: Rotação de um sólido em torno do seu eixo por ação de um momento de força (torque)'.",
+    "explanation": "Define-se expressamente: 'Torção: Rotação de um sólido em torno do seu eixo por ação de um momento de força (torque)'.",
     "distractorAnalysis": [
       "Está incorreta: Esta é a definição de Compressão.",
       "Está incorreta: Esta é a definição de Cisalhamento.",
@@ -2119,7 +2119,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2112,
     "topicId": 2,
-    "question": "O que acontece à intensidade da tensão mecânica ao longo do eixo geométrico central de uma barra cilíndrica sujeita a torção pura?",
+    "question": "O que acontece à tensão mecânica tangencial no eixo central de uma haste ou cilindro sujeito a torção pura?",
     "options": [
       "Tensão no eixo central é nula! (Tensão = 0 Pa no centro da secção).",
       "A tensão no eixo central é máxima e dez vezes superior à da periferia.",
@@ -2138,7 +2138,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2113,
     "topicId": 2,
-    "question": "Onde se concentra a intensidade máxima da tensão mecânica quando um osso longo tubular oco é submetido a torção em torno do seu eixo?",
+    "question": "Onde se concentra a tensão máxima quando um osso longo cilíndrico oco é submetido a torção mecânica?",
     "options": [
       "No centro da medula óssea interna ao longo do eixo.",
       "Na periferia do osso oco (no bordo externo da parede óssea cortical).",
@@ -2146,7 +2146,7 @@ const TOPIC_2_QUESTIONS = [
       "Em nenhum ponto, pois a tensão é uniforme em toda a área."
     ],
     "correctIndex": 1,
-    "explanation": "O salienta na síntese da torção: '5. Torção: Momento da força; tensão máxima concentrada na periferia do osso oco'.",
+    "explanation": "Salienta-se na síntese da torção: '5. Torção: Momento da força; tensão máxima concentrada na periferia do osso oco'.",
     "distractorAnalysis": [
       "Está incorreta: A tensão no centro/eixo central é rigorosamente nula.",
       "Está incorreta: A tensão mecânica atua na secção do osso sujeito ao torque aplicado.",
@@ -2157,7 +2157,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2114,
     "topicId": 2,
-    "question": "Qual é a causa física primária da ocorrência de uma deformação mecânica por Torção?",
+    "question": "Um esquiador cai na neve e o esqui fica preso enquanto o corpo roda bruscamente em torno do eixo da perna. Que tipo de fratura óssea é causada por este mecanismo mecânico?",
     "options": [
       "Fratura por compressão axial pura que encurta o fémur em 10 cm.",
       "Fratura incompleta em ramo verde típica de crianças pequenas.",
@@ -2176,7 +2176,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2115,
     "topicId": 2,
-    "question": "Que padrão de fratura óssea é tipicamente produzido na tíbia ou no fémur quando o membro sofre um esforço violento de torção com o pé fixo no solo?",
+    "question": "Na mecânica dos materiais, a causa física primária da deformação por Torção é expressamente identificada como:",
     "options": [
       "Forças convergentes longitudinais.",
       "Forças divergentes de estiramento tendinoso.",
@@ -2195,7 +2195,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2116,
     "topicId": 2,
-    "question": "Por que razão a morfologia tubular cilíndrica oca dos ossos longos confere excelente resistência a esforços de torção com menor massa biológica?",
+    "question": "Por que razão a evolução biológica favoreceu ossos longos ocos (com canal medular) em vez de ossos maciços sob o ponto de vista da Torção?",
     "options": [
       "Porque a tensão de torção é zero no centro e máxima na periferia, pelo que ter massa na periferia confere a máxima resistência à torção com o mínimo de peso corporal.",
       "Porque os ossos ocos flutuam na água permitindo a natação humana.",
@@ -2214,7 +2214,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2117,
     "topicId": 2,
-    "question": "Se aplicarmos um binário de forças em sentidos opostos nas duas extremidades de uma haste em torno do seu eixo longitudinal, que solicitação produzimos?",
+    "question": "Se aplicarmos um momento torsor de 50 N·m a um fémur humano, em qual das seguintes regiões a tensão mecânica tangencial interna é MENOR?",
     "options": [
       "Na face externa do córtex periósteo periférico.",
       "No eixo central geométrico do osso (onde a tensão é nula).",
@@ -2233,7 +2233,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2118,
     "topicId": 2,
-    "question": "Na torção pura de um cilindro rígido, qual ponto experimenta a MENOR tensão de cisalhamento angular?",
+    "question": "Qual é a grandeza física que, ao atuar sobre um membro ou barra, provoca a sua deformação por Torção?",
     "options": [
       "Pressão hidrostática medida em mmHg.",
       "Aceleração da gravidade de 9,8 m/s².",
@@ -2252,7 +2252,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2119,
     "topicId": 2,
-    "question": "Qual dos seguintes movimentos desportivos ou acidentais gera predominantemente deformação por torção na perna?",
+    "question": "Ao espremer uma toalha molhada rodando as duas mãos em sentidos rotativos opostos, que deformação reológica estamos a aplicar à toalha?",
     "options": [
       "Compressão convergente pura.",
       "Tração divergente axial simples.",
@@ -2271,7 +2271,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2120,
     "topicId": 2,
-    "question": "Em quais das 5 deformações mecânicas fundamentais a tensão no centro geométrico neutro é rigorosamente nula?",
+    "question": "Em quais das 5 deformações estudadas na biomecânica a tensão mecânica no centro geométrico (eixo central) é RIGOROSAMENTE NULA?",
     "options": [
       "Na Flexão (tensão no centro é nula) e na Torção (tensão no eixo central é nula).",
       "Apenas na Compressão e na Tração.",
@@ -2290,7 +2290,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2121,
     "topicId": 2,
-    "question": "Quais são as CINCO grandes deformações mecânicas estudadas na resistência dos materiais em Biofísica?",
+    "question": "Quais são os CINCO tipos de deformação mecânica catalogados no resumo na resistência dos materiais?",
     "options": [
       "1. Elasticidade; 2. Plasticidade; 3. Viscosidade; 4. Histerese; 5. Inércia.",
       "1. Compressão; 2. Tração; 3. Flexão; 4. Cisalhamento; 5. Torção.",
@@ -2309,7 +2309,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2122,
     "topicId": 2,
-    "question": "Qual das cinco deformações decorre de forças convergentes normais, sendo suportada prioritariamente pelo fémur e corpos vertebrais?",
+    "question": "Qual das 5 deformações decorre de forças convergentes e é suportada pelo fémur na postura diária?",
     "options": [
       "Torção.",
       "Cisalhamento.",
@@ -2328,7 +2328,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2123,
     "topicId": 2,
-    "question": "Qual das cinco deformações decorre de forças divergentes provocando alongamento longitudinal, como ocorre nos tendões durante a contração muscular?",
+    "question": "Qual das 5 deformações decorre de forças divergentes provocando aumento longitudinal, como no tendão puxado pelo músculo?",
     "options": [
       "Compressão convergente.",
       "Cisalhamento tangencial.",
@@ -2347,7 +2347,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2124,
     "topicId": 2,
-    "question": "Qual das cinco deformações é originada por forças transversais gerando curvatura com um plano neutro central de tensão nula?",
+    "question": "Qual das 5 deformações é gerada por força transversal gerando curvatura com plano neutro central?",
     "options": [
       "Flexão.",
       "Compressão.",
@@ -2355,7 +2355,7 @@ const TOPIC_2_QUESTIONS = [
       "Torção."
     ],
     "correctIndex": 0,
-    "explanation": "O estabelece taxativamente: '3. Flexão: Força transversal; curvatura com plano neutro central; tensão a meio de um osso'.",
+    "explanation": "Estabelece-se taxativamente: '3. Flexão: Força transversal; curvatura com plano neutro central; tensão a meio de um osso'.",
     "distractorAnalysis": [
       "Está incorreta: Compressão atua axialmente com forças convergentes.",
       "Está incorreta: Tração atua axialmente com forças divergentes.",
@@ -2366,7 +2366,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2125,
     "topicId": 2,
-    "question": "Qual das cinco deformações é provocada por forças tangenciais paralelas em sentidos opostos, manifestando-se no atrito e deslizamento no leito?",
+    "question": "Qual das 5 deformações é provocada por forças tangenciais paralelas em sentidos opostos, manifestando-se no atrito no leito?",
     "options": [
       "Flexão.",
       "Cisalhamento.",
@@ -2374,7 +2374,7 @@ const TOPIC_2_QUESTIONS = [
       "Tração."
     ],
     "correctIndex": 1,
-    "explanation": "4. Cisalhamento: Forças tangenciais paralelas em sentidos opostos; atrito no leito'.",
+    "explanation": "Estabelece-se textualmente: '4. Cisalhamento: Forças tangenciais paralelas em sentidos opostos; atrito no leito'.",
     "distractorAnalysis": [
       "Está incorreta: Flexão é causada por forças transversais perpendiculares.",
       "Está incorreta: Compressão é causada por forças axiais convergentes.",
@@ -2385,7 +2385,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2126,
     "topicId": 2,
-    "question": "Qual das cinco deformações decorre de um momento de força torsor rotacional, concentrando a tensão máxima na periferia da estrutura?",
+    "question": "Qual das 5 deformações decorre de momento da força, concentrando a tensão máxima na periferia do osso oco?",
     "options": [
       "Tração.",
       "Compressão.",
@@ -2393,7 +2393,7 @@ const TOPIC_2_QUESTIONS = [
       "Cisalhamento plano simples."
     ],
     "correctIndex": 2,
-    "explanation": "5. Torção: Momento da força; tensão máxima concentrada na periferia do osso oco'.",
+    "explanation": "Estabelece-se textualmente: '5. Torção: Momento da força; tensão máxima concentrada na periferia do osso oco'.",
     "distractorAnalysis": [
       "Está incorreta: Tração concentra tensões longitudinais uniformes.",
       "Está incorreta: Compressão encurta a barra sem momento torsor rotativo.",
@@ -2404,7 +2404,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2127,
     "topicId": 2,
-    "question": "Qual é a associação COMPLETA e CORRETA entre as cinco deformações mecânicas e os seus exemplos biofísicos característicos?",
+    "question": "Qual é o emparelhamento COMPLETO e CORRETO entre as 5 deformações e os exemplos biofísicos na resistência dos materiais?",
     "options": [
       "Compressão: tendão | Tração: fémur | Flexão: leito | Cisalhamento: osso oco | Torção: curvatura",
       "Compressão: atrito no leito | Tração: curvatura neutra | Flexão: fémur | Cisalhamento: tendão | Torção: mola",
@@ -2412,7 +2412,7 @@ const TOPIC_2_QUESTIONS = [
       "Compressão: fémur suporta carga | Tração: tração do tendão | Flexão: tensão a meio de um osso | Cisalhamento: atrito no leito | Torção: tensão máxima na periferia do osso oco"
     ],
     "correctIndex": 3,
-    "explanation": "Os estabelecem rigorosamente a correspondência: 1. Compressão: fémur suporta carga corporal diária; 2. Tração: tração do tendão pelo músculo; 3. Flexão: tensão a meio de um osso; 4. Cisalhamento: atrito no leito; 5. Torção: tensão máxima na periferia do osso oco.",
+    "explanation": "Estabelece-se rigorosamente a correspondência: 1. Compressão: fémur suporta carga corporal diária; 2. Tração: tração do tendão pelo músculo; 3. Flexão: tensão a meio de um osso; 4. Cisalhamento: atrito no leito; 5. Torção: tensão máxima na periferia do osso oco.",
     "distractorAnalysis": [
       "Está incorreta: Correspondências totalmente baralhadas entre forças axiais e de corte.",
       "Está incorreta: Exemplos trocados entre tecidos e dispositivos clínicos.",
@@ -2423,7 +2423,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2128,
     "topicId": 2,
-    "question": "Qual das seguintes deformações mecânicas NÃO pertence ao grupo das cinco grandes solicitações da reologia dos sólidos?",
+    "question": "Na vida diária de um ser humano ativo, as solicitações mecânicas suportadas pelos ossos ocorrem de forma isolada ou combinada?",
     "options": [
       "Ocorrem de forma combinada e dinâmica: durante a marcha o fémur suporta simultaneamente compressão pelo peso, flexão pela curvatura anatómica e torção pelos movimentos da bacia.",
       "Ocorrem sempre de forma 100% isolada, nunca existindo mais do que uma deformação em cada década de vida.",
@@ -2442,7 +2442,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2129,
     "topicId": 2,
-    "question": "Na deformação por Flexão, qual é a orientação da força causadora relativamente ao eixo principal da barra?",
+    "question": "Na análise mecânica das deformações, a força causadora da Flexão é descrita tecnicamente como:",
     "options": [
       "Força atómica longitudinal'.",
       "Força transversal'.",
@@ -2450,7 +2450,7 @@ const TOPIC_2_QUESTIONS = [
       "Força convergente pura'."
     ],
     "correctIndex": 1,
-    "explanation": "O estabelece no início do ponto 3: '3. Flexão: Força transversal; curvatura com plano neutro central (...)'.",
+    "explanation": "Estabelece-se no início do ponto 3: '3. Flexão: Força transversal; curvatura com plano neutro central (...)'.",
     "distractorAnalysis": [
       "Está incorreta: Forças atómicas microscópicas não definem o vetor mecânico de flexão de vigas macroscópicas.",
       "Está incorreta: Momento helicoidal define a Torção.",
@@ -2461,7 +2461,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2130,
     "topicId": 2,
-    "question": "Qual das 5 deformações mecânicas é a mais frequentemente implicada no mecanismo de cisalhamento capilar e isquemia em doentes acamados?",
+    "question": "Ao virar um doente no leito mantendo a bacia fixa e rodando bruscamente os ombros para o lado oposto, que esforço mecânico é induzido nas vértebras dorsolombares?",
     "options": [
       "Tração axial divergente que alonga o tronco em 20 cm.",
       "Compressão puramente convergente da cabeça.",
@@ -2480,7 +2480,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2131,
     "topicId": 2,
-    "question": "Em que ano Robert Hooke publicou os seus trabalhos seminais sobre a elasticidade e o comportamento das molas mecânicas?",
+    "question": "Em que ano Robert Hooke publicou os seus trabalhos seminais sobre a elasticidade dos corpos e o comportamento de molas mecânicas?",
     "options": [
       "No ano de 1998.",
       "No século III a.C. com Arquimedes.",
@@ -2488,7 +2488,7 @@ const TOPIC_2_QUESTIONS = [
       "Em 1660."
     ],
     "correctIndex": 3,
-    "explanation": "Os referem expressamente: 'Os trabalhos de Hooke: Hooke, 1660'.",
+    "explanation": "Refere-se expressamente: 'Os trabalhos de Hooke: Hooke, 1660'.",
     "distractorAnalysis": [
       "Está incorreta: 1998 é uma data contemporânea recente, sem ligação com a revolução científica clássica.",
       "Está incorreta: Século III a.C. é a datação histórica de Arquimedes nas alavancas ( do Tópico 1).",
@@ -2499,7 +2499,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2132,
     "topicId": 2,
-    "question": "Qual é a célebre máxima em latim cunhada por Robert Hooke em 1660 para enunciar o princípio da elasticidade?",
+    "question": "Qual é a célebre máxima em latim formulada por Robert Hooke em 1660 para enunciar a lei fundamental da elasticidade?",
     "options": [
       "Ut tensio, sic vis",
       "Carpe diem, memento mori",
@@ -2507,7 +2507,7 @@ const TOPIC_2_QUESTIONS = [
       "Veni, vidi, vici"
     ],
     "correctIndex": 0,
-    "explanation": "O destaca em latim o princípio fundamental: 'Hooke, 1660: Ut tensio, sic vis'.",
+    "explanation": "Destaca-se em latim o princípio fundamental: 'Hooke, 1660: Ut tensio, sic vis'.",
     "distractorAnalysis": [
       "Está incorreta: 'Carpe diem' é uma locução poética latina de Horácio sobre aproveitar o dia presente.",
       "Está incorreta: 'E pur si muove' é a célebre frase atribuída a Galileu Galilei sobre o movimento da Terra.",
@@ -2518,7 +2518,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2133,
     "topicId": 2,
-    "question": "Qual é a tradução em língua portuguesa da máxima latina de Hooke 'Ut tensio, sic vis'?",
+    "question": "Qual é a tradução em língua portuguesa da máxima latina de Robert Hooke 'Ut tensio, sic vis'?",
     "options": [
       "Onde há fumo, há fogo.",
       "Como a extensão, assim a força.",
@@ -2537,7 +2537,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2134,
     "topicId": 2,
-    "question": "Qual foi a conclusão experimental de Robert Hooke (1660) relativamente ao comportamento de molas mecânicas sob cargas crescentes?",
+    "question": "Qual foi a conclusão experimental de Robert Hooke (1660) relativamente ao comportamento de molas sujeitas a forças mecânicas?",
     "options": [
       "O alongamento das molas é inversamente proporcional à temperatura absoluta.",
       "As molas nunca sofrem qualquer deformação mensurável.",
@@ -2556,7 +2556,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2135,
     "topicId": 2,
-    "question": "Que tipo de resposta mecânica proporcional exibem os materiais elásticos quando submetidos a tração moderada dentro do regime elástico?",
+    "question": "No regime de elasticidade linear, que tipo de resposta exibem todos os materiais elásticos sob tração axial?",
     "options": [
       "Resposta caótica imprevisível e aleatória.",
       "Resposta exponencial assintótica que atinge o infinito.",
@@ -2564,7 +2564,7 @@ const TOPIC_2_QUESTIONS = [
       "Todos os materiais elásticos exibem esta resposta linear sob tração axial."
     ],
     "correctIndex": 3,
-    "explanation": "O estabelece a generalização física: 'Todos os materiais elásticos exibem esta resposta linear sob tração axial (Hooke, 1660)'.",
+    "explanation": "Estabelece-se a generalização física: 'Todos os materiais elásticos exibem esta resposta linear sob tração axial (Hooke, 1660)'.",
     "distractorAnalysis": [
       "Está incorreta: A resposta elástica é determinista e rigorosamente linear no regime inicial.",
       "Está incorreta: Funções exponenciais não descrevem a relação direta de Hooke (F ∝ Δx).",
@@ -2575,7 +2575,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2136,
     "topicId": 2,
-    "question": "Quando uma barra elástica de secção transversal S e comprimento inicial L é sujeita a uma força axial de tração F dentro do regime de Hooke:",
+    "question": "Quando uma barra elástica de secção S e comprimento L é sujeita a tração F, quando uma barra de secção transversal S e comprimento inicial L é sujeita a uma força de tração F:",
     "options": [
       "Sofre uma deformação dimensional mensurável.",
       "Perde todo o seu peso e flutua no ar.",
@@ -2583,7 +2583,7 @@ const TOPIC_2_QUESTIONS = [
       "Transforma-se instantaneamente num fluido viscoso de escoamento livre."
     ],
     "correctIndex": 0,
-    "explanation": "Quando uma barra de secção transversal S e comprimento inicial L é sujeita a uma força de tração F, sofre uma deformação dimensional mensurável'.",
+    "explanation": "Estabelece-se: 'Quando uma barra de secção transversal S e comprimento inicial L é sujeita a uma força de tração F, sofre uma deformação dimensional mensurável'.",
     "distractorAnalysis": [
       "Está incorreta: A gravidade terrestre continua a atuar plenamente sobre a barra (P = m · g).",
       "Está incorreta: A massa é constante e invariável perante ensaios mecânicos comuns de tração.",
@@ -2594,7 +2594,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2137,
     "topicId": 2,
-    "question": "Por que razão a descoberta da proporcionalidade direta entre força e deformação por Robert Hooke foi revolucionária para a física e biomecânica?",
+    "question": "Se uma força de 10 N estica uma mola em 2 cm (regime linear de Hooke), que força é necessária para esticar a mesma mola em 6 cm?",
     "options": [
       "10 N",
       "30 N (o triplo da força, pela proporcionalidade direta 'Ut tensio, sic vis')",
@@ -2613,7 +2613,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2138,
     "topicId": 2,
-    "question": "A máxima 'Ut tensio, sic vis' estabelece a relação direta de causalidade entre quais grandezas físicas?",
+    "question": "A máxima de Hooke 'Como a extensão, assim a força' estabelece uma relação matemática entre:",
     "options": [
       "A aceleração do corpo e a velocidade da luz.",
       "O tempo de repouso e a viscosidade do mel.",
@@ -2632,7 +2632,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2139,
     "topicId": 2,
-    "question": "No contexto dos trabalhos de Hooke de 1660, que instrumento de precisão passou a ser calibrado com base na proporcionalidade da deformação de molas?",
+    "question": "Os trabalhos de Robert Hooke em 1660 constituem a base científica para o estudo de qual tema da unidade curricular?",
     "options": [
       "Das radiações ionizantes e partículas alfa emitidas por radiofármacos.",
       "Do metabolismo celular dos lípidos e hidratos de carbono.",
@@ -2651,7 +2651,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2140,
     "topicId": 2,
-    "question": "Qual das seguintes afirmações resume fielmente o princípio fundamental enunciado por Robert Hooke em 1660?",
+    "question": "No regime elástico linear formulado por Hooke, qual é a representação matemática gráfica da relação entre Força (F) e Deformação (Δx)?",
     "options": [
       "Uma linha reta com inclinação constante que passa pela origem das coordenadas (F = 0 quando Δx = 0).",
       "Uma curva parabólica que atinge o valor zero em deformação infinita.",
@@ -2670,7 +2670,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2141,
     "topicId": 2,
-    "question": "Qual é a expressão matemática fundamental da Lei da Elasticidade de Robert Hooke (para molas e corpos com geometria definida)?",
+    "question": "Qual é a fórmula matemática fundamental da Lei da Elasticidade de Robert Hooke (para molas e corpos com geometria definida)?",
     "options": [
       "F = m · a",
       "F = k · Δx",
@@ -2689,7 +2689,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2142,
     "topicId": 2,
-    "question": "Na fórmula fundamental da Lei de Hooke (F = k · Δx), qual é o significado físico e a unidade padrão no SI do símbolo 'F'?",
+    "question": "Na fórmula F = k · Δx da Lei de Hooke, qual é o significado físico e a respetiva unidade no SI do símbolo 'F'?",
     "options": [
       "Frequência respiratória medida em ciclos por minuto.",
       "Fulcro articular medido em centímetros de abertura.",
@@ -2697,7 +2697,7 @@ const TOPIC_2_QUESTIONS = [
       "Fator de atrito estático medido em Joules."
     ],
     "correctIndex": 2,
-    "explanation": "F = Força que causa a deformação do corpo elástico em estudo' (com unidade Newton [N] no SI).",
+    "explanation": "Define-se: 'F = Força que causa a deformação do corpo elástico em estudo' (com unidade Newton [N] no SI).",
     "distractorAnalysis": [
       "Está incorreta: Frequência respiratória é um sinal vital clínico, não a variável mecânica F.",
       "Está incorreta: Fulcro é o ponto fixo de uma alavanca, não a força da mola.",
@@ -2708,7 +2708,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2143,
     "topicId": 2,
-    "question": "Na fórmula da Lei de Hooke (F = k · Δx), qual é o significado físico e a unidade padrão no SI do símbolo 'k'?",
+    "question": "Na fórmula F = k · Δx da Lei de Hooke, qual é o significado físico e a unidade no SI do símbolo 'k'?",
     "options": [
       "Quilograma de massa corporal do utente.",
       "Temperatura absoluta expressa em Kelvin.",
@@ -2716,7 +2716,7 @@ const TOPIC_2_QUESTIONS = [
       "Constante elástica do corpo (N/m) -> Mede a rigidez do corpo elástico em estudo."
     ],
     "correctIndex": 3,
-    "explanation": "K = Constante elástica do corpo (N/m) -> Mede a rigidez do corpo elástico em estudo'.",
+    "explanation": "Define-se textualmente: 'k = Constante elástica do corpo (N/m) -> Mede a rigidez do corpo elástico em estudo'.",
     "distractorAnalysis": [
       "Está incorreta: Quilograma (kg) é a unidade de massa m, não a constante k.",
       "Está incorreta: Kelvin (K) é a unidade termodinâmica de temperatura, sem relação com a mola elástica.",
@@ -2727,7 +2727,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2144,
     "topicId": 2,
-    "question": "Na fórmula da Lei de Hooke (F = k · Δx), qual é o significado físico e a unidade padrão no SI do símbolo 'Δx'?",
+    "question": "Na fórmula F = k · Δx da Lei de Hooke, qual é o significado físico e a unidade no SI do símbolo 'Δx'?",
     "options": [
       "Deformação absoluta do corpo elástico em estudo, expressa em metros (m).",
       "Distância perpendicular do braço da força de Arquimedes em milímetros.",
@@ -2735,7 +2735,7 @@ const TOPIC_2_QUESTIONS = [
       "Diferença de temperatura termodinâmica expressa em graus Celsius."
     ],
     "correctIndex": 0,
-    "explanation": "Δx = Deformação absoluta do corpo elástico em estudo (m)'. Representa a variação do comprimento (Δx = x_final - x_inicial).",
+    "explanation": "Define-se expressamente: 'Δx = Deformação absoluta do corpo elástico em estudo (m)'. Representa a variação do comprimento (Δx = x_final - x_inicial).",
     "distractorAnalysis": [
       "Está incorreta: O braço da força representa-se por b na fórmula do torque (M = F · b), não por Δx.",
       "Está incorreta: Densidade mede-se em massa por volume, não em metros.",
@@ -2746,7 +2746,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2145,
     "topicId": 2,
-    "question": "Se uma mola elástica possui constante k = 200 N/m e sofre uma deformação de Δx = 0,05 m, qual é a intensidade da força elástica gerada?",
+    "question": "Uma mola hospitalar de tração tem constante elástica k = 500 N/m. Se for esticada sofrendo uma deformação absoluta de Δx = 0,02 m, qual é a intensidade da força elástica F gerada?",
     "options": [
       "25 000 N",
       "10 N",
@@ -2765,7 +2765,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2146,
     "topicId": 2,
-    "question": "Uma mola com constante elástica k = 500 N/m sofre uma deformação absoluta de Δx = 0,02 m. Qual é a força elástica exercida?",
+    "question": "Se uma força de 40 N provoca uma deformação absoluta de Δx = 0,1 m numa barra elástica, qual é o valor da constante elástica k dessa barra?",
     "options": [
       "K = 4 N/m",
       "K = 0,0025 N/m",
@@ -2784,7 +2784,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2147,
     "topicId": 2,
-    "question": "Se aplicarmos uma força de 40 N a uma mola de constante k = 400 N/m, qual é a deformação elástica (Δx) que ela experimenta?",
+    "question": "Para alongar uma mola com k = 200 N/m em exatamente Δx = 0,05 m (5 cm), que força é indispensável aplicar?",
     "options": [
       "4000 N",
       "0,00025 N",
@@ -2803,7 +2803,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2148,
     "topicId": 2,
-    "question": "Se a constante elástica de um corpo for k = 1000 N/m, que força é necessária para produzir uma deformação de 10 cm (0,1 m)?",
+    "question": "Se uma mola elástica se deforma Δx = 2 cm sob a ação de uma força de 4 N, qual será a deformação absoluta sofrida se a força aplicada for aumentada para 8 N?",
     "options": [
       "Δx = 4 cm (o dobro, pela proporcionalidade linear da Lei de Hooke).",
       "Δx = 2 cm (permanece igual porque a mola tem rigidez fixa).",
@@ -2822,7 +2822,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2149,
     "topicId": 2,
-    "question": "O que representa conceitualmente a grandeza 'Deformação Absoluta (Δx)', expressa em metros, na Lei de Hooke?",
+    "question": "O que representa conceitualmente a grandeza 'Deformação absoluta (Δx)' expressa em metros da Lei de Hooke?",
     "options": [
       "O comprimento total infinito da mola quando esticada até ao limite.",
       "A variação líquida de comprimento do corpo (diferença entre o comprimento final sob carga e o comprimento inicial de repouso).",
@@ -2841,7 +2841,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2150,
     "topicId": 2,
-    "question": "Como varia a força elástica exercida por uma mola com o aumento da sua deformação absoluta dentro do regime elástico?",
+    "question": "Duas molas elásticas idênticas, cada uma com constante k = 100 N/m, são associadas em paralelo para sustentar conjuntamente uma carga. Qual é a constante elástica equivalente do conjunto?",
     "options": [
       "50 N/m",
       "100 N/m",
@@ -2868,7 +2868,7 @@ const TOPIC_2_QUESTIONS = [
       "Mede a rigidez do corpo elástico em estudo."
     ],
     "correctIndex": 3,
-    "explanation": "O salienta explicitamente através de uma seta explicativa: 'k = Constante elástica do corpo (N/m) -> Mede a rigidez do corpo elástico em estudo'.",
+    "explanation": "Salienta-se explicitamente através de uma seta explicativa: 'k = Constante elástica do corpo (N/m) -> Mede a rigidez do corpo elástico em estudo'.",
     "distractorAnalysis": [
       "Está incorreta: Condutividade elétrica é medida em Siemens/metro, não sendo a constante k.",
       "Está incorreta: Taxa de arrefecimento pertence à termodinâmica de transferência de calor.",
@@ -2879,7 +2879,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2152,
     "topicId": 2,
-    "question": "Qual é a restrição concetual crucial da constante k na fórmula fundamental F = k · Δx?",
+    "question": "Qual é a restrição concetual crucial da fórmula fundamental da Lei de Hooke F = k · Δx relativamente aos materiais?",
     "options": [
       "Apenas se aplica aos corpos com tamanho e espessura definidos e não exclusivamente ao material de que são feitos.",
       "Apenas se aplica no vácuo cósmico sob gravidade rigorosamente nula.",
@@ -2898,7 +2898,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2153,
     "topicId": 2,
-    "question": "Se tivermos duas barras cilíndricas feitas do MESMO tipo de aço, sendo a Barra 1 muito grossa e curta e a Barra 2 muito fina e comprida, como se comparam as suas constantes elásticas k?",
+    "question": "Se tivermos duas barras cilíndricas feitas do MESMO aço, sendo a Barra 1 muito grossa e curta e a Barra 2 muito fina e comprida, como se comparam as suas constantes k?",
     "options": [
       "Ambas têm exatamente a mesma constante k porque são feitas do mesmo aço.",
       "A Barra 1 (grossa e curta) terá uma constante elástica k muito superior à da Barra 2 (fina e comprida), sendo muito mais difícil de deformar.",
@@ -2917,7 +2917,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2154,
     "topicId": 2,
-    "question": "Por que razão a constante elástica k de um corpo depende não apenas do material constituinte, mas também da sua área de secção e comprimento?",
+    "question": "Por que razão a constante elástica k é classificada como uma propriedade 'extrínseca' de um corpo específico?",
     "options": [
       "Porque só existe no exterior da atmosfera da Terra.",
       "Porque depende exclusivamente da cor do revestimento exterior do material.",
@@ -2936,7 +2936,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2155,
     "topicId": 2,
-    "question": "Uma mola com k = 2000 N/m é considerada mais rígida ou mais flexível do que uma mola com k = 200 N/m?",
+    "question": "Quanto maior for o valor numérico da constante elástica k de um corpo elástico (em N/m):",
     "options": [
       "Mais facilmente o corpo se deforma sob qualquer força ínfima.",
       "Menor é a força necessária para esticar a barra em 1 metro.",
@@ -2955,7 +2955,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2156,
     "topicId": 2,
-    "question": "Se dobrarmos a área de secção transversal de um elemento elástico mantendo o seu comprimento e material, o que acontece à sua constante k?",
+    "question": "Qual é o significado físico da unidade Newton por metro (N/m) da constante elástica k?",
     "options": [
       "Indica a intensidade da força em Newtons que seria necessária aplicar para produzir uma deformação de 1 metro no corpo elástico.",
       "Indica a velocidade em metros por segundo com que a mola recupera a forma.",
@@ -2974,7 +2974,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2157,
     "topicId": 2,
-    "question": "Se dobrarmos o comprimento de uma haste elástica mantendo a sua espessura e material, o que acontece à sua constante k?",
+    "question": "Dois dinamómetros, A e B, possuem molas com constantes k_A = 1000 N/m e k_B = 100 N/m. Para produzir a mesma deformação de 1 cm (0,01 m):",
     "options": [
       "Ambos exigem exatamente a mesma força de 1 Newton.",
       "O dinamómetro A exige uma força de 10 N (dez vezes maior) do que o dinamómetro B, que exige apenas 1 N.",
@@ -2993,7 +2993,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2158,
     "topicId": 2,
-    "question": "Qual é a expressão que relaciona a constante elástica k com a rigidez do material (Módulo de Young E), a área A e o comprimento L₀?",
+    "question": "No contexto dos tecidos de suporte biológico (como ligamentos articulares), uma estrutura ligamentar mais espessa:",
     "options": [
       "Possui uma constante k menor, deformando-se com facilidade extrema.",
       "Transforma-se num corpo puramente viscoso sem elasticidade.",
@@ -3012,7 +3012,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2159,
     "topicId": 2,
-    "question": "Por que razão a fórmula F = k · Δx é insuficiente para descrever universalmente a resistência mecânica de um material independentemente da sua forma geométrica?",
+    "question": "A advertência de que F = k · Δx não se aplica exclusivamente ao material (pois a rigidez k depende da forma da peça) serve para preparar a introdução de qual conceito físico de referência?",
     "options": [
       "Do calor específico da água corporal.",
       "Da aceleração da gravidade de Galileu.",
@@ -3020,7 +3020,7 @@ const TOPIC_2_QUESTIONS = [
       "Da Lei de Hooke generalizada e do Módulo de Young (E), que é a rigidez intrínseca do próprio material."
     ],
     "correctIndex": 3,
-    "explanation": "O estabelece a ponte pedagógica: a constante k varia com o formato da peça; para estudar a rigidez intrínseca do material puro, o introduz a Lei de Hooke generalizada (σ = E · ε) com o Módulo de Young.",
+    "explanation": "Estabelece-se a ponte pedagógica: a constante k varia com o formato da peça; para estudar a rigidez intrínseca do material puro, o introduz a Lei de Hooke generalizada (σ = E · ε) com o Módulo de Young.",
     "distractorAnalysis": [
       "Está incorreta: Calor específico é uma grandeza termodinâmica, não da elasticidade generalizada.",
       "Está incorreta: Gravidade é uma aceleração de campo (g), não uma propriedade de materiais.",
@@ -3031,7 +3031,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2160,
     "topicId": 2,
-    "question": "Em aplicações biomédicas de tração ortopédica, como se pode aumentar a rigidez mecânica de um cabo elástico de sustentação sem alterar o material?",
+    "question": "Um corpo cuja constante elástica k tendesse teoricamente para o infinito (k -> ∞) corresponderia a qual modelo reológico?",
     "options": [
       "A um Sólido de Euclides (sólido indeformável, onde a deformação Δx é zero sob qualquer força finita).",
       "A um Corpo Viscoso puro como a água.",
@@ -3050,7 +3050,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2161,
     "topicId": 2,
-    "question": "Qual é a formulação matemática da Lei de Hooke Generalizada que expressa a elasticidade como propriedade intrínseca do material?",
+    "question": "Qual é a fórmula matemática da Lei de Hooke Generalizada que descreve a elasticidade intrínseca dos materiais?",
     "options": [
       "F = m · a",
       "Σ = E · ε",
@@ -3069,7 +3069,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2162,
     "topicId": 2,
-    "question": "Na fórmula da Lei de Hooke Generalizada (σ = E · ε), qual é a definição e a unidade padrão no SI da grandeza Tensão Mecânica (σ)?",
+    "question": "Na fórmula da Lei de Hooke Generalizada (σ = E · ε), qual é a definição e a unidade no SI da grandeza Tensão Mecânica (σ)?",
     "options": [
       "Superfície da base de sustentação expressa em cm².",
       "Soma de todas as forças nucleares fracas no interior da célula.",
@@ -3077,7 +3077,7 @@ const TOPIC_2_QUESTIONS = [
       "Segundo de tempo decorrido desde o início da marcha."
     ],
     "correctIndex": 2,
-    "explanation": "Σ = Tensão mecânica que causa a deformação do sólido de área de secção A', com unidades no SI de N/m² ou Pascal (Pa).",
+    "explanation": "Define-se textualmente: 'σ = Tensão mecânica que causa a deformação do sólido de área de secção A', com unidades no SI de N/m² ou Pascal (Pa).",
     "distractorAnalysis": [
       "Está incorreta: Área da base é uma medida geométrica de suporte (BS), não a tensão interna σ.",
       "Está incorreta: Forças nucleares pertencem à física nuclear, não à tensão elástica contínua dos tecidos.",
@@ -3088,7 +3088,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2163,
     "topicId": 2,
-    "question": "Na fórmula σ = E · ε, qual é a definição e o significado físico da grandeza 'E'?",
+    "question": "Na fórmula σ = E · ε da Lei de Hooke Generalizada, qual é a definição exata do símbolo 'E'?",
     "options": [
       "Energia cinética da ambulância medida em Joules.",
       "Espessura da camada de pele sobre o osso sacro.",
@@ -3096,7 +3096,7 @@ const TOPIC_2_QUESTIONS = [
       "Módulo de Young (rigidez intrínseca de um material perante forças de tração e compressão)."
     ],
     "correctIndex": 3,
-    "explanation": "E = Módulo de Young (rigidez intrínseca de um material perante forças de tração e compressão)'.",
+    "explanation": "Define-se expressamente: 'E = Módulo de Young (rigidez intrínseca de um material perante forças de tração e compressão)'.",
     "distractorAnalysis": [
       "Está incorreta: Energia cinética mede-se em Joules (1/2 m v²), não sendo a constante de rigidez elástica E.",
       "Está incorreta: Espessura da pele é uma dimensão métrica anatómica em milímetros.",
@@ -3107,7 +3107,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2164,
     "topicId": 2,
-    "question": "Na fórmula σ = E · ε, qual é a definição e o significado físico da Deformação Relativa (ε)?",
+    "question": "Na fórmula σ = E · ε da Lei de Hooke Generalizada, qual é a definição exata da grandeza 'ε' (épsilon)?",
     "options": [
       "Deformação relativa (alongamento / compressão do objeto relativo ao comprimento inicial, ε = ΔL / L).",
       "Energia potencial elástica armazenada na mola em Joules.",
@@ -3115,7 +3115,7 @@ const TOPIC_2_QUESTIONS = [
       "Esforço muscular exercido pelo bíceps sobre o rádio."
     ],
     "correctIndex": 0,
-    "explanation": "Ε = Alongamento / Compressão do objeto relativo ao comprimento inicial'. É a deformação adimensional relativa sofrida pela peça.",
+    "explanation": "Define-se textualmente: 'ε = Alongamento / Compressão do objeto relativo ao comprimento inicial'. É a deformação adimensional relativa sofrida pela peça.",
     "distractorAnalysis": [
       "Está incorreta: Energia potencial tem unidade Joule, enquanto ε é uma razão geométrica adimensional.",
       "Está incorreta: ECG é o registo de potenciais de ação bioelétricos cardíacos.",
@@ -3145,7 +3145,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2166,
     "topicId": 2,
-    "question": "Por que razão a Deformação Relativa (ε = ΔL / L₀) é classificada como uma grandeza adimensional na física?",
+    "question": "Qual é a unidade no Sistema Internacional da Deformação Relativa ε (épsilon = ΔL / L)?",
     "options": [
       "Metro (m).",
       "Newton (N).",
@@ -3164,7 +3164,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2167,
     "topicId": 2,
-    "question": "Se um material possui Módulo de Young E = 2 × 10¹⁰ N/m² e sofre uma deformação relativa de ε = 10⁻³ (0,001), qual é a tensão mecânica gerada?",
+    "question": "Qual é a grande vantagem científica da Lei de Hooke generalizada (σ = E · ε) em comparação com a fórmula elementar da mola (F = k · Δx)?",
     "options": [
       "A fórmula σ = E · ε só funciona para fluidos em repouso absoluto.",
       "A fórmula σ = E · ε elimina a necessidade de qualquer força deformadora.",
@@ -3183,7 +3183,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2168,
     "topicId": 2,
-    "question": "Se uma barra for submetida a uma tensão normal de 40 MPa (4 × 10⁷ N/m²) e o material tiver E = 20 × 10¹⁰ N/m², qual é a deformação relativa resultante?",
+    "question": "Se um material tiver Módulo de Young E = 2 × 10¹⁰ N/m² e for submetido a uma deformação relativa de ε = 0,001 (0,1%), qual é a tensão mecânica σ gerada na sua estrutura?",
     "options": [
       "Σ = 2 × 10⁷ N/m² (ou 20 MPa)",
       "Σ = 2 × 10¹³ N/m²",
@@ -3202,7 +3202,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2169,
     "topicId": 2,
-    "question": "Qual é a ordem de grandeza do Módulo de Young de referência para o osso cortical humano sob solicitações longitudinais?",
+    "question": "Qual é o valor de referência do Módulo de Young para o osso cortical humano sob solicitações longitudinais?",
     "options": [
       "E_osso = 2 × 10¹¹ N/m²",
       "E_osso = 2 × 10¹⁰ N/m²",
@@ -3229,7 +3229,7 @@ const TOPIC_2_QUESTIONS = [
       "E_aço = 10⁷ N/m²"
     ],
     "correctIndex": 2,
-    "explanation": "E aço = 2 × 10¹¹ N/m²' (que é matematicamente equivalente a 20 × 10¹⁰ N/m², conforme grafado ).",
+    "explanation": "Indica-se: 'E aço = 2 × 10¹¹ N/m²' (que é matematicamente equivalente a 20 × 10¹⁰ N/m², conforme grafado ).",
     "distractorAnalysis": [
       "Está incorreta: 2 × 10¹⁰ N/m² é o módulo do osso cortical, dez vezes menor que o aço.",
       "Está incorreta: 7,5 × 10¹⁰ N/m² é o módulo da prata.",
@@ -3240,7 +3240,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2171,
     "topicId": 2,
-    "question": "Como se define formalmente o Módulo de Young (E) na caracterização biomecânica dos materiais?",
+    "question": "Qual é a definição exata de Módulo de Young (E) na caracterização biomecânica dos materiais?",
     "options": [
       "Aceleração com que um membro é projetado numa colisão a 80 km/h.",
       "A quantidade de atrito no leito gerada por lençóis ásperos.",
@@ -3248,7 +3248,7 @@ const TOPIC_2_QUESTIONS = [
       "Rigidez intrínseca de um material perante forças de tração e compressão."
     ],
     "correctIndex": 3,
-    "explanation": "E = Módulo de Young (rigidez intrínseca de um material perante forças de tração e compressão)'.",
+    "explanation": "Define-se textualmente: 'E = Módulo de Young (rigidez intrínseca de um material perante forças de tração e compressão)'.",
     "distractorAnalysis": [
       "Está incorreta: Aceleração de colisão refere-se à dinâmica do Tópico 1.",
       "Está incorreta: Atrito no leito refere-se ao cisalhamento e atrito estático/cinético.",
@@ -3259,7 +3259,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2172,
     "topicId": 2,
-    "question": "Qual é a unidade do Módulo de Young no Sistema Internacional (SI)?",
+    "question": "Se cortarmos uma barra de aço maciço ao meio, reduzindo o seu comprimento para metade, o que acontece ao seu Módulo de Young (E)?",
     "options": [
       "Permanece rigorosamente inalterado, porque E é uma propriedade intrínseca do material aço e não depende das dimensões da peça.",
       "Reduz-se para metade porque o comprimento foi reduzido para metade.",
@@ -3278,7 +3278,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2173,
     "topicId": 2,
-    "question": "O Módulo de Young (E) depende da geometria (comprimento ou espessura) da peça analisada?",
+    "question": "Qual é a unidade do Módulo de Young no Sistema Internacional e com que outra grandeza partilha a mesma unidade?",
     "options": [
       "Joule (J), partilhando unidade com a energia mecânica.",
       "N/m² ou Pascal (Pa), partilhando unidade com a Pressão e a Tensão Mecânica.",
@@ -3297,7 +3297,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2174,
     "topicId": 2,
-    "question": "Um material que apresenta um Módulo de Young com valor numérico muito elevado (como o aço) caracteriza-se por:",
+    "question": "Um material que apresenta um Módulo de Young com valor numérico extremamente elevado caracteriza-se mecanicamente por:",
     "options": [
       "Ser extremamente elástico e deformar-se metros com um simples sopro de ar.",
       "Comportar-se como um fluido puramente viscoso que escoa como água.",
@@ -3316,7 +3316,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2175,
     "topicId": 2,
-    "question": "Um material que apresenta um Módulo de Young com valor numérico muito baixo (como a borracha vulcanizada) caracteriza-se por:",
+    "question": "Um material que apresenta um Módulo de Young com valor numérico muito baixo (como a borracha na biomecânica) caracteriza-se por:",
     "options": [
       "Ser mais rígido do que o aço e o vidro combinados.",
       "Ser indeformável sob qualquer tipo de força mecânica.",
@@ -3324,7 +3324,7 @@ const TOPIC_2_QUESTIONS = [
       "Apresentar grande flexibilidade elástica, sofrendo grandes deformações reversíveis sob cargas mínimas."
     ],
     "correctIndex": 3,
-    "explanation": "O descreve textualmente para a Borracha: 'Módulo extremamente baixo; sofre grandes deformações elásticas reversíveis sob cargas mínimas'.",
+    "explanation": "Descreve-se textualmente para a Borracha: 'Módulo extremamente baixo; sofre grandes deformações elásticas reversíveis sob cargas mínimas'.",
     "distractorAnalysis": [
       "Está incorreta: O módulo da borracha é muitas ordens de grandeza inferior ao do aço.",
       "Está incorreta: A borracha é o exemplo oposto de um sólido indeformável: deforma-se extensamente.",
@@ -3335,7 +3335,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2176,
     "topicId": 2,
-    "question": "Se dois materiais forem submetidos à MESMA tensão mecânica (σ), qual deles sofrerá a MENOR deformação elástica relativa?",
+    "question": "A partir da Lei de Hooke generalizada (σ = E · ε), como se calcula matematicamente a deformação relativa ε?",
     "options": [
       "Ε = σ / E",
       "Ε = σ · E",
@@ -3354,7 +3354,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2177,
     "topicId": 2,
-    "question": "O Módulo de Young mede especificamente a rigidez intrínseca dos materiais perante quais tipos de solicitações mecânicas normais?",
+    "question": "O Módulo de Young E mede especificamente a rigidez intrínseca dos materiais perante quais solicitações mecânicas?",
     "options": [
       "Apenas perante emissões de radiação atómica gama.",
       "Perante forças axiais de tração e de compressão.",
@@ -3373,7 +3373,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2178,
     "topicId": 2,
-    "question": "Comparando os valores de referência, quantas vezes é o Módulo de Young do aço estrutural (20 × 10¹⁰ N/m²) superior ao do osso cortical humano (2 × 10¹⁰ N/m²)?",
+    "question": "Comparando os valores dados, quantas vezes é o Módulo de Young do Aço (2 × 10¹¹ N/m²) superior ao do Osso (2 × 10¹⁰ N/m²)?",
     "options": [
       "O aço é 2 vezes mais rígido que o osso.",
       "O aço é 100 vezes mais rígido que o osso.",
@@ -3381,7 +3381,7 @@ const TOPIC_2_QUESTIONS = [
       "Ambos têm rigorosamente o mesmo módulo elástico."
     ],
     "correctIndex": 2,
-    "explanation": "Dividindo os módulos: (2 × 10¹¹ N/m²) / (2 × 10¹⁰ N/m²) = 10. O aço é exatamente dez vezes mais rígido intrinsecamente do que o osso cortical ('Módulo 10 vezes menor que o aço').",
+    "explanation": "Dividindo os módulos: (2 × 10¹¹ N/m²) / (2 × 10¹⁰ N/m²) = 10. O aço é exatamente dez vezes mais rígido intrinsecamente do que o osso cortical (: 'Módulo 10 vezes menor que o aço').",
     "distractorAnalysis": [
       "Está incorreta: A diferença é de uma ordem de magnitude inteira (fator 10), não apenas fator 2.",
       "Está incorreta: Fator 100 exigiria uma potência de 10¹² para o aço.",
@@ -3392,7 +3392,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2179,
     "topicId": 2,
-    "question": "No gráfico de Tensão versus Deformação (σ vs ε) de um material no regime elástico linear, o que representa geometricamente o Módulo de Young (E)?",
+    "question": "Num ensaio mecânico de tração com gráfico Tensão versus Deformação relativa (σ vs ε), o Módulo de Young E corresponde graficamente a:",
     "options": [
       "À área total sob a curva do gráfico.",
       "Ao valor da deformação no ponto onde a barra se parte.",
@@ -3411,7 +3411,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2180,
     "topicId": 2,
-    "question": "Qual é o significado biológico de o osso humano apresentar um Módulo de Young cerca de dez vezes inferior ao do aço metálico?",
+    "question": "Por que razão o conhecimento do Módulo de Young é crucial na seleção de biomateriais para a construção de próteses de anca e fixadores ortopédicos?",
     "options": [
       "Para escolher materiais com rigidez estrutural adequada que não sobrecarreguem excessivamente nem retirem o estímulo mecânico ao osso hospedeiro circundante.",
       "Para garantir que a prótese se liquefaz a cada 24 horas no interior do organismo.",
@@ -3430,7 +3430,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2181,
     "topicId": 2,
-    "question": "Qual é o valor de referência do Módulo de Young e o comportamento biomecânico característico do Aço estrutural?",
+    "question": "Qual é o valor de referência do Módulo de Young e o comportamento mecânico característico do Aço estrutural?",
     "options": [
       "7 × 10¹⁰ N/m²; material extremamente flexível que fratura sem aviso.",
       "20 × 10¹⁰ N/m²; material extremamente rígido; suporta esforços massivos com mínima deformação estrutural.",
@@ -3438,7 +3438,7 @@ const TOPIC_2_QUESTIONS = [
       "2 × 10¹⁰ N/m²; confere rigidez com capacidade de amortecimento elástico."
     ],
     "correctIndex": 1,
-    "explanation": "Aço (20 × 10¹⁰ N/m²): Material extremamente rígido; suporta esforços massivos com mínima deformação estrutural'.",
+    "explanation": "Define-se textualmente: 'Aço (20 × 10¹⁰ N/m²): Material extremamente rígido; suporta esforços massivos com mínima deformação estrutural'.",
     "distractorAnalysis": [
       "Está incorreta: 7 × 10¹⁰ N/m² é o valor e descrição do Vidro.",
       "Está incorreta: 0,1 a 10 × 10⁷ N/m² é o valor da Borracha.",
@@ -3449,7 +3449,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2182,
     "topicId": 2,
-    "question": "Qual é o valor de referência do Módulo de Young e o comportamento mecânico característico do Vidro comum?",
+    "question": "Qual é o valor de referência do Módulo de Young e o comportamento mecânico típico do Vidro comum?",
     "options": [
       "20 × 10¹⁰ N/m²; ductilidade extraordinária com grande deformação plástica.",
       "7,5 × 10¹⁰ N/m²; metal nobre com elevada condução térmica.",
@@ -3457,7 +3457,7 @@ const TOPIC_2_QUESTIONS = [
       "0,1 × 10⁷ N/m²; comporta-se como massa de pão que escoa no tempo."
     ],
     "correctIndex": 2,
-    "explanation": "Vidro (7 × 10¹⁰ N/m²): Elevada rigidez teórica; contudo, apresenta grande fragilidade e fratura sem deformação plástica'.",
+    "explanation": "O explicita: 'Vidro (7 × 10¹⁰ N/m²): Elevada rigidez teórica; contudo, apresenta grande fragilidade e fratura sem deformação plástica'.",
     "distractorAnalysis": [
       "Está incorreta: 20 × 10¹⁰ N/m² é o módulo do aço, e o vidro não é dúctil.",
       "Está incorreta: 7,5 × 10¹⁰ N/m² é o módulo da prata.",
@@ -3476,7 +3476,7 @@ const TOPIC_2_QUESTIONS = [
       "7,5 × 10¹⁰ N/m²; metal nobre com elevada rigidez mecânica e ductilidade sob solicitações controladas."
     ],
     "correctIndex": 3,
-    "explanation": "Prata (7,5 × 10¹⁰ N/m²): Metal nobre com elevada rigidez mecânica e ductilidade sob solicitações controladas'.",
+    "explanation": "Indica-se: 'Prata (7,5 × 10¹⁰ N/m²): Metal nobre com elevada rigidez mecânica e ductilidade sob solicitações controladas'.",
     "distractorAnalysis": [
       "Está incorreta: 2 × 10¹⁰ N/m² é o módulo do osso cortical.",
       "Está incorreta: 20 × 10¹⁰ N/m² é o módulo do aço.",
@@ -3487,7 +3487,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2184,
     "topicId": 2,
-    "question": "Qual é o valor de referência do Módulo de Young e a propriedade mecânica típica da Borracha vulcanizada?",
+    "question": "Qual é o valor de referência do Módulo de Young e a propriedade reológica característica da Borracha vulcanizada?",
     "options": [
       "Borracha (0,1 a 10 × 10⁷ N/m²): Módulo extremamente baixo; sofre grandes deformações elásticas reversíveis sob cargas mínimas.",
       "Borracha (20 × 10¹⁰ N/m²): Material indeformável sob qualquer esforço de impacto.",
@@ -3495,7 +3495,7 @@ const TOPIC_2_QUESTIONS = [
       "Borracha (7,5 × 10¹⁰ N/m²): Metal nobre para confecção de agulhas cirúrgicas."
     ],
     "correctIndex": 0,
-    "explanation": "Borracha (0,1 a 10 × 10⁷ N/m²): Módulo extremamente baixo; sofre grandes deformações elásticas reversíveis sob cargas mínimas'.",
+    "explanation": "Define-se formalmente: 'Borracha (0,1 a 10 × 10⁷ N/m²): Módulo extremamente baixo; sofre grandes deformações elásticas reversíveis sob cargas mínimas'.",
     "distractorAnalysis": [
       "Está incorreta: 20 × 10¹⁰ N/m² é o módulo do aço rígido, o oposto da borracha flexível.",
       "Está incorreta: 7 × 10¹⁰ N/m² é o módulo do vidro frágil.",
@@ -3506,7 +3506,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2185,
     "topicId": 2,
-    "question": "Qual é a ordenação decrescente CORRETA de rigidez elástica (Módulo de Young) dos cinco materiais de referência (Aço, Prata, Vidro, Osso e Borracha)?",
+    "question": "Qual é a ordenação decrescente CORRETA dos 5 materiais de referência segundo o seu Módulo de Young (da maior rigidez para a menor rigidez)?",
     "options": [
       "Borracha > Osso > Vidro > Prata > Aço",
       "Aço (20 × 10¹⁰) > Prata (7,5 × 10¹⁰) > Vidro (7 × 10¹⁰) > Osso (2 × 10¹⁰) > Borracha (0,1 a 10 × 10⁷)",
@@ -3514,7 +3514,7 @@ const TOPIC_2_QUESTIONS = [
       "Osso > Aço > Prata > Vidro > Borracha"
     ],
     "correctIndex": 1,
-    "explanation": "Comparando os expoentes e coeficientes do Aço (20 × 10¹⁰) > Prata (7,5 × 10¹⁰) > Vidro (7 × 10¹⁰) > Osso (2 × 10¹⁰) > Borracha (10⁷ a 10⁸).",
+    "explanation": "Comparando os expoentes e coeficientes de referência dos materiais: Aço (20 × 10¹⁰) > Prata (7,5 × 10¹⁰) > Vidro (7 × 10¹⁰) > Osso (2 × 10¹⁰) > Borracha (10⁷ a 10⁸).",
     "distractorAnalysis": [
       "Está incorreta: Esta é a ordem crescente inversa, da menor para a maior rigidez.",
       "Está incorreta: O aço é muito mais rígido que o vidro e a borracha tem o módulo mais baixo de todos.",
@@ -3525,7 +3525,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2186,
     "topicId": 2,
-    "question": "Por que razão o Vidro, apesar de possuir um elevado Módulo de Young de 7 × 10¹⁰ N/m² (superior ao do osso), é inadequado para implantes de suporte de carga biomecânica?",
+    "question": "Por que razão o Vidro, apesar de possuir um elevado Módulo de Young de 7 × 10¹⁰ N/m² (superior ao do osso), não é utilizado para próteses de suporte de carga?",
     "options": [
       "Porque o vidro é líquido à temperatura ambiente e escorreria pelo corpo.",
       "Porque o vidro perde toda a sua massa em contacto com o sangue.",
@@ -3544,7 +3544,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2187,
     "topicId": 2,
-    "question": "Qual dos seguintes materiais de referência apresenta a MAIOR capacidade de sofrer grandes deformações elásticas reversíveis sob cargas mecânicas diminutas?",
+    "question": "Qual dos materiais da tabela de valores de referência apresenta a MAIOR capacidade de sofrer grandes deformações elásticas reversíveis sob cargas mecânicas mínimas?",
     "options": [
       "Aço.",
       "Vidro.",
@@ -3563,7 +3563,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2188,
     "topicId": 2,
-    "question": "A Prata (7,5 × 10¹⁰ N/m²) tem um Módulo de Young muito próximo ao do Vidro (7 × 10¹⁰ N/m²). Qual é a diferença fundamental no comportamento mecânico de ambas?",
+    "question": "A Prata (7,5 × 10¹⁰ N/m²) tem um módulo muito semelhante ao do Vidro (7 × 10¹⁰ N/m²). Qual é a diferença fundamental no comportamento mecânico de ambas de referência dos materiais?",
     "options": [
       "A prata é dúctil sob solicitações mecânicas, enquanto o vidro apresenta grande fragilidade e fratura sem deformação plástica.",
       "A prata comporta-se como água e o vidro como mola de Hooke.",
@@ -3571,7 +3571,7 @@ const TOPIC_2_QUESTIONS = [
       "Ambos têm comportamento rigorosamente idêntico em todas as situações."
     ],
     "correctIndex": 0,
-    "explanation": "O destaca a ductilidade da prata (capacidade de deformar-se plasticamente sem quebrar de imediato) em oposição direta à fragilidade do vidro, que quebra abruptamente sem aviso.",
+    "explanation": "Destaca-se a ductilidade da prata (capacidade de deformar-se plasticamente sem quebrar de imediato) em oposição direta à fragilidade do vidro, que quebra abruptamente sem aviso.",
     "distractorAnalysis": [
       "Está incorreta: Ambos são materiais sólidos estruturais, não fluidos aquosos.",
       "Está incorreta: A prata é deformável sob forças mecânicas suficientes e o vidro não evapora espontaneamente.",
@@ -3590,7 +3590,7 @@ const TOPIC_2_QUESTIONS = [
       "Na ordem de 10²⁰ N/m²."
     ],
     "correctIndex": 1,
-    "explanation": "Os quatro materiais sólidos rígidos de referência (Aço, Prata, Vidro e Osso) são expressos em potências de dez de 10¹⁰ N/m²: Aço (20 × 10¹⁰), Prata (7,5 × 10¹⁰), Vidro (7 × 10¹⁰) e Osso (2 × 10¹⁰). Apenas a borracha baixa para 10⁷ N/m².",
+    "explanation": "Os 4 materiais sólidos rígidos de referência dos materiais são expressos em potências de dez de 10¹⁰ N/m²: Aço (20 × 10¹⁰), Prata (7,5 × 10¹⁰), Vidro (7 × 10¹⁰) e Osso (2 × 10¹⁰). Apenas a borracha baixa para 10⁷ N/m².",
     "distractorAnalysis": [
       "Está incorreta: 10³ N/m² é a ordem de grandeza de espumas extremamente brandas, não de metais ou osso.",
       "Está incorreta: Potências negativas descrevem grandezas infinitesimais, não módulos de rigidez macroscópicos.",
@@ -3601,7 +3601,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2190,
     "topicId": 2,
-    "question": "Se aplicarmos a MESMA tensão mecânica axial moderada de 10 MPa a um bloco de Aço e a um bloco de Borracha, o que se observa quanto à deformação relativa sofrida?",
+    "question": "Se aplicarmos a MESMA tensão mecânica axial de σ = 10 MPa a um bloco de Aço e a um bloco de Borracha, o que se observa quanto à deformação relativa sofrida?",
     "options": [
       "Ambos sofrem rigorosamente a mesma deformação relativa de 1%.",
       "O bloco de aço deforma-se mil vezes mais do que o de borracha.",
@@ -3620,7 +3620,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2191,
     "topicId": 2,
-    "question": "Qual é o valor de referência do Módulo de Young do Osso cortical humano sob solicitações de tração e compressão axial longitudinal?",
+    "question": "Qual é o valor de referência do Módulo de Young do Osso cortical sob solicitações longitudinais axiais?",
     "options": [
       "20 × 10¹⁰ N/m²",
       "7,5 × 10¹⁰ N/m²",
@@ -3628,7 +3628,7 @@ const TOPIC_2_QUESTIONS = [
       "2 × 10¹⁰ N/m²"
     ],
     "correctIndex": 3,
-    "explanation": "O estabelece expressamente na sua linha dedicada ao tecido ósseo: 'Osso (2 × 10¹⁰ N/m²): Módulo 10 vezes menor que o aço; confere rigidez com extraordinária capacidade elástica de amortecimento'.",
+    "explanation": "Estabelece-se expressamente na sua linha dedicada ao tecido ósseo: 'Osso (2 × 10¹⁰ N/m²): Módulo 10 vezes menor que o aço; confere rigidez com extraordinária capacidade elástica de amortecimento'.",
     "distractorAnalysis": [
       "Está incorreta: 20 × 10¹⁰ N/m² é o Módulo do Aço.",
       "Está incorreta: 7,5 × 10¹⁰ N/m² é o Módulo da Prata.",
@@ -3658,7 +3658,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2193,
     "topicId": 2,
-    "question": "Por que razão uma prótese ortopédica de aço rígido pode provocar desmineralização óssea ao seu redor (fenómeno de blindagem de tensões ou stress shielding)?",
+    "question": "Por que razão a 'extraordinária capacidade elástica de amortecimento' do osso cortical é uma vantagem evolutiva vital para o ser humano?",
     "options": [
       "Porque permite ao fémur encolher 50 cm para que a pessoa caiba em camas pequenas.",
       "Porque permite ao esqueleto sofrer microdeformações reversíveis durante a marcha e salto, absorvendo a energia cinética dos impactos sem sofrer fratura.",
@@ -3677,7 +3677,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2194,
     "topicId": 2,
-    "question": "O osso cortical tem E = 2 × 10¹⁰ N/m². Se uma tíbia de 40 cm de comprimento sofrer uma deformação relativa de ε = 0,0005 sob carga, qual é o encurtamento elástico absoluto sofrido?",
+    "question": "Se os ossos humanos tivessem o Módulo de Young do Aço (20 × 10¹⁰ N/m²), qual seria o grave prejuízo biomecânico para o organismo?",
     "options": [
       "Os ossos dobrariam sob o próprio peso do corpo como borracha vulcanizada.",
       "O esqueleto passaria a ser indeformável no vácuo e perderia toda a massa.",
@@ -3696,7 +3696,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2195,
     "topicId": 2,
-    "question": "Qual é a composição estrutural bifásica do osso que lhe permite conjugar resistência à compressão com flexibilidade elástica?",
+    "question": "Se os ossos humanos tivessem o Módulo de Young da Borracha (0,1 a 10 × 10⁷ N/m²), o que aconteceria ao corpo humano na postura ereta?",
     "options": [
       "Caminharia dez vezes mais depressa do que um veículo em marcha de emergência.",
       "Teria ossos perfeitamente indeformáveis de Euclides.",
@@ -3715,7 +3715,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2196,
     "topicId": 2,
-    "question": "Comparando os valores de referência, como se situa o Módulo de Young do Osso cortical (2 × 10¹⁰ N/m²) relativamente ao do Vidro (7 × 10¹⁰ N/m²) e da Prata (7,5 × 10¹⁰ N/m²)?",
+    "question": "Comparando os valores de referência dos materiais, como se situa o Módulo de Young do Osso (2 × 10¹⁰ N/m²) relativamente ao do Vidro (7 × 10¹⁰ N/m²) e da Prata (7,5 × 10¹⁰ N/m²)?",
     "options": [
       "É cerca de 3,5 vezes menor do que o do vidro e da prata, conferindo-lhe maior flexibilidade e complacência elástica de amortecimento.",
       "É cem vezes superior ao do vidro e da prata combinados.",
@@ -3734,7 +3734,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2197,
     "topicId": 2,
-    "question": "Na biomecânica do envelhecimento e osteoporose, como se alteram a rigidez e a tenacidade óssea perante impactos súbitos?",
+    "question": "Nos cuidados de enfermagem e reabilitação motora pós-fratura, compreender o Módulo de Young do osso ajuda a fundamentar cientificamente:",
     "options": [
       "A necessidade de repouso absoluto no leito sem qualquer carga durante 10 anos seguidos.",
       "A importância da carga mecânica gradual controlada e mobilização precoce, que gera microdeformações elásticas necessárias para estimular a consolidação e remodelação óssea.",
@@ -3753,7 +3753,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2198,
     "topicId": 2,
-    "question": "O que confere ao osso vivo a capacidade de amortecer impactos dinâmicos mecânicos repetitivos sem sofrer fratura por fadiga precoce?",
+    "question": "Sob uma tensão fisiológica de compressão de σ = 20 MPa (20 × 10⁶ N/m²), qual é a deformação relativa ε sofrida por um fémur com Módulo de Young E = 2 × 10¹⁰ N/m²?",
     "options": [
       "Ε = 10% (0,10)",
       "Ε = 0,00001% (10⁻⁷)",
@@ -3772,7 +3772,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2199,
     "topicId": 2,
-    "question": "Qual é a síntese biomecânica fundamental do tecido ósseo cortical humano no contexto da reologia dos materiais?",
+    "question": "Qual é a síntese biomimética fundamental do tecido ósseo cortical humano expressa?",
     "options": [
       "É um material indeformável de Euclides com módulo infinito.",
       "É um fluido viscoso de escoamento livre com Módulo de Young nulo.",
@@ -3780,7 +3780,7 @@ const TOPIC_2_QUESTIONS = [
       "Une de forma notável elevada rigidez de sustentação estrutural com extraordinária capacidade elástica de amortecimento de impactos (E = 2 × 10¹⁰ N/m²)."
     ],
     "correctIndex": 3,
-    "explanation": "O conclui com a síntese de excelência: 'Osso (2 × 10¹⁰ N/m²): Módulo 10 vezes menor que o aço; confere rigidez com extraordinária capacidade elástica de amortecimento'.",
+    "explanation": "Conclui-se com a síntese de excelência: 'Osso (2 × 10¹⁰ N/m²): Módulo 10 vezes menor que o aço; confere rigidez com extraordinária capacidade elástica de amortecimento'.",
     "distractorAnalysis": [
       "Está incorreta: O osso deforma-se reversivelmente no regime elástico fisiológico, não sendo indeformável.",
       "Está incorreta: O osso cortical é sólido mineralizado e não um fluido viscoso como o mel ou a água.",
@@ -3791,7 +3791,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2200,
     "topicId": 2,
-    "question": "Qual das seguintes frases resume com rigor científico o comportamento elástico e a resistência dos materiais estudados em Biofísica?",
+    "question": "Ao concluir o estudo da Elasticidade dos Corpos e Resistência dos Materiais (Tópico 2), como se integra o modelo biofísico do aparelho locomotor humano?",
     "options": [
       "Integra comportamento viscoelástico (amortecimento e histerese), resistência combinada às 5 deformações (compressão, tração, flexão, cisalhamento e torção) e resposta elástica de sustentação descrita pela Lei de Hooke (σ = E · ε com E = 2 × 10¹⁰ N/m²).",
       "O esqueleto humano é modelado como uma barra de vidro frágil em rotação perpétua de 80 km/h.",
@@ -3799,7 +3799,7 @@ const TOPIC_2_QUESTIONS = [
       "A biofísica conclui que as leis de Newton e Hooke deixam de se aplicar assim que o utente entra no hospital."
     ],
     "correctIndex": 0,
-    "explanation": "Na biomecânica dos tecidos vivos, os ossos e músculos apresentam comportamento viscoelástico; suportam esforços axiais e tangenciais das 5 deformações básicas; e regem-se pela Lei de Hooke generalizada, combinando sustentação firme com amortecimento elástico protetor.",
+    "explanation": "A grande visão unificada do Tópico 2: os ossos e músculos são viscoelásticos; suportam esforços axiais e tangenciais das 5 deformações básicas; e regem-se pela Lei de Hooke generalizada, combinando sustentação firme com amortecimento elástico protetor.",
     "distractorAnalysis": [
       "Está incorreta: Modelar o osso como vidro ignoraria a sua flexibilidade e tenacidade orgânica elástica.",
       "Está incorreta: Ignorar a viscoelasticidade e histerese ignoraria o amortecimento de choques nos tecidos biológicos vivos.",
