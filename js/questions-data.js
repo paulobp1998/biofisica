@@ -77,7 +77,7 @@ const TOPICS_DATA = [
 // CONTROLO DE ACESSO DO DOCENTE POR TÓPICO
 // =========================================================================
 // Define quais os tópicos atualmente acessíveis aos estudantes (1 a 8).
-// Tópico 1 ativo e disponibilizado com 500 questões clínicas.
+// Tópico 1 ativo e disponibilizado com 200 questões de biofísica.
 // Tópicos 2 a 8 temporariamente bloqueados pelo docente para foco do estudo.
 const UNLOCKED_TOPIC_IDS = [1];
 

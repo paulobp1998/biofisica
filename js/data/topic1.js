@@ -1,9510 +1,3810 @@
 /**
  * BANCO DE QUESTÕES CERTIFICADAS - TÓPICO 1
  * Força, Estado de Equilíbrio, Equilíbrio de Forças e Alavancas
- * Alinhado estritamente com os 105 slides do PowerPoint (1BF)
- * Certificado pelos Agentes Alfa (Física), Beta (Biomecânica) e Gama (Terminologia)
- * Total de Questões: 500 (IDs 1001 a 1500)
+ * Alinhado estritamente com os slides do PowerPoint (1BF - Prof. Paulo Pereira)
+ * Foco estrito em Física/Biofísica sem jargão clínico prévio de Enfermagem
+ * Total de Questões: 200 (IDs 1001 a 1200)
  */
 
 const TOPIC_1_QUESTIONS = [
   {
     "id": 1001,
     "topicId": 1,
-    "question": "Qual é a definição de Mecânica no contexto da Biofísica?",
+    "question": "Qual é a definição de Mecânica apresentada nos conceitos fundamentais da Biofísica (Slide 5)?",
     "options": [
-      "O estudo da composição atómica dos radioisótopos emissores de radiação gama.",
-      "O ramo da física que estuda as relações entre os movimentos dos corpos materiais e as forças que lhes estão associadas.",
-      "A área que investiga exclusivamente a temperatura corporal e as trocas térmicas celulares.",
-      "O ramo que analisa a velocidade de reações enzimáticas em soluções tampão."
+      "Estuda a composição celular e a estrutura atómica dos tecidos biológicos.",
+      "Estuda as relações entre os movimentos dos corpos e as forças a eles associadas.",
+      "Analisa exclusivamente a temperatura corporal e as trocas de calor metabólicas.",
+      "Investiga a velocidade das reações químicas celulares e atividade enzimática."
     ],
     "correctIndex": 1,
-    "explanation": "A mecânica dedica-se ao estudo das forças e das alterações de movimento ou equilíbrio que elas provocam.",
+    "explanation": "De acordo com o Slide 5, a Mecânica define-se formalmente como o ramo que 'estuda as relações entre os movimentos dos corpos e as forças a eles associadas'.",
     "distractorAnalysis": [
-      "Está incorreta: A radiobiologia e física nuclear estudam os radioisótopos, não a mecânica.",
-      "Está incorreta: A termodinâmica estuda as trocas térmicas e temperatura, não a mecânica clássica.",
-      "Está incorreta: A cinética enzimática é do domínio da bioquímica, não da mecânica."
+      "Está incorreta: A estrutura celular e atómica é objeto de estudo da biologia e química celular, não da mecânica.",
+      "Está incorreta: O estudo do calor e temperatura pertence à termodinâmica, não aos conceitos fundamentais da mecânica.",
+      "Está incorreta: A velocidade de reações enzimáticas é domínio da cinética bioquímica, não da mecânica."
     ],
-    "nursingApplication": "Permite analisar as forças e movimentos envolvidos no transporte de equipamentos hospitalares."
+    "nursingApplication": "Ajuda a analisar as forças musculares e os movimentos corporais envolvidos nas atividades diárias e mobilizações."
   },
   {
     "id": 1002,
     "topicId": 1,
-    "question": "O que é uma Força na física clássica?",
+    "question": "Como se define 'Força' no âmbito dos conceitos fundamentais de Biofísica (Slide 5)?",
     "options": [
-      "Uma grandeza puramente escalar expressa em quilogramas que quantifica a quantidade de matéria.",
-      "A energia potencial estática acumulada no vácuo entre dois átomos em repouso térmico.",
-      "Uma interação vetorial mútua entre corpos capaz de alterar o seu estado de movimento ou de produzir deformação mecânica.",
-      "A taxa de variação da temperatura de um sólido quando sujeito a radiação ultravioleta."
+      "Quantidade total de matéria constituinte de um organismo ou objeto.",
+      "Taxa temporal de variação do metabolismo energético basal do corpo.",
+      "Interação entre corpos capaz de alterar o seu estado.",
+      "Energia térmica armazenada num corpo em repouso absoluto."
     ],
     "correctIndex": 2,
-    "explanation": "A força é uma ação vetorial entre corpos que pode acelerar, travar ou deformar uma estrutura material.",
+    "explanation": "O Slide 5 estabelece explicitamente que a Força é a 'interação entre corpos capaz de alterar o seu estado' de repouso ou de movimento.",
     "distractorAnalysis": [
-      "Está incorreta: A força é uma grandeza vetorial (módulo, direção e sentido), não sendo uma grandeza escalar.",
-      "Está incorreta: A energia potencial é uma forma de energia medida em Joules, não uma força em Newtons.",
-      "Está incorreta: A taxa de variação de temperatura é uma grandeza térmica (°C/s), sem relação com forças mecânicas."
+      "Está incorreta: A quantidade de matéria constitui a definição física de massa, não de força.",
+      "Está incorreta: A taxa de variação de energia metabólica refere-se à potência metabólica, não à força mecânica.",
+      "Está incorreta: A energia térmica interna é uma grandeza termodinâmica escalar, distinta da interação mecânica de força."
     ],
-    "nursingApplication": "Compreender a força é a base para quantificar o esforço muscular ao empurrar um equipamento."
+    "nursingApplication": "Permite compreender como a interação mecânica entre o profissional e o utente produz ou trava o movimento."
   },
   {
     "id": 1003,
     "topicId": 1,
-    "question": "Qual é a unidade padrão de Força no Sistema Internacional (SI)?",
+    "question": "Qual é o instrumento de medição apresentado no Slide 5 para quantificar a intensidade de uma força?",
     "options": [
-      "Quilograma (kg), que mede a massa inercial de um corpo.",
-      "Joule (J), correspondente à energia mecânica e ao trabalho.",
-      "Pascal (Pa), que quantifica a pressão mecânica por unidade de área.",
-      "Newton (N), equivalente a 1 kg·m/s²."
+      "Esfigmomanómetro.",
+      "Termómetro clínico.",
+      "Goniómetro articulado.",
+      "Dinamómetro."
     ],
     "correctIndex": 3,
-    "explanation": "No SI, a força mede-se em Newtons (N), sendo 1 N a força que imprime a 1 kg a aceleração de 1 m/s².",
+    "explanation": "O Slide 5 apresenta o 'Dinamómetro' como o instrumento físico clássico destinado a medir a intensidade de forças.",
     "distractorAnalysis": [
-      "Está incorreta: O quilograma (kg) é a unidade fundamental de massa inercial, não de força.",
-      "Está incorreta: O Joule (J) é a unidade de energia e trabalho mecânico (N·m), não de força pura.",
-      "Está incorreta: O Pascal (Pa) é a unidade de pressão (N/m²), representando força distribuída por área."
+      "Está incorreta: O esfigmomanómetro mede a pressão arterial em mmHg, não forças diretamente.",
+      "Está incorreta: O termómetro mede a temperatura corporal em graus Celsius.",
+      "Está incorreta: O goniómetro é usado para medir ângulos de amplitude articular, não a intensidade de forças."
     ],
-    "nursingApplication": "Distingue a força aplicada em Newtons da massa transportada em quilogramas."
+    "nursingApplication": "O princípio do dinamómetro é aplicado em aparelhos de medição da força de preensão palmar em doentes em reabilitação."
   },
   {
     "id": 1004,
     "topicId": 1,
-    "question": "Qual o instrumento físico utilizado para medir a intensidade de uma força?",
+    "question": "Em que princípio físico assenta o funcionamento de um dinamómetro de mola convencional?",
     "options": [
-      "Dinamómetro.",
-      "Barómetro.",
-      "Termómetro.",
-      "Cronómetro."
+      "Na deformação elástica de uma mola calibrada proporcionalmente à intensidade da força aplicada.",
+      "Na variação do volume de um líquido sob aquecimento contínuo.",
+      "Na contagem de impulsos elétricos gerados por desintegração radioativa.",
+      "Na rotação de um disco condutor sob a ação de um campo magnético constante."
     ],
     "correctIndex": 0,
-    "explanation": "O dinamómetro mede forças através da deformação elástica calibrada de uma mola interna (Lei de Hooke).",
+    "explanation": "Um dinamómetro opera com base na Lei de Hooke: a deformação elástica (alongamento) da sua mola interna é diretamente proporcional à intensidade da força aplicada.",
     "distractorAnalysis": [
-      "Está incorreta: O barómetro mede a pressão atmosférica em fluidos, não forças mecânicas isoladas.",
-      "Está incorreta: O termómetro é o instrumento de medição da temperatura absoluta ou relativa.",
-      "Está incorreta: O cronómetro mede intervalos de tempo decorridos."
+      "Está incorreta: A dilatação térmica de líquidos é o princípio de funcionamento dos termómetros clássicos de mercúrio ou álcool.",
+      "Está incorreta: A contagem de impulsos radioativos é o princípio dos detetores Geiger, sem relação com dinamómetros.",
+      "Está incorreta: A indução eletromagnética em discos condutores é usada em motores e contadores elétricos, não em dinamómetros."
     ],
-    "nursingApplication": "Dinamómetros são usados em ergonomia hospitalar para medir a força de tração ao puxar camas."
+    "nursingApplication": "Compreender a calibração de sensores de força é útil ao operar camas hospitalares inteligentes com balança integrada."
   },
   {
     "id": 1005,
     "topicId": 1,
-    "question": "Quais são os quatro elementos que definem completamente uma grandeza vetorial como a Força?",
+    "question": "Nos slides da unidade curricular (Slide 3), qual é um dos principais objetivos da Biofísica ao estudar a Mecânica?",
     "options": [
-      "Apenas o seu valor numérico e a unidade física associada.",
-      "Módulo (intensidade), direção, sentido e ponto de aplicação.",
-      "Massa, densidade, volume e estado de agregação da matéria.",
-      "Velocidade angular, frequência e período de oscilação."
+      "Sintetizar novos compostos farmacológicos orgânicos em laboratório.",
+      "Conhecer princípios científicos da mecânica e aplicá-los à anatomia humana e terapêutica.",
+      "Calcular a dosagem de fármacos com base no pH dos fluidos gastrointestinais.",
+      "Analisar as sequências genéticas de microrganismos patogénicos hospitalares."
     ],
     "correctIndex": 1,
-    "explanation": "Uma grandeza vetorial exige intensidade numérica, reta suporte (direção), orientação (sentido) e ponto de atuação.",
+    "explanation": "O Slide 3 define que um dos objetivos é 'Conhecer os princípios científicos nos campos da Mecânica (...) e aplicar esses princípios à anatomia humana e terapêutica'.",
     "distractorAnalysis": [
-      "Está incorreta: Valor numérico e unidade definem grandezas puramente escalares (como massa ou tempo).",
-      "Está incorreta: Massa, volume e densidade são propriedades da matéria, não componentes de um vetor.",
-      "Está incorreta: Velocidade angular e frequência são grandezas cinemáticas de rotação."
+      "Está incorreta: A síntese farmacológica é do âmbito da química farmacêutica e bioquímica.",
+      "Está incorreta: O cálculo de dosagens e pH pertence à farmacologia e bioquímica de soluções.",
+      "Está incorreta: A sequenciação genética é do domínio da genética molecular e microbiologia."
     ],
-    "nursingApplication": "A direção e o sentido ao puxar um equipamento determinam a trajetória do movimento resultante."
+    "nursingApplication": "Fundamenta as boas práticas de ergonomia e prevenção de lesões musculoesqueléticas na equipa de saúde."
   },
   {
     "id": 1006,
     "topicId": 1,
-    "question": "Considerando g = 9,8 m/s², qual é o Peso de um equipamento que possui uma massa de 25 kg?",
+    "question": "De acordo com a definição de Força (Slide 5), que efeito pode uma força não equilibrada produzir num corpo?",
     "options": [
-      "25 N.",
-      "2.6 N.",
-      "245.0 N.",
-      "245.0 kg."
+      "Apenas o aumento imediato da sua massa molecular inercial.",
+      "Exclusivamente a transformação da sua matéria em radiação térmica.",
+      "Alterar o seu estado de repouso ou de movimento, produzindo aceleração ou deformação.",
+      "Anular instantaneamente todas as interações atómicas do corpo."
     ],
     "correctIndex": 2,
-    "explanation": "O peso calcula-se pela relação P = m · g: 25 kg · 9,8 m/s² = 245.0 N.",
+    "explanation": "Uma força atua como agente capaz de alterar o estado de repouso ou movimento de um corpo (produzindo aceleração) ou causar deformação mecânica na sua estrutura.",
     "distractorAnalysis": [
-      "Está incorreta: 25 N confunde a massa numérica com a força peso sem multiplicar pela aceleração da gravidade.",
-      "Está incorreta: Dividir a massa pela gravidade é uma operação incorreta para obter o peso.",
-      "Está incorreta: O valor está certo, mas o peso é força em Newtons (N), não em quilogramas (kg)."
+      "Está incorreta: A massa é uma grandeza escalar intrínseca que não se altera pela aplicação de forças comuns.",
+      "Está incorreta: A conversão de matéria em radiação ocorre em reações nucleares de alta energia, não por forças mecânicas.",
+      "Está incorreta: Forças mecânicas externas não anulam as forças de coesão atómica da matéria."
     ],
-    "nursingApplication": "Permite calcular o esforço vertical de sustentação suportado pelas rodas de um equipamento."
+    "nursingApplication": "Mobilizar um utente no leito exige a aplicação de uma força externa controlada para vencer a inércia do repouso."
   },
   {
     "id": 1007,
     "topicId": 1,
-    "question": "Uma força perpendicular de 110 N atua sobre uma superfície plana de 0,25 m². Qual é a pressão exercida?",
+    "question": "Qual é a unidade do Sistema Internacional (SI) utilizada para quantificar a grandeza Força medida por um dinamómetro?",
     "options": [
-      "27 Pa (Pascal).",
-      "110 Pa (Pascal).",
-      "440 N.",
-      "440 Pa (Pascal)."
+      "Quilograma (kg).",
+      "Pascal (Pa).",
+      "Joule (J).",
+      "Newton (N)."
     ],
     "correctIndex": 3,
-    "explanation": "A pressão mecânica é a razão p = F / A: 110 N / 0,25 m² = 440 Pa.",
+    "explanation": "No Sistema Internacional (SI), a unidade padrão de força é o Newton (N), conforme detalhado na tabela de grandezas dos slides (Slide 41).",
     "distractorAnalysis": [
-      "Está incorreta: Multiplicar a força pela área (F · A) não fornece a pressão mecânica.",
-      "Está incorreta: 110 Pa ignora a área sobre a qual a força está distribuída.",
-      "Está incorreta: A pressão mede-se em Pascal (Pa) ou N/m², e não em Newtons (N)."
+      "Está incorreta: O quilograma (kg) é a unidade SI de massa, que quantifica a quantidade de matéria.",
+      "Está incorreta: O Pascal (Pa) é a unidade SI de pressão (força por unidade de área).",
+      "Está incorreta: O Joule (J) é a unidade SI de energia e trabalho mecânico."
     ],
-    "nursingApplication": "Demonstra que alargar a área de apoio reduz a pressão exercida sobre o piso hospitalar."
+    "nursingApplication": "Garante a correta interpretação de parâmetros de esforço e tração prescritos em equipamentos de tração ortopédica."
   },
   {
     "id": 1008,
     "topicId": 1,
-    "question": "Qual das seguintes grandezas físicas é estritamente ESCALAR?",
+    "question": "Se a resultante de todas as forças que atuam sobre um corpo for nula, o que acontece ao seu estado mecânico?",
     "options": [
-      "Massa corporal inercial.",
-      "Força peso.",
-      "Força de atrito estático.",
-      "Momento de uma força (torque)."
+      "Permanece em repouso ou em movimento retilíneo e uniforme.",
+      "Ganha necessariamente uma aceleração crescente contínua.",
+      "Entra imediatamente em rotação rápida em torno do seu eixo.",
+      "Aumenta espontaneamente o seu peso por ação da gravidade."
     ],
     "correctIndex": 0,
-    "explanation": "A massa é puramente escalar: fica completamente definida pelo valor numérico e pela unidade (kg).",
+    "explanation": "Quando a força resultante é nula (Fr = 0), o corpo mantém o seu estado de repouso ou continua em movimento retilíneo uniforme (MRU), de acordo com a 1ª Lei de Newton.",
     "distractorAnalysis": [
-      "Está incorreta: A força peso é um vetor orientado verticalmente para o centro da Terra.",
-      "Está incorreta: A força de atrito é um vetor com direção tangencial à superfície e sentido oposto ao movimento relativo.",
-      "Está incorreta: O momento de uma força é uma grandeza vetorial que quantifica a capacidade de rotação."
+      "Está incorreta: Aceleração exige uma força resultante não nula (Fr = m · a); se Fr = 0, a aceleração é rigorosamente nula.",
+      "Está incorreta: Rotação exige um momento de força resultante não nulo; sem forças resultantes o corpo não inicia rotação.",
+      "Está incorreta: O peso depende da massa e gravidade local, não sofrendo alteração por equilíbrio de forças."
     ],
-    "nursingApplication": "Ao registar a massa de um utente numa balança, afere-se uma grandeza escalar em kg."
+    "nursingApplication": "Explica por que uma maca parada numa superfície horizontal nivelada não se move sem intervenção externa."
   },
   {
     "id": 1009,
     "topicId": 1,
-    "question": "Em física vetorial, qual é a distinção rigorosa entre 'Direção' e 'Sentido' de uma força?",
+    "question": "Qual é a principal distinção entre o conceito de Mecânica e o de Reologia apresentados no programa de Biofísica (Slide 3)?",
     "options": [
-      "A Direção indica a unidade no SI e o Sentido indica se a grandeza é escalar ou vetorial.",
-      "A Direção é a reta geométrica de suporte ao longo da qual a força atua, enquanto o Sentido é a orientação do vetor nessa reta.",
-      "Direção e Sentido são termos rigorosamente sinónimos na mecânica clássica de Newton.",
-      "A Direção mede o módulo em Newtons e o Sentido mede o tempo de aplicação em segundos."
+      "A Mecânica analisa a eletricidade corporal e a Reologia estuda a radioatividade.",
+      "A Mecânica estuda forças e movimentos de corpos, enquanto a Reologia estuda reações dos corpos a forças deformadoras.",
+      "A Mecânica estuda fluidos estáticos e a Reologia estuda exclusivamente os raios X.",
+      "A Mecânica estuda a estrutura do ADN e a Reologia estuda a fusão nuclear."
     ],
     "correctIndex": 1,
-    "explanation": "A direção é a linha de ação geométrica (ex.: horizontal, vertical); o sentido é a orientação na linha (ex.: para a direita, para cima).",
+    "explanation": "A Mecânica debruça-se sobre forças e alterações de movimento/equilíbrio (Slide 5), ao passo que a Reologia estuda as reações dos corpos a forças deformadoras (Slide 3 do Tópico 2).",
     "distractorAnalysis": [
-      "Está incorreta: A unidade e a natureza escalar/vetorial não definem direção e sentido de um vetor.",
-      "Está incorreta: Direção e sentido são conceitos geometricamente distintos e independentes.",
-      "Está incorreta: O módulo exprime a intensidade numérica e o tempo mede a duração temporal."
+      "Está incorreta: Eletricidade e radioatividade são temas de bioeletrogénese e física nuclear, não de mecânica.",
+      "Está incorreta: Fluidos estáticos são o objeto da hidrostática e raios X são tema de radiação médica.",
+      "Está incorreta: O ADN é do foro da bioquímica e genética, e fusão nuclear da física do núcleo atómico."
     ],
-    "nursingApplication": "Essencial para aplicar forças na direção e sentido corretos ao posicionar equipamentos móveis."
+    "nursingApplication": "Permite distinguir se um esforço mecânico gera deslocamento de um doente ou deformação de tecidos de suporte."
   },
   {
     "id": 1010,
     "topicId": 1,
-    "question": "Qual é a diferença fundamental entre a grandeza Pressão e o conceito de Tensão Mecânica num tecido biológico?",
+    "question": "Ao utilizar um dinamómetro manual para avaliar um utente, o visor regista 50 N. O que indica fisicamente este valor?",
     "options": [
-      "A Pressão mede-se em Newtons e a Tensão Mecânica mede-se exclusivamente em Joules por segundo.",
-      "A Pressão atua apenas no vácuo absoluto e a Tensão Mecânica atua exclusivamente no interior de gases ideais.",
-      "A Pressão é uma grandeza escalar de força perpendicular por área, enquanto a Tensão Mecânica é uma grandeza tensorial interna que inclui tração, compressão e cisalhamento.",
-      "Não existe qualquer diferença física, sendo termos idênticos para a aceleração da gravidade."
+      "Que a massa do utente é de exatamente 50 quilogramas.",
+      "Que a pressão exercida na mão do utente é de 50 Pascal.",
+      "Que a intensidade da força mecânica exercida na mola do dinamómetro é de 50 Newtons.",
+      "Que a velocidade com que a mão se fechou foi de 50 metros por segundo."
     ],
     "correctIndex": 2,
-    "explanation": "A pressão mede a força compressiva normal por unidade de área; a tensão mecânica interna decompõe-se em componentes normais e tangenciais.",
+    "explanation": "O valor de 50 N indica diretamente a intensidade (módulo) da força de tração ou compressão mecânica exercida na mola do aparelho.",
     "distractorAnalysis": [
-      "Está incorreta: Tanto a pressão como a tensão têm unidades de força por área (N/m² ou Pa), não Joules por segundo.",
-      "Está incorreta: A pressão atua em fluidos e superfícies reais; a tensão mecânica descreve o estado interno de sólidos e tecidos.",
-      "Está incorreta: Nenhum destes conceitos se confunde com a aceleração gravitacional (m/s²)."
+      "Está incorreta: Quilogramas medem massa, não força; 50 N correspondem ao peso de cerca de 5,1 kg na Terra.",
+      "Está incorreta: Pascal mede pressão (N/m²); o dinamómetro mede força concentrada em Newtons.",
+      "Está incorreta: Metros por segundo é a unidade de velocidade, grandeza cinemática diferente de força."
     ],
-    "nursingApplication": "Fundamenta a avaliação das solicitações mecânicas sofridas pela cartilagem articular e discos vertebrais."
+    "nursingApplication": "Útil para registar a evolução do ganho de força muscular de um doente em recuperação funcional."
   },
   {
     "id": 1011,
     "topicId": 1,
-    "question": "Qual é a definição de Mecânica no contexto da Biofísica?",
+    "question": "Quais são os quatro elementos essenciais que caracterizam uma grandeza vetorial como a Força (Slides 6-7)?",
     "options": [
-      "O estudo da composição atómica dos radioisótopos emissores de radiação gama.",
-      "A área que investiga exclusivamente a temperatura corporal e as trocas térmicas celulares.",
-      "O ramo que analisa a velocidade de reações enzimáticas em soluções tampão.",
-      "O ramo da física que estuda as relações entre os movimentos dos corpos materiais e as forças que lhes estão associadas."
+      "Massa, aceleração, velocidade e tempo de atuação.",
+      "Volume, densidade, temperatura e calor específico.",
+      "Área de contacto, pressão, viscosidade e atrito.",
+      "Intensidade (módulo), direção, sentido e ponto de aplicação."
     ],
     "correctIndex": 3,
-    "explanation": "A mecânica dedica-se ao estudo das forças e das alterações de movimento ou equilíbrio que elas provocam.",
+    "explanation": "Todo o vetor físico é plenamente definido por quatro componentes: intensidade (módulo ou valor numérico com unidade), direção (reta de suporte), sentido (orientação na reta) e ponto de aplicação.",
     "distractorAnalysis": [
-      "Está incorreta: A radiobiologia e física nuclear estudam os radioisótopos, não a mecânica.",
-      "Está incorreta: A termodinâmica estuda as trocas térmicas e temperatura, não a mecânica clássica.",
-      "Está incorreta: A cinética enzimática é do domínio da bioquímica, não da mecânica."
+      "Está incorreta: Massa é escalar; aceleração e velocidade são outros vetores, não componentes intrínsecos de um vetor de força.",
+      "Está incorreta: Volume, densidade e temperatura são grandezas físicas puramente escalares.",
+      "Está incorreta: Área, pressão e viscosidade são grandezas que não definem a estrutura de um vetor."
     ],
-    "nursingApplication": "Permite analisar as forças e movimentos envolvidos no transporte de equipamentos hospitalares."
+    "nursingApplication": "Essencial para posicionar corretamente membros em tração esquelética sem desviar a linha da força."
   },
   {
     "id": 1012,
     "topicId": 1,
-    "question": "O que é uma Força na física clássica?",
+    "question": "Qual é a definição exata de 'Tendão' apresentada nos slides de Biofísica (Slide 8)?",
     "options": [
-      "Uma interação vetorial mútua entre corpos capaz de alterar o seu estado de movimento ou de produzir deformação mecânica.",
-      "Uma grandeza puramente escalar expressa em quilogramas que quantifica a quantidade de matéria.",
-      "A energia potencial estática acumulada no vácuo entre dois átomos em repouso térmico.",
-      "A taxa de variação da temperatura de um sólido quando sujeito a radiação ultravioleta."
+      "Tecido conjuntivo que conecta um músculo a um osso.",
+      "Tecido epitelial impermeável que reveste as cavidades articulares.",
+      "Bainha de mielina condutora de impulsos elétricos nervosos.",
+      "Estrutura óssea esponjosa onde ocorre a hematopoiese."
     ],
     "correctIndex": 0,
-    "explanation": "A força é uma ação vetorial entre corpos que pode acelerar, travar ou deformar uma estrutura material.",
+    "explanation": "O Slide 8 define expressamente o tendão como: 'Tecido conjuntivo que conecta um músculo a um osso'.",
     "distractorAnalysis": [
-      "Está incorreta: A força é uma grandeza vetorial (módulo, direção e sentido), não sendo uma grandeza escalar.",
-      "Está incorreta: A energia potencial é uma forma de energia medida em Joules, não uma força em Newtons.",
-      "Está incorreta: A taxa de variação de temperatura é uma grandeza térmica (°C/s), sem relação com forças mecânicas."
+      "Está incorreta: O revestimento das cavidades articulares é feito pela membrana sinovial, não pelo tendão.",
+      "Está incorreta: A condução elétrica é feita pelos axónios com bainha de mielina no sistema nervoso.",
+      "Está incorreta: A medula óssea vermelha realiza a hematopoiese no interior do osso trabecular."
     ],
-    "nursingApplication": "Compreender a força é a base para quantificar o esforço muscular ao empurrar um equipamento."
+    "nursingApplication": "O tendão transmite a força gerada pelas fibras musculares ao esqueleto, viabilizando o movimento humano."
   },
   {
     "id": 1013,
     "topicId": 1,
-    "question": "Qual é a unidade padrão de Força no Sistema Internacional (SI)?",
+    "question": "Como atua fisicamente a força muscular transmitida por um tendão ao osso em que se insere (Slides 7-8)?",
     "options": [
-      "Quilograma (kg), que mede a massa inercial de um corpo.",
-      "Newton (N), equivalente a 1 kg·m/s².",
-      "Joule (J), correspondente à energia mecânica e ao trabalho.",
-      "Pascal (Pa), que quantifica a pressão mecânica por unidade de área."
+      "Como uma pressão omnidirecional que expande o volume do osso.",
+      "Como um vetor de força com ponto de aplicação na inserção óssea e direção ao longo da linha do tendão.",
+      "Como uma força de gravidade adicional que altera a massa do esqueleto.",
+      "Como uma corrente puramente elétrica sem componente de atração mecânica."
     ],
     "correctIndex": 1,
-    "explanation": "No SI, a força mede-se em Newtons (N), sendo 1 N a força que imprime a 1 kg a aceleração de 1 m/s².",
+    "explanation": "A tração do tendão é representada por um vetor de força cuja linha de ação segue o alinhamento das fibras do tendão e cujo ponto de aplicação coincide com a tuberosidade óssea de inserção.",
     "distractorAnalysis": [
-      "Está incorreta: O quilograma (kg) é a unidade fundamental de massa inercial, não de força.",
-      "Está incorreta: O Joule (J) é a unidade de energia e trabalho mecânico (N·m), não de força pura.",
-      "Está incorreta: O Pascal (Pa) é a unidade de pressão (N/m²), representando força distribuída por área."
+      "Está incorreta: A força de um tendão é direcional e trativa, não uma pressão que expande o volume ósseo.",
+      "Está incorreta: As forças tendinosas são geradas por contração de fibras musculares, não alterando a gravidade nem a massa.",
+      "Está incorreta: A transmissão tendinosa é puramente mecânica, resultante da contração ativa do músculo."
     ],
-    "nursingApplication": "Distingue a força aplicada em Newtons da massa transportada em quilogramas."
+    "nursingApplication": "Ajuda a compreender como a angulação de uma articulação altera o ângulo de tração e a eficácia do movimento."
   },
   {
     "id": 1014,
     "topicId": 1,
-    "question": "Qual o instrumento físico utilizado para medir a intensidade de uma força?",
+    "question": "Qual é a diferença física entre 'Direção' e 'Sentido' de um vetor de força no contexto dos slides?",
     "options": [
-      "Barómetro.",
-      "Termómetro.",
-      "Dinamómetro.",
-      "Cronómetro."
+      "Direção é o valor numérico em Newtons e Sentido é o instrumento que mede a força.",
+      "Direção e Sentido são termos rigorosamente sinónimos na física e no estudo de vetores.",
+      "Direção é a reta geométrica de suporte (ex.: horizontal) e Sentido é a orientação ao longo dessa reta (ex.: esquerda para a direita).",
+      "Direção refere-se exclusivamente ao peso e Sentido refere-se exclusivamente ao atrito."
     ],
     "correctIndex": 2,
-    "explanation": "O dinamómetro mede forças através da deformação elástica calibrada de uma mola interna (Lei de Hooke).",
+    "explanation": "A direção define a linha reta sobre a qual a força atua (ex.: horizontal, vertical ou oblíqua a 45º); o sentido indica para onde a seta aponta ao longo dessa linha (ex.: de baixo para cima).",
     "distractorAnalysis": [
-      "Está incorreta: O barómetro mede a pressão atmosférica em fluidos, não forças mecânicas isoladas.",
-      "Está incorreta: O termómetro é o instrumento de medição da temperatura absoluta ou relativa.",
-      "Está incorreta: O cronómetro mede intervalos de tempo decorridos."
+      "Está incorreta: O valor numérico em Newtons é a intensidade (ou módulo), não a direção.",
+      "Está incorreta: Na física vetorial, direção e sentido são propriedades distintas e não sinónimas.",
+      "Está incorreta: Todas as forças vetoriais possuem direção e sentido, não apenas o peso ou o atrito."
     ],
-    "nursingApplication": "Dinamómetros são usados em ergonomia hospitalar para medir a força de tração ao puxar camas."
+    "nursingApplication": "Evita equívocos na comunicação entre profissionais sobre a direção e o sentido ao puxar ou empurrar uma maca."
   },
   {
     "id": 1015,
     "topicId": 1,
-    "question": "Quais são os quatro elementos que definem completamente uma grandeza vetorial como a Força?",
+    "question": "Ao representar a força que o tendão rotuliano exerce sobre a tíbia, onde se situa o ponto de aplicação do vetor?",
     "options": [
-      "Apenas o seu valor numérico e a unidade física associada.",
-      "Massa, densidade, volume e estado de agregação da matéria.",
-      "Velocidade angular, frequência e período de oscilação.",
-      "Módulo (intensidade), direção, sentido e ponto de aplicação."
+      "No centro da terra por atração gravítica.",
+      "No corpo muscular do quadríceps na face anterior da coxa.",
+      "No ar, a meio caminho entre o músculo e o pé.",
+      "Na tuberosidade anterior da tíbia, onde o tendão se fixa ao osso."
     ],
     "correctIndex": 3,
-    "explanation": "Uma grandeza vetorial exige intensidade numérica, reta suporte (direção), orientação (sentido) e ponto de atuação.",
+    "explanation": "O ponto de aplicação de uma força de contacto exercida por um tendão localiza-se na sua zona de inserção anatómica no osso correspondente.",
     "distractorAnalysis": [
-      "Está incorreta: Valor numérico e unidade definem grandezas puramente escalares (como massa ou tempo).",
-      "Está incorreta: Massa, volume e densidade são propriedades da matéria, não componentes de um vetor.",
-      "Está incorreta: Velocidade angular e frequência são grandezas cinemáticas de rotação."
+      "Está incorreta: O centro da Terra é o ponto onde se considera a origem do campo gravitacional, não a fixação tendinosa.",
+      "Está incorreta: O ventre muscular é a origem da tensão ativa, mas a força que atua na tíbia aplica-se onde o tendão nela se fixa.",
+      "Está incorreta: Forças de contacto mecânico só se aplicam na interface física entre as estruturas em contacto."
     ],
-    "nursingApplication": "A direção e o sentido ao puxar um equipamento determinam a trajetória do movimento resultante."
+    "nursingApplication": "Importante ao avaliar pontos de sobrecarga mecânica e tendinites de inserção no sistema locomotor."
   },
   {
     "id": 1016,
     "topicId": 1,
-    "question": "Considerando g = 9,8 m/s², qual é o Peso de um equipamento que possui uma massa de 45 kg?",
+    "question": "Dois enfermeiros puxam uma maca na mesma direção horizontal com forças de 60 N cada um, mas em sentidos opostos. Qual é a força resultante?",
     "options": [
-      "441.0 N.",
-      "45 N.",
-      "4.6 N.",
-      "441.0 kg."
+      "0 N, pelo que a maca permanece em repouso.",
+      "120 N no sentido do profissional mais jovem.",
+      "60 N para a direita acelerando a maca.",
+      "3600 N por multiplicação das intensidades."
     ],
     "correctIndex": 0,
-    "explanation": "O peso calcula-se pela relação P = m · g: 45 kg · 9,8 m/s² = 441.0 N.",
+    "explanation": "Na mesma direção com sentidos opostos, os vetores subtraem-se: Fr = 60 N - 60 N = 0 N. A força resultante é nula e a maca não se move.",
     "distractorAnalysis": [
-      "Está incorreta: 45 N confunde a massa numérica com a força peso sem multiplicar pela aceleração da gravidade.",
-      "Está incorreta: Dividir a massa pela gravidade é uma operação incorreta para obter o peso.",
-      "Está incorreta: O valor está certo, mas o peso é força em Newtons (N), não em quilogramas (kg)."
+      "Está incorreta: A soma vetorial de forças em sentidos contrários subtrai os módulos, não os soma.",
+      "Está incorreta: Como as intensidades são idênticas (60 N e 60 N), não sobra nenhuma força resultante residual.",
+      "Está incorreta: Forças sobre uma mesma reta somam-se algebricamente com sinal, nunca se multiplicam para obter a resultante."
     ],
-    "nursingApplication": "Permite calcular o esforço vertical de sustentação suportado pelas rodas de um equipamento."
+    "nursingApplication": "Mostra a necessidade de coordenação de equipa: esforços com sentidos opostos anulam-se e causam fadiga inútil."
   },
   {
     "id": 1017,
     "topicId": 1,
-    "question": "Uma força perpendicular de 110 N atua sobre uma superfície plana de 0,25 m². Qual é a pressão exercida?",
+    "question": "Por que razão a força muscular não pode ser expressa apenas como um número simples (grandeza escalar)?",
     "options": [
-      "27 Pa (Pascal).",
-      "440 Pa (Pascal).",
-      "110 Pa (Pascal).",
-      "440 N."
+      "Porque a força muscular muda de unidade de medida a cada segundo.",
+      "Porque o seu efeito no osso depende criticamente da direção, sentido e ponto de aplicação do vetor de tração.",
+      "Porque as grandezas escalares só existem na física nuclear e química celular.",
+      "Porque os músculos produzem apenas grandezas imaginárias sem efeito real no corpo."
     ],
     "correctIndex": 1,
-    "explanation": "A pressão mecânica é a razão p = F / A: 110 N / 0,25 m² = 440 Pa.",
+    "explanation": "A força é uma grandeza vetorial: conhecer apenas a intensidade (ex.: 100 N) não permite saber se o osso vai fletir, estender ou rodar, dependendo da linha e ponto de tração.",
     "distractorAnalysis": [
-      "Está incorreta: Multiplicar a força pela área (F · A) não fornece a pressão mecânica.",
-      "Está incorreta: 110 Pa ignora a área sobre a qual a força está distribuída.",
-      "Está incorreta: A pressão mede-se em Pascal (Pa) ou N/m², e não em Newtons (N)."
+      "Está incorreta: A unidade de força no SI é sempre o Newton (N) e não varia com o tempo.",
+      "Está incorreta: Grandezas escalares existem amplamente na mecânica clássica, como a massa, tempo e energia.",
+      "Está incorreta: As forças musculares são interações físicas reais observáveis e mensuráveis."
     ],
-    "nursingApplication": "Demonstra que alargar a área de apoio reduz a pressão exercida sobre o piso hospitalar."
+    "nursingApplication": "Ajuda a planear exercícios de reabilitação ajustando o ângulo em que o músculo traciona o membro."
   },
   {
     "id": 1018,
     "topicId": 1,
-    "question": "Qual das seguintes grandezas físicas é estritamente ESCALAR?",
+    "question": "Qual é o papel mecânico do tecido conjuntivo tendinoso na transmissão da força motriz ao esqueleto (Slide 8)?",
     "options": [
-      "Força peso.",
-      "Força de atrito estático.",
-      "Massa corporal inercial.",
-      "Momento de uma força (torque)."
+      "Gera contração ativa independente através de filamentos de actina.",
+      "Substitui a necessidade de apoio articular entre os ossos.",
+      "Transmite a tração gerada pelo músculo esquelético diretamente à alavanca óssea.",
+      "Produz líquido sinovial para lubrificar as vértebras lombares."
     ],
     "correctIndex": 2,
-    "explanation": "A massa é puramente escalar: fica completamente definida pelo valor numérico e pela unidade (kg).",
+    "explanation": "O tendão funciona como o transmissor mecânico de tração entre o músculo (gerador de força ativa) e o osso (alavanca rígida que produz movimento articular).",
     "distractorAnalysis": [
-      "Está incorreta: A força peso é um vetor orientado verticalmente para o centro da Terra.",
-      "Está incorreta: A força de atrito é um vetor com direção tangencial à superfície e sentido oposto ao movimento relativo.",
-      "Está incorreta: O momento de uma força é uma grandeza vetorial que quantifica a capacidade de rotação."
+      "Está incorreta: Os tendões são constituídos por colagénio passivo e não possuem capacidade contrátil ativa de actina/miosina.",
+      "Está incorreta: As articulações são indispensáveis como eixos de rotação (fulcros) do movimento esquelético.",
+      "Está incorreta: O líquido sinovial é produzido pela membrana sinovial articular, não pelos tendões."
     ],
-    "nursingApplication": "Ao registar a massa de um utente numa balança, afere-se uma grandeza escalar em kg."
+    "nursingApplication": "Permite entender lesões por esforço repetitivo em tendões submetidos a tensões mecânicas elevadas."
   },
   {
     "id": 1019,
     "topicId": 1,
-    "question": "Em física vetorial, qual é a distinção rigorosa entre 'Direção' e 'Sentido' de uma força?",
+    "question": "Como se representa graficamente um vetor de força na física mecânica (Slide 6)?",
     "options": [
-      "A Direção indica a unidade no SI e o Sentido indica se a grandeza é escalar ou vetorial.",
-      "Direção e Sentido são termos rigorosamente sinónimos na mecânica clássica de Newton.",
-      "A Direção mede o módulo em Newtons e o Sentido mede o tempo de aplicação em segundos.",
-      "A Direção é a reta geométrica de suporte ao longo da qual a força atua, enquanto o Sentido é a orientação do vetor nessa reta."
+      "Por um círculo cujo diâmetro representa a velocidade do corpo.",
+      "Por uma curva ondulatória representativa do comprimento de onda.",
+      "Por um gráfico tridimensional de distribuição de calor corporal.",
+      "Por um segmento de reta orientado (seta) com origem, comprimento, inclinação e ponta."
     ],
     "correctIndex": 3,
-    "explanation": "A direção é a linha de ação geométrica (ex.: horizontal, vertical); o sentido é a orientação na linha (ex.: para a direita, para cima).",
+    "explanation": "Graficamente, o vetor representa-se por um segmento orientado: o comprimento indica o módulo/intensidade, a inclinação da reta define a direção, a seta aponta o sentido e a origem fixa o ponto de aplicação.",
     "distractorAnalysis": [
-      "Está incorreta: A unidade e a natureza escalar/vetorial não definem direção e sentido de um vetor.",
-      "Está incorreta: Direção e sentido são conceitos geometricamente distintos e independentes.",
-      "Está incorreta: O módulo exprime a intensidade numérica e o tempo mede a duração temporal."
+      "Está incorreta: Círculos não indicam direção nem sentido unidirecional de uma força mecânica.",
+      "Está incorreta: Linhas ondulatórias são usadas para ondas eletromagnéticas e sonoras, não para vetores de força.",
+      "Está incorreta: Mapas tridimensionais de calor são termografias, pertencentes à termologia médica."
     ],
-    "nursingApplication": "Essencial para aplicar forças na direção e sentido corretos ao posicionar equipamentos móveis."
+    "nursingApplication": "Permite desenhar diagramas de corpo livre simples para analisar a postura e a distribuição de cargas no trabalho."
   },
   {
     "id": 1020,
     "topicId": 1,
-    "question": "Qual é a diferença fundamental entre a grandeza Pressão e o conceito de Tensão Mecânica num tecido biológico?",
+    "question": "Se o ângulo de inserção de um tendão relativamente à diáfise óssea se alterar durante uma flexão articular, o que acontece à componente de força que produz rotação?",
     "options": [
-      "A Pressão é uma grandeza escalar de força perpendicular por área, enquanto a Tensão Mecânica é uma grandeza tensorial interna que inclui tração, compressão e cisalhamento.",
-      "A Pressão mede-se em Newtons e a Tensão Mecânica mede-se exclusivamente em Joules por segundo.",
-      "A Pressão atua apenas no vácuo absoluto e a Tensão Mecânica atua exclusivamente no interior de gases ideais.",
-      "Não existe qualquer diferença física, sendo termos idênticos para a aceleração da gravidade."
+      "Varia, pois as componentes vetoriais dependem da inclinação geométrica do vetor em relação ao osso.",
+      "Permanece rigorosamente inalterada independentemente de qualquer ângulo do membro.",
+      "Anula-se instantaneamente impedindo qualquer movimento articular futuro.",
+      "Transforma-se espontaneamente numa força nuclear fraca no interior do osso."
     ],
     "correctIndex": 0,
-    "explanation": "A pressão mede a força compressiva normal por unidade de área; a tensão mecânica interna decompõe-se em componentes normais e tangenciais.",
+    "explanation": "À medida que a articulação dobra, o ângulo do vetor de força tendinoso muda, alterando a proporção de força útil para rodar o osso (componente perpendicular) e de força de compressão articular.",
     "distractorAnalysis": [
-      "Está incorreta: Tanto a pressão como a tensão têm unidades de força por área (N/m² ou Pa), não Joules por segundo.",
-      "Está incorreta: A pressão atua em fluidos e superfícies reais; a tensão mecânica descreve o estado interno de sólidos e tecidos.",
-      "Está incorreta: Nenhum destes conceitos se confunde com a aceleração gravitacional (m/s²)."
+      "Está incorreta: As componentes de um vetor dependem das funções trigonométricas do ângulo, mudando quando o ângulo varia.",
+      "Está incorreta: A força não se anula, apenas redistribui as suas componentes geométricas ao longo do arco de movimento.",
+      "Está incorreta: Forças nucleares ocorrem apenas no interior de núcleos atómicos e não derivam de ângulos articulares."
     ],
-    "nursingApplication": "Fundamenta a avaliação das solicitações mecânicas sofridas pela cartilagem articular e discos vertebrais."
+    "nursingApplication": "Explica por que em certos ângulos articulares conseguimos fazer mais força do que noutros com o mesmo esforço muscular."
   },
   {
     "id": 1021,
     "topicId": 1,
-    "question": "Qual é a definição de Mecânica no contexto da Biofísica?",
+    "question": "Qual é o enunciado exato da 1ª Lei de Newton (Lei da Inércia) apresentado nos Slides 10 e 11?",
     "options": [
-      "O estudo da composição atómica dos radioisótopos emissores de radiação gama.",
-      "O ramo da física que estuda as relações entre os movimentos dos corpos materiais e as forças que lhes estão associadas.",
-      "A área que investiga exclusivamente a temperatura corporal e as trocas térmicas celulares.",
-      "O ramo que analisa a velocidade de reações enzimáticas em soluções tampão."
+      "A aceleração de um corpo é diretamente proporcional à força resultante e inversamente à sua massa.",
+      "Um corpo em repouso permanece em repouso e um corpo em movimento permanece em movimento, a menos que uma força externa atue sobre ele.",
+      "A toda a ação mecânica opõe-se sempre uma reação de menor intensidade e direção perpendicular.",
+      "A energia total de um sistema isolado dissipa-se invariavelmente sob a forma de calor."
     ],
     "correctIndex": 1,
-    "explanation": "A mecânica dedica-se ao estudo das forças e das alterações de movimento ou equilíbrio que elas provocam.",
+    "explanation": "Os Slides 10 e 11 definem a 1ª Lei de Newton (Lei da Inércia): 'Um corpo em repouso permanece em repouso e um corpo em movimento permanece em movimento, a menos que uma força externa atue sobre ele'.",
     "distractorAnalysis": [
-      "Está incorreta: A radiobiologia e física nuclear estudam os radioisótopos, não a mecânica.",
-      "Está incorreta: A termodinâmica estuda as trocas térmicas e temperatura, não a mecânica clássica.",
-      "Está incorreta: A cinética enzimática é do domínio da bioquímica, não da mecânica."
+      "Está incorreta: A relação aceleração-força-massa constitui a 2ª Lei de Newton (F = m · a).",
+      "Está incorreta: A ação e reação têm igual intensidade e mesma direção, conforme a 3ª Lei de Newton.",
+      "Está incorreta: A conservação ou dissipação de energia é o princípio da termodinâmica, não a Lei da Inércia."
     ],
-    "nursingApplication": "Permite analisar as forças e movimentos envolvidos no transporte de equipamentos hospitalares."
+    "nursingApplication": "Fundamenta o uso de cintos de segurança no transporte de doentes em cadeiras de rodas e ambulâncias."
   },
   {
     "id": 1022,
     "topicId": 1,
-    "question": "O que é uma Força na física clássica?",
+    "question": "Como explicam os slides o conceito de 'Inércia' em palavras simples (Slide 12)?",
     "options": [
-      "Uma grandeza puramente escalar expressa em quilogramas que quantifica a quantidade de matéria.",
-      "A energia potencial estática acumulada no vácuo entre dois átomos em repouso térmico.",
-      "Uma interação vetorial mútua entre corpos capaz de alterar o seu estado de movimento ou de produzir deformação mecânica.",
-      "A taxa de variação da temperatura de um sólido quando sujeito a radiação ultravioleta."
+      "Os corpos tendem espontaneamente a perder massa quando entram em movimento acelerado.",
+      "Todos os materiais rígidos têm capacidade de atrair corpos vizinhos através de campos magnéticos.",
+      "Os corpos têm resistência à mudança do seu estado de movimento; é necessária uma força para o alterar.",
+      "A inércia é a velocidade instantânea medida por um velocímetro num dado momento."
     ],
     "correctIndex": 2,
-    "explanation": "A força é uma ação vetorial entre corpos que pode acelerar, travar ou deformar uma estrutura material.",
+    "explanation": "O Slide 12 resume: 'Por outras palavras: Os corpos têm resistência à mudança do seu estado de movimento (inércia). É necessária uma força para o alterar!'.",
     "distractorAnalysis": [
-      "Está incorreta: A força é uma grandeza vetorial (módulo, direção e sentido), não sendo uma grandeza escalar.",
-      "Está incorreta: A energia potencial é uma forma de energia medida em Joules, não uma força em Newtons.",
-      "Está incorreta: A taxa de variação de temperatura é uma grandeza térmica (°C/s), sem relação com forças mecânicas."
+      "Está incorreta: A inércia não provoca perda de massa; a massa é a medida quantitativa da própria inércia.",
+      "Está incorreta: A atração magnética é propriedade de campos eletromagnéticos, distinta da inércia mecânica universal.",
+      "Está incorreta: Velocidade instantânea é uma grandeza cinemática, ao passo que inércia é a resistência à variação do movimento."
     ],
-    "nursingApplication": "Compreender a força é a base para quantificar o esforço muscular ao empurrar um equipamento."
+    "nursingApplication": "Mostra porque é necessário aplicar uma força inicial considerável para colocar em movimento uma cama hospitalar pesada."
   },
   {
     "id": 1023,
     "topicId": 1,
-    "question": "Qual é a unidade padrão de Força no Sistema Internacional (SI)?",
+    "question": "O que é estritamente necessário para alterar a velocidade (em módulo ou direção) de um corpo material (Slide 12)?",
     "options": [
-      "Quilograma (kg), que mede a massa inercial de um corpo.",
-      "Joule (J), correspondente à energia mecânica e ao trabalho.",
-      "Pascal (Pa), que quantifica a pressão mecânica por unidade de área.",
-      "Newton (N), equivalente a 1 kg·m/s²."
+      "Manter o corpo em equilíbrio mecânico com força resultante nula.",
+      "Apenas aguardar a passagem natural do tempo no referencial.",
+      "Isolar termicamente o corpo de todas as fontes de radiação solar.",
+      "A atuação de uma força externa resultante que atue sobre ele."
     ],
     "correctIndex": 3,
-    "explanation": "No SI, a força mede-se em Newtons (N), sendo 1 N a força que imprime a 1 kg a aceleração de 1 m/s².",
+    "explanation": "Pela 1ª Lei de Newton, na ausência de forças externas resultantes, o estado de movimento permanece constante. Para alterar a velocidade, é indispensável a atuação de uma força resultante externa.",
     "distractorAnalysis": [
-      "Está incorreta: O quilograma (kg) é a unidade fundamental de massa inercial, não de força.",
-      "Está incorreta: O Joule (J) é a unidade de energia e trabalho mecânico (N·m), não de força pura.",
-      "Está incorreta: O Pascal (Pa) é a unidade de pressão (N/m²), representando força distribuída por área."
+      "Está incorreta: Com força resultante nula o corpo permanece em MRU ou repouso, não alterando a sua velocidade.",
+      "Está incorreta: O tempo decorre sem que o corpo mude de velocidade se nenhuma força atuar sobre ele.",
+      "Está incorreta: O isolamento térmico impede trocas de calor, mas não induz acelerações mecânicas."
     ],
-    "nursingApplication": "Distingue a força aplicada em Newtons da massa transportada em quilogramas."
+    "nursingApplication": "Explica por que travar uma cadeira de rodas requer a força de atrito exercida pelos travões sobre as rodas."
   },
   {
     "id": 1024,
     "topicId": 1,
-    "question": "Qual o instrumento físico utilizado para medir a intensidade de uma força?",
+    "question": "Se um carrinho de penso for empurrado num corredor plano ideal sem qualquer atrito ou resistência do ar, o que prevê a 1ª Lei de Newton?",
     "options": [
-      "Dinamómetro.",
-      "Barómetro.",
-      "Termómetro.",
-      "Cronómetro."
+      "Que continuaria em movimento retilíneo uniforme com velocidade constante indefinidamente.",
+      "Que pararia espontaneamente após alguns metros por cansaço inercial.",
+      "Que começaria a acelerar cada vez mais depressa sem qualquer força aplicada.",
+      "Que inverteria imediatamente o sentido de marcha de forma espontânea."
     ],
     "correctIndex": 0,
-    "explanation": "O dinamómetro mede forças através da deformação elástica calibrada de uma mola interna (Lei de Hooke).",
+    "explanation": "Sem forças contrárias de atrito ou resistência para desacelerar o corpo, a 1ª Lei afirma que este continuará indefinidamente em movimento retilíneo uniforme (velocidade constante).",
     "distractorAnalysis": [
-      "Está incorreta: O barómetro mede a pressão atmosférica em fluidos, não forças mecânicas isoladas.",
-      "Está incorreta: O termómetro é o instrumento de medição da temperatura absoluta ou relativa.",
-      "Está incorreta: O cronómetro mede intervalos de tempo decorridos."
+      "Está incorreta: A matéria não tem 'cansaço'; na física real os objetos param devido à força de atrito, não espontaneamente.",
+      "Está incorreta: Acelerar exigiria uma força resultante no sentido do movimento (F = m · a), ausente na situação descrita.",
+      "Está incorreta: Inverter o sentido requer aplicação de força externa contrária."
     ],
-    "nursingApplication": "Dinamómetros são usados em ergonomia hospitalar para medir a força de tração ao puxar camas."
+    "nursingApplication": "Ajuda a perceber que as macas no mundo real desaceleram devido ao atrito do pavimento e dos eixos das rodas."
   },
   {
     "id": 1025,
     "topicId": 1,
-    "question": "Quais são os quatro elementos que definem completamente uma grandeza vetorial como a Força?",
+    "question": "Por que razão uma cadeira de rodas parada num piso horizontal nivelado não começa a mover-se sozinha?",
     "options": [
-      "Apenas o seu valor numérico e a unidade física associada.",
-      "Módulo (intensidade), direção, sentido e ponto de aplicação.",
-      "Massa, densidade, volume e estado de agregação da matéria.",
-      "Velocidade angular, frequência e período de oscilação."
+      "Porque a força nuclear forte a cola permanentemente ao pavimento da enfermaria.",
+      "Porque possui inércia e, estando em repouso, permanece em repouso a menos que uma força externa atue.",
+      "Porque a sua massa inercial é convertida em energia gravitacional que a imobiliza.",
+      "Porque a pressão atmosférica exerce uma força descendente infinita sobre o assento."
     ],
     "correctIndex": 1,
-    "explanation": "Uma grandeza vetorial exige intensidade numérica, reta suporte (direção), orientação (sentido) e ponto de atuação.",
+    "explanation": "Em repouso e com forças resultantes equilibradas (peso e normal), a inércia do corpo mantém-no em repouso até que alguém lhe aplique uma força externa.",
     "distractorAnalysis": [
-      "Está incorreta: Valor numérico e unidade definem grandezas puramente escalares (como massa ou tempo).",
-      "Está incorreta: Massa, volume e densidade são propriedades da matéria, não componentes de um vetor.",
-      "Está incorreta: Velocidade angular e frequência são grandezas cinemáticas de rotação."
+      "Está incorreta: A força nuclear forte atua unicamente a distâncias subatómicas no interior do núcleo dos átomos.",
+      "Está incorreta: Não há conversão de massa em energia nas situações de repouso mecânico da vida quotidiana.",
+      "Está incorreta: A pressão atmosférica atua uniformemente em todas as direções com valor finito (~1 atm), sem imobilizar objetos."
     ],
-    "nursingApplication": "A direção e o sentido ao puxar um equipamento determinam a trajetória do movimento resultante."
+    "nursingApplication": "Garante a estabilidade previsível dos equipamentos parados quando travados adequadamente."
   },
   {
     "id": 1026,
     "topicId": 1,
-    "question": "Considerando g = 9,8 m/s², qual é o Peso de um equipamento que possui uma massa de 15 kg?",
+    "question": "Qual cientista é citado no Slide 9 com a célebre frase: 'Se vi mais longe, foi por estar de pé sobre os ombros de gigantes'?",
     "options": [
-      "15 N.",
-      "1.5 N.",
-      "147.0 N.",
-      "147.0 kg."
+      "Arquimedes.",
+      "Robert Hooke.",
+      "Isaac Newton.",
+      "Euclides de Alexandria."
     ],
     "correctIndex": 2,
-    "explanation": "O peso calcula-se pela relação P = m · g: 15 kg · 9,8 m/s² = 147.0 N.",
+    "explanation": "O Slide 9 introduz as Leis do Movimento com a célebre citação de Isaac Newton: 'Se vi mais longe, foi por estar de pé sobre os ombros de gigantes'.",
     "distractorAnalysis": [
-      "Está incorreta: 15 N confunde a massa numérica com a força peso sem multiplicar pela aceleração da gravidade.",
-      "Está incorreta: Dividir a massa pela gravidade é uma operação incorreta para obter o peso.",
-      "Está incorreta: O valor está certo, mas o peso é força em Newtons (N), não em quilogramas (kg)."
+      "Está incorreta: Arquimedes é citado no Tópico 1 na secção das alavancas ('século III a.C.').",
+      "Está incorreta: Robert Hooke é o cientista associado à Lei da Elasticidade ('Hooke, 1660').",
+      "Está incorreta: Euclides é associado aos modelos teóricos indeformáveis da geometria e reologia."
     ],
-    "nursingApplication": "Permite calcular o esforço vertical de sustentação suportado pelas rodas de um equipamento."
+    "nursingApplication": "Contextualiza historicamente a evolução da física clássica aplicada às ciências da vida e saúde."
   },
   {
     "id": 1027,
     "topicId": 1,
-    "question": "Uma força perpendicular de 110 N atua sobre uma superfície plana de 0,25 m². Qual é a pressão exercida?",
+    "question": "Qual é a grandeza física que serve de medida quantitativa da inércia de um corpo material nos slides?",
     "options": [
-      "27 Pa (Pascal).",
-      "110 Pa (Pascal).",
-      "440 N.",
-      "440 Pa (Pascal)."
+      "O volume ocupado no espaço.",
+      "A temperatura termodinâmica.",
+      "A velocidade angular de rotação.",
+      "A massa do corpo (m)."
     ],
     "correctIndex": 3,
-    "explanation": "A pressão mecânica é a razão p = F / A: 110 N / 0,25 m² = 440 Pa.",
+    "explanation": "A massa é a propriedade intrínseca que quantifica a inércia: quanto maior for a massa de um corpo, maior é a sua resistência a alterações do seu estado de repouso ou movimento.",
     "distractorAnalysis": [
-      "Está incorreta: Multiplicar a força pela área (F · A) não fornece a pressão mecânica.",
-      "Está incorreta: 110 Pa ignora a área sobre a qual a força está distribuída.",
-      "Está incorreta: A pressão mede-se em Pascal (Pa) ou N/m², e não em Newtons (N)."
+      "Está incorreta: Dois corpos com o mesmo volume podem ter densidades e massas completamente diferentes, logo inércias distintas.",
+      "Está incorreta: A temperatura indica o grau de agitação molecular, não quantificando a inércia de translação do corpo.",
+      "Está incorreta: A velocidade angular descreve o movimento rotativo, não sendo a medida intrínseca da inércia de matéria."
     ],
-    "nursingApplication": "Demonstra que alargar a área de apoio reduz a pressão exercida sobre o piso hospitalar."
+    "nursingApplication": "Explica por que doentes com maior massa corporal exigem maior contenção e apoio em manobras de transferência."
   },
   {
     "id": 1028,
     "topicId": 1,
-    "question": "Qual das seguintes grandezas físicas é estritamente ESCALAR?",
+    "question": "Um utente está confortavelmente deitado no seu leito hospitalar. Qual é a força resultante que atua sobre o seu corpo?",
     "options": [
-      "Massa corporal inercial.",
-      "Força peso.",
-      "Força de atrito estático.",
-      "Momento de uma força (torque)."
+      "Zero Newtons (Fr = 0 N), pois o corpo está em equilíbrio estático de repouso.",
+      "Igual ao peso do utente multiplicado pela velocidade da luz.",
+      "Infinita, porque a gravidade terrestre nunca cessa de atuar.",
+      "Igual à força muscular dos membros superiores do profissional."
     ],
     "correctIndex": 0,
-    "explanation": "A massa é puramente escalar: fica completamente definida pelo valor numérico e pela unidade (kg).",
+    "explanation": "Estando em repouso estático, a aceleração é nula e a soma vetorial de todas as forças que nele atuam (peso do doente e força normal exercida pelo colchão) é nula: Fr = 0 N.",
     "distractorAnalysis": [
-      "Está incorreta: A força peso é um vetor orientado verticalmente para o centro da Terra.",
-      "Está incorreta: A força de atrito é um vetor com direção tangencial à superfície e sentido oposto ao movimento relativo.",
-      "Está incorreta: O momento de uma força é uma grandeza vetorial que quantifica a capacidade de rotação."
+      "Está incorreta: Multiplicar peso pela velocidade da luz não tem qualquer significado físico em mecânica clássica.",
+      "Está incorreta: A força gravítica tem valor finito bem determinado (P = m · g) e é equilibrada pela força normal do colchão.",
+      "Está incorreta: Se ninguém estiver a tocar no utente, a força muscular de terceiros não atua sobre o corpo dele."
     ],
-    "nursingApplication": "Ao registar a massa de um utente numa balança, afere-se uma grandeza escalar em kg."
+    "nursingApplication": "Compreender o equilíbrio estático no leito é a base para a prevenção de desalinhamentos posturais."
   },
   {
     "id": 1029,
     "topicId": 1,
-    "question": "Em física vetorial, qual é a distinção rigorosa entre 'Direção' e 'Sentido' de uma força?",
+    "question": "Ao travar bruscamente um veículo, os passageiros desprovidos de cinto são projetados para a frente. Como se explica isto pela 1ª Lei de Newton?",
     "options": [
-      "A Direção indica a unidade no SI e o Sentido indica se a grandeza é escalar ou vetorial.",
-      "A Direção é a reta geométrica de suporte ao longo da qual a força atua, enquanto o Sentido é a orientação do vetor nessa reta.",
-      "Direção e Sentido são termos rigorosamente sinónimos na mecânica clássica de Newton.",
-      "A Direção mede o módulo em Newtons e o Sentido mede o tempo de aplicação em segundos."
+      "Os passageiros sofrem uma força mística que os atrai para o vidro da frente.",
+      "Por inércia, o corpo dos passageiros mantém a velocidade que trazia até que uma força externa o pare.",
+      "A gravidade terrestre deixa de atuar temporariamente durante o ato de travar.",
+      "O veículo acelera subitamente para a frente empurrando as pessoas."
     ],
     "correctIndex": 1,
-    "explanation": "A direção é a linha de ação geométrica (ex.: horizontal, vertical); o sentido é a orientação na linha (ex.: para a direita, para cima).",
+    "explanation": "Quando o veículo trava, as rodas travam o chassis; contudo, o corpo do passageiro, por inércia (1ª Lei), continua o seu movimento com a velocidade prévia até colidir com algum obstáculo ou ser retido pelo cinto.",
     "distractorAnalysis": [
-      "Está incorreta: A unidade e a natureza escalar/vetorial não definem direção e sentido de um vetor.",
-      "Está incorreta: Direção e sentido são conceitos geometricamente distintos e independentes.",
-      "Está incorreta: O módulo exprime a intensidade numérica e o tempo mede a duração temporal."
+      "Está incorreta: Não há forças místicas; trata-se da conservação do estado de movimento pela inércia descrita por Newton.",
+      "Está incorreta: A aceleração da gravidade mantém-se constante (g ≈ 9,8 m/s²) atuando na vertical.",
+      "Está incorreta: Travar significa desacelerar o veículo, não acelerá-lo para a frente."
     ],
-    "nursingApplication": "Essencial para aplicar forças na direção e sentido corretos ao posicionar equipamentos móveis."
+    "nursingApplication": "Reforça a justificação científica inegável do uso de cintos de segurança no transporte sanitário."
   },
   {
     "id": 1030,
     "topicId": 1,
-    "question": "Qual é a diferença fundamental entre a grandeza Pressão e o conceito de Tensão Mecânica num tecido biológico?",
+    "question": "Para que um objeto em movimento altere a sua trajetória retilínea e faça uma curva, o que estabelece a 1ª Lei de Newton?",
     "options": [
-      "A Pressão mede-se em Newtons e a Tensão Mecânica mede-se exclusivamente em Joules por segundo.",
-      "A Pressão atua apenas no vácuo absoluto e a Tensão Mecânica atua exclusivamente no interior de gases ideais.",
-      "A Pressão é uma grandeza escalar de força perpendicular por área, enquanto a Tensão Mecânica é uma grandeza tensorial interna que inclui tração, compressão e cisalhamento.",
-      "Não existe qualquer diferença física, sendo termos idênticos para a aceleração da gravidade."
+      "Não é necessária nenhuma força, pois os corpos curvam espontaneamente no vácuo.",
+      "Apenas que a sua massa diminua para metade durante a rotação.",
+      "É indispensável a atuação de uma força externa que mude a direção do vetor velocidade.",
+      "Basta que o objeto mantenha aceleração rigorosamente nula durante toda a curva."
     ],
     "correctIndex": 2,
-    "explanation": "A pressão mede a força compressiva normal por unidade de área; a tensão mecânica interna decompõe-se em componentes normais e tangenciais.",
+    "explanation": "O movimento natural livre de forças é retilíneo e uniforme. Mudar a direção do vetor velocidade (fazer curva) requer aceleração e, portanto, uma força externa não nula a atuar sobre o corpo.",
     "distractorAnalysis": [
-      "Está incorreta: Tanto a pressão como a tensão têm unidades de força por área (N/m² ou Pa), não Joules por segundo.",
-      "Está incorreta: A pressão atua em fluidos e superfícies reais; a tensão mecânica descreve o estado interno de sólidos e tecidos.",
-      "Está incorreta: Nenhum destes conceitos se confunde com a aceleração gravitacional (m/s²)."
+      "Está incorreta: Objetos livres de forças seguem em linha reta; curvar exige sempre a atuação de forças.",
+      "Está incorreta: A massa não varia ao fazer uma curva numa trajetória mecânica comum.",
+      "Está incorreta: Ao curvar a velocidade muda de direção, logo há aceleração centrípeta e a aceleração não pode ser nula."
     ],
-    "nursingApplication": "Fundamenta a avaliação das solicitações mecânicas sofridas pela cartilagem articular e discos vertebrais."
+    "nursingApplication": "Explica por que conduzir uma maca numa curva num corredor hospitalar exige puxar lateralmente o equipamento."
   },
   {
     "id": 1031,
     "topicId": 1,
-    "question": "Qual é a definição de Mecânica no contexto da Biofísica?",
+    "question": "Qual é a fórmula fundamental da 2ª Lei de Newton apresentada nos Slides 13 a 16?",
     "options": [
-      "O estudo da composição atómica dos radioisótopos emissores de radiação gama.",
-      "A área que investiga exclusivamente a temperatura corporal e as trocas térmicas celulares.",
-      "O ramo que analisa a velocidade de reações enzimáticas em soluções tampão.",
-      "O ramo da física que estuda as relações entre os movimentos dos corpos materiais e as forças que lhes estão associadas."
+      "P = m / g",
+      "M = F / b",
+      "p = F · A",
+      "F = m · a"
     ],
     "correctIndex": 3,
-    "explanation": "A mecânica dedica-se ao estudo das forças e das alterações de movimento ou equilíbrio que elas provocam.",
+    "explanation": "A expressão clássica da 2ª Lei de Newton (Lei fundamental da dinâmica) nos slides é F = m · a (força igual a massa multiplicada pela aceleração).",
     "distractorAnalysis": [
-      "Está incorreta: A radiobiologia e física nuclear estudam os radioisótopos, não a mecânica.",
-      "Está incorreta: A termodinâmica estuda as trocas térmicas e temperatura, não a mecânica clássica.",
-      "Está incorreta: A cinética enzimática é do domínio da bioquímica, não da mecânica."
+      "Está incorreta: A fórmula do peso é P = m · g (multiplicação, não divisão).",
+      "Está incorreta: A fórmula do momento é M = F · b (multiplicação, não divisão).",
+      "Está incorreta: A fórmula da pressão é p = F / A (divisão de força por área, não multiplicação)."
     ],
-    "nursingApplication": "Permite analisar as forças e movimentos envolvidos no transporte de equipamentos hospitalares."
+    "nursingApplication": "Permite calcular a força necessária para acelerar ou desacelerar equipamentos clínicos em movimento."
   },
   {
     "id": 1032,
     "topicId": 1,
-    "question": "O que é uma Força na física clássica?",
+    "question": "Qual é o enunciado formal da 2ª Lei de Newton apresentado no Slide 13?",
     "options": [
-      "Uma interação vetorial mútua entre corpos capaz de alterar o seu estado de movimento ou de produzir deformação mecânica.",
-      "Uma grandeza puramente escalar expressa em quilogramas que quantifica a quantidade de matéria.",
-      "A energia potencial estática acumulada no vácuo entre dois átomos em repouso térmico.",
-      "A taxa de variação da temperatura de um sólido quando sujeito a radiação ultravioleta."
+      "A força resultante que atua sobre um corpo é diretamente proporcional à aceleração que ele adquire e à sua massa.",
+      "A energia de um corpo depende exclusivamente da temperatura a que ele se encontra exposto.",
+      "Dois corpos em repouso atraem-se com força inversamente proporcional ao cubo das suas massas.",
+      "A força de contacto entre superfícies é sempre perpendicular à linha de ação do tendão."
     ],
     "correctIndex": 0,
-    "explanation": "A força é uma ação vetorial entre corpos que pode acelerar, travar ou deformar uma estrutura material.",
+    "explanation": "O Slide 13 enuncia: 'A força resultante que atua sobre um corpo é diretamente proporcional à aceleração que ele adquire e à sua massa'.",
     "distractorAnalysis": [
-      "Está incorreta: A força é uma grandeza vetorial (módulo, direção e sentido), não sendo uma grandeza escalar.",
-      "Está incorreta: A energia potencial é uma forma de energia medida em Joules, não uma força em Newtons.",
-      "Está incorreta: A taxa de variação de temperatura é uma grandeza térmica (°C/s), sem relação com forças mecânicas."
+      "Está incorreta: Esta afirmação refere-se à energia térmica e calorimetria, não à Lei Fundamental da Dinâmica de Newton.",
+      "Está incorreta: A lei da gravitação universal é proporcional ao produto das massas e inversa ao quadrado da distância, não ao cubo.",
+      "Está incorreta: A força normal é perpendicular à superfície de contacto, não se relacionando com o enunciado da 2ª Lei."
     ],
-    "nursingApplication": "Compreender a força é a base para quantificar o esforço muscular ao empurrar um equipamento."
+    "nursingApplication": "Compreender a dinâmica do movimento permite quantificar o impacto de arranques e travagens bruscas no doente."
   },
   {
     "id": 1033,
     "topicId": 1,
-    "question": "Qual é a unidade padrão de Força no Sistema Internacional (SI)?",
+    "question": "A partir da fórmula F = m · a, como se expressa algebricamente a aceleração 'a' (Slide 15)?",
     "options": [
-      "Quilograma (kg), que mede a massa inercial de um corpo.",
-      "Newton (N), equivalente a 1 kg·m/s².",
-      "Joule (J), correspondente à energia mecânica e ao trabalho.",
-      "Pascal (Pa), que quantifica a pressão mecânica por unidade de área."
+      "a = F · m",
+      "a = F / m",
+      "a = m / F",
+      "a = F + m"
     ],
     "correctIndex": 1,
-    "explanation": "No SI, a força mede-se em Newtons (N), sendo 1 N a força que imprime a 1 kg a aceleração de 1 m/s².",
+    "explanation": "O Slide 15 deduz matematicamente as formas equivalentes da 2ª Lei: isolando a aceleração, obtém-se a = F / m.",
     "distractorAnalysis": [
-      "Está incorreta: O quilograma (kg) é a unidade fundamental de massa inercial, não de força.",
-      "Está incorreta: O Joule (J) é a unidade de energia e trabalho mecânico (N·m), não de força pura.",
-      "Está incorreta: O Pascal (Pa) é a unidade de pressão (N/m²), representando força distribuída por área."
+      "Está incorreta: Multiplicar F por m daria uma grandeza com unidades de N·kg, o que é dimensionalmente incorreto para aceleração.",
+      "Está incorreta: Inverter a fração para m / F originaria s²/m em vez de m/s², violando a análise dimensional.",
+      "Está incorreta: Não se somam grandezas físicas com dimensões diferentes (Força em N e Massa em kg)."
     ],
-    "nursingApplication": "Distingue a força aplicada em Newtons da massa transportada em quilogramas."
+    "nursingApplication": "Mostra que para uma mesma força aplicada, quanto maior for a massa m, menor será a aceleração adquirida a."
   },
   {
     "id": 1034,
     "topicId": 1,
-    "question": "Qual o instrumento físico utilizado para medir a intensidade de uma força?",
+    "question": "A partir da fórmula F = m · a, como se expressa algebricamente a massa 'm' de um corpo (Slide 15)?",
     "options": [
-      "Barómetro.",
-      "Termómetro.",
-      "Dinamómetro.",
-      "Cronómetro."
+      "m = F · a",
+      "m = a / F",
+      "m = F / a",
+      "m = F - a"
     ],
     "correctIndex": 2,
-    "explanation": "O dinamómetro mede forças através da deformação elástica calibrada de uma mola interna (Lei de Hooke).",
+    "explanation": "O Slide 15 estabelece que, isolando a massa na equação fundamental da dinâmica, obtém-se m = F / a.",
     "distractorAnalysis": [
-      "Está incorreta: O barómetro mede a pressão atmosférica em fluidos, não forças mecânicas isoladas.",
-      "Está incorreta: O termómetro é o instrumento de medição da temperatura absoluta ou relativa.",
-      "Está incorreta: O cronómetro mede intervalos de tempo decorridos."
+      "Está incorreta: Multiplicar F por a daria unidades de N·m/s², dimensionalmente inconsistente com quilogramas (kg).",
+      "Está incorreta: Dividir aceleração por força (a / F) daria o inverso da massa (1/m), não a massa.",
+      "Está incorreta: Subtrair grandezas com unidades diferentes (Newtons menos m/s²) é uma operação inválida na física."
     ],
-    "nursingApplication": "Dinamómetros são usados em ergonomia hospitalar para medir a força de tração ao puxar camas."
+    "nursingApplication": "Permite deduzir a massa inercial de um corpo a partir da medição da força e da aceleração produzida."
   },
   {
     "id": 1035,
     "topicId": 1,
-    "question": "Quais são os quatro elementos que definem completamente uma grandeza vetorial como a Força?",
+    "question": "Qual é a definição de 'Utente bariátrico' apresentada no Slide 14 para ilustrar a aplicação prática da 2ª Lei de Newton?",
     "options": [
-      "Apenas o seu valor numérico e a unidade física associada.",
-      "Massa, densidade, volume e estado de agregação da matéria.",
-      "Velocidade angular, frequência e período de oscilação.",
-      "Módulo (intensidade), direção, sentido e ponto de aplicação."
+      "Utente com desnutrição calórica grave e baixa densidade óssea.",
+      "Utente sujeito a tração ortopédica contínua nos membros inferiores.",
+      "Utente que utiliza cadeira de rodas com rodas de diâmetro reduzido.",
+      "Utente com obesidade severa."
     ],
     "correctIndex": 3,
-    "explanation": "Uma grandeza vetorial exige intensidade numérica, reta suporte (direção), orientação (sentido) e ponto de atuação.",
+    "explanation": "No Slide 14, o apontamento de aplicação prática define taxativamente: 'Utente bariátrico = Utente com obesidade severa'.",
     "distractorAnalysis": [
-      "Está incorreta: Valor numérico e unidade definem grandezas puramente escalares (como massa ou tempo).",
-      "Está incorreta: Massa, volume e densidade são propriedades da matéria, não componentes de um vetor.",
-      "Está incorreta: Velocidade angular e frequência são grandezas cinemáticas de rotação."
+      "Está incorreta: Desnutrição calórica grave corresponde a baixo peso ou caquexia, o oposto de obesidade severa.",
+      "Está incorreta: Tração ortopédica é um procedimento terapêutico mecânico, não uma definição de utente bariátrico.",
+      "Está incorreta: O tipo de cadeira de rodas é um dispositivo de apoio e não a definição do quadro clínico do utente."
     ],
-    "nursingApplication": "A direção e o sentido ao puxar um equipamento determinam a trajetória do movimento resultante."
+    "nursingApplication": "Contextualiza as necessidades especiais de equipamentos de transferência reforçados e apoio de mais elementos da equipa."
   },
   {
     "id": 1036,
     "topicId": 1,
-    "question": "Considerando g = 9,8 m/s², qual é o Peso de um equipamento que possui uma massa de 35 kg?",
+    "question": "Se a massa de um utente for o dobro da de outro, que força é necessária aplicar à sua cadeira para imprimir a mesma aceleração (Slide 16)?",
     "options": [
-      "343.0 N.",
-      "35 N.",
-      "3.6 N.",
-      "343.0 kg."
+      "O dobro da força, porque F é diretamente proporcional à massa m para a mesma aceleração.",
+      "A mesma força de antes, porque a aceleração independe da massa do corpo.",
+      "Metade da força, porque corpos pesados movem-se mais facilmente com menos esforço.",
+      "Quatro vezes menos força, devido à compensação pelo aumento da inércia."
     ],
     "correctIndex": 0,
-    "explanation": "O peso calcula-se pela relação P = m · g: 35 kg · 9,8 m/s² = 343.0 N.",
+    "explanation": "Pela 2ª Lei (F = m · a), com a constante, duplicando a massa (2m) é indispensável duplicar a força (2F): 'Essa força será tanto maior quanto maior for a massa do corpo' (Slide 16).",
     "distractorAnalysis": [
-      "Está incorreta: 35 N confunde a massa numérica com a força peso sem multiplicar pela aceleração da gravidade.",
-      "Está incorreta: Dividir a massa pela gravidade é uma operação incorreta para obter o peso.",
-      "Está incorreta: O valor está certo, mas o peso é força em Newtons (N), não em quilogramas (kg)."
+      "Está incorreta: A aceleração depende diretamente da massa; com a mesma força, o corpo com dobro da massa teria metade da aceleração.",
+      "Está incorreta: Corpos pesados exigem mais força, nunca menos, para acelerar à mesma taxa.",
+      "Está incorreta: Maior inércia opõe maior resistência à aceleração, exigindo mais força e nunca menos."
     ],
-    "nursingApplication": "Permite calcular o esforço vertical de sustentação suportado pelas rodas de um equipamento."
+    "nursingApplication": "Fundamenta a regra ergonómica de mobilizar doentes muito pesados com a ajuda de mais profissionais ou guincho mecânico."
   },
   {
     "id": 1037,
     "topicId": 1,
-    "question": "Uma força perpendicular de 110 N atua sobre uma superfície plana de 0,25 m². Qual é a pressão exercida?",
+    "question": "Um enfermeiro aplica uma força resultante de 100 N a um carrinho vazio de 10 kg e depois a mesma força a um carrinho carregado de 50 kg. Como se comparam as acelerações?",
     "options": [
-      "27 Pa (Pascal).",
-      "440 Pa (Pascal).",
-      "110 Pa (Pascal).",
-      "440 N."
+      "Ambos adquirem exatamente a mesma aceleração de 10 m/s².",
+      "O carrinho vazio adquire 10 m/s² e o carrinho carregado adquire 2 m/s² (5 vezes menor).",
+      "O carrinho carregado adquire uma aceleração 5 vezes superior à do carrinho vazio.",
+      "Nenhum dos carrinhos adquire aceleração porque a força é inferior ao peso da terra."
     ],
     "correctIndex": 1,
-    "explanation": "A pressão mecânica é a razão p = F / A: 110 N / 0,25 m² = 440 Pa.",
+    "explanation": "Usando a = F / m: no vazio a = 100 / 10 = 10 m/s²; no carregado a = 100 / 50 = 2 m/s². A aceleração do carrinho pesado é 5 vezes menor para a mesma força.",
     "distractorAnalysis": [
-      "Está incorreta: Multiplicar a força pela área (F · A) não fornece a pressão mecânica.",
-      "Está incorreta: 110 Pa ignora a área sobre a qual a força está distribuída.",
-      "Está incorreta: A pressão mede-se em Pascal (Pa) ou N/m², e não em Newtons (N)."
+      "Está incorreta: A aceleração não pode ser igual quando as massas são diferentes e a força é a mesma (a = F/m).",
+      "Está incorreta: Maior massa produz menor aceleração (proporcionalidade inversa entre a e m), nunca maior.",
+      "Está incorreta: Uma força resultante não nula de 100 N produz inevitavelmente aceleração segundo a 2ª Lei de Newton."
     ],
-    "nursingApplication": "Demonstra que alargar a área de apoio reduz a pressão exercida sobre o piso hospitalar."
+    "nursingApplication": "Alerta o profissional para controlar com maior cautela a inércia e travagem de equipamentos hospitalares pesados."
   },
   {
     "id": 1038,
     "topicId": 1,
-    "question": "Qual das seguintes grandezas físicas é estritamente ESCALAR?",
+    "question": "Nos slides da aula, como é explicada em palavras simples a 2ª Lei de Newton (Slide 16)?",
     "options": [
-      "Força peso.",
-      "Força de atrito estático.",
-      "Massa corporal inercial.",
-      "Momento de uma força (torque)."
+      "'Para manter um corpo em movimento, a força resultante tem de ser sempre crescente.'",
+      "'A massa de um corpo diminui proporcionalmente à distância percorrida no tempo.'",
+      "'Para acelerar um corpo, é necessário aplicar-lhe uma força. Essa força será tanto maior quanto maior for a massa do corpo.'",
+      "'Todos os corpos aceleram espontaneamente a 9,8 m/s² na horizontal sem intervenção externa.'"
     ],
     "correctIndex": 2,
-    "explanation": "A massa é puramente escalar: fica completamente definida pelo valor numérico e pela unidade (kg).",
+    "explanation": "O Slide 16 resume: 'Por outras palavras: Para acelerar um corpo, é necessário aplicar-lhe uma força. Essa força será tanto maior quanto maior for a massa do corpo'.",
     "distractorAnalysis": [
-      "Está incorreta: A força peso é um vetor orientado verticalmente para o centro da Terra.",
-      "Está incorreta: A força de atrito é um vetor com direção tangencial à superfície e sentido oposto ao movimento relativo.",
-      "Está incorreta: O momento de uma força é uma grandeza vetorial que quantifica a capacidade de rotação."
+      "Está incorreta: Manter o movimento em velocidade constante requer força resultante nula (MRU), não crescente.",
+      "Está incorreta: A massa é invariável ao longo do percurso em situações de mecânica clássica.",
+      "Está incorreta: A aceleração de 9,8 m/s² é a da gravidade vertical na Terra, não uma aceleração horizontal espontânea."
     ],
-    "nursingApplication": "Ao registar a massa de um utente numa balança, afere-se uma grandeza escalar em kg."
+    "nursingApplication": "Explica a relação intuitiva entre peso/massa de materiais a transportar e o esforço físico muscular despendido."
   },
   {
     "id": 1039,
     "topicId": 1,
-    "question": "Em física vetorial, qual é a distinção rigorosa entre 'Direção' e 'Sentido' de uma força?",
+    "question": "Se uma força resultante horizontal de 40 N atuar sobre uma cadeira com massa de 8 kg (desprezando atritos), qual é a aceleração produzida?",
     "options": [
-      "A Direção indica a unidade no SI e o Sentido indica se a grandeza é escalar ou vetorial.",
-      "Direção e Sentido são termos rigorosamente sinónimos na mecânica clássica de Newton.",
-      "A Direção mede o módulo em Newtons e o Sentido mede o tempo de aplicação em segundos.",
-      "A Direção é a reta geométrica de suporte ao longo da qual a força atua, enquanto o Sentido é a orientação do vetor nessa reta."
+      "320 m/s²",
+      "0,2 m/s²",
+      "48 m/s²",
+      "5 m/s²"
     ],
     "correctIndex": 3,
-    "explanation": "A direção é a linha de ação geométrica (ex.: horizontal, vertical); o sentido é a orientação na linha (ex.: para a direita, para cima).",
+    "explanation": "Aplicando a = F / m: a = 40 N / 8 kg = 5 m/s².",
     "distractorAnalysis": [
-      "Está incorreta: A unidade e a natureza escalar/vetorial não definem direção e sentido de um vetor.",
-      "Está incorreta: Direção e sentido são conceitos geometricamente distintos e independentes.",
-      "Está incorreta: O módulo exprime a intensidade numérica e o tempo mede a duração temporal."
+      "Está incorreta: 320 m/s² resultaria de multiplicar 40 por 8 (F · m), violando a fórmula a = F / m.",
+      "Está incorreta: 0,2 m/s² resultaria da inversão m / F (8 / 40), o que está incorreto.",
+      "Está incorreta: 48 m/s² resultaria de somar F com m (40 + 8), operação matematicamente errada."
     ],
-    "nursingApplication": "Essencial para aplicar forças na direção e sentido corretos ao posicionar equipamentos móveis."
+    "nursingApplication": "Permite quantificar o comportamento cinemático e a segurança de equipamentos móveis na enfermaria."
   },
   {
     "id": 1040,
     "topicId": 1,
-    "question": "Qual é a diferença fundamental entre a grandeza Pressão e o conceito de Tensão Mecânica num tecido biológico?",
+    "question": "Na prática de enfermagem, por que razão a mobilização de um utente bariátrico exige técnicas e meios auxiliares especiais?",
     "options": [
-      "A Pressão é uma grandeza escalar de força perpendicular por área, enquanto a Tensão Mecânica é uma grandeza tensorial interna que inclui tração, compressão e cisalhamento.",
-      "A Pressão mede-se em Newtons e a Tensão Mecânica mede-se exclusivamente em Joules por segundo.",
-      "A Pressão atua apenas no vácuo absoluto e a Tensão Mecânica atua exclusivamente no interior de gases ideais.",
-      "Não existe qualquer diferença física, sendo termos idênticos para a aceleração da gravidade."
+      "Porque a elevada massa inercial exige forças muito maiores para iniciar ou travar o movimento com segurança.",
+      "Porque os doentes com obesidade severa deixam de obedecer à atração da gravidade terrestre.",
+      "Porque a 2ª Lei de Newton deixa de se aplicar a corpos com massa superior a 100 kg.",
+      "Porque o atrito cinético torna-se nulo quando a massa corporal aumenta substancialmente."
     ],
     "correctIndex": 0,
-    "explanation": "A pressão mede a força compressiva normal por unidade de área; a tensão mecânica interna decompõe-se em componentes normais e tangenciais.",
+    "explanation": "Devido a F = m · a, massas muito elevadas exigem forças massivas quer para serem aceleradas quer para serem travadas. Sem meios mecânicos de apoio, o esforço sobre a coluna dos profissionais torna-se lesivo.",
     "distractorAnalysis": [
-      "Está incorreta: Tanto a pressão como a tensão têm unidades de força por área (N/m² ou Pa), não Joules por segundo.",
-      "Está incorreta: A pressão atua em fluidos e superfícies reais; a tensão mecânica descreve o estado interno de sólidos e tecidos.",
-      "Está incorreta: Nenhum destes conceitos se confunde com a aceleração gravitacional (m/s²)."
+      "Está incorreta: A gravidade atua sobre todos os corpos com massa, sendo o peso proporcional à massa (P = m · g).",
+      "Está incorreta: As Leis de Newton são universais na mecânica clássica e aplicam-se a qualquer valor de massa macroscópica.",
+      "Está incorreta: O atrito não se anula; pelo contrário, a força de atrito geralmente aumenta com o peso do corpo sobre o plano."
     ],
-    "nursingApplication": "Fundamenta a avaliação das solicitações mecânicas sofridas pela cartilagem articular e discos vertebrais."
+    "nursingApplication": "Prevenção de acidentes de trabalho e de lesões dorsolombar na equipa de enfermagem durante manobras no leito."
   },
   {
     "id": 1041,
     "topicId": 1,
-    "question": "Qual é a definição de Mecânica no contexto da Biofísica?",
+    "question": "Qual é a representação matemática do par ação-reação da 3ª Lei de Newton apresentada nos Slides 17 e 18?",
     "options": [
-      "O estudo da composição atómica dos radioisótopos emissores de radiação gama.",
-      "O ramo da física que estuda as relações entre os movimentos dos corpos materiais e as forças que lhes estão associadas.",
-      "A área que investiga exclusivamente a temperatura corporal e as trocas térmicas celulares.",
-      "O ramo que analisa a velocidade de reações enzimáticas em soluções tampão."
+      "F_A->B + F_B->A = m · a",
+      "F_A->B = - F_B->A (ou intensidades iguais e sentidos opostos)",
+      "F_A->B / F_B->A = 0",
+      "F_A->B = F_B->A²"
     ],
     "correctIndex": 1,
-    "explanation": "A mecânica dedica-se ao estudo das forças e das alterações de movimento ou equilíbrio que elas provocam.",
+    "explanation": "Os Slides 17 e 18 apresentam a formulação clássica vetorial: F_A->B = - F_B->A, significando que as forças têm a mesma intensidade e direção, mas sentidos opostos.",
     "distractorAnalysis": [
-      "Está incorreta: A radiobiologia e física nuclear estudam os radioisótopos, não a mecânica.",
-      "Está incorreta: A termodinâmica estuda as trocas térmicas e temperatura, não a mecânica clássica.",
-      "Está incorreta: A cinética enzimática é do domínio da bioquímica, não da mecânica."
+      "Está incorreta: As forças atuam em corpos distintos, pelo que somá-las para obter m·a de um único corpo é incorreto.",
+      "Está incorreta: O quociente entre as suas intensidades seria 1, nunca 0.",
+      "Está incorreta: A relação é de estrita igualdade de intensidade, não de proporção quadrática."
     ],
-    "nursingApplication": "Permite analisar as forças e movimentos envolvidos no transporte de equipamentos hospitalares."
+    "nursingApplication": "Fundamental para compreender as forças mútuas que se desenvolvem na interface entre o doente e a superfície de apoio."
   },
   {
     "id": 1042,
     "topicId": 1,
-    "question": "O que é uma Força na física clássica?",
+    "question": "Qual é o enunciado formal da 3ª Lei de Newton apresentado nos Slides 17 e 18?",
     "options": [
-      "Uma grandeza puramente escalar expressa em quilogramas que quantifica a quantidade de matéria.",
-      "A energia potencial estática acumulada no vácuo entre dois átomos em repouso térmico.",
-      "Uma interação vetorial mútua entre corpos capaz de alterar o seu estado de movimento ou de produzir deformação mecânica.",
-      "A taxa de variação da temperatura de um sólido quando sujeito a radiação ultravioleta."
+      "A aceleração de um corpo em queda livre é constante e independente da sua massa.",
+      "A força de atrito é sempre perpendicular à superfície que suporta o peso do corpo.",
+      "Sempre que um corpo (A) exerce uma força sobre um segundo corpo (B), o corpo B exerce simultaneamente uma força sobre o corpo A que lhe é igual em intensidade e direção, mas em sentido oposto.",
+      "A soma de todas as forças num corpo em movimento acelerado é invariavelmente nula."
     ],
     "correctIndex": 2,
-    "explanation": "A força é uma ação vetorial entre corpos que pode acelerar, travar ou deformar uma estrutura material.",
+    "explanation": "Nos Slides 17 e 18: 'Sempre que um corpo (A) exerce uma força sobre um segundo corpo (B), o corpo B exerce simultaneamente uma força sobre o corpo A que lhe é igual em intensidade e direção, mas em sentido oposto'.",
     "distractorAnalysis": [
-      "Está incorreta: A força é uma grandeza vetorial (módulo, direção e sentido), não sendo uma grandeza escalar.",
-      "Está incorreta: A energia potencial é uma forma de energia medida em Joules, não uma força em Newtons.",
-      "Está incorreta: A taxa de variação de temperatura é uma grandeza térmica (°C/s), sem relação com forças mecânicas."
+      "Está incorreta: A aceleração da gravidade constante em queda livre descreve o movimento uniformemente variado, não a 3ª Lei.",
+      "Está incorreta: A força de atrito é tangencial e paralela à superfície, não perpendicular.",
+      "Está incorreta: Num corpo acelerado a força resultante é não nula (Fr = m · a), e a 3ª Lei trata de forças entre corpos distintos."
     ],
-    "nursingApplication": "Compreender a força é a base para quantificar o esforço muscular ao empurrar um equipamento."
+    "nursingApplication": "Ensina a ter consciência de que qualquer pressão mecânica exercida no utente é sentida em igual magnitude na mão do enfermeiro."
   },
   {
     "id": 1043,
     "topicId": 1,
-    "question": "Qual é a unidade padrão de Força no Sistema Internacional (SI)?",
+    "question": "Por que razão as forças de ação e de reação NUNCA se anulam mutuamente num mesmo corpo?",
     "options": [
-      "Quilograma (kg), que mede a massa inercial de um corpo.",
-      "Joule (J), correspondente à energia mecânica e ao trabalho.",
-      "Pascal (Pa), que quantifica a pressão mecânica por unidade de área.",
-      "Newton (N), equivalente a 1 kg·m/s²."
+      "Porque a força de reação ocorre sempre 10 minutos após a força de ação.",
+      "Porque a força de reação tem sempre uma intensidade 50% menor que a de ação.",
+      "Porque uma força atua no plano horizontal e a outra atua sempre no plano vertical.",
+      "Porque atuam sempre em corpos diferentes (a ação atua no corpo B e a reação atua no corpo A)."
     ],
     "correctIndex": 3,
-    "explanation": "No SI, a força mede-se em Newtons (N), sendo 1 N a força que imprime a 1 kg a aceleração de 1 m/s².",
+    "explanation": "Duas forças só se anulam mutuamente se atuarem sobre o mesmo corpo. Como a ação atua num corpo e a reação atua no outro corpo, elas nunca se anulam entre si.",
     "distractorAnalysis": [
-      "Está incorreta: O quilograma (kg) é a unidade fundamental de massa inercial, não de força.",
-      "Está incorreta: O Joule (J) é a unidade de energia e trabalho mecânico (N·m), não de força pura.",
-      "Está incorreta: O Pascal (Pa) é a unidade de pressão (N/m²), representando força distribuída por área."
+      "Está incorreta: A ação e a reação ocorrem em simultâneo (instantaneamente no mesmo instante temporal).",
+      "Está incorreta: As intensidades de ambas as forças são rigorosamente iguais, sem qualquer perda de 50%.",
+      "Está incorreta: A ação e a reação partilham exatamente a mesma reta de suporte (mesma direção), tendo apenas sentidos contrários."
     ],
-    "nursingApplication": "Distingue a força aplicada em Newtons da massa transportada em quilogramas."
+    "nursingApplication": "Evita o erro comum de pensar que o peso e a força normal são um par ação-reação, pois ambos atuam no mesmo corpo."
   },
   {
     "id": 1044,
     "topicId": 1,
-    "question": "Qual o instrumento físico utilizado para medir a intensidade de uma força?",
+    "question": "Um profissional de saúde empurra uma parede da enfermaria com uma força horizontal de 70 N dirigida para a frente. Qual é a força que a parede exerce sobre as mãos do profissional?",
     "options": [
-      "Dinamómetro.",
-      "Barómetro.",
-      "Termómetro.",
-      "Cronómetro."
+      "Uma força de exatamente 70 N, na mesma direção horizontal, dirigida para trás.",
+      "Zero Newtons, porque a parede é um corpo inerte sem músculos.",
+      "Uma força de 140 N dirigida para o chão por atração gravítica.",
+      "Uma força de 35 N porque os materiais de alvenaria dissipam metade da força."
     ],
     "correctIndex": 0,
-    "explanation": "O dinamómetro mede forças através da deformação elástica calibrada de uma mola interna (Lei de Hooke).",
+    "explanation": "Pela 3ª Lei de Newton, a parede reage instantaneamente sobre o profissional com uma força de intensidade rigorosamente igual (70 N), na mesma direção horizontal e em sentido oposto (para trás).",
     "distractorAnalysis": [
-      "Está incorreta: O barómetro mede a pressão atmosférica em fluidos, não forças mecânicas isoladas.",
-      "Está incorreta: O termómetro é o instrumento de medição da temperatura absoluta ou relativa.",
-      "Está incorreta: O cronómetro mede intervalos de tempo decorridos."
+      "Está incorreta: A 3ª Lei de Newton aplica-se a todos os corpos materiais, inanimados ou vivos, independentemente de possuírem músculos.",
+      "Está incorreta: A reação ocorre na mesma linha de ação horizontal, sem dobrar para 140 N nem mudar para a vertical.",
+      "Está incorreta: A igualdade de intensidades é estrita e não depende da composição do material rígido."
     ],
-    "nursingApplication": "Dinamómetros são usados em ergonomia hospitalar para medir a força de tração ao puxar camas."
+    "nursingApplication": "Explica a importância de manter calçado estável e boa postura ao exercer força sobre estruturas de apoio."
   },
   {
     "id": 1045,
     "topicId": 1,
-    "question": "Quais são os quatro elementos que definem completamente uma grandeza vetorial como a Força?",
+    "question": "Que frase de reflexão filosófica/quotidiana é acrescentada no Slide 19 ao enunciar a 3ª Lei de Newton?",
     "options": [
-      "Apenas o seu valor numérico e a unidade física associada.",
-      "Módulo (intensidade), direção, sentido e ponto de aplicação.",
-      "Massa, densidade, volume e estado de agregação da matéria.",
-      "Velocidade angular, frequência e período de oscilação."
+      "'Quem espera sempre alcança.'",
+      "'Toda a ação tem a sua reação de igual intensidade e sentido oposto. O mesmo aplica-se na vida.'",
+      "'A física quântica resolve todos os mistérios biológicos.'",
+      "'O movimento perpétuo é o objetivo de toda a terapêutica médica.'"
     ],
     "correctIndex": 1,
-    "explanation": "Uma grandeza vetorial exige intensidade numérica, reta suporte (direção), orientação (sentido) e ponto de atuação.",
+    "explanation": "O Slide 19 conclui de forma pedagógica: 'Por outras palavras: Toda a ação tem a sua reação de igual intensidade e sentido oposto. O mesmo aplica-se na vida'.",
     "distractorAnalysis": [
-      "Está incorreta: Valor numérico e unidade definem grandezas puramente escalares (como massa ou tempo).",
-      "Está incorreta: Massa, volume e densidade são propriedades da matéria, não componentes de um vetor.",
-      "Está incorreta: Velocidade angular e frequência são grandezas cinemáticas de rotação."
+      "Está incorreta: Provérbio popular não mencionado em nenhum ponto dos slides da unidade curricular.",
+      "Está incorreta: A física quântica não é abordada nem mencionada no âmbito do Tópico 1 dos slides.",
+      "Está incorreta: O movimento perpétuo viola as leis da termodinâmica e não consta nos slides."
     ],
-    "nursingApplication": "A direção e o sentido ao puxar um equipamento determinam a trajetória do movimento resultante."
+    "nursingApplication": "Mensagem pedagógica que liga o princípio físico das forças interativas ao comportamento profissional e relacional."
   },
   {
     "id": 1046,
     "topicId": 1,
-    "question": "Considerando g = 9,8 m/s², qual é o Peso de um equipamento que possui uma massa de 55 kg?",
+    "question": "Ao caminhar no chão da enfermaria, o pé empurra o piso para trás. Qual é a força que impulsiona a pessoa para a frente?",
     "options": [
-      "55 N.",
-      "5.6 N.",
-      "539.0 N.",
-      "539.0 kg."
+      "A força centrífuga decorrente da rotação da Terra.",
+      "A força nuclear forte entre as moléculas de borracha do sapato.",
+      "A força de reação que o piso exerce sobre a sola do calçado dirigida para a frente.",
+      "A atração gravítica exercida pelo ar ambiente circundante."
     ],
     "correctIndex": 2,
-    "explanation": "O peso calcula-se pela relação P = m · g: 55 kg · 9,8 m/s² = 539.0 N.",
+    "explanation": "Ao caminhar, o pé exerce uma força de ação para trás no solo; pela 3ª Lei de Newton, o solo exerce uma força de reação para a frente sobre o pé (força de atrito estático), que propulsiona a marcha.",
     "distractorAnalysis": [
-      "Está incorreta: 55 N confunde a massa numérica com a força peso sem multiplicar pela aceleração da gravidade.",
-      "Está incorreta: Dividir a massa pela gravidade é uma operação incorreta para obter o peso.",
-      "Está incorreta: O valor está certo, mas o peso é força em Newtons (N), não em quilogramas (kg)."
+      "Está incorreta: A força centrífuga terrestre é minúscula e atua para o espaço exterior, não impulsionando a marcha horizontal.",
+      "Está incorreta: A força nuclear forte atua apenas nos núcleos atómicos a distâncias subatómicas.",
+      "Está incorreta: O ar tem densidade baixa e não exerce atração gravitacional propulsora sobre os corpos."
     ],
-    "nursingApplication": "Permite calcular o esforço vertical de sustentação suportado pelas rodas de um equipamento."
+    "nursingApplication": "Compreensão essencial para avaliar o risco de escorregamento e queda em pisos molhados sem aderência."
   },
   {
     "id": 1047,
     "topicId": 1,
-    "question": "Uma força perpendicular de 110 N atua sobre uma superfície plana de 0,25 m². Qual é a pressão exercida?",
+    "question": "Relativamente ao instante em que ocorrem as forças de ação e de reação da 3ª Lei de Newton, qual das afirmações é verdadeira?",
     "options": [
-      "27 Pa (Pascal).",
-      "110 Pa (Pascal).",
-      "440 N.",
-      "440 Pa (Pascal)."
+      "A força de ação surge primeiro e a de reação surge com atraso de vários segundos.",
+      "A reação só ocorre se o corpo atingido sofrer uma deformação plástica visível.",
+      "A ação só existe se houver movimento acelerado contínuo entre os dois corpos.",
+      "As forças de ação e reação ocorrem rigorosamente em simultâneo no tempo."
     ],
     "correctIndex": 3,
-    "explanation": "A pressão mecânica é a razão p = F / A: 110 N / 0,25 m² = 440 Pa.",
+    "explanation": "As forças de interação entre dois corpos são perfeitamente simultâneas: nenhuma antecede a outra, existindo apenas enquanto durar o contacto ou interação mútua.",
     "distractorAnalysis": [
-      "Está incorreta: Multiplicar a força pela área (F · A) não fornece a pressão mecânica.",
-      "Está incorreta: 110 Pa ignora a área sobre a qual a força está distribuída.",
-      "Está incorreta: A pressão mede-se em Pascal (Pa) ou N/m², e não em Newtons (N)."
+      "Está incorreta: Não há desfasamento temporal; a reação é perfeitamente instantânea e simultânea à ação.",
+      "Está incorreta: A reação ocorre quer haja deformação elástica, plástica ou rigidez indeformável aparente.",
+      "Está incorreta: Ação e reação existem tanto em corpos estáticos em repouso como em corpos em movimento."
     ],
-    "nursingApplication": "Demonstra que alargar a área de apoio reduz a pressão exercida sobre o piso hospitalar."
+    "nursingApplication": "Importante para entender o impacto imediato de colisões e forças aplicadas em contexto clínico."
   },
   {
     "id": 1048,
     "topicId": 1,
-    "question": "Qual das seguintes grandezas físicas é estritamente ESCALAR?",
+    "question": "Quando um doente se senta numa cadeira de rodas exercendo uma força para baixo sobre o assento, o que faz o assento da cadeira?",
     "options": [
-      "Massa corporal inercial.",
-      "Força peso.",
-      "Força de atrito estático.",
-      "Momento de uma força (torque)."
+      "Exerce sobre o corpo do doente uma força vertical dirigida para cima de igual intensidade.",
+      "Anula a massa do doente para evitar que a estrutura colapse sob o peso.",
+      "Exerce uma força horizontal para a esquerda de metade da intensidade do peso.",
+      "Não exerce qualquer força porque a cadeira é um objeto inanimado."
     ],
     "correctIndex": 0,
-    "explanation": "A massa é puramente escalar: fica completamente definida pelo valor numérico e pela unidade (kg).",
+    "explanation": "Pela 3ª Lei de Newton, ao exercer uma força vertical para baixo no assento, o assento reage exercendo uma força vertical para cima de igual intensidade sobre o corpo do utente.",
     "distractorAnalysis": [
-      "Está incorreta: A força peso é um vetor orientado verticalmente para o centro da Terra.",
-      "Está incorreta: A força de atrito é um vetor com direção tangencial à superfície e sentido oposto ao movimento relativo.",
-      "Está incorreta: O momento de uma força é uma grandeza vetorial que quantifica a capacidade de rotação."
+      "Está incorreta: A estrutura da cadeira suporta a força mecânica, mas nunca altera a massa inercial do corpo humano.",
+      "Está incorreta: A reação atua na mesma linha de ação (vertical), e não na horizontal nem com intensidade reduzida.",
+      "Está incorreta: A 3ª Lei de Newton aplica-se a todas as superfícies e objetos mecânicos."
     ],
-    "nursingApplication": "Ao registar a massa de um utente numa balança, afere-se uma grandeza escalar em kg."
+    "nursingApplication": "Compreender a força de suporte do assento é crucial para a correta prescrição de almofadas anti-escaras."
   },
   {
     "id": 1049,
     "topicId": 1,
-    "question": "Em física vetorial, qual é a distinção rigorosa entre 'Direção' e 'Sentido' de uma força?",
+    "question": "Se um camião de grande tonelagem colidir contra um automóvel pequeno ligeiro, como se compara a intensidade da força que o camião exerce sobre o automóvel com a que o automóvel exerce sobre o camião?",
     "options": [
-      "A Direção indica a unidade no SI e o Sentido indica se a grandeza é escalar ou vetorial.",
-      "A Direção é a reta geométrica de suporte ao longo da qual a força atua, enquanto o Sentido é a orientação do vetor nessa reta.",
-      "Direção e Sentido são termos rigorosamente sinónimos na mecânica clássica de Newton.",
-      "A Direção mede o módulo em Newtons e o Sentido mede o tempo de aplicação em segundos."
+      "A força do camião é muito maior porque a sua massa é superior.",
+      "Ambas as forças têm rigorosamente a mesma intensidade, pois formam um par ação-reação.",
+      "A força do automóvel é maior porque ele sofreu uma desaceleração superior.",
+      "A força exercida é nula para ambos os veículos no instante da colisão."
     ],
     "correctIndex": 1,
-    "explanation": "A direção é a linha de ação geométrica (ex.: horizontal, vertical); o sentido é a orientação na linha (ex.: para a direita, para cima).",
+    "explanation": "Pela 3ª Lei de Newton, a intensidade da força mútua na colisão é exatamente a mesma em ambos os corpos. O automóvel sofre maior dano e aceleração apenas porque tem muito menor massa (a = F/m).",
     "distractorAnalysis": [
-      "Está incorreta: A unidade e a natureza escalar/vetorial não definem direção e sentido de um vetor.",
-      "Está incorreta: Direção e sentido são conceitos geometricamente distintos e independentes.",
-      "Está incorreta: O módulo exprime a intensidade numérica e o tempo mede a duração temporal."
+      "Está incorreta: A maior massa do camião não aumenta a força relativa; o par ação-reação tem rigorosamente a mesma intensidade.",
+      "Está incorreta: A desaceleração superior do carro deve-se à sua menor massa pela 2ª Lei, não a uma força maior.",
+      "Está incorreta: No impacto geram-se forças intensíssimas que produzem deformações plásticas severas."
     ],
-    "nursingApplication": "Essencial para aplicar forças na direção e sentido corretos ao posicionar equipamentos móveis."
+    "nursingApplication": "Ajuda a clarificar o erro comum de confundir a força exercida com os efeitos (aceleração e danos) da colisão."
   },
   {
     "id": 1050,
     "topicId": 1,
-    "question": "Qual é a diferença fundamental entre a grandeza Pressão e o conceito de Tensão Mecânica num tecido biológico?",
+    "question": "Dois patinadores de gelo, um de 80 kg e outro de 40 kg, empurram-se mutuamente pelas mãos. Se o patinador de 80 kg aplica 120 N no de 40 kg, que força recebe de volta?",
     "options": [
-      "A Pressão mede-se em Newtons e a Tensão Mecânica mede-se exclusivamente em Joules por segundo.",
-      "A Pressão atua apenas no vácuo absoluto e a Tensão Mecânica atua exclusivamente no interior de gases ideais.",
-      "A Pressão é uma grandeza escalar de força perpendicular por área, enquanto a Tensão Mecânica é uma grandeza tensorial interna que inclui tração, compressão e cisalhamento.",
-      "Não existe qualquer diferença física, sendo termos idênticos para a aceleração da gravidade."
+      "Recebe 60 N porque o outro patinador tem metade do seu peso.",
+      "Recebe 240 N devido à amplificação pelo gelo sem atrito.",
+      "Recebe exatamente 120 N em sentido contrário, de acordo com a 3ª Lei de Newton.",
+      "Recebe 0 N porque o patinador mais leve não consegue aplicar força."
     ],
     "correctIndex": 2,
-    "explanation": "A pressão mede a força compressiva normal por unidade de área; a tensão mecânica interna decompõe-se em componentes normais e tangenciais.",
+    "explanation": "A intensidade do par ação-reação é rigorosamente idêntica em ambos os intervenientes: 120 N. O patinador mais leve terá o dobro da aceleração (a = 120/40 = 3 m/s² vs 120/80 = 1,5 m/s²), mas a força é a mesma.",
     "distractorAnalysis": [
-      "Está incorreta: Tanto a pressão como a tensão têm unidades de força por área (N/m² ou Pa), não Joules por segundo.",
-      "Está incorreta: A pressão atua em fluidos e superfícies reais; a tensão mecânica descreve o estado interno de sólidos e tecidos.",
-      "Está incorreta: Nenhum destes conceitos se confunde com a aceleração gravitacional (m/s²)."
+      "Está incorreta: A força de reação não se reduz para metade da massa; a intensidade das forças é rigorosamente igual.",
+      "Está incorreta: A ausência de atrito permite deslizamento livre, mas não multiplica a força gerada pelo contacto.",
+      "Está incorreta: O contacto mecânico gera reciprocamente a força de 120 N em ambos os corpos."
     ],
-    "nursingApplication": "Fundamenta a avaliação das solicitações mecânicas sofridas pela cartilagem articular e discos vertebrais."
+    "nursingApplication": "Ilustra que numa transferência de doente, o esforço exercido reflete-se em igual magnitude sobre o cuidador."
   },
   {
     "id": 1051,
     "topicId": 1,
-    "question": "Qual é o enunciado fundamental da 1ª Lei de Newton (Lei da Inércia)?",
+    "question": "No Movimento Retilíneo e Uniforme (MRU), o que acontece à velocidade (v) no decorrer do tempo (Slide 22)?",
     "options": [
-      "Para cada ação aplicada sobre um corpo, existe uma reação de intensidade dupla orientada no mesmo sentido.",
-      "A aceleração de um corpo é inversamente proporcional à força resultante e diretamente proporcional à sua massa.",
-      "Todos os corpos materiais aceleram espontaneamente a uma taxa constante quando livres de qualquer força externa.",
-      "Um corpo em repouso permanece em repouso e um corpo em movimento retilíneo uniforme permanece em movimento, a menos que uma força resultante não nula atue sobre ele."
+      "Aumenta exponencialmente a cada segundo de movimento.",
+      "Diminui linearmente até parar completamente.",
+      "Oscila ciclicamente entre valores positivos e negativos.",
+      "A velocidade (v) é constante no decorrer do tempo."
     ],
     "correctIndex": 3,
-    "explanation": "A 1ª Lei de Newton postula que, sem força resultante externa (Fr = 0), a velocidade vetorial do corpo permanece constante.",
+    "explanation": "O Slide 22 define expressamente a propriedade basilar do MRU: 'A velocidade (v) é constante no decorrer do tempo'.",
     "distractorAnalysis": [
-      "Está incorreta: A 3ª Lei estabelece ação e reação com a mesma intensidade e sentidos opostos, nunca intensidade dupla no mesmo sentido.",
-      "Está incorreta: A 2ª Lei estabelece que a aceleração é diretamente proporcional à força e inversamente proporcional à massa (a = F/m).",
-      "Está incorreta: Sem força resultante externa, um corpo não acelera; mantém velocidade vetorial rigorosamente constante."
+      "Está incorreta: Aumento de velocidade caracteriza movimento acelerado, não uniforme.",
+      "Está incorreta: Diminuição de velocidade caracteriza movimento retardado ou desacelerado.",
+      "Está incorreta: Oscilações de velocidade correspondem a movimentos harmónicos ou periódicos."
     ],
-    "nursingApplication": "Explica por que uma maca parada num corredor plano permanece imóvel até ser empurrada."
+    "nursingApplication": "Permite avaliar o transporte estável de doentes mantendo velocidade constante para evitar solavancos."
   },
   {
     "id": 1052,
     "topicId": 1,
-    "question": "O que traduz o conceito físico de Inércia de um corpo?",
+    "question": "Qual é o valor da aceleração (a) de um corpo que se desloca em Movimento Retilíneo e Uniforme (Slide 23)?",
     "options": [
-      "A resistência natural que um corpo oferece a qualquer alteração do seu estado de repouso ou de movimento.",
-      "A capacidade de um corpo gerar energia mecânica espontânea a partir do repouso absoluto.",
-      "A velocidade máxima que um corpo pode atingir quando em queda livre num meio viscoso.",
-      "A força invisível que empurra ativamente os corpos para a frente quando estão em movimento retilíneo."
+      "A aceleração (a) é nula (a = 0 m/s²).",
+      "A aceleração é igual a 9,8 m/s² na horizontal.",
+      "A aceleração varia consoante a massa do corpo.",
+      "A aceleração atinge o valor infinito durante o percurso."
     ],
     "correctIndex": 0,
-    "explanation": "A inércia é uma propriedade fundamental da matéria pela qual os corpos resistem a acelerações ou desacelerações.",
+    "explanation": "O Slide 23 estabelece diretamente: 'A aceleração (a) é nula', uma vez que a velocidade não sofre qualquer variação temporal.",
     "distractorAnalysis": [
-      "Está incorreta: A inércia não cria energia mecânica; a energia mecânica obedece ao princípio da conservação da energia.",
-      "Está incorreta: A velocidade máxima em queda num fluido depende do equilíbrio com o atrito viscoso, não da inércia isolada.",
-      "Está incorreta: A inércia não é uma força propulsora; é apenas a tendência passiva para manter o estado atual de movimento."
+      "Está incorreta: 9,8 m/s² é o valor aproximado da aceleração gravítica vertical, não da aceleração no MRU.",
+      "Está incorreta: No MRU a aceleração é sempre zero, independentemente de qual seja a massa do corpo.",
+      "Está incorreta: Aceleração infinita é fisicamente impossível na mecânica clássica e violaria a constância da velocidade."
     ],
-    "nursingApplication": "Compreender a inércia ajuda a antecipar que travar uma maca com carga exige esforço mecânico."
+    "nursingApplication": "Garante o máximo conforto ao utente em transporte, minimizando as forças de inércia sentidas pelo corpo."
   },
   {
     "id": 1053,
     "topicId": 1,
-    "question": "De que grandeza física depende exclusivamente a inércia translacional de um corpo na mecânica clássica?",
+    "question": "Qual é o valor da força resultante (F_r) que atua sobre um corpo em Movimento Retilíneo e Uniforme (Slides 24-25)?",
     "options": [
-      "Da sua cor e temperatura superficial.",
-      "Da sua massa inercial (m).",
-      "Do volume geométrico independente da massa.",
-      "Da aceleração da gravidade do planeta."
+      "É sempre positiva e superior ao peso do corpo.",
+      "É nula (F_r = 0 N).",
+      "É igual à força de atrito multiplicada pela velocidade.",
+      "É imprevisível e muda aleatoriamente a cada instante."
     ],
     "correctIndex": 1,
-    "explanation": "A massa é a medida quantitativa direta da inércia de um corpo: corpos com mais massa têm maior inércia.",
+    "explanation": "Como a aceleração é nula (a = 0), pela 2ª Lei de Newton (Fr = m · a) a força resultante é obrigatoriamente nula: Fr = 0 N (Slide 25).",
     "distractorAnalysis": [
-      "Está incorreta: Cor e temperatura não influenciam a inércia translacional de um corpo mecânico.",
-      "Está incorreta: O volume sem considerar a massa não determina a inércia; uma esfera oca tem menos inércia que uma sólida.",
-      "Está incorreta: A massa inercial é uma propriedade intrínseca do corpo, independente do valor local da gravidade."
+      "Está incorreta: Se a força resultante fosse positiva e não nula, o corpo aceleraria continuamente pela 2ª Lei.",
+      "Está incorreta: Multiplicar força por velocidade dá potência mecânica (Watts), não a força resultante.",
+      "Está incorreta: As leis da mecânica clássica são deterministas: a aceleração nula dita com certeza rigorosa Fr = 0 N."
     ],
-    "nursingApplication": "Uma maca carregada com 100 kg tem muito maior inércia do que uma maca vazia de 30 kg."
+    "nursingApplication": "Significa que para manter uma maca em velocidade constante apenas é necessário anular a força de atrito."
   },
   {
     "id": 1054,
     "topicId": 1,
-    "question": "Quando uma ambulância em marcha trava bruscamente a 80 km/h, o que acontece a um ocupante sem cinto de segurança e porquê?",
+    "question": "Uma maca hospitalar é deslocada ao longo de um corredor retilíneo com velocidade rigorosamente constante de 1 m/s. O que podemos afirmar?",
     "options": [
-      "É projetado para trás, porque a inércia puxa ativamente os corpos no sentido oposto ao movimento.",
-      "Permanece imediatamente imóvel em relação ao veículo, porque a gravidade anula a velocidade do corpo.",
-      "É projetado para a frente, porque pela 1ª Lei de Newton o seu corpo tende a manter a velocidade de 80 km/h.",
-      "Acelera verticalmente em direção ao teto, porque a desaceleração converte o peso em força ascensional."
+      "A força que o enfermeiro exerce é muito maior do que a força de atrito das rodas.",
+      "A maca está em aceleração positiva crescente.",
+      "A força exercida pelo profissional equilibra exatamente a força de atrito, sendo Fr = 0 N.",
+      "A maca não sofre nenhuma força de gravidade durante o trajeto."
     ],
     "correctIndex": 2,
-    "explanation": "Pela Lei da Inércia, quando o veículo trava, os corpos no seu interior mantêm a sua velocidade inicial até sofrerem uma força externa.",
+    "explanation": "Como a velocidade é constante e o movimento é retilíneo, a aceleração é zero. Portanto, a força aplicada para a frente equilibra perfeitamente a resistência de atrito para trás: Fr = 0 N.",
     "distractorAnalysis": [
-      "Está incorreta: A inércia não empurra para trás; a sensação de recuo só ocorre quando o veículo acelera para a frente.",
-      "Está incorreta: O corpo não fica imóvel em relação ao veículo; como o veículo desacelerou, o corpo continua em frente por inércia.",
-      "Está incorreta: A travagem horizontal produz desaceleração horizontal, não criando forças verticais ascensionais espontâneas."
+      "Está incorreta: Se a força aplicada superasse o atrito, haveria força resultante e a maca aceleraria, aumentando de velocidade.",
+      "Está incorreta: Velocidade constante implica por definição matemática aceleração estritamente nula.",
+      "Está incorreta: A gravidade continua a atuar plenamente sobre a massa da maca e do utente (P = m · g)."
     ],
-    "nursingApplication": "Demonstra a importância vital do uso de cintos de segurança em veículos de transporte hospitalar."
+    "nursingApplication": "Evidencia que manter velocidade constante exige muito menor esforço do que acelerar ou desacelerar repetidamente."
   },
   {
     "id": 1055,
     "topicId": 1,
-    "question": "Se a força resultante que atua sobre um carrinho for rigorosamente nula (Fr = 0), qual é a sua aceleração?",
+    "question": "No Slide 26 é colocada a questão: 'Quais os corpos que estão em MRU? Quais os corpos que estão em repouso?'. O que têm ambos em comum?",
     "options": [
-      "9,8 m/s².",
-      "Infinita.",
-      "Depende da cor e do material do carrinho.",
-      "Zero (a = 0 m/s²)."
+      "Ambos possuem velocidade diferente de zero e aceleração máxima.",
+      "Ambos sofrem forças resultantes gigantescas no sentido do movimento.",
+      "Ambos têm peso nulo por estarem em superfícies horizontais.",
+      "Em ambos a aceleração é nula (a = 0) e a força resultante é nula (Fr = 0)."
     ],
     "correctIndex": 3,
-    "explanation": "De acordo com a 2ª Lei de Newton (Fr = m·a), se a força resultante é nula (Fr = 0), a aceleração é forçosamente zero.",
+    "explanation": "Tanto no repouso estático (v = 0) como no MRU (v = constante), a aceleração é nula (a = 0) e a força resultante é nula (Fr = 0). Ambos constituem estados de equilíbrio translacional.",
     "distractorAnalysis": [
-      "Está incorreta: 9,8 m/s² é a aceleração da gravidade na Terra sob peso livre, não a aceleração com resultante nula.",
-      "Está incorreta: Uma aceleração infinita exigiria uma força infinitamente grande sobre uma massa finita.",
-      "Está incorreta: A cor do objeto é uma propriedade óptica sem qualquer relevância para a dinâmica newtoniana."
+      "Está incorreta: O corpo em repouso tem velocidade rigorosamente nula (v = 0), ao contrário do que afirma a opção.",
+      "Está incorreta: Forças resultantes grandes produziriam acelerações elevadas pela 2ª Lei de Newton.",
+      "Está incorreta: O peso depende unicamente da massa e da gravidade local, mantendo-se constante em repouso ou MRU."
     ],
-    "nursingApplication": "Ao empurrar um carrinho a velocidade constante e em linha reta, a aceleração é rigorosamente nula."
+    "nursingApplication": "Mostra que um doente em repouso na cama e um doente em transporte suave sem solavancos partilham a ausência de aceleração."
   },
   {
     "id": 1056,
     "topicId": 1,
-    "question": "Um equipamento desloca-se em linha reta com velocidade constante de 1,5 m/s num piso plano. O que se pode concluir sobre as forças?",
+    "question": "Para que um corpo continue em Movimento Retilíneo e Uniforme no vácuo sem atrito, é necessário continuar a empurrá-lo com uma força resultante?",
     "options": [
-      "A resultante de todas as forças que atuam sobre ele é rigorosamente nula (Fr = 0).",
-      "A força propulsora para a frente é dez vezes superior às forças de atrito.",
-      "Não existe nenhuma força a atuar sobre o corpo, nem sequer o peso ou a força normal.",
-      "A aceleração do equipamento é constante e igual a 1,5 m/s²."
+      "Não, pois pela 1ª Lei de Newton o corpo mantém a sua velocidade constante por inércia.",
+      "Sim, é obrigatório aplicar uma força contínua crescente para vencer o esquecimento do corpo.",
+      "Sim, porque todo o movimento consome a massa do objeto até ele parar.",
+      "Apenas se o corpo tiver uma temperatura inferior a zero graus Celsius."
     ],
     "correctIndex": 0,
-    "explanation": "Movimento retilíneo e uniforme (velocidade vetorial constante) implica aceleração nula e força resultante nula.",
+    "explanation": "Pela 1ª Lei de Newton (Lei da Inércia), um corpo em movimento sem forças resultantes contrárias continua em movimento indefinidamente sem necessidade de qualquer força contínua.",
     "distractorAnalysis": [
-      "Está incorreta: Se a força para a frente superasse o atrito, haveria aceleração e a velocidade aumentaria.",
-      "Está incorreta: Forças como o peso e a reação normal continuam a existir, mas equilibram-se perfeitamente (resultante nula).",
-      "Está incorreta: Se a velocidade é constante, a variação de velocidade é nula, logo a aceleração é 0 m/s² e não 1,5 m/s²."
+      "Está incorreta: A matéria não tem 'esquecimento'; a ideia aristotélica de que o movimento requer força contínua foi superada por Galileu e Newton.",
+      "Está incorreta: O movimento não consome massa na física clássica; a massa permanece rigorosamente invariável.",
+      "Está incorreta: A temperatura não condiciona a conservação da quantidade de movimento mecânica no vácuo."
     ],
-    "nursingApplication": "Manter um carrinho a rolar a velocidade constante exige apenas uma força que anule o atrito das rodas."
+    "nursingApplication": "Ajuda a desfazer conceções erróneas comuns sobre a necessidade de forças para manter o movimento."
   },
   {
     "id": 1057,
     "topicId": 1,
-    "question": "Porque é mais difícil iniciar o movimento de uma caixa pesada do que de uma caixa leve em repouso no chão?",
+    "question": "Se um veículo de transporte de doentes mantiver um valor numérico de velocidade de 30 km/h, mas estiver a fazer uma rotunda circular:",
     "options": [
-      "Porque a caixa leve não obedece à 1ª Lei de Newton e move-se sem necessidade de força.",
-      "Porque a caixa mais pesada tem maior massa, o que significa que possui maior inércia e oferece maior resistência à aceleração.",
-      "Porque a gravidade só atua sobre objetos com massa superior a cinquenta quilogramas.",
-      "Porque os corpos pesados perdem eletrões espontaneamente quando colocados em contacto com o piso."
+      "O movimento é classificado como retilíneo e uniforme porque 30 km/h é constante.",
+      "O movimento NÃO é uniforme retilíneo, pois a direção da velocidade está a mudar, existindo aceleração.",
+      "A força resultante sobre o veículo é obrigatoriamente igual a zero Newtons.",
+      "O veículo perde toda a sua inércia durante a curva e flutua sobre a estrada."
     ],
     "correctIndex": 1,
-    "explanation": "Maior massa implica maior inércia translacional, exigindo uma força maior para produzir qualquer aceleração inicial.",
+    "explanation": "A velocidade é uma grandeza vetorial. Embora o módulo seja 30 km/h, a direção está a mudar continuamente ao longo da curva, o que implica aceleração (centrípeta) e força resultante não nula. Não é MRU.",
     "distractorAnalysis": [
-      "Está incorreta: A 1ª Lei de Newton aplica-se a todos os corpos materiais sem exceção, independentemente da massa.",
-      "Está incorreta: A gravidade atua sobre todos os corpos com massa, por menor que ela seja.",
-      "Está incorreta: O atrito e a inércia mecânica decorrem da física clássica, sem perda espontânea de eletrões em repouso."
+      "Está incorreta: Para ser retilíneo a trajetória tem de ser em linha reta; uma rotunda é uma trajetória curva.",
+      "Está incorreta: Curvar exige uma força resultante centrípeta gerada pelo atrito dos pneus com a estrada.",
+      "Está incorreta: A inércia mantém-se inalterada e manifesta-se pela tendência do corpo em seguir em frente pela tangente."
     ],
-    "nursingApplication": "Explica o esforço acrescido ao iniciar o movimento de carrinhos pesados a partir do repouso."
+    "nursingApplication": "Explica por que os doentes sentem forças laterais quando uma ambulância faz curvas, mesmo em velocidade moderada."
   },
   {
     "id": 1058,
     "topicId": 1,
-    "question": "O que é um Referencial Inercial na mecânica newtoniana?",
+    "question": "Qual é a condição mecânica necessária e suficiente para que um ponto material esteja em equilíbrio de translação?",
     "options": [
-      "Um referencial que gira a alta velocidade com aceleração centrípeta constante.",
-      "Um referencial onde todas as leis de Newton deixam de ser válidas por efeito da relatividade.",
-      "Um referencial no qual um corpo livre de forças resultantes se encontra em repouso ou em movimento retilíneo e uniforme.",
-      "Um sistema de coordenadas exclusivo do interior de núcleos atómicos em desintegração."
+      "A velocidade tem de ser rigorosamente crescente a uma taxa constante de 1 m/s².",
+      "O corpo tem de estar obrigatoriamente a uma temperatura de zero absoluto.",
+      "A resultante de todas as forças que atuam sobre o corpo tem de ser igual a zero (Fr = 0 N).",
+      "O peso do corpo tem de ser exatamente o dobro da força normal de apoio."
     ],
     "correctIndex": 2,
-    "explanation": "Um referencial inercial é aquele onde a 1ª Lei de Newton se verifica rigorosamente (não acelerado).",
+    "explanation": "O equilíbrio de translação define-se estritamente pela anulação da força resultante: Fr = 0 N (o que engloba tanto o repouso como o MRU).",
     "distractorAnalysis": [
-      "Está incorreta: Um referencial em rotação possui aceleração centrípeta, sendo um referencial não inercial.",
-      "Está incorreta: As leis de Newton são formalmente definidas e válidas precisamente em referenciais inerciais.",
-      "Está incorreta: A mecânica newtoniana de referenciais inerciais descreve a dinâmica macroscópica clássica."
+      "Está incorreta: Taxa de 1 m/s² significa aceleração não nula, o que violaria o equilíbrio de translação.",
+      "Está incorreta: O zero absoluto (-273,15 ºC) é um conceito térmico ideal sem relação com o equilíbrio mecânico de forças.",
+      "Está incorreta: Se o peso superasse a normal sem outra força, haveria aceleração para baixo e não equilíbrio."
     ],
-    "nursingApplication": "O solo hospitalar pode ser considerado com excelente aproximação um referencial inercial para análise de movimentos."
+    "nursingApplication": "Base de análise da segurança postural e estática em suportes terapêuticos e macas."
   },
   {
     "id": 1059,
     "topicId": 1,
-    "question": "Duas forças que atuam sobre a mesma reta de suporte designam-se colineares. Para que um corpo sujeito a duas forças colineares permaneça em repouso estático, que condição devem essas forças cumprir?",
+    "question": "Um carrinho de medicação desloca-se em MRU num piso horizontal. Se a força de atrito contrária ao movimento for de 18 N, que força horizontal aplica o enfermeiro?",
     "options": [
-      "Devem possuir intensidades diferentes e o mesmo sentido no espaço.",
-      "Devem formar um ângulo de noventa graus entre as suas retas de suporte.",
-      "Devem atuar com uma diferença temporal de vários segundos entre si.",
-      "Devem possuir rigorosamente a mesma intensidade e sentidos opostos, anulando-se mutuamente na soma vetorial."
+      "0 N, pois o carrinho move-se sem qualquer auxílio no corredor.",
+      "36 N para manter a velocidade a aumentar indefinidamente.",
+      "9 N, aproveitando a inércia que reduz a força para metade.",
+      "Exatamente 18 N no sentido do movimento, garantindo força resultante nula (Fr = 0 N)."
     ],
     "correctIndex": 3,
-    "explanation": "Para forças colineares, a resultante nula exige F1 + F2 = 0, o que implica intensidades iguais e sentidos contrários.",
+    "explanation": "Para manter MRU (aceleração zero e velocidade constante), a força aplicada deve anular exatamente a resistência: F_aplicada - F_atrito = 0 => F_aplicada = 18 N.",
     "distractorAnalysis": [
-      "Está incorreta: Se tiverem o mesmo sentido, as forças somam-se e provocam aceleração do corpo.",
-      "Está incorreta: Formar um ângulo de 90° caracteriza forças perpendiculares ou concorrentes, não colineares.",
-      "Está incorreta: O equilíbrio estático de forças requer ação simultânea permanente sobre o corpo."
+      "Está incorreta: Sem força aplicada (0 N), o atrito de 18 N desaceleraria o carrinho até ele parar.",
+      "Está incorreta: 36 N geraria uma resultante de 18 N para a frente, provocando aceleração contínua e não MRU.",
+      "Está incorreta: 9 N seria insuficiente para equilibrar os 18 N de atrito, fazendo o carrinho desacelerar e parar."
     ],
-    "nursingApplication": "Exemplo das forças que atuam quando dois operadores puxam uma cinta em sentidos opostos com igual intensidade."
+    "nursingApplication": "Demonstra a relação equilibrada de forças no manuseamento rotineiro de equipamentos hospitalares."
   },
   {
     "id": 1060,
     "topicId": 1,
-    "question": "Se um equipamento hospitalar com uma massa inercial de 30 kg for transportado para a superfície da Lua (onde a gravidade é 1/6 da terrestre), o que acontece à sua inércia?",
+    "question": "Se um dinamómetro acoplado a uma maca indicar que a força resultante horizontal total sobre ela é Fr = 0 N, o que podemos concluir com certeza?",
     "options": [
-      "Permanece rigorosamente inalterada, porque a inércia depende exclusivamente da massa do corpo (30 kg) e não do campo gravítico local.",
-      "Reduz-se a um sexto da inércia que possuía na Terra, tornando-se seis vezes mais fácil de acelerar.",
-      "Aumenta para seis vezes o valor original por efeito da ausência de atmosfera lunar.",
-      "Passa a ser rigorosamente nula porque na Lua não existe gravidade suficiente para criar matéria."
+      "A maca está em repouso estático ou em movimento retilíneo e uniforme.",
+      "A maca está necessariamente a acelerar a 10 m/s² para a frente.",
+      "A massa da maca foi totalmente reduzida a zero quilogramas.",
+      "A maca perdeu o contacto com o chão e encontra-se a levitar."
     ],
     "correctIndex": 0,
-    "explanation": "A massa inercial é uma propriedade invariante do corpo. A inércia (resistência à aceleração F = m·a) é rigorosamente a mesma na Terra ou na Lua.",
+    "explanation": "Força resultante nula (Fr = 0) é a condição exata que dita que o corpo ou está parado (repouso) ou se desloca em linha reta com velocidade invariável (MRU).",
     "distractorAnalysis": [
-      "Está incorreta: O que se reduz a 1/6 é o peso (P = m·g), mas a massa e a inércia permanecem idênticas.",
-      "Está incorreta: A ausência de atmosfera não altera a massa inercial do corpo.",
-      "Está incorreta: Existe gravidade na Lua (cerca de 1,62 m/s²), e a matéria preserva a sua massa inercial no espaço."
+      "Está incorreta: Aceleração a = 10 m/s² exigiria Fr = m · 10 ≠ 0, contrariando a premissa de Fr = 0 N.",
+      "Está incorreta: A massa é constante e independente do equilíbrio de forças que atuam sobre o corpo.",
+      "Está incorreta: O equilíbrio de forças na vertical (P = N) garante que a maca se apoia no solo sem levitar."
     ],
-    "nursingApplication": "Demonstra a diferença conceptual fundamental entre a massa inercial (invariável) e a força peso (dependente da gravidade)."
+    "nursingApplication": "Garante a correta interpretação de leituras de estabilidade mecânica em aparelhos clínicos."
   },
   {
     "id": 1061,
     "topicId": 1,
-    "question": "Qual é o enunciado fundamental da 1ª Lei de Newton (Lei da Inércia)?",
+    "question": "Quantas são as forças fundamentais da natureza identificadas nos Slides 27 a 31 do Tópico 1 de Biofísica?",
     "options": [
-      "Para cada ação aplicada sobre um corpo, existe uma reação de intensidade dupla orientada no mesmo sentido.",
-      "Um corpo em repouso permanece em repouso e um corpo em movimento retilíneo uniforme permanece em movimento, a menos que uma força resultante não nula atue sobre ele.",
-      "A aceleração de um corpo é inversamente proporcional à força resultante e diretamente proporcional à sua massa.",
-      "Todos os corpos materiais aceleram espontaneamente a uma taxa constante quando livres de qualquer força externa."
+      "Apenas 2 forças: Peso e Atrito.",
+      "Exatamente 4 forças fundamentais.",
+      "7 forças correspondentes às 7 unidades de base do SI.",
+      "Inúmeras forças distintas sem qualquer categorização científica."
     ],
     "correctIndex": 1,
-    "explanation": "A 1ª Lei de Newton postula que, sem força resultante externa (Fr = 0), a velocidade vetorial do corpo permanece constante.",
+    "explanation": "O Slide 27 introduz as 'Forças fundamentais da natureza', apresentando nos slides 28 a 31 exatamente 4 forças fundamentais: Gravidade, Eletromagnética, Nuclear Forte e Nuclear Fraca.",
     "distractorAnalysis": [
-      "Está incorreta: A 3ª Lei estabelece ação e reação com a mesma intensidade e sentidos opostos, nunca intensidade dupla no mesmo sentido.",
-      "Está incorreta: A 2ª Lei estabelece que a aceleração é diretamente proporcional à força e inversamente proporcional à massa (a = F/m).",
-      "Está incorreta: Sem força resultante externa, um corpo não acelera; mantém velocidade vetorial rigorosamente constante."
+      "Está incorreta: Peso e atrito são manifestações macroscópicas particulares da gravidade e do eletromagnetismo, não as forças fundamentais.",
+      "Está incorreta: As 7 unidades base do SI são unidades de medida (m, kg, s, etc.), não forças fundamentais.",
+      "Está incorreta: A física moderna unifica todas as interações da natureza em exatamente 4 forças fundamentais."
     ],
-    "nursingApplication": "Explica por que uma maca parada num corredor plano permanece imóvel até ser empurrada."
+    "nursingApplication": "Estrutura o conhecimento dos alunos sobre a origem primária de todas as interações biológicas e materiais."
   },
   {
     "id": 1062,
     "topicId": 1,
-    "question": "O que traduz o conceito físico de Inércia de um corpo?",
+    "question": "Como é definida a Força da Gravidade no Slide 28 dos slides de Biofísica?",
     "options": [
-      "A capacidade de um corpo gerar energia mecânica espontânea a partir do repouso absoluto.",
-      "A velocidade máxima que um corpo pode atingir quando em queda livre num meio viscoso.",
-      "A resistência natural que um corpo oferece a qualquer alteração do seu estado de repouso ou de movimento.",
-      "A força invisível que empurra ativamente os corpos para a frente quando estão em movimento retilíneo."
+      "Atração e repulsão mútua entre pólos de ímanes permanentes.",
+      "Força microscópica que divide os protões em quarks no núcleo.",
+      "Atração entre corpos com massa, expressa por P = m · g.",
+      "Resistência ao deslizamento de superfícies ásperas em contacto."
     ],
     "correctIndex": 2,
-    "explanation": "A inércia é uma propriedade fundamental da matéria pela qual os corpos resistem a acelerações ou desacelerações.",
+    "explanation": "O Slide 28 define: 'Força da gravidade (P = m · g): Atração entre corpos com massa'.",
     "distractorAnalysis": [
-      "Está incorreta: A inércia não cria energia mecânica; a energia mecânica obedece ao princípio da conservação da energia.",
-      "Está incorreta: A velocidade máxima em queda num fluido depende do equilíbrio com o atrito viscoso, não da inércia isolada.",
-      "Está incorreta: A inércia não é uma força propulsora; é apenas a tendência passiva para manter o estado atual de movimento."
+      "Está incorreta: Atração e repulsão magnética define a força eletromagnética, não a gravítica.",
+      "Está incorreta: A interação entre quarks e protões é mediada pela força nuclear forte.",
+      "Está incorreta: A resistência ao deslizamento define a força de atrito macroscópica."
     ],
-    "nursingApplication": "Compreender a inércia ajuda a antecipar que travar uma maca com carga exige esforço mecânico."
+    "nursingApplication": "Explica o peso corporal que atua continuamente sobre o sistema osteomuscular e leitos hospitalares."
   },
   {
     "id": 1063,
     "topicId": 1,
-    "question": "De que grandeza física depende exclusivamente a inércia translacional de um corpo na mecânica clássica?",
+    "question": "Como é definida a Força Eletromagnética no Slide 29 dos slides de Biofísica?",
     "options": [
-      "Da sua cor e temperatura superficial.",
-      "Do volume geométrico independente da massa.",
-      "Da aceleração da gravidade do planeta.",
-      "Da sua massa inercial (m)."
+      "Pressão exercida por fluidos biológicos no interior de vasos sanguíneos.",
+      "Energia emitida pelo núcleo atómico durante a fissão espontânea.",
+      "Deformação elástica exclusiva de molas helicoidais em dinamómetros.",
+      "Atração / repulsão entre corpos por ação dos seus campos magnéticos (e elétricos)."
     ],
     "correctIndex": 3,
-    "explanation": "A massa é a medida quantitativa direta da inércia de um corpo: corpos com mais massa têm maior inércia.",
+    "explanation": "O Slide 29 define expressamente: 'Força eletromagnética: Atração / repulsão entre corpos por ação dos seus campos magnéticos'.",
     "distractorAnalysis": [
-      "Está incorreta: Cor e temperatura não influenciam a inércia translacional de um corpo mecânico.",
-      "Está incorreta: O volume sem considerar a massa não determina a inércia; uma esfera oca tem menos inércia que uma sólida.",
-      "Está incorreta: A massa inercial é uma propriedade intrínseca do corpo, independente do valor local da gravidade."
+      "Está incorreta: A pressão em vasos sanguíneos decorre da hidrodinâmica cardíaca, não da definição da força fundamental eletromagnética.",
+      "Está incorreta: Energia de fissão nuclear envolve forças nucleares forte e fraca.",
+      "Está incorreta: A deformação de molas é uma manifestação elástica molecular microscópica decorrente de ligações eletromagnéticas, mas não a sua definição."
     ],
-    "nursingApplication": "Uma maca carregada com 100 kg tem muito maior inércia do que uma maca vazia de 30 kg."
+    "nursingApplication": "Base para compreender a bioeletricidade celular, potenciais de ação e equipamentos como ECG e desfibrilhadores."
   },
   {
     "id": 1064,
     "topicId": 1,
-    "question": "Quando uma ambulância em marcha trava bruscamente a 80 km/h, o que acontece a um ocupante sem cinto de segurança e porquê?",
+    "question": "Qual é a descrição expressiva utilizada no Slide 30 para caracterizar a Força Nuclear Forte?",
     "options": [
-      "É projetado para a frente, porque pela 1ª Lei de Newton o seu corpo tende a manter a velocidade de 80 km/h.",
-      "É projetado para trás, porque a inércia puxa ativamente os corpos no sentido oposto ao movimento.",
-      "Permanece imediatamente imóvel em relação ao veículo, porque a gravidade anula a velocidade do corpo.",
-      "Acelera verticalmente em direção ao teto, porque a desaceleração converte o peso em força ascensional."
+      "'Cola' que mantém os protões e os neutrões unidos no interior do núcleo atómico.",
+      "'Força de atrito' que impede a rotação das órbitas eletrónicas.",
+      "'Tensão muscular' exercida pelos ligamentos sobre as vértebras sagradas.",
+      "'Pressão capilar' exercida pelo fluxo arterial na pele do sacro."
     ],
     "correctIndex": 0,
-    "explanation": "Pela Lei da Inércia, quando o veículo trava, os corpos no seu interior mantêm a sua velocidade inicial até sofrerem uma força externa.",
+    "explanation": "O Slide 30 descreve textualmente a Força nuclear forte como: '“Cola” que mantém os protões e os neutrões unidos no interior do núcleo atómico'.",
     "distractorAnalysis": [
-      "Está incorreta: A inércia não empurra para trás; a sensação de recuo só ocorre quando o veículo acelera para a frente.",
-      "Está incorreta: O corpo não fica imóvel em relação ao veículo; como o veículo desacelerou, o corpo continua em frente por inércia.",
-      "Está incorreta: A travagem horizontal produz desaceleração horizontal, não criando forças verticais ascensionais espontâneas."
+      "Está incorreta: Não existe força de atrito em órbitas quânticas de eletrões.",
+      "Está incorreta: Tensão ligamentar é um esforço mecânico tissular macroscópico, não uma força subatómica nuclear.",
+      "Está incorreta: Pressão capilar na pele sobre o sacro é o exemplo de pressão dado no Slide 44."
     ],
-    "nursingApplication": "Demonstra a importância vital do uso de cintos de segurança em veículos de transporte hospitalar."
+    "nursingApplication": "Permite aos alunos reter a função de coesão do núcleo atómico antes de abordarem a radioatividade médica."
   },
   {
     "id": 1065,
     "topicId": 1,
-    "question": "Se a força resultante que atua sobre um carrinho for rigorosamente nula (Fr = 0), qual é a sua aceleração?",
+    "question": "Onde atua a Força Nuclear Fraca de acordo com a definição apresentada no Slide 31?",
     "options": [
-      "9,8 m/s².",
-      "Zero (a = 0 m/s²).",
-      "Infinita.",
-      "Depende da cor e do material do carrinho."
+      "Exclusivamente no atrito estático entre calçado hospitalar e piso molhado.",
+      "Está presente em alguns tipos de decaimento radioativo e na fusão nuclear.",
+      "Na flexão do antebraço pelo músculo bíceps braquial.",
+      "No amortecimento elástico dos discos cartilagíneos intervertebrais."
     ],
     "correctIndex": 1,
-    "explanation": "De acordo com a 2ª Lei de Newton (Fr = m·a), se a força resultante é nula (Fr = 0), a aceleração é forçosamente zero.",
+    "explanation": "O Slide 31 estipula: 'Força nuclear fraca: Presente em alguns tipos de decaimento radioativo e na fusão nuclear'.",
     "distractorAnalysis": [
-      "Está incorreta: 9,8 m/s² é a aceleração da gravidade na Terra sob peso livre, não a aceleração com resultante nula.",
-      "Está incorreta: Uma aceleração infinita exigiria uma força infinitamente grande sobre uma massa finita.",
-      "Está incorreta: A cor do objeto é uma propriedade óptica sem qualquer relevância para a dinâmica newtoniana."
+      "Está incorreta: O atrito calçado-solo é uma manifestação macroscópica de forças eletromagnéticas de contacto.",
+      "Está incorreta: A flexão do cotovelo é um sistema de alavancas osteomuscular mecânico (Tópico 1).",
+      "Está incorreta: O amortecimento de cartilagens é um comportamento viscoelástico reológico (Tópico 2)."
     ],
-    "nursingApplication": "Ao empurrar um carrinho a velocidade constante e em linha reta, a aceleração é rigorosamente nula."
+    "nursingApplication": "Compreensão essencial para os futuros tópicos de física nuclear e aplicações terapêuticas de radioisótopos."
   },
   {
     "id": 1066,
     "topicId": 1,
-    "question": "Um equipamento desloca-se em linha reta com velocidade constante de 1,5 m/s num piso plano. O que se pode concluir sobre as forças?",
+    "question": "A medição do peso de um utente numa balança hospitalar decorre diretamente de qual das 4 forças fundamentais?",
     "options": [
-      "A força propulsora para a frente é dez vezes superior às forças de atrito.",
-      "Não existe nenhuma força a atuar sobre o corpo, nem sequer o peso ou a força normal.",
-      "A resultante de todas as forças que atuam sobre ele é rigorosamente nula (Fr = 0).",
-      "A aceleração do equipamento é constante e igual a 1,5 m/s²."
+      "Da força nuclear forte que une o núcleo das células da pele.",
+      "Da força nuclear fraca que causa decaimento radioativo ósseo.",
+      "Da força da gravidade (atração gravítica entre a massa do utente e a massa da Terra).",
+      "Exclusivamente de forças magnéticas repulsivas geradas pelo solo."
     ],
     "correctIndex": 2,
-    "explanation": "Movimento retilíneo e uniforme (velocidade vetorial constante) implica aceleração nula e força resultante nula.",
+    "explanation": "O peso é a força de atração gravítica mútua entre a massa corporal do doente e o planeta Terra, dada por P = m · g (Slides 28 e 43).",
     "distractorAnalysis": [
-      "Está incorreta: Se a força para a frente superasse o atrito, haveria aceleração e a velocidade aumentaria.",
-      "Está incorreta: Forças como o peso e a reação normal continuam a existir, mas equilibram-se perfeitamente (resultante nula).",
-      "Está incorreta: Se a velocidade é constante, a variação de velocidade é nula, logo a aceleração é 0 m/s² e não 1,5 m/s²."
+      "Está incorreta: A força nuclear forte atua apenas dentro dos núcleos atómicos, não produzindo peso na balança.",
+      "Está incorreta: A força nuclear fraca medeia desintegrações radioativas subatómicas, sem gerar o peso macroscópico.",
+      "Está incorreta: O peso não decorre de campos magnéticos repulsivos, mas sim da atração gravítica universal."
     ],
-    "nursingApplication": "Manter um carrinho a rolar a velocidade constante exige apenas uma força que anule o atrito das rodas."
+    "nursingApplication": "Ajuda a clarificar por que o peso varia com a gravidade local enquanto a massa se mantém invariável."
   },
   {
     "id": 1067,
     "topicId": 1,
-    "question": "Porque é mais difícil iniciar o movimento de uma caixa pesada do que de uma caixa leve em repouso no chão?",
+    "question": "No interior do núcleo atómico, protões com a mesma carga positiva repelem-se eletrostaticamente. O que impede o núcleo de explodir (Slide 30)?",
     "options": [
-      "Porque a caixa leve não obedece à 1ª Lei de Newton e move-se sem necessidade de força.",
-      "Porque a gravidade só atua sobre objetos com massa superior a cinquenta quilogramas.",
-      "Porque os corpos pesados perdem eletrões espontaneamente quando colocados em contacto com o piso.",
-      "Porque a caixa mais pesada tem maior massa, o que significa que possui maior inércia e oferece maior resistência à aceleração."
+      "A força da gravidade que atrai os protões com intensidade infinitamente superior.",
+      "O atrito cinético que imobiliza as partículas nas órbitas nucleares.",
+      "A força normal exercida pela membrana nuclear celular.",
+      "A força nuclear forte, que atua como 'cola' superando a repulsão eletromagnética a distâncias ultracurtas."
     ],
     "correctIndex": 3,
-    "explanation": "Maior massa implica maior inércia translacional, exigindo uma força maior para produzir qualquer aceleração inicial.",
+    "explanation": "A força nuclear forte é ordens de grandeza mais intensa que a repulsão eletromagnética a distâncias subatómicas, atuando como a 'cola' que mantém os nucleões firmemente unidos (Slide 30).",
     "distractorAnalysis": [
-      "Está incorreta: A 1ª Lei de Newton aplica-se a todos os corpos materiais sem exceção, independentemente da massa.",
-      "Está incorreta: A gravidade atua sobre todos os corpos com massa, por menor que ela seja.",
-      "Está incorreta: O atrito e a inércia mecânica decorrem da física clássica, sem perda espontânea de eletrões em repouso."
+      "Está incorreta: A gravidade entre partículas elementares é de intensidade desprezível quando comparada com a repulsão elétrica.",
+      "Está incorreta: Atrito cinético é um fenómeno macroscópico de contacto mecânico, não existindo no interior do núcleo.",
+      "Está incorreta: A membrana nuclear é uma estrutura celular biológica macromolecular, sem efeito nas forças de coesão atómica."
     ],
-    "nursingApplication": "Explica o esforço acrescido ao iniciar o movimento de carrinhos pesados a partir do repouso."
+    "nursingApplication": "Introduz a estabilidade atómica necessária para compreender isótopos estáveis e radioativos em medicina."
   },
   {
     "id": 1068,
     "topicId": 1,
-    "question": "O que é um Referencial Inercial na mecânica newtoniana?",
+    "question": "As forças de atrito entre a pele e os lençóis e a resistência mecânica de contacto têm origem microscópica em qual força fundamental?",
     "options": [
-      "Um referencial no qual um corpo livre de forças resultantes se encontra em repouso ou em movimento retilíneo e uniforme.",
-      "Um referencial que gira a alta velocidade com aceleração centrípeta constante.",
-      "Um referencial onde todas as leis de Newton deixam de ser válidas por efeito da relatividade.",
-      "Um sistema de coordenadas exclusivo do interior de núcleos atómicos em desintegração."
+      "Na força eletromagnética (interações eletrostáticas entre os átomos e moléculas das superfícies em contacto).",
+      "Na força gravitacional entre as massas dos átomos do tecido do lençol.",
+      "Na força nuclear fraca que desintegra as fibras têxteis.",
+      "Na força nuclear forte que funde a pele com o colchão hospitalar."
     ],
     "correctIndex": 0,
-    "explanation": "Um referencial inercial é aquele onde a 1ª Lei de Newton se verifica rigorosamente (não acelerado).",
+    "explanation": "Todas as forças de contacto macroscópicas (atrito, força normal, tensão muscular, elasticidade) decorrem fundamentalmente de interações eletromagnéticas entre as nuvens eletrónicas dos átomos em contacto.",
     "distractorAnalysis": [
-      "Está incorreta: Um referencial em rotação possui aceleração centrípeta, sendo um referencial não inercial.",
-      "Está incorreta: As leis de Newton são formalmente definidas e válidas precisamente em referenciais inerciais.",
-      "Está incorreta: A mecânica newtoniana de referenciais inerciais descreve a dinâmica macroscópica clássica."
+      "Está incorreta: A atração gravítica atómica é infinitamente fraca para gerar atrito mecânico tangível.",
+      "Está incorreta: A força nuclear fraca não participa nas forças de atrito ou coesão estrutural macroscópica.",
+      "Está incorreta: Não há fusão nuclear entre pele e tecidos biológicos nas interações do dia a dia."
     ],
-    "nursingApplication": "O solo hospitalar pode ser considerado com excelente aproximação um referencial inercial para análise de movimentos."
+    "nursingApplication": "Liga o conhecimento da física fundamental à compreensão das forças de corte e cisalhamento na pele de utentes acamados."
   },
   {
     "id": 1069,
     "topicId": 1,
-    "question": "Duas forças que atuam sobre a mesma reta de suporte designam-se colineares. Para que um corpo sujeito a duas forças colineares permaneça em repouso estático, que condição devem essas forças cumprir?",
+    "question": "Na expressão matemática da força da gravidade apresentada no Slide 28 (P = m · g), o que representam as letras 'm' e 'g'?",
     "options": [
-      "Devem possuir intensidades diferentes e o mesmo sentido no espaço.",
-      "Devem possuir rigorosamente a mesma intensidade e sentidos opostos, anulando-se mutuamente na soma vetorial.",
-      "Devem formar um ângulo de noventa graus entre as suas retas de suporte.",
-      "Devem atuar com uma diferença temporal de vários segundos entre si."
+      "m = momento da força e g = grama de substância.",
+      "m = massa do corpo (em kg) e g = aceleração gravítica local (em m/s²).",
+      "m = metros percorridos e g = grau de inclinação da rampa.",
+      "m = músculo tracionado e g = goniometria articular da articulação."
     ],
     "correctIndex": 1,
-    "explanation": "Para forças colineares, a resultante nula exige F1 + F2 = 0, o que implica intensidades iguais e sentidos contrários.",
+    "explanation": "Na fórmula P = m · g, 'm' representa a massa do corpo (em quilogramas no SI) e 'g' a aceleração devida à gravidade local (aproximadamente 9,8 m/s² à superfície da Terra).",
     "distractorAnalysis": [
-      "Está incorreta: Se tiverem o mesmo sentido, as forças somam-se e provocam aceleração do corpo.",
-      "Está incorreta: Formar um ângulo de 90° caracteriza forças perpendiculares ou concorrentes, não colineares.",
-      "Está incorreta: O equilíbrio estático de forças requer ação simultânea permanente sobre o corpo."
+      "Está incorreta: Momento da força representa-se por M e tem fórmula M = F · b, não P = m · g.",
+      "Está incorreta: Metros é unidade de distância e rampa inclina-se em graus, não constando na fórmula do peso vertical.",
+      "Está incorreta: Termos anatómicos não correspondem às variáveis formais da física newtoniana na fórmula P = m · g."
     ],
-    "nursingApplication": "Exemplo das forças que atuam quando dois operadores puxam uma cinta em sentidos opostos com igual intensidade."
+    "nursingApplication": "Permite calcular o peso exato de doentes e cargas para dimensionamento seguro de equipamentos."
   },
   {
     "id": 1070,
     "topicId": 1,
-    "question": "Se um equipamento hospitalar com uma massa inercial de 30 kg for transportado para a superfície da Lua (onde a gravidade é 1/6 da terrestre), o que acontece à sua inércia?",
+    "question": "Nos meios de diagnóstico e terapia nuclear (como PET ou cintigrafia), que forças fundamentais governam as emissões e a estabilidade atómica?",
     "options": [
-      "Reduz-se a um sexto da inércia que possuía na Terra, tornando-se seis vezes mais fácil de acelerar.",
-      "Aumenta para seis vezes o valor original por efeito da ausência de atmosfera lunar.",
-      "Permanece rigorosamente inalterada, porque a inércia depende exclusivamente da massa do corpo (30 kg) e não do campo gravítico local.",
-      "Passa a ser rigorosamente nula porque na Lua não existe gravidade suficiente para criar matéria."
+      "Apenas o atrito cinético e a força normal das marquesas.",
+      "Exclusivamente a gravidade newtoniana dos órgãos abdominais.",
+      "As forças nucleares (forte e fraca) e a força eletromagnética.",
+      "Nenhuma força física, operando apenas por telepatia quântica."
     ],
     "correctIndex": 2,
-    "explanation": "A massa inercial é uma propriedade invariante do corpo. A inércia (resistência à aceleração F = m·a) é rigorosamente a mesma na Terra ou na Lua.",
+    "explanation": "A estabilidade do núcleo, as transformações radioativas (como decaimento beta mediado pela força fraca) e a emissão de radiação eletromagnética gama são regidas pelas forças nucleares e eletromagnética.",
     "distractorAnalysis": [
-      "Está incorreta: O que se reduz a 1/6 é o peso (P = m·g), mas a massa e a inércia permanecem idênticas.",
-      "Está incorreta: A ausência de atmosfera não altera a massa inercial do corpo.",
-      "Está incorreta: Existe gravidade na Lua (cerca de 1,62 m/s²), e a matéria preserva a sua massa inercial no espaço."
+      "Está incorreta: Atrito e normal são forças macroscópicas mecânicas, não responsáveis pela desintegração radioativa.",
+      "Está incorreta: A gravidade não tem magnitude para induzir processos de emissão radioativa nuclear.",
+      "Está incorreta: A medicina nuclear apoia-se em leis rigorosas e reprodutíveis da física atómica e nuclear."
     ],
-    "nursingApplication": "Demonstra a diferença conceptual fundamental entre a massa inercial (invariável) e a força peso (dependente da gravidade)."
+    "nursingApplication": "Faz a ponte entre a mecânica introdutória e as futuras aulas de proteção radiológica e diagnóstico por imagem."
   },
   {
     "id": 1071,
     "topicId": 1,
-    "question": "Qual é o enunciado fundamental da 1ª Lei de Newton (Lei da Inércia)?",
+    "question": "Qual é a definição exata de Força Normal (N) apresentada nos Slides 33 e 34 de Biofísica?",
     "options": [
-      "Para cada ação aplicada sobre um corpo, existe uma reação de intensidade dupla orientada no mesmo sentido.",
-      "A aceleração de um corpo é inversamente proporcional à força resultante e diretamente proporcional à sua massa.",
-      "Todos os corpos materiais aceleram espontaneamente a uma taxa constante quando livres de qualquer força externa.",
-      "Um corpo em repouso permanece em repouso e um corpo em movimento retilíneo uniforme permanece em movimento, a menos que uma força resultante não nula atue sobre ele."
+      "Força tangencial que se opõe continuamente ao movimento de deslizamento.",
+      "Força centrípeta responsável por manter o sangue a circular nas artérias coronárias.",
+      "Força de tração exercida por um tendão para fletir o antebraço sobre o braço.",
+      "Força perpendicular exercida por uma superfície sobre o corpo que nela se apoia."
     ],
     "correctIndex": 3,
-    "explanation": "A 1ª Lei de Newton postula que, sem força resultante externa (Fr = 0), a velocidade vetorial do corpo permanece constante.",
+    "explanation": "O Slide 33 define textualmente: 'Força normal (N): Força perpendicular exercida por uma superfície sobre o corpo que nela se apoia'.",
     "distractorAnalysis": [
-      "Está incorreta: A 3ª Lei estabelece ação e reação com a mesma intensidade e sentidos opostos, nunca intensidade dupla no mesmo sentido.",
-      "Está incorreta: A 2ª Lei estabelece que a aceleração é diretamente proporcional à força e inversamente proporcional à massa (a = F/m).",
-      "Está incorreta: Sem força resultante externa, um corpo não acelera; mantém velocidade vetorial rigorosamente constante."
+      "Está incorreta: A força tangencial oposta ao movimento é a definição de Força de Atrito (Slide 34).",
+      "Está incorreta: Força centrípeta atua em curvas circulares, não sendo a definição de força de apoio normal.",
+      "Está incorreta: A tração tendinosa é exercida por tecido conjuntivo e atua na linha de inserção do músculo."
     ],
-    "nursingApplication": "Explica por que uma maca parada num corredor plano permanece imóvel até ser empurrada."
+    "nursingApplication": "Conceito fundamental para entender a força mecânica exercida pelo colchão sobre o corpo de um utente acamado."
   },
   {
     "id": 1072,
     "topicId": 1,
-    "question": "O que traduz o conceito físico de Inércia de um corpo?",
+    "question": "Numa cama hospitalar perfeitamente horizontal, qual é a direção da Força Normal exercida pelo colchão sobre o doente?",
     "options": [
-      "A resistência natural que um corpo oferece a qualquer alteração do seu estado de repouso ou de movimento.",
-      "A capacidade de um corpo gerar energia mecânica espontânea a partir do repouso absoluto.",
-      "A velocidade máxima que um corpo pode atingir quando em queda livre num meio viscoso.",
-      "A força invisível que empurra ativamente os corpos para a frente quando estão em movimento retilíneo."
+      "Estritamente vertical e perpendicular à superfície do colchão, apontando para cima.",
+      "Horizontal paralela ao chão, apontando para os pés da cama.",
+      "Inclinada a 45 graus no sentido oblíquo da cabeceira.",
+      "Circular girando em torno do centro de massa do doente."
     ],
     "correctIndex": 0,
-    "explanation": "A inércia é uma propriedade fundamental da matéria pela qual os corpos resistem a acelerações ou desacelerações.",
+    "explanation": "Por definição física, a força 'normal' é sempre perpendicular (ortogonal, a 90 graus) relativamente à superfície de contacto. Sendo o colchão horizontal, a força normal atua na vertical para cima.",
     "distractorAnalysis": [
-      "Está incorreta: A inércia não cria energia mecânica; a energia mecânica obedece ao princípio da conservação da energia.",
-      "Está incorreta: A velocidade máxima em queda num fluido depende do equilíbrio com o atrito viscoso, não da inércia isolada.",
-      "Está incorreta: A inércia não é uma força propulsora; é apenas a tendência passiva para manter o estado atual de movimento."
+      "Está incorreta: Forças paralelas à superfície são tangenciais (como o atrito), não normais.",
+      "Está incorreta: A força normal não tem inclinação de 45º numa superfície horizontal plana.",
+      "Está incorreta: A normal é um vetor linear perpendicular, não um vetor com trajetória circular rotativa."
     ],
-    "nursingApplication": "Compreender a inércia ajuda a antecipar que travar uma maca com carga exige esforço mecânico."
+    "nursingApplication": "Garante a compreensão do vetor de força responsável por sustentar o peso corporal do doente no leito."
   },
   {
     "id": 1073,
     "topicId": 1,
-    "question": "De que grandeza física depende exclusivamente a inércia translacional de um corpo na mecânica clássica?",
+    "question": "Por que razão a Força Normal (N) que atua sobre um utente deitado NÃO constitui o par ação-reação do seu Peso (P)?",
     "options": [
-      "Da sua cor e temperatura superficial.",
-      "Da sua massa inercial (m).",
-      "Do volume geométrico independente da massa.",
-      "Da aceleração da gravidade do planeta."
+      "Porque a força normal tem sempre o dobro da intensidade do peso do corpo.",
+      "Porque tanto N como P atuam sobre o mesmo corpo (o utente), violando a 3ª Lei de Newton.",
+      "Porque a força normal só existe quando o doente se encontra em movimento acelerado.",
+      "Porque a força normal é uma grandeza puramente imaginária sem unidade de medida."
     ],
     "correctIndex": 1,
-    "explanation": "A massa é a medida quantitativa direta da inércia de um corpo: corpos com mais massa têm maior inércia.",
+    "explanation": "Na 3ª Lei de Newton, a ação e a reação atuam obrigatoriamente em corpos diferentes. Como N e P atuam ambos sobre o mesmo corpo (o doente), eles equilibram-se mutuamente, mas não formam um par ação-reação.",
     "distractorAnalysis": [
-      "Está incorreta: Cor e temperatura não influenciam a inércia translacional de um corpo mecânico.",
-      "Está incorreta: O volume sem considerar a massa não determina a inércia; uma esfera oca tem menos inércia que uma sólida.",
-      "Está incorreta: A massa inercial é uma propriedade intrínseca do corpo, independente do valor local da gravidade."
+      "Está incorreta: Numa superfície horizontal em repouso, N tem exatamente a mesma intensidade que P (N = P).",
+      "Está incorreta: A força normal existe no repouso estático sempre que há contacto e compressão contra uma superfície.",
+      "Está incorreta: A força normal é uma força física real mensurável em Newtons (N)."
     ],
-    "nursingApplication": "Uma maca carregada com 100 kg tem muito maior inércia do que uma maca vazia de 30 kg."
+    "nursingApplication": "Resolve uma das dúvidas conceptuais mais frequentes em testes de Biofísica no ensino superior."
   },
   {
     "id": 1074,
     "topicId": 1,
-    "question": "Quando uma ambulância em marcha trava bruscamente a 80 km/h, o que acontece a um ocupante sem cinto de segurança e porquê?",
+    "question": "Qual é a relação direta entre a Força Normal exercida pelo colchão e o risco de desenvolvimento de lesões de pressão (Slides 37-39)?",
     "options": [
-      "É projetado para trás, porque a inércia puxa ativamente os corpos no sentido oposto ao movimento.",
-      "Permanece imediatamente imóvel em relação ao veículo, porque a gravidade anula a velocidade do corpo.",
-      "É projetado para a frente, porque pela 1ª Lei de Newton o seu corpo tende a manter a velocidade de 80 km/h.",
-      "Acelera verticalmente em direção ao teto, porque a desaceleração converte o peso em força ascensional."
+      "A força normal anula o atrito impedindo qualquer tipo de lesão cutânea.",
+      "A força normal estimula a proliferação celular acelerando a cicatrização de feridas.",
+      "A força normal perpendicular comprime os tecidos moles e capilares contra as proeminências ósseas, ocluindo a microcirculação.",
+      "A força normal provoca desintegração atómica por radiação gama nos tecidos da pele."
     ],
     "correctIndex": 2,
-    "explanation": "Pela Lei da Inércia, quando o veículo trava, os corpos no seu interior mantêm a sua velocidade inicial até sofrerem uma força externa.",
+    "explanation": "A força normal exercida pela superfície do leito comprime os tecidos moles (músculo, tecido celular subcutâneo e derme) contra os ossos subjacentes; a pressão resultante colapsa os capilares sanguíneos provocando isquemia.",
     "distractorAnalysis": [
-      "Está incorreta: A inércia não empurra para trás; a sensação de recuo só ocorre quando o veículo acelera para a frente.",
-      "Está incorreta: O corpo não fica imóvel em relação ao veículo; como o veículo desacelerou, o corpo continua em frente por inércia.",
-      "Está incorreta: A travagem horizontal produz desaceleração horizontal, não criando forças verticais ascensionais espontâneas."
+      "Está incorreta: A força normal não anula o atrito e, quando combinada com este, agrava o dano tecidual.",
+      "Está incorreta: A compressão prolongada causa isquemia e necrose tecidual, não estimulando cicatrização.",
+      "Está incorreta: Lesões de pressão são eventos isquémicos mecânicos, sem relação com desintegrações radioativas."
     ],
-    "nursingApplication": "Demonstra a importância vital do uso de cintos de segurança em veículos de transporte hospitalar."
+    "nursingApplication": "Fundamentação biofísica primária para a mudança sistemática de decúbitos de duas em duas horas em doentes acamados."
   },
   {
     "id": 1075,
     "topicId": 1,
-    "question": "Se a força resultante que atua sobre um carrinho for rigorosamente nula (Fr = 0), qual é a sua aceleração?",
+    "question": "De acordo com a tabela e ilustrações dos slides (Slides 39 e 44), qual é a região anatómica de referência onde a força normal e a pressão sobre a pele são particularmente críticas em decúbito dorsal?",
     "options": [
-      "9,8 m/s².",
-      "Infinita.",
-      "Depende da cor e do material do carrinho.",
-      "Zero (a = 0 m/s²)."
+      "No lobo da orelha.",
+      "Na face anterior da tíbia.",
+      "Na palma da mão.",
+      "Na pele sobre a proeminência óssea do sacro."
     ],
     "correctIndex": 3,
-    "explanation": "De acordo com a 2ª Lei de Newton (Fr = m·a), se a força resultante é nula (Fr = 0), a aceleração é forçosamente zero.",
+    "explanation": "Os Slides 39 e 44 destacam a 'Pressão capilar na pele sobre o sacro' como o exemplo biofísico de referência no estudo da força normal e lesões de pressão.",
     "distractorAnalysis": [
-      "Está incorreta: 9,8 m/s² é a aceleração da gravidade na Terra sob peso livre, não a aceleração com resultante nula.",
-      "Está incorreta: Uma aceleração infinita exigiria uma força infinitamente grande sobre uma massa finita.",
-      "Está incorreta: A cor do objeto é uma propriedade óptica sem qualquer relevância para a dinâmica newtoniana."
+      "Está incorreta: O lobo da orelha não suporta carga corporal significativa em decúbito dorsal clássico.",
+      "Está incorreta: A face anterior da tíbia suporta pressão em decúbito ventral, não sendo a zona sacra do slide.",
+      "Está incorreta: A palma da mão não apoia o peso corporal do tronco no leito."
     ],
-    "nursingApplication": "Ao empurrar um carrinho a velocidade constante e em linha reta, a aceleração é rigorosamente nula."
+    "nursingApplication": "Área prioritária de inspeção de enfermagem diária em utentes imobilizados na enfermaria."
   },
   {
     "id": 1076,
     "topicId": 1,
-    "question": "Um equipamento desloca-se em linha reta com velocidade constante de 1,5 m/s num piso plano. O que se pode concluir sobre as forças?",
+    "question": "Um utente com massa de 70 kg está em repouso estático numa cama hospitalar horizontal. Adotando g = 9,8 m/s², qual é a intensidade da Força Normal total exercida pelo leito sobre o utente?",
     "options": [
-      "A resultante de todas as forças que atuam sobre ele é rigorosamente nula (Fr = 0).",
-      "A força propulsora para a frente é dez vezes superior às forças de atrito.",
-      "Não existe nenhuma força a atuar sobre o corpo, nem sequer o peso ou a força normal.",
-      "A aceleração do equipamento é constante e igual a 1,5 m/s²."
+      "686 N",
+      "70 N",
+      "7,14 N",
+      "0 N"
     ],
     "correctIndex": 0,
-    "explanation": "Movimento retilíneo e uniforme (velocidade vetorial constante) implica aceleração nula e força resultante nula.",
+    "explanation": "Num leito horizontal em equilíbrio estático, a força normal equilibra exatamente o peso do corpo: N = P = m · g = 70 kg × 9,8 m/s² = 686 N.",
     "distractorAnalysis": [
-      "Está incorreta: Se a força para a frente superasse o atrito, haveria aceleração e a velocidade aumentaria.",
-      "Está incorreta: Forças como o peso e a reação normal continuam a existir, mas equilibram-se perfeitamente (resultante nula).",
-      "Está incorreta: Se a velocidade é constante, a variação de velocidade é nula, logo a aceleração é 0 m/s² e não 1,5 m/s²."
+      "Está incorreta: 70 é a massa em quilogramas (kg), que tem de ser multiplicada por g (9,8) para obter a força em Newtons.",
+      "Está incorreta: 7,14 resultaria de dividir 70 por 9,8, o que está matematicamente errado.",
+      "Está incorreta: A força normal não é nula, caso contrário o doente cairia em queda livre através do colchão."
     ],
-    "nursingApplication": "Manter um carrinho a rolar a velocidade constante exige apenas uma força que anule o atrito das rodas."
+    "nursingApplication": "Permite calcular a carga mecânica total suportada pela estrutura do colchão e distribuída pela pele."
   },
   {
     "id": 1077,
     "topicId": 1,
-    "question": "Porque é mais difícil iniciar o movimento de uma caixa pesada do que de uma caixa leve em repouso no chão?",
+    "question": "Qual é o objetivo biomecânico do uso de colchões especiais de ar ou viscoelásticos (Slide 39)?",
     "options": [
-      "Porque a caixa leve não obedece à 1ª Lei de Newton e move-se sem necessidade de força.",
-      "Porque a caixa mais pesada tem maior massa, o que significa que possui maior inércia e oferece maior resistência à aceleração.",
-      "Porque a gravidade só atua sobre objetos com massa superior a cinquenta quilogramas.",
-      "Porque os corpos pesados perdem eletrões espontaneamente quando colocados em contacto com o piso."
+      "Eliminar totalmente a massa inercial do corpo do doente.",
+      "Aumentar a área de contacto para diminuir a pressão exercida nos pontos de apoio (p = F / A).",
+      "Aumentar a força normal concentrando-a num único ponto ósseo.",
+      "Acelerar o doente em movimentos periódicos contínuos a alta velocidade."
     ],
     "correctIndex": 1,
-    "explanation": "Maior massa implica maior inércia translacional, exigindo uma força maior para produzir qualquer aceleração inicial.",
+    "explanation": "A força normal total (peso do doente) permanece constante. Ao moldar-se ao corpo, o colchão aumenta a área de superfície de contacto (A), reduzindo drasticamente a pressão resultante (p = F / A) abaixo do limite de oclusão capilar.",
     "distractorAnalysis": [
-      "Está incorreta: A 1ª Lei de Newton aplica-se a todos os corpos materiais sem exceção, independentemente da massa.",
-      "Está incorreta: A gravidade atua sobre todos os corpos com massa, por menor que ela seja.",
-      "Está incorreta: O atrito e a inércia mecânica decorrem da física clássica, sem perda espontânea de eletrões em repouso."
+      "Está incorreta: Nenhum colchão altera a massa do utente; a massa é uma constante intrínseca do organismo.",
+      "Está incorreta: Concentrar a força aumentaria perigosamente a pressão pontual, acelerando a necrose dos tecidos.",
+      "Está incorreta: Colchões alternantes funcionam com insuflação lenta e suave, sem acelerações bruscas."
     ],
-    "nursingApplication": "Explica o esforço acrescido ao iniciar o movimento de carrinhos pesados a partir do repouso."
+    "nursingApplication": "Justifica a seleção e utilização correta de superfícies de redistribuição de pressão na prática hospitalar."
   },
   {
     "id": 1078,
     "topicId": 1,
-    "question": "O que é um Referencial Inercial na mecânica newtoniana?",
+    "question": "Quando se eleva a cabeceira da cama articulada transformando-a num plano inclinado, o que acontece à componente de Força Normal exercida pelo colchão?",
     "options": [
-      "Um referencial que gira a alta velocidade com aceleração centrípeta constante.",
-      "Um referencial onde todas as leis de Newton deixam de ser válidas por efeito da relatividade.",
-      "Um referencial no qual um corpo livre de forças resultantes se encontra em repouso ou em movimento retilíneo e uniforme.",
-      "Um sistema de coordenadas exclusivo do interior de núcleos atómicos em desintegração."
+      "Aumenta proporcionalmente para o triplo do peso original.",
+      "Permanece rigorosamente inalterada independentemente de qualquer inclinação.",
+      "Diminui, pois parte do peso do corpo passa a ser suportada ao longo do plano na componente tangencial.",
+      "Transforma-se numa força eletromagnética que atrai o doente para a parede."
     ],
     "correctIndex": 2,
-    "explanation": "Um referencial inercial é aquele onde a 1ª Lei de Newton se verifica rigorosamente (não acelerado).",
+    "explanation": "No plano inclinado (Slide 59), a força normal equilibra apenas a componente perpendicular do peso (N = P_n = P · cos θ). À medida que a cama inclina, P_n diminui e a componente tangencial P_t aumenta, fazendo o corpo deslizar.",
     "distractorAnalysis": [
-      "Está incorreta: Um referencial em rotação possui aceleração centrípeta, sendo um referencial não inercial.",
-      "Está incorreta: As leis de Newton são formalmente definidas e válidas precisamente em referenciais inerciais.",
-      "Está incorreta: A mecânica newtoniana de referenciais inerciais descreve a dinâmica macroscópica clássica."
+      "Está incorreta: A força normal nunca excede o peso num plano inclinado estático livre de forças externas adicionais.",
+      "Está incorreta: A força normal varia com a função cosseno da inclinação, diminuindo com o aumento do ângulo.",
+      "Está incorreta: A redistribuição de forças é puramente gravítica e geométrica, sem alteração de campos eletromagnéticos."
     ],
-    "nursingApplication": "O solo hospitalar pode ser considerado com excelente aproximação um referencial inercial para análise de movimentos."
+    "nursingApplication": "Alerta para o facto de que elevar a cabeceira reduz a compressão pura normal, mas introduz deslizamento e forças de cisalhamento."
   },
   {
     "id": 1079,
     "topicId": 1,
-    "question": "Duas forças que atuam sobre a mesma reta de suporte designam-se colineares. Para que um corpo sujeito a duas forças colineares permaneça em repouso estático, que condição devem essas forças cumprir?",
+    "question": "Qual é a unidade padrão no Sistema Internacional para expressar a Força Normal?",
     "options": [
-      "Devem possuir intensidades diferentes e o mesmo sentido no espaço.",
-      "Devem formar um ângulo de noventa graus entre as suas retas de suporte.",
-      "Devem atuar com uma diferença temporal de vários segundos entre si.",
-      "Devem possuir rigorosamente a mesma intensidade e sentidos opostos, anulando-se mutuamente na soma vetorial."
+      "Pascal (Pa).",
+      "Quilograma (kg).",
+      "Newton-metro (N·m).",
+      "Newton (N)."
     ],
     "correctIndex": 3,
-    "explanation": "Para forças colineares, a resultante nula exige F1 + F2 = 0, o que implica intensidades iguais e sentidos contrários.",
+    "explanation": "A Força Normal é uma força, pelo que a sua unidade no Sistema Internacional é o Newton (N).",
     "distractorAnalysis": [
-      "Está incorreta: Se tiverem o mesmo sentido, as forças somam-se e provocam aceleração do corpo.",
-      "Está incorreta: Formar um ângulo de 90° caracteriza forças perpendiculares ou concorrentes, não colineares.",
-      "Está incorreta: O equilíbrio estático de forças requer ação simultânea permanente sobre o corpo."
+      "Está incorreta: Pascal (Pa) é a unidade de pressão (força por unidade de área).",
+      "Está incorreta: Quilograma (kg) é a unidade de massa.",
+      "Está incorreta: Newton-metro (N·m) é a unidade de momento de uma força (torque) ou trabalho."
     ],
-    "nursingApplication": "Exemplo das forças que atuam quando dois operadores puxam uma cinta em sentidos opostos com igual intensidade."
+    "nursingApplication": "Previne confusões terminológicas e dimensionais na resolução de problemas físicos de apoio e sustentação."
   },
   {
     "id": 1080,
     "topicId": 1,
-    "question": "Se um equipamento hospitalar com uma massa inercial de 30 kg for transportado para a superfície da Lua (onde a gravidade é 1/6 da terrestre), o que acontece à sua inércia?",
+    "question": "O Slide 36 pergunta: 'A força normal é um exemplo da 3ª Lei de Newton?'. Onde se localiza a reação à força normal exercida pelo colchão sobre o doente?",
     "options": [
-      "Permanece rigorosamente inalterada, porque a inércia depende exclusivamente da massa do corpo (30 kg) e não do campo gravítico local.",
-      "Reduz-se a um sexto da inércia que possuía na Terra, tornando-se seis vezes mais fácil de acelerar.",
-      "Aumenta para seis vezes o valor original por efeito da ausência de atmosfera lunar.",
-      "Passa a ser rigorosamente nula porque na Lua não existe gravidade suficiente para criar matéria."
+      "Na superfície do colchão (é a força que o corpo do doente exerce sobre o colchão para baixo).",
+      "No centro de gravidade da Terra por atração cósmica.",
+      "Nas rodas da cama que contactam com o pavimento da enfermaria.",
+      "No ar atmosférico que circunda o leito do utente."
     ],
     "correctIndex": 0,
-    "explanation": "A massa inercial é uma propriedade invariante do corpo. A inércia (resistência à aceleração F = m·a) é rigorosamente a mesma na Terra ou na Lua.",
+    "explanation": "Se o corpo A é o doente e o corpo B é o colchão: o colchão exerce a força normal N no doente (para cima); a reação correspondente da 3ª Lei é exercida pelo doente sobre o colchão (para baixo com igual intensidade).",
     "distractorAnalysis": [
-      "Está incorreta: O que se reduz a 1/6 é o peso (P = m·g), mas a massa e a inércia permanecem idênticas.",
-      "Está incorreta: A ausência de atmosfera não altera a massa inercial do corpo.",
-      "Está incorreta: Existe gravidade na Lua (cerca de 1,62 m/s²), e a matéria preserva a sua massa inercial no espaço."
+      "Está incorreta: A reação à força do peso (atração Terra-doente) é que se situa no centro da Terra, não a reação da força normal de contacto.",
+      "Está incorreta: A força nas rodas é a interação entre as rodas e o chão, um contacto mecânico distinto.",
+      "Está incorreta: O ar circundante não é o corpo de apoio que exerce a força normal de sustentação da cama."
     ],
-    "nursingApplication": "Demonstra a diferença conceptual fundamental entre a massa inercial (invariável) e a força peso (dependente da gravidade)."
+    "nursingApplication": "Consolida a aplicação rigorosa da 3ª Lei de Newton e a identificação correta dos pares de forças em contacto."
   },
   {
     "id": 1081,
     "topicId": 1,
-    "question": "Qual é o enunciado fundamental da 1ª Lei de Newton (Lei da Inércia)?",
+    "question": "Qual é a definição exata de Força de Atrito apresentada no Slide 34 de Biofísica?",
     "options": [
-      "Para cada ação aplicada sobre um corpo, existe uma reação de intensidade dupla orientada no mesmo sentido.",
-      "Um corpo em repouso permanece em repouso e um corpo em movimento retilíneo uniforme permanece em movimento, a menos que uma força resultante não nula atue sobre ele.",
-      "A aceleração de um corpo é inversamente proporcional à força resultante e diretamente proporcional à sua massa.",
-      "Todos os corpos materiais aceleram espontaneamente a uma taxa constante quando livres de qualquer força externa."
+      "Força perpendicular exercida por uma superfície que suporta um corpo em repouso.",
+      "Força tangencial que se opõe ao movimento.",
+      "Atração gravítica exercida pela Terra sobre corpos com grande quantidade de matéria.",
+      "Energia radiante emitida por núcleos atómicos instáveis em transição."
     ],
     "correctIndex": 1,
-    "explanation": "A 1ª Lei de Newton postula que, sem força resultante externa (Fr = 0), a velocidade vetorial do corpo permanece constante.",
+    "explanation": "O Slide 34 estabelece textualmente: 'Força de atrito: Força tangencial que se opõe ao movimento'.",
     "distractorAnalysis": [
-      "Está incorreta: A 3ª Lei estabelece ação e reação com a mesma intensidade e sentidos opostos, nunca intensidade dupla no mesmo sentido.",
-      "Está incorreta: A 2ª Lei estabelece que a aceleração é diretamente proporcional à força e inversamente proporcional à massa (a = F/m).",
-      "Está incorreta: Sem força resultante externa, um corpo não acelera; mantém velocidade vetorial rigorosamente constante."
+      "Está incorreta: A força perpendicular é a Força Normal (N), não a força de atrito.",
+      "Está incorreta: A atração gravítica define a Força da Gravidade ou Peso (Slide 28).",
+      "Está incorreta: Energia radiante emitida por núcleos é a radiação nuclear, não a força de atrito mecânica."
     ],
-    "nursingApplication": "Explica por que uma maca parada num corredor plano permanece imóvel até ser empurrada."
+    "nursingApplication": "Permite entender as forças de resistência encontradas ao empurrar carrinhos, macas e posicionar doentes."
   },
   {
     "id": 1082,
     "topicId": 1,
-    "question": "O que traduz o conceito físico de Inércia de um corpo?",
+    "question": "Como se distinguem o 'Atrito estático' e o 'Atrito cinético' de acordo com o Slide 34?",
     "options": [
-      "A capacidade de um corpo gerar energia mecânica espontânea a partir do repouso absoluto.",
-      "A velocidade máxima que um corpo pode atingir quando em queda livre num meio viscoso.",
-      "A resistência natural que um corpo oferece a qualquer alteração do seu estado de repouso ou de movimento.",
-      "A força invisível que empurra ativamente os corpos para a frente quando estão em movimento retilíneo."
+      "O atrito estático atua na água e o atrito cinético atua exclusivamente no ar.",
+      "O atrito estático atua no plano vertical e o atrito cinético no plano oblíquo.",
+      "Atrito estático: impede o movimento de começar; Atrito cinético: força de resistência durante o movimento.",
+      "Não há distinção física entre ambos, sendo termos exatamente idênticos."
     ],
     "correctIndex": 2,
-    "explanation": "A inércia é uma propriedade fundamental da matéria pela qual os corpos resistem a acelerações ou desacelerações.",
+    "explanation": "O Slide 34 categoriza: 'Atrito estático: Impede o movimento de começar; Atrito cinético: Força de resistência durante o movimento'.",
     "distractorAnalysis": [
-      "Está incorreta: A inércia não cria energia mecânica; a energia mecânica obedece ao princípio da conservação da energia.",
-      "Está incorreta: A velocidade máxima em queda num fluido depende do equilíbrio com o atrito viscoso, não da inércia isolada.",
-      "Está incorreta: A inércia não é uma força propulsora; é apenas a tendência passiva para manter o estado atual de movimento."
+      "Está incorreta: Resistência em fluidos (água ou ar) é atrito viscoso/hidrodinâmico, não a definição dos dois regimes dos slides.",
+      "Está incorreta: Ambos atuam tangencialmente a superfícies de contacto, independentemente da orientação no espaço.",
+      "Está incorreta: A distinção é fundamental e reflete dois estados mecânicos distintos (repouso vs movimento)."
     ],
-    "nursingApplication": "Compreender a inércia ajuda a antecipar que travar uma maca com carga exige esforço mecânico."
+    "nursingApplication": "Ajuda a planear manobras de mobilização sabendo que o arranque inicial requer a maior força."
   },
   {
     "id": 1083,
     "topicId": 1,
-    "question": "De que grandeza física depende exclusivamente a inércia translacional de um corpo na mecânica clássica?",
+    "question": "Qual é a relação fundamental entre atrito estático e cinético destacada no Slide 34 com ponto de exclamação?",
     "options": [
-      "Da sua cor e temperatura superficial.",
-      "Do volume geométrico independente da massa.",
-      "Da aceleração da gravidade do planeta.",
-      "Da sua massa inercial (m)."
+      "O atrito cinético é sempre dez vezes superior ao atrito estático.",
+      "O atrito estático é rigorosamente igual a zero em qualquer material.",
+      "O atrito estático e o cinético têm sempre a mesma intensidade em todos os corpos.",
+      "O atrito estático é sempre superior ao atrito cinético!"
     ],
     "correctIndex": 3,
-    "explanation": "A massa é a medida quantitativa direta da inércia de um corpo: corpos com mais massa têm maior inércia.",
+    "explanation": "O Slide 34 enfatiza expressamente: 'O atrito estático é sempre superior ao atrito cinético!'.",
     "distractorAnalysis": [
-      "Está incorreta: Cor e temperatura não influenciam a inércia translacional de um corpo mecânico.",
-      "Está incorreta: O volume sem considerar a massa não determina a inércia; uma esfera oca tem menos inércia que uma sólida.",
-      "Está incorreta: A massa inercial é uma propriedade intrínseca do corpo, independente do valor local da gravidade."
+      "Está incorreta: O atrito cinético é menor que o atrito estático máximo, nunca dez vezes superior.",
+      "Está incorreta: O atrito estático é diferente de zero sempre que as superfícies em contacto apresentam rugosidade microscópica.",
+      "Está incorreta: O atrito cinético é inferior ao atrito estático de arranque na esmagadora maioria dos materiais comuns."
     ],
-    "nursingApplication": "Uma maca carregada com 100 kg tem muito maior inércia do que uma maca vazia de 30 kg."
+    "nursingApplication": "Princípio físico de enorme relevância ergonómica para profissionais de enfermagem."
   },
   {
     "id": 1084,
     "topicId": 1,
-    "question": "Quando uma ambulância em marcha trava bruscamente a 80 km/h, o que acontece a um ocupante sem cinto de segurança e porquê?",
+    "question": "Qual é o exemplo prático de enfermagem apresentado no Slide 35 para ilustrar que o atrito estático é superior ao cinético?",
     "options": [
-      "É projetado para a frente, porque pela 1ª Lei de Newton o seu corpo tende a manter a velocidade de 80 km/h.",
-      "É projetado para trás, porque a inércia puxa ativamente os corpos no sentido oposto ao movimento.",
-      "Permanece imediatamente imóvel em relação ao veículo, porque a gravidade anula a velocidade do corpo.",
-      "Acelera verticalmente em direção ao teto, porque a desaceleração converte o peso em força ascensional."
+      "É mais difícil empurrar uma maca em repouso do que uma maca em movimento.",
+      "É mais difícil pesar um doente sentado do que um doente em pé.",
+      "A velocidade de infusão do soro é mais rápida com agulha de menor calibre.",
+      "A temperatura da pele diminui quando o utente caminha descalço no hospital."
     ],
     "correctIndex": 0,
-    "explanation": "Pela Lei da Inércia, quando o veículo trava, os corpos no seu interior mantêm a sua velocidade inicial até sofrerem uma força externa.",
+    "explanation": "O Slide 35 cita expressamente: 'É mais difícil empurrar uma maca em repouso do que uma maca em movimento', demonstrando que vencer o atrito estático inicial exige maior força do que manter o andamento contra o atrito cinético.",
     "distractorAnalysis": [
-      "Está incorreta: A inércia não empurra para trás; a sensação de recuo só ocorre quando o veículo acelera para a frente.",
-      "Está incorreta: O corpo não fica imóvel em relação ao veículo; como o veículo desacelerou, o corpo continua em frente por inércia.",
-      "Está incorreta: A travagem horizontal produz desaceleração horizontal, não criando forças verticais ascensionais espontâneas."
+      "Está incorreta: A balança mede a mesma massa corporal independentemente da postura do utente.",
+      "Está incorreta: Menor calibre de agulha aumenta a resistência hidrodinâmica e abranda o fluxo, pertencente à hidrodinâmica.",
+      "Está incorreta: A termorregulação da pele é um fenómeno térmico metabólico, não o exemplo do Slide 35."
     ],
-    "nursingApplication": "Demonstra a importância vital do uso de cintos de segurança em veículos de transporte hospitalar."
+    "nursingApplication": "Ensina os profissionais a aplicar um esforço inicial controlado ao arrancar com a maca para não lesionar os ombros e coluna."
   },
   {
     "id": 1085,
     "topicId": 1,
-    "question": "Se a força resultante que atua sobre um carrinho for rigorosamente nula (Fr = 0), qual é a sua aceleração?",
+    "question": "Uma força horizontal de 20 N é aplicada a uma maca parada, mas a maca não se move porque o atrito estático máximo é de 50 N. Qual é a força de atrito real que atua na maca nesse momento?",
     "options": [
-      "9,8 m/s².",
-      "Zero (a = 0 m/s²).",
-      "Infinita.",
-      "Depende da cor e do material do carrinho."
+      "50 N em sentido contrário, fazendo a maca andar para trás.",
+      "Exatamente 20 N em sentido oposto, equilibrando perfeitamente a força aplicada.",
+      "0 N, porque o atrito só existe quando o objeto já se está a mover.",
+      "1000 N, multiplicando a força pela gravidade local."
     ],
     "correctIndex": 1,
-    "explanation": "De acordo com a 2ª Lei de Newton (Fr = m·a), se a força resultante é nula (Fr = 0), a aceleração é forçosamente zero.",
+    "explanation": "Enquanto o corpo permanece em repouso, o atrito estático ajusta-se exatamente ao valor da força aplicada para manter o equilíbrio: F_atrito = 20 N (Fr = 0). Os 50 N representam apenas o limite máximo antes de romper o repouso.",
     "distractorAnalysis": [
-      "Está incorreta: 9,8 m/s² é a aceleração da gravidade na Terra sob peso livre, não a aceleração com resultante nula.",
-      "Está incorreta: Uma aceleração infinita exigiria uma força infinitamente grande sobre uma massa finita.",
-      "Está incorreta: A cor do objeto é uma propriedade óptica sem qualquer relevância para a dinâmica newtoniana."
+      "Está incorreta: Se o atrito fosse 50 N contra 20 N aplicados, a maca aceleraria para trás sozinha, o que seria fisicamente absurdo.",
+      "Está incorreta: O atrito estático existe precisamente no repouso para impedir o início do movimento.",
+      "Está incorreta: Multiplicar forças não tem sentido físico para determinar forças de equilíbrio estático."
     ],
-    "nursingApplication": "Ao empurrar um carrinho a velocidade constante e em linha reta, a aceleração é rigorosamente nula."
+    "nursingApplication": "Evita a confusão comum entre o atrito estático instantâneo e o valor de atrito estático limite máximo."
   },
   {
     "id": 1086,
     "topicId": 1,
-    "question": "Um equipamento desloca-se em linha reta com velocidade constante de 1,5 m/s num piso plano. O que se pode concluir sobre as forças?",
+    "question": "Qual é a orientação geométrica (direção e sentido) do vetor Força de Atrito em relação à superfície de contacto?",
     "options": [
-      "A força propulsora para a frente é dez vezes superior às forças de atrito.",
-      "Não existe nenhuma força a atuar sobre o corpo, nem sequer o peso ou a força normal.",
-      "A resultante de todas as forças que atuam sobre ele é rigorosamente nula (Fr = 0).",
-      "A aceleração do equipamento é constante e igual a 1,5 m/s²."
+      "Direção perpendicular à superfície e sentido apontando para o interior do solo.",
+      "Direção vertical ascendente no sentido da força de gravidade.",
+      "Direção tangencial (paralela) à superfície de contacto e sentido oposto ao movimento ou tendência de movimento.",
+      "Direção circular oblíqua rodando no sentido dos ponteiros do relógio."
     ],
     "correctIndex": 2,
-    "explanation": "Movimento retilíneo e uniforme (velocidade vetorial constante) implica aceleração nula e força resultante nula.",
+    "explanation": "A força de atrito é uma força tangencial: a sua linha de ação é sempre paralela à interface de contacto entre os corpos e aponta no sentido oposto ao deslocamento (ou tendência de deslocamento).",
     "distractorAnalysis": [
-      "Está incorreta: Se a força para a frente superasse o atrito, haveria aceleração e a velocidade aumentaria.",
-      "Está incorreta: Forças como o peso e a reação normal continuam a existir, mas equilibram-se perfeitamente (resultante nula).",
-      "Está incorreta: Se a velocidade é constante, a variação de velocidade é nula, logo a aceleração é 0 m/s² e não 1,5 m/s²."
+      "Está incorreta: A força perpendicular é a Força Normal (N), não o atrito.",
+      "Está incorreta: A força vertical descendente é a gravidade (peso); a força de atrito em pisos horizontais é horizontal.",
+      "Está incorreta: O atrito de contacto não tem direção circular rotativa intrínseca."
     ],
-    "nursingApplication": "Manter um carrinho a rolar a velocidade constante exige apenas uma força que anule o atrito das rodas."
+    "nursingApplication": "Fundamental para desenhar e analisar esquemas de forças em rampas e transferências no leito."
   },
   {
     "id": 1087,
     "topicId": 1,
-    "question": "Porque é mais difícil iniciar o movimento de uma caixa pesada do que de uma caixa leve em repouso no chão?",
+    "question": "O que acontece à intensidade da força de resistência por atrito imediatamente após uma maca romper o repouso e começar a deslizar?",
     "options": [
-      "Porque a caixa leve não obedece à 1ª Lei de Newton e move-se sem necessidade de força.",
-      "Porque a gravidade só atua sobre objetos com massa superior a cinquenta quilogramas.",
-      "Porque os corpos pesados perdem eletrões espontaneamente quando colocados em contacto com o piso.",
-      "Porque a caixa mais pesada tem maior massa, o que significa que possui maior inércia e oferece maior resistência à aceleração."
+      "Aumenta instantaneamente para o dobro da força inicial.",
+      "Torna-se infinita parando a maca de forma inamovível.",
+      "Permanece rigorosamente igual ao atrito estático máximo de arranque.",
+      "Diminui para o valor do atrito cinético, tornando a condução mais suave."
     ],
     "correctIndex": 3,
-    "explanation": "Maior massa implica maior inércia translacional, exigindo uma força maior para produzir qualquer aceleração inicial.",
+    "explanation": "Assim que o repouso é vencido, a resistência passa do regime estático máximo para o regime cinético, que é inferior. Por isso, manter o movimento exige menor força do que o arranque inicial.",
     "distractorAnalysis": [
-      "Está incorreta: A 1ª Lei de Newton aplica-se a todos os corpos materiais sem exceção, independentemente da massa.",
-      "Está incorreta: A gravidade atua sobre todos os corpos com massa, por menor que ela seja.",
-      "Está incorreta: O atrito e a inércia mecânica decorrem da física clássica, sem perda espontânea de eletrões em repouso."
+      "Está incorreta: A força de resistência diminui após o arranque, nunca aumenta.",
+      "Está incorreta: Resistência infinita impediria qualquer transporte no mundo físico real.",
+      "Está incorreta: O atrito cinético é inferior ao atrito estático máximo, conforme demonstrado no Slide 34."
     ],
-    "nursingApplication": "Explica o esforço acrescido ao iniciar o movimento de carrinhos pesados a partir do repouso."
+    "nursingApplication": "Permite dosear o esforço físico muscular de modo a aliviar a força após a colocação em marcha do equipamento."
   },
   {
     "id": 1088,
     "topicId": 1,
-    "question": "O que é um Referencial Inercial na mecânica newtoniana?",
+    "question": "Para transferir um utente acamado da cama para a maca com menor esforço físico e maior segurança, que dispositivo de auxílio reduz significativamente a força de atrito?",
     "options": [
-      "Um referencial no qual um corpo livre de forças resultantes se encontra em repouso ou em movimento retilíneo e uniforme.",
-      "Um referencial que gira a alta velocidade com aceleração centrípeta constante.",
-      "Um referencial onde todas as leis de Newton deixam de ser válidas por efeito da relatividade.",
-      "Um sistema de coordenadas exclusivo do interior de núcleos atómicos em desintegração."
+      "Lençóis ou tábuas de deslizamento (transferência) com baixo atrito de contacto.",
+      "Colocar sacos de areia adicionais sobre os pés do doente.",
+      "Aumentar a aspereza dos lençóis utilizando tecidos rugosos e secos.",
+      "Travar firmemente as rodas da maca durante a marcha no corredor."
     ],
     "correctIndex": 0,
-    "explanation": "Um referencial inercial é aquele onde a 1ª Lei de Newton se verifica rigorosamente (não acelerado).",
+    "explanation": "Os lençóis ou pranchas de deslizamento utilizam materiais com coeficientes de atrito extremamente baixos, reduzindo a força de atrito tangencial que a equipa tem de vencer para transferir o utente.",
     "distractorAnalysis": [
-      "Está incorreta: Um referencial em rotação possui aceleração centrípeta, sendo um referencial não inercial.",
-      "Está incorreta: As leis de Newton são formalmente definidas e válidas precisamente em referenciais inerciais.",
-      "Está incorreta: A mecânica newtoniana de referenciais inerciais descreve a dinâmica macroscópica clássica."
+      "Está incorreta: Aumentar a carga aumenta a força normal e consequentemente aumenta o atrito, dificultando a transferência.",
+      "Está incorreta: Tecidos rugosos aumentam o atrito e o cisalhamento da pele, elevando o risco de lesões.",
+      "Está incorreta: Travar as rodas bloqueia o equipamento e impede o movimento, em vez de facilitar o transporte."
     ],
-    "nursingApplication": "O solo hospitalar pode ser considerado com excelente aproximação um referencial inercial para análise de movimentos."
+    "nursingApplication": "Aplicação clínica diária de ergonomia e proteção articular da equipa de enfermagem."
   },
   {
     "id": 1089,
     "topicId": 1,
-    "question": "Duas forças que atuam sobre a mesma reta de suporte designam-se colineares. Para que um corpo sujeito a duas forças colineares permaneça em repouso estático, que condição devem essas forças cumprir?",
+    "question": "Qual é a unidade no Sistema Internacional (SI) utilizada para quantificar a Força de Atrito?",
     "options": [
-      "Devem possuir intensidades diferentes e o mesmo sentido no espaço.",
-      "Devem possuir rigorosamente a mesma intensidade e sentidos opostos, anulando-se mutuamente na soma vetorial.",
-      "Devem formar um ângulo de noventa graus entre as suas retas de suporte.",
-      "Devem atuar com uma diferença temporal de vários segundos entre si."
+      "Quilograma por metro quadrado (kg/m²).",
+      "Newton (N).",
+      "Pascal (Pa).",
+      "Joule por segundo (J/s)."
     ],
     "correctIndex": 1,
-    "explanation": "Para forças colineares, a resultante nula exige F1 + F2 = 0, o que implica intensidades iguais e sentidos contrários.",
+    "explanation": "Como qualquer outra força física (peso, normal, tensão muscular), a força de atrito quantifica-se em Newtons (N) no Sistema Internacional.",
     "distractorAnalysis": [
-      "Está incorreta: Se tiverem o mesmo sentido, as forças somam-se e provocam aceleração do corpo.",
-      "Está incorreta: Formar um ângulo de 90° caracteriza forças perpendiculares ou concorrentes, não colineares.",
-      "Está incorreta: O equilíbrio estático de forças requer ação simultânea permanente sobre o corpo."
+      "Está incorreta: kg/m² é unidade de densidade superficial, não de força.",
+      "Está incorreta: Pascal (Pa) é unidade de pressão.",
+      "Está incorreta: Joule por segundo (J/s) corresponde a Watt (W), unidade de potência."
     ],
-    "nursingApplication": "Exemplo das forças que atuam quando dois operadores puxam uma cinta em sentidos opostos com igual intensidade."
+    "nursingApplication": "Garante coerência dimensional ao calcular o somatório de forças que atuam num corpo."
   },
   {
     "id": 1090,
     "topicId": 1,
-    "question": "Se um equipamento hospitalar com uma massa inercial de 30 kg for transportado para a superfície da Lua (onde a gravidade é 1/6 da terrestre), o que acontece à sua inércia?",
+    "question": "Se o atrito cinético de uma maca em movimento for de 25 N e dois enfermeiros a puxarem juntos aplicando uma força total de 25 N na mesma direção e sentido do movimento:",
     "options": [
-      "Reduz-se a um sexto da inércia que possuía na Terra, tornando-se seis vezes mais fácil de acelerar.",
-      "Aumenta para seis vezes o valor original por efeito da ausência de atmosfera lunar.",
-      "Permanece rigorosamente inalterada, porque a inércia depende exclusivamente da massa do corpo (30 kg) e não do campo gravítico local.",
-      "Passa a ser rigorosamente nula porque na Lua não existe gravidade suficiente para criar matéria."
+      "A maca vai acelerar continuamente ganhando 10 m/s² a cada segundo.",
+      "A maca vai travar imediatamente e parar em menos de um segundo.",
+      "A força resultante é nula (Fr = 0 N) e a maca prossegue em Movimento Retilíneo e Uniforme.",
+      "O atrito desaparece transformando-se em calor de combustão espontânea."
     ],
     "correctIndex": 2,
-    "explanation": "A massa inercial é uma propriedade invariante do corpo. A inércia (resistência à aceleração F = m·a) é rigorosamente a mesma na Terra ou na Lua.",
+    "explanation": "A força resultante é F_aplicada - F_atrito = 25 N - 25 N = 0 N. Com Fr = 0 N, o corpo em movimento mantém a sua velocidade constante em Movimento Retilíneo e Uniforme (MRU).",
     "distractorAnalysis": [
-      "Está incorreta: O que se reduz a 1/6 é o peso (P = m·g), mas a massa e a inércia permanecem idênticas.",
-      "Está incorreta: A ausência de atmosfera não altera a massa inercial do corpo.",
-      "Está incorreta: Existe gravidade na Lua (cerca de 1,62 m/s²), e a matéria preserva a sua massa inercial no espaço."
+      "Está incorreta: Para acelerar seria necessária uma força resultante positiva (F_aplicada > F_atrito).",
+      "Está incorreta: A maca só travaria se a força de atrito superasse a força aplicada (F_aplicada < F_atrito).",
+      "Está incorreta: O atrito gera ligeiro aquecimento térmico impercetível, nunca combustão espontânea em macas."
     ],
-    "nursingApplication": "Demonstra a diferença conceptual fundamental entre a massa inercial (invariável) e a força peso (dependente da gravidade)."
+    "nursingApplication": "Evidencia como manter velocidade constante exige apenas neutralizar o atrito cinético das rodas."
   },
   {
     "id": 1091,
     "topicId": 1,
-    "question": "Qual é o enunciado fundamental da 1ª Lei de Newton (Lei da Inércia)?",
+    "question": "Na tabela de resumo dos conceitos lecionados (Slide 41), como está caracterizada a grandeza 'Força (F)'?",
     "options": [
-      "Para cada ação aplicada sobre um corpo, existe uma reação de intensidade dupla orientada no mesmo sentido.",
-      "A aceleração de um corpo é inversamente proporcional à força resultante e diretamente proporcional à sua massa.",
-      "Todos os corpos materiais aceleram espontaneamente a uma taxa constante quando livres de qualquer força externa.",
-      "Um corpo em repouso permanece em repouso e um corpo em movimento retilíneo uniforme permanece em movimento, a menos que uma força resultante não nula atue sobre ele."
+      "Tipo: Escalar; Unidade: kg; Definição: Quantidade de matéria; Exemplo: Massa corporal.",
+      "Tipo: Escalar; Unidade: Pa; Definição: Força por área; Exemplo: Pressão capilar.",
+      "Tipo: Vetorial; Unidade: N/m²; Definição: Atração cósmica; Exemplo: Peso na balança.",
+      "Tipo: Vetorial; Unidade SI: Newton (N); Definição: Produz aceleração ou deformação; Exemplo: Força muscular de contração do quadríceps."
     ],
     "correctIndex": 3,
-    "explanation": "A 1ª Lei de Newton postula que, sem força resultante externa (Fr = 0), a velocidade vetorial do corpo permanece constante.",
+    "explanation": "O Slide 41 especifica: Grandeza: Força (F) | Tipo: Vetorial | Unidade SI: Newton (N) | Definição: Produz aceleração ou deformação | Exemplo: Força muscular de contração do quadríceps.",
     "distractorAnalysis": [
-      "Está incorreta: A 3ª Lei estabelece ação e reação com a mesma intensidade e sentidos opostos, nunca intensidade dupla no mesmo sentido.",
-      "Está incorreta: A 2ª Lei estabelece que a aceleração é diretamente proporcional à força e inversamente proporcional à massa (a = F/m).",
-      "Está incorreta: Sem força resultante externa, um corpo não acelera; mantém velocidade vetorial rigorosamente constante."
+      "Está incorreta: Esta linha descreve a grandeza Massa (m), não a Força (Slide 42).",
+      "Está incorreta: Esta linha descreve a grandeza Pressão (p), não a Força (Slide 44).",
+      "Está incorreta: A unidade de força no SI é Newton (N), e não N/m² (que é Pascal)."
     ],
-    "nursingApplication": "Explica por que uma maca parada num corredor plano permanece imóvel até ser empurrada."
+    "nursingApplication": "Permite relacionar o conceito físico de força com a contração do quadríceps na marcha e extensão do joelho."
   },
   {
     "id": 1092,
     "topicId": 1,
-    "question": "O que traduz o conceito físico de Inércia de um corpo?",
+    "question": "Na tabela de resumo dos conceitos lecionados (Slide 42), como está caracterizada a grandeza 'Massa (m)'?",
     "options": [
-      "A resistência natural que um corpo oferece a qualquer alteração do seu estado de repouso ou de movimento.",
-      "A capacidade de um corpo gerar energia mecânica espontânea a partir do repouso absoluto.",
-      "A velocidade máxima que um corpo pode atingir quando em queda livre num meio viscoso.",
-      "A força invisível que empurra ativamente os corpos para a frente quando estão em movimento retilíneo."
+      "Tipo: Escalar; Unidade SI: Quilograma (kg); Definição: Medida da quantidade de matéria; Exemplo: Massa corporal do doente pesada na balança.",
+      "Tipo: Vetorial; Unidade SI: Newton (N); Definição: Atração gravítica; Exemplo: Força muscular.",
+      "Tipo: Escalar; Unidade SI: Pascal (Pa); Definição: Deformação do sacro; Exemplo: Lesão de pressão.",
+      "Tipo: Vetorial; Unidade SI: Quilograma (kg); Definição: Produz aceleração centrípeta; Exemplo: Andarilho."
     ],
     "correctIndex": 0,
-    "explanation": "A inércia é uma propriedade fundamental da matéria pela qual os corpos resistem a acelerações ou desacelerações.",
+    "explanation": "O Slide 42 especifica: Grandeza: Massa (m) | Tipo: Escalar | Unidade SI: Quilograma (kg) | Definição: Medida da quantidade de matéria | Exemplo: Massa corporal do doente pesada na balança.",
     "distractorAnalysis": [
-      "Está incorreta: A inércia não cria energia mecânica; a energia mecânica obedece ao princípio da conservação da energia.",
-      "Está incorreta: A velocidade máxima em queda num fluido depende do equilíbrio com o atrito viscoso, não da inércia isolada.",
-      "Está incorreta: A inércia não é uma força propulsora; é apenas a tendência passiva para manter o estado atual de movimento."
+      "Está incorreta: A massa é uma grandeza escalar em kg, não vetorial em Newtons.",
+      "Está incorreta: Pascal mede pressão, grandeza diferente da massa inercial.",
+      "Está incorreta: A massa é puramente escalar, não possuindo direção nem sentido vetorial."
     ],
-    "nursingApplication": "Compreender a inércia ajuda a antecipar que travar uma maca com carga exige esforço mecânico."
+    "nursingApplication": "Clarifica a linguagem técnica ao referir a massa corporal aferida nas balanças hospitalares."
   },
   {
     "id": 1093,
     "topicId": 1,
-    "question": "De que grandeza física depende exclusivamente a inércia translacional de um corpo na mecânica clássica?",
+    "question": "Na tabela de resumo dos conceitos lecionados (Slide 43), como está caracterizada a grandeza 'Peso (P)'?",
     "options": [
-      "Da sua cor e temperatura superficial.",
-      "Da sua massa inercial (m).",
-      "Do volume geométrico independente da massa.",
-      "Da aceleração da gravidade do planeta."
+      "Tipo: Escalar; Unidade SI: Quilograma (kg); Definição: Quantidade de água corporal; Exemplo: Hidratação.",
+      "Tipo: Vetorial; Unidade SI: Newton (N); Definição: Força de atração gravítica; Exemplo: Peso do doente sobre o colchão.",
+      "Tipo: Vetorial; Unidade SI: Pascal (Pa); Definição: Tensão nos tendões; Exemplo: Marcha.",
+      "Tipo: Escalar; Unidade SI: Newton (N); Definição: Aceleração da maca; Exemplo: Ambulância."
     ],
     "correctIndex": 1,
-    "explanation": "A massa é a medida quantitativa direta da inércia de um corpo: corpos com mais massa têm maior inércia.",
+    "explanation": "O Slide 43 especifica: Grandeza: Peso (P) | Tipo: Vetorial | Unidade SI: Newton (N) | Definição: Força de atração gravítica | Exemplo: Peso do doente sobre o colchão.",
     "distractorAnalysis": [
-      "Está incorreta: Cor e temperatura não influenciam a inércia translacional de um corpo mecânico.",
-      "Está incorreta: O volume sem considerar a massa não determina a inércia; uma esfera oca tem menos inércia que uma sólida.",
-      "Está incorreta: A massa inercial é uma propriedade intrínseca do corpo, independente do valor local da gravidade."
+      "Está incorreta: O peso é uma força vetorial medida em Newtons, não uma grandeza escalar em kg.",
+      "Está incorreta: Pascal é unidade de pressão (N/m²), enquanto o peso é uma força expressa em Newtons.",
+      "Está incorreta: O peso tem direção vertical e sentido descendente para o centro da Terra, sendo estritamente vetorial."
     ],
-    "nursingApplication": "Uma maca carregada com 100 kg tem muito maior inércia do que uma maca vazia de 30 kg."
+    "nursingApplication": "Essencial para distinguir rigorosamente peso (força em N) de massa (matéria em kg) em relatórios de biofísica."
   },
   {
     "id": 1094,
     "topicId": 1,
-    "question": "Quando uma ambulância em marcha trava bruscamente a 80 km/h, o que acontece a um ocupante sem cinto de segurança e porquê?",
+    "question": "Na tabela de resumo dos conceitos lecionados (Slide 44), como está caracterizada a grandeza 'Pressão (p)'?",
     "options": [
-      "É projetado para trás, porque a inércia puxa ativamente os corpos no sentido oposto ao movimento.",
-      "Permanece imediatamente imóvel em relação ao veículo, porque a gravidade anula a velocidade do corpo.",
-      "É projetado para a frente, porque pela 1ª Lei de Newton o seu corpo tende a manter a velocidade de 80 km/h.",
-      "Acelera verticalmente em direção ao teto, porque a desaceleração converte o peso em força ascensional."
+      "Tipo: Vetorial; Unidade SI: Newton (N); Definição: Interação entre corpos; Exemplo: Tendão do bíceps.",
+      "Tipo: Escalar; Unidade SI: Quilograma (kg); Definição: Medida de inércia; Exemplo: Doente bariátrico.",
+      "Tipo: Escalar; Unidade SI: Pascal (N/m²); Definição: Força distribuída por unidade de área; Exemplo: Pressão capilar na pele sobre o sacro.",
+      "Tipo: Vetorial; Unidade SI: Joule (J); Definição: Trabalho muscular; Exemplo: Elevação de carga."
     ],
     "correctIndex": 2,
-    "explanation": "Pela Lei da Inércia, quando o veículo trava, os corpos no seu interior mantêm a sua velocidade inicial até sofrerem uma força externa.",
+    "explanation": "O Slide 44 especifica: Grandeza: Pressão (p) | Tipo: Escalar | Unidade SI: Pascal (N/m²) | Definição: Força distribuída por unidade de área | Exemplo: Pressão capilar na pele sobre o sacro.",
     "distractorAnalysis": [
-      "Está incorreta: A inércia não empurra para trás; a sensação de recuo só ocorre quando o veículo acelera para a frente.",
-      "Está incorreta: O corpo não fica imóvel em relação ao veículo; como o veículo desacelerou, o corpo continua em frente por inércia.",
-      "Está incorreta: A travagem horizontal produz desaceleração horizontal, não criando forças verticais ascensionais espontâneas."
+      "Está incorreta: A pressão é uma grandeza escalar em Pascal (N/m²), não uma força vetorial em Newtons.",
+      "Está incorreta: Quilograma mede massa, não pressão.",
+      "Está incorreta: Joule mede energia e trabalho, grandeza física diferente de pressão superficial."
     ],
-    "nursingApplication": "Demonstra a importância vital do uso de cintos de segurança em veículos de transporte hospitalar."
+    "nursingApplication": "Fundamenta a fisiopatologia da isquemia cutânea e a monitorização de dispositivos de alívio de pressão."
   },
   {
     "id": 1095,
     "topicId": 1,
-    "question": "Se a força resultante que atua sobre um carrinho for rigorosamente nula (Fr = 0), qual é a sua aceleração?",
+    "question": "Qual é a distinção física essencial entre Massa (m) e Peso (P) estabelecida na tabela dos slides (Slides 42-43)?",
     "options": [
-      "9,8 m/s².",
-      "Infinita.",
-      "Depende da cor e do material do carrinho.",
-      "Zero (a = 0 m/s²)."
+      "Massa é medida em Newtons e Peso é medido em Quilogramas.",
+      "Massa e Peso são exatamente a mesma grandeza física, sem qualquer diferença teórica.",
+      "A massa varia consoante o local do universo e o peso é constante em todo o lado.",
+      "Massa é uma grandeza escalar (kg) intrínseca de matéria; Peso é uma força vetorial (N) resultante da atração gravítica (P = m · g)."
     ],
     "correctIndex": 3,
-    "explanation": "De acordo com a 2ª Lei de Newton (Fr = m·a), se a força resultante é nula (Fr = 0), a aceleração é forçosamente zero.",
+    "explanation": "A massa (escalar em kg) quantifica a matéria e inércia de um corpo, sendo invariável com o local; o peso (vetorial em N) é a força gravítica exercida sobre essa massa, variando com a aceleração da gravidade local g.",
     "distractorAnalysis": [
-      "Está incorreta: 9,8 m/s² é a aceleração da gravidade na Terra sob peso livre, não a aceleração com resultante nula.",
-      "Está incorreta: Uma aceleração infinita exigiria uma força infinitamente grande sobre uma massa finita.",
-      "Está incorreta: A cor do objeto é uma propriedade óptica sem qualquer relevância para a dinâmica newtoniana."
+      "Está incorreta: As unidades estão invertidas na opção: a massa mede-se em kg e o peso mede-se em N.",
+      "Está incorreta: Confundir massa com peso é um erro concetual clássico que a tabela dos slides visa expressamente corrigir.",
+      "Está incorreta: É a massa que é constante intrínseca, enquanto o peso varia com a gravidade de cada planeta ou altitude."
     ],
-    "nursingApplication": "Ao empurrar um carrinho a velocidade constante e em linha reta, a aceleração é rigorosamente nula."
+    "nursingApplication": "Evita a linguagem coloquial incorreta e consolida o rigor científico na formação inicial de enfermagem."
   },
   {
     "id": 1096,
     "topicId": 1,
-    "question": "Um equipamento desloca-se em linha reta com velocidade constante de 1,5 m/s num piso plano. O que se pode concluir sobre as forças?",
+    "question": "De acordo com a tabela do Slide 44, qual é a equivalência dimensional direta de 1 Pascal (Pa) em unidades de base do SI?",
     "options": [
-      "A resultante de todas as forças que atuam sobre ele é rigorosamente nula (Fr = 0).",
-      "A força propulsora para a frente é dez vezes superior às forças de atrito.",
-      "Não existe nenhuma força a atuar sobre o corpo, nem sequer o peso ou a força normal.",
-      "A aceleração do equipamento é constante e igual a 1,5 m/s²."
+      "1 Pa = 1 N/m² (um Newton por cada metro quadrado de área).",
+      "1 Pa = 1 kg · m / s",
+      "1 Pa = 1 N · m (um Newton multiplicado por metro).",
+      "1 Pa = 1 kg / s²"
     ],
     "correctIndex": 0,
-    "explanation": "Movimento retilíneo e uniforme (velocidade vetorial constante) implica aceleração nula e força resultante nula.",
+    "explanation": "O Slide 44 indica explicitamente: 'Pascal (N/m²)', significando que a pressão equivale a uma força de um Newton distribuída uniformemente por uma área de um metro quadrado.",
     "distractorAnalysis": [
-      "Está incorreta: Se a força para a frente superasse o atrito, haveria aceleração e a velocidade aumentaria.",
-      "Está incorreta: Forças como o peso e a reação normal continuam a existir, mas equilibram-se perfeitamente (resultante nula).",
-      "Está incorreta: Se a velocidade é constante, a variação de velocidade é nula, logo a aceleração é 0 m/s² e não 1,5 m/s²."
+      "Está incorreta: kg · m / s é unidade de momento linear (quantidade de movimento), não de pressão.",
+      "Está incorreta: N · m é a unidade de momento de força (torque) ou trabalho/energia (Joule).",
+      "Está incorreta: kg / s² é unidade de tensão superficial, dimensionalmente distinta de Pascal."
     ],
-    "nursingApplication": "Manter um carrinho a rolar a velocidade constante exige apenas uma força que anule o atrito das rodas."
+    "nursingApplication": "Permite aos alunos realizar conversões de unidades entre Newtons de carga e área cutânea de apoio."
   },
   {
     "id": 1097,
     "topicId": 1,
-    "question": "Porque é mais difícil iniciar o movimento de uma caixa pesada do que de uma caixa leve em repouso no chão?",
+    "question": "Qual é o exemplo biofísico de referência apresentado no Slide 41 para ilustrar a grandeza Força (F)?",
     "options": [
-      "Porque a caixa leve não obedece à 1ª Lei de Newton e move-se sem necessidade de força.",
-      "Porque a caixa mais pesada tem maior massa, o que significa que possui maior inércia e oferece maior resistência à aceleração.",
-      "Porque a gravidade só atua sobre objetos com massa superior a cinquenta quilogramas.",
-      "Porque os corpos pesados perdem eletrões espontaneamente quando colocados em contacto com o piso."
+      "A pressão intracraniana medida por um cateter ventricular.",
+      "A força muscular de contração do quadríceps.",
+      "A temperatura do sangue na aorta ascendente.",
+      "O diâmetro médio dos capilares glomerulares do rim."
     ],
     "correctIndex": 1,
-    "explanation": "Maior massa implica maior inércia translacional, exigindo uma força maior para produzir qualquer aceleração inicial.",
+    "explanation": "O Slide 41 cita expressamente como exemplo de força: 'Força muscular de contração do quadríceps'.",
     "distractorAnalysis": [
-      "Está incorreta: A 1ª Lei de Newton aplica-se a todos os corpos materiais sem exceção, independentemente da massa.",
-      "Está incorreta: A gravidade atua sobre todos os corpos com massa, por menor que ela seja.",
-      "Está incorreta: O atrito e a inércia mecânica decorrem da física clássica, sem perda espontânea de eletrões em repouso."
+      "Está incorreta: Pressão intracraniana é um exemplo de pressão hidrostática, não o exemplo de força do Slide 41.",
+      "Está incorreta: Temperatura do sangue é uma grandeza termodinâmica escalar.",
+      "Está incorreta: Diâmetro capilar é uma medida geométrica anatómica de comprimento."
     ],
-    "nursingApplication": "Explica o esforço acrescido ao iniciar o movimento de carrinhos pesados a partir do repouso."
+    "nursingApplication": "Destaca a função motora do músculo quadríceps na estabilização do joelho e na marcha humana."
   },
   {
     "id": 1098,
     "topicId": 1,
-    "question": "O que é um Referencial Inercial na mecânica newtoniana?",
+    "question": "Se um doente com 60 kg de massa corporal for para a Lua (onde a gravidade g é cerca de 1/6 da Terra), como se comportam a sua massa e o seu peso?",
     "options": [
-      "Um referencial que gira a alta velocidade com aceleração centrípeta constante.",
-      "Um referencial onde todas as leis de Newton deixam de ser válidas por efeito da relatividade.",
-      "Um referencial no qual um corpo livre de forças resultantes se encontra em repouso ou em movimento retilíneo e uniforme.",
-      "Um sistema de coordenadas exclusivo do interior de núcleos atómicos em desintegração."
+      "A massa reduz-se para 10 kg e o peso mantém-se em 588 N.",
+      "Ambos diminuem para zero, ficando o corpo sem matéria nem peso.",
+      "A sua massa mantém-se rigorosamente em 60 kg, mas o seu peso diminui para cerca de 1/6 do valor terrestre.",
+      "A massa aumenta para 360 kg para compensar a menor atração gravítica."
     ],
     "correctIndex": 2,
-    "explanation": "Um referencial inercial é aquele onde a 1ª Lei de Newton se verifica rigorosamente (não acelerado).",
+    "explanation": "A massa é a quantidade de matéria (Slide 42), mantendo-se constante em 60 kg em qualquer ponto do universo. O peso (P = m · g) diminui na Lua proporcionalmente à menor aceleração gravítica g.",
     "distractorAnalysis": [
-      "Está incorreta: Um referencial em rotação possui aceleração centrípeta, sendo um referencial não inercial.",
-      "Está incorreta: As leis de Newton são formalmente definidas e válidas precisamente em referenciais inerciais.",
-      "Está incorreta: A mecânica newtoniana de referenciais inerciais descreve a dinâmica macroscópica clássica."
+      "Está incorreta: A massa não diminui para 10 kg; o número de átomos e células do corpo permanece inalterado.",
+      "Está incorreta: A matéria do corpo não se dissipa no espaço e a gravidade na Lua não é zero (g_lua ≈ 1,62 m/s²).",
+      "Está incorreta: A massa inercial não sofre qualquer aumento por alteração da gravidade local."
     ],
-    "nursingApplication": "O solo hospitalar pode ser considerado com excelente aproximação um referencial inercial para análise de movimentos."
+    "nursingApplication": "Reforça de forma indelével a independência entre quantidade de matéria (massa) e atração gravitacional (peso)."
   },
   {
     "id": 1099,
     "topicId": 1,
-    "question": "Duas forças que atuam sobre a mesma reta de suporte designam-se colineares. Para que um corpo sujeito a duas forças colineares permaneça em repouso estático, que condição devem essas forças cumprir?",
+    "question": "Por que razão a Pressão (p) é classificada como grandeza Escalar na tabela do Slide 44?",
     "options": [
-      "Devem possuir intensidades diferentes e o mesmo sentido no espaço.",
-      "Devem formar um ângulo de noventa graus entre as suas retas de suporte.",
-      "Devem atuar com uma diferença temporal de vários segundos entre si.",
-      "Devem possuir rigorosamente a mesma intensidade e sentidos opostos, anulando-se mutuamente na soma vetorial."
+      "Porque a pressão atua sempre exclusivamente no sentido horizontal para a esquerda.",
+      "Porque os aparelhos de medição de pressão não têm pilhas elétricas.",
+      "Porque a pressão deixa de existir quando o corpo humano se encontra em repouso.",
+      "Porque fica totalmente caracterizada por um valor numérico e unidade, sem direção espacial vetorial fixa."
     ],
     "correctIndex": 3,
-    "explanation": "Para forças colineares, a resultante nula exige F1 + F2 = 0, o que implica intensidades iguais e sentidos contrários.",
+    "explanation": "A pressão é uma grandeza escalar: num determinado ponto de um fluido ou interface, quantifica a intensidade da força normal distribuída por unidade de área sem apontar para uma direção preferencial única no espaço.",
     "distractorAnalysis": [
-      "Está incorreta: Se tiverem o mesmo sentido, as forças somam-se e provocam aceleração do corpo.",
-      "Está incorreta: Formar um ângulo de 90° caracteriza forças perpendiculares ou concorrentes, não colineares.",
-      "Está incorreta: O equilíbrio estático de forças requer ação simultânea permanente sobre o corpo."
+      "Está incorreta: Grandezas que têm direção e sentido fixos são vetoriais, não escalares.",
+      "Está incorreta: A forma de funcionamento do instrumento não dita a natureza matemática da grandeza física.",
+      "Está incorreta: A pressão capilar e hidrostática existe continuamente no corpo humano em repouso."
     ],
-    "nursingApplication": "Exemplo das forças que atuam quando dois operadores puxam uma cinta em sentidos opostos com igual intensidade."
+    "nursingApplication": "Garante a correta diferenciação entre a força exercida (vetor) e o seu efeito distribuído na pele (pressão, escalar)."
   },
   {
     "id": 1100,
     "topicId": 1,
-    "question": "Se um equipamento hospitalar com uma massa inercial de 30 kg for transportado para a superfície da Lua (onde a gravidade é 1/6 da terrestre), o que acontece à sua inércia?",
+    "question": "Qual das seguintes quatro grandezas analisadas no resumo dos Slides 41 a 45 é a ÚNICA cuja unidade SI é o Quilograma (kg)?",
     "options": [
-      "Permanece rigorosamente inalterada, porque a inércia depende exclusivamente da massa do corpo (30 kg) e não do campo gravítico local.",
-      "Reduz-se a um sexto da inércia que possuía na Terra, tornando-se seis vezes mais fácil de acelerar.",
-      "Aumenta para seis vezes o valor original por efeito da ausência de atmosfera lunar.",
-      "Passa a ser rigorosamente nula porque na Lua não existe gravidade suficiente para criar matéria."
+      "Massa (m).",
+      "Força (F).",
+      "Peso (P).",
+      "Pressão (p)."
     ],
     "correctIndex": 0,
-    "explanation": "A massa inercial é uma propriedade invariante do corpo. A inércia (resistência à aceleração F = m·a) é rigorosamente a mesma na Terra ou na Lua.",
+    "explanation": "Na tabela de grandezas dos slides, a única grandeza expressa em Quilogramas (kg) é a Massa (m). Força e Peso medem-se em Newtons (N), e Pressão mede-se em Pascal (N/m²).",
     "distractorAnalysis": [
-      "Está incorreta: O que se reduz a 1/6 é o peso (P = m·g), mas a massa e a inércia permanecem idênticas.",
-      "Está incorreta: A ausência de atmosfera não altera a massa inercial do corpo.",
-      "Está incorreta: Existe gravidade na Lua (cerca de 1,62 m/s²), e a matéria preserva a sua massa inercial no espaço."
+      "Está incorreta: A Força tem unidade Newton (N) no SI.",
+      "Está incorreta: O Peso é uma força gravítica e tem unidade Newton (N) no SI.",
+      "Está incorreta: A Pressão tem unidade Pascal (Pa = N/m²) no SI."
     ],
-    "nursingApplication": "Demonstra a diferença conceptual fundamental entre a massa inercial (invariável) e a força peso (dependente da gravidade)."
+    "nursingApplication": "Consolida a tabela comparativa fundamental que encerra a primeira secção temática do Tópico 1."
   },
   {
     "id": 1101,
     "topicId": 1,
-    "question": "Qual é a força resultante necessária para acelerar um carrinho de massa 20 kg a uma aceleração constante de 0.5 m/s²?",
+    "question": "No desafio clínico do Slide 46, por que razão o enfermeiro de pé é projetado para a frente quando a ambulância trava bruscamente a 80 km/h?",
     "options": [
-      "20.5 N.",
-      "10 N.",
-      "40.0 N.",
-      "10 kg."
+      "Porque a força nuclear fraca atrai o corpo do enfermeiro para o tablier.",
+      "Pela 1ª Lei de Newton (Lei da Inércia), o corpo do enfermeiro mantém a velocidade de 80 km/h até que uma força atue sobre ele.",
+      "Porque o peso do enfermeiro triplica espontaneamente durante a travagem.",
+      "Porque a pressão do ar no interior da cabina diminui subitamente criando vácuo à frente."
     ],
     "correctIndex": 1,
-    "explanation": "Pela 2ª Lei de Newton: Fr = m · a = 20 kg · 0.5 m/s² = 10 N.",
+    "explanation": "O Slide 47 explica: 'Pela 1ª Lei de Newton (Lei da Inércia), o corpo do enfermeiro mantém a velocidade de 80 km/h até que uma força atue sobre ele'.",
     "distractorAnalysis": [
-      "Está incorreta: Somar a massa com a aceleração viola a fórmula da 2ª Lei de Newton (Fr = m · a).",
-      "Está incorreta: Dividir a massa pela aceleração não fornece a intensidade da força resultante.",
-      "Está incorreta: O valor numérico está correto, mas a unidade de força é o Newton (N) e não o quilograma (kg)."
+      "Está incorreta: A força nuclear fraca medeia decaimentos radioativos, não atuando na dinâmica de veículos.",
+      "Está incorreta: A travagem desacelera a viatura, mas a gravidade e o peso do enfermeiro permanecem inalterados.",
+      "Está incorreta: A cabina da ambulância não gera vácuo durante a travagem; a projeção decorre exclusivamente da inércia mecânica."
     ],
-    "nursingApplication": "Permite calcular a força exata necessária para empurrar e acelerar um carrinho de transporte hospitalar."
+    "nursingApplication": "Reforça a obrigatoriedade de viajar sentado com cinto de segurança durante o transporte em marcha de emergência."
   },
   {
     "id": 1102,
     "topicId": 1,
-    "question": "Se uma força resultante horizontal de 20 N for aplicada sobre uma maca de 25 kg num piso plano sem atrito, qual será a aceleração adquirida?",
+    "question": "No desafio clínico (Slide 49), por que razão o enfermeiro sem cinto choca contra a divisória com a força equivalente a centenas de quilos?",
     "options": [
-      "200.0 m/s².",
-      "0.4 m/s².",
-      "0.8 m/s².",
-      "0.8 N."
+      "Porque a massa corporal do profissional aumenta com a velocidade atingindo centenas de quilos.",
+      "Porque a Terra puxa o profissional horizontalmente através de atração gravítica extraordinária.",
+      "Pela 2ª Lei de Newton (Lei fundamental da dinâmica), a desaceleração violenta exige uma força massiva para parar o corpo (F = m · a).",
+      "Porque a divisória da ambulância atrai os corpos metálicos e tecidos biológicos por magnetismo."
     ],
     "correctIndex": 2,
-    "explanation": "Pela 2ª Lei de Newton, a = Fr / m: 20 N / 25 kg = 0.8 m/s².",
+    "explanation": "O Slide 49 explica: 'Pela 2ª Lei de Newton (Lei fundamental da dinâmica), a desaceleração violenta exige uma força massiva para parar o corpo. Sem cinto de segurança, o enfermeiro colidirá com a divisória com força equivalente à sua massa multiplicada pela desaceleração'.",
     "distractorAnalysis": [
-      "Está incorreta: Multiplicar a força por ordens de grandeza arbitrárias fornece um valor excessivo e incorreto.",
-      "Está incorreta: Esse valor representa metade da aceleração real obtida pela razão Fr / m.",
-      "Está incorreta: A aceleração mede-se em m/s² no SI, e não em Newtons (N), que é a unidade de força."
+      "Está incorreta: A massa inercial do corpo é constante na mecânica clássica e não aumenta a velocidades de 80 km/h.",
+      "Está incorreta: A atração gravítica atua na vertical para o centro da Terra, não gerando forças horizontais para a divisória.",
+      "Está incorreta: A divisória não possui magnetismo de atração sobre tecidos biológicos."
     ],
-    "nursingApplication": "Mostra como a aceleração de um equipamento diminui à medida que a sua massa aumenta."
+    "nursingApplication": "Alerta para a magnitude devastadora das forças de desaceleração que atuam sobre a equipa sem retenção mecânica."
   },
   {
     "id": 1103,
     "topicId": 1,
-    "question": "De acordo com a 2ª Lei de Newton (F = m·a), se a massa de um corpo duplicar e a força resultante aplicada se mantiver constante, a aceleração:",
+    "question": "No desafio clínico (Slide 51), por que razão a divisória da ambulância vai ficar amolgada ou partir com o impacto do enfermeiro?",
     "options": [
-      "Duplica em relação ao valor inicial.",
-      "Quadruplica instantaneamente.",
-      "Permanece rigorosamente inalterada.",
-      "Reduz-se para metade do valor inicial."
+      "Porque a divisória é feita de materiais de plasticina que se deformam sem qualquer força.",
+      "Porque o atrito cinético da estrada transmite eletricidade estática para a divisória.",
+      "Porque o peso da ambulância é transferido na totalidade para o painel de separação.",
+      "Pela 3ª Lei de Newton (par ação-reação), a intensidade da força que o enfermeiro exerce sobre a divisória é a mesma que a divisória exerce sobre o enfermeiro."
     ],
     "correctIndex": 3,
-    "explanation": "Como a = F / m, a aceleração é inversamente proporcional à massa. Duplicando a massa com força constante, a aceleração passa a metade.",
+    "explanation": "O Slide 51 justifica: 'Pela 3ª Lei de Newton (par ação-reação), a intensidade da força que a divisória exerce sobre o enfermeiro é a mesma que o enfermeiro exerce sobre a divisória'. Ambas as estruturas sofrem a mesma força massiva mútua.",
     "distractorAnalysis": [
-      "Está incorreta: A aceleração só duplicaria se a força duplicasse para a mesma massa, ou se a massa passasse a metade.",
-      "Está incorreta: Quadruplicar a aceleração exigiria quadruplicar a força ou reduzir a massa a um quarto.",
-      "Está incorreta: A aceleração não se mantém inalterada porque depende inversamente da massa inercial do corpo."
+      "Está incorreta: As divisórias são construídas em estruturas sólidas rígidas e não em materiais plásticos moles.",
+      "Está incorreta: A deformação resulta de esforço mecânico por impacto (força de colisão), não de eletricidade estática.",
+      "Está incorreta: O peso da ambulância apoia-se nas rodas e suspensão, não se transferindo para a divisória divisória."
     ],
-    "nursingApplication": "Ao duplicar a carga numa maca, a mesma força muscular produzirá apenas metade da aceleração."
+    "nursingApplication": "Demonstra que proteger o utente e a equipa com cintos evita danos materiais e lesões traumáticas graves."
   },
   {
     "id": 1104,
     "topicId": 1,
-    "question": "Se a força resultante aplicada sobre um equipamento hospitalar triplicar mantendo-se a sua massa inalterada, o que acontece à sua aceleração?",
+    "question": "Como poderia a equipa de emergência evitar o desfecho traumático descrito no desafio clínico dos Slides 46 a 51?",
     "options": [
-      "Triplica na mesma proporção direta.",
-      "Reduz-se a um terço do valor.",
-      "Permanece constante e inalterada.",
-      "Passa a ser rigorosamente nula."
+      "Pelo uso sistemático do cinto de segurança por todos os ocupantes mesmo em marcha de socorro.",
+      "Viajando em pé sobre um calçado com sola lubrificada com óleo.",
+      "Segurando-se firmemente apenas com uma mão na maçaneta da porta.",
+      "Abrindo as janelas para reduzir a pressão atmosférica dentro do veículo."
     ],
     "correctIndex": 0,
-    "explanation": "A aceleração é diretamente proporcional à força resultante (a ∝ F). Triplicando a força, a aceleração triplica.",
+    "explanation": "O Slide 49 refere explicitamente: 'Sem cinto de segurança, o enfermeiro colidirá com a divisória'. O cinto aplica a força externa gradual necessária para desacelerar o corpo solidariamente com a ambulância.",
     "distractorAnalysis": [
-      "Está incorreta: A aceleração só se reduziria a um terço se a massa triplicasse mantendo-se a força constante.",
-      "Está incorreta: A aceleração não fica constante quando a força resultante aplicada sobre a massa varia.",
-      "Está incorreta: A aceleração só seria nula se a força resultante fosse igual a zero."
+      "Está incorreta: Sola oleada diminuiria o atrito solo-calçado provocando queda imediata ao primeiro desvio.",
+      "Está incorreta: A força de preensão manual humana (~300-400 N) é totalmente incapaz de suster forças de impacto de milhares de Newtons.",
+      "Está incorreta: A pressão atmosférica não altera a inércia dos corpos no interior da viatura."
     ],
-    "nursingApplication": "Empurrar com mais intensidade produz uma aceleração proporcionalmente mais rápida do equipamento."
+    "nursingApplication": "Regra de ouro de segurança e saúde ocupacional no trabalho em serviços de emergência pré-hospitalar."
   },
   {
     "id": 1105,
     "topicId": 1,
-    "question": "O que afirma a 2ª Lei de Newton (Lei Fundamental da Dinâmica)?",
+    "question": "Durante a colisão contra a divisória da ambulância, qual das seguintes afirmações sobre a intensidade das forças é verdadeira segundo a 3ª Lei de Newton?",
     "options": [
-      "A energia mecânica total de um sistema dissipa-se sempre espontaneamente sob a forma de calor no vácuo.",
-      "A força resultante que atua sobre um corpo material é diretamente proporcional à sua massa inercial e à aceleração que ele adquire (Fr = m·a).",
-      "A velocidade de um corpo é independente de qualquer força que atue sobre as suas superfícies de contacto.",
-      "Dois corpos em repouso atraem-se com força inversamente proporcional ao cubo da sua temperatura absoluta."
+      "A divisória aplica mais força sobre o enfermeiro do que o enfermeiro sobre a divisória.",
+      "A força que o enfermeiro exerce sobre a divisória tem rigorosamente a mesma intensidade da que a divisória exerce sobre o enfermeiro.",
+      "O enfermeiro só exerce força sobre a divisória se for um utente bariátrico com mais de 100 kg.",
+      "A intensidade de ambas as forças é nula porque a colisão é instantânea."
     ],
     "correctIndex": 1,
-    "explanation": "A 2ª Lei estabelece a relação quantitativa fundamental da dinâmica clássica: Fr = m · a.",
+    "explanation": "A 3ª Lei de Newton impõe igualdade estrita de intensidade para qualquer par de forças interativas: F_enfermeiro->divisória = F_divisória->enfermeiro (Slide 51).",
     "distractorAnalysis": [
-      "Está incorreta: Essa afirmação remete para a termodinâmica estatística, não para a 2ª Lei de Newton.",
-      "Está incorreta: A velocidade é diretamente alterada ao longo do tempo pela aceleração que decorre das forças aplicadas.",
-      "Está incorreta: A atração entre corpos depende da gravidade e das massas, não da temperatura absoluta cúbica."
+      "Está incorreta: Afirmar que uma das forças é maior viola frontalmente o princípio da ação e reação de Newton.",
+      "Está incorreta: Qualquer corpo material em colisão exerce força proporcional à sua desaceleração (F = m · a).",
+      "Está incorreta: Embora a colisão seja rápida, as forças instantâneas atingem picos de extrema intensidade."
     ],
-    "nursingApplication": "Fundamento para calcular as forças necessárias para mover massas na rotina física hospitalar."
+    "nursingApplication": "Consolidação teórica da equivalência mútua de forças no choque mecânico."
   },
   {
     "id": 1106,
     "topicId": 1,
-    "question": "Para travar e imobilizar uma maca de 100 kg que se move a 2 m/s no intervalo de 1 segundo (desaceleração a = 2 m/s²), que força média de travagem é necessária?",
+    "question": "Se o condutor da ambulância travar num intervalo de tempo duas vezes menor (desaceleração a duplicar), o que acontece à força de impacto?",
     "options": [
-      "50 N no mesmo sentido da marcha.",
-      "100 N na direção vertical ascendente.",
-      "200 N no sentido oposto ao movimento.",
-      "500 N orientada para o solo."
+      "A força de impacto reduz-se para metade porque o tempo foi menor.",
+      "A força de impacto permanece rigorosamente constante.",
+      "A força de impacto duplica, pois pela fórmula F = m · a a força é diretamente proporcional à aceleração.",
+      "A força anula-se completamente devido à paragem quase instantânea."
     ],
     "correctIndex": 2,
-    "explanation": "Pela 2ª Lei de Newton: F = m · a = 100 kg · 2 m/s² = 200 N em sentido contrário ao deslocamento.",
+    "explanation": "Desacelerar no dobro da rapidez significa que a taxa de variação de velocidade (desaceleração a) duplica. Pela 2ª Lei (F = m · a), com a massa m constante, a força de impacto duplica.",
     "distractorAnalysis": [
-      "Está incorreta: 50 N resultaria de dividir incorretamente 100 kg por 2 m/s², violando a relação F = m · a.",
-      "Está incorreta: 100 N seria a força requerida se a desaceleração fosse de apenas 1 m/s².",
-      "Está incorreta: 500 N superaria significativamente a força deduzida do produto da massa pela desaceleração."
+      "Está incorreta: Menor tempo de travagem aumenta a desaceleração (a = Δv / Δt), aumentando a força e não diminuindo.",
+      "Está incorreta: A força varia na proporção direta da aceleração/desaceleração sofrida pelo corpo.",
+      "Está incorreta: Paragens instantâneas gerariam acelerações e forças teoricamente infinitas, provocando destruição máxima."
     ],
-    "nursingApplication": "Ilustra a força que as mãos devem exercer sobre a pega da maca para a imobilizar com segurança."
+    "nursingApplication": "Sublinha a necessidade de condução defensiva suave por parte dos motoristas de emergência médica."
   },
   {
     "id": 1107,
     "topicId": 1,
-    "question": "Se um carrinho vazio tem massa de 20 kg e um carrinho carregado tem massa de 80 kg, para obter a mesma aceleração em ambos:",
+    "question": "Qual era a velocidade inicial da ambulância indicada no desafio clínico dos Slides 46 a 51?",
     "options": [
-      "O carrinho carregado exige a mesma força exata que o carrinho vazio.",
-      "O carrinho carregado exige uma força quatro vezes menor que o carrinho vazio.",
-      "Nenhum dos carrinhos necessita de qualquer força mecânica para acelerar.",
-      "O carrinho carregado exige uma força resultante quatro vezes maior do que o carrinho vazio."
+      "30 km/h",
+      "50 km/h",
+      "120 km/h",
+      "80 km/h"
     ],
     "correctIndex": 3,
-    "explanation": "Como F = m·a, para a mesma aceleração 'a', a força é proporcional à massa. 80 kg / 20 kg = 4 vezes mais força.",
+    "explanation": "O Slide 46 estipula claramente o cenário: 'Considere uma ambulância em marcha de emergência que trava bruscamente a 80 km/h'.",
     "distractorAnalysis": [
-      "Está incorreta: A mesma força sobre massas diferentes produz acelerações diferentes (inversamente proporcionais).",
-      "Está incorreta: Uma massa maior exige maior força, e nunca menor força, para atingir a mesma aceleração linear.",
-      "Está incorreta: Qualquer alteração de velocidade (aceleração) exige obrigatoriamente uma força resultante não nula."
+      "Está incorreta: 30 km/h é a velocidade típica de marcha moderada em meio urbano, não a do cenário do slide.",
+      "Está incorreta: 50 km/h é o limite geral dentro de localidades, mas o slide especifica 80 km/h.",
+      "Está incorreta: 120 km/h é o limite de autoestrada, superior ao valor indicado no caso clínico."
     ],
-    "nursingApplication": "Mostra a necessidade de maior esforço muscular ao transportar equipamentos com carga pesada."
+    "nursingApplication": "Permite aos alunos reconhecer os dados exatos do problema biomecânico explorado nas aulas."
   },
   {
     "id": 1108,
     "topicId": 1,
-    "question": "Qual é a unidade da grandeza Aceleração no Sistema Internacional de Unidades (SI)?",
+    "question": "Que lição fundamental de física resulta da resolução conjunta do desafio clínico da ambulância nos slides de Biofísica?",
     "options": [
-      "Metros por segundo ao quadrado (m/s²).",
-      "Quilogramas por metro cúbico (kg/m³).",
-      "Newtons por segundo (N/s).",
-      "Joule por metro (J/m)."
+      "Que as três Leis de Newton atuam de forma combinada e explicam integralmente o fenómeno de uma colisão real.",
+      "Que a 1ª Lei de Newton só se aplica a veículos e a 2ª Lei só a seres vivos.",
+      "Que a Biofísica se desliga da prática clínica e serve apenas para cálculos no papel.",
+      "Que a gravidade terrestre é anulada durante movimentos de travagem de emergência."
     ],
     "correctIndex": 0,
-    "explanation": "No SI, a aceleração exprime a taxa de variação da velocidade no tempo: (m/s) / s = m/s².",
+    "explanation": "O desafio demonstra a união das 3 leis: a 1ª Lei explica por que o corpo é projetado (inércia), a 2ª Lei quantifica a magnitude da força de travagem (F = m · a) e a 3ª Lei explica a deformação da divisória (ação-reação).",
     "distractorAnalysis": [
-      "Está incorreta: kg/m³ é a unidade SI de massa volúmica (densidade), não de aceleração.",
-      "Está incorreta: N/s mede a taxa temporal de variação de uma força, não a aceleração cinemática.",
-      "Está incorreta: J/m é dimensionalmente equivalente a Newton (unidade de força), não a aceleração."
+      "Está incorreta: Todas as Leis de Newton aplicam-se universalmente a qualquer corpo material, vivo ou inanimado.",
+      "Está incorreta: O exemplo ilustra precisamente a aplicação direta da biofísica à preservação da vida e prevenção de acidentes.",
+      "Está incorreta: A gravidade mantém-se sempre atuante na direção vertical ao longo de todo o evento."
     ],
-    "nursingApplication": "Unidade fundamental usada para quantificar acelerações e travagens de transportes hospitalares."
+    "nursingApplication": "Promove o pensamento crítico e a integração de conceitos biofísicos em incidentes do quotidiano hospitalar."
   },
   {
     "id": 1109,
     "topicId": 1,
-    "question": "De acordo com a formulação vetorial da 2.ª Lei de Newton (Fr = m·a), qual é a relação geométrica entre o vetor Força Resultante e o vetor Aceleração?",
+    "question": "No momento em que o enfermeiro colide contra a divisória, que papel desempenha a divisória em termos da 1ª Lei de Newton?",
     "options": [
-      "Possuem a mesma direção mas obrigatoriamente sentidos opostos.",
-      "Possuem obrigatoriamente a mesma direção e o mesmo sentido no espaço tridimensional.",
-      "Formam sempre um ângulo de noventa graus entre si.",
-      "Não possuem qualquer relação geométrica porque a massa é uma grandeza imaginária."
+      "Atua como um condutor de calor que evapora a água corporal.",
+      "Atua como a força externa necessária para alterar o estado de movimento e parar o corpo do profissional.",
+      "Transforma a inércia em energia nuclear forte no tórax.",
+      "Acelera o enfermeiro para que ele atravesse o habitáculo da ambulância."
     ],
     "correctIndex": 1,
-    "explanation": "Como a massa m é um escalar estritamente positivo, o vetor a tem rigorosamente a mesma direção e o mesmo sentido do vetor Fr.",
+    "explanation": "Pela 1ª Lei, o enfermeiro continuaria a mover-se a 80 km/h até que uma força externa atuasse sobre ele. A divisória é a estrutura rígida que aplica essa força externa de paragem (infelizmente de forma brusca e traumática).",
     "distractorAnalysis": [
-      "Está incorreta: Sentidos opostos violariam a equação vetorial Fr = m·a para uma massa positiva.",
-      "Está incorreta: Forças e acelerações perpendiculares só ocorrem em coordenadas normais de aceleração centrípeta sob força centrípeta.",
-      "Está incorreta: A massa é um escalar real positivo fundamental da mecânica clássica."
+      "Está incorreta: A divisória aplica forças mecânicas normais de contacto, não trocas de calor evaporativas.",
+      "Está incorreta: Não há conversão de inércia em forças nucleares subatómicas.",
+      "Está incorreta: A divisória trava o movimento do corpo, reduzindo a sua velocidade de 80 km/h para zero."
     ],
-    "nursingApplication": "Garante que ao empurrar um objeto para a frente, a sua aceleração ocorre exatamente para a frente."
+    "nursingApplication": "Evidencia por que os sistemas de retenção e airbags distribuem a desaceleração em maior tempo e área."
   },
   {
     "id": 1110,
     "topicId": 1,
-    "question": "Um carrinho de transporte hospitalar desloca-se em linha reta com velocidade não nula, mas com aceleração rigorosamente nula (a = 0 m/s²). O que se conclui sobre a força resultante que atua sobre ele?",
+    "question": "Segundo o Slide 49, como se calcula a força equivalente com que o corpo desprovido de cinto colide contra o painel na travagem?",
     "options": [
-      "A força resultante é infinitamente grande para manter o movimento sem parar.",
-      "A força resultante é igual ao peso total do carrinho multiplicado pela velocidade.",
-      "A força resultante é forçosamente nula (Fr = 0), mantendo-se o carrinho em movimento retilíneo uniforme.",
-      "O carrinho está a violar a 2.ª Lei de Newton porque corpos em movimento exigem sempre força resultante."
+      "Multiplicando a temperatura corporal pela velocidade da ambulância.",
+      "Dividindo o peso do veículo pelo volume de oxigénio na cabina.",
+      "Multiplicando a massa corporal do indivíduo pela desaceleração sofrida (F = m · a).",
+      "Somando a altura do utente ao diâmetro do pneu da ambulância."
     ],
     "correctIndex": 2,
-    "explanation": "Pela 2.ª Lei de Newton, se a = 0 m/s², então Fr = m · 0 = 0 N, o que define movimento retilíneo e uniforme.",
+    "explanation": "O Slide 49 esclarece textualmente: 'colidirá com a divisória com força equivalente à sua massa multiplicada pela desaceleração'.",
     "distractorAnalysis": [
-      "Está incorreta: Força resultante infinita geraria aceleração infinita, o que contradiz a aceleração nula observada.",
-      "Está incorreta: Força resultante não é o produto do peso pela velocidade.",
-      "Está incorreta: Não há violação; a 1.ª e a 2.ª Leis afirmam em uníssono que velocidade constante decorre de força resultante nula."
+      "Está incorreta: Temperatura e velocidade não produzem a dimensão física de força (Newton).",
+      "Está incorreta: Dividir peso de veículo por volume de ar é dimensionalmente incorreto.",
+      "Está incorreta: Somar grandezas geométricas não quantifica o impacto mecânico de colisão."
     ],
-    "nursingApplication": "Explica por que manter uma velocidade constante de cruzeiro exige apenas equilibrar o atrito das rodas."
+    "nursingApplication": "Permite dimensionar a importância dos sistemas de retenção estofados e cintos de segurança de múltiplos pontos."
   },
   {
     "id": 1111,
     "topicId": 1,
-    "question": "Qual é a força resultante necessária para acelerar um carrinho de massa 30 kg a uma aceleração constante de 1.2 m/s²?",
+    "question": "Qual é a definição de 'Equilíbrio Estável' apresentada no Slide 55 de Biofísica?",
     "options": [
-      "31.2 N.",
-      "25.0 N.",
-      "36 kg.",
-      "36 N."
+      "O corpo permanece sempre em movimento acelerado contínuo após qualquer desvio.",
+      "Após desviar um corpo da sua posição de equilíbrio, este tende a desviar-se ainda mais.",
+      "Após desviar um corpo da sua posição de equilíbrio, este permanece em equilíbrio na nova posição.",
+      "O corpo retorna à posição inicial de forma espontânea após ter sido desviado da sua posição de equilíbrio."
     ],
     "correctIndex": 3,
-    "explanation": "Pela 2ª Lei de Newton: Fr = m · a = 30 kg · 1.2 m/s² = 36 N.",
+    "explanation": "O Slide 55 define expressamente: 'Equilíbrio Estável: O corpo retorna à posição inicial de forma espontânea após ter sido desviado da sua posição de equilíbrio'.",
     "distractorAnalysis": [
-      "Está incorreta: Somar a massa com a aceleração viola a fórmula da 2ª Lei de Newton (Fr = m · a).",
-      "Está incorreta: Dividir a massa pela aceleração não fornece a intensidade da força resultante.",
-      "Está incorreta: O valor numérico está correto, mas a unidade de força é o Newton (N) e não o quilograma (kg)."
+      "Está incorreta: Movimento acelerado perpétuo violaria a conservação de energia e a definição de equilíbrio.",
+      "Está incorreta: Tender a desviar-se ainda mais corresponde à definição de Equilíbrio Instável (Slide 56).",
+      "Está incorreta: Permanecer em equilíbrio na nova posição corresponde à definição de Equilíbrio Indiferente (Slide 57)."
     ],
-    "nursingApplication": "Permite calcular a força exata necessária para empurrar e acelerar um carrinho de transporte hospitalar."
+    "nursingApplication": "Exemplo biomecânico da postura bípede com pés afastados, capaz de resistir a pequenas perturbações sem queda."
   },
   {
     "id": 1112,
     "topicId": 1,
-    "question": "Se uma força resultante horizontal de 60 N for aplicada sobre uma maca de 40 kg num piso plano sem atrito, qual será a aceleração adquirida?",
+    "question": "Qual é a definição de 'Equilíbrio Instável' apresentada no Slide 56 de Biofísica?",
     "options": [
-      "1.5 m/s².",
-      "600.0 m/s².",
-      "0.75 m/s².",
-      "1.5 N."
+      "Após desviar um corpo da sua posição de equilíbrio, este tende a desviar-se ainda mais da sua posição de equilíbrio.",
+      "O corpo retorna à posição inicial de forma espontânea após ter sido desviado.",
+      "Após ser desviado, o corpo permanece em repouso na nova posição sem sofrer qualquer momento.",
+      "O corpo perde totalmente a sua massa e entra em levitação gravitacional."
     ],
     "correctIndex": 0,
-    "explanation": "Pela 2ª Lei de Newton, a = Fr / m: 60 N / 40 kg = 1.5 m/s².",
+    "explanation": "O Slide 56 define expressamente: 'Equilíbrio Instável: Após desviar um corpo da sua posição de equilíbrio, este tende a desviar-se ainda mais da sua posição de equilíbrio'.",
     "distractorAnalysis": [
-      "Está incorreta: Multiplicar a força por ordens de grandeza arbitrárias fornece um valor excessivo e incorreto.",
-      "Está incorreta: Esse valor representa metade da aceleração real obtida pela razão Fr / m.",
-      "Está incorreta: A aceleração mede-se em m/s² no SI, e não em Newtons (N), que é a unidade de força."
+      "Está incorreta: Retornar espontaneamente à posição inicial é a definição de Equilíbrio Estável (Slide 55).",
+      "Está incorreta: Permanecer equilibrado na nova posição é a definição de Equilíbrio Indiferente (Slide 57).",
+      "Está incorreta: A massa nunca se perde e a gravidade continua a atuar plenamente."
     ],
-    "nursingApplication": "Mostra como a aceleração de um equipamento diminui à medida que a sua massa aumenta."
+    "nursingApplication": "Descreve o estado biomecânico de um utente com risco iminente de queda (ex.: em pontas dos pés com base estreita)."
   },
   {
     "id": 1113,
     "topicId": 1,
-    "question": "De acordo com a 2ª Lei de Newton (F = m·a), se a massa de um corpo duplicar e a força resultante aplicada se mantiver constante, a aceleração:",
+    "question": "Qual é a definição de 'Equilíbrio Indiferente' apresentada no Slide 57 de Biofísica?",
     "options": [
-      "Duplica em relação ao valor inicial.",
-      "Reduz-se para metade do valor inicial.",
-      "Quadruplica instantaneamente.",
-      "Permanece rigorosamente inalterada."
+      "O corpo oscila periodicamente entre duas posições extremas a alta frequência.",
+      "Após desviar um corpo da sua posição de equilíbrio, este permanece em equilíbrio na nova posição.",
+      "O corpo desmorona imediatamente com fratura mecânica estrutural.",
+      "O corpo retorna obrigatoriamente à posição de origem após 60 segundos."
     ],
     "correctIndex": 1,
-    "explanation": "Como a = F / m, a aceleração é inversamente proporcional à massa. Duplicando a massa com força constante, a aceleração passa a metade.",
+    "explanation": "O Slide 57 define expressamente: 'Equilíbrio Indiferente: Após desviar um corpo da sua posição de equilíbrio, este permanece em equilíbrio na nova posição'.",
     "distractorAnalysis": [
-      "Está incorreta: A aceleração só duplicaria se a força duplicasse para a mesma massa, ou se a massa passasse a metade.",
-      "Está incorreta: Quadruplicar a aceleração exigiria quadruplicar a força ou reduzir a massa a um quarto.",
-      "Está incorreta: A aceleração não se mantém inalterada porque depende inversamente da massa inercial do corpo."
+      "Está incorreta: Oscilações periódicas descrevem pêndulos ou osciladores harmónicos, não a definição do slide.",
+      "Está incorreta: Desmoronamento estrutural é falha mecânica de materiais, não equilíbrio indiferente.",
+      "Está incorreta: Retornar à origem define equilíbrio estável, não indiferente."
     ],
-    "nursingApplication": "Ao duplicar a carga numa maca, a mesma força muscular produzirá apenas metade da aceleração."
+    "nursingApplication": "Exemplificado por uma bola ou roda num piso plano horizontal, que encontra novo equilíbrio onde quer que pare."
   },
   {
     "id": 1114,
     "topicId": 1,
-    "question": "Se a força resultante aplicada sobre um equipamento hospitalar triplicar mantendo-se a sua massa inalterada, o que acontece à sua aceleração?",
+    "question": "Qual é o princípio fundamental sobre corpos em equilíbrio realçado no Slide 58?",
     "options": [
-      "Reduz-se a um terço do valor.",
-      "Permanece constante e inalterada.",
-      "Triplica na mesma proporção direta.",
-      "Passa a ser rigorosamente nula."
+      "Um corpo em equilíbrio nunca pode ter qualquer força a atuar sobre ele.",
+      "Apenas os corpos que se encontram no vácuo espacial podem atingir o equilíbrio.",
+      "Um corpo em equilíbrio pode ter forças a atuar sobre ele; a força resultante é que é nula!",
+      "Para haver equilíbrio, a força normal tem de ser sempre o dobro da força de atrito."
     ],
     "correctIndex": 2,
-    "explanation": "A aceleração é diretamente proporcional à força resultante (a ∝ F). Triplicando a força, a aceleração triplica.",
+    "explanation": "O Slide 58 destaca a clarificação pedagógica: 'Um corpo em equilíbrio pode ter forças a atuar sobre ele; a força resultante é que é nula!'.",
     "distractorAnalysis": [
-      "Está incorreta: A aceleração só se reduziria a um terço se a massa triplicasse mantendo-se a força constante.",
-      "Está incorreta: A aceleração não fica constante quando a força resultante aplicada sobre a massa varia.",
-      "Está incorreta: A aceleração só seria nula se a força resultante fosse igual a zero."
+      "Está incorreta: Afirmar que não atuam forças é um erro concetual grave; atuam frequentemente o peso e a normal, anulando-se mutuamente.",
+      "Está incorreta: O equilíbrio ocorre em qualquer ambiente onde o somatório de forças e momentos se anule.",
+      "Está incorreta: Não existe qualquer proporção fixa universal que exija que a normal seja o dobro do atrito."
     ],
-    "nursingApplication": "Empurrar com mais intensidade produz uma aceleração proporcionalmente mais rápida do equipamento."
+    "nursingApplication": "Ensina a identificar que um doente em repouso no leito tem múltiplas forças a atuar em si em perfeito cancelamento mútuo."
   },
   {
     "id": 1115,
     "topicId": 1,
-    "question": "O que afirma a 2ª Lei de Newton (Lei Fundamental da Dinâmica)?",
+    "question": "Uma esfera metálica pousada no fundo de uma taça hemisférica côncava ilustra classicamente que tipo de equilíbrio?",
     "options": [
-      "A energia mecânica total de um sistema dissipa-se sempre espontaneamente sob a forma de calor no vácuo.",
-      "A velocidade de um corpo é independente de qualquer força que atue sobre as suas superfícies de contacto.",
-      "Dois corpos em repouso atraem-se com força inversamente proporcional ao cubo da sua temperatura absoluta.",
-      "A força resultante que atua sobre um corpo material é diretamente proporcional à sua massa inercial e à aceleração que ele adquire (Fr = m·a)."
+      "Equilíbrio indiferente.",
+      "Equilíbrio instável.",
+      "Movimento perpétuo acelerado.",
+      "Equilíbrio estável (se for ligeiramente desviada, as forças restauradoras fazem-na regressar ao fundo)."
     ],
     "correctIndex": 3,
-    "explanation": "A 2ª Lei estabelece a relação quantitativa fundamental da dinâmica clássica: Fr = m · a.",
+    "explanation": "No fundo da taça, o centro de gravidade está na posição mais baixa possível. Ao ser deslocada para o lado, o peso gera uma força restauradora que a faz regressar espontaneamente à posição inicial (Equilíbrio Estável, Slide 55).",
     "distractorAnalysis": [
-      "Está incorreta: Essa afirmação remete para a termodinâmica estatística, não para a 2ª Lei de Newton.",
-      "Está incorreta: A velocidade é diretamente alterada ao longo do tempo pela aceleração que decorre das forças aplicadas.",
-      "Está incorreta: A atração entre corpos depende da gravidade e das massas, não da temperatura absoluta cúbica."
+      "Está incorreta: Indiferente seria se a taça fosse um piso plano e a esfera ficasse parada em qualquer ponto.",
+      "Está incorreta: Instável seria se a esfera estivesse no topo de uma taça virada para baixo (cúpula convexa), caindo ao menor toque.",
+      "Está incorreta: O atrito dissipa as oscilações e a esfera atinge o repouso no fundo."
     ],
-    "nursingApplication": "Fundamento para calcular as forças necessárias para mover massas na rotina física hospitalar."
+    "nursingApplication": "Compreensão análoga ao centro de gravidade baixo na postura humana, que confere autorrecuperação contra quedas."
   },
   {
     "id": 1116,
     "topicId": 1,
-    "question": "Para travar e imobilizar uma maca de 100 kg que se move a 2 m/s no intervalo de 1 segundo (desaceleração a = 2 m/s²), que força média de travagem é necessária?",
+    "question": "Um bastão ou caneta colocado na vertical apoiado na sua ponta fina e afiada sobre uma mesa representa que tipo de equilíbrio mecânico?",
     "options": [
-      "200 N no sentido oposto ao movimento.",
-      "50 N no mesmo sentido da marcha.",
-      "100 N na direção vertical ascendente.",
-      "500 N orientada para o solo."
+      "Equilíbrio instável (qualquer pequeníssimo desvio gera um momento do peso que afasta o corpo ainda mais da posição inicial, fazendo-o tombar).",
+      "Equilíbrio estável perfeito e inviolável.",
+      "Equilíbrio indiferente em qualquer inclinação.",
+      "Estado de translação retilínea uniforme."
     ],
     "correctIndex": 0,
-    "explanation": "Pela 2ª Lei de Newton: F = m · a = 100 kg · 2 m/s² = 200 N em sentido contrário ao deslocamento.",
+    "explanation": "Com uma base de sustentação quase pontual e CG elevado, qualquer microdesvio desloca a linha de gravidade para fora do apoio, criando momento desestabilizador: o corpo tomba (Equilíbrio Instável, Slide 56).",
     "distractorAnalysis": [
-      "Está incorreta: 50 N resultaria de dividir incorretamente 100 kg por 2 m/s², violando a relação F = m · a.",
-      "Está incorreta: 100 N seria a força requerida se a desaceleração fosse de apenas 1 m/s².",
-      "Está incorreta: 500 N superaria significativamente a força deduzida do produto da massa pela desaceleração."
+      "Está incorreta: No equilíbrio estável o corpo regressa à posição original, o que não acontece com a caneta apoiada na ponta.",
+      "Está incorreta: No equilíbrio indiferente o corpo ficaria em equilíbrio em qualquer ângulo inclinado, o que é falso.",
+      "Está incorreta: A caneta está em tentativa de equilíbrio estático, não em translação com velocidade constante."
     ],
-    "nursingApplication": "Ilustra a força que as mãos devem exercer sobre a pega da maca para a imobilizar com segurança."
+    "nursingApplication": "Ilustra o risco biomecânico de um doente com base de apoio mínima e linha de gravidade desequilibrada."
   },
   {
     "id": 1117,
     "topicId": 1,
-    "question": "Se um carrinho vazio tem massa de 20 kg e um carrinho carregado tem massa de 80 kg, para obter a mesma aceleração em ambos:",
+    "question": "Uma bola de futebol parada num piso de pavilhão perfeitamente plano e horizontal que é deslocada 1 metro para o lado e fica parada na nova posição exemplifica:",
     "options": [
-      "O carrinho carregado exige a mesma força exata que o carrinho vazio.",
-      "O carrinho carregado exige uma força resultante quatro vezes maior do que o carrinho vazio.",
-      "O carrinho carregado exige uma força quatro vezes menor que o carrinho vazio.",
-      "Nenhum dos carrinhos necessita de qualquer força mecânica para acelerar."
+      "Equilíbrio instável explosivo.",
+      "Equilíbrio indiferente (Slide 57).",
+      "Equilíbrio estável de auto-recuperação.",
+      "Violação da 1ª Lei de Newton."
     ],
     "correctIndex": 1,
-    "explanation": "Como F = m·a, para a mesma aceleração 'a', a força é proporcional à massa. 80 kg / 20 kg = 4 vezes mais força.",
+    "explanation": "Na superfície horizontal, a altura do centro de gravidade da esfera permanece rigorosamente constante ao rolar. Deslocada da posição original, ela permanece em equilíbrio na nova posição (Equilíbrio Indiferente, Slide 57).",
     "distractorAnalysis": [
-      "Está incorreta: A mesma força sobre massas diferentes produz acelerações diferentes (inversamente proporcionais).",
-      "Está incorreta: Uma massa maior exige maior força, e nunca menor força, para atingir a mesma aceleração linear.",
-      "Está incorreta: Qualquer alteração de velocidade (aceleração) exige obrigatoriamente uma força resultante não nula."
+      "Está incorreta: No equilíbrio instável a bola aceleraria para longe sem parar no piso nivelado.",
+      "Está incorreta: No equilíbrio estável a bola teria de regressar espontaneamente ao ponto de onde partiu.",
+      "Está incorreta: O comportamento obedece perfeitamente à 1ª Lei de Newton na presença de leve atrito de paragem."
     ],
-    "nursingApplication": "Mostra a necessidade de maior esforço muscular ao transportar equipamentos com carga pesada."
+    "nursingApplication": "Demonstra a ausência de momento restaurador ou desestabilizador em superfícies horizontais lisas."
   },
   {
     "id": 1118,
     "topicId": 1,
-    "question": "Qual é a unidade da grandeza Aceleração no Sistema Internacional de Unidades (SI)?",
+    "question": "Se a força resultante Fr sobre um corpo for diferente de zero, o que acontece obrigatoriamente ao corpo segundo as Leis de Newton?",
     "options": [
-      "Quilogramas por metro cúbico (kg/m³).",
-      "Newtons por segundo (N/s).",
-      "Metros por segundo ao quadrado (m/s²).",
-      "Joule por metro (J/m)."
+      "Permanece em equilíbrio estático indiferente.",
+      "Entra imediatamente em equilíbrio estável.",
+      "Não se encontra em equilíbrio, sofrendo aceleração (a = Fr / m) que altera a sua velocidade.",
+      "Transforma a sua massa em pressão capilar profunda."
     ],
     "correctIndex": 2,
-    "explanation": "No SI, a aceleração exprime a taxa de variação da velocidade no tempo: (m/s) / s = m/s².",
+    "explanation": "Por definição, estar em equilíbrio exige Fr = 0 N. Se a força resultante não for nula, o corpo é acelerado pela 2ª Lei de Newton (Fr = m · a), rompendo o equilíbrio.",
     "distractorAnalysis": [
-      "Está incorreta: kg/m³ é a unidade SI de massa volúmica (densidade), não de aceleração.",
-      "Está incorreta: N/s mede a taxa temporal de variação de uma força, não a aceleração cinemática.",
-      "Está incorreta: J/m é dimensionalmente equivalente a Newton (unidade de força), não a aceleração."
+      "Está incorreta: Equilíbrio indiferente requer estritamente força resultante nula (Fr = 0 N).",
+      "Está incorreta: Qualquer forma de equilíbrio exige força resultante nula.",
+      "Está incorreta: A massa não se converte em pressão; a pressão resulta de forças distribuídas por área."
     ],
-    "nursingApplication": "Unidade fundamental usada para quantificar acelerações e travagens de transportes hospitalares."
+    "nursingApplication": "Permite diagnosticar desequilíbrios mecânicos durante a marcha de doentes em reabilitação."
   },
   {
     "id": 1119,
     "topicId": 1,
-    "question": "De acordo com a formulação vetorial da 2.ª Lei de Newton (Fr = m·a), qual é a relação geométrica entre o vetor Força Resultante e o vetor Aceleração?",
+    "question": "Para que um corpo rígido extenso esteja em equilíbrio mecânico completo (estático), que condições têm de ser simultaneamente satisfeitas nos slides?",
     "options": [
-      "Possuem a mesma direção mas obrigatoriamente sentidos opostos.",
-      "Formam sempre um ângulo de noventa graus entre si.",
-      "Não possuem qualquer relação geométrica porque a massa é uma grandeza imaginária.",
-      "Possuem obrigatoriamente a mesma direção e o mesmo sentido no espaço tridimensional."
+      "Apenas que o corpo tenha velocidade superior a 100 km/h.",
+      "Apenas que a sua massa seja inferior a 50 kg.",
+      "Apenas que a força de atrito seja perpendicular à gravidade.",
+      "A força resultante tem de ser nula (equilíbrio de translação) e o momento resultante tem de ser nulo (equilíbrio de rotação)."
     ],
     "correctIndex": 3,
-    "explanation": "Como a massa m é um escalar estritamente positivo, o vetor a tem rigorosamente a mesma direção e o mesmo sentido do vetor Fr.",
+    "explanation": "O equilíbrio mecânico total de um corpo rígido exige que não haja aceleração linear (Fr = 0 N) nem aceleração angular de rotação (Momento resultante Mr = 0 N·m).",
     "distractorAnalysis": [
-      "Está incorreta: Sentidos opostos violariam a equação vetorial Fr = m·a para uma massa positiva.",
-      "Está incorreta: Forças e acelerações perpendiculares só ocorrem em coordenadas normais de aceleração centrípeta sob força centrípeta.",
-      "Está incorreta: A massa é um escalar real positivo fundamental da mecânica clássica."
+      "Está incorreta: Velocidade de 100 km/h não define as condições estáticas de equilíbrio de forças e momentos.",
+      "Está incorreta: O equilíbrio aplica-se a qualquer valor de massa, pequena ou grande.",
+      "Está incorreta: A orientação geométrica do atrito depende da superfície e não garante por si só o equilíbrio."
     ],
-    "nursingApplication": "Garante que ao empurrar um objeto para a frente, a sua aceleração ocorre exatamente para a frente."
+    "nursingApplication": "A base para analisar a estabilidade postural e o cálculo de alavancas no corpo humano."
   },
   {
     "id": 1120,
     "topicId": 1,
-    "question": "Um carrinho de transporte hospitalar desloca-se em linha reta com velocidade não nula, mas com aceleração rigorosamente nula (a = 0 m/s²). O que se conclui sobre a força resultante que atua sobre ele?",
+    "question": "Um utente sentado numa poltrona hospitalar com os pés apoiados no chão e as costas encostadas encontra-se numa situação de equilíbrio mecânico estável porque:",
     "options": [
-      "A força resultante é forçosamente nula (Fr = 0), mantendo-se o carrinho em movimento retilíneo uniforme.",
-      "A força resultante é infinitamente grande para manter o movimento sem parar.",
-      "A força resultante é igual ao peso total do carrinho multiplicado pela velocidade.",
-      "O carrinho está a violar a 2.ª Lei de Newton porque corpos em movimento exigem sempre força resultante."
+      "A força resultante e os momentos são nulos, e um pequeno desvio involuntário é facilmente corrigido pela base de apoio e musculatura postural.",
+      "A força de gravidade deixou de puxar o seu corpo em direção ao chão.",
+      "A força normal exercida pelo assento tem intensidade infinitamente superior ao peso.",
+      "O utente bariátrico perde a sua inércia quando se encosta aos braços da cadeira."
     ],
     "correctIndex": 0,
-    "explanation": "Pela 2.ª Lei de Newton, se a = 0 m/s², então Fr = m · 0 = 0 N, o que define movimento retilíneo e uniforme.",
+    "explanation": "A ampla base delimitada pelos pés e assento e o centro de gravidade rebaixado garantem que qualquer pequena perturbação mantenha a linha de gravidade dentro da base, restaurando a postura estável.",
     "distractorAnalysis": [
-      "Está incorreta: Força resultante infinita geraria aceleração infinita, o que contradiz a aceleração nula observada.",
-      "Está incorreta: Força resultante não é o produto do peso pela velocidade.",
-      "Está incorreta: Não há violação; a 1.ª e a 2.ª Leis afirmam em uníssono que velocidade constante decorre de força resultante nula."
+      "Está incorreta: A gravidade atua continuamente com P = m · g.",
+      "Está incorreta: A força normal é finita e equilibra rigorosamente o peso do corpo (N = P).",
+      "Está incorreta: A inércia é proporcional à massa e mantém-se constante em qualquer posição sentada."
     ],
-    "nursingApplication": "Explica por que manter uma velocidade constante de cruzeiro exige apenas equilibrar o atrito das rodas."
+    "nursingApplication": "Justifica a recomendação ergonómica de sentar doentes em poltronas estáveis em vez de mantê-los na beira da cama."
   },
   {
     "id": 1121,
     "topicId": 1,
-    "question": "Qual é a força resultante necessária para acelerar um carrinho de massa 50 kg a uma aceleração constante de 2.0 m/s²?",
+    "question": "No esquema de um corpo em equilíbrio num plano inclinado do Slide 59, como são identificadas as grandezas P, P_n, P_t, N e F_a?",
     "options": [
-      "52.0 N.",
-      "100 N.",
-      "25.0 N.",
-      "100 kg."
+      "P = Pressão; P_n = Neutrões; P_t = Temperatura; N = Newton; F_a = Força arterial.",
+      "P = Peso do corpo; P_n e P_t = Componentes vertical (perpendicular) e horizontal (paralela) do peso; N = Força normal; F_a = Força de atrito.",
+      "P = Potência; P_n = Ponto neutro; P_t = Ponto de tração; N = Núcleo; F_a = Fulcro articular.",
+      "P = Posição; P_n = Polo norte; P_t = Polo terra; N = Normalidade química; F_a = Força de ação."
     ],
     "correctIndex": 1,
-    "explanation": "Pela 2ª Lei de Newton: Fr = m · a = 50 kg · 2.0 m/s² = 100 N.",
+    "explanation": "A legenda do Slide 59 define com rigor: 'P = Peso do corpo | P_n e P_t = Componentes vertical e horizontal do peso | N = Força normal | F_a = Força de atrito'.",
     "distractorAnalysis": [
-      "Está incorreta: Somar a massa com a aceleração viola a fórmula da 2ª Lei de Newton (Fr = m · a).",
-      "Está incorreta: Dividir a massa pela aceleração não fornece a intensidade da força resultante.",
-      "Está incorreta: O valor numérico está correto, mas a unidade de força é o Newton (N) e não o quilograma (kg)."
+      "Está incorreta: Pressão, neutrões e temperatura são conceitos de outros tópicos, não as forças do diagrama do plano inclinado.",
+      "Está incorreta: Potência e fulcro articular não constam no diagrama de forças do bloco no plano inclinado.",
+      "Está incorreta: Termos de magnetismo e química analítica estão descontextualizados da mecânica do Slide 59."
     ],
-    "nursingApplication": "Permite calcular a força exata necessária para empurrar e acelerar um carrinho de transporte hospitalar."
+    "nursingApplication": "Garante a correta leitura e interpretação de diagramas de forças em rampas de acesso para macas e cadeiras de rodas."
   },
   {
     "id": 1122,
     "topicId": 1,
-    "question": "Se uma força resultante horizontal de 150 N for aplicada sobre uma maca de 60 kg num piso plano sem atrito, qual será a aceleração adquirida?",
+    "question": "Quais são as relações de igualdade matemática expressas no Slide 59 para garantir o equilíbrio do corpo no plano inclinado?",
     "options": [
-      "1500.0 m/s².",
-      "1.25 m/s².",
-      "2.5 m/s².",
-      "2.5 N."
+      "P = N e P_n = P_t",
+      "F_a = N e P = 0",
+      "Em equilíbrio: P_n = N  e  P_t = F_a",
+      "P_t = N  e  P_n = F_a"
     ],
     "correctIndex": 2,
-    "explanation": "Pela 2ª Lei de Newton, a = Fr / m: 150 N / 60 kg = 2.5 m/s².",
+    "explanation": "O Slide 59 indica expressamente no quadro explicativo: 'Em equilíbrio: P_n = N  e  P_t = F_a' (a componente perpendicular do peso iguala a força normal, e a componente paralela do peso iguala a força de atrito).",
     "distractorAnalysis": [
-      "Está incorreta: Multiplicar a força por ordens de grandeza arbitrárias fornece um valor excessivo e incorreto.",
-      "Está incorreta: Esse valor representa metade da aceleração real obtida pela razão Fr / m.",
-      "Está incorreta: A aceleração mede-se em m/s² no SI, e não em Newtons (N), que é a unidade de força."
+      "Está incorreta: Num plano inclinado P não é igual a N (pois N equilibra apenas a componente P_n).",
+      "Está incorreta: O atrito equilibra a componente tangencial P_t, não a força normal perpendicular N.",
+      "Está incorreta: As correspondências estão trocadas: a normal N atua na direção de P_n e o atrito F_a na direção de P_t."
     ],
-    "nursingApplication": "Mostra como a aceleração de um equipamento diminui à medida que a sua massa aumenta."
+    "nursingApplication": "Essencial para calcular a força de travagem necessária para manter uma cadeira de rodas imobilizada numa rampa."
   },
   {
     "id": 1123,
     "topicId": 1,
-    "question": "De acordo com a 2ª Lei de Newton (F = m·a), se a massa de um corpo duplicar e a força resultante aplicada se mantiver constante, a aceleração:",
+    "question": "Qual é o papel biomecânico da força de atrito (F_a) no equilíbrio de uma cadeira de rodas numa rampa hospitalar inclinada?",
     "options": [
-      "Duplica em relação ao valor inicial.",
-      "Quadruplica instantaneamente.",
-      "Permanece rigorosamente inalterada.",
-      "Reduz-se para metade do valor inicial."
+      "Empurrar ativamente a cadeira rampa acima em alta velocidade.",
+      "Aumentar a componente do peso P_n para colar os pneus ao piso.",
+      "Eliminar a massa inercial do passageiro da cadeira.",
+      "Atuar paralelamente à rampa no sentido ascendente, equilibrando a componente tangencial do peso (P_t) e impedindo o deslizamento."
     ],
     "correctIndex": 3,
-    "explanation": "Como a = F / m, a aceleração é inversamente proporcional à massa. Duplicando a massa com força constante, a aceleração passa a metade.",
+    "explanation": "A gravidade tende a puxar a cadeira rampa abaixo com a componente P_t do peso. A força de atrito (pneus/travões) atua em sentido contrário (rampa acima) equilibrando P_t (F_a = P_t) para impedir a descida descontrolada.",
     "distractorAnalysis": [
-      "Está incorreta: A aceleração só duplicaria se a força duplicasse para a mesma massa, ou se a massa passasse a metade.",
-      "Está incorreta: Quadruplicar a aceleração exigiria quadruplicar a força ou reduzir a massa a um quarto.",
-      "Está incorreta: A aceleração não se mantém inalterada porque depende inversamente da massa inercial do corpo."
+      "Está incorreta: O atrito é uma força passiva de resistência e não um motor de propulsão ativa.",
+      "Está incorreta: O atrito atua na direção tangencial e não afeta a intensidade da componente normal P_n.",
+      "Está incorreta: Nenhuma força de atrito altera a massa intrínseca do organismo humano."
     ],
-    "nursingApplication": "Ao duplicar a carga numa maca, a mesma força muscular produzirá apenas metade da aceleração."
+    "nursingApplication": "Sublinha a necessidade imperativa de verificar o funcionamento dos travões de estacionamento antes de largar uma cadeira na rampa."
   },
   {
     "id": 1124,
     "topicId": 1,
-    "question": "Se a força resultante aplicada sobre um equipamento hospitalar triplicar mantendo-se a sua massa inalterada, o que acontece à sua aceleração?",
+    "question": "Qual é a orientação geométrica da componente P_n do peso num corpo apoiado num plano inclinado (Slide 59)?",
     "options": [
-      "Triplica na mesma proporção direta.",
-      "Reduz-se a um terço do valor.",
-      "Permanece constante e inalterada.",
-      "Passa a ser rigorosamente nula."
+      "Perpendicular à superfície do plano inclinado, apontando contra o plano (equilibrada pela força normal N).",
+      "Paralela à rampa inclinada apontando para a base da rampa.",
+      "Horizontal no sentido de rotação dos ponteiros do relógio.",
+      "Vertical ascendente em direção às nuvens."
     ],
     "correctIndex": 0,
-    "explanation": "A aceleração é diretamente proporcional à força resultante (a ∝ F). Triplicando a força, a aceleração triplica.",
+    "explanation": "A componente normal P_n atua perpendicularmente à superfície inclinada pressionando o corpo contra a rampa, sendo exatamente contrabalançada pela Força Normal N exercida pela rampa.",
     "distractorAnalysis": [
-      "Está incorreta: A aceleração só se reduziria a um terço se a massa triplicasse mantendo-se a força constante.",
-      "Está incorreta: A aceleração não fica constante quando a força resultante aplicada sobre a massa varia.",
-      "Está incorreta: A aceleração só seria nula se a força resultante fosse igual a zero."
+      "Está incorreta: A componente paralela à rampa é P_t (componente tangencial), não P_n.",
+      "Está incorreta: P_n é uma força linear perpendicular ao plano, sem orientação circular horária.",
+      "Está incorreta: P_n aponta para a superfície do plano, nunca para cima contra a gravidade."
     ],
-    "nursingApplication": "Empurrar com mais intensidade produz uma aceleração proporcionalmente mais rápida do equipamento."
+    "nursingApplication": "Permite entender porque a pressão sobre a superfície de apoio diminui à medida que o plano fica mais empinado."
   },
   {
     "id": 1125,
     "topicId": 1,
-    "question": "O que afirma a 2ª Lei de Newton (Lei Fundamental da Dinâmica)?",
+    "question": "O que acontece à componente tangencial do peso P_t se a inclinação de uma rampa hospitalar for aumentada de 5 graus para 20 graus?",
     "options": [
-      "A energia mecânica total de um sistema dissipa-se sempre espontaneamente sob a forma de calor no vácuo.",
-      "A força resultante que atua sobre um corpo material é diretamente proporcional à sua massa inercial e à aceleração que ele adquire (Fr = m·a).",
-      "A velocidade de um corpo é independente de qualquer força que atue sobre as suas superfícies de contacto.",
-      "Dois corpos em repouso atraem-se com força inversamente proporcional ao cubo da sua temperatura absoluta."
+      "Diminui para metade, facilitando a retenção da maca.",
+      "Aumenta significativamente, exigindo maior força de travagem ou atrito (F_a) para evitar que o corpo deslize.",
+      "Permanece rigorosamente inalterada porque a massa do doente é a mesma.",
+      "Anula-se transformando-se exclusivamente em força normal N."
     ],
     "correctIndex": 1,
-    "explanation": "A 2ª Lei estabelece a relação quantitativa fundamental da dinâmica clássica: Fr = m · a.",
+    "explanation": "À medida que o ângulo de inclinação sobe, a componente tangencial ao longo do plano P_t aumenta substancialmente. Para manter o equilíbrio (P_t = F_a), a força de atrito ou a força exercida pelo profissional tem de ser muito maior.",
     "distractorAnalysis": [
-      "Está incorreta: Essa afirmação remete para a termodinâmica estatística, não para a 2ª Lei de Newton.",
-      "Está incorreta: A velocidade é diretamente alterada ao longo do tempo pela aceleração que decorre das forças aplicadas.",
-      "Está incorreta: A atração entre corpos depende da gravidade e das massas, não da temperatura absoluta cúbica."
+      "Está incorreta: Aumentar a inclinação torna a rampa mais íngreme, aumentando a força de descida e não diminuindo.",
+      "Está incorreta: Embora a massa seja constante, a projeção geométrica do peso varia com o ângulo de inclinação.",
+      "Está incorreta: P_t cresce com o ângulo, enquanto a componente normal P_n é que diminui."
     ],
-    "nursingApplication": "Fundamento para calcular as forças necessárias para mover massas na rotina física hospitalar."
+    "nursingApplication": "Justifica as normas de arquitetura hospitalar que limitam a inclinação máxima de rampas a valores reduzidos (ex.: 6-8%)."
   },
   {
     "id": 1126,
     "topicId": 1,
-    "question": "Para travar e imobilizar uma maca de 100 kg que se move a 2 m/s no intervalo de 1 segundo (desaceleração a = 2 m/s²), que força média de travagem é necessária?",
+    "question": "Se uma maca for deixada numa rampa inclinada com os travões soltos num piso molhado sem atrito (F_a = 0 N):",
     "options": [
-      "50 N no mesmo sentido da marcha.",
-      "100 N na direção vertical ascendente.",
-      "200 N no sentido oposto ao movimento.",
-      "500 N orientada para o solo."
+      "A maca fica parada em equilíbrio indiferente.",
+      "A maca sobe a rampa espontaneamente impulsionada por P_n.",
+      "A maca sofre uma força resultante não equilibrada Fr = P_t e desce a rampa em movimento acelerado.",
+      "A maca perde peso e começa a flutuar horizontalmente."
     ],
     "correctIndex": 2,
-    "explanation": "Pela 2ª Lei de Newton: F = m · a = 100 kg · 2 m/s² = 200 N em sentido contrário ao deslocamento.",
+    "explanation": "Sem atrito (F_a = 0), a componente P_t ao longo da rampa não tem oposição. Pela 2ª Lei de Newton (Fr = m · a), a força resultante Fr = P_t acelera a maca rampa abaixo.",
     "distractorAnalysis": [
-      "Está incorreta: 50 N resultaria de dividir incorretamente 100 kg por 2 m/s², violando a relação F = m · a.",
-      "Está incorreta: 100 N seria a força requerida se a desaceleração fosse de apenas 1 m/s².",
-      "Está incorreta: 500 N superaria significativamente a força deduzida do produto da massa pela desaceleração."
+      "Está incorreta: Sem força de oposição para equilibrar P_t, o repouso é impossível.",
+      "Está incorreta: A componente P_t aponta para baixo ao longo da rampa, nunca rampa acima.",
+      "Está incorreta: A gravidade continua a atuar plenamente sobre a massa da maca."
     ],
-    "nursingApplication": "Ilustra a força que as mãos devem exercer sobre a pega da maca para a imobilizar com segurança."
+    "nursingApplication": "Regra crítica de segurança de enfermagem: nunca imobilizar macas ou cadeiras em rampas sem ativar os travões mecânicos."
   },
   {
     "id": 1127,
     "topicId": 1,
-    "question": "Se um carrinho vazio tem massa de 20 kg e um carrinho carregado tem massa de 80 kg, para obter a mesma aceleração em ambos:",
+    "question": "Num plano perfeitamente horizontal (inclinação de zero graus), qual é a relação entre o peso P e as componentes P_n e P_t?",
     "options": [
-      "O carrinho carregado exige a mesma força exata que o carrinho vazio.",
-      "O carrinho carregado exige uma força quatro vezes menor que o carrinho vazio.",
-      "Nenhum dos carrinhos necessita de qualquer força mecânica para acelerar.",
-      "O carrinho carregado exige uma força resultante quatro vezes maior do que o carrinho vazio."
+      "P_t é igual a P e P_n é nula.",
+      "P_n e P_t têm exatamente o mesmo valor de P/2.",
+      "Tanto P_n como P_t anulam-se completamente ficando o peso nulo.",
+      "P_n é igual à totalidade do peso P (P_n = P = N) e a componente tangencial P_t é rigorosamente nula (P_t = 0 N)."
     ],
     "correctIndex": 3,
-    "explanation": "Como F = m·a, para a mesma aceleração 'a', a força é proporcional à massa. 80 kg / 20 kg = 4 vezes mais força.",
+    "explanation": "Na horizontal, a gravidade atua estritamente perpendicular ao plano: todo o peso coincide com a componente normal (P_n = P), sendo suportado pela força normal N, enquanto a tendência de deslizamento é nula (P_t = 0).",
     "distractorAnalysis": [
-      "Está incorreta: A mesma força sobre massas diferentes produz acelerações diferentes (inversamente proporcionais).",
-      "Está incorreta: Uma massa maior exige maior força, e nunca menor força, para atingir a mesma aceleração linear.",
-      "Está incorreta: Qualquer alteração de velocidade (aceleração) exige obrigatoriamente uma força resultante não nula."
+      "Está incorreta: P_t seria igual a P se a rampa fosse perfeitamente vertical a 90 graus (queda livre na parede).",
+      "Está incorreta: As componentes só se igualam em ângulo de 45 graus, não na horizontal a 0 graus.",
+      "Está incorreta: O peso não se anula na horizontal; é suportado na íntegra pela força normal do piso."
     ],
-    "nursingApplication": "Mostra a necessidade de maior esforço muscular ao transportar equipamentos com carga pesada."
+    "nursingApplication": "Explica por que num corredor horizontal não é necessária força adicional para travar a componente de descida da gravidade."
   },
   {
     "id": 1128,
     "topicId": 1,
-    "question": "Qual é a unidade da grandeza Aceleração no Sistema Internacional de Unidades (SI)?",
+    "question": "Ao descer uma rampa inclinada com um doente na cadeira de rodas com velocidade constante, que esforço realiza o enfermeiro?",
     "options": [
-      "Metros por segundo ao quadrado (m/s²).",
-      "Quilogramas por metro cúbico (kg/m³).",
-      "Newtons por segundo (N/s).",
-      "Joule por metro (J/m)."
+      "Aplica uma força rampa acima para contrabalançar P_t, garantindo força resultante nula e descida controlada sem acelerar.",
+      "Empurra a cadeira com força máxima rampa abaixo para acelerar a chegada ao serviço.",
+      "Desliga o peso do utente através de movimentos oscilatórios rápidos.",
+      "Caminha de costas com os olhos vendados confiando apenas no atrito do piso."
     ],
     "correctIndex": 0,
-    "explanation": "No SI, a aceleração exprime a taxa de variação da velocidade no tempo: (m/s) / s = m/s².",
+    "explanation": "Para que a descida ocorra com velocidade constante (MRU com Fr = 0 N), a força de retenção aplicada pelo profissional somada ao atrito deve equilibrar rigorosamente a componente P_t do peso que puxa a cadeira rampa abaixo.",
     "distractorAnalysis": [
-      "Está incorreta: kg/m³ é a unidade SI de massa volúmica (densidade), não de aceleração.",
-      "Está incorreta: N/s mede a taxa temporal de variação de uma força, não a aceleração cinemática.",
-      "Está incorreta: J/m é dimensionalmente equivalente a Newton (unidade de força), não a aceleração."
+      "Está incorreta: Empurrar rampa abaixo somar-se-ia a P_t, provocando aceleração perigosa e risco de colisão.",
+      "Está incorreta: Não é possível desligar o peso de um corpo material na Terra.",
+      "Está incorreta: Prática negligente que viola todas as regras de segurança do utente e do profissional."
     ],
-    "nursingApplication": "Unidade fundamental usada para quantificar acelerações e travagens de transportes hospitalares."
+    "nursingApplication": "Técnica ergonómica recomendada de condução de cadeiras de rodas em rampas: descer de marcha-atrás com apoio do corpo para retenção."
   },
   {
     "id": 1129,
     "topicId": 1,
-    "question": "De acordo com a formulação vetorial da 2.ª Lei de Newton (Fr = m·a), qual é a relação geométrica entre o vetor Força Resultante e o vetor Aceleração?",
+    "question": "Qual das forças no diagrama do plano inclinado (Slide 59) é perpendicular à força normal N?",
     "options": [
-      "Possuem a mesma direção mas obrigatoriamente sentidos opostos.",
-      "Possuem obrigatoriamente a mesma direção e o mesmo sentido no espaço tridimensional.",
-      "Formam sempre um ângulo de noventa graus entre si.",
-      "Não possuem qualquer relação geométrica porque a massa é uma grandeza imaginária."
+      "A componente normal do peso P_n.",
+      "A força de atrito F_a (e a componente tangencial P_t), que atuam ao longo da superfície.",
+      "O peso total P em qualquer inclinação.",
+      "Nenhuma força, pois todas são paralelas entre si."
     ],
     "correctIndex": 1,
-    "explanation": "Como a massa m é um escalar estritamente positivo, o vetor a tem rigorosamente a mesma direção e o mesmo sentido do vetor Fr.",
+    "explanation": "A Força Normal N é perpendicular à superfície de apoio; a força de atrito F_a e a componente P_t atuam paralelamente à superfície de apoio. Logo, a direção de N e a de F_a formam um ângulo de 90 graus (são perpendiculares).",
     "distractorAnalysis": [
-      "Está incorreta: Sentidos opostos violariam a equação vetorial Fr = m·a para uma massa positiva.",
-      "Está incorreta: Forças e acelerações perpendiculares só ocorrem em coordenadas normais de aceleração centrípeta sob força centrípeta.",
-      "Está incorreta: A massa é um escalar real positivo fundamental da mecânica clássica."
+      "Está incorreta: P_n tem a mesma linha de ação que N (mesma direção vertical ao plano), com sentido oposto.",
+      "Está incorreta: O peso P atua na vertical gravitacional terrestre, não sendo perpendicular à normal inclinada.",
+      "Está incorreta: As forças no diagrama decompõem-se num referencial cartesiano ortogonal (eixo tangencial e eixo normal)."
     ],
-    "nursingApplication": "Garante que ao empurrar um objeto para a frente, a sua aceleração ocorre exatamente para a frente."
+    "nursingApplication": "Permite aos estudantes orientar mentalmente os eixos ortogonais ao analisar esforços mecânicos."
   },
   {
     "id": 1130,
     "topicId": 1,
-    "question": "Um carrinho de transporte hospitalar desloca-se em linha reta com velocidade não nula, mas com aceleração rigorosamente nula (a = 0 m/s²). O que se conclui sobre a força resultante que atua sobre ele?",
+    "question": "Num doente com risco de escorregar para os pés da cama ao elevar a cabeceira a 45º (plano inclinado), o deslizamento tecidual é provocado por qual componente de força?",
     "options": [
-      "A força resultante é infinitamente grande para manter o movimento sem parar.",
-      "A força resultante é igual ao peso total do carrinho multiplicado pela velocidade.",
-      "A força resultante é forçosamente nula (Fr = 0), mantendo-se o carrinho em movimento retilíneo uniforme.",
-      "O carrinho está a violar a 2.ª Lei de Newton porque corpos em movimento exigem sempre força resultante."
+      "Pela força nuclear forte dos ossos ilíacos.",
+      "Pela força eletromagnética gerada pelo motor elétrico do leito.",
+      "Pela componente tangencial do peso (P_t), que atua paralelamente ao colchão empurrando o corpo para baixo.",
+      "Exclusivamente pela componente normal P_n perpendicular ao colchão."
     ],
     "correctIndex": 2,
-    "explanation": "Pela 2.ª Lei de Newton, se a = 0 m/s², então Fr = m · 0 = 0 N, o que define movimento retilíneo e uniforme.",
+    "explanation": "A elevação da cabeceira cria um plano inclinado onde a gravidade se projeta na componente P_t ao longo da cama. Se o atrito não for suficiente para equilibrar P_t, o corpo escorrega em direção aos pés da cama, gerando cisalhamento tecidual.",
     "distractorAnalysis": [
-      "Está incorreta: Força resultante infinita geraria aceleração infinita, o que contradiz a aceleração nula observada.",
-      "Está incorreta: Força resultante não é o produto do peso pela velocidade.",
-      "Está incorreta: Não há violação; a 1.ª e a 2.ª Leis afirmam em uníssono que velocidade constante decorre de força resultante nula."
+      "Está incorreta: Forças nucleares atuam dentro do núcleo atómico, não produzindo deslizamento corporal.",
+      "Está incorreta: O motor articulou o estrado mecanicamente, mas a força propulsora do deslizamento é a componente do peso gravítico.",
+      "Está incorreta: A componente P_n pressiona o corpo contra o colchão; quem puxa para baixo ao longo da inclinação é P_t."
     ],
-    "nursingApplication": "Explica por que manter uma velocidade constante de cruzeiro exige apenas equilibrar o atrito das rodas."
+    "nursingApplication": "Identifica o mecanismo biofísico na génese de forças de cisalhamento e lesões sacrococcígeas em camas articuladas."
   },
   {
     "id": 1131,
     "topicId": 1,
-    "question": "Qual é a força resultante necessária para acelerar um carrinho de massa 24 kg a uma aceleração constante de 1.6 m/s²?",
+    "question": "O que mede o Momento da Força (Torque) de acordo com a definição apresentada nos Slides 61 e 62?",
     "options": [
-      "25.6 N.",
-      "15.0 N.",
-      "38.4 kg.",
-      "38.4 N."
+      "Mede a quantidade de calor transferida por radiação infravermelha.",
+      "Mede a aceleração linear sofrida por um corpo em queda livre.",
+      "Mede a massa atómica dos elementos químicos presentes no tecido ósseo.",
+      "Mede o efeito rotativo de uma força em torno de um ponto."
     ],
     "correctIndex": 3,
-    "explanation": "Pela 2ª Lei de Newton: Fr = m · a = 24 kg · 1.6 m/s² = 38.4 N.",
+    "explanation": "Os Slides 61 e 62 definem formalmente: 'Momento da força (Torque): Mede o efeito rotativo de uma força em torno de um ponto'.",
     "distractorAnalysis": [
-      "Está incorreta: Somar a massa com a aceleração viola a fórmula da 2ª Lei de Newton (Fr = m · a).",
-      "Está incorreta: Dividir a massa pela aceleração não fornece a intensidade da força resultante.",
-      "Está incorreta: O valor numérico está correto, mas a unidade de força é o Newton (N) e não o quilograma (kg)."
+      "Está incorreta: Calor transferido por radiação pertence à termodinâmica e biofotónica, não à mecânica rotacional.",
+      "Está incorreta: Aceleração linear decorre da força resultante translativa (2ª Lei de Newton), não do momento rotativo.",
+      "Está incorreta: Massa atómica é uma constante química e nuclear da matéria."
     ],
-    "nursingApplication": "Permite calcular a força exata necessária para empurrar e acelerar um carrinho de transporte hospitalar."
+    "nursingApplication": "Conceito fulcral para compreender como os músculos produzem movimentos de rotação nas articulações esqueléticas."
   },
   {
     "id": 1132,
     "topicId": 1,
-    "question": "Se uma força resultante horizontal de 12.8 N for aplicada sobre uma maca de 32 kg num piso plano sem atrito, qual será a aceleração adquirida?",
+    "question": "Qual é a frase de síntese direta apresentada no Slide 61 para resumir a ação do Momento da Força?",
     "options": [
-      "0.4 m/s².",
-      "128.0 m/s².",
-      "0.2 m/s².",
-      "0.4 N."
+      "'Por outras palavras: O momento da força faz o corpo rodar.'",
+      "'Por outras palavras: A massa dissipa-se com a velocidade.'",
+      "'Por outras palavras: Toda a força de rotação gera calor sem movimento.'",
+      "'Por outras palavras: O atrito elimina a necessidade de fulcro.'"
     ],
     "correctIndex": 0,
-    "explanation": "Pela 2ª Lei de Newton, a = Fr / m: 12.8 N / 32 kg = 0.4 m/s².",
+    "explanation": "O Slide 61 destaca com clareza pedagógica: 'Por outras palavras: O momento da força faz o corpo rodar.'.",
     "distractorAnalysis": [
-      "Está incorreta: Multiplicar a força por ordens de grandeza arbitrárias fornece um valor excessivo e incorreto.",
-      "Está incorreta: Esse valor representa metade da aceleração real obtida pela razão Fr / m.",
-      "Está incorreta: A aceleração mede-se em m/s² no SI, e não em Newtons (N), que é a unidade de força."
+      "Está incorreta: A massa não se dissipa com a velocidade na mecânica clássica de Newton.",
+      "Está incorreta: O momento de força gera movimento rotativo efetivo quando não é equilibrado.",
+      "Está incorreta: O fulcro é o ponto essencial em torno do qual ocorre a rotação de qualquer alavanca."
     ],
-    "nursingApplication": "Mostra como a aceleração de um equipamento diminui à medida que a sua massa aumenta."
+    "nursingApplication": "Permite associar imediatamente qualquer movimento de flexão, extensão ou rotação articular ao momento de força."
   },
   {
     "id": 1133,
     "topicId": 1,
-    "question": "De acordo com a 2ª Lei de Newton (F = m·a), se a massa de um corpo duplicar e a força resultante aplicada se mantiver constante, a aceleração:",
+    "question": "Qual é a fórmula matemática do Momento da Força apresentada nos Slides 62 e 63?",
     "options": [
-      "Duplica em relação ao valor inicial.",
-      "Reduz-se para metade do valor inicial.",
-      "Quadruplica instantaneamente.",
-      "Permanece rigorosamente inalterada."
+      "Momento da força = F / b",
+      "Momento da força = F · b",
+      "Momento da força = m · a²",
+      "Momento da força = b / F"
     ],
     "correctIndex": 1,
-    "explanation": "Como a = F / m, a aceleração é inversamente proporcional à massa. Duplicando a massa com força constante, a aceleração passa a metade.",
+    "explanation": "Os Slides 62 e 63 indicam expressamente a expressão matemática fundamental: 'Momento da força = F · b'.",
     "distractorAnalysis": [
-      "Está incorreta: A aceleração só duplicaria se a força duplicasse para a mesma massa, ou se a massa passasse a metade.",
-      "Está incorreta: Quadruplicar a aceleração exigiria quadruplicar a força ou reduzir a massa a um quarto.",
-      "Está incorreta: A aceleração não se mantém inalterada porque depende inversamente da massa inercial do corpo."
+      "Está incorreta: Dividir força pelo braço daria N/m (unidade de constante elástica k), não momento de força.",
+      "Está incorreta: m · a² não tem coerência física com a definição de momento de força de uma alavanca.",
+      "Está incorreta: Dividir braço por força daria m/N, que não corresponde a torque."
     ],
-    "nursingApplication": "Ao duplicar a carga numa maca, a mesma força muscular produzirá apenas metade da aceleração."
+    "nursingApplication": "Fórmula-chave utilizada para o cálculo do equilíbrio de alavancas e esforços musculares do corpo humano."
   },
   {
     "id": 1134,
     "topicId": 1,
-    "question": "Se a força resultante aplicada sobre um equipamento hospitalar triplicar mantendo-se a sua massa inalterada, o que acontece à sua aceleração?",
+    "question": "Na fórmula Momento da força = F · b, qual é a definição exata da variável 'b' (Braço da força) dada no Slide 62?",
     "options": [
-      "Reduz-se a um terço do valor.",
-      "Permanece constante e inalterada.",
-      "Triplica na mesma proporção direta.",
-      "Passa a ser rigorosamente nula."
+      "Comprimento total da cama hospitalar medido em centímetros.",
+      "Massa do braço anatómico do utente pesada numa balança digital.",
+      "Distância na perpendicular entre o eixo de rotação e a linha de ação da força (m).",
+      "Velocidade de rotação da articulação medida em metros por segundo."
     ],
     "correctIndex": 2,
-    "explanation": "A aceleração é diretamente proporcional à força resultante (a ∝ F). Triplicando a força, a aceleração triplica.",
+    "explanation": "O Slide 62 define textualmente: 'b = Braço = Distância na perpendicular entre o eixo de rotação e a linha de ação da força (m)'.",
     "distractorAnalysis": [
-      "Está incorreta: A aceleração só se reduziria a um terço se a massa triplicasse mantendo-se a força constante.",
-      "Está incorreta: A aceleração não fica constante quando a força resultante aplicada sobre a massa varia.",
-      "Está incorreta: A aceleração só seria nula se a força resultante fosse igual a zero."
+      "Está incorreta: O comprimento da cama não se relaciona com o braço b de uma alavanca física genérica.",
+      "Está incorreta: O termo braço na mecânica é uma distância geométrica perpendicular, não o membro anatómico pesado.",
+      "Está incorreta: Distância perpendicular mede-se em metros, enquanto velocidade mede-se em m/s."
     ],
-    "nursingApplication": "Empurrar com mais intensidade produz uma aceleração proporcionalmente mais rápida do equipamento."
+    "nursingApplication": "Compreender que o braço é a distância perpendicular é crucial para perceber por que carregar peso longe do corpo sobrecarrega a coluna."
   },
   {
     "id": 1135,
     "topicId": 1,
-    "question": "O que afirma a 2ª Lei de Newton (Lei Fundamental da Dinâmica)?",
+    "question": "Qual é a unidade do Momento da Força no Sistema Internacional (SI) apresentada nos exercícios dos slides (Slides 62, 79 e 82)?",
     "options": [
-      "A energia mecânica total de um sistema dissipa-se sempre espontaneamente sob a forma de calor no vácuo.",
-      "A velocidade de um corpo é independente de qualquer força que atue sobre as suas superfícies de contacto.",
-      "Dois corpos em repouso atraem-se com força inversamente proporcional ao cubo da sua temperatura absoluta.",
-      "A força resultante que atua sobre um corpo material é diretamente proporcional à sua massa inercial e à aceleração que ele adquire (Fr = m·a)."
+      "Pascal (Pa).",
+      "Quilograma por metro (kg/m).",
+      "Newton por metro quadrado (N/m²).",
+      "Newton-metro (N·m)."
     ],
     "correctIndex": 3,
-    "explanation": "A 2ª Lei estabelece a relação quantitativa fundamental da dinâmica clássica: Fr = m · a.",
+    "explanation": "Como o momento resulta da multiplicação de uma Força em Newtons (N) por uma distância de braço em metros (m), a sua unidade SI é o Newton-metro (N·m).",
     "distractorAnalysis": [
-      "Está incorreta: Essa afirmação remete para a termodinâmica estatística, não para a 2ª Lei de Newton.",
-      "Está incorreta: A velocidade é diretamente alterada ao longo do tempo pela aceleração que decorre das forças aplicadas.",
-      "Está incorreta: A atração entre corpos depende da gravidade e das massas, não da temperatura absoluta cúbica."
+      "Está incorreta: Pascal é unidade de pressão (N/m²), não de momento rotativo.",
+      "Está incorreta: kg/m é densidade linear de massa, não torque.",
+      "Está incorreta: N/m² equivale a Pascal (pressão), não a N·m (multiplicação)."
     ],
-    "nursingApplication": "Fundamento para calcular as forças necessárias para mover massas na rotina física hospitalar."
+    "nursingApplication": "Garante a correta identificação dimensional das respostas em exercícios de biomecânica articular."
   },
   {
     "id": 1136,
     "topicId": 1,
-    "question": "Para travar e imobilizar uma maca de 100 kg que se move a 2 m/s no intervalo de 1 segundo (desaceleração a = 2 m/s²), que força média de travagem é necessária?",
+    "question": "Se uma força de 30 N for aplicada perpendicularmente a uma alavanca a uma distância de 0,5 m do eixo de rotação, qual é o Momento da Força produzido?",
     "options": [
-      "200 N no sentido oposto ao movimento.",
-      "50 N no mesmo sentido da marcha.",
-      "100 N na direção vertical ascendente.",
-      "500 N orientada para o solo."
+      "15 N·m",
+      "60 N·m",
+      "0,016 N·m",
+      "30,5 N·m"
     ],
     "correctIndex": 0,
-    "explanation": "Pela 2ª Lei de Newton: F = m · a = 100 kg · 2 m/s² = 200 N em sentido contrário ao deslocamento.",
+    "explanation": "Aplicando diretamente M = F · b: M = 30 N × 0,5 m = 15 N·m.",
     "distractorAnalysis": [
-      "Está incorreta: 50 N resultaria de dividir incorretamente 100 kg por 2 m/s², violando a relação F = m · a.",
-      "Está incorreta: 100 N seria a força requerida se a desaceleração fosse de apenas 1 m/s².",
-      "Está incorreta: 500 N superaria significativamente a força deduzida do produto da massa pela desaceleração."
+      "Está incorreta: 60 N·m resultaria de dividir 30 por 0,5 (F / b), o que viola a fórmula M = F · b.",
+      "Está incorreta: 0,016 resultaria da divisão errada 0,5 / 30.",
+      "Está incorreta: 30,5 resultaria de somar a força com a distância, operação matematicamente inválida."
     ],
-    "nursingApplication": "Ilustra a força que as mãos devem exercer sobre a pega da maca para a imobilizar com segurança."
+    "nursingApplication": "Cálculo elementar para quantificar momentos em manivelas de macas e alavancas hospitalares."
   },
   {
     "id": 1137,
     "topicId": 1,
-    "question": "Se um carrinho vazio tem massa de 20 kg e um carrinho carregado tem massa de 80 kg, para obter a mesma aceleração em ambos:",
+    "question": "Para abrir uma porta pesada corta-fogo com o menor esforço (menor força F possível), onde deve ser empurrada a porta?",
     "options": [
-      "O carrinho carregado exige a mesma força exata que o carrinho vazio.",
-      "O carrinho carregado exige uma força resultante quatro vezes maior do que o carrinho vazio.",
-      "O carrinho carregado exige uma força quatro vezes menor que o carrinho vazio.",
-      "Nenhum dos carrinhos necessita de qualquer força mecânica para acelerar."
+      "O mais próximo possível das dobradiças (junto ao eixo de rotação).",
+      "O mais longe possível das dobradiças (na extremidade oposta), aumentando o braço da força (b).",
+      "Diretamente sobre os parafusos da dobradiça.",
+      "No chão a meio caminho da soleira puxando verticalmente."
     ],
     "correctIndex": 1,
-    "explanation": "Como F = m·a, para a mesma aceleração 'a', a força é proporcional à massa. 80 kg / 20 kg = 4 vezes mais força.",
+    "explanation": "Como M = F · b, para gerar o mesmo momento de rotação necessário para mover a porta com menor força (F), devemos maximizar o braço (b). Empurrar no bordo exterior maximiza b e minimiza F.",
     "distractorAnalysis": [
-      "Está incorreta: A mesma força sobre massas diferentes produz acelerações diferentes (inversamente proporcionais).",
-      "Está incorreta: Uma massa maior exige maior força, e nunca menor força, para atingir a mesma aceleração linear.",
-      "Está incorreta: Qualquer alteração de velocidade (aceleração) exige obrigatoriamente uma força resultante não nula."
+      "Está incorreta: Empurrar perto das dobradiças torna b muito pequeno, exigindo forças enormes para gerar o mesmo momento.",
+      "Está incorreta: Sobre a dobradiça o braço b é zero; o momento seria nulo e a porta nunca rodaria.",
+      "Está incorreta: Puxar no chão verticalmente não cria momento em torno do eixo de rotação vertical da porta."
     ],
-    "nursingApplication": "Mostra a necessidade de maior esforço muscular ao transportar equipamentos com carga pesada."
+    "nursingApplication": "Aplicação prática imediata de ergonomia ao abrir portas de emergência e manipular equipamentos articulados."
   },
   {
     "id": 1138,
     "topicId": 1,
-    "question": "Qual é a unidade da grandeza Aceleração no Sistema Internacional de Unidades (SI)?",
+    "question": "Se a linha de ação de uma força passar exatamente pelo ponto ou eixo de rotação da alavanca, qual é o valor do Momento da Força produzido?",
     "options": [
-      "Quilogramas por metro cúbico (kg/m³).",
-      "Newtons por segundo (N/s).",
-      "Metros por segundo ao quadrado (m/s²).",
-      "Joule por metro (J/m)."
+      "É igual à intensidade da força multiplicada pelo infinito.",
+      "É igual a 9,8 N·m independentemente da intensidade da força.",
+      "É rigorosamente zero (M = 0 N·m), porque o braço é nulo (b = 0 m).",
+      "Produz a rotação mais rápida possível da estrutura."
     ],
     "correctIndex": 2,
-    "explanation": "No SI, a aceleração exprime a taxa de variação da velocidade no tempo: (m/s) / s = m/s².",
+    "explanation": "Se a linha de ação da força interseta o eixo, a distância perpendicular b entre a linha e o eixo é zero (b = 0). Pela fórmula M = F · b = F × 0 = 0 N·m. A força não gera qualquer efeito rotativo.",
     "distractorAnalysis": [
-      "Está incorreta: kg/m³ é a unidade SI de massa volúmica (densidade), não de aceleração.",
-      "Está incorreta: N/s mede a taxa temporal de variação de uma força, não a aceleração cinemática.",
-      "Está incorreta: J/m é dimensionalmente equivalente a Newton (unidade de força), não a aceleração."
+      "Está incorreta: Multiplicar por zero resulta em zero, nunca em infinito.",
+      "Está incorreta: O valor depende da multiplicação F · b; sendo b = 0, o resultado é nulo e não 9,8.",
+      "Está incorreta: Sem momento de força (M = 0) não é possível produzir qualquer aceleração angular de rotação."
     ],
-    "nursingApplication": "Unidade fundamental usada para quantificar acelerações e travagens de transportes hospitalares."
+    "nursingApplication": "Explica por que puxar um osso exatamente na direção axial da articulação estabiliza a junta mas não produz rotação articular."
   },
   {
     "id": 1139,
     "topicId": 1,
-    "question": "De acordo com a formulação vetorial da 2.ª Lei de Newton (Fr = m·a), qual é a relação geométrica entre o vetor Força Resultante e o vetor Aceleração?",
+    "question": "Ao levantar um peso de 15 kg com os braços esticados para a frente longe do tronco, por que razão as vértebras lombares sofrem uma sobrecarga massiva?",
     "options": [
-      "Possuem a mesma direção mas obrigatoriamente sentidos opostos.",
-      "Formam sempre um ângulo de noventa graus entre si.",
-      "Não possuem qualquer relação geométrica porque a massa é uma grandeza imaginária.",
-      "Possuem obrigatoriamente a mesma direção e o mesmo sentido no espaço tridimensional."
+      "Porque a massa do objeto triplica magicamente quando afastada do peito.",
+      "Porque o atrito do pavimento desaparece desestabilizando o esqueleto.",
+      "Porque a velocidade da luz no vácuo altera a curvatura lombar.",
+      "Porque o braço da força resistente (b) aumenta substancialmente em relação à coluna, gerando um momento extensor muito superior (M = F · b)."
     ],
     "correctIndex": 3,
-    "explanation": "Como a massa m é um escalar estritamente positivo, o vetor a tem rigorosamente a mesma direção e o mesmo sentido do vetor Fr.",
+    "explanation": "A força resistente (peso da carga) é constante. Contudo, ao afastar a carga do tronco, a distância horizontal b até ao fulcro lombar aumenta grandemente, multiplicando o momento resistente M = F · b e exigindo forças extremas dos músculos da coluna para equilibrar.",
     "distractorAnalysis": [
-      "Está incorreta: Sentidos opostos violariam a equação vetorial Fr = m·a para uma massa positiva.",
-      "Está incorreta: Forças e acelerações perpendiculares só ocorrem em coordenadas normais de aceleração centrípeta sob força centrípeta.",
-      "Está incorreta: A massa é um escalar real positivo fundamental da mecânica clássica."
+      "Está incorreta: A massa é constante e invariável com a distância anatómica da carga.",
+      "Está incorreta: O atrito do pavimento não tem relação com o momento interno da carga sobre a coluna.",
+      "Está incorreta: A velocidade da luz não interfere na mecânica osteomuscular humana."
     ],
-    "nursingApplication": "Garante que ao empurrar um objeto para a frente, a sua aceleração ocorre exatamente para a frente."
+    "nursingApplication": "Princípio ergonómico vital para a saúde da coluna do enfermeiro: manter sempre as cargas junto ao peito."
   },
   {
     "id": 1140,
     "topicId": 1,
-    "question": "Um carrinho de transporte hospitalar desloca-se em linha reta com velocidade não nula, mas com aceleração rigorosamente nula (a = 0 m/s²). O que se conclui sobre a força resultante que atua sobre ele?",
+    "question": "Duas forças de 10 N atuam em duas alavancas distintas: a Força 1 tem um braço b1 = 2 m e a Força 2 tem um braço b2 = 1 m. Quais são os respetivos momentos?",
     "options": [
-      "A força resultante é forçosamente nula (Fr = 0), mantendo-se o carrinho em movimento retilíneo uniforme.",
-      "A força resultante é infinitamente grande para manter o movimento sem parar.",
-      "A força resultante é igual ao peso total do carrinho multiplicado pela velocidade.",
-      "O carrinho está a violar a 2.ª Lei de Newton porque corpos em movimento exigem sempre força resultante."
+      "Momento 1 = 20 N·m  e  Momento 2 = 10 N·m",
+      "Momento 1 = 5 N·m   e  Momento 2 = 10 N·m",
+      "Ambas produzem exatamente o mesmo momento de 10 N·m.",
+      "Momento 1 = 200 N·m e  Momento 2 = 100 N·m"
     ],
     "correctIndex": 0,
-    "explanation": "Pela 2.ª Lei de Newton, se a = 0 m/s², então Fr = m · 0 = 0 N, o que define movimento retilíneo e uniforme.",
+    "explanation": "Calculando M = F · b para cada uma: M1 = 10 N × 2 m = 20 N·m; M2 = 10 N × 1 m = 10 N·m. A força com o dobro do braço produz o dobro do momento rotativo.",
     "distractorAnalysis": [
-      "Está incorreta: Força resultante infinita geraria aceleração infinita, o que contradiz a aceleração nula observada.",
-      "Está incorreta: Força resultante não é o produto do peso pela velocidade.",
-      "Está incorreta: Não há violação; a 1.ª e a 2.ª Leis afirmam em uníssono que velocidade constante decorre de força resultante nula."
+      "Está incorreta: 20 N·m é o resultado correto para a primeira força, não 5 N·m.",
+      "Está incorreta: Os momentos só seriam iguais se os braços fossem idênticos, o que não é o caso (2 m vs 1 m).",
+      "Está incorreta: Os valores foram indevidamente multiplicados por 10."
     ],
-    "nursingApplication": "Explica por que manter uma velocidade constante de cruzeiro exige apenas equilibrar o atrito das rodas."
+    "nursingApplication": "Demonstração quantitativa clara do efeito multiplicador da distância de alavanca."
   },
   {
     "id": 1141,
     "topicId": 1,
-    "question": "Qual é a força resultante necessária para acelerar um carrinho de massa 20 kg a uma aceleração constante de 0.5 m/s²?",
+    "question": "Qual é a definição de Alavanca atribuída a Arquimedes (século III a.C.) nos Slides 66 e 67?",
     "options": [
-      "20.5 N.",
-      "10 N.",
-      "40.0 N.",
-      "10 kg."
+      "Dispositivo elétrico destinado a converter corrente alternada em corrente contínua.",
+      "Barra rígida que pode girar em torno de um ponto de apoio fixo.",
+      "Superfície curva lubrificada com fluido biológico viscoso.",
+      "Estrutura elástica deformável que dissipa energia por histerese."
     ],
     "correctIndex": 1,
-    "explanation": "Pela 2ª Lei de Newton: Fr = m · a = 20 kg · 0.5 m/s² = 10 N.",
+    "explanation": "Os Slides 66 e 67 definem expressamente: 'Arquimedes, século III a.C.: Barra rígida que pode girar em torno de um ponto de apoio fixo'.",
     "distractorAnalysis": [
-      "Está incorreta: Somar a massa com a aceleração viola a fórmula da 2ª Lei de Newton (Fr = m · a).",
-      "Está incorreta: Dividir a massa pela aceleração não fornece a intensidade da força resultante.",
-      "Está incorreta: O valor numérico está correto, mas a unidade de força é o Newton (N) e não o quilograma (kg)."
+      "Está incorreta: A conversão de corrente é função de retificadores elétricos, não da máquina simples mecânica alavanca.",
+      "Está incorreta: Superfície curva lubrificada descreve cartilagem articular em hidrodinâmica, não a definição clássica de alavanca.",
+      "Está incorreta: Corpos com histerese são viscoelásticos (Tópico 2), enquanto a alavanca de Arquimedes é modelada como barra rígida."
     ],
-    "nursingApplication": "Permite calcular a força exata necessária para empurrar e acelerar um carrinho de transporte hospitalar."
+    "nursingApplication": "Conceito estruturante para a biomecânica esquelética, onde os ossos funcionam como barras rígidas."
   },
   {
     "id": 1142,
     "topicId": 1,
-    "question": "Se uma força resultante horizontal de 20 N for aplicada sobre uma maca de 25 kg num piso plano sem atrito, qual será a aceleração adquirida?",
+    "question": "Quais são os três componentes fundamentais de qualquer sistema de alavanca apresentados no Slide 67?",
     "options": [
-      "200.0 m/s².",
-      "0.4 m/s².",
-      "0.8 m/s².",
-      "0.8 N."
+      "Massa inercial, gravidade terrestre e aceleração centrípeta.",
+      "Dinamómetro, plano inclinado e atrito cinético.",
+      "1. Ponto de apoio (fulcro); 2. Força potente; 3. Força resistente.",
+      "Tensão arterial, frequência cardíaca e débito cardíaco."
     ],
     "correctIndex": 2,
-    "explanation": "Pela 2ª Lei de Newton, a = Fr / m: 20 N / 25 kg = 0.8 m/s².",
+    "explanation": "O Slide 67 enumera textualmente os três componentes: '1. Ponto de apoio (fulcro) (...) 2. Força potente (...) 3. Força resistente'.",
     "distractorAnalysis": [
-      "Está incorreta: Multiplicar a força por ordens de grandeza arbitrárias fornece um valor excessivo e incorreto.",
-      "Está incorreta: Esse valor representa metade da aceleração real obtida pela razão Fr / m.",
-      "Está incorreta: A aceleração mede-se em m/s² no SI, e não em Newtons (N), que é a unidade de força."
+      "Está incorreta: Estes são conceitos gerais da mecânica e gravitação, não a tríade constitutiva das alavancas.",
+      "Está incorreta: Instrumentos e outras máquinas simples não são os elementos de definição de uma alavanca.",
+      "Está incorreta: Variáveis hemodinâmicas pertencem à fisiologia cardiovascular e hidrodinâmica médica."
     ],
-    "nursingApplication": "Mostra como a aceleração de um equipamento diminui à medida que a sua massa aumenta."
+    "nursingApplication": "Permite decompor e analisar qualquer articulação do corpo humano nos seus três elementos mecânicos."
   },
   {
     "id": 1143,
     "topicId": 1,
-    "question": "De acordo com a 2ª Lei de Newton (F = m·a), se a massa de um corpo duplicar e a força resultante aplicada se mantiver constante, a aceleração:",
+    "question": "Como é definida a 'Força potente (F_P)' no Slide 67 dos slides de Biofísica?",
     "options": [
-      "Duplica em relação ao valor inicial.",
-      "Quadruplica instantaneamente.",
-      "Permanece rigorosamente inalterada.",
-      "Reduz-se para metade do valor inicial."
+      "Força exercida exclusivamente pela atração da gravidade sobre a barra.",
+      "Força contrária que dificulta o movimento da carga.",
+      "Ponto fixo em torno do qual a alavanca gira livremente.",
+      "Força aplicada para mover a carga."
     ],
     "correctIndex": 3,
-    "explanation": "Como a = F / m, a aceleração é inversamente proporcional à massa. Duplicando a massa com força constante, a aceleração passa a metade.",
+    "explanation": "O Slide 67 define formalmente: '2. Força potente: Força aplicada para mover a carga'.",
     "distractorAnalysis": [
-      "Está incorreta: A aceleração só duplicaria se a força duplicasse para a mesma massa, ou se a massa passasse a metade.",
-      "Está incorreta: Quadruplicar a aceleração exigiria quadruplicar a força ou reduzir a massa a um quarto.",
-      "Está incorreta: A aceleração não se mantém inalterada porque depende inversamente da massa inercial do corpo."
+      "Está incorreta: A gravidade atua sobre todas as massas, não constituindo a definição funcional de força potente motora.",
+      "Está incorreta: A força contrária que dificulta o movimento é a definição de Força Resistente (Slide 67).",
+      "Está incorreta: O ponto fixo de rotação é a definição de Ponto de apoio ou fulcro (Slide 67)."
     ],
-    "nursingApplication": "Ao duplicar a carga numa maca, a mesma força muscular produzirá apenas metade da aceleração."
+    "nursingApplication": "No corpo humano, a força potente é fornecida pela contração muscular transmitida através do tendão."
   },
   {
     "id": 1144,
     "topicId": 1,
-    "question": "Se a força resultante aplicada sobre um equipamento hospitalar triplicar mantendo-se a sua massa inalterada, o que acontece à sua aceleração?",
+    "question": "Como é definida a 'Força resistente (F_R)' no Slide 67 dos slides de Biofísica?",
     "options": [
-      "Triplica na mesma proporção direta.",
-      "Reduz-se a um terço do valor.",
-      "Permanece constante e inalterada.",
-      "Passa a ser rigorosamente nula."
+      "Força contrária que dificulta o movimento da carga.",
+      "Força motora aplicada pelo músculo para acelerar o membro.",
+      "Constante elástica da mola expressa em Newtons por metro.",
+      "Comprimento total da barra medido a partir da extremidade potente."
     ],
     "correctIndex": 0,
-    "explanation": "A aceleração é diretamente proporcional à força resultante (a ∝ F). Triplicando a força, a aceleração triplica.",
+    "explanation": "O Slide 67 define formalmente: '3. Força resistente: Força contrária que dificulta o movimento da carga'.",
     "distractorAnalysis": [
-      "Está incorreta: A aceleração só se reduziria a um terço se a massa triplicasse mantendo-se a força constante.",
-      "Está incorreta: A aceleração não fica constante quando a força resultante aplicada sobre a massa varia.",
-      "Está incorreta: A aceleração só seria nula se a força resultante fosse igual a zero."
+      "Está incorreta: A força motora que move a carga é a Força Potente, não a resistente.",
+      "Está incorreta: Constante elástica k refere-se à Lei de Hooke (Slide 41), não à alavanca de Arquimedes.",
+      "Está incorreta: Comprimento é uma dimensão métrica geométrica, não uma força física contrária."
     ],
-    "nursingApplication": "Empurrar com mais intensidade produz uma aceleração proporcionalmente mais rápida do equipamento."
+    "nursingApplication": "Representa o peso de membros corporais, objetos transportados ou resistências externas a vencer."
   },
   {
     "id": 1145,
     "topicId": 1,
-    "question": "O que afirma a 2ª Lei de Newton (Lei Fundamental da Dinâmica)?",
+    "question": "Como é definido o 'Ponto de apoio (fulcro)' no Slide 67 dos slides de Biofísica?",
     "options": [
-      "A energia mecânica total de um sistema dissipa-se sempre espontaneamente sob a forma de calor no vácuo.",
-      "A força resultante que atua sobre um corpo material é diretamente proporcional à sua massa inercial e à aceleração que ele adquire (Fr = m·a).",
-      "A velocidade de um corpo é independente de qualquer força que atue sobre as suas superfícies de contacto.",
-      "Dois corpos em repouso atraem-se com força inversamente proporcional ao cubo da sua temperatura absoluta."
+      "A intensidade máxima de força suportada por uma vértebra sagrada.",
+      "Ponto fixo em torno do qual a alavanca gira.",
+      "A distância perpendicular entre duas forças divergentes.",
+      "O centro do núcleo atómico onde operam as forças nucleares."
     ],
     "correctIndex": 1,
-    "explanation": "A 2ª Lei estabelece a relação quantitativa fundamental da dinâmica clássica: Fr = m · a.",
+    "explanation": "O Slide 67 define taxativamente: '1. Ponto de apoio (fulcro): Ponto fixo em torno do qual a alavanca gira'.",
     "distractorAnalysis": [
-      "Está incorreta: Essa afirmação remete para a termodinâmica estatística, não para a 2ª Lei de Newton.",
-      "Está incorreta: A velocidade é diretamente alterada ao longo do tempo pela aceleração que decorre das forças aplicadas.",
-      "Está incorreta: A atração entre corpos depende da gravidade e das massas, não da temperatura absoluta cúbica."
+      "Está incorreta: Resistência de vértebras é propriedade de resistência dos materiais (Tópico 2), não a definição de fulcro.",
+      "Está incorreta: Distância perpendicular é a definição de braço da força, não do ponto fixo fulcro.",
+      "Está incorreta: O núcleo atómico é estudado na física do átomo e radiação, não nas alavancas macroscópicas."
     ],
-    "nursingApplication": "Fundamento para calcular as forças necessárias para mover massas na rotina física hospitalar."
+    "nursingApplication": "No esqueleto humano, as articulações sinoviais funcionam como os fulcros do aparelho locomotor."
   },
   {
     "id": 1146,
     "topicId": 1,
-    "question": "Para travar e imobilizar uma maca de 100 kg que se move a 2 m/s no intervalo de 1 segundo (desaceleração a = 2 m/s²), que força média de travagem é necessária?",
+    "question": "Qual é a formulação da Lei das Alavancas em situação de equilíbrio expressa no Slide 69?",
     "options": [
-      "50 N no mesmo sentido da marcha.",
-      "100 N na direção vertical ascendente.",
-      "200 N no sentido oposto ao movimento.",
-      "500 N orientada para o solo."
+      "F_P + b_P = F_R + b_R",
+      "F_P / b_P = F_R / b_R",
+      "Em equilíbrio: F_P · b_P = F_r · b_r",
+      "F_P · F_r = b_P · b_r"
     ],
     "correctIndex": 2,
-    "explanation": "Pela 2ª Lei de Newton: F = m · a = 100 kg · 2 m/s² = 200 N em sentido contrário ao deslocamento.",
+    "explanation": "O Slide 69 apresenta a clássica Lei das Alavancas: 'Em equilíbrio: F_P · b_P = F_r · b_r' (o produto da força potente pelo seu braço é igual ao produto da força resistente pelo seu braço).",
     "distractorAnalysis": [
-      "Está incorreta: 50 N resultaria de dividir incorretamente 100 kg por 2 m/s², violando a relação F = m · a.",
-      "Está incorreta: 100 N seria a força requerida se a desaceleração fosse de apenas 1 m/s².",
-      "Está incorreta: 500 N superaria significativamente a força deduzida do produto da massa pela desaceleração."
+      "Está incorreta: Não se somam forças com distâncias por terem grandezas físicas e unidades diferentes (N vs m).",
+      "Está incorreta: A relação física é um produto de fatores (momentos), não uma razão de quocientes.",
+      "Está incorreta: Multiplicar forças entre si e braços entre si não traduz o cancelamento de momentos em torno do fulcro."
     ],
-    "nursingApplication": "Ilustra a força que as mãos devem exercer sobre a pega da maca para a imobilizar com segurança."
+    "nursingApplication": "Equação fundamental para resolver todos os problemas de alavancas anatómicas e equipamentos de elevação."
   },
   {
     "id": 1147,
     "topicId": 1,
-    "question": "Se um carrinho vazio tem massa de 20 kg e um carrinho carregado tem massa de 80 kg, para obter a mesma aceleração em ambos:",
+    "question": "O que traduz fisicamente a igualdade F_P · b_P = F_R · b_R em termos da teoria dos momentos (Slide 69)?",
     "options": [
-      "O carrinho carregado exige a mesma força exata que o carrinho vazio.",
-      "O carrinho carregado exige uma força quatro vezes menor que o carrinho vazio.",
-      "Nenhum dos carrinhos necessita de qualquer força mecânica para acelerar.",
-      "O carrinho carregado exige uma força resultante quatro vezes maior do que o carrinho vazio."
+      "Que a velocidade angular da alavanca está a acelerar a 9,8 rad/s².",
+      "Que a massa do fulcro é igual à soma das massas potentes e resistentes.",
+      "Que a alavanca não sofre nenhuma força da gravidade.",
+      "Que o Momento da força potente iguala exatamente o Momento da força resistente (M_P = M_R) em torno do fulcro."
     ],
     "correctIndex": 3,
-    "explanation": "Como F = m·a, para a mesma aceleração 'a', a força é proporcional à massa. 80 kg / 20 kg = 4 vezes mais força.",
+    "explanation": "Como M = F · b, a Lei das Alavancas afirma simplesmente que o momento de rotação no sentido potente anula o momento de rotação no sentido resistente: M_P = M_R, resultando em equilíbrio estático rotacional.",
     "distractorAnalysis": [
-      "Está incorreta: A mesma força sobre massas diferentes produz acelerações diferentes (inversamente proporcionais).",
-      "Está incorreta: Uma massa maior exige maior força, e nunca menor força, para atingir a mesma aceleração linear.",
-      "Está incorreta: Qualquer alteração de velocidade (aceleração) exige obrigatoriamente uma força resultante não nula."
+      "Está incorreta: Em equilíbrio a velocidade e aceleração angulares são rigorosamente nulas.",
+      "Está incorreta: O fulcro é modelado como ponto de suporte geométrico ideal, não entrando em igualdade de massas.",
+      "Está incorreta: As forças resistentes são frequentemente pesos causados pela gravidade."
     ],
-    "nursingApplication": "Mostra a necessidade de maior esforço muscular ao transportar equipamentos com carga pesada."
+    "nursingApplication": "Garante a compreensão conceitual unificada entre a teoria de momentos e a mecânica das alavancas."
   },
   {
     "id": 1148,
     "topicId": 1,
-    "question": "Qual é a unidade da grandeza Aceleração no Sistema Internacional de Unidades (SI)?",
+    "question": "Se o braço da força potente (b_P) for 4 vezes maior do que o braço da força resistente (b_R), qual a força potente F_P necessária para equilibrar a carga?",
     "options": [
-      "Metros por segundo ao quadrado (m/s²).",
-      "Quilogramas por metro cúbico (kg/m³).",
-      "Newtons por segundo (N/s).",
-      "Joule por metro (J/m)."
+      "Uma força potente 4 vezes menor do que a força resistente (F_P = F_R / 4), havendo grande vantagem mecânica.",
+      "Uma força potente 4 vezes maior do que a força resistente.",
+      "Uma força potente 16 vezes maior devido à lei do inverso do quadrado.",
+      "A mesma força resistente, pois a distância não altera o esforço necessário."
     ],
     "correctIndex": 0,
-    "explanation": "No SI, a aceleração exprime a taxa de variação da velocidade no tempo: (m/s) / s = m/s².",
+    "explanation": "Pela Lei das Alavancas: F_P · (4 b_R) = F_R · b_R => F_P = F_R / 4. Ao multiplicar o braço potente por 4, a força necessária para suster a carga reduz-se a um quarto.",
     "distractorAnalysis": [
-      "Está incorreta: kg/m³ é a unidade SI de massa volúmica (densidade), não de aceleração.",
-      "Está incorreta: N/s mede a taxa temporal de variação de uma força, não a aceleração cinemática.",
-      "Está incorreta: J/m é dimensionalmente equivalente a Newton (unidade de força), não a aceleração."
+      "Está incorreta: Força 4 vezes maior ocorreria se o braço potente fosse 4 vezes menor (desvantagem mecânica).",
+      "Está incorreta: A dependência em relação ao braço é estritamente linear (M = F · b), não quadrática.",
+      "Está incorreta: O braço é o multiplicador direto do momento; aumentar o braço altera drasticamente a força necessária."
     ],
-    "nursingApplication": "Unidade fundamental usada para quantificar acelerações e travagens de transportes hospitalares."
+    "nursingApplication": "Explica por que cabos compridos e barras de elevação longas facilitam a manipulação de cargas pesadas."
   },
   {
     "id": 1149,
     "topicId": 1,
-    "question": "De acordo com a formulação vetorial da 2.ª Lei de Newton (Fr = m·a), qual é a relação geométrica entre o vetor Força Resultante e o vetor Aceleração?",
+    "question": "No aparelho locomotor do corpo humano, como são representados os componentes de uma alavanca de Arquimedes?",
     "options": [
-      "Possuem a mesma direção mas obrigatoriamente sentidos opostos.",
-      "Possuem obrigatoriamente a mesma direção e o mesmo sentido no espaço tridimensional.",
-      "Formam sempre um ângulo de noventa graus entre si.",
-      "Não possuem qualquer relação geométrica porque a massa é uma grandeza imaginária."
+      "Os ossos são os fulcros e os tendões são as cargas resistentes.",
+      "Os ossos funcionam como as barras rígidas, as articulações como os fulcros (pontos de apoio) e os músculos fornecem a força potente.",
+      "O sangue funciona como a barra rígida e as veias como os braços de momento.",
+      "A pele é a barra rígida que roda em torno do centro da Terra."
     ],
     "correctIndex": 1,
-    "explanation": "Como a massa m é um escalar estritamente positivo, o vetor a tem rigorosamente a mesma direção e o mesmo sentido do vetor Fr.",
+    "explanation": "A correspondência anatómica da Biofísica é universal: o osso atua como barra rígida indeformável de transmissão, a articulação sinovial constitui o fulcro fixo de rotação e o músculo gera a força potente via tendão.",
     "distractorAnalysis": [
-      "Está incorreta: Sentidos opostos violariam a equação vetorial Fr = m·a para uma massa positiva.",
-      "Está incorreta: Forças e acelerações perpendiculares só ocorrem em coordenadas normais de aceleração centrípeta sob força centrípeta.",
-      "Está incorreta: A massa é um escalar real positivo fundamental da mecânica clássica."
+      "Está incorreta: Os ossos não são o ponto fixo de rotação; as articulações entre os ossos é que são os fulcros.",
+      "Está incorreta: O sangue é um fluido em hidrodinâmica, não uma barra rígida de alavanca.",
+      "Está incorreta: A pele é um tecido elástico flexível, não uma barra rígida de alavanca óssea."
     ],
-    "nursingApplication": "Garante que ao empurrar um objeto para a frente, a sua aceleração ocorre exatamente para a frente."
+    "nursingApplication": "Base conceptual indispensável para toda a biomecânica articular e análise da marcha."
   },
   {
     "id": 1150,
     "topicId": 1,
-    "question": "Um carrinho de transporte hospitalar desloca-se em linha reta com velocidade não nula, mas com aceleração rigorosamente nula (a = 0 m/s²). O que se conclui sobre a força resultante que atua sobre ele?",
+    "question": "Qual é a origem da Força Potente (F_P) no sistema musculoesquelético humano durante o levantamento de uma carga?",
     "options": [
-      "A força resultante é infinitamente grande para manter o movimento sem parar.",
-      "A força resultante é igual ao peso total do carrinho multiplicado pela velocidade.",
-      "A força resultante é forçosamente nula (Fr = 0), mantendo-se o carrinho em movimento retilíneo uniforme.",
-      "O carrinho está a violar a 2.ª Lei de Newton porque corpos em movimento exigem sempre força resultante."
+      "A atração gravitacional do planeta Terra sobre a articulação.",
+      "A força de atrito estático das meias no chão encerado.",
+      "A contração ativa das fibras do músculo esquelético, transmitida pelo tendão à sua inserção óssea.",
+      "A pressão capilar exercida sobre o sacro em decúbito dorsal."
     ],
     "correctIndex": 2,
-    "explanation": "Pela 2.ª Lei de Newton, se a = 0 m/s², então Fr = m · 0 = 0 N, o que define movimento retilíneo e uniforme.",
+    "explanation": "No corpo humano, a força potente é a força motora desenvolvida ativamente pelas pontes cruzadas das fibras musculares e transmitida pelo tendão para puxar o osso em torno da articulação.",
     "distractorAnalysis": [
-      "Está incorreta: Força resultante infinita geraria aceleração infinita, o que contradiz a aceleração nula observada.",
-      "Está incorreta: Força resultante não é o produto do peso pela velocidade.",
-      "Está incorreta: Não há violação; a 1.ª e a 2.ª Leis afirmam em uníssono que velocidade constante decorre de força resultante nula."
+      "Está incorreta: A gravidade gera a força resistente (peso da carga e dos membros), não a força potente motora.",
+      "Está incorreta: O atrito do solo fornece aderência externa para apoio, não a força muscular motriz do membro.",
+      "Está incorreta: A pressão capilar sobre o sacro é uma consequência estática passiva de apoio no colchão."
     ],
-    "nursingApplication": "Explica por que manter uma velocidade constante de cruzeiro exige apenas equilibrar o atrito das rodas."
+    "nursingApplication": "Compreensão de como a fadiga e lesões musculares limitam a capacidade de produção de força potente em transferências."
   },
   {
     "id": 1151,
     "topicId": 1,
-    "question": "Qual é o princípio fundamental expresso pela 3ª Lei de Newton?",
+    "question": "Qual é a característica anatómica/estrutural que define uma alavanca 'Interfixa' no Slide 71 de Biofísica?",
     "options": [
-      "A força de reação é sempre aplicada no mesmo corpo que a ação, anulando imediatamente todo o movimento.",
-      "A força de ação tem sempre o dobro da intensidade da força de reação em qualquer colisão física.",
-      "As forças de reação só existem quando os corpos se movem com velocidade superior à da luz no vácuo.",
-      "Sempre que um corpo A exerce uma força sobre um corpo B, o corpo B exerce simultaneamente sobre o corpo A uma força de igual intensidade e direção, mas em sentido oposto."
+      "A força potente encontra-se situada entre o fulcro e a força resistente.",
+      "A força resistente encontra-se situada entre o fulcro e a força potente.",
+      "Não possui fulcro nem ponto de apoio fixo.",
+      "O fulcro encontra-se entre a força potente e a força resistente."
     ],
     "correctIndex": 3,
-    "explanation": "A 3ª Lei estabelece o par ação-reação (F_A->B = -F_B->A): intensidades iguais, sentidos opostos, atuando em corpos distintos.",
+    "explanation": "O Slide 71 define expressamente: 'Interfixa: O fulcro encontra-se entre a força potente e a força resistente' (Esquema: F_P — Fulcro — F_R).",
     "distractorAnalysis": [
-      "Está incorreta: Ação e reação atuam em corpos diferentes; se atuassem no mesmo corpo, anulariam o movimento do corpo.",
-      "Está incorreta: As forças do par têm rigorosamente a mesma intensidade matemática, nunca intensidade dupla.",
-      "Está incorreta: A 3ª Lei aplica-se a todas as interações da mecânica clássica a qualquer velocidade."
+      "Está incorreta: A força potente no meio define a alavanca Interpotente (Slide 73).",
+      "Está incorreta: A força resistente no meio define a alavanca Inter-resistente (Slide 72).",
+      "Está incorreta: Todas as alavancas de Arquimedes possuem obrigatoriamente um fulcro de rotação."
     ],
-    "nursingApplication": "Ao empurrar uma maca para a frente, as rodas e o solo exercem força de reação nos pés do operador."
+    "nursingApplication": "Exemplos clínicos: o baloiço, a tesoura hospitalar e a articulação atlanto-occipital da cabeça."
   },
   {
     "id": 1152,
     "topicId": 1,
-    "question": "Porque é que as forças do par ação-reação NUNCA se anulam mutuamente?",
+    "question": "Qual é a característica estrutural que define uma alavanca 'Inter-resistente' no Slide 72 de Biofísica?",
     "options": [
-      "Porque atuam sempre em corpos diferentes e nunca sobre o mesmo corpo.",
-      "Porque têm intensidades diferentes e não se podem subtrair matematicamente.",
-      "Porque ocorrem em momentos temporais diferentes, com um atraso de vários segundos.",
-      "Porque uma é uma grandeza vetorial e a outra é uma grandeza puramente escalar."
+      "A força resistente encontra-se entre o fulcro e a força potente.",
+      "O fulcro encontra-se entre a força potente e a força resistente.",
+      "A força potente encontra-se entre o fulcro e a força resistente.",
+      "A força potente e a resistente atuam exatamente no mesmo ponto com o mesmo sentido."
     ],
     "correctIndex": 0,
-    "explanation": "O equilíbrio de um corpo requer que as forças atuem sobre o mesmo corpo. Ação e reação atuam em corpos distintos, logo não se anulam.",
+    "explanation": "O Slide 72 define expressamente: 'Inter-resistente: A força resistente encontra-se entre o fulcro e a força potente' (Esquema: Fulcro — F_R — F_P).",
     "distractorAnalysis": [
-      "Está incorreta: As forças do par ação-reação têm exatamente o mesmo módulo (intensidade).",
-      "Está incorreta: Ação e reação são absolutamente simultâneas; não existe atraso temporal entre elas.",
-      "Está incorreta: Ambas as forças do par são grandezas estritamente vetoriais expressas em Newtons."
+      "Está incorreta: O fulcro no meio caracteriza a alavanca Interfixa (Slide 71).",
+      "Está incorreta: A força potente no meio caracteriza a alavanca Interpotente (Slide 73).",
+      "Está incorreta: Forças no mesmo ponto não formam os braços distintos de uma alavanca mecânica."
     ],
-    "nursingApplication": "Permite entender que a força exercida sobre um objeto é independente das forças que o objeto exerce noutros."
+    "nursingApplication": "Exemplos clínicos: o carrinho de mão, o quebra-nozes e o apoio na ponta dos pés pelo tríceps sural (tornozelo)."
   },
   {
     "id": 1153,
     "topicId": 1,
-    "question": "Durante a marcha humana, ao empurrar o solo para trás com o pé de apoio na fase de impulsão, que componente da força exercida pelo solo projeta o corpo para a frente?",
+    "question": "Qual é a característica estrutural que define uma alavanca 'Interpotente' no Slide 73 de Biofísica?",
     "options": [
-      "A força normal perpendicular de sustentação dirigida verticalmente para o centro da Terra.",
-      "A componente tangencial de atrito estático da Força de Reação do Solo (FRS), orientada horizontalmente para a frente.",
-      "A força gravitacional atrativa exercida pela Lua sobre a musculatura do membro inferior.",
-      "A pressão hidrostática do líquido sinovial que escapa da cápsula articular."
+      "A força resistente situa-se entre o fulcro e a força potente.",
+      "A força potente encontra-se entre o fulcro e a força resistente.",
+      "O fulcro localiza-se na extremidade oposta à força potente com a resistente a meio.",
+      "A alavanca funciona sem qualquer gasto de força potente."
     ],
     "correctIndex": 1,
-    "explanation": "Pela 3ª Lei de Newton, ao exercer uma força tangencial para trás no solo, este reage através do atrito estático com uma força horizontal para a frente (propulsão).",
+    "explanation": "O Slide 73 define expressamente: 'Interpotente: A força potente encontra-se entre o fulcro e a força resistente' (Esquema: Fulcro — F_P — F_R).",
     "distractorAnalysis": [
-      "Está incorreta: A força normal é vertical e atua na sustentação do peso contra a gravidade, não impulsionando horizontalmente para a frente.",
-      "Está incorreta: A gravidade lunar é desprezável na propulsão terrestre da locomoção humana.",
-      "Está incorreta: A pressão sinovial é interna à articulação e não produz propulsão de translação com o solo."
+      "Está incorreta: Força resistente no meio define alavanca Inter-resistente (Slide 72).",
+      "Está incorreta: Fulcro numa ponta com resistente no meio é a alavanca inter-resistente.",
+      "Está incorreta: Todas as alavancas reais necessitam de força potente para movimentar cargas contra a gravidade."
     ],
-    "nursingApplication": "Fundamento biomecânico da marcha humana ao caminhar pelos corredores hospitalares."
+    "nursingApplication": "Exemplos clínicos: o músculo bíceps braquial no cotovelo e a utilização de uma pinça de penso cirúrgico."
   },
   {
     "id": 1154,
     "topicId": 1,
-    "question": "A força normal (N) exercida pelo colchão de uma cama sobre uma pessoa deitada é o par de ação-reação do peso dessa pessoa?",
+    "question": "Qual é o exemplo clássico do corpo humano destacado no Slide 75 para representar uma alavanca Interpotente?",
     "options": [
-      "Sim, porque são forças com a mesma intensidade e sentidos opostos que atuam na mesma linha de ação.",
-      "Sim, porque toda a força que atua na vertical forma automaticamente um par com a gravidade.",
-      "Não, porque o peso e a força normal atuam sobre o mesmo corpo (a pessoa), enquanto os pares ação-reação atuam em corpos diferentes.",
-      "Não, porque a força normal tem sempre uma intensidade dez vezes superior ao peso corporal."
+      "A articulação da cabeça com a primeira vértebra cervical (atlanto-occipital).",
+      "O movimento dos ossos do ouvido médio (martelo e bigorna).",
+      "A flexão do cotovelo, onde a força potente do bíceps atua entre o fulcro articular e a resistência na mão.",
+      "O apoio do calcâneo na marcha ao apoiar as pontas dos pés no solo."
     ],
     "correctIndex": 2,
-    "explanation": "O par de ação-reação do peso (Terra atrai pessoa) é a atração gravitacional que a pessoa exerce sobre a Terra. A normal e o peso atuam ambos na pessoa.",
+    "explanation": "O Slide 75 ilustra detalhadamente a alavanca interpotente através do membro superior (flexão do cotovelo pelo bíceps), rotulando as estruturas ósseas envolvidas.",
     "distractorAnalysis": [
-      "Está incorreta: Ter a mesma intensidade e sentidos opostos é condição de equilíbrio de translação da pessoa, mas não define par ação-reação mútuo.",
-      "Está incorreta: A direção vertical não implica que as forças pertençam ao mesmo par da 3ª Lei.",
-      "Está incorreta: Numa superfície horizontal estática em repouso, a normal tem intensidade igual ao peso (N = P)."
+      "Está incorreta: A articulação da cabeça atlanto-occipital é o exemplo clássico de alavanca interfixa.",
+      "Está incorreta: Os ossículos do ouvido formam alavancas interfixas microscópicas de amplificação acústica.",
+      "Está incorreta: A elevação na ponta dos pés pelo tendão de Aquiles é uma alavanca inter-resistente."
     ],
-    "nursingApplication": "Conceito físico essencial para o desenho de superfícies de suporte e colchões adequados."
+    "nursingApplication": "Permite aos alunos reconhecer o tipo de alavanca mais abundante e comum no esqueleto apendicular humano."
   },
   {
     "id": 1155,
     "topicId": 1,
-    "question": "Ao exercer-se uma força horizontal de 50 N perpendicularmente contra uma parede rígida, que força exerce a parede sobre as mãos do indivíduo?",
+    "question": "Quais são os três ossos do membro superior especificamente rotulados no Slide 75 na ilustração da alavanca interpotente?",
     "options": [
-      "0 N, porque a parede é fixa e não pode exercer nenhuma força mecânica.",
-      "100 N, porque os materiais rígidos duplicam a força aplicada sobre eles.",
-      "25 N, porque metade da força dissipa-se sob a forma de som nas fundações.",
-      "50 N, orientada perpendicularmente em sentido oposto (para trás contra as mãos)."
+      "Clavícula, Escápula e Esterno.",
+      "Fémur, Rótula e Tíbia.",
+      "Tarso, Metatarso e Falanges.",
+      "Úmero, Rádio e Cúbito."
     ],
     "correctIndex": 3,
-    "explanation": "Pela 3ª Lei de Newton, a parede exerce exatamente a mesma força de 50 N em sentido contrário sobre as mãos de quem a empurra.",
+    "explanation": "O Slide 75 rotula expressamente na imagem anatómica da alavanca interpotente do cotovelo: 'Úmero', 'Rádio' e 'Cúbito'.",
     "distractorAnalysis": [
-      "Está incorreta: Uma superfície estática exerce força de reação de contacto com a mesma intensidade da ação.",
-      "Está incorreta: A rigidez do material não duplica forças; a conservação do par ação-reação mantém intensidade idêntica.",
-      "Está incorreta: Não há redução de força para metade; a força de contacto estático preserva o valor de 50 N."
+      "Está incorreta: Estes são ossos da cintura escapular e tórax anterior, não do cotovelo e antebraço.",
+      "Está incorreta: Estes são ossos do membro inferior (articulação do joelho).",
+      "Está incorreta: Estes são ossos constituintes do pé humano."
     ],
-    "nursingApplication": "Ilustra a pressão que as mãos sentem ao empurrar portas pesadas ou estruturas hospitalares."
+    "nursingApplication": "Integração anatómica direta com os conteúdos lecionados na aula de Biofísica de 1º ano."
   },
   {
     "id": 1156,
     "topicId": 1,
-    "question": "Numa colisão frontal entre uma ambulância de 3000 kg e um carrinho de transporte de 30 kg, como se comparam as intensidades das forças trocadas entre eles no impacto?",
+    "question": "Numa alavanca Inter-resistente (ex.: carrinho de mão ou pontas dos pés), qual é a relação geométrica entre os braços de momento?",
     "options": [
-      "As forças são rigorosamente iguais em intensidade, pois constituem um par de ação-reação da 3ª Lei de Newton.",
-      "A ambulância exerce uma força cem vezes maior sobre o carrinho do que o carrinho sobre a ambulância.",
-      "O carrinho não exerce qualquer força sobre a ambulância por ter massa muito menor.",
-      "A força do carrinho depende apenas da velocidade da ambulância dividida pelo quadrado do tempo."
+      "O braço potente é sempre maior que o braço resistente (b_P > b_R), garantindo vantagem mecânica de força (F_P < F_R).",
+      "O braço resistente é sempre o dobro do braço potente.",
+      "Ambos os braços têm obrigatoriamente de medir 1 metro.",
+      "O braço potente é sempre nulo porque a carga está no meio."
     ],
     "correctIndex": 0,
-    "explanation": "Pela 3ª Lei de Newton, a intensidade da força que A exerce em B é sempre exatamente igual à que B exerce em A, independentemente das massas.",
+    "explanation": "Como a resistência está entre o fulcro e a força potente (Fulcro — F_R — F_P), a distância do fulcro à força potente (b_P) é necessariamente superior à distância à carga (b_R). Assim, F_P < F_R: há multiplicação de força.",
     "distractorAnalysis": [
-      "Está incorreta: Embora o carrinho sofra uma aceleração muito maior (a = F/m), as forças trocadas têm exatamente o mesmo módulo.",
-      "Está incorreta: Mesmo um corpo de pequena massa exerce uma força de reação de intensidade idêntica à da ação recebida.",
-      "Está incorreta: A força é uma interação mútua simultânea com intensidades estritamente iguais nos dois corpos."
+      "Está incorreta: b_R é menor que b_P na alavanca inter-resistente, nunca o dobro.",
+      "Está incorreta: Os comprimentos variam com as dimensões de cada corpo e ferramenta mecânica.",
+      "Está incorreta: O braço potente é o maior de todos e estende-se do fulcro até à ponta potente."
     ],
-    "nursingApplication": "Mostra que corpos de massas diferentes experimentam forças de igual intensidade durante uma colisão mútua."
+    "nursingApplication": "Explica por que conseguimos erguer o peso total do corpo humano ficando em bicos de pés com relativo pouco esforço."
   },
   {
     "id": 1157,
     "topicId": 1,
-    "question": "Quando uma caixa de soros de 10 kg repousa sobre uma mesa horizontal, que força a caixa exerce sobre a mesa?",
+    "question": "Numa alavanca Interpotente (ex.: bíceps braquial no cotovelo), qual é a consequência biomecânica de a força potente estar situada entre o fulcro e a carga?",
     "options": [
-      "Uma força horizontal de atrito cinético com intensidade infinita.",
-      "Uma força de contacto dirigida verticalmente para baixo com intensidade igual a 98 N (o seu peso).",
-      "Nenhuma força, porque a caixa está parada e objetos parados perdem a capacidade de exercer força.",
-      "Uma força ascensional de 980 N direcionada para o teto da sala."
+      "A força muscular necessária é muito menor do que o peso da carga que se segura.",
+      "O braço potente é menor que o braço resistente (b_P < b_R), exigindo força muscular superior à carga (desvantagem de força).",
+      "A alavanca não consegue produzir qualquer movimento nem rotação da mão.",
+      "O peso do objeto segurado na mão transforma-se em calor sem gerar momento."
     ],
     "correctIndex": 1,
-    "explanation": "A caixa pressiona a mesa com uma força de contacto descendente de intensidade igual ao seu peso (P = 10 kg · 9,8 m/s² = 98 N).",
+    "explanation": "Sendo a alavanca interpotente (Fulcro — F_P — F_R), b_P é mais curto que b_R. Pela Lei das Alavancas, para equilibrar o sistema o músculo tem de exercer uma força potente F_P muito superior à força resistente F_R.",
     "distractorAnalysis": [
-      "Está incorreta: A caixa está em repouso estático, logo não há atrito cinético em movimento horizontal.",
-      "Está incorreta: Mesmo em repouso, a gravidade atua sobre a massa da caixa, fazendo-a exercer força de compressão sobre o apoio.",
-      "Está incorreta: A força exercida pela caixa sobre a mesa é descendente (para baixo), não ascensional."
+      "Está incorreta: A força muscular é muito maior, nunca menor (há desvantagem mecânica de força).",
+      "Está incorreta: A alavanca interpotente produz movimentos articulares rápidos e de grande amplitude.",
+      "Está incorreta: O peso do objeto gera momento resistente efetivo M_R = F_R · b_R que tem de ser equilibrado."
     ],
-    "nursingApplication": "Permite dimensionar prateleiras e suportes hospitalares em função da carga que sustentam."
+    "nursingApplication": "Alerta para o facto de que os músculos do corpo suportam tensões internas muitas vezes superiores aos pesos que carregamos."
   },
   {
     "id": 1158,
     "topicId": 1,
-    "question": "Qual das seguintes afirmações sobre a 3ª Lei de Newton é cientificamente VERDADEIRA?",
+    "question": "Uma tesoura cirúrgica e um baloiço infantil de recreio são exemplos clássicos de que tipo de alavanca?",
     "options": [
-      "A força de ação ocorre primeiro e a força de reação surge sempre com meio segundo de atraso.",
-      "A 3ª Lei de Newton só se aplica a corpos que se encontrem em queda livre no vácuo.",
-      "A força de ação e a força de reação ocorrem rigorosamente ao mesmo tempo (são instantâneas e simultâneas).",
-      "As forças do par ação-reação cancelam-se mutuamente na 2ª Lei de Newton de um corpo isolado."
+      "Alavanca inter-resistente.",
+      "Alavanca interpotente.",
+      "Alavanca interfixa (o fulcro central situa-se entre as forças potentes e resistentes).",
+      "Alavanca de deformação plastoviscoelástica."
     ],
     "correctIndex": 2,
-    "explanation": "Ação e reação são simultâneas: nenhuma antecede a outra no tempo da interação física.",
+    "explanation": "Na tesoura e no baloiço, o parafuso/eixo central (fulcro) situa-se a meio, entre a zona onde as mãos aplicam a força potente e as lâminas/assentos onde atua a resistência: Alavanca Interfixa (Slide 71).",
     "distractorAnalysis": [
-      "Está incorreta: Não existe atraso temporal; a interação de contacto é rigorosamente simultânea.",
-      "Está incorreta: A 3ª Lei aplica-se a todas as interações de contacto e de campo da física clássica.",
-      "Está incorreta: Apenas forças que atuam no mesmo corpo se podem cancelar; ação e reação atuam em corpos diferentes."
+      "Está incorreta: Na alavanca inter-resistente a carga resistente está no meio (ex.: quebra-nozes).",
+      "Está incorreta: Na alavanca interpotente a força potente está no meio (ex.: pinça).",
+      "Está incorreta: Termos reológicos não definem a classificação mecânica geométrica de alavancas de Arquimedes."
     ],
-    "nursingApplication": "Reconhecer a simultaneidade das forças apoia a compreensão da dinâmica do movimento e transferências."
+    "nursingApplication": "Compreensão do funcionamento de instrumentos cirúrgicos articulados comuns na prática diária de enfermagem."
   },
   {
     "id": 1159,
     "topicId": 1,
-    "question": "Como se define um sistema de 'Forças Concorrentes' na estática dos corpos materiais?",
+    "question": "Se as alavancas interpotentes (como o cotovelo) operam em desvantagem mecânica de força, qual é a grande vantagem fisiológica que conferem ao corpo humano?",
     "options": [
-      "Um sistema de forças que atuam exclusivamente em linhas retas estritamente paralelas que nunca se cruzam.",
-      "Um conjunto de forças que atuam em dias diferentes da semana sobre corpos independentes.",
-      "Forças que anulam a temperatura absoluta de qualquer material condutor elétrico.",
-      "Um sistema de forças cujas linhas de ação se intersetam todas num mesmo ponto comum no espaço."
+      "Permitem anular a necessidade de aporte sanguíneo aos músculos.",
+      "Eliminam completamente o atrito no interior da cápsula articular.",
+      "Fazem com que o corpo humano levite sem tocar no solo.",
+      "Ganho extraordinário em amplitude de movimento e velocidade na extremidade livre distal (mão)."
     ],
     "correctIndex": 3,
-    "explanation": "Forças concorrentes têm retas de suporte que convergem ou divergem a partir de um único ponto comum.",
+    "explanation": "Um encurtamento muscular muito pequeno de alguns milímetros junto ao fulcro traduz-se num movimento angular amplo e rápido da mão a 30-40 cm de distância. Sacrifica-se força para ganhar amplitude e velocidade de locomoção.",
     "distractorAnalysis": [
-      "Está incorreta: Forças com retas paralelas que não se cruzam são forças paralelas, não concorrentes.",
-      "Está incorreta: O conceito refere-se à geometria espacial das retas de ação de forças simultâneas.",
-      "Está incorreta: Forças mecânicas da estática não anulam temperaturas térmicas de materiais."
+      "Está incorreta: Forças musculares elevadas exigem, pelo contrário, elevado aporte de oxigénio e glicose pelo sangue.",
+      "Está incorreta: A lubrificação sinovial reduz o atrito, mas a classe da alavanca não elimina o atrito biológico.",
+      "Está incorreta: Nenhuma alavanca biológica revoga as leis da gravitação de Newton."
     ],
-    "nursingApplication": "Exemplo das linhas de tração exercidas por múltiplos feixes musculares convergentes num mesmo tendão de inserção."
+    "nursingApplication": "Explica a elegância evolutiva da biomecânica humana: movimentos manuais ágeis e versáteis."
   },
   {
     "id": 1160,
     "topicId": 1,
-    "question": "Duas forças concorrentes perpendiculares entre si, com intensidades de 30 N e 40 N, atuam sobre o mesmo ponto material. Qual é a intensidade da força resultante?",
+    "question": "A articulação da cabeça com a coluna cervical (onde os músculos posteriores da nuca equilibram o peso da face em torno do côndilo occipital) funciona como:",
     "options": [
-      "50 N, calculada pela regra do paralelogramo através do Teorema de Pitágoras.",
-      "70 N, obtida pela simples soma escalar aritmética direta das duas intensidades.",
-      "10 N, obtida pela subtração direta das duas forças como se fossem colineares opostas.",
-      "1200 N, obtida pela multiplicação direta das intensidades no plano."
+      "Uma alavanca interfixa (o fulcro articular situa-se entre a força potente muscular posterior e a força resistente do peso da face).",
+      "Uma alavanca interpotente pura sem qualquer ponto de apoio.",
+      "Um corpo puramente viscoso sem restituição elástica.",
+      "Uma alavanca inter-resistente com a carga nas vértebras lombares."
     ],
     "correctIndex": 0,
-    "explanation": "Como as forças são perpendiculares (θ = 90°), Fr = √(F1² + F2²) = √(30² + 40²) = √(900 + 1600) = √2500 = 50 N.",
+    "explanation": "O côndilo occipital (fulcro) situa-se entre a musculatura extensora da nuca (força potente, atrás) e o centro de gravidade da cabeça/face (força resistente, à frente): Alavanca Interfixa (Slide 71).",
     "distractorAnalysis": [
-      "Está incorreta: A soma aritmética direta (30 + 40 = 70 N) só é válida para forças colineares com o mesmo sentido.",
-      "Está incorreta: A subtração (40 - 30 = 10 N) só é válida para forças colineares com sentidos opostos.",
-      "Está incorreta: Multiplicar as forças não fornece a resultante vetorial de forças concorrentes."
+      "Está incorreta: A articulação atlanto-occipital é um fulcro ósseo de rotação bem definido.",
+      "Está incorreta: A cabeça e coluna comportam-se como alavancas rígidas de suporte, não como fluidos viscosos de escoamento.",
+      "Está incorreta: A carga craniana atua diretamente sobre o pescoço e coluna cervical, não nas vértebras lombares neste subsistema."
     ],
-    "nursingApplication": "Fundamental para calcular a tração resultante em sistemas de suspensão ortopédica e tração esquelética."
+    "nursingApplication": "Explica por que adormecer sentado faz a cabeça tombar para a frente: ao relaxar os músculos posteriores, o peso da face faz a alavanca girar."
   },
   {
     "id": 1161,
     "topicId": 1,
-    "question": "Qual é o princípio fundamental expresso pela 3ª Lei de Newton?",
+    "question": "No primeiro exercício de alavanca interfixa dos Slides 78 e 79 (baloiço com comprimento de 3,6 m onde o braço potente é o dobro do resistente, 3x = 3,6 m), qual foi o valor obtido para x (braço resistente)?",
     "options": [
-      "A força de reação é sempre aplicada no mesmo corpo que a ação, anulando imediatamente todo o movimento.",
-      "Sempre que um corpo A exerce uma força sobre um corpo B, o corpo B exerce simultaneamente sobre o corpo A uma força de igual intensidade e direção, mas em sentido oposto.",
-      "A força de ação tem sempre o dobro da intensidade da força de reação em qualquer colisão física.",
-      "As forças de reação só existem quando os corpos se movem com velocidade superior à da luz no vácuo."
+      "x = 3,6 m",
+      "x = 1,2 m",
+      "x = 2,4 m",
+      "x = 0,6 m"
     ],
     "correctIndex": 1,
-    "explanation": "A 3ª Lei estabelece o par ação-reação (F_A->B = -F_B->A): intensidades iguais, sentidos opostos, atuando em corpos distintos.",
+    "explanation": "Os Slides 78 e 79 mostram a resolução passo a passo: '3x = 3.6 (=) x = 1.2 m'. O braço resistente b_R é 1,2 m e o potente b_P é 2,4 m.",
     "distractorAnalysis": [
-      "Está incorreta: Ação e reação atuam em corpos diferentes; se atuassem no mesmo corpo, anulariam o movimento do corpo.",
-      "Está incorreta: As forças do par têm rigorosamente a mesma intensidade matemática, nunca intensidade dupla.",
-      "Está incorreta: A 3ª Lei aplica-se a todas as interações da mecânica clássica a qualquer velocidade."
+      "Está incorreta: 3,6 m é o comprimento total da barra da alavanca, não o valor de x.",
+      "Está incorreta: 2,4 m é o valor do braço potente (2x = 2 × 1,2), não de x.",
+      "Está incorreta: 0,6 m resultaria de dividir 3,6 por 6, o que não reflete a equação 3x = 3,6."
     ],
-    "nursingApplication": "Ao empurrar uma maca para a frente, as rodas e o solo exercem força de reação nos pés do operador."
+    "nursingApplication": "Resolução rigorosa do exercício clássico apresentado pelo docente nas aulas teóricas."
   },
   {
     "id": 1162,
     "topicId": 1,
-    "question": "Porque é que as forças do par ação-reação NUNCA se anulam mutuamente?",
+    "question": "No exercício do Slide 79, com Força Resistente F_R = 20 N e braço b_R = 1,2 m, qual é o valor calculado para o Momento da Força Resistente (M_R)?",
     "options": [
-      "Porque têm intensidades diferentes e não se podem subtrair matematicamente.",
-      "Porque ocorrem em momentos temporais diferentes, com um atraso de vários segundos.",
-      "Porque atuam sempre em corpos diferentes e nunca sobre o mesmo corpo.",
-      "Porque uma é uma grandeza vetorial e a outra é uma grandeza puramente escalar."
+      "M_R = 16,6 N·m",
+      "M_R = 21,2 N·m",
+      "M_R = 24 N·m",
+      "M_R = 240 N·m"
     ],
     "correctIndex": 2,
-    "explanation": "O equilíbrio de um corpo requer que as forças atuem sobre o mesmo corpo. Ação e reação atuam em corpos distintos, logo não se anulam.",
+    "explanation": "O Slide 79 calcula textualmente: 'Momento da força resistente: M_R = F_R · b_R (=) M_R = 20 × 1.2 (=) M_R = 24 N.m'.",
     "distractorAnalysis": [
-      "Está incorreta: As forças do par ação-reação têm exatamente o mesmo módulo (intensidade).",
-      "Está incorreta: Ação e reação são absolutamente simultâneas; não existe atraso temporal entre elas.",
-      "Está incorreta: Ambas as forças do par são grandezas estritamente vetoriais expressas em Newtons."
+      "Está incorreta: 16,6 resultaria de dividir 20 por 1,2, o que é um erro de cálculo.",
+      "Está incorreta: 21,2 resultaria de somar 20 com 1,2 em vez de multiplicar.",
+      "Está incorreta: 240 resultaria de multiplicar por 12 em vez de 1,2."
     ],
-    "nursingApplication": "Permite entender que a força exercida sobre um objeto é independente das forças que o objeto exerce noutros."
+    "nursingApplication": "Consolidação da multiplicação de força por braço para obtenção de momentos de resistência."
   },
   {
     "id": 1163,
     "topicId": 1,
-    "question": "Durante a marcha humana, ao empurrar o solo para trás com o pé de apoio na fase de impulsão, que componente da força exercida pelo solo projeta o corpo para a frente?",
+    "question": "No Slide 80, estando o sistema em equilíbrio com M_R = 24 N·m e braço potente b_P = 2,4 m, qual foi a Força Potente (F_P) obtida?",
     "options": [
-      "A força normal perpendicular de sustentação dirigida verticalmente para o centro da Terra.",
-      "A força gravitacional atrativa exercida pela Lua sobre a musculatura do membro inferior.",
-      "A pressão hidrostática do líquido sinovial que escapa da cápsula articular.",
-      "A componente tangencial de atrito estático da Força de Reação do Solo (FRS), orientada horizontalmente para a frente."
+      "F_P = 24 N",
+      "F_P = 57,6 N",
+      "F_P = 2,4 N",
+      "F_P = 10 N"
     ],
     "correctIndex": 3,
-    "explanation": "Pela 3ª Lei de Newton, ao exercer uma força tangencial para trás no solo, este reage através do atrito estático com uma força horizontal para a frente (propulsão).",
+    "explanation": "O Slide 80 resolve: 'Momento da força potente: M_P = F_P · b_P (=) 24 = F_P × 2.4 (=) F_P = 10 N'.",
     "distractorAnalysis": [
-      "Está incorreta: A força normal é vertical e atua na sustentação do peso contra a gravidade, não impulsionando horizontalmente para a frente.",
-      "Está incorreta: A gravidade lunar é desprezável na propulsão terrestre da locomoção humana.",
-      "Está incorreta: A pressão sinovial é interna à articulação e não produz propulsão de translação com o solo."
+      "Está incorreta: 24 N seria a força potente se o braço potente fosse de apenas 1 metro.",
+      "Está incorreta: 57,6 N resultaria de multiplicar 24 por 2,4 em vez de dividir.",
+      "Está incorreta: 2,4 é a medida do braço em metros, não o valor da força em Newtons."
     ],
-    "nursingApplication": "Fundamento biomecânico da marcha humana ao caminhar pelos corredores hospitalares."
+    "nursingApplication": "Demonstra que uma força de apenas 10 N consegue equilibrar uma força resistente de 20 N devido à duplicação do braço."
   },
   {
     "id": 1164,
     "topicId": 1,
-    "question": "A força normal (N) exercida pelo colchão de uma cama sobre uma pessoa deitada é o par de ação-reação do peso dessa pessoa?",
+    "question": "No segundo exercício dos slides (Slide 81 a 83), qual é o peso (F_R) de uma carga resistente com massa de 500 kg adotando g = 9,8 m/s²?",
     "options": [
-      "Não, porque o peso e a força normal atuam sobre o mesmo corpo (a pessoa), enquanto os pares ação-reação atuam em corpos diferentes.",
-      "Sim, porque são forças com a mesma intensidade e sentidos opostos que atuam na mesma linha de ação.",
-      "Sim, porque toda a força que atua na vertical forma automaticamente um par com a gravidade.",
-      "Não, porque a força normal tem sempre uma intensidade dez vezes superior ao peso corporal."
+      "4900 N",
+      "500 N",
+      "51,02 N",
+      "49 000 N"
     ],
     "correctIndex": 0,
-    "explanation": "O par de ação-reação do peso (Terra atrai pessoa) é a atração gravitacional que a pessoa exerce sobre a Terra. A normal e o peso atuam ambos na pessoa.",
+    "explanation": "O Slide 82 calcula: P = F_R = m · g = 500 kg × 9,8 m/s² = 4900 N.",
     "distractorAnalysis": [
-      "Está incorreta: Ter a mesma intensidade e sentidos opostos é condição de equilíbrio de translação da pessoa, mas não define par ação-reação mútuo.",
-      "Está incorreta: A direção vertical não implica que as forças pertençam ao mesmo par da 3ª Lei.",
-      "Está incorreta: Numa superfície horizontal estática em repouso, a normal tem intensidade igual ao peso (N = P)."
+      "Está incorreta: 500 é a massa em quilogramas (kg), que tem de ser multiplicada por g para obter o peso em Newtons.",
+      "Está incorreta: 51,02 resultaria de dividir a massa pela gravidade, o que viola P = m · g.",
+      "Está incorreta: 49 000 N corresponderia a uma gravidade de 98 m/s², dez vezes superior à da Terra."
     ],
-    "nursingApplication": "Conceito físico essencial para o desenho de superfícies de suporte e colchões adequados."
+    "nursingApplication": "Cálculo da força gravítica real associada a cargas pesadas em ambiente de logística hospitalar."
   },
   {
     "id": 1165,
     "topicId": 1,
-    "question": "Ao exercer-se uma força horizontal de 50 N perpendicularmente contra uma parede rígida, que força exerce a parede sobre as mãos do indivíduo?",
+    "question": "No Slide 82, com a carga resistente de 4900 N (500 kg × 9,8) e braço resistente b_R = 0,3 m, qual foi o Momento Resistente M_R calculado?",
     "options": [
-      "0 N, porque a parede é fixa e não pode exercer nenhuma força mecânica.",
-      "50 N, orientada perpendicularmente em sentido oposto (para trás contra as mãos).",
-      "100 N, porque os materiais rígidos duplicam a força aplicada sobre eles.",
-      "25 N, porque metade da força dissipa-se sob a forma de som nas fundações."
+      "M_R = 147 N·m",
+      "M_R = 1470 N·m",
+      "M_R = 4900 N·m",
+      "M_R = 16 333 N·m"
     ],
     "correctIndex": 1,
-    "explanation": "Pela 3ª Lei de Newton, a parede exerce exatamente a mesma força de 50 N em sentido contrário sobre as mãos de quem a empurra.",
+    "explanation": "O Slide 82 apresenta formalmente: 'M_R = F_R · b_R (=) M_R = (500 × 9.8) × 0.3 (=) M_R = 1470 N.m'.",
     "distractorAnalysis": [
-      "Está incorreta: Uma superfície estática exerce força de reação de contacto com a mesma intensidade da ação.",
-      "Está incorreta: A rigidez do material não duplica forças; a conservação do par ação-reação mantém intensidade idêntica.",
-      "Está incorreta: Não há redução de força para metade; a força de contacto estático preserva o valor de 50 N."
+      "Está incorreta: 147 N·m resultaria de usar braço de 0,03 m em vez de 0,3 m.",
+      "Está incorreta: 4900 N·m seria o momento se o braço fosse de 1 metro.",
+      "Está incorreta: 16 333 N·m resultaria de dividir a força pelo braço (4900 / 0,3)."
     ],
-    "nursingApplication": "Ilustra a pressão que as mãos sentem ao empurrar portas pesadas ou estruturas hospitalares."
+    "nursingApplication": "Fixa o valor do momento resistente de referência utilizado na dedução da alavanca do slide 83."
   },
   {
     "id": 1166,
     "topicId": 1,
-    "question": "Numa colisão frontal entre uma ambulância de 3000 kg e um carrinho de transporte de 30 kg, como se comparam as intensidades das forças trocadas entre eles no impacto?",
+    "question": "No Slide 83, para uma pessoa que apenas consegue exercer uma força equivalente a 30 kg (F_P = 30 × 9,8 = 294 N), qual a distância mínima do braço potente (b_P) necessária para equilibrar os 1470 N·m?",
     "options": [
-      "A ambulância exerce uma força cem vezes maior sobre o carrinho do que o carrinho sobre a ambulância.",
-      "O carrinho não exerce qualquer força sobre a ambulância por ter massa muito menor.",
-      "As forças são rigorosamente iguais em intensidade, pois constituem um par de ação-reação da 3ª Lei de Newton.",
-      "A força do carrinho depende apenas da velocidade da ambulância dividida pelo quadrado do tempo."
+      "b_P = 1,47 m",
+      "b_P = 30 m",
+      "b_P = 5 m",
+      "b_P = 0,2 m"
     ],
     "correctIndex": 2,
-    "explanation": "Pela 3ª Lei de Newton, a intensidade da força que A exerce em B é sempre exatamente igual à que B exerce em A, independentemente das massas.",
+    "explanation": "O Slide 83 conclui com rigor: 'M_P = F_P · b_P (=) 1470 = (30 × 9.8) × b_P (=) b_P = 5 m'.",
     "distractorAnalysis": [
-      "Está incorreta: Embora o carrinho sofra uma aceleração muito maior (a = F/m), as forças trocadas têm exatamente o mesmo módulo.",
-      "Está incorreta: Mesmo um corpo de pequena massa exerce uma força de reação de intensidade idêntica à da ação recebida.",
-      "Está incorreta: A força é uma interação mútua simultânea com intensidades estritamente iguais nos dois corpos."
+      "Está incorreta: 1,47 m seria insuficiente: geraria apenas 294 × 1,47 = 432 N·m, e a alavanca não equilibraria.",
+      "Está incorreta: 30 m é o valor da massa em quilogramas, não a distância em metros.",
+      "Está incorreta: 0,2 m é mais curto que o próprio braço resistente de 0,3 m, tornando a tarefa impossível."
     ],
-    "nursingApplication": "Mostra que corpos de massas diferentes experimentam forças de igual intensidade durante uma colisão mútua."
+    "nursingApplication": "Demonstração prática de como alavancas longas permitem a uma pessoa mover cargas massivas (500 kg)."
   },
   {
     "id": 1167,
     "topicId": 1,
-    "question": "Quando uma caixa de soros de 10 kg repousa sobre uma mesa horizontal, que força a caixa exerce sobre a mesa?",
+    "question": "O que comprova biomecanicamente o resultado do Slide 83 (necessidade de braço b_P = 5 m para erguer 500 kg com 30 kg)?",
     "options": [
-      "Uma força horizontal de atrito cinético com intensidade infinita.",
-      "Nenhuma força, porque a caixa está parada e objetos parados perdem a capacidade de exercer força.",
-      "Uma força ascensional de 980 N direcionada para o teto da sala.",
-      "Uma força de contacto dirigida verticalmente para baixo com intensidade igual a 98 N (o seu peso)."
+      "Que a gravidade terrestre deixa de atuar quando as barras têm mais de 3 metros.",
+      "Que é impossível erguer cargas superiores à massa corporal de um indivíduo.",
+      "Que os dinamómetros só conseguem medir forças até 30 Newtons.",
+      "Que aumentando a distância do braço potente (b_P) é possível vencer resistências massivas aplicando forças humanas modestas."
     ],
     "correctIndex": 3,
-    "explanation": "A caixa pressiona a mesa com uma força de contacto descendente de intensidade igual ao seu peso (P = 10 kg · 9,8 m/s² = 98 N).",
+    "explanation": "A essência das máquinas simples de Arquimedes ('Dêem-me uma alavanca e um ponto de apoio e moverei o mundo'): aumentando o braço potente, multiplicamos o efeito de rotação e reduzimos a força necessária.",
     "distractorAnalysis": [
-      "Está incorreta: A caixa está em repouso estático, logo não há atrito cinético em movimento horizontal.",
-      "Está incorreta: Mesmo em repouso, a gravidade atua sobre a massa da caixa, fazendo-a exercer força de compressão sobre o apoio.",
-      "Está incorreta: A força exercida pela caixa sobre a mesa é descendente (para baixo), não ascensional."
+      "Está incorreta: A gravidade mantém-se rigorosamente ativa ao longo de todo o sistema.",
+      "Está incorreta: É perfeitamente possível e quotidiano mover grandes massas com auxílio mecânico de alavancas.",
+      "Está incorreta: Existem dinamómetros industriais calibrados para dezenas de milhares de Newtons."
     ],
-    "nursingApplication": "Permite dimensionar prateleiras e suportes hospitalares em função da carga que sustentam."
+    "nursingApplication": "Fundamento para o uso de gruas e elevadores mecânicos de transferência de doentes nos hospitais."
   },
   {
     "id": 1168,
     "topicId": 1,
-    "question": "Qual das seguintes afirmações sobre a 3ª Lei de Newton é cientificamente VERDADEIRA?",
+    "question": "Se no baloiço do Slide 80 a pessoa aplicasse uma força potente de 15 N (com b_P = 2,4 m) contra a resistência de 24 N·m, o que aconteceria?",
     "options": [
-      "A força de ação e a força de reação ocorrem rigorosamente ao mesmo tempo (são instantâneas e simultâneas).",
-      "A força de ação ocorre primeiro e a força de reação surge sempre com meio segundo de atraso.",
-      "A 3ª Lei de Newton só se aplica a corpos que se encontrem em queda livre no vácuo.",
-      "As forças do par ação-reação cancelam-se mutuamente na 2ª Lei de Newton de um corpo isolado."
+      "O momento potente seria M_P = 15 × 2,4 = 36 N·m, superando M_R (24 N·m) e fazendo a alavanca girar no sentido potente.",
+      "A alavanca permaneceria perfeitamente estática em repouso sem qualquer movimento.",
+      "O momento potente anular-se-ia espontaneamente para respeitar o slide.",
+      "A força resistente aumentaria instantaneamente para 36 N para impedir a rotação."
     ],
     "correctIndex": 0,
-    "explanation": "Ação e reação são simultâneas: nenhuma antecede a outra no tempo da interação física.",
+    "explanation": "Com F_P = 15 N, M_P = 36 N·m. Como 36 N·m > 24 N·m, o momento resultante não é nulo (Mr = 12 N·m a favor da potência) e a alavanca roda acelerando no sentido potente.",
     "distractorAnalysis": [
-      "Está incorreta: Não existe atraso temporal; a interação de contacto é rigorosamente simultânea.",
-      "Está incorreta: A 3ª Lei aplica-se a todas as interações de contacto e de campo da física clássica.",
-      "Está incorreta: Apenas forças que atuam no mesmo corpo se podem cancelar; ação e reação atuam em corpos diferentes."
+      "Está incorreta: A alavanca só ficaria em repouso se os momentos fossem exatamente iguais (F_P = 10 N).",
+      "Está incorreta: As leis da física são ativas e não anulam momentos dinâmicos reais.",
+      "Está incorreta: A carga resistente tem massa fixa e braço fixo, pelo que o seu momento permanece em 24 N·m."
     ],
-    "nursingApplication": "Reconhecer a simultaneidade das forças apoia a compreensão da dinâmica do movimento e transferências."
+    "nursingApplication": "Explica como se inicia o movimento articular ativo quando o músculo supera a resistência da carga."
   },
   {
     "id": 1169,
     "topicId": 1,
-    "question": "Como se define um sistema de 'Forças Concorrentes' na estática dos corpos materiais?",
+    "question": "Qual foi o valor de aceleração da gravidade 'g' explicitamente adotado pelo professor nas contas dos Slides 81 a 89?",
     "options": [
-      "Um sistema de forças que atuam exclusivamente em linhas retas estritamente paralelas que nunca se cruzam.",
-      "Um sistema de forças cujas linhas de ação se intersetam todas num mesmo ponto comum no espaço.",
-      "Um conjunto de forças que atuam em dias diferentes da semana sobre corpos independentes.",
-      "Forças que anulam a temperatura absoluta de qualquer material condutor elétrico."
+      "g = 10 m/s²",
+      "g = 9.8 m/s²",
+      "g = 9.815 m/s²",
+      "g = 3.6 m/s²"
     ],
     "correctIndex": 1,
-    "explanation": "Forças concorrentes têm retas de suporte que convergem ou divergem a partir de um único ponto comum.",
+    "explanation": "Os Slides 81 e 82 apresentam no topo a premissa de cálculo: 'g = 9.8 m/s²'.",
     "distractorAnalysis": [
-      "Está incorreta: Forças com retas paralelas que não se cruzam são forças paralelas, não concorrentes.",
-      "Está incorreta: O conceito refere-se à geometria espacial das retas de ação de forças simultâneas.",
-      "Está incorreta: Forças mecânicas da estática não anulam temperaturas térmicas de materiais."
+      "Está incorreta: 10 m/s² é uma aproximação comum no ensino secundário, mas o slide usa estritamente 9.8 m/s².",
+      "Está incorreta: 9.815 m/s² possui precisão excessiva não adotada no texto do professor.",
+      "Está incorreta: 3.6 é o fator de conversão de m/s para km/h, não o valor de g."
     ],
-    "nursingApplication": "Exemplo das linhas de tração exercidas por múltiplos feixes musculares convergentes num mesmo tendão de inserção."
+    "nursingApplication": "Garante que os estudantes utilizem a constante de aceleração correta (9,8) nos exames teóricos."
   },
   {
     "id": 1170,
     "topicId": 1,
-    "question": "Duas forças concorrentes perpendiculares entre si, com intensidades de 30 N e 40 N, atuam sobre o mesmo ponto material. Qual é a intensidade da força resultante?",
+    "question": "Em todos os exercícios de alavancas dos slides, a condição matemática necessária para garantir o equilíbrio estático foi:",
     "options": [
-      "70 N, obtida pela simples soma escalar aritmética direta das duas intensidades.",
-      "10 N, obtida pela subtração direta das duas forças como se fossem colineares opostas.",
-      "50 N, calculada pela regra do paralelogramo através do Teorema de Pitágoras.",
-      "1200 N, obtida pela multiplicação direta das intensidades no plano."
+      "F_P + F_R = 0",
+      "b_P / b_R = 9,8",
+      "M_P = M_R  (ou F_P · b_P = F_R · b_R)",
+      "F_P · b_R = F_R · b_P"
     ],
     "correctIndex": 2,
-    "explanation": "Como as forças são perpendiculares (θ = 90°), Fr = √(F1² + F2²) = √(30² + 40²) = √(900 + 1600) = √2500 = 50 N.",
+    "explanation": "A igualdade entre o Momento Potente e o Momento Resistente (M_P = M_R) é o pilar de resolução de todos os problemas de alavancas estáticas da aula.",
     "distractorAnalysis": [
-      "Está incorreta: A soma aritmética direta (30 + 40 = 70 N) só é válida para forças colineares com o mesmo sentido.",
-      "Está incorreta: A subtração (40 - 30 = 10 N) só é válida para forças colineares com sentidos opostos.",
-      "Está incorreta: Multiplicar as forças não fornece a resultante vetorial de forças concorrentes."
+      "Está incorreta: Somar forças ignora os braços de momento e o efeito de rotação em torno do fulcro.",
+      "Está incorreta: A razão entre braços depende da geometria do sistema e não da constante g.",
+      "Está incorreta: Os braços estão cruzados incorretamente na fórmula apresentada nesta opção."
     ],
-    "nursingApplication": "Fundamental para calcular a tração resultante em sistemas de suspensão ortopédica e tração esquelética."
+    "nursingApplication": "Consolida a metodologia padrão de análise de forças rotacionais na biomecânica de enfermagem."
   },
   {
     "id": 1171,
     "topicId": 1,
-    "question": "Qual é o princípio fundamental expresso pela 3ª Lei de Newton?",
+    "question": "No exercício de biomecânica do bíceps dos Slides 84 a 89, quais são as massas atribuídas ao antebraço+mão e ao objeto segurado na mão?",
     "options": [
-      "A força de reação é sempre aplicada no mesmo corpo que a ação, anulando imediatamente todo o movimento.",
-      "A força de ação tem sempre o dobro da intensidade da força de reação em qualquer colisão física.",
-      "As forças de reação só existem quando os corpos se movem com velocidade superior à da luz no vácuo.",
-      "Sempre que um corpo A exerce uma força sobre um corpo B, o corpo B exerce simultaneamente sobre o corpo A uma força de igual intensidade e direção, mas em sentido oposto."
+      "Antebraço+mão = 10 kg; Objeto = 5 kg.",
+      "Antebraço+mão = 1 kg; Objeto = 2,5 kg.",
+      "Antebraço+mão = 500 kg; Objeto = 30 kg.",
+      "Massa antebraço+mão = 2.5 kg; Massa objeto = 1 kg."
     ],
     "correctIndex": 3,
-    "explanation": "A 3ª Lei estabelece o par ação-reação (F_A->B = -F_B->A): intensidades iguais, sentidos opostos, atuando em corpos distintos.",
+    "explanation": "O Slide 84 estabelece nos dados iniciais do problema: 'Massa antebraço+mão = 2.5 kg | Massa objeto = 1 kg'.",
     "distractorAnalysis": [
-      "Está incorreta: Ação e reação atuam em corpos diferentes; se atuassem no mesmo corpo, anulariam o movimento do corpo.",
-      "Está incorreta: As forças do par têm rigorosamente a mesma intensidade matemática, nunca intensidade dupla.",
-      "Está incorreta: A 3ª Lei aplica-se a todas as interações da mecânica clássica a qualquer velocidade."
+      "Está incorreta: Valores irrealistas que excedem largamente a massa anatómica de um membro superior.",
+      "Está incorreta: As massas estão invertidas em relação ao enunciado original do slide 84.",
+      "Está incorreta: 500 kg e 30 kg são os dados do exercício anterior da alavanca interfixa dos slides 81-83."
     ],
-    "nursingApplication": "Ao empurrar uma maca para a frente, as rodas e o solo exercem força de reação nos pés do operador."
+    "nursingApplication": "Identificação imediata dos parâmetros anatómicos e de carga do problema do cotovelo."
   },
   {
     "id": 1172,
     "topicId": 1,
-    "question": "Porque é que as forças do par ação-reação NUNCA se anulam mutuamente?",
+    "question": "No Slide 84, quais são as distâncias de ação anatómicas indicadas: centro de massa do antebraço (d_antebraço+mão), inserção do bíceps (d_E) e objeto na mão (d_R)?",
     "options": [
-      "Porque atuam sempre em corpos diferentes e nunca sobre o mesmo corpo.",
-      "Porque têm intensidades diferentes e não se podem subtrair matematicamente.",
-      "Porque ocorrem em momentos temporais diferentes, com um atraso de vários segundos.",
-      "Porque uma é uma grandeza vetorial e a outra é uma grandeza puramente escalar."
+      "d_antebraço+mão = 15 cm (0,15 m); d_E = 8 cm (0,08 m); d_R = 30 cm (0,30 m).",
+      "d_antebraço+mão = 50 cm; d_E = 20 cm; d_R = 10 cm.",
+      "d_antebraço+mão = 1,2 m; d_E = 2,4 m; d_R = 3,6 m.",
+      "d_antebraço+mão = 8 cm; d_E = 30 cm; d_R = 15 cm."
     ],
     "correctIndex": 0,
-    "explanation": "O equilíbrio de um corpo requer que as forças atuem sobre o mesmo corpo. Ação e reação atuam em corpos distintos, logo não se anulam.",
+    "explanation": "O Slide 84 lista explicitamente: 'd antebraço+mão = 15 cm | d E = 8 cm | d R = 30 cm'. Convertidos para metros no SI: 0,15 m, 0,08 m e 0,30 m.",
     "distractorAnalysis": [
-      "Está incorreta: As forças do par ação-reação têm exatamente o mesmo módulo (intensidade).",
-      "Está incorreta: Ação e reação são absolutamente simultâneas; não existe atraso temporal entre elas.",
-      "Está incorreta: Ambas as forças do par são grandezas estritamente vetoriais expressas em Newtons."
+      "Está incorreta: Valores desproporcionados relativamente à anatomia do antebraço humano.",
+      "Está incorreta: 1,2 m, 2,4 m e 3,6 m são as medidas do baloiço do exercício anterior (Slides 78-80).",
+      "Está incorreta: As distâncias foram trocadas entre as diferentes estruturas anatómicas."
     ],
-    "nursingApplication": "Permite entender que a força exercida sobre um objeto é independente das forças que o objeto exerce noutros."
+    "nursingApplication": "Fixa a conversão de unidades de centímetros para metros indispensável para o cálculo em Joules e N·m."
   },
   {
     "id": 1173,
     "topicId": 1,
-    "question": "Durante a marcha humana, ao empurrar o solo para trás com o pé de apoio na fase de impulsão, que componente da força exercida pelo solo projeta o corpo para a frente?",
+    "question": "No Slide 86, qual é o valor calculado para o Momento da Força Resistente do objeto segurado na mão (M_R)?",
     "options": [
-      "A força normal perpendicular de sustentação dirigida verticalmente para o centro da Terra.",
-      "A componente tangencial de atrito estático da Força de Reação do Solo (FRS), orientada horizontalmente para a frente.",
-      "A força gravitacional atrativa exercida pela Lua sobre a musculatura do membro inferior.",
-      "A pressão hidrostática do líquido sinovial que escapa da cápsula articular."
+      "M_R = 30 N·m",
+      "M_R = 2.94 N·m",
+      "M_R = 0,3 N·m",
+      "M_R = 9.8 N·m"
     ],
     "correctIndex": 1,
-    "explanation": "Pela 3ª Lei de Newton, ao exercer uma força tangencial para trás no solo, este reage através do atrito estático com uma força horizontal para a frente (propulsão).",
+    "explanation": "O Slide 86 calcula textualmente: 'M_R = F_R · b_R (=) M_R = (1 × 9.8) × 0.3 (=) M_R = 2.94 N.m'.",
     "distractorAnalysis": [
-      "Está incorreta: A força normal é vertical e atua na sustentação do peso contra a gravidade, não impulsionando horizontalmente para a frente.",
-      "Está incorreta: A gravidade lunar é desprezável na propulsão terrestre da locomoção humana.",
-      "Está incorreta: A pressão sinovial é interna à articulação e não produz propulsão de translação com o solo."
+      "Está incorreta: 30 N·m resultaria de multiplicar 1 por 30 ignorando a gravidade e os centímetros.",
+      "Está incorreta: 0,3 N·m resultaria de multiplicar apenas a massa pelo braço sem aplicar g = 9,8.",
+      "Está incorreta: 9,8 N·m seria o momento se o braço fosse de 1 metro completo em vez de 0,30 m."
     ],
-    "nursingApplication": "Fundamento biomecânico da marcha humana ao caminhar pelos corredores hospitalares."
+    "nursingApplication": "Determinação do momento resistente gerado por uma carga externa de 1 kg segurada na mão."
   },
   {
     "id": 1174,
     "topicId": 1,
-    "question": "A força normal (N) exercida pelo colchão de uma cama sobre uma pessoa deitada é o par de ação-reação do peso dessa pessoa?",
+    "question": "No Slide 87, qual é o valor calculado para o Momento gerado pelo próprio peso anatómico do antebraço+mão?",
     "options": [
-      "Sim, porque são forças com a mesma intensidade e sentidos opostos que atuam na mesma linha de ação.",
-      "Sim, porque toda a força que atua na vertical forma automaticamente um par com a gravidade.",
-      "Não, porque o peso e a força normal atuam sobre o mesmo corpo (a pessoa), enquanto os pares ação-reação atuam em corpos diferentes.",
-      "Não, porque a força normal tem sempre uma intensidade dez vezes superior ao peso corporal."
+      "M_antebraço = 2,5 N·m",
+      "M_antebraço = 36,8 N·m",
+      "M_antebraço = 3.68 N·m (arredondado de 2,5 × 9,8 × 0,15 = 3,675 N·m)",
+      "M_antebraço = 0,375 N·m"
     ],
     "correctIndex": 2,
-    "explanation": "O par de ação-reação do peso (Terra atrai pessoa) é a atração gravitacional que a pessoa exerce sobre a Terra. A normal e o peso atuam ambos na pessoa.",
+    "explanation": "O Slide 87 apresenta: 'M antebraço+mão = F · b (=) M = (2.5 × 9.8) × 0.15 (=) M = 3.68 N.m'.",
     "distractorAnalysis": [
-      "Está incorreta: Ter a mesma intensidade e sentidos opostos é condição de equilíbrio de translação da pessoa, mas não define par ação-reação mútuo.",
-      "Está incorreta: A direção vertical não implica que as forças pertençam ao mesmo par da 3ª Lei.",
-      "Está incorreta: Numa superfície horizontal estática em repouso, a normal tem intensidade igual ao peso (N = P)."
+      "Está incorreta: 2,5 é apenas o valor da massa em kg, sem multiplicar por g nem pelo braço.",
+      "Está incorreta: 36,8 N·m resultaria de um erro de vírgula decimal na conversão de unidades.",
+      "Está incorreta: 0,375 resultaria de ignorar a aceleração da gravidade de 9,8 m/s²."
     ],
-    "nursingApplication": "Conceito físico essencial para o desenho de superfícies de suporte e colchões adequados."
+    "nursingApplication": "Mostra que o próprio peso do membro anatómico contribui com momento resistente significativo."
   },
   {
     "id": 1175,
     "topicId": 1,
-    "question": "Ao exercer-se uma força horizontal de 50 N perpendicularmente contra uma parede rígida, que força exerce a parede sobre as mãos do indivíduo?",
+    "question": "No Slide 88, qual é o Momento Resistente Total obtido pela soma do momento do objeto com o momento do antebraço+mão?",
     "options": [
-      "0 N, porque a parede é fixa e não pode exercer nenhuma força mecânica.",
-      "100 N, porque os materiais rígidos duplicam a força aplicada sobre eles.",
-      "25 N, porque metade da força dissipa-se sob a forma de som nas fundações.",
-      "50 N, orientada perpendicularmente em sentido oposto (para trás contra as mãos)."
+      "M_total = 2,94 N·m",
+      "M_total = 3,68 N·m",
+      "M_total = 10,0 N·m",
+      "M_total = 6.62 N·m (2,94 + 3,68)"
     ],
     "correctIndex": 3,
-    "explanation": "Pela 3ª Lei de Newton, a parede exerce exatamente a mesma força de 50 N em sentido contrário sobre as mãos de quem a empurra.",
+    "explanation": "O Slide 88 efetua a soma dos dois momentos de resistência no mesmo sentido horário: 'M antebraço+mão + M_R = 3.68 + 2.94 = 6.62 N.m'.",
     "distractorAnalysis": [
-      "Está incorreta: Uma superfície estática exerce força de reação de contacto com a mesma intensidade da ação.",
-      "Está incorreta: A rigidez do material não duplica forças; a conservação do par ação-reação mantém intensidade idêntica.",
-      "Está incorreta: Não há redução de força para metade; a força de contacto estático preserva o valor de 50 N."
+      "Está incorreta: 2,94 N·m considera apenas o objeto externo, esquecendo o peso do próprio membro.",
+      "Está incorreta: 3,68 N·m considera apenas o antebraço, esquecendo o objeto transportado na mão.",
+      "Está incorreta: 10,0 N·m não corresponde à soma correta dos valores obtidos."
     ],
-    "nursingApplication": "Ilustra a pressão que as mãos sentem ao empurrar portas pesadas ou estruturas hospitalares."
+    "nursingApplication": "Exemplifica o princípio da sobreposição de momentos na análise biomecânica articular."
   },
   {
     "id": 1176,
     "topicId": 1,
-    "question": "Numa colisão frontal entre uma ambulância de 3000 kg e um carrinho de transporte de 30 kg, como se comparam as intensidades das forças trocadas entre eles no impacto?",
+    "question": "No Slide 89, com o Momento Total resistente de 6,62 N·m e o braço de inserção do bíceps b_E = 8 cm (0,08 m), qual é a Força F_E exercida pelo músculo bíceps em equilíbrio?",
     "options": [
-      "As forças são rigorosamente iguais em intensidade, pois constituem um par de ação-reação da 3ª Lei de Newton.",
-      "A ambulância exerce uma força cem vezes maior sobre o carrinho do que o carrinho sobre a ambulância.",
-      "O carrinho não exerce qualquer força sobre a ambulância por ter massa muito menor.",
-      "A força do carrinho depende apenas da velocidade da ambulância dividida pelo quadrado do tempo."
+      "F_E = 82.75 N",
+      "F_E = 6.62 N",
+      "F_E = 0.53 N",
+      "F_E = 34.3 N"
     ],
     "correctIndex": 0,
-    "explanation": "Pela 3ª Lei de Newton, a intensidade da força que A exerce em B é sempre exatamente igual à que B exerce em A, independentemente das massas.",
+    "explanation": "O Slide 89 conclui o exercício resolvendo a equação de equilíbrio: 'M_E = F_E · b_E (=) 6.62 = F_E × 0.08 (=) F_E = 82.75 N'.",
     "distractorAnalysis": [
-      "Está incorreta: Embora o carrinho sofra uma aceleração muito maior (a = F/m), as forças trocadas têm exatamente o mesmo módulo.",
-      "Está incorreta: Mesmo um corpo de pequena massa exerce uma força de reação de intensidade idêntica à da ação recebida.",
-      "Está incorreta: A força é uma interação mútua simultânea com intensidades estritamente iguais nos dois corpos."
+      "Está incorreta: 6,62 N seria a força se o braço do bíceps medisse 1 metro inteiro.",
+      "Está incorreta: 0,53 N resultaria de multiplicar 6,62 por 0,08 em vez de dividir.",
+      "Está incorreta: 34,3 N é o peso vertical simples das massas combinadas (3,5 kg × 9,8), não a força real do bíceps."
     ],
-    "nursingApplication": "Mostra que corpos de massas diferentes experimentam forças de igual intensidade durante uma colisão mútua."
+    "nursingApplication": "Resultado emblemático dos slides demonstrando a desvantagem mecânica em força do cotovelo."
   },
   {
     "id": 1177,
     "topicId": 1,
-    "question": "Quando uma caixa de soros de 10 kg repousa sobre uma mesa horizontal, que força a caixa exerce sobre a mesa?",
+    "question": "Por que razão a força exercida pelo bíceps (82,75 N) é mais do que o dobro do peso total suportado (~34,3 N das massas de 3,5 kg somadas)?",
     "options": [
-      "Uma força horizontal de atrito cinético com intensidade infinita.",
-      "Uma força de contacto dirigida verticalmente para baixo com intensidade igual a 98 N (o seu peso).",
-      "Nenhuma força, porque a caixa está parada e objetos parados perdem a capacidade de exercer força.",
-      "Uma força ascensional de 980 N direcionada para o teto da sala."
+      "Porque o músculo bíceps tem uma constante de Hooke deficiente.",
+      "Porque o bíceps tem um braço de alavanca muito curto (apenas 8 cm), enquanto as forças resistentes atuam a 15 cm e 30 cm do cotovelo.",
+      "Porque a 3ª Lei de Newton duplica todas as forças nos membros superiores.",
+      "Porque o antebraço opera em gravidade zero flutuando no espaço."
     ],
     "correctIndex": 1,
-    "explanation": "A caixa pressiona a mesa com uma força de contacto descendente de intensidade igual ao seu peso (P = 10 kg · 9,8 m/s² = 98 N).",
+    "explanation": "Como a inserção tendinosa do bíceps se localiza muito perto da articulação (8 cm), o seu braço é muito mais curto que os braços das resistências (15 cm e 30 cm). Para gerar o mesmo momento de rotação, é forçado a produzir uma força substancialmente maior.",
     "distractorAnalysis": [
-      "Está incorreta: A caixa está em repouso estático, logo não há atrito cinético em movimento horizontal.",
-      "Está incorreta: Mesmo em repouso, a gravidade atua sobre a massa da caixa, fazendo-a exercer força de compressão sobre o apoio.",
-      "Está incorreta: A força exercida pela caixa sobre a mesa é descendente (para baixo), não ascensional."
+      "Está incorreta: A constante de Hooke mede rigidez elástica e não determina a relação de braços de alavanca rígida.",
+      "Está incorreta: A 3ª Lei estabelece igualdade mútua de pares ação-reação, não duplica forças ativas.",
+      "Está incorreta: O cálculo foi feito com a gravidade normal da Terra (g = 9,8 m/s²)."
     ],
-    "nursingApplication": "Permite dimensionar prateleiras e suportes hospitalares em função da carga que sustentam."
+    "nursingApplication": "Permite ao futuro enfermeiro compreender a sobrecarga articular e tendinosa provocada por cargas que parecem leves na mão."
   },
   {
     "id": 1178,
     "topicId": 1,
-    "question": "Qual das seguintes afirmações sobre a 3ª Lei de Newton é cientificamente VERDADEIRA?",
+    "question": "Qual é a equação geral de equilíbrio do sistema de forças do cotovelo apresentada formalmente no Slide 85?",
     "options": [
-      "A força de ação ocorre primeiro e a força de reação surge sempre com meio segundo de atraso.",
-      "A 3ª Lei de Newton só se aplica a corpos que se encontrem em queda livre no vácuo.",
-      "A força de ação e a força de reação ocorrem rigorosamente ao mesmo tempo (são instantâneas e simultâneas).",
-      "As forças do par ação-reação cancelam-se mutuamente na 2ª Lei de Newton de um corpo isolado."
+      "F_objeto + F_antebraço = F_E",
+      "F_E · d_R = F_objeto · d_E",
+      "Em equilíbrio: (F_objeto · d_R) + (F_antebraço+mão · d_antebraço) = F_E · b_E",
+      "F_E = m · g · a"
     ],
     "correctIndex": 2,
-    "explanation": "Ação e reação são simultâneas: nenhuma antecede a outra no tempo da interação física.",
+    "explanation": "O Slide 85 esquematiza: 'Em equilíbrio: F_P · b_P = F_r · b_r; Nesta situação: (F objeto · d_R) + (F antebraço+mão · d_E) = F_E · b_E'.",
     "distractorAnalysis": [
-      "Está incorreta: Não existe atraso temporal; a interação de contacto é rigorosamente simultânea.",
-      "Está incorreta: A 3ª Lei aplica-se a todas as interações de contacto e de campo da física clássica.",
-      "Está incorreta: Apenas forças que atuam no mesmo corpo se podem cancelar; ação e reação atuam em corpos diferentes."
+      "Está incorreta: Ignorar os braços de momento viola frontalmente a Lei das Alavancas de Arquimedes.",
+      "Está incorreta: Os braços anatómicos associados a cada força estão incorretamente atribuídos nesta opção.",
+      "Está incorreta: Mistura a 2ª Lei de Newton com a fórmula do peso sem relação com o equilíbrio de momentos."
     ],
-    "nursingApplication": "Reconhecer a simultaneidade das forças apoia a compreensão da dinâmica do movimento e transferências."
+    "nursingApplication": "Modelo matemático canónico da biomecânica da flexão do cotovelo."
   },
   {
     "id": 1179,
     "topicId": 1,
-    "question": "Como se define um sistema de 'Forças Concorrentes' na estática dos corpos materiais?",
+    "question": "Se a massa do objeto segurado na mão passasse de 1 kg para 3 kg (triplicando), o que aconteceria ao esforço exigido ao bíceps?",
     "options": [
-      "Um sistema de forças que atuam exclusivamente em linhas retas estritamente paralelas que nunca se cruzam.",
-      "Um conjunto de forças que atuam em dias diferentes da semana sobre corpos independentes.",
-      "Forças que anulam a temperatura absoluta de qualquer material condutor elétrico.",
-      "Um sistema de forças cujas linhas de ação se intersetam todas num mesmo ponto comum no espaço."
+      "Permaneceria em 82,75 N porque o músculo tem força constante.",
+      "Diminuiria porque o peso da mão ajuda a equilibrar o membro.",
+      "Anular-se-ia provocando luxação automática da articulação do cúbito.",
+      "Aumentaria substancialmente, pois o momento resistente do objeto triplicaria de 2,94 para 8,82 N·m, exigindo uma força muscular muito maior."
     ],
     "correctIndex": 3,
-    "explanation": "Forças concorrentes têm retas de suporte que convergem ou divergem a partir de um único ponto comum.",
+    "explanation": "Com o objeto a pesar 3 kg, M_objeto = (3 × 9,8) × 0,3 = 8,82 N·m. Somando aos 3,68 N·m do antebraço dá 12,50 N·m. A força do bíceps passaria para 12,50 / 0,08 = 156,25 N.",
     "distractorAnalysis": [
-      "Está incorreta: Forças com retas paralelas que não se cruzam são forças paralelas, não concorrentes.",
-      "Está incorreta: O conceito refere-se à geometria espacial das retas de ação de forças simultâneas.",
-      "Está incorreta: Forças mecânicas da estática não anulam temperaturas térmicas de materiais."
+      "Está incorreta: O músculo tem de aumentar a sua força de contração ativa para manter o membro na horizontal.",
+      "Está incorreta: O peso atua no mesmo sentido descendente, sobrecarregando ainda mais o bíceps.",
+      "Está incorreta: A luxação só ocorre em trauma mecânico extremo que rompa os ligamentos articulares."
     ],
-    "nursingApplication": "Exemplo das linhas de tração exercidas por múltiplos feixes musculares convergentes num mesmo tendão de inserção."
+    "nursingApplication": "Explica por que carregar materiais pesados na mão em flexão do cotovelo causa fadiga precoce e dor muscular."
   },
   {
     "id": 1180,
     "topicId": 1,
-    "question": "Duas forças concorrentes perpendiculares entre si, com intensidades de 30 N e 40 N, atuam sobre o mesmo ponto material. Qual é a intensidade da força resultante?",
+    "question": "Que conclusão geral de Biofísica se extrai do exercício dos Slides 84 a 89 sobre as alavancas do corpo humano?",
     "options": [
-      "50 N, calculada pela regra do paralelogramo através do Teorema de Pitágoras.",
-      "70 N, obtida pela simples soma escalar aritmética direta das duas intensidades.",
-      "10 N, obtida pela subtração direta das duas forças como se fossem colineares opostas.",
-      "1200 N, obtida pela multiplicação direta das intensidades no plano."
+      "O sistema osteomuscular opera frequentemente em desvantagem mecânica de força, exigindo forças musculares internas muito elevadas para sustentar cargas modestas.",
+      "Os ossos humanos são alavancas perfeitas onde nunca é necessário fazer força superior a 5 N.",
+      "O bíceps humano não obedece às leis da física clássica descritas por Arquimedes e Newton.",
+      "O antebraço é uma alavanca interfixa onde o cotovelo se situa na ponta dos dedos da mão."
     ],
     "correctIndex": 0,
-    "explanation": "Como as forças são perpendiculares (θ = 90°), Fr = √(F1² + F2²) = √(30² + 40²) = √(900 + 1600) = √2500 = 50 N.",
+    "explanation": "A maioria das alavancas motoras do corpo humano são interpotentes (3ª classe): conferem enorme amplitude e rapidez de movimento distal, mas à custa de grandes tensões mecânicas geradas pelas fibras musculares e tendões.",
     "distractorAnalysis": [
-      "Está incorreta: A soma aritmética direta (30 + 40 = 70 N) só é válida para forças colineares com o mesmo sentido.",
-      "Está incorreta: A subtração (40 - 30 = 10 N) só é válida para forças colineares com sentidos opostos.",
-      "Está incorreta: Multiplicar as forças não fornece a resultante vetorial de forças concorrentes."
+      "Está incorreta: As forças musculares internas ultrapassam frequentemente centenas ou milhares de Newtons no dia a dia.",
+      "Está incorreta: O corpo humano é um sistema físico biológico que obedece estritamente a todas as leis da mecânica clássica.",
+      "Está incorreta: O cotovelo é a articulação proximal entre braço e antebraço, não a ponta dos dedos."
     ],
-    "nursingApplication": "Fundamental para calcular a tração resultante em sistemas de suspensão ortopédica e tração esquelética."
+    "nursingApplication": "Síntese final integradora da mecânica de alavancas aplicada à fisiologia do movimento humano."
   },
   {
     "id": 1181,
     "topicId": 1,
-    "question": "Qual é o princípio fundamental expresso pela 3ª Lei de Newton?",
+    "question": "Qual é a definição exata de Centro de Gravidade (CG) apresentada no Slide 91 de Biofísica?",
     "options": [
-      "A força de reação é sempre aplicada no mesmo corpo que a ação, anulando imediatamente todo o movimento.",
-      "Sempre que um corpo A exerce uma força sobre um corpo B, o corpo B exerce simultaneamente sobre o corpo A uma força de igual intensidade e direção, mas em sentido oposto.",
-      "A força de ação tem sempre o dobro da intensidade da força de reação em qualquer colisão física.",
-      "As forças de reação só existem quando os corpos se movem com velocidade superior à da luz no vácuo."
+      "Ponto anatómico onde se mede a tensão arterial sistólica.",
+      "Ponto imaginário onde se considera concentrada toda a massa e onde atua a resultante de todas as forças gravíticas do corpo.",
+      "Área geométrica de contacto entre a sola do calçado e o solo da enfermaria.",
+      "Linha imaginária que divide o corpo humano em hemisfério direito e esquerdo."
     ],
     "correctIndex": 1,
-    "explanation": "A 3ª Lei estabelece o par ação-reação (F_A->B = -F_B->A): intensidades iguais, sentidos opostos, atuando em corpos distintos.",
+    "explanation": "O Slide 91 define expressamente: 'Centro de gravidade: Ponto imaginário onde se considera concentrada toda a massa e onde atua a resultante de todas as forças gravíticas do corpo'.",
     "distractorAnalysis": [
-      "Está incorreta: Ação e reação atuam em corpos diferentes; se atuassem no mesmo corpo, anulariam o movimento do corpo.",
-      "Está incorreta: As forças do par têm rigorosamente a mesma intensidade matemática, nunca intensidade dupla.",
-      "Está incorreta: A 3ª Lei aplica-se a todas as interações da mecânica clássica a qualquer velocidade."
+      "Está incorreta: A tensão arterial mede-se na artéria braquial, não tendo relação com o centro de gravidade mecânico.",
+      "Está incorreta: A área de contacto com o solo é a definição de Base de Sustentação (Slide 94).",
+      "Está incorreta: A linha que divide o corpo em metades é o plano sagital mediano da anatomia."
     ],
-    "nursingApplication": "Ao empurrar uma maca para a frente, as rodas e o solo exercem força de reação nos pés do operador."
+    "nursingApplication": "Conceito primordial para a avaliação do equilíbrio postural e risco de queda em geriatria."
   },
   {
     "id": 1182,
     "topicId": 1,
-    "question": "Porque é que as forças do par ação-reação NUNCA se anulam mutuamente?",
+    "question": "Onde se localiza o Centro de Gravidade num corpo humano adulto em posição anatómica ereta de acordo com os Slides 92 e 96?",
     "options": [
-      "Porque têm intensidades diferentes e não se podem subtrair matematicamente.",
-      "Porque ocorrem em momentos temporais diferentes, com um atraso de vários segundos.",
-      "Porque atuam sempre em corpos diferentes e nunca sobre o mesmo corpo.",
-      "Porque uma é uma grandeza vetorial e a outra é uma grandeza puramente escalar."
+      "Na 7ª vértebra cervical (C7) junto à base do pescoço.",
+      "No centro da cavidade craniana entre os hemisférios cerebrais.",
+      "Na linha média anterior à 2ª vértebra sagrada (S2).",
+      "Na articulação do joelho ao nível dos meniscos."
     ],
     "correctIndex": 2,
-    "explanation": "O equilíbrio de um corpo requer que as forças atuem sobre o mesmo corpo. Ação e reação atuam em corpos distintos, logo não se anulam.",
+    "explanation": "Os Slides 92 e 96 estipulam textualmente: 'Localização: Em posição anatómica ereta, situa-se na linha média anterior à 2ª vértebra sagrada (S2)'.",
     "distractorAnalysis": [
-      "Está incorreta: As forças do par ação-reação têm exatamente o mesmo módulo (intensidade).",
-      "Está incorreta: Ação e reação são absolutamente simultâneas; não existe atraso temporal entre elas.",
-      "Está incorreta: Ambas as forças do par são grandezas estritamente vetoriais expressas em Newtons."
+      "Está incorreta: C7 localiza-se na transição cérvico-dorsal, muito acima do CG corporal total.",
+      "Está incorreta: No crânio situa-se apenas o CG da cabeça isolada, não do corpo humano completo.",
+      "Está incorreta: O joelho está muito abaixo do CG, que se situa na região pélvica."
     ],
-    "nursingApplication": "Permite entender que a força exercida sobre um objeto é independente das forças que o objeto exerce noutros."
+    "nursingApplication": "Referência anatómica fundamental para orientar o posicionamento do tronco em transferências assistidas."
   },
   {
     "id": 1183,
     "topicId": 1,
-    "question": "Durante a marcha humana, ao empurrar o solo para trás com o pé de apoio na fase de impulsão, que componente da força exercida pelo solo projeta o corpo para a frente?",
+    "question": "O que acontece à localização do Centro de Gravidade durante o movimento do corpo humano de acordo com o Slide 93?",
     "options": [
-      "A força normal perpendicular de sustentação dirigida verticalmente para o centro da Terra.",
-      "A força gravitacional atrativa exercida pela Lua sobre a musculatura do membro inferior.",
-      "A pressão hidrostática do líquido sinovial que escapa da cápsula articular.",
-      "A componente tangencial de atrito estático da Força de Reação do Solo (FRS), orientada horizontalmente para a frente."
+      "Permanece imóvel e soldado à 2ª vértebra sagrada mesmo que a pessoa salte ou corra.",
+      "Desaparece completamente durante a marcha.",
+      "Passa a situar-se fora da atmosfera terrestre.",
+      "Desloca-se com o movimento (por exemplo, sobe ao elevar os braços e avança ao inclinar o tronco)."
     ],
     "correctIndex": 3,
-    "explanation": "Pela 3ª Lei de Newton, ao exercer uma força tangencial para trás no solo, este reage através do atrito estático com uma força horizontal para a frente (propulsão).",
+    "explanation": "O Slide 93 define o princípio da Mobilidade do CG: 'O centro de gravidade desloca-se com o movimento (por exemplo, sobe ao elevar os braços e avança ao inclinar o tronco)'.",
     "distractorAnalysis": [
-      "Está incorreta: A força normal é vertical e atua na sustentação do peso contra a gravidade, não impulsionando horizontalmente para a frente.",
-      "Está incorreta: A gravidade lunar é desprezável na propulsão terrestre da locomoção humana.",
-      "Está incorreta: A pressão sinovial é interna à articulação e não produz propulsão de translação com o solo."
+      "Está incorreta: O CG não é um ponto ósseo fixo, mas sim o centro de massa ponderado que se move com a distribuição dos segmentos corporais.",
+      "Está incorreta: O CG existe sempre que há massa sujeita a campo gravítico.",
+      "Está incorreta: O CG localiza-se sempre no próprio corpo ou na sua vizinhança geométrica imediata."
     ],
-    "nursingApplication": "Fundamento biomecânico da marcha humana ao caminhar pelos corredores hospitalares."
+    "nursingApplication": "Permite antecipar como gestos simples (como esticar os braços para alcançar um objeto) alteram o equilíbrio do doente."
   },
   {
     "id": 1184,
     "topicId": 1,
-    "question": "A força normal (N) exercida pelo colchão de uma cama sobre uma pessoa deitada é o par de ação-reação do peso dessa pessoa?",
+    "question": "Qual é a definição exata de 'Base de sustentação' apresentada no Slide 94 de Biofísica?",
     "options": [
-      "Não, porque o peso e a força normal atuam sobre o mesmo corpo (a pessoa), enquanto os pares ação-reação atuam em corpos diferentes.",
-      "Sim, porque são forças com a mesma intensidade e sentidos opostos que atuam na mesma linha de ação.",
-      "Sim, porque toda a força que atua na vertical forma automaticamente um par com a gravidade.",
-      "Não, porque a força normal tem sempre uma intensidade dez vezes superior ao peso corporal."
+      "Área geométrica delimitada por todos os pontos de contacto de um corpo com a superfície que o suporta.",
+      "A altura em metros medida desde o chão até à 2ª vértebra sagrada.",
+      "A velocidade terminal de queda de um corpo no vácuo.",
+      "O momento de força exercido pelo bíceps sobre a tuberosidade do rádio."
     ],
     "correctIndex": 0,
-    "explanation": "O par de ação-reação do peso (Terra atrai pessoa) é a atração gravitacional que a pessoa exerce sobre a Terra. A normal e o peso atuam ambos na pessoa.",
+    "explanation": "O Slide 94 define: 'Base de sustentação: Área geométrica delimitada por todos os pontos de contacto de um corpo com a superfície que o suporta'.",
     "distractorAnalysis": [
-      "Está incorreta: Ter a mesma intensidade e sentidos opostos é condição de equilíbrio de translação da pessoa, mas não define par ação-reação mútuo.",
-      "Está incorreta: A direção vertical não implica que as forças pertençam ao mesmo par da 3ª Lei.",
-      "Está incorreta: Numa superfície horizontal estática em repouso, a normal tem intensidade igual ao peso (N = P)."
+      "Está incorreta: A distância do chão à vértebra é a altura do centro de gravidade, não a área da base.",
+      "Está incorreta: Velocidade terminal pertence à hidrodinâmica/aerodinâmica de fluidos.",
+      "Está incorreta: Momento do bíceps é o torque muscular de flexão do cotovelo (Slide 89)."
     ],
-    "nursingApplication": "Conceito físico essencial para o desenho de superfícies de suporte e colchões adequados."
+    "nursingApplication": "Compreensão essencial para orientar o doente a alargar os pés para não cair durante o treino de marcha."
   },
   {
     "id": 1185,
     "topicId": 1,
-    "question": "Ao exercer-se uma força horizontal de 50 N perpendicularmente contra uma parede rígida, que força exerce a parede sobre as mãos do indivíduo?",
+    "question": "Como difere o Centro de Gravidade de uma criança pequena comparativamente ao do adulto de acordo com os Slides 95 a 99?",
     "options": [
-      "0 N, porque a parede é fixa e não pode exercer nenhuma força mecânica.",
-      "50 N, orientada perpendicularmente em sentido oposto (para trás contra as mãos).",
-      "100 N, porque os materiais rígidos duplicam a força aplicada sobre eles.",
-      "25 N, porque metade da força dissipa-se sob a forma de som nas fundações."
+      "Na criança pequena situa-se nos calcanhares e no adulto no pescoço.",
+      "Na criança pequena situa-se mais alto, no interior do abdómen e no tórax, enquanto no adulto se situa em S2.",
+      "É rigorosamente idêntico em todas as idades sem qualquer variação anatómica.",
+      "A criança pequena não possui centro de gravidade até aos 18 anos de idade."
     ],
     "correctIndex": 1,
-    "explanation": "Pela 3ª Lei de Newton, a parede exerce exatamente a mesma força de 50 N em sentido contrário sobre as mãos de quem a empurra.",
+    "explanation": "Os Slides 96 a 99 mostram a transição: no adulto situa-se na 2ª vértebra sagrada; na criança e no bebé localiza-se no 'interior do abdómen' e no 'tórax', situando-se proporcionalmente mais elevado.",
     "distractorAnalysis": [
-      "Está incorreta: Uma superfície estática exerce força de reação de contacto com a mesma intensidade da ação.",
-      "Está incorreta: A rigidez do material não duplica forças; a conservação do par ação-reação mantém intensidade idêntica.",
-      "Está incorreta: Não há redução de força para metade; a força de contacto estático preserva o valor de 50 N."
+      "Está incorreta: O CG da criança é mais alto, nunca nos calcanhares.",
+      "Está incorreta: As proporções corporais variam dramaticamente com o desenvolvimento e crescimento esquelético.",
+      "Está incorreta: Qualquer corpo dotado de massa possui centro de gravidade desde o nascimento."
     ],
-    "nursingApplication": "Ilustra a pressão que as mãos sentem ao empurrar portas pesadas ou estruturas hospitalares."
+    "nursingApplication": "Explica por que os bebés e crianças pequenas perdem o equilíbrio com facilidade e sofrem quedas frequentes com impacto cefálico."
   },
   {
     "id": 1186,
     "topicId": 1,
-    "question": "Numa colisão frontal entre uma ambulância de 3000 kg e um carrinho de transporte de 30 kg, como se comparam as intensidades das forças trocadas entre eles no impacto?",
+    "question": "Por que razão o Centro de Gravidade nas crianças pequenas e bebés se situa mais acima (no abdómen/tórax)?",
     "options": [
-      "A ambulância exerce uma força cem vezes maior sobre o carrinho do que o carrinho sobre a ambulância.",
-      "O carrinho não exerce qualquer força sobre a ambulância por ter massa muito menor.",
-      "As forças são rigorosamente iguais em intensidade, pois constituem um par de ação-reação da 3ª Lei de Newton.",
-      "A força do carrinho depende apenas da velocidade da ambulância dividida pelo quadrado do tempo."
+      "Porque a densidade óssea dos membros inferiores das crianças é cinco vezes maior que a dos adultos.",
+      "Porque as crianças usam calçado de borracha com coeficiente de atrito nulo.",
+      "Porque a cabeça e a metade superior do tronco representam uma proporção muito maior da massa corporal total na criança do que no adulto.",
+      "Porque o coração infantil bate com maior frequência cardíaca empurrando o sangue para cima."
     ],
     "correctIndex": 2,
-    "explanation": "Pela 3ª Lei de Newton, a intensidade da força que A exerce em B é sempre exatamente igual à que B exerce em A, independentemente das massas.",
+    "explanation": "Nas crianças, a cabeça e o tronco superior são desproporcionalmente volumosos e pesados em comparação com os membros inferiores curtos. Como o CG é a média ponderada das massas, ele desloca-se para o tórax/abdómen.",
     "distractorAnalysis": [
-      "Está incorreta: Embora o carrinho sofra uma aceleração muito maior (a = F/m), as forças trocadas têm exatamente o mesmo módulo.",
-      "Está incorreta: Mesmo um corpo de pequena massa exerce uma força de reação de intensidade idêntica à da ação recebida.",
-      "Está incorreta: A força é uma interação mútua simultânea com intensidades estritamente iguais nos dois corpos."
+      "Está incorreta: A densidade mineral óssea das crianças é menor que a dos adultos, não cinco vezes maior.",
+      "Está incorreta: O calçado não altera a distribuição anatómica das massas dos segmentos do corpo.",
+      "Está incorreta: A frequência cardíaca altera o débito cardíaco, mas não desloca o centro de massa gravitacional estático."
     ],
-    "nursingApplication": "Mostra que corpos de massas diferentes experimentam forças de igual intensidade durante uma colisão mútua."
+    "nursingApplication": "Importante para a enfermagem pediátrica na adaptação de grades de berços e prevenção de acidentes infantis."
   },
   {
     "id": 1187,
     "topicId": 1,
-    "question": "Quando uma caixa de soros de 10 kg repousa sobre uma mesa horizontal, que força a caixa exerce sobre a mesa?",
+    "question": "Quando um enfermeiro eleva os dois braços acima da cabeça para retirar um frasco de soro de uma prateleira alta, o que acontece ao seu Centro de Gravidade (Slide 93)?",
     "options": [
-      "Uma força horizontal de atrito cinético com intensidade infinita.",
-      "Nenhuma força, porque a caixa está parada e objetos parados perdem a capacidade de exercer força.",
-      "Uma força ascensional de 980 N direcionada para o teto da sala.",
-      "Uma força de contacto dirigida verticalmente para baixo com intensidade igual a 98 N (o seu peso)."
+      "Desloca-se para a sola dos sapatos aumentando a estabilidade.",
+      "Desloca-se 1 metro para trás saindo do corpo.",
+      "Permanece rigorosamente inerte na 2ª vértebra sagrada.",
+      "O centro de gravidade sobe em direção ao tórax, tornando a postura temporariamente mais instável."
     ],
     "correctIndex": 3,
-    "explanation": "A caixa pressiona a mesa com uma força de contacto descendente de intensidade igual ao seu peso (P = 10 kg · 9,8 m/s² = 98 N).",
+    "explanation": "O Slide 93 indica claramente: 'sobe ao elevar os braços'. Elevar os membros superiores desloca massa para cima, subindo o CG e aumentando a distância até à base de sustentação, o que reduz a estabilidade postural.",
     "distractorAnalysis": [
-      "Está incorreta: A caixa está em repouso estático, logo não há atrito cinético em movimento horizontal.",
-      "Está incorreta: Mesmo em repouso, a gravidade atua sobre a massa da caixa, fazendo-a exercer força de compressão sobre o apoio.",
-      "Está incorreta: A força exercida pela caixa sobre a mesa é descendente (para baixo), não ascensional."
+      "Está incorreta: O CG sobe ao elevar massa para cima, nunca desce para os sapatos.",
+      "Está incorreta: Elevar os braços verticalmente sobe o CG ao longo da linha média vertical, sem projetá-lo 1 metro para trás.",
+      "Está incorreta: O CG desloca-se com qualquer movimento segmentar corporal (princípio da mobilidade)."
     ],
-    "nursingApplication": "Permite dimensionar prateleiras e suportes hospitalares em função da carga que sustentam."
+    "nursingApplication": "Alerta ergonómico: evitar prateleiras excessivamente altas que forcem posturas instáveis com os braços esticados."
   },
   {
     "id": 1188,
     "topicId": 1,
-    "question": "Qual das seguintes afirmações sobre a 3ª Lei de Newton é cientificamente VERDADEIRA?",
+    "question": "Quando uma pessoa inclina o tronco para a frente ao tentar apanhar algo no chão (Slide 93):",
     "options": [
-      "A força de ação e a força de reação ocorrem rigorosamente ao mesmo tempo (são instantâneas e simultâneas).",
-      "A força de ação ocorre primeiro e a força de reação surge sempre com meio segundo de atraso.",
-      "A 3ª Lei de Newton só se aplica a corpos que se encontrem em queda livre no vácuo.",
-      "As forças do par ação-reação cancelam-se mutuamente na 2ª Lei de Newton de um corpo isolado."
+      "O centro de gravidade avança anteriormente, aproximando a linha de gravidade do bordo anterior da base de sustentação.",
+      "O centro de gravidade recua para os calcanhares garantindo máxima segurança contra quedas.",
+      "A base de sustentação multiplica-se espontaneamente por dez.",
+      "O peso do corpo anula-se até o tronco voltar à vertical."
     ],
     "correctIndex": 0,
-    "explanation": "Ação e reação são simultâneas: nenhuma antecede a outra no tempo da interação física.",
+    "explanation": "O Slide 93 refere explicitamente: 'avança ao inclinar o tronco'. A projeção vertical do CG (Linha de Gravidade) aproxima-se dos dedos dos pés; se ultrapassar os limites da base, o indivíduo desequilibra-se e cai para a frente.",
     "distractorAnalysis": [
-      "Está incorreta: Não existe atraso temporal; a interação de contacto é rigorosamente simultânea.",
-      "Está incorreta: A 3ª Lei aplica-se a todas as interações de contacto e de campo da física clássica.",
-      "Está incorreta: Apenas forças que atuam no mesmo corpo se podem cancelar; ação e reação atuam em corpos diferentes."
+      "Está incorreta: Ao inclinar para a frente, o CG projeta-se para a frente, não para trás nos calcanhares.",
+      "Está incorreta: A base de sustentação permanece inalterada se os pés continuarem no mesmo sítio do solo.",
+      "Está incorreta: O peso gravitacional mantém-se atuante e gera momento de tombamento se a linha de gravidade sair da base."
     ],
-    "nursingApplication": "Reconhecer a simultaneidade das forças apoia a compreensão da dinâmica do movimento e transferências."
+    "nursingApplication": "Explica por que os idosos com tonturas caem frequentemente para a frente ao inclinarem o tronco sem apoio."
   },
   {
     "id": 1189,
     "topicId": 1,
-    "question": "Como se define um sistema de 'Forças Concorrentes' na estática dos corpos materiais?",
+    "question": "Se um doente passar da posição bipodal (dois pés apoiados no chão) para a posição unipodal (apoiado apenas num pé), o que acontece à sua base de sustentação?",
     "options": [
-      "Um sistema de forças que atuam exclusivamente em linhas retas estritamente paralelas que nunca se cruzam.",
-      "Um sistema de forças cujas linhas de ação se intersetam todas num mesmo ponto comum no espaço.",
-      "Um conjunto de forças que atuam em dias diferentes da semana sobre corpos independentes.",
-      "Forças que anulam a temperatura absoluta de qualquer material condutor elétrico."
+      "Aumenta para o dobro da área anterior.",
+      "Reduz-se drasticamente apenas à pequena área de contacto da sola desse único pé, aumentando exponencialmente o risco de instabilidade.",
+      "Permanece rigorosamente com o mesmo tamanho e geometria.",
+      "Passa a englobar a área total do quarto de internamento."
     ],
     "correctIndex": 1,
-    "explanation": "Forças concorrentes têm retas de suporte que convergem ou divergem a partir de um único ponto comum.",
+    "explanation": "A base bipodal inclui os dois pés e todo o espaço entre eles. No apoio unipodal, a base reduz-se apenas à sola de um pé (Slide 102: 'Condição de instabilidade: pés juntos ou num só pé'). Qualquer ligeira oscilação projeta a linha de gravidade para fora da base, causando queda.",
     "distractorAnalysis": [
-      "Está incorreta: Forças com retas paralelas que não se cruzam são forças paralelas, não concorrentes.",
-      "Está incorreta: O conceito refere-se à geometria espacial das retas de ação de forças simultâneas.",
-      "Está incorreta: Forças mecânicas da estática não anulam temperaturas térmicas de materiais."
+      "Está incorreta: Apoiar em menos pontos reduz a área de sustentação, nunca a duplica.",
+      "Está incorreta: A área entre os pés deixa de fazer parte da base de suporte quando um pé é levantado.",
+      "Está incorreta: A base limita-se estritamente aos pontos de contacto físico com o solo (Slide 94)."
     ],
-    "nursingApplication": "Exemplo das linhas de tração exercidas por múltiplos feixes musculares convergentes num mesmo tendão de inserção."
+    "nursingApplication": "Alerta de segurança ao ajudar doentes a calçar sapatos ou vestir calças: nunca fazê-lo de pé num só pé."
   },
   {
     "id": 1190,
     "topicId": 1,
-    "question": "Duas forças concorrentes perpendiculares entre si, com intensidades de 30 N e 40 N, atuam sobre o mesmo ponto material. Qual é a intensidade da força resultante?",
+    "question": "Qual é a condição geométrica fundamental para que o corpo humano permaneça em equilíbrio estático estável sem tombar?",
     "options": [
-      "70 N, obtida pela simples soma escalar aritmética direta das duas intensidades.",
-      "10 N, obtida pela subtração direta das duas forças como se fossem colineares opostas.",
-      "50 N, calculada pela regra do paralelogramo através do Teorema de Pitágoras.",
-      "1200 N, obtida pela multiplicação direta das intensidades no plano."
+      "Que a cabeça esteja posicionada a uma altitude superior a 2000 metros.",
+      "Que a força potente exercida pelo quadríceps seja rigorosamente igual a zero Newtons.",
+      "Que a Linha de Gravidade (projeção vertical do centro de gravidade) permaneça no interior da área delimitada pela base de sustentação.",
+      "Que o atrito com o piso seja igual à pressão capilar do sacro."
     ],
     "correctIndex": 2,
-    "explanation": "Como as forças são perpendiculares (θ = 90°), Fr = √(F1² + F2²) = √(30² + 40²) = √(900 + 1600) = √2500 = 50 N.",
+    "explanation": "A estabilidade estática depende de a linha de gravidade passar por dentro do polígono de apoio (base de sustentação). Se sair para fora das margens da base, o peso gera momento de rotação que derruba o corpo.",
     "distractorAnalysis": [
-      "Está incorreta: A soma aritmética direta (30 + 40 = 70 N) só é válida para forças colineares com o mesmo sentido.",
-      "Está incorreta: A subtração (40 - 30 = 10 N) só é válida para forças colineares com sentidos opostos.",
-      "Está incorreta: Multiplicar as forças não fornece a resultante vetorial de forças concorrentes."
+      "Está incorreta: Altitude não afeta as condições geométricas de estabilidade postural estática.",
+      "Está incorreta: Os músculos extensores antigravíticos (como quadríceps) mantêm tónus ativo para sustentar a postura ereta.",
+      "Está incorreta: Atrito e pressão capilar têm naturezas e localizações distintas, não se relacionando nesta condição geométrica."
     ],
-    "nursingApplication": "Fundamental para calcular a tração resultante em sistemas de suspensão ortopédica e tração esquelética."
+    "nursingApplication": "Pilar científico da prevenção de quedas e treino de equilíbrio em contexto hospitalar e comunitário."
   },
   {
     "id": 1191,
     "topicId": 1,
-    "question": "Qual é o princípio fundamental expresso pela 3ª Lei de Newton?",
+    "question": "Na tabela de estabilidade biomecânica (Slide 101), para o fator 'Altura do centro de gravidade (CG)', qual é a condição de alta estabilidade e a intervenção recomendada?",
     "options": [
-      "A força de reação é sempre aplicada no mesmo corpo que a ação, anulando imediatamente todo o movimento.",
-      "A força de ação tem sempre o dobro da intensidade da força de reação em qualquer colisão física.",
-      "As forças de reação só existem quando os corpos se movem com velocidade superior à da luz no vácuo.",
-      "Sempre que um corpo A exerce uma força sobre um corpo B, o corpo B exerce simultaneamente sobre o corpo A uma força de igual intensidade e direção, mas em sentido oposto."
+      "Condição: Mais alto (pontas dos pés); Intervenção: Manter o tronco esticado e rígido.",
+      "Condição: CG no pescoço; Intervenção: Elevar a cama hospitalar até ao teto.",
+      "Condição: CG nulo; Intervenção: Não tocar no doente.",
+      "Condição: Mais baixo (joelhos e ancas ligeiramente fletidos); Intervenção: Fletir os joelhos ao realizar esforço ou mobilização."
     ],
     "correctIndex": 3,
-    "explanation": "A 3ª Lei estabelece o par ação-reação (F_A->B = -F_B->A): intensidades iguais, sentidos opostos, atuando em corpos distintos.",
+    "explanation": "O Slide 101 especifica: Fator: Altura do CG | Alta estabilidade: Mais baixo (joelhos e ancas ligeiramente fletidos) | Instabilidade: Mais alto (pontas dos pés ou tronco esticado) | Intervenção: Fletir os joelhos ao realizar esforço ou mobilização.",
     "distractorAnalysis": [
-      "Está incorreta: Ação e reação atuam em corpos diferentes; se atuassem no mesmo corpo, anulariam o movimento do corpo.",
-      "Está incorreta: As forças do par têm rigorosamente a mesma intensidade matemática, nunca intensidade dupla.",
-      "Está incorreta: A 3ª Lei aplica-se a todas as interações da mecânica clássica a qualquer velocidade."
+      "Está incorreta: Estar nas pontas dos pés eleva o CG e é a condição de instabilidade com elevado risco de queda.",
+      "Está incorreta: Elevar o CG desestabiliza a postura e a altura da cama deve ajustar-se à cintura do profissional.",
+      "Está incorreta: O CG nunca é nulo num corpo com massa biológica."
     ],
-    "nursingApplication": "Ao empurrar uma maca para a frente, as rodas e o solo exercem força de reação nos pés do operador."
+    "nursingApplication": "Regra biomecânica de ouro para a postura dos enfermeiros durante a prestação de cuidados no leito."
   },
   {
     "id": 1192,
     "topicId": 1,
-    "question": "Porque é que as forças do par ação-reação NUNCA se anulam mutuamente?",
+    "question": "Na tabela de estabilidade biomecânica (Slide 102), qual é a recomendação para o 'Tamanho da base de sustentação (BS)' em situação de alta estabilidade?",
     "options": [
-      "Porque atuam sempre em corpos diferentes e nunca sobre o mesmo corpo.",
-      "Porque têm intensidades diferentes e não se podem subtrair matematicamente.",
-      "Porque ocorrem em momentos temporais diferentes, com um atraso de vários segundos.",
-      "Porque uma é uma grandeza vetorial e a outra é uma grandeza puramente escalar."
+      "Base ampla, com pés afastados à largura dos ombros: 30 a 40 cm.",
+      "Base estreita, mantendo os pés juntos ou equilibrando-se num só pé.",
+      "Pés afastados a mais de 2 metros de distância em espargata completa.",
+      "Apoiar apenas os dedos das mãos no solo sem contacto dos pés."
     ],
     "correctIndex": 0,
-    "explanation": "O equilíbrio de um corpo requer que as forças atuem sobre o mesmo corpo. Ação e reação atuam em corpos distintos, logo não se anulam.",
+    "explanation": "O Slide 102 indica textualmente: 'Condição de alta estabilidade: Ampla (pés afastados à largura dos ombros: 30-40 cm)'.",
     "distractorAnalysis": [
-      "Está incorreta: As forças do par ação-reação têm exatamente o mesmo módulo (intensidade).",
-      "Está incorreta: Ação e reação são absolutamente simultâneas; não existe atraso temporal entre elas.",
-      "Está incorreta: Ambas as forças do par são grandezas estritamente vetoriais expressas em Newtons."
+      "Está incorreta: Pés juntos é a condição de instabilidade e risco de queda descrita no mesmo slide.",
+      "Está incorreta: Afastamento excessivo de 2 metros compromete a biomecânica articular e impede a marcha funcional.",
+      "Está incorreta: Apoiar as mãos no chão não é postura ereta de transferência ou bipedestação."
     ],
-    "nursingApplication": "Permite entender que a força exercida sobre um objeto é independente das forças que o objeto exerce noutros."
+    "nursingApplication": "Instrução direta a fornecer ao utente durante a transferência da cama para a cadeira de rodas."
   },
   {
     "id": 1193,
     "topicId": 1,
-    "question": "Durante a marcha humana, ao empurrar o solo para trás com o pé de apoio na fase de impulsão, que componente da força exercida pelo solo projeta o corpo para a frente?",
+    "question": "No Slide 102, que orientação de enfermagem deve ser dada ao doente durante uma transferência assistida?",
     "options": [
-      "A força normal perpendicular de sustentação dirigida verticalmente para o centro da Terra.",
-      "A componente tangencial de atrito estático da Força de Reação do Solo (FRS), orientada horizontalmente para a frente.",
-      "A força gravitacional atrativa exercida pela Lua sobre a musculatura do membro inferior.",
-      "A pressão hidrostática do líquido sinovial que escapa da cápsula articular."
+      "'Mantenha os calcanhares juntos e as pontas dos pés encostadas.'",
+      "'Orientar o doente a afastar os pés ao transferir' (para garantir base de sustentação ampla).",
+      "'Feche os olhos e salte para a cadeira de rodas com um impulso súbito.'",
+      "'Eleve as mãos acima da cabeça e fique na ponta dos pés.'"
     ],
     "correctIndex": 1,
-    "explanation": "Pela 3ª Lei de Newton, ao exercer uma força tangencial para trás no solo, este reage através do atrito estático com uma força horizontal para a frente (propulsão).",
+    "explanation": "A intervenção de enfermagem recomendada expressamente no Slide 102 é: 'Orientar o doente a afastar os pés ao transferir', ampliando a sua base e evitando o tombamento lateral.",
     "distractorAnalysis": [
-      "Está incorreta: A força normal é vertical e atua na sustentação do peso contra a gravidade, não impulsionando horizontalmente para a frente.",
-      "Está incorreta: A gravidade lunar é desprezável na propulsão terrestre da locomoção humana.",
-      "Está incorreta: A pressão sinovial é interna à articulação e não produz propulsão de translação com o solo."
+      "Está incorreta: Pés juntos estreita a base e causa instabilidade imediata.",
+      "Está incorreta: Saltar de olhos fechados gera forças inerciais violentas com risco crítico de queda.",
+      "Está incorreta: Elevar mãos e ficar nas pontas dos pés eleva o CG e reduz a base, maximizando o desequilíbrio."
     ],
-    "nursingApplication": "Fundamento biomecânico da marcha humana ao caminhar pelos corredores hospitalares."
+    "nursingApplication": "Comunicação terapêutica clara e segura durante procedimentos de reabilitação e mobilidade."
   },
   {
     "id": 1194,
     "topicId": 1,
-    "question": "A força normal (N) exercida pelo colchão de uma cama sobre uma pessoa deitada é o par de ação-reação do peso dessa pessoa?",
+    "question": "Na tabela de estabilidade biomecânica (Slide 103), para o fator 'Posição da linha de gravidade', qual é a condição de alta estabilidade?",
     "options": [
-      "Sim, porque são forças com a mesma intensidade e sentidos opostos que atuam na mesma linha de ação.",
-      "Sim, porque toda a força que atua na vertical forma automaticamente um par com a gravidade.",
-      "Não, porque o peso e a força normal atuam sobre o mesmo corpo (a pessoa), enquanto os pares ação-reação atuam em corpos diferentes.",
-      "Não, porque a força normal tem sempre uma intensidade dez vezes superior ao peso corporal."
+      "Posicionada fora dos bordos da base de apoio, inclinada a 80 graus.",
+      "Oscilando continuamente entre os calcanhares e as orelhas.",
+      "Centrada no meio do polígono de apoio (base de sustentação).",
+      "Paralela ao plano horizontal da cama de internamento."
     ],
     "correctIndex": 2,
-    "explanation": "O par de ação-reação do peso (Terra atrai pessoa) é a atração gravitacional que a pessoa exerce sobre a Terra. A normal e o peso atuam ambos na pessoa.",
+    "explanation": "O Slide 103 define: 'Condição de alta estabilidade: Centrada no meio do polígono de apoio'.",
     "distractorAnalysis": [
-      "Está incorreta: Ter a mesma intensidade e sentidos opostos é condição de equilíbrio de translação da pessoa, mas não define par ação-reação mútuo.",
-      "Está incorreta: A direção vertical não implica que as forças pertençam ao mesmo par da 3ª Lei.",
-      "Está incorreta: Numa superfície horizontal estática em repouso, a normal tem intensidade igual ao peso (N = P)."
+      "Está incorreta: Linha próxima ou fora dos bordos é a condição de instabilidade e risco iminente de queda.",
+      "Está incorreta: Oscilações descontroladas indicam ataxia ou perturbação do equilíbrio vestibular.",
+      "Está incorreta: A linha de gravidade é sempre vertical (direção da aceleração da gravidade), nunca horizontal."
     ],
-    "nursingApplication": "Conceito físico essencial para o desenho de superfícies de suporte e colchões adequados."
+    "nursingApplication": "Manter a linha de gravidade centrada no polígono de apoio previne o tombamento involuntário do corpo."
   },
   {
     "id": 1195,
     "topicId": 1,
-    "question": "Ao exercer-se uma força horizontal de 50 N perpendicularmente contra uma parede rígida, que força exerce a parede sobre as mãos do indivíduo?",
+    "question": "Qual é a intervenção de enfermagem recomendada no Slide 103 para manter a linha de gravidade centrada ao realizar esforços ou transportar cargas?",
     "options": [
-      "0 N, porque a parede é fixa e não pode exercer nenhuma força mecânica.",
-      "100 N, porque os materiais rígidos duplicam a força aplicada sobre eles.",
-      "25 N, porque metade da força dissipa-se sob a forma de som nas fundações.",
-      "50 N, orientada perpendicularmente em sentido oposto (para trás contra as mãos)."
+      "Curvar a coluna dorsal esticando os braços o mais longe possível do peito.",
+      "Inclinar o tronco 45 graus para o lado ao caminhar com equipamentos.",
+      "Transportar os doentes e cargas apenas na ponta dos pés.",
+      "Manter a carga junto ao peito sem inclinar o tronco."
     ],
     "correctIndex": 3,
-    "explanation": "Pela 3ª Lei de Newton, a parede exerce exatamente a mesma força de 50 N em sentido contrário sobre as mãos de quem a empurra.",
+    "explanation": "O Slide 103 preconiza formalmente como intervenção de enfermagem recomendada: 'Manter a carga junto ao peito sem inclinar o tronco', mantendo a linha de gravidade combinada no centro da base.",
     "distractorAnalysis": [
-      "Está incorreta: Uma superfície estática exerce força de reação de contacto com a mesma intensidade da ação.",
-      "Está incorreta: A rigidez do material não duplica forças; a conservação do par ação-reação mantém intensidade idêntica.",
-      "Está incorreta: Não há redução de força para metade; a força de contacto estático preserva o valor de 50 N."
+      "Está incorreta: Esticar os braços projeta a linha de gravidade para a frente fora da base e sobrecarrega a coluna.",
+      "Está incorreta: Inclinar o tronco lateralmente desvia a linha de gravidade para os bordos, aumentando o risco de queda lateral.",
+      "Está incorreta: Caminhar na ponta dos pés reduz a base e eleva perigosamente o CG."
     ],
-    "nursingApplication": "Ilustra a pressão que as mãos sentem ao empurrar portas pesadas ou estruturas hospitalares."
+    "nursingApplication": "Princípio ergonómico crucial ensinado em todas as escolas de enfermagem para proteção da coluna vertebral."
   },
   {
     "id": 1196,
     "topicId": 1,
-    "question": "Numa colisão frontal entre uma ambulância de 3000 kg e um carrinho de transporte de 30 kg, como se comparam as intensidades das forças trocadas entre eles no impacto?",
+    "question": "Na tabela de estabilidade biomecânica (Slide 104), que medida preventiva de enfermagem é expressamente recomendada quanto ao 'Atrito solo-calçado'?",
     "options": [
-      "As forças são rigorosamente iguais em intensidade, pois constituem um par de ação-reação da 3ª Lei de Newton.",
-      "A ambulância exerce uma força cem vezes maior sobre o carrinho do que o carrinho sobre a ambulância.",
-      "O carrinho não exerce qualquer força sobre a ambulância por ter massa muito menor.",
-      "A força do carrinho depende apenas da velocidade da ambulância dividida pelo quadrado do tempo."
+      "Proibir meias sem piso antiderrapante na enfermaria (garantindo sola de borracha com relevo em piso seco).",
+      "Encerar os corredores com cera líquida imediatamente antes da marcha dos doentes.",
+      "Incentivar os doentes operados a caminhar de meias de seda em piso molhado.",
+      "Lubrificar os sapatos dos enfermeiros com óleo para acelerar as deslocações."
     ],
     "correctIndex": 0,
-    "explanation": "Pela 3ª Lei de Newton, a intensidade da força que A exerce em B é sempre exatamente igual à que B exerce em A, independentemente das massas.",
+    "explanation": "O Slide 104 determina: Fator: Atrito solo-calçado | Alta estabilidade: Alto (sola de borracha com relevo em piso seco) | Risco: Baixo (meias em chão encerado ou molhado) | Intervenção: 'Proibir meias sem piso antiderrapante na enfermaria'.",
     "distractorAnalysis": [
-      "Está incorreta: Embora o carrinho sofra uma aceleração muito maior (a = F/m), as forças trocadas têm exatamente o mesmo módulo.",
-      "Está incorreta: Mesmo um corpo de pequena massa exerce uma força de reação de intensidade idêntica à da ação recebida.",
-      "Está incorreta: A força é uma interação mútua simultânea com intensidades estritamente iguais nos dois corpos."
+      "Está incorreta: Chão encerado reduz drasticamente o coeficiente de atrito, sendo fator de risco grave de queda.",
+      "Está incorreta: Meias lisas em piso molhado eliminam a força de atrito e causam escorregamentos quase certos.",
+      "Está incorreta: Lubrificar solas provocaria quedas imediatas da equipa profissional."
     ],
-    "nursingApplication": "Mostra que corpos de massas diferentes experimentam forças de igual intensidade durante uma colisão mútua."
+    "nursingApplication": "Protocolo internacional de prevenção de quedas obrigatório em todos os hospitais e unidades de cuidados continuados."
   },
   {
     "id": 1197,
     "topicId": 1,
-    "question": "Quando uma caixa de soros de 10 kg repousa sobre uma mesa horizontal, que força a caixa exerce sobre a mesa?",
+    "question": "Qual é o efeito biomecânico dos Dispositivos de Apoio (Andarilho / Bengala) sobre a estabilidade de acordo com o Slide 105?",
     "options": [
-      "Uma força horizontal de atrito cinético com intensidade infinita.",
-      "Uma força de contacto dirigida verticalmente para baixo com intensidade igual a 98 N (o seu peso).",
-      "Nenhuma força, porque a caixa está parada e objetos parados perdem a capacidade de exercer força.",
-      "Uma força ascensional de 980 N direcionada para o teto da sala."
+      "Reduzem a base de sustentação a metade para estimular o equilíbrio cerebral.",
+      "Multiplicam a área da base de sustentação em 3 a 5 vezes.",
+      "Anulam a gravidade terrestre permitindo ao doente flutuar sobre o piso.",
+      "Aumentam a velocidade da marcha para valores acima de 40 km/h."
     ],
     "correctIndex": 1,
-    "explanation": "A caixa pressiona a mesa com uma força de contacto descendente de intensidade igual ao seu peso (P = 10 kg · 9,8 m/s² = 98 N).",
+    "explanation": "O Slide 105 estabelece: 'Dispositivos de apoio (Andarilho / Bengala): Multiplica a área da base em 3 a 5 vezes', alargando substancialmente os limites dentro dos quais a linha de gravidade pode oscilar sem queda.",
     "distractorAnalysis": [
-      "Está incorreta: A caixa está em repouso estático, logo não há atrito cinético em movimento horizontal.",
-      "Está incorreta: Mesmo em repouso, a gravidade atua sobre a massa da caixa, fazendo-a exercer força de compressão sobre o apoio.",
-      "Está incorreta: A força exercida pela caixa sobre a mesa é descendente (para baixo), não ascensional."
+      "Está incorreta: Os dispositivos alargam grandemente a base, nunca a reduzem.",
+      "Está incorreta: O andarilho apoia forças normais mecânicas no solo, não revogando o campo gravítico.",
+      "Está incorreta: Andarilhos são usados para marcha segura, pausada e estável em utentes com défice motor."
     ],
-    "nursingApplication": "Permite dimensionar prateleiras e suportes hospitalares em função da carga que sustentam."
+    "nursingApplication": "Explica aos doentes e familiares a razão biomecânica pela qual o andarilho devolve a segurança ao caminhar."
   },
   {
     "id": 1198,
     "topicId": 1,
-    "question": "Qual das seguintes afirmações sobre a 3ª Lei de Newton é cientificamente VERDADEIRA?",
+    "question": "Qual é a intervenção de enfermagem recomendada no Slide 105 para utentes que utilizam andarilho?",
     "options": [
-      "A força de ação ocorre primeiro e a força de reação surge sempre com meio segundo de atraso.",
-      "A 3ª Lei de Newton só se aplica a corpos que se encontrem em queda livre no vácuo.",
-      "A força de ação e a força de reação ocorrem rigorosamente ao mesmo tempo (são instantâneas e simultâneas).",
-      "As forças do par ação-reação cancelam-se mutuamente na 2ª Lei de Newton de um corpo isolado."
+      "Incentivar o doente a caminhar muito à frente do andarilho empurrando-o com um dedo.",
+      "Retirar o andarilho a doentes com marcha atáxica sem apoio.",
+      "Ensinar a usar o andarilho mantendo-se dentro dele.",
+      "Prender o andarilho ao teto com cordas de tração ortopédica."
     ],
     "correctIndex": 2,
-    "explanation": "Ação e reação são simultâneas: nenhuma antecede a outra no tempo da interação física.",
+    "explanation": "O Slide 105 indica textualmente: 'Intervenção de enfermagem recomendada: Ensinar a usar o andarilho mantendo-se dentro dele'.",
     "distractorAnalysis": [
-      "Está incorreta: Não existe atraso temporal; a interação de contacto é rigorosamente simultânea.",
-      "Está incorreta: A 3ª Lei aplica-se a todas as interações de contacto e de campo da física clássica.",
-      "Está incorreta: Apenas forças que atuam no mesmo corpo se podem cancelar; ação e reação atuam em corpos diferentes."
+      "Está incorreta: Caminhar fora ou atrás do andarilho desloca a linha de gravidade para fora do polígono de apoio, anulando a sua função protetora.",
+      "Está incorreta: Doentes com marcha atáxica sem dispositivo sofrem risco máximo de instabilidade e queda (Slide 105).",
+      "Está incorreta: O andarilho é um dispositivo de apoio móvel ao solo, não um sistema suspenso no teto."
     ],
-    "nursingApplication": "Reconhecer a simultaneidade das forças apoia a compreensão da dinâmica do movimento e transferências."
+    "nursingApplication": "Instrução prática indispensável fornecida no ensino ao utente e cuidadores antes da alta hospitalar."
   },
   {
     "id": 1199,
     "topicId": 1,
-    "question": "Como se define um sistema de 'Forças Concorrentes' na estática dos corpos materiais?",
+    "question": "Ao orientar um doente a afastar os pés à largura dos ombros (30-40 cm) antes de se levantar da cama, que benefício biomecânico direto estamos a garantir (Slide 102)?",
     "options": [
-      "Um sistema de forças que atuam exclusivamente em linhas retas estritamente paralelas que nunca se cruzam.",
-      "Um conjunto de forças que atuam em dias diferentes da semana sobre corpos independentes.",
-      "Forças que anulam a temperatura absoluta de qualquer material condutor elétrico.",
-      "Um sistema de forças cujas linhas de ação se intersetam todas num mesmo ponto comum no espaço."
+      "Aumentamos a aceleração da gravidade sobre os membros inferiores.",
+      "Eliminamos a necessidade de força potente nos músculos extensores das pernas.",
+      "Reduzimos a pressão arterial média em 50%.",
+      "Ampliamos a base de sustentação, aumentando a margem de segurança para que a linha de gravidade não ultrapasse o polígono de apoio."
     ],
     "correctIndex": 3,
-    "explanation": "Forças concorrentes têm retas de suporte que convergem ou divergem a partir de um único ponto comum.",
+    "explanation": "Ao afastar os pés a 30-40 cm, a área geométrica da base de suporte expande-se; quando o doente projeta o tronco para a frente ao levantar-se, a linha de gravidade permanece dentro da base, prevenindo o desequilíbrio e a queda.",
     "distractorAnalysis": [
-      "Está incorreta: Forças com retas paralelas que não se cruzam são forças paralelas, não concorrentes.",
-      "Está incorreta: O conceito refere-se à geometria espacial das retas de ação de forças simultâneas.",
-      "Está incorreta: Forças mecânicas da estática não anulam temperaturas térmicas de materiais."
+      "Está incorreta: A aceleração da gravidade g é uma constante física local inalterável pela posição dos pés.",
+      "Está incorreta: O levantamento exige força ativa dos músculos extensores dos membros inferiores para vencer o peso corporal.",
+      "Está incorreta: Afastar os pés não altera diretamente a pressão arterial sistémica em 50%."
     ],
-    "nursingApplication": "Exemplo das linhas de tração exercidas por múltiplos feixes musculares convergentes num mesmo tendão de inserção."
+    "nursingApplication": "Aplicação clínica diária de promoção de autonomia com segurança durante a reabilitação funcional."
   },
   {
     "id": 1200,
     "topicId": 1,
-    "question": "Duas forças concorrentes perpendiculares entre si, com intensidades de 30 N e 40 N, atuam sobre o mesmo ponto material. Qual é a intensidade da força resultante?",
+    "question": "Ao levantar uma carga do chão, por que razão o enfermeiro deve fletir os joelhos e ancas em vez de dobrar a coluna dorsal/lombar (Slides 101 e 103)?",
     "options": [
-      "50 N, calculada pela regra do paralelogramo através do Teorema de Pitágoras.",
-      "70 N, obtida pela simples soma escalar aritmética direta das duas intensidades.",
-      "10 N, obtida pela subtração direta das duas forças como se fossem colineares opostas.",
-      "1200 N, obtida pela multiplicação direta das intensidades no plano."
+      "Baixa o centro de gravidade aumentando a estabilidade, mantém a carga encostada ao peito reduzindo o braço da resistência e usa os potentes músculos das pernas.",
+      "Aumenta a velocidade de rotação da coluna acelerando o levantamento em menos de 0,1 segundo.",
+      "Permite que a gravidade atue na horizontal aliviando todo o peso do objeto.",
+      "Elimina a força normal entre o calçado e o chão hospitalar."
     ],
     "correctIndex": 0,
-    "explanation": "Como as forças são perpendiculares (θ = 90°), Fr = √(F1² + F2²) = √(30² + 40²) = √(900 + 1600) = √2500 = 50 N.",
+    "explanation": "Fletir os joelhos e manter a coluna ereta une todos os princípios da aula: 1. Baixa o CG (Slide 101); 2. Mantém a carga junto ao peito e a linha de gravidade centrada (Slide 103); 3. Reduz o braço da força resistente sobre as vértebras (M = F · b), prevenindo hérnias discais e lesões laborais.",
     "distractorAnalysis": [
-      "Está incorreta: A soma aritmética direta (30 + 40 = 70 N) só é válida para forças colineares com o mesmo sentido.",
-      "Está incorreta: A subtração (40 - 30 = 10 N) só é válida para forças colineares com sentidos opostos.",
-      "Está incorreta: Multiplicar as forças não fornece a resultante vetorial de forças concorrentes."
+      "Está incorreta: Movimentos bruscos e rápidos aumentam a desaceleração inercial e o risco de roturas musculares graves.",
+      "Está incorreta: A gravidade mantém-se invariavelmente vertical; dobrar as pernas não altera a direção do campo gravitacional.",
+      "Está incorreta: A força normal de apoio no solo continua a sustentar o peso do profissional e da carga combinados."
     ],
-    "nursingApplication": "Fundamental para calcular a tração resultante em sistemas de suspensão ortopédica e tração esquelética."
-  },
-  {
-    "id": 1201,
-    "topicId": 1,
-    "question": "Quais são as quatro Forças Fundamentais da Natureza descritas na física?",
-    "options": [
-      "Força Muscular, Força de Atrito, Força Elástica e Força Centrípeta.",
-      "Gravitacional, Eletromagnética, Nuclear Forte e Nuclear Fraca.",
-      "Força de Tração, Força de Compressão, Força Normal e Força de Pressão.",
-      "Força Térmica, Força Eólica, Força Hidráulica e Força Solar."
-    ],
-    "correctIndex": 1,
-    "explanation": "Todas as forças da natureza derivam destas quatro interações fundamentais da física.",
-    "distractorAnalysis": [
-      "Está incorreta: Muscular, atrito e elástica são manifestações macroscópicas da força eletromagnética entre átomos.",
-      "Está incorreta: Tração, compressão e normal são esforços de contacto que decorrem de interações eletromagnéticas.",
-      "Está incorreta: Térmica, eólica e hidráulica são designações macroscópicas de energia ou mecânica de fluidos."
-    ],
-    "nursingApplication": "Identifica que as forças mecânicas nos tecidos derivam microscopicamente de interações eletromagnéticas."
-  },
-  {
-    "id": 1202,
-    "topicId": 1,
-    "question": "A Força Normal (N) de contacto entre dois corpos atua sempre em que direção relativamente à superfície de contacto?",
-    "options": [
-      "Paralela à superfície de contacto na direção do movimento.",
-      "Diagonal a quarenta e cinco graus apontando para o centro da Terra.",
-      "Perpendicular à superfície de contacto (formando um ângulo de noventa graus com o plano).",
-      "Em qualquer direção aleatória que varia a cada segundo."
-    ],
-    "correctIndex": 2,
-    "explanation": "O termo 'normal' em geometria e física significa estritamente ortogonal / perpendicular (90°) à superfície.",
-    "distractorAnalysis": [
-      "Está incorreta: A força paralela à superfície é a força de atrito, não a força normal.",
-      "Está incorreta: A direção não é fixa em 45°; depende da orientação geométrica da superfície de apoio.",
-      "Está incorreta: A normal é determinada pela geometria do contacto e não varia de modo aleatório."
-    ],
-    "nursingApplication": "Crucial para compreender como o colchão distribui a força perpendicular sobre as áreas do corpo."
-  },
-  {
-    "id": 1203,
-    "topicId": 1,
-    "question": "Como se define a Força de Atrito Estático (Fa_est) entre duas superfícies em contacto?",
-    "options": [
-      "A força que acelera ativamente os corpos para a frente após o movimento já ter começado.",
-      "A força de atrito que atua exclusivamente quando os corpos deslizam a altíssima velocidade.",
-      "A atração gravitacional entre as massas dos dois corpos em contacto no vácuo.",
-      "A força que se opõe à tendência de início de movimento relativo entre duas superfícies em repouso relativo."
-    ],
-    "correctIndex": 3,
-    "explanation": "O atrito estático impede o deslizamento até ser atingida a força máxima Fa_est_max = μ_est · N.",
-    "distractorAnalysis": [
-      "Está incorreta: O atrito opõe-se à tendência de movimento e não atua como força propulsora espontânea para a frente.",
-      "Está incorreta: O atrito que atua durante o deslizamento relativo em movimento é o atrito cinético, não o estático.",
-      "Está incorreta: O atrito decorre das interações microscópicas de contacto, não da atração gravitacional das massas."
-    ],
-    "nursingApplication": "Explica por que os calçados antiderrapantes impedem escorregadelas em pisos lisos hospitalares."
-  },
-  {
-    "id": 1204,
-    "topicId": 1,
-    "question": "Como se comparam os coeficientes de atrito estático (μ_est) e cinético (μ_cin) para o mesmo par de materiais?",
-    "options": [
-      "O coeficiente de atrito estático é sistematicamente superior ao coeficiente de atrito cinético (μ_est > μ_cin).",
-      "O coeficiente cinético é dez vezes superior ao estático em todos os sólidos.",
-      "Ambos os coeficientes são rigorosamente iguais em todas as superfícies físicas.",
-      "O coeficiente estático é sempre zero porque em repouso não existe atrito."
-    ],
-    "correctIndex": 0,
-    "explanation": "Vencer a inércia e rugosidades microscópicas em repouso exige maior força do que manter o deslizamento (μ_est > μ_cin).",
-    "distractorAnalysis": [
-      "Está incorreta: O atrito cinético é menor que o estático; uma vez em movimento, é mais fácil manter o deslizamento.",
-      "Está incorreta: Os coeficientes não são iguais; o estático é comprovadamente superior na grande maioria dos materiais.",
-      "Está incorreta: O atrito estático não é zero; atua até ao limiar máximo para impedir o início do movimento."
-    ],
-    "nursingApplication": "Explica por que custa mais começar a empurrar uma cama parada do que mantê-la a rolar suavemente."
-  },
-  {
-    "id": 1205,
-    "topicId": 1,
-    "question": "Se um bloco de 100 N repousa sobre um piso horizontal com μ_est = 0,4, qual é a força horizontal mínima para iniciar o movimento?",
-    "options": [
-      "100 N.",
-      "40 N.",
-      "250 N.",
-      "4 N."
-    ],
-    "correctIndex": 1,
-    "explanation": "A força de atrito estático máxima é Fa_max = μ_est · N = 0,4 · 100 N = 40 N. Para mover, é preciso superar 40 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 100 N é o valor da força normal (peso), não da força de atrito horizontal de deslizamento.",
-      "Está incorreta: 250 N resultaria de dividir 100 N por 0,4, o que está matematicamente incorreto.",
-      "Está incorreta: 4 N resultaria de multiplicar por 0,04 em vez do coeficiente 0,4 dado."
-    ],
-    "nursingApplication": "Permite calcular o esforço horizontal necessário para vencer a resistência inicial de um equipamento."
-  },
-  {
-    "id": 1206,
-    "topicId": 1,
-    "question": "Uma caixa é puxada e desliza sobre o chão com velocidade constante. Que força de atrito atua sobre ela durante o deslizamento?",
-    "options": [
-      "Força de atrito estático máximo.",
-      "Força nuclear forte.",
-      "Força de atrito cinético (ou dinâmico).",
-      "Força de gravitação universal pura."
-    ],
-    "correctIndex": 2,
-    "explanation": "Quando existe movimento relativo e deslizamento entre as superfícies, a força de atrito atuante é a cinética (Fa = μ_cin · N).",
-    "distractorAnalysis": [
-      "Está incorreta: O atrito estático atua apenas enquanto não há deslizamento entre as superfícies em repouso relativo.",
-      "Está incorreta: Forças nucleares atuam exclusivamente no interior dos núcleos atómicos, a distâncias subatómicas.",
-      "Está incorreta: A gravitação puxa verticalmente para baixo e não atua tangencialmente como atrito de contacto."
-    ],
-    "nursingApplication": "Determina a força contínua necessária para manter carrinhos e equipamentos em deslocamento constante."
-  },
-  {
-    "id": 1207,
-    "topicId": 1,
-    "question": "Porque é que o uso de rodas com rolamentos de esferas reduz drasticamente a resistência ao movimento dos equipamentos hospitalares?",
-    "options": [
-      "Porque anula completamente o peso total da maca e dos equipamentos transportados.",
-      "Porque as rodas criam um campo antigravitacional que eleva o equipamento no ar.",
-      "Porque transforma a força normal numa força centrípeta de tração para a frente.",
-      "Porque substitui o atrito de deslizamento (escorregamento) por atrito de rolamento, cujo coeficiente é muitíssimo menor."
-    ],
-    "correctIndex": 3,
-    "explanation": "O atrito de rolamento (rodar) apresenta coeficientes de atrito ordens de grandeza inferiores ao deslizamento direto.",
-    "distractorAnalysis": [
-      "Está incorreta: As rodas suportam o peso, mas não o anulam; o peso continua a ser sustentado pelo solo.",
-      "Está incorreta: Rodas não geram campos antigravitacionais; operam estritamente sob a mecânica clássica de rolamento.",
-      "Está incorreta: A força normal permanece vertical e perpendicular ao piso, não se convertendo em força centrípeta horizontal."
-    ],
-    "nursingApplication": "Explica por que a manutenção e lubrificação das rodas das camas e macas é crucial para a ergonomia."
-  },
-  {
-    "id": 1208,
-    "topicId": 1,
-    "question": "Qual é o principal papel biológico do Líquido Sinovial presente no interior das articulações sinoviais humanas?",
-    "options": [
-      "Atuar como lubrificante biológico, reduzindo o coeficiente de atrito entre as cartilagens para valores quase nulos.",
-      "Solidificar a articulação para impedir qualquer movimento entre os ossos adjacentes.",
-      "Gerar corrente elétrica contínua para acelerar a contração muscular das extremidades.",
-      "Substituir o osso cortical por tecido esponjoso altamente vascularizado."
-    ],
-    "correctIndex": 0,
-    "explanation": "O líquido sinovial reduz o coeficiente de atrito articular para valores extremamente baixos (~0,001 a 0,01), minimizando o desgaste.",
-    "distractorAnalysis": [
-      "Está incorreta: O líquido sinovial promove o movimento suave e fluido, não solidificando a cavidade articular.",
-      "Está incorreta: A função é puramente tribológica (lubrificação e amortecimento) e nutrição da cartilagem, não gerar corrente galvânica.",
-      "Está incorreta: O líquido sinovial preenche o espaço cavitário e não substitui a matriz óssea."
-    ],
-    "nursingApplication": "Princípio físico de lubrificação articular que previne o desgaste precoce das cartilagens no movimento humano."
-  },
-  {
-    "id": 1209,
-    "topicId": 1,
-    "question": "De acordo com as leis clássicas do atrito sólido seco (Leis de Coulomb), o que acontece à força máxima de atrito estático se um bloco for apoiado sobre a sua face de menor área em vez da face de maior área?",
-    "options": [
-      "Reduz-se a metade porque a área de contacto é menor.",
-      "Permanece inalterada, porque a força de atrito seco independe da área aparente de contacto macroscópica.",
-      "Aumenta para o dobro porque a pressão é maior.",
-      "Passa a ser rigorosamente nula porque blocos apoiados de lado não sofrem atrito."
-    ],
-    "correctIndex": 1,
-    "explanation": "As leis de Coulomb estabelecem que o atrito estático máximo depende apenas do coeficiente μ e da força normal N (Fa = μ·N), sendo independente da área aparente.",
-    "distractorAnalysis": [
-      "Está incorreta: A área aparente é menor, mas a pressão local aumenta proporcionalmente nas micro-rugosidades, mantendo a força total constante.",
-      "Está incorreta: A força de atrito não dobra; a pressão aumenta, mas a área diminui, mantendo o produto global de atrito idêntico.",
-      "Está incorreta: O atrito manifesta-se independentemente da face de apoio do bloco sobre o piso."
-    ],
-    "nursingApplication": "Mostra que calçado ou bases de apoio mais largas distribuem a pressão sem alterar a força de atrito total gerada."
-  },
-  {
-    "id": 1210,
-    "topicId": 1,
-    "question": "Um equipamento repousa num piso horizontal cujo atrito estático máximo é de 80 N. Se for empurrado horizontalmente com uma força de 30 N e continuar em repouso, qual é a intensidade da força de atrito estático nesse instante?",
-    "options": [
-      "80 N, empurrando o equipamento no sentido oposto com aceleração repentina.",
-      "0 N, porque o corpo ainda não se moveu.",
-      "Exatamente 30 N, equilibrando perfeitamente a força aplicada.",
-      "50 N, correspondente à diferença matemática entre o valor máximo e o aplicado."
-    ],
-    "correctIndex": 2,
-    "explanation": "O atrito estático é uma força autoajustável: equilibra exatamente a força aplicada (Fa = 30 N) até ao limiar máximo de 80 N.",
-    "distractorAnalysis": [
-      "Está incorreta: Se o atrito fosse 80 N contra uma força de 30 N, haveria uma força resultante de 50 N para trás e o corpo aceleraria sozinho, o que é absurdo.",
-      "Está incorreta: Se fosse 0 N, uma força de 30 N aceleraria imediatamente o corpo segundo F = m·a.",
-      "Está incorreta: A força de atrito não é a diferença; é o valor exato necessário para anular a força aplicada."
-    ],
-    "nursingApplication": "Permite entender que o atrito estático só atinge o seu valor máximo no limiar iminente do movimento."
-  },
-  {
-    "id": 1211,
-    "topicId": 1,
-    "question": "Quais são as quatro Forças Fundamentais da Natureza descritas na física?",
-    "options": [
-      "Força Muscular, Força de Atrito, Força Elástica e Força Centrípeta.",
-      "Força de Tração, Força de Compressão, Força Normal e Força de Pressão.",
-      "Força Térmica, Força Eólica, Força Hidráulica e Força Solar.",
-      "Gravitacional, Eletromagnética, Nuclear Forte e Nuclear Fraca."
-    ],
-    "correctIndex": 3,
-    "explanation": "Todas as forças da natureza derivam destas quatro interações fundamentais da física.",
-    "distractorAnalysis": [
-      "Está incorreta: Muscular, atrito e elástica são manifestações macroscópicas da força eletromagnética entre átomos.",
-      "Está incorreta: Tração, compressão e normal são esforços de contacto que decorrem de interações eletromagnéticas.",
-      "Está incorreta: Térmica, eólica e hidráulica são designações macroscópicas de energia ou mecânica de fluidos."
-    ],
-    "nursingApplication": "Identifica que as forças mecânicas nos tecidos derivam microscopicamente de interações eletromagnéticas."
-  },
-  {
-    "id": 1212,
-    "topicId": 1,
-    "question": "A Força Normal (N) de contacto entre dois corpos atua sempre em que direção relativamente à superfície de contacto?",
-    "options": [
-      "Perpendicular à superfície de contacto (formando um ângulo de noventa graus com o plano).",
-      "Paralela à superfície de contacto na direção do movimento.",
-      "Diagonal a quarenta e cinco graus apontando para o centro da Terra.",
-      "Em qualquer direção aleatória que varia a cada segundo."
-    ],
-    "correctIndex": 0,
-    "explanation": "O termo 'normal' em geometria e física significa estritamente ortogonal / perpendicular (90°) à superfície.",
-    "distractorAnalysis": [
-      "Está incorreta: A força paralela à superfície é a força de atrito, não a força normal.",
-      "Está incorreta: A direção não é fixa em 45°; depende da orientação geométrica da superfície de apoio.",
-      "Está incorreta: A normal é determinada pela geometria do contacto e não varia de modo aleatório."
-    ],
-    "nursingApplication": "Crucial para compreender como o colchão distribui a força perpendicular sobre as áreas do corpo."
-  },
-  {
-    "id": 1213,
-    "topicId": 1,
-    "question": "Como se define a Força de Atrito Estático (Fa_est) entre duas superfícies em contacto?",
-    "options": [
-      "A força que acelera ativamente os corpos para a frente após o movimento já ter começado.",
-      "A força que se opõe à tendência de início de movimento relativo entre duas superfícies em repouso relativo.",
-      "A força de atrito que atua exclusivamente quando os corpos deslizam a altíssima velocidade.",
-      "A atração gravitacional entre as massas dos dois corpos em contacto no vácuo."
-    ],
-    "correctIndex": 1,
-    "explanation": "O atrito estático impede o deslizamento até ser atingida a força máxima Fa_est_max = μ_est · N.",
-    "distractorAnalysis": [
-      "Está incorreta: O atrito opõe-se à tendência de movimento e não atua como força propulsora espontânea para a frente.",
-      "Está incorreta: O atrito que atua durante o deslizamento relativo em movimento é o atrito cinético, não o estático.",
-      "Está incorreta: O atrito decorre das interações microscópicas de contacto, não da atração gravitacional das massas."
-    ],
-    "nursingApplication": "Explica por que os calçados antiderrapantes impedem escorregadelas em pisos lisos hospitalares."
-  },
-  {
-    "id": 1214,
-    "topicId": 1,
-    "question": "Como se comparam os coeficientes de atrito estático (μ_est) e cinético (μ_cin) para o mesmo par de materiais?",
-    "options": [
-      "O coeficiente cinético é dez vezes superior ao estático em todos os sólidos.",
-      "Ambos os coeficientes são rigorosamente iguais em todas as superfícies físicas.",
-      "O coeficiente de atrito estático é sistematicamente superior ao coeficiente de atrito cinético (μ_est > μ_cin).",
-      "O coeficiente estático é sempre zero porque em repouso não existe atrito."
-    ],
-    "correctIndex": 2,
-    "explanation": "Vencer a inércia e rugosidades microscópicas em repouso exige maior força do que manter o deslizamento (μ_est > μ_cin).",
-    "distractorAnalysis": [
-      "Está incorreta: O atrito cinético é menor que o estático; uma vez em movimento, é mais fácil manter o deslizamento.",
-      "Está incorreta: Os coeficientes não são iguais; o estático é comprovadamente superior na grande maioria dos materiais.",
-      "Está incorreta: O atrito estático não é zero; atua até ao limiar máximo para impedir o início do movimento."
-    ],
-    "nursingApplication": "Explica por que custa mais começar a empurrar uma cama parada do que mantê-la a rolar suavemente."
-  },
-  {
-    "id": 1215,
-    "topicId": 1,
-    "question": "Se um bloco de 100 N repousa sobre um piso horizontal com μ_est = 0,4, qual é a força horizontal mínima para iniciar o movimento?",
-    "options": [
-      "100 N.",
-      "250 N.",
-      "4 N.",
-      "40 N."
-    ],
-    "correctIndex": 3,
-    "explanation": "A força de atrito estático máxima é Fa_max = μ_est · N = 0,4 · 100 N = 40 N. Para mover, é preciso superar 40 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 100 N é o valor da força normal (peso), não da força de atrito horizontal de deslizamento.",
-      "Está incorreta: 250 N resultaria de dividir 100 N por 0,4, o que está matematicamente incorreto.",
-      "Está incorreta: 4 N resultaria de multiplicar por 0,04 em vez do coeficiente 0,4 dado."
-    ],
-    "nursingApplication": "Permite calcular o esforço horizontal necessário para vencer a resistência inicial de um equipamento."
-  },
-  {
-    "id": 1216,
-    "topicId": 1,
-    "question": "Uma caixa é puxada e desliza sobre o chão com velocidade constante. Que força de atrito atua sobre ela durante o deslizamento?",
-    "options": [
-      "Força de atrito cinético (ou dinâmico).",
-      "Força de atrito estático máximo.",
-      "Força nuclear forte.",
-      "Força de gravitação universal pura."
-    ],
-    "correctIndex": 0,
-    "explanation": "Quando existe movimento relativo e deslizamento entre as superfícies, a força de atrito atuante é a cinética (Fa = μ_cin · N).",
-    "distractorAnalysis": [
-      "Está incorreta: O atrito estático atua apenas enquanto não há deslizamento entre as superfícies em repouso relativo.",
-      "Está incorreta: Forças nucleares atuam exclusivamente no interior dos núcleos atómicos, a distâncias subatómicas.",
-      "Está incorreta: A gravitação puxa verticalmente para baixo e não atua tangencialmente como atrito de contacto."
-    ],
-    "nursingApplication": "Determina a força contínua necessária para manter carrinhos e equipamentos em deslocamento constante."
-  },
-  {
-    "id": 1217,
-    "topicId": 1,
-    "question": "Porque é que o uso de rodas com rolamentos de esferas reduz drasticamente a resistência ao movimento dos equipamentos hospitalares?",
-    "options": [
-      "Porque anula completamente o peso total da maca e dos equipamentos transportados.",
-      "Porque substitui o atrito de deslizamento (escorregamento) por atrito de rolamento, cujo coeficiente é muitíssimo menor.",
-      "Porque as rodas criam um campo antigravitacional que eleva o equipamento no ar.",
-      "Porque transforma a força normal numa força centrípeta de tração para a frente."
-    ],
-    "correctIndex": 1,
-    "explanation": "O atrito de rolamento (rodar) apresenta coeficientes de atrito ordens de grandeza inferiores ao deslizamento direto.",
-    "distractorAnalysis": [
-      "Está incorreta: As rodas suportam o peso, mas não o anulam; o peso continua a ser sustentado pelo solo.",
-      "Está incorreta: Rodas não geram campos antigravitacionais; operam estritamente sob a mecânica clássica de rolamento.",
-      "Está incorreta: A força normal permanece vertical e perpendicular ao piso, não se convertendo em força centrípeta horizontal."
-    ],
-    "nursingApplication": "Explica por que a manutenção e lubrificação das rodas das camas e macas é crucial para a ergonomia."
-  },
-  {
-    "id": 1218,
-    "topicId": 1,
-    "question": "Qual é o principal papel biológico do Líquido Sinovial presente no interior das articulações sinoviais humanas?",
-    "options": [
-      "Solidificar a articulação para impedir qualquer movimento entre os ossos adjacentes.",
-      "Gerar corrente elétrica contínua para acelerar a contração muscular das extremidades.",
-      "Atuar como lubrificante biológico, reduzindo o coeficiente de atrito entre as cartilagens para valores quase nulos.",
-      "Substituir o osso cortical por tecido esponjoso altamente vascularizado."
-    ],
-    "correctIndex": 2,
-    "explanation": "O líquido sinovial reduz o coeficiente de atrito articular para valores extremamente baixos (~0,001 a 0,01), minimizando o desgaste.",
-    "distractorAnalysis": [
-      "Está incorreta: O líquido sinovial promove o movimento suave e fluido, não solidificando a cavidade articular.",
-      "Está incorreta: A função é puramente tribológica (lubrificação e amortecimento) e nutrição da cartilagem, não gerar corrente galvânica.",
-      "Está incorreta: O líquido sinovial preenche o espaço cavitário e não substitui a matriz óssea."
-    ],
-    "nursingApplication": "Princípio físico de lubrificação articular que previne o desgaste precoce das cartilagens no movimento humano."
-  },
-  {
-    "id": 1219,
-    "topicId": 1,
-    "question": "De acordo com as leis clássicas do atrito sólido seco (Leis de Coulomb), o que acontece à força máxima de atrito estático se um bloco for apoiado sobre a sua face de menor área em vez da face de maior área?",
-    "options": [
-      "Reduz-se a metade porque a área de contacto é menor.",
-      "Aumenta para o dobro porque a pressão é maior.",
-      "Passa a ser rigorosamente nula porque blocos apoiados de lado não sofrem atrito.",
-      "Permanece inalterada, porque a força de atrito seco independe da área aparente de contacto macroscópica."
-    ],
-    "correctIndex": 3,
-    "explanation": "As leis de Coulomb estabelecem que o atrito estático máximo depende apenas do coeficiente μ e da força normal N (Fa = μ·N), sendo independente da área aparente.",
-    "distractorAnalysis": [
-      "Está incorreta: A área aparente é menor, mas a pressão local aumenta proporcionalmente nas micro-rugosidades, mantendo a força total constante.",
-      "Está incorreta: A força de atrito não dobra; a pressão aumenta, mas a área diminui, mantendo o produto global de atrito idêntico.",
-      "Está incorreta: O atrito manifesta-se independentemente da face de apoio do bloco sobre o piso."
-    ],
-    "nursingApplication": "Mostra que calçado ou bases de apoio mais largas distribuem a pressão sem alterar a força de atrito total gerada."
-  },
-  {
-    "id": 1220,
-    "topicId": 1,
-    "question": "Um equipamento repousa num piso horizontal cujo atrito estático máximo é de 80 N. Se for empurrado horizontalmente com uma força de 30 N e continuar em repouso, qual é a intensidade da força de atrito estático nesse instante?",
-    "options": [
-      "Exatamente 30 N, equilibrando perfeitamente a força aplicada.",
-      "80 N, empurrando o equipamento no sentido oposto com aceleração repentina.",
-      "0 N, porque o corpo ainda não se moveu.",
-      "50 N, correspondente à diferença matemática entre o valor máximo e o aplicado."
-    ],
-    "correctIndex": 0,
-    "explanation": "O atrito estático é uma força autoajustável: equilibra exatamente a força aplicada (Fa = 30 N) até ao limiar máximo de 80 N.",
-    "distractorAnalysis": [
-      "Está incorreta: Se o atrito fosse 80 N contra uma força de 30 N, haveria uma força resultante de 50 N para trás e o corpo aceleraria sozinho, o que é absurdo.",
-      "Está incorreta: Se fosse 0 N, uma força de 30 N aceleraria imediatamente o corpo segundo F = m·a.",
-      "Está incorreta: A força de atrito não é a diferença; é o valor exato necessário para anular a força aplicada."
-    ],
-    "nursingApplication": "Permite entender que o atrito estático só atinge o seu valor máximo no limiar iminente do movimento."
-  },
-  {
-    "id": 1221,
-    "topicId": 1,
-    "question": "Quais são as quatro Forças Fundamentais da Natureza descritas na física?",
-    "options": [
-      "Força Muscular, Força de Atrito, Força Elástica e Força Centrípeta.",
-      "Gravitacional, Eletromagnética, Nuclear Forte e Nuclear Fraca.",
-      "Força de Tração, Força de Compressão, Força Normal e Força de Pressão.",
-      "Força Térmica, Força Eólica, Força Hidráulica e Força Solar."
-    ],
-    "correctIndex": 1,
-    "explanation": "Todas as forças da natureza derivam destas quatro interações fundamentais da física.",
-    "distractorAnalysis": [
-      "Está incorreta: Muscular, atrito e elástica são manifestações macroscópicas da força eletromagnética entre átomos.",
-      "Está incorreta: Tração, compressão e normal são esforços de contacto que decorrem de interações eletromagnéticas.",
-      "Está incorreta: Térmica, eólica e hidráulica são designações macroscópicas de energia ou mecânica de fluidos."
-    ],
-    "nursingApplication": "Identifica que as forças mecânicas nos tecidos derivam microscopicamente de interações eletromagnéticas."
-  },
-  {
-    "id": 1222,
-    "topicId": 1,
-    "question": "A Força Normal (N) de contacto entre dois corpos atua sempre em que direção relativamente à superfície de contacto?",
-    "options": [
-      "Paralela à superfície de contacto na direção do movimento.",
-      "Diagonal a quarenta e cinco graus apontando para o centro da Terra.",
-      "Perpendicular à superfície de contacto (formando um ângulo de noventa graus com o plano).",
-      "Em qualquer direção aleatória que varia a cada segundo."
-    ],
-    "correctIndex": 2,
-    "explanation": "O termo 'normal' em geometria e física significa estritamente ortogonal / perpendicular (90°) à superfície.",
-    "distractorAnalysis": [
-      "Está incorreta: A força paralela à superfície é a força de atrito, não a força normal.",
-      "Está incorreta: A direção não é fixa em 45°; depende da orientação geométrica da superfície de apoio.",
-      "Está incorreta: A normal é determinada pela geometria do contacto e não varia de modo aleatório."
-    ],
-    "nursingApplication": "Crucial para compreender como o colchão distribui a força perpendicular sobre as áreas do corpo."
-  },
-  {
-    "id": 1223,
-    "topicId": 1,
-    "question": "Como se define a Força de Atrito Estático (Fa_est) entre duas superfícies em contacto?",
-    "options": [
-      "A força que acelera ativamente os corpos para a frente após o movimento já ter começado.",
-      "A força de atrito que atua exclusivamente quando os corpos deslizam a altíssima velocidade.",
-      "A atração gravitacional entre as massas dos dois corpos em contacto no vácuo.",
-      "A força que se opõe à tendência de início de movimento relativo entre duas superfícies em repouso relativo."
-    ],
-    "correctIndex": 3,
-    "explanation": "O atrito estático impede o deslizamento até ser atingida a força máxima Fa_est_max = μ_est · N.",
-    "distractorAnalysis": [
-      "Está incorreta: O atrito opõe-se à tendência de movimento e não atua como força propulsora espontânea para a frente.",
-      "Está incorreta: O atrito que atua durante o deslizamento relativo em movimento é o atrito cinético, não o estático.",
-      "Está incorreta: O atrito decorre das interações microscópicas de contacto, não da atração gravitacional das massas."
-    ],
-    "nursingApplication": "Explica por que os calçados antiderrapantes impedem escorregadelas em pisos lisos hospitalares."
-  },
-  {
-    "id": 1224,
-    "topicId": 1,
-    "question": "Como se comparam os coeficientes de atrito estático (μ_est) e cinético (μ_cin) para o mesmo par de materiais?",
-    "options": [
-      "O coeficiente de atrito estático é sistematicamente superior ao coeficiente de atrito cinético (μ_est > μ_cin).",
-      "O coeficiente cinético é dez vezes superior ao estático em todos os sólidos.",
-      "Ambos os coeficientes são rigorosamente iguais em todas as superfícies físicas.",
-      "O coeficiente estático é sempre zero porque em repouso não existe atrito."
-    ],
-    "correctIndex": 0,
-    "explanation": "Vencer a inércia e rugosidades microscópicas em repouso exige maior força do que manter o deslizamento (μ_est > μ_cin).",
-    "distractorAnalysis": [
-      "Está incorreta: O atrito cinético é menor que o estático; uma vez em movimento, é mais fácil manter o deslizamento.",
-      "Está incorreta: Os coeficientes não são iguais; o estático é comprovadamente superior na grande maioria dos materiais.",
-      "Está incorreta: O atrito estático não é zero; atua até ao limiar máximo para impedir o início do movimento."
-    ],
-    "nursingApplication": "Explica por que custa mais começar a empurrar uma cama parada do que mantê-la a rolar suavemente."
-  },
-  {
-    "id": 1225,
-    "topicId": 1,
-    "question": "Se um bloco de 100 N repousa sobre um piso horizontal com μ_est = 0,4, qual é a força horizontal mínima para iniciar o movimento?",
-    "options": [
-      "100 N.",
-      "40 N.",
-      "250 N.",
-      "4 N."
-    ],
-    "correctIndex": 1,
-    "explanation": "A força de atrito estático máxima é Fa_max = μ_est · N = 0,4 · 100 N = 40 N. Para mover, é preciso superar 40 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 100 N é o valor da força normal (peso), não da força de atrito horizontal de deslizamento.",
-      "Está incorreta: 250 N resultaria de dividir 100 N por 0,4, o que está matematicamente incorreto.",
-      "Está incorreta: 4 N resultaria de multiplicar por 0,04 em vez do coeficiente 0,4 dado."
-    ],
-    "nursingApplication": "Permite calcular o esforço horizontal necessário para vencer a resistência inicial de um equipamento."
-  },
-  {
-    "id": 1226,
-    "topicId": 1,
-    "question": "Uma caixa é puxada e desliza sobre o chão com velocidade constante. Que força de atrito atua sobre ela durante o deslizamento?",
-    "options": [
-      "Força de atrito estático máximo.",
-      "Força nuclear forte.",
-      "Força de atrito cinético (ou dinâmico).",
-      "Força de gravitação universal pura."
-    ],
-    "correctIndex": 2,
-    "explanation": "Quando existe movimento relativo e deslizamento entre as superfícies, a força de atrito atuante é a cinética (Fa = μ_cin · N).",
-    "distractorAnalysis": [
-      "Está incorreta: O atrito estático atua apenas enquanto não há deslizamento entre as superfícies em repouso relativo.",
-      "Está incorreta: Forças nucleares atuam exclusivamente no interior dos núcleos atómicos, a distâncias subatómicas.",
-      "Está incorreta: A gravitação puxa verticalmente para baixo e não atua tangencialmente como atrito de contacto."
-    ],
-    "nursingApplication": "Determina a força contínua necessária para manter carrinhos e equipamentos em deslocamento constante."
-  },
-  {
-    "id": 1227,
-    "topicId": 1,
-    "question": "Porque é que o uso de rodas com rolamentos de esferas reduz drasticamente a resistência ao movimento dos equipamentos hospitalares?",
-    "options": [
-      "Porque anula completamente o peso total da maca e dos equipamentos transportados.",
-      "Porque as rodas criam um campo antigravitacional que eleva o equipamento no ar.",
-      "Porque transforma a força normal numa força centrípeta de tração para a frente.",
-      "Porque substitui o atrito de deslizamento (escorregamento) por atrito de rolamento, cujo coeficiente é muitíssimo menor."
-    ],
-    "correctIndex": 3,
-    "explanation": "O atrito de rolamento (rodar) apresenta coeficientes de atrito ordens de grandeza inferiores ao deslizamento direto.",
-    "distractorAnalysis": [
-      "Está incorreta: As rodas suportam o peso, mas não o anulam; o peso continua a ser sustentado pelo solo.",
-      "Está incorreta: Rodas não geram campos antigravitacionais; operam estritamente sob a mecânica clássica de rolamento.",
-      "Está incorreta: A força normal permanece vertical e perpendicular ao piso, não se convertendo em força centrípeta horizontal."
-    ],
-    "nursingApplication": "Explica por que a manutenção e lubrificação das rodas das camas e macas é crucial para a ergonomia."
-  },
-  {
-    "id": 1228,
-    "topicId": 1,
-    "question": "Qual é o principal papel biológico do Líquido Sinovial presente no interior das articulações sinoviais humanas?",
-    "options": [
-      "Atuar como lubrificante biológico, reduzindo o coeficiente de atrito entre as cartilagens para valores quase nulos.",
-      "Solidificar a articulação para impedir qualquer movimento entre os ossos adjacentes.",
-      "Gerar corrente elétrica contínua para acelerar a contração muscular das extremidades.",
-      "Substituir o osso cortical por tecido esponjoso altamente vascularizado."
-    ],
-    "correctIndex": 0,
-    "explanation": "O líquido sinovial reduz o coeficiente de atrito articular para valores extremamente baixos (~0,001 a 0,01), minimizando o desgaste.",
-    "distractorAnalysis": [
-      "Está incorreta: O líquido sinovial promove o movimento suave e fluido, não solidificando a cavidade articular.",
-      "Está incorreta: A função é puramente tribológica (lubrificação e amortecimento) e nutrição da cartilagem, não gerar corrente galvânica.",
-      "Está incorreta: O líquido sinovial preenche o espaço cavitário e não substitui a matriz óssea."
-    ],
-    "nursingApplication": "Princípio físico de lubrificação articular que previne o desgaste precoce das cartilagens no movimento humano."
-  },
-  {
-    "id": 1229,
-    "topicId": 1,
-    "question": "De acordo com as leis clássicas do atrito sólido seco (Leis de Coulomb), o que acontece à força máxima de atrito estático se um bloco for apoiado sobre a sua face de menor área em vez da face de maior área?",
-    "options": [
-      "Reduz-se a metade porque a área de contacto é menor.",
-      "Permanece inalterada, porque a força de atrito seco independe da área aparente de contacto macroscópica.",
-      "Aumenta para o dobro porque a pressão é maior.",
-      "Passa a ser rigorosamente nula porque blocos apoiados de lado não sofrem atrito."
-    ],
-    "correctIndex": 1,
-    "explanation": "As leis de Coulomb estabelecem que o atrito estático máximo depende apenas do coeficiente μ e da força normal N (Fa = μ·N), sendo independente da área aparente.",
-    "distractorAnalysis": [
-      "Está incorreta: A área aparente é menor, mas a pressão local aumenta proporcionalmente nas micro-rugosidades, mantendo a força total constante.",
-      "Está incorreta: A força de atrito não dobra; a pressão aumenta, mas a área diminui, mantendo o produto global de atrito idêntico.",
-      "Está incorreta: O atrito manifesta-se independentemente da face de apoio do bloco sobre o piso."
-    ],
-    "nursingApplication": "Mostra que calçado ou bases de apoio mais largas distribuem a pressão sem alterar a força de atrito total gerada."
-  },
-  {
-    "id": 1230,
-    "topicId": 1,
-    "question": "Um equipamento repousa num piso horizontal cujo atrito estático máximo é de 80 N. Se for empurrado horizontalmente com uma força de 30 N e continuar em repouso, qual é a intensidade da força de atrito estático nesse instante?",
-    "options": [
-      "80 N, empurrando o equipamento no sentido oposto com aceleração repentina.",
-      "0 N, porque o corpo ainda não se moveu.",
-      "Exatamente 30 N, equilibrando perfeitamente a força aplicada.",
-      "50 N, correspondente à diferença matemática entre o valor máximo e o aplicado."
-    ],
-    "correctIndex": 2,
-    "explanation": "O atrito estático é uma força autoajustável: equilibra exatamente a força aplicada (Fa = 30 N) até ao limiar máximo de 80 N.",
-    "distractorAnalysis": [
-      "Está incorreta: Se o atrito fosse 80 N contra uma força de 30 N, haveria uma força resultante de 50 N para trás e o corpo aceleraria sozinho, o que é absurdo.",
-      "Está incorreta: Se fosse 0 N, uma força de 30 N aceleraria imediatamente o corpo segundo F = m·a.",
-      "Está incorreta: A força de atrito não é a diferença; é o valor exato necessário para anular a força aplicada."
-    ],
-    "nursingApplication": "Permite entender que o atrito estático só atinge o seu valor máximo no limiar iminente do movimento."
-  },
-  {
-    "id": 1231,
-    "topicId": 1,
-    "question": "Quais são as quatro Forças Fundamentais da Natureza descritas na física?",
-    "options": [
-      "Força Muscular, Força de Atrito, Força Elástica e Força Centrípeta.",
-      "Força de Tração, Força de Compressão, Força Normal e Força de Pressão.",
-      "Força Térmica, Força Eólica, Força Hidráulica e Força Solar.",
-      "Gravitacional, Eletromagnética, Nuclear Forte e Nuclear Fraca."
-    ],
-    "correctIndex": 3,
-    "explanation": "Todas as forças da natureza derivam destas quatro interações fundamentais da física.",
-    "distractorAnalysis": [
-      "Está incorreta: Muscular, atrito e elástica são manifestações macroscópicas da força eletromagnética entre átomos.",
-      "Está incorreta: Tração, compressão e normal são esforços de contacto que decorrem de interações eletromagnéticas.",
-      "Está incorreta: Térmica, eólica e hidráulica são designações macroscópicas de energia ou mecânica de fluidos."
-    ],
-    "nursingApplication": "Identifica que as forças mecânicas nos tecidos derivam microscopicamente de interações eletromagnéticas."
-  },
-  {
-    "id": 1232,
-    "topicId": 1,
-    "question": "A Força Normal (N) de contacto entre dois corpos atua sempre em que direção relativamente à superfície de contacto?",
-    "options": [
-      "Perpendicular à superfície de contacto (formando um ângulo de noventa graus com o plano).",
-      "Paralela à superfície de contacto na direção do movimento.",
-      "Diagonal a quarenta e cinco graus apontando para o centro da Terra.",
-      "Em qualquer direção aleatória que varia a cada segundo."
-    ],
-    "correctIndex": 0,
-    "explanation": "O termo 'normal' em geometria e física significa estritamente ortogonal / perpendicular (90°) à superfície.",
-    "distractorAnalysis": [
-      "Está incorreta: A força paralela à superfície é a força de atrito, não a força normal.",
-      "Está incorreta: A direção não é fixa em 45°; depende da orientação geométrica da superfície de apoio.",
-      "Está incorreta: A normal é determinada pela geometria do contacto e não varia de modo aleatório."
-    ],
-    "nursingApplication": "Crucial para compreender como o colchão distribui a força perpendicular sobre as áreas do corpo."
-  },
-  {
-    "id": 1233,
-    "topicId": 1,
-    "question": "Como se define a Força de Atrito Estático (Fa_est) entre duas superfícies em contacto?",
-    "options": [
-      "A força que acelera ativamente os corpos para a frente após o movimento já ter começado.",
-      "A força que se opõe à tendência de início de movimento relativo entre duas superfícies em repouso relativo.",
-      "A força de atrito que atua exclusivamente quando os corpos deslizam a altíssima velocidade.",
-      "A atração gravitacional entre as massas dos dois corpos em contacto no vácuo."
-    ],
-    "correctIndex": 1,
-    "explanation": "O atrito estático impede o deslizamento até ser atingida a força máxima Fa_est_max = μ_est · N.",
-    "distractorAnalysis": [
-      "Está incorreta: O atrito opõe-se à tendência de movimento e não atua como força propulsora espontânea para a frente.",
-      "Está incorreta: O atrito que atua durante o deslizamento relativo em movimento é o atrito cinético, não o estático.",
-      "Está incorreta: O atrito decorre das interações microscópicas de contacto, não da atração gravitacional das massas."
-    ],
-    "nursingApplication": "Explica por que os calçados antiderrapantes impedem escorregadelas em pisos lisos hospitalares."
-  },
-  {
-    "id": 1234,
-    "topicId": 1,
-    "question": "Como se comparam os coeficientes de atrito estático (μ_est) e cinético (μ_cin) para o mesmo par de materiais?",
-    "options": [
-      "O coeficiente cinético é dez vezes superior ao estático em todos os sólidos.",
-      "Ambos os coeficientes são rigorosamente iguais em todas as superfícies físicas.",
-      "O coeficiente de atrito estático é sistematicamente superior ao coeficiente de atrito cinético (μ_est > μ_cin).",
-      "O coeficiente estático é sempre zero porque em repouso não existe atrito."
-    ],
-    "correctIndex": 2,
-    "explanation": "Vencer a inércia e rugosidades microscópicas em repouso exige maior força do que manter o deslizamento (μ_est > μ_cin).",
-    "distractorAnalysis": [
-      "Está incorreta: O atrito cinético é menor que o estático; uma vez em movimento, é mais fácil manter o deslizamento.",
-      "Está incorreta: Os coeficientes não são iguais; o estático é comprovadamente superior na grande maioria dos materiais.",
-      "Está incorreta: O atrito estático não é zero; atua até ao limiar máximo para impedir o início do movimento."
-    ],
-    "nursingApplication": "Explica por que custa mais começar a empurrar uma cama parada do que mantê-la a rolar suavemente."
-  },
-  {
-    "id": 1235,
-    "topicId": 1,
-    "question": "Se um bloco de 100 N repousa sobre um piso horizontal com μ_est = 0,4, qual é a força horizontal mínima para iniciar o movimento?",
-    "options": [
-      "100 N.",
-      "250 N.",
-      "4 N.",
-      "40 N."
-    ],
-    "correctIndex": 3,
-    "explanation": "A força de atrito estático máxima é Fa_max = μ_est · N = 0,4 · 100 N = 40 N. Para mover, é preciso superar 40 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 100 N é o valor da força normal (peso), não da força de atrito horizontal de deslizamento.",
-      "Está incorreta: 250 N resultaria de dividir 100 N por 0,4, o que está matematicamente incorreto.",
-      "Está incorreta: 4 N resultaria de multiplicar por 0,04 em vez do coeficiente 0,4 dado."
-    ],
-    "nursingApplication": "Permite calcular o esforço horizontal necessário para vencer a resistência inicial de um equipamento."
-  },
-  {
-    "id": 1236,
-    "topicId": 1,
-    "question": "Uma caixa é puxada e desliza sobre o chão com velocidade constante. Que força de atrito atua sobre ela durante o deslizamento?",
-    "options": [
-      "Força de atrito cinético (ou dinâmico).",
-      "Força de atrito estático máximo.",
-      "Força nuclear forte.",
-      "Força de gravitação universal pura."
-    ],
-    "correctIndex": 0,
-    "explanation": "Quando existe movimento relativo e deslizamento entre as superfícies, a força de atrito atuante é a cinética (Fa = μ_cin · N).",
-    "distractorAnalysis": [
-      "Está incorreta: O atrito estático atua apenas enquanto não há deslizamento entre as superfícies em repouso relativo.",
-      "Está incorreta: Forças nucleares atuam exclusivamente no interior dos núcleos atómicos, a distâncias subatómicas.",
-      "Está incorreta: A gravitação puxa verticalmente para baixo e não atua tangencialmente como atrito de contacto."
-    ],
-    "nursingApplication": "Determina a força contínua necessária para manter carrinhos e equipamentos em deslocamento constante."
-  },
-  {
-    "id": 1237,
-    "topicId": 1,
-    "question": "Porque é que o uso de rodas com rolamentos de esferas reduz drasticamente a resistência ao movimento dos equipamentos hospitalares?",
-    "options": [
-      "Porque anula completamente o peso total da maca e dos equipamentos transportados.",
-      "Porque substitui o atrito de deslizamento (escorregamento) por atrito de rolamento, cujo coeficiente é muitíssimo menor.",
-      "Porque as rodas criam um campo antigravitacional que eleva o equipamento no ar.",
-      "Porque transforma a força normal numa força centrípeta de tração para a frente."
-    ],
-    "correctIndex": 1,
-    "explanation": "O atrito de rolamento (rodar) apresenta coeficientes de atrito ordens de grandeza inferiores ao deslizamento direto.",
-    "distractorAnalysis": [
-      "Está incorreta: As rodas suportam o peso, mas não o anulam; o peso continua a ser sustentado pelo solo.",
-      "Está incorreta: Rodas não geram campos antigravitacionais; operam estritamente sob a mecânica clássica de rolamento.",
-      "Está incorreta: A força normal permanece vertical e perpendicular ao piso, não se convertendo em força centrípeta horizontal."
-    ],
-    "nursingApplication": "Explica por que a manutenção e lubrificação das rodas das camas e macas é crucial para a ergonomia."
-  },
-  {
-    "id": 1238,
-    "topicId": 1,
-    "question": "Qual é o principal papel biológico do Líquido Sinovial presente no interior das articulações sinoviais humanas?",
-    "options": [
-      "Solidificar a articulação para impedir qualquer movimento entre os ossos adjacentes.",
-      "Gerar corrente elétrica contínua para acelerar a contração muscular das extremidades.",
-      "Atuar como lubrificante biológico, reduzindo o coeficiente de atrito entre as cartilagens para valores quase nulos.",
-      "Substituir o osso cortical por tecido esponjoso altamente vascularizado."
-    ],
-    "correctIndex": 2,
-    "explanation": "O líquido sinovial reduz o coeficiente de atrito articular para valores extremamente baixos (~0,001 a 0,01), minimizando o desgaste.",
-    "distractorAnalysis": [
-      "Está incorreta: O líquido sinovial promove o movimento suave e fluido, não solidificando a cavidade articular.",
-      "Está incorreta: A função é puramente tribológica (lubrificação e amortecimento) e nutrição da cartilagem, não gerar corrente galvânica.",
-      "Está incorreta: O líquido sinovial preenche o espaço cavitário e não substitui a matriz óssea."
-    ],
-    "nursingApplication": "Princípio físico de lubrificação articular que previne o desgaste precoce das cartilagens no movimento humano."
-  },
-  {
-    "id": 1239,
-    "topicId": 1,
-    "question": "De acordo com as leis clássicas do atrito sólido seco (Leis de Coulomb), o que acontece à força máxima de atrito estático se um bloco for apoiado sobre a sua face de menor área em vez da face de maior área?",
-    "options": [
-      "Reduz-se a metade porque a área de contacto é menor.",
-      "Aumenta para o dobro porque a pressão é maior.",
-      "Passa a ser rigorosamente nula porque blocos apoiados de lado não sofrem atrito.",
-      "Permanece inalterada, porque a força de atrito seco independe da área aparente de contacto macroscópica."
-    ],
-    "correctIndex": 3,
-    "explanation": "As leis de Coulomb estabelecem que o atrito estático máximo depende apenas do coeficiente μ e da força normal N (Fa = μ·N), sendo independente da área aparente.",
-    "distractorAnalysis": [
-      "Está incorreta: A área aparente é menor, mas a pressão local aumenta proporcionalmente nas micro-rugosidades, mantendo a força total constante.",
-      "Está incorreta: A força de atrito não dobra; a pressão aumenta, mas a área diminui, mantendo o produto global de atrito idêntico.",
-      "Está incorreta: O atrito manifesta-se independentemente da face de apoio do bloco sobre o piso."
-    ],
-    "nursingApplication": "Mostra que calçado ou bases de apoio mais largas distribuem a pressão sem alterar a força de atrito total gerada."
-  },
-  {
-    "id": 1240,
-    "topicId": 1,
-    "question": "Um equipamento repousa num piso horizontal cujo atrito estático máximo é de 80 N. Se for empurrado horizontalmente com uma força de 30 N e continuar em repouso, qual é a intensidade da força de atrito estático nesse instante?",
-    "options": [
-      "Exatamente 30 N, equilibrando perfeitamente a força aplicada.",
-      "80 N, empurrando o equipamento no sentido oposto com aceleração repentina.",
-      "0 N, porque o corpo ainda não se moveu.",
-      "50 N, correspondente à diferença matemática entre o valor máximo e o aplicado."
-    ],
-    "correctIndex": 0,
-    "explanation": "O atrito estático é uma força autoajustável: equilibra exatamente a força aplicada (Fa = 30 N) até ao limiar máximo de 80 N.",
-    "distractorAnalysis": [
-      "Está incorreta: Se o atrito fosse 80 N contra uma força de 30 N, haveria uma força resultante de 50 N para trás e o corpo aceleraria sozinho, o que é absurdo.",
-      "Está incorreta: Se fosse 0 N, uma força de 30 N aceleraria imediatamente o corpo segundo F = m·a.",
-      "Está incorreta: A força de atrito não é a diferença; é o valor exato necessário para anular a força aplicada."
-    ],
-    "nursingApplication": "Permite entender que o atrito estático só atinge o seu valor máximo no limiar iminente do movimento."
-  },
-  {
-    "id": 1241,
-    "topicId": 1,
-    "question": "Quais são as quatro Forças Fundamentais da Natureza descritas na física?",
-    "options": [
-      "Força Muscular, Força de Atrito, Força Elástica e Força Centrípeta.",
-      "Gravitacional, Eletromagnética, Nuclear Forte e Nuclear Fraca.",
-      "Força de Tração, Força de Compressão, Força Normal e Força de Pressão.",
-      "Força Térmica, Força Eólica, Força Hidráulica e Força Solar."
-    ],
-    "correctIndex": 1,
-    "explanation": "Todas as forças da natureza derivam destas quatro interações fundamentais da física.",
-    "distractorAnalysis": [
-      "Está incorreta: Muscular, atrito e elástica são manifestações macroscópicas da força eletromagnética entre átomos.",
-      "Está incorreta: Tração, compressão e normal são esforços de contacto que decorrem de interações eletromagnéticas.",
-      "Está incorreta: Térmica, eólica e hidráulica são designações macroscópicas de energia ou mecânica de fluidos."
-    ],
-    "nursingApplication": "Identifica que as forças mecânicas nos tecidos derivam microscopicamente de interações eletromagnéticas."
-  },
-  {
-    "id": 1242,
-    "topicId": 1,
-    "question": "A Força Normal (N) de contacto entre dois corpos atua sempre em que direção relativamente à superfície de contacto?",
-    "options": [
-      "Paralela à superfície de contacto na direção do movimento.",
-      "Diagonal a quarenta e cinco graus apontando para o centro da Terra.",
-      "Perpendicular à superfície de contacto (formando um ângulo de noventa graus com o plano).",
-      "Em qualquer direção aleatória que varia a cada segundo."
-    ],
-    "correctIndex": 2,
-    "explanation": "O termo 'normal' em geometria e física significa estritamente ortogonal / perpendicular (90°) à superfície.",
-    "distractorAnalysis": [
-      "Está incorreta: A força paralela à superfície é a força de atrito, não a força normal.",
-      "Está incorreta: A direção não é fixa em 45°; depende da orientação geométrica da superfície de apoio.",
-      "Está incorreta: A normal é determinada pela geometria do contacto e não varia de modo aleatório."
-    ],
-    "nursingApplication": "Crucial para compreender como o colchão distribui a força perpendicular sobre as áreas do corpo."
-  },
-  {
-    "id": 1243,
-    "topicId": 1,
-    "question": "Como se define a Força de Atrito Estático (Fa_est) entre duas superfícies em contacto?",
-    "options": [
-      "A força que acelera ativamente os corpos para a frente após o movimento já ter começado.",
-      "A força de atrito que atua exclusivamente quando os corpos deslizam a altíssima velocidade.",
-      "A atração gravitacional entre as massas dos dois corpos em contacto no vácuo.",
-      "A força que se opõe à tendência de início de movimento relativo entre duas superfícies em repouso relativo."
-    ],
-    "correctIndex": 3,
-    "explanation": "O atrito estático impede o deslizamento até ser atingida a força máxima Fa_est_max = μ_est · N.",
-    "distractorAnalysis": [
-      "Está incorreta: O atrito opõe-se à tendência de movimento e não atua como força propulsora espontânea para a frente.",
-      "Está incorreta: O atrito que atua durante o deslizamento relativo em movimento é o atrito cinético, não o estático.",
-      "Está incorreta: O atrito decorre das interações microscópicas de contacto, não da atração gravitacional das massas."
-    ],
-    "nursingApplication": "Explica por que os calçados antiderrapantes impedem escorregadelas em pisos lisos hospitalares."
-  },
-  {
-    "id": 1244,
-    "topicId": 1,
-    "question": "Como se comparam os coeficientes de atrito estático (μ_est) e cinético (μ_cin) para o mesmo par de materiais?",
-    "options": [
-      "O coeficiente de atrito estático é sistematicamente superior ao coeficiente de atrito cinético (μ_est > μ_cin).",
-      "O coeficiente cinético é dez vezes superior ao estático em todos os sólidos.",
-      "Ambos os coeficientes são rigorosamente iguais em todas as superfícies físicas.",
-      "O coeficiente estático é sempre zero porque em repouso não existe atrito."
-    ],
-    "correctIndex": 0,
-    "explanation": "Vencer a inércia e rugosidades microscópicas em repouso exige maior força do que manter o deslizamento (μ_est > μ_cin).",
-    "distractorAnalysis": [
-      "Está incorreta: O atrito cinético é menor que o estático; uma vez em movimento, é mais fácil manter o deslizamento.",
-      "Está incorreta: Os coeficientes não são iguais; o estático é comprovadamente superior na grande maioria dos materiais.",
-      "Está incorreta: O atrito estático não é zero; atua até ao limiar máximo para impedir o início do movimento."
-    ],
-    "nursingApplication": "Explica por que custa mais começar a empurrar uma cama parada do que mantê-la a rolar suavemente."
-  },
-  {
-    "id": 1245,
-    "topicId": 1,
-    "question": "Se um bloco de 100 N repousa sobre um piso horizontal com μ_est = 0,4, qual é a força horizontal mínima para iniciar o movimento?",
-    "options": [
-      "100 N.",
-      "40 N.",
-      "250 N.",
-      "4 N."
-    ],
-    "correctIndex": 1,
-    "explanation": "A força de atrito estático máxima é Fa_max = μ_est · N = 0,4 · 100 N = 40 N. Para mover, é preciso superar 40 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 100 N é o valor da força normal (peso), não da força de atrito horizontal de deslizamento.",
-      "Está incorreta: 250 N resultaria de dividir 100 N por 0,4, o que está matematicamente incorreto.",
-      "Está incorreta: 4 N resultaria de multiplicar por 0,04 em vez do coeficiente 0,4 dado."
-    ],
-    "nursingApplication": "Permite calcular o esforço horizontal necessário para vencer a resistência inicial de um equipamento."
-  },
-  {
-    "id": 1246,
-    "topicId": 1,
-    "question": "Uma caixa é puxada e desliza sobre o chão com velocidade constante. Que força de atrito atua sobre ela durante o deslizamento?",
-    "options": [
-      "Força de atrito estático máximo.",
-      "Força nuclear forte.",
-      "Força de atrito cinético (ou dinâmico).",
-      "Força de gravitação universal pura."
-    ],
-    "correctIndex": 2,
-    "explanation": "Quando existe movimento relativo e deslizamento entre as superfícies, a força de atrito atuante é a cinética (Fa = μ_cin · N).",
-    "distractorAnalysis": [
-      "Está incorreta: O atrito estático atua apenas enquanto não há deslizamento entre as superfícies em repouso relativo.",
-      "Está incorreta: Forças nucleares atuam exclusivamente no interior dos núcleos atómicos, a distâncias subatómicas.",
-      "Está incorreta: A gravitação puxa verticalmente para baixo e não atua tangencialmente como atrito de contacto."
-    ],
-    "nursingApplication": "Determina a força contínua necessária para manter carrinhos e equipamentos em deslocamento constante."
-  },
-  {
-    "id": 1247,
-    "topicId": 1,
-    "question": "Porque é que o uso de rodas com rolamentos de esferas reduz drasticamente a resistência ao movimento dos equipamentos hospitalares?",
-    "options": [
-      "Porque anula completamente o peso total da maca e dos equipamentos transportados.",
-      "Porque as rodas criam um campo antigravitacional que eleva o equipamento no ar.",
-      "Porque transforma a força normal numa força centrípeta de tração para a frente.",
-      "Porque substitui o atrito de deslizamento (escorregamento) por atrito de rolamento, cujo coeficiente é muitíssimo menor."
-    ],
-    "correctIndex": 3,
-    "explanation": "O atrito de rolamento (rodar) apresenta coeficientes de atrito ordens de grandeza inferiores ao deslizamento direto.",
-    "distractorAnalysis": [
-      "Está incorreta: As rodas suportam o peso, mas não o anulam; o peso continua a ser sustentado pelo solo.",
-      "Está incorreta: Rodas não geram campos antigravitacionais; operam estritamente sob a mecânica clássica de rolamento.",
-      "Está incorreta: A força normal permanece vertical e perpendicular ao piso, não se convertendo em força centrípeta horizontal."
-    ],
-    "nursingApplication": "Explica por que a manutenção e lubrificação das rodas das camas e macas é crucial para a ergonomia."
-  },
-  {
-    "id": 1248,
-    "topicId": 1,
-    "question": "Qual é o principal papel biológico do Líquido Sinovial presente no interior das articulações sinoviais humanas?",
-    "options": [
-      "Atuar como lubrificante biológico, reduzindo o coeficiente de atrito entre as cartilagens para valores quase nulos.",
-      "Solidificar a articulação para impedir qualquer movimento entre os ossos adjacentes.",
-      "Gerar corrente elétrica contínua para acelerar a contração muscular das extremidades.",
-      "Substituir o osso cortical por tecido esponjoso altamente vascularizado."
-    ],
-    "correctIndex": 0,
-    "explanation": "O líquido sinovial reduz o coeficiente de atrito articular para valores extremamente baixos (~0,001 a 0,01), minimizando o desgaste.",
-    "distractorAnalysis": [
-      "Está incorreta: O líquido sinovial promove o movimento suave e fluido, não solidificando a cavidade articular.",
-      "Está incorreta: A função é puramente tribológica (lubrificação e amortecimento) e nutrição da cartilagem, não gerar corrente galvânica.",
-      "Está incorreta: O líquido sinovial preenche o espaço cavitário e não substitui a matriz óssea."
-    ],
-    "nursingApplication": "Princípio físico de lubrificação articular que previne o desgaste precoce das cartilagens no movimento humano."
-  },
-  {
-    "id": 1249,
-    "topicId": 1,
-    "question": "De acordo com as leis clássicas do atrito sólido seco (Leis de Coulomb), o que acontece à força máxima de atrito estático se um bloco for apoiado sobre a sua face de menor área em vez da face de maior área?",
-    "options": [
-      "Reduz-se a metade porque a área de contacto é menor.",
-      "Permanece inalterada, porque a força de atrito seco independe da área aparente de contacto macroscópica.",
-      "Aumenta para o dobro porque a pressão é maior.",
-      "Passa a ser rigorosamente nula porque blocos apoiados de lado não sofrem atrito."
-    ],
-    "correctIndex": 1,
-    "explanation": "As leis de Coulomb estabelecem que o atrito estático máximo depende apenas do coeficiente μ e da força normal N (Fa = μ·N), sendo independente da área aparente.",
-    "distractorAnalysis": [
-      "Está incorreta: A área aparente é menor, mas a pressão local aumenta proporcionalmente nas micro-rugosidades, mantendo a força total constante.",
-      "Está incorreta: A força de atrito não dobra; a pressão aumenta, mas a área diminui, mantendo o produto global de atrito idêntico.",
-      "Está incorreta: O atrito manifesta-se independentemente da face de apoio do bloco sobre o piso."
-    ],
-    "nursingApplication": "Mostra que calçado ou bases de apoio mais largas distribuem a pressão sem alterar a força de atrito total gerada."
-  },
-  {
-    "id": 1250,
-    "topicId": 1,
-    "question": "Um equipamento repousa num piso horizontal cujo atrito estático máximo é de 80 N. Se for empurrado horizontalmente com uma força de 30 N e continuar em repouso, qual é a intensidade da força de atrito estático nesse instante?",
-    "options": [
-      "80 N, empurrando o equipamento no sentido oposto com aceleração repentina.",
-      "0 N, porque o corpo ainda não se moveu.",
-      "Exatamente 30 N, equilibrando perfeitamente a força aplicada.",
-      "50 N, correspondente à diferença matemática entre o valor máximo e o aplicado."
-    ],
-    "correctIndex": 2,
-    "explanation": "O atrito estático é uma força autoajustável: equilibra exatamente a força aplicada (Fa = 30 N) até ao limiar máximo de 80 N.",
-    "distractorAnalysis": [
-      "Está incorreta: Se o atrito fosse 80 N contra uma força de 30 N, haveria uma força resultante de 50 N para trás e o corpo aceleraria sozinho, o que é absurdo.",
-      "Está incorreta: Se fosse 0 N, uma força de 30 N aceleraria imediatamente o corpo segundo F = m·a.",
-      "Está incorreta: A força de atrito não é a diferença; é o valor exato necessário para anular a força aplicada."
-    ],
-    "nursingApplication": "Permite entender que o atrito estático só atinge o seu valor máximo no limiar iminente do movimento."
-  },
-  {
-    "id": 1251,
-    "topicId": 1,
-    "question": "Quais são as duas condições fundamentais para que um corpo rígido extenso se encontre em Equilíbrio Estático completo?",
-    "options": [
-      "Velocidade máxima constante e aceleração gravitacional infinita.",
-      "Temperatura nula no zero absoluto e densidade volumétrica constante.",
-      "Pressão hidrostática nula e ausência total de massa no vácuo.",
-      "Força resultante nula (∑F = 0) e Momento resultante nulo (∑M = 0)."
-    ],
-    "correctIndex": 3,
-    "explanation": "O equilíbrio estático de um corpo extenso exige equilíbrio de translação (∑F = 0) e equilíbrio de rotação (∑M = 0).",
-    "distractorAnalysis": [
-      "Está incorreta: Velocidade máxima constante não define equilíbrio estático (que exige repouso, v = 0).",
-      "Está incorreta: Temperatura e densidade são grandezas termodinâmicas, não condições mecânicas de equilíbrio estático.",
-      "Está incorreta: Pressão nula e ausência de massa pertencem ao vácuo ideal e não descrevem corpos materiais rígidos."
-    ],
-    "nursingApplication": "Base da biomecânica postural: manter o corpo imóvel sem translação nem rotações indesejadas."
-  },
-  {
-    "id": 1252,
-    "topicId": 1,
-    "question": "O que traduz a Primeira Condição de Equilíbrio (Equilíbrio de Translação)?",
-    "options": [
-      "A soma vetorial de todas as forças que atuam sobre o corpo tem de ser igual a zero (∑F = 0).",
-      "A soma dos momentos de força em torno de qualquer eixo tem de ser estritamente positiva.",
-      "A velocidade linear do corpo tem de aumentar a uma taxa de dez metros por segundo.",
-      "O corpo tem de girar a uma velocidade angular rigorosamente constante."
-    ],
-    "correctIndex": 0,
-    "explanation": "A primeira condição de equilíbrio (∑F = 0) assegura que o centro de massa não sofre nenhuma aceleração linear.",
-    "distractorAnalysis": [
-      "Está incorreta: Soma de momentos positiva geraria aceleração angular rotacional, violando o equilíbrio estático.",
-      "Está incorreta: Velocidade a aumentar implica aceleração linear não nula, o que contradiz ∑F = 0.",
-      "Está incorreta: Girar com velocidade angular refere-se a rotação dinâmica, não à primeira condição estática."
-    ],
-    "nursingApplication": "Assegura que as forças musculares e de apoio equilibram o peso corporal sem que o indivíduo caia."
-  },
-  {
-    "id": 1253,
-    "topicId": 1,
-    "question": "O que traduz a Segunda Condição de Equilíbrio (Equilíbrio de Rotação)?",
-    "options": [
-      "A força resultante de translação tem de ser perpendicular ao eixo da Terra.",
-      "A soma de todos os momentos de força (torques) em relação a qualquer ponto de referência tem de ser nula (∑M = 0).",
-      "O corpo tem de ser constituído exclusivamente por materiais fluidos ideais.",
-      "A aceleração gravítica tem de ser cancelada por forças magnéticas externas."
-    ],
-    "correctIndex": 1,
-    "explanation": "A segunda condição de equilíbrio (∑M = 0) garante que o corpo rígido não sofre nenhuma aceleração angular de rotação.",
-    "distractorAnalysis": [
-      "Está incorreta: Força resultante perpendicular não impede rotações geradas por binários de forças.",
-      "Está incorreta: O equilíbrio estático de rotação aplica-se com rigor a sólidos e corpos rígidos extensos.",
-      "Está incorreta: Forças magnéticas não são necessárias para o equilíbrio mecânico clássico de rotações."
-    ],
-    "nursingApplication": "Fundamental para entender por que forças iguais aplicadas em pontos diferentes podem desequilibrar uma postura."
-  },
-  {
-    "id": 1254,
-    "topicId": 1,
-    "question": "Como se classifica um estado de equilíbrio no qual o corpo, após ser ligeiramente perturbado, regressa espontaneamente à posição inicial?",
-    "options": [
-      "Equilíbrio Instável.",
-      "Equilíbrio Indiferente.",
-      "Equilíbrio Estável.",
-      "Equilíbrio Metastável Térmico."
-    ],
-    "correctIndex": 2,
-    "explanation": "No equilíbrio estável, qualquer pequeno desvio eleva o centro de gravidade e cria momentos restauradores que devolvem o corpo à posição original.",
-    "distractorAnalysis": [
-      "Está incorreta: No equilíbrio instável, o desvio rebaixa o centro de gravidade e o corpo afasta-se ainda mais da posição de repouso.",
-      "Está incorreta: No equilíbrio indiferente, o centro de gravidade mantém a mesma altura e o corpo permanece na nova posição onde foi colocado.",
-      "Está incorreta: Equilíbrio metastável térmico é um conceito da termodinâmica de fases, não da mecânica estática de corpos rígidos."
-    ],
-    "nursingApplication": "Postura de base larga e centro de gravidade baixo proporciona equilíbrio estável ao corpo humano."
-  },
-  {
-    "id": 1255,
-    "topicId": 1,
-    "question": "Como se classifica o equilíbrio de uma esfera que repousa sobre uma mesa plana perfeitamente horizontal?",
-    "options": [
-      "Equilíbrio Instável.",
-      "Equilíbrio Estável.",
-      "Equilíbrio Crítico Nuclear.",
-      "Equilíbrio Indiferente."
-    ],
-    "correctIndex": 3,
-    "explanation": "Ao ser deslocada na mesa horizontal, a esfera não altera a altura do seu centro de gravidade e permanece em repouso na nova posição.",
-    "distractorAnalysis": [
-      "Está incorreta: Não é instável porque a esfera não acelera espontaneamente para longe ao sofrer um pequeno toque.",
-      "Está incorreta: Não é estável porque a esfera não regressa espontaneamente ao ponto anterior onde estava.",
-      "Está incorreta: Equilíbrio nuclear não se aplica à mecânica clássica macroscópica de uma esfera numa mesa."
-    ],
-    "nursingApplication": "Compreender os tipos de equilíbrio apoia a avaliação do risco de queda e estabilidade de suportes."
-  },
-  {
-    "id": 1256,
-    "topicId": 1,
-    "question": "Num plano inclinado de ângulo θ com a horizontal, como se calcula a componente do Peso perpendicular à rampa (Pn)?",
-    "options": [
-      "Pn = P · cos(θ).",
-      "Pn = P · sen(θ).",
-      "Pn = P · tg(θ).",
-      "Pn = P / cos(θ)."
-    ],
-    "correctIndex": 0,
-    "explanation": "A decomposição trigonométrica da força peso em eixos ortogonais dá Pn = P · cos(θ) na direção normal à superfície.",
-    "distractorAnalysis": [
-      "Está incorreta: P · sen(θ) é a componente tangencial paralela à rampa (Pt), responsável por fazer deslizar o corpo.",
-      "Está incorreta: P · tg(θ) não representa nenhuma das componentes ortogonais diretas da força peso no plano inclinado.",
-      "Está incorreta: Dividir por cos(θ) violaria a relação geométrica do triângulo de forças (a componente é menor que o peso)."
-    ],
-    "nursingApplication": "Permite calcular a força normal de contacto exercida pelas rodas numa rampa de acesso hospitalar."
-  },
-  {
-    "id": 1257,
-    "topicId": 1,
-    "question": "Num plano inclinado de ângulo θ, qual é a componente do Peso responsável por fazer deslizar o corpo rampa abaixo (Pt)?",
-    "options": [
-      "Pt = P · cos(θ).",
-      "Pt = P · sen(θ).",
-      "Pt = P · cos²(θ).",
-      "Pt = P / sen(θ)."
-    ],
-    "correctIndex": 1,
-    "explanation": "A componente tangencial paralela à rampa é Pt = P · sen(θ). Se superar o atrito, o corpo desliza para baixo.",
-    "distractorAnalysis": [
-      "Está incorreta: P · cos(θ) é a componente normal perpendicular (Pn), que pressiona o corpo contra a superfície da rampa.",
-      "Está incorreta: P · cos²(θ) não tem fundamento na decomposição vetorial trigonométrica simples do peso.",
-      "Está incorreta: Dividir pelo seno resultaria num valor superior ao peso, o que é geometricamente impossível para uma componente."
-    ],
-    "nursingApplication": "Mostra a força que um operador tem de suster ao subir ou descer macas em rampas de circulação."
-  },
-  {
-    "id": 1258,
-    "topicId": 1,
-    "question": "O que acontece à componente do peso paralela à rampa (Pt = P · sen θ) quando a inclinação da rampa (θ) aumenta de 5° para 30°?",
-    "options": [
-      "Diminui até se anular completamente a noventa graus.",
-      "Permanece rigorosamente constante porque o peso total do corpo não varia.",
-      "Aumenta substancialmente, porque a função seno é estritamente crescente no intervalo de 0° a 90°.",
-      "Passa a ser negativa, fazendo o corpo subir a rampa espontaneamente."
-    ],
-    "correctIndex": 2,
-    "explanation": "Como sen(30°) = 0,5 e sen(5°) ≈ 0,087, a força que puxa rampa abaixo aumenta cerca de 6 vezes com a maior inclinação.",
-    "distractorAnalysis": [
-      "Está incorreta: A componente paralela aumenta com a inclinação e atinge o valor máximo (Pt = P) a 90° (queda livre vertical).",
-      "Está incorreta: O peso total é constante, mas a sua projeção tangencial ao longo da rampa depende diretamente do ângulo de inclinação.",
-      "Está incorreta: A gravidade não inverte de sentido; atrai sempre os corpos para baixo ao longo da rampa."
-    ],
-    "nursingApplication": "Justifica por que as normas de acessibilidade hospitalar exigem rampas com declives muito suaves (< 6°)."
-  },
-  {
-    "id": 1259,
-    "topicId": 1,
-    "question": "Porque é que a condição de força resultante nula (∑F = 0) é suficiente para o equilíbrio de uma partícula pontual, mas insuficiente para assegurar o equilíbrio estático de um corpo extenso?",
-    "options": [
-      "Porque os corpos extensos perdem a massa quando colocados em repouso estático.",
-      "Porque a 1.ª Lei de Newton deixa de ser válida para qualquer objeto com tamanho superior a um milímetro.",
-      "Porque as forças nos corpos extensos transformam-se espontaneamente em radiação térmica de alta energia.",
-      "Porque num corpo extenso as forças podem ter pontos de aplicação distintos e gerar momentos rotacionais, exigindo cumulativamente que a soma dos momentos seja nula (∑M = 0)."
-    ],
-    "correctIndex": 3,
-    "explanation": "Num corpo extenso, duas forças iguais e opostas em linhas de ação diferentes formam um binário que faz girar o corpo (∑F = 0, mas ∑M ≠ 0).",
-    "distractorAnalysis": [
-      "Está incorreta: A massa é uma propriedade conservada da matéria e não se anula com o repouso.",
-      "Está incorreta: A mecânica de Newton é plenamente válida para corpos extensos através do equilíbrio simultâneo de translação e rotação.",
-      "Está incorreta: Forças mecânicas em equilíbrio não se convertem em radiação térmica espontânea."
-    ],
-    "nursingApplication": "Explica por que transferir uma pessoa exige controlar tanto as forças de sustentação como as tendências de rotação."
-  },
-  {
-    "id": 1260,
-    "topicId": 1,
-    "question": "Uma tábua de transferência horizontal está apoiada nas suas extremidades em duas superfícies e suporta uma carga vertical no seu ponto médio. As forças normais nos apoios e a força peso constituem um sistema de:",
-    "options": [
-      "Forças paralelas em equilíbrio estático, satisfazendo simultaneamente ∑F = 0 e ∑M = 0.",
-      "Forças concorrentes num único vértice central.",
-      "Forças colineares atuando sobre uma única reta de suporte vertical comum.",
-      "Forças centrípetas que aceleram a tábua em órbita elíptica fechada."
-    ],
-    "correctIndex": 0,
-    "explanation": "As três forças têm direções verticais paralelas em linhas de ação distintas e equilibram-se em translação e rotação.",
-    "distractorAnalysis": [
-      "Está incorreta: Forças concorrentes convergem para um único ponto no espaço; aqui as linhas de ação são paralelas e separadas.",
-      "Está incorreta: Forças colineares atuam estritamente sobre a mesma linha de ação, o que não ocorre com apoios afastados.",
-      "Está incorreta: Trata-se de uma estrutura estática em repouso hospitalar, sem qualquer movimento orbital centrípeto."
-    ],
-    "nursingApplication": "Princípio físico de funcionamento de tábuas de transferência e pontes de apoio entre leitos."
-  },
-  {
-    "id": 1261,
-    "topicId": 1,
-    "question": "Quais são as duas condições fundamentais para que um corpo rígido extenso se encontre em Equilíbrio Estático completo?",
-    "options": [
-      "Velocidade máxima constante e aceleração gravitacional infinita.",
-      "Força resultante nula (∑F = 0) e Momento resultante nulo (∑M = 0).",
-      "Temperatura nula no zero absoluto e densidade volumétrica constante.",
-      "Pressão hidrostática nula e ausência total de massa no vácuo."
-    ],
-    "correctIndex": 1,
-    "explanation": "O equilíbrio estático de um corpo extenso exige equilíbrio de translação (∑F = 0) e equilíbrio de rotação (∑M = 0).",
-    "distractorAnalysis": [
-      "Está incorreta: Velocidade máxima constante não define equilíbrio estático (que exige repouso, v = 0).",
-      "Está incorreta: Temperatura e densidade são grandezas termodinâmicas, não condições mecânicas de equilíbrio estático.",
-      "Está incorreta: Pressão nula e ausência de massa pertencem ao vácuo ideal e não descrevem corpos materiais rígidos."
-    ],
-    "nursingApplication": "Base da biomecânica postural: manter o corpo imóvel sem translação nem rotações indesejadas."
-  },
-  {
-    "id": 1262,
-    "topicId": 1,
-    "question": "O que traduz a Primeira Condição de Equilíbrio (Equilíbrio de Translação)?",
-    "options": [
-      "A soma dos momentos de força em torno de qualquer eixo tem de ser estritamente positiva.",
-      "A velocidade linear do corpo tem de aumentar a uma taxa de dez metros por segundo.",
-      "A soma vetorial de todas as forças que atuam sobre o corpo tem de ser igual a zero (∑F = 0).",
-      "O corpo tem de girar a uma velocidade angular rigorosamente constante."
-    ],
-    "correctIndex": 2,
-    "explanation": "A primeira condição de equilíbrio (∑F = 0) assegura que o centro de massa não sofre nenhuma aceleração linear.",
-    "distractorAnalysis": [
-      "Está incorreta: Soma de momentos positiva geraria aceleração angular rotacional, violando o equilíbrio estático.",
-      "Está incorreta: Velocidade a aumentar implica aceleração linear não nula, o que contradiz ∑F = 0.",
-      "Está incorreta: Girar com velocidade angular refere-se a rotação dinâmica, não à primeira condição estática."
-    ],
-    "nursingApplication": "Assegura que as forças musculares e de apoio equilibram o peso corporal sem que o indivíduo caia."
-  },
-  {
-    "id": 1263,
-    "topicId": 1,
-    "question": "O que traduz a Segunda Condição de Equilíbrio (Equilíbrio de Rotação)?",
-    "options": [
-      "A força resultante de translação tem de ser perpendicular ao eixo da Terra.",
-      "O corpo tem de ser constituído exclusivamente por materiais fluidos ideais.",
-      "A aceleração gravítica tem de ser cancelada por forças magnéticas externas.",
-      "A soma de todos os momentos de força (torques) em relação a qualquer ponto de referência tem de ser nula (∑M = 0)."
-    ],
-    "correctIndex": 3,
-    "explanation": "A segunda condição de equilíbrio (∑M = 0) garante que o corpo rígido não sofre nenhuma aceleração angular de rotação.",
-    "distractorAnalysis": [
-      "Está incorreta: Força resultante perpendicular não impede rotações geradas por binários de forças.",
-      "Está incorreta: O equilíbrio estático de rotação aplica-se com rigor a sólidos e corpos rígidos extensos.",
-      "Está incorreta: Forças magnéticas não são necessárias para o equilíbrio mecânico clássico de rotações."
-    ],
-    "nursingApplication": "Fundamental para entender por que forças iguais aplicadas em pontos diferentes podem desequilibrar uma postura."
-  },
-  {
-    "id": 1264,
-    "topicId": 1,
-    "question": "Como se classifica um estado de equilíbrio no qual o corpo, após ser ligeiramente perturbado, regressa espontaneamente à posição inicial?",
-    "options": [
-      "Equilíbrio Estável.",
-      "Equilíbrio Instável.",
-      "Equilíbrio Indiferente.",
-      "Equilíbrio Metastável Térmico."
-    ],
-    "correctIndex": 0,
-    "explanation": "No equilíbrio estável, qualquer pequeno desvio eleva o centro de gravidade e cria momentos restauradores que devolvem o corpo à posição original.",
-    "distractorAnalysis": [
-      "Está incorreta: No equilíbrio instável, o desvio rebaixa o centro de gravidade e o corpo afasta-se ainda mais da posição de repouso.",
-      "Está incorreta: No equilíbrio indiferente, o centro de gravidade mantém a mesma altura e o corpo permanece na nova posição onde foi colocado.",
-      "Está incorreta: Equilíbrio metastável térmico é um conceito da termodinâmica de fases, não da mecânica estática de corpos rígidos."
-    ],
-    "nursingApplication": "Postura de base larga e centro de gravidade baixo proporciona equilíbrio estável ao corpo humano."
-  },
-  {
-    "id": 1265,
-    "topicId": 1,
-    "question": "Como se classifica o equilíbrio de uma esfera que repousa sobre uma mesa plana perfeitamente horizontal?",
-    "options": [
-      "Equilíbrio Instável.",
-      "Equilíbrio Indiferente.",
-      "Equilíbrio Estável.",
-      "Equilíbrio Crítico Nuclear."
-    ],
-    "correctIndex": 1,
-    "explanation": "Ao ser deslocada na mesa horizontal, a esfera não altera a altura do seu centro de gravidade e permanece em repouso na nova posição.",
-    "distractorAnalysis": [
-      "Está incorreta: Não é instável porque a esfera não acelera espontaneamente para longe ao sofrer um pequeno toque.",
-      "Está incorreta: Não é estável porque a esfera não regressa espontaneamente ao ponto anterior onde estava.",
-      "Está incorreta: Equilíbrio nuclear não se aplica à mecânica clássica macroscópica de uma esfera numa mesa."
-    ],
-    "nursingApplication": "Compreender os tipos de equilíbrio apoia a avaliação do risco de queda e estabilidade de suportes."
-  },
-  {
-    "id": 1266,
-    "topicId": 1,
-    "question": "Num plano inclinado de ângulo θ com a horizontal, como se calcula a componente do Peso perpendicular à rampa (Pn)?",
-    "options": [
-      "Pn = P · sen(θ).",
-      "Pn = P · tg(θ).",
-      "Pn = P · cos(θ).",
-      "Pn = P / cos(θ)."
-    ],
-    "correctIndex": 2,
-    "explanation": "A decomposição trigonométrica da força peso em eixos ortogonais dá Pn = P · cos(θ) na direção normal à superfície.",
-    "distractorAnalysis": [
-      "Está incorreta: P · sen(θ) é a componente tangencial paralela à rampa (Pt), responsável por fazer deslizar o corpo.",
-      "Está incorreta: P · tg(θ) não representa nenhuma das componentes ortogonais diretas da força peso no plano inclinado.",
-      "Está incorreta: Dividir por cos(θ) violaria a relação geométrica do triângulo de forças (a componente é menor que o peso)."
-    ],
-    "nursingApplication": "Permite calcular a força normal de contacto exercida pelas rodas numa rampa de acesso hospitalar."
-  },
-  {
-    "id": 1267,
-    "topicId": 1,
-    "question": "Num plano inclinado de ângulo θ, qual é a componente do Peso responsável por fazer deslizar o corpo rampa abaixo (Pt)?",
-    "options": [
-      "Pt = P · cos(θ).",
-      "Pt = P · cos²(θ).",
-      "Pt = P / sen(θ).",
-      "Pt = P · sen(θ)."
-    ],
-    "correctIndex": 3,
-    "explanation": "A componente tangencial paralela à rampa é Pt = P · sen(θ). Se superar o atrito, o corpo desliza para baixo.",
-    "distractorAnalysis": [
-      "Está incorreta: P · cos(θ) é a componente normal perpendicular (Pn), que pressiona o corpo contra a superfície da rampa.",
-      "Está incorreta: P · cos²(θ) não tem fundamento na decomposição vetorial trigonométrica simples do peso.",
-      "Está incorreta: Dividir pelo seno resultaria num valor superior ao peso, o que é geometricamente impossível para uma componente."
-    ],
-    "nursingApplication": "Mostra a força que um operador tem de suster ao subir ou descer macas em rampas de circulação."
-  },
-  {
-    "id": 1268,
-    "topicId": 1,
-    "question": "O que acontece à componente do peso paralela à rampa (Pt = P · sen θ) quando a inclinação da rampa (θ) aumenta de 5° para 30°?",
-    "options": [
-      "Aumenta substancialmente, porque a função seno é estritamente crescente no intervalo de 0° a 90°.",
-      "Diminui até se anular completamente a noventa graus.",
-      "Permanece rigorosamente constante porque o peso total do corpo não varia.",
-      "Passa a ser negativa, fazendo o corpo subir a rampa espontaneamente."
-    ],
-    "correctIndex": 0,
-    "explanation": "Como sen(30°) = 0,5 e sen(5°) ≈ 0,087, a força que puxa rampa abaixo aumenta cerca de 6 vezes com a maior inclinação.",
-    "distractorAnalysis": [
-      "Está incorreta: A componente paralela aumenta com a inclinação e atinge o valor máximo (Pt = P) a 90° (queda livre vertical).",
-      "Está incorreta: O peso total é constante, mas a sua projeção tangencial ao longo da rampa depende diretamente do ângulo de inclinação.",
-      "Está incorreta: A gravidade não inverte de sentido; atrai sempre os corpos para baixo ao longo da rampa."
-    ],
-    "nursingApplication": "Justifica por que as normas de acessibilidade hospitalar exigem rampas com declives muito suaves (< 6°)."
-  },
-  {
-    "id": 1269,
-    "topicId": 1,
-    "question": "Porque é que a condição de força resultante nula (∑F = 0) é suficiente para o equilíbrio de uma partícula pontual, mas insuficiente para assegurar o equilíbrio estático de um corpo extenso?",
-    "options": [
-      "Porque os corpos extensos perdem a massa quando colocados em repouso estático.",
-      "Porque num corpo extenso as forças podem ter pontos de aplicação distintos e gerar momentos rotacionais, exigindo cumulativamente que a soma dos momentos seja nula (∑M = 0).",
-      "Porque a 1.ª Lei de Newton deixa de ser válida para qualquer objeto com tamanho superior a um milímetro.",
-      "Porque as forças nos corpos extensos transformam-se espontaneamente em radiação térmica de alta energia."
-    ],
-    "correctIndex": 1,
-    "explanation": "Num corpo extenso, duas forças iguais e opostas em linhas de ação diferentes formam um binário que faz girar o corpo (∑F = 0, mas ∑M ≠ 0).",
-    "distractorAnalysis": [
-      "Está incorreta: A massa é uma propriedade conservada da matéria e não se anula com o repouso.",
-      "Está incorreta: A mecânica de Newton é plenamente válida para corpos extensos através do equilíbrio simultâneo de translação e rotação.",
-      "Está incorreta: Forças mecânicas em equilíbrio não se convertem em radiação térmica espontânea."
-    ],
-    "nursingApplication": "Explica por que transferir uma pessoa exige controlar tanto as forças de sustentação como as tendências de rotação."
-  },
-  {
-    "id": 1270,
-    "topicId": 1,
-    "question": "Uma tábua de transferência horizontal está apoiada nas suas extremidades em duas superfícies e suporta uma carga vertical no seu ponto médio. As forças normais nos apoios e a força peso constituem um sistema de:",
-    "options": [
-      "Forças concorrentes num único vértice central.",
-      "Forças colineares atuando sobre uma única reta de suporte vertical comum.",
-      "Forças paralelas em equilíbrio estático, satisfazendo simultaneamente ∑F = 0 e ∑M = 0.",
-      "Forças centrípetas que aceleram a tábua em órbita elíptica fechada."
-    ],
-    "correctIndex": 2,
-    "explanation": "As três forças têm direções verticais paralelas em linhas de ação distintas e equilibram-se em translação e rotação.",
-    "distractorAnalysis": [
-      "Está incorreta: Forças concorrentes convergem para um único ponto no espaço; aqui as linhas de ação são paralelas e separadas.",
-      "Está incorreta: Forças colineares atuam estritamente sobre a mesma linha de ação, o que não ocorre com apoios afastados.",
-      "Está incorreta: Trata-se de uma estrutura estática em repouso hospitalar, sem qualquer movimento orbital centrípeto."
-    ],
-    "nursingApplication": "Princípio físico de funcionamento de tábuas de transferência e pontes de apoio entre leitos."
-  },
-  {
-    "id": 1271,
-    "topicId": 1,
-    "question": "Quais são as duas condições fundamentais para que um corpo rígido extenso se encontre em Equilíbrio Estático completo?",
-    "options": [
-      "Velocidade máxima constante e aceleração gravitacional infinita.",
-      "Temperatura nula no zero absoluto e densidade volumétrica constante.",
-      "Pressão hidrostática nula e ausência total de massa no vácuo.",
-      "Força resultante nula (∑F = 0) e Momento resultante nulo (∑M = 0)."
-    ],
-    "correctIndex": 3,
-    "explanation": "O equilíbrio estático de um corpo extenso exige equilíbrio de translação (∑F = 0) e equilíbrio de rotação (∑M = 0).",
-    "distractorAnalysis": [
-      "Está incorreta: Velocidade máxima constante não define equilíbrio estático (que exige repouso, v = 0).",
-      "Está incorreta: Temperatura e densidade são grandezas termodinâmicas, não condições mecânicas de equilíbrio estático.",
-      "Está incorreta: Pressão nula e ausência de massa pertencem ao vácuo ideal e não descrevem corpos materiais rígidos."
-    ],
-    "nursingApplication": "Base da biomecânica postural: manter o corpo imóvel sem translação nem rotações indesejadas."
-  },
-  {
-    "id": 1272,
-    "topicId": 1,
-    "question": "O que traduz a Primeira Condição de Equilíbrio (Equilíbrio de Translação)?",
-    "options": [
-      "A soma vetorial de todas as forças que atuam sobre o corpo tem de ser igual a zero (∑F = 0).",
-      "A soma dos momentos de força em torno de qualquer eixo tem de ser estritamente positiva.",
-      "A velocidade linear do corpo tem de aumentar a uma taxa de dez metros por segundo.",
-      "O corpo tem de girar a uma velocidade angular rigorosamente constante."
-    ],
-    "correctIndex": 0,
-    "explanation": "A primeira condição de equilíbrio (∑F = 0) assegura que o centro de massa não sofre nenhuma aceleração linear.",
-    "distractorAnalysis": [
-      "Está incorreta: Soma de momentos positiva geraria aceleração angular rotacional, violando o equilíbrio estático.",
-      "Está incorreta: Velocidade a aumentar implica aceleração linear não nula, o que contradiz ∑F = 0.",
-      "Está incorreta: Girar com velocidade angular refere-se a rotação dinâmica, não à primeira condição estática."
-    ],
-    "nursingApplication": "Assegura que as forças musculares e de apoio equilibram o peso corporal sem que o indivíduo caia."
-  },
-  {
-    "id": 1273,
-    "topicId": 1,
-    "question": "O que traduz a Segunda Condição de Equilíbrio (Equilíbrio de Rotação)?",
-    "options": [
-      "A força resultante de translação tem de ser perpendicular ao eixo da Terra.",
-      "A soma de todos os momentos de força (torques) em relação a qualquer ponto de referência tem de ser nula (∑M = 0).",
-      "O corpo tem de ser constituído exclusivamente por materiais fluidos ideais.",
-      "A aceleração gravítica tem de ser cancelada por forças magnéticas externas."
-    ],
-    "correctIndex": 1,
-    "explanation": "A segunda condição de equilíbrio (∑M = 0) garante que o corpo rígido não sofre nenhuma aceleração angular de rotação.",
-    "distractorAnalysis": [
-      "Está incorreta: Força resultante perpendicular não impede rotações geradas por binários de forças.",
-      "Está incorreta: O equilíbrio estático de rotação aplica-se com rigor a sólidos e corpos rígidos extensos.",
-      "Está incorreta: Forças magnéticas não são necessárias para o equilíbrio mecânico clássico de rotações."
-    ],
-    "nursingApplication": "Fundamental para entender por que forças iguais aplicadas em pontos diferentes podem desequilibrar uma postura."
-  },
-  {
-    "id": 1274,
-    "topicId": 1,
-    "question": "Como se classifica um estado de equilíbrio no qual o corpo, após ser ligeiramente perturbado, regressa espontaneamente à posição inicial?",
-    "options": [
-      "Equilíbrio Instável.",
-      "Equilíbrio Indiferente.",
-      "Equilíbrio Estável.",
-      "Equilíbrio Metastável Térmico."
-    ],
-    "correctIndex": 2,
-    "explanation": "No equilíbrio estável, qualquer pequeno desvio eleva o centro de gravidade e cria momentos restauradores que devolvem o corpo à posição original.",
-    "distractorAnalysis": [
-      "Está incorreta: No equilíbrio instável, o desvio rebaixa o centro de gravidade e o corpo afasta-se ainda mais da posição de repouso.",
-      "Está incorreta: No equilíbrio indiferente, o centro de gravidade mantém a mesma altura e o corpo permanece na nova posição onde foi colocado.",
-      "Está incorreta: Equilíbrio metastável térmico é um conceito da termodinâmica de fases, não da mecânica estática de corpos rígidos."
-    ],
-    "nursingApplication": "Postura de base larga e centro de gravidade baixo proporciona equilíbrio estável ao corpo humano."
-  },
-  {
-    "id": 1275,
-    "topicId": 1,
-    "question": "Como se classifica o equilíbrio de uma esfera que repousa sobre uma mesa plana perfeitamente horizontal?",
-    "options": [
-      "Equilíbrio Instável.",
-      "Equilíbrio Estável.",
-      "Equilíbrio Crítico Nuclear.",
-      "Equilíbrio Indiferente."
-    ],
-    "correctIndex": 3,
-    "explanation": "Ao ser deslocada na mesa horizontal, a esfera não altera a altura do seu centro de gravidade e permanece em repouso na nova posição.",
-    "distractorAnalysis": [
-      "Está incorreta: Não é instável porque a esfera não acelera espontaneamente para longe ao sofrer um pequeno toque.",
-      "Está incorreta: Não é estável porque a esfera não regressa espontaneamente ao ponto anterior onde estava.",
-      "Está incorreta: Equilíbrio nuclear não se aplica à mecânica clássica macroscópica de uma esfera numa mesa."
-    ],
-    "nursingApplication": "Compreender os tipos de equilíbrio apoia a avaliação do risco de queda e estabilidade de suportes."
-  },
-  {
-    "id": 1276,
-    "topicId": 1,
-    "question": "Num plano inclinado de ângulo θ com a horizontal, como se calcula a componente do Peso perpendicular à rampa (Pn)?",
-    "options": [
-      "Pn = P · cos(θ).",
-      "Pn = P · sen(θ).",
-      "Pn = P · tg(θ).",
-      "Pn = P / cos(θ)."
-    ],
-    "correctIndex": 0,
-    "explanation": "A decomposição trigonométrica da força peso em eixos ortogonais dá Pn = P · cos(θ) na direção normal à superfície.",
-    "distractorAnalysis": [
-      "Está incorreta: P · sen(θ) é a componente tangencial paralela à rampa (Pt), responsável por fazer deslizar o corpo.",
-      "Está incorreta: P · tg(θ) não representa nenhuma das componentes ortogonais diretas da força peso no plano inclinado.",
-      "Está incorreta: Dividir por cos(θ) violaria a relação geométrica do triângulo de forças (a componente é menor que o peso)."
-    ],
-    "nursingApplication": "Permite calcular a força normal de contacto exercida pelas rodas numa rampa de acesso hospitalar."
-  },
-  {
-    "id": 1277,
-    "topicId": 1,
-    "question": "Num plano inclinado de ângulo θ, qual é a componente do Peso responsável por fazer deslizar o corpo rampa abaixo (Pt)?",
-    "options": [
-      "Pt = P · cos(θ).",
-      "Pt = P · sen(θ).",
-      "Pt = P · cos²(θ).",
-      "Pt = P / sen(θ)."
-    ],
-    "correctIndex": 1,
-    "explanation": "A componente tangencial paralela à rampa é Pt = P · sen(θ). Se superar o atrito, o corpo desliza para baixo.",
-    "distractorAnalysis": [
-      "Está incorreta: P · cos(θ) é a componente normal perpendicular (Pn), que pressiona o corpo contra a superfície da rampa.",
-      "Está incorreta: P · cos²(θ) não tem fundamento na decomposição vetorial trigonométrica simples do peso.",
-      "Está incorreta: Dividir pelo seno resultaria num valor superior ao peso, o que é geometricamente impossível para uma componente."
-    ],
-    "nursingApplication": "Mostra a força que um operador tem de suster ao subir ou descer macas em rampas de circulação."
-  },
-  {
-    "id": 1278,
-    "topicId": 1,
-    "question": "O que acontece à componente do peso paralela à rampa (Pt = P · sen θ) quando a inclinação da rampa (θ) aumenta de 5° para 30°?",
-    "options": [
-      "Diminui até se anular completamente a noventa graus.",
-      "Permanece rigorosamente constante porque o peso total do corpo não varia.",
-      "Aumenta substancialmente, porque a função seno é estritamente crescente no intervalo de 0° a 90°.",
-      "Passa a ser negativa, fazendo o corpo subir a rampa espontaneamente."
-    ],
-    "correctIndex": 2,
-    "explanation": "Como sen(30°) = 0,5 e sen(5°) ≈ 0,087, a força que puxa rampa abaixo aumenta cerca de 6 vezes com a maior inclinação.",
-    "distractorAnalysis": [
-      "Está incorreta: A componente paralela aumenta com a inclinação e atinge o valor máximo (Pt = P) a 90° (queda livre vertical).",
-      "Está incorreta: O peso total é constante, mas a sua projeção tangencial ao longo da rampa depende diretamente do ângulo de inclinação.",
-      "Está incorreta: A gravidade não inverte de sentido; atrai sempre os corpos para baixo ao longo da rampa."
-    ],
-    "nursingApplication": "Justifica por que as normas de acessibilidade hospitalar exigem rampas com declives muito suaves (< 6°)."
-  },
-  {
-    "id": 1279,
-    "topicId": 1,
-    "question": "Porque é que a condição de força resultante nula (∑F = 0) é suficiente para o equilíbrio de uma partícula pontual, mas insuficiente para assegurar o equilíbrio estático de um corpo extenso?",
-    "options": [
-      "Porque os corpos extensos perdem a massa quando colocados em repouso estático.",
-      "Porque a 1.ª Lei de Newton deixa de ser válida para qualquer objeto com tamanho superior a um milímetro.",
-      "Porque as forças nos corpos extensos transformam-se espontaneamente em radiação térmica de alta energia.",
-      "Porque num corpo extenso as forças podem ter pontos de aplicação distintos e gerar momentos rotacionais, exigindo cumulativamente que a soma dos momentos seja nula (∑M = 0)."
-    ],
-    "correctIndex": 3,
-    "explanation": "Num corpo extenso, duas forças iguais e opostas em linhas de ação diferentes formam um binário que faz girar o corpo (∑F = 0, mas ∑M ≠ 0).",
-    "distractorAnalysis": [
-      "Está incorreta: A massa é uma propriedade conservada da matéria e não se anula com o repouso.",
-      "Está incorreta: A mecânica de Newton é plenamente válida para corpos extensos através do equilíbrio simultâneo de translação e rotação.",
-      "Está incorreta: Forças mecânicas em equilíbrio não se convertem em radiação térmica espontânea."
-    ],
-    "nursingApplication": "Explica por que transferir uma pessoa exige controlar tanto as forças de sustentação como as tendências de rotação."
-  },
-  {
-    "id": 1280,
-    "topicId": 1,
-    "question": "Uma tábua de transferência horizontal está apoiada nas suas extremidades em duas superfícies e suporta uma carga vertical no seu ponto médio. As forças normais nos apoios e a força peso constituem um sistema de:",
-    "options": [
-      "Forças paralelas em equilíbrio estático, satisfazendo simultaneamente ∑F = 0 e ∑M = 0.",
-      "Forças concorrentes num único vértice central.",
-      "Forças colineares atuando sobre uma única reta de suporte vertical comum.",
-      "Forças centrípetas que aceleram a tábua em órbita elíptica fechada."
-    ],
-    "correctIndex": 0,
-    "explanation": "As três forças têm direções verticais paralelas em linhas de ação distintas e equilibram-se em translação e rotação.",
-    "distractorAnalysis": [
-      "Está incorreta: Forças concorrentes convergem para um único ponto no espaço; aqui as linhas de ação são paralelas e separadas.",
-      "Está incorreta: Forças colineares atuam estritamente sobre a mesma linha de ação, o que não ocorre com apoios afastados.",
-      "Está incorreta: Trata-se de uma estrutura estática em repouso hospitalar, sem qualquer movimento orbital centrípeto."
-    ],
-    "nursingApplication": "Princípio físico de funcionamento de tábuas de transferência e pontes de apoio entre leitos."
-  },
-  {
-    "id": 1281,
-    "topicId": 1,
-    "question": "Quais são as duas condições fundamentais para que um corpo rígido extenso se encontre em Equilíbrio Estático completo?",
-    "options": [
-      "Velocidade máxima constante e aceleração gravitacional infinita.",
-      "Força resultante nula (∑F = 0) e Momento resultante nulo (∑M = 0).",
-      "Temperatura nula no zero absoluto e densidade volumétrica constante.",
-      "Pressão hidrostática nula e ausência total de massa no vácuo."
-    ],
-    "correctIndex": 1,
-    "explanation": "O equilíbrio estático de um corpo extenso exige equilíbrio de translação (∑F = 0) e equilíbrio de rotação (∑M = 0).",
-    "distractorAnalysis": [
-      "Está incorreta: Velocidade máxima constante não define equilíbrio estático (que exige repouso, v = 0).",
-      "Está incorreta: Temperatura e densidade são grandezas termodinâmicas, não condições mecânicas de equilíbrio estático.",
-      "Está incorreta: Pressão nula e ausência de massa pertencem ao vácuo ideal e não descrevem corpos materiais rígidos."
-    ],
-    "nursingApplication": "Base da biomecânica postural: manter o corpo imóvel sem translação nem rotações indesejadas."
-  },
-  {
-    "id": 1282,
-    "topicId": 1,
-    "question": "O que traduz a Primeira Condição de Equilíbrio (Equilíbrio de Translação)?",
-    "options": [
-      "A soma dos momentos de força em torno de qualquer eixo tem de ser estritamente positiva.",
-      "A velocidade linear do corpo tem de aumentar a uma taxa de dez metros por segundo.",
-      "A soma vetorial de todas as forças que atuam sobre o corpo tem de ser igual a zero (∑F = 0).",
-      "O corpo tem de girar a uma velocidade angular rigorosamente constante."
-    ],
-    "correctIndex": 2,
-    "explanation": "A primeira condição de equilíbrio (∑F = 0) assegura que o centro de massa não sofre nenhuma aceleração linear.",
-    "distractorAnalysis": [
-      "Está incorreta: Soma de momentos positiva geraria aceleração angular rotacional, violando o equilíbrio estático.",
-      "Está incorreta: Velocidade a aumentar implica aceleração linear não nula, o que contradiz ∑F = 0.",
-      "Está incorreta: Girar com velocidade angular refere-se a rotação dinâmica, não à primeira condição estática."
-    ],
-    "nursingApplication": "Assegura que as forças musculares e de apoio equilibram o peso corporal sem que o indivíduo caia."
-  },
-  {
-    "id": 1283,
-    "topicId": 1,
-    "question": "O que traduz a Segunda Condição de Equilíbrio (Equilíbrio de Rotação)?",
-    "options": [
-      "A força resultante de translação tem de ser perpendicular ao eixo da Terra.",
-      "O corpo tem de ser constituído exclusivamente por materiais fluidos ideais.",
-      "A aceleração gravítica tem de ser cancelada por forças magnéticas externas.",
-      "A soma de todos os momentos de força (torques) em relação a qualquer ponto de referência tem de ser nula (∑M = 0)."
-    ],
-    "correctIndex": 3,
-    "explanation": "A segunda condição de equilíbrio (∑M = 0) garante que o corpo rígido não sofre nenhuma aceleração angular de rotação.",
-    "distractorAnalysis": [
-      "Está incorreta: Força resultante perpendicular não impede rotações geradas por binários de forças.",
-      "Está incorreta: O equilíbrio estático de rotação aplica-se com rigor a sólidos e corpos rígidos extensos.",
-      "Está incorreta: Forças magnéticas não são necessárias para o equilíbrio mecânico clássico de rotações."
-    ],
-    "nursingApplication": "Fundamental para entender por que forças iguais aplicadas em pontos diferentes podem desequilibrar uma postura."
-  },
-  {
-    "id": 1284,
-    "topicId": 1,
-    "question": "Como se classifica um estado de equilíbrio no qual o corpo, após ser ligeiramente perturbado, regressa espontaneamente à posição inicial?",
-    "options": [
-      "Equilíbrio Estável.",
-      "Equilíbrio Instável.",
-      "Equilíbrio Indiferente.",
-      "Equilíbrio Metastável Térmico."
-    ],
-    "correctIndex": 0,
-    "explanation": "No equilíbrio estável, qualquer pequeno desvio eleva o centro de gravidade e cria momentos restauradores que devolvem o corpo à posição original.",
-    "distractorAnalysis": [
-      "Está incorreta: No equilíbrio instável, o desvio rebaixa o centro de gravidade e o corpo afasta-se ainda mais da posição de repouso.",
-      "Está incorreta: No equilíbrio indiferente, o centro de gravidade mantém a mesma altura e o corpo permanece na nova posição onde foi colocado.",
-      "Está incorreta: Equilíbrio metastável térmico é um conceito da termodinâmica de fases, não da mecânica estática de corpos rígidos."
-    ],
-    "nursingApplication": "Postura de base larga e centro de gravidade baixo proporciona equilíbrio estável ao corpo humano."
-  },
-  {
-    "id": 1285,
-    "topicId": 1,
-    "question": "Como se classifica o equilíbrio de uma esfera que repousa sobre uma mesa plana perfeitamente horizontal?",
-    "options": [
-      "Equilíbrio Instável.",
-      "Equilíbrio Indiferente.",
-      "Equilíbrio Estável.",
-      "Equilíbrio Crítico Nuclear."
-    ],
-    "correctIndex": 1,
-    "explanation": "Ao ser deslocada na mesa horizontal, a esfera não altera a altura do seu centro de gravidade e permanece em repouso na nova posição.",
-    "distractorAnalysis": [
-      "Está incorreta: Não é instável porque a esfera não acelera espontaneamente para longe ao sofrer um pequeno toque.",
-      "Está incorreta: Não é estável porque a esfera não regressa espontaneamente ao ponto anterior onde estava.",
-      "Está incorreta: Equilíbrio nuclear não se aplica à mecânica clássica macroscópica de uma esfera numa mesa."
-    ],
-    "nursingApplication": "Compreender os tipos de equilíbrio apoia a avaliação do risco de queda e estabilidade de suportes."
-  },
-  {
-    "id": 1286,
-    "topicId": 1,
-    "question": "Num plano inclinado de ângulo θ com a horizontal, como se calcula a componente do Peso perpendicular à rampa (Pn)?",
-    "options": [
-      "Pn = P · sen(θ).",
-      "Pn = P · tg(θ).",
-      "Pn = P · cos(θ).",
-      "Pn = P / cos(θ)."
-    ],
-    "correctIndex": 2,
-    "explanation": "A decomposição trigonométrica da força peso em eixos ortogonais dá Pn = P · cos(θ) na direção normal à superfície.",
-    "distractorAnalysis": [
-      "Está incorreta: P · sen(θ) é a componente tangencial paralela à rampa (Pt), responsável por fazer deslizar o corpo.",
-      "Está incorreta: P · tg(θ) não representa nenhuma das componentes ortogonais diretas da força peso no plano inclinado.",
-      "Está incorreta: Dividir por cos(θ) violaria a relação geométrica do triângulo de forças (a componente é menor que o peso)."
-    ],
-    "nursingApplication": "Permite calcular a força normal de contacto exercida pelas rodas numa rampa de acesso hospitalar."
-  },
-  {
-    "id": 1287,
-    "topicId": 1,
-    "question": "Num plano inclinado de ângulo θ, qual é a componente do Peso responsável por fazer deslizar o corpo rampa abaixo (Pt)?",
-    "options": [
-      "Pt = P · cos(θ).",
-      "Pt = P · cos²(θ).",
-      "Pt = P / sen(θ).",
-      "Pt = P · sen(θ)."
-    ],
-    "correctIndex": 3,
-    "explanation": "A componente tangencial paralela à rampa é Pt = P · sen(θ). Se superar o atrito, o corpo desliza para baixo.",
-    "distractorAnalysis": [
-      "Está incorreta: P · cos(θ) é a componente normal perpendicular (Pn), que pressiona o corpo contra a superfície da rampa.",
-      "Está incorreta: P · cos²(θ) não tem fundamento na decomposição vetorial trigonométrica simples do peso.",
-      "Está incorreta: Dividir pelo seno resultaria num valor superior ao peso, o que é geometricamente impossível para uma componente."
-    ],
-    "nursingApplication": "Mostra a força que um operador tem de suster ao subir ou descer macas em rampas de circulação."
-  },
-  {
-    "id": 1288,
-    "topicId": 1,
-    "question": "O que acontece à componente do peso paralela à rampa (Pt = P · sen θ) quando a inclinação da rampa (θ) aumenta de 5° para 30°?",
-    "options": [
-      "Aumenta substancialmente, porque a função seno é estritamente crescente no intervalo de 0° a 90°.",
-      "Diminui até se anular completamente a noventa graus.",
-      "Permanece rigorosamente constante porque o peso total do corpo não varia.",
-      "Passa a ser negativa, fazendo o corpo subir a rampa espontaneamente."
-    ],
-    "correctIndex": 0,
-    "explanation": "Como sen(30°) = 0,5 e sen(5°) ≈ 0,087, a força que puxa rampa abaixo aumenta cerca de 6 vezes com a maior inclinação.",
-    "distractorAnalysis": [
-      "Está incorreta: A componente paralela aumenta com a inclinação e atinge o valor máximo (Pt = P) a 90° (queda livre vertical).",
-      "Está incorreta: O peso total é constante, mas a sua projeção tangencial ao longo da rampa depende diretamente do ângulo de inclinação.",
-      "Está incorreta: A gravidade não inverte de sentido; atrai sempre os corpos para baixo ao longo da rampa."
-    ],
-    "nursingApplication": "Justifica por que as normas de acessibilidade hospitalar exigem rampas com declives muito suaves (< 6°)."
-  },
-  {
-    "id": 1289,
-    "topicId": 1,
-    "question": "Porque é que a condição de força resultante nula (∑F = 0) é suficiente para o equilíbrio de uma partícula pontual, mas insuficiente para assegurar o equilíbrio estático de um corpo extenso?",
-    "options": [
-      "Porque os corpos extensos perdem a massa quando colocados em repouso estático.",
-      "Porque num corpo extenso as forças podem ter pontos de aplicação distintos e gerar momentos rotacionais, exigindo cumulativamente que a soma dos momentos seja nula (∑M = 0).",
-      "Porque a 1.ª Lei de Newton deixa de ser válida para qualquer objeto com tamanho superior a um milímetro.",
-      "Porque as forças nos corpos extensos transformam-se espontaneamente em radiação térmica de alta energia."
-    ],
-    "correctIndex": 1,
-    "explanation": "Num corpo extenso, duas forças iguais e opostas em linhas de ação diferentes formam um binário que faz girar o corpo (∑F = 0, mas ∑M ≠ 0).",
-    "distractorAnalysis": [
-      "Está incorreta: A massa é uma propriedade conservada da matéria e não se anula com o repouso.",
-      "Está incorreta: A mecânica de Newton é plenamente válida para corpos extensos através do equilíbrio simultâneo de translação e rotação.",
-      "Está incorreta: Forças mecânicas em equilíbrio não se convertem em radiação térmica espontânea."
-    ],
-    "nursingApplication": "Explica por que transferir uma pessoa exige controlar tanto as forças de sustentação como as tendências de rotação."
-  },
-  {
-    "id": 1290,
-    "topicId": 1,
-    "question": "Uma tábua de transferência horizontal está apoiada nas suas extremidades em duas superfícies e suporta uma carga vertical no seu ponto médio. As forças normais nos apoios e a força peso constituem um sistema de:",
-    "options": [
-      "Forças concorrentes num único vértice central.",
-      "Forças colineares atuando sobre uma única reta de suporte vertical comum.",
-      "Forças paralelas em equilíbrio estático, satisfazendo simultaneamente ∑F = 0 e ∑M = 0.",
-      "Forças centrípetas que aceleram a tábua em órbita elíptica fechada."
-    ],
-    "correctIndex": 2,
-    "explanation": "As três forças têm direções verticais paralelas em linhas de ação distintas e equilibram-se em translação e rotação.",
-    "distractorAnalysis": [
-      "Está incorreta: Forças concorrentes convergem para um único ponto no espaço; aqui as linhas de ação são paralelas e separadas.",
-      "Está incorreta: Forças colineares atuam estritamente sobre a mesma linha de ação, o que não ocorre com apoios afastados.",
-      "Está incorreta: Trata-se de uma estrutura estática em repouso hospitalar, sem qualquer movimento orbital centrípeto."
-    ],
-    "nursingApplication": "Princípio físico de funcionamento de tábuas de transferência e pontes de apoio entre leitos."
-  },
-  {
-    "id": 1291,
-    "topicId": 1,
-    "question": "Quais são as duas condições fundamentais para que um corpo rígido extenso se encontre em Equilíbrio Estático completo?",
-    "options": [
-      "Velocidade máxima constante e aceleração gravitacional infinita.",
-      "Temperatura nula no zero absoluto e densidade volumétrica constante.",
-      "Pressão hidrostática nula e ausência total de massa no vácuo.",
-      "Força resultante nula (∑F = 0) e Momento resultante nulo (∑M = 0)."
-    ],
-    "correctIndex": 3,
-    "explanation": "O equilíbrio estático de um corpo extenso exige equilíbrio de translação (∑F = 0) e equilíbrio de rotação (∑M = 0).",
-    "distractorAnalysis": [
-      "Está incorreta: Velocidade máxima constante não define equilíbrio estático (que exige repouso, v = 0).",
-      "Está incorreta: Temperatura e densidade são grandezas termodinâmicas, não condições mecânicas de equilíbrio estático.",
-      "Está incorreta: Pressão nula e ausência de massa pertencem ao vácuo ideal e não descrevem corpos materiais rígidos."
-    ],
-    "nursingApplication": "Base da biomecânica postural: manter o corpo imóvel sem translação nem rotações indesejadas."
-  },
-  {
-    "id": 1292,
-    "topicId": 1,
-    "question": "O que traduz a Primeira Condição de Equilíbrio (Equilíbrio de Translação)?",
-    "options": [
-      "A soma vetorial de todas as forças que atuam sobre o corpo tem de ser igual a zero (∑F = 0).",
-      "A soma dos momentos de força em torno de qualquer eixo tem de ser estritamente positiva.",
-      "A velocidade linear do corpo tem de aumentar a uma taxa de dez metros por segundo.",
-      "O corpo tem de girar a uma velocidade angular rigorosamente constante."
-    ],
-    "correctIndex": 0,
-    "explanation": "A primeira condição de equilíbrio (∑F = 0) assegura que o centro de massa não sofre nenhuma aceleração linear.",
-    "distractorAnalysis": [
-      "Está incorreta: Soma de momentos positiva geraria aceleração angular rotacional, violando o equilíbrio estático.",
-      "Está incorreta: Velocidade a aumentar implica aceleração linear não nula, o que contradiz ∑F = 0.",
-      "Está incorreta: Girar com velocidade angular refere-se a rotação dinâmica, não à primeira condição estática."
-    ],
-    "nursingApplication": "Assegura que as forças musculares e de apoio equilibram o peso corporal sem que o indivíduo caia."
-  },
-  {
-    "id": 1293,
-    "topicId": 1,
-    "question": "O que traduz a Segunda Condição de Equilíbrio (Equilíbrio de Rotação)?",
-    "options": [
-      "A força resultante de translação tem de ser perpendicular ao eixo da Terra.",
-      "A soma de todos os momentos de força (torques) em relação a qualquer ponto de referência tem de ser nula (∑M = 0).",
-      "O corpo tem de ser constituído exclusivamente por materiais fluidos ideais.",
-      "A aceleração gravítica tem de ser cancelada por forças magnéticas externas."
-    ],
-    "correctIndex": 1,
-    "explanation": "A segunda condição de equilíbrio (∑M = 0) garante que o corpo rígido não sofre nenhuma aceleração angular de rotação.",
-    "distractorAnalysis": [
-      "Está incorreta: Força resultante perpendicular não impede rotações geradas por binários de forças.",
-      "Está incorreta: O equilíbrio estático de rotação aplica-se com rigor a sólidos e corpos rígidos extensos.",
-      "Está incorreta: Forças magnéticas não são necessárias para o equilíbrio mecânico clássico de rotações."
-    ],
-    "nursingApplication": "Fundamental para entender por que forças iguais aplicadas em pontos diferentes podem desequilibrar uma postura."
-  },
-  {
-    "id": 1294,
-    "topicId": 1,
-    "question": "Como se classifica um estado de equilíbrio no qual o corpo, após ser ligeiramente perturbado, regressa espontaneamente à posição inicial?",
-    "options": [
-      "Equilíbrio Instável.",
-      "Equilíbrio Indiferente.",
-      "Equilíbrio Estável.",
-      "Equilíbrio Metastável Térmico."
-    ],
-    "correctIndex": 2,
-    "explanation": "No equilíbrio estável, qualquer pequeno desvio eleva o centro de gravidade e cria momentos restauradores que devolvem o corpo à posição original.",
-    "distractorAnalysis": [
-      "Está incorreta: No equilíbrio instável, o desvio rebaixa o centro de gravidade e o corpo afasta-se ainda mais da posição de repouso.",
-      "Está incorreta: No equilíbrio indiferente, o centro de gravidade mantém a mesma altura e o corpo permanece na nova posição onde foi colocado.",
-      "Está incorreta: Equilíbrio metastável térmico é um conceito da termodinâmica de fases, não da mecânica estática de corpos rígidos."
-    ],
-    "nursingApplication": "Postura de base larga e centro de gravidade baixo proporciona equilíbrio estável ao corpo humano."
-  },
-  {
-    "id": 1295,
-    "topicId": 1,
-    "question": "Como se classifica o equilíbrio de uma esfera que repousa sobre uma mesa plana perfeitamente horizontal?",
-    "options": [
-      "Equilíbrio Instável.",
-      "Equilíbrio Estável.",
-      "Equilíbrio Crítico Nuclear.",
-      "Equilíbrio Indiferente."
-    ],
-    "correctIndex": 3,
-    "explanation": "Ao ser deslocada na mesa horizontal, a esfera não altera a altura do seu centro de gravidade e permanece em repouso na nova posição.",
-    "distractorAnalysis": [
-      "Está incorreta: Não é instável porque a esfera não acelera espontaneamente para longe ao sofrer um pequeno toque.",
-      "Está incorreta: Não é estável porque a esfera não regressa espontaneamente ao ponto anterior onde estava.",
-      "Está incorreta: Equilíbrio nuclear não se aplica à mecânica clássica macroscópica de uma esfera numa mesa."
-    ],
-    "nursingApplication": "Compreender os tipos de equilíbrio apoia a avaliação do risco de queda e estabilidade de suportes."
-  },
-  {
-    "id": 1296,
-    "topicId": 1,
-    "question": "Num plano inclinado de ângulo θ com a horizontal, como se calcula a componente do Peso perpendicular à rampa (Pn)?",
-    "options": [
-      "Pn = P · cos(θ).",
-      "Pn = P · sen(θ).",
-      "Pn = P · tg(θ).",
-      "Pn = P / cos(θ)."
-    ],
-    "correctIndex": 0,
-    "explanation": "A decomposição trigonométrica da força peso em eixos ortogonais dá Pn = P · cos(θ) na direção normal à superfície.",
-    "distractorAnalysis": [
-      "Está incorreta: P · sen(θ) é a componente tangencial paralela à rampa (Pt), responsável por fazer deslizar o corpo.",
-      "Está incorreta: P · tg(θ) não representa nenhuma das componentes ortogonais diretas da força peso no plano inclinado.",
-      "Está incorreta: Dividir por cos(θ) violaria a relação geométrica do triângulo de forças (a componente é menor que o peso)."
-    ],
-    "nursingApplication": "Permite calcular a força normal de contacto exercida pelas rodas numa rampa de acesso hospitalar."
-  },
-  {
-    "id": 1297,
-    "topicId": 1,
-    "question": "Num plano inclinado de ângulo θ, qual é a componente do Peso responsável por fazer deslizar o corpo rampa abaixo (Pt)?",
-    "options": [
-      "Pt = P · cos(θ).",
-      "Pt = P · sen(θ).",
-      "Pt = P · cos²(θ).",
-      "Pt = P / sen(θ)."
-    ],
-    "correctIndex": 1,
-    "explanation": "A componente tangencial paralela à rampa é Pt = P · sen(θ). Se superar o atrito, o corpo desliza para baixo.",
-    "distractorAnalysis": [
-      "Está incorreta: P · cos(θ) é a componente normal perpendicular (Pn), que pressiona o corpo contra a superfície da rampa.",
-      "Está incorreta: P · cos²(θ) não tem fundamento na decomposição vetorial trigonométrica simples do peso.",
-      "Está incorreta: Dividir pelo seno resultaria num valor superior ao peso, o que é geometricamente impossível para uma componente."
-    ],
-    "nursingApplication": "Mostra a força que um operador tem de suster ao subir ou descer macas em rampas de circulação."
-  },
-  {
-    "id": 1298,
-    "topicId": 1,
-    "question": "O que acontece à componente do peso paralela à rampa (Pt = P · sen θ) quando a inclinação da rampa (θ) aumenta de 5° para 30°?",
-    "options": [
-      "Diminui até se anular completamente a noventa graus.",
-      "Permanece rigorosamente constante porque o peso total do corpo não varia.",
-      "Aumenta substancialmente, porque a função seno é estritamente crescente no intervalo de 0° a 90°.",
-      "Passa a ser negativa, fazendo o corpo subir a rampa espontaneamente."
-    ],
-    "correctIndex": 2,
-    "explanation": "Como sen(30°) = 0,5 e sen(5°) ≈ 0,087, a força que puxa rampa abaixo aumenta cerca de 6 vezes com a maior inclinação.",
-    "distractorAnalysis": [
-      "Está incorreta: A componente paralela aumenta com a inclinação e atinge o valor máximo (Pt = P) a 90° (queda livre vertical).",
-      "Está incorreta: O peso total é constante, mas a sua projeção tangencial ao longo da rampa depende diretamente do ângulo de inclinação.",
-      "Está incorreta: A gravidade não inverte de sentido; atrai sempre os corpos para baixo ao longo da rampa."
-    ],
-    "nursingApplication": "Justifica por que as normas de acessibilidade hospitalar exigem rampas com declives muito suaves (< 6°)."
-  },
-  {
-    "id": 1299,
-    "topicId": 1,
-    "question": "Porque é que a condição de força resultante nula (∑F = 0) é suficiente para o equilíbrio de uma partícula pontual, mas insuficiente para assegurar o equilíbrio estático de um corpo extenso?",
-    "options": [
-      "Porque os corpos extensos perdem a massa quando colocados em repouso estático.",
-      "Porque a 1.ª Lei de Newton deixa de ser válida para qualquer objeto com tamanho superior a um milímetro.",
-      "Porque as forças nos corpos extensos transformam-se espontaneamente em radiação térmica de alta energia.",
-      "Porque num corpo extenso as forças podem ter pontos de aplicação distintos e gerar momentos rotacionais, exigindo cumulativamente que a soma dos momentos seja nula (∑M = 0)."
-    ],
-    "correctIndex": 3,
-    "explanation": "Num corpo extenso, duas forças iguais e opostas em linhas de ação diferentes formam um binário que faz girar o corpo (∑F = 0, mas ∑M ≠ 0).",
-    "distractorAnalysis": [
-      "Está incorreta: A massa é uma propriedade conservada da matéria e não se anula com o repouso.",
-      "Está incorreta: A mecânica de Newton é plenamente válida para corpos extensos através do equilíbrio simultâneo de translação e rotação.",
-      "Está incorreta: Forças mecânicas em equilíbrio não se convertem em radiação térmica espontânea."
-    ],
-    "nursingApplication": "Explica por que transferir uma pessoa exige controlar tanto as forças de sustentação como as tendências de rotação."
-  },
-  {
-    "id": 1300,
-    "topicId": 1,
-    "question": "Uma tábua de transferência horizontal está apoiada nas suas extremidades em duas superfícies e suporta uma carga vertical no seu ponto médio. As forças normais nos apoios e a força peso constituem um sistema de:",
-    "options": [
-      "Forças paralelas em equilíbrio estático, satisfazendo simultaneamente ∑F = 0 e ∑M = 0.",
-      "Forças concorrentes num único vértice central.",
-      "Forças colineares atuando sobre uma única reta de suporte vertical comum.",
-      "Forças centrípetas que aceleram a tábua em órbita elíptica fechada."
-    ],
-    "correctIndex": 0,
-    "explanation": "As três forças têm direções verticais paralelas em linhas de ação distintas e equilibram-se em translação e rotação.",
-    "distractorAnalysis": [
-      "Está incorreta: Forças concorrentes convergem para um único ponto no espaço; aqui as linhas de ação são paralelas e separadas.",
-      "Está incorreta: Forças colineares atuam estritamente sobre a mesma linha de ação, o que não ocorre com apoios afastados.",
-      "Está incorreta: Trata-se de uma estrutura estática em repouso hospitalar, sem qualquer movimento orbital centrípeto."
-    ],
-    "nursingApplication": "Princípio físico de funcionamento de tábuas de transferência e pontes de apoio entre leitos."
-  },
-  {
-    "id": 1301,
-    "topicId": 1,
-    "question": "O que mede o Momento de uma Força (ou Torque) na física?",
-    "options": [
-      "A quantidade total de calor dissipada pelas moléculas de um sólido sob pressão estática.",
-      "A capacidade ou eficácia que uma força possui de produzir rotação de um corpo em torno de um ponto de apoio ou eixo.",
-      "A velocidade linear instantânea adquirida pelo corpo em queda livre no vácuo.",
-      "A taxa de decaimento radioativo de núcleos atómicos emissores de partículas beta."
-    ],
-    "correctIndex": 1,
-    "explanation": "O momento mede a tendência rotacional: M = F · b, dependendo da força e da distância perpendicular ao eixo.",
-    "distractorAnalysis": [
-      "Está incorreta: Momento de força é uma grandeza mecânica vetorial, não energia térmica calorífica.",
-      "Está incorreta: Velocidade em queda livre é uma grandeza cinemática medida em m/s, não momento de força.",
-      "Está incorreta: Decaimento radioativo pertence à física nuclear, sem qualquer relação com rotação de sólidos rígidos."
-    ],
-    "nursingApplication": "Conceito central na biomecânica: os músculos geram momentos articulares para movimentar os segmentos corporais."
-  },
-  {
-    "id": 1302,
-    "topicId": 1,
-    "question": "Como se calcula a intensidade do Momento de uma Força (M) aplicada perpendicularmente a um braço de alavanca?",
-    "options": [
-      "M = F / b (razão entre a força e o braço de momento).",
-      "M = F + b (soma da força com a distância do braço).",
-      "M = F · b (produto da intensidade da força pelo braço de momento perpendicular).",
-      "M = F · b² (produto da força pelo quadrado da distância)."
-    ],
-    "correctIndex": 2,
-    "explanation": "O momento é o produto da intensidade da força pela distância perpendicular da linha de ação ao eixo de rotação: M = F · b.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir a força pelo braço (F/b) viola a definição dimensional e física do momento de força.",
-      "Está incorreta: Somar uma força em Newtons com uma distância em metros viola a homogeneidade dimensional da física.",
-      "Está incorreta: O momento depende linearmente do braço de alavanca 'b', e não do seu quadrado."
-    ],
-    "nursingApplication": "Permite calcular o esforço rotacional nas articulações ao elevar objetos com os membros estendidos."
-  },
-  {
-    "id": 1303,
-    "topicId": 1,
-    "question": "Qual é a unidade do Momento de uma Força (Torque) no Sistema Internacional de Unidades (SI)?",
-    "options": [
-      "Joule por segundo (J/s).",
-      "Pascal por metro quadrado (Pa/m²).",
-      "Quilograma por metro (kg/m).",
-      "Newton-metro (N·m)."
-    ],
-    "correctIndex": 3,
-    "explanation": "Como M = F · b (força em Newtons multiplicada por distância em metros), a unidade padrão no SI é o Newton-metro (N·m).",
-    "distractorAnalysis": [
-      "Está incorreta: Joule por segundo é Watt (unidade de potência mecânica ou elétrica).",
-      "Está incorreta: Pascal por metro quadrado não é a unidade de momento de rotação.",
-      "Está incorreta: Quilograma por metro é unidade de densidade linear de massa, não de momento de força."
-    ],
-    "nursingApplication": "Distingue formalmente a unidade de momento mecânico (N·m) de outras grandezas dimensionais."
-  },
-  {
-    "id": 1304,
-    "topicId": 1,
-    "question": "O que é o 'Braço de uma Força' (ou braço de alavanca 'b') na definição do Momento?",
-    "options": [
-      "A distância perpendicular (à menor distância) medida entre o eixo de rotação e a linha de ação da força.",
-      "O comprimento total do membro superior da pessoa que está a aplicar a força.",
-      "A distância horizontal entre o operador e o teto da enfermaria hospitalar.",
-      "O tempo em segundos durante o qual o músculo permanece em contração isométrica."
-    ],
-    "correctIndex": 0,
-    "explanation": "O braço de momento 'b' é a distância geométrica medida a 90° entre o fulcro e a reta suporte da força.",
-    "distractorAnalysis": [
-      "Está incorreta: O braço anatómico é um segmento corporal, mas o 'braço de alavanca' em física é a distância perpendicular ao eixo.",
-      "Está incorreta: A distância ao teto não tem qualquer relação com o eixo de rotação mecânico da alavanca.",
-      "Está incorreta: O tempo mede duração temporal em segundos, não distância perpendicular em metros."
-    ],
-    "nursingApplication": "Compreender o braço perpendicular explica por que dobrar o cotovelo reduz o esforço muscular lombar."
-  },
-  {
-    "id": 1305,
-    "topicId": 1,
-    "question": "Ao aplicar-se uma força perpendicular de 30 N na extremidade de uma barra a 0,6 m do eixo de rotação, qual é o momento de força gerado?",
-    "options": [
-      "50 N·m.",
-      "18,0 N·m.",
-      "30,6 N·m.",
-      "5 N·m."
-    ],
-    "correctIndex": 1,
-    "explanation": "Cálculo direto pelo produto M = F · b: M = 30 N · 0,6 m = 18,0 N·m.",
-    "distractorAnalysis": [
-      "Está incorreta: 50 N·m resultaria de dividir erroneamente 30 por 0,6 (F / b).",
-      "Está incorreta: 30,6 N·m resultaria de somar incorretamente a força com a distância (30 + 0,6).",
-      "Está incorreta: 5 N·m não corresponde ao produto da força pela distância perpendicular."
-    ],
-    "nursingApplication": "Permite quantificar o momento gerado em manivelas de regulação de camas e aparelhos de apoio."
-  },
-  {
-    "id": 1306,
-    "topicId": 1,
-    "question": "O que acontece ao Momento de uma Força se a linha de ação da força passar exatamente pelo eixo de rotação (b = 0)?",
-    "options": [
-      "O momento atinge o valor infinito, provocando uma rotação destrutiva imediata.",
-      "O momento depende exclusivamente da massa do corpo dividida pela gravidade.",
-      "O momento é rigorosamente nulo (M = 0), não produzindo nenhuma rotação do corpo.",
-      "O momento transforma-se espontaneamente numa força de atrito cinético no solo."
-    ],
-    "correctIndex": 2,
-    "explanation": "Se a linha de ação passa pelo eixo, a distância perpendicular é zero (b = 0). Logo, M = F · 0 = 0 N·m (sem efeito rotacional).",
-    "distractorAnalysis": [
-      "Está incorreta: Não há momento infinito; sem braço de momento perpendicular, a rotação simplesmente não ocorre.",
-      "Está incorreta: O momento é nulo independentemente da massa ou do campo gravitacional local.",
-      "Está incorreta: Uma força aplicada no eixo não se transforma em atrito de solo; é absorvida pelo apoio do eixo."
-    ],
-    "nursingApplication": "Puxar ou empurrar diretamente o centro de uma articulação não produz movimento angular desse segmento."
-  },
-  {
-    "id": 1307,
-    "topicId": 1,
-    "question": "Porque é mais fácil abrir ou fechar uma porta pesada empurrando junto ao puxador na extremidade do que perto das dobradiças?",
-    "options": [
-      "Porque a porta tem menos massa quando é empurrada na sua extremidade livre.",
-      "Porque as dobradiças da porta anulam a gravidade terrestre quando a mão se afasta delas.",
-      "Porque o ar ambiente empurra ativamente a porta na extremidade livre com força gravitacional.",
-      "Porque na extremidade o braço de momento (b) é muito maior, gerando o mesmo torque com uma força muscular muito menor."
-    ],
-    "correctIndex": 3,
-    "explanation": "Como M = F · b, para obter o mesmo torque 'M' de rotação, quanto maior o braço 'b', menor é a força 'F' necessária (F = M / b).",
-    "distractorAnalysis": [
-      "Está incorreta: A massa total da porta é constante e independente do local onde se exerce a força de contacto.",
-      "Está incorreta: As dobradiças sustentam o peso da porta, mas não alteram a atração da gravidade terrestre.",
-      "Está incorreta: O ar ambiente não atua como força propulsora espontânea na extremidade da porta."
-    ],
-    "nursingApplication": "Princípio físico crucial na ergonomia: alavancas com braços maiores exigem forças consideravelmente menores."
-  },
-  {
-    "id": 1308,
-    "topicId": 1,
-    "question": "Como varia o momento de uma força F constante se o ângulo entre a força e a barra diminuir de 90° (perpendicular) para 0° (paralela à barra)?",
-    "options": [
-      "Diminui progressivamente até se anular a 0°, pois M = F · d · sen(θ) e sen(0°) = 0.",
-      "Aumenta progressivamente até atingir o valor máximo a 0°.",
-      "Permanece rigorosamente constante porque a intensidade da força F e o comprimento d não mudam.",
-      "Inverte de sentido e faz a barra girar com velocidade angular infinita."
-    ],
-    "correctIndex": 0,
-    "explanation": "A componente perpendicular eficaz é F · sen(θ). A 90° temos eficácia máxima (sen 90° = 1); a 0° a força puxa ao longo da barra (sem torque).",
-    "distractorAnalysis": [
-      "Está incorreta: A eficácia rotacional diminui ao inclinar a força, nunca aumentando a 0°.",
-      "Está incorreta: O momento varia com o ângulo de aplicação, sendo máximo a 90° e nulo a 0°.",
-      "Está incorreta: A 0° o momento é zero; não há rotação nem inversão com velocidade infinita."
-    ],
-    "nursingApplication": "Explica por que a eficácia da contração muscular varia com o ângulo articular ao longo do movimento."
-  },
-  {
-    "id": 1309,
-    "topicId": 1,
-    "question": "Na mecânica física clássica, o que caracteriza especificamente um 'Binário de Forças' (ou Par de Forças)?",
-    "options": [
-      "Duas forças perpendiculares entre si que colidem frontalmente no vácuo.",
-      "Um par de forças com a mesma intensidade, direções paralelas, sentidos opostos e linhas de ação distintas, produzindo rotação pura sem qualquer translação.",
-      "Uma força única que atua em dois corpos no mesmo instante com intensidade tripla.",
-      "Duas forças com o mesmo sentido que aceleram o corpo em linha reta."
-    ],
-    "correctIndex": 1,
-    "explanation": "Um binário tem resultante de forças nula (∑F = 0), logo não translada o corpo, mas tem momento resultante não nulo (∑M ≠ 0), produzindo rotação pura.",
-    "distractorAnalysis": [
-      "Está incorreta: Forças perpendiculares não são paralelas e não formam um binário mecânico clássico.",
-      "Está incorreta: Um binário é rigorosamente constituído por duas forças separadas e paralelas, não por uma força única.",
-      "Está incorreta: Duas forças com o mesmo sentido somam-se e aceleram o corpo em translação, não formando um binário de rotação pura."
-    ],
-    "nursingApplication": "Exemplo das duas mãos a rodar o volante de uma cadeira de rodas em sentidos opostos com igual intensidade."
-  },
-  {
-    "id": 1310,
-    "topicId": 1,
-    "question": "Qual é a propriedade fundamental do Momento de um Binário de Forças em relação a qualquer ponto de referência escolhido no espaço?",
-    "options": [
-      "O seu valor anula-se automaticamente se o ponto de referência for colocado fora do corpo.",
-      "O seu valor duplica a cada metro de distância a que o observador se encontra do eixo.",
-      "O seu valor é rigorosamente constante e independente da posição do ponto de referência, dependendo apenas do produto da intensidade da força pela distância entre as suas linhas de ação (M = F · d).",
-      "O momento de um binário é sempre nulo porque as forças têm sentidos opostos."
-    ],
-    "correctIndex": 2,
-    "explanation": "Diferente do momento de uma força isolada, o momento de um binário é invariante em relação à escolha da origem dos momentos.",
-    "distractorAnalysis": [
-      "Está incorreta: A posição do ponto de referência não anula o momento resultante de um binário no espaço.",
-      "Está incorreta: O momento mecânico não depende da posição de observadores externos.",
-      "Está incorreta: As forças anulam-se na translação (∑F = 0), mas os seus momentos somam-se no mesmo sentido rotacional (M = F · d ≠ 0)."
-    ],
-    "nursingApplication": "Princípio físico que permite girar manípulos circulares de torneiras ou macas com torque puro sem forças laterais parasitas."
-  },
-  {
-    "id": 1311,
-    "topicId": 1,
-    "question": "O que mede o Momento de uma Força (ou Torque) na física?",
-    "options": [
-      "A quantidade total de calor dissipada pelas moléculas de um sólido sob pressão estática.",
-      "A velocidade linear instantânea adquirida pelo corpo em queda livre no vácuo.",
-      "A taxa de decaimento radioativo de núcleos atómicos emissores de partículas beta.",
-      "A capacidade ou eficácia que uma força possui de produzir rotação de um corpo em torno de um ponto de apoio ou eixo."
-    ],
-    "correctIndex": 3,
-    "explanation": "O momento mede a tendência rotacional: M = F · b, dependendo da força e da distância perpendicular ao eixo.",
-    "distractorAnalysis": [
-      "Está incorreta: Momento de força é uma grandeza mecânica vetorial, não energia térmica calorífica.",
-      "Está incorreta: Velocidade em queda livre é uma grandeza cinemática medida em m/s, não momento de força.",
-      "Está incorreta: Decaimento radioativo pertence à física nuclear, sem qualquer relação com rotação de sólidos rígidos."
-    ],
-    "nursingApplication": "Conceito central na biomecânica: os músculos geram momentos articulares para movimentar os segmentos corporais."
-  },
-  {
-    "id": 1312,
-    "topicId": 1,
-    "question": "Como se calcula a intensidade do Momento de uma Força (M) aplicada perpendicularmente a um braço de alavanca?",
-    "options": [
-      "M = F · b (produto da intensidade da força pelo braço de momento perpendicular).",
-      "M = F / b (razão entre a força e o braço de momento).",
-      "M = F + b (soma da força com a distância do braço).",
-      "M = F · b² (produto da força pelo quadrado da distância)."
-    ],
-    "correctIndex": 0,
-    "explanation": "O momento é o produto da intensidade da força pela distância perpendicular da linha de ação ao eixo de rotação: M = F · b.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir a força pelo braço (F/b) viola a definição dimensional e física do momento de força.",
-      "Está incorreta: Somar uma força em Newtons com uma distância em metros viola a homogeneidade dimensional da física.",
-      "Está incorreta: O momento depende linearmente do braço de alavanca 'b', e não do seu quadrado."
-    ],
-    "nursingApplication": "Permite calcular o esforço rotacional nas articulações ao elevar objetos com os membros estendidos."
-  },
-  {
-    "id": 1313,
-    "topicId": 1,
-    "question": "Qual é a unidade do Momento de uma Força (Torque) no Sistema Internacional de Unidades (SI)?",
-    "options": [
-      "Joule por segundo (J/s).",
-      "Newton-metro (N·m).",
-      "Pascal por metro quadrado (Pa/m²).",
-      "Quilograma por metro (kg/m)."
-    ],
-    "correctIndex": 1,
-    "explanation": "Como M = F · b (força em Newtons multiplicada por distância em metros), a unidade padrão no SI é o Newton-metro (N·m).",
-    "distractorAnalysis": [
-      "Está incorreta: Joule por segundo é Watt (unidade de potência mecânica ou elétrica).",
-      "Está incorreta: Pascal por metro quadrado não é a unidade de momento de rotação.",
-      "Está incorreta: Quilograma por metro é unidade de densidade linear de massa, não de momento de força."
-    ],
-    "nursingApplication": "Distingue formalmente a unidade de momento mecânico (N·m) de outras grandezas dimensionais."
-  },
-  {
-    "id": 1314,
-    "topicId": 1,
-    "question": "O que é o 'Braço de uma Força' (ou braço de alavanca 'b') na definição do Momento?",
-    "options": [
-      "O comprimento total do membro superior da pessoa que está a aplicar a força.",
-      "A distância horizontal entre o operador e o teto da enfermaria hospitalar.",
-      "A distância perpendicular (à menor distância) medida entre o eixo de rotação e a linha de ação da força.",
-      "O tempo em segundos durante o qual o músculo permanece em contração isométrica."
-    ],
-    "correctIndex": 2,
-    "explanation": "O braço de momento 'b' é a distância geométrica medida a 90° entre o fulcro e a reta suporte da força.",
-    "distractorAnalysis": [
-      "Está incorreta: O braço anatómico é um segmento corporal, mas o 'braço de alavanca' em física é a distância perpendicular ao eixo.",
-      "Está incorreta: A distância ao teto não tem qualquer relação com o eixo de rotação mecânico da alavanca.",
-      "Está incorreta: O tempo mede duração temporal em segundos, não distância perpendicular em metros."
-    ],
-    "nursingApplication": "Compreender o braço perpendicular explica por que dobrar o cotovelo reduz o esforço muscular lombar."
-  },
-  {
-    "id": 1315,
-    "topicId": 1,
-    "question": "Ao aplicar-se uma força perpendicular de 30 N na extremidade de uma barra a 0,6 m do eixo de rotação, qual é o momento de força gerado?",
-    "options": [
-      "50 N·m.",
-      "30,6 N·m.",
-      "5 N·m.",
-      "18,0 N·m."
-    ],
-    "correctIndex": 3,
-    "explanation": "Cálculo direto pelo produto M = F · b: M = 30 N · 0,6 m = 18,0 N·m.",
-    "distractorAnalysis": [
-      "Está incorreta: 50 N·m resultaria de dividir erroneamente 30 por 0,6 (F / b).",
-      "Está incorreta: 30,6 N·m resultaria de somar incorretamente a força com a distância (30 + 0,6).",
-      "Está incorreta: 5 N·m não corresponde ao produto da força pela distância perpendicular."
-    ],
-    "nursingApplication": "Permite quantificar o momento gerado em manivelas de regulação de camas e aparelhos de apoio."
-  },
-  {
-    "id": 1316,
-    "topicId": 1,
-    "question": "O que acontece ao Momento de uma Força se a linha de ação da força passar exatamente pelo eixo de rotação (b = 0)?",
-    "options": [
-      "O momento é rigorosamente nulo (M = 0), não produzindo nenhuma rotação do corpo.",
-      "O momento atinge o valor infinito, provocando uma rotação destrutiva imediata.",
-      "O momento depende exclusivamente da massa do corpo dividida pela gravidade.",
-      "O momento transforma-se espontaneamente numa força de atrito cinético no solo."
-    ],
-    "correctIndex": 0,
-    "explanation": "Se a linha de ação passa pelo eixo, a distância perpendicular é zero (b = 0). Logo, M = F · 0 = 0 N·m (sem efeito rotacional).",
-    "distractorAnalysis": [
-      "Está incorreta: Não há momento infinito; sem braço de momento perpendicular, a rotação simplesmente não ocorre.",
-      "Está incorreta: O momento é nulo independentemente da massa ou do campo gravitacional local.",
-      "Está incorreta: Uma força aplicada no eixo não se transforma em atrito de solo; é absorvida pelo apoio do eixo."
-    ],
-    "nursingApplication": "Puxar ou empurrar diretamente o centro de uma articulação não produz movimento angular desse segmento."
-  },
-  {
-    "id": 1317,
-    "topicId": 1,
-    "question": "Porque é mais fácil abrir ou fechar uma porta pesada empurrando junto ao puxador na extremidade do que perto das dobradiças?",
-    "options": [
-      "Porque a porta tem menos massa quando é empurrada na sua extremidade livre.",
-      "Porque na extremidade o braço de momento (b) é muito maior, gerando o mesmo torque com uma força muscular muito menor.",
-      "Porque as dobradiças da porta anulam a gravidade terrestre quando a mão se afasta delas.",
-      "Porque o ar ambiente empurra ativamente a porta na extremidade livre com força gravitacional."
-    ],
-    "correctIndex": 1,
-    "explanation": "Como M = F · b, para obter o mesmo torque 'M' de rotação, quanto maior o braço 'b', menor é a força 'F' necessária (F = M / b).",
-    "distractorAnalysis": [
-      "Está incorreta: A massa total da porta é constante e independente do local onde se exerce a força de contacto.",
-      "Está incorreta: As dobradiças sustentam o peso da porta, mas não alteram a atração da gravidade terrestre.",
-      "Está incorreta: O ar ambiente não atua como força propulsora espontânea na extremidade da porta."
-    ],
-    "nursingApplication": "Princípio físico crucial na ergonomia: alavancas com braços maiores exigem forças consideravelmente menores."
-  },
-  {
-    "id": 1318,
-    "topicId": 1,
-    "question": "Como varia o momento de uma força F constante se o ângulo entre a força e a barra diminuir de 90° (perpendicular) para 0° (paralela à barra)?",
-    "options": [
-      "Aumenta progressivamente até atingir o valor máximo a 0°.",
-      "Permanece rigorosamente constante porque a intensidade da força F e o comprimento d não mudam.",
-      "Diminui progressivamente até se anular a 0°, pois M = F · d · sen(θ) e sen(0°) = 0.",
-      "Inverte de sentido e faz a barra girar com velocidade angular infinita."
-    ],
-    "correctIndex": 2,
-    "explanation": "A componente perpendicular eficaz é F · sen(θ). A 90° temos eficácia máxima (sen 90° = 1); a 0° a força puxa ao longo da barra (sem torque).",
-    "distractorAnalysis": [
-      "Está incorreta: A eficácia rotacional diminui ao inclinar a força, nunca aumentando a 0°.",
-      "Está incorreta: O momento varia com o ângulo de aplicação, sendo máximo a 90° e nulo a 0°.",
-      "Está incorreta: A 0° o momento é zero; não há rotação nem inversão com velocidade infinita."
-    ],
-    "nursingApplication": "Explica por que a eficácia da contração muscular varia com o ângulo articular ao longo do movimento."
-  },
-  {
-    "id": 1319,
-    "topicId": 1,
-    "question": "Na mecânica física clássica, o que caracteriza especificamente um 'Binário de Forças' (ou Par de Forças)?",
-    "options": [
-      "Duas forças perpendiculares entre si que colidem frontalmente no vácuo.",
-      "Uma força única que atua em dois corpos no mesmo instante com intensidade tripla.",
-      "Duas forças com o mesmo sentido que aceleram o corpo em linha reta.",
-      "Um par de forças com a mesma intensidade, direções paralelas, sentidos opostos e linhas de ação distintas, produzindo rotação pura sem qualquer translação."
-    ],
-    "correctIndex": 3,
-    "explanation": "Um binário tem resultante de forças nula (∑F = 0), logo não translada o corpo, mas tem momento resultante não nulo (∑M ≠ 0), produzindo rotação pura.",
-    "distractorAnalysis": [
-      "Está incorreta: Forças perpendiculares não são paralelas e não formam um binário mecânico clássico.",
-      "Está incorreta: Um binário é rigorosamente constituído por duas forças separadas e paralelas, não por uma força única.",
-      "Está incorreta: Duas forças com o mesmo sentido somam-se e aceleram o corpo em translação, não formando um binário de rotação pura."
-    ],
-    "nursingApplication": "Exemplo das duas mãos a rodar o volante de uma cadeira de rodas em sentidos opostos com igual intensidade."
-  },
-  {
-    "id": 1320,
-    "topicId": 1,
-    "question": "Qual é a propriedade fundamental do Momento de um Binário de Forças em relação a qualquer ponto de referência escolhido no espaço?",
-    "options": [
-      "O seu valor é rigorosamente constante e independente da posição do ponto de referência, dependendo apenas do produto da intensidade da força pela distância entre as suas linhas de ação (M = F · d).",
-      "O seu valor anula-se automaticamente se o ponto de referência for colocado fora do corpo.",
-      "O seu valor duplica a cada metro de distância a que o observador se encontra do eixo.",
-      "O momento de um binário é sempre nulo porque as forças têm sentidos opostos."
-    ],
-    "correctIndex": 0,
-    "explanation": "Diferente do momento de uma força isolada, o momento de um binário é invariante em relação à escolha da origem dos momentos.",
-    "distractorAnalysis": [
-      "Está incorreta: A posição do ponto de referência não anula o momento resultante de um binário no espaço.",
-      "Está incorreta: O momento mecânico não depende da posição de observadores externos.",
-      "Está incorreta: As forças anulam-se na translação (∑F = 0), mas os seus momentos somam-se no mesmo sentido rotacional (M = F · d ≠ 0)."
-    ],
-    "nursingApplication": "Princípio físico que permite girar manípulos circulares de torneiras ou macas com torque puro sem forças laterais parasitas."
-  },
-  {
-    "id": 1321,
-    "topicId": 1,
-    "question": "O que mede o Momento de uma Força (ou Torque) na física?",
-    "options": [
-      "A quantidade total de calor dissipada pelas moléculas de um sólido sob pressão estática.",
-      "A capacidade ou eficácia que uma força possui de produzir rotação de um corpo em torno de um ponto de apoio ou eixo.",
-      "A velocidade linear instantânea adquirida pelo corpo em queda livre no vácuo.",
-      "A taxa de decaimento radioativo de núcleos atómicos emissores de partículas beta."
-    ],
-    "correctIndex": 1,
-    "explanation": "O momento mede a tendência rotacional: M = F · b, dependendo da força e da distância perpendicular ao eixo.",
-    "distractorAnalysis": [
-      "Está incorreta: Momento de força é uma grandeza mecânica vetorial, não energia térmica calorífica.",
-      "Está incorreta: Velocidade em queda livre é uma grandeza cinemática medida em m/s, não momento de força.",
-      "Está incorreta: Decaimento radioativo pertence à física nuclear, sem qualquer relação com rotação de sólidos rígidos."
-    ],
-    "nursingApplication": "Conceito central na biomecânica: os músculos geram momentos articulares para movimentar os segmentos corporais."
-  },
-  {
-    "id": 1322,
-    "topicId": 1,
-    "question": "Como se calcula a intensidade do Momento de uma Força (M) aplicada perpendicularmente a um braço de alavanca?",
-    "options": [
-      "M = F / b (razão entre a força e o braço de momento).",
-      "M = F + b (soma da força com a distância do braço).",
-      "M = F · b (produto da intensidade da força pelo braço de momento perpendicular).",
-      "M = F · b² (produto da força pelo quadrado da distância)."
-    ],
-    "correctIndex": 2,
-    "explanation": "O momento é o produto da intensidade da força pela distância perpendicular da linha de ação ao eixo de rotação: M = F · b.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir a força pelo braço (F/b) viola a definição dimensional e física do momento de força.",
-      "Está incorreta: Somar uma força em Newtons com uma distância em metros viola a homogeneidade dimensional da física.",
-      "Está incorreta: O momento depende linearmente do braço de alavanca 'b', e não do seu quadrado."
-    ],
-    "nursingApplication": "Permite calcular o esforço rotacional nas articulações ao elevar objetos com os membros estendidos."
-  },
-  {
-    "id": 1323,
-    "topicId": 1,
-    "question": "Qual é a unidade do Momento de uma Força (Torque) no Sistema Internacional de Unidades (SI)?",
-    "options": [
-      "Joule por segundo (J/s).",
-      "Pascal por metro quadrado (Pa/m²).",
-      "Quilograma por metro (kg/m).",
-      "Newton-metro (N·m)."
-    ],
-    "correctIndex": 3,
-    "explanation": "Como M = F · b (força em Newtons multiplicada por distância em metros), a unidade padrão no SI é o Newton-metro (N·m).",
-    "distractorAnalysis": [
-      "Está incorreta: Joule por segundo é Watt (unidade de potência mecânica ou elétrica).",
-      "Está incorreta: Pascal por metro quadrado não é a unidade de momento de rotação.",
-      "Está incorreta: Quilograma por metro é unidade de densidade linear de massa, não de momento de força."
-    ],
-    "nursingApplication": "Distingue formalmente a unidade de momento mecânico (N·m) de outras grandezas dimensionais."
-  },
-  {
-    "id": 1324,
-    "topicId": 1,
-    "question": "O que é o 'Braço de uma Força' (ou braço de alavanca 'b') na definição do Momento?",
-    "options": [
-      "A distância perpendicular (à menor distância) medida entre o eixo de rotação e a linha de ação da força.",
-      "O comprimento total do membro superior da pessoa que está a aplicar a força.",
-      "A distância horizontal entre o operador e o teto da enfermaria hospitalar.",
-      "O tempo em segundos durante o qual o músculo permanece em contração isométrica."
-    ],
-    "correctIndex": 0,
-    "explanation": "O braço de momento 'b' é a distância geométrica medida a 90° entre o fulcro e a reta suporte da força.",
-    "distractorAnalysis": [
-      "Está incorreta: O braço anatómico é um segmento corporal, mas o 'braço de alavanca' em física é a distância perpendicular ao eixo.",
-      "Está incorreta: A distância ao teto não tem qualquer relação com o eixo de rotação mecânico da alavanca.",
-      "Está incorreta: O tempo mede duração temporal em segundos, não distância perpendicular em metros."
-    ],
-    "nursingApplication": "Compreender o braço perpendicular explica por que dobrar o cotovelo reduz o esforço muscular lombar."
-  },
-  {
-    "id": 1325,
-    "topicId": 1,
-    "question": "Ao aplicar-se uma força perpendicular de 30 N na extremidade de uma barra a 0,6 m do eixo de rotação, qual é o momento de força gerado?",
-    "options": [
-      "50 N·m.",
-      "18,0 N·m.",
-      "30,6 N·m.",
-      "5 N·m."
-    ],
-    "correctIndex": 1,
-    "explanation": "Cálculo direto pelo produto M = F · b: M = 30 N · 0,6 m = 18,0 N·m.",
-    "distractorAnalysis": [
-      "Está incorreta: 50 N·m resultaria de dividir erroneamente 30 por 0,6 (F / b).",
-      "Está incorreta: 30,6 N·m resultaria de somar incorretamente a força com a distância (30 + 0,6).",
-      "Está incorreta: 5 N·m não corresponde ao produto da força pela distância perpendicular."
-    ],
-    "nursingApplication": "Permite quantificar o momento gerado em manivelas de regulação de camas e aparelhos de apoio."
-  },
-  {
-    "id": 1326,
-    "topicId": 1,
-    "question": "O que acontece ao Momento de uma Força se a linha de ação da força passar exatamente pelo eixo de rotação (b = 0)?",
-    "options": [
-      "O momento atinge o valor infinito, provocando uma rotação destrutiva imediata.",
-      "O momento depende exclusivamente da massa do corpo dividida pela gravidade.",
-      "O momento é rigorosamente nulo (M = 0), não produzindo nenhuma rotação do corpo.",
-      "O momento transforma-se espontaneamente numa força de atrito cinético no solo."
-    ],
-    "correctIndex": 2,
-    "explanation": "Se a linha de ação passa pelo eixo, a distância perpendicular é zero (b = 0). Logo, M = F · 0 = 0 N·m (sem efeito rotacional).",
-    "distractorAnalysis": [
-      "Está incorreta: Não há momento infinito; sem braço de momento perpendicular, a rotação simplesmente não ocorre.",
-      "Está incorreta: O momento é nulo independentemente da massa ou do campo gravitacional local.",
-      "Está incorreta: Uma força aplicada no eixo não se transforma em atrito de solo; é absorvida pelo apoio do eixo."
-    ],
-    "nursingApplication": "Puxar ou empurrar diretamente o centro de uma articulação não produz movimento angular desse segmento."
-  },
-  {
-    "id": 1327,
-    "topicId": 1,
-    "question": "Porque é mais fácil abrir ou fechar uma porta pesada empurrando junto ao puxador na extremidade do que perto das dobradiças?",
-    "options": [
-      "Porque a porta tem menos massa quando é empurrada na sua extremidade livre.",
-      "Porque as dobradiças da porta anulam a gravidade terrestre quando a mão se afasta delas.",
-      "Porque o ar ambiente empurra ativamente a porta na extremidade livre com força gravitacional.",
-      "Porque na extremidade o braço de momento (b) é muito maior, gerando o mesmo torque com uma força muscular muito menor."
-    ],
-    "correctIndex": 3,
-    "explanation": "Como M = F · b, para obter o mesmo torque 'M' de rotação, quanto maior o braço 'b', menor é a força 'F' necessária (F = M / b).",
-    "distractorAnalysis": [
-      "Está incorreta: A massa total da porta é constante e independente do local onde se exerce a força de contacto.",
-      "Está incorreta: As dobradiças sustentam o peso da porta, mas não alteram a atração da gravidade terrestre.",
-      "Está incorreta: O ar ambiente não atua como força propulsora espontânea na extremidade da porta."
-    ],
-    "nursingApplication": "Princípio físico crucial na ergonomia: alavancas com braços maiores exigem forças consideravelmente menores."
-  },
-  {
-    "id": 1328,
-    "topicId": 1,
-    "question": "Como varia o momento de uma força F constante se o ângulo entre a força e a barra diminuir de 90° (perpendicular) para 0° (paralela à barra)?",
-    "options": [
-      "Diminui progressivamente até se anular a 0°, pois M = F · d · sen(θ) e sen(0°) = 0.",
-      "Aumenta progressivamente até atingir o valor máximo a 0°.",
-      "Permanece rigorosamente constante porque a intensidade da força F e o comprimento d não mudam.",
-      "Inverte de sentido e faz a barra girar com velocidade angular infinita."
-    ],
-    "correctIndex": 0,
-    "explanation": "A componente perpendicular eficaz é F · sen(θ). A 90° temos eficácia máxima (sen 90° = 1); a 0° a força puxa ao longo da barra (sem torque).",
-    "distractorAnalysis": [
-      "Está incorreta: A eficácia rotacional diminui ao inclinar a força, nunca aumentando a 0°.",
-      "Está incorreta: O momento varia com o ângulo de aplicação, sendo máximo a 90° e nulo a 0°.",
-      "Está incorreta: A 0° o momento é zero; não há rotação nem inversão com velocidade infinita."
-    ],
-    "nursingApplication": "Explica por que a eficácia da contração muscular varia com o ângulo articular ao longo do movimento."
-  },
-  {
-    "id": 1329,
-    "topicId": 1,
-    "question": "Na mecânica física clássica, o que caracteriza especificamente um 'Binário de Forças' (ou Par de Forças)?",
-    "options": [
-      "Duas forças perpendiculares entre si que colidem frontalmente no vácuo.",
-      "Um par de forças com a mesma intensidade, direções paralelas, sentidos opostos e linhas de ação distintas, produzindo rotação pura sem qualquer translação.",
-      "Uma força única que atua em dois corpos no mesmo instante com intensidade tripla.",
-      "Duas forças com o mesmo sentido que aceleram o corpo em linha reta."
-    ],
-    "correctIndex": 1,
-    "explanation": "Um binário tem resultante de forças nula (∑F = 0), logo não translada o corpo, mas tem momento resultante não nulo (∑M ≠ 0), produzindo rotação pura.",
-    "distractorAnalysis": [
-      "Está incorreta: Forças perpendiculares não são paralelas e não formam um binário mecânico clássico.",
-      "Está incorreta: Um binário é rigorosamente constituído por duas forças separadas e paralelas, não por uma força única.",
-      "Está incorreta: Duas forças com o mesmo sentido somam-se e aceleram o corpo em translação, não formando um binário de rotação pura."
-    ],
-    "nursingApplication": "Exemplo das duas mãos a rodar o volante de uma cadeira de rodas em sentidos opostos com igual intensidade."
-  },
-  {
-    "id": 1330,
-    "topicId": 1,
-    "question": "Qual é a propriedade fundamental do Momento de um Binário de Forças em relação a qualquer ponto de referência escolhido no espaço?",
-    "options": [
-      "O seu valor anula-se automaticamente se o ponto de referência for colocado fora do corpo.",
-      "O seu valor duplica a cada metro de distância a que o observador se encontra do eixo.",
-      "O seu valor é rigorosamente constante e independente da posição do ponto de referência, dependendo apenas do produto da intensidade da força pela distância entre as suas linhas de ação (M = F · d).",
-      "O momento de um binário é sempre nulo porque as forças têm sentidos opostos."
-    ],
-    "correctIndex": 2,
-    "explanation": "Diferente do momento de uma força isolada, o momento de um binário é invariante em relação à escolha da origem dos momentos.",
-    "distractorAnalysis": [
-      "Está incorreta: A posição do ponto de referência não anula o momento resultante de um binário no espaço.",
-      "Está incorreta: O momento mecânico não depende da posição de observadores externos.",
-      "Está incorreta: As forças anulam-se na translação (∑F = 0), mas os seus momentos somam-se no mesmo sentido rotacional (M = F · d ≠ 0)."
-    ],
-    "nursingApplication": "Princípio físico que permite girar manípulos circulares de torneiras ou macas com torque puro sem forças laterais parasitas."
-  },
-  {
-    "id": 1331,
-    "topicId": 1,
-    "question": "O que mede o Momento de uma Força (ou Torque) na física?",
-    "options": [
-      "A quantidade total de calor dissipada pelas moléculas de um sólido sob pressão estática.",
-      "A velocidade linear instantânea adquirida pelo corpo em queda livre no vácuo.",
-      "A taxa de decaimento radioativo de núcleos atómicos emissores de partículas beta.",
-      "A capacidade ou eficácia que uma força possui de produzir rotação de um corpo em torno de um ponto de apoio ou eixo."
-    ],
-    "correctIndex": 3,
-    "explanation": "O momento mede a tendência rotacional: M = F · b, dependendo da força e da distância perpendicular ao eixo.",
-    "distractorAnalysis": [
-      "Está incorreta: Momento de força é uma grandeza mecânica vetorial, não energia térmica calorífica.",
-      "Está incorreta: Velocidade em queda livre é uma grandeza cinemática medida em m/s, não momento de força.",
-      "Está incorreta: Decaimento radioativo pertence à física nuclear, sem qualquer relação com rotação de sólidos rígidos."
-    ],
-    "nursingApplication": "Conceito central na biomecânica: os músculos geram momentos articulares para movimentar os segmentos corporais."
-  },
-  {
-    "id": 1332,
-    "topicId": 1,
-    "question": "Como se calcula a intensidade do Momento de uma Força (M) aplicada perpendicularmente a um braço de alavanca?",
-    "options": [
-      "M = F · b (produto da intensidade da força pelo braço de momento perpendicular).",
-      "M = F / b (razão entre a força e o braço de momento).",
-      "M = F + b (soma da força com a distância do braço).",
-      "M = F · b² (produto da força pelo quadrado da distância)."
-    ],
-    "correctIndex": 0,
-    "explanation": "O momento é o produto da intensidade da força pela distância perpendicular da linha de ação ao eixo de rotação: M = F · b.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir a força pelo braço (F/b) viola a definição dimensional e física do momento de força.",
-      "Está incorreta: Somar uma força em Newtons com uma distância em metros viola a homogeneidade dimensional da física.",
-      "Está incorreta: O momento depende linearmente do braço de alavanca 'b', e não do seu quadrado."
-    ],
-    "nursingApplication": "Permite calcular o esforço rotacional nas articulações ao elevar objetos com os membros estendidos."
-  },
-  {
-    "id": 1333,
-    "topicId": 1,
-    "question": "Qual é a unidade do Momento de uma Força (Torque) no Sistema Internacional de Unidades (SI)?",
-    "options": [
-      "Joule por segundo (J/s).",
-      "Newton-metro (N·m).",
-      "Pascal por metro quadrado (Pa/m²).",
-      "Quilograma por metro (kg/m)."
-    ],
-    "correctIndex": 1,
-    "explanation": "Como M = F · b (força em Newtons multiplicada por distância em metros), a unidade padrão no SI é o Newton-metro (N·m).",
-    "distractorAnalysis": [
-      "Está incorreta: Joule por segundo é Watt (unidade de potência mecânica ou elétrica).",
-      "Está incorreta: Pascal por metro quadrado não é a unidade de momento de rotação.",
-      "Está incorreta: Quilograma por metro é unidade de densidade linear de massa, não de momento de força."
-    ],
-    "nursingApplication": "Distingue formalmente a unidade de momento mecânico (N·m) de outras grandezas dimensionais."
-  },
-  {
-    "id": 1334,
-    "topicId": 1,
-    "question": "O que é o 'Braço de uma Força' (ou braço de alavanca 'b') na definição do Momento?",
-    "options": [
-      "O comprimento total do membro superior da pessoa que está a aplicar a força.",
-      "A distância horizontal entre o operador e o teto da enfermaria hospitalar.",
-      "A distância perpendicular (à menor distância) medida entre o eixo de rotação e a linha de ação da força.",
-      "O tempo em segundos durante o qual o músculo permanece em contração isométrica."
-    ],
-    "correctIndex": 2,
-    "explanation": "O braço de momento 'b' é a distância geométrica medida a 90° entre o fulcro e a reta suporte da força.",
-    "distractorAnalysis": [
-      "Está incorreta: O braço anatómico é um segmento corporal, mas o 'braço de alavanca' em física é a distância perpendicular ao eixo.",
-      "Está incorreta: A distância ao teto não tem qualquer relação com o eixo de rotação mecânico da alavanca.",
-      "Está incorreta: O tempo mede duração temporal em segundos, não distância perpendicular em metros."
-    ],
-    "nursingApplication": "Compreender o braço perpendicular explica por que dobrar o cotovelo reduz o esforço muscular lombar."
-  },
-  {
-    "id": 1335,
-    "topicId": 1,
-    "question": "Ao aplicar-se uma força perpendicular de 30 N na extremidade de uma barra a 0,6 m do eixo de rotação, qual é o momento de força gerado?",
-    "options": [
-      "50 N·m.",
-      "30,6 N·m.",
-      "5 N·m.",
-      "18,0 N·m."
-    ],
-    "correctIndex": 3,
-    "explanation": "Cálculo direto pelo produto M = F · b: M = 30 N · 0,6 m = 18,0 N·m.",
-    "distractorAnalysis": [
-      "Está incorreta: 50 N·m resultaria de dividir erroneamente 30 por 0,6 (F / b).",
-      "Está incorreta: 30,6 N·m resultaria de somar incorretamente a força com a distância (30 + 0,6).",
-      "Está incorreta: 5 N·m não corresponde ao produto da força pela distância perpendicular."
-    ],
-    "nursingApplication": "Permite quantificar o momento gerado em manivelas de regulação de camas e aparelhos de apoio."
-  },
-  {
-    "id": 1336,
-    "topicId": 1,
-    "question": "O que acontece ao Momento de uma Força se a linha de ação da força passar exatamente pelo eixo de rotação (b = 0)?",
-    "options": [
-      "O momento é rigorosamente nulo (M = 0), não produzindo nenhuma rotação do corpo.",
-      "O momento atinge o valor infinito, provocando uma rotação destrutiva imediata.",
-      "O momento depende exclusivamente da massa do corpo dividida pela gravidade.",
-      "O momento transforma-se espontaneamente numa força de atrito cinético no solo."
-    ],
-    "correctIndex": 0,
-    "explanation": "Se a linha de ação passa pelo eixo, a distância perpendicular é zero (b = 0). Logo, M = F · 0 = 0 N·m (sem efeito rotacional).",
-    "distractorAnalysis": [
-      "Está incorreta: Não há momento infinito; sem braço de momento perpendicular, a rotação simplesmente não ocorre.",
-      "Está incorreta: O momento é nulo independentemente da massa ou do campo gravitacional local.",
-      "Está incorreta: Uma força aplicada no eixo não se transforma em atrito de solo; é absorvida pelo apoio do eixo."
-    ],
-    "nursingApplication": "Puxar ou empurrar diretamente o centro de uma articulação não produz movimento angular desse segmento."
-  },
-  {
-    "id": 1337,
-    "topicId": 1,
-    "question": "Porque é mais fácil abrir ou fechar uma porta pesada empurrando junto ao puxador na extremidade do que perto das dobradiças?",
-    "options": [
-      "Porque a porta tem menos massa quando é empurrada na sua extremidade livre.",
-      "Porque na extremidade o braço de momento (b) é muito maior, gerando o mesmo torque com uma força muscular muito menor.",
-      "Porque as dobradiças da porta anulam a gravidade terrestre quando a mão se afasta delas.",
-      "Porque o ar ambiente empurra ativamente a porta na extremidade livre com força gravitacional."
-    ],
-    "correctIndex": 1,
-    "explanation": "Como M = F · b, para obter o mesmo torque 'M' de rotação, quanto maior o braço 'b', menor é a força 'F' necessária (F = M / b).",
-    "distractorAnalysis": [
-      "Está incorreta: A massa total da porta é constante e independente do local onde se exerce a força de contacto.",
-      "Está incorreta: As dobradiças sustentam o peso da porta, mas não alteram a atração da gravidade terrestre.",
-      "Está incorreta: O ar ambiente não atua como força propulsora espontânea na extremidade da porta."
-    ],
-    "nursingApplication": "Princípio físico crucial na ergonomia: alavancas com braços maiores exigem forças consideravelmente menores."
-  },
-  {
-    "id": 1338,
-    "topicId": 1,
-    "question": "Como varia o momento de uma força F constante se o ângulo entre a força e a barra diminuir de 90° (perpendicular) para 0° (paralela à barra)?",
-    "options": [
-      "Aumenta progressivamente até atingir o valor máximo a 0°.",
-      "Permanece rigorosamente constante porque a intensidade da força F e o comprimento d não mudam.",
-      "Diminui progressivamente até se anular a 0°, pois M = F · d · sen(θ) e sen(0°) = 0.",
-      "Inverte de sentido e faz a barra girar com velocidade angular infinita."
-    ],
-    "correctIndex": 2,
-    "explanation": "A componente perpendicular eficaz é F · sen(θ). A 90° temos eficácia máxima (sen 90° = 1); a 0° a força puxa ao longo da barra (sem torque).",
-    "distractorAnalysis": [
-      "Está incorreta: A eficácia rotacional diminui ao inclinar a força, nunca aumentando a 0°.",
-      "Está incorreta: O momento varia com o ângulo de aplicação, sendo máximo a 90° e nulo a 0°.",
-      "Está incorreta: A 0° o momento é zero; não há rotação nem inversão com velocidade infinita."
-    ],
-    "nursingApplication": "Explica por que a eficácia da contração muscular varia com o ângulo articular ao longo do movimento."
-  },
-  {
-    "id": 1339,
-    "topicId": 1,
-    "question": "Na mecânica física clássica, o que caracteriza especificamente um 'Binário de Forças' (ou Par de Forças)?",
-    "options": [
-      "Duas forças perpendiculares entre si que colidem frontalmente no vácuo.",
-      "Uma força única que atua em dois corpos no mesmo instante com intensidade tripla.",
-      "Duas forças com o mesmo sentido que aceleram o corpo em linha reta.",
-      "Um par de forças com a mesma intensidade, direções paralelas, sentidos opostos e linhas de ação distintas, produzindo rotação pura sem qualquer translação."
-    ],
-    "correctIndex": 3,
-    "explanation": "Um binário tem resultante de forças nula (∑F = 0), logo não translada o corpo, mas tem momento resultante não nulo (∑M ≠ 0), produzindo rotação pura.",
-    "distractorAnalysis": [
-      "Está incorreta: Forças perpendiculares não são paralelas e não formam um binário mecânico clássico.",
-      "Está incorreta: Um binário é rigorosamente constituído por duas forças separadas e paralelas, não por uma força única.",
-      "Está incorreta: Duas forças com o mesmo sentido somam-se e aceleram o corpo em translação, não formando um binário de rotação pura."
-    ],
-    "nursingApplication": "Exemplo das duas mãos a rodar o volante de uma cadeira de rodas em sentidos opostos com igual intensidade."
-  },
-  {
-    "id": 1340,
-    "topicId": 1,
-    "question": "Qual é a propriedade fundamental do Momento de um Binário de Forças em relação a qualquer ponto de referência escolhido no espaço?",
-    "options": [
-      "O seu valor é rigorosamente constante e independente da posição do ponto de referência, dependendo apenas do produto da intensidade da força pela distância entre as suas linhas de ação (M = F · d).",
-      "O seu valor anula-se automaticamente se o ponto de referência for colocado fora do corpo.",
-      "O seu valor duplica a cada metro de distância a que o observador se encontra do eixo.",
-      "O momento de um binário é sempre nulo porque as forças têm sentidos opostos."
-    ],
-    "correctIndex": 0,
-    "explanation": "Diferente do momento de uma força isolada, o momento de um binário é invariante em relação à escolha da origem dos momentos.",
-    "distractorAnalysis": [
-      "Está incorreta: A posição do ponto de referência não anula o momento resultante de um binário no espaço.",
-      "Está incorreta: O momento mecânico não depende da posição de observadores externos.",
-      "Está incorreta: As forças anulam-se na translação (∑F = 0), mas os seus momentos somam-se no mesmo sentido rotacional (M = F · d ≠ 0)."
-    ],
-    "nursingApplication": "Princípio físico que permite girar manípulos circulares de torneiras ou macas com torque puro sem forças laterais parasitas."
-  },
-  {
-    "id": 1341,
-    "topicId": 1,
-    "question": "O que mede o Momento de uma Força (ou Torque) na física?",
-    "options": [
-      "A quantidade total de calor dissipada pelas moléculas de um sólido sob pressão estática.",
-      "A capacidade ou eficácia que uma força possui de produzir rotação de um corpo em torno de um ponto de apoio ou eixo.",
-      "A velocidade linear instantânea adquirida pelo corpo em queda livre no vácuo.",
-      "A taxa de decaimento radioativo de núcleos atómicos emissores de partículas beta."
-    ],
-    "correctIndex": 1,
-    "explanation": "O momento mede a tendência rotacional: M = F · b, dependendo da força e da distância perpendicular ao eixo.",
-    "distractorAnalysis": [
-      "Está incorreta: Momento de força é uma grandeza mecânica vetorial, não energia térmica calorífica.",
-      "Está incorreta: Velocidade em queda livre é uma grandeza cinemática medida em m/s, não momento de força.",
-      "Está incorreta: Decaimento radioativo pertence à física nuclear, sem qualquer relação com rotação de sólidos rígidos."
-    ],
-    "nursingApplication": "Conceito central na biomecânica: os músculos geram momentos articulares para movimentar os segmentos corporais."
-  },
-  {
-    "id": 1342,
-    "topicId": 1,
-    "question": "Como se calcula a intensidade do Momento de uma Força (M) aplicada perpendicularmente a um braço de alavanca?",
-    "options": [
-      "M = F / b (razão entre a força e o braço de momento).",
-      "M = F + b (soma da força com a distância do braço).",
-      "M = F · b (produto da intensidade da força pelo braço de momento perpendicular).",
-      "M = F · b² (produto da força pelo quadrado da distância)."
-    ],
-    "correctIndex": 2,
-    "explanation": "O momento é o produto da intensidade da força pela distância perpendicular da linha de ação ao eixo de rotação: M = F · b.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir a força pelo braço (F/b) viola a definição dimensional e física do momento de força.",
-      "Está incorreta: Somar uma força em Newtons com uma distância em metros viola a homogeneidade dimensional da física.",
-      "Está incorreta: O momento depende linearmente do braço de alavanca 'b', e não do seu quadrado."
-    ],
-    "nursingApplication": "Permite calcular o esforço rotacional nas articulações ao elevar objetos com os membros estendidos."
-  },
-  {
-    "id": 1343,
-    "topicId": 1,
-    "question": "Qual é a unidade do Momento de uma Força (Torque) no Sistema Internacional de Unidades (SI)?",
-    "options": [
-      "Joule por segundo (J/s).",
-      "Pascal por metro quadrado (Pa/m²).",
-      "Quilograma por metro (kg/m).",
-      "Newton-metro (N·m)."
-    ],
-    "correctIndex": 3,
-    "explanation": "Como M = F · b (força em Newtons multiplicada por distância em metros), a unidade padrão no SI é o Newton-metro (N·m).",
-    "distractorAnalysis": [
-      "Está incorreta: Joule por segundo é Watt (unidade de potência mecânica ou elétrica).",
-      "Está incorreta: Pascal por metro quadrado não é a unidade de momento de rotação.",
-      "Está incorreta: Quilograma por metro é unidade de densidade linear de massa, não de momento de força."
-    ],
-    "nursingApplication": "Distingue formalmente a unidade de momento mecânico (N·m) de outras grandezas dimensionais."
-  },
-  {
-    "id": 1344,
-    "topicId": 1,
-    "question": "O que é o 'Braço de uma Força' (ou braço de alavanca 'b') na definição do Momento?",
-    "options": [
-      "A distância perpendicular (à menor distância) medida entre o eixo de rotação e a linha de ação da força.",
-      "O comprimento total do membro superior da pessoa que está a aplicar a força.",
-      "A distância horizontal entre o operador e o teto da enfermaria hospitalar.",
-      "O tempo em segundos durante o qual o músculo permanece em contração isométrica."
-    ],
-    "correctIndex": 0,
-    "explanation": "O braço de momento 'b' é a distância geométrica medida a 90° entre o fulcro e a reta suporte da força.",
-    "distractorAnalysis": [
-      "Está incorreta: O braço anatómico é um segmento corporal, mas o 'braço de alavanca' em física é a distância perpendicular ao eixo.",
-      "Está incorreta: A distância ao teto não tem qualquer relação com o eixo de rotação mecânico da alavanca.",
-      "Está incorreta: O tempo mede duração temporal em segundos, não distância perpendicular em metros."
-    ],
-    "nursingApplication": "Compreender o braço perpendicular explica por que dobrar o cotovelo reduz o esforço muscular lombar."
-  },
-  {
-    "id": 1345,
-    "topicId": 1,
-    "question": "Ao aplicar-se uma força perpendicular de 30 N na extremidade de uma barra a 0,6 m do eixo de rotação, qual é o momento de força gerado?",
-    "options": [
-      "50 N·m.",
-      "18,0 N·m.",
-      "30,6 N·m.",
-      "5 N·m."
-    ],
-    "correctIndex": 1,
-    "explanation": "Cálculo direto pelo produto M = F · b: M = 30 N · 0,6 m = 18,0 N·m.",
-    "distractorAnalysis": [
-      "Está incorreta: 50 N·m resultaria de dividir erroneamente 30 por 0,6 (F / b).",
-      "Está incorreta: 30,6 N·m resultaria de somar incorretamente a força com a distância (30 + 0,6).",
-      "Está incorreta: 5 N·m não corresponde ao produto da força pela distância perpendicular."
-    ],
-    "nursingApplication": "Permite quantificar o momento gerado em manivelas de regulação de camas e aparelhos de apoio."
-  },
-  {
-    "id": 1346,
-    "topicId": 1,
-    "question": "O que acontece ao Momento de uma Força se a linha de ação da força passar exatamente pelo eixo de rotação (b = 0)?",
-    "options": [
-      "O momento atinge o valor infinito, provocando uma rotação destrutiva imediata.",
-      "O momento depende exclusivamente da massa do corpo dividida pela gravidade.",
-      "O momento é rigorosamente nulo (M = 0), não produzindo nenhuma rotação do corpo.",
-      "O momento transforma-se espontaneamente numa força de atrito cinético no solo."
-    ],
-    "correctIndex": 2,
-    "explanation": "Se a linha de ação passa pelo eixo, a distância perpendicular é zero (b = 0). Logo, M = F · 0 = 0 N·m (sem efeito rotacional).",
-    "distractorAnalysis": [
-      "Está incorreta: Não há momento infinito; sem braço de momento perpendicular, a rotação simplesmente não ocorre.",
-      "Está incorreta: O momento é nulo independentemente da massa ou do campo gravitacional local.",
-      "Está incorreta: Uma força aplicada no eixo não se transforma em atrito de solo; é absorvida pelo apoio do eixo."
-    ],
-    "nursingApplication": "Puxar ou empurrar diretamente o centro de uma articulação não produz movimento angular desse segmento."
-  },
-  {
-    "id": 1347,
-    "topicId": 1,
-    "question": "Porque é mais fácil abrir ou fechar uma porta pesada empurrando junto ao puxador na extremidade do que perto das dobradiças?",
-    "options": [
-      "Porque a porta tem menos massa quando é empurrada na sua extremidade livre.",
-      "Porque as dobradiças da porta anulam a gravidade terrestre quando a mão se afasta delas.",
-      "Porque o ar ambiente empurra ativamente a porta na extremidade livre com força gravitacional.",
-      "Porque na extremidade o braço de momento (b) é muito maior, gerando o mesmo torque com uma força muscular muito menor."
-    ],
-    "correctIndex": 3,
-    "explanation": "Como M = F · b, para obter o mesmo torque 'M' de rotação, quanto maior o braço 'b', menor é a força 'F' necessária (F = M / b).",
-    "distractorAnalysis": [
-      "Está incorreta: A massa total da porta é constante e independente do local onde se exerce a força de contacto.",
-      "Está incorreta: As dobradiças sustentam o peso da porta, mas não alteram a atração da gravidade terrestre.",
-      "Está incorreta: O ar ambiente não atua como força propulsora espontânea na extremidade da porta."
-    ],
-    "nursingApplication": "Princípio físico crucial na ergonomia: alavancas com braços maiores exigem forças consideravelmente menores."
-  },
-  {
-    "id": 1348,
-    "topicId": 1,
-    "question": "Como varia o momento de uma força F constante se o ângulo entre a força e a barra diminuir de 90° (perpendicular) para 0° (paralela à barra)?",
-    "options": [
-      "Diminui progressivamente até se anular a 0°, pois M = F · d · sen(θ) e sen(0°) = 0.",
-      "Aumenta progressivamente até atingir o valor máximo a 0°.",
-      "Permanece rigorosamente constante porque a intensidade da força F e o comprimento d não mudam.",
-      "Inverte de sentido e faz a barra girar com velocidade angular infinita."
-    ],
-    "correctIndex": 0,
-    "explanation": "A componente perpendicular eficaz é F · sen(θ). A 90° temos eficácia máxima (sen 90° = 1); a 0° a força puxa ao longo da barra (sem torque).",
-    "distractorAnalysis": [
-      "Está incorreta: A eficácia rotacional diminui ao inclinar a força, nunca aumentando a 0°.",
-      "Está incorreta: O momento varia com o ângulo de aplicação, sendo máximo a 90° e nulo a 0°.",
-      "Está incorreta: A 0° o momento é zero; não há rotação nem inversão com velocidade infinita."
-    ],
-    "nursingApplication": "Explica por que a eficácia da contração muscular varia com o ângulo articular ao longo do movimento."
-  },
-  {
-    "id": 1349,
-    "topicId": 1,
-    "question": "Na mecânica física clássica, o que caracteriza especificamente um 'Binário de Forças' (ou Par de Forças)?",
-    "options": [
-      "Duas forças perpendiculares entre si que colidem frontalmente no vácuo.",
-      "Um par de forças com a mesma intensidade, direções paralelas, sentidos opostos e linhas de ação distintas, produzindo rotação pura sem qualquer translação.",
-      "Uma força única que atua em dois corpos no mesmo instante com intensidade tripla.",
-      "Duas forças com o mesmo sentido que aceleram o corpo em linha reta."
-    ],
-    "correctIndex": 1,
-    "explanation": "Um binário tem resultante de forças nula (∑F = 0), logo não translada o corpo, mas tem momento resultante não nulo (∑M ≠ 0), produzindo rotação pura.",
-    "distractorAnalysis": [
-      "Está incorreta: Forças perpendiculares não são paralelas e não formam um binário mecânico clássico.",
-      "Está incorreta: Um binário é rigorosamente constituído por duas forças separadas e paralelas, não por uma força única.",
-      "Está incorreta: Duas forças com o mesmo sentido somam-se e aceleram o corpo em translação, não formando um binário de rotação pura."
-    ],
-    "nursingApplication": "Exemplo das duas mãos a rodar o volante de uma cadeira de rodas em sentidos opostos com igual intensidade."
-  },
-  {
-    "id": 1350,
-    "topicId": 1,
-    "question": "Qual é a propriedade fundamental do Momento de um Binário de Forças em relação a qualquer ponto de referência escolhido no espaço?",
-    "options": [
-      "O seu valor anula-se automaticamente se o ponto de referência for colocado fora do corpo.",
-      "O seu valor duplica a cada metro de distância a que o observador se encontra do eixo.",
-      "O seu valor é rigorosamente constante e independente da posição do ponto de referência, dependendo apenas do produto da intensidade da força pela distância entre as suas linhas de ação (M = F · d).",
-      "O momento de um binário é sempre nulo porque as forças têm sentidos opostos."
-    ],
-    "correctIndex": 2,
-    "explanation": "Diferente do momento de uma força isolada, o momento de um binário é invariante em relação à escolha da origem dos momentos.",
-    "distractorAnalysis": [
-      "Está incorreta: A posição do ponto de referência não anula o momento resultante de um binário no espaço.",
-      "Está incorreta: O momento mecânico não depende da posição de observadores externos.",
-      "Está incorreta: As forças anulam-se na translação (∑F = 0), mas os seus momentos somam-se no mesmo sentido rotacional (M = F · d ≠ 0)."
-    ],
-    "nursingApplication": "Princípio físico que permite girar manípulos circulares de torneiras ou macas com torque puro sem forças laterais parasitas."
-  },
-  {
-    "id": 1351,
-    "topicId": 1,
-    "question": "O que é uma Alavanca, segundo a definição clássica formulada por Arquimedes?",
-    "options": [
-      "Um cabo flexível elástico que armazena energia térmica através de contração contínua.",
-      "Uma superfície curva escorregadia que anula a aceleração gravítica local.",
-      "Um cilindro oco que transporta fluidos compressíveis a alta velocidade.",
-      "Uma barra rígida que pode girar em torno de um ponto de apoio fixo denominado fulcro."
-    ],
-    "correctIndex": 3,
-    "explanation": "Uma alavanca é uma máquina simples composta por um elemento rígido capaz de rodar em torno de um fulcro (PA).",
-    "distractorAnalysis": [
-      "Está incorreta: A alavanca deve ser rígida para transmitir momentos; cabos flexíveis transmitem apenas tração.",
-      "Está incorreta: Uma alavanca não é uma superfície escorregadia nem anula a gravidade.",
-      "Está incorreta: Um cilindro condutor de fluidos é um tubo hidrodinâmico, não uma alavanca mecânica."
-    ],
-    "nursingApplication": "As alavancas biomecânicas do corpo humano utilizam os ossos como barras rígidas e as articulações como fulcros."
-  },
-  {
-    "id": 1352,
-    "topicId": 1,
-    "question": "Quais são os três componentes essenciais que constituem qualquer sistema de alavanca?",
-    "options": [
-      "Ponto de apoio (fulcro), Força Potente (Fp) e Força Resistente (Fr).",
-      "Apenas o peso, a densidade e o volume do corpo a ser movimentado.",
-      "Velocidade angular, frequência de rotação e atrito aerodinâmico.",
-      "Tensão elétrica, corrente contínua e resistência em Ohms."
-    ],
-    "correctIndex": 0,
-    "explanation": "Qualquer alavanca requer um ponto de rotação (fulcro), uma força motora aplicada (potência) e uma carga a vencer (resistência).",
-    "distractorAnalysis": [
-      "Está incorreta: Peso, densidade e volume caracterizam a carga material, mas não formam um sistema de alavanca por si só.",
-      "Está incorreta: Velocidade angular e frequência são propriedades dinâmicas do movimento, não componentes estruturais da alavanca.",
-      "Está incorreta: Tensão e corrente pertencem à eletricidade e circuitos elétricos, não à mecânica das alavancas."
-    ],
-    "nursingApplication": "Permite identificar em qualquer movimento humano a articulação (fulcro), o músculo (potência) e a carga (resistência)."
-  },
-  {
-    "id": 1353,
-    "topicId": 1,
-    "question": "Qual é a equação que traduz a Lei das Alavancas em situação de equilíbrio estático?",
-    "options": [
-      "Fp / bp = Fr / br (razão da força pelo braço).",
-      "Fp · bp = Fr · br (o momento da força potente é igual ao momento da força resistente).",
-      "Fp + bp = Fr + br (soma das forças com os braços).",
-      "Fp · Fr = bp · br (produto das forças igual ao produto dos braços)."
-    ],
-    "correctIndex": 1,
-    "explanation": "O equilíbrio de momentos (∑M = 0) exige que o momento potente seja igual ao momento resistente: Fp · bp = Fr · br.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir as forças pelos braços viola a relação dimensional do equilíbrio de momentos rotacionais.",
-      "Está incorreta: Somar forças (N) com distâncias (m) é matematicamente inadmissível no cálculo de alavancas.",
-      "Está incorreta: Multiplicar força por força e braço por braço não traduz a igualdade de momentos em torno do fulcro."
-    ],
-    "nursingApplication": "Fórmula fundamental usada para calcular a força muscular requerida para sustentar uma carga articular."
-  },
-  {
-    "id": 1354,
-    "topicId": 1,
-    "question": "Como se caracteriza uma Alavanca de 1.ª Classe (Interfixa)?",
-    "options": [
-      "A força resistente localiza-se obrigatoriamente entre o fulcro e a força potente.",
-      "A força potente localiza-se sempre entre o fulcro e a força resistente.",
-      "O ponto de apoio (fulcro) localiza-se entre a força potente e a força resistente (Fp - PA - Fr).",
-      "O fulcro encontra-se infinitamente afastado da barra rígida de suporte."
-    ],
-    "correctIndex": 2,
-    "explanation": "Na alavanca interfixa, o ponto de apoio (PA) fica no meio, separando a força potente da força resistente.",
-    "distractorAnalysis": [
-      "Está incorreta: A resistência no meio define uma alavanca de 2.ª classe (inter-resistente), não de 1.ª classe.",
-      "Está incorreta: A potência no meio define uma alavanca de 3.ª classe (interpotente), não de 1.ª classe.",
-      "Está incorreta: O fulcro é um ponto físico real de apoio em torno do qual a alavanca roda, não podendo estar no infinito."
-    ],
-    "nursingApplication": "No corpo humano, o equilíbrio da cabeça sobre a coluna vertebral ilustra perfeitamente a alavanca interfixa."
-  },
-  {
-    "id": 1355,
-    "topicId": 1,
-    "question": "Qual dos seguintes instrumentos do quotidiano é um exemplo clássico de Alavanca de 1.ª Classe (Interfixa)?",
-    "options": [
-      "Um quebra-nozes.",
-      "Uma pinça de depilação.",
-      "Um carrinho de mão de jardim.",
-      "Uma tesoura comum."
-    ],
-    "correctIndex": 3,
-    "explanation": "Numa tesoura, o eixo central com parafuso é o fulcro (PA), os dedos aplicam a potência e as lâminas cortam a resistência.",
-    "distractorAnalysis": [
-      "Está incorreta: O quebra-nozes tem a resistência no meio (noz), sendo uma alavanca de 2.ª classe (inter-resistente).",
-      "Está incorreta: A pinça tem a potência no meio (onde os dedos apertam), sendo uma alavanca de 3.ª classe (interpotente).",
-      "Está incorreta: O carrinho de mão tem a carga no meio das rodas e das pegas, sendo uma alavanca de 2.ª classe."
-    ],
-    "nursingApplication": "Tesouras cirúrgicas e pinças de corte operam sob o princípio da alavanca interfixa para multiplicar a força de corte."
-  },
-  {
-    "id": 1356,
-    "topicId": 1,
-    "question": "Numa alavanca interfixa em equilíbrio, o braço da resistência mede 0,3 m e a carga resistente é de 200 N. Se o braço da potência medir 0,6 m, qual é a força potente necessária?",
-    "options": [
-      "100 N.",
-      "400 N.",
-      "200 N.",
-      "60 N."
-    ],
-    "correctIndex": 0,
-    "explanation": "Pela Lei das Alavancas: Fp · bp = Fr · br => Fp · 0,6 = 200 · 0,3 => Fp · 0,6 = 60 => Fp = 60 / 0,6 = 100 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 400 N resultaria de inverter os braços de alavanca no cálculo de momentos.",
-      "Está incorreta: 200 N seria a força se os braços fossem rigorosamente iguais (0,3 m = 0,3 m).",
-      "Está incorreta: 60 N é o valor do momento resistente em N·m (200 · 0,3), não a força em Newtons."
-    ],
-    "nursingApplication": "Mostra como ter um braço potente o dobro do resistente permite levantar a carga com metade da força."
-  },
-  {
-    "id": 1357,
-    "topicId": 1,
-    "question": "Como se comporta a Vantagem Mecânica (VM = bp / br) numa Alavanca de 1.ª Classe (Interfixa)?",
-    "options": [
-      "É obrigatoriamente e sempre superior a dez em qualquer situação prática.",
-      "Pode ser maior que 1, igual a 1 ou menor que 1, dependendo da posição relativa do fulcro entre as forças.",
-      "É estritamente igual a zero porque o fulcro central anula todas as vantagens de força.",
-      "É sempre menor que 1, exigindo sistematicamente mais força do que a resistência a vencer."
-    ],
-    "correctIndex": 1,
-    "explanation": "Na alavanca interfixa, se bp > br temos VM > 1; se bp = br temos VM = 1; se bp < br temos VM < 1.",
-    "distractorAnalysis": [
-      "Está incorreta: A vantagem mecânica não é obrigatoriamente superior a dez; depende da razão geométrica dos braços.",
-      "Está incorreta: Uma vantagem mecânica não é zero; se fosse zero, a alavanca não transmitiria nenhuma força.",
-      "Está incorreta: Ser sempre menor que 1 é a característica da alavanca de 3.ª classe, não da interfixa."
-    ],
-    "nursingApplication": "Permite ajustar a posição do fulcro para privilegiar força (braço potente longo) ou velocidade."
-  },
-  {
-    "id": 1358,
-    "topicId": 1,
-    "question": "No corpo humano, o sistema que equilibra o peso da cabeça sobre a coluna cervical (músculos da nuca) é um exemplo de alavanca:",
-    "options": [
-      "De 2.ª Classe (Inter-resistente), onde o queixo funciona como o ponto de apoio fixo do solo.",
-      "De 3.ª Classe (Interpotente), onde o cérebro atua como força potente geradora de calor.",
-      "De 1.ª Classe (Interfixa), com a articulação atlanto-occipital a funcionar como fulcro central.",
-      "De 4.ª Classe, uma categoria especial exclusiva de tecidos nervosos desmielinizados."
-    ],
-    "correctIndex": 2,
-    "explanation": "O fulcro está na articulação atlanto-occipital (meio), a resistência é o peso anterior da cabeça e a potência são os músculos da nuca (trás).",
-    "distractorAnalysis": [
-      "Está incorreta: O queixo não é o fulcro; o apoio rotacional da cabeça situa-se nas vértebras cervicais superiores.",
-      "Está incorreta: O cérebro não é um músculo nem gera força potente mecânica de tração.",
-      "Está incorreta: Na física clássica existem apenas 3 classes de alavancas; não existe 4.ª classe."
-    ],
-    "nursingApplication": "Explica como a musculatura posterior do pescoço previne a queda da cabeça para a frente com mínimo esforço."
-  },
-  {
-    "id": 1359,
-    "topicId": 1,
-    "question": "Numa alavanca de 1.ª classe em equilíbrio horizontal, onde a força potente de 80 N e a resistente de 120 N atuam verticalmente para baixo em lados opostos do fulcro, qual é a intensidade da força exercida pelo apoio sobre a alavanca?",
-    "options": [
-      "40 N, correspondente à diferença algébrica entre as duas forças.",
-      "9600 N, obtida pela multiplicação das duas forças aplicadas.",
-      "Zero N, porque o fulcro não suporta nenhuma carga em equilíbrio estático.",
-      "200 N, orientada verticalmente para cima para anular a resultante das forças descendentes."
-    ],
-    "correctIndex": 3,
-    "explanation": "Pela 1.ª condição de equilíbrio (∑F = 0), a força normal de reação do fulcro equilibra a soma de todas as forças para baixo: N = Fp + Fr = 80 + 120 = 200 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 40 N seria a diferença se atuassem no mesmo sentido de translação sem o fulcro.",
-      "Está incorreta: Multiplicar as forças não tem qualquer sentido físico para calcular o equilíbrio de translação vertical.",
-      "Está incorreta: O fulcro suporta todo o peso das cargas e forças aplicadas sobre a barra rígida."
-    ],
-    "nursingApplication": "Permite dimensionar a resistência dos pontos de apoio articulados em aparelhos de suporte biomecânico."
-  },
-  {
-    "id": 1360,
-    "topicId": 1,
-    "question": "No membro superior, a extensão do cotovelo pelo músculo tríceps braquial (com o olécrano a receber a tração muscular posterior ao fulcro na tróclea umeral) funciona como que tipo de alavanca?",
-    "options": [
-      "Alavanca de 1.ª Classe (Interfixa), porque o fulcro articular situa-se entre a linha de ação da força muscular potente e a resistência distal.",
-      "Alavanca de 2.ª Classe (Inter-resistente), com a resistência posicionada entre o olécrano e o ombro.",
-      "Alavanca de 3.ª Classe (Interpotente), porque todos os músculos do membro superior são obrigatoriamente de 3.ª classe.",
-      "Alavanca Indiferente de Arquimedes sem qualquer momento de rotação."
-    ],
-    "correctIndex": 0,
-    "explanation": "O eixo de rotação articular do cotovelo (tróclea umeral) fica no meio, separando a tração potente do tríceps no olécrano (posterior) da resistência do antebraço (anterior/distal).",
-    "distractorAnalysis": [
-      "Está incorreta: A resistência não fica no meio; o fulcro articular é que fica intermediário.",
-      "Está incorreta: Embora a 3.ª classe seja muito comum, o tríceps braquial na extensão do cotovelo é um dos exemplos anatómicos clássicos de 1.ª classe.",
-      "Está incorreta: Gera momento articular rotacional ativo na extensão do antebraço."
-    ],
-    "nursingApplication": "Fundamental para analisar os esforços musculares na impulsão e suporte de peso com os membros superiores."
-  },
-  {
-    "id": 1361,
-    "topicId": 1,
-    "question": "O que é uma Alavanca, segundo a definição clássica formulada por Arquimedes?",
-    "options": [
-      "Um cabo flexível elástico que armazena energia térmica através de contração contínua.",
-      "Uma barra rígida que pode girar em torno de um ponto de apoio fixo denominado fulcro.",
-      "Uma superfície curva escorregadia que anula a aceleração gravítica local.",
-      "Um cilindro oco que transporta fluidos compressíveis a alta velocidade."
-    ],
-    "correctIndex": 1,
-    "explanation": "Uma alavanca é uma máquina simples composta por um elemento rígido capaz de rodar em torno de um fulcro (PA).",
-    "distractorAnalysis": [
-      "Está incorreta: A alavanca deve ser rígida para transmitir momentos; cabos flexíveis transmitem apenas tração.",
-      "Está incorreta: Uma alavanca não é uma superfície escorregadia nem anula a gravidade.",
-      "Está incorreta: Um cilindro condutor de fluidos é um tubo hidrodinâmico, não uma alavanca mecânica."
-    ],
-    "nursingApplication": "As alavancas biomecânicas do corpo humano utilizam os ossos como barras rígidas e as articulações como fulcros."
-  },
-  {
-    "id": 1362,
-    "topicId": 1,
-    "question": "Quais são os três componentes essenciais que constituem qualquer sistema de alavanca?",
-    "options": [
-      "Apenas o peso, a densidade e o volume do corpo a ser movimentado.",
-      "Velocidade angular, frequência de rotação e atrito aerodinâmico.",
-      "Ponto de apoio (fulcro), Força Potente (Fp) e Força Resistente (Fr).",
-      "Tensão elétrica, corrente contínua e resistência em Ohms."
-    ],
-    "correctIndex": 2,
-    "explanation": "Qualquer alavanca requer um ponto de rotação (fulcro), uma força motora aplicada (potência) e uma carga a vencer (resistência).",
-    "distractorAnalysis": [
-      "Está incorreta: Peso, densidade e volume caracterizam a carga material, mas não formam um sistema de alavanca por si só.",
-      "Está incorreta: Velocidade angular e frequência são propriedades dinâmicas do movimento, não componentes estruturais da alavanca.",
-      "Está incorreta: Tensão e corrente pertencem à eletricidade e circuitos elétricos, não à mecânica das alavancas."
-    ],
-    "nursingApplication": "Permite identificar em qualquer movimento humano a articulação (fulcro), o músculo (potência) e a carga (resistência)."
-  },
-  {
-    "id": 1363,
-    "topicId": 1,
-    "question": "Qual é a equação que traduz a Lei das Alavancas em situação de equilíbrio estático?",
-    "options": [
-      "Fp / bp = Fr / br (razão da força pelo braço).",
-      "Fp + bp = Fr + br (soma das forças com os braços).",
-      "Fp · Fr = bp · br (produto das forças igual ao produto dos braços).",
-      "Fp · bp = Fr · br (o momento da força potente é igual ao momento da força resistente)."
-    ],
-    "correctIndex": 3,
-    "explanation": "O equilíbrio de momentos (∑M = 0) exige que o momento potente seja igual ao momento resistente: Fp · bp = Fr · br.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir as forças pelos braços viola a relação dimensional do equilíbrio de momentos rotacionais.",
-      "Está incorreta: Somar forças (N) com distâncias (m) é matematicamente inadmissível no cálculo de alavancas.",
-      "Está incorreta: Multiplicar força por força e braço por braço não traduz a igualdade de momentos em torno do fulcro."
-    ],
-    "nursingApplication": "Fórmula fundamental usada para calcular a força muscular requerida para sustentar uma carga articular."
-  },
-  {
-    "id": 1364,
-    "topicId": 1,
-    "question": "Como se caracteriza uma Alavanca de 1.ª Classe (Interfixa)?",
-    "options": [
-      "O ponto de apoio (fulcro) localiza-se entre a força potente e a força resistente (Fp - PA - Fr).",
-      "A força resistente localiza-se obrigatoriamente entre o fulcro e a força potente.",
-      "A força potente localiza-se sempre entre o fulcro e a força resistente.",
-      "O fulcro encontra-se infinitamente afastado da barra rígida de suporte."
-    ],
-    "correctIndex": 0,
-    "explanation": "Na alavanca interfixa, o ponto de apoio (PA) fica no meio, separando a força potente da força resistente.",
-    "distractorAnalysis": [
-      "Está incorreta: A resistência no meio define uma alavanca de 2.ª classe (inter-resistente), não de 1.ª classe.",
-      "Está incorreta: A potência no meio define uma alavanca de 3.ª classe (interpotente), não de 1.ª classe.",
-      "Está incorreta: O fulcro é um ponto físico real de apoio em torno do qual a alavanca roda, não podendo estar no infinito."
-    ],
-    "nursingApplication": "No corpo humano, o equilíbrio da cabeça sobre a coluna vertebral ilustra perfeitamente a alavanca interfixa."
-  },
-  {
-    "id": 1365,
-    "topicId": 1,
-    "question": "Qual dos seguintes instrumentos do quotidiano é um exemplo clássico de Alavanca de 1.ª Classe (Interfixa)?",
-    "options": [
-      "Um quebra-nozes.",
-      "Uma tesoura comum.",
-      "Uma pinça de depilação.",
-      "Um carrinho de mão de jardim."
-    ],
-    "correctIndex": 1,
-    "explanation": "Numa tesoura, o eixo central com parafuso é o fulcro (PA), os dedos aplicam a potência e as lâminas cortam a resistência.",
-    "distractorAnalysis": [
-      "Está incorreta: O quebra-nozes tem a resistência no meio (noz), sendo uma alavanca de 2.ª classe (inter-resistente).",
-      "Está incorreta: A pinça tem a potência no meio (onde os dedos apertam), sendo uma alavanca de 3.ª classe (interpotente).",
-      "Está incorreta: O carrinho de mão tem a carga no meio das rodas e das pegas, sendo uma alavanca de 2.ª classe."
-    ],
-    "nursingApplication": "Tesouras cirúrgicas e pinças de corte operam sob o princípio da alavanca interfixa para multiplicar a força de corte."
-  },
-  {
-    "id": 1366,
-    "topicId": 1,
-    "question": "Numa alavanca interfixa em equilíbrio, o braço da resistência mede 0,3 m e a carga resistente é de 200 N. Se o braço da potência medir 0,6 m, qual é a força potente necessária?",
-    "options": [
-      "400 N.",
-      "200 N.",
-      "100 N.",
-      "60 N."
-    ],
-    "correctIndex": 2,
-    "explanation": "Pela Lei das Alavancas: Fp · bp = Fr · br => Fp · 0,6 = 200 · 0,3 => Fp · 0,6 = 60 => Fp = 60 / 0,6 = 100 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 400 N resultaria de inverter os braços de alavanca no cálculo de momentos.",
-      "Está incorreta: 200 N seria a força se os braços fossem rigorosamente iguais (0,3 m = 0,3 m).",
-      "Está incorreta: 60 N é o valor do momento resistente em N·m (200 · 0,3), não a força em Newtons."
-    ],
-    "nursingApplication": "Mostra como ter um braço potente o dobro do resistente permite levantar a carga com metade da força."
-  },
-  {
-    "id": 1367,
-    "topicId": 1,
-    "question": "Como se comporta a Vantagem Mecânica (VM = bp / br) numa Alavanca de 1.ª Classe (Interfixa)?",
-    "options": [
-      "É obrigatoriamente e sempre superior a dez em qualquer situação prática.",
-      "É estritamente igual a zero porque o fulcro central anula todas as vantagens de força.",
-      "É sempre menor que 1, exigindo sistematicamente mais força do que a resistência a vencer.",
-      "Pode ser maior que 1, igual a 1 ou menor que 1, dependendo da posição relativa do fulcro entre as forças."
-    ],
-    "correctIndex": 3,
-    "explanation": "Na alavanca interfixa, se bp > br temos VM > 1; se bp = br temos VM = 1; se bp < br temos VM < 1.",
-    "distractorAnalysis": [
-      "Está incorreta: A vantagem mecânica não é obrigatoriamente superior a dez; depende da razão geométrica dos braços.",
-      "Está incorreta: Uma vantagem mecânica não é zero; se fosse zero, a alavanca não transmitiria nenhuma força.",
-      "Está incorreta: Ser sempre menor que 1 é a característica da alavanca de 3.ª classe, não da interfixa."
-    ],
-    "nursingApplication": "Permite ajustar a posição do fulcro para privilegiar força (braço potente longo) ou velocidade."
-  },
-  {
-    "id": 1368,
-    "topicId": 1,
-    "question": "No corpo humano, o sistema que equilibra o peso da cabeça sobre a coluna cervical (músculos da nuca) é um exemplo de alavanca:",
-    "options": [
-      "De 1.ª Classe (Interfixa), com a articulação atlanto-occipital a funcionar como fulcro central.",
-      "De 2.ª Classe (Inter-resistente), onde o queixo funciona como o ponto de apoio fixo do solo.",
-      "De 3.ª Classe (Interpotente), onde o cérebro atua como força potente geradora de calor.",
-      "De 4.ª Classe, uma categoria especial exclusiva de tecidos nervosos desmielinizados."
-    ],
-    "correctIndex": 0,
-    "explanation": "O fulcro está na articulação atlanto-occipital (meio), a resistência é o peso anterior da cabeça e a potência são os músculos da nuca (trás).",
-    "distractorAnalysis": [
-      "Está incorreta: O queixo não é o fulcro; o apoio rotacional da cabeça situa-se nas vértebras cervicais superiores.",
-      "Está incorreta: O cérebro não é um músculo nem gera força potente mecânica de tração.",
-      "Está incorreta: Na física clássica existem apenas 3 classes de alavancas; não existe 4.ª classe."
-    ],
-    "nursingApplication": "Explica como a musculatura posterior do pescoço previne a queda da cabeça para a frente com mínimo esforço."
-  },
-  {
-    "id": 1369,
-    "topicId": 1,
-    "question": "Numa alavanca de 1.ª classe em equilíbrio horizontal, onde a força potente de 80 N e a resistente de 120 N atuam verticalmente para baixo em lados opostos do fulcro, qual é a intensidade da força exercida pelo apoio sobre a alavanca?",
-    "options": [
-      "40 N, correspondente à diferença algébrica entre as duas forças.",
-      "200 N, orientada verticalmente para cima para anular a resultante das forças descendentes.",
-      "9600 N, obtida pela multiplicação das duas forças aplicadas.",
-      "Zero N, porque o fulcro não suporta nenhuma carga em equilíbrio estático."
-    ],
-    "correctIndex": 1,
-    "explanation": "Pela 1.ª condição de equilíbrio (∑F = 0), a força normal de reação do fulcro equilibra a soma de todas as forças para baixo: N = Fp + Fr = 80 + 120 = 200 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 40 N seria a diferença se atuassem no mesmo sentido de translação sem o fulcro.",
-      "Está incorreta: Multiplicar as forças não tem qualquer sentido físico para calcular o equilíbrio de translação vertical.",
-      "Está incorreta: O fulcro suporta todo o peso das cargas e forças aplicadas sobre a barra rígida."
-    ],
-    "nursingApplication": "Permite dimensionar a resistência dos pontos de apoio articulados em aparelhos de suporte biomecânico."
-  },
-  {
-    "id": 1370,
-    "topicId": 1,
-    "question": "No membro superior, a extensão do cotovelo pelo músculo tríceps braquial (com o olécrano a receber a tração muscular posterior ao fulcro na tróclea umeral) funciona como que tipo de alavanca?",
-    "options": [
-      "Alavanca de 2.ª Classe (Inter-resistente), com a resistência posicionada entre o olécrano e o ombro.",
-      "Alavanca de 3.ª Classe (Interpotente), porque todos os músculos do membro superior são obrigatoriamente de 3.ª classe.",
-      "Alavanca de 1.ª Classe (Interfixa), porque o fulcro articular situa-se entre a linha de ação da força muscular potente e a resistência distal.",
-      "Alavanca Indiferente de Arquimedes sem qualquer momento de rotação."
-    ],
-    "correctIndex": 2,
-    "explanation": "O eixo de rotação articular do cotovelo (tróclea umeral) fica no meio, separando a tração potente do tríceps no olécrano (posterior) da resistência do antebraço (anterior/distal).",
-    "distractorAnalysis": [
-      "Está incorreta: A resistência não fica no meio; o fulcro articular é que fica intermediário.",
-      "Está incorreta: Embora a 3.ª classe seja muito comum, o tríceps braquial na extensão do cotovelo é um dos exemplos anatómicos clássicos de 1.ª classe.",
-      "Está incorreta: Gera momento articular rotacional ativo na extensão do antebraço."
-    ],
-    "nursingApplication": "Fundamental para analisar os esforços musculares na impulsão e suporte de peso com os membros superiores."
-  },
-  {
-    "id": 1371,
-    "topicId": 1,
-    "question": "O que é uma Alavanca, segundo a definição clássica formulada por Arquimedes?",
-    "options": [
-      "Um cabo flexível elástico que armazena energia térmica através de contração contínua.",
-      "Uma superfície curva escorregadia que anula a aceleração gravítica local.",
-      "Um cilindro oco que transporta fluidos compressíveis a alta velocidade.",
-      "Uma barra rígida que pode girar em torno de um ponto de apoio fixo denominado fulcro."
-    ],
-    "correctIndex": 3,
-    "explanation": "Uma alavanca é uma máquina simples composta por um elemento rígido capaz de rodar em torno de um fulcro (PA).",
-    "distractorAnalysis": [
-      "Está incorreta: A alavanca deve ser rígida para transmitir momentos; cabos flexíveis transmitem apenas tração.",
-      "Está incorreta: Uma alavanca não é uma superfície escorregadia nem anula a gravidade.",
-      "Está incorreta: Um cilindro condutor de fluidos é um tubo hidrodinâmico, não uma alavanca mecânica."
-    ],
-    "nursingApplication": "As alavancas biomecânicas do corpo humano utilizam os ossos como barras rígidas e as articulações como fulcros."
-  },
-  {
-    "id": 1372,
-    "topicId": 1,
-    "question": "Quais são os três componentes essenciais que constituem qualquer sistema de alavanca?",
-    "options": [
-      "Ponto de apoio (fulcro), Força Potente (Fp) e Força Resistente (Fr).",
-      "Apenas o peso, a densidade e o volume do corpo a ser movimentado.",
-      "Velocidade angular, frequência de rotação e atrito aerodinâmico.",
-      "Tensão elétrica, corrente contínua e resistência em Ohms."
-    ],
-    "correctIndex": 0,
-    "explanation": "Qualquer alavanca requer um ponto de rotação (fulcro), uma força motora aplicada (potência) e uma carga a vencer (resistência).",
-    "distractorAnalysis": [
-      "Está incorreta: Peso, densidade e volume caracterizam a carga material, mas não formam um sistema de alavanca por si só.",
-      "Está incorreta: Velocidade angular e frequência são propriedades dinâmicas do movimento, não componentes estruturais da alavanca.",
-      "Está incorreta: Tensão e corrente pertencem à eletricidade e circuitos elétricos, não à mecânica das alavancas."
-    ],
-    "nursingApplication": "Permite identificar em qualquer movimento humano a articulação (fulcro), o músculo (potência) e a carga (resistência)."
-  },
-  {
-    "id": 1373,
-    "topicId": 1,
-    "question": "Qual é a equação que traduz a Lei das Alavancas em situação de equilíbrio estático?",
-    "options": [
-      "Fp / bp = Fr / br (razão da força pelo braço).",
-      "Fp · bp = Fr · br (o momento da força potente é igual ao momento da força resistente).",
-      "Fp + bp = Fr + br (soma das forças com os braços).",
-      "Fp · Fr = bp · br (produto das forças igual ao produto dos braços)."
-    ],
-    "correctIndex": 1,
-    "explanation": "O equilíbrio de momentos (∑M = 0) exige que o momento potente seja igual ao momento resistente: Fp · bp = Fr · br.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir as forças pelos braços viola a relação dimensional do equilíbrio de momentos rotacionais.",
-      "Está incorreta: Somar forças (N) com distâncias (m) é matematicamente inadmissível no cálculo de alavancas.",
-      "Está incorreta: Multiplicar força por força e braço por braço não traduz a igualdade de momentos em torno do fulcro."
-    ],
-    "nursingApplication": "Fórmula fundamental usada para calcular a força muscular requerida para sustentar uma carga articular."
-  },
-  {
-    "id": 1374,
-    "topicId": 1,
-    "question": "Como se caracteriza uma Alavanca de 1.ª Classe (Interfixa)?",
-    "options": [
-      "A força resistente localiza-se obrigatoriamente entre o fulcro e a força potente.",
-      "A força potente localiza-se sempre entre o fulcro e a força resistente.",
-      "O ponto de apoio (fulcro) localiza-se entre a força potente e a força resistente (Fp - PA - Fr).",
-      "O fulcro encontra-se infinitamente afastado da barra rígida de suporte."
-    ],
-    "correctIndex": 2,
-    "explanation": "Na alavanca interfixa, o ponto de apoio (PA) fica no meio, separando a força potente da força resistente.",
-    "distractorAnalysis": [
-      "Está incorreta: A resistência no meio define uma alavanca de 2.ª classe (inter-resistente), não de 1.ª classe.",
-      "Está incorreta: A potência no meio define uma alavanca de 3.ª classe (interpotente), não de 1.ª classe.",
-      "Está incorreta: O fulcro é um ponto físico real de apoio em torno do qual a alavanca roda, não podendo estar no infinito."
-    ],
-    "nursingApplication": "No corpo humano, o equilíbrio da cabeça sobre a coluna vertebral ilustra perfeitamente a alavanca interfixa."
-  },
-  {
-    "id": 1375,
-    "topicId": 1,
-    "question": "Qual dos seguintes instrumentos do quotidiano é um exemplo clássico de Alavanca de 1.ª Classe (Interfixa)?",
-    "options": [
-      "Um quebra-nozes.",
-      "Uma pinça de depilação.",
-      "Um carrinho de mão de jardim.",
-      "Uma tesoura comum."
-    ],
-    "correctIndex": 3,
-    "explanation": "Numa tesoura, o eixo central com parafuso é o fulcro (PA), os dedos aplicam a potência e as lâminas cortam a resistência.",
-    "distractorAnalysis": [
-      "Está incorreta: O quebra-nozes tem a resistência no meio (noz), sendo uma alavanca de 2.ª classe (inter-resistente).",
-      "Está incorreta: A pinça tem a potência no meio (onde os dedos apertam), sendo uma alavanca de 3.ª classe (interpotente).",
-      "Está incorreta: O carrinho de mão tem a carga no meio das rodas e das pegas, sendo uma alavanca de 2.ª classe."
-    ],
-    "nursingApplication": "Tesouras cirúrgicas e pinças de corte operam sob o princípio da alavanca interfixa para multiplicar a força de corte."
-  },
-  {
-    "id": 1376,
-    "topicId": 1,
-    "question": "Numa alavanca interfixa em equilíbrio, o braço da resistência mede 0,3 m e a carga resistente é de 200 N. Se o braço da potência medir 0,6 m, qual é a força potente necessária?",
-    "options": [
-      "100 N.",
-      "400 N.",
-      "200 N.",
-      "60 N."
-    ],
-    "correctIndex": 0,
-    "explanation": "Pela Lei das Alavancas: Fp · bp = Fr · br => Fp · 0,6 = 200 · 0,3 => Fp · 0,6 = 60 => Fp = 60 / 0,6 = 100 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 400 N resultaria de inverter os braços de alavanca no cálculo de momentos.",
-      "Está incorreta: 200 N seria a força se os braços fossem rigorosamente iguais (0,3 m = 0,3 m).",
-      "Está incorreta: 60 N é o valor do momento resistente em N·m (200 · 0,3), não a força em Newtons."
-    ],
-    "nursingApplication": "Mostra como ter um braço potente o dobro do resistente permite levantar a carga com metade da força."
-  },
-  {
-    "id": 1377,
-    "topicId": 1,
-    "question": "Como se comporta a Vantagem Mecânica (VM = bp / br) numa Alavanca de 1.ª Classe (Interfixa)?",
-    "options": [
-      "É obrigatoriamente e sempre superior a dez em qualquer situação prática.",
-      "Pode ser maior que 1, igual a 1 ou menor que 1, dependendo da posição relativa do fulcro entre as forças.",
-      "É estritamente igual a zero porque o fulcro central anula todas as vantagens de força.",
-      "É sempre menor que 1, exigindo sistematicamente mais força do que a resistência a vencer."
-    ],
-    "correctIndex": 1,
-    "explanation": "Na alavanca interfixa, se bp > br temos VM > 1; se bp = br temos VM = 1; se bp < br temos VM < 1.",
-    "distractorAnalysis": [
-      "Está incorreta: A vantagem mecânica não é obrigatoriamente superior a dez; depende da razão geométrica dos braços.",
-      "Está incorreta: Uma vantagem mecânica não é zero; se fosse zero, a alavanca não transmitiria nenhuma força.",
-      "Está incorreta: Ser sempre menor que 1 é a característica da alavanca de 3.ª classe, não da interfixa."
-    ],
-    "nursingApplication": "Permite ajustar a posição do fulcro para privilegiar força (braço potente longo) ou velocidade."
-  },
-  {
-    "id": 1378,
-    "topicId": 1,
-    "question": "No corpo humano, o sistema que equilibra o peso da cabeça sobre a coluna cervical (músculos da nuca) é um exemplo de alavanca:",
-    "options": [
-      "De 2.ª Classe (Inter-resistente), onde o queixo funciona como o ponto de apoio fixo do solo.",
-      "De 3.ª Classe (Interpotente), onde o cérebro atua como força potente geradora de calor.",
-      "De 1.ª Classe (Interfixa), com a articulação atlanto-occipital a funcionar como fulcro central.",
-      "De 4.ª Classe, uma categoria especial exclusiva de tecidos nervosos desmielinizados."
-    ],
-    "correctIndex": 2,
-    "explanation": "O fulcro está na articulação atlanto-occipital (meio), a resistência é o peso anterior da cabeça e a potência são os músculos da nuca (trás).",
-    "distractorAnalysis": [
-      "Está incorreta: O queixo não é o fulcro; o apoio rotacional da cabeça situa-se nas vértebras cervicais superiores.",
-      "Está incorreta: O cérebro não é um músculo nem gera força potente mecânica de tração.",
-      "Está incorreta: Na física clássica existem apenas 3 classes de alavancas; não existe 4.ª classe."
-    ],
-    "nursingApplication": "Explica como a musculatura posterior do pescoço previne a queda da cabeça para a frente com mínimo esforço."
-  },
-  {
-    "id": 1379,
-    "topicId": 1,
-    "question": "Numa alavanca de 1.ª classe em equilíbrio horizontal, onde a força potente de 80 N e a resistente de 120 N atuam verticalmente para baixo em lados opostos do fulcro, qual é a intensidade da força exercida pelo apoio sobre a alavanca?",
-    "options": [
-      "40 N, correspondente à diferença algébrica entre as duas forças.",
-      "9600 N, obtida pela multiplicação das duas forças aplicadas.",
-      "Zero N, porque o fulcro não suporta nenhuma carga em equilíbrio estático.",
-      "200 N, orientada verticalmente para cima para anular a resultante das forças descendentes."
-    ],
-    "correctIndex": 3,
-    "explanation": "Pela 1.ª condição de equilíbrio (∑F = 0), a força normal de reação do fulcro equilibra a soma de todas as forças para baixo: N = Fp + Fr = 80 + 120 = 200 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 40 N seria a diferença se atuassem no mesmo sentido de translação sem o fulcro.",
-      "Está incorreta: Multiplicar as forças não tem qualquer sentido físico para calcular o equilíbrio de translação vertical.",
-      "Está incorreta: O fulcro suporta todo o peso das cargas e forças aplicadas sobre a barra rígida."
-    ],
-    "nursingApplication": "Permite dimensionar a resistência dos pontos de apoio articulados em aparelhos de suporte biomecânico."
-  },
-  {
-    "id": 1380,
-    "topicId": 1,
-    "question": "No membro superior, a extensão do cotovelo pelo músculo tríceps braquial (com o olécrano a receber a tração muscular posterior ao fulcro na tróclea umeral) funciona como que tipo de alavanca?",
-    "options": [
-      "Alavanca de 1.ª Classe (Interfixa), porque o fulcro articular situa-se entre a linha de ação da força muscular potente e a resistência distal.",
-      "Alavanca de 2.ª Classe (Inter-resistente), com a resistência posicionada entre o olécrano e o ombro.",
-      "Alavanca de 3.ª Classe (Interpotente), porque todos os músculos do membro superior são obrigatoriamente de 3.ª classe.",
-      "Alavanca Indiferente de Arquimedes sem qualquer momento de rotação."
-    ],
-    "correctIndex": 0,
-    "explanation": "O eixo de rotação articular do cotovelo (tróclea umeral) fica no meio, separando a tração potente do tríceps no olécrano (posterior) da resistência do antebraço (anterior/distal).",
-    "distractorAnalysis": [
-      "Está incorreta: A resistência não fica no meio; o fulcro articular é que fica intermediário.",
-      "Está incorreta: Embora a 3.ª classe seja muito comum, o tríceps braquial na extensão do cotovelo é um dos exemplos anatómicos clássicos de 1.ª classe.",
-      "Está incorreta: Gera momento articular rotacional ativo na extensão do antebraço."
-    ],
-    "nursingApplication": "Fundamental para analisar os esforços musculares na impulsão e suporte de peso com os membros superiores."
-  },
-  {
-    "id": 1381,
-    "topicId": 1,
-    "question": "O que é uma Alavanca, segundo a definição clássica formulada por Arquimedes?",
-    "options": [
-      "Um cabo flexível elástico que armazena energia térmica através de contração contínua.",
-      "Uma barra rígida que pode girar em torno de um ponto de apoio fixo denominado fulcro.",
-      "Uma superfície curva escorregadia que anula a aceleração gravítica local.",
-      "Um cilindro oco que transporta fluidos compressíveis a alta velocidade."
-    ],
-    "correctIndex": 1,
-    "explanation": "Uma alavanca é uma máquina simples composta por um elemento rígido capaz de rodar em torno de um fulcro (PA).",
-    "distractorAnalysis": [
-      "Está incorreta: A alavanca deve ser rígida para transmitir momentos; cabos flexíveis transmitem apenas tração.",
-      "Está incorreta: Uma alavanca não é uma superfície escorregadia nem anula a gravidade.",
-      "Está incorreta: Um cilindro condutor de fluidos é um tubo hidrodinâmico, não uma alavanca mecânica."
-    ],
-    "nursingApplication": "As alavancas biomecânicas do corpo humano utilizam os ossos como barras rígidas e as articulações como fulcros."
-  },
-  {
-    "id": 1382,
-    "topicId": 1,
-    "question": "Quais são os três componentes essenciais que constituem qualquer sistema de alavanca?",
-    "options": [
-      "Apenas o peso, a densidade e o volume do corpo a ser movimentado.",
-      "Velocidade angular, frequência de rotação e atrito aerodinâmico.",
-      "Ponto de apoio (fulcro), Força Potente (Fp) e Força Resistente (Fr).",
-      "Tensão elétrica, corrente contínua e resistência em Ohms."
-    ],
-    "correctIndex": 2,
-    "explanation": "Qualquer alavanca requer um ponto de rotação (fulcro), uma força motora aplicada (potência) e uma carga a vencer (resistência).",
-    "distractorAnalysis": [
-      "Está incorreta: Peso, densidade e volume caracterizam a carga material, mas não formam um sistema de alavanca por si só.",
-      "Está incorreta: Velocidade angular e frequência são propriedades dinâmicas do movimento, não componentes estruturais da alavanca.",
-      "Está incorreta: Tensão e corrente pertencem à eletricidade e circuitos elétricos, não à mecânica das alavancas."
-    ],
-    "nursingApplication": "Permite identificar em qualquer movimento humano a articulação (fulcro), o músculo (potência) e a carga (resistência)."
-  },
-  {
-    "id": 1383,
-    "topicId": 1,
-    "question": "Qual é a equação que traduz a Lei das Alavancas em situação de equilíbrio estático?",
-    "options": [
-      "Fp / bp = Fr / br (razão da força pelo braço).",
-      "Fp + bp = Fr + br (soma das forças com os braços).",
-      "Fp · Fr = bp · br (produto das forças igual ao produto dos braços).",
-      "Fp · bp = Fr · br (o momento da força potente é igual ao momento da força resistente)."
-    ],
-    "correctIndex": 3,
-    "explanation": "O equilíbrio de momentos (∑M = 0) exige que o momento potente seja igual ao momento resistente: Fp · bp = Fr · br.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir as forças pelos braços viola a relação dimensional do equilíbrio de momentos rotacionais.",
-      "Está incorreta: Somar forças (N) com distâncias (m) é matematicamente inadmissível no cálculo de alavancas.",
-      "Está incorreta: Multiplicar força por força e braço por braço não traduz a igualdade de momentos em torno do fulcro."
-    ],
-    "nursingApplication": "Fórmula fundamental usada para calcular a força muscular requerida para sustentar uma carga articular."
-  },
-  {
-    "id": 1384,
-    "topicId": 1,
-    "question": "Como se caracteriza uma Alavanca de 1.ª Classe (Interfixa)?",
-    "options": [
-      "O ponto de apoio (fulcro) localiza-se entre a força potente e a força resistente (Fp - PA - Fr).",
-      "A força resistente localiza-se obrigatoriamente entre o fulcro e a força potente.",
-      "A força potente localiza-se sempre entre o fulcro e a força resistente.",
-      "O fulcro encontra-se infinitamente afastado da barra rígida de suporte."
-    ],
-    "correctIndex": 0,
-    "explanation": "Na alavanca interfixa, o ponto de apoio (PA) fica no meio, separando a força potente da força resistente.",
-    "distractorAnalysis": [
-      "Está incorreta: A resistência no meio define uma alavanca de 2.ª classe (inter-resistente), não de 1.ª classe.",
-      "Está incorreta: A potência no meio define uma alavanca de 3.ª classe (interpotente), não de 1.ª classe.",
-      "Está incorreta: O fulcro é um ponto físico real de apoio em torno do qual a alavanca roda, não podendo estar no infinito."
-    ],
-    "nursingApplication": "No corpo humano, o equilíbrio da cabeça sobre a coluna vertebral ilustra perfeitamente a alavanca interfixa."
-  },
-  {
-    "id": 1385,
-    "topicId": 1,
-    "question": "Qual dos seguintes instrumentos do quotidiano é um exemplo clássico de Alavanca de 1.ª Classe (Interfixa)?",
-    "options": [
-      "Um quebra-nozes.",
-      "Uma tesoura comum.",
-      "Uma pinça de depilação.",
-      "Um carrinho de mão de jardim."
-    ],
-    "correctIndex": 1,
-    "explanation": "Numa tesoura, o eixo central com parafuso é o fulcro (PA), os dedos aplicam a potência e as lâminas cortam a resistência.",
-    "distractorAnalysis": [
-      "Está incorreta: O quebra-nozes tem a resistência no meio (noz), sendo uma alavanca de 2.ª classe (inter-resistente).",
-      "Está incorreta: A pinça tem a potência no meio (onde os dedos apertam), sendo uma alavanca de 3.ª classe (interpotente).",
-      "Está incorreta: O carrinho de mão tem a carga no meio das rodas e das pegas, sendo uma alavanca de 2.ª classe."
-    ],
-    "nursingApplication": "Tesouras cirúrgicas e pinças de corte operam sob o princípio da alavanca interfixa para multiplicar a força de corte."
-  },
-  {
-    "id": 1386,
-    "topicId": 1,
-    "question": "Numa alavanca interfixa em equilíbrio, o braço da resistência mede 0,3 m e a carga resistente é de 200 N. Se o braço da potência medir 0,6 m, qual é a força potente necessária?",
-    "options": [
-      "400 N.",
-      "200 N.",
-      "100 N.",
-      "60 N."
-    ],
-    "correctIndex": 2,
-    "explanation": "Pela Lei das Alavancas: Fp · bp = Fr · br => Fp · 0,6 = 200 · 0,3 => Fp · 0,6 = 60 => Fp = 60 / 0,6 = 100 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 400 N resultaria de inverter os braços de alavanca no cálculo de momentos.",
-      "Está incorreta: 200 N seria a força se os braços fossem rigorosamente iguais (0,3 m = 0,3 m).",
-      "Está incorreta: 60 N é o valor do momento resistente em N·m (200 · 0,3), não a força em Newtons."
-    ],
-    "nursingApplication": "Mostra como ter um braço potente o dobro do resistente permite levantar a carga com metade da força."
-  },
-  {
-    "id": 1387,
-    "topicId": 1,
-    "question": "Como se comporta a Vantagem Mecânica (VM = bp / br) numa Alavanca de 1.ª Classe (Interfixa)?",
-    "options": [
-      "É obrigatoriamente e sempre superior a dez em qualquer situação prática.",
-      "É estritamente igual a zero porque o fulcro central anula todas as vantagens de força.",
-      "É sempre menor que 1, exigindo sistematicamente mais força do que a resistência a vencer.",
-      "Pode ser maior que 1, igual a 1 ou menor que 1, dependendo da posição relativa do fulcro entre as forças."
-    ],
-    "correctIndex": 3,
-    "explanation": "Na alavanca interfixa, se bp > br temos VM > 1; se bp = br temos VM = 1; se bp < br temos VM < 1.",
-    "distractorAnalysis": [
-      "Está incorreta: A vantagem mecânica não é obrigatoriamente superior a dez; depende da razão geométrica dos braços.",
-      "Está incorreta: Uma vantagem mecânica não é zero; se fosse zero, a alavanca não transmitiria nenhuma força.",
-      "Está incorreta: Ser sempre menor que 1 é a característica da alavanca de 3.ª classe, não da interfixa."
-    ],
-    "nursingApplication": "Permite ajustar a posição do fulcro para privilegiar força (braço potente longo) ou velocidade."
-  },
-  {
-    "id": 1388,
-    "topicId": 1,
-    "question": "No corpo humano, o sistema que equilibra o peso da cabeça sobre a coluna cervical (músculos da nuca) é um exemplo de alavanca:",
-    "options": [
-      "De 1.ª Classe (Interfixa), com a articulação atlanto-occipital a funcionar como fulcro central.",
-      "De 2.ª Classe (Inter-resistente), onde o queixo funciona como o ponto de apoio fixo do solo.",
-      "De 3.ª Classe (Interpotente), onde o cérebro atua como força potente geradora de calor.",
-      "De 4.ª Classe, uma categoria especial exclusiva de tecidos nervosos desmielinizados."
-    ],
-    "correctIndex": 0,
-    "explanation": "O fulcro está na articulação atlanto-occipital (meio), a resistência é o peso anterior da cabeça e a potência são os músculos da nuca (trás).",
-    "distractorAnalysis": [
-      "Está incorreta: O queixo não é o fulcro; o apoio rotacional da cabeça situa-se nas vértebras cervicais superiores.",
-      "Está incorreta: O cérebro não é um músculo nem gera força potente mecânica de tração.",
-      "Está incorreta: Na física clássica existem apenas 3 classes de alavancas; não existe 4.ª classe."
-    ],
-    "nursingApplication": "Explica como a musculatura posterior do pescoço previne a queda da cabeça para a frente com mínimo esforço."
-  },
-  {
-    "id": 1389,
-    "topicId": 1,
-    "question": "Numa alavanca de 1.ª classe em equilíbrio horizontal, onde a força potente de 80 N e a resistente de 120 N atuam verticalmente para baixo em lados opostos do fulcro, qual é a intensidade da força exercida pelo apoio sobre a alavanca?",
-    "options": [
-      "40 N, correspondente à diferença algébrica entre as duas forças.",
-      "200 N, orientada verticalmente para cima para anular a resultante das forças descendentes.",
-      "9600 N, obtida pela multiplicação das duas forças aplicadas.",
-      "Zero N, porque o fulcro não suporta nenhuma carga em equilíbrio estático."
-    ],
-    "correctIndex": 1,
-    "explanation": "Pela 1.ª condição de equilíbrio (∑F = 0), a força normal de reação do fulcro equilibra a soma de todas as forças para baixo: N = Fp + Fr = 80 + 120 = 200 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 40 N seria a diferença se atuassem no mesmo sentido de translação sem o fulcro.",
-      "Está incorreta: Multiplicar as forças não tem qualquer sentido físico para calcular o equilíbrio de translação vertical.",
-      "Está incorreta: O fulcro suporta todo o peso das cargas e forças aplicadas sobre a barra rígida."
-    ],
-    "nursingApplication": "Permite dimensionar a resistência dos pontos de apoio articulados em aparelhos de suporte biomecânico."
-  },
-  {
-    "id": 1390,
-    "topicId": 1,
-    "question": "No membro superior, a extensão do cotovelo pelo músculo tríceps braquial (com o olécrano a receber a tração muscular posterior ao fulcro na tróclea umeral) funciona como que tipo de alavanca?",
-    "options": [
-      "Alavanca de 2.ª Classe (Inter-resistente), com a resistência posicionada entre o olécrano e o ombro.",
-      "Alavanca de 3.ª Classe (Interpotente), porque todos os músculos do membro superior são obrigatoriamente de 3.ª classe.",
-      "Alavanca de 1.ª Classe (Interfixa), porque o fulcro articular situa-se entre a linha de ação da força muscular potente e a resistência distal.",
-      "Alavanca Indiferente de Arquimedes sem qualquer momento de rotação."
-    ],
-    "correctIndex": 2,
-    "explanation": "O eixo de rotação articular do cotovelo (tróclea umeral) fica no meio, separando a tração potente do tríceps no olécrano (posterior) da resistência do antebraço (anterior/distal).",
-    "distractorAnalysis": [
-      "Está incorreta: A resistência não fica no meio; o fulcro articular é que fica intermediário.",
-      "Está incorreta: Embora a 3.ª classe seja muito comum, o tríceps braquial na extensão do cotovelo é um dos exemplos anatómicos clássicos de 1.ª classe.",
-      "Está incorreta: Gera momento articular rotacional ativo na extensão do antebraço."
-    ],
-    "nursingApplication": "Fundamental para analisar os esforços musculares na impulsão e suporte de peso com os membros superiores."
-  },
-  {
-    "id": 1391,
-    "topicId": 1,
-    "question": "O que é uma Alavanca, segundo a definição clássica formulada por Arquimedes?",
-    "options": [
-      "Um cabo flexível elástico que armazena energia térmica através de contração contínua.",
-      "Uma superfície curva escorregadia que anula a aceleração gravítica local.",
-      "Um cilindro oco que transporta fluidos compressíveis a alta velocidade.",
-      "Uma barra rígida que pode girar em torno de um ponto de apoio fixo denominado fulcro."
-    ],
-    "correctIndex": 3,
-    "explanation": "Uma alavanca é uma máquina simples composta por um elemento rígido capaz de rodar em torno de um fulcro (PA).",
-    "distractorAnalysis": [
-      "Está incorreta: A alavanca deve ser rígida para transmitir momentos; cabos flexíveis transmitem apenas tração.",
-      "Está incorreta: Uma alavanca não é uma superfície escorregadia nem anula a gravidade.",
-      "Está incorreta: Um cilindro condutor de fluidos é um tubo hidrodinâmico, não uma alavanca mecânica."
-    ],
-    "nursingApplication": "As alavancas biomecânicas do corpo humano utilizam os ossos como barras rígidas e as articulações como fulcros."
-  },
-  {
-    "id": 1392,
-    "topicId": 1,
-    "question": "Quais são os três componentes essenciais que constituem qualquer sistema de alavanca?",
-    "options": [
-      "Ponto de apoio (fulcro), Força Potente (Fp) e Força Resistente (Fr).",
-      "Apenas o peso, a densidade e o volume do corpo a ser movimentado.",
-      "Velocidade angular, frequência de rotação e atrito aerodinâmico.",
-      "Tensão elétrica, corrente contínua e resistência em Ohms."
-    ],
-    "correctIndex": 0,
-    "explanation": "Qualquer alavanca requer um ponto de rotação (fulcro), uma força motora aplicada (potência) e uma carga a vencer (resistência).",
-    "distractorAnalysis": [
-      "Está incorreta: Peso, densidade e volume caracterizam a carga material, mas não formam um sistema de alavanca por si só.",
-      "Está incorreta: Velocidade angular e frequência são propriedades dinâmicas do movimento, não componentes estruturais da alavanca.",
-      "Está incorreta: Tensão e corrente pertencem à eletricidade e circuitos elétricos, não à mecânica das alavancas."
-    ],
-    "nursingApplication": "Permite identificar em qualquer movimento humano a articulação (fulcro), o músculo (potência) e a carga (resistência)."
-  },
-  {
-    "id": 1393,
-    "topicId": 1,
-    "question": "Qual é a equação que traduz a Lei das Alavancas em situação de equilíbrio estático?",
-    "options": [
-      "Fp / bp = Fr / br (razão da força pelo braço).",
-      "Fp · bp = Fr · br (o momento da força potente é igual ao momento da força resistente).",
-      "Fp + bp = Fr + br (soma das forças com os braços).",
-      "Fp · Fr = bp · br (produto das forças igual ao produto dos braços)."
-    ],
-    "correctIndex": 1,
-    "explanation": "O equilíbrio de momentos (∑M = 0) exige que o momento potente seja igual ao momento resistente: Fp · bp = Fr · br.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir as forças pelos braços viola a relação dimensional do equilíbrio de momentos rotacionais.",
-      "Está incorreta: Somar forças (N) com distâncias (m) é matematicamente inadmissível no cálculo de alavancas.",
-      "Está incorreta: Multiplicar força por força e braço por braço não traduz a igualdade de momentos em torno do fulcro."
-    ],
-    "nursingApplication": "Fórmula fundamental usada para calcular a força muscular requerida para sustentar uma carga articular."
-  },
-  {
-    "id": 1394,
-    "topicId": 1,
-    "question": "Como se caracteriza uma Alavanca de 1.ª Classe (Interfixa)?",
-    "options": [
-      "A força resistente localiza-se obrigatoriamente entre o fulcro e a força potente.",
-      "A força potente localiza-se sempre entre o fulcro e a força resistente.",
-      "O ponto de apoio (fulcro) localiza-se entre a força potente e a força resistente (Fp - PA - Fr).",
-      "O fulcro encontra-se infinitamente afastado da barra rígida de suporte."
-    ],
-    "correctIndex": 2,
-    "explanation": "Na alavanca interfixa, o ponto de apoio (PA) fica no meio, separando a força potente da força resistente.",
-    "distractorAnalysis": [
-      "Está incorreta: A resistência no meio define uma alavanca de 2.ª classe (inter-resistente), não de 1.ª classe.",
-      "Está incorreta: A potência no meio define uma alavanca de 3.ª classe (interpotente), não de 1.ª classe.",
-      "Está incorreta: O fulcro é um ponto físico real de apoio em torno do qual a alavanca roda, não podendo estar no infinito."
-    ],
-    "nursingApplication": "No corpo humano, o equilíbrio da cabeça sobre a coluna vertebral ilustra perfeitamente a alavanca interfixa."
-  },
-  {
-    "id": 1395,
-    "topicId": 1,
-    "question": "Qual dos seguintes instrumentos do quotidiano é um exemplo clássico de Alavanca de 1.ª Classe (Interfixa)?",
-    "options": [
-      "Um quebra-nozes.",
-      "Uma pinça de depilação.",
-      "Um carrinho de mão de jardim.",
-      "Uma tesoura comum."
-    ],
-    "correctIndex": 3,
-    "explanation": "Numa tesoura, o eixo central com parafuso é o fulcro (PA), os dedos aplicam a potência e as lâminas cortam a resistência.",
-    "distractorAnalysis": [
-      "Está incorreta: O quebra-nozes tem a resistência no meio (noz), sendo uma alavanca de 2.ª classe (inter-resistente).",
-      "Está incorreta: A pinça tem a potência no meio (onde os dedos apertam), sendo uma alavanca de 3.ª classe (interpotente).",
-      "Está incorreta: O carrinho de mão tem a carga no meio das rodas e das pegas, sendo uma alavanca de 2.ª classe."
-    ],
-    "nursingApplication": "Tesouras cirúrgicas e pinças de corte operam sob o princípio da alavanca interfixa para multiplicar a força de corte."
-  },
-  {
-    "id": 1396,
-    "topicId": 1,
-    "question": "Numa alavanca interfixa em equilíbrio, o braço da resistência mede 0,3 m e a carga resistente é de 200 N. Se o braço da potência medir 0,6 m, qual é a força potente necessária?",
-    "options": [
-      "100 N.",
-      "400 N.",
-      "200 N.",
-      "60 N."
-    ],
-    "correctIndex": 0,
-    "explanation": "Pela Lei das Alavancas: Fp · bp = Fr · br => Fp · 0,6 = 200 · 0,3 => Fp · 0,6 = 60 => Fp = 60 / 0,6 = 100 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 400 N resultaria de inverter os braços de alavanca no cálculo de momentos.",
-      "Está incorreta: 200 N seria a força se os braços fossem rigorosamente iguais (0,3 m = 0,3 m).",
-      "Está incorreta: 60 N é o valor do momento resistente em N·m (200 · 0,3), não a força em Newtons."
-    ],
-    "nursingApplication": "Mostra como ter um braço potente o dobro do resistente permite levantar a carga com metade da força."
-  },
-  {
-    "id": 1397,
-    "topicId": 1,
-    "question": "Como se comporta a Vantagem Mecânica (VM = bp / br) numa Alavanca de 1.ª Classe (Interfixa)?",
-    "options": [
-      "É obrigatoriamente e sempre superior a dez em qualquer situação prática.",
-      "Pode ser maior que 1, igual a 1 ou menor que 1, dependendo da posição relativa do fulcro entre as forças.",
-      "É estritamente igual a zero porque o fulcro central anula todas as vantagens de força.",
-      "É sempre menor que 1, exigindo sistematicamente mais força do que a resistência a vencer."
-    ],
-    "correctIndex": 1,
-    "explanation": "Na alavanca interfixa, se bp > br temos VM > 1; se bp = br temos VM = 1; se bp < br temos VM < 1.",
-    "distractorAnalysis": [
-      "Está incorreta: A vantagem mecânica não é obrigatoriamente superior a dez; depende da razão geométrica dos braços.",
-      "Está incorreta: Uma vantagem mecânica não é zero; se fosse zero, a alavanca não transmitiria nenhuma força.",
-      "Está incorreta: Ser sempre menor que 1 é a característica da alavanca de 3.ª classe, não da interfixa."
-    ],
-    "nursingApplication": "Permite ajustar a posição do fulcro para privilegiar força (braço potente longo) ou velocidade."
-  },
-  {
-    "id": 1398,
-    "topicId": 1,
-    "question": "No corpo humano, o sistema que equilibra o peso da cabeça sobre a coluna cervical (músculos da nuca) é um exemplo de alavanca:",
-    "options": [
-      "De 2.ª Classe (Inter-resistente), onde o queixo funciona como o ponto de apoio fixo do solo.",
-      "De 3.ª Classe (Interpotente), onde o cérebro atua como força potente geradora de calor.",
-      "De 1.ª Classe (Interfixa), com a articulação atlanto-occipital a funcionar como fulcro central.",
-      "De 4.ª Classe, uma categoria especial exclusiva de tecidos nervosos desmielinizados."
-    ],
-    "correctIndex": 2,
-    "explanation": "O fulcro está na articulação atlanto-occipital (meio), a resistência é o peso anterior da cabeça e a potência são os músculos da nuca (trás).",
-    "distractorAnalysis": [
-      "Está incorreta: O queixo não é o fulcro; o apoio rotacional da cabeça situa-se nas vértebras cervicais superiores.",
-      "Está incorreta: O cérebro não é um músculo nem gera força potente mecânica de tração.",
-      "Está incorreta: Na física clássica existem apenas 3 classes de alavancas; não existe 4.ª classe."
-    ],
-    "nursingApplication": "Explica como a musculatura posterior do pescoço previne a queda da cabeça para a frente com mínimo esforço."
-  },
-  {
-    "id": 1399,
-    "topicId": 1,
-    "question": "Numa alavanca de 1.ª classe em equilíbrio horizontal, onde a força potente de 80 N e a resistente de 120 N atuam verticalmente para baixo em lados opostos do fulcro, qual é a intensidade da força exercida pelo apoio sobre a alavanca?",
-    "options": [
-      "40 N, correspondente à diferença algébrica entre as duas forças.",
-      "9600 N, obtida pela multiplicação das duas forças aplicadas.",
-      "Zero N, porque o fulcro não suporta nenhuma carga em equilíbrio estático.",
-      "200 N, orientada verticalmente para cima para anular a resultante das forças descendentes."
-    ],
-    "correctIndex": 3,
-    "explanation": "Pela 1.ª condição de equilíbrio (∑F = 0), a força normal de reação do fulcro equilibra a soma de todas as forças para baixo: N = Fp + Fr = 80 + 120 = 200 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 40 N seria a diferença se atuassem no mesmo sentido de translação sem o fulcro.",
-      "Está incorreta: Multiplicar as forças não tem qualquer sentido físico para calcular o equilíbrio de translação vertical.",
-      "Está incorreta: O fulcro suporta todo o peso das cargas e forças aplicadas sobre a barra rígida."
-    ],
-    "nursingApplication": "Permite dimensionar a resistência dos pontos de apoio articulados em aparelhos de suporte biomecânico."
-  },
-  {
-    "id": 1400,
-    "topicId": 1,
-    "question": "No membro superior, a extensão do cotovelo pelo músculo tríceps braquial (com o olécrano a receber a tração muscular posterior ao fulcro na tróclea umeral) funciona como que tipo de alavanca?",
-    "options": [
-      "Alavanca de 1.ª Classe (Interfixa), porque o fulcro articular situa-se entre a linha de ação da força muscular potente e a resistência distal.",
-      "Alavanca de 2.ª Classe (Inter-resistente), com a resistência posicionada entre o olécrano e o ombro.",
-      "Alavanca de 3.ª Classe (Interpotente), porque todos os músculos do membro superior são obrigatoriamente de 3.ª classe.",
-      "Alavanca Indiferente de Arquimedes sem qualquer momento de rotação."
-    ],
-    "correctIndex": 0,
-    "explanation": "O eixo de rotação articular do cotovelo (tróclea umeral) fica no meio, separando a tração potente do tríceps no olécrano (posterior) da resistência do antebraço (anterior/distal).",
-    "distractorAnalysis": [
-      "Está incorreta: A resistência não fica no meio; o fulcro articular é que fica intermediário.",
-      "Está incorreta: Embora a 3.ª classe seja muito comum, o tríceps braquial na extensão do cotovelo é um dos exemplos anatómicos clássicos de 1.ª classe.",
-      "Está incorreta: Gera momento articular rotacional ativo na extensão do antebraço."
-    ],
-    "nursingApplication": "Fundamental para analisar os esforços musculares na impulsão e suporte de peso com os membros superiores."
-  },
-  {
-    "id": 1401,
-    "topicId": 1,
-    "question": "Como se caracteriza geometricamente uma Alavanca de 2.ª Classe (Inter-resistente)?",
-    "options": [
-      "O ponto de apoio localiza-se rigorosamente no meio, separando as duas forças.",
-      "A força resistente localiza-se entre o ponto de apoio (fulcro) e a força potente (PA - Fr - Fp).",
-      "A força potente localiza-se entre o ponto de apoio e a força resistente.",
-      "As forças resistente e potente atuam no mesmo ponto geométrico anulando o fulcro."
-    ],
-    "correctIndex": 1,
-    "explanation": "Na alavanca de 2.ª classe, a carga resistente fica no meio, pelo que o braço potente é sempre maior que o braço resistente (bp > br).",
-    "distractorAnalysis": [
-      "Está incorreta: O fulcro no meio caracteriza a alavanca de 1.ª classe (interfixa), não a de 2.ª classe.",
-      "Está incorreta: A potência no meio caracteriza a alavanca de 3.ª classe (interpotente), não a de 2.ª classe.",
-      "Está incorreta: Se as forças atuassem no mesmo ponto, o sistema não funcionaria como uma alavanca multiplicadora."
-    ],
-    "nursingApplication": "Exemplo clássico: carrinho de transporte onde a carga está entre a roda (apoio) e as pegas (potência)."
-  },
-  {
-    "id": 1402,
-    "topicId": 1,
-    "question": "Qual é a principal vantagem mecânica de uma Alavanca de 2.ª Classe (Inter-resistente)?",
-    "options": [
-      "Apresenta sempre desvantagem mecânica de força, exigindo uma força potente cinco vezes superior à carga.",
-      "Anula totalmente o trabalho mecânico realizado pela força gravítica durante a elevação.",
-      "Apresenta sempre Vantagem Mecânica de Força (VM > 1), pois o braço potente é sempre superior ao braço resistente (Fp < Fr).",
-      "Permite multiplicar a velocidade da carga em troca de uma força motora infinita."
-    ],
-    "correctIndex": 2,
-    "explanation": "Como bp > br em todas as alavancas de 2.ª classe, a força necessária é sempre menor do que a carga suportada (poupa força).",
-    "distractorAnalysis": [
-      "Está incorreta: A desvantagem sistemática de força é a característica típica da alavanca de 3.ª classe (interpotente).",
-      "Está incorreta: Nenhuma alavanca anula o trabalho mecânico; a conservação da energia é estritamente mantida.",
-      "Está incorreta: A alavanca de 2.ª classe prioriza a economia de força e não a multiplicação de velocidade na carga."
-    ],
-    "nursingApplication": "Princípio físico de carrinhos de transporte pesado: levantar grandes cargas com esforço reduzido."
-  },
-  {
-    "id": 1403,
-    "topicId": 1,
-    "question": "Qual dos seguintes instrumentos é um exemplo representativo de Alavanca de 2.ª Classe (Inter-resistente)?",
-    "options": [
-      "Uma tesoura cirúrgica de corte de fios.",
-      "Uma pinça anatómica simples de preensão.",
-      "Uma cana de pesca esticada na vertical.",
-      "Um carrinho de mão de transporte de carga."
-    ],
-    "correctIndex": 3,
-    "explanation": "No carrinho de mão, o eixo da roda dianteira é o fulcro, a carga está na caçamba (meio) e a força é feita nas pegas.",
-    "distractorAnalysis": [
-      "Está incorreta: A tesoura é uma alavanca de 1.ª classe (interfixa) com o parafuso central como fulcro.",
-      "Está incorreta: A pinça anatómica é uma alavanca de 3.ª classe (interpotente) com os dedos a apertar no meio.",
-      "Está incorreta: A cana de pesca é uma alavanca de 3.ª classe, com a mão motora posicionada entre o apoio e a ponta."
-    ],
-    "nursingApplication": "Permite compreender o design de equipamentos de carga concebidos para minimizar a fadiga muscular."
-  },
-  {
-    "id": 1404,
-    "topicId": 1,
-    "question": "Como se caracteriza geometricamente uma Alavanca de 3.ª Classe (Interpotente)?",
-    "options": [
-      "A força potente localiza-se entre o ponto de apoio (fulcro) e a força resistente (PA - Fp - Fr).",
-      "A força resistente localiza-se entre o fulcro e a força potente.",
-      "O fulcro situa-se rigorosamente entre a potência e a resistência.",
-      "A força potente atua perpendicularmente ao infinito fora do plano da barra rígida."
-    ],
-    "correctIndex": 0,
-    "explanation": "Na alavanca de 3.ª classe, o esforço muscular ou motor atua no meio, fazendo com que o braço potente seja menor que o resistente (bp < br).",
-    "distractorAnalysis": [
-      "Está incorreta: A resistência no meio é a alavanca de 2.ª classe (inter-resistente).",
-      "Está incorreta: O fulcro no meio é a alavanca de 1.ª classe (interfixa).",
-      "Está incorreta: As forças atuam em pontos definidos da barra rígida e dentro do plano biomecânico de movimento."
-    ],
-    "nursingApplication": "A vasta maioria das alavancas musculares dos membros no corpo humano são de 3.ª classe."
-  },
-  {
-    "id": 1405,
-    "topicId": 1,
-    "question": "Se a Alavanca de 3.ª Classe tem desvantagem mecânica de força (Fp > Fr), qual é a sua grande utilidade biomecânica?",
-    "options": [
-      "Permite levantar pesos de milhares de toneladas sem qualquer dispêndio de energia muscular.",
-      "Ganha-se em amplitude de movimento e em velocidade na extremidade livre da alavanca.",
-      "Anula completamente o atrito entre as superfícies ósseas da articulação em causa.",
-      "Impede que a gravidade terrestre acelere os objetos que caem em direção ao solo."
-    ],
-    "correctIndex": 1,
-    "explanation": "Ao aplicar a força perto do fulcro, um pequeno encurtamento muscular produz um grande e rápido deslocamento da mão ou do pé.",
-    "distractorAnalysis": [
-      "Está incorreta: A alavanca de 3.ª classe exige mais força muscular do que o peso da carga, não multiplicando força.",
-      "Está incorreta: O atrito articular é reduzido pelo líquido sinovial e cartilagem, não pelo tipo de alavanca.",
-      "Está incorreta: A alavanca não altera a aceleração gravítica g = 9,8 m/s²."
-    ],
-    "nursingApplication": "Permite que a mão execute movimentos amplos e rápidos, essenciais para manusear materiais com precisão."
-  },
-  {
-    "id": 1406,
-    "topicId": 1,
-    "question": "O sistema de flexão do antebraço pelo músculo bíceps braquial (cotovelo como apoio, inserção do bíceps no rádio e peso na mão) é uma alavanca:",
-    "options": [
-      "De 2.ª Classe (Inter-resistente).",
-      "De 1.ª Classe (Interfixa).",
-      "De 3.ª Classe (Interpotente).",
-      "De 4.ª Classe (Interrotatória)."
-    ],
-    "correctIndex": 2,
-    "explanation": "O fulcro está na articulação do cotovelo, a potência é o bíceps no rádio (~4-5 cm do cotovelo) e a resistência está na mão (~30 cm).",
-    "distractorAnalysis": [
-      "Está incorreta: Não é de 2.ª classe porque a carga resistente está na extremidade (mão) e não no meio.",
-      "Está incorreta: Não é de 1.ª classe porque o fulcro não está no meio; fica na extremidade articular do cotovelo.",
-      "Está incorreta: Não existe 4.ª classe de alavancas na física clássica."
-    ],
-    "nursingApplication": "Explica por que segurar um peso de 5 kg na mão exige mais de 30 kgf de força tensora no bíceps."
-  },
-  {
-    "id": 1407,
-    "topicId": 1,
-    "question": "Uma pinça de preensão utilizada para segurar pequenos objetos com os dedos no meio é um exemplo clássico de alavanca:",
-    "options": [
-      "De 2.ª Classe (Inter-resistente).",
-      "De 1.ª Classe (Interfixa).",
-      "De Gravidade Indiferente.",
-      "De 3.ª Classe (Interpotente)."
-    ],
-    "correctIndex": 3,
-    "explanation": "A união posterior da pinça é o fulcro, os dedos aplicam a força potente no meio e a ponta segura a carga resistente.",
-    "distractorAnalysis": [
-      "Está incorreta: Não é de 2.ª classe porque a carga está na ponta e a força dos dedos atua no meio.",
-      "Está incorreta: Não é de 1.ª classe porque o fulcro não está entre os dedos e a ponta; está na base oposta da pinça.",
-      "Está incorreta: Gravidade indiferente é um tipo de equilíbrio estático, não uma classe de alavanca."
-    ],
-    "nursingApplication": "Instrumento de uso comum para manipular com delicadeza compressas e materiais de penso."
-  },
-  {
-    "id": 1408,
-    "topicId": 1,
-    "question": "Numa alavanca interpotente (3.ª classe), se o braço da potência medir 5 cm e o braço da resistência medir 30 cm, para equilibrar uma carga de 10 N, que força potente tem de ser exercida?",
-    "options": [
-      "60 N.",
-      "1,67 N.",
-      "10 N.",
-      "300 N."
-    ],
-    "correctIndex": 0,
-    "explanation": "Pela Lei das Alavancas: Fp · bp = Fr · br => Fp · 5 cm = 10 N · 30 cm => Fp · 5 = 300 => Fp = 300 / 5 = 60 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 1,67 N resultaria de inverter erroneamente os braços na equação (10 · 5 / 30).",
-      "Está incorreta: 10 N seria a força se os braços fossem iguais, o que nunca acontece numa alavanca de 3.ª classe.",
-      "Está incorreta: 300 N é o valor do momento em N·cm, e não a intensidade da força potente em Newtons."
-    ],
-    "nursingApplication": "Demonstra a desvantagem mecânica de força: é preciso exercer 60 N para equilibrar uma carga de apenas 10 N."
-  },
-  {
-    "id": 1409,
-    "topicId": 1,
-    "question": "No corpo humano, o movimento de elevação sobre a ponta dos pés (flexão plantar realizada pelo músculo tríceps sural através do tendão de Aquiles) exemplifica que tipo de alavanca biomecânica?",
-    "options": [
-      "Alavanca de 1.ª Classe (Interfixa), com o calcâneo a funcionar como fulcro central entre os dedos e o joelho.",
-      "Alavanca de 2.ª Classe (Inter-resistente), pois a força resistente do peso corporal transmitido pela tíbia situa-se entre o fulcro nas articulações metatarsofalângicas e a potência no calcâneo (VM > 1).",
-      "Alavanca de 3.ª Classe (Interpotente), apresentando desvantagem mecânica extrema que impede a marcha bípede.",
-      "Alavanca Hidráulica de Pascal que opera por variação de pressão capilar."
-    ],
-    "correctIndex": 1,
-    "explanation": "O ponto de apoio está nos metatarsos no solo (frente), a resistência é a linha de carga do peso corporal na tíbia (meio) e a potência é o tríceps sural que puxa o calcâneo para cima (trás), configurando PA - Fr - Fp com VM > 1.",
-    "distractorAnalysis": [
-      "Está incorreta: O fulcro fica nos metatarsos no chão e não no calcâneo.",
-      "Está incorreta: A flexão plantar é uma alavanca de 2.ª classe que poupa força muscular ao elevar o peso de todo o corpo.",
-      "Está incorreta: Não se trata de transmissão hidráulica, mas de uma alavanca mecânica óssea rígida clássica."
-    ],
-    "nursingApplication": "Permite que o músculo tríceps sural eleve todo o peso corporal durante a locomoção com esforço mecânico favorável."
-  },
-  {
-    "id": 1410,
-    "topicId": 1,
-    "question": "Por que razão a grande maioria das alavancas do aparelho locomotor humano são de 3.ª classe (interpotentes), apesar de apresentarem desvantagem mecânica de força (VM < 1)?",
-    "options": [
-      "Porque o corpo humano não possui energia suficiente para construir alavancas de 2.ª classe.",
-      "Porque a 3.ª classe anula todo o desgaste das articulações e dos ligamentos circundantes.",
-      "Porque privilegiam a amplitude e a velocidade angular dos movimentos dos membros, permitindo grandes deslocamentos das extremidades com pequeno encurtamento muscular.",
-      "Porque as alavancas de 3.ª classe multiplicam a força muscular por dez em todos os movimentos."
-    ],
-    "correctIndex": 2,
-    "explanation": "Como a inserção muscular potente fica próxima da articulação (bp pequeno), uma pequena contração muscular produz um movimento amplo e rápido da mão ou do pé.",
-    "distractorAnalysis": [
-      "Está incorreta: O corpo humano possui alavancas de 2.ª classe (ex.: tornozelo na flexão plantar) e de 1.ª classe (atlanto-occipital).",
-      "Está incorreta: O desgaste articular continua a ocorrer e as forças de compressão no fulcro são elevadas.",
-      "Está incorreta: As alavancas de 3.ª classe têm desvantagem mecânica de força (VM < 1), exigindo mais força muscular e não multiplicando força."
-    ],
-    "nursingApplication": "Compreender este compromisso biomecânico fundamenta por que os músculos realizam grandes forças internas para mover pequenas cargas externas."
-  },
-  {
-    "id": 1411,
-    "topicId": 1,
-    "question": "Como se caracteriza geometricamente uma Alavanca de 2.ª Classe (Inter-resistente)?",
-    "options": [
-      "O ponto de apoio localiza-se rigorosamente no meio, separando as duas forças.",
-      "A força potente localiza-se entre o ponto de apoio e a força resistente.",
-      "As forças resistente e potente atuam no mesmo ponto geométrico anulando o fulcro.",
-      "A força resistente localiza-se entre o ponto de apoio (fulcro) e a força potente (PA - Fr - Fp)."
-    ],
-    "correctIndex": 3,
-    "explanation": "Na alavanca de 2.ª classe, a carga resistente fica no meio, pelo que o braço potente é sempre maior que o braço resistente (bp > br).",
-    "distractorAnalysis": [
-      "Está incorreta: O fulcro no meio caracteriza a alavanca de 1.ª classe (interfixa), não a de 2.ª classe.",
-      "Está incorreta: A potência no meio caracteriza a alavanca de 3.ª classe (interpotente), não a de 2.ª classe.",
-      "Está incorreta: Se as forças atuassem no mesmo ponto, o sistema não funcionaria como uma alavanca multiplicadora."
-    ],
-    "nursingApplication": "Exemplo clássico: carrinho de transporte onde a carga está entre a roda (apoio) e as pegas (potência)."
-  },
-  {
-    "id": 1412,
-    "topicId": 1,
-    "question": "Qual é a principal vantagem mecânica de uma Alavanca de 2.ª Classe (Inter-resistente)?",
-    "options": [
-      "Apresenta sempre Vantagem Mecânica de Força (VM > 1), pois o braço potente é sempre superior ao braço resistente (Fp < Fr).",
-      "Apresenta sempre desvantagem mecânica de força, exigindo uma força potente cinco vezes superior à carga.",
-      "Anula totalmente o trabalho mecânico realizado pela força gravítica durante a elevação.",
-      "Permite multiplicar a velocidade da carga em troca de uma força motora infinita."
-    ],
-    "correctIndex": 0,
-    "explanation": "Como bp > br em todas as alavancas de 2.ª classe, a força necessária é sempre menor do que a carga suportada (poupa força).",
-    "distractorAnalysis": [
-      "Está incorreta: A desvantagem sistemática de força é a característica típica da alavanca de 3.ª classe (interpotente).",
-      "Está incorreta: Nenhuma alavanca anula o trabalho mecânico; a conservação da energia é estritamente mantida.",
-      "Está incorreta: A alavanca de 2.ª classe prioriza a economia de força e não a multiplicação de velocidade na carga."
-    ],
-    "nursingApplication": "Princípio físico de carrinhos de transporte pesado: levantar grandes cargas com esforço reduzido."
-  },
-  {
-    "id": 1413,
-    "topicId": 1,
-    "question": "Qual dos seguintes instrumentos é um exemplo representativo de Alavanca de 2.ª Classe (Inter-resistente)?",
-    "options": [
-      "Uma tesoura cirúrgica de corte de fios.",
-      "Um carrinho de mão de transporte de carga.",
-      "Uma pinça anatómica simples de preensão.",
-      "Uma cana de pesca esticada na vertical."
-    ],
-    "correctIndex": 1,
-    "explanation": "No carrinho de mão, o eixo da roda dianteira é o fulcro, a carga está na caçamba (meio) e a força é feita nas pegas.",
-    "distractorAnalysis": [
-      "Está incorreta: A tesoura é uma alavanca de 1.ª classe (interfixa) com o parafuso central como fulcro.",
-      "Está incorreta: A pinça anatómica é uma alavanca de 3.ª classe (interpotente) com os dedos a apertar no meio.",
-      "Está incorreta: A cana de pesca é uma alavanca de 3.ª classe, com a mão motora posicionada entre o apoio e a ponta."
-    ],
-    "nursingApplication": "Permite compreender o design de equipamentos de carga concebidos para minimizar a fadiga muscular."
-  },
-  {
-    "id": 1414,
-    "topicId": 1,
-    "question": "Como se caracteriza geometricamente uma Alavanca de 3.ª Classe (Interpotente)?",
-    "options": [
-      "A força resistente localiza-se entre o fulcro e a força potente.",
-      "O fulcro situa-se rigorosamente entre a potência e a resistência.",
-      "A força potente localiza-se entre o ponto de apoio (fulcro) e a força resistente (PA - Fp - Fr).",
-      "A força potente atua perpendicularmente ao infinito fora do plano da barra rígida."
-    ],
-    "correctIndex": 2,
-    "explanation": "Na alavanca de 3.ª classe, o esforço muscular ou motor atua no meio, fazendo com que o braço potente seja menor que o resistente (bp < br).",
-    "distractorAnalysis": [
-      "Está incorreta: A resistência no meio é a alavanca de 2.ª classe (inter-resistente).",
-      "Está incorreta: O fulcro no meio é a alavanca de 1.ª classe (interfixa).",
-      "Está incorreta: As forças atuam em pontos definidos da barra rígida e dentro do plano biomecânico de movimento."
-    ],
-    "nursingApplication": "A vasta maioria das alavancas musculares dos membros no corpo humano são de 3.ª classe."
-  },
-  {
-    "id": 1415,
-    "topicId": 1,
-    "question": "Se a Alavanca de 3.ª Classe tem desvantagem mecânica de força (Fp > Fr), qual é a sua grande utilidade biomecânica?",
-    "options": [
-      "Permite levantar pesos de milhares de toneladas sem qualquer dispêndio de energia muscular.",
-      "Anula completamente o atrito entre as superfícies ósseas da articulação em causa.",
-      "Impede que a gravidade terrestre acelere os objetos que caem em direção ao solo.",
-      "Ganha-se em amplitude de movimento e em velocidade na extremidade livre da alavanca."
-    ],
-    "correctIndex": 3,
-    "explanation": "Ao aplicar a força perto do fulcro, um pequeno encurtamento muscular produz um grande e rápido deslocamento da mão ou do pé.",
-    "distractorAnalysis": [
-      "Está incorreta: A alavanca de 3.ª classe exige mais força muscular do que o peso da carga, não multiplicando força.",
-      "Está incorreta: O atrito articular é reduzido pelo líquido sinovial e cartilagem, não pelo tipo de alavanca.",
-      "Está incorreta: A alavanca não altera a aceleração gravítica g = 9,8 m/s²."
-    ],
-    "nursingApplication": "Permite que a mão execute movimentos amplos e rápidos, essenciais para manusear materiais com precisão."
-  },
-  {
-    "id": 1416,
-    "topicId": 1,
-    "question": "O sistema de flexão do antebraço pelo músculo bíceps braquial (cotovelo como apoio, inserção do bíceps no rádio e peso na mão) é uma alavanca:",
-    "options": [
-      "De 3.ª Classe (Interpotente).",
-      "De 2.ª Classe (Inter-resistente).",
-      "De 1.ª Classe (Interfixa).",
-      "De 4.ª Classe (Interrotatória)."
-    ],
-    "correctIndex": 0,
-    "explanation": "O fulcro está na articulação do cotovelo, a potência é o bíceps no rádio (~4-5 cm do cotovelo) e a resistência está na mão (~30 cm).",
-    "distractorAnalysis": [
-      "Está incorreta: Não é de 2.ª classe porque a carga resistente está na extremidade (mão) e não no meio.",
-      "Está incorreta: Não é de 1.ª classe porque o fulcro não está no meio; fica na extremidade articular do cotovelo.",
-      "Está incorreta: Não existe 4.ª classe de alavancas na física clássica."
-    ],
-    "nursingApplication": "Explica por que segurar um peso de 5 kg na mão exige mais de 30 kgf de força tensora no bíceps."
-  },
-  {
-    "id": 1417,
-    "topicId": 1,
-    "question": "Uma pinça de preensão utilizada para segurar pequenos objetos com os dedos no meio é um exemplo clássico de alavanca:",
-    "options": [
-      "De 2.ª Classe (Inter-resistente).",
-      "De 3.ª Classe (Interpotente).",
-      "De 1.ª Classe (Interfixa).",
-      "De Gravidade Indiferente."
-    ],
-    "correctIndex": 1,
-    "explanation": "A união posterior da pinça é o fulcro, os dedos aplicam a força potente no meio e a ponta segura a carga resistente.",
-    "distractorAnalysis": [
-      "Está incorreta: Não é de 2.ª classe porque a carga está na ponta e a força dos dedos atua no meio.",
-      "Está incorreta: Não é de 1.ª classe porque o fulcro não está entre os dedos e a ponta; está na base oposta da pinça.",
-      "Está incorreta: Gravidade indiferente é um tipo de equilíbrio estático, não uma classe de alavanca."
-    ],
-    "nursingApplication": "Instrumento de uso comum para manipular com delicadeza compressas e materiais de penso."
-  },
-  {
-    "id": 1418,
-    "topicId": 1,
-    "question": "Numa alavanca interpotente (3.ª classe), se o braço da potência medir 5 cm e o braço da resistência medir 30 cm, para equilibrar uma carga de 10 N, que força potente tem de ser exercida?",
-    "options": [
-      "1,67 N.",
-      "10 N.",
-      "60 N.",
-      "300 N."
-    ],
-    "correctIndex": 2,
-    "explanation": "Pela Lei das Alavancas: Fp · bp = Fr · br => Fp · 5 cm = 10 N · 30 cm => Fp · 5 = 300 => Fp = 300 / 5 = 60 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 1,67 N resultaria de inverter erroneamente os braços na equação (10 · 5 / 30).",
-      "Está incorreta: 10 N seria a força se os braços fossem iguais, o que nunca acontece numa alavanca de 3.ª classe.",
-      "Está incorreta: 300 N é o valor do momento em N·cm, e não a intensidade da força potente em Newtons."
-    ],
-    "nursingApplication": "Demonstra a desvantagem mecânica de força: é preciso exercer 60 N para equilibrar uma carga de apenas 10 N."
-  },
-  {
-    "id": 1419,
-    "topicId": 1,
-    "question": "No corpo humano, o movimento de elevação sobre a ponta dos pés (flexão plantar realizada pelo músculo tríceps sural através do tendão de Aquiles) exemplifica que tipo de alavanca biomecânica?",
-    "options": [
-      "Alavanca de 1.ª Classe (Interfixa), com o calcâneo a funcionar como fulcro central entre os dedos e o joelho.",
-      "Alavanca de 3.ª Classe (Interpotente), apresentando desvantagem mecânica extrema que impede a marcha bípede.",
-      "Alavanca Hidráulica de Pascal que opera por variação de pressão capilar.",
-      "Alavanca de 2.ª Classe (Inter-resistente), pois a força resistente do peso corporal transmitido pela tíbia situa-se entre o fulcro nas articulações metatarsofalângicas e a potência no calcâneo (VM > 1)."
-    ],
-    "correctIndex": 3,
-    "explanation": "O ponto de apoio está nos metatarsos no solo (frente), a resistência é a linha de carga do peso corporal na tíbia (meio) e a potência é o tríceps sural que puxa o calcâneo para cima (trás), configurando PA - Fr - Fp com VM > 1.",
-    "distractorAnalysis": [
-      "Está incorreta: O fulcro fica nos metatarsos no chão e não no calcâneo.",
-      "Está incorreta: A flexão plantar é uma alavanca de 2.ª classe que poupa força muscular ao elevar o peso de todo o corpo.",
-      "Está incorreta: Não se trata de transmissão hidráulica, mas de uma alavanca mecânica óssea rígida clássica."
-    ],
-    "nursingApplication": "Permite que o músculo tríceps sural eleve todo o peso corporal durante a locomoção com esforço mecânico favorável."
-  },
-  {
-    "id": 1420,
-    "topicId": 1,
-    "question": "Por que razão a grande maioria das alavancas do aparelho locomotor humano são de 3.ª classe (interpotentes), apesar de apresentarem desvantagem mecânica de força (VM < 1)?",
-    "options": [
-      "Porque privilegiam a amplitude e a velocidade angular dos movimentos dos membros, permitindo grandes deslocamentos das extremidades com pequeno encurtamento muscular.",
-      "Porque o corpo humano não possui energia suficiente para construir alavancas de 2.ª classe.",
-      "Porque a 3.ª classe anula todo o desgaste das articulações e dos ligamentos circundantes.",
-      "Porque as alavancas de 3.ª classe multiplicam a força muscular por dez em todos os movimentos."
-    ],
-    "correctIndex": 0,
-    "explanation": "Como a inserção muscular potente fica próxima da articulação (bp pequeno), uma pequena contração muscular produz um movimento amplo e rápido da mão ou do pé.",
-    "distractorAnalysis": [
-      "Está incorreta: O corpo humano possui alavancas de 2.ª classe (ex.: tornozelo na flexão plantar) e de 1.ª classe (atlanto-occipital).",
-      "Está incorreta: O desgaste articular continua a ocorrer e as forças de compressão no fulcro são elevadas.",
-      "Está incorreta: As alavancas de 3.ª classe têm desvantagem mecânica de força (VM < 1), exigindo mais força muscular e não multiplicando força."
-    ],
-    "nursingApplication": "Compreender este compromisso biomecânico fundamenta por que os músculos realizam grandes forças internas para mover pequenas cargas externas."
-  },
-  {
-    "id": 1421,
-    "topicId": 1,
-    "question": "Como se caracteriza geometricamente uma Alavanca de 2.ª Classe (Inter-resistente)?",
-    "options": [
-      "O ponto de apoio localiza-se rigorosamente no meio, separando as duas forças.",
-      "A força resistente localiza-se entre o ponto de apoio (fulcro) e a força potente (PA - Fr - Fp).",
-      "A força potente localiza-se entre o ponto de apoio e a força resistente.",
-      "As forças resistente e potente atuam no mesmo ponto geométrico anulando o fulcro."
-    ],
-    "correctIndex": 1,
-    "explanation": "Na alavanca de 2.ª classe, a carga resistente fica no meio, pelo que o braço potente é sempre maior que o braço resistente (bp > br).",
-    "distractorAnalysis": [
-      "Está incorreta: O fulcro no meio caracteriza a alavanca de 1.ª classe (interfixa), não a de 2.ª classe.",
-      "Está incorreta: A potência no meio caracteriza a alavanca de 3.ª classe (interpotente), não a de 2.ª classe.",
-      "Está incorreta: Se as forças atuassem no mesmo ponto, o sistema não funcionaria como uma alavanca multiplicadora."
-    ],
-    "nursingApplication": "Exemplo clássico: carrinho de transporte onde a carga está entre a roda (apoio) e as pegas (potência)."
-  },
-  {
-    "id": 1422,
-    "topicId": 1,
-    "question": "Qual é a principal vantagem mecânica de uma Alavanca de 2.ª Classe (Inter-resistente)?",
-    "options": [
-      "Apresenta sempre desvantagem mecânica de força, exigindo uma força potente cinco vezes superior à carga.",
-      "Anula totalmente o trabalho mecânico realizado pela força gravítica durante a elevação.",
-      "Apresenta sempre Vantagem Mecânica de Força (VM > 1), pois o braço potente é sempre superior ao braço resistente (Fp < Fr).",
-      "Permite multiplicar a velocidade da carga em troca de uma força motora infinita."
-    ],
-    "correctIndex": 2,
-    "explanation": "Como bp > br em todas as alavancas de 2.ª classe, a força necessária é sempre menor do que a carga suportada (poupa força).",
-    "distractorAnalysis": [
-      "Está incorreta: A desvantagem sistemática de força é a característica típica da alavanca de 3.ª classe (interpotente).",
-      "Está incorreta: Nenhuma alavanca anula o trabalho mecânico; a conservação da energia é estritamente mantida.",
-      "Está incorreta: A alavanca de 2.ª classe prioriza a economia de força e não a multiplicação de velocidade na carga."
-    ],
-    "nursingApplication": "Princípio físico de carrinhos de transporte pesado: levantar grandes cargas com esforço reduzido."
-  },
-  {
-    "id": 1423,
-    "topicId": 1,
-    "question": "Qual dos seguintes instrumentos é um exemplo representativo de Alavanca de 2.ª Classe (Inter-resistente)?",
-    "options": [
-      "Uma tesoura cirúrgica de corte de fios.",
-      "Uma pinça anatómica simples de preensão.",
-      "Uma cana de pesca esticada na vertical.",
-      "Um carrinho de mão de transporte de carga."
-    ],
-    "correctIndex": 3,
-    "explanation": "No carrinho de mão, o eixo da roda dianteira é o fulcro, a carga está na caçamba (meio) e a força é feita nas pegas.",
-    "distractorAnalysis": [
-      "Está incorreta: A tesoura é uma alavanca de 1.ª classe (interfixa) com o parafuso central como fulcro.",
-      "Está incorreta: A pinça anatómica é uma alavanca de 3.ª classe (interpotente) com os dedos a apertar no meio.",
-      "Está incorreta: A cana de pesca é uma alavanca de 3.ª classe, com a mão motora posicionada entre o apoio e a ponta."
-    ],
-    "nursingApplication": "Permite compreender o design de equipamentos de carga concebidos para minimizar a fadiga muscular."
-  },
-  {
-    "id": 1424,
-    "topicId": 1,
-    "question": "Como se caracteriza geometricamente uma Alavanca de 3.ª Classe (Interpotente)?",
-    "options": [
-      "A força potente localiza-se entre o ponto de apoio (fulcro) e a força resistente (PA - Fp - Fr).",
-      "A força resistente localiza-se entre o fulcro e a força potente.",
-      "O fulcro situa-se rigorosamente entre a potência e a resistência.",
-      "A força potente atua perpendicularmente ao infinito fora do plano da barra rígida."
-    ],
-    "correctIndex": 0,
-    "explanation": "Na alavanca de 3.ª classe, o esforço muscular ou motor atua no meio, fazendo com que o braço potente seja menor que o resistente (bp < br).",
-    "distractorAnalysis": [
-      "Está incorreta: A resistência no meio é a alavanca de 2.ª classe (inter-resistente).",
-      "Está incorreta: O fulcro no meio é a alavanca de 1.ª classe (interfixa).",
-      "Está incorreta: As forças atuam em pontos definidos da barra rígida e dentro do plano biomecânico de movimento."
-    ],
-    "nursingApplication": "A vasta maioria das alavancas musculares dos membros no corpo humano são de 3.ª classe."
-  },
-  {
-    "id": 1425,
-    "topicId": 1,
-    "question": "Se a Alavanca de 3.ª Classe tem desvantagem mecânica de força (Fp > Fr), qual é a sua grande utilidade biomecânica?",
-    "options": [
-      "Permite levantar pesos de milhares de toneladas sem qualquer dispêndio de energia muscular.",
-      "Ganha-se em amplitude de movimento e em velocidade na extremidade livre da alavanca.",
-      "Anula completamente o atrito entre as superfícies ósseas da articulação em causa.",
-      "Impede que a gravidade terrestre acelere os objetos que caem em direção ao solo."
-    ],
-    "correctIndex": 1,
-    "explanation": "Ao aplicar a força perto do fulcro, um pequeno encurtamento muscular produz um grande e rápido deslocamento da mão ou do pé.",
-    "distractorAnalysis": [
-      "Está incorreta: A alavanca de 3.ª classe exige mais força muscular do que o peso da carga, não multiplicando força.",
-      "Está incorreta: O atrito articular é reduzido pelo líquido sinovial e cartilagem, não pelo tipo de alavanca.",
-      "Está incorreta: A alavanca não altera a aceleração gravítica g = 9,8 m/s²."
-    ],
-    "nursingApplication": "Permite que a mão execute movimentos amplos e rápidos, essenciais para manusear materiais com precisão."
-  },
-  {
-    "id": 1426,
-    "topicId": 1,
-    "question": "O sistema de flexão do antebraço pelo músculo bíceps braquial (cotovelo como apoio, inserção do bíceps no rádio e peso na mão) é uma alavanca:",
-    "options": [
-      "De 2.ª Classe (Inter-resistente).",
-      "De 1.ª Classe (Interfixa).",
-      "De 3.ª Classe (Interpotente).",
-      "De 4.ª Classe (Interrotatória)."
-    ],
-    "correctIndex": 2,
-    "explanation": "O fulcro está na articulação do cotovelo, a potência é o bíceps no rádio (~4-5 cm do cotovelo) e a resistência está na mão (~30 cm).",
-    "distractorAnalysis": [
-      "Está incorreta: Não é de 2.ª classe porque a carga resistente está na extremidade (mão) e não no meio.",
-      "Está incorreta: Não é de 1.ª classe porque o fulcro não está no meio; fica na extremidade articular do cotovelo.",
-      "Está incorreta: Não existe 4.ª classe de alavancas na física clássica."
-    ],
-    "nursingApplication": "Explica por que segurar um peso de 5 kg na mão exige mais de 30 kgf de força tensora no bíceps."
-  },
-  {
-    "id": 1427,
-    "topicId": 1,
-    "question": "Uma pinça de preensão utilizada para segurar pequenos objetos com os dedos no meio é um exemplo clássico de alavanca:",
-    "options": [
-      "De 2.ª Classe (Inter-resistente).",
-      "De 1.ª Classe (Interfixa).",
-      "De Gravidade Indiferente.",
-      "De 3.ª Classe (Interpotente)."
-    ],
-    "correctIndex": 3,
-    "explanation": "A união posterior da pinça é o fulcro, os dedos aplicam a força potente no meio e a ponta segura a carga resistente.",
-    "distractorAnalysis": [
-      "Está incorreta: Não é de 2.ª classe porque a carga está na ponta e a força dos dedos atua no meio.",
-      "Está incorreta: Não é de 1.ª classe porque o fulcro não está entre os dedos e a ponta; está na base oposta da pinça.",
-      "Está incorreta: Gravidade indiferente é um tipo de equilíbrio estático, não uma classe de alavanca."
-    ],
-    "nursingApplication": "Instrumento de uso comum para manipular com delicadeza compressas e materiais de penso."
-  },
-  {
-    "id": 1428,
-    "topicId": 1,
-    "question": "Numa alavanca interpotente (3.ª classe), se o braço da potência medir 5 cm e o braço da resistência medir 30 cm, para equilibrar uma carga de 10 N, que força potente tem de ser exercida?",
-    "options": [
-      "60 N.",
-      "1,67 N.",
-      "10 N.",
-      "300 N."
-    ],
-    "correctIndex": 0,
-    "explanation": "Pela Lei das Alavancas: Fp · bp = Fr · br => Fp · 5 cm = 10 N · 30 cm => Fp · 5 = 300 => Fp = 300 / 5 = 60 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 1,67 N resultaria de inverter erroneamente os braços na equação (10 · 5 / 30).",
-      "Está incorreta: 10 N seria a força se os braços fossem iguais, o que nunca acontece numa alavanca de 3.ª classe.",
-      "Está incorreta: 300 N é o valor do momento em N·cm, e não a intensidade da força potente em Newtons."
-    ],
-    "nursingApplication": "Demonstra a desvantagem mecânica de força: é preciso exercer 60 N para equilibrar uma carga de apenas 10 N."
-  },
-  {
-    "id": 1429,
-    "topicId": 1,
-    "question": "No corpo humano, o movimento de elevação sobre a ponta dos pés (flexão plantar realizada pelo músculo tríceps sural através do tendão de Aquiles) exemplifica que tipo de alavanca biomecânica?",
-    "options": [
-      "Alavanca de 1.ª Classe (Interfixa), com o calcâneo a funcionar como fulcro central entre os dedos e o joelho.",
-      "Alavanca de 2.ª Classe (Inter-resistente), pois a força resistente do peso corporal transmitido pela tíbia situa-se entre o fulcro nas articulações metatarsofalângicas e a potência no calcâneo (VM > 1).",
-      "Alavanca de 3.ª Classe (Interpotente), apresentando desvantagem mecânica extrema que impede a marcha bípede.",
-      "Alavanca Hidráulica de Pascal que opera por variação de pressão capilar."
-    ],
-    "correctIndex": 1,
-    "explanation": "O ponto de apoio está nos metatarsos no solo (frente), a resistência é a linha de carga do peso corporal na tíbia (meio) e a potência é o tríceps sural que puxa o calcâneo para cima (trás), configurando PA - Fr - Fp com VM > 1.",
-    "distractorAnalysis": [
-      "Está incorreta: O fulcro fica nos metatarsos no chão e não no calcâneo.",
-      "Está incorreta: A flexão plantar é uma alavanca de 2.ª classe que poupa força muscular ao elevar o peso de todo o corpo.",
-      "Está incorreta: Não se trata de transmissão hidráulica, mas de uma alavanca mecânica óssea rígida clássica."
-    ],
-    "nursingApplication": "Permite que o músculo tríceps sural eleve todo o peso corporal durante a locomoção com esforço mecânico favorável."
-  },
-  {
-    "id": 1430,
-    "topicId": 1,
-    "question": "Por que razão a grande maioria das alavancas do aparelho locomotor humano são de 3.ª classe (interpotentes), apesar de apresentarem desvantagem mecânica de força (VM < 1)?",
-    "options": [
-      "Porque o corpo humano não possui energia suficiente para construir alavancas de 2.ª classe.",
-      "Porque a 3.ª classe anula todo o desgaste das articulações e dos ligamentos circundantes.",
-      "Porque privilegiam a amplitude e a velocidade angular dos movimentos dos membros, permitindo grandes deslocamentos das extremidades com pequeno encurtamento muscular.",
-      "Porque as alavancas de 3.ª classe multiplicam a força muscular por dez em todos os movimentos."
-    ],
-    "correctIndex": 2,
-    "explanation": "Como a inserção muscular potente fica próxima da articulação (bp pequeno), uma pequena contração muscular produz um movimento amplo e rápido da mão ou do pé.",
-    "distractorAnalysis": [
-      "Está incorreta: O corpo humano possui alavancas de 2.ª classe (ex.: tornozelo na flexão plantar) e de 1.ª classe (atlanto-occipital).",
-      "Está incorreta: O desgaste articular continua a ocorrer e as forças de compressão no fulcro são elevadas.",
-      "Está incorreta: As alavancas de 3.ª classe têm desvantagem mecânica de força (VM < 1), exigindo mais força muscular e não multiplicando força."
-    ],
-    "nursingApplication": "Compreender este compromisso biomecânico fundamenta por que os músculos realizam grandes forças internas para mover pequenas cargas externas."
-  },
-  {
-    "id": 1431,
-    "topicId": 1,
-    "question": "Como se caracteriza geometricamente uma Alavanca de 2.ª Classe (Inter-resistente)?",
-    "options": [
-      "O ponto de apoio localiza-se rigorosamente no meio, separando as duas forças.",
-      "A força potente localiza-se entre o ponto de apoio e a força resistente.",
-      "As forças resistente e potente atuam no mesmo ponto geométrico anulando o fulcro.",
-      "A força resistente localiza-se entre o ponto de apoio (fulcro) e a força potente (PA - Fr - Fp)."
-    ],
-    "correctIndex": 3,
-    "explanation": "Na alavanca de 2.ª classe, a carga resistente fica no meio, pelo que o braço potente é sempre maior que o braço resistente (bp > br).",
-    "distractorAnalysis": [
-      "Está incorreta: O fulcro no meio caracteriza a alavanca de 1.ª classe (interfixa), não a de 2.ª classe.",
-      "Está incorreta: A potência no meio caracteriza a alavanca de 3.ª classe (interpotente), não a de 2.ª classe.",
-      "Está incorreta: Se as forças atuassem no mesmo ponto, o sistema não funcionaria como uma alavanca multiplicadora."
-    ],
-    "nursingApplication": "Exemplo clássico: carrinho de transporte onde a carga está entre a roda (apoio) e as pegas (potência)."
-  },
-  {
-    "id": 1432,
-    "topicId": 1,
-    "question": "Qual é a principal vantagem mecânica de uma Alavanca de 2.ª Classe (Inter-resistente)?",
-    "options": [
-      "Apresenta sempre Vantagem Mecânica de Força (VM > 1), pois o braço potente é sempre superior ao braço resistente (Fp < Fr).",
-      "Apresenta sempre desvantagem mecânica de força, exigindo uma força potente cinco vezes superior à carga.",
-      "Anula totalmente o trabalho mecânico realizado pela força gravítica durante a elevação.",
-      "Permite multiplicar a velocidade da carga em troca de uma força motora infinita."
-    ],
-    "correctIndex": 0,
-    "explanation": "Como bp > br em todas as alavancas de 2.ª classe, a força necessária é sempre menor do que a carga suportada (poupa força).",
-    "distractorAnalysis": [
-      "Está incorreta: A desvantagem sistemática de força é a característica típica da alavanca de 3.ª classe (interpotente).",
-      "Está incorreta: Nenhuma alavanca anula o trabalho mecânico; a conservação da energia é estritamente mantida.",
-      "Está incorreta: A alavanca de 2.ª classe prioriza a economia de força e não a multiplicação de velocidade na carga."
-    ],
-    "nursingApplication": "Princípio físico de carrinhos de transporte pesado: levantar grandes cargas com esforço reduzido."
-  },
-  {
-    "id": 1433,
-    "topicId": 1,
-    "question": "Qual dos seguintes instrumentos é um exemplo representativo de Alavanca de 2.ª Classe (Inter-resistente)?",
-    "options": [
-      "Uma tesoura cirúrgica de corte de fios.",
-      "Um carrinho de mão de transporte de carga.",
-      "Uma pinça anatómica simples de preensão.",
-      "Uma cana de pesca esticada na vertical."
-    ],
-    "correctIndex": 1,
-    "explanation": "No carrinho de mão, o eixo da roda dianteira é o fulcro, a carga está na caçamba (meio) e a força é feita nas pegas.",
-    "distractorAnalysis": [
-      "Está incorreta: A tesoura é uma alavanca de 1.ª classe (interfixa) com o parafuso central como fulcro.",
-      "Está incorreta: A pinça anatómica é uma alavanca de 3.ª classe (interpotente) com os dedos a apertar no meio.",
-      "Está incorreta: A cana de pesca é uma alavanca de 3.ª classe, com a mão motora posicionada entre o apoio e a ponta."
-    ],
-    "nursingApplication": "Permite compreender o design de equipamentos de carga concebidos para minimizar a fadiga muscular."
-  },
-  {
-    "id": 1434,
-    "topicId": 1,
-    "question": "Como se caracteriza geometricamente uma Alavanca de 3.ª Classe (Interpotente)?",
-    "options": [
-      "A força resistente localiza-se entre o fulcro e a força potente.",
-      "O fulcro situa-se rigorosamente entre a potência e a resistência.",
-      "A força potente localiza-se entre o ponto de apoio (fulcro) e a força resistente (PA - Fp - Fr).",
-      "A força potente atua perpendicularmente ao infinito fora do plano da barra rígida."
-    ],
-    "correctIndex": 2,
-    "explanation": "Na alavanca de 3.ª classe, o esforço muscular ou motor atua no meio, fazendo com que o braço potente seja menor que o resistente (bp < br).",
-    "distractorAnalysis": [
-      "Está incorreta: A resistência no meio é a alavanca de 2.ª classe (inter-resistente).",
-      "Está incorreta: O fulcro no meio é a alavanca de 1.ª classe (interfixa).",
-      "Está incorreta: As forças atuam em pontos definidos da barra rígida e dentro do plano biomecânico de movimento."
-    ],
-    "nursingApplication": "A vasta maioria das alavancas musculares dos membros no corpo humano são de 3.ª classe."
-  },
-  {
-    "id": 1435,
-    "topicId": 1,
-    "question": "Se a Alavanca de 3.ª Classe tem desvantagem mecânica de força (Fp > Fr), qual é a sua grande utilidade biomecânica?",
-    "options": [
-      "Permite levantar pesos de milhares de toneladas sem qualquer dispêndio de energia muscular.",
-      "Anula completamente o atrito entre as superfícies ósseas da articulação em causa.",
-      "Impede que a gravidade terrestre acelere os objetos que caem em direção ao solo.",
-      "Ganha-se em amplitude de movimento e em velocidade na extremidade livre da alavanca."
-    ],
-    "correctIndex": 3,
-    "explanation": "Ao aplicar a força perto do fulcro, um pequeno encurtamento muscular produz um grande e rápido deslocamento da mão ou do pé.",
-    "distractorAnalysis": [
-      "Está incorreta: A alavanca de 3.ª classe exige mais força muscular do que o peso da carga, não multiplicando força.",
-      "Está incorreta: O atrito articular é reduzido pelo líquido sinovial e cartilagem, não pelo tipo de alavanca.",
-      "Está incorreta: A alavanca não altera a aceleração gravítica g = 9,8 m/s²."
-    ],
-    "nursingApplication": "Permite que a mão execute movimentos amplos e rápidos, essenciais para manusear materiais com precisão."
-  },
-  {
-    "id": 1436,
-    "topicId": 1,
-    "question": "O sistema de flexão do antebraço pelo músculo bíceps braquial (cotovelo como apoio, inserção do bíceps no rádio e peso na mão) é uma alavanca:",
-    "options": [
-      "De 3.ª Classe (Interpotente).",
-      "De 2.ª Classe (Inter-resistente).",
-      "De 1.ª Classe (Interfixa).",
-      "De 4.ª Classe (Interrotatória)."
-    ],
-    "correctIndex": 0,
-    "explanation": "O fulcro está na articulação do cotovelo, a potência é o bíceps no rádio (~4-5 cm do cotovelo) e a resistência está na mão (~30 cm).",
-    "distractorAnalysis": [
-      "Está incorreta: Não é de 2.ª classe porque a carga resistente está na extremidade (mão) e não no meio.",
-      "Está incorreta: Não é de 1.ª classe porque o fulcro não está no meio; fica na extremidade articular do cotovelo.",
-      "Está incorreta: Não existe 4.ª classe de alavancas na física clássica."
-    ],
-    "nursingApplication": "Explica por que segurar um peso de 5 kg na mão exige mais de 30 kgf de força tensora no bíceps."
-  },
-  {
-    "id": 1437,
-    "topicId": 1,
-    "question": "Uma pinça de preensão utilizada para segurar pequenos objetos com os dedos no meio é um exemplo clássico de alavanca:",
-    "options": [
-      "De 2.ª Classe (Inter-resistente).",
-      "De 3.ª Classe (Interpotente).",
-      "De 1.ª Classe (Interfixa).",
-      "De Gravidade Indiferente."
-    ],
-    "correctIndex": 1,
-    "explanation": "A união posterior da pinça é o fulcro, os dedos aplicam a força potente no meio e a ponta segura a carga resistente.",
-    "distractorAnalysis": [
-      "Está incorreta: Não é de 2.ª classe porque a carga está na ponta e a força dos dedos atua no meio.",
-      "Está incorreta: Não é de 1.ª classe porque o fulcro não está entre os dedos e a ponta; está na base oposta da pinça.",
-      "Está incorreta: Gravidade indiferente é um tipo de equilíbrio estático, não uma classe de alavanca."
-    ],
-    "nursingApplication": "Instrumento de uso comum para manipular com delicadeza compressas e materiais de penso."
-  },
-  {
-    "id": 1438,
-    "topicId": 1,
-    "question": "Numa alavanca interpotente (3.ª classe), se o braço da potência medir 5 cm e o braço da resistência medir 30 cm, para equilibrar uma carga de 10 N, que força potente tem de ser exercida?",
-    "options": [
-      "1,67 N.",
-      "10 N.",
-      "60 N.",
-      "300 N."
-    ],
-    "correctIndex": 2,
-    "explanation": "Pela Lei das Alavancas: Fp · bp = Fr · br => Fp · 5 cm = 10 N · 30 cm => Fp · 5 = 300 => Fp = 300 / 5 = 60 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 1,67 N resultaria de inverter erroneamente os braços na equação (10 · 5 / 30).",
-      "Está incorreta: 10 N seria a força se os braços fossem iguais, o que nunca acontece numa alavanca de 3.ª classe.",
-      "Está incorreta: 300 N é o valor do momento em N·cm, e não a intensidade da força potente em Newtons."
-    ],
-    "nursingApplication": "Demonstra a desvantagem mecânica de força: é preciso exercer 60 N para equilibrar uma carga de apenas 10 N."
-  },
-  {
-    "id": 1439,
-    "topicId": 1,
-    "question": "No corpo humano, o movimento de elevação sobre a ponta dos pés (flexão plantar realizada pelo músculo tríceps sural através do tendão de Aquiles) exemplifica que tipo de alavanca biomecânica?",
-    "options": [
-      "Alavanca de 1.ª Classe (Interfixa), com o calcâneo a funcionar como fulcro central entre os dedos e o joelho.",
-      "Alavanca de 3.ª Classe (Interpotente), apresentando desvantagem mecânica extrema que impede a marcha bípede.",
-      "Alavanca Hidráulica de Pascal que opera por variação de pressão capilar.",
-      "Alavanca de 2.ª Classe (Inter-resistente), pois a força resistente do peso corporal transmitido pela tíbia situa-se entre o fulcro nas articulações metatarsofalângicas e a potência no calcâneo (VM > 1)."
-    ],
-    "correctIndex": 3,
-    "explanation": "O ponto de apoio está nos metatarsos no solo (frente), a resistência é a linha de carga do peso corporal na tíbia (meio) e a potência é o tríceps sural que puxa o calcâneo para cima (trás), configurando PA - Fr - Fp com VM > 1.",
-    "distractorAnalysis": [
-      "Está incorreta: O fulcro fica nos metatarsos no chão e não no calcâneo.",
-      "Está incorreta: A flexão plantar é uma alavanca de 2.ª classe que poupa força muscular ao elevar o peso de todo o corpo.",
-      "Está incorreta: Não se trata de transmissão hidráulica, mas de uma alavanca mecânica óssea rígida clássica."
-    ],
-    "nursingApplication": "Permite que o músculo tríceps sural eleve todo o peso corporal durante a locomoção com esforço mecânico favorável."
-  },
-  {
-    "id": 1440,
-    "topicId": 1,
-    "question": "Por que razão a grande maioria das alavancas do aparelho locomotor humano são de 3.ª classe (interpotentes), apesar de apresentarem desvantagem mecânica de força (VM < 1)?",
-    "options": [
-      "Porque privilegiam a amplitude e a velocidade angular dos movimentos dos membros, permitindo grandes deslocamentos das extremidades com pequeno encurtamento muscular.",
-      "Porque o corpo humano não possui energia suficiente para construir alavancas de 2.ª classe.",
-      "Porque a 3.ª classe anula todo o desgaste das articulações e dos ligamentos circundantes.",
-      "Porque as alavancas de 3.ª classe multiplicam a força muscular por dez em todos os movimentos."
-    ],
-    "correctIndex": 0,
-    "explanation": "Como a inserção muscular potente fica próxima da articulação (bp pequeno), uma pequena contração muscular produz um movimento amplo e rápido da mão ou do pé.",
-    "distractorAnalysis": [
-      "Está incorreta: O corpo humano possui alavancas de 2.ª classe (ex.: tornozelo na flexão plantar) e de 1.ª classe (atlanto-occipital).",
-      "Está incorreta: O desgaste articular continua a ocorrer e as forças de compressão no fulcro são elevadas.",
-      "Está incorreta: As alavancas de 3.ª classe têm desvantagem mecânica de força (VM < 1), exigindo mais força muscular e não multiplicando força."
-    ],
-    "nursingApplication": "Compreender este compromisso biomecânico fundamenta por que os músculos realizam grandes forças internas para mover pequenas cargas externas."
-  },
-  {
-    "id": 1441,
-    "topicId": 1,
-    "question": "Como se caracteriza geometricamente uma Alavanca de 2.ª Classe (Inter-resistente)?",
-    "options": [
-      "O ponto de apoio localiza-se rigorosamente no meio, separando as duas forças.",
-      "A força resistente localiza-se entre o ponto de apoio (fulcro) e a força potente (PA - Fr - Fp).",
-      "A força potente localiza-se entre o ponto de apoio e a força resistente.",
-      "As forças resistente e potente atuam no mesmo ponto geométrico anulando o fulcro."
-    ],
-    "correctIndex": 1,
-    "explanation": "Na alavanca de 2.ª classe, a carga resistente fica no meio, pelo que o braço potente é sempre maior que o braço resistente (bp > br).",
-    "distractorAnalysis": [
-      "Está incorreta: O fulcro no meio caracteriza a alavanca de 1.ª classe (interfixa), não a de 2.ª classe.",
-      "Está incorreta: A potência no meio caracteriza a alavanca de 3.ª classe (interpotente), não a de 2.ª classe.",
-      "Está incorreta: Se as forças atuassem no mesmo ponto, o sistema não funcionaria como uma alavanca multiplicadora."
-    ],
-    "nursingApplication": "Exemplo clássico: carrinho de transporte onde a carga está entre a roda (apoio) e as pegas (potência)."
-  },
-  {
-    "id": 1442,
-    "topicId": 1,
-    "question": "Qual é a principal vantagem mecânica de uma Alavanca de 2.ª Classe (Inter-resistente)?",
-    "options": [
-      "Apresenta sempre desvantagem mecânica de força, exigindo uma força potente cinco vezes superior à carga.",
-      "Anula totalmente o trabalho mecânico realizado pela força gravítica durante a elevação.",
-      "Apresenta sempre Vantagem Mecânica de Força (VM > 1), pois o braço potente é sempre superior ao braço resistente (Fp < Fr).",
-      "Permite multiplicar a velocidade da carga em troca de uma força motora infinita."
-    ],
-    "correctIndex": 2,
-    "explanation": "Como bp > br em todas as alavancas de 2.ª classe, a força necessária é sempre menor do que a carga suportada (poupa força).",
-    "distractorAnalysis": [
-      "Está incorreta: A desvantagem sistemática de força é a característica típica da alavanca de 3.ª classe (interpotente).",
-      "Está incorreta: Nenhuma alavanca anula o trabalho mecânico; a conservação da energia é estritamente mantida.",
-      "Está incorreta: A alavanca de 2.ª classe prioriza a economia de força e não a multiplicação de velocidade na carga."
-    ],
-    "nursingApplication": "Princípio físico de carrinhos de transporte pesado: levantar grandes cargas com esforço reduzido."
-  },
-  {
-    "id": 1443,
-    "topicId": 1,
-    "question": "Qual dos seguintes instrumentos é um exemplo representativo de Alavanca de 2.ª Classe (Inter-resistente)?",
-    "options": [
-      "Uma tesoura cirúrgica de corte de fios.",
-      "Uma pinça anatómica simples de preensão.",
-      "Uma cana de pesca esticada na vertical.",
-      "Um carrinho de mão de transporte de carga."
-    ],
-    "correctIndex": 3,
-    "explanation": "No carrinho de mão, o eixo da roda dianteira é o fulcro, a carga está na caçamba (meio) e a força é feita nas pegas.",
-    "distractorAnalysis": [
-      "Está incorreta: A tesoura é uma alavanca de 1.ª classe (interfixa) com o parafuso central como fulcro.",
-      "Está incorreta: A pinça anatómica é uma alavanca de 3.ª classe (interpotente) com os dedos a apertar no meio.",
-      "Está incorreta: A cana de pesca é uma alavanca de 3.ª classe, com a mão motora posicionada entre o apoio e a ponta."
-    ],
-    "nursingApplication": "Permite compreender o design de equipamentos de carga concebidos para minimizar a fadiga muscular."
-  },
-  {
-    "id": 1444,
-    "topicId": 1,
-    "question": "Como se caracteriza geometricamente uma Alavanca de 3.ª Classe (Interpotente)?",
-    "options": [
-      "A força potente localiza-se entre o ponto de apoio (fulcro) e a força resistente (PA - Fp - Fr).",
-      "A força resistente localiza-se entre o fulcro e a força potente.",
-      "O fulcro situa-se rigorosamente entre a potência e a resistência.",
-      "A força potente atua perpendicularmente ao infinito fora do plano da barra rígida."
-    ],
-    "correctIndex": 0,
-    "explanation": "Na alavanca de 3.ª classe, o esforço muscular ou motor atua no meio, fazendo com que o braço potente seja menor que o resistente (bp < br).",
-    "distractorAnalysis": [
-      "Está incorreta: A resistência no meio é a alavanca de 2.ª classe (inter-resistente).",
-      "Está incorreta: O fulcro no meio é a alavanca de 1.ª classe (interfixa).",
-      "Está incorreta: As forças atuam em pontos definidos da barra rígida e dentro do plano biomecânico de movimento."
-    ],
-    "nursingApplication": "A vasta maioria das alavancas musculares dos membros no corpo humano são de 3.ª classe."
-  },
-  {
-    "id": 1445,
-    "topicId": 1,
-    "question": "Se a Alavanca de 3.ª Classe tem desvantagem mecânica de força (Fp > Fr), qual é a sua grande utilidade biomecânica?",
-    "options": [
-      "Permite levantar pesos de milhares de toneladas sem qualquer dispêndio de energia muscular.",
-      "Ganha-se em amplitude de movimento e em velocidade na extremidade livre da alavanca.",
-      "Anula completamente o atrito entre as superfícies ósseas da articulação em causa.",
-      "Impede que a gravidade terrestre acelere os objetos que caem em direção ao solo."
-    ],
-    "correctIndex": 1,
-    "explanation": "Ao aplicar a força perto do fulcro, um pequeno encurtamento muscular produz um grande e rápido deslocamento da mão ou do pé.",
-    "distractorAnalysis": [
-      "Está incorreta: A alavanca de 3.ª classe exige mais força muscular do que o peso da carga, não multiplicando força.",
-      "Está incorreta: O atrito articular é reduzido pelo líquido sinovial e cartilagem, não pelo tipo de alavanca.",
-      "Está incorreta: A alavanca não altera a aceleração gravítica g = 9,8 m/s²."
-    ],
-    "nursingApplication": "Permite que a mão execute movimentos amplos e rápidos, essenciais para manusear materiais com precisão."
-  },
-  {
-    "id": 1446,
-    "topicId": 1,
-    "question": "O sistema de flexão do antebraço pelo músculo bíceps braquial (cotovelo como apoio, inserção do bíceps no rádio e peso na mão) é uma alavanca:",
-    "options": [
-      "De 2.ª Classe (Inter-resistente).",
-      "De 1.ª Classe (Interfixa).",
-      "De 3.ª Classe (Interpotente).",
-      "De 4.ª Classe (Interrotatória)."
-    ],
-    "correctIndex": 2,
-    "explanation": "O fulcro está na articulação do cotovelo, a potência é o bíceps no rádio (~4-5 cm do cotovelo) e a resistência está na mão (~30 cm).",
-    "distractorAnalysis": [
-      "Está incorreta: Não é de 2.ª classe porque a carga resistente está na extremidade (mão) e não no meio.",
-      "Está incorreta: Não é de 1.ª classe porque o fulcro não está no meio; fica na extremidade articular do cotovelo.",
-      "Está incorreta: Não existe 4.ª classe de alavancas na física clássica."
-    ],
-    "nursingApplication": "Explica por que segurar um peso de 5 kg na mão exige mais de 30 kgf de força tensora no bíceps."
-  },
-  {
-    "id": 1447,
-    "topicId": 1,
-    "question": "Uma pinça de preensão utilizada para segurar pequenos objetos com os dedos no meio é um exemplo clássico de alavanca:",
-    "options": [
-      "De 2.ª Classe (Inter-resistente).",
-      "De 1.ª Classe (Interfixa).",
-      "De Gravidade Indiferente.",
-      "De 3.ª Classe (Interpotente)."
-    ],
-    "correctIndex": 3,
-    "explanation": "A união posterior da pinça é o fulcro, os dedos aplicam a força potente no meio e a ponta segura a carga resistente.",
-    "distractorAnalysis": [
-      "Está incorreta: Não é de 2.ª classe porque a carga está na ponta e a força dos dedos atua no meio.",
-      "Está incorreta: Não é de 1.ª classe porque o fulcro não está entre os dedos e a ponta; está na base oposta da pinça.",
-      "Está incorreta: Gravidade indiferente é um tipo de equilíbrio estático, não uma classe de alavanca."
-    ],
-    "nursingApplication": "Instrumento de uso comum para manipular com delicadeza compressas e materiais de penso."
-  },
-  {
-    "id": 1448,
-    "topicId": 1,
-    "question": "Numa alavanca interpotente (3.ª classe), se o braço da potência medir 5 cm e o braço da resistência medir 30 cm, para equilibrar uma carga de 10 N, que força potente tem de ser exercida?",
-    "options": [
-      "60 N.",
-      "1,67 N.",
-      "10 N.",
-      "300 N."
-    ],
-    "correctIndex": 0,
-    "explanation": "Pela Lei das Alavancas: Fp · bp = Fr · br => Fp · 5 cm = 10 N · 30 cm => Fp · 5 = 300 => Fp = 300 / 5 = 60 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 1,67 N resultaria de inverter erroneamente os braços na equação (10 · 5 / 30).",
-      "Está incorreta: 10 N seria a força se os braços fossem iguais, o que nunca acontece numa alavanca de 3.ª classe.",
-      "Está incorreta: 300 N é o valor do momento em N·cm, e não a intensidade da força potente em Newtons."
-    ],
-    "nursingApplication": "Demonstra a desvantagem mecânica de força: é preciso exercer 60 N para equilibrar uma carga de apenas 10 N."
-  },
-  {
-    "id": 1449,
-    "topicId": 1,
-    "question": "No corpo humano, o movimento de elevação sobre a ponta dos pés (flexão plantar realizada pelo músculo tríceps sural através do tendão de Aquiles) exemplifica que tipo de alavanca biomecânica?",
-    "options": [
-      "Alavanca de 1.ª Classe (Interfixa), com o calcâneo a funcionar como fulcro central entre os dedos e o joelho.",
-      "Alavanca de 2.ª Classe (Inter-resistente), pois a força resistente do peso corporal transmitido pela tíbia situa-se entre o fulcro nas articulações metatarsofalângicas e a potência no calcâneo (VM > 1).",
-      "Alavanca de 3.ª Classe (Interpotente), apresentando desvantagem mecânica extrema que impede a marcha bípede.",
-      "Alavanca Hidráulica de Pascal que opera por variação de pressão capilar."
-    ],
-    "correctIndex": 1,
-    "explanation": "O ponto de apoio está nos metatarsos no solo (frente), a resistência é a linha de carga do peso corporal na tíbia (meio) e a potência é o tríceps sural que puxa o calcâneo para cima (trás), configurando PA - Fr - Fp com VM > 1.",
-    "distractorAnalysis": [
-      "Está incorreta: O fulcro fica nos metatarsos no chão e não no calcâneo.",
-      "Está incorreta: A flexão plantar é uma alavanca de 2.ª classe que poupa força muscular ao elevar o peso de todo o corpo.",
-      "Está incorreta: Não se trata de transmissão hidráulica, mas de uma alavanca mecânica óssea rígida clássica."
-    ],
-    "nursingApplication": "Permite que o músculo tríceps sural eleve todo o peso corporal durante a locomoção com esforço mecânico favorável."
-  },
-  {
-    "id": 1450,
-    "topicId": 1,
-    "question": "Por que razão a grande maioria das alavancas do aparelho locomotor humano são de 3.ª classe (interpotentes), apesar de apresentarem desvantagem mecânica de força (VM < 1)?",
-    "options": [
-      "Porque o corpo humano não possui energia suficiente para construir alavancas de 2.ª classe.",
-      "Porque a 3.ª classe anula todo o desgaste das articulações e dos ligamentos circundantes.",
-      "Porque privilegiam a amplitude e a velocidade angular dos movimentos dos membros, permitindo grandes deslocamentos das extremidades com pequeno encurtamento muscular.",
-      "Porque as alavancas de 3.ª classe multiplicam a força muscular por dez em todos os movimentos."
-    ],
-    "correctIndex": 2,
-    "explanation": "Como a inserção muscular potente fica próxima da articulação (bp pequeno), uma pequena contração muscular produz um movimento amplo e rápido da mão ou do pé.",
-    "distractorAnalysis": [
-      "Está incorreta: O corpo humano possui alavancas de 2.ª classe (ex.: tornozelo na flexão plantar) e de 1.ª classe (atlanto-occipital).",
-      "Está incorreta: O desgaste articular continua a ocorrer e as forças de compressão no fulcro são elevadas.",
-      "Está incorreta: As alavancas de 3.ª classe têm desvantagem mecânica de força (VM < 1), exigindo mais força muscular e não multiplicando força."
-    ],
-    "nursingApplication": "Compreender este compromisso biomecânico fundamenta por que os músculos realizam grandes forças internas para mover pequenas cargas externas."
-  },
-  {
-    "id": 1451,
-    "topicId": 1,
-    "question": "O que é o Centro de Gravidade (CG) de um corpo humano ou objeto material?",
-    "options": [
-      "O ponto onde a temperatura corporal atinge o seu valor mais elevado durante o dia.",
-      "A extremidade mais distal do membro inferior em contacto com o solo.",
-      "A área poligonal de contacto formada pelos pés sobre a superfície de apoio.",
-      "O ponto imaginário de aplicação da resultante de todas as forças gravíticas paralelas que atuam sobre a massa do corpo."
-    ],
-    "correctIndex": 3,
-    "explanation": "O CG é o centro de massa ponderado pela gravidade onde se considera concentrado todo o peso do corpo para fins estáticos.",
-    "distractorAnalysis": [
-      "Está incorreta: O CG é um ponto mecânico de equilíbrio de massa, sem relação direta com o pico de temperatura metabólica.",
-      "Está incorreta: A extremidade dos pés define a base de sustentação, não o centro de gravidade do corpo.",
-      "Está incorreta: A área de contacto com o piso define a Base de Sustentação (BS), e não o Centro de Gravidade (CG)."
-    ],
-    "nursingApplication": "Determinar o CG é crucial para avaliar o risco de perda de equilíbrio e quedas em utentes."
-  },
-  {
-    "id": 1452,
-    "topicId": 1,
-    "question": "Onde se localiza aproximadamente o Centro de Gravidade do corpo humano de um adulto em posição ortostática neutra?",
-    "options": [
-      "No interior da bacia pélvica, na linha média, imediatamente anterior à 2.ª vértebra sagrada (S2).",
-      "No centro da cabeça, exatamente ao nível da cavidade craniana frontal.",
-      "Na articulação de ambos os joelhos junto aos meniscos articulares.",
-      "Na ponta dos dedos dos pés quando apoiados no solo horizontal."
-    ],
-    "correctIndex": 0,
-    "explanation": "Em postura anatómica ereta de repouso, o CG humano situa-se anatomicamente na pelve, à frente de S2 (~55% a 57% da altura total).",
-    "distractorAnalysis": [
-      "Está incorreta: O CG na cabeça tornaria o corpo extremamente instável e com tendência imediata a tombar.",
-      "Está incorreta: O CG situa-se acima dos joelhos, na região pélvica sagrada.",
-      "Está incorreta: A ponta dos pés faz parte da base de sustentação no solo, situando-se muito abaixo do CG corporal."
-    ],
-    "nursingApplication": "Ponto de referência fundamental para todas as técnicas de mobilização e ergonomia postural."
-  },
-  {
-    "id": 1453,
-    "topicId": 1,
-    "question": "Como se define a 'Base de Sustentação' (BS) de um corpo em equilíbrio sobre uma superfície?",
-    "options": [
-      "A distância vertical medida entre o solo e o centro de gravidade do indivíduo.",
-      "A área poligonal delimitada pelos bordos externos de todos os pontos de apoio em contacto com o solo.",
-      "A massa total do corpo dividida pelo volume do calçado utilizado.",
-      "O coeficiente de atrito cinético medido entre a pele e o colchão do leito."
-    ],
-    "correctIndex": 1,
-    "explanation": "A BS é a área geométrica convexa formada pela união dos contornos externos dos apoios (ex.: os dois pés e o espaço entre eles).",
-    "distractorAnalysis": [
-      "Está incorreta: A distância vertical ao solo é a altura do centro de gravidade (h_CG), não a base de sustentação.",
-      "Está incorreta: Massa dividida por volume é densidade (massa volúmica), e não base de apoio.",
-      "Está incorreta: Coeficiente de atrito mede a adesão superficial, não a área geométrica da base de sustentação."
-    ],
-    "nursingApplication": "Aumentar a base de sustentação (afastar os pés) amplia a margem de estabilidade postural."
-  },
-  {
-    "id": 1454,
-    "topicId": 1,
-    "question": "Qual é a condição geométrica essencial para que um corpo humano em repouso permaneça em equilíbrio estável sem cair?",
-    "options": [
-      "A linha de gravidade tem de passar fora da base de sustentação na direção dos calcanhares.",
-      "O centro de gravidade tem de ser elevado até à altura máxima possível dos ombros.",
-      "A Linha de Gravidade (vertical que passa no CG) tem de projetar-se rigorosamente no interior da Base de Sustentação.",
-      "A área da base de sustentação tem de ser reduzida a um único ponto milimétrico."
-    ],
-    "correctIndex": 2,
-    "explanation": "Se a vertical do CG sair para fora da área da base de sustentação, o peso gera um momento de rotação que tomba o corpo.",
-    "distractorAnalysis": [
-      "Está incorreta: Se a linha de gravidade passar fora da base, o corpo perde o equilíbrio e cai a menos que haja reação motora.",
-      "Está incorreta: Elevar o centro de gravidade diminui a estabilidade, tornando o equilíbrio muito mais precário.",
-      "Está incorreta: Reduzir a base a um ponto diminui drasticamente a estabilidade (ex.: equilibrar-se num só pé)."
-    ],
-    "nursingApplication": "Fundamento da prevenção de quedas: garantir que a linha de gravidade nunca ultrapassa a base de apoio."
-  },
-  {
-    "id": 1455,
-    "topicId": 1,
-    "question": "Quais são os dois fatores biomecânicos fundamentais que aumentam a estabilidade estática de um corpo?",
-    "options": [
-      "Reduzir a base de sustentação a um único apoio e elevar o centro de gravidade.",
-      "Aumentar a velocidade de rotação e fechar completamente os olhos.",
-      "Elevar o peso do indivíduo até ao teto através de um cabo tracionado.",
-      "Alargar a base de sustentação e rebaixar o centro de gravidade."
-    ],
-    "correctIndex": 3,
-    "explanation": "Quanto mais ampla a base de apoio e mais baixo o centro de gravidade, maior é o ângulo de inclinação necessário para tombar o corpo.",
-    "distractorAnalysis": [
-      "Está incorreta: Reduzir a base e elevar o CG são precisamente os dois fatores que provocam instabilidade e facilitam quedas.",
-      "Está incorreta: Aumentar a velocidade angular diz respeito à dinâmica e fechar os olhos reduz o controlo vestibular/visual.",
-      "Está incorreta: Suspender o corpo por cabos altera o sistema para suporte suspenso, não sendo apoio no solo."
-    ],
-    "nursingApplication": "Regra de ouro ergonómica: fletir ligeiramente os joelhos e afastar os pés ao mobilizar cargas."
-  },
-  {
-    "id": 1456,
-    "topicId": 1,
-    "question": "Porque é que o uso de um andarilho ou canadianas melhora significativamente o equilíbrio de um utente com marcha instável?",
-    "options": [
-      "Porque aumenta a área poligonal da base de sustentação, tornando muito mais difícil que a linha de gravidade saia para fora dela.",
-      "Porque reduz o peso corporal do utente para metade através de um campo magnético.",
-      "Porque anula completamente o atrito entre o calçado e o piso do corredor.",
-      "Porque desloca o centro de gravidade do corpo para a cavidade craniana superior."
-    ],
-    "correctIndex": 0,
-    "explanation": "Ao acrescentar apoios periféricos no solo, a base de sustentação alarga-se em várias vezes a área dos pés isolados.",
-    "distractorAnalysis": [
-      "Está incorreta: Dispositivos mecânicos de apoio transmitem forças ao solo, mas não anulam o peso da massa corporal.",
-      "Está incorreta: O atrito nos pés e ponteiras de borracha é mantido ou aumentado para evitar deslizamentos perigosos.",
-      "Está incorreta: O CG não se desloca para a cabeça; o andarilho permite manter o alinhamento corporal seguro."
-    ],
-    "nursingApplication": "Justifica a prescrição de dispositivos de apoio da marcha na reabilitação e geriatria."
-  },
-  {
-    "id": 1457,
-    "topicId": 1,
-    "question": "Quando uma pessoa se inclina para a frente para apanhar um objeto do chão mantendo os joelhos completamente esticados, o que acontece ao centro de gravidade do tronco?",
-    "options": [
-      "O CG do tronco desaparece temporariamente da estrutura corporal.",
-      "O CG do tronco projeta-se muito para a frente, gerando um enorme braço de momento sobre as vértebras lombares (L5-S1).",
-      "O momento de rotação sobre a coluna lombar torna-se estritamente nulo.",
-      "A gravidade terrestre deixa de atuar sobre a massa do tronco durante a inclinação."
-    ],
-    "correctIndex": 1,
-    "explanation": "Ao projetar o tronco para a frente, a distância horizontal (braço de alavanca) entre a carga e L5-S1 aumenta, multiplicando a tensão muscular lombar.",
-    "distractorAnalysis": [
-      "Está incorreta: O centro de gravidade é uma propriedade geométrica da distribuição de massa e nunca desaparece.",
-      "Está incorreta: O momento sobre a lombar aumenta drasticamente (M = P · b), e nunca se anula nesta postura inadequada.",
-      "Está incorreta: A gravidade atua de forma constante e permanente sobre todo o corpo."
-    ],
-    "nursingApplication": "Explica as lesões musculoesqueléticas lombares resultantes de posturas incorretas de flexão do tronco."
-  },
-  {
-    "id": 1458,
-    "topicId": 1,
-    "question": "Para levantar com segurança uma carga pesada pousada no chão, qual é a postura ergonomicamente correta com base na Biofísica?",
-    "options": [
-      "Manter os joelhos perfeitamente rígidos e curvar a coluna lombar a noventa graus com a carga longe.",
-      "Elevar a carga com os membros superiores esticados para a frente à distância de um metro.",
-      "Fletir os joelhos mantendo as costas direitas e a carga o mais junto possível ao corpo, reduzindo o braço de alavanca.",
-      "Girar rapidamente o tronco em torção axial enquanto se faz a força máxima de elevação."
-    ],
-    "correctIndex": 2,
-    "explanation": "Manter a carga junto ao corpo reduz o braço de momento 'b' da resistência sobre a coluna lombar, minimizando a força muscular requerida.",
-    "distractorAnalysis": [
-      "Está incorreta: Curvar a lombar com joelhos rígidos maximiza o braço de momento e a pressão sobre os discos intervertebrais.",
-      "Está incorreta: Segurar a carga longe do corpo aumenta o braço de alavanca, multiplicando o momento resistente e o risco de lesão.",
-      "Está incorreta: Movimentos combinados de flexão e torção sob carga geram forças cortantes destrutivas no anel fibroso discal."
-    ],
-    "nursingApplication": "Princípio biomecânico basilar da movimentação manual de cargas para proteção da saúde do profissional."
-  },
-  {
-    "id": 1459,
-    "topicId": 1,
-    "question": "Considerando a distribuição anatómica de massa, de que forma a posição do Centro de Gravidade (CG) difere tipicamente entre homens, mulheres e crianças na postura ereta?",
-    "options": [
-      "É rigorosamente idêntico ao milímetro em todos os seres humanos independentemente da idade e do sexo.",
-      "Nas crianças situa-se junto aos calcanhares e nos adultos situa-se na garganta.",
-      "Nas mulheres situa-se acima dos ombros e nos homens situa-se abaixo dos joelhos.",
-      "É ligeiramente mais baixo nas mulheres (maior largura pélvica), mais alto nos homens (maior massa na cintura escapular) e marcadamente mais elevado nas crianças pequenas devido à desproporção da cabeça."
-    ],
-    "correctIndex": 3,
-    "explanation": "Diferenças na morfologia esquelética e na distribuição de massa alteram a altura do CG: ~55% da altura nas mulheres adultas, ~57% nos homens e mais alto nas crianças (cabeça proporcionalmente maior).",
-    "distractorAnalysis": [
-      "Está incorreta: A posição do CG varia com a proporção biométrica e distribuição das massas corporais.",
-      "Está incorreta: Nas crianças a cabeça é desproporcionalmente pesada, elevando o CG e tornando-as mais instáveis.",
-      "Está incorreta: O CG em ambos os sexos situa-se na região pélvico-abdominal, diferindo ligeiramente em altura relativa."
-    ],
-    "nursingApplication": "Explica por que as crianças pequenas têm maior tendência a desequilíbrios e quedas cefálicas."
-  },
-  {
-    "id": 1460,
-    "topicId": 1,
-    "question": "Como se define o 'Ângulo Crítico de Tombamento' na avaliação da estabilidade estática de um corpo apoiado sobre uma superfície plana horizontal?",
-    "options": [
-      "O ângulo limite de inclinação a partir do qual a Linha de Gravidade ultrapassa o bordo da base de sustentação, momento a partir do qual a gravidade gera um binário que derruba o corpo.",
-      "O ângulo de noventa graus em que todos os corpos perdem a sua massa inercial.",
-      "O ângulo formado entre o raio de luz solar e o meridiano do local de apoio.",
-      "A temperatura limite em que o corpo sólido funde para o estado líquido sob atrito."
-    ],
-    "correctIndex": 0,
-    "explanation": "Enquanto a linha de gravidade cai dentro da base, o peso gera momento restaurador; ao ultrapassar o bordo (ângulo crítico), o momento torna-se desestabilizador e o corpo tomba.",
-    "distractorAnalysis": [
-      "Está incorreta: A inclinação mecânica não anula a massa inercial do corpo material.",
-      "Está incorreta: Ângulo de incidência solar pertence à óptica e astronomia, sem relação com estabilidade estática.",
-      "Está incorreta: Fusão de materiais é uma transição termodinâmica de fase, não o ângulo de tombamento mecânico."
-    ],
-    "nursingApplication": "Determina a inclinação máxima segura a que uma cadeira de rodas ou equipamento hospitalar pode ser sujeito sem capotar."
-  },
-  {
-    "id": 1461,
-    "topicId": 1,
-    "question": "O que é o Centro de Gravidade (CG) de um corpo humano ou objeto material?",
-    "options": [
-      "O ponto onde a temperatura corporal atinge o seu valor mais elevado durante o dia.",
-      "O ponto imaginário de aplicação da resultante de todas as forças gravíticas paralelas que atuam sobre a massa do corpo.",
-      "A extremidade mais distal do membro inferior em contacto com o solo.",
-      "A área poligonal de contacto formada pelos pés sobre a superfície de apoio."
-    ],
-    "correctIndex": 1,
-    "explanation": "O CG é o centro de massa ponderado pela gravidade onde se considera concentrado todo o peso do corpo para fins estáticos.",
-    "distractorAnalysis": [
-      "Está incorreta: O CG é um ponto mecânico de equilíbrio de massa, sem relação direta com o pico de temperatura metabólica.",
-      "Está incorreta: A extremidade dos pés define a base de sustentação, não o centro de gravidade do corpo.",
-      "Está incorreta: A área de contacto com o piso define a Base de Sustentação (BS), e não o Centro de Gravidade (CG)."
-    ],
-    "nursingApplication": "Determinar o CG é crucial para avaliar o risco de perda de equilíbrio e quedas em utentes."
-  },
-  {
-    "id": 1462,
-    "topicId": 1,
-    "question": "Onde se localiza aproximadamente o Centro de Gravidade do corpo humano de um adulto em posição ortostática neutra?",
-    "options": [
-      "No centro da cabeça, exatamente ao nível da cavidade craniana frontal.",
-      "Na articulação de ambos os joelhos junto aos meniscos articulares.",
-      "No interior da bacia pélvica, na linha média, imediatamente anterior à 2.ª vértebra sagrada (S2).",
-      "Na ponta dos dedos dos pés quando apoiados no solo horizontal."
-    ],
-    "correctIndex": 2,
-    "explanation": "Em postura anatómica ereta de repouso, o CG humano situa-se anatomicamente na pelve, à frente de S2 (~55% a 57% da altura total).",
-    "distractorAnalysis": [
-      "Está incorreta: O CG na cabeça tornaria o corpo extremamente instável e com tendência imediata a tombar.",
-      "Está incorreta: O CG situa-se acima dos joelhos, na região pélvica sagrada.",
-      "Está incorreta: A ponta dos pés faz parte da base de sustentação no solo, situando-se muito abaixo do CG corporal."
-    ],
-    "nursingApplication": "Ponto de referência fundamental para todas as técnicas de mobilização e ergonomia postural."
-  },
-  {
-    "id": 1463,
-    "topicId": 1,
-    "question": "Como se define a 'Base de Sustentação' (BS) de um corpo em equilíbrio sobre uma superfície?",
-    "options": [
-      "A distância vertical medida entre o solo e o centro de gravidade do indivíduo.",
-      "A massa total do corpo dividida pelo volume do calçado utilizado.",
-      "O coeficiente de atrito cinético medido entre a pele e o colchão do leito.",
-      "A área poligonal delimitada pelos bordos externos de todos os pontos de apoio em contacto com o solo."
-    ],
-    "correctIndex": 3,
-    "explanation": "A BS é a área geométrica convexa formada pela união dos contornos externos dos apoios (ex.: os dois pés e o espaço entre eles).",
-    "distractorAnalysis": [
-      "Está incorreta: A distância vertical ao solo é a altura do centro de gravidade (h_CG), não a base de sustentação.",
-      "Está incorreta: Massa dividida por volume é densidade (massa volúmica), e não base de apoio.",
-      "Está incorreta: Coeficiente de atrito mede a adesão superficial, não a área geométrica da base de sustentação."
-    ],
-    "nursingApplication": "Aumentar a base de sustentação (afastar os pés) amplia a margem de estabilidade postural."
-  },
-  {
-    "id": 1464,
-    "topicId": 1,
-    "question": "Qual é a condição geométrica essencial para que um corpo humano em repouso permaneça em equilíbrio estável sem cair?",
-    "options": [
-      "A Linha de Gravidade (vertical que passa no CG) tem de projetar-se rigorosamente no interior da Base de Sustentação.",
-      "A linha de gravidade tem de passar fora da base de sustentação na direção dos calcanhares.",
-      "O centro de gravidade tem de ser elevado até à altura máxima possível dos ombros.",
-      "A área da base de sustentação tem de ser reduzida a um único ponto milimétrico."
-    ],
-    "correctIndex": 0,
-    "explanation": "Se a vertical do CG sair para fora da área da base de sustentação, o peso gera um momento de rotação que tomba o corpo.",
-    "distractorAnalysis": [
-      "Está incorreta: Se a linha de gravidade passar fora da base, o corpo perde o equilíbrio e cai a menos que haja reação motora.",
-      "Está incorreta: Elevar o centro de gravidade diminui a estabilidade, tornando o equilíbrio muito mais precário.",
-      "Está incorreta: Reduzir a base a um ponto diminui drasticamente a estabilidade (ex.: equilibrar-se num só pé)."
-    ],
-    "nursingApplication": "Fundamento da prevenção de quedas: garantir que a linha de gravidade nunca ultrapassa a base de apoio."
-  },
-  {
-    "id": 1465,
-    "topicId": 1,
-    "question": "Quais são os dois fatores biomecânicos fundamentais que aumentam a estabilidade estática de um corpo?",
-    "options": [
-      "Reduzir a base de sustentação a um único apoio e elevar o centro de gravidade.",
-      "Alargar a base de sustentação e rebaixar o centro de gravidade.",
-      "Aumentar a velocidade de rotação e fechar completamente os olhos.",
-      "Elevar o peso do indivíduo até ao teto através de um cabo tracionado."
-    ],
-    "correctIndex": 1,
-    "explanation": "Quanto mais ampla a base de apoio e mais baixo o centro de gravidade, maior é o ângulo de inclinação necessário para tombar o corpo.",
-    "distractorAnalysis": [
-      "Está incorreta: Reduzir a base e elevar o CG são precisamente os dois fatores que provocam instabilidade e facilitam quedas.",
-      "Está incorreta: Aumentar a velocidade angular diz respeito à dinâmica e fechar os olhos reduz o controlo vestibular/visual.",
-      "Está incorreta: Suspender o corpo por cabos altera o sistema para suporte suspenso, não sendo apoio no solo."
-    ],
-    "nursingApplication": "Regra de ouro ergonómica: fletir ligeiramente os joelhos e afastar os pés ao mobilizar cargas."
-  },
-  {
-    "id": 1466,
-    "topicId": 1,
-    "question": "Porque é que o uso de um andarilho ou canadianas melhora significativamente o equilíbrio de um utente com marcha instável?",
-    "options": [
-      "Porque reduz o peso corporal do utente para metade através de um campo magnético.",
-      "Porque anula completamente o atrito entre o calçado e o piso do corredor.",
-      "Porque aumenta a área poligonal da base de sustentação, tornando muito mais difícil que a linha de gravidade saia para fora dela.",
-      "Porque desloca o centro de gravidade do corpo para a cavidade craniana superior."
-    ],
-    "correctIndex": 2,
-    "explanation": "Ao acrescentar apoios periféricos no solo, a base de sustentação alarga-se em várias vezes a área dos pés isolados.",
-    "distractorAnalysis": [
-      "Está incorreta: Dispositivos mecânicos de apoio transmitem forças ao solo, mas não anulam o peso da massa corporal.",
-      "Está incorreta: O atrito nos pés e ponteiras de borracha é mantido ou aumentado para evitar deslizamentos perigosos.",
-      "Está incorreta: O CG não se desloca para a cabeça; o andarilho permite manter o alinhamento corporal seguro."
-    ],
-    "nursingApplication": "Justifica a prescrição de dispositivos de apoio da marcha na reabilitação e geriatria."
-  },
-  {
-    "id": 1467,
-    "topicId": 1,
-    "question": "Quando uma pessoa se inclina para a frente para apanhar um objeto do chão mantendo os joelhos completamente esticados, o que acontece ao centro de gravidade do tronco?",
-    "options": [
-      "O CG do tronco desaparece temporariamente da estrutura corporal.",
-      "O momento de rotação sobre a coluna lombar torna-se estritamente nulo.",
-      "A gravidade terrestre deixa de atuar sobre a massa do tronco durante a inclinação.",
-      "O CG do tronco projeta-se muito para a frente, gerando um enorme braço de momento sobre as vértebras lombares (L5-S1)."
-    ],
-    "correctIndex": 3,
-    "explanation": "Ao projetar o tronco para a frente, a distância horizontal (braço de alavanca) entre a carga e L5-S1 aumenta, multiplicando a tensão muscular lombar.",
-    "distractorAnalysis": [
-      "Está incorreta: O centro de gravidade é uma propriedade geométrica da distribuição de massa e nunca desaparece.",
-      "Está incorreta: O momento sobre a lombar aumenta drasticamente (M = P · b), e nunca se anula nesta postura inadequada.",
-      "Está incorreta: A gravidade atua de forma constante e permanente sobre todo o corpo."
-    ],
-    "nursingApplication": "Explica as lesões musculoesqueléticas lombares resultantes de posturas incorretas de flexão do tronco."
-  },
-  {
-    "id": 1468,
-    "topicId": 1,
-    "question": "Para levantar com segurança uma carga pesada pousada no chão, qual é a postura ergonomicamente correta com base na Biofísica?",
-    "options": [
-      "Fletir os joelhos mantendo as costas direitas e a carga o mais junto possível ao corpo, reduzindo o braço de alavanca.",
-      "Manter os joelhos perfeitamente rígidos e curvar a coluna lombar a noventa graus com a carga longe.",
-      "Elevar a carga com os membros superiores esticados para a frente à distância de um metro.",
-      "Girar rapidamente o tronco em torção axial enquanto se faz a força máxima de elevação."
-    ],
-    "correctIndex": 0,
-    "explanation": "Manter a carga junto ao corpo reduz o braço de momento 'b' da resistência sobre a coluna lombar, minimizando a força muscular requerida.",
-    "distractorAnalysis": [
-      "Está incorreta: Curvar a lombar com joelhos rígidos maximiza o braço de momento e a pressão sobre os discos intervertebrais.",
-      "Está incorreta: Segurar a carga longe do corpo aumenta o braço de alavanca, multiplicando o momento resistente e o risco de lesão.",
-      "Está incorreta: Movimentos combinados de flexão e torção sob carga geram forças cortantes destrutivas no anel fibroso discal."
-    ],
-    "nursingApplication": "Princípio biomecânico basilar da movimentação manual de cargas para proteção da saúde do profissional."
-  },
-  {
-    "id": 1469,
-    "topicId": 1,
-    "question": "Considerando a distribuição anatómica de massa, de que forma a posição do Centro de Gravidade (CG) difere tipicamente entre homens, mulheres e crianças na postura ereta?",
-    "options": [
-      "É rigorosamente idêntico ao milímetro em todos os seres humanos independentemente da idade e do sexo.",
-      "É ligeiramente mais baixo nas mulheres (maior largura pélvica), mais alto nos homens (maior massa na cintura escapular) e marcadamente mais elevado nas crianças pequenas devido à desproporção da cabeça.",
-      "Nas crianças situa-se junto aos calcanhares e nos adultos situa-se na garganta.",
-      "Nas mulheres situa-se acima dos ombros e nos homens situa-se abaixo dos joelhos."
-    ],
-    "correctIndex": 1,
-    "explanation": "Diferenças na morfologia esquelética e na distribuição de massa alteram a altura do CG: ~55% da altura nas mulheres adultas, ~57% nos homens e mais alto nas crianças (cabeça proporcionalmente maior).",
-    "distractorAnalysis": [
-      "Está incorreta: A posição do CG varia com a proporção biométrica e distribuição das massas corporais.",
-      "Está incorreta: Nas crianças a cabeça é desproporcionalmente pesada, elevando o CG e tornando-as mais instáveis.",
-      "Está incorreta: O CG em ambos os sexos situa-se na região pélvico-abdominal, diferindo ligeiramente em altura relativa."
-    ],
-    "nursingApplication": "Explica por que as crianças pequenas têm maior tendência a desequilíbrios e quedas cefálicas."
-  },
-  {
-    "id": 1470,
-    "topicId": 1,
-    "question": "Como se define o 'Ângulo Crítico de Tombamento' na avaliação da estabilidade estática de um corpo apoiado sobre uma superfície plana horizontal?",
-    "options": [
-      "O ângulo de noventa graus em que todos os corpos perdem a sua massa inercial.",
-      "O ângulo formado entre o raio de luz solar e o meridiano do local de apoio.",
-      "O ângulo limite de inclinação a partir do qual a Linha de Gravidade ultrapassa o bordo da base de sustentação, momento a partir do qual a gravidade gera um binário que derruba o corpo.",
-      "A temperatura limite em que o corpo sólido funde para o estado líquido sob atrito."
-    ],
-    "correctIndex": 2,
-    "explanation": "Enquanto a linha de gravidade cai dentro da base, o peso gera momento restaurador; ao ultrapassar o bordo (ângulo crítico), o momento torna-se desestabilizador e o corpo tomba.",
-    "distractorAnalysis": [
-      "Está incorreta: A inclinação mecânica não anula a massa inercial do corpo material.",
-      "Está incorreta: Ângulo de incidência solar pertence à óptica e astronomia, sem relação com estabilidade estática.",
-      "Está incorreta: Fusão de materiais é uma transição termodinâmica de fase, não o ângulo de tombamento mecânico."
-    ],
-    "nursingApplication": "Determina a inclinação máxima segura a que uma cadeira de rodas ou equipamento hospitalar pode ser sujeito sem capotar."
-  },
-  {
-    "id": 1471,
-    "topicId": 1,
-    "question": "O que é o Centro de Gravidade (CG) de um corpo humano ou objeto material?",
-    "options": [
-      "O ponto onde a temperatura corporal atinge o seu valor mais elevado durante o dia.",
-      "A extremidade mais distal do membro inferior em contacto com o solo.",
-      "A área poligonal de contacto formada pelos pés sobre a superfície de apoio.",
-      "O ponto imaginário de aplicação da resultante de todas as forças gravíticas paralelas que atuam sobre a massa do corpo."
-    ],
-    "correctIndex": 3,
-    "explanation": "O CG é o centro de massa ponderado pela gravidade onde se considera concentrado todo o peso do corpo para fins estáticos.",
-    "distractorAnalysis": [
-      "Está incorreta: O CG é um ponto mecânico de equilíbrio de massa, sem relação direta com o pico de temperatura metabólica.",
-      "Está incorreta: A extremidade dos pés define a base de sustentação, não o centro de gravidade do corpo.",
-      "Está incorreta: A área de contacto com o piso define a Base de Sustentação (BS), e não o Centro de Gravidade (CG)."
-    ],
-    "nursingApplication": "Determinar o CG é crucial para avaliar o risco de perda de equilíbrio e quedas em utentes."
-  },
-  {
-    "id": 1472,
-    "topicId": 1,
-    "question": "Onde se localiza aproximadamente o Centro de Gravidade do corpo humano de um adulto em posição ortostática neutra?",
-    "options": [
-      "No interior da bacia pélvica, na linha média, imediatamente anterior à 2.ª vértebra sagrada (S2).",
-      "No centro da cabeça, exatamente ao nível da cavidade craniana frontal.",
-      "Na articulação de ambos os joelhos junto aos meniscos articulares.",
-      "Na ponta dos dedos dos pés quando apoiados no solo horizontal."
-    ],
-    "correctIndex": 0,
-    "explanation": "Em postura anatómica ereta de repouso, o CG humano situa-se anatomicamente na pelve, à frente de S2 (~55% a 57% da altura total).",
-    "distractorAnalysis": [
-      "Está incorreta: O CG na cabeça tornaria o corpo extremamente instável e com tendência imediata a tombar.",
-      "Está incorreta: O CG situa-se acima dos joelhos, na região pélvica sagrada.",
-      "Está incorreta: A ponta dos pés faz parte da base de sustentação no solo, situando-se muito abaixo do CG corporal."
-    ],
-    "nursingApplication": "Ponto de referência fundamental para todas as técnicas de mobilização e ergonomia postural."
-  },
-  {
-    "id": 1473,
-    "topicId": 1,
-    "question": "Como se define a 'Base de Sustentação' (BS) de um corpo em equilíbrio sobre uma superfície?",
-    "options": [
-      "A distância vertical medida entre o solo e o centro de gravidade do indivíduo.",
-      "A área poligonal delimitada pelos bordos externos de todos os pontos de apoio em contacto com o solo.",
-      "A massa total do corpo dividida pelo volume do calçado utilizado.",
-      "O coeficiente de atrito cinético medido entre a pele e o colchão do leito."
-    ],
-    "correctIndex": 1,
-    "explanation": "A BS é a área geométrica convexa formada pela união dos contornos externos dos apoios (ex.: os dois pés e o espaço entre eles).",
-    "distractorAnalysis": [
-      "Está incorreta: A distância vertical ao solo é a altura do centro de gravidade (h_CG), não a base de sustentação.",
-      "Está incorreta: Massa dividida por volume é densidade (massa volúmica), e não base de apoio.",
-      "Está incorreta: Coeficiente de atrito mede a adesão superficial, não a área geométrica da base de sustentação."
-    ],
-    "nursingApplication": "Aumentar a base de sustentação (afastar os pés) amplia a margem de estabilidade postural."
-  },
-  {
-    "id": 1474,
-    "topicId": 1,
-    "question": "Qual é a condição geométrica essencial para que um corpo humano em repouso permaneça em equilíbrio estável sem cair?",
-    "options": [
-      "A linha de gravidade tem de passar fora da base de sustentação na direção dos calcanhares.",
-      "O centro de gravidade tem de ser elevado até à altura máxima possível dos ombros.",
-      "A Linha de Gravidade (vertical que passa no CG) tem de projetar-se rigorosamente no interior da Base de Sustentação.",
-      "A área da base de sustentação tem de ser reduzida a um único ponto milimétrico."
-    ],
-    "correctIndex": 2,
-    "explanation": "Se a vertical do CG sair para fora da área da base de sustentação, o peso gera um momento de rotação que tomba o corpo.",
-    "distractorAnalysis": [
-      "Está incorreta: Se a linha de gravidade passar fora da base, o corpo perde o equilíbrio e cai a menos que haja reação motora.",
-      "Está incorreta: Elevar o centro de gravidade diminui a estabilidade, tornando o equilíbrio muito mais precário.",
-      "Está incorreta: Reduzir a base a um ponto diminui drasticamente a estabilidade (ex.: equilibrar-se num só pé)."
-    ],
-    "nursingApplication": "Fundamento da prevenção de quedas: garantir que a linha de gravidade nunca ultrapassa a base de apoio."
-  },
-  {
-    "id": 1475,
-    "topicId": 1,
-    "question": "Quais são os dois fatores biomecânicos fundamentais que aumentam a estabilidade estática de um corpo?",
-    "options": [
-      "Reduzir a base de sustentação a um único apoio e elevar o centro de gravidade.",
-      "Aumentar a velocidade de rotação e fechar completamente os olhos.",
-      "Elevar o peso do indivíduo até ao teto através de um cabo tracionado.",
-      "Alargar a base de sustentação e rebaixar o centro de gravidade."
-    ],
-    "correctIndex": 3,
-    "explanation": "Quanto mais ampla a base de apoio e mais baixo o centro de gravidade, maior é o ângulo de inclinação necessário para tombar o corpo.",
-    "distractorAnalysis": [
-      "Está incorreta: Reduzir a base e elevar o CG são precisamente os dois fatores que provocam instabilidade e facilitam quedas.",
-      "Está incorreta: Aumentar a velocidade angular diz respeito à dinâmica e fechar os olhos reduz o controlo vestibular/visual.",
-      "Está incorreta: Suspender o corpo por cabos altera o sistema para suporte suspenso, não sendo apoio no solo."
-    ],
-    "nursingApplication": "Regra de ouro ergonómica: fletir ligeiramente os joelhos e afastar os pés ao mobilizar cargas."
-  },
-  {
-    "id": 1476,
-    "topicId": 1,
-    "question": "Porque é que o uso de um andarilho ou canadianas melhora significativamente o equilíbrio de um utente com marcha instável?",
-    "options": [
-      "Porque aumenta a área poligonal da base de sustentação, tornando muito mais difícil que a linha de gravidade saia para fora dela.",
-      "Porque reduz o peso corporal do utente para metade através de um campo magnético.",
-      "Porque anula completamente o atrito entre o calçado e o piso do corredor.",
-      "Porque desloca o centro de gravidade do corpo para a cavidade craniana superior."
-    ],
-    "correctIndex": 0,
-    "explanation": "Ao acrescentar apoios periféricos no solo, a base de sustentação alarga-se em várias vezes a área dos pés isolados.",
-    "distractorAnalysis": [
-      "Está incorreta: Dispositivos mecânicos de apoio transmitem forças ao solo, mas não anulam o peso da massa corporal.",
-      "Está incorreta: O atrito nos pés e ponteiras de borracha é mantido ou aumentado para evitar deslizamentos perigosos.",
-      "Está incorreta: O CG não se desloca para a cabeça; o andarilho permite manter o alinhamento corporal seguro."
-    ],
-    "nursingApplication": "Justifica a prescrição de dispositivos de apoio da marcha na reabilitação e geriatria."
-  },
-  {
-    "id": 1477,
-    "topicId": 1,
-    "question": "Quando uma pessoa se inclina para a frente para apanhar um objeto do chão mantendo os joelhos completamente esticados, o que acontece ao centro de gravidade do tronco?",
-    "options": [
-      "O CG do tronco desaparece temporariamente da estrutura corporal.",
-      "O CG do tronco projeta-se muito para a frente, gerando um enorme braço de momento sobre as vértebras lombares (L5-S1).",
-      "O momento de rotação sobre a coluna lombar torna-se estritamente nulo.",
-      "A gravidade terrestre deixa de atuar sobre a massa do tronco durante a inclinação."
-    ],
-    "correctIndex": 1,
-    "explanation": "Ao projetar o tronco para a frente, a distância horizontal (braço de alavanca) entre a carga e L5-S1 aumenta, multiplicando a tensão muscular lombar.",
-    "distractorAnalysis": [
-      "Está incorreta: O centro de gravidade é uma propriedade geométrica da distribuição de massa e nunca desaparece.",
-      "Está incorreta: O momento sobre a lombar aumenta drasticamente (M = P · b), e nunca se anula nesta postura inadequada.",
-      "Está incorreta: A gravidade atua de forma constante e permanente sobre todo o corpo."
-    ],
-    "nursingApplication": "Explica as lesões musculoesqueléticas lombares resultantes de posturas incorretas de flexão do tronco."
-  },
-  {
-    "id": 1478,
-    "topicId": 1,
-    "question": "Para levantar com segurança uma carga pesada pousada no chão, qual é a postura ergonomicamente correta com base na Biofísica?",
-    "options": [
-      "Manter os joelhos perfeitamente rígidos e curvar a coluna lombar a noventa graus com a carga longe.",
-      "Elevar a carga com os membros superiores esticados para a frente à distância de um metro.",
-      "Fletir os joelhos mantendo as costas direitas e a carga o mais junto possível ao corpo, reduzindo o braço de alavanca.",
-      "Girar rapidamente o tronco em torção axial enquanto se faz a força máxima de elevação."
-    ],
-    "correctIndex": 2,
-    "explanation": "Manter a carga junto ao corpo reduz o braço de momento 'b' da resistência sobre a coluna lombar, minimizando a força muscular requerida.",
-    "distractorAnalysis": [
-      "Está incorreta: Curvar a lombar com joelhos rígidos maximiza o braço de momento e a pressão sobre os discos intervertebrais.",
-      "Está incorreta: Segurar a carga longe do corpo aumenta o braço de alavanca, multiplicando o momento resistente e o risco de lesão.",
-      "Está incorreta: Movimentos combinados de flexão e torção sob carga geram forças cortantes destrutivas no anel fibroso discal."
-    ],
-    "nursingApplication": "Princípio biomecânico basilar da movimentação manual de cargas para proteção da saúde do profissional."
-  },
-  {
-    "id": 1479,
-    "topicId": 1,
-    "question": "Considerando a distribuição anatómica de massa, de que forma a posição do Centro de Gravidade (CG) difere tipicamente entre homens, mulheres e crianças na postura ereta?",
-    "options": [
-      "É rigorosamente idêntico ao milímetro em todos os seres humanos independentemente da idade e do sexo.",
-      "Nas crianças situa-se junto aos calcanhares e nos adultos situa-se na garganta.",
-      "Nas mulheres situa-se acima dos ombros e nos homens situa-se abaixo dos joelhos.",
-      "É ligeiramente mais baixo nas mulheres (maior largura pélvica), mais alto nos homens (maior massa na cintura escapular) e marcadamente mais elevado nas crianças pequenas devido à desproporção da cabeça."
-    ],
-    "correctIndex": 3,
-    "explanation": "Diferenças na morfologia esquelética e na distribuição de massa alteram a altura do CG: ~55% da altura nas mulheres adultas, ~57% nos homens e mais alto nas crianças (cabeça proporcionalmente maior).",
-    "distractorAnalysis": [
-      "Está incorreta: A posição do CG varia com a proporção biométrica e distribuição das massas corporais.",
-      "Está incorreta: Nas crianças a cabeça é desproporcionalmente pesada, elevando o CG e tornando-as mais instáveis.",
-      "Está incorreta: O CG em ambos os sexos situa-se na região pélvico-abdominal, diferindo ligeiramente em altura relativa."
-    ],
-    "nursingApplication": "Explica por que as crianças pequenas têm maior tendência a desequilíbrios e quedas cefálicas."
-  },
-  {
-    "id": 1480,
-    "topicId": 1,
-    "question": "Como se define o 'Ângulo Crítico de Tombamento' na avaliação da estabilidade estática de um corpo apoiado sobre uma superfície plana horizontal?",
-    "options": [
-      "O ângulo limite de inclinação a partir do qual a Linha de Gravidade ultrapassa o bordo da base de sustentação, momento a partir do qual a gravidade gera um binário que derruba o corpo.",
-      "O ângulo de noventa graus em que todos os corpos perdem a sua massa inercial.",
-      "O ângulo formado entre o raio de luz solar e o meridiano do local de apoio.",
-      "A temperatura limite em que o corpo sólido funde para o estado líquido sob atrito."
-    ],
-    "correctIndex": 0,
-    "explanation": "Enquanto a linha de gravidade cai dentro da base, o peso gera momento restaurador; ao ultrapassar o bordo (ângulo crítico), o momento torna-se desestabilizador e o corpo tomba.",
-    "distractorAnalysis": [
-      "Está incorreta: A inclinação mecânica não anula a massa inercial do corpo material.",
-      "Está incorreta: Ângulo de incidência solar pertence à óptica e astronomia, sem relação com estabilidade estática.",
-      "Está incorreta: Fusão de materiais é uma transição termodinâmica de fase, não o ângulo de tombamento mecânico."
-    ],
-    "nursingApplication": "Determina a inclinação máxima segura a que uma cadeira de rodas ou equipamento hospitalar pode ser sujeito sem capotar."
-  },
-  {
-    "id": 1481,
-    "topicId": 1,
-    "question": "O que é o Centro de Gravidade (CG) de um corpo humano ou objeto material?",
-    "options": [
-      "O ponto onde a temperatura corporal atinge o seu valor mais elevado durante o dia.",
-      "O ponto imaginário de aplicação da resultante de todas as forças gravíticas paralelas que atuam sobre a massa do corpo.",
-      "A extremidade mais distal do membro inferior em contacto com o solo.",
-      "A área poligonal de contacto formada pelos pés sobre a superfície de apoio."
-    ],
-    "correctIndex": 1,
-    "explanation": "O CG é o centro de massa ponderado pela gravidade onde se considera concentrado todo o peso do corpo para fins estáticos.",
-    "distractorAnalysis": [
-      "Está incorreta: O CG é um ponto mecânico de equilíbrio de massa, sem relação direta com o pico de temperatura metabólica.",
-      "Está incorreta: A extremidade dos pés define a base de sustentação, não o centro de gravidade do corpo.",
-      "Está incorreta: A área de contacto com o piso define a Base de Sustentação (BS), e não o Centro de Gravidade (CG)."
-    ],
-    "nursingApplication": "Determinar o CG é crucial para avaliar o risco de perda de equilíbrio e quedas em utentes."
-  },
-  {
-    "id": 1482,
-    "topicId": 1,
-    "question": "Onde se localiza aproximadamente o Centro de Gravidade do corpo humano de um adulto em posição ortostática neutra?",
-    "options": [
-      "No centro da cabeça, exatamente ao nível da cavidade craniana frontal.",
-      "Na articulação de ambos os joelhos junto aos meniscos articulares.",
-      "No interior da bacia pélvica, na linha média, imediatamente anterior à 2.ª vértebra sagrada (S2).",
-      "Na ponta dos dedos dos pés quando apoiados no solo horizontal."
-    ],
-    "correctIndex": 2,
-    "explanation": "Em postura anatómica ereta de repouso, o CG humano situa-se anatomicamente na pelve, à frente de S2 (~55% a 57% da altura total).",
-    "distractorAnalysis": [
-      "Está incorreta: O CG na cabeça tornaria o corpo extremamente instável e com tendência imediata a tombar.",
-      "Está incorreta: O CG situa-se acima dos joelhos, na região pélvica sagrada.",
-      "Está incorreta: A ponta dos pés faz parte da base de sustentação no solo, situando-se muito abaixo do CG corporal."
-    ],
-    "nursingApplication": "Ponto de referência fundamental para todas as técnicas de mobilização e ergonomia postural."
-  },
-  {
-    "id": 1483,
-    "topicId": 1,
-    "question": "Como se define a 'Base de Sustentação' (BS) de um corpo em equilíbrio sobre uma superfície?",
-    "options": [
-      "A distância vertical medida entre o solo e o centro de gravidade do indivíduo.",
-      "A massa total do corpo dividida pelo volume do calçado utilizado.",
-      "O coeficiente de atrito cinético medido entre a pele e o colchão do leito.",
-      "A área poligonal delimitada pelos bordos externos de todos os pontos de apoio em contacto com o solo."
-    ],
-    "correctIndex": 3,
-    "explanation": "A BS é a área geométrica convexa formada pela união dos contornos externos dos apoios (ex.: os dois pés e o espaço entre eles).",
-    "distractorAnalysis": [
-      "Está incorreta: A distância vertical ao solo é a altura do centro de gravidade (h_CG), não a base de sustentação.",
-      "Está incorreta: Massa dividida por volume é densidade (massa volúmica), e não base de apoio.",
-      "Está incorreta: Coeficiente de atrito mede a adesão superficial, não a área geométrica da base de sustentação."
-    ],
-    "nursingApplication": "Aumentar a base de sustentação (afastar os pés) amplia a margem de estabilidade postural."
-  },
-  {
-    "id": 1484,
-    "topicId": 1,
-    "question": "Qual é a condição geométrica essencial para que um corpo humano em repouso permaneça em equilíbrio estável sem cair?",
-    "options": [
-      "A Linha de Gravidade (vertical que passa no CG) tem de projetar-se rigorosamente no interior da Base de Sustentação.",
-      "A linha de gravidade tem de passar fora da base de sustentação na direção dos calcanhares.",
-      "O centro de gravidade tem de ser elevado até à altura máxima possível dos ombros.",
-      "A área da base de sustentação tem de ser reduzida a um único ponto milimétrico."
-    ],
-    "correctIndex": 0,
-    "explanation": "Se a vertical do CG sair para fora da área da base de sustentação, o peso gera um momento de rotação que tomba o corpo.",
-    "distractorAnalysis": [
-      "Está incorreta: Se a linha de gravidade passar fora da base, o corpo perde o equilíbrio e cai a menos que haja reação motora.",
-      "Está incorreta: Elevar o centro de gravidade diminui a estabilidade, tornando o equilíbrio muito mais precário.",
-      "Está incorreta: Reduzir a base a um ponto diminui drasticamente a estabilidade (ex.: equilibrar-se num só pé)."
-    ],
-    "nursingApplication": "Fundamento da prevenção de quedas: garantir que a linha de gravidade nunca ultrapassa a base de apoio."
-  },
-  {
-    "id": 1485,
-    "topicId": 1,
-    "question": "Quais são os dois fatores biomecânicos fundamentais que aumentam a estabilidade estática de um corpo?",
-    "options": [
-      "Reduzir a base de sustentação a um único apoio e elevar o centro de gravidade.",
-      "Alargar a base de sustentação e rebaixar o centro de gravidade.",
-      "Aumentar a velocidade de rotação e fechar completamente os olhos.",
-      "Elevar o peso do indivíduo até ao teto através de um cabo tracionado."
-    ],
-    "correctIndex": 1,
-    "explanation": "Quanto mais ampla a base de apoio e mais baixo o centro de gravidade, maior é o ângulo de inclinação necessário para tombar o corpo.",
-    "distractorAnalysis": [
-      "Está incorreta: Reduzir a base e elevar o CG são precisamente os dois fatores que provocam instabilidade e facilitam quedas.",
-      "Está incorreta: Aumentar a velocidade angular diz respeito à dinâmica e fechar os olhos reduz o controlo vestibular/visual.",
-      "Está incorreta: Suspender o corpo por cabos altera o sistema para suporte suspenso, não sendo apoio no solo."
-    ],
-    "nursingApplication": "Regra de ouro ergonómica: fletir ligeiramente os joelhos e afastar os pés ao mobilizar cargas."
-  },
-  {
-    "id": 1486,
-    "topicId": 1,
-    "question": "Porque é que o uso de um andarilho ou canadianas melhora significativamente o equilíbrio de um utente com marcha instável?",
-    "options": [
-      "Porque reduz o peso corporal do utente para metade através de um campo magnético.",
-      "Porque anula completamente o atrito entre o calçado e o piso do corredor.",
-      "Porque aumenta a área poligonal da base de sustentação, tornando muito mais difícil que a linha de gravidade saia para fora dela.",
-      "Porque desloca o centro de gravidade do corpo para a cavidade craniana superior."
-    ],
-    "correctIndex": 2,
-    "explanation": "Ao acrescentar apoios periféricos no solo, a base de sustentação alarga-se em várias vezes a área dos pés isolados.",
-    "distractorAnalysis": [
-      "Está incorreta: Dispositivos mecânicos de apoio transmitem forças ao solo, mas não anulam o peso da massa corporal.",
-      "Está incorreta: O atrito nos pés e ponteiras de borracha é mantido ou aumentado para evitar deslizamentos perigosos.",
-      "Está incorreta: O CG não se desloca para a cabeça; o andarilho permite manter o alinhamento corporal seguro."
-    ],
-    "nursingApplication": "Justifica a prescrição de dispositivos de apoio da marcha na reabilitação e geriatria."
-  },
-  {
-    "id": 1487,
-    "topicId": 1,
-    "question": "Quando uma pessoa se inclina para a frente para apanhar um objeto do chão mantendo os joelhos completamente esticados, o que acontece ao centro de gravidade do tronco?",
-    "options": [
-      "O CG do tronco desaparece temporariamente da estrutura corporal.",
-      "O momento de rotação sobre a coluna lombar torna-se estritamente nulo.",
-      "A gravidade terrestre deixa de atuar sobre a massa do tronco durante a inclinação.",
-      "O CG do tronco projeta-se muito para a frente, gerando um enorme braço de momento sobre as vértebras lombares (L5-S1)."
-    ],
-    "correctIndex": 3,
-    "explanation": "Ao projetar o tronco para a frente, a distância horizontal (braço de alavanca) entre a carga e L5-S1 aumenta, multiplicando a tensão muscular lombar.",
-    "distractorAnalysis": [
-      "Está incorreta: O centro de gravidade é uma propriedade geométrica da distribuição de massa e nunca desaparece.",
-      "Está incorreta: O momento sobre a lombar aumenta drasticamente (M = P · b), e nunca se anula nesta postura inadequada.",
-      "Está incorreta: A gravidade atua de forma constante e permanente sobre todo o corpo."
-    ],
-    "nursingApplication": "Explica as lesões musculoesqueléticas lombares resultantes de posturas incorretas de flexão do tronco."
-  },
-  {
-    "id": 1488,
-    "topicId": 1,
-    "question": "Para levantar com segurança uma carga pesada pousada no chão, qual é a postura ergonomicamente correta com base na Biofísica?",
-    "options": [
-      "Fletir os joelhos mantendo as costas direitas e a carga o mais junto possível ao corpo, reduzindo o braço de alavanca.",
-      "Manter os joelhos perfeitamente rígidos e curvar a coluna lombar a noventa graus com a carga longe.",
-      "Elevar a carga com os membros superiores esticados para a frente à distância de um metro.",
-      "Girar rapidamente o tronco em torção axial enquanto se faz a força máxima de elevação."
-    ],
-    "correctIndex": 0,
-    "explanation": "Manter a carga junto ao corpo reduz o braço de momento 'b' da resistência sobre a coluna lombar, minimizando a força muscular requerida.",
-    "distractorAnalysis": [
-      "Está incorreta: Curvar a lombar com joelhos rígidos maximiza o braço de momento e a pressão sobre os discos intervertebrais.",
-      "Está incorreta: Segurar a carga longe do corpo aumenta o braço de alavanca, multiplicando o momento resistente e o risco de lesão.",
-      "Está incorreta: Movimentos combinados de flexão e torção sob carga geram forças cortantes destrutivas no anel fibroso discal."
-    ],
-    "nursingApplication": "Princípio biomecânico basilar da movimentação manual de cargas para proteção da saúde do profissional."
-  },
-  {
-    "id": 1489,
-    "topicId": 1,
-    "question": "Considerando a distribuição anatómica de massa, de que forma a posição do Centro de Gravidade (CG) difere tipicamente entre homens, mulheres e crianças na postura ereta?",
-    "options": [
-      "É rigorosamente idêntico ao milímetro em todos os seres humanos independentemente da idade e do sexo.",
-      "É ligeiramente mais baixo nas mulheres (maior largura pélvica), mais alto nos homens (maior massa na cintura escapular) e marcadamente mais elevado nas crianças pequenas devido à desproporção da cabeça.",
-      "Nas crianças situa-se junto aos calcanhares e nos adultos situa-se na garganta.",
-      "Nas mulheres situa-se acima dos ombros e nos homens situa-se abaixo dos joelhos."
-    ],
-    "correctIndex": 1,
-    "explanation": "Diferenças na morfologia esquelética e na distribuição de massa alteram a altura do CG: ~55% da altura nas mulheres adultas, ~57% nos homens e mais alto nas crianças (cabeça proporcionalmente maior).",
-    "distractorAnalysis": [
-      "Está incorreta: A posição do CG varia com a proporção biométrica e distribuição das massas corporais.",
-      "Está incorreta: Nas crianças a cabeça é desproporcionalmente pesada, elevando o CG e tornando-as mais instáveis.",
-      "Está incorreta: O CG em ambos os sexos situa-se na região pélvico-abdominal, diferindo ligeiramente em altura relativa."
-    ],
-    "nursingApplication": "Explica por que as crianças pequenas têm maior tendência a desequilíbrios e quedas cefálicas."
-  },
-  {
-    "id": 1490,
-    "topicId": 1,
-    "question": "Como se define o 'Ângulo Crítico de Tombamento' na avaliação da estabilidade estática de um corpo apoiado sobre uma superfície plana horizontal?",
-    "options": [
-      "O ângulo de noventa graus em que todos os corpos perdem a sua massa inercial.",
-      "O ângulo formado entre o raio de luz solar e o meridiano do local de apoio.",
-      "O ângulo limite de inclinação a partir do qual a Linha de Gravidade ultrapassa o bordo da base de sustentação, momento a partir do qual a gravidade gera um binário que derruba o corpo.",
-      "A temperatura limite em que o corpo sólido funde para o estado líquido sob atrito."
-    ],
-    "correctIndex": 2,
-    "explanation": "Enquanto a linha de gravidade cai dentro da base, o peso gera momento restaurador; ao ultrapassar o bordo (ângulo crítico), o momento torna-se desestabilizador e o corpo tomba.",
-    "distractorAnalysis": [
-      "Está incorreta: A inclinação mecânica não anula a massa inercial do corpo material.",
-      "Está incorreta: Ângulo de incidência solar pertence à óptica e astronomia, sem relação com estabilidade estática.",
-      "Está incorreta: Fusão de materiais é uma transição termodinâmica de fase, não o ângulo de tombamento mecânico."
-    ],
-    "nursingApplication": "Determina a inclinação máxima segura a que uma cadeira de rodas ou equipamento hospitalar pode ser sujeito sem capotar."
-  },
-  {
-    "id": 1491,
-    "topicId": 1,
-    "question": "O que é o Centro de Gravidade (CG) de um corpo humano ou objeto material?",
-    "options": [
-      "O ponto onde a temperatura corporal atinge o seu valor mais elevado durante o dia.",
-      "A extremidade mais distal do membro inferior em contacto com o solo.",
-      "A área poligonal de contacto formada pelos pés sobre a superfície de apoio.",
-      "O ponto imaginário de aplicação da resultante de todas as forças gravíticas paralelas que atuam sobre a massa do corpo."
-    ],
-    "correctIndex": 3,
-    "explanation": "O CG é o centro de massa ponderado pela gravidade onde se considera concentrado todo o peso do corpo para fins estáticos.",
-    "distractorAnalysis": [
-      "Está incorreta: O CG é um ponto mecânico de equilíbrio de massa, sem relação direta com o pico de temperatura metabólica.",
-      "Está incorreta: A extremidade dos pés define a base de sustentação, não o centro de gravidade do corpo.",
-      "Está incorreta: A área de contacto com o piso define a Base de Sustentação (BS), e não o Centro de Gravidade (CG)."
-    ],
-    "nursingApplication": "Determinar o CG é crucial para avaliar o risco de perda de equilíbrio e quedas em utentes."
-  },
-  {
-    "id": 1492,
-    "topicId": 1,
-    "question": "Onde se localiza aproximadamente o Centro de Gravidade do corpo humano de um adulto em posição ortostática neutra?",
-    "options": [
-      "No interior da bacia pélvica, na linha média, imediatamente anterior à 2.ª vértebra sagrada (S2).",
-      "No centro da cabeça, exatamente ao nível da cavidade craniana frontal.",
-      "Na articulação de ambos os joelhos junto aos meniscos articulares.",
-      "Na ponta dos dedos dos pés quando apoiados no solo horizontal."
-    ],
-    "correctIndex": 0,
-    "explanation": "Em postura anatómica ereta de repouso, o CG humano situa-se anatomicamente na pelve, à frente de S2 (~55% a 57% da altura total).",
-    "distractorAnalysis": [
-      "Está incorreta: O CG na cabeça tornaria o corpo extremamente instável e com tendência imediata a tombar.",
-      "Está incorreta: O CG situa-se acima dos joelhos, na região pélvica sagrada.",
-      "Está incorreta: A ponta dos pés faz parte da base de sustentação no solo, situando-se muito abaixo do CG corporal."
-    ],
-    "nursingApplication": "Ponto de referência fundamental para todas as técnicas de mobilização e ergonomia postural."
-  },
-  {
-    "id": 1493,
-    "topicId": 1,
-    "question": "Como se define a 'Base de Sustentação' (BS) de um corpo em equilíbrio sobre uma superfície?",
-    "options": [
-      "A distância vertical medida entre o solo e o centro de gravidade do indivíduo.",
-      "A área poligonal delimitada pelos bordos externos de todos os pontos de apoio em contacto com o solo.",
-      "A massa total do corpo dividida pelo volume do calçado utilizado.",
-      "O coeficiente de atrito cinético medido entre a pele e o colchão do leito."
-    ],
-    "correctIndex": 1,
-    "explanation": "A BS é a área geométrica convexa formada pela união dos contornos externos dos apoios (ex.: os dois pés e o espaço entre eles).",
-    "distractorAnalysis": [
-      "Está incorreta: A distância vertical ao solo é a altura do centro de gravidade (h_CG), não a base de sustentação.",
-      "Está incorreta: Massa dividida por volume é densidade (massa volúmica), e não base de apoio.",
-      "Está incorreta: Coeficiente de atrito mede a adesão superficial, não a área geométrica da base de sustentação."
-    ],
-    "nursingApplication": "Aumentar a base de sustentação (afastar os pés) amplia a margem de estabilidade postural."
-  },
-  {
-    "id": 1494,
-    "topicId": 1,
-    "question": "Qual é a condição geométrica essencial para que um corpo humano em repouso permaneça em equilíbrio estável sem cair?",
-    "options": [
-      "A linha de gravidade tem de passar fora da base de sustentação na direção dos calcanhares.",
-      "O centro de gravidade tem de ser elevado até à altura máxima possível dos ombros.",
-      "A Linha de Gravidade (vertical que passa no CG) tem de projetar-se rigorosamente no interior da Base de Sustentação.",
-      "A área da base de sustentação tem de ser reduzida a um único ponto milimétrico."
-    ],
-    "correctIndex": 2,
-    "explanation": "Se a vertical do CG sair para fora da área da base de sustentação, o peso gera um momento de rotação que tomba o corpo.",
-    "distractorAnalysis": [
-      "Está incorreta: Se a linha de gravidade passar fora da base, o corpo perde o equilíbrio e cai a menos que haja reação motora.",
-      "Está incorreta: Elevar o centro de gravidade diminui a estabilidade, tornando o equilíbrio muito mais precário.",
-      "Está incorreta: Reduzir a base a um ponto diminui drasticamente a estabilidade (ex.: equilibrar-se num só pé)."
-    ],
-    "nursingApplication": "Fundamento da prevenção de quedas: garantir que a linha de gravidade nunca ultrapassa a base de apoio."
-  },
-  {
-    "id": 1495,
-    "topicId": 1,
-    "question": "Quais são os dois fatores biomecânicos fundamentais que aumentam a estabilidade estática de um corpo?",
-    "options": [
-      "Reduzir a base de sustentação a um único apoio e elevar o centro de gravidade.",
-      "Aumentar a velocidade de rotação e fechar completamente os olhos.",
-      "Elevar o peso do indivíduo até ao teto através de um cabo tracionado.",
-      "Alargar a base de sustentação e rebaixar o centro de gravidade."
-    ],
-    "correctIndex": 3,
-    "explanation": "Quanto mais ampla a base de apoio e mais baixo o centro de gravidade, maior é o ângulo de inclinação necessário para tombar o corpo.",
-    "distractorAnalysis": [
-      "Está incorreta: Reduzir a base e elevar o CG são precisamente os dois fatores que provocam instabilidade e facilitam quedas.",
-      "Está incorreta: Aumentar a velocidade angular diz respeito à dinâmica e fechar os olhos reduz o controlo vestibular/visual.",
-      "Está incorreta: Suspender o corpo por cabos altera o sistema para suporte suspenso, não sendo apoio no solo."
-    ],
-    "nursingApplication": "Regra de ouro ergonómica: fletir ligeiramente os joelhos e afastar os pés ao mobilizar cargas."
-  },
-  {
-    "id": 1496,
-    "topicId": 1,
-    "question": "Porque é que o uso de um andarilho ou canadianas melhora significativamente o equilíbrio de um utente com marcha instável?",
-    "options": [
-      "Porque aumenta a área poligonal da base de sustentação, tornando muito mais difícil que a linha de gravidade saia para fora dela.",
-      "Porque reduz o peso corporal do utente para metade através de um campo magnético.",
-      "Porque anula completamente o atrito entre o calçado e o piso do corredor.",
-      "Porque desloca o centro de gravidade do corpo para a cavidade craniana superior."
-    ],
-    "correctIndex": 0,
-    "explanation": "Ao acrescentar apoios periféricos no solo, a base de sustentação alarga-se em várias vezes a área dos pés isolados.",
-    "distractorAnalysis": [
-      "Está incorreta: Dispositivos mecânicos de apoio transmitem forças ao solo, mas não anulam o peso da massa corporal.",
-      "Está incorreta: O atrito nos pés e ponteiras de borracha é mantido ou aumentado para evitar deslizamentos perigosos.",
-      "Está incorreta: O CG não se desloca para a cabeça; o andarilho permite manter o alinhamento corporal seguro."
-    ],
-    "nursingApplication": "Justifica a prescrição de dispositivos de apoio da marcha na reabilitação e geriatria."
-  },
-  {
-    "id": 1497,
-    "topicId": 1,
-    "question": "Quando uma pessoa se inclina para a frente para apanhar um objeto do chão mantendo os joelhos completamente esticados, o que acontece ao centro de gravidade do tronco?",
-    "options": [
-      "O CG do tronco desaparece temporariamente da estrutura corporal.",
-      "O CG do tronco projeta-se muito para a frente, gerando um enorme braço de momento sobre as vértebras lombares (L5-S1).",
-      "O momento de rotação sobre a coluna lombar torna-se estritamente nulo.",
-      "A gravidade terrestre deixa de atuar sobre a massa do tronco durante a inclinação."
-    ],
-    "correctIndex": 1,
-    "explanation": "Ao projetar o tronco para a frente, a distância horizontal (braço de alavanca) entre a carga e L5-S1 aumenta, multiplicando a tensão muscular lombar.",
-    "distractorAnalysis": [
-      "Está incorreta: O centro de gravidade é uma propriedade geométrica da distribuição de massa e nunca desaparece.",
-      "Está incorreta: O momento sobre a lombar aumenta drasticamente (M = P · b), e nunca se anula nesta postura inadequada.",
-      "Está incorreta: A gravidade atua de forma constante e permanente sobre todo o corpo."
-    ],
-    "nursingApplication": "Explica as lesões musculoesqueléticas lombares resultantes de posturas incorretas de flexão do tronco."
-  },
-  {
-    "id": 1498,
-    "topicId": 1,
-    "question": "Para levantar com segurança uma carga pesada pousada no chão, qual é a postura ergonomicamente correta com base na Biofísica?",
-    "options": [
-      "Manter os joelhos perfeitamente rígidos e curvar a coluna lombar a noventa graus com a carga longe.",
-      "Elevar a carga com os membros superiores esticados para a frente à distância de um metro.",
-      "Fletir os joelhos mantendo as costas direitas e a carga o mais junto possível ao corpo, reduzindo o braço de alavanca.",
-      "Girar rapidamente o tronco em torção axial enquanto se faz a força máxima de elevação."
-    ],
-    "correctIndex": 2,
-    "explanation": "Manter a carga junto ao corpo reduz o braço de momento 'b' da resistência sobre a coluna lombar, minimizando a força muscular requerida.",
-    "distractorAnalysis": [
-      "Está incorreta: Curvar a lombar com joelhos rígidos maximiza o braço de momento e a pressão sobre os discos intervertebrais.",
-      "Está incorreta: Segurar a carga longe do corpo aumenta o braço de alavanca, multiplicando o momento resistente e o risco de lesão.",
-      "Está incorreta: Movimentos combinados de flexão e torção sob carga geram forças cortantes destrutivas no anel fibroso discal."
-    ],
-    "nursingApplication": "Princípio biomecânico basilar da movimentação manual de cargas para proteção da saúde do profissional."
-  },
-  {
-    "id": 1499,
-    "topicId": 1,
-    "question": "Considerando a distribuição anatómica de massa, de que forma a posição do Centro de Gravidade (CG) difere tipicamente entre homens, mulheres e crianças na postura ereta?",
-    "options": [
-      "É rigorosamente idêntico ao milímetro em todos os seres humanos independentemente da idade e do sexo.",
-      "Nas crianças situa-se junto aos calcanhares e nos adultos situa-se na garganta.",
-      "Nas mulheres situa-se acima dos ombros e nos homens situa-se abaixo dos joelhos.",
-      "É ligeiramente mais baixo nas mulheres (maior largura pélvica), mais alto nos homens (maior massa na cintura escapular) e marcadamente mais elevado nas crianças pequenas devido à desproporção da cabeça."
-    ],
-    "correctIndex": 3,
-    "explanation": "Diferenças na morfologia esquelética e na distribuição de massa alteram a altura do CG: ~55% da altura nas mulheres adultas, ~57% nos homens e mais alto nas crianças (cabeça proporcionalmente maior).",
-    "distractorAnalysis": [
-      "Está incorreta: A posição do CG varia com a proporção biométrica e distribuição das massas corporais.",
-      "Está incorreta: Nas crianças a cabeça é desproporcionalmente pesada, elevando o CG e tornando-as mais instáveis.",
-      "Está incorreta: O CG em ambos os sexos situa-se na região pélvico-abdominal, diferindo ligeiramente em altura relativa."
-    ],
-    "nursingApplication": "Explica por que as crianças pequenas têm maior tendência a desequilíbrios e quedas cefálicas."
-  },
-  {
-    "id": 1500,
-    "topicId": 1,
-    "question": "Como se define o 'Ângulo Crítico de Tombamento' na avaliação da estabilidade estática de um corpo apoiado sobre uma superfície plana horizontal?",
-    "options": [
-      "O ângulo limite de inclinação a partir do qual a Linha de Gravidade ultrapassa o bordo da base de sustentação, momento a partir do qual a gravidade gera um binário que derruba o corpo.",
-      "O ângulo de noventa graus em que todos os corpos perdem a sua massa inercial.",
-      "O ângulo formado entre o raio de luz solar e o meridiano do local de apoio.",
-      "A temperatura limite em que o corpo sólido funde para o estado líquido sob atrito."
-    ],
-    "correctIndex": 0,
-    "explanation": "Enquanto a linha de gravidade cai dentro da base, o peso gera momento restaurador; ao ultrapassar o bordo (ângulo crítico), o momento torna-se desestabilizador e o corpo tomba.",
-    "distractorAnalysis": [
-      "Está incorreta: A inclinação mecânica não anula a massa inercial do corpo material.",
-      "Está incorreta: Ângulo de incidência solar pertence à óptica e astronomia, sem relação com estabilidade estática.",
-      "Está incorreta: Fusão de materiais é uma transição termodinâmica de fase, não o ângulo de tombamento mecânico."
-    ],
-    "nursingApplication": "Determina a inclinação máxima segura a que uma cadeira de rodas ou equipamento hospitalar pode ser sujeito sem capotar."
+    "nursingApplication": "A grande síntese ergonómica e biomecânica do Tópico 1 de Biofísica para a prática clínica e vida profissional de enfermagem."
   }
 ];

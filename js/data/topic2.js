@@ -1,9510 +1,3810 @@
 /**
  * BANCO DE QUESTÕES CERTIFICADAS - TÓPICO 2
  * Elasticidade dos Corpos e Resistência dos Materiais
- * Alinhado estritamente com os 44 slides do PowerPoint (1BF)
+ * Alinhado estritamente com os slides do PowerPoint (1BF - Prof. Paulo Pereira)
  * Foco estrito em Física/Biofísica sem jargão clínico prévio de Enfermagem
- * Total de Questões: 500 (IDs 2001 a 2500)
+ * Total de Questões: 200 (IDs 2001 a 2200)
  */
 
 const TOPIC_2_QUESTIONS = [
   {
     "id": 2001,
     "topicId": 2,
-    "question": "Qual é a definição exata de Reologia no estudo da Biofísica?",
+    "question": "Qual é a definição exata de Reologia apresentada no Slide 3 de Biofísica?",
     "options": [
-      "O estudo da velocidade de emissão de partículas alfa em elementos radioativos de transição.",
-      "O ramo da física que estuda as reações dos corpos à ação de forças deformadoras aplicadas sobre a sua estrutura.",
-      "A área que analisa exclusivamente o campo gravitacional gerado por massas puntiformes no vácuo.",
-      "A parte da ótica geométrica que investiga a refração da luz branca em prismas triangulares."
+      "Estuda a composição química e o metabolismo oxidativo das mitocôndrias.",
+      "Estuda as reações dos corpos a forças deformadoras.",
+      "Analisa a propagação de ondas eletromagnéticas de raios X no vácuo.",
+      "Mede a atividade elétrica dos neurónios motores periféricos."
     ],
     "correctIndex": 1,
-    "explanation": "A Reologia investiga como os materiais se deformam e fluem sob a ação de forças mecânicas externas.",
+    "explanation": "O Slide 3 define textualmente: 'Reologia: Estuda as reações dos corpos a forças deformadoras'.",
     "distractorAnalysis": [
-      "Está incorreta: Emissões alfa pertencem à física nuclear e radioatividade, não à reologia.",
-      "Está incorreta: Campos gravitacionais de massas no vácuo pertencem à gravitação universal de Newton.",
-      "Está incorreta: Refração da luz em prismas é o domínio da ótica ondulatória e geométrica."
+      "Está incorreta: A respiração celular e metabolismo oxidativo pertencem à bioquímica, não à reologia.",
+      "Está incorreta: Propagação de ondas eletromagnéticas é objeto de estudo da ótica e radiação médica.",
+      "Está incorreta: A atividade elétrica neural é estudada na neurofisiologia e bioeletrogénese."
     ],
-    "nursingApplication": "Permite compreender como os biomateriais e tecidos de suporte respondem a cargas mecânicas."
+    "nursingApplication": "Permite compreender como os tecidos corporais reagem mecanicamente às forças aplicadas no dia a dia."
   },
   {
     "id": 2002,
     "topicId": 2,
-    "question": "O que é uma Força Deformadora na mecânica dos materiais?",
+    "question": "O que caracteriza os 'Sólidos indeformáveis' de acordo com o Slide 4 de Biofísica?",
     "options": [
-      "Uma força que apenas desloca o corpo no espaço sem provocar qualquer alteração na sua forma ou dimensões.",
-      "Uma força que anula a temperatura absoluta do sistema transformando o sólido em gás ideal.",
-      "Uma força externa que altera as distâncias relativas entre as partículas ou moléculas que constituem o corpo.",
-      "Uma força microscópica que atua exclusivamente no interior do núcleo de átomos pesados."
+      "Sofrem deformação diretamente proporcional ao quadrado da temperatura.",
+      "Deformam-se facilmente como fluidos de alta viscosidade.",
+      "Nunca sofrem deformação perante qualquer força aplicada.",
+      "Dissipam energia mecânica sob a forma de histerese intensa."
     ],
     "correctIndex": 2,
-    "explanation": "Forças deformadoras produzem tensões internas que modificam a geometria ou volume do sólido.",
+    "explanation": "O Slide 4 indica categoricamente: 'Sólidos indeformáveis: Nunca sofrem deformação'.",
     "distractorAnalysis": [
-      "Está incorreta: Forças que apenas aceleram o corpo em bloco sem o deformar atuam como forças puramente translacionais.",
-      "Está incorreta: Forças mecânicas não anulam a temperatura absoluta nem criam gases ideais.",
-      "Está incorreta: Forças no núcleo atómico são forças nucleares fortes e fracas, não forças de deformação macroscópicas."
+      "Está incorreta: Os sólidos indeformáveis não sofrem qualquer deformação, nem térmica nem mecânica.",
+      "Está incorreta: Fluidos viscosos são corpos deformáveis com escoamento contínuo (Slide 11).",
+      "Está incorreta: A histerese é uma característica exclusiva de corpos viscoelásticos (Slide 19)."
     ],
-    "nursingApplication": "Reconhece que qualquer pressão excessiva exercida sobre uma estrutura produz deformação mecânica."
+    "nursingApplication": "Constitui um modelo teórico ideal para simplificar os cálculos de alavancas antes de analisar os tecidos reais."
   },
   {
     "id": 2003,
     "topicId": 2,
-    "question": "O que é a Elasticidade de um corpo sólido?",
+    "question": "Na realidade física dos tecidos biológicos humanos, existem sólidos verdadeiramente indeformáveis?",
     "options": [
-      "A tendência de um corpo para manter permanentemente a deformação máxima sem nunca mais recuperar.",
-      "A capacidade de um corpo se dissolver espontaneamente em água destilada a vinte graus Celsius.",
-      "A resistência que um material oferece à passagem de uma corrente elétrica de alta voltagem.",
-      "A propriedade física responsável pelo retorno de um corpo à sua forma original após cessar a força deformadora."
+      "Sim, todos os ossos do corpo humano são perfeitamente indeformáveis.",
+      "Sim, o tendão do calcâneo nunca se deforma sob qualquer tensão.",
+      "Sim, o dente molar humano é um sólido indeformável infinito.",
+      "Não, o sólido indeformável é um modelo teórico; todos os materiais e tecidos reais sofrem deformação quando sujeitos a forças."
     ],
     "correctIndex": 3,
-    "explanation": "A elasticidade mede a capacidade de recuperação elástica reversível da geometria inicial quando as forças cessam.",
+    "explanation": "Conforme esclarecido no Slide 15 ('Sólidos de Euclides: Modelos teóricos indeformáveis'), todos os corpos e materiais reais sofrem algum grau de alteração dimensional perante forças mecânicas suficientes.",
     "distractorAnalysis": [
-      "Está incorreta: Manter permanentemente a deformação máxima caracteriza a plasticidade e não a elasticidade.",
-      "Está incorreta: Dissolução em água é uma propriedade química de solubilidade, alheia à elasticidade mecânica.",
-      "Está incorreta: A oposição à corrente elétrica é a resistividade elétrica em Ohms, não a elasticidade física."
+      "Está incorreta: Os ossos sofrem microdeformações elásticas sob carga diária (Slide 44).",
+      "Está incorreta: Os tendões alongam e transmitem tração mecânica com deformação mensurável (Slide 31).",
+      "Está incorreta: O esmalte dentário deforma microscopicamente e pode fraturar sob esforço excessivo."
     ],
-    "nursingApplication": "Explica o comportamento de molas de equipamentos hospitalares e de tecidos de suporte."
+    "nursingApplication": "Alerta o enfermeiro para o facto de que nenhum tecido biológico é invulnerável a pressões e cargas excessivas."
   },
   {
     "id": 2004,
     "topicId": 2,
-    "question": "Qual é a diferença fundamental entre uma deformação elástica e uma deformação plástica?",
+    "question": "Qual é o objetivo prático do estudo da Reologia no curso de Enfermagem?",
     "options": [
-      "A deformação elástica é reversível (o corpo recupera a forma original); a deformação plástica é permanente e irreversível.",
-      "A deformação elástica é permanente; a deformação plástica recupera a forma original instantaneamente.",
-      "Ambas as deformações são rigorosamente reversíveis e obedecem à Lei de Hooke até à fratura.",
-      "A deformação elástica só ocorre em gases e a deformação plástica ocorre exclusivamente no vácuo."
+      "Compreender como os tecidos do corpo (ossos, músculos, cartilagens e pele) respondem a cargas mecânicas, pressões e deformações.",
+      "Aprender a calcular a velocidade de saturação do oxigénio na hemoglobina.",
+      "Prescrever de forma autónoma fármacos anti-inflamatórios e analgésicos.",
+      "Desenhar circuitos elétricos integrados para monitores de sinais vitais."
     ],
     "correctIndex": 0,
-    "explanation": "Na região elástica o corpo recupera a forma ao retirar a carga; na região plástica a alteração dimensional persiste.",
+    "explanation": "A Reologia fornece a fundamentação física para compreender a elasticidade dos tecidos de suporte, a absorção de impactos articulares e a prevenção de lesões por pressão e deformação cutânea.",
     "distractorAnalysis": [
-      "Está incorreta: A afirmação inverte os conceitos: o comportamento plástico é que é permanente e não reversível.",
-      "Está incorreta: A deformação plástica não é reversível nem obedece à linearidade da Lei de Hooke.",
-      "Está incorreta: Tanto a deformação elástica como a plástica são comportamentos mecânicos característicos de corpos sólidos."
+      "Está incorreta: Saturação de oxigénio é uma temática bioquímica e respiratória, não da reologia mecânica.",
+      "Está incorreta: A prescrição farmacológica médica decorre da farmacologia clínica, não da definição da reologia.",
+      "Está incorreta: Desenho de circuitos de hardware é da competência da engenharia eletrotécnica e biomédica."
     ],
-    "nursingApplication": "Fundamental para entender quando uma sobrecarga mecânica causa lesão estrutural irreversível."
+    "nursingApplication": "Fundamenta as intervenções de posicionamento e alívio de cargas nos tecidos vulneráveis dos utentes."
   },
   {
     "id": 2005,
     "topicId": 2,
-    "question": "O que acontece à energia mecânica fornecida a uma mola perfeitamente elástica durante a sua deformação?",
+    "question": "No âmbito da Reologia (Slide 3), as forças que atuam sobre os corpos são especificamente designadas por:",
     "options": [
-      "Dissipa-se totalmente e de forma irreversível sob a forma de radiação cósmica de fundo.",
-      "Fica armazenada sob a forma de energia potencial elástica e é devolvida integralmente na descompressão.",
-      "É convertida em massa atómica adicional, aumentando o peso da mola em noventa por cento.",
-      "Desaparece do universo sem deixar qualquer vestígio físico, violando o princípio da conservação."
+      "Forças gravitacionais cósmicas.",
+      "Forças deformadoras.",
+      "Forças atómicas radioativas.",
+      "Forças eletrostáticas de atrito iónico."
     ],
     "correctIndex": 1,
-    "explanation": "Sólidos elásticos ideais armazenam o trabalho mecânico como energia potencial elástica reversível.",
+    "explanation": "O Slide 3 explicita que a Reologia analisa as reações dos materiais sob a ação de 'forças deformadoras'.",
     "distractorAnalysis": [
-      "Está incorreta: A energia não se transforma em radiação cósmica; permanece no sistema mecânico.",
-      "Está incorreta: A energia mecânica não se converte em massa mensurável de acordo com as leis da mecânica clássica.",
-      "Está incorreta: A energia total conserva-se estritamente, sendo devolvida pelo corpo ao recuperar a forma inicial."
+      "Está incorreta: Forças gravitacionais cósmicas regem órbitas planetárias na astrofísica, não a reologia dos materiais.",
+      "Está incorreta: Forças radioativas estão ligadas à desintegração do núcleo, não a esforços deformadores mecânicos.",
+      "Está incorreta: Forças eletrostáticas microscópicas não definem a denominação funcional dada no Slide 3."
     ],
-    "nursingApplication": "Princípio físico de colchões e sistemas de suspensão que absorvem e devolvem cargas mecânicas."
+    "nursingApplication": "Ajuda a focar a atenção nas solicitações mecânicas externas que alteram a forma dos tecidos do corpo."
   },
   {
     "id": 2006,
     "topicId": 2,
-    "question": "Qual dos seguintes materiais do quotidiano é um exemplo típico de comportamento predominantemente elástico com grande retorno de forma?",
+    "question": "De acordo com a síntese do Slide 15, o que acontece à distância entre as partículas de um Sólido de Euclides (modelo indeformável)?",
     "options": [
-      "Uma barra de plasticina moldada com os dedos.",
-      "Um pedaço de argila húmida fresca.",
-      "Uma mola de aço espiral.",
-      "Uma porção de massa de pão levedada."
+      "Diminui em 50% sob qualquer força compressiva.",
+      "Aumenta exponencialmente com o tempo de aplicação da força.",
+      "A distância interpartículas é invariável sob qualquer força.",
+      "Oscila ciclicamente entre valores positivos e negativos."
     ],
     "correctIndex": 2,
-    "explanation": "As molas de aço metálicas exibem comportamento elástico exemplar, recuperando a forma após serem comprimidas.",
+    "explanation": "O Slide 15 define os Sólidos de Euclides como: 'Modelos teóricos indeformáveis; distância interpartículas invariável sob qualquer força'.",
     "distractorAnalysis": [
-      "Está incorreta: A plasticina é um material plástico clássico que mantém a forma deformada sem retornar.",
-      "Está incorreta: A argila húmida deforma-se plasticamente sob pressão e não recupera a geometria original.",
-      "Está incorreta: A massa de pão é um corpo plastoviscoelástico que retém deformações permanentes sob tensão."
+      "Está incorreta: Se a distância diminuísse, haveria encurtamento dimensional e o sólido seria deformável.",
+      "Está incorreta: Aumento contínuo da distância caracterizaria escoamento fluido viscoso, não rigidez indeformável.",
+      "Está incorreta: Oscilações de distância caracterizam ondas elásticas ou térmicas, violando a hipótese estática indeformável."
     ],
-    "nursingApplication": "Molas de aço são a base de balanças mecânicas e dinamómetros de precisão hospitalares."
+    "nursingApplication": "Consolida a definição matemática rigorosa de rigidez teórica perfeita."
   },
   {
     "id": 2007,
     "topicId": 2,
-    "question": "Quando uma força deformadora ultrapassa o limite elástico de um material real, que tipo de deformação passa a ocorrer?",
+    "question": "Por que razão a Reologia dos materiais é indispensável para o estudo do aparelho locomotor humano?",
     "options": [
-      "Deformação de Euclides perfeitamente indeformável.",
-      "Retorno instantâneo e espontâneo à forma inicial a velocidade infinita.",
-      "Anulação absoluta de todas as forças gravíticas sobre o corpo.",
-      "Deformação plástica permanente irreversível."
+      "Porque os ossos são constituídos inteiramente por gases perfeitos em expansão.",
+      "Porque as articulações humanas nunca suportam qualquer peso durante a vida.",
+      "Porque o corpo humano opera no vácuo sem forças externas aplicadas.",
+      "Porque os ossos, cartilagens, músculos e tendões sofrem deformações mecânicas contínuas sob as forças da gravidade e da marcha."
     ],
     "correctIndex": 3,
-    "explanation": "Ultrapassado o limite elástico (limiar de elasticidade), as ligações moleculares cedem e a deformação torna-se plástica.",
+    "explanation": "Durante a marcha e a postura de pé, os ossos suportam compressão e flexão, os tendões sofrem tração e as cartilagens amortecem cargas. O estudo dessas reações deformadoras é a essência da Reologia biomecânica.",
     "distractorAnalysis": [
-      "Está incorreta: Sólidos de Euclides são modelos teóricos indeformáveis; materiais reais deformam-se plasticamente.",
-      "Está incorreta: Acima do limite elástico o corpo já não regressa à forma original, ficando deformado.",
-      "Está incorreta: A gravidade continua a atuar plenamente sobre a massa do corpo material."
+      "Está incorreta: Os ossos são tecidos sólidos mineralizados compostos e não gases perfeitos.",
+      "Está incorreta: As articulações suportam forças que atingem várias vezes o peso corporal total a cada passo.",
+      "Está incorreta: O organismo humano atua imerso na atmosfera terrestre sob a atração gravitacional permanente."
     ],
-    "nursingApplication": "Explica o momento em que um suporte metálico se dobra permanentemente por excesso de carga."
+    "nursingApplication": "Permite aos enfermeiros entender os limites biológicos de tolerância mecânica dos tecidos osteomusculares."
   },
   {
     "id": 2008,
     "topicId": 2,
-    "question": "Se um material se deforma facilmente sob uma força e não regressa à sua forma original após a remoção da carga, esse material diz-se:",
+    "question": "Nos Slides 4 e 5, qual é o contraste inicial estabelecido entre os 'Sólidos indeformáveis' e os 'Sólidos de Hooke'?",
     "options": [
-      "Plástico.",
-      "Perfeitamente elástico.",
-      "Rigidamente indeformável.",
-      "Supercondutor térmico."
+      "Os indeformáveis nunca sofrem deformação, enquanto os de Hooke apresentam deformação proporcional à intensidade da tensão.",
+      "Os indeformáveis são líquidos e os de Hooke são gases rarefeitos.",
+      "Os indeformáveis derretem a 100 ºC e os de Hooke mantêm-se sólidos.",
+      "Ambos nunca sofrem deformação sob qualquer tipo de força."
     ],
     "correctIndex": 0,
-    "explanation": "Os corpos plásticos sofrem deformações permanentes irreversíveis, não recuperando a sua forma inicial.",
+    "explanation": "O Slide 4 indica que os sólidos indeformáveis 'nunca sofrem deformação', ao passo que o Slide 5 introduz os Sólidos de Hooke como aqueles cuja 'deformação é proporcional à intensidade da tensão'.",
     "distractorAnalysis": [
-      "Está incorreta: Um corpo perfeitamente elástico recuperaria a sua forma original quando a força cessasse.",
-      "Está incorreta: Um corpo indeformável não sofreria qualquer deformação perante a força aplicada.",
-      "Está incorreta: Supercondutividade térmica é uma propriedade de transporte de calor em baixas temperaturas, não de mecânica."
+      "Está incorreta: Ambos são modelos de corpos sólidos, não líquidos ou gases.",
+      "Está incorreta: Transições térmicas de fusão não constam da definição reológica dos slides.",
+      "Está incorreta: Os sólidos de Hooke sofrem deformação mensurável linear proporcional à tensão aplicada."
     ],
-    "nursingApplication": "A plasticina é o exemplo mais intuitivo de corpo com comportamento puramente plástico."
+    "nursingApplication": "Diferenciação basilar entre o comportamento infinitamente rígido teórico e o comportamento elástico real."
   },
   {
     "id": 2009,
     "topicId": 2,
-    "question": "Qual é a definição exata de Reologia no estudo da Biofísica?",
+    "question": "Quanta energia mecânica é absorvida em deformação estrutural por um sólido puramente indeformável?",
     "options": [
-      "O estudo da velocidade de emissão de partículas alfa em elementos radioativos de transição.",
-      "O ramo da física que estuda as reações dos corpos à ação de forças deformadoras aplicadas sobre a sua estrutura.",
-      "A área que analisa exclusivamente o campo gravitacional gerado por massas puntiformes no vácuo.",
-      "A parte da ótica geométrica que investiga a refração da luz branca em prismas triangulares."
+      "Toda a energia mecânica disponível no sistema envolvente.",
+      "Zero Joules, porque o corpo nunca sofre qualquer deformação dimensional.",
+      "Uma quantidade infinita que se dissipa por histerese térmica.",
+      "Metade do seu peso multiplicado pela constante de Hooke."
     ],
     "correctIndex": 1,
-    "explanation": "A Reologia investiga como os materiais se deformam e fluem sob a ação de forças mecânicas externas.",
+    "explanation": "A energia de deformação mecânica depende da variação dimensional sofrida pelo corpo (trabalho da força elástica). Como a deformação é rigorosamente nula, a energia absorvida em deformação é zero.",
     "distractorAnalysis": [
-      "Está incorreta: Emissões alfa pertencem à física nuclear e radioatividade, não à reologia.",
-      "Está incorreta: Campos gravitacionais de massas no vácuo pertencem à gravitação universal de Newton.",
-      "Está incorreta: Refração da luz em prismas é o domínio da ótica ondulatória e geométrica."
+      "Está incorreta: Sem deslocamento relativo das partículas internas, nenhum trabalho interno de deformação é realizado.",
+      "Está incorreta: A histerese só ocorre em materiais viscoelásticos que sofrem deformação dependente do tempo (Slide 19).",
+      "Está incorreta: Sólidos indeformáveis não possuem constante finita de Hooke."
     ],
-    "nursingApplication": "Permite compreender como os biomateriais e tecidos de suporte respondem a cargas mecânicas."
+    "nursingApplication": "Compreensão de que corpos perfeitamente rígidos transmitem impactos sem amortecimento mecânico."
   },
   {
     "id": 2010,
     "topicId": 2,
-    "question": "O que é uma Força Deformadora na mecânica dos materiais?",
+    "question": "Quando cessa a aplicação de uma força sobre um sólido perfeitamente indeformável:",
     "options": [
-      "Uma força que apenas desloca o corpo no espaço sem provocar qualquer alteração na sua forma ou dimensões.",
-      "Uma força que anula a temperatura absoluta do sistema transformando o sólido em gás ideal.",
-      "Uma força externa que altera as distâncias relativas entre as partículas ou moléculas que constituem o corpo.",
-      "Uma força microscópica que atua exclusivamente no interior do núcleo de átomos pesados."
+      "O sólido sofre uma deformação plástica permanente tardia.",
+      "O sólido contrai-se violentamente até se fragmentar.",
+      "Não há qualquer restituição dimensional necessária, pois o corpo nunca foi deformado.",
+      "O sólido flui como um fluido viscoso de Newton."
     ],
     "correctIndex": 2,
-    "explanation": "Forças deformadoras produzem tensões internas que modificam a geometria ou volume do sólido.",
+    "explanation": "Como a forma e as dimensões do sólido indeformável nunca sofreram a menor alteração sob a força aplicada, a cessação da força não envolve qualquer processo de retorno ou recuperação elástica.",
     "distractorAnalysis": [
-      "Está incorreta: Forças que apenas aceleram o corpo em bloco sem o deformar atuam como forças puramente translacionais.",
-      "Está incorreta: Forças mecânicas não anulam a temperatura absoluta nem criam gases ideais.",
-      "Está incorreta: Forças no núcleo atómico são forças nucleares fortes e fracas, não forças de deformação macroscópicas."
+      "Está incorreta: Sólidos indeformáveis nunca acusam deformação plástica.",
+      "Está incorreta: Não há contração por ausência de energia elástica armazenada.",
+      "Está incorreta: Fluidos viscosos escoam continuamente (Slide 11), o oposto de sólidos indeformáveis."
     ],
-    "nursingApplication": "Reconhece que qualquer pressão excessiva exercida sobre uma estrutura produz deformação mecânica."
+    "nursingApplication": "Reforça o caráter conceitual puro do modelo de corpo indeformável na física."
   },
   {
     "id": 2011,
     "topicId": 2,
-    "question": "O que é a Elasticidade de um corpo sólido?",
+    "question": "Qual é a definição formal de 'Elasticidade' apresentada nos Slides 7 e 8 de Biofísica?",
     "options": [
-      "A tendência de um corpo para manter permanentemente a deformação máxima sem nunca mais recuperar.",
-      "A capacidade de um corpo se dissolver espontaneamente em água destilada a vinte graus Celsius.",
-      "A resistência que um material oferece à passagem de uma corrente elétrica de alta voltagem.",
-      "A propriedade física responsável pelo retorno de um corpo à sua forma original após cessar a força deformadora."
+      "Tendência de um fluido biológico para aumentar a sua densidade sob aquecimento.",
+      "Capacidade de um material de reter permanentemente a deformação máxima aplicada.",
+      "Aceleração instantânea adquirida por um corpo em movimento retilíneo uniforme.",
+      "Propriedade responsável pelo retorno de um corpo à sua forma original, aquando do fim da força deformadora."
     ],
     "correctIndex": 3,
-    "explanation": "A elasticidade mede a capacidade de recuperação elástica reversível da geometria inicial quando as forças cessam.",
+    "explanation": "Os Slides 7 e 8 definem textualmente: 'Elasticidade: Propriedade responsável pelo retorno de um corpo à sua forma original, aquando do fim da força deformadora'.",
     "distractorAnalysis": [
-      "Está incorreta: Manter permanentemente a deformação máxima caracteriza a plasticidade e não a elasticidade.",
-      "Está incorreta: Dissolução em água é uma propriedade química de solubilidade, alheia à elasticidade mecânica.",
-      "Está incorreta: A oposição à corrente elétrica é a resistividade elétrica em Ohms, não a elasticidade física."
+      "Está incorreta: Fluidos expandem e diminuem a densidade sob aquecimento, conceito alheio à elasticidade mecânica.",
+      "Está incorreta: Reter permanentemente a deformação é a definição do comportamento plástico (Slide 17).",
+      "Está incorreta: Movimento retilíneo uniforme tem aceleração rigorosamente nula (a = 0)."
     ],
-    "nursingApplication": "Explica o comportamento de molas de equipamentos hospitalares e de tecidos de suporte."
+    "nursingApplication": "A elasticidade da pele e dos pulmões permite a sua retração fisiológica após o estiramento ou inspiração."
   },
   {
     "id": 2012,
     "topicId": 2,
-    "question": "Qual é a diferença fundamental entre uma deformação elástica e uma deformação plástica?",
+    "question": "O que caracteriza os 'Sólidos de Hooke' de acordo com os Slides 5 e 16 de Biofísica?",
     "options": [
-      "A deformação elástica é reversível (o corpo recupera a forma original); a deformação plástica é permanente e irreversível.",
-      "A deformação elástica é permanente; a deformação plástica recupera a forma original instantaneamente.",
-      "Ambas as deformações são rigorosamente reversíveis e obedecem à Lei de Hooke até à fratura.",
-      "A deformação elástica só ocorre em gases e a deformação plástica ocorre exclusivamente no vácuo."
+      "A deformação elástica é diretamente proporcional à intensidade da tensão e há restituição integral da forma original.",
+      "Apenas se deformam a partir de um limiar elevado de tensão mantendo a deformação máxima.",
+      "Não sofrem qualquer restituição da forma original, fluindo indefinidamente com o tempo.",
+      "Apresentam deformação independente da força aplicada que varia com a luz solar."
     ],
     "correctIndex": 0,
-    "explanation": "Na região elástica o corpo recupera a forma ao retirar a carga; na região plástica a alteração dimensional persiste.",
+    "explanation": "O Slide 5 define: 'Deformação proporcional à intensidade da tensão', e o Slide 16 complementa: 'Deformação elástica diretamente proporcional à tensão; restituição integral da forma original após remoção da tensão'.",
     "distractorAnalysis": [
-      "Está incorreta: A afirmação inverte os conceitos: o comportamento plástico é que é permanente e não reversível.",
-      "Está incorreta: A deformação plástica não é reversível nem obedece à linearidade da Lei de Hooke.",
-      "Está incorreta: Tanto a deformação elástica como a plástica são comportamentos mecânicos característicos de corpos sólidos."
+      "Está incorreta: Esta descrição caracteriza os Corpos Plásticos (Slide 17), não os Sólidos de Hooke.",
+      "Está incorreta: Não restituir a forma e fluir continuamente caracteriza os Corpos Viscosos (Slide 18).",
+      "Está incorreta: A resposta mecânica depende estritamente da tensão aplicada e não de fatores fotónicos."
     ],
-    "nursingApplication": "Fundamental para entender quando uma sobrecarga mecânica causa lesão estrutural irreversível."
+    "nursingApplication": "Compreensão de biomateriais com comportamento elástico linear usados em ortóteses e próteses."
   },
   {
     "id": 2013,
     "topicId": 2,
-    "question": "O que acontece à energia mecânica fornecida a uma mola perfeitamente elástica durante a sua deformação?",
+    "question": "Qual é o exemplo físico clássico apresentado no Slide 5 para ilustrar um Sólido de Hooke?",
     "options": [
-      "Dissipa-se totalmente e de forma irreversível sob a forma de radiação cósmica de fundo.",
-      "Fica armazenada sob a forma de energia potencial elástica e é devolvida integralmente na descompressão.",
-      "É convertida em massa atómica adicional, aumentando o peso da mola em noventa por cento.",
-      "Desaparece do universo sem deixar qualquer vestígio físico, violando o princípio da conservação."
+      "Uma barra de plasticina moldada à mão.",
+      "Uma mola.",
+      "Um copo de água e mel.",
+      "Uma porção de massa de pão em repouso."
     ],
     "correctIndex": 1,
-    "explanation": "Sólidos elásticos ideais armazenam o trabalho mecânico como energia potencial elástica reversível.",
+    "explanation": "O Slide 5 apresenta expressamente uma 'Mola' como o exemplo físico paradigmático de um Sólido de Hooke.",
     "distractorAnalysis": [
-      "Está incorreta: A energia não se transforma em radiação cósmica; permanece no sistema mecânico.",
-      "Está incorreta: A energia mecânica não se converte em massa mensurável de acordo com as leis da mecânica clássica.",
-      "Está incorreta: A energia total conserva-se estritamente, sendo devolvida pelo corpo ao recuperar a forma inicial."
+      "Está incorreta: A plasticina é o exemplo apresentado para Corpos Plásticos (Slide 10).",
+      "Está incorreta: Água e mel são os exemplos apresentados para Corpos Viscosos (Slide 11).",
+      "Está incorreta: A massa de pão é o exemplo apresentado para Corpos Plastoviscoelásticos (Slide 13)."
     ],
-    "nursingApplication": "Princípio físico de colchões e sistemas de suspensão que absorvem e devolvem cargas mecânicas."
+    "nursingApplication": "O funcionamento elástico da mola é a base de dinamómetros e sistemas de suspensão de camas hospitalares."
   },
   {
     "id": 2014,
     "topicId": 2,
-    "question": "Qual dos seguintes materiais do quotidiano é um exemplo típico de comportamento predominantemente elástico com grande retorno de forma?",
+    "question": "O que acontece a uma mola perfeitamente elástica após ser esticada dentro do seu limite e depois largada?",
     "options": [
-      "Uma barra de plasticina moldada com os dedos.",
-      "Um pedaço de argila húmida fresca.",
-      "Uma mola de aço espiral.",
-      "Uma porção de massa de pão levedada."
+      "Fica permanentemente esticada com a deformação máxima.",
+      "Começa a escoar como um líquido viscoso.",
+      "Restitui integralmente a sua forma e comprimento originais de repouso.",
+      "Aquece instantaneamente até fundir o metal da espira."
     ],
     "correctIndex": 2,
-    "explanation": "As molas de aço metálicas exibem comportamento elástico exemplar, recuperando a forma após serem comprimidas.",
+    "explanation": "Pela definição de elasticidade e de sólidos de Hooke (Slides 8 e 16), cessada a força deformadora, o corpo restitui integralmente a sua forma inicial.",
     "distractorAnalysis": [
-      "Está incorreta: A plasticina é um material plástico clássico que mantém a forma deformada sem retornar.",
-      "Está incorreta: A argila húmida deforma-se plasticamente sob pressão e não recupera a geometria original.",
-      "Está incorreta: A massa de pão é um corpo plastoviscoelástico que retém deformações permanentes sob tensão."
+      "Está incorreta: Reter permanentemente a deformação máxima define o comportamento plástico, não o elástico puro.",
+      "Está incorreta: A mola é um sólido elástico de Hooke e não sofre escoamento viscoso fluido.",
+      "Está incorreta: No regime elástico ideal reversível não há fusão térmica do material metálico."
     ],
-    "nursingApplication": "Molas de aço são a base de balanças mecânicas e dinamómetros de precisão hospitalares."
+    "nursingApplication": "Explica a capacidade dos tendões e ligamentos de recuperar o seu comprimento basal após tração fisiológica moderada."
   },
   {
     "id": 2015,
     "topicId": 2,
-    "question": "Quando uma força deformadora ultrapassa o limite elástico de um material real, que tipo de deformação passa a ocorrer?",
+    "question": "Num Sólido de Hooke, se duplicarmos a intensidade da força deformadora aplicada (dentro do regime elástico), o que acontece à deformação?",
     "options": [
-      "Deformação de Euclides perfeitamente indeformável.",
-      "Retorno instantâneo e espontâneo à forma inicial a velocidade infinita.",
-      "Anulação absoluta de todas as forças gravíticas sobre o corpo.",
-      "Deformação plástica permanente irreversível."
+      "Permanece exatamente a mesma, pois a rigidez anula o efeito da força.",
+      "Reduz-se para metade da deformação original.",
+      "Torna-se irreversível e plástica de imediato.",
+      "A deformação duplica, mantendo uma proporção matemática direta com a força."
     ],
     "correctIndex": 3,
-    "explanation": "Ultrapassado o limite elástico (limiar de elasticidade), as ligações moleculares cedem e a deformação torna-se plástica.",
+    "explanation": "Como a deformação é 'diretamente proporcional à intensidade da tensão' (Slide 5 e 16), dobrar a força ou tensão implica obrigatoriamente duplicar a deformação correspondente.",
     "distractorAnalysis": [
-      "Está incorreta: Sólidos de Euclides são modelos teóricos indeformáveis; materiais reais deformam-se plasticamente.",
-      "Está incorreta: Acima do limite elástico o corpo já não regressa à forma original, ficando deformado.",
-      "Está incorreta: A gravidade continua a atuar plenamente sobre a massa do corpo material."
+      "Está incorreta: A deformação só se manteria igual se o corpo fosse indeformável.",
+      "Está incorreta: A deformação aumenta com o aumento da força, nunca diminui.",
+      "Está incorreta: Dentro do regime elástico linear de Hooke, a deformação mantém-se reversível."
     ],
-    "nursingApplication": "Explica o momento em que um suporte metálico se dobra permanentemente por excesso de carga."
+    "nursingApplication": "Princípio de linearidade usado na calibração de balanças e sensores de pressão."
   },
   {
     "id": 2016,
     "topicId": 2,
-    "question": "Se um material se deforma facilmente sob uma força e não regressa à sua forma original após a remoção da carga, esse material diz-se:",
+    "question": "Se um biomaterial for submetido a uma força e, ao retirar a força, não regressar de todo à sua configuração original:",
     "options": [
-      "Plástico.",
-      "Perfeitamente elástico.",
-      "Rigidamente indeformável.",
-      "Supercondutor térmico."
+      "O seu comportamento não é puramente elástico, tendo ocorrido deformação plástica ou viscosa.",
+      "O corpo obedece rigorosamente à definição de Sólido de Hooke.",
+      "O corpo é classificado como um Sólido de Euclides.",
+      "A 1ª Lei de Newton foi violada pelo ensaio mecânico."
     ],
     "correctIndex": 0,
-    "explanation": "Os corpos plásticos sofrem deformações permanentes irreversíveis, não recuperando a sua forma inicial.",
+    "explanation": "A elasticidade exige por definição a restituição integral da forma original (Slide 8 e 16). A não restituição indica a presença de deformação plástica permanente ou escoamento viscoso.",
     "distractorAnalysis": [
-      "Está incorreta: Um corpo perfeitamente elástico recuperaria a sua forma original quando a força cessasse.",
-      "Está incorreta: Um corpo indeformável não sofreria qualquer deformação perante a força aplicada.",
-      "Está incorreta: Supercondutividade térmica é uma propriedade de transporte de calor em baixas temperaturas, não de mecânica."
+      "Está incorreta: Sólidos de Hooke restituem integralmente a sua forma original quando a força cessa.",
+      "Está incorreta: Sólidos de Euclides nunca se deformam sob nenhuma força (Slide 15).",
+      "Está incorreta: A deformação material obedece às leis da reologia e termodinâmica sem violar as leis de Newton."
     ],
-    "nursingApplication": "A plasticina é o exemplo mais intuitivo de corpo com comportamento puramente plástico."
+    "nursingApplication": "Permite distinguir ligamentos saudáveis que recuperam a tensão de ligamentos com entorse grave distendidos plasticamente."
   },
   {
     "id": 2017,
     "topicId": 2,
-    "question": "Qual é a definição exata de Reologia no estudo da Biofísica?",
+    "question": "Qual é a condição necessária para que a resposta mecânica de um corpo seja classificada como Sólido de Hooke no Slide 16?",
     "options": [
-      "O estudo da velocidade de emissão de partículas alfa em elementos radioativos de transição.",
-      "O ramo da física que estuda as reações dos corpos à ação de forças deformadoras aplicadas sobre a sua estrutura.",
-      "A área que analisa exclusivamente o campo gravitacional gerado por massas puntiformes no vácuo.",
-      "A parte da ótica geométrica que investiga a refração da luz branca em prismas triangulares."
+      "O corpo tem de ser aquecido acima de 100 ºC durante o teste.",
+      "A deformação elástica tem de ser diretamente proporcional à tensão e a forma original deve ser integralmente restituída após a remoção da carga.",
+      "O corpo só pode sofrer deformação se a tensão for mantida durante mais de 24 horas.",
+      "O corpo tem de dissipar 100% da sua energia mecânica por histerese."
     ],
     "correctIndex": 1,
-    "explanation": "A Reologia investiga como os materiais se deformam e fluem sob a ação de forças mecânicas externas.",
+    "explanation": "O Slide 16 estipula as duas condições unidas: '2. Sólidos de Hooke: Deformação elástica diretamente proporcional à tensão; restituição integral da forma original após remoção da tensão'.",
     "distractorAnalysis": [
-      "Está incorreta: Emissões alfa pertencem à física nuclear e radioatividade, não à reologia.",
-      "Está incorreta: Campos gravitacionais de massas no vácuo pertencem à gravitação universal de Newton.",
-      "Está incorreta: Refração da luz em prismas é o domínio da ótica ondulatória e geométrica."
+      "Está incorreta: A Lei de Hooke aplica-se à temperatura ambiente comum e não exige aquecimento a 100 ºC.",
+      "Está incorreta: Depender do tempo de aplicação é a marca dos corpos viscosos e viscoelásticos (Slides 18 e 19).",
+      "Está incorreta: A dissipação de energia por histerese ocorre em corpos viscoelásticos, não nos sólidos de Hooke ideais."
     ],
-    "nursingApplication": "Permite compreender como os biomateriais e tecidos de suporte respondem a cargas mecânicas."
+    "nursingApplication": "Critério fundamental de avaliação da elasticidade linear em tecidos corporais e materiais médicos."
   },
   {
     "id": 2018,
     "topicId": 2,
-    "question": "O que é uma Força Deformadora na mecânica dos materiais?",
+    "question": "Como atua a energia mecânica num sólido elástico quando este é deformado por uma força externa?",
     "options": [
-      "Uma força que apenas desloca o corpo no espaço sem provocar qualquer alteração na sua forma ou dimensões.",
-      "Uma força que anula a temperatura absoluta do sistema transformando o sólido em gás ideal.",
-      "Uma força externa que altera as distâncias relativas entre as partículas ou moléculas que constituem o corpo.",
-      "Uma força microscópica que atua exclusivamente no interior do núcleo de átomos pesados."
+      "Dissipa-se instantaneamente sob a forma de radiação gama de alta energia.",
+      "Converte-se em massa inercial adicional que aumenta o peso do corpo.",
+      "Fica armazenada como energia potencial elástica e é utilizada pelo corpo para regressar à sua forma original.",
+      "Desaparece do universo sem deixar qualquer vestígio físico."
     ],
     "correctIndex": 2,
-    "explanation": "Forças deformadoras produzem tensões internas que modificam a geometria ou volume do sólido.",
+    "explanation": "Durante a deformação elástica reversível, o trabalho mecânico realizado pela força externa fica acumulado na estrutura como energia potencial elástica; quando a força externa cessa, essa energia devolve a forma original ao corpo.",
     "distractorAnalysis": [
-      "Está incorreta: Forças que apenas aceleram o corpo em bloco sem o deformar atuam como forças puramente translacionais.",
-      "Está incorreta: Forças mecânicas não anulam a temperatura absoluta nem criam gases ideais.",
-      "Está incorreta: Forças no núcleo atómico são forças nucleares fortes e fracas, não forças de deformação macroscópicas."
+      "Está incorreta: Forças elásticas mecânicas não produzem radiação nuclear eletromagnética gama.",
+      "Está incorreta: A energia não se transforma em massa nas solicitações elásticas quotidianas.",
+      "Está incorreta: A energia mecânica conserva-se de acordo com o Primeiro Princípio da Termodinâmica."
     ],
-    "nursingApplication": "Reconhece que qualquer pressão excessiva exercida sobre uma estrutura produz deformação mecânica."
+    "nursingApplication": "Explica o armazenamento de energia nos tendões durante o contacto com o solo na corrida e marcha humana."
   },
   {
     "id": 2019,
     "topicId": 2,
-    "question": "O que é a Elasticidade de um corpo sólido?",
+    "question": "Num gráfico de Tensão versus Deformação para um Sólido de Hooke ideal, qual é a geometria da curva?",
     "options": [
-      "A tendência de um corpo para manter permanentemente a deformação máxima sem nunca mais recuperar.",
-      "A capacidade de um corpo se dissolver espontaneamente em água destilada a vinte graus Celsius.",
-      "A resistência que um material oferece à passagem de uma corrente elétrica de alta voltagem.",
-      "A propriedade física responsável pelo retorno de um corpo à sua forma original após cessar a força deformadora."
+      "Uma curva sinusoidal com máximos e mínimos alternados.",
+      "Uma parábola invertida que decresce até ao zero absoluto.",
+      "Um círculo fechado centrado na origem das coordenadas.",
+      "Uma linha reta que parte da origem, expressando proporcionalidade linear direta."
     ],
     "correctIndex": 3,
-    "explanation": "A elasticidade mede a capacidade de recuperação elástica reversível da geometria inicial quando as forças cessam.",
+    "explanation": "A proporcionalidade direta (σ ∝ ε ou F ∝ Δx) traduz-se graficamente numa função linear: uma linha reta cuja inclinação representa o módulo elástico ou rigidez do material.",
     "distractorAnalysis": [
-      "Está incorreta: Manter permanentemente a deformação máxima caracteriza a plasticidade e não a elasticidade.",
-      "Está incorreta: Dissolução em água é uma propriedade química de solubilidade, alheia à elasticidade mecânica.",
-      "Está incorreta: A oposição à corrente elétrica é a resistividade elétrica em Ohms, não a elasticidade física."
+      "Está incorreta: Curvas sinusoidais representam oscilações periódicas, não a lei linear de Hooke.",
+      "Está incorreta: Parábolas representam relações quadráticas, incompatíveis com a resposta linear direta.",
+      "Está incorreta: Círculos fechados não representam funções mecânicas monotónicas de resposta elástica."
     ],
-    "nursingApplication": "Explica o comportamento de molas de equipamentos hospitalares e de tecidos de suporte."
+    "nursingApplication": "Permite aos alunos reconhecer de imediato a região elástica linear em gráficos de ensaios de tração biomecânica."
   },
   {
     "id": 2020,
     "topicId": 2,
-    "question": "Qual é a diferença fundamental entre uma deformação elástica e uma deformação plástica?",
+    "question": "Qual é a forma de repouso de um corpo puramente elástico quando sobre ele não atua qualquer força deformadora?",
     "options": [
-      "A deformação elástica é reversível (o corpo recupera a forma original); a deformação plástica é permanente e irreversível.",
-      "A deformação elástica é permanente; a deformação plástica recupera a forma original instantaneamente.",
-      "Ambas as deformações são rigorosamente reversíveis e obedecem à Lei de Hooke até à fratura.",
-      "A deformação elástica só ocorre em gases e a deformação plástica ocorre exclusivamente no vácuo."
+      "A sua configuração geométrica e comprimento originais de equilíbrio.",
+      "Uma forma esférica achatada no vácuo.",
+      "A forma do último recipiente onde esteve guardado.",
+      "Uma forma caótica que muda a cada fracção de segundo."
     ],
     "correctIndex": 0,
-    "explanation": "Na região elástica o corpo recupera a forma ao retirar a carga; na região plástica a alteração dimensional persiste.",
+    "explanation": "Na ausência de forças deformadoras, um corpo elástico estabiliza na sua forma geométrica natural de equilíbrio, definida pela estrutura interna dos seus materiais constituintes.",
     "distractorAnalysis": [
-      "Está incorreta: A afirmação inverte os conceitos: o comportamento plástico é que é permanente e não reversível.",
-      "Está incorreta: A deformação plástica não é reversível nem obedece à linearidade da Lei de Hooke.",
-      "Está incorreta: Tanto a deformação elástica como a plástica são comportamentos mecânicos característicos de corpos sólidos."
+      "Está incorreta: Sólidos não assumem espontaneamente formas esféricas a menos que tenham sido fabricados nessa forma.",
+      "Está incorreta: Adotar a forma do recipiente é propriedade dos fluidos líquidos e gasosos, não dos sólidos elásticos.",
+      "Está incorreta: Formas caóticas variáveis violam a estabilidade estrutural dos corpos sólidos elásticos."
     ],
-    "nursingApplication": "Fundamental para entender quando uma sobrecarga mecânica causa lesão estrutural irreversível."
+    "nursingApplication": "Compreensão de que as estruturas anatómicas saudáveis voltam sempre à sua geometria neutra de repouso."
   },
   {
     "id": 2021,
     "topicId": 2,
-    "question": "O que acontece à energia mecânica fornecida a uma mola perfeitamente elástica durante a sua deformação?",
+    "question": "Qual é a definição exata de 'Corpos Plásticos' apresentada nos Slides 10 e 17 de Biofísica?",
     "options": [
-      "Dissipa-se totalmente e de forma irreversível sob a forma de radiação cósmica de fundo.",
-      "Fica armazenada sob a forma de energia potencial elástica e é devolvida integralmente na descompressão.",
-      "É convertida em massa atómica adicional, aumentando o peso da mola em noventa por cento.",
-      "Desaparece do universo sem deixar qualquer vestígio físico, violando o princípio da conservação."
+      "Nunca sofrem qualquer deformação sob forças intensas.",
+      "Apenas ocorre deformação a partir de um determinado valor de tensão (limiar) e mantêm permanentemente a deformação máxima.",
+      "Restituem integralmente a sua forma original no instante em que a força cessa.",
+      "Flutuam no ar devido à perda imediata de massa inercial."
     ],
     "correctIndex": 1,
-    "explanation": "Sólidos elásticos ideais armazenam o trabalho mecânico como energia potencial elástica reversível.",
+    "explanation": "O Slide 10 indica: 'Apenas ocorre deformação a partir de um determinado valor de tensão' e o Slide 17 resume: '3. Corpos Plásticos: Só acusam deformação a partir de um limiar de tensão; mantêm permanentemente a deformação máxima'.",
     "distractorAnalysis": [
-      "Está incorreta: A energia não se transforma em radiação cósmica; permanece no sistema mecânico.",
-      "Está incorreta: A energia mecânica não se converte em massa mensurável de acordo com as leis da mecânica clássica.",
-      "Está incorreta: A energia total conserva-se estritamente, sendo devolvida pelo corpo ao recuperar a forma inicial."
+      "Está incorreta: Nunca sofrer deformação é a definição de Sólido Indeformável (Slide 4).",
+      "Está incorreta: Restituição integral da forma original é a definição de Sólido de Hooke / Elasticidade (Slide 16).",
+      "Está incorreta: Corpos plásticos obedecem à conservação da massa e gravidade newtoniana."
     ],
-    "nursingApplication": "Princípio físico de colchões e sistemas de suspensão que absorvem e devolvem cargas mecânicas."
+    "nursingApplication": "Essencial para compreender como forças excessivas causam deformidades permanentes em tecidos corporais e ossos."
   },
   {
     "id": 2022,
     "topicId": 2,
-    "question": "Qual dos seguintes materiais do quotidiano é um exemplo típico de comportamento predominantemente elástico com grande retorno de forma?",
+    "question": "Qual é o exemplo apresentado no Slide 10 de Biofísica para ilustrar um Corpo Plástico?",
     "options": [
-      "Uma barra de plasticina moldada com os dedos.",
-      "Um pedaço de argila húmida fresca.",
-      "Uma mola de aço espiral.",
-      "Uma porção de massa de pão levedada."
+      "Água destilada.",
+      "Uma mola de aço.",
+      "Plasticina.",
+      "Uma esponja do mar."
     ],
     "correctIndex": 2,
-    "explanation": "As molas de aço metálicas exibem comportamento elástico exemplar, recuperando a forma após serem comprimidas.",
+    "explanation": "O Slide 10 associa expressamente a 'Plasticina' como o exemplo característico de um corpo plástico.",
     "distractorAnalysis": [
-      "Está incorreta: A plasticina é um material plástico clássico que mantém a forma deformada sem retornar.",
-      "Está incorreta: A argila húmida deforma-se plasticamente sob pressão e não recupera a geometria original.",
-      "Está incorreta: A massa de pão é um corpo plastoviscoelástico que retém deformações permanentes sob tensão."
+      "Está incorreta: A água é o exemplo de Corpo Viscoso (Slide 11).",
+      "Está incorreta: A mola de aço é o exemplo de Sólido de Hooke (Slide 5).",
+      "Está incorreta: A esponja é o exemplo de Corpo Viscoelástico (Slide 12)."
     ],
-    "nursingApplication": "Molas de aço são a base de balanças mecânicas e dinamómetros de precisão hospitalares."
+    "nursingApplication": "A plasticina molda-se facilmente após vencer o limiar de resistência e não recua após ser largada."
   },
   {
     "id": 2023,
     "topicId": 2,
-    "question": "Quando uma força deformadora ultrapassa o limite elástico de um material real, que tipo de deformação passa a ocorrer?",
+    "question": "O que acontece se aplicarmos uma tensão mecânica INFERIOR ao limiar de tensão num corpo puramente plástico (Slide 17)?",
     "options": [
-      "Deformação de Euclides perfeitamente indeformável.",
-      "Retorno instantâneo e espontâneo à forma inicial a velocidade infinita.",
-      "Anulação absoluta de todas as forças gravíticas sobre o corpo.",
-      "Deformação plástica permanente irreversível."
+      "Deforma-se imediatamente atingindo o comprimento máximo.",
+      "Dissolve-se transformando-se num líquido viscoso transparente.",
+      "Emite ondas sonoras audíveis de alta intensidade.",
+      "Não acusa qualquer deformação dimensional (permanece indeformado abaixo do limiar)."
     ],
     "correctIndex": 3,
-    "explanation": "Ultrapassado o limite elástico (limiar de elasticidade), as ligações moleculares cedem e a deformação torna-se plástica.",
+    "explanation": "Conforme o Slide 17 ('Só acusam deformação a partir de um limiar de tensão'), qualquer solicitação mecânica com intensidade abaixo desse valor limite não produz qualquer deformação no material.",
     "distractorAnalysis": [
-      "Está incorreta: Sólidos de Euclides são modelos teóricos indeformáveis; materiais reais deformam-se plasticamente.",
-      "Está incorreta: Acima do limite elástico o corpo já não regressa à forma original, ficando deformado.",
-      "Está incorreta: A gravidade continua a atuar plenamente sobre a massa do corpo material."
+      "Está incorreta: A deformação só se inicia após o limiar de tensão ser superado pela força externa.",
+      "Está incorreta: O corpo não muda de estado físico de agregação ao receber pequenas tensões estáticas.",
+      "Está incorreta: Tensões estáticas sub-limiar não geram emissão acústica contínua."
     ],
-    "nursingApplication": "Explica o momento em que um suporte metálico se dobra permanentemente por excesso de carga."
+    "nursingApplication": "Explica por que certos materiais médicos mantêm a rigidez estrutural até um determinado impacto crítico."
   },
   {
     "id": 2024,
     "topicId": 2,
-    "question": "Se um material se deforma facilmente sob uma força e não regressa à sua forma original após a remoção da carga, esse material diz-se:",
+    "question": "Quando uma força acima do limiar deforma uma barra de plasticina e é posteriormente retirada, o que acontece à forma da plasticina?",
     "options": [
-      "Plástico.",
-      "Perfeitamente elástico.",
-      "Rigidamente indeformável.",
-      "Supercondutor térmico."
+      "Mantém permanentemente a deformação máxima atingida, sem recuperar a forma original.",
+      "Retorna espontaneamente e com grande velocidade ao seu formato inicial.",
+      "Continua a esticar-se sozinha indefinidamente até se romper.",
+      "Contrai-se até atingir um volume dez vezes menor que o inicial."
     ],
     "correctIndex": 0,
-    "explanation": "Os corpos plásticos sofrem deformações permanentes irreversíveis, não recuperando a sua forma inicial.",
+    "explanation": "Os Slides 10 e 17 destacam que os corpos plásticos 'mantêm permanentemente a deformação máxima', caracterizando uma deformação irreversível e permanente.",
     "distractorAnalysis": [
-      "Está incorreta: Um corpo perfeitamente elástico recuperaria a sua forma original quando a força cessasse.",
-      "Está incorreta: Um corpo indeformável não sofreria qualquer deformação perante a força aplicada.",
-      "Está incorreta: Supercondutividade térmica é uma propriedade de transporte de calor em baixas temperaturas, não de mecânica."
+      "Está incorreta: Retornar à forma inicial é a resposta de um sólido elástico de Hooke, não de um corpo plástico.",
+      "Está incorreta: Após a retirada da força, o corpo plástico estabiliza na nova forma atingida sem deformação adicional contínua.",
+      "Está incorreta: Não há contração espontânea por ausência de forças de restituição elástica."
     ],
-    "nursingApplication": "A plasticina é o exemplo mais intuitivo de corpo com comportamento puramente plástico."
+    "nursingApplication": "Análogo a deformidades ósseas permanentes após consolidação viciosa de fraturas não alinhadas."
   },
   {
     "id": 2025,
     "topicId": 2,
-    "question": "Qual é a definição exata de Reologia no estudo da Biofísica?",
+    "question": "Qual é a diferença essencial entre um Sólido de Hooke e um Corpo Plástico estabelecida na síntese dos Slides 16 e 17?",
     "options": [
-      "O estudo da velocidade de emissão de partículas alfa em elementos radioativos de transição.",
-      "O ramo da física que estuda as reações dos corpos à ação de forças deformadoras aplicadas sobre a sua estrutura.",
-      "A área que analisa exclusivamente o campo gravitacional gerado por massas puntiformes no vácuo.",
-      "A parte da ótica geométrica que investiga a refração da luz branca em prismas triangulares."
+      "O sólido de Hooke nunca se deforma e o corpo plástico deforma-se sob qualquer força.",
+      "O sólido de Hooke deforma proporcionalmente e recupera a forma original; o corpo plástico só deforma a partir de um limiar e mantém permanentemente a deformação.",
+      "O sólido de Hooke é um líquido e o corpo plástico é um gás nobre.",
+      "Ambos têm comportamentos rigorosamente idênticos perante a remoção da força."
     ],
     "correctIndex": 1,
-    "explanation": "A Reologia investiga como os materiais se deformam e fluem sob a ação de forças mecânicas externas.",
+    "explanation": "A distinção central é: o sólido de Hooke exibe reversibilidade elástica integral proporcional (Slide 16); o corpo plástico exige um limiar de tensão e sofre deformação permanente irreversível (Slide 17).",
     "distractorAnalysis": [
-      "Está incorreta: Emissões alfa pertencem à física nuclear e radioatividade, não à reologia.",
-      "Está incorreta: Campos gravitacionais de massas no vácuo pertencem à gravitação universal de Newton.",
-      "Está incorreta: Refração da luz em prismas é o domínio da ótica ondulatória e geométrica."
+      "Está incorreta: Sólidos de Hooke sofrem deformação elástica (não são indeformáveis).",
+      "Está incorreta: Ambos são modelos de corpos sólidos com reologias mecânicas distintas.",
+      "Está incorreta: Um recupera integralmente e o outro mantém permanentemente a deformação máxima."
     ],
-    "nursingApplication": "Permite compreender como os biomateriais e tecidos de suporte respondem a cargas mecânicas."
+    "nursingApplication": "Critério basilar para distinguir tecidos que amortecem reversivelmente de tecidos que sofrem lesão permanente."
   },
   {
     "id": 2026,
     "topicId": 2,
-    "question": "O que é uma Força Deformadora na mecânica dos materiais?",
+    "question": "No Slide 17, a frase 'mantêm permanentemente a deformação máxima' significa que a deformação plástica é:",
     "options": [
-      "Uma força que apenas desloca o corpo no espaço sem provocar qualquer alteração na sua forma ou dimensões.",
-      "Uma força que anula a temperatura absoluta do sistema transformando o sólido em gás ideal.",
-      "Uma força externa que altera as distâncias relativas entre as partículas ou moléculas que constituem o corpo.",
-      "Uma força microscópica que atua exclusivamente no interior do núcleo de átomos pesados."
+      "Transiente e passageira, durando apenas 2 segundos.",
+      "Completamente reversível por aplicação de calor moderado.",
+      "Irreversível e duradoura no tempo, sem retorno espontâneo à forma de partida.",
+      "Indiferente à magnitude da força deformadora aplicada."
     ],
     "correctIndex": 2,
-    "explanation": "Forças deformadoras produzem tensões internas que modificam a geometria ou volume do sólido.",
+    "explanation": "O termo 'permanentemente' traduz a irreversibilidade da deformação plástica: a estrutura atómica/molecular foi rearranjada e não possui energia potencial restauradora para reverter a alteração.",
     "distractorAnalysis": [
-      "Está incorreta: Forças que apenas aceleram o corpo em bloco sem o deformar atuam como forças puramente translacionais.",
-      "Está incorreta: Forças mecânicas não anulam a temperatura absoluta nem criam gases ideais.",
-      "Está incorreta: Forças no núcleo atómico são forças nucleares fortes e fracas, não forças de deformação macroscópicas."
+      "Está incorreta: Deformação transiente que reverte rapidamente é elástica, não plástica permanente.",
+      "Está incorreta: O retorno espontâneo não ocorre nos corpos puramente plásticos da reologia clássica.",
+      "Está incorreta: A deformação máxima atingida depende da intensidade da força que superou o limiar."
     ],
-    "nursingApplication": "Reconhece que qualquer pressão excessiva exercida sobre uma estrutura produz deformação mecânica."
+    "nursingApplication": "Ajuda a compreender lesões de estiramento permanente em cápsulas articulares após luxações traumáticas."
   },
   {
     "id": 2027,
     "topicId": 2,
-    "question": "O que é a Elasticidade de um corpo sólido?",
+    "question": "Como se define o 'Limiar de tensão' no comportamento dos corpos plásticos (Slide 17)?",
     "options": [
-      "A tendência de um corpo para manter permanentemente a deformação máxima sem nunca mais recuperar.",
-      "A capacidade de um corpo se dissolver espontaneamente em água destilada a vinte graus Celsius.",
-      "A resistência que um material oferece à passagem de uma corrente elétrica de alta voltagem.",
-      "A propriedade física responsável pelo retorno de um corpo à sua forma original após cessar a força deformadora."
+      "A temperatura máxima a que um material pode ser esterilizado em autoclave.",
+      "O tempo em segundos necessário para um fluido viscoso evaporar.",
+      "A velocidade com que uma ambulância trava bruscamente a 80 km/h.",
+      "O valor mínimo de tensão que é indispensável atingir para que o corpo comece a acusar deformação mecânica."
     ],
     "correctIndex": 3,
-    "explanation": "A elasticidade mede a capacidade de recuperação elástica reversível da geometria inicial quando as forças cessam.",
+    "explanation": "O limiar de tensão (limite de escoamento plástico) é a tensão crítica mínima abaixo da qual o material não acusa deformação plástica permanente (Slide 17).",
     "distractorAnalysis": [
-      "Está incorreta: Manter permanentemente a deformação máxima caracteriza a plasticidade e não a elasticidade.",
-      "Está incorreta: Dissolução em água é uma propriedade química de solubilidade, alheia à elasticidade mecânica.",
-      "Está incorreta: A oposição à corrente elétrica é a resistividade elétrica em Ohms, não a elasticidade física."
+      "Está incorreta: Temperatura de esterilização é um parâmetro microbiológico e térmico de enfermagem.",
+      "Está incorreta: Evaporação de fluidos é uma transição de fase termodinâmica, não um limiar reológico de tensão mecânica.",
+      "Está incorreta: A velocidade de travagem da ambulância é uma variável cinemática do Tópico 1."
     ],
-    "nursingApplication": "Explica o comportamento de molas de equipamentos hospitalares e de tecidos de suporte."
+    "nursingApplication": "Permite entender a resistência óssea: o osso suporta cargas normais sem deformação plástica até atingir o seu limiar."
   },
   {
     "id": 2028,
     "topicId": 2,
-    "question": "Qual é a diferença fundamental entre uma deformação elástica e uma deformação plástica?",
+    "question": "Ao modelar plasticina com os dedos para criar uma tala de imobilização pedagógica, porque mantém ela o novo formato?",
     "options": [
-      "A deformação elástica é reversível (o corpo recupera a forma original); a deformação plástica é permanente e irreversível.",
-      "A deformação elástica é permanente; a deformação plástica recupera a forma original instantaneamente.",
-      "Ambas as deformações são rigorosamente reversíveis e obedecem à Lei de Hooke até à fratura.",
-      "A deformação elástica só ocorre em gases e a deformação plástica ocorre exclusivamente no vácuo."
+      "Porque a força dos dedos superou o limiar de tensão e, sendo um corpo plástico, a plasticina conserva a deformação máxima aplicada.",
+      "Porque as moléculas de ar no interior da plasticina congelaram instantaneamente.",
+      "Porque a gravidade puxa a plasticina em todas as direções ao mesmo tempo.",
+      "Porque a constante de Hooke da plasticina tende para infinito."
     ],
     "correctIndex": 0,
-    "explanation": "Na região elástica o corpo recupera a forma ao retirar a carga; na região plástica a alteração dimensional persiste.",
+    "explanation": "Ao aplicar uma força superior ao limiar plástico, os planos moleculares da plasticina deslizam e assumem a nova geometria, permanecendo nela de forma permanente e sem retorno elástico.",
     "distractorAnalysis": [
-      "Está incorreta: A afirmação inverte os conceitos: o comportamento plástico é que é permanente e não reversível.",
-      "Está incorreta: A deformação plástica não é reversível nem obedece à linearidade da Lei de Hooke.",
-      "Está incorreta: Tanto a deformação elástica como a plástica são comportamentos mecânicos característicos de corpos sólidos."
+      "Está incorreta: A modelação manual não altera a temperatura de congelamento do ar ambiente.",
+      "Está incorreta: A gravidade atua unicamente na vertical descendente (P = m · g).",
+      "Está incorreta: Constante de Hooke infinita corresponderia a um sólido indeformável que não se moldaria."
     ],
-    "nursingApplication": "Fundamental para entender quando uma sobrecarga mecânica causa lesão estrutural irreversível."
+    "nursingApplication": "Exemplifica de forma simples o comportamento mecânico dos materiais plásticos de moldagem e ortóteses termomoldáveis."
   },
   {
     "id": 2029,
     "topicId": 2,
-    "question": "O que acontece à energia mecânica fornecida a uma mola perfeitamente elástica durante a sua deformação?",
+    "question": "Em termos de classificação reológica (Slide 17), um material que só deforma após um limiar e não restitui a forma é indiscutivelmente:",
     "options": [
-      "Dissipa-se totalmente e de forma irreversível sob a forma de radiação cósmica de fundo.",
-      "Fica armazenada sob a forma de energia potencial elástica e é devolvida integralmente na descompressão.",
-      "É convertida em massa atómica adicional, aumentando o peso da mola em noventa por cento.",
-      "Desaparece do universo sem deixar qualquer vestígio físico, violando o princípio da conservação."
+      "Um Sólido de Euclides.",
+      "Um Corpo Plástico.",
+      "Um Corpo Viscoso puro.",
+      "Um Sólido de Hooke."
     ],
     "correctIndex": 1,
-    "explanation": "Sólidos elásticos ideais armazenam o trabalho mecânico como energia potencial elástica reversível.",
+    "explanation": "A combinação exclusiva 'só deforma a partir de um limiar' e 'mantém permanentemente a deformação' é a assinatura definidora do Corpo Plástico (Slide 17).",
     "distractorAnalysis": [
-      "Está incorreta: A energia não se transforma em radiação cósmica; permanece no sistema mecânico.",
-      "Está incorreta: A energia mecânica não se converte em massa mensurável de acordo com as leis da mecânica clássica.",
-      "Está incorreta: A energia total conserva-se estritamente, sendo devolvida pelo corpo ao recuperar a forma inicial."
+      "Está incorreta: Sólidos de Euclides nunca sofrem qualquer deformação sob nenhuma tensão (Slide 15).",
+      "Está incorreta: Corpos viscosos deformam-se continuamente com a tensão e com o tempo sem limiar estático rígido (Slide 18).",
+      "Está incorreta: Sólidos de Hooke deformam proporcionalmente desde tensões mínimas e restituem integralmente a forma (Slide 16)."
     ],
-    "nursingApplication": "Princípio físico de colchões e sistemas de suspensão que absorvem e devolvem cargas mecânicas."
+    "nursingApplication": "Identificação taxativa e inequívoca da terceira categoria reológica lecionada."
   },
   {
     "id": 2030,
     "topicId": 2,
-    "question": "Qual dos seguintes materiais do quotidiano é um exemplo típico de comportamento predominantemente elástico com grande retorno de forma?",
+    "question": "Quando uma fratura óssea consolida com uma angulação anormal que o osso não consegue endireitar sozinho, que regime reológico foi atingido no trauma?",
     "options": [
-      "Uma barra de plasticina moldada com os dedos.",
-      "Um pedaço de argila húmida fresca.",
-      "Uma mola de aço espiral.",
-      "Uma porção de massa de pão levedada."
+      "Regime elétrico uniforme de Hooke com restituição total.",
+      "Regime de corpo puramente indeformável de Euclides.",
+      "Regime de deformação plástica irreversível que superou o limite elástico do tecido ósseo.",
+      "Regime de escoamento viscoso de mel e água pura."
     ],
     "correctIndex": 2,
-    "explanation": "As molas de aço metálicas exibem comportamento elástico exemplar, recuperando a forma após serem comprimidas.",
+    "explanation": "Quando a força traumática supera o limiar de elasticidade do osso, o tecido sofre microfraturas e deformação plástica permanente; na consolidação sem redução cirúrgica, a deformidade angular persiste permanentemente.",
     "distractorAnalysis": [
-      "Está incorreta: A plasticina é um material plástico clássico que mantém a forma deformada sem retornar.",
-      "Está incorreta: A argila húmida deforma-se plasticamente sob pressão e não recupera a geometria original.",
-      "Está incorreta: A massa de pão é um corpo plastoviscoelástico que retém deformações permanentes sob tensão."
+      "Está incorreta: No regime elástico o osso retornaria ao alinhamento retilíneo normal sem sequelas angulares.",
+      "Está incorreta: Se fosse indeformável, o osso nunca teria sofrido qualquer angulação ou fratura.",
+      "Está incorreta: O osso cortical é um tecido sólido rígido mineralizado e não um fluido de escoamento viscoso puro."
     ],
-    "nursingApplication": "Molas de aço são a base de balanças mecânicas e dinamómetros de precisão hospitalares."
+    "nursingApplication": "Conexão direta entre o conceito reológico de plasticidade e as sequelas ortopédicas de doentes acidentados."
   },
   {
     "id": 2031,
     "topicId": 2,
-    "question": "Quando uma força deformadora ultrapassa o limite elástico de um material real, que tipo de deformação passa a ocorrer?",
+    "question": "Qual é a característica reológica essencial dos 'Corpos Viscosos' de acordo com os Slides 11 e 18 de Biofísica?",
     "options": [
-      "Deformação de Euclides perfeitamente indeformável.",
-      "Retorno instantâneo e espontâneo à forma inicial a velocidade infinita.",
-      "Anulação absoluta de todas as forças gravíticas sobre o corpo.",
-      "Deformação plástica permanente irreversível."
+      "Nunca se deformam mesmo sob tensões de milhares de Newtons.",
+      "Restituem integralmente a sua forma original no instante em que a força é retirada.",
+      "Apenas se deformam a baixas temperaturas sob a ação de campos magnéticos.",
+      "Apresentam deformação proporcional/dependente da tensão e do tempo de aplicação, e não restituem a sua forma original."
     ],
     "correctIndex": 3,
-    "explanation": "Ultrapassado o limite elástico (limiar de elasticidade), as ligações moleculares cedem e a deformação torna-se plástica.",
+    "explanation": "O Slide 11 define: 'Deformação proporcional à tensão e ao tempo de aplicação' e o Slide 18 resume: '4. Corpos Viscosos: Deformação dependente da tensão e do tempo; não restituem a sua forma original'.",
     "distractorAnalysis": [
-      "Está incorreta: Sólidos de Euclides são modelos teóricos indeformáveis; materiais reais deformam-se plasticamente.",
-      "Está incorreta: Acima do limite elástico o corpo já não regressa à forma original, ficando deformado.",
-      "Está incorreta: A gravidade continua a atuar plenamente sobre a massa do corpo material."
+      "Está incorreta: Nunca se deformar caracteriza os sólidos indeformáveis de Euclides (Slide 15).",
+      "Está incorreta: Restituir a forma original caracteriza os sólidos elásticos de Hooke (Slide 16).",
+      "Está incorreta: A viscosidade independe de campos magnéticos e aumenta com a redução de temperatura, mas a dependência temporal da tensão é a sua definição reológica."
     ],
-    "nursingApplication": "Explica o momento em que um suporte metálico se dobra permanentemente por excesso de carga."
+    "nursingApplication": "Crucial para compreender o escoamento do sangue e a lubrificação das superfícies articulares pelo líquido sinovial."
   },
   {
     "id": 2032,
     "topicId": 2,
-    "question": "Se um material se deforma facilmente sob uma força e não regressa à sua forma original após a remoção da carga, esse material diz-se:",
+    "question": "O que acontece à forma de uma gota de fluido viscoso após cessar a força que a fez escoar (Slide 18)?",
     "options": [
-      "Plástico.",
-      "Perfeitamente elástico.",
-      "Rigidamente indeformável.",
-      "Supercondutor térmico."
+      "Não restitui a sua forma original, permanecendo na nova configuração atingida pelo escoamento.",
+      "Recua instantaneamente para a forma original como se fosse um elástico.",
+      "Cristaliza imediatamente transformando-se num sólido de Euclides.",
+      "Evapora 100% da sua massa em menos de um milissegundo."
     ],
     "correctIndex": 0,
-    "explanation": "Os corpos plásticos sofrem deformações permanentes irreversíveis, não recuperando a sua forma inicial.",
+    "explanation": "O Slide 18 estabelece expressamente: 'não restituem a sua forma original'. Os fluidos viscosos dissipam a energia mecânica sob a forma de atrito interno entre camadas e não possuem força elástica restauradora.",
     "distractorAnalysis": [
-      "Está incorreta: Um corpo perfeitamente elástico recuperaria a sua forma original quando a força cessasse.",
-      "Está incorreta: Um corpo indeformável não sofreria qualquer deformação perante a força aplicada.",
-      "Está incorreta: Supercondutividade térmica é uma propriedade de transporte de calor em baixas temperaturas, não de mecânica."
+      "Está incorreta: Recuar instantaneamente é o comportamento de corpos com elasticidade de Hooke.",
+      "Está incorreta: Cessar a força mecânica de cisalhamento não altera o ponto de solidificação ou congelamento do líquido.",
+      "Está incorreta: A taxa de evaporação depende da pressão de vapor e temperatura, não da cessação da tensão mecânica."
     ],
-    "nursingApplication": "A plasticina é o exemplo mais intuitivo de corpo com comportamento puramente plástico."
+    "nursingApplication": "Explica por que os fluidos biológicos (sangue, linfa) fluem unidirecionalmente sem recuar elasticamente."
   },
   {
     "id": 2033,
     "topicId": 2,
-    "question": "Qual é a definição exata de Reologia no estudo da Biofísica?",
+    "question": "Quais são os exemplos de corpos viscosos expressamente apresentados nos Slides 11, 12 e 13 de Biofísica?",
     "options": [
-      "O estudo da velocidade de emissão de partículas alfa em elementos radioativos de transição.",
-      "O ramo da física que estuda as reações dos corpos à ação de forças deformadoras aplicadas sobre a sua estrutura.",
-      "A área que analisa exclusivamente o campo gravitacional gerado por massas puntiformes no vácuo.",
-      "A parte da ótica geométrica que investiga a refração da luz branca em prismas triangulares."
+      "Aço e Prata.",
+      "Água e Mel.",
+      "Plasticina e Mola.",
+      "Osso cortical e Borracha."
     ],
     "correctIndex": 1,
-    "explanation": "A Reologia investiga como os materiais se deformam e fluem sob a ação de forças mecânicas externas.",
+    "explanation": "Os Slides 11, 12 e 13 indicam textualmente nos exemplos de Corpos Viscosos: 'Água, mel'.",
     "distractorAnalysis": [
-      "Está incorreta: Emissões alfa pertencem à física nuclear e radioatividade, não à reologia.",
-      "Está incorreta: Campos gravitacionais de massas no vácuo pertencem à gravitação universal de Newton.",
-      "Está incorreta: Refração da luz em prismas é o domínio da ótica ondulatória e geométrica."
+      "Está incorreta: Aço e prata são metais rígidos com elevado Módulo de Young (Slide 44).",
+      "Está incorreta: Plasticina é corpo plástico (Slide 10) e mola é sólido de Hooke (Slide 5).",
+      "Está incorreta: Osso é viscoelástico (Slide 19) e borracha é sólido de baixíssimo módulo (Slide 44)."
     ],
-    "nursingApplication": "Permite compreender como os biomateriais e tecidos de suporte respondem a cargas mecânicas."
+    "nursingApplication": "O mel ilustra um líquido de alta viscosidade e a água um líquido de baixa viscosidade sob o mesmo gradiente de pressão."
   },
   {
     "id": 2034,
     "topicId": 2,
-    "question": "O que é uma Força Deformadora na mecânica dos materiais?",
+    "question": "Por que razão uma porção de mel demora muito mais tempo a escoar de uma colher do que uma porção igual de água?",
     "options": [
-      "Uma força que apenas desloca o corpo no espaço sem provocar qualquer alteração na sua forma ou dimensões.",
-      "Uma força que anula a temperatura absoluta do sistema transformando o sólido em gás ideal.",
-      "Uma força externa que altera as distâncias relativas entre as partículas ou moléculas que constituem o corpo.",
-      "Uma força microscópica que atua exclusivamente no interior do núcleo de átomos pesados."
+      "Porque a água tem maior densidade e atrai a gravidade com o triplo da força.",
+      "Porque o mel possui um Módulo de Young superior ao do aço cortical.",
+      "Porque o mel apresenta maior atrito interno entre as suas camadas fluidas (maior viscosidade), exigindo mais tempo para se deformar sob a mesma tensão gravítica.",
+      "Porque o mel é um sólido de Euclides indeformável em repouso."
     ],
     "correctIndex": 2,
-    "explanation": "Forças deformadoras produzem tensões internas que modificam a geometria ou volume do sólido.",
+    "explanation": "A deformação dos corpos viscosos depende da tensão e do tempo (Slide 11 e 18). Fluidos mais viscosos como o mel possuem forte resistência interna ao cisalhamento e deformam-se a uma taxa muito mais lenta, necessitando de maior tempo para escoar.",
     "distractorAnalysis": [
-      "Está incorreta: Forças que apenas aceleram o corpo em bloco sem o deformar atuam como forças puramente translacionais.",
-      "Está incorreta: Forças mecânicas não anulam a temperatura absoluta nem criam gases ideais.",
-      "Está incorreta: Forças no núcleo atómico são forças nucleares fortes e fracas, não forças de deformação macroscópicas."
+      "Está incorreta: O mel é mais denso que a água (~1,4 g/cm³ vs 1,0 g/cm³), logo a gravidade até o atrai com mais peso por volume.",
+      "Está incorreta: Fluidos líquidos viscosos não possuem Módulo de Young de tração axial estática.",
+      "Está incorreta: O mel é um fluido viscoso que deforma e escoa, não um sólido indeformável."
     ],
-    "nursingApplication": "Reconhece que qualquer pressão excessiva exercida sobre uma estrutura produz deformação mecânica."
+    "nursingApplication": "Conceito fundamental para compreender a viscosidade sanguínea e o seu impacto na resistência vascular periférica."
   },
   {
     "id": 2035,
     "topicId": 2,
-    "question": "O que é a Elasticidade de um corpo sólido?",
+    "question": "Se uma tensão constante for mantida durante o dobro do tempo sobre um fluido puramente viscoso, o que acontece à deformação acumulada?",
     "options": [
-      "A tendência de um corpo para manter permanentemente a deformação máxima sem nunca mais recuperar.",
-      "A capacidade de um corpo se dissolver espontaneamente em água destilada a vinte graus Celsius.",
-      "A resistência que um material oferece à passagem de uma corrente elétrica de alta voltagem.",
-      "A propriedade física responsável pelo retorno de um corpo à sua forma original após cessar a força deformadora."
+      "A deformação cessa e reverte para zero.",
+      "A deformação diminui para metade por acomodação molecular.",
+      "O fluido transforma-se espontaneamente num sólido de Hooke.",
+      "A deformação contínua (escoamento) duplica, porque nos corpos viscosos a deformação é proporcional ao tempo de aplicação da tensão."
     ],
     "correctIndex": 3,
-    "explanation": "A elasticidade mede a capacidade de recuperação elástica reversível da geometria inicial quando as forças cessam.",
+    "explanation": "O Slide 11 explicita que a deformação é 'proporcional à tensão e ao tempo de aplicação dessa tensão'. Mantendo a tensão constante e dobrando o tempo de atuação, o escoamento acumula o dobro da deformação.",
     "distractorAnalysis": [
-      "Está incorreta: Manter permanentemente a deformação máxima caracteriza a plasticidade e não a elasticidade.",
-      "Está incorreta: Dissolução em água é uma propriedade química de solubilidade, alheia à elasticidade mecânica.",
-      "Está incorreta: A oposição à corrente elétrica é a resistividade elétrica em Ohms, não a elasticidade física."
+      "Está incorreta: Nos fluidos viscosos o escoamento progride continuamente enquanto a força for aplicada.",
+      "Está incorreta: O escoamento aumenta no tempo, nunca diminui de forma espontânea.",
+      "Está incorreta: A manutenção da tensão não transforma o estado líquido em elasticidade pura de Hooke."
     ],
-    "nursingApplication": "Explica o comportamento de molas de equipamentos hospitalares e de tecidos de suporte."
+    "nursingApplication": "Explica por que perfusões lentas contínuas asseguram o transporte gradual de fluidos intravenosos ao longo do tempo."
   },
   {
     "id": 2036,
     "topicId": 2,
-    "question": "Qual é a diferença fundamental entre uma deformação elástica e uma deformação plástica?",
+    "question": "Qual é o significado da 'dependência do tempo' na resposta mecânica dos corpos viscosos?",
     "options": [
-      "A deformação elástica é reversível (o corpo recupera a forma original); a deformação plástica é permanente e irreversível.",
-      "A deformação elástica é permanente; a deformação plástica recupera a forma original instantaneamente.",
-      "Ambas as deformações são rigorosamente reversíveis e obedecem à Lei de Hooke até à fratura.",
-      "A deformação elástica só ocorre em gases e a deformação plástica ocorre exclusivamente no vácuo."
+      "A quantidade de deformação sofrida depende não apenas da força aplicada, mas criticamente da duração (tempo) durante a qual a força atua.",
+      "O corpo só se deforma durante a noite quando a temperatura ambiente diminui.",
+      "A deformação ocorre com atraso de 24 horas relativamente à aplicação da carga.",
+      "O material viaja no tempo para uma época anterior à formulação das leis de Newton."
     ],
     "correctIndex": 0,
-    "explanation": "Na região elástica o corpo recupera a forma ao retirar a carga; na região plástica a alteração dimensional persiste.",
+    "explanation": "Ao contrário dos sólidos de Hooke (onde a deformação elástica é instantânea e constante para uma dada força), nos corpos viscosos a deformação aumenta progressivamente à medida que o tempo passa sob a ação contínua da tensão.",
     "distractorAnalysis": [
-      "Está incorreta: A afirmação inverte os conceitos: o comportamento plástico é que é permanente e não reversível.",
-      "Está incorreta: A deformação plástica não é reversível nem obedece à linearidade da Lei de Hooke.",
-      "Está incorreta: Tanto a deformação elástica como a plástica são comportamentos mecânicos característicos de corpos sólidos."
+      "Está incorreta: A dependência temporal refere-se à duração do esforço em segundos ou minutos, não a ciclos circadianos dia/noite.",
+      "Está incorreta: O escoamento inicia-se imediatamente e acumula-se continuamente sem desfasamentos de 24 horas.",
+      "Está incorreta: Afirmação de ficção científica desprovida de rigor físico."
     ],
-    "nursingApplication": "Fundamental para entender quando uma sobrecarga mecânica causa lesão estrutural irreversível."
+    "nursingApplication": "Importante para perceber a deformação progressiva de tecidos biológicos quando mantidos sob carga contínua."
   },
   {
     "id": 2037,
     "topicId": 2,
-    "question": "O que acontece à energia mecânica fornecida a uma mola perfeitamente elástica durante a sua deformação?",
+    "question": "O que acontece à energia mecânica fornecida para deformar ou fazer escoar um corpo puramente viscoso?",
     "options": [
-      "Dissipa-se totalmente e de forma irreversível sob a forma de radiação cósmica de fundo.",
-      "Fica armazenada sob a forma de energia potencial elástica e é devolvida integralmente na descompressão.",
-      "É convertida em massa atómica adicional, aumentando o peso da mola em noventa por cento.",
-      "Desaparece do universo sem deixar qualquer vestígio físico, violando o princípio da conservação."
+      "Fica 100% armazenada na estrutura pronta para ser devolvida elasticamente.",
+      "É totalmente dissipada sob a forma de calor devido ao atrito viscoso interno entre as camadas de fluido.",
+      "Converte-se em massa inercial de acordo com a 2ª Lei de Newton.",
+      "Gera ondas gravitacionais que aceleram a circulação sanguínea."
     ],
     "correctIndex": 1,
-    "explanation": "Sólidos elásticos ideais armazenam o trabalho mecânico como energia potencial elástica reversível.",
+    "explanation": "Como os corpos viscosos não restituem a sua forma original (Slide 18), todo o trabalho mecânico fornecido para provocar o escoamento é dissipado irreversivelmente como energia térmica (calor de atrito viscoso).",
     "distractorAnalysis": [
-      "Está incorreta: A energia não se transforma em radiação cósmica; permanece no sistema mecânico.",
-      "Está incorreta: A energia mecânica não se converte em massa mensurável de acordo com as leis da mecânica clássica.",
-      "Está incorreta: A energia total conserva-se estritamente, sendo devolvida pelo corpo ao recuperar a forma inicial."
+      "Está incorreta: Armazenamento reversível é a imagem de marca da elasticidade pura de Hooke, ausente em fluidos viscosos puros.",
+      "Está incorreta: Energia mecânica não se transforma em massa na física dos fluidos clássica.",
+      "Está incorreta: Ondas gravitacionais são fenómenos cosmológicos astrofísicos, sem qualquer relação com fluidos corporais."
     ],
-    "nursingApplication": "Princípio físico de colchões e sistemas de suspensão que absorvem e devolvem cargas mecânicas."
+    "nursingApplication": "Explica por que o trabalho de bombagem cardíaca dissipa energia ao vencer a viscosidade do sangue nas artérias."
   },
   {
     "id": 2038,
     "topicId": 2,
-    "question": "Qual dos seguintes materiais do quotidiano é um exemplo típico de comportamento predominantemente elástico com grande retorno de forma?",
+    "question": "Na circulação humana e nas articulações sinoviais, o sangue e o líquido articular exibem comportamento reológico de:",
     "options": [
-      "Uma barra de plasticina moldada com os dedos.",
-      "Um pedaço de argila húmida fresca.",
-      "Uma mola de aço espiral.",
-      "Uma porção de massa de pão levedada."
+      "Sólidos perfeitamente indeformáveis de Euclides.",
+      "Molas metálicas rígidas de Hooke.",
+      "Fluidos com propriedades viscosas essenciais ao transporte e lubrificação biomecânica.",
+      "Gases de alta densidade no vácuo intersticial."
     ],
     "correctIndex": 2,
-    "explanation": "As molas de aço metálicas exibem comportamento elástico exemplar, recuperando a forma após serem comprimidas.",
+    "explanation": "O sangue e o líquido sinovial são fluidos biológicos complexos cuja viscosidade condiciona a hemodinâmica vascular e o coeficiente de atrito nas cartilagens articulares.",
     "distractorAnalysis": [
-      "Está incorreta: A plasticina é um material plástico clássico que mantém a forma deformada sem retornar.",
-      "Está incorreta: A argila húmida deforma-se plasticamente sob pressão e não recupera a geometria original.",
-      "Está incorreta: A massa de pão é um corpo plastoviscoelástico que retém deformações permanentes sob tensão."
+      "Está incorreta: Líquidos circulam e deformam-se continuamente, sendo o oposto de sólidos indeformáveis.",
+      "Está incorreta: Fluidos não possuem forma definida nem se comportam como molas rígidas uniaxiais.",
+      "Está incorreta: Os fluidos biológicos são líquidos aquosos incompressíveis e não gases rarefeitos."
     ],
-    "nursingApplication": "Molas de aço são a base de balanças mecânicas e dinamómetros de precisão hospitalares."
+    "nursingApplication": "Relaciona a viscosidade com a monitorização de parâmetros hemodinâmicos e mobilidade articular."
   },
   {
     "id": 2039,
     "topicId": 2,
-    "question": "Quando uma força deformadora ultrapassa o limite elástico de um material real, que tipo de deformação passa a ocorrer?",
+    "question": "Qual é a síntese textual exata dos Corpos Viscosos apresentada no resumo numerado do Slide 18?",
     "options": [
-      "Deformação de Euclides perfeitamente indeformável.",
-      "Retorno instantâneo e espontâneo à forma inicial a velocidade infinita.",
-      "Anulação absoluta de todas as forças gravíticas sobre o corpo.",
-      "Deformação plástica permanente irreversível."
+      "'1. Sólidos de Euclides: Modelos teóricos indeformáveis.'",
+      "'2. Sólidos de Hooke: Deformação elástica diretamente proporcional à tensão.'",
+      "'3. Corpos Plásticos: Só acusam deformação a partir de um limiar de tensão.'",
+      "'4. Corpos Viscosos: Deformação dependente da tensão e do tempo; não restituem a sua forma original.'"
     ],
     "correctIndex": 3,
-    "explanation": "Ultrapassado o limite elástico (limiar de elasticidade), as ligações moleculares cedem e a deformação torna-se plástica.",
+    "explanation": "O ponto 4 do Slide 18 enumera com clareza: '4. Corpos Viscosos: Deformação dependente da tensão e do tempo; não restituem a sua forma original'.",
     "distractorAnalysis": [
-      "Está incorreta: Sólidos de Euclides são modelos teóricos indeformáveis; materiais reais deformam-se plasticamente.",
-      "Está incorreta: Acima do limite elástico o corpo já não regressa à forma original, ficando deformado.",
-      "Está incorreta: A gravidade continua a atuar plenamente sobre a massa do corpo material."
+      "Está incorreta: Esta é a definição do ponto 1 (Sólidos de Euclides).",
+      "Está incorreta: Esta é a definição do ponto 2 (Sólidos de Hooke).",
+      "Está incorreta: Esta é a definição do ponto 3 (Corpos Plásticos)."
     ],
-    "nursingApplication": "Explica o momento em que um suporte metálico se dobra permanentemente por excesso de carga."
+    "nursingApplication": "Fixa a formulação canónica do quarto grupo reológico para os exames da unidade curricular."
   },
   {
     "id": 2040,
     "topicId": 2,
-    "question": "Se um material se deforma facilmente sob uma força e não regressa à sua forma original após a remoção da carga, esse material diz-se:",
+    "question": "Ao inclinar uma ampola de medicação viscosa, a solução escorre lentamente para o bocal. Se a ampola for colocada de novo na vertical, a solução escorrida recua espontaneamente?",
     "options": [
-      "Plástico.",
-      "Perfeitamente elástico.",
-      "Rigidamente indeformável.",
-      "Supercondutor térmico."
+      "Não, porque os corpos viscosos não restituem a sua forma original.",
+      "Sim, sobe imediatamente pelo bocal como uma mola de Hooke.",
+      "Sim, porque a gravidade terrestre inverte o sentido do peso à noite.",
+      "Apenas se a ampola for agitada com aceleração de 80 km/h."
     ],
     "correctIndex": 0,
-    "explanation": "Os corpos plásticos sofrem deformações permanentes irreversíveis, não recuperando a sua forma inicial.",
+    "explanation": "Como os fluidos viscosos não restituem a forma original (Slide 18), o líquido permanece na nova posição escoada a menos que uma nova força externa (como a gravidade invertida ao virar a ampola) o force a mover-se de novo.",
     "distractorAnalysis": [
-      "Está incorreta: Um corpo perfeitamente elástico recuperaria a sua forma original quando a força cessasse.",
-      "Está incorreta: Um corpo indeformável não sofreria qualquer deformação perante a força aplicada.",
-      "Está incorreta: Supercondutividade térmica é uma propriedade de transporte de calor em baixas temperaturas, não de mecânica."
+      "Está incorreta: Fluidos não possuem forças elásticas de restituição para voltar espontaneamente ao fundo da ampola.",
+      "Está incorreta: O sentido da gravidade é perfeitamente constante para o centro da Terra em qualquer horário.",
+      "Está incorreta: Agitar pode acelerar o escoamento por inércia, mas não confere memória de forma elástica."
     ],
-    "nursingApplication": "A plasticina é o exemplo mais intuitivo de corpo com comportamento puramente plástico."
+    "nursingApplication": "Aplicação simples no manuseamento prático de ampolas e xaropes terapêuticos de consistência viscosa."
   },
   {
     "id": 2041,
     "topicId": 2,
-    "question": "Qual é a definição exata de Reologia no estudo da Biofísica?",
+    "question": "Qual é a definição exata de 'Corpos Viscoelásticos' apresentada nos Slides 12 e 19 de Biofísica?",
     "options": [
-      "O estudo da velocidade de emissão de partículas alfa em elementos radioativos de transição.",
-      "O ramo da física que estuda as reações dos corpos à ação de forças deformadoras aplicadas sobre a sua estrutura.",
-      "A área que analisa exclusivamente o campo gravitacional gerado por massas puntiformes no vácuo.",
-      "A parte da ótica geométrica que investiga a refração da luz branca em prismas triangulares."
+      "Corpos perfeitamente indeformáveis cuja distância interpartículas é invariável.",
+      "Deformação dependente da tensão e do tempo de aplicação, com dissipação de energia por histerese (ossos e músculos).",
+      "Fluidos que escoam instantaneamente sem qualquer resistência elástica.",
+      "Materiais que só se deformam acima de 1000 graus Celsius."
     ],
     "correctIndex": 1,
-    "explanation": "A Reologia investiga como os materiais se deformam e fluem sob a ação de forças mecânicas externas.",
+    "explanation": "O Slide 12 estipula: 'Deformação depende da tensão e do tempo de aplicação dessa tensão', e o Slide 19 sintetiza no ponto 5: 'Corpos Viscoelásticos: Deformação dependente da tensão e do tempo; dissipação de energia por histerese (ossos e músculos)'.",
     "distractorAnalysis": [
-      "Está incorreta: Emissões alfa pertencem à física nuclear e radioatividade, não à reologia.",
-      "Está incorreta: Campos gravitacionais de massas no vácuo pertencem à gravitação universal de Newton.",
-      "Está incorreta: Refração da luz em prismas é o domínio da ótica ondulatória e geométrica."
+      "Está incorreta: Esta é a definição de Sólido de Euclides (Slide 15).",
+      "Está incorreta: Fluidos sem resistência elástica são viscosos puros (Slide 18), não viscoelásticos.",
+      "Está incorreta: O comportamento viscoelástico ocorre nas temperaturas fisiológicas normais do corpo humano."
     ],
-    "nursingApplication": "Permite compreender como os biomateriais e tecidos de suporte respondem a cargas mecânicas."
+    "nursingApplication": "A viscoelasticidade é o comportamento biomecânico dominante na esmagadora maioria dos tecidos humanos."
   },
   {
     "id": 2042,
     "topicId": 2,
-    "question": "O que é uma Força Deformadora na mecânica dos materiais?",
+    "question": "Quais são os exemplos de corpos viscoelásticos especificamente referidos nos Slides 12 e 19?",
     "options": [
-      "Uma força que apenas desloca o corpo no espaço sem provocar qualquer alteração na sua forma ou dimensões.",
-      "Uma força que anula a temperatura absoluta do sistema transformando o sólido em gás ideal.",
-      "Uma força externa que altera as distâncias relativas entre as partículas ou moléculas que constituem o corpo.",
-      "Uma força microscópica que atua exclusivamente no interior do núcleo de átomos pesados."
+      "Água e mel.",
+      "Aço e vidro.",
+      "Esponja e cartilagem (Slide 12); ossos e músculos (Slide 19).",
+      "Plasticina e massa de pão."
     ],
     "correctIndex": 2,
-    "explanation": "Forças deformadoras produzem tensões internas que modificam a geometria ou volume do sólido.",
+    "explanation": "O Slide 12 apresenta nos exemplos 'Esponja, cartilagem', e o Slide 19 explicita entre parêntesis '(ossos e músculos)'.",
     "distractorAnalysis": [
-      "Está incorreta: Forças que apenas aceleram o corpo em bloco sem o deformar atuam como forças puramente translacionais.",
-      "Está incorreta: Forças mecânicas não anulam a temperatura absoluta nem criam gases ideais.",
-      "Está incorreta: Forças no núcleo atómico são forças nucleares fortes e fracas, não forças de deformação macroscópicas."
+      "Está incorreta: Água e mel são corpos viscosos puros (Slide 11).",
+      "Está incorreta: Aço e vidro são sólidos rígidos puramente elásticos/frágeis de alto módulo (Slide 44).",
+      "Está incorreta: Plasticina é corpo plástico (Slide 10) e massa de pão é plastoviscoelástica (Slide 13)."
     ],
-    "nursingApplication": "Reconhece que qualquer pressão excessiva exercida sobre uma estrutura produz deformação mecânica."
+    "nursingApplication": "Identificação direta dos tecidos musculoesqueléticos do corpo humano estudados na enfermagem."
   },
   {
     "id": 2043,
     "topicId": 2,
-    "question": "O que é a Elasticidade de um corpo sólido?",
+    "question": "Qual é o fenómeno biomecânico característico dos corpos viscoelásticos (Slide 19) no qual ocorre perda e amortecimento de energia mecânica durante ciclos de carga e descarga?",
     "options": [
-      "A tendência de um corpo para manter permanentemente a deformação máxima sem nunca mais recuperar.",
-      "A capacidade de um corpo se dissolver espontaneamente em água destilada a vinte graus Celsius.",
-      "A resistência que um material oferece à passagem de uma corrente elétrica de alta voltagem.",
-      "A propriedade física responsável pelo retorno de um corpo à sua forma original após cessar a força deformadora."
+      "Decaimento radioativo beta.",
+      "Pressão capilar superficial.",
+      "Indução eletromagnética rotativa.",
+      "Dissipação de energia por histerese."
     ],
     "correctIndex": 3,
-    "explanation": "A elasticidade mede a capacidade de recuperação elástica reversível da geometria inicial quando as forças cessam.",
+    "explanation": "O Slide 19 destaca formalmente a propriedade única: 'dissipação de energia por histerese (ossos e músculos)'.",
     "distractorAnalysis": [
-      "Está incorreta: Manter permanentemente a deformação máxima caracteriza a plasticidade e não a elasticidade.",
-      "Está incorreta: Dissolução em água é uma propriedade química de solubilidade, alheia à elasticidade mecânica.",
-      "Está incorreta: A oposição à corrente elétrica é a resistividade elétrica em Ohms, não a elasticidade física."
+      "Está incorreta: Decaimento beta é um fenómeno nuclear subatómico de física das radiações.",
+      "Está incorreta: Pressão capilar é a força hidrostática distribuída na pele (Slide 44).",
+      "Está incorreta: Indução eletromagnética pertence ao eletromagnetismo clássico."
     ],
-    "nursingApplication": "Explica o comportamento de molas de equipamentos hospitalares e de tecidos de suporte."
+    "nursingApplication": "A histerese permite que as cartilagens e ossos absorvam a energia do impacto de cada passada sem quebrar."
   },
   {
     "id": 2044,
     "topicId": 2,
-    "question": "Qual é a diferença fundamental entre uma deformação elástica e uma deformação plástica?",
+    "question": "Por que razão a combinação de elasticidade com viscosidade (viscoelasticidade) é tão vantajosa para ossos, músculos e cartilagens?",
     "options": [
-      "A deformação elástica é reversível (o corpo recupera a forma original); a deformação plástica é permanente e irreversível.",
-      "A deformação elástica é permanente; a deformação plástica recupera a forma original instantaneamente.",
-      "Ambas as deformações são rigorosamente reversíveis e obedecem à Lei de Hooke até à fratura.",
-      "A deformação elástica só ocorre em gases e a deformação plástica ocorre exclusivamente no vácuo."
+      "Porque une a capacidade elástica de sustentação de carga e restituição de forma com o amortecimento viscoso dependente do tempo que dissipa choques mecânicos.",
+      "Porque permite ao esqueleto transformar-se em água durante a corrida.",
+      "Porque anula completamente o peso corporal do utente durante a marcha.",
+      "Porque impede que os ossos sofram qualquer esforço de compressão diária."
     ],
     "correctIndex": 0,
-    "explanation": "Na região elástica o corpo recupera a forma ao retirar a carga; na região plástica a alteração dimensional persiste.",
+    "explanation": "Se o osso fosse puramente elástico como o aço ou vidro, vibraria e transmitiria todo o choque às articulações; a viscoelasticidade permite amortecer e dissipar parte da energia mecânica por histerese, protegendo o sistema osteomuscular.",
     "distractorAnalysis": [
-      "Está incorreta: A afirmação inverte os conceitos: o comportamento plástico é que é permanente e não reversível.",
-      "Está incorreta: A deformação plástica não é reversível nem obedece à linearidade da Lei de Hooke.",
-      "Está incorreta: Tanto a deformação elástica como a plástica são comportamentos mecânicos característicos de corpos sólidos."
+      "Está incorreta: O esqueleto mantém a integridade estrutural sólida sem se liquefazer.",
+      "Está incorreta: O peso gravitacional continua a atuar plenamente sobre a massa do organismo.",
+      "Está incorreta: Os ossos suportam continuamente compressão, deformando-se de forma amortecida (Slide 30)."
     ],
-    "nursingApplication": "Fundamental para entender quando uma sobrecarga mecânica causa lesão estrutural irreversível."
+    "nursingApplication": "Explica a capacidade adaptativa do corpo humano para suportar impactos na corrida e salto."
   },
   {
     "id": 2045,
     "topicId": 2,
-    "question": "O que acontece à energia mecânica fornecida a uma mola perfeitamente elástica durante a sua deformação?",
+    "question": "Ao comprimir uma esponja húmida ou uma cartilagem articular (Slide 12), o que se observa quanto à deformação produzida?",
     "options": [
-      "Dissipa-se totalmente e de forma irreversível sob a forma de radiação cósmica de fundo.",
-      "Fica armazenada sob a forma de energia potencial elástica e é devolvida integralmente na descompressão.",
-      "É convertida em massa atómica adicional, aumentando o peso da mola em noventa por cento.",
-      "Desaparece do universo sem deixar qualquer vestígio físico, violando o princípio da conservação."
+      "A deformação ocorre instantaneamente e nunca depende do tempo.",
+      "A deformação depende tanto da intensidade da tensão como do tempo de aplicação dessa tensão.",
+      "A esponja não acusa qualquer deformação dimensional por ser indeformável.",
+      "A cartilagem estica-se longitudinalmente como um tendão em tração pura."
     ],
     "correctIndex": 1,
-    "explanation": "Sólidos elásticos ideais armazenam o trabalho mecânico como energia potencial elástica reversível.",
+    "explanation": "O Slide 12 salienta: 'Deformação depende da tensão e do tempo de aplicação dessa tensão. Esponja, cartilagem'. Sob carga contínua, o fluido intersticial é expulso lentamente, aumentando a deformação ao longo do tempo.",
     "distractorAnalysis": [
-      "Está incorreta: A energia não se transforma em radiação cósmica; permanece no sistema mecânico.",
-      "Está incorreta: A energia mecânica não se converte em massa mensurável de acordo com as leis da mecânica clássica.",
-      "Está incorreta: A energia total conserva-se estritamente, sendo devolvida pelo corpo ao recuperar a forma inicial."
+      "Está incorreta: A dependência temporal é a marca registada da viscoelasticidade, ao contrário dos sólidos puramente elásticos.",
+      "Está incorreta: Esponjas e cartilagens são altamente deformáveis perante forças de compressão.",
+      "Está incorreta: Compressão reduz a espessura, não sendo tração longitudinal."
     ],
-    "nursingApplication": "Princípio físico de colchões e sistemas de suspensão que absorvem e devolvem cargas mecânicas."
+    "nursingApplication": "Explica por que os discos intervertebrais perdem espessura ao longo do dia, tornando as pessoas ligeiramente mais baixas à noite."
   },
   {
     "id": 2046,
     "topicId": 2,
-    "question": "Qual dos seguintes materiais do quotidiano é um exemplo típico de comportamento predominantemente elástico com grande retorno de forma?",
+    "question": "O que representa graficamente a 'Histerese' num ciclo de carga (compressão) e descarga (descompressão) de um tecido viscoelástico?",
     "options": [
-      "Uma barra de plasticina moldada com os dedos.",
-      "Um pedaço de argila húmida fresca.",
-      "Uma mola de aço espiral.",
-      "Uma porção de massa de pão levedada."
+      "Uma linha reta perfeita onde o caminho de ida e de volta coincidem exatamente.",
+      "Um ponto único sem qualquer área interna.",
+      "Um ciclo fechado (laço de histerese) onde a curva de descarga não coincide com a de carga, correspondendo a área interna à energia mecânica dissipada sob a forma de calor.",
+      "Uma parábola vertical que sobe até ao infinito sem retornar à origem."
     ],
     "correctIndex": 2,
-    "explanation": "As molas de aço metálicas exibem comportamento elástico exemplar, recuperando a forma após serem comprimidas.",
+    "explanation": "Na histerese mecânica, a curva de libertação de tensão passa por valores inferiores aos da curva de deformação inicial. A área delimitada entre as duas curvas mede precisamente a energia mecânica absorvida e dissipada pelo tecido.",
     "distractorAnalysis": [
-      "Está incorreta: A plasticina é um material plástico clássico que mantém a forma deformada sem retornar.",
-      "Está incorreta: A argila húmida deforma-se plasticamente sob pressão e não recupera a geometria original.",
-      "Está incorreta: A massa de pão é um corpo plastoviscoelástico que retém deformações permanentes sob tensão."
+      "Está incorreta: Coincidência exata das curvas de ida e volta ocorre nos sólidos elásticos ideais de Hooke sem amortecimento.",
+      "Está incorreta: Um laço de histerese possui área interna bem definida diferente de zero.",
+      "Está incorreta: O ciclo é fechado porque o tecido viscoelástico recupera a forma após o tempo de relaxamento."
     ],
-    "nursingApplication": "Molas de aço são a base de balanças mecânicas e dinamómetros de precisão hospitalares."
+    "nursingApplication": "Fundamental para entender como ligamentos e tendões absorvem e atenuam impactos articulares repetidos."
   },
   {
     "id": 2047,
     "topicId": 2,
-    "question": "Quando uma força deformadora ultrapassa o limite elástico de um material real, que tipo de deformação passa a ocorrer?",
+    "question": "Durante o impacto de cada passada na marcha de um enfermeiro, como atua a cartilagem do joelho e os discos da coluna (Slides 12 e 19)?",
     "options": [
-      "Deformação de Euclides perfeitamente indeformável.",
-      "Retorno instantâneo e espontâneo à forma inicial a velocidade infinita.",
-      "Anulação absoluta de todas as forças gravíticas sobre o corpo.",
-      "Deformação plástica permanente irreversível."
+      "Atuam como sólidos de Euclides que transmitem o choque a 100% até ao crânio.",
+      "Deformam-se plasticamente de forma permanente ficando achatados para sempre.",
+      "Escoam como mel quente saindo para fora das articulações.",
+      "Atuam como amortecedores viscoelásticos, sofrendo deformação dependente do tempo e dissipando a energia do impacto por histerese."
     ],
     "correctIndex": 3,
-    "explanation": "Ultrapassado o limite elástico (limiar de elasticidade), as ligações moleculares cedem e a deformação torna-se plástica.",
+    "explanation": "As cartilagens articulares e discos intervertebrais combinam sustentação elástica com dissipação histerética do choque mecânico, protegendo as superfícies ósseas contra o desgaste e fraturas de sobrecarga.",
     "distractorAnalysis": [
-      "Está incorreta: Sólidos de Euclides são modelos teóricos indeformáveis; materiais reais deformam-se plasticamente.",
-      "Está incorreta: Acima do limite elástico o corpo já não regressa à forma original, ficando deformado.",
-      "Está incorreta: A gravidade continua a atuar plenamente sobre a massa do corpo material."
+      "Está incorreta: Se fossem indeformáveis, os choques sucessivos provocariam cefaleias e lesões articulares severas.",
+      "Está incorreta: As cartilagens recuperam a espessura durante o repouso noturno, não sofrendo deformação plástica permanente em condições fisiológicas.",
+      "Está incorreta: O líquido e matriz proteica mantêm-se contidos pela cápsula articular e ligamentos."
     ],
-    "nursingApplication": "Explica o momento em que um suporte metálico se dobra permanentemente por excesso de carga."
+    "nursingApplication": "Justifica a importância do uso de calçado com sola amortecedora durante turnos prolongados de pé."
   },
   {
     "id": 2048,
     "topicId": 2,
-    "question": "Se um material se deforma facilmente sob uma força e não regressa à sua forma original após a remoção da carga, esse material diz-se:",
+    "question": "A recuperação da forma de uma cartilagem articular após a remoção de uma carga prolongada:",
     "options": [
-      "Plástico.",
-      "Perfeitamente elástico.",
-      "Rigidamente indeformável.",
-      "Supercondutor térmico."
+      "Ocorre gradualmente ao longo do tempo (recuperação dependente do tempo), em vez de ser instantânea.",
+      "Ocorre em menos de um milissegundo como uma mola de aço ideal.",
+      "Nunca ocorre, mantendo-se a cartilagem esmagada para sempre.",
+      "Apenas ocorre se o doente for submetido a cirurgia ortopédica."
     ],
     "correctIndex": 0,
-    "explanation": "Os corpos plásticos sofrem deformações permanentes irreversíveis, não recuperando a sua forma inicial.",
+    "explanation": "Devido à componente viscosa dos tecidos viscoelásticos, o fluido reabsorve-se lentamente na matriz colagénica, exigindo tempo para a recuperação dimensional completa.",
     "distractorAnalysis": [
-      "Está incorreta: Um corpo perfeitamente elástico recuperaria a sua forma original quando a força cessasse.",
-      "Está incorreta: Um corpo indeformável não sofreria qualquer deformação perante a força aplicada.",
-      "Está incorreta: Supercondutividade térmica é uma propriedade de transporte de calor em baixas temperaturas, não de mecânica."
+      "Está incorreta: A recuperação instantânea é a característica do sólido puramente elástico de Hooke (Slide 16).",
+      "Está incorreta: A cartilagem é dotada de elasticidade e recupera a sua espessura normal após o alívio da carga.",
+      "Está incorreta: A restituição da espessura é um processo biológico passivo natural durante o repouso."
     ],
-    "nursingApplication": "A plasticina é o exemplo mais intuitivo de corpo com comportamento puramente plástico."
+    "nursingApplication": "Reforça a necessidade de alternar períodos de bipedestação com períodos de alívio e descanso articular."
   },
   {
     "id": 2049,
     "topicId": 2,
-    "question": "Qual é a definição exata de Reologia no estudo da Biofísica?",
+    "question": "Se uma força for aplicada de forma extremamente rápida sobre um tecido viscoelástico comparativamente a uma força aplicada muito lentamente:",
     "options": [
-      "O estudo da velocidade de emissão de partículas alfa em elementos radioativos de transição.",
-      "O ramo da física que estuda as reações dos corpos à ação de forças deformadoras aplicadas sobre a sua estrutura.",
-      "A área que analisa exclusivamente o campo gravitacional gerado por massas puntiformes no vácuo.",
-      "A parte da ótica geométrica que investiga a refração da luz branca em prismas triangulares."
+      "O tecido deforma-se muito mais facilmente e comporta-se como mel líquido.",
+      "O tecido responde com maior rigidez aparente à carga rápida devido à resistência do componente viscoso.",
+      "O tecido perde toda a sua constante elástica e quebra de imediato.",
+      "Não há qualquer diferença na resposta mecânica sob qualquer velocidade."
     ],
     "correctIndex": 1,
-    "explanation": "A Reologia investiga como os materiais se deformam e fluem sob a ação de forças mecânicas externas.",
+    "explanation": "Uma propriedade notável da viscoelasticidade é a sensibilidade à taxa de deformação: sob forças rápidas e súbitas o componente viscoso não tem tempo de escoar e opõe enorme resistência, tornando o tecido aparentemente mais rígido.",
     "distractorAnalysis": [
-      "Está incorreta: Emissões alfa pertencem à física nuclear e radioatividade, não à reologia.",
-      "Está incorreta: Campos gravitacionais de massas no vácuo pertencem à gravitação universal de Newton.",
-      "Está incorreta: Refração da luz em prismas é o domínio da ótica ondulatória e geométrica."
+      "Está incorreta: Cargas rápidas aumentam a rigidez aparente, não diminuem.",
+      "Está incorreta: A maior rigidez protege as estruturas anatómicas durante traumas dinâmicos moderados.",
+      "Está incorreta: A taxa de aplicação da carga é um determinante primário da resposta viscoelástica."
     ],
-    "nursingApplication": "Permite compreender como os biomateriais e tecidos de suporte respondem a cargas mecânicas."
+    "nursingApplication": "Explica por que os ligamentos e ossos suportam melhor cargas breves e intensas do que tensões estáticas deformantes continuadas."
   },
   {
     "id": 2050,
     "topicId": 2,
-    "question": "O que é uma Força Deformadora na mecânica dos materiais?",
+    "question": "Nos slides de Biofísica, a expressão '(ossos e músculos)' surge explicitamente associada a qual das seguintes classes de corpos?",
     "options": [
-      "Uma força que apenas desloca o corpo no espaço sem provocar qualquer alteração na sua forma ou dimensões.",
-      "Uma força que anula a temperatura absoluta do sistema transformando o sólido em gás ideal.",
-      "Uma força externa que altera as distâncias relativas entre as partículas ou moléculas que constituem o corpo.",
-      "Uma força microscópica que atua exclusivamente no interior do núcleo de átomos pesados."
+      "Sólidos de Euclides.",
+      "Corpos Plásticos puros.",
+      "Corpos Viscoelásticos (Slide 19).",
+      "Corpos Viscosos de Newton."
     ],
     "correctIndex": 2,
-    "explanation": "Forças deformadoras produzem tensões internas que modificam a geometria ou volume do sólido.",
+    "explanation": "O Slide 19 indica sem ambiguidade no ponto 5: '5. Corpos Viscoelásticos: Deformação dependente da tensão e do tempo; dissipação de energia por histerese (ossos e músculos)'.",
     "distractorAnalysis": [
-      "Está incorreta: Forças que apenas aceleram o corpo em bloco sem o deformar atuam como forças puramente translacionais.",
-      "Está incorreta: Forças mecânicas não anulam a temperatura absoluta nem criam gases ideais.",
-      "Está incorreta: Forças no núcleo atómico são forças nucleares fortes e fracas, não forças de deformação macroscópicas."
+      "Está incorreta: Sólidos de Euclides são modelos teóricos indeformáveis (Slide 15).",
+      "Está incorreta: Plasticina é o exemplo de corpos plásticos (Slide 10 e 17).",
+      "Está incorreta: Água e mel são os exemplos de corpos viscosos (Slide 11 e 18)."
     ],
-    "nursingApplication": "Reconhece que qualquer pressão excessiva exercida sobre uma estrutura produz deformação mecânica."
+    "nursingApplication": "Consolidação teórica da classificação reológica dos principais tecidos de sustentação e movimento do corpo humano."
   },
   {
     "id": 2051,
     "topicId": 2,
-    "question": "Na classificação reológica dos corpos, o que caracteriza um Sólido de Euclides?",
+    "question": "Qual é a característica reológica que define os 'Corpos Plastoviscoelásticos' nos Slides 13 e 20 de Biofísica?",
     "options": [
-      "É um corpo perfeitamente viscoso que se deforma como o mel a qualquer temperatura.",
-      "É um material plástico que se deforma permanentemente mesmo com forças infinitesimais.",
-      "É um fluido incompressível que escoa exclusivamente em regime turbulento a alta velocidade.",
-      "É um modelo teórico de sólido indeformável cuja distância interpartículas é estritamente invariável sob qualquer força."
+      "Nunca acusam qualquer deformação sob nenhuma tensão.",
+      "Comportam-se exclusivamente como gases perfeitos no vácuo.",
+      "Dissipam energia sem possuir qualquer propriedade elástica ou plástica.",
+      "Apresentam características dos corpos plásticos, viscosos e elásticos em simultâneo."
     ],
     "correctIndex": 3,
-    "explanation": "O sólido de Euclides é uma idealização da mecânica clássica: um sólido infinitamente rígido que nunca se deforma.",
+    "explanation": "O Slide 13 define expressamente: 'Corpos plastoviscoelásticos: Apresentam características dos corpos plásticos, viscosos e elásticos'.",
     "distractorAnalysis": [
-      "Está incorreta: Sólidos de Euclides são indeformáveis; corpos que fluem como o mel são corpos viscosos de Newton.",
-      "Está incorreta: Corpos plásticos deformam-se permanentemente; sólidos de Euclides não sofrem deformação alguma.",
-      "Está incorreta: Sólidos de Euclides são corpos sólidos rígidos, não fluidos em escoamento turbulento."
+      "Está incorreta: Nunca acusar deformação define os sólidos indeformáveis de Euclides (Slide 15).",
+      "Está incorreta: Gases perfeitos pertencem à termodinâmica dos fluidos, não aos corpos reológicos sólidos/pastosos.",
+      "Está incorreta: Os corpos plastoviscoelásticos combinam as três propriedades reológicas básicas."
     ],
-    "nursingApplication": "Modelo teórico usado na estática de alavancas para considerar os ossos como barras indeformáveis."
+    "nursingApplication": "Compreensão de sistemas reológicos complexos como biomateriais pastosos de penso e cimentos ósseos."
   },
   {
     "id": 2052,
     "topicId": 2,
-    "question": "Existem sólidos perfeitamente indeformáveis (Sólidos de Euclides) na natureza real?",
+    "question": "De acordo com a síntese do Slide 20, como se comportam os corpos plastoviscoelásticos sob pequenas tensões mecânicas?",
     "options": [
-      "Não, o sólido de Euclides é apenas um modelo teórico ideal; todos os corpos reais sofrem algum grau de deformação.",
-      "Sim, o diamante e o osso humano são sólidos de Euclides perfeitamente indeformáveis sob qualquer carga.",
-      "Sim, todos os metais sólidos comportam-se como sólidos de Euclides em qualquer intervalo de força.",
-      "Sim, qualquer objeto cuja massa seja superior a cem quilogramas torna-se automaticamente indeformável."
+      "Comportam-se como corpos elásticos (recuperando a sua forma inicial após a remoção da carga leve).",
+      "Comportam-se imediatamente como fluidos de alta viscosidade que escoam sem retorno.",
+      "Sofrem fratura explosiva fragmentando-se em pó fino.",
+      "Anulam a gravidade terrestre e entram em levitação estática."
     ],
     "correctIndex": 0,
-    "explanation": "Na física real, todos os materiais materiais cedem microscopicamente a tensões; o sólido rígido é uma aproximação útil.",
+    "explanation": "O Slide 20 especifica taxativamente: '6. Corpos plastoviscoelásticos: Comportam-se como corpos elásticos sob pequenas tensões; acima desse limiar, comportam-se como corpos plásticos'.",
     "distractorAnalysis": [
-      "Está incorreta: O diamante e o osso sofrem deformação e podem fraturar sob forças elevadas; não são indeformáveis.",
-      "Está incorreta: Os metais deformam-se elástica e plasticamente sob tensão; não são modelos rígidos perfeitos.",
-      "Está incorreta: A massa do corpo não impede a deformação; corpos com grande massa continuam a sofrer deformações mecânicas."
+      "Está incorreta: O escoamento plástico irreversível só se manifesta após superar o limiar de tensão.",
+      "Está incorreta: Pequenas tensões são absorvidas elasticamente sem fragmentação.",
+      "Está incorreta: As leis da gravitação de Newton mantêm-se invariáveis."
     ],
-    "nursingApplication": "Lembra que nenhuma estrutura do corpo humano é absolutamente indeformável perante impactos."
+    "nursingApplication": "Explica por que toques ligeiros não alteram a forma permanente de pastas e tecidos biológicos moldáveis."
   },
   {
     "id": 2053,
     "topicId": 2,
-    "question": "O que define e caracteriza um Sólido de Hooke na Reologia?",
+    "question": "De acordo com o Slide 20, o que acontece a um corpo plastoviscoelástico quando a tensão aplicada ULTRAPASSA o determinado limiar?",
     "options": [
-      "Um corpo viscoso que escoa lentamente com velocidade inversamente proporcional à pressão.",
-      "Um corpo puramente elástico cuja deformação é diretamente proporcional à intensidade da tensão mecânica aplicada.",
-      "Um material puramente plástico que só se deforma acima de temperaturas próximas do ponto de fusão.",
-      "Um corpo indeformável cujas moléculas não se movem mesmo sob forças infinitas."
+      "Transforma-se instantaneamente num sólido de Euclides indeformável.",
+      "Comporta-se como um corpo plástico, mantendo deformação permanente irreversível.",
+      "Recua com velocidade infinita para a forma original.",
+      "Emite calor por histerese sem mudar as suas dimensões."
     ],
     "correctIndex": 1,
-    "explanation": "Os sólidos de Hooke exibem elasticidade linear perfeita: a deformação varia linearmente com a tensão (Lei de Hooke).",
+    "explanation": "O Slide 20 determina: 'acima desse limiar, comportam-se como corpos plásticos', retendo a deformação máxima aplicada de forma permanente.",
     "distractorAnalysis": [
-      "Está incorreta: Escoar lentamente com o tempo é a característica dos corpos viscosos, não dos sólidos elásticos de Hooke.",
-      "Está incorreta: Deformação plástica dependente de temperatura descreve plasticidade térmica, não elasticidade de Hooke.",
-      "Está incorreta: O corpo indeformável sob forças infinitas é o sólido de Euclides, e não o sólido de Hooke."
+      "Está incorreta: Não se torna indeformável; pelo contrário, deforma-se plasticamente de forma extensa.",
+      "Está incorreta: Acima do limiar perde a capacidade de retorno elástico integral à forma original.",
+      "Está incorreta: A deformação dimensional é visível e permanente."
     ],
-    "nursingApplication": "O sólido de Hooke é o modelo utilizado para calibrar molas de camas e dinamómetros de tração."
+    "nursingApplication": "Comportamento idêntico ao de certos hidrogéis e materiais selantes usados em pensos avançados de feridas."
   },
   {
     "id": 2054,
     "topicId": 2,
-    "question": "Qual é o comportamento de um Sólido de Hooke quando a força deformadora que atuava sobre ele é removida?",
+    "question": "Qual é o exemplo do quotidiano apresentado nos Slides 13 e 20 para ilustrar um Corpo Plastoviscoelástico?",
     "options": [
-      "Permanece permanentemente deformado com a dimensão máxima atingida.",
-      "Fragmenta-se instantaneamente num pó microscópico por libertação de calor.",
-      "Restitui integral, instantânea e perfeitamente a sua forma e dimensões originais.",
-      "Começa a escoar lentamente como um líquido à temperatura ambiente."
+      "Aço de alta resistência.",
+      "Gelo seco a -78 ºC.",
+      "Massa de pão.",
+      "Agulha metálica de ponta romba."
     ],
     "correctIndex": 2,
-    "explanation": "Por ser perfeitamente elástico, o sólido de Hooke recupera a sua geometria original assim que a carga cessa.",
+    "explanation": "Os Slides 13 e 20 associam textualmente a 'Massa de pão' como o exemplo paradigmático de um corpo plastoviscoelástico.",
     "distractorAnalysis": [
-      "Está incorreta: Permanecer deformado é o comportamento dos corpos plásticos, não dos sólidos elásticos de Hooke.",
-      "Está incorreta: Fragmentar-se em pó é uma fratura catastrófica que não ocorre dentro do regime elástico de Hooke.",
-      "Está incorreta: Escoar como um líquido caracteriza corpos viscosos, não sólidos elásticos."
+      "Está incorreta: Aço é o exemplo de material extremamente rígido com módulo de 20 × 10¹⁰ N/m² (Slide 44).",
+      "Está incorreta: Gelo seco é dióxido de carbono sólido em sublimação termodinâmica.",
+      "Está incorreta: Agulha metálica é um instrumento rígido de aço inoxidável."
     ],
-    "nursingApplication": "Explica o funcionamento contínuo de molas que voltam à posição de repouso após cada utilização."
+    "nursingApplication": "A massa de pão amassa-se plasticamente, flui lentamente no tempo e recupera elasticamente de toques leves."
   },
   {
     "id": 2055,
     "topicId": 2,
-    "question": "Qual dos seguintes objetos materiais é a melhor representação física de um Sólido de Hooke no quotidiano?",
+    "question": "Se pressionarmos muito suavemente a massa de pão com a ponta de um dedo (aplicando tensão bem abaixo do limiar) e retirarmos o dedo:",
     "options": [
-      "Uma barra de plasticina moldável à temperatura ambiente.",
-      "Uma poça de mel espesso a escorrer num plano inclinado.",
-      "Uma esponja ensopada em água morna sujeita a compressão lenta.",
-      "Uma mola metálica de aço a trabalhar dentro do seu limite elástico."
+      "Fica um buraco fundo permanente que nunca mais desaparece.",
+      "A massa líquida escorre pela mesa fora sem parar.",
+      "A massa evapora-se sob a forma de vapor de água.",
+      "A massa comporta-se elasticamente e recupera a sua forma original sem deformação permanente visível."
     ],
     "correctIndex": 3,
-    "explanation": "Molas metálicas de aço operam com excelente linearidade elástica (F = k·Δx), modelando perfeitamente o sólido de Hooke.",
+    "explanation": "Abaixo do limiar plástico, o material opera no seu regime elástico inicial (Slide 20: 'Comportam-se como corpos elásticos sob pequenas tensões'), recuperando a superfície original.",
     "distractorAnalysis": [
-      "Está incorreta: A plasticina é um corpo plástico que não recupera a forma original.",
-      "Está incorreta: O mel é um fluido viscoso de escoamento irreversível.",
-      "Está incorreta: A esponja ensopada é um corpo viscoelástico com escoamento de fluido poroso, não puramente elástico."
+      "Está incorreta: O buraco permanente só surge se a força exercida ultrapassar o limiar de tensão plástico.",
+      "Está incorreta: Abaixo do limiar o material retém integridade elástica e não escoa livremente.",
+      "Está incorreta: Não há vaporização de matéria biológica sob contacto mecânico suave."
     ],
-    "nursingApplication": "As molas de dinamómetros e suspensões mecânicas operam sob o modelo do sólido de Hooke."
+    "nursingApplication": "Ilustra de forma clara o comportamento elástico inicial de materiais plastoviscoelásticos."
   },
   {
     "id": 2056,
     "topicId": 2,
-    "question": "Na relação tensão-deformação de um Sólido de Hooke, a representação gráfica no regime elástico é:",
+    "question": "Quando um padeiro amassa vigorosamente a massa de pão superando o limiar de tensão e mantendo a força ao longo dos minutos:",
     "options": [
-      "Uma linha reta que passa pela origem das coordenadas cartesianas.",
-      "Uma parábola descendente que atinge o valor zero em grandes tensões.",
-      "Uma curva sinusoidal com oscilações periódicas infinitas.",
-      "Uma linha horizontal perfeitamente plana paralela ao eixo da deformação."
+      "A massa sofre deformação plástica permanente combinada com escoamento viscoso dependente do tempo.",
+      "A massa comporta-se como um sólido indeformável de Euclides.",
+      "A massa adquire a constante de Hooke de uma mola de dinamómetro.",
+      "A massa anula toda a força normal contra a bancada."
     ],
     "correctIndex": 0,
-    "explanation": "Como a tensão é diretamente proporcional à deformação (σ = E·ε), o gráfico é uma reta com declive igual a E.",
+    "explanation": "Superado o limiar, manifestam-se as componentes plástica (retenção da nova forma moldada) e viscosa (taxa de deformação dependente do tempo de manipulação mecânica).",
     "distractorAnalysis": [
-      "Está incorreta: Uma parábola representaria uma relação não linear quadrática, alheia à linearidade da Lei de Hooke.",
-      "Está incorreta: Curvas sinusoidais ocorrem em fenómenos ondulatórios ou oscilatórios no tempo, não no ensaio estático de Hooke.",
-      "Está incorreta: Uma linha horizontal representaria deformação infinita sob tensão constante (escoamento plástico perfeito)."
+      "Está incorreta: Sólidos de Euclides nunca se deformam (Slide 15), o oposto da massa ao ser amassada.",
+      "Está incorreta: Molas de Hooke devolvem integralmente a forma inicial, o que a massa sovada não faz.",
+      "Está incorreta: A bancada continua a exercer força normal de reação em equilíbrio de sustentação."
     ],
-    "nursingApplication": "O declive da reta tensão-deformação fornece o Módulo de Young (rigidez) do material."
+    "nursingApplication": "Demonstração prática da tríade: elasticidade leve, plasticidade pós-limiar e escoamento viscoso temporal."
   },
   {
     "id": 2057,
     "topicId": 2,
-    "question": "O que distingue essencialmente um Sólido de Euclides de um Sólido de Hooke?",
+    "question": "O que determina a transição entre a resposta elástica e a resposta plástica num corpo plastoviscoelástico (Slide 20)?",
     "options": [
-      "O sólido de Euclides deforma-se como a plasticina e o de Hooke nunca altera o seu volume.",
-      "O sólido de Euclides nunca se deforma perante nenhuma força; o de Hooke deforma-se proporcionalmente à tensão aplicada.",
-      "O sólido de Euclides é líquido à temperatura ambiente e o de Hooke é um gás comprimido.",
-      "Ambos os sólidos são absolutamente idênticos em todas as propriedades físicas da mecânica."
+      "A altitude do laboratório em relação ao nível do mar.",
+      "O valor da tensão aplicada relativamente ao limiar de tensão do material.",
+      "A velocidade da rotação da Terra em torno do Sol.",
+      "O número atómico dos neutrões do ar circundante."
     ],
     "correctIndex": 1,
-    "explanation": "Euclides = modelo teórico indeformável (rigidez infinita); Hooke = modelo elástico linear ideal (rigidez finita).",
+    "explanation": "O limiar de tensão é a fronteira reológica do material: tensões < limiar produzem resposta elástica reversível; tensões > limiar produzem deformação plástica irreversível (Slide 20).",
     "distractorAnalysis": [
-      "Está incorreta: O sólido de Euclides não se deforma; corpos que se comportam como a plasticina são corpos plásticos.",
-      "Está incorreta: Tanto o modelo de Euclides como o de Hooke representam corpos sólidos, e não fluidos ou gases.",
-      "Está incorreta: São modelos conceptualmente distintos com equações de resposta mecânica totalmente diferentes."
+      "Está incorreta: A transição mecânica decorre de forças de coesão interna do material, não de altitude geográfica.",
+      "Está incorreta: A rotação planetária não governa o limiar de escoamento mecânico de corpos plastoviscoelásticos.",
+      "Está incorreta: Neutrões não possuem número atómico e não determinam o limiar mecânico macroscópico."
     ],
-    "nursingApplication": "Permite distinguir quando tratamos um osso como alavanca rígida (Euclides) ou como elemento elástico (Hooke)."
+    "nursingApplication": "Conceito essencial para saber a força máxima que pode ser exercida num tecido sem causar deformidade plástica residual."
   },
   {
     "id": 2058,
     "topicId": 2,
-    "question": "A Lei de Hooke aplica-se a qualquer intensidade de força exercida sobre uma mola de aço real?",
+    "question": "A capacidade de um corpo responder como elástico a forças ínfimas, mas fluir plasticamente com retenção da nova forma sob forças intensas e duradouras traduz:",
     "options": [
-      "Sim, é válida para qualquer força finita ou infinita sem qualquer restrição física.",
-      "Não, a Lei de Hooke só se aplica quando a mola se encontra imersa em nitrogénio líquido.",
-      "Não, apenas é válida até ao Limite de Proporcionalidade (ou limite elástico) do material.",
-      "Sim, porque os metais mantêm a sua resposta elástica linear mesmo após sofrerem fratura."
+      "O comportamento indeformável de Euclides.",
+      "A rigidez elástica linear do aço.",
+      "O comportamento dos Corpos Plastoviscoelásticos (Slide 20).",
+      "O vácuo quântico absoluto."
     ],
     "correctIndex": 2,
-    "explanation": "Se a força for excessiva, o material ultrapassa o limite elástico, entra em regime plástico e deixa de obedecer a Hooke.",
+    "explanation": "Esta dualidade de resposta regida pelo limiar de tensão e modulada pelo tempo é a essência reológica dos corpos plastoviscoelásticos.",
     "distractorAnalysis": [
-      "Está incorreta: Nenhum material real obedece à Lei de Hooke para forças infinitas; todos têm limites de resistência.",
-      "Está incorreta: A Lei de Hooke aplica-se à temperatura ambiente normal e não exige nitrogénio líquido.",
-      "Está incorreta: Após a fratura ou na zona plástica a Lei de Hooke deixa de ser válida."
+      "Está incorreta: Sólidos de Euclides não acusam deformação sob nenhuma intensidade de força (Slide 15).",
+      "Está incorreta: O aço comporta-se como elástico de Hooke de elevadíssimo módulo até tensões colossais (Slide 44).",
+      "Está incorreta: O vácuo quântico é um estado de ausência de matéria na física de partículas."
     ],
-    "nursingApplication": "Alerta para o perigo de sobrecarregar dinamómetros ou molas hospitalares além do limite máximo."
+    "nursingApplication": "Permite aos alunos reconhecer a sexta categoria da taxonomia reológica dos slides."
   },
   {
     "id": 2059,
     "topicId": 2,
-    "question": "Na classificação reológica dos corpos, o que caracteriza um Sólido de Euclides?",
+    "question": "Na lista de síntese dos conceitos lecionados (Slide 20), qual é o nome formal do sexto e último tipo de corpo?",
     "options": [
-      "É um corpo perfeitamente viscoso que se deforma como o mel a qualquer temperatura.",
-      "É um material plástico que se deforma permanentemente mesmo com forças infinitesimais.",
-      "É um fluido incompressível que escoa exclusivamente em regime turbulento a alta velocidade.",
-      "É um modelo teórico de sólido indeformável cuja distância interpartículas é estritamente invariável sob qualquer força."
+      "Corpos Viscoelásticos.",
+      "Corpos Plásticos puros.",
+      "Sólidos de Hooke de primeira ordem.",
+      "Corpos plastoviscoelásticos."
     ],
     "correctIndex": 3,
-    "explanation": "O sólido de Euclides é uma idealização da mecânica clássica: um sólido infinitamente rígido que nunca se deforma.",
+    "explanation": "O Slide 20 numera expressamente: '6. Corpos plastoviscoelásticos: Comportam-se como corpos elásticos sob pequenas tensões; acima desse limiar, comportam-se como corpos plásticos'.",
     "distractorAnalysis": [
-      "Está incorreta: Sólidos de Euclides são indeformáveis; corpos que fluem como o mel são corpos viscosos de Newton.",
-      "Está incorreta: Corpos plásticos deformam-se permanentemente; sólidos de Euclides não sofrem deformação alguma.",
-      "Está incorreta: Sólidos de Euclides são corpos sólidos rígidos, não fluidos em escoamento turbulento."
+      "Está incorreta: Corpos Viscoelásticos é o ponto 5 do mesmo slide.",
+      "Está incorreta: Corpos Plásticos é o ponto 3 do mesmo slide.",
+      "Está incorreta: Sólidos de Hooke é o ponto 2 do mesmo slide."
     ],
-    "nursingApplication": "Modelo teórico usado na estática de alavancas para considerar os ossos como barras indeformáveis."
+    "nursingApplication": "Garante a memorização e correta ordenação das categorias reológicas do programa."
   },
   {
     "id": 2060,
     "topicId": 2,
-    "question": "Existem sólidos perfeitamente indeformáveis (Sólidos de Euclides) na natureza real?",
+    "question": "Que propriedade dos Corpos Viscosos está também presente na resposta mecânica dos plastoviscoelásticos?",
     "options": [
-      "Não, o sólido de Euclides é apenas um modelo teórico ideal; todos os corpos reais sofrem algum grau de deformação.",
-      "Sim, o diamante e o osso humano são sólidos de Euclides perfeitamente indeformáveis sob qualquer carga.",
-      "Sim, todos os metais sólidos comportam-se como sólidos de Euclides em qualquer intervalo de força.",
-      "Sim, qualquer objeto cuja massa seja superior a cem quilogramas torna-se automaticamente indeformável."
+      "A dependência da deformação em relação ao tempo de aplicação da força.",
+      "A restituição instantânea e integral da forma em 0,001 segundos.",
+      "A capacidade de evaporar espontaneamente à temperatura ambiente.",
+      "A ausência total de qualquer massa ou peso mensurável."
     ],
     "correctIndex": 0,
-    "explanation": "Na física real, todos os materiais materiais cedem microscopicamente a tensões; o sólido rígido é uma aproximação útil.",
+    "explanation": "O prefixo 'visco' traduz a presença de atrito interno dependente do tempo: quanto mais tempo a tensão atua, maior é o escoamento observado.",
     "distractorAnalysis": [
-      "Está incorreta: O diamante e o osso sofrem deformação e podem fraturar sob forças elevadas; não são indeformáveis.",
-      "Está incorreta: Os metais deformam-se elástica e plasticamente sob tensão; não são modelos rígidos perfeitos.",
-      "Está incorreta: A massa do corpo não impede a deformação; corpos com grande massa continuam a sofrer deformações mecânicas."
+      "Está incorreta: Restituição instantânea pertence à componente elástica de Hooke, não à viscosa.",
+      "Está incorreta: Viscosidade refere-se à resistência mecânica ao escoamento, não à taxa de evaporação.",
+      "Está incorreta: Todos os corpos plastoviscoelásticos são materiais macroscópicos com massa inercial bem definida."
     ],
-    "nursingApplication": "Lembra que nenhuma estrutura do corpo humano é absolutamente indeformável perante impactos."
+    "nursingApplication": "Consolida a compreensão dos componentes do termo 'plasto-visco-elástico'."
   },
   {
     "id": 2061,
     "topicId": 2,
-    "question": "O que define e caracteriza um Sólido de Hooke na Reologia?",
+    "question": "Qual dos seguintes corpos da Reologia é definido no Slide 15 como 'Modelos teóricos indeformáveis; distância interpartículas invariável sob qualquer força'?",
     "options": [
-      "Um corpo viscoso que escoa lentamente com velocidade inversamente proporcional à pressão.",
-      "Um corpo puramente elástico cuja deformação é diretamente proporcional à intensidade da tensão mecânica aplicada.",
-      "Um material puramente plástico que só se deforma acima de temperaturas próximas do ponto de fusão.",
-      "Um corpo indeformável cujas moléculas não se movem mesmo sob forças infinitas."
+      "Sólidos de Hooke.",
+      "Sólidos de Euclides.",
+      "Corpos Viscoelásticos.",
+      "Corpos Plásticos."
     ],
     "correctIndex": 1,
-    "explanation": "Os sólidos de Hooke exibem elasticidade linear perfeita: a deformação varia linearmente com a tensão (Lei de Hooke).",
+    "explanation": "O Slide 15 estabelece formalmente no ponto 1: '1. Sólidos de Euclides: Modelos teóricos indeformáveis; distância interpartículas invariável sob qualquer força'.",
     "distractorAnalysis": [
-      "Está incorreta: Escoar lentamente com o tempo é a característica dos corpos viscosos, não dos sólidos elásticos de Hooke.",
-      "Está incorreta: Deformação plástica dependente de temperatura descreve plasticidade térmica, não elasticidade de Hooke.",
-      "Está incorreta: O corpo indeformável sob forças infinitas é o sólido de Euclides, e não o sólido de Hooke."
+      "Está incorreta: Sólidos de Hooke sofrem deformação proporcional à tensão com restituição integral (Slide 16).",
+      "Está incorreta: Corpos Viscoelásticos sofrem deformação dependente do tempo com histerese (Slide 19).",
+      "Está incorreta: Corpos Plásticos sofrem deformação permanente após um limiar (Slide 17)."
     ],
-    "nursingApplication": "O sólido de Hooke é o modelo utilizado para calibrar molas de camas e dinamómetros de tração."
+    "nursingApplication": "Identificação imediata da primeira classe conceitual do resumo de Paulo Pereira."
   },
   {
     "id": 2062,
     "topicId": 2,
-    "question": "Qual é o comportamento de um Sólido de Hooke quando a força deformadora que atuava sobre ele é removida?",
+    "question": "Qual corpo da Reologia é definido no Slide 16 por 'Deformação elástica diretamente proporcional à tensão; restituição integral da forma original após remoção da tensão'?",
     "options": [
-      "Permanece permanentemente deformado com a dimensão máxima atingida.",
-      "Fragmenta-se instantaneamente num pó microscópico por libertação de calor.",
-      "Restitui integral, instantânea e perfeitamente a sua forma e dimensões originais.",
-      "Começa a escoar lentamente como um líquido à temperatura ambiente."
+      "Corpos Viscosos.",
+      "Sólidos de Euclides.",
+      "Sólidos de Hooke.",
+      "Corpos plastoviscoelásticos."
     ],
     "correctIndex": 2,
-    "explanation": "Por ser perfeitamente elástico, o sólido de Hooke recupera a sua geometria original assim que a carga cessa.",
+    "explanation": "O Slide 16 estabelece formalmente no ponto 2: '2. Sólidos de Hooke: Deformação elástica diretamente proporcional à tensão; restituição integral da forma original após remoção da tensão'.",
     "distractorAnalysis": [
-      "Está incorreta: Permanecer deformado é o comportamento dos corpos plásticos, não dos sólidos elásticos de Hooke.",
-      "Está incorreta: Fragmentar-se em pó é uma fratura catastrófica que não ocorre dentro do regime elástico de Hooke.",
-      "Está incorreta: Escoar como um líquido caracteriza corpos viscosos, não sólidos elásticos."
+      "Está incorreta: Corpos Viscosos não restituem a sua forma original (Slide 18).",
+      "Está incorreta: Sólidos de Euclides nunca acusam qualquer deformação (Slide 15).",
+      "Está incorreta: Corpos plastoviscoelásticos exibem comportamento plástico irreversível após o limiar (Slide 20)."
     ],
-    "nursingApplication": "Explica o funcionamento contínuo de molas que voltam à posição de repouso após cada utilização."
+    "nursingApplication": "Identificação do modelo elástico linear canónico da física clássica."
   },
   {
     "id": 2063,
     "topicId": 2,
-    "question": "Qual dos seguintes objetos materiais é a melhor representação física de um Sólido de Hooke no quotidiano?",
+    "question": "Qual corpo da Reologia é definido no Slide 17 por 'Só acusam deformação a partir de um limiar de tensão; mantêm permanentemente a deformação máxima'?",
     "options": [
-      "Uma barra de plasticina moldável à temperatura ambiente.",
-      "Uma poça de mel espesso a escorrer num plano inclinado.",
-      "Uma esponja ensopada em água morna sujeita a compressão lenta.",
-      "Uma mola metálica de aço a trabalhar dentro do seu limite elástico."
+      "Sólidos de Euclides.",
+      "Sólidos de Hooke.",
+      "Corpos Viscoelásticos.",
+      "Corpos Plásticos."
     ],
     "correctIndex": 3,
-    "explanation": "Molas metálicas de aço operam com excelente linearidade elástica (F = k·Δx), modelando perfeitamente o sólido de Hooke.",
+    "explanation": "O Slide 17 estabelece formalmente no ponto 3: '3. Corpos Plásticos: Só acusam deformação a partir de um limiar de tensão; mantêm permanentemente a deformação máxima'.",
     "distractorAnalysis": [
-      "Está incorreta: A plasticina é um corpo plástico que não recupera a forma original.",
-      "Está incorreta: O mel é um fluido viscoso de escoamento irreversível.",
-      "Está incorreta: A esponja ensopada é um corpo viscoelástico com escoamento de fluido poroso, não puramente elástico."
+      "Está incorreta: Sólidos de Euclides nunca se deformam sob qualquer tensão (Slide 15).",
+      "Está incorreta: Sólidos de Hooke deparam-se com restituição elástica integral e deformam antes de qualquer limiar rígido (Slide 16).",
+      "Está incorreta: Corpos Viscoelásticos exibem histerese e recuperação parcial no tempo (Slide 19)."
     ],
-    "nursingApplication": "As molas de dinamómetros e suspensões mecânicas operam sob o modelo do sólido de Hooke."
+    "nursingApplication": "Fixa a definição textual do terceiro grupo reológico da aula."
   },
   {
     "id": 2064,
     "topicId": 2,
-    "question": "Na relação tensão-deformação de um Sólido de Hooke, a representação gráfica no regime elástico é:",
+    "question": "Qual corpo da Reologia é definido no Slide 18 por 'Deformação dependente da tensão e do tempo; não restituem a sua forma original'?",
     "options": [
-      "Uma linha reta que passa pela origem das coordenadas cartesianas.",
-      "Uma parábola descendente que atinge o valor zero em grandes tensões.",
-      "Uma curva sinusoidal com oscilações periódicas infinitas.",
-      "Uma linha horizontal perfeitamente plana paralela ao eixo da deformação."
+      "Corpos Viscosos.",
+      "Sólidos de Euclides.",
+      "Sólidos de Hooke.",
+      "Corpos Viscoelásticos."
     ],
     "correctIndex": 0,
-    "explanation": "Como a tensão é diretamente proporcional à deformação (σ = E·ε), o gráfico é uma reta com declive igual a E.",
+    "explanation": "O Slide 18 estabelece formalmente no ponto 4: '4. Corpos Viscosos: Deformação dependente da tensão e do tempo; não restituem a sua forma original'.",
     "distractorAnalysis": [
-      "Está incorreta: Uma parábola representaria uma relação não linear quadrática, alheia à linearidade da Lei de Hooke.",
-      "Está incorreta: Curvas sinusoidais ocorrem em fenómenos ondulatórios ou oscilatórios no tempo, não no ensaio estático de Hooke.",
-      "Está incorreta: Uma linha horizontal representaria deformação infinita sob tensão constante (escoamento plástico perfeito)."
+      "Está incorreta: Sólidos de Euclides são indeformáveis (Slide 15).",
+      "Está incorreta: Sólidos de Hooke restituem integralmente a sua forma (Slide 16).",
+      "Está incorreta: Corpos Viscoelásticos possuem componente elástica com recuperação e histerese (Slide 19)."
     ],
-    "nursingApplication": "O declive da reta tensão-deformação fornece o Módulo de Young (rigidez) do material."
+    "nursingApplication": "Identificação imediata da quarta classe reológica dos slides."
   },
   {
     "id": 2065,
     "topicId": 2,
-    "question": "O que distingue essencialmente um Sólido de Euclides de um Sólido de Hooke?",
+    "question": "Qual corpo da Reologia é definido no Slide 19 por 'Deformação dependente da tensão e do tempo; dissipação de energia por histerese (ossos e músculos)'?",
     "options": [
-      "O sólido de Euclides deforma-se como a plasticina e o de Hooke nunca altera o seu volume.",
-      "O sólido de Euclides nunca se deforma perante nenhuma força; o de Hooke deforma-se proporcionalmente à tensão aplicada.",
-      "O sólido de Euclides é líquido à temperatura ambiente e o de Hooke é um gás comprimido.",
-      "Ambos os sólidos são absolutamente idênticos em todas as propriedades físicas da mecânica."
+      "Corpos Plásticos.",
+      "Corpos Viscoelásticos.",
+      "Sólidos de Euclides.",
+      "Sólidos de Hooke."
     ],
     "correctIndex": 1,
-    "explanation": "Euclides = modelo teórico indeformável (rigidez infinita); Hooke = modelo elástico linear ideal (rigidez finita).",
+    "explanation": "O Slide 19 estabelece formalmente no ponto 5: '5. Corpos Viscoelásticos: Deformação dependente da tensão e do tempo; dissipação de energia por histerese (ossos e músculos)'.",
     "distractorAnalysis": [
-      "Está incorreta: O sólido de Euclides não se deforma; corpos que se comportam como a plasticina são corpos plásticos.",
-      "Está incorreta: Tanto o modelo de Euclides como o de Hooke representam corpos sólidos, e não fluidos ou gases.",
-      "Está incorreta: São modelos conceptualmente distintos com equações de resposta mecânica totalmente diferentes."
+      "Está incorreta: Corpos Plásticos mantêm deformação permanente sem componente de histerese biológica de suporte (Slide 17).",
+      "Está incorreta: Sólidos de Euclides são indeformáveis (Slide 15).",
+      "Está incorreta: Sólidos de Hooke não dependem do tempo nem apresentam histerese nos ciclos de deformação (Slide 16)."
     ],
-    "nursingApplication": "Permite distinguir quando tratamos um osso como alavanca rígida (Euclides) ou como elemento elástico (Hooke)."
+    "nursingApplication": "O grupo reológico biológico mais relevante para a anatomia e biomecânica humana."
   },
   {
     "id": 2066,
     "topicId": 2,
-    "question": "A Lei de Hooke aplica-se a qualquer intensidade de força exercida sobre uma mola de aço real?",
+    "question": "Qual corpo da Reologia é definido no Slide 20 por 'Comportam-se como corpos elásticos sob pequenas tensões; acima desse limiar, comportam-se como corpos plásticos'?",
     "options": [
-      "Sim, é válida para qualquer força finita ou infinita sem qualquer restrição física.",
-      "Não, a Lei de Hooke só se aplica quando a mola se encontra imersa em nitrogénio líquido.",
-      "Não, apenas é válida até ao Limite de Proporcionalidade (ou limite elástico) do material.",
-      "Sim, porque os metais mantêm a sua resposta elástica linear mesmo após sofrerem fratura."
+      "Sólidos de Hooke.",
+      "Corpos Viscosos.",
+      "Corpos plastoviscoelásticos.",
+      "Sólidos de Euclides."
     ],
     "correctIndex": 2,
-    "explanation": "Se a força for excessiva, o material ultrapassa o limite elástico, entra em regime plástico e deixa de obedecer a Hooke.",
+    "explanation": "O Slide 20 estabelece formalmente no ponto 6: '6. Corpos plastoviscoelásticos: Comportam-se como corpos elásticos sob pequenas tensões; acima desse limiar, comportam-se como corpos plásticos'.",
     "distractorAnalysis": [
-      "Está incorreta: Nenhum material real obedece à Lei de Hooke para forças infinitas; todos têm limites de resistência.",
-      "Está incorreta: A Lei de Hooke aplica-se à temperatura ambiente normal e não exige nitrogénio líquido.",
-      "Está incorreta: Após a fratura ou na zona plástica a Lei de Hooke deixa de ser válida."
+      "Está incorreta: Sólidos de Hooke mantêm comportamento elástico linear sem transição para escoamento plástico permanente (Slide 16).",
+      "Está incorreta: Corpos Viscosos escoam continuamente e não possuem resposta elástica reversível (Slide 18).",
+      "Está incorreta: Sólidos de Euclides nunca se deformam sob nenhuma tensão (Slide 15)."
     ],
-    "nursingApplication": "Alerta para o perigo de sobrecarregar dinamómetros ou molas hospitalares além do limite máximo."
+    "nursingApplication": "Conclusão da taxonomia dos 6 corpos da reologia dos slides de Paulo Pereira."
   },
   {
     "id": 2067,
     "topicId": 2,
-    "question": "Na classificação reológica dos corpos, o que caracteriza um Sólido de Euclides?",
+    "question": "Qual é a associação CORRETA entre o tipo de corpo reológico e o exemplo prático indicado nos Slides 5 a 13?",
     "options": [
-      "É um corpo perfeitamente viscoso que se deforma como o mel a qualquer temperatura.",
-      "É um material plástico que se deforma permanentemente mesmo com forças infinitesimais.",
-      "É um fluido incompressível que escoa exclusivamente em regime turbulento a alta velocidade.",
-      "É um modelo teórico de sólido indeformável cuja distância interpartículas é estritamente invariável sob qualquer força."
+      "Hooke: Mel | Viscoso: Mola | Plástico: Massa de pão",
+      "Euclides: Esponja | Viscoelástico: Vidro | Plástico: Água",
+      "Plastoviscoelástico: Mola | Hooke: Plasticina | Viscoso: Cartilagem",
+      "Hooke: Mola | Plástico: Plasticina | Viscoso: Mel (ou água) | Viscoelástico: Esponja (ou cartilagem) | Plastoviscoelástico: Massa de pão"
     ],
     "correctIndex": 3,
-    "explanation": "O sólido de Euclides é uma idealização da mecânica clássica: um sólido infinitamente rígido que nunca se deforma.",
+    "explanation": "Os slides estabelecem rigorosamente os pares: Mola para Sólido de Hooke (Slide 5), Plasticina para Corpo Plástico (Slide 10), Água/Mel para Corpo Viscoso (Slide 11), Esponja/Cartilagem para Viscoelástico (Slide 12) e Massa de pão para Plastoviscoelástico (Slide 13).",
     "distractorAnalysis": [
-      "Está incorreta: Sólidos de Euclides são indeformáveis; corpos que fluem como o mel são corpos viscosos de Newton.",
-      "Está incorreta: Corpos plásticos deformam-se permanentemente; sólidos de Euclides não sofrem deformação alguma.",
-      "Está incorreta: Sólidos de Euclides são corpos sólidos rígidos, não fluidos em escoamento turbulento."
+      "Está incorreta: Mel é viscoso e mola é de Hooke; as correspondências estão trocadas.",
+      "Está incorreta: Esponja é viscoelástica e água é viscosa; pares totalmente incorretos.",
+      "Está incorreta: Massa de pão é plastoviscoelástica e mola é de Hooke; correspondências erradas."
     ],
-    "nursingApplication": "Modelo teórico usado na estática de alavancas para considerar os ossos como barras indeformáveis."
+    "nursingApplication": "Mapeamento mnemónico completo que garante o acerto imediato de questões de exame."
   },
   {
     "id": 2068,
     "topicId": 2,
-    "question": "Existem sólidos perfeitamente indeformáveis (Sólidos de Euclides) na natureza real?",
+    "question": "Em qual dos 6 corpos reológicos a distância interpartículas é assumida como perfeitamente invariável sob qualquer solicitação mecânica (Slide 15)?",
     "options": [
-      "Não, o sólido de Euclides é apenas um modelo teórico ideal; todos os corpos reais sofrem algum grau de deformação.",
-      "Sim, o diamante e o osso humano são sólidos de Euclides perfeitamente indeformáveis sob qualquer carga.",
-      "Sim, todos os metais sólidos comportam-se como sólidos de Euclides em qualquer intervalo de força.",
-      "Sim, qualquer objeto cuja massa seja superior a cem quilogramas torna-se automaticamente indeformável."
+      "Nos Sólidos de Euclides.",
+      "Nos Sólidos de Hooke.",
+      "Nos Corpos Viscosos.",
+      "Nos Corpos Plastoviscoelásticos."
     ],
     "correctIndex": 0,
-    "explanation": "Na física real, todos os materiais materiais cedem microscopicamente a tensões; o sólido rígido é uma aproximação útil.",
+    "explanation": "Apenas os Sólidos de Euclides possuem a hipótese de distância interpartículas estritamente invariável sob qualquer força, sendo por definição indeformáveis (Slide 15).",
     "distractorAnalysis": [
-      "Está incorreta: O diamante e o osso sofrem deformação e podem fraturar sob forças elevadas; não são indeformáveis.",
-      "Está incorreta: Os metais deformam-se elástica e plasticamente sob tensão; não são modelos rígidos perfeitos.",
-      "Está incorreta: A massa do corpo não impede a deformação; corpos com grande massa continuam a sofrer deformações mecânicas."
+      "Está incorreta: Nos sólidos de Hooke a distância entre partículas varia proporcionalmente à tensão (Slide 16).",
+      "Está incorreta: Nos corpos viscosos as partículas afastam-se e deslizam umas sobre as outras (Slide 18).",
+      "Está incorreta: Nos plastoviscoelásticos a distância interpartículas altera-se em função da tensão e tempo (Slide 20)."
     ],
-    "nursingApplication": "Lembra que nenhuma estrutura do corpo humano é absolutamente indeformável perante impactos."
+    "nursingApplication": "Conceito exclusivo do modelo teórico euclidiano de corpo rígido."
   },
   {
     "id": 2069,
     "topicId": 2,
-    "question": "O que define e caracteriza um Sólido de Hooke na Reologia?",
+    "question": "Qual é a diferença de restituição entre um Corpo Plástico e um Sólido de Hooke quando a força deformadora é totalmente removida?",
     "options": [
-      "Um corpo viscoso que escoa lentamente com velocidade inversamente proporcional à pressão.",
-      "Um corpo puramente elástico cuja deformação é diretamente proporcional à intensidade da tensão mecânica aplicada.",
-      "Um material puramente plástico que só se deforma acima de temperaturas próximas do ponto de fusão.",
-      "Um corpo indeformável cujas moléculas não se movem mesmo sob forças infinitas."
+      "O corpo plástico recupera 100% da forma e o de Hooke fica permanentemente deformado.",
+      "O sólido de Hooke restitui integralmente a sua forma original, enquanto o corpo plástico mantém permanentemente a deformação máxima.",
+      "Ambos recuperam exatamente a metade da forma original.",
+      "Nenhum dos dois recupera a forma, transformando-se ambos em líquidos."
     ],
     "correctIndex": 1,
-    "explanation": "Os sólidos de Hooke exibem elasticidade linear perfeita: a deformação varia linearmente com a tensão (Lei de Hooke).",
+    "explanation": "A essência da distinção nos Slides 16 e 17 é a restituição: o sólido de Hooke volta totalmente à forma inicial (reversibilidade elástica), ao passo que o corpo plástico retém a deformação permanentemente (irreversibilidade plástica).",
     "distractorAnalysis": [
-      "Está incorreta: Escoar lentamente com o tempo é a característica dos corpos viscosos, não dos sólidos elásticos de Hooke.",
-      "Está incorreta: Deformação plástica dependente de temperatura descreve plasticidade térmica, não elasticidade de Hooke.",
-      "Está incorreta: O corpo indeformável sob forças infinitas é o sólido de Euclides, e não o sólido de Hooke."
+      "Está incorreta: As afirmações estão invertidas: é o de Hooke que recupera e o plástico que retém a deformação.",
+      "Está incorreta: O sólido de Hooke recupera a totalidade (100%), não apenas metade.",
+      "Está incorreta: Sólidos elásticos de Hooke mantêm a solidez e recuperam a sua geometria basal."
     ],
-    "nursingApplication": "O sólido de Hooke é o modelo utilizado para calibrar molas de camas e dinamómetros de tração."
+    "nursingApplication": "Conceito crucial para a caracterização de materiais biomédicos e próteses articulares."
   },
   {
     "id": 2070,
     "topicId": 2,
-    "question": "Qual é o comportamento de um Sólido de Hooke quando a força deformadora que atuava sobre ele é removida?",
+    "question": "A propriedade de 'dissipação de energia por histerese' é atribuída no resumo de Paulo Pereira (Slide 19) exclusivamente a qual classe?",
     "options": [
-      "Permanece permanentemente deformado com a dimensão máxima atingida.",
-      "Fragmenta-se instantaneamente num pó microscópico por libertação de calor.",
-      "Restitui integral, instantânea e perfeitamente a sua forma e dimensões originais.",
-      "Começa a escoar lentamente como um líquido à temperatura ambiente."
+      "Aos Sólidos de Euclides.",
+      "Aos Sólidos de Hooke puros.",
+      "Aos Corpos Viscoelásticos (ossos e músculos).",
+      "Aos Corpos Plásticos puros."
     ],
     "correctIndex": 2,
-    "explanation": "Por ser perfeitamente elástico, o sólido de Hooke recupera a sua geometria original assim que a carga cessa.",
+    "explanation": "O Slide 19 menciona a dissipação por histerese como a marca do ponto 5: '5. Corpos Viscoelásticos: Deformação dependente da tensão e do tempo; dissipação de energia por histerese (ossos e músculos)'.",
     "distractorAnalysis": [
-      "Está incorreta: Permanecer deformado é o comportamento dos corpos plásticos, não dos sólidos elásticos de Hooke.",
-      "Está incorreta: Fragmentar-se em pó é uma fratura catastrófica que não ocorre dentro do regime elástico de Hooke.",
-      "Está incorreta: Escoar como um líquido caracteriza corpos viscosos, não sólidos elásticos."
+      "Está incorreta: Sólidos de Euclides não se deformam e não dissipam energia de deformação (Slide 15).",
+      "Está incorreta: Sólidos de Hooke armazenam energia elástica sem dissipação histerética ideal (Slide 16).",
+      "Está incorreta: Corpos plásticos absorvem energia de deformação permanente sem laço histerético de retorno biológico."
     ],
-    "nursingApplication": "Explica o funcionamento contínuo de molas que voltam à posição de repouso após cada utilização."
+    "nursingApplication": "Chave conceptual de diferenciação da biomecânica dos tecidos vivos de suporte e locomoção."
   },
   {
     "id": 2071,
     "topicId": 2,
-    "question": "Qual dos seguintes objetos materiais é a melhor representação física de um Sólido de Hooke no quotidiano?",
+    "question": "Como são caracterizadas as 'Forças de compressão' nos Slides 21, 24 e 30 de Biofísica?",
     "options": [
-      "Uma barra de plasticina moldável à temperatura ambiente.",
-      "Uma poça de mel espesso a escorrer num plano inclinado.",
-      "Uma esponja ensopada em água morna sujeita a compressão lenta.",
-      "Uma mola metálica de aço a trabalhar dentro do seu limite elástico."
+      "Forças tangenciais paralelas que cortam as superfícies.",
+      "Momentos de rotação que torcem o osso em torno do seu eixo.",
+      "Forças divergentes que aumentam o comprimento longitudinal da barra.",
+      "Forças convergentes que atuam no sentido de aproximar as extremidades do corpo."
     ],
     "correctIndex": 3,
-    "explanation": "Molas metálicas de aço operam com excelente linearidade elástica (F = k·Δx), modelando perfeitamente o sólido de Hooke.",
+    "explanation": "Os Slides 21, 24 e 30 definem as forças de compressão taxativamente como: 'Forças de compressão: Forças convergentes'.",
     "distractorAnalysis": [
-      "Está incorreta: A plasticina é um corpo plástico que não recupera a forma original.",
-      "Está incorreta: O mel é um fluido viscoso de escoamento irreversível.",
-      "Está incorreta: A esponja ensopada é um corpo viscoelástico com escoamento de fluido poroso, não puramente elástico."
+      "Está incorreta: Forças tangenciais paralelas definem o Cisalhamento (Slide 27 e 33).",
+      "Está incorreta: Momento de rotação em torno do eixo define a Torção (Slide 28 e 34).",
+      "Está incorreta: Forças divergentes definem as Forças de Tração (Slide 23 e 31)."
     ],
-    "nursingApplication": "As molas de dinamómetros e suspensões mecânicas operam sob o modelo do sólido de Hooke."
+    "nursingApplication": "A compressão é o esforço primordial suportado pela coluna vertebral e membros inferiores na postura ereta."
   },
   {
     "id": 2072,
     "topicId": 2,
-    "question": "Na relação tensão-deformação de um Sólido de Hooke, a representação gráfica no regime elástico é:",
+    "question": "O que acontece às dimensões geométricas de uma barra sujeita a forças de compressão de acordo com os Slides 21 e 24?",
     "options": [
-      "Uma linha reta que passa pela origem das coordenadas cartesianas.",
-      "Uma parábola descendente que atinge o valor zero em grandes tensões.",
-      "Uma curva sinusoidal com oscilações periódicas infinitas.",
-      "Uma linha horizontal perfeitamente plana paralela ao eixo da deformação."
+      "Diminuição do comprimento da barra (L) e Aumento da área de secção (S).",
+      "Aumento do comprimento da barra (L) e Diminuição da área de secção (S).",
+      "Aumento simultâneo do comprimento e da área de secção transversal.",
+      "As dimensões mantêm-se rigorosamente invariáveis como num sólido de Euclides."
     ],
     "correctIndex": 0,
-    "explanation": "Como a tensão é diretamente proporcional à deformação (σ = E·ε), o gráfico é uma reta com declive igual a E.",
+    "explanation": "Os Slides 21 e 24 indicam textualmente como consequências da compressão: 'Diminuição do comprimento da barra (L) | Aumento da área de secção (S)'.",
     "distractorAnalysis": [
-      "Está incorreta: Uma parábola representaria uma relação não linear quadrática, alheia à linearidade da Lei de Hooke.",
-      "Está incorreta: Curvas sinusoidais ocorrem em fenómenos ondulatórios ou oscilatórios no tempo, não no ensaio estático de Hooke.",
-      "Está incorreta: Uma linha horizontal representaria deformação infinita sob tensão constante (escoamento plástico perfeito)."
+      "Está incorreta: Aumento de L e diminuição de S é o efeito das Forças de Tração (Slide 23 e 24).",
+      "Está incorreta: Aumentar simultaneamente ambas as dimensões violaria a conservação da densidade e volume do sólido.",
+      "Está incorreta: Dimensões invariáveis só ocorrem no modelo puramente teórico indeformável."
     ],
-    "nursingApplication": "O declive da reta tensão-deformação fornece o Módulo de Young (rigidez) do material."
+    "nursingApplication": "Explica por que estruturas comprimidas sofrem encurtamento longitudinal e alargamento transversal."
   },
   {
     "id": 2073,
     "topicId": 2,
-    "question": "O que distingue essencialmente um Sólido de Euclides de um Sólido de Hooke?",
+    "question": "Qual é o exemplo biomecânico clássico apresentado no Slide 30 para ilustrar a deformação por Compressão no corpo humano?",
     "options": [
-      "O sólido de Euclides deforma-se como a plasticina e o de Hooke nunca altera o seu volume.",
-      "O sólido de Euclides nunca se deforma perante nenhuma força; o de Hooke deforma-se proporcionalmente à tensão aplicada.",
-      "O sólido de Euclides é líquido à temperatura ambiente e o de Hooke é um gás comprimido.",
-      "Ambos os sólidos são absolutamente idênticos em todas as propriedades físicas da mecânica."
+      "A rotação da tíbia ao desviar o pé no esqui na neve.",
+      "Fémur suporta carga corporal diária.",
+      "Tração do tendão pelo músculo esquelético.",
+      "Atrito e cisalhamento da pele no lençol do leito."
     ],
     "correctIndex": 1,
-    "explanation": "Euclides = modelo teórico indeformável (rigidez infinita); Hooke = modelo elástico linear ideal (rigidez finita).",
+    "explanation": "O Slide 30 indica textualmente no ponto 1: '1. Compressão: Forças convergentes; encurtamento longitudinal; fémur suporta carga corporal diária'.",
     "distractorAnalysis": [
-      "Está incorreta: O sólido de Euclides não se deforma; corpos que se comportam como a plasticina são corpos plásticos.",
-      "Está incorreta: Tanto o modelo de Euclides como o de Hooke representam corpos sólidos, e não fluidos ou gases.",
-      "Está incorreta: São modelos conceptualmente distintos com equações de resposta mecânica totalmente diferentes."
+      "Está incorreta: Rotação da perna é o exemplo de Torção (Slide 34).",
+      "Está incorreta: Tração do tendão é o exemplo de Tração (Slide 31).",
+      "Está incorreta: Atrito no leito é o exemplo de Cisalhamento (Slide 33)."
     ],
-    "nursingApplication": "Permite distinguir quando tratamos um osso como alavanca rígida (Euclides) ou como elemento elástico (Hooke)."
+    "nursingApplication": "O fémur suporta forças axiais de compressão convergentes que absorvem o peso de toda a metade superior do corpo."
   },
   {
     "id": 2074,
     "topicId": 2,
-    "question": "A Lei de Hooke aplica-se a qualquer intensidade de força exercida sobre uma mola de aço real?",
+    "question": "Durante a posição de pé estática, que tipo de solicitação mecânica predomina ao longo do eixo da diáfise do fémur e tíbia?",
     "options": [
-      "Sim, é válida para qualquer força finita ou infinita sem qualquer restrição física.",
-      "Não, a Lei de Hooke só se aplica quando a mola se encontra imersa em nitrogénio líquido.",
-      "Não, apenas é válida até ao Limite de Proporcionalidade (ou limite elástico) do material.",
-      "Sim, porque os metais mantêm a sua resposta elástica linear mesmo após sofrerem fratura."
+      "Torção em alta rotação angular.",
+      "Tração divergente que afasta o joelho da bacia.",
+      "Compressão axial convergente devida ao suporte do peso do corpo contra o solo.",
+      "Cisalhamento hidrodinâmico puro de Newton."
     ],
     "correctIndex": 2,
-    "explanation": "Se a força for excessiva, o material ultrapassa o limite elástico, entra em regime plástico e deixa de obedecer a Hooke.",
+    "explanation": "A gravidade atrai a massa corporal para baixo e o solo empurra os pés para cima (força normal). O fémur fica sujeito a forças axiais convergentes dirigidas para o seu centro: compressão mecânica (Slide 30).",
     "distractorAnalysis": [
-      "Está incorreta: Nenhum material real obedece à Lei de Hooke para forças infinitas; todos têm limites de resistência.",
-      "Está incorreta: A Lei de Hooke aplica-se à temperatura ambiente normal e não exige nitrogénio líquido.",
-      "Está incorreta: Após a fratura ou na zona plástica a Lei de Hooke deixa de ser válida."
+      "Está incorreta: A torção ocorre quando há rotação em torno do eixo, ausente na postura estática alinhada.",
+      "Está incorreta: A tração atuaria se o membro estivesse a ser puxado para esticar, não ao apoiar o peso.",
+      "Está incorreta: Cisalhamento hidrodinâmico ocorre no escoamento de fluidos como o sangue."
     ],
-    "nursingApplication": "Alerta para o perigo de sobrecarregar dinamómetros ou molas hospitalares além do limite máximo."
+    "nursingApplication": "Base para compreender fraturas por compressão em doentes idosos com osteoporose severa."
   },
   {
     "id": 2075,
     "topicId": 2,
-    "question": "Na classificação reológica dos corpos, o que caracteriza um Sólido de Euclides?",
+    "question": "Por que razão a área de secção transversal (S) aumenta quando uma barra sofre compressão axial (Slides 21-24)?",
     "options": [
-      "É um corpo perfeitamente viscoso que se deforma como o mel a qualquer temperatura.",
-      "É um material plástico que se deforma permanentemente mesmo com forças infinitesimais.",
-      "É um fluido incompressível que escoa exclusivamente em regime turbulento a alta velocidade.",
-      "É um modelo teórico de sólido indeformável cuja distância interpartículas é estritamente invariável sob qualquer força."
+      "Porque a massa do corpo triplica por absorção de fotões solares.",
+      "Porque as forças convergentes empurram as partículas para o espaço exterior.",
+      "Porque a constante elástica k se anula durante o encurtamento.",
+      "Porque o material encurta longitudinalmente e expande-se lateralmente para conservar o volume da estrutura."
     ],
     "correctIndex": 3,
-    "explanation": "O sólido de Euclides é uma idealização da mecânica clássica: um sólido infinitamente rígido que nunca se deforma.",
+    "explanation": "Sob forças convergentes, ao diminuir a dimensão longitudinal L, a matéria do sólido expande-se nas direções transversais perpendiculares, resultando num alargamento da área de secção S.",
     "distractorAnalysis": [
-      "Está incorreta: Sólidos de Euclides são indeformáveis; corpos que fluem como o mel são corpos viscosos de Newton.",
-      "Está incorreta: Corpos plásticos deformam-se permanentemente; sólidos de Euclides não sofrem deformação alguma.",
-      "Está incorreta: Sólidos de Euclides são corpos sólidos rígidos, não fluidos em escoamento turbulento."
+      "Está incorreta: A massa é constante na mecânica dos materiais clássica.",
+      "Está incorreta: As partículas permanecem no interior da barra sólida em reorganização elástica.",
+      "Está incorreta: A constante elástica da barra é uma propriedade finita bem definida."
     ],
-    "nursingApplication": "Modelo teórico usado na estática de alavancas para considerar os ossos como barras indeformáveis."
+    "nursingApplication": "Compreensão de que um disco intervertebral sob compressão abaula lateralmente em direção ao canal medular."
   },
   {
     "id": 2076,
     "topicId": 2,
-    "question": "Existem sólidos perfeitamente indeformáveis (Sólidos de Euclides) na natureza real?",
+    "question": "Como se orientam no espaço os vetores de força que produzem compressão pura (Slide 21)?",
     "options": [
-      "Não, o sólido de Euclides é apenas um modelo teórico ideal; todos os corpos reais sofrem algum grau de deformação.",
-      "Sim, o diamante e o osso humano são sólidos de Euclides perfeitamente indeformáveis sob qualquer carga.",
-      "Sim, todos os metais sólidos comportam-se como sólidos de Euclides em qualquer intervalo de força.",
-      "Sim, qualquer objeto cuja massa seja superior a cem quilogramas torna-se automaticamente indeformável."
+      "Atuam na mesma linha de ação (colineares), apontando um em direção ao outro (sentidos convergentes).",
+      "Atuam em linhas perpendiculares formando um ângulo de 90 graus entre si.",
+      "Atuam na mesma linha apontando para fora do corpo (sentidos divergentes).",
+      "Atuam em círculos concêntricos girando no sentido dos ponteiros do relógio."
     ],
     "correctIndex": 0,
-    "explanation": "Na física real, todos os materiais materiais cedem microscopicamente a tensões; o sólido rígido é uma aproximação útil.",
+    "explanation": "Forças de compressão pura são colineares e convergentes: atuam ao longo do eixo principal da barra, com sentidos opostos dirigidos para o interior do material, tendendo a aproximar as suas extremidades.",
     "distractorAnalysis": [
-      "Está incorreta: O diamante e o osso sofrem deformação e podem fraturar sob forças elevadas; não são indeformáveis.",
-      "Está incorreta: Os metais deformam-se elástica e plasticamente sob tensão; não são modelos rígidos perfeitos.",
-      "Está incorreta: A massa do corpo não impede a deformação; corpos com grande massa continuam a sofrer deformações mecânicas."
+      "Está incorreta: Forças perpendiculares produzem flexão, não compressão pura (Slide 26).",
+      "Está incorreta: Sentidos divergentes produzem tração (Slide 23).",
+      "Está incorreta: Forças circulares geram torção rotativa (Slide 28)."
     ],
-    "nursingApplication": "Lembra que nenhuma estrutura do corpo humano é absolutamente indeformável perante impactos."
+    "nursingApplication": "Permite desenhar corretamente diagramas de forças compressivas em ossos longos."
   },
   {
     "id": 2077,
     "topicId": 2,
-    "question": "O que define e caracteriza um Sólido de Hooke na Reologia?",
+    "question": "Os corpos vertebrais da coluna de um enfermeiro ao sustentar um doente suportam primariamente que tipo de força deformadora (Slide 30)?",
     "options": [
-      "Um corpo viscoso que escoa lentamente com velocidade inversamente proporcional à pressão.",
-      "Um corpo puramente elástico cuja deformação é diretamente proporcional à intensidade da tensão mecânica aplicada.",
-      "Um material puramente plástico que só se deforma acima de temperaturas próximas do ponto de fusão.",
-      "Um corpo indeformável cujas moléculas não se movem mesmo sob forças infinitas."
+      "Forças divergentes de tração que separam as vértebras.",
+      "Forças convergentes de compressão axial que diminuem a espessura dos discos e corpos vertebrais.",
+      "Forças radioativas de fusão nuclear fraca.",
+      "Forças centrífugas decorrentes da translação da Terra."
     ],
     "correctIndex": 1,
-    "explanation": "Os sólidos de Hooke exibem elasticidade linear perfeita: a deformação varia linearmente com a tensão (Lei de Hooke).",
+    "explanation": "O peso do tronco do enfermeiro somado à carga do doente exerce uma força massiva vertical descendente contra a resistência do sacro e bacia: forças convergentes de compressão ao longo da coluna (Slide 30).",
     "distractorAnalysis": [
-      "Está incorreta: Escoar lentamente com o tempo é a característica dos corpos viscosos, não dos sólidos elásticos de Hooke.",
-      "Está incorreta: Deformação plástica dependente de temperatura descreve plasticidade térmica, não elasticidade de Hooke.",
-      "Está incorreta: O corpo indeformável sob forças infinitas é o sólido de Euclides, e não o sólido de Hooke."
+      "Está incorreta: A tração afastaria as vértebras (como numa mesa de descompressão ortopédica), o oposto da carga de elevação.",
+      "Está incorreta: Fusão nuclear não ocorre no esqueleto biológico humano.",
+      "Está incorreta: Forças centrífugas cósmicas têm valor desprezível na coluna vertebral."
     ],
-    "nursingApplication": "O sólido de Hooke é o modelo utilizado para calibrar molas de camas e dinamómetros de tração."
+    "nursingApplication": "Justifica a necessidade de manter a coluna vertical e alinhada para distribuir a compressão uniformemente pelos corpos vertebrais."
   },
   {
     "id": 2078,
     "topicId": 2,
-    "question": "Qual é o comportamento de um Sólido de Hooke quando a força deformadora que atuava sobre ele é removida?",
+    "question": "Quando uma força de compressão convergente excede a resistência mecânica máxima do osso cortical ou trabecular:",
     "options": [
-      "Permanece permanentemente deformado com a dimensão máxima atingida.",
-      "Fragmenta-se instantaneamente num pó microscópico por libertação de calor.",
-      "Restitui integral, instantânea e perfeitamente a sua forma e dimensões originais.",
-      "Começa a escoar lentamente como um líquido à temperatura ambiente."
+      "O osso transforma-se imediatamente numa esponja viscoelástica perfeita.",
+      "O osso estica indefinidamente até atingir o dobro do comprimento.",
+      "Ocorre colapso estrutural e fratura por esmagamento (fratura por compressão).",
+      "A massa inercial do osso é ejetada para o espaço sob a forma de luz."
     ],
     "correctIndex": 2,
-    "explanation": "Por ser perfeitamente elástico, o sólido de Hooke recupera a sua geometria original assim que a carga cessa.",
+    "explanation": "Se a tensão mecânica σ de compressão ultrapassar o limite de fratura do material ósseo, a estrutura entra em colapso mecânico, originando fraturas por afundamento ou esmagamento (comuns em vértebras osteoporóticas).",
     "distractorAnalysis": [
-      "Está incorreta: Permanecer deformado é o comportamento dos corpos plásticos, não dos sólidos elásticos de Hooke.",
-      "Está incorreta: Fragmentar-se em pó é uma fratura catastrófica que não ocorre dentro do regime elástico de Hooke.",
-      "Está incorreta: Escoar como um líquido caracteriza corpos viscosos, não sólidos elásticos."
+      "Está incorreta: O tecido lesado quebra estruturalmente e não adquire viscoelasticidade infinita.",
+      "Está incorreta: Esticar ocorreria em tração extrema, enquanto compressão tende a encurtar e esmagar.",
+      "Está incorreta: A matéria óssea quebra mantendo a sua massa inalterada."
     ],
-    "nursingApplication": "Explica o funcionamento contínuo de molas que voltam à posição de repouso após cada utilização."
+    "nursingApplication": "Alerta de segurança na mobilização de utentes frágeis com osteopenia para prevenir fraturas vertebrais patológicas."
   },
   {
     "id": 2079,
     "topicId": 2,
-    "question": "Qual dos seguintes objetos materiais é a melhor representação física de um Sólido de Hooke no quotidiano?",
+    "question": "No Slide 30, a consequência longitudinal das forças convergentes na compressão é resumida pelo termo:",
     "options": [
-      "Uma barra de plasticina moldável à temperatura ambiente.",
-      "Uma poça de mel espesso a escorrer num plano inclinado.",
-      "Uma esponja ensopada em água morna sujeita a compressão lenta.",
-      "Uma mola metálica de aço a trabalhar dentro do seu limite elástico."
+      "'Alongamento axial'",
+      "'Rotação perimetral'",
+      "'Curvatura transversal'",
+      "'Encurtamento longitudinal'"
     ],
     "correctIndex": 3,
-    "explanation": "Molas metálicas de aço operam com excelente linearidade elástica (F = k·Δx), modelando perfeitamente o sólido de Hooke.",
+    "explanation": "O Slide 30 especifica textualmente: '1. Compressão: Forças convergentes; encurtamento longitudinal; fémur suporta carga corporal diária'.",
     "distractorAnalysis": [
-      "Está incorreta: A plasticina é um corpo plástico que não recupera a forma original.",
-      "Está incorreta: O mel é um fluido viscoso de escoamento irreversível.",
-      "Está incorreta: A esponja ensopada é um corpo viscoelástico com escoamento de fluido poroso, não puramente elástico."
+      "Está incorreta: 'Aumento longitudinal' ou alongamento é a consequência da Tração (Slide 31).",
+      "Está incorreta: Rotação é a consequência da Torção (Slide 34).",
+      "Está incorreta: Curvatura com plano neutro é a consequência da Flexão (Slide 32)."
     ],
-    "nursingApplication": "As molas de dinamómetros e suspensões mecânicas operam sob o modelo do sólido de Hooke."
+    "nursingApplication": "Fixa o termo concetual exato utilizado pelo docente nos slides teóricos."
   },
   {
     "id": 2080,
     "topicId": 2,
-    "question": "Na relação tensão-deformação de um Sólido de Hooke, a representação gráfica no regime elástico é:",
+    "question": "Comparando Compressão e Tração nos Slides 21 a 24, qual é o contraste dimensional fundamental entre ambas?",
     "options": [
-      "Uma linha reta que passa pela origem das coordenadas cartesianas.",
-      "Uma parábola descendente que atinge o valor zero em grandes tensões.",
-      "Uma curva sinusoidal com oscilações periódicas infinitas.",
-      "Uma linha horizontal perfeitamente plana paralela ao eixo da deformação."
+      "Na Compressão há diminuição de L e aumento de S; na Tração há aumento de L e diminuição de S.",
+      "Na Compressão o comprimento aumenta e na Tração o comprimento diminui.",
+      "Ambas provocam rigorosamente diminuição simultânea de L e de S.",
+      "Ambas provocam aumento simultâneo de L e de S sem qualquer diferença."
     ],
     "correctIndex": 0,
-    "explanation": "Como a tensão é diretamente proporcional à deformação (σ = E·ε), o gráfico é uma reta com declive igual a E.",
+    "explanation": "Os Slides 21 a 24 colocam em oposição direta: Compressão (forças convergentes): L diminui, S aumenta; Tração (forças divergentes): L aumenta, S diminui.",
     "distractorAnalysis": [
-      "Está incorreta: Uma parábola representaria uma relação não linear quadrática, alheia à linearidade da Lei de Hooke.",
-      "Está incorreta: Curvas sinusoidais ocorrem em fenómenos ondulatórios ou oscilatórios no tempo, não no ensaio estático de Hooke.",
-      "Está incorreta: Uma linha horizontal representaria deformação infinita sob tensão constante (escoamento plástico perfeito)."
+      "Está incorreta: As descrições dimensionais estão trocadas nesta opção.",
+      "Está incorreta: Diminuição mútua violaria a conservação de matéria do sólido.",
+      "Está incorreta: As duas deformações têm efeitos geométricos perfeitamente opostos ao longo do eixo da barra."
     ],
-    "nursingApplication": "O declive da reta tensão-deformação fornece o Módulo de Young (rigidez) do material."
+    "nursingApplication": "Síntese comparativa essencial entre os dois primeiros tipos de esforços axiais da Reologia."
   },
   {
     "id": 2081,
     "topicId": 2,
-    "question": "O que distingue essencialmente um Sólido de Euclides de um Sólido de Hooke?",
+    "question": "Como são caracterizadas as 'Forças de tração' nos Slides 23, 24 e 31 de Biofísica?",
     "options": [
-      "O sólido de Euclides deforma-se como a plasticina e o de Hooke nunca altera o seu volume.",
-      "O sólido de Euclides nunca se deforma perante nenhuma força; o de Hooke deforma-se proporcionalmente à tensão aplicada.",
-      "O sólido de Euclides é líquido à temperatura ambiente e o de Hooke é um gás comprimido.",
-      "Ambos os sólidos são absolutamente idênticos em todas as propriedades físicas da mecânica."
+      "Forças convergentes que reduzem o comprimento do corpo.",
+      "Forças divergentes que atuam no sentido de esticar e aumentar o comprimento longitudinal do corpo.",
+      "Momentos de binário que rodam as arestas retilíneas em círculos.",
+      "Forças eletromagnéticas que unem os protões no núcleo."
     ],
     "correctIndex": 1,
-    "explanation": "Euclides = modelo teórico indeformável (rigidez infinita); Hooke = modelo elástico linear ideal (rigidez finita).",
+    "explanation": "Os Slides 23, 24 e 31 definem textualmente as forças de tração como: 'Forças de tração: Forças divergentes'.",
     "distractorAnalysis": [
-      "Está incorreta: O sólido de Euclides não se deforma; corpos que se comportam como a plasticina são corpos plásticos.",
-      "Está incorreta: Tanto o modelo de Euclides como o de Hooke representam corpos sólidos, e não fluidos ou gases.",
-      "Está incorreta: São modelos conceptualmente distintos com equações de resposta mecânica totalmente diferentes."
+      "Está incorreta: Forças convergentes definem as Forças de Compressão (Slide 21 e 30).",
+      "Está incorreta: Momentos rotativos definem a Torção (Slide 28 e 34).",
+      "Está incorreta: Forças de união nuclear definem a Força Nuclear Forte (Slide 30 do Tópico 1)."
     ],
-    "nursingApplication": "Permite distinguir quando tratamos um osso como alavanca rígida (Euclides) ou como elemento elástico (Hooke)."
+    "nursingApplication": "A tração é a solicitação típica suportada por tendões, ligamentos e fios de sutura cirúrgica."
   },
   {
     "id": 2082,
     "topicId": 2,
-    "question": "A Lei de Hooke aplica-se a qualquer intensidade de força exercida sobre uma mola de aço real?",
+    "question": "O que acontece às dimensões geométricas de uma barra sujeita a forças de tração (Slides 23-24)?",
     "options": [
-      "Sim, é válida para qualquer força finita ou infinita sem qualquer restrição física.",
-      "Não, a Lei de Hooke só se aplica quando a mola se encontra imersa em nitrogénio líquido.",
-      "Não, apenas é válida até ao Limite de Proporcionalidade (ou limite elástico) do material.",
-      "Sim, porque os metais mantêm a sua resposta elástica linear mesmo após sofrerem fratura."
+      "Diminuição do comprimento da barra (L) e Aumento da área de secção (S).",
+      "Diminuição simultânea do comprimento e da secção transversal.",
+      "Aumento do comprimento da barra (L) e Diminuição da área de secção (S).",
+      "Não ocorre qualquer alteração dimensional na estrutura da barra."
     ],
     "correctIndex": 2,
-    "explanation": "Se a força for excessiva, o material ultrapassa o limite elástico, entra em regime plástico e deixa de obedecer a Hooke.",
+    "explanation": "Os Slides 23 e 24 indicam expressamente as consequências da tração mecânica: 'Aumento do comprimento da barra (L) | Diminuição da área de secção (S)'.",
     "distractorAnalysis": [
-      "Está incorreta: Nenhum material real obedece à Lei de Hooke para forças infinitas; todos têm limites de resistência.",
-      "Está incorreta: A Lei de Hooke aplica-se à temperatura ambiente normal e não exige nitrogénio líquido.",
-      "Está incorreta: Após a fratura ou na zona plástica a Lei de Hooke deixa de ser válida."
+      "Está incorreta: Diminuição de L e aumento de S é o efeito característico da Compressão (Slide 21 e 24).",
+      "Está incorreta: Diminuição de ambas violaria a conservação geométrica do volume sólido.",
+      "Está incorreta: A barra deforma-se mensuravelmente sob ação da força de tração F (Slide 39)."
     ],
-    "nursingApplication": "Alerta para o perigo de sobrecarregar dinamómetros ou molas hospitalares além do limite máximo."
+    "nursingApplication": "Explica por que um tendão ou elástico fica mais fino na secção transversal quando é esticado."
   },
   {
     "id": 2083,
     "topicId": 2,
-    "question": "Na classificação reológica dos corpos, o que caracteriza um Sólido de Euclides?",
+    "question": "Qual é o exemplo biomecânico clássico apresentado no Slide 31 para ilustrar a deformação por Tração no corpo humano?",
     "options": [
-      "É um corpo perfeitamente viscoso que se deforma como o mel a qualquer temperatura.",
-      "É um material plástico que se deforma permanentemente mesmo com forças infinitesimais.",
-      "É um fluido incompressível que escoa exclusivamente em regime turbulento a alta velocidade.",
-      "É um modelo teórico de sólido indeformável cuja distância interpartículas é estritamente invariável sob qualquer força."
+      "Fémur suporta carga corporal diária.",
+      "Atrito e escorregamento no leito hospitalar.",
+      "Tensão a meio de um osso fletido.",
+      "Tração do tendão pelo músculo."
     ],
     "correctIndex": 3,
-    "explanation": "O sólido de Euclides é uma idealização da mecânica clássica: um sólido infinitamente rígido que nunca se deforma.",
+    "explanation": "O Slide 31 indica textualmente no ponto 2: '2. Tração: Forças divergentes; aumento longitudinal; tração do tendão pelo músculo'.",
     "distractorAnalysis": [
-      "Está incorreta: Sólidos de Euclides são indeformáveis; corpos que fluem como o mel são corpos viscosos de Newton.",
-      "Está incorreta: Corpos plásticos deformam-se permanentemente; sólidos de Euclides não sofrem deformação alguma.",
-      "Está incorreta: Sólidos de Euclides são corpos sólidos rígidos, não fluidos em escoamento turbulento."
+      "Está incorreta: Fémur a suportar carga é o exemplo de Compressão (Slide 30).",
+      "Está incorreta: Atrito no leito é o exemplo de Cisalhamento (Slide 33).",
+      "Está incorreta: Tensão a meio de um osso fletido é o exemplo de Flexão (Slide 32)."
     ],
-    "nursingApplication": "Modelo teórico usado na estática de alavancas para considerar os ossos como barras indeformáveis."
+    "nursingApplication": "A contração das fibras musculares gera forças trativas divergentes transmitidas pelo tendão ao osso."
   },
   {
     "id": 2084,
     "topicId": 2,
-    "question": "Existem sólidos perfeitamente indeformáveis (Sólidos de Euclides) na natureza real?",
+    "question": "Quando o tendão de Aquiles (calcâneo) é fortemente solicitado durante a fase de impulsão da marcha, as forças que nele atuam são:",
     "options": [
-      "Não, o sólido de Euclides é apenas um modelo teórico ideal; todos os corpos reais sofrem algum grau de deformação.",
-      "Sim, o diamante e o osso humano são sólidos de Euclides perfeitamente indeformáveis sob qualquer carga.",
-      "Sim, todos os metais sólidos comportam-se como sólidos de Euclides em qualquer intervalo de força.",
-      "Sim, qualquer objeto cuja massa seja superior a cem quilogramas torna-se automaticamente indeformável."
+      "Forças divergentes de tração pura que aumentam o comprimento do tendão e diminuem ligeiramente a sua secção.",
+      "Forças convergentes de compressão que esmagam o tendão contra o calcanhar.",
+      "Forças puramente nucleares fracas de desintegração radioativa.",
+      "Momentos de torção pura sem qualquer componente longitudinal de força."
     ],
     "correctIndex": 0,
-    "explanation": "Na física real, todos os materiais materiais cedem microscopicamente a tensões; o sólido rígido é uma aproximação útil.",
+    "explanation": "O músculo tríceps sural contrai-se puxando o tendão para cima, enquanto a inserção no osso calcâneo ancora o tendão: atuam forças divergentes que tracionam longitudinalmente a estrutura tendinosa (Slide 31).",
     "distractorAnalysis": [
-      "Está incorreta: O diamante e o osso sofrem deformação e podem fraturar sob forças elevadas; não são indeformáveis.",
-      "Está incorreta: Os metais deformam-se elástica e plasticamente sob tensão; não são modelos rígidos perfeitos.",
-      "Está incorreta: A massa do corpo não impede a deformação; corpos com grande massa continuam a sofrer deformações mecânicas."
+      "Está incorreta: Os tendões não funcionam em compressão (dobrar-se-iam como cordas frouxas); funcionam exclusivamente em tração.",
+      "Está incorreta: A biologia dos tendões obedece à biofísica mecânica e não a desintegrações radioativas nucleares.",
+      "Está incorreta: A solicitação primária do tendão de Aquiles é axial de tração, não de torção pura."
     ],
-    "nursingApplication": "Lembra que nenhuma estrutura do corpo humano é absolutamente indeformável perante impactos."
+    "nursingApplication": "Compreensão essencial para a prevenção e reabilitação de tendinopatias e roturas do tendão de Aquiles."
   },
   {
     "id": 2085,
     "topicId": 2,
-    "question": "O que define e caracteriza um Sólido de Hooke na Reologia?",
+    "question": "O que significa dizer que as forças de tração são 'divergentes' nos Slides 23 e 24?",
     "options": [
-      "Um corpo viscoso que escoa lentamente com velocidade inversamente proporcional à pressão.",
-      "Um corpo puramente elástico cuja deformação é diretamente proporcional à intensidade da tensão mecânica aplicada.",
-      "Um material puramente plástico que só se deforma acima de temperaturas próximas do ponto de fusão.",
-      "Um corpo indeformável cujas moléculas não se movem mesmo sob forças infinitas."
+      "Que os vetores de força convergem e apontam um para o outro no interior da barra.",
+      "Que os vetores de força têm sentidos opostos dirigidos para o exterior do corpo ao longo da mesma linha de ação.",
+      "Que os vetores de força giram continuamente em torno do centro de massa.",
+      "Que as forças desaparecem no instante em que a barra começa a esticar."
     ],
     "correctIndex": 1,
-    "explanation": "Os sólidos de Hooke exibem elasticidade linear perfeita: a deformação varia linearmente com a tensão (Lei de Hooke).",
+    "explanation": "Divergente significa que as setas dos vetores de força apontam em sentidos contrários para fora do corpo (afastando-se mutuamente ao longo do eixo), exercendo um puxão que tende a esticar o material.",
     "distractorAnalysis": [
-      "Está incorreta: Escoar lentamente com o tempo é a característica dos corpos viscosos, não dos sólidos elásticos de Hooke.",
-      "Está incorreta: Deformação plástica dependente de temperatura descreve plasticidade térmica, não elasticidade de Hooke.",
-      "Está incorreta: O corpo indeformável sob forças infinitas é o sólido de Euclides, e não o sólido de Hooke."
+      "Está incorreta: Apontar um para o outro define forças convergentes (compressão, Slide 21).",
+      "Está incorreta: Girar em círculo define momentos de torção rotativa (Slide 28).",
+      "Está incorreta: As forças mantêm-se aplicadas continuamente enquanto durar a tração."
     ],
-    "nursingApplication": "O sólido de Hooke é o modelo utilizado para calibrar molas de camas e dinamómetros de tração."
+    "nursingApplication": "Permite interpretar corretamente setas de vetores de tração em esquemas ortopédicos e trações transesqueléticas."
   },
   {
     "id": 2086,
     "topicId": 2,
-    "question": "Qual é o comportamento de um Sólido de Hooke quando a força deformadora que atuava sobre ele é removida?",
+    "question": "Na síntese do Slide 31, qual é a consequência longitudinal imediata das forças de tração?",
     "options": [
-      "Permanece permanentemente deformado com a dimensão máxima atingida.",
-      "Fragmenta-se instantaneamente num pó microscópico por libertação de calor.",
-      "Restitui integral, instantânea e perfeitamente a sua forma e dimensões originais.",
-      "Começa a escoar lentamente como um líquido à temperatura ambiente."
+      "Encurtamento longitudinal maciço.",
+      "Curvatura com plano neutro central nulo.",
+      "Aumento longitudinal.",
+      "Rotação helicoidal em torno do eixo."
     ],
     "correctIndex": 2,
-    "explanation": "Por ser perfeitamente elástico, o sólido de Hooke recupera a sua geometria original assim que a carga cessa.",
+    "explanation": "O Slide 31 estipula formalmente: '2. Tração: Forças divergentes; aumento longitudinal; tração do tendão pelo músculo'.",
     "distractorAnalysis": [
-      "Está incorreta: Permanecer deformado é o comportamento dos corpos plásticos, não dos sólidos elásticos de Hooke.",
-      "Está incorreta: Fragmentar-se em pó é uma fratura catastrófica que não ocorre dentro do regime elástico de Hooke.",
-      "Está incorreta: Escoar como um líquido caracteriza corpos viscosos, não sólidos elásticos."
+      "Está incorreta: Encurtamento longitudinal é a consequência da Compressão (Slide 30).",
+      "Está incorreta: Curvatura com plano neutro é a consequência da Flexão (Slide 32).",
+      "Está incorreta: Rotação helicoidal decorre da Torção (Slide 34)."
     ],
-    "nursingApplication": "Explica o funcionamento contínuo de molas que voltam à posição de repouso após cada utilização."
+    "nursingApplication": "Fixa a terminologia padrão dos slides para provas e exames de avaliação."
   },
   {
     "id": 2087,
     "topicId": 2,
-    "question": "Qual dos seguintes objetos materiais é a melhor representação física de um Sólido de Hooke no quotidiano?",
+    "question": "Um fio de sutura cirúrgica utilizado para encerrar uma incisão abdominal está sujeito a que tipo de esforço mecânico?",
     "options": [
-      "Uma barra de plasticina moldável à temperatura ambiente.",
-      "Uma poça de mel espesso a escorrer num plano inclinado.",
-      "Uma esponja ensopada em água morna sujeita a compressão lenta.",
-      "Uma mola metálica de aço a trabalhar dentro do seu limite elástico."
+      "Compressão convergente que achata o fio.",
+      "Cisalhamento rotativo nuclear.",
+      "Flexão centrípeta com plano neutro.",
+      "Esforço mecânico de tração (forças divergentes que tendem a esticar o fio ao conter a tensão das bordas da ferida)."
     ],
     "correctIndex": 3,
-    "explanation": "Molas metálicas de aço operam com excelente linearidade elástica (F = k·Δx), modelando perfeitamente o sólido de Hooke.",
+    "explanation": "As margens da ferida puxam o fio de sutura em sentidos opostos, exercendo solicitações clássicas de tração divergente sobre o monofilamento cirúrgico.",
     "distractorAnalysis": [
-      "Está incorreta: A plasticina é um corpo plástico que não recupera a forma original.",
-      "Está incorreta: O mel é um fluido viscoso de escoamento irreversível.",
-      "Está incorreta: A esponja ensopada é um corpo viscoelástico com escoamento de fluido poroso, não puramente elástico."
+      "Está incorreta: Fios flexíveis colapsariam sob compressão; resistem unicamente sob tração axial.",
+      "Está incorreta: O fio opera por tensão elástica macroscópica de tração, sem fenómenos nucleares.",
+      "Está incorreta: O fio esticado não atua como viga de flexão com plano neutro rígido."
     ],
-    "nursingApplication": "As molas de dinamómetros e suspensões mecânicas operam sob o modelo do sólido de Hooke."
+    "nursingApplication": "Importante para a seleção do calibre e resistência à tração dos materiais de sutura em bloco operatório."
   },
   {
     "id": 2088,
     "topicId": 2,
-    "question": "Na relação tensão-deformação de um Sólido de Hooke, a representação gráfica no regime elástico é:",
+    "question": "Uma barra metálica com comprimento inicial de 10 cm que, sob tração axial, passa a medir 10,2 cm sofreu:",
     "options": [
-      "Uma linha reta que passa pela origem das coordenadas cartesianas.",
-      "Uma parábola descendente que atinge o valor zero em grandes tensões.",
-      "Uma curva sinusoidal com oscilações periódicas infinitas.",
-      "Uma linha horizontal perfeitamente plana paralela ao eixo da deformação."
+      "Uma deformação absoluta por tração de Δx = 0,2 cm com aumento longitudinal.",
+      "Uma compressão volumétrica com diminuição de comprimento.",
+      "Um escoamento puramente viscoso irreversível como mel aquecido.",
+      "Uma transição para corpo indeformável de Euclides."
     ],
     "correctIndex": 0,
-    "explanation": "Como a tensão é diretamente proporcional à deformação (σ = E·ε), o gráfico é uma reta com declive igual a E.",
+    "explanation": "A variação de comprimento é Δx = 10,2 cm - 10,0 cm = +0,2 cm. Como o comprimento final é maior que o inicial, ocorreu deformação por tração com alongamento axial mensurável (Slide 39).",
     "distractorAnalysis": [
-      "Está incorreta: Uma parábola representaria uma relação não linear quadrática, alheia à linearidade da Lei de Hooke.",
-      "Está incorreta: Curvas sinusoidais ocorrem em fenómenos ondulatórios ou oscilatórios no tempo, não no ensaio estático de Hooke.",
-      "Está incorreta: Uma linha horizontal representaria deformação infinita sob tensão constante (escoamento plástico perfeito)."
+      "Está incorreta: Compressão implicaria diminuição de comprimento para menos de 10 cm (Slide 21).",
+      "Está incorreta: A barra metálica segue o regime elástico de Hooke de sólidos rígidos (Slide 44).",
+      "Está incorreta: Um sólido de Euclides manter-se-ia rigorosamente em 10,00 cm sob qualquer força."
     ],
-    "nursingApplication": "O declive da reta tensão-deformação fornece o Módulo de Young (rigidez) do material."
+    "nursingApplication": "Cálculo simples de deformação absoluta (Δx) no regime de tração linear."
   },
   {
     "id": 2089,
     "topicId": 2,
-    "question": "O que distingue essencialmente um Sólido de Euclides de um Sólido de Hooke?",
+    "question": "Quando ocorre a rotura completa de um tendão muscular durante um esforço desportivo violento:",
     "options": [
-      "O sólido de Euclides deforma-se como a plasticina e o de Hooke nunca altera o seu volume.",
-      "O sólido de Euclides nunca se deforma perante nenhuma força; o de Hooke deforma-se proporcionalmente à tensão aplicada.",
-      "O sólido de Euclides é líquido à temperatura ambiente e o de Hooke é um gás comprimido.",
-      "Ambos os sólidos são absolutamente idênticos em todas as propriedades físicas da mecânica."
+      "A força de tração aplicada foi inferior ao limiar elástico mínimo.",
+      "A força de tração divergente excedeu a tensão mecânica limite de rutura do tecido tendinoso.",
+      "O tendão transformou-se instantaneamente num fluido viscoso de escoamento livre.",
+      "A gravidade terrestre atraiu o tendão para o centro da Terra a 80 km/h."
     ],
     "correctIndex": 1,
-    "explanation": "Euclides = modelo teórico indeformável (rigidez infinita); Hooke = modelo elástico linear ideal (rigidez finita).",
+    "explanation": "A rotura de materiais tracionados dá-se quando a tensão aplicada ultrapassa a resistência máxima à tração do tecido, provocando a rutura das pontes moleculares de colagénio e fratura mecânica.",
     "distractorAnalysis": [
-      "Está incorreta: O sólido de Euclides não se deforma; corpos que se comportam como a plasticina são corpos plásticos.",
-      "Está incorreta: Tanto o modelo de Euclides como o de Hooke representam corpos sólidos, e não fluidos ou gases.",
-      "Está incorreta: São modelos conceptualmente distintos com equações de resposta mecânica totalmente diferentes."
+      "Está incorreta: Forças inferiores ao limiar operam no regime de segurança reversível sem rotura.",
+      "Está incorreta: O tendão fragmenta-se e desgarra-se macroscopicamente, mantendo a solidez celular dos fragmentos.",
+      "Está incorreta: A rotura decorre da tração interna das fibras musculares, não de velocidades de queda no centro da Terra."
     ],
-    "nursingApplication": "Permite distinguir quando tratamos um osso como alavanca rígida (Euclides) ou como elemento elástico (Hooke)."
+    "nursingApplication": "Explica o mecanismo biomecânico subjacente às roturas traumáticas de tendões e ligamentos."
   },
   {
     "id": 2090,
     "topicId": 2,
-    "question": "A Lei de Hooke aplica-se a qualquer intensidade de força exercida sobre uma mola de aço real?",
+    "question": "No Slide 39, o que acontece a uma barra de secção S e comprimento inicial L quando é sujeita a uma força de tração F nos trabalhos de Hooke?",
     "options": [
-      "Sim, é válida para qualquer força finita ou infinita sem qualquer restrição física.",
-      "Não, a Lei de Hooke só se aplica quando a mola se encontra imersa em nitrogénio líquido.",
-      "Não, apenas é válida até ao Limite de Proporcionalidade (ou limite elástico) do material.",
-      "Sim, porque os metais mantêm a sua resposta elástica linear mesmo após sofrerem fratura."
+      "Perde toda a sua massa inercial evaporando no ar.",
+      "Torna-se imune a qualquer alteração de forma.",
+      "Sofre uma deformação dimensional mensurável linearmente relacionada com a força.",
+      "Começa a girar em torno do seu eixo central a alta velocidade."
     ],
     "correctIndex": 2,
-    "explanation": "Se a força for excessiva, o material ultrapassa o limite elástico, entra em regime plástico e deixa de obedecer a Hooke.",
+    "explanation": "O Slide 39 refere textualmente: 'Quando uma barra de secção transversal S e comprimento inicial L é sujeita a uma força de tração F, sofre uma deformação dimensional mensurável'.",
     "distractorAnalysis": [
-      "Está incorreta: Nenhum material real obedece à Lei de Hooke para forças infinitas; todos têm limites de resistência.",
-      "Está incorreta: A Lei de Hooke aplica-se à temperatura ambiente normal e não exige nitrogénio líquido.",
-      "Está incorreta: Após a fratura ou na zona plástica a Lei de Hooke deixa de ser válida."
+      "Está incorreta: A massa é rigorosamente conservada na mecânica dos materiais de Hooke.",
+      "Está incorreta: Apenas os sólidos indeformáveis são imunes a alterações dimensionais.",
+      "Está incorreta: Forças axiais de tração pura produzem alongamento linear e não rotação espontânea."
     ],
-    "nursingApplication": "Alerta para o perigo de sobrecarregar dinamómetros ou molas hospitalares além do limite máximo."
+    "nursingApplication": "O fundamento experimental para o estabelecimento da Lei da Elasticidade por Robert Hooke em 1660."
   },
   {
     "id": 2091,
     "topicId": 2,
-    "question": "Na classificação reológica dos corpos, o que caracteriza um Sólido de Euclides?",
+    "question": "Qual é a definição exata de deformação por 'Flexão' apresentada no Slide 26 de Biofísica?",
     "options": [
-      "É um corpo perfeitamente viscoso que se deforma como o mel a qualquer temperatura.",
-      "É um material plástico que se deforma permanentemente mesmo com forças infinitesimais.",
-      "É um fluido incompressível que escoa exclusivamente em regime turbulento a alta velocidade.",
-      "É um modelo teórico de sólido indeformável cuja distância interpartículas é estritamente invariável sob qualquer força."
+      "Deformação entre duas superfícies planas paralelas por ação de forças opostas paralelas.",
+      "Rotação de um sólido em torno do seu eixo por ação de um momento de força.",
+      "Encurtamento longitudinal puramente axial por forças convergentes.",
+      "Deformação das arestas retilíneas de um sólido em linhas curvas por ação de forças perpendiculares."
     ],
     "correctIndex": 3,
-    "explanation": "O sólido de Euclides é uma idealização da mecânica clássica: um sólido infinitamente rígido que nunca se deforma.",
+    "explanation": "O Slide 26 define taxativamente: 'Flexão: Deformação das arestas retilíneas de um sólido em linhas curvas por ação de forças perpendiculares'.",
     "distractorAnalysis": [
-      "Está incorreta: Sólidos de Euclides são indeformáveis; corpos que fluem como o mel são corpos viscosos de Newton.",
-      "Está incorreta: Corpos plásticos deformam-se permanentemente; sólidos de Euclides não sofrem deformação alguma.",
-      "Está incorreta: Sólidos de Euclides são corpos sólidos rígidos, não fluidos em escoamento turbulento."
+      "Está incorreta: Esta é a definição de Cisalhamento (Slide 27).",
+      "Está incorreta: Esta é a definição de Torção (Slide 28).",
+      "Está incorreta: Esta é a definição de Compressão (Slide 21)."
     ],
-    "nursingApplication": "Modelo teórico usado na estática de alavancas para considerar os ossos como barras indeformáveis."
+    "nursingApplication": "A flexão ocorre quando um osso longo (como a tíbia ou fémur) é submetido a uma força perpendicular ao seu comprimento."
   },
   {
     "id": 2092,
     "topicId": 2,
-    "question": "Existem sólidos perfeitamente indeformáveis (Sólidos de Euclides) na natureza real?",
+    "question": "O que acontece à tensão mecânica no centro geométrico (plano neutro) de um sólido sujeito a flexão pura de acordo com o Slide 26?",
     "options": [
-      "Não, o sólido de Euclides é apenas um modelo teórico ideal; todos os corpos reais sofrem algum grau de deformação.",
-      "Sim, o diamante e o osso humano são sólidos de Euclides perfeitamente indeformáveis sob qualquer carga.",
-      "Sim, todos os metais sólidos comportam-se como sólidos de Euclides em qualquer intervalo de força.",
-      "Sim, qualquer objeto cuja massa seja superior a cem quilogramas torna-se automaticamente indeformável."
+      "Tensão no centro é nula! (Tensão = 0 Pa no plano neutro).",
+      "A tensão no centro atinge o valor máximo absoluto e infinito.",
+      "A tensão no centro transforma-se em gravidade negativa.",
+      "A tensão no centro oscila aleatoriamente entre compressão e calor."
     ],
     "correctIndex": 0,
-    "explanation": "Na física real, todos os materiais materiais cedem microscopicamente a tensões; o sólido rígido é uma aproximação útil.",
+    "explanation": "O Slide 26 coloca em grande destaque com ponto de exclamação: 'Tensão no centro é nula!'. Na flexão pura, a transição entre tração num bordo e compressão no bordo oposto passa por uma linha neutra central onde a tensão é zero.",
     "distractorAnalysis": [
-      "Está incorreta: O diamante e o osso sofrem deformação e podem fraturar sob forças elevadas; não são indeformáveis.",
-      "Está incorreta: Os metais deformam-se elástica e plasticamente sob tensão; não são modelos rígidos perfeitos.",
-      "Está incorreta: A massa do corpo não impede a deformação; corpos com grande massa continuam a sofrer deformações mecânicas."
+      "Está incorreta: As tensões máximas ocorrem na periferia externa dos bordos, nunca no centro geométrico.",
+      "Está incorreta: Tensão mecânica mede esforço interno (N/m²) e não altera o campo gravítico da Terra.",
+      "Está incorreta: A tensão no plano neutro é estritamente e rigorosamente nula."
     ],
-    "nursingApplication": "Lembra que nenhuma estrutura do corpo humano é absolutamente indeformável perante impactos."
+    "nursingApplication": "Explica a razão biológica pela qual os ossos longos têm um canal medular central oco sem perder resistência."
   },
   {
     "id": 2093,
     "topicId": 2,
-    "question": "O que define e caracteriza um Sólido de Hooke na Reologia?",
+    "question": "Qual é o exemplo biomecânico apresentado no Slide 32 de Biofísica para ilustrar a deformação por Flexão?",
     "options": [
-      "Um corpo viscoso que escoa lentamente com velocidade inversamente proporcional à pressão.",
-      "Um corpo puramente elástico cuja deformação é diretamente proporcional à intensidade da tensão mecânica aplicada.",
-      "Um material puramente plástico que só se deforma acima de temperaturas próximas do ponto de fusão.",
-      "Um corpo indeformável cujas moléculas não se movem mesmo sob forças infinitas."
+      "Atrito e cisalhamento na pele sacra durante o arrasto no leito.",
+      "Tensão a meio de um osso submetido a forças transversais.",
+      "Fémur suportando o peso estático do tronco na bacia.",
+      "Rotação helicoidal da perna no esqui alpino."
     ],
     "correctIndex": 1,
-    "explanation": "Os sólidos de Hooke exibem elasticidade linear perfeita: a deformação varia linearmente com a tensão (Lei de Hooke).",
+    "explanation": "O Slide 32 especifica no ponto 3: '3. Flexão: Força transversal; curvatura com plano neutro central; tensão a meio de um osso'.",
     "distractorAnalysis": [
-      "Está incorreta: Escoar lentamente com o tempo é a característica dos corpos viscosos, não dos sólidos elásticos de Hooke.",
-      "Está incorreta: Deformação plástica dependente de temperatura descreve plasticidade térmica, não elasticidade de Hooke.",
-      "Está incorreta: O corpo indeformável sob forças infinitas é o sólido de Euclides, e não o sólido de Hooke."
+      "Está incorreta: Atrito no leito é o exemplo de Cisalhamento (Slide 33).",
+      "Está incorreta: Fémur a suportar peso axial é o exemplo de Compressão (Slide 30).",
+      "Está incorreta: Rotação helicoidal é o mecanismo da Torção (Slide 34)."
     ],
-    "nursingApplication": "O sólido de Hooke é o modelo utilizado para calibrar molas de camas e dinamómetros de tração."
+    "nursingApplication": "Um choque transversal a meio da perna gera flexão na diáfise da tíbia, podendo originar fratura transversa."
   },
   {
     "id": 2094,
     "topicId": 2,
-    "question": "Qual é o comportamento de um Sólido de Hooke quando a força deformadora que atuava sobre ele é removida?",
+    "question": "Quando uma viga ou osso longo verga e curva sob o efeito de flexão por forças perpendiculares, que tensões se desenvolvem nas suas faces opostas?",
     "options": [
-      "Permanece permanentemente deformado com a dimensão máxima atingida.",
-      "Fragmenta-se instantaneamente num pó microscópico por libertação de calor.",
-      "Restitui integral, instantânea e perfeitamente a sua forma e dimensões originais.",
-      "Começa a escoar lentamente como um líquido à temperatura ambiente."
+      "Tensão de cisalhamento puro em ambas as faces sem qualquer diferença.",
+      "Tensão nula em todas as superfícies da barra sólida.",
+      "Tensão de tração na face convexa exterior (alongada) e tensão de compressão na face côncava interior (encurtada).",
+      "Tensão de rotação magnética contínua."
     ],
     "correctIndex": 2,
-    "explanation": "Por ser perfeitamente elástico, o sólido de Hooke recupera a sua geometria original assim que a carga cessa.",
+    "explanation": "Ao curvar, a face exterior (convexa) é esticada (sofrendo tração), ao passo que a face interior (côncava) é comprimida (sofrendo compressão). A meio caminho entre ambas situa-se o plano neutro onde a tensão é nula.",
     "distractorAnalysis": [
-      "Está incorreta: Permanecer deformado é o comportamento dos corpos plásticos, não dos sólidos elásticos de Hooke.",
-      "Está incorreta: Fragmentar-se em pó é uma fratura catastrófica que não ocorre dentro do regime elástico de Hooke.",
-      "Está incorreta: Escoar como um líquido caracteriza corpos viscosos, não sólidos elásticos."
+      "Está incorreta: O perfil clássico da flexão divide a barra em metades sob tração e compressão axiais.",
+      "Está incorreta: As faces exteriores suportam as tensões máximas do corpo fletido.",
+      "Está incorreta: As tensões geradas são puramente mecânicas elásticas, sem componentes magnéticas."
     ],
-    "nursingApplication": "Explica o funcionamento contínuo de molas que voltam à posição de repouso após cada utilização."
+    "nursingApplication": "Como o osso é menos resistente à tração do que à compressão, a fratura por flexão inicia-se habitualmente no lado convexo tracionado."
   },
   {
     "id": 2095,
     "topicId": 2,
-    "question": "Qual dos seguintes objetos materiais é a melhor representação física de um Sólido de Hooke no quotidiano?",
+    "question": "Como resume o Slide 32 os três elementos definidores da Flexão em Biofísica?",
     "options": [
-      "Uma barra de plasticina moldável à temperatura ambiente.",
-      "Uma poça de mel espesso a escorrer num plano inclinado.",
-      "Uma esponja ensopada em água morna sujeita a compressão lenta.",
-      "Uma mola metálica de aço a trabalhar dentro do seu limite elástico."
+      "'Forças divergentes; aumento longitudinal; tração do tendão.'",
+      "'Forças convergentes; encurtamento longitudinal; fémur suporta carga.'",
+      "'Forças tangenciais; superfícies planas paralelas; atrito no leito.'",
+      "'Força transversal; curvatura com plano neutro central; tensão a meio de um osso.'"
     ],
     "correctIndex": 3,
-    "explanation": "Molas metálicas de aço operam com excelente linearidade elástica (F = k·Δx), modelando perfeitamente o sólido de Hooke.",
+    "explanation": "O Slide 32 resume textualmente: '3. Flexão: Força transversal; curvatura com plano neutro central; tensão a meio de um osso'.",
     "distractorAnalysis": [
-      "Está incorreta: A plasticina é um corpo plástico que não recupera a forma original.",
-      "Está incorreta: O mel é um fluido viscoso de escoamento irreversível.",
-      "Está incorreta: A esponja ensopada é um corpo viscoelástico com escoamento de fluido poroso, não puramente elástico."
+      "Está incorreta: Este é o resumo da Tração (Slide 31).",
+      "Está incorreta: Este é o resumo da Compressão (Slide 30).",
+      "Está incorreta: Este é o resumo do Cisalhamento (Slide 33)."
     ],
-    "nursingApplication": "As molas de dinamómetros e suspensões mecânicas operam sob o modelo do sólido de Hooke."
+    "nursingApplication": "Fixa a síntese exata da terceira grande deformação mecânica do resumo de Paulo Pereira."
   },
   {
     "id": 2096,
     "topicId": 2,
-    "question": "Na relação tensão-deformação de um Sólido de Hooke, a representação gráfica no regime elástico é:",
+    "question": "Qual é o nome formal da linha ou superfície interior de uma barra em flexão onde o material não sofre nem tração nem compressão?",
     "options": [
-      "Uma linha reta que passa pela origem das coordenadas cartesianas.",
-      "Uma parábola descendente que atinge o valor zero em grandes tensões.",
-      "Uma curva sinusoidal com oscilações periódicas infinitas.",
-      "Uma linha horizontal perfeitamente plana paralela ao eixo da deformação."
+      "Plano neutro (ou eixo neutro) central.",
+      "Limiar de tensão plástica de ruptura.",
+      "Vetor de atrito cinético estático.",
+      "Ponto de inserção tendinosa."
     ],
     "correctIndex": 0,
-    "explanation": "Como a tensão é diretamente proporcional à deformação (σ = E·ε), o gráfico é uma reta com declive igual a E.",
+    "explanation": "O Slide 32 designa expressamente esta zona de tensão nula por 'plano neutro central'. É a interface de transição geométrica entre as fibras em compressão e as fibras em tração.",
     "distractorAnalysis": [
-      "Está incorreta: Uma parábola representaria uma relação não linear quadrática, alheia à linearidade da Lei de Hooke.",
-      "Está incorreta: Curvas sinusoidais ocorrem em fenómenos ondulatórios ou oscilatórios no tempo, não no ensaio estático de Hooke.",
-      "Está incorreta: Uma linha horizontal representaria deformação infinita sob tensão constante (escoamento plástico perfeito)."
+      "Está incorreta: Limiar de tensão plástica refere-se ao início de deformação permanente em corpos plásticos (Slide 17).",
+      "Está incorreta: Atrito cinético é uma força tangencial de resistência ao movimento de superfícies (Slide 34 do Tópico 1).",
+      "Está incorreta: Ponto de inserção é o local anatómico de fixação do tendão ao osso (Slide 8 do Tópico 1)."
     ],
-    "nursingApplication": "O declive da reta tensão-deformação fornece o Módulo de Young (rigidez) do material."
+    "nursingApplication": "Conceito de grande elegância estrutural na arquitetura dos ossos e vigas de sustentação."
   },
   {
     "id": 2097,
     "topicId": 2,
-    "question": "O que distingue essencialmente um Sólido de Euclides de um Sólido de Hooke?",
+    "question": "Uma prancha rígida de transferência de doentes colocada entre a cama e a maca verga ligeiramente no centro sob o peso do utente. Que tipo de deformação mecânica está a ocorrer na prancha?",
     "options": [
-      "O sólido de Euclides deforma-se como a plasticina e o de Hooke nunca altera o seu volume.",
-      "O sólido de Euclides nunca se deforma perante nenhuma força; o de Hooke deforma-se proporcionalmente à tensão aplicada.",
-      "O sólido de Euclides é líquido à temperatura ambiente e o de Hooke é um gás comprimido.",
-      "Ambos os sólidos são absolutamente idênticos em todas as propriedades físicas da mecânica."
+      "Torção helicoidal.",
+      "Flexão por ação de forças perpendiculares ao comprimento da prancha (Slide 26).",
+      "Tração divergente axial pura.",
+      "Cisalhamento rotativo sem curvatura."
     ],
     "correctIndex": 1,
-    "explanation": "Euclides = modelo teórico indeformável (rigidez infinita); Hooke = modelo elástico linear ideal (rigidez finita).",
+    "explanation": "A prancha apoia-se nas duas extremidades e o peso do utente atua no meio na direção perpendicular: as arestas retilíneas transformam-se em curvas, sofrendo deformação por flexão clássica.",
     "distractorAnalysis": [
-      "Está incorreta: O sólido de Euclides não se deforma; corpos que se comportam como a plasticina são corpos plásticos.",
-      "Está incorreta: Tanto o modelo de Euclides como o de Hooke representam corpos sólidos, e não fluidos ou gases.",
-      "Está incorreta: São modelos conceptualmente distintos com equações de resposta mecânica totalmente diferentes."
+      "Está incorreta: A prancha não está a sofrer binários rotativos em torno do seu eixo para haver torção.",
+      "Está incorreta: A carga atua perpendicularmente ao plano da prancha, não ao longo do seu eixo como tração divergente.",
+      "Está incorreta: A curvatura visível das arestas identifica de imediato a flexão geométrica."
     ],
-    "nursingApplication": "Permite distinguir quando tratamos um osso como alavanca rígida (Euclides) ou como elemento elástico (Hooke)."
+    "nursingApplication": "Importante para avaliar os limites de carga e segurança dos dispositivos de transferência de doentes."
   },
   {
     "id": 2098,
     "topicId": 2,
-    "question": "A Lei de Hooke aplica-se a qualquer intensidade de força exercida sobre uma mola de aço real?",
+    "question": "Nas fraturas por flexão em crianças (fratura incompleta em ramo verde), em qual das superfícies do osso tende a iniciar-se a linha de rotura estrutural?",
     "options": [
-      "Sim, é válida para qualquer força finita ou infinita sem qualquer restrição física.",
-      "Não, a Lei de Hooke só se aplica quando a mola se encontra imersa em nitrogénio líquido.",
-      "Não, apenas é válida até ao Limite de Proporcionalidade (ou limite elástico) do material.",
-      "Sim, porque os metais mantêm a sua resposta elástica linear mesmo após sofrerem fratura."
+      "Exatamente no centro do plano neutro onde a tensão é zero.",
+      "Na superfície côncava que sofre compressão pura.",
+      "Na superfície convexa que é submetida a tensões de tração máxima.",
+      "No ar exterior circundante sem tocar no periósteo."
     ],
     "correctIndex": 2,
-    "explanation": "Se a força for excessiva, o material ultrapassa o limite elástico, entra em regime plástico e deixa de obedecer a Hooke.",
+    "explanation": "O osso é menos tolerante à tração do que à compressão. Na flexão, a curvatura estica a face convexa exterior até atingir a tensão limite de tração, iniciando aí a fenda de fratura.",
     "distractorAnalysis": [
-      "Está incorreta: Nenhum material real obedece à Lei de Hooke para forças infinitas; todos têm limites de resistência.",
-      "Está incorreta: A Lei de Hooke aplica-se à temperatura ambiente normal e não exige nitrogénio líquido.",
-      "Está incorreta: Após a fratura ou na zona plástica a Lei de Hooke deixa de ser válida."
+      "Está incorreta: No plano neutro a tensão é nula (Slide 26), sendo o local mais protegido contra o início da falha.",
+      "Está incorreta: A face côncava está comprimida e tolera maiores tensões antes de ceder.",
+      "Está incorreta: As fraturas iniciam-se nas fibras ósseas sob esforço crítico, não no ar circundante."
     ],
-    "nursingApplication": "Alerta para o perigo de sobrecarregar dinamómetros ou molas hospitalares além do limite máximo."
+    "nursingApplication": "Compreensão biomecânica essencial das lesões ortopédicas infantis mais comuns em urgência."
   },
   {
     "id": 2099,
     "topicId": 2,
-    "question": "Na classificação reológica dos corpos, o que caracteriza um Sólido de Euclides?",
+    "question": "A transformação geométrica de arestas retilíneas em linhas curvas é a assinatura descritiva de qual das deformações catalogadas nos slides?",
     "options": [
-      "É um corpo perfeitamente viscoso que se deforma como o mel a qualquer temperatura.",
-      "É um material plástico que se deforma permanentemente mesmo com forças infinitesimais.",
-      "É um fluido incompressível que escoa exclusivamente em regime turbulento a alta velocidade.",
-      "É um modelo teórico de sólido indeformável cuja distância interpartículas é estritamente invariável sob qualquer força."
+      "Compressão convergente.",
+      "Tração divergente.",
+      "Cisalhamento paralelo.",
+      "Flexão (Slide 26)."
     ],
     "correctIndex": 3,
-    "explanation": "O sólido de Euclides é uma idealização da mecânica clássica: um sólido infinitamente rígido que nunca se deforma.",
+    "explanation": "O Slide 26 define formalmente: 'Deformação das arestas retilíneas de um sólido em linhas curvas por ação de forças perpendiculares (...) Flexão'.",
     "distractorAnalysis": [
-      "Está incorreta: Sólidos de Euclides são indeformáveis; corpos que fluem como o mel são corpos viscosos de Newton.",
-      "Está incorreta: Corpos plásticos deformam-se permanentemente; sólidos de Euclides não sofrem deformação alguma.",
-      "Está incorreta: Sólidos de Euclides são corpos sólidos rígidos, não fluidos em escoamento turbulento."
+      "Está incorreta: Compressão encurta a barra mantendo as arestas retilíneas axiais (Slide 21).",
+      "Está incorreta: Tração alonga a barra mantendo as arestas alinhadas no eixo (Slide 23).",
+      "Está incorreta: Cisalhamento deforma superfícies planas paralelas sem criar curvatura de flexão (Slide 27)."
     ],
-    "nursingApplication": "Modelo teórico usado na estática de alavancas para considerar os ossos como barras indeformáveis."
+    "nursingApplication": "Identificação visual direta da flexão em exames imagiológicos e avaliação postural."
   },
   {
     "id": 2100,
     "topicId": 2,
-    "question": "Existem sólidos perfeitamente indeformáveis (Sólidos de Euclides) na natureza real?",
+    "question": "Qual é a grande vantagem adaptativa biológica do facto de a tensão ser nula no centro de uma estrutura submetida a flexão (Slide 26)?",
     "options": [
-      "Não, o sólido de Euclides é apenas um modelo teórico ideal; todos os corpos reais sofrem algum grau de deformação.",
-      "Sim, o diamante e o osso humano são sólidos de Euclides perfeitamente indeformáveis sob qualquer carga.",
-      "Sim, todos os metais sólidos comportam-se como sólidos de Euclides em qualquer intervalo de força.",
-      "Sim, qualquer objeto cuja massa seja superior a cem quilogramas torna-se automaticamente indeformável."
+      "Permite que os ossos longos sejam cilindros ocos com canal medular central, poupando massa corporal sem perder resistência mecânica.",
+      "Permite que os ossos se tornem líquidos durante o sono noturno.",
+      "Elimina a necessidade de articulações e músculos nos membros inferiores.",
+      "Permite ao esqueleto conduzir eletricidade de alta voltagem sem aquecer."
     ],
     "correctIndex": 0,
-    "explanation": "Na física real, todos os materiais materiais cedem microscopicamente a tensões; o sólido rígido é uma aproximação útil.",
+    "explanation": "Como a tensão no centro é nula e as tensões máximas se concentram na periferia externa, colocar matéria no centro da diáfise seria inútil e aumentaria o peso corporal. O osso cilíndrico oco maximiza a rigidez e leveza esquelética.",
     "distractorAnalysis": [
-      "Está incorreta: O diamante e o osso sofrem deformação e podem fraturar sob forças elevadas; não são indeformáveis.",
-      "Está incorreta: Os metais deformam-se elástica e plasticamente sob tensão; não são modelos rígidos perfeitos.",
-      "Está incorreta: A massa do corpo não impede a deformação; corpos com grande massa continuam a sofrer deformações mecânicas."
+      "Está incorreta: O osso mantém rigidez sólida permanente em todas as horas do dia.",
+      "Está incorreta: Músculos e articulações continuam a ser indispensáveis como fulcros e motores de movimento.",
+      "Está incorreta: O canal medular alberga tecido hematopoiético ou adiposo, não atuando como linha de alta voltagem."
     ],
-    "nursingApplication": "Lembra que nenhuma estrutura do corpo humano é absolutamente indeformável perante impactos."
+    "nursingApplication": "A grande síntese evolutiva que une a física de resistência dos materiais à anatomia óssea humana."
   },
   {
     "id": 2101,
     "topicId": 2,
-    "question": "Na Reologia, o que caracteriza o comportamento mecânico de um Corpo Plástico?",
+    "question": "Qual é a definição exata de deformação por 'Cisalhamento' apresentada no Slide 27 de Biofísica?",
     "options": [
-      "Recupera instantaneamente a forma original qualquer que seja a intensidade da força aplicada.",
-      "Apenas sofre deformação apreciável a partir de um determinado valor limiar de tensão, mantendo a deformação permanente após a remoção da carga.",
-      "Apresenta uma deformação que depende exclusivamente do campo magnético circundante no vácuo.",
-      "Comporta-se como um sólido indeformável de Euclides em todas as situações físicas possíveis."
+      "Deformação das arestas retilíneas em curvas por forças perpendiculares.",
+      "Deformação entre duas superfícies planas paralelas por ação de forças opostas paralelas.",
+      "Rotação de um sólido em torno do seu eixo por ação de um binário.",
+      "Encurtamento longitudinal decorrente de forças puramente convergentes."
     ],
     "correctIndex": 1,
-    "explanation": "Os corpos plásticos necessitam de uma tensão mínima de escoamento para deformar e não recuperam a forma inicial (ex.: plasticina).",
+    "explanation": "O Slide 27 define taxativamente: 'Cisalhamento: Deformação entre duas superfícies planas paralelas por ação de forças opostas paralelas'.",
     "distractorAnalysis": [
-      "Está incorreta: Recuperar a forma original instantaneamente é a definição de corpo elástico de Hooke, não de plástico.",
-      "Está incorreta: A plasticidade depende das tensões mecânicas aplicadas, não de campos magnéticos.",
-      "Está incorreta: Corpos plásticos deformam-se permanentemente; sólidos de Euclides nunca se deformam."
+      "Está incorreta: Esta é a definição de Flexão (Slide 26).",
+      "Está incorreta: Esta é a definição de Torção (Slide 28).",
+      "Está incorreta: Esta é a definição de Compressão (Slide 21)."
     ],
-    "nursingApplication": "Compreender a plasticidade ajuda a entender deformações permanentes em materiais hospitalares."
+    "nursingApplication": "O cisalhamento é a deformação crítica responsável por rasgar tecidos profundos e microvasos na pele de doentes acamados."
   },
   {
     "id": 2102,
     "topicId": 2,
-    "question": "O que caracteriza fundamentalmente o comportamento de um Corpo Viscoso?",
+    "question": "Como são caracterizadas as forças que provocam Cisalhamento no resumo do Slide 33?",
     "options": [
-      "Apresenta uma rigidez infinita que impede qualquer alteração dimensional com o tempo.",
-      "Recupera a forma original mais rapidamente do que qualquer mola de aço metálica.",
-      "A deformação é proporcional à tensão e ao tempo de aplicação dessa tensão, escoando irreversivelmente sem recuperar a forma original.",
-      "A sua densidade duplica instantaneamente a cada segundo de repouso absoluto."
+      "Forças perpendiculares axiais que aumentam o comprimento.",
+      "Forças centrífugas que giram a alta velocidade.",
+      "Forças tangenciais paralelas em sentidos opostos.",
+      "Forças nucleares fortes no interior do núcleo celular."
     ],
     "correctIndex": 2,
-    "explanation": "Corpos viscosos (como mel ou óleo) fluem sob tensão com uma taxa de deformação dependente do tempo de aplicação da força.",
+    "explanation": "O Slide 33 especifica no ponto 4: '4. Cisalhamento: Forças tangenciais paralelas em sentidos opostos; atrito no leito'.",
     "distractorAnalysis": [
-      "Está incorreta: Rigidez infinita é a característica teórica do sólido indeformável de Euclides.",
-      "Está incorreta: Corpos viscosos não recuperam a forma original; sofrem deformações puramente irreversíveis.",
-      "Está incorreta: A densidade dos fluidos não duplica espontaneamente no repouso."
+      "Está incorreta: Forças perpendiculares axiais produzem tração ou compressão, não cisalhamento tangencial.",
+      "Está incorreta: Forças rotativas centrífugas produzem torção ou acelerações curvas.",
+      "Está incorreta: Forças nucleares atuam dentro do núcleo atómico, não no cisalhamento tecidual macroscópico."
     ],
-    "nursingApplication": "Fundamento para analisar a viscosidade de fluidos biológicos e soluções perfundidas."
+    "nursingApplication": "Identificação das forças de arrastamento tangenciais paralelas entre o doente e a superfície do leito."
   },
   {
     "id": 2103,
     "topicId": 2,
-    "question": "Como se define um Corpo Viscoelástico no âmbito da Biofísica dos materiais?",
+    "question": "Qual é o exemplo clínico e de cuidados de enfermagem apresentado no Slide 33 para ilustrar o Cisalhamento?",
     "options": [
-      "Um corpo que se desintegra espontaneamente quando exposto à luz visível do sol.",
-      "Um material puramente indeformável que não sofre qualquer alteração mecânica.",
-      "Um gás rarefeito que não oferece qualquer resistência à passagem de ondas sonoras.",
-      "Um corpo que apresenta simultaneamente características elásticas e viscosas, cuja deformação depende da tensão e do tempo de aplicação da força."
+      "Fémur suportando a carga do peso diário.",
+      "Tração do tendão pelo músculo quadríceps.",
+      "Curvatura com plano neutro no meio de um osso longo.",
+      "Atrito no leito (entre a pele do utente e a superfície do colchão/lençol)."
     ],
     "correctIndex": 3,
-    "explanation": "A viscoelasticidade combina resposta elástica (capacidade de restaurar forma) com amortecimento viscoso dependente do tempo (histerese).",
+    "explanation": "O Slide 33 indica explicitamente no ponto 4: '4. Cisalhamento: Forças tangenciais paralelas em sentidos opostos; atrito no leito'.",
     "distractorAnalysis": [
-      "Está incorreta: A desintegração por luz é fotodegradação química, não uma propriedade viscoelástica mecânica.",
-      "Está incorreta: O corpo indeformável é o modelo de Euclides; materiais viscoelásticos deformam-se sob carga.",
-      "Está incorreta: Gases rarefeitos não são corpos viscoelásticos com coesão molecular sólida."
+      "Está incorreta: Fémur suportando carga é o exemplo de Compressão (Slide 30).",
+      "Está incorreta: Tração do tendão é o exemplo de Tração (Slide 31).",
+      "Está incorreta: Curvatura central é o exemplo de Flexão (Slide 32)."
     ],
-    "nursingApplication": "Os tecidos biológicos (cartilagem, osso, músculos e tendões) são corpos tipicamente viscoelásticos."
+    "nursingApplication": "Alerta essencial: arrastar o doente nos lençóis sem elevar o corpo sujeita os tecidos a cisalhamento destrutivo."
   },
   {
     "id": 2104,
     "topicId": 2,
-    "question": "Qual das seguintes estruturas biológicas do corpo humano exibe comportamento mecânico tipicamente VISCOELÁSTICO?",
+    "question": "O que acontece biomecanicamente aos tecidos profundos e microcirculação quando um doente escorrega pelo leito (cisalhamento)?",
     "options": [
-      "Cartilagens articulares e tecido ósseo.",
-      "O ar contido no interior dos alvéolos pulmonares.",
-      "O vácuo existente no espaço interatómico das moléculas.",
-      "O esmalte dentário seco considerado como sólido puramente euclidiano."
+      "A pele externa fica aderida ao lençol por atrito enquanto a estrutura óssea desliza para baixo, distendendo, dobrando e ocluindo os microvasos sanguíneos subcutâneos.",
+      "A pele arrefece instantaneamente congelando o sangue nos capilares.",
+      "O esqueleto do doente transforma-se num sólido de Euclides indeformável.",
+      "A pressão capilar reduz-se a zero facilitando a oxigenação tecidual."
     ],
     "correctIndex": 0,
-    "explanation": "Conforme os slides de Paulo Pereira (Slide 19), ossos, cartilagens e músculos são corpos viscoelásticos com histerese.",
+    "explanation": "No cisalhamento clínico, camadas adjacentes de tecidos deslizam em sentidos opostos: a fáscia profunda move-se com o osso enquanto a derme fica retida no lençol. Os capilares que atravessam as camadas são angulados e estrangulados, provocando isquemia tecidual profunda.",
     "distractorAnalysis": [
-      "Está incorreta: O ar alveolar é uma mistura gasosa compressível, não um tecido biológico viscoelástico sólido.",
-      "Está incorreta: O espaço interatómico no vácuo não é um corpo material biológico.",
-      "Está incorreta: O esmalte dentário é mineralizado e frágil, não sendo o exemplo típico de viscoelastina amortecedora como a cartilagem."
+      "Está incorreta: O cisalhamento gera dano mecânico e isquemia, não congelamento térmico.",
+      "Está incorreta: O esqueleto continua a comportar-se como tecido vivo deformável viscoelástico.",
+      "Está incorreta: A oclusão e estrangulamento vascular interrompem a oxigenação, aumentando o risco de necrose."
     ],
-    "nursingApplication": "A viscoelasticidade da cartilagem amortece o impacto mecânico repetido na marcha e corrida."
+    "nursingApplication": "Compreensão fisiopatológica direta do desenvolvimento de úlceras por pressão e lesões de cisalhamento."
   },
   {
     "id": 2105,
     "topicId": 2,
-    "question": "O que é a Histerese Elástica observada em corpos viscoelásticos sob ciclos de carga e descarga?",
+    "question": "Qual é a diferença geométrica entre as forças de Tração/Compressão e as forças de Cisalhamento nos slides?",
     "options": [
-      "A criação espontânea de energia mecânica durante o repouso do corpo sem realização de trabalho.",
-      "O fenómeno pelo qual a curva de descarga não coincide com a de carga, dissipando energia mecânica sob a forma de calor.",
-      "A duplicação imediata da constante elástica de uma mola metálica após cada estiramento.",
-      "A perda total de massa atómica do material após ser submetido a forças de tração."
+      "Na tração as forças são perpendiculares e no cisalhamento são puramente gravitacionais.",
+      "Na tração/compressão as forças atuam perpendicularmente à secção transversal (axiais), enquanto no cisalhamento atuam paralelamente (tangencialmente) às superfícies planas.",
+      "Não existe qualquer diferença geométrica entre elas.",
+      "No cisalhamento as forças atuam exclusivamente no vácuo espacial."
     ],
     "correctIndex": 1,
-    "explanation": "Na histerese elástica, a área compreendida entre a curva de deformação e a de retorno representa energia mecânica absorvida e dissipada.",
+    "explanation": "A tração e compressão são solicitações normais/axiais (ortogonais à secção da barra). O cisalhamento é uma solicitação tangencial (Slide 33: 'forças tangenciais paralelas em sentidos opostos') que faz deslizar planos paralelos uns sobre os outros.",
     "distractorAnalysis": [
-      "Está incorreta: A histerese não cria energia mecânica; dissipa energia mecânica absorvida em energia térmica.",
-      "Está incorreta: A histerese é própria de materiais viscoelásticos e não altera a constante elástica linear ideal de molas de Hooke.",
-      "Está incorreta: A massa material conserva-se integralmente durante os ensaios de deformação e descarga mecânica."
+      "Está incorreta: A tração é axial e o cisalhamento é tangencial de contacto mecânico, não puramente gravitacional.",
+      "Está incorreta: A orientação das forças (normal vs tangencial) é a distinção primária na resistência dos materiais.",
+      "Está incorreta: O cisalhamento ocorre no contacto físico entre superfícies de materiais reais no nosso ambiente."
     ],
-    "nursingApplication": "O efeito de histerese nas articulações dissipa as ondas de choque prevenindo lesões por impacto."
+    "nursingApplication": "Permite distinguir se uma força aplicada sobre a pele tende a afundar o tecido (normal) ou a rasgá-lo paralelamente (cisalhamento)."
   },
   {
     "id": 2106,
     "topicId": 2,
-    "question": "Como se define um Corpo Plastoviscoelástico nos resumos teóricos de Biofísica (Slide 20)?",
+    "question": "O corte executado por uma tesoura cirúrgica ao seccionar um tecido biológico baseia-se primariamente em qual mecanismo reológico?",
     "options": [
-      "Um sólido de Euclides perfeitamente rígido que nunca se deforma em nenhuma circunstância.",
-      "Um gás nobre que não interage gravitacionalmente com os corpos vizinhos.",
-      "Comporta-se como um corpo elástico sob pequenas tensões; acima desse limiar, comporta-se como corpo plástico e viscoso.",
-      "Um líquido perfeito com viscosidade estritamente nula a todas as temperaturas."
+      "Deformação por torção helicoidal de alta rotação.",
+      "Compressão puramente convergente hidrostática.",
+      "Cisalhamento mecânico, onde duas lâminas paralelas muito próximas aplicam forças em sentidos opostos cortando os planos teciduais.",
+      "Dilatação térmica por transferência de calor corporal."
     ],
     "correctIndex": 2,
-    "explanation": "Sob pequenas forças tem deformação elástica reversível; ultrapassado o limiar, flui e deforma plasticamente (ex.: massa de pão).",
+    "explanation": "A tesoura atua por cisalhamento puro: as suas duas lâminas deslizam paralelas uma à outra em sentidos contrários, aplicando forças tangenciais que superam a resistência ao corte (cisalhamento) do material.",
     "distractorAnalysis": [
-      "Está incorreta: Sólidos de Euclides são indeformáveis; plastoviscoelásticos deformam-se com facilidade.",
-      "Está incorreta: Gases nobres não são materiais plastoviscoelásticos da reologia de sólidos.",
-      "Está incorreta: Líquidos com viscosidade nula são superfluidos ideais, o oposto de corpos com plasticidade e viscoelasticidade."
+      "Está incorreta: Não há rotação do tecido em torno do seu eixo próprio (torção).",
+      "Está incorreta: A lâmina não esmaga uniformemente em compressão hidrostática; corta por planos opostos.",
+      "Está incorreta: O corte é puramente mecânico e frio, independente de transferência de calor."
     ],
-    "nursingApplication": "A massa de pão é o exemplo didático lecionado para ilustrar o comportamento plastoviscoelástico."
+    "nursingApplication": "Fundamentação biofísica de instrumentos cirúrgicos cortantes na prática de bloco operatório e enfermagem."
   },
   {
     "id": 2107,
     "topicId": 2,
-    "question": "Porque é que uma esponja ou colchão viscoelástico (Memory Foam) se deforma de modo dependente do tempo de aplicação da força?",
+    "question": "Em que situação de internamento hospitalar as forças de cisalhamento sobre a região sacrococcígea são máximas?",
     "options": [
-      "Porque o material do colchão perde noventa por cento da sua massa a cada minuto em que é comprimido.",
-      "Porque a gravidade do planeta atua exclusivamente durante os primeiros cinco segundos de compressão.",
-      "Porque o colchão é constituído por um sólido de Euclides puro que rejeita a pressão corporal.",
-      "Porque o ar e o material interno escoam lentamente através dos microporos, combinando elasticidade com amortecimento viscoso dependente do tempo."
+      "Com o doente perfeitamente deitado em decúbito dorsal plano horizontal a 0 graus.",
+      "Quando o doente se encontra de pé com calçado antiderrapante.",
+      "Com a cama rebaixada ao nível do chão em decúbito ventral.",
+      "Quando a cabeceira da cama articulada é elevada acima de 30-45 graus e o doente escorrega continuamente em direção aos pés do leito."
     ],
     "correctIndex": 3,
-    "explanation": "A resposta viscoelástica temporal resulta da redistribuição interna gradual da estrutura polimérica e do ar nos poros.",
+    "explanation": "Ao elevar a cabeceira a componente tangencial P_t do peso aumenta. O corpo desliza rampa abaixo, mas a pele fica aderente ao lençol por atrito: desenvolvem-se forças intensas de cisalhamento que distendem os tecidos profundos do sacro.",
     "distractorAnalysis": [
-      "Está incorreta: A massa do colchão permanece constante e não se perde durante o uso sob compressão.",
-      "Está incorreta: A força da gravidade atua de forma constante e contínua sobre a massa do indivíduo no leito.",
-      "Está incorreta: O sólido de Euclides não se deformaria de todo; a espuma viscoelástica adapta-se ao contorno corporal."
+      "Está incorreta: Na posição horizontal plana não há componente tangencial descendente P_t, minimizando o cisalhamento.",
+      "Está incorreta: De pé a carga no sacro é nula, pois o peso é transmitido pelos membros inferiores ao solo.",
+      "Está incorreta: Em decúbito ventral o sacro não apoia sobre o colchão."
     ],
-    "nursingApplication": "Colchões viscoelásticos distribuem a pressão por uma área maior ao adaptarem-se lentamente ao corpo."
+    "nursingApplication": "Diretriz clínica internacional: manter a cabeceira abaixo de 30 graus sempre que possível para minimizar o cisalhamento."
   },
   {
     "id": 2108,
     "topicId": 2,
-    "question": "Qual dos seguintes pares de materiais representa respetivamente um Corpo Viscoso e um Corpo Plástico?",
+    "question": "Para prevenir lesões de cisalhamento na pele de um utente dependente durante a mobilização no leito, que técnica deve ser adotada pela equipa?",
     "options": [
-      "Mel (viscoso) e plasticina (plástico).",
-      "Mola de aço (viscoso) e vidro comum (plástico).",
-      "Diamante (viscoso) e água destilada (plástico).",
-      "Ar comprimido (viscoso) e osso cortical (plástico)."
+      "Elevar o corpo do doente utilizando lençol de transferência ou técnica em grupo, em vez de arrastar o corpo contra os lençóis.",
+      "Puxar o doente rapidamente pelos pés sem pedir ajuda a colegas.",
+      "Lubrificar o colchão com sabão líquido durante a noite.",
+      "Manter o doente sempre apoiado num só pé durante 12 horas seguidas."
     ],
     "correctIndex": 0,
-    "explanation": "O mel é o exemplo clássico de fluido viscoso irreversível e a plasticina o exemplo clássico de sólido plástico moldável.",
+    "explanation": "Ao elevar o corpo do utente durante a transferência, anula-se o atrito com o lençol e evitam-se as forças tangenciais paralelas de cisalhamento, protegendo a integridade da pele e vasos subcutâneos.",
     "distractorAnalysis": [
-      "Está incorreta: Molas de aço são elásticas de Hooke e o vidro é um material elástico-frágil, não plástico.",
-      "Está incorreta: O diamante é um sólido extremamente rígido e a água é um líquido viscoso (pouco viscoso), não plástico.",
-      "Está incorreta: O ar é um gás compressível e o osso é um compósito viscoelástico biológico."
+      "Está incorreta: Puxar pelos pés maximiza o atrito de arrasto e as forças de cisalhamento nos tecidos moles.",
+      "Está incorreta: Sabão no colchão degrada o material, humedece a pele (maceração) e cria risco grave de contaminação e queda.",
+      "Está incorreta: Apoio unipodal por 12 horas é biologicamente impossível e provocaria queda imediata."
     ],
-    "nursingApplication": "Exemplos fundamentais lecionados nos slides de Reologia para distinguir fluidos viscosos de sólidos plásticos."
+    "nursingApplication": "Regra de boas práticas de enfermagem essencial para a prevenção de lesões por pressão nos serviços de internamento."
   },
   {
     "id": 2109,
     "topicId": 2,
-    "question": "Na Reologia, o que caracteriza o comportamento mecânico de um Corpo Plástico?",
+    "question": "No mecanismo de deformação por cisalhamento, o que acontece aos planos internos paralelos do material?",
     "options": [
-      "Recupera instantaneamente a forma original qualquer que seja a intensidade da força aplicada.",
-      "Apenas sofre deformação apreciável a partir de um determinado valor limiar de tensão, mantendo a deformação permanente após a remoção da carga.",
-      "Apresenta uma deformação que depende exclusivamente do campo magnético circundante no vácuo.",
-      "Comporta-se como um sólido indeformável de Euclides em todas as situações físicas possíveis."
+      "Aproximam-se colidindo frontalmente ao longo do mesmo eixo.",
+      "Deslizam paralelamente uns sobre os outros no sentido das forças aplicadas.",
+      "Curvam-se em círculos concêntricos mantendo o centro neutro a zero.",
+      "Afastam-se indefinidamente duplicando o volume do corpo."
     ],
     "correctIndex": 1,
-    "explanation": "Os corpos plásticos necessitam de uma tensão mínima de escoamento para deformar e não recuperam a forma inicial (ex.: plasticina).",
+    "explanation": "O cisalhamento atua fazendo deslizar planos atómicos/moleculares adjacentes paralelamente entre si, alterando os ângulos das faces do corpo sem alterar primariamente o seu volume total (Slide 27).",
     "distractorAnalysis": [
-      "Está incorreta: Recuperar a forma original instantaneamente é a definição de corpo elástico de Hooke, não de plástico.",
-      "Está incorreta: A plasticidade depende das tensões mecânicas aplicadas, não de campos magnéticos.",
-      "Está incorreta: Corpos plásticos deformam-se permanentemente; sólidos de Euclides nunca se deformam."
+      "Está incorreta: Colisão frontal ao longo do eixo ocorre na compressão axial convergente (Slide 21).",
+      "Está incorreta: Curvar arestas retilíneas em linhas curvas é a definição de flexão (Slide 26).",
+      "Está incorreta: O cisalhamento puro preserva o volume, não o duplica."
     ],
-    "nursingApplication": "Compreender a plasticidade ajuda a entender deformações permanentes em materiais hospitalares."
+    "nursingApplication": "Conceito microscópico da deformação angular e corte dos tecidos."
   },
   {
     "id": 2110,
     "topicId": 2,
-    "question": "O que caracteriza fundamentalmente o comportamento de um Corpo Viscoso?",
+    "question": "As forças tangenciais exercidas pelo fluxo sanguíneo pulsátil sobre as células endoteliais da parede das artérias constituem um exemplo fisiológico de:",
     "options": [
-      "Apresenta uma rigidez infinita que impede qualquer alteração dimensional com o tempo.",
-      "Recupera a forma original mais rapidamente do que qualquer mola de aço metálica.",
-      "A deformação é proporcional à tensão e ao tempo de aplicação dessa tensão, escoando irreversivelmente sem recuperar a forma original.",
-      "A sua densidade duplica instantaneamente a cada segundo de repouso absoluto."
+      "Deformação por torção esquelética de alavancas.",
+      "Compressão puramente convergente do antebraço.",
+      "Tensão de cisalhamento hemodinâmico (shear stress) atuando paralelamente à superfície vascular.",
+      "Sólido indeformável de Euclides em repouso absoluto."
     ],
     "correctIndex": 2,
-    "explanation": "Corpos viscosos (como mel ou óleo) fluem sob tensão com uma taxa de deformação dependente do tempo de aplicação da força.",
+    "explanation": "O sangue ao escoar paralelamente à parede interna da artéria exerce uma força de atrito tangencial por unidade de área sobre a camada endotelial: tensão de cisalhamento fluida (shear stress), fundamental para a regulação do tónus vascular.",
     "distractorAnalysis": [
-      "Está incorreta: Rigidez infinita é a característica teórica do sólido indeformável de Euclides.",
-      "Está incorreta: Corpos viscosos não recuperam a forma original; sofrem deformações puramente irreversíveis.",
-      "Está incorreta: A densidade dos fluidos não duplica espontaneamente no repouso."
+      "Está incorreta: Não há torção rotativa de alavancas ósseas no escoamento laminar do sangue.",
+      "Está incorreta: Compressão convergente atua axialmente em ossos e cartilagens, não no escoamento parietal.",
+      "Está incorreta: O endotélio é um tecido vivo elástico e o sangue é um fluido viscoso em movimento."
     ],
-    "nursingApplication": "Fundamento para analisar a viscosidade de fluidos biológicos e soluções perfundidas."
+    "nursingApplication": "Liga o conceito reológico de cisalhamento à hemodinâmica e integridade da circulação cardiovascular."
   },
   {
     "id": 2111,
     "topicId": 2,
-    "question": "Como se define um Corpo Viscoelástico no âmbito da Biofísica dos materiais?",
+    "question": "Qual é a definição exata de deformação por 'Torção' apresentada no Slide 28 de Biofísica?",
     "options": [
-      "Um corpo que se desintegra espontaneamente quando exposto à luz visível do sol.",
-      "Um material puramente indeformável que não sofre qualquer alteração mecânica.",
-      "Um gás rarefeito que não oferece qualquer resistência à passagem de ondas sonoras.",
-      "Um corpo que apresenta simultaneamente características elásticas e viscosas, cuja deformação depende da tensão e do tempo de aplicação da força."
+      "Encurtamento longitudinal de uma barra por forças convergentes axiais.",
+      "Deformação entre superfícies paralelas por atrito tangencial no leito.",
+      "Curvatura de arestas retilíneas por forças perpendiculares à viga.",
+      "Rotação de um sólido em torno do seu eixo por ação de um momento de força (torque)."
     ],
     "correctIndex": 3,
-    "explanation": "A viscoelasticidade combina resposta elástica (capacidade de restaurar forma) com amortecimento viscoso dependente do tempo (histerese).",
+    "explanation": "O Slide 28 define expressamente: 'Torção: Rotação de um sólido em torno do seu eixo por ação de um momento de força (torque)'.",
     "distractorAnalysis": [
-      "Está incorreta: A desintegração por luz é fotodegradação química, não uma propriedade viscoelástica mecânica.",
-      "Está incorreta: O corpo indeformável é o modelo de Euclides; materiais viscoelásticos deformam-se sob carga.",
-      "Está incorreta: Gases rarefeitos não são corpos viscoelásticos com coesão molecular sólida."
+      "Está incorreta: Esta é a definição de Compressão (Slide 21).",
+      "Está incorreta: Esta é a definição de Cisalhamento (Slide 27).",
+      "Está incorreta: Esta é a definição de Flexão (Slide 26)."
     ],
-    "nursingApplication": "Os tecidos biológicos (cartilagem, osso, músculos e tendões) são corpos tipicamente viscoelásticos."
+    "nursingApplication": "A torção é o mecanismo de lesão típico de fraturas espiroides dos ossos da perna e do braço."
   },
   {
     "id": 2112,
     "topicId": 2,
-    "question": "Qual das seguintes estruturas biológicas do corpo humano exibe comportamento mecânico tipicamente VISCOELÁSTICO?",
+    "question": "O que acontece à tensão mecânica no eixo central de um sólido sujeito a torção de acordo com o Slide 28?",
     "options": [
-      "Cartilagens articulares e tecido ósseo.",
-      "O ar contido no interior dos alvéolos pulmonares.",
-      "O vácuo existente no espaço interatómico das moléculas.",
-      "O esmalte dentário seco considerado como sólido puramente euclidiano."
+      "Tensão no eixo central é nula! (Tensão = 0 Pa no centro da secção).",
+      "A tensão no eixo central é máxima e dez vezes superior à da periferia.",
+      "A tensão no eixo central converte-se em atrito cinético de arrastamento.",
+      "A tensão no eixo central atinge valor infinito destruindo o núcleo."
     ],
     "correctIndex": 0,
-    "explanation": "Conforme os slides de Paulo Pereira (Slide 19), ossos, cartilagens e músculos são corpos viscoelásticos com histerese.",
+    "explanation": "O Slide 28 coloca expressamente em destaque com ponto de exclamação: 'Tensão no eixo central é nula!'. Na torção pura de uma secção circular, a tensão cisalhante cresce linearmente do centro para o bordo exterior, sendo zero no próprio eixo de rotação.",
     "distractorAnalysis": [
-      "Está incorreta: O ar alveolar é uma mistura gasosa compressível, não um tecido biológico viscoelástico sólido.",
-      "Está incorreta: O espaço interatómico no vácuo não é um corpo material biológico.",
-      "Está incorreta: O esmalte dentário é mineralizado e frágil, não sendo o exemplo típico de viscoelastina amortecedora como a cartilagem."
+      "Está incorreta: A tensão máxima localiza-se na periferia externa da parede, nunca no eixo central (Slide 34).",
+      "Está incorreta: A torção gera tensão cisalhante rotativa elástica interna, não atrito de arrastamento de superfícies.",
+      "Está incorreta: No eixo central a deformação e a tensão são exatamente nulas."
     ],
-    "nursingApplication": "A viscoelasticidade da cartilagem amortece o impacto mecânico repetido na marcha e corrida."
+    "nursingApplication": "Explica por que os ossos longos podem ter o canal medular no eixo central sem perder resistência à torção."
   },
   {
     "id": 2113,
     "topicId": 2,
-    "question": "O que é a Histerese Elástica observada em corpos viscoelásticos sob ciclos de carga e descarga?",
+    "question": "Onde se concentra a tensão máxima quando um osso longo cilíndrico oco é submetido a torção mecânica (Slide 34)?",
     "options": [
-      "A criação espontânea de energia mecânica durante o repouso do corpo sem realização de trabalho.",
-      "O fenómeno pelo qual a curva de descarga não coincide com a de carga, dissipando energia mecânica sob a forma de calor.",
-      "A duplicação imediata da constante elástica de uma mola metálica após cada estiramento.",
-      "A perda total de massa atómica do material após ser submetido a forças de tração."
+      "No centro da medula óssea interna ao longo do eixo.",
+      "Na periferia do osso oco (no bordo externo da parede óssea cortical).",
+      "Na cartilagem articular contralateral a 10 metros de distância.",
+      "Em nenhum ponto, pois a tensão é uniforme em toda a área."
     ],
     "correctIndex": 1,
-    "explanation": "Na histerese elástica, a área compreendida entre a curva de deformação e a de retorno representa energia mecânica absorvida e dissipada.",
+    "explanation": "O Slide 34 salienta na síntese da torção: '5. Torção: Momento da força; tensão máxima concentrada na periferia do osso oco'.",
     "distractorAnalysis": [
-      "Está incorreta: A histerese não cria energia mecânica; dissipa energia mecânica absorvida em energia térmica.",
-      "Está incorreta: A histerese é própria de materiais viscoelásticos e não altera a constante elástica linear ideal de molas de Hooke.",
-      "Está incorreta: A massa material conserva-se integralmente durante os ensaios de deformação e descarga mecânica."
+      "Está incorreta: A tensão no centro/eixo central é rigorosamente nula (Slide 28).",
+      "Está incorreta: A tensão mecânica atua na secção do osso sujeito ao torque aplicado.",
+      "Está incorreta: A distribuição de tensões na torção é radialmente variável, crescendo proporcionalmente com a distância ao centro."
     ],
-    "nursingApplication": "O efeito de histerese nas articulações dissipa as ondas de choque prevenindo lesões por impacto."
+    "nursingApplication": "Demonstra a otimização biomecânica da diáfise óssea cilíndrica oca para resistir a esforços de torção."
   },
   {
     "id": 2114,
     "topicId": 2,
-    "question": "Como se define um Corpo Plastoviscoelástico nos resumos teóricos de Biofísica (Slide 20)?",
+    "question": "Um esquiador cai na neve e o esqui fica preso enquanto o corpo roda bruscamente em torno do eixo da perna. Que tipo de fratura óssea é causada por este mecanismo mecânico?",
     "options": [
-      "Um sólido de Euclides perfeitamente rígido que nunca se deforma em nenhuma circunstância.",
-      "Um gás nobre que não interage gravitacionalmente com os corpos vizinhos.",
-      "Comporta-se como um corpo elástico sob pequenas tensões; acima desse limiar, comporta-se como corpo plástico e viscoso.",
-      "Um líquido perfeito com viscosidade estritamente nula a todas as temperaturas."
+      "Fratura por compressão axial pura que encurta o fémur em 10 cm.",
+      "Fratura incompleta em ramo verde típica de crianças pequenas.",
+      "Fratura espiroide da tíbia ou fémur provocada por momento de torção (Slide 34).",
+      "Fratura por atrito estático das meias no leito."
     ],
     "correctIndex": 2,
-    "explanation": "Sob pequenas forças tem deformação elástica reversível; ultrapassado o limiar, flui e deforma plasticamente (ex.: massa de pão).",
+    "explanation": "Quando uma extremidade do membro é fixada e o corpo roda em torno do eixo longitudinal, gera-se um momento torsor (torque): o osso sofre torção até romper numa fenda helicoidal clássica, designada por fratura espiroide.",
     "distractorAnalysis": [
-      "Está incorreta: Sólidos de Euclides são indeformáveis; plastoviscoelásticos deformam-se com facilidade.",
-      "Está incorreta: Gases nobres não são materiais plastoviscoelásticos da reologia de sólidos.",
-      "Está incorreta: Líquidos com viscosidade nula são superfluidos ideais, o oposto de corpos com plasticidade e viscoelasticidade."
+      "Está incorreta: Compressão axial resulta de quedas em pé de grande altura (forças convergentes), não de rotação do corpo.",
+      "Está incorreta: Fraturas em ramo verde decorrem de flexão incompleta em ossos imaturos, não de torção pura em adultos.",
+      "Está incorreta: Atrito em lençóis gera cisalhamento cutâneo, não fraturas espiroides traumáticas de ossos longos."
     ],
-    "nursingApplication": "A massa de pão é o exemplo didático lecionado para ilustrar o comportamento plastoviscoelástico."
+    "nursingApplication": "Reconhecimento do padrão biomecânico na anamnese de acidentes ortopédicos e desportivos."
   },
   {
     "id": 2115,
     "topicId": 2,
-    "question": "Porque é que uma esponja ou colchão viscoelástico (Memory Foam) se deforma de modo dependente do tempo de aplicação da força?",
+    "question": "No Slide 34, a causa física primária da deformação por Torção é expressamente identificada como:",
     "options": [
-      "Porque o material do colchão perde noventa por cento da sua massa a cada minuto em que é comprimido.",
-      "Porque a gravidade do planeta atua exclusivamente durante os primeiros cinco segundos de compressão.",
-      "Porque o colchão é constituído por um sólido de Euclides puro que rejeita a pressão corporal.",
-      "Porque o ar e o material interno escoam lentamente através dos microporos, combinando elasticidade com amortecimento viscoso dependente do tempo."
+      "Forças convergentes longitudinais.",
+      "Forças divergentes de estiramento tendinoso.",
+      "Pressão capilar superficial sobre o sacro.",
+      "Momento da força (torque)."
     ],
     "correctIndex": 3,
-    "explanation": "A resposta viscoelástica temporal resulta da redistribuição interna gradual da estrutura polimérica e do ar nos poros.",
+    "explanation": "O Slide 34 define no ponto 5: '5. Torção: Momento da força; tensão máxima concentrada na periferia do osso oco'.",
     "distractorAnalysis": [
-      "Está incorreta: A massa do colchão permanece constante e não se perde durante o uso sob compressão.",
-      "Está incorreta: A força da gravidade atua de forma constante e contínua sobre a massa do indivíduo no leito.",
-      "Está incorreta: O sólido de Euclides não se deformaria de todo; a espuma viscoelástica adapta-se ao contorno corporal."
+      "Está incorreta: Forças convergentes causam Compressão (Slide 30).",
+      "Está incorreta: Forças divergentes causam Tração (Slide 31).",
+      "Está incorreta: Pressão sobre o sacro decorre de força normal e apoio (Slide 44 do Tópico 1)."
     ],
-    "nursingApplication": "Colchões viscoelásticos distribuem a pressão por uma área maior ao adaptarem-se lentamente ao corpo."
+    "nursingApplication": "Liga diretamente o conceito de Momento da Força estudado no Tópico 1 à deformação reológica do Tópico 2."
   },
   {
     "id": 2116,
     "topicId": 2,
-    "question": "Qual dos seguintes pares de materiais representa respetivamente um Corpo Viscoso e um Corpo Plástico?",
+    "question": "Por que razão a evolução biológica favoreceu ossos longos ocos (com canal medular) em vez de ossos maciços sob o ponto de vista da Torção?",
     "options": [
-      "Mel (viscoso) e plasticina (plástico).",
-      "Mola de aço (viscoso) e vidro comum (plástico).",
-      "Diamante (viscoso) e água destilada (plástico).",
-      "Ar comprimido (viscoso) e osso cortical (plástico)."
+      "Porque a tensão de torção é zero no centro e máxima na periferia, pelo que ter massa na periferia confere a máxima resistência à torção com o mínimo de peso corporal.",
+      "Porque os ossos ocos flutuam na água permitindo a natação humana.",
+      "Porque os ossos maciços se desintegrariam por radiação gama espontânea.",
+      "Porque no interior do osso não existe gravidade terrestre."
     ],
     "correctIndex": 0,
-    "explanation": "O mel é o exemplo clássico de fluido viscoso irreversível e a plasticina o exemplo clássico de sólido plástico moldável.",
+    "explanation": "Distribuir a matéria óssea o mais longe possível do eixo central maximiza a resistência à torção e flexão (momento polar de inércia) gastando muito menos massa e energia metabólica do que um cilindro maciço pesado.",
     "distractorAnalysis": [
-      "Está incorreta: Molas de aço são elásticas de Hooke e o vidro é um material elástico-frágil, não plástico.",
-      "Está incorreta: O diamante é um sólido extremamente rígido e a água é um líquido viscoso (pouco viscoso), não plástico.",
-      "Está incorreta: O ar é um gás compressível e o osso é um compósito viscoelástico biológico."
+      "Está incorreta: O esqueleto humano não foi concebido para flutuar espontaneamente sem esforço muscular.",
+      "Está incorreta: Não há desintegração radioativa induzida pela solidez do tecido ósseo maciço.",
+      "Está incorreta: O campo gravitacional atua uniformemente em todo o interior do organismo."
     ],
-    "nursingApplication": "Exemplos fundamentais lecionados nos slides de Reologia para distinguir fluidos viscosos de sólidos plásticos."
+    "nursingApplication": "Compreensão primorosa da arquitetura óssea humana à luz da resistência dos materiais de Paulo Pereira."
   },
   {
     "id": 2117,
     "topicId": 2,
-    "question": "Na Reologia, o que caracteriza o comportamento mecânico de um Corpo Plástico?",
+    "question": "Se aplicarmos um momento torsor de 50 N·m a um fémur humano, em qual das seguintes regiões a tensão mecânica tangencial interna é MENOR?",
     "options": [
-      "Recupera instantaneamente a forma original qualquer que seja a intensidade da força aplicada.",
-      "Apenas sofre deformação apreciável a partir de um determinado valor limiar de tensão, mantendo a deformação permanente após a remoção da carga.",
-      "Apresenta uma deformação que depende exclusivamente do campo magnético circundante no vácuo.",
-      "Comporta-se como um sólido indeformável de Euclides em todas as situações físicas possíveis."
+      "Na face externa do córtex periósteo periférico.",
+      "No eixo central geométrico do osso (onde a tensão é nula).",
+      "Na metade externa da espessura da cortical.",
+      "A tensão é exatamente idêntica em todos os pontos da secção circular."
     ],
     "correctIndex": 1,
-    "explanation": "Os corpos plásticos necessitam de uma tensão mínima de escoamento para deformar e não recuperam a forma inicial (ex.: plasticina).",
+    "explanation": "Conforme o Slide 28 ('Tensão no eixo central é nula!'), a tensão por torção é rigorosamente zero no eixo central e cresce linearmente em direção ao bordo exterior.",
     "distractorAnalysis": [
-      "Está incorreta: Recuperar a forma original instantaneamente é a definição de corpo elástico de Hooke, não de plástico.",
-      "Está incorreta: A plasticidade depende das tensões mecânicas aplicadas, não de campos magnéticos.",
-      "Está incorreta: Corpos plásticos deformam-se permanentemente; sólidos de Euclides nunca se deformam."
+      "Está incorreta: Na face periférica exterior a tensão é máxima (Slide 34).",
+      "Está incorreta: Na metade da espessura a tensão é intermediária, superior à do centro.",
+      "Está incorreta: A distribuição é heterogénea e radialmente proporcional à distância ao eixo."
     ],
-    "nursingApplication": "Compreender a plasticidade ajuda a entender deformações permanentes em materiais hospitalares."
+    "nursingApplication": "Garante a correta interpretação do perfil de esforços internos sob torção."
   },
   {
     "id": 2118,
     "topicId": 2,
-    "question": "O que caracteriza fundamentalmente o comportamento de um Corpo Viscoso?",
+    "question": "Qual é a grandeza física que, ao atuar sobre um membro ou barra, provoca a sua deformação por Torção?",
     "options": [
-      "Apresenta uma rigidez infinita que impede qualquer alteração dimensional com o tempo.",
-      "Recupera a forma original mais rapidamente do que qualquer mola de aço metálica.",
-      "A deformação é proporcional à tensão e ao tempo de aplicação dessa tensão, escoando irreversivelmente sem recuperar a forma original.",
-      "A sua densidade duplica instantaneamente a cada segundo de repouso absoluto."
+      "Pressão hidrostática medida em mmHg.",
+      "Aceleração da gravidade de 9,8 m/s².",
+      "Momento da força ou torque (M = F · b), medido em N·m.",
+      "Massa molecular inercial em unidades atómicas."
     ],
     "correctIndex": 2,
-    "explanation": "Corpos viscosos (como mel ou óleo) fluem sob tensão com uma taxa de deformação dependente do tempo de aplicação da força.",
+    "explanation": "O Slide 28 estipula que a torção é produzida 'por ação de um momento de força (torque)' exercido em torno do eixo do corpo.",
     "distractorAnalysis": [
-      "Está incorreta: Rigidez infinita é a característica teórica do sólido indeformável de Euclides.",
-      "Está incorreta: Corpos viscosos não recuperam a forma original; sofrem deformações puramente irreversíveis.",
-      "Está incorreta: A densidade dos fluidos não duplica espontaneamente no repouso."
+      "Está incorreta: Pressão hidrostática atua perpendicularmente a superfícies fluidas, não gerando torção axial pura.",
+      "Está incorreta: A gravidade gera forças verticais que só criam torque se tiverem braço de alavanca desalinhado.",
+      "Está incorreta: Massa é uma grandeza inercial escalar, não o agente rotativo que causa torção."
     ],
-    "nursingApplication": "Fundamento para analisar a viscosidade de fluidos biológicos e soluções perfundidas."
+    "nursingApplication": "Consolida a relação entre torque mecânico e torção de elementos esqueléticos."
   },
   {
     "id": 2119,
     "topicId": 2,
-    "question": "Como se define um Corpo Viscoelástico no âmbito da Biofísica dos materiais?",
+    "question": "Ao espremer uma toalha molhada rodando as duas mãos em sentidos rotativos opostos, que deformação reológica estamos a aplicar à toalha?",
     "options": [
-      "Um corpo que se desintegra espontaneamente quando exposto à luz visível do sol.",
-      "Um material puramente indeformável que não sofre qualquer alteração mecânica.",
-      "Um gás rarefeito que não oferece qualquer resistência à passagem de ondas sonoras.",
-      "Um corpo que apresenta simultaneamente características elásticas e viscosas, cuja deformação depende da tensão e do tempo de aplicação da força."
+      "Compressão convergente pura.",
+      "Tração divergente axial simples.",
+      "Flexão com plano neutro estático.",
+      "Torção clássica por momentos de força em sentidos opostos ao longo do eixo da toalha."
     ],
     "correctIndex": 3,
-    "explanation": "A viscoelasticidade combina resposta elástica (capacidade de restaurar forma) com amortecimento viscoso dependente do tempo (histerese).",
+    "explanation": "Rodar extremidades em sentidos opostos em torno do eixo longitudinal aplica momentos torsores contrários, produzindo deformação pura por torção helicoidal.",
     "distractorAnalysis": [
-      "Está incorreta: A desintegração por luz é fotodegradação química, não uma propriedade viscoelástica mecânica.",
-      "Está incorreta: O corpo indeformável é o modelo de Euclides; materiais viscoelásticos deformam-se sob carga.",
-      "Está incorreta: Gases rarefeitos não são corpos viscoelásticos com coesão molecular sólida."
+      "Está incorreta: Compressão atuaria aproximando as mãos em linha reta colinear (Slide 21).",
+      "Está incorreta: Tração atuaria afastando as mãos em linha reta (Slide 23).",
+      "Está incorreta: Flexão atuaria curvando a toalha num arco por forças perpendiculares (Slide 26)."
     ],
-    "nursingApplication": "Os tecidos biológicos (cartilagem, osso, músculos e tendões) são corpos tipicamente viscoelásticos."
+    "nursingApplication": "Exemplo quotidiano tangível que ilustra perfeitamente a mecânica da torção."
   },
   {
     "id": 2120,
     "topicId": 2,
-    "question": "Qual das seguintes estruturas biológicas do corpo humano exibe comportamento mecânico tipicamente VISCOELÁSTICO?",
+    "question": "Em quais das 5 deformações estudadas nos slides a tensão mecânica no centro geométrico (eixo central) é RIGOROSAMENTE NULA?",
     "options": [
-      "Cartilagens articulares e tecido ósseo.",
-      "O ar contido no interior dos alvéolos pulmonares.",
-      "O vácuo existente no espaço interatómico das moléculas.",
-      "O esmalte dentário seco considerado como sólido puramente euclidiano."
+      "Na Flexão (tensão no centro é nula) e na Torção (tensão no eixo central é nula).",
+      "Apenas na Compressão e na Tração.",
+      "Exclusivamente no Cisalhamento tangencial.",
+      "Em nenhuma delas, pois a tensão é sempre máxima no centro de todos os corpos."
     ],
     "correctIndex": 0,
-    "explanation": "Conforme os slides de Paulo Pereira (Slide 19), ossos, cartilagens e músculos são corpos viscoelásticos com histerese.",
+    "explanation": "Os Slides 26 ('Flexão: Tensão no centro é nula!') e 28 ('Torção: Tensão no eixo central é nula!') destacam esta propriedade geométrica comum da flexão e da torção.",
     "distractorAnalysis": [
-      "Está incorreta: O ar alveolar é uma mistura gasosa compressível, não um tecido biológico viscoelástico sólido.",
-      "Está incorreta: O espaço interatómico no vácuo não é um corpo material biológico.",
-      "Está incorreta: O esmalte dentário é mineralizado e frágil, não sendo o exemplo típico de viscoelastina amortecedora como a cartilagem."
+      "Está incorreta: Na compressão e tração axiais puras a tensão distribui-se uniformemente por toda a secção transversal (σ = F/A).",
+      "Está incorreta: No cisalhamento a tensão tangencial atua entre as superfícies de deslizamento.",
+      "Está incorreta: Afirmar que a tensão é sempre máxima no centro contradiz diretamente os Slides 26 e 28."
     ],
-    "nursingApplication": "A viscoelasticidade da cartilagem amortece o impacto mecânico repetido na marcha e corrida."
+    "nursingApplication": "Síntese teórica cruzada de elevada pertinência para exames e avaliações de Biofísica."
   },
   {
     "id": 2121,
     "topicId": 2,
-    "question": "O que é a Histerese Elástica observada em corpos viscoelásticos sob ciclos de carga e descarga?",
+    "question": "Quais são os CINCO tipos de deformação mecânica catalogados no resumo dos Slides 29 a 34 de Biofísica?",
     "options": [
-      "A criação espontânea de energia mecânica durante o repouso do corpo sem realização de trabalho.",
-      "O fenómeno pelo qual a curva de descarga não coincide com a de carga, dissipando energia mecânica sob a forma de calor.",
-      "A duplicação imediata da constante elástica de uma mola metálica após cada estiramento.",
-      "A perda total de massa atómica do material após ser submetido a forças de tração."
+      "1. Elasticidade; 2. Plasticidade; 3. Viscosidade; 4. Histerese; 5. Inércia.",
+      "1. Compressão; 2. Tração; 3. Flexão; 4. Cisalhamento; 5. Torção.",
+      "1. Gravidade; 2. Eletromagnética; 3. Nuclear Forte; 4. Nuclear Fraca; 5. Normal.",
+      "1. Força; 2. Massa; 3. Peso; 4. Pressão; 5. Dinamómetro."
     ],
     "correctIndex": 1,
-    "explanation": "Na histerese elástica, a área compreendida entre a curva de deformação e a de retorno representa energia mecânica absorvida e dissipada.",
+    "explanation": "Os Slides 30 a 34 enumeram rigorosamente as 5 deformações: '1. Compressão | 2. Tração | 3. Flexão | 4. Cisalhamento | 5. Torção'.",
     "distractorAnalysis": [
-      "Está incorreta: A histerese não cria energia mecânica; dissipa energia mecânica absorvida em energia térmica.",
-      "Está incorreta: A histerese é própria de materiais viscoelásticos e não altera a constante elástica linear ideal de molas de Hooke.",
-      "Está incorreta: A massa material conserva-se integralmente durante os ensaios de deformação e descarga mecânica."
+      "Está incorreta: Estes são comportamentos e propriedades reológicas, não os 5 tipos de deformação física geométrica.",
+      "Está incorreta: Estas são as 4 forças fundamentais mais a normal (Tópico 1).",
+      "Está incorreta: Estas são grandezas físicas e instrumentos de medição da tabela de Newton (Tópico 1)."
     ],
-    "nursingApplication": "O efeito de histerese nas articulações dissipa as ondas de choque prevenindo lesões por impacto."
+    "nursingApplication": "A estrutura basilar de classificação de esforços mecânicos na unidade curricular de Biofísica."
   },
   {
     "id": 2122,
     "topicId": 2,
-    "question": "Como se define um Corpo Plastoviscoelástico nos resumos teóricos de Biofísica (Slide 20)?",
+    "question": "Qual das 5 deformações decorre de forças convergentes e é suportada pelo fémur na postura diária (Slide 30)?",
     "options": [
-      "Um sólido de Euclides perfeitamente rígido que nunca se deforma em nenhuma circunstância.",
-      "Um gás nobre que não interage gravitacionalmente com os corpos vizinhos.",
-      "Comporta-se como um corpo elástico sob pequenas tensões; acima desse limiar, comporta-se como corpo plástico e viscoso.",
-      "Um líquido perfeito com viscosidade estritamente nula a todas as temperaturas."
+      "Torção.",
+      "Cisalhamento.",
+      "Compressão.",
+      "Flexão."
     ],
     "correctIndex": 2,
-    "explanation": "Sob pequenas forças tem deformação elástica reversível; ultrapassado o limiar, flui e deforma plasticamente (ex.: massa de pão).",
+    "explanation": "O Slide 30 estipula claramente: '1. Compressão: Forças convergentes; encurtamento longitudinal; fémur suporta carga corporal diária'.",
     "distractorAnalysis": [
-      "Está incorreta: Sólidos de Euclides são indeformáveis; plastoviscoelásticos deformam-se com facilidade.",
-      "Está incorreta: Gases nobres não são materiais plastoviscoelásticos da reologia de sólidos.",
-      "Está incorreta: Líquidos com viscosidade nula são superfluidos ideais, o oposto de corpos com plasticidade e viscoelasticidade."
+      "Está incorreta: Torção decorre de momentos rotativos (Slide 34).",
+      "Está incorreta: Cisalhamento decorre de forças tangenciais paralelas (Slide 33).",
+      "Está incorreta: Flexão decorre de forças perpendiculares (Slide 32)."
     ],
-    "nursingApplication": "A massa de pão é o exemplo didático lecionado para ilustrar o comportamento plastoviscoelástico."
+    "nursingApplication": "Associação direta de esforço de compressão ao osso de sustentação primordial dos membros inferiores."
   },
   {
     "id": 2123,
     "topicId": 2,
-    "question": "Porque é que uma esponja ou colchão viscoelástico (Memory Foam) se deforma de modo dependente do tempo de aplicação da força?",
+    "question": "Qual das 5 deformações decorre de forças divergentes provocando aumento longitudinal, como no tendão puxado pelo músculo (Slide 31)?",
     "options": [
-      "Porque o material do colchão perde noventa por cento da sua massa a cada minuto em que é comprimido.",
-      "Porque a gravidade do planeta atua exclusivamente durante os primeiros cinco segundos de compressão.",
-      "Porque o colchão é constituído por um sólido de Euclides puro que rejeita a pressão corporal.",
-      "Porque o ar e o material interno escoam lentamente através dos microporos, combinando elasticidade com amortecimento viscoso dependente do tempo."
+      "Compressão convergente.",
+      "Cisalhamento tangencial.",
+      "Torção por torque.",
+      "Tração."
     ],
     "correctIndex": 3,
-    "explanation": "A resposta viscoelástica temporal resulta da redistribuição interna gradual da estrutura polimérica e do ar nos poros.",
+    "explanation": "O Slide 31 estipula formalmente: '2. Tração: Forças divergentes; aumento longitudinal; tração do tendão pelo músculo'.",
     "distractorAnalysis": [
-      "Está incorreta: A massa do colchão permanece constante e não se perde durante o uso sob compressão.",
-      "Está incorreta: A força da gravidade atua de forma constante e contínua sobre a massa do indivíduo no leito.",
-      "Está incorreta: O sólido de Euclides não se deformaria de todo; a espuma viscoelástica adapta-se ao contorno corporal."
+      "Está incorreta: Compressão provoca diminuição do comprimento com forças convergentes (Slide 30).",
+      "Está incorreta: Cisalhamento deforma entre superfícies paralelas opostas (Slide 33).",
+      "Está incorreta: Torção atua por momentos de rotação em torno do eixo (Slide 34)."
     ],
-    "nursingApplication": "Colchões viscoelásticos distribuem a pressão por uma área maior ao adaptarem-se lentamente ao corpo."
+    "nursingApplication": "Identificação canónica do esforço trativo no sistema musculoesquelético."
   },
   {
     "id": 2124,
     "topicId": 2,
-    "question": "Qual dos seguintes pares de materiais representa respetivamente um Corpo Viscoso e um Corpo Plástico?",
+    "question": "Qual das 5 deformações é gerada por força transversal gerando curvatura com plano neutro central (Slide 32)?",
     "options": [
-      "Mel (viscoso) e plasticina (plástico).",
-      "Mola de aço (viscoso) e vidro comum (plástico).",
-      "Diamante (viscoso) e água destilada (plástico).",
-      "Ar comprimido (viscoso) e osso cortical (plástico)."
+      "Flexão.",
+      "Compressão.",
+      "Tração.",
+      "Torção."
     ],
     "correctIndex": 0,
-    "explanation": "O mel é o exemplo clássico de fluido viscoso irreversível e a plasticina o exemplo clássico de sólido plástico moldável.",
+    "explanation": "O Slide 32 estabelece taxativamente: '3. Flexão: Força transversal; curvatura com plano neutro central; tensão a meio de um osso'.",
     "distractorAnalysis": [
-      "Está incorreta: Molas de aço são elásticas de Hooke e o vidro é um material elástico-frágil, não plástico.",
-      "Está incorreta: O diamante é um sólido extremamente rígido e a água é um líquido viscoso (pouco viscoso), não plástico.",
-      "Está incorreta: O ar é um gás compressível e o osso é um compósito viscoelástico biológico."
+      "Está incorreta: Compressão atua axialmente com forças convergentes (Slide 30).",
+      "Está incorreta: Tração atua axialmente com forças divergentes (Slide 31).",
+      "Está incorreta: Torção roda o corpo em torno do seu eixo por momentos de força (Slide 34)."
     ],
-    "nursingApplication": "Exemplos fundamentais lecionados nos slides de Reologia para distinguir fluidos viscosos de sólidos plásticos."
+    "nursingApplication": "Identificação do esforço de encurvamento com eixo neutro a meio da espessura do osso."
   },
   {
     "id": 2125,
     "topicId": 2,
-    "question": "Na Reologia, o que caracteriza o comportamento mecânico de um Corpo Plástico?",
+    "question": "Qual das 5 deformações é provocada por forças tangenciais paralelas em sentidos opostos, manifestando-se no atrito no leito (Slide 33)?",
     "options": [
-      "Recupera instantaneamente a forma original qualquer que seja a intensidade da força aplicada.",
-      "Apenas sofre deformação apreciável a partir de um determinado valor limiar de tensão, mantendo a deformação permanente após a remoção da carga.",
-      "Apresenta uma deformação que depende exclusivamente do campo magnético circundante no vácuo.",
-      "Comporta-se como um sólido indeformável de Euclides em todas as situações físicas possíveis."
+      "Flexão.",
+      "Cisalhamento.",
+      "Compressão.",
+      "Tração."
     ],
     "correctIndex": 1,
-    "explanation": "Os corpos plásticos necessitam de uma tensão mínima de escoamento para deformar e não recuperam a forma inicial (ex.: plasticina).",
+    "explanation": "O Slide 33 estabelece textualmente: '4. Cisalhamento: Forças tangenciais paralelas em sentidos opostos; atrito no leito'.",
     "distractorAnalysis": [
-      "Está incorreta: Recuperar a forma original instantaneamente é a definição de corpo elástico de Hooke, não de plástico.",
-      "Está incorreta: A plasticidade depende das tensões mecânicas aplicadas, não de campos magnéticos.",
-      "Está incorreta: Corpos plásticos deformam-se permanentemente; sólidos de Euclides nunca se deformam."
+      "Está incorreta: Flexão é causada por forças transversais perpendiculares (Slide 32).",
+      "Está incorreta: Compressão é causada por forças axiais convergentes (Slide 30).",
+      "Está incorreta: Tração é causada por forças axiais divergentes (Slide 31)."
     ],
-    "nursingApplication": "Compreender a plasticidade ajuda a entender deformações permanentes em materiais hospitalares."
+    "nursingApplication": "Reconhecimento da solicitação tangencial que compromete a integridade tecidual no leito."
   },
   {
     "id": 2126,
     "topicId": 2,
-    "question": "O que caracteriza fundamentalmente o comportamento de um Corpo Viscoso?",
+    "question": "Qual das 5 deformações decorre de momento da força, concentrando a tensão máxima na periferia do osso oco (Slide 34)?",
     "options": [
-      "Apresenta uma rigidez infinita que impede qualquer alteração dimensional com o tempo.",
-      "Recupera a forma original mais rapidamente do que qualquer mola de aço metálica.",
-      "A deformação é proporcional à tensão e ao tempo de aplicação dessa tensão, escoando irreversivelmente sem recuperar a forma original.",
-      "A sua densidade duplica instantaneamente a cada segundo de repouso absoluto."
+      "Tração.",
+      "Compressão.",
+      "Torção.",
+      "Cisalhamento plano simples."
     ],
     "correctIndex": 2,
-    "explanation": "Corpos viscosos (como mel ou óleo) fluem sob tensão com uma taxa de deformação dependente do tempo de aplicação da força.",
+    "explanation": "O Slide 34 estabelece textualmente: '5. Torção: Momento da força; tensão máxima concentrada na periferia do osso oco'.",
     "distractorAnalysis": [
-      "Está incorreta: Rigidez infinita é a característica teórica do sólido indeformável de Euclides.",
-      "Está incorreta: Corpos viscosos não recuperam a forma original; sofrem deformações puramente irreversíveis.",
-      "Está incorreta: A densidade dos fluidos não duplica espontaneamente no repouso."
+      "Está incorreta: Tração concentra tensões longitudinais uniformes (Slide 31).",
+      "Está incorreta: Compressão encurta a barra sem momento torsor rotativo (Slide 30).",
+      "Está incorreta: Cisalhamento plano atua entre superfícies paralelas em translação tangencial (Slide 33)."
     ],
-    "nursingApplication": "Fundamento para analisar a viscosidade de fluidos biológicos e soluções perfundidas."
+    "nursingApplication": "Identificação da deformação rotacional da diáfise dos ossos longos."
   },
   {
     "id": 2127,
     "topicId": 2,
-    "question": "Como se define um Corpo Viscoelástico no âmbito da Biofísica dos materiais?",
+    "question": "Qual é o emparelhamento COMPLETO e CORRETO entre as 5 deformações e os exemplos biofísicos dos Slides 30 a 34?",
     "options": [
-      "Um corpo que se desintegra espontaneamente quando exposto à luz visível do sol.",
-      "Um material puramente indeformável que não sofre qualquer alteração mecânica.",
-      "Um gás rarefeito que não oferece qualquer resistência à passagem de ondas sonoras.",
-      "Um corpo que apresenta simultaneamente características elásticas e viscosas, cuja deformação depende da tensão e do tempo de aplicação da força."
+      "Compressão: tendão | Tração: fémur | Flexão: leito | Cisalhamento: osso oco | Torção: curvatura",
+      "Compressão: atrito no leito | Tração: curvatura neutra | Flexão: fémur | Cisalhamento: tendão | Torção: mola",
+      "Compressão: torção da tíbia | Tração: osso oco | Flexão: plasticina | Cisalhamento: água | Torção: mel",
+      "Compressão: fémur suporta carga | Tração: tração do tendão | Flexão: tensão a meio de um osso | Cisalhamento: atrito no leito | Torção: tensão máxima na periferia do osso oco"
     ],
     "correctIndex": 3,
-    "explanation": "A viscoelasticidade combina resposta elástica (capacidade de restaurar forma) com amortecimento viscoso dependente do tempo (histerese).",
+    "explanation": "Os Slides 30 a 34 estabelecem rigorosamente a correspondência: 1. Compressão: fémur suporta carga corporal diária; 2. Tração: tração do tendão pelo músculo; 3. Flexão: tensão a meio de um osso; 4. Cisalhamento: atrito no leito; 5. Torção: tensão máxima na periferia do osso oco.",
     "distractorAnalysis": [
-      "Está incorreta: A desintegração por luz é fotodegradação química, não uma propriedade viscoelástica mecânica.",
-      "Está incorreta: O corpo indeformável é o modelo de Euclides; materiais viscoelásticos deformam-se sob carga.",
-      "Está incorreta: Gases rarefeitos não são corpos viscoelásticos com coesão molecular sólida."
+      "Está incorreta: Correspondências totalmente baralhadas entre forças axiais e de corte.",
+      "Está incorreta: Exemplos trocados entre tecidos e dispositivos clínicos.",
+      "Está incorreta: Mistura conceitos de corpos reológicos com as 5 deformações mecânicas."
     ],
-    "nursingApplication": "Os tecidos biológicos (cartilagem, osso, músculos e tendões) são corpos tipicamente viscoelásticos."
+    "nursingApplication": "Quadro mnemónico perfeito para a revisão completa das 5 deformações da aula."
   },
   {
     "id": 2128,
     "topicId": 2,
-    "question": "Qual das seguintes estruturas biológicas do corpo humano exibe comportamento mecânico tipicamente VISCOELÁSTICO?",
+    "question": "Na vida diária de um ser humano ativo, as solicitações mecânicas suportadas pelos ossos ocorrem de forma isolada ou combinada?",
     "options": [
-      "Cartilagens articulares e tecido ósseo.",
-      "O ar contido no interior dos alvéolos pulmonares.",
-      "O vácuo existente no espaço interatómico das moléculas.",
-      "O esmalte dentário seco considerado como sólido puramente euclidiano."
+      "Ocorrem de forma combinada e dinâmica: durante a marcha o fémur suporta simultaneamente compressão pelo peso, flexão pela curvatura anatómica e torção pelos movimentos da bacia.",
+      "Ocorrem sempre de forma 100% isolada, nunca existindo mais do que uma deformação em cada década de vida.",
+      "Os ossos humanos suportam apenas e exclusivamente cisalhamento puro no vácuo.",
+      "Os ossos nunca sofrem nenhuma das 5 deformações porque são protegidos pela roupa."
     ],
     "correctIndex": 0,
-    "explanation": "Conforme os slides de Paulo Pereira (Slide 19), ossos, cartilagens e músculos são corpos viscoelásticos com histerese.",
+    "explanation": "Na biomecânica real do movimento humano, as forças combinam-se continuamente: a carga do corpo e os puxões musculares geram simultaneamente esforços compostos de compressão, flexão e torção nos ossos longos.",
     "distractorAnalysis": [
-      "Está incorreta: O ar alveolar é uma mistura gasosa compressível, não um tecido biológico viscoelástico sólido.",
-      "Está incorreta: O espaço interatómico no vácuo não é um corpo material biológico.",
-      "Está incorreta: O esmalte dentário é mineralizado e frágil, não sendo o exemplo típico de viscoelastina amortecedora como a cartilagem."
+      "Está incorreta: As deformações ocorrem em simultâneo a cada passo e salto.",
+      "Está incorreta: A compressão e a flexão são as solicitações dominantes na locomoção bípede.",
+      "Está incorreta: A roupa não anula o peso gravítico nem as contrações musculares internas."
     ],
-    "nursingApplication": "A viscoelasticidade da cartilagem amortece o impacto mecânico repetido na marcha e corrida."
+    "nursingApplication": "Permite aos futuros enfermeiros compreender a complexidade real das forças biomecânicas da locomoção."
   },
   {
     "id": 2129,
     "topicId": 2,
-    "question": "O que é a Histerese Elástica observada em corpos viscoelásticos sob ciclos de carga e descarga?",
+    "question": "No Slide 32, a força causadora da Flexão é descrita tecnicamente como:",
     "options": [
-      "A criação espontânea de energia mecânica durante o repouso do corpo sem realização de trabalho.",
-      "O fenómeno pelo qual a curva de descarga não coincide com a de carga, dissipando energia mecânica sob a forma de calor.",
-      "A duplicação imediata da constante elástica de uma mola metálica após cada estiramento.",
-      "A perda total de massa atómica do material após ser submetido a forças de tração."
+      "'Força atómica longitudinal'.",
+      "'Força transversal'.",
+      "'Momento helicoidal puro'.",
+      "'Força convergente pura'."
     ],
     "correctIndex": 1,
-    "explanation": "Na histerese elástica, a área compreendida entre a curva de deformação e a de retorno representa energia mecânica absorvida e dissipada.",
+    "explanation": "O Slide 32 estabelece no início do ponto 3: '3. Flexão: Força transversal; curvatura com plano neutro central (...)'.",
     "distractorAnalysis": [
-      "Está incorreta: A histerese não cria energia mecânica; dissipa energia mecânica absorvida em energia térmica.",
-      "Está incorreta: A histerese é própria de materiais viscoelásticos e não altera a constante elástica linear ideal de molas de Hooke.",
-      "Está incorreta: A massa material conserva-se integralmente durante os ensaios de deformação e descarga mecânica."
+      "Está incorreta: Forças atómicas microscópicas não definem o vetor mecânico de flexão de vigas macroscópicas.",
+      "Está incorreta: Momento helicoidal define a Torção (Slide 34).",
+      "Está incorreta: Forças convergentes definem a Compressão (Slide 30)."
     ],
-    "nursingApplication": "O efeito de histerese nas articulações dissipa as ondas de choque prevenindo lesões por impacto."
+    "nursingApplication": "Termo técnico de resistência dos materiais que define forças aplicadas perpendicularmente ao eixo da peça."
   },
   {
     "id": 2130,
     "topicId": 2,
-    "question": "Como se define um Corpo Plastoviscoelástico nos resumos teóricos de Biofísica (Slide 20)?",
+    "question": "Ao virar um doente no leito mantendo a bacia fixa e rodando bruscamente os ombros para o lado oposto, que esforço mecânico é induzido nas vértebras dorsolombares?",
     "options": [
-      "Um sólido de Euclides perfeitamente rígido que nunca se deforma em nenhuma circunstância.",
-      "Um gás nobre que não interage gravitacionalmente com os corpos vizinhos.",
-      "Comporta-se como um corpo elástico sob pequenas tensões; acima desse limiar, comporta-se como corpo plástico e viscoso.",
-      "Um líquido perfeito com viscosidade estritamente nula a todas as temperaturas."
+      "Tração axial divergente que alonga o tronco em 20 cm.",
+      "Compressão puramente convergente da cabeça.",
+      "Esforço de torção (torque em torno do eixo da coluna vertebral), que sobrecarrega as fibras dos anéis fibrosos dos discos.",
+      "Sólido indeformável de Euclides em repouso."
     ],
     "correctIndex": 2,
-    "explanation": "Sob pequenas forças tem deformação elástica reversível; ultrapassado o limiar, flui e deforma plasticamente (ex.: massa de pão).",
+    "explanation": "Rodar os ombros em relação à bacia fixa aplica um binário de torção axial sobre a coluna vertebral. O anel fibroso do disco intervertebral sofre torção e cisalhamento, com elevado risco de lesão discal se a manobra for brusca.",
     "distractorAnalysis": [
-      "Está incorreta: Sólidos de Euclides são indeformáveis; plastoviscoelásticos deformam-se com facilidade.",
-      "Está incorreta: Gases nobres não são materiais plastoviscoelásticos da reologia de sólidos.",
-      "Está incorreta: Líquidos com viscosidade nula são superfluidos ideais, o oposto de corpos com plasticidade e viscoelasticidade."
+      "Está incorreta: A manobra não exerce tração de afastamento longitudinal das vértebras.",
+      "Está incorreta: A carga principal é rotativa torsional, não compressão vertical descendente.",
+      "Está incorreta: A coluna é flexível e deformável, não correspondendo ao modelo indeformável."
     ],
-    "nursingApplication": "A massa de pão é o exemplo didático lecionado para ilustrar o comportamento plastoviscoelástico."
+    "nursingApplication": "Alerta ergonómico em técnicas de posicionamento: rodar o doente em bloco (ombros e bacia alinhados) para evitar torções da coluna."
   },
   {
     "id": 2131,
     "topicId": 2,
-    "question": "Porque é que uma esponja ou colchão viscoelástico (Memory Foam) se deforma de modo dependente do tempo de aplicação da força?",
+    "question": "Em que ano Robert Hooke iniciou e publicou os seus trabalhos seminais sobre a elasticidade citados nos Slides 36 a 40?",
     "options": [
-      "Porque o material do colchão perde noventa por cento da sua massa a cada minuto em que é comprimido.",
-      "Porque a gravidade do planeta atua exclusivamente durante os primeiros cinco segundos de compressão.",
-      "Porque o colchão é constituído por um sólido de Euclides puro que rejeita a pressão corporal.",
-      "Porque o ar e o material interno escoam lentamente através dos microporos, combinando elasticidade com amortecimento viscoso dependente do tempo."
+      "No ano de 1998.",
+      "No século III a.C. com Arquimedes.",
+      "Em 1850 durante a revolução industrial.",
+      "Em 1660 (Slide 36)."
     ],
     "correctIndex": 3,
-    "explanation": "A resposta viscoelástica temporal resulta da redistribuição interna gradual da estrutura polimérica e do ar nos poros.",
+    "explanation": "Os Slides 36 a 40 referem expressamente: 'Os trabalhos de Hooke: Hooke, 1660'.",
     "distractorAnalysis": [
-      "Está incorreta: A massa do colchão permanece constante e não se perde durante o uso sob compressão.",
-      "Está incorreta: A força da gravidade atua de forma constante e contínua sobre a massa do indivíduo no leito.",
-      "Está incorreta: O sólido de Euclides não se deformaria de todo; a espuma viscoelástica adapta-se ao contorno corporal."
+      "Está incorreta: 1998 é uma data contemporânea recente, sem ligação com a revolução científica clássica.",
+      "Está incorreta: Século III a.C. é a datação histórica de Arquimedes nas alavancas (Slide 66 do Tópico 1).",
+      "Está incorreta: 1850 situa-se no século XIX, quase dois séculos após as descobertas de Robert Hooke."
     ],
-    "nursingApplication": "Colchões viscoelásticos distribuem a pressão por uma área maior ao adaptarem-se lentamente ao corpo."
+    "nursingApplication": "Contextualização cronológica da física clássica ensinada nas aulas do Professor Paulo Pereira."
   },
   {
     "id": 2132,
     "topicId": 2,
-    "question": "Qual dos seguintes pares de materiais representa respetivamente um Corpo Viscoso e um Corpo Plástico?",
+    "question": "Qual é a célebre máxima em latim cunhada por Robert Hooke em 1660 apresentada no Slide 40 de Biofísica?",
     "options": [
-      "Mel (viscoso) e plasticina (plástico).",
-      "Mola de aço (viscoso) e vidro comum (plástico).",
-      "Diamante (viscoso) e água destilada (plástico).",
-      "Ar comprimido (viscoso) e osso cortical (plástico)."
+      "'Ut tensio, sic vis'",
+      "'Carpe diem, memento mori'",
+      "'E pur si muove'",
+      "'Veni, vidi, vici'"
     ],
     "correctIndex": 0,
-    "explanation": "O mel é o exemplo clássico de fluido viscoso irreversível e a plasticina o exemplo clássico de sólido plástico moldável.",
+    "explanation": "O Slide 40 destaca em latim o princípio fundamental: 'Hooke, 1660: Ut tensio, sic vis'.",
     "distractorAnalysis": [
-      "Está incorreta: Molas de aço são elásticas de Hooke e o vidro é um material elástico-frágil, não plástico.",
-      "Está incorreta: O diamante é um sólido extremamente rígido e a água é um líquido viscoso (pouco viscoso), não plástico.",
-      "Está incorreta: O ar é um gás compressível e o osso é um compósito viscoelástico biológico."
+      "Está incorreta: 'Carpe diem' é uma locução poética latina de Horácio sobre aproveitar o dia presente.",
+      "Está incorreta: 'E pur si muove' é a célebre frase atribuída a Galileu Galilei sobre o movimento da Terra.",
+      "Está incorreta: 'Veni, vidi, vici' é a famosa frase de Júlio César após a batalha de Zela."
     ],
-    "nursingApplication": "Exemplos fundamentais lecionados nos slides de Reologia para distinguir fluidos viscosos de sólidos plásticos."
+    "nursingApplication": "O lema histórico da física que sintetiza a proporcionalidade entre deformação elástica e força."
   },
   {
     "id": 2133,
     "topicId": 2,
-    "question": "Na Reologia, o que caracteriza o comportamento mecânico de um Corpo Plástico?",
+    "question": "Qual é a tradução em português da máxima de Hooke 'Ut tensio, sic vis' apresentada expressamente no Slide 40?",
     "options": [
-      "Recupera instantaneamente a forma original qualquer que seja a intensidade da força aplicada.",
-      "Apenas sofre deformação apreciável a partir de um determinado valor limiar de tensão, mantendo a deformação permanente após a remoção da carga.",
-      "Apresenta uma deformação que depende exclusivamente do campo magnético circundante no vácuo.",
-      "Comporta-se como um sólido indeformável de Euclides em todas as situações físicas possíveis."
+      "'Onde há fumo, há fogo.'",
+      "'Como a extensão, assim a força.'",
+      "'A força vence a inércia do repouso.'",
+      "'Toda a ação tem a sua reação oposta.'"
     ],
     "correctIndex": 1,
-    "explanation": "Os corpos plásticos necessitam de uma tensão mínima de escoamento para deformar e não recuperam a forma inicial (ex.: plasticina).",
+    "explanation": "O Slide 40 traduz formalmente: 'Ut tensio, sic vis – “Como a extensão, assim a força.”'.",
     "distractorAnalysis": [
-      "Está incorreta: Recuperar a forma original instantaneamente é a definição de corpo elástico de Hooke, não de plástico.",
-      "Está incorreta: A plasticidade depende das tensões mecânicas aplicadas, não de campos magnéticos.",
-      "Está incorreta: Corpos plásticos deformam-se permanentemente; sólidos de Euclides nunca se deformam."
+      "Está incorreta: Provérbio popular sem qualquer significado em física mecânica.",
+      "Está incorreta: Frase relativa à 1ª e 2ª Leis de Newton, não à tradução da máxima de Hooke.",
+      "Está incorreta: Tradução do princípio de ação e reação da 3ª Lei de Newton (Slide 19 do Tópico 1)."
     ],
-    "nursingApplication": "Compreender a plasticidade ajuda a entender deformações permanentes em materiais hospitalares."
+    "nursingApplication": "Permite aos alunos reter o significado em língua portuguesa da relação fundamental da elasticidade."
   },
   {
     "id": 2134,
     "topicId": 2,
-    "question": "O que caracteriza fundamentalmente o comportamento de um Corpo Viscoso?",
+    "question": "Qual foi a conclusão experimental de Robert Hooke (1660) relativamente às molas sujeitas a forças mecânicas (Slide 37)?",
     "options": [
-      "Apresenta uma rigidez infinita que impede qualquer alteração dimensional com o tempo.",
-      "Recupera a forma original mais rapidamente do que qualquer mola de aço metálica.",
-      "A deformação é proporcional à tensão e ao tempo de aplicação dessa tensão, escoando irreversivelmente sem recuperar a forma original.",
-      "A sua densidade duplica instantaneamente a cada segundo de repouso absoluto."
+      "O alongamento das molas é inversamente proporcional à temperatura absoluta.",
+      "As molas nunca sofrem qualquer deformação mensurável.",
+      "O alongamento das molas sujeitas a forças mecânicas é diretamente proporcional à intensidade das mesmas.",
+      "O alongamento depende exclusivamente da hora do dia em que a mola é esticada."
     ],
     "correctIndex": 2,
-    "explanation": "Corpos viscosos (como mel ou óleo) fluem sob tensão com uma taxa de deformação dependente do tempo de aplicação da força.",
+    "explanation": "O Slide 37 enuncia a lei experimental: 'O alongamento das molas sujeitas a forças mecânicas é diretamente proporcional à intensidade das mesmas'.",
     "distractorAnalysis": [
-      "Está incorreta: Rigidez infinita é a característica teórica do sólido indeformável de Euclides.",
-      "Está incorreta: Corpos viscosos não recuperam a forma original; sofrem deformações puramente irreversíveis.",
-      "Está incorreta: A densidade dos fluidos não duplica espontaneamente no repouso."
+      "Está incorreta: A dependência térmica de gases não se aplica à proporcionalidade linear mecânica de Hooke.",
+      "Está incorreta: As molas são o exemplo clássico de corpos altamente deformáveis de Hooke.",
+      "Está incorreta: A resposta mecânica da mola depende da força aplicada, não de horários circadianos."
     ],
-    "nursingApplication": "Fundamento para analisar a viscosidade de fluidos biológicos e soluções perfundidas."
+    "nursingApplication": "Princípio básico de funcionamento de dinamómetros e células de carga em camas hospitalares."
   },
   {
     "id": 2135,
     "topicId": 2,
-    "question": "Como se define um Corpo Viscoelástico no âmbito da Biofísica dos materiais?",
+    "question": "De acordo com o Slide 38, que tipo de resposta exibem todos os materiais elásticos sob tração axial?",
     "options": [
-      "Um corpo que se desintegra espontaneamente quando exposto à luz visível do sol.",
-      "Um material puramente indeformável que não sofre qualquer alteração mecânica.",
-      "Um gás rarefeito que não oferece qualquer resistência à passagem de ondas sonoras.",
-      "Um corpo que apresenta simultaneamente características elásticas e viscosas, cuja deformação depende da tensão e do tempo de aplicação da força."
+      "Resposta caótica imprevisível e aleatória.",
+      "Resposta exponencial assintótica que atinge o infinito.",
+      "Resposta exclusivamente plástica sem retorno dimensional.",
+      "Todos os materiais elásticos exibem esta resposta linear sob tração axial."
     ],
     "correctIndex": 3,
-    "explanation": "A viscoelasticidade combina resposta elástica (capacidade de restaurar forma) com amortecimento viscoso dependente do tempo (histerese).",
+    "explanation": "O Slide 38 estabelece a generalização física: 'Todos os materiais elásticos exibem esta resposta linear sob tração axial (Hooke, 1660)'.",
     "distractorAnalysis": [
-      "Está incorreta: A desintegração por luz é fotodegradação química, não uma propriedade viscoelástica mecânica.",
-      "Está incorreta: O corpo indeformável é o modelo de Euclides; materiais viscoelásticos deformam-se sob carga.",
-      "Está incorreta: Gases rarefeitos não são corpos viscoelásticos com coesão molecular sólida."
+      "Está incorreta: A resposta elástica é determinista e rigorosamente linear no regime inicial.",
+      "Está incorreta: Funções exponenciais não descrevem a relação direta de Hooke (F ∝ Δx).",
+      "Está incorreta: Resposta plástica é a que não recupera a forma (Slide 17), oposta à resposta elástica."
     ],
-    "nursingApplication": "Os tecidos biológicos (cartilagem, osso, músculos e tendões) são corpos tipicamente viscoelásticos."
+    "nursingApplication": "Universalidade da resposta elástica linear nos regimes de pequenas e moderadas deformações."
   },
   {
     "id": 2136,
     "topicId": 2,
-    "question": "Qual das seguintes estruturas biológicas do corpo humano exibe comportamento mecânico tipicamente VISCOELÁSTICO?",
+    "question": "No Slide 39, quando uma barra de secção transversal S e comprimento inicial L é sujeita a uma força de tração F:",
     "options": [
-      "Cartilagens articulares e tecido ósseo.",
-      "O ar contido no interior dos alvéolos pulmonares.",
-      "O vácuo existente no espaço interatómico das moléculas.",
-      "O esmalte dentário seco considerado como sólido puramente euclidiano."
+      "Sofre uma deformação dimensional mensurável.",
+      "Perde todo o seu peso e flutua no ar.",
+      "Aumenta a sua massa inercial em 50%.",
+      "Transforma-se instantaneamente num fluido viscoso de escoamento livre."
     ],
     "correctIndex": 0,
-    "explanation": "Conforme os slides de Paulo Pereira (Slide 19), ossos, cartilagens e músculos são corpos viscoelásticos com histerese.",
+    "explanation": "O Slide 39 estabelece: 'Quando uma barra de secção transversal S e comprimento inicial L é sujeita a uma força de tração F, sofre uma deformação dimensional mensurável'.",
     "distractorAnalysis": [
-      "Está incorreta: O ar alveolar é uma mistura gasosa compressível, não um tecido biológico viscoelástico sólido.",
-      "Está incorreta: O espaço interatómico no vácuo não é um corpo material biológico.",
-      "Está incorreta: O esmalte dentário é mineralizado e frágil, não sendo o exemplo típico de viscoelastina amortecedora como a cartilagem."
+      "Está incorreta: A gravidade terrestre continua a atuar plenamente sobre a barra (P = m · g).",
+      "Está incorreta: A massa é constante e invariável perante ensaios mecânicos comuns de tração.",
+      "Está incorreta: A barra sólida mantém o seu estado sólido elástico."
     ],
-    "nursingApplication": "A viscoelasticidade da cartilagem amortece o impacto mecânico repetido na marcha e corrida."
+    "nursingApplication": "O ponto de partida experimental que liga a força externa F à deformação mensurável Δx."
   },
   {
     "id": 2137,
     "topicId": 2,
-    "question": "O que é a Histerese Elástica observada em corpos viscoelásticos sob ciclos de carga e descarga?",
+    "question": "Se uma força de 10 N estica uma mola em 2 cm (regime linear de Hooke), que força é necessária para esticar a mesma mola em 6 cm?",
     "options": [
-      "A criação espontânea de energia mecânica durante o repouso do corpo sem realização de trabalho.",
-      "O fenómeno pelo qual a curva de descarga não coincide com a de carga, dissipando energia mecânica sob a forma de calor.",
-      "A duplicação imediata da constante elástica de uma mola metálica após cada estiramento.",
-      "A perda total de massa atómica do material após ser submetido a forças de tração."
+      "10 N",
+      "30 N (o triplo da força, pela proporcionalidade direta 'Ut tensio, sic vis')",
+      "60 N",
+      "3,33 N"
     ],
     "correctIndex": 1,
-    "explanation": "Na histerese elástica, a área compreendida entre a curva de deformação e a de retorno representa energia mecânica absorvida e dissipada.",
+    "explanation": "Pela proporcionalidade direta enunciada por Hooke (Slide 37 e 40): triplicando o alongamento desejado (de 2 cm para 6 cm), a intensidade da força necessária triplica igualmente: 10 N × 3 = 30 N.",
     "distractorAnalysis": [
-      "Está incorreta: A histerese não cria energia mecânica; dissipa energia mecânica absorvida em energia térmica.",
-      "Está incorreta: A histerese é própria de materiais viscoelásticos e não altera a constante elástica linear ideal de molas de Hooke.",
-      "Está incorreta: A massa material conserva-se integralmente durante os ensaios de deformação e descarga mecânica."
+      "Está incorreta: 10 N só consegue esticar os 2 cm originais.",
+      "Está incorreta: 60 N produziria um alongamento de 12 cm, o dobro do pretendido.",
+      "Está incorreta: 3,33 N resultaria de dividir erradamente a força em vez de multiplicá-la."
     ],
-    "nursingApplication": "O efeito de histerese nas articulações dissipa as ondas de choque prevenindo lesões por impacto."
+    "nursingApplication": "Cálculo elementar e intuitivo do comportamento de molas e elásticos de tração terapêutica."
   },
   {
     "id": 2138,
     "topicId": 2,
-    "question": "Como se define um Corpo Plastoviscoelástico nos resumos teóricos de Biofísica (Slide 20)?",
+    "question": "A máxima de Hooke 'Como a extensão, assim a força' estabelece uma relação matemática entre:",
     "options": [
-      "Um sólido de Euclides perfeitamente rígido que nunca se deforma em nenhuma circunstância.",
-      "Um gás nobre que não interage gravitacionalmente com os corpos vizinhos.",
-      "Comporta-se como um corpo elástico sob pequenas tensões; acima desse limiar, comporta-se como corpo plástico e viscoso.",
-      "Um líquido perfeito com viscosidade estritamente nula a todas as temperaturas."
+      "A aceleração do corpo e a velocidade da luz.",
+      "O tempo de repouso e a viscosidade do mel.",
+      "A deformação elástica sofrida (extensão) e a intensidade da força mecânica aplicada.",
+      "A massa do utente bariátrico e o ângulo de flexão do joelho."
     ],
     "correctIndex": 2,
-    "explanation": "Sob pequenas forças tem deformação elástica reversível; ultrapassado o limiar, flui e deforma plasticamente (ex.: massa de pão).",
+    "explanation": "Hooke relacionou a extensão (alongamento elástico dimensional) com a força motora deformadora: o esforço interno gerado é proporcional à deformação imposta.",
     "distractorAnalysis": [
-      "Está incorreta: Sólidos de Euclides são indeformáveis; plastoviscoelásticos deformam-se com facilidade.",
-      "Está incorreta: Gases nobres não são materiais plastoviscoelásticos da reologia de sólidos.",
-      "Está incorreta: Líquidos com viscosidade nula são superfluidos ideais, o oposto de corpos com plasticidade e viscoelasticidade."
+      "Está incorreta: Velocidade da luz pertence à relatividade e eletromagnetismo, não à Lei de Hooke de 1660.",
+      "Está incorreta: Viscosidade do mel pertence à reologia dos corpos viscosos (Slide 11), não à extensão das molas de Hooke.",
+      "Está incorreta: Massa bariátrica e flexão articular são variáveis biomecânicas específicas de outros slides."
     ],
-    "nursingApplication": "A massa de pão é o exemplo didático lecionado para ilustrar o comportamento plastoviscoelástico."
+    "nursingApplication": "Compreensão do axioma físico fundamental da ciência dos materiais."
   },
   {
     "id": 2139,
     "topicId": 2,
-    "question": "Porque é que uma esponja ou colchão viscoelástico (Memory Foam) se deforma de modo dependente do tempo de aplicação da força?",
+    "question": "Os trabalhos de Robert Hooke em 1660 constituem a base científica para o estudo de qual tema da unidade curricular?",
     "options": [
-      "Porque o material do colchão perde noventa por cento da sua massa a cada minuto em que é comprimido.",
-      "Porque a gravidade do planeta atua exclusivamente durante os primeiros cinco segundos de compressão.",
-      "Porque o colchão é constituído por um sólido de Euclides puro que rejeita a pressão corporal.",
-      "Porque o ar e o material interno escoam lentamente através dos microporos, combinando elasticidade com amortecimento viscoso dependente do tempo."
+      "Das radiações ionizantes e partículas alfa emitidas por radiofármacos.",
+      "Do metabolismo celular dos lípidos e hidratos de carbono.",
+      "Das leis fundamentais da hidrodinâmica cardíaca.",
+      "Da elasticidade dos corpos e resistência dos materiais (Tópico 2)."
     ],
     "correctIndex": 3,
-    "explanation": "A resposta viscoelástica temporal resulta da redistribuição interna gradual da estrutura polimérica e do ar nos poros.",
+    "explanation": "O Tópico 2 intitula-se 'Elasticidade e resistência dos materiais' (Slide 1), tendo na Lei de Hooke (Slides 35-42) a sua lei física fundamental.",
     "distractorAnalysis": [
-      "Está incorreta: A massa do colchão permanece constante e não se perde durante o uso sob compressão.",
-      "Está incorreta: A força da gravidade atua de forma constante e contínua sobre a massa do indivíduo no leito.",
-      "Está incorreta: O sólido de Euclides não se deformaria de todo; a espuma viscoelástica adapta-se ao contorno corporal."
+      "Está incorreta: Radiações e partículas alfa são temas do Tópico 6 e 7 do programa.",
+      "Está incorreta: Metabolismo de biomoléculas pertence ao módulo de Bioquímica (Slide 2).",
+      "Está incorreta: Hidrodinâmica cardíaca pertence ao Tópico 5 de Biofísica."
     ],
-    "nursingApplication": "Colchões viscoelásticos distribuem a pressão por uma área maior ao adaptarem-se lentamente ao corpo."
+    "nursingApplication": "Enquadramento da Lei de Hooke na estrutura curricular global de Biofísica."
   },
   {
     "id": 2140,
     "topicId": 2,
-    "question": "Qual dos seguintes pares de materiais representa respetivamente um Corpo Viscoso e um Corpo Plástico?",
+    "question": "No regime elástico linear formulado por Hooke, qual é a representação matemática gráfica da relação entre Força (F) e Deformação (Δx)?",
     "options": [
-      "Mel (viscoso) e plasticina (plástico).",
-      "Mola de aço (viscoso) e vidro comum (plástico).",
-      "Diamante (viscoso) e água destilada (plástico).",
-      "Ar comprimido (viscoso) e osso cortical (plástico)."
+      "Uma linha reta com inclinação constante que passa pela origem das coordenadas (F = 0 quando Δx = 0).",
+      "Uma curva parabólica que atinge o valor zero em deformação infinita.",
+      "Um degrau horizontal descontínuo no limiar de 100 Newtons.",
+      "Uma onda sinusoidal com cristas e vales alternados."
     ],
     "correctIndex": 0,
-    "explanation": "O mel é o exemplo clássico de fluido viscoso irreversível e a plasticina o exemplo clássico de sólido plástico moldável.",
+    "explanation": "Sendo F = k · Δx uma equação do 1º grau sem termo independente, a sua representação gráfica é uma linha reta que cruza a origem (0,0), onde o declive da reta corresponde à rigidez k do corpo.",
     "distractorAnalysis": [
-      "Está incorreta: Molas de aço são elásticas de Hooke e o vidro é um material elástico-frágil, não plástico.",
-      "Está incorreta: O diamante é um sólido extremamente rígido e a água é um líquido viscoso (pouco viscoso), não plástico.",
-      "Está incorreta: O ar é um gás compressível e o osso é um compósito viscoelástico biológico."
+      "Está incorreta: Relações parabólicas quadráticas descrevem energias (E = 1/2 k x²), não a força linear de Hooke.",
+      "Está incorreta: Degraus descontínuos ocorrem em transições de fase térmicas, não na elasticidade linear.",
+      "Está incorreta: Ondas sinusoidais descrevem o movimento harmónico no tempo, não o gráfico estático de F vs Δx."
     ],
-    "nursingApplication": "Exemplos fundamentais lecionados nos slides de Reologia para distinguir fluidos viscosos de sólidos plásticos."
+    "nursingApplication": "Permite interpretar gráficos de tração elástica e determinar graficamente a constante de rigidez."
   },
   {
     "id": 2141,
     "topicId": 2,
-    "question": "Na Reologia, o que caracteriza o comportamento mecânico de um Corpo Plástico?",
+    "question": "Qual é a fórmula matemática da Lei fundamental da elasticidade (Lei de Hooke) apresentada no Slide 41 de Biofísica?",
     "options": [
-      "Recupera instantaneamente a forma original qualquer que seja a intensidade da força aplicada.",
-      "Apenas sofre deformação apreciável a partir de um determinado valor limiar de tensão, mantendo a deformação permanente após a remoção da carga.",
-      "Apresenta uma deformação que depende exclusivamente do campo magnético circundante no vácuo.",
-      "Comporta-se como um sólido indeformável de Euclides em todas as situações físicas possíveis."
+      "F = m · a",
+      "F = k · Δx",
+      "P = m · g",
+      "M = F · b"
     ],
     "correctIndex": 1,
-    "explanation": "Os corpos plásticos necessitam de uma tensão mínima de escoamento para deformar e não recuperam a forma inicial (ex.: plasticina).",
+    "explanation": "O Slide 41 apresenta expressamente a fórmula da Lei de Hooke para corpos elásticos: 'F = k · Δx' (Força elástica = constante elástica multiplicada pela deformação absoluta).",
     "distractorAnalysis": [
-      "Está incorreta: Recuperar a forma original instantaneamente é a definição de corpo elástico de Hooke, não de plástico.",
-      "Está incorreta: A plasticidade depende das tensões mecânicas aplicadas, não de campos magnéticos.",
-      "Está incorreta: Corpos plásticos deformam-se permanentemente; sólidos de Euclides nunca se deformam."
+      "Está incorreta: F = m · a é a 2ª Lei de Newton da dinâmica (Slide 13 do Tópico 1).",
+      "Está incorreta: P = m · g é a fórmula da força da gravidade/peso (Slide 28 do Tópico 1).",
+      "Está incorreta: M = F · b é a fórmula do Momento da Força/torque (Slide 62 do Tópico 1)."
     ],
-    "nursingApplication": "Compreender a plasticidade ajuda a entender deformações permanentes em materiais hospitalares."
+    "nursingApplication": "A fórmula matemática central do Tópico 2 para quantificar forças elásticas e deformações."
   },
   {
     "id": 2142,
     "topicId": 2,
-    "question": "O que caracteriza fundamentalmente o comportamento de um Corpo Viscoso?",
+    "question": "Na fórmula F = k · Δx do Slide 41, qual é o significado e a unidade SI do símbolo 'F'?",
     "options": [
-      "Apresenta uma rigidez infinita que impede qualquer alteração dimensional com o tempo.",
-      "Recupera a forma original mais rapidamente do que qualquer mola de aço metálica.",
-      "A deformação é proporcional à tensão e ao tempo de aplicação dessa tensão, escoando irreversivelmente sem recuperar a forma original.",
-      "A sua densidade duplica instantaneamente a cada segundo de repouso absoluto."
+      "Frequência respiratória medida em ciclos por minuto.",
+      "Fulcro articular medido em centímetros de abertura.",
+      "Força que causa a deformação do corpo elástico em estudo, expressa em Newton (N).",
+      "Fator de atrito estático medido em Joules."
     ],
     "correctIndex": 2,
-    "explanation": "Corpos viscosos (como mel ou óleo) fluem sob tensão com uma taxa de deformação dependente do tempo de aplicação da força.",
+    "explanation": "O Slide 41 define: 'F = Força que causa a deformação do corpo elástico em estudo' (com unidade Newton [N] no SI).",
     "distractorAnalysis": [
-      "Está incorreta: Rigidez infinita é a característica teórica do sólido indeformável de Euclides.",
-      "Está incorreta: Corpos viscosos não recuperam a forma original; sofrem deformações puramente irreversíveis.",
-      "Está incorreta: A densidade dos fluidos não duplica espontaneamente no repouso."
+      "Está incorreta: Frequência respiratória é um sinal vital clínico, não a variável mecânica F.",
+      "Está incorreta: Fulcro é o ponto fixo de uma alavanca, não a força da mola.",
+      "Está incorreta: Atrito estático é uma força expressa em Newtons, não em Joules."
     ],
-    "nursingApplication": "Fundamento para analisar a viscosidade de fluidos biológicos e soluções perfundidas."
+    "nursingApplication": "Identificação correta da grandeza da força aplicada na distensão ou compressão do corpo elástico."
   },
   {
     "id": 2143,
     "topicId": 2,
-    "question": "Como se define um Corpo Viscoelástico no âmbito da Biofísica dos materiais?",
+    "question": "Na fórmula F = k · Δx do Slide 41, qual é o significado e a unidade SI do símbolo 'k'?",
     "options": [
-      "Um corpo que se desintegra espontaneamente quando exposto à luz visível do sol.",
-      "Um material puramente indeformável que não sofre qualquer alteração mecânica.",
-      "Um gás rarefeito que não oferece qualquer resistência à passagem de ondas sonoras.",
-      "Um corpo que apresenta simultaneamente características elásticas e viscosas, cuja deformação depende da tensão e do tempo de aplicação da força."
+      "Quilograma de massa corporal do utente.",
+      "Temperatura absoluta expressa em Kelvin.",
+      "Coeficiente de atrito cinético adimensional.",
+      "Constante elástica do corpo (N/m) -> Mede a rigidez do corpo elástico em estudo."
     ],
     "correctIndex": 3,
-    "explanation": "A viscoelasticidade combina resposta elástica (capacidade de restaurar forma) com amortecimento viscoso dependente do tempo (histerese).",
+    "explanation": "O Slide 41 define textualmente: 'k = Constante elástica do corpo (N/m) -> Mede a rigidez do corpo elástico em estudo'.",
     "distractorAnalysis": [
-      "Está incorreta: A desintegração por luz é fotodegradação química, não uma propriedade viscoelástica mecânica.",
-      "Está incorreta: O corpo indeformável é o modelo de Euclides; materiais viscoelásticos deformam-se sob carga.",
-      "Está incorreta: Gases rarefeitos não são corpos viscoelásticos com coesão molecular sólida."
+      "Está incorreta: Quilograma (kg) é a unidade de massa m, não a constante k.",
+      "Está incorreta: Kelvin (K) é a unidade termodinâmica de temperatura, sem relação com a mola elástica.",
+      "Está incorreta: Coeficiente de atrito é um número adimensional, ao passo que k tem unidades de N/m."
     ],
-    "nursingApplication": "Os tecidos biológicos (cartilagem, osso, músculos e tendões) são corpos tipicamente viscoelásticos."
+    "nursingApplication": "Conceito primordial: a constante k quantifica numericamente quão rígido é o corpo elástico."
   },
   {
     "id": 2144,
     "topicId": 2,
-    "question": "Qual das seguintes estruturas biológicas do corpo humano exibe comportamento mecânico tipicamente VISCOELÁSTICO?",
+    "question": "Na fórmula F = k · Δx do Slide 41, qual é o significado e a unidade SI do símbolo 'Δx'?",
     "options": [
-      "Cartilagens articulares e tecido ósseo.",
-      "O ar contido no interior dos alvéolos pulmonares.",
-      "O vácuo existente no espaço interatómico das moléculas.",
-      "O esmalte dentário seco considerado como sólido puramente euclidiano."
+      "Deformação absoluta do corpo elástico em estudo, expressa em metros (m).",
+      "Distância perpendicular do braço da força de Arquimedes em milímetros.",
+      "Densidade volúmica do osso expressa em g/cm³.",
+      "Diferença de temperatura termodinâmica expressa em graus Celsius."
     ],
     "correctIndex": 0,
-    "explanation": "Conforme os slides de Paulo Pereira (Slide 19), ossos, cartilagens e músculos são corpos viscoelásticos com histerese.",
+    "explanation": "O Slide 41 define expressamente: 'Δx = Deformação absoluta do corpo elástico em estudo (m)'. Representa a variação do comprimento (Δx = x_final - x_inicial).",
     "distractorAnalysis": [
-      "Está incorreta: O ar alveolar é uma mistura gasosa compressível, não um tecido biológico viscoelástico sólido.",
-      "Está incorreta: O espaço interatómico no vácuo não é um corpo material biológico.",
-      "Está incorreta: O esmalte dentário é mineralizado e frágil, não sendo o exemplo típico de viscoelastina amortecedora como a cartilagem."
+      "Está incorreta: O braço da força representa-se por b na fórmula do torque (M = F · b), não por Δx.",
+      "Está incorreta: Densidade mede-se em massa por volume, não em metros.",
+      "Está incorreta: Variação de temperatura representa-se por ΔT, não por Δx."
     ],
-    "nursingApplication": "A viscoelasticidade da cartilagem amortece o impacto mecânico repetido na marcha e corrida."
+    "nursingApplication": "Fixa a grandeza geométrica de alongamento ou encurtamento na Lei de Hooke."
   },
   {
     "id": 2145,
     "topicId": 2,
-    "question": "O que é a Histerese Elástica observada em corpos viscoelásticos sob ciclos de carga e descarga?",
+    "question": "Uma mola hospitalar de tração tem constante elástica k = 500 N/m. Se for esticada sofrendo uma deformação absoluta de Δx = 0,02 m, qual é a intensidade da força elástica F gerada?",
     "options": [
-      "A criação espontânea de energia mecânica durante o repouso do corpo sem realização de trabalho.",
-      "O fenómeno pelo qual a curva de descarga não coincide com a de carga, dissipando energia mecânica sob a forma de calor.",
-      "A duplicação imediata da constante elástica de uma mola metálica após cada estiramento.",
-      "A perda total de massa atómica do material após ser submetido a forças de tração."
+      "25 000 N",
+      "10 N",
+      "0,00004 N",
+      "500,02 N"
     ],
     "correctIndex": 1,
-    "explanation": "Na histerese elástica, a área compreendida entre a curva de deformação e a de retorno representa energia mecânica absorvida e dissipada.",
+    "explanation": "Aplicando diretamente F = k · Δx (Slide 41): F = 500 N/m × 0,02 m = 10 N.",
     "distractorAnalysis": [
-      "Está incorreta: A histerese não cria energia mecânica; dissipa energia mecânica absorvida em energia térmica.",
-      "Está incorreta: A histerese é própria de materiais viscoelásticos e não altera a constante elástica linear ideal de molas de Hooke.",
-      "Está incorreta: A massa material conserva-se integralmente durante os ensaios de deformação e descarga mecânica."
+      "Está incorreta: 25 000 N resultaria de dividir 500 por 0,02 (k / Δx), violando a fórmula de multiplicação.",
+      "Está incorreta: 0,00004 resultaria de dividir 0,02 por 500.",
+      "Está incorreta: 500,02 resultaria de somar as duas variáveis em vez de multiplicá-las."
     ],
-    "nursingApplication": "O efeito de histerese nas articulações dissipa as ondas de choque prevenindo lesões por impacto."
+    "nursingApplication": "Cálculo típico de tração elástica aplicada na calibração de equipamentos ortopédicos."
   },
   {
     "id": 2146,
     "topicId": 2,
-    "question": "Como se define um Corpo Plastoviscoelástico nos resumos teóricos de Biofísica (Slide 20)?",
+    "question": "Se uma força de 40 N provoca uma deformação absoluta de Δx = 0,1 m numa barra elástica, qual é o valor da constante elástica k dessa barra?",
     "options": [
-      "Um sólido de Euclides perfeitamente rígido que nunca se deforma em nenhuma circunstância.",
-      "Um gás nobre que não interage gravitacionalmente com os corpos vizinhos.",
-      "Comporta-se como um corpo elástico sob pequenas tensões; acima desse limiar, comporta-se como corpo plástico e viscoso.",
-      "Um líquido perfeito com viscosidade estritamente nula a todas as temperaturas."
+      "k = 4 N/m",
+      "k = 0,0025 N/m",
+      "k = 400 N/m",
+      "k = 40,1 N/m"
     ],
     "correctIndex": 2,
-    "explanation": "Sob pequenas forças tem deformação elástica reversível; ultrapassado o limiar, flui e deforma plasticamente (ex.: massa de pão).",
+    "explanation": "A partir de F = k · Δx, isola-se a constante elástica: k = F / Δx = 40 N / 0,1 m = 400 N/m.",
     "distractorAnalysis": [
-      "Está incorreta: Sólidos de Euclides são indeformáveis; plastoviscoelásticos deformam-se com facilidade.",
-      "Está incorreta: Gases nobres não são materiais plastoviscoelásticos da reologia de sólidos.",
-      "Está incorreta: Líquidos com viscosidade nula são superfluidos ideais, o oposto de corpos com plasticidade e viscoelasticidade."
+      "Está incorreta: 4 N/m resultaria de multiplicar 40 por 0,1 em vez de dividir.",
+      "Está incorreta: 0,0025 N/m resultaria de inverter a fração (0,1 / 40).",
+      "Está incorreta: 40,1 N/m resultaria de somar grandezas com unidades incompatíveis."
     ],
-    "nursingApplication": "A massa de pão é o exemplo didático lecionado para ilustrar o comportamento plastoviscoelástico."
+    "nursingApplication": "Determinação prática da rigidez estrutural de um componente mecânico elástico."
   },
   {
     "id": 2147,
     "topicId": 2,
-    "question": "Porque é que uma esponja ou colchão viscoelástico (Memory Foam) se deforma de modo dependente do tempo de aplicação da força?",
+    "question": "Para alongar uma mola com k = 200 N/m em exatamente Δx = 0,05 m (5 cm), que força é indispensável aplicar?",
     "options": [
-      "Porque o material do colchão perde noventa por cento da sua massa a cada minuto em que é comprimido.",
-      "Porque a gravidade do planeta atua exclusivamente durante os primeiros cinco segundos de compressão.",
-      "Porque o colchão é constituído por um sólido de Euclides puro que rejeita a pressão corporal.",
-      "Porque o ar e o material interno escoam lentamente através dos microporos, combinando elasticidade com amortecimento viscoso dependente do tempo."
+      "4000 N",
+      "0,00025 N",
+      "200,05 N",
+      "10 N"
     ],
     "correctIndex": 3,
-    "explanation": "A resposta viscoelástica temporal resulta da redistribuição interna gradual da estrutura polimérica e do ar nos poros.",
+    "explanation": "Aplicando a Lei de Hooke (Slide 41): F = k · Δx = 200 N/m × 0,05 m = 10 N.",
     "distractorAnalysis": [
-      "Está incorreta: A massa do colchão permanece constante e não se perde durante o uso sob compressão.",
-      "Está incorreta: A força da gravidade atua de forma constante e contínua sobre a massa do indivíduo no leito.",
-      "Está incorreta: O sólido de Euclides não se deformaria de todo; a espuma viscoelástica adapta-se ao contorno corporal."
+      "Está incorreta: 4000 N resultaria da divisão errada 200 / 0,05.",
+      "Está incorreta: 0,00025 N resultaria de 0,05 / 200.",
+      "Está incorreta: 200,05 N resultaria de soma aritmética incorreta."
     ],
-    "nursingApplication": "Colchões viscoelásticos distribuem a pressão por uma área maior ao adaptarem-se lentamente ao corpo."
+    "nursingApplication": "Permite dimensionar a força muscular necessária para operar sistemas elásticos de reabilitação motora."
   },
   {
     "id": 2148,
     "topicId": 2,
-    "question": "Qual dos seguintes pares de materiais representa respetivamente um Corpo Viscoso e um Corpo Plástico?",
+    "question": "Se uma mola elástica se deforma Δx = 2 cm sob a ação de uma força de 4 N, qual será a deformação absoluta sofrida se a força aplicada for aumentada para 8 N?",
     "options": [
-      "Mel (viscoso) e plasticina (plástico).",
-      "Mola de aço (viscoso) e vidro comum (plástico).",
-      "Diamante (viscoso) e água destilada (plástico).",
-      "Ar comprimido (viscoso) e osso cortical (plástico)."
+      "Δx = 4 cm (o dobro, pela proporcionalidade linear da Lei de Hooke).",
+      "Δx = 2 cm (permanece igual porque a mola tem rigidez fixa).",
+      "Δx = 16 cm (cresce com o quadrado da força aplicada).",
+      "Δx = 1 cm (reduz-se para metade para resistir à força)."
     ],
     "correctIndex": 0,
-    "explanation": "O mel é o exemplo clássico de fluido viscoso irreversível e a plasticina o exemplo clássico de sólido plástico moldável.",
+    "explanation": "Como a constante k é constante (k = F / Δx = 4 N / 2 cm = 2 N/cm), aplicando F = 8 N temos Δx = F / k = 8 / 2 = 4 cm. Duplicando a força, duplica a deformação.",
     "distractorAnalysis": [
-      "Está incorreta: Molas de aço são elásticas de Hooke e o vidro é um material elástico-frágil, não plástico.",
-      "Está incorreta: O diamante é um sólido extremamente rígido e a água é um líquido viscoso (pouco viscoso), não plástico.",
-      "Está incorreta: O ar é um gás compressível e o osso é um compósito viscoelástico biológico."
+      "Está incorreta: A deformação só seria constante se a mola fosse um sólido indeformável.",
+      "Está incorreta: A relação é estritamente linear de 1º grau, não quadrática.",
+      "Está incorreta: Maior força gera maior deformação, nunca menor."
     ],
-    "nursingApplication": "Exemplos fundamentais lecionados nos slides de Reologia para distinguir fluidos viscosos de sólidos plásticos."
+    "nursingApplication": "Regra de proporcionalidade direta usada rotineiramente na interpretação de escalas de dinamómetros."
   },
   {
     "id": 2149,
     "topicId": 2,
-    "question": "Na Reologia, o que caracteriza o comportamento mecânico de um Corpo Plástico?",
+    "question": "O que representa conceitualmente a grandeza 'Deformação absoluta (Δx)' expressa em metros no Slide 41?",
     "options": [
-      "Recupera instantaneamente a forma original qualquer que seja a intensidade da força aplicada.",
-      "Apenas sofre deformação apreciável a partir de um determinado valor limiar de tensão, mantendo a deformação permanente após a remoção da carga.",
-      "Apresenta uma deformação que depende exclusivamente do campo magnético circundante no vácuo.",
-      "Comporta-se como um sólido indeformável de Euclides em todas as situações físicas possíveis."
+      "O comprimento total infinito da mola quando esticada até ao limite.",
+      "A variação líquida de comprimento do corpo (diferença entre o comprimento final sob carga e o comprimento inicial de repouso).",
+      "O diâmetro da secção transversal da barra em repouso.",
+      "A massa de metal consumida durante a distensão mecânica."
     ],
     "correctIndex": 1,
-    "explanation": "Os corpos plásticos necessitam de uma tensão mínima de escoamento para deformar e não recuperam a forma inicial (ex.: plasticina).",
+    "explanation": "A deformação absoluta Δx quantifica a alteração métrica das dimensões do corpo: Δx = |L_final - L_inicial|, medida em metros (m) no Sistema Internacional.",
     "distractorAnalysis": [
-      "Está incorreta: Recuperar a forma original instantaneamente é a definição de corpo elástico de Hooke, não de plástico.",
-      "Está incorreta: A plasticidade depende das tensões mecânicas aplicadas, não de campos magnéticos.",
-      "Está incorreta: Corpos plásticos deformam-se permanentemente; sólidos de Euclides nunca se deformam."
+      "Está incorreta: Δx é a variação de comprimento, não o comprimento total acumulado.",
+      "Está incorreta: O diâmetro transversal é uma medida de secção (S), não a deformação longitudinal Δx.",
+      "Está incorreta: Não há consumo de massa durante a deformação elástica de um corpo."
     ],
-    "nursingApplication": "Compreender a plasticidade ajuda a entender deformações permanentes em materiais hospitalares."
+    "nursingApplication": "Garante o rigor no cálculo da diferença de comprimento de membros e equipamentos ortopédicos."
   },
   {
     "id": 2150,
     "topicId": 2,
-    "question": "O que caracteriza fundamentalmente o comportamento de um Corpo Viscoso?",
+    "question": "Duas molas elásticas idênticas, cada uma com constante k = 100 N/m, são associadas em paralelo para sustentar conjuntamente uma carga. Qual é a constante elástica equivalente do conjunto?",
     "options": [
-      "Apresenta uma rigidez infinita que impede qualquer alteração dimensional com o tempo.",
-      "Recupera a forma original mais rapidamente do que qualquer mola de aço metálica.",
-      "A deformação é proporcional à tensão e ao tempo de aplicação dessa tensão, escoando irreversivelmente sem recuperar a forma original.",
-      "A sua densidade duplica instantaneamente a cada segundo de repouso absoluto."
+      "50 N/m",
+      "100 N/m",
+      "200 N/m (a rigidez duplica, pois as forças de ambas as molas somam-se para a mesma deformação).",
+      "10 000 N/m"
     ],
     "correctIndex": 2,
-    "explanation": "Corpos viscosos (como mel ou óleo) fluem sob tensão com uma taxa de deformação dependente do tempo de aplicação da força.",
+    "explanation": "Em paralelo, ambas as molas sofrem a mesma deformação Δx e as forças somam-se: F_total = F1 + F2 = (k + k) Δx = 2k · Δx. A rigidez equivalente é k_eq = 100 + 100 = 200 N/m.",
     "distractorAnalysis": [
-      "Está incorreta: Rigidez infinita é a característica teórica do sólido indeformável de Euclides.",
-      "Está incorreta: Corpos viscosos não recuperam a forma original; sofrem deformações puramente irreversíveis.",
-      "Está incorreta: A densidade dos fluidos não duplica espontaneamente no repouso."
+      "Está incorreta: 50 N/m seria a constante se estivessem ligadas em série (uma a seguir à outra), o que torna o conjunto mais flexível.",
+      "Está incorreta: 100 N/m é a constante de uma única mola isolada.",
+      "Está incorreta: Multiplicar as constantes violaria a análise dimensional de forças paralelas."
     ],
-    "nursingApplication": "Fundamento para analisar a viscosidade de fluidos biológicos e soluções perfundidas."
+    "nursingApplication": "Explica por que ligamentos paralelos numa articulação aumentam substancialmente a rigidez e estabilidade articular."
   },
   {
     "id": 2151,
     "topicId": 2,
-    "question": "Na caracterização das deformações mecânicas (Slide 21), como são definidas as Forças de Compressão?",
+    "question": "O que mede fundamentalmente a Constante Elástica k de acordo com o Slide 41 de Biofísica?",
     "options": [
-      "Forças divergentes que aumentam o comprimento e adelgaçam a área de secção transversal da barra.",
-      "Forças tangenciais paralelas que fazem deslizar duas superfícies planas opostas.",
-      "Momentos de rotação puros que provocam a torção em torno do eixo longitudinal.",
-      "Forças convergentes colineares que provocam diminuição do comprimento (L) e aumento da área de secção transversal (S)."
+      "A condutividade elétrica do tecido celular.",
+      "A velocidade com que a mola arrefece à temperatura ambiente.",
+      "O volume de líquido sinovial secretado pela cápsula articular.",
+      "Mede a rigidez do corpo elástico em estudo (Slide 41)."
     ],
     "correctIndex": 3,
-    "explanation": "A compressão atua com forças convergentes (para dentro do corpo), encurtando o comprimento e alargando a secção transversal.",
+    "explanation": "O Slide 41 salienta explicitamente através de uma seta explicativa: 'k = Constante elástica do corpo (N/m) -> Mede a rigidez do corpo elástico em estudo'.",
     "distractorAnalysis": [
-      "Está incorreta: Forças divergentes que aumentam o comprimento e diminuem a secção caracterizam a tração, não a compressão.",
-      "Está incorreta: Forças tangenciais paralelas em sentidos opostos definem o cisalhamento (corte).",
-      "Está incorreta: Momentos de rotação em torno do eixo longitudinal definem a torção mecânica."
+      "Está incorreta: Condutividade elétrica é medida em Siemens/metro, não sendo a constante k.",
+      "Está incorreta: Taxa de arrefecimento pertence à termodinâmica de transferência de calor.",
+      "Está incorreta: Volume sinovial é um parâmetro anatómico e fisiológico articular."
     ],
-    "nursingApplication": "Os ossos dos membros inferiores e as vértebras suportam cargas predominantemente compressivas na marcha."
+    "nursingApplication": "Compreensão de que corpos com k elevado são muito rígidos e corpos com k baixo são flexíveis."
   },
   {
     "id": 2152,
     "topicId": 2,
-    "question": "Como são definidas as Forças de Tração na mecânica dos corpos elásticos (Slide 23)?",
+    "question": "Qual é a restrição fundamental da Lei fundamental F = k · Δx expressa em destaque no Slide 42?",
     "options": [
-      "Forças divergentes colineares que provocam aumento do comprimento (L) e diminuição da área de secção transversal (S).",
-      "Forças convergentes que diminuem o comprimento longitudinal e alargam a secção média.",
-      "Forças transversais perpendiculares que curvam as arestas retilíneas da barra.",
-      "Forças microscópicas puramente gravitacionais que atuam exclusivamente no vácuo espacial."
+      "'Apenas se aplica aos corpos com tamanho e espessura definidos e não exclusivamente ao material de que são feitos.'",
+      "'Apenas se aplica no vácuo cósmico sob gravidade rigorosamente nula.'",
+      "'Apenas é válida para líquidos de alta viscosidade como o mel.'",
+      "'Apenas pode ser utilizada em corpos com massa superior a 1000 kg.'"
     ],
     "correctIndex": 0,
-    "explanation": "A tração puxa as extremidades para fora com forças divergentes, alongando a barra e reduzindo a sua espessura transversal.",
+    "explanation": "O Slide 42 adverte formalmente: 'Apenas se aplica aos corpos com tamanho e espessura definidos e não exclusivamente ao material de que são feitos'. A constante k é uma propriedade extrínseca de um objeto específico.",
     "distractorAnalysis": [
-      "Está incorreta: Forças convergentes que encurtam a barra definem a compressão mecânica.",
-      "Está incorreta: Forças transversais que curvam arestas retilíneas definem a deformação de flexão.",
-      "Está incorreta: Forças no vácuo sem contacto não descrevem o esforço mecânico clássico de tração de sólidos."
+      "Está incorreta: A fórmula aplica-se no laboratório e ambiente hospitalar sob gravidade terrestre normal.",
+      "Está incorreta: Fluidos viscosos seguem leis de escoamento, não a fórmula elástica F = k · Δx.",
+      "Está incorreta: Aplica-se a qualquer mola ou corpo elástico macroscópico, de poucos gramas a toneladas."
     ],
-    "nursingApplication": "Tendões e ligamentos são estruturas especializadas em resistir a esforços de tração longitudinal."
+    "nursingApplication": "Distingue a rigidez da peça concreta (k) da rigidez intrínseca do material (Módulo de Young E)."
   },
   {
     "id": 2153,
     "topicId": 2,
-    "question": "Qual das seguintes alterações geométricas ocorre num cilindro sujeito a esforço axial de COMPRESSÃO?",
+    "question": "Se tivermos duas barras cilíndricas feitas do MESMO aço, sendo a Barra 1 muito grossa e curta e a Barra 2 muito fina e comprida, como se comparam as suas constantes k (Slide 42)?",
     "options": [
-      "O comprimento longitudinal aumenta e o diâmetro transversal diminui.",
-      "O comprimento longitudinal diminui e o diâmetro transversal aumenta.",
-      "O cilindro curva-se instantaneamente num semicírculo perfeito sem alterar o diâmetro.",
-      "O volume do cilindro reduz-se para zero sem qualquer alteração das suas dimensões."
+      "Ambas têm exatamente a mesma constante k porque são feitas do mesmo aço.",
+      "A Barra 1 (grossa e curta) terá uma constante elástica k muito superior à da Barra 2 (fina e comprida), sendo muito mais difícil de deformar.",
+      "A Barra 2 terá maior constante k porque o maior comprimento atrai mais força.",
+      "Ambas têm constante k nula por serem feitas de aço inoxidável."
     ],
     "correctIndex": 1,
-    "explanation": "Ao comprimir axialmente, as partículas aproximam-se na direção da força, encurtando a barra e expandindo-a lateralmente.",
+    "explanation": "A constante k depende das dimensões geométricas (k = E · A / L): maior área de secção e menor comprimento aumentam drasticamente a rigidez k. Embora o material seja o mesmo aço, as peças têm k muito diferentes.",
     "distractorAnalysis": [
-      "Está incorreta: Aumento de comprimento com diminuição de diâmetro é o efeito característico da tração mecânica.",
-      "Está incorreta: Curvar-se em semicírculo sob força transversal caracteriza flexão, não compressão axial pura.",
-      "Está incorreta: O volume de um sólido real não se reduz a zero sob compressão elástica ou plástica."
+      "Está incorreta: O material partilha o mesmo Módulo de Young E, mas a constante k varia com as dimensões geométricas (Slide 42).",
+      "Está incorreta: Barras compridas e finas são mais fáceis de dobrar e esticar (possuem menor rigidez k).",
+      "Está incorreta: O aço é extremamente rígido com k elevado e finito."
     ],
-    "nursingApplication": "Explica o achatamento elástico microscópico dos discos intervertebrais sob o peso do corpo durante o dia."
+    "nursingApplication": "Explica por que um fémur espesso suporta muito mais carga do que uma costela delgada feita do mesmo tecido ósseo."
   },
   {
     "id": 2154,
     "topicId": 2,
-    "question": "Qual das seguintes alterações geométricas ocorre numa barra elástica sujeita a esforço de TRAÇÃO?",
+    "question": "Por que razão a constante elástica k é classificada como uma propriedade 'extrínseca' de um corpo específico?",
     "options": [
-      "O comprimento longitudinal diminui e a área da secção transversal aumenta.",
-      "A barra roda continuamente sobre o seu eixo central mantendo o comprimento constante.",
-      "O comprimento longitudinal aumenta e a área da secção transversal diminui.",
-      "A barra transforma-se num sólido indeformável de Euclides em equilíbrio térmico."
+      "Porque só existe no exterior da atmosfera da Terra.",
+      "Porque depende exclusivamente da cor do revestimento exterior do material.",
+      "Porque o seu valor depende da geometria particular do objeto (comprimento e espessura da secção), e não exclusivamente do material constituinte.",
+      "Porque foi descoberta por um cientista estrangeiro (Hooke, 1660)."
     ],
     "correctIndex": 2,
-    "explanation": "Sob tração axial, as extremidades afastam-se (alongamento ΔL > 0) e a secção transversal adelgaça-se lateralmente.",
+    "explanation": "Propriedades extrínsecas dependem da forma e quantidade de matéria (dimensões da peça concreta). Para caracterizar a rigidez intrínseca do material puro independente da geometria, utiliza-se o Módulo de Young (Slide 43).",
     "distractorAnalysis": [
-      "Está incorreta: Encurtamento com aumento de secção é o efeito característico da compressão mecânica.",
-      "Está incorreta: Rotação sobre o próprio eixo é a deformação de torção provocada por um binário de momentos.",
-      "Está incorreta: A tração não transforma materiais reais em modelos teóricos indeformáveis de Euclides."
+      "Está incorreta: Extrínseca significa dependente da forma/tamanho geométrico, não do espaço extraterrestre.",
+      "Está incorreta: A cor de um material não altera as suas propriedades mecânicas de rigidez.",
+      "Está incorreta: A etimologia científica refere-se à natureza da propriedade física, não à nacionalidade do autor."
     ],
-    "nursingApplication": "Comportamento de fios de sutura e ligamentos quando submetidos a forças de estiramento."
+    "nursingApplication": "Conceito epistemológico basilar da ciência dos materiais em saúde."
   },
   {
     "id": 2155,
     "topicId": 2,
-    "question": "No corpo humano, o fémur suporta o peso do tronco e dos membros superiores. Este esforço mecânico predominante é de:",
+    "question": "Quanto maior for o valor numérico da constante elástica k de um corpo elástico (em N/m):",
     "options": [
-      "Torção pura no vácuo.",
-      "Cisalhamento centrípeto nulo.",
-      "Radiação ionizante gama.",
-      "Compressão."
+      "Mais facilmente o corpo se deforma sob qualquer força ínfima.",
+      "Menor é a força necessária para esticar a barra em 1 metro.",
+      "Mais rápido o corpo se transforma num fluido puramente viscoso.",
+      "Mais rígido é o corpo, necessitando de forças muito maiores para produzir a mesma deformação."
     ],
     "correctIndex": 3,
-    "explanation": "O peso corporal atua verticalmente de cima para baixo comprimindo o fémur contra a tíbia e o solo (forças convergentes).",
+    "explanation": "Sendo k = F / Δx, quanto maior for k, maior é a força necessária para produzir uma dada deformação. Um valor elevado de k traduz alta rigidez mecânica estrutural (Slide 41).",
     "distractorAnalysis": [
-      "Está incorreta: O suporte de carga vertical é um esforço compressivo, não uma torção pura no vácuo.",
-      "Está incorreta: Cisalhamento centrípeto nulo é uma combinação fictícia de termos físicos.",
-      "Está incorreta: Radiação gama é uma emissão eletromagnética nuclear, não um esforço mecânico de carga."
+      "Está incorreta: Corpos fáceis de deformar têm constante elástica k baixa (são flexíveis).",
+      "Está incorreta: Maior k exige maior força (F = k · 1 m), nunca menor.",
+      "Está incorreta: k elevado mede rigidez elástica de sólidos e não tem relação com escoamento viscoso."
     ],
-    "nursingApplication": "O osso cortical tem enorme resistência à compressão, sendo ideal para sustentar o peso corporal."
+    "nursingApplication": "Permite selecionar ligaduras elásticas ou ortóteses com a rigidez k adequada à imobilização pretendida."
   },
   {
     "id": 2156,
     "topicId": 2,
-    "question": "Quando um músculo se contrai e puxa um tendão ligado a um osso, o tendão fica sujeito predominantemente a uma força de:",
+    "question": "Qual é o significado físico da unidade Newton por metro (N/m) da constante elástica k?",
     "options": [
-      "Tração (tensão longitudinal).",
-      "Compressão convergente axial.",
-      "Flexão com eixo neutro central.",
-      "Desintegração atómica espontânea."
+      "Indica a intensidade da força em Newtons que seria necessária aplicar para produzir uma deformação de 1 metro no corpo elástico.",
+      "Indica a velocidade em metros por segundo com que a mola recupera a forma.",
+      "Indica a pressão exercida por metro cúbico de volume corporal.",
+      "Mede o peso da mola em quilogramas por cada metro de altura."
     ],
     "correctIndex": 0,
-    "explanation": "O músculo exerce forças divergentes sobre as extremidades do tendão, tracionando-o ao longo do seu eixo fibroso longitudinal.",
+    "explanation": "A unidade N/m (quociente de Força em N por Deformação em m) traduz fisicamente quantos Newtons de força são necessários para distender ou comprimir a estrutura em 1 metro linear.",
     "distractorAnalysis": [
-      "Está incorreta: Os tendões são estruturas flexíveis que suportam grandes forças de tração, mas dobram-se sob compressão.",
-      "Está incorreta: A flexão ocorre em barras suportadas sob forças perpendiculares, não em tendões alinhados com a tração muscular.",
-      "Está incorreta: Contração muscular mecânica não envolve desintegração atómica dos tecidos conjuntivos."
+      "Está incorreta: Velocidade mede-se em m/s, não em N/m.",
+      "Está incorreta: Pressão mede-se em Pascal (N/m²), não em N/m.",
+      "Está incorreta: Densidade linear de peso mediria em N/m de massa distribuída, não na relação força/deformação elástica."
     ],
-    "nursingApplication": "A elevada resistência à tração do colagénio permite transmitir a força muscular às alavancas ósseas."
+    "nursingApplication": "Interpretação física intuitiva das grandezas derivadas do Sistema Internacional."
   },
   {
     "id": 2157,
     "topicId": 2,
-    "question": "Como se comparam os sentidos das forças aplicadas na Compressão e na Tração ao longo de um mesmo eixo linear?",
+    "question": "Dois dinamómetros, A e B, possuem molas com constantes k_A = 1000 N/m e k_B = 100 N/m. Para produzir a mesma deformação de 1 cm (0,01 m):",
     "options": [
-      "Na compressão as forças apontam ambas para a direita; na tração apontam ambas para cima.",
-      "Na compressão as forças são convergentes (apontam para o interior do corpo); na tração são divergentes (apontam para fora).",
-      "Em ambas as deformações as forças são sempre convergentes com a mesma intensidade.",
-      "Na compressão as forças são perpendiculares à barra e na tração são paralelas ao solo."
+      "Ambos exigem exatamente a mesma força de 1 Newton.",
+      "O dinamómetro A exige uma força de 10 N (dez vezes maior) do que o dinamómetro B, que exige apenas 1 N.",
+      "O dinamómetro B exige uma força dez vezes superior à de A.",
+      "Nenhum dos aparelhos sofre deformação mecânica mensurável."
     ],
     "correctIndex": 1,
-    "explanation": "Conforme os slides 21 e 23, forças convergentes encurtam (compressão) e forças divergentes alongam (tração).",
+    "explanation": "Usando F = k · Δx: F_A = 1000 × 0,01 = 10 N; F_B = 100 × 0,01 = 1 N. O dinamómetro com mola dez vezes mais rígida exige dez vezes mais força para o mesmo deslocamento.",
     "distractorAnalysis": [
-      "Está incorreta: Duas forças apontando no mesmo sentido aceleram o corpo em translação em vez de o deformar em tração ou compressão.",
-      "Está incorreta: A tração requer forças divergentes opostas; se fossem convergentes seria compressão.",
-      "Está incorreta: Forças perpendiculares produzem flexão ou cisalhamento, não esforços axiais de tração ou compressão."
+      "Está incorreta: Forças iguais só produziriam a mesma deformação se as molas fossem idênticas.",
+      "Está incorreta: O dinamómetro B tem mola mais branda (menor k) e requer menos força, não mais.",
+      "Está incorreta: Ambos sofrem deformação elástica proporcional à força aplicada."
     ],
-    "nursingApplication": "Distingue com clareza os dois esforços axiais mais comuns na mecânica das estruturas e tecidos."
+    "nursingApplication": "Diferencia dinamómetros de alta precisão para cargas leves de dinamómetros de alta capacidade para cargas pesadas."
   },
   {
     "id": 2158,
     "topicId": 2,
-    "question": "Se uma barra de comprimento inicial L0 sofrer uma variação de comprimento ΔL negativa (ΔL < 0), isso significa que a barra sofreu:",
+    "question": "No contexto dos tecidos de suporte biológico (como ligamentos articulares), uma estrutura ligamentar mais espessa:",
     "options": [
-      "Alongamento devido a uma força de tração.",
-      "Uma rotação de 360 graus por ação de torção pura.",
-      "Encurtamento devido a uma força de compressão.",
-      "Um aumento de noventa por cento na sua massa inercial."
+      "Possui uma constante k menor, deformando-se com facilidade extrema.",
+      "Transforma-se num corpo puramente viscoso sem elasticidade.",
+      "Possui maior constante k de rigidez estrutural, resistindo a forças maiores com menor deformação.",
+      "Perde a capacidade de suportar forças de tração do membro."
     ],
     "correctIndex": 2,
-    "explanation": "ΔL = L - L0. Se ΔL é negativo, o comprimento final é menor que o inicial (L < L0), caracterizando compressão.",
+    "explanation": "Maior espessura (área de secção transversal) confere à estrutura ligamentar maior constante de rigidez k. Assim, sob a mesma carga mecânica, o ligamento espesso distende-se menos, proporcionando maior estabilidade articular.",
     "distractorAnalysis": [
-      "Está incorreta: Se sofresse tração, o comprimento final seria maior que o inicial, resultando em ΔL positivo (ΔL > 0).",
-      "Está incorreta: A torção pura provoca rotação angular das secções sem alterar necessariamente o comprimento no regime linear.",
-      "Está incorreta: A massa da barra permanece rigorosamente constante independentemente de ser comprimida ou esticada."
+      "Está incorreta: Maior secção transversal aumenta k, nunca diminui.",
+      "Está incorreta: O ligamento mantém o seu comportamento de tecido conjuntivo elástico de suporte.",
+      "Está incorreta: A maior espessura aumenta a capacidade de suportar tração sem sofrer rotura."
     ],
-    "nursingApplication": "Convenção de sinais da mecânica: compressão corresponde a variações de comprimento negativas."
+    "nursingApplication": "Explica por que atletas com ligamentos hipertrofiados pelo treino têm maior estabilidade articular nas transferências de carga."
   },
   {
     "id": 2159,
     "topicId": 2,
-    "question": "Na caracterização das deformações mecânicas (Slide 21), como são definidas as Forças de Compressão?",
+    "question": "No Slide 42, a advertência de que F = k · Δx 'não se aplica exclusivamente ao material' serve para preparar a introdução de qual conceito físico no Slide 43?",
     "options": [
-      "Forças divergentes que aumentam o comprimento e adelgaçam a área de secção transversal da barra.",
-      "Forças tangenciais paralelas que fazem deslizar duas superfícies planas opostas.",
-      "Momentos de rotação puros que provocam a torção em torno do eixo longitudinal.",
-      "Forças convergentes colineares que provocam diminuição do comprimento (L) e aumento da área de secção transversal (S)."
+      "Do calor específico da água corporal.",
+      "Da aceleração da gravidade de Galileu.",
+      "Da velocidade angular do cotovelo.",
+      "Da Lei de Hooke generalizada e do Módulo de Young (E), que é a rigidez intrínseca do próprio material."
     ],
     "correctIndex": 3,
-    "explanation": "A compressão atua com forças convergentes (para dentro do corpo), encurtando o comprimento e alargando a secção transversal.",
+    "explanation": "O Slide 42 estabelece a ponte pedagógica: a constante k varia com o formato da peça; para estudar a rigidez intrínseca do material puro, o Slide 43 introduz a Lei de Hooke generalizada (σ = E · ε) com o Módulo de Young.",
     "distractorAnalysis": [
-      "Está incorreta: Forças divergentes que aumentam o comprimento e diminuem a secção caracterizam a tração, não a compressão.",
-      "Está incorreta: Forças tangenciais paralelas em sentidos opostos definem o cisalhamento (corte).",
-      "Está incorreta: Momentos de rotação em torno do eixo longitudinal definem a torção mecânica."
+      "Está incorreta: Calor específico é uma grandeza termodinâmica, não da elasticidade generalizada.",
+      "Está incorreta: Gravidade é uma aceleração de campo (g), não uma propriedade de materiais.",
+      "Está incorreta: Velocidade angular é cinemática rotativa de alavancas."
     ],
-    "nursingApplication": "Os ossos dos membros inferiores e as vértebras suportam cargas predominantemente compressivas na marcha."
+    "nursingApplication": "Compreensão da transição didática fundamental entre os Slides 42 e 43 da aula de Paulo Pereira."
   },
   {
     "id": 2160,
     "topicId": 2,
-    "question": "Como são definidas as Forças de Tração na mecânica dos corpos elásticos (Slide 23)?",
+    "question": "Um corpo cuja constante elástica k tendesse teoricamente para o infinito (k -> ∞) corresponderia a qual modelo reológico?",
     "options": [
-      "Forças divergentes colineares que provocam aumento do comprimento (L) e diminuição da área de secção transversal (S).",
-      "Forças convergentes que diminuem o comprimento longitudinal e alargam a secção média.",
-      "Forças transversais perpendiculares que curvam as arestas retilíneas da barra.",
-      "Forças microscópicas puramente gravitacionais que atuam exclusivamente no vácuo espacial."
+      "A um Sólido de Euclides (sólido indeformável, onde a deformação Δx é zero sob qualquer força finita).",
+      "A um Corpo Viscoso puro como a água.",
+      "A uma mola de borracha com módulo quase nulo.",
+      "A uma massa de pão plastoviscoelástica."
     ],
     "correctIndex": 0,
-    "explanation": "A tração puxa as extremidades para fora com forças divergentes, alongando a barra e reduzindo a sua espessura transversal.",
+    "explanation": "Pela relação Δx = F / k, quando k tende para infinito, Δx é rigorosamente nulo para qualquer força finita F. O corpo nunca se deforma: é o modelo do Sólido Indeformável de Euclides (Slide 15).",
     "distractorAnalysis": [
-      "Está incorreta: Forças convergentes que encurtam a barra definem a compressão mecânica.",
-      "Está incorreta: Forças transversais que curvam arestas retilíneas definem a deformação de flexão.",
-      "Está incorreta: Forças no vácuo sem contacto não descrevem o esforço mecânico clássico de tração de sólidos."
+      "Está incorreta: A água tem viscosidade e deforma-se sob qualquer tensão tangencial, não tendo rigidez infinita.",
+      "Está incorreta: A borracha tem rigidez extremamente baixa (Slide 44), o oposto de rigidez infinita.",
+      "Está incorreta: A massa de pão molda-se facilmente com os dedos."
     ],
-    "nursingApplication": "Tendões e ligamentos são estruturas especializadas em resistir a esforços de tração longitudinal."
+    "nursingApplication": "Unificação concetual entre os modelos teóricos de corpos indeformáveis e a Lei da Elasticidade."
   },
   {
     "id": 2161,
     "topicId": 2,
-    "question": "Qual das seguintes alterações geométricas ocorre num cilindro sujeito a esforço axial de COMPRESSÃO?",
+    "question": "Qual é a fórmula matemática da Lei de Hooke generalizada apresentada no Slide 43 de Biofísica?",
     "options": [
-      "O comprimento longitudinal aumenta e o diâmetro transversal diminui.",
-      "O comprimento longitudinal diminui e o diâmetro transversal aumenta.",
-      "O cilindro curva-se instantaneamente num semicírculo perfeito sem alterar o diâmetro.",
-      "O volume do cilindro reduz-se para zero sem qualquer alteração das suas dimensões."
+      "F = m · a",
+      "σ = E · ε",
+      "P = m · g",
+      "p = F / A"
     ],
     "correctIndex": 1,
-    "explanation": "Ao comprimir axialmente, as partículas aproximam-se na direção da força, encurtando a barra e expandindo-a lateralmente.",
+    "explanation": "O Slide 43 estipula expressamente a formulação da Lei de Hooke generalizada: 'Tensão exercida por um corpo quando este é distendido ou comprimido: σ = E · ε'.",
     "distractorAnalysis": [
-      "Está incorreta: Aumento de comprimento com diminuição de diâmetro é o efeito característico da tração mecânica.",
-      "Está incorreta: Curvar-se em semicírculo sob força transversal caracteriza flexão, não compressão axial pura.",
-      "Está incorreta: O volume de um sólido real não se reduz a zero sob compressão elástica ou plástica."
+      "Está incorreta: F = m · a é a 2ª Lei de Newton da dinâmica (Slide 13 do Tópico 1).",
+      "Está incorreta: P = m · g é o peso gravítico de Newton (Slide 28 do Tópico 1).",
+      "Está incorreta: p = F / A é a definição geral de pressão escalar (Slide 44 do Tópico 1)."
     ],
-    "nursingApplication": "Explica o achatamento elástico microscópico dos discos intervertebrais sob o peso do corpo durante o dia."
+    "nursingApplication": "A equação fundamental da mecânica dos materiais para analisar tensões e deformações relativas em tecidos biológicos."
   },
   {
     "id": 2162,
     "topicId": 2,
-    "question": "Qual das seguintes alterações geométricas ocorre numa barra elástica sujeita a esforço de TRAÇÃO?",
+    "question": "Na fórmula σ = E · ε do Slide 43, qual é a definição e unidade SI do símbolo 'σ' (sigma)?",
     "options": [
-      "O comprimento longitudinal diminui e a área da secção transversal aumenta.",
-      "A barra roda continuamente sobre o seu eixo central mantendo o comprimento constante.",
-      "O comprimento longitudinal aumenta e a área da secção transversal diminui.",
-      "A barra transforma-se num sólido indeformável de Euclides em equilíbrio térmico."
+      "Superfície da base de sustentação expressa em cm².",
+      "Soma de todas as forças nucleares fracas no interior da célula.",
+      "Tensão mecânica que causa a deformação do sólido de área de secção A, expressa em N/m² ou Pascal (Pa).",
+      "Segundo de tempo decorrido desde o início da marcha."
     ],
     "correctIndex": 2,
-    "explanation": "Sob tração axial, as extremidades afastam-se (alongamento ΔL > 0) e a secção transversal adelgaça-se lateralmente.",
+    "explanation": "O Slide 43 define textualmente: 'σ = Tensão mecânica que causa a deformação do sólido de área de secção A', com unidades no SI de N/m² ou Pascal (Pa).",
     "distractorAnalysis": [
-      "Está incorreta: Encurtamento com aumento de secção é o efeito característico da compressão mecânica.",
-      "Está incorreta: Rotação sobre o próprio eixo é a deformação de torção provocada por um binário de momentos.",
-      "Está incorreta: A tração não transforma materiais reais em modelos teóricos indeformáveis de Euclides."
+      "Está incorreta: Área da base é uma medida geométrica de suporte (BS), não a tensão interna σ.",
+      "Está incorreta: Forças nucleares pertencem à física nuclear, não à tensão elástica contínua dos tecidos.",
+      "Está incorreta: Segundo (s) é a unidade de tempo, grandeza dimensionalmente distinta de tensão mecânica."
     ],
-    "nursingApplication": "Comportamento de fios de sutura e ligamentos quando submetidos a forças de estiramento."
+    "nursingApplication": "Conceito central de esforço mecânico interno por unidade de área resistente."
   },
   {
     "id": 2163,
     "topicId": 2,
-    "question": "No corpo humano, o fémur suporta o peso do tronco e dos membros superiores. Este esforço mecânico predominante é de:",
+    "question": "Na fórmula σ = E · ε do Slide 43, qual é a definição exata do símbolo 'E'?",
     "options": [
-      "Torção pura no vácuo.",
-      "Cisalhamento centrípeto nulo.",
-      "Radiação ionizante gama.",
-      "Compressão."
+      "Energia cinética da ambulância medida em Joules.",
+      "Espessura da camada de pele sobre o osso sacro.",
+      "Equilíbrio indiferente de um sólido em translação uniforme.",
+      "Módulo de Young (rigidez intrínseca de um material perante forças de tração e compressão)."
     ],
     "correctIndex": 3,
-    "explanation": "O peso corporal atua verticalmente de cima para baixo comprimindo o fémur contra a tíbia e o solo (forças convergentes).",
+    "explanation": "O Slide 43 define expressamente: 'E = Módulo de Young (rigidez intrínseca de um material perante forças de tração e compressão)'.",
     "distractorAnalysis": [
-      "Está incorreta: O suporte de carga vertical é um esforço compressivo, não uma torção pura no vácuo.",
-      "Está incorreta: Cisalhamento centrípeto nulo é uma combinação fictícia de termos físicos.",
-      "Está incorreta: Radiação gama é uma emissão eletromagnética nuclear, não um esforço mecânico de carga."
+      "Está incorreta: Energia cinética mede-se em Joules (1/2 m v²), não sendo a constante de rigidez elástica E.",
+      "Está incorreta: Espessura da pele é uma dimensão métrica anatómica em milímetros.",
+      "Está incorreta: Equilíbrio indiferente é um estado de equilíbrio mecânico (Slide 57 do Tópico 1)."
     ],
-    "nursingApplication": "O osso cortical tem enorme resistência à compressão, sendo ideal para sustentar o peso corporal."
+    "nursingApplication": "A constante material por excelência que dita a rigidez elástica de biomateriais e tecidos."
   },
   {
     "id": 2164,
     "topicId": 2,
-    "question": "Quando um músculo se contrai e puxa um tendão ligado a um osso, o tendão fica sujeito predominantemente a uma força de:",
+    "question": "Na fórmula σ = E · ε do Slide 43, qual é a definição exata do símbolo 'ε' (épsilon)?",
     "options": [
-      "Tração (tensão longitudinal).",
-      "Compressão convergente axial.",
-      "Flexão com eixo neutro central.",
-      "Desintegração atómica espontânea."
+      "Deformação relativa (alongamento / compressão do objeto relativo ao comprimento inicial, ε = ΔL / L).",
+      "Energia potencial elástica armazenada na mola em Joules.",
+      "Eletrocardiograma médio medido em milivolts.",
+      "Esforço muscular exercido pelo bíceps sobre o rádio."
     ],
     "correctIndex": 0,
-    "explanation": "O músculo exerce forças divergentes sobre as extremidades do tendão, tracionando-o ao longo do seu eixo fibroso longitudinal.",
+    "explanation": "O Slide 43 define textualmente: 'ε = Alongamento / Compressão do objeto relativo ao comprimento inicial'. É a deformação adimensional relativa sofrida pela peça.",
     "distractorAnalysis": [
-      "Está incorreta: Os tendões são estruturas flexíveis que suportam grandes forças de tração, mas dobram-se sob compressão.",
-      "Está incorreta: A flexão ocorre em barras suportadas sob forças perpendiculares, não em tendões alinhados com a tração muscular.",
-      "Está incorreta: Contração muscular mecânica não envolve desintegração atómica dos tecidos conjuntivos."
+      "Está incorreta: Energia potencial tem unidade Joule, enquanto ε é uma razão geométrica adimensional.",
+      "Está incorreta: ECG é o registo de potenciais de ação bioelétricos cardíacos.",
+      "Está incorreta: Esforço muscular do bíceps mede-se em Newtons (Slide 89 do Tópico 1)."
     ],
-    "nursingApplication": "A elevada resistência à tração do colagénio permite transmitir a força muscular às alavancas ósseas."
+    "nursingApplication": "Permite normalizar a deformação independentemente de a barra ter 10 cm ou 10 metros de comprimento."
   },
   {
     "id": 2165,
     "topicId": 2,
-    "question": "Como se comparam os sentidos das forças aplicadas na Compressão e na Tração ao longo de um mesmo eixo linear?",
+    "question": "Qual é a unidade da Tensão Mecânica σ no Sistema Internacional indicada nos Slides 43 e 44?",
     "options": [
-      "Na compressão as forças apontam ambas para a direita; na tração apontam ambas para cima.",
-      "Na compressão as forças são convergentes (apontam para o interior do corpo); na tração são divergentes (apontam para fora).",
-      "Em ambas as deformações as forças são sempre convergentes com a mesma intensidade.",
-      "Na compressão as forças são perpendiculares à barra e na tração são paralelas ao solo."
+      "Quilograma por segundo (kg/s).",
+      "Newton por metro quadrado (N/m²) ou Pascal (Pa).",
+      "Newton-metro (N·m).",
+      "Metro por segundo ao quadrado (m/s²)."
     ],
     "correctIndex": 1,
-    "explanation": "Conforme os slides 21 e 23, forças convergentes encurtam (compressão) e forças divergentes alongam (tração).",
+    "explanation": "Como a tensão mecânica σ é a força interna dividida pela área de secção transversal (σ = F / A), a sua unidade SI é o N/m² (Newton por metro quadrado), que corresponde exatamente ao Pascal (Pa).",
     "distractorAnalysis": [
-      "Está incorreta: Duas forças apontando no mesmo sentido aceleram o corpo em translação em vez de o deformar em tração ou compressão.",
-      "Está incorreta: A tração requer forças divergentes opostas; se fossem convergentes seria compressão.",
-      "Está incorreta: Forças perpendiculares produzem flexão ou cisalhamento, não esforços axiais de tração ou compressão."
+      "Está incorreta: kg/s é taxa de fluxo mássico, não tensão mecânica.",
+      "Está incorreta: N·m é a unidade de momento de força (torque) ou energia (Joule).",
+      "Está incorreta: m/s² é a unidade de aceleração linear."
     ],
-    "nursingApplication": "Distingue com clareza os dois esforços axiais mais comuns na mecânica das estruturas e tecidos."
+    "nursingApplication": "Demonstra a identidade física dimensional entre tensão mecânica e pressão (Slide 44 do Tópico 1)."
   },
   {
     "id": 2166,
     "topicId": 2,
-    "question": "Se uma barra de comprimento inicial L0 sofrer uma variação de comprimento ΔL negativa (ΔL < 0), isso significa que a barra sofreu:",
+    "question": "Qual é a unidade no Sistema Internacional da Deformação Relativa ε (épsilon = ΔL / L)?",
     "options": [
-      "Alongamento devido a uma força de tração.",
-      "Uma rotação de 360 graus por ação de torção pura.",
-      "Encurtamento devido a uma força de compressão.",
-      "Um aumento de noventa por cento na sua massa inercial."
+      "Metro (m).",
+      "Newton (N).",
+      "É uma grandeza adimensional (não tem unidade, sendo o quociente entre dois comprimentos em metros).",
+      "Pascal (Pa)."
     ],
     "correctIndex": 2,
-    "explanation": "ΔL = L - L0. Se ΔL é negativo, o comprimento final é menor que o inicial (L < L0), caracterizando compressão.",
+    "explanation": "Como ε resulta da divisão de uma variação de comprimento (em metros) pelo comprimento inicial (em metros): m / m = 1. Trata-se de uma grandeza adimensional pura, frequentemente expressa em percentagem (%).",
     "distractorAnalysis": [
-      "Está incorreta: Se sofresse tração, o comprimento final seria maior que o inicial, resultando em ΔL positivo (ΔL > 0).",
-      "Está incorreta: A torção pura provoca rotação angular das secções sem alterar necessariamente o comprimento no regime linear.",
-      "Está incorreta: A massa da barra permanece rigorosamente constante independentemente de ser comprimida ou esticada."
+      "Está incorreta: Metro mede a deformação absoluta Δx, não a deformação relativa normalizada ε.",
+      "Está incorreta: Newton é a unidade de força.",
+      "Está incorreta: Pascal é a unidade de tensão e pressão."
     ],
-    "nursingApplication": "Convenção de sinais da mecânica: compressão corresponde a variações de comprimento negativas."
+    "nursingApplication": "Prevenção de erros clássicos de análise dimensional na resolução de problemas da Lei de Hooke."
   },
   {
     "id": 2167,
     "topicId": 2,
-    "question": "Na caracterização das deformações mecânicas (Slide 21), como são definidas as Forças de Compressão?",
+    "question": "Qual é a grande vantagem científica da Lei de Hooke generalizada (σ = E · ε) em comparação com a fórmula elementar da mola (F = k · Δx)?",
     "options": [
-      "Forças divergentes que aumentam o comprimento e adelgaçam a área de secção transversal da barra.",
-      "Forças tangenciais paralelas que fazem deslizar duas superfícies planas opostas.",
-      "Momentos de rotação puros que provocam a torção em torno do eixo longitudinal.",
-      "Forças convergentes colineares que provocam diminuição do comprimento (L) e aumento da área de secção transversal (S)."
+      "A fórmula σ = E · ε só funciona para fluidos em repouso absoluto.",
+      "A fórmula σ = E · ε elimina a necessidade de qualquer força deformadora.",
+      "A fórmula σ = E · ε aplica-se exclusivamente no interior do núcleo atómico.",
+      "Permite descrever o comportamento elástico intrínseco do material puro, sendo independente do tamanho e da espessura geométrica da peça testada."
     ],
     "correctIndex": 3,
-    "explanation": "A compressão atua com forças convergentes (para dentro do corpo), encurtando o comprimento e alargando a secção transversal.",
+    "explanation": "Enquanto a constante k depende da espessura e comprimento de uma peça específica (Slide 42), o Módulo de Young E é uma propriedade intrínseca universal do material: o aço tem o mesmo E quer seja um fio cirúrgico finíssimo ou uma viga de ponte maciça.",
     "distractorAnalysis": [
-      "Está incorreta: Forças divergentes que aumentam o comprimento e diminuem a secção caracterizam a tração, não a compressão.",
-      "Está incorreta: Forças tangenciais paralelas em sentidos opostos definem o cisalhamento (corte).",
-      "Está incorreta: Momentos de rotação em torno do eixo longitudinal definem a torção mecânica."
+      "Está incorreta: Aplica-se primariamente a sólidos e tecidos submetidos a tração e compressão axial.",
+      "Está incorreta: Tensão σ decorre diretamente da força mecânica aplicada dividida pela área.",
+      "Está incorreta: Aplica-se à mecânica dos meios contínuos e tecidos biológicos macroscópicos."
     ],
-    "nursingApplication": "Os ossos dos membros inferiores e as vértebras suportam cargas predominantemente compressivas na marcha."
+    "nursingApplication": "Permite aos investigadores comparar diretamente a rigidez do osso humano com a de biomateriais de próteses."
   },
   {
     "id": 2168,
     "topicId": 2,
-    "question": "Como são definidas as Forças de Tração na mecânica dos corpos elásticos (Slide 23)?",
+    "question": "Se um material tiver Módulo de Young E = 2 × 10¹⁰ N/m² e for submetido a uma deformação relativa de ε = 0,001 (0,1%), qual é a tensão mecânica σ gerada na sua estrutura?",
     "options": [
-      "Forças divergentes colineares que provocam aumento do comprimento (L) e diminuição da área de secção transversal (S).",
-      "Forças convergentes que diminuem o comprimento longitudinal e alargam a secção média.",
-      "Forças transversais perpendiculares que curvam as arestas retilíneas da barra.",
-      "Forças microscópicas puramente gravitacionais que atuam exclusivamente no vácuo espacial."
+      "σ = 2 × 10⁷ N/m² (ou 20 MPa)",
+      "σ = 2 × 10¹³ N/m²",
+      "σ = 0,00000005 N/m²",
+      "σ = 2,001 N/m²"
     ],
     "correctIndex": 0,
-    "explanation": "A tração puxa as extremidades para fora com forças divergentes, alongando a barra e reduzindo a sua espessura transversal.",
+    "explanation": "Aplicando a Lei de Hooke generalizada (Slide 43): σ = E · ε = (2 × 10¹⁰ N/m²) × (10⁻³) = 2 × 10⁷ N/m² (20 000 000 Pa ou 20 MPa).",
     "distractorAnalysis": [
-      "Está incorreta: Forças convergentes que encurtam a barra definem a compressão mecânica.",
-      "Está incorreta: Forças transversais que curvam arestas retilíneas definem a deformação de flexão.",
-      "Está incorreta: Forças no vácuo sem contacto não descrevem o esforço mecânico clássico de tração de sólidos."
+      "Está incorreta: 2 × 10¹³ resultaria de multiplicar por 1000 em vez de 0,001.",
+      "Está incorreta: 0,00000005 resultaria de dividir erradamente ε por E.",
+      "Está incorreta: 2,001 resultaria de uma soma aritmética descabida de variáveis incompatíveis."
     ],
-    "nursingApplication": "Tendões e ligamentos são estruturas especializadas em resistir a esforços de tração longitudinal."
+    "nursingApplication": "Cálculo típico de tensão em ensaios de compressão e tração de amostras de osso cortical."
   },
   {
     "id": 2169,
     "topicId": 2,
-    "question": "Qual das seguintes alterações geométricas ocorre num cilindro sujeito a esforço axial de COMPRESSÃO?",
+    "question": "Qual é o valor do Módulo de Young do Osso (E_osso) apresentado expressamente no Slide 43 de Biofísica?",
     "options": [
-      "O comprimento longitudinal aumenta e o diâmetro transversal diminui.",
-      "O comprimento longitudinal diminui e o diâmetro transversal aumenta.",
-      "O cilindro curva-se instantaneamente num semicírculo perfeito sem alterar o diâmetro.",
-      "O volume do cilindro reduz-se para zero sem qualquer alteração das suas dimensões."
+      "E_osso = 2 × 10¹¹ N/m²",
+      "E_osso = 2 × 10¹⁰ N/m²",
+      "E_osso = 7 × 10¹⁰ N/m²",
+      "E_osso = 0,1 × 10⁷ N/m²"
     ],
     "correctIndex": 1,
-    "explanation": "Ao comprimir axialmente, as partículas aproximam-se na direção da força, encurtando a barra e expandindo-a lateralmente.",
+    "explanation": "O Slide 43 apresenta em destaque o valor de referência biológico: 'E osso = 2 × 10¹⁰ N/m²'.",
     "distractorAnalysis": [
-      "Está incorreta: Aumento de comprimento com diminuição de diâmetro é o efeito característico da tração mecânica.",
-      "Está incorreta: Curvar-se em semicírculo sob força transversal caracteriza flexão, não compressão axial pura.",
-      "Está incorreta: O volume de um sólido real não se reduz a zero sob compressão elástica ou plástica."
+      "Está incorreta: 2 × 10¹¹ N/m² é o Módulo de Young do aço (Slide 43).",
+      "Está incorreta: 7 × 10¹⁰ N/m² é o Módulo de Young do vidro (Slide 44).",
+      "Está incorreta: 0,1 × 10⁷ N/m² é a ordem de grandeza do módulo da borracha (Slide 44)."
     ],
-    "nursingApplication": "Explica o achatamento elástico microscópico dos discos intervertebrais sob o peso do corpo durante o dia."
+    "nursingApplication": "Constante biofísica de referência obrigatória para os alunos de Enfermagem."
   },
   {
     "id": 2170,
     "topicId": 2,
-    "question": "Qual das seguintes alterações geométricas ocorre numa barra elástica sujeita a esforço de TRAÇÃO?",
+    "question": "Qual é o valor do Módulo de Young do Aço (E_aço) apresentado expressamente no Slide 43 de Biofísica?",
     "options": [
-      "O comprimento longitudinal diminui e a área da secção transversal aumenta.",
-      "A barra roda continuamente sobre o seu eixo central mantendo o comprimento constante.",
-      "O comprimento longitudinal aumenta e a área da secção transversal diminui.",
-      "A barra transforma-se num sólido indeformável de Euclides em equilíbrio térmico."
+      "E_aço = 2 × 10¹⁰ N/m²",
+      "E_aço = 7,5 × 10¹⁰ N/m²",
+      "E_aço = 2 × 10¹¹ N/m² (ou 20 × 10¹⁰ N/m²)",
+      "E_aço = 10⁷ N/m²"
     ],
     "correctIndex": 2,
-    "explanation": "Sob tração axial, as extremidades afastam-se (alongamento ΔL > 0) e a secção transversal adelgaça-se lateralmente.",
+    "explanation": "O Slide 43 indica: 'E aço = 2 × 10¹¹ N/m²' (que é matematicamente equivalente a 20 × 10¹⁰ N/m², conforme grafado no Slide 44).",
     "distractorAnalysis": [
-      "Está incorreta: Encurtamento com aumento de secção é o efeito característico da compressão mecânica.",
-      "Está incorreta: Rotação sobre o próprio eixo é a deformação de torção provocada por um binário de momentos.",
-      "Está incorreta: A tração não transforma materiais reais em modelos teóricos indeformáveis de Euclides."
+      "Está incorreta: 2 × 10¹⁰ N/m² é o módulo do osso cortical, dez vezes menor que o aço.",
+      "Está incorreta: 7,5 × 10¹⁰ N/m² é o módulo da prata (Slide 44).",
+      "Está incorreta: 10⁷ N/m² é a ordem de grandeza do módulo elástico da borracha (Slide 44)."
     ],
-    "nursingApplication": "Comportamento de fios de sutura e ligamentos quando submetidos a forças de estiramento."
+    "nursingApplication": "Permite comparar a rigidez de implantes e placas metálicas cirúrgicas de aço com a do tecido ósseo hospedeiro."
   },
   {
     "id": 2171,
     "topicId": 2,
-    "question": "No corpo humano, o fémur suporta o peso do tronco e dos membros superiores. Este esforço mecânico predominante é de:",
+    "question": "Qual é a definição exata de Módulo de Young (E) fornecida no Slide 43 dos slides de Biofísica?",
     "options": [
-      "Torção pura no vácuo.",
-      "Cisalhamento centrípeto nulo.",
-      "Radiação ionizante gama.",
-      "Compressão."
+      "Aceleração com que um membro é projetado numa colisão a 80 km/h.",
+      "A quantidade de atrito no leito gerada por lençóis ásperos.",
+      "A pressão normal exercida pelo sacro sobre colchões de ar alternante.",
+      "Rigidez intrínseca de um material perante forças de tração e compressão."
     ],
     "correctIndex": 3,
-    "explanation": "O peso corporal atua verticalmente de cima para baixo comprimindo o fémur contra a tíbia e o solo (forças convergentes).",
+    "explanation": "O Slide 43 define textualmente: 'E = Módulo de Young (rigidez intrínseca de um material perante forças de tração e compressão)'.",
     "distractorAnalysis": [
-      "Está incorreta: O suporte de carga vertical é um esforço compressivo, não uma torção pura no vácuo.",
-      "Está incorreta: Cisalhamento centrípeto nulo é uma combinação fictícia de termos físicos.",
-      "Está incorreta: Radiação gama é uma emissão eletromagnética nuclear, não um esforço mecânico de carga."
+      "Está incorreta: Aceleração de colisão refere-se à dinâmica do Tópico 1 (Slide 49).",
+      "Está incorreta: Atrito no leito refere-se ao cisalhamento e atrito estático/cinético (Slide 33).",
+      "Está incorreta: Pressão no sacro refere-se à força normal e lesões de pressão (Slide 44 do Tópico 1)."
     ],
-    "nursingApplication": "O osso cortical tem enorme resistência à compressão, sendo ideal para sustentar o peso corporal."
+    "nursingApplication": "Definição concetual de referência para toda a resistência dos materiais."
   },
   {
     "id": 2172,
     "topicId": 2,
-    "question": "Quando um músculo se contrai e puxa um tendão ligado a um osso, o tendão fica sujeito predominantemente a uma força de:",
+    "question": "Se cortarmos uma barra de aço maciço ao meio, reduzindo o seu comprimento para metade, o que acontece ao seu Módulo de Young (E)?",
     "options": [
-      "Tração (tensão longitudinal).",
-      "Compressão convergente axial.",
-      "Flexão com eixo neutro central.",
-      "Desintegração atómica espontânea."
+      "Permanece rigorosamente inalterado, porque E é uma propriedade intrínseca do material aço e não depende das dimensões da peça.",
+      "Reduz-se para metade porque o comprimento foi reduzido para metade.",
+      "Duplica instantaneamente devido à conservação de matéria.",
+      "Anula-se transformando o aço em borracha vulcanizada."
     ],
     "correctIndex": 0,
-    "explanation": "O músculo exerce forças divergentes sobre as extremidades do tendão, tracionando-o ao longo do seu eixo fibroso longitudinal.",
+    "explanation": "Ao contrário da constante de mola k (que varia com o comprimento), o Módulo de Young E é uma propriedade física intrínseca de cada material: o aço tem E = 20 × 10¹⁰ N/m² quer a barra tenha 1 metro ou 1 centímetro.",
     "distractorAnalysis": [
-      "Está incorreta: Os tendões são estruturas flexíveis que suportam grandes forças de tração, mas dobram-se sob compressão.",
-      "Está incorreta: A flexão ocorre em barras suportadas sob forças perpendiculares, não em tendões alinhados com a tração muscular.",
-      "Está incorreta: Contração muscular mecânica não envolve desintegração atómica dos tecidos conjuntivos."
+      "Está incorreta: A constante k da barra é que duplica, mas o Módulo de Young E do material mantém-se exatamente o mesmo.",
+      "Está incorreta: E não varia com o corte de peças sólidas homogéneas.",
+      "Está incorreta: O material continua a ser aço inalterado."
     ],
-    "nursingApplication": "A elevada resistência à tração do colagénio permite transmitir a força muscular às alavancas ósseas."
+    "nursingApplication": "Consolida de forma indelével a diferença entre propriedade intrínseca (material) e extrínseca (objeto)."
   },
   {
     "id": 2173,
     "topicId": 2,
-    "question": "Como se comparam os sentidos das forças aplicadas na Compressão e na Tração ao longo de um mesmo eixo linear?",
+    "question": "Qual é a unidade do Módulo de Young no Sistema Internacional e com que outra grandeza partilha a mesma unidade?",
     "options": [
-      "Na compressão as forças apontam ambas para a direita; na tração apontam ambas para cima.",
-      "Na compressão as forças são convergentes (apontam para o interior do corpo); na tração são divergentes (apontam para fora).",
-      "Em ambas as deformações as forças são sempre convergentes com a mesma intensidade.",
-      "Na compressão as forças são perpendiculares à barra e na tração são paralelas ao solo."
+      "Joule (J), partilhando unidade com a energia mecânica.",
+      "N/m² ou Pascal (Pa), partilhando unidade com a Pressão e a Tensão Mecânica.",
+      "Newton-metro (N·m), partilhando unidade com o Momento da Força.",
+      "Quilograma (kg), partilhando unidade com a Massa inercial."
     ],
     "correctIndex": 1,
-    "explanation": "Conforme os slides 21 e 23, forças convergentes encurtam (compressão) e forças divergentes alongam (tração).",
+    "explanation": "Como na equação σ = E · ε a deformação ε é adimensional, o Módulo de Young E tem obrigatoriamente a mesma unidade que a tensão mecânica σ: N/m² ou Pascal (Pa).",
     "distractorAnalysis": [
-      "Está incorreta: Duas forças apontando no mesmo sentido aceleram o corpo em translação em vez de o deformar em tração ou compressão.",
-      "Está incorreta: A tração requer forças divergentes opostas; se fossem convergentes seria compressão.",
-      "Está incorreta: Forças perpendiculares produzem flexão ou cisalhamento, não esforços axiais de tração ou compressão."
+      "Está incorreta: Joule é unidade de energia e trabalho mecânico.",
+      "Está incorreta: Newton-metro é unidade de momento de força (torque).",
+      "Está incorreta: Quilograma é a unidade fundamental de massa."
     ],
-    "nursingApplication": "Distingue com clareza os dois esforços axiais mais comuns na mecânica das estruturas e tecidos."
+    "nursingApplication": "Garante a correta interpretação de tabelas de propriedades mecânicas de biomateriais."
   },
   {
     "id": 2174,
     "topicId": 2,
-    "question": "Se uma barra de comprimento inicial L0 sofrer uma variação de comprimento ΔL negativa (ΔL < 0), isso significa que a barra sofreu:",
+    "question": "Um material que apresenta um Módulo de Young com valor numérico extremamente elevado caracteriza-se mecanicamente por:",
     "options": [
-      "Alongamento devido a uma força de tração.",
-      "Uma rotação de 360 graus por ação de torção pura.",
-      "Encurtamento devido a uma força de compressão.",
-      "Um aumento de noventa por cento na sua massa inercial."
+      "Ser extremamente elástico e deformar-se metros com um simples sopro de ar.",
+      "Comportar-se como um fluido puramente viscoso que escoa como água.",
+      "Ser extremamente rígido, suportando esforços e tensões massivas com mínima deformação estrutural.",
+      "Perder toda a sua massa inercial durante o ensaio mecânico."
     ],
     "correctIndex": 2,
-    "explanation": "ΔL = L - L0. Se ΔL é negativo, o comprimento final é menor que o inicial (L < L0), caracterizando compressão.",
+    "explanation": "Como ε = σ / E, quanto maior for o valor de E, menor será a deformação relativa ε gerada por uma dada tensão σ. Materiais de altíssimo módulo (como o aço no Slide 44) sofrem mínima deformação dimensional mesmo sob cargas gigantescas.",
     "distractorAnalysis": [
-      "Está incorreta: Se sofresse tração, o comprimento final seria maior que o inicial, resultando em ΔL positivo (ΔL > 0).",
-      "Está incorreta: A torção pura provoca rotação angular das secções sem alterar necessariamente o comprimento no regime linear.",
-      "Está incorreta: A massa da barra permanece rigorosamente constante independentemente de ser comprimida ou esticada."
+      "Está incorreta: Deformar-se muito sob cargas mínimas caracteriza materiais de baixo módulo, como a borracha (Slide 44).",
+      "Está incorreta: Módulos de Young elevados definem sólidos altamente rígidos, o oposto de fluidos.",
+      "Está incorreta: A massa inercial de corpos sólidos é constante e independente da sua rigidez."
     ],
-    "nursingApplication": "Convenção de sinais da mecânica: compressão corresponde a variações de comprimento negativas."
+    "nursingApplication": "Permite aos alunos relacionar o valor numérico de E com a rigidez perceptível dos materiais."
   },
   {
     "id": 2175,
     "topicId": 2,
-    "question": "Na caracterização das deformações mecânicas (Slide 21), como são definidas as Forças de Compressão?",
+    "question": "Um material que apresenta um Módulo de Young com valor numérico muito baixo (como a borracha nos slides) caracteriza-se por:",
     "options": [
-      "Forças divergentes que aumentam o comprimento e adelgaçam a área de secção transversal da barra.",
-      "Forças tangenciais paralelas que fazem deslizar duas superfícies planas opostas.",
-      "Momentos de rotação puros que provocam a torção em torno do eixo longitudinal.",
-      "Forças convergentes colineares que provocam diminuição do comprimento (L) e aumento da área de secção transversal (S)."
+      "Ser mais rígido do que o aço e o vidro combinados.",
+      "Ser indeformável sob qualquer tipo de força mecânica.",
+      "Fraturar imediatamente sem sofrer qualquer alteração dimensional.",
+      "Apresentar grande flexibilidade elástica, sofrendo grandes deformações reversíveis sob cargas mínimas."
     ],
     "correctIndex": 3,
-    "explanation": "A compressão atua com forças convergentes (para dentro do corpo), encurtando o comprimento e alargando a secção transversal.",
+    "explanation": "O Slide 44 descreve textualmente para a Borracha: 'Módulo extremamente baixo; sofre grandes deformações elásticas reversíveis sob cargas mínimas'.",
     "distractorAnalysis": [
-      "Está incorreta: Forças divergentes que aumentam o comprimento e diminuem a secção caracterizam a tração, não a compressão.",
-      "Está incorreta: Forças tangenciais paralelas em sentidos opostos definem o cisalhamento (corte).",
-      "Está incorreta: Momentos de rotação em torno do eixo longitudinal definem a torção mecânica."
+      "Está incorreta: O módulo da borracha é muitas ordens de grandeza inferior ao do aço.",
+      "Está incorreta: A borracha é o exemplo oposto de um sólido indeformável: deforma-se extensamente.",
+      "Está incorreta: Fratura sem deformação caracteriza materiais frágeis de alto módulo como o vidro (Slide 44)."
     ],
-    "nursingApplication": "Os ossos dos membros inferiores e as vértebras suportam cargas predominantemente compressivas na marcha."
+    "nursingApplication": "Explica a utilidade da borracha e elastómeros em almofadas e dispositivos de alívio de impacto."
   },
   {
     "id": 2176,
     "topicId": 2,
-    "question": "Como são definidas as Forças de Tração na mecânica dos corpos elásticos (Slide 23)?",
+    "question": "A partir da Lei de Hooke generalizada (σ = E · ε), como se calcula matematicamente a deformação relativa ε?",
     "options": [
-      "Forças divergentes colineares que provocam aumento do comprimento (L) e diminuição da área de secção transversal (S).",
-      "Forças convergentes que diminuem o comprimento longitudinal e alargam a secção média.",
-      "Forças transversais perpendiculares que curvam as arestas retilíneas da barra.",
-      "Forças microscópicas puramente gravitacionais que atuam exclusivamente no vácuo espacial."
+      "ε = σ / E",
+      "ε = σ · E",
+      "ε = E / σ",
+      "ε = σ + E"
     ],
     "correctIndex": 0,
-    "explanation": "A tração puxa as extremidades para fora com forças divergentes, alongando a barra e reduzindo a sua espessura transversal.",
+    "explanation": "Isolando a deformação relativa na equação σ = E · ε, obtém-se ε = σ / E. A deformação é diretamente proporcional à tensão σ e inversamente proporcional à rigidez do material E.",
     "distractorAnalysis": [
-      "Está incorreta: Forças convergentes que encurtam a barra definem a compressão mecânica.",
-      "Está incorreta: Forças transversais que curvam arestas retilíneas definem a deformação de flexão.",
-      "Está incorreta: Forças no vácuo sem contacto não descrevem o esforço mecânico clássico de tração de sólidos."
+      "Está incorreta: Multiplicar σ por E daria unidades de (N/m²)², dimensionalmente inconsistente.",
+      "Está incorreta: Inverter para E / σ daria o inverso da deformação relativa (1/ε).",
+      "Está incorreta: Somar grandezas de natureza distinta não é permitido na física."
     ],
-    "nursingApplication": "Tendões e ligamentos são estruturas especializadas em resistir a esforços de tração longitudinal."
+    "nursingApplication": "Fórmula fundamental para determinar o encurtamento percentual de ossos sob cargas compressivas."
   },
   {
     "id": 2177,
     "topicId": 2,
-    "question": "Qual das seguintes alterações geométricas ocorre num cilindro sujeito a esforço axial de COMPRESSÃO?",
+    "question": "O Módulo de Young E mede especificamente a rigidez intrínseca dos materiais perante quais solicitações mecânicas (Slide 43)?",
     "options": [
-      "O comprimento longitudinal aumenta e o diâmetro transversal diminui.",
-      "O comprimento longitudinal diminui e o diâmetro transversal aumenta.",
-      "O cilindro curva-se instantaneamente num semicírculo perfeito sem alterar o diâmetro.",
-      "O volume do cilindro reduz-se para zero sem qualquer alteração das suas dimensões."
+      "Apenas perante emissões de radiação atómica gama.",
+      "Perante forças axiais de tração e de compressão (Slide 43).",
+      "Exclusivamente perante atrito térmico de evaporação.",
+      "Apenas perante forças nucleares fortes subatómicas."
     ],
     "correctIndex": 1,
-    "explanation": "Ao comprimir axialmente, as partículas aproximam-se na direção da força, encurtando a barra e expandindo-a lateralmente.",
+    "explanation": "O Slide 43 explicita textualmente entre parêntesis: 'rigidez intrínseca de um material perante forças de tração e compressão'.",
     "distractorAnalysis": [
-      "Está incorreta: Aumento de comprimento com diminuição de diâmetro é o efeito característico da tração mecânica.",
-      "Está incorreta: Curvar-se em semicírculo sob força transversal caracteriza flexão, não compressão axial pura.",
-      "Está incorreta: O volume de um sólido real não se reduz a zero sob compressão elástica ou plástica."
+      "Está incorreta: Radiação gama pertence à física nuclear médica (Tópico 6 e 7).",
+      "Está incorreta: Evaporação é um fenómeno de transição de fase de fluidos térmicos.",
+      "Está incorreta: Forças nucleares fortes atuam exclusivamente dentro do núcleo dos átomos."
     ],
-    "nursingApplication": "Explica o achatamento elástico microscópico dos discos intervertebrais sob o peso do corpo durante o dia."
+    "nursingApplication": "Restrição técnica importante: o Módulo de Young refere-se a esforços axiais normais de tração/compressão."
   },
   {
     "id": 2178,
     "topicId": 2,
-    "question": "Qual das seguintes alterações geométricas ocorre numa barra elástica sujeita a esforço de TRAÇÃO?",
+    "question": "Comparando os valores dados no Slide 43, quantas vezes é o Módulo de Young do Aço (2 × 10¹¹ N/m²) superior ao do Osso (2 × 10¹⁰ N/m²)?",
     "options": [
-      "O comprimento longitudinal diminui e a área da secção transversal aumenta.",
-      "A barra roda continuamente sobre o seu eixo central mantendo o comprimento constante.",
-      "O comprimento longitudinal aumenta e a área da secção transversal diminui.",
-      "A barra transforma-se num sólido indeformável de Euclides em equilíbrio térmico."
+      "O aço é 2 vezes mais rígido que o osso.",
+      "O aço é 100 vezes mais rígido que o osso.",
+      "O aço é 10 vezes mais rígido que o osso (Módulo 10 vezes maior).",
+      "Ambos têm rigorosamente o mesmo módulo elástico."
     ],
     "correctIndex": 2,
-    "explanation": "Sob tração axial, as extremidades afastam-se (alongamento ΔL > 0) e a secção transversal adelgaça-se lateralmente.",
+    "explanation": "Dividindo os módulos: (2 × 10¹¹ N/m²) / (2 × 10¹⁰ N/m²) = 10. O aço é exatamente dez vezes mais rígido intrinsecamente do que o osso cortical (Slide 44: 'Módulo 10 vezes menor que o aço').",
     "distractorAnalysis": [
-      "Está incorreta: Encurtamento com aumento de secção é o efeito característico da compressão mecânica.",
-      "Está incorreta: Rotação sobre o próprio eixo é a deformação de torção provocada por um binário de momentos.",
-      "Está incorreta: A tração não transforma materiais reais em modelos teóricos indeformáveis de Euclides."
+      "Está incorreta: A diferença é de uma ordem de magnitude inteira (fator 10), não apenas fator 2.",
+      "Está incorreta: Fator 100 exigiria uma potência de 10¹² para o aço.",
+      "Está incorreta: Os valores diferem claramente em potência de 10 nos dados do slide."
     ],
-    "nursingApplication": "Comportamento de fios de sutura e ligamentos quando submetidos a forças de estiramento."
+    "nursingApplication": "Dado quantitativo essencial para compreender o desafio de compatibilidade mecânica em próteses ósseas de aço."
   },
   {
     "id": 2179,
     "topicId": 2,
-    "question": "No corpo humano, o fémur suporta o peso do tronco e dos membros superiores. Este esforço mecânico predominante é de:",
+    "question": "Num ensaio mecânico de tração com gráfico Tensão versus Deformação relativa (σ vs ε), o Módulo de Young E corresponde graficamente a:",
     "options": [
-      "Torção pura no vácuo.",
-      "Cisalhamento centrípeto nulo.",
-      "Radiação ionizante gama.",
-      "Compressão."
+      "À área total sob a curva do gráfico.",
+      "Ao valor da deformação no ponto onde a barra se parte.",
+      "À ordenada na origem onde a curva cruza o eixo vertical.",
+      "Ao declive (inclinação) da reta no regime elástico linear."
     ],
     "correctIndex": 3,
-    "explanation": "O peso corporal atua verticalmente de cima para baixo comprimindo o fémur contra a tíbia e o solo (forças convergentes).",
+    "explanation": "Como σ = E · ε, o gráfico de σ em função de ε é uma reta cuja equação tem declive igual a E (declive = Δσ / Δε = E). Quanto mais íngreme for a reta, mais rígido é o material.",
     "distractorAnalysis": [
-      "Está incorreta: O suporte de carga vertical é um esforço compressivo, não uma torção pura no vácuo.",
-      "Está incorreta: Cisalhamento centrípeto nulo é uma combinação fictícia de termos físicos.",
-      "Está incorreta: Radiação gama é uma emissão eletromagnética nuclear, não um esforço mecânico de carga."
+      "Está incorreta: A área sob a curva representa a densidade de energia de deformação (trabalho elástico), não o módulo E.",
+      "Está incorreta: O ponto de fratura define a deformação última de rotura, não o módulo de elasticidade.",
+      "Está incorreta: A reta passa pela origem (0,0), pelo que a ordenada na origem é zero."
     ],
-    "nursingApplication": "O osso cortical tem enorme resistência à compressão, sendo ideal para sustentar o peso corporal."
+    "nursingApplication": "Capacidade de interpretar curvas experimentais de ensaios de materiais biomecânicos."
   },
   {
     "id": 2180,
     "topicId": 2,
-    "question": "Quando um músculo se contrai e puxa um tendão ligado a um osso, o tendão fica sujeito predominantemente a uma força de:",
+    "question": "Por que razão o conhecimento do Módulo de Young é crucial na seleção de biomateriais para a construção de próteses de anca e fixadores ortopédicos?",
     "options": [
-      "Tração (tensão longitudinal).",
-      "Compressão convergente axial.",
-      "Flexão com eixo neutro central.",
-      "Desintegração atómica espontânea."
+      "Para escolher materiais com rigidez estrutural adequada que não sobrecarreguem excessivamente nem retirem o estímulo mecânico ao osso hospedeiro circundante.",
+      "Para garantir que a prótese se liquefaz a cada 24 horas no interior do organismo.",
+      "Para eliminar a gravidade dos membros inferiores do doente operado.",
+      "Para transformar o osso natural num corpo perfeitamente plástico de plasticina."
     ],
     "correctIndex": 0,
-    "explanation": "O músculo exerce forças divergentes sobre as extremidades do tendão, tracionando-o ao longo do seu eixo fibroso longitudinal.",
+    "explanation": "Se a prótese for dez vezes mais rígida que o osso (como o aço comum), suportará toda a carga sozinha (fenómeno de stress shielding), provocando reabsorção óssea; conhecer o Módulo de Young orienta o fabrico de implantes biomiméticos seguros.",
     "distractorAnalysis": [
-      "Está incorreta: Os tendões são estruturas flexíveis que suportam grandes forças de tração, mas dobram-se sob compressão.",
-      "Está incorreta: A flexão ocorre em barras suportadas sob forças perpendiculares, não em tendões alinhados com a tração muscular.",
-      "Está incorreta: Contração muscular mecânica não envolve desintegração atómica dos tecidos conjuntivos."
+      "Está incorreta: Biomateriais de prótese têm de manter solidez e durabilidade permanente no meio biológico.",
+      "Está incorreta: Nenhuma prótese anula as leis universais da gravidade de Newton.",
+      "Está incorreta: A medicina visa preservar a viscoelasticidade e mineralização saudável do osso vivo."
     ],
-    "nursingApplication": "A elevada resistência à tração do colagénio permite transmitir a força muscular às alavancas ósseas."
+    "nursingApplication": "Aplicação clínica real da biofísica de materiais na recuperação pós-operatória de doentes ortopédicos."
   },
   {
     "id": 2181,
     "topicId": 2,
-    "question": "Como se comparam os sentidos das forças aplicadas na Compressão e na Tração ao longo de um mesmo eixo linear?",
+    "question": "Qual é o valor do Módulo de Young e a descrição biomecânica do Aço apresentada na tabela do Slide 44?",
     "options": [
-      "Na compressão as forças apontam ambas para a direita; na tração apontam ambas para cima.",
-      "Na compressão as forças são convergentes (apontam para o interior do corpo); na tração são divergentes (apontam para fora).",
-      "Em ambas as deformações as forças são sempre convergentes com a mesma intensidade.",
-      "Na compressão as forças são perpendiculares à barra e na tração são paralelas ao solo."
+      "7 × 10¹⁰ N/m²; material extremamente flexível que fratura sem aviso.",
+      "20 × 10¹⁰ N/m²; material extremamente rígido; suporta esforços massivos com mínima deformação estrutural.",
+      "0,1 a 10 × 10⁷ N/m²; sofre grandes deformações sob cargas mínimas.",
+      "2 × 10¹⁰ N/m²; confere rigidez com capacidade de amortecimento elástico."
     ],
     "correctIndex": 1,
-    "explanation": "Conforme os slides 21 e 23, forças convergentes encurtam (compressão) e forças divergentes alongam (tração).",
+    "explanation": "O Slide 44 define textualmente: 'Aço (20 × 10¹⁰ N/m²): Material extremamente rígido; suporta esforços massivos com mínima deformação estrutural'.",
     "distractorAnalysis": [
-      "Está incorreta: Duas forças apontando no mesmo sentido aceleram o corpo em translação em vez de o deformar em tração ou compressão.",
-      "Está incorreta: A tração requer forças divergentes opostas; se fossem convergentes seria compressão.",
-      "Está incorreta: Forças perpendiculares produzem flexão ou cisalhamento, não esforços axiais de tração ou compressão."
+      "Está incorreta: 7 × 10¹⁰ N/m² é o valor e descrição do Vidro (Slide 44).",
+      "Está incorreta: 0,1 a 10 × 10⁷ N/m² é o valor da Borracha (Slide 44).",
+      "Está incorreta: 2 × 10¹⁰ N/m² é o valor do Osso cortical (Slide 44)."
     ],
-    "nursingApplication": "Distingue com clareza os dois esforços axiais mais comuns na mecânica das estruturas e tecidos."
+    "nursingApplication": "O aço é o padrão de referência máxima de rigidez elástica analisado na aula."
   },
   {
     "id": 2182,
     "topicId": 2,
-    "question": "Se uma barra de comprimento inicial L0 sofrer uma variação de comprimento ΔL negativa (ΔL < 0), isso significa que a barra sofreu:",
+    "question": "Qual é o valor do Módulo de Young e o comportamento mecânico do Vidro descrito no Slide 44?",
     "options": [
-      "Alongamento devido a uma força de tração.",
-      "Uma rotação de 360 graus por ação de torção pura.",
-      "Encurtamento devido a uma força de compressão.",
-      "Um aumento de noventa por cento na sua massa inercial."
+      "20 × 10¹⁰ N/m²; ductilidade extraordinária com grande deformação plástica.",
+      "7,5 × 10¹⁰ N/m²; metal nobre com elevada condução térmica.",
+      "7 × 10¹⁰ N/m²; elevada rigidez teórica; contudo, apresenta grande fragilidade e fratura sem deformação plástica.",
+      "0,1 × 10⁷ N/m²; comporta-se como massa de pão que escoa no tempo."
     ],
     "correctIndex": 2,
-    "explanation": "ΔL = L - L0. Se ΔL é negativo, o comprimento final é menor que o inicial (L < L0), caracterizando compressão.",
+    "explanation": "O Slide 44 explicita: 'Vidro (7 × 10¹⁰ N/m²): Elevada rigidez teórica; contudo, apresenta grande fragilidade e fratura sem deformação plástica'.",
     "distractorAnalysis": [
-      "Está incorreta: Se sofresse tração, o comprimento final seria maior que o inicial, resultando em ΔL positivo (ΔL > 0).",
-      "Está incorreta: A torção pura provoca rotação angular das secções sem alterar necessariamente o comprimento no regime linear.",
-      "Está incorreta: A massa da barra permanece rigorosamente constante independentemente de ser comprimida ou esticada."
+      "Está incorreta: 20 × 10¹⁰ N/m² é o módulo do aço, e o vidro não é dúctil.",
+      "Está incorreta: 7,5 × 10¹⁰ N/m² é o módulo da prata (Slide 44).",
+      "Está incorreta: 10⁷ N/m² é a ordem da borracha, e o vidro não é pastoso como pão."
     ],
-    "nursingApplication": "Convenção de sinais da mecânica: compressão corresponde a variações de comprimento negativas."
+    "nursingApplication": "Ensina aos estudantes que rigidez elevada (alto E) não significa tenacidade: o vidro é rígido mas quebra de forma frágil catastrófica."
   },
   {
     "id": 2183,
     "topicId": 2,
-    "question": "Na caracterização das deformações mecânicas (Slide 21), como são definidas as Forças de Compressão?",
+    "question": "Qual é o valor do Módulo de Young e a característica da Prata apresentada no Slide 44?",
     "options": [
-      "Forças divergentes que aumentam o comprimento e adelgaçam a área de secção transversal da barra.",
-      "Forças tangenciais paralelas que fazem deslizar duas superfícies planas opostas.",
-      "Momentos de rotação puros que provocam a torção em torno do eixo longitudinal.",
-      "Forças convergentes colineares que provocam diminuição do comprimento (L) e aumento da área de secção transversal (S)."
+      "2 × 10¹⁰ N/m²; comporta-se como tecido ósseo em amortecimento.",
+      "20 × 10¹⁰ N/m²; suporta esforços massivos sem qualquer flexibilidade.",
+      "10⁷ N/m²; sofre deformações reversíveis sob forças mínimas.",
+      "7,5 × 10¹⁰ N/m²; metal nobre com elevada rigidez mecânica e ductilidade sob solicitações controladas."
     ],
     "correctIndex": 3,
-    "explanation": "A compressão atua com forças convergentes (para dentro do corpo), encurtando o comprimento e alargando a secção transversal.",
+    "explanation": "O Slide 44 indica: 'Prata (7,5 × 10¹⁰ N/m²): Metal nobre com elevada rigidez mecânica e ductilidade sob solicitações controladas'.",
     "distractorAnalysis": [
-      "Está incorreta: Forças divergentes que aumentam o comprimento e diminuem a secção caracterizam a tração, não a compressão.",
-      "Está incorreta: Forças tangenciais paralelas em sentidos opostos definem o cisalhamento (corte).",
-      "Está incorreta: Momentos de rotação em torno do eixo longitudinal definem a torção mecânica."
+      "Está incorreta: 2 × 10¹⁰ N/m² é o módulo do osso cortical.",
+      "Está incorreta: 20 × 10¹⁰ N/m² é o módulo do aço.",
+      "Está incorreta: 10⁷ N/m² é o módulo da borracha."
     ],
-    "nursingApplication": "Os ossos dos membros inferiores e as vértebras suportam cargas predominantemente compressivas na marcha."
+    "nursingApplication": "Destaca a ductilidade da prata em contraste com a fragilidade do vidro, apesar de terem módulos de Young próximos (7,5 vs 7 × 10¹⁰)."
   },
   {
     "id": 2184,
     "topicId": 2,
-    "question": "Como são definidas as Forças de Tração na mecânica dos corpos elásticos (Slide 23)?",
+    "question": "Qual é o valor do Módulo de Young e a propriedade reológica da Borracha indicada no Slide 44?",
     "options": [
-      "Forças divergentes colineares que provocam aumento do comprimento (L) e diminuição da área de secção transversal (S).",
-      "Forças convergentes que diminuem o comprimento longitudinal e alargam a secção média.",
-      "Forças transversais perpendiculares que curvam as arestas retilíneas da barra.",
-      "Forças microscópicas puramente gravitacionais que atuam exclusivamente no vácuo espacial."
+      "Borracha (0,1 a 10 × 10⁷ N/m²): Módulo extremamente baixo; sofre grandes deformações elásticas reversíveis sob cargas mínimas.",
+      "Borracha (20 × 10¹⁰ N/m²): Material indeformável sob qualquer esforço de impacto.",
+      "Borracha (7 × 10¹⁰ N/m²): Fratura sem deformação plástica ao menor toque.",
+      "Borracha (7,5 × 10¹⁰ N/m²): Metal nobre para confecção de agulhas cirúrgicas."
     ],
     "correctIndex": 0,
-    "explanation": "A tração puxa as extremidades para fora com forças divergentes, alongando a barra e reduzindo a sua espessura transversal.",
+    "explanation": "O Slide 44 define formalmente: 'Borracha (0,1 a 10 × 10⁷ N/m²): Módulo extremamente baixo; sofre grandes deformações elásticas reversíveis sob cargas mínimas'.",
     "distractorAnalysis": [
-      "Está incorreta: Forças convergentes que encurtam a barra definem a compressão mecânica.",
-      "Está incorreta: Forças transversais que curvam arestas retilíneas definem a deformação de flexão.",
-      "Está incorreta: Forças no vácuo sem contacto não descrevem o esforço mecânico clássico de tração de sólidos."
+      "Está incorreta: 20 × 10¹⁰ N/m² é o módulo do aço rígido, o oposto da borracha flexível.",
+      "Está incorreta: 7 × 10¹⁰ N/m² é o módulo do vidro frágil.",
+      "Está incorreta: 7,5 × 10¹⁰ N/m² é a prata metálica."
     ],
-    "nursingApplication": "Tendões e ligamentos são estruturas especializadas em resistir a esforços de tração longitudinal."
+    "nursingApplication": "A base para compreender a flexibilidade de cateteres, tubos de drenagem e solas de calçado antiderrapante."
   },
   {
     "id": 2185,
     "topicId": 2,
-    "question": "Qual das seguintes alterações geométricas ocorre num cilindro sujeito a esforço axial de COMPRESSÃO?",
+    "question": "Qual é a ordenação decrescente CORRETA dos 5 materiais do Slide 44 segundo o seu Módulo de Young (da maior rigidez para a menor rigidez)?",
     "options": [
-      "O comprimento longitudinal aumenta e o diâmetro transversal diminui.",
-      "O comprimento longitudinal diminui e o diâmetro transversal aumenta.",
-      "O cilindro curva-se instantaneamente num semicírculo perfeito sem alterar o diâmetro.",
-      "O volume do cilindro reduz-se para zero sem qualquer alteração das suas dimensões."
+      "Borracha > Osso > Vidro > Prata > Aço",
+      "Aço (20 × 10¹⁰) > Prata (7,5 × 10¹⁰) > Vidro (7 × 10¹⁰) > Osso (2 × 10¹⁰) > Borracha (0,1 a 10 × 10⁷)",
+      "Vidro > Borracha > Aço > Prata > Osso",
+      "Osso > Aço > Prata > Vidro > Borracha"
     ],
     "correctIndex": 1,
-    "explanation": "Ao comprimir axialmente, as partículas aproximam-se na direção da força, encurtando a barra e expandindo-a lateralmente.",
+    "explanation": "Comparando os expoentes e coeficientes do Slide 44: Aço (20 × 10¹⁰) > Prata (7,5 × 10¹⁰) > Vidro (7 × 10¹⁰) > Osso (2 × 10¹⁰) > Borracha (10⁷ a 10⁸).",
     "distractorAnalysis": [
-      "Está incorreta: Aumento de comprimento com diminuição de diâmetro é o efeito característico da tração mecânica.",
-      "Está incorreta: Curvar-se em semicírculo sob força transversal caracteriza flexão, não compressão axial pura.",
-      "Está incorreta: O volume de um sólido real não se reduz a zero sob compressão elástica ou plástica."
+      "Está incorreta: Esta é a ordem crescente inversa, da menor para a maior rigidez.",
+      "Está incorreta: O aço é muito mais rígido que o vidro e a borracha tem o módulo mais baixo de todos.",
+      "Está incorreta: O módulo do osso é dez vezes inferior ao do aço."
     ],
-    "nursingApplication": "Explica o achatamento elástico microscópico dos discos intervertebrais sob o peso do corpo durante o dia."
+    "nursingApplication": "Exercício clássico de ordenação e comparação de grandezas físicas muito cobrado em frequências."
   },
   {
     "id": 2186,
     "topicId": 2,
-    "question": "Qual das seguintes alterações geométricas ocorre numa barra elástica sujeita a esforço de TRAÇÃO?",
+    "question": "Por que razão o Vidro, apesar de possuir um elevado Módulo de Young de 7 × 10¹⁰ N/m² (superior ao do osso), não é utilizado para próteses de suporte de carga?",
     "options": [
-      "O comprimento longitudinal diminui e a área da secção transversal aumenta.",
-      "A barra roda continuamente sobre o seu eixo central mantendo o comprimento constante.",
-      "O comprimento longitudinal aumenta e a área da secção transversal diminui.",
-      "A barra transforma-se num sólido indeformável de Euclides em equilíbrio térmico."
+      "Porque o vidro é líquido à temperatura ambiente e escorreria pelo corpo.",
+      "Porque o vidro perde toda a sua massa em contacto com o sangue.",
+      "Porque apresenta grande fragilidade mecânica e fratura repentinamente sem aviso ou deformação plástica prévia (Slide 44).",
+      "Porque o vidro repele o campo gravitacional terrestre."
     ],
     "correctIndex": 2,
-    "explanation": "Sob tração axial, as extremidades afastam-se (alongamento ΔL > 0) e a secção transversal adelgaça-se lateralmente.",
+    "explanation": "Conforme salienta o Slide 44, a elevada rigidez do vidro é acompanhada de 'grande fragilidade e fratura sem deformação plástica'. Qualquer impacto dinâmico ou microfissura causa fragmentação catastrófica súbita.",
     "distractorAnalysis": [
-      "Está incorreta: Encurtamento com aumento de secção é o efeito característico da compressão mecânica.",
-      "Está incorreta: Rotação sobre o próprio eixo é a deformação de torção provocada por um binário de momentos.",
-      "Está incorreta: A tração não transforma materiais reais em modelos teóricos indeformáveis de Euclides."
+      "Está incorreta: O vidro é um sólido rígido à temperatura ambiente de 37 ºC.",
+      "Está incorreta: O vidro não se dissolve nem perde massa em contacto com fluidos corporais.",
+      "Está incorreta: O vidro é atraído normalmente pela gravidade segundo P = m · g."
     ],
-    "nursingApplication": "Comportamento de fios de sutura e ligamentos quando submetidos a forças de estiramento."
+    "nursingApplication": "Distingue os conceitos de rigidez (módulo elástico) e fragilidade estrutural em contexto cirúrgico."
   },
   {
     "id": 2187,
     "topicId": 2,
-    "question": "No corpo humano, o fémur suporta o peso do tronco e dos membros superiores. Este esforço mecânico predominante é de:",
+    "question": "Qual dos materiais da tabela do Slide 44 apresenta a MAIOR capacidade de sofrer grandes deformações elásticas reversíveis sob cargas mecânicas mínimas?",
     "options": [
-      "Torção pura no vácuo.",
-      "Cisalhamento centrípeto nulo.",
-      "Radiação ionizante gama.",
-      "Compressão."
+      "Aço.",
+      "Vidro.",
+      "Prata.",
+      "Borracha (devido ao seu módulo extremamente baixo de 0,1 a 10 × 10⁷ N/m²)."
     ],
     "correctIndex": 3,
-    "explanation": "O peso corporal atua verticalmente de cima para baixo comprimindo o fémur contra a tíbia e o solo (forças convergentes).",
+    "explanation": "A Borracha situa-se na gama de 10⁷ N/m², sendo mil a dez mil vezes mais flexível que o aço e o osso: pequenas forças produzem alongamentos elásticos dezenas de vezes superiores com reversibilidade integral (Slide 44).",
     "distractorAnalysis": [
-      "Está incorreta: O suporte de carga vertical é um esforço compressivo, não uma torção pura no vácuo.",
-      "Está incorreta: Cisalhamento centrípeto nulo é uma combinação fictícia de termos físicos.",
-      "Está incorreta: Radiação gama é uma emissão eletromagnética nuclear, não um esforço mecânico de carga."
+      "Está incorreta: O aço exige esforços gigantescos para sofrer deformações microscópicas.",
+      "Está incorreta: O vidro quebra de forma frágil antes de deformar extensamente.",
+      "Está incorreta: A prata é um metal rígido com módulo de 7,5 × 10¹⁰ N/m²."
     ],
-    "nursingApplication": "O osso cortical tem enorme resistência à compressão, sendo ideal para sustentar o peso corporal."
+    "nursingApplication": "Justifica a seleção da borracha e silicones médicos para tubagens flexíveis e coxins de conforto."
   },
   {
     "id": 2188,
     "topicId": 2,
-    "question": "Quando um músculo se contrai e puxa um tendão ligado a um osso, o tendão fica sujeito predominantemente a uma força de:",
+    "question": "A Prata (7,5 × 10¹⁰ N/m²) tem um módulo muito semelhante ao do Vidro (7 × 10¹⁰ N/m²). Qual é a diferença fundamental no comportamento mecânico de ambas indicada no Slide 44?",
     "options": [
-      "Tração (tensão longitudinal).",
-      "Compressão convergente axial.",
-      "Flexão com eixo neutro central.",
-      "Desintegração atómica espontânea."
+      "A prata é dúctil sob solicitações mecânicas, enquanto o vidro apresenta grande fragilidade e fratura sem deformação plástica.",
+      "A prata comporta-se como água e o vidro como mola de Hooke.",
+      "A prata nunca se deforma e o vidro evapora-se no vácuo.",
+      "Ambos têm comportamento rigorosamente idêntico em todas as situações."
     ],
     "correctIndex": 0,
-    "explanation": "O músculo exerce forças divergentes sobre as extremidades do tendão, tracionando-o ao longo do seu eixo fibroso longitudinal.",
+    "explanation": "O Slide 44 destaca a ductilidade da prata (capacidade de deformar-se plasticamente sem quebrar de imediato) em oposição direta à fragilidade do vidro, que quebra abruptamente sem aviso.",
     "distractorAnalysis": [
-      "Está incorreta: Os tendões são estruturas flexíveis que suportam grandes forças de tração, mas dobram-se sob compressão.",
-      "Está incorreta: A flexão ocorre em barras suportadas sob forças perpendiculares, não em tendões alinhados com a tração muscular.",
-      "Está incorreta: Contração muscular mecânica não envolve desintegração atómica dos tecidos conjuntivos."
+      "Está incorreta: Ambos são materiais sólidos estruturais, não fluidos aquosos.",
+      "Está incorreta: A prata é deformável sob forças mecânicas suficientes e o vidro não evapora espontaneamente.",
+      "Está incorreta: A ductilidade metálica da prata distingue-a frontalmente da fragilidade do vidro."
     ],
-    "nursingApplication": "A elevada resistência à tração do colagénio permite transmitir a força muscular às alavancas ósseas."
+    "nursingApplication": "Diferenciação qualitativa essencial entre ductilidade e fragilidade na resistência dos materiais."
   },
   {
     "id": 2189,
     "topicId": 2,
-    "question": "Como se comparam os sentidos das forças aplicadas na Compressão e na Tração ao longo de um mesmo eixo linear?",
+    "question": "Em que ordem de grandeza de potências de base dez estão expressos os Módulos de Young do Aço, Prata, Vidro e Osso no Slide 44?",
     "options": [
-      "Na compressão as forças apontam ambas para a direita; na tração apontam ambas para cima.",
-      "Na compressão as forças são convergentes (apontam para o interior do corpo); na tração são divergentes (apontam para fora).",
-      "Em ambas as deformações as forças são sempre convergentes com a mesma intensidade.",
-      "Na compressão as forças são perpendiculares à barra e na tração são paralelas ao solo."
+      "Na ordem de 10³ N/m².",
+      "Na ordem de 10¹⁰ N/m² (dezenas a centenas de GigaPascals).",
+      "Na ordem de 10⁻⁵ N/m².",
+      "Na ordem de 10²⁰ N/m²."
     ],
     "correctIndex": 1,
-    "explanation": "Conforme os slides 21 e 23, forças convergentes encurtam (compressão) e forças divergentes alongam (tração).",
+    "explanation": "Os 4 materiais sólidos rígidos do Slide 44 são expressos em potências de dez de 10¹⁰ N/m²: Aço (20 × 10¹⁰), Prata (7,5 × 10¹⁰), Vidro (7 × 10¹⁰) e Osso (2 × 10¹⁰). Apenas a borracha baixa para 10⁷ N/m².",
     "distractorAnalysis": [
-      "Está incorreta: Duas forças apontando no mesmo sentido aceleram o corpo em translação em vez de o deformar em tração ou compressão.",
-      "Está incorreta: A tração requer forças divergentes opostas; se fossem convergentes seria compressão.",
-      "Está incorreta: Forças perpendiculares produzem flexão ou cisalhamento, não esforços axiais de tração ou compressão."
+      "Está incorreta: 10³ N/m² é a ordem de grandeza de espumas extremamente brandas, não de metais ou osso.",
+      "Está incorreta: Potências negativas descrevem grandezas infinitesimais, não módulos de rigidez macroscópicos.",
+      "Está incorreta: 10²⁰ N/m² seria uma rigidez astronomicamente impossível em materiais da física terrestre."
     ],
-    "nursingApplication": "Distingue com clareza os dois esforços axiais mais comuns na mecânica das estruturas e tecidos."
+    "nursingApplication": "Fixa a escala numérica exata utilizada nos cálculos e tabelas do docente."
   },
   {
     "id": 2190,
     "topicId": 2,
-    "question": "Se uma barra de comprimento inicial L0 sofrer uma variação de comprimento ΔL negativa (ΔL < 0), isso significa que a barra sofreu:",
+    "question": "Se aplicarmos a MESMA tensão mecânica axial de σ = 10 MPa a um bloco de Aço e a um bloco de Borracha, o que se observa quanto à deformação relativa sofrida (Slide 44)?",
     "options": [
-      "Alongamento devido a uma força de tração.",
-      "Uma rotação de 360 graus por ação de torção pura.",
-      "Encurtamento devido a uma força de compressão.",
-      "Um aumento de noventa por cento na sua massa inercial."
+      "Ambos sofrem rigorosamente a mesma deformação relativa de 1%.",
+      "O bloco de aço deforma-se mil vezes mais do que o de borracha.",
+      "O bloco de borracha sofre uma deformação relativa ordens de magnitude superior à do bloco de aço (ε = σ / E).",
+      "O bloco de borracha permanece inalterado e o aço funde instantaneamente."
     ],
     "correctIndex": 2,
-    "explanation": "ΔL = L - L0. Se ΔL é negativo, o comprimento final é menor que o inicial (L < L0), caracterizando compressão.",
+    "explanation": "Como ε = σ / E e o Módulo de Young do aço (20 × 10¹⁰ N/m²) é cerca de 10 000 vezes superior ao da borracha (~10⁷ N/m²), para a mesma tensão a borracha estica milhares de vezes mais que o aço.",
     "distractorAnalysis": [
-      "Está incorreta: Se sofresse tração, o comprimento final seria maior que o inicial, resultando em ΔL positivo (ΔL > 0).",
-      "Está incorreta: A torção pura provoca rotação angular das secções sem alterar necessariamente o comprimento no regime linear.",
-      "Está incorreta: A massa da barra permanece rigorosamente constante independentemente de ser comprimida ou esticada."
+      "Está incorreta: Deformações iguais exigiriam Módulos de Young idênticos, o que não se verifica.",
+      "Está incorreta: Materiais com maior E deformam-se muito menos para a mesma tensão, nunca mais.",
+      "Está incorreta: Nenhum dos materiais sofre fusão térmica sob carregamento mecânico de 10 MPa."
     ],
-    "nursingApplication": "Convenção de sinais da mecânica: compressão corresponde a variações de comprimento negativas."
+    "nursingApplication": "Demonstração prática da aplicação da fórmula ε = σ / E com os dados da tabela de Paulo Pereira."
   },
   {
     "id": 2191,
     "topicId": 2,
-    "question": "Na caracterização das deformações mecânicas (Slide 21), como são definidas as Forças de Compressão?",
+    "question": "Qual é o valor exato do Módulo de Young do Osso cortical indicado na tabela comparativa do Slide 44?",
     "options": [
-      "Forças divergentes que aumentam o comprimento e adelgaçam a área de secção transversal da barra.",
-      "Forças tangenciais paralelas que fazem deslizar duas superfícies planas opostas.",
-      "Momentos de rotação puros que provocam a torção em torno do eixo longitudinal.",
-      "Forças convergentes colineares que provocam diminuição do comprimento (L) e aumento da área de secção transversal (S)."
+      "20 × 10¹⁰ N/m²",
+      "7,5 × 10¹⁰ N/m²",
+      "0,1 × 10⁷ N/m²",
+      "2 × 10¹⁰ N/m²"
     ],
     "correctIndex": 3,
-    "explanation": "A compressão atua com forças convergentes (para dentro do corpo), encurtando o comprimento e alargando a secção transversal.",
+    "explanation": "O Slide 44 estabelece expressamente na sua linha dedicada ao tecido ósseo: 'Osso (2 × 10¹⁰ N/m²): Módulo 10 vezes menor que o aço; confere rigidez com extraordinária capacidade elástica de amortecimento'.",
     "distractorAnalysis": [
-      "Está incorreta: Forças divergentes que aumentam o comprimento e diminuem a secção caracterizam a tração, não a compressão.",
-      "Está incorreta: Forças tangenciais paralelas em sentidos opostos definem o cisalhamento (corte).",
-      "Está incorreta: Momentos de rotação em torno do eixo longitudinal definem a torção mecânica."
+      "Está incorreta: 20 × 10¹⁰ N/m² é o Módulo do Aço (Slide 44).",
+      "Está incorreta: 7,5 × 10¹⁰ N/m² é o Módulo da Prata (Slide 44).",
+      "Está incorreta: 0,1 × 10⁷ N/m² é o limite inferior do Módulo da Borracha (Slide 44)."
     ],
-    "nursingApplication": "Os ossos dos membros inferiores e as vértebras suportam cargas predominantemente compressivas na marcha."
+    "nursingApplication": "O valor numérico central da biomecânica do tecido ósseo humano nos slides de Biofísica."
   },
   {
     "id": 2192,
     "topicId": 2,
-    "question": "Como são definidas as Forças de Tração na mecânica dos corpos elásticos (Slide 23)?",
+    "question": "Como compara o Slide 44 a rigidez do Osso com a do Aço e que propriedade biomecânica crucial lhe atribui?",
     "options": [
-      "Forças divergentes colineares que provocam aumento do comprimento (L) e diminuição da área de secção transversal (S).",
-      "Forças convergentes que diminuem o comprimento longitudinal e alargam a secção média.",
-      "Forças transversais perpendiculares que curvam as arestas retilíneas da barra.",
-      "Forças microscópicas puramente gravitacionais que atuam exclusivamente no vácuo espacial."
+      "'Módulo 10 vezes menor que o aço; confere rigidez com extraordinária capacidade elástica de amortecimento.'",
+      "'Módulo 10 vezes maior que o aço; confere fragilidade instantânea com quebra catastrófica.'",
+      "'Módulo rigorosamente idêntico ao do aço; comporta-se como metal puro no esqueleto.'",
+      "'Módulo nulo; comporta-se como mel ou água em escoamento livre no membro.'"
     ],
     "correctIndex": 0,
-    "explanation": "A tração puxa as extremidades para fora com forças divergentes, alongando a barra e reduzindo a sua espessura transversal.",
+    "explanation": "O Slide 44 explicita textualmente a grande vantagem biológica: 'Osso (2 × 10¹⁰ N/m²): Módulo 10 vezes menor que o aço; confere rigidez com extraordinária capacidade elástica de amortecimento'.",
     "distractorAnalysis": [
-      "Está incorreta: Forças convergentes que encurtam a barra definem a compressão mecânica.",
-      "Está incorreta: Forças transversais que curvam arestas retilíneas definem a deformação de flexão.",
-      "Está incorreta: Forças no vácuo sem contacto não descrevem o esforço mecânico clássico de tração de sólidos."
+      "Está incorreta: O osso tem módulo menor que o aço (2 vs 20), não maior.",
+      "Está incorreta: O osso é 10 vezes menos rígido que o aço, o que lhe permite ser mais complacente e amortecer choques.",
+      "Está incorreta: O osso é um tecido conjuntivo mineralizado sólido com rigidez de 2 × 10¹⁰ N/m²."
     ],
-    "nursingApplication": "Tendões e ligamentos são estruturas especializadas em resistir a esforços de tração longitudinal."
+    "nursingApplication": "Conceito primordial que une a física dos materiais à adaptação funcional do esqueleto humano."
   },
   {
     "id": 2193,
     "topicId": 2,
-    "question": "Qual das seguintes alterações geométricas ocorre num cilindro sujeito a esforço axial de COMPRESSÃO?",
+    "question": "Por que razão a 'extraordinária capacidade elástica de amortecimento' do osso cortical é uma vantagem evolutiva vital para o ser humano?",
     "options": [
-      "O comprimento longitudinal aumenta e o diâmetro transversal diminui.",
-      "O comprimento longitudinal diminui e o diâmetro transversal aumenta.",
-      "O cilindro curva-se instantaneamente num semicírculo perfeito sem alterar o diâmetro.",
-      "O volume do cilindro reduz-se para zero sem qualquer alteração das suas dimensões."
+      "Porque permite ao fémur encolher 50 cm para que a pessoa caiba em camas pequenas.",
+      "Porque permite ao esqueleto sofrer microdeformações reversíveis durante a marcha e salto, absorvendo a energia cinética dos impactos sem sofrer fratura.",
+      "Porque anula a força da gravidade nos membros inferiores durante a locomoção.",
+      "Porque transforma o esqueleto humano num sistema puramente líquido de alta densidade."
     ],
     "correctIndex": 1,
-    "explanation": "Ao comprimir axialmente, as partículas aproximam-se na direção da força, encurtando a barra e expandindo-a lateralmente.",
+    "explanation": "Se o osso fosse infinitamente rígido, não absorveria energia mecânica elástica e transmitiria impactos destrutivos às articulações e cérebro. A sua capacidade de amortecimento dissipa choques preservando a integridade do corpo.",
     "distractorAnalysis": [
-      "Está incorreta: Aumento de comprimento com diminuição de diâmetro é o efeito característico da tração mecânica.",
-      "Está incorreta: Curvar-se em semicírculo sob força transversal caracteriza flexão, não compressão axial pura.",
-      "Está incorreta: O volume de um sólido real não se reduz a zero sob compressão elástica ou plástica."
+      "Está incorreta: As deformações fisiológicas normais são microscópicas (fracções de milímetro), não encurtamentos de 50 cm.",
+      "Está incorreta: O peso do corpo continua a atuar plenamente segundo as leis da gravitação de Newton.",
+      "Está incorreta: O esqueleto permanece estruturalmente sólido e resistente."
     ],
-    "nursingApplication": "Explica o achatamento elástico microscópico dos discos intervertebrais sob o peso do corpo durante o dia."
+    "nursingApplication": "Explica a resistência e durabilidade dos ossos humanos ao longo de décadas de marcha e esforços mecânicos."
   },
   {
     "id": 2194,
     "topicId": 2,
-    "question": "Qual das seguintes alterações geométricas ocorre numa barra elástica sujeita a esforço de TRAÇÃO?",
+    "question": "Se os ossos humanos tivessem o Módulo de Young do Aço (20 × 10¹⁰ N/m²), qual seria o grave prejuízo biomecânico para o organismo?",
     "options": [
-      "O comprimento longitudinal diminui e a área da secção transversal aumenta.",
-      "A barra roda continuamente sobre o seu eixo central mantendo o comprimento constante.",
-      "O comprimento longitudinal aumenta e a área da secção transversal diminui.",
-      "A barra transforma-se num sólido indeformável de Euclides em equilíbrio térmico."
+      "Os ossos dobrariam sob o próprio peso do corpo como borracha vulcanizada.",
+      "O esqueleto passaria a ser indeformável no vácuo e perderia toda a massa.",
+      "O esqueleto seria excessivamente rígido e incapaz de amortecer impactos elásticos, transmitindo choques severos às articulações e sofrendo fadiga por falta de complacência biológica.",
+      "A força muscular do bíceps seria reduzida a zero Newtons por incompatibilidade de Hooke."
     ],
     "correctIndex": 2,
-    "explanation": "Sob tração axial, as extremidades afastam-se (alongamento ΔL > 0) e a secção transversal adelgaça-se lateralmente.",
+    "explanation": "Com a rigidez excessiva do aço (dez vezes superior), a capacidade de amortecimento elástico de choques desapareceria; as forças de impacto da marcha seriam transmitidas brutalmente às cartilagens articulares e coluna, provocando artrose precoce e microfraturas.",
     "distractorAnalysis": [
-      "Está incorreta: Encurtamento com aumento de secção é o efeito característico da compressão mecânica.",
-      "Está incorreta: Rotação sobre o próprio eixo é a deformação de torção provocada por um binário de momentos.",
-      "Está incorreta: A tração não transforma materiais reais em modelos teóricos indeformáveis de Euclides."
+      "Está incorreta: Dobrar como borracha ocorreria se o osso tivesse o módulo baixo da borracha (10⁷), não o do aço rígido.",
+      "Está incorreta: O aço é deformável sob tensões e possui massa inercial substancial.",
+      "Está incorreta: A contração muscular é independente da rigidez do implante, embora a alavanca respondesse com excessiva rigidez."
     ],
-    "nursingApplication": "Comportamento de fios de sutura e ligamentos quando submetidos a forças de estiramento."
+    "nursingApplication": "Compreensão avançada de biofísica sobre o equilíbrio ótimo entre rigidez mecânica e amortecimento elástico."
   },
   {
     "id": 2195,
     "topicId": 2,
-    "question": "No corpo humano, o fémur suporta o peso do tronco e dos membros superiores. Este esforço mecânico predominante é de:",
+    "question": "Se os ossos humanos tivessem o Módulo de Young da Borracha (0,1 a 10 × 10⁷ N/m²), o que aconteceria ao corpo humano na postura ereta?",
     "options": [
-      "Torção pura no vácuo.",
-      "Cisalhamento centrípeto nulo.",
-      "Radiação ionizante gama.",
-      "Compressão."
+      "Caminharia dez vezes mais depressa do que um veículo em marcha de emergência.",
+      "Teria ossos perfeitamente indeformáveis de Euclides.",
+      "O esqueleto flutuaria no ar por ausência de forças convergentes de compressão.",
+      "O esqueleto colapsaria e dobrar-se-ia sob o próprio peso corporal, sendo incapaz de sustentar a postura bípede ereta e proteger os órgãos internos."
     ],
     "correctIndex": 3,
-    "explanation": "O peso corporal atua verticalmente de cima para baixo comprimindo o fémur contra a tíbia e o solo (forças convergentes).",
+    "explanation": "Com um módulo de rigidez mil a dez mil vezes menor que o osso natural, as pernas deformar-se-iam extensamente como mangueiras de borracha sob o peso do tronco (σ = E · ε => ε gigantesco), inviabilizando a locomoção bípede.",
     "distractorAnalysis": [
-      "Está incorreta: O suporte de carga vertical é um esforço compressivo, não uma torção pura no vácuo.",
-      "Está incorreta: Cisalhamento centrípeto nulo é uma combinação fictícia de termos físicos.",
-      "Está incorreta: Radiação gama é uma emissão eletromagnética nuclear, não um esforço mecânico de carga."
+      "Está incorreta: Sem suporte esquelético rígido para fixação das alavancas musculares, a marcha seria impossível.",
+      "Está incorreta: Borracha é altamente deformável, o oposto de sólidos indeformáveis.",
+      "Está incorreta: A gravidade terrestre atuaria puxando o corpo para o solo com P = m · g."
     ],
-    "nursingApplication": "O osso cortical tem enorme resistência à compressão, sendo ideal para sustentar o peso corporal."
+    "nursingApplication": "Demonstra que o osso necessita de um módulo de rigidez elevado (2 × 10¹⁰ N/m²) para fornecer suporte mecânico estável."
   },
   {
     "id": 2196,
     "topicId": 2,
-    "question": "Quando um músculo se contrai e puxa um tendão ligado a um osso, o tendão fica sujeito predominantemente a uma força de:",
+    "question": "Comparando os valores do Slide 44, como se situa o Módulo de Young do Osso (2 × 10¹⁰ N/m²) relativamente ao do Vidro (7 × 10¹⁰ N/m²) e da Prata (7,5 × 10¹⁰ N/m²)?",
     "options": [
-      "Tração (tensão longitudinal).",
-      "Compressão convergente axial.",
-      "Flexão com eixo neutro central.",
-      "Desintegração atómica espontânea."
+      "É cerca de 3,5 vezes menor do que o do vidro e da prata, conferindo-lhe maior flexibilidade e complacência elástica de amortecimento.",
+      "É cem vezes superior ao do vidro e da prata combinados.",
+      "É rigorosamente idêntico ao do vidro e da prata sem qualquer variação.",
+      "É inferior ao da borracha vulcanizada de baixa rigidez."
     ],
     "correctIndex": 0,
-    "explanation": "O músculo exerce forças divergentes sobre as extremidades do tendão, tracionando-o ao longo do seu eixo fibroso longitudinal.",
+    "explanation": "Dividindo 7 × 10¹⁰ por 2 × 10¹⁰ obtém-se exatamente 3,5. O osso é cerca de três vezes e meia menos rígido que o vidro e a prata, o que lhe confere a flexibilidade necessária para amortecer choques sem fratura frágil.",
     "distractorAnalysis": [
-      "Está incorreta: Os tendões são estruturas flexíveis que suportam grandes forças de tração, mas dobram-se sob compressão.",
-      "Está incorreta: A flexão ocorre em barras suportadas sob forças perpendiculares, não em tendões alinhados com a tração muscular.",
-      "Está incorreta: Contração muscular mecânica não envolve desintegração atómica dos tecidos conjuntivos."
+      "Está incorreta: O osso tem módulo menor (2 vs 7 e 7,5), nunca cem vezes superior.",
+      "Está incorreta: Os valores são distintos: 2 × 10¹⁰ vs 7 × 10¹⁰ e 7,5 × 10¹⁰ N/m².",
+      "Está incorreta: O módulo do osso (10¹⁰) é centenas de vezes maior que o da borracha (10⁷)."
     ],
-    "nursingApplication": "A elevada resistência à tração do colagénio permite transmitir a força muscular às alavancas ósseas."
+    "nursingApplication": "Consolida a escala comparativa quantitativa entre biomateriais naturais e metais/cerâmicos."
   },
   {
     "id": 2197,
     "topicId": 2,
-    "question": "Como se comparam os sentidos das forças aplicadas na Compressão e na Tração ao longo de um mesmo eixo linear?",
+    "question": "Nos cuidados de enfermagem e reabilitação motora pós-fratura, compreender o Módulo de Young do osso ajuda a fundamentar cientificamente:",
     "options": [
-      "Na compressão as forças apontam ambas para a direita; na tração apontam ambas para cima.",
-      "Na compressão as forças são convergentes (apontam para o interior do corpo); na tração são divergentes (apontam para fora).",
-      "Em ambas as deformações as forças são sempre convergentes com a mesma intensidade.",
-      "Na compressão as forças são perpendiculares à barra e na tração são paralelas ao solo."
+      "A necessidade de repouso absoluto no leito sem qualquer carga durante 10 anos seguidos.",
+      "A importância da carga mecânica gradual controlada e mobilização precoce, que gera microdeformações elásticas necessárias para estimular a consolidação e remodelação óssea.",
+      "A proibição definitiva de o doente voltar a colocar os pés no chão da enfermaria.",
+      "A substituição de todos os ossos do corpo por tubos ocos de vidro frágil."
     ],
     "correctIndex": 1,
-    "explanation": "Conforme os slides 21 e 23, forças convergentes encurtam (compressão) e forças divergentes alongam (tração).",
+    "explanation": "O tecido ósseo vivo responde a microdeformações elásticas mecânicas diárias (Lei de Wolff): a aplicação de carga gradual estimula os osteoblastos e a deposição mineral orientada, reforçando a rigidez elástica do calo ósseo.",
     "distractorAnalysis": [
-      "Está incorreta: Duas forças apontando no mesmo sentido aceleram o corpo em translação em vez de o deformar em tração ou compressão.",
-      "Está incorreta: A tração requer forças divergentes opostas; se fossem convergentes seria compressão.",
-      "Está incorreta: Forças perpendiculares produzem flexão ou cisalhamento, não esforços axiais de tração ou compressão."
+      "Está incorreta: Imobilização prolongada de anos causa osteoporose severa por desuso mecânico (perda de densidade mineral).",
+      "Está incorreta: A marcha precoce assistida é a regra de ouro na reabilitação moderna de fraturas.",
+      "Está incorreta: O vidro é frágil e perigoso, nunca sendo usado para substituir ossos inteiros."
     ],
-    "nursingApplication": "Distingue com clareza os dois esforços axiais mais comuns na mecânica das estruturas e tecidos."
+    "nursingApplication": "Justificação biofísica direta dos planos de reabilitação e marcha assistida em enfermagem ortopédica."
   },
   {
     "id": 2198,
     "topicId": 2,
-    "question": "Se uma barra de comprimento inicial L0 sofrer uma variação de comprimento ΔL negativa (ΔL < 0), isso significa que a barra sofreu:",
+    "question": "Sob uma tensão fisiológica de compressão de σ = 20 MPa (20 × 10⁶ N/m²), qual é a deformação relativa ε sofrida por um fémur com Módulo de Young E = 2 × 10¹⁰ N/m²?",
     "options": [
-      "Alongamento devido a uma força de tração.",
-      "Uma rotação de 360 graus por ação de torção pura.",
-      "Encurtamento devido a uma força de compressão.",
-      "Um aumento de noventa por cento na sua massa inercial."
+      "ε = 10% (0,10)",
+      "ε = 0,00001% (10⁻⁷)",
+      "ε = 0,1% (0,001 ou 1 × 10⁻³)",
+      "ε = 50% (metade do comprimento do fémur)"
     ],
     "correctIndex": 2,
-    "explanation": "ΔL = L - L0. Se ΔL é negativo, o comprimento final é menor que o inicial (L < L0), caracterizando compressão.",
+    "explanation": "Aplicando ε = σ / E: ε = (20 × 10⁶ N/m²) / (2 × 10¹⁰ N/m²) = 10 × 10⁻⁴ = 0,001 = 0,1%. O osso encurta apenas uma milésima parte do seu comprimento inicial (ex.: 0,4 mm num fémur de 40 cm), garantindo rigidez com amortecimento.",
     "distractorAnalysis": [
-      "Está incorreta: Se sofresse tração, o comprimento final seria maior que o inicial, resultando em ΔL positivo (ΔL > 0).",
-      "Está incorreta: A torção pura provoca rotação angular das secções sem alterar necessariamente o comprimento no regime linear.",
-      "Está incorreta: A massa da barra permanece rigorosamente constante independentemente de ser comprimida ou esticada."
+      "Está incorreta: 10% seria uma deformação colossal (4 cm num fémur), que provocaria fratura imediata.",
+      "Está incorreta: 10⁻⁷ é uma ordem de grandeza excessivamente pequena incompatível com os dados do problema.",
+      "Está incorreta: 50% de deformação ocorreria apenas em materiais extremamente flexíveis como borracha mole."
     ],
-    "nursingApplication": "Convenção de sinais da mecânica: compressão corresponde a variações de comprimento negativas."
+    "nursingApplication": "Cálculo biomecânico real demonstrando a magnitude das microdeformações fisiológicas do esqueleto durante a marcha."
   },
   {
     "id": 2199,
     "topicId": 2,
-    "question": "Na caracterização das deformações mecânicas (Slide 21), como são definidas as Forças de Compressão?",
+    "question": "Qual é a síntese biomimética fundamental do tecido ósseo cortical humano expressa nos Slides 43 e 44?",
     "options": [
-      "Forças divergentes que aumentam o comprimento e adelgaçam a área de secção transversal da barra.",
-      "Forças tangenciais paralelas que fazem deslizar duas superfícies planas opostas.",
-      "Momentos de rotação puros que provocam a torção em torno do eixo longitudinal.",
-      "Forças convergentes colineares que provocam diminuição do comprimento (L) e aumento da área de secção transversal (S)."
+      "É um material indeformável de Euclides com módulo infinito.",
+      "É um fluido viscoso de escoamento livre com Módulo de Young nulo.",
+      "É um sólido frágil que quebra sem aviso sob qualquer pressão leve.",
+      "Une de forma notável elevada rigidez de sustentação estrutural com extraordinária capacidade elástica de amortecimento de impactos (E = 2 × 10¹⁰ N/m²)."
     ],
     "correctIndex": 3,
-    "explanation": "A compressão atua com forças convergentes (para dentro do corpo), encurtando o comprimento e alargando a secção transversal.",
+    "explanation": "O Slide 44 conclui com a síntese de excelência: 'Osso (2 × 10¹⁰ N/m²): Módulo 10 vezes menor que o aço; confere rigidez com extraordinária capacidade elástica de amortecimento'.",
     "distractorAnalysis": [
-      "Está incorreta: Forças divergentes que aumentam o comprimento e diminuem a secção caracterizam a tração, não a compressão.",
-      "Está incorreta: Forças tangenciais paralelas em sentidos opostos definem o cisalhamento (corte).",
-      "Está incorreta: Momentos de rotação em torno do eixo longitudinal definem a torção mecânica."
+      "Está incorreta: O osso deforma-se reversivelmente no regime elástico fisiológico, não sendo indeformável.",
+      "Está incorreta: O osso cortical é sólido mineralizado e não um fluido viscoso como o mel ou a água.",
+      "Está incorreta: O osso é tenaz e amortece impactos, ao contrário de materiais frágeis como o vidro."
     ],
-    "nursingApplication": "Os ossos dos membros inferiores e as vértebras suportam cargas predominantemente compressivas na marcha."
+    "nursingApplication": "Síntese integradora do comportamento mecânico do tecido ósseo para os estudantes de enfermagem."
   },
   {
     "id": 2200,
     "topicId": 2,
-    "question": "Como são definidas as Forças de Tração na mecânica dos corpos elásticos (Slide 23)?",
+    "question": "Ao concluir o estudo da Elasticidade dos Corpos e Resistência dos Materiais (Tópico 2), como se integra o modelo biofísico do aparelho locomotor humano?",
     "options": [
-      "Forças divergentes colineares que provocam aumento do comprimento (L) e diminuição da área de secção transversal (S).",
-      "Forças convergentes que diminuem o comprimento longitudinal e alargam a secção média.",
-      "Forças transversais perpendiculares que curvam as arestas retilíneas da barra.",
-      "Forças microscópicas puramente gravitacionais que atuam exclusivamente no vácuo espacial."
+      "Integra comportamento viscoelástico (amortecimento e histerese), resistência combinada às 5 deformações (compressão, tração, flexão, cisalhamento e torção) e resposta elástica de sustentação descrita pela Lei de Hooke (σ = E · ε com E = 2 × 10¹⁰ N/m²).",
+      "O esqueleto humano é modelado como uma barra de vidro frágil em rotação perpétua de 80 km/h.",
+      "Os ossos humanos são modelados exclusivamente como molas metálicas perfeitas sem qualquer atrito ou amortecimento viscoso.",
+      "A biofísica conclui que as leis de Newton e Hooke deixam de se aplicar assim que o utente entra no hospital."
     ],
     "correctIndex": 0,
-    "explanation": "A tração puxa as extremidades para fora com forças divergentes, alongando a barra e reduzindo a sua espessura transversal.",
+    "explanation": "A grande visão unificada do Tópico 2: os ossos e músculos são viscoelásticos (Slide 19); suportam esforços axiais e tangenciais das 5 deformações básicas (Slides 30-34); e regem-se pela Lei de Hooke generalizada (Slide 43), combinando sustentação firme com amortecimento elástico protetor.",
     "distractorAnalysis": [
-      "Está incorreta: Forças convergentes que encurtam a barra definem a compressão mecânica.",
-      "Está incorreta: Forças transversais que curvam arestas retilíneas definem a deformação de flexão.",
-      "Está incorreta: Forças no vácuo sem contacto não descrevem o esforço mecânico clássico de tração de sólidos."
+      "Está incorreta: Modelar o osso como vidro ignoraria a sua flexibilidade e tenacidade orgânica elástica.",
+      "Está incorreta: Ignorar a viscoelasticidade e histerese ignoraria o amortecimento de choques nos tecidos biológicos vivos.",
+      "Está incorreta: As leis da física governam universalmente todos os organismos biológicos e procedimentos de cuidados de saúde."
     ],
-    "nursingApplication": "Tendões e ligamentos são estruturas especializadas em resistir a esforços de tração longitudinal."
-  },
-  {
-    "id": 2201,
-    "topicId": 2,
-    "question": "Como é definida a deformação de Flexão na Biofísica dos materiais (Slide 26)?",
-    "options": [
-      "O aumento homogéneo da secção transversal sob forças axiais divergentes de tração pura.",
-      "A deformação das arestas retilíneas de um sólido em linhas curvas por ação de forças perpendiculares ao seu eixo longitudinal.",
-      "A rotação de um corpo em torno do seu eixo central por ação de um binário de forças.",
-      "O deslizamento paralelo entre duas superfícies sob forças tangenciais em sentidos opostos."
-    ],
-    "correctIndex": 1,
-    "explanation": "A flexão ocorre quando forças transversais curvam uma barra apoiada nas extremidades.",
-    "distractorAnalysis": [
-      "Está incorreta: Aumento de secção transversal com encurtamento longitudinal define compressão axial, não flexão.",
-      "Está incorreta: Rotação em torno do eixo central define a deformação de torção, e não de flexão.",
-      "Está incorreta: Deslizamento paralelo de superfícies define o cisalhamento (corte)."
-    ],
-    "nursingApplication": "Ocorre nos ossos longos quando sofrem cargas perpendiculares ou apoios descentrados."
-  },
-  {
-    "id": 2202,
-    "topicId": 2,
-    "question": "Na deformação de Flexão de uma barra apoiada horizontalmente com carga aplicada no centro, o que acontece às tensões nas suas faces?",
-    "options": [
-      "Ambas as faces sofrem tração pura idêntica sem qualquer zona de compressão interna.",
-      "A barra sofre apenas torção pura sem qualquer alteração do comprimento das suas arestas.",
-      "A face superior (côncava) sofre compressão, a face inferior (convexa) sofre tração, e a tensão no plano central neutro é nula.",
-      "A tensão é máxima no centro geométrico da barra e nula em todas as superfícies exteriores."
-    ],
-    "correctIndex": 2,
-    "explanation": "Conforme os slides de Paulo Pereira (Slide 26 e 34), a curvatura gera compressão na face interna, tração na externa e tensão nula no plano neutro central.",
-    "distractorAnalysis": [
-      "Está incorreta: Uma barra fletida tem obrigatoriamente tensões de sinal oposto nas faces côncava e convexa.",
-      "Está incorreta: A flexão curva a barra; a torção roda o corpo sobre o seu eixo.",
-      "Está incorreta: No centro (plano neutro) a tensão é estritamente zero; as tensões máximas concentram-se nas superfícies exteriores."
-    ],
-    "nursingApplication": "Explica por que os ossos longos têm tecido compacto nas paredes externas e cavidade medular no centro neutro."
-  },
-  {
-    "id": 2203,
-    "topicId": 2,
-    "question": "O que é o Plano Neutro (ou Eixo Neutro) numa barra sujeita a Flexão?",
-    "options": [
-      "A superfície exterior onde a compressão mecânica atinge o seu valor máximo de rutura.",
-      "O ponto de apoio fixo onde atua a resultante de todas as forças de atrito do leito.",
-      "A zona onde a temperatura do sólido atinge o zero absoluto durante a flexão.",
-      "A região central da secção onde o comprimento não varia e a tensão mecânica longitudinal é rigorosamente nula (σ = 0)."
-    ],
-    "correctIndex": 3,
-    "explanation": "O plano neutro separa a zona de compressão da zona de tração; nesta camada as fibras não encurtam nem alongam (σ = 0).",
-    "distractorAnalysis": [
-      "Está incorreta: A superfície exterior é a zona de tensão máxima (tração ou compressão), não a zona neutra.",
-      "Está incorreta: O ponto de apoio fixo é o fulcro de suporte, não o plano neutro interno do material.",
-      "Está incorreta: A temperatura não atinge o zero absoluto durante ensaios mecânicos convencionais de flexão."
-    ],
-    "nursingApplication": "Fundamento da engenharia e da biomecânica: no centro de flexão a tensão é nula, permitindo economizar massa sem perder resistência."
-  },
-  {
-    "id": 2204,
-    "topicId": 2,
-    "question": "Como se define a deformação de Cisalhamento (ou Corte) na mecânica dos corpos (Slide 27)?",
-    "options": [
-      "A deformação que ocorre entre duas superfícies planas paralelas por ação de forças paralelas opostas que atuam tangencialmente.",
-      "O alongamento linear de uma barra por forças divergentes colineares.",
-      "A compressão uniforme de uma esfera por forças hidrostáticas isotrópicas.",
-      "A rotação de um cilindro em torno do seu eixo central provocada por um torque."
-    ],
-    "correctIndex": 0,
-    "explanation": "O cisalhamento caracteriza-se pelo deslizamento angular relativo de camadas paralelas de material sujeitas a forças tangenciais opostas.",
-    "distractorAnalysis": [
-      "Está incorreta: Alongamento por forças divergentes é tração longitudinal, não cisalhamento.",
-      "Está incorreta: Compressão hidrostática é deformação volumétrica isotrópica, não corte tangencial.",
-      "Está incorreta: Rotação em torno do eixo central é torção mecânica."
-    ],
-    "nursingApplication": "As forças de atrito tangencial e o deslizamento de tecidos sobre o leito produzem esforços de cisalhamento."
-  },
-  {
-    "id": 2205,
-    "topicId": 2,
-    "question": "Como é definida a deformação de Torção na Biofísica dos materiais (Slide 28)?",
-    "options": [
-      "O encurtamento longitudinal de um cilindro sob forças convergentes axiais.",
-      "A rotação de um sólido em torno do seu eixo longitudinal provocada pela ação de um momento de força (torque).",
-      "A deformação em que todas as arestas se mantêm rigorosamente paralelas sem qualquer rotação.",
-      "O estiramento linear de um fio por ação exclusiva do peso gravitacional."
-    ],
-    "correctIndex": 1,
-    "explanation": "A torção ocorre quando um binário de forças com momentos opostos faz rodar as secções transversais em torno do eixo central.",
-    "distractorAnalysis": [
-      "Está incorreta: Encurtamento longitudinal por forças convergentes é a definição de compressão axial.",
-      "Está incorreta: Se as arestas permanecessem paralelas sem rotação, não haveria torção mecânica.",
-      "Está incorreta: Estiramento linear de um fio é tração longitudinal simples."
-    ],
-    "nursingApplication": "Ocorre nos membros inferiores quando o pé fica preso no chão e o corpo roda sobre a tíbia."
-  },
-  {
-    "id": 2206,
-    "topicId": 2,
-    "question": "Onde se localiza a tensão mecânica máxima e a tensão nula num cilindro sujeito a esforço de Torção (Slide 28)?",
-    "options": [
-      "A tensão é máxima no eixo central e rigorosamente nula em toda a superfície exterior.",
-      "A tensão é constante e uniforme em todos os pontos da secção transversal do cilindro.",
-      "A tensão no eixo central é nula e a tensão máxima concentra-se na periferia (superfície externa) do cilindro.",
-      "A tensão anula-se completamente em toda a estrutura logo que a rotação se inicia."
-    ],
-    "correctIndex": 2,
-    "explanation": "Na torção, a deformação angular cresce com o raio: no centro o braço é zero (tensão nula); na superfície o braço é máximo (tensão máxima).",
-    "distractorAnalysis": [
-      "Está incorreta: No eixo central o raio é zero, pelo que a tensão de corte é nula, e não máxima.",
-      "Está incorreta: A distribuição de tensões na torção é linear com o raio, não sendo constante nem uniforme.",
-      "Está incorreta: Se a tensão fosse nula em toda a estrutura, o material não ofereceria qualquer resistência à torção."
-    ],
-    "nursingApplication": "Justifica porque os ossos tubulares ocos resistem à torção quase tão bem como ossos maciços, pesando muito menos."
-  },
-  {
-    "id": 2207,
-    "topicId": 2,
-    "question": "Porque é que a estrutura cilíndrica e oca dos ossos longos é biomecanicamente vantajosa perante esforços de Flexão e Torção?",
-    "options": [
-      "Porque os ossos ocos acumulam ar pressurizado que neutraliza a gravidade terrestre durante a marcha.",
-      "Porque o vazio central transforma o osso num sólido de Euclides puramente indeformável.",
-      "Porque a ausência de material no centro duplica a velocidade da luz no interior da cavidade medular.",
-      "Porque tanto na flexão como na torção a tensão no centro é nula e máxima na periferia, concentrando o osso compacto no exterior com menor massa total."
-    ],
-    "correctIndex": 3,
-    "explanation": "Concentrar o material na periferia (onde as tensões de flexão e torção são máximas) maximiza a resistência mecânica e poupa peso.",
-    "distractorAnalysis": [
-      "Está incorreta: Os ossos não contêm ar pressurizado antigravítico; a cavidade contém medula óssea e vasos sanguíneos.",
-      "Está incorreta: A cavidade medular não torna o osso num sólido indeformável de Euclides.",
-      "Está incorreta: A propagação da luz no interior do osso não tem qualquer relação com a resistência mecânica aos esforços."
-    ],
-    "nursingApplication": "Princípio físico de eficiência estrutural dos tubos ocos utilizado tanto na natureza como na engenharia."
-  },
-  {
-    "id": 2208,
-    "topicId": 2,
-    "question": "Qual das seguintes situações representa um exemplo claro de esforço de Cisalhamento?",
-    "options": [
-      "Duas camadas planas paralelas de tecido que deslizam em sentidos contrários sob a ação de forças tangenciais opostas.",
-      "Um cabo de aço vertical que suporta uma massa suspensa de duzentos quilogramas.",
-      "Um bloco de cimento comprimido diretamente entre as sapatas de uma prensa hidráulica.",
-      "Uma chave de fendas a rodar um parafuso em torno do seu próprio eixo longitudinal."
-    ],
-    "correctIndex": 0,
-    "explanation": "O deslizamento relativo tangencial de superfícies em sentidos opostos é o protótipo do esforço de cisalhamento (corte).",
-    "distractorAnalysis": [
-      "Está incorreta: Cabo que suporta massa suspensa está sob tração longitudinal pura.",
-      "Está incorreta: Bloco numa prensa hidráulica está sob compressão axial.",
-      "Está incorreta: Chave de fendas a rodar um parafuso está a transmitir um esforço de torção."
-    ],
-    "nursingApplication": "O atrito tangencial ao puxar um paciente ou lençol gera cisalhamento mecânico entre os tecidos."
-  },
-  {
-    "id": 2209,
-    "topicId": 2,
-    "question": "Como é definida a deformação de Flexão na Biofísica dos materiais (Slide 26)?",
-    "options": [
-      "O aumento homogéneo da secção transversal sob forças axiais divergentes de tração pura.",
-      "A deformação das arestas retilíneas de um sólido em linhas curvas por ação de forças perpendiculares ao seu eixo longitudinal.",
-      "A rotação de um corpo em torno do seu eixo central por ação de um binário de forças.",
-      "O deslizamento paralelo entre duas superfícies sob forças tangenciais em sentidos opostos."
-    ],
-    "correctIndex": 1,
-    "explanation": "A flexão ocorre quando forças transversais curvam uma barra apoiada nas extremidades.",
-    "distractorAnalysis": [
-      "Está incorreta: Aumento de secção transversal com encurtamento longitudinal define compressão axial, não flexão.",
-      "Está incorreta: Rotação em torno do eixo central define a deformação de torção, e não de flexão.",
-      "Está incorreta: Deslizamento paralelo de superfícies define o cisalhamento (corte)."
-    ],
-    "nursingApplication": "Ocorre nos ossos longos quando sofrem cargas perpendiculares ou apoios descentrados."
-  },
-  {
-    "id": 2210,
-    "topicId": 2,
-    "question": "Na deformação de Flexão de uma barra apoiada horizontalmente com carga aplicada no centro, o que acontece às tensões nas suas faces?",
-    "options": [
-      "Ambas as faces sofrem tração pura idêntica sem qualquer zona de compressão interna.",
-      "A barra sofre apenas torção pura sem qualquer alteração do comprimento das suas arestas.",
-      "A face superior (côncava) sofre compressão, a face inferior (convexa) sofre tração, e a tensão no plano central neutro é nula.",
-      "A tensão é máxima no centro geométrico da barra e nula em todas as superfícies exteriores."
-    ],
-    "correctIndex": 2,
-    "explanation": "Conforme os slides de Paulo Pereira (Slide 26 e 34), a curvatura gera compressão na face interna, tração na externa e tensão nula no plano neutro central.",
-    "distractorAnalysis": [
-      "Está incorreta: Uma barra fletida tem obrigatoriamente tensões de sinal oposto nas faces côncava e convexa.",
-      "Está incorreta: A flexão curva a barra; a torção roda o corpo sobre o seu eixo.",
-      "Está incorreta: No centro (plano neutro) a tensão é estritamente zero; as tensões máximas concentram-se nas superfícies exteriores."
-    ],
-    "nursingApplication": "Explica por que os ossos longos têm tecido compacto nas paredes externas e cavidade medular no centro neutro."
-  },
-  {
-    "id": 2211,
-    "topicId": 2,
-    "question": "O que é o Plano Neutro (ou Eixo Neutro) numa barra sujeita a Flexão?",
-    "options": [
-      "A superfície exterior onde a compressão mecânica atinge o seu valor máximo de rutura.",
-      "O ponto de apoio fixo onde atua a resultante de todas as forças de atrito do leito.",
-      "A zona onde a temperatura do sólido atinge o zero absoluto durante a flexão.",
-      "A região central da secção onde o comprimento não varia e a tensão mecânica longitudinal é rigorosamente nula (σ = 0)."
-    ],
-    "correctIndex": 3,
-    "explanation": "O plano neutro separa a zona de compressão da zona de tração; nesta camada as fibras não encurtam nem alongam (σ = 0).",
-    "distractorAnalysis": [
-      "Está incorreta: A superfície exterior é a zona de tensão máxima (tração ou compressão), não a zona neutra.",
-      "Está incorreta: O ponto de apoio fixo é o fulcro de suporte, não o plano neutro interno do material.",
-      "Está incorreta: A temperatura não atinge o zero absoluto durante ensaios mecânicos convencionais de flexão."
-    ],
-    "nursingApplication": "Fundamento da engenharia e da biomecânica: no centro de flexão a tensão é nula, permitindo economizar massa sem perder resistência."
-  },
-  {
-    "id": 2212,
-    "topicId": 2,
-    "question": "Como se define a deformação de Cisalhamento (ou Corte) na mecânica dos corpos (Slide 27)?",
-    "options": [
-      "A deformação que ocorre entre duas superfícies planas paralelas por ação de forças paralelas opostas que atuam tangencialmente.",
-      "O alongamento linear de uma barra por forças divergentes colineares.",
-      "A compressão uniforme de uma esfera por forças hidrostáticas isotrópicas.",
-      "A rotação de um cilindro em torno do seu eixo central provocada por um torque."
-    ],
-    "correctIndex": 0,
-    "explanation": "O cisalhamento caracteriza-se pelo deslizamento angular relativo de camadas paralelas de material sujeitas a forças tangenciais opostas.",
-    "distractorAnalysis": [
-      "Está incorreta: Alongamento por forças divergentes é tração longitudinal, não cisalhamento.",
-      "Está incorreta: Compressão hidrostática é deformação volumétrica isotrópica, não corte tangencial.",
-      "Está incorreta: Rotação em torno do eixo central é torção mecânica."
-    ],
-    "nursingApplication": "As forças de atrito tangencial e o deslizamento de tecidos sobre o leito produzem esforços de cisalhamento."
-  },
-  {
-    "id": 2213,
-    "topicId": 2,
-    "question": "Como é definida a deformação de Torção na Biofísica dos materiais (Slide 28)?",
-    "options": [
-      "O encurtamento longitudinal de um cilindro sob forças convergentes axiais.",
-      "A rotação de um sólido em torno do seu eixo longitudinal provocada pela ação de um momento de força (torque).",
-      "A deformação em que todas as arestas se mantêm rigorosamente paralelas sem qualquer rotação.",
-      "O estiramento linear de um fio por ação exclusiva do peso gravitacional."
-    ],
-    "correctIndex": 1,
-    "explanation": "A torção ocorre quando um binário de forças com momentos opostos faz rodar as secções transversais em torno do eixo central.",
-    "distractorAnalysis": [
-      "Está incorreta: Encurtamento longitudinal por forças convergentes é a definição de compressão axial.",
-      "Está incorreta: Se as arestas permanecessem paralelas sem rotação, não haveria torção mecânica.",
-      "Está incorreta: Estiramento linear de um fio é tração longitudinal simples."
-    ],
-    "nursingApplication": "Ocorre nos membros inferiores quando o pé fica preso no chão e o corpo roda sobre a tíbia."
-  },
-  {
-    "id": 2214,
-    "topicId": 2,
-    "question": "Onde se localiza a tensão mecânica máxima e a tensão nula num cilindro sujeito a esforço de Torção (Slide 28)?",
-    "options": [
-      "A tensão é máxima no eixo central e rigorosamente nula em toda a superfície exterior.",
-      "A tensão é constante e uniforme em todos os pontos da secção transversal do cilindro.",
-      "A tensão no eixo central é nula e a tensão máxima concentra-se na periferia (superfície externa) do cilindro.",
-      "A tensão anula-se completamente em toda a estrutura logo que a rotação se inicia."
-    ],
-    "correctIndex": 2,
-    "explanation": "Na torção, a deformação angular cresce com o raio: no centro o braço é zero (tensão nula); na superfície o braço é máximo (tensão máxima).",
-    "distractorAnalysis": [
-      "Está incorreta: No eixo central o raio é zero, pelo que a tensão de corte é nula, e não máxima.",
-      "Está incorreta: A distribuição de tensões na torção é linear com o raio, não sendo constante nem uniforme.",
-      "Está incorreta: Se a tensão fosse nula em toda a estrutura, o material não ofereceria qualquer resistência à torção."
-    ],
-    "nursingApplication": "Justifica porque os ossos tubulares ocos resistem à torção quase tão bem como ossos maciços, pesando muito menos."
-  },
-  {
-    "id": 2215,
-    "topicId": 2,
-    "question": "Porque é que a estrutura cilíndrica e oca dos ossos longos é biomecanicamente vantajosa perante esforços de Flexão e Torção?",
-    "options": [
-      "Porque os ossos ocos acumulam ar pressurizado que neutraliza a gravidade terrestre durante a marcha.",
-      "Porque o vazio central transforma o osso num sólido de Euclides puramente indeformável.",
-      "Porque a ausência de material no centro duplica a velocidade da luz no interior da cavidade medular.",
-      "Porque tanto na flexão como na torção a tensão no centro é nula e máxima na periferia, concentrando o osso compacto no exterior com menor massa total."
-    ],
-    "correctIndex": 3,
-    "explanation": "Concentrar o material na periferia (onde as tensões de flexão e torção são máximas) maximiza a resistência mecânica e poupa peso.",
-    "distractorAnalysis": [
-      "Está incorreta: Os ossos não contêm ar pressurizado antigravítico; a cavidade contém medula óssea e vasos sanguíneos.",
-      "Está incorreta: A cavidade medular não torna o osso num sólido indeformável de Euclides.",
-      "Está incorreta: A propagação da luz no interior do osso não tem qualquer relação com a resistência mecânica aos esforços."
-    ],
-    "nursingApplication": "Princípio físico de eficiência estrutural dos tubos ocos utilizado tanto na natureza como na engenharia."
-  },
-  {
-    "id": 2216,
-    "topicId": 2,
-    "question": "Qual das seguintes situações representa um exemplo claro de esforço de Cisalhamento?",
-    "options": [
-      "Duas camadas planas paralelas de tecido que deslizam em sentidos contrários sob a ação de forças tangenciais opostas.",
-      "Um cabo de aço vertical que suporta uma massa suspensa de duzentos quilogramas.",
-      "Um bloco de cimento comprimido diretamente entre as sapatas de uma prensa hidráulica.",
-      "Uma chave de fendas a rodar um parafuso em torno do seu próprio eixo longitudinal."
-    ],
-    "correctIndex": 0,
-    "explanation": "O deslizamento relativo tangencial de superfícies em sentidos opostos é o protótipo do esforço de cisalhamento (corte).",
-    "distractorAnalysis": [
-      "Está incorreta: Cabo que suporta massa suspensa está sob tração longitudinal pura.",
-      "Está incorreta: Bloco numa prensa hidráulica está sob compressão axial.",
-      "Está incorreta: Chave de fendas a rodar um parafuso está a transmitir um esforço de torção."
-    ],
-    "nursingApplication": "O atrito tangencial ao puxar um paciente ou lençol gera cisalhamento mecânico entre os tecidos."
-  },
-  {
-    "id": 2217,
-    "topicId": 2,
-    "question": "Como é definida a deformação de Flexão na Biofísica dos materiais (Slide 26)?",
-    "options": [
-      "O aumento homogéneo da secção transversal sob forças axiais divergentes de tração pura.",
-      "A deformação das arestas retilíneas de um sólido em linhas curvas por ação de forças perpendiculares ao seu eixo longitudinal.",
-      "A rotação de um corpo em torno do seu eixo central por ação de um binário de forças.",
-      "O deslizamento paralelo entre duas superfícies sob forças tangenciais em sentidos opostos."
-    ],
-    "correctIndex": 1,
-    "explanation": "A flexão ocorre quando forças transversais curvam uma barra apoiada nas extremidades.",
-    "distractorAnalysis": [
-      "Está incorreta: Aumento de secção transversal com encurtamento longitudinal define compressão axial, não flexão.",
-      "Está incorreta: Rotação em torno do eixo central define a deformação de torção, e não de flexão.",
-      "Está incorreta: Deslizamento paralelo de superfícies define o cisalhamento (corte)."
-    ],
-    "nursingApplication": "Ocorre nos ossos longos quando sofrem cargas perpendiculares ou apoios descentrados."
-  },
-  {
-    "id": 2218,
-    "topicId": 2,
-    "question": "Na deformação de Flexão de uma barra apoiada horizontalmente com carga aplicada no centro, o que acontece às tensões nas suas faces?",
-    "options": [
-      "Ambas as faces sofrem tração pura idêntica sem qualquer zona de compressão interna.",
-      "A barra sofre apenas torção pura sem qualquer alteração do comprimento das suas arestas.",
-      "A face superior (côncava) sofre compressão, a face inferior (convexa) sofre tração, e a tensão no plano central neutro é nula.",
-      "A tensão é máxima no centro geométrico da barra e nula em todas as superfícies exteriores."
-    ],
-    "correctIndex": 2,
-    "explanation": "Conforme os slides de Paulo Pereira (Slide 26 e 34), a curvatura gera compressão na face interna, tração na externa e tensão nula no plano neutro central.",
-    "distractorAnalysis": [
-      "Está incorreta: Uma barra fletida tem obrigatoriamente tensões de sinal oposto nas faces côncava e convexa.",
-      "Está incorreta: A flexão curva a barra; a torção roda o corpo sobre o seu eixo.",
-      "Está incorreta: No centro (plano neutro) a tensão é estritamente zero; as tensões máximas concentram-se nas superfícies exteriores."
-    ],
-    "nursingApplication": "Explica por que os ossos longos têm tecido compacto nas paredes externas e cavidade medular no centro neutro."
-  },
-  {
-    "id": 2219,
-    "topicId": 2,
-    "question": "O que é o Plano Neutro (ou Eixo Neutro) numa barra sujeita a Flexão?",
-    "options": [
-      "A superfície exterior onde a compressão mecânica atinge o seu valor máximo de rutura.",
-      "O ponto de apoio fixo onde atua a resultante de todas as forças de atrito do leito.",
-      "A zona onde a temperatura do sólido atinge o zero absoluto durante a flexão.",
-      "A região central da secção onde o comprimento não varia e a tensão mecânica longitudinal é rigorosamente nula (σ = 0)."
-    ],
-    "correctIndex": 3,
-    "explanation": "O plano neutro separa a zona de compressão da zona de tração; nesta camada as fibras não encurtam nem alongam (σ = 0).",
-    "distractorAnalysis": [
-      "Está incorreta: A superfície exterior é a zona de tensão máxima (tração ou compressão), não a zona neutra.",
-      "Está incorreta: O ponto de apoio fixo é o fulcro de suporte, não o plano neutro interno do material.",
-      "Está incorreta: A temperatura não atinge o zero absoluto durante ensaios mecânicos convencionais de flexão."
-    ],
-    "nursingApplication": "Fundamento da engenharia e da biomecânica: no centro de flexão a tensão é nula, permitindo economizar massa sem perder resistência."
-  },
-  {
-    "id": 2220,
-    "topicId": 2,
-    "question": "Como se define a deformação de Cisalhamento (ou Corte) na mecânica dos corpos (Slide 27)?",
-    "options": [
-      "A deformação que ocorre entre duas superfícies planas paralelas por ação de forças paralelas opostas que atuam tangencialmente.",
-      "O alongamento linear de uma barra por forças divergentes colineares.",
-      "A compressão uniforme de uma esfera por forças hidrostáticas isotrópicas.",
-      "A rotação de um cilindro em torno do seu eixo central provocada por um torque."
-    ],
-    "correctIndex": 0,
-    "explanation": "O cisalhamento caracteriza-se pelo deslizamento angular relativo de camadas paralelas de material sujeitas a forças tangenciais opostas.",
-    "distractorAnalysis": [
-      "Está incorreta: Alongamento por forças divergentes é tração longitudinal, não cisalhamento.",
-      "Está incorreta: Compressão hidrostática é deformação volumétrica isotrópica, não corte tangencial.",
-      "Está incorreta: Rotação em torno do eixo central é torção mecânica."
-    ],
-    "nursingApplication": "As forças de atrito tangencial e o deslizamento de tecidos sobre o leito produzem esforços de cisalhamento."
-  },
-  {
-    "id": 2221,
-    "topicId": 2,
-    "question": "Como é definida a deformação de Torção na Biofísica dos materiais (Slide 28)?",
-    "options": [
-      "O encurtamento longitudinal de um cilindro sob forças convergentes axiais.",
-      "A rotação de um sólido em torno do seu eixo longitudinal provocada pela ação de um momento de força (torque).",
-      "A deformação em que todas as arestas se mantêm rigorosamente paralelas sem qualquer rotação.",
-      "O estiramento linear de um fio por ação exclusiva do peso gravitacional."
-    ],
-    "correctIndex": 1,
-    "explanation": "A torção ocorre quando um binário de forças com momentos opostos faz rodar as secções transversais em torno do eixo central.",
-    "distractorAnalysis": [
-      "Está incorreta: Encurtamento longitudinal por forças convergentes é a definição de compressão axial.",
-      "Está incorreta: Se as arestas permanecessem paralelas sem rotação, não haveria torção mecânica.",
-      "Está incorreta: Estiramento linear de um fio é tração longitudinal simples."
-    ],
-    "nursingApplication": "Ocorre nos membros inferiores quando o pé fica preso no chão e o corpo roda sobre a tíbia."
-  },
-  {
-    "id": 2222,
-    "topicId": 2,
-    "question": "Onde se localiza a tensão mecânica máxima e a tensão nula num cilindro sujeito a esforço de Torção (Slide 28)?",
-    "options": [
-      "A tensão é máxima no eixo central e rigorosamente nula em toda a superfície exterior.",
-      "A tensão é constante e uniforme em todos os pontos da secção transversal do cilindro.",
-      "A tensão no eixo central é nula e a tensão máxima concentra-se na periferia (superfície externa) do cilindro.",
-      "A tensão anula-se completamente em toda a estrutura logo que a rotação se inicia."
-    ],
-    "correctIndex": 2,
-    "explanation": "Na torção, a deformação angular cresce com o raio: no centro o braço é zero (tensão nula); na superfície o braço é máximo (tensão máxima).",
-    "distractorAnalysis": [
-      "Está incorreta: No eixo central o raio é zero, pelo que a tensão de corte é nula, e não máxima.",
-      "Está incorreta: A distribuição de tensões na torção é linear com o raio, não sendo constante nem uniforme.",
-      "Está incorreta: Se a tensão fosse nula em toda a estrutura, o material não ofereceria qualquer resistência à torção."
-    ],
-    "nursingApplication": "Justifica porque os ossos tubulares ocos resistem à torção quase tão bem como ossos maciços, pesando muito menos."
-  },
-  {
-    "id": 2223,
-    "topicId": 2,
-    "question": "Porque é que a estrutura cilíndrica e oca dos ossos longos é biomecanicamente vantajosa perante esforços de Flexão e Torção?",
-    "options": [
-      "Porque os ossos ocos acumulam ar pressurizado que neutraliza a gravidade terrestre durante a marcha.",
-      "Porque o vazio central transforma o osso num sólido de Euclides puramente indeformável.",
-      "Porque a ausência de material no centro duplica a velocidade da luz no interior da cavidade medular.",
-      "Porque tanto na flexão como na torção a tensão no centro é nula e máxima na periferia, concentrando o osso compacto no exterior com menor massa total."
-    ],
-    "correctIndex": 3,
-    "explanation": "Concentrar o material na periferia (onde as tensões de flexão e torção são máximas) maximiza a resistência mecânica e poupa peso.",
-    "distractorAnalysis": [
-      "Está incorreta: Os ossos não contêm ar pressurizado antigravítico; a cavidade contém medula óssea e vasos sanguíneos.",
-      "Está incorreta: A cavidade medular não torna o osso num sólido indeformável de Euclides.",
-      "Está incorreta: A propagação da luz no interior do osso não tem qualquer relação com a resistência mecânica aos esforços."
-    ],
-    "nursingApplication": "Princípio físico de eficiência estrutural dos tubos ocos utilizado tanto na natureza como na engenharia."
-  },
-  {
-    "id": 2224,
-    "topicId": 2,
-    "question": "Qual das seguintes situações representa um exemplo claro de esforço de Cisalhamento?",
-    "options": [
-      "Duas camadas planas paralelas de tecido que deslizam em sentidos contrários sob a ação de forças tangenciais opostas.",
-      "Um cabo de aço vertical que suporta uma massa suspensa de duzentos quilogramas.",
-      "Um bloco de cimento comprimido diretamente entre as sapatas de uma prensa hidráulica.",
-      "Uma chave de fendas a rodar um parafuso em torno do seu próprio eixo longitudinal."
-    ],
-    "correctIndex": 0,
-    "explanation": "O deslizamento relativo tangencial de superfícies em sentidos opostos é o protótipo do esforço de cisalhamento (corte).",
-    "distractorAnalysis": [
-      "Está incorreta: Cabo que suporta massa suspensa está sob tração longitudinal pura.",
-      "Está incorreta: Bloco numa prensa hidráulica está sob compressão axial.",
-      "Está incorreta: Chave de fendas a rodar um parafuso está a transmitir um esforço de torção."
-    ],
-    "nursingApplication": "O atrito tangencial ao puxar um paciente ou lençol gera cisalhamento mecânico entre os tecidos."
-  },
-  {
-    "id": 2225,
-    "topicId": 2,
-    "question": "Como é definida a deformação de Flexão na Biofísica dos materiais (Slide 26)?",
-    "options": [
-      "O aumento homogéneo da secção transversal sob forças axiais divergentes de tração pura.",
-      "A deformação das arestas retilíneas de um sólido em linhas curvas por ação de forças perpendiculares ao seu eixo longitudinal.",
-      "A rotação de um corpo em torno do seu eixo central por ação de um binário de forças.",
-      "O deslizamento paralelo entre duas superfícies sob forças tangenciais em sentidos opostos."
-    ],
-    "correctIndex": 1,
-    "explanation": "A flexão ocorre quando forças transversais curvam uma barra apoiada nas extremidades.",
-    "distractorAnalysis": [
-      "Está incorreta: Aumento de secção transversal com encurtamento longitudinal define compressão axial, não flexão.",
-      "Está incorreta: Rotação em torno do eixo central define a deformação de torção, e não de flexão.",
-      "Está incorreta: Deslizamento paralelo de superfícies define o cisalhamento (corte)."
-    ],
-    "nursingApplication": "Ocorre nos ossos longos quando sofrem cargas perpendiculares ou apoios descentrados."
-  },
-  {
-    "id": 2226,
-    "topicId": 2,
-    "question": "Na deformação de Flexão de uma barra apoiada horizontalmente com carga aplicada no centro, o que acontece às tensões nas suas faces?",
-    "options": [
-      "Ambas as faces sofrem tração pura idêntica sem qualquer zona de compressão interna.",
-      "A barra sofre apenas torção pura sem qualquer alteração do comprimento das suas arestas.",
-      "A face superior (côncava) sofre compressão, a face inferior (convexa) sofre tração, e a tensão no plano central neutro é nula.",
-      "A tensão é máxima no centro geométrico da barra e nula em todas as superfícies exteriores."
-    ],
-    "correctIndex": 2,
-    "explanation": "Conforme os slides de Paulo Pereira (Slide 26 e 34), a curvatura gera compressão na face interna, tração na externa e tensão nula no plano neutro central.",
-    "distractorAnalysis": [
-      "Está incorreta: Uma barra fletida tem obrigatoriamente tensões de sinal oposto nas faces côncava e convexa.",
-      "Está incorreta: A flexão curva a barra; a torção roda o corpo sobre o seu eixo.",
-      "Está incorreta: No centro (plano neutro) a tensão é estritamente zero; as tensões máximas concentram-se nas superfícies exteriores."
-    ],
-    "nursingApplication": "Explica por que os ossos longos têm tecido compacto nas paredes externas e cavidade medular no centro neutro."
-  },
-  {
-    "id": 2227,
-    "topicId": 2,
-    "question": "O que é o Plano Neutro (ou Eixo Neutro) numa barra sujeita a Flexão?",
-    "options": [
-      "A superfície exterior onde a compressão mecânica atinge o seu valor máximo de rutura.",
-      "O ponto de apoio fixo onde atua a resultante de todas as forças de atrito do leito.",
-      "A zona onde a temperatura do sólido atinge o zero absoluto durante a flexão.",
-      "A região central da secção onde o comprimento não varia e a tensão mecânica longitudinal é rigorosamente nula (σ = 0)."
-    ],
-    "correctIndex": 3,
-    "explanation": "O plano neutro separa a zona de compressão da zona de tração; nesta camada as fibras não encurtam nem alongam (σ = 0).",
-    "distractorAnalysis": [
-      "Está incorreta: A superfície exterior é a zona de tensão máxima (tração ou compressão), não a zona neutra.",
-      "Está incorreta: O ponto de apoio fixo é o fulcro de suporte, não o plano neutro interno do material.",
-      "Está incorreta: A temperatura não atinge o zero absoluto durante ensaios mecânicos convencionais de flexão."
-    ],
-    "nursingApplication": "Fundamento da engenharia e da biomecânica: no centro de flexão a tensão é nula, permitindo economizar massa sem perder resistência."
-  },
-  {
-    "id": 2228,
-    "topicId": 2,
-    "question": "Como se define a deformação de Cisalhamento (ou Corte) na mecânica dos corpos (Slide 27)?",
-    "options": [
-      "A deformação que ocorre entre duas superfícies planas paralelas por ação de forças paralelas opostas que atuam tangencialmente.",
-      "O alongamento linear de uma barra por forças divergentes colineares.",
-      "A compressão uniforme de uma esfera por forças hidrostáticas isotrópicas.",
-      "A rotação de um cilindro em torno do seu eixo central provocada por um torque."
-    ],
-    "correctIndex": 0,
-    "explanation": "O cisalhamento caracteriza-se pelo deslizamento angular relativo de camadas paralelas de material sujeitas a forças tangenciais opostas.",
-    "distractorAnalysis": [
-      "Está incorreta: Alongamento por forças divergentes é tração longitudinal, não cisalhamento.",
-      "Está incorreta: Compressão hidrostática é deformação volumétrica isotrópica, não corte tangencial.",
-      "Está incorreta: Rotação em torno do eixo central é torção mecânica."
-    ],
-    "nursingApplication": "As forças de atrito tangencial e o deslizamento de tecidos sobre o leito produzem esforços de cisalhamento."
-  },
-  {
-    "id": 2229,
-    "topicId": 2,
-    "question": "Como é definida a deformação de Torção na Biofísica dos materiais (Slide 28)?",
-    "options": [
-      "O encurtamento longitudinal de um cilindro sob forças convergentes axiais.",
-      "A rotação de um sólido em torno do seu eixo longitudinal provocada pela ação de um momento de força (torque).",
-      "A deformação em que todas as arestas se mantêm rigorosamente paralelas sem qualquer rotação.",
-      "O estiramento linear de um fio por ação exclusiva do peso gravitacional."
-    ],
-    "correctIndex": 1,
-    "explanation": "A torção ocorre quando um binário de forças com momentos opostos faz rodar as secções transversais em torno do eixo central.",
-    "distractorAnalysis": [
-      "Está incorreta: Encurtamento longitudinal por forças convergentes é a definição de compressão axial.",
-      "Está incorreta: Se as arestas permanecessem paralelas sem rotação, não haveria torção mecânica.",
-      "Está incorreta: Estiramento linear de um fio é tração longitudinal simples."
-    ],
-    "nursingApplication": "Ocorre nos membros inferiores quando o pé fica preso no chão e o corpo roda sobre a tíbia."
-  },
-  {
-    "id": 2230,
-    "topicId": 2,
-    "question": "Onde se localiza a tensão mecânica máxima e a tensão nula num cilindro sujeito a esforço de Torção (Slide 28)?",
-    "options": [
-      "A tensão é máxima no eixo central e rigorosamente nula em toda a superfície exterior.",
-      "A tensão é constante e uniforme em todos os pontos da secção transversal do cilindro.",
-      "A tensão no eixo central é nula e a tensão máxima concentra-se na periferia (superfície externa) do cilindro.",
-      "A tensão anula-se completamente em toda a estrutura logo que a rotação se inicia."
-    ],
-    "correctIndex": 2,
-    "explanation": "Na torção, a deformação angular cresce com o raio: no centro o braço é zero (tensão nula); na superfície o braço é máximo (tensão máxima).",
-    "distractorAnalysis": [
-      "Está incorreta: No eixo central o raio é zero, pelo que a tensão de corte é nula, e não máxima.",
-      "Está incorreta: A distribuição de tensões na torção é linear com o raio, não sendo constante nem uniforme.",
-      "Está incorreta: Se a tensão fosse nula em toda a estrutura, o material não ofereceria qualquer resistência à torção."
-    ],
-    "nursingApplication": "Justifica porque os ossos tubulares ocos resistem à torção quase tão bem como ossos maciços, pesando muito menos."
-  },
-  {
-    "id": 2231,
-    "topicId": 2,
-    "question": "Porque é que a estrutura cilíndrica e oca dos ossos longos é biomecanicamente vantajosa perante esforços de Flexão e Torção?",
-    "options": [
-      "Porque os ossos ocos acumulam ar pressurizado que neutraliza a gravidade terrestre durante a marcha.",
-      "Porque o vazio central transforma o osso num sólido de Euclides puramente indeformável.",
-      "Porque a ausência de material no centro duplica a velocidade da luz no interior da cavidade medular.",
-      "Porque tanto na flexão como na torção a tensão no centro é nula e máxima na periferia, concentrando o osso compacto no exterior com menor massa total."
-    ],
-    "correctIndex": 3,
-    "explanation": "Concentrar o material na periferia (onde as tensões de flexão e torção são máximas) maximiza a resistência mecânica e poupa peso.",
-    "distractorAnalysis": [
-      "Está incorreta: Os ossos não contêm ar pressurizado antigravítico; a cavidade contém medula óssea e vasos sanguíneos.",
-      "Está incorreta: A cavidade medular não torna o osso num sólido indeformável de Euclides.",
-      "Está incorreta: A propagação da luz no interior do osso não tem qualquer relação com a resistência mecânica aos esforços."
-    ],
-    "nursingApplication": "Princípio físico de eficiência estrutural dos tubos ocos utilizado tanto na natureza como na engenharia."
-  },
-  {
-    "id": 2232,
-    "topicId": 2,
-    "question": "Qual das seguintes situações representa um exemplo claro de esforço de Cisalhamento?",
-    "options": [
-      "Duas camadas planas paralelas de tecido que deslizam em sentidos contrários sob a ação de forças tangenciais opostas.",
-      "Um cabo de aço vertical que suporta uma massa suspensa de duzentos quilogramas.",
-      "Um bloco de cimento comprimido diretamente entre as sapatas de uma prensa hidráulica.",
-      "Uma chave de fendas a rodar um parafuso em torno do seu próprio eixo longitudinal."
-    ],
-    "correctIndex": 0,
-    "explanation": "O deslizamento relativo tangencial de superfícies em sentidos opostos é o protótipo do esforço de cisalhamento (corte).",
-    "distractorAnalysis": [
-      "Está incorreta: Cabo que suporta massa suspensa está sob tração longitudinal pura.",
-      "Está incorreta: Bloco numa prensa hidráulica está sob compressão axial.",
-      "Está incorreta: Chave de fendas a rodar um parafuso está a transmitir um esforço de torção."
-    ],
-    "nursingApplication": "O atrito tangencial ao puxar um paciente ou lençol gera cisalhamento mecânico entre os tecidos."
-  },
-  {
-    "id": 2233,
-    "topicId": 2,
-    "question": "Como é definida a deformação de Flexão na Biofísica dos materiais (Slide 26)?",
-    "options": [
-      "O aumento homogéneo da secção transversal sob forças axiais divergentes de tração pura.",
-      "A deformação das arestas retilíneas de um sólido em linhas curvas por ação de forças perpendiculares ao seu eixo longitudinal.",
-      "A rotação de um corpo em torno do seu eixo central por ação de um binário de forças.",
-      "O deslizamento paralelo entre duas superfícies sob forças tangenciais em sentidos opostos."
-    ],
-    "correctIndex": 1,
-    "explanation": "A flexão ocorre quando forças transversais curvam uma barra apoiada nas extremidades.",
-    "distractorAnalysis": [
-      "Está incorreta: Aumento de secção transversal com encurtamento longitudinal define compressão axial, não flexão.",
-      "Está incorreta: Rotação em torno do eixo central define a deformação de torção, e não de flexão.",
-      "Está incorreta: Deslizamento paralelo de superfícies define o cisalhamento (corte)."
-    ],
-    "nursingApplication": "Ocorre nos ossos longos quando sofrem cargas perpendiculares ou apoios descentrados."
-  },
-  {
-    "id": 2234,
-    "topicId": 2,
-    "question": "Na deformação de Flexão de uma barra apoiada horizontalmente com carga aplicada no centro, o que acontece às tensões nas suas faces?",
-    "options": [
-      "Ambas as faces sofrem tração pura idêntica sem qualquer zona de compressão interna.",
-      "A barra sofre apenas torção pura sem qualquer alteração do comprimento das suas arestas.",
-      "A face superior (côncava) sofre compressão, a face inferior (convexa) sofre tração, e a tensão no plano central neutro é nula.",
-      "A tensão é máxima no centro geométrico da barra e nula em todas as superfícies exteriores."
-    ],
-    "correctIndex": 2,
-    "explanation": "Conforme os slides de Paulo Pereira (Slide 26 e 34), a curvatura gera compressão na face interna, tração na externa e tensão nula no plano neutro central.",
-    "distractorAnalysis": [
-      "Está incorreta: Uma barra fletida tem obrigatoriamente tensões de sinal oposto nas faces côncava e convexa.",
-      "Está incorreta: A flexão curva a barra; a torção roda o corpo sobre o seu eixo.",
-      "Está incorreta: No centro (plano neutro) a tensão é estritamente zero; as tensões máximas concentram-se nas superfícies exteriores."
-    ],
-    "nursingApplication": "Explica por que os ossos longos têm tecido compacto nas paredes externas e cavidade medular no centro neutro."
-  },
-  {
-    "id": 2235,
-    "topicId": 2,
-    "question": "O que é o Plano Neutro (ou Eixo Neutro) numa barra sujeita a Flexão?",
-    "options": [
-      "A superfície exterior onde a compressão mecânica atinge o seu valor máximo de rutura.",
-      "O ponto de apoio fixo onde atua a resultante de todas as forças de atrito do leito.",
-      "A zona onde a temperatura do sólido atinge o zero absoluto durante a flexão.",
-      "A região central da secção onde o comprimento não varia e a tensão mecânica longitudinal é rigorosamente nula (σ = 0)."
-    ],
-    "correctIndex": 3,
-    "explanation": "O plano neutro separa a zona de compressão da zona de tração; nesta camada as fibras não encurtam nem alongam (σ = 0).",
-    "distractorAnalysis": [
-      "Está incorreta: A superfície exterior é a zona de tensão máxima (tração ou compressão), não a zona neutra.",
-      "Está incorreta: O ponto de apoio fixo é o fulcro de suporte, não o plano neutro interno do material.",
-      "Está incorreta: A temperatura não atinge o zero absoluto durante ensaios mecânicos convencionais de flexão."
-    ],
-    "nursingApplication": "Fundamento da engenharia e da biomecânica: no centro de flexão a tensão é nula, permitindo economizar massa sem perder resistência."
-  },
-  {
-    "id": 2236,
-    "topicId": 2,
-    "question": "Como se define a deformação de Cisalhamento (ou Corte) na mecânica dos corpos (Slide 27)?",
-    "options": [
-      "A deformação que ocorre entre duas superfícies planas paralelas por ação de forças paralelas opostas que atuam tangencialmente.",
-      "O alongamento linear de uma barra por forças divergentes colineares.",
-      "A compressão uniforme de uma esfera por forças hidrostáticas isotrópicas.",
-      "A rotação de um cilindro em torno do seu eixo central provocada por um torque."
-    ],
-    "correctIndex": 0,
-    "explanation": "O cisalhamento caracteriza-se pelo deslizamento angular relativo de camadas paralelas de material sujeitas a forças tangenciais opostas.",
-    "distractorAnalysis": [
-      "Está incorreta: Alongamento por forças divergentes é tração longitudinal, não cisalhamento.",
-      "Está incorreta: Compressão hidrostática é deformação volumétrica isotrópica, não corte tangencial.",
-      "Está incorreta: Rotação em torno do eixo central é torção mecânica."
-    ],
-    "nursingApplication": "As forças de atrito tangencial e o deslizamento de tecidos sobre o leito produzem esforços de cisalhamento."
-  },
-  {
-    "id": 2237,
-    "topicId": 2,
-    "question": "Como é definida a deformação de Torção na Biofísica dos materiais (Slide 28)?",
-    "options": [
-      "O encurtamento longitudinal de um cilindro sob forças convergentes axiais.",
-      "A rotação de um sólido em torno do seu eixo longitudinal provocada pela ação de um momento de força (torque).",
-      "A deformação em que todas as arestas se mantêm rigorosamente paralelas sem qualquer rotação.",
-      "O estiramento linear de um fio por ação exclusiva do peso gravitacional."
-    ],
-    "correctIndex": 1,
-    "explanation": "A torção ocorre quando um binário de forças com momentos opostos faz rodar as secções transversais em torno do eixo central.",
-    "distractorAnalysis": [
-      "Está incorreta: Encurtamento longitudinal por forças convergentes é a definição de compressão axial.",
-      "Está incorreta: Se as arestas permanecessem paralelas sem rotação, não haveria torção mecânica.",
-      "Está incorreta: Estiramento linear de um fio é tração longitudinal simples."
-    ],
-    "nursingApplication": "Ocorre nos membros inferiores quando o pé fica preso no chão e o corpo roda sobre a tíbia."
-  },
-  {
-    "id": 2238,
-    "topicId": 2,
-    "question": "Onde se localiza a tensão mecânica máxima e a tensão nula num cilindro sujeito a esforço de Torção (Slide 28)?",
-    "options": [
-      "A tensão é máxima no eixo central e rigorosamente nula em toda a superfície exterior.",
-      "A tensão é constante e uniforme em todos os pontos da secção transversal do cilindro.",
-      "A tensão no eixo central é nula e a tensão máxima concentra-se na periferia (superfície externa) do cilindro.",
-      "A tensão anula-se completamente em toda a estrutura logo que a rotação se inicia."
-    ],
-    "correctIndex": 2,
-    "explanation": "Na torção, a deformação angular cresce com o raio: no centro o braço é zero (tensão nula); na superfície o braço é máximo (tensão máxima).",
-    "distractorAnalysis": [
-      "Está incorreta: No eixo central o raio é zero, pelo que a tensão de corte é nula, e não máxima.",
-      "Está incorreta: A distribuição de tensões na torção é linear com o raio, não sendo constante nem uniforme.",
-      "Está incorreta: Se a tensão fosse nula em toda a estrutura, o material não ofereceria qualquer resistência à torção."
-    ],
-    "nursingApplication": "Justifica porque os ossos tubulares ocos resistem à torção quase tão bem como ossos maciços, pesando muito menos."
-  },
-  {
-    "id": 2239,
-    "topicId": 2,
-    "question": "Porque é que a estrutura cilíndrica e oca dos ossos longos é biomecanicamente vantajosa perante esforços de Flexão e Torção?",
-    "options": [
-      "Porque os ossos ocos acumulam ar pressurizado que neutraliza a gravidade terrestre durante a marcha.",
-      "Porque o vazio central transforma o osso num sólido de Euclides puramente indeformável.",
-      "Porque a ausência de material no centro duplica a velocidade da luz no interior da cavidade medular.",
-      "Porque tanto na flexão como na torção a tensão no centro é nula e máxima na periferia, concentrando o osso compacto no exterior com menor massa total."
-    ],
-    "correctIndex": 3,
-    "explanation": "Concentrar o material na periferia (onde as tensões de flexão e torção são máximas) maximiza a resistência mecânica e poupa peso.",
-    "distractorAnalysis": [
-      "Está incorreta: Os ossos não contêm ar pressurizado antigravítico; a cavidade contém medula óssea e vasos sanguíneos.",
-      "Está incorreta: A cavidade medular não torna o osso num sólido indeformável de Euclides.",
-      "Está incorreta: A propagação da luz no interior do osso não tem qualquer relação com a resistência mecânica aos esforços."
-    ],
-    "nursingApplication": "Princípio físico de eficiência estrutural dos tubos ocos utilizado tanto na natureza como na engenharia."
-  },
-  {
-    "id": 2240,
-    "topicId": 2,
-    "question": "Qual das seguintes situações representa um exemplo claro de esforço de Cisalhamento?",
-    "options": [
-      "Duas camadas planas paralelas de tecido que deslizam em sentidos contrários sob a ação de forças tangenciais opostas.",
-      "Um cabo de aço vertical que suporta uma massa suspensa de duzentos quilogramas.",
-      "Um bloco de cimento comprimido diretamente entre as sapatas de uma prensa hidráulica.",
-      "Uma chave de fendas a rodar um parafuso em torno do seu próprio eixo longitudinal."
-    ],
-    "correctIndex": 0,
-    "explanation": "O deslizamento relativo tangencial de superfícies em sentidos opostos é o protótipo do esforço de cisalhamento (corte).",
-    "distractorAnalysis": [
-      "Está incorreta: Cabo que suporta massa suspensa está sob tração longitudinal pura.",
-      "Está incorreta: Bloco numa prensa hidráulica está sob compressão axial.",
-      "Está incorreta: Chave de fendas a rodar um parafuso está a transmitir um esforço de torção."
-    ],
-    "nursingApplication": "O atrito tangencial ao puxar um paciente ou lençol gera cisalhamento mecânico entre os tecidos."
-  },
-  {
-    "id": 2241,
-    "topicId": 2,
-    "question": "Como é definida a deformação de Flexão na Biofísica dos materiais (Slide 26)?",
-    "options": [
-      "O aumento homogéneo da secção transversal sob forças axiais divergentes de tração pura.",
-      "A deformação das arestas retilíneas de um sólido em linhas curvas por ação de forças perpendiculares ao seu eixo longitudinal.",
-      "A rotação de um corpo em torno do seu eixo central por ação de um binário de forças.",
-      "O deslizamento paralelo entre duas superfícies sob forças tangenciais em sentidos opostos."
-    ],
-    "correctIndex": 1,
-    "explanation": "A flexão ocorre quando forças transversais curvam uma barra apoiada nas extremidades.",
-    "distractorAnalysis": [
-      "Está incorreta: Aumento de secção transversal com encurtamento longitudinal define compressão axial, não flexão.",
-      "Está incorreta: Rotação em torno do eixo central define a deformação de torção, e não de flexão.",
-      "Está incorreta: Deslizamento paralelo de superfícies define o cisalhamento (corte)."
-    ],
-    "nursingApplication": "Ocorre nos ossos longos quando sofrem cargas perpendiculares ou apoios descentrados."
-  },
-  {
-    "id": 2242,
-    "topicId": 2,
-    "question": "Na deformação de Flexão de uma barra apoiada horizontalmente com carga aplicada no centro, o que acontece às tensões nas suas faces?",
-    "options": [
-      "Ambas as faces sofrem tração pura idêntica sem qualquer zona de compressão interna.",
-      "A barra sofre apenas torção pura sem qualquer alteração do comprimento das suas arestas.",
-      "A face superior (côncava) sofre compressão, a face inferior (convexa) sofre tração, e a tensão no plano central neutro é nula.",
-      "A tensão é máxima no centro geométrico da barra e nula em todas as superfícies exteriores."
-    ],
-    "correctIndex": 2,
-    "explanation": "Conforme os slides de Paulo Pereira (Slide 26 e 34), a curvatura gera compressão na face interna, tração na externa e tensão nula no plano neutro central.",
-    "distractorAnalysis": [
-      "Está incorreta: Uma barra fletida tem obrigatoriamente tensões de sinal oposto nas faces côncava e convexa.",
-      "Está incorreta: A flexão curva a barra; a torção roda o corpo sobre o seu eixo.",
-      "Está incorreta: No centro (plano neutro) a tensão é estritamente zero; as tensões máximas concentram-se nas superfícies exteriores."
-    ],
-    "nursingApplication": "Explica por que os ossos longos têm tecido compacto nas paredes externas e cavidade medular no centro neutro."
-  },
-  {
-    "id": 2243,
-    "topicId": 2,
-    "question": "O que é o Plano Neutro (ou Eixo Neutro) numa barra sujeita a Flexão?",
-    "options": [
-      "A superfície exterior onde a compressão mecânica atinge o seu valor máximo de rutura.",
-      "O ponto de apoio fixo onde atua a resultante de todas as forças de atrito do leito.",
-      "A zona onde a temperatura do sólido atinge o zero absoluto durante a flexão.",
-      "A região central da secção onde o comprimento não varia e a tensão mecânica longitudinal é rigorosamente nula (σ = 0)."
-    ],
-    "correctIndex": 3,
-    "explanation": "O plano neutro separa a zona de compressão da zona de tração; nesta camada as fibras não encurtam nem alongam (σ = 0).",
-    "distractorAnalysis": [
-      "Está incorreta: A superfície exterior é a zona de tensão máxima (tração ou compressão), não a zona neutra.",
-      "Está incorreta: O ponto de apoio fixo é o fulcro de suporte, não o plano neutro interno do material.",
-      "Está incorreta: A temperatura não atinge o zero absoluto durante ensaios mecânicos convencionais de flexão."
-    ],
-    "nursingApplication": "Fundamento da engenharia e da biomecânica: no centro de flexão a tensão é nula, permitindo economizar massa sem perder resistência."
-  },
-  {
-    "id": 2244,
-    "topicId": 2,
-    "question": "Como se define a deformação de Cisalhamento (ou Corte) na mecânica dos corpos (Slide 27)?",
-    "options": [
-      "A deformação que ocorre entre duas superfícies planas paralelas por ação de forças paralelas opostas que atuam tangencialmente.",
-      "O alongamento linear de uma barra por forças divergentes colineares.",
-      "A compressão uniforme de uma esfera por forças hidrostáticas isotrópicas.",
-      "A rotação de um cilindro em torno do seu eixo central provocada por um torque."
-    ],
-    "correctIndex": 0,
-    "explanation": "O cisalhamento caracteriza-se pelo deslizamento angular relativo de camadas paralelas de material sujeitas a forças tangenciais opostas.",
-    "distractorAnalysis": [
-      "Está incorreta: Alongamento por forças divergentes é tração longitudinal, não cisalhamento.",
-      "Está incorreta: Compressão hidrostática é deformação volumétrica isotrópica, não corte tangencial.",
-      "Está incorreta: Rotação em torno do eixo central é torção mecânica."
-    ],
-    "nursingApplication": "As forças de atrito tangencial e o deslizamento de tecidos sobre o leito produzem esforços de cisalhamento."
-  },
-  {
-    "id": 2245,
-    "topicId": 2,
-    "question": "Como é definida a deformação de Torção na Biofísica dos materiais (Slide 28)?",
-    "options": [
-      "O encurtamento longitudinal de um cilindro sob forças convergentes axiais.",
-      "A rotação de um sólido em torno do seu eixo longitudinal provocada pela ação de um momento de força (torque).",
-      "A deformação em que todas as arestas se mantêm rigorosamente paralelas sem qualquer rotação.",
-      "O estiramento linear de um fio por ação exclusiva do peso gravitacional."
-    ],
-    "correctIndex": 1,
-    "explanation": "A torção ocorre quando um binário de forças com momentos opostos faz rodar as secções transversais em torno do eixo central.",
-    "distractorAnalysis": [
-      "Está incorreta: Encurtamento longitudinal por forças convergentes é a definição de compressão axial.",
-      "Está incorreta: Se as arestas permanecessem paralelas sem rotação, não haveria torção mecânica.",
-      "Está incorreta: Estiramento linear de um fio é tração longitudinal simples."
-    ],
-    "nursingApplication": "Ocorre nos membros inferiores quando o pé fica preso no chão e o corpo roda sobre a tíbia."
-  },
-  {
-    "id": 2246,
-    "topicId": 2,
-    "question": "Onde se localiza a tensão mecânica máxima e a tensão nula num cilindro sujeito a esforço de Torção (Slide 28)?",
-    "options": [
-      "A tensão é máxima no eixo central e rigorosamente nula em toda a superfície exterior.",
-      "A tensão é constante e uniforme em todos os pontos da secção transversal do cilindro.",
-      "A tensão no eixo central é nula e a tensão máxima concentra-se na periferia (superfície externa) do cilindro.",
-      "A tensão anula-se completamente em toda a estrutura logo que a rotação se inicia."
-    ],
-    "correctIndex": 2,
-    "explanation": "Na torção, a deformação angular cresce com o raio: no centro o braço é zero (tensão nula); na superfície o braço é máximo (tensão máxima).",
-    "distractorAnalysis": [
-      "Está incorreta: No eixo central o raio é zero, pelo que a tensão de corte é nula, e não máxima.",
-      "Está incorreta: A distribuição de tensões na torção é linear com o raio, não sendo constante nem uniforme.",
-      "Está incorreta: Se a tensão fosse nula em toda a estrutura, o material não ofereceria qualquer resistência à torção."
-    ],
-    "nursingApplication": "Justifica porque os ossos tubulares ocos resistem à torção quase tão bem como ossos maciços, pesando muito menos."
-  },
-  {
-    "id": 2247,
-    "topicId": 2,
-    "question": "Porque é que a estrutura cilíndrica e oca dos ossos longos é biomecanicamente vantajosa perante esforços de Flexão e Torção?",
-    "options": [
-      "Porque os ossos ocos acumulam ar pressurizado que neutraliza a gravidade terrestre durante a marcha.",
-      "Porque o vazio central transforma o osso num sólido de Euclides puramente indeformável.",
-      "Porque a ausência de material no centro duplica a velocidade da luz no interior da cavidade medular.",
-      "Porque tanto na flexão como na torção a tensão no centro é nula e máxima na periferia, concentrando o osso compacto no exterior com menor massa total."
-    ],
-    "correctIndex": 3,
-    "explanation": "Concentrar o material na periferia (onde as tensões de flexão e torção são máximas) maximiza a resistência mecânica e poupa peso.",
-    "distractorAnalysis": [
-      "Está incorreta: Os ossos não contêm ar pressurizado antigravítico; a cavidade contém medula óssea e vasos sanguíneos.",
-      "Está incorreta: A cavidade medular não torna o osso num sólido indeformável de Euclides.",
-      "Está incorreta: A propagação da luz no interior do osso não tem qualquer relação com a resistência mecânica aos esforços."
-    ],
-    "nursingApplication": "Princípio físico de eficiência estrutural dos tubos ocos utilizado tanto na natureza como na engenharia."
-  },
-  {
-    "id": 2248,
-    "topicId": 2,
-    "question": "Qual das seguintes situações representa um exemplo claro de esforço de Cisalhamento?",
-    "options": [
-      "Duas camadas planas paralelas de tecido que deslizam em sentidos contrários sob a ação de forças tangenciais opostas.",
-      "Um cabo de aço vertical que suporta uma massa suspensa de duzentos quilogramas.",
-      "Um bloco de cimento comprimido diretamente entre as sapatas de uma prensa hidráulica.",
-      "Uma chave de fendas a rodar um parafuso em torno do seu próprio eixo longitudinal."
-    ],
-    "correctIndex": 0,
-    "explanation": "O deslizamento relativo tangencial de superfícies em sentidos opostos é o protótipo do esforço de cisalhamento (corte).",
-    "distractorAnalysis": [
-      "Está incorreta: Cabo que suporta massa suspensa está sob tração longitudinal pura.",
-      "Está incorreta: Bloco numa prensa hidráulica está sob compressão axial.",
-      "Está incorreta: Chave de fendas a rodar um parafuso está a transmitir um esforço de torção."
-    ],
-    "nursingApplication": "O atrito tangencial ao puxar um paciente ou lençol gera cisalhamento mecânico entre os tecidos."
-  },
-  {
-    "id": 2249,
-    "topicId": 2,
-    "question": "Como é definida a deformação de Flexão na Biofísica dos materiais (Slide 26)?",
-    "options": [
-      "O aumento homogéneo da secção transversal sob forças axiais divergentes de tração pura.",
-      "A deformação das arestas retilíneas de um sólido em linhas curvas por ação de forças perpendiculares ao seu eixo longitudinal.",
-      "A rotação de um corpo em torno do seu eixo central por ação de um binário de forças.",
-      "O deslizamento paralelo entre duas superfícies sob forças tangenciais em sentidos opostos."
-    ],
-    "correctIndex": 1,
-    "explanation": "A flexão ocorre quando forças transversais curvam uma barra apoiada nas extremidades.",
-    "distractorAnalysis": [
-      "Está incorreta: Aumento de secção transversal com encurtamento longitudinal define compressão axial, não flexão.",
-      "Está incorreta: Rotação em torno do eixo central define a deformação de torção, e não de flexão.",
-      "Está incorreta: Deslizamento paralelo de superfícies define o cisalhamento (corte)."
-    ],
-    "nursingApplication": "Ocorre nos ossos longos quando sofrem cargas perpendiculares ou apoios descentrados."
-  },
-  {
-    "id": 2250,
-    "topicId": 2,
-    "question": "Na deformação de Flexão de uma barra apoiada horizontalmente com carga aplicada no centro, o que acontece às tensões nas suas faces?",
-    "options": [
-      "Ambas as faces sofrem tração pura idêntica sem qualquer zona de compressão interna.",
-      "A barra sofre apenas torção pura sem qualquer alteração do comprimento das suas arestas.",
-      "A face superior (côncava) sofre compressão, a face inferior (convexa) sofre tração, e a tensão no plano central neutro é nula.",
-      "A tensão é máxima no centro geométrico da barra e nula em todas as superfícies exteriores."
-    ],
-    "correctIndex": 2,
-    "explanation": "Conforme os slides de Paulo Pereira (Slide 26 e 34), a curvatura gera compressão na face interna, tração na externa e tensão nula no plano neutro central.",
-    "distractorAnalysis": [
-      "Está incorreta: Uma barra fletida tem obrigatoriamente tensões de sinal oposto nas faces côncava e convexa.",
-      "Está incorreta: A flexão curva a barra; a torção roda o corpo sobre o seu eixo.",
-      "Está incorreta: No centro (plano neutro) a tensão é estritamente zero; as tensões máximas concentram-se nas superfícies exteriores."
-    ],
-    "nursingApplication": "Explica por que os ossos longos têm tecido compacto nas paredes externas e cavidade medular no centro neutro."
-  },
-  {
-    "id": 2251,
-    "topicId": 2,
-    "question": "Qual é a expressão matemática da Lei Fundamental da Elasticidade de Hooke para uma mola (Slide 41)?",
-    "options": [
-      "F = k / Δx (a força elástica é a razão entre a constante elástica e a deformação).",
-      "F = k + Δx (a força elástica é a soma da constante com o alongamento).",
-      "F = m · a (a força elástica é a massa multiplicada pela aceleração).",
-      "F = k · Δx (a força elástica é igual à constante elástica multiplicada pela deformação absoluta)."
-    ],
-    "correctIndex": 3,
-    "explanation": "A Lei de Hooke para molas estabelece que a força restauradora é proporcional à deformação absoluta: F = k · Δx.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir a constante pela deformação (k / Δx) viola a linearidade dimensional da Lei de Hooke.",
-      "Está incorreta: Somar uma constante em N/m com uma distância em metros viola a homogeneidade dimensional.",
-      "Está incorreta: F = m·a é a 2ª Lei de Newton da dinâmica, não a Lei de Hooke da elasticidade linear."
-    ],
-    "nursingApplication": "Fórmula de base para o funcionamento de dinamómetros e balanças de mola utilizadas no hospital."
-  },
-  {
-    "id": 2252,
-    "topicId": 2,
-    "question": "Se uma mola tem uma constante elástica k = 60 N/m e sofre um alongamento de 0.03 m, qual é a força exercida pela mola?",
-    "options": [
-      "1.8 N.",
-      "2000.0 N.",
-      "60.03 N.",
-      "1.8 kg."
-    ],
-    "correctIndex": 0,
-    "explanation": "Pela Lei de Hooke: F = k · Δx = 60 N/m · 0.03 m = 1.8 N.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividiu a constante elástica pelo alongamento em vez de multiplicar (F = k · Δx).",
-      "Está incorreta: Somou a constante com o alongamento, operação dimensionalmente incorreta.",
-      "Está incorreta: A força elástica mede-se em Newtons (N) e não em quilogramas (kg)."
-    ],
-    "nursingApplication": "Permite calcular a força exercida por uma mola de tração calibrada em ortopedia."
-  },
-  {
-    "id": 2253,
-    "topicId": 2,
-    "question": "Se uma força de 2.8 N provocar um alongamento de 0.04 m numa mola elástica, qual é a sua constante elástica k?",
-    "options": [
-      "0.112 N/m.",
-      "70 N/m.",
-      "0.0143 N/m.",
-      "70 N."
-    ],
-    "correctIndex": 1,
-    "explanation": "Pela Lei de Hooke, k = F / Δx: 2.8 N / 0.04 m = 70 N/m.",
-    "distractorAnalysis": [
-      "Está incorreta: Multiplicou a força pela deformação em vez de dividir (k = F / Δx).",
-      "Está incorreta: Inverteu a razão dividindo a deformação pela força (Δx / F = 1/k).",
-      "Está incorreta: A constante elástica mede-se em Newton por metro (N/m), e não em Newtons (N)."
-    ],
-    "nursingApplication": "A constante elástica mede a rigidez da mola: quanto maior o k, mais rígida é a mola."
-  },
-  {
-    "id": 2254,
-    "topicId": 2,
-    "question": "No Sistema Internacional (SI), qual é a unidade correta da Constante Elástica (k) de uma mola?",
-    "options": [
-      "Joule por segundo (J/s).",
-      "Pascal por metro cúbico (Pa/m³).",
-      "Newton por metro (N/m).",
-      "Quilograma por segundo ao quadrado (kg/s²), que equivale dimensionalmente a N/m."
-    ],
-    "correctIndex": 2,
-    "explanation": "Como k = F / Δx, a unidade no SI é o Newton dividido pelo metro: N/m (ou kg/s² na análise dimensional base).",
-    "distractorAnalysis": [
-      "Está incorreta: Joule por segundo (J/s) corresponde a Watt (W), unidade de potência mecânica.",
-      "Está incorreta: Pascal por metro cúbico não tem significado físico de constante de rigidez de mola.",
-      "Está incorreta: Embora kg/s² seja dimensionalmente equivalente, no contexto de elasticidade a forma canónica é N/m."
-    ],
-    "nursingApplication": "Distingue a constante de rigidez da mola (N/m) da força elástica resultante (N)."
-  },
-  {
-    "id": 2255,
-    "topicId": 2,
-    "question": "O que traduz fisicamente uma Constante Elástica (k) de valor muito elevado numa mola?",
-    "options": [
-      "A mola é extremamente mole e estica-se infinitamente com forças quase impercetíveis.",
-      "A mola perdeu todas as suas propriedades elásticas e transformou-se em líquido viscoso.",
-      "A mola repele a gravidade terrestre e flutua no ar à temperatura ambiente.",
-      "A mola é muito rígida, exigindo forças elevadas para produzir pequenos alongamentos."
-    ],
-    "correctIndex": 3,
-    "explanation": "Maior constante k significa maior rigidez mecânica: são necessários mais Newtons por cada metro de deformação.",
-    "distractorAnalysis": [
-      "Está incorreta: Molas moles e flexíveis têm constantes elásticas k baixas, e não elevadas.",
-      "Está incorreta: A constante k elevada não transforma o sólido metálico num fluido viscoso.",
-      "Está incorreta: Molas com k elevado continuam sujeitas à atração gravitacional proporcional à sua massa."
-    ],
-    "nursingApplication": "Molas de alta rigidez são usadas em camas e macas para suportar cargas elevadas sem ceder em excesso."
-  },
-  {
-    "id": 2256,
-    "topicId": 2,
-    "question": "De acordo com a Lei de Hooke (F = k·Δx), se a força aplicada sobre uma mola triplicar dentro do regime elástico, a deformação:",
-    "options": [
-      "Triplica na mesma proporção.",
-      "Reduz-se para um terço.",
-      "Permanece exatamente igual.",
-      "Anula-se por completo."
-    ],
-    "correctIndex": 0,
-    "explanation": "Como Δx = F / k, a deformação é diretamente proporcional à força aplicada. Triplicando a força, a deformação triplica.",
-    "distractorAnalysis": [
-      "Está incorreta: A deformação só se reduziria a um terço se a força fosse dividida por três.",
-      "Está incorreta: A deformação varia linearmente com a força e não permanece inalterada.",
-      "Está incorreta: A deformação só seria nula se a força aplicada fosse retirada (F = 0)."
-    ],
-    "nursingApplication": "Demonstra a proporcionalidade direta que permite usar molas para criar escalas de medição linear."
-  },
-  {
-    "id": 2257,
-    "topicId": 2,
-    "question": "Porque é que a constante elástica k de uma mola 'apenas se aplica aos corpos com tamanho e espessura definidos' (Slide 42)?",
-    "options": [
-      "Porque as molas reais não possuem massa inercial mensurável no Sistema Internacional.",
-      "Porque o valor de k depende tanto do material de que a mola é feita como das suas dimensões geométricas específicas (comprimento e diâmetro).",
-      "Porque a Lei de Hooke foi revogada pela mecânica quântica para corpos com espessura variável.",
-      "Porque as molas só operam quando a gravidade da Terra é rigorosamente nula."
-    ],
-    "correctIndex": 1,
-    "explanation": "A rigidez k de um objeto particular depende do Módulo de Young do material E, da área de secção e do comprimento inicial da mola.",
-    "distractorAnalysis": [
-      "Está incorreta: Molas metálicas têm massa inercial real e mensurável em quilogramas.",
-      "Está incorreta: A Lei de Hooke continua plenamente válida e central na mecânica clássica dos materiais elásticos.",
-      "Está incorreta: A Lei de Hooke não exige gravidade nula; funciona perfeitamente à superfície da Terra."
-    ],
-    "nursingApplication": "Explica por que duas molas do mesmo aço podem ter constantes k diferentes se tiverem espessuras diferentes."
-  },
-  {
-    "id": 2258,
-    "topicId": 2,
-    "question": "Qual foi a célebre frase em latim formulada por Robert Hooke em 1660 para enunciar a Lei da Elasticidade (Slide 40)?",
-    "options": [
-      "\"Cogito, ergo sum\" (\"Penso, logo existo\").",
-      "\"Alea iacta est\" (\"A sorte está lançada\").",
-      "\"Ut tensio, sic vis\" (\"Como a extensão, assim a força\").",
-      "\"Carpe diem, quam minimum credula postero\" (\"Aproveita o dia\")."
-    ],
-    "correctIndex": 2,
-    "explanation": "Hooke publicou 'Ut tensio, sic vis' para expressar que a força elástica exercida é proporcional à extensão provocada.",
-    "distractorAnalysis": [
-      "Está incorreta: 'Cogito, ergo sum' é o princípio filosófico de René Descartes, alheio à elasticidade dos materiais.",
-      "Está incorreta: 'Alea iacta est' é a famosa frase de Júlio César ao atravessar o rio Rubicão.",
-      "Está incorreta: 'Carpe diem' é uma ode poética do poeta romano Horácio sem relação com física mecânica."
-    ],
-    "nursingApplication": "Citação histórica lecionada no programa curricular dos slides de Biofísica de Paulo Pereira."
-  },
-  {
-    "id": 2259,
-    "topicId": 2,
-    "question": "Qual é a expressão matemática da Lei Fundamental da Elasticidade de Hooke para uma mola (Slide 41)?",
-    "options": [
-      "F = k / Δx (a força elástica é a razão entre a constante elástica e a deformação).",
-      "F = k + Δx (a força elástica é a soma da constante com o alongamento).",
-      "F = m · a (a força elástica é a massa multiplicada pela aceleração).",
-      "F = k · Δx (a força elástica é igual à constante elástica multiplicada pela deformação absoluta)."
-    ],
-    "correctIndex": 3,
-    "explanation": "A Lei de Hooke para molas estabelece que a força restauradora é proporcional à deformação absoluta: F = k · Δx.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir a constante pela deformação (k / Δx) viola a linearidade dimensional da Lei de Hooke.",
-      "Está incorreta: Somar uma constante em N/m com uma distância em metros viola a homogeneidade dimensional.",
-      "Está incorreta: F = m·a é a 2ª Lei de Newton da dinâmica, não a Lei de Hooke da elasticidade linear."
-    ],
-    "nursingApplication": "Fórmula de base para o funcionamento de dinamómetros e balanças de mola utilizadas no hospital."
-  },
-  {
-    "id": 2260,
-    "topicId": 2,
-    "question": "Se uma mola tem uma constante elástica k = 140 N/m e sofre um alongamento de 0.03 m, qual é a força exercida pela mola?",
-    "options": [
-      "4.2 N.",
-      "4666.67 N.",
-      "140.03 N.",
-      "4.2 kg."
-    ],
-    "correctIndex": 0,
-    "explanation": "Pela Lei de Hooke: F = k · Δx = 140 N/m · 0.03 m = 4.2 N.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividiu a constante elástica pelo alongamento em vez de multiplicar (F = k · Δx).",
-      "Está incorreta: Somou a constante com o alongamento, operação dimensionalmente incorreta.",
-      "Está incorreta: A força elástica mede-se em Newtons (N) e não em quilogramas (kg)."
-    ],
-    "nursingApplication": "Permite calcular a força exercida por uma mola de tração calibrada em ortopedia."
-  },
-  {
-    "id": 2261,
-    "topicId": 2,
-    "question": "Se uma força de 6.0 N provocar um alongamento de 0.04 m numa mola elástica, qual é a sua constante elástica k?",
-    "options": [
-      "0.24 N/m.",
-      "150 N/m.",
-      "0.0067 N/m.",
-      "150 N."
-    ],
-    "correctIndex": 1,
-    "explanation": "Pela Lei de Hooke, k = F / Δx: 6.0 N / 0.04 m = 150 N/m.",
-    "distractorAnalysis": [
-      "Está incorreta: Multiplicou a força pela deformação em vez de dividir (k = F / Δx).",
-      "Está incorreta: Inverteu a razão dividindo a deformação pela força (Δx / F = 1/k).",
-      "Está incorreta: A constante elástica mede-se em Newton por metro (N/m), e não em Newtons (N)."
-    ],
-    "nursingApplication": "A constante elástica mede a rigidez da mola: quanto maior o k, mais rígida é a mola."
-  },
-  {
-    "id": 2262,
-    "topicId": 2,
-    "question": "No Sistema Internacional (SI), qual é a unidade correta da Constante Elástica (k) de uma mola?",
-    "options": [
-      "Joule por segundo (J/s).",
-      "Pascal por metro cúbico (Pa/m³).",
-      "Newton por metro (N/m).",
-      "Quilograma por segundo ao quadrado (kg/s²), que equivale dimensionalmente a N/m."
-    ],
-    "correctIndex": 2,
-    "explanation": "Como k = F / Δx, a unidade no SI é o Newton dividido pelo metro: N/m (ou kg/s² na análise dimensional base).",
-    "distractorAnalysis": [
-      "Está incorreta: Joule por segundo (J/s) corresponde a Watt (W), unidade de potência mecânica.",
-      "Está incorreta: Pascal por metro cúbico não tem significado físico de constante de rigidez de mola.",
-      "Está incorreta: Embora kg/s² seja dimensionalmente equivalente, no contexto de elasticidade a forma canónica é N/m."
-    ],
-    "nursingApplication": "Distingue a constante de rigidez da mola (N/m) da força elástica resultante (N)."
-  },
-  {
-    "id": 2263,
-    "topicId": 2,
-    "question": "O que traduz fisicamente uma Constante Elástica (k) de valor muito elevado numa mola?",
-    "options": [
-      "A mola é extremamente mole e estica-se infinitamente com forças quase impercetíveis.",
-      "A mola perdeu todas as suas propriedades elásticas e transformou-se em líquido viscoso.",
-      "A mola repele a gravidade terrestre e flutua no ar à temperatura ambiente.",
-      "A mola é muito rígida, exigindo forças elevadas para produzir pequenos alongamentos."
-    ],
-    "correctIndex": 3,
-    "explanation": "Maior constante k significa maior rigidez mecânica: são necessários mais Newtons por cada metro de deformação.",
-    "distractorAnalysis": [
-      "Está incorreta: Molas moles e flexíveis têm constantes elásticas k baixas, e não elevadas.",
-      "Está incorreta: A constante k elevada não transforma o sólido metálico num fluido viscoso.",
-      "Está incorreta: Molas com k elevado continuam sujeitas à atração gravitacional proporcional à sua massa."
-    ],
-    "nursingApplication": "Molas de alta rigidez são usadas em camas e macas para suportar cargas elevadas sem ceder em excesso."
-  },
-  {
-    "id": 2264,
-    "topicId": 2,
-    "question": "De acordo com a Lei de Hooke (F = k·Δx), se a força aplicada sobre uma mola triplicar dentro do regime elástico, a deformação:",
-    "options": [
-      "Triplica na mesma proporção.",
-      "Reduz-se para um terço.",
-      "Permanece exatamente igual.",
-      "Anula-se por completo."
-    ],
-    "correctIndex": 0,
-    "explanation": "Como Δx = F / k, a deformação é diretamente proporcional à força aplicada. Triplicando a força, a deformação triplica.",
-    "distractorAnalysis": [
-      "Está incorreta: A deformação só se reduziria a um terço se a força fosse dividida por três.",
-      "Está incorreta: A deformação varia linearmente com a força e não permanece inalterada.",
-      "Está incorreta: A deformação só seria nula se a força aplicada fosse retirada (F = 0)."
-    ],
-    "nursingApplication": "Demonstra a proporcionalidade direta que permite usar molas para criar escalas de medição linear."
-  },
-  {
-    "id": 2265,
-    "topicId": 2,
-    "question": "Porque é que a constante elástica k de uma mola 'apenas se aplica aos corpos com tamanho e espessura definidos' (Slide 42)?",
-    "options": [
-      "Porque as molas reais não possuem massa inercial mensurável no Sistema Internacional.",
-      "Porque o valor de k depende tanto do material de que a mola é feita como das suas dimensões geométricas específicas (comprimento e diâmetro).",
-      "Porque a Lei de Hooke foi revogada pela mecânica quântica para corpos com espessura variável.",
-      "Porque as molas só operam quando a gravidade da Terra é rigorosamente nula."
-    ],
-    "correctIndex": 1,
-    "explanation": "A rigidez k de um objeto particular depende do Módulo de Young do material E, da área de secção e do comprimento inicial da mola.",
-    "distractorAnalysis": [
-      "Está incorreta: Molas metálicas têm massa inercial real e mensurável em quilogramas.",
-      "Está incorreta: A Lei de Hooke continua plenamente válida e central na mecânica clássica dos materiais elásticos.",
-      "Está incorreta: A Lei de Hooke não exige gravidade nula; funciona perfeitamente à superfície da Terra."
-    ],
-    "nursingApplication": "Explica por que duas molas do mesmo aço podem ter constantes k diferentes se tiverem espessuras diferentes."
-  },
-  {
-    "id": 2266,
-    "topicId": 2,
-    "question": "Qual foi a célebre frase em latim formulada por Robert Hooke em 1660 para enunciar a Lei da Elasticidade (Slide 40)?",
-    "options": [
-      "\"Cogito, ergo sum\" (\"Penso, logo existo\").",
-      "\"Alea iacta est\" (\"A sorte está lançada\").",
-      "\"Ut tensio, sic vis\" (\"Como a extensão, assim a força\").",
-      "\"Carpe diem, quam minimum credula postero\" (\"Aproveita o dia\")."
-    ],
-    "correctIndex": 2,
-    "explanation": "Hooke publicou 'Ut tensio, sic vis' para expressar que a força elástica exercida é proporcional à extensão provocada.",
-    "distractorAnalysis": [
-      "Está incorreta: 'Cogito, ergo sum' é o princípio filosófico de René Descartes, alheio à elasticidade dos materiais.",
-      "Está incorreta: 'Alea iacta est' é a famosa frase de Júlio César ao atravessar o rio Rubicão.",
-      "Está incorreta: 'Carpe diem' é uma ode poética do poeta romano Horácio sem relação com física mecânica."
-    ],
-    "nursingApplication": "Citação histórica lecionada no programa curricular dos slides de Biofísica de Paulo Pereira."
-  },
-  {
-    "id": 2267,
-    "topicId": 2,
-    "question": "Qual é a expressão matemática da Lei Fundamental da Elasticidade de Hooke para uma mola (Slide 41)?",
-    "options": [
-      "F = k / Δx (a força elástica é a razão entre a constante elástica e a deformação).",
-      "F = k + Δx (a força elástica é a soma da constante com o alongamento).",
-      "F = m · a (a força elástica é a massa multiplicada pela aceleração).",
-      "F = k · Δx (a força elástica é igual à constante elástica multiplicada pela deformação absoluta)."
-    ],
-    "correctIndex": 3,
-    "explanation": "A Lei de Hooke para molas estabelece que a força restauradora é proporcional à deformação absoluta: F = k · Δx.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir a constante pela deformação (k / Δx) viola a linearidade dimensional da Lei de Hooke.",
-      "Está incorreta: Somar uma constante em N/m com uma distância em metros viola a homogeneidade dimensional.",
-      "Está incorreta: F = m·a é a 2ª Lei de Newton da dinâmica, não a Lei de Hooke da elasticidade linear."
-    ],
-    "nursingApplication": "Fórmula de base para o funcionamento de dinamómetros e balanças de mola utilizadas no hospital."
-  },
-  {
-    "id": 2268,
-    "topicId": 2,
-    "question": "Se uma mola tem uma constante elástica k = 70 N/m e sofre um alongamento de 0.03 m, qual é a força exercida pela mola?",
-    "options": [
-      "2.1 N.",
-      "2333.33 N.",
-      "70.03 N.",
-      "2.1 kg."
-    ],
-    "correctIndex": 0,
-    "explanation": "Pela Lei de Hooke: F = k · Δx = 70 N/m · 0.03 m = 2.1 N.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividiu a constante elástica pelo alongamento em vez de multiplicar (F = k · Δx).",
-      "Está incorreta: Somou a constante com o alongamento, operação dimensionalmente incorreta.",
-      "Está incorreta: A força elástica mede-se em Newtons (N) e não em quilogramas (kg)."
-    ],
-    "nursingApplication": "Permite calcular a força exercida por uma mola de tração calibrada em ortopedia."
-  },
-  {
-    "id": 2269,
-    "topicId": 2,
-    "question": "Se uma força de 3.2 N provocar um alongamento de 0.04 m numa mola elástica, qual é a sua constante elástica k?",
-    "options": [
-      "0.128 N/m.",
-      "80 N/m.",
-      "0.0125 N/m.",
-      "80 N."
-    ],
-    "correctIndex": 1,
-    "explanation": "Pela Lei de Hooke, k = F / Δx: 3.2 N / 0.04 m = 80 N/m.",
-    "distractorAnalysis": [
-      "Está incorreta: Multiplicou a força pela deformação em vez de dividir (k = F / Δx).",
-      "Está incorreta: Inverteu a razão dividindo a deformação pela força (Δx / F = 1/k).",
-      "Está incorreta: A constante elástica mede-se em Newton por metro (N/m), e não em Newtons (N)."
-    ],
-    "nursingApplication": "A constante elástica mede a rigidez da mola: quanto maior o k, mais rígida é a mola."
-  },
-  {
-    "id": 2270,
-    "topicId": 2,
-    "question": "No Sistema Internacional (SI), qual é a unidade correta da Constante Elástica (k) de uma mola?",
-    "options": [
-      "Joule por segundo (J/s).",
-      "Pascal por metro cúbico (Pa/m³).",
-      "Newton por metro (N/m).",
-      "Quilograma por segundo ao quadrado (kg/s²), que equivale dimensionalmente a N/m."
-    ],
-    "correctIndex": 2,
-    "explanation": "Como k = F / Δx, a unidade no SI é o Newton dividido pelo metro: N/m (ou kg/s² na análise dimensional base).",
-    "distractorAnalysis": [
-      "Está incorreta: Joule por segundo (J/s) corresponde a Watt (W), unidade de potência mecânica.",
-      "Está incorreta: Pascal por metro cúbico não tem significado físico de constante de rigidez de mola.",
-      "Está incorreta: Embora kg/s² seja dimensionalmente equivalente, no contexto de elasticidade a forma canónica é N/m."
-    ],
-    "nursingApplication": "Distingue a constante de rigidez da mola (N/m) da força elástica resultante (N)."
-  },
-  {
-    "id": 2271,
-    "topicId": 2,
-    "question": "O que traduz fisicamente uma Constante Elástica (k) de valor muito elevado numa mola?",
-    "options": [
-      "A mola é extremamente mole e estica-se infinitamente com forças quase impercetíveis.",
-      "A mola perdeu todas as suas propriedades elásticas e transformou-se em líquido viscoso.",
-      "A mola repele a gravidade terrestre e flutua no ar à temperatura ambiente.",
-      "A mola é muito rígida, exigindo forças elevadas para produzir pequenos alongamentos."
-    ],
-    "correctIndex": 3,
-    "explanation": "Maior constante k significa maior rigidez mecânica: são necessários mais Newtons por cada metro de deformação.",
-    "distractorAnalysis": [
-      "Está incorreta: Molas moles e flexíveis têm constantes elásticas k baixas, e não elevadas.",
-      "Está incorreta: A constante k elevada não transforma o sólido metálico num fluido viscoso.",
-      "Está incorreta: Molas com k elevado continuam sujeitas à atração gravitacional proporcional à sua massa."
-    ],
-    "nursingApplication": "Molas de alta rigidez são usadas em camas e macas para suportar cargas elevadas sem ceder em excesso."
-  },
-  {
-    "id": 2272,
-    "topicId": 2,
-    "question": "De acordo com a Lei de Hooke (F = k·Δx), se a força aplicada sobre uma mola triplicar dentro do regime elástico, a deformação:",
-    "options": [
-      "Triplica na mesma proporção.",
-      "Reduz-se para um terço.",
-      "Permanece exatamente igual.",
-      "Anula-se por completo."
-    ],
-    "correctIndex": 0,
-    "explanation": "Como Δx = F / k, a deformação é diretamente proporcional à força aplicada. Triplicando a força, a deformação triplica.",
-    "distractorAnalysis": [
-      "Está incorreta: A deformação só se reduziria a um terço se a força fosse dividida por três.",
-      "Está incorreta: A deformação varia linearmente com a força e não permanece inalterada.",
-      "Está incorreta: A deformação só seria nula se a força aplicada fosse retirada (F = 0)."
-    ],
-    "nursingApplication": "Demonstra a proporcionalidade direta que permite usar molas para criar escalas de medição linear."
-  },
-  {
-    "id": 2273,
-    "topicId": 2,
-    "question": "Porque é que a constante elástica k de uma mola 'apenas se aplica aos corpos com tamanho e espessura definidos' (Slide 42)?",
-    "options": [
-      "Porque as molas reais não possuem massa inercial mensurável no Sistema Internacional.",
-      "Porque o valor de k depende tanto do material de que a mola é feita como das suas dimensões geométricas específicas (comprimento e diâmetro).",
-      "Porque a Lei de Hooke foi revogada pela mecânica quântica para corpos com espessura variável.",
-      "Porque as molas só operam quando a gravidade da Terra é rigorosamente nula."
-    ],
-    "correctIndex": 1,
-    "explanation": "A rigidez k de um objeto particular depende do Módulo de Young do material E, da área de secção e do comprimento inicial da mola.",
-    "distractorAnalysis": [
-      "Está incorreta: Molas metálicas têm massa inercial real e mensurável em quilogramas.",
-      "Está incorreta: A Lei de Hooke continua plenamente válida e central na mecânica clássica dos materiais elásticos.",
-      "Está incorreta: A Lei de Hooke não exige gravidade nula; funciona perfeitamente à superfície da Terra."
-    ],
-    "nursingApplication": "Explica por que duas molas do mesmo aço podem ter constantes k diferentes se tiverem espessuras diferentes."
-  },
-  {
-    "id": 2274,
-    "topicId": 2,
-    "question": "Qual foi a célebre frase em latim formulada por Robert Hooke em 1660 para enunciar a Lei da Elasticidade (Slide 40)?",
-    "options": [
-      "\"Cogito, ergo sum\" (\"Penso, logo existo\").",
-      "\"Alea iacta est\" (\"A sorte está lançada\").",
-      "\"Ut tensio, sic vis\" (\"Como a extensão, assim a força\").",
-      "\"Carpe diem, quam minimum credula postero\" (\"Aproveita o dia\")."
-    ],
-    "correctIndex": 2,
-    "explanation": "Hooke publicou 'Ut tensio, sic vis' para expressar que a força elástica exercida é proporcional à extensão provocada.",
-    "distractorAnalysis": [
-      "Está incorreta: 'Cogito, ergo sum' é o princípio filosófico de René Descartes, alheio à elasticidade dos materiais.",
-      "Está incorreta: 'Alea iacta est' é a famosa frase de Júlio César ao atravessar o rio Rubicão.",
-      "Está incorreta: 'Carpe diem' é uma ode poética do poeta romano Horácio sem relação com física mecânica."
-    ],
-    "nursingApplication": "Citação histórica lecionada no programa curricular dos slides de Biofísica de Paulo Pereira."
-  },
-  {
-    "id": 2275,
-    "topicId": 2,
-    "question": "Qual é a expressão matemática da Lei Fundamental da Elasticidade de Hooke para uma mola (Slide 41)?",
-    "options": [
-      "F = k / Δx (a força elástica é a razão entre a constante elástica e a deformação).",
-      "F = k + Δx (a força elástica é a soma da constante com o alongamento).",
-      "F = m · a (a força elástica é a massa multiplicada pela aceleração).",
-      "F = k · Δx (a força elástica é igual à constante elástica multiplicada pela deformação absoluta)."
-    ],
-    "correctIndex": 3,
-    "explanation": "A Lei de Hooke para molas estabelece que a força restauradora é proporcional à deformação absoluta: F = k · Δx.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir a constante pela deformação (k / Δx) viola a linearidade dimensional da Lei de Hooke.",
-      "Está incorreta: Somar uma constante em N/m com uma distância em metros viola a homogeneidade dimensional.",
-      "Está incorreta: F = m·a é a 2ª Lei de Newton da dinâmica, não a Lei de Hooke da elasticidade linear."
-    ],
-    "nursingApplication": "Fórmula de base para o funcionamento de dinamómetros e balanças de mola utilizadas no hospital."
-  },
-  {
-    "id": 2276,
-    "topicId": 2,
-    "question": "Se uma mola tem uma constante elástica k = 150 N/m e sofre um alongamento de 0.03 m, qual é a força exercida pela mola?",
-    "options": [
-      "4.5 N.",
-      "5000.0 N.",
-      "150.03 N.",
-      "4.5 kg."
-    ],
-    "correctIndex": 0,
-    "explanation": "Pela Lei de Hooke: F = k · Δx = 150 N/m · 0.03 m = 4.5 N.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividiu a constante elástica pelo alongamento em vez de multiplicar (F = k · Δx).",
-      "Está incorreta: Somou a constante com o alongamento, operação dimensionalmente incorreta.",
-      "Está incorreta: A força elástica mede-se em Newtons (N) e não em quilogramas (kg)."
-    ],
-    "nursingApplication": "Permite calcular a força exercida por uma mola de tração calibrada em ortopedia."
-  },
-  {
-    "id": 2277,
-    "topicId": 2,
-    "question": "Se uma força de 6.4 N provocar um alongamento de 0.04 m numa mola elástica, qual é a sua constante elástica k?",
-    "options": [
-      "0.256 N/m.",
-      "160 N/m.",
-      "0.0062 N/m.",
-      "160 N."
-    ],
-    "correctIndex": 1,
-    "explanation": "Pela Lei de Hooke, k = F / Δx: 6.4 N / 0.04 m = 160 N/m.",
-    "distractorAnalysis": [
-      "Está incorreta: Multiplicou a força pela deformação em vez de dividir (k = F / Δx).",
-      "Está incorreta: Inverteu a razão dividindo a deformação pela força (Δx / F = 1/k).",
-      "Está incorreta: A constante elástica mede-se em Newton por metro (N/m), e não em Newtons (N)."
-    ],
-    "nursingApplication": "A constante elástica mede a rigidez da mola: quanto maior o k, mais rígida é a mola."
-  },
-  {
-    "id": 2278,
-    "topicId": 2,
-    "question": "No Sistema Internacional (SI), qual é a unidade correta da Constante Elástica (k) de uma mola?",
-    "options": [
-      "Joule por segundo (J/s).",
-      "Pascal por metro cúbico (Pa/m³).",
-      "Newton por metro (N/m).",
-      "Quilograma por segundo ao quadrado (kg/s²), que equivale dimensionalmente a N/m."
-    ],
-    "correctIndex": 2,
-    "explanation": "Como k = F / Δx, a unidade no SI é o Newton dividido pelo metro: N/m (ou kg/s² na análise dimensional base).",
-    "distractorAnalysis": [
-      "Está incorreta: Joule por segundo (J/s) corresponde a Watt (W), unidade de potência mecânica.",
-      "Está incorreta: Pascal por metro cúbico não tem significado físico de constante de rigidez de mola.",
-      "Está incorreta: Embora kg/s² seja dimensionalmente equivalente, no contexto de elasticidade a forma canónica é N/m."
-    ],
-    "nursingApplication": "Distingue a constante de rigidez da mola (N/m) da força elástica resultante (N)."
-  },
-  {
-    "id": 2279,
-    "topicId": 2,
-    "question": "O que traduz fisicamente uma Constante Elástica (k) de valor muito elevado numa mola?",
-    "options": [
-      "A mola é extremamente mole e estica-se infinitamente com forças quase impercetíveis.",
-      "A mola perdeu todas as suas propriedades elásticas e transformou-se em líquido viscoso.",
-      "A mola repele a gravidade terrestre e flutua no ar à temperatura ambiente.",
-      "A mola é muito rígida, exigindo forças elevadas para produzir pequenos alongamentos."
-    ],
-    "correctIndex": 3,
-    "explanation": "Maior constante k significa maior rigidez mecânica: são necessários mais Newtons por cada metro de deformação.",
-    "distractorAnalysis": [
-      "Está incorreta: Molas moles e flexíveis têm constantes elásticas k baixas, e não elevadas.",
-      "Está incorreta: A constante k elevada não transforma o sólido metálico num fluido viscoso.",
-      "Está incorreta: Molas com k elevado continuam sujeitas à atração gravitacional proporcional à sua massa."
-    ],
-    "nursingApplication": "Molas de alta rigidez são usadas em camas e macas para suportar cargas elevadas sem ceder em excesso."
-  },
-  {
-    "id": 2280,
-    "topicId": 2,
-    "question": "De acordo com a Lei de Hooke (F = k·Δx), se a força aplicada sobre uma mola triplicar dentro do regime elástico, a deformação:",
-    "options": [
-      "Triplica na mesma proporção.",
-      "Reduz-se para um terço.",
-      "Permanece exatamente igual.",
-      "Anula-se por completo."
-    ],
-    "correctIndex": 0,
-    "explanation": "Como Δx = F / k, a deformação é diretamente proporcional à força aplicada. Triplicando a força, a deformação triplica.",
-    "distractorAnalysis": [
-      "Está incorreta: A deformação só se reduziria a um terço se a força fosse dividida por três.",
-      "Está incorreta: A deformação varia linearmente com a força e não permanece inalterada.",
-      "Está incorreta: A deformação só seria nula se a força aplicada fosse retirada (F = 0)."
-    ],
-    "nursingApplication": "Demonstra a proporcionalidade direta que permite usar molas para criar escalas de medição linear."
-  },
-  {
-    "id": 2281,
-    "topicId": 2,
-    "question": "Porque é que a constante elástica k de uma mola 'apenas se aplica aos corpos com tamanho e espessura definidos' (Slide 42)?",
-    "options": [
-      "Porque as molas reais não possuem massa inercial mensurável no Sistema Internacional.",
-      "Porque o valor de k depende tanto do material de que a mola é feita como das suas dimensões geométricas específicas (comprimento e diâmetro).",
-      "Porque a Lei de Hooke foi revogada pela mecânica quântica para corpos com espessura variável.",
-      "Porque as molas só operam quando a gravidade da Terra é rigorosamente nula."
-    ],
-    "correctIndex": 1,
-    "explanation": "A rigidez k de um objeto particular depende do Módulo de Young do material E, da área de secção e do comprimento inicial da mola.",
-    "distractorAnalysis": [
-      "Está incorreta: Molas metálicas têm massa inercial real e mensurável em quilogramas.",
-      "Está incorreta: A Lei de Hooke continua plenamente válida e central na mecânica clássica dos materiais elásticos.",
-      "Está incorreta: A Lei de Hooke não exige gravidade nula; funciona perfeitamente à superfície da Terra."
-    ],
-    "nursingApplication": "Explica por que duas molas do mesmo aço podem ter constantes k diferentes se tiverem espessuras diferentes."
-  },
-  {
-    "id": 2282,
-    "topicId": 2,
-    "question": "Qual foi a célebre frase em latim formulada por Robert Hooke em 1660 para enunciar a Lei da Elasticidade (Slide 40)?",
-    "options": [
-      "\"Cogito, ergo sum\" (\"Penso, logo existo\").",
-      "\"Alea iacta est\" (\"A sorte está lançada\").",
-      "\"Ut tensio, sic vis\" (\"Como a extensão, assim a força\").",
-      "\"Carpe diem, quam minimum credula postero\" (\"Aproveita o dia\")."
-    ],
-    "correctIndex": 2,
-    "explanation": "Hooke publicou 'Ut tensio, sic vis' para expressar que a força elástica exercida é proporcional à extensão provocada.",
-    "distractorAnalysis": [
-      "Está incorreta: 'Cogito, ergo sum' é o princípio filosófico de René Descartes, alheio à elasticidade dos materiais.",
-      "Está incorreta: 'Alea iacta est' é a famosa frase de Júlio César ao atravessar o rio Rubicão.",
-      "Está incorreta: 'Carpe diem' é uma ode poética do poeta romano Horácio sem relação com física mecânica."
-    ],
-    "nursingApplication": "Citação histórica lecionada no programa curricular dos slides de Biofísica de Paulo Pereira."
-  },
-  {
-    "id": 2283,
-    "topicId": 2,
-    "question": "Qual é a expressão matemática da Lei Fundamental da Elasticidade de Hooke para uma mola (Slide 41)?",
-    "options": [
-      "F = k / Δx (a força elástica é a razão entre a constante elástica e a deformação).",
-      "F = k + Δx (a força elástica é a soma da constante com o alongamento).",
-      "F = m · a (a força elástica é a massa multiplicada pela aceleração).",
-      "F = k · Δx (a força elástica é igual à constante elástica multiplicada pela deformação absoluta)."
-    ],
-    "correctIndex": 3,
-    "explanation": "A Lei de Hooke para molas estabelece que a força restauradora é proporcional à deformação absoluta: F = k · Δx.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir a constante pela deformação (k / Δx) viola a linearidade dimensional da Lei de Hooke.",
-      "Está incorreta: Somar uma constante em N/m com uma distância em metros viola a homogeneidade dimensional.",
-      "Está incorreta: F = m·a é a 2ª Lei de Newton da dinâmica, não a Lei de Hooke da elasticidade linear."
-    ],
-    "nursingApplication": "Fórmula de base para o funcionamento de dinamómetros e balanças de mola utilizadas no hospital."
-  },
-  {
-    "id": 2284,
-    "topicId": 2,
-    "question": "Se uma mola tem uma constante elástica k = 80 N/m e sofre um alongamento de 0.03 m, qual é a força exercida pela mola?",
-    "options": [
-      "2.4 N.",
-      "2666.67 N.",
-      "80.03 N.",
-      "2.4 kg."
-    ],
-    "correctIndex": 0,
-    "explanation": "Pela Lei de Hooke: F = k · Δx = 80 N/m · 0.03 m = 2.4 N.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividiu a constante elástica pelo alongamento em vez de multiplicar (F = k · Δx).",
-      "Está incorreta: Somou a constante com o alongamento, operação dimensionalmente incorreta.",
-      "Está incorreta: A força elástica mede-se em Newtons (N) e não em quilogramas (kg)."
-    ],
-    "nursingApplication": "Permite calcular a força exercida por uma mola de tração calibrada em ortopedia."
-  },
-  {
-    "id": 2285,
-    "topicId": 2,
-    "question": "Se uma força de 3.6 N provocar um alongamento de 0.04 m numa mola elástica, qual é a sua constante elástica k?",
-    "options": [
-      "0.144 N/m.",
-      "90 N/m.",
-      "0.0111 N/m.",
-      "90 N."
-    ],
-    "correctIndex": 1,
-    "explanation": "Pela Lei de Hooke, k = F / Δx: 3.6 N / 0.04 m = 90 N/m.",
-    "distractorAnalysis": [
-      "Está incorreta: Multiplicou a força pela deformação em vez de dividir (k = F / Δx).",
-      "Está incorreta: Inverteu a razão dividindo a deformação pela força (Δx / F = 1/k).",
-      "Está incorreta: A constante elástica mede-se em Newton por metro (N/m), e não em Newtons (N)."
-    ],
-    "nursingApplication": "A constante elástica mede a rigidez da mola: quanto maior o k, mais rígida é a mola."
-  },
-  {
-    "id": 2286,
-    "topicId": 2,
-    "question": "No Sistema Internacional (SI), qual é a unidade correta da Constante Elástica (k) de uma mola?",
-    "options": [
-      "Joule por segundo (J/s).",
-      "Pascal por metro cúbico (Pa/m³).",
-      "Newton por metro (N/m).",
-      "Quilograma por segundo ao quadrado (kg/s²), que equivale dimensionalmente a N/m."
-    ],
-    "correctIndex": 2,
-    "explanation": "Como k = F / Δx, a unidade no SI é o Newton dividido pelo metro: N/m (ou kg/s² na análise dimensional base).",
-    "distractorAnalysis": [
-      "Está incorreta: Joule por segundo (J/s) corresponde a Watt (W), unidade de potência mecânica.",
-      "Está incorreta: Pascal por metro cúbico não tem significado físico de constante de rigidez de mola.",
-      "Está incorreta: Embora kg/s² seja dimensionalmente equivalente, no contexto de elasticidade a forma canónica é N/m."
-    ],
-    "nursingApplication": "Distingue a constante de rigidez da mola (N/m) da força elástica resultante (N)."
-  },
-  {
-    "id": 2287,
-    "topicId": 2,
-    "question": "O que traduz fisicamente uma Constante Elástica (k) de valor muito elevado numa mola?",
-    "options": [
-      "A mola é extremamente mole e estica-se infinitamente com forças quase impercetíveis.",
-      "A mola perdeu todas as suas propriedades elásticas e transformou-se em líquido viscoso.",
-      "A mola repele a gravidade terrestre e flutua no ar à temperatura ambiente.",
-      "A mola é muito rígida, exigindo forças elevadas para produzir pequenos alongamentos."
-    ],
-    "correctIndex": 3,
-    "explanation": "Maior constante k significa maior rigidez mecânica: são necessários mais Newtons por cada metro de deformação.",
-    "distractorAnalysis": [
-      "Está incorreta: Molas moles e flexíveis têm constantes elásticas k baixas, e não elevadas.",
-      "Está incorreta: A constante k elevada não transforma o sólido metálico num fluido viscoso.",
-      "Está incorreta: Molas com k elevado continuam sujeitas à atração gravitacional proporcional à sua massa."
-    ],
-    "nursingApplication": "Molas de alta rigidez são usadas em camas e macas para suportar cargas elevadas sem ceder em excesso."
-  },
-  {
-    "id": 2288,
-    "topicId": 2,
-    "question": "De acordo com a Lei de Hooke (F = k·Δx), se a força aplicada sobre uma mola triplicar dentro do regime elástico, a deformação:",
-    "options": [
-      "Triplica na mesma proporção.",
-      "Reduz-se para um terço.",
-      "Permanece exatamente igual.",
-      "Anula-se por completo."
-    ],
-    "correctIndex": 0,
-    "explanation": "Como Δx = F / k, a deformação é diretamente proporcional à força aplicada. Triplicando a força, a deformação triplica.",
-    "distractorAnalysis": [
-      "Está incorreta: A deformação só se reduziria a um terço se a força fosse dividida por três.",
-      "Está incorreta: A deformação varia linearmente com a força e não permanece inalterada.",
-      "Está incorreta: A deformação só seria nula se a força aplicada fosse retirada (F = 0)."
-    ],
-    "nursingApplication": "Demonstra a proporcionalidade direta que permite usar molas para criar escalas de medição linear."
-  },
-  {
-    "id": 2289,
-    "topicId": 2,
-    "question": "Porque é que a constante elástica k de uma mola 'apenas se aplica aos corpos com tamanho e espessura definidos' (Slide 42)?",
-    "options": [
-      "Porque as molas reais não possuem massa inercial mensurável no Sistema Internacional.",
-      "Porque o valor de k depende tanto do material de que a mola é feita como das suas dimensões geométricas específicas (comprimento e diâmetro).",
-      "Porque a Lei de Hooke foi revogada pela mecânica quântica para corpos com espessura variável.",
-      "Porque as molas só operam quando a gravidade da Terra é rigorosamente nula."
-    ],
-    "correctIndex": 1,
-    "explanation": "A rigidez k de um objeto particular depende do Módulo de Young do material E, da área de secção e do comprimento inicial da mola.",
-    "distractorAnalysis": [
-      "Está incorreta: Molas metálicas têm massa inercial real e mensurável em quilogramas.",
-      "Está incorreta: A Lei de Hooke continua plenamente válida e central na mecânica clássica dos materiais elásticos.",
-      "Está incorreta: A Lei de Hooke não exige gravidade nula; funciona perfeitamente à superfície da Terra."
-    ],
-    "nursingApplication": "Explica por que duas molas do mesmo aço podem ter constantes k diferentes se tiverem espessuras diferentes."
-  },
-  {
-    "id": 2290,
-    "topicId": 2,
-    "question": "Qual foi a célebre frase em latim formulada por Robert Hooke em 1660 para enunciar a Lei da Elasticidade (Slide 40)?",
-    "options": [
-      "\"Cogito, ergo sum\" (\"Penso, logo existo\").",
-      "\"Alea iacta est\" (\"A sorte está lançada\").",
-      "\"Ut tensio, sic vis\" (\"Como a extensão, assim a força\").",
-      "\"Carpe diem, quam minimum credula postero\" (\"Aproveita o dia\")."
-    ],
-    "correctIndex": 2,
-    "explanation": "Hooke publicou 'Ut tensio, sic vis' para expressar que a força elástica exercida é proporcional à extensão provocada.",
-    "distractorAnalysis": [
-      "Está incorreta: 'Cogito, ergo sum' é o princípio filosófico de René Descartes, alheio à elasticidade dos materiais.",
-      "Está incorreta: 'Alea iacta est' é a famosa frase de Júlio César ao atravessar o rio Rubicão.",
-      "Está incorreta: 'Carpe diem' é uma ode poética do poeta romano Horácio sem relação com física mecânica."
-    ],
-    "nursingApplication": "Citação histórica lecionada no programa curricular dos slides de Biofísica de Paulo Pereira."
-  },
-  {
-    "id": 2291,
-    "topicId": 2,
-    "question": "Qual é a expressão matemática da Lei Fundamental da Elasticidade de Hooke para uma mola (Slide 41)?",
-    "options": [
-      "F = k / Δx (a força elástica é a razão entre a constante elástica e a deformação).",
-      "F = k + Δx (a força elástica é a soma da constante com o alongamento).",
-      "F = m · a (a força elástica é a massa multiplicada pela aceleração).",
-      "F = k · Δx (a força elástica é igual à constante elástica multiplicada pela deformação absoluta)."
-    ],
-    "correctIndex": 3,
-    "explanation": "A Lei de Hooke para molas estabelece que a força restauradora é proporcional à deformação absoluta: F = k · Δx.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir a constante pela deformação (k / Δx) viola a linearidade dimensional da Lei de Hooke.",
-      "Está incorreta: Somar uma constante em N/m com uma distância em metros viola a homogeneidade dimensional.",
-      "Está incorreta: F = m·a é a 2ª Lei de Newton da dinâmica, não a Lei de Hooke da elasticidade linear."
-    ],
-    "nursingApplication": "Fórmula de base para o funcionamento de dinamómetros e balanças de mola utilizadas no hospital."
-  },
-  {
-    "id": 2292,
-    "topicId": 2,
-    "question": "Se uma mola tem uma constante elástica k = 160 N/m e sofre um alongamento de 0.03 m, qual é a força exercida pela mola?",
-    "options": [
-      "4.8 N.",
-      "5333.33 N.",
-      "160.03 N.",
-      "4.8 kg."
-    ],
-    "correctIndex": 0,
-    "explanation": "Pela Lei de Hooke: F = k · Δx = 160 N/m · 0.03 m = 4.8 N.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividiu a constante elástica pelo alongamento em vez de multiplicar (F = k · Δx).",
-      "Está incorreta: Somou a constante com o alongamento, operação dimensionalmente incorreta.",
-      "Está incorreta: A força elástica mede-se em Newtons (N) e não em quilogramas (kg)."
-    ],
-    "nursingApplication": "Permite calcular a força exercida por uma mola de tração calibrada em ortopedia."
-  },
-  {
-    "id": 2293,
-    "topicId": 2,
-    "question": "Se uma força de 6.8 N provocar um alongamento de 0.04 m numa mola elástica, qual é a sua constante elástica k?",
-    "options": [
-      "0.272 N/m.",
-      "170 N/m.",
-      "0.0059 N/m.",
-      "170 N."
-    ],
-    "correctIndex": 1,
-    "explanation": "Pela Lei de Hooke, k = F / Δx: 6.8 N / 0.04 m = 170 N/m.",
-    "distractorAnalysis": [
-      "Está incorreta: Multiplicou a força pela deformação em vez de dividir (k = F / Δx).",
-      "Está incorreta: Inverteu a razão dividindo a deformação pela força (Δx / F = 1/k).",
-      "Está incorreta: A constante elástica mede-se em Newton por metro (N/m), e não em Newtons (N)."
-    ],
-    "nursingApplication": "A constante elástica mede a rigidez da mola: quanto maior o k, mais rígida é a mola."
-  },
-  {
-    "id": 2294,
-    "topicId": 2,
-    "question": "No Sistema Internacional (SI), qual é a unidade correta da Constante Elástica (k) de uma mola?",
-    "options": [
-      "Joule por segundo (J/s).",
-      "Pascal por metro cúbico (Pa/m³).",
-      "Newton por metro (N/m).",
-      "Quilograma por segundo ao quadrado (kg/s²), que equivale dimensionalmente a N/m."
-    ],
-    "correctIndex": 2,
-    "explanation": "Como k = F / Δx, a unidade no SI é o Newton dividido pelo metro: N/m (ou kg/s² na análise dimensional base).",
-    "distractorAnalysis": [
-      "Está incorreta: Joule por segundo (J/s) corresponde a Watt (W), unidade de potência mecânica.",
-      "Está incorreta: Pascal por metro cúbico não tem significado físico de constante de rigidez de mola.",
-      "Está incorreta: Embora kg/s² seja dimensionalmente equivalente, no contexto de elasticidade a forma canónica é N/m."
-    ],
-    "nursingApplication": "Distingue a constante de rigidez da mola (N/m) da força elástica resultante (N)."
-  },
-  {
-    "id": 2295,
-    "topicId": 2,
-    "question": "O que traduz fisicamente uma Constante Elástica (k) de valor muito elevado numa mola?",
-    "options": [
-      "A mola é extremamente mole e estica-se infinitamente com forças quase impercetíveis.",
-      "A mola perdeu todas as suas propriedades elásticas e transformou-se em líquido viscoso.",
-      "A mola repele a gravidade terrestre e flutua no ar à temperatura ambiente.",
-      "A mola é muito rígida, exigindo forças elevadas para produzir pequenos alongamentos."
-    ],
-    "correctIndex": 3,
-    "explanation": "Maior constante k significa maior rigidez mecânica: são necessários mais Newtons por cada metro de deformação.",
-    "distractorAnalysis": [
-      "Está incorreta: Molas moles e flexíveis têm constantes elásticas k baixas, e não elevadas.",
-      "Está incorreta: A constante k elevada não transforma o sólido metálico num fluido viscoso.",
-      "Está incorreta: Molas com k elevado continuam sujeitas à atração gravitacional proporcional à sua massa."
-    ],
-    "nursingApplication": "Molas de alta rigidez são usadas em camas e macas para suportar cargas elevadas sem ceder em excesso."
-  },
-  {
-    "id": 2296,
-    "topicId": 2,
-    "question": "De acordo com a Lei de Hooke (F = k·Δx), se a força aplicada sobre uma mola triplicar dentro do regime elástico, a deformação:",
-    "options": [
-      "Triplica na mesma proporção.",
-      "Reduz-se para um terço.",
-      "Permanece exatamente igual.",
-      "Anula-se por completo."
-    ],
-    "correctIndex": 0,
-    "explanation": "Como Δx = F / k, a deformação é diretamente proporcional à força aplicada. Triplicando a força, a deformação triplica.",
-    "distractorAnalysis": [
-      "Está incorreta: A deformação só se reduziria a um terço se a força fosse dividida por três.",
-      "Está incorreta: A deformação varia linearmente com a força e não permanece inalterada.",
-      "Está incorreta: A deformação só seria nula se a força aplicada fosse retirada (F = 0)."
-    ],
-    "nursingApplication": "Demonstra a proporcionalidade direta que permite usar molas para criar escalas de medição linear."
-  },
-  {
-    "id": 2297,
-    "topicId": 2,
-    "question": "Porque é que a constante elástica k de uma mola 'apenas se aplica aos corpos com tamanho e espessura definidos' (Slide 42)?",
-    "options": [
-      "Porque as molas reais não possuem massa inercial mensurável no Sistema Internacional.",
-      "Porque o valor de k depende tanto do material de que a mola é feita como das suas dimensões geométricas específicas (comprimento e diâmetro).",
-      "Porque a Lei de Hooke foi revogada pela mecânica quântica para corpos com espessura variável.",
-      "Porque as molas só operam quando a gravidade da Terra é rigorosamente nula."
-    ],
-    "correctIndex": 1,
-    "explanation": "A rigidez k de um objeto particular depende do Módulo de Young do material E, da área de secção e do comprimento inicial da mola.",
-    "distractorAnalysis": [
-      "Está incorreta: Molas metálicas têm massa inercial real e mensurável em quilogramas.",
-      "Está incorreta: A Lei de Hooke continua plenamente válida e central na mecânica clássica dos materiais elásticos.",
-      "Está incorreta: A Lei de Hooke não exige gravidade nula; funciona perfeitamente à superfície da Terra."
-    ],
-    "nursingApplication": "Explica por que duas molas do mesmo aço podem ter constantes k diferentes se tiverem espessuras diferentes."
-  },
-  {
-    "id": 2298,
-    "topicId": 2,
-    "question": "Qual foi a célebre frase em latim formulada por Robert Hooke em 1660 para enunciar a Lei da Elasticidade (Slide 40)?",
-    "options": [
-      "\"Cogito, ergo sum\" (\"Penso, logo existo\").",
-      "\"Alea iacta est\" (\"A sorte está lançada\").",
-      "\"Ut tensio, sic vis\" (\"Como a extensão, assim a força\").",
-      "\"Carpe diem, quam minimum credula postero\" (\"Aproveita o dia\")."
-    ],
-    "correctIndex": 2,
-    "explanation": "Hooke publicou 'Ut tensio, sic vis' para expressar que a força elástica exercida é proporcional à extensão provocada.",
-    "distractorAnalysis": [
-      "Está incorreta: 'Cogito, ergo sum' é o princípio filosófico de René Descartes, alheio à elasticidade dos materiais.",
-      "Está incorreta: 'Alea iacta est' é a famosa frase de Júlio César ao atravessar o rio Rubicão.",
-      "Está incorreta: 'Carpe diem' é uma ode poética do poeta romano Horácio sem relação com física mecânica."
-    ],
-    "nursingApplication": "Citação histórica lecionada no programa curricular dos slides de Biofísica de Paulo Pereira."
-  },
-  {
-    "id": 2299,
-    "topicId": 2,
-    "question": "Qual é a expressão matemática da Lei Fundamental da Elasticidade de Hooke para uma mola (Slide 41)?",
-    "options": [
-      "F = k / Δx (a força elástica é a razão entre a constante elástica e a deformação).",
-      "F = k + Δx (a força elástica é a soma da constante com o alongamento).",
-      "F = m · a (a força elástica é a massa multiplicada pela aceleração).",
-      "F = k · Δx (a força elástica é igual à constante elástica multiplicada pela deformação absoluta)."
-    ],
-    "correctIndex": 3,
-    "explanation": "A Lei de Hooke para molas estabelece que a força restauradora é proporcional à deformação absoluta: F = k · Δx.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir a constante pela deformação (k / Δx) viola a linearidade dimensional da Lei de Hooke.",
-      "Está incorreta: Somar uma constante em N/m com uma distância em metros viola a homogeneidade dimensional.",
-      "Está incorreta: F = m·a é a 2ª Lei de Newton da dinâmica, não a Lei de Hooke da elasticidade linear."
-    ],
-    "nursingApplication": "Fórmula de base para o funcionamento de dinamómetros e balanças de mola utilizadas no hospital."
-  },
-  {
-    "id": 2300,
-    "topicId": 2,
-    "question": "Se uma mola tem uma constante elástica k = 90 N/m e sofre um alongamento de 0.03 m, qual é a força exercida pela mola?",
-    "options": [
-      "2.7 N.",
-      "3000.0 N.",
-      "90.03 N.",
-      "2.7 kg."
-    ],
-    "correctIndex": 0,
-    "explanation": "Pela Lei de Hooke: F = k · Δx = 90 N/m · 0.03 m = 2.7 N.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividiu a constante elástica pelo alongamento em vez de multiplicar (F = k · Δx).",
-      "Está incorreta: Somou a constante com o alongamento, operação dimensionalmente incorreta.",
-      "Está incorreta: A força elástica mede-se em Newtons (N) e não em quilogramas (kg)."
-    ],
-    "nursingApplication": "Permite calcular a força exercida por uma mola de tração calibrada em ortopedia."
-  },
-  {
-    "id": 2301,
-    "topicId": 2,
-    "question": "O que é a Tensão Mecânica (σ) na mecânica dos materiais elásticos (Slide 43)?",
-    "options": [
-      "O produto da massa do corpo pelo seu volume geométrico total no vácuo.",
-      "A intensidade da força aplicada dividida pela área da secção transversal sobre a qual atua (σ = F / A).",
-      "O tempo decorrido até que o corpo sofra fratura irreversível sob carga contínua.",
-      "A variação relativa de temperatura molecular por segundo de atrito superficial."
-    ],
-    "correctIndex": 1,
-    "explanation": "A tensão mecânica (σ) representa a concentração de força por unidade de área, expressa em Pascal (N/m²).",
-    "distractorAnalysis": [
-      "Está incorreta: Massa multiplicada por volume é uma grandeza sem significado físico direto na mecânica.",
-      "Está incorreta: O tempo até à fratura mede a durabilidade à fadiga ou fluência, não a tensão instantânea.",
-      "Está incorreta: Variação de temperatura é uma grandeza térmica, não a definição mecânica de tensão."
-    ],
-    "nursingApplication": "Conceito fundamental para avaliar a pressão e tensão que atuam sobre o tecido ósseo e apoios."
-  },
-  {
-    "id": 2302,
-    "topicId": 2,
-    "question": "No Sistema Internacional (SI), qual é a unidade correta da Tensão Mecânica (σ)?",
-    "options": [
-      "Newton (N), equivalente a kg·m/s².",
-      "Joule (J), equivalente a N·m.",
-      "Pascal (Pa), equivalente a Newton por metro quadrado (N/m²).",
-      "Quilograma por metro cúbico (kg/m³)."
-    ],
-    "correctIndex": 2,
-    "explanation": "Como σ = F / A, mede-se em Newtons por metro quadrado (N/m²), cuja unidade equivalente é o Pascal (Pa).",
-    "distractorAnalysis": [
-      "Está incorreta: O Newton (N) mede a força pura total, e não a força distribuída por unidade de área transversal.",
-      "Está incorreta: O Joule (J) é unidade de energia e trabalho mecânico, não de tensão mecânica.",
-      "Está incorreta: kg/m³ é a unidade da densidade volumétrica de massa, não de tensão mecânica."
-    ],
-    "nursingApplication": "Grandes tensões mecânicas são frequentemente expressas em Megapascais (1 MPa = 10⁶ Pa)."
-  },
-  {
-    "id": 2303,
-    "topicId": 2,
-    "question": "O que é a Deformação Relativa (ou Unitária, ε) de uma barra elástica?",
-    "options": [
-      "O produto da força aplicada pela área de secção transversal: F · A.",
-      "A velocidade de propagação das ondas elásticas no vácuo em m/s.",
-      "A massa total do corpo dividida pelo tempo de aplicação da carga em kg/s.",
-      "A razão entre o alongamento absoluto (ΔL) e o comprimento inicial (L0) da barra: ε = ΔL / L0."
-    ],
-    "correctIndex": 3,
-    "explanation": "A deformação relativa (ε = ΔL / L0) mede a percentagem ou fração de comprimento deformado em relação ao original.",
-    "distractorAnalysis": [
-      "Está incorreta: F · A não representa deformação; a tensão mecânica é F / A.",
-      "Está incorreta: Velocidade de propagação é uma grandeza acústica cinemática em m/s.",
-      "Está incorreta: Massa por tempo é caudal mássico em kg/s, sem relação com a deformação geométrica relativa."
-    ],
-    "nursingApplication": "Como é a razão entre dois comprimentos (m / m), a deformação relativa é uma grandeza adimensional."
-  },
-  {
-    "id": 2304,
-    "topicId": 2,
-    "question": "Qual é a unidade de medida da Deformação Relativa (ε) no Sistema Internacional?",
-    "options": [
-      "É uma grandeza ADIMENSIONAL (não tem unidades físicas, podendo ser expressa em percentagem).",
-      "Mede-se estritamente em Newtons por segundo quadrado (N/s²).",
-      "Mede-se em Joules por quilograma cúbico (J/kg³).",
-      "Mede-se obrigatoriamente em Pascal-segundo (Pa·s)."
-    ],
-    "correctIndex": 0,
-    "explanation": "Como resulta da razão entre dois comprimentos em metros (ΔL / L0 = m / m), os metros cancelam-se, tornando ε adimensional.",
-    "distractorAnalysis": [
-      "Está incorreta: N/s² não é a unidade de deformação relativa; é dimensionalmente incompatível.",
-      "Está incorreta: J/kg³ não é unidade física de deformação relativa.",
-      "Está incorreta: Pascal-segundo (Pa·s) é a unidade de viscosidade dinâmica no SI, não de deformação."
-    ],
-    "nursingApplication": "Uma deformação relativa de 0,02 significa que o osso ou material alongou 2% em relação ao inicial."
-  },
-  {
-    "id": 2305,
-    "topicId": 2,
-    "question": "Qual é o enunciado da Lei de Hooke Generalizada para materiais sob tensão elástica (Slide 43)?",
-    "options": [
-      "σ = E / ε (a tensão é a razão entre o Módulo de Young e a deformação).",
-      "σ = E · ε (a tensão mecânica é igual ao Módulo de Young multiplicado pela deformação relativa).",
-      "σ = E + ε (a tensão é a soma do Módulo de Young com a deformação).",
-      "σ = m · g (a tensão é o produto da massa pela aceleração gravítica)."
-    ],
-    "correctIndex": 1,
-    "explanation": "A Lei de Hooke generalizada para sólidos estabelece a proporcionalidade linear entre tensão e deformação: σ = E · ε.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir o Módulo pela deformação (E / ε) inverte a proporcionalidade direta da elasticidade linear.",
-      "Está incorreta: Somar uma grandeza com unidades de pressão (E em Pa) com uma grandeza adimensional (ε) viola a homogeneidade.",
-      "Está incorreta: m · g é a fórmula da força peso gravitacional, não a Lei de Hooke generalizada da elasticidade."
-    ],
-    "nursingApplication": "Equação mestra utilizada para prever a deformação sofrida por materiais biológicos e implantes."
-  },
-  {
-    "id": 2306,
-    "topicId": 2,
-    "question": "O que mede e representa o Módulo de Young (E) na física dos materiais?",
-    "options": [
-      "A quantidade total de átomos pesados contidos no núcleo de um miligrama de material.",
-      "A velocidade com que um corpo atinge o equilíbrio térmico no interior de um forno.",
-      "A rigidez intrínseca de um material perante forças de tração e compressão longitudinal (E = σ / ε).",
-      "A permeabilidade magnética relativa do vácuo no sistema eletrostático de unidades."
-    ],
-    "correctIndex": 2,
-    "explanation": "O Módulo de Young mede a oposição de um material a sofrer deformação elástica longitudinal: quanto maior o E, mais rígido o material.",
-    "distractorAnalysis": [
-      "Está incorreta: Quantidade de átomos no núcleo é número de massa atómica, sem relação com elasticidade mecânica.",
-      "Está incorreta: Velocidade de equilíbrio térmico é condutividade e difusividade térmica em termodinâmica.",
-      "Está incorreta: Permeabilidade do vácuo é uma constante eletromagnética (μ0), não o módulo elástico de um sólido."
-    ],
-    "nursingApplication": "Permite comparar a rigidez intrínseca do aço com a do osso e da borracha independentemente do formato."
-  },
-  {
-    "id": 2307,
-    "topicId": 2,
-    "question": "Uma força de tração de 2000 N é aplicada a uma barra cilíndrica de área de secção transversal igual a 0,001 m² (10 cm²). Qual é a tensão mecânica σ suportada pela barra?",
-    "options": [
-      "2 Pa.",
-      "200 000 Pa.",
-      "20 000 N.",
-      "2 000 000 Pa (2 MPa)."
-    ],
-    "correctIndex": 3,
-    "explanation": "Pela definição de tensão mecânica: σ = F / A = 2000 N / 0,001 m² = 2 000 000 N/m² = 2 MPa.",
-    "distractorAnalysis": [
-      "Está incorreta: 2 Pa resultaria de dividir 2000 por 1000 de forma incorreta sem respeitar a área dada.",
-      "Está incorreta: 200 000 Pa corresponderia a uma área de 0,01 m², e não 0,001 m².",
-      "Está incorreta: A tensão mecânica mede-se em Pascal (Pa) ou N/m², e não em Newtons (N)."
-    ],
-    "nursingApplication": "Cálculo prático para verificar se a tensão aplicada permanece abaixo do limite de segurança do material."
-  },
-  {
-    "id": 2308,
-    "topicId": 2,
-    "question": "Se uma barra de osso de 0,5 m de comprimento inicial sofrer um alongamento de 0,001 m sob tração, qual é a sua deformação relativa ε?",
-    "options": [
-      "0,002 (ou 0,2%).",
-      "0,0005 m.",
-      "2 m.",
-      "500 Pa."
-    ],
-    "correctIndex": 0,
-    "explanation": "Pela definição de deformação relativa: ε = ΔL / L0 = 0,001 m / 0,5 m = 0,002 (que equivale a 0,2%).",
-    "distractorAnalysis": [
-      "Está incorreta: 0,0005 m é a multiplicação dos valores em vez da divisão, além de ter unidade de metros.",
-      "Está incorreta: 2 m é a razão inversa (L0 / ΔL) com unidades de metros, o que está dimensionalmente errado.",
-      "Está incorreta: A deformação relativa é adimensional e não tem unidade de Pascal (Pa), que é unidade de tensão."
-    ],
-    "nursingApplication": "Demonstra como calcular a percentagem de deformação de um segmento ósseo sob carga."
-  },
-  {
-    "id": 2309,
-    "topicId": 2,
-    "question": "O que é a Tensão Mecânica (σ) na mecânica dos materiais elásticos (Slide 43)?",
-    "options": [
-      "O produto da massa do corpo pelo seu volume geométrico total no vácuo.",
-      "A intensidade da força aplicada dividida pela área da secção transversal sobre a qual atua (σ = F / A).",
-      "O tempo decorrido até que o corpo sofra fratura irreversível sob carga contínua.",
-      "A variação relativa de temperatura molecular por segundo de atrito superficial."
-    ],
-    "correctIndex": 1,
-    "explanation": "A tensão mecânica (σ) representa a concentração de força por unidade de área, expressa em Pascal (N/m²).",
-    "distractorAnalysis": [
-      "Está incorreta: Massa multiplicada por volume é uma grandeza sem significado físico direto na mecânica.",
-      "Está incorreta: O tempo até à fratura mede a durabilidade à fadiga ou fluência, não a tensão instantânea.",
-      "Está incorreta: Variação de temperatura é uma grandeza térmica, não a definição mecânica de tensão."
-    ],
-    "nursingApplication": "Conceito fundamental para avaliar a pressão e tensão que atuam sobre o tecido ósseo e apoios."
-  },
-  {
-    "id": 2310,
-    "topicId": 2,
-    "question": "No Sistema Internacional (SI), qual é a unidade correta da Tensão Mecânica (σ)?",
-    "options": [
-      "Newton (N), equivalente a kg·m/s².",
-      "Joule (J), equivalente a N·m.",
-      "Pascal (Pa), equivalente a Newton por metro quadrado (N/m²).",
-      "Quilograma por metro cúbico (kg/m³)."
-    ],
-    "correctIndex": 2,
-    "explanation": "Como σ = F / A, mede-se em Newtons por metro quadrado (N/m²), cuja unidade equivalente é o Pascal (Pa).",
-    "distractorAnalysis": [
-      "Está incorreta: O Newton (N) mede a força pura total, e não a força distribuída por unidade de área transversal.",
-      "Está incorreta: O Joule (J) é unidade de energia e trabalho mecânico, não de tensão mecânica.",
-      "Está incorreta: kg/m³ é a unidade da densidade volumétrica de massa, não de tensão mecânica."
-    ],
-    "nursingApplication": "Grandes tensões mecânicas são frequentemente expressas em Megapascais (1 MPa = 10⁶ Pa)."
-  },
-  {
-    "id": 2311,
-    "topicId": 2,
-    "question": "O que é a Deformação Relativa (ou Unitária, ε) de uma barra elástica?",
-    "options": [
-      "O produto da força aplicada pela área de secção transversal: F · A.",
-      "A velocidade de propagação das ondas elásticas no vácuo em m/s.",
-      "A massa total do corpo dividida pelo tempo de aplicação da carga em kg/s.",
-      "A razão entre o alongamento absoluto (ΔL) e o comprimento inicial (L0) da barra: ε = ΔL / L0."
-    ],
-    "correctIndex": 3,
-    "explanation": "A deformação relativa (ε = ΔL / L0) mede a percentagem ou fração de comprimento deformado em relação ao original.",
-    "distractorAnalysis": [
-      "Está incorreta: F · A não representa deformação; a tensão mecânica é F / A.",
-      "Está incorreta: Velocidade de propagação é uma grandeza acústica cinemática em m/s.",
-      "Está incorreta: Massa por tempo é caudal mássico em kg/s, sem relação com a deformação geométrica relativa."
-    ],
-    "nursingApplication": "Como é a razão entre dois comprimentos (m / m), a deformação relativa é uma grandeza adimensional."
-  },
-  {
-    "id": 2312,
-    "topicId": 2,
-    "question": "Qual é a unidade de medida da Deformação Relativa (ε) no Sistema Internacional?",
-    "options": [
-      "É uma grandeza ADIMENSIONAL (não tem unidades físicas, podendo ser expressa em percentagem).",
-      "Mede-se estritamente em Newtons por segundo quadrado (N/s²).",
-      "Mede-se em Joules por quilograma cúbico (J/kg³).",
-      "Mede-se obrigatoriamente em Pascal-segundo (Pa·s)."
-    ],
-    "correctIndex": 0,
-    "explanation": "Como resulta da razão entre dois comprimentos em metros (ΔL / L0 = m / m), os metros cancelam-se, tornando ε adimensional.",
-    "distractorAnalysis": [
-      "Está incorreta: N/s² não é a unidade de deformação relativa; é dimensionalmente incompatível.",
-      "Está incorreta: J/kg³ não é unidade física de deformação relativa.",
-      "Está incorreta: Pascal-segundo (Pa·s) é a unidade de viscosidade dinâmica no SI, não de deformação."
-    ],
-    "nursingApplication": "Uma deformação relativa de 0,02 significa que o osso ou material alongou 2% em relação ao inicial."
-  },
-  {
-    "id": 2313,
-    "topicId": 2,
-    "question": "Qual é o enunciado da Lei de Hooke Generalizada para materiais sob tensão elástica (Slide 43)?",
-    "options": [
-      "σ = E / ε (a tensão é a razão entre o Módulo de Young e a deformação).",
-      "σ = E · ε (a tensão mecânica é igual ao Módulo de Young multiplicado pela deformação relativa).",
-      "σ = E + ε (a tensão é a soma do Módulo de Young com a deformação).",
-      "σ = m · g (a tensão é o produto da massa pela aceleração gravítica)."
-    ],
-    "correctIndex": 1,
-    "explanation": "A Lei de Hooke generalizada para sólidos estabelece a proporcionalidade linear entre tensão e deformação: σ = E · ε.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir o Módulo pela deformação (E / ε) inverte a proporcionalidade direta da elasticidade linear.",
-      "Está incorreta: Somar uma grandeza com unidades de pressão (E em Pa) com uma grandeza adimensional (ε) viola a homogeneidade.",
-      "Está incorreta: m · g é a fórmula da força peso gravitacional, não a Lei de Hooke generalizada da elasticidade."
-    ],
-    "nursingApplication": "Equação mestra utilizada para prever a deformação sofrida por materiais biológicos e implantes."
-  },
-  {
-    "id": 2314,
-    "topicId": 2,
-    "question": "O que mede e representa o Módulo de Young (E) na física dos materiais?",
-    "options": [
-      "A quantidade total de átomos pesados contidos no núcleo de um miligrama de material.",
-      "A velocidade com que um corpo atinge o equilíbrio térmico no interior de um forno.",
-      "A rigidez intrínseca de um material perante forças de tração e compressão longitudinal (E = σ / ε).",
-      "A permeabilidade magnética relativa do vácuo no sistema eletrostático de unidades."
-    ],
-    "correctIndex": 2,
-    "explanation": "O Módulo de Young mede a oposição de um material a sofrer deformação elástica longitudinal: quanto maior o E, mais rígido o material.",
-    "distractorAnalysis": [
-      "Está incorreta: Quantidade de átomos no núcleo é número de massa atómica, sem relação com elasticidade mecânica.",
-      "Está incorreta: Velocidade de equilíbrio térmico é condutividade e difusividade térmica em termodinâmica.",
-      "Está incorreta: Permeabilidade do vácuo é uma constante eletromagnética (μ0), não o módulo elástico de um sólido."
-    ],
-    "nursingApplication": "Permite comparar a rigidez intrínseca do aço com a do osso e da borracha independentemente do formato."
-  },
-  {
-    "id": 2315,
-    "topicId": 2,
-    "question": "Uma força de tração de 2000 N é aplicada a uma barra cilíndrica de área de secção transversal igual a 0,001 m² (10 cm²). Qual é a tensão mecânica σ suportada pela barra?",
-    "options": [
-      "2 Pa.",
-      "200 000 Pa.",
-      "20 000 N.",
-      "2 000 000 Pa (2 MPa)."
-    ],
-    "correctIndex": 3,
-    "explanation": "Pela definição de tensão mecânica: σ = F / A = 2000 N / 0,001 m² = 2 000 000 N/m² = 2 MPa.",
-    "distractorAnalysis": [
-      "Está incorreta: 2 Pa resultaria de dividir 2000 por 1000 de forma incorreta sem respeitar a área dada.",
-      "Está incorreta: 200 000 Pa corresponderia a uma área de 0,01 m², e não 0,001 m².",
-      "Está incorreta: A tensão mecânica mede-se em Pascal (Pa) ou N/m², e não em Newtons (N)."
-    ],
-    "nursingApplication": "Cálculo prático para verificar se a tensão aplicada permanece abaixo do limite de segurança do material."
-  },
-  {
-    "id": 2316,
-    "topicId": 2,
-    "question": "Se uma barra de osso de 0,5 m de comprimento inicial sofrer um alongamento de 0,001 m sob tração, qual é a sua deformação relativa ε?",
-    "options": [
-      "0,002 (ou 0,2%).",
-      "0,0005 m.",
-      "2 m.",
-      "500 Pa."
-    ],
-    "correctIndex": 0,
-    "explanation": "Pela definição de deformação relativa: ε = ΔL / L0 = 0,001 m / 0,5 m = 0,002 (que equivale a 0,2%).",
-    "distractorAnalysis": [
-      "Está incorreta: 0,0005 m é a multiplicação dos valores em vez da divisão, além de ter unidade de metros.",
-      "Está incorreta: 2 m é a razão inversa (L0 / ΔL) com unidades de metros, o que está dimensionalmente errado.",
-      "Está incorreta: A deformação relativa é adimensional e não tem unidade de Pascal (Pa), que é unidade de tensão."
-    ],
-    "nursingApplication": "Demonstra como calcular a percentagem de deformação de um segmento ósseo sob carga."
-  },
-  {
-    "id": 2317,
-    "topicId": 2,
-    "question": "O que é a Tensão Mecânica (σ) na mecânica dos materiais elásticos (Slide 43)?",
-    "options": [
-      "O produto da massa do corpo pelo seu volume geométrico total no vácuo.",
-      "A intensidade da força aplicada dividida pela área da secção transversal sobre a qual atua (σ = F / A).",
-      "O tempo decorrido até que o corpo sofra fratura irreversível sob carga contínua.",
-      "A variação relativa de temperatura molecular por segundo de atrito superficial."
-    ],
-    "correctIndex": 1,
-    "explanation": "A tensão mecânica (σ) representa a concentração de força por unidade de área, expressa em Pascal (N/m²).",
-    "distractorAnalysis": [
-      "Está incorreta: Massa multiplicada por volume é uma grandeza sem significado físico direto na mecânica.",
-      "Está incorreta: O tempo até à fratura mede a durabilidade à fadiga ou fluência, não a tensão instantânea.",
-      "Está incorreta: Variação de temperatura é uma grandeza térmica, não a definição mecânica de tensão."
-    ],
-    "nursingApplication": "Conceito fundamental para avaliar a pressão e tensão que atuam sobre o tecido ósseo e apoios."
-  },
-  {
-    "id": 2318,
-    "topicId": 2,
-    "question": "No Sistema Internacional (SI), qual é a unidade correta da Tensão Mecânica (σ)?",
-    "options": [
-      "Newton (N), equivalente a kg·m/s².",
-      "Joule (J), equivalente a N·m.",
-      "Pascal (Pa), equivalente a Newton por metro quadrado (N/m²).",
-      "Quilograma por metro cúbico (kg/m³)."
-    ],
-    "correctIndex": 2,
-    "explanation": "Como σ = F / A, mede-se em Newtons por metro quadrado (N/m²), cuja unidade equivalente é o Pascal (Pa).",
-    "distractorAnalysis": [
-      "Está incorreta: O Newton (N) mede a força pura total, e não a força distribuída por unidade de área transversal.",
-      "Está incorreta: O Joule (J) é unidade de energia e trabalho mecânico, não de tensão mecânica.",
-      "Está incorreta: kg/m³ é a unidade da densidade volumétrica de massa, não de tensão mecânica."
-    ],
-    "nursingApplication": "Grandes tensões mecânicas são frequentemente expressas em Megapascais (1 MPa = 10⁶ Pa)."
-  },
-  {
-    "id": 2319,
-    "topicId": 2,
-    "question": "O que é a Deformação Relativa (ou Unitária, ε) de uma barra elástica?",
-    "options": [
-      "O produto da força aplicada pela área de secção transversal: F · A.",
-      "A velocidade de propagação das ondas elásticas no vácuo em m/s.",
-      "A massa total do corpo dividida pelo tempo de aplicação da carga em kg/s.",
-      "A razão entre o alongamento absoluto (ΔL) e o comprimento inicial (L0) da barra: ε = ΔL / L0."
-    ],
-    "correctIndex": 3,
-    "explanation": "A deformação relativa (ε = ΔL / L0) mede a percentagem ou fração de comprimento deformado em relação ao original.",
-    "distractorAnalysis": [
-      "Está incorreta: F · A não representa deformação; a tensão mecânica é F / A.",
-      "Está incorreta: Velocidade de propagação é uma grandeza acústica cinemática em m/s.",
-      "Está incorreta: Massa por tempo é caudal mássico em kg/s, sem relação com a deformação geométrica relativa."
-    ],
-    "nursingApplication": "Como é a razão entre dois comprimentos (m / m), a deformação relativa é uma grandeza adimensional."
-  },
-  {
-    "id": 2320,
-    "topicId": 2,
-    "question": "Qual é a unidade de medida da Deformação Relativa (ε) no Sistema Internacional?",
-    "options": [
-      "É uma grandeza ADIMENSIONAL (não tem unidades físicas, podendo ser expressa em percentagem).",
-      "Mede-se estritamente em Newtons por segundo quadrado (N/s²).",
-      "Mede-se em Joules por quilograma cúbico (J/kg³).",
-      "Mede-se obrigatoriamente em Pascal-segundo (Pa·s)."
-    ],
-    "correctIndex": 0,
-    "explanation": "Como resulta da razão entre dois comprimentos em metros (ΔL / L0 = m / m), os metros cancelam-se, tornando ε adimensional.",
-    "distractorAnalysis": [
-      "Está incorreta: N/s² não é a unidade de deformação relativa; é dimensionalmente incompatível.",
-      "Está incorreta: J/kg³ não é unidade física de deformação relativa.",
-      "Está incorreta: Pascal-segundo (Pa·s) é a unidade de viscosidade dinâmica no SI, não de deformação."
-    ],
-    "nursingApplication": "Uma deformação relativa de 0,02 significa que o osso ou material alongou 2% em relação ao inicial."
-  },
-  {
-    "id": 2321,
-    "topicId": 2,
-    "question": "Qual é o enunciado da Lei de Hooke Generalizada para materiais sob tensão elástica (Slide 43)?",
-    "options": [
-      "σ = E / ε (a tensão é a razão entre o Módulo de Young e a deformação).",
-      "σ = E · ε (a tensão mecânica é igual ao Módulo de Young multiplicado pela deformação relativa).",
-      "σ = E + ε (a tensão é a soma do Módulo de Young com a deformação).",
-      "σ = m · g (a tensão é o produto da massa pela aceleração gravítica)."
-    ],
-    "correctIndex": 1,
-    "explanation": "A Lei de Hooke generalizada para sólidos estabelece a proporcionalidade linear entre tensão e deformação: σ = E · ε.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir o Módulo pela deformação (E / ε) inverte a proporcionalidade direta da elasticidade linear.",
-      "Está incorreta: Somar uma grandeza com unidades de pressão (E em Pa) com uma grandeza adimensional (ε) viola a homogeneidade.",
-      "Está incorreta: m · g é a fórmula da força peso gravitacional, não a Lei de Hooke generalizada da elasticidade."
-    ],
-    "nursingApplication": "Equação mestra utilizada para prever a deformação sofrida por materiais biológicos e implantes."
-  },
-  {
-    "id": 2322,
-    "topicId": 2,
-    "question": "O que mede e representa o Módulo de Young (E) na física dos materiais?",
-    "options": [
-      "A quantidade total de átomos pesados contidos no núcleo de um miligrama de material.",
-      "A velocidade com que um corpo atinge o equilíbrio térmico no interior de um forno.",
-      "A rigidez intrínseca de um material perante forças de tração e compressão longitudinal (E = σ / ε).",
-      "A permeabilidade magnética relativa do vácuo no sistema eletrostático de unidades."
-    ],
-    "correctIndex": 2,
-    "explanation": "O Módulo de Young mede a oposição de um material a sofrer deformação elástica longitudinal: quanto maior o E, mais rígido o material.",
-    "distractorAnalysis": [
-      "Está incorreta: Quantidade de átomos no núcleo é número de massa atómica, sem relação com elasticidade mecânica.",
-      "Está incorreta: Velocidade de equilíbrio térmico é condutividade e difusividade térmica em termodinâmica.",
-      "Está incorreta: Permeabilidade do vácuo é uma constante eletromagnética (μ0), não o módulo elástico de um sólido."
-    ],
-    "nursingApplication": "Permite comparar a rigidez intrínseca do aço com a do osso e da borracha independentemente do formato."
-  },
-  {
-    "id": 2323,
-    "topicId": 2,
-    "question": "Uma força de tração de 2000 N é aplicada a uma barra cilíndrica de área de secção transversal igual a 0,001 m² (10 cm²). Qual é a tensão mecânica σ suportada pela barra?",
-    "options": [
-      "2 Pa.",
-      "200 000 Pa.",
-      "20 000 N.",
-      "2 000 000 Pa (2 MPa)."
-    ],
-    "correctIndex": 3,
-    "explanation": "Pela definição de tensão mecânica: σ = F / A = 2000 N / 0,001 m² = 2 000 000 N/m² = 2 MPa.",
-    "distractorAnalysis": [
-      "Está incorreta: 2 Pa resultaria de dividir 2000 por 1000 de forma incorreta sem respeitar a área dada.",
-      "Está incorreta: 200 000 Pa corresponderia a uma área de 0,01 m², e não 0,001 m².",
-      "Está incorreta: A tensão mecânica mede-se em Pascal (Pa) ou N/m², e não em Newtons (N)."
-    ],
-    "nursingApplication": "Cálculo prático para verificar se a tensão aplicada permanece abaixo do limite de segurança do material."
-  },
-  {
-    "id": 2324,
-    "topicId": 2,
-    "question": "Se uma barra de osso de 0,5 m de comprimento inicial sofrer um alongamento de 0,001 m sob tração, qual é a sua deformação relativa ε?",
-    "options": [
-      "0,002 (ou 0,2%).",
-      "0,0005 m.",
-      "2 m.",
-      "500 Pa."
-    ],
-    "correctIndex": 0,
-    "explanation": "Pela definição de deformação relativa: ε = ΔL / L0 = 0,001 m / 0,5 m = 0,002 (que equivale a 0,2%).",
-    "distractorAnalysis": [
-      "Está incorreta: 0,0005 m é a multiplicação dos valores em vez da divisão, além de ter unidade de metros.",
-      "Está incorreta: 2 m é a razão inversa (L0 / ΔL) com unidades de metros, o que está dimensionalmente errado.",
-      "Está incorreta: A deformação relativa é adimensional e não tem unidade de Pascal (Pa), que é unidade de tensão."
-    ],
-    "nursingApplication": "Demonstra como calcular a percentagem de deformação de um segmento ósseo sob carga."
-  },
-  {
-    "id": 2325,
-    "topicId": 2,
-    "question": "O que é a Tensão Mecânica (σ) na mecânica dos materiais elásticos (Slide 43)?",
-    "options": [
-      "O produto da massa do corpo pelo seu volume geométrico total no vácuo.",
-      "A intensidade da força aplicada dividida pela área da secção transversal sobre a qual atua (σ = F / A).",
-      "O tempo decorrido até que o corpo sofra fratura irreversível sob carga contínua.",
-      "A variação relativa de temperatura molecular por segundo de atrito superficial."
-    ],
-    "correctIndex": 1,
-    "explanation": "A tensão mecânica (σ) representa a concentração de força por unidade de área, expressa em Pascal (N/m²).",
-    "distractorAnalysis": [
-      "Está incorreta: Massa multiplicada por volume é uma grandeza sem significado físico direto na mecânica.",
-      "Está incorreta: O tempo até à fratura mede a durabilidade à fadiga ou fluência, não a tensão instantânea.",
-      "Está incorreta: Variação de temperatura é uma grandeza térmica, não a definição mecânica de tensão."
-    ],
-    "nursingApplication": "Conceito fundamental para avaliar a pressão e tensão que atuam sobre o tecido ósseo e apoios."
-  },
-  {
-    "id": 2326,
-    "topicId": 2,
-    "question": "No Sistema Internacional (SI), qual é a unidade correta da Tensão Mecânica (σ)?",
-    "options": [
-      "Newton (N), equivalente a kg·m/s².",
-      "Joule (J), equivalente a N·m.",
-      "Pascal (Pa), equivalente a Newton por metro quadrado (N/m²).",
-      "Quilograma por metro cúbico (kg/m³)."
-    ],
-    "correctIndex": 2,
-    "explanation": "Como σ = F / A, mede-se em Newtons por metro quadrado (N/m²), cuja unidade equivalente é o Pascal (Pa).",
-    "distractorAnalysis": [
-      "Está incorreta: O Newton (N) mede a força pura total, e não a força distribuída por unidade de área transversal.",
-      "Está incorreta: O Joule (J) é unidade de energia e trabalho mecânico, não de tensão mecânica.",
-      "Está incorreta: kg/m³ é a unidade da densidade volumétrica de massa, não de tensão mecânica."
-    ],
-    "nursingApplication": "Grandes tensões mecânicas são frequentemente expressas em Megapascais (1 MPa = 10⁶ Pa)."
-  },
-  {
-    "id": 2327,
-    "topicId": 2,
-    "question": "O que é a Deformação Relativa (ou Unitária, ε) de uma barra elástica?",
-    "options": [
-      "O produto da força aplicada pela área de secção transversal: F · A.",
-      "A velocidade de propagação das ondas elásticas no vácuo em m/s.",
-      "A massa total do corpo dividida pelo tempo de aplicação da carga em kg/s.",
-      "A razão entre o alongamento absoluto (ΔL) e o comprimento inicial (L0) da barra: ε = ΔL / L0."
-    ],
-    "correctIndex": 3,
-    "explanation": "A deformação relativa (ε = ΔL / L0) mede a percentagem ou fração de comprimento deformado em relação ao original.",
-    "distractorAnalysis": [
-      "Está incorreta: F · A não representa deformação; a tensão mecânica é F / A.",
-      "Está incorreta: Velocidade de propagação é uma grandeza acústica cinemática em m/s.",
-      "Está incorreta: Massa por tempo é caudal mássico em kg/s, sem relação com a deformação geométrica relativa."
-    ],
-    "nursingApplication": "Como é a razão entre dois comprimentos (m / m), a deformação relativa é uma grandeza adimensional."
-  },
-  {
-    "id": 2328,
-    "topicId": 2,
-    "question": "Qual é a unidade de medida da Deformação Relativa (ε) no Sistema Internacional?",
-    "options": [
-      "É uma grandeza ADIMENSIONAL (não tem unidades físicas, podendo ser expressa em percentagem).",
-      "Mede-se estritamente em Newtons por segundo quadrado (N/s²).",
-      "Mede-se em Joules por quilograma cúbico (J/kg³).",
-      "Mede-se obrigatoriamente em Pascal-segundo (Pa·s)."
-    ],
-    "correctIndex": 0,
-    "explanation": "Como resulta da razão entre dois comprimentos em metros (ΔL / L0 = m / m), os metros cancelam-se, tornando ε adimensional.",
-    "distractorAnalysis": [
-      "Está incorreta: N/s² não é a unidade de deformação relativa; é dimensionalmente incompatível.",
-      "Está incorreta: J/kg³ não é unidade física de deformação relativa.",
-      "Está incorreta: Pascal-segundo (Pa·s) é a unidade de viscosidade dinâmica no SI, não de deformação."
-    ],
-    "nursingApplication": "Uma deformação relativa de 0,02 significa que o osso ou material alongou 2% em relação ao inicial."
-  },
-  {
-    "id": 2329,
-    "topicId": 2,
-    "question": "Qual é o enunciado da Lei de Hooke Generalizada para materiais sob tensão elástica (Slide 43)?",
-    "options": [
-      "σ = E / ε (a tensão é a razão entre o Módulo de Young e a deformação).",
-      "σ = E · ε (a tensão mecânica é igual ao Módulo de Young multiplicado pela deformação relativa).",
-      "σ = E + ε (a tensão é a soma do Módulo de Young com a deformação).",
-      "σ = m · g (a tensão é o produto da massa pela aceleração gravítica)."
-    ],
-    "correctIndex": 1,
-    "explanation": "A Lei de Hooke generalizada para sólidos estabelece a proporcionalidade linear entre tensão e deformação: σ = E · ε.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir o Módulo pela deformação (E / ε) inverte a proporcionalidade direta da elasticidade linear.",
-      "Está incorreta: Somar uma grandeza com unidades de pressão (E em Pa) com uma grandeza adimensional (ε) viola a homogeneidade.",
-      "Está incorreta: m · g é a fórmula da força peso gravitacional, não a Lei de Hooke generalizada da elasticidade."
-    ],
-    "nursingApplication": "Equação mestra utilizada para prever a deformação sofrida por materiais biológicos e implantes."
-  },
-  {
-    "id": 2330,
-    "topicId": 2,
-    "question": "O que mede e representa o Módulo de Young (E) na física dos materiais?",
-    "options": [
-      "A quantidade total de átomos pesados contidos no núcleo de um miligrama de material.",
-      "A velocidade com que um corpo atinge o equilíbrio térmico no interior de um forno.",
-      "A rigidez intrínseca de um material perante forças de tração e compressão longitudinal (E = σ / ε).",
-      "A permeabilidade magnética relativa do vácuo no sistema eletrostático de unidades."
-    ],
-    "correctIndex": 2,
-    "explanation": "O Módulo de Young mede a oposição de um material a sofrer deformação elástica longitudinal: quanto maior o E, mais rígido o material.",
-    "distractorAnalysis": [
-      "Está incorreta: Quantidade de átomos no núcleo é número de massa atómica, sem relação com elasticidade mecânica.",
-      "Está incorreta: Velocidade de equilíbrio térmico é condutividade e difusividade térmica em termodinâmica.",
-      "Está incorreta: Permeabilidade do vácuo é uma constante eletromagnética (μ0), não o módulo elástico de um sólido."
-    ],
-    "nursingApplication": "Permite comparar a rigidez intrínseca do aço com a do osso e da borracha independentemente do formato."
-  },
-  {
-    "id": 2331,
-    "topicId": 2,
-    "question": "Uma força de tração de 2000 N é aplicada a uma barra cilíndrica de área de secção transversal igual a 0,001 m² (10 cm²). Qual é a tensão mecânica σ suportada pela barra?",
-    "options": [
-      "2 Pa.",
-      "200 000 Pa.",
-      "20 000 N.",
-      "2 000 000 Pa (2 MPa)."
-    ],
-    "correctIndex": 3,
-    "explanation": "Pela definição de tensão mecânica: σ = F / A = 2000 N / 0,001 m² = 2 000 000 N/m² = 2 MPa.",
-    "distractorAnalysis": [
-      "Está incorreta: 2 Pa resultaria de dividir 2000 por 1000 de forma incorreta sem respeitar a área dada.",
-      "Está incorreta: 200 000 Pa corresponderia a uma área de 0,01 m², e não 0,001 m².",
-      "Está incorreta: A tensão mecânica mede-se em Pascal (Pa) ou N/m², e não em Newtons (N)."
-    ],
-    "nursingApplication": "Cálculo prático para verificar se a tensão aplicada permanece abaixo do limite de segurança do material."
-  },
-  {
-    "id": 2332,
-    "topicId": 2,
-    "question": "Se uma barra de osso de 0,5 m de comprimento inicial sofrer um alongamento de 0,001 m sob tração, qual é a sua deformação relativa ε?",
-    "options": [
-      "0,002 (ou 0,2%).",
-      "0,0005 m.",
-      "2 m.",
-      "500 Pa."
-    ],
-    "correctIndex": 0,
-    "explanation": "Pela definição de deformação relativa: ε = ΔL / L0 = 0,001 m / 0,5 m = 0,002 (que equivale a 0,2%).",
-    "distractorAnalysis": [
-      "Está incorreta: 0,0005 m é a multiplicação dos valores em vez da divisão, além de ter unidade de metros.",
-      "Está incorreta: 2 m é a razão inversa (L0 / ΔL) com unidades de metros, o que está dimensionalmente errado.",
-      "Está incorreta: A deformação relativa é adimensional e não tem unidade de Pascal (Pa), que é unidade de tensão."
-    ],
-    "nursingApplication": "Demonstra como calcular a percentagem de deformação de um segmento ósseo sob carga."
-  },
-  {
-    "id": 2333,
-    "topicId": 2,
-    "question": "O que é a Tensão Mecânica (σ) na mecânica dos materiais elásticos (Slide 43)?",
-    "options": [
-      "O produto da massa do corpo pelo seu volume geométrico total no vácuo.",
-      "A intensidade da força aplicada dividida pela área da secção transversal sobre a qual atua (σ = F / A).",
-      "O tempo decorrido até que o corpo sofra fratura irreversível sob carga contínua.",
-      "A variação relativa de temperatura molecular por segundo de atrito superficial."
-    ],
-    "correctIndex": 1,
-    "explanation": "A tensão mecânica (σ) representa a concentração de força por unidade de área, expressa em Pascal (N/m²).",
-    "distractorAnalysis": [
-      "Está incorreta: Massa multiplicada por volume é uma grandeza sem significado físico direto na mecânica.",
-      "Está incorreta: O tempo até à fratura mede a durabilidade à fadiga ou fluência, não a tensão instantânea.",
-      "Está incorreta: Variação de temperatura é uma grandeza térmica, não a definição mecânica de tensão."
-    ],
-    "nursingApplication": "Conceito fundamental para avaliar a pressão e tensão que atuam sobre o tecido ósseo e apoios."
-  },
-  {
-    "id": 2334,
-    "topicId": 2,
-    "question": "No Sistema Internacional (SI), qual é a unidade correta da Tensão Mecânica (σ)?",
-    "options": [
-      "Newton (N), equivalente a kg·m/s².",
-      "Joule (J), equivalente a N·m.",
-      "Pascal (Pa), equivalente a Newton por metro quadrado (N/m²).",
-      "Quilograma por metro cúbico (kg/m³)."
-    ],
-    "correctIndex": 2,
-    "explanation": "Como σ = F / A, mede-se em Newtons por metro quadrado (N/m²), cuja unidade equivalente é o Pascal (Pa).",
-    "distractorAnalysis": [
-      "Está incorreta: O Newton (N) mede a força pura total, e não a força distribuída por unidade de área transversal.",
-      "Está incorreta: O Joule (J) é unidade de energia e trabalho mecânico, não de tensão mecânica.",
-      "Está incorreta: kg/m³ é a unidade da densidade volumétrica de massa, não de tensão mecânica."
-    ],
-    "nursingApplication": "Grandes tensões mecânicas são frequentemente expressas em Megapascais (1 MPa = 10⁶ Pa)."
-  },
-  {
-    "id": 2335,
-    "topicId": 2,
-    "question": "O que é a Deformação Relativa (ou Unitária, ε) de uma barra elástica?",
-    "options": [
-      "O produto da força aplicada pela área de secção transversal: F · A.",
-      "A velocidade de propagação das ondas elásticas no vácuo em m/s.",
-      "A massa total do corpo dividida pelo tempo de aplicação da carga em kg/s.",
-      "A razão entre o alongamento absoluto (ΔL) e o comprimento inicial (L0) da barra: ε = ΔL / L0."
-    ],
-    "correctIndex": 3,
-    "explanation": "A deformação relativa (ε = ΔL / L0) mede a percentagem ou fração de comprimento deformado em relação ao original.",
-    "distractorAnalysis": [
-      "Está incorreta: F · A não representa deformação; a tensão mecânica é F / A.",
-      "Está incorreta: Velocidade de propagação é uma grandeza acústica cinemática em m/s.",
-      "Está incorreta: Massa por tempo é caudal mássico em kg/s, sem relação com a deformação geométrica relativa."
-    ],
-    "nursingApplication": "Como é a razão entre dois comprimentos (m / m), a deformação relativa é uma grandeza adimensional."
-  },
-  {
-    "id": 2336,
-    "topicId": 2,
-    "question": "Qual é a unidade de medida da Deformação Relativa (ε) no Sistema Internacional?",
-    "options": [
-      "É uma grandeza ADIMENSIONAL (não tem unidades físicas, podendo ser expressa em percentagem).",
-      "Mede-se estritamente em Newtons por segundo quadrado (N/s²).",
-      "Mede-se em Joules por quilograma cúbico (J/kg³).",
-      "Mede-se obrigatoriamente em Pascal-segundo (Pa·s)."
-    ],
-    "correctIndex": 0,
-    "explanation": "Como resulta da razão entre dois comprimentos em metros (ΔL / L0 = m / m), os metros cancelam-se, tornando ε adimensional.",
-    "distractorAnalysis": [
-      "Está incorreta: N/s² não é a unidade de deformação relativa; é dimensionalmente incompatível.",
-      "Está incorreta: J/kg³ não é unidade física de deformação relativa.",
-      "Está incorreta: Pascal-segundo (Pa·s) é a unidade de viscosidade dinâmica no SI, não de deformação."
-    ],
-    "nursingApplication": "Uma deformação relativa de 0,02 significa que o osso ou material alongou 2% em relação ao inicial."
-  },
-  {
-    "id": 2337,
-    "topicId": 2,
-    "question": "Qual é o enunciado da Lei de Hooke Generalizada para materiais sob tensão elástica (Slide 43)?",
-    "options": [
-      "σ = E / ε (a tensão é a razão entre o Módulo de Young e a deformação).",
-      "σ = E · ε (a tensão mecânica é igual ao Módulo de Young multiplicado pela deformação relativa).",
-      "σ = E + ε (a tensão é a soma do Módulo de Young com a deformação).",
-      "σ = m · g (a tensão é o produto da massa pela aceleração gravítica)."
-    ],
-    "correctIndex": 1,
-    "explanation": "A Lei de Hooke generalizada para sólidos estabelece a proporcionalidade linear entre tensão e deformação: σ = E · ε.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir o Módulo pela deformação (E / ε) inverte a proporcionalidade direta da elasticidade linear.",
-      "Está incorreta: Somar uma grandeza com unidades de pressão (E em Pa) com uma grandeza adimensional (ε) viola a homogeneidade.",
-      "Está incorreta: m · g é a fórmula da força peso gravitacional, não a Lei de Hooke generalizada da elasticidade."
-    ],
-    "nursingApplication": "Equação mestra utilizada para prever a deformação sofrida por materiais biológicos e implantes."
-  },
-  {
-    "id": 2338,
-    "topicId": 2,
-    "question": "O que mede e representa o Módulo de Young (E) na física dos materiais?",
-    "options": [
-      "A quantidade total de átomos pesados contidos no núcleo de um miligrama de material.",
-      "A velocidade com que um corpo atinge o equilíbrio térmico no interior de um forno.",
-      "A rigidez intrínseca de um material perante forças de tração e compressão longitudinal (E = σ / ε).",
-      "A permeabilidade magnética relativa do vácuo no sistema eletrostático de unidades."
-    ],
-    "correctIndex": 2,
-    "explanation": "O Módulo de Young mede a oposição de um material a sofrer deformação elástica longitudinal: quanto maior o E, mais rígido o material.",
-    "distractorAnalysis": [
-      "Está incorreta: Quantidade de átomos no núcleo é número de massa atómica, sem relação com elasticidade mecânica.",
-      "Está incorreta: Velocidade de equilíbrio térmico é condutividade e difusividade térmica em termodinâmica.",
-      "Está incorreta: Permeabilidade do vácuo é uma constante eletromagnética (μ0), não o módulo elástico de um sólido."
-    ],
-    "nursingApplication": "Permite comparar a rigidez intrínseca do aço com a do osso e da borracha independentemente do formato."
-  },
-  {
-    "id": 2339,
-    "topicId": 2,
-    "question": "Uma força de tração de 2000 N é aplicada a uma barra cilíndrica de área de secção transversal igual a 0,001 m² (10 cm²). Qual é a tensão mecânica σ suportada pela barra?",
-    "options": [
-      "2 Pa.",
-      "200 000 Pa.",
-      "20 000 N.",
-      "2 000 000 Pa (2 MPa)."
-    ],
-    "correctIndex": 3,
-    "explanation": "Pela definição de tensão mecânica: σ = F / A = 2000 N / 0,001 m² = 2 000 000 N/m² = 2 MPa.",
-    "distractorAnalysis": [
-      "Está incorreta: 2 Pa resultaria de dividir 2000 por 1000 de forma incorreta sem respeitar a área dada.",
-      "Está incorreta: 200 000 Pa corresponderia a uma área de 0,01 m², e não 0,001 m².",
-      "Está incorreta: A tensão mecânica mede-se em Pascal (Pa) ou N/m², e não em Newtons (N)."
-    ],
-    "nursingApplication": "Cálculo prático para verificar se a tensão aplicada permanece abaixo do limite de segurança do material."
-  },
-  {
-    "id": 2340,
-    "topicId": 2,
-    "question": "Se uma barra de osso de 0,5 m de comprimento inicial sofrer um alongamento de 0,001 m sob tração, qual é a sua deformação relativa ε?",
-    "options": [
-      "0,002 (ou 0,2%).",
-      "0,0005 m.",
-      "2 m.",
-      "500 Pa."
-    ],
-    "correctIndex": 0,
-    "explanation": "Pela definição de deformação relativa: ε = ΔL / L0 = 0,001 m / 0,5 m = 0,002 (que equivale a 0,2%).",
-    "distractorAnalysis": [
-      "Está incorreta: 0,0005 m é a multiplicação dos valores em vez da divisão, além de ter unidade de metros.",
-      "Está incorreta: 2 m é a razão inversa (L0 / ΔL) com unidades de metros, o que está dimensionalmente errado.",
-      "Está incorreta: A deformação relativa é adimensional e não tem unidade de Pascal (Pa), que é unidade de tensão."
-    ],
-    "nursingApplication": "Demonstra como calcular a percentagem de deformação de um segmento ósseo sob carga."
-  },
-  {
-    "id": 2341,
-    "topicId": 2,
-    "question": "O que é a Tensão Mecânica (σ) na mecânica dos materiais elásticos (Slide 43)?",
-    "options": [
-      "O produto da massa do corpo pelo seu volume geométrico total no vácuo.",
-      "A intensidade da força aplicada dividida pela área da secção transversal sobre a qual atua (σ = F / A).",
-      "O tempo decorrido até que o corpo sofra fratura irreversível sob carga contínua.",
-      "A variação relativa de temperatura molecular por segundo de atrito superficial."
-    ],
-    "correctIndex": 1,
-    "explanation": "A tensão mecânica (σ) representa a concentração de força por unidade de área, expressa em Pascal (N/m²).",
-    "distractorAnalysis": [
-      "Está incorreta: Massa multiplicada por volume é uma grandeza sem significado físico direto na mecânica.",
-      "Está incorreta: O tempo até à fratura mede a durabilidade à fadiga ou fluência, não a tensão instantânea.",
-      "Está incorreta: Variação de temperatura é uma grandeza térmica, não a definição mecânica de tensão."
-    ],
-    "nursingApplication": "Conceito fundamental para avaliar a pressão e tensão que atuam sobre o tecido ósseo e apoios."
-  },
-  {
-    "id": 2342,
-    "topicId": 2,
-    "question": "No Sistema Internacional (SI), qual é a unidade correta da Tensão Mecânica (σ)?",
-    "options": [
-      "Newton (N), equivalente a kg·m/s².",
-      "Joule (J), equivalente a N·m.",
-      "Pascal (Pa), equivalente a Newton por metro quadrado (N/m²).",
-      "Quilograma por metro cúbico (kg/m³)."
-    ],
-    "correctIndex": 2,
-    "explanation": "Como σ = F / A, mede-se em Newtons por metro quadrado (N/m²), cuja unidade equivalente é o Pascal (Pa).",
-    "distractorAnalysis": [
-      "Está incorreta: O Newton (N) mede a força pura total, e não a força distribuída por unidade de área transversal.",
-      "Está incorreta: O Joule (J) é unidade de energia e trabalho mecânico, não de tensão mecânica.",
-      "Está incorreta: kg/m³ é a unidade da densidade volumétrica de massa, não de tensão mecânica."
-    ],
-    "nursingApplication": "Grandes tensões mecânicas são frequentemente expressas em Megapascais (1 MPa = 10⁶ Pa)."
-  },
-  {
-    "id": 2343,
-    "topicId": 2,
-    "question": "O que é a Deformação Relativa (ou Unitária, ε) de uma barra elástica?",
-    "options": [
-      "O produto da força aplicada pela área de secção transversal: F · A.",
-      "A velocidade de propagação das ondas elásticas no vácuo em m/s.",
-      "A massa total do corpo dividida pelo tempo de aplicação da carga em kg/s.",
-      "A razão entre o alongamento absoluto (ΔL) e o comprimento inicial (L0) da barra: ε = ΔL / L0."
-    ],
-    "correctIndex": 3,
-    "explanation": "A deformação relativa (ε = ΔL / L0) mede a percentagem ou fração de comprimento deformado em relação ao original.",
-    "distractorAnalysis": [
-      "Está incorreta: F · A não representa deformação; a tensão mecânica é F / A.",
-      "Está incorreta: Velocidade de propagação é uma grandeza acústica cinemática em m/s.",
-      "Está incorreta: Massa por tempo é caudal mássico em kg/s, sem relação com a deformação geométrica relativa."
-    ],
-    "nursingApplication": "Como é a razão entre dois comprimentos (m / m), a deformação relativa é uma grandeza adimensional."
-  },
-  {
-    "id": 2344,
-    "topicId": 2,
-    "question": "Qual é a unidade de medida da Deformação Relativa (ε) no Sistema Internacional?",
-    "options": [
-      "É uma grandeza ADIMENSIONAL (não tem unidades físicas, podendo ser expressa em percentagem).",
-      "Mede-se estritamente em Newtons por segundo quadrado (N/s²).",
-      "Mede-se em Joules por quilograma cúbico (J/kg³).",
-      "Mede-se obrigatoriamente em Pascal-segundo (Pa·s)."
-    ],
-    "correctIndex": 0,
-    "explanation": "Como resulta da razão entre dois comprimentos em metros (ΔL / L0 = m / m), os metros cancelam-se, tornando ε adimensional.",
-    "distractorAnalysis": [
-      "Está incorreta: N/s² não é a unidade de deformação relativa; é dimensionalmente incompatível.",
-      "Está incorreta: J/kg³ não é unidade física de deformação relativa.",
-      "Está incorreta: Pascal-segundo (Pa·s) é a unidade de viscosidade dinâmica no SI, não de deformação."
-    ],
-    "nursingApplication": "Uma deformação relativa de 0,02 significa que o osso ou material alongou 2% em relação ao inicial."
-  },
-  {
-    "id": 2345,
-    "topicId": 2,
-    "question": "Qual é o enunciado da Lei de Hooke Generalizada para materiais sob tensão elástica (Slide 43)?",
-    "options": [
-      "σ = E / ε (a tensão é a razão entre o Módulo de Young e a deformação).",
-      "σ = E · ε (a tensão mecânica é igual ao Módulo de Young multiplicado pela deformação relativa).",
-      "σ = E + ε (a tensão é a soma do Módulo de Young com a deformação).",
-      "σ = m · g (a tensão é o produto da massa pela aceleração gravítica)."
-    ],
-    "correctIndex": 1,
-    "explanation": "A Lei de Hooke generalizada para sólidos estabelece a proporcionalidade linear entre tensão e deformação: σ = E · ε.",
-    "distractorAnalysis": [
-      "Está incorreta: Dividir o Módulo pela deformação (E / ε) inverte a proporcionalidade direta da elasticidade linear.",
-      "Está incorreta: Somar uma grandeza com unidades de pressão (E em Pa) com uma grandeza adimensional (ε) viola a homogeneidade.",
-      "Está incorreta: m · g é a fórmula da força peso gravitacional, não a Lei de Hooke generalizada da elasticidade."
-    ],
-    "nursingApplication": "Equação mestra utilizada para prever a deformação sofrida por materiais biológicos e implantes."
-  },
-  {
-    "id": 2346,
-    "topicId": 2,
-    "question": "O que mede e representa o Módulo de Young (E) na física dos materiais?",
-    "options": [
-      "A quantidade total de átomos pesados contidos no núcleo de um miligrama de material.",
-      "A velocidade com que um corpo atinge o equilíbrio térmico no interior de um forno.",
-      "A rigidez intrínseca de um material perante forças de tração e compressão longitudinal (E = σ / ε).",
-      "A permeabilidade magnética relativa do vácuo no sistema eletrostático de unidades."
-    ],
-    "correctIndex": 2,
-    "explanation": "O Módulo de Young mede a oposição de um material a sofrer deformação elástica longitudinal: quanto maior o E, mais rígido o material.",
-    "distractorAnalysis": [
-      "Está incorreta: Quantidade de átomos no núcleo é número de massa atómica, sem relação com elasticidade mecânica.",
-      "Está incorreta: Velocidade de equilíbrio térmico é condutividade e difusividade térmica em termodinâmica.",
-      "Está incorreta: Permeabilidade do vácuo é uma constante eletromagnética (μ0), não o módulo elástico de um sólido."
-    ],
-    "nursingApplication": "Permite comparar a rigidez intrínseca do aço com a do osso e da borracha independentemente do formato."
-  },
-  {
-    "id": 2347,
-    "topicId": 2,
-    "question": "Uma força de tração de 2000 N é aplicada a uma barra cilíndrica de área de secção transversal igual a 0,001 m² (10 cm²). Qual é a tensão mecânica σ suportada pela barra?",
-    "options": [
-      "2 Pa.",
-      "200 000 Pa.",
-      "20 000 N.",
-      "2 000 000 Pa (2 MPa)."
-    ],
-    "correctIndex": 3,
-    "explanation": "Pela definição de tensão mecânica: σ = F / A = 2000 N / 0,001 m² = 2 000 000 N/m² = 2 MPa.",
-    "distractorAnalysis": [
-      "Está incorreta: 2 Pa resultaria de dividir 2000 por 1000 de forma incorreta sem respeitar a área dada.",
-      "Está incorreta: 200 000 Pa corresponderia a uma área de 0,01 m², e não 0,001 m².",
-      "Está incorreta: A tensão mecânica mede-se em Pascal (Pa) ou N/m², e não em Newtons (N)."
-    ],
-    "nursingApplication": "Cálculo prático para verificar se a tensão aplicada permanece abaixo do limite de segurança do material."
-  },
-  {
-    "id": 2348,
-    "topicId": 2,
-    "question": "Se uma barra de osso de 0,5 m de comprimento inicial sofrer um alongamento de 0,001 m sob tração, qual é a sua deformação relativa ε?",
-    "options": [
-      "0,002 (ou 0,2%).",
-      "0,0005 m.",
-      "2 m.",
-      "500 Pa."
-    ],
-    "correctIndex": 0,
-    "explanation": "Pela definição de deformação relativa: ε = ΔL / L0 = 0,001 m / 0,5 m = 0,002 (que equivale a 0,2%).",
-    "distractorAnalysis": [
-      "Está incorreta: 0,0005 m é a multiplicação dos valores em vez da divisão, além de ter unidade de metros.",
-      "Está incorreta: 2 m é a razão inversa (L0 / ΔL) com unidades de metros, o que está dimensionalmente errado.",
-      "Está incorreta: A deformação relativa é adimensional e não tem unidade de Pascal (Pa), que é unidade de tensão."
-    ],
-    "nursingApplication": "Demonstra como calcular a percentagem de deformação de um segmento ósseo sob carga."
-  },
-  {
-    "id": 2349,
-    "topicId": 2,
-    "question": "O que é a Tensão Mecânica (σ) na mecânica dos materiais elásticos (Slide 43)?",
-    "options": [
-      "O produto da massa do corpo pelo seu volume geométrico total no vácuo.",
-      "A intensidade da força aplicada dividida pela área da secção transversal sobre a qual atua (σ = F / A).",
-      "O tempo decorrido até que o corpo sofra fratura irreversível sob carga contínua.",
-      "A variação relativa de temperatura molecular por segundo de atrito superficial."
-    ],
-    "correctIndex": 1,
-    "explanation": "A tensão mecânica (σ) representa a concentração de força por unidade de área, expressa em Pascal (N/m²).",
-    "distractorAnalysis": [
-      "Está incorreta: Massa multiplicada por volume é uma grandeza sem significado físico direto na mecânica.",
-      "Está incorreta: O tempo até à fratura mede a durabilidade à fadiga ou fluência, não a tensão instantânea.",
-      "Está incorreta: Variação de temperatura é uma grandeza térmica, não a definição mecânica de tensão."
-    ],
-    "nursingApplication": "Conceito fundamental para avaliar a pressão e tensão que atuam sobre o tecido ósseo e apoios."
-  },
-  {
-    "id": 2350,
-    "topicId": 2,
-    "question": "No Sistema Internacional (SI), qual é a unidade correta da Tensão Mecânica (σ)?",
-    "options": [
-      "Newton (N), equivalente a kg·m/s².",
-      "Joule (J), equivalente a N·m.",
-      "Pascal (Pa), equivalente a Newton por metro quadrado (N/m²).",
-      "Quilograma por metro cúbico (kg/m³)."
-    ],
-    "correctIndex": 2,
-    "explanation": "Como σ = F / A, mede-se em Newtons por metro quadrado (N/m²), cuja unidade equivalente é o Pascal (Pa).",
-    "distractorAnalysis": [
-      "Está incorreta: O Newton (N) mede a força pura total, e não a força distribuída por unidade de área transversal.",
-      "Está incorreta: O Joule (J) é unidade de energia e trabalho mecânico, não de tensão mecânica.",
-      "Está incorreta: kg/m³ é a unidade da densidade volumétrica de massa, não de tensão mecânica."
-    ],
-    "nursingApplication": "Grandes tensões mecânicas são frequentemente expressas em Megapascais (1 MPa = 10⁶ Pa)."
-  },
-  {
-    "id": 2351,
-    "topicId": 2,
-    "question": "Qual é o enunciado fundamental da Lei de Hooke formulada em 1660 (Slide 40)?",
-    "options": [
-      "A aceleração de um corpo rígido é inversamente proporcional ao quadrado da sua deformação angular.",
-      "A força deformadora dissipa-se instantaneamente sob a forma de radiação gama no vácuo.",
-      "Qualquer força deformadora produz deformações plásticas permanentes e irreversíveis em qualquer material.",
-      "A deformação elástica sofrida por um corpo é diretamente proporcional à intensidade da força aplicada ('Ut tensio, sic vis')."
-    ],
-    "correctIndex": 3,
-    "explanation": "Hooke estabeleceu que a extensão de uma mola ou barra elástica é proporcional à força tensora aplicada (F = k * Δx).",
-    "distractorAnalysis": [
-      "Está incorreta: A aceleração ser inversamente proporcional ao quadrado da deformação não tem fundamento na lei de Hooke.",
-      "Está incorreta: Forças mecânicas normais não emitem radiação gama.",
-      "Está incorreta: A lei de Hooke descreve deformações elásticas reversíveis, não deformações plásticas irreversíveis."
-    ],
-    "nursingApplication": "Fundamental para compreender o funcionamento de dinamómetros e a resposta elástica inicial de estruturas biológicas."
-  },
-  {
-    "id": 2352,
-    "topicId": 2,
-    "question": "Na expressão clássica da Lei de Hooke para uma mola, F = k · Δx, o que representa a grandeza 'k' (Slide 41)?",
-    "options": [
-      "A constante elástica do corpo, que mede a rigidez da estrutura e exprime-se em N/m no SI.",
-      "O coeficiente de atrito estático adimensional entre a mola e o solo de apoio.",
-      "A aceleração centrípeta gerada pela rotação do sistema elástico em torno do centro de massa.",
-      "A energia potencial gravitacional acumulada pelo corpo à altitude zero."
-    ],
-    "correctIndex": 0,
-    "explanation": "A constante elástica k (em N/m) quantifica a força necessária para produzir uma deformação unitária (1 metro).",
-    "distractorAnalysis": [
-      "Está incorreta: Coeficiente de atrito é uma grandeza adimensional que quantifica a oposição ao deslizamento entre superfícies.",
-      "Está incorreta: Aceleração centrípeta depende da velocidade angular e do raio de curvatura, não sendo a rigidez de uma mola.",
-      "Está incorreta: Energia potencial gravitacional exprime-se em Joules (J) e depende da massa, gravidade e altura."
-    ],
-    "nursingApplication": "Representa a resistência elástica que equipamentos com molas ou sensores de tração oferecem ao alongamento."
-  },
-  {
-    "id": 2353,
-    "topicId": 2,
-    "question": "De que depende o valor da constante elástica 'k' de um corpo elástico (Slide 42)?",
-    "options": [
-      "Exclusivamente da massa atómica média do material, sendo totalmente independente da sua forma e comprimento.",
-      "Das dimensões geométricas (comprimento, espessura e área) e da natureza do material constituinte.",
-      "Apenas da aceleração da gravidade local, duplicando se o ensaio for realizado na Lua.",
-      "Exclusivamente da velocidade de translação com que a força é aplicada no vácuo."
-    ],
-    "correctIndex": 1,
-    "explanation": "O slide 42 enfatiza que a constante elástica k depende do tamanho, forma e espessura definidos do corpo e não só do material.",
-    "distractorAnalysis": [
-      "Está incorreta: A constante k depende fortemente do comprimento e da secção geométrica da peça, não apenas do material atómico.",
-      "Está incorreta: A constante elástica é uma propriedade intrínseca do corpo mecânico, não dependendo da aceleração da gravidade.",
-      "Está incorreta: A rigidez k é uma propriedade elástica estática que não depende da velocidade no vácuo."
-    ],
-    "nursingApplication": "Explica por que uma mola espessa e curta é muito mais rígida (maior k) do que uma mola fina e comprida do mesmo material."
-  },
-  {
-    "id": 2354,
-    "topicId": 2,
-    "question": "Como se formula a Lei de Hooke Generalizada para meios contínuos elásticos (Slide 43)?",
-    "options": [
-      "F = m · a, onde m é a massa inercial e a é a aceleração linear do centro de massa.",
-      "E = m · c², onde E é a energia relativista em repouso e c é a velocidade da luz.",
-      "σ = E · ε, onde σ é a tensão mecânica, E é o Módulo de Young e ε é a deformação relativa.",
-      "P = ρ · g · h, onde P é a pressão hidrostática a uma profundidade vertical h."
-    ],
-    "correctIndex": 2,
-    "explanation": "A forma generalizada da Lei de Hooke estabelece que a tensão mecânica σ é proporcional à deformação relativa ε através do módulo de Young E.",
-    "distractorAnalysis": [
-      "Está incorreta: F = m · a é a Segunda Lei de Newton para o movimento de translação de partículas.",
-      "Está incorreta: E = m · c² é a equivalência massa-energia da relatividade restrita de Einstein.",
-      "Está incorreta: P = ρ · g · h é o Teorema Fundamental da Hidrostática (lei de Stevin)."
-    ],
-    "nursingApplication": "Permite analisar as tensões e deformações internas em biomateriais sem depender das dimensões totais da amostra."
-  },
-  {
-    "id": 2355,
-    "topicId": 2,
-    "question": "Na Lei de Hooke Generalizada, como se define a Tensão Mecânica (σ) (Slide 43)?",
-    "options": [
-      "O produto da força aplicada pelo intervalo de tempo durante o qual ocorre a colisão.",
-      "A variação relativa de volume dividida pela aceleração gravítica terrestre.",
-      "A raiz quadrada da energia elástica dividida pelo comprimento inicial do corpo.",
-      "A razão entre a força aplicada e a área da secção transversal sobre a qual a força atua (σ = F / A), expressa em Pa ou N/m²."
-    ],
-    "correctIndex": 3,
-    "explanation": "Tensão mecânica σ mede a intensidade de força distribuída por unidade de área de secção transversal (F/A).",
-    "distractorAnalysis": [
-      "Está incorreta: O produto da força pelo tempo de colisão define o impulso mecânico (I = F · Δt), não a tensão.",
-      "Está incorreta: A razão volumétrica pela gravidade não tem significado físico de tensão mecânica.",
-      "Está incorreta: A raiz da energia dividida pelo comprimento não define tensão mecânica."
-    ],
-    "nursingApplication": "Crucial para avaliar a pressão interna suportada por articulações e implantes biomédicos."
-  },
-  {
-    "id": 2356,
-    "topicId": 2,
-    "question": "Na Lei de Hooke Generalizada, como se define a Deformação Relativa (ε) (Slide 43)?",
-    "options": [
-      "A razão entre a variação de comprimento e o comprimento original (ε = ΔL / L₀), sendo uma grandeza adimensional.",
-      "O produto da variação de comprimento pela área da secção transversal, com unidade em metros cúbicos.",
-      "A velocidade linear instantânea com que as moléculas da extremidade se afastam durante a tração.",
-      "A força necessária para esticar a barra dividida pela densidade volumétrica do meio."
-    ],
-    "correctIndex": 0,
-    "explanation": "A deformação relativa ε quantifica o alongamento ou encurtamento percentual relativamente ao tamanho inicial (ΔL / L₀).",
-    "distractorAnalysis": [
-      "Está incorreta: O produto do comprimento pela área mede uma variação de volume, não a deformação relativa linear.",
-      "Está incorreta: Velocidade de afastamento molecular é uma taxa temporal cinemática, não a deformação relativa adimensional.",
-      "Está incorreta: Força dividida por densidade não define deformação mecânica de um corpo."
-    ],
-    "nursingApplication": "Permite comparar o alongamento percentual de tecidos biológicos curtos e compridos sob tração."
-  },
-  {
-    "id": 2357,
-    "topicId": 2,
-    "question": "O que mede fisicamente o Módulo de Young (E) de um material (Slide 43)?",
-    "options": [
-      "A viscosidade dinâmica de fluidos biológicos ideais quando escoam em regime laminar.",
-      "A rigidez intrínseca do próprio material perante solicitações axiais de tração e compressão no regime elástico.",
-      "A capacidade de um corpo emitir calor por radiação infravermelha a temperaturas elevadas.",
-      "A resistência puramente elétrica que um condutor metálico oferece à passagem de eletrões."
-    ],
-    "correctIndex": 1,
-    "explanation": "O Módulo de Young E quantifica a resistência de um material à deformação elástica (E = σ / ε), medindo a sua rigidez intrínseca.",
-    "distractorAnalysis": [
-      "Está incorreta: Viscosidade dinâmica mede o atrito interno em fluidos em movimento, não a rigidez elástica de sólidos.",
-      "Está incorreta: Emissão de radiação térmica é descrita pela lei de Stefan-Boltzmann na termodinâmica.",
-      "Está incorreta: Resistência elétrica relaciona corrente e diferença de potencial elétrico (Lei de Ohm)."
-    ],
-    "nursingApplication": "Determina a rigidez elástica de ligamentos, cartilagens e próteses ortopédicas."
-  },
-  {
-    "id": 2358,
-    "topicId": 2,
-    "question": "Qual é a unidade do Módulo de Young (E) no Sistema Internacional de Unidades (SI) (Slide 43)?",
-    "options": [
-      "Joule por segundo (J/s), equivalente a Watt (W).",
-      "Quilograma por metro cúbico (kg/m³).",
-      "N/m² (Newton por metro quadrado), equivalente a Pascal (Pa).",
-      "Metro por segundo ao quadrado (m/s²)."
-    ],
-    "correctIndex": 2,
-    "explanation": "Como E = σ / ε e a deformação ε é adimensional, o módulo de Young tem a mesma unidade de tensão: N/m² ou Pa.",
-    "distractorAnalysis": [
-      "Está incorreta: Joule por segundo é Watt, a unidade de potência mecânica ou energética.",
-      "Está incorreta: Quilograma por metro cúbico é a unidade de massa volúmica (densidade).",
-      "Está incorreta: Metro por segundo ao quadrado é a unidade de aceleração no SI."
-    ],
-    "nursingApplication": "Facilita a leitura e comparação de especificações técnicas de resistência de biomateriais."
-  },
-  {
-    "id": 2359,
-    "topicId": 2,
-    "question": "Uma mola possui constante elástica k = 500 N/m. Que força é necessária para a comprimir de 0,02 m (2 cm)?",
-    "options": [
-      "25 000 N.",
-      "0,00004 N.",
-      "250 N.",
-      "10 N."
-    ],
-    "correctIndex": 3,
-    "explanation": "Pela Lei de Hooke: F = k · Δx = 500 N/m · 0,02 m = 10 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 25 000 N resultaria de dividir incorretamente k por Δx² ou multiplicar por 50.",
-      "Está incorreta: 0,00004 N resultaria de dividir Δx por k.",
-      "Está incorreta: 250 N resultaria de uma multiplicação aritmética incorreta."
-    ],
-    "nursingApplication": "Permite calcular o esforço necessário para acionar sistemas elásticos mecânicos em suporte hospitalar."
-  },
-  {
-    "id": 2360,
-    "topicId": 2,
-    "question": "Qual é a diferença conceitual fundamental entre a Constante Elástica (k) e o Módulo de Young (E) (Slides 42 e 43)?",
-    "options": [
-      "k depende da forma e dimensões da peça em estudo, enquanto E é uma propriedade intrínseca exclusiva do material.",
-      "k aplica-se apenas a gases rarefeitos, enquanto E descreve exclusivamente o vácuo quântico.",
-      "k varia com a temperatura ambiente, enquanto E é uma constante universal inalterável no universo.",
-      "k é uma grandeza vetorial com sentido horário, enquanto E é um escalar imaginário negativo."
-    ],
-    "correctIndex": 0,
-    "explanation": "Uma barra de aço grossa tem constante k maior que um fio fino do mesmo aço, mas ambas as peças partilham exatamente o mesmo Módulo de Young E.",
-    "distractorAnalysis": [
-      "Está incorreta: Nem k nem E se aplicam a gases ou ao vácuo; ambas descrevem propriedades mecânicas de corpos e materiais sólidos.",
-      "Está incorreta: Ambas as propriedades podem variar com a temperatura em condições físicas reais.",
-      "Está incorreta: Constante elástica k e módulo de Young E são grandezas escalares reais positivas."
-    ],
-    "nursingApplication": "Fundamental para entender por que materiais iguais com espessuras diferentes resistem de modo distinto à flexão."
-  },
-  {
-    "id": 2361,
-    "topicId": 2,
-    "question": "[Variação 2] Qual é o enunciado fundamental da Lei de Hooke formulada em 1660 (Slide 40)?",
-    "options": [
-      "A aceleração de um corpo rígido é inversamente proporcional ao quadrado da sua deformação angular.",
-      "A deformação elástica sofrida por um corpo é diretamente proporcional à intensidade da força aplicada ('Ut tensio, sic vis').",
-      "A força deformadora dissipa-se instantaneamente sob a forma de radiação gama no vácuo.",
-      "Qualquer força deformadora produz deformações plásticas permanentes e irreversíveis em qualquer material."
-    ],
-    "correctIndex": 1,
-    "explanation": "Hooke estabeleceu que a extensão de uma mola ou barra elástica é proporcional à força tensora aplicada (F = k * Δx).",
-    "distractorAnalysis": [
-      "Está incorreta: A aceleração ser inversamente proporcional ao quadrado da deformação não tem fundamento na lei de Hooke.",
-      "Está incorreta: Forças mecânicas normais não emitem radiação gama.",
-      "Está incorreta: A lei de Hooke descreve deformações elásticas reversíveis, não deformações plásticas irreversíveis."
-    ],
-    "nursingApplication": "Fundamental para compreender o funcionamento de dinamómetros e a resposta elástica inicial de estruturas biológicas."
-  },
-  {
-    "id": 2362,
-    "topicId": 2,
-    "question": "[Variação 2] Na expressão clássica da Lei de Hooke para uma mola, F = k · Δx, o que representa a grandeza 'k' (Slide 41)?",
-    "options": [
-      "O coeficiente de atrito estático adimensional entre a mola e o solo de apoio.",
-      "A aceleração centrípeta gerada pela rotação do sistema elástico em torno do centro de massa.",
-      "A constante elástica do corpo, que mede a rigidez da estrutura e exprime-se em N/m no SI.",
-      "A energia potencial gravitacional acumulada pelo corpo à altitude zero."
-    ],
-    "correctIndex": 2,
-    "explanation": "A constante elástica k (em N/m) quantifica a força necessária para produzir uma deformação unitária (1 metro).",
-    "distractorAnalysis": [
-      "Está incorreta: Coeficiente de atrito é uma grandeza adimensional que quantifica a oposição ao deslizamento entre superfícies.",
-      "Está incorreta: Aceleração centrípeta depende da velocidade angular e do raio de curvatura, não sendo a rigidez de uma mola.",
-      "Está incorreta: Energia potencial gravitacional exprime-se em Joules (J) e depende da massa, gravidade e altura."
-    ],
-    "nursingApplication": "Representa a resistência elástica que equipamentos com molas ou sensores de tração oferecem ao alongamento."
-  },
-  {
-    "id": 2363,
-    "topicId": 2,
-    "question": "[Variação 2] De que depende o valor da constante elástica 'k' de um corpo elástico (Slide 42)?",
-    "options": [
-      "Exclusivamente da massa atómica média do material, sendo totalmente independente da sua forma e comprimento.",
-      "Apenas da aceleração da gravidade local, duplicando se o ensaio for realizado na Lua.",
-      "Exclusivamente da velocidade de translação com que a força é aplicada no vácuo.",
-      "Das dimensões geométricas (comprimento, espessura e área) e da natureza do material constituinte."
-    ],
-    "correctIndex": 3,
-    "explanation": "O slide 42 enfatiza que a constante elástica k depende do tamanho, forma e espessura definidos do corpo e não só do material.",
-    "distractorAnalysis": [
-      "Está incorreta: A constante k depende fortemente do comprimento e da secção geométrica da peça, não apenas do material atómico.",
-      "Está incorreta: A constante elástica é uma propriedade intrínseca do corpo mecânico, não dependendo da aceleração da gravidade.",
-      "Está incorreta: A rigidez k é uma propriedade elástica estática que não depende da velocidade no vácuo."
-    ],
-    "nursingApplication": "Explica por que uma mola espessa e curta é muito mais rígida (maior k) do que uma mola fina e comprida do mesmo material."
-  },
-  {
-    "id": 2364,
-    "topicId": 2,
-    "question": "[Variação 2] Como se formula a Lei de Hooke Generalizada para meios contínuos elásticos (Slide 43)?",
-    "options": [
-      "σ = E · ε, onde σ é a tensão mecânica, E é o Módulo de Young e ε é a deformação relativa.",
-      "F = m · a, onde m é a massa inercial e a é a aceleração linear do centro de massa.",
-      "E = m · c², onde E é a energia relativista em repouso e c é a velocidade da luz.",
-      "P = ρ · g · h, onde P é a pressão hidrostática a uma profundidade vertical h."
-    ],
-    "correctIndex": 0,
-    "explanation": "A forma generalizada da Lei de Hooke estabelece que a tensão mecânica σ é proporcional à deformação relativa ε através do módulo de Young E.",
-    "distractorAnalysis": [
-      "Está incorreta: F = m · a é a Segunda Lei de Newton para o movimento de translação de partículas.",
-      "Está incorreta: E = m · c² é a equivalência massa-energia da relatividade restrita de Einstein.",
-      "Está incorreta: P = ρ · g · h é o Teorema Fundamental da Hidrostática (lei de Stevin)."
-    ],
-    "nursingApplication": "Permite analisar as tensões e deformações internas em biomateriais sem depender das dimensões totais da amostra."
-  },
-  {
-    "id": 2365,
-    "topicId": 2,
-    "question": "[Variação 2] Na Lei de Hooke Generalizada, como se define a Tensão Mecânica (σ) (Slide 43)?",
-    "options": [
-      "O produto da força aplicada pelo intervalo de tempo durante o qual ocorre a colisão.",
-      "A razão entre a força aplicada e a área da secção transversal sobre a qual a força atua (σ = F / A), expressa em Pa ou N/m².",
-      "A variação relativa de volume dividida pela aceleração gravítica terrestre.",
-      "A raiz quadrada da energia elástica dividida pelo comprimento inicial do corpo."
-    ],
-    "correctIndex": 1,
-    "explanation": "Tensão mecânica σ mede a intensidade de força distribuída por unidade de área de secção transversal (F/A).",
-    "distractorAnalysis": [
-      "Está incorreta: O produto da força pelo tempo de colisão define o impulso mecânico (I = F · Δt), não a tensão.",
-      "Está incorreta: A razão volumétrica pela gravidade não tem significado físico de tensão mecânica.",
-      "Está incorreta: A raiz da energia dividida pelo comprimento não define tensão mecânica."
-    ],
-    "nursingApplication": "Crucial para avaliar a pressão interna suportada por articulações e implantes biomédicos."
-  },
-  {
-    "id": 2366,
-    "topicId": 2,
-    "question": "[Variação 2] Na Lei de Hooke Generalizada, como se define a Deformação Relativa (ε) (Slide 43)?",
-    "options": [
-      "O produto da variação de comprimento pela área da secção transversal, com unidade em metros cúbicos.",
-      "A velocidade linear instantânea com que as moléculas da extremidade se afastam durante a tração.",
-      "A razão entre a variação de comprimento e o comprimento original (ε = ΔL / L₀), sendo uma grandeza adimensional.",
-      "A força necessária para esticar a barra dividida pela densidade volumétrica do meio."
-    ],
-    "correctIndex": 2,
-    "explanation": "A deformação relativa ε quantifica o alongamento ou encurtamento percentual relativamente ao tamanho inicial (ΔL / L₀).",
-    "distractorAnalysis": [
-      "Está incorreta: O produto do comprimento pela área mede uma variação de volume, não a deformação relativa linear.",
-      "Está incorreta: Velocidade de afastamento molecular é uma taxa temporal cinemática, não a deformação relativa adimensional.",
-      "Está incorreta: Força dividida por densidade não define deformação mecânica de um corpo."
-    ],
-    "nursingApplication": "Permite comparar o alongamento percentual de tecidos biológicos curtos e compridos sob tração."
-  },
-  {
-    "id": 2367,
-    "topicId": 2,
-    "question": "[Variação 2] O que mede fisicamente o Módulo de Young (E) de um material (Slide 43)?",
-    "options": [
-      "A viscosidade dinâmica de fluidos biológicos ideais quando escoam em regime laminar.",
-      "A capacidade de um corpo emitir calor por radiação infravermelha a temperaturas elevadas.",
-      "A resistência puramente elétrica que um condutor metálico oferece à passagem de eletrões.",
-      "A rigidez intrínseca do próprio material perante solicitações axiais de tração e compressão no regime elástico."
-    ],
-    "correctIndex": 3,
-    "explanation": "O Módulo de Young E quantifica a resistência de um material à deformação elástica (E = σ / ε), medindo a sua rigidez intrínseca.",
-    "distractorAnalysis": [
-      "Está incorreta: Viscosidade dinâmica mede o atrito interno em fluidos em movimento, não a rigidez elástica de sólidos.",
-      "Está incorreta: Emissão de radiação térmica é descrita pela lei de Stefan-Boltzmann na termodinâmica.",
-      "Está incorreta: Resistência elétrica relaciona corrente e diferença de potencial elétrico (Lei de Ohm)."
-    ],
-    "nursingApplication": "Determina a rigidez elástica de ligamentos, cartilagens e próteses ortopédicas."
-  },
-  {
-    "id": 2368,
-    "topicId": 2,
-    "question": "[Variação 2] Qual é a unidade do Módulo de Young (E) no Sistema Internacional de Unidades (SI) (Slide 43)?",
-    "options": [
-      "N/m² (Newton por metro quadrado), equivalente a Pascal (Pa).",
-      "Joule por segundo (J/s), equivalente a Watt (W).",
-      "Quilograma por metro cúbico (kg/m³).",
-      "Metro por segundo ao quadrado (m/s²)."
-    ],
-    "correctIndex": 0,
-    "explanation": "Como E = σ / ε e a deformação ε é adimensional, o módulo de Young tem a mesma unidade de tensão: N/m² ou Pa.",
-    "distractorAnalysis": [
-      "Está incorreta: Joule por segundo é Watt, a unidade de potência mecânica ou energética.",
-      "Está incorreta: Quilograma por metro cúbico é a unidade de massa volúmica (densidade).",
-      "Está incorreta: Metro por segundo ao quadrado é a unidade de aceleração no SI."
-    ],
-    "nursingApplication": "Facilita a leitura e comparação de especificações técnicas de resistência de biomateriais."
-  },
-  {
-    "id": 2369,
-    "topicId": 2,
-    "question": "[Variação 2] Uma mola possui constante elástica k = 500 N/m. Que força é necessária para a comprimir de 0,02 m (2 cm)?",
-    "options": [
-      "25 000 N.",
-      "10 N.",
-      "0,00004 N.",
-      "250 N."
-    ],
-    "correctIndex": 1,
-    "explanation": "Pela Lei de Hooke: F = k · Δx = 500 N/m · 0,02 m = 10 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 25 000 N resultaria de dividir incorretamente k por Δx² ou multiplicar por 50.",
-      "Está incorreta: 0,00004 N resultaria de dividir Δx por k.",
-      "Está incorreta: 250 N resultaria de uma multiplicação aritmética incorreta."
-    ],
-    "nursingApplication": "Permite calcular o esforço necessário para acionar sistemas elásticos mecânicos em suporte hospitalar."
-  },
-  {
-    "id": 2370,
-    "topicId": 2,
-    "question": "[Variação 2] Qual é a diferença conceitual fundamental entre a Constante Elástica (k) e o Módulo de Young (E) (Slides 42 e 43)?",
-    "options": [
-      "k aplica-se apenas a gases rarefeitos, enquanto E descreve exclusivamente o vácuo quântico.",
-      "k varia com a temperatura ambiente, enquanto E é uma constante universal inalterável no universo.",
-      "k depende da forma e dimensões da peça em estudo, enquanto E é uma propriedade intrínseca exclusiva do material.",
-      "k é uma grandeza vetorial com sentido horário, enquanto E é um escalar imaginário negativo."
-    ],
-    "correctIndex": 2,
-    "explanation": "Uma barra de aço grossa tem constante k maior que um fio fino do mesmo aço, mas ambas as peças partilham exatamente o mesmo Módulo de Young E.",
-    "distractorAnalysis": [
-      "Está incorreta: Nem k nem E se aplicam a gases ou ao vácuo; ambas descrevem propriedades mecânicas de corpos e materiais sólidos.",
-      "Está incorreta: Ambas as propriedades podem variar com a temperatura em condições físicas reais.",
-      "Está incorreta: Constante elástica k e módulo de Young E são grandezas escalares reais positivas."
-    ],
-    "nursingApplication": "Fundamental para entender por que materiais iguais com espessuras diferentes resistem de modo distinto à flexão."
-  },
-  {
-    "id": 2371,
-    "topicId": 2,
-    "question": "[Variação 3] Qual é o enunciado fundamental da Lei de Hooke formulada em 1660 (Slide 40)?",
-    "options": [
-      "A aceleração de um corpo rígido é inversamente proporcional ao quadrado da sua deformação angular.",
-      "A força deformadora dissipa-se instantaneamente sob a forma de radiação gama no vácuo.",
-      "Qualquer força deformadora produz deformações plásticas permanentes e irreversíveis em qualquer material.",
-      "A deformação elástica sofrida por um corpo é diretamente proporcional à intensidade da força aplicada ('Ut tensio, sic vis')."
-    ],
-    "correctIndex": 3,
-    "explanation": "Hooke estabeleceu que a extensão de uma mola ou barra elástica é proporcional à força tensora aplicada (F = k * Δx).",
-    "distractorAnalysis": [
-      "Está incorreta: A aceleração ser inversamente proporcional ao quadrado da deformação não tem fundamento na lei de Hooke.",
-      "Está incorreta: Forças mecânicas normais não emitem radiação gama.",
-      "Está incorreta: A lei de Hooke descreve deformações elásticas reversíveis, não deformações plásticas irreversíveis."
-    ],
-    "nursingApplication": "Fundamental para compreender o funcionamento de dinamómetros e a resposta elástica inicial de estruturas biológicas."
-  },
-  {
-    "id": 2372,
-    "topicId": 2,
-    "question": "[Variação 3] Na expressão clássica da Lei de Hooke para uma mola, F = k · Δx, o que representa a grandeza 'k' (Slide 41)?",
-    "options": [
-      "A constante elástica do corpo, que mede a rigidez da estrutura e exprime-se em N/m no SI.",
-      "O coeficiente de atrito estático adimensional entre a mola e o solo de apoio.",
-      "A aceleração centrípeta gerada pela rotação do sistema elástico em torno do centro de massa.",
-      "A energia potencial gravitacional acumulada pelo corpo à altitude zero."
-    ],
-    "correctIndex": 0,
-    "explanation": "A constante elástica k (em N/m) quantifica a força necessária para produzir uma deformação unitária (1 metro).",
-    "distractorAnalysis": [
-      "Está incorreta: Coeficiente de atrito é uma grandeza adimensional que quantifica a oposição ao deslizamento entre superfícies.",
-      "Está incorreta: Aceleração centrípeta depende da velocidade angular e do raio de curvatura, não sendo a rigidez de uma mola.",
-      "Está incorreta: Energia potencial gravitacional exprime-se em Joules (J) e depende da massa, gravidade e altura."
-    ],
-    "nursingApplication": "Representa a resistência elástica que equipamentos com molas ou sensores de tração oferecem ao alongamento."
-  },
-  {
-    "id": 2373,
-    "topicId": 2,
-    "question": "[Variação 3] De que depende o valor da constante elástica 'k' de um corpo elástico (Slide 42)?",
-    "options": [
-      "Exclusivamente da massa atómica média do material, sendo totalmente independente da sua forma e comprimento.",
-      "Das dimensões geométricas (comprimento, espessura e área) e da natureza do material constituinte.",
-      "Apenas da aceleração da gravidade local, duplicando se o ensaio for realizado na Lua.",
-      "Exclusivamente da velocidade de translação com que a força é aplicada no vácuo."
-    ],
-    "correctIndex": 1,
-    "explanation": "O slide 42 enfatiza que a constante elástica k depende do tamanho, forma e espessura definidos do corpo e não só do material.",
-    "distractorAnalysis": [
-      "Está incorreta: A constante k depende fortemente do comprimento e da secção geométrica da peça, não apenas do material atómico.",
-      "Está incorreta: A constante elástica é uma propriedade intrínseca do corpo mecânico, não dependendo da aceleração da gravidade.",
-      "Está incorreta: A rigidez k é uma propriedade elástica estática que não depende da velocidade no vácuo."
-    ],
-    "nursingApplication": "Explica por que uma mola espessa e curta é muito mais rígida (maior k) do que uma mola fina e comprida do mesmo material."
-  },
-  {
-    "id": 2374,
-    "topicId": 2,
-    "question": "[Variação 3] Como se formula a Lei de Hooke Generalizada para meios contínuos elásticos (Slide 43)?",
-    "options": [
-      "F = m · a, onde m é a massa inercial e a é a aceleração linear do centro de massa.",
-      "E = m · c², onde E é a energia relativista em repouso e c é a velocidade da luz.",
-      "σ = E · ε, onde σ é a tensão mecânica, E é o Módulo de Young e ε é a deformação relativa.",
-      "P = ρ · g · h, onde P é a pressão hidrostática a uma profundidade vertical h."
-    ],
-    "correctIndex": 2,
-    "explanation": "A forma generalizada da Lei de Hooke estabelece que a tensão mecânica σ é proporcional à deformação relativa ε através do módulo de Young E.",
-    "distractorAnalysis": [
-      "Está incorreta: F = m · a é a Segunda Lei de Newton para o movimento de translação de partículas.",
-      "Está incorreta: E = m · c² é a equivalência massa-energia da relatividade restrita de Einstein.",
-      "Está incorreta: P = ρ · g · h é o Teorema Fundamental da Hidrostática (lei de Stevin)."
-    ],
-    "nursingApplication": "Permite analisar as tensões e deformações internas em biomateriais sem depender das dimensões totais da amostra."
-  },
-  {
-    "id": 2375,
-    "topicId": 2,
-    "question": "[Variação 3] Na Lei de Hooke Generalizada, como se define a Tensão Mecânica (σ) (Slide 43)?",
-    "options": [
-      "O produto da força aplicada pelo intervalo de tempo durante o qual ocorre a colisão.",
-      "A variação relativa de volume dividida pela aceleração gravítica terrestre.",
-      "A raiz quadrada da energia elástica dividida pelo comprimento inicial do corpo.",
-      "A razão entre a força aplicada e a área da secção transversal sobre a qual a força atua (σ = F / A), expressa em Pa ou N/m²."
-    ],
-    "correctIndex": 3,
-    "explanation": "Tensão mecânica σ mede a intensidade de força distribuída por unidade de área de secção transversal (F/A).",
-    "distractorAnalysis": [
-      "Está incorreta: O produto da força pelo tempo de colisão define o impulso mecânico (I = F · Δt), não a tensão.",
-      "Está incorreta: A razão volumétrica pela gravidade não tem significado físico de tensão mecânica.",
-      "Está incorreta: A raiz da energia dividida pelo comprimento não define tensão mecânica."
-    ],
-    "nursingApplication": "Crucial para avaliar a pressão interna suportada por articulações e implantes biomédicos."
-  },
-  {
-    "id": 2376,
-    "topicId": 2,
-    "question": "[Variação 3] Na Lei de Hooke Generalizada, como se define a Deformação Relativa (ε) (Slide 43)?",
-    "options": [
-      "A razão entre a variação de comprimento e o comprimento original (ε = ΔL / L₀), sendo uma grandeza adimensional.",
-      "O produto da variação de comprimento pela área da secção transversal, com unidade em metros cúbicos.",
-      "A velocidade linear instantânea com que as moléculas da extremidade se afastam durante a tração.",
-      "A força necessária para esticar a barra dividida pela densidade volumétrica do meio."
-    ],
-    "correctIndex": 0,
-    "explanation": "A deformação relativa ε quantifica o alongamento ou encurtamento percentual relativamente ao tamanho inicial (ΔL / L₀).",
-    "distractorAnalysis": [
-      "Está incorreta: O produto do comprimento pela área mede uma variação de volume, não a deformação relativa linear.",
-      "Está incorreta: Velocidade de afastamento molecular é uma taxa temporal cinemática, não a deformação relativa adimensional.",
-      "Está incorreta: Força dividida por densidade não define deformação mecânica de um corpo."
-    ],
-    "nursingApplication": "Permite comparar o alongamento percentual de tecidos biológicos curtos e compridos sob tração."
-  },
-  {
-    "id": 2377,
-    "topicId": 2,
-    "question": "[Variação 3] O que mede fisicamente o Módulo de Young (E) de um material (Slide 43)?",
-    "options": [
-      "A viscosidade dinâmica de fluidos biológicos ideais quando escoam em regime laminar.",
-      "A rigidez intrínseca do próprio material perante solicitações axiais de tração e compressão no regime elástico.",
-      "A capacidade de um corpo emitir calor por radiação infravermelha a temperaturas elevadas.",
-      "A resistência puramente elétrica que um condutor metálico oferece à passagem de eletrões."
-    ],
-    "correctIndex": 1,
-    "explanation": "O Módulo de Young E quantifica a resistência de um material à deformação elástica (E = σ / ε), medindo a sua rigidez intrínseca.",
-    "distractorAnalysis": [
-      "Está incorreta: Viscosidade dinâmica mede o atrito interno em fluidos em movimento, não a rigidez elástica de sólidos.",
-      "Está incorreta: Emissão de radiação térmica é descrita pela lei de Stefan-Boltzmann na termodinâmica.",
-      "Está incorreta: Resistência elétrica relaciona corrente e diferença de potencial elétrico (Lei de Ohm)."
-    ],
-    "nursingApplication": "Determina a rigidez elástica de ligamentos, cartilagens e próteses ortopédicas."
-  },
-  {
-    "id": 2378,
-    "topicId": 2,
-    "question": "[Variação 3] Qual é a unidade do Módulo de Young (E) no Sistema Internacional de Unidades (SI) (Slide 43)?",
-    "options": [
-      "Joule por segundo (J/s), equivalente a Watt (W).",
-      "Quilograma por metro cúbico (kg/m³).",
-      "N/m² (Newton por metro quadrado), equivalente a Pascal (Pa).",
-      "Metro por segundo ao quadrado (m/s²)."
-    ],
-    "correctIndex": 2,
-    "explanation": "Como E = σ / ε e a deformação ε é adimensional, o módulo de Young tem a mesma unidade de tensão: N/m² ou Pa.",
-    "distractorAnalysis": [
-      "Está incorreta: Joule por segundo é Watt, a unidade de potência mecânica ou energética.",
-      "Está incorreta: Quilograma por metro cúbico é a unidade de massa volúmica (densidade).",
-      "Está incorreta: Metro por segundo ao quadrado é a unidade de aceleração no SI."
-    ],
-    "nursingApplication": "Facilita a leitura e comparação de especificações técnicas de resistência de biomateriais."
-  },
-  {
-    "id": 2379,
-    "topicId": 2,
-    "question": "[Variação 3] Uma mola possui constante elástica k = 500 N/m. Que força é necessária para a comprimir de 0,02 m (2 cm)?",
-    "options": [
-      "25 000 N.",
-      "0,00004 N.",
-      "250 N.",
-      "10 N."
-    ],
-    "correctIndex": 3,
-    "explanation": "Pela Lei de Hooke: F = k · Δx = 500 N/m · 0,02 m = 10 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 25 000 N resultaria de dividir incorretamente k por Δx² ou multiplicar por 50.",
-      "Está incorreta: 0,00004 N resultaria de dividir Δx por k.",
-      "Está incorreta: 250 N resultaria de uma multiplicação aritmética incorreta."
-    ],
-    "nursingApplication": "Permite calcular o esforço necessário para acionar sistemas elásticos mecânicos em suporte hospitalar."
-  },
-  {
-    "id": 2380,
-    "topicId": 2,
-    "question": "[Variação 3] Qual é a diferença conceitual fundamental entre a Constante Elástica (k) e o Módulo de Young (E) (Slides 42 e 43)?",
-    "options": [
-      "k depende da forma e dimensões da peça em estudo, enquanto E é uma propriedade intrínseca exclusiva do material.",
-      "k aplica-se apenas a gases rarefeitos, enquanto E descreve exclusivamente o vácuo quântico.",
-      "k varia com a temperatura ambiente, enquanto E é uma constante universal inalterável no universo.",
-      "k é uma grandeza vetorial com sentido horário, enquanto E é um escalar imaginário negativo."
-    ],
-    "correctIndex": 0,
-    "explanation": "Uma barra de aço grossa tem constante k maior que um fio fino do mesmo aço, mas ambas as peças partilham exatamente o mesmo Módulo de Young E.",
-    "distractorAnalysis": [
-      "Está incorreta: Nem k nem E se aplicam a gases ou ao vácuo; ambas descrevem propriedades mecânicas de corpos e materiais sólidos.",
-      "Está incorreta: Ambas as propriedades podem variar com a temperatura em condições físicas reais.",
-      "Está incorreta: Constante elástica k e módulo de Young E são grandezas escalares reais positivas."
-    ],
-    "nursingApplication": "Fundamental para entender por que materiais iguais com espessuras diferentes resistem de modo distinto à flexão."
-  },
-  {
-    "id": 2381,
-    "topicId": 2,
-    "question": "[Variação 4] Qual é o enunciado fundamental da Lei de Hooke formulada em 1660 (Slide 40)?",
-    "options": [
-      "A aceleração de um corpo rígido é inversamente proporcional ao quadrado da sua deformação angular.",
-      "A deformação elástica sofrida por um corpo é diretamente proporcional à intensidade da força aplicada ('Ut tensio, sic vis').",
-      "A força deformadora dissipa-se instantaneamente sob a forma de radiação gama no vácuo.",
-      "Qualquer força deformadora produz deformações plásticas permanentes e irreversíveis em qualquer material."
-    ],
-    "correctIndex": 1,
-    "explanation": "Hooke estabeleceu que a extensão de uma mola ou barra elástica é proporcional à força tensora aplicada (F = k * Δx).",
-    "distractorAnalysis": [
-      "Está incorreta: A aceleração ser inversamente proporcional ao quadrado da deformação não tem fundamento na lei de Hooke.",
-      "Está incorreta: Forças mecânicas normais não emitem radiação gama.",
-      "Está incorreta: A lei de Hooke descreve deformações elásticas reversíveis, não deformações plásticas irreversíveis."
-    ],
-    "nursingApplication": "Fundamental para compreender o funcionamento de dinamómetros e a resposta elástica inicial de estruturas biológicas."
-  },
-  {
-    "id": 2382,
-    "topicId": 2,
-    "question": "[Variação 4] Na expressão clássica da Lei de Hooke para uma mola, F = k · Δx, o que representa a grandeza 'k' (Slide 41)?",
-    "options": [
-      "O coeficiente de atrito estático adimensional entre a mola e o solo de apoio.",
-      "A aceleração centrípeta gerada pela rotação do sistema elástico em torno do centro de massa.",
-      "A constante elástica do corpo, que mede a rigidez da estrutura e exprime-se em N/m no SI.",
-      "A energia potencial gravitacional acumulada pelo corpo à altitude zero."
-    ],
-    "correctIndex": 2,
-    "explanation": "A constante elástica k (em N/m) quantifica a força necessária para produzir uma deformação unitária (1 metro).",
-    "distractorAnalysis": [
-      "Está incorreta: Coeficiente de atrito é uma grandeza adimensional que quantifica a oposição ao deslizamento entre superfícies.",
-      "Está incorreta: Aceleração centrípeta depende da velocidade angular e do raio de curvatura, não sendo a rigidez de uma mola.",
-      "Está incorreta: Energia potencial gravitacional exprime-se em Joules (J) e depende da massa, gravidade e altura."
-    ],
-    "nursingApplication": "Representa a resistência elástica que equipamentos com molas ou sensores de tração oferecem ao alongamento."
-  },
-  {
-    "id": 2383,
-    "topicId": 2,
-    "question": "[Variação 4] De que depende o valor da constante elástica 'k' de um corpo elástico (Slide 42)?",
-    "options": [
-      "Exclusivamente da massa atómica média do material, sendo totalmente independente da sua forma e comprimento.",
-      "Apenas da aceleração da gravidade local, duplicando se o ensaio for realizado na Lua.",
-      "Exclusivamente da velocidade de translação com que a força é aplicada no vácuo.",
-      "Das dimensões geométricas (comprimento, espessura e área) e da natureza do material constituinte."
-    ],
-    "correctIndex": 3,
-    "explanation": "O slide 42 enfatiza que a constante elástica k depende do tamanho, forma e espessura definidos do corpo e não só do material.",
-    "distractorAnalysis": [
-      "Está incorreta: A constante k depende fortemente do comprimento e da secção geométrica da peça, não apenas do material atómico.",
-      "Está incorreta: A constante elástica é uma propriedade intrínseca do corpo mecânico, não dependendo da aceleração da gravidade.",
-      "Está incorreta: A rigidez k é uma propriedade elástica estática que não depende da velocidade no vácuo."
-    ],
-    "nursingApplication": "Explica por que uma mola espessa e curta é muito mais rígida (maior k) do que uma mola fina e comprida do mesmo material."
-  },
-  {
-    "id": 2384,
-    "topicId": 2,
-    "question": "[Variação 4] Como se formula a Lei de Hooke Generalizada para meios contínuos elásticos (Slide 43)?",
-    "options": [
-      "σ = E · ε, onde σ é a tensão mecânica, E é o Módulo de Young e ε é a deformação relativa.",
-      "F = m · a, onde m é a massa inercial e a é a aceleração linear do centro de massa.",
-      "E = m · c², onde E é a energia relativista em repouso e c é a velocidade da luz.",
-      "P = ρ · g · h, onde P é a pressão hidrostática a uma profundidade vertical h."
-    ],
-    "correctIndex": 0,
-    "explanation": "A forma generalizada da Lei de Hooke estabelece que a tensão mecânica σ é proporcional à deformação relativa ε através do módulo de Young E.",
-    "distractorAnalysis": [
-      "Está incorreta: F = m · a é a Segunda Lei de Newton para o movimento de translação de partículas.",
-      "Está incorreta: E = m · c² é a equivalência massa-energia da relatividade restrita de Einstein.",
-      "Está incorreta: P = ρ · g · h é o Teorema Fundamental da Hidrostática (lei de Stevin)."
-    ],
-    "nursingApplication": "Permite analisar as tensões e deformações internas em biomateriais sem depender das dimensões totais da amostra."
-  },
-  {
-    "id": 2385,
-    "topicId": 2,
-    "question": "[Variação 4] Na Lei de Hooke Generalizada, como se define a Tensão Mecânica (σ) (Slide 43)?",
-    "options": [
-      "O produto da força aplicada pelo intervalo de tempo durante o qual ocorre a colisão.",
-      "A razão entre a força aplicada e a área da secção transversal sobre a qual a força atua (σ = F / A), expressa em Pa ou N/m².",
-      "A variação relativa de volume dividida pela aceleração gravítica terrestre.",
-      "A raiz quadrada da energia elástica dividida pelo comprimento inicial do corpo."
-    ],
-    "correctIndex": 1,
-    "explanation": "Tensão mecânica σ mede a intensidade de força distribuída por unidade de área de secção transversal (F/A).",
-    "distractorAnalysis": [
-      "Está incorreta: O produto da força pelo tempo de colisão define o impulso mecânico (I = F · Δt), não a tensão.",
-      "Está incorreta: A razão volumétrica pela gravidade não tem significado físico de tensão mecânica.",
-      "Está incorreta: A raiz da energia dividida pelo comprimento não define tensão mecânica."
-    ],
-    "nursingApplication": "Crucial para avaliar a pressão interna suportada por articulações e implantes biomédicos."
-  },
-  {
-    "id": 2386,
-    "topicId": 2,
-    "question": "[Variação 4] Na Lei de Hooke Generalizada, como se define a Deformação Relativa (ε) (Slide 43)?",
-    "options": [
-      "O produto da variação de comprimento pela área da secção transversal, com unidade em metros cúbicos.",
-      "A velocidade linear instantânea com que as moléculas da extremidade se afastam durante a tração.",
-      "A razão entre a variação de comprimento e o comprimento original (ε = ΔL / L₀), sendo uma grandeza adimensional.",
-      "A força necessária para esticar a barra dividida pela densidade volumétrica do meio."
-    ],
-    "correctIndex": 2,
-    "explanation": "A deformação relativa ε quantifica o alongamento ou encurtamento percentual relativamente ao tamanho inicial (ΔL / L₀).",
-    "distractorAnalysis": [
-      "Está incorreta: O produto do comprimento pela área mede uma variação de volume, não a deformação relativa linear.",
-      "Está incorreta: Velocidade de afastamento molecular é uma taxa temporal cinemática, não a deformação relativa adimensional.",
-      "Está incorreta: Força dividida por densidade não define deformação mecânica de um corpo."
-    ],
-    "nursingApplication": "Permite comparar o alongamento percentual de tecidos biológicos curtos e compridos sob tração."
-  },
-  {
-    "id": 2387,
-    "topicId": 2,
-    "question": "[Variação 4] O que mede fisicamente o Módulo de Young (E) de um material (Slide 43)?",
-    "options": [
-      "A viscosidade dinâmica de fluidos biológicos ideais quando escoam em regime laminar.",
-      "A capacidade de um corpo emitir calor por radiação infravermelha a temperaturas elevadas.",
-      "A resistência puramente elétrica que um condutor metálico oferece à passagem de eletrões.",
-      "A rigidez intrínseca do próprio material perante solicitações axiais de tração e compressão no regime elástico."
-    ],
-    "correctIndex": 3,
-    "explanation": "O Módulo de Young E quantifica a resistência de um material à deformação elástica (E = σ / ε), medindo a sua rigidez intrínseca.",
-    "distractorAnalysis": [
-      "Está incorreta: Viscosidade dinâmica mede o atrito interno em fluidos em movimento, não a rigidez elástica de sólidos.",
-      "Está incorreta: Emissão de radiação térmica é descrita pela lei de Stefan-Boltzmann na termodinâmica.",
-      "Está incorreta: Resistência elétrica relaciona corrente e diferença de potencial elétrico (Lei de Ohm)."
-    ],
-    "nursingApplication": "Determina a rigidez elástica de ligamentos, cartilagens e próteses ortopédicas."
-  },
-  {
-    "id": 2388,
-    "topicId": 2,
-    "question": "[Variação 4] Qual é a unidade do Módulo de Young (E) no Sistema Internacional de Unidades (SI) (Slide 43)?",
-    "options": [
-      "N/m² (Newton por metro quadrado), equivalente a Pascal (Pa).",
-      "Joule por segundo (J/s), equivalente a Watt (W).",
-      "Quilograma por metro cúbico (kg/m³).",
-      "Metro por segundo ao quadrado (m/s²)."
-    ],
-    "correctIndex": 0,
-    "explanation": "Como E = σ / ε e a deformação ε é adimensional, o módulo de Young tem a mesma unidade de tensão: N/m² ou Pa.",
-    "distractorAnalysis": [
-      "Está incorreta: Joule por segundo é Watt, a unidade de potência mecânica ou energética.",
-      "Está incorreta: Quilograma por metro cúbico é a unidade de massa volúmica (densidade).",
-      "Está incorreta: Metro por segundo ao quadrado é a unidade de aceleração no SI."
-    ],
-    "nursingApplication": "Facilita a leitura e comparação de especificações técnicas de resistência de biomateriais."
-  },
-  {
-    "id": 2389,
-    "topicId": 2,
-    "question": "[Variação 4] Uma mola possui constante elástica k = 500 N/m. Que força é necessária para a comprimir de 0,02 m (2 cm)?",
-    "options": [
-      "25 000 N.",
-      "10 N.",
-      "0,00004 N.",
-      "250 N."
-    ],
-    "correctIndex": 1,
-    "explanation": "Pela Lei de Hooke: F = k · Δx = 500 N/m · 0,02 m = 10 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 25 000 N resultaria de dividir incorretamente k por Δx² ou multiplicar por 50.",
-      "Está incorreta: 0,00004 N resultaria de dividir Δx por k.",
-      "Está incorreta: 250 N resultaria de uma multiplicação aritmética incorreta."
-    ],
-    "nursingApplication": "Permite calcular o esforço necessário para acionar sistemas elásticos mecânicos em suporte hospitalar."
-  },
-  {
-    "id": 2390,
-    "topicId": 2,
-    "question": "[Variação 4] Qual é a diferença conceitual fundamental entre a Constante Elástica (k) e o Módulo de Young (E) (Slides 42 e 43)?",
-    "options": [
-      "k aplica-se apenas a gases rarefeitos, enquanto E descreve exclusivamente o vácuo quântico.",
-      "k varia com a temperatura ambiente, enquanto E é uma constante universal inalterável no universo.",
-      "k depende da forma e dimensões da peça em estudo, enquanto E é uma propriedade intrínseca exclusiva do material.",
-      "k é uma grandeza vetorial com sentido horário, enquanto E é um escalar imaginário negativo."
-    ],
-    "correctIndex": 2,
-    "explanation": "Uma barra de aço grossa tem constante k maior que um fio fino do mesmo aço, mas ambas as peças partilham exatamente o mesmo Módulo de Young E.",
-    "distractorAnalysis": [
-      "Está incorreta: Nem k nem E se aplicam a gases ou ao vácuo; ambas descrevem propriedades mecânicas de corpos e materiais sólidos.",
-      "Está incorreta: Ambas as propriedades podem variar com a temperatura em condições físicas reais.",
-      "Está incorreta: Constante elástica k e módulo de Young E são grandezas escalares reais positivas."
-    ],
-    "nursingApplication": "Fundamental para entender por que materiais iguais com espessuras diferentes resistem de modo distinto à flexão."
-  },
-  {
-    "id": 2391,
-    "topicId": 2,
-    "question": "[Variação 5] Qual é o enunciado fundamental da Lei de Hooke formulada em 1660 (Slide 40)?",
-    "options": [
-      "A aceleração de um corpo rígido é inversamente proporcional ao quadrado da sua deformação angular.",
-      "A força deformadora dissipa-se instantaneamente sob a forma de radiação gama no vácuo.",
-      "Qualquer força deformadora produz deformações plásticas permanentes e irreversíveis em qualquer material.",
-      "A deformação elástica sofrida por um corpo é diretamente proporcional à intensidade da força aplicada ('Ut tensio, sic vis')."
-    ],
-    "correctIndex": 3,
-    "explanation": "Hooke estabeleceu que a extensão de uma mola ou barra elástica é proporcional à força tensora aplicada (F = k * Δx).",
-    "distractorAnalysis": [
-      "Está incorreta: A aceleração ser inversamente proporcional ao quadrado da deformação não tem fundamento na lei de Hooke.",
-      "Está incorreta: Forças mecânicas normais não emitem radiação gama.",
-      "Está incorreta: A lei de Hooke descreve deformações elásticas reversíveis, não deformações plásticas irreversíveis."
-    ],
-    "nursingApplication": "Fundamental para compreender o funcionamento de dinamómetros e a resposta elástica inicial de estruturas biológicas."
-  },
-  {
-    "id": 2392,
-    "topicId": 2,
-    "question": "[Variação 5] Na expressão clássica da Lei de Hooke para uma mola, F = k · Δx, o que representa a grandeza 'k' (Slide 41)?",
-    "options": [
-      "A constante elástica do corpo, que mede a rigidez da estrutura e exprime-se em N/m no SI.",
-      "O coeficiente de atrito estático adimensional entre a mola e o solo de apoio.",
-      "A aceleração centrípeta gerada pela rotação do sistema elástico em torno do centro de massa.",
-      "A energia potencial gravitacional acumulada pelo corpo à altitude zero."
-    ],
-    "correctIndex": 0,
-    "explanation": "A constante elástica k (em N/m) quantifica a força necessária para produzir uma deformação unitária (1 metro).",
-    "distractorAnalysis": [
-      "Está incorreta: Coeficiente de atrito é uma grandeza adimensional que quantifica a oposição ao deslizamento entre superfícies.",
-      "Está incorreta: Aceleração centrípeta depende da velocidade angular e do raio de curvatura, não sendo a rigidez de uma mola.",
-      "Está incorreta: Energia potencial gravitacional exprime-se em Joules (J) e depende da massa, gravidade e altura."
-    ],
-    "nursingApplication": "Representa a resistência elástica que equipamentos com molas ou sensores de tração oferecem ao alongamento."
-  },
-  {
-    "id": 2393,
-    "topicId": 2,
-    "question": "[Variação 5] De que depende o valor da constante elástica 'k' de um corpo elástico (Slide 42)?",
-    "options": [
-      "Exclusivamente da massa atómica média do material, sendo totalmente independente da sua forma e comprimento.",
-      "Das dimensões geométricas (comprimento, espessura e área) e da natureza do material constituinte.",
-      "Apenas da aceleração da gravidade local, duplicando se o ensaio for realizado na Lua.",
-      "Exclusivamente da velocidade de translação com que a força é aplicada no vácuo."
-    ],
-    "correctIndex": 1,
-    "explanation": "O slide 42 enfatiza que a constante elástica k depende do tamanho, forma e espessura definidos do corpo e não só do material.",
-    "distractorAnalysis": [
-      "Está incorreta: A constante k depende fortemente do comprimento e da secção geométrica da peça, não apenas do material atómico.",
-      "Está incorreta: A constante elástica é uma propriedade intrínseca do corpo mecânico, não dependendo da aceleração da gravidade.",
-      "Está incorreta: A rigidez k é uma propriedade elástica estática que não depende da velocidade no vácuo."
-    ],
-    "nursingApplication": "Explica por que uma mola espessa e curta é muito mais rígida (maior k) do que uma mola fina e comprida do mesmo material."
-  },
-  {
-    "id": 2394,
-    "topicId": 2,
-    "question": "[Variação 5] Como se formula a Lei de Hooke Generalizada para meios contínuos elásticos (Slide 43)?",
-    "options": [
-      "F = m · a, onde m é a massa inercial e a é a aceleração linear do centro de massa.",
-      "E = m · c², onde E é a energia relativista em repouso e c é a velocidade da luz.",
-      "σ = E · ε, onde σ é a tensão mecânica, E é o Módulo de Young e ε é a deformação relativa.",
-      "P = ρ · g · h, onde P é a pressão hidrostática a uma profundidade vertical h."
-    ],
-    "correctIndex": 2,
-    "explanation": "A forma generalizada da Lei de Hooke estabelece que a tensão mecânica σ é proporcional à deformação relativa ε através do módulo de Young E.",
-    "distractorAnalysis": [
-      "Está incorreta: F = m · a é a Segunda Lei de Newton para o movimento de translação de partículas.",
-      "Está incorreta: E = m · c² é a equivalência massa-energia da relatividade restrita de Einstein.",
-      "Está incorreta: P = ρ · g · h é o Teorema Fundamental da Hidrostática (lei de Stevin)."
-    ],
-    "nursingApplication": "Permite analisar as tensões e deformações internas em biomateriais sem depender das dimensões totais da amostra."
-  },
-  {
-    "id": 2395,
-    "topicId": 2,
-    "question": "[Variação 5] Na Lei de Hooke Generalizada, como se define a Tensão Mecânica (σ) (Slide 43)?",
-    "options": [
-      "O produto da força aplicada pelo intervalo de tempo durante o qual ocorre a colisão.",
-      "A variação relativa de volume dividida pela aceleração gravítica terrestre.",
-      "A raiz quadrada da energia elástica dividida pelo comprimento inicial do corpo.",
-      "A razão entre a força aplicada e a área da secção transversal sobre a qual a força atua (σ = F / A), expressa em Pa ou N/m²."
-    ],
-    "correctIndex": 3,
-    "explanation": "Tensão mecânica σ mede a intensidade de força distribuída por unidade de área de secção transversal (F/A).",
-    "distractorAnalysis": [
-      "Está incorreta: O produto da força pelo tempo de colisão define o impulso mecânico (I = F · Δt), não a tensão.",
-      "Está incorreta: A razão volumétrica pela gravidade não tem significado físico de tensão mecânica.",
-      "Está incorreta: A raiz da energia dividida pelo comprimento não define tensão mecânica."
-    ],
-    "nursingApplication": "Crucial para avaliar a pressão interna suportada por articulações e implantes biomédicos."
-  },
-  {
-    "id": 2396,
-    "topicId": 2,
-    "question": "[Variação 5] Na Lei de Hooke Generalizada, como se define a Deformação Relativa (ε) (Slide 43)?",
-    "options": [
-      "A razão entre a variação de comprimento e o comprimento original (ε = ΔL / L₀), sendo uma grandeza adimensional.",
-      "O produto da variação de comprimento pela área da secção transversal, com unidade em metros cúbicos.",
-      "A velocidade linear instantânea com que as moléculas da extremidade se afastam durante a tração.",
-      "A força necessária para esticar a barra dividida pela densidade volumétrica do meio."
-    ],
-    "correctIndex": 0,
-    "explanation": "A deformação relativa ε quantifica o alongamento ou encurtamento percentual relativamente ao tamanho inicial (ΔL / L₀).",
-    "distractorAnalysis": [
-      "Está incorreta: O produto do comprimento pela área mede uma variação de volume, não a deformação relativa linear.",
-      "Está incorreta: Velocidade de afastamento molecular é uma taxa temporal cinemática, não a deformação relativa adimensional.",
-      "Está incorreta: Força dividida por densidade não define deformação mecânica de um corpo."
-    ],
-    "nursingApplication": "Permite comparar o alongamento percentual de tecidos biológicos curtos e compridos sob tração."
-  },
-  {
-    "id": 2397,
-    "topicId": 2,
-    "question": "[Variação 5] O que mede fisicamente o Módulo de Young (E) de um material (Slide 43)?",
-    "options": [
-      "A viscosidade dinâmica de fluidos biológicos ideais quando escoam em regime laminar.",
-      "A rigidez intrínseca do próprio material perante solicitações axiais de tração e compressão no regime elástico.",
-      "A capacidade de um corpo emitir calor por radiação infravermelha a temperaturas elevadas.",
-      "A resistência puramente elétrica que um condutor metálico oferece à passagem de eletrões."
-    ],
-    "correctIndex": 1,
-    "explanation": "O Módulo de Young E quantifica a resistência de um material à deformação elástica (E = σ / ε), medindo a sua rigidez intrínseca.",
-    "distractorAnalysis": [
-      "Está incorreta: Viscosidade dinâmica mede o atrito interno em fluidos em movimento, não a rigidez elástica de sólidos.",
-      "Está incorreta: Emissão de radiação térmica é descrita pela lei de Stefan-Boltzmann na termodinâmica.",
-      "Está incorreta: Resistência elétrica relaciona corrente e diferença de potencial elétrico (Lei de Ohm)."
-    ],
-    "nursingApplication": "Determina a rigidez elástica de ligamentos, cartilagens e próteses ortopédicas."
-  },
-  {
-    "id": 2398,
-    "topicId": 2,
-    "question": "[Variação 5] Qual é a unidade do Módulo de Young (E) no Sistema Internacional de Unidades (SI) (Slide 43)?",
-    "options": [
-      "Joule por segundo (J/s), equivalente a Watt (W).",
-      "Quilograma por metro cúbico (kg/m³).",
-      "N/m² (Newton por metro quadrado), equivalente a Pascal (Pa).",
-      "Metro por segundo ao quadrado (m/s²)."
-    ],
-    "correctIndex": 2,
-    "explanation": "Como E = σ / ε e a deformação ε é adimensional, o módulo de Young tem a mesma unidade de tensão: N/m² ou Pa.",
-    "distractorAnalysis": [
-      "Está incorreta: Joule por segundo é Watt, a unidade de potência mecânica ou energética.",
-      "Está incorreta: Quilograma por metro cúbico é a unidade de massa volúmica (densidade).",
-      "Está incorreta: Metro por segundo ao quadrado é a unidade de aceleração no SI."
-    ],
-    "nursingApplication": "Facilita a leitura e comparação de especificações técnicas de resistência de biomateriais."
-  },
-  {
-    "id": 2399,
-    "topicId": 2,
-    "question": "[Variação 5] Uma mola possui constante elástica k = 500 N/m. Que força é necessária para a comprimir de 0,02 m (2 cm)?",
-    "options": [
-      "25 000 N.",
-      "0,00004 N.",
-      "250 N.",
-      "10 N."
-    ],
-    "correctIndex": 3,
-    "explanation": "Pela Lei de Hooke: F = k · Δx = 500 N/m · 0,02 m = 10 N.",
-    "distractorAnalysis": [
-      "Está incorreta: 25 000 N resultaria de dividir incorretamente k por Δx² ou multiplicar por 50.",
-      "Está incorreta: 0,00004 N resultaria de dividir Δx por k.",
-      "Está incorreta: 250 N resultaria de uma multiplicação aritmética incorreta."
-    ],
-    "nursingApplication": "Permite calcular o esforço necessário para acionar sistemas elásticos mecânicos em suporte hospitalar."
-  },
-  {
-    "id": 2400,
-    "topicId": 2,
-    "question": "[Variação 5] Qual é a diferença conceitual fundamental entre a Constante Elástica (k) e o Módulo de Young (E) (Slides 42 e 43)?",
-    "options": [
-      "k depende da forma e dimensões da peça em estudo, enquanto E é uma propriedade intrínseca exclusiva do material.",
-      "k aplica-se apenas a gases rarefeitos, enquanto E descreve exclusivamente o vácuo quântico.",
-      "k varia com a temperatura ambiente, enquanto E é uma constante universal inalterável no universo.",
-      "k é uma grandeza vetorial com sentido horário, enquanto E é um escalar imaginário negativo."
-    ],
-    "correctIndex": 0,
-    "explanation": "Uma barra de aço grossa tem constante k maior que um fio fino do mesmo aço, mas ambas as peças partilham exatamente o mesmo Módulo de Young E.",
-    "distractorAnalysis": [
-      "Está incorreta: Nem k nem E se aplicam a gases ou ao vácuo; ambas descrevem propriedades mecânicas de corpos e materiais sólidos.",
-      "Está incorreta: Ambas as propriedades podem variar com a temperatura em condições físicas reais.",
-      "Está incorreta: Constante elástica k e módulo de Young E são grandezas escalares reais positivas."
-    ],
-    "nursingApplication": "Fundamental para entender por que materiais iguais com espessuras diferentes resistem de modo distinto à flexão."
-  },
-  {
-    "id": 2401,
-    "topicId": 2,
-    "question": "Qual é o valor do Módulo de Young do Aço apresentado nos slides (Slide 44)?",
-    "options": [
-      "2 × 10¹⁰ N/m², sendo idêntico ao módulo elástico do osso cortical.",
-      "20 × 10¹⁰ N/m² (ou 2 × 10¹¹ N/m²), caracterizando um material extremamente rígido.",
-      "10⁶ N/m², apresentando rigidez semelhante à da borracha comum.",
-      "Zero N/m², pois o aço é um fluido viscoso em repouso."
-    ],
-    "correctIndex": 1,
-    "explanation": "O aço possui módulo de Young de 20 × 10¹⁰ N/m² (200 GPa), conferindo-lhe altíssima rigidez mecânica e quase nula deformação sob cargas moderadas.",
-    "distractorAnalysis": [
-      "Está incorreta: 2 × 10¹⁰ N/m² é o módulo de Young do osso cortical humano, 10 vezes menor que o do aço.",
-      "Está incorreta: 10⁶ N/m² é o módulo de Young da borracha vulcanizada, extremamente flexível.",
-      "Está incorreta: O aço sólido não tem módulo nulo nem se comporta como fluido viscoso."
-    ],
-    "nursingApplication": "Explica a elevada resistência e estabilidade estrutural de ligas metálicas em instrumentos cirúrgicos e camas hospitalares."
-  },
-  {
-    "id": 2402,
-    "topicId": 2,
-    "question": "Qual é o valor do Módulo de Young do Osso cortical humano indicado nos slides (Slide 44)?",
-    "options": [
-      "20 × 10¹⁰ N/m², sendo tão rígido e inextensível como o aço maciço.",
-      "7 × 10¹⁰ N/m², comportando-se mecanicamente de forma idêntica ao vidro comum.",
-      "2 × 10¹⁰ N/m², conferindo rigidez com excelente capacidade elástica de amortecimento.",
-      "0,5 × 10³ N/m², comportando-se como borracha extremamente flexível."
-    ],
-    "correctIndex": 2,
-    "explanation": "O osso possui E = 2 × 10¹⁰ N/m² (20 GPa), sendo 10 vezes menos rígido que o aço, o que lhe confere flexibilidade essencial para absorver impactos sem quebrar.",
-    "distractorAnalysis": [
-      "Está incorreta: 20 × 10¹⁰ N/m² é o módulo do aço, que tornaria o esqueleto excessivamente rígido e incapaz de absorver choques sem fraturar juntas.",
-      "Está incorreta: 7 × 10¹⁰ N/m² é o módulo do vidro, caracterizado por fragilidade extrema sem deformação plástica.",
-      "Está incorreta: Módulos da ordem de 10³ N/m² correspondem a borrachas e géis moles, incompatíveis com a sustentação do esqueleto."
-    ],
-    "nursingApplication": "Essencial para compreender a resistência das diáfises ósseas às cargas do peso corporal diário."
-  },
-  {
-    "id": 2403,
-    "topicId": 2,
-    "question": "Como se compara a rigidez do Aço com a rigidez do Osso segundo os dados dos slides (Slide 44)?",
-    "options": [
-      "O osso cortical é 100 vezes mais rígido do que o aço temperado.",
-      "Ambos os materiais têm exatamente a mesma rigidez estrutural perante esforços axiais.",
-      "O osso é infinitamente rígido, correspondendo ao sólido indeformável de Euclides.",
-      "O aço é cerca de 10 vezes mais rígido do que o osso cortical (E_aço / E_osso = 10)."
-    ],
-    "correctIndex": 3,
-    "explanation": "E_aço = 20 × 10¹⁰ N/m² e E_osso = 2 × 10¹⁰ N/m²; logo, 20 / 2 = 10 vezes mais rígido.",
-    "distractorAnalysis": [
-      "Está incorreta: O osso é mais deformável que o aço, não sendo mais rígido.",
-      "Está incorreta: Os valores diferem por uma ordem de grandeza (fator 10), não sendo iguais.",
-      "Está incorreta: O osso é um material viscoelástico real, não um sólido indeformável de Euclides."
-    ],
-    "nursingApplication": "Explica o desafio de 'stress shielding' quando implantes metálicos de aço/titânio são colocados em contacto com o osso humano."
-  },
-  {
-    "id": 2404,
-    "topicId": 2,
-    "question": "Qual é a característica mecânica do Vidro (E = 7 × 10¹⁰ N/m²) descrita no Slide 44?",
-    "options": [
-      "Elevada rigidez teórica, mas grande fragilidade com fratura sem deformação plástica prévia.",
-      "Capacidade extrema de deformação plástica antes da rutura, comportando-se como fio de cobre.",
-      "Rigidez extremamente reduzida, idêntica à da borracha sintética.",
-      "Comportamento puramente plastoviscoelástico semelhante à massa de pão."
-    ],
-    "correctIndex": 0,
-    "explanation": "O vidro é muito rígido mas frágil: sob tensão excessiva, quebra abruptamente sem aviso de escoamento plástico prévio.",
-    "distractorAnalysis": [
-      "Está incorreta: O vidro não apresenta escoamento plástico significativo; a sua fratura é frágil e repentina.",
-      "Está incorreta: Com E = 70 GPa, o vidro tem rigidez 1000 vezes superior à da borracha.",
-      "Está incorreta: Massa de pão é um corpo plastoviscoelástico; o vidro é um sólido elástico linear frágil."
-    ],
-    "nursingApplication": "Alerta para a fragilidade mecânica de ampolas e frascos de vidro em ambiente de trabalho hospitalar."
-  },
-  {
-    "id": 2405,
-    "topicId": 2,
-    "question": "Como se caracteriza a Borracha em termos de Módulo de Young (Slide 44)?",
-    "options": [
-      "Apresenta módulo superior ao do aço maciço, não sofrendo qualquer deformação mecânica mensurável.",
-      "Apresenta módulo extremamente baixo (10⁶ a 10⁸ N/m²), sofrendo grandes deformações elásticas reversíveis sob cargas mínimas.",
-      "É um material perfeitamente rígido correspondente ao sólido ideal de Euclides.",
-      "Fratura de modo extremamente frágil à mais pequena força de compressão aplicada."
-    ],
-    "correctIndex": 1,
-    "explanation": "A borracha tem E muito baixo (0,1 a 10 × 10⁷ N/m²), permitindo esticar centenas de porcento e retornar elasticamente à forma inicial.",
-    "distractorAnalysis": [
-      "Está incorreta: O módulo da borracha é ordens de grandeza inferior ao do aço, não superior.",
-      "Está incorreta: A borracha é o oposto de um sólido rígido indeformável; é um elastómero altamente flexível.",
-      "Está incorreta: A borracha não apresenta comportamento frágil; suporta grandes deformações sem partir."
-    ],
-    "nursingApplication": "Explica a utilidade de torniquetes de borracha e luvas flexíveis em procedimentos de enfermagem."
-  },
-  {
-    "id": 2406,
-    "topicId": 2,
-    "question": "Num gráfico Tensão vs Deformação (σ vs ε), o que representa o Limite de Proporcionalidade?",
-    "options": [
-      "O ponto exato onde o corpo se funde e passa do estado sólido ao estado líquido.",
-      "O ponto de rutura irreversível onde a amostra se divide em duas partes.",
-      "O ponto até ao qual a tensão é estritamente proporcional à deformação, vigorando a Lei de Hooke linear.",
-      "O patamar onde a deformação cessa completamente mesmo com força infinita."
-    ],
-    "correctIndex": 2,
-    "explanation": "Até ao limite de proporcionalidade, o gráfico σ vs ε é uma linha reta perfeita com declive constante igual ao módulo de Young E.",
-    "distractorAnalysis": [
-      "Está incorreta: Fusão de materiais é uma transição de fase térmica, não um limite mecânico na curva tensão-deformação.",
-      "Está incorreta: O ponto de rutura ocorre muito mais à frente na curva, após o escoamento ou no final do regime elástico.",
-      "Está incorreta: A deformação não cessa com força infinita; a peça quebra sob tensões excessivas."
-    ],
-    "nursingApplication": "Determina a faixa de cargas mecânicas seguras em que a resposta elástica de uma estrutura é perfeitamente previsível."
-  },
-  {
-    "id": 2407,
-    "topicId": 2,
-    "question": "Num gráfico Tensão vs Deformação, o que acontece se o material for solicitado além do Limite Elástico?",
-    "options": [
-      "O material regressa instantaneamente à forma original sem qualquer resíduo mecânico.",
-      "A rigidez intrínseca do corpo torna-se infinita transformando-o num sólido de Euclides.",
-      "A massa total do corpo duplica por conservação do momento angular linear.",
-      "O material entra no regime plástico, sofrendo deformações permanentes que não se anulam após a remoção da carga."
-    ],
-    "correctIndex": 3,
-    "explanation": "Ultrapassado o limite de elasticidade, as ligações atómicas escorregam e o sólido não recupera a sua forma inicial (deformação plástica permanente).",
-    "distractorAnalysis": [
-      "Está incorreta: Regressar à forma original ocorre apenas dentro do regime elástico, abaixo do limite de elasticidade.",
-      "Está incorreta: A rigidez não se torna infinita nem o corpo se transforma num modelo teórico indeformável.",
-      "Está incorreta: A massa de um corpo fechado permanece constante por conservação da matéria."
-    ],
-    "nursingApplication": "Explica por que entorses articulares graves ou sobrecargas ósseas podem deixar deformidades permanentes."
-  },
-  {
-    "id": 2408,
-    "topicId": 2,
-    "question": "Qual é a diferença fundamental entre um material Frágil e um material Dúctil (Slide 44)?",
-    "options": [
-      "O material frágil fratura abruptamente sem deformação plástica prévia, enquanto o dúctil sofre grande deformação plástica antes da rutura.",
-      "O material frágil nunca quebra sob nenhuma força, enquanto o dúctil quebra espontaneamente em repouso.",
-      "O material frágil é sempre líquido, enquanto o material dúctil é sempre gasoso à temperatura ambiente.",
-      "Ambos os materiais têm comportamento mecânico perfeitamente idêntico em qualquer ensaio de tração."
-    ],
-    "correctIndex": 0,
-    "explanation": "Materiais frágeis (como o vidro) quebram assim que atingem o limite elástico; materiais dúcteis (como a prata e o cobre) deformam-se plasticamente antes de fraturar.",
-    "distractorAnalysis": [
-      "Está incorreta: Materiais frágeis quebram facilmente quando sobrecarregados; materiais dúcteis suportam deformação plástica sem quebra imediata.",
-      "Está incorreta: Frágil e dúctil são qualificações mecânicas de sólidos estruturais, não de líquidos ou gases.",
-      "Está incorreta: Frágil e dúctil representam comportamentos mecânicos opostos quanto à capacidade de deformação plástica."
-    ],
-    "nursingApplication": "Ajuda a escolher materiais cirúrgicos que resistam a impactos sem partir de forma catastrófica."
-  },
-  {
-    "id": 2409,
-    "topicId": 2,
-    "question": "Num ensaio mecânico de tração, a inclinação (declive) da zona linear elástica na curva σ vs ε representa:",
-    "options": [
-      "A aceleração gravítica local da Terra.",
-      "O Módulo de Young (E) do material testado.",
-      "A energia cinética translacional total do laboratório.",
-      "O coeficiente de viscosidade de Poiseuille do fluido intersticial."
-    ],
-    "correctIndex": 1,
-    "explanation": "Na região linear, σ = E · ε, logo o declive da reta (Δσ / Δε) é precisamente o módulo de Young E.",
-    "distractorAnalysis": [
-      "Está incorreta: Aceleração gravítica é uma constante de campo gravitacional, não o declive da curva tensão-deformação.",
-      "Está incorreta: Energia cinética do laboratório não mede propriedades constitutivas elásticas de materiais.",
-      "Está incorreta: Viscosidade de Poiseuille descreve escoamento laminar de fluidos em tubos, não o declive elástico de sólidos."
-    ],
-    "nursingApplication": "Permite aos bioengenheiros determinar a rigidez de tecidos e biomateriais em laboratório de ensaios mecânicos."
-  },
-  {
-    "id": 2410,
-    "topicId": 2,
-    "question": "O que representa o Ponto de Rutura (ou Tensão de Fratura) na curva Tensão-Deformação?",
-    "options": [
-      "A tensão onde o material atinge a temperatura do zero absoluto.",
-      "O ponto onde a força de atrito estático se transforma em força eletromagnética pura.",
-      "O valor de tensão mecânica no qual o material perde a coesão estrutural e quebra em duas ou mais partes.",
-      "A pressão mínima necessária para manter a circulação sanguínea em repouso absoluto."
-    ],
-    "correctIndex": 2,
-    "explanation": "A fratura mecânica corresponde à rutura física irreversível do material sob esforço mecânico excessivo.",
-    "distractorAnalysis": [
-      "Está incorreta: O ponto de rutura é um limite de coesão mecânica, não uma transição térmica para o zero absoluto.",
-      "Está incorreta: A rutura não transforma atrito estático em ondas eletromagnéticas puras.",
-      "Está incorreta: Não tem relação com a pressão mínima de circulação sanguínea humana."
-    ],
-    "nursingApplication": "Permite estabelecer as margens de segurança para evitar fraturas ósseas e ruturas de implantes."
-  },
-  {
-    "id": 2411,
-    "topicId": 2,
-    "question": "[Variação 2] Qual é o valor do Módulo de Young do Aço apresentado nos slides (Slide 44)?",
-    "options": [
-      "2 × 10¹⁰ N/m², sendo idêntico ao módulo elástico do osso cortical.",
-      "10⁶ N/m², apresentando rigidez semelhante à da borracha comum.",
-      "Zero N/m², pois o aço é um fluido viscoso em repouso.",
-      "20 × 10¹⁰ N/m² (ou 2 × 10¹¹ N/m²), caracterizando um material extremamente rígido."
-    ],
-    "correctIndex": 3,
-    "explanation": "O aço possui módulo de Young de 20 × 10¹⁰ N/m² (200 GPa), conferindo-lhe altíssima rigidez mecânica e quase nula deformação sob cargas moderadas.",
-    "distractorAnalysis": [
-      "Está incorreta: 2 × 10¹⁰ N/m² é o módulo de Young do osso cortical humano, 10 vezes menor que o do aço.",
-      "Está incorreta: 10⁶ N/m² é o módulo de Young da borracha vulcanizada, extremamente flexível.",
-      "Está incorreta: O aço sólido não tem módulo nulo nem se comporta como fluido viscoso."
-    ],
-    "nursingApplication": "Explica a elevada resistência e estabilidade estrutural de ligas metálicas em instrumentos cirúrgicos e camas hospitalares."
-  },
-  {
-    "id": 2412,
-    "topicId": 2,
-    "question": "[Variação 2] Qual é o valor do Módulo de Young do Osso cortical humano indicado nos slides (Slide 44)?",
-    "options": [
-      "2 × 10¹⁰ N/m², conferindo rigidez com excelente capacidade elástica de amortecimento.",
-      "20 × 10¹⁰ N/m², sendo tão rígido e inextensível como o aço maciço.",
-      "7 × 10¹⁰ N/m², comportando-se mecanicamente de forma idêntica ao vidro comum.",
-      "0,5 × 10³ N/m², comportando-se como borracha extremamente flexível."
-    ],
-    "correctIndex": 0,
-    "explanation": "O osso possui E = 2 × 10¹⁰ N/m² (20 GPa), sendo 10 vezes menos rígido que o aço, o que lhe confere flexibilidade essencial para absorver impactos sem quebrar.",
-    "distractorAnalysis": [
-      "Está incorreta: 20 × 10¹⁰ N/m² é o módulo do aço, que tornaria o esqueleto excessivamente rígido e incapaz de absorver choques sem fraturar juntas.",
-      "Está incorreta: 7 × 10¹⁰ N/m² é o módulo do vidro, caracterizado por fragilidade extrema sem deformação plástica.",
-      "Está incorreta: Módulos da ordem de 10³ N/m² correspondem a borrachas e géis moles, incompatíveis com a sustentação do esqueleto."
-    ],
-    "nursingApplication": "Essencial para compreender a resistência das diáfises ósseas às cargas do peso corporal diário."
-  },
-  {
-    "id": 2413,
-    "topicId": 2,
-    "question": "[Variação 2] Como se compara a rigidez do Aço com a rigidez do Osso segundo os dados dos slides (Slide 44)?",
-    "options": [
-      "O osso cortical é 100 vezes mais rígido do que o aço temperado.",
-      "O aço é cerca de 10 vezes mais rígido do que o osso cortical (E_aço / E_osso = 10).",
-      "Ambos os materiais têm exatamente a mesma rigidez estrutural perante esforços axiais.",
-      "O osso é infinitamente rígido, correspondendo ao sólido indeformável de Euclides."
-    ],
-    "correctIndex": 1,
-    "explanation": "E_aço = 20 × 10¹⁰ N/m² e E_osso = 2 × 10¹⁰ N/m²; logo, 20 / 2 = 10 vezes mais rígido.",
-    "distractorAnalysis": [
-      "Está incorreta: O osso é mais deformável que o aço, não sendo mais rígido.",
-      "Está incorreta: Os valores diferem por uma ordem de grandeza (fator 10), não sendo iguais.",
-      "Está incorreta: O osso é um material viscoelástico real, não um sólido indeformável de Euclides."
-    ],
-    "nursingApplication": "Explica o desafio de 'stress shielding' quando implantes metálicos de aço/titânio são colocados em contacto com o osso humano."
-  },
-  {
-    "id": 2414,
-    "topicId": 2,
-    "question": "[Variação 2] Qual é a característica mecânica do Vidro (E = 7 × 10¹⁰ N/m²) descrita no Slide 44?",
-    "options": [
-      "Capacidade extrema de deformação plástica antes da rutura, comportando-se como fio de cobre.",
-      "Rigidez extremamente reduzida, idêntica à da borracha sintética.",
-      "Elevada rigidez teórica, mas grande fragilidade com fratura sem deformação plástica prévia.",
-      "Comportamento puramente plastoviscoelástico semelhante à massa de pão."
-    ],
-    "correctIndex": 2,
-    "explanation": "O vidro é muito rígido mas frágil: sob tensão excessiva, quebra abruptamente sem aviso de escoamento plástico prévio.",
-    "distractorAnalysis": [
-      "Está incorreta: O vidro não apresenta escoamento plástico significativo; a sua fratura é frágil e repentina.",
-      "Está incorreta: Com E = 70 GPa, o vidro tem rigidez 1000 vezes superior à da borracha.",
-      "Está incorreta: Massa de pão é um corpo plastoviscoelástico; o vidro é um sólido elástico linear frágil."
-    ],
-    "nursingApplication": "Alerta para a fragilidade mecânica de ampolas e frascos de vidro em ambiente de trabalho hospitalar."
-  },
-  {
-    "id": 2415,
-    "topicId": 2,
-    "question": "[Variação 2] Como se caracteriza a Borracha em termos de Módulo de Young (Slide 44)?",
-    "options": [
-      "Apresenta módulo superior ao do aço maciço, não sofrendo qualquer deformação mecânica mensurável.",
-      "É um material perfeitamente rígido correspondente ao sólido ideal de Euclides.",
-      "Fratura de modo extremamente frágil à mais pequena força de compressão aplicada.",
-      "Apresenta módulo extremamente baixo (10⁶ a 10⁸ N/m²), sofrendo grandes deformações elásticas reversíveis sob cargas mínimas."
-    ],
-    "correctIndex": 3,
-    "explanation": "A borracha tem E muito baixo (0,1 a 10 × 10⁷ N/m²), permitindo esticar centenas de porcento e retornar elasticamente à forma inicial.",
-    "distractorAnalysis": [
-      "Está incorreta: O módulo da borracha é ordens de grandeza inferior ao do aço, não superior.",
-      "Está incorreta: A borracha é o oposto de um sólido rígido indeformável; é um elastómero altamente flexível.",
-      "Está incorreta: A borracha não apresenta comportamento frágil; suporta grandes deformações sem partir."
-    ],
-    "nursingApplication": "Explica a utilidade de torniquetes de borracha e luvas flexíveis em procedimentos de enfermagem."
-  },
-  {
-    "id": 2416,
-    "topicId": 2,
-    "question": "[Variação 2] Num gráfico Tensão vs Deformação (σ vs ε), o que representa o Limite de Proporcionalidade?",
-    "options": [
-      "O ponto até ao qual a tensão é estritamente proporcional à deformação, vigorando a Lei de Hooke linear.",
-      "O ponto exato onde o corpo se funde e passa do estado sólido ao estado líquido.",
-      "O ponto de rutura irreversível onde a amostra se divide em duas partes.",
-      "O patamar onde a deformação cessa completamente mesmo com força infinita."
-    ],
-    "correctIndex": 0,
-    "explanation": "Até ao limite de proporcionalidade, o gráfico σ vs ε é uma linha reta perfeita com declive constante igual ao módulo de Young E.",
-    "distractorAnalysis": [
-      "Está incorreta: Fusão de materiais é uma transição de fase térmica, não um limite mecânico na curva tensão-deformação.",
-      "Está incorreta: O ponto de rutura ocorre muito mais à frente na curva, após o escoamento ou no final do regime elástico.",
-      "Está incorreta: A deformação não cessa com força infinita; a peça quebra sob tensões excessivas."
-    ],
-    "nursingApplication": "Determina a faixa de cargas mecânicas seguras em que a resposta elástica de uma estrutura é perfeitamente previsível."
-  },
-  {
-    "id": 2417,
-    "topicId": 2,
-    "question": "[Variação 2] Num gráfico Tensão vs Deformação, o que acontece se o material for solicitado além do Limite Elástico?",
-    "options": [
-      "O material regressa instantaneamente à forma original sem qualquer resíduo mecânico.",
-      "O material entra no regime plástico, sofrendo deformações permanentes que não se anulam após a remoção da carga.",
-      "A rigidez intrínseca do corpo torna-se infinita transformando-o num sólido de Euclides.",
-      "A massa total do corpo duplica por conservação do momento angular linear."
-    ],
-    "correctIndex": 1,
-    "explanation": "Ultrapassado o limite de elasticidade, as ligações atómicas escorregam e o sólido não recupera a sua forma inicial (deformação plástica permanente).",
-    "distractorAnalysis": [
-      "Está incorreta: Regressar à forma original ocorre apenas dentro do regime elástico, abaixo do limite de elasticidade.",
-      "Está incorreta: A rigidez não se torna infinita nem o corpo se transforma num modelo teórico indeformável.",
-      "Está incorreta: A massa de um corpo fechado permanece constante por conservação da matéria."
-    ],
-    "nursingApplication": "Explica por que entorses articulares graves ou sobrecargas ósseas podem deixar deformidades permanentes."
-  },
-  {
-    "id": 2418,
-    "topicId": 2,
-    "question": "[Variação 2] Qual é a diferença fundamental entre um material Frágil e um material Dúctil (Slide 44)?",
-    "options": [
-      "O material frágil nunca quebra sob nenhuma força, enquanto o dúctil quebra espontaneamente em repouso.",
-      "O material frágil é sempre líquido, enquanto o material dúctil é sempre gasoso à temperatura ambiente.",
-      "O material frágil fratura abruptamente sem deformação plástica prévia, enquanto o dúctil sofre grande deformação plástica antes da rutura.",
-      "Ambos os materiais têm comportamento mecânico perfeitamente idêntico em qualquer ensaio de tração."
-    ],
-    "correctIndex": 2,
-    "explanation": "Materiais frágeis (como o vidro) quebram assim que atingem o limite elástico; materiais dúcteis (como a prata e o cobre) deformam-se plasticamente antes de fraturar.",
-    "distractorAnalysis": [
-      "Está incorreta: Materiais frágeis quebram facilmente quando sobrecarregados; materiais dúcteis suportam deformação plástica sem quebra imediata.",
-      "Está incorreta: Frágil e dúctil são qualificações mecânicas de sólidos estruturais, não de líquidos ou gases.",
-      "Está incorreta: Frágil e dúctil representam comportamentos mecânicos opostos quanto à capacidade de deformação plástica."
-    ],
-    "nursingApplication": "Ajuda a escolher materiais cirúrgicos que resistam a impactos sem partir de forma catastrófica."
-  },
-  {
-    "id": 2419,
-    "topicId": 2,
-    "question": "[Variação 2] Num ensaio mecânico de tração, a inclinação (declive) da zona linear elástica na curva σ vs ε representa:",
-    "options": [
-      "A aceleração gravítica local da Terra.",
-      "A energia cinética translacional total do laboratório.",
-      "O coeficiente de viscosidade de Poiseuille do fluido intersticial.",
-      "O Módulo de Young (E) do material testado."
-    ],
-    "correctIndex": 3,
-    "explanation": "Na região linear, σ = E · ε, logo o declive da reta (Δσ / Δε) é precisamente o módulo de Young E.",
-    "distractorAnalysis": [
-      "Está incorreta: Aceleração gravítica é uma constante de campo gravitacional, não o declive da curva tensão-deformação.",
-      "Está incorreta: Energia cinética do laboratório não mede propriedades constitutivas elásticas de materiais.",
-      "Está incorreta: Viscosidade de Poiseuille descreve escoamento laminar de fluidos em tubos, não o declive elástico de sólidos."
-    ],
-    "nursingApplication": "Permite aos bioengenheiros determinar a rigidez de tecidos e biomateriais em laboratório de ensaios mecânicos."
-  },
-  {
-    "id": 2420,
-    "topicId": 2,
-    "question": "[Variação 2] O que representa o Ponto de Rutura (ou Tensão de Fratura) na curva Tensão-Deformação?",
-    "options": [
-      "O valor de tensão mecânica no qual o material perde a coesão estrutural e quebra em duas ou mais partes.",
-      "A tensão onde o material atinge a temperatura do zero absoluto.",
-      "O ponto onde a força de atrito estático se transforma em força eletromagnética pura.",
-      "A pressão mínima necessária para manter a circulação sanguínea em repouso absoluto."
-    ],
-    "correctIndex": 0,
-    "explanation": "A fratura mecânica corresponde à rutura física irreversível do material sob esforço mecânico excessivo.",
-    "distractorAnalysis": [
-      "Está incorreta: O ponto de rutura é um limite de coesão mecânica, não uma transição térmica para o zero absoluto.",
-      "Está incorreta: A rutura não transforma atrito estático em ondas eletromagnéticas puras.",
-      "Está incorreta: Não tem relação com a pressão mínima de circulação sanguínea humana."
-    ],
-    "nursingApplication": "Permite estabelecer as margens de segurança para evitar fraturas ósseas e ruturas de implantes."
-  },
-  {
-    "id": 2421,
-    "topicId": 2,
-    "question": "[Variação 3] Qual é o valor do Módulo de Young do Aço apresentado nos slides (Slide 44)?",
-    "options": [
-      "2 × 10¹⁰ N/m², sendo idêntico ao módulo elástico do osso cortical.",
-      "20 × 10¹⁰ N/m² (ou 2 × 10¹¹ N/m²), caracterizando um material extremamente rígido.",
-      "10⁶ N/m², apresentando rigidez semelhante à da borracha comum.",
-      "Zero N/m², pois o aço é um fluido viscoso em repouso."
-    ],
-    "correctIndex": 1,
-    "explanation": "O aço possui módulo de Young de 20 × 10¹⁰ N/m² (200 GPa), conferindo-lhe altíssima rigidez mecânica e quase nula deformação sob cargas moderadas.",
-    "distractorAnalysis": [
-      "Está incorreta: 2 × 10¹⁰ N/m² é o módulo de Young do osso cortical humano, 10 vezes menor que o do aço.",
-      "Está incorreta: 10⁶ N/m² é o módulo de Young da borracha vulcanizada, extremamente flexível.",
-      "Está incorreta: O aço sólido não tem módulo nulo nem se comporta como fluido viscoso."
-    ],
-    "nursingApplication": "Explica a elevada resistência e estabilidade estrutural de ligas metálicas em instrumentos cirúrgicos e camas hospitalares."
-  },
-  {
-    "id": 2422,
-    "topicId": 2,
-    "question": "[Variação 3] Qual é o valor do Módulo de Young do Osso cortical humano indicado nos slides (Slide 44)?",
-    "options": [
-      "20 × 10¹⁰ N/m², sendo tão rígido e inextensível como o aço maciço.",
-      "7 × 10¹⁰ N/m², comportando-se mecanicamente de forma idêntica ao vidro comum.",
-      "2 × 10¹⁰ N/m², conferindo rigidez com excelente capacidade elástica de amortecimento.",
-      "0,5 × 10³ N/m², comportando-se como borracha extremamente flexível."
-    ],
-    "correctIndex": 2,
-    "explanation": "O osso possui E = 2 × 10¹⁰ N/m² (20 GPa), sendo 10 vezes menos rígido que o aço, o que lhe confere flexibilidade essencial para absorver impactos sem quebrar.",
-    "distractorAnalysis": [
-      "Está incorreta: 20 × 10¹⁰ N/m² é o módulo do aço, que tornaria o esqueleto excessivamente rígido e incapaz de absorver choques sem fraturar juntas.",
-      "Está incorreta: 7 × 10¹⁰ N/m² é o módulo do vidro, caracterizado por fragilidade extrema sem deformação plástica.",
-      "Está incorreta: Módulos da ordem de 10³ N/m² correspondem a borrachas e géis moles, incompatíveis com a sustentação do esqueleto."
-    ],
-    "nursingApplication": "Essencial para compreender a resistência das diáfises ósseas às cargas do peso corporal diário."
-  },
-  {
-    "id": 2423,
-    "topicId": 2,
-    "question": "[Variação 3] Como se compara a rigidez do Aço com a rigidez do Osso segundo os dados dos slides (Slide 44)?",
-    "options": [
-      "O osso cortical é 100 vezes mais rígido do que o aço temperado.",
-      "Ambos os materiais têm exatamente a mesma rigidez estrutural perante esforços axiais.",
-      "O osso é infinitamente rígido, correspondendo ao sólido indeformável de Euclides.",
-      "O aço é cerca de 10 vezes mais rígido do que o osso cortical (E_aço / E_osso = 10)."
-    ],
-    "correctIndex": 3,
-    "explanation": "E_aço = 20 × 10¹⁰ N/m² e E_osso = 2 × 10¹⁰ N/m²; logo, 20 / 2 = 10 vezes mais rígido.",
-    "distractorAnalysis": [
-      "Está incorreta: O osso é mais deformável que o aço, não sendo mais rígido.",
-      "Está incorreta: Os valores diferem por uma ordem de grandeza (fator 10), não sendo iguais.",
-      "Está incorreta: O osso é um material viscoelástico real, não um sólido indeformável de Euclides."
-    ],
-    "nursingApplication": "Explica o desafio de 'stress shielding' quando implantes metálicos de aço/titânio são colocados em contacto com o osso humano."
-  },
-  {
-    "id": 2424,
-    "topicId": 2,
-    "question": "[Variação 3] Qual é a característica mecânica do Vidro (E = 7 × 10¹⁰ N/m²) descrita no Slide 44?",
-    "options": [
-      "Elevada rigidez teórica, mas grande fragilidade com fratura sem deformação plástica prévia.",
-      "Capacidade extrema de deformação plástica antes da rutura, comportando-se como fio de cobre.",
-      "Rigidez extremamente reduzida, idêntica à da borracha sintética.",
-      "Comportamento puramente plastoviscoelástico semelhante à massa de pão."
-    ],
-    "correctIndex": 0,
-    "explanation": "O vidro é muito rígido mas frágil: sob tensão excessiva, quebra abruptamente sem aviso de escoamento plástico prévio.",
-    "distractorAnalysis": [
-      "Está incorreta: O vidro não apresenta escoamento plástico significativo; a sua fratura é frágil e repentina.",
-      "Está incorreta: Com E = 70 GPa, o vidro tem rigidez 1000 vezes superior à da borracha.",
-      "Está incorreta: Massa de pão é um corpo plastoviscoelástico; o vidro é um sólido elástico linear frágil."
-    ],
-    "nursingApplication": "Alerta para a fragilidade mecânica de ampolas e frascos de vidro em ambiente de trabalho hospitalar."
-  },
-  {
-    "id": 2425,
-    "topicId": 2,
-    "question": "[Variação 3] Como se caracteriza a Borracha em termos de Módulo de Young (Slide 44)?",
-    "options": [
-      "Apresenta módulo superior ao do aço maciço, não sofrendo qualquer deformação mecânica mensurável.",
-      "Apresenta módulo extremamente baixo (10⁶ a 10⁸ N/m²), sofrendo grandes deformações elásticas reversíveis sob cargas mínimas.",
-      "É um material perfeitamente rígido correspondente ao sólido ideal de Euclides.",
-      "Fratura de modo extremamente frágil à mais pequena força de compressão aplicada."
-    ],
-    "correctIndex": 1,
-    "explanation": "A borracha tem E muito baixo (0,1 a 10 × 10⁷ N/m²), permitindo esticar centenas de porcento e retornar elasticamente à forma inicial.",
-    "distractorAnalysis": [
-      "Está incorreta: O módulo da borracha é ordens de grandeza inferior ao do aço, não superior.",
-      "Está incorreta: A borracha é o oposto de um sólido rígido indeformável; é um elastómero altamente flexível.",
-      "Está incorreta: A borracha não apresenta comportamento frágil; suporta grandes deformações sem partir."
-    ],
-    "nursingApplication": "Explica a utilidade de torniquetes de borracha e luvas flexíveis em procedimentos de enfermagem."
-  },
-  {
-    "id": 2426,
-    "topicId": 2,
-    "question": "[Variação 3] Num gráfico Tensão vs Deformação (σ vs ε), o que representa o Limite de Proporcionalidade?",
-    "options": [
-      "O ponto exato onde o corpo se funde e passa do estado sólido ao estado líquido.",
-      "O ponto de rutura irreversível onde a amostra se divide em duas partes.",
-      "O ponto até ao qual a tensão é estritamente proporcional à deformação, vigorando a Lei de Hooke linear.",
-      "O patamar onde a deformação cessa completamente mesmo com força infinita."
-    ],
-    "correctIndex": 2,
-    "explanation": "Até ao limite de proporcionalidade, o gráfico σ vs ε é uma linha reta perfeita com declive constante igual ao módulo de Young E.",
-    "distractorAnalysis": [
-      "Está incorreta: Fusão de materiais é uma transição de fase térmica, não um limite mecânico na curva tensão-deformação.",
-      "Está incorreta: O ponto de rutura ocorre muito mais à frente na curva, após o escoamento ou no final do regime elástico.",
-      "Está incorreta: A deformação não cessa com força infinita; a peça quebra sob tensões excessivas."
-    ],
-    "nursingApplication": "Determina a faixa de cargas mecânicas seguras em que a resposta elástica de uma estrutura é perfeitamente previsível."
-  },
-  {
-    "id": 2427,
-    "topicId": 2,
-    "question": "[Variação 3] Num gráfico Tensão vs Deformação, o que acontece se o material for solicitado além do Limite Elástico?",
-    "options": [
-      "O material regressa instantaneamente à forma original sem qualquer resíduo mecânico.",
-      "A rigidez intrínseca do corpo torna-se infinita transformando-o num sólido de Euclides.",
-      "A massa total do corpo duplica por conservação do momento angular linear.",
-      "O material entra no regime plástico, sofrendo deformações permanentes que não se anulam após a remoção da carga."
-    ],
-    "correctIndex": 3,
-    "explanation": "Ultrapassado o limite de elasticidade, as ligações atómicas escorregam e o sólido não recupera a sua forma inicial (deformação plástica permanente).",
-    "distractorAnalysis": [
-      "Está incorreta: Regressar à forma original ocorre apenas dentro do regime elástico, abaixo do limite de elasticidade.",
-      "Está incorreta: A rigidez não se torna infinita nem o corpo se transforma num modelo teórico indeformável.",
-      "Está incorreta: A massa de um corpo fechado permanece constante por conservação da matéria."
-    ],
-    "nursingApplication": "Explica por que entorses articulares graves ou sobrecargas ósseas podem deixar deformidades permanentes."
-  },
-  {
-    "id": 2428,
-    "topicId": 2,
-    "question": "[Variação 3] Qual é a diferença fundamental entre um material Frágil e um material Dúctil (Slide 44)?",
-    "options": [
-      "O material frágil fratura abruptamente sem deformação plástica prévia, enquanto o dúctil sofre grande deformação plástica antes da rutura.",
-      "O material frágil nunca quebra sob nenhuma força, enquanto o dúctil quebra espontaneamente em repouso.",
-      "O material frágil é sempre líquido, enquanto o material dúctil é sempre gasoso à temperatura ambiente.",
-      "Ambos os materiais têm comportamento mecânico perfeitamente idêntico em qualquer ensaio de tração."
-    ],
-    "correctIndex": 0,
-    "explanation": "Materiais frágeis (como o vidro) quebram assim que atingem o limite elástico; materiais dúcteis (como a prata e o cobre) deformam-se plasticamente antes de fraturar.",
-    "distractorAnalysis": [
-      "Está incorreta: Materiais frágeis quebram facilmente quando sobrecarregados; materiais dúcteis suportam deformação plástica sem quebra imediata.",
-      "Está incorreta: Frágil e dúctil são qualificações mecânicas de sólidos estruturais, não de líquidos ou gases.",
-      "Está incorreta: Frágil e dúctil representam comportamentos mecânicos opostos quanto à capacidade de deformação plástica."
-    ],
-    "nursingApplication": "Ajuda a escolher materiais cirúrgicos que resistam a impactos sem partir de forma catastrófica."
-  },
-  {
-    "id": 2429,
-    "topicId": 2,
-    "question": "[Variação 3] Num ensaio mecânico de tração, a inclinação (declive) da zona linear elástica na curva σ vs ε representa:",
-    "options": [
-      "A aceleração gravítica local da Terra.",
-      "O Módulo de Young (E) do material testado.",
-      "A energia cinética translacional total do laboratório.",
-      "O coeficiente de viscosidade de Poiseuille do fluido intersticial."
-    ],
-    "correctIndex": 1,
-    "explanation": "Na região linear, σ = E · ε, logo o declive da reta (Δσ / Δε) é precisamente o módulo de Young E.",
-    "distractorAnalysis": [
-      "Está incorreta: Aceleração gravítica é uma constante de campo gravitacional, não o declive da curva tensão-deformação.",
-      "Está incorreta: Energia cinética do laboratório não mede propriedades constitutivas elásticas de materiais.",
-      "Está incorreta: Viscosidade de Poiseuille descreve escoamento laminar de fluidos em tubos, não o declive elástico de sólidos."
-    ],
-    "nursingApplication": "Permite aos bioengenheiros determinar a rigidez de tecidos e biomateriais em laboratório de ensaios mecânicos."
-  },
-  {
-    "id": 2430,
-    "topicId": 2,
-    "question": "[Variação 3] O que representa o Ponto de Rutura (ou Tensão de Fratura) na curva Tensão-Deformação?",
-    "options": [
-      "A tensão onde o material atinge a temperatura do zero absoluto.",
-      "O ponto onde a força de atrito estático se transforma em força eletromagnética pura.",
-      "O valor de tensão mecânica no qual o material perde a coesão estrutural e quebra em duas ou mais partes.",
-      "A pressão mínima necessária para manter a circulação sanguínea em repouso absoluto."
-    ],
-    "correctIndex": 2,
-    "explanation": "A fratura mecânica corresponde à rutura física irreversível do material sob esforço mecânico excessivo.",
-    "distractorAnalysis": [
-      "Está incorreta: O ponto de rutura é um limite de coesão mecânica, não uma transição térmica para o zero absoluto.",
-      "Está incorreta: A rutura não transforma atrito estático em ondas eletromagnéticas puras.",
-      "Está incorreta: Não tem relação com a pressão mínima de circulação sanguínea humana."
-    ],
-    "nursingApplication": "Permite estabelecer as margens de segurança para evitar fraturas ósseas e ruturas de implantes."
-  },
-  {
-    "id": 2431,
-    "topicId": 2,
-    "question": "[Variação 4] Qual é o valor do Módulo de Young do Aço apresentado nos slides (Slide 44)?",
-    "options": [
-      "2 × 10¹⁰ N/m², sendo idêntico ao módulo elástico do osso cortical.",
-      "10⁶ N/m², apresentando rigidez semelhante à da borracha comum.",
-      "Zero N/m², pois o aço é um fluido viscoso em repouso.",
-      "20 × 10¹⁰ N/m² (ou 2 × 10¹¹ N/m²), caracterizando um material extremamente rígido."
-    ],
-    "correctIndex": 3,
-    "explanation": "O aço possui módulo de Young de 20 × 10¹⁰ N/m² (200 GPa), conferindo-lhe altíssima rigidez mecânica e quase nula deformação sob cargas moderadas.",
-    "distractorAnalysis": [
-      "Está incorreta: 2 × 10¹⁰ N/m² é o módulo de Young do osso cortical humano, 10 vezes menor que o do aço.",
-      "Está incorreta: 10⁶ N/m² é o módulo de Young da borracha vulcanizada, extremamente flexível.",
-      "Está incorreta: O aço sólido não tem módulo nulo nem se comporta como fluido viscoso."
-    ],
-    "nursingApplication": "Explica a elevada resistência e estabilidade estrutural de ligas metálicas em instrumentos cirúrgicos e camas hospitalares."
-  },
-  {
-    "id": 2432,
-    "topicId": 2,
-    "question": "[Variação 4] Qual é o valor do Módulo de Young do Osso cortical humano indicado nos slides (Slide 44)?",
-    "options": [
-      "2 × 10¹⁰ N/m², conferindo rigidez com excelente capacidade elástica de amortecimento.",
-      "20 × 10¹⁰ N/m², sendo tão rígido e inextensível como o aço maciço.",
-      "7 × 10¹⁰ N/m², comportando-se mecanicamente de forma idêntica ao vidro comum.",
-      "0,5 × 10³ N/m², comportando-se como borracha extremamente flexível."
-    ],
-    "correctIndex": 0,
-    "explanation": "O osso possui E = 2 × 10¹⁰ N/m² (20 GPa), sendo 10 vezes menos rígido que o aço, o que lhe confere flexibilidade essencial para absorver impactos sem quebrar.",
-    "distractorAnalysis": [
-      "Está incorreta: 20 × 10¹⁰ N/m² é o módulo do aço, que tornaria o esqueleto excessivamente rígido e incapaz de absorver choques sem fraturar juntas.",
-      "Está incorreta: 7 × 10¹⁰ N/m² é o módulo do vidro, caracterizado por fragilidade extrema sem deformação plástica.",
-      "Está incorreta: Módulos da ordem de 10³ N/m² correspondem a borrachas e géis moles, incompatíveis com a sustentação do esqueleto."
-    ],
-    "nursingApplication": "Essencial para compreender a resistência das diáfises ósseas às cargas do peso corporal diário."
-  },
-  {
-    "id": 2433,
-    "topicId": 2,
-    "question": "[Variação 4] Como se compara a rigidez do Aço com a rigidez do Osso segundo os dados dos slides (Slide 44)?",
-    "options": [
-      "O osso cortical é 100 vezes mais rígido do que o aço temperado.",
-      "O aço é cerca de 10 vezes mais rígido do que o osso cortical (E_aço / E_osso = 10).",
-      "Ambos os materiais têm exatamente a mesma rigidez estrutural perante esforços axiais.",
-      "O osso é infinitamente rígido, correspondendo ao sólido indeformável de Euclides."
-    ],
-    "correctIndex": 1,
-    "explanation": "E_aço = 20 × 10¹⁰ N/m² e E_osso = 2 × 10¹⁰ N/m²; logo, 20 / 2 = 10 vezes mais rígido.",
-    "distractorAnalysis": [
-      "Está incorreta: O osso é mais deformável que o aço, não sendo mais rígido.",
-      "Está incorreta: Os valores diferem por uma ordem de grandeza (fator 10), não sendo iguais.",
-      "Está incorreta: O osso é um material viscoelástico real, não um sólido indeformável de Euclides."
-    ],
-    "nursingApplication": "Explica o desafio de 'stress shielding' quando implantes metálicos de aço/titânio são colocados em contacto com o osso humano."
-  },
-  {
-    "id": 2434,
-    "topicId": 2,
-    "question": "[Variação 4] Qual é a característica mecânica do Vidro (E = 7 × 10¹⁰ N/m²) descrita no Slide 44?",
-    "options": [
-      "Capacidade extrema de deformação plástica antes da rutura, comportando-se como fio de cobre.",
-      "Rigidez extremamente reduzida, idêntica à da borracha sintética.",
-      "Elevada rigidez teórica, mas grande fragilidade com fratura sem deformação plástica prévia.",
-      "Comportamento puramente plastoviscoelástico semelhante à massa de pão."
-    ],
-    "correctIndex": 2,
-    "explanation": "O vidro é muito rígido mas frágil: sob tensão excessiva, quebra abruptamente sem aviso de escoamento plástico prévio.",
-    "distractorAnalysis": [
-      "Está incorreta: O vidro não apresenta escoamento plástico significativo; a sua fratura é frágil e repentina.",
-      "Está incorreta: Com E = 70 GPa, o vidro tem rigidez 1000 vezes superior à da borracha.",
-      "Está incorreta: Massa de pão é um corpo plastoviscoelástico; o vidro é um sólido elástico linear frágil."
-    ],
-    "nursingApplication": "Alerta para a fragilidade mecânica de ampolas e frascos de vidro em ambiente de trabalho hospitalar."
-  },
-  {
-    "id": 2435,
-    "topicId": 2,
-    "question": "[Variação 4] Como se caracteriza a Borracha em termos de Módulo de Young (Slide 44)?",
-    "options": [
-      "Apresenta módulo superior ao do aço maciço, não sofrendo qualquer deformação mecânica mensurável.",
-      "É um material perfeitamente rígido correspondente ao sólido ideal de Euclides.",
-      "Fratura de modo extremamente frágil à mais pequena força de compressão aplicada.",
-      "Apresenta módulo extremamente baixo (10⁶ a 10⁸ N/m²), sofrendo grandes deformações elásticas reversíveis sob cargas mínimas."
-    ],
-    "correctIndex": 3,
-    "explanation": "A borracha tem E muito baixo (0,1 a 10 × 10⁷ N/m²), permitindo esticar centenas de porcento e retornar elasticamente à forma inicial.",
-    "distractorAnalysis": [
-      "Está incorreta: O módulo da borracha é ordens de grandeza inferior ao do aço, não superior.",
-      "Está incorreta: A borracha é o oposto de um sólido rígido indeformável; é um elastómero altamente flexível.",
-      "Está incorreta: A borracha não apresenta comportamento frágil; suporta grandes deformações sem partir."
-    ],
-    "nursingApplication": "Explica a utilidade de torniquetes de borracha e luvas flexíveis em procedimentos de enfermagem."
-  },
-  {
-    "id": 2436,
-    "topicId": 2,
-    "question": "[Variação 4] Num gráfico Tensão vs Deformação (σ vs ε), o que representa o Limite de Proporcionalidade?",
-    "options": [
-      "O ponto até ao qual a tensão é estritamente proporcional à deformação, vigorando a Lei de Hooke linear.",
-      "O ponto exato onde o corpo se funde e passa do estado sólido ao estado líquido.",
-      "O ponto de rutura irreversível onde a amostra se divide em duas partes.",
-      "O patamar onde a deformação cessa completamente mesmo com força infinita."
-    ],
-    "correctIndex": 0,
-    "explanation": "Até ao limite de proporcionalidade, o gráfico σ vs ε é uma linha reta perfeita com declive constante igual ao módulo de Young E.",
-    "distractorAnalysis": [
-      "Está incorreta: Fusão de materiais é uma transição de fase térmica, não um limite mecânico na curva tensão-deformação.",
-      "Está incorreta: O ponto de rutura ocorre muito mais à frente na curva, após o escoamento ou no final do regime elástico.",
-      "Está incorreta: A deformação não cessa com força infinita; a peça quebra sob tensões excessivas."
-    ],
-    "nursingApplication": "Determina a faixa de cargas mecânicas seguras em que a resposta elástica de uma estrutura é perfeitamente previsível."
-  },
-  {
-    "id": 2437,
-    "topicId": 2,
-    "question": "[Variação 4] Num gráfico Tensão vs Deformação, o que acontece se o material for solicitado além do Limite Elástico?",
-    "options": [
-      "O material regressa instantaneamente à forma original sem qualquer resíduo mecânico.",
-      "O material entra no regime plástico, sofrendo deformações permanentes que não se anulam após a remoção da carga.",
-      "A rigidez intrínseca do corpo torna-se infinita transformando-o num sólido de Euclides.",
-      "A massa total do corpo duplica por conservação do momento angular linear."
-    ],
-    "correctIndex": 1,
-    "explanation": "Ultrapassado o limite de elasticidade, as ligações atómicas escorregam e o sólido não recupera a sua forma inicial (deformação plástica permanente).",
-    "distractorAnalysis": [
-      "Está incorreta: Regressar à forma original ocorre apenas dentro do regime elástico, abaixo do limite de elasticidade.",
-      "Está incorreta: A rigidez não se torna infinita nem o corpo se transforma num modelo teórico indeformável.",
-      "Está incorreta: A massa de um corpo fechado permanece constante por conservação da matéria."
-    ],
-    "nursingApplication": "Explica por que entorses articulares graves ou sobrecargas ósseas podem deixar deformidades permanentes."
-  },
-  {
-    "id": 2438,
-    "topicId": 2,
-    "question": "[Variação 4] Qual é a diferença fundamental entre um material Frágil e um material Dúctil (Slide 44)?",
-    "options": [
-      "O material frágil nunca quebra sob nenhuma força, enquanto o dúctil quebra espontaneamente em repouso.",
-      "O material frágil é sempre líquido, enquanto o material dúctil é sempre gasoso à temperatura ambiente.",
-      "O material frágil fratura abruptamente sem deformação plástica prévia, enquanto o dúctil sofre grande deformação plástica antes da rutura.",
-      "Ambos os materiais têm comportamento mecânico perfeitamente idêntico em qualquer ensaio de tração."
-    ],
-    "correctIndex": 2,
-    "explanation": "Materiais frágeis (como o vidro) quebram assim que atingem o limite elástico; materiais dúcteis (como a prata e o cobre) deformam-se plasticamente antes de fraturar.",
-    "distractorAnalysis": [
-      "Está incorreta: Materiais frágeis quebram facilmente quando sobrecarregados; materiais dúcteis suportam deformação plástica sem quebra imediata.",
-      "Está incorreta: Frágil e dúctil são qualificações mecânicas de sólidos estruturais, não de líquidos ou gases.",
-      "Está incorreta: Frágil e dúctil representam comportamentos mecânicos opostos quanto à capacidade de deformação plástica."
-    ],
-    "nursingApplication": "Ajuda a escolher materiais cirúrgicos que resistam a impactos sem partir de forma catastrófica."
-  },
-  {
-    "id": 2439,
-    "topicId": 2,
-    "question": "[Variação 4] Num ensaio mecânico de tração, a inclinação (declive) da zona linear elástica na curva σ vs ε representa:",
-    "options": [
-      "A aceleração gravítica local da Terra.",
-      "A energia cinética translacional total do laboratório.",
-      "O coeficiente de viscosidade de Poiseuille do fluido intersticial.",
-      "O Módulo de Young (E) do material testado."
-    ],
-    "correctIndex": 3,
-    "explanation": "Na região linear, σ = E · ε, logo o declive da reta (Δσ / Δε) é precisamente o módulo de Young E.",
-    "distractorAnalysis": [
-      "Está incorreta: Aceleração gravítica é uma constante de campo gravitacional, não o declive da curva tensão-deformação.",
-      "Está incorreta: Energia cinética do laboratório não mede propriedades constitutivas elásticas de materiais.",
-      "Está incorreta: Viscosidade de Poiseuille descreve escoamento laminar de fluidos em tubos, não o declive elástico de sólidos."
-    ],
-    "nursingApplication": "Permite aos bioengenheiros determinar a rigidez de tecidos e biomateriais em laboratório de ensaios mecânicos."
-  },
-  {
-    "id": 2440,
-    "topicId": 2,
-    "question": "[Variação 4] O que representa o Ponto de Rutura (ou Tensão de Fratura) na curva Tensão-Deformação?",
-    "options": [
-      "O valor de tensão mecânica no qual o material perde a coesão estrutural e quebra em duas ou mais partes.",
-      "A tensão onde o material atinge a temperatura do zero absoluto.",
-      "O ponto onde a força de atrito estático se transforma em força eletromagnética pura.",
-      "A pressão mínima necessária para manter a circulação sanguínea em repouso absoluto."
-    ],
-    "correctIndex": 0,
-    "explanation": "A fratura mecânica corresponde à rutura física irreversível do material sob esforço mecânico excessivo.",
-    "distractorAnalysis": [
-      "Está incorreta: O ponto de rutura é um limite de coesão mecânica, não uma transição térmica para o zero absoluto.",
-      "Está incorreta: A rutura não transforma atrito estático em ondas eletromagnéticas puras.",
-      "Está incorreta: Não tem relação com a pressão mínima de circulação sanguínea humana."
-    ],
-    "nursingApplication": "Permite estabelecer as margens de segurança para evitar fraturas ósseas e ruturas de implantes."
-  },
-  {
-    "id": 2441,
-    "topicId": 2,
-    "question": "[Variação 5] Qual é o valor do Módulo de Young do Aço apresentado nos slides (Slide 44)?",
-    "options": [
-      "2 × 10¹⁰ N/m², sendo idêntico ao módulo elástico do osso cortical.",
-      "20 × 10¹⁰ N/m² (ou 2 × 10¹¹ N/m²), caracterizando um material extremamente rígido.",
-      "10⁶ N/m², apresentando rigidez semelhante à da borracha comum.",
-      "Zero N/m², pois o aço é um fluido viscoso em repouso."
-    ],
-    "correctIndex": 1,
-    "explanation": "O aço possui módulo de Young de 20 × 10¹⁰ N/m² (200 GPa), conferindo-lhe altíssima rigidez mecânica e quase nula deformação sob cargas moderadas.",
-    "distractorAnalysis": [
-      "Está incorreta: 2 × 10¹⁰ N/m² é o módulo de Young do osso cortical humano, 10 vezes menor que o do aço.",
-      "Está incorreta: 10⁶ N/m² é o módulo de Young da borracha vulcanizada, extremamente flexível.",
-      "Está incorreta: O aço sólido não tem módulo nulo nem se comporta como fluido viscoso."
-    ],
-    "nursingApplication": "Explica a elevada resistência e estabilidade estrutural de ligas metálicas em instrumentos cirúrgicos e camas hospitalares."
-  },
-  {
-    "id": 2442,
-    "topicId": 2,
-    "question": "[Variação 5] Qual é o valor do Módulo de Young do Osso cortical humano indicado nos slides (Slide 44)?",
-    "options": [
-      "20 × 10¹⁰ N/m², sendo tão rígido e inextensível como o aço maciço.",
-      "7 × 10¹⁰ N/m², comportando-se mecanicamente de forma idêntica ao vidro comum.",
-      "2 × 10¹⁰ N/m², conferindo rigidez com excelente capacidade elástica de amortecimento.",
-      "0,5 × 10³ N/m², comportando-se como borracha extremamente flexível."
-    ],
-    "correctIndex": 2,
-    "explanation": "O osso possui E = 2 × 10¹⁰ N/m² (20 GPa), sendo 10 vezes menos rígido que o aço, o que lhe confere flexibilidade essencial para absorver impactos sem quebrar.",
-    "distractorAnalysis": [
-      "Está incorreta: 20 × 10¹⁰ N/m² é o módulo do aço, que tornaria o esqueleto excessivamente rígido e incapaz de absorver choques sem fraturar juntas.",
-      "Está incorreta: 7 × 10¹⁰ N/m² é o módulo do vidro, caracterizado por fragilidade extrema sem deformação plástica.",
-      "Está incorreta: Módulos da ordem de 10³ N/m² correspondem a borrachas e géis moles, incompatíveis com a sustentação do esqueleto."
-    ],
-    "nursingApplication": "Essencial para compreender a resistência das diáfises ósseas às cargas do peso corporal diário."
-  },
-  {
-    "id": 2443,
-    "topicId": 2,
-    "question": "[Variação 5] Como se compara a rigidez do Aço com a rigidez do Osso segundo os dados dos slides (Slide 44)?",
-    "options": [
-      "O osso cortical é 100 vezes mais rígido do que o aço temperado.",
-      "Ambos os materiais têm exatamente a mesma rigidez estrutural perante esforços axiais.",
-      "O osso é infinitamente rígido, correspondendo ao sólido indeformável de Euclides.",
-      "O aço é cerca de 10 vezes mais rígido do que o osso cortical (E_aço / E_osso = 10)."
-    ],
-    "correctIndex": 3,
-    "explanation": "E_aço = 20 × 10¹⁰ N/m² e E_osso = 2 × 10¹⁰ N/m²; logo, 20 / 2 = 10 vezes mais rígido.",
-    "distractorAnalysis": [
-      "Está incorreta: O osso é mais deformável que o aço, não sendo mais rígido.",
-      "Está incorreta: Os valores diferem por uma ordem de grandeza (fator 10), não sendo iguais.",
-      "Está incorreta: O osso é um material viscoelástico real, não um sólido indeformável de Euclides."
-    ],
-    "nursingApplication": "Explica o desafio de 'stress shielding' quando implantes metálicos de aço/titânio são colocados em contacto com o osso humano."
-  },
-  {
-    "id": 2444,
-    "topicId": 2,
-    "question": "[Variação 5] Qual é a característica mecânica do Vidro (E = 7 × 10¹⁰ N/m²) descrita no Slide 44?",
-    "options": [
-      "Elevada rigidez teórica, mas grande fragilidade com fratura sem deformação plástica prévia.",
-      "Capacidade extrema de deformação plástica antes da rutura, comportando-se como fio de cobre.",
-      "Rigidez extremamente reduzida, idêntica à da borracha sintética.",
-      "Comportamento puramente plastoviscoelástico semelhante à massa de pão."
-    ],
-    "correctIndex": 0,
-    "explanation": "O vidro é muito rígido mas frágil: sob tensão excessiva, quebra abruptamente sem aviso de escoamento plástico prévio.",
-    "distractorAnalysis": [
-      "Está incorreta: O vidro não apresenta escoamento plástico significativo; a sua fratura é frágil e repentina.",
-      "Está incorreta: Com E = 70 GPa, o vidro tem rigidez 1000 vezes superior à da borracha.",
-      "Está incorreta: Massa de pão é um corpo plastoviscoelástico; o vidro é um sólido elástico linear frágil."
-    ],
-    "nursingApplication": "Alerta para a fragilidade mecânica de ampolas e frascos de vidro em ambiente de trabalho hospitalar."
-  },
-  {
-    "id": 2445,
-    "topicId": 2,
-    "question": "[Variação 5] Como se caracteriza a Borracha em termos de Módulo de Young (Slide 44)?",
-    "options": [
-      "Apresenta módulo superior ao do aço maciço, não sofrendo qualquer deformação mecânica mensurável.",
-      "Apresenta módulo extremamente baixo (10⁶ a 10⁸ N/m²), sofrendo grandes deformações elásticas reversíveis sob cargas mínimas.",
-      "É um material perfeitamente rígido correspondente ao sólido ideal de Euclides.",
-      "Fratura de modo extremamente frágil à mais pequena força de compressão aplicada."
-    ],
-    "correctIndex": 1,
-    "explanation": "A borracha tem E muito baixo (0,1 a 10 × 10⁷ N/m²), permitindo esticar centenas de porcento e retornar elasticamente à forma inicial.",
-    "distractorAnalysis": [
-      "Está incorreta: O módulo da borracha é ordens de grandeza inferior ao do aço, não superior.",
-      "Está incorreta: A borracha é o oposto de um sólido rígido indeformável; é um elastómero altamente flexível.",
-      "Está incorreta: A borracha não apresenta comportamento frágil; suporta grandes deformações sem partir."
-    ],
-    "nursingApplication": "Explica a utilidade de torniquetes de borracha e luvas flexíveis em procedimentos de enfermagem."
-  },
-  {
-    "id": 2446,
-    "topicId": 2,
-    "question": "[Variação 5] Num gráfico Tensão vs Deformação (σ vs ε), o que representa o Limite de Proporcionalidade?",
-    "options": [
-      "O ponto exato onde o corpo se funde e passa do estado sólido ao estado líquido.",
-      "O ponto de rutura irreversível onde a amostra se divide em duas partes.",
-      "O ponto até ao qual a tensão é estritamente proporcional à deformação, vigorando a Lei de Hooke linear.",
-      "O patamar onde a deformação cessa completamente mesmo com força infinita."
-    ],
-    "correctIndex": 2,
-    "explanation": "Até ao limite de proporcionalidade, o gráfico σ vs ε é uma linha reta perfeita com declive constante igual ao módulo de Young E.",
-    "distractorAnalysis": [
-      "Está incorreta: Fusão de materiais é uma transição de fase térmica, não um limite mecânico na curva tensão-deformação.",
-      "Está incorreta: O ponto de rutura ocorre muito mais à frente na curva, após o escoamento ou no final do regime elástico.",
-      "Está incorreta: A deformação não cessa com força infinita; a peça quebra sob tensões excessivas."
-    ],
-    "nursingApplication": "Determina a faixa de cargas mecânicas seguras em que a resposta elástica de uma estrutura é perfeitamente previsível."
-  },
-  {
-    "id": 2447,
-    "topicId": 2,
-    "question": "[Variação 5] Num gráfico Tensão vs Deformação, o que acontece se o material for solicitado além do Limite Elástico?",
-    "options": [
-      "O material regressa instantaneamente à forma original sem qualquer resíduo mecânico.",
-      "A rigidez intrínseca do corpo torna-se infinita transformando-o num sólido de Euclides.",
-      "A massa total do corpo duplica por conservação do momento angular linear.",
-      "O material entra no regime plástico, sofrendo deformações permanentes que não se anulam após a remoção da carga."
-    ],
-    "correctIndex": 3,
-    "explanation": "Ultrapassado o limite de elasticidade, as ligações atómicas escorregam e o sólido não recupera a sua forma inicial (deformação plástica permanente).",
-    "distractorAnalysis": [
-      "Está incorreta: Regressar à forma original ocorre apenas dentro do regime elástico, abaixo do limite de elasticidade.",
-      "Está incorreta: A rigidez não se torna infinita nem o corpo se transforma num modelo teórico indeformável.",
-      "Está incorreta: A massa de um corpo fechado permanece constante por conservação da matéria."
-    ],
-    "nursingApplication": "Explica por que entorses articulares graves ou sobrecargas ósseas podem deixar deformidades permanentes."
-  },
-  {
-    "id": 2448,
-    "topicId": 2,
-    "question": "[Variação 5] Qual é a diferença fundamental entre um material Frágil e um material Dúctil (Slide 44)?",
-    "options": [
-      "O material frágil fratura abruptamente sem deformação plástica prévia, enquanto o dúctil sofre grande deformação plástica antes da rutura.",
-      "O material frágil nunca quebra sob nenhuma força, enquanto o dúctil quebra espontaneamente em repouso.",
-      "O material frágil é sempre líquido, enquanto o material dúctil é sempre gasoso à temperatura ambiente.",
-      "Ambos os materiais têm comportamento mecânico perfeitamente idêntico em qualquer ensaio de tração."
-    ],
-    "correctIndex": 0,
-    "explanation": "Materiais frágeis (como o vidro) quebram assim que atingem o limite elástico; materiais dúcteis (como a prata e o cobre) deformam-se plasticamente antes de fraturar.",
-    "distractorAnalysis": [
-      "Está incorreta: Materiais frágeis quebram facilmente quando sobrecarregados; materiais dúcteis suportam deformação plástica sem quebra imediata.",
-      "Está incorreta: Frágil e dúctil são qualificações mecânicas de sólidos estruturais, não de líquidos ou gases.",
-      "Está incorreta: Frágil e dúctil representam comportamentos mecânicos opostos quanto à capacidade de deformação plástica."
-    ],
-    "nursingApplication": "Ajuda a escolher materiais cirúrgicos que resistam a impactos sem partir de forma catastrófica."
-  },
-  {
-    "id": 2449,
-    "topicId": 2,
-    "question": "[Variação 5] Num ensaio mecânico de tração, a inclinação (declive) da zona linear elástica na curva σ vs ε representa:",
-    "options": [
-      "A aceleração gravítica local da Terra.",
-      "O Módulo de Young (E) do material testado.",
-      "A energia cinética translacional total do laboratório.",
-      "O coeficiente de viscosidade de Poiseuille do fluido intersticial."
-    ],
-    "correctIndex": 1,
-    "explanation": "Na região linear, σ = E · ε, logo o declive da reta (Δσ / Δε) é precisamente o módulo de Young E.",
-    "distractorAnalysis": [
-      "Está incorreta: Aceleração gravítica é uma constante de campo gravitacional, não o declive da curva tensão-deformação.",
-      "Está incorreta: Energia cinética do laboratório não mede propriedades constitutivas elásticas de materiais.",
-      "Está incorreta: Viscosidade de Poiseuille descreve escoamento laminar de fluidos em tubos, não o declive elástico de sólidos."
-    ],
-    "nursingApplication": "Permite aos bioengenheiros determinar a rigidez de tecidos e biomateriais em laboratório de ensaios mecânicos."
-  },
-  {
-    "id": 2450,
-    "topicId": 2,
-    "question": "[Variação 5] O que representa o Ponto de Rutura (ou Tensão de Fratura) na curva Tensão-Deformação?",
-    "options": [
-      "A tensão onde o material atinge a temperatura do zero absoluto.",
-      "O ponto onde a força de atrito estático se transforma em força eletromagnética pura.",
-      "O valor de tensão mecânica no qual o material perde a coesão estrutural e quebra em duas ou mais partes.",
-      "A pressão mínima necessária para manter a circulação sanguínea em repouso absoluto."
-    ],
-    "correctIndex": 2,
-    "explanation": "A fratura mecânica corresponde à rutura física irreversível do material sob esforço mecânico excessivo.",
-    "distractorAnalysis": [
-      "Está incorreta: O ponto de rutura é um limite de coesão mecânica, não uma transição térmica para o zero absoluto.",
-      "Está incorreta: A rutura não transforma atrito estático em ondas eletromagnéticas puras.",
-      "Está incorreta: Não tem relação com a pressão mínima de circulação sanguínea humana."
-    ],
-    "nursingApplication": "Permite estabelecer as margens de segurança para evitar fraturas ósseas e ruturas de implantes."
-  },
-  {
-    "id": 2451,
-    "topicId": 2,
-    "question": "O que é a Histerese Elástica observada nos corpos viscoelásticos (Slide 19)?",
-    "options": [
-      "A emissão espontânea de fotões luminosos quando um osso é colocado no escuro absoluto.",
-      "O aumento instantâneo da massa inercial do corpo elástico quando submetido a velocidades baixas.",
-      "A restituição de 100% da energia mecânica sem qualquer perda ou produção de calor no sistema.",
-      "O fenómeno em que a curva de descarga não coincide com a curva de carga, formando um ciclo fechado no diagrama tensão-deformação."
-    ],
-    "correctIndex": 3,
-    "explanation": "Nos corpos viscoelásticos (como ossos e cartilagens), o retorno elástico segue um caminho diferente da deformação inicial, caracterizando a histerese.",
-    "distractorAnalysis": [
-      "Está incorreta: Emissão de fotões no escuro é fosforescência ou bioluminescência, não histerese elástica mecânica.",
-      "Está incorreta: A massa inercial de um corpo sob ensaios mecânicos normais não varia com a velocidade.",
-      "Está incorreta: Restituição de 100% da energia sem perdas caracteriza um corpo elástico ideal de Hooke, não um corpo com histerese."
-    ],
-    "nursingApplication": "Explica o amortecimento mecânico natural das articulações e dos discos vertebrais."
-  },
-  {
-    "id": 2452,
-    "topicId": 2,
-    "question": "O que representa fisicamente a área contida no interior do ciclo de histerese elástica (Slide 19)?",
-    "options": [
-      "A quantidade de energia mecânica dissipada sob a forma de calor durante o ciclo de carga e descarga.",
-      "A aceleração média adquirida pelo centro de gravidade do corpo durante o salto.",
-      "O volume de oxigénio consumido pelas mitocôndrias durante a contração isotónica.",
-      "A carga elétrica acumulada na superfície externa do tecido elástico por indução estática."
-    ],
-    "correctIndex": 0,
-    "explanation": "A área do laço de histerese representa o trabalho mecânico perdido pelo sistema sob a forma de energia térmica dissipada.",
-    "distractorAnalysis": [
-      "Está incorreta: Aceleração do centro de gravidade é uma grandeza cinemática, não a área de um gráfico tensão-deformação.",
-      "Está incorreta: Consumo mitocondrial de oxigénio é um processo bioquímico celular metabólico, não trabalho de histerese.",
-      "Está incorreta: Carga elétrica estática mede-se em Coulombs e decorre de efeitos triboelétricos, não da área do ciclo mecânico."
-    ],
-    "nursingApplication": "Demonstra a capacidade dos tecidos biológicos de dissipar choques mecânicos para proteger os órgãos vitais."
-  },
-  {
-    "id": 2453,
-    "topicId": 2,
-    "question": "Porque é que a histerese elástica dos tecidos viscoelásticos (como cartilagens e ligamentos) é benéfica para o corpo humano?",
-    "options": [
-      "Torna os ossos totalmente indeformáveis como blocos maciços de aço temperado.",
-      "Permite absorver choques mecânicos e amortecer impactos através da dissipação gradual de energia.",
-      "Elimina a necessidade de circulação sanguínea e de oxigenação celular nos membros inferiores.",
-      "Impede que a gravidade terrestre exerça qualquer força peso sobre o corpo em repouso."
-    ],
-    "correctIndex": 1,
-    "explanation": "Ao dissipar parte da energia mecânica em calor (amortecimento), os tecidos viscoelásticos evitam picos violentos de tensão sobre as articulações.",
-    "distractorAnalysis": [
-      "Está incorreta: Tornar os ossos indeformáveis impediria o amortecimento elástico e aumentaria o risco de fratura por impacto.",
-      "Está incorreta: A viscoelasticidade mecânica não elimina os processos metabólicos nem a circulação de sangue.",
-      "Está incorreta: Nenhum tecido elástico biológico tem a capacidade de anular a gravidade terrestre."
-    ],
-    "nursingApplication": "Explica por que calçado com amortecimento elástico ajuda a prevenir lesões por impacto na marcha e corrida."
-  },
-  {
-    "id": 2454,
-    "topicId": 2,
-    "question": "O que é o fenómeno de Fluência (Creep) em materiais viscoelásticos?",
-    "options": [
-      "A diminuição instantânea da temperatura do corpo para o zero absoluto sob tensão mecânica.",
-      "A fragmentação explosiva do material assim que é aplicada uma força mínima de compressão.",
-      "O aumento progressivo da deformação ao longo do tempo quando o material é submetido a uma tensão (força) constante.",
-      "O retorno imediato e perfeitamente elástico à forma original sem qualquer atraso temporal."
-    ],
-    "correctIndex": 2,
-    "explanation": "A fluência (creep) caracteriza-se pela continuação lenta da deformação com o passar do tempo enquanto a carga externa permanece constante.",
-    "distractorAnalysis": [
-      "Está incorreta: Ensaios mecânicos não provocam arrefecimento para o zero absoluto.",
-      "Está incorreta: Fragmentação explosiva imediata sob força mínima seria uma falha catastrófica anómala, não fluência lenta.",
-      "Está incorreta: Retorno instantâneo sem atraso caracteriza um sólido elástico ideal de Hooke sem efeitos viscosos."
-    ],
-    "nursingApplication": "Explica por que uma pessoa perde ligeiramente altura ao longo do dia devido à compressão prolongada dos discos intervertebrais."
-  },
-  {
-    "id": 2455,
-    "topicId": 2,
-    "question": "O que é o fenómeno de Relaxamento de Tensões em materiais viscoelásticos?",
-    "options": [
-      "O aumento infinito da força elástica gerada quando a barra é mantida absolutamente fixa.",
-      "A transformação de energia potencial gravitacional em energia nuclear espontânea.",
-      "A anulação de todas as forças de atrito na superfície externa do corpo biológico.",
-      "A diminuição progressiva da tensão interna necessária para manter o material sob uma deformação constante ao longo do tempo."
-    ],
-    "correctIndex": 3,
-    "explanation": "No relaxamento de tensões, mantendo-se a deformação constante, as moléculas reorganizam-se e a tensão mecânica interna diminui com o tempo.",
-    "distractorAnalysis": [
-      "Está incorreta: A tensão interna diminui com o tempo sob deformação fixa, não aumenta infinitamente.",
-      "Está incorreta: Tensões elásticas não se convertem espontaneamente em reações nucleares.",
-      "Está incorreta: O atrito externo não é anulado pelo relaxamento interno do material."
-    ],
-    "nursingApplication": "Relevante quando ligaduras elásticas ou talas mantidas com extensão fixa perdem tensão ao longo das horas."
-  },
-  {
-    "id": 2456,
-    "topicId": 2,
-    "question": "Porque é que o osso cortical é classificado como um material Anisotrópico na biomecânica?",
-    "options": [
-      "Porque as suas propriedades mecânicas (resistência e rigidez) variam consoante a direção em que a força é aplicada.",
-      "Porque apresenta exatamente a mesma rigidez e resistência mecânica em todas as direções do espaço tridimensional.",
-      "Porque é constituído exclusivamente por um líquido viscoso newtoniano sem qualquer mineral sólido.",
-      "Porque se decompõe espontaneamente em gás carbónico quando sujeito a qualquer força mecânica."
-    ],
-    "correctIndex": 0,
-    "explanation": "O osso é mais resistente à compressão longitudinal do que à tração ou cisalhamento transversal, sendo, portanto, mecanicamente anisotrópico.",
-    "distractorAnalysis": [
-      "Está incorreta: Apresentar a mesma resistência em todas as direções define um material isotrópico, não anisotrópico.",
-      "Está incorreta: O osso possui uma matriz sólida mineralizada rica em hidroxiapatite e colagénio, não sendo puramente líquido.",
-      "Está incorreta: O osso não se decompõe em gás carbónico sob esforços mecânicos normais."
-    ],
-    "nursingApplication": "Permite entender por que o fémur suporta grandes cargas axiais na vertical, mas fratura mais facilmente sob torção ou flexão lateral."
-  },
-  {
-    "id": 2457,
-    "topicId": 2,
-    "question": "Como varia a rigidez do osso em função da velocidade com que a carga mecânica é aplicada (comportamento viscoelástico)?",
-    "options": [
-      "O osso perde toda a sua rigidez tornando-se puramente líquido quando a carga é aplicada com alta velocidade.",
-      "O osso comporta-se de forma mais rígida e suporta maiores tensões quando a carga é aplicada rapidamente do que lentamente.",
-      "A velocidade de aplicação da carga não tem qualquer influência nas propriedades mecânicas de um material viscoelástico.",
-      "O osso só suporta cargas quando a velocidade de impacto é exatamente zero."
-    ],
-    "correctIndex": 1,
-    "explanation": "Devido à viscoelasticidade, materiais biológicos aumentam a rigidez aparente e a tensão de rutura sob taxas de deformação elevadas (impactos rápidos).",
-    "distractorAnalysis": [
-      "Está incorreta: O osso não se liquefaz sob carregamentos mecânicos de alta velocidade.",
-      "Está incorreta: Em materiais viscoelásticos, a resposta mecânica depende criticamente da taxa de deformação (velocidade de carga).",
-      "Está incorreta: O osso suporta cargas em repouso e em movimento dinâmico."
-    ],
-    "nursingApplication": "Explica por que os mecanismos de lesão e fratura óssea diferem entre quedas lentas e impactos traumáticos rápidos."
-  },
-  {
-    "id": 2458,
-    "topicId": 2,
-    "question": "Qual dos seguintes constituintes do osso confere predominantemente Flexibilidade e Resistência à Tração?",
-    "options": [
-      "Os cristais minerais inorgânicos de hidroxiapatite de cálcio.",
-      "O ar atmosférico contido nos poros trabeculares microscópicos.",
-      "As fibras de colagénio da matriz óssea.",
-      "Os eletrões livres que fluem através da corrente galvânica da pele."
-    ],
-    "correctIndex": 2,
-    "explanation": "O colagénio (fração orgânica) confere flexibilidade, elasticidade e resistência à tração, enquanto a hidroxiapatite confere rigidez à compressão.",
-    "distractorAnalysis": [
-      "Está incorreta: A hidroxiapatite mineral confere dureza e resistência à compressão, não flexibilidade à tração.",
-      "Está incorreta: O osso não é preenchido por ar atmosférico, mas por medula e fluido intersticial.",
-      "Está incorreta: Correntes galvânicas da pele não são componentes estruturais da matriz óssea."
-    ],
-    "nursingApplication": "Explica por que a perda de colagénio com o envelhecimento torna os ossos mais frágeis e quebradiços."
-  },
-  {
-    "id": 2459,
-    "topicId": 2,
-    "question": "Qual dos seguintes constituintes do osso confere predominantemente Dureza, Rigidez e Resistência à Compressão?",
-    "options": [
-      "As fibras flexíveis de colagénio que compõem a matriz orgânica do tecido.",
-      "A hemoglobina livre que transporta oxigénio no plasma sanguíneo.",
-      "As moléculas de água pura que evaporam imediatamente para o exterior.",
-      "Os cristais minerais inorgânicos de hidroxiapatite (sais de cálcio e fosfato)."
-    ],
-    "correctIndex": 3,
-    "explanation": "A fase inorgânica mineral (hidroxiapatite) é a principal responsável pela elevada rigidez intrínseca e resistência à compressão do osso.",
-    "distractorAnalysis": [
-      "Está incorreta: O colagénio orgânico confere flexibilidade elástica e resistência à tração mecânica.",
-      "Está incorreta: A hemoglobina está nos eritrócitos circulantes, não na matriz mineral do osso cortical.",
-      "Está incorreta: A água intersticial contribui para a viscoelasticidade, mas não confere a rigidez mineral."
-    ],
-    "nursingApplication": "Fundamental para entender o papel do aporte de cálcio e vitamina D na densidade mineral óssea."
-  },
-  {
-    "id": 2460,
-    "topicId": 2,
-    "question": "Em síntese biomecânica (Slide 20 e 34), a estrutura de um osso longo como o fémur é geometricamente otimizada para:",
-    "options": [
-      "Resistir a esforços combinados de compressão axial, flexão e torção com o mínimo de peso ósseo (estrutura oca cilíndrica).",
-      "Ser um corpo perfeitamente maciço e infinito sem canal medular interno.",
-      "Comportar-se como um fluido viscoso de Newton em equilíbrio hidrostático no leito.",
-      "Evitar qualquer tipo de movimento articular mantendo o esqueleto em rigidez cadavérica."
-    ],
-    "correctIndex": 0,
-    "explanation": "A geometria cilíndrica oca dos ossos longos maximiza o momento de inércia polar e de flexão, conferindo alta resistência com menor massa corporal.",
-    "distractorAnalysis": [
-      "Está incorreta: Um osso maciço seria excessivamente pesado e metabolicamente ineficiente sem ganho proporcional de resistência na torção.",
-      "Está incorreta: O osso não é um fluido nem se rege pelas equações puramente hidrostáticas de Newton.",
-      "Está incorreta: O esqueleto é concebido para permitir mobilidade articular equilibrada e absorção dinâmica de forças."
-    ],
-    "nursingApplication": "Permite compreender por que a locomoção humana é eficiente em termos de consumo energético e resistência mecânica."
-  },
-  {
-    "id": 2461,
-    "topicId": 2,
-    "question": "[Variação 2] O que é a Histerese Elástica observada nos corpos viscoelásticos (Slide 19)?",
-    "options": [
-      "A emissão espontânea de fotões luminosos quando um osso é colocado no escuro absoluto.",
-      "O fenómeno em que a curva de descarga não coincide com a curva de carga, formando um ciclo fechado no diagrama tensão-deformação.",
-      "O aumento instantâneo da massa inercial do corpo elástico quando submetido a velocidades baixas.",
-      "A restituição de 100% da energia mecânica sem qualquer perda ou produção de calor no sistema."
-    ],
-    "correctIndex": 1,
-    "explanation": "Nos corpos viscoelásticos (como ossos e cartilagens), o retorno elástico segue um caminho diferente da deformação inicial, caracterizando a histerese.",
-    "distractorAnalysis": [
-      "Está incorreta: Emissão de fotões no escuro é fosforescência ou bioluminescência, não histerese elástica mecânica.",
-      "Está incorreta: A massa inercial de um corpo sob ensaios mecânicos normais não varia com a velocidade.",
-      "Está incorreta: Restituição de 100% da energia sem perdas caracteriza um corpo elástico ideal de Hooke, não um corpo com histerese."
-    ],
-    "nursingApplication": "Explica o amortecimento mecânico natural das articulações e dos discos vertebrais."
-  },
-  {
-    "id": 2462,
-    "topicId": 2,
-    "question": "[Variação 2] O que representa fisicamente a área contida no interior do ciclo de histerese elástica (Slide 19)?",
-    "options": [
-      "A aceleração média adquirida pelo centro de gravidade do corpo durante o salto.",
-      "O volume de oxigénio consumido pelas mitocôndrias durante a contração isotónica.",
-      "A quantidade de energia mecânica dissipada sob a forma de calor durante o ciclo de carga e descarga.",
-      "A carga elétrica acumulada na superfície externa do tecido elástico por indução estática."
-    ],
-    "correctIndex": 2,
-    "explanation": "A área do laço de histerese representa o trabalho mecânico perdido pelo sistema sob a forma de energia térmica dissipada.",
-    "distractorAnalysis": [
-      "Está incorreta: Aceleração do centro de gravidade é uma grandeza cinemática, não a área de um gráfico tensão-deformação.",
-      "Está incorreta: Consumo mitocondrial de oxigénio é um processo bioquímico celular metabólico, não trabalho de histerese.",
-      "Está incorreta: Carga elétrica estática mede-se em Coulombs e decorre de efeitos triboelétricos, não da área do ciclo mecânico."
-    ],
-    "nursingApplication": "Demonstra a capacidade dos tecidos biológicos de dissipar choques mecânicos para proteger os órgãos vitais."
-  },
-  {
-    "id": 2463,
-    "topicId": 2,
-    "question": "[Variação 2] Porque é que a histerese elástica dos tecidos viscoelásticos (como cartilagens e ligamentos) é benéfica para o corpo humano?",
-    "options": [
-      "Torna os ossos totalmente indeformáveis como blocos maciços de aço temperado.",
-      "Elimina a necessidade de circulação sanguínea e de oxigenação celular nos membros inferiores.",
-      "Impede que a gravidade terrestre exerça qualquer força peso sobre o corpo em repouso.",
-      "Permite absorver choques mecânicos e amortecer impactos através da dissipação gradual de energia."
-    ],
-    "correctIndex": 3,
-    "explanation": "Ao dissipar parte da energia mecânica em calor (amortecimento), os tecidos viscoelásticos evitam picos violentos de tensão sobre as articulações.",
-    "distractorAnalysis": [
-      "Está incorreta: Tornar os ossos indeformáveis impediria o amortecimento elástico e aumentaria o risco de fratura por impacto.",
-      "Está incorreta: A viscoelasticidade mecânica não elimina os processos metabólicos nem a circulação de sangue.",
-      "Está incorreta: Nenhum tecido elástico biológico tem a capacidade de anular a gravidade terrestre."
-    ],
-    "nursingApplication": "Explica por que calçado com amortecimento elástico ajuda a prevenir lesões por impacto na marcha e corrida."
-  },
-  {
-    "id": 2464,
-    "topicId": 2,
-    "question": "[Variação 2] O que é o fenómeno de Fluência (Creep) em materiais viscoelásticos?",
-    "options": [
-      "O aumento progressivo da deformação ao longo do tempo quando o material é submetido a uma tensão (força) constante.",
-      "A diminuição instantânea da temperatura do corpo para o zero absoluto sob tensão mecânica.",
-      "A fragmentação explosiva do material assim que é aplicada uma força mínima de compressão.",
-      "O retorno imediato e perfeitamente elástico à forma original sem qualquer atraso temporal."
-    ],
-    "correctIndex": 0,
-    "explanation": "A fluência (creep) caracteriza-se pela continuação lenta da deformação com o passar do tempo enquanto a carga externa permanece constante.",
-    "distractorAnalysis": [
-      "Está incorreta: Ensaios mecânicos não provocam arrefecimento para o zero absoluto.",
-      "Está incorreta: Fragmentação explosiva imediata sob força mínima seria uma falha catastrófica anómala, não fluência lenta.",
-      "Está incorreta: Retorno instantâneo sem atraso caracteriza um sólido elástico ideal de Hooke sem efeitos viscosos."
-    ],
-    "nursingApplication": "Explica por que uma pessoa perde ligeiramente altura ao longo do dia devido à compressão prolongada dos discos intervertebrais."
-  },
-  {
-    "id": 2465,
-    "topicId": 2,
-    "question": "[Variação 2] O que é o fenómeno de Relaxamento de Tensões em materiais viscoelásticos?",
-    "options": [
-      "O aumento infinito da força elástica gerada quando a barra é mantida absolutamente fixa.",
-      "A diminuição progressiva da tensão interna necessária para manter o material sob uma deformação constante ao longo do tempo.",
-      "A transformação de energia potencial gravitacional em energia nuclear espontânea.",
-      "A anulação de todas as forças de atrito na superfície externa do corpo biológico."
-    ],
-    "correctIndex": 1,
-    "explanation": "No relaxamento de tensões, mantendo-se a deformação constante, as moléculas reorganizam-se e a tensão mecânica interna diminui com o tempo.",
-    "distractorAnalysis": [
-      "Está incorreta: A tensão interna diminui com o tempo sob deformação fixa, não aumenta infinitamente.",
-      "Está incorreta: Tensões elásticas não se convertem espontaneamente em reações nucleares.",
-      "Está incorreta: O atrito externo não é anulado pelo relaxamento interno do material."
-    ],
-    "nursingApplication": "Relevante quando ligaduras elásticas ou talas mantidas com extensão fixa perdem tensão ao longo das horas."
-  },
-  {
-    "id": 2466,
-    "topicId": 2,
-    "question": "[Variação 2] Porque é que o osso cortical é classificado como um material Anisotrópico na biomecânica?",
-    "options": [
-      "Porque apresenta exatamente a mesma rigidez e resistência mecânica em todas as direções do espaço tridimensional.",
-      "Porque é constituído exclusivamente por um líquido viscoso newtoniano sem qualquer mineral sólido.",
-      "Porque as suas propriedades mecânicas (resistência e rigidez) variam consoante a direção em que a força é aplicada.",
-      "Porque se decompõe espontaneamente em gás carbónico quando sujeito a qualquer força mecânica."
-    ],
-    "correctIndex": 2,
-    "explanation": "O osso é mais resistente à compressão longitudinal do que à tração ou cisalhamento transversal, sendo, portanto, mecanicamente anisotrópico.",
-    "distractorAnalysis": [
-      "Está incorreta: Apresentar a mesma resistência em todas as direções define um material isotrópico, não anisotrópico.",
-      "Está incorreta: O osso possui uma matriz sólida mineralizada rica em hidroxiapatite e colagénio, não sendo puramente líquido.",
-      "Está incorreta: O osso não se decompõe em gás carbónico sob esforços mecânicos normais."
-    ],
-    "nursingApplication": "Permite entender por que o fémur suporta grandes cargas axiais na vertical, mas fratura mais facilmente sob torção ou flexão lateral."
-  },
-  {
-    "id": 2467,
-    "topicId": 2,
-    "question": "[Variação 2] Como varia a rigidez do osso em função da velocidade com que a carga mecânica é aplicada (comportamento viscoelástico)?",
-    "options": [
-      "O osso perde toda a sua rigidez tornando-se puramente líquido quando a carga é aplicada com alta velocidade.",
-      "A velocidade de aplicação da carga não tem qualquer influência nas propriedades mecânicas de um material viscoelástico.",
-      "O osso só suporta cargas quando a velocidade de impacto é exatamente zero.",
-      "O osso comporta-se de forma mais rígida e suporta maiores tensões quando a carga é aplicada rapidamente do que lentamente."
-    ],
-    "correctIndex": 3,
-    "explanation": "Devido à viscoelasticidade, materiais biológicos aumentam a rigidez aparente e a tensão de rutura sob taxas de deformação elevadas (impactos rápidos).",
-    "distractorAnalysis": [
-      "Está incorreta: O osso não se liquefaz sob carregamentos mecânicos de alta velocidade.",
-      "Está incorreta: Em materiais viscoelásticos, a resposta mecânica depende criticamente da taxa de deformação (velocidade de carga).",
-      "Está incorreta: O osso suporta cargas em repouso e em movimento dinâmico."
-    ],
-    "nursingApplication": "Explica por que os mecanismos de lesão e fratura óssea diferem entre quedas lentas e impactos traumáticos rápidos."
-  },
-  {
-    "id": 2468,
-    "topicId": 2,
-    "question": "[Variação 2] Qual dos seguintes constituintes do osso confere predominantemente Flexibilidade e Resistência à Tração?",
-    "options": [
-      "As fibras de colagénio da matriz óssea.",
-      "Os cristais minerais inorgânicos de hidroxiapatite de cálcio.",
-      "O ar atmosférico contido nos poros trabeculares microscópicos.",
-      "Os eletrões livres que fluem através da corrente galvânica da pele."
-    ],
-    "correctIndex": 0,
-    "explanation": "O colagénio (fração orgânica) confere flexibilidade, elasticidade e resistência à tração, enquanto a hidroxiapatite confere rigidez à compressão.",
-    "distractorAnalysis": [
-      "Está incorreta: A hidroxiapatite mineral confere dureza e resistência à compressão, não flexibilidade à tração.",
-      "Está incorreta: O osso não é preenchido por ar atmosférico, mas por medula e fluido intersticial.",
-      "Está incorreta: Correntes galvânicas da pele não são componentes estruturais da matriz óssea."
-    ],
-    "nursingApplication": "Explica por que a perda de colagénio com o envelhecimento torna os ossos mais frágeis e quebradiços."
-  },
-  {
-    "id": 2469,
-    "topicId": 2,
-    "question": "[Variação 2] Qual dos seguintes constituintes do osso confere predominantemente Dureza, Rigidez e Resistência à Compressão?",
-    "options": [
-      "As fibras flexíveis de colagénio que compõem a matriz orgânica do tecido.",
-      "Os cristais minerais inorgânicos de hidroxiapatite (sais de cálcio e fosfato).",
-      "A hemoglobina livre que transporta oxigénio no plasma sanguíneo.",
-      "As moléculas de água pura que evaporam imediatamente para o exterior."
-    ],
-    "correctIndex": 1,
-    "explanation": "A fase inorgânica mineral (hidroxiapatite) é a principal responsável pela elevada rigidez intrínseca e resistência à compressão do osso.",
-    "distractorAnalysis": [
-      "Está incorreta: O colagénio orgânico confere flexibilidade elástica e resistência à tração mecânica.",
-      "Está incorreta: A hemoglobina está nos eritrócitos circulantes, não na matriz mineral do osso cortical.",
-      "Está incorreta: A água intersticial contribui para a viscoelasticidade, mas não confere a rigidez mineral."
-    ],
-    "nursingApplication": "Fundamental para entender o papel do aporte de cálcio e vitamina D na densidade mineral óssea."
-  },
-  {
-    "id": 2470,
-    "topicId": 2,
-    "question": "[Variação 2] Em síntese biomecânica (Slide 20 e 34), a estrutura de um osso longo como o fémur é geometricamente otimizada para:",
-    "options": [
-      "Ser um corpo perfeitamente maciço e infinito sem canal medular interno.",
-      "Comportar-se como um fluido viscoso de Newton em equilíbrio hidrostático no leito.",
-      "Resistir a esforços combinados de compressão axial, flexão e torção com o mínimo de peso ósseo (estrutura oca cilíndrica).",
-      "Evitar qualquer tipo de movimento articular mantendo o esqueleto em rigidez cadavérica."
-    ],
-    "correctIndex": 2,
-    "explanation": "A geometria cilíndrica oca dos ossos longos maximiza o momento de inércia polar e de flexão, conferindo alta resistência com menor massa corporal.",
-    "distractorAnalysis": [
-      "Está incorreta: Um osso maciço seria excessivamente pesado e metabolicamente ineficiente sem ganho proporcional de resistência na torção.",
-      "Está incorreta: O osso não é um fluido nem se rege pelas equações puramente hidrostáticas de Newton.",
-      "Está incorreta: O esqueleto é concebido para permitir mobilidade articular equilibrada e absorção dinâmica de forças."
-    ],
-    "nursingApplication": "Permite compreender por que a locomoção humana é eficiente em termos de consumo energético e resistência mecânica."
-  },
-  {
-    "id": 2471,
-    "topicId": 2,
-    "question": "[Variação 3] O que é a Histerese Elástica observada nos corpos viscoelásticos (Slide 19)?",
-    "options": [
-      "A emissão espontânea de fotões luminosos quando um osso é colocado no escuro absoluto.",
-      "O aumento instantâneo da massa inercial do corpo elástico quando submetido a velocidades baixas.",
-      "A restituição de 100% da energia mecânica sem qualquer perda ou produção de calor no sistema.",
-      "O fenómeno em que a curva de descarga não coincide com a curva de carga, formando um ciclo fechado no diagrama tensão-deformação."
-    ],
-    "correctIndex": 3,
-    "explanation": "Nos corpos viscoelásticos (como ossos e cartilagens), o retorno elástico segue um caminho diferente da deformação inicial, caracterizando a histerese.",
-    "distractorAnalysis": [
-      "Está incorreta: Emissão de fotões no escuro é fosforescência ou bioluminescência, não histerese elástica mecânica.",
-      "Está incorreta: A massa inercial de um corpo sob ensaios mecânicos normais não varia com a velocidade.",
-      "Está incorreta: Restituição de 100% da energia sem perdas caracteriza um corpo elástico ideal de Hooke, não um corpo com histerese."
-    ],
-    "nursingApplication": "Explica o amortecimento mecânico natural das articulações e dos discos vertebrais."
-  },
-  {
-    "id": 2472,
-    "topicId": 2,
-    "question": "[Variação 3] O que representa fisicamente a área contida no interior do ciclo de histerese elástica (Slide 19)?",
-    "options": [
-      "A quantidade de energia mecânica dissipada sob a forma de calor durante o ciclo de carga e descarga.",
-      "A aceleração média adquirida pelo centro de gravidade do corpo durante o salto.",
-      "O volume de oxigénio consumido pelas mitocôndrias durante a contração isotónica.",
-      "A carga elétrica acumulada na superfície externa do tecido elástico por indução estática."
-    ],
-    "correctIndex": 0,
-    "explanation": "A área do laço de histerese representa o trabalho mecânico perdido pelo sistema sob a forma de energia térmica dissipada.",
-    "distractorAnalysis": [
-      "Está incorreta: Aceleração do centro de gravidade é uma grandeza cinemática, não a área de um gráfico tensão-deformação.",
-      "Está incorreta: Consumo mitocondrial de oxigénio é um processo bioquímico celular metabólico, não trabalho de histerese.",
-      "Está incorreta: Carga elétrica estática mede-se em Coulombs e decorre de efeitos triboelétricos, não da área do ciclo mecânico."
-    ],
-    "nursingApplication": "Demonstra a capacidade dos tecidos biológicos de dissipar choques mecânicos para proteger os órgãos vitais."
-  },
-  {
-    "id": 2473,
-    "topicId": 2,
-    "question": "[Variação 3] Porque é que a histerese elástica dos tecidos viscoelásticos (como cartilagens e ligamentos) é benéfica para o corpo humano?",
-    "options": [
-      "Torna os ossos totalmente indeformáveis como blocos maciços de aço temperado.",
-      "Permite absorver choques mecânicos e amortecer impactos através da dissipação gradual de energia.",
-      "Elimina a necessidade de circulação sanguínea e de oxigenação celular nos membros inferiores.",
-      "Impede que a gravidade terrestre exerça qualquer força peso sobre o corpo em repouso."
-    ],
-    "correctIndex": 1,
-    "explanation": "Ao dissipar parte da energia mecânica em calor (amortecimento), os tecidos viscoelásticos evitam picos violentos de tensão sobre as articulações.",
-    "distractorAnalysis": [
-      "Está incorreta: Tornar os ossos indeformáveis impediria o amortecimento elástico e aumentaria o risco de fratura por impacto.",
-      "Está incorreta: A viscoelasticidade mecânica não elimina os processos metabólicos nem a circulação de sangue.",
-      "Está incorreta: Nenhum tecido elástico biológico tem a capacidade de anular a gravidade terrestre."
-    ],
-    "nursingApplication": "Explica por que calçado com amortecimento elástico ajuda a prevenir lesões por impacto na marcha e corrida."
-  },
-  {
-    "id": 2474,
-    "topicId": 2,
-    "question": "[Variação 3] O que é o fenómeno de Fluência (Creep) em materiais viscoelásticos?",
-    "options": [
-      "A diminuição instantânea da temperatura do corpo para o zero absoluto sob tensão mecânica.",
-      "A fragmentação explosiva do material assim que é aplicada uma força mínima de compressão.",
-      "O aumento progressivo da deformação ao longo do tempo quando o material é submetido a uma tensão (força) constante.",
-      "O retorno imediato e perfeitamente elástico à forma original sem qualquer atraso temporal."
-    ],
-    "correctIndex": 2,
-    "explanation": "A fluência (creep) caracteriza-se pela continuação lenta da deformação com o passar do tempo enquanto a carga externa permanece constante.",
-    "distractorAnalysis": [
-      "Está incorreta: Ensaios mecânicos não provocam arrefecimento para o zero absoluto.",
-      "Está incorreta: Fragmentação explosiva imediata sob força mínima seria uma falha catastrófica anómala, não fluência lenta.",
-      "Está incorreta: Retorno instantâneo sem atraso caracteriza um sólido elástico ideal de Hooke sem efeitos viscosos."
-    ],
-    "nursingApplication": "Explica por que uma pessoa perde ligeiramente altura ao longo do dia devido à compressão prolongada dos discos intervertebrais."
-  },
-  {
-    "id": 2475,
-    "topicId": 2,
-    "question": "[Variação 3] O que é o fenómeno de Relaxamento de Tensões em materiais viscoelásticos?",
-    "options": [
-      "O aumento infinito da força elástica gerada quando a barra é mantida absolutamente fixa.",
-      "A transformação de energia potencial gravitacional em energia nuclear espontânea.",
-      "A anulação de todas as forças de atrito na superfície externa do corpo biológico.",
-      "A diminuição progressiva da tensão interna necessária para manter o material sob uma deformação constante ao longo do tempo."
-    ],
-    "correctIndex": 3,
-    "explanation": "No relaxamento de tensões, mantendo-se a deformação constante, as moléculas reorganizam-se e a tensão mecânica interna diminui com o tempo.",
-    "distractorAnalysis": [
-      "Está incorreta: A tensão interna diminui com o tempo sob deformação fixa, não aumenta infinitamente.",
-      "Está incorreta: Tensões elásticas não se convertem espontaneamente em reações nucleares.",
-      "Está incorreta: O atrito externo não é anulado pelo relaxamento interno do material."
-    ],
-    "nursingApplication": "Relevante quando ligaduras elásticas ou talas mantidas com extensão fixa perdem tensão ao longo das horas."
-  },
-  {
-    "id": 2476,
-    "topicId": 2,
-    "question": "[Variação 3] Porque é que o osso cortical é classificado como um material Anisotrópico na biomecânica?",
-    "options": [
-      "Porque as suas propriedades mecânicas (resistência e rigidez) variam consoante a direção em que a força é aplicada.",
-      "Porque apresenta exatamente a mesma rigidez e resistência mecânica em todas as direções do espaço tridimensional.",
-      "Porque é constituído exclusivamente por um líquido viscoso newtoniano sem qualquer mineral sólido.",
-      "Porque se decompõe espontaneamente em gás carbónico quando sujeito a qualquer força mecânica."
-    ],
-    "correctIndex": 0,
-    "explanation": "O osso é mais resistente à compressão longitudinal do que à tração ou cisalhamento transversal, sendo, portanto, mecanicamente anisotrópico.",
-    "distractorAnalysis": [
-      "Está incorreta: Apresentar a mesma resistência em todas as direções define um material isotrópico, não anisotrópico.",
-      "Está incorreta: O osso possui uma matriz sólida mineralizada rica em hidroxiapatite e colagénio, não sendo puramente líquido.",
-      "Está incorreta: O osso não se decompõe em gás carbónico sob esforços mecânicos normais."
-    ],
-    "nursingApplication": "Permite entender por que o fémur suporta grandes cargas axiais na vertical, mas fratura mais facilmente sob torção ou flexão lateral."
-  },
-  {
-    "id": 2477,
-    "topicId": 2,
-    "question": "[Variação 3] Como varia a rigidez do osso em função da velocidade com que a carga mecânica é aplicada (comportamento viscoelástico)?",
-    "options": [
-      "O osso perde toda a sua rigidez tornando-se puramente líquido quando a carga é aplicada com alta velocidade.",
-      "O osso comporta-se de forma mais rígida e suporta maiores tensões quando a carga é aplicada rapidamente do que lentamente.",
-      "A velocidade de aplicação da carga não tem qualquer influência nas propriedades mecânicas de um material viscoelástico.",
-      "O osso só suporta cargas quando a velocidade de impacto é exatamente zero."
-    ],
-    "correctIndex": 1,
-    "explanation": "Devido à viscoelasticidade, materiais biológicos aumentam a rigidez aparente e a tensão de rutura sob taxas de deformação elevadas (impactos rápidos).",
-    "distractorAnalysis": [
-      "Está incorreta: O osso não se liquefaz sob carregamentos mecânicos de alta velocidade.",
-      "Está incorreta: Em materiais viscoelásticos, a resposta mecânica depende criticamente da taxa de deformação (velocidade de carga).",
-      "Está incorreta: O osso suporta cargas em repouso e em movimento dinâmico."
-    ],
-    "nursingApplication": "Explica por que os mecanismos de lesão e fratura óssea diferem entre quedas lentas e impactos traumáticos rápidos."
-  },
-  {
-    "id": 2478,
-    "topicId": 2,
-    "question": "[Variação 3] Qual dos seguintes constituintes do osso confere predominantemente Flexibilidade e Resistência à Tração?",
-    "options": [
-      "Os cristais minerais inorgânicos de hidroxiapatite de cálcio.",
-      "O ar atmosférico contido nos poros trabeculares microscópicos.",
-      "As fibras de colagénio da matriz óssea.",
-      "Os eletrões livres que fluem através da corrente galvânica da pele."
-    ],
-    "correctIndex": 2,
-    "explanation": "O colagénio (fração orgânica) confere flexibilidade, elasticidade e resistência à tração, enquanto a hidroxiapatite confere rigidez à compressão.",
-    "distractorAnalysis": [
-      "Está incorreta: A hidroxiapatite mineral confere dureza e resistência à compressão, não flexibilidade à tração.",
-      "Está incorreta: O osso não é preenchido por ar atmosférico, mas por medula e fluido intersticial.",
-      "Está incorreta: Correntes galvânicas da pele não são componentes estruturais da matriz óssea."
-    ],
-    "nursingApplication": "Explica por que a perda de colagénio com o envelhecimento torna os ossos mais frágeis e quebradiços."
-  },
-  {
-    "id": 2479,
-    "topicId": 2,
-    "question": "[Variação 3] Qual dos seguintes constituintes do osso confere predominantemente Dureza, Rigidez e Resistência à Compressão?",
-    "options": [
-      "As fibras flexíveis de colagénio que compõem a matriz orgânica do tecido.",
-      "A hemoglobina livre que transporta oxigénio no plasma sanguíneo.",
-      "As moléculas de água pura que evaporam imediatamente para o exterior.",
-      "Os cristais minerais inorgânicos de hidroxiapatite (sais de cálcio e fosfato)."
-    ],
-    "correctIndex": 3,
-    "explanation": "A fase inorgânica mineral (hidroxiapatite) é a principal responsável pela elevada rigidez intrínseca e resistência à compressão do osso.",
-    "distractorAnalysis": [
-      "Está incorreta: O colagénio orgânico confere flexibilidade elástica e resistência à tração mecânica.",
-      "Está incorreta: A hemoglobina está nos eritrócitos circulantes, não na matriz mineral do osso cortical.",
-      "Está incorreta: A água intersticial contribui para a viscoelasticidade, mas não confere a rigidez mineral."
-    ],
-    "nursingApplication": "Fundamental para entender o papel do aporte de cálcio e vitamina D na densidade mineral óssea."
-  },
-  {
-    "id": 2480,
-    "topicId": 2,
-    "question": "[Variação 3] Em síntese biomecânica (Slide 20 e 34), a estrutura de um osso longo como o fémur é geometricamente otimizada para:",
-    "options": [
-      "Resistir a esforços combinados de compressão axial, flexão e torção com o mínimo de peso ósseo (estrutura oca cilíndrica).",
-      "Ser um corpo perfeitamente maciço e infinito sem canal medular interno.",
-      "Comportar-se como um fluido viscoso de Newton em equilíbrio hidrostático no leito.",
-      "Evitar qualquer tipo de movimento articular mantendo o esqueleto em rigidez cadavérica."
-    ],
-    "correctIndex": 0,
-    "explanation": "A geometria cilíndrica oca dos ossos longos maximiza o momento de inércia polar e de flexão, conferindo alta resistência com menor massa corporal.",
-    "distractorAnalysis": [
-      "Está incorreta: Um osso maciço seria excessivamente pesado e metabolicamente ineficiente sem ganho proporcional de resistência na torção.",
-      "Está incorreta: O osso não é um fluido nem se rege pelas equações puramente hidrostáticas de Newton.",
-      "Está incorreta: O esqueleto é concebido para permitir mobilidade articular equilibrada e absorção dinâmica de forças."
-    ],
-    "nursingApplication": "Permite compreender por que a locomoção humana é eficiente em termos de consumo energético e resistência mecânica."
-  },
-  {
-    "id": 2481,
-    "topicId": 2,
-    "question": "[Variação 4] O que é a Histerese Elástica observada nos corpos viscoelásticos (Slide 19)?",
-    "options": [
-      "A emissão espontânea de fotões luminosos quando um osso é colocado no escuro absoluto.",
-      "O fenómeno em que a curva de descarga não coincide com a curva de carga, formando um ciclo fechado no diagrama tensão-deformação.",
-      "O aumento instantâneo da massa inercial do corpo elástico quando submetido a velocidades baixas.",
-      "A restituição de 100% da energia mecânica sem qualquer perda ou produção de calor no sistema."
-    ],
-    "correctIndex": 1,
-    "explanation": "Nos corpos viscoelásticos (como ossos e cartilagens), o retorno elástico segue um caminho diferente da deformação inicial, caracterizando a histerese.",
-    "distractorAnalysis": [
-      "Está incorreta: Emissão de fotões no escuro é fosforescência ou bioluminescência, não histerese elástica mecânica.",
-      "Está incorreta: A massa inercial de um corpo sob ensaios mecânicos normais não varia com a velocidade.",
-      "Está incorreta: Restituição de 100% da energia sem perdas caracteriza um corpo elástico ideal de Hooke, não um corpo com histerese."
-    ],
-    "nursingApplication": "Explica o amortecimento mecânico natural das articulações e dos discos vertebrais."
-  },
-  {
-    "id": 2482,
-    "topicId": 2,
-    "question": "[Variação 4] O que representa fisicamente a área contida no interior do ciclo de histerese elástica (Slide 19)?",
-    "options": [
-      "A aceleração média adquirida pelo centro de gravidade do corpo durante o salto.",
-      "O volume de oxigénio consumido pelas mitocôndrias durante a contração isotónica.",
-      "A quantidade de energia mecânica dissipada sob a forma de calor durante o ciclo de carga e descarga.",
-      "A carga elétrica acumulada na superfície externa do tecido elástico por indução estática."
-    ],
-    "correctIndex": 2,
-    "explanation": "A área do laço de histerese representa o trabalho mecânico perdido pelo sistema sob a forma de energia térmica dissipada.",
-    "distractorAnalysis": [
-      "Está incorreta: Aceleração do centro de gravidade é uma grandeza cinemática, não a área de um gráfico tensão-deformação.",
-      "Está incorreta: Consumo mitocondrial de oxigénio é um processo bioquímico celular metabólico, não trabalho de histerese.",
-      "Está incorreta: Carga elétrica estática mede-se em Coulombs e decorre de efeitos triboelétricos, não da área do ciclo mecânico."
-    ],
-    "nursingApplication": "Demonstra a capacidade dos tecidos biológicos de dissipar choques mecânicos para proteger os órgãos vitais."
-  },
-  {
-    "id": 2483,
-    "topicId": 2,
-    "question": "[Variação 4] Porque é que a histerese elástica dos tecidos viscoelásticos (como cartilagens e ligamentos) é benéfica para o corpo humano?",
-    "options": [
-      "Torna os ossos totalmente indeformáveis como blocos maciços de aço temperado.",
-      "Elimina a necessidade de circulação sanguínea e de oxigenação celular nos membros inferiores.",
-      "Impede que a gravidade terrestre exerça qualquer força peso sobre o corpo em repouso.",
-      "Permite absorver choques mecânicos e amortecer impactos através da dissipação gradual de energia."
-    ],
-    "correctIndex": 3,
-    "explanation": "Ao dissipar parte da energia mecânica em calor (amortecimento), os tecidos viscoelásticos evitam picos violentos de tensão sobre as articulações.",
-    "distractorAnalysis": [
-      "Está incorreta: Tornar os ossos indeformáveis impediria o amortecimento elástico e aumentaria o risco de fratura por impacto.",
-      "Está incorreta: A viscoelasticidade mecânica não elimina os processos metabólicos nem a circulação de sangue.",
-      "Está incorreta: Nenhum tecido elástico biológico tem a capacidade de anular a gravidade terrestre."
-    ],
-    "nursingApplication": "Explica por que calçado com amortecimento elástico ajuda a prevenir lesões por impacto na marcha e corrida."
-  },
-  {
-    "id": 2484,
-    "topicId": 2,
-    "question": "[Variação 4] O que é o fenómeno de Fluência (Creep) em materiais viscoelásticos?",
-    "options": [
-      "O aumento progressivo da deformação ao longo do tempo quando o material é submetido a uma tensão (força) constante.",
-      "A diminuição instantânea da temperatura do corpo para o zero absoluto sob tensão mecânica.",
-      "A fragmentação explosiva do material assim que é aplicada uma força mínima de compressão.",
-      "O retorno imediato e perfeitamente elástico à forma original sem qualquer atraso temporal."
-    ],
-    "correctIndex": 0,
-    "explanation": "A fluência (creep) caracteriza-se pela continuação lenta da deformação com o passar do tempo enquanto a carga externa permanece constante.",
-    "distractorAnalysis": [
-      "Está incorreta: Ensaios mecânicos não provocam arrefecimento para o zero absoluto.",
-      "Está incorreta: Fragmentação explosiva imediata sob força mínima seria uma falha catastrófica anómala, não fluência lenta.",
-      "Está incorreta: Retorno instantâneo sem atraso caracteriza um sólido elástico ideal de Hooke sem efeitos viscosos."
-    ],
-    "nursingApplication": "Explica por que uma pessoa perde ligeiramente altura ao longo do dia devido à compressão prolongada dos discos intervertebrais."
-  },
-  {
-    "id": 2485,
-    "topicId": 2,
-    "question": "[Variação 4] O que é o fenómeno de Relaxamento de Tensões em materiais viscoelásticos?",
-    "options": [
-      "O aumento infinito da força elástica gerada quando a barra é mantida absolutamente fixa.",
-      "A diminuição progressiva da tensão interna necessária para manter o material sob uma deformação constante ao longo do tempo.",
-      "A transformação de energia potencial gravitacional em energia nuclear espontânea.",
-      "A anulação de todas as forças de atrito na superfície externa do corpo biológico."
-    ],
-    "correctIndex": 1,
-    "explanation": "No relaxamento de tensões, mantendo-se a deformação constante, as moléculas reorganizam-se e a tensão mecânica interna diminui com o tempo.",
-    "distractorAnalysis": [
-      "Está incorreta: A tensão interna diminui com o tempo sob deformação fixa, não aumenta infinitamente.",
-      "Está incorreta: Tensões elásticas não se convertem espontaneamente em reações nucleares.",
-      "Está incorreta: O atrito externo não é anulado pelo relaxamento interno do material."
-    ],
-    "nursingApplication": "Relevante quando ligaduras elásticas ou talas mantidas com extensão fixa perdem tensão ao longo das horas."
-  },
-  {
-    "id": 2486,
-    "topicId": 2,
-    "question": "[Variação 4] Porque é que o osso cortical é classificado como um material Anisotrópico na biomecânica?",
-    "options": [
-      "Porque apresenta exatamente a mesma rigidez e resistência mecânica em todas as direções do espaço tridimensional.",
-      "Porque é constituído exclusivamente por um líquido viscoso newtoniano sem qualquer mineral sólido.",
-      "Porque as suas propriedades mecânicas (resistência e rigidez) variam consoante a direção em que a força é aplicada.",
-      "Porque se decompõe espontaneamente em gás carbónico quando sujeito a qualquer força mecânica."
-    ],
-    "correctIndex": 2,
-    "explanation": "O osso é mais resistente à compressão longitudinal do que à tração ou cisalhamento transversal, sendo, portanto, mecanicamente anisotrópico.",
-    "distractorAnalysis": [
-      "Está incorreta: Apresentar a mesma resistência em todas as direções define um material isotrópico, não anisotrópico.",
-      "Está incorreta: O osso possui uma matriz sólida mineralizada rica em hidroxiapatite e colagénio, não sendo puramente líquido.",
-      "Está incorreta: O osso não se decompõe em gás carbónico sob esforços mecânicos normais."
-    ],
-    "nursingApplication": "Permite entender por que o fémur suporta grandes cargas axiais na vertical, mas fratura mais facilmente sob torção ou flexão lateral."
-  },
-  {
-    "id": 2487,
-    "topicId": 2,
-    "question": "[Variação 4] Como varia a rigidez do osso em função da velocidade com que a carga mecânica é aplicada (comportamento viscoelástico)?",
-    "options": [
-      "O osso perde toda a sua rigidez tornando-se puramente líquido quando a carga é aplicada com alta velocidade.",
-      "A velocidade de aplicação da carga não tem qualquer influência nas propriedades mecânicas de um material viscoelástico.",
-      "O osso só suporta cargas quando a velocidade de impacto é exatamente zero.",
-      "O osso comporta-se de forma mais rígida e suporta maiores tensões quando a carga é aplicada rapidamente do que lentamente."
-    ],
-    "correctIndex": 3,
-    "explanation": "Devido à viscoelasticidade, materiais biológicos aumentam a rigidez aparente e a tensão de rutura sob taxas de deformação elevadas (impactos rápidos).",
-    "distractorAnalysis": [
-      "Está incorreta: O osso não se liquefaz sob carregamentos mecânicos de alta velocidade.",
-      "Está incorreta: Em materiais viscoelásticos, a resposta mecânica depende criticamente da taxa de deformação (velocidade de carga).",
-      "Está incorreta: O osso suporta cargas em repouso e em movimento dinâmico."
-    ],
-    "nursingApplication": "Explica por que os mecanismos de lesão e fratura óssea diferem entre quedas lentas e impactos traumáticos rápidos."
-  },
-  {
-    "id": 2488,
-    "topicId": 2,
-    "question": "[Variação 4] Qual dos seguintes constituintes do osso confere predominantemente Flexibilidade e Resistência à Tração?",
-    "options": [
-      "As fibras de colagénio da matriz óssea.",
-      "Os cristais minerais inorgânicos de hidroxiapatite de cálcio.",
-      "O ar atmosférico contido nos poros trabeculares microscópicos.",
-      "Os eletrões livres que fluem através da corrente galvânica da pele."
-    ],
-    "correctIndex": 0,
-    "explanation": "O colagénio (fração orgânica) confere flexibilidade, elasticidade e resistência à tração, enquanto a hidroxiapatite confere rigidez à compressão.",
-    "distractorAnalysis": [
-      "Está incorreta: A hidroxiapatite mineral confere dureza e resistência à compressão, não flexibilidade à tração.",
-      "Está incorreta: O osso não é preenchido por ar atmosférico, mas por medula e fluido intersticial.",
-      "Está incorreta: Correntes galvânicas da pele não são componentes estruturais da matriz óssea."
-    ],
-    "nursingApplication": "Explica por que a perda de colagénio com o envelhecimento torna os ossos mais frágeis e quebradiços."
-  },
-  {
-    "id": 2489,
-    "topicId": 2,
-    "question": "[Variação 4] Qual dos seguintes constituintes do osso confere predominantemente Dureza, Rigidez e Resistência à Compressão?",
-    "options": [
-      "As fibras flexíveis de colagénio que compõem a matriz orgânica do tecido.",
-      "Os cristais minerais inorgânicos de hidroxiapatite (sais de cálcio e fosfato).",
-      "A hemoglobina livre que transporta oxigénio no plasma sanguíneo.",
-      "As moléculas de água pura que evaporam imediatamente para o exterior."
-    ],
-    "correctIndex": 1,
-    "explanation": "A fase inorgânica mineral (hidroxiapatite) é a principal responsável pela elevada rigidez intrínseca e resistência à compressão do osso.",
-    "distractorAnalysis": [
-      "Está incorreta: O colagénio orgânico confere flexibilidade elástica e resistência à tração mecânica.",
-      "Está incorreta: A hemoglobina está nos eritrócitos circulantes, não na matriz mineral do osso cortical.",
-      "Está incorreta: A água intersticial contribui para a viscoelasticidade, mas não confere a rigidez mineral."
-    ],
-    "nursingApplication": "Fundamental para entender o papel do aporte de cálcio e vitamina D na densidade mineral óssea."
-  },
-  {
-    "id": 2490,
-    "topicId": 2,
-    "question": "[Variação 4] Em síntese biomecânica (Slide 20 e 34), a estrutura de um osso longo como o fémur é geometricamente otimizada para:",
-    "options": [
-      "Ser um corpo perfeitamente maciço e infinito sem canal medular interno.",
-      "Comportar-se como um fluido viscoso de Newton em equilíbrio hidrostático no leito.",
-      "Resistir a esforços combinados de compressão axial, flexão e torção com o mínimo de peso ósseo (estrutura oca cilíndrica).",
-      "Evitar qualquer tipo de movimento articular mantendo o esqueleto em rigidez cadavérica."
-    ],
-    "correctIndex": 2,
-    "explanation": "A geometria cilíndrica oca dos ossos longos maximiza o momento de inércia polar e de flexão, conferindo alta resistência com menor massa corporal.",
-    "distractorAnalysis": [
-      "Está incorreta: Um osso maciço seria excessivamente pesado e metabolicamente ineficiente sem ganho proporcional de resistência na torção.",
-      "Está incorreta: O osso não é um fluido nem se rege pelas equações puramente hidrostáticas de Newton.",
-      "Está incorreta: O esqueleto é concebido para permitir mobilidade articular equilibrada e absorção dinâmica de forças."
-    ],
-    "nursingApplication": "Permite compreender por que a locomoção humana é eficiente em termos de consumo energético e resistência mecânica."
-  },
-  {
-    "id": 2491,
-    "topicId": 2,
-    "question": "[Variação 5] O que é a Histerese Elástica observada nos corpos viscoelásticos (Slide 19)?",
-    "options": [
-      "A emissão espontânea de fotões luminosos quando um osso é colocado no escuro absoluto.",
-      "O aumento instantâneo da massa inercial do corpo elástico quando submetido a velocidades baixas.",
-      "A restituição de 100% da energia mecânica sem qualquer perda ou produção de calor no sistema.",
-      "O fenómeno em que a curva de descarga não coincide com a curva de carga, formando um ciclo fechado no diagrama tensão-deformação."
-    ],
-    "correctIndex": 3,
-    "explanation": "Nos corpos viscoelásticos (como ossos e cartilagens), o retorno elástico segue um caminho diferente da deformação inicial, caracterizando a histerese.",
-    "distractorAnalysis": [
-      "Está incorreta: Emissão de fotões no escuro é fosforescência ou bioluminescência, não histerese elástica mecânica.",
-      "Está incorreta: A massa inercial de um corpo sob ensaios mecânicos normais não varia com a velocidade.",
-      "Está incorreta: Restituição de 100% da energia sem perdas caracteriza um corpo elástico ideal de Hooke, não um corpo com histerese."
-    ],
-    "nursingApplication": "Explica o amortecimento mecânico natural das articulações e dos discos vertebrais."
-  },
-  {
-    "id": 2492,
-    "topicId": 2,
-    "question": "[Variação 5] O que representa fisicamente a área contida no interior do ciclo de histerese elástica (Slide 19)?",
-    "options": [
-      "A quantidade de energia mecânica dissipada sob a forma de calor durante o ciclo de carga e descarga.",
-      "A aceleração média adquirida pelo centro de gravidade do corpo durante o salto.",
-      "O volume de oxigénio consumido pelas mitocôndrias durante a contração isotónica.",
-      "A carga elétrica acumulada na superfície externa do tecido elástico por indução estática."
-    ],
-    "correctIndex": 0,
-    "explanation": "A área do laço de histerese representa o trabalho mecânico perdido pelo sistema sob a forma de energia térmica dissipada.",
-    "distractorAnalysis": [
-      "Está incorreta: Aceleração do centro de gravidade é uma grandeza cinemática, não a área de um gráfico tensão-deformação.",
-      "Está incorreta: Consumo mitocondrial de oxigénio é um processo bioquímico celular metabólico, não trabalho de histerese.",
-      "Está incorreta: Carga elétrica estática mede-se em Coulombs e decorre de efeitos triboelétricos, não da área do ciclo mecânico."
-    ],
-    "nursingApplication": "Demonstra a capacidade dos tecidos biológicos de dissipar choques mecânicos para proteger os órgãos vitais."
-  },
-  {
-    "id": 2493,
-    "topicId": 2,
-    "question": "[Variação 5] Porque é que a histerese elástica dos tecidos viscoelásticos (como cartilagens e ligamentos) é benéfica para o corpo humano?",
-    "options": [
-      "Torna os ossos totalmente indeformáveis como blocos maciços de aço temperado.",
-      "Permite absorver choques mecânicos e amortecer impactos através da dissipação gradual de energia.",
-      "Elimina a necessidade de circulação sanguínea e de oxigenação celular nos membros inferiores.",
-      "Impede que a gravidade terrestre exerça qualquer força peso sobre o corpo em repouso."
-    ],
-    "correctIndex": 1,
-    "explanation": "Ao dissipar parte da energia mecânica em calor (amortecimento), os tecidos viscoelásticos evitam picos violentos de tensão sobre as articulações.",
-    "distractorAnalysis": [
-      "Está incorreta: Tornar os ossos indeformáveis impediria o amortecimento elástico e aumentaria o risco de fratura por impacto.",
-      "Está incorreta: A viscoelasticidade mecânica não elimina os processos metabólicos nem a circulação de sangue.",
-      "Está incorreta: Nenhum tecido elástico biológico tem a capacidade de anular a gravidade terrestre."
-    ],
-    "nursingApplication": "Explica por que calçado com amortecimento elástico ajuda a prevenir lesões por impacto na marcha e corrida."
-  },
-  {
-    "id": 2494,
-    "topicId": 2,
-    "question": "[Variação 5] O que é o fenómeno de Fluência (Creep) em materiais viscoelásticos?",
-    "options": [
-      "A diminuição instantânea da temperatura do corpo para o zero absoluto sob tensão mecânica.",
-      "A fragmentação explosiva do material assim que é aplicada uma força mínima de compressão.",
-      "O aumento progressivo da deformação ao longo do tempo quando o material é submetido a uma tensão (força) constante.",
-      "O retorno imediato e perfeitamente elástico à forma original sem qualquer atraso temporal."
-    ],
-    "correctIndex": 2,
-    "explanation": "A fluência (creep) caracteriza-se pela continuação lenta da deformação com o passar do tempo enquanto a carga externa permanece constante.",
-    "distractorAnalysis": [
-      "Está incorreta: Ensaios mecânicos não provocam arrefecimento para o zero absoluto.",
-      "Está incorreta: Fragmentação explosiva imediata sob força mínima seria uma falha catastrófica anómala, não fluência lenta.",
-      "Está incorreta: Retorno instantâneo sem atraso caracteriza um sólido elástico ideal de Hooke sem efeitos viscosos."
-    ],
-    "nursingApplication": "Explica por que uma pessoa perde ligeiramente altura ao longo do dia devido à compressão prolongada dos discos intervertebrais."
-  },
-  {
-    "id": 2495,
-    "topicId": 2,
-    "question": "[Variação 5] O que é o fenómeno de Relaxamento de Tensões em materiais viscoelásticos?",
-    "options": [
-      "O aumento infinito da força elástica gerada quando a barra é mantida absolutamente fixa.",
-      "A transformação de energia potencial gravitacional em energia nuclear espontânea.",
-      "A anulação de todas as forças de atrito na superfície externa do corpo biológico.",
-      "A diminuição progressiva da tensão interna necessária para manter o material sob uma deformação constante ao longo do tempo."
-    ],
-    "correctIndex": 3,
-    "explanation": "No relaxamento de tensões, mantendo-se a deformação constante, as moléculas reorganizam-se e a tensão mecânica interna diminui com o tempo.",
-    "distractorAnalysis": [
-      "Está incorreta: A tensão interna diminui com o tempo sob deformação fixa, não aumenta infinitamente.",
-      "Está incorreta: Tensões elásticas não se convertem espontaneamente em reações nucleares.",
-      "Está incorreta: O atrito externo não é anulado pelo relaxamento interno do material."
-    ],
-    "nursingApplication": "Relevante quando ligaduras elásticas ou talas mantidas com extensão fixa perdem tensão ao longo das horas."
-  },
-  {
-    "id": 2496,
-    "topicId": 2,
-    "question": "[Variação 5] Porque é que o osso cortical é classificado como um material Anisotrópico na biomecânica?",
-    "options": [
-      "Porque as suas propriedades mecânicas (resistência e rigidez) variam consoante a direção em que a força é aplicada.",
-      "Porque apresenta exatamente a mesma rigidez e resistência mecânica em todas as direções do espaço tridimensional.",
-      "Porque é constituído exclusivamente por um líquido viscoso newtoniano sem qualquer mineral sólido.",
-      "Porque se decompõe espontaneamente em gás carbónico quando sujeito a qualquer força mecânica."
-    ],
-    "correctIndex": 0,
-    "explanation": "O osso é mais resistente à compressão longitudinal do que à tração ou cisalhamento transversal, sendo, portanto, mecanicamente anisotrópico.",
-    "distractorAnalysis": [
-      "Está incorreta: Apresentar a mesma resistência em todas as direções define um material isotrópico, não anisotrópico.",
-      "Está incorreta: O osso possui uma matriz sólida mineralizada rica em hidroxiapatite e colagénio, não sendo puramente líquido.",
-      "Está incorreta: O osso não se decompõe em gás carbónico sob esforços mecânicos normais."
-    ],
-    "nursingApplication": "Permite entender por que o fémur suporta grandes cargas axiais na vertical, mas fratura mais facilmente sob torção ou flexão lateral."
-  },
-  {
-    "id": 2497,
-    "topicId": 2,
-    "question": "[Variação 5] Como varia a rigidez do osso em função da velocidade com que a carga mecânica é aplicada (comportamento viscoelástico)?",
-    "options": [
-      "O osso perde toda a sua rigidez tornando-se puramente líquido quando a carga é aplicada com alta velocidade.",
-      "O osso comporta-se de forma mais rígida e suporta maiores tensões quando a carga é aplicada rapidamente do que lentamente.",
-      "A velocidade de aplicação da carga não tem qualquer influência nas propriedades mecânicas de um material viscoelástico.",
-      "O osso só suporta cargas quando a velocidade de impacto é exatamente zero."
-    ],
-    "correctIndex": 1,
-    "explanation": "Devido à viscoelasticidade, materiais biológicos aumentam a rigidez aparente e a tensão de rutura sob taxas de deformação elevadas (impactos rápidos).",
-    "distractorAnalysis": [
-      "Está incorreta: O osso não se liquefaz sob carregamentos mecânicos de alta velocidade.",
-      "Está incorreta: Em materiais viscoelásticos, a resposta mecânica depende criticamente da taxa de deformação (velocidade de carga).",
-      "Está incorreta: O osso suporta cargas em repouso e em movimento dinâmico."
-    ],
-    "nursingApplication": "Explica por que os mecanismos de lesão e fratura óssea diferem entre quedas lentas e impactos traumáticos rápidos."
-  },
-  {
-    "id": 2498,
-    "topicId": 2,
-    "question": "[Variação 5] Qual dos seguintes constituintes do osso confere predominantemente Flexibilidade e Resistência à Tração?",
-    "options": [
-      "Os cristais minerais inorgânicos de hidroxiapatite de cálcio.",
-      "O ar atmosférico contido nos poros trabeculares microscópicos.",
-      "As fibras de colagénio da matriz óssea.",
-      "Os eletrões livres que fluem através da corrente galvânica da pele."
-    ],
-    "correctIndex": 2,
-    "explanation": "O colagénio (fração orgânica) confere flexibilidade, elasticidade e resistência à tração, enquanto a hidroxiapatite confere rigidez à compressão.",
-    "distractorAnalysis": [
-      "Está incorreta: A hidroxiapatite mineral confere dureza e resistência à compressão, não flexibilidade à tração.",
-      "Está incorreta: O osso não é preenchido por ar atmosférico, mas por medula e fluido intersticial.",
-      "Está incorreta: Correntes galvânicas da pele não são componentes estruturais da matriz óssea."
-    ],
-    "nursingApplication": "Explica por que a perda de colagénio com o envelhecimento torna os ossos mais frágeis e quebradiços."
-  },
-  {
-    "id": 2499,
-    "topicId": 2,
-    "question": "[Variação 5] Qual dos seguintes constituintes do osso confere predominantemente Dureza, Rigidez e Resistência à Compressão?",
-    "options": [
-      "As fibras flexíveis de colagénio que compõem a matriz orgânica do tecido.",
-      "A hemoglobina livre que transporta oxigénio no plasma sanguíneo.",
-      "As moléculas de água pura que evaporam imediatamente para o exterior.",
-      "Os cristais minerais inorgânicos de hidroxiapatite (sais de cálcio e fosfato)."
-    ],
-    "correctIndex": 3,
-    "explanation": "A fase inorgânica mineral (hidroxiapatite) é a principal responsável pela elevada rigidez intrínseca e resistência à compressão do osso.",
-    "distractorAnalysis": [
-      "Está incorreta: O colagénio orgânico confere flexibilidade elástica e resistência à tração mecânica.",
-      "Está incorreta: A hemoglobina está nos eritrócitos circulantes, não na matriz mineral do osso cortical.",
-      "Está incorreta: A água intersticial contribui para a viscoelasticidade, mas não confere a rigidez mineral."
-    ],
-    "nursingApplication": "Fundamental para entender o papel do aporte de cálcio e vitamina D na densidade mineral óssea."
-  },
-  {
-    "id": 2500,
-    "topicId": 2,
-    "question": "[Variação 5] Em síntese biomecânica (Slide 20 e 34), a estrutura de um osso longo como o fémur é geometricamente otimizada para:",
-    "options": [
-      "Resistir a esforços combinados de compressão axial, flexão e torção com o mínimo de peso ósseo (estrutura oca cilíndrica).",
-      "Ser um corpo perfeitamente maciço e infinito sem canal medular interno.",
-      "Comportar-se como um fluido viscoso de Newton em equilíbrio hidrostático no leito.",
-      "Evitar qualquer tipo de movimento articular mantendo o esqueleto em rigidez cadavérica."
-    ],
-    "correctIndex": 0,
-    "explanation": "A geometria cilíndrica oca dos ossos longos maximiza o momento de inércia polar e de flexão, conferindo alta resistência com menor massa corporal.",
-    "distractorAnalysis": [
-      "Está incorreta: Um osso maciço seria excessivamente pesado e metabolicamente ineficiente sem ganho proporcional de resistência na torção.",
-      "Está incorreta: O osso não é um fluido nem se rege pelas equações puramente hidrostáticas de Newton.",
-      "Está incorreta: O esqueleto é concebido para permitir mobilidade articular equilibrada e absorção dinâmica de forças."
-    ],
-    "nursingApplication": "Permite compreender por que a locomoção humana é eficiente em termos de consumo energético e resistência mecânica."
+    "nursingApplication": "A grande síntese conclusiva do Tópico 2, preparando os alunos com sólidas bases biofísicas para a prática clínica e futuros tópicos do curso."
   }
 ];
