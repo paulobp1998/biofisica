@@ -55,9 +55,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnExitQuiz = document.getElementById('btn-exit-quiz');
   const quizProgressText = document.getElementById('quiz-progress-text');
   const quizProgressBar = document.getElementById('quiz-progress-bar');
+  const quizAiBanner = document.getElementById('quiz-ai-banner');
+  const quizQidBannerTag = document.getElementById('quiz-qid-banner-tag');
+  const quizQidBadge = document.getElementById('quiz-qid-badge');
+  const btnCopyQid = document.getElementById('btn-copy-qid');
   const questionText = document.getElementById('question-text');
   const optionsContainer = document.getElementById('options-container');
   const feedbackCard = document.getElementById('feedback-card');
+  const feedbackQidTag = document.getElementById('feedback-qid-tag');
   const feedbackTitle = document.getElementById('feedback-title');
   const feedbackExplanation = document.getElementById('feedback-explanation');
   const feedbackDistractors = document.getElementById('feedback-distractors');
@@ -300,6 +305,49 @@ document.addEventListener('DOMContentLoaded', () => {
     btnStarQuestion.textContent = isStarred ? '⭐' : '☆';
     btnStarQuestion.classList.toggle('active', isStarred);
   });
+
+  // Funções de cópia para a área de transferência com fallback
+  function copyTextToClipboard(text, successMessage) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(() => {
+        showToast(successMessage || `📋 Copiado: <strong>${text}</strong>`, 'toast-success', 2800);
+      }).catch(() => {
+        fallbackCopyText(text, successMessage);
+      });
+    } else {
+      fallbackCopyText(text, successMessage);
+    }
+  }
+
+  function fallbackCopyText(text, successMessage) {
+    const tempInput = document.createElement('input');
+    tempInput.value = text;
+    tempInput.style.position = 'fixed';
+    tempInput.style.opacity = '0';
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    try {
+      document.execCommand('copy');
+      showToast(successMessage || `📋 Copiado: <strong>${text}</strong>`, 'toast-success', 2800);
+    } catch (e) {
+      showToast(`Número da pergunta: <strong>${text}</strong>`, 'toast-info', 3500);
+    }
+    document.body.removeChild(tempInput);
+  }
+
+  // Ação de copiar o ID da pergunta atual no quiz
+  const handleCopyCurrentQid = () => {
+    if (!currentQuestionId) return;
+    const qidStr = `Pergunta Q${currentQuestionId}`;
+    copyTextToClipboard(qidStr, `📋 Copiado para a área de transferência: <strong>${qidStr}</strong>`);
+  };
+
+  if (btnCopyQid) {
+    btnCopyQid.addEventListener('click', handleCopyCurrentQid);
+  }
+  if (quizQidBadge) {
+    quizQidBadge.addEventListener('click', handleCopyCurrentQid);
+  }
 
   // Abertura do Caderno de Erros
   btnOpenMistakes.addEventListener('click', () => {
@@ -749,6 +797,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     currentQuestionId = state.questionId;
+    const qidLabel = `Pergunta Q${state.questionId}`;
 
     // Atualiza estado da estrela
     const starredList = getStarred();
@@ -771,8 +820,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     quizTopicBadge.textContent = titleText;
-    quizProgressText.textContent = `Pergunta ${currNum} de ${totalNum} • ${state.feedbackMode === 'delayed' ? '⏱️ Frequência Real' : '🟢 Modo Treino'}`;
+    quizProgressText.textContent = `Pergunta ${currNum} de ${totalNum} • ${qidLabel} • ${state.feedbackMode === 'delayed' ? '⏱️ Frequência Real' : '🟢 Modo Treino'}`;
     quizProgressBar.style.width = `${progressPercent}%`;
+
+    // Atualizar indicadores visuais com o número da pergunta
+    if (quizQidBadge) {
+      quizQidBadge.textContent = `🏷️ ${qidLabel}`;
+      quizQidBadge.title = `Identificador no repositório: ${qidLabel} (Clica para copiar)`;
+    }
+    if (quizQidBannerTag) {
+      quizQidBannerTag.textContent = qidLabel;
+    }
+    if (feedbackQidTag) {
+      feedbackQidTag.textContent = `🏷️ ${qidLabel}`;
+    }
 
     // Enunciado
     questionText.textContent = state.question;
@@ -1021,16 +1082,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     summary.answers.forEach((ans, i) => {
       const isStarred = starredList.includes(ans.questionId);
+      const qidLabel = `Pergunta Q${ans.questionId}`;
       const reviewItem = document.createElement('div');
       reviewItem.className = `review-card ${ans.isCorrect ? 'review-correct' : 'review-incorrect'}`;
       reviewItem.innerHTML = `
         <div class="review-header">
           <span class="review-status">${ans.isCorrect ? '✅ Acertou' : '❌ Errou'}</span>
-          <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
             <button class="btn-star ${isStarred ? 'active' : ''}" data-qid="${ans.questionId}" title="Marcar / Desmarcar com estrela">
               ${isStarred ? '⭐' : '☆'}
             </button>
-            <span class="review-qnum">Questão ${i + 1}</span>
+            <span class="review-qnum">Questão ${i + 1} • ${qidLabel}</span>
+            <button type="button" class="btn-copy-review-qid btn-outline btn-sm" data-qid="${qidLabel}" title="Copiar número desta pergunta para informar o docente" style="padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: var(--radius-sm);">
+              📋 Copiar ID
+            </button>
           </div>
         </div>
         <p class="review-question"><strong>${ans.questionText}</strong></p>
@@ -1066,6 +1131,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const starred = toggleStar(qId);
         btn.textContent = starred ? '⭐' : '☆';
         btn.classList.toggle('active', starred);
+      });
+    });
+
+    // Ouvinte para cópia rápida do número da pergunta na revisão
+    resultReviewList.querySelectorAll('.btn-copy-review-qid').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const textToCopy = e.currentTarget.getAttribute('data-qid');
+        if (textToCopy) {
+          copyTextToClipboard(textToCopy, `📋 Copiado para a área de transferência: <strong>${textToCopy}</strong>`);
+        }
       });
     });
   }
@@ -1296,7 +1371,12 @@ document.addEventListener('DOMContentLoaded', () => {
         return `
           <div class="search-result-card">
             <div class="search-res-header">
-              <span class="search-res-topic">${topicMeta ? `${topicMeta.icon} Tópico ${topicMeta.id}` : ''} • Questão #${item.id}</span>
+              <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                <span class="search-res-topic">${topicMeta ? `${topicMeta.icon} Tópico ${topicMeta.id}` : ''} • Pergunta Q${item.id}</span>
+                <button type="button" class="btn-copy-review-qid btn-outline btn-sm" data-qid="Pergunta Q${item.id}" title="Copiar ID da pergunta" style="padding: 0.12rem 0.5rem; font-size: 0.74rem;">
+                  📋 Copiar ID
+                </button>
+              </div>
               <button class="btn-star ${isStarred ? 'active' : ''}" data-qid="${item.id}" title="Marcar com estrela">
                 ${isStarred ? '⭐' : '☆'}
               </button>
@@ -1326,6 +1406,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
 
+      // Ouvinte de cópia de ID na pesquisa
+      searchResultsList.querySelectorAll('.btn-copy-review-qid').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const textToCopy = e.currentTarget.getAttribute('data-qid');
+          if (textToCopy) {
+            copyTextToClipboard(textToCopy, `📋 Copiado: <strong>${textToCopy}</strong>`);
+          }
+        });
+      });
+
       searchResultsList.querySelectorAll('.btn-search-practice-one').forEach(btn => {
         btn.addEventListener('click', () => {
           const qId = parseInt(btn.getAttribute('data-qid'), 10);
@@ -1335,7 +1425,7 @@ document.addEventListener('DOMContentLoaded', () => {
             startQuizSession({
               mode: 'custom',
               customQuestions: [targetQ],
-              customTitle: `Questão #${targetQ.id}`,
+              customTitle: `Pergunta Q${targetQ.id}`,
               count: 1,
               feedbackMode: 'immediate',
               timerSeconds: 0
@@ -1428,7 +1518,7 @@ document.addEventListener('DOMContentLoaded', () => {
     selectedQuestions.forEach((q, idx) => {
       printHtml += `
         <div class="print-q-card">
-          <p class="print-q-title">${idx + 1}. ${q.question}</p>
+          <p class="print-q-title">${idx + 1}. <span style="font-size: 0.85em; font-weight: 600; color: #475569;">[Pergunta Q${q.id}]</span> ${q.question}</p>
           <div class="print-options-grid">
             ${q.options.map((opt, oIdx) => `
               <div class="print-option-row">
@@ -1456,7 +1546,7 @@ document.addEventListener('DOMContentLoaded', () => {
       selectedQuestions.forEach((q, idx) => {
         printHtml += `
           <div class="print-sol-item">
-            <p class="print-sol-q">Questão ${idx + 1}:</p>
+            <p class="print-sol-q">Questão ${idx + 1} (Pergunta Q${q.id}):</p>
             <p class="print-sol-ans">✓ Resposta Correta: Opção (${letters[q.correctIndex]}) - ${q.options[q.correctIndex]}</p>
             <p class="print-sol-exp"><strong>Por que está certa a opção ${letters[q.correctIndex]}:</strong> ${q.explanation}</p>
             <p class="print-sol-exp"><strong>💡 Relevância Clínica:</strong> ${q.nursingApplication}</p>

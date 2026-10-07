@@ -533,6 +533,7 @@ class ArenaEngine {
       this.emitUI('client_question_ready', {
         questionIndex: state.questionIndex,
         totalQuestions: state.totalQuestions,
+        id: state.id,
         question: state.question,
         options: state.options,
         timeRemaining: state.timeRemaining

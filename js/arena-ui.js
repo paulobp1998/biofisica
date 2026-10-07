@@ -848,7 +848,7 @@ class ArenaUI {
 
     // 3. Início de Pergunta no Projetor
     this.engine.onUI('question_started', (data) => {
-      if (this.arenaLiveQIndex) this.arenaLiveQIndex.textContent = `Pergunta ${data.questionIndex} de ${data.totalQuestions}`;
+      if (this.arenaLiveQIndex) this.arenaLiveQIndex.textContent = `Pergunta ${data.questionIndex} de ${data.totalQuestions} • Pergunta Q${data.question.id}`;
       if (this.arenaLiveQTopic) this.arenaLiveQTopic.textContent = `Tópico ${data.question.topicId}: Biomecânica`;
       if (this.arenaLiveQuestionText) this.arenaLiveQuestionText.textContent = data.question.question;
       if (this.arenaLiveTimer) this.arenaLiveTimer.textContent = `⏱️ ${data.timeRemaining}s`;
@@ -1009,7 +1009,7 @@ class ArenaUI {
     this.engine.onUI('client_question_ready', (data) => {
       this.myCurrentVote = null;
       if (this.clientVotingTeamBadge) this.clientVotingTeamBadge.textContent = `${this.net.avatar} ${this.net.teamName}`;
-      if (this.clientVotingQBadge) this.clientVotingQBadge.textContent = `P${data.questionIndex}/${data.totalQuestions}`;
+      if (this.clientVotingQBadge) this.clientVotingQBadge.textContent = data.id ? `P${data.questionIndex}/${data.totalQuestions} • Pergunta Q${data.id}` : `P${data.questionIndex}/${data.totalQuestions}`;
       if (this.clientVotingTimer) this.clientVotingTimer.textContent = `⏱️ ${data.timeRemaining}s`;
       if (this.clientQPreview) {
         this.clientQPreview.textContent = data.question || 'Olhem para o projetor da sala para ler o enunciado!';
@@ -1268,7 +1268,7 @@ class ArenaUI {
       card.innerHTML = `
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
           <span class="arena-badge-danger">⚠️ Taxa de Erro: ${q.errorRate}% da turma</span>
-          <span style="font-size: 0.85rem; color: var(--text-muted);">Questão #${q.questionId}</span>
+          <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">Pergunta Q${q.questionId}</span>
         </div>
         <p style="font-weight: 700; margin-bottom: 0.5rem;">${q.questionText}</p>
         <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 0.4rem;">

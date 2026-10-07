@@ -109,6 +109,22 @@
         </div>
       </div>
 
+      <!-- Comunicado Oficial aos Estudantes sobre Inteligência Artificial -->
+      <div class="site-notice-banner ai-notice-card" id="site-notice-banner" role="region" aria-label="Comunicado Oficial aos Estudantes">
+        <div class="notice-icon-wrapper">
+          <span class="notice-icon">📢</span>
+        </div>
+        <div class="notice-content">
+          <div class="notice-badge">COMUNICADO IMPORTANTE</div>
+          <p class="notice-body">
+            As perguntas e/ou respostas são geradas por inteligência artificial e, por isso, podem estar incorretas. Caso encontre perguntas e/ou respostas que considere estarem incorretas, por favor copie o número da pergunta e informe o docente na próxima aula. Obrigado pela atenção.
+          </p>
+          <p class="notice-ps">
+            <strong>PS:</strong> Estão a ser efetuadas melhorias diárias ao site para que, num futuro próximo, todas as perguntas e respostas estejam corretas. Obrigado pela vossa atenção e bom estudo!
+          </p>
+        </div>
+      </div>
+
       <h2 class="section-title">
         <span>📚</span> Escolhe um Tópico para Praticar:
       </h2>
@@ -143,7 +159,26 @@
           <div class="progress-fill" id="quiz-progress-bar"></div>
         </div>
 
+        <!-- Banner de Apoio no Quiz com ID da Pergunta -->
+        <div class="quiz-ai-banner" id="quiz-ai-banner">
+          <span class="quiz-ai-icon">📢</span>
+          <span class="quiz-ai-text">
+            Perguntas com auxílio de IA. Se encontrar incorreções, copie o número (<strong id="quiz-qid-banner-tag">Pergunta Q...</strong>) e informe o docente na próxima aula.
+          </span>
+        </div>
+
         <div class="question-box">
+          <div class="question-meta-bar">
+            <div class="question-meta-left">
+              <span class="quiz-qid-badge" id="quiz-qid-badge" title="Identificador único da pergunta (clica para copiar)">
+                🏷️ Pergunta Q...
+              </span>
+              <button type="button" class="btn-copy-qid" id="btn-copy-qid" title="Copiar número da pergunta para a área de transferência">
+                📋 Copiar ID
+              </button>
+            </div>
+            <span class="question-difficulty-tag">Biofísica Médica</span>
+          </div>
           <h3 class="question-text" id="question-text">Enunciado da pergunta científica aqui...</h3>
         </div>
 
@@ -154,6 +189,10 @@
 
         <!-- Caixa de Feedback e Explicação Detalhada -->
         <div class="feedback-card hidden" id="feedback-card">
+          <div class="feedback-meta-header">
+            <span class="feedback-qid-tag" id="feedback-qid-tag">🏷️ Pergunta Q...</span>
+            <span class="feedback-report-hint">Se discordar desta resposta, copie o número e informe o docente na próxima aula.</span>
+          </div>
           <h4 class="feedback-title" id="feedback-title">Feedback</h4>
           <div class="feedback-explanation" id="feedback-explanation"></div>
           <div class="feedback-distractors" id="feedback-distractors"></div>
