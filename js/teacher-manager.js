@@ -1,7 +1,7 @@
 /**
  * Painel do Docente: Gestão e Auditoria do Banco de Questões de Biofísica Médica
- * Permite ao docente rever as 2.200 perguntas dos 8 tópicos e selecionar questões
- * para eliminação do repositório, com proteção obrigatória por PIN Mestre (456123).
+ * Permite ao docente rever as perguntas do repositório (Tópicos 1 e 2 - 1.000 questões)
+ * e selecionar questões para eliminação, com proteção obrigatória por PIN Mestre (456123).
  */
 
 const TEACHER_MASTER_PIN_HASH = 'c1cf024576e9c756b252bd5035efc64c72c17affe236909ded190d266a5bfdf1';
@@ -51,7 +51,7 @@ class TeacherManager {
     } catch (e) {}
   }
 
-  // Carregar as 2.200 perguntas de todos os tópicos
+  // Carregar as perguntas de todos os tópicos disponíveis
   loadAllQuestions() {
     if (this.allQuestions.length > 0) return;
     const pool = [];

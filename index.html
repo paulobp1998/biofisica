@@ -69,10 +69,10 @@
     <section id="view-home" class="active-view">
       
       <div class="hero-section">
-        <span class="hero-tag">✨ 100% Gratuito • 500 Questões Clínicas Ativas (Tópico 1) • Ensino Superior</span>
+        <span class="hero-tag">✨ 100% Gratuito • 500 Questões de Biofísica Ativas (Tópico 1) • Ensino Superior</span>
         <h1 class="hero-title">Prática Interativa de Biofísica Médica</h1>
         <p class="hero-desc">
-          Consolida os conteúdos das tuas aulas com <strong>500 questões clínicas</strong> rigorosas do <strong>Tópico 1 (Força, Estado de Equilíbrio e Alavancas)</strong>, com justificações científicas completas, análise detalhada de distratores e aplicação direta aos cuidados diários de Enfermagem. <em>(Nota: Os tópicos 2 a 8 encontram-se temporariamente bloqueados pelo docente para foco do estudo).</em>
+          Consolida os conteúdos das tuas aulas com <strong>500 questões de Biofísica</strong> rigorosas do <strong>Tópico 1 (Força, Estado de Equilíbrio e Alavancas)</strong>, com justificações científicas completas, análise detalhada de distratores e notas de aplicação prática. <em>(Nota: Os tópicos 2 a 8 encontram-se temporariamente bloqueados pelo docente para foco do estudo).</em>
         </p>
         <div class="hero-actions">
           <button class="btn btn-primary" id="btn-start-exam">
@@ -457,13 +457,13 @@
                     <option value="all-unlocked" selected>🎯 Tópicos Ativos (Tópico 1 - 500 Questões)</option>
                     <option value="1">Tópico 1: Força, Equilíbrio e Alavancas (500)</option>
                     <option value="2">🔒 Tópico 2: Elasticidade e Sistema Osteomedular (500 - Bloqueado aos Alunos)</option>
-                    <option value="all">🌐 Banco Integral (Tópicos 1 a 8 - 2.200)</option>
-                    <option value="3">🔒 Tópico 3: Hidrostática (200 - Bloqueado)</option>
-                    <option value="4">🔒 Tópico 4: Hidrodinâmica Circulatória (200 - Bloqueado)</option>
-                    <option value="5">🔒 Tópico 5: Radiações e Raios X (200 - Bloqueado)</option>
-                    <option value="6">🔒 Tópico 6: Núcleo e Forças Nucleares (200 - Bloqueado)</option>
-                    <option value="7">🔒 Tópico 7: Partículas α, β e Gama (200 - Bloqueado)</option>
-                    <option value="8">🔒 Tópico 8: Isótopos e Terapêutica (200 - Bloqueado)</option>
+                    <option value="all">🌐 Banco Integral (Tópicos 1 e 2 - 1.000 Questões)</option>
+                    <option value="3">🔒 Tópico 3: Hidrostática (Aguardando Geração)</option>
+                    <option value="4">🔒 Tópico 4: Hidrodinâmica Circulatória (Aguardando Geração)</option>
+                    <option value="5">🔒 Tópico 5: Radiações e Raios X (Aguardando Geração)</option>
+                    <option value="6">🔒 Tópico 6: Núcleo e Forças Nucleares (Aguardando Geração)</option>
+                    <option value="7">🔒 Tópico 7: Partículas α, β e Gama (Aguardando Geração)</option>
+                    <option value="8">🔒 Tópico 8: Isótopos e Terapêutica (Aguardando Geração)</option>
                   </select>
                 </div>
 
@@ -942,7 +942,7 @@
               </div>
               <h1 class="teacher-main-title">Auditoria & Gestão do Banco de Questões</h1>
               <p class="teacher-main-desc">
-                Inspeção integral das <strong>2.200 perguntas</strong> dos Tópicos 1 a 8 de Biofísica Médica. Permite rever enunciados, verificar distratores, selecionar questões para exclusão definitiva do repositório, descarregar ficheiros limpos e exportar relatórios de auditoria.
+                Inspeção integral das <strong>1.000 perguntas</strong> de Biofísica Médica (Tópicos 1 e 2). Permite rever enunciados, verificar distratores, selecionar questões para exclusão definitiva do repositório, descarregar ficheiros limpos e exportar relatórios de auditoria.
               </p>
             </div>
             <div class="teacher-header-actions">
@@ -956,21 +956,21 @@
             <div class="teacher-kpi-card">
               <span class="teacher-kpi-icon">📚</span>
               <div class="teacher-kpi-info">
-                <span class="teacher-kpi-num" id="teacher-stat-total">2 200</span>
+                <span class="teacher-kpi-num" id="teacher-stat-total">1 000</span>
                 <span class="teacher-kpi-label">Total no Repositório</span>
               </div>
             </div>
             <div class="teacher-kpi-card">
               <span class="teacher-kpi-icon">🎯</span>
               <div class="teacher-kpi-info">
-                <span class="teacher-kpi-num" id="teacher-stat-topic-count">2 200</span>
+                <span class="teacher-kpi-num" id="teacher-stat-topic-count">1 000</span>
                 <span class="teacher-kpi-label" id="teacher-stat-topic-label">Todos os Tópicos</span>
               </div>
             </div>
             <div class="teacher-kpi-card">
               <span class="teacher-kpi-icon">✅</span>
               <div class="teacher-kpi-info">
-                <span class="teacher-kpi-num" id="teacher-stat-active">2 200</span>
+                <span class="teacher-kpi-num" id="teacher-stat-active">1 000</span>
                 <span class="teacher-kpi-label">Ativas no Banco</span>
               </div>
             </div>
@@ -998,15 +998,15 @@
             <div class="teacher-filter-group" style="flex: 1.5; min-width: 250px;">
               <label class="teacher-filter-label" for="teacher-select-topic">Filtrar por Tópico Curricular:</label>
               <select id="teacher-select-topic" class="form-control" style="font-weight: 600;">
-                <option value="all" selected>Todos os Tópicos (1 a 8 - 2.200 Questões)</option>
+                <option value="all" selected>Todos os Tópicos (1.000 Questões nos Tópicos 1 e 2)</option>
                 <option value="1">Tópico 1: Força, Estado de Equilíbrio e Alavancas (500 Questões)</option>
                 <option value="2">Tópico 2: Elasticidade dos Corpos e Sistema Osteomedular (500 Questões)</option>
-                <option value="3">Tópico 3: Leis Fundamentais da Hidrostática (200 Questões)</option>
-                <option value="4">Tópico 4: Hidrodinâmica e Sistema Circulatório (200 Questões)</option>
-                <option value="5">Tópico 5: Radiações, Raios X, Diagnóstico e Terapêutica (200 Questões)</option>
-                <option value="6">Tópico 6: Núcleo Atómico e Forças Nucleares (200 Questões)</option>
-                <option value="7">Tópico 7: Partículas Alfa, Beta e Radiação Gama (200 Questões)</option>
-                <option value="8">Tópico 8: Isótopos, Isóbaros, Isótonos e Medicina Nuclear (200 Questões)</option>
+                <option value="3">Tópico 3: Leis Fundamentais da Hidrostática (Aguardando Geração)</option>
+                <option value="4">Tópico 4: Hidrodinâmica e Sistema Circulatório (Aguardando Geração)</option>
+                <option value="5">Tópico 5: Radiações, Raios X, Diagnóstico e Terapêutica (Aguardando Geração)</option>
+                <option value="6">Tópico 6: Núcleo Atómico e Forças Nucleares (Aguardando Geração)</option>
+                <option value="7">Tópico 7: Partículas Alfa, Beta e Radiação Gama (Aguardando Geração)</option>
+                <option value="8">Tópico 8: Isótopos, Isóbaros, Isótonos e Medicina Nuclear (Aguardando Geração)</option>
               </select>
             </div>
 
@@ -1023,8 +1023,8 @@
             <div class="teacher-filter-group" style="flex: 1; min-width: 180px;">
               <label class="teacher-filter-label" for="teacher-sort-select">Ordenação:</label>
               <select id="teacher-sort-select" class="form-control">
-                <option value="id-asc" selected>ID Crescente (#1001 ➔ #8200)</option>
-                <option value="id-desc">ID Decrescente (#8200 ➔ #1001)</option>
+                <option value="id-asc" selected>ID Crescente (#1001 ➔ #2500)</option>
+                <option value="id-desc">ID Decrescente (#2500 ➔ #1001)</option>
               </select>
             </div>
           </div>
@@ -1033,11 +1033,11 @@
           <div class="teacher-status-tabs">
             <button type="button" class="teacher-tab-btn active" id="tab-teacher-all">
               <span>Todas as Questões</span>
-              <span class="tab-badge" id="badge-tab-teacher-all">2 200</span>
+              <span class="tab-badge" id="badge-tab-teacher-all">1 000</span>
             </button>
             <button type="button" class="teacher-tab-btn" id="tab-teacher-active">
               <span>✅ Apenas Ativas</span>
-              <span class="tab-badge" id="badge-tab-teacher-active">2 200</span>
+              <span class="tab-badge" id="badge-tab-teacher-active">1 000</span>
             </button>
             <button type="button" class="teacher-tab-btn" id="tab-teacher-excluded">
               <span>🗑️ Para Eliminar</span>
@@ -1348,14 +1348,14 @@
 
   <!-- Rodapé -->
   <footer class="footer">
-    <p><strong>BioFísica Médica para o 1.º Ano de Enfermagem</strong> • 500 Questões Clínicas Ativas (Tópico 1) • Tópicos 2 a 8 Temporariamente Bloqueados pelo Docente</p>
+    <p><strong>BioFísica Médica para o 1.º Ano de Enfermagem</strong> • 500 Questões de Biofísica Ativas (Tópico 1) • Tópicos 2 a 8 Temporariamente Bloqueados aos Alunos</p>
     <p style="margin-top: 0.35rem; font-size: 0.8rem;">Plataforma Educativa 100% Gratuita e Acessível • Sem custos de alojamento nem subscrição • Desenvolvido para apoio ao estudo universitário</p>
     <p style="margin-top: 0.45rem; font-size: 0.82rem;">
-      <a href="#" id="link-footer-teacher" style="color: #d97706; text-decoration: underline; font-weight: 700;">🔒 Área Reservada ao Docente (PIN 456123 - Gestão e Auditoria das 2.200 Questões)</a>
+      <a href="#" id="link-footer-teacher" style="color: #d97706; text-decoration: underline; font-weight: 700;">🔒 Área Reservada ao Docente (PIN 456123 - Gestão e Auditoria das 1.000 Questões)</a>
     </p>
   </footer>
 
-  <!-- Banco de Questões por Tópico (2.200 questões certificadas no total) -->
+  <!-- Banco de Questões por Tópico (1.000 questões certificadas nos Tópicos 1 e 2) -->
   <script src="js/data/topic1.js?v=3.5"></script>
   <script src="js/data/topic2.js?v=3.5"></script>
   <script src="js/data/topic3.js?v=3.5"></script>
