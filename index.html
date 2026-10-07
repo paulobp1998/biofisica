@@ -31,6 +31,11 @@
           ⚔️ Arena ao Vivo
         </button>
 
+        <!-- Área Reservada do Docente (PIN 456123) -->
+        <button class="btn btn-outline btn-pill" id="btn-nav-teacher" title="Área Reservada ao Docente (PIN 456123)" style="border-color: #f59e0b; color: #d97706; font-weight: 700; display: inline-flex; align-items: center; gap: 0.35rem;">
+          <span>🔒</span> Painel Docente
+        </button>
+
         <!-- 2E: Pesquisa Rápida / Glossário -->
         <button class="btn-search-nav" id="btn-open-search" title="Pesquisar questões, leis e conceitos (Ctrl+K)">
           <span>🔍 Pesquisar</span>
@@ -81,6 +86,9 @@
           </button>
           <button class="btn btn-primary" id="btn-open-arena" style="background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%); border-color: #6366f1;">
             ⚔️ Arena BioFísica (Batalha em Grupo ao Vivo)
+          </button>
+          <button class="btn btn-outline" id="btn-open-teacher-audit" style="border-color: #f59e0b; color: #d97706; font-weight: 700;">
+            🔒 Gestão & Auditoria do Banco (Docente)
           </button>
         </div>
 
@@ -918,6 +926,188 @@
       </div>
     </section>
 
+    <!-- =====================================================================
+         PAINEL DO DOCENTE: GESTÃO E AUDITORIA DO BANCO DE QUESTÕES (PIN 456123)
+         ===================================================================== -->
+    <section id="view-teacher" class="hidden">
+      <div class="teacher-container">
+
+        <!-- Cartão de Cabeçalho e KPIs -->
+        <div class="teacher-header-card">
+          <div class="teacher-header-main">
+            <div>
+              <div style="display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap;">
+                <span class="teacher-shield-badge">🔒 Área Reservada ao Docente (PIN Mestre)</span>
+                <span class="teacher-auth-status-badge">✅ Sessão Autenticada</span>
+              </div>
+              <h1 class="teacher-main-title">Auditoria & Gestão do Banco de Questões</h1>
+              <p class="teacher-main-desc">
+                Inspeção integral das <strong>2.200 perguntas</strong> dos Tópicos 1 a 8 de Biofísica Médica. Permite rever enunciados, verificar distratores, selecionar questões para exclusão definitiva do repositório, descarregar ficheiros limpos e exportar relatórios de auditoria.
+              </p>
+            </div>
+            <div class="teacher-header-actions">
+              <button class="btn btn-outline" id="btn-teacher-back-home">🏠 Início</button>
+              <button class="btn btn-outline" id="btn-teacher-lock-session" title="Terminar sessão protegida do docente">🔒 Bloquear Sessão</button>
+            </div>
+          </div>
+
+          <!-- Grelha de KPIs -->
+          <div class="teacher-kpi-grid">
+            <div class="teacher-kpi-card">
+              <span class="teacher-kpi-icon">📚</span>
+              <div class="teacher-kpi-info">
+                <span class="teacher-kpi-num" id="teacher-stat-total">2 200</span>
+                <span class="teacher-kpi-label">Total no Repositório</span>
+              </div>
+            </div>
+            <div class="teacher-kpi-card">
+              <span class="teacher-kpi-icon">🎯</span>
+              <div class="teacher-kpi-info">
+                <span class="teacher-kpi-num" id="teacher-stat-topic-count">2 200</span>
+                <span class="teacher-kpi-label" id="teacher-stat-topic-label">Todos os Tópicos</span>
+              </div>
+            </div>
+            <div class="teacher-kpi-card">
+              <span class="teacher-kpi-icon">✅</span>
+              <div class="teacher-kpi-info">
+                <span class="teacher-kpi-num" id="teacher-stat-active">2 200</span>
+                <span class="teacher-kpi-label">Ativas no Banco</span>
+              </div>
+            </div>
+            <div class="teacher-kpi-card teacher-kpi-card-danger">
+              <span class="teacher-kpi-icon">🗑️</span>
+              <div class="teacher-kpi-info">
+                <span class="teacher-kpi-num" id="teacher-stat-excluded" style="color: #dc2626;">0</span>
+                <span class="teacher-kpi-label">Para Eliminar do Repositório</span>
+              </div>
+            </div>
+            <div class="teacher-kpi-card teacher-kpi-card-highlight">
+              <span class="teacher-kpi-icon">☑️</span>
+              <div class="teacher-kpi-info">
+                <span class="teacher-kpi-num" id="teacher-stat-selected" style="color: var(--color-brand);">0</span>
+                <span class="teacher-kpi-label">Selecionadas Agora</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Barra de Ferramentas e Filtros -->
+        <div class="teacher-toolbar-card">
+          <div class="teacher-toolbar-row">
+            <!-- Filtro de Tópico -->
+            <div class="teacher-filter-group" style="flex: 1.5; min-width: 250px;">
+              <label class="teacher-filter-label" for="teacher-select-topic">Filtrar por Tópico Curricular:</label>
+              <select id="teacher-select-topic" class="form-control" style="font-weight: 600;">
+                <option value="all" selected>Todos os Tópicos (1 a 8 - 2.200 Questões)</option>
+                <option value="1">Tópico 1: Força, Estado de Equilíbrio e Alavancas (500 Questões)</option>
+                <option value="2">Tópico 2: Elasticidade dos Corpos e Sistema Osteomedular (500 Questões)</option>
+                <option value="3">Tópico 3: Leis Fundamentais da Hidrostática (200 Questões)</option>
+                <option value="4">Tópico 4: Hidrodinâmica e Sistema Circulatório (200 Questões)</option>
+                <option value="5">Tópico 5: Radiações, Raios X, Diagnóstico e Terapêutica (200 Questões)</option>
+                <option value="6">Tópico 6: Núcleo Atómico e Forças Nucleares (200 Questões)</option>
+                <option value="7">Tópico 7: Partículas Alfa, Beta e Radiação Gama (200 Questões)</option>
+                <option value="8">Tópico 8: Isótopos, Isóbaros, Isótonos e Medicina Nuclear (200 Questões)</option>
+              </select>
+            </div>
+
+            <!-- Pesquisa Instantânea -->
+            <div class="teacher-filter-group" style="flex: 2; min-width: 280px;">
+              <label class="teacher-filter-label" for="teacher-search-input">Pesquisa no Enunciado, Opções ou Explicação:</label>
+              <div style="position: relative;">
+                <input type="text" id="teacher-search-input" class="form-control" placeholder="Procurar por termo, ID (ex: 2150), conceito anatómico/físico..." style="padding-right: 2rem;">
+                <button type="button" id="btn-teacher-clear-search" class="teacher-clear-btn hidden" title="Limpar pesquisa">✕</button>
+              </div>
+            </div>
+
+            <!-- Ordenação -->
+            <div class="teacher-filter-group" style="flex: 1; min-width: 180px;">
+              <label class="teacher-filter-label" for="teacher-sort-select">Ordenação:</label>
+              <select id="teacher-sort-select" class="form-control">
+                <option value="id-asc" selected>ID Crescente (#1001 ➔ #8200)</option>
+                <option value="id-desc">ID Decrescente (#8200 ➔ #1001)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Abas de Estado -->
+          <div class="teacher-status-tabs">
+            <button type="button" class="teacher-tab-btn active" id="tab-teacher-all">
+              <span>Todas as Questões</span>
+              <span class="tab-badge" id="badge-tab-teacher-all">2 200</span>
+            </button>
+            <button type="button" class="teacher-tab-btn" id="tab-teacher-active">
+              <span>✅ Apenas Ativas</span>
+              <span class="tab-badge" id="badge-tab-teacher-active">2 200</span>
+            </button>
+            <button type="button" class="teacher-tab-btn" id="tab-teacher-excluded">
+              <span>🗑️ Para Eliminar</span>
+              <span class="tab-badge badge-danger" id="badge-tab-teacher-excluded">0</span>
+            </button>
+            <button type="button" class="teacher-tab-btn" id="tab-teacher-selected">
+              <span>☑️ Selecionadas</span>
+              <span class="tab-badge badge-brand" id="badge-tab-teacher-selected">0</span>
+            </button>
+          </div>
+
+          <!-- Barra de Ações em Massa e Repositório -->
+          <div class="teacher-actions-bar">
+            <div class="teacher-actions-left">
+              <label class="teacher-select-all-label">
+                <input type="checkbox" id="teacher-checkbox-select-all">
+                <span id="teacher-select-all-text">Selecionar todas as visíveis</span>
+              </label>
+              <span class="teacher-selection-indicator" id="teacher-selection-indicator">0 perguntas selecionadas</span>
+            </div>
+
+            <div class="teacher-actions-right">
+              <button type="button" class="btn btn-sm btn-danger" id="btn-teacher-eliminate-selected" disabled title="Marcar perguntas selecionadas para eliminação">
+                🗑️ Eliminar Selecionadas
+              </button>
+              <button type="button" class="btn btn-sm btn-outline" id="btn-teacher-restore-selected" disabled title="Restaurar perguntas selecionadas">
+                ↩️ Restaurar Selecionadas
+              </button>
+              <button type="button" class="btn btn-sm btn-primary" id="btn-teacher-copy-repo-ids" title="Copiar os IDs para o chat com o assistente AI para eliminação no repositório">
+                📋 Copiar IDs para Assistente AI
+              </button>
+              <button type="button" class="btn btn-sm btn-outline" id="btn-teacher-download-clean" title="Descarregar ficheiro JS do tópico filtrado sem as questões eliminadas">
+                💾 Descarregar Tópico Limpo
+              </button>
+              <button type="button" class="btn btn-sm btn-outline" id="btn-teacher-export-report" title="Descarregar relatório de texto com a auditoria completa">
+                📄 Exportar Relatório
+              </button>
+              <button type="button" class="btn btn-sm btn-outline" id="btn-teacher-reset-exclusions" title="Anular todas as eliminações">
+                🔄 Repor Tudo
+              </button>
+            </div>
+          </div>
+
+          <!-- Controlo de Expansão e Contagem de Resultados -->
+          <div class="teacher-expand-control">
+            <span id="teacher-results-count" style="font-size: 0.88rem; font-weight: 700; color: var(--text-secondary);">
+              A carregar perguntas...
+            </span>
+            <div style="display: flex; gap: 0.5rem;">
+              <button type="button" class="btn-xs-tool" id="btn-teacher-expand-all">▲ Expandir Todas as Explicações</button>
+              <button type="button" class="btn-xs-tool" id="btn-teacher-collapse-all">▼ Recolher Todas</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lista de Cartões de Perguntas -->
+        <div id="teacher-questions-list" class="teacher-questions-list">
+          <!-- Gerado dinamicamente por TeacherManager -->
+        </div>
+
+        <!-- Carregar Mais (Paginação suave) -->
+        <div id="teacher-load-more-box" class="teacher-load-more-box hidden">
+          <button type="button" class="btn btn-outline" id="btn-teacher-load-more">
+            Carregar Mais 50 Perguntas ⬇️
+          </button>
+        </div>
+
+      </div>
+    </section>
+
     <!-- Modal de Autenticação do Docente para a Arena (Master PIN) -->
     <div id="modal-teacher-auth" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modal-teacher-title">
       <div class="modal-card" style="max-width: 440px;">
@@ -961,6 +1151,31 @@
               <button type="submit" class="btn btn-primary" id="btn-confirm-teacher-pin">🔓 Desbloquear Acesso</button>
             </div>
           </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal com Lista de IDs para Eliminação no Repositório (Assistente AI) -->
+    <div id="modal-repo-ids" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modal-repo-ids-title">
+      <div class="modal-card" style="max-width: 620px;">
+        <div class="modal-header">
+          <div>
+            <h3 id="modal-repo-ids-title" style="display: flex; align-items: center; gap: 0.5rem; margin: 0;">
+              <span>📋</span> Lista de IDs para o Assistente AI
+            </h3>
+            <p class="modal-subtitle" style="margin-top: 0.35rem;">Copia os IDs abaixo para fornecer ao assistente eliminar permanentemente do repositório:</p>
+          </div>
+          <button class="modal-close" id="btn-close-repo-ids-modal" aria-label="Fechar">✕</button>
+        </div>
+        <div class="modal-body">
+          <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 0.85rem; line-height: 1.5;">
+            Estas questões foram marcadas por si no painel e já estão automaticamente excluídas no navegador. Para removê-las de forma permanente dos ficheiros de código (GitHub), copia este bloco e envia na conversa com o assistente:
+          </p>
+          <textarea id="textarea-repo-ids" readonly style="width: 100%; height: 210px; font-family: monospace; font-size: 0.88rem; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: var(--radius-md); background: var(--bg-card); resize: vertical; line-height: 1.4;"></textarea>
+        </div>
+        <div class="modal-footer" style="display: flex; gap: 0.75rem; justify-content: flex-end;">
+          <button type="button" class="btn btn-outline" id="btn-cancel-repo-ids-modal">Fechar</button>
+          <button type="button" class="btn btn-primary" id="btn-copy-clipboard-repo-ids">📋 Copiar para a Área de Transferência</button>
         </div>
       </div>
     </div>
@@ -1135,6 +1350,9 @@
   <footer class="footer">
     <p><strong>BioFísica Médica para o 1.º Ano de Enfermagem</strong> • 500 Questões Clínicas Ativas (Tópico 1) • Tópicos 2 a 8 Temporariamente Bloqueados pelo Docente</p>
     <p style="margin-top: 0.35rem; font-size: 0.8rem;">Plataforma Educativa 100% Gratuita e Acessível • Sem custos de alojamento nem subscrição • Desenvolvido para apoio ao estudo universitário</p>
+    <p style="margin-top: 0.45rem; font-size: 0.82rem;">
+      <a href="#" id="link-footer-teacher" style="color: #d97706; text-decoration: underline; font-weight: 700;">🔒 Área Reservada ao Docente (PIN 456123 - Gestão e Auditoria das 2.200 Questões)</a>
+    </p>
   </footer>
 
   <!-- Banco de Questões por Tópico (2.200 questões certificadas no total) -->
@@ -1154,6 +1372,7 @@
   <script src="js/arena-network.js?v=3.5"></script>
   <script src="js/arena-engine.js?v=3.5"></script>
   <script src="js/arena-ui.js?v=3.5"></script>
+  <script src="js/teacher-manager.js?v=3.5"></script>
   <script src="js/app.js?v=3.5"></script>
 </body>
 </html>

@@ -18,10 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const studyView = document.getElementById('view-study');
   const statsView = document.getElementById('view-stats');
   const arenaView = document.getElementById('view-arena');
+  const teacherView = document.getElementById('view-teacher');
 
   // Navegação e Topo
   const navBrand = document.getElementById('nav-brand');
   const btnNavArena = document.getElementById('btn-nav-arena');
+  const btnNavTeacher = document.getElementById('btn-nav-teacher');
+  const btnOpenTeacherAudit = document.getElementById('btn-open-teacher-audit');
+  const linkFooterTeacher = document.getElementById('link-footer-teacher');
   const themeToggle = document.getElementById('theme-toggle');
   const audioToggle = document.getElementById('audio-toggle');
   const streakBadge = document.getElementById('streak-badge');
@@ -323,7 +327,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 7. Navegação entre Vistas
   // =========================================================================
   function showView(view) {
-    [homeView, quizView, resultsView, studyView, statsView, arenaView].forEach(v => {
+    [homeView, quizView, resultsView, studyView, statsView, arenaView, teacherView].forEach(v => {
       if (v) {
         v.classList.add('hidden');
         v.classList.remove('active-view');
@@ -335,6 +339,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+  window.showView = showView;
 
   navBrand.addEventListener('click', (e) => {
     e.preventDefault();
@@ -352,6 +357,26 @@ document.addEventListener('DOMContentLoaded', () => {
     btnOpenArena.addEventListener('click', () => {
       showView(arenaView);
       if (window.arenaUI) window.arenaUI.showScreen('select');
+    });
+  }
+
+  // Abertura Segura do Painel do Docente (Requer PIN Mestre 456123)
+  const openTeacherPanel = () => {
+    if (window.teacherManager) {
+      window.teacherManager.requestAuthAndOpen();
+    }
+  };
+
+  if (btnNavTeacher) {
+    btnNavTeacher.addEventListener('click', openTeacherPanel);
+  }
+  if (btnOpenTeacherAudit) {
+    btnOpenTeacherAudit.addEventListener('click', openTeacherPanel);
+  }
+  if (linkFooterTeacher) {
+    linkFooterTeacher.addEventListener('click', (e) => {
+      e.preventDefault();
+      openTeacherPanel();
     });
   }
 
@@ -1650,6 +1675,15 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     } catch (err) {
       console.warn("Aviso ao carregar ArenaUI:", err);
+    }
+  }
+
+  // Inicializar Painel do Docente (Gestão e Auditoria do Banco de Questões)
+  if (window.teacherManager && typeof window.teacherManager.init === 'function') {
+    try {
+      window.teacherManager.init();
+    } catch (err) {
+      console.warn("Aviso ao inicializar TeacherManager:", err);
     }
   }
 });

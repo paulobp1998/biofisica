@@ -323,11 +323,12 @@ class ArenaUI {
         sessionStorage.setItem('arena_host_authenticated', 'true');
       } catch (e) {}
 
-      const action = this.pendingTeacherAction;
+      const action = this.pendingTeacherAction || window.__teacherPendingAction;
       this.closeTeacherAuthModal();
       if (typeof action === 'function') {
         action();
       }
+      window.__teacherPendingAction = null;
     } else {
       this.showTeacherPinError("PIN incorreto. Acesso restrito ao docente.");
       this.inputTeacherPin.value = '';
