@@ -639,10 +639,10 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "A partir da fórmula F = m · a, como se expressa algebricamente a massa 'm' de um corpo?",
     "options": [
-      "M = F · a",
-      "M = a / F",
-      "M = F / a",
-      "M = F - a"
+      "m = F · a",
+      "m = a / F",
+      "m = F / a",
+      "m = F - a"
     ],
     "correctIndex": 2,
     "explanation": "Estabelece-se que, isolando a massa na equação fundamental da dinâmica, obtém-se m = F / a.",
@@ -772,13 +772,13 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a representação matemática do par ação-reação da 3ª Lei de Newton apresentada?",
     "options": [
-      "F_A->B + F_B->A = m · a",
-      "F_A->B = - F_B->A (ou intensidades iguais e sentidos opostos)",
-      "F_A->B / F_B->A = 0",
-      "F_A->B = F_B->A²"
+      "F<sub>A->B</sub> + F<sub>B->A</sub> = m · a",
+      "F<sub>A->B</sub> = - F<sub>B->A</sub> (ou intensidades iguais e sentidos opostos)",
+      "F<sub>A->B</sub> / F<sub>B->A</sub> = 0",
+      "F<sub>A->B</sub> = F<sub>B->A</sub>²"
     ],
     "correctIndex": 1,
-    "explanation": "Apresenta-se a formulação clássica vetorial: F_A->B = - F_B->A, significando que as forças têm a mesma intensidade e direção, mas sentidos opostos.",
+    "explanation": "Apresenta-se a formulação clássica vetorial: F<sub>A->B</sub> = - F<sub>B->A</sub>, significando que as forças têm a mesma intensidade e direção, mas sentidos opostos.",
     "distractorAnalysis": [
       "Está incorreta: As forças atuam em corpos distintos, pelo que somá-las para obter m·a de um único corpo é incorreto.",
       "Está incorreta: O quociente entre as suas intensidades seria 1, nunca 0.",
@@ -849,18 +849,18 @@ const TOPIC_1_QUESTIONS = [
     "question": "Qual das seguintes afirmações traduz, em linguagem quotidiana e pedagógica, o princípio fundamental da 3.ª Lei de Newton?",
     "options": [
       "Quem espera sempre alcança.",
-      "Toda a ação tem a sua reação de igual intensidade e sentido oposto. O mesmo aplica-se na vida.",
+      "Toda a ação tem a sua reação de igual intensidade e sentido oposto.",
       "A física quântica resolve todos os mistérios biológicos.",
       "O movimento perpétuo é o objetivo de toda a terapêutica médica."
     ],
     "correctIndex": 1,
-    "explanation": "Conclui-se de forma pedagógica: 'Por outras palavras: Toda a ação tem a sua reação de igual intensidade e sentido oposto. O mesmo aplica-se na vida'.",
+    "explanation": "Conclui-se de forma pedagógica: 'Por outras palavras: Toda a ação tem a sua reação de igual intensidade e sentido oposto'.",
     "distractorAnalysis": [
       "Está incorreta: Provérbio popular não mencionado em nenhum ponto da biomecânica da unidade curricular.",
       "Está incorreta: A física quântica não é abordada nem mencionada no âmbito do Tópico 1 da biomecânica.",
       "Está incorreta: O movimento perpétuo viola as leis da termodinâmica e não consta na biomecânica."
     ],
-    "nursingApplication": "Mensagem pedagógica que liga o princípio físico das forças interativas ao comportamento profissional e relacional."
+    "nursingApplication": "Compreensão da interação mútua de forças no posicionamento e mobilização de doentes na prática clínica de enfermagem."
   },
   {
     "id": 1046,
