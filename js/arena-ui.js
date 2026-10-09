@@ -1023,7 +1023,7 @@ class ArenaUI {
           const labelSpan = btn.querySelector('.btn-tactile-label');
           if (labelSpan) {
             // Texto completo da opção no telemóvel, sem truncagem
-            labelSpan.textContent = data.options && data.options[idx] ? data.options[idx] : `Opção ${letters[idx]}`;
+            labelSpan.innerHTML = data.options && data.options[idx] ? data.options[idx] : `Opção ${letters[idx]}`;
           }
         }
       });
@@ -1085,7 +1085,7 @@ class ArenaUI {
 
       // Explicação Científica no Telemóvel
       if (this.clientRevealExpText) {
-        this.clientRevealExpText.textContent = data.explanation || '';
+        this.clientRevealExpText.innerHTML = data.explanation || '';
       }
 
       // Distratores no Telemóvel do Aluno
