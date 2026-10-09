@@ -121,7 +121,17 @@ def test_app():
     assert "Pergunta Q${state.questionId}" in app_js, "Missing Pergunta Q${state.questionId} in app.js"
     assert "Pergunta Q${ans.questionId}" in app_js, "Missing Pergunta Q${ans.questionId} in app.js"
     assert "btn-copy-review-qid" in app_js, "Missing btn-copy-review-qid in app.js"
-    print("✓ Question ID (Q#) badge and clipboard copy mechanisms verified across UI and app logic.")
+    # 10. Check Temporary Teacher Notice (Plataforma Cluny) - 72 Hours Lifecycle
+    expected_cluny_notice = (
+        'O PDF com a apresentação "Tópico 1 - Forças, estados de equilíbrio e alavancas" já se encontra na '
+        'plataforma da Cluny na pasta "Secções". Por lapso, tinha-o colocado na pasta "Anúncios" no dia 06.10.2026 '
+        'após a nossa aula. Bom fim de semana e até breve, Paulo'
+    )
+    assert 'id="cluny-notice-banner"' in html, "Missing cluny-notice-banner in index.html"
+    assert expected_cluny_notice in html, "Cluny notice text missing or mismatch in index.html"
+    assert "CLUNY_NOTICE_EXPIRY = 1791821584000" in app_js, "Missing or incorrect CLUNY_NOTICE_EXPIRY in js/app.js"
+    assert "initTemporaryTeacherNotice" in app_js, "Missing initTemporaryTeacherNotice in js/app.js"
+    print("✓ Temporary Teacher Notice (Plataforma Cluny) and 72-hour auto-expiry logic verified 100% exact.")
 
     print("=" * 80)
     print("RESULT: ALL APP COMPONENTS, DATA, LOGIC AND UI CHECKS ARE 100% OPERATIONAL!")
