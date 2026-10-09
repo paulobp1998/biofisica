@@ -139,6 +139,45 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentQuestionId = null;
 
   // =========================================================================
+  // Aviso Temporário do Docente (Plataforma Cluny) - Validade: 72 Horas
+  // Ativo de 2026-10-09T17:13:04+01:00 até 2026-10-12T17:13:04+01:00
+  // =========================================================================
+  const CLUNY_NOTICE_EXPIRY = 1791821584000; // 2026-10-12T17:13:04+01:00
+
+  function initTemporaryTeacherNotice() {
+    const banner = document.getElementById('cluny-notice-banner');
+    if (!banner) return;
+
+    const now = Date.now();
+    if (now >= CLUNY_NOTICE_EXPIRY) {
+      // 72 horas ultrapassadas: remove completamente o aviso do site
+      banner.remove();
+      return;
+    }
+
+    // Permitir fechar o aviso na sessão atual
+    const btnClose = document.getElementById('btn-close-cluny-notice');
+    if (btnClose) {
+      btnClose.addEventListener('click', () => {
+        banner.style.opacity = '0';
+        banner.style.transform = 'translateY(-8px)';
+        setTimeout(() => banner.remove(), 300);
+      });
+    }
+
+    // Auto-remoção em tempo real se a sessão permanecer aberta além das 72h
+    const remainingMs = CLUNY_NOTICE_EXPIRY - now;
+    if (remainingMs > 0 && remainingMs < 0x7FFFFFFF) {
+      setTimeout(() => {
+        const el = document.getElementById('cluny-notice-banner');
+        if (el) el.remove();
+      }, remainingMs);
+    }
+  }
+
+  initTemporaryTeacherNotice();
+
+  // =========================================================================
   // 2. Sistema de Notificações Toast
   // =========================================================================
   function showToast(message, type = 'toast-info', duration = 3800) {
