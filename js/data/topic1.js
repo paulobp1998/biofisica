@@ -620,10 +620,10 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "A partir da fórmula F = m · a, como se expressa algebricamente a aceleração 'a'?",
     "options": [
-      "A = F · m",
-      "A = F / m",
-      "A = m / F",
-      "A = F + m"
+      "a = F · m",
+      "a = F / m",
+      "a = m / F",
+      "a = F + m"
     ],
     "correctIndex": 1,
     "explanation": "Deduz-se matematicamente as formas equivalentes da 2ª Lei: isolando a aceleração, obtém-se a = F / m.",
