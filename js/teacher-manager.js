@@ -813,7 +813,8 @@ class TeacherManager {
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;')
-      .replace(/'/g, '&#039;');
+      .replace(/'/g, '&#039;')
+      .replace(/&lt;(\/?)(sub|sup)&gt;/g, '<$1$2>');
   }
 
   toast(msg, type = 'toast-info', duration = 4000) {

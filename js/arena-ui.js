@@ -101,6 +101,11 @@ function arenaEscapeHtml(str) {
     .replace(/'/g, '&#039;');
 }
 
+// Texto de perguntas (conteúdo da aplicação): escapa tudo, exceto índices e expoentes
+function arenaRichText(str) {
+  return arenaEscapeHtml(str).replace(/&lt;(\/?)(sub|sup)&gt;/g, '<$1$2>');
+}
+
 class ArenaUI {
   constructor() {
     this.net = new ArenaNetwork();
@@ -1547,24 +1552,24 @@ class ArenaUI {
             </button>
           </div>
           <div class="arena-custom-q-body">
-            <p class="arena-custom-q-text">${arenaEscapeHtml(q.question)}</p>
+            <p class="arena-custom-q-text">${arenaRichText(q.question)}</p>
           </div>
           <div class="arena-custom-q-details hidden" id="details-q-${q.id}">
             <div class="arena-custom-options-preview">
               ${(q.options || []).map((opt, i) => `
                 <div class="arena-custom-opt-preview-item ${i === q.correctIndex ? 'is-correct' : ''}">
                   <span class="arena-custom-opt-letter">${letters[i]}</span>
-                  <span class="arena-custom-opt-text">${arenaEscapeHtml(opt)}</span>
+                  <span class="arena-custom-opt-text">${arenaRichText(opt)}</span>
                   ${i === q.correctIndex ? '<span class="arena-custom-correct-badge">✓ Correta</span>' : ''}
                 </div>
               `).join('')}
             </div>
             <div class="arena-custom-exp-preview">
-              <strong>🩺 Justificação Científica:</strong> ${arenaEscapeHtml(q.explanation || '')}
+              <strong>🩺 Justificação Científica:</strong> ${arenaRichText(q.explanation || '')}
             </div>
             ${q.nursingApplication ? `
               <div class="arena-custom-nursing-preview">
-                <strong>🏥 Aplicação aos Cuidados de Enfermagem:</strong> ${arenaEscapeHtml(q.nursingApplication)}
+                <strong>🏥 Aplicação aos Cuidados de Enfermagem:</strong> ${arenaRichText(q.nursingApplication)}
               </div>
             ` : ''}
           </div>
