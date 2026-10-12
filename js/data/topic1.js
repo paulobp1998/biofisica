@@ -154,7 +154,7 @@ const TOPIC_1_QUESTIONS = [
     "explanation": "Quando a força resultante é nula (Fr = 0), o corpo mantém o seu estado de repouso ou continua em movimento retilíneo uniforme (MRU), de acordo com a 1ª Lei de Newton.",
     "distractorAnalysis": [
       "Está incorreta: Aceleração exige uma força resultante não nula (Fr = m · a); se Fr = 0, a aceleração é rigorosamente nula.",
-      "Está incorreta: A rotação depende do momento resultante (ΣM), não só da força resultante: um binário tem força resultante nula e pode fazer rodar o corpo.",
+      "Está incorreta: Fr = 0 não provoca rotação. A rotação depende do momento resultante (ΣM), e não da força resultante; só há rotação se ΣM ≠ 0 (p. ex., um binário, que tem Fr = 0).",
       "Está incorreta: O peso depende da massa e gravidade local, não sofrendo alteração por equilíbrio de forças."
     ],
     "nursingApplication": "Explica por que uma maca parada numa superfície horizontal nivelada não se move sem intervenção externa."
@@ -390,7 +390,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1021,
     "topicId": 1,
-    "question": "Qual é o enunciado exato da 1ª Lei de Newton (Lei da Inércia) apresentado?",
+    "question": "Qual é o enunciado correto da 1ª Lei de Newton (Lei da Inércia)?",
     "options": [
       "A aceleração de um corpo é diretamente proporcional à força resultante e inversamente à sua massa.",
       "Um corpo permanece em repouso ou em movimento retilíneo uniforme, a menos que atue sobre ele uma força resultante não nula.",
@@ -398,11 +398,11 @@ const TOPIC_1_QUESTIONS = [
       "A energia total de um sistema isolado dissipa-se invariavelmente sob a forma de calor."
     ],
     "correctIndex": 1,
-    "explanation": "Define-se a 1ª Lei de Newton (Lei da Inércia): 'Um corpo permanece em repouso ou em movimento retilíneo uniforme, a menos que atue sobre ele uma força resultante não nula'.",
+    "explanation": "Define-se a 1ª Lei de Newton (Lei da Inércia): um corpo permanece em repouso ou em movimento retilíneo uniforme, a menos que atue sobre ele uma força resultante não nula. Esta formulação é mais rigorosa do que «uma força externa», porque várias forças externas podem anular-se.",
     "distractorAnalysis": [
       "Está incorreta: A relação aceleração-força-massa constitui a 2ª Lei de Newton (F = m · a).",
       "Está incorreta: A ação e reação têm igual intensidade e mesma direção, conforme a 3ª Lei de Newton.",
-      "Está incorreta: A conservação ou dissipação de energia é o princípio da termodinâmica, não a Lei da Inércia."
+      "Está incorreta: Num sistema isolado a energia total conserva-se (1.ª Lei da Termodinâmica); não se dissipa invariavelmente em calor, e não é a Lei da Inércia."
     ],
     "nursingApplication": "Fundamenta o uso de cintos de segurança no transporte de doentes em cadeiras de rodas e ambulâncias."
   },
@@ -1485,9 +1485,9 @@ const TOPIC_1_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: A força normal nunca excede o peso num plano inclinado estático livre de forças externas adicionais.",
       "Está incorreta: A força normal varia com a função cosseno da inclinação, diminuindo com o aumento do ângulo.",
-      "Está incorreta: A redistribuição de forças é puramente gravítica e geométrica, sem alteração de campos eletromagnéticos."
+      "Está incorreta: A normal é uma força de contacto perpendicular à superfície; não atrai o doente para a parede."
     ],
-    "nursingApplication": "Alerta para o facto de que elevar a cabeceira reduz a compressão pura normal, mas introduz deslizamento e forças de cisalhamento."
+    "nursingApplication": "Alerta para o facto de que, no modelo simplificado, elevar a cabeceira transfere parte do peso para o deslizamento (cisalhamento). Na prática, o peso concentra-se na região sagrada e isquiática, por isso recomenda-se limitar a elevação da cabeceira (cerca de 30°, salvo contraindicação)."
   },
   {
     "id": 1079,
@@ -2646,7 +2646,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: O atrito do pavimento não tem relação com o momento interno da carga sobre a coluna.",
       "Está incorreta: A velocidade da luz não interfere na mecânica osteomuscular humana."
     ],
-    "nursingApplication": "Princípio ergonómico vital para a saúde da coluna do enfermeiro: manter sempre as cargas junto ao peito."
+    "nursingApplication": "Princípio ergonómico vital para a saúde da coluna do enfermeiro: manter a carga junto ao corpo, idealmente à altura da cintura, porque a distância horizontal aumenta o momento sobre a coluna."
   },
   {
     "id": 1140,
@@ -2967,9 +2967,9 @@ const TOPIC_1_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: b_R é menor que b_P na alavanca inter-resistente, nunca o dobro.",
       "Está incorreta: Os comprimentos variam com as dimensões de cada corpo e ferramenta mecânica.",
-      "Está incorreta: O braço potente é o maior de todos e estende-se do fulcro até à ponta potente."
+      "Está incorreta: O braço potente é o maior dos dois braços e estende-se do fulcro até ao ponto de aplicação da força potente."
     ],
-    "nursingApplication": "Explica porque é que a elevação na ponta dos pés exige uma força muscular elevada no tendão de Aquiles, que atua com um braço de momento curto em relação à articulação do tornozelo."
+    "nursingApplication": "Explica a vantagem mecânica de dispositivos como o carrinho de mão: com a carga entre o eixo e as mãos (b_P > b_R), transporta-se uma carga pesada com uma força inferior ao seu peso."
   },
   {
     "id": 1157,
