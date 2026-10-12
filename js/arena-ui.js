@@ -1544,7 +1544,7 @@ class ArenaUI {
           <div class="arena-custom-q-header">
             <label class="arena-custom-checkbox-label" for="q-check-${q.id}">
               <input type="checkbox" id="q-check-${q.id}" class="arena-custom-q-check" data-qid="${q.id}" ${isSelected ? 'checked' : ''}>
-              <span class="arena-custom-q-badge">#${q.id}</span>
+              <span class="arena-custom-q-badge">Pergunta ${q.id - q.topicId * 1000} · Tópico ${q.topicId}</span>
               <span class="arena-custom-q-topic-tag">${arenaEscapeHtml(topicShort)}</span>
             </label>
             <button type="button" class="arena-custom-q-toggle-btn" data-qid="${q.id}">
