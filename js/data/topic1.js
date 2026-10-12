@@ -170,7 +170,7 @@ const TOPIC_1_QUESTIONS = [
       "A Mecânica estuda a estrutura do ADN e a Reologia estuda a fusão nuclear."
     ],
     "correctIndex": 1,
-    "explanation": "A Mecânica debruça-se sobre forças e alterações de movimento/equilíbrio, ao passo que a Reologia estuda as reações dos corpos a forças deformadoras ( do Tópico 2).",
+    "explanation": "A Mecânica debruça-se sobre forças e alterações de movimento/equilíbrio, ao passo que a Reologia estuda as reações dos corpos a forças deformadoras (tema do Tópico 2).",
     "distractorAnalysis": [
       "Está incorreta: Eletricidade e radioatividade são temas de bioeletrogénese e física nuclear, não de mecânica.",
       "Está incorreta: Fluidos estáticos são o objeto da hidrostática e raios X são tema de radiação médica.",
@@ -685,7 +685,7 @@ const TOPIC_1_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Pela 2ª Lei (F = m · a), com a constante, duplicando a massa (2m) é indispensável duplicar a força (2F): 'Essa força será tanto maior quanto maior for a massa do corpo'.",
     "distractorAnalysis": [
-      "Está incorreta: A aceleração depende diretamente da massa; com a mesma força, o corpo com dobro da massa teria metade da aceleração.",
+      "Está incorreta: A aceleração depende inversamente da massa; com a mesma força, o corpo com dobro da massa teria metade da aceleração.",
       "Está incorreta: Corpos pesados exigem mais força, nunca menos, para acelerar à mesma taxa.",
       "Está incorreta: Maior inércia opõe maior resistência à aceleração, exigindo mais força e nunca menos."
     ],
@@ -765,7 +765,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: As Leis de Newton são universais na mecânica clássica e aplicam-se a qualquer valor de massa macroscópica.",
       "Está incorreta: O atrito não se anula; pelo contrário, a força de atrito geralmente aumenta com o peso do corpo sobre o plano."
     ],
-    "nursingApplication": "Prevenção de acidentes de trabalho e de lesões dorsolombar na equipa de enfermagem durante manobras no leito."
+    "nursingApplication": "Prevenção de acidentes de trabalho e de lesões dorsolombares na equipa de enfermagem durante manobras no leito."
   },
   {
     "id": 1041,
@@ -1209,10 +1209,10 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a descrição expressiva utilizada para caracterizar a Força Nuclear Forte?",
     "options": [
-      "Cola' que mantém os protões e os neutrões unidos no interior do núcleo atómico.",
-      "Força de atrito' que impede a rotação das órbitas eletrónicas.",
-      "Tensão muscular' exercida pelos ligamentos sobre as vértebras sagradas.",
-      "Pressão capilar' exercida pelo fluxo arterial na pele do sacro."
+      "“Cola” que mantém os protões e os neutrões unidos no interior do núcleo atómico.",
+      "“Força de atrito” que impede a rotação das órbitas eletrónicas.",
+      "“Tensão muscular” exercida pelos ligamentos sobre as vértebras sagradas.",
+      "“Pressão capilar” exercida pelo fluxo arterial na pele do sacro."
     ],
     "correctIndex": 0,
     "explanation": "Descreve-se textualmente a Força nuclear forte como: '“Cola” que mantém os protões e os neutrões unidos no interior do núcleo atómico'.",
@@ -1226,7 +1226,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1065,
     "topicId": 1,
-    "question": "Onde atua a Força Nuclear Fraca de acordo com a definição apresentada para ilustrar a Tração?",
+    "question": "Onde atua a Força Nuclear Fraca, de acordo com a definição apresentada?",
     "options": [
       "Exclusivamente no atrito estático entre calçado hospitalar e piso molhado.",
       "Está presente em alguns tipos de decaimento radioativo e na fusão nuclear.",
@@ -1293,7 +1293,7 @@ const TOPIC_1_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Todas as forças de contacto macroscópicas (atrito, força normal, tensão muscular, elasticidade) decorrem fundamentalmente de interações eletromagnéticas entre as nuvens eletrónicas dos átomos em contacto.",
     "distractorAnalysis": [
-      "Está incorreta: A atração gravítica atómica é infinitamente fraca para gerar atrito mecânico tangível.",
+      "Está incorreta: A atração gravítica atómica é extremamente fraca para gerar atrito mecânico tangível.",
       "Está incorreta: A força nuclear fraca não participa nas forças de atrito ou coesão estrutural macroscópica.",
       "Está incorreta: Não há fusão nuclear entre pele e tecidos biológicos nas interações do dia a dia."
     ],
@@ -1305,7 +1305,7 @@ const TOPIC_1_QUESTIONS = [
     "question": "Na expressão matemática da força da gravidade apresentada (P = m · g), o que representam as letras 'm' e 'g'?",
     "options": [
       "M = momento da força e g = grama de substância.",
-      "M = massa do corpo (em kg) e g = aceleração gravítica local (em m/s²).",
+      "m = massa do corpo (em kg) e g = aceleração gravítica local (em m/s²).",
       "M = metros percorridos e g = grau de inclinação da rampa.",
       "M = músculo tracionado e g = goniometria articular da articulação."
     ],
@@ -1411,7 +1411,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A compressão prolongada causa isquemia e necrose tecidual, não estimulando cicatrização.",
       "Está incorreta: Lesões de pressão são eventos isquémicos mecânicos, sem relação com desintegrações radioativas."
     ],
-    "nursingApplication": "Fundamentação biofísica primária para a mudança sistemática de decúbitos de duas em duas horas em doentes acamados."
+    "nursingApplication": "Fundamenta a mudança regular de decúbito em doentes acamados. A frequência é individualizada (tradicionalmente de 2 em 2 horas, ajustada ao risco de úlcera e ao tipo de superfície de apoio)."
   },
   {
     "id": 1075,
@@ -1568,15 +1568,15 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1083,
     "topicId": 1,
-    "question": "Qual é a relação fundamental entre atrito estático e cinético destacada com ponto de exclamação?",
+    "question": "Qual é a relação correta entre o atrito estático máximo e o atrito cinético?",
     "options": [
       "O atrito cinético é sempre dez vezes superior ao atrito estático.",
       "O atrito estático é rigorosamente igual a zero em qualquer material.",
       "O atrito estático e o cinético têm sempre a mesma intensidade em todos os corpos.",
-      "O atrito estático é sempre superior ao atrito cinético!"
+      "O atrito estático máximo é superior ao atrito cinético."
     ],
     "correctIndex": 3,
-    "explanation": "Enfatiza-se expressamente: 'O atrito estático é sempre superior ao atrito cinético!'.",
+    "explanation": "Enfatiza-se expressamente: 'O atrito estático máximo é superior ao atrito cinético.'.",
     "distractorAnalysis": [
       "Está incorreta: O atrito cinético é menor que o atrito estático máximo, nunca dez vezes superior.",
       "Está incorreta: O atrito estático é diferente de zero sempre que as superfícies em contacto apresentam rugosidade microscópica.",
@@ -1815,7 +1815,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1096,
     "topicId": 1,
-    "question": "De acordo com a tabela de valores de referência, qual é a equivalência dimensional direta de 1 Pascal (Pa) em unidades de base do SI?",
+    "question": "De acordo com a tabela de valores de referência, qual é a equivalência dimensional direta de 1 Pascal (Pa) em unidades do SI?",
     "options": [
       "1 Pa = 1 N/m² (um Newton por cada metro quadrado de área).",
       "1 Pa = 1 kg · m / s",
@@ -1910,7 +1910,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1101,
     "topicId": 1,
-    "question": "Durante a marcha de uma ambulância em socorro, por que razão um enfermeiro que viaja de pé é projetado para a frente quando a viatura trava bruscamente?",
+    "question": "Durante a marcha de uma ambulância em socorro a 80 km/h, por que razão um enfermeiro que viaja de pé é projetado para a frente quando a viatura trava bruscamente?",
     "options": [
       "Porque a força nuclear fraca atrai o corpo do enfermeiro para o tablier.",
       "Pela 1ª Lei de Newton (Lei da Inércia), o corpo do enfermeiro mantém a velocidade de 80 km/h até que uma força atue sobre ele.",
@@ -1960,7 +1960,7 @@ const TOPIC_1_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: As divisórias são construídas em estruturas sólidas rígidas e não em materiais plásticos moles.",
       "Está incorreta: A deformação resulta de esforço mecânico por impacto (força de colisão), não de eletricidade estática.",
-      "Está incorreta: O peso da ambulância apoia-se nas rodas e suspensão, não se transferindo para a divisória divisória."
+      "Está incorreta: O peso da ambulância apoia-se nas rodas e suspensão, não se transferindo para a divisória."
     ],
     "nursingApplication": "Demonstra que proteger o utente e a equipa com cintos evita danos materiais e lesões traumáticas graves."
   },
@@ -2293,12 +2293,12 @@ const TOPIC_1_QUESTIONS = [
     "question": "No esquema de um corpo em equilíbrio num plano inclinado, como são identificadas as grandezas P, P_n, P_t, N e F_a?",
     "options": [
       "P = Pressão; P_n = Neutrões; P_t = Temperatura; N = Newton; F_a = Força arterial.",
-      "P = Peso do corpo; P_n e P_t = Componentes vertical (perpendicular) e horizontal (paralela) do peso; N = Força normal; F_a = Força de atrito.",
+      "P = Peso do corpo; P_n e P_t = Componentes do peso perpendicular (P_n) e paralela (P_t) ao plano inclinado; N = Força normal; F_a = Força de atrito.",
       "P = Potência; P_n = Ponto neutro; P_t = Ponto de tração; N = Núcleo; F_a = Fulcro articular.",
       "P = Posição; P_n = Polo norte; P_t = Polo terra; N = Normalidade química; F_a = Força de ação."
     ],
     "correctIndex": 1,
-    "explanation": "A legenda define com rigor: 'P = Peso do corpo | P_n e P_t = Componentes vertical e horizontal do peso | N = Força normal | F_a = Força de atrito'.",
+    "explanation": "P_n e P_t são as componentes do peso perpendicular e paralela ao plano inclinado (não vertical e horizontal, que só coincidem com estas num plano horizontal). Legenda: P = peso do corpo | N = força normal | F_a = força de atrito.",
     "distractorAnalysis": [
       "Está incorreta: Pressão, neutrões e temperatura são conceitos de outros tópicos, não as forças do diagrama do plano inclinado.",
       "Está incorreta: Potência e fulcro articular não constam no diagrama de forças do bloco no plano inclinado.",
@@ -2472,7 +2472,7 @@ const TOPIC_1_QUESTIONS = [
     "explanation": "A elevação da cabeceira cria um plano inclinado onde a gravidade se projeta na componente P_t ao longo da cama. Se o atrito não for suficiente para equilibrar P_t, o corpo escorrega em direção aos pés da cama, gerando cisalhamento tecidual.",
     "distractorAnalysis": [
       "Está incorreta: Forças nucleares atuam dentro do núcleo atómico, não produzindo deslizamento corporal.",
-      "Está incorreta: O motor articulou o estrado mecanicamente, mas a força propulsora do deslizamento é a componente do peso gravítico.",
+      "Está incorreta: O motor articula mecanicamente o estrado, mas a força propulsora do deslizamento é a componente do peso gravítico.",
       "Está incorreta: A componente P_n pressiona o corpo contra o colchão; quem puxa para baixo ao longo da inclinação é P_t."
     ],
     "nursingApplication": "Identifica o mecanismo biofísico na génese de forças de cisalhamento e lesões sacrococcígeas em camas articuladas."
@@ -2917,7 +2917,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1154,
     "topicId": 1,
-    "question": "Qual é o exemplo clássico do corpo humano destacado no corpo humano para representar uma alavanca Interpotente?",
+    "question": "Qual é o exemplo clássico do corpo humano que representa uma alavanca interpotente?",
     "options": [
       "A articulação da cabeça com a primeira vértebra cervical (atlanto-occipital).",
       "O movimento dos ossos do ouvido médio (martelo e bigorna).",
@@ -3058,7 +3058,7 @@ const TOPIC_1_QUESTIONS = [
       "X = 0,6 m"
     ],
     "correctIndex": 1,
-    "explanation": "Demonstra-se a resolução passo a passo: '3x = 3.6 (=) x = 1.2 m'. O braço resistente b_R é 1,2 m e o potente b_P é 2,4 m.",
+    "explanation": "Demonstra-se a resolução passo a passo: '3x = 3,6 (=) x = 1,2 m'. O braço resistente b_R é 1,2 m e o potente b_P é 2,4 m.",
     "distractorAnalysis": [
       "Está incorreta: 3,6 m é o comprimento total da barra da alavanca, não o valor de x.",
       "Está incorreta: 2,4 m é o valor do braço potente (2x = 2 × 1,2), não de x.",
@@ -3077,7 +3077,7 @@ const TOPIC_1_QUESTIONS = [
       "M_R = 240 N·m"
     ],
     "correctIndex": 2,
-    "explanation": "O cálculo determina textualmente: 'Momento da força resistente: M_R = F_R · b_R (=) M_R = 20 × 1.2 (=) M_R = 24 N.m'.",
+    "explanation": "O cálculo determina textualmente: 'Momento da força resistente: M_R = F_R · b_R (=) M_R = 20 × 1,2 (=) M_R = 24 N.m'.",
     "distractorAnalysis": [
       "Está incorreta: 16,6 resultaria de dividir 20 por 1,2, o que é um erro de cálculo.",
       "Está incorreta: 21,2 resultaria de somar 20 com 1,2 em vez de multiplicar.",
@@ -3096,7 +3096,7 @@ const TOPIC_1_QUESTIONS = [
       "F_P = 10 N"
     ],
     "correctIndex": 3,
-    "explanation": "A resolução determina: 'Momento da força potente: M_P = F_P · b_P (=) 24 = F_P × 2.4 (=) F_P = 10 N'.",
+    "explanation": "A resolução determina: 'Momento da força potente: M_P = F_P · b_P (=) 24 = F_P × 2,4 (=) F_P = 10 N'.",
     "distractorAnalysis": [
       "Está incorreta: 24 N seria a força potente se o braço potente fosse de apenas 1 metro.",
       "Está incorreta: 57,6 N resultaria de multiplicar 24 por 2,4 em vez de dividir.",
@@ -3134,7 +3134,7 @@ const TOPIC_1_QUESTIONS = [
       "M_R = 16 333 N·m"
     ],
     "correctIndex": 1,
-    "explanation": "Apresenta-se formalmente: 'M_R = F_R · b_R (=) M_R = (500 × 9.8) × 0.3 (=) M_R = 1470 N.m'.",
+    "explanation": "Apresenta-se formalmente: 'M_R = F_R · b_R (=) M_R = (500 × 9,8) × 0,3 (=) M_R = 1470 N.m'.",
     "distractorAnalysis": [
       "Está incorreta: 147 N·m resultaria de usar braço de 0,03 m em vez de 0,3 m.",
       "Está incorreta: 4900 N·m seria o momento se o braço fosse de 1 metro.",
@@ -3147,13 +3147,13 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Para equilibrar um Momento Resistente M_R = 1470 N·m através de uma Força Potente de 294 N (esforço correspondente a 30 kg, com g = 9,8 m/s²), que comprimento deve ter o braço potente (b_P)?",
     "options": [
-      "B_P = 1,47 m",
-      "B_P = 30 m",
-      "B_P = 5 m",
-      "B_P = 0,2 m"
+      "b_P = 1,47 m",
+      "b_P = 30 m",
+      "b_P = 5 m",
+      "b_P = 0,2 m"
     ],
     "correctIndex": 2,
-    "explanation": "Conclui-se com rigor: 'M_P = F_P · b_P (=) 1470 = (30 × 9.8) × b_P (=) b_P = 5 m'.",
+    "explanation": "Conclui-se com rigor: 'M_P = F_P · b_P (=) 1470 = (30 × 9,8) × b_P (=) b_P = 5 m'.",
     "distractorAnalysis": [
       "Está incorreta: 1,47 m seria insuficiente: geraria apenas 294 × 1,47 = 432 N·m, e a alavanca não equilibraria.",
       "Está incorreta: 30 m é o valor da massa em quilogramas, não a distância em metros.",
@@ -3172,7 +3172,7 @@ const TOPIC_1_QUESTIONS = [
       "Que aumentando a distância do braço potente (b_P) é possível vencer resistências massivas aplicando forças humanas modestas."
     ],
     "correctIndex": 3,
-    "explanation": "A essência das máquinas simples de Arquimedes ('Dêem-me uma alavanca e um ponto de apoio e moverei o mundo'): aumentando o braço potente, multiplicamos o efeito de rotação e reduzimos a força necessária.",
+    "explanation": "A essência das máquinas simples de Arquimedes ('Deem-me uma alavanca e um ponto de apoio e moverei o mundo'): aumentando o braço potente, multiplicamos o efeito de rotação e reduzimos a força necessária.",
     "distractorAnalysis": [
       "Está incorreta: A gravidade mantém-se rigorosamente ativa ao longo de todo o sistema.",
       "Está incorreta: É perfeitamente possível e quotidiano mover grandes massas com auxílio mecânico de alavancas.",
@@ -3204,17 +3204,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Nas conversões entre massa e peso nos cálculos de biofísica, qual é o valor padrão adotado para a aceleração da gravidade à superfície terrestre?",
     "options": [
-      "G = 10 m/s²",
-      "G = 9.8 m/s²",
-      "G = 9.815 m/s²",
-      "G = 3.6 m/s²"
+      "g = 10 m/s²",
+      "g = 9,8 m/s²",
+      "g = 9,815 m/s²",
+      "g = 3,6 m/s²"
     ],
     "correctIndex": 1,
-    "explanation": "Apresenta-se no topo a premissa de cálculo: 'g = 9.8 m/s²'.",
+    "explanation": "Apresenta-se no topo a premissa de cálculo: 'g = 9,8 m/s²'.",
     "distractorAnalysis": [
       "Está incorreta: 10 m/s² é uma aproximação comum no ensino secundário, adotando-se o valor padrão de 9,8 m/s².",
-      "Está incorreta: 9.815 m/s² possui precisão excessiva não adotada no texto do professor.",
-      "Está incorreta: 3.6 é o fator de conversão de m/s para km/h, não o valor de g."
+      "Está incorreta: 9,815 m/s² possui precisão excessiva não adotada no texto do professor.",
+      "Está incorreta: 3,6 é o fator de conversão de m/s para km/h, não o valor de g."
     ],
     "nursingApplication": "Garante que os estudantes utilizem a constante de aceleração correta (9,8) nos exames teóricos."
   },
@@ -3224,7 +3224,7 @@ const TOPIC_1_QUESTIONS = [
     "question": "Em sistemas mecânicos de alavancas, qual é a condição matemática necessária para garantir o equilíbrio estático rotacional em torno do fulcro?",
     "options": [
       "F_P + F_R = 0",
-      "B_P / b_R = 9,8",
+      "b_P / b_R = 9,8",
       "M_P = M_R (ou F_P · b_P = F_R · b_R)",
       "F_P · b_R = F_R · b_P"
     ],
@@ -3245,10 +3245,10 @@ const TOPIC_1_QUESTIONS = [
       "Antebraço+mão = 10 kg; Objeto = 5 kg.",
       "Antebraço+mão = 1 kg; Objeto = 2,5 kg.",
       "Antebraço+mão = 500 kg; Objeto = 30 kg.",
-      "Massa antebraço+mão = 2.5 kg; Massa objeto = 1 kg."
+      "Massa antebraço+mão = 2,5 kg; Massa objeto = 1 kg."
     ],
     "correctIndex": 3,
-    "explanation": "Estabelece-se nos dados iniciais do problema: 'Massa antebraço+mão = 2.5 kg | Massa objeto = 1 kg'.",
+    "explanation": "Estabelece-se nos dados iniciais do problema: 'Massa antebraço+mão = 2,5 kg | Massa objeto = 1 kg'.",
     "distractorAnalysis": [
       "Está incorreta: Valores irrealistas que excedem largamente a massa anatómica de um membro superior.",
       "Está incorreta: As massas estão invertidas em relação ao enunciado original.",
@@ -3261,10 +3261,10 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "No modelo biomecânico do cotovelo a 90°, quais são as distâncias anatómicas de ação (e respetivas conversões para o SI em metros) do centro de massa do antebraço, da inserção do bíceps e do objeto na mão?",
     "options": [
-      "D_antebraço+mão = 15 cm (0,15 m); d_E = 8 cm (0,08 m); d_R = 30 cm (0,30 m).",
-      "D_antebraço+mão = 50 cm; d_E = 20 cm; d_R = 10 cm.",
-      "D_antebraço+mão = 1,2 m; d_E = 2,4 m; d_R = 3,6 m.",
-      "D_antebraço+mão = 8 cm; d_E = 30 cm; d_R = 15 cm."
+      "d_antebraço+mão = 15 cm (0,15 m); d_E = 8 cm (0,08 m); d_R = 30 cm (0,30 m).",
+      "d_antebraço+mão = 50 cm; d_E = 20 cm; d_R = 10 cm.",
+      "d_antebraço+mão = 1,2 m; d_E = 2,4 m; d_R = 3,6 m.",
+      "d_antebraço+mão = 8 cm; d_E = 30 cm; d_R = 15 cm."
     ],
     "correctIndex": 0,
     "explanation": "Lista-se explicitamente: 'd antebraço+mão = 15 cm | d E = 8 cm | d R = 30 cm'. Convertidos para metros no SI: 0,15 m, 0,08 m e 0,30 m.",
@@ -3273,7 +3273,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: 1,2 m, 2,4 m e 3,6 m são as medidas do baloiço do exercício anterior.",
       "Está incorreta: As distâncias foram trocadas entre as diferentes estruturas anatómicas."
     ],
-    "nursingApplication": "Fixa a conversão de unidades de centímetros para metros indispensável para o cálculo em Joules e N·m."
+    "nursingApplication": "Fixa a conversão de unidades de centímetros para metros indispensável para o cálculo de momentos em N·m."
   },
   {
     "id": 1173,
@@ -3281,12 +3281,12 @@ const TOPIC_1_QUESTIONS = [
     "question": "Para um objeto com massa de 1,0 kg segurado na mão a uma distância de 30 cm (0,3 m) do cotovelo, qual é o Momento Resistente (M_R) gerado (com g = 9,8 m/s²)?",
     "options": [
       "M_R = 30 N·m",
-      "M_R = 2.94 N·m",
+      "M_R = 2,94 N·m",
       "M_R = 0,3 N·m",
-      "M_R = 9.8 N·m"
+      "M_R = 9,8 N·m"
     ],
     "correctIndex": 1,
-    "explanation": "O cálculo determina textualmente: 'M_R = F_R · b_R (=) M_R = (1 × 9.8) × 0.3 (=) M_R = 2.94 N.m'.",
+    "explanation": "O cálculo determina textualmente: 'M_R = F_R · b_R (=) M_R = (1 × 9,8) × 0,3 (=) M_R = 2,94 N.m'.",
     "distractorAnalysis": [
       "Está incorreta: 30 N·m resultaria de multiplicar 1 por 30 ignorando a gravidade e os centímetros.",
       "Está incorreta: 0,3 N·m resultaria de multiplicar apenas a massa pelo braço sem aplicar g = 9,8.",
@@ -3301,11 +3301,11 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "M_antebraço = 2,5 N·m",
       "M_antebraço = 36,8 N·m",
-      "M_antebraço = 3.68 N·m (arredondado de 2,5 × 9,8 × 0,15 = 3,675 N·m)",
+      "M_antebraço = 3,68 N·m (arredondado de 2,5 × 9,8 × 0,15 = 3,675 N·m)",
       "M_antebraço = 0,375 N·m"
     ],
     "correctIndex": 2,
-    "explanation": "Apresenta-se: 'M antebraço+mão = F · b (=) M = (2.5 × 9.8) × 0.15 (=) M = 3.68 N.m'.",
+    "explanation": "Apresenta-se: 'M antebraço+mão = F · b (=) M = (2,5 × 9,8) × 0,15 (=) M = 3,68 N.m'.",
     "distractorAnalysis": [
       "Está incorreta: 2,5 é apenas o valor da massa em kg, sem multiplicar por g nem pelo braço.",
       "Está incorreta: 36,8 N·m resultaria de um erro de vírgula decimal na conversão de unidades.",
@@ -3321,10 +3321,10 @@ const TOPIC_1_QUESTIONS = [
       "M_total = 2,94 N·m",
       "M_total = 3,68 N·m",
       "M_total = 10,0 N·m",
-      "M_total = 6.62 N·m (2,94 + 3,68)"
+      "M_total = 6,62 N·m (2,94 + 3,68)"
     ],
     "correctIndex": 3,
-    "explanation": "Efetua-se a soma dos dois momentos de resistência no mesmo sentido horário: 'M antebraço+mão + M_R = 3.68 + 2.94 = 6.62 N.m'.",
+    "explanation": "Efetua-se a soma dos dois momentos de resistência no mesmo sentido horário: 'M antebraço+mão + M_R = 3,68 + 2,94 = 6,62 N.m'.",
     "distractorAnalysis": [
       "Está incorreta: 2,94 N·m considera apenas o objeto externo, esquecendo o peso do próprio membro.",
       "Está incorreta: 3,68 N·m considera apenas o antebraço, esquecendo o objeto transportado na mão.",
@@ -3337,13 +3337,13 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Com um Momento Resistente Total de 6,62 N·m e braço de inserção do bíceps de 8 cm (0,08 m), que Força Muscular (F_E) o bíceps exerce para manter o antebraço a 90°?",
     "options": [
-      "F_E = 82.75 N",
-      "F_E = 6.62 N",
-      "F_E = 0.53 N",
-      "F_E = 34.3 N"
+      "F_E = 82,75 N",
+      "F_E = 6,62 N",
+      "F_E = 0,53 N",
+      "F_E = 34,3 N"
     ],
     "correctIndex": 0,
-    "explanation": "Conclui-se o exercício resolvendo a equação de equilíbrio: 'M_E = F_E · b_E (=) 6.62 = F_E × 0.08 (=) F_E = 82.75 N'.",
+    "explanation": "Conclui-se o exercício resolvendo a equação de equilíbrio: 'M_E = F_E · b_E (=) 6,62 = F_E × 0,08 (=) F_E = 82,75 N'.",
     "distractorAnalysis": [
       "Está incorreta: 6,62 N seria a força se o braço do bíceps medisse 1 metro inteiro.",
       "Está incorreta: 0,53 N resultaria de multiplicar 6,62 por 0,08 em vez de dividir.",
@@ -3590,7 +3590,7 @@ const TOPIC_1_QUESTIONS = [
       "Passa a englobar a área total do quarto de internamento."
     ],
     "correctIndex": 1,
-    "explanation": "A base bipodal inclui os dois pés e todo o espaço entre eles. No apoio unipodal, a base reduz-se apenas à sola de um pé (: 'Condição de instabilidade: pés juntos ou num só pé'). Qualquer ligeira oscilação projeta a linha de gravidade para fora da base, causando queda.",
+    "explanation": "A base bipodal inclui os dois pés e todo o espaço entre eles. No apoio unipodal, a base reduz-se apenas à sola de um pé (ver a condição de instabilidade: «pés juntos ou num só pé»). Qualquer ligeira oscilação projeta a linha de gravidade para fora da base, causando queda.",
     "distractorAnalysis": [
       "Está incorreta: Apoiar em menos pontos reduz a área de sustentação, nunca a duplica.",
       "Está incorreta: A área entre os pés deixa de fazer parte da base de suporte quando um pé é levantado.",
@@ -3661,12 +3661,12 @@ const TOPIC_1_QUESTIONS = [
     "question": "No âmbito da estabilidade corporal e prevenção de quedas, que orientação de enfermagem deve ser dada ao doente durante uma transferência assistida?",
     "options": [
       "Mantenha os calcanhares juntos e as pontas dos pés encostadas.",
-      "Orientar o doente a afastar os pés ao transferir' (para garantir base de sustentação ampla).",
+      "Orientar o doente a afastar os pés ao transferir-se (para garantir base de sustentação ampla).",
       "Feche os olhos e salte para a cadeira de rodas com um impulso súbito.",
       "Eleve as mãos acima da cabeça e fique na ponta dos pés."
     ],
     "correctIndex": 1,
-    "explanation": "A intervenção de enfermagem recomendada expressamente é: 'Orientar o doente a afastar os pés ao transferir', ampliando a sua base e evitando o tombamento lateral.",
+    "explanation": "A intervenção de enfermagem recomendada expressamente é: 'Orientar o doente a afastar os pés ao transferir-se', ampliando a sua base e evitando o tombamento lateral.",
     "distractorAnalysis": [
       "Está incorreta: Pés juntos estreita a base e causa instabilidade imediata.",
       "Está incorreta: Saltar de olhos fechados gera forças inerciais violentas com risco crítico de queda.",
@@ -3729,7 +3729,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: Meias lisas em piso molhado eliminam a força de atrito e causam escorregamentos quase certos.",
       "Está incorreta: Lubrificar solas provocaria quedas imediatas da equipa profissional."
     ],
-    "nursingApplication": "Protocolo internacional de prevenção de quedas obrigatório em todos os hospitais e unidades de cuidados continuados."
+    "nursingApplication": "Medida frequentemente incluída nos programas de prevenção de quedas em meio hospitalar."
   },
   {
     "id": 1197,
