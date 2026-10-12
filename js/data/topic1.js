@@ -2884,13 +2884,13 @@ const TOPIC_1_QUESTIONS = [
       "A força resistente encontra-se entre o fulcro e a força potente.",
       "O fulcro encontra-se entre a força potente e a força resistente.",
       "A força potente encontra-se entre o fulcro e a força resistente.",
-      "A força potente e a resistente atuam exatamente no mesmo ponto com o mesmo sentido."
+      "A força potente e a resistente atuam no mesmo ponto e com o mesmo sentido."
     ],
     "correctIndex": 0,
     "explanation": "Define-se expressamente: 'Inter-resistente: A força resistente encontra-se entre o fulcro e a força potente' (Esquema: Fulcro — F_R — F_P).",
     "distractorAnalysis": [
-      "Está incorreta: O fulcro no meio caracteriza a alavanca Interfixa.",
-      "Está incorreta: A força potente no meio caracteriza a alavanca Interpotente.",
+      "Está incorreta: O fulcro no meio caracteriza a alavanca interfixa.",
+      "Está incorreta: A força potente no meio caracteriza a alavanca interpotente.",
       "Está incorreta: Forças no mesmo ponto não formam os braços distintos de uma alavanca mecânica."
     ],
     "nursingApplication": "Exemplos clínicos: o carrinho de mão, o quebra-nozes e a elevação na ponta dos pés, com o fulcro nas articulações dos dedos (metatarsofalângicas), a resistência no tornozelo (peso do corpo) e a força potente no tríceps sural (tendão de Aquiles)."
@@ -2902,14 +2902,14 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "A força resistente situa-se entre o fulcro e a força potente.",
       "A força potente encontra-se entre o fulcro e a força resistente.",
-      "O fulcro localiza-se na extremidade oposta à força potente com a resistente a meio.",
-      "A alavanca funciona sem qualquer gasto de força potente."
+      "O fulcro localiza-se na extremidade oposta à força potente, com a resistente a meio.",
+      "A alavanca funciona sem gasto de força potente."
     ],
     "correctIndex": 1,
     "explanation": "Define-se expressamente: 'Interpotente: A força potente encontra-se entre o fulcro e a força resistente' (Esquema: Fulcro — F_P — F_R).",
     "distractorAnalysis": [
-      "Está incorreta: Força resistente no meio define alavanca Inter-resistente.",
-      "Está incorreta: Fulcro numa ponta com resistente no meio é a alavanca inter-resistente.",
+      "Está incorreta: Força resistente no meio define a alavanca inter-resistente.",
+      "Está incorreta: Fulcro numa ponta, com a resistente no meio, é a alavanca inter-resistente.",
       "Está incorreta: Todas as alavancas reais necessitam de força potente para movimentar cargas contra a gravidade."
     ],
     "nursingApplication": "Exemplos clínicos: o músculo bíceps braquial no cotovelo e a utilização de uma pinça de penso cirúrgico."
@@ -2921,14 +2921,14 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "A articulação da cabeça com a primeira vértebra cervical (atlanto-occipital).",
       "O movimento dos ossos do ouvido médio (martelo e bigorna).",
-      "A flexão do cotovelo, onde a força potente do bíceps atua entre o fulcro articular e a resistência na mão.",
-      "O apoio do calcâneo na marcha ao apoiar as pontas dos pés no solo."
+      "A flexão do cotovelo, em que o bíceps atua entre o fulcro e a resistência na mão.",
+      "O apoio do calcâneo na marcha, ao apoiar as pontas dos pés no solo."
     ],
     "correctIndex": 2,
     "explanation": "Ilustra-se detalhadamente a alavanca interpotente através do membro superior (flexão do cotovelo pelo bíceps), rotulando as estruturas ósseas envolvidas.",
     "distractorAnalysis": [
-      "Está incorreta: A articulação da cabeça atlanto-occipital é o exemplo clássico de alavanca interfixa.",
-      "Está incorreta: Os ossículos do ouvido formam alavancas interfixas microscópicas de amplificação acústica.",
+      "Está incorreta: A articulação atlanto-occipital é o exemplo clássico de alavanca interfixa.",
+      "Está incorreta: Os ossículos do ouvido formam alavancas microscópicas de amplificação acústica.",
       "Está incorreta: A elevação na ponta dos pés pelo tendão de Aquiles é uma alavanca inter-resistente."
     ],
     "nursingApplication": "Permite aos alunos reconhecer o tipo de alavanca mais abundante e comum no esqueleto apendicular humano."
@@ -2957,17 +2957,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Numa alavanca Inter-resistente (ex.: carrinho de mão ou pontas dos pés), qual é a relação geométrica entre os braços de momento?",
     "options": [
-      "O braço potente é sempre maior que o braço resistente (b_P > b_R), garantindo vantagem mecânica de força (F_P < F_R).",
-      "O braço resistente é sempre o dobro do braço potente.",
-      "Ambos os braços têm obrigatoriamente de medir 1 metro.",
-      "O braço potente é sempre nulo porque a carga está no meio."
+      "O braço potente é maior que o braço resistente (b_P > b_R), dando vantagem de força.",
+      "O braço resistente é o dobro do braço potente.",
+      "Ambos os braços medem 1 metro, independentemente do tipo de alavanca.",
+      "O braço potente é nulo, porque a carga fica entre o fulcro e a força."
     ],
     "correctIndex": 0,
     "explanation": "Como a resistência está entre o fulcro e a força potente (Fulcro — F_R — F_P), a distância do fulcro à força potente (b_P) é necessariamente superior à distância à carga (b_R). Assim, F_P < F_R: há multiplicação de força.",
     "distractorAnalysis": [
-      "Está incorreta: b_R é menor que b_P na alavanca inter-resistente, nunca o dobro.",
-      "Está incorreta: Os comprimentos variam com as dimensões de cada corpo e ferramenta mecânica.",
-      "Está incorreta: O braço potente é o maior dos dois braços e estende-se do fulcro até ao ponto de aplicação da força potente."
+      "Está incorreta: b_R é menor que b_P na alavanca inter-resistente, e não o dobro.",
+      "Está incorreta: Os comprimentos dos braços variam com as dimensões de cada corpo e ferramenta.",
+      "Está incorreta: O braço potente é o maior dos dois braços e vai do fulcro até ao ponto de aplicação da força potente."
     ],
     "nursingApplication": "Explica a vantagem mecânica de dispositivos como o carrinho de mão: com a carga entre o eixo e as mãos (b_P > b_R), transporta-se uma carga pesada com uma força inferior ao seu peso."
   },
@@ -2977,16 +2977,16 @@ const TOPIC_1_QUESTIONS = [
     "question": "Numa alavanca Interpotente (ex.: bíceps braquial no cotovelo), qual é a consequência biomecânica de a força potente estar situada entre o fulcro e a carga?",
     "options": [
       "A força muscular necessária é muito menor do que o peso da carga que se segura.",
-      "O braço potente é menor que o braço resistente (b_P < b_R), exigindo força muscular superior à carga (desvantagem de força).",
-      "A alavanca não consegue produzir qualquer movimento nem rotação da mão.",
-      "O peso do objeto segurado na mão transforma-se em calor sem gerar momento."
+      "O braço potente é menor que o resistente (b_P < b_R), exigindo mais força que a carga.",
+      "A alavanca não consegue produzir movimento nem rotação da mão.",
+      "O peso do objeto segurado na mão transforma-se em calor, sem gerar momento."
     ],
     "correctIndex": 1,
     "explanation": "Sendo a alavanca interpotente (Fulcro — F_P — F_R), b_P é mais curto que b_R. Pela Lei das Alavancas, para equilibrar o sistema o músculo tem de exercer uma força potente F_P muito superior à força resistente F_R.",
     "distractorAnalysis": [
-      "Está incorreta: A força muscular é muito maior, nunca menor (há desvantagem mecânica de força).",
-      "Está incorreta: A alavanca interpotente produz movimentos articulares rápidos e de grande amplitude.",
-      "Está incorreta: O peso do objeto gera momento resistente efetivo M_R = F_R · b_R que tem de ser equilibrado."
+      "Está incorreta: Com b_P < b_R, a força muscular é maior do que a carga, e não menor.",
+      "Está incorreta: A alavanca produz movimento de rotação; é o que permite segurar a carga.",
+      "Está incorreta: O peso não se transforma em calor; gera momento em torno do cotovelo."
     ],
     "nursingApplication": "Alerta para o facto de que os músculos do corpo suportam tensões internas muitas vezes superiores aos pesos que carregamos."
   },
@@ -2995,36 +2995,36 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Uma tesoura cirúrgica e um baloiço infantil de recreio são exemplos clássicos de que tipo de alavanca?",
     "options": [
-      "Alavanca inter-resistente.",
-      "Alavanca interpotente.",
-      "Alavanca interfixa (o fulcro central situa-se entre as forças potentes e resistentes).",
-      "Alavanca de deformação plastoviscoelástica."
+      "Alavanca inter-resistente, com a carga entre o fulcro e a força potente.",
+      "Alavanca interpotente, com a força potente no meio do sistema.",
+      "Alavanca interfixa, com o fulcro entre as forças potente e resistente.",
+      "Alavanca de deformação plastoviscoelástica, sem braços de momento."
     ],
     "correctIndex": 2,
     "explanation": "Na tesoura e no baloiço, o parafuso/eixo central (fulcro) situa-se a meio, entre a zona onde as mãos aplicam a força potente e as lâminas/assentos onde atua a resistência: Alavanca Interfixa.",
     "distractorAnalysis": [
-      "Está incorreta: Na alavanca inter-resistente a carga resistente está no meio (ex.: quebra-nozes).",
-      "Está incorreta: Na alavanca interpotente a força potente está no meio (ex.: pinça).",
-      "Está incorreta: Termos reológicos não definem a classificação mecânica geométrica de alavancas de Arquimedes."
+      "Está incorreta: Na tesoura e no baloiço, a carga não está entre o fulcro e a força potente.",
+      "Está incorreta: Na tesoura e no baloiço, o fulcro não está numa extremidade.",
+      "Está incorreta: Termos reológicos não definem a classificação mecânica geométrica de alavancas."
     ],
     "nursingApplication": "Compreensão do funcionamento de instrumentos cirúrgicos articulados comuns na prática diária de enfermagem."
   },
   {
     "id": 1159,
     "topicId": 1,
-    "question": "Por que razão a esmagadora maioria das articulações motoras do corpo humano opera através de alavancas de 3.ª classe (interpotentes), apesar de apresentarem desvantagem mecânica de força (VM < 1)?",
+    "question": "Por que razão a maioria das articulações motoras do corpo humano opera através de alavancas de 3.ª classe (interpotentes), apesar de apresentarem desvantagem mecânica de força (VM < 1)?",
     "options": [
-      "Permitem anular a necessidade de aporte sanguíneo aos músculos.",
-      "Eliminam completamente o atrito no interior da cápsula articular.",
-      "Fazem com que o corpo humano levite sem tocar no solo.",
-      "Proporcionam um ganho extraordinário em amplitude de movimento e velocidade na extremidade livre distal (mão ou pé)."
+      "Permitem reduzir a necessidade de aporte sanguíneo aos músculos em repouso.",
+      "Reduzem o atrito no interior da cápsula articular, evitando o desgaste.",
+      "Fazem com que o peso do corpo diminua durante o movimento articular.",
+      "Proporcionam ganho de amplitude e de velocidade na extremidade distal (mão ou pé)."
     ],
     "correctIndex": 3,
     "explanation": "Nas alavancas interpotentes (3.ª classe), a força muscular potente atua entre o fulcro e a carga. Como o braço potente é menor que o braço resistente (VM < 1), o músculo tem de produzir maior tensão; em contrapartida, um pequeno encurtamento muscular de milímetros junto ao fulcro traduz-se num movimento angular amplo e muito rápido da extremidade livre distal. A biomecânica humana priorizou a agilidade e a amplitude de movimento sobre a vantagem de força bruta.",
     "distractorAnalysis": [
-      "Está incorreta: Forças musculares elevadas exigem, pelo contrário, elevado aporte de oxigénio e glicose pelo sangue.",
-      "Está incorreta: A lubrificação sinovial reduz o atrito, mas a classe da alavanca não elimina o atrito biológico.",
-      "Está incorreta: Nenhuma alavanca biológica revoga as leis da gravitação de Newton."
+      "Está incorreta: O aporte sanguíneo aos músculos não depende da classe da alavanca.",
+      "Está incorreta: O atrito articular não é o motivo da classe da alavanca; é reduzido por líquido sinovial.",
+      "Está incorreta: O peso do corpo não diminui com o movimento articular."
     ],
     "nursingApplication": "Explica a elegância evolutiva da biomecânica humana: movimentos manuais ágeis e versáteis."
   },
@@ -3033,17 +3033,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "A articulação da cabeça com a coluna cervical (onde os músculos posteriores da nuca equilibram o peso da face em torno do côndilo occipital) funciona como:",
     "options": [
-      "Uma alavanca interfixa (o fulcro articular situa-se entre a força potente muscular posterior e a força resistente do peso da face).",
-      "Uma alavanca interpotente pura sem qualquer ponto de apoio.",
-      "Um corpo puramente viscoso sem restituição elástica.",
-      "Uma alavanca inter-resistente com a carga nas vértebras lombares."
+      "Uma alavanca interfixa, com o fulcro entre a força potente muscular e o peso da face.",
+      "Uma alavanca interpotente, sem ponto de apoio definido.",
+      "Um corpo viscoso, sem restituição elástica.",
+      "Uma alavanca inter-resistente, com a carga nas vértebras lombares."
     ],
     "correctIndex": 0,
     "explanation": "O côndilo occipital (fulcro) situa-se entre a musculatura extensora da nuca (força potente, atrás) e o centro de gravidade da cabeça/face (força resistente, à frente): Alavanca Interfixa.",
     "distractorAnalysis": [
       "Está incorreta: A articulação atlanto-occipital é um fulcro ósseo de rotação bem definido.",
-      "Está incorreta: A cabeça e coluna comportam-se como alavancas rígidas de suporte, não como fluidos viscosos de escoamento.",
-      "Está incorreta: A carga craniana atua diretamente sobre o pescoço e coluna cervical, não nas vértebras lombares neste subsistema."
+      "Está incorreta: A cabeça e a coluna cervical comportam-se como alavancas, com fulcro definido no côndilo.",
+      "Está incorreta: A carga craniana atua sobre o pescoço e a coluna cervical, não sobre as vértebras lombares."
     ],
     "nursingApplication": "Explica por que adormecer sentado faz a cabeça tombar para a frente: ao relaxar os músculos posteriores, o peso da face faz a alavanca girar."
   },
@@ -3168,15 +3168,15 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Que a gravidade terrestre deixa de atuar quando as barras têm mais de 3 metros.",
       "Que é impossível erguer cargas superiores à massa corporal de um indivíduo.",
-      "Que os dinamómetros só conseguem medir forças até 30 Newtons.",
-      "Que aumentando a distância do braço potente (b_P) é possível vencer resistências massivas aplicando forças humanas modestas."
+      "Que os dinamómetros medem forças até cerca de 30 newtons.",
+      "Que, aumentando o braço potente, se vencem resistências massivas com forças modestas."
     ],
     "correctIndex": 3,
     "explanation": "A essência das máquinas simples de Arquimedes ('Deem-me uma alavanca e um ponto de apoio e moverei o mundo'): aumentando o braço potente, multiplicamos o efeito de rotação e reduzimos a força necessária.",
     "distractorAnalysis": [
-      "Está incorreta: A gravidade mantém-se rigorosamente ativa ao longo de todo o sistema.",
-      "Está incorreta: É perfeitamente possível e quotidiano mover grandes massas com auxílio mecânico de alavancas.",
-      "Está incorreta: Existem dinamómetros industriais calibrados para dezenas de milhares de Newtons."
+      "Está incorreta: A gravidade mantém-se ativa ao longo de todo o sistema.",
+      "Está incorreta: É possível mover grandes massas com auxílio mecânico de alavancas.",
+      "Está incorreta: Existem dinamómetros calibrados para forças muito superiores a 30 newtons."
     ],
     "nursingApplication": "Fundamento para o uso de gruas e elevadores mecânicos de transferência de doentes nos hospitais."
   },
@@ -3185,17 +3185,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Num baloiço (alavanca interfixa) equilibrado com M_R = 24 N·m, se uma pessoa aplicar uma força potente de 15 N com um braço b_P = 2,4 m, o que acontecerá ao sistema?",
     "options": [
-      "O momento potente seria M_P = 15 × 2,4 = 36 N·m, superando M_R (24 N·m) e fazendo a alavanca girar no sentido potente.",
-      "A alavanca permaneceria perfeitamente estática em repouso sem qualquer movimento.",
-      "O momento potente anular-se-ia espontaneamente sem intervenção de forças externas.",
+      "O momento potente seria 36 N·m, superando M_R (24 N·m) e fazendo a alavanca girar.",
+      "A alavanca permaneceria em repouso, sem movimento, como se as forças se anulassem.",
+      "O momento potente anular-se-ia por si, sem intervenção de forças externas.",
       "A força resistente aumentaria instantaneamente para 36 N para impedir a rotação."
     ],
     "correctIndex": 0,
     "explanation": "Com F_P = 15 N, M_P = 36 N·m. Como 36 N·m > 24 N·m, o momento resultante não é nulo (Mr = 12 N·m a favor da potência) e a alavanca roda acelerando no sentido potente.",
     "distractorAnalysis": [
-      "Está incorreta: A alavanca só ficaria em repouso se os momentos fossem exatamente iguais (F_P = 10 N).",
-      "Está incorreta: As leis da física são ativas e não anulam momentos dinâmicos reais.",
-      "Está incorreta: A carga resistente tem massa fixa e braço fixo, pelo que o seu momento permanece em 24 N·m."
+      "Está incorreta: A alavanca só ficaria em repouso se os momentos fossem iguais (F_P = 10 N).",
+      "Está incorreta: As leis da física não anulam momentos dinâmicos reais sem forças externas.",
+      "Está incorreta: A carga resistente tem massa e braço fixos, e o seu momento permanece em 24 N·m."
     ],
     "nursingApplication": "Explica como se inicia o movimento articular ativo quando o músculo supera a resistência da carga."
   },
