@@ -2893,7 +2893,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A força potente no meio caracteriza a alavanca Interpotente.",
       "Está incorreta: Forças no mesmo ponto não formam os braços distintos de uma alavanca mecânica."
     ],
-    "nursingApplication": "Exemplos clínicos: o carrinho de mão, o quebra-nozes e o apoio na ponta dos pés pelo tríceps sural (tornozelo)."
+    "nursingApplication": "Exemplos clínicos: o carrinho de mão, o quebra-nozes e a elevação na ponta dos pés, com o fulcro nas articulações dos dedos (metatarsofalângicas), a resistência no tornozelo (peso do corpo) e a força potente no tríceps sural (tendão de Aquiles)."
   },
   {
     "id": 1153,
