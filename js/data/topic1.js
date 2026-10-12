@@ -2406,9 +2406,9 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Num plano perfeitamente horizontal (inclinação de zero graus), qual é a relação entre o peso P e as componentes P_n e P_t?",
     "options": [
-      "P_t é igual a P e P_n é nula.",
-      "P_n e P_t têm o mesmo valor, igual a metade do peso.",
-      "Tanto P_n como P_t anulam-se, ficando o peso nulo.",
+      "P_t é igual a P e P_n é nula, pois não há inclinação a considerar.",
+      "P_n e P_t têm o mesmo valor, igual a metade do peso, por simetria do plano.",
+      "Tanto P_n como P_t anulam-se, ficando o peso nulo, sem força que o equilibre.",
       "P_n é igual ao peso P (P_n = P = N), e a componente tangencial P_t é nula."
     ],
     "correctIndex": 3,
@@ -2446,8 +2446,8 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "A componente normal do peso P_n, que é paralela à normal N.",
       "A força de atrito F_a (e a componente P_t), paralela à superfície.",
-      "O peso total P, que mantém a mesma direção em qualquer inclinação.",
-      "Nenhuma força, pois todas as forças são paralelas entre si."
+      "O peso total P, que mantém a mesma direção em todas as inclinações.",
+      "Nenhuma força é perpendicular, pois as forças são paralelas entre si."
     ],
     "correctIndex": 1,
     "explanation": "A Força Normal N é perpendicular à superfície de apoio; a força de atrito F_a e a componente P_t atuam paralelamente à superfície de apoio. Logo, a direção de N e a de F_a formam um ângulo de 90 graus (são perpendiculares).",
@@ -2637,7 +2637,7 @@ const TOPIC_1_QUESTIONS = [
       "Porque a massa do objeto aumenta quando é afastada do peito.",
       "Porque o atrito do pavimento desaparece, desestabilizando o esqueleto.",
       "Porque a gravidade diminui quando a carga é afastada do tronco.",
-      "Porque o braço da força resistente aumenta, gerando um momento flexor elevado (M = F · b)."
+      "Porque o braço da força resistente aumenta, gerando um momento flexor elevado."
     ],
     "correctIndex": 3,
     "explanation": "A força resistente (peso da carga) é constante. Contudo, ao afastar a carga do tronco, a distância horizontal b até ao fulcro lombar aumenta grandemente, multiplicando o momento resistente M = F · b e exigindo forças extremas dos músculos da coluna para equilibrar.",
@@ -2789,7 +2789,7 @@ const TOPIC_1_QUESTIONS = [
       "Que a velocidade angular da alavanca está a acelerar a 9,8 rad/s².",
       "Que a massa do fulcro é igual à soma das massas potentes e resistentes.",
       "Que a alavanca deixa de sofrer a força da gravidade durante o equilíbrio.",
-      "Que o momento da força potente iguala o momento da força resistente (M_P = M_R) em torno do fulcro."
+      "Que o momento potente iguala o momento resistente (M_P = M_R) em torno do fulcro."
     ],
     "correctIndex": 3,
     "explanation": "Como M = F · b, a Lei das Alavancas afirma simplesmente que o momento de rotação no sentido potente anula o momento de rotação no sentido resistente: M_P = M_R, resultando em equilíbrio estático rotacional.",
@@ -2843,7 +2843,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a origem da Força Potente (F_P) no sistema musculoesquelético humano durante o levantamento de uma carga?",
     "options": [
-      "A atração gravitacional do planeta Terra sobre a articulação.",
+      "A atração gravitacional do planeta Terra sobre a articulação do utente.",
       "A força de atrito estático das meias sobre o chão encerado.",
       "A contração ativa das fibras musculares, transmitida pelo tendão ao osso.",
       "A pressão capilar exercida sobre o sacro em decúbito dorsal."
