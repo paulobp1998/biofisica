@@ -318,7 +318,7 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Porque a força muscular muda de unidade de medida de segundo a segundo.",
       "Porque o seu efeito no osso depende da direção, do sentido e do ponto de aplicação.",
-      "Porque as grandezas escalares só existem na física nuclear e na química celular.",
+      "Porque as grandezas escalares são típicas da física nuclear e da química celular.",
       "Porque os músculos produzem grandezas imaginárias, sem efeito real no corpo."
     ],
     "correctIndex": 1,
@@ -563,7 +563,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Para que um objeto em movimento altere a sua trajetória retilínea e faça uma curva, o que estabelece a 1ª Lei de Newton?",
     "options": [
-      "Não é preciso força, pois o corpo curva-se por si só no vácuo.",
+      "Não é preciso força, pois o corpo curva-se por si mesmo no vácuo.",
       "Que a massa diminua para metade durante a trajetória.",
       "É preciso uma força externa que mude a direção da velocidade.",
       "Basta que o corpo mantenha uma aceleração nula durante toda a curva."
@@ -887,9 +887,9 @@ const TOPIC_1_QUESTIONS = [
     "question": "Relativamente ao instante em que ocorrem as forças de ação e de reação da 3ª Lei de Newton, qual das afirmações é verdadeira?",
     "options": [
       "A força de ação surge primeiro, e a reação aparece depois, com algum atraso.",
-      "A reação só ocorre se o corpo atingido sofrer uma deformação plástica visível.",
+      "A reação ocorre se o corpo atingido sofrer uma deformação plástica visível.",
       "As forças de ação e de reação ocorrem em simultâneo, no mesmo instante.",
-      "A ação só existe se houver movimento acelerado contínuo entre os dois corpos."
+      "A ação existe quando há movimento acelerado contínuo entre os dois corpos."
     ],
     "correctIndex": 2,
     "explanation": "As forças de interação entre dois corpos são perfeitamente simultâneas: nenhuma antecede a outra, existindo apenas enquanto durar o contacto ou interação mútua.",
@@ -1761,12 +1761,12 @@ const TOPIC_1_QUESTIONS = [
     "question": "Na tabela de resumo dos conceitos lecionados, como está caracterizada a grandeza 'Peso (P)'?",
     "options": [
       "Tipo: Escalar; Unidade SI: Quilograma (kg); Definição: Quantidade de água corporal; Exemplo: Hidratação.",
-      "Tipo: Vetorial; Unidade SI: Newton (N); Definição: Força de atração gravítica; Exemplo: Peso do doente (força exercida pela Terra).",
+      "Tipo: Vetorial; Unidade SI: Newton (N); Definição: Força de atração gravítica; Exemplo: Peso do doente.",
       "Tipo: Vetorial; Unidade SI: Pascal (Pa); Definição: Tensão nos tendões; Exemplo: Marcha.",
       "Tipo: Escalar; Unidade SI: Newton (N); Definição: Aceleração da maca; Exemplo: Ambulância."
     ],
     "correctIndex": 1,
-    "explanation": "Especifica-se: Grandeza: Peso (P) | Tipo: Vetorial | Unidade SI: Newton (N) | Definição: Força de atração gravítica | Exemplo: Peso do doente (força exercida pela Terra).",
+    "explanation": "Especifica-se: Grandeza: Peso (P) | Tipo: Vetorial | Unidade SI: Newton (N) | Definição: Força de atração gravítica | Exemplo: Peso do doente.",
     "distractorAnalysis": [
       "Está incorreta: O peso é uma força vetorial medida em Newtons, não uma grandeza escalar em kg.",
       "Está incorreta: Pascal é unidade de pressão (N/m²), enquanto o peso é uma força expressa em Newtons.",
@@ -1781,11 +1781,11 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Tipo: Vetorial; Unidade SI: Newton (N); Definição: Interação entre corpos; Exemplo: Tendão do bíceps.",
       "Tipo: Escalar; Unidade SI: Quilograma (kg); Definição: Medida de inércia; Exemplo: Doente bariátrico.",
-      "Tipo: Escalar; Unidade SI: Pascal (N/m²); Definição: Força distribuída por unidade de área; Exemplo: Pressão de interface sobre o sacro.",
+      "Tipo: Escalar; Unidade SI: Pascal (N/m²); Definição: Força por unidade de área; Exemplo: Pressão sobre o sacro.",
       "Tipo: Vetorial; Unidade SI: Joule (J); Definição: Trabalho muscular; Exemplo: Elevação de carga."
     ],
     "correctIndex": 2,
-    "explanation": "Especifica-se: Grandeza: Pressão (p) | Tipo: Escalar | Unidade SI: Pascal (N/m²) | Definição: Força distribuída por unidade de área | Exemplo: Pressão de interface entre a pele e o colchão sobre o sacro.",
+    "explanation": "Especifica-se: Grandeza: Pressão (p) | Tipo: Escalar | Unidade SI: Pascal (N/m²) | Definição: Força por unidade de área | Exemplo: Pressão sobre o sacro.",
     "distractorAnalysis": [
       "Está incorreta: A pressão é escalar e não se mede em newtons; o tendão do bíceps não a define.",
       "Está incorreta: A medida de inércia é a massa, e não a pressão.",
@@ -2292,10 +2292,10 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "No esquema de um corpo em equilíbrio num plano inclinado, como são identificadas as grandezas P, P_n, P_t, N e F_a?",
     "options": [
-      "P = Pressão; P_n = Neutrões; P_t = Temperatura; N = Newton; F_a = Força arterial.",
-      "P = Peso do corpo; P_n e P_t = Componentes do peso perpendicular (P_n) e paralela (P_t) ao plano inclinado; N = Força normal; F_a = Força de atrito.",
-      "P = Potência; P_n = Ponto neutro; P_t = Ponto de tração; N = Núcleo; F_a = Fulcro articular.",
-      "P = Posição; P_n = Polo norte; P_t = Polo terra; N = Normalidade química; F_a = Força de ação."
+      "P = Pressão do sangue; P_n = Neutrões do núcleo; P_t = Temperatura corporal; N = Newton; F_a = Força arterial.",
+      "P = Peso; P_n e P_t = componentes do peso perpendicular e paralela ao plano; N = Força normal; F_a = Força de atrito.",
+      "P = Potência mecânica; P_n = Ponto neutro da articulação; P_t = Ponto de tração; N = Núcleo; F_a = Fulcro articular.",
+      "P = Posição do corpo; P_n = Polo norte magnético; P_t = Polo terra; N = Normalidade química; F_a = Força de ação."
     ],
     "correctIndex": 1,
     "explanation": "P_n e P_t são as componentes do peso perpendicular e paralela ao plano inclinado (não vertical e horizontal, que só coincidem com estas num plano horizontal). Legenda: P = peso do corpo | N = força normal | F_a = força de atrito.",
@@ -2710,7 +2710,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Como se define a 'Força Potente' (F_P) no funcionamento mecânico de uma alavanca?",
     "options": [
-      "Força exercida exclusivamente pela atração da gravidade sobre a barra.",
+      "Força exercida pela atração da gravidade sobre a barra.",
       "Força contrária que dificulta o movimento da carga.",
       "Ponto fixo em torno do qual a alavanca gira livremente.",
       "Força aplicada para mover a carga."
@@ -3301,7 +3301,7 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "M_antebraço = 2,5 N·m",
       "M_antebraço = 36,8 N·m",
-      "M_antebraço = 3,68 N·m (arredondado de 2,5 × 9,8 × 0,15 = 3,675 N·m)",
+      "M_antebraço = 3,68 N·m.",
       "M_antebraço = 0,375 N·m"
     ],
     "correctIndex": 2,
@@ -3356,10 +3356,10 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Por que razão a força exercida pelo bíceps (82,75 N) é mais do que o dobro do peso total suportado (~34,3 N das massas somadas de 3,5 kg)?",
     "options": [
-      "Porque o músculo bíceps tem uma constante de Hooke deficiente.",
-      "Porque o bíceps tem um braço de alavanca muito curto (8 cm), enquanto as forças resistentes atuam a 15 cm e 30 cm do cotovelo.",
-      "Porque a massa do antebraço aumenta com o esforço de flexão do cotovelo.",
-      "Porque o antebraço fica mais pesado quando o cotovelo está fletido a 90 graus."
+      "Porque o músculo bíceps tem uma constante de Hooke deficiente, sobretudo em repouso.",
+      "Porque o bíceps tem um braço muito curto (8 cm), e as forças resistentes atuam a 15 e 30 cm.",
+      "Porque a massa do antebraço aumenta com o esforço de flexão do cotovelo, em cada instante.",
+      "Porque o antebraço fica mais pesado quando o cotovelo está fletido a 90 graus, ao longo do tempo."
     ],
     "correctIndex": 1,
     "explanation": "Como a inserção tendinosa do bíceps se localiza muito perto da articulação (8 cm), o seu braço é muito mais curto que os braços das resistências (15 cm e 30 cm). Para gerar o mesmo momento de rotação, é forçado a produzir uma força substancialmente maior.",
@@ -3375,10 +3375,10 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a equação geral de equilíbrio de momentos aplicada ao sistema de flexão do antebraço em torno do cotovelo?",
     "options": [
-      "F_objeto + F_antebraço = F_E",
-      "F_E · d_R = F_objeto · d_E",
+      "F_objeto + F_antebraço = F_E, ou seja, a soma das forças iguala a força muscular.",
+      "F_E · d_R = F_objeto · d_E, em que o braço do objeto é o do bíceps.",
       "Em equilíbrio: (F_objeto · d_R) + (F_antebraço+mão · d_antebraço) = F_E · d_E",
-      "F_E = m · g · a"
+      "F_E = m · g · a, em que a força muscular depende da aceleração do antebraço."
     ],
     "correctIndex": 2,
     "explanation": "Esquematiza-se: 'Em equilíbrio: F_P · b_P = F_r · b_r; Nesta situação: (F objeto · d_R) + (F antebraço+mão · d_antebraço) = F_E · d_E'.",
@@ -3471,7 +3471,7 @@ const TOPIC_1_QUESTIONS = [
     "question": "O que acontece à localização do Centro de Gravidade durante as movimentações e mudanças posturais do corpo humano?",
     "options": [
       "Permanece imóvel e fixo à 2.ª vértebra sagrada, mesmo que a pessoa salte ou corra.",
-      "Desaparece durante a marcha.",
+      "Desaparece durante a marcha, como se o corpo deixasse de ter massa.",
       "Passa a situar-se fora do corpo, na superfície do chão.",
       "Desloca-se com o movimento (por exemplo, sobe ao elevar os braços e avança ao inclinar o tronco)."
     ],
@@ -3489,9 +3489,9 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a definição exata de 'Base de sustentação' na estabilidade postural humana?",
     "options": [
-      "Área geométrica delimitada por todos os pontos de contacto de um corpo com a superfície que o suporta.",
+      "Área delimitada pelos pontos de contacto do corpo com a superfície de apoio.",
       "A altura em metros medida desde o chão até à 2ª vértebra sagrada.",
-      "A velocidade terminal de queda de um corpo no vácuo.",
+      "A velocidade terminal de queda de um corpo no vácuo, medida em metros por segundo.",
       "O momento de força exercido pelo bíceps sobre a tuberosidade do rádio."
     ],
     "correctIndex": 0,
@@ -3509,8 +3509,8 @@ const TOPIC_1_QUESTIONS = [
     "question": "Como difere a localização do Centro de Gravidade de uma criança pequena comparativamente à de um adulto?",
     "options": [
       "Na criança pequena situa-se nos calcanhares e no adulto no pescoço.",
-      "Na criança pequena situa-se mais alto, no interior do abdómen e no tórax, enquanto no adulto se situa em S2.",
-      "É idêntico em todas as idades, sem variação anatómica.",
+      "Na criança pequena situa-se mais alto (abdómen e tórax); no adulto situa-se em S2.",
+      "É idêntico em todas as idades, pois a proporção corporal não muda com o crescimento.",
       "A criança pequena não possui centro de gravidade até aos 18 anos de idade."
     ],
     "correctIndex": 1,
@@ -3528,8 +3528,8 @@ const TOPIC_1_QUESTIONS = [
     "question": "Por que razão o Centro de Gravidade nas crianças pequenas e bebés se situa mais acima (no abdómen/tórax)?",
     "options": [
       "Porque a densidade óssea dos membros inferiores das crianças é cinco vezes maior que a dos adultos.",
-      "Porque as crianças usam calçado de borracha com coeficiente de atrito reduzido.",
-      "Porque a cabeça e a metade superior do tronco representam uma proporção muito maior da massa corporal total na criança do que no adulto.",
+      "Porque as crianças usam calçado de borracha com coeficiente de atrito reduzido, que as faz tombar.",
+      "Porque a cabeça e o tronco superior pesam proporcionalmente mais na criança do que no adulto.",
       "Porque o coração infantil bate com maior frequência cardíaca, empurrando o sangue para cima."
     ],
     "correctIndex": 2,
@@ -3546,9 +3546,9 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Quando um enfermeiro eleva os dois braços acima da cabeça para retirar um frasco de soro de uma prateleira alta, o que acontece ao seu Centro de Gravidade?",
     "options": [
-      "Desloca-se para a sola dos sapatos, aumentando a estabilidade.",
-      "Desloca-se para trás, ficando mais próximo da parede do corredor.",
-      "Permanece na 2.ª vértebra sagrada, sem se deslocar.",
+      "Desloca-se para a sola dos sapatos, aumentando a estabilidade, porque o peso fica mais baixo.",
+      "Desloca-se para trás, ficando mais próximo da parede do corredor, sem alterar a postura.",
+      "Permanece na 2.ª vértebra sagrada, sem se deslocar, mesmo quando o corpo se estica.",
       "O centro de gravidade sobe em direção ao tórax, tornando a postura temporariamente mais instável."
     ],
     "correctIndex": 3,
@@ -3584,7 +3584,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Se um doente passar da posição bipodal (dois pés apoiados no chão) para a posição unipodal (apoiado apenas num pé), o que acontece à sua base de sustentação?",
     "options": [
-      "Aumenta para o dobro da área anterior.",
+      "Aumenta para o dobro da área inicial, ao apoiar-se em mais pontos de contacto.",
       "Reduz-se à área de contacto da sola desse pé, aumentando o risco de instabilidade.",
       "Permanece com o mesmo tamanho e geometria.",
       "Passa a englobar a área total do quarto de internamento."
@@ -3603,10 +3603,10 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a condição geométrica fundamental para que o corpo humano permaneça em equilíbrio estático estável sem tombar?",
     "options": [
-      "Que a cabeça esteja posicionada a uma altitude superior a 2000 metros.",
-      "Que a força potente exercida pelo quadríceps seja igual a zero newtons.",
-      "Que a Linha de Gravidade (projeção vertical do centro de gravidade) permaneça no interior da área delimitada pela base de sustentação.",
-      "Que o atrito com o piso seja igual à força normal do leito."
+      "Que a cabeça esteja posicionada a uma altitude superior a 2000 metros, ao nível do mar.",
+      "Que a força potente exercida pelo quadríceps seja igual a zero newtons, em repouso total.",
+      "Que a linha de gravidade (projeção vertical do centro de gravidade) fique dentro da base de sustentação.",
+      "Que o atrito com o piso seja igual à força normal do leito, em todas as posições do corpo."
     ],
     "correctIndex": 2,
     "explanation": "A estabilidade estática depende de a linha de gravidade passar por dentro do polígono de apoio (base de sustentação). Se sair para fora das margens da base, o peso gera momento de rotação que derruba o corpo.",
@@ -3625,7 +3625,7 @@ const TOPIC_1_QUESTIONS = [
       "Condição: Mais alto (pontas dos pés); Intervenção: Manter o tronco esticado e rígido.",
       "Condição: CG no pescoço; Intervenção: Manter a cama no nível mais alto possível.",
       "Condição: CG elevado; Intervenção: Afastar-se do doente durante a mobilização.",
-      "Condição: Mais baixo (joelhos e ancas ligeiramente fletidos); Intervenção: Fletir os joelhos ao realizar esforço ou mobilização."
+      "Condição: Mais baixo (joelhos e ancas fletidos); Intervenção: Fletir os joelhos ao esforçar-se."
     ],
     "correctIndex": 3,
     "explanation": "Especifica-se: Fator: Altura do CG | Alta estabilidade: Mais baixo (joelhos e ancas ligeiramente fletidos) | Instabilidade: Mais alto (pontas dos pés ou tronco esticado) | Intervenção: Fletir os joelhos ao realizar esforço ou mobilização.",
