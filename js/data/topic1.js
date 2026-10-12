@@ -143,7 +143,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1008,
     "topicId": 1,
-    "question": "Se a resultante de todas as forças que atuam sobre um corpo for nula, o que acontece ao seu estado mecânico?",
+    "question": "Se a resultante de todas as forças que atuam sobre um corpo for nula, o que acontece ao seu movimento de translação?",
     "options": [
       "Permanece em repouso ou em movimento retilíneo e uniforme.",
       "Ganha necessariamente uma aceleração crescente contínua.",
@@ -154,7 +154,7 @@ const TOPIC_1_QUESTIONS = [
     "explanation": "Quando a força resultante é nula (Fr = 0), o corpo mantém o seu estado de repouso ou continua em movimento retilíneo uniforme (MRU), de acordo com a 1ª Lei de Newton.",
     "distractorAnalysis": [
       "Está incorreta: Aceleração exige uma força resultante não nula (Fr = m · a); se Fr = 0, a aceleração é rigorosamente nula.",
-      "Está incorreta: Rotação exige um momento de força resultante não nulo; sem forças resultantes o corpo não inicia rotação.",
+      "Está incorreta: A rotação depende do momento resultante (ΣM), não só da força resultante: um binário tem força resultante nula e pode fazer rodar o corpo.",
       "Está incorreta: O peso depende da massa e gravidade local, não sofrendo alteração por equilíbrio de forças."
     ],
     "nursingApplication": "Explica por que uma maca parada numa superfície horizontal nivelada não se move sem intervenção externa."
@@ -393,12 +393,12 @@ const TOPIC_1_QUESTIONS = [
     "question": "Qual é o enunciado exato da 1ª Lei de Newton (Lei da Inércia) apresentado?",
     "options": [
       "A aceleração de um corpo é diretamente proporcional à força resultante e inversamente à sua massa.",
-      "Um corpo em repouso permanece em repouso e um corpo em movimento permanece em movimento, a menos que uma força externa atue sobre ele.",
+      "Um corpo permanece em repouso ou em movimento retilíneo uniforme, a menos que atue sobre ele uma força resultante não nula.",
       "A toda a ação mecânica opõe-se sempre uma reação de menor intensidade e direção perpendicular.",
       "A energia total de um sistema isolado dissipa-se invariavelmente sob a forma de calor."
     ],
     "correctIndex": 1,
-    "explanation": "Define-se a 1ª Lei de Newton (Lei da Inércia): 'Um corpo em repouso permanece em repouso e um corpo em movimento permanece em movimento, a menos que uma força externa atue sobre ele'.",
+    "explanation": "Define-se a 1ª Lei de Newton (Lei da Inércia): 'Um corpo permanece em repouso ou em movimento retilíneo uniforme, a menos que atue sobre ele uma força resultante não nula'.",
     "distractorAnalysis": [
       "Está incorreta: A relação aceleração-força-massa constitui a 2ª Lei de Newton (F = m · a).",
       "Está incorreta: A ação e reação têm igual intensidade e mesma direção, conforme a 3ª Lei de Newton.",
@@ -803,7 +803,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A força de atrito é tangencial e paralela à superfície, não perpendicular.",
       "Está incorreta: Num corpo acelerado a força resultante é não nula (Fr = m · a), e a 3ª Lei trata de forças entre corpos distintos."
     ],
-    "nursingApplication": "Ensina a ter consciência de que qualquer pressão mecânica exercida no utente é sentida em igual magnitude na mão do enfermeiro."
+    "nursingApplication": "Ensina a ter consciência de que a força que a mão do enfermeiro exerce sobre o utente tem a mesma intensidade da força que o utente exerce sobre a mão."
   },
   {
     "id": 1043,
@@ -1477,11 +1477,11 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Aumenta proporcionalmente para o triplo do peso original.",
       "Permanece rigorosamente inalterada independentemente de qualquer inclinação.",
-      "Diminui, pois parte do peso do corpo passa a ser suportada ao longo do plano na componente tangencial.",
+      "Diminui, pois apenas a componente perpendicular do peso (P_n = P · cos θ) é equilibrada pela força normal, e esta diminui com o aumento do ângulo.",
       "Transforma-se numa força eletromagnética que atrai o doente para a parede."
     ],
     "correctIndex": 2,
-    "explanation": "No plano inclinado, a força normal equilibra apenas a componente perpendicular do peso (N = P_n = P · cos θ). À medida que a cama inclina, P_n diminui e a componente tangencial P_t aumenta, fazendo o corpo deslizar.",
+    "explanation": "No plano inclinado, a força normal equilibra apenas a componente perpendicular do peso (N = P_n = P · cos θ). À medida que a cama inclina, P_n diminui e a componente tangencial P_t aumenta; o corpo só desliza se P_t ultrapassar o atrito estático máximo.",
     "distractorAnalysis": [
       "Está incorreta: A força normal nunca excede o peso num plano inclinado estático livre de forças externas adicionais.",
       "Está incorreta: A força normal varia com a função cosseno da inclinação, diminuindo com o aumento do ângulo.",
@@ -1761,12 +1761,12 @@ const TOPIC_1_QUESTIONS = [
     "question": "Na tabela de resumo dos conceitos lecionados, como está caracterizada a grandeza 'Peso (P)'?",
     "options": [
       "Tipo: Escalar; Unidade SI: Quilograma (kg); Definição: Quantidade de água corporal; Exemplo: Hidratação.",
-      "Tipo: Vetorial; Unidade SI: Newton (N); Definição: Força de atração gravítica; Exemplo: Peso do doente sobre o colchão.",
+      "Tipo: Vetorial; Unidade SI: Newton (N); Definição: Força de atração gravítica; Exemplo: Peso do doente (força exercida pela Terra).",
       "Tipo: Vetorial; Unidade SI: Pascal (Pa); Definição: Tensão nos tendões; Exemplo: Marcha.",
       "Tipo: Escalar; Unidade SI: Newton (N); Definição: Aceleração da maca; Exemplo: Ambulância."
     ],
     "correctIndex": 1,
-    "explanation": "Especifica-se: Grandeza: Peso (P) | Tipo: Vetorial | Unidade SI: Newton (N) | Definição: Força de atração gravítica | Exemplo: Peso do doente sobre o colchão.",
+    "explanation": "Especifica-se: Grandeza: Peso (P) | Tipo: Vetorial | Unidade SI: Newton (N) | Definição: Força de atração gravítica | Exemplo: Peso do doente (força exercida pela Terra).",
     "distractorAnalysis": [
       "Está incorreta: O peso é uma força vetorial medida em Newtons, não uma grandeza escalar em kg.",
       "Está incorreta: Pascal é unidade de pressão (N/m²), enquanto o peso é uma força expressa em Newtons.",
@@ -2632,12 +2632,12 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1139,
     "topicId": 1,
-    "question": "Ao levantar um peso de 15 kg com os braços esticados para a frente longe do tronco, por que razão as vértebras lombares sofrem uma sobrecarga massiva?",
+    "question": "Ao levantar uma carga de 15 kg com os braços esticados para a frente longe do tronco, por que razão as vértebras lombares sofrem uma sobrecarga massiva?",
     "options": [
       "Porque a massa do objeto triplica magicamente quando afastada do peito.",
       "Porque o atrito do pavimento desaparece desestabilizando o esqueleto.",
       "Porque a velocidade da luz no vácuo altera a curvatura lombar.",
-      "Porque o braço da força resistente (b) aumenta substancialmente em relação à coluna, gerando um momento extensor muito superior (M = F · b)."
+      "Porque o braço da força resistente (b) aumenta substancialmente em relação à coluna, gerando um momento flexor muito superior, que os músculos extensores da coluna têm de equilibrar (M = F · b)."
     ],
     "correctIndex": 3,
     "explanation": "A força resistente (peso da carga) é constante. Contudo, ao afastar a carga do tronco, a distância horizontal b até ao fulcro lombar aumenta grandemente, multiplicando o momento resistente M = F · b e exigindo forças extremas dos músculos da coluna para equilibrar.",
@@ -2969,7 +2969,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: Os comprimentos variam com as dimensões de cada corpo e ferramenta mecânica.",
       "Está incorreta: O braço potente é o maior de todos e estende-se do fulcro até à ponta potente."
     ],
-    "nursingApplication": "Explica por que conseguimos erguer o peso total do corpo humano ficando em bicos de pés com relativo pouco esforço."
+    "nursingApplication": "Explica porque é que a elevação na ponta dos pés exige uma força muscular elevada no tendão de Aquiles, que atua com um braço de momento curto em relação à articulação do tornozelo."
   },
   {
     "id": 1157,
@@ -3377,11 +3377,11 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "F_objeto + F_antebraço = F_E",
       "F_E · d_R = F_objeto · d_E",
-      "Em equilíbrio: (F_objeto · d_R) + (F_antebraço+mão · d_antebraço) = F_E · b_E",
+      "Em equilíbrio: (F_objeto · d_R) + (F_antebraço+mão · d_antebraço) = F_E · d_E",
       "F_E = m · g · a"
     ],
     "correctIndex": 2,
-    "explanation": "Esquematiza-se: 'Em equilíbrio: F_P · b_P = F_r · b_r; Nesta situação: (F objeto · d_R) + (F antebraço+mão · d_E) = F_E · b_E'.",
+    "explanation": "Esquematiza-se: 'Em equilíbrio: F_P · b_P = F_r · b_r; Nesta situação: (F objeto · d_R) + (F antebraço+mão · d_antebraço) = F_E · d_E'.",
     "distractorAnalysis": [
       "Está incorreta: Ignorar os braços de momento viola frontalmente a Lei das Alavancas de Arquimedes.",
       "Está incorreta: Os braços anatómicos associados a cada força estão incorretamente atribuídos nesta opção.",
@@ -3763,7 +3763,7 @@ const TOPIC_1_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "Indica-se textualmente: 'Intervenção de enfermagem recomendada: Ensinar a usar o andarilho mantendo-se dentro dele'.",
     "distractorAnalysis": [
-      "Está incorreta: Caminhar fora ou atrás do andarilho desloca a linha de gravidade para fora do polígono de apoio, anulando a sua função protetora.",
+      "Está incorreta: Caminhar à frente do andarilho e empurrá-lo com um dedo desloca a linha de gravidade para fora do polígono de apoio, anulando a sua função protetora.",
       "Está incorreta: Doentes com marcha atáxica sem dispositivo sofrem risco máximo de instabilidade e queda.",
       "Está incorreta: O andarilho é um dispositivo de apoio móvel ao solo, não um sistema suspenso no teto."
     ],
