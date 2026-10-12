@@ -70,7 +70,6 @@ O site é estático (HTML, CSS e JavaScript). Não tem servidor, base de dados n
   echo -n "O_SEU_NOVO_PIN" | shasum -a 256
   ```
 
-  O PIN antigo (`XXXXXX`) aparece no histórico público de commits anteriores e já não é válido, mas deve ser considerado exposto.
 
 ---
 
