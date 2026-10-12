@@ -1912,36 +1912,36 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Durante a marcha de uma ambulância em socorro a 80 km/h, por que razão um enfermeiro que viaja de pé é projetado para a frente quando a viatura trava bruscamente?",
     "options": [
-      "Porque a força nuclear fraca atrai o corpo do enfermeiro para o tablier.",
-      "Pela 1ª Lei de Newton (Lei da Inércia), o corpo do enfermeiro mantém a velocidade de 80 km/h até que uma força atue sobre ele.",
-      "Porque o peso do enfermeiro triplica espontaneamente durante a travagem.",
-      "Porque a pressão do ar no interior da cabina diminui subitamente criando vácuo à frente."
+      "Porque o tablier atrai o corpo do enfermeiro, como um íman, por ação da gravidade.",
+      "Pela 1ª Lei de Newton, o corpo mantém a velocidade de 80 km/h até uma força atuar sobre ele.",
+      "Porque o peso do enfermeiro aumenta durante a travagem, por efeito da inércia.",
+      "Porque a pressão do ar diminui na cabina, criando um vácuo à frente do enfermeiro."
     ],
     "correctIndex": 1,
-    "explanation": "Explica-se: 'Pela 1ª Lei de Newton (Lei da Inércia), o corpo do enfermeiro mantém a velocidade de 80 km/h até que uma força atue sobre ele'.",
+    "explanation": "Explica-se que, pela 1ª Lei de Newton (Lei da Inércia), o corpo do enfermeiro mantém a velocidade de 80 km/h até que uma força atue sobre ele.",
     "distractorAnalysis": [
-      "Está incorreta: A força nuclear fraca medeia decaimentos radioativos, não atuando na dinâmica de veículos.",
-      "Está incorreta: A travagem desacelera a viatura, mas a gravidade e o peso do enfermeiro permanecem inalterados.",
-      "Está incorreta: A cabina da ambulância não gera vácuo durante a travagem; a projeção decorre exclusivamente da inércia mecânica."
+      "Está incorreta: O tablier não atrai o corpo; a projeção resulta da inércia do enfermeiro.",
+      "Está incorreta: O peso do enfermeiro não aumenta na travagem; mantém-se o mesmo.",
+      "Está incorreta: A cabina não cria vácuo durante a travagem; a projeção deve-se à inércia."
     ],
     "nursingApplication": "Reforça a obrigatoriedade de viajar sentado com cinto de segurança durante o transporte em marcha de emergência."
   },
   {
     "id": 1102,
     "topicId": 1,
-    "question": "No desafio clínico, por que razão o enfermeiro sem cinto choca contra a divisória com a força equivalente a centenas de quilos?",
+    "question": "No desafio clínico, por que razão o enfermeiro sem cinto choca contra a divisória com uma força da ordem de milhares de newtons?",
     "options": [
-      "Porque a massa corporal do profissional aumenta com a velocidade atingindo centenas de quilos.",
-      "Porque a Terra puxa o profissional horizontalmente através de atração gravítica extraordinária.",
-      "Pela 2ª Lei de Newton (Lei fundamental da dinâmica), a desaceleração violenta exige uma força massiva para parar o corpo (F = m · a).",
-      "Porque a divisória da ambulância atrai os corpos metálicos e tecidos biológicos por magnetismo."
+      "Porque a massa corporal do profissional aumenta com a velocidade do veículo.",
+      "Porque a Terra puxa o profissional na horizontal, por atração gravítica intensa.",
+      "Pela 2.ª Lei de Newton, a desaceleração violenta exige uma força elevada (F = m · a).",
+      "Porque a divisória atrai o corpo do enfermeiro por magnetismo."
     ],
     "correctIndex": 2,
-    "explanation": "Explica-se: 'Pela 2ª Lei de Newton (Lei fundamental da dinâmica), a desaceleração violenta exige uma força massiva para parar o corpo. Sem cinto de segurança, o enfermeiro colidirá com a divisória com força equivalente à sua massa multiplicada pela desaceleração'.",
+    "explanation": "Pela 2.ª Lei de Newton, a desaceleração violenta exige uma força elevada para parar o corpo (F = m · a). Por isso, a força de impacto pode atingir milhares de newtons.",
     "distractorAnalysis": [
-      "Está incorreta: A massa inercial do corpo é constante na mecânica clássica e não aumenta a velocidades de 80 km/h.",
-      "Está incorreta: A atração gravítica atua na vertical para o centro da Terra, não gerando forças horizontais para a divisória.",
-      "Está incorreta: A divisória não possui magnetismo de atração sobre tecidos biológicos."
+      "Está incorreta: A massa corporal não varia com a velocidade do veículo.",
+      "Está incorreta: Na horizontal, a gravidade não puxa o corpo; a força que o trava é a da divisória.",
+      "Está incorreta: A divisória não atrai o corpo por magnetismo; a força é mecânica de contacto."
     ],
     "nursingApplication": "Alerta para a magnitude devastadora das forças de desaceleração que atuam sobre a equipa sem retenção mecânica."
   },
@@ -1950,17 +1950,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "No desafio clínico, por que razão a divisória da ambulância vai ficar amolgada ou partir com o impacto do enfermeiro?",
     "options": [
-      "Porque a divisória é feita de materiais de plasticina que se deformam sem qualquer força.",
+      "Porque a divisória é feita de plasticina, que se deforma com pouca força.",
       "Porque o atrito cinético da estrada transmite eletricidade estática para a divisória.",
       "Porque o peso da ambulância é transferido na totalidade para o painel de separação.",
-      "Pela 3ª Lei de Newton (par ação-reação), a intensidade da força que o enfermeiro exerce sobre a divisória é a mesma que a divisória exerce sobre o enfermeiro."
+      "Pela 3.ª Lei de Newton (par ação-reação), as duas forças têm a mesma intensidade."
     ],
     "correctIndex": 3,
     "explanation": "Justifica-se: 'Pela 3ª Lei de Newton (par ação-reação), a intensidade da força que a divisória exerce sobre o enfermeiro é a mesma que o enfermeiro exerce sobre a divisória'. Ambas as estruturas sofrem a mesma força massiva mútua.",
     "distractorAnalysis": [
-      "Está incorreta: As divisórias são construídas em estruturas sólidas rígidas e não em materiais plásticos moles.",
-      "Está incorreta: A deformação resulta de esforço mecânico por impacto (força de colisão), não de eletricidade estática.",
-      "Está incorreta: O peso da ambulância apoia-se nas rodas e suspensão, não se transferindo para a divisória."
+      "Está incorreta: As divisórias são estruturas rígidas e não de plasticina.",
+      "Está incorreta: A deformação resulta do impacto mecânico, e não de eletricidade estática.",
+      "Está incorreta: O peso da ambulância apoia-se nas rodas e na suspensão, e não na divisória."
     ],
     "nursingApplication": "Demonstra que proteger o utente e a equipa com cintos evita danos materiais e lesões traumáticas graves."
   },
@@ -1969,17 +1969,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Como pode a equipa de emergência médica prevenir o desfecho traumático decorrente de uma desaceleração brusca da viatura?",
     "options": [
-      "Pelo uso sistemático do cinto de segurança por todos os ocupantes mesmo em marcha de socorro.",
-      "Viajando em pé sobre um calçado com sola lubrificada com óleo.",
-      "Segurando-se firmemente apenas com uma mão na maçaneta da porta.",
+      "Pelo uso do cinto de segurança por todos os ocupantes, também em marcha de socorro.",
+      "Viajando em pé, com calçado de sola lisa e sem apoio nas barras do veículo.",
+      "Segurando-se firmemente com uma mão na maçaneta da porta, a meio da viagem.",
       "Abrindo as janelas para reduzir a pressão atmosférica dentro do veículo."
     ],
     "correctIndex": 0,
     "explanation": "Refere-se explicitamente: 'Sem cinto de segurança, o enfermeiro colidirá com a divisória'. O cinto aplica a força externa gradual necessária para desacelerar o corpo solidariamente com a ambulância.",
     "distractorAnalysis": [
-      "Está incorreta: Sola oleada diminuiria o atrito solo-calçado provocando queda imediata ao primeiro desvio.",
-      "Está incorreta: A força de preensão manual humana (~300-400 N) é totalmente incapaz de suster forças de impacto de milhares de Newtons.",
-      "Está incorreta: A pressão atmosférica não altera a inércia dos corpos no interior da viatura."
+      "Está incorreta: Viajar em pé, com calçado de sola lisa, não reduz o risco; a projeção continua.",
+      "Está incorreta: Segurar-se com uma só mão não impede a projeção numa travagem brusca.",
+      "Está incorreta: A pressão atmosférica não influencia a projeção do corpo durante a travagem."
     ],
     "nursingApplication": "Regra de ouro de segurança e saúde ocupacional no trabalho em serviços de emergência pré-hospitalar."
   },
@@ -1989,16 +1989,16 @@ const TOPIC_1_QUESTIONS = [
     "question": "Durante a colisão contra a divisória da ambulância, qual das seguintes afirmações sobre a intensidade das forças é verdadeira segundo a 3ª Lei de Newton?",
     "options": [
       "A divisória aplica mais força sobre o enfermeiro do que o enfermeiro sobre a divisória.",
-      "A força que o enfermeiro exerce sobre a divisória tem rigorosamente a mesma intensidade da que a divisória exerce sobre o enfermeiro.",
-      "O enfermeiro só exerce força sobre a divisória se for um utente bariátrico com mais de 100 kg.",
-      "A intensidade de ambas as forças é nula porque a colisão é instantânea."
+      "As forças de ação e reação entre o enfermeiro e a divisória têm a mesma intensidade.",
+      "O enfermeiro exerce uma força menor sobre a divisória, por ser mais leve que ela.",
+      "A intensidade de ambas as forças é nula, porque a colisão é instantânea."
     ],
     "correctIndex": 1,
     "explanation": "A 3ª Lei de Newton impõe igualdade estrita de intensidade para qualquer par de forças interativas: F_enfermeiro->divisória = F_divisória->enfermeiro.",
     "distractorAnalysis": [
-      "Está incorreta: Afirmar que uma das forças é maior viola frontalmente o princípio da ação e reação de Newton.",
-      "Está incorreta: Qualquer corpo material em colisão exerce força proporcional à sua desaceleração (F = m · a).",
-      "Está incorreta: Embora a colisão seja rápida, as forças instantâneas atingem picos de extrema intensidade."
+      "Está incorreta: A 3.ª Lei impõe igualdade de intensidade entre as forças de ação e de reação.",
+      "Está incorreta: A massa do enfermeiro não altera a intensidade da força de interação.",
+      "Está incorreta: As forças de colisão não são nulas, mesmo que a colisão seja rápida."
     ],
     "nursingApplication": "Consolidação teórica da equivalência mútua de forças no choque mecânico."
   },
@@ -2007,17 +2007,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Se o condutor da ambulância travar num intervalo de tempo duas vezes menor (desaceleração a duplicar), o que acontece à força de impacto?",
     "options": [
-      "A força de impacto reduz-se para metade porque o tempo foi menor.",
-      "A força de impacto permanece rigorosamente constante.",
-      "A força de impacto duplica, pois pela fórmula F = m · a a força é diretamente proporcional à aceleração.",
-      "A força anula-se completamente devido à paragem quase instantânea."
+      "A força de impacto reduz-se para metade, porque o tempo foi menor.",
+      "A força de impacto permanece constante, pois a massa do enfermeiro não se altera na travagem.",
+      "A força de impacto duplica, pois pela fórmula F = m · a a força é proporcional à aceleração.",
+      "A força anula-se devido à paragem quase instantânea, que dissipa todo o movimento."
     ],
     "correctIndex": 2,
     "explanation": "Desacelerar no dobro da rapidez significa que a taxa de variação de velocidade (desaceleração a) duplica. Pela 2ª Lei (F = m · a), com a massa m constante, a força de impacto duplica.",
     "distractorAnalysis": [
-      "Está incorreta: Menor tempo de travagem aumenta a desaceleração (a = Δv / Δt), aumentando a força e não diminuindo.",
-      "Está incorreta: A força varia na proporção direta da aceleração/desaceleração sofrida pelo corpo.",
-      "Está incorreta: Paragens instantâneas gerariam acelerações e forças teoricamente infinitas, provocando destruição máxima."
+      "Está incorreta: Com um tempo menor a desaceleração aumenta; a força não diminui para metade.",
+      "Está incorreta: Se a desaceleração duplica, a força também duplica, pela 2.ª Lei.",
+      "Está incorreta: Uma paragem rápida gera força elevada, e não nula."
     ],
     "nursingApplication": "Sublinha a necessidade de condução defensiva suave por parte dos motoristas de emergência médica."
   },
@@ -2045,17 +2045,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Que princípio fundamental de física e segurança resulta da análise biomecânica do impacto durante uma travagem de emergência?",
     "options": [
-      "Que as três Leis de Newton atuam de forma combinada e explicam integralmente o fenómeno de uma colisão real.",
-      "Que a 1ª Lei de Newton só se aplica a veículos e a 2ª Lei só a seres vivos.",
-      "Que a Biofísica se desliga da prática clínica e serve apenas para cálculos no papel.",
+      "Que as três Leis de Newton atuam em conjunto e explicam os aspetos essenciais de uma colisão.",
+      "Que a 1ª Lei se aplica sobretudo aos veículos, e a 2ª sobretudo aos seres vivos.",
+      "Que a Biofísica se desliga da prática clínica e serve para cálculos teóricos.",
       "Que a gravidade terrestre é anulada durante movimentos de travagem de emergência."
     ],
     "correctIndex": 0,
     "explanation": "O desafio demonstra a união das 3 leis: a 1ª Lei explica por que o corpo é projetado (inércia), a 2ª Lei quantifica a magnitude da força de travagem (F = m · a) e a 3ª Lei explica a deformação da divisória (ação-reação).",
     "distractorAnalysis": [
-      "Está incorreta: Todas as Leis de Newton aplicam-se universalmente a qualquer corpo material, vivo ou inanimado.",
-      "Está incorreta: O exemplo ilustra precisamente a aplicação direta da biofísica à preservação da vida e prevenção de acidentes.",
-      "Está incorreta: A gravidade mantém-se sempre atuante na direção vertical ao longo de todo o evento."
+      "Está incorreta: As leis de Newton aplicam-se a veículos e a seres vivos da mesma forma.",
+      "Está incorreta: A Biofísica está ligada à prática clínica, e não é apenas teórica.",
+      "Está incorreta: A gravidade não é anulada numa travagem; continua a atuar sobre o corpo."
     ],
     "nursingApplication": "Promove o pensamento crítico e a integração de conceitos biofísicos em incidentes do quotidiano hospitalar."
   },
@@ -2064,17 +2064,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "No momento em que o enfermeiro colide contra a divisória, que papel desempenha a divisória em termos da 1ª Lei de Newton?",
     "options": [
-      "Atua como um condutor de calor que evapora a água corporal.",
-      "Atua como a força externa necessária para alterar o estado de movimento e parar o corpo do profissional.",
-      "Transforma a inércia em energia nuclear forte no tórax.",
-      "Acelera o enfermeiro para que ele atravesse o habitáculo da ambulância."
+      "Atua como um condutor de calor que evapora a água corporal, ao absorver o impacto.",
+      "Atua como a força externa que altera o movimento e para o corpo do profissional.",
+      "Transforma a inércia em energia térmica que aquece o tórax do profissional.",
+      "Acelera o enfermeiro, para que ele atravesse o habitáculo da ambulância até ao fim."
     ],
     "correctIndex": 1,
     "explanation": "Pela 1ª Lei, o enfermeiro continuaria a mover-se a 80 km/h até que uma força externa atuasse sobre ele. A divisória é a estrutura rígida que aplica essa força externa de paragem (infelizmente de forma brusca e traumática).",
     "distractorAnalysis": [
-      "Está incorreta: A divisória aplica forças mecânicas normais de contacto, não trocas de calor evaporativas.",
-      "Está incorreta: Não há conversão de inércia em forças nucleares subatómicas.",
-      "Está incorreta: A divisória trava o movimento do corpo, reduzindo a sua velocidade de 80 km/h para zero."
+      "Está incorreta: A divisória não transmite calor que evapore a água corporal numa colisão.",
+      "Está incorreta: A inércia não se transforma em energia térmica; a divisória exerce uma força de paragem.",
+      "Está incorreta: A divisória trava o enfermeiro e não o acelera."
     ],
     "nursingApplication": "Evidencia por que os sistemas de retenção e airbags distribuem a desaceleração em maior tempo e área."
   },
@@ -2083,17 +2083,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Como se calcula a força média de impacto com que um ocupante desprovido de cinto colide contra o painel na travagem brusca de uma viatura?",
     "options": [
-      "Multiplicando a temperatura corporal pela velocidade da ambulância.",
-      "Dividindo o peso do veículo pelo volume de oxigénio na cabina.",
+      "Multiplicando a massa corporal pela velocidade da ambulância.",
+      "Dividindo a massa corporal pelo tempo de paragem, sem ter em conta a aceleração.",
       "Multiplicando a massa corporal do indivíduo pela desaceleração sofrida (F = m · a).",
-      "Somando a altura do utente ao diâmetro do pneu da ambulância."
+      "Dividindo a massa corporal pela distância percorrida até à divisória."
     ],
     "correctIndex": 2,
     "explanation": "Esclarece-se textualmente: 'colidirá com a divisória com força equivalente à sua massa multiplicada pela desaceleração'.",
     "distractorAnalysis": [
-      "Está incorreta: Temperatura e velocidade não produzem a dimensão física de força (Newton).",
-      "Está incorreta: Dividir peso de veículo por volume de ar é dimensionalmente incorreto.",
-      "Está incorreta: Somar grandezas geométricas não quantifica o impacto mecânico de colisão."
+      "Está incorreta: O produto da massa pela velocidade é a quantidade de movimento, e não a força.",
+      "Está incorreta: A força é massa vezes aceleração, e não massa dividida pelo tempo.",
+      "Está incorreta: A distância percorrida não entra na força média de impacto."
     ],
     "nursingApplication": "Permite dimensionar a importância dos sistemas de retenção estofados e cintos de segurança de múltiplos pontos."
   },
@@ -2102,17 +2102,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Como se define 'Equilíbrio Estável' na mecânica e na estática dos corpos?",
     "options": [
-      "O corpo permanece sempre em movimento acelerado contínuo após qualquer desvio.",
+      "O corpo passa a mover-se com aceleração crescente após o desvio.",
       "Após desviar um corpo da sua posição de equilíbrio, este tende a desviar-se ainda mais.",
       "Após desviar um corpo da sua posição de equilíbrio, este permanece em equilíbrio na nova posição.",
-      "O corpo retorna à posição inicial de forma espontânea após ter sido desviado da sua posição de equilíbrio."
+      "O corpo retorna à posição inicial após ser desviado da posição de equilíbrio."
     ],
     "correctIndex": 3,
-    "explanation": "Define-se expressamente: 'Equilíbrio Estável: O corpo retorna à posição inicial de forma espontânea após ter sido desviado da sua posição de equilíbrio'.",
+    "explanation": "Define-se o equilíbrio estável: o corpo retorna à posição inicial após ser desviado da sua posição de equilíbrio.",
     "distractorAnalysis": [
-      "Está incorreta: Movimento acelerado perpétuo violaria a conservação de energia e a definição de equilíbrio.",
-      "Está incorreta: Tender a desviar-se ainda mais corresponde à definição de Equilíbrio Instável.",
-      "Está incorreta: Permanecer em equilíbrio na nova posição corresponde à definição de Equilíbrio Indiferente."
+      "Está incorreta: Num equilíbrio estável o corpo não acelera para longe; regressa à posição inicial.",
+      "Está incorreta: Desviar-se ainda mais é o equilíbrio instável.",
+      "Está incorreta: Permanecer na nova posição é o equilíbrio indiferente."
     ],
     "nursingApplication": "Exemplo biomecânico da postura bípede com pés afastados, capaz de resistir a pequenas perturbações sem queda."
   },
@@ -2121,17 +2121,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Como se define 'Equilíbrio Instável' na mecânica e na estática dos corpos?",
     "options": [
-      "Após desviar um corpo da sua posição de equilíbrio, este tende a desviar-se ainda mais da sua posição de equilíbrio.",
+      "Após ser desviado, o corpo tende a afastar-se ainda mais da posição de equilíbrio.",
       "O corpo retorna à posição inicial de forma espontânea após ter sido desviado.",
-      "Após ser desviado, o corpo permanece em repouso na nova posição sem sofrer qualquer momento.",
-      "O corpo perde totalmente a sua massa e entra em levitação gravitacional."
+      "Após ser desviado, o corpo permanece em repouso na nova posição, sem momento resultante.",
+      "O corpo perde parte da sua massa e fica suspenso no ar, por efeito gravítico."
     ],
     "correctIndex": 0,
-    "explanation": "Define-se expressamente: 'Equilíbrio Instável: Após desviar um corpo da sua posição de equilíbrio, este tende a desviar-se ainda mais da sua posição de equilíbrio'.",
+    "explanation": "Define-se o equilíbrio instável: após ser desviado, o corpo tende a afastar-se ainda mais da posição de equilíbrio.",
     "distractorAnalysis": [
-      "Está incorreta: Retornar espontaneamente à posição inicial é a definição de Equilíbrio Estável.",
-      "Está incorreta: Permanecer equilibrado na nova posição é a definição de Equilíbrio Indiferente.",
-      "Está incorreta: A massa nunca se perde e a gravidade continua a atuar plenamente."
+      "Está incorreta: Retornar à posição inicial é a definição de equilíbrio estável.",
+      "Está incorreta: Permanecer na nova posição é a definição de equilíbrio indiferente.",
+      "Está incorreta: A massa de um corpo não se perde; e a gravidade continua a atuar sobre ele."
     ],
     "nursingApplication": "Descreve o estado biomecânico de um utente com risco iminente de queda (ex.: em pontas dos pés com base estreita)."
   },
@@ -2141,16 +2141,16 @@ const TOPIC_1_QUESTIONS = [
     "question": "Como se define 'Equilíbrio Indiferente' (ou neutro) na mecânica dos corpos?",
     "options": [
       "O corpo oscila periodicamente entre duas posições extremas a alta frequência.",
-      "Após desviar um corpo da sua posição de equilíbrio, este permanece em equilíbrio na nova posição.",
-      "O corpo desmorona imediatamente com fratura mecânica estrutural.",
-      "O corpo retorna obrigatoriamente à posição de origem após 60 segundos."
+      "Após ser desviado, o corpo permanece em equilíbrio na nova posição.",
+      "O corpo tende a fraturar sob a ação de pequenas forças.",
+      "O corpo retorna à posição de origem, ao fim de algum tempo."
     ],
     "correctIndex": 1,
-    "explanation": "Define-se expressamente: 'Equilíbrio Indiferente: Após desviar um corpo da sua posição de equilíbrio, este permanece em equilíbrio na nova posição'.",
+    "explanation": "Define-se o equilíbrio indiferente: após ser desviado, o corpo permanece em equilíbrio na nova posição.",
     "distractorAnalysis": [
-      "Está incorreta: Oscilações periódicas descrevem pêndulos ou osciladores harmónicos, não a definição de equilíbrio estático.",
-      "Está incorreta: Desmoronamento estrutural é falha mecânica de materiais, não equilíbrio indiferente.",
-      "Está incorreta: Retornar à origem define equilíbrio estável, não indiferente."
+      "Está incorreta: Oscilar entre duas posições extremas é um movimento periódico, e não o equilíbrio indiferente.",
+      "Está incorreta: A fratura não é uma definição de equilíbrio; o corpo deve permanecer intacto.",
+      "Está incorreta: Retornar à posição de origem é o equilíbrio estável."
     ],
     "nursingApplication": "Exemplificado por uma bola ou roda num piso plano horizontal, que encontra novo equilíbrio onde quer que pare."
   },
@@ -2159,17 +2159,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é o princípio fundamental sobre corpos em equilíbrio realçado?",
     "options": [
-      "Um corpo em equilíbrio nunca pode ter qualquer força a atuar sobre ele.",
-      "Apenas os corpos que se encontram no vácuo espacial podem atingir o equilíbrio.",
-      "Um corpo em equilíbrio pode ter forças a atuar sobre ele; a força resultante é que é nula!",
-      "Para haver equilíbrio, a força normal tem de ser sempre o dobro da força de atrito."
+      "Um corpo em equilíbrio não pode ter forças a atuar sobre ele.",
+      "Os corpos no vácuo espacial podem atingir o equilíbrio mecânico.",
+      "Um corpo em equilíbrio pode ter forças a atuar, desde que a resultante seja nula.",
+      "Para haver equilíbrio, a força normal tem de ser o dobro da força de atrito."
     ],
     "correctIndex": 2,
-    "explanation": "Destaca-se a clarificação pedagógica: 'Um corpo em equilíbrio pode ter forças a atuar sobre ele; a força resultante é que é nula!'.",
+    "explanation": "Destaca-se que o equilíbrio exige apenas força resultante nula, e não a ausência de forças sobre o corpo.",
     "distractorAnalysis": [
-      "Está incorreta: Afirmar que não atuam forças é um erro concetual grave; atuam frequentemente o peso e a normal, anulando-se mutuamente.",
-      "Está incorreta: O equilíbrio ocorre em qualquer ambiente onde o somatório de forças e momentos se anule.",
-      "Está incorreta: Não existe qualquer proporção fixa universal que exija que a normal seja o dobro do atrito."
+      "Está incorreta: Um corpo em equilíbrio pode ter várias forças a atuar sobre ele, com resultante nula.",
+      "Está incorreta: O equilíbrio ocorre em qualquer meio, incluindo a Terra e o corpo humano.",
+      "Está incorreta: A relação entre a normal e o atrito não é condição geral de equilíbrio."
     ],
     "nursingApplication": "Ensina a identificar que um doente em repouso no leito tem múltiplas forças a atuar em si em perfeito cancelamento mútuo."
   },
@@ -2178,17 +2178,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Uma esfera metálica pousada no fundo de uma taça hemisférica côncava ilustra classicamente que tipo de equilíbrio?",
     "options": [
-      "Equilíbrio indiferente.",
-      "Equilíbrio instável.",
-      "Movimento perpétuo acelerado.",
-      "Equilíbrio estável (se for ligeiramente desviada, as forças restauradoras fazem-na regressar ao fundo)."
+      "Equilíbrio indiferente, em que a esfera fica na nova posição.",
+      "Equilíbrio instável, em que a esfera se afasta cada vez mais do fundo.",
+      "Movimento acelerado contínuo, sem fim, na direção do desvio.",
+      "Equilíbrio estável: ao ser desviada, a esfera regressa ao fundo."
     ],
     "correctIndex": 3,
     "explanation": "No fundo da taça, o centro de gravidade está na posição mais baixa possível. Ao ser deslocada para o lado, o peso gera uma força restauradora que a faz regressar espontaneamente à posição inicial (Equilíbrio Estável).",
     "distractorAnalysis": [
-      "Está incorreta: Indiferente seria se a taça fosse um piso plano e a esfera ficasse parada em qualquer ponto.",
-      "Está incorreta: Instável seria se a esfera estivesse no topo de uma taça virada para baixo (cúpula convexa), caindo ao menor toque.",
-      "Está incorreta: O atrito dissipa as oscilações e a esfera atinge o repouso no fundo."
+      "Está incorreta: No equilíbrio indiferente a esfera fica na nova posição; no fundo da taça ela regressa.",
+      "Está incorreta: No equilíbrio instável a esfera afasta-se do fundo; na taça ela regressa.",
+      "Está incorreta: A esfera não acelera continuamente; oscila e regressa ao fundo."
     ],
     "nursingApplication": "Compreensão análoga ao centro de gravidade baixo na postura humana, que confere autorrecuperação contra quedas."
   },
@@ -2197,17 +2197,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Um bastão ou caneta colocado na vertical apoiado na sua ponta fina e afiada sobre uma mesa representa que tipo de equilíbrio mecânico?",
     "options": [
-      "Equilíbrio instável (qualquer pequeníssimo desvio gera um momento do peso que afasta o corpo ainda mais da posição inicial, fazendo-o tombar).",
-      "Equilíbrio estável perfeito e inviolável.",
-      "Equilíbrio indiferente em qualquer inclinação.",
-      "Estado de translação retilínea uniforme."
+      "Equilíbrio instável: um pequeno desvio gera um momento que faz o corpo tombar.",
+      "Equilíbrio estável, que se mantém mesmo com grandes desvios.",
+      "Equilíbrio indiferente, seja qual for a inclinação do bastão.",
+      "Estado de translação retilínea e uniforme, com velocidade constante."
     ],
     "correctIndex": 0,
     "explanation": "Com uma base de sustentação quase pontual e CG elevado, qualquer microdesvio desloca a linha de gravidade para fora do apoio, criando momento desestabilizador: o corpo tomba (Equilíbrio Instável).",
     "distractorAnalysis": [
-      "Está incorreta: No equilíbrio estável o corpo regressa à posição original, o que não acontece com a caneta apoiada na ponta.",
-      "Está incorreta: No equilíbrio indiferente o corpo ficaria em equilíbrio em qualquer ângulo inclinado, o que é falso.",
-      "Está incorreta: A caneta está em tentativa de equilíbrio estático, não em translação com velocidade constante."
+      "Está incorreta: Um equilíbrio estável recupera a posição inicial; o bastão não regressa sozinho.",
+      "Está incorreta: No equilíbrio indiferente o bastão ficaria na nova posição, e não tomba.",
+      "Está incorreta: Um bastão apoiado na ponta não se desloca em translação retilínea uniforme."
     ],
     "nursingApplication": "Ilustra o risco biomecânico de um doente com base de apoio mínima e linha de gravidade desequilibrada."
   },
@@ -2216,17 +2216,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Uma bola de futebol parada num piso de pavilhão perfeitamente plano e horizontal que é deslocada 1 metro para o lado e fica parada na nova posição exemplifica:",
     "options": [
-      "Equilíbrio instável explosivo.",
-      "Equilíbrio indiferente.",
-      "Equilíbrio estável de auto-recuperação.",
-      "Violação da 1ª Lei de Newton."
+      "Equilíbrio instável, em que a bola se afasta da posição inicial.",
+      "Equilíbrio indiferente, em que a bola fica parada na nova posição.",
+      "Equilíbrio estável, em que a bola regressa ao ponto de partida.",
+      "Violação da 1ª Lei de Newton, por a bola parar sem força aplicada."
     ],
     "correctIndex": 1,
     "explanation": "Na superfície horizontal, a altura do centro de gravidade da esfera permanece rigorosamente constante ao rolar. Deslocada da posição original, ela permanece em equilíbrio na nova posição (Equilíbrio Indiferente).",
     "distractorAnalysis": [
-      "Está incorreta: No equilíbrio instável a bola aceleraria para longe sem parar no piso nivelado.",
-      "Está incorreta: No equilíbrio estável a bola teria de regressar espontaneamente ao ponto de onde partiu.",
-      "Está incorreta: O comportamento obedece perfeitamente à 1ª Lei de Newton na presença de leve atrito de paragem."
+      "Está incorreta: Numa superfície horizontal a bola não se afasta por efeito gravítico.",
+      "Está incorreta: Uma bola numa superfície horizontal não regressa ao ponto de partida sem forças.",
+      "Está incorreta: Parar sem força aplicada não viola a 1.ª Lei; a bola fica parada porque o movimento cessa por atrito."
     ],
     "nursingApplication": "Demonstra a ausência de momento restaurador ou desestabilizador em superfícies horizontais lisas."
   },
@@ -2235,17 +2235,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Se a força resultante Fr sobre um corpo for diferente de zero, o que acontece obrigatoriamente ao corpo segundo as Leis de Newton?",
     "options": [
-      "Permanece em equilíbrio estático indiferente.",
-      "Entra imediatamente em equilíbrio estável.",
-      "Não se encontra em equilíbrio, sofrendo aceleração (a = Fr / m) que altera a sua velocidade.",
-      "Transforma a sua massa em pressão capilar profunda."
+      "Permanece em equilíbrio estático, com a velocidade igual.",
+      "Entra em equilíbrio estável, pois a força resultante é compensada.",
+      "Não está em equilíbrio e sofre aceleração (a = Fr / m).",
+      "Mantém a sua velocidade, mas a sua massa aumenta por efeito da força."
     ],
     "correctIndex": 2,
     "explanation": "Por definição, estar em equilíbrio exige Fr = 0 N. Se a força resultante não for nula, o corpo é acelerado pela 2ª Lei de Newton (Fr = m · a), rompendo o equilíbrio.",
     "distractorAnalysis": [
-      "Está incorreta: Equilíbrio indiferente requer estritamente força resultante nula (Fr = 0 N).",
-      "Está incorreta: Qualquer forma de equilíbrio exige força resultante nula.",
-      "Está incorreta: A massa não se converte em pressão; a pressão resulta de forças distribuídas por área."
+      "Está incorreta: Com Fr diferente de zero o corpo não está em equilíbrio, mesmo com velocidade igual.",
+      "Está incorreta: Com Fr diferente de zero, não há compensação; o equilíbrio não se estabelece.",
+      "Está incorreta: A massa é uma propriedade constante e não aumenta por efeito de uma força."
     ],
     "nursingApplication": "Permite diagnosticar desequilíbrios mecânicos durante a marcha de doentes em reabilitação."
   },
@@ -2254,17 +2254,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Para que um corpo rígido extenso esteja em equilíbrio mecânico completo (estático), que condições têm de ser simultaneamente satisfeitas na biomecânica?",
     "options": [
-      "Apenas que o corpo tenha velocidade superior a 100 km/h.",
-      "Apenas que a sua massa seja inferior a 50 kg.",
-      "Apenas que a força de atrito seja perpendicular à gravidade.",
-      "A força resultante tem de ser nula (equilíbrio de translação) e o momento resultante tem de ser nulo (equilíbrio de rotação)."
+      "Que o corpo tenha uma velocidade elevada, superior a 100 km/h.",
+      "Que a massa do corpo seja inferior a 50 kg, para facilitar o equilíbrio.",
+      "Que a força de atrito seja perpendicular à força da gravidade.",
+      "A força resultante e o momento resultante têm de ser nulos."
     ],
     "correctIndex": 3,
     "explanation": "O equilíbrio mecânico total de um corpo rígido exige que não haja aceleração linear (Fr = 0 N) nem aceleração angular de rotação (Momento resultante Mr = 0 N·m).",
     "distractorAnalysis": [
-      "Está incorreta: Velocidade de 100 km/h não define as condições estáticas de equilíbrio de forças e momentos.",
-      "Está incorreta: O equilíbrio aplica-se a qualquer valor de massa, pequena ou grande.",
-      "Está incorreta: A orientação geométrica do atrito depende da superfície e não garante por si só o equilíbrio."
+      "Está incorreta: A velocidade não entra na condição de equilíbrio estático; o corpo deve estar parado.",
+      "Está incorreta: A massa do corpo não determina o equilíbrio mecânico.",
+      "Está incorreta: A direção do atrito não é condição geral de equilíbrio do corpo rígido."
     ],
     "nursingApplication": "A base para analisar a estabilidade postural e o cálculo de alavancas no corpo humano."
   },
@@ -2273,17 +2273,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Um utente sentado numa poltrona hospitalar com os pés apoiados no chão e as costas encostadas encontra-se numa situação de equilíbrio mecânico estável porque:",
     "options": [
-      "A força resultante e os momentos são nulos, e um pequeno desvio involuntário é facilmente corrigido pela base de apoio e musculatura postural.",
+      "A força resultante e os momentos são nulos, e pequenos desvios são corrigidos pelo corpo.",
       "A força de gravidade deixou de puxar o seu corpo em direção ao chão.",
-      "A força normal exercida pelo assento tem intensidade infinitamente superior ao peso.",
+      "A força normal exercida pelo assento tem intensidade muito superior ao peso.",
       "O utente bariátrico perde a sua inércia quando se encosta aos braços da cadeira."
     ],
     "correctIndex": 0,
     "explanation": "A ampla base delimitada pelos pés e assento e o centro de gravidade rebaixado garantem que qualquer pequena perturbação mantenha a linha de gravidade dentro da base, restaurando a postura estável.",
     "distractorAnalysis": [
-      "Está incorreta: A gravidade atua continuamente com P = m · g.",
-      "Está incorreta: A força normal é finita e equilibra rigorosamente o peso do corpo (N = P).",
-      "Está incorreta: A inércia é proporcional à massa e mantém-se constante em qualquer posição sentada."
+      "Está incorreta: A gravidade continua a atuar sobre o corpo; é equilibrada pela força normal.",
+      "Está incorreta: A força normal é igual ao peso num corpo em repouso sobre superfície horizontal.",
+      "Está incorreta: A inércia é uma propriedade da massa e não se perde ao encostar-se."
     ],
     "nursingApplication": "Justifica a recomendação ergonómica de sentar doentes em poltronas estáveis em vez de mantê-los na beira da cama."
   },
@@ -2332,15 +2332,15 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Empurrar ativamente a cadeira rampa acima em alta velocidade.",
       "Aumentar a componente do peso P_n para colar os pneus ao piso.",
-      "Eliminar a massa inercial do passageiro da cadeira.",
-      "Atuar paralelamente à rampa no sentido ascendente, equilibrando a componente tangencial do peso (P_t) e impedindo o deslizamento."
+      "Reduzir a massa inercial do passageiro, tornando-o mais leve na rampa.",
+      "Atuar paralelamente à rampa, no sentido ascendente, equilibrando P_t."
     ],
     "correctIndex": 3,
     "explanation": "A gravidade tende a puxar a cadeira rampa abaixo com a componente P_t do peso. A força de atrito (pneus/travões) atua em sentido contrário (rampa acima) equilibrando P_t (F_a = P_t) para impedir a descida descontrolada.",
     "distractorAnalysis": [
-      "Está incorreta: O atrito é uma força passiva de resistência e não um motor de propulsão ativa.",
-      "Está incorreta: O atrito atua na direção tangencial e não afeta a intensidade da componente normal P_n.",
-      "Está incorreta: Nenhuma força de atrito altera a massa intrínseca do organismo humano."
+      "Está incorreta: O atrito não empurra a cadeira; opõe-se ao deslizamento.",
+      "Está incorreta: O peso P_n não se altera com o atrito; a força que se opõe ao deslizamento é a de atrito.",
+      "Está incorreta: A massa do passageiro não se altera numa rampa."
     ],
     "nursingApplication": "Sublinha a necessidade imperativa de verificar o funcionamento dos travões de estacionamento antes de largar uma cadeira na rampa."
   },
@@ -2349,17 +2349,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a orientação geométrica da componente P_n do peso num corpo apoiado num plano inclinado?",
     "options": [
-      "Perpendicular à superfície do plano inclinado, apontando contra o plano (equilibrada pela força normal N).",
-      "Paralela à rampa inclinada apontando para a base da rampa.",
-      "Horizontal no sentido de rotação dos ponteiros do relógio.",
-      "Vertical ascendente em direção às nuvens."
+      "Perpendicular ao plano inclinado, apontando contra a superfície.",
+      "Paralela à rampa inclinada, apontando para a base da rampa.",
+      "Horizontal, no sentido de rotação dos ponteiros do relógio.",
+      "Vertical ascendente, afastando o corpo do chão da rampa."
     ],
     "correctIndex": 0,
     "explanation": "A componente normal P_n atua perpendicularmente à superfície inclinada pressionando o corpo contra a rampa, sendo exatamente contrabalançada pela Força Normal N exercida pela rampa.",
     "distractorAnalysis": [
-      "Está incorreta: A componente paralela à rampa é P_t (componente tangencial), não P_n.",
-      "Está incorreta: P_n é uma força linear perpendicular ao plano, sem orientação circular horária.",
-      "Está incorreta: P_n aponta para a superfície do plano, nunca para cima contra a gravidade."
+      "Está incorreta: A componente paralela é P_t, e aponta para a base da rampa.",
+      "Está incorreta: Nenhuma componente do peso é horizontal no sentido dos ponteiros do relógio.",
+      "Está incorreta: O peso aponta para baixo, e não para cima."
     ],
     "nursingApplication": "Permite entender porque a pressão sobre a superfície de apoio diminui à medida que o plano fica mais empinado."
   },
@@ -2368,17 +2368,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "O que acontece à componente tangencial do peso P_t se a inclinação de uma rampa hospitalar for aumentada de 5 graus para 20 graus?",
     "options": [
-      "Diminui para metade, facilitando a retenção da maca.",
-      "Aumenta significativamente, exigindo maior força de travagem ou atrito (F_a) para evitar que o corpo deslize.",
-      "Permanece rigorosamente inalterada porque a massa do doente é a mesma.",
-      "Anula-se transformando-se exclusivamente em força normal N."
+      "Diminui para metade, o que facilita a retenção da maca no plano.",
+      "Aumenta, exigindo maior atrito (F_a) para evitar que o corpo deslize.",
+      "Permanece inalterada, porque a massa do doente não muda.",
+      "Anula-se, transformando-se em força normal N, sem alterar o deslize."
     ],
     "correctIndex": 1,
     "explanation": "À medida que o ângulo de inclinação sobe, a componente tangencial ao longo do plano P_t aumenta substancialmente. Para manter o equilíbrio (P_t = F_a), a força de atrito ou a força exercida pelo profissional tem de ser muito maior.",
     "distractorAnalysis": [
-      "Está incorreta: Aumentar a inclinação torna a rampa mais íngreme, aumentando a força de descida e não diminuindo.",
-      "Está incorreta: Embora a massa seja constante, a projeção geométrica do peso varia com o ângulo de inclinação.",
-      "Está incorreta: P_t cresce com o ângulo, enquanto a componente normal P_n é que diminui."
+      "Está incorreta: Ao aumentar a inclinação, P_t aumenta; não diminui para metade.",
+      "Está incorreta: P_t depende da inclinação e varia com ela, mesmo com a massa constante.",
+      "Está incorreta: P_t não se transforma em força normal; é a componente tangencial do peso."
     ],
     "nursingApplication": "Justifica as normas de arquitetura hospitalar que limitam a inclinação máxima de rampas a valores reduzidos (ex.: 6-8%)."
   },
