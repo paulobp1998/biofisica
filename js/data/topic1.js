@@ -12,17 +12,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a definição de Mecânica apresentada nos conceitos fundamentais da Biofísica?",
     "options": [
-      "Estuda a composição celular e a estrutura atómica dos tecidos biológicos.",
+      "Estuda a composição química e a estrutura atómica dos tecidos biológicos.",
       "Estuda as relações entre os movimentos dos corpos e as forças a eles associadas.",
-      "Analisa exclusivamente a temperatura corporal e as trocas de calor metabólicas.",
-      "Investiga a velocidade das reações químicas celulares e atividade enzimática."
+      "Estuda as trocas de calor e a regulação da temperatura corporal.",
+      "Estuda a velocidade das reações químicas e a atividade enzimática celular."
     ],
     "correctIndex": 1,
     "explanation": "A Mecânica define-se formalmente como o ramo que 'estuda as relações entre os movimentos dos corpos e as forças a eles associadas'.",
     "distractorAnalysis": [
-      "Está incorreta: A estrutura celular e atómica é objeto de estudo da biologia e química celular, não da mecânica.",
-      "Está incorreta: O estudo do calor e temperatura pertence à termodinâmica, não aos conceitos fundamentais da mecânica.",
-      "Está incorreta: A velocidade de reações enzimáticas é domínio da cinética bioquímica, não da mecânica."
+      "Está incorreta: A composição e a estrutura atómica pertencem à química e à bioquímica, não à mecânica.",
+      "Está incorreta: As trocas de calor pertencem à termodinâmica e à fisiologia térmica.",
+      "Está incorreta: A velocidade das reações químicas pertence à cinética química, não à mecânica."
     ],
     "nursingApplication": "Ajuda a analisar as forças musculares e os movimentos corporais envolvidos nas atividades diárias e mobilizações."
   },
@@ -31,17 +31,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Como se define 'Força' no âmbito dos conceitos fundamentais de Biofísica?",
     "options": [
-      "Quantidade total de matéria constituinte de um organismo ou objeto.",
-      "Taxa temporal de variação do metabolismo energético basal do corpo.",
-      "Interação entre corpos capaz de alterar o seu estado.",
-      "Energia térmica armazenada num corpo em repouso absoluto."
+      "Quantidade de matéria que constitui um organismo ou um objeto em equilíbrio.",
+      "Taxa de variação, no tempo, do metabolismo energético basal do organismo.",
+      "Interação entre corpos que pode alterar o seu estado de movimento ou de forma.",
+      "Energia térmica acumulada num corpo que se encontra em repouso absoluto."
     ],
     "correctIndex": 2,
     "explanation": "Estabelece-se explicitamente que a Força é a 'interação entre corpos capaz de alterar o seu estado' de repouso ou de movimento.",
     "distractorAnalysis": [
-      "Está incorreta: A quantidade de matéria constitui a definição física de massa, não de força.",
-      "Está incorreta: A taxa de variação de energia metabólica refere-se à potência metabólica, não à força mecânica.",
-      "Está incorreta: A energia térmica interna é uma grandeza termodinâmica escalar, distinta da interação mecânica de força."
+      "Está incorreta: Esta é a definição de massa, e não de força.",
+      "Está incorreta: O metabolismo basal é uma taxa energética, sem relação com a definição de força.",
+      "Está incorreta: A energia térmica é uma forma de energia, não uma interação mecânica entre corpos."
     ],
     "nursingApplication": "Permite compreender como a interação mecânica entre o profissional e o utente produz ou trava o movimento."
   },
@@ -50,17 +50,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é o instrumento de medição utilizado na física mecânica para quantificar a intensidade de uma força?",
     "options": [
-      "Esfigmomanómetro.",
-      "Termómetro clínico.",
-      "Goniómetro articulado.",
-      "Dinamómetro."
+      "Esfigmomanómetro, que mede a pressão arterial.",
+      "Termómetro clínico, que mede a temperatura corporal.",
+      "Goniómetro articulado, que mede a amplitude de movimento.",
+      "Dinamómetro, que mede a intensidade de uma força."
     ],
     "correctIndex": 3,
     "explanation": "Apresenta-se o 'Dinamómetro' como o instrumento físico clássico destinado a medir a intensidade de forças.",
     "distractorAnalysis": [
-      "Está incorreta: O esfigmomanómetro mede a pressão arterial em mmHg, não forças diretamente.",
-      "Está incorreta: O termómetro mede a temperatura corporal em graus Celsius.",
-      "Está incorreta: O goniómetro é usado para medir ângulos de amplitude articular, não a intensidade de forças."
+      "Está incorreta: O esfigmomanómetro mede a pressão arterial, e não uma força mecânica.",
+      "Está incorreta: O termómetro mede temperatura, e não força.",
+      "Está incorreta: O goniómetro mede ângulos articulares, e não forças."
     ],
     "nursingApplication": "O princípio do dinamómetro é aplicado em aparelhos de medição da força de preensão palmar em doentes em reabilitação."
   },
@@ -69,17 +69,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Em que princípio físico assenta o funcionamento de um dinamómetro de mola convencional?",
     "options": [
-      "Na deformação elástica de uma mola calibrada proporcionalmente à intensidade da força aplicada.",
-      "Na variação do volume de um líquido sob aquecimento contínuo.",
-      "Na contagem de impulsos elétricos gerados por desintegração radioativa.",
+      "Na deformação elástica de uma mola calibrada, proporcional à força aplicada.",
+      "Na variação do volume de um líquido quando aquecido de forma contínua.",
+      "Na contagem de impulsos elétricos produzidos por uma fonte radioativa.",
       "Na rotação de um disco condutor sob a ação de um campo magnético constante."
     ],
     "correctIndex": 0,
     "explanation": "Um dinamómetro opera com base na Lei de Hooke: a deformação elástica (alongamento) da sua mola interna é diretamente proporcional à intensidade da força aplicada.",
     "distractorAnalysis": [
-      "Está incorreta: A dilatação térmica de líquidos é o princípio de funcionamento dos termómetros clássicos de mercúrio ou álcool.",
-      "Está incorreta: A contagem de impulsos radioativos é o princípio dos detetores Geiger, sem relação com dinamómetros.",
-      "Está incorreta: A indução eletromagnética em discos condutores é usada em motores e contadores elétricos, não em dinamómetros."
+      "Está incorreta: A variação de volume de um líquido é o princípio do termómetro, e não do dinamómetro.",
+      "Está incorreta: A contagem de impulsos radioativos é o princípio do contador Geiger, e não de uma mola.",
+      "Está incorreta: A rotação de um disco num campo magnético é o princípio dos motores elétricos."
     ],
     "nursingApplication": "Compreender a calibração de sensores de força é útil ao operar camas hospitalares inteligentes com balança integrada."
   },
@@ -88,17 +88,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Na biomecânica da unidade curricular, qual é um dos principais objetivos da Biofísica ao estudar a Mecânica?",
     "options": [
-      "Sintetizar novos compostos farmacológicos orgânicos em laboratório.",
-      "Conhecer princípios científicos da mecânica e aplicá-los à anatomia humana e terapêutica.",
+      "Sintetizar novos compostos farmacológicos em laboratório, com fins terapêuticos.",
+      "Aplicar princípios da mecânica à anatomia humana e à terapêutica.",
       "Calcular a dosagem de fármacos com base no pH dos fluidos gastrointestinais.",
       "Analisar as sequências genéticas de microrganismos patogénicos hospitalares."
     ],
     "correctIndex": 1,
     "explanation": "Define-se que um dos objetivos é 'Conhecer os princípios científicos nos campos da Mecânica (...) e aplicar esses princípios à anatomia humana e terapêutica'.",
     "distractorAnalysis": [
-      "Está incorreta: A síntese farmacológica é do âmbito da química farmacêutica e bioquímica.",
-      "Está incorreta: O cálculo de dosagens e pH pertence à farmacologia e bioquímica de soluções.",
-      "Está incorreta: A sequenciação genética é do domínio da genética molecular e microbiologia."
+      "Está incorreta: A síntese de fármacos pertence à química farmacêutica, e não à biofísica mecânica.",
+      "Está incorreta: O cálculo de doses pertence à farmacologia, e não aos princípios mecânicos.",
+      "Está incorreta: A análise genética de microrganismos pertence à microbiologia e à genética."
     ],
     "nursingApplication": "Fundamenta as boas práticas de ergonomia e prevenção de lesões musculoesqueléticas na equipa de saúde."
   },
@@ -107,17 +107,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "De acordo com a definição de Força, que efeito pode uma força não equilibrada produzir num corpo?",
     "options": [
-      "Apenas o aumento imediato da sua massa molecular inercial.",
-      "Exclusivamente a transformação da sua matéria em radiação térmica.",
-      "Alterar o seu estado de repouso ou de movimento, produzindo aceleração ou deformação.",
-      "Anular instantaneamente todas as interações atómicas do corpo."
+      "Aumentar a sua massa, porque a força se acumula no interior do corpo.",
+      "Transformar o corpo em energia térmica, sem alterar o seu movimento.",
+      "Alterar o seu estado de movimento ou provocar aceleração ou deformação.",
+      "Anular as interações internas do corpo, deixando-o sem deformação."
     ],
     "correctIndex": 2,
     "explanation": "Uma força atua como agente capaz de alterar o estado de repouso ou movimento de um corpo (produzindo aceleração) ou causar deformação mecânica na sua estrutura.",
     "distractorAnalysis": [
-      "Está incorreta: A massa é uma grandeza escalar intrínseca que não se altera pela aplicação de forças comuns.",
-      "Está incorreta: A conversão de matéria em radiação ocorre em reações nucleares de alta energia, não por forças mecânicas.",
-      "Está incorreta: Forças mecânicas externas não anulam as forças de coesão atómica da matéria."
+      "Está incorreta: Uma força não aumenta a massa do corpo, que é uma propriedade sua.",
+      "Está incorreta: Uma força não equilibrada altera o movimento; não converte o corpo em calor.",
+      "Está incorreta: Uma força não anula as interações internas do corpo; altera o movimento ou a forma."
     ],
     "nursingApplication": "Mobilizar um utente no leito exige a aplicação de uma força externa controlada para vencer a inércia do repouso."
   },
@@ -126,17 +126,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a unidade do Sistema Internacional (SI) utilizada para quantificar a grandeza Força medida por um dinamómetro?",
     "options": [
-      "Quilograma (kg).",
-      "Pascal (Pa).",
-      "Joule (J).",
-      "Newton (N)."
+      "Quilograma (kg), unidade de massa no Sistema Internacional.",
+      "Pascal (Pa), unidade de pressão no Sistema Internacional.",
+      "Joule (J), unidade de energia no Sistema Internacional.",
+      "Newton (N), unidade de força no Sistema Internacional."
     ],
     "correctIndex": 3,
     "explanation": "No Sistema Internacional (SI), a unidade padrão de força é o Newton (N), conforme detalhado na tabela de grandezas da biomecânica.",
     "distractorAnalysis": [
-      "Está incorreta: O quilograma (kg) é a unidade SI de massa, que quantifica a quantidade de matéria.",
-      "Está incorreta: O Pascal (Pa) é a unidade SI de pressão (força por unidade de área).",
-      "Está incorreta: O Joule (J) é a unidade SI de energia e trabalho mecânico."
+      "Está incorreta: O quilograma é unidade de massa, e não de força.",
+      "Está incorreta: O pascal é unidade de pressão, que é força por área.",
+      "Está incorreta: O joule é unidade de energia e de trabalho."
     ],
     "nursingApplication": "Garante a correta interpretação de parâmetros de esforço e tração prescritos em equipamentos de tração ortopédica."
   },
@@ -145,17 +145,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Se a resultante de todas as forças que atuam sobre um corpo for nula, o que acontece ao seu movimento de translação?",
     "options": [
-      "Permanece em repouso ou em movimento retilíneo e uniforme.",
-      "Ganha necessariamente uma aceleração crescente contínua.",
-      "Entra imediatamente em rotação rápida em torno do seu eixo.",
-      "Aumenta espontaneamente o seu peso por ação da gravidade."
+      "Permanece em repouso ou em movimento retilíneo e uniforme, com velocidade constante.",
+      "Abranda até parar, porque deixa de haver força a mantê-lo em movimento.",
+      "Começa a rodar, porque não há força que se oponha ao seu movimento de rotação.",
+      "Ganha uma aceleração constante, porque a ausência de força deixa o corpo sem resistência."
     ],
     "correctIndex": 0,
     "explanation": "Quando a força resultante é nula (Fr = 0), o corpo mantém o seu estado de repouso ou continua em movimento retilíneo uniforme (MRU), de acordo com a 1ª Lei de Newton.",
     "distractorAnalysis": [
-      "Está incorreta: Aceleração exige uma força resultante não nula (Fr = m · a); se Fr = 0, a aceleração é rigorosamente nula.",
-      "Está incorreta: Fr = 0 não provoca rotação. A rotação depende do momento resultante (ΣM), e não da força resultante; só há rotação se ΣM ≠ 0 (p. ex., um binário, que tem Fr = 0).",
-      "Está incorreta: O peso depende da massa e gravidade local, não sofrendo alteração por equilíbrio de forças."
+      "Está incorreta: Sem força resultante, o corpo não abranda; mantém a velocidade.",
+      "Está incorreta: Uma força resultante nula não provoca rotação, porque a rotação depende do momento resultante (ΣM).",
+      "Está incorreta: A aceleração exige força resultante não nula (F = m · a); se F = 0, a aceleração é nula."
     ],
     "nursingApplication": "Explica por que uma maca parada numa superfície horizontal nivelada não se move sem intervenção externa."
   },
@@ -164,17 +164,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a principal distinção entre o conceito de Mecânica e o de Reologia apresentados no programa de Biofísica?",
     "options": [
-      "A Mecânica analisa a eletricidade corporal e a Reologia estuda a radioatividade.",
-      "A Mecânica estuda forças e movimentos de corpos, enquanto a Reologia estuda reações dos corpos a forças deformadoras.",
-      "A Mecânica estuda fluidos estáticos e a Reologia estuda exclusivamente os raios X.",
-      "A Mecânica estuda a estrutura do ADN e a Reologia estuda a fusão nuclear."
+      "A Mecânica estuda a bioquímica celular; a Reologia, a genética das proteínas.",
+      "A Mecânica estuda forças e movimentos; a Reologia, o comportamento dos materiais sob forças deformadoras.",
+      "A Mecânica estuda a temperatura corporal; a Reologia, as trocas de calor.",
+      "A Mecânica estuda a estrutura do ADN; a Reologia, as reações de oxidação dos tecidos."
     ],
     "correctIndex": 1,
     "explanation": "A Mecânica debruça-se sobre forças e alterações de movimento/equilíbrio, ao passo que a Reologia estuda as reações dos corpos a forças deformadoras (tema do Tópico 2).",
     "distractorAnalysis": [
-      "Está incorreta: Eletricidade e radioatividade são temas de bioeletrogénese e física nuclear, não de mecânica.",
-      "Está incorreta: Fluidos estáticos são o objeto da hidrostática e raios X são tema de radiação médica.",
-      "Está incorreta: O ADN é do foro da bioquímica e genética, e fusão nuclear da física do núcleo atómico."
+      "Está incorreta: A bioquímica celular e a genética das proteínas não são objeto da mecânica nem da reologia.",
+      "Está incorreta: A temperatura corporal e as trocas de calor são objeto da termodinâmica.",
+      "Está incorreta: A estrutura do ADN e as reações de oxidação são objeto da bioquímica, e não da mecânica."
     ],
     "nursingApplication": "Permite distinguir se um esforço mecânico gera deslocamento de um doente ou deformação de tecidos de suporte."
   },
@@ -183,17 +183,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Ao utilizar um dinamómetro manual para avaliar um utente, o visor regista 50 N. O que indica fisicamente este valor?",
     "options": [
-      "Que a massa do utente é de exatamente 50 quilogramas.",
-      "Que a pressão exercida na mão do utente é de 50 Pascal.",
-      "Que a intensidade da força mecânica exercida na mola do dinamómetro é de 50 Newtons.",
-      "Que a velocidade com que a mão se fechou foi de 50 metros por segundo."
+      "Que a massa do utente é de cerca de 50 quilogramas, medida pela força da mão.",
+      "Que a pressão exercida pela mola sobre a palma da mão do utente é de 50 pascal.",
+      "Que a força exercida na mola do dinamómetro tem a intensidade de 50 newtons.",
+      "Que a mão do utente se fechou com uma velocidade de 50 metros por segundo."
     ],
     "correctIndex": 2,
     "explanation": "O valor de 50 N indica diretamente a intensidade (módulo) da força de tração ou compressão mecânica exercida na mola do aparelho.",
     "distractorAnalysis": [
-      "Está incorreta: Quilogramas medem massa, não força; 50 N correspondem ao peso de cerca de 5,1 kg na Terra.",
-      "Está incorreta: Pascal mede pressão (N/m²); o dinamómetro mede força concentrada em Newtons.",
-      "Está incorreta: Metros por segundo é a unidade de velocidade, grandeza cinemática diferente de força."
+      "Está incorreta: O dinamómetro mede força, e não massa; a massa mede-se numa balança.",
+      "Está incorreta: A pressão é força por área, e o visor de um dinamómetro indica força.",
+      "Está incorreta: 50 m/s é uma velocidade, grandeza que o dinamómetro não mede."
     ],
     "nursingApplication": "Útil para registar a evolução do ganho de força muscular de um doente em recuperação funcional."
   },
@@ -202,17 +202,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Quais são os quatro elementos essenciais que caracterizam uma grandeza vetorial como a Força?",
     "options": [
-      "Massa, aceleração, velocidade e tempo de atuação.",
-      "Volume, densidade, temperatura e calor específico.",
-      "Área de contacto, pressão, viscosidade e atrito.",
-      "Intensidade (módulo), direção, sentido e ponto de aplicação."
+      "Massa, aceleração, velocidade e tempo de atuação da força sobre o corpo.",
+      "Volume, densidade, temperatura e calor específico do corpo em análise.",
+      "Intensidade (módulo), direção, sentido e ponto de aplicação.",
+      "Área de contacto, pressão, viscosidade e coeficiente de atrito da superfície."
     ],
-    "correctIndex": 3,
+    "correctIndex": 2,
     "explanation": "Todo o vetor físico é plenamente definido por quatro componentes: intensidade (módulo ou valor numérico com unidade), direção (reta de suporte), sentido (orientação na reta) e ponto de aplicação.",
     "distractorAnalysis": [
-      "Está incorreta: Massa é escalar; aceleração e velocidade são outros vetores, não componentes intrínsecos de um vetor de força.",
-      "Está incorreta: Volume, densidade e temperatura são grandezas físicas puramente escalares.",
-      "Está incorreta: Área, pressão e viscosidade são grandezas que não definem a estrutura de um vetor."
+      "Está incorreta: Massa, aceleração e tempo não definem uma força; a massa é um escalar.",
+      "Está incorreta: Volume, densidade e calor específico são propriedades dos materiais, sem relação com a força.",
+      "Está incorreta: Área, pressão e viscosidade caracterizam fluidos e superfícies, não o vetor força."
     ],
     "nursingApplication": "Essencial para posicionar corretamente membros em tração esquelética sem desviar a linha da força."
   },
@@ -221,17 +221,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a definição exata de 'Tendão' na biomecânica articular?",
     "options": [
-      "Tecido conjuntivo que conecta um músculo a um osso.",
-      "Tecido epitelial impermeável que reveste as cavidades articulares.",
-      "Bainha de mielina condutora de impulsos elétricos nervosos.",
-      "Estrutura óssea esponjosa onde ocorre a hematopoiese."
+      "Tecido epitelial impermeável que reveste as cavidades das articulações.",
+      "Bainha de mielina que conduz os impulsos elétricos entre nervos e músculos.",
+      "Tecido conjuntivo fibroso que liga um músculo a um osso.",
+      "Estrutura óssea esponjosa, onde se produzem as células do sangue."
     ],
-    "correctIndex": 0,
-    "explanation": "Define-se expressamente o tendão como: 'Tecido conjuntivo que conecta um músculo a um osso'.",
+    "correctIndex": 2,
+    "explanation": "Define-se expressamente o tendão como: 'Tecido conjuntivo fibroso que liga um músculo a um osso'.",
     "distractorAnalysis": [
-      "Está incorreta: O revestimento das cavidades articulares é feito pela membrana sinovial, não pelo tendão.",
-      "Está incorreta: A condução elétrica é feita pelos axónios com bainha de mielina no sistema nervoso.",
-      "Está incorreta: A medula óssea vermelha realiza a hematopoiese no interior do osso trabecular."
+      "Está incorreta: O epitélio reveste superfícies e cavidades, mas não liga músculos a ossos.",
+      "Está incorreta: A bainha de mielina isola as fibras nervosas; não une músculo e osso.",
+      "Está incorreta: O osso esponjoso é tecido ósseo, e não une um músculo ao osso."
     ],
     "nursingApplication": "O tendão transmite a força gerada pelas fibras musculares ao esqueleto, viabilizando o movimento humano."
   },
@@ -240,17 +240,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Como atua fisicamente a força muscular transmitida por um tendão ao osso em que se insere?",
     "options": [
-      "Como uma pressão omnidirecional que expande o volume do osso.",
-      "Como um vetor de força com ponto de aplicação na inserção óssea e direção ao longo da linha do tendão.",
-      "Como uma força de gravidade adicional que altera a massa do esqueleto.",
-      "Como uma corrente puramente elétrica sem componente de atração mecânica."
+      "Como uma pressão igual em todas as direções, que aumenta o volume do osso.",
+      "Como um vetor com ponto de aplicação na inserção óssea, ao longo do tendão.",
+      "Como uma força gravítica adicional, que altera a massa do esqueleto.",
+      "Como uma corrente elétrica, sem componente de atração mecânica sobre o osso."
     ],
     "correctIndex": 1,
     "explanation": "A tração do tendão é representada por um vetor de força cuja linha de ação segue o alinhamento das fibras do tendão e cujo ponto de aplicação coincide com a tuberosidade óssea de inserção.",
     "distractorAnalysis": [
-      "Está incorreta: A força de um tendão é direcional e trativa, não uma pressão que expande o volume ósseo.",
-      "Está incorreta: As forças tendinosas são geradas por contração de fibras musculares, não alterando a gravidade nem a massa.",
-      "Está incorreta: A transmissão tendinosa é puramente mecânica, resultante da contração ativa do músculo."
+      "Está incorreta: A tração do tendão é orientada e não aumenta o volume do osso.",
+      "Está incorreta: A força muscular não altera a massa do esqueleto; é uma força de tração.",
+      "Está incorreta: O impulso elétrico desencadeia a contração, mas quem puxa o osso é a força mecânica."
     ],
     "nursingApplication": "Ajuda a compreender como a angulação de uma articulação altera o ângulo de tração e a eficácia do movimento."
   },
@@ -259,17 +259,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a diferença física entre 'Direção' e 'Sentido' de um vetor de força no contexto da biomecânica?",
     "options": [
-      "Direção é o valor numérico em Newtons e Sentido é o instrumento que mede a força.",
-      "Direção e Sentido são termos rigorosamente sinónimos na física e no estudo de vetores.",
-      "Direção é a reta geométrica de suporte (ex.: horizontal) e Sentido é a orientação ao longo dessa reta (ex.: esquerda para a direita).",
-      "Direção refere-se exclusivamente ao peso e Sentido refere-se exclusivamente ao atrito."
+      "Direção é o valor numérico em newtons; sentido é o aparelho que mede a força.",
+      "Direção e sentido são termos sinónimos na física e no estudo dos vetores.",
+      "Direção é a reta de suporte do vetor; sentido é a orientação ao longo dela.",
+      "Direção refere-se ao peso do corpo; sentido refere-se ao atrito entre superfícies."
     ],
     "correctIndex": 2,
     "explanation": "A direção define a linha reta sobre a qual a força atua (ex.: horizontal, vertical ou oblíqua a 45º); o sentido indica para onde a seta aponta ao longo dessa linha (ex.: de baixo para cima).",
     "distractorAnalysis": [
-      "Está incorreta: O valor numérico em Newtons é a intensidade (ou módulo), não a direção.",
-      "Está incorreta: Na física vetorial, direção e sentido são propriedades distintas e não sinónimas.",
-      "Está incorreta: Todas as forças vetoriais possuem direção e sentido, não apenas o peso ou o atrito."
+      "Está incorreta: O valor em newtons é a intensidade, e o aparelho que mede a força é o dinamómetro.",
+      "Está incorreta: Direção e sentido são conceitos distintos: a reta de suporte e a orientação ao longo dela.",
+      "Está incorreta: Direção e sentido são propriedades de qualquer vetor, não de forças específicas."
     ],
     "nursingApplication": "Evita equívocos na comunicação entre profissionais sobre a direção e o sentido ao puxar ou empurrar uma maca."
   },
@@ -278,17 +278,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Ao representar a força que o tendão rotuliano exerce sobre a tíbia, onde se situa o ponto de aplicação do vetor?",
     "options": [
-      "No centro da terra por atração gravítica.",
-      "No corpo muscular do quadríceps na face anterior da coxa.",
-      "No ar, a meio caminho entre o músculo e o pé.",
+      "No centro da Terra, para onde o peso do corpo é atraído pela gravidade.",
+      "No corpo muscular do quadríceps, que se situa na face anterior da coxa.",
+      "No ar, a meio caminho entre o músculo e o pé, na direção da marcha.",
       "Na tuberosidade anterior da tíbia, onde o tendão se fixa ao osso."
     ],
     "correctIndex": 3,
     "explanation": "O ponto de aplicação de uma força de contacto exercida por um tendão localiza-se na sua zona de inserção anatómica no osso correspondente.",
     "distractorAnalysis": [
-      "Está incorreta: O centro da Terra é o ponto onde se considera a origem do campo gravitacional, não a fixação tendinosa.",
-      "Está incorreta: O ventre muscular é a origem da tensão ativa, mas a força que atua na tíbia aplica-se onde o tendão nela se fixa.",
-      "Está incorreta: Forças de contacto mecânico só se aplicam na interface física entre as estruturas em contacto."
+      "Está incorreta: A força do tendão atua no ponto de fixação ao osso, e não no centro da Terra.",
+      "Está incorreta: O músculo produz a força, mas o ponto de aplicação é a inserção do tendão.",
+      "Está incorreta: O tendão não atua no ar; o vetor tem origem na inserção óssea."
     ],
     "nursingApplication": "Importante ao avaliar pontos de sobrecarga mecânica e tendinites de inserção no sistema locomotor."
   },
@@ -297,17 +297,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Dois enfermeiros puxam uma maca na mesma direção horizontal com forças de 60 N cada um, mas em sentidos opostos. Qual é a força resultante?",
     "options": [
-      "0 N, pelo que a maca permanece em repouso.",
-      "120 N no sentido do profissional mais jovem.",
-      "60 N para a direita acelerando a maca.",
-      "3600 N por multiplicação das intensidades."
+      "120 N, no sentido do profissional mais forte, porque as intensidades se somam.",
+      "60 N para a direita, porque o puxão de um profissional prevalece sobre o do outro.",
+      "0 N, pelo que a maca se mantém parada ou em movimento uniforme.",
+      "3600 N, por multiplicação das intensidades das duas forças aplicadas."
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "explanation": "Na mesma direção com sentidos opostos, os vetores subtraem-se: Fr = 60 N - 60 N = 0 N. A força resultante é nula e a maca não se move.",
     "distractorAnalysis": [
-      "Está incorreta: A soma vetorial de forças em sentidos contrários subtrai os módulos, não os soma.",
-      "Está incorreta: Como as intensidades são idênticas (60 N e 60 N), não sobra nenhuma força resultante residual.",
-      "Está incorreta: Forças sobre uma mesma reta somam-se algebricamente com sinal, nunca se multiplicam para obter a resultante."
+      "Está incorreta: Forças opostas subtraem-se; não se somam.",
+      "Está incorreta: Com forças iguais e opostas, nenhuma prevalece; a resultante é nula.",
+      "Está incorreta: A resultante obtém-se por soma vetorial, não por multiplicação das intensidades."
     ],
     "nursingApplication": "Mostra a necessidade de coordenação de equipa: esforços com sentidos opostos anulam-se e causam fadiga inútil."
   },
@@ -316,17 +316,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Por que razão a força muscular não pode ser expressa apenas como um número simples (grandeza escalar)?",
     "options": [
-      "Porque a força muscular muda de unidade de medida a cada segundo.",
-      "Porque o seu efeito no osso depende criticamente da direção, sentido e ponto de aplicação do vetor de tração.",
-      "Porque as grandezas escalares só existem na física nuclear e química celular.",
-      "Porque os músculos produzem apenas grandezas imaginárias sem efeito real no corpo."
+      "Porque a força muscular muda de unidade de medida de segundo a segundo.",
+      "Porque o seu efeito no osso depende da direção, do sentido e do ponto de aplicação.",
+      "Porque as grandezas escalares só existem na física nuclear e na química celular.",
+      "Porque os músculos produzem grandezas imaginárias, sem efeito real no corpo."
     ],
     "correctIndex": 1,
     "explanation": "A força é uma grandeza vetorial: conhecer apenas a intensidade (ex.: 100 N) não permite saber se o osso vai fletir, estender ou rodar, dependendo da linha e ponto de tração.",
     "distractorAnalysis": [
-      "Está incorreta: A unidade de força no SI é sempre o Newton (N) e não varia com o tempo.",
-      "Está incorreta: Grandezas escalares existem amplamente na mecânica clássica, como a massa, tempo e energia.",
-      "Está incorreta: As forças musculares são interações físicas reais observáveis e mensuráveis."
+      "Está incorreta: A unidade de medida da força é o newton, e não muda ao longo do tempo.",
+      "Está incorreta: As grandezas escalares são usadas em toda a física, incluindo a mecânica.",
+      "Está incorreta: A força muscular é uma grandeza física real, com efeitos mensuráveis no osso."
     ],
     "nursingApplication": "Ajuda a planear exercícios de reabilitação ajustando o ângulo em que o músculo traciona o membro."
   },
@@ -335,17 +335,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é o papel mecânico do tecido conjuntivo tendinoso na transmissão da força motriz ao esqueleto?",
     "options": [
-      "Gera contração ativa independente através de filamentos de actina.",
-      "Substitui a necessidade de apoio articular entre os ossos.",
+      "Gera contração ativa, independente, através de filamentos de actina.",
+      "Substitui parcialmente a função das articulações na estabilidade dos ossos.",
       "Transmite a tração gerada pelo músculo esquelético diretamente à alavanca óssea.",
-      "Produz líquido sinovial para lubrificar as vértebras lombares."
+      "Produz líquido sinovial que lubrifica as superfícies das vértebras lombares."
     ],
     "correctIndex": 2,
     "explanation": "O tendão funciona como o transmissor mecânico de tração entre o músculo (gerador de força ativa) e o osso (alavanca rígida que produz movimento articular).",
     "distractorAnalysis": [
-      "Está incorreta: Os tendões são constituídos por colagénio passivo e não possuem capacidade contrátil ativa de actina/miosina.",
-      "Está incorreta: As articulações são indispensáveis como eixos de rotação (fulcros) do movimento esquelético.",
-      "Está incorreta: O líquido sinovial é produzido pela membrana sinovial articular, não pelos tendões."
+      "Está incorreta: A contração ativa é função do ventre muscular; o tendão é passivo.",
+      "Está incorreta: O tendão não substitui as articulações; apenas transmite força entre músculo e osso.",
+      "Está incorreta: O líquido sinovial é produzido pela membrana sinovial das articulações, e não pelo tendão."
     ],
     "nursingApplication": "Permite entender lesões por esforço repetitivo em tendões submetidos a tensões mecânicas elevadas."
   },
@@ -354,17 +354,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Como se representa graficamente um vetor de força na física mecânica?",
     "options": [
-      "Por um círculo cujo diâmetro representa a velocidade do corpo.",
-      "Por uma curva ondulatória representativa do comprimento de onda.",
-      "Por um gráfico tridimensional de distribuição de calor corporal.",
-      "Por um segmento de reta orientado (seta) com origem, comprimento, inclinação e ponta."
+      "Por um círculo cujo diâmetro representa a velocidade do corpo em movimento.",
+      "Por uma curva ondulatória que representa o comprimento de onda da força.",
+      "Por uma seta, ou segmento de reta orientado, com ponto de origem e comprimento.",
+      "Por um gráfico tridimensional que representa a distribuição de calor no corpo."
     ],
-    "correctIndex": 3,
+    "correctIndex": 2,
     "explanation": "Graficamente, o vetor representa-se por um segmento orientado: o comprimento indica o módulo/intensidade, a inclinação da reta define a direção, a seta aponta o sentido e a origem fixa o ponto de aplicação.",
     "distractorAnalysis": [
-      "Está incorreta: Círculos não indicam direção nem sentido unidirecional de uma força mecânica.",
-      "Está incorreta: Linhas ondulatórias são usadas para ondas eletromagnéticas e sonoras, não para vetores de força.",
-      "Está incorreta: Mapas tridimensionais de calor são termografias, pertencentes à termologia médica."
+      "Está incorreta: O diâmetro de um círculo não representa a velocidade; a força é um vetor.",
+      "Está incorreta: Uma curva ondulatória representa ondas, e não a força aplicada.",
+      "Está incorreta: A distribuição de calor não se representa por vetores de força."
     ],
     "nursingApplication": "Permite desenhar diagramas de corpo livre simples para analisar a postura e a distribuição de cargas no trabalho."
   },
@@ -373,17 +373,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Se o ângulo de inserção de um tendão relativamente à diáfise óssea se alterar durante uma flexão articular, o que acontece à componente de força que produz rotação?",
     "options": [
-      "Varia, pois as componentes vetoriais dependem da inclinação geométrica do vetor em relação ao osso.",
-      "Permanece rigorosamente inalterada independentemente de qualquer ângulo do membro.",
-      "Anula-se instantaneamente impedindo qualquer movimento articular futuro.",
-      "Transforma-se espontaneamente numa força nuclear fraca no interior do osso."
+      "Permanece inalterada, independentemente do ângulo de inserção do membro.",
+      "Varia, pois a componente de rotação depende da inclinação do tendão.",
+      "Anula-se, impedindo o movimento articular futuro.",
+      "Passa a atuar no sentido oposto, por ação da gravidade sobre o osso."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "À medida que a articulação dobra, o ângulo do vetor de força tendinoso muda, alterando a proporção de força útil para rodar o osso (componente perpendicular) e de força de compressão articular.",
     "distractorAnalysis": [
-      "Está incorreta: As componentes de um vetor dependem das funções trigonométricas do ângulo, mudando quando o ângulo varia.",
-      "Está incorreta: A força não se anula, apenas redistribui as suas componentes geométricas ao longo do arco de movimento.",
-      "Está incorreta: Forças nucleares ocorrem apenas no interior de núcleos atómicos e não derivam de ângulos articulares."
+      "Está incorreta: A componente de rotação depende do ângulo, e por isso varia com ele.",
+      "Está incorreta: A força não se anula ao mudar o ângulo; o movimento articular continua possível.",
+      "Está incorreta: A gravidade não inverte o sentido da força do tendão só por se mudar o ângulo."
     ],
     "nursingApplication": "Explica por que em certos ângulos articulares conseguimos fazer mais força do que noutros com o mesmo esforço muscular."
   },
@@ -392,17 +392,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é o enunciado correto da 1ª Lei de Newton (Lei da Inércia)?",
     "options": [
-      "A aceleração de um corpo é diretamente proporcional à força resultante e inversamente à sua massa.",
-      "Um corpo permanece em repouso ou em movimento retilíneo uniforme, a menos que atue sobre ele uma força resultante não nula.",
-      "A toda a ação mecânica opõe-se sempre uma reação de menor intensidade e direção perpendicular.",
-      "A energia total de um sistema isolado dissipa-se invariavelmente sob a forma de calor."
+      "A aceleração é diretamente proporcional à força resultante e inversamente à massa.",
+      "Um corpo mantém o seu estado de movimento, salvo se atuar sobre ele uma força resultante não nula.",
+      "A toda a ação opõe-se uma reação de menor intensidade e direção perpendicular.",
+      "A energia total de um sistema isolado acaba por se dissipar em calor."
     ],
     "correctIndex": 1,
-    "explanation": "Define-se a 1ª Lei de Newton (Lei da Inércia): um corpo permanece em repouso ou em movimento retilíneo uniforme, a menos que atue sobre ele uma força resultante não nula. Esta formulação é mais rigorosa do que «uma força externa», porque várias forças externas podem anular-se.",
+    "explanation": "Define-se a 1ª Lei de Newton (Lei da Inércia): um corpo mantém o seu estado de movimento, salvo se atuar sobre ele uma força resultante não nula. Esta formulação é mais rigorosa do que «uma força externa», porque várias forças externas podem anular-se.",
     "distractorAnalysis": [
-      "Está incorreta: A relação aceleração-força-massa constitui a 2ª Lei de Newton (F = m · a).",
-      "Está incorreta: A ação e reação têm igual intensidade e mesma direção, conforme a 3ª Lei de Newton.",
-      "Está incorreta: Num sistema isolado a energia total conserva-se (1.ª Lei da Termodinâmica); não se dissipa invariavelmente em calor, e não é a Lei da Inércia."
+      "Está incorreta: A relação aceleração-força-massa é a 2.ª Lei de Newton (F = m · a).",
+      "Está incorreta: A ação e a reação têm igual intensidade (3.ª Lei), e não menor intensidade.",
+      "Está incorreta: Num sistema isolado a energia total conserva-se (1.ª Lei da Termodinâmica)."
     ],
     "nursingApplication": "Fundamenta o uso de cintos de segurança no transporte de doentes em cadeiras de rodas e ambulâncias."
   },
@@ -411,36 +411,36 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Em termos conceituais simples, como se define a 'Inércia' de um corpo material na física clássica?",
     "options": [
-      "Os corpos tendem espontaneamente a perder massa quando entram em movimento acelerado.",
-      "Todos os materiais rígidos têm capacidade de atrair corpos vizinhos através de campos magnéticos.",
-      "Os corpos têm resistência à mudança do seu estado de movimento; é necessária uma força para o alterar.",
-      "A inércia é a velocidade instantânea medida por um velocímetro num dado momento."
+      "Tendência dos corpos para perder massa ao entrar em movimento acelerado.",
+      "Capacidade dos materiais rígidos de atrair corpos vizinhos por campos magnéticos.",
+      "Resistência dos corpos à mudança do seu estado de movimento.",
+      "Velocidade instantânea do corpo, medida por um velocímetro num dado momento."
     ],
     "correctIndex": 2,
     "explanation": "Resume-se: 'Por outras palavras: Os corpos têm resistência à mudança do seu estado de movimento (inércia). É necessária uma força para o alterar!'.",
     "distractorAnalysis": [
-      "Está incorreta: A inércia não provoca perda de massa; a massa é a medida quantitativa da própria inércia.",
-      "Está incorreta: A atração magnética é propriedade de campos eletromagnéticos, distinta da inércia mecânica universal.",
-      "Está incorreta: Velocidade instantânea é uma grandeza cinemática, ao passo que inércia é a resistência à variação do movimento."
+      "Está incorreta: A massa de um corpo não se perde com o movimento; é uma propriedade que se mantém.",
+      "Está incorreta: A atração magnética não define a inércia, que existe em todos os corpos com massa.",
+      "Está incorreta: A velocidade é uma grandeza cinemática; a inércia é a resistência à mudança de movimento."
     ],
     "nursingApplication": "Mostra porque é necessário aplicar uma força inicial considerável para colocar em movimento uma cama hospitalar pesada."
   },
   {
     "id": 1023,
     "topicId": 1,
-    "question": "O que é estritamente necessário para alterar a velocidade (em módulo ou direção) de um corpo material?",
+    "question": "O que é necessário para alterar a velocidade (em módulo ou direção) de um corpo?",
     "options": [
-      "Manter o corpo em equilíbrio mecânico com força resultante nula.",
-      "Apenas aguardar a passagem natural do tempo no referencial.",
-      "Isolar termicamente o corpo de todas as fontes de radiação solar.",
-      "A atuação de uma força externa resultante que atue sobre ele."
+      "Manter o corpo em equilíbrio mecânico, com força resultante nula.",
+      "Aguardar a passagem natural do tempo, no referencial do observador.",
+      "Uma força externa resultante não nula que atue sobre o corpo.",
+      "Isolar termicamente o corpo de todas as fontes de radiação solar."
     ],
-    "correctIndex": 3,
+    "correctIndex": 2,
     "explanation": "Pela 1ª Lei de Newton, na ausência de forças externas resultantes, o estado de movimento permanece constante. Para alterar a velocidade, é indispensável a atuação de uma força resultante externa.",
     "distractorAnalysis": [
-      "Está incorreta: Com força resultante nula o corpo permanece em MRU ou repouso, não alterando a sua velocidade.",
-      "Está incorreta: O tempo decorre sem que o corpo mude de velocidade se nenhuma força atuar sobre ele.",
-      "Está incorreta: O isolamento térmico impede trocas de calor, mas não induz acelerações mecânicas."
+      "Está incorreta: Com força resultante nula, o corpo mantém a velocidade; não se altera.",
+      "Está incorreta: O tempo, por si só, não altera a velocidade; é preciso uma força.",
+      "Está incorreta: O isolamento térmico não influencia o movimento do corpo."
     ],
     "nursingApplication": "Explica por que travar uma cadeira de rodas requer a força de atrito exercida pelos travões sobre as rodas."
   },
@@ -449,17 +449,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Se um carrinho de penso for empurrado num corredor plano ideal sem qualquer atrito ou resistência do ar, o que prevê a 1ª Lei de Newton?",
     "options": [
-      "Que continuaria em movimento retilíneo uniforme com velocidade constante indefinidamente.",
-      "Que pararia espontaneamente após alguns metros por cansaço inercial.",
-      "Que começaria a acelerar cada vez mais depressa sem qualquer força aplicada.",
-      "Que inverteria imediatamente o sentido de marcha de forma espontânea."
+      "Que pararia ao fim de alguns metros, por perda de inércia com o tempo.",
+      "Que manteria a velocidade constante, em movimento retilíneo uniforme.",
+      "Que começaria a acelerar cada vez mais depressa, sem força aplicada.",
+      "Que inverteria o sentido de marcha, por efeito de uma força de reação do ar."
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "explanation": "Sem forças contrárias de atrito ou resistência para desacelerar o corpo, a 1ª Lei afirma que este continuará indefinidamente em movimento retilíneo uniforme (velocidade constante).",
     "distractorAnalysis": [
-      "Está incorreta: A matéria não tem 'cansaço'; na física real os objetos param devido à força de atrito, não espontaneamente.",
-      "Está incorreta: Acelerar exigiria uma força resultante no sentido do movimento (F = m · a), ausente na situação descrita.",
-      "Está incorreta: Inverter o sentido requer aplicação de força externa contrária."
+      "Está incorreta: Sem força resultante, o carrinho não para; mantém a velocidade (1.ª Lei).",
+      "Está incorreta: Acelerar sem força contraria a 1.ª Lei; a aceleração exige força resultante.",
+      "Está incorreta: Sem força resultante, não há inversão do sentido de marcha."
     ],
     "nursingApplication": "Ajuda a perceber que as macas no mundo real desaceleram devido ao atrito do pavimento e dos eixos das rodas."
   },
@@ -468,17 +468,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Por que razão uma cadeira de rodas parada num piso horizontal nivelado não começa a mover-se sozinha?",
     "options": [
-      "Porque a força nuclear forte a cola permanentemente ao pavimento da enfermaria.",
-      "Porque possui inércia e, estando em repouso, permanece em repouso a menos que uma força externa atue.",
-      "Porque a sua massa inercial é convertida em energia gravitacional que a imobiliza.",
-      "Porque a pressão atmosférica exerce uma força descendente infinita sobre o assento."
+      "Porque o atrito com o pavimento da enfermaria a mantém colada ao chão.",
+      "Porque, em repouso, mantém o estado de repouso enquanto não atuar uma força.",
+      "Porque a sua massa inercial se converte em energia gravitacional que a imobiliza.",
+      "Porque a pressão atmosférica exerce uma força descendente sobre o assento."
     ],
     "correctIndex": 1,
     "explanation": "Em repouso e com forças resultantes equilibradas (peso e normal), a inércia do corpo mantém-no em repouso até que alguém lhe aplique uma força externa.",
     "distractorAnalysis": [
-      "Está incorreta: A força nuclear forte atua unicamente a distâncias subatómicas no interior do núcleo dos átomos.",
-      "Está incorreta: Não há conversão de massa em energia nas situações de repouso mecânico da vida quotidiana.",
-      "Está incorreta: A pressão atmosférica atua uniformemente em todas as direções com valor finito (~1 atm), sem imobilizar objetos."
+      "Está incorreta: A força nuclear forte atua dentro do núcleo atómico, e não no pavimento.",
+      "Está incorreta: A massa não se converte em energia gravitacional; a cadeira fica parada por inércia.",
+      "Está incorreta: A pressão atmosférica não é a causa do repouso; a força resultante é nula."
     ],
     "nursingApplication": "Garante a estabilidade previsível dos equipamentos parados quando travados adequadamente."
   },
@@ -487,17 +487,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Que célebre físico formulou as Leis do Movimento e da Gravitação e proferiu a frase: 'Se vi mais longe, foi por estar de pé sobre os ombros de gigantes'?",
     "options": [
-      "Arquimedes.",
-      "Robert Hooke.",
-      "Isaac Newton.",
-      "Euclides de Alexandria."
+      "Galileu Galilei, autor dos estudos sobre a queda dos corpos e o movimento.",
+      "Robert Hooke, autor da lei da elasticidade e de estudos de microscopia.",
+      "Isaac Newton, autor das leis do movimento e da gravitação universal.",
+      "Arquimedes, autor do princípio da flutuação dos corpos em fluidos."
     ],
     "correctIndex": 2,
     "explanation": "Introduz-se as Leis do Movimento com a célebre citação de Isaac Newton: 'Se vi mais longe, foi por estar de pé sobre os ombros de gigantes'.",
     "distractorAnalysis": [
-      "Está incorreta: Arquimedes é citado no Tópico 1 na secção das alavancas ('século III a.C.').",
-      "Está incorreta: Robert Hooke é o cientista associado à Lei da Elasticidade ('Hooke, 1660').",
-      "Está incorreta: Euclides é associado aos modelos teóricos indeformáveis da geometria e reologia."
+      "Está incorreta: Galileu estudou a queda dos corpos, mas não formulou as leis do movimento e da gravitação universal.",
+      "Está incorreta: Hooke formulou a lei da elasticidade, e não as leis do movimento e da gravitação.",
+      "Está incorreta: Arquimedes formulou o princípio da flutuação, e não as leis do movimento."
     ],
     "nursingApplication": "Contextualiza historicamente a evolução da física clássica aplicada às ciências da vida e saúde."
   },
@@ -506,17 +506,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a grandeza física que serve de medida quantitativa da inércia de um corpo material?",
     "options": [
-      "O volume ocupado no espaço.",
-      "A temperatura termodinâmica.",
-      "A velocidade angular de rotação.",
-      "A massa do corpo (m)."
+      "O volume ocupado pelo corpo no espaço tridimensional.",
+      "A temperatura termodinâmica do corpo em equilíbrio térmico.",
+      "A velocidade angular de rotação do corpo em torno do seu eixo.",
+      "A massa do corpo, medida em quilogramas (m)."
     ],
     "correctIndex": 3,
     "explanation": "A massa é a propriedade intrínseca que quantifica a inércia: quanto maior for a massa de um corpo, maior é a sua resistência a alterações do seu estado de repouso ou movimento.",
     "distractorAnalysis": [
-      "Está incorreta: Dois corpos com o mesmo volume podem ter densidades e massas completamente diferentes, logo inércias distintas.",
-      "Está incorreta: A temperatura indica o grau de agitação molecular, não quantificando a inércia de translação do corpo.",
-      "Está incorreta: A velocidade angular descreve o movimento rotativo, não sendo a medida intrínseca da inércia de matéria."
+      "Está incorreta: O volume mede o espaço ocupado, e não a resistência à mudança de movimento.",
+      "Está incorreta: A temperatura não mede a inércia de um corpo.",
+      "Está incorreta: A velocidade angular descreve a rotação, e não a inércia."
     ],
     "nursingApplication": "Explica por que doentes com maior massa corporal exigem maior contenção e apoio em manobras de transferência."
   },
@@ -525,17 +525,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Um utente está confortavelmente deitado no seu leito hospitalar. Qual é a força resultante que atua sobre o seu corpo?",
     "options": [
-      "Zero Newtons (Fr = 0 N), pois o corpo está em equilíbrio estático de repouso.",
-      "Igual ao peso do utente multiplicado pela velocidade da luz.",
-      "Infinita, porque a gravidade terrestre nunca cessa de atuar.",
-      "Igual à força muscular dos membros superiores do profissional."
+      "Zero newtons (Fr = 0 N), porque o corpo está em equilíbrio estático.",
+      "Igual ao peso do utente, dirigido para baixo, sem força de apoio.",
+      "Igual ao peso do utente, porque a gravidade é a única força que atua sobre ele.",
+      "Igual à força muscular dos membros superiores do profissional de saúde."
     ],
     "correctIndex": 0,
     "explanation": "Estando em repouso estático, a aceleração é nula e a soma vetorial de todas as forças que nele atuam (peso do doente e força normal exercida pelo colchão) é nula: Fr = 0 N.",
     "distractorAnalysis": [
-      "Está incorreta: Multiplicar peso pela velocidade da luz não tem qualquer significado físico em mecânica clássica.",
-      "Está incorreta: A força gravítica tem valor finito bem determinado (P = m · g) e é equilibrada pela força normal do colchão.",
-      "Está incorreta: Se ninguém estiver a tocar no utente, a força muscular de terceiros não atua sobre o corpo dele."
+      "Está incorreta: A cama exerce uma força de apoio sobre o utente, igual e oposta ao peso.",
+      "Está incorreta: A gravidade atua, mas a força de apoio da cama anula-a; a resultante é nula.",
+      "Está incorreta: A força do profissional não atua sobre o corpo do utente em repouso."
     ],
     "nursingApplication": "Compreender o equilíbrio estático no leito é a base para a prevenção de desalinhamentos posturais."
   },
@@ -544,17 +544,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Ao travar bruscamente um veículo, os passageiros desprovidos de cinto são projetados para a frente. Como se explica isto pela 1ª Lei de Newton?",
     "options": [
-      "Os passageiros sofrem uma força mística que os atrai para o vidro da frente.",
-      "Por inércia, o corpo dos passageiros mantém a velocidade que trazia até que uma força externa o pare.",
-      "A gravidade terrestre deixa de atuar temporariamente durante o ato de travar.",
-      "O veículo acelera subitamente para a frente empurrando as pessoas."
+      "Uma força de atração exercida pelo vidro da frente puxa os passageiros.",
+      "Por inércia, o corpo mantém a velocidade que tinha até uma força o travar.",
+      "A gravidade deixa de atuar temporariamente durante o ato de travar.",
+      "O veículo acelera subitamente para a frente, empurrando as pessoas."
     ],
     "correctIndex": 1,
     "explanation": "Quando o veículo trava, as rodas travam o chassis; contudo, o corpo do passageiro, por inércia (1ª Lei), continua o seu movimento com a velocidade prévia até colidir com algum obstáculo ou ser retido pelo cinto.",
     "distractorAnalysis": [
-      "Está incorreta: Não há forças místicas; trata-se da conservação do estado de movimento pela inércia descrita por Newton.",
-      "Está incorreta: A aceleração da gravidade mantém-se constante (g ≈ 9,8 m/s²) atuando na vertical.",
-      "Está incorreta: Travar significa desacelerar o veículo, não acelerá-lo para a frente."
+      "Está incorreta: Não existe uma força desse tipo; a projeção resulta da inércia dos passageiros.",
+      "Está incorreta: A gravidade não deixa de atuar ao travar; o peso mantém-se.",
+      "Está incorreta: Ao travar, o veículo desacelera e não empurra os passageiros para a frente."
     ],
     "nursingApplication": "Reforça a justificação científica inegável do uso de cintos de segurança no transporte sanitário."
   },
@@ -563,17 +563,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Para que um objeto em movimento altere a sua trajetória retilínea e faça uma curva, o que estabelece a 1ª Lei de Newton?",
     "options": [
-      "Não é necessária nenhuma força, pois os corpos curvam espontaneamente no vácuo.",
-      "Apenas que a sua massa diminua para metade durante a rotação.",
-      "É indispensável a atuação de uma força externa que mude a direção do vetor velocidade.",
-      "Basta que o objeto mantenha aceleração rigorosamente nula durante toda a curva."
+      "Não é preciso força, pois o corpo curva-se por si só no vácuo.",
+      "Que a massa diminua para metade durante a trajetória.",
+      "É preciso uma força externa que mude a direção da velocidade.",
+      "Basta que o corpo mantenha uma aceleração nula durante toda a curva."
     ],
     "correctIndex": 2,
     "explanation": "O movimento natural livre de forças é retilíneo e uniforme. Mudar a direção do vetor velocidade (fazer curva) requer aceleração e, portanto, uma força externa não nula a atuar sobre o corpo.",
     "distractorAnalysis": [
-      "Está incorreta: Objetos livres de forças seguem em linha reta; curvar exige sempre a atuação de forças.",
-      "Está incorreta: A massa não varia ao fazer uma curva numa trajetória mecânica comum.",
-      "Está incorreta: Ao curvar a velocidade muda de direção, logo há aceleração centrípeta e a aceleração não pode ser nula."
+      "Está incorreta: Uma trajetória curva exige força, pois a velocidade muda de direção.",
+      "Está incorreta: A massa não se altera durante a curva, e a sua variação não produz curvatura.",
+      "Está incorreta: Aceleração nula implica movimento retilíneo uniforme, e não uma curva."
     ],
     "nursingApplication": "Explica por que conduzir uma maca numa curva num corredor hospitalar exige puxar lateralmente o equipamento."
   },
@@ -582,36 +582,36 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a fórmula fundamental da 2ª Lei de Newton apresentada?",
     "options": [
-      "P = m / g",
-      "M = F / b",
-      "P = F · A",
-      "F = m · a"
+      "P = m / g, com P em newtons e g em metros por segundo ao quadrado.",
+      "M = F / b, com M em newton-metros e b em metros.",
+      "F = m · a, com F em newtons, m em quilogramas e a em m/s².",
+      "P = F · A, com P em pascal e A em metros quadrados."
     ],
-    "correctIndex": 3,
+    "correctIndex": 2,
     "explanation": "A expressão clássica da 2ª Lei de Newton (Lei fundamental da dinâmica) na biomecânica é F = m · a (força igual a massa multiplicada pela aceleração).",
     "distractorAnalysis": [
-      "Está incorreta: A fórmula do peso é P = m · g (multiplicação, não divisão).",
-      "Está incorreta: A fórmula do momento é M = F · b (multiplicação, não divisão).",
-      "Está incorreta: A fórmula da pressão é p = F / A (divisão de força por área, não multiplicação)."
+      "Está incorreta: O peso é P = m · g (produto, e não quociente).",
+      "Está incorreta: O momento de uma força é M = F · b, e não um quociente.",
+      "Está incorreta: A pressão é P = F / A, e não um produto de força por área."
     ],
     "nursingApplication": "Permite calcular a força necessária para acelerar ou desacelerar equipamentos clínicos em movimento."
   },
   {
     "id": 1032,
     "topicId": 1,
-    "question": "Qual é o enunciado formal da 2ª Lei de Newton apresentado?",
+    "question": "Qual é o enunciado correto da 2.ª Lei de Newton?",
     "options": [
-      "A força resultante que atua sobre um corpo é diretamente proporcional à aceleração que ele adquire e à sua massa.",
-      "A energia de um corpo depende exclusivamente da temperatura a que ele se encontra exposto.",
-      "Dois corpos em repouso atraem-se com força inversamente proporcional ao cubo das suas massas.",
-      "A força de contacto entre superfícies é sempre perpendicular à linha de ação do tendão."
+      "A força resultante é igual ao produto da massa do corpo pela aceleração adquirida.",
+      "A energia de um corpo depende da temperatura a que ele se encontra exposto no ambiente.",
+      "Dois corpos em repouso atraem-se com força proporcional à soma das suas massas.",
+      "A força de contacto entre duas superfícies é perpendicular à direção do tendão."
     ],
     "correctIndex": 0,
-    "explanation": "Enuncia-se: 'A força resultante que atua sobre um corpo é diretamente proporcional à aceleração que ele adquire e à sua massa'.",
+    "explanation": "A 2.ª Lei relaciona força, massa e aceleração: a força resultante é igual ao produto da massa do corpo pela aceleração que ele adquire (F = m · a).",
     "distractorAnalysis": [
-      "Está incorreta: Esta afirmação refere-se à energia térmica e calorimetria, não à Lei Fundamental da Dinâmica de Newton.",
-      "Está incorreta: A lei da gravitação universal é proporcional ao produto das massas e inversa ao quadrado da distância, não ao cubo.",
-      "Está incorreta: A força normal é perpendicular à superfície de contacto, não se relacionando com o enunciado da 2ª Lei."
+      "Está incorreta: A energia de um corpo não depende apenas da temperatura; a 2.ª Lei relaciona força, massa e aceleração.",
+      "Está incorreta: A atração gravítica depende do produto das massas e da distância, e não da sua soma.",
+      "Está incorreta: A força de contacto não se relaciona com a direção dos tendões desta forma."
     ],
     "nursingApplication": "Compreender a dinâmica do movimento permite quantificar o impacto de arranques e travagens bruscas no doente."
   },
@@ -620,17 +620,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "A partir da fórmula F = m · a, como se expressa algebricamente a aceleração 'a'?",
     "options": [
-      "a = F · m",
-      "a = F / m",
-      "a = m / F",
-      "a = F + m"
+      "a = F · m, ou seja, a aceleração é igual à força multiplicada pela massa.",
+      "a = F / m, ou seja, a aceleração é igual à força a dividir pela massa.",
+      "a = m / F, ou seja, a aceleração é igual à massa a dividir pela força.",
+      "a = F + m, ou seja, a aceleração é igual à soma da força com a massa."
     ],
     "correctIndex": 1,
     "explanation": "Deduz-se matematicamente as formas equivalentes da 2ª Lei: isolando a aceleração, obtém-se a = F / m.",
     "distractorAnalysis": [
-      "Está incorreta: Multiplicar F por m daria uma grandeza com unidades de N·kg, o que é dimensionalmente incorreto para aceleração.",
-      "Está incorreta: Inverter a fração para m / F originaria s²/m em vez de m/s², violando a análise dimensional.",
-      "Está incorreta: Não se somam grandezas físicas com dimensões diferentes (Força em N e Massa em kg)."
+      "Está incorreta: Se a = F · m, a aceleração cresceria com a massa, o que contraria a 2.ª Lei.",
+      "Está incorreta: A aceleração diminui quando a massa aumenta; m/F inverte esta relação.",
+      "Está incorreta: Força e massa não se somam; a 2.ª Lei relaciona-as por quociente."
     ],
     "nursingApplication": "Mostra que para uma mesma força aplicada, quanto maior for a massa m, menor será a aceleração adquirida a."
   },
@@ -639,17 +639,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "A partir da fórmula F = m · a, como se expressa algebricamente a massa 'm' de um corpo?",
     "options": [
-      "m = F · a",
-      "m = a / F",
-      "m = F / a",
-      "m = F - a"
+      "m = F · a, ou seja, a massa é a força multiplicada pela aceleração.",
+      "m = a / F, ou seja, a massa é a aceleração a dividir pela força.",
+      "m = F / a, ou seja, a massa é a força a dividir pela aceleração.",
+      "m = F - a, ou seja, a massa é a força subtraída à aceleração."
     ],
     "correctIndex": 2,
     "explanation": "Estabelece-se que, isolando a massa na equação fundamental da dinâmica, obtém-se m = F / a.",
     "distractorAnalysis": [
-      "Está incorreta: Multiplicar F por a daria unidades de N·m/s², dimensionalmente inconsistente com quilogramas (kg).",
-      "Está incorreta: Dividir aceleração por força (a / F) daria o inverso da massa (1/m), não a massa.",
-      "Está incorreta: Subtrair grandezas com unidades diferentes (Newtons menos m/s²) é uma operação inválida na física."
+      "Está incorreta: Multiplicar F por a não isola a massa; a 2.ª Lei dá m = F / a.",
+      "Está incorreta: a/F inverte a relação; a massa é F dividido por a.",
+      "Está incorreta: Força e aceleração não se subtraem para obter a massa."
     ],
     "nursingApplication": "Permite deduzir a massa inercial de um corpo a partir da medição da força e da aceleração produzida."
   },
@@ -661,14 +661,14 @@ const TOPIC_1_QUESTIONS = [
       "Utente com desnutrição calórica grave e baixa densidade óssea.",
       "Utente sujeito a tração ortopédica contínua nos membros inferiores.",
       "Utente que utiliza cadeira de rodas com rodas de diâmetro reduzido.",
-      "Utente com obesidade severa."
+      "Utente com obesidade severa, cuja massa corporal é muito elevada."
     ],
     "correctIndex": 3,
     "explanation": "O apontamento de aplicação prática define taxativamente: 'Utente bariátrico = Utente com obesidade severa'.",
     "distractorAnalysis": [
-      "Está incorreta: Desnutrição calórica grave corresponde a baixo peso ou caquexia, o oposto de obesidade severa.",
-      "Está incorreta: Tração ortopédica é um procedimento terapêutico mecânico, não uma definição de utente bariátrico.",
-      "Está incorreta: O tipo de cadeira de rodas é um dispositivo de apoio e não a definição do quadro clínico do utente."
+      "Está incorreta: A desnutrição grave corresponde a massa reduzida, o oposto de um utente bariátrico.",
+      "Está incorreta: A tração ortopédica é um tratamento de imobilização, e não uma definição de utente bariátrico.",
+      "Está incorreta: O diâmetro das rodas da cadeira não define o utente bariátrico."
     ],
     "nursingApplication": "Contextualiza as necessidades especiais de equipamentos de transferência reforçados e apoio de mais elementos da equipa."
   },
@@ -677,17 +677,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Se a massa de um utente for o dobro da de outro, que força é necessária aplicar à sua cadeira para imprimir a mesma aceleração?",
     "options": [
-      "O dobro da força, porque F é diretamente proporcional à massa m para a mesma aceleração.",
-      "A mesma força de antes, porque a aceleração independe da massa do corpo.",
-      "Metade da força, porque corpos pesados movem-se mais facilmente com menos esforço.",
-      "Quatro vezes menos força, devido à compensação pelo aumento da inércia."
+      "O dobro da força, pois a força é proporcional à massa, para a mesma aceleração.",
+      "A mesma força, pois a aceleração não depende da massa do corpo que é empurrado.",
+      "Metade da força, pois corpos mais pesados movem-se com mais facilidade e esforço.",
+      "Quatro vezes mais força, pois a força cresce com o quadrado da massa do utente."
     ],
     "correctIndex": 0,
     "explanation": "Pela 2ª Lei (F = m · a), com a constante, duplicando a massa (2m) é indispensável duplicar a força (2F): 'Essa força será tanto maior quanto maior for a massa do corpo'.",
     "distractorAnalysis": [
-      "Está incorreta: A aceleração depende inversamente da massa; com a mesma força, o corpo com dobro da massa teria metade da aceleração.",
-      "Está incorreta: Corpos pesados exigem mais força, nunca menos, para acelerar à mesma taxa.",
-      "Está incorreta: Maior inércia opõe maior resistência à aceleração, exigindo mais força e nunca menos."
+      "Está incorreta: Com a mesma força, a aceleração diminui quando a massa aumenta (a = F/m).",
+      "Está incorreta: Corpos mais pesados exigem mais força para a mesma aceleração, e não menos.",
+      "Está incorreta: A força é proporcional à massa, e não ao seu quadrado."
     ],
     "nursingApplication": "Fundamenta a regra ergonómica de mobilizar doentes muito pesados com a ajuda de mais profissionais ou guincho mecânico."
   },
@@ -696,17 +696,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Um enfermeiro aplica uma força resultante de 100 N a um carrinho vazio de 10 kg e depois a mesma força a um carrinho carregado de 50 kg. Como se comparam as acelerações?",
     "options": [
-      "Ambos adquirem exatamente a mesma aceleração de 10 m/s².",
-      "O carrinho vazio adquire 10 m/s² e o carrinho carregado adquire 2 m/s² (5 vezes menor).",
-      "O carrinho carregado adquire uma aceleração 5 vezes superior à do carrinho vazio.",
-      "Nenhum dos carrinhos adquire aceleração porque a força é inferior ao peso da terra."
+      "Ambos adquirem a mesma aceleração de 10 m/s², pois a força é igual.",
+      "O vazio adquire 10 m/s² e o carregado 2 m/s².",
+      "O carrinho carregado adquire uma aceleração 5 vezes superior à do vazio.",
+      "Não há aceleração, pois a força aplicada é igual ao peso do carrinho."
     ],
     "correctIndex": 1,
     "explanation": "Usando a = F / m: no vazio a = 100 / 10 = 10 m/s²; no carregado a = 100 / 50 = 2 m/s². A aceleração do carrinho pesado é 5 vezes menor para a mesma força.",
     "distractorAnalysis": [
-      "Está incorreta: A aceleração não pode ser igual quando as massas são diferentes e a força é a mesma (a = F/m).",
-      "Está incorreta: Maior massa produz menor aceleração (proporcionalidade inversa entre a e m), nunca maior.",
-      "Está incorreta: Uma força resultante não nula de 100 N produz inevitavelmente aceleração segundo a 2ª Lei de Newton."
+      "Está incorreta: A aceleração depende da massa; com massas diferentes, as acelerações também são diferentes.",
+      "Está incorreta: O carregado tem maior massa e, por isso, menor aceleração: 5 vezes menor, e não maior.",
+      "Está incorreta: A força é horizontal e o peso é vertical; o peso não anula a aceleração horizontal."
     ],
     "nursingApplication": "Alerta o profissional para controlar com maior cautela a inércia e travagem de equipamentos hospitalares pesados."
   },
@@ -715,17 +715,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Em termos conceituais simples, como se resume o princípio prático da 2.ª Lei de Newton?",
     "options": [
-      "Para manter um corpo em movimento, a força resultante tem de ser sempre crescente.",
-      "A massa de um corpo diminui proporcionalmente à distância percorrida no tempo.",
-      "Para acelerar um corpo, é necessário aplicar-lhe uma força. Essa força será tanto maior quanto maior for a massa do corpo.",
-      "Todos os corpos aceleram espontaneamente a 9,8 m/s² na horizontal sem intervenção externa."
+      "Para manter um corpo em movimento, a força resultante tem de aumentar com o tempo.",
+      "A massa de um corpo diminui à medida que percorre uma distância no tempo.",
+      "Para acelerar um corpo é preciso uma força, tanto maior quanto maior for a sua massa.",
+      "Os corpos aceleram naturalmente na horizontal, a cerca de 9,8 m/s², sem forças."
     ],
     "correctIndex": 2,
-    "explanation": "Resume-se: 'Por outras palavras: Para acelerar um corpo, é necessário aplicar-lhe uma força. Essa força será tanto maior quanto maior for a massa do corpo'.",
+    "explanation": "Resume-se: para acelerar um corpo é preciso aplicar-lhe uma força, tanto maior quanto maior for a sua massa.",
     "distractorAnalysis": [
-      "Está incorreta: Manter o movimento em velocidade constante requer força resultante nula (MRU), não crescente.",
-      "Está incorreta: A massa é invariável ao longo do percurso em situações de mecânica clássica.",
-      "Está incorreta: A aceleração de 9,8 m/s² é a da gravidade vertical na Terra, não uma aceleração horizontal espontânea."
+      "Está incorreta: Manter um corpo em movimento uniforme não exige força crescente; com resultante nula, a 1.ª Lei dispensa força.",
+      "Está incorreta: A massa de um corpo não diminui com o percurso; é uma propriedade constante.",
+      "Está incorreta: Nenhum corpo acelera sem força; os 9,8 m/s² são a aceleração da queda vertical."
     ],
     "nursingApplication": "Explica a relação intuitiva entre peso/massa de materiais a transportar e o esforço físico muscular despendido."
   },
@@ -734,17 +734,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Se uma força resultante horizontal de 40 N atuar sobre uma cadeira com massa de 8 kg (desprezando atritos), qual é a aceleração produzida?",
     "options": [
-      "320 m/s²",
-      "0,2 m/s²",
-      "48 m/s²",
-      "5 m/s²"
+      "320 m/s², obtida por multiplicação de 40 por 8.",
+      "0,2 m/s², obtida por divisão de 8 por 40.",
+      "5 m/s², obtida por divisão de 40 por 8.",
+      "48 m/s², obtida por soma de 40 e 8."
     ],
-    "correctIndex": 3,
+    "correctIndex": 2,
     "explanation": "Aplicando a = F / m: a = 40 N / 8 kg = 5 m/s².",
     "distractorAnalysis": [
-      "Está incorreta: 320 m/s² resultaria de multiplicar 40 por 8 (F · m), violando a fórmula a = F / m.",
-      "Está incorreta: 0,2 m/s² resultaria da inversão m / F (8 / 40), o que está incorreto.",
-      "Está incorreta: 48 m/s² resultaria de somar F com m (40 + 8), operação matematicamente errada."
+      "Está incorreta: Multiplicar F por m contraria a 2.ª Lei, que dá a = F / m.",
+      "Está incorreta: Dividir m por F inverte a relação correta.",
+      "Está incorreta: Somar F e m não tem sentido físico nesta relação."
     ],
     "nursingApplication": "Permite quantificar o comportamento cinemático e a segurança de equipamentos móveis na enfermaria."
   },
@@ -753,17 +753,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Na prática de enfermagem, por que razão a mobilização de um utente bariátrico exige técnicas e meios auxiliares especiais?",
     "options": [
-      "Porque a elevada massa inercial exige forças muito maiores para iniciar ou travar o movimento com segurança.",
-      "Porque os doentes com obesidade severa deixam de obedecer à atração da gravidade terrestre.",
-      "Porque a 2ª Lei de Newton deixa de se aplicar a corpos com massa superior a 100 kg.",
-      "Porque o atrito cinético torna-se nulo quando a massa corporal aumenta substancialmente."
+      "Porque a massa elevada exige forças maiores para iniciar ou travar o movimento.",
+      "Porque os doentes com obesidade severa deixam de obedecer à atração da gravidade.",
+      "Porque a 2.ª Lei de Newton deixa de se aplicar a corpos com massa superior a 100 kg.",
+      "Porque o atrito cinético se anula quando a massa corporal aumenta de forma significativa."
     ],
     "correctIndex": 0,
     "explanation": "Devido a F = m · a, massas muito elevadas exigem forças massivas quer para serem aceleradas quer para serem travadas. Sem meios mecânicos de apoio, o esforço sobre a coluna dos profissionais torna-se lesivo.",
     "distractorAnalysis": [
-      "Está incorreta: A gravidade atua sobre todos os corpos com massa, sendo o peso proporcional à massa (P = m · g).",
-      "Está incorreta: As Leis de Newton são universais na mecânica clássica e aplicam-se a qualquer valor de massa macroscópica.",
-      "Está incorreta: O atrito não se anula; pelo contrário, a força de atrito geralmente aumenta com o peso do corpo sobre o plano."
+      "Está incorreta: A gravidade atua sobre todos os corpos com massa; o peso é proporcional à massa (P = m · g).",
+      "Está incorreta: As leis de Newton aplicam-se a qualquer massa macroscópica, sem limite de 100 kg.",
+      "Está incorreta: O atrito não se anula com a massa; em geral, aumenta com o peso sobre a superfície."
     ],
     "nursingApplication": "Prevenção de acidentes de trabalho e de lesões dorsolombares na equipa de enfermagem durante manobras no leito."
   },
@@ -772,16 +772,16 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a representação matemática do par ação-reação da 3ª Lei de Newton apresentada?",
     "options": [
-      "F<sub>A->B</sub> + F<sub>B->A</sub> = m · a",
-      "F<sub>A->B</sub> = - F<sub>B->A</sub> (ou intensidades iguais e sentidos opostos)",
-      "F<sub>A->B</sub> / F<sub>B->A</sub> = 0",
-      "F<sub>A->B</sub> = F<sub>B->A</sub>²"
+      "F<sub>A->B</sub> + F<sub>B->A</sub> = m · a, com a massa dos dois corpos somada.",
+      "F<sub>A->B</sub> = - F<sub>B->A</sub>, com a mesma intensidade e sentidos opostos.",
+      "F<sub>A->B</sub> / F<sub>B->A</sub> = 0, com as forças a anularem-se mutuamente.",
+      "F<sub>A->B</sub> = F<sub>B->A</sub>², com a intensidade elevada ao quadrado."
     ],
     "correctIndex": 1,
     "explanation": "Apresenta-se a formulação clássica vetorial: F<sub>A->B</sub> = - F<sub>B->A</sub>, significando que as forças têm a mesma intensidade e direção, mas sentidos opostos.",
     "distractorAnalysis": [
       "Está incorreta: As forças atuam em corpos distintos, pelo que somá-las para obter m·a de um único corpo é incorreto.",
-      "Está incorreta: O quociente entre as suas intensidades seria 1, nunca 0.",
+      "Está incorreta: O quociente entre as intensidades seria 1, e não 0; as forças atuam em corpos distintos.",
       "Está incorreta: A relação é de estrita igualdade de intensidade, não de proporção quadrática."
     ],
     "nursingApplication": "Fundamental para compreender as forças mútuas que se desenvolvem na interface entre o doente e a superfície de apoio."
@@ -792,35 +792,35 @@ const TOPIC_1_QUESTIONS = [
     "question": "Qual é o enunciado formal da 3ª Lei de Newton apresentado?",
     "options": [
       "A aceleração de um corpo em queda livre é constante e independente da sua massa.",
-      "A força de atrito é sempre perpendicular à superfície que suporta o peso do corpo.",
-      "Sempre que um corpo (A) exerce uma força sobre um segundo corpo (B), o corpo B exerce simultaneamente uma força sobre o corpo A que lhe é igual em intensidade e direção, mas em sentido oposto.",
-      "A soma de todas as forças num corpo em movimento acelerado é invariavelmente nula."
+      "A força de atrito é perpendicular à superfície que suporta o peso do corpo.",
+      "Quando um corpo A exerce uma força sobre B, B exerce sobre A uma força igual e de sentido oposto.",
+      "A soma de todas as forças que atuam num corpo em movimento acelerado é nula."
     ],
     "correctIndex": 2,
-    "explanation": "'Sempre que um corpo (A) exerce uma força sobre um segundo corpo (B), o corpo B exerce simultaneamente uma força sobre o corpo A que lhe é igual em intensidade e direção, mas em sentido oposto'.",
+    "explanation": "'Quando um corpo A exerce uma força sobre B, B exerce sobre A uma força igual e de sentido oposto'.",
     "distractorAnalysis": [
-      "Está incorreta: A aceleração da gravidade constante em queda livre descreve o movimento uniformemente variado, não a 3ª Lei.",
+      "Está incorreta: A aceleração da gravidade em queda livre descreve o movimento uniformemente variado, não a 3.ª Lei.",
       "Está incorreta: A força de atrito é tangencial e paralela à superfície, não perpendicular.",
-      "Está incorreta: Num corpo acelerado a força resultante é não nula (Fr = m · a), e a 3ª Lei trata de forças entre corpos distintos."
+      "Está incorreta: Num corpo acelerado a força resultante é não nula (Fr = m · a), e a 3.ª Lei trata de forças entre corpos distintos."
     ],
     "nursingApplication": "Ensina a ter consciência de que a força que a mão do enfermeiro exerce sobre o utente tem a mesma intensidade da força que o utente exerce sobre a mão."
   },
   {
     "id": 1043,
     "topicId": 1,
-    "question": "Por que razão as forças de ação e de reação NUNCA se anulam mutuamente num mesmo corpo?",
+    "question": "Por que razão as forças de ação e de reação não se anulam mutuamente num mesmo corpo?",
     "options": [
-      "Porque a força de reação ocorre sempre 10 minutos após a força de ação.",
-      "Porque a força de reação tem sempre uma intensidade 50% menor que a de ação.",
-      "Porque uma força atua no plano horizontal e a outra atua sempre no plano vertical.",
-      "Porque atuam sempre em corpos diferentes (a ação atua no corpo B e a reação atua no corpo A)."
+      "Porque a força de reação ocorre 10 minutos após a força de ação.",
+      "Porque a força de reação tem uma intensidade 50% menor que a de ação.",
+      "Porque uma força atua no plano horizontal e a outra no plano vertical.",
+      "Porque atuam em corpos diferentes: a ação em B e a reação em A."
     ],
     "correctIndex": 3,
     "explanation": "Duas forças só se anulam mutuamente se atuarem sobre o mesmo corpo. Como a ação atua num corpo e a reação atua no outro corpo, elas nunca se anulam entre si.",
     "distractorAnalysis": [
-      "Está incorreta: A ação e a reação ocorrem em simultâneo (instantaneamente no mesmo instante temporal).",
-      "Está incorreta: As intensidades de ambas as forças são rigorosamente iguais, sem qualquer perda de 50%.",
-      "Está incorreta: A ação e a reação partilham exatamente a mesma reta de suporte (mesma direção), tendo apenas sentidos contrários."
+      "Está incorreta: Ação e reação são simultâneas; não há atraso de 10 minutos.",
+      "Está incorreta: Ação e reação têm a mesma intensidade; não há redução de 50 %.",
+      "Está incorreta: Ação e reação têm a mesma direção; não atuam em planos diferentes."
     ],
     "nursingApplication": "Evita o erro comum de pensar que o peso e a força normal são um par ação-reação, pois ambos atuam no mesmo corpo."
   },
@@ -829,17 +829,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Um profissional de saúde empurra uma parede da enfermaria com uma força horizontal de 70 N dirigida para a frente. Qual é a força que a parede exerce sobre as mãos do profissional?",
     "options": [
-      "Uma força de exatamente 70 N, na mesma direção horizontal, dirigida para trás.",
-      "Zero Newtons, porque a parede é um corpo inerte sem músculos.",
-      "Uma força de 140 N dirigida para o chão por atração gravítica.",
-      "Uma força de 35 N porque os materiais de alvenaria dissipam metade da força."
+      "Uma força de 70 N, na mesma direção horizontal, dirigida para trás.",
+      "Zero newtons, porque a parede não tem músculos e não pode reagir.",
+      "Uma força de 140 N, dirigida para o chão por ação da atração gravítica.",
+      "Uma força de 35 N, porque os materiais de alvenaria dissipam metade da força."
     ],
     "correctIndex": 0,
     "explanation": "Pela 3ª Lei de Newton, a parede reage instantaneamente sobre o profissional com uma força de intensidade rigorosamente igual (70 N), na mesma direção horizontal e em sentido oposto (para trás).",
     "distractorAnalysis": [
-      "Está incorreta: A 3ª Lei de Newton aplica-se a todos os corpos materiais, inanimados ou vivos, independentemente de possuírem músculos.",
-      "Está incorreta: A reação ocorre na mesma linha de ação horizontal, sem dobrar para 140 N nem mudar para a vertical.",
-      "Está incorreta: A igualdade de intensidades é estrita e não depende da composição do material rígido."
+      "Está incorreta: A parede reage mecanicamente à força, sem necessidade de músculos.",
+      "Está incorreta: A reação é horizontal e de igual intensidade; não há força gravítica de 140 N.",
+      "Está incorreta: A alvenaria não dissipa metade da força; a reação tem a mesma intensidade."
     ],
     "nursingApplication": "Explica a importância de manter calçado estável e boa postura ao exercer força sobre estruturas de apoio."
   },
@@ -848,17 +848,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual das seguintes afirmações traduz, em linguagem quotidiana e pedagógica, o princípio fundamental da 3.ª Lei de Newton?",
     "options": [
-      "Quem espera sempre alcança.",
+      "Quem espera com paciência acaba por alcançar o que deseja, sem esforço.",
       "Toda a ação tem a sua reação de igual intensidade e sentido oposto.",
-      "A física quântica resolve todos os mistérios biológicos.",
-      "O movimento perpétuo é o objetivo de toda a terapêutica médica."
+      "A biologia molecular explica muitos processos do corpo, sem recorrer à mecânica.",
+      "O movimento perpétuo é um objetivo de toda a terapêutica de reabilitação."
     ],
     "correctIndex": 1,
     "explanation": "Conclui-se de forma pedagógica: 'Por outras palavras: Toda a ação tem a sua reação de igual intensidade e sentido oposto'.",
     "distractorAnalysis": [
-      "Está incorreta: Provérbio popular não mencionado em nenhum ponto da biomecânica da unidade curricular.",
-      "Está incorreta: A física quântica não é abordada nem mencionada no âmbito do Tópico 1 da biomecânica.",
-      "Está incorreta: O movimento perpétuo viola as leis da termodinâmica e não consta na biomecânica."
+      "Está incorreta: A espera não é uma lei física e não traduz a 3.ª Lei.",
+      "Está incorreta: A biologia molecular não traduz a 3.ª Lei de Newton; é um domínio diferente.",
+      "Está incorreta: O movimento perpétuo é impossível, e não é objetivo terapêutico."
     ],
     "nursingApplication": "Compreensão da interação mútua de forças no posicionamento e mobilização de doentes na prática clínica de enfermagem."
   },
@@ -867,17 +867,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Ao caminhar no chão da enfermaria, o pé empurra o piso para trás. Qual é a força que impulsiona a pessoa para a frente?",
     "options": [
-      "A força centrífuga decorrente da rotação da Terra.",
-      "A força nuclear forte entre as moléculas de borracha do sapato.",
-      "A força de reação que o piso exerce sobre a sola do calçado dirigida para a frente.",
-      "A atração gravítica exercida pelo ar ambiente circundante."
+      "A força de atrito que o calçado exerce sobre o piso, dirigida para trás.",
+      "A elasticidade da sola do sapato, que devolve a energia para a frente.",
+      "A reação do piso, que empurra a sola do calçado para a frente, em cada passo.",
+      "A atração gravítica exercida pelo ar que envolve a pessoa em cada passo."
     ],
     "correctIndex": 2,
     "explanation": "Ao caminhar, o pé exerce uma força de ação para trás no solo; pela 3ª Lei de Newton, o solo exerce uma força de reação para a frente sobre o pé (força de atrito estático), que propulsiona a marcha.",
     "distractorAnalysis": [
-      "Está incorreta: A força centrífuga terrestre é minúscula e atua para o espaço exterior, não impulsionando a marcha horizontal.",
-      "Está incorreta: A força nuclear forte atua apenas nos núcleos atómicos a distâncias subatómicas.",
-      "Está incorreta: O ar tem densidade baixa e não exerce atração gravitacional propulsora sobre os corpos."
+      "Está incorreta: Esta força atua sobre o piso, e não sobre a pessoa; a força que a impulsiona é a reação do piso.",
+      "Está incorreta: A sola deforma-se e recupera, mas não é uma força externa que impulsiona a pessoa; a força vem da reação do piso.",
+      "Está incorreta: A atração gravítica puxa para baixo e não impulsiona a pessoa para a frente."
     ],
     "nursingApplication": "Compreensão essencial para avaliar o risco de escorregamento e queda em pisos molhados sem aderência."
   },
@@ -886,17 +886,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Relativamente ao instante em que ocorrem as forças de ação e de reação da 3ª Lei de Newton, qual das afirmações é verdadeira?",
     "options": [
-      "A força de ação surge primeiro e a de reação surge com atraso de vários segundos.",
+      "A força de ação surge primeiro, e a reação aparece depois, com algum atraso.",
       "A reação só ocorre se o corpo atingido sofrer uma deformação plástica visível.",
-      "A ação só existe se houver movimento acelerado contínuo entre os dois corpos.",
-      "As forças de ação e reação ocorrem rigorosamente em simultâneo no tempo."
+      "As forças de ação e de reação ocorrem em simultâneo, no mesmo instante.",
+      "A ação só existe se houver movimento acelerado contínuo entre os dois corpos."
     ],
-    "correctIndex": 3,
+    "correctIndex": 2,
     "explanation": "As forças de interação entre dois corpos são perfeitamente simultâneas: nenhuma antecede a outra, existindo apenas enquanto durar o contacto ou interação mútua.",
     "distractorAnalysis": [
-      "Está incorreta: Não há desfasamento temporal; a reação é perfeitamente instantânea e simultânea à ação.",
-      "Está incorreta: A reação ocorre quer haja deformação elástica, plástica ou rigidez indeformável aparente.",
-      "Está incorreta: Ação e reação existem tanto em corpos estáticos em repouso como em corpos em movimento."
+      "Está incorreta: Ação e reação não se sucedem; ocorrem no mesmo instante.",
+      "Está incorreta: A reação existe mesmo sem deformação visível do corpo atingido.",
+      "Está incorreta: A ação e a reação existem em qualquer interação de forças, mesmo sem movimento acelerado."
     ],
     "nursingApplication": "Importante para entender o impacto imediato de colisões e forças aplicadas em contexto clínico."
   },
@@ -905,17 +905,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Quando um doente se senta numa cadeira de rodas exercendo uma força para baixo sobre o assento, o que faz o assento da cadeira?",
     "options": [
-      "Exerce sobre o corpo do doente uma força vertical dirigida para cima de igual intensidade.",
-      "Anula a massa do doente para evitar que a estrutura colapse sob o peso.",
-      "Exerce uma força horizontal para a esquerda de metade da intensidade do peso.",
-      "Não exerce qualquer força porque a cadeira é um objeto inanimado."
+      "Exerce sobre o doente uma força vertical, para cima, de igual intensidade.",
+      "Anula a massa do doente, para evitar que a estrutura colapse sob o peso.",
+      "Exerce uma força horizontal, para a esquerda, de metade da intensidade do peso.",
+      "Não exerce força, porque é uma estrutura inanimada."
     ],
     "correctIndex": 0,
     "explanation": "Pela 3ª Lei de Newton, ao exercer uma força vertical para baixo no assento, o assento reage exercendo uma força vertical para cima de igual intensidade sobre o corpo do utente.",
     "distractorAnalysis": [
-      "Está incorreta: A estrutura da cadeira suporta a força mecânica, mas nunca altera a massa inercial do corpo humano.",
-      "Está incorreta: A reação atua na mesma linha de ação (vertical), e não na horizontal nem com intensidade reduzida.",
-      "Está incorreta: A 3ª Lei de Newton aplica-se a todas as superfícies e objetos mecânicos."
+      "Está incorreta: O assento não altera a massa do doente; a massa é uma propriedade do corpo.",
+      "Está incorreta: A força de apoio é vertical, e não horizontal.",
+      "Está incorreta: O assento reage à força aplicada, como exige a 3.ª Lei de Newton."
     ],
     "nursingApplication": "Compreender a força de suporte do assento é crucial para a correta prescrição de almofadas anti-escaras."
   },
@@ -924,17 +924,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Se um camião de grande tonelagem colidir contra um automóvel pequeno ligeiro, como se compara a intensidade da força que o camião exerce sobre o automóvel com a que o automóvel exerce sobre o camião?",
     "options": [
-      "A força do camião é muito maior porque a sua massa é superior.",
-      "Ambas as forças têm rigorosamente a mesma intensidade, pois formam um par ação-reação.",
-      "A força do automóvel é maior porque ele sofreu uma desaceleração superior.",
+      "A força do camião é muito maior, porque a sua massa é bastante superior.",
+      "Ambas as forças têm a mesma intensidade, pois formam um par ação-reação.",
+      "A força do automóvel é maior, porque sofreu uma desaceleração superior.",
       "A força exercida é nula para ambos os veículos no instante da colisão."
     ],
     "correctIndex": 1,
     "explanation": "Pela 3ª Lei de Newton, a intensidade da força mútua na colisão é exatamente a mesma em ambos os corpos. O automóvel sofre maior dano e aceleração apenas porque tem muito menor massa (a = F/m).",
     "distractorAnalysis": [
-      "Está incorreta: A maior massa do camião não aumenta a força relativa; o par ação-reação tem rigorosamente a mesma intensidade.",
-      "Está incorreta: A desaceleração superior do carro deve-se à sua menor massa pela 2ª Lei, não a uma força maior.",
-      "Está incorreta: No impacto geram-se forças intensíssimas que produzem deformações plásticas severas."
+      "Está incorreta: A massa afeta as acelerações, e não a intensidade da força de interação.",
+      "Está incorreta: O automóvel sofre maior aceleração, mas as forças têm a mesma intensidade.",
+      "Está incorreta: As forças de colisão não são nulas; são forças de interação mútuas."
     ],
     "nursingApplication": "Ajuda a clarificar o erro comum de confundir a força exercida com os efeitos (aceleração e danos) da colisão."
   },
@@ -943,17 +943,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Dois patinadores de gelo, um de 80 kg e outro de 40 kg, empurram-se mutuamente pelas mãos. Se o patinador de 80 kg aplica 120 N no de 40 kg, que força recebe de volta?",
     "options": [
-      "Recebe 60 N porque o outro patinador tem metade do seu peso.",
-      "Recebe 240 N devido à amplificação pelo gelo sem atrito.",
-      "Recebe exatamente 120 N em sentido contrário, de acordo com a 3ª Lei de Newton.",
-      "Recebe 0 N porque o patinador mais leve não consegue aplicar força."
+      "Recebe 60 N, porque o outro patinador tem metade do seu peso.",
+      "Recebe 240 N, devido à amplificação da força pelo gelo, que não tem atrito.",
+      "Recebe 120 N, em sentido contrário, de acordo com a 3.ª Lei de Newton.",
+      "Recebe 0 N, porque o patinador mais leve não consegue aplicar força."
     ],
     "correctIndex": 2,
     "explanation": "A intensidade do par ação-reação é rigorosamente idêntica em ambos os intervenientes: 120 N. O patinador mais leve terá o dobro da aceleração (a = 120/40 = 3 m/s² vs 120/80 = 1,5 m/s²), mas a força é a mesma.",
     "distractorAnalysis": [
-      "Está incorreta: A força de reação não se reduz para metade da massa; a intensidade das forças é rigorosamente igual.",
-      "Está incorreta: A ausência de atrito permite deslizamento livre, mas não multiplica a força gerada pelo contacto.",
-      "Está incorreta: O contacto mecânico gera reciprocamente a força de 120 N em ambos os corpos."
+      "Está incorreta: A força de reação não depende do peso do outro; é igual à força de ação.",
+      "Está incorreta: O gelo não amplifica forças; a reação tem a mesma intensidade da ação.",
+      "Está incorreta: Mesmo o patinador mais leve aplica força, e a reação é igual à ação."
     ],
     "nursingApplication": "Ilustra que numa transferência de doente, o esforço exercido reflete-se em igual magnitude sobre o cuidador."
   },
