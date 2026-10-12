@@ -1456,17 +1456,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é o objetivo biomecânico do uso de colchões especiais de ar ou viscoelásticos?",
     "options": [
-      "Eliminar totalmente a massa inercial do corpo do doente.",
-      "Aumentar a área de contacto para diminuir a pressão exercida nos pontos de apoio (p = F / A).",
-      "Aumentar a força normal concentrando-a num único ponto ósseo.",
-      "Acelerar o doente em movimentos periódicos contínuos a alta velocidade."
+      "Reduzir a massa inercial do doente, aliviando assim a força normal exercida.",
+      "Aumentar a área de contacto, diminuindo a pressão nos pontos de apoio (p = F / A).",
+      "Aumentar a força normal, concentrando-a num único ponto ósseo do doente.",
+      "Acelerar o doente, com movimentos periódicos contínuos e de alta velocidade."
     ],
     "correctIndex": 1,
     "explanation": "A força normal total (peso do doente) permanece constante. Ao moldar-se ao corpo, o colchão aumenta a área de superfície de contacto (A), reduzindo drasticamente a pressão resultante (p = F / A) abaixo do limite de oclusão capilar.",
     "distractorAnalysis": [
-      "Está incorreta: Nenhum colchão altera a massa do utente; a massa é uma constante intrínseca do organismo.",
-      "Está incorreta: Concentrar a força aumentaria perigosamente a pressão pontual, acelerando a necrose dos tecidos.",
-      "Está incorreta: Colchões alternantes funcionam com insuflação lenta e suave, sem acelerações bruscas."
+      "Está incorreta: A massa inercial do doente não se altera com o colchão; o peso mantém-se.",
+      "Está incorreta: Concentrar a força num único ponto aumenta a pressão, o oposto do objetivo.",
+      "Está incorreta: Os colchões não aceleram o doente; o objetivo é reduzir a pressão em repouso."
     ],
     "nursingApplication": "Justifica a seleção e utilização correta de superfícies de redistribuição de pressão na prática hospitalar."
   },
@@ -1476,15 +1476,15 @@ const TOPIC_1_QUESTIONS = [
     "question": "Quando se eleva a cabeceira da cama articulada transformando-a num plano inclinado, o que acontece à componente de Força Normal exercida pelo colchão?",
     "options": [
       "Aumenta proporcionalmente para o triplo do peso original.",
-      "Permanece rigorosamente inalterada independentemente de qualquer inclinação.",
-      "Diminui, pois apenas a componente perpendicular do peso (P_n = P · cos θ) é equilibrada pela força normal, e esta diminui com o aumento do ângulo.",
+      "Permanece inalterada, mesmo com a cama inclinada.",
+      "Diminui, pois a normal equilibra a componente perpendicular do peso (P_n = P · cos θ).",
       "Transforma-se numa força eletromagnética que atrai o doente para a parede."
     ],
     "correctIndex": 2,
     "explanation": "No plano inclinado, a força normal equilibra apenas a componente perpendicular do peso (N = P_n = P · cos θ). À medida que a cama inclina, P_n diminui e a componente tangencial P_t aumenta; o corpo só desliza se P_t ultrapassar o atrito estático máximo.",
     "distractorAnalysis": [
-      "Está incorreta: A força normal nunca excede o peso num plano inclinado estático livre de forças externas adicionais.",
-      "Está incorreta: A força normal varia com a função cosseno da inclinação, diminuindo com o aumento do ângulo.",
+      "Está incorreta: A força normal não excede o peso num plano inclinado sem forças externas adicionais.",
+      "Está incorreta: A força normal varia com o cosseno da inclinação, diminuindo com o aumento do ângulo.",
       "Está incorreta: A normal é uma força de contacto perpendicular à superfície; não atrai o doente para a parede."
     ],
     "nursingApplication": "Alerta para o facto de que, no modelo simplificado, elevar a cabeceira transfere parte do peso para o deslizamento (cisalhamento). Na prática, o peso concentra-se na região sagrada e isquiática, por isso recomenda-se limitar a elevação da cabeceira (cerca de 30°, salvo contraindicação)."
@@ -1494,17 +1494,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a unidade padrão no Sistema Internacional para expressar a Força Normal?",
     "options": [
-      "Pascal (Pa).",
-      "Quilograma (kg).",
-      "Newton-metro (N·m).",
-      "Newton (N)."
+      "Newton (N), unidade de força do Sistema Internacional.",
+      "Pascal (Pa), unidade de pressão do Sistema Internacional.",
+      "Quilograma (kg), unidade de massa do Sistema Internacional.",
+      "Newton-metro (N·m), unidade de momento de força do Sistema Internacional."
     ],
-    "correctIndex": 3,
+    "correctIndex": 0,
     "explanation": "A Força Normal é uma força, pelo que a sua unidade no Sistema Internacional é o Newton (N).",
     "distractorAnalysis": [
-      "Está incorreta: Pascal (Pa) é a unidade de pressão (força por unidade de área).",
-      "Está incorreta: Quilograma (kg) é a unidade de massa.",
-      "Está incorreta: Newton-metro (N·m) é a unidade de momento de uma força (torque) ou trabalho."
+      "Está incorreta: O pascal é unidade de pressão, força por área, e não de força.",
+      "Está incorreta: O quilograma é unidade de massa, e não de força.",
+      "Está incorreta: O newton-metro é unidade de momento de força, e não de força normal."
     ],
     "nursingApplication": "Previne confusões terminológicas e dimensionais na resolução de problemas físicos de apoio e sustentação."
   },
@@ -1513,17 +1513,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Considerando a interação mecânica entre um utente em decúbito dorsal e o colchão, onde se localiza a reação à força normal exercida pelo colchão sobre o corpo do doente?",
     "options": [
-      "Na superfície do colchão (é a força que o corpo do doente exerce sobre o colchão para baixo).",
-      "No centro de gravidade da Terra por atração cósmica.",
-      "Nas rodas da cama que contactam com o pavimento da enfermaria.",
-      "No ar atmosférico que circunda o leito do utente."
+      "Na superfície do colchão, onde o doente exerce força sobre ele para baixo.",
+      "No corpo do doente, no ponto de contacto com o colchão, na mesma direção.",
+      "No centro de massa do doente, dirigida para o interior do corpo, por ação da gravidade.",
+      "No pavimento da enfermaria, por baixo da cama, dirigida para cima."
     ],
     "correctIndex": 0,
     "explanation": "Se o corpo A é o doente e o corpo B é o colchão: o colchão exerce a força normal N no doente (para cima); a reação correspondente da 3ª Lei é exercida pelo doente sobre o colchão (para baixo com igual intensidade).",
     "distractorAnalysis": [
-      "Está incorreta: A reação à força do peso (atração Terra-doente) é que se situa no centro da Terra, não a reação da força normal de contacto.",
-      "Está incorreta: A força nas rodas é a interação entre as rodas e o chão, um contacto mecânico distinto.",
-      "Está incorreta: O ar circundante não é o corpo de apoio que exerce a força normal de sustentação da cama."
+      "Está incorreta: A reação de uma força atua sobre o outro corpo, e não sobre o mesmo corpo onde a força atua.",
+      "Está incorreta: A força de reação não se localiza no centro de massa; está na superfície de contacto.",
+      "Está incorreta: O pavimento não interage com a força normal do colchão sobre o doente."
     ],
     "nursingApplication": "Consolida a aplicação rigorosa da 3ª Lei de Newton e a identificação correta dos pares de forças em contacto."
   },
@@ -1533,16 +1533,16 @@ const TOPIC_1_QUESTIONS = [
     "question": "Qual é a definição exata de Força de Atrito no estudo da mecânica e do movimento?",
     "options": [
       "Força perpendicular exercida por uma superfície que suporta um corpo em repouso.",
-      "Força tangencial que se opõe ao movimento.",
+      "Força tangencial à superfície de contacto, que se opõe ao movimento.",
       "Atração gravítica exercida pela Terra sobre corpos com grande quantidade de matéria.",
-      "Energia radiante emitida por núcleos atómicos instáveis em transição."
+      "Energia radiante emitida por núcleos atómicos instáveis durante a transição."
     ],
     "correctIndex": 1,
-    "explanation": "Estabelece-se textualmente: 'Força de atrito: Força tangencial que se opõe ao movimento'.",
+    "explanation": "Define-se a força de atrito como força tangencial à superfície de contacto que se opõe ao movimento.",
     "distractorAnalysis": [
-      "Está incorreta: A força perpendicular é a Força Normal (N), não a força de atrito.",
-      "Está incorreta: A atração gravítica define a Força da Gravidade ou Peso.",
-      "Está incorreta: Energia radiante emitida por núcleos é a radiação nuclear, não a força de atrito mecânica."
+      "Está incorreta: Esta é a força normal, perpendicular à superfície, e não o atrito.",
+      "Está incorreta: A atração gravítica é o peso, e não uma força de contacto tangencial.",
+      "Está incorreta: A energia radiante não é uma força mecânica de contacto."
     ],
     "nursingApplication": "Permite entender as forças de resistência encontradas ao empurrar carrinhos, macas e posicionar doentes."
   },
@@ -1551,17 +1551,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Como se distinguem o 'Atrito estático' e o 'Atrito cinético' no estudo das forças mecânicas?",
     "options": [
-      "O atrito estático atua na água e o atrito cinético atua exclusivamente no ar.",
-      "O atrito estático atua no plano vertical e o atrito cinético no plano oblíquo.",
-      "Atrito estático: impede o movimento de começar; Atrito cinético: força de resistência durante o movimento.",
-      "Não há distinção física entre ambos, sendo termos exatamente idênticos."
+      "O atrito estático atua na água, e o atrito cinético atua no ar.",
+      "O atrito estático atua no plano vertical, e o atrito cinético no plano oblíquo.",
+      "Atrito estático impede o movimento de começar; atrito cinético resiste durante o movimento.",
+      "Não há distinção física entre ambos, sendo termos equivalentes."
     ],
     "correctIndex": 2,
-    "explanation": "Categoriza-se: 'Atrito estático: Impede o movimento de começar; Atrito cinético: Força de resistência durante o movimento'.",
+    "explanation": "Categoriza-se: o atrito estático impede o movimento de começar; o atrito cinético é a força de resistência durante o movimento.",
     "distractorAnalysis": [
-      "Está incorreta: Resistência em fluidos (água ou ar) é atrito viscoso/hidrodinâmico, não a definição dos dois regimes da biomecânica.",
-      "Está incorreta: Ambos atuam tangencialmente a superfícies de contacto, independentemente da orientação no espaço.",
-      "Está incorreta: A distinção é fundamental e reflete dois estados mecânicos distintos (repouso vs movimento)."
+      "Está incorreta: Os dois atritos atuam entre superfícies sólidas em contacto, e não na água ou no ar.",
+      "Está incorreta: A força de atrito é tangencial à superfície de contacto, e não se define por planos verticais ou oblíquos.",
+      "Está incorreta: Os dois atritos distinguem-se pelo estado de movimento do corpo, o que é uma diferença física."
     ],
     "nursingApplication": "Ajuda a planear manobras de mobilização sabendo que o arranque inicial requer a maior força."
   },
@@ -1570,17 +1570,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a relação correta entre o atrito estático máximo e o atrito cinético?",
     "options": [
-      "O atrito cinético é sempre dez vezes superior ao atrito estático.",
-      "O atrito estático é rigorosamente igual a zero em qualquer material.",
-      "O atrito estático e o cinético têm sempre a mesma intensidade em todos os corpos.",
+      "O atrito cinético é, em geral, superior ao atrito estático máximo.",
+      "O atrito estático é nulo pelo simples facto de o corpo estar em contacto com a superfície.",
+      "O atrito estático e o cinético têm a mesma intensidade na maioria dos corpos.",
       "O atrito estático máximo é superior ao atrito cinético."
     ],
     "correctIndex": 3,
     "explanation": "Enfatiza-se expressamente: 'O atrito estático máximo é superior ao atrito cinético.'.",
     "distractorAnalysis": [
-      "Está incorreta: O atrito cinético é menor que o atrito estático máximo, nunca dez vezes superior.",
-      "Está incorreta: O atrito estático é diferente de zero sempre que as superfícies em contacto apresentam rugosidade microscópica.",
-      "Está incorreta: O atrito cinético é inferior ao atrito estático de arranque na esmagadora maioria dos materiais comuns."
+      "Está incorreta: Em geral, o atrito cinético é inferior ao estático máximo, e não superior.",
+      "Está incorreta: O atrito estático é nulo sem força tangencial aplicada, e não pelo simples contacto.",
+      "Está incorreta: Os atritos estático e cinético têm, em geral, intensidades diferentes."
     ],
     "nursingApplication": "Princípio físico de enorme relevância ergonómica para profissionais de enfermagem."
   },
@@ -1609,16 +1609,16 @@ const TOPIC_1_QUESTIONS = [
     "question": "Uma força horizontal de 20 N é aplicada a uma maca parada, mas a maca não se move porque o atrito estático máximo é de 50 N. Qual é a força de atrito real que atua na maca nesse momento?",
     "options": [
       "50 N em sentido contrário, fazendo a maca andar para trás.",
-      "Exatamente 20 N em sentido oposto, equilibrando perfeitamente a força aplicada.",
-      "0 N, porque o atrito só existe quando o objeto já se está a mover.",
-      "1000 N, multiplicando a força pela gravidade local."
+      "20 N, em sentido oposto à força aplicada, equilibrando-a.",
+      "0 N, porque o atrito se manifesta quando o objeto já está em movimento.",
+      "1000 N, resultante de multiplicar a força pela gravidade local."
     ],
     "correctIndex": 1,
     "explanation": "Enquanto o corpo permanece em repouso, o atrito estático ajusta-se exatamente ao valor da força aplicada para manter o equilíbrio: F_atrito = 20 N (Fr = 0). Os 50 N representam apenas o limite máximo antes de romper o repouso.",
     "distractorAnalysis": [
-      "Está incorreta: Se o atrito fosse 50 N contra 20 N aplicados, a maca aceleraria para trás sozinha, o que seria fisicamente absurdo.",
-      "Está incorreta: O atrito estático existe precisamente no repouso para impedir o início do movimento.",
-      "Está incorreta: Multiplicar forças não tem sentido físico para determinar forças de equilíbrio estático."
+      "Está incorreta: O atrito estático não atinge o máximo de 50 N; ajusta-se à força aplicada, e a maca não se move.",
+      "Está incorreta: O atrito estático existe com o corpo parado e ajusta-se à força aplicada.",
+      "Está incorreta: A força de atrito não resulta de multiplicar uma força pela gravidade; é um valor em newtons ajustado ao equilíbrio."
     ],
     "nursingApplication": "Evita a confusão comum entre o atrito estático instantâneo e o valor de atrito estático limite máximo."
   },
@@ -1627,17 +1627,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a orientação geométrica (direção e sentido) do vetor Força de Atrito em relação à superfície de contacto?",
     "options": [
-      "Direção perpendicular à superfície e sentido apontando para o interior do solo.",
-      "Direção vertical ascendente no sentido da força de gravidade.",
-      "Direção tangencial (paralela) à superfície de contacto e sentido oposto ao movimento ou tendência de movimento.",
-      "Direção circular oblíqua rodando no sentido dos ponteiros do relógio."
+      "Direção perpendicular à superfície, com sentido para o interior do solo.",
+      "Direção vertical ascendente, no mesmo sentido da força da gravidade.",
+      "Direção paralela à superfície de contacto, com sentido oposto ao movimento.",
+      "Direção circular oblíqua, rodando no sentido dos ponteiros do relógio."
     ],
     "correctIndex": 2,
     "explanation": "A força de atrito é uma força tangencial: a sua linha de ação é sempre paralela à interface de contacto entre os corpos e aponta no sentido oposto ao deslocamento (ou tendência de deslocamento).",
     "distractorAnalysis": [
-      "Está incorreta: A força perpendicular é a Força Normal (N), não o atrito.",
-      "Está incorreta: A força vertical descendente é a gravidade (peso); a força de atrito em pisos horizontais é horizontal.",
-      "Está incorreta: O atrito de contacto não tem direção circular rotativa intrínseca."
+      "Está incorreta: A força perpendicular à superfície é a força normal, e não o atrito.",
+      "Está incorreta: O atrito não tem direção vertical; é tangencial à superfície.",
+      "Está incorreta: O atrito não é circular; a sua direção é tangencial à superfície."
     ],
     "nursingApplication": "Fundamental para desenhar e analisar esquemas de forças em rampas e transferências no leito."
   },
@@ -1646,17 +1646,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "O que acontece à intensidade da força de resistência por atrito imediatamente após uma maca romper o repouso e começar a deslizar?",
     "options": [
-      "Aumenta instantaneamente para o dobro da força inicial.",
-      "Torna-se infinita parando a maca de forma inamovível.",
-      "Permanece rigorosamente igual ao atrito estático máximo de arranque.",
+      "Aumenta para o dobro da força de arranque, por efeito da inércia.",
+      "Aumenta muito, prendendo a maca ao chão de forma permanente.",
+      "Mantém-se igual ao atrito estático máximo de arranque, durante todo o movimento.",
       "Diminui para o valor do atrito cinético, tornando a condução mais suave."
     ],
     "correctIndex": 3,
     "explanation": "Assim que o repouso é vencido, a resistência passa do regime estático máximo para o regime cinético, que é inferior. Por isso, manter o movimento exige menor força do que o arranque inicial.",
     "distractorAnalysis": [
-      "Está incorreta: A força de resistência diminui após o arranque, nunca aumenta.",
-      "Está incorreta: Resistência infinita impediria qualquer transporte no mundo físico real.",
-      "Está incorreta: O atrito cinético é inferior ao atrito estático máximo, conforme demonstrado."
+      "Está incorreta: Após o arranque, a força de atrito diminui, e não duplica.",
+      "Está incorreta: O atrito cinético é inferior ao estático, e não cresce até imobilizar a maca.",
+      "Está incorreta: Com o corpo em movimento, o atrito passa para o regime cinético, inferior ao estático máximo."
     ],
     "nursingApplication": "Permite dosear o esforço físico muscular de modo a aliviar a força após a colocação em marcha do equipamento."
   },
@@ -1703,17 +1703,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Se o atrito cinético de uma maca em movimento for de 25 N e dois enfermeiros a puxarem juntos aplicando uma força total de 25 N na mesma direção e sentido do movimento:",
     "options": [
-      "A maca vai acelerar continuamente ganhando 10 m/s² a cada segundo.",
-      "A maca vai travar imediatamente e parar em menos de um segundo.",
-      "A força resultante é nula (Fr = 0 N) e a maca prossegue em Movimento Retilíneo e Uniforme.",
-      "O atrito desaparece transformando-se em calor de combustão espontânea."
+      "A maca vai acelerar continuamente, ganhando 10 m/s² a cada segundo.",
+      "A maca vai travar e parar em menos de um segundo.",
+      "A força resultante é nula (Fr = 0 N) e a maca prossegue em MRU.",
+      "O atrito desaparece, pois a maca deixa de tocar no chão durante a viagem."
     ],
     "correctIndex": 2,
     "explanation": "A força resultante é F_aplicada - F_atrito = 25 N - 25 N = 0 N. Com Fr = 0 N, o corpo em movimento mantém a sua velocidade constante em Movimento Retilíneo e Uniforme (MRU).",
     "distractorAnalysis": [
-      "Está incorreta: Para acelerar seria necessária uma força resultante positiva (F_aplicada > F_atrito).",
-      "Está incorreta: A maca só travaria se a força de atrito superasse a força aplicada (F_aplicada < F_atrito).",
-      "Está incorreta: O atrito gera ligeiro aquecimento térmico impercetível, nunca combustão espontânea em macas."
+      "Está incorreta: Com Fr = 0 N não há aceleração; a maca não ganha velocidade.",
+      "Está incorreta: Sem força resultante contrária, a maca não trava; mantém a velocidade.",
+      "Está incorreta: O atrito não desaparece; a maca continua em contacto com o chão."
     ],
     "nursingApplication": "Evidencia como manter velocidade constante exige apenas neutralizar o atrito cinético das rodas."
   },
@@ -1724,15 +1724,15 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Tipo: Escalar; Unidade: kg; Definição: Quantidade de matéria; Exemplo: Massa corporal.",
       "Tipo: Escalar; Unidade: Pa; Definição: Força por área; Exemplo: Pressão capilar.",
-      "Tipo: Vetorial; Unidade: N/m²; Definição: Atração cósmica; Exemplo: Peso na balança.",
-      "Tipo: Vetorial; Unidade SI: Newton (N); Definição: Produz aceleração ou deformação; Exemplo: Força muscular de contração do quadríceps."
+      "Tipo: Vetorial; Unidade: N/m²; Definição: Atração entre pólos magnéticos; Exemplo: Peso na balança.",
+      "Tipo: Vetorial; Unidade SI: Newton (N); Definição: Produz aceleração ou deformação; Exemplo: Força muscular do quadríceps."
     ],
     "correctIndex": 3,
-    "explanation": "Especifica-se: Grandeza: Força (F) | Tipo: Vetorial | Unidade SI: Newton (N) | Definição: Produz aceleração ou deformação | Exemplo: Força muscular de contração do quadríceps.",
+    "explanation": "Especifica-se: Grandeza: Força (F) | Tipo: Vetorial | Unidade SI: Newton (N) | Definição: Produz aceleração ou deformação | Exemplo: Força muscular do quadríceps.",
     "distractorAnalysis": [
-      "Está incorreta: Esta linha descreve a grandeza Massa (m), não a Força.",
-      "Está incorreta: Esta linha descreve a grandeza Pressão (p), não a Força.",
-      "Está incorreta: A unidade de força no SI é Newton (N), e não N/m² (que é Pascal)."
+      "Está incorreta: A força é vetorial e mede-se em newtons, e não em quilogramas.",
+      "Está incorreta: O pascal é unidade de pressão (força por área), e não de força.",
+      "Está incorreta: N/m² é unidade de pressão, e a atração entre pólos não define a força em geral."
     ],
     "nursingApplication": "Permite relacionar o conceito físico de força com a contração do quadríceps na marcha e extensão do joelho."
   },
@@ -1741,17 +1741,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Na tabela de resumo dos conceitos lecionados, como está caracterizada a grandeza 'Massa (m)'?",
     "options": [
-      "Tipo: Escalar; Unidade SI: Quilograma (kg); Definição: Medida da quantidade de matéria; Exemplo: Massa corporal do doente pesada na balança.",
+      "Tipo: Escalar; Unidade SI: Quilograma (kg); Definição: Medida da quantidade de matéria; Exemplo: Massa corporal do doente.",
       "Tipo: Vetorial; Unidade SI: Newton (N); Definição: Atração gravítica; Exemplo: Força muscular.",
       "Tipo: Escalar; Unidade SI: Pascal (Pa); Definição: Deformação do sacro; Exemplo: Lesão de pressão.",
       "Tipo: Vetorial; Unidade SI: Quilograma (kg); Definição: Produz aceleração centrípeta; Exemplo: Andarilho."
     ],
     "correctIndex": 0,
-    "explanation": "Especifica-se: Grandeza: Massa (m) | Tipo: Escalar | Unidade SI: Quilograma (kg) | Definição: Medida da quantidade de matéria | Exemplo: Massa corporal do doente pesada na balança.",
+    "explanation": "Especifica-se: Grandeza: Massa (m) | Tipo: Escalar | Unidade SI: Quilograma (kg) | Definição: Medida da quantidade de matéria | Exemplo: Massa corporal do doente.",
     "distractorAnalysis": [
-      "Está incorreta: A massa é uma grandeza escalar em kg, não vetorial em Newtons.",
-      "Está incorreta: Pascal mede pressão, grandeza diferente da massa inercial.",
-      "Está incorreta: A massa é puramente escalar, não possuindo direção nem sentido vetorial."
+      "Está incorreta: A massa é escalar e mede-se em quilogramas, e não em newtons.",
+      "Está incorreta: O pascal é unidade de pressão, e a massa não é uma deformação.",
+      "Está incorreta: A massa é escalar e não produz aceleração centrípeta; o andarilho não define a massa."
     ],
     "nursingApplication": "Clarifica a linguagem técnica ao referir a massa corporal aferida nas balanças hospitalares."
   },
@@ -1781,15 +1781,15 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Tipo: Vetorial; Unidade SI: Newton (N); Definição: Interação entre corpos; Exemplo: Tendão do bíceps.",
       "Tipo: Escalar; Unidade SI: Quilograma (kg); Definição: Medida de inércia; Exemplo: Doente bariátrico.",
-      "Tipo: Escalar; Unidade SI: Pascal (N/m²); Definição: Força distribuída por unidade de área; Exemplo: Pressão capilar na pele sobre o sacro.",
+      "Tipo: Escalar; Unidade SI: Pascal (N/m²); Definição: Força distribuída por unidade de área; Exemplo: Pressão de interface sobre o sacro.",
       "Tipo: Vetorial; Unidade SI: Joule (J); Definição: Trabalho muscular; Exemplo: Elevação de carga."
     ],
     "correctIndex": 2,
-    "explanation": "Especifica-se: Grandeza: Pressão (p) | Tipo: Escalar | Unidade SI: Pascal (N/m²) | Definição: Força distribuída por unidade de área | Exemplo: Pressão capilar na pele sobre o sacro.",
+    "explanation": "Especifica-se: Grandeza: Pressão (p) | Tipo: Escalar | Unidade SI: Pascal (N/m²) | Definição: Força distribuída por unidade de área | Exemplo: Pressão de interface entre a pele e o colchão sobre o sacro.",
     "distractorAnalysis": [
-      "Está incorreta: A pressão é uma grandeza escalar em Pascal (N/m²), não uma força vetorial em Newtons.",
-      "Está incorreta: Quilograma mede massa, não pressão.",
-      "Está incorreta: Joule mede energia e trabalho, grandeza física diferente de pressão superficial."
+      "Está incorreta: A pressão é escalar e não se mede em newtons; o tendão do bíceps não a define.",
+      "Está incorreta: A medida de inércia é a massa, e não a pressão.",
+      "Está incorreta: O joule é unidade de energia e de trabalho, e não de pressão."
     ],
     "nursingApplication": "Fundamenta a fisiopatologia da isquemia cutânea e a monitorização de dispositivos de alívio de pressão."
   },
@@ -1798,17 +1798,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a distinção física essencial entre Massa (m) e Peso (P) estabelecida na tabela da biomecânica?",
     "options": [
-      "Massa é medida em Newtons e Peso é medido em Quilogramas.",
-      "Massa e Peso são exatamente a mesma grandeza física, sem qualquer diferença teórica.",
-      "A massa varia consoante o local do universo e o peso é constante em todo o lado.",
-      "Massa é uma grandeza escalar (kg) intrínseca de matéria; Peso é uma força vetorial (N) resultante da atração gravítica (P = m · g)."
+      "Massa é medida em newtons, e peso é medido em quilogramas, por convenção do SI.",
+      "Massa e peso são a mesma grandeza física, diferindo no nome que se lhes dá.",
+      "A massa varia consoante o local do universo, e o peso é constante em todo o lado.",
+      "Massa é escalar (kg), grandeza da matéria; peso é força vetorial (N), P = m · g."
     ],
     "correctIndex": 3,
     "explanation": "A massa (escalar em kg) quantifica a matéria e inércia de um corpo, sendo invariável com o local; o peso (vetorial em N) é a força gravítica exercida sobre essa massa, variando com a aceleração da gravidade local g.",
     "distractorAnalysis": [
-      "Está incorreta: As unidades estão invertidas na opção: a massa mede-se em kg e o peso mede-se em N.",
-      "Está incorreta: Confundir massa com peso é um erro concetual clássico que a tabela da biomecânica visa expressamente corrigir.",
-      "Está incorreta: É a massa que é constante intrínseca, enquanto o peso varia com a gravidade de cada planeta ou altitude."
+      "Está incorreta: A massa mede-se em quilogramas, e o peso em newtons.",
+      "Está incorreta: A massa e o peso são grandezas diferentes: a massa é escalar e o peso é vetorial.",
+      "Está incorreta: A massa é constante em qualquer ponto do universo; é o peso que varia com o local."
     ],
     "nursingApplication": "Evita a linguagem coloquial incorreta e consolida o rigor científico na formação inicial de enfermagem."
   },
@@ -1817,17 +1817,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "De acordo com a tabela de valores de referência, qual é a equivalência dimensional direta de 1 Pascal (Pa) em unidades do SI?",
     "options": [
-      "1 Pa = 1 N/m² (um Newton por cada metro quadrado de área).",
-      "1 Pa = 1 kg · m / s",
-      "1 Pa = 1 N · m (um Newton multiplicado por metro).",
-      "1 Pa = 1 kg / s²"
+      "1 Pa = 1 N/m², um newton por cada metro quadrado de área.",
+      "1 Pa = 1 kg · m / s, equivalente a uma unidade de momento linear.",
+      "1 Pa = 1 N · m, um newton multiplicado por um metro de distância.",
+      "1 Pa = 1 kg / s², equivalente a uma unidade de tensão superficial."
     ],
     "correctIndex": 0,
     "explanation": "Indica-se explicitamente: 'Pascal (N/m²)', significando que a pressão equivale a uma força de um Newton distribuída uniformemente por uma área de um metro quadrado.",
     "distractorAnalysis": [
-      "Está incorreta: kg · m / s é unidade de momento linear (quantidade de movimento), não de pressão.",
-      "Está incorreta: N · m é a unidade de momento de força (torque) ou trabalho/energia (Joule).",
-      "Está incorreta: kg / s² é unidade de tensão superficial, dimensionalmente distinta de Pascal."
+      "Está incorreta: kg · m / s é unidade de momento linear (quantidade de movimento), e não de pressão.",
+      "Está incorreta: N · m é a unidade de momento de força ou de energia, e não de pressão.",
+      "Está incorreta: kg / s² é unidade de tensão superficial, dimensionalmente distinta do pascal."
     ],
     "nursingApplication": "Permite aos alunos realizar conversões de unidades entre Newtons de carga e área cutânea de apoio."
   },
@@ -1855,17 +1855,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Se um doente com 60 kg de massa corporal for para a Lua (onde a gravidade g é cerca de 1/6 da Terra), como se comportam a sua massa e o seu peso?",
     "options": [
-      "A massa reduz-se para 10 kg e o peso mantém-se em 588 N.",
+      "A massa reduz-se para 10 kg, e o peso mantém-se em 588 N.",
       "Ambos diminuem para zero, ficando o corpo sem matéria nem peso.",
-      "A sua massa mantém-se rigorosamente em 60 kg, mas o seu peso diminui para cerca de 1/6 do valor terrestre.",
-      "A massa aumenta para 360 kg para compensar a menor atração gravítica."
+      "A massa mantém-se em 60 kg, mas o peso passa a cerca de 1/6 do terrestre.",
+      "A massa aumenta para 360 kg, para compensar a menor atração gravítica."
     ],
     "correctIndex": 2,
     "explanation": "A massa é a quantidade de matéria, mantendo-se constante em 60 kg em qualquer ponto do universo. O peso (P = m · g) diminui na Lua proporcionalmente à menor aceleração gravítica g.",
     "distractorAnalysis": [
-      "Está incorreta: A massa não diminui para 10 kg; o número de átomos e células do corpo permanece inalterado.",
-      "Está incorreta: A matéria do corpo não se dissipa no espaço e a gravidade na Lua não é zero (g_lua ≈ 1,62 m/s²).",
-      "Está incorreta: A massa inercial não sofre qualquer aumento por alteração da gravidade local."
+      "Está incorreta: A massa é a quantidade de matéria e não se reduz com a gravidade local.",
+      "Está incorreta: Na Lua o corpo mantém a matéria e a massa; apenas o peso diminui.",
+      "Está incorreta: A massa não aumenta para compensar a gravidade; mantém-se constante."
     ],
     "nursingApplication": "Reforça de forma indelével a independência entre quantidade de matéria (massa) e atração gravitacional (peso)."
   },
@@ -1874,17 +1874,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Por que razão a Pressão (p) é classificada como grandeza Escalar na tabela de valores de referência?",
     "options": [
-      "Porque a pressão atua sempre exclusivamente no sentido horizontal para a esquerda.",
+      "Porque a pressão atua no sentido horizontal, para a esquerda.",
       "Porque os aparelhos de medição de pressão não têm pilhas elétricas.",
       "Porque a pressão deixa de existir quando o corpo humano se encontra em repouso.",
-      "Porque fica totalmente caracterizada por um valor numérico e unidade, sem direção espacial vetorial fixa."
+      "Porque fica caracterizada por um valor numérico e uma unidade, sem direção."
     ],
     "correctIndex": 3,
     "explanation": "A pressão é uma grandeza escalar: num determinado ponto de um fluido ou interface, quantifica a intensidade da força normal distribuída por unidade de área sem apontar para uma direção preferencial única no espaço.",
     "distractorAnalysis": [
-      "Está incorreta: Grandezas que têm direção e sentido fixos são vetoriais, não escalares.",
-      "Está incorreta: A forma de funcionamento do instrumento não dita a natureza matemática da grandeza física.",
-      "Está incorreta: A pressão capilar e hidrostática existe continuamente no corpo humano em repouso."
+      "Está incorreta: A pressão não tem um sentido horizontal fixo; atua perpendicularmente à superfície.",
+      "Está incorreta: Os aparelhos de medição não definem a natureza física da pressão.",
+      "Está incorreta: A pressão existe em repouso, como se vê na pressão do doente sobre o colchão."
     ],
     "nursingApplication": "Garante a correta diferenciação entre a força exercida (vetor) e o seu efeito distribuído na pele (pressão, escalar)."
   },
@@ -1893,17 +1893,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual das seguintes quatro grandezas analisadas no resumo é a ÚNICA cuja unidade SI é o Quilograma (kg)?",
     "options": [
-      "Massa (m).",
-      "Força (F).",
-      "Peso (P).",
-      "Pressão (p)."
+      "Massa (m), medida em quilogramas no Sistema Internacional.",
+      "Força (F), medida em newtons no Sistema Internacional.",
+      "Peso (P), medido em newtons no Sistema Internacional.",
+      "Pressão (p), medida em pascal no Sistema Internacional."
     ],
     "correctIndex": 0,
     "explanation": "Na tabela de grandezas de biofísica, a única grandeza expressa em Quilogramas (kg) é a Massa (m). Força e Peso medem-se em Newtons (N), e Pressão mede-se em Pascal (N/m²).",
     "distractorAnalysis": [
-      "Está incorreta: A Força tem unidade Newton (N) no SI.",
-      "Está incorreta: O Peso é uma força gravítica e tem unidade Newton (N) no SI.",
-      "Está incorreta: A Pressão tem unidade Pascal (Pa = N/m²) no SI."
+      "Está incorreta: A força mede-se em newtons, e não em quilogramas.",
+      "Está incorreta: O peso é uma força e mede-se em newtons.",
+      "Está incorreta: A pressão mede-se em pascal, e não em quilogramas."
     ],
     "nursingApplication": "Consolida a tabela comparativa fundamental que encerra a primeira secção temática do Tópico 1."
   },
