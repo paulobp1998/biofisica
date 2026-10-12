@@ -2387,17 +2387,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Se uma maca for deixada numa rampa inclinada com os travões soltos num piso molhado sem atrito (F_a = 0 N):",
     "options": [
-      "A maca fica parada em equilíbrio indiferente.",
-      "A maca sobe a rampa espontaneamente impulsionada por P_n.",
-      "A maca sofre uma força resultante não equilibrada Fr = P_t e desce a rampa em movimento acelerado.",
-      "A maca perde peso e começa a flutuar horizontalmente."
+      "A maca fica parada, em equilíbrio indiferente, sem tendência para descer.",
+      "A maca sobe a rampa, impulsionada pela componente normal P_n.",
+      "A maca fica com Fr = P_t e desce a rampa com movimento acelerado.",
+      "A maca mantém o peso, mas passa a ter força normal nula na rampa."
     ],
     "correctIndex": 2,
     "explanation": "Sem atrito (F_a = 0), a componente P_t ao longo da rampa não tem oposição. Pela 2ª Lei de Newton (Fr = m · a), a força resultante Fr = P_t acelera a maca rampa abaixo.",
     "distractorAnalysis": [
-      "Está incorreta: Sem força de oposição para equilibrar P_t, o repouso é impossível.",
-      "Está incorreta: A componente P_t aponta para baixo ao longo da rampa, nunca rampa acima.",
-      "Está incorreta: A gravidade continua a atuar plenamente sobre a massa da maca."
+      "Está incorreta: Sem atrito, a componente P_t não é equilibrada, e a maca não fica parada.",
+      "Está incorreta: A componente normal P_n é perpendicular à rampa e não a faz subir.",
+      "Está incorreta: A força normal existe enquanto a maca estiver apoiada na rampa; não se anula."
     ],
     "nursingApplication": "Regra crítica de segurança de enfermagem: nunca imobilizar macas ou cadeiras em rampas sem ativar os travões mecânicos."
   },
@@ -2407,16 +2407,16 @@ const TOPIC_1_QUESTIONS = [
     "question": "Num plano perfeitamente horizontal (inclinação de zero graus), qual é a relação entre o peso P e as componentes P_n e P_t?",
     "options": [
       "P_t é igual a P e P_n é nula.",
-      "P_n e P_t têm exatamente o mesmo valor de P/2.",
-      "Tanto P_n como P_t anulam-se completamente ficando o peso nulo.",
-      "P_n é igual à totalidade do peso P (P_n = P = N) e a componente tangencial P_t é rigorosamente nula (P_t = 0 N)."
+      "P_n e P_t têm o mesmo valor, igual a metade do peso.",
+      "Tanto P_n como P_t anulam-se, ficando o peso nulo.",
+      "P_n é igual ao peso P (P_n = P = N), e a componente tangencial P_t é nula."
     ],
     "correctIndex": 3,
     "explanation": "Na horizontal, a gravidade atua estritamente perpendicular ao plano: todo o peso coincide com a componente normal (P_n = P), sendo suportado pela força normal N, enquanto a tendência de deslizamento é nula (P_t = 0).",
     "distractorAnalysis": [
-      "Está incorreta: P_t seria igual a P se a rampa fosse perfeitamente vertical a 90 graus (queda livre na parede).",
-      "Está incorreta: As componentes só se igualam em ângulo de 45 graus, não na horizontal a 0 graus.",
-      "Está incorreta: O peso não se anula na horizontal; é suportado na íntegra pela força normal do piso."
+      "Está incorreta: Na horizontal, a componente tangencial é nula, e não igual ao peso.",
+      "Está incorreta: Na horizontal, toda a componente do peso fica perpendicular à superfície.",
+      "Está incorreta: O peso não fica nulo; é equilibrado pela força normal."
     ],
     "nursingApplication": "Explica por que num corredor horizontal não é necessária força adicional para travar a componente de descida da gravidade."
   },
@@ -2425,17 +2425,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Ao descer uma rampa inclinada com um doente na cadeira de rodas com velocidade constante, que esforço realiza o enfermeiro?",
     "options": [
-      "Aplica uma força rampa acima para contrabalançar P_t, garantindo força resultante nula e descida controlada sem acelerar.",
-      "Empurra a cadeira com força máxima rampa abaixo para acelerar a chegada ao serviço.",
-      "Desliga o peso do utente através de movimentos oscilatórios rápidos.",
-      "Caminha de costas com os olhos vendados confiando apenas no atrito do piso."
+      "Aplica uma força rampa acima, para equilibrar P_t e descer sem acelerar.",
+      "Empurra a cadeira com força máxima rampa abaixo, para acelerar a chegada ao serviço.",
+      "Reduz o peso do utente com movimentos oscilatórios rápidos da cadeira.",
+      "Caminha de costas, sem olhar para o doente, confiando no atrito do piso."
     ],
     "correctIndex": 0,
     "explanation": "Para que a descida ocorra com velocidade constante (MRU com Fr = 0 N), a força de retenção aplicada pelo profissional somada ao atrito deve equilibrar rigorosamente a componente P_t do peso que puxa a cadeira rampa abaixo.",
     "distractorAnalysis": [
-      "Está incorreta: Empurrar rampa abaixo somar-se-ia a P_t, provocando aceleração perigosa e risco de colisão.",
-      "Está incorreta: Não é possível desligar o peso de um corpo material na Terra.",
-      "Está incorreta: Prática negligente que viola todas as regras de segurança do utente e do profissional."
+      "Está incorreta: Empurrar com força máxima rampa abaixo acelera a cadeira, contrariando a velocidade constante.",
+      "Está incorreta: Movimentos oscilatórios não alteram o peso do utente, que é uma força constante.",
+      "Está incorreta: Caminhar de costas sem olhar para o doente é um risco de queda, e não uma técnica de descida."
     ],
     "nursingApplication": "Técnica ergonómica recomendada de condução de cadeiras de rodas em rampas: descer de marcha-atrás com apoio do corpo para retenção."
   },
@@ -2444,17 +2444,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual das forças no diagrama do plano inclinado é perpendicular à força normal N?",
     "options": [
-      "A componente normal do peso P_n.",
-      "A força de atrito F_a (e a componente tangencial P_t), que atuam ao longo da superfície.",
-      "O peso total P em qualquer inclinação.",
-      "Nenhuma força, pois todas são paralelas entre si."
+      "A componente normal do peso P_n, que é paralela à normal N.",
+      "A força de atrito F_a (e a componente P_t), paralela à superfície.",
+      "O peso total P, que mantém a mesma direção em qualquer inclinação.",
+      "Nenhuma força, pois todas as forças são paralelas entre si."
     ],
     "correctIndex": 1,
     "explanation": "A Força Normal N é perpendicular à superfície de apoio; a força de atrito F_a e a componente P_t atuam paralelamente à superfície de apoio. Logo, a direção de N e a de F_a formam um ângulo de 90 graus (são perpendiculares).",
     "distractorAnalysis": [
-      "Está incorreta: P_n tem a mesma linha de ação que N (mesma direção vertical ao plano), com sentido oposto.",
-      "Está incorreta: O peso P atua na vertical gravitacional terrestre, não sendo perpendicular à normal inclinada.",
-      "Está incorreta: As forças no diagrama decompõem-se num referencial cartesiano ortogonal (eixo tangencial e eixo normal)."
+      "Está incorreta: P_n é paralela à normal N, pois ambas são perpendiculares à superfície.",
+      "Está incorreta: O peso total tem direção vertical, e não é perpendicular a N numa rampa inclinada.",
+      "Está incorreta: As forças do diagrama não são todas paralelas entre si."
     ],
     "nursingApplication": "Permite aos estudantes orientar mentalmente os eixos ortogonais ao analisar esforços mecânicos."
   },
@@ -2463,17 +2463,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Num doente com risco de escorregar para os pés da cama ao elevar a cabeceira a 45º (plano inclinado), o deslizamento tecidual é provocado por qual componente de força?",
     "options": [
-      "Pela força nuclear forte dos ossos ilíacos.",
+      "Pela pressão capilar exercida pelo sangue nas artérias ilíacas.",
       "Pela força eletromagnética gerada pelo motor elétrico do leito.",
-      "Pela componente tangencial do peso (P_t), que atua paralelamente ao colchão empurrando o corpo para baixo.",
-      "Exclusivamente pela componente normal P_n perpendicular ao colchão."
+      "Pela componente tangencial do peso (P_t), paralela ao colchão e dirigida para os pés.",
+      "Pela componente normal P_n, perpendicular ao colchão, que empurra o corpo para baixo."
     ],
     "correctIndex": 2,
     "explanation": "A elevação da cabeceira cria um plano inclinado onde a gravidade se projeta na componente P_t ao longo da cama. Se o atrito não for suficiente para equilibrar P_t, o corpo escorrega em direção aos pés da cama, gerando cisalhamento tecidual.",
     "distractorAnalysis": [
-      "Está incorreta: Forças nucleares atuam dentro do núcleo atómico, não produzindo deslizamento corporal.",
-      "Está incorreta: O motor articula mecanicamente o estrado, mas a força propulsora do deslizamento é a componente do peso gravítico.",
-      "Está incorreta: A componente P_n pressiona o corpo contra o colchão; quem puxa para baixo ao longo da inclinação é P_t."
+      "Está incorreta: A pressão capilar não é uma força que empurre o corpo ao longo do colchão.",
+      "Está incorreta: O motor do leito não é a origem do deslizamento; a origem é a componente do peso.",
+      "Está incorreta: A componente normal P_n é perpendicular ao colchão e não provoca deslizamento."
     ],
     "nursingApplication": "Identifica o mecanismo biofísico na génese de forças de cisalhamento e lesões sacrococcígeas em camas articuladas."
   },
@@ -2502,16 +2502,16 @@ const TOPIC_1_QUESTIONS = [
     "question": "Qual é a frase de síntese direta apresentada para resumir a ação do Momento da Força?",
     "options": [
       "Por outras palavras: O momento da força faz o corpo rodar.",
-      "Por outras palavras: A massa dissipa-se com a velocidade.",
-      "Por outras palavras: Toda a força de rotação gera calor sem movimento.",
-      "Por outras palavras: O atrito elimina a necessidade de fulcro."
+      "Por outras palavras: A massa aumenta com a velocidade de rotação do corpo.",
+      "Por outras palavras: A força de rotação gera calor, sem produzir movimento.",
+      "Por outras palavras: O atrito dispensa o fulcro na alavanca."
     ],
     "correctIndex": 0,
     "explanation": "Destaca-se com clareza pedagógica: 'Por outras palavras: O momento da força faz o corpo rodar.'.",
     "distractorAnalysis": [
-      "Está incorreta: A massa não se dissipa com a velocidade na mecânica clássica de Newton.",
-      "Está incorreta: O momento de força gera movimento rotativo efetivo quando não é equilibrado.",
-      "Está incorreta: O fulcro é o ponto essencial em torno do qual ocorre a rotação de qualquer alavanca."
+      "Está incorreta: A massa de um corpo não aumenta com a sua velocidade de rotação.",
+      "Está incorreta: A força de rotação produz movimento de rotação, e não apenas calor.",
+      "Está incorreta: O atrito não dispensa o fulcro; a alavanca continua a girar em torno do ponto de apoio."
     ],
     "nursingApplication": "Permite associar imediatamente qualquer movimento de flexão, extensão ou rotação articular ao momento de força."
   },
@@ -2596,36 +2596,36 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Para abrir uma porta pesada corta-fogo com o menor esforço (menor força F possível), onde deve ser empurrada a porta?",
     "options": [
-      "O mais próximo possível das dobradiças (junto ao eixo de rotação).",
-      "O mais longe possível das dobradiças (na extremidade oposta), aumentando o braço da força (b).",
-      "Diretamente sobre os parafusos da dobradiça.",
-      "No chão a meio caminho da soleira puxando verticalmente."
+      "O mais próximo possível das dobradiças, junto ao eixo de rotação.",
+      "O mais longe possível das dobradiças, na extremidade oposta (maior b).",
+      "Diretamente sobre os parafusos da dobradiça, no ponto de fixação.",
+      "No chão, a meio caminho da soleira, puxando verticalmente para cima."
     ],
     "correctIndex": 1,
     "explanation": "Como M = F · b, para gerar o mesmo momento de rotação necessário para mover a porta com menor força (F), devemos maximizar o braço (b). Empurrar no bordo exterior maximiza b e minimiza F.",
     "distractorAnalysis": [
-      "Está incorreta: Empurrar perto das dobradiças torna b muito pequeno, exigindo forças enormes para gerar o mesmo momento.",
-      "Está incorreta: Sobre a dobradiça o braço b é zero; o momento seria nulo e a porta nunca rodaria.",
-      "Está incorreta: Puxar no chão verticalmente não cria momento em torno do eixo de rotação vertical da porta."
+      "Está incorreta: Junto ao eixo o braço é mínimo, e por isso é necessária uma força maior.",
+      "Está incorreta: Sobre os parafusos o braço é nulo, e não reduz o esforço.",
+      "Está incorreta: Puxar a meio da soleira reduz o braço e não ajuda a abrir a porta com menor força."
     ],
     "nursingApplication": "Aplicação prática imediata de ergonomia ao abrir portas de emergência e manipular equipamentos articulados."
   },
   {
     "id": 1138,
     "topicId": 1,
-    "question": "Se a linha de ação de uma força passar exatamente pelo ponto ou eixo de rotação da alavanca, qual é o valor do Momento da Força produzido?",
+    "question": "Se a linha de ação de uma força passar pelo ponto ou eixo de rotação da alavanca, qual é o valor do momento da força produzido?",
     "options": [
       "É igual à intensidade da força multiplicada pelo infinito.",
-      "É igual a 9,8 N·m independentemente da intensidade da força.",
-      "É rigorosamente zero (M = 0 N·m), porque o braço é nulo (b = 0 m).",
-      "Produz a rotação mais rápida possível da estrutura."
+      "É igual a 9,8 N·m, independentemente da intensidade da força.",
+      "É zero (M = 0 N·m), porque o braço é nulo (b = 0 m).",
+      "Produz uma rotação muito rápida, por a força estar concentrada."
     ],
     "correctIndex": 2,
     "explanation": "Se a linha de ação da força interseta o eixo, a distância perpendicular b entre a linha e o eixo é zero (b = 0). Pela fórmula M = F · b = F × 0 = 0 N·m. A força não gera qualquer efeito rotativo.",
     "distractorAnalysis": [
-      "Está incorreta: Multiplicar por zero resulta em zero, nunca em infinito.",
-      "Está incorreta: O valor depende da multiplicação F · b; sendo b = 0, o resultado é nulo e não 9,8.",
-      "Está incorreta: Sem momento de força (M = 0) não é possível produzir qualquer aceleração angular de rotação."
+      "Está incorreta: Multiplicar por infinito não é um cálculo válido; o braço é nulo e o momento é zero.",
+      "Está incorreta: O momento depende da força e do braço; não é fixo em 9,8 N·m.",
+      "Está incorreta: Um momento nulo não produz rotação, por mais concentrada que a força esteja."
     ],
     "nursingApplication": "Explica por que puxar um osso exatamente na direção axial da articulação estabiliza a junta mas não produz rotação articular."
   },
@@ -2634,17 +2634,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Ao levantar uma carga de 15 kg com os braços esticados para a frente longe do tronco, por que razão as vértebras lombares sofrem uma sobrecarga massiva?",
     "options": [
-      "Porque a massa do objeto triplica magicamente quando afastada do peito.",
-      "Porque o atrito do pavimento desaparece desestabilizando o esqueleto.",
-      "Porque a velocidade da luz no vácuo altera a curvatura lombar.",
-      "Porque o braço da força resistente (b) aumenta substancialmente em relação à coluna, gerando um momento flexor muito superior, que os músculos extensores da coluna têm de equilibrar (M = F · b)."
+      "Porque a massa do objeto aumenta quando é afastada do peito.",
+      "Porque o atrito do pavimento desaparece, desestabilizando o esqueleto.",
+      "Porque a gravidade diminui quando a carga é afastada do tronco.",
+      "Porque o braço da força resistente aumenta, gerando um momento flexor elevado (M = F · b)."
     ],
     "correctIndex": 3,
     "explanation": "A força resistente (peso da carga) é constante. Contudo, ao afastar a carga do tronco, a distância horizontal b até ao fulcro lombar aumenta grandemente, multiplicando o momento resistente M = F · b e exigindo forças extremas dos músculos da coluna para equilibrar.",
     "distractorAnalysis": [
-      "Está incorreta: A massa é constante e invariável com a distância anatómica da carga.",
-      "Está incorreta: O atrito do pavimento não tem relação com o momento interno da carga sobre a coluna.",
-      "Está incorreta: A velocidade da luz não interfere na mecânica osteomuscular humana."
+      "Está incorreta: A massa é constante e não aumenta quando a carga se afasta do tronco.",
+      "Está incorreta: O atrito do pavimento não determina o momento das vértebras lombares.",
+      "Está incorreta: A gravidade não diminui com a distância da carga ao tronco."
     ],
     "nursingApplication": "Princípio ergonómico vital para a saúde da coluna do enfermeiro: manter a carga junto ao corpo, idealmente à altura da cintura, porque a distância horizontal aumenta o momento sobre a coluna."
   },
@@ -2653,17 +2653,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Duas forças de 10 N atuam em duas alavancas distintas: a Força 1 tem um braço b1 = 2 m e a Força 2 tem um braço b2 = 1 m. Quais são os respetivos momentos?",
     "options": [
-      "Momento 1 = 20 N·m e Momento 2 = 10 N·m",
-      "Momento 1 = 5 N·m e Momento 2 = 10 N·m",
-      "Ambas produzem exatamente o mesmo momento de 10 N·m.",
-      "Momento 1 = 200 N·m e Momento 2 = 100 N·m"
+      "Momento 1 = 20 N·m e Momento 2 = 10 N·m.",
+      "Momento 1 = 5 N·m e Momento 2 = 10 N·m.",
+      "Ambas produzem o mesmo momento de 10 N·m.",
+      "Momento 1 = 200 N·m e Momento 2 = 100 N·m."
     ],
     "correctIndex": 0,
     "explanation": "Calculando M = F · b para cada uma: M1 = 10 N × 2 m = 20 N·m; M2 = 10 N × 1 m = 10 N·m. A força com o dobro do braço produz o dobro do momento rotativo.",
     "distractorAnalysis": [
-      "Está incorreta: 20 N·m é o resultado correto para a primeira força, não 5 N·m.",
-      "Está incorreta: Os momentos só seriam iguais se os braços fossem idênticos, o que não é o caso (2 m vs 1 m).",
-      "Está incorreta: Os valores foram indevidamente multiplicados por 10."
+      "Está incorreta: Com a mesma força, a força que tem o maior braço (2 m) tem o maior momento; 5 N·m não resulta de 10 × 2.",
+      "Está incorreta: Os momentos são iguais ao produto F · b; não há 5 N·m para b = 2 m.",
+      "Está incorreta: Os braços são diferentes (2 m e 1 m), pelo que os momentos também são diferentes."
     ],
     "nursingApplication": "Demonstração quantitativa clara do efeito multiplicador da distância de alavanca."
   },
@@ -2751,14 +2751,14 @@ const TOPIC_1_QUESTIONS = [
       "A intensidade máxima de força suportada por uma vértebra sagrada.",
       "Ponto fixo em torno do qual a alavanca gira.",
       "A distância perpendicular entre duas forças divergentes.",
-      "O centro do núcleo atómico onde operam as forças nucleares."
+      "O centro de uma estrutura onde se concentram as forças de contacto."
     ],
     "correctIndex": 1,
     "explanation": "Define-se taxativamente: '1. Ponto de apoio (fulcro): Ponto fixo em torno do qual a alavanca gira'.",
     "distractorAnalysis": [
-      "Está incorreta: Resistência de vértebras é propriedade de resistência dos materiais (Tópico 2), não a definição de fulcro.",
-      "Está incorreta: Distância perpendicular é a definição de braço da força, não do ponto fixo fulcro.",
-      "Está incorreta: O núcleo atómico é estudado na física do átomo e radiação, não nas alavancas macroscópicas."
+      "Está incorreta: O fulcro é um ponto de rotação da alavanca, e não uma medida de força suportada por uma vértebra.",
+      "Está incorreta: A distância perpendicular entre forças é um braço de momento, e não o fulcro.",
+      "Está incorreta: As forças de contacto não definem o fulcro; este é o ponto de rotação."
     ],
     "nursingApplication": "No esqueleto humano, as articulações sinoviais funcionam como os fulcros do aparelho locomotor."
   },
@@ -2788,15 +2788,15 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Que a velocidade angular da alavanca está a acelerar a 9,8 rad/s².",
       "Que a massa do fulcro é igual à soma das massas potentes e resistentes.",
-      "Que a alavanca não sofre nenhuma força da gravidade.",
-      "Que o Momento da força potente iguala exatamente o Momento da força resistente (M_P = M_R) em torno do fulcro."
+      "Que a alavanca deixa de sofrer a força da gravidade durante o equilíbrio.",
+      "Que o momento da força potente iguala o momento da força resistente (M_P = M_R) em torno do fulcro."
     ],
     "correctIndex": 3,
     "explanation": "Como M = F · b, a Lei das Alavancas afirma simplesmente que o momento de rotação no sentido potente anula o momento de rotação no sentido resistente: M_P = M_R, resultando em equilíbrio estático rotacional.",
     "distractorAnalysis": [
-      "Está incorreta: Em equilíbrio a velocidade e aceleração angulares são rigorosamente nulas.",
-      "Está incorreta: O fulcro é modelado como ponto de suporte geométrico ideal, não entrando em igualdade de massas.",
-      "Está incorreta: As forças resistentes são frequentemente pesos causados pela gravidade."
+      "Está incorreta: Em equilíbrio a velocidade angular é nula; não há aceleração angular.",
+      "Está incorreta: O fulcro não tem massa relevante para o equilíbrio de momentos.",
+      "Está incorreta: A gravidade continua a atuar sobre a alavanca; o equilíbrio é de momentos."
     ],
     "nursingApplication": "Garante a compreensão conceitual unificada entre a teoria de momentos e a mecânica das alavancas."
   },
@@ -2805,17 +2805,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Se o braço da força potente (b_P) for 4 vezes maior do que o braço da força resistente (b_R), qual a força potente F_P necessária para equilibrar a carga?",
     "options": [
-      "Uma força potente 4 vezes menor do que a força resistente (F_P = F_R / 4), havendo grande vantagem mecânica.",
-      "Uma força potente 4 vezes maior do que a força resistente.",
-      "Uma força potente 16 vezes maior devido à lei do inverso do quadrado.",
+      "Uma força 4 vezes menor do que a resistente (F_P = F_R / 4).",
+      "Uma força potente 4 vezes maior do que a resistente, por a alavanca amplificar o esforço.",
+      "Uma força potente 16 vezes maior, devido à lei do inverso do quadrado.",
       "A mesma força resistente, pois a distância não altera o esforço necessário."
     ],
     "correctIndex": 0,
     "explanation": "Pela Lei das Alavancas: F_P · (4 b_R) = F_R · b_R => F_P = F_R / 4. Ao multiplicar o braço potente por 4, a força necessária para suster a carga reduz-se a um quarto.",
     "distractorAnalysis": [
-      "Está incorreta: Força 4 vezes maior ocorreria se o braço potente fosse 4 vezes menor (desvantagem mecânica).",
-      "Está incorreta: A dependência em relação ao braço é estritamente linear (M = F · b), não quadrática.",
-      "Está incorreta: O braço é o multiplicador direto do momento; aumentar o braço altera drasticamente a força necessária."
+      "Está incorreta: Um braço potente maior reduz a força necessária; não a aumenta.",
+      "Está incorreta: A lei do inverso do quadrado não se aplica às alavancas; a relação é F · b.",
+      "Está incorreta: A distância altera o esforço necessário, pois F_P · b_P = F_R · b_R."
     ],
     "nursingApplication": "Explica por que cabos compridos e barras de elevação longas facilitam a manipulação de cargas pesadas."
   },
@@ -2824,17 +2824,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "No aparelho locomotor do corpo humano, como são representados os componentes de uma alavanca de Arquimedes?",
     "options": [
-      "Os ossos são os fulcros e os tendões são as cargas resistentes.",
-      "Os ossos funcionam como as barras rígidas, as articulações como os fulcros (pontos de apoio) e os músculos fornecem a força potente.",
-      "O sangue funciona como a barra rígida e as veias como os braços de momento.",
-      "A pele é a barra rígida que roda em torno do centro da Terra."
+      "Os ossos são os fulcros, e os tendões são as cargas resistentes da alavanca.",
+      "Os ossos são as barras, as articulações os fulcros e os músculos a força potente.",
+      "O sangue funciona como a barra rígida, e as veias como os braços de momento.",
+      "A pele é a barra rígida que roda em torno da articulação do cotovelo."
     ],
     "correctIndex": 1,
     "explanation": "A correspondência anatómica da Biofísica é universal: o osso atua como barra rígida indeformável de transmissão, a articulação sinovial constitui o fulcro fixo de rotação e o músculo gera a força potente via tendão.",
     "distractorAnalysis": [
-      "Está incorreta: Os ossos não são o ponto fixo de rotação; as articulações entre os ossos é que são os fulcros.",
-      "Está incorreta: O sangue é um fluido em hidrodinâmica, não uma barra rígida de alavanca.",
-      "Está incorreta: A pele é um tecido elástico flexível, não uma barra rígida de alavanca óssea."
+      "Está incorreta: Os ossos funcionam como barras rígidas, e os tendões transmitem a força muscular.",
+      "Está incorreta: O sangue não é uma barra rígida; a alavanca do corpo é formada pelos ossos.",
+      "Está incorreta: A pele não é uma barra rígida; a barra do membro é o osso."
     ],
     "nursingApplication": "Base conceptual indispensável para toda a biomecânica articular e análise da marcha."
   },
@@ -2844,16 +2844,16 @@ const TOPIC_1_QUESTIONS = [
     "question": "Qual é a origem da Força Potente (F_P) no sistema musculoesquelético humano durante o levantamento de uma carga?",
     "options": [
       "A atração gravitacional do planeta Terra sobre a articulação.",
-      "A força de atrito estático das meias no chão encerado.",
-      "A contração ativa das fibras do músculo esquelético, transmitida pelo tendão à sua inserção óssea.",
+      "A força de atrito estático das meias sobre o chão encerado.",
+      "A contração ativa das fibras musculares, transmitida pelo tendão ao osso.",
       "A pressão capilar exercida sobre o sacro em decúbito dorsal."
     ],
     "correctIndex": 2,
     "explanation": "No corpo humano, a força potente é a força motora desenvolvida ativamente pelas pontes cruzadas das fibras musculares e transmitida pelo tendão para puxar o osso em torno da articulação.",
     "distractorAnalysis": [
-      "Está incorreta: A gravidade gera a força resistente (peso da carga e dos membros), não a força potente motora.",
-      "Está incorreta: O atrito do solo fornece aderência externa para apoio, não a força muscular motriz do membro.",
-      "Está incorreta: A pressão capilar sobre o sacro é uma consequência estática passiva de apoio no colchão."
+      "Está incorreta: A gravidade atua sobre o corpo; a força potente é gerada pelo músculo.",
+      "Está incorreta: O atrito das meias não é a força potente do levantamento de uma carga.",
+      "Está incorreta: A pressão capilar não produz a força motora do músculo."
     ],
     "nursingApplication": "Compreensão de como a fadiga e lesões musculares limitam a capacidade de produção de força potente em transferências."
   },
