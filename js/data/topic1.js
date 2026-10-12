@@ -509,7 +509,7 @@ const TOPIC_1_QUESTIONS = [
       "O volume ocupado pelo corpo no espaço tridimensional.",
       "A temperatura termodinâmica do corpo em equilíbrio térmico.",
       "A velocidade angular de rotação do corpo em torno do seu eixo.",
-      "A massa do corpo, medida em quilogramas (m)."
+      "A massa do corpo (símbolo m), medida em quilogramas (kg)."
     ],
     "correctIndex": 3,
     "explanation": "A massa é a propriedade intrínseca que quantifica a inércia: quanto maior for a massa de um corpo, maior é a sua resistência a alterações do seu estado de repouso ou movimento.",
@@ -602,14 +602,14 @@ const TOPIC_1_QUESTIONS = [
     "question": "Qual é o enunciado correto da 2.ª Lei de Newton?",
     "options": [
       "A força resultante é igual ao produto da massa do corpo pela aceleração adquirida.",
-      "A energia de um corpo depende da temperatura a que ele se encontra exposto no ambiente.",
+      "A aceleração de um corpo não depende da força que lhe é aplicada, mas apenas da sua massa.",
       "Dois corpos em repouso atraem-se com força proporcional à soma das suas massas.",
       "A força de contacto entre duas superfícies é perpendicular à direção do tendão."
     ],
     "correctIndex": 0,
     "explanation": "A 2.ª Lei relaciona força, massa e aceleração: a força resultante é igual ao produto da massa do corpo pela aceleração que ele adquire (F = m · a).",
     "distractorAnalysis": [
-      "Está incorreta: A energia de um corpo não depende apenas da temperatura; a 2.ª Lei relaciona força, massa e aceleração.",
+      "Está incorreta: A aceleração depende da força aplicada e da massa (a = F/m); não depende apenas da massa.",
       "Está incorreta: A atração gravítica depende do produto das massas e da distância, e não da sua soma.",
       "Está incorreta: A força de contacto não se relaciona com a direção dos tendões desta forma."
     ],
@@ -675,11 +675,11 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1036,
     "topicId": 1,
-    "question": "Se a massa de um utente for o dobro da de outro, que força é necessária aplicar à sua cadeira para imprimir a mesma aceleração?",
+    "question": "Desprezando a massa da cadeira, se a massa de um utente for o dobro da de outro, que força é necessária aplicar à sua cadeira para imprimir a mesma aceleração?",
     "options": [
       "O dobro da força, pois a força é proporcional à massa, para a mesma aceleração.",
       "A mesma força, pois a aceleração não depende da massa do corpo que é empurrado.",
-      "Metade da força, pois corpos mais pesados movem-se com mais facilidade e esforço.",
+      "Metade da força, pois corpos mais pesados movem-se com mais facilidade e menos esforço.",
       "Quatro vezes mais força, pois a força cresce com o quadrado da massa do utente."
     ],
     "correctIndex": 0,
@@ -791,7 +791,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é o enunciado formal da 3ª Lei de Newton apresentado?",
     "options": [
-      "A aceleração de um corpo em queda livre é constante e independente da sua massa.",
+      "A reação a uma força é menor do que a própria força, porque parte se perde no contacto.",
       "A força de atrito é perpendicular à superfície que suporta o peso do corpo.",
       "Quando um corpo A exerce uma força sobre B, B exerce sobre A uma força igual e de sentido oposto.",
       "A soma de todas as forças que atuam num corpo em movimento acelerado é nula."
@@ -799,7 +799,7 @@ const TOPIC_1_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "'Quando um corpo A exerce uma força sobre B, B exerce sobre A uma força igual e de sentido oposto'.",
     "distractorAnalysis": [
-      "Está incorreta: A aceleração da gravidade em queda livre descreve o movimento uniformemente variado, não a 3.ª Lei.",
+      "Está incorreta: Pela 3.ª Lei, a reação tem a mesma intensidade da ação; não é menor, nem se perde parte no contacto.",
       "Está incorreta: A força de atrito é tangencial e paralela à superfície, não perpendicular.",
       "Está incorreta: Num corpo acelerado a força resultante é não nula (Fr = m · a), e a 3.ª Lei trata de forças entre corpos distintos."
     ],
@@ -2093,7 +2093,7 @@ const TOPIC_1_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: O produto da massa pela velocidade é a quantidade de movimento, e não a força.",
       "Está incorreta: A força é massa vezes aceleração, e não massa dividida pelo tempo.",
-      "Está incorreta: A distância percorrida não entra na força média de impacto."
+      "Está incorreta: Massa dividida por distância dá kg/m, que não é unidade de força; a distância de paragem entra apenas em F = m·v²/(2d)."
     ],
     "nursingApplication": "Permite dimensionar a importância dos sistemas de retenção estofados e cintos de segurança de múltiplos pontos."
   },
@@ -2160,7 +2160,7 @@ const TOPIC_1_QUESTIONS = [
     "question": "Qual é o princípio fundamental sobre corpos em equilíbrio realçado?",
     "options": [
       "Um corpo em equilíbrio não pode ter forças a atuar sobre ele.",
-      "Os corpos no vácuo espacial podem atingir o equilíbrio mecânico.",
+      "Um corpo só está em equilíbrio se estiver em repouso.",
       "Um corpo em equilíbrio pode ter forças a atuar, desde que a resultante seja nula.",
       "Para haver equilíbrio, a força normal tem de ser o dobro da força de atrito."
     ],
@@ -2168,7 +2168,7 @@ const TOPIC_1_QUESTIONS = [
     "explanation": "Destaca-se que o equilíbrio exige apenas força resultante nula, e não a ausência de forças sobre o corpo.",
     "distractorAnalysis": [
       "Está incorreta: Um corpo em equilíbrio pode ter várias forças a atuar sobre ele, com resultante nula.",
-      "Está incorreta: O equilíbrio ocorre em qualquer meio, incluindo a Terra e o corpo humano.",
+      "Está incorreta: Em movimento retilíneo uniforme também Fr = 0, pelo que há equilíbrio sem repouso.",
       "Está incorreta: A relação entre a normal e o atrito não é condição geral de equilíbrio."
     ],
     "nursingApplication": "Ensina a identificar que um doente em repouso no leito tem múltiplas forças a atuar em si em perfeito cancelamento mútuo."
@@ -2226,7 +2226,7 @@ const TOPIC_1_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: Numa superfície horizontal a bola não se afasta por efeito gravítico.",
       "Está incorreta: Uma bola numa superfície horizontal não regressa ao ponto de partida sem forças.",
-      "Está incorreta: Parar sem força aplicada não viola a 1.ª Lei; a bola fica parada porque o movimento cessa por atrito."
+      "Está incorreta: A bola não para sem força: é a resistência ao rolamento que a trava, por isso não há violação da 1.ª Lei."
     ],
     "nursingApplication": "Demonstra a ausência de momento restaurador ou desestabilizador em superfícies horizontais lisas."
   },
@@ -2661,9 +2661,9 @@ const TOPIC_1_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Calculando M = F · b para cada uma: M1 = 10 N × 2 m = 20 N·m; M2 = 10 N × 1 m = 10 N·m. A força com o dobro do braço produz o dobro do momento rotativo.",
     "distractorAnalysis": [
-      "Está incorreta: Com a mesma força, a força que tem o maior braço (2 m) tem o maior momento; 5 N·m não resulta de 10 × 2.",
-      "Está incorreta: Os momentos são iguais ao produto F · b; não há 5 N·m para b = 2 m.",
-      "Está incorreta: Os braços são diferentes (2 m e 1 m), pelo que os momentos também são diferentes."
+      "Está incorreta: Com F = 10 N e b = 2 m, o momento é 10 × 2 = 20 N·m, e não 5 N·m.",
+      "Está incorreta: Os braços são diferentes (2 m e 1 m), pelo que os momentos também são diferentes.",
+      "Está incorreta: Com F = 10 N, os momentos são 20 e 10 N·m; 200 e 100 N·m resultariam de multiplicar por 10 a mais."
     ],
     "nursingApplication": "Demonstração quantitativa clara do efeito multiplicador da distância de alavanca."
   },
@@ -3202,7 +3202,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1169,
     "topicId": 1,
-    "question": "Nas conversões entre massa e peso nos cálculos de biofísica, qual é o valor padrão adotado para a aceleração da gravidade à superfície terrestre?",
+    "question": "Nas conversões entre massa e peso nos cálculos de biofísica, qual é o valor adotado nesta unidade curricular para a aceleração da gravidade à superfície terrestre?",
     "options": [
       "g = 10 m/s²",
       "g = 9,8 m/s²",
@@ -3212,7 +3212,7 @@ const TOPIC_1_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "Apresenta-se no topo a premissa de cálculo: 'g = 9,8 m/s²'.",
     "distractorAnalysis": [
-      "Está incorreta: 10 m/s² é uma aproximação comum no ensino secundário, adotando-se o valor padrão de 9,8 m/s².",
+      "Está incorreta: 10 m/s² é uma aproximação comum no ensino secundário, mas o valor adotado nesta unidade curricular é 9,8 m/s².",
       "Está incorreta: 9,815 m/s² possui precisão excessiva não adotada no texto do professor.",
       "Está incorreta: 3,6 é o fator de conversão de m/s para km/h, não o valor de g."
     ],
@@ -3365,8 +3365,8 @@ const TOPIC_1_QUESTIONS = [
     "explanation": "Como a inserção tendinosa do bíceps se localiza muito perto da articulação (8 cm), o seu braço é muito mais curto que os braços das resistências (15 cm e 30 cm). Para gerar o mesmo momento de rotação, é forçado a produzir uma força substancialmente maior.",
     "distractorAnalysis": [
       "Está incorreta: A constante de Hooke não explica o momento necessário; o problema é geométrico.",
-      "Está incorreta: O braço do bíceps é curto, e as forças resistentes atuam a distâncias maiores; esta é a explicação correta.",
-      "Está incorreta: A massa do antebraço é constante; o esforço não a altera."
+      "Está incorreta: A massa do antebraço é constante; o esforço não a altera.",
+      "Está incorreta: O peso do antebraço (m · g) não depende do ângulo do cotovelo; o que varia é o braço do peso."
     ],
     "nursingApplication": "Permite ao futuro enfermeiro compreender a sobrecarga articular e tendinosa provocada por cargas que parecem leves na mão."
   },
@@ -3717,13 +3717,13 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Na tabela de estabilidade biomecânica, que medida preventiva de enfermagem é expressamente recomendada quanto ao 'Atrito solo-calçado'?",
     "options": [
-      "Proibir meias sem piso antiderrapante na enfermaria, com sola de borracha de relevo.",
+      "Proibir meias sem sola antiderrapante; preferir calçado de sola de borracha com relevo.",
       "Encerar os corredores com cera líquida pouco antes da marcha dos doentes.",
       "Incentivar os doentes operados a caminhar de meias de seda em piso molhado.",
       "Usar calçado de sola lisa para acelerar as deslocações pelos corredores."
     ],
     "correctIndex": 0,
-    "explanation": "Determina-se: Fator: Atrito solo-calçado | Alta estabilidade: Alto (sola de borracha com relevo em piso seco) | Risco: Baixo (meias em chão encerado ou molhado) | Intervenção: 'Proibir meias sem piso antiderrapante na enfermaria'.",
+    "explanation": "Determina-se: Fator: Atrito solo-calçado | Alta estabilidade: Alto (sola de borracha com relevo em piso seco) | Risco: Baixo (meias em chão encerado ou molhado) | Intervenção: 'Proibir meias sem sola antiderrapante; preferir calçado de sola de borracha com relevo'.",
     "distractorAnalysis": [
       "Está incorreta: Cera líquida reduz muito o atrito e é fator de risco de queda.",
       "Está incorreta: Meias lisas em piso molhado reduzem o atrito e favorecem escorregamentos.",
