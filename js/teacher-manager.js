@@ -562,7 +562,7 @@ class TeacherManager {
             <div class="teacher-q-card-meta">
               <label class="teacher-q-checkbox-label" title="Selecionar para ação em massa">
                 <input type="checkbox" class="teacher-q-checkbox" data-id="${q.id}" ${isSelected ? 'checked' : ''}>
-                <span class="teacher-q-id">Pergunta ${q.id - q.topicId * 1000} · Tópico ${q.topicId}</span>
+                <span class="teacher-q-id">${questionLabel(q.id)}</span>
               </label>
               <span class="teacher-topic-badge">Tópico ${q.topicId}</span>
               ${isExcluded 
@@ -785,7 +785,7 @@ class TeacherManager {
       excludedArray.forEach((id, idx) => {
         const q = this.allQuestions.find(item => item.id === id);
         if (q) {
-          report += `[${idx + 1}] Pergunta ${q.id - q.topicId * 1000} (Tópico ${q.topicId})\n`;
+          report += `[${idx + 1}] ${questionLabel(q.id)}\n`;
           report += `Enunciado: ${q.question}\n`;
           report += `Resposta Correta: (${['A', 'B', 'C', 'D'][q.correctIndex]}) ${q.options[q.correctIndex]}\n`;
           report += `Motivo da Eliminação: Decisão Docente de Auditoria\n\n`;

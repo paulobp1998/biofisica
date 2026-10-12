@@ -377,7 +377,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Ação de copiar o ID da pergunta atual no quiz
   const handleCopyCurrentQid = () => {
     if (!currentQuestionId) return;
-    const qidStr = `Pergunta Q${currentQuestionId}`;
+    const qidStr = questionLabel(currentQuestionId);
     copyTextToClipboard(qidStr, `📋 Copiado para a área de transferência: <strong>${qidStr}</strong>`);
   };
 
@@ -836,7 +836,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     currentQuestionId = state.questionId;
-    const qidLabel = `Pergunta Q${state.questionId}`;
+    const qidLabel = questionLabel(state.questionId);
 
     // Atualiza estado da estrela
     const starredList = getStarred();
@@ -859,7 +859,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     quizTopicBadge.textContent = titleText;
-    quizProgressText.textContent = `Pergunta ${currNum} de ${totalNum} • ${qidLabel} • ${state.feedbackMode === 'delayed' ? '⏱️ Frequência Real' : '🟢 Modo Treino'}`;
+    quizProgressText.textContent = `Pergunta ${currNum} de ${totalNum} • ${state.feedbackMode === 'delayed' ? '⏱️ Frequência Real' : '🟢 Modo Treino'}`;
     quizProgressBar.style.width = `${progressPercent}%`;
 
     // Atualizar indicadores visuais com o número da pergunta
@@ -1121,7 +1121,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     summary.answers.forEach((ans, i) => {
       const isStarred = starredList.includes(ans.questionId);
-      const qidLabel = `Pergunta Q${ans.questionId}`;
+      const qidLabel = questionLabel(ans.questionId);
       const reviewItem = document.createElement('div');
       reviewItem.className = `review-card ${ans.isCorrect ? 'review-correct' : 'review-incorrect'}`;
       reviewItem.innerHTML = `
@@ -1411,8 +1411,8 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="search-result-card">
             <div class="search-res-header">
               <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
-                <span class="search-res-topic">${topicMeta ? `${topicMeta.icon} Tópico ${topicMeta.id}` : ''} • Pergunta Q${item.id}</span>
-                <button type="button" class="btn-copy-review-qid btn-outline btn-sm" data-qid="Pergunta Q${item.id}" title="Copiar ID da pergunta" style="padding: 0.12rem 0.5rem; font-size: 0.74rem;">
+                <span class="search-res-topic">${topicMeta ? `${topicMeta.icon} Tópico ${topicMeta.id}` : ''} • Pergunta ${item.id % 1000}</span>
+                <button type="button" class="btn-copy-review-qid btn-outline btn-sm" data-qid="${questionLabel(item.id)}" title="Copiar ID da pergunta" style="padding: 0.12rem 0.5rem; font-size: 0.74rem;">
                   📋 Copiar ID
                 </button>
               </div>
@@ -1464,7 +1464,7 @@ document.addEventListener('DOMContentLoaded', () => {
             startQuizSession({
               mode: 'custom',
               customQuestions: [targetQ],
-              customTitle: `Pergunta Q${targetQ.id}`,
+              customTitle: questionLabel(targetQ.id),
               count: 1,
               feedbackMode: 'immediate',
               timerSeconds: 0
@@ -1557,7 +1557,7 @@ document.addEventListener('DOMContentLoaded', () => {
     selectedQuestions.forEach((q, idx) => {
       printHtml += `
         <div class="print-q-card">
-          <p class="print-q-title">${idx + 1}. <span style="font-size: 0.85em; font-weight: 600; color: #475569;">[Pergunta Q${q.id}]</span> ${q.question}</p>
+          <p class="print-q-title">${idx + 1}. <span style="font-size: 0.85em; font-weight: 600; color: #475569;">[${questionLabel(q.id)}]</span> ${q.question}</p>
           <div class="print-options-grid">
             ${q.options.map((opt, oIdx) => `
               <div class="print-option-row">
@@ -1585,7 +1585,7 @@ document.addEventListener('DOMContentLoaded', () => {
       selectedQuestions.forEach((q, idx) => {
         printHtml += `
           <div class="print-sol-item">
-            <p class="print-sol-q">Questão ${idx + 1} (Pergunta Q${q.id}):</p>
+            <p class="print-sol-q">Questão ${idx + 1} (${questionLabel(q.id)}):</p>
             <p class="print-sol-ans">✓ Resposta Correta: Opção (${letters[q.correctIndex]}) - ${q.options[q.correctIndex]}</p>
             <p class="print-sol-exp"><strong>Por que está certa a opção ${letters[q.correctIndex]}:</strong> ${q.explanation}</p>
             <p class="print-sol-exp"><strong>💡 Relevância Clínica:</strong> ${q.nursingApplication}</p>

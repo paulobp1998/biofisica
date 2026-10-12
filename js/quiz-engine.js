@@ -2,6 +2,12 @@
  * Quiz Engine - Gestor da Mecânica de Perguntas e Avaliação
  */
 
+// Rótulo visível de uma pergunta. O ID interno (ex.: 1041) mantém-se nos dados;
+// o número mostrado é a posição dentro do tópico (1041 -> Pergunta 41 · Tópico 1).
+function questionLabel(id) {
+  return `Pergunta ${id % 1000} · Tópico ${Math.floor(id / 1000)}`;
+}
+
 class QuizEngine {
   constructor() {
     this.currentQuestions = [];
