@@ -962,17 +962,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "No Movimento Retilíneo e Uniforme (MRU), o que acontece à velocidade (v) no decorrer do tempo?",
     "options": [
-      "Aumenta exponencialmente a cada segundo de movimento.",
-      "Diminui linearmente até parar completamente.",
-      "Oscila ciclicamente entre valores positivos e negativos.",
-      "A velocidade (v) é constante no decorrer do tempo."
+      "Aumenta de forma linear a cada segundo que o corpo se desloca.",
+      "Diminui de forma linear até o corpo parar.",
+      "Oscila periodicamente entre valores positivos e negativos.",
+      "Mantém-se constante ao longo do tempo, com o mesmo módulo e direção."
     ],
     "correctIndex": 3,
     "explanation": "Define-se expressamente a propriedade basilar do MRU: 'A velocidade (v) é constante no decorrer do tempo'.",
     "distractorAnalysis": [
-      "Está incorreta: Aumento de velocidade caracteriza movimento acelerado, não uniforme.",
-      "Está incorreta: Diminuição de velocidade caracteriza movimento retardado ou desacelerado.",
-      "Está incorreta: Oscilações de velocidade correspondem a movimentos harmónicos ou periódicos."
+      "Está incorreta: Aumentar a velocidade implica aceleração, que no MRU é nula.",
+      "Está incorreta: Diminuir até parar é um movimento com aceleração, e não um MRU.",
+      "Está incorreta: No MRU a velocidade não muda de sentido; mantém a mesma direção e sentido."
     ],
     "nursingApplication": "Permite avaliar o transporte estável de doentes mantendo velocidade constante para evitar solavancos."
   },
@@ -981,17 +981,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é o valor da aceleração (a) de um corpo que se desloca em Movimento Retilíneo e Uniforme?",
     "options": [
-      "A aceleração (a) é nula (a = 0 m/s²).",
-      "A aceleração é igual a 9,8 m/s² na horizontal.",
-      "A aceleração varia consoante a massa do corpo.",
-      "A aceleração atinge o valor infinito durante o percurso."
+      "A aceleração é nula, pois a velocidade não sofre variação ao longo do tempo.",
+      "A aceleração é igual a 9,8 m/s² na horizontal, como na queda livre.",
+      "A aceleração varia com a massa do corpo, aumentando para corpos mais pesados.",
+      "A aceleração atinge um valor muito elevado durante todo o percurso."
     ],
     "correctIndex": 0,
     "explanation": "Estabelece-se diretamente: 'A aceleração (a) é nula', uma vez que a velocidade não sofre qualquer variação temporal.",
     "distractorAnalysis": [
-      "Está incorreta: 9,8 m/s² é o valor aproximado da aceleração gravítica vertical, não da aceleração no MRU.",
-      "Está incorreta: No MRU a aceleração é sempre zero, independentemente de qual seja a massa do corpo.",
-      "Está incorreta: Aceleração infinita é fisicamente impossível na mecânica clássica e violaria a constância da velocidade."
+      "Está incorreta: 9,8 m/s² é a aceleração da queda livre vertical, e não uma aceleração horizontal em MRU.",
+      "Está incorreta: A aceleração não depende da massa; num MRU é nula para qualquer corpo.",
+      "Está incorreta: Uma aceleração elevada implicaria variação da velocidade, o que o MRU não tem."
     ],
     "nursingApplication": "Garante o máximo conforto ao utente em transporte, minimizando as forças de inércia sentidas pelo corpo."
   },
@@ -1000,17 +1000,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é o valor da força resultante (F_r) que atua sobre um corpo em Movimento Retilíneo e Uniforme?",
     "options": [
-      "É sempre positiva e superior ao peso do corpo.",
-      "É nula (F_r = 0 N).",
+      "É positiva e superior ao peso do corpo.",
+      "É nula (F_r = 0 N), pois a aceleração também é nula.",
       "É igual à força de atrito multiplicada pela velocidade.",
-      "É imprevisível e muda aleatoriamente a cada instante."
+      "É variável e depende do valor da velocidade em cada instante."
     ],
     "correctIndex": 1,
     "explanation": "Como a aceleração é nula (a = 0), pela 2ª Lei de Newton (Fr = m · a) a força resultante é obrigatoriamente nula: Fr = 0 N.",
     "distractorAnalysis": [
-      "Está incorreta: Se a força resultante fosse positiva e não nula, o corpo aceleraria continuamente pela 2ª Lei.",
-      "Está incorreta: Multiplicar força por velocidade dá potência mecânica (Watts), não a força resultante.",
-      "Está incorreta: As leis da mecânica clássica são deterministas: a aceleração nula dita com certeza rigorosa Fr = 0 N."
+      "Está incorreta: Uma força resultante positiva e superior ao peso provocaria aceleração, contrariando o MRU.",
+      "Está incorreta: A força não se multiplica pela velocidade; em MRU a força resultante é nula.",
+      "Está incorreta: A força resultante não depende da velocidade num MRU; é nula em cada instante."
     ],
     "nursingApplication": "Significa que para manter uma maca em velocidade constante apenas é necessário anular a força de atrito."
   },
@@ -1020,16 +1020,16 @@ const TOPIC_1_QUESTIONS = [
     "question": "Uma maca hospitalar é deslocada ao longo de um corredor retilíneo com velocidade rigorosamente constante de 1 m/s. O que podemos afirmar?",
     "options": [
       "A força que o enfermeiro exerce é muito maior do que a força de atrito das rodas.",
-      "A maca está em aceleração positiva crescente.",
-      "A força exercida pelo profissional equilibra exatamente a força de atrito, sendo Fr = 0 N.",
-      "A maca não sofre nenhuma força de gravidade durante o trajeto."
+      "A maca está a acelerar no sentido do movimento, de forma crescente.",
+      "A força do profissional equilibra a força de atrito, pelo que Fr = 0 N.",
+      "A maca deixa de sofrer a força da gravidade durante o trajeto."
     ],
     "correctIndex": 2,
     "explanation": "Como a velocidade é constante e o movimento é retilíneo, a aceleração é zero. Portanto, a força aplicada para a frente equilibra perfeitamente a resistência de atrito para trás: Fr = 0 N.",
     "distractorAnalysis": [
-      "Está incorreta: Se a força aplicada superasse o atrito, haveria força resultante e a maca aceleraria, aumentando de velocidade.",
-      "Está incorreta: Velocidade constante implica por definição matemática aceleração estritamente nula.",
-      "Está incorreta: A gravidade continua a atuar plenamente sobre a massa da maca e do utente (P = m · g)."
+      "Está incorreta: Se a força do enfermeiro fosse muito maior que o atrito, a maca aceleraria, contrariando a velocidade constante.",
+      "Está incorreta: Com velocidade constante a aceleração é nula; não há aceleração crescente.",
+      "Está incorreta: A gravidade continua a atuar sobre a maca; o peso é equilibrado pela normal."
     ],
     "nursingApplication": "Evidencia que manter velocidade constante exige muito menor esforço do que acelerar ou desacelerar repetidamente."
   },
@@ -1038,17 +1038,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Tanto um corpo em repouso como um corpo em Movimento Retilíneo e Uniforme (MRU) encontram-se em equilíbrio mecânico. O que têm ambos obrigatoriamente em comum em termos dinâmicos?",
     "options": [
-      "Ambos possuem velocidade diferente de zero e aceleração máxima.",
-      "Ambos sofrem forças resultantes gigantescas no sentido do movimento.",
-      "Ambos têm peso nulo por estarem em superfícies horizontais.",
+      "Ambos possuem velocidade diferente de zero e aceleração elevada.",
+      "Ambos sofrem forças resultantes elevadas no sentido do movimento.",
+      "Ambos têm peso nulo por se encontrarem em superfícies horizontais.",
       "Em ambos a aceleração é nula (a = 0) e a força resultante é nula (Fr = 0)."
     ],
     "correctIndex": 3,
     "explanation": "Tanto no repouso estático (v = 0) como no MRU (v = constante), a aceleração é nula (a = 0) e a força resultante é nula (Fr = 0). Ambos constituem estados de equilíbrio translacional.",
     "distractorAnalysis": [
-      "Está incorreta: O corpo em repouso tem velocidade rigorosamente nula (v = 0), ao contrário do que afirma a opção.",
-      "Está incorreta: Forças resultantes grandes produziriam acelerações elevadas pela 2ª Lei de Newton.",
-      "Está incorreta: O peso depende unicamente da massa e da gravidade local, mantendo-se constante em repouso ou MRU."
+      "Está incorreta: Num corpo em repouso a velocidade é nula, e a aceleração não é elevada.",
+      "Está incorreta: No equilíbrio a força resultante é nula, e não elevada.",
+      "Está incorreta: O peso não é nulo: é a força da gravidade, presente em qualquer corpo com massa."
     ],
     "nursingApplication": "Mostra que um doente em repouso na cama e um doente em transporte suave sem solavancos partilham a ausência de aceleração."
   },
@@ -1058,16 +1058,16 @@ const TOPIC_1_QUESTIONS = [
     "question": "Para que um corpo continue em Movimento Retilíneo e Uniforme no vácuo sem atrito, é necessário continuar a empurrá-lo com uma força resultante?",
     "options": [
       "Não, pois pela 1ª Lei de Newton o corpo mantém a sua velocidade constante por inércia.",
-      "Sim, é obrigatório aplicar uma força contínua crescente para vencer o esquecimento do corpo.",
-      "Sim, porque todo o movimento consome a massa do objeto até ele parar.",
-      "Apenas se o corpo tiver uma temperatura inferior a zero graus Celsius."
+      "Sim, é preciso aplicar uma força crescente para manter a velocidade do corpo a aumentar.",
+      "Sim, porque o movimento consome gradualmente a massa do objeto em deslocamento.",
+      "Caso a temperatura ambiente do corredor seja inferior a zero graus Celsius."
     ],
     "correctIndex": 0,
     "explanation": "Pela 1ª Lei de Newton (Lei da Inércia), um corpo em movimento sem forças resultantes contrárias continua em movimento indefinidamente sem necessidade de qualquer força contínua.",
     "distractorAnalysis": [
-      "Está incorreta: A matéria não tem 'esquecimento'; a ideia aristotélica de que o movimento requer força contínua foi superada por Galileu e Newton.",
-      "Está incorreta: O movimento não consome massa na física clássica; a massa permanece rigorosamente invariável.",
-      "Está incorreta: A temperatura não condiciona a conservação da quantidade de movimento mecânica no vácuo."
+      "Está incorreta: Manter a velocidade não exige força crescente; aumentar a força aceleraria o corpo.",
+      "Está incorreta: O movimento não consome a massa do corpo; a massa é constante.",
+      "Está incorreta: A temperatura não influencia o movimento de um corpo sem atrito."
     ],
     "nursingApplication": "Ajuda a desfazer conceções erróneas comuns sobre a necessidade de forças para manter o movimento."
   },
@@ -1076,17 +1076,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Se um veículo de transporte de doentes mantiver um valor numérico de velocidade de 30 km/h, mas estiver a fazer uma rotunda circular:",
     "options": [
-      "O movimento é classificado como retilíneo e uniforme porque 30 km/h é constante.",
-      "O movimento NÃO é uniforme retilíneo, pois a direção da velocidade está a mudar, existindo aceleração.",
-      "A força resultante sobre o veículo é obrigatoriamente igual a zero Newtons.",
-      "O veículo perde toda a sua inércia durante a curva e flutua sobre a estrada."
+      "O movimento é retilíneo e uniforme, porque o módulo da velocidade, 30 km/h, é constante.",
+      "O movimento não é retilíneo e uniforme, pois a direção da velocidade muda.",
+      "A força resultante sobre o veículo é igual a zero newtons, pois o módulo se mantém.",
+      "O veículo perde parte da sua inércia durante a curva, devido ao aumento da velocidade."
     ],
     "correctIndex": 1,
     "explanation": "A velocidade é uma grandeza vetorial. Embora o módulo seja 30 km/h, a direção está a mudar continuamente ao longo da curva, o que implica aceleração (centrípeta) e força resultante não nula. Não é MRU.",
     "distractorAnalysis": [
-      "Está incorreta: Para ser retilíneo a trajetória tem de ser em linha reta; uma rotunda é uma trajetória curva.",
-      "Está incorreta: Curvar exige uma força resultante centrípeta gerada pelo atrito dos pneus com a estrada.",
-      "Está incorreta: A inércia mantém-se inalterada e manifesta-se pela tendência do corpo em seguir em frente pela tangente."
+      "Está incorreta: Um movimento com módulo constante pode não ser retilíneo; a direção da velocidade também conta.",
+      "Está incorreta: Numa curva há aceleração centrípeta e, portanto, força resultante não nula.",
+      "Está incorreta: A inércia é uma propriedade da massa e não se perde durante a curva."
     ],
     "nursingApplication": "Explica por que os doentes sentem forças laterais quando uma ambulância faz curvas, mesmo em velocidade moderada."
   },
@@ -1095,17 +1095,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a condição mecânica necessária e suficiente para que um ponto material esteja em equilíbrio de translação?",
     "options": [
-      "A velocidade tem de ser rigorosamente crescente a uma taxa constante de 1 m/s².",
-      "O corpo tem de estar obrigatoriamente a uma temperatura de zero absoluto.",
-      "A resultante de todas as forças que atuam sobre o corpo tem de ser igual a zero (Fr = 0 N).",
-      "O peso do corpo tem de ser exatamente o dobro da força normal de apoio."
+      "A velocidade tem de ser crescente a uma taxa constante de 1 m/s².",
+      "O corpo tem de estar a uma temperatura muito baixa, próxima do zero absoluto.",
+      "A resultante de todas as forças que atuam sobre o corpo tem de ser nula (Fr = 0 N).",
+      "O peso do corpo tem de ser o dobro da força normal de apoio."
     ],
     "correctIndex": 2,
     "explanation": "O equilíbrio de translação define-se estritamente pela anulação da força resultante: Fr = 0 N (o que engloba tanto o repouso como o MRU).",
     "distractorAnalysis": [
-      "Está incorreta: Taxa de 1 m/s² significa aceleração não nula, o que violaria o equilíbrio de translação.",
-      "Está incorreta: O zero absoluto (-273,15 ºC) é um conceito térmico ideal sem relação com o equilíbrio mecânico de forças.",
-      "Está incorreta: Se o peso superasse a normal sem outra força, haveria aceleração para baixo e não equilíbrio."
+      "Está incorreta: Uma aceleração constante aumenta a velocidade; o equilíbrio de translação exige aceleração nula.",
+      "Está incorreta: A temperatura não determina o equilíbrio de translação de um corpo.",
+      "Está incorreta: Um corpo horizontal em equilíbrio tem N = P, e não o dobro; a condição geral é Fr = 0."
     ],
     "nursingApplication": "Base de análise da segurança postural e estática em suportes terapêuticos e macas."
   },
@@ -1114,36 +1114,36 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Um carrinho de medicação desloca-se em MRU num piso horizontal. Se a força de atrito contrária ao movimento for de 18 N, que força horizontal aplica o enfermeiro?",
     "options": [
-      "0 N, pois o carrinho move-se sem qualquer auxílio no corredor.",
-      "36 N para manter a velocidade a aumentar indefinidamente.",
-      "9 N, aproveitando a inércia que reduz a força para metade.",
-      "Exatamente 18 N no sentido do movimento, garantindo força resultante nula (Fr = 0 N)."
+      "0 N, pois o carrinho se move sem auxílio no corredor.",
+      "36 N, para que a velocidade aumente de forma contínua.",
+      "9 N, pois a inércia do carrinho reduz à metade a força necessária.",
+      "18 N, no sentido do movimento, para que a força resultante seja nula (Fr = 0 N)."
     ],
     "correctIndex": 3,
     "explanation": "Para manter MRU (aceleração zero e velocidade constante), a força aplicada deve anular exatamente a resistência: F_aplicada - F_atrito = 0 => F_aplicada = 18 N.",
     "distractorAnalysis": [
-      "Está incorreta: Sem força aplicada (0 N), o atrito de 18 N desaceleraria o carrinho até ele parar.",
-      "Está incorreta: 36 N geraria uma resultante de 18 N para a frente, provocando aceleração contínua e não MRU.",
-      "Está incorreta: 9 N seria insuficiente para equilibrar os 18 N de atrito, fazendo o carrinho desacelerar e parar."
+      "Está incorreta: Sem força aplicada, o atrito faria o carrinho abrandar até parar.",
+      "Está incorreta: Uma força de 36 N produziria aceleração, contrariando o MRU.",
+      "Está incorreta: A inércia não reduz a força necessária; esta é igual ao atrito, 18 N."
     ],
     "nursingApplication": "Demonstra a relação equilibrada de forças no manuseamento rotineiro de equipamentos hospitalares."
   },
   {
     "id": 1060,
     "topicId": 1,
-    "question": "Se um dinamómetro acoplado a uma maca indicar que a força resultante horizontal total sobre ela é Fr = 0 N, o que podemos concluir com certeza?",
+    "question": "Se a força resultante horizontal sobre uma maca for nula (Fr = 0 N), o que podemos concluir com certeza?",
     "options": [
-      "A maca está em repouso estático ou em movimento retilíneo e uniforme.",
-      "A maca está necessariamente a acelerar a 10 m/s² para a frente.",
-      "A massa da maca foi totalmente reduzida a zero quilogramas.",
-      "A maca perdeu o contacto com o chão e encontra-se a levitar."
+      "A maca está em repouso ou em movimento retilíneo e uniforme.",
+      "A maca está a acelerar 10 m/s² para a frente, devido ao peso.",
+      "A massa da maca foi reduzida, passando a ser quase nula.",
+      "A maca perdeu o contacto com o chão, mas mantém-se em equilíbrio."
     ],
     "correctIndex": 0,
     "explanation": "Força resultante nula (Fr = 0) é a condição exata que dita que o corpo ou está parado (repouso) ou se desloca em linha reta com velocidade invariável (MRU).",
     "distractorAnalysis": [
-      "Está incorreta: Aceleração a = 10 m/s² exigiria Fr = m · 10 ≠ 0, contrariando a premissa de Fr = 0 N.",
-      "Está incorreta: A massa é constante e independente do equilíbrio de forças que atuam sobre o corpo.",
-      "Está incorreta: O equilíbrio de forças na vertical (P = N) garante que a maca se apoia no solo sem levitar."
+      "Está incorreta: Com Fr = 0 não há aceleração; a maca não acelera 10 m/s² para a frente.",
+      "Está incorreta: A massa de um corpo é constante e não se reduz por aplicar uma força.",
+      "Está incorreta: Fr = 0 não implica perda de contacto; a maca continua apoiada no chão."
     ],
     "nursingApplication": "Garante a correta interpretação de leituras de estabilidade mecânica em aparelhos clínicos."
   },
@@ -1152,17 +1152,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Quantas são as forças fundamentais da natureza reconhecidas pela física moderna?",
     "options": [
-      "Apenas 2 forças: Peso e Atrito.",
-      "Exatamente 4 forças fundamentais.",
-      "7 forças correspondentes às 7 unidades de base do SI.",
-      "Inúmeras forças distintas sem qualquer categorização científica."
+      "2 forças: o peso e o atrito, presentes no dia a dia.",
+      "4 forças fundamentais: gravítica, eletromagnética, nuclear forte e nuclear fraca.",
+      "7 forças, correspondentes às 7 unidades de base do Sistema Internacional.",
+      "Muitas forças distintas, sem uma categorização científica comum."
     ],
     "correctIndex": 1,
     "explanation": "Introduz-se as 'Forças fundamentais da natureza', apresentando exatamente 4 forças fundamentais: Gravidade, Eletromagnética, Nuclear Forte e Nuclear Fraca.",
     "distractorAnalysis": [
-      "Está incorreta: Peso e atrito são manifestações macroscópicas particulares da gravidade e do eletromagnetismo, não as forças fundamentais.",
-      "Está incorreta: As 7 unidades base do SI são unidades de medida (m, kg, s, etc.), não forças fundamentais.",
-      "Está incorreta: A física moderna unifica todas as interações da natureza em exatamente 4 forças fundamentais."
+      "Está incorreta: Peso e atrito são forças derivadas das fundamentais, e não fundamentais.",
+      "Está incorreta: As unidades de base do SI não correspondem a forças fundamentais.",
+      "Está incorreta: A física reconhece um número pequeno e definido de interações fundamentais."
     ],
     "nursingApplication": "Estrutura o conhecimento dos alunos sobre a origem primária de todas as interações biológicas e materiais."
   },
@@ -1171,17 +1171,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Como se define a Força Gravítica (ou Gravidade) na física e na biomecânica?",
     "options": [
-      "Atração e repulsão mútua entre pólos de ímanes permanentes.",
+      "Atração e repulsão mútuas entre pólos de ímanes permanentes.",
       "Força microscópica que divide os protões em quarks no núcleo.",
-      "Atração entre corpos com massa, expressa por P = m · g.",
-      "Resistência ao deslizamento de superfícies ásperas em contacto."
+      "Atração mútua entre corpos com massa, que se manifesta no peso (P = m · g).",
+      "Resistência ao deslizamento de superfícies ásperas, que depende da rugosidade."
     ],
     "correctIndex": 2,
-    "explanation": "Define-se: 'Força da gravidade (P = m · g): Atração entre corpos com massa'.",
+    "explanation": "Define-se a força gravítica como a atração mútua entre corpos com massa, que se manifesta no peso: P = m · g.",
     "distractorAnalysis": [
-      "Está incorreta: Atração e repulsão magnética define a força eletromagnética, não a gravítica.",
-      "Está incorreta: A interação entre quarks e protões é mediada pela força nuclear forte.",
-      "Está incorreta: A resistência ao deslizamento define a força de atrito macroscópica."
+      "Está incorreta: Os ímanes correspondem à força magnética (eletromagnética), e não à gravítica.",
+      "Está incorreta: Dividir protões em quarks é matéria da física de partículas, e não da gravidade.",
+      "Está incorreta: A resistência ao deslizamento é o atrito, e não a gravidade."
     ],
     "nursingApplication": "Explica o peso corporal que atua continuamente sobre o sistema osteomuscular e leitos hospitalares."
   },
@@ -1191,16 +1191,16 @@ const TOPIC_1_QUESTIONS = [
     "question": "Como se define a Força Eletromagnética no estudo das interações fundamentais da matéria?",
     "options": [
       "Pressão exercida por fluidos biológicos no interior de vasos sanguíneos.",
-      "Energia emitida pelo núcleo atómico durante a fissão espontânea.",
-      "Deformação elástica exclusiva de molas helicoidais em dinamómetros.",
+      "Energia emitida pelo núcleo atómico durante a fissão de átomos pesados.",
+      "Deformação elástica de molas helicoidais, como as dos dinamómetros.",
       "Atração / repulsão entre corpos por ação dos seus campos magnéticos (e elétricos)."
     ],
     "correctIndex": 3,
     "explanation": "Define-se expressamente: 'Força eletromagnética: Atração / repulsão entre corpos por ação dos seus campos magnéticos'.",
     "distractorAnalysis": [
-      "Está incorreta: A pressão em vasos sanguíneos decorre da hidrodinâmica cardíaca, não da definição da força fundamental eletromagnética.",
-      "Está incorreta: Energia de fissão nuclear envolve forças nucleares forte e fraca.",
-      "Está incorreta: A deformação de molas é uma manifestação elástica molecular microscópica decorrente de ligações eletromagnéticas, mas não a sua definição."
+      "Está incorreta: A pressão de fluidos biológicos não é uma interação fundamental da matéria.",
+      "Está incorreta: A energia da fissão é de natureza nuclear, e não o que define a força eletromagnética.",
+      "Está incorreta: A deformação elástica é um efeito mecânico, e não a interação eletromagnética."
     ],
     "nursingApplication": "Base para compreender a bioeletricidade celular, potenciais de ação e equipamentos como ECG e desfibrilhadores."
   },
@@ -1228,17 +1228,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Onde atua a Força Nuclear Fraca, de acordo com a definição apresentada?",
     "options": [
-      "Exclusivamente no atrito estático entre calçado hospitalar e piso molhado.",
+      "No atrito estático entre calçado hospitalar e piso molhado.",
       "Está presente em alguns tipos de decaimento radioativo e na fusão nuclear.",
-      "Na flexão do antebraço pelo músculo bíceps braquial.",
+      "Na flexão do antebraço realizada pelo músculo bíceps braquial.",
       "No amortecimento elástico dos discos cartilagíneos intervertebrais."
     ],
     "correctIndex": 1,
     "explanation": "Estipula-se: 'Força nuclear fraca: Presente em alguns tipos de decaimento radioativo e na fusão nuclear'.",
     "distractorAnalysis": [
-      "Está incorreta: O atrito calçado-solo é uma manifestação macroscópica de forças eletromagnéticas de contacto.",
-      "Está incorreta: A flexão do cotovelo é um sistema de alavancas osteomuscular mecânico (Tópico 1).",
-      "Está incorreta: O amortecimento de cartilagens é um comportamento viscoelástico reológico (Tópico 2)."
+      "Está incorreta: O atrito calçado-solo é uma manifestação macroscópica de forças eletromagnéticas.",
+      "Está incorreta: A flexão do cotovelo é um sistema de alavancas osteomuscular mecânico.",
+      "Está incorreta: O amortecimento de cartilagens é um comportamento viscoelástico, sem relação com a força nuclear fraca."
     ],
     "nursingApplication": "Compreensão essencial para os futuros tópicos de física nuclear e aplicações terapêuticas de radioisótopos."
   },
@@ -1249,15 +1249,15 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Da força nuclear forte que une o núcleo das células da pele.",
       "Da força nuclear fraca que causa decaimento radioativo ósseo.",
-      "Da força da gravidade (atração gravítica entre a massa do utente e a massa da Terra).",
-      "Exclusivamente de forças magnéticas repulsivas geradas pelo solo."
+      "Da força da gravidade, que atrai a massa do utente para a Terra.",
+      "De forças magnéticas repulsivas geradas pelo solo da enfermaria."
     ],
     "correctIndex": 2,
     "explanation": "O peso é a força de atração gravítica mútua entre a massa corporal do doente e o planeta Terra, dada por P = m · g.",
     "distractorAnalysis": [
-      "Está incorreta: A força nuclear forte atua apenas dentro dos núcleos atómicos, não produzindo peso na balança.",
-      "Está incorreta: A força nuclear fraca medeia desintegrações radioativas subatómicas, sem gerar o peso macroscópico.",
-      "Está incorreta: O peso não decorre de campos magnéticos repulsivos, mas sim da atração gravítica universal."
+      "Está incorreta: A força nuclear forte atua dentro do núcleo atómico, e não na pele ou na balança.",
+      "Está incorreta: O decaimento radioativo não se relaciona com a medição do peso.",
+      "Está incorreta: O solo não gera forças magnéticas repulsivas que determinem o peso do utente."
     ],
     "nursingApplication": "Ajuda a clarificar por que o peso varia com a gravidade local enquanto a massa se mantém invariável."
   },
@@ -1266,17 +1266,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "No interior do núcleo atómico, protões com a mesma carga positiva repelem-se eletrostaticamente. O que impede o núcleo de explodir?",
     "options": [
-      "A força da gravidade que atrai os protões com intensidade infinitamente superior.",
+      "A força da gravidade, que atrai os protões com intensidade muito superior.",
       "O atrito cinético que imobiliza as partículas nas órbitas nucleares.",
-      "A força normal exercida pela membrana nuclear celular.",
-      "A força nuclear forte, que atua como 'cola' superando a repulsão eletromagnética a distâncias ultracurtas."
+      "A força normal exercida pela membrana que envolve o núcleo celular.",
+      "A força nuclear forte, que atua como cola a distâncias muito curtas."
     ],
     "correctIndex": 3,
     "explanation": "A força nuclear forte é ordens de grandeza mais intensa que a repulsão eletromagnética a distâncias subatómicas, atuando como a 'cola' que mantém os nucleões firmemente unidos.",
     "distractorAnalysis": [
-      "Está incorreta: A gravidade entre partículas elementares é de intensidade desprezível quando comparada com a repulsão elétrica.",
-      "Está incorreta: Atrito cinético é um fenómeno macroscópico de contacto mecânico, não existindo no interior do núcleo.",
-      "Está incorreta: A membrana nuclear é uma estrutura celular biológica macromolecular, sem efeito nas forças de coesão atómica."
+      "Está incorreta: A gravidade é muito mais fraca do que a repulsão elétrica à escala nuclear.",
+      "Está incorreta: O atrito é uma força de contacto macroscópica, sem ação no núcleo atómico.",
+      "Está incorreta: A membrana nuclear é uma estrutura biológica e não exerce forças sobre os protões."
     ],
     "nursingApplication": "Introduz a estabilidade atómica necessária para compreender isótopos estáveis e radioativos em medicina."
   },
@@ -1285,17 +1285,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "As forças de atrito entre a pele e os lençóis e a resistência mecânica de contacto têm origem microscópica em qual força fundamental?",
     "options": [
-      "Na força eletromagnética (interações eletrostáticas entre os átomos e moléculas das superfícies em contacto).",
+      "Na força eletromagnética, por interações eletrostáticas entre os átomos das superfícies.",
       "Na força gravitacional entre as massas dos átomos do tecido do lençol.",
-      "Na força nuclear fraca que desintegra as fibras têxteis.",
-      "Na força nuclear forte que funde a pele com o colchão hospitalar."
+      "Na força nuclear fraca, que atua sobre as fibras têxteis do lençol.",
+      "Na força nuclear forte, que une a pele ao colchão hospitalar."
     ],
     "correctIndex": 0,
     "explanation": "Todas as forças de contacto macroscópicas (atrito, força normal, tensão muscular, elasticidade) decorrem fundamentalmente de interações eletromagnéticas entre as nuvens eletrónicas dos átomos em contacto.",
     "distractorAnalysis": [
-      "Está incorreta: A atração gravítica atómica é extremamente fraca para gerar atrito mecânico tangível.",
-      "Está incorreta: A força nuclear fraca não participa nas forças de atrito ou coesão estrutural macroscópica.",
-      "Está incorreta: Não há fusão nuclear entre pele e tecidos biológicos nas interações do dia a dia."
+      "Está incorreta: A atração gravítica entre átomos é muito fraca para gerar atrito tangível.",
+      "Está incorreta: A força nuclear fraca não participa nas forças de atrito ou de coesão macroscópica.",
+      "Está incorreta: A força nuclear forte atua no interior do núcleo atómico, e não entre a pele e o colchão."
     ],
     "nursingApplication": "Liga o conhecimento da física fundamental à compreensão das forças de corte e cisalhamento na pele de utentes acamados."
   },
@@ -1304,17 +1304,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Na expressão matemática da força da gravidade apresentada (P = m · g), o que representam as letras 'm' e 'g'?",
     "options": [
-      "M = momento da força e g = grama de substância.",
+      "M = momento da força e g = grama de substância, medida em laboratório.",
       "m = massa do corpo (em kg) e g = aceleração gravítica local (em m/s²).",
-      "M = metros percorridos e g = grau de inclinação da rampa.",
-      "M = músculo tracionado e g = goniometria articular da articulação."
+      "M = metros percorridos ao longo do piso e g = grau de inclinação da rampa.",
+      "M = músculo tracionado pelo tendão e g = goniometria da articulação."
     ],
     "correctIndex": 1,
     "explanation": "Na fórmula P = m · g, 'm' representa a massa do corpo (em quilogramas no SI) e 'g' a aceleração devida à gravidade local (aproximadamente 9,8 m/s² à superfície da Terra).",
     "distractorAnalysis": [
-      "Está incorreta: Momento da força representa-se por M e tem fórmula M = F · b, não P = m · g.",
-      "Está incorreta: Metros é unidade de distância e rampa inclina-se em graus, não constando na fórmula do peso vertical.",
-      "Está incorreta: Termos anatómicos não correspondem às variáveis formais da física newtoniana na fórmula P = m · g."
+      "Está incorreta: M é o momento de força (M = F · b), e g é a aceleração da gravidade, não uma grama.",
+      "Está incorreta: Metros e graus não aparecem na fórmula do peso vertical.",
+      "Está incorreta: Termos anatómicos não correspondem às variáveis da física newtoniana na fórmula P = m · g."
     ],
     "nursingApplication": "Permite calcular o peso exato de doentes e cargas para dimensionamento seguro de equipamentos."
   },
@@ -1323,17 +1323,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Nos meios de diagnóstico e terapia nuclear (como PET ou cintigrafia), que forças fundamentais governam as emissões e a estabilidade atómica?",
     "options": [
-      "Apenas o atrito cinético e a força normal das marquesas.",
-      "Exclusivamente a gravidade newtoniana dos órgãos abdominais.",
+      "O atrito cinético e a força normal exercida pelas marquesas.",
+      "A gravidade newtoniana, que atua sobre os órgãos abdominais.",
       "As forças nucleares (forte e fraca) e a força eletromagnética.",
-      "Nenhuma força física, operando apenas por telepatia quântica."
+      "A radiação do próprio corpo, sem envolver forças físicas mensuráveis."
     ],
     "correctIndex": 2,
     "explanation": "A estabilidade do núcleo, as transformações radioativas (como decaimento beta mediado pela força fraca) e a emissão de radiação eletromagnética gama são regidas pelas forças nucleares e eletromagnética.",
     "distractorAnalysis": [
-      "Está incorreta: Atrito e normal são forças macroscópicas mecânicas, não responsáveis pela desintegração radioativa.",
-      "Está incorreta: A gravidade não tem magnitude para induzir processos de emissão radioativa nuclear.",
-      "Está incorreta: A medicina nuclear apoia-se em leis rigorosas e reprodutíveis da física atómica e nuclear."
+      "Está incorreta: Atrito e força normal são forças mecânicas de contacto, e não regem a estabilidade nuclear.",
+      "Está incorreta: A gravidade não determina a estabilidade nuclear nem as emissões radioativas.",
+      "Está incorreta: A emissão radioativa é regida por forças nucleares e eletromagnéticas, e não pela radiação do corpo."
     ],
     "nursingApplication": "Faz a ponte entre a mecânica introdutória e as futuras aulas de proteção radiológica e diagnóstico por imagem."
   },
@@ -1342,7 +1342,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a definição exata de Força Normal (N) na mecânica e no apoio das superfícies?",
     "options": [
-      "Força tangencial que se opõe continuamente ao movimento de deslizamento.",
+      "Força tangencial que se opõe ao movimento de deslizamento.",
       "Força centrípeta responsável por manter o sangue a circular nas artérias coronárias.",
       "Força de tração exercida por um tendão para fletir o antebraço sobre o braço.",
       "Força perpendicular exercida por uma superfície sobre o corpo que nela se apoia."
@@ -1350,9 +1350,9 @@ const TOPIC_1_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "Define-se textualmente: 'Força normal (N): Força perpendicular exercida por uma superfície sobre o corpo que nela se apoia'.",
     "distractorAnalysis": [
-      "Está incorreta: A força tangencial oposta ao movimento é a definição de Força de Atrito.",
-      "Está incorreta: Força centrípeta atua em curvas circulares, não sendo a definição de força de apoio normal.",
-      "Está incorreta: A tração tendinosa é exercida por tecido conjuntivo e atua na linha de inserção do músculo."
+      "Está incorreta: A força tangencial é o atrito, e não a força perpendicular de apoio.",
+      "Está incorreta: A força centrípeta é dirigida para o centro de uma trajetória curva, e não é a normal.",
+      "Está incorreta: A tração do tendão é uma força muscular, e não uma força de apoio."
     ],
     "nursingApplication": "Conceito fundamental para entender a força mecânica exercida pelo colchão sobre o corpo de um utente acamado."
   },
@@ -1361,36 +1361,36 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Numa cama hospitalar perfeitamente horizontal, qual é a direção da Força Normal exercida pelo colchão sobre o doente?",
     "options": [
-      "Estritamente vertical e perpendicular à superfície do colchão, apontando para cima.",
-      "Horizontal paralela ao chão, apontando para os pés da cama.",
-      "Inclinada a 45 graus no sentido oblíquo da cabeceira.",
-      "Circular girando em torno do centro de massa do doente."
+      "Vertical, perpendicular à superfície do colchão e dirigida para cima.",
+      "Horizontal, paralela ao chão, apontando para os pés da cama.",
+      "Inclinada a 45 graus, no sentido oblíquo em direção à cabeceira.",
+      "Circular, rodando em torno do centro de massa do doente."
     ],
     "correctIndex": 0,
     "explanation": "Por definição física, a força 'normal' é sempre perpendicular (ortogonal, a 90 graus) relativamente à superfície de contacto. Sendo o colchão horizontal, a força normal atua na vertical para cima.",
     "distractorAnalysis": [
-      "Está incorreta: Forças paralelas à superfície são tangenciais (como o atrito), não normais.",
-      "Está incorreta: A força normal não tem inclinação de 45º numa superfície horizontal plana.",
-      "Está incorreta: A normal é um vetor linear perpendicular, não um vetor com trajetória circular rotativa."
+      "Está incorreta: A força normal é perpendicular à superfície; numa cama horizontal é vertical, e não horizontal.",
+      "Está incorreta: A normal é perpendicular à superfície e não faz um ângulo de 45 graus com ela.",
+      "Está incorreta: A força normal não é circular; é uma força de contacto de direção definida."
     ],
     "nursingApplication": "Garante a compreensão do vetor de força responsável por sustentar o peso corporal do doente no leito."
   },
   {
     "id": 1073,
     "topicId": 1,
-    "question": "Por que razão a Força Normal (N) que atua sobre um utente deitado NÃO constitui o par ação-reação do seu Peso (P)?",
+    "question": "Por que razão a Força Normal (N) que atua sobre um utente deitado não constitui o par ação-reação do seu Peso (P)?",
     "options": [
-      "Porque a força normal tem sempre o dobro da intensidade do peso do corpo.",
-      "Porque tanto N como P atuam sobre o mesmo corpo (o utente), violando a 3ª Lei de Newton.",
-      "Porque a força normal só existe quando o doente se encontra em movimento acelerado.",
-      "Porque a força normal é uma grandeza puramente imaginária sem unidade de medida."
+      "Porque a força normal tem o dobro da intensidade do peso do corpo.",
+      "Porque N e P atuam sobre o mesmo corpo, o que a 3.ª Lei não admite.",
+      "Porque a força normal surge quando o doente se encontra em movimento acelerado.",
+      "Porque a força normal é uma grandeza imaginária, sem unidade de medida."
     ],
     "correctIndex": 1,
     "explanation": "Na 3ª Lei de Newton, a ação e a reação atuam obrigatoriamente em corpos diferentes. Como N e P atuam ambos sobre o mesmo corpo (o doente), eles equilibram-se mutuamente, mas não formam um par ação-reação.",
     "distractorAnalysis": [
-      "Está incorreta: Numa superfície horizontal em repouso, N tem exatamente a mesma intensidade que P (N = P).",
-      "Está incorreta: A força normal existe no repouso estático sempre que há contacto e compressão contra uma superfície.",
-      "Está incorreta: A força normal é uma força física real mensurável em Newtons (N)."
+      "Está incorreta: Num corpo em repouso sobre superfície horizontal, N = P; não é o dobro do peso.",
+      "Está incorreta: A força normal existe mesmo em repouso, como se vê no utente deitado.",
+      "Está incorreta: A força normal é uma força real, medida em newtons."
     ],
     "nursingApplication": "Resolve uma das dúvidas conceptuais mais frequentes em testes de Biofísica no ensino superior."
   },
@@ -1399,36 +1399,36 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a relação direta entre a Força Normal exercida pelo colchão e o risco de desenvolvimento de lesões de pressão?",
     "options": [
-      "A força normal anula o atrito impedindo qualquer tipo de lesão cutânea.",
-      "A força normal estimula a proliferação celular acelerando a cicatrização de feridas.",
-      "A força normal perpendicular comprime os tecidos moles e capilares contra as proeminências ósseas, ocluindo a microcirculação.",
-      "A força normal provoca desintegração atómica por radiação gama nos tecidos da pele."
+      "A força normal anula o atrito, o que evita lesões na pele dos doentes.",
+      "A força normal estimula a proliferação celular, acelerando a cicatrização de feridas.",
+      "A força normal comprime os tecidos moles contra as proeminências ósseas, ocluindo capilares.",
+      "A força normal provoca alterações atómicas nos tecidos da pele, de forma progressiva."
     ],
     "correctIndex": 2,
     "explanation": "A força normal exercida pela superfície do leito comprime os tecidos moles (músculo, tecido celular subcutâneo e derme) contra os ossos subjacentes; a pressão resultante colapsa os capilares sanguíneos provocando isquemia.",
     "distractorAnalysis": [
-      "Está incorreta: A força normal não anula o atrito e, quando combinada com este, agrava o dano tecidual.",
-      "Está incorreta: A compressão prolongada causa isquemia e necrose tecidual, não estimulando cicatrização.",
-      "Está incorreta: Lesões de pressão são eventos isquémicos mecânicos, sem relação com desintegrações radioativas."
+      "Está incorreta: A força normal não anula o atrito; combinada com este, agrava o dano tecidual.",
+      "Está incorreta: A compressão prolongada causa isquemia e necrose tecidual, e não estimula a cicatrização.",
+      "Está incorreta: As lesões de pressão são eventos isquémicos mecânicos, sem alterações atómicas."
     ],
     "nursingApplication": "Fundamenta a mudança regular de decúbito em doentes acamados. A frequência é individualizada (tradicionalmente de 2 em 2 horas, ajustada ao risco de úlcera e ao tipo de superfície de apoio)."
   },
   {
     "id": 1075,
     "topicId": 1,
-    "question": "Na prática clínica de enfermagem e posicionamento do paciente, qual é a região anatómica de referência onde a força normal e a pressão sobre a pele são particularmente críticas em decúbito dorsal?",
+    "question": "Na prática de enfermagem e no posicionamento do doente, qual é a região anatómica onde a força normal e a pressão sobre a pele são particularmente críticas em decúbito dorsal?",
     "options": [
-      "No lobo da orelha.",
-      "Na face anterior da tíbia.",
-      "Na palma da mão.",
-      "Na pele sobre a proeminência óssea do sacro."
+      "Na face anterior da coxa, junto à prega inguinal, sem contacto com o colchão.",
+      "Na palma da mão, junto à face lateral do polegar, sem contacto com o colchão.",
+      "Na face anterior da tíbia, junto ao joelho, em contacto com o colchão.",
+      "Na pele sobre a proeminência do sacro, em contacto com o colchão."
     ],
     "correctIndex": 3,
-    "explanation": "Destaca-se a 'Pressão capilar na pele sobre o sacro' como o exemplo biofísico de referência no estudo da força normal e lesões de pressão.",
+    "explanation": "Destaca-se a pressão de interface entre a pele e o colchão sobre o sacro, como exemplo biofísico de referência no estudo da força normal e das lesões de pressão.",
     "distractorAnalysis": [
-      "Está incorreta: O lobo da orelha não suporta carga corporal significativa em decúbito dorsal clássico.",
-      "Está incorreta: A face anterior da tíbia suporta pressão em decúbito ventral, não sendo a zona sacra de referência em decúbito dorsal.",
-      "Está incorreta: A palma da mão não apoia o peso corporal do tronco no leito."
+      "Está incorreta: A face anterior da coxa não é a zona de maior risco em decúbito dorsal; a pressão concentra-se no sacro.",
+      "Está incorreta: Em decúbito dorsal, a palma da mão não fica em contacto com o colchão.",
+      "Está incorreta: A tíbia anterior não é a região de maior pressão em decúbito dorsal."
     ],
     "nursingApplication": "Área prioritária de inspeção de enfermagem diária em utentes imobilizados na enfermaria."
   },
