@@ -3357,16 +3357,16 @@ const TOPIC_1_QUESTIONS = [
     "question": "Por que razão a força exercida pelo bíceps (82,75 N) é mais do que o dobro do peso total suportado (~34,3 N das massas somadas de 3,5 kg)?",
     "options": [
       "Porque o músculo bíceps tem uma constante de Hooke deficiente.",
-      "Porque o bíceps tem um braço de alavanca muito curto (apenas 8 cm), enquanto as forças resistentes atuam a 15 cm e 30 cm do cotovelo.",
-      "Porque a 3ª Lei de Newton duplica todas as forças nos membros superiores.",
-      "Porque o antebraço opera em gravidade zero flutuando no espaço."
+      "Porque o bíceps tem um braço de alavanca muito curto (8 cm), enquanto as forças resistentes atuam a 15 cm e 30 cm do cotovelo.",
+      "Porque a massa do antebraço aumenta com o esforço de flexão do cotovelo.",
+      "Porque o antebraço fica mais pesado quando o cotovelo está fletido a 90 graus."
     ],
     "correctIndex": 1,
     "explanation": "Como a inserção tendinosa do bíceps se localiza muito perto da articulação (8 cm), o seu braço é muito mais curto que os braços das resistências (15 cm e 30 cm). Para gerar o mesmo momento de rotação, é forçado a produzir uma força substancialmente maior.",
     "distractorAnalysis": [
-      "Está incorreta: A constante de Hooke mede rigidez elástica e não determina a relação de braços de alavanca rígida.",
-      "Está incorreta: A 3ª Lei estabelece igualdade mútua de pares ação-reação, não duplica forças ativas.",
-      "Está incorreta: O cálculo foi feito com a gravidade normal da Terra (g = 9,8 m/s²)."
+      "Está incorreta: A constante de Hooke não explica o momento necessário; o problema é geométrico.",
+      "Está incorreta: O braço do bíceps é curto, e as forças resistentes atuam a distâncias maiores; esta é a explicação correta.",
+      "Está incorreta: A massa do antebraço é constante; o esforço não a altera."
     ],
     "nursingApplication": "Permite ao futuro enfermeiro compreender a sobrecarga articular e tendinosa provocada por cargas que parecem leves na mão."
   },
@@ -3394,17 +3394,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Se a massa do objeto segurado na mão passasse de 1 kg para 3 kg (triplicando), o que aconteceria ao esforço exigido ao bíceps?",
     "options": [
-      "Permaneceria em 82,75 N porque o músculo tem força constante.",
-      "Diminuiria porque o peso da mão ajuda a equilibrar o membro.",
-      "Anular-se-ia provocando luxação automática da articulação do cúbito.",
-      "Aumentaria substancialmente, pois o momento resistente do objeto triplicaria de 2,94 para 8,82 N·m, exigindo uma força muscular muito maior."
+      "Permaneceria em 82,75 N, porque o músculo tem força constante.",
+      "Diminuiria, porque o peso da mão ajuda a equilibrar o membro.",
+      "Diminuiria, porque o objeto deixaria de exercer momento sobre o cotovelo.",
+      "Aumentaria, pois o momento do objeto triplicaria, de 2,94 para 8,82 N·m."
     ],
     "correctIndex": 3,
     "explanation": "Com o objeto a pesar 3 kg, M_objeto = (3 × 9,8) × 0,3 = 8,82 N·m. Somando aos 3,68 N·m do antebraço dá 12,50 N·m. A força do bíceps passaria para 12,50 / 0,08 = 156,25 N.",
     "distractorAnalysis": [
-      "Está incorreta: O músculo tem de aumentar a sua força de contração ativa para manter o membro na horizontal.",
-      "Está incorreta: O peso atua no mesmo sentido descendente, sobrecarregando ainda mais o bíceps.",
-      "Está incorreta: A luxação só ocorre em trauma mecânico extremo que rompa os ligamentos articulares."
+      "Está incorreta: A força muscular não é constante; varia com o momento resistente total.",
+      "Está incorreta: O peso da mão aumenta o momento resistente, e não o diminui.",
+      "Está incorreta: O objeto continua a exercer momento, que aumenta com a massa."
     ],
     "nursingApplication": "Explica por que carregar materiais pesados na mão em flexão do cotovelo causa fadiga precoce e dor muscular."
   },
@@ -3413,17 +3413,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Que conclusão biomecânica geral se extrai da análise da alavanca interpotente do bíceps no corpo humano?",
     "options": [
-      "O sistema osteomuscular opera frequentemente em desvantagem mecânica de força, exigindo forças musculares internas muito elevadas para sustentar cargas modestas.",
-      "Os ossos humanos são alavancas perfeitas onde nunca é necessário fazer força superior a 5 N.",
-      "O bíceps humano não obedece às leis da física clássica descritas por Arquimedes e Newton.",
-      "O antebraço é uma alavanca interfixa onde o cotovelo se situa na ponta dos dedos da mão."
+      "O sistema osteomuscular opera em desvantagem mecânica, exigindo forças musculares elevadas.",
+      "Os ossos humanos são alavancas ideais, que exigem pouca força para mover cargas.",
+      "O bíceps humano dispensa as leis da física clássica quando segura cargas.",
+      "O antebraço é uma alavanca interfixa, em que o cotovelo se situa na ponta dos dedos."
     ],
     "correctIndex": 0,
     "explanation": "A maioria das alavancas motoras do corpo humano são interpotentes (3ª classe): conferem enorme amplitude e rapidez de movimento distal, mas à custa de grandes tensões mecânicas geradas pelas fibras musculares e tendões.",
     "distractorAnalysis": [
-      "Está incorreta: As forças musculares internas ultrapassam frequentemente centenas ou milhares de Newtons no dia a dia.",
-      "Está incorreta: O corpo humano é um sistema físico biológico que obedece estritamente a todas as leis da mecânica clássica.",
-      "Está incorreta: O cotovelo é a articulação proximal entre braço e antebraço, não a ponta dos dedos."
+      "Está incorreta: Os ossos não são alavancas ideais; a maior parte das alavancas motoras exige forças elevadas.",
+      "Está incorreta: As leis da física clássica aplicam-se igualmente ao bíceps e aos ossos.",
+      "Está incorreta: O cotovelo não está na ponta dos dedos; é a articulação entre o braço e o antebraço."
     ],
     "nursingApplication": "Síntese final integradora da mecânica de alavancas aplicada à fisiologia do movimento humano."
   },
@@ -3432,17 +3432,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a definição exata de Centro de Gravidade (CG) na Biofísica e Biomecânica do corpo humano?",
     "options": [
-      "Ponto anatómico onde se mede a tensão arterial sistólica.",
-      "Ponto imaginário onde se considera concentrada toda a massa e onde atua a resultante de todas as forças gravíticas do corpo.",
+      "Ponto anatómico onde se mede a tensão arterial sistólica, no braço.",
+      "Ponto onde se considera concentrada toda a massa e atua a resultante das forças gravíticas.",
       "Área geométrica de contacto entre a sola do calçado e o solo da enfermaria.",
       "Linha imaginária que divide o corpo humano em hemisfério direito e esquerdo."
     ],
     "correctIndex": 1,
     "explanation": "Define-se expressamente: 'Centro de gravidade: Ponto imaginário onde se considera concentrada toda a massa e onde atua a resultante de todas as forças gravíticas do corpo'.",
     "distractorAnalysis": [
-      "Está incorreta: A tensão arterial mede-se na artéria braquial, não tendo relação com o centro de gravidade mecânico.",
-      "Está incorreta: A área de contacto com o solo é a definição de Base de Sustentação.",
-      "Está incorreta: A linha que divide o corpo em metades é o plano sagital mediano da anatomia."
+      "Está incorreta: A tensão arterial mede-se no braço, mas não define o centro de gravidade.",
+      "Está incorreta: A área de contacto dos pés é a base de sustentação, e não o centro de gravidade.",
+      "Está incorreta: A linha divisória do corpo não define o centro de gravidade."
     ],
     "nursingApplication": "Conceito primordial para a avaliação do equilíbrio postural e risco de queda em geriatria."
   },
@@ -3470,17 +3470,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "O que acontece à localização do Centro de Gravidade durante as movimentações e mudanças posturais do corpo humano?",
     "options": [
-      "Permanece imóvel e soldado à 2ª vértebra sagrada mesmo que a pessoa salte ou corra.",
-      "Desaparece completamente durante a marcha.",
-      "Passa a situar-se fora da atmosfera terrestre.",
+      "Permanece imóvel e fixo à 2.ª vértebra sagrada, mesmo que a pessoa salte ou corra.",
+      "Desaparece durante a marcha.",
+      "Passa a situar-se fora do corpo, na superfície do chão.",
       "Desloca-se com o movimento (por exemplo, sobe ao elevar os braços e avança ao inclinar o tronco)."
     ],
     "correctIndex": 3,
     "explanation": "Define-se o princípio da Mobilidade do CG: 'O centro de gravidade desloca-se com o movimento (por exemplo, sobe ao elevar os braços e avança ao inclinar o tronco)'.",
     "distractorAnalysis": [
-      "Está incorreta: O CG não é um ponto ósseo fixo, mas sim o centro de massa ponderado que se move com a distribuição dos segmentos corporais.",
-      "Está incorreta: O CG existe sempre que há massa sujeita a campo gravítico.",
-      "Está incorreta: O CG localiza-se sempre no próprio corpo ou na sua vizinhança geométrica imediata."
+      "Está incorreta: O centro de gravidade desloca-se com os movimentos do corpo; não fica fixo.",
+      "Está incorreta: O centro de gravidade não desaparece; existe em todos os corpos com massa.",
+      "Está incorreta: O centro de gravidade pertence ao corpo, e não à superfície do chão."
     ],
     "nursingApplication": "Permite antecipar como gestos simples (como esticar os braços para alcançar um objeto) alteram o equilíbrio do doente."
   },
@@ -3510,15 +3510,15 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Na criança pequena situa-se nos calcanhares e no adulto no pescoço.",
       "Na criança pequena situa-se mais alto, no interior do abdómen e no tórax, enquanto no adulto se situa em S2.",
-      "É rigorosamente idêntico em todas as idades sem qualquer variação anatómica.",
+      "É idêntico em todas as idades, sem variação anatómica.",
       "A criança pequena não possui centro de gravidade até aos 18 anos de idade."
     ],
     "correctIndex": 1,
     "explanation": "Demonstra-se a transição: no adulto situa-se na 2ª vértebra sagrada; na criança e no bebé localiza-se no 'interior do abdómen' e no 'tórax', situando-se proporcionalmente mais elevado.",
     "distractorAnalysis": [
-      "Está incorreta: O CG da criança é mais alto, nunca nos calcanhares.",
-      "Está incorreta: As proporções corporais variam dramaticamente com o desenvolvimento e crescimento esquelético.",
-      "Está incorreta: Qualquer corpo dotado de massa possui centro de gravidade desde o nascimento."
+      "Está incorreta: O centro de gravidade da criança é mais alto, e nunca nos calcanhares.",
+      "Está incorreta: As proporções corporais variam muito com o crescimento; o centro de gravidade muda.",
+      "Está incorreta: Qualquer corpo com massa possui centro de gravidade desde o nascimento."
     ],
     "nursingApplication": "Explica por que os bebés e crianças pequenas perdem o equilíbrio com facilidade e sofrem quedas frequentes com impacto cefálico."
   },
@@ -3528,16 +3528,16 @@ const TOPIC_1_QUESTIONS = [
     "question": "Por que razão o Centro de Gravidade nas crianças pequenas e bebés se situa mais acima (no abdómen/tórax)?",
     "options": [
       "Porque a densidade óssea dos membros inferiores das crianças é cinco vezes maior que a dos adultos.",
-      "Porque as crianças usam calçado de borracha com coeficiente de atrito nulo.",
+      "Porque as crianças usam calçado de borracha com coeficiente de atrito reduzido.",
       "Porque a cabeça e a metade superior do tronco representam uma proporção muito maior da massa corporal total na criança do que no adulto.",
-      "Porque o coração infantil bate com maior frequência cardíaca empurrando o sangue para cima."
+      "Porque o coração infantil bate com maior frequência cardíaca, empurrando o sangue para cima."
     ],
     "correctIndex": 2,
     "explanation": "Nas crianças, a cabeça e o tronco superior são desproporcionalmente volumosos e pesados em comparação com os membros inferiores curtos. Como o CG é a média ponderada das massas, ele desloca-se para o tórax/abdómen.",
     "distractorAnalysis": [
-      "Está incorreta: A densidade mineral óssea das crianças é menor que a dos adultos, não cinco vezes maior.",
-      "Está incorreta: O calçado não altera a distribuição anatómica das massas dos segmentos do corpo.",
-      "Está incorreta: A frequência cardíaca altera o débito cardíaco, mas não desloca o centro de massa gravitacional estático."
+      "Está incorreta: A densidade óssea não é a causa da posição do centro de gravidade nas crianças.",
+      "Está incorreta: O calçado não explica a posição do centro de gravidade.",
+      "Está incorreta: A frequência cardíaca não altera a posição do centro de gravidade."
     ],
     "nursingApplication": "Importante para a enfermagem pediátrica na adaptação de grades de berços e prevenção de acidentes infantis."
   },
@@ -3546,17 +3546,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Quando um enfermeiro eleva os dois braços acima da cabeça para retirar um frasco de soro de uma prateleira alta, o que acontece ao seu Centro de Gravidade?",
     "options": [
-      "Desloca-se para a sola dos sapatos aumentando a estabilidade.",
-      "Desloca-se 1 metro para trás saindo do corpo.",
-      "Permanece rigorosamente inerte na 2ª vértebra sagrada.",
+      "Desloca-se para a sola dos sapatos, aumentando a estabilidade.",
+      "Desloca-se para trás, ficando mais próximo da parede do corredor.",
+      "Permanece na 2.ª vértebra sagrada, sem se deslocar.",
       "O centro de gravidade sobe em direção ao tórax, tornando a postura temporariamente mais instável."
     ],
     "correctIndex": 3,
     "explanation": "Indica-se claramente: 'sobe ao elevar os braços'. Elevar os membros superiores desloca massa para cima, subindo o CG e aumentando a distância até à base de sustentação, o que reduz a estabilidade postural.",
     "distractorAnalysis": [
-      "Está incorreta: O CG sobe ao elevar massa para cima, nunca desce para os sapatos.",
-      "Está incorreta: Elevar os braços verticalmente sobe o CG ao longo da linha média vertical, sem projetá-lo 1 metro para trás.",
-      "Está incorreta: O CG desloca-se com qualquer movimento segmentar corporal (princípio da mobilidade)."
+      "Está incorreta: Elevar os braços desloca o centro de gravidade para cima, e não para a sola dos sapatos.",
+      "Está incorreta: Elevar os braços não desloca o centro de gravidade para trás.",
+      "Está incorreta: O centro de gravidade desloca-se quando os braços se elevam."
     ],
     "nursingApplication": "Alerta ergonómico: evitar prateleiras excessivamente altas que forcem posturas instáveis com os braços esticados."
   },
@@ -3565,17 +3565,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Quando uma pessoa inclina o tronco para a frente ao tentar apanhar algo no chão:",
     "options": [
-      "O centro de gravidade avança anteriormente, aproximando a linha de gravidade do bordo anterior da base de sustentação.",
-      "O centro de gravidade recua para os calcanhares garantindo máxima segurança contra quedas.",
-      "A base de sustentação multiplica-se espontaneamente por dez.",
-      "O peso do corpo anula-se até o tronco voltar à vertical."
+      "O centro de gravidade avança, aproximando a linha de gravidade do bordo anterior da base.",
+      "O centro de gravidade recua para os calcanhares, o que aumenta a segurança.",
+      "A base de sustentação alarga-se para o dobro, sem alterar a posição dos pés.",
+      "O peso do corpo diminui até o tronco voltar à vertical."
     ],
     "correctIndex": 0,
     "explanation": "Refere-se explicitamente: 'avança ao inclinar o tronco'. A projeção vertical do CG (Linha de Gravidade) aproxima-se dos dedos dos pés; se ultrapassar os limites da base, o indivíduo desequilibra-se e cai para a frente.",
     "distractorAnalysis": [
-      "Está incorreta: Ao inclinar para a frente, o CG projeta-se para a frente, não para trás nos calcanhares.",
-      "Está incorreta: A base de sustentação permanece inalterada se os pés continuarem no mesmo sítio do solo.",
-      "Está incorreta: O peso gravitacional mantém-se atuante e gera momento de tombamento se a linha de gravidade sair da base."
+      "Está incorreta: Inclinar o tronco para a frente desloca o centro de gravidade para a frente, e não para trás.",
+      "Está incorreta: A base de sustentação só se alarga se os pés se afastarem.",
+      "Está incorreta: O peso do corpo mantém-se; o que muda é a posição da linha de gravidade."
     ],
     "nursingApplication": "Explica por que os idosos com tonturas caem frequentemente para a frente ao inclinarem o tronco sem apoio."
   },
@@ -3585,16 +3585,16 @@ const TOPIC_1_QUESTIONS = [
     "question": "Se um doente passar da posição bipodal (dois pés apoiados no chão) para a posição unipodal (apoiado apenas num pé), o que acontece à sua base de sustentação?",
     "options": [
       "Aumenta para o dobro da área anterior.",
-      "Reduz-se drasticamente apenas à pequena área de contacto da sola desse único pé, aumentando exponencialmente o risco de instabilidade.",
-      "Permanece rigorosamente com o mesmo tamanho e geometria.",
+      "Reduz-se à área de contacto da sola desse pé, aumentando o risco de instabilidade.",
+      "Permanece com o mesmo tamanho e geometria.",
       "Passa a englobar a área total do quarto de internamento."
     ],
     "correctIndex": 1,
     "explanation": "A base bipodal inclui os dois pés e todo o espaço entre eles. No apoio unipodal, a base reduz-se apenas à sola de um pé (ver a condição de instabilidade: «pés juntos ou num só pé»). Qualquer ligeira oscilação projeta a linha de gravidade para fora da base, causando queda.",
     "distractorAnalysis": [
-      "Está incorreta: Apoiar em menos pontos reduz a área de sustentação, nunca a duplica.",
-      "Está incorreta: A área entre os pés deixa de fazer parte da base de suporte quando um pé é levantado.",
-      "Está incorreta: A base limita-se estritamente aos pontos de contacto físico com o solo."
+      "Está incorreta: Apoiar em menos pontos reduz a área de sustentação, e não a duplica.",
+      "Está incorreta: A área entre os pés deixa de fazer parte da base quando um pé é levantado.",
+      "Está incorreta: A base limita-se aos pontos de contacto físico com o solo."
     ],
     "nursingApplication": "Alerta de segurança ao ajudar doentes a calçar sapatos ou vestir calças: nunca fazê-lo de pé num só pé."
   },
@@ -3604,16 +3604,16 @@ const TOPIC_1_QUESTIONS = [
     "question": "Qual é a condição geométrica fundamental para que o corpo humano permaneça em equilíbrio estático estável sem tombar?",
     "options": [
       "Que a cabeça esteja posicionada a uma altitude superior a 2000 metros.",
-      "Que a força potente exercida pelo quadríceps seja rigorosamente igual a zero Newtons.",
+      "Que a força potente exercida pelo quadríceps seja igual a zero newtons.",
       "Que a Linha de Gravidade (projeção vertical do centro de gravidade) permaneça no interior da área delimitada pela base de sustentação.",
-      "Que o atrito com o piso seja igual à pressão capilar do sacro."
+      "Que o atrito com o piso seja igual à força normal do leito."
     ],
     "correctIndex": 2,
     "explanation": "A estabilidade estática depende de a linha de gravidade passar por dentro do polígono de apoio (base de sustentação). Se sair para fora das margens da base, o peso gera momento de rotação que derruba o corpo.",
     "distractorAnalysis": [
-      "Está incorreta: Altitude não afeta as condições geométricas de estabilidade postural estática.",
-      "Está incorreta: Os músculos extensores antigravíticos (como quadríceps) mantêm tónus ativo para sustentar a postura ereta.",
-      "Está incorreta: Atrito e pressão capilar têm naturezas e localizações distintas, não se relacionando nesta condição geométrica."
+      "Está incorreta: A altitude não influencia a estabilidade estática do corpo.",
+      "Está incorreta: O quadríceps atua na marcha e no equilíbrio; zero newtons não garante estabilidade.",
+      "Está incorreta: O atrito e a força normal não definem a condição geométrica de equilíbrio."
     ],
     "nursingApplication": "Pilar científico da prevenção de quedas e treino de equilíbrio em contexto hospitalar e comunitário."
   },
@@ -3623,16 +3623,16 @@ const TOPIC_1_QUESTIONS = [
     "question": "Na tabela de estabilidade biomecânica, para o fator 'Altura do centro de gravidade (CG)', qual é a condição de alta estabilidade e a intervenção recomendada?",
     "options": [
       "Condição: Mais alto (pontas dos pés); Intervenção: Manter o tronco esticado e rígido.",
-      "Condição: CG no pescoço; Intervenção: Elevar a cama hospitalar até ao teto.",
-      "Condição: CG nulo; Intervenção: Não tocar no doente.",
+      "Condição: CG no pescoço; Intervenção: Manter a cama no nível mais alto possível.",
+      "Condição: CG elevado; Intervenção: Afastar-se do doente durante a mobilização.",
       "Condição: Mais baixo (joelhos e ancas ligeiramente fletidos); Intervenção: Fletir os joelhos ao realizar esforço ou mobilização."
     ],
     "correctIndex": 3,
     "explanation": "Especifica-se: Fator: Altura do CG | Alta estabilidade: Mais baixo (joelhos e ancas ligeiramente fletidos) | Instabilidade: Mais alto (pontas dos pés ou tronco esticado) | Intervenção: Fletir os joelhos ao realizar esforço ou mobilização.",
     "distractorAnalysis": [
-      "Está incorreta: Estar nas pontas dos pés eleva o CG e é a condição de instabilidade com elevado risco de queda.",
-      "Está incorreta: Elevar o CG desestabiliza a postura e a altura da cama deve ajustar-se à cintura do profissional.",
-      "Está incorreta: O CG nunca é nulo num corpo com massa biológica."
+      "Está incorreta: Estar nas pontas dos pés eleva o CG, e é uma condição de instabilidade.",
+      "Está incorreta: Uma cama alta não é a intervenção que estabiliza o centro de gravidade; a altura deve ajustar-se à cintura do profissional.",
+      "Está incorreta: Afastar-se do doente aumenta o risco de queda, e não a estabilidade."
     ],
     "nursingApplication": "Regra biomecânica de ouro para a postura dos enfermeiros durante a prestação de cuidados no leito."
   },
@@ -3642,16 +3642,16 @@ const TOPIC_1_QUESTIONS = [
     "question": "Na tabela de estabilidade biomecânica, qual é a recomendação para o 'Tamanho da base de sustentação (BS)' em situação de alta estabilidade?",
     "options": [
       "Base ampla, com pés afastados à largura dos ombros: 30 a 40 cm.",
-      "Base estreita, mantendo os pés juntos ou equilibrando-se num só pé.",
-      "Pés afastados a mais de 2 metros de distância em espargata completa.",
-      "Apoiar apenas os dedos das mãos no solo sem contacto dos pés."
+      "Base estreita, mantendo os pés juntos ou equilibrando-se num pé.",
+      "Pés afastados a 60 cm, com o tronco inclinado para a frente.",
+      "Apoiar as mãos no solo, sem contacto dos pés, durante a mobilização."
     ],
     "correctIndex": 0,
     "explanation": "Indica-se textualmente: 'Condição de alta estabilidade: Ampla (pés afastados à largura dos ombros: 30-40 cm)'.",
     "distractorAnalysis": [
-      "Está incorreta: Pés juntos é a condição de instabilidade e risco de queda descrita nas regras de estabilidade postural.",
-      "Está incorreta: Afastamento excessivo de 2 metros compromete a biomecânica articular e impede a marcha funcional.",
-      "Está incorreta: Apoiar as mãos no chão não é postura ereta de transferência ou bipedestação."
+      "Está incorreta: Uma base estreita reduz a estabilidade.",
+      "Está incorreta: Pés afastados com o tronco inclinado para a frente desloca a linha de gravidade para fora da base.",
+      "Está incorreta: Apoiar só as mãos não constitui uma base de sustentação estável dos pés."
     ],
     "nursingApplication": "Instrução direta a fornecer ao utente durante a transferência da cama para a cadeira de rodas."
   },
@@ -3660,17 +3660,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "No âmbito da estabilidade corporal e prevenção de quedas, que orientação de enfermagem deve ser dada ao doente durante uma transferência assistida?",
     "options": [
-      "Mantenha os calcanhares juntos e as pontas dos pés encostadas.",
-      "Orientar o doente a afastar os pés ao transferir-se (para garantir base de sustentação ampla).",
-      "Feche os olhos e salte para a cadeira de rodas com um impulso súbito.",
-      "Eleve as mãos acima da cabeça e fique na ponta dos pés."
+      "Mantenha os calcanhares juntos e as pontas dos pés encostadas, para se estabilizar.",
+      "Orientar o doente a afastar os pés, para ampliar a base de sustentação.",
+      "Avance rapidamente para a cadeira, com um impulso súbito do tronco.",
+      "Eleve as mãos acima da cabeça e fique apoiado na ponta dos pés."
     ],
     "correctIndex": 1,
     "explanation": "A intervenção de enfermagem recomendada expressamente é: 'Orientar o doente a afastar os pés ao transferir-se', ampliando a sua base e evitando o tombamento lateral.",
     "distractorAnalysis": [
-      "Está incorreta: Pés juntos estreita a base e causa instabilidade imediata.",
-      "Está incorreta: Saltar de olhos fechados gera forças inerciais violentas com risco crítico de queda.",
-      "Está incorreta: Elevar mãos e ficar nas pontas dos pés eleva o CG e reduz a base, maximizando o desequilíbrio."
+      "Está incorreta: Pés juntos estreitam a base e causam instabilidade imediata.",
+      "Está incorreta: Avançar com impulso súbito gera forças inerciais violentas, com risco de queda.",
+      "Está incorreta: Elevar as mãos e apoiar-se na ponta dos pés eleva o centro de gravidade e reduz a base."
     ],
     "nursingApplication": "Comunicação terapêutica clara e segura durante procedimentos de reabilitação e mobilidade."
   },
@@ -3698,17 +3698,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a intervenção de enfermagem recomendada para manter a linha de gravidade centrada ao realizar esforços ou transportar cargas?",
     "options": [
-      "Curvar a coluna dorsal esticando os braços o mais longe possível do peito.",
+      "Curvar a coluna dorsal, esticando os braços o mais longe possível do peito.",
       "Inclinar o tronco 45 graus para o lado ao caminhar com equipamentos.",
-      "Transportar os doentes e cargas apenas na ponta dos pés.",
-      "Manter a carga junto ao peito sem inclinar o tronco."
+      "Transportar os doentes e cargas na ponta dos pés.",
+      "Manter a carga junto ao peito, sem inclinar o tronco."
     ],
     "correctIndex": 3,
     "explanation": "Preconiza-se formalmente como intervenção de enfermagem recomendada: 'Manter a carga junto ao peito sem inclinar o tronco', mantendo a linha de gravidade combinada no centro da base.",
     "distractorAnalysis": [
-      "Está incorreta: Esticar os braços projeta a linha de gravidade para a frente fora da base e sobrecarrega a coluna.",
-      "Está incorreta: Inclinar o tronco lateralmente desvia a linha de gravidade para os bordos, aumentando o risco de queda lateral.",
-      "Está incorreta: Caminhar na ponta dos pés reduz a base e eleva perigosamente o CG."
+      "Está incorreta: Esticar os braços projeta a linha de gravidade para a frente, fora da base, e sobrecarrega a coluna.",
+      "Está incorreta: Inclinar o tronco lateralmente desvia a linha de gravidade para o bordo da base, com risco de queda.",
+      "Está incorreta: Caminhar na ponta dos pés reduz a base e eleva o centro de gravidade."
     ],
     "nursingApplication": "Princípio ergonómico crucial ensinado em todas as escolas de enfermagem para proteção da coluna vertebral."
   },
@@ -3717,17 +3717,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Na tabela de estabilidade biomecânica, que medida preventiva de enfermagem é expressamente recomendada quanto ao 'Atrito solo-calçado'?",
     "options": [
-      "Proibir meias sem piso antiderrapante na enfermaria (garantindo sola de borracha com relevo em piso seco).",
-      "Encerar os corredores com cera líquida imediatamente antes da marcha dos doentes.",
+      "Proibir meias sem piso antiderrapante na enfermaria, com sola de borracha de relevo.",
+      "Encerar os corredores com cera líquida pouco antes da marcha dos doentes.",
       "Incentivar os doentes operados a caminhar de meias de seda em piso molhado.",
-      "Lubrificar os sapatos dos enfermeiros com óleo para acelerar as deslocações."
+      "Usar calçado de sola lisa para acelerar as deslocações pelos corredores."
     ],
     "correctIndex": 0,
     "explanation": "Determina-se: Fator: Atrito solo-calçado | Alta estabilidade: Alto (sola de borracha com relevo em piso seco) | Risco: Baixo (meias em chão encerado ou molhado) | Intervenção: 'Proibir meias sem piso antiderrapante na enfermaria'.",
     "distractorAnalysis": [
-      "Está incorreta: Chão encerado reduz drasticamente o coeficiente de atrito, sendo fator de risco grave de queda.",
-      "Está incorreta: Meias lisas em piso molhado eliminam a força de atrito e causam escorregamentos quase certos.",
-      "Está incorreta: Lubrificar solas provocaria quedas imediatas da equipa profissional."
+      "Está incorreta: Cera líquida reduz muito o atrito e é fator de risco de queda.",
+      "Está incorreta: Meias lisas em piso molhado reduzem o atrito e favorecem escorregamentos.",
+      "Está incorreta: Calçado de sola lisa reduz o atrito e aumenta o risco de queda."
     ],
     "nursingApplication": "Medida frequentemente incluída nos programas de prevenção de quedas em meio hospitalar."
   },
@@ -3736,17 +3736,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é o efeito biomecânico da utilização de dispositivos de apoio (como andarilho ou bengala) sobre a estabilidade postural do paciente?",
     "options": [
-      "Reduzem a base de sustentação a metade para estimular o equilíbrio cerebral.",
+      "Reduzem a base de sustentação, para estimular o equilíbrio cerebral.",
       "Multiplicam a área da base de sustentação em 3 a 5 vezes.",
-      "Anulam a gravidade terrestre permitindo ao doente flutuar sobre o piso.",
-      "Aumentam a velocidade da marcha para valores acima de 40 km/h."
+      "Reduzem o peso do doente, permitindo-lhe andar sem apoio do solo.",
+      "Aumentam a velocidade da marcha de forma significativa."
     ],
     "correctIndex": 1,
     "explanation": "Estabelece-se: 'Dispositivos de apoio (Andarilho / Bengala): Multiplica a área da base em 3 a 5 vezes', alargando substancialmente os limites dentro dos quais a linha de gravidade pode oscilar sem queda.",
     "distractorAnalysis": [
-      "Está incorreta: Os dispositivos alargam grandemente a base, nunca a reduzem.",
-      "Está incorreta: O andarilho apoia forças normais mecânicas no solo, não revogando o campo gravítico.",
-      "Está incorreta: Andarilhos são usados para marcha segura, pausada e estável em utentes com défice motor."
+      "Está incorreta: Reduzir a base aumenta a instabilidade; os dispositivos de apoio fazem o contrário.",
+      "Está incorreta: O peso do doente não se altera com um andarilho ou bengala.",
+      "Está incorreta: Os dispositivos de apoio destinam-se a dar estabilidade, e não a aumentar a velocidade da marcha."
     ],
     "nursingApplication": "Explica aos doentes e familiares a razão biomecânica pela qual o andarilho devolve a segurança ao caminhar."
   },
@@ -3755,17 +3755,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a intervenção de enfermagem recomendada para utentes que utilizam andarilho?",
     "options": [
-      "Incentivar o doente a caminhar muito à frente do andarilho empurrando-o com um dedo.",
-      "Retirar o andarilho a doentes com marcha atáxica sem apoio.",
+      "Incentivar o doente a caminhar muito à frente do andarilho, empurrando-o com um dedo.",
+      "Retirar o andarilho a doentes com marcha atáxica.",
       "Ensinar a usar o andarilho mantendo-se dentro dele.",
-      "Prender o andarilho ao teto com cordas de tração ortopédica."
+      "Usar o andarilho para transportar objetos pelo quarto, sem se apoiar nele."
     ],
     "correctIndex": 2,
     "explanation": "Indica-se textualmente: 'Intervenção de enfermagem recomendada: Ensinar a usar o andarilho mantendo-se dentro dele'.",
     "distractorAnalysis": [
-      "Está incorreta: Caminhar à frente do andarilho e empurrá-lo com um dedo desloca a linha de gravidade para fora do polígono de apoio, anulando a sua função protetora.",
-      "Está incorreta: Doentes com marcha atáxica sem dispositivo sofrem risco máximo de instabilidade e queda.",
-      "Está incorreta: O andarilho é um dispositivo de apoio móvel ao solo, não um sistema suspenso no teto."
+      "Está incorreta: Caminhar à frente do andarilho desloca a linha de gravidade para fora do polígono de apoio.",
+      "Está incorreta: Doentes com marcha atáxica precisam mais de apoio, e não menos.",
+      "Está incorreta: Usar o andarilho sem se apoiar nele anula a sua função de estabilização."
     ],
     "nursingApplication": "Instrução prática indispensável fornecida no ensino ao utente e cuidadores antes da alta hospitalar."
   },
@@ -3774,17 +3774,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Ao orientar um doente a afastar os pés à largura dos ombros (30-40 cm) antes de se levantar da cama, que benefício biomecânico direto estamos a garantir?",
     "options": [
-      "Aumentamos a aceleração da gravidade sobre os membros inferiores.",
-      "Eliminamos a necessidade de força potente nos músculos extensores das pernas.",
-      "Reduzimos a pressão arterial média em 50%.",
-      "Ampliamos a base de sustentação, aumentando a margem de segurança para que a linha de gravidade não ultrapasse o polígono de apoio."
+      "Aumentamos o peso dos membros inferiores, tornando-os mais estáveis.",
+      "Dispensamos a força muscular dos extensores das pernas, porque o corpo fica estável.",
+      "Aumentamos a pressão arterial média nos membros inferiores.",
+      "Ampliamos a base de sustentação, afastando a linha de gravidade do limite do apoio."
     ],
     "correctIndex": 3,
     "explanation": "Ao afastar os pés a 30-40 cm, a área geométrica da base de suporte expande-se; quando o doente projeta o tronco para a frente ao levantar-se, a linha de gravidade permanece dentro da base, prevenindo o desequilíbrio e a queda.",
     "distractorAnalysis": [
-      "Está incorreta: A aceleração da gravidade g é uma constante física local inalterável pela posição dos pés.",
-      "Está incorreta: O levantamento exige força ativa dos músculos extensores dos membros inferiores para vencer o peso corporal.",
-      "Está incorreta: Afastar os pés não altera diretamente a pressão arterial sistémica em 50%."
+      "Está incorreta: O peso dos membros não aumenta com a posição dos pés.",
+      "Está incorreta: A base mais ampla não elimina a necessidade de força muscular para levantar.",
+      "Está incorreta: A posição dos pés não altera a pressão arterial média."
     ],
     "nursingApplication": "Aplicação clínica diária de promoção de autonomia com segurança durante a reabilitação funcional."
   },
@@ -3793,17 +3793,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Ao levantar uma carga do chão, por que razão o enfermeiro deve fletir os joelhos e ancas em vez de dobrar a coluna dorsal/lombar?",
     "options": [
-      "Baixa o centro de gravidade aumentando a estabilidade, mantém a carga encostada ao peito reduzindo o braço da resistência e usa os potentes músculos das pernas.",
-      "Aumenta a velocidade de rotação da coluna acelerando o levantamento em menos de 0,1 segundo.",
-      "Permite que a gravidade atue na horizontal aliviando todo o peso do objeto.",
+      "Baixa o centro de gravidade, mantém a carga junto ao peito e usa os músculos das pernas.",
+      "Aumenta a velocidade de rotação da coluna, acelerando o levantamento em menos de 0,1 segundo.",
+      "Permite que a gravidade atue na horizontal, aliviando todo o peso do objeto.",
       "Elimina a força normal entre o calçado e o chão hospitalar."
     ],
     "correctIndex": 0,
     "explanation": "Fletir os joelhos e manter a coluna ereta une todos os princípios da aula: 1. Baixa o CG; 2. Mantém a carga junto ao peito e a linha de gravidade centrada; 3. Reduz o braço da força resistente sobre as vértebras (M = F · b), prevenindo hérnias discais e lesões laborais.",
     "distractorAnalysis": [
-      "Está incorreta: Movimentos bruscos e rápidos aumentam a desaceleração inercial e o risco de roturas musculares graves.",
-      "Está incorreta: A gravidade mantém-se invariavelmente vertical; dobrar as pernas não altera a direção do campo gravitacional.",
-      "Está incorreta: A força normal de apoio no solo continua a sustentar o peso do profissional e da carga combinados."
+      "Está incorreta: Rodar a coluna aumenta o risco de lesão, e o levantamento não se faz em menos de 0,1 segundo.",
+      "Está incorreta: A gravidade atua na vertical e não alivia o peso do objeto.",
+      "Está incorreta: A força normal não se elimina; o chão continua a suportar o corpo."
     ],
     "nursingApplication": "A grande síntese ergonómica e biomecânica do Tópico 1 de Biofísica para a prática clínica e vida profissional de enfermagem."
   }
