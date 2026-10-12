@@ -831,11 +831,14 @@ class ArenaUI {
         this.arenaLobbyMeta.textContent = `${data.topicName} • ${data.questionCount} Perguntas • ${data.timePerQuestion}s por Pergunta`;
       }
 
-      // Gerar QR Code via API pública do QR Server
-      if (this.arenaQrImage) {
+      // Gerar QR Code localmente (sem enviar o link da sala a serviços externos)
+      if (this.arenaQrImage && typeof qrcode === 'function') {
         const currentUrl = window.location.origin + window.location.pathname;
         const joinUrl = `${currentUrl}#arena?pin=${encodeURIComponent(data.roomPin)}`;
-        this.arenaQrImage.src = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(joinUrl)}`;
+        const qr = qrcode(0, 'M');
+        qr.addData(joinUrl);
+        qr.make();
+        this.arenaQrImage.src = qr.createDataURL(8, 2);
       }
 
       this.renderLobbyTeams([]);
@@ -1178,8 +1181,8 @@ class ArenaUI {
         const card = document.createElement('div');
         card.className = 'arena-team-card';
         card.innerHTML = `
-          <span style="font-size: 1.4rem;">${t.avatar || '🩺'}</span>
-          <span style="font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${t.teamName}</span>
+          <span style="font-size: 1.4rem;">${arenaEscapeHtml(t.avatar || '🩺')}</span>
+          <span style="font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${arenaEscapeHtml(t.teamName)}</span>
           <span style="color: var(--color-success); font-size: 0.8rem; margin-left: auto;">● Online</span>
         `;
         this.arenaLobbyTeamsGrid.appendChild(card);
@@ -1202,8 +1205,8 @@ class ArenaUI {
 
       row.innerHTML = `
         <div class="arena-rank-pos">${medal}</div>
-        <div class="arena-rank-avatar">${t.avatar || '🩺'}</div>
-        <div class="arena-rank-name">${t.teamName}</div>
+        <div class="arena-rank-avatar">${arenaEscapeHtml(t.avatar || '🩺')}</div>
+        <div class="arena-rank-name">${arenaEscapeHtml(t.teamName)}</div>
         <div class="arena-rank-streak">${t.streak > 1 ? `🔥 ${t.streak}` : ''}</div>
         <div class="arena-rank-score">${(t.score || 0).toLocaleString()} pts</div>
       `;
@@ -1223,8 +1226,8 @@ class ArenaUI {
     const podiumHtml = `
       <div class="arena-pedestal-slot slot-second">
         ${p2 ? `
-          <div class="podium-avatar">🥈 ${p2.avatar}</div>
-          <div class="podium-name">${p2.teamName}</div>
+          <div class="podium-avatar">🥈 ${arenaEscapeHtml(p2.avatar)}</div>
+          <div class="podium-name">${arenaEscapeHtml(p2.teamName)}</div>
           <div class="podium-score">${p2.score.toLocaleString()} pts</div>
           <div class="podium-block block-silver">2.º Lugar</div>
         ` : ''}
@@ -1233,8 +1236,8 @@ class ArenaUI {
       <div class="arena-pedestal-slot slot-first">
         ${p1 ? `
           <div class="podium-crown">👑</div>
-          <div class="podium-avatar">🥇 ${p1.avatar}</div>
-          <div class="podium-name">${p1.teamName}</div>
+          <div class="podium-avatar">🥇 ${arenaEscapeHtml(p1.avatar)}</div>
+          <div class="podium-name">${arenaEscapeHtml(p1.teamName)}</div>
           <div class="podium-score">${p1.score.toLocaleString()} pts</div>
           <div class="podium-block block-gold">1.º VENCEDOR</div>
         ` : ''}
@@ -1242,8 +1245,8 @@ class ArenaUI {
 
       <div class="arena-pedestal-slot slot-third">
         ${p3 ? `
-          <div class="podium-avatar">🥉 ${p3.avatar}</div>
-          <div class="podium-name">${p3.teamName}</div>
+          <div class="podium-avatar">🥉 ${arenaEscapeHtml(p3.avatar)}</div>
+          <div class="podium-name">${arenaEscapeHtml(p3.teamName)}</div>
           <div class="podium-score">${p3.score.toLocaleString()} pts</div>
           <div class="podium-block block-bronze">3.º Lugar</div>
         ` : ''}

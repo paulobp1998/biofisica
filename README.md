@@ -1,133 +1,92 @@
 # 🩺 BioFísica Interativa para Enfermagem (1.º Ano)
 
-Plataforma educativa online, interativa, moderna e **100% gratuita para sempre**, concebida especificamente para estudantes do 1.º ano da Licenciatura em Enfermagem praticarem e consolidarem os conteúdos da Unidade Curricular de **Biofísica Médica**.
+Plataforma educativa interativa e **gratuita**, criada para os estudantes do 1.º ano da Licenciatura em Enfermagem praticarem os conteúdos da Unidade Curricular de **Biofísica Médica**.
+
+Acesso online: **https://paulobp1998.github.io/biofisica/**
 
 ---
 
-## 🎯 Conteúdos Programáticos (8 Tópicos • 2.200 Questões Clínicas Certificadas)
+## 🎯 Conteúdos
 
-O banco global contém **2.200 questões clínicas rigorosas** (com **1.000 questões ativas nos Tópicos 1 e 2**, 500 em cada, e 200 questões por tópico nos restantes módulos 3 a 8), concebidas estritamente a partir do programa curricular oficial, sem alucinações e com fundamentação biofísica comprovada aliada à prática clínica diária de enfermagem:
+Estado atual do banco de perguntas:
 
-1. **Força, Estado de Equilíbrio, Equilíbrio de Forças e Alavancas (IDs 1001 a 1500 • 500 Questões Ativas):**
-   - Grandezas vetoriais, 1.ª, 2.ª e 3.ª Leis de Newton, força normal, atrito estático e cinético hospitalar.
-   - Condições de equilíbrio estático (∑F = 0 e ∑M = 0), centro de gravidade (anterior a S2), linha de gravidade e base de sustentação na ergonomia e prevenção de quedas.
-   - Alavancas biomecânicas (1.ª classe / interfixas, 2.ª classe / inter-resistentes, 3.ª classe / interpotentes), braços de alavanca, momentos de força (torque M = F·d) e vantagem mecânica no corpo humano e instrumentos clínicos.
-2. **Elasticidade dos Corpos, Resistência dos Materiais e Aplicação ao Sistema Osteomedular (IDs 2001 a 2500 • 500 Questões Ativas):**
-   - Reologia: sólidos de Euclides vs sólidos de Hooke, corpos plásticos, viscosos, viscoelásticos e plastoviscoelásticos.
-   - As 5 grandes deformações: compressão (fémur), tração (tendões), flexão (plano neutro central), cisalhamento tecidual e torção (eixo neutro e tensão máxima na periferia de ossos tubulares ocos).
-   - Lei Fundamental da Elasticidade de Hooke (F = k · ΔL) e Lei Generalizada (σ = E · ε) com o Módulo de Young dos materiais canónicos (Aço, Vidro, Prata, Osso e Borracha).
-   - Biomecânica do sistema osteomedular: compósito bifásico (hidroxiapatite mineral ~65% para compressão vs colagénio tipo I ~35% para tração e flexibilidade), anisotropia mecânica (compressão > tração > cisalhamento/torção), arquitetura tubular oca dos ossos longos, osso cortical vs trabecular, fragilidade do colo do fémur na osteoporose senil e fenómeno de blindagem de tensões (*stress shielding*) em próteses de anca periprotéticas pela Lei de Wolff.
-3. **Leis Fundamentais da Hidrostática (IDs 3001 a 3200 • Bloqueado pelo Docente):**
-   - Pressão hidrostática fundamental (P = ρ·g·h), Princípio de Pascal, Princípio de Arquimedes e aplicações clínicas (coluna hidrostática gravitacional ortostática, pressão venosa periférica, altura da bolsa de infusão e calibres de seringas na infusão via cateter PICC).
-4. **Hidrodinâmica e Aplicações ao Sistema Circulatório (IDs 4001 a 4200 • 200 Questões):**
-   - Princípio da Continuidade (Q = A · v = constante): velocidade máxima na aorta vs lentidão capilar para trocas gasosas.
-   - Regime Laminar: lâminas concêntricas, perfil parabólico de velocidade e ausência de ruído.
-   - Regime Turbulento: vórtices, dissipação de energia em calor e som acústico (sopros).
-   - Número de Reynolds (Re = ρ · v · d / η): parâmetros indutores de turbulência (Re > 2000).
-   - Viscosidade dinâmica (η) e comportamento não-newtoniano (pseudoplástico) do sangue.
-   - Hematócrito e viscosidade: relação exponencial; anemia e sopros funcionais vs policitemia e risco trombótico.
-   - Lei de Poiseuille (Q = π · ΔP · r⁴ / (8 · η · L)): papel preponderante do raio vascular (r⁴); seleção de cateteres intravenosos periféricos de grande calibre (14G/16G) vs cateteres longos e finos.
-   - Resistência Vascular Periférica (RVP): associação de vasos em série vs em paralelo.
-   - Génese física dos ruídos de Korotkoff na medição da PA com esfigmomanómetro e estetoscópio (Fases I a V e hiato auscultatório).
-   - Estenoses vasculares ateroscleróticas, sopro carotídeo e frémito palpável (thrill) em fístulas arteriovenosas de hemodiálise.
-5. **Radiações, Raios X, Aplicações Terapêuticas e Diagnóstico (IDs 5001 a 5200 • 200 Questões):**
-   - Natureza eletromagnética fotónica dos Raios X (pequeno λ, alta frequência, velocidade da luz, sem massa e sem carga).
-   - Produção de Raios X em tubos médicos (emissão termiónica no cátodo de tungsténio, quilovoltagem kVp, ânodo rotativo, rendimento térmico de 99% vs 1% de Raios X).
-   - Radiação de Travagem (Bremsstrahlung, espetro contínuo) vs Raios X Característicos (transições quânticas eletrónicas internas).
-   - Interação da radiação com os tecidos: Efeito Fotoelétrico (P ∝ Z³/E³, base do contraste ósseo) vs Efeito de Compton (radiação dispersa na sala de exames).
-   - Formação da imagem radiológica (radiopacidade vs radiotransparência) e meios de contraste (iodo endovenoso e sulfato de bário entérico, cuidados com hidratação e reações anafilactoides).
-   - Tomografia Computorizada (TC/TAC): aquisição helicoidal multislice, reconstrução 3D e escala de Unidades Hounsfield (HU: ar = -1000, água = 0, gordura = -100, músculo = +40, osso = +1000).
-   - Efeitos biológicos celulares: ação direta no DNA vs ação indireta por radiólise da água e radicais livres hidroxilo OH• (~70% do dano).
-   - Efeitos estocásticos (probabilísticos, sem limiar, modelo LNT, cancro e mutações) vs efeitos determinísticos (com limiar de dose, gravidade proporcional, eritema cutâneo e cataratas).
-   - Lei de Bergonié-Tribondeau: radiossensibilidade de tecidos indiferenciados com alta taxa mitótica (medula óssea, mucosas, gónadas, embrião).
-   - Princípios de Radioproteção ALARA em enfermagem: Tempo mínimo, Distância máxima (Lei do Inverso do Quadrado I ∝ 1/d²) e Blindagem plúmbea (avental 0,5 mm Pb, protetor tiroidiano, dosímetro individual TLD).
-6. **Núcleo Atómico e Propriedades das Forças Nucleares (IDs 6001 a 6200 • 200 Questões):**
-   - Estrutura nuclear: protões (Z), neutrões (N), número de massa (A = Z + N), nucleões, carga e raio nuclear (R ≈ R₀ · A^(1/3)).
-   - Repulsão eletrostática coulombiana (Fe ∝ 1/r²) e a necessidade vital da força forte.
-   - Força Nuclear Forte: intensidade extrema (~100 vezes superior ao eletromagnetismo), curtíssimo alcance femtométrico (< 10⁻¹⁵ m), atrativa, independente da carga e saturação.
-   - Relação N/Z e o vale de estabilidade nuclear (decaimento de núcleos instáveis).
-   - Defeito de massa (Δm) e equivalência massa-energia de Einstein (E = Δm · c²).
-   - Energia de Ligação Nuclear total e por nucleão (Eb / A, pico máximo no Ferro-56, fusão em núcleos leves e fissão em núcleos pesados).
-   - Níveis quânticos discretos de energia nuclear e desexcitação por fotões gama (estados metaestáveis como o ⁹⁹ᵐTc).
-   - Fissão nuclear em reatores: produção de Molibdénio-99 (⁹⁹Mo) e gerador hospitalar de tecnécio (teste de fuga de Mo).
-   - Cíclotrons médicos: aceleração de protões e síntese da reação nuclear ¹⁸O(p, n)¹⁸F para Tomografia PET.
-   - Tunelamento Quântico na ejeção de partículas alfa e natureza probabilística/estocástica da desintegração radioativa.
-7. **Partículas α, β e Radiações Gama (IDs 7001 a 7200 • 200 Questões):**
-   - Partícula Alfa (α): núcleo de Hélio (⁴₂He²⁺), massa 4 u.m.a., carga +2e, alta energia cinética (4 a 8 MeV).
-   - Alto poder de ionização (alto LET ~ 100 keV/μm) e baixíssimo alcance/penetração da partícula alfa (travada por folha de papel ou estrato córneo).
-   - Contaminação interna letal por emissores alfa (inalação de Gás Rádon ²²²Rn, ingestão de Polónio-210 ou Rádio-226) vs segurança de irradiação externa.
-   - Partícula Beta Menos (β⁻): eletrão rápido ejetado no decaimento n → p + β⁻ + ν̄e; penetração milimétrica nos tecidos moles e uso terapêutico ablativo em oncologia.
-   - Partícula Beta Mais (β⁺ / positrão): anti-matéria do eletrão, emitida em p → n + β⁺ + νe, base da Tomografia PET com ¹⁸F-FDG.
-   - Aniquilação positrão-eletrão: desaceleração térmica no tecido e colisão que converte a massa em exatamente dois fotões gama colineares de 511 keV emitidos a 180°.
-   - Blindagem de partículas beta: materiais de baixo número atómico (Z baixo: acrílico, plástico grosso, vidro ou alumínio) e proibição de chumbo direto para evitar radiação de travagem (Bremsstrahlung).
-   - Radiação Gama (γ): fotões eletromagnéticos intranucleares puros sem massa e sem carga, comprimento de onda ultracurto e altíssimo poder de penetração.
-   - Atenuação exponencial gama (I = I₀ · e^(-μ · x)), Camada de Semiatuação (HVL) e blindagens espessas de chumbo ou betão baritado.
-   - Cuidados de enfermagem com doentes em braquiterapia e radioterapia metabólica: quarto de isolamento com paredes baritadas, biombos móveis de chumbo, gestão de urina e dejetos radioativos e regras de visitas.
-8. **Isótopos, Isóbaros, Isótonos e Aplicações Terapêuticas (IDs 8001 a 8200 • 200 Questões):**
-   - Famílias nucleares: Isótopos (mesmo Z), Isóbaros (mesmo A), Isótonos (mesmo N) e Isómeros nucleares (⁹⁹ᵐTc vs ⁹⁹Tc).
-   - Lei Fundamental do Decaimento Radioativo (N(t) = N₀ · e^(-λt)), Atividade em Becquerels (Bq) e Curies (Ci).
-   - Meia-vida física (T₁/₂) e Regra das 10 Meias-Vidas para desclassificação de resíduos hospitalares (1/1024 < 0,1%).
-   - Meia-vida biológica (Tb), física (Tf) e efetiva (Te = (Tf · Tb) / (Tf + Tb)): hidratação abundante orientada pelo enfermeiro acelera a eliminação renal de radiofármacos.
-   - Iodo-131 (¹³¹I): emissão mista (β⁻ terapêutico e γ diagnóstico de 364 keV), semivida de 8 dias, absorção pelo simportador NIS, ablação do cancro da tiroide e cuidados com vómitos, urina e saliva.
-   - Tecnécio-99m (⁹⁹ᵐTc): padrão-ouro diagnóstico com semivida de 6 horas, gama puro de 140 keV e marcadores orgânicos (DMSA/DTPA renal, HMPAO cerebral, Sestamibi miocárdico e MDP ósseo).
-   - Flúor-18 Desoxiglicose (¹⁸F-FDG): emissor de positrões (β⁺, T₁/₂ = 110 min), avidez tumoral pelo efeito Warburg e cuidados pré-exame no doente diabético e em jejum.
-   - Radiofármacos modernos: Lutécio-177 (¹⁷⁷Lu) para tumores neuroendócrinos e próstata, Estrôncio-89 (⁸⁹Sr) e Samário-153 (¹⁵³Sm) para alívio analgésico de dor óssea, e Ítrio-90 (⁹⁰Y) para radioembolização hepática.
-   - Câmara quente hospitalar (Hot Lab), biossegurança, ativímetro, capela de fluxo laminar blindada e protocolo de emergência em derrames com kits quelantes.
-   - Cuidados holísticos de enfermagem, apoio emocional ao doente isolado e desmistificação segura dos mitos da radioatividade.
+| Tópico | Conteúdo | Estado |
+|---|---|---|
+| 1 | Força, estado de equilíbrio, equilíbrio de forças e alavancas | 200 perguntas ativas |
+| 2 | Elasticidade dos corpos, resistência dos materiais e sistema osteomedular | 200 perguntas ativas |
+| 3 a 8 | Restantes módulos | Em preparação (bloqueados pelo docente) |
+
+Total atual: **400 perguntas ativas**, de escolha múltipla com 4 opções e explicação científica e de aplicação em enfermagem.
+
+**Tópico 1:** grandezas vetoriais, leis de Newton, força normal e atrito, condições de equilíbrio (∑F = 0 e ∑M = 0), centro de gravidade e base de sustentação, alavancas biomecânicas (1.ª, 2.ª e 3.ª classe) e momentos de força.
+
+**Tópico 2:** reologia (sólidos de Hooke e de Euclides, corpos plásticos e viscoelásticos), as cinco deformações (compressão, tração, flexão, cisalhamento e torção), lei de Hooke, módulo de Young, composição do osso (hidroxiapatite e colagénio) e anisotropia mecânica do sistema osteomedular.
 
 ---
 
-## 💡 Funcionalidades Pedagógicas Avançadas (100% Gratuitas)
+## 💡 Funcionalidades
 
-- **📕 Caderno de Erros & Perguntas Marcadas (⭐) [1A]:**
-  - Registo automático de perguntas erradas no navegador (`localStorage`).
-  - Treino focado exclusivo para superar as dificuldades do estudante (*"Treinar Erros"*).
-  - Sistema de favoritos com estrela (⭐) para marcar dúvidas durante os testes, na pesquisa ou na folha de revisão.
-- **⏱️ Modo "Simulação Real de Frequência" vs. "Modo Treino" [1B]:**
-  - **Modo Treino:** Explicações imediatas e detalhadas após cada clique, sem pressão de tempo.
-  - **Modo Simulação Real:** Condições oficiais de frequência universitária (sem consulta durante a prova, seleções neutras, temporizador decrescente configurável e nota de 0 a 20 valores com revisão detalhada só no final).
-- **🔍 Motor de Pesquisa Rápida e Glossário Clínico [2E]:**
-  - Pesquisa instantânea em tempo real (< 5ms) nas 2.400 questões, resumos teóricos e aplicações de enfermagem.
-  - Atalho global de teclado (`Ctrl+K` ou `Cmd+K`) com destaque visual (*highlight*) das palavras-chave encontradas.
-  - Acesso direto para praticar ou marcar qualquer questão a partir da própria pesquisa!
-- **🏆 Conquistas, Medalhas de Mérito e Streak Diário (🔥) [3F]:**
-  - **Streak Diário:** Registo e incentivo à constância diária com contador de chama no topo da página.
-  - **10 Medalhas Clínicas:** Distinções formativas (*Mestre da Hemodinâmica, Guardião da Radioproteção, Aluno de Honra, Caderno Imaculado, Maratonista, etc.*) com notificações comemorativas (*toasts*).
-- **📄 Ficha de Trabalho em PDF / Impressão [3G]:**
-  - Gerador de fichas formatadas prontas para imprimir em papel A4 ou guardar em formato PDF (`window.print()`).
-  - Cabeçalho formal da Escola Superior de Enfermagem (Nome, Data, Turma), círculos de preenchimento manual e opção de Folha de Soluções com quebra de página automática no final.
-- **🔤 Controlo de Tamanho de Fonte (A- / A+) [4H]:**
-  - Botões de ajuste imediato na barra de navegação superior para máxima legibilidade e conforto visual em smartphones, tablets e computadores.
-- **Configuração Flexível da Sessão:** Escolha entre 10, 25, 50 ou maratona completa do tópico (1.000 questões no Tópico 1 e 200 nos restantes tópicos), ou exames gerais de 20 e 40 questões.
-- **Baralhamento Inteligente (Fisher-Yates):** Em cada nova tentativa, a ordem das perguntas e a posição das 4 opções (A, B, C, D) são reordenadas dinamicamente.
+- **Modo Treino:** explicação imediata e detalhada após cada resposta.
+- **Modo Simulação Real:** sem consulta durante a prova, temporizador configurável e classificação de 0 a 20 valores com revisão no final.
+- **Caderno de Erros e ⭐ Favoritos:** as perguntas erradas ficam guardadas no navegador para treino dirigido.
+- **Pesquisa rápida** (`Ctrl+K` ou `Cmd+K`) nas perguntas e no glossário.
+- **Sessões configuráveis:** 10, 25, 50 perguntas ou o tópico completo; exames de 20 ou 40 perguntas.
+- **Ordem baralhada:** a ordem das perguntas e das opções muda em cada tentativa.
+- **Ficha de trabalho imprimível** (A4 ou PDF através de `window.print()`).
+- **Tamanho de letra ajustável** (A- / A+) e **modo escuro**.
+- **Modo Arena (sala de aula):** quiz em tempo real com equipas. O docente cria uma sala com um PIN; as equipas entram com o PIN ou com o QR code.
 
 ---
 
-## 🚀 Como Abrir e Utilizar no seu Computador
+## 🚀 Como usar
 
-A aplicação é puramente estática (HTML5/CSS3/ES6) e não depende de internet nem de instalações:
+### Online (recomendado para os alunos)
+Basta abrir **https://paulobp1998.github.io/biofisica/** no computador ou no telemóvel.
 
-1. **Acesso Direto pelo Ambiente de Trabalho (Desktop):**
-   - Foi criada uma pasta pronta no seu Ambiente de Trabalho:
-     `Biofisica-Enfermagem`
-   - Basta abrir essa pasta e dar um **duplo clique no ficheiro `index.html`**! O site abre instantaneamente no Safari, Google Chrome, Firefox ou Edge.
-2. **Acesso pelo Servidor Local Ativo:**
-   - O servidor local encontra-se ativo. Basta aceder a:
-     `http://localhost:8080`
+### No próprio computador (sem internet)
+1. Descarregue ou clone este repositório.
+2. Abra o ficheiro `index.html` no navegador (Safari, Chrome, Firefox ou Edge).
 
 ---
 
-## 🌐 Como Disponibilizar Online aos Estudantes (100% Gratuito Permanente)
+## 🌐 Gratuitidade
 
-Para partilhar o link com os alunos do 1.º ano de Enfermagem para que possam aceder a partir dos seus telemóveis e computadores em casa ou na universidade:
+O site é estático (HTML, CSS e JavaScript). Não tem servidor, base de dados nem chaves de API, por isso não gera custos:
 
-### Opção 1: Netlify Drop (A mais simples • 30 Segundos sem registo de código)
-1. Aceda a [app.netlify.com/drop](https://app.netlify.com/drop).
-2. Arraste a pasta `Biofisica-Enfermagem` do seu Ambiente de Trabalho diretamente para o círculo da página web.
-3. A plataforma gera de imediato um endereço público seguro e 100% gratuito (ex: `https://biofisica-enfermagem.netlify.app`), ativo para sempre sem qualquer custo de alojamento!
+- **Alojamento:** GitHub Pages, gratuito para repositórios públicos. Não usar serviços com plano pago nem planos de teste com validade.
+- **Modo Arena:** usa os brokers MQTT públicos e gratuitos **HiveMQ** e **EMQX**. São serviços partilhados, sem garantia de disponibilidade. Se algum deixar de existir, a app tenta automaticamente o seguinte. Se ambos falharem, o modo Arena deixa de funcionar, mas o resto do site continua a funcionar.
+- **QR code:** gerado no próprio navegador (biblioteca `js/lib/qrcode-generator.js`, MIT). Não há chamadas a serviços externos.
 
-### Opção 2: GitHub Pages (Ideal para partilha institucional e atualizações)
-1. Crie um repositório público no [github.com](https://github.com) (ex: `biofisica-enfermagem`).
-2. Carregue o conteúdo da pasta `Biofisica-Enfermagem` para o repositório.
-3. Nas definições do repositório (**Settings** > **Pages**), em *Branch*, selecione `main` e `/ (root)` e guarde.
-4. O GitHub gera o endereço web público com HTTPS gratuito vitalício: `https://o-seu-utilizador.github.io/biofisica-enfermagem/`.
+---
+
+## 🔒 Privacidade e segurança
+
+- **Modo Arena:** as mensagens (nomes das equipas e respostas) passam por um broker público. Quem conhecer o PIN da sala pode ver e participar nessa sala. **Recomenda-se que os alunos usem apenas alcunhas de equipa, nunca nomes reais.** Para um uso mais restrito, deve usar-se um broker MQTT privado com autenticação.
+- **PIN do docente:** protege o painel de gestão de perguntas e o acesso ao modo Arena do docente. Como o site é estático, a verificação acontece no navegador e serve apenas para evitar uso acidental. **Não use um PIN curto e não reutilize um PIN já publicado.**
+
+  Para mudar o PIN do docente, gere o hash e substitua a constante `ARENA_HOST_PIN_HASH` em `js/arena-ui.js`:
+
+  ```bash
+  echo -n "O_SEU_NOVO_PIN" | shasum -a 256
+  ```
+
+  O PIN antigo (`XXXXXX`) aparece no histórico público de commits anteriores e já não é válido, mas deve ser considerado exposto.
+
+---
+
+## 🛠️ Estrutura do projeto
+
+```
+index.html              Interface principal
+css/style.css           Estilos (inclui modo escuro e impressão)
+js/data/topic*.js       Banco de perguntas por tópico
+js/questions-data.js    Ligação dos tópicos ao motor de quiz
+js/quiz-engine.js       Lógica do quiz (treino e simulação)
+js/app.js               Navegação, caderno de erros, medalhas e pesquisa
+js/arena-*.js           Modo Arena (rede, motor e interface)
+js/teacher-manager.js   Gestão de perguntas pelo docente
+js/lib/                 Bibliotecas de terceiros (Paho MQTT, QR code)
+```
+
+Os ficheiros `verify_app_health.py` e `master_audit.py` são ferramentas de apoio para auditoria do banco de perguntas.
+

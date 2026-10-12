@@ -190,9 +190,11 @@ class ArenaEngine {
     this.questionStats = [];
     this.phase = 'LOBBY';
 
-    // Gerar PIN da Sala amigável de 4 dígitos (ex.: BF-4829)
-    const pinDigits = Math.floor(1000 + Math.random() * 9000);
-    const roomPin = `BF-${pinDigits}`;
+    // Gerar PIN da Sala com 6 caracteres aleatórios (ex.: BF-7KQ4M2), sem caracteres ambíguos
+    const pinAlphabet = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+    const pinBytes = crypto.getRandomValues(new Uint8Array(6));
+    const pinChars = Array.from(pinBytes, b => pinAlphabet[b % pinAlphabet.length]).join('');
+    const roomPin = `BF-${pinChars}`;
 
     // Selecionar perguntas: lista personalizada pelo docente OU sorteio aleatório
     if (Array.isArray(customQuestions) && customQuestions.length > 0) {
