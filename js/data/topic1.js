@@ -132,7 +132,7 @@ const TOPIC_1_QUESTIONS = [
       "Newton (N), unidade de força no Sistema Internacional."
     ],
     "correctIndex": 3,
-    "explanation": "No Sistema Internacional (SI), a unidade padrão de força é o Newton (N), conforme detalhado na tabela de grandezas da biomecânica.",
+    "explanation": "No Sistema Internacional (SI), a unidade padrão de força é o newton (N), conforme detalhado na tabela de grandezas da biomecânica.",
     "distractorAnalysis": [
       "Está incorreta: O quilograma é unidade de massa, e não de força.",
       "Está incorreta: O pascal é unidade de pressão, que é força por área.",
@@ -151,7 +151,7 @@ const TOPIC_1_QUESTIONS = [
       "Ganha uma aceleração constante, porque a ausência de força deixa o corpo sem resistência."
     ],
     "correctIndex": 0,
-    "explanation": "Quando a força resultante é nula (Fr = 0), o corpo mantém o seu estado de repouso ou continua em movimento retilíneo uniforme (MRU), de acordo com a 1ª Lei de Newton.",
+    "explanation": "Quando a força resultante é nula (Fr = 0), o corpo mantém o seu estado de repouso ou continua em movimento retilíneo uniforme (MRU), de acordo com a 1.ª Lei de Newton.",
     "distractorAnalysis": [
       "Está incorreta: Sem força resultante, o corpo não abranda; mantém a velocidade.",
       "Está incorreta: Uma força resultante nula não provoca rotação, porque a rotação depende do momento resultante (ΣM).",
@@ -265,7 +265,7 @@ const TOPIC_1_QUESTIONS = [
       "Direção refere-se ao peso do corpo; sentido refere-se ao atrito entre superfícies."
     ],
     "correctIndex": 2,
-    "explanation": "A direção define a linha reta sobre a qual a força atua (ex.: horizontal, vertical ou oblíqua a 45º); o sentido indica para onde a seta aponta ao longo dessa linha (ex.: de baixo para cima).",
+    "explanation": "A direção define a linha reta sobre a qual a força atua (ex.: horizontal, vertical ou oblíqua a 45°); o sentido indica para onde a seta aponta ao longo dessa linha (ex.: de baixo para cima).",
     "distractorAnalysis": [
       "Está incorreta: O valor em newtons é a intensidade, e o aparelho que mede a força é o dinamómetro.",
       "Está incorreta: Direção e sentido são conceitos distintos: a reta de suporte e a orientação ao longo dela.",
@@ -390,7 +390,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1021,
     "topicId": 1,
-    "question": "Qual é o enunciado correto da 1ª Lei de Newton (Lei da Inércia)?",
+    "question": "Qual é o enunciado correto da 1.ª Lei de Newton (Lei da Inércia)?",
     "options": [
       "A aceleração é diretamente proporcional à força resultante e inversamente à massa.",
       "Um corpo mantém o seu estado de movimento, salvo se atuar sobre ele uma força resultante não nula.",
@@ -398,7 +398,7 @@ const TOPIC_1_QUESTIONS = [
       "A energia total de um sistema isolado acaba por se dissipar em calor."
     ],
     "correctIndex": 1,
-    "explanation": "Define-se a 1ª Lei de Newton (Lei da Inércia): um corpo mantém o seu estado de movimento, salvo se atuar sobre ele uma força resultante não nula. Esta formulação é mais rigorosa do que «uma força externa», porque várias forças externas podem anular-se.",
+    "explanation": "Define-se a 1.ª Lei de Newton (Lei da Inércia): um corpo mantém o seu estado de movimento, salvo se atuar sobre ele uma força resultante não nula. Esta formulação é mais rigorosa do que «uma força externa», porque várias forças externas podem anular-se.",
     "distractorAnalysis": [
       "Está incorreta: A relação aceleração-força-massa é a 2.ª Lei de Newton (F = m · a).",
       "Está incorreta: A ação e a reação têm igual intensidade (3.ª Lei), e não menor intensidade.",
@@ -436,7 +436,7 @@ const TOPIC_1_QUESTIONS = [
       "Isolar termicamente o corpo de todas as fontes de radiação solar."
     ],
     "correctIndex": 2,
-    "explanation": "Pela 1ª Lei de Newton, na ausência de forças externas resultantes, o estado de movimento permanece constante. Para alterar a velocidade, é indispensável a atuação de uma força resultante externa.",
+    "explanation": "Pela 1.ª Lei de Newton, na ausência de forças externas resultantes, o estado de movimento permanece constante. Para alterar a velocidade, é indispensável a atuação de uma força resultante externa.",
     "distractorAnalysis": [
       "Está incorreta: Com força resultante nula, o corpo mantém a velocidade; não se altera.",
       "Está incorreta: O tempo, por si só, não altera a velocidade; é preciso uma força.",
@@ -447,7 +447,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1024,
     "topicId": 1,
-    "question": "Se um carrinho de penso for empurrado num corredor plano ideal sem qualquer atrito ou resistência do ar, o que prevê a 1ª Lei de Newton?",
+    "question": "Se um carrinho de penso for empurrado num corredor plano ideal sem qualquer atrito ou resistência do ar, o que prevê a 1.ª Lei de Newton?",
     "options": [
       "Que pararia ao fim de alguns metros, por perda de inércia com o tempo.",
       "Que manteria a velocidade constante, em movimento retilíneo uniforme.",
@@ -455,7 +455,7 @@ const TOPIC_1_QUESTIONS = [
       "Que inverteria o sentido de marcha, por efeito de uma força de reação do ar."
     ],
     "correctIndex": 1,
-    "explanation": "Sem forças contrárias de atrito ou resistência para desacelerar o corpo, a 1ª Lei afirma que este continuará indefinidamente em movimento retilíneo uniforme (velocidade constante).",
+    "explanation": "Sem forças contrárias de atrito ou resistência para desacelerar o corpo, a 1.ª Lei afirma que este continuará indefinidamente em movimento retilíneo uniforme (velocidade constante).",
     "distractorAnalysis": [
       "Está incorreta: Sem força resultante, o carrinho não para; mantém a velocidade (1.ª Lei).",
       "Está incorreta: Acelerar sem força contraria a 1.ª Lei; a aceleração exige força resultante.",
@@ -493,7 +493,7 @@ const TOPIC_1_QUESTIONS = [
       "Arquimedes, autor do princípio da flutuação dos corpos em fluidos."
     ],
     "correctIndex": 2,
-    "explanation": "Introduz-se as Leis do Movimento com a célebre citação de Isaac Newton: 'Se vi mais longe, foi por estar de pé sobre os ombros de gigantes'.",
+    "explanation": "Introduzem-se as Leis do Movimento com a célebre citação de Isaac Newton: 'Se vi mais longe, foi por estar de pé sobre os ombros de gigantes'.",
     "distractorAnalysis": [
       "Está incorreta: Galileu estudou a queda dos corpos, mas não formulou as leis do movimento e da gravitação universal.",
       "Está incorreta: Hooke formulou a lei da elasticidade, e não as leis do movimento e da gravitação.",
@@ -542,7 +542,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1029,
     "topicId": 1,
-    "question": "Ao travar bruscamente um veículo, os passageiros desprovidos de cinto são projetados para a frente. Como se explica isto pela 1ª Lei de Newton?",
+    "question": "Ao travar bruscamente um veículo, os passageiros desprovidos de cinto são projetados para a frente. Como se explica isto pela 1.ª Lei de Newton?",
     "options": [
       "Uma força de atração exercida pelo vidro da frente puxa os passageiros.",
       "Por inércia, o corpo mantém a velocidade que tinha até uma força o travar.",
@@ -550,7 +550,7 @@ const TOPIC_1_QUESTIONS = [
       "O veículo acelera subitamente para a frente, empurrando as pessoas."
     ],
     "correctIndex": 1,
-    "explanation": "Quando o veículo trava, as rodas travam o chassis; contudo, o corpo do passageiro, por inércia (1ª Lei), continua o seu movimento com a velocidade prévia até colidir com algum obstáculo ou ser retido pelo cinto.",
+    "explanation": "Quando o veículo trava, as rodas travam o chassis; contudo, o corpo do passageiro, por inércia (1.ª Lei), continua o seu movimento com a velocidade prévia até colidir com algum obstáculo ou ser retido pelo cinto.",
     "distractorAnalysis": [
       "Está incorreta: Não existe uma força desse tipo; a projeção resulta da inércia dos passageiros.",
       "Está incorreta: A gravidade não deixa de atuar ao travar; o peso mantém-se.",
@@ -561,7 +561,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1030,
     "topicId": 1,
-    "question": "Para que um objeto em movimento altere a sua trajetória retilínea e faça uma curva, o que estabelece a 1ª Lei de Newton?",
+    "question": "Para que um objeto em movimento altere a sua trajetória retilínea e faça uma curva, o que estabelece a 1.ª Lei de Newton?",
     "options": [
       "Não é preciso força, pois o corpo curva-se por si mesmo no vácuo.",
       "Que a massa diminua para metade durante a trajetória.",
@@ -580,7 +580,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1031,
     "topicId": 1,
-    "question": "Qual é a fórmula fundamental da 2ª Lei de Newton apresentada?",
+    "question": "Qual é a fórmula fundamental da 2.ª Lei de Newton apresentada?",
     "options": [
       "P = m / g, com P em newtons e g em metros por segundo ao quadrado.",
       "M = F / b, com M em newton-metros e b em metros.",
@@ -588,7 +588,7 @@ const TOPIC_1_QUESTIONS = [
       "P = F · A, com P em pascal e A em metros quadrados."
     ],
     "correctIndex": 2,
-    "explanation": "A expressão clássica da 2ª Lei de Newton (Lei fundamental da dinâmica) na biomecânica é F = m · a (força igual a massa multiplicada pela aceleração).",
+    "explanation": "A expressão clássica da 2.ª Lei de Newton (Lei fundamental da dinâmica) na biomecânica é F = m · a (força igual a massa multiplicada pela aceleração).",
     "distractorAnalysis": [
       "Está incorreta: O peso é P = m · g (produto, e não quociente).",
       "Está incorreta: O momento de uma força é M = F · b, e não um quociente.",
@@ -626,7 +626,7 @@ const TOPIC_1_QUESTIONS = [
       "a = F + m, ou seja, a aceleração é igual à soma da força com a massa."
     ],
     "correctIndex": 1,
-    "explanation": "Deduz-se matematicamente as formas equivalentes da 2ª Lei: isolando a aceleração, obtém-se a = F / m.",
+    "explanation": "Deduzem-se matematicamente as formas equivalentes da 2.ª Lei: isolando a aceleração, obtém-se a = F / m.",
     "distractorAnalysis": [
       "Está incorreta: Se a = F · m, a aceleração cresceria com a massa, o que contraria a 2.ª Lei.",
       "Está incorreta: A aceleração diminui quando a massa aumenta; m/F inverte esta relação.",
@@ -656,7 +656,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1035,
     "topicId": 1,
-    "question": "Qual é a definição de 'Utente bariátrico' apresentada para ilustrar a aplicação prática da 2ª Lei de Newton?",
+    "question": "Qual é a definição de 'Utente bariátrico' apresentada para ilustrar a aplicação prática da 2.ª Lei de Newton?",
     "options": [
       "Utente com desnutrição calórica grave e baixa densidade óssea.",
       "Utente sujeito a tração ortopédica contínua nos membros inferiores.",
@@ -683,7 +683,7 @@ const TOPIC_1_QUESTIONS = [
       "Quatro vezes mais força, pois a força cresce com o quadrado da massa do utente."
     ],
     "correctIndex": 0,
-    "explanation": "Pela 2ª Lei (F = m · a), com a constante, duplicando a massa (2m) é indispensável duplicar a força (2F): 'Essa força será tanto maior quanto maior for a massa do corpo'.",
+    "explanation": "Pela 2.ª Lei (F = m · a), com a constante, duplicando a massa (2m) é indispensável duplicar a força (2F): 'Essa força será tanto maior quanto maior for a massa do corpo'.",
     "distractorAnalysis": [
       "Está incorreta: Com a mesma força, a aceleração diminui quando a massa aumenta (a = F/m).",
       "Está incorreta: Corpos mais pesados exigem mais força para a mesma aceleração, e não menos.",
@@ -759,7 +759,7 @@ const TOPIC_1_QUESTIONS = [
       "Porque o atrito cinético se anula quando a massa corporal aumenta de forma significativa."
     ],
     "correctIndex": 0,
-    "explanation": "Devido a F = m · a, massas muito elevadas exigem forças massivas quer para serem aceleradas quer para serem travadas. Sem meios mecânicos de apoio, o esforço sobre a coluna dos profissionais torna-se lesivo.",
+    "explanation": "Devido a F = m · a, massas muito elevadas exigem forças muito elevadas quer para serem aceleradas quer para serem travadas. Sem meios mecânicos de apoio, o esforço sobre a coluna dos profissionais torna-se lesivo.",
     "distractorAnalysis": [
       "Está incorreta: A gravidade atua sobre todos os corpos com massa; o peso é proporcional à massa (P = m · g).",
       "Está incorreta: As leis de Newton aplicam-se a qualquer massa macroscópica, sem limite de 100 kg.",
@@ -770,7 +770,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1041,
     "topicId": 1,
-    "question": "Qual é a representação matemática do par ação-reação da 3ª Lei de Newton apresentada?",
+    "question": "Qual é a representação matemática do par ação-reação da 3.ª Lei de Newton apresentada?",
     "options": [
       "F<sub>A->B</sub> + F<sub>B->A</sub> = m · a, com a massa dos dois corpos somada.",
       "F<sub>A->B</sub> = - F<sub>B->A</sub>, com a mesma intensidade e sentidos opostos.",
@@ -789,7 +789,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1042,
     "topicId": 1,
-    "question": "Qual é o enunciado formal da 3ª Lei de Newton apresentado?",
+    "question": "Qual é o enunciado formal da 3.ª Lei de Newton apresentado?",
     "options": [
       "A reação a uma força é menor do que a própria força, porque parte se perde no contacto.",
       "A força de atrito é perpendicular à superfície que suporta o peso do corpo.",
@@ -835,7 +835,7 @@ const TOPIC_1_QUESTIONS = [
       "Uma força de 35 N, porque os materiais de alvenaria dissipam metade da força."
     ],
     "correctIndex": 0,
-    "explanation": "Pela 3ª Lei de Newton, a parede reage instantaneamente sobre o profissional com uma força de intensidade rigorosamente igual (70 N), na mesma direção horizontal e em sentido oposto (para trás).",
+    "explanation": "Pela 3.ª Lei de Newton, a parede reage instantaneamente sobre o profissional com uma força de intensidade rigorosamente igual (70 N), na mesma direção horizontal e em sentido oposto (para trás).",
     "distractorAnalysis": [
       "Está incorreta: A parede reage mecanicamente à força, sem necessidade de músculos.",
       "Está incorreta: A reação é horizontal e de igual intensidade; não há força gravítica de 140 N.",
@@ -873,7 +873,7 @@ const TOPIC_1_QUESTIONS = [
       "A atração gravítica exercida pelo ar que envolve a pessoa em cada passo."
     ],
     "correctIndex": 2,
-    "explanation": "Ao caminhar, o pé exerce uma força de ação para trás no solo; pela 3ª Lei de Newton, o solo exerce uma força de reação para a frente sobre o pé (força de atrito estático), que propulsiona a marcha.",
+    "explanation": "Ao caminhar, o pé exerce uma força de ação para trás no solo; pela 3.ª Lei de Newton, o solo exerce uma força de reação para a frente sobre o pé (força de atrito estático), que propulsiona a marcha.",
     "distractorAnalysis": [
       "Está incorreta: Esta força atua sobre o piso, e não sobre a pessoa; a força que a impulsiona é a reação do piso.",
       "Está incorreta: A sola deforma-se e recupera, mas não é uma força externa que impulsiona a pessoa; a força vem da reação do piso.",
@@ -884,7 +884,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1047,
     "topicId": 1,
-    "question": "Relativamente ao instante em que ocorrem as forças de ação e de reação da 3ª Lei de Newton, qual das afirmações é verdadeira?",
+    "question": "Relativamente ao instante em que ocorrem as forças de ação e de reação da 3.ª Lei de Newton, qual das afirmações é verdadeira?",
     "options": [
       "A força de ação surge primeiro, e a reação aparece depois, com algum atraso.",
       "A reação ocorre se o corpo atingido sofrer uma deformação plástica visível.",
@@ -911,7 +911,7 @@ const TOPIC_1_QUESTIONS = [
       "Não exerce força, porque é uma estrutura inanimada."
     ],
     "correctIndex": 0,
-    "explanation": "Pela 3ª Lei de Newton, ao exercer uma força vertical para baixo no assento, o assento reage exercendo uma força vertical para cima de igual intensidade sobre o corpo do utente.",
+    "explanation": "Pela 3.ª Lei de Newton, ao exercer uma força vertical para baixo no assento, o assento reage exercendo uma força vertical para cima de igual intensidade sobre o corpo do utente.",
     "distractorAnalysis": [
       "Está incorreta: O assento não altera a massa do doente; a massa é uma propriedade do corpo.",
       "Está incorreta: A força de apoio é vertical, e não horizontal.",
@@ -930,7 +930,7 @@ const TOPIC_1_QUESTIONS = [
       "A força exercida é nula para ambos os veículos no instante da colisão."
     ],
     "correctIndex": 1,
-    "explanation": "Pela 3ª Lei de Newton, a intensidade da força mútua na colisão é exatamente a mesma em ambos os corpos. O automóvel sofre maior dano e aceleração apenas porque tem muito menor massa (a = F/m).",
+    "explanation": "Pela 3.ª Lei de Newton, a intensidade da força mútua na colisão é exatamente a mesma em ambos os corpos. O automóvel sofre maior dano e aceleração apenas porque tem muito menor massa (a = F/m).",
     "distractorAnalysis": [
       "Está incorreta: A massa afeta as acelerações, e não a intensidade da força de interação.",
       "Está incorreta: O automóvel sofre maior aceleração, mas as forças têm a mesma intensidade.",
@@ -1006,7 +1006,7 @@ const TOPIC_1_QUESTIONS = [
       "É variável e depende do valor da velocidade em cada instante."
     ],
     "correctIndex": 1,
-    "explanation": "Como a aceleração é nula (a = 0), pela 2ª Lei de Newton (Fr = m · a) a força resultante é obrigatoriamente nula: Fr = 0 N.",
+    "explanation": "Como a aceleração é nula (a = 0), pela 2.ª Lei de Newton (Fr = m · a) a força resultante é obrigatoriamente nula: Fr = 0 N.",
     "distractorAnalysis": [
       "Está incorreta: Uma força resultante positiva e superior ao peso provocaria aceleração, contrariando o MRU.",
       "Está incorreta: A força não se multiplica pela velocidade; em MRU a força resultante é nula.",
@@ -1057,13 +1057,13 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Para que um corpo continue em Movimento Retilíneo e Uniforme no vácuo sem atrito, é necessário continuar a empurrá-lo com uma força resultante?",
     "options": [
-      "Não, pois pela 1ª Lei de Newton o corpo mantém a sua velocidade constante por inércia.",
+      "Não, pois pela 1.ª Lei de Newton o corpo mantém a sua velocidade constante por inércia.",
       "Sim, é preciso aplicar uma força crescente para manter a velocidade do corpo a aumentar.",
       "Sim, porque o movimento consome gradualmente a massa do objeto em deslocamento.",
       "Caso a temperatura ambiente do corredor seja inferior a zero graus Celsius."
     ],
     "correctIndex": 0,
-    "explanation": "Pela 1ª Lei de Newton (Lei da Inércia), um corpo em movimento sem forças resultantes contrárias continua em movimento indefinidamente sem necessidade de qualquer força contínua.",
+    "explanation": "Pela 1.ª Lei de Newton (Lei da Inércia), um corpo em movimento sem forças resultantes contrárias continua em movimento indefinidamente sem necessidade de qualquer força contínua.",
     "distractorAnalysis": [
       "Está incorreta: Manter a velocidade não exige força crescente; aumentar a força aceleraria o corpo.",
       "Está incorreta: O movimento não consome a massa do corpo; a massa é constante.",
@@ -1116,7 +1116,7 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "0 N, pois o carrinho se move sem auxílio no corredor.",
       "36 N, para que a velocidade aumente de forma contínua.",
-      "9 N, pois a inércia do carrinho reduz à metade a força necessária.",
+      "9 N, pois a inércia do carrinho reduz para metade a força necessária.",
       "18 N, no sentido do movimento, para que a força resultante seja nula (Fr = 0 N)."
     ],
     "correctIndex": 3,
@@ -1158,7 +1158,7 @@ const TOPIC_1_QUESTIONS = [
       "Muitas forças distintas, sem uma categorização científica comum."
     ],
     "correctIndex": 1,
-    "explanation": "Introduz-se as 'Forças fundamentais da natureza', apresentando exatamente 4 forças fundamentais: Gravidade, Eletromagnética, Nuclear Forte e Nuclear Fraca.",
+    "explanation": "Introduzem-se as 'Forças fundamentais da natureza', apresentando exatamente 4 forças fundamentais: Gravidade, Eletromagnética, Nuclear Forte e Nuclear Fraca.",
     "distractorAnalysis": [
       "Está incorreta: Peso e atrito são forças derivadas das fundamentais, e não fundamentais.",
       "Está incorreta: As unidades de base do SI não correspondem a forças fundamentais.",
@@ -1171,7 +1171,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Como se define a Força Gravítica (ou Gravidade) na física e na biomecânica?",
     "options": [
-      "Atração e repulsão mútuas entre pólos de ímanes permanentes.",
+      "Atração e repulsão mútuas entre polos de ímanes permanentes.",
       "Força microscópica que divide os protões em quarks no núcleo.",
       "Atração mútua entre corpos com massa, que se manifesta no peso (P = m · g).",
       "Resistência ao deslizamento de superfícies ásperas, que depende da rugosidade."
@@ -1386,7 +1386,7 @@ const TOPIC_1_QUESTIONS = [
       "Porque a força normal é uma grandeza imaginária, sem unidade de medida."
     ],
     "correctIndex": 1,
-    "explanation": "Na 3ª Lei de Newton, a ação e a reação atuam obrigatoriamente em corpos diferentes. Como N e P atuam ambos sobre o mesmo corpo (o doente), eles equilibram-se mutuamente, mas não formam um par ação-reação.",
+    "explanation": "Na 3.ª Lei de Newton, a ação e a reação atuam obrigatoriamente em corpos diferentes. Como N e P atuam ambos sobre o mesmo corpo (o doente), eles equilibram-se mutuamente, mas não formam um par ação-reação.",
     "distractorAnalysis": [
       "Está incorreta: Num corpo em repouso sobre superfície horizontal, N = P; não é o dobro do peso.",
       "Está incorreta: A força normal existe mesmo em repouso, como se vê no utente deitado.",
@@ -1445,7 +1445,7 @@ const TOPIC_1_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Num leito horizontal em equilíbrio estático, a força normal equilibra exatamente o peso do corpo: N = P = m · g = 70 kg × 9,8 m/s² = 686 N.",
     "distractorAnalysis": [
-      "Está incorreta: 70 é a massa em quilogramas (kg), que tem de ser multiplicada por g (9,8) para obter a força em Newtons.",
+      "Está incorreta: 70 é a massa em quilogramas (kg), que tem de ser multiplicada por g (9,8) para obter a força em newtons.",
       "Está incorreta: 7,14 resultaria de dividir 70 por 9,8, o que está matematicamente errado.",
       "Está incorreta: A força normal não é nula, caso contrário o doente cairia em queda livre através do colchão."
     ],
@@ -1500,7 +1500,7 @@ const TOPIC_1_QUESTIONS = [
       "Newton-metro (N·m), unidade de momento de força do Sistema Internacional."
     ],
     "correctIndex": 0,
-    "explanation": "A Força Normal é uma força, pelo que a sua unidade no Sistema Internacional é o Newton (N).",
+    "explanation": "A Força Normal é uma força, pelo que a sua unidade no Sistema Internacional é o newton (N).",
     "distractorAnalysis": [
       "Está incorreta: O pascal é unidade de pressão, força por área, e não de força.",
       "Está incorreta: O quilograma é unidade de massa, e não de força.",
@@ -1519,13 +1519,13 @@ const TOPIC_1_QUESTIONS = [
       "No pavimento da enfermaria, por baixo da cama, dirigida para cima."
     ],
     "correctIndex": 0,
-    "explanation": "Se o corpo A é o doente e o corpo B é o colchão: o colchão exerce a força normal N no doente (para cima); a reação correspondente da 3ª Lei é exercida pelo doente sobre o colchão (para baixo com igual intensidade).",
+    "explanation": "Se o corpo A é o doente e o corpo B é o colchão: o colchão exerce a força normal N no doente (para cima); a reação correspondente da 3.ª Lei é exercida pelo doente sobre o colchão (para baixo com igual intensidade).",
     "distractorAnalysis": [
       "Está incorreta: A reação de uma força atua sobre o outro corpo, e não sobre o mesmo corpo onde a força atua.",
       "Está incorreta: A força de reação não se localiza no centro de massa; está na superfície de contacto.",
       "Está incorreta: O pavimento não interage com a força normal do colchão sobre o doente."
     ],
-    "nursingApplication": "Consolida a aplicação rigorosa da 3ª Lei de Newton e a identificação correta dos pares de forças em contacto."
+    "nursingApplication": "Consolida a aplicação rigorosa da 3.ª Lei de Newton e a identificação correta dos pares de forças em contacto."
   },
   {
     "id": 1081,
@@ -1690,10 +1690,10 @@ const TOPIC_1_QUESTIONS = [
       "Joule por segundo (J/s)."
     ],
     "correctIndex": 1,
-    "explanation": "Como qualquer outra força física (peso, normal, tensão muscular), a força de atrito quantifica-se em Newtons (N) no Sistema Internacional.",
+    "explanation": "Como qualquer outra força física (peso, normal, tensão muscular), a força de atrito quantifica-se em newtons (N) no Sistema Internacional.",
     "distractorAnalysis": [
       "Está incorreta: kg/m² é unidade de densidade superficial, não de força.",
-      "Está incorreta: Pascal (Pa) é unidade de pressão.",
+      "Está incorreta: pascal (Pa) é unidade de pressão.",
       "Está incorreta: Joule por segundo (J/s) corresponde a Watt (W), unidade de potência."
     ],
     "nursingApplication": "Garante coerência dimensional ao calcular o somatório de forças que atuam num corpo."
@@ -1724,15 +1724,15 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Tipo: Escalar; Unidade: kg; Definição: Quantidade de matéria; Exemplo: Massa corporal.",
       "Tipo: Escalar; Unidade: Pa; Definição: Força por área; Exemplo: Pressão capilar.",
-      "Tipo: Vetorial; Unidade: N/m²; Definição: Atração entre pólos magnéticos; Exemplo: Peso na balança.",
-      "Tipo: Vetorial; Unidade SI: Newton (N); Definição: Produz aceleração ou deformação; Exemplo: Força muscular do quadríceps."
+      "Tipo: Vetorial; Unidade: N/m²; Definição: Atração entre polos magnéticos; Exemplo: Peso na balança.",
+      "Tipo: Vetorial; Unidade SI: newton (N); Definição: Produz aceleração ou deformação; Exemplo: Força muscular do quadríceps."
     ],
     "correctIndex": 3,
-    "explanation": "Especifica-se: Grandeza: Força (F) | Tipo: Vetorial | Unidade SI: Newton (N) | Definição: Produz aceleração ou deformação | Exemplo: Força muscular do quadríceps.",
+    "explanation": "Especifica-se: Grandeza: Força (F) | Tipo: Vetorial | Unidade SI: newton (N) | Definição: Produz aceleração ou deformação | Exemplo: Força muscular do quadríceps.",
     "distractorAnalysis": [
       "Está incorreta: A força é vetorial e mede-se em newtons, e não em quilogramas.",
       "Está incorreta: O pascal é unidade de pressão (força por área), e não de força.",
-      "Está incorreta: N/m² é unidade de pressão, e a atração entre pólos não define a força em geral."
+      "Está incorreta: N/m² é unidade de pressão, e a atração entre polos não define a força em geral."
     ],
     "nursingApplication": "Permite relacionar o conceito físico de força com a contração do quadríceps na marcha e extensão do joelho."
   },
@@ -1741,13 +1741,13 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Na tabela de resumo dos conceitos lecionados, como está caracterizada a grandeza 'Massa (m)'?",
     "options": [
-      "Tipo: Escalar; Unidade SI: Quilograma (kg); Definição: Medida da quantidade de matéria; Exemplo: Massa corporal do doente.",
-      "Tipo: Vetorial; Unidade SI: Newton (N); Definição: Atração gravítica; Exemplo: Força muscular.",
-      "Tipo: Escalar; Unidade SI: Pascal (Pa); Definição: Deformação do sacro; Exemplo: Lesão de pressão.",
-      "Tipo: Vetorial; Unidade SI: Quilograma (kg); Definição: Produz aceleração centrípeta; Exemplo: Andarilho."
+      "Tipo: Escalar; Unidade SI: quilograma (kg); Definição: Medida da quantidade de matéria; Exemplo: Massa corporal do doente.",
+      "Tipo: Vetorial; Unidade SI: newton (N); Definição: Atração gravítica; Exemplo: Força muscular.",
+      "Tipo: Escalar; Unidade SI: pascal (Pa); Definição: Deformação do sacro; Exemplo: Lesão de pressão.",
+      "Tipo: Vetorial; Unidade SI: quilograma (kg); Definição: Produz aceleração centrípeta; Exemplo: Andarilho."
     ],
     "correctIndex": 0,
-    "explanation": "Especifica-se: Grandeza: Massa (m) | Tipo: Escalar | Unidade SI: Quilograma (kg) | Definição: Medida da quantidade de matéria | Exemplo: Massa corporal do doente.",
+    "explanation": "Especifica-se: Grandeza: Massa (m) | Tipo: Escalar | Unidade SI: quilograma (kg) | Definição: Medida da quantidade de matéria | Exemplo: Massa corporal do doente.",
     "distractorAnalysis": [
       "Está incorreta: A massa é escalar e mede-se em quilogramas, e não em newtons.",
       "Está incorreta: O pascal é unidade de pressão, e a massa não é uma deformação.",
@@ -1760,16 +1760,16 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Na tabela de resumo dos conceitos lecionados, como está caracterizada a grandeza 'Peso (P)'?",
     "options": [
-      "Tipo: Escalar; Unidade SI: Quilograma (kg); Definição: Quantidade de água corporal; Exemplo: Hidratação.",
-      "Tipo: Vetorial; Unidade SI: Newton (N); Definição: Força de atração gravítica; Exemplo: Peso do doente.",
-      "Tipo: Vetorial; Unidade SI: Pascal (Pa); Definição: Tensão nos tendões; Exemplo: Marcha.",
-      "Tipo: Escalar; Unidade SI: Newton (N); Definição: Aceleração da maca; Exemplo: Ambulância."
+      "Tipo: Escalar; Unidade SI: quilograma (kg); Definição: Quantidade de água corporal; Exemplo: Hidratação.",
+      "Tipo: Vetorial; Unidade SI: newton (N); Definição: Força de atração gravítica; Exemplo: Peso do doente.",
+      "Tipo: Vetorial; Unidade SI: pascal (Pa); Definição: Tensão nos tendões; Exemplo: Marcha.",
+      "Tipo: Escalar; Unidade SI: newton (N); Definição: Aceleração da maca; Exemplo: Ambulância."
     ],
     "correctIndex": 1,
-    "explanation": "Especifica-se: Grandeza: Peso (P) | Tipo: Vetorial | Unidade SI: Newton (N) | Definição: Força de atração gravítica | Exemplo: Peso do doente.",
+    "explanation": "Especifica-se: Grandeza: Peso (P) | Tipo: Vetorial | Unidade SI: newton (N) | Definição: Força de atração gravítica | Exemplo: Peso do doente.",
     "distractorAnalysis": [
-      "Está incorreta: O peso é uma força vetorial medida em Newtons, não uma grandeza escalar em kg.",
-      "Está incorreta: Pascal é unidade de pressão (N/m²), enquanto o peso é uma força expressa em Newtons.",
+      "Está incorreta: O peso é uma força vetorial medida em newtons, não uma grandeza escalar em kg.",
+      "Está incorreta: Pascal é unidade de pressão (N/m²), enquanto o peso é uma força expressa em newtons.",
       "Está incorreta: O peso tem direção vertical e sentido descendente para o centro da Terra, sendo estritamente vetorial."
     ],
     "nursingApplication": "Essencial para distinguir rigorosamente peso (força em N) de massa (matéria em kg) em relatórios de biofísica."
@@ -1779,10 +1779,10 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Na tabela de resumo dos conceitos lecionados, como está caracterizada a grandeza 'Pressão (p)'?",
     "options": [
-      "Tipo: Vetorial; Unidade SI: Newton (N); Definição: Interação entre corpos; Exemplo: Tendão do bíceps.",
-      "Tipo: Escalar; Unidade SI: Quilograma (kg); Definição: Medida de inércia; Exemplo: Doente bariátrico.",
+      "Tipo: Vetorial; Unidade SI: newton (N); Definição: Interação entre corpos; Exemplo: Tendão do bíceps.",
+      "Tipo: Escalar; Unidade SI: quilograma (kg); Definição: Medida de inércia; Exemplo: Doente bariátrico.",
       "Tipo: Escalar; Unidade SI: Pascal (N/m²); Definição: Força por unidade de área; Exemplo: Pressão sobre o sacro.",
-      "Tipo: Vetorial; Unidade SI: Joule (J); Definição: Trabalho muscular; Exemplo: Elevação de carga."
+      "Tipo: Vetorial; Unidade SI: joule (J); Definição: Trabalho muscular; Exemplo: Elevação de carga."
     ],
     "correctIndex": 2,
     "explanation": "Especifica-se: Grandeza: Pressão (p) | Tipo: Escalar | Unidade SI: Pascal (N/m²) | Definição: Força por unidade de área | Exemplo: Pressão sobre o sacro.",
@@ -1815,7 +1815,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1096,
     "topicId": 1,
-    "question": "De acordo com a tabela de valores de referência, qual é a equivalência dimensional direta de 1 Pascal (Pa) em unidades do SI?",
+    "question": "De acordo com a tabela de valores de referência, qual é a equivalência dimensional direta de 1 pascal (Pa) em unidades do SI?",
     "options": [
       "1 Pa = 1 N/m², um newton por cada metro quadrado de área.",
       "1 Pa = 1 kg · m / s, equivalente a uma unidade de momento linear.",
@@ -1829,7 +1829,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: N · m é a unidade de momento de força ou de energia, e não de pressão.",
       "Está incorreta: kg / s² é unidade de tensão superficial, dimensionalmente distinta do pascal."
     ],
-    "nursingApplication": "Permite aos alunos realizar conversões de unidades entre Newtons de carga e área cutânea de apoio."
+    "nursingApplication": "Permite aos alunos realizar conversões de unidades entre newtons de carga e área cutânea de apoio."
   },
   {
     "id": 1097,
@@ -1891,7 +1891,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1100,
     "topicId": 1,
-    "question": "Qual das seguintes quatro grandezas analisadas no resumo é a ÚNICA cuja unidade SI é o Quilograma (kg)?",
+    "question": "Qual das seguintes quatro grandezas analisadas no resumo é a ÚNICA cuja unidade SI é o quilograma (kg)?",
     "options": [
       "Massa (m), medida em quilogramas no Sistema Internacional.",
       "Força (F), medida em newtons no Sistema Internacional.",
@@ -1899,7 +1899,7 @@ const TOPIC_1_QUESTIONS = [
       "Pressão (p), medida em pascal no Sistema Internacional."
     ],
     "correctIndex": 0,
-    "explanation": "Na tabela de grandezas de biofísica, a única grandeza expressa em Quilogramas (kg) é a Massa (m). Força e Peso medem-se em Newtons (N), e Pressão mede-se em Pascal (N/m²).",
+    "explanation": "Na tabela de grandezas de biofísica, a única grandeza expressa em quilogramas (kg) é a Massa (m). Força e Peso medem-se em newtons (N), e Pressão mede-se em Pascal (N/m²).",
     "distractorAnalysis": [
       "Está incorreta: A força mede-se em newtons, e não em quilogramas.",
       "Está incorreta: O peso é uma força e mede-se em newtons.",
@@ -1913,12 +1913,12 @@ const TOPIC_1_QUESTIONS = [
     "question": "Durante a marcha de uma ambulância em socorro a 80 km/h, por que razão um enfermeiro que viaja de pé é projetado para a frente quando a viatura trava bruscamente?",
     "options": [
       "Porque o tablier atrai o corpo do enfermeiro, como um íman, por ação da gravidade.",
-      "Pela 1ª Lei de Newton, o corpo mantém a velocidade de 80 km/h até uma força atuar sobre ele.",
+      "Pela 1.ª Lei de Newton, o corpo mantém a velocidade de 80 km/h até uma força atuar sobre ele.",
       "Porque o peso do enfermeiro aumenta durante a travagem, por efeito da inércia.",
       "Porque a pressão do ar diminui na cabina, criando um vácuo à frente do enfermeiro."
     ],
     "correctIndex": 1,
-    "explanation": "Explica-se que, pela 1ª Lei de Newton (Lei da Inércia), o corpo do enfermeiro mantém a velocidade de 80 km/h até que uma força atue sobre ele.",
+    "explanation": "Explica-se que, pela 1.ª Lei de Newton (Lei da Inércia), o corpo do enfermeiro mantém a velocidade de 80 km/h até que uma força atue sobre ele.",
     "distractorAnalysis": [
       "Está incorreta: O tablier não atrai o corpo; a projeção resulta da inércia do enfermeiro.",
       "Está incorreta: O peso do enfermeiro não aumenta na travagem; mantém-se o mesmo.",
@@ -1956,7 +1956,7 @@ const TOPIC_1_QUESTIONS = [
       "Pela 3.ª Lei de Newton (par ação-reação), as duas forças têm a mesma intensidade."
     ],
     "correctIndex": 3,
-    "explanation": "Justifica-se: 'Pela 3ª Lei de Newton (par ação-reação), a intensidade da força que a divisória exerce sobre o enfermeiro é a mesma que o enfermeiro exerce sobre a divisória'. Ambas as estruturas sofrem a mesma força massiva mútua.",
+    "explanation": "Justifica-se: 'Pela 3.ª Lei de Newton (par ação-reação), a intensidade da força que a divisória exerce sobre o enfermeiro é a mesma que o enfermeiro exerce sobre a divisória'. Ambas as estruturas sofrem a mesma força mútua.",
     "distractorAnalysis": [
       "Está incorreta: As divisórias são estruturas rígidas e não de plasticina.",
       "Está incorreta: A deformação resulta do impacto mecânico, e não de eletricidade estática.",
@@ -1986,7 +1986,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1105,
     "topicId": 1,
-    "question": "Durante a colisão contra a divisória da ambulância, qual das seguintes afirmações sobre a intensidade das forças é verdadeira segundo a 3ª Lei de Newton?",
+    "question": "Durante a colisão contra a divisória da ambulância, qual das seguintes afirmações sobre a intensidade das forças é verdadeira segundo a 3.ª Lei de Newton?",
     "options": [
       "A divisória aplica mais força sobre o enfermeiro do que o enfermeiro sobre a divisória.",
       "As forças de ação e reação entre o enfermeiro e a divisória têm a mesma intensidade.",
@@ -1994,7 +1994,7 @@ const TOPIC_1_QUESTIONS = [
       "A intensidade de ambas as forças é nula, porque a colisão é instantânea."
     ],
     "correctIndex": 1,
-    "explanation": "A 3ª Lei de Newton impõe igualdade estrita de intensidade para qualquer par de forças interativas: F_enfermeiro->divisória = F_divisória->enfermeiro.",
+    "explanation": "A 3.ª Lei de Newton impõe igualdade estrita de intensidade para qualquer par de forças interativas: F_enfermeiro->divisória = F_divisória->enfermeiro.",
     "distractorAnalysis": [
       "Está incorreta: A 3.ª Lei impõe igualdade de intensidade entre as forças de ação e de reação.",
       "Está incorreta: A massa do enfermeiro não altera a intensidade da força de interação.",
@@ -2013,7 +2013,7 @@ const TOPIC_1_QUESTIONS = [
       "A força anula-se devido à paragem quase instantânea, que dissipa todo o movimento."
     ],
     "correctIndex": 2,
-    "explanation": "Desacelerar no dobro da rapidez significa que a taxa de variação de velocidade (desaceleração a) duplica. Pela 2ª Lei (F = m · a), com a massa m constante, a força de impacto duplica.",
+    "explanation": "Desacelerar no dobro da rapidez significa que a taxa de variação de velocidade (desaceleração a) duplica. Pela 2.ª Lei (F = m · a), com a massa m constante, a força de impacto duplica.",
     "distractorAnalysis": [
       "Está incorreta: Com um tempo menor a desaceleração aumenta; a força não diminui para metade.",
       "Está incorreta: Se a desaceleração duplica, a força também duplica, pela 2.ª Lei.",
@@ -2046,12 +2046,12 @@ const TOPIC_1_QUESTIONS = [
     "question": "Que princípio fundamental de física e segurança resulta da análise biomecânica do impacto durante uma travagem de emergência?",
     "options": [
       "Que as três Leis de Newton atuam em conjunto e explicam os aspetos essenciais de uma colisão.",
-      "Que a 1ª Lei se aplica sobretudo aos veículos, e a 2ª sobretudo aos seres vivos.",
+      "Que a 1.ª Lei se aplica sobretudo aos veículos, e a 2.ª sobretudo aos seres vivos.",
       "Que a Biofísica se desliga da prática clínica e serve para cálculos teóricos.",
       "Que a gravidade terrestre é anulada durante movimentos de travagem de emergência."
     ],
     "correctIndex": 0,
-    "explanation": "O desafio demonstra a união das 3 leis: a 1ª Lei explica por que o corpo é projetado (inércia), a 2ª Lei quantifica a magnitude da força de travagem (F = m · a) e a 3ª Lei explica a deformação da divisória (ação-reação).",
+    "explanation": "O desafio demonstra a união das 3 leis: a 1.ª Lei explica por que o corpo é projetado (inércia), a 2.ª Lei quantifica a magnitude da força de travagem (F = m · a) e a 3.ª Lei explica a deformação da divisória (ação-reação).",
     "distractorAnalysis": [
       "Está incorreta: As leis de Newton aplicam-se a veículos e a seres vivos da mesma forma.",
       "Está incorreta: A Biofísica está ligada à prática clínica, e não é apenas teórica.",
@@ -2062,7 +2062,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1109,
     "topicId": 1,
-    "question": "No momento em que o enfermeiro colide contra a divisória, que papel desempenha a divisória em termos da 1ª Lei de Newton?",
+    "question": "No momento em que o enfermeiro colide contra a divisória, que papel desempenha a divisória em termos da 1.ª Lei de Newton?",
     "options": [
       "Atua como um condutor de calor que evapora a água corporal, ao absorver o impacto.",
       "Atua como a força externa que altera o movimento e para o corpo do profissional.",
@@ -2070,7 +2070,7 @@ const TOPIC_1_QUESTIONS = [
       "Acelera o enfermeiro, para que ele atravesse o habitáculo da ambulância até ao fim."
     ],
     "correctIndex": 1,
-    "explanation": "Pela 1ª Lei, o enfermeiro continuaria a mover-se a 80 km/h até que uma força externa atuasse sobre ele. A divisória é a estrutura rígida que aplica essa força externa de paragem (infelizmente de forma brusca e traumática).",
+    "explanation": "Pela 1.ª Lei, o enfermeiro continuaria a mover-se a 80 km/h até que uma força externa atuasse sobre ele. A divisória é a estrutura rígida que aplica essa força externa de paragem (infelizmente de forma brusca e traumática).",
     "distractorAnalysis": [
       "Está incorreta: A divisória não transmite calor que evapore a água corporal numa colisão.",
       "Está incorreta: A inércia não se transforma em energia térmica; a divisória exerce uma força de paragem.",
@@ -2219,7 +2219,7 @@ const TOPIC_1_QUESTIONS = [
       "Equilíbrio instável, em que a bola se afasta da posição inicial.",
       "Equilíbrio indiferente, em que a bola fica parada na nova posição.",
       "Equilíbrio estável, em que a bola regressa ao ponto de partida.",
-      "Violação da 1ª Lei de Newton, por a bola parar sem força aplicada."
+      "Violação da 1.ª Lei de Newton, por a bola parar sem força aplicada."
     ],
     "correctIndex": 1,
     "explanation": "Na superfície horizontal, a altura do centro de gravidade da esfera permanece rigorosamente constante ao rolar. Deslocada da posição original, ela permanece em equilíbrio na nova posição (Equilíbrio Indiferente).",
@@ -2241,7 +2241,7 @@ const TOPIC_1_QUESTIONS = [
       "Mantém a sua velocidade, mas a sua massa aumenta por efeito da força."
     ],
     "correctIndex": 2,
-    "explanation": "Por definição, estar em equilíbrio exige Fr = 0 N. Se a força resultante não for nula, o corpo é acelerado pela 2ª Lei de Newton (Fr = m · a), rompendo o equilíbrio.",
+    "explanation": "Por definição, estar em equilíbrio exige Fr = 0 N. Se a força resultante não for nula, o corpo é acelerado pela 2.ª Lei de Newton (Fr = m · a), rompendo o equilíbrio.",
     "distractorAnalysis": [
       "Está incorreta: Com Fr diferente de zero o corpo não está em equilíbrio, mesmo com velocidade igual.",
       "Está incorreta: Com Fr diferente de zero, não há compensação; o equilíbrio não se estabelece.",
@@ -2371,7 +2371,7 @@ const TOPIC_1_QUESTIONS = [
       "Diminui para metade, o que facilita a retenção da maca no plano.",
       "Aumenta, exigindo maior atrito (F_a) para evitar que o corpo deslize.",
       "Permanece inalterada, porque a massa do doente não muda.",
-      "Anula-se, transformando-se em força normal N, sem alterar o deslize."
+      "Anula-se, transformando-se em força normal N, sem alterar o deslizamento."
     ],
     "correctIndex": 1,
     "explanation": "À medida que o ângulo de inclinação sobe, a componente tangencial ao longo do plano P_t aumenta substancialmente. Para manter o equilíbrio (P_t = F_a), a força de atrito ou a força exercida pelo profissional tem de ser muito maior.",
@@ -2393,7 +2393,7 @@ const TOPIC_1_QUESTIONS = [
       "A maca mantém o peso, mas passa a ter força normal nula na rampa."
     ],
     "correctIndex": 2,
-    "explanation": "Sem atrito (F_a = 0), a componente P_t ao longo da rampa não tem oposição. Pela 2ª Lei de Newton (Fr = m · a), a força resultante Fr = P_t acelera a maca rampa abaixo.",
+    "explanation": "Sem atrito (F_a = 0), a componente P_t ao longo da rampa não tem oposição. Pela 2.ª Lei de Newton (Fr = m · a), a força resultante Fr = P_t acelera a maca rampa abaixo.",
     "distractorAnalysis": [
       "Está incorreta: Sem atrito, a componente P_t não é equilibrada, e a maca não fica parada.",
       "Está incorreta: A componente normal P_n é perpendicular à rampa e não a faz subir.",
@@ -2461,7 +2461,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1130,
     "topicId": 1,
-    "question": "Num doente com risco de escorregar para os pés da cama ao elevar a cabeceira a 45º (plano inclinado), o deslizamento tecidual é provocado por qual componente de força?",
+    "question": "Num doente com risco de escorregar para os pés da cama ao elevar a cabeceira a 45° (plano inclinado), o deslizamento tecidual é provocado por qual componente de força?",
     "options": [
       "Pela pressão capilar exercida pelo sangue nas artérias ilíacas.",
       "Pela força eletromagnética gerada pelo motor elétrico do leito.",
@@ -2491,7 +2491,7 @@ const TOPIC_1_QUESTIONS = [
     "explanation": "Define-se formalmente: 'Momento da força (Torque): Mede o efeito rotativo de uma força em torno de um ponto'.",
     "distractorAnalysis": [
       "Está incorreta: Calor transferido por radiação pertence à termodinâmica e biofotónica, não à mecânica rotacional.",
-      "Está incorreta: Aceleração linear decorre da força resultante translativa (2ª Lei de Newton), não do momento rotativo.",
+      "Está incorreta: Aceleração linear decorre da força resultante translativa (2.ª Lei de Newton), não do momento rotativo.",
       "Está incorreta: Massa atómica é uma constante química e nuclear da matéria."
     ],
     "nursingApplication": "Conceito fulcral para compreender como os músculos produzem movimentos de rotação nas articulações esqueléticas."
@@ -2564,7 +2564,7 @@ const TOPIC_1_QUESTIONS = [
       "Newton-metro (N·m)."
     ],
     "correctIndex": 3,
-    "explanation": "Como o momento resulta da multiplicação de uma Força em Newtons (N) por uma distância de braço em metros (m), a sua unidade SI é o Newton-metro (N·m).",
+    "explanation": "Como o momento resulta da multiplicação de uma Força em newtons (N) por uma distância de braço em metros (m), a sua unidade SI é o newton-metro (N·m).",
     "distractorAnalysis": [
       "Está incorreta: Pascal é unidade de pressão (N/m²), não de momento rotativo.",
       "Está incorreta: kg/m é densidade linear de massa, não torque.",
@@ -2632,7 +2632,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1139,
     "topicId": 1,
-    "question": "Ao levantar uma carga de 15 kg com os braços esticados para a frente longe do tronco, por que razão as vértebras lombares sofrem uma sobrecarga massiva?",
+    "question": "Ao levantar uma carga de 15 kg com os braços esticados para a frente longe do tronco, por que razão as vértebras lombares sofrem uma sobrecarga muito elevada?",
     "options": [
       "Porque a massa do objeto aumenta quando é afastada do peito.",
       "Porque o atrito do pavimento desaparece, desestabilizando o esqueleto.",
@@ -2731,7 +2731,7 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Força contrária que dificulta o movimento da carga.",
       "Força motora aplicada pelo músculo para acelerar o membro.",
-      "Constante elástica da mola expressa em Newtons por metro.",
+      "Constante elástica da mola expressa em newtons por metro.",
       "Comprimento total da barra medido a partir da extremidade potente."
     ],
     "correctIndex": 0,
@@ -2950,7 +2950,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: Estes são ossos do membro inferior (articulação do joelho).",
       "Está incorreta: Estes são ossos constituintes do pé humano."
     ],
-    "nursingApplication": "Integração anatómica direta com os conteúdos lecionados na aula de Biofísica de 1º ano."
+    "nursingApplication": "Integração anatómica direta com os conteúdos lecionados na aula de Biofísica de 1.º ano."
   },
   {
     "id": 1156,
@@ -3077,7 +3077,7 @@ const TOPIC_1_QUESTIONS = [
       "M_R = 240 N·m"
     ],
     "correctIndex": 2,
-    "explanation": "O cálculo determina textualmente: 'Momento da força resistente: M_R = F_R · b_R (=) M_R = 20 × 1,2 (=) M_R = 24 N.m'.",
+    "explanation": "O cálculo determina textualmente: 'Momento da força resistente: M_R = F_R · b_R (=) M_R = 20 × 1,2 (=) M_R = 24 N·m'.",
     "distractorAnalysis": [
       "Está incorreta: 16,6 resultaria de dividir 20 por 1,2, o que é um erro de cálculo.",
       "Está incorreta: 21,2 resultaria de somar 20 com 1,2 em vez de multiplicar.",
@@ -3100,7 +3100,7 @@ const TOPIC_1_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: 24 N seria a força potente se o braço potente fosse de apenas 1 metro.",
       "Está incorreta: 57,6 N resultaria de multiplicar 24 por 2,4 em vez de dividir.",
-      "Está incorreta: 2,4 é a medida do braço em metros, não o valor da força em Newtons."
+      "Está incorreta: 2,4 é a medida do braço em metros, não o valor da força em newtons."
     ],
     "nursingApplication": "Demonstra que uma força de apenas 10 N consegue equilibrar uma força resistente de 20 N devido à duplicação do braço."
   },
@@ -3117,7 +3117,7 @@ const TOPIC_1_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "O cálculo determina: P = F_R = m · g = 500 kg × 9,8 m/s² = 4900 N.",
     "distractorAnalysis": [
-      "Está incorreta: 500 é a massa em quilogramas (kg), que tem de ser multiplicada por g para obter o peso em Newtons.",
+      "Está incorreta: 500 é a massa em quilogramas (kg), que tem de ser multiplicada por g para obter o peso em newtons.",
       "Está incorreta: 51,02 resultaria de dividir a massa pela gravidade, o que viola P = m · g.",
       "Está incorreta: 49 000 N corresponderia a uma gravidade de 98 m/s², dez vezes superior à da Terra."
     ],
@@ -3134,7 +3134,7 @@ const TOPIC_1_QUESTIONS = [
       "M_R = 16 333 N·m"
     ],
     "correctIndex": 1,
-    "explanation": "Apresenta-se formalmente: 'M_R = F_R · b_R (=) M_R = (500 × 9,8) × 0,3 (=) M_R = 1470 N.m'.",
+    "explanation": "Apresenta-se formalmente: 'M_R = F_R · b_R (=) M_R = (500 × 9,8) × 0,3 (=) M_R = 1470 N·m'.",
     "distractorAnalysis": [
       "Está incorreta: 147 N·m resultaria de usar braço de 0,03 m em vez de 0,3 m.",
       "Está incorreta: 4900 N·m seria o momento se o braço fosse de 1 metro.",
@@ -3159,7 +3159,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: 30 m é o valor da massa em quilogramas, não a distância em metros.",
       "Está incorreta: 0,2 m é mais curto que o próprio braço resistente de 0,3 m, tornando a tarefa impossível."
     ],
-    "nursingApplication": "Demonstração prática de como alavancas longas permitem a uma pessoa mover cargas massivas (500 kg)."
+    "nursingApplication": "Demonstração prática de como alavancas longas permitem a uma pessoa mover cargas de grande massa (500 kg)."
   },
   {
     "id": 1167,
@@ -3169,7 +3169,7 @@ const TOPIC_1_QUESTIONS = [
       "Que a gravidade terrestre deixa de atuar quando as barras têm mais de 3 metros.",
       "Que é impossível erguer cargas superiores à massa corporal de um indivíduo.",
       "Que os dinamómetros medem forças até cerca de 30 newtons.",
-      "Que, aumentando o braço potente, se vencem resistências massivas com forças modestas."
+      "Que, aumentando o braço potente, se vencem resistências muito elevadas com forças modestas."
     ],
     "correctIndex": 3,
     "explanation": "A essência das máquinas simples de Arquimedes ('Deem-me uma alavanca e um ponto de apoio e moverei o mundo'): aumentando o braço potente, multiplicamos o efeito de rotação e reduzimos a força necessária.",
@@ -3286,7 +3286,7 @@ const TOPIC_1_QUESTIONS = [
       "M_R = 9,8 N·m"
     ],
     "correctIndex": 1,
-    "explanation": "O cálculo determina textualmente: 'M_R = F_R · b_R (=) M_R = (1 × 9,8) × 0,3 (=) M_R = 2,94 N.m'.",
+    "explanation": "O cálculo determina textualmente: 'M_R = F_R · b_R (=) M_R = (1 × 9,8) × 0,3 (=) M_R = 2,94 N·m'.",
     "distractorAnalysis": [
       "Está incorreta: 30 N·m resultaria de multiplicar 1 por 30 ignorando a gravidade e os centímetros.",
       "Está incorreta: 0,3 N·m resultaria de multiplicar apenas a massa pelo braço sem aplicar g = 9,8.",
@@ -3305,7 +3305,7 @@ const TOPIC_1_QUESTIONS = [
       "M_antebraço = 0,375 N·m"
     ],
     "correctIndex": 2,
-    "explanation": "Apresenta-se: 'M antebraço+mão = F · b (=) M = (2,5 × 9,8) × 0,15 (=) M = 3,68 N.m'.",
+    "explanation": "Apresenta-se: 'M antebraço+mão = F · b (=) M = (2,5 × 9,8) × 0,15 (=) M = 3,68 N·m'.",
     "distractorAnalysis": [
       "Está incorreta: 2,5 é apenas o valor da massa em kg, sem multiplicar por g nem pelo braço.",
       "Está incorreta: 36,8 N·m resultaria de um erro de vírgula decimal na conversão de unidades.",
@@ -3324,7 +3324,7 @@ const TOPIC_1_QUESTIONS = [
       "M_total = 6,62 N·m (2,94 + 3,68)"
     ],
     "correctIndex": 3,
-    "explanation": "Efetua-se a soma dos dois momentos de resistência no mesmo sentido horário: 'M antebraço+mão + M_R = 3,68 + 2,94 = 6,62 N.m'.",
+    "explanation": "Efetua-se a soma dos dois momentos de resistência no mesmo sentido horário: 'M antebraço+mão + M_R = 3,68 + 2,94 = 6,62 N·m'.",
     "distractorAnalysis": [
       "Está incorreta: 2,94 N·m considera apenas o objeto externo, esquecendo o peso do próprio membro.",
       "Está incorreta: 3,68 N·m considera apenas o antebraço, esquecendo o objeto transportado na mão.",
@@ -3385,7 +3385,7 @@ const TOPIC_1_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: Ignorar os braços de momento viola frontalmente a Lei das Alavancas de Arquimedes.",
       "Está incorreta: Os braços anatómicos associados a cada força estão incorretamente atribuídos nesta opção.",
-      "Está incorreta: Mistura a 2ª Lei de Newton com a fórmula do peso sem relação com o equilíbrio de momentos."
+      "Está incorreta: Mistura a 2.ª Lei de Newton com a fórmula do peso sem relação com o equilíbrio de momentos."
     ],
     "nursingApplication": "Modelo matemático canónico da biomecânica da flexão do cotovelo."
   },
@@ -3419,7 +3419,7 @@ const TOPIC_1_QUESTIONS = [
       "O antebraço é uma alavanca interfixa, em que o cotovelo se situa na ponta dos dedos."
     ],
     "correctIndex": 0,
-    "explanation": "A maioria das alavancas motoras do corpo humano são interpotentes (3ª classe): conferem enorme amplitude e rapidez de movimento distal, mas à custa de grandes tensões mecânicas geradas pelas fibras musculares e tendões.",
+    "explanation": "A maioria das alavancas motoras do corpo humano são interpotentes (3.ª classe): conferem enorme amplitude e rapidez de movimento distal, mas à custa de grandes tensões mecânicas geradas pelas fibras musculares e tendões.",
     "distractorAnalysis": [
       "Está incorreta: Os ossos não são alavancas ideais; a maior parte das alavancas motoras exige forças elevadas.",
       "Está incorreta: As leis da física clássica aplicam-se igualmente ao bíceps e aos ossos.",
@@ -3451,13 +3451,13 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Onde se localiza o Centro de Gravidade num corpo humano adulto em posição anatómica ortostática ereta?",
     "options": [
-      "Na 7ª vértebra cervical (C7) junto à base do pescoço.",
+      "Na 7.ª vértebra cervical (C7) junto à base do pescoço.",
       "No centro da cavidade craniana entre os hemisférios cerebrais.",
-      "Na linha média anterior à 2ª vértebra sagrada (S2).",
+      "Na linha média anterior à 2.ª vértebra sagrada (S2).",
       "Na articulação do joelho ao nível dos meniscos."
     ],
     "correctIndex": 2,
-    "explanation": "Estipula-se textualmente: 'Localização: Em posição anatómica ereta, situa-se na linha média anterior à 2ª vértebra sagrada (S2)'.",
+    "explanation": "Estipula-se textualmente: 'Localização: Em posição anatómica ereta, situa-se na linha média anterior à 2.ª vértebra sagrada (S2)'.",
     "distractorAnalysis": [
       "Está incorreta: C7 localiza-se na transição cérvico-dorsal, muito acima do CG corporal total.",
       "Está incorreta: No crânio situa-se apenas o CG da cabeça isolada, não do corpo humano completo.",
@@ -3490,7 +3490,7 @@ const TOPIC_1_QUESTIONS = [
     "question": "Qual é a definição exata de 'Base de sustentação' na estabilidade postural humana?",
     "options": [
       "Área delimitada pelos pontos de contacto do corpo com a superfície de apoio.",
-      "A altura em metros medida desde o chão até à 2ª vértebra sagrada.",
+      "A altura em metros medida desde o chão até à 2.ª vértebra sagrada.",
       "A velocidade terminal de queda de um corpo no vácuo, medida em metros por segundo.",
       "O momento de força exercido pelo bíceps sobre a tuberosidade do rádio."
     ],
@@ -3514,7 +3514,7 @@ const TOPIC_1_QUESTIONS = [
       "A criança pequena não possui centro de gravidade até aos 18 anos de idade."
     ],
     "correctIndex": 1,
-    "explanation": "Demonstra-se a transição: no adulto situa-se na 2ª vértebra sagrada; na criança e no bebé localiza-se no 'interior do abdómen' e no 'tórax', situando-se proporcionalmente mais elevado.",
+    "explanation": "Demonstra-se a transição: no adulto situa-se na 2.ª vértebra sagrada; na criança e no bebé localiza-se no 'interior do abdómen' e no 'tórax', situando-se proporcionalmente mais elevado.",
     "distractorAnalysis": [
       "Está incorreta: O centro de gravidade da criança é mais alto, e nunca nos calcanhares.",
       "Está incorreta: As proporções corporais variam muito com o crescimento; o centro de gravidade muda.",
