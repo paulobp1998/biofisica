@@ -2447,7 +2447,7 @@ const TOPIC_1_QUESTIONS = [
       "A componente normal do peso P_n, que é paralela à normal N.",
       "A força de atrito F_a (e a componente P_t), paralela à superfície.",
       "O peso total P, que mantém a mesma direção em todas as inclinações.",
-      "Nenhuma força é perpendicular, pois as forças são paralelas entre si."
+      "Não há força perpendicular, pois todas as forças são paralelas entre si."
     ],
     "correctIndex": 1,
     "explanation": "A Força Normal N é perpendicular à superfície de apoio; a força de atrito F_a e a componente P_t atuam paralelamente à superfície de apoio. Logo, a direção de N e a de F_a formam um ângulo de 90 graus (são perpendiculares).",
