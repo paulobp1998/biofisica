@@ -1487,7 +1487,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A força normal varia com o cosseno da inclinação, diminuindo com o aumento do ângulo.",
       "Está incorreta: A normal é uma força de contacto perpendicular à superfície; não atrai o doente para a parede."
     ],
-    "nursingApplication": "Alerta para o facto de que, no modelo simplificado, elevar a cabeceira aumenta a componente do peso paralela ao colchão, que favorece o deslizamento e o cisalhamento. Na prática, o peso concentra-se na região sagrada e isquiática, por isso recomenda-se limitar a elevação da cabeceira (cerca de 30°, salvo contraindicação)."
+    "nursingApplication": "Alerta para o facto de que, no modelo simplificado, elevar a cabeceira aumenta a componente do peso paralela ao colchão, que favorece o deslizamento e o cisalhamento. Na prática, o peso concentra-se na região sagrada e isquiática, por isso recomenda-se limitar a elevação da cabeceira ao mínimo clinicamente necessário, de acordo com a prescrição e as normas do serviço."
   },
   {
     "id": 1079,
@@ -2380,7 +2380,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: P_t depende da inclinação e varia com ela, mesmo com a massa constante.",
       "Está incorreta: P_t não se transforma em força normal; é a componente tangencial do peso."
     ],
-    "nursingApplication": "Justifica as normas de arquitetura hospitalar que limitam a inclinação máxima de rampas a valores reduzidos (ex.: 6-8%)."
+    "nursingApplication": "Explica porque as rampas de acesso devem ter a inclinação mais suave possível, para reduzir a força de atrito ou de travagem necessária para manter a cadeira ou a maca parada."
   },
   {
     "id": 1126,
@@ -3050,7 +3050,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1161,
     "topicId": 1,
-    "question": "Numa alavanca interfixa equilibrada (baloiço com comprimento de 3,6 m onde o braço potente é o dobro do resistente, 3x = 3,6 m), qual é o valor obtido para x (braço resistente)?",
+    "question": "Numa alavanca interfixa de 3,6 m de comprimento total, o braço potente é o dobro do braço resistente, medidos a partir do fulcro. Qual é o valor de x, em metros, sendo x o braço resistente?",
     "options": [
       "x = 3,6 m",
       "x = 1,2 m",
@@ -3058,13 +3058,13 @@ const TOPIC_1_QUESTIONS = [
       "x = 0,6 m"
     ],
     "correctIndex": 1,
-    "explanation": "Demonstra-se a resolução passo a passo: '3x = 3,6 (=) x = 1,2 m'. O braço resistente b_R é 1,2 m e o potente b_P é 2,4 m.",
+    "explanation": "Como b_P + b_R = 3,6 m e b_P = 2x, obtém-se 3x = 3,6 (=) x = 1,2 m. O braço resistente b_R é 1,2 m e o potente b_P é 2,4 m.",
     "distractorAnalysis": [
       "Está incorreta: 3,6 m é o comprimento total da barra da alavanca, não o valor de x.",
       "Está incorreta: 2,4 m é o valor do braço potente (2x = 2 × 1,2), não de x.",
       "Está incorreta: 0,6 m resultaria de dividir 3,6 por 6, o que não reflete a equação 3x = 3,6."
     ],
-    "nursingApplication": "Resolução rigorosa do exercício clássico apresentado pelo docente nas aulas teóricas."
+    "nursingApplication": "Aplicação da relação entre os braços de uma alavanca e o seu comprimento total, usando apenas os dados do enunciado."
   },
   {
     "id": 1162,
@@ -3202,21 +3202,21 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1169,
     "topicId": 1,
-    "question": "Nas conversões entre massa e peso nos cálculos de biofísica, qual é o valor adotado nesta unidade curricular para a aceleração da gravidade à superfície terrestre?",
+    "question": "Qual é, aproximadamente, o valor da aceleração da gravidade à superfície da Terra, com dois algarismos significativos?",
     "options": [
-      "g = 10 m/s²",
-      "g = 9,8 m/s²",
-      "g = 9,815 m/s²",
-      "g = 3,6 m/s²"
+      "3,6 m/s²",
+      "9,8 m/s²",
+      "98 m/s²",
+      "0,98 m/s²"
     ],
     "correctIndex": 1,
-    "explanation": "Apresenta-se no topo a premissa de cálculo: 'g = 9,8 m/s²'.",
+    "explanation": "À superfície da Terra, g é cerca de 9,8 m/s² (o valor normalizado é 9,80665 m/s²). Com dois algarismos significativos, escreve-se 9,8 m/s².",
     "distractorAnalysis": [
-      "Está incorreta: 10 m/s² é uma aproximação comum no ensino secundário, mas o valor adotado nesta unidade curricular é 9,8 m/s².",
-      "Está incorreta: 9,815 m/s² não é o valor adotado nesta unidade curricular; o valor normalizado é cerca de 9,81 m/s², aqui arredondado para 9,8 m/s².",
-      "Está incorreta: 3,6 é o fator de conversão de m/s para km/h, não o valor de g."
+      "Está incorreta: 3,6 é o fator de conversão de m/s para km/h, e não uma aceleração à superfície da Terra.",
+      "Está incorreta: 98 m/s² é dez vezes o valor real da aceleração da gravidade.",
+      "Está incorreta: 0,98 m/s² é dez vezes menor do que o valor real, de cerca de 9,8 m/s²."
     ],
-    "nursingApplication": "Garante que os estudantes utilizem o valor de g adotado (9,8 m/s²) nos exames teóricos."
+    "nursingApplication": "Garante que os cálculos de peso a partir da massa (P = m · g) usam a ordem de grandeza correta da aceleração da gravidade."
   },
   {
     "id": 1170,
@@ -3240,21 +3240,21 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1171,
     "topicId": 1,
-    "question": "No modelo biomecânico da flexão do antebraço a 90°, quais são as massas atribuídas ao segmento antebraço+mão e ao objeto segurado na mão para o cálculo do equilíbrio?",
+    "question": "Um antebraço com a mão tem uma massa de 2,5 kg. Qual é o seu peso, em newtons, adotando g = 9,8 m/s²?",
     "options": [
-      "Antebraço+mão = 10 kg; Objeto = 5 kg.",
-      "Antebraço+mão = 1 kg; Objeto = 2,5 kg.",
-      "Antebraço+mão = 500 kg; Objeto = 30 kg.",
-      "Antebraço+mão = 2,5 kg; Objeto = 1 kg."
+      "2,5 N",
+      "24,5 N",
+      "0,26 N",
+      "245 N"
     ],
-    "correctIndex": 3,
-    "explanation": "Estabelece-se nos dados iniciais do problema: 'Massa antebraço+mão = 2,5 kg | Massa objeto = 1 kg'.",
+    "correctIndex": 1,
+    "explanation": "P = m · g = 2,5 kg × 9,8 m/s² = 24,5 N. A massa (em kg) e o peso (em N) são grandezas diferentes.",
     "distractorAnalysis": [
-      "Está incorreta: Valores irrealistas que excedem largamente a massa anatómica de um membro superior.",
-      "Está incorreta: As massas estão invertidas em relação ao enunciado original.",
-      "Está incorreta: 500 kg e 30 kg são os dados do exercício anterior da alavanca interfixa."
+      "Está incorreta: 2,5 é a massa em quilogramas; o peso é P = m · g, em newtons.",
+      "Está incorreta: 2,5 / 9,8 ≈ 0,26 resultaria de dividir, e não de multiplicar, a massa pela gravidade.",
+      "Está incorreta: 245 N resultaria de multiplicar por 98 em vez de 9,8 (erro de potência de dez)."
     ],
-    "nursingApplication": "Identificação imediata dos parâmetros anatómicos e de carga do problema do cotovelo."
+    "nursingApplication": "Permite distinguir massa e peso antes de calcular momentos no cotovelo, em que o peso do segmento é uma força."
   },
   {
     "id": 1172,
@@ -3734,15 +3734,15 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1197,
     "topicId": 1,
-    "question": "Qual é o efeito biomecânico da utilização de dispositivos de apoio (como andarilho ou bengala) sobre a estabilidade postural do paciente?",
+    "question": "Qual é o efeito biomecânico da utilização de dispositivos de apoio (como andarilho ou bengala) sobre a estabilidade postural do doente?",
     "options": [
       "Reduzem a base de sustentação, para estimular o equilíbrio cerebral.",
-      "Multiplicam a área da base de sustentação em cerca de 3 a 5 vezes (valor indicativo).",
+      "Aumentam a área da base de sustentação, sobretudo o andarilho, que a alarga mais do que a bengala.",
       "Reduzem o peso do doente, permitindo-lhe andar sem apoio do solo.",
       "Aumentam a velocidade da marcha de forma significativa."
     ],
     "correctIndex": 1,
-    "explanation": "Estabelece-se: 'Dispositivos de apoio (Andarilho / Bengala): Multiplica a área da base em 3 a 5 vezes', alargando substancialmente os limites dentro dos quais a linha de gravidade pode oscilar sem queda. O aumento depende do dispositivo: é maior com o andarilho do que com uma bengala.",
+    "explanation": "Os dispositivos de apoio aumentam a área da base de sustentação: o andarilho, com quatro apoios no solo, alarga-a mais do que a bengala, que acrescenta um único ponto de apoio. Assim alargam-se os limites dentro dos quais a linha de gravidade pode oscilar sem queda.",
     "distractorAnalysis": [
       "Está incorreta: Reduzir a base aumenta a instabilidade; os dispositivos de apoio fazem o contrário.",
       "Está incorreta: O peso do doente não se altera com um andarilho ou bengala.",
