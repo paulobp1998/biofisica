@@ -998,10 +998,10 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1053,
     "topicId": 1,
-    "question": "Qual é o valor da força resultante (F_r) que atua sobre um corpo em Movimento Retilíneo e Uniforme?",
+    "question": "Qual é o valor da força resultante (Fr) que atua sobre um corpo em Movimento Retilíneo e Uniforme?",
     "options": [
       "É positiva e superior ao peso do corpo.",
-      "É nula (F_r = 0 N), pois a aceleração também é nula.",
+      "É nula (Fr = 0 N), pois a aceleração também é nula.",
       "É igual à força de atrito multiplicada pela velocidade.",
       "É variável e depende do valor da velocidade em cada instante."
     ],
@@ -1012,7 +1012,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A força não se multiplica pela velocidade; em MRU a força resultante é nula.",
       "Está incorreta: A força resultante não depende da velocidade num MRU; é nula em cada instante."
     ],
-    "nursingApplication": "Significa que para manter uma maca em velocidade constante apenas é necessário anular a força de atrito."
+    "nursingApplication": "Significa que, num piso horizontal, para manter uma maca a velocidade constante basta aplicar uma força que equilibre o atrito."
   },
   {
     "id": 1054,
@@ -1050,7 +1050,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: No equilíbrio a força resultante é nula, e não elevada.",
       "Está incorreta: O peso não é nulo: é a força da gravidade, presente em qualquer corpo com massa."
     ],
-    "nursingApplication": "Mostra que um doente em repouso na cama e um doente em transporte suave sem solavancos partilham a ausência de aceleração."
+    "nursingApplication": "Mostra que um doente em repouso na cama e um doente transportado em linha reta a velocidade constante partilham a ausência de aceleração."
   },
   {
     "id": 1056,
@@ -1058,16 +1058,16 @@ const TOPIC_1_QUESTIONS = [
     "question": "Para que um corpo continue em Movimento Retilíneo e Uniforme no vácuo sem atrito, é necessário continuar a empurrá-lo com uma força resultante?",
     "options": [
       "Não, pois pela 1.ª Lei de Newton o corpo mantém a sua velocidade constante por inércia.",
-      "Sim, é preciso aplicar uma força crescente para manter a velocidade do corpo a aumentar.",
+      "Sim, uma força constante no sentido do movimento, sem a qual a velocidade diminui.",
       "Sim, porque o movimento consome gradualmente a massa do objeto em deslocamento.",
-      "Sim, mas apenas se a temperatura ambiente do corredor for inferior a zero graus Celsius."
+      "Sim, uma força de intensidade igual ao peso do corpo, para vencer a sua inércia."
     ],
     "correctIndex": 0,
-    "explanation": "Pela 1.ª Lei de Newton (Lei da Inércia), um corpo em movimento sem forças resultantes contrárias mantém a velocidade constante (MRU), sem necessidade de força contínua.",
+    "explanation": "Pela 1.ª Lei de Newton (Lei da Inércia), um corpo em movimento sujeito a uma força resultante nula mantém a velocidade constante (MRU), sem necessidade de força contínua.",
     "distractorAnalysis": [
-      "Está incorreta: Manter a velocidade não exige força crescente; aumentar a força aceleraria o corpo.",
+      "Está incorreta: Sem atrito, nada faz diminuir a velocidade; uma força resultante constante aceleraria o corpo.",
       "Está incorreta: O movimento não consome a massa do corpo; a massa é constante.",
-      "Está incorreta: A temperatura não influencia o movimento de um corpo sem atrito."
+      "Está incorreta: A inércia não tem de ser vencida para manter o MRU; sem atrito, a força resultante necessária é nula."
     ],
     "nursingApplication": "Ajuda a desfazer conceções erróneas comuns sobre a necessidade de forças para manter o movimento."
   },
@@ -1079,7 +1079,7 @@ const TOPIC_1_QUESTIONS = [
       "O movimento é retilíneo e uniforme, porque o módulo da velocidade, 30 km/h, é constante.",
       "O movimento não é retilíneo e uniforme, pois a direção da velocidade muda.",
       "A força resultante sobre o veículo é igual a zero newtons, pois o módulo se mantém.",
-      "O veículo perde parte da sua inércia durante a curva, devido ao aumento da velocidade."
+      "O veículo perde parte da sua inércia durante a curva, devido à mudança de direção."
     ],
     "correctIndex": 1,
     "explanation": "A velocidade é uma grandeza vetorial. Embora o módulo seja 30 km/h, a direção está a mudar continuamente ao longo da curva, o que implica aceleração (centrípeta) e força resultante não nula. Não é MRU.",
@@ -1096,7 +1096,7 @@ const TOPIC_1_QUESTIONS = [
     "question": "Qual é a condição mecânica necessária e suficiente para que um ponto material esteja em equilíbrio de translação?",
     "options": [
       "A velocidade tem de ser crescente a uma taxa constante de 1 m/s².",
-      "O corpo tem de estar a uma temperatura muito baixa, próxima do zero absoluto.",
+      "O corpo tem de estar em repouso, com velocidade nula em relação ao solo.",
       "A resultante de todas as forças que atuam sobre o corpo tem de ser nula (Fr = 0 N).",
       "O peso do corpo tem de ser o dobro da força normal de apoio."
     ],
@@ -1104,7 +1104,7 @@ const TOPIC_1_QUESTIONS = [
     "explanation": "O equilíbrio de translação define-se estritamente pela anulação da força resultante: Fr = 0 N (o que engloba tanto o repouso como o MRU).",
     "distractorAnalysis": [
       "Está incorreta: Uma aceleração constante aumenta a velocidade; o equilíbrio de translação exige aceleração nula.",
-      "Está incorreta: A temperatura não determina o equilíbrio de translação de um corpo.",
+      "Está incorreta: Um corpo em MRU também está em equilíbrio de translação; a velocidade nula não é necessária.",
       "Está incorreta: Um corpo apoiado numa superfície horizontal, sem outras forças verticais, tem N = P, e não o dobro; a condição geral é Fr = 0."
     ],
     "nursingApplication": "Base de análise da segurança postural e estática em suportes terapêuticos e macas."
@@ -1134,14 +1134,14 @@ const TOPIC_1_QUESTIONS = [
     "question": "Se a força resultante horizontal sobre uma maca for nula (Fr = 0 N), o que podemos concluir com certeza?",
     "options": [
       "A maca está em repouso ou em movimento retilíneo e uniforme.",
-      "A maca está a acelerar 10 m/s² para a frente, devido ao peso.",
+      "A maca está a acelerar 9,8 m/s² para a frente, devido ao peso.",
       "A massa da maca foi reduzida, passando a ser quase nula.",
       "A maca perdeu o contacto com o chão, mas mantém-se em equilíbrio."
     ],
     "correctIndex": 0,
     "explanation": "Força resultante nula (Fr = 0) é a condição exata que dita que o corpo ou está parado (repouso) ou se desloca em linha reta com velocidade invariável (MRU).",
     "distractorAnalysis": [
-      "Está incorreta: Com Fr = 0 não há aceleração; a maca não acelera 10 m/s² para a frente.",
+      "Está incorreta: Com Fr = 0 não há aceleração; a maca não acelera 9,8 m/s² para a frente.",
       "Está incorreta: A massa de um corpo é constante e não se reduz por aplicar uma força.",
       "Está incorreta: Fr = 0 não implica perda de contacto; a maca continua apoiada no chão."
     ],
@@ -1160,7 +1160,7 @@ const TOPIC_1_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "Introduzem-se as 'Forças fundamentais da natureza', apresentando exatamente 4 forças fundamentais: Gravidade, Eletromagnética, Nuclear Forte e Nuclear Fraca.",
     "distractorAnalysis": [
-      "Está incorreta: Peso e atrito são forças derivadas das fundamentais, e não fundamentais.",
+      "Está incorreta: O peso e o atrito são manifestações das interações gravítica e eletromagnética, respetivamente, e não forças fundamentais.",
       "Está incorreta: As unidades de base do SI não correspondem a forças fundamentais.",
       "Está incorreta: A física reconhece um número pequeno e definido de interações fundamentais."
     ],
@@ -1172,7 +1172,7 @@ const TOPIC_1_QUESTIONS = [
     "question": "Como se define a Força Gravítica (ou Gravidade) na física e na biomecânica?",
     "options": [
       "Atração e repulsão mútuas entre polos de ímanes permanentes.",
-      "Força microscópica que divide os protões em quarks no núcleo.",
+      "Força que mantém os eletrões ligados ao núcleo atómico.",
       "Atração mútua entre corpos com massa, que se manifesta no peso (P = m · g).",
       "Resistência ao deslizamento de superfícies ásperas, que depende da rugosidade."
     ],
@@ -1180,7 +1180,7 @@ const TOPIC_1_QUESTIONS = [
     "explanation": "Define-se a força gravítica como a atração mútua entre corpos com massa, que se manifesta no peso: P = m · g.",
     "distractorAnalysis": [
       "Está incorreta: Os ímanes correspondem à força magnética (eletromagnética), e não à gravítica.",
-      "Está incorreta: Dividir protões em quarks é matéria da física de partículas, e não da gravidade.",
+      "Está incorreta: A ligação dos eletrões ao núcleo é de natureza eletromagnética; a gravidade é desprezável à escala atómica.",
       "Está incorreta: A resistência ao deslizamento é o atrito, e não a gravidade."
     ],
     "nursingApplication": "Explica o peso corporal, que atua sobre o doente e se transmite ao sistema osteomuscular e, por contacto, ao leito."
@@ -1211,7 +1211,7 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "“Cola” que mantém os protões e os neutrões unidos no interior do núcleo atómico.",
       "“Força de atrito” que impede a rotação das órbitas eletrónicas.",
-      "“Tensão muscular” exercida pelos ligamentos sobre as vértebras sagradas.",
+      "“Tensão ligamentar” que mantém as vértebras unidas na coluna vertebral.",
       "“Pressão capilar” exercida pelo fluxo arterial na pele do sacro."
     ],
     "correctIndex": 0,
@@ -1229,7 +1229,7 @@ const TOPIC_1_QUESTIONS = [
     "question": "Onde atua a Força Nuclear Fraca, de acordo com a definição apresentada?",
     "options": [
       "No atrito estático entre calçado hospitalar e piso molhado.",
-      "Está presente em alguns tipos de decaimento radioativo e na fusão nuclear.",
+      "Em alguns tipos de decaimento radioativo e na fusão nuclear.",
       "Na flexão do antebraço realizada pelo músculo bíceps braquial.",
       "No amortecimento elástico dos discos cartilagíneos intervertebrais."
     ],
@@ -1276,7 +1276,7 @@ const TOPIC_1_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: A gravidade é muito mais fraca do que a repulsão elétrica à escala nuclear.",
       "Está incorreta: O atrito é uma força de contacto macroscópica, sem ação no núcleo atómico.",
-      "Está incorreta: A membrana nuclear é uma estrutura biológica e não exerce forças sobre os protões."
+      "Está incorreta: A membrana nuclear envolve o núcleo da célula, e não o núcleo atómico; não atua sobre os protões."
     ],
     "nursingApplication": "Introduz a estabilidade atómica necessária para compreender isótopos estáveis e radioativos em medicina."
   },
@@ -1304,15 +1304,15 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Na expressão matemática da força da gravidade apresentada (P = m · g), o que representam as letras 'm' e 'g'?",
     "options": [
-      "M = momento da força e g = grama de substância, medida em laboratório.",
+      "m = momento da força e g = grama de substância, medida em laboratório.",
       "m = massa do corpo (em kg) e g = aceleração gravítica local (em m/s²).",
-      "M = metros percorridos ao longo do piso e g = grau de inclinação da rampa.",
-      "M = músculo tracionado pelo tendão e g = goniometria da articulação."
+      "m = metros percorridos ao longo do piso e g = grau de inclinação da rampa.",
+      "m = músculo tracionado pelo tendão e g = goniometria da articulação."
     ],
     "correctIndex": 1,
     "explanation": "Na fórmula P = m · g, 'm' representa a massa do corpo (em quilogramas no SI) e 'g' a aceleração devida à gravidade local (aproximadamente 9,8 m/s² à superfície da Terra).",
     "distractorAnalysis": [
-      "Está incorreta: M é o momento de força (M = F · b), e g é a aceleração da gravidade, não uma grama.",
+      "Está incorreta: Na fórmula do peso, m é a massa (o momento de força é M = F · b), e g é a aceleração da gravidade, e não o símbolo do grama.",
       "Está incorreta: Metros e graus não aparecem na fórmula do peso vertical.",
       "Está incorreta: Termos anatómicos não correspondem às variáveis da física newtoniana na fórmula P = m · g."
     ],
@@ -1392,7 +1392,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A força normal existe mesmo em repouso, como se vê no utente deitado.",
       "Está incorreta: A força normal é uma força real, medida em newtons."
     ],
-    "nursingApplication": "Resolve uma das dúvidas conceptuais mais frequentes em testes de Biofísica no ensino superior."
+    "nursingApplication": "Ajuda a identificar as forças no doente acamado: o colchão sustenta-o com a força normal, e o doente comprime o colchão com uma força igual e oposta."
   },
   {
     "id": 1074,
@@ -1405,29 +1405,29 @@ const TOPIC_1_QUESTIONS = [
       "A força normal provoca alterações atómicas nos tecidos da pele, de forma progressiva."
     ],
     "correctIndex": 2,
-    "explanation": "A força normal exercida pela superfície do leito comprime os tecidos moles (músculo, tecido celular subcutâneo e derme) contra os ossos subjacentes; a pressão resultante colapsa os capilares sanguíneos provocando isquemia.",
+    "explanation": "A força normal exercida pela superfície do leito comprime os tecidos moles (músculo, tecido celular subcutâneo e derme) contra os ossos subjacentes; a pressão resultante, quando elevada e prolongada, colapsa os capilares sanguíneos, provocando isquemia.",
     "distractorAnalysis": [
       "Está incorreta: A força normal não anula o atrito; combinada com este, agrava o dano tecidual.",
       "Está incorreta: A compressão prolongada causa isquemia e necrose tecidual, e não estimula a cicatrização.",
       "Está incorreta: As lesões de pressão são eventos isquémicos mecânicos, sem alterações atómicas."
     ],
-    "nursingApplication": "Fundamenta a mudança regular de decúbito em doentes acamados. A frequência é individualizada (tradicionalmente de 2 em 2 horas, ajustada ao risco de úlcera e ao tipo de superfície de apoio)."
+    "nursingApplication": "Fundamenta a mudança regular de decúbito em doentes acamados. A frequência é individualizada (tradicionalmente de 2 em 2 horas, ajustada ao risco de lesão de pressão e ao tipo de superfície de apoio)."
   },
   {
     "id": 1075,
     "topicId": 1,
     "question": "Na prática de enfermagem e no posicionamento do doente, qual é a região anatómica onde a força normal e a pressão sobre a pele são particularmente críticas em decúbito dorsal?",
     "options": [
-      "Na face anterior da coxa, junto à prega inguinal, sem contacto com o colchão.",
-      "Na palma da mão, junto à face lateral do polegar, sem contacto com o colchão.",
+      "Na pele sobre o grande trocânter do fémur, em contacto com o colchão.",
+      "Na pele sobre a espinha ilíaca anterossuperior, em contacto com o colchão.",
       "Na face anterior da tíbia, junto ao joelho, em contacto com o colchão.",
       "Na pele sobre a proeminência do sacro, em contacto com o colchão."
     ],
     "correctIndex": 3,
     "explanation": "Destaca-se a pressão de interface entre a pele e o colchão sobre o sacro, como exemplo biofísico de referência no estudo da força normal e das lesões de pressão; os calcâneos são outra zona crítica.",
     "distractorAnalysis": [
-      "Está incorreta: A face anterior da coxa não é a zona de maior risco em decúbito dorsal; a pressão concentra-se no sacro.",
-      "Está incorreta: Em decúbito dorsal, a palma da mão não fica em contacto com o colchão.",
+      "Está incorreta: O grande trocânter é zona de apoio crítica em decúbito lateral; em decúbito dorsal, a pressão concentra-se no sacro.",
+      "Está incorreta: A espinha ilíaca anterossuperior é zona de apoio em decúbito ventral; em decúbito dorsal, fica voltada para cima.",
       "Está incorreta: Em decúbito dorsal, a face anterior da tíbia fica voltada para cima, sem contacto com o colchão."
     ],
     "nursingApplication": "Área prioritária de inspeção de enfermagem diária em utentes imobilizados na enfermaria."
@@ -1447,7 +1447,7 @@ const TOPIC_1_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: 70 é a massa em quilogramas (kg), que tem de ser multiplicada por g (9,8) para obter a força em newtons.",
       "Está incorreta: 7,14 resultaria de dividir 70 por 9,8, o que é fisicamente incorreto, porque N = m · g.",
-      "Está incorreta: A força normal não é nula, caso contrário o doente cairia em queda livre através do colchão."
+      "Está incorreta: A força normal não é nula; se o fosse, o peso não estaria equilibrado e o doente aceleraria para baixo."
     ],
     "nursingApplication": "Permite calcular a carga mecânica total suportada pela estrutura do colchão e distribuída pela pele."
   },
@@ -1462,7 +1462,7 @@ const TOPIC_1_QUESTIONS = [
       "Acelerar o doente, com movimentos periódicos contínuos e de alta velocidade."
     ],
     "correctIndex": 1,
-    "explanation": "A força normal total (peso do doente) permanece constante. Ao moldar-se ao corpo, o colchão aumenta a área de superfície de contacto (A), reduzindo a pressão de interface nos pontos de apoio (p = F / A), o que diminui o risco de oclusão capilar.",
+    "explanation": "A força normal total (igual, em módulo, ao peso do doente) permanece constante. Ao moldar-se ao corpo, o colchão aumenta a área de superfície de contacto (A), reduzindo a pressão de interface nos pontos de apoio (p = F / A), o que diminui o risco de oclusão capilar.",
     "distractorAnalysis": [
       "Está incorreta: A massa inercial do doente não se altera com o colchão; o peso mantém-se.",
       "Está incorreta: Concentrar a força num único ponto aumenta a pressão, o oposto do objetivo.",
@@ -1473,7 +1473,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1078,
     "topicId": 1,
-    "question": "Quando se eleva a cabeceira da cama articulada transformando-a num plano inclinado, o que acontece à componente de Força Normal exercida pelo colchão?",
+    "question": "Quando se eleva a cabeceira da cama articulada transformando-a num plano inclinado, o que acontece à Força Normal exercida pelo colchão?",
     "options": [
       "Aumenta proporcionalmente para o triplo do peso original.",
       "Permanece inalterada, mesmo com a cama inclinada.",
@@ -1487,7 +1487,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A força normal varia com o cosseno da inclinação, diminuindo com o aumento do ângulo.",
       "Está incorreta: A normal é uma força de contacto perpendicular à superfície; não atrai o doente para a parede."
     ],
-    "nursingApplication": "Alerta para o facto de que, no modelo simplificado, elevar a cabeceira transfere parte do peso para o deslizamento (cisalhamento). Na prática, o peso concentra-se na região sagrada e isquiática, por isso recomenda-se limitar a elevação da cabeceira (cerca de 30°, salvo contraindicação)."
+    "nursingApplication": "Alerta para o facto de que, no modelo simplificado, elevar a cabeceira aumenta a componente do peso paralela ao colchão, que favorece o deslizamento e o cisalhamento. Na prática, o peso concentra-se na região sagrada e isquiática, por isso recomenda-se limitar a elevação da cabeceira (cerca de 30°, salvo contraindicação)."
   },
   {
     "id": 1079,
@@ -1522,7 +1522,7 @@ const TOPIC_1_QUESTIONS = [
     "explanation": "Se o corpo A é o doente e o corpo B é o colchão: o colchão exerce a força normal N no doente (para cima); a reação correspondente da 3.ª Lei é exercida pelo doente sobre o colchão (para baixo com igual intensidade).",
     "distractorAnalysis": [
       "Está incorreta: A reação de uma força atua sobre o outro corpo, e não sobre o mesmo corpo onde a força atua.",
-      "Está incorreta: A força de reação não se localiza no centro de massa; está na superfície de contacto.",
+      "Está incorreta: A reação atua sobre o colchão, na superfície de contacto, e não no centro de massa do doente.",
       "Está incorreta: O par ação-reação envolve só o doente e o colchão; o pavimento não faz parte dele."
     ],
     "nursingApplication": "Consolida a aplicação rigorosa da 3.ª Lei de Newton e a identificação correta dos pares de forças em contacto."
@@ -1538,7 +1538,7 @@ const TOPIC_1_QUESTIONS = [
       "Energia radiante emitida por núcleos atómicos instáveis durante a transição."
     ],
     "correctIndex": 1,
-    "explanation": "Define-se a força de atrito como força tangencial à superfície de contacto que se opõe ao movimento.",
+    "explanation": "Define-se a força de atrito como força tangencial à superfície de contacto que se opõe ao movimento relativo entre as superfícies ou, no atrito estático, à tendência de movimento.",
     "distractorAnalysis": [
       "Está incorreta: Esta é a força normal, perpendicular à superfície, e não o atrito.",
       "Está incorreta: A atração gravítica é o peso, e não uma força de contacto tangencial.",
@@ -1571,15 +1571,15 @@ const TOPIC_1_QUESTIONS = [
     "question": "Qual é a relação correta entre o atrito estático máximo e o atrito cinético?",
     "options": [
       "O atrito cinético é, em geral, superior ao atrito estático máximo.",
-      "O atrito estático é nulo pelo simples facto de o corpo estar em contacto com a superfície.",
+      "O atrito cinético aumenta com a velocidade até igualar o estático máximo.",
       "O atrito estático e o cinético têm a mesma intensidade na maioria dos corpos.",
       "O atrito estático máximo é superior ao atrito cinético."
     ],
     "correctIndex": 3,
-    "explanation": "Enfatiza-se expressamente: 'O atrito estático máximo é superior ao atrito cinético.'.",
+    "explanation": "Enfatiza-se expressamente: 'O atrito estático máximo é superior ao atrito cinético'. Por isso, pôr um corpo em movimento exige mais força do que mantê-lo em movimento.",
     "distractorAnalysis": [
       "Está incorreta: Em geral, o atrito cinético é inferior ao estático máximo, e não superior.",
-      "Está incorreta: O atrito estático é nulo sem força tangencial aplicada, e não pelo simples contacto.",
+      "Está incorreta: No modelo estudado, o atrito cinético é aproximadamente independente da velocidade e inferior ao estático máximo.",
       "Está incorreta: Os atritos estático e cinético têm, em geral, intensidades diferentes."
     ],
     "nursingApplication": "Princípio físico relevante para a ergonomia dos profissionais de enfermagem."
@@ -1598,7 +1598,7 @@ const TOPIC_1_QUESTIONS = [
     "explanation": "Cita-se expressamente: 'É mais difícil empurrar uma maca em repouso do que uma maca em movimento', demonstrando que vencer o atrito estático inicial exige maior força do que manter o andamento contra o atrito cinético.",
     "distractorAnalysis": [
       "Está incorreta: A balança mede a mesma massa corporal independentemente da postura do utente.",
-      "Está incorreta: Menor calibre de agulha abranda o fluxo; é um fenómeno de hidrodinâmica, e não de atrito.",
+      "Está incorreta: Menor calibre de agulha abranda o fluxo; é um fenómeno hidrodinâmico (viscosidade), e não de atrito entre superfícies sólidas.",
       "Está incorreta: A pele arrefece por condução de calor, sem relação com o atrito estático."
     ],
     "nursingApplication": "Ensina os profissionais a aplicar um esforço inicial controlado ao arrancar com a maca para não lesionar os ombros e coluna."
@@ -1611,7 +1611,7 @@ const TOPIC_1_QUESTIONS = [
       "50 N em sentido contrário, fazendo a maca andar para trás.",
       "20 N, em sentido oposto à força aplicada, equilibrando-a.",
       "0 N, porque o atrito se manifesta quando o objeto já está em movimento.",
-      "1000 N, resultante de multiplicar a força pela gravidade local."
+      "196 N, resultante de multiplicar a força pela gravidade local."
     ],
     "correctIndex": 1,
     "explanation": "Enquanto o corpo permanece em repouso, o atrito estático ajusta-se exatamente ao valor da força aplicada para manter o equilíbrio: F_atrito = 20 N (Fr = 0). Os 50 N representam apenas o limite máximo antes de romper o repouso.",
@@ -1675,7 +1675,7 @@ const TOPIC_1_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: Aumentar a carga aumenta a força normal e consequentemente aumenta o atrito, dificultando a transferência.",
       "Está incorreta: Tecidos rugosos aumentam o atrito e o cisalhamento da pele, elevando o risco de lesões.",
-      "Está incorreta: Travar as rodas bloqueia o equipamento e impede o movimento, em vez de facilitar o transporte."
+      "Está incorreta: Travar as rodas aumenta a resistência ao movimento da maca; é útil para imobilizar cama e maca durante a transferência, mas não reduz o atrito sobre o doente."
     ],
     "nursingApplication": "Aplicação clínica diária de ergonomia e proteção articular da equipa de enfermagem."
   },
@@ -1694,7 +1694,7 @@ const TOPIC_1_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: kg/m² é unidade de densidade superficial, não de força.",
       "Está incorreta: pascal (Pa) é unidade de pressão.",
-      "Está incorreta: Joule por segundo (J/s) corresponde a Watt (W), unidade de potência."
+      "Está incorreta: Joule por segundo (J/s) corresponde ao watt (W), unidade de potência."
     ],
     "nursingApplication": "Garante coerência dimensional ao calcular o somatório de forças que atuam num corpo."
   },
@@ -1722,9 +1722,9 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Na tabela de resumo dos conceitos lecionados, como está caracterizada a grandeza 'Força (F)'?",
     "options": [
-      "Tipo: Escalar; Unidade: kg; Definição: Quantidade de matéria; Exemplo: Massa corporal.",
-      "Tipo: Escalar; Unidade: Pa; Definição: Força por área; Exemplo: Pressão capilar.",
-      "Tipo: Vetorial; Unidade: N/m²; Definição: Atração entre polos magnéticos; Exemplo: Peso na balança.",
+      "Tipo: Escalar; Unidade SI: quilograma (kg); Definição: Quantidade de matéria; Exemplo: Massa corporal.",
+      "Tipo: Escalar; Unidade SI: pascal (Pa); Definição: Força por área; Exemplo: Pressão capilar.",
+      "Tipo: Vetorial; Unidade SI: newton por metro quadrado (N/m²); Definição: Atração entre polos magnéticos; Exemplo: Peso na balança.",
       "Tipo: Vetorial; Unidade SI: newton (N); Definição: Produz aceleração ou deformação; Exemplo: Força muscular do quadríceps."
     ],
     "correctIndex": 3,
@@ -1770,7 +1770,7 @@ const TOPIC_1_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: O peso é uma força vetorial medida em newtons, não uma grandeza escalar em kg.",
       "Está incorreta: Pascal é unidade de pressão (N/m²), enquanto o peso é uma força expressa em newtons.",
-      "Está incorreta: O peso tem direção vertical e sentido descendente para o centro da Terra, sendo estritamente vetorial."
+      "Está incorreta: O peso é uma força vetorial (vertical, dirigida para o centro da Terra), e não uma grandeza escalar nem uma aceleração."
     ],
     "nursingApplication": "Essencial para distinguir rigorosamente peso (força em N) de massa (matéria em kg) em relatórios de biofísica."
   },
@@ -1781,11 +1781,11 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Tipo: Vetorial; Unidade SI: newton (N); Definição: Interação entre corpos; Exemplo: Tendão do bíceps.",
       "Tipo: Escalar; Unidade SI: quilograma (kg); Definição: Medida de inércia; Exemplo: Doente bariátrico.",
-      "Tipo: Escalar; Unidade SI: Pascal (N/m²); Definição: Força por unidade de área; Exemplo: Pressão sobre o sacro.",
+      "Tipo: Escalar; Unidade SI: pascal (N/m²); Definição: Força por unidade de área; Exemplo: Pressão sobre o sacro.",
       "Tipo: Vetorial; Unidade SI: joule (J); Definição: Trabalho muscular; Exemplo: Elevação de carga."
     ],
     "correctIndex": 2,
-    "explanation": "Especifica-se: Grandeza: Pressão (p) | Tipo: Escalar | Unidade SI: Pascal (N/m²) | Definição: Força por unidade de área | Exemplo: Pressão sobre o sacro.",
+    "explanation": "Especifica-se: Grandeza: Pressão (p) | Tipo: Escalar | Unidade SI: pascal (N/m²) | Definição: Força por unidade de área | Exemplo: Pressão sobre o sacro.",
     "distractorAnalysis": [
       "Está incorreta: A pressão é escalar e não se mede em newtons; o tendão do bíceps não a define.",
       "Está incorreta: A medida de inércia é a massa, e não a pressão.",
@@ -1823,13 +1823,13 @@ const TOPIC_1_QUESTIONS = [
       "1 Pa = 1 kg / s², equivalente a uma unidade de tensão superficial."
     ],
     "correctIndex": 0,
-    "explanation": "Indica-se explicitamente: 'Pascal (N/m²)', significando que a pressão equivale a uma força de um Newton distribuída uniformemente por uma área de um metro quadrado.",
+    "explanation": "Indica-se explicitamente: 'pascal (N/m²)', significando que 1 Pa corresponde à pressão exercida por uma força de um newton distribuída uniformemente por uma área de um metro quadrado.",
     "distractorAnalysis": [
       "Está incorreta: kg · m / s é unidade de momento linear (quantidade de movimento), e não de pressão.",
       "Está incorreta: N · m é a unidade de momento de força ou de energia, e não de pressão.",
       "Está incorreta: kg / s² é unidade de tensão superficial, dimensionalmente distinta do pascal."
     ],
-    "nursingApplication": "Permite aos alunos realizar conversões de unidades entre newtons de carga e área cutânea de apoio."
+    "nursingApplication": "Permite calcular a pressão sobre a pele (em Pa) a partir da carga em newtons e da área de apoio em metros quadrados."
   },
   {
     "id": 1097,
@@ -1838,15 +1838,15 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "A pressão intracraniana medida por um cateter ventricular.",
       "A força muscular de contração do quadríceps.",
-      "A temperatura do sangue na aorta ascendente.",
-      "O diâmetro médio dos capilares glomerulares do rim."
+      "O peso corporal do doente, exercido sobre a balança.",
+      "A força normal exercida pelo colchão sobre o doente."
     ],
     "correctIndex": 1,
     "explanation": "Cita-se expressamente como exemplo de força: 'Força muscular de contração do quadríceps'.",
     "distractorAnalysis": [
       "Está incorreta: A pressão intracraniana é uma pressão (grandeza escalar), e não uma força.",
-      "Está incorreta: Temperatura do sangue é uma grandeza termodinâmica escalar.",
-      "Está incorreta: Diâmetro capilar é uma medida geométrica anatómica de comprimento."
+      "Está incorreta: O peso é a força gravítica exercida pela Terra sobre o corpo, e não uma força gerada ativamente por este.",
+      "Está incorreta: A força normal é exercida pelo colchão sobre o doente (força passiva de contacto), e não gerada pelo corpo."
     ],
     "nursingApplication": "Destaca a função motora do músculo quadríceps na estabilização do joelho e na marcha humana."
   },
@@ -1875,15 +1875,15 @@ const TOPIC_1_QUESTIONS = [
     "question": "Por que razão a Pressão (p) é classificada como grandeza Escalar na tabela de valores de referência?",
     "options": [
       "Porque a pressão atua no sentido horizontal, para a esquerda.",
-      "Porque os aparelhos de medição de pressão não têm pilhas elétricas.",
+      "Porque se mede em pascal, e não em newton, como as grandezas vetoriais.",
       "Porque a pressão deixa de existir quando o corpo humano se encontra em repouso.",
       "Porque fica caracterizada por um valor numérico e uma unidade, sem direção."
     ],
     "correctIndex": 3,
     "explanation": "A pressão é uma grandeza escalar: num determinado ponto de um fluido ou interface, quantifica a intensidade da força normal distribuída por unidade de área sem apontar para uma direção preferencial única no espaço.",
     "distractorAnalysis": [
-      "Está incorreta: A pressão não tem um sentido horizontal fixo; atua perpendicularmente à superfície.",
-      "Está incorreta: Os aparelhos de medição não definem a natureza física da pressão.",
+      "Está incorreta: A pressão não tem direção nem sentido; a força que exerce sobre uma superfície é que é perpendicular a esta.",
+      "Está incorreta: A unidade não define o carácter vetorial (a velocidade, em m/s, é vetorial); a pressão é escalar por não ter direção.",
       "Está incorreta: A pressão existe em repouso, como se vê na pressão do doente sobre o colchão."
     ],
     "nursingApplication": "Garante a correta diferenciação entre a força exercida (vetor) e o seu efeito distribuído na pele (pressão, escalar)."
@@ -1893,19 +1893,19 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual das seguintes quatro grandezas analisadas no resumo é a ÚNICA cuja unidade SI é o quilograma (kg)?",
     "options": [
-      "Massa (m), medida em quilogramas no Sistema Internacional.",
-      "Força (F), medida em newtons no Sistema Internacional.",
-      "Peso (P), medido em newtons no Sistema Internacional.",
-      "Pressão (p), medida em pascal no Sistema Internacional."
+      "Massa (m), medida da quantidade de matéria de um corpo.",
+      "Força (F), grandeza que produz aceleração ou deformação.",
+      "Peso (P), força de atração gravítica exercida sobre o corpo.",
+      "Pressão (p), força exercida por unidade de área."
     ],
     "correctIndex": 0,
-    "explanation": "Na tabela de grandezas de biofísica, a única grandeza expressa em quilogramas (kg) é a Massa (m). Força e Peso medem-se em newtons (N), e Pressão mede-se em Pascal (N/m²).",
+    "explanation": "Na tabela de grandezas de biofísica, a única grandeza expressa em quilogramas (kg) é a Massa (m). Força e Peso medem-se em newtons (N), e Pressão mede-se em pascal (N/m²).",
     "distractorAnalysis": [
       "Está incorreta: A força mede-se em newtons, e não em quilogramas.",
       "Está incorreta: O peso é uma força e mede-se em newtons.",
       "Está incorreta: A pressão mede-se em pascal, e não em quilogramas."
     ],
-    "nursingApplication": "Consolida a tabela comparativa fundamental que encerra a primeira secção temática do Tópico 1."
+    "nursingApplication": "Reforça que a massa corporal registada em kg (por exemplo, para o cálculo de doses por quilograma) não se confunde com o peso, que é uma força em newtons."
   },
   {
     "id": 1101,
