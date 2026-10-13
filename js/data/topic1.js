@@ -10,7 +10,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1001,
     "topicId": 1,
-    "question": "Qual é a definição de Mecânica apresentada nos conceitos fundamentais da Biofísica?",
+    "question": "Qual é a definição de Mecânica?",
     "options": [
       "Estuda a composição química e a estrutura atómica dos tecidos biológicos.",
       "Estuda as relações entre os movimentos dos corpos e as forças a eles associadas.",
@@ -132,7 +132,7 @@ const TOPIC_1_QUESTIONS = [
       "Newton (N)."
     ],
     "correctIndex": 3,
-    "explanation": "No Sistema Internacional (SI), a unidade padrão de força é o newton (N), conforme detalhado na tabela de grandezas da biomecânica.",
+    "explanation": "No Sistema Internacional (SI), a unidade padrão de força é o newton (N).",
     "distractorAnalysis": [
       "Está incorreta: O quilograma é unidade de massa, e não de força.",
       "Está incorreta: O pascal é unidade de pressão, que é força por área.",
@@ -162,7 +162,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1009,
     "topicId": 1,
-    "question": "Qual é a principal distinção entre o conceito de Mecânica e o de Reologia apresentados no programa de Biofísica?",
+    "question": "Qual é a principal distinção entre Mecânica e Reologia?",
     "options": [
       "A Mecânica estuda a bioquímica celular; a Reologia, a genética das proteínas.",
       "A Mecânica estuda forças e movimentos; a Reologia, a deformação dos materiais sob forças.",
@@ -656,7 +656,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1035,
     "topicId": 1,
-    "question": "Qual é a definição de 'Utente bariátrico' apresentada para ilustrar a aplicação prática da 2.ª Lei de Newton?",
+    "question": "Qual é a definição de 'utente bariátrico'?",
     "options": [
       "Utente com desnutrição calórica grave e baixa densidade óssea.",
       "Utente sujeito a tração ortopédica contínua nos membros inferiores.",
@@ -664,7 +664,7 @@ const TOPIC_1_QUESTIONS = [
       "Utente com obesidade severa, cuja massa corporal é muito elevada."
     ],
     "correctIndex": 3,
-    "explanation": "O apontamento de aplicação prática define taxativamente: 'Utente bariátrico = Utente com obesidade severa'.",
+    "explanation": "Um utente bariátrico é um utente com obesidade severa.",
     "distractorAnalysis": [
       "Está incorreta: A desnutrição grave corresponde a massa reduzida, o oposto de um utente bariátrico.",
       "Está incorreta: A tração ortopédica é um tratamento de imobilização, e não uma definição de utente bariátrico.",
@@ -1226,7 +1226,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1065,
     "topicId": 1,
-    "question": "Onde atua a Força Nuclear Fraca, de acordo com a definição apresentada?",
+    "question": "Onde atua a força nuclear fraca?",
     "options": [
       "No atrito estático entre calçado hospitalar e piso molhado.",
       "Em alguns tipos de decaimento radioativo e na fusão nuclear.",
@@ -1234,7 +1234,7 @@ const TOPIC_1_QUESTIONS = [
       "No amortecimento elástico dos discos cartilagíneos intervertebrais."
     ],
     "correctIndex": 1,
-    "explanation": "Estipula-se: 'Força nuclear fraca: Presente em alguns tipos de decaimento radioativo e na fusão nuclear'.",
+    "explanation": "A força nuclear fraca está presente em alguns tipos de decaimento radioativo e na fusão nuclear.",
     "distractorAnalysis": [
       "Está incorreta: O atrito calçado-solo é uma manifestação macroscópica de forças eletromagnéticas.",
       "Está incorreta: A flexão do cotovelo é um sistema de alavancas osteomuscular mecânico.",
@@ -1302,7 +1302,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1069,
     "topicId": 1,
-    "question": "Na expressão matemática da força da gravidade apresentada (P = m · g), o que representam as letras 'm' e 'g'?",
+    "question": "Na expressão da força da gravidade, P = m · g, o que representam as letras 'm' e 'g'?",
     "options": [
       "m = momento da força e g = grama de substância, medida em laboratório.",
       "m = massa do corpo (em kg) e g = aceleração gravítica local (em m/s²).",
@@ -1587,7 +1587,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1084,
     "topicId": 1,
-    "question": "Qual é o exemplo prático de enfermagem apresentado para ilustrar que o atrito estático é superior ao cinético?",
+    "question": "Qual é um exemplo prático de enfermagem que ilustra que o atrito estático é superior ao cinético?",
     "options": [
       "É mais difícil empurrar uma maca em repouso do que uma maca em movimento.",
       "É mais difícil pesar um doente sentado do que um doente em pé.",
@@ -1595,7 +1595,7 @@ const TOPIC_1_QUESTIONS = [
       "A temperatura da pele diminui quando o utente caminha descalço no hospital."
     ],
     "correctIndex": 0,
-    "explanation": "Cita-se expressamente: 'É mais difícil empurrar uma maca em repouso do que uma maca em movimento', demonstrando que vencer o atrito estático inicial exige maior força do que manter o andamento contra o atrito cinético.",
+    "explanation": "É mais difícil empurrar uma maca em repouso do que uma maca em movimento, o que mostra que vencer o atrito estático inicial exige maior força do que manter o andamento contra o atrito cinético.",
     "distractorAnalysis": [
       "Está incorreta: A balança mede a mesma massa corporal independentemente da postura do utente.",
       "Está incorreta: Menor calibre de agulha abranda o fluxo; é um fenómeno hidrodinâmico (viscosidade), e não de atrito entre superfícies sólidas.",
@@ -1720,7 +1720,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1091,
     "topicId": 1,
-    "question": "Na tabela de resumo dos conceitos lecionados, como está caracterizada a grandeza 'Força (F)'?",
+    "question": "Como se caracteriza a grandeza física força?",
     "options": [
       "Tipo: Escalar; Unidade SI: quilograma (kg); Definição: Quantidade de matéria; Exemplo: Massa corporal.",
       "Tipo: Escalar; Unidade SI: pascal (Pa); Definição: Força por área; Exemplo: Pressão capilar.",
@@ -1728,7 +1728,7 @@ const TOPIC_1_QUESTIONS = [
       "Tipo: Vetorial; Unidade SI: newton (N); Definição: Produz aceleração ou deformação; Exemplo: Força muscular do quadríceps."
     ],
     "correctIndex": 3,
-    "explanation": "Especifica-se: Grandeza: Força (F) | Tipo: Vetorial | Unidade SI: newton (N) | Definição: Produz aceleração ou deformação | Exemplo: Força muscular do quadríceps.",
+    "explanation": "A força é uma grandeza vetorial, medida em newtons (N), que produz aceleração ou deformação. Por exemplo, a força muscular do quadríceps.",
     "distractorAnalysis": [
       "Está incorreta: A força é vetorial e mede-se em newtons, e não em quilogramas.",
       "Está incorreta: O pascal é unidade de pressão (força por área), e não de força.",
@@ -1739,7 +1739,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1092,
     "topicId": 1,
-    "question": "Na tabela de resumo dos conceitos lecionados, como está caracterizada a grandeza 'Massa (m)'?",
+    "question": "Como se caracteriza a grandeza física massa?",
     "options": [
       "Tipo: Escalar; Unidade SI: quilograma (kg); Definição: Medida da quantidade de matéria; Exemplo: Massa corporal do doente.",
       "Tipo: Vetorial; Unidade SI: newton (N); Definição: Atração gravítica; Exemplo: Força muscular.",
@@ -1747,7 +1747,7 @@ const TOPIC_1_QUESTIONS = [
       "Tipo: Vetorial; Unidade SI: quilograma (kg); Definição: Produz aceleração centrípeta; Exemplo: Andarilho."
     ],
     "correctIndex": 0,
-    "explanation": "Especifica-se: Grandeza: Massa (m) | Tipo: Escalar | Unidade SI: quilograma (kg) | Definição: Medida da quantidade de matéria | Exemplo: Massa corporal do doente.",
+    "explanation": "A massa é uma grandeza escalar, medida em quilogramas (kg). Definição: medida da quantidade de matéria. Por exemplo, a massa corporal do doente.",
     "distractorAnalysis": [
       "Está incorreta: A massa é escalar e mede-se em quilogramas, e não em newtons.",
       "Está incorreta: O pascal é unidade de pressão, e a massa não é uma deformação.",
@@ -1758,7 +1758,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1093,
     "topicId": 1,
-    "question": "Na tabela de resumo dos conceitos lecionados, como está caracterizada a grandeza 'Peso (P)'?",
+    "question": "Como se caracteriza a grandeza física peso?",
     "options": [
       "Tipo: Escalar; Unidade SI: quilograma (kg); Definição: Quantidade de água corporal; Exemplo: Hidratação.",
       "Tipo: Vetorial; Unidade SI: newton (N); Definição: Força de atração gravítica; Exemplo: Peso do doente.",
@@ -1766,7 +1766,7 @@ const TOPIC_1_QUESTIONS = [
       "Tipo: Escalar; Unidade SI: newton (N); Definição: Aceleração da maca; Exemplo: Ambulância."
     ],
     "correctIndex": 1,
-    "explanation": "Especifica-se: Grandeza: Peso (P) | Tipo: Vetorial | Unidade SI: newton (N) | Definição: Força de atração gravítica | Exemplo: Peso do doente.",
+    "explanation": "O peso é uma grandeza vetorial, medida em newtons (N): é a força de atração gravítica exercida sobre um corpo, por exemplo, o peso de um doente.",
     "distractorAnalysis": [
       "Está incorreta: O peso é uma força vetorial medida em newtons, não uma grandeza escalar em kg.",
       "Está incorreta: Pascal é unidade de pressão (N/m²), enquanto o peso é uma força expressa em newtons.",
@@ -1777,7 +1777,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1094,
     "topicId": 1,
-    "question": "Na tabela de resumo dos conceitos lecionados, como está caracterizada a grandeza 'Pressão (p)'?",
+    "question": "Como se caracteriza a grandeza física pressão?",
     "options": [
       "Tipo: Vetorial; Unidade SI: newton (N); Definição: Interação entre corpos; Exemplo: Tendão do bíceps.",
       "Tipo: Escalar; Unidade SI: quilograma (kg); Definição: Medida de inércia; Exemplo: Doente bariátrico.",
@@ -1785,7 +1785,7 @@ const TOPIC_1_QUESTIONS = [
       "Tipo: Vetorial; Unidade SI: joule (J); Definição: Trabalho muscular; Exemplo: Elevação de carga."
     ],
     "correctIndex": 2,
-    "explanation": "Especifica-se: Grandeza: Pressão (p) | Tipo: Escalar | Unidade SI: pascal (N/m²) | Definição: Força por unidade de área | Exemplo: Pressão sobre o sacro.",
+    "explanation": "A pressão é uma grandeza escalar, medida em pascal (N/m²): é a força por unidade de área, por exemplo, a pressão sobre o sacro.",
     "distractorAnalysis": [
       "Está incorreta: A pressão é escalar e não se mede em newtons; o tendão do bíceps não a define.",
       "Está incorreta: A medida de inércia é a massa, e não a pressão.",
@@ -1796,7 +1796,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1095,
     "topicId": 1,
-    "question": "Qual é a distinção física essencial entre Massa (m) e Peso (P) estabelecida na tabela da biomecânica?",
+    "question": "Qual é a distinção física essencial entre massa e peso?",
     "options": [
       "Massa é medida em newtons, e peso é medido em quilogramas, por convenção do SI.",
       "Massa e peso são a mesma grandeza física, diferindo no nome que se lhes dá.",
@@ -1815,7 +1815,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1096,
     "topicId": 1,
-    "question": "De acordo com a tabela de valores de referência, qual é a equivalência dimensional direta de 1 pascal (Pa) em unidades do SI?",
+    "question": "Qual é a equivalência dimensional de 1 pascal (Pa) em unidades do SI?",
     "options": [
       "1 Pa = 1 N/m², um newton por cada metro quadrado de área.",
       "1 Pa = 1 kg · m / s, equivalente a uma unidade de momento linear.",
@@ -1823,7 +1823,7 @@ const TOPIC_1_QUESTIONS = [
       "1 Pa = 1 kg / s², equivalente a uma unidade de tensão superficial."
     ],
     "correctIndex": 0,
-    "explanation": "Indica-se explicitamente: 'pascal (N/m²)', significando que 1 Pa corresponde à pressão exercida por uma força de um newton distribuída uniformemente por uma área de um metro quadrado.",
+    "explanation": "1 Pa corresponde à pressão exercida por uma força de 1 N distribuída uniformemente por uma área de 1 m².",
     "distractorAnalysis": [
       "Está incorreta: kg · m / s é unidade de momento linear (quantidade de movimento), e não de pressão.",
       "Está incorreta: N · m é a unidade de momento de força ou de energia, e não de pressão.",
@@ -1834,7 +1834,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1097,
     "topicId": 1,
-    "question": "Qual é o exemplo biofísico de referência clássico para ilustrar uma força gerada ativamente no corpo humano?",
+    "question": "Qual é um exemplo de força gerada ativamente pelo corpo humano?",
     "options": [
       "A pressão intracraniana medida por um cateter ventricular.",
       "A força muscular de contração do quadríceps.",
@@ -1842,7 +1842,7 @@ const TOPIC_1_QUESTIONS = [
       "A força normal exercida pelo colchão sobre o doente."
     ],
     "correctIndex": 1,
-    "explanation": "Cita-se expressamente como exemplo de força: 'Força muscular de contração do quadríceps'.",
+    "explanation": "A contração dos músculos, como o quadríceps, gera forças ativas: o músculo puxa o tendão, que transmite a força ao osso.",
     "distractorAnalysis": [
       "Está incorreta: A pressão intracraniana é uma pressão (grandeza escalar), e não uma força.",
       "Está incorreta: O peso é a força gravítica exercida pela Terra sobre o corpo, e não uma força gerada ativamente por este.",
@@ -1872,7 +1872,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1099,
     "topicId": 1,
-    "question": "Por que razão a Pressão (p) é classificada como grandeza Escalar na tabela de valores de referência?",
+    "question": "Porque é que a pressão é uma grandeza escalar?",
     "options": [
       "Porque a pressão atua no sentido horizontal, para a esquerda.",
       "Porque se mede em pascal, e não em newton, como as grandezas vetoriais.",
@@ -1891,7 +1891,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1100,
     "topicId": 1,
-    "question": "Qual das seguintes quatro grandezas analisadas no resumo é a ÚNICA cuja unidade SI é o quilograma (kg)?",
+    "question": "Qual das seguintes grandezas tem como unidade SI o quilograma (kg)?",
     "options": [
       "Massa (m), medida da quantidade de matéria de um corpo.",
       "Força (F), grandeza que produz aceleração ou deformação.",
@@ -1899,7 +1899,7 @@ const TOPIC_1_QUESTIONS = [
       "Pressão (p), força exercida por unidade de área."
     ],
     "correctIndex": 0,
-    "explanation": "Na tabela de grandezas de biofísica, a única grandeza expressa em quilogramas (kg) é a Massa (m). Força e Peso medem-se em newtons (N), e Pressão mede-se em pascal (N/m²).",
+    "explanation": "A massa é a única destas grandezas expressa em quilogramas (kg). A força e o peso medem-se em newtons (N), e a pressão em pascal (N/m²).",
     "distractorAnalysis": [
       "Está incorreta: A força mede-se em newtons, e não em quilogramas.",
       "Está incorreta: O peso é uma força e mede-se em newtons.",
@@ -1929,7 +1929,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1102,
     "topicId": 1,
-    "question": "No desafio clínico, por que razão o enfermeiro sem cinto choca contra a divisória com uma força da ordem de milhares de newtons?",
+    "question": "Um enfermeiro sem cinto de segurança choca contra a divisória de uma ambulância que trava bruscamente a 80 km/h. Por que razão a força do impacto pode atingir milhares de newtons?",
     "options": [
       "Porque a massa corporal do profissional aumenta com a velocidade do veículo.",
       "Porque a Terra puxa o profissional na horizontal, por atração gravítica intensa.",
@@ -1948,7 +1948,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1103,
     "topicId": 1,
-    "question": "No desafio clínico, por que razão a divisória da ambulância vai ficar amolgada ou partir com o impacto do enfermeiro?",
+    "question": "Por que razão a divisória de uma ambulância pode ficar amolgada ou partir quando o corpo de um enfermeiro sem cinto a atinge?",
     "options": [
       "Porque o enfermeiro, em movimento, exerce sobre a divisória mais força do que recebe dela.",
       "Porque só o enfermeiro exerce força; a divisória, por estar fixa, limita-se a recebê-la.",
@@ -2024,21 +2024,21 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1107,
     "topicId": 1,
-    "question": "No caso clínico de travagem de emergência analisado na aula, qual era a velocidade inicial de circulação da viatura antes da desaceleração brusca?",
+    "question": "Uma ambulância circula a 80 km/h. Qual é a sua velocidade em metros por segundo?",
     "options": [
-      "30 km/h",
-      "50 km/h",
-      "120 km/h",
-      "80 km/h"
+      "8,0 m/s",
+      "22,2 m/s",
+      "80 m/s",
+      "288 m/s"
     ],
-    "correctIndex": 3,
-    "explanation": "Estipula-se claramente o cenário: 'Considere uma ambulância em marcha de emergência que trava bruscamente a 80 km/h'.",
+    "correctIndex": 1,
+    "explanation": "1 km/h = 1000 m / 3600 s = 1/3,6 m/s. Logo, 80 km/h = 80 / 3,6 ≈ 22,2 m/s.",
     "distractorAnalysis": [
-      "Está incorreta: 30 km/h não é o valor do cenário em análise (80 km/h).",
-      "Está incorreta: 50 km/h é o limite geral dentro de localidades, mas o cenário em análise especifica 80 km/h.",
-      "Está incorreta: 120 km/h é o limite de autoestrada, superior ao valor indicado no caso clínico."
+      "Está incorreta: Dividir por 10 não é a conversão correta; 1 km/h = 1/3,6 m/s.",
+      "Está incorreta: 80 km/h não são 80 m/s; a conversão divide por 3,6.",
+      "Está incorreta: Multiplicar por 3,6 faz a conversão no sentido errado."
     ],
-    "nursingApplication": "Permite aos alunos reconhecer os dados do problema biomecânico explorado nas aulas."
+    "nursingApplication": "Ajuda a converter velocidades entre km/h e m/s em cálculos de dinâmica, como os de travagem de emergência."
   },
   {
     "id": 1108,
@@ -2051,7 +2051,7 @@ const TOPIC_1_QUESTIONS = [
       "Que a gravidade terrestre é anulada durante movimentos de travagem de emergência."
     ],
     "correctIndex": 0,
-    "explanation": "O desafio demonstra a união das 3 leis: a 1.ª Lei explica por que o corpo é projetado (inércia), a 2.ª Lei quantifica a magnitude da força de travagem (F = m · a) e a 3.ª Lei explica a deformação da divisória (ação-reação).",
+    "explanation": "O cenário da colisão mostra a união das 3 leis: a 1.ª Lei explica por que o corpo é projetado (inércia), a 2.ª Lei quantifica a magnitude da força de travagem (F = m · a) e a 3.ª Lei explica a deformação da divisória (ação-reação).",
     "distractorAnalysis": [
       "Está incorreta: As leis de Newton aplicam-se a veículos e a seres vivos da mesma forma.",
       "Está incorreta: A Biofísica está ligada à prática clínica, e não é apenas teórica.",
@@ -2950,7 +2950,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: Estes são ossos do membro inferior (articulação do joelho).",
       "Está incorreta: Estes são ossos constituintes do pé humano."
     ],
-    "nursingApplication": "Integração anatómica direta com os conteúdos lecionados na aula de Biofísica de 1.º ano."
+    "nursingApplication": "Integração anatómica direta com os conceitos de alavancas do aparelho locomotor."
   },
   {
     "id": 1156,
@@ -3229,7 +3229,7 @@ const TOPIC_1_QUESTIONS = [
       "F_P · b_R = F_R · b_P"
     ],
     "correctIndex": 2,
-    "explanation": "A igualdade entre o Momento Potente e o Momento Resistente (M_P = M_R) é o pilar de resolução de todos os problemas de alavancas estáticas da aula.",
+    "explanation": "A igualdade entre o Momento Potente e o Momento Resistente (M_P = M_R) é a base para resolver problemas de alavancas em equilíbrio estático.",
     "distractorAnalysis": [
       "Está incorreta: Somar forças ignora os braços de momento e o efeito de rotação em torno do fulcro.",
       "Está incorreta: A razão entre braços depende da geometria do sistema e não da constante g.",
@@ -3259,19 +3259,19 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1172,
     "topicId": 1,
-    "question": "No modelo biomecânico do cotovelo a 90°, quais são as distâncias ao cotovelo do centro de massa do antebraço+mão, da inserção do bíceps e do objeto na mão?",
+    "question": "Num cotovelo fletido a 90°, o centro de massa do antebraço e da mão está a 15 cm do cotovelo, a inserção do bíceps a 8 cm e o objeto segurado na mão a 30 cm. Quais são estas distâncias em metros?",
     "options": [
-      "d_antebraço+mão = 15 cm; d_E = 8 cm; d_R = 30 cm.",
-      "d_antebraço+mão = 50 cm; d_E = 20 cm; d_R = 10 cm.",
-      "d_antebraço+mão = 1,2 m; d_E = 2,4 m; d_R = 3,6 m.",
-      "d_antebraço+mão = 8 cm; d_E = 30 cm; d_R = 15 cm."
+      "0,15 m; 0,08 m; 0,30 m",
+      "1,5 m; 0,8 m; 3,0 m",
+      "0,015 m; 0,008 m; 0,030 m",
+      "15 m; 8 m; 30 m"
     ],
     "correctIndex": 0,
-    "explanation": "Lista-se explicitamente: 'd antebraço+mão = 15 cm | d E = 8 cm | d R = 30 cm'. Convertidos para metros no SI: 0,15 m, 0,08 m e 0,30 m.",
+    "explanation": "1 cm = 0,01 m. Logo, 15 cm = 0,15 m, 8 cm = 0,08 m e 30 cm = 0,30 m.",
     "distractorAnalysis": [
-      "Está incorreta: Valores desproporcionados relativamente à anatomia do antebraço humano.",
-      "Está incorreta: 1,2 m, 2,4 m e 3,6 m são as medidas do baloiço do exercício anterior.",
-      "Está incorreta: As distâncias foram trocadas entre as diferentes estruturas anatómicas."
+      "Está incorreta: Confunde centímetros com decímetros: 15 cm são 0,15 m, e não 1,5 m.",
+      "Está incorreta: Divide por 1000 em vez de 100: 15 cm são 0,15 m, e não 0,015 m.",
+      "Está incorreta: 15 cm não são 15 m; a conversão de centímetros para metros divide por 100."
     ],
     "nursingApplication": "Fixa a conversão de unidades de centímetros para metros indispensável para o cálculo de momentos em N·m."
   },
@@ -3620,7 +3620,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1191,
     "topicId": 1,
-    "question": "Na tabela de estabilidade biomecânica, para o fator 'Altura do centro de gravidade (CG)', qual é a condição de alta estabilidade e a intervenção recomendada?",
+    "question": "Quanto à altura do centro de gravidade, qual é a condição de alta estabilidade e a intervenção recomendada?",
     "options": [
       "Condição: Mais alto (pontas dos pés); Intervenção: Manter o tronco esticado e rígido.",
       "Condição: CG no pescoço; Intervenção: Manter a cama no nível mais alto possível.",
@@ -3628,7 +3628,7 @@ const TOPIC_1_QUESTIONS = [
       "Condição: Mais baixo (joelhos e ancas fletidos); Intervenção: Fletir os joelhos ao esforçar-se."
     ],
     "correctIndex": 3,
-    "explanation": "Especifica-se: Fator: Altura do CG | Alta estabilidade: Mais baixo (joelhos e ancas ligeiramente fletidos) | Instabilidade: Mais alto (pontas dos pés ou tronco esticado) | Intervenção: Fletir os joelhos ao realizar esforço ou mobilização.",
+    "explanation": "Um centro de gravidade mais baixo aumenta a estabilidade: fletir os joelhos e as ancas ao esforçar-se ou ao mobilizar um doente baixa o centro de gravidade. Pelo contrário, ficar nas pontas dos pés ou com o tronco esticado eleva-o e torna a postura instável.",
     "distractorAnalysis": [
       "Está incorreta: Estar nas pontas dos pés eleva o CG, e é uma condição de instabilidade.",
       "Está incorreta: Uma cama alta não é a intervenção que estabiliza o centro de gravidade; a altura deve ajustar-se à cintura do profissional.",
@@ -3639,15 +3639,15 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1192,
     "topicId": 1,
-    "question": "Na tabela de estabilidade biomecânica, qual é a recomendação para o 'Tamanho da base de sustentação (BS)' em situação de alta estabilidade?",
+    "question": "Em situação de alta estabilidade, como deve ser a base de sustentação de um profissional que mobiliza um doente?",
     "options": [
-      "Base ampla, com pés afastados à largura dos ombros: 30 a 40 cm.",
+      "Base ampla, com pés afastados à largura dos ombros.",
       "Base estreita, mantendo os pés juntos ou equilibrando-se num pé.",
       "Pés afastados a 60 cm, com o tronco inclinado para a frente.",
       "Apoiar as mãos no solo, sem contacto dos pés, durante a mobilização."
     ],
     "correctIndex": 0,
-    "explanation": "Indica-se textualmente: 'Condição de alta estabilidade: Ampla (pés afastados à largura dos ombros: 30-40 cm)'.",
+    "explanation": "Uma base ampla, com os pés afastados à largura dos ombros, alarga a área de sustentação e aumenta a estabilidade.",
     "distractorAnalysis": [
       "Está incorreta: Uma base estreita reduz a estabilidade.",
       "Está incorreta: Inclinar o tronco para a frente aproxima a linha de gravidade do bordo anterior da base e aumenta a carga lombar.",
@@ -3677,7 +3677,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1194,
     "topicId": 1,
-    "question": "Na tabela de estabilidade biomecânica, para o fator 'Posição da linha de gravidade', qual é a condição de alta estabilidade?",
+    "question": "Quanto à posição da linha de gravidade, em que situação há alta estabilidade?",
     "options": [
       "Posicionada fora dos bordos da base de apoio, inclinada a 80 graus.",
       "Oscilando continuamente entre os calcanhares e as orelhas.",
@@ -3685,7 +3685,7 @@ const TOPIC_1_QUESTIONS = [
       "Paralela ao plano horizontal da cama de internamento."
     ],
     "correctIndex": 2,
-    "explanation": "Define-se: 'Condição de alta estabilidade: Centrada no meio do polígono de apoio'.",
+    "explanation": "Há alta estabilidade quando a linha de gravidade passa centrada no polígono de apoio (base de sustentação).",
     "distractorAnalysis": [
       "Está incorreta: Linha próxima ou fora dos bordos é a condição de instabilidade e risco iminente de queda.",
       "Está incorreta: Oscilações descontroladas indicam ataxia ou perturbação do equilíbrio vestibular.",
@@ -3715,15 +3715,15 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1196,
     "topicId": 1,
-    "question": "Na tabela de estabilidade biomecânica, que medida preventiva de enfermagem é expressamente recomendada quanto ao 'Atrito solo-calçado'?",
+    "question": "Que medida preventiva de enfermagem reduz o risco de queda relacionado com o atrito entre o solo e o calçado?",
     "options": [
-      "Proibir meias sem sola antiderrapante; preferir calçado de sola de borracha com relevo.",
+      "Evitar meias sem sola antiderrapante; preferir calçado de sola de borracha com relevo.",
       "Encerar os corredores com cera líquida pouco antes da marcha dos doentes.",
       "Incentivar os doentes operados a caminhar de meias de seda em piso molhado.",
       "Usar calçado de sola lisa para acelerar as deslocações pelos corredores."
     ],
     "correctIndex": 0,
-    "explanation": "Determina-se: Fator: Atrito solo-calçado | Alta estabilidade: Alto (sola de borracha com relevo em piso seco) | Risco: Baixo (meias em chão encerado ou molhado) | Intervenção: 'Proibir meias sem sola antiderrapante; preferir calçado de sola de borracha com relevo'.",
+    "explanation": "O atrito entre o solo e o calçado é maior com sola de borracha com relevo; meias sem sola antiderrapante, sobretudo em chão encerado ou molhado, aumentam o risco de escorregamento. Por isso, deve evitar-se o seu uso e preferir calçado com sola de borracha com relevo.",
     "distractorAnalysis": [
       "Está incorreta: Cera líquida reduz muito o atrito e é fator de risco de queda.",
       "Está incorreta: Meias lisas em piso molhado reduzem o atrito e favorecem escorregamentos.",
@@ -3799,7 +3799,7 @@ const TOPIC_1_QUESTIONS = [
       "Elimina a força normal entre o calçado e o chão hospitalar."
     ],
     "correctIndex": 0,
-    "explanation": "Fletir os joelhos e manter a coluna em posição neutra une todos os princípios da aula: 1. Baixa o CG; 2. Mantém a carga junto ao corpo e a linha de gravidade centrada; 3. Reduz o braço da força resistente sobre as vértebras (M = F · b), reduzindo o momento sobre a coluna lombar e o risco de lesões laborais.",
+    "explanation": "Fletir os joelhos e manter a coluna em posição neutra reúne os princípios de equilíbrio e ergonomia: 1. Baixa o CG; 2. Mantém a carga junto ao corpo e a linha de gravidade centrada; 3. Reduz o braço da força resistente sobre as vértebras (M = F · b), reduzindo o momento sobre a coluna lombar e o risco de lesões laborais.",
     "distractorAnalysis": [
       "Está incorreta: Rodar a coluna aumenta o risco de lesão, e o levantamento não se faz em menos de 0,1 segundo.",
       "Está incorreta: A gravidade atua na vertical e não alivia o peso do objeto.",
