@@ -867,17 +867,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Ao caminhar no chão da enfermaria, o pé empurra o piso para trás. Qual é a força que impulsiona a pessoa para a frente?",
     "options": [
-      "A força de atrito que o calçado exerce sobre o piso, dirigida para trás.",
+      "A força de atrito que o piso exerce sobre o pé, dirigida para trás, que trava a marcha.",
       "A elasticidade da sola do sapato, que devolve a energia para a frente.",
-      "A reação do piso, que empurra a sola do calçado para a frente, em cada passo.",
+      "A força de atrito do piso sobre a sola, dirigida para a frente, que empurra a pessoa.",
       "A força dos músculos da perna, que atua diretamente sobre o próprio corpo."
     ],
     "correctIndex": 2,
-    "explanation": "Ao caminhar, o pé exerce uma força de ação para trás no solo; pela 3.ª Lei de Newton, o solo exerce uma força de reação para a frente sobre o pé (força de atrito estático), que propulsiona a marcha.",
+    "explanation": "Ao caminhar, o pé exerce uma força de ação para trás no solo; pela 3.ª Lei de Newton, o solo reage com uma força de atrito estático dirigida para a frente sobre o pé. É esta força de atrito que empurra a pessoa para a frente e propulsiona a marcha.",
     "distractorAnalysis": [
-      "Está incorreta: Esta força atua sobre o piso, e não sobre a pessoa; a força que a impulsiona é a reação do piso.",
-      "Está incorreta: A sola deforma-se e recupera, mas não é uma força externa que impulsiona a pessoa; a força vem da reação do piso.",
-      "Está incorreta: A força muscular é interna e não acelera o corpo por si só; é a reação do piso que o impulsiona."
+      "Está incorreta: Na fase de impulsão, o atrito do piso sobre o pé é dirigido para a frente, e é esse atrito que impulsiona a pessoa.",
+      "Está incorreta: A sola deforma-se e recupera, mas não é uma força externa que impulsiona a pessoa; a força vem do atrito do piso.",
+      "Está incorreta: A força muscular é interna e não acelera o corpo por si só; é o atrito do piso que o impulsiona."
     ],
     "nursingApplication": "Compreensão essencial para avaliar o risco de escorregamento e queda em pisos molhados sem aderência."
   },
