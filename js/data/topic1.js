@@ -602,7 +602,7 @@ const TOPIC_1_QUESTIONS = [
     "question": "Qual é o enunciado correto da 2.ª Lei de Newton?",
     "options": [
       "A força resultante é igual ao produto da massa do corpo pela aceleração adquirida.",
-      "A aceleração de um corpo não depende da força que lhe é aplicada, mas apenas da sua massa.",
+      "A aceleração de um corpo não depende da força que lhe é aplicada, mas da sua massa.",
       "Dois corpos em repouso atraem-se com força proporcional à soma das suas massas.",
       "A força resultante é igual ao produto da massa do corpo pela sua velocidade."
     ],
