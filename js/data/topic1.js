@@ -371,21 +371,21 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1020,
     "topicId": 1,
-    "question": "Se o ângulo de inserção de um tendão relativamente à diáfise óssea se alterar durante uma flexão articular, o que acontece à componente de força que produz rotação?",
+    "question": "Dois enfermeiros puxam uma maca na mesma direção e no mesmo sentido, com forças de 60 N e 40 N. Qual é a força resultante?",
     "options": [
-      "Permanece inalterada, independentemente do ângulo de inserção do membro.",
-      "Varia, pois a componente de rotação depende da inclinação do tendão.",
-      "Anula-se, impedindo o movimento articular futuro.",
-      "Passa a atuar no sentido oposto, por ação da gravidade sobre o osso."
+      "0 N, porque as duas forças se anulam.",
+      "100 N, no mesmo sentido, porque as intensidades se somam.",
+      "20 N, porque as intensidades se subtraem.",
+      "2400 N, por multiplicação das intensidades."
     ],
     "correctIndex": 1,
-    "explanation": "À medida que a articulação dobra, o ângulo do tendão muda, alterando a componente útil para rodar o osso e a componente de compressão articular (ou, para ângulos muito abertos, de afastamento).",
+    "explanation": "Com a mesma direção e o mesmo sentido, somam-se as intensidades: Fr = 60 N + 40 N = 100 N, no sentido do movimento. Esta é a força que determina a aceleração da maca, segundo a 2.ª Lei de Newton.",
     "distractorAnalysis": [
-      "Está incorreta: A componente de rotação depende do ângulo, e por isso varia com ele.",
-      "Está incorreta: A mudança de ângulo altera a componente de rotação, mas não a anula nem impede o movimento articular.",
-      "Está incorreta: A gravidade não inverte o sentido da força do tendão só por se mudar o ângulo."
+      "Está incorreta: As forças só se anulam quando têm sentidos opostos; aqui têm o mesmo sentido.",
+      "Está incorreta: Forças com o mesmo sentido somam-se, e não se subtraem.",
+      "Está incorreta: A resultante obtém-se por soma vetorial, e não por multiplicação das intensidades."
     ],
-    "nursingApplication": "Explica porque é que, em certos ângulos articulares, a mesma força muscular produz maior efeito de rotação do que noutros."
+    "nursingApplication": "Mostra porque uma equipa que puxa no mesmo sentido aplica uma força maior do que cada elemento isolado."
   },
   {
     "id": 1021,
