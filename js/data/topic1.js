@@ -2874,7 +2874,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A força resistente no meio define a alavanca Inter-resistente.",
       "Está incorreta: Todas as alavancas de Arquimedes possuem obrigatoriamente um fulcro de rotação."
     ],
-    "nursingApplication": "Exemplos clínicos: o baloiço, a tesoura hospitalar e a articulação atlanto-occipital da cabeça."
+    "nursingApplication": "Exemplos: o baloiço, a tesoura hospitalar e a articulação atlanto-occipital da cabeça."
   },
   {
     "id": 1152,
@@ -2893,7 +2893,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A força potente no meio caracteriza a alavanca interpotente.",
       "Está incorreta: Forças no mesmo ponto não formam os braços distintos de uma alavanca mecânica."
     ],
-    "nursingApplication": "Exemplos clínicos: o carrinho de mão, o quebra-nozes e a elevação na ponta dos pés, com o fulcro nas articulações dos dedos (metatarsofalângicas), a resistência no tornozelo (peso do corpo) e a força potente no tríceps sural (tendão de Aquiles)."
+    "nursingApplication": "Exemplos: o carrinho de mão, o quebra-nozes e a elevação na ponta dos pés, com o fulcro nas articulações dos dedos (metatarsofalângicas), a resistência no tornozelo (peso do corpo) e a força potente no tríceps sural (tendão de Aquiles)."
   },
   {
     "id": 1153,
@@ -2925,7 +2925,7 @@ const TOPIC_1_QUESTIONS = [
       "A elevação do calcanhar ao apoiar-se nas pontas dos pés."
     ],
     "correctIndex": 2,
-    "explanation": "Ilustra-se detalhadamente a alavanca interpotente através do membro superior (flexão do cotovelo pelo bíceps), rotulando as estruturas ósseas envolvidas.",
+    "explanation": "Na flexão do cotovelo, o fulcro é a articulação do cotovelo, a força potente é a do bíceps, inserido no rádio a poucos centímetros do fulcro, e a resistência é o peso do antebraço e do objeto na mão (Fulcro — F_P — F_R): alavanca interpotente.",
     "distractorAnalysis": [
       "Está incorreta: A articulação atlanto-occipital é o exemplo clássico de alavanca interfixa.",
       "Está incorreta: Os ossículos do ouvido formam uma alavanca de ganho de força (o martelo tem braço maior), o oposto de uma interpotente.",
@@ -2936,7 +2936,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1155,
     "topicId": 1,
-    "question": "Quais são os três ossos do membro superior especificamente rotulados no corpo humano na ilustração da alavanca interpotente?",
+    "question": "Quais são os três ossos que se articulam no cotovelo, o fulcro da alavanca interpotente do bíceps?",
     "options": [
       "Clavícula, Escápula e Esterno.",
       "Fémur, Rótula e Tíbia.",
@@ -2944,7 +2944,7 @@ const TOPIC_1_QUESTIONS = [
       "Úmero, Rádio e Cúbito."
     ],
     "correctIndex": 3,
-    "explanation": "Rotula-se expressamente na imagem anatómica da alavanca interpotente do cotovelo: 'Úmero', 'Rádio' e 'Cúbito'.",
+    "explanation": "Rotula-se expressamente na imagem anatómica da alavanca interpotente do cotovelo: 'Úmero', 'Rádio' e 'Cúbito'. O cotovelo articula o úmero (braço) com o rádio e o cúbito (antebraço); o bíceps insere-se na tuberosidade do rádio.",
     "distractorAnalysis": [
       "Está incorreta: Estes são ossos da cintura escapular e tórax anterior, não do cotovelo e antebraço.",
       "Está incorreta: Estes são ossos do membro inferior (articulação do joelho).",
@@ -2959,14 +2959,14 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "O braço potente é maior que o braço resistente (b_P > b_R), dando vantagem de força.",
       "O braço resistente é o dobro do braço potente.",
-      "Ambos os braços medem 1 metro, independentemente do tipo de alavanca.",
+      "Os dois braços são iguais (b_P = b_R) quando a carga fica a meio da barra.",
       "O braço potente é nulo, porque a carga fica entre o fulcro e a força."
     ],
     "correctIndex": 0,
     "explanation": "Como a resistência está entre o fulcro e a força potente (Fulcro — F_R — F_P), a distância do fulcro à força potente (b_P) é necessariamente superior à distância à carga (b_R). Assim, F_P < F_R: há multiplicação de força.",
     "distractorAnalysis": [
       "Está incorreta: b_R é menor que b_P na alavanca inter-resistente, e não o dobro.",
-      "Está incorreta: Os comprimentos dos braços variam com as dimensões de cada corpo e ferramenta.",
+      "Está incorreta: Os dois braços medem-se a partir do fulcro; com a carga a meio, b_R é metade de b_P.",
       "Está incorreta: O braço potente é o maior dos dois braços e vai do fulcro até ao ponto de aplicação da força potente."
     ],
     "nursingApplication": "Explica a vantagem mecânica de dispositivos como o carrinho de mão: com a carga entre o eixo e as mãos (b_P > b_R), transporta-se uma carga pesada com uma força inferior ao seu peso."
@@ -2979,16 +2979,16 @@ const TOPIC_1_QUESTIONS = [
       "A força muscular necessária é muito menor do que o peso da carga que se segura.",
       "O braço potente é menor que o resistente (b_P < b_R), exigindo mais força que a carga.",
       "A alavanca não consegue produzir movimento nem rotação da mão.",
-      "O peso do objeto segurado na mão transforma-se em calor, sem gerar momento."
+      "A força muscular é igual ao peso da carga, porque o sistema está em equilíbrio."
     ],
     "correctIndex": 1,
     "explanation": "Sendo a alavanca interpotente (Fulcro — F_P — F_R), b_P é mais curto que b_R. Pela Lei das Alavancas, para equilibrar o sistema o músculo tem de exercer uma força potente F_P muito superior à força resistente F_R.",
     "distractorAnalysis": [
       "Está incorreta: Com b_P < b_R, a força muscular é maior do que a carga, e não menor.",
       "Está incorreta: A alavanca produz rotação do antebraço em torno do cotovelo, com ganho de amplitude e velocidade.",
-      "Está incorreta: O peso não se transforma em calor; gera momento em torno do cotovelo."
+      "Está incorreta: No equilíbrio igualam-se os momentos, e não as forças; como b_P < b_R, a força muscular é maior do que a carga."
     ],
-    "nursingApplication": "Alerta para o facto de que os músculos do corpo suportam tensões internas muitas vezes superiores aos pesos que carregamos."
+    "nursingApplication": "Alerta para o facto de que muitos músculos e tendões suportam forças várias vezes superiores aos pesos que carregamos."
   },
   {
     "id": 1158,
@@ -2998,14 +2998,14 @@ const TOPIC_1_QUESTIONS = [
       "Alavanca inter-resistente, com a carga entre o fulcro e a força potente.",
       "Alavanca interpotente, com a força potente no meio do sistema.",
       "Alavanca interfixa, com o fulcro entre as forças potente e resistente.",
-      "Alavanca de deformação plastoviscoelástica, sem braços de momento."
+      "Não constituem alavancas, porque o eixo de rotação não está fixo ao solo."
     ],
     "correctIndex": 2,
     "explanation": "Na tesoura e no baloiço, o parafuso/eixo central (fulcro) situa-se a meio, entre a zona onde as mãos aplicam a força potente e as lâminas/assentos onde atua a resistência: Alavanca Interfixa.",
     "distractorAnalysis": [
       "Está incorreta: Na tesoura e no baloiço, a carga não está entre o fulcro e a força potente.",
       "Está incorreta: Na tesoura e no baloiço, o fulcro não está numa extremidade.",
-      "Está incorreta: Termos reológicos não definem a classificação mecânica geométrica de alavancas."
+      "Está incorreta: Uma alavanca precisa de um fulcro em torno do qual roda, e não de um eixo fixo ao solo; o parafuso da tesoura é o fulcro."
     ],
     "nursingApplication": "Compreensão do funcionamento de instrumentos cirúrgicos articulados comuns na prática diária de enfermagem."
   },
@@ -3020,13 +3020,13 @@ const TOPIC_1_QUESTIONS = [
       "Proporcionam ganho de amplitude e de velocidade na extremidade distal (mão ou pé)."
     ],
     "correctIndex": 3,
-    "explanation": "Nas alavancas interpotentes (3.ª classe), a força muscular potente atua entre o fulcro e a carga. Como o braço potente é menor que o braço resistente (VM < 1), o músculo tem de produzir maior tensão; em contrapartida, um pequeno encurtamento muscular de milímetros junto ao fulcro traduz-se num movimento angular amplo e muito rápido da extremidade livre distal. A biomecânica humana priorizou a agilidade e a amplitude de movimento sobre a vantagem de força bruta.",
+    "explanation": "Nas alavancas interpotentes (3.ª classe), a força muscular potente atua entre o fulcro e a carga. Como o braço potente é menor que o braço resistente (VM < 1), o músculo tem de produzir maior tensão; em contrapartida, como o músculo se insere perto do fulcro, um pequeno encurtamento muscular traduz-se numa rotação ampla e num deslocamento amplo e rápido da extremidade distal. Assim, estas alavancas privilegiam a amplitude e a velocidade do movimento em detrimento da vantagem de força.",
     "distractorAnalysis": [
       "Está incorreta: O aporte sanguíneo aos músculos não depende da classe da alavanca.",
       "Está incorreta: O atrito articular não é o motivo da classe da alavanca; é reduzido por líquido sinovial.",
       "Está incorreta: O peso do corpo não diminui com o movimento articular."
     ],
-    "nursingApplication": "Explica a elegância evolutiva da biomecânica humana: movimentos manuais ágeis e versáteis."
+    "nursingApplication": "Ajuda a compreender que gestos amplos e rápidos dos membros exigem forças musculares e tendinosas elevadas, o que é relevante na reabilitação e na prevenção de lesões."
   },
   {
     "id": 1160,
@@ -3052,10 +3052,10 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Numa alavanca interfixa equilibrada (baloiço com comprimento de 3,6 m onde o braço potente é o dobro do resistente, 3x = 3,6 m), qual é o valor obtido para x (braço resistente)?",
     "options": [
-      "X = 3,6 m",
-      "X = 1,2 m",
-      "X = 2,4 m",
-      "X = 0,6 m"
+      "x = 3,6 m",
+      "x = 1,2 m",
+      "x = 2,4 m",
+      "x = 0,6 m"
     ],
     "correctIndex": 1,
     "explanation": "Demonstra-se a resolução passo a passo: '3x = 3,6 (=) x = 1,2 m'. O braço resistente b_R é 1,2 m e o potente b_P é 2,4 m.",
@@ -3145,7 +3145,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1166,
     "topicId": 1,
-    "question": "Para equilibrar um Momento Resistente M_R = 1470 N·m através de uma Força Potente de 294 N (esforço correspondente a 30 kg, com g = 9,8 m/s²), que comprimento deve ter o braço potente (b_P)?",
+    "question": "Para equilibrar um Momento Resistente M_R = 1470 N·m através de uma Força Potente de 294 N (igual ao peso de uma massa de 30 kg, com g = 9,8 m/s²), que comprimento deve ter o braço potente (b_P)?",
     "options": [
       "b_P = 1,47 m",
       "b_P = 30 m",
@@ -3164,7 +3164,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1167,
     "topicId": 1,
-    "question": "O que comprova biomecanicamente o dimensionamento de uma alavanca interfixa que permite a uma pessoa equilibrar uma carga de 500 kg (4900 N) com uma força de 294 N (30 kg)?",
+    "question": "O que comprova biomecanicamente o dimensionamento de uma alavanca interfixa que permite a uma pessoa equilibrar uma carga de 500 kg (4900 N) com uma força de 294 N (o peso de uma massa de 30 kg)?",
     "options": [
       "Que a gravidade terrestre deixa de atuar quando as barras têm mais de 3 metros.",
       "Que é impossível erguer cargas superiores à massa corporal de um indivíduo.",
@@ -3183,7 +3183,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1168,
     "topicId": 1,
-    "question": "Num baloiço (alavanca interfixa) equilibrado com M_R = 24 N·m, se uma pessoa aplicar uma força potente de 15 N com um braço b_P = 2,4 m, o que acontecerá ao sistema?",
+    "question": "Num baloiço (alavanca interfixa) com M_R = 24 N·m, se uma pessoa aplicar uma força potente de 15 N com um braço b_P = 2,4 m, o que acontecerá ao sistema?",
     "options": [
       "O momento potente seria 36 N·m, superando M_R (24 N·m) e fazendo a alavanca girar.",
       "A alavanca permaneceria em repouso, sem movimento, como se as forças se anulassem.",
@@ -3191,13 +3191,13 @@ const TOPIC_1_QUESTIONS = [
       "A força resistente aumentaria instantaneamente para 36 N para impedir a rotação."
     ],
     "correctIndex": 0,
-    "explanation": "Com F_P = 15 N, M_P = 36 N·m. Como 36 N·m > 24 N·m, o momento resultante não é nulo (Mr = 12 N·m a favor da potência) e a alavanca roda acelerando no sentido potente.",
+    "explanation": "Com F_P = 15 N, M_P = 36 N·m. Como 36 N·m > 24 N·m, o momento resultante não é nulo (36 − 24 = 12 N·m, no sentido do momento potente) e a alavanca entra em rotação acelerada nesse sentido.",
     "distractorAnalysis": [
       "Está incorreta: A alavanca só ficaria em repouso se os momentos fossem iguais (F_P = 10 N).",
-      "Está incorreta: As leis da física não anulam momentos dinâmicos reais sem forças externas.",
+      "Está incorreta: O momento potente não se anula por si; só um momento de sentido oposto o pode compensar, e M_R (24 N·m) é inferior a 36 N·m.",
       "Está incorreta: A carga resistente tem massa e braço fixos, e o seu momento permanece em 24 N·m."
     ],
-    "nursingApplication": "Explica como se inicia o movimento articular ativo quando o músculo supera a resistência da carga."
+    "nursingApplication": "Explica como se inicia o movimento articular ativo quando o momento muscular supera o momento resistente da carga."
   },
   {
     "id": 1169,
@@ -3213,10 +3213,10 @@ const TOPIC_1_QUESTIONS = [
     "explanation": "Apresenta-se no topo a premissa de cálculo: 'g = 9,8 m/s²'.",
     "distractorAnalysis": [
       "Está incorreta: 10 m/s² é uma aproximação comum no ensino secundário, mas o valor adotado nesta unidade curricular é 9,8 m/s².",
-      "Está incorreta: 9,815 m/s² possui precisão excessiva não adotada no texto do professor.",
+      "Está incorreta: 9,815 m/s² não é o valor adotado nesta unidade curricular; o valor normalizado é cerca de 9,81 m/s², aqui arredondado para 9,8 m/s².",
       "Está incorreta: 3,6 é o fator de conversão de m/s para km/h, não o valor de g."
     ],
-    "nursingApplication": "Garante que os estudantes utilizem a constante de aceleração correta (9,8) nos exames teóricos."
+    "nursingApplication": "Garante que os estudantes utilizem o valor de g adotado (9,8 m/s²) nos exames teóricos."
   },
   {
     "id": 1170,
@@ -3235,7 +3235,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A razão entre braços depende da geometria do sistema e não da constante g.",
       "Está incorreta: Os braços estão cruzados incorretamente na fórmula apresentada nesta opção."
     ],
-    "nursingApplication": "Consolida a metodologia padrão de análise de forças rotacionais na biomecânica de enfermagem."
+    "nursingApplication": "Consolida a metodologia padrão de análise de momentos de força na biomecânica de enfermagem."
   },
   {
     "id": 1171,
@@ -3245,7 +3245,7 @@ const TOPIC_1_QUESTIONS = [
       "Antebraço+mão = 10 kg; Objeto = 5 kg.",
       "Antebraço+mão = 1 kg; Objeto = 2,5 kg.",
       "Antebraço+mão = 500 kg; Objeto = 30 kg.",
-      "Massa antebraço+mão = 2,5 kg; Massa objeto = 1 kg."
+      "Antebraço+mão = 2,5 kg; Objeto = 1 kg."
     ],
     "correctIndex": 3,
     "explanation": "Estabelece-se nos dados iniciais do problema: 'Massa antebraço+mão = 2,5 kg | Massa objeto = 1 kg'.",
@@ -3259,9 +3259,9 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1172,
     "topicId": 1,
-    "question": "No modelo biomecânico do cotovelo a 90°, quais são as distâncias anatómicas de ação (e respetivas conversões para o SI em metros) do centro de massa do antebraço, da inserção do bíceps e do objeto na mão?",
+    "question": "No modelo biomecânico do cotovelo a 90°, quais são as distâncias ao cotovelo do centro de massa do antebraço+mão, da inserção do bíceps e do objeto na mão?",
     "options": [
-      "d_antebraço+mão = 15 cm (0,15 m); d_E = 8 cm (0,08 m); d_R = 30 cm (0,30 m).",
+      "d_antebraço+mão = 15 cm; d_E = 8 cm; d_R = 30 cm.",
       "d_antebraço+mão = 50 cm; d_E = 20 cm; d_R = 10 cm.",
       "d_antebraço+mão = 1,2 m; d_E = 2,4 m; d_R = 3,6 m.",
       "d_antebraço+mão = 8 cm; d_E = 30 cm; d_R = 15 cm."
@@ -3301,11 +3301,11 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "M_antebraço = 2,5 N·m",
       "M_antebraço = 36,8 N·m",
-      "M_antebraço = 3,68 N·m.",
+      "M_antebraço = 3,68 N·m",
       "M_antebraço = 0,375 N·m"
     ],
     "correctIndex": 2,
-    "explanation": "Apresenta-se: 'M antebraço+mão = F · b (=) M = (2,5 × 9,8) × 0,15 (=) M = 3,68 N·m'.",
+    "explanation": "Apresenta-se: 'M antebraço+mão = F · b (=) M = (2,5 × 9,8) × 0,15 (=) M = 3,68 N·m' (valor exato 3,675 N·m, arredondado a 3,68 N·m).",
     "distractorAnalysis": [
       "Está incorreta: 2,5 é apenas o valor da massa em kg, sem multiplicar por g nem pelo braço.",
       "Está incorreta: 36,8 N·m resultaria de um erro de vírgula decimal na conversão de unidades.",
@@ -3321,7 +3321,7 @@ const TOPIC_1_QUESTIONS = [
       "M_total = 2,94 N·m",
       "M_total = 3,68 N·m",
       "M_total = 10,0 N·m",
-      "M_total = 6,62 N·m (2,94 + 3,68)"
+      "M_total = 6,62 N·m"
     ],
     "correctIndex": 3,
     "explanation": "Efetua-se a soma dos dois momentos de resistência no mesmo sentido horário: 'M antebraço+mão + M_R = 3,68 + 2,94 = 6,62 N·m'.",
@@ -3357,9 +3357,9 @@ const TOPIC_1_QUESTIONS = [
     "question": "Por que razão a força exercida pelo bíceps (82,75 N) é mais do que o dobro do peso total suportado (~34,3 N das massas somadas de 3,5 kg)?",
     "options": [
       "Porque o músculo bíceps tem uma constante de Hooke deficiente, sobretudo em repouso.",
-      "Porque o bíceps tem um braço muito curto (8 cm), e as forças resistentes atuam a 15 e 30 cm.",
-      "Porque a massa do antebraço aumenta com o esforço de flexão do cotovelo, em cada instante.",
-      "Porque o antebraço fica mais pesado quando o cotovelo está fletido a 90 graus, ao longo do tempo."
+      "Porque o braço do bíceps (8 cm) é muito menor do que os das cargas (15 e 30 cm).",
+      "Porque a massa do antebraço aumenta com o esforço de flexão do cotovelo.",
+      "Porque o antebraço fica mais pesado quando o cotovelo está fletido a 90°."
     ],
     "correctIndex": 1,
     "explanation": "Como a inserção tendinosa do bíceps se localiza muito perto da articulação (8 cm), o seu braço é muito mais curto que os braços das resistências (15 cm e 30 cm). Para gerar o mesmo momento de rotação, é forçado a produzir uma força substancialmente maior.",
@@ -3381,7 +3381,7 @@ const TOPIC_1_QUESTIONS = [
       "F_E = m · g · a, em que a força muscular depende da aceleração do antebraço."
     ],
     "correctIndex": 2,
-    "explanation": "Esquematiza-se: 'Em equilíbrio: F_P · b_P = F_r · b_r; Nesta situação: (F objeto · d_R) + (F antebraço+mão · d_antebraço) = F_E · d_E'.",
+    "explanation": "Esquematiza-se: 'Em equilíbrio: F_P · b_P = F_R · b_R; Nesta situação: (F objeto · d_R) + (F antebraço+mão · d_antebraço) = F_E · d_E'.",
     "distractorAnalysis": [
       "Está incorreta: Ignorar os braços de momento viola frontalmente a Lei das Alavancas de Arquimedes.",
       "Está incorreta: Os braços anatómicos associados a cada força estão incorretamente atribuídos nesta opção.",
@@ -3400,7 +3400,7 @@ const TOPIC_1_QUESTIONS = [
       "Aumentaria, pois o momento do objeto triplicaria, de 2,94 para 8,82 N·m."
     ],
     "correctIndex": 3,
-    "explanation": "Com o objeto a pesar 3 kg, M_objeto = (3 × 9,8) × 0,3 = 8,82 N·m. Somando aos 3,68 N·m do antebraço dá 12,50 N·m. A força do bíceps passaria para 12,50 / 0,08 = 156,25 N.",
+    "explanation": "Com o objeto a pesar 3 kg, M_objeto = (3 × 9,8) × 0,3 = 8,82 N·m. Somando aos 3,68 N·m do antebraço dá 12,50 N·m. A força do bíceps passaria para 12,50 / 0,08 = 156,25 N: quase duplica, mas não triplica, porque o momento do antebraço (3,68 N·m) se mantém.",
     "distractorAnalysis": [
       "Está incorreta: A força muscular não é constante; varia com o momento resistente total.",
       "Está incorreta: O peso da mão aumenta o momento resistente, e não o diminui.",
@@ -3413,7 +3413,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Que conclusão biomecânica geral se extrai da análise da alavanca interpotente do bíceps no corpo humano?",
     "options": [
-      "O sistema osteomuscular opera em desvantagem mecânica, exigindo forças musculares elevadas.",
+      "As alavancas interpotentes operam em desvantagem mecânica, exigindo forças musculares elevadas.",
       "Os ossos humanos são alavancas ideais, que exigem pouca força para mover cargas.",
       "O bíceps humano dispensa as leis da física clássica quando segura cargas.",
       "O antebraço é uma alavanca interfixa, em que o cotovelo se situa na ponta dos dedos."
@@ -3435,14 +3435,14 @@ const TOPIC_1_QUESTIONS = [
       "Ponto anatómico onde se mede a tensão arterial sistólica, no braço.",
       "Ponto onde se considera concentrada toda a massa e atua a resultante das forças gravíticas.",
       "Área geométrica de contacto entre a sola do calçado e o solo da enfermaria.",
-      "Linha imaginária que divide o corpo humano em hemisfério direito e esquerdo."
+      "Linha imaginária que divide o corpo humano em metades direita e esquerda."
     ],
     "correctIndex": 1,
     "explanation": "Define-se expressamente: 'Centro de gravidade: Ponto imaginário onde se considera concentrada toda a massa e onde atua a resultante de todas as forças gravíticas do corpo'.",
     "distractorAnalysis": [
       "Está incorreta: A tensão arterial mede-se no braço, mas não define o centro de gravidade.",
       "Está incorreta: A área de contacto dos pés é a base de sustentação, e não o centro de gravidade.",
-      "Está incorreta: A linha divisória do corpo não define o centro de gravidade."
+      "Está incorreta: Essa é a linha média do corpo; o centro de gravidade é um ponto, e não uma linha."
     ],
     "nursingApplication": "Conceito primordial para a avaliação do equilíbrio postural e risco de queda em geriatria."
   },
@@ -3472,7 +3472,7 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Permanece imóvel e fixo à 2.ª vértebra sagrada, mesmo que a pessoa salte ou corra.",
       "Desaparece durante a marcha, como se o corpo deixasse de ter massa.",
-      "Passa a situar-se fora do corpo, na superfície do chão.",
+      "Passa a situar-se no chão, entre os dois pés, onde o corpo se apoia.",
       "Desloca-se com o movimento (por exemplo, sobe ao elevar os braços e avança ao inclinar o tronco)."
     ],
     "correctIndex": 3,
@@ -3480,7 +3480,7 @@ const TOPIC_1_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: O centro de gravidade desloca-se com os movimentos do corpo; não fica fixo.",
       "Está incorreta: O centro de gravidade não desaparece; existe em todos os corpos com massa.",
-      "Está incorreta: O centro de gravidade pertence ao corpo, e não à superfície do chão."
+      "Está incorreta: No chão situa-se a projeção do centro de gravidade (linha de gravidade), e não o próprio centro de gravidade."
     ],
     "nursingApplication": "Permite antecipar como gestos simples (como esticar os braços para alcançar um objeto) alteram o equilíbrio do doente."
   },
@@ -3491,17 +3491,17 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Área delimitada pelos pontos de contacto do corpo com a superfície de apoio.",
       "A altura em metros medida desde o chão até à 2.ª vértebra sagrada.",
-      "A velocidade terminal de queda de um corpo na atmosfera, medida em metros por segundo.",
+      "Soma das áreas de contacto das plantas dos pés, sem o espaço entre eles.",
       "O momento de força exercido pelo bíceps sobre a tuberosidade do rádio."
     ],
     "correctIndex": 0,
     "explanation": "Define-se: 'Base de sustentação: Área geométrica delimitada por todos os pontos de contacto de um corpo com a superfície que o suporta'.",
     "distractorAnalysis": [
       "Está incorreta: A distância do chão à vértebra é a altura do centro de gravidade, não a área da base.",
-      "Está incorreta: Velocidade terminal pertence à hidrodinâmica/aerodinâmica de fluidos.",
+      "Está incorreta: A base de sustentação inclui também a área entre os pontos de contacto, como o espaço entre os dois pés.",
       "Está incorreta: Momento do bíceps é o momento de força de flexão do cotovelo."
     ],
-    "nursingApplication": "Compreensão essencial para orientar o doente a afastar os pés para não cair durante o treino de marcha."
+    "nursingApplication": "Compreensão essencial para orientar o doente a afastar os pés, reduzindo o risco de queda durante o treino de marcha."
   },
   {
     "id": 1185,
@@ -3533,7 +3533,7 @@ const TOPIC_1_QUESTIONS = [
       "Porque o coração infantil bate com maior frequência cardíaca, empurrando o sangue para cima."
     ],
     "correctIndex": 2,
-    "explanation": "Nas crianças, a cabeça e o tronco superior são desproporcionalmente volumosos e pesados em comparação com os membros inferiores curtos. Como o CG é a média das posições ponderada pelas massas, ele desloca-se para o tórax/abdómen.",
+    "explanation": "Nas crianças, a cabeça e o tronco superior são desproporcionalmente volumosos e pesados em comparação com os membros inferiores curtos. Como o CG é a média das posições ponderada pelas massas, desloca-se para cima (tórax/abdómen).",
     "distractorAnalysis": [
       "Está incorreta: A densidade óssea não é a causa da posição do centro de gravidade nas crianças.",
       "Está incorreta: O calçado não explica a posição do centro de gravidade.",
@@ -3549,7 +3549,7 @@ const TOPIC_1_QUESTIONS = [
       "Desloca-se para a sola dos sapatos, aumentando a estabilidade, porque o peso fica mais baixo.",
       "Desloca-se para trás, ficando mais próximo da parede do corredor, sem alterar a postura.",
       "Permanece na 2.ª vértebra sagrada, sem se deslocar, mesmo quando o corpo se estica.",
-      "O centro de gravidade sobe em direção ao tórax, tornando a postura temporariamente mais instável."
+      "O centro de gravidade sobe alguns centímetros, tornando a postura temporariamente mais instável."
     ],
     "correctIndex": 3,
     "explanation": "Indica-se claramente: 'sobe ao elevar os braços'. Elevar os membros superiores desloca massa para cima, subindo o CG e aumentando a distância até à base de sustentação, o que reduz a estabilidade postural.",
@@ -3594,7 +3594,7 @@ const TOPIC_1_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: Apoiar em menos pontos reduz a área de sustentação, e não a duplica.",
       "Está incorreta: A área entre os pés deixa de fazer parte da base quando um pé é levantado.",
-      "Está incorreta: A base limita-se aos pontos de contacto físico com o solo."
+      "Está incorreta: A base de sustentação é a área delimitada pelos pontos de contacto com o solo, e não o espaço envolvente."
     ],
     "nursingApplication": "Alerta de segurança: ao ajudar doentes a calçar sapatos ou vestir calças, preferir que se calcem e vistam sentados."
   },
@@ -3603,7 +3603,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a condição geométrica fundamental para que o corpo humano permaneça em equilíbrio estático estável sem tombar?",
     "options": [
-      "Que a cabeça esteja posicionada a uma altitude superior a 2000 metros, ao nível do mar.",
+      "Que o centro de gravidade se mantenha fixo à frente da 2.ª vértebra sagrada.",
       "Que a força potente exercida pelo quadríceps seja igual a zero newtons, em repouso total.",
       "Que a linha de gravidade (projeção vertical do centro de gravidade) fique dentro da base de sustentação.",
       "Que o atrito com o piso seja igual à força normal do leito, em todas as posições do corpo."
@@ -3611,7 +3611,7 @@ const TOPIC_1_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A estabilidade estática depende de a linha de gravidade passar por dentro do polígono de apoio (base de sustentação). Se sair para fora das margens da base, o peso gera momento de rotação que derruba o corpo.",
     "distractorAnalysis": [
-      "Está incorreta: A altitude não influencia a estabilidade estática do corpo.",
+      "Está incorreta: O centro de gravidade desloca-se com os movimentos sem que o corpo tombe; a condição é a linha de gravidade cair dentro da base.",
       "Está incorreta: O quadríceps atua na marcha e no equilíbrio; zero newtons não garante estabilidade.",
       "Está incorreta: O atrito e a força normal não definem a condição geométrica de equilíbrio."
     ],
@@ -3661,7 +3661,7 @@ const TOPIC_1_QUESTIONS = [
     "question": "No âmbito da estabilidade corporal e prevenção de quedas, que orientação de enfermagem deve ser dada ao doente durante uma transferência assistida?",
     "options": [
       "Mantenha os calcanhares juntos e as pontas dos pés encostadas, para se estabilizar.",
-      "Orientar o doente a afastar os pés, para ampliar a base de sustentação.",
+      "Afaste os pés ao transferir-se, para ampliar a base de sustentação.",
       "Avance rapidamente para a cadeira, com um impulso súbito do tronco.",
       "Eleve as mãos acima da cabeça e fique apoiado na ponta dos pés."
     ],
@@ -3669,7 +3669,7 @@ const TOPIC_1_QUESTIONS = [
     "explanation": "A intervenção de enfermagem recomendada expressamente é: 'Orientar o doente a afastar os pés ao transferir-se', ampliando a sua base e evitando o tombamento lateral.",
     "distractorAnalysis": [
       "Está incorreta: Pés juntos estreitam a base e causam instabilidade imediata.",
-      "Está incorreta: Avançar com impulso súbito gera forças inerciais violentas, com risco de queda.",
+      "Está incorreta: Um impulso súbito do tronco pode levar a linha de gravidade para fora da base, com risco de queda.",
       "Está incorreta: Elevar as mãos e apoiar-se na ponta dos pés eleva o centro de gravidade e reduz a base."
     ],
     "nursingApplication": "Comunicação terapêutica clara e segura durante procedimentos de reabilitação e mobilidade."
@@ -3706,7 +3706,7 @@ const TOPIC_1_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "Preconiza-se formalmente como intervenção de enfermagem recomendada: 'Manter a carga junto ao peito sem inclinar o tronco', mantendo a linha de gravidade combinada no centro da base.",
     "distractorAnalysis": [
-      "Está incorreta: Esticar os braços projeta a linha de gravidade para a frente, fora da base, e sobrecarrega a coluna.",
+      "Está incorreta: Esticar os braços desloca a linha de gravidade do conjunto para o bordo anterior da base e aumenta o momento sobre a coluna.",
       "Está incorreta: Inclinar o tronco lateralmente desvia a linha de gravidade para o bordo da base, com risco de queda.",
       "Está incorreta: Caminhar na ponta dos pés reduz a base e eleva o centro de gravidade."
     ],
@@ -3742,7 +3742,7 @@ const TOPIC_1_QUESTIONS = [
       "Aumentam a velocidade da marcha de forma significativa."
     ],
     "correctIndex": 1,
-    "explanation": "Estabelece-se: 'Dispositivos de apoio (Andarilho / Bengala): Multiplica a área da base em 3 a 5 vezes', alargando substancialmente os limites dentro dos quais a linha de gravidade pode oscilar sem queda.",
+    "explanation": "Estabelece-se: 'Dispositivos de apoio (Andarilho / Bengala): Multiplica a área da base em 3 a 5 vezes', alargando substancialmente os limites dentro dos quais a linha de gravidade pode oscilar sem queda. O aumento depende do dispositivo: é maior com o andarilho do que com uma bengala.",
     "distractorAnalysis": [
       "Está incorreta: Reduzir a base aumenta a instabilidade; os dispositivos de apoio fazem o contrário.",
       "Está incorreta: O peso do doente não se altera com um andarilho ou bengala.",
@@ -3755,7 +3755,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a intervenção de enfermagem recomendada para utentes que utilizam andarilho?",
     "options": [
-      "Incentivar o doente a caminhar muito à frente do andarilho, empurrando-o com um dedo.",
+      "Incentivar o doente a afastar bem o andarilho do corpo, para dar passos largos.",
       "Retirar o andarilho a doentes com marcha atáxica.",
       "Ensinar a usar o andarilho mantendo-se dentro dele.",
       "Usar o andarilho para transportar objetos pelo quarto, sem se apoiar nele."
@@ -3763,7 +3763,7 @@ const TOPIC_1_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "Indica-se textualmente: 'Intervenção de enfermagem recomendada: Ensinar a usar o andarilho mantendo-se dentro dele'.",
     "distractorAnalysis": [
-      "Está incorreta: Caminhar à frente do andarilho desloca a linha de gravidade para fora do polígono de apoio.",
+      "Está incorreta: Com o andarilho muito à frente, o doente inclina o tronco e sai do interior do apoio, o que aumenta o risco de queda.",
       "Está incorreta: Doentes com marcha atáxica precisam mais de apoio, e não menos.",
       "Está incorreta: Usar o andarilho sem se apoiar nele anula a sua função de estabilização."
     ],
@@ -3780,7 +3780,7 @@ const TOPIC_1_QUESTIONS = [
       "Ampliamos a base de sustentação, afastando a linha de gravidade do limite do apoio."
     ],
     "correctIndex": 3,
-    "explanation": "Ao afastar os pés a 30-40 cm, a base de sustentação alarga-se sobretudo lateralmente; quando o doente projeta o tronco para a frente ao levantar-se, a linha de gravidade permanece dentro da base, prevenindo o desequilíbrio e a queda.",
+    "explanation": "Ao afastar os pés a 30-40 cm, a base de sustentação alarga-se sobretudo lateralmente; a linha de gravidade fica mais longe dos bordos da base, e as oscilações do tronco ao levantar-se têm menor probabilidade de a levar para fora dela, o que reduz o risco de desequilíbrio e queda.",
     "distractorAnalysis": [
       "Está incorreta: O peso dos membros não aumenta com a posição dos pés.",
       "Está incorreta: A base mais ampla não elimina a necessidade de força muscular para levantar.",
@@ -3799,7 +3799,7 @@ const TOPIC_1_QUESTIONS = [
       "Elimina a força normal entre o calçado e o chão hospitalar."
     ],
     "correctIndex": 0,
-    "explanation": "Fletir os joelhos e manter a coluna em posição neutra une todos os princípios da aula: 1. Baixa o CG; 2. Mantém a carga junto ao corpo e a linha de gravidade centrada; 3. Reduz o braço da força resistente sobre as vértebras (M = F · b), reduzindo o momento sobre a coluna lombar e lesões laborais.",
+    "explanation": "Fletir os joelhos e manter a coluna em posição neutra une todos os princípios da aula: 1. Baixa o CG; 2. Mantém a carga junto ao corpo e a linha de gravidade centrada; 3. Reduz o braço da força resistente sobre as vértebras (M = F · b), reduzindo o momento sobre a coluna lombar e o risco de lesões laborais.",
     "distractorAnalysis": [
       "Está incorreta: Rodar a coluna aumenta o risco de lesão, e o levantamento não se faz em menos de 0,1 segundo.",
       "Está incorreta: A gravidade atua na vertical e não alivia o peso do objeto.",
