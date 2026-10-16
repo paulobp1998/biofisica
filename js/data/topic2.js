@@ -15,14 +15,14 @@ const TOPIC_2_QUESTIONS = [
       "A composição química do sangue e a concentração de hemoglobina.",
       "A propagação de ondas sonoras nos tecidos moles.",
       "A reação dos corpos à ação de forças deformadoras.",
-      "A regulação hormonal do volume de líquido extracelular."
+      "A medida da energia cinética de um corpo em movimento retilíneo uniforme."
     ],
     "correctIndex": 2,
     "explanation": "A reologia estuda as reações dos corpos quando sobre eles atuam forças deformadoras, classificando-os segundo o seu comportamento mecânico.",
     "distractorAnalysis": [
       "Está incorreta: a composição química do sangue é estudada na bioquímica e na hematologia, não no comportamento mecânico dos corpos.",
       "Está incorreta: a propagação de ondas sonoras é o objeto da acústica, que não analisa a deformação dos corpos.",
-      "Está incorreta: a regulação hormonal pertence à endocrinologia e não descreve a resposta mecânica de um corpo a forças."
+      "Está incorreta: a energia cinética de um corpo em MRU descreve o movimento, e não a deformação de um corpo sob forças deformadoras."
     ],
     "nursingApplication": "Permite compreender por que razão os tecidos do corpo respondem de forma diferente quando são comprimidos, esticados ou dobrados durante a mobilização de um doente."
   },
@@ -34,7 +34,7 @@ const TOPIC_2_QUESTIONS = [
       "Elasticidade",
       "Plasticidade",
       "Viscosidade",
-      "Rigidez"
+      "Rigidez mecânica"
     ],
     "correctIndex": 0,
     "explanation": "A elasticidade é a propriedade responsável pelo retorno à forma original de um corpo, após supressão das forças deformadoras.",
@@ -51,7 +51,7 @@ const TOPIC_2_QUESTIONS = [
     "question": "Qual das afirmações sobre os sólidos indeformáveis (sólidos de Euclides) está correta?",
     "options": [
       "São modelos teóricos em que a distância entre partículas não se altera, qualquer que seja a força aplicada.",
-      "Deformam-se de forma proporcional à tensão e recuperam integralmente a forma após a remoção da força.",
+      "Deformam-se de forma proporcional à tensão e recuperam integralmente a forma após a remoção da força, como uma mola de aço.",
       "Deformam-se apenas a partir de um limiar de tensão e mantêm a deformação máxima atingida.",
       "Deformam-se de forma dependente do tempo e não recuperam a forma original."
     ],
@@ -69,7 +69,7 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Qual dos seguintes corpos corresponde ao modelo de sólido de Hooke, dentro da zona de proporcionalidade?",
     "options": [
-      "Massa de pão",
+      "Massa de pão, sob compressão",
       "Plasticina",
       "Mola metálica",
       "Mel"
@@ -145,7 +145,7 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Ao aplicar uma carga constante sobre uma esponja, esta deforma-se progressivamente e, ao retirar a carga, recupera a forma apenas lentamente. Que tipo de corpo melhor descreve este comportamento?",
     "options": [
-      "Sólido de Euclides",
+      "Sólido de Euclides, modelo indeformável",
       "Corpo plástico",
       "Corpo viscoelástico",
       "Corpo viscoso"
@@ -186,7 +186,7 @@ const TOPIC_2_QUESTIONS = [
       "A deformação é independente do tempo de aplicação da força.",
       "A deformação depende simultaneamente da tensão e do tempo, com recuperação retardada.",
       "Não armazena qualquer energia elástica durante a deformação.",
-      "Recupera a forma original de imediato, sem dissipar energia."
+      "Recupera a forma original de imediato, como uma mola ideal, sem dissipar energia nem sofrer histerese."
     ],
     "correctIndex": 1,
     "explanation": "Nos corpos viscoelásticos a deformação é função simultânea da tensão e do tempo; armazenam energia, mas dissipam uma fração dela durante a deformação, e a recuperação é retardada.",
@@ -202,7 +202,7 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Porque é que os ossos e os músculos, classificados como corpos viscoelásticos, dissipam energia quando são deformados e libertados em ciclos de carga?",
     "options": [
-      "Porque seguem a lei de Hooke sem limite, recuperando integralmente a forma após cada ciclo.",
+      "Porque seguem a lei de Hooke sem limite, recuperando integralmente a forma após cada ciclo e sem perda de energia.",
       "Porque são corpos indeformáveis, e a energia se transforma em calor sem haver deformação.",
       "Porque são corpos viscosos, e a energia fica permanentemente retida no interior do tecido.",
       "Porque a deformação depende da tensão e do tempo, e parte da energia é dissipada por histerese."
@@ -221,7 +221,7 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Dois tecidos sofrem a mesma tensão mecânica. O tecido A tem módulo de Young maior do que o tecido B. Qual é a afirmação correta?",
     "options": [
-      "O tecido A sofre maior deformação relativa do que o tecido B.",
+      "O tecido A sofre maior deformação relativa do que o tecido B, por ser o mais deformável.",
       "Os dois tecidos sofrem a mesma deformação relativa.",
       "O tecido A sofre deformação relativa nula.",
       "O tecido A sofre menor deformação relativa do que o tecido B."
@@ -259,16 +259,16 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Porque é relevante para a enfermagem conhecer a elasticidade das artérias?",
     "options": [
-      "Porque as artérias são indeformáveis e não alteram o seu calibre com a pressão do sangue.",
+      "Porque as artérias só são elásticas na infância, deixando de o ser na idade adulta.",
       "Porque a elasticidade arterial permite amortecer a pulsação do sangue ao longo do ciclo cardíaco.",
-      "Porque a elasticidade arterial depende apenas da temperatura corporal.",
-      "Porque a elasticidade arterial substitui a função do coração no bombeamento do sangue."
+      "Porque a elasticidade arterial aumenta o débito cardíaco, isto é, o volume de sangue bombeado por minuto.",
+      "Porque a elasticidade arterial substitui a função do coração no bombeamento do sangue em cada batimento."
     ],
     "correctIndex": 1,
     "explanation": "As artérias são elásticas: distendem-se com a sístole e recuperam na diástole, o que amortece a pulsação gerada pelo coração.",
     "distractorAnalysis": [
-      "Está incorreta: as artérias deformam-se com a pressão do sangue, o que é precisamente o que lhes permite amortecer a pulsação.",
-      "Está incorreta: a elasticidade arterial depende da estrutura da parede (fibras de elastina e de colagénio), e não da temperatura corporal.",
+      "Está incorreta: as artérias mantêm a elasticidade na idade adulta, embora esta diminua com o envelhecimento.",
+      "Está incorreta: o débito cardíaco depende da frequência cardíaca e do volume de ejeção, não da elasticidade arterial, que amortece a pulsação.",
       "Está incorreta: a elasticidade arterial não substitui o coração; o bombeamento do sangue é gerado pelo miocárdio."
     ],
     "nursingApplication": "A perda de elasticidade das artérias com a idade faz aumentar a pressão de pulso, algo que o enfermeiro deve ter em conta na interpretação da tensão arterial de um idoso."
@@ -276,7 +276,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2215,
     "topicId": 2,
-    "question": "Quais são os cinco tipos de deformação estudados nesta aula?",
+    "question": "Quais são os cinco tipos de deformação básicos de deformação mecânica de um sólido?",
     "options": [
       "Tração, compressão, dilatação, fusão e sublimação.",
       "Elástica, plástica, viscosa, mista e nula.",
@@ -300,7 +300,7 @@ const TOPIC_2_QUESTIONS = [
       "Mantém-se constante desde o início, pois a tensão não varia.",
       "Diminui até anular-se, com recuperação completa da forma.",
       "Cresce continuamente enquanto a tensão atuar, sem recuperar a forma inicial.",
-      "Oscila em torno de um valor fixo, como uma mola em vibração."
+      "Oscila em torno de um valor fixo, como uma mola em vibração livre, sem qualquer amortecimento apreciável."
     ],
     "correctIndex": 2,
     "explanation": "Num corpo viscoso a deformação cresce com o tempo enquanto atuar a tensão, e não é restituída quando a tensão cessa.",
@@ -318,7 +318,7 @@ const TOPIC_2_QUESTIONS = [
     "options": [
       "O plástico deforma-se apenas com o tempo; o viscoso só deforma acima de um limiar de tensão.",
       "O plástico só deforma acima de um limiar de tensão; o viscoso deforma-se sob qualquer tensão.",
-      "Ambos recuperam integralmente a forma original após a remoção da tensão.",
+      "Ambos recuperam integralmente a forma original após a remoção da tensão, sem deformação residual.",
       "Ambos se deformam de forma proporcional à tensão, sem dependência do tempo."
     ],
     "correctIndex": 1,
@@ -335,9 +335,9 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Porque é que os sólidos indeformáveis são úteis como modelos teóricos, mesmo não existindo na natureza?",
     "options": [
-      "Porque reproduzem exatamente o comportamento de todos os tecidos vivos.",
+      "Porque reproduzem exatamente o comportamento de todos os tecidos vivos, incluindo ossos, músculos e artérias.",
       "Porque anulam o efeito das forças externas sobre o corpo.",
-      "Porque simplificam o cálculo ao desprezar a deformação, o que é uma aproximação válida quando esta é muito pequena.",
+      "Porque simplificam o cálculo ao desprezar a deformação, válida quando esta é muito pequena.",
       "Porque são o único modelo que descreve a histerese."
     ],
     "correctIndex": 2,
@@ -354,8 +354,8 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Qual das afirmações sobre um corpo plastoviscoelástico é correta?",
     "options": [
-      "Comporta-se como elástico acima de um valor mínimo e flui abaixo desse valor.",
-      "Comporta-se como elástico sob tensões abaixo de um valor mínimo e flui com deformação permanente acima desse valor.",
+      "Comporta-se como elástico acima de um valor mínimo de tensão, fluindo abaixo desse valor, sem deformação permanente.",
+      "Comporta-se como elástico abaixo de um valor mínimo de tensão e flui com deformação permanente acima dele.",
       "Flui sob qualquer tensão, por menor que seja, pois não tem tensão mínima.",
       "Nunca apresenta deformação permanente, mesmo com tensões elevadas."
     ],
@@ -392,7 +392,7 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Uma mola com constante elástica k = 200 N/m é alongada por uma força de 10 N, dentro do limite de proporcionalidade. Qual é o alongamento da mola?",
     "options": [
-      "2000 m",
+      "2,0 × 10³ m",
       "20 m",
       "0,05 m",
       "5 m"
@@ -431,7 +431,7 @@ const TOPIC_2_QUESTIONS = [
     "question": "Uma barra de secção transversal de 2,5 cm² é tracionada por uma força de 500 N, dentro do limite de proporcionalidade. Qual é a tensão mecânica na barra?",
     "options": [
       "2,0 × 10⁶ Pa",
-      "0,125 Pa",
+      "1,25 × 10⁻¹ Pa",
       "2,0 × 10² Pa",
       "2,0 × 10⁴ Pa"
     ],
@@ -603,7 +603,7 @@ const TOPIC_2_QUESTIONS = [
     "options": [
       "−2",
       "−0,05",
-      "+0,05",
+      "+0,05 (alongamento)",
       "−20"
     ],
     "correctIndex": 1,
@@ -618,10 +618,10 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2233,
     "topicId": 2,
-    "question": "Qual é o enunciado da lei de Hooke apresentado nesta aula?",
+    "question": "Qual é o enunciado da lei de Hooke ?",
     "options": [
       "A força elástica é proporcional à deformação do corpo, dentro do limite de proporcionalidade.",
-      "A força elástica é inversamente proporcional à deformação do corpo.",
+      "A força elástica é inversamente proporcional à deformação do corpo, sendo menor quanto maior for a deformação.",
       "A deformação é proporcional ao tempo de aplicação da força.",
       "A força elástica é proporcional ao quadrado da deformação do corpo."
     ],
@@ -773,9 +773,9 @@ const TOPIC_2_QUESTIONS = [
     "question": "Uma barra é submetida a duas forças convergentes, dirigidas uma para a outra, ao longo do seu eixo. Que tipo de deformação ocorre?",
     "options": [
       "Compressão",
-      "Tração",
-      "Flexão",
-      "Torção"
+      "Tração ao longo do eixo",
+      "Flexão transversal",
+      "Torção em torno do eixo"
     ],
     "correctIndex": 0,
     "explanation": "As forças convergentes aproximam as extremidades da barra ao longo do seu eixo, diminuindo o comprimento: é uma compressão.",
@@ -791,7 +791,7 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Duas forças divergentes, que se afastam uma da outra, atuam nas extremidades de uma barra ao longo do seu eixo. Qual é o efeito na barra?",
     "options": [
-      "Diminui o comprimento e aumenta a secção.",
+      "Diminui o comprimento e aumenta a secção transversal da barra.",
       "Aumenta o comprimento e a secção.",
       "Aumenta o comprimento e diminui a secção.",
       "Mantém o comprimento e diminui a secção."
@@ -810,7 +810,7 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Ao ficar de pé, a coluna vertebral de um adulto é comprimida ao longo do seu eixo. Modelando uma vértebra como uma barra, que alteração ocorre?",
     "options": [
-      "Aumento do comprimento e diminuição da secção.",
+      "Aumento do comprimento da vértebra e diminuição da secção transversal.",
       "Aumento do comprimento e da secção.",
       "Diminuição do comprimento e da secção.",
       "Diminuição do comprimento e aumento da secção."
@@ -848,7 +848,7 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Qual é a descrição correta do cisalhamento?",
     "options": [
-      "Encurtamento do eixo do sólido por forças convergentes ao longo do mesmo.",
+      "Encurtamento do eixo do sólido por forças convergentes ao longo do mesmo, sem alterar a secção.",
       "Curvatura das arestas retilíneas por forças perpendiculares ao eixo.",
       "Deslizamento de camadas paralelas por ação de forças tangenciais opostas.",
       "Rotação das secções em torno do eixo por um momento torsor."
@@ -886,7 +886,7 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Um tubo cilíndrico é segurado pelas extremidades, que são rodadas em sentidos opostos em torno do eixo do tubo. Que tipo de deformação ocorre?",
     "options": [
-      "Flexão, porque o tubo se curva.",
+      "Flexão, porque o tubo se curva ao ser segurado pelas extremidades.",
       "Torção, porque as secções rodam em torno do eixo.",
       "Compressão, porque o tubo encurta.",
       "Tração, porque o tubo se alonga."
@@ -906,9 +906,9 @@ const TOPIC_2_QUESTIONS = [
     "question": "Qual é a principal diferença entre forças de tração e forças de compressão?",
     "options": [
       "A tração é convergente e a compressão é divergente.",
-      "Ambas aumentam o comprimento, diferindo apenas no sentido.",
+      "Ambas aumentam o comprimento, diferindo apenas no sentido em que as forças são aplicadas.",
       "Ambas diminuem a área da secção.",
-      "A tração é divergente, aumentando o comprimento; a compressão é convergente, diminuindo o comprimento."
+      "A tração é divergente e alonga a barra; a compressão é convergente e encurta-a."
     ],
     "correctIndex": 3,
     "explanation": "Na tração as forças são divergentes e o comprimento aumenta; na compressão as forças são convergentes e o comprimento diminui.",
@@ -924,19 +924,19 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Porque é que levantar uma carga com os braços afastados do tronco sobrecarrega a coluna lombar?",
     "options": [
-      "Porque aumenta o momento flector na coluna, equilibrado pelos extensores.",
-      "Porque a carga passa a pesar menos quando é segurada longe do tronco.",
+      "Porque aumenta o momento fletor na coluna, equilibrado pelos extensores.",
+      "Porque a carga passa a pesar menos quando é segurada longe do tronco, aliviando a coluna lombar.",
       "Porque o braço da carga em relação à coluna se torna nulo.",
       "Porque o momento torsor sobre a coluna se torna nulo."
     ],
     "correctIndex": 0,
-    "explanation": "Afastar a carga do tronco aumenta o seu braço em relação à coluna lombar, e o momento flector resultante é equilibrado pela ação dos músculos extensores.",
+    "explanation": "Afastar a carga do tronco aumenta o seu braço em relação à coluna lombar, e o momento fletor resultante é equilibrado pela ação dos músculos extensores.",
     "distractorAnalysis": [
       "Está incorreta: a carga mantém o seu peso; é a distância ao tronco (o braço do momento) que aumenta.",
       "Está incorreta: o braço da carga em relação à coluna aumenta, e não se torna nulo.",
-      "Está incorreta: a carga afastada do tronco cria um momento flector, e não um momento torsor nulo."
+      "Está incorreta: a carga afastada do tronco cria um momento fletor, e não um momento torsor nulo."
     ],
-    "nursingApplication": "Na mobilização e no levantamento de doentes, o enfermeiro deve manter a carga próxima do tronco para reduzir o momento flector sobre a coluna lombar."
+    "nursingApplication": "Na mobilização e no levantamento de doentes, o enfermeiro deve manter a carga próxima do tronco para reduzir o momento fletor sobre a coluna lombar."
   },
   {
     "id": 2250,
@@ -963,9 +963,9 @@ const TOPIC_2_QUESTIONS = [
     "question": "Uma força tangencial é aplicada à face superior de um bloco de tecido, enquanto a face inferior está fixa. Que tipo de deformação resulta?",
     "options": [
       "Cisalhamento",
-      "Tração",
+      "Tração ao longo do eixo",
       "Compressão",
-      "Torção"
+      "Torção em torno do eixo"
     ],
     "correctIndex": 0,
     "explanation": "Forças tangenciais que atuam paralelamente à superfície produzem cisalhamento, fazendo deslizar as camadas do bloco umas sobre as outras.",
@@ -983,22 +983,22 @@ const TOPIC_2_QUESTIONS = [
     "options": [
       "Porque as forças tangenciais opostas fazem deslizar camadas de tecido umas sobre as outras, deformando-as.",
       "Porque a compressão, por si só, faz deslizar as camadas de pele umas sobre as outras.",
-      "Porque a tração ao longo do eixo do corpo alonga a pele apenas no sentido longitudinal.",
-      "Porque a torção do corpo no sentido do eixo longitudinal anula a tensão de corte."
+      "Porque a pressão normal sobre o sacro comprime as camadas da pele, e essa compressão é o único mecanismo da lesão.",
+      "Porque o atrito entre a pele e o lençol é nulo quando o doente escorrega, aumentando a pressão local."
     ],
     "correctIndex": 0,
     "explanation": "O deslizamento corresponde a forças de cisalhamento: forças tangenciais opostas deformam as camadas de pele e dos tecidos profundos, que ficam sob tensão de corte.",
     "distractorAnalysis": [
       "Está incorreta: a compressão encurta a camada de pele, mas não produz, por si só, o deslizamento tangencial característico.",
-      "Está incorreta: a tração ao longo do eixo alonga o tecido, mas o deslizamento entre camadas resulta de forças tangenciais.",
-      "Está incorreta: a torção gera tensão de corte no corpo, mas não a anula."
+      "Está incorreta: a compressão normal não é o único mecanismo; o deslizamento entre camadas resulta de forças tangenciais, que a compressão sozinha não produz.",
+      "Está incorreta: o atrito não é nulo quando o doente escorrega; é a força de atrito, e não a sua ausência, que aumenta o cisalhamento na pele."
     ],
     "nursingApplication": "Para prevenir lesões por pressão, a cabeceira deve ser elevada apenas o necessário, e usam-se dispositivos que reduzam o atrito e o deslizamento do doente, como lençóis de transferência."
   },
   {
     "id": 2253,
     "topicId": 2,
-    "question": "Qual dos seguintes NÃO é um tipo de deformação estudado nesta aula?",
+    "question": "Qual dos seguintes NÃO é um tipo de deformação mecânica?",
     "options": [
       "Torção",
       "Reologia",
@@ -1019,19 +1019,19 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Uma barra é dobrada e fica curva. O que acontece às fibras longitudinais da face côncava (interior da curva)?",
     "options": [
-      "Sofrem tração, alongando-se.",
+      "Sofrem tração, alongando-se até ao limite de rutura.",
       "Não sofrem qualquer deformação.",
       "Sofrem apenas cisalhamento puro.",
       "Sofrem compressão, encurtando-se."
     ],
     "correctIndex": 3,
-    "explanation": "Na flexão, a face côncava (interior da curva) fica comprimida, enquanto a face convexa (exterior) fica traccionada.",
+    "explanation": "Na flexão, a face côncava (interior da curva) fica comprimida, enquanto a face convexa (exterior) fica tracionada.",
     "distractorAnalysis": [
       "Está incorreta: a tração ocorre na face convexa, que é o exterior da curva, e não na face côncava.",
       "Está incorreta: na flexão as fibras longitudinais deformam-se, exceto as do eixo neutro; a face côncava não fica sem deformação.",
       "Está incorreta: o cisalhamento ocorre no plano das secções e não corresponde à deformação das fibras longitudinais da face."
     ],
-    "nursingApplication": "Num osso longo fletido, a face côncava fica em compressão e a face convexa em tração; a fratura por flexão inicia-se, em regra, pela face traccionada, que é a convexa."
+    "nursingApplication": "Num osso longo fletido, a face côncava fica em compressão e a face convexa em tração; a fratura por flexão inicia-se, em regra, pela face tracionada, que é a convexa."
   },
   {
     "id": 2255,
@@ -1082,13 +1082,13 @@ const TOPIC_2_QUESTIONS = [
       "Igual em todas as faces, pois a barra é simétrica."
     ],
     "correctIndex": 1,
-    "explanation": "Na flexão, a face convexa (inferior, neste caso) fica traccionada e a face côncava (superior) fica comprimida. A tensão normal de tração é máxima nas fibras mais afastadas do eixo neutro da face convexa.",
+    "explanation": "Na flexão, a face convexa (inferior, neste caso) fica tracionada e a face côncava (superior) fica comprimida. A tensão normal de tração é máxima nas fibras mais afastadas do eixo neutro da face convexa.",
     "distractorAnalysis": [
       "Está incorreta: na face superior a barra encurta-se, pelo que a tensão aí é de compressão.",
       "Está incorreta: no eixo neutro a tensão normal é nula, por definição.",
       "Está incorreta: a flexão cria tensões opostas nas duas faces, e não uma tensão igual em todas."
     ],
-    "nursingApplication": "Ao apoiar um membro numa tala ou numa almofada, a zona mais solicitada por flexão é a que está mais afastada do eixo neutro, a que deve ser vigiada quanto a pressão e lesão."
+    "nursingApplication": "Numa tala ou haste apoiada nas extremidades e carregada ao centro, a face convexa fica com maior tensão de tração, onde a rutura tende a começar."
   },
   {
     "id": 2258,
@@ -1133,7 +1133,7 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Quanto ao grau de elasticidade, como podem classificar-se os sólidos reais?",
     "options": [
-      "Sólidos de Euclides, sólidos de Hooke e corpos plásticos.",
+      "Sólidos de Euclides, sólidos de Hooke e corpos plásticos, consoante a sua reação a forças.",
       "Perfeitamente elásticos, imperfeitamente elásticos e inelásticos.",
       "Viscosos, viscoelásticos e plastoviscoelásticos.",
       "Elásticos, plásticos e indeformáveis, sem subdivisão."
@@ -1259,7 +1259,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: divide o alongamento pela constante, em vez de multiplicar, o que dá cerca de 0,00027 N.",
       "Está incorreta: divide a constante pelo alongamento, em vez de multiplicar, o que dá 3750 N."
     ],
-    "nursingApplication": "A força de um estribo de reabilitação depende da sua constante e do alongamento imposto, pelo que o enfermeiro deve confirmar a calibração do aparelho antes de o usar com um doente."
+    "nursingApplication": "A força de uma mola de resistência depende da sua constante e do alongamento imposto, algo que deve ser conhecido ao prescrever um exercício."
   },
   {
     "id": 2267,
@@ -1291,13 +1291,13 @@ const TOPIC_2_QUESTIONS = [
       "Flexão"
     ],
     "correctIndex": 3,
-    "explanation": "Curvar o tronco para a frente, com a carga afastada, cria um momento flector na coluna lombar, o que corresponde a uma deformação por flexão.",
+    "explanation": "Curvar o tronco para a frente, com a carga afastada, cria um momento fletor na coluna lombar, o que corresponde a uma deformação por flexão.",
     "distractorAnalysis": [
       "Está incorreta: a tração exige forças divergentes ao longo do eixo, que não são o efeito predominante de curvar o tronco.",
       "Está incorreta: o cisalhamento resulta de forças tangenciais opostas, e não de um momento que curva a coluna.",
       "Está incorreta: a torção resulta de rodar o tronco em torno do seu eixo, e não de o curvar para a frente."
     ],
-    "nursingApplication": "Na formação sobre técnicas de levantamento, o enfermeiro deve orientar o doente e a equipa a manter a carga próxima do tronco, para reduzir o momento flector sobre a coluna lombar."
+    "nursingApplication": "Na formação sobre técnicas de levantamento, o enfermeiro deve orientar o doente e a equipa a manter a carga próxima do tronco, para reduzir o momento fletor sobre a coluna lombar."
   },
   {
     "id": 2269,
@@ -1345,7 +1345,7 @@ const TOPIC_2_QUESTIONS = [
       "Constante elástica, em N/m.",
       "Deformação relativa, sem unidades.",
       "Tensão mecânica normal de compressão, em pascal.",
-      "Módulo de Young, em newton."
+      "Módulo de Young, em newton, por cada metro de comprimento."
     ],
     "correctIndex": 2,
     "explanation": "A pressão de interface é uma força normal por unidade de área, ou seja, uma tensão mecânica de compressão, expressa em pascal (N/m²).",
@@ -1362,9 +1362,9 @@ const TOPIC_2_QUESTIONS = [
     "question": "A mesma força atua sobre um osso numa zona de secção mais estreita do que o normal. Porque é que a tensão aumenta nessa zona?",
     "options": [
       "Porque a tensão aumenta quando a área aumenta.",
-      "Porque σ = F / S: com a mesma força, uma área menor dá uma tensão maior.",
+      "Porque σ = F / S: com a mesma força, menor área dá maior tensão.",
       "Porque a força aumenta quando a secção diminui.",
-      "Porque o módulo de Young aumenta com a área da secção."
+      "Porque o módulo de Young aumenta com a área da secção transversal do osso."
     ],
     "correctIndex": 1,
     "explanation": "A tensão é a força por unidade de área (σ = F / S). Com a mesma força, quanto menor a área, maior a tensão.",
@@ -1400,7 +1400,7 @@ const TOPIC_2_QUESTIONS = [
     "question": "Um corpo viscoelástico é sujeito a uma carga constante durante vários minutos e, depois, a carga é retirada. Como evolui a sua deformação?",
     "options": [
       "Aumenta com o tempo e recupera apenas com atraso após a retirada da carga.",
-      "Mantém-se igual ao início, porque a carga não varia.",
+      "Mantém-se igual ao início, porque a carga não varia e o tecido já está estabilizado.",
       "Diminui até zero, com recuperação imediata da forma.",
       "Mantém-se nula, porque a carga é constante."
     ],
@@ -1570,7 +1570,7 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "No modelo de sólido indeformável (sólido de Euclides), o que acontece quando se aplica uma força?",
     "options": [
-      "Deformação proporcional à força e reversível.",
+      "Deformação proporcional à força e reversível, desde que a tensão não ultrapasse o limite de proporcionalidade.",
       "Deformação dependente do tempo, sem recuperação.",
       "Deformação permanente acima de um limiar.",
       "Nenhuma deformação, apenas eventual movimento do corpo como um todo."
@@ -1627,17 +1627,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Porque é que um tendão, depois de carga prolongada, demora mais tempo a recuperar o comprimento inicial do que uma mola sujeita à mesma carga?",
     "options": [
-      "Porque é um sólido indeformável, que não recupera.",
+      "Porque é um sólido de Hooke, que recupera de forma proporcional ao tempo de carga.",
       "Porque é um corpo plástico, que nunca recupera.",
-      "Porque a constante elástica do tendão é infinita.",
+      "Porque é um corpo viscoso, que recupera a forma original com o tempo.",
       "Porque é viscoelástico: a recuperação é retardada e depende do tempo de carga."
     ],
     "correctIndex": 3,
     "explanation": "Os tecidos viscoelásticos, como o tendão, têm recuperação retardada, que depende da duração e da intensidade da carga, ao contrário da mola de Hooke, que recupera de imediato.",
     "distractorAnalysis": [
-      "Está incorreta: um sólido indeformável não se deforma e, por isso, não teria de recuperar qualquer comprimento.",
+      "Está incorreta: um sólido de Hooke recupera de imediato e de forma proporcional à força, sem depender do tempo de carga.",
       "Está incorreta: um corpo plástico mantém a deformação, mas o tendão recupera, ainda que com atraso.",
-      "Está incorreta: uma constante infinita significaria rigidez total, o que não se verifica num tendão."
+      "Está incorreta: um corpo viscoso não recupera a forma original, por isso não descreve o tendão, que recupera com atraso."
     ],
     "nursingApplication": "Após esforços prolongados, o tendão precisa de períodos de repouso antes de voltar a ser solicitado com a mesma intensidade, o que deve ser planeado no programa de reabilitação."
   },
@@ -1677,7 +1677,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: lê 0,02 m² como 2 m², o que dá 1,5 × 10² Pa.",
       "Está incorreta: usa 0,05 m² em vez de 0,02 m², o que dá 6,0 × 10³ Pa."
     ],
-    "nursingApplication": "Calcular a pressão de interface a partir da força e da área de contacto permite comparar superfícies de apoio e decidir quando reposicionar o doente."
+    "nursingApplication": "Calcular a pressão de interface a partir da força e da área de contacto permite comparar superfícies de apoio e escolher a superfície que melhor distribui a pressão sobre as zonas de risco."
   },
   {
     "id": 2289,
@@ -1761,7 +1761,7 @@ const TOPIC_2_QUESTIONS = [
     "question": "Qual é a expressão da força restauradora de um sólido de Hooke, quando deslocado de x a partir da posição de equilíbrio?",
     "options": [
       "F = k / x",
-      "F = k · x²",
+      "F = k · x² / 2",
       "F = x / k",
       "F = −k · x"
     ],
@@ -1817,9 +1817,9 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Qual é a diferença essencial entre um corpo viscoelástico e um corpo plastoviscoelástico?",
     "options": [
-      "O viscoelástico recupera com atraso; o plastoviscoelástico, acima de um limiar, fica com deformação permanente.",
+      "O viscoelástico recupera com atraso; o plastoviscoelástico fica deformado acima de um limiar.",
       "O viscoelástico nunca recupera; o plastoviscoelástico recupera sempre.",
-      "Não há diferença, pois ambos têm uma tensão mínima para fluir.",
+      "Não há diferença, pois ambos têm uma tensão mínima para fluir e recuperam com atraso após a carga.",
       "O viscoelástico tem tensão mínima para fluir; o plastoviscoelástico não tem."
     ],
     "correctIndex": 0,
@@ -1855,7 +1855,7 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Duas barras têm o mesmo material e a mesma secção. Se o comprimento inicial de uma barra for triplicado, como varia a sua constante elástica?",
     "options": [
-      "Triplica.",
+      "Triplica, aumentando a rigidez do corpo.",
       "Mantém-se.",
       "Diminui para um terço.",
       "Diminui para um nono."
@@ -1875,7 +1875,7 @@ const TOPIC_2_QUESTIONS = [
     "question": "Num ensaio com uma mola, a força aplicada é representada em função do alongamento, e obtém-se uma reta. Que grandeza corresponde ao declive desta reta?",
     "options": [
       "E, o módulo de Young, em Pa",
-      "k, a constante elástica da mola, em N/m",
+      "k, constante elástica, em N/m",
       "σ, a tensão mecânica, em Pa",
       "ε, a deformação relativa, sem unidades"
     ],
