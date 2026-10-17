@@ -1045,6 +1045,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   btnExitQuiz.addEventListener('click', () => {
     if (confirm('Desejas interromper este teste e voltar ao início?')) {
+      Metrics.trackSession(quiz, null, true);
       clearInterval(timerInterval);
       quizTimerBadge.classList.add('hidden');
       showView(homeView);
@@ -1061,6 +1062,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Guardar histórico e atualizar erros
     saveAttemptHistory(summary);
+    Metrics.trackSession(quiz, summary, false);
     if (summary.incorrectIds && summary.incorrectIds.length > 0) {
       addMistakes(summary.incorrectIds);
     }

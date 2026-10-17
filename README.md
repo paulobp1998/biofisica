@@ -34,6 +34,7 @@ Total atual: **300 perguntas** (200 ativas para os alunos), de escolha múltipla
 - **Ordem baralhada:** a ordem das perguntas e das opções muda em cada tentativa.
 - **Ficha de trabalho imprimível** (A4 ou PDF através de `window.print()`).
 - **Tamanho de letra ajustável** (A- / A+) e **modo escuro**.
+- **Métricas do docente (área com PIN):** visitas diárias, perguntas respondidas, taxa de acerto por tópico e por pergunta, sessões e notas. Configuração em [`metrics-backend/README.md`](metrics-backend/README.md).
 - **Modo Arena (sala de aula):** quiz em tempo real com equipas. O docente cria uma sala com um PIN; as equipas entram com o PIN ou com o QR code.
 
 ---
@@ -51,10 +52,11 @@ Basta abrir **https://paulobp1998.github.io/biofisica/** no computador ou no tel
 
 ## 🌐 Gratuitidade
 
-O site é estático (HTML, CSS e JavaScript). Não tem servidor, base de dados nem chaves de API, por isso não gera custos:
+O site é estático (HTML, CSS e JavaScript). Não tem servidor próprio nem chaves de API:
 
 - **Alojamento:** GitHub Pages, gratuito para repositórios públicos. Não usar serviços com plano pago nem planos de teste com validade.
 - **Modo Arena:** usa os brokers MQTT públicos e gratuitos **HiveMQ** e **EMQX**. São serviços partilhados, sem garantia de disponibilidade. Se algum deixar de existir, a app tenta automaticamente o seguinte. Se ambos falharem, o modo Arena deixa de funcionar, mas o resto do site continua a funcionar.
+- **Métricas:** Google Sheets + Google Apps Script, da conta Google do docente, sem custos (ver `metrics-backend/README.md`).
 - **QR code:** gerado no próprio navegador (biblioteca `js/lib/qrcode-generator.js`, MIT). Não há chamadas a serviços externos.
 
 ---

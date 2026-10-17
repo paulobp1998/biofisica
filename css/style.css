@@ -4305,3 +4305,17 @@ mark {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== Métricas de utilização (área do docente) ===== */
+.metrics-card { background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 1.25rem; margin-top: 1.25rem; box-shadow: var(--shadow-sm); }
+.metrics-card h2 { font-size: 1.1rem; margin: 0 0 0.75rem; color: var(--text-primary); }
+.metrics-note, .metrics-empty, .metrics-status { font-size: 0.85rem; color: var(--text-secondary); margin: 0.4rem 0; }
+.metrics-bar-row { display: grid; grid-template-columns: minmax(70px, 110px) 1fr minmax(70px, 120px); gap: 0.6rem; align-items: center; margin: 0.35rem 0; font-size: 0.85rem; }
+.metrics-bar-track { background: var(--bg-subtle); border-radius: var(--radius-full); height: 0.7rem; overflow: hidden; }
+.metrics-bar-fill { background: var(--color-brand); height: 100%; border-radius: var(--radius-full); min-width: 2px; }
+.metrics-bar-value { text-align: right; color: var(--text-secondary); white-space: nowrap; }
+.metrics-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+.metrics-table th, .metrics-table td { text-align: left; padding: 0.45rem 0.5rem; border-bottom: 1px solid var(--border-subtle); }
+.metrics-table th { color: var(--text-secondary); font-weight: 600; }
+.metrics-table-wrap { overflow-x: auto; }
+@media (max-width: 600px) { .metrics-bar-row { grid-template-columns: 80px 1fr; } .metrics-bar-value { grid-column: 2; text-align: left; } }

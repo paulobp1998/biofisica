@@ -976,6 +976,48 @@
     <!-- =====================================================================
          PAINEL DO DOCENTE: GESTÃO E AUDITORIA DO BANCO DE QUESTÕES
          ===================================================================== -->
+    <section id="view-metrics" class="hidden">
+      <div class="teacher-container">
+        <div class="teacher-header-card">
+          <div class="teacher-header-main">
+            <div>
+              <span class="teacher-shield-badge">🔒 Área Reservada ao Docente (PIN Mestre)</span>
+              <h1 class="teacher-main-title">Métricas de Utilização</h1>
+              <p class="teacher-main-desc">Dados anónimos dos alunos (sem nomes). Visitas diárias, perguntas respondidas, taxa de acerto e sessões concluídas.</p>
+            </div>
+            <div class="teacher-header-actions">
+              <button class="btn btn-outline" id="btn-metrics-back">← Painel do Docente</button>
+              <button class="btn btn-outline" id="btn-metrics-refresh">🔄 Atualizar</button>
+              <button class="btn btn-outline btn-sm" id="btn-metrics-forget-key" title="Apagar a chave guardada neste computador">🔑 Alterar chave</button>
+            </div>
+          </div>
+          <p class="metrics-status" id="metrics-status"></p>
+          <div class="teacher-kpi-grid" id="metrics-kpis"></div>
+        </div>
+
+        <div class="metrics-card">
+          <h2>Visitas por dia</h2>
+          <p class="metrics-note" id="metrics-daily-note"></p>
+          <div id="metrics-daily"></div>
+        </div>
+
+        <div class="metrics-card">
+          <h2>Taxa de acerto por tópico</h2>
+          <div id="metrics-topics"></div>
+        </div>
+
+        <div class="metrics-card">
+          <h2>Perguntas mais difíceis</h2>
+          <div id="metrics-hardest"></div>
+        </div>
+
+        <div class="metrics-card">
+          <h2>Últimas sessões</h2>
+          <div id="metrics-sessions"></div>
+        </div>
+      </div>
+    </section>
+
     <section id="view-teacher" class="hidden">
       <div class="teacher-container">
 
@@ -994,6 +1036,7 @@
             </div>
             <div class="teacher-header-actions">
               <button class="btn btn-outline" id="btn-teacher-back-home">🏠 Início</button>
+              <button class="btn btn-outline" id="btn-teacher-metrics" style="border-color: #10b981; color: #059669; font-weight: 700;" title="Visitas, perguntas respondidas e taxa de acerto dos alunos">📊 Métricas de Utilização</button>
               <button class="btn btn-outline" id="btn-teacher-lock-session" title="Terminar sessão protegida do docente">🔒 Bloquear Sessão</button>
             </div>
           </div>
@@ -1420,6 +1463,7 @@
   <script src="js/arena-engine.js?v=3.5"></script>
   <script src="js/arena-ui.js?v=3.5"></script>
   <script src="js/teacher-manager.js?v=3.5"></script>
+  <script src="js/metrics.js?v=1.0"></script>
   <script src="js/app.js?v=3.5"></script>
 </body>
 </html>
