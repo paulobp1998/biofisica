@@ -6,7 +6,7 @@
    ========================================================================= */
 
 // URL da Web App do Google Apps Script (vazio = métricas desativadas).
-const METRICS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbzGQmW-msJklzkEWInq_xJBW1ZanOzuFNi3W2MZH5dv3sNU1WFbYkhg8KwJh5dsWidZiw/exec';
+const METRICS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbyxJm3g0Cn1JCQWTQwf9lTmWYhRl87ZwXYLvcEnTZSmdyFn3f9lCm4VAfcaCazp-8x4gw/exec';
 
 const Metrics = (() => {
   const CID_KEY = 'biofisica_metrics_cid';
@@ -18,16 +18,18 @@ const Metrics = (() => {
   const isEnabled = () => typeof METRICS_ENDPOINT === 'string' && METRICS_ENDPOINT.startsWith('https://');
   const isTeacher = () => !!(window.teacherManager && window.teacherManager.isAuth && window.teacherManager.isAuth());
 
+  const randomId = () => Array.from(crypto.getRandomValues(new Uint8Array(12)), b => b.toString(16).padStart(2, '0')).join('');
+
   function clientId() {
     try {
       let cid = localStorage.getItem(CID_KEY);
       if (!cid) {
-        cid = Array.from(crypto.getRandomValues(new Uint8Array(12)), b => b.toString(16).padStart(2, '0')).join('');
+        cid = randomId();
         localStorage.setItem(CID_KEY, cid);
       }
       return cid;
     } catch (e) {
-      return 'sem-armazenamento';
+      return randomId(); // sem armazenamento: identificador efémero
     }
   }
 
