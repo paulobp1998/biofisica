@@ -154,7 +154,7 @@ const TOPIC_1_QUESTIONS = [
     "explanation": "Quando a força resultante é nula (Fr = 0), o corpo mantém o seu estado de repouso ou continua em movimento retilíneo uniforme (MRU), de acordo com a 1.ª Lei de Newton.",
     "distractorAnalysis": [
       "Está incorreta: Sem força resultante, o corpo não abranda; mantém a velocidade.",
-      "Está incorreta: Uma força resultante nula não provoca rotação, porque a rotação depende do momento resultante (ΣM).",
+      "Está incorreta: A rotação não resulta da ausência de forças: depende do momento resultante (ΣM). Fr = 0 garante apenas que a translação não se altera.",
       "Está incorreta: A aceleração exige força resultante não nula (F = m · a); se F = 0, a aceleração é nula."
     ],
     "nursingApplication": "Explica porque é que uma maca parada numa superfície horizontal nivelada não se move sem intervenção externa."
@@ -1131,7 +1131,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1060,
     "topicId": 1,
-    "question": "Se a força resultante horizontal sobre uma maca for nula (Fr = 0 N), o que podemos concluir com certeza?",
+    "question": "Se a força resultante sobre uma maca for nula (Fr = 0 N), o que podemos concluir com certeza?",
     "options": [
       "A maca está em repouso ou em movimento retilíneo e uniforme.",
       "A maca está a acelerar 9,8 m/s² para a frente, devido ao peso.",
@@ -1193,10 +1193,10 @@ const TOPIC_1_QUESTIONS = [
       "Pressão exercida por fluidos biológicos no interior de vasos sanguíneos.",
       "Energia emitida pelo núcleo atómico durante a fissão de átomos pesados.",
       "Deformação elástica de molas helicoidais, como as dos dinamómetros.",
-      "Atração / repulsão entre corpos por ação dos seus campos magnéticos (e elétricos)."
+      "Atração ou repulsão entre corpos com carga elétrica ou magnetizados."
     ],
     "correctIndex": 3,
-    "explanation": "A força eletromagnética é a atração ou repulsão entre corpos por ação dos seus campos magnéticos (e elétricos).",
+    "explanation": "A força eletromagnética é a atração ou repulsão entre partículas ou corpos com carga elétrica, em repouso (força elétrica) ou em movimento (força magnética), mediada pelos campos elétrico e magnético.",
     "distractorAnalysis": [
       "Está incorreta: A pressão de fluidos biológicos não é uma interação fundamental da matéria.",
       "Está incorreta: A energia da fissão é de natureza nuclear, e não o que define a força eletromagnética.",
@@ -1411,7 +1411,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A compressão prolongada causa isquemia e necrose tecidual, e não estimula a cicatrização.",
       "Está incorreta: As lesões de pressão são eventos isquémicos mecânicos, sem alterações atómicas."
     ],
-    "nursingApplication": "Fundamenta a mudança regular de decúbito em doentes acamados. A frequência é individualizada (tradicionalmente de 2 em 2 horas, ajustada ao risco de lesão de pressão e ao tipo de superfície de apoio)."
+    "nursingApplication": "Fundamenta a mudança regular de decúbito em doentes acamados, com frequência individualizada segundo o risco de lesão por pressão e o tipo de superfície de apoio (EPUAP/NPIAP 2019)."
   },
   {
     "id": 1075,
@@ -1487,7 +1487,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A força normal varia com o cosseno da inclinação, diminuindo com o aumento do ângulo.",
       "Está incorreta: A normal é uma força de contacto perpendicular à superfície; não atrai o doente para a parede."
     ],
-    "nursingApplication": "Alerta para o facto de que, no modelo simplificado, elevar a cabeceira aumenta a componente do peso paralela ao colchão, que favorece o deslizamento e o cisalhamento. Na prática, o peso concentra-se na região sagrada e isquiática, por isso recomenda-se limitar a elevação da cabeceira ao mínimo clinicamente necessário, de acordo com a prescrição e as normas do serviço."
+    "nursingApplication": "Elevar a cabeceira aumenta a componente do peso paralela ao colchão e concentra a carga na região sagrada e isquiática, favorecendo o deslizamento e o cisalhamento, pelo que se limita a elevação ao mínimo clinicamente necessário."
   },
   {
     "id": 1079,
@@ -1589,24 +1589,24 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é um exemplo prático de enfermagem que ilustra que o atrito estático é superior ao cinético?",
     "options": [
-      "É mais difícil empurrar uma maca em repouso do que uma maca em movimento.",
+      "É mais difícil pôr um utente a deslizar sobre o lençol do que mantê-lo a deslizar.",
       "É mais difícil pesar um doente sentado do que um doente em pé.",
       "A velocidade de infusão do soro é mais rápida com agulha de menor calibre.",
       "A temperatura da pele diminui quando o utente caminha descalço no hospital."
     ],
     "correctIndex": 0,
-    "explanation": "É mais difícil empurrar uma maca em repouso do que uma maca em movimento, o que mostra que vencer o atrito estático inicial exige maior força do que manter o andamento contra o atrito cinético.",
+    "explanation": "É mais difícil pôr um utente a deslizar sobre o lençol do que mantê-lo a deslizar: para iniciar o deslizamento é preciso vencer o atrito estático máximo, que é superior ao atrito cinético que se opõe ao deslizamento já iniciado. (Numa maca com rodas, a dificuldade do arranque deve-se sobretudo à inércia e à resistência ao rolamento.)",
     "distractorAnalysis": [
       "Está incorreta: A balança mede a mesma massa corporal independentemente da postura do utente.",
       "Está incorreta: Menor calibre de agulha abranda o fluxo; é um fenómeno hidrodinâmico (viscosidade), e não de atrito entre superfícies sólidas.",
       "Está incorreta: A pele arrefece por condução de calor, sem relação com o atrito estático."
     ],
-    "nursingApplication": "Ensina os profissionais a aplicar um esforço inicial controlado ao arrancar com a maca para não lesionar os ombros e coluna."
+    "nursingApplication": "Ao reposicionar um utente na cama com um lençol de deslizamento, o maior esforço ocorre no arranque, que deve ser coordenado entre os profissionais."
   },
   {
     "id": 1085,
     "topicId": 1,
-    "question": "Uma força horizontal de 20 N é aplicada a uma maca parada, mas a maca não se move porque o atrito estático máximo é de 50 N. Qual é a força de atrito real que atua na maca nesse momento?",
+    "question": "Uma força horizontal de 20 N é aplicada a uma maca parada, com as rodas travadas, mas a maca não se move porque o atrito estático máximo é de 50 N. Qual é a força de atrito real que atua na maca nesse momento?",
     "options": [
       "50 N em sentido contrário, fazendo a maca andar para trás.",
       "20 N, em sentido oposto à força aplicada, equilibrando-a.",
@@ -1644,21 +1644,21 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1087,
     "topicId": 1,
-    "question": "O que acontece à intensidade da força de resistência por atrito imediatamente após uma maca romper o repouso e começar a deslizar?",
+    "question": "O que acontece à intensidade da força de resistência por atrito imediatamente após uma caixa de material pesada, arrastada no chão, romper o repouso e começar a deslizar?",
     "options": [
       "Aumenta para o dobro da força de arranque, por efeito da inércia.",
-      "Aumenta muito, prendendo a maca ao chão de forma permanente.",
+      "Aumenta muito, prendendo a caixa ao chão de forma permanente.",
       "Mantém-se igual ao atrito estático máximo de arranque, durante todo o movimento.",
-      "Diminui para o valor do atrito cinético, tornando a condução mais suave."
+      "Diminui para o valor do atrito cinético, tornando o arrasto mais fácil."
     ],
     "correctIndex": 3,
     "explanation": "Assim que o repouso é vencido, a resistência passa do regime estático máximo para o regime cinético, que é inferior. Por isso, manter o movimento exige menor força do que o arranque inicial.",
     "distractorAnalysis": [
       "Está incorreta: Após o arranque, a força de atrito diminui, e não duplica.",
-      "Está incorreta: O atrito cinético é inferior ao estático, e não cresce até imobilizar a maca.",
+      "Está incorreta: O atrito cinético é inferior ao estático, e não cresce até imobilizar a caixa.",
       "Está incorreta: Com o corpo em movimento, o atrito passa para o regime cinético, inferior ao estático máximo."
     ],
-    "nursingApplication": "Permite dosear o esforço físico muscular de modo a aliviar a força após a colocação em marcha do equipamento."
+    "nursingApplication": "Ao deslizar um utente sobre um lençol de transferência, a força necessária diminui depois de vencido o arranque, o que permite dosear o esforço da equipa."
   },
   {
     "id": 1088,
@@ -1701,7 +1701,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1090,
     "topicId": 1,
-    "question": "Se o atrito cinético de uma maca em movimento for de 25 N e dois enfermeiros a puxarem juntos aplicando uma força total de 25 N na mesma direção e sentido do movimento:",
+    "question": "Se a força de resistência ao movimento (atrito) de uma maca em movimento for de 25 N e dois enfermeiros a puxarem juntos aplicando uma força total de 25 N na mesma direção e sentido do movimento:",
     "options": [
       "A maca vai acelerar continuamente, ganhando 10 m/s em cada segundo.",
       "A maca vai travar e parar em menos de um segundo.",
@@ -1715,7 +1715,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: Sem força resultante contrária, a maca não trava; mantém a velocidade.",
       "Está incorreta: O atrito não desaparece; a maca continua em contacto com o chão."
     ],
-    "nursingApplication": "Evidencia como manter velocidade constante exige apenas neutralizar o atrito cinético das rodas."
+    "nursingApplication": "Evidencia como manter velocidade constante exige apenas equilibrar a resistência ao rolamento das rodas."
   },
   {
     "id": 1091,
@@ -1933,11 +1933,11 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Porque a massa corporal do profissional aumenta com a velocidade do veículo.",
       "Porque a Terra puxa o profissional na horizontal, por atração gravítica intensa.",
-      "Pela 2.ª Lei de Newton, a desaceleração violenta exige uma força elevada (F = m · a).",
+      "Pela 2.ª Lei, o corpo é travado em pouquíssimo tempo pela divisória (F = m · a).",
       "Porque a força de impacto é igual à massa vezes a velocidade (F = m · v)."
     ],
     "correctIndex": 2,
-    "explanation": "Pela 2.ª Lei de Newton, a desaceleração violenta exige uma força elevada para parar o corpo (F = m · a). Por isso, a força de impacto pode atingir milhares de newtons.",
+    "explanation": "Pela 2.ª Lei de Newton (F = m · a), a força de impacto depende da desaceleração do corpo durante o impacto, que é muito breve, e não da desaceleração de travagem do veículo. Por exemplo, um corpo de 70 kg que passa de 22,2 m/s a zero em 0,05 s sofre a = 444 m/s² e F ≈ 31 000 N.",
     "distractorAnalysis": [
       "Está incorreta: A massa corporal não varia com a velocidade do veículo.",
       "Está incorreta: Na horizontal, a gravidade não puxa o corpo; a força que o trava é a da divisória.",
@@ -2005,7 +2005,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1106,
     "topicId": 1,
-    "question": "Se o condutor da ambulância impuser ao corpo do enfermeiro a mesma variação de velocidade em metade do tempo, o que acontece à força de impacto?",
+    "question": "Se, ao embater numa superfície mais rígida, o corpo do enfermeiro sofrer a mesma variação de velocidade em metade do tempo, o que acontece à força média de impacto?",
     "options": [
       "A força de impacto reduz-se para metade, porque o tempo foi menor.",
       "A força de impacto permanece constante, pois a massa do enfermeiro não se altera na travagem.",
@@ -2019,7 +2019,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: Se a desaceleração duplica, a força também duplica, pela 2.ª Lei.",
       "Está incorreta: Uma paragem rápida gera força elevada, e não nula."
     ],
-    "nursingApplication": "Sublinha a necessidade de condução defensiva suave por parte dos motoristas de emergência médica."
+    "nursingApplication": "Explica porque os cintos, os encostos almofadados e os airbags, ao prolongarem o tempo de paragem do corpo, reduzem a força de impacto sobre os ocupantes."
   },
   {
     "id": 1107,
@@ -2089,7 +2089,7 @@ const TOPIC_1_QUESTIONS = [
       "Dividindo a massa corporal pela distância percorrida até à divisória."
     ],
     "correctIndex": 2,
-    "explanation": "Esclarece-se textualmente: 'colidirá com a divisória com força equivalente à sua massa multiplicada pela desaceleração'.",
+    "explanation": "A força média de impacto é a massa corporal multiplicada pela desaceleração que o corpo sofre durante o impacto contra a divisória (F = m · a), e não pela desaceleração de travagem do veículo; como o impacto dura muito pouco, essa desaceleração é muito elevada.",
     "distractorAnalysis": [
       "Está incorreta: O produto da massa pela velocidade é a quantidade de movimento, e não a força.",
       "Está incorreta: A força é massa vezes aceleração, e não massa dividida pelo tempo.",
@@ -2114,7 +2114,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: Desviar-se ainda mais é o equilíbrio instável.",
       "Está incorreta: Permanecer na nova posição é o equilíbrio indiferente."
     ],
-    "nursingApplication": "Exemplo biomecânico da postura bípede com pés afastados, capaz de resistir a pequenas perturbações sem queda."
+    "nursingApplication": "Por analogia, uma cadeira de rodas com base larga, ligeiramente inclinada para um lado, regressa à posição inicial, o que contribui para a segurança do utente."
   },
   {
     "id": 1112,
@@ -2640,7 +2640,7 @@ const TOPIC_1_QUESTIONS = [
       "Porque o braço da força resistente aumenta, gerando um momento flexor elevado."
     ],
     "correctIndex": 3,
-    "explanation": "A força resistente (peso da carga) é constante. Contudo, ao afastar a carga do tronco, a distância horizontal b até ao fulcro lombar aumenta grandemente, multiplicando o momento resistente M = F · b e exigindo forças extremas dos músculos da coluna para equilibrar.",
+    "explanation": "A força resistente (peso da carga) é constante. Contudo, ao afastar a carga do tronco, a distância horizontal b até ao fulcro lombar aumenta grandemente, aumentando o momento flexor M = F · b, que os músculos extensores da coluna têm de equilibrar com forças muito elevadas (o seu braço é de poucos centímetros).",
     "distractorAnalysis": [
       "Está incorreta: A massa é constante e não aumenta quando a carga se afasta do tronco.",
       "Está incorreta: O atrito do pavimento não determina o momento das vértebras lombares.",
@@ -2893,7 +2893,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A força potente no meio caracteriza a alavanca interpotente.",
       "Está incorreta: Forças no mesmo ponto não formam os braços distintos de uma alavanca mecânica."
     ],
-    "nursingApplication": "Exemplos: o carrinho de mão, o quebra-nozes e a elevação na ponta dos pés, com o fulcro nas articulações dos dedos (metatarsofalângicas), a resistência no tornozelo (peso do corpo) e a força potente no tríceps sural (tendão de Aquiles)."
+    "nursingApplication": "Exemplos: o carrinho de mão, o quebra-nozes e a elevação na ponta dos pés (exemplo discutido, em que a tensão no tendão de Aquiles chega a 2–2,5 vezes o peso corporal), com o fulcro nas articulações dos dedos (metatarsofalângicas), a resistência no tornozelo (peso do corpo) e a força potente no tríceps sural (tendão de Aquiles)."
   },
   {
     "id": 1153,
@@ -3004,7 +3004,7 @@ const TOPIC_1_QUESTIONS = [
     "explanation": "Na tesoura e no baloiço, o parafuso/eixo central (fulcro) situa-se a meio, entre a zona onde as mãos aplicam a força potente e as lâminas/assentos onde atua a resistência: Alavanca Interfixa.",
     "distractorAnalysis": [
       "Está incorreta: Na tesoura e no baloiço, a carga não está entre o fulcro e a força potente.",
-      "Está incorreta: Na tesoura e no baloiço, o fulcro não está numa extremidade.",
+      "Está incorreta: Na tesoura e no baloiço, a força potente não está no meio; é o fulcro que fica entre as duas forças.",
       "Está incorreta: Uma alavanca precisa de um fulcro em torno do qual roda, e não de um eixo fixo ao solo; o parafuso da tesoura é o fulcro."
     ],
     "nursingApplication": "Compreensão do funcionamento de instrumentos cirúrgicos articulados comuns na prática diária de enfermagem."
@@ -3320,7 +3320,7 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "M_total = 2,94 N·m",
       "M_total = 3,68 N·m",
-      "M_total = 10,0 N·m",
+      "M_total = 0,74 N·m",
       "M_total = 6,62 N·m"
     ],
     "correctIndex": 3,
@@ -3328,7 +3328,7 @@ const TOPIC_1_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: 2,94 N·m considera apenas o objeto externo, esquecendo o peso do próprio membro.",
       "Está incorreta: 3,68 N·m considera apenas o antebraço, esquecendo o objeto transportado na mão.",
-      "Está incorreta: 10,0 N·m não corresponde à soma correta dos valores obtidos."
+      "Está incorreta: 0,74 N·m resultaria de subtrair os momentos (3,68 − 2,94); como ambos tendem a rodar o antebraço no mesmo sentido, somam-se."
     ],
     "nursingApplication": "Exemplifica o princípio da sobreposição de momentos na análise biomecânica articular."
   },
@@ -3349,7 +3349,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: 0,53 N resultaria de multiplicar 6,62 por 0,08 em vez de dividir.",
       "Está incorreta: 34,3 N é o peso vertical simples das massas combinadas (3,5 kg × 9,8), não a força real do bíceps."
     ],
-    "nursingApplication": "Resultado emblemático da biomecânica demonstrando a desvantagem mecânica em força do cotovelo."
+    "nursingApplication": "Mostra que segurar um objeto de apenas 1 kg com o cotovelo a 90° exige ao bíceps cerca de 83 N, o que ajuda a perceber a sobrecarga em tarefas manuais repetidas."
   },
   {
     "id": 1177,
@@ -3381,13 +3381,13 @@ const TOPIC_1_QUESTIONS = [
       "F_E = m · g · a, em que a força muscular depende da aceleração do antebraço."
     ],
     "correctIndex": 2,
-    "explanation": "Em equilíbrio, o momento motor iguala o momento resistente (F_P · b_P = F_R · b_R). No antebraço, a soma dos momentos da carga na mão e do antebraço iguala o momento do bíceps: (F_objeto · d_R) + (F_antebraço+mão · d_antebraço) = F_E · d_E.",
+    "explanation": "Em equilíbrio, o momento potente iguala o momento resistente total. No antebraço, a soma dos momentos da carga na mão e do antebraço iguala o momento do bíceps: (F_objeto · d_R) + (F_antebraço+mão · d_antebraço) = F_E · d_E.",
     "distractorAnalysis": [
       "Está incorreta: Ignorar os braços de momento viola frontalmente a Lei das Alavancas de Arquimedes.",
       "Está incorreta: Os braços anatómicos associados a cada força estão incorretamente atribuídos nesta opção.",
       "Está incorreta: Mistura a 2.ª Lei de Newton com a fórmula do peso sem relação com o equilíbrio de momentos."
     ],
-    "nursingApplication": "Modelo matemático canónico da biomecânica da flexão do cotovelo."
+    "nursingApplication": "Permite estimar a força do bíceps quando um utente segura um objeto com o cotovelo fletido, por exemplo num exercício de reabilitação com halteres."
   },
   {
     "id": 1179,
@@ -3549,7 +3549,7 @@ const TOPIC_1_QUESTIONS = [
       "Desloca-se para a sola dos sapatos, aumentando a estabilidade, porque o peso fica mais baixo.",
       "Desloca-se para trás, ficando mais próximo da parede do corredor, sem alterar a postura.",
       "Permanece na 2.ª vértebra sagrada, sem se deslocar, mesmo quando o corpo se estica.",
-      "O centro de gravidade sobe alguns centímetros, tornando a postura temporariamente mais instável."
+      "O centro de gravidade sobe alguns centímetros, reduzindo temporariamente a margem de estabilidade."
     ],
     "correctIndex": 3,
     "explanation": "Indica-se claramente: 'sobe ao elevar os braços'. Elevar os membros superiores desloca massa para cima, subindo o CG e aumentando a distância até à base de sustentação, o que reduz a estabilidade postural.",
@@ -3601,7 +3601,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1190,
     "topicId": 1,
-    "question": "Qual é a condição geométrica fundamental para que o corpo humano permaneça em equilíbrio estático estável sem tombar?",
+    "question": "Qual é a condição geométrica fundamental para que o corpo humano permaneça em equilíbrio estático sem tombar?",
     "options": [
       "Que o centro de gravidade se mantenha fixo à frente da 2.ª vértebra sagrada.",
       "Que a força potente exercida pelo quadríceps seja igual a zero newtons, em repouso total.",
@@ -3653,7 +3653,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: Inclinar o tronco para a frente aproxima a linha de gravidade do bordo anterior da base e aumenta a carga lombar.",
       "Está incorreta: Apoiar só as mãos não constitui uma base de sustentação estável dos pés."
     ],
-    "nursingApplication": "Instrução direta a fornecer ao utente durante a transferência da cama para a cadeira de rodas."
+    "nursingApplication": "Ao reposicionar um utente no leito, o profissional afasta os pés, colocando um deles no sentido do movimento, e flete os joelhos."
   },
   {
     "id": 1193,
@@ -3710,7 +3710,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: Inclinar o tronco lateralmente desvia a linha de gravidade para o bordo da base, com risco de queda.",
       "Está incorreta: Caminhar na ponta dos pés reduz a base e eleva o centro de gravidade."
     ],
-    "nursingApplication": "Princípio ergonómico crucial amplamente ensinado nas escolas de enfermagem para proteção da coluna vertebral."
+    "nursingApplication": "Ao transportar uma caixa de soros, segurá-la junto ao tronco mantém a linha de gravidade do conjunto dentro da base e reduz o momento sobre a coluna lombar."
   },
   {
     "id": 1196,
@@ -3805,6 +3805,6 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A gravidade atua na vertical e não alivia o peso do objeto.",
       "Está incorreta: A força normal não se elimina; o chão continua a suportar o corpo."
     ],
-    "nursingApplication": "A grande síntese ergonómica e biomecânica do Tópico 1 de Biofísica para a prática clínica e vida profissional de enfermagem."
+    "nursingApplication": "Aplica-se ao levantar do chão uma caixa de material ou um saco de roupa: agachar com a carga junto ao corpo reduz o momento flexor sobre a coluna lombar."
   }
 ];

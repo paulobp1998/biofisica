@@ -81,7 +81,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: a plasticina só se deforma a partir de um limiar de tensão e não recupera a forma inicial.",
       "Está incorreta: o mel é um corpo viscoso, que se deforma com o tempo e não restitui a forma após cessar a tensão."
     ],
-    "nursingApplication": "Os modelos de sólido de Hooke servem para descrever a parte inicial da resposta elástica de alguns tecidos, como o tendão ou a pele, sob cargas pequenas."
+    "nursingApplication": "Os modelos de sólido de Hooke servem para descrever a zona aproximadamente linear da resposta elástica de alguns tecidos, como o tendão, que surge depois de uma zona inicial não linear."
   },
   {
     "id": 2205,
@@ -214,7 +214,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: um corpo indeformável não sofre deformação, logo não há energia dissipada por deformação.",
       "Está incorreta: os corpos viscosos não armazenam energia elástica, e a retenção permanente de energia não explica a histerese."
     ],
-    "nursingApplication": "A dissipação de energia nos músculos e ossos durante a marcha ajuda a compreender porque é que a fadiga aparece e porque é que a recuperação após esforço é necessária."
+    "nursingApplication": "A histerese da cartilagem e dos discos intervertebrais ajuda a amortecer os impactos repetidos da marcha, por exemplo ao apoiar o calcanhar no chão."
   },
   {
     "id": 2212,
@@ -276,7 +276,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2215,
     "topicId": 2,
-    "question": "Quais são os cinco tipos de deformação básicos de deformação mecânica de um sólido?",
+    "question": "Quais são os cinco tipos básicos de deformação mecânica de um sólido?",
     "options": [
       "Tração, compressão, dilatação, fusão e sublimação.",
       "Elástica, plástica, viscosa, mista e nula.",
@@ -295,7 +295,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2216,
     "topicId": 2,
-    "question": "Um tubo de mel é sujeito a uma tensão de cisalhamento constante. O que acontece à deformação ao longo do tempo?",
+    "question": "Uma camada de mel entre duas placas é sujeita a uma tensão de cisalhamento constante. O que acontece à deformação ao longo do tempo?",
     "options": [
       "Mantém-se constante desde o início, pois a tensão não varia.",
       "Diminui até anular-se, com recuperação completa da forma.",
@@ -309,7 +309,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: a recuperação completa corresponde a um sólido elástico, e não a um fluido viscoso.",
       "Está incorreta: a oscilação em torno de um valor fixo é típica de um oscilador elástico, e não de um corpo viscoso."
     ],
-    "nursingApplication": "Em soluções viscosas administradas por via oral, o escoamento depende do tempo, pelo que a consistência de um espessante deve ser verificada ao longo da administração."
+    "nursingApplication": "Um líquido espessado para um doente com disfagia continua a escoar da colher enquanto atua o seu peso, apenas mais devagar do que a água, o que dá tempo para uma deglutição mais segura."
   },
   {
     "id": 2217,
@@ -366,7 +366,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: a ausência de tensão mínima é característica dos corpos viscosos, e não dos plastoviscoelásticos.",
       "Está incorreta: a ausência de deformação permanente contraria a definição de corpo plástico, que mantém a deformação máxima."
     ],
-    "nursingApplication": "A massa de pão e alguns tecidos moles sob compressão prolongada podem comportar-se assim: pequenas pressões recuperam, mas pressões acima de um limiar deixam marca permanente."
+    "nursingApplication": "A massa de pão é o exemplo clássico; como analogia, nos tecidos moles uma pressão pequena deixa uma marca que desaparece, enquanto uma pressão elevada e mantida deixa uma marca que persiste muito mais tempo."
   },
   {
     "id": 2220,
@@ -382,7 +382,7 @@ const TOPIC_2_QUESTIONS = [
     "explanation": "Na zona de proporcionalidade a tensão é proporcional à deformação relativa, com E como constante de proporcionalidade: σ = E · ε.",
     "distractorAnalysis": [
       "Está incorreta: dividir a tensão pela deformação dá o módulo de Young (E = σ/ε), e não a tensão.",
-      "Está incorreta: troca a deformação pela tensão, o que faria a deformação relativa depender de E de forma proporcional ao próprio σ.",
+      "Está incorreta: a deformação relativa é ε = σ / E; multiplicar E por σ inverte a relação e daria uma grandeza em Pa², e não uma deformação sem unidades.",
       "Está incorreta: a tensão não é o quociente de ε por E, mas sim o produto de E pela deformação relativa."
     ],
     "nursingApplication": "Permite estimar a tensão num tendão ou num osso a partir da deformação medida, o que é uma base para compreender as cargas suportadas pelo aparelho locomotor."
@@ -402,7 +402,7 @@ const TOPIC_2_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: multiplicar F por k dá 2000, mas a lei de Hooke isola x dividindo F por k.",
       "Está incorreta: inverte a divisão, calculando k/F = 20, que não é uma deformação.",
-      "Está incorreta: 5 m corresponde a 5 cm, o que resulta de confundir centímetros com metros."
+      "Está incorreta: o alongamento é 0,05 m, ou seja, 5 cm; escrever 5 m resulta de dar o valor em centímetros com a unidade metro."
     ],
     "nursingApplication": "Para a mesma força, uma mola mais rígida alonga menos, o que é a base de dinamómetros usados para medir forças em reabilitação."
   },
@@ -423,7 +423,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: esquece a constante elástica e usa apenas o alongamento, o que não respeita a lei de Hooke.",
       "Está incorreta: dividir x por k dá 0,004, em vez de multiplicar, como a lei de Hooke exige."
     ],
-    "nursingApplication": "A força exercida por uma mola de um dispositivo de tração ou de um estribo de reabilitação depende da sua constante e do alongamento imposto ao aparelho."
+    "nursingApplication": "A resistência oferecida por um exercitador de mola usado em reabilitação da mão depende da constante da mola e do alongamento que o doente lhe impõe."
   },
   {
     "id": 2223,
@@ -537,7 +537,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: dividir o alongamento pela constante, em vez de multiplicar, dá 0,00025 N.",
       "Está incorreta: dividir a constante pelo alongamento dá 4000 N, valor que não resulta da lei de Hooke."
     ],
-    "nursingApplication": "A força restauradora de um elástico ou de uma mola de um aparelho ortopédico é a que o aparelho exerce sobre o membro, e deve ser oposta ao movimento imposto."
+    "nursingApplication": "Numa banda elástica de reabilitação, a força que a banda exerce sobre o membro opõe-se ao alongamento que o doente lhe impõe e cresce com esse alongamento."
   },
   {
     "id": 2229,
@@ -618,7 +618,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2233,
     "topicId": 2,
-    "question": "Qual é o enunciado da lei de Hooke ?",
+    "question": "Qual é o enunciado da lei de Hooke?",
     "options": [
       "A força elástica é proporcional à deformação do corpo, dentro do limite de proporcionalidade.",
       "A força elástica é inversamente proporcional à deformação do corpo, sendo menor quanto maior for a deformação.",
@@ -651,7 +651,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: a constante k depende das dimensões do corpo, e não apenas do material.",
       "Está incorreta: o efeito do comprimento sobre k é inverso e linear, e não quadrático."
     ],
-    "nursingApplication": "Um segmento de tecido mais comprido é mais flexível sob a mesma força, o que se deve ter em conta ao comparar a rigidez de um mesmo músculo em posições diferentes."
+    "nursingApplication": "Com o mesmo material e a mesma secção, um tendão mais comprido alonga mais sob a mesma força, o que se deve ter em conta ao comparar tendões de comprimentos diferentes."
   },
   {
     "id": 2235,
@@ -704,8 +704,8 @@ const TOPIC_2_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "F = k · x = 500 N/m × 0,04 m = 20 N.",
     "distractorAnalysis": [
-      "Está incorreta: dividir a constante pelo alongamento, em vez de multiplicar, dá 12 500 N.",
-      "Está incorreta: dividir o alongamento pela constante dá 0,00008 N, em vez de 20 N.",
+      "Está incorreta: dividir a constante pela compressão, em vez de multiplicar, dá 12 500 N.",
+      "Está incorreta: dividir a compressão pela constante dá 0,00008 N, em vez de 20 N.",
       "Está incorreta: não converte 4 cm para metros, multiplicando 500 por 4, o que dá 2000 N."
     ],
     "nursingApplication": "Uma mola de compressão de um dispositivo de aplicação de carga deve ser calibrada com unidades coerentes, para que a força indicada corresponda à força real aplicada."
@@ -754,7 +754,7 @@ const TOPIC_2_QUESTIONS = [
     "question": "Ao ultrapassar o limite de proporcionalidade de um material, o que deixa de ser válido?",
     "options": [
       "A conservação da massa do corpo deformado, durante a deformação.",
-      "A relação linear entre tensão e deformação, logo σ = E · ε.",
+      "A relação linear entre tensão e deformação, σ = E · ε.",
       "A definição de tensão como força por unidade de área.",
       "A deformação relativa ser adimensional e não ter unidades."
     ],
@@ -765,7 +765,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: a definição de tensão, σ = F / S, continua válida, pois é uma definição e não uma lei do material.",
       "Está incorreta: a deformação relativa continua sem unidades, por ser um quociente de comprimentos."
     ],
-    "nursingApplication": "Saber que, acima do limite de proporcionalidade, a deformação deixa de ser reversível e proporcional ajuda a perceber porque é que cargas excessivas podem lesionar ossos e tendões."
+    "nursingApplication": "Acima do limite de proporcionalidade a deformação deixa de ser proporcional e, ultrapassado o limite elástico, deixa também de ser reversível, o que ajuda a perceber porque é que cargas excessivas podem lesionar ossos e tendões."
   },
   {
     "id": 2241,
@@ -822,7 +822,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: a compressão encurta a barra, pelo que o comprimento não aumenta.",
       "Está incorreta: na compressão a secção aumenta, por efeito de Poisson, e não diminui."
     ],
-    "nursingApplication": "A compressão axial da coluna em posição de pé é a razão pela qual a altura de um idoso pode diminuir ao longo dos anos, por encurtamento dos discos e das vértebras."
+    "nursingApplication": "A compressão axial da coluna em posição de pé explica que a estatura de um adulto seja ligeiramente menor ao fim do dia do que ao acordar, sobretudo por compressão dos discos intervertebrais."
   },
   {
     "id": 2244,
@@ -1069,7 +1069,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: divide o alongamento pela constante, em vez de multiplicar, o que dá cerca de 0,0003 N.",
       "Está incorreta: esquece a constante elástica e usa apenas o alongamento, o que dá 0,025 N."
     ],
-    "nursingApplication": "Na escolha de um fio ou de uma banda elástica para exercícios de reabilitação, a força depende do alongamento em metros e da constante do material, não de centímetros."
+    "nursingApplication": "Na escolha de um fio ou de uma banda elástica para exercícios de reabilitação, a força calcula-se com a constante elástica e com o alongamento convertido para metros."
   },
   {
     "id": 2257,
@@ -1198,7 +1198,7 @@ const TOPIC_2_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "ΔL = ε · L0 = 0,04 × 15 cm = 0,6 cm = 6 mm.",
     "distractorAnalysis": [
-      "Está incorreta: usa o comprimento inicial como 15 mm, sem o converter para milímetros, o que dá 0,6 mm.",
+      "Está incorreta: toma 15 cm como se fossem 15 mm, o que dá 0,04 × 15 mm = 0,6 mm.",
       "Está incorreta: confunde 15 cm com 1,5 m, o que dá 0,06 m.",
       "Está incorreta: inverte a relação, dividindo L0 por ε, o que dá 3,75 m."
     ],
@@ -1240,12 +1240,12 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: escreve o módulo de Young como 5,0 × 10⁷ Pa, trocando a potência de dez, e obtém 0,2.",
       "Está incorreta: multiplica a tensão pelo módulo, em vez de dividir, o que dá 5,0 × 10¹⁵."
     ],
-    "nursingApplication": "A deformação relativa de um ligamento sob uma carga conhecida permite estimar se a lesão está dentro da zona reversível ou se ultrapassou o limite de proporcionalidade."
+    "nursingApplication": "Comparar a deformação relativa de um ligamento com a da sua zona linear ajuda a perceber se uma carga, como a de uma entorse, se manteve na zona elástica ou se a ultrapassou, com risco de rotura de fibras."
   },
   {
     "id": 2266,
     "topicId": 2,
-    "question": "Uma mola de um estribo de reabilitação tem constante elástica 300 N/m e é alongada 8 cm, dentro do limite de proporcionalidade. Qual é a força exercida pela mola?",
+    "question": "Uma mola de um aparelho de reabilitação tem constante elástica 300 N/m e é alongada 8 cm, dentro do limite de proporcionalidade. Qual é a força exercida pela mola?",
     "options": [
       "24 N",
       "2400 N",
@@ -1516,14 +1516,14 @@ const TOPIC_2_QUESTIONS = [
       "Menor deformação relativa na cicatriz.",
       "Maior deformação relativa na cicatriz, porque a rigidez aumenta.",
       "Deformação igual nas duas zonas, porque a tensão é a mesma.",
-      "Deformação nula na cicatriz, pois o módulo de Young é finito."
+      "Deformação nula na cicatriz, pois o módulo de Young é elevado."
     ],
     "correctIndex": 0,
     "explanation": "Como ε = σ / E, para a mesma tensão um módulo maior dá uma deformação relativa menor. A cicatriz, mais rígida, deforma-se menos do que a pele vizinha.",
     "distractorAnalysis": [
       "Está incorreta: com a mesma tensão, maior rigidez implica menor deformação, e não maior.",
       "Está incorreta: a deformação depende do módulo de Young; zonas com E diferente deformam-se de forma diferente, mesmo com a mesma tensão.",
-      "Está incorreta: um módulo finito dá uma deformação não nula para qualquer tensão não nula."
+      "Está incorreta: um módulo elevado, mas finito, reduz a deformação sem a anular; ε = σ / E só seria nula com E infinito."
     ],
     "nursingApplication": "Uma cicatriz mais rígida deforma menos do que a pele vizinha, o que deve ser tido em conta na mobilização articular após uma queimadura."
   },
@@ -1668,14 +1668,14 @@ const TOPIC_2_QUESTIONS = [
       "6,0 Pa",
       "1,5 × 10² Pa",
       "1,5 × 10⁴ Pa",
-      "6,0 × 10³ Pa"
+      "1,5 × 10³ Pa"
     ],
     "correctIndex": 2,
     "explanation": "σ = F / S = 300 N / 0,02 m² = 1,5 × 10⁴ Pa.",
     "distractorAnalysis": [
       "Está incorreta: multiplica a força pela área, em vez de dividir, o que dá 6,0 Pa.",
       "Está incorreta: lê 0,02 m² como 2 m², o que dá 1,5 × 10² Pa.",
-      "Está incorreta: usa 0,05 m² em vez de 0,02 m², o que dá 6,0 × 10³ Pa."
+      "Está incorreta: lê 0,02 m² como 0,2 m², deslocando a vírgula, o que dá 1,5 × 10³ Pa."
     ],
     "nursingApplication": "Calcular a pressão de interface a partir da força e da área de contacto permite comparar superfícies de apoio e escolher a superfície que melhor distribui a pressão sobre as zonas de risco."
   },
@@ -1769,8 +1769,8 @@ const TOPIC_2_QUESTIONS = [
     "explanation": "A força restauradora é proporcional ao deslocamento e oposta a ele, F = −k · x, e tende a repor o corpo na posição de equilíbrio.",
     "distractorAnalysis": [
       "Está incorreta: inverte a relação, pois a força cresce com o deslocamento e não diminui.",
-      "Está incorreta: descreve uma relação quadrática, que não corresponde à lei de Hooke, que é linear.",
-      "Está incorreta: inverte a relação entre x e k, em vez de a multiplicar."
+      "Está incorreta: k · x² / 2 é a energia potencial elástica armazenada, e não a força, que na lei de Hooke é linear em x.",
+      "Está incorreta: dividir x por k daria uma força que diminui quando a mola é mais rígida, o que contraria a lei de Hooke."
     ],
     "nursingApplication": "A força que uma órtese elástica exerce sobre o membro tende a repor a posição inicial, o que deve ser considerado na escolha da resistência adequada ao doente."
   },
@@ -1807,8 +1807,8 @@ const TOPIC_2_QUESTIONS = [
     "explanation": "Converte-se primeiro a compressão: 8 mm = 0,008 m. Então F = k · x = 75 N/m × 0,008 m = 0,6 N.",
     "distractorAnalysis": [
       "Está incorreta: não converte 8 mm para metros, multiplicando 75 por 8, o que dá 600 N.",
-      "Está incorreta: divide o alongamento pela constante, em vez de multiplicar, o que dá cerca de 0,0001 N.",
-      "Está incorreta: divide a constante pelo alongamento, em vez de multiplicar, o que dá 9375 N."
+      "Está incorreta: divide a compressão pela constante, em vez de multiplicar, o que dá cerca de 0,0001 N.",
+      "Está incorreta: divide a constante pela compressão, em vez de multiplicar, o que dá 9375 N."
     ],
     "nursingApplication": "Ao ajustar um aparelho com mola de compressão, a força depende da constante e da compressão efetiva em metros, e não do valor lido em milímetros na escala."
   },
@@ -1867,7 +1867,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: a constante depende do comprimento, pelo que não se mantém quando o comprimento muda.",
       "Está incorreta: a dependência de k em L0 é inversa e linear, pelo que o fator é 1/3 e não 1/9."
     ],
-    "nursingApplication": "Um segmento de tecido mais longo é menos rígido sob a mesma força, o que deve ser considerado ao comparar a resposta de um mesmo músculo em posições diferentes."
+    "nursingApplication": "Uma banda elástica de reabilitação do mesmo material e espessura, mas três vezes mais comprida, alonga três vezes mais com a mesma força, ou seja, oferece menos resistência."
   },
   {
     "id": 2299,
