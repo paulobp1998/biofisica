@@ -191,6 +191,7 @@ class ArenaUI {
     this.btnQuickSelect5 = document.getElementById('btn-quick-select-5');
     this.btnQuickSelect10 = document.getElementById('btn-quick-select-10');
     this.btnQuickSelect20 = document.getElementById('btn-quick-select-20');
+    this.btnQuickRandom20 = document.getElementById('btn-quick-random-20');
     this.btnCustomSelectFiltered = document.getElementById('btn-custom-select-filtered');
     this.btnCustomClearAll = document.getElementById('btn-custom-clear-all');
     this.arenaCustomQuestionsList = document.getElementById('arena-custom-questions-list');
@@ -703,6 +704,27 @@ class ArenaUI {
     if (this.btnQuickSelect5) this.btnQuickSelect5.addEventListener('click', () => addQuickCount(5));
     if (this.btnQuickSelect10) this.btnQuickSelect10.addEventListener('click', () => addQuickCount(10));
     if (this.btnQuickSelect20) this.btnQuickSelect20.addEventListener('click', () => addQuickCount(20));
+
+    // Sorteio: substitui a seleção por 20 perguntas ao acaso dentro do tópico escolhido
+    if (this.btnQuickRandom20) {
+      this.btnQuickRandom20.addEventListener('click', () => {
+        const pool = this.getFilteredQuestions({ ignoreTab: true }).map(q => q.id);
+        if (pool.length === 0) return;
+        if (this.selectedCustomQuestionIds.size > 0 && !confirm(`Substituir as ${this.selectedCustomQuestionIds.size} perguntas selecionadas por ${ARENA_QUIZ_SIZE} sorteadas ao acaso neste tópico?`)) return;
+        for (let i = pool.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [pool[i], pool[j]] = [pool[j], pool[i]];
+        }
+        this.selectedCustomQuestionIds.clear();
+        this.addCustomQuestionIds(pool, ARENA_QUIZ_SIZE);
+        // Mostra só as sorteadas, para o docente as ver de imediato
+        this.customActiveTab = 'selected';
+        if (this.tabCustomSelected) this.tabCustomSelected.classList.add('active');
+        if (this.tabCustomAll) this.tabCustomAll.classList.remove('active');
+        this.customRenderLimit = 50;
+        this.renderCustomQuestionsList();
+      });
+    }
 
     if (this.btnCustomSelectFiltered) {
       this.btnCustomSelectFiltered.addEventListener('click', () => {
@@ -1904,7 +1926,7 @@ class ArenaUI {
     this.allQuestionsPool = all;
   }
 
-  getFilteredQuestions() {
+  getFilteredQuestions({ ignoreTab = false } = {}) {
     this.loadAllQuestionsPool();
     const topicFilter = this.customFilterTopic;
     const query = (this.customSearchQuery || '').trim().toLowerCase();
@@ -1919,7 +1941,7 @@ class ArenaUI {
       }
 
       // 2. Filtro por Aba
-      if (this.customActiveTab === 'selected') {
+      if (!ignoreTab && this.customActiveTab === 'selected') {
         if (!this.selectedCustomQuestionIds.has(q.id)) return false;
       }
 

@@ -227,7 +227,7 @@ const TOPIC_1_QUESTIONS = [
       "Estrutura óssea esponjosa, onde se produzem as células do sangue."
     ],
     "correctIndex": 2,
-    "explanation": "Define-se expressamente o tendão como: 'Tecido conjuntivo fibroso que liga um músculo a um osso'.",
+    "explanation": "O tendão é um tecido conjuntivo fibroso que liga um músculo a um osso.",
     "distractorAnalysis": [
       "Está incorreta: As cavidades articulares são revestidas por membrana sinovial, de tecido conjuntivo, e não por epitélio.",
       "Está incorreta: A bainha de mielina isola as fibras nervosas; não une músculo e osso.",
@@ -968,7 +968,7 @@ const TOPIC_1_QUESTIONS = [
       "Mantém-se constante ao longo do tempo, com o mesmo módulo, direção e sentido."
     ],
     "correctIndex": 3,
-    "explanation": "Define-se expressamente a propriedade basilar do MRU: 'A velocidade (v) é constante no decorrer do tempo'.",
+    "explanation": "A propriedade basilar do MRU é a velocidade (v) constante ao longo do tempo.",
     "distractorAnalysis": [
       "Está incorreta: Aumentar a velocidade implica aceleração, que no MRU é nula.",
       "Está incorreta: Diminuir até parar é um movimento com aceleração, e não um MRU.",
@@ -1196,7 +1196,7 @@ const TOPIC_1_QUESTIONS = [
       "Atração / repulsão entre corpos por ação dos seus campos magnéticos (e elétricos)."
     ],
     "correctIndex": 3,
-    "explanation": "Define-se expressamente: 'Força eletromagnética: Atração / repulsão entre corpos por ação dos seus campos magnéticos (e elétricos)'.",
+    "explanation": "A força eletromagnética é a atração ou repulsão entre corpos por ação dos seus campos magnéticos (e elétricos).",
     "distractorAnalysis": [
       "Está incorreta: A pressão de fluidos biológicos não é uma interação fundamental da matéria.",
       "Está incorreta: A energia da fissão é de natureza nuclear, e não o que define a força eletromagnética.",
@@ -1576,7 +1576,7 @@ const TOPIC_1_QUESTIONS = [
       "O atrito estático máximo é superior ao atrito cinético."
     ],
     "correctIndex": 3,
-    "explanation": "Enfatiza-se expressamente: 'O atrito estático máximo é superior ao atrito cinético'. Por isso, pôr um corpo em movimento exige mais força do que mantê-lo em movimento.",
+    "explanation": "O atrito estático máximo é superior ao atrito cinético. Por isso, pôr um corpo em movimento exige mais força do que mantê-lo em movimento.",
     "distractorAnalysis": [
       "Está incorreta: Em geral, o atrito cinético é inferior ao estático máximo, e não superior.",
       "Está incorreta: No modelo estudado, o atrito cinético é aproximadamente independente da velocidade e inferior ao estático máximo.",
@@ -2290,7 +2290,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1121,
     "topicId": 1,
-    "question": "No esquema de um corpo em equilíbrio num plano inclinado, como são identificadas as grandezas P, P_n, P_t, N e F_a?",
+    "question": "Um corpo está em repouso sobre um plano inclinado, sujeito ao seu peso P, à força normal N e à força de atrito F_a. Como se definem as componentes P_n e P_t do peso?",
     "options": [
       "P = Peso; P_n e P_t = componentes vertical e horizontal do peso; N = Força normal; F_a = Força de atrito.",
       "P = Peso; P_n e P_t = componentes do peso perpendicular e paralela ao plano; N = Força normal; F_a = Força de atrito.",
@@ -2317,7 +2317,7 @@ const TOPIC_1_QUESTIONS = [
       "P_t = N e P_n = F_a"
     ],
     "correctIndex": 2,
-    "explanation": "Indica-se expressamente no quadro explicativo: 'Em equilíbrio: P_n = N e P_t = F_a' (a componente perpendicular do peso iguala a força normal, e a componente paralela do peso iguala a força de atrito).",
+    "explanation": "Em equilíbrio, P_n = N e P_t = F_a (a componente perpendicular do peso iguala a força normal, e a componente paralela do peso iguala a força de atrito).",
     "distractorAnalysis": [
       "Está incorreta: Num plano inclinado P não é igual a N (N equilibra apenas P_n); P_n = P_t só ocorre a 45°.",
       "Está incorreta: O atrito equilibra P_t, não N; e P = 0 não é condição de equilíbrio.",
@@ -2526,7 +2526,7 @@ const TOPIC_1_QUESTIONS = [
       "Momento da força = b / F"
     ],
     "correctIndex": 1,
-    "explanation": "Indica-se expressamente a expressão matemática fundamental: 'Momento da força = F · b'.",
+    "explanation": "O momento de uma força é dado por F · b.",
     "distractorAnalysis": [
       "Está incorreta: Dividir força pelo braço daria N/m (unidade de constante elástica k), não momento de força.",
       "Está incorreta: m · a é a expressão da força resultante (2.ª Lei de Newton), e não do momento, que inclui o braço b.",
@@ -2822,7 +2822,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1149,
     "topicId": 1,
-    "question": "No aparelho locomotor do corpo humano, como são representados os componentes de uma alavanca de Arquimedes?",
+    "question": "Na modelação biomecânica de um membro, a alavanca tem barra rígida, fulcro, força potente e força resistente. Qual é a correspondência correta com as estruturas do aparelho locomotor?",
     "options": [
       "Os ossos são os fulcros, e os tendões são as cargas resistentes da alavanca.",
       "Os ossos são as barras, as articulações os fulcros e os músculos a força potente.",
@@ -2868,7 +2868,7 @@ const TOPIC_1_QUESTIONS = [
       "O fulcro encontra-se entre a força potente e a força resistente."
     ],
     "correctIndex": 3,
-    "explanation": "Define-se expressamente: 'Interfixa: O fulcro encontra-se entre a força potente e a força resistente' (Esquema: F_P — Fulcro — F_R).",
+    "explanation": "Na alavanca interfixa, o fulcro encontra-se entre a força potente e a força resistente (F_P — fulcro — F_R).",
     "distractorAnalysis": [
       "Está incorreta: A força potente no meio define a alavanca Interpotente.",
       "Está incorreta: A força resistente no meio define a alavanca Inter-resistente.",
@@ -2887,7 +2887,7 @@ const TOPIC_1_QUESTIONS = [
       "A força potente e a resistente atuam no mesmo ponto e com o mesmo sentido."
     ],
     "correctIndex": 0,
-    "explanation": "Define-se expressamente: 'Inter-resistente: A força resistente encontra-se entre o fulcro e a força potente' (Esquema: Fulcro — F_R — F_P).",
+    "explanation": "Na alavanca inter-resistente, a força resistente encontra-se entre o fulcro e a força potente (fulcro — F_R — F_P).",
     "distractorAnalysis": [
       "Está incorreta: O fulcro no meio caracteriza a alavanca interfixa.",
       "Está incorreta: A força potente no meio caracteriza a alavanca interpotente.",
@@ -2906,7 +2906,7 @@ const TOPIC_1_QUESTIONS = [
       "A alavanca funciona sem gasto de força potente."
     ],
     "correctIndex": 1,
-    "explanation": "Define-se expressamente: 'Interpotente: A força potente encontra-se entre o fulcro e a força resistente' (Esquema: Fulcro — F_P — F_R).",
+    "explanation": "Na alavanca interpotente, a força potente encontra-se entre o fulcro e a força resistente (fulcro — F_P — F_R).",
     "distractorAnalysis": [
       "Está incorreta: Força resistente no meio define a alavanca inter-resistente.",
       "Está incorreta: Com o fulcro entre as forças, a alavanca é interfixa, e não interpotente.",
@@ -2944,7 +2944,7 @@ const TOPIC_1_QUESTIONS = [
       "Úmero, Rádio e Cúbito."
     ],
     "correctIndex": 3,
-    "explanation": "Rotula-se expressamente na imagem anatómica da alavanca interpotente do cotovelo: 'Úmero', 'Rádio' e 'Cúbito'. O cotovelo articula o úmero (braço) com o rádio e o cúbito (antebraço); o bíceps insere-se na tuberosidade do rádio.",
+    "explanation": "Na alavanca interpotente do cotovelo, o úmero (braço) articula com o rádio e o cúbito (antebraço); o bíceps insere-se na tuberosidade do rádio.",
     "distractorAnalysis": [
       "Está incorreta: Estes são ossos da cintura escapular e tórax anterior, não do cotovelo e antebraço.",
       "Está incorreta: Estes são ossos do membro inferior (articulação do joelho).",
@@ -3373,7 +3373,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1178,
     "topicId": 1,
-    "question": "Qual é a equação geral de equilíbrio de momentos aplicada ao sistema de flexão do antebraço em torno do cotovelo?",
+    "question": "Um antebraço está fletido em equilíbrio em torno do cotovelo, com um objeto seguro na mão. Sendo F_E a força do bíceps, d_E o seu braço de momento, F_objeto o peso do objeto, d_R a sua distância ao cotovelo, F_antebraço+mão o peso do antebraço com a mão e d_antebraço a distância do seu centro de gravidade ao cotovelo, qual é a equação de equilíbrio de momentos em torno do cotovelo?",
     "options": [
       "F_objeto + F_antebraço = F_E, ou seja, a soma das forças iguala a força muscular.",
       "F_E · d_R = F_objeto · d_E, em que o braço do objeto é o do bíceps.",
@@ -3381,7 +3381,7 @@ const TOPIC_1_QUESTIONS = [
       "F_E = m · g · a, em que a força muscular depende da aceleração do antebraço."
     ],
     "correctIndex": 2,
-    "explanation": "Esquematiza-se: 'Em equilíbrio: F_P · b_P = F_R · b_R; Nesta situação: (F objeto · d_R) + (F antebraço+mão · d_antebraço) = F_E · d_E'.",
+    "explanation": "Em equilíbrio, o momento motor iguala o momento resistente (F_P · b_P = F_R · b_R). No antebraço, a soma dos momentos da carga na mão e do antebraço iguala o momento do bíceps: (F_objeto · d_R) + (F_antebraço+mão · d_antebraço) = F_E · d_E.",
     "distractorAnalysis": [
       "Está incorreta: Ignorar os braços de momento viola frontalmente a Lei das Alavancas de Arquimedes.",
       "Está incorreta: Os braços anatómicos associados a cada força estão incorretamente atribuídos nesta opção.",
@@ -3438,7 +3438,7 @@ const TOPIC_1_QUESTIONS = [
       "Linha imaginária que divide o corpo humano em metades direita e esquerda."
     ],
     "correctIndex": 1,
-    "explanation": "Define-se expressamente: 'Centro de gravidade: Ponto imaginário onde se considera concentrada toda a massa e onde atua a resultante de todas as forças gravíticas do corpo'.",
+    "explanation": "O centro de gravidade é o ponto imaginário onde se considera concentrada toda a massa do corpo e onde atua a resultante das forças gravíticas.",
     "distractorAnalysis": [
       "Está incorreta: A tensão arterial mede-se no braço, mas não define o centro de gravidade.",
       "Está incorreta: A área de contacto dos pés é a base de sustentação, e não o centro de gravidade.",
@@ -3666,7 +3666,7 @@ const TOPIC_1_QUESTIONS = [
       "Eleve as mãos acima da cabeça e fique apoiado na ponta dos pés."
     ],
     "correctIndex": 1,
-    "explanation": "A intervenção de enfermagem recomendada expressamente é: 'Orientar o doente a afastar os pés ao transferir-se', ampliando a sua base e evitando o tombamento lateral.",
+    "explanation": "A intervenção de enfermagem recomendada é orientar o doente a afastar os pés ao transferir-se, ampliando a sua base e evitando o tombamento lateral.",
     "distractorAnalysis": [
       "Está incorreta: Pés juntos estreitam a base e causam instabilidade imediata.",
       "Está incorreta: Um impulso súbito do tronco pode levar a linha de gravidade para fora da base, com risco de queda.",
