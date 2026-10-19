@@ -91,6 +91,9 @@ function arenaSha256(ascii) {
 // Hash SHA-256 criptográfico do PIN Mestre de Docente
 const ARENA_HOST_PIN_HASH = '7275efded424740efd68321692c99c485bb9648e802a1c1387eea032c3729aa6';
 
+// Número de perguntas de cada quiz pré-preparado
+const ARENA_QUIZ_SIZE = 20;
+
 function arenaEscapeHtml(str) {
   if (typeof str !== 'string') return '';
   return str
@@ -124,6 +127,7 @@ class ArenaUI {
     this.customRenderLimit = 50;
     this.allQuestionsPool = [];
     this.loadSavedCustomQuestionIds();
+    this.activeSavedQuizId = this.getActiveSavedQuizId();
 
     this.initDOMElements();
     this.initEventListeners();
@@ -193,6 +197,12 @@ class ArenaUI {
     this.arenaCustomFooterBadge = document.getElementById('arena-custom-footer-badge');
     this.btnCustomFooterCancel = document.getElementById('btn-custom-footer-cancel');
     this.btnCustomFooterSave = document.getElementById('btn-custom-footer-save');
+    this.btnCustomQuizSave = document.getElementById('btn-custom-quiz-save');
+    this.btnCustomQuizUpdate = document.getElementById('btn-custom-quiz-update');
+    this.arenaSavedQuizSelect = document.getElementById('arena-saved-quiz-select');
+    this.btnDeleteSavedQuiz = document.getElementById('btn-delete-saved-quiz');
+    this.btnNewSavedQuiz = document.getElementById('btn-new-saved-quiz');
+    this.btnEditSavedQuiz = document.getElementById('btn-edit-saved-quiz');
 
     // Ecrã 3: Lobby Docente
     this.arenaDisplayPin = document.getElementById('arena-display-pin');
@@ -529,6 +539,50 @@ class ArenaUI {
       });
     }
 
+    if (this.btnCustomQuizSave) {
+      this.btnCustomQuizSave.addEventListener('click', () => this.saveDraftAsNewQuiz());
+    }
+
+    if (this.btnCustomQuizUpdate) {
+      this.btnCustomQuizUpdate.addEventListener('click', () => this.updateActiveSavedQuiz());
+    }
+
+    if (this.arenaSavedQuizSelect) {
+      this.arenaSavedQuizSelect.addEventListener('change', () => {
+        const val = this.arenaSavedQuizSelect.value;
+        if (val === '__draft__') return;
+        if (val) {
+          this.applySavedQuiz(val);
+        } else {
+          if (this.selectedCustomQuestionIds.size > 0 && !this.getActiveSavedQuiz() &&
+              !confirm('Descartar a seleção manual atual (não guardada) e usar sorteio aleatório?')) {
+            this.renderSavedQuizSelect();
+            return;
+          }
+          this.selectedCustomQuestionIds.clear();
+          this.saveCustomQuestionIds();
+          this.setActiveSavedQuizId('');
+        }
+        this.updateHostConfigCustomBadge();
+      });
+    }
+
+    if (this.btnNewSavedQuiz) {
+      this.btnNewSavedQuiz.addEventListener('click', () => this.startNewSavedQuiz());
+    }
+
+    if (this.btnEditSavedQuiz) {
+      this.btnEditSavedQuiz.addEventListener('click', () => {
+        if (this.getActiveSavedQuiz()) this.openCustomQuestionsSection();
+      });
+    }
+
+    if (this.btnDeleteSavedQuiz) {
+      this.btnDeleteSavedQuiz.addEventListener('click', () => {
+        if (this.activeSavedQuizId) this.deleteSavedQuiz(this.activeSavedQuizId);
+      });
+    }
+
     if (this.btnCustomFooterSave) {
       this.btnCustomFooterSave.addEventListener('click', () => {
         this.saveCustomQuestionIds();
@@ -599,18 +653,7 @@ class ArenaUI {
 
     // Ações Rápidas de Seleção (+5, +10, +20, Marcar Visíveis, Desmarcar Todas)
     const addQuickCount = (countToAdd) => {
-      const filtered = this.getFilteredQuestions();
-      let added = 0;
-      for (const q of filtered) {
-        if (!this.selectedCustomQuestionIds.has(q.id)) {
-          this.selectedCustomQuestionIds.add(q.id);
-          added++;
-          if (added >= countToAdd) break;
-        }
-      }
-      this.saveCustomQuestionIds();
-      this.updateHostConfigCustomBadge();
-      this.renderCustomQuestionsList();
+      this.addCustomQuestionIds(this.getFilteredQuestions().map(q => q.id), countToAdd);
     };
 
     if (this.btnQuickSelect5) this.btnQuickSelect5.addEventListener('click', () => addQuickCount(5));
@@ -619,11 +662,7 @@ class ArenaUI {
 
     if (this.btnCustomSelectFiltered) {
       this.btnCustomSelectFiltered.addEventListener('click', () => {
-        const filtered = this.getFilteredQuestions();
-        filtered.forEach(q => this.selectedCustomQuestionIds.add(q.id));
-        this.saveCustomQuestionIds();
-        this.updateHostConfigCustomBadge();
-        this.renderCustomQuestionsList();
+        this.addCustomQuestionIds(this.getFilteredQuestions().map(q => q.id));
       });
     }
 
@@ -652,6 +691,11 @@ class ArenaUI {
         if (e.target && e.target.classList.contains('arena-custom-q-check')) {
           const qid = parseInt(e.target.getAttribute('data-qid'), 10);
           if (e.target.checked) {
+            if (this.selectedCustomQuestionIds.size >= ARENA_QUIZ_SIZE) {
+              e.target.checked = false;
+              alert(`Cada quiz tem ${ARENA_QUIZ_SIZE} perguntas. Já tens ${ARENA_QUIZ_SIZE} selecionadas: desmarca alguma para adicionar outra.`);
+              return;
+            }
             this.selectedCustomQuestionIds.add(qid);
           } else {
             this.selectedCustomQuestionIds.delete(qid);
@@ -1376,6 +1420,155 @@ class ArenaUI {
     } catch (e) {}
   }
 
+  // ----- Quizzes pré-preparados (guardados neste navegador) -----
+
+  loadSavedQuizzes() {
+    try {
+      const arr = JSON.parse(localStorage.getItem('arena_saved_quizzes') || '[]');
+      return Array.isArray(arr) ? arr : [];
+    } catch (e) {
+      return [];
+    }
+  }
+
+  persistSavedQuizzes(list) {
+    try {
+      localStorage.setItem('arena_saved_quizzes', JSON.stringify(list));
+    } catch (e) {}
+  }
+
+  getActiveSavedQuizId() {
+    try {
+      return localStorage.getItem('arena_active_saved_quiz') || '';
+    } catch (e) {
+      return '';
+    }
+  }
+
+  setActiveSavedQuizId(id) {
+    this.activeSavedQuizId = id || '';
+    try {
+      localStorage.setItem('arena_active_saved_quiz', this.activeSavedQuizId);
+    } catch (e) {}
+  }
+
+  getActiveSavedQuiz() {
+    return this.loadSavedQuizzes().find(q => q.id === this.activeSavedQuizId) || null;
+  }
+
+  // Carrega um quiz guardado para o rascunho usado pela sala
+  applySavedQuiz(id) {
+    const quiz = this.loadSavedQuizzes().find(q => q.id === id);
+    if (!quiz) return;
+    this.selectedCustomQuestionIds = new Set(quiz.questionIds);
+    this.saveCustomQuestionIds();
+    this.setActiveSavedQuizId(id);
+  }
+
+  // Adiciona perguntas ao rascunho, sem ultrapassar ARENA_QUIZ_SIZE
+  addCustomQuestionIds(ids, limit = Infinity) {
+    let added = 0;
+    let full = false;
+    for (const id of ids) {
+      if (added >= limit) break;
+      if (this.selectedCustomQuestionIds.has(id)) continue;
+      if (this.selectedCustomQuestionIds.size >= ARENA_QUIZ_SIZE) {
+        full = true;
+        break;
+      }
+      this.selectedCustomQuestionIds.add(id);
+      added++;
+    }
+    if (full) {
+      alert(`Cada quiz tem ${ARENA_QUIZ_SIZE} perguntas. Já tens ${ARENA_QUIZ_SIZE} selecionadas: desmarca alguma para adicionar outra.`);
+    }
+    this.saveCustomQuestionIds();
+    this.updateHostConfigCustomBadge();
+    this.renderCustomQuestionsList();
+    return added;
+  }
+
+  // Verifica se o rascunho tem exatamente ARENA_QUIZ_SIZE perguntas antes de guardar
+  isDraftQuizComplete() {
+    const count = this.selectedCustomQuestionIds.size;
+    if (count === ARENA_QUIZ_SIZE) return true;
+    alert(`Um quiz tem de ter exatamente ${ARENA_QUIZ_SIZE} perguntas (tens ${count} selecionadas).`);
+    return false;
+  }
+
+  saveDraftAsNewQuiz() {
+    if (!this.isDraftQuizComplete()) return;
+    const name = (prompt('Nome do quiz (ex.: "Aula 3 - Alavancas"):', '') || '').trim();
+    if (!name) return;
+    const quiz = {
+      id: 'quiz_' + Date.now(),
+      name: name,
+      questionIds: [...this.selectedCustomQuestionIds],
+      createdAt: new Date().toISOString()
+    };
+    this.persistSavedQuizzes([...this.loadSavedQuizzes(), quiz]);
+    // Esvazia o rascunho para o próximo quiz começar do zero
+    this.selectedCustomQuestionIds.clear();
+    this.saveCustomQuestionIds();
+    this.setActiveSavedQuizId('');
+    this.updateHostConfigCustomBadge();
+    this.renderCustomQuestionsList();
+    alert(`Quiz "${name}" guardado. Total de quizzes guardados: ${this.loadSavedQuizzes().length}. Podes preparar o próximo.`);
+  }
+
+  // Começa um quiz novo: esvazia o rascunho e abre a seleção (pede PIN)
+  startNewSavedQuiz() {
+    if (this.selectedCustomQuestionIds.size > 0 && !this.getActiveSavedQuiz() &&
+        !confirm('Descartar a seleção manual atual (não guardada) e começar um quiz novo?')) {
+      return;
+    }
+    this.selectedCustomQuestionIds.clear();
+    this.saveCustomQuestionIds();
+    this.setActiveSavedQuizId('');
+    this.openCustomQuestionsSection();
+  }
+
+  updateActiveSavedQuiz() {
+    const active = this.getActiveSavedQuiz();
+    if (!active || !this.isDraftQuizComplete()) return;
+    const list = this.loadSavedQuizzes().map(q =>
+      q.id === active.id ? { ...q, questionIds: [...this.selectedCustomQuestionIds], updatedAt: new Date().toISOString() } : q
+    );
+    this.persistSavedQuizzes(list);
+    this.updateHostConfigCustomBadge();
+    alert(`Quiz "${active.name}" atualizado.`);
+  }
+
+  deleteSavedQuiz(id) {
+    const quiz = this.loadSavedQuizzes().find(q => q.id === id);
+    if (!quiz) return;
+    if (!confirm(`Apagar o quiz "${quiz.name}"? Esta ação não pode ser desfeita.`)) return;
+    this.persistSavedQuizzes(this.loadSavedQuizzes().filter(q => q.id !== id));
+    if (this.activeSavedQuizId === id) {
+      this.setActiveSavedQuizId('');
+      this.selectedCustomQuestionIds.clear();
+      this.saveCustomQuestionIds();
+    }
+    this.updateHostConfigCustomBadge();
+  }
+
+  renderSavedQuizSelect() {
+    if (!this.arenaSavedQuizSelect) return;
+    const list = this.loadSavedQuizzes();
+    const active = this.getActiveSavedQuiz();
+    let html = '<option value="">🎲 Sorteio aleatório (sem quiz)</option>';
+    if (!active && this.selectedCustomQuestionIds.size > 0) {
+      html += `<option value="__draft__" disabled selected>✏️ Seleção manual atual (não guardada)</option>`;
+    }
+    list.forEach(q => {
+      html += `<option value="${arenaEscapeHtml(q.id)}">${arenaEscapeHtml(q.name)} (${q.questionIds.length} perguntas)</option>`;
+    });
+    this.arenaSavedQuizSelect.innerHTML = html;
+    this.arenaSavedQuizSelect.value = active ? active.id : (this.selectedCustomQuestionIds.size > 0 ? '__draft__' : '');
+    if (this.btnDeleteSavedQuiz) this.btnDeleteSavedQuiz.classList.toggle('hidden', !active);
+    if (this.btnEditSavedQuiz) this.btnEditSavedQuiz.classList.toggle('hidden', !active);
+  }
+
   loadAllQuestionsPool() {
     if (this.allQuestionsPool && this.allQuestionsPool.length > 0) return;
     let all = [];
@@ -1466,8 +1659,21 @@ class ArenaUI {
   }
 
   updateHostConfigCustomBadge() {
-    if (!this.arenaCustomActiveBadge) return;
     const count = this.selectedCustomQuestionIds.size;
+    if (count === 0 && this.activeSavedQuizId) this.setActiveSavedQuizId('');
+    const active = this.getActiveSavedQuiz();
+    // Com perguntas escolhidas, a quantidade é a do quiz (o sorteio não é usado)
+    const countBox = document.getElementById('arena-config-count-container');
+    if (countBox) countBox.classList.toggle('hidden', count > 0);
+    if (this.arenaCustomFooterBadge) {
+      this.arenaCustomFooterBadge.textContent = `${count}/${ARENA_QUIZ_SIZE} ${count === 1 ? 'pergunta selecionada' : 'perguntas selecionadas'}`;
+    }
+    if (this.btnCustomQuizUpdate) {
+      this.btnCustomQuizUpdate.classList.toggle('hidden', !active);
+      if (active) this.btnCustomQuizUpdate.textContent = `🔄 Atualizar "${active.name}"`;
+    }
+    this.renderSavedQuizSelect();
+    if (!this.arenaCustomActiveBadge) return;
     if (count > 0) {
       this.arenaCustomActiveBadge.innerHTML = `
         <span class="arena-custom-badge-pill is-active">
