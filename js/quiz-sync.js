@@ -24,10 +24,12 @@ const QuizSync = (() => {
   }
 
   async function post(body) {
+    const key = getKey(false);
+    if (!key) throw new Error('sem-chave');
     const res = await fetch(METRICS_ENDPOINT, {
       method: 'POST',
       headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-      body: JSON.stringify(Object.assign({ key: getKey(false) }, body))
+      body: JSON.stringify(Object.assign({ key: key }, body))
     });
     const data = await res.json();
     if (!data.ok) throw new Error(data.error || 'erro no servidor');

@@ -38,9 +38,9 @@ function doPost(e) {
     } else {
       row.push(
         data.mode,
-        String(data.title || '').slice(0, 60),
-        String(data.topicId || '').slice(0, 10),
-        String(data.feedbackMode || '').slice(0, 20),
+        safeCell_(String(data.title || '').slice(0, 60)),
+        safeCell_(String(data.topicId || '').slice(0, 10)),
+        safeCell_(String(data.feedbackMode || '').slice(0, 20)),
         data.answered,
         data.correct,
         data.grade20,
@@ -60,7 +60,17 @@ function doPost(e) {
 // Pedidos do docente (exigem a chave): gestão de quizzes e resumo de sessões
 function teacherPost_(data) {
   if (data.key !== READ_KEY) return json_({ ok: false, error: 'unauthorized' });
+  // Um pedido de cada vez: evita linhas duplicadas e apagamentos desalinhados
+  const lock = LockService.getScriptLock();
+  lock.waitLock(10000);
+  try {
+    return teacherWrite_(data);
+  } finally {
+    lock.releaseLock();
+  }
+}
 
+function teacherWrite_(data) {
   if (data.type === 'quiz_save') {
     const q = data.quiz || {};
     if (typeof q.id !== 'string' || !/^[A-Za-z0-9_]{1,40}$/.test(q.id)) return json_({ ok: false, error: 'id inválido' });
@@ -70,17 +80,21 @@ function teacherPost_(data) {
       return json_({ ok: false, error: 'o quiz tem de ter ' + QUIZ_SIZE + ' perguntas' });
     }
     const sheet = getSheet_(QUIZ_SHEET, QUIZ_HEADERS);
-    const row = [q.id, q.name.trim(), JSON.stringify(q.questionIds), new Date().toISOString()];
-    const rowIndex = findRow_(sheet, q.id);
-    if (rowIndex) sheet.getRange(rowIndex, 1, 1, row.length).setValues([row]);
-    else sheet.appendRow(row);
+    const row = [q.id, safeCell_(q.name.trim()), JSON.stringify(q.questionIds), new Date().toISOString()];
+    const rows = findRows_(sheet, q.id);
+    if (rows.length) {
+      sheet.getRange(rows[0], 1, 1, row.length).setValues([row]);
+      rows.slice(1).reverse().forEach(function (r) { sheet.deleteRow(r); });
+    } else {
+      sheet.appendRow(row);
+    }
     return json_({ ok: true });
   }
 
   if (data.type === 'quiz_delete') {
     const sheet = getSheet_(QUIZ_SHEET, QUIZ_HEADERS);
-    const rowIndex = findRow_(sheet, String(data.id || ''));
-    if (rowIndex) sheet.deleteRow(rowIndex);
+    const rows = findRows_(sheet, String(data.id || ''));
+    rows.reverse().forEach(function (r) { sheet.deleteRow(r); });
     return json_({ ok: true });
   }
 
@@ -88,11 +102,12 @@ function teacherPost_(data) {
     const s = data.summary || {};
     const teams = Array.isArray(s.teams) ? s.teams.slice(0, 100) : [];
     const sheet = getSheet_(RESULT_SHEET, RESULT_HEADERS);
-    teams.forEach(function (t) {
-      sheet.appendRow([new Date(), String(s.startedAt || '').slice(0, 30), String(s.roomPin || '').slice(0, 20),
-        String(s.quizName || '').slice(0, 80), String(t.teamName || '').slice(0, 60), t.rank, t.score,
-        t.correct, s.questionsTotal]);
+    const rows = teams.map(function (t) {
+      return [new Date(), safeCell_(String(s.startedAt || '').slice(0, 30)), safeCell_(String(s.roomPin || '').slice(0, 20)),
+        safeCell_(String(s.quizName || '').slice(0, 80)), safeCell_(String(t.teamName || '').slice(0, 60)), t.rank, t.score,
+        t.correct, s.questionsTotal];
     });
+    if (rows.length) sheet.getRange(sheet.getLastRow() + 1, 1, rows.length, RESULT_HEADERS.length).setValues(rows);
     return json_({ ok: true, rows: teams.length });
   }
 
@@ -155,13 +170,19 @@ function doGet(e) {
   return json_({ ok: true, rows: rows });
 }
 
-// Devolve a linha (1-based, com cabeçalho) do quiz com este id, ou 0
-function findRow_(sheet, id) {
+// Devolve as linhas (1-based, com cabeçalho) dos quizzes com este id
+function findRows_(sheet, id) {
   const ids = sheet.getRange(1, 1, Math.max(sheet.getLastRow(), 1), 1).getValues();
+  const rows = [];
   for (let i = 1; i < ids.length; i++) {
-    if (String(ids[i][0]) === id) return i + 1;
+    if (String(ids[i][0]) === id) rows.push(i + 1);
   }
-  return 0;
+  return rows;
+}
+
+// Texto que começa por = + - @ seria lido como fórmula na folha: prefixa-se com '
+function safeCell_(v) {
+  return (typeof v === 'string' && /^[=+\-@\t\r]/.test(v)) ? "'" + v : v;
 }
 
 function getSheet_(name, headers) {

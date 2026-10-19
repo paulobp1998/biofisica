@@ -122,7 +122,7 @@ class ArenaEngine {
       if (!this.teams[data.teamId]) {
         this.teams[data.teamId] = {
           teamId: data.teamId,
-          teamName: data.teamName || 'Equipa ' + (Object.keys(this.teams).length + 1),
+          teamName: String(data.teamName || '').slice(0, 25) || 'Equipa ' + (Object.keys(this.teams).length + 1),
           avatar: data.avatar || '🩺',
           score: 0,
           streak: 0,
@@ -136,12 +136,15 @@ class ArenaEngine {
 
     this.net.on('answer_received', (data) => {
       if (this.role !== 'host' || this.phase !== 'QUESTION') return;
-      
+      // O anfitrião não confia nos valores enviados pelos telemóveis
+      if (!Number.isInteger(data.optionIndex) || data.optionIndex < 0 || data.optionIndex > 3) return;
+      const timeRemaining = Math.min(Math.max(Number(data.timeRemaining) || 0, 0), this.timePerQuestion);
+
       const team = this.teams[data.teamId];
       if (team) {
         this.currentAnswers[data.teamId] = {
           optionIndex: data.optionIndex,
-          timeRemaining: data.timeRemaining,
+          timeRemaining: timeRemaining,
           submittedAt: data.submittedAt
         };
 

@@ -1571,11 +1571,22 @@ class ArenaUI {
     if (el) el.textContent = msg;
   }
 
+  // Um quiz válido tem nome e exatamente ARENA_QUIZ_SIZE perguntas distintas e conhecidas
+  isValidQuizData(name, ids, known) {
+    return typeof name === 'string' && name.trim() !== ''
+      && Array.isArray(ids) && ids.length === ARENA_QUIZ_SIZE
+      && new Set(ids).size === ARENA_QUIZ_SIZE
+      && ids.every(id => known.has(id));
+  }
+
   // Mensagem para um erro de sincronização; uma chave recusada é esquecida
   syncErrorText(e, fallback) {
     if (e && e.message === 'unauthorized') {
       QuizSync.forgetKey();
       return '⛔ Chave do docente recusada. Será pedida de novo na próxima sincronização.';
+    }
+    if (e && e.message === 'sem-chave') {
+      return '⚠️ Sem chave do docente: guardado só neste navegador.';
     }
     return fallback;
   }
@@ -1648,12 +1659,16 @@ class ArenaUI {
       if (!Array.isArray(remote)) throw new Error('resposta inválida');
       const tombstones = this.getTombstones();
       const local = this.loadSavedQuizzes();
+      // Quizzes sem marca de sincronização (criados antes desta versão) contam como pendentes
+      const pending = local.filter(q => q.dirty !== false);
+      this.loadAllQuestionsPool();
+      const known = new Set(this.allQuestionsPool.map(q => q.id));
       const merged = new Map(remote
-        .filter(r => !tombstones.includes(r.id))
+        .filter(r => !tombstones.includes(r.id) && this.isValidQuizData(r.name, r.questionIds, known))
         .map(r => [r.id, { id: r.id, name: r.name, questionIds: r.questionIds, updatedAt: r.updatedAt, dirty: false }]));
-      local.filter(q => q.dirty).forEach(q => merged.set(q.id, q));
+      pending.forEach(q => merged.set(q.id, q));
       this.persistSavedQuizzes([...merged.values()]);
-      for (const q of local.filter(q => q.dirty)) await this.syncQuizSave(q.id);
+      for (const q of pending) await this.syncQuizSave(q.id);
       this.updateHostConfigCustomBadge();
       this.setStatusText(this.quizSyncStatus, `✅ Sincronizado com o servidor (${merged.size} quizzes).`);
     } catch (e) {
@@ -1766,9 +1781,7 @@ class ArenaUI {
     list.forEach((q, i) => {
       const name = q && typeof q.name === 'string' ? q.name.trim() : '';
       const ids = q && Array.isArray(q.questionIds) ? q.questionIds : [];
-      const valid = name && ids.length === ARENA_QUIZ_SIZE && new Set(ids).size === ARENA_QUIZ_SIZE
-        && ids.every(id => known.has(id));
-      if (!valid) {
+      if (!this.isValidQuizData(name, ids, known)) {
         rejected++;
         return;
       }
@@ -1792,7 +1805,9 @@ class ArenaUI {
     const s = this.lastSessionResult;
     if (!s) return;
     const esc = v => {
-      const t = v === null || v === undefined ? '' : String(v);
+      let t = v === null || v === undefined ? '' : String(v);
+      // Evita que o Excel execute fórmulas (ex.: nomes de equipa começados por =)
+      if (/^[=+\-@\t\r]/.test(t)) t = "'" + t;
       return /[;"\n]/.test(t) ? '"' + t.replace(/"/g, '""') + '"' : t;
     };
     const letters = ['A', 'B', 'C', 'D'];
@@ -1834,7 +1849,7 @@ class ArenaUI {
     const active = this.getActiveSavedQuiz();
     if (!active || !this.isDraftQuizComplete()) return;
     const list = this.loadSavedQuizzes().map(q =>
-      q.id === active.id ? { ...q, questionIds: [...this.selectedCustomQuestionIds], updatedAt: new Date().toISOString() } : q
+      q.id === active.id ? { ...q, questionIds: [...this.selectedCustomQuestionIds], updatedAt: new Date().toISOString(), dirty: true } : q
     );
     this.persistSavedQuizzes(list);
     this.syncQuizSave(active.id);
