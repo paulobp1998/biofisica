@@ -41,9 +41,15 @@ const QuizSync = (() => {
     return data.quizzes;
   }
 
+  // Esquece a chave guardada (por exemplo, se o servidor a recusar)
+  function forgetKey() {
+    try { localStorage.removeItem(KEY_STORAGE); } catch (e) {}
+  }
+
   return {
     isEnabled,
     getKey,
+    forgetKey,
     listQuizzes,
     saveQuiz: quiz => post({ type: 'quiz_save', quiz: quiz }),
     deleteQuiz: id => post({ type: 'quiz_delete', id: id }),

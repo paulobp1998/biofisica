@@ -1571,6 +1571,15 @@ class ArenaUI {
     if (el) el.textContent = msg;
   }
 
+  // Mensagem para um erro de sincronização; uma chave recusada é esquecida
+  syncErrorText(e, fallback) {
+    if (e && e.message === 'unauthorized') {
+      QuizSync.forgetKey();
+      return '⛔ Chave do docente recusada. Será pedida de novo na próxima sincronização.';
+    }
+    return fallback;
+  }
+
   getTombstones() {
     try {
       const arr = JSON.parse(localStorage.getItem('arena_quiz_tombstones') || '[]');
@@ -1599,7 +1608,8 @@ class ArenaUI {
       this.setStatusText(this.quizSyncStatus, '✅ Guardado no servidor.');
     } catch (e) {
       setDirty(true);
-      this.setStatusText(this.quizSyncStatus, '⚠️ Sem ligação ao servidor: guardado só neste navegador. Será enviado na próxima sincronização.');
+      this.setStatusText(this.quizSyncStatus, this.syncErrorText(e,
+        '⚠️ Sem ligação ao servidor: guardado só neste navegador. Será enviado na próxima sincronização.'));
     }
   }
 
@@ -1612,7 +1622,8 @@ class ArenaUI {
       this.setTombstones(this.getTombstones().filter(x => x !== id));
       this.setStatusText(this.quizSyncStatus, '✅ Apagado no servidor.');
     } catch (e) {
-      this.setStatusText(this.quizSyncStatus, '⚠️ Apagado só neste navegador; será removido do servidor na próxima sincronização.');
+      this.setStatusText(this.quizSyncStatus, this.syncErrorText(e,
+        '⚠️ Apagado só neste navegador; será removido do servidor na próxima sincronização.'));
     }
   }
 
@@ -1646,7 +1657,8 @@ class ArenaUI {
       this.updateHostConfigCustomBadge();
       this.setStatusText(this.quizSyncStatus, `✅ Sincronizado com o servidor (${merged.size} quizzes).`);
     } catch (e) {
-      this.setStatusText(this.quizSyncStatus, '⚠️ Não foi possível sincronizar. Os quizzes continuam guardados neste navegador.');
+      this.setStatusText(this.quizSyncStatus, this.syncErrorText(e,
+        '⚠️ Não foi possível sincronizar. Os quizzes continuam guardados neste navegador.'));
     } finally {
       this.quizSyncing = false;
     }
