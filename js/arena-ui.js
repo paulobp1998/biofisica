@@ -128,6 +128,8 @@ class ArenaUI {
     this.allQuestionsPool = [];
     this.loadSavedCustomQuestionIds();
     this.activeSavedQuizId = this.getActiveSavedQuizId();
+    this.lastSessionResult = null;
+    this.quizSyncing = false;
 
     this.initDOMElements();
     this.initEventListeners();
@@ -203,6 +205,15 @@ class ArenaUI {
     this.btnDeleteSavedQuiz = document.getElementById('btn-delete-saved-quiz');
     this.btnNewSavedQuiz = document.getElementById('btn-new-saved-quiz');
     this.btnEditSavedQuiz = document.getElementById('btn-edit-saved-quiz');
+    this.btnDuplicateSavedQuiz = document.getElementById('btn-duplicate-saved-quiz');
+    this.btnPreviewSavedQuiz = document.getElementById('btn-preview-saved-quiz');
+    this.btnExportQuizzes = document.getElementById('btn-export-quizzes');
+    this.btnImportQuizzes = document.getElementById('btn-import-quizzes');
+    this.quizImportFile = document.getElementById('arena-quiz-import-file');
+    this.quizSyncStatus = document.getElementById('arena-quiz-sync-status');
+    this.quizPreview = document.getElementById('arena-quiz-preview');
+    this.btnExportCsv = document.getElementById('btn-arena-export-csv');
+    this.podiumSaveStatus = document.getElementById('arena-podium-save-status');
 
     // Ecrã 3: Lobby Docente
     this.arenaDisplayPin = document.getElementById('arena-display-pin');
@@ -405,6 +416,7 @@ class ArenaUI {
         this.requestTeacherAuth(() => {
           this.updateHostConfigCustomBadge();
           this.showScreen('hostConfig');
+          this.syncQuizzesWithServer();
         });
       });
     }
@@ -519,7 +531,8 @@ class ArenaUI {
           count: count,
           timePerQuestion: time,
           isSimulated: false,
-          customQuestions: customQuestions
+          customQuestions: customQuestions,
+          quizName: customQuestions ? (this.getActiveSavedQuiz() ? this.getActiveSavedQuiz().name : 'Seleção manual') : null
         });
       });
     }
@@ -575,6 +588,37 @@ class ArenaUI {
       this.btnEditSavedQuiz.addEventListener('click', () => {
         if (this.getActiveSavedQuiz()) this.openCustomQuestionsSection();
       });
+    }
+
+    if (this.btnDuplicateSavedQuiz) {
+      this.btnDuplicateSavedQuiz.addEventListener('click', () => this.duplicateActiveQuiz());
+    }
+
+    if (this.btnPreviewSavedQuiz) {
+      this.btnPreviewSavedQuiz.addEventListener('click', () => {
+        if (!this.quizPreview) return;
+        const open = this.quizPreview.classList.contains('hidden');
+        this.quizPreview.classList.toggle('hidden', !open);
+        this.btnPreviewSavedQuiz.textContent = open ? '🙈 Ocultar perguntas' : '👁️ Ver perguntas';
+        if (open) this.renderQuizPreview();
+      });
+    }
+
+    if (this.btnExportQuizzes) {
+      this.btnExportQuizzes.addEventListener('click', () => this.exportQuizzesJson());
+    }
+
+    if (this.btnImportQuizzes && this.quizImportFile) {
+      this.btnImportQuizzes.addEventListener('click', () => this.quizImportFile.click());
+      this.quizImportFile.addEventListener('change', () => {
+        const file = this.quizImportFile.files && this.quizImportFile.files[0];
+        this.quizImportFile.value = '';
+        if (file) this.importQuizzesFile(file);
+      });
+    }
+
+    if (this.btnExportCsv) {
+      this.btnExportCsv.addEventListener('click', () => this.exportSessionCsv());
     }
 
     if (this.btnDeleteSavedQuiz) {
@@ -1038,6 +1082,10 @@ class ArenaUI {
 
     // 8. Pódio Final
     this.engine.onUI('podium_ready', (data) => {
+      this.lastSessionResult = data.session || null;
+      this.setStatusText(this.podiumSaveStatus, '');
+      const isSimulated = !!(this.engine.net && this.engine.net.isSimulated);
+      if (data.session && !isSimulated) this.saveSessionToServer(data.session);
       this.renderPodium(data.winners);
       this.renderRankingsTable(data.rankings, this.arenaFinalRankingsTable);
       this.renderHardestQuestions(data.hardestQuestions);
@@ -1507,6 +1555,7 @@ class ArenaUI {
       createdAt: new Date().toISOString()
     };
     this.persistSavedQuizzes([...this.loadSavedQuizzes(), quiz]);
+    this.syncQuizSave(quiz.id);
     // Esvazia o rascunho para o próximo quiz começar do zero
     this.selectedCustomQuestionIds.clear();
     this.saveCustomQuestionIds();
@@ -1514,6 +1563,247 @@ class ArenaUI {
     this.updateHostConfigCustomBadge();
     this.renderCustomQuestionsList();
     alert(`Quiz "${name}" guardado. Total de quizzes guardados: ${this.loadSavedQuizzes().length}. Podes preparar o próximo.`);
+  }
+
+  // ----- Sincronização com o servidor (Google Sheets) -----
+
+  setStatusText(el, msg) {
+    if (el) el.textContent = msg;
+  }
+
+  getTombstones() {
+    try {
+      const arr = JSON.parse(localStorage.getItem('arena_quiz_tombstones') || '[]');
+      return Array.isArray(arr) ? arr : [];
+    } catch (e) {
+      return [];
+    }
+  }
+
+  setTombstones(list) {
+    try {
+      localStorage.setItem('arena_quiz_tombstones', JSON.stringify(list));
+    } catch (e) {}
+  }
+
+  // Envia um quiz para o servidor. Se falhar, fica marcado como pendente (dirty)
+  async syncQuizSave(id) {
+    if (!QuizSync.isEnabled()) return;
+    const setDirty = dirty => this.persistSavedQuizzes(this.loadSavedQuizzes().map(q =>
+      q.id === id ? { ...q, dirty: dirty } : q));
+    const quiz = this.loadSavedQuizzes().find(q => q.id === id);
+    if (!quiz) return;
+    try {
+      await QuizSync.saveQuiz(quiz);
+      setDirty(false);
+      this.setStatusText(this.quizSyncStatus, '✅ Guardado no servidor.');
+    } catch (e) {
+      setDirty(true);
+      this.setStatusText(this.quizSyncStatus, '⚠️ Sem ligação ao servidor: guardado só neste navegador. Será enviado na próxima sincronização.');
+    }
+  }
+
+  async syncDeleteQuiz(id) {
+    if (!QuizSync.isEnabled()) return;
+    const tombstones = this.getTombstones();
+    if (!tombstones.includes(id)) this.setTombstones([...tombstones, id]);
+    try {
+      await QuizSync.deleteQuiz(id);
+      this.setTombstones(this.getTombstones().filter(x => x !== id));
+      this.setStatusText(this.quizSyncStatus, '✅ Apagado no servidor.');
+    } catch (e) {
+      this.setStatusText(this.quizSyncStatus, '⚠️ Apagado só neste navegador; será removido do servidor na próxima sincronização.');
+    }
+  }
+
+  // Junta os quizzes do servidor com os locais. O servidor prevalece,
+  // exceto nos quizzes com alterações locais pendentes (dirty).
+  async syncQuizzesWithServer() {
+    if (!QuizSync.isEnabled() || this.quizSyncing) return;
+    if (!QuizSync.getKey(true)) {
+      this.setStatusText(this.quizSyncStatus, 'Sem chave: os quizzes ficam só neste navegador.');
+      return;
+    }
+    this.quizSyncing = true;
+    this.setStatusText(this.quizSyncStatus, 'A sincronizar com o servidor…');
+    try {
+      for (const id of this.getTombstones()) {
+        try {
+          await QuizSync.deleteQuiz(id);
+          this.setTombstones(this.getTombstones().filter(x => x !== id));
+        } catch (e) {}
+      }
+      const remote = await QuizSync.listQuizzes(QuizSync.getKey(false));
+      if (!Array.isArray(remote)) throw new Error('resposta inválida');
+      const tombstones = this.getTombstones();
+      const local = this.loadSavedQuizzes();
+      const merged = new Map(remote
+        .filter(r => !tombstones.includes(r.id))
+        .map(r => [r.id, { id: r.id, name: r.name, questionIds: r.questionIds, updatedAt: r.updatedAt, dirty: false }]));
+      local.filter(q => q.dirty).forEach(q => merged.set(q.id, q));
+      this.persistSavedQuizzes([...merged.values()]);
+      for (const q of local.filter(q => q.dirty)) await this.syncQuizSave(q.id);
+      this.updateHostConfigCustomBadge();
+      this.setStatusText(this.quizSyncStatus, `✅ Sincronizado com o servidor (${merged.size} quizzes).`);
+    } catch (e) {
+      this.setStatusText(this.quizSyncStatus, '⚠️ Não foi possível sincronizar. Os quizzes continuam guardados neste navegador.');
+    } finally {
+      this.quizSyncing = false;
+    }
+  }
+
+  // Envia o resumo da sessão (ranking por equipa) para a folha "resultados"
+  async saveSessionToServer(session) {
+    if (!QuizSync.isEnabled() || !QuizSync.getKey(false)) {
+      this.setStatusText(this.podiumSaveStatus, 'Resumo não enviado ao servidor (sem chave). Use o CSV.');
+      return;
+    }
+    try {
+      await QuizSync.saveResult({
+        startedAt: session.startedAt,
+        roomPin: session.roomPin,
+        quizName: session.quizName,
+        questionsTotal: session.questionsTotal,
+        teams: session.teams
+      });
+      this.setStatusText(this.podiumSaveStatus, '✅ Resumo guardado no servidor (folha "resultados").');
+    } catch (e) {
+      this.setStatusText(this.podiumSaveStatus, '⚠️ Não foi possível guardar no servidor. Exporte o CSV.');
+    }
+  }
+
+  // ----- Ações sobre a biblioteca de quizzes -----
+
+  duplicateActiveQuiz() {
+    const active = this.getActiveSavedQuiz();
+    if (!active) return;
+    const copy = {
+      id: 'quiz_' + Date.now(),
+      name: (active.name + ' (cópia)').slice(0, 80),
+      questionIds: [...active.questionIds],
+      createdAt: new Date().toISOString()
+    };
+    this.persistSavedQuizzes([...this.loadSavedQuizzes(), copy]);
+    this.applySavedQuiz(copy.id);
+    this.syncQuizSave(copy.id);
+    this.updateHostConfigCustomBadge();
+  }
+
+  // Preenche a pré-visualização com o enunciado de cada pergunta
+  renderQuizPreview() {
+    if (!this.quizPreview) return;
+    this.loadAllQuestionsPool();
+    const active = this.getActiveSavedQuiz();
+    const ids = active ? active.questionIds : [...this.selectedCustomQuestionIds];
+    const byId = new Map(this.allQuestionsPool.map(q => [q.id, q]));
+    if (ids.length === 0) {
+      this.quizPreview.innerHTML = '<p style="margin:0;">Ainda não há perguntas selecionadas.</p>';
+      return;
+    }
+    this.quizPreview.innerHTML = ids.map((id, i) => {
+      const q = byId.get(id);
+      const text = q ? (q.question || '') : '(pergunta não encontrada)';
+      const short = text.length > 110 ? text.slice(0, 110) + '…' : text;
+      return `<div style="padding: 0.3rem 0; border-bottom: 1px solid rgba(128,128,128,0.2);">
+        <strong>${i + 1}.</strong> <span style="color: var(--text-secondary);">#${id}</span> ${arenaEscapeHtml(short)}
+      </div>`;
+    }).join('');
+  }
+
+  downloadFile(content, type, fileName) {
+    const blob = new Blob([content], { type: type });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+
+  exportQuizzesJson() {
+    const quizzes = this.loadSavedQuizzes().map(({ id, name, questionIds, createdAt, updatedAt }) =>
+      ({ id, name, questionIds, createdAt, updatedAt }));
+    if (quizzes.length === 0) {
+      alert('Ainda não há quizzes guardados para exportar.');
+      return;
+    }
+    const data = { app: 'biofisica-quizzes', version: 1, exportedAt: new Date().toISOString(), quizzes: quizzes };
+    this.downloadFile(JSON.stringify(data, null, 2), 'application/json',
+      `quizzes-biofisica-${new Date().toISOString().slice(0, 10)}.json`);
+  }
+
+  async importQuizzesFile(file) {
+    let data;
+    try {
+      data = JSON.parse(await file.text());
+    } catch (e) {
+      alert('O ficheiro não é um JSON válido.');
+      return;
+    }
+    const list = Array.isArray(data) ? data : (data && Array.isArray(data.quizzes) ? data.quizzes : null);
+    if (!list) {
+      alert('O ficheiro não contém quizzes.');
+      return;
+    }
+    this.loadAllQuestionsPool();
+    const known = new Set(this.allQuestionsPool.map(q => q.id));
+    const imported = [];
+    let rejected = 0;
+    list.forEach((q, i) => {
+      const name = q && typeof q.name === 'string' ? q.name.trim() : '';
+      const ids = q && Array.isArray(q.questionIds) ? q.questionIds : [];
+      const valid = name && ids.length === ARENA_QUIZ_SIZE && new Set(ids).size === ARENA_QUIZ_SIZE
+        && ids.every(id => known.has(id));
+      if (!valid) {
+        rejected++;
+        return;
+      }
+      imported.push({
+        id: 'quiz_' + Date.now() + '_' + i,
+        name: name.slice(0, 80),
+        questionIds: [...ids],
+        createdAt: new Date().toISOString(),
+        dirty: true
+      });
+    });
+    this.persistSavedQuizzes([...this.loadSavedQuizzes(), ...imported]);
+    for (const q of imported) await this.syncQuizSave(q.id);
+    this.updateHostConfigCustomBadge();
+    alert(`${imported.length} quiz(zes) importado(s).` +
+      (rejected ? ` ${rejected} ignorado(s): não têm ${ARENA_QUIZ_SIZE} perguntas válidas.` : ''));
+  }
+
+  // CSV com dois blocos: classificação por equipa e registo por pergunta
+  exportSessionCsv() {
+    const s = this.lastSessionResult;
+    if (!s) return;
+    const esc = v => {
+      const t = v === null || v === undefined ? '' : String(v);
+      return /[;"\n]/.test(t) ? '"' + t.replace(/"/g, '""') + '"' : t;
+    };
+    const letters = ['A', 'B', 'C', 'D'];
+    const lines = [
+      ['Início', s.startedAt, 'Sala', s.roomPin, 'Quiz', s.quizName].map(esc).join(';'),
+      '',
+      ['Classificação', 'Equipa', 'Pontos', 'Respostas certas', 'Perguntas'].map(esc).join(';'),
+      ...s.teams.map(t => [t.rank, t.teamName, t.score, t.correct, s.questionsTotal].map(esc).join(';')),
+      '',
+      ['Pergunta nº', 'ID da pergunta', 'Equipa', 'Resposta', 'Opção correta', 'Correta', 'Pontos', 'Tempo restante (s)'].map(esc).join(';'),
+      ...s.log.map(r => [
+        r.questionIndex,
+        r.questionId,
+        r.teamName,
+        r.option === null ? 'Sem resposta' : letters[r.option],
+        letters[r.correctIndex],
+        r.correct ? 'Sim' : 'Não',
+        r.points,
+        r.timeRemaining === null ? '' : r.timeRemaining
+      ].map(esc).join(';'))
+    ];
+    const date = new Date().toISOString().slice(0, 16).replace(/[:T]/g, '-');
+    this.downloadFile('﻿' + lines.join('\r\n'), 'text/csv;charset=utf-8', `resultados-arena-${date}.csv`);
   }
 
   // Começa um quiz novo: esvazia o rascunho e abre a seleção (pede PIN)
@@ -1535,6 +1825,7 @@ class ArenaUI {
       q.id === active.id ? { ...q, questionIds: [...this.selectedCustomQuestionIds], updatedAt: new Date().toISOString() } : q
     );
     this.persistSavedQuizzes(list);
+    this.syncQuizSave(active.id);
     this.updateHostConfigCustomBadge();
     alert(`Quiz "${active.name}" atualizado.`);
   }
@@ -1544,6 +1835,7 @@ class ArenaUI {
     if (!quiz) return;
     if (!confirm(`Apagar o quiz "${quiz.name}"? Esta ação não pode ser desfeita.`)) return;
     this.persistSavedQuizzes(this.loadSavedQuizzes().filter(q => q.id !== id));
+    this.syncDeleteQuiz(id);
     if (this.activeSavedQuizId === id) {
       this.setActiveSavedQuizId('');
       this.selectedCustomQuestionIds.clear();
@@ -1567,6 +1859,7 @@ class ArenaUI {
     this.arenaSavedQuizSelect.value = active ? active.id : (this.selectedCustomQuestionIds.size > 0 ? '__draft__' : '');
     if (this.btnDeleteSavedQuiz) this.btnDeleteSavedQuiz.classList.toggle('hidden', !active);
     if (this.btnEditSavedQuiz) this.btnEditSavedQuiz.classList.toggle('hidden', !active);
+    if (this.btnDuplicateSavedQuiz) this.btnDuplicateSavedQuiz.classList.toggle('hidden', !active);
   }
 
   loadAllQuestionsPool() {
@@ -1673,6 +1966,7 @@ class ArenaUI {
       if (active) this.btnCustomQuizUpdate.textContent = `🔄 Atualizar "${active.name}"`;
     }
     this.renderSavedQuizSelect();
+    if (this.quizPreview && !this.quizPreview.classList.contains('hidden')) this.renderQuizPreview();
     if (!this.arenaCustomActiveBadge) return;
     if (count > 0) {
       this.arenaCustomActiveBadge.innerHTML = `

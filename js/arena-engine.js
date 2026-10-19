@@ -171,7 +171,7 @@ class ArenaEngine {
   // =========================================================================
   // FLUXO DO DOCENTE (HOST)
   // =========================================================================
-  startHostSession({ topicId = 1, count = 20, timePerQuestion = 45, isSimulated = false, customQuestions = null }) {
+  startHostSession({ topicId = 1, count = 20, timePerQuestion = 45, isSimulated = false, customQuestions = null, quizName = null }) {
     try {
       if (typeof window !== 'undefined' && window.sessionStorage) {
         if (window.sessionStorage.getItem('arena_host_authenticated') !== 'true') {
@@ -188,6 +188,9 @@ class ArenaEngine {
     this.teams = {};
     this.currentAnswers = {};
     this.questionStats = [];
+    this.sessionLog = []; // uma linha por equipa e por pergunta (exportação CSV)
+    this.quizName = quizName;
+    this.sessionStartedAt = new Date().toISOString();
     this.phase = 'LOBBY';
 
     // Gerar PIN da Sala com 6 caracteres aleatórios (ex.: BF-7KQ4M2), sem caracteres ambíguos
@@ -195,6 +198,7 @@ class ArenaEngine {
     const pinBytes = crypto.getRandomValues(new Uint8Array(6));
     const pinChars = Array.from(pinBytes, b => pinAlphabet[b % pinAlphabet.length]).join('');
     const roomPin = `BF-${pinChars}`;
+    this.roomPin = roomPin;
 
     // Selecionar perguntas: lista personalizada pelo docente OU sorteio aleatório
     if (Array.isArray(customQuestions) && customQuestions.length > 0) {
@@ -395,6 +399,21 @@ class ArenaEngine {
       }
     });
 
+    // Registo de cada equipa nesta pergunta (para a exportação CSV)
+    Object.keys(this.teams).forEach(teamId => {
+      const answer = this.currentAnswers[teamId];
+      this.sessionLog.push({
+        questionIndex: this.currentQuestionIndex + 1,
+        questionId: q.id,
+        teamName: this.teams[teamId].teamName,
+        option: answer ? answer.optionIndex : null,
+        correctIndex: correctIdx,
+        correct: !!(answer && answer.isCorrect),
+        points: answer ? (answer.points || 0) : 0,
+        timeRemaining: answer ? answer.timeRemaining : null
+      });
+    });
+
     const errorRate = totalTeams > 0 ? Math.round(((totalTeams - correctTeamsCount) / totalTeams) * 100) : 0;
 
     // Guardar para o Raio-X pedagógico pós-jogo
@@ -473,6 +492,23 @@ class ArenaEngine {
   }
 
   // Finalizar e Apresentar Pódio + Raio-X Pedagógico
+  // Resumo da sessão: ranking por equipa e registo por equipa e pergunta
+  buildSessionResult(rankings) {
+    return {
+      startedAt: this.sessionStartedAt,
+      roomPin: this.roomPin || '',
+      quizName: this.quizName || this.getTopicName(this.topicId),
+      questionsTotal: this.questions.length,
+      teams: rankings.map((t, idx) => ({
+        rank: idx + 1,
+        teamName: t.teamName,
+        score: t.score,
+        correct: t.correctCount
+      })),
+      log: this.sessionLog
+    };
+  }
+
   finishBattle() {
     this.phase = 'PODIUM';
     const rankings = this.getTeamsList();
@@ -495,7 +531,8 @@ class ArenaEngine {
       winners: winners,
       rankings: rankings,
       hardestQuestions: hardestQuestions,
-      totalQuestions: this.questions.length
+      totalQuestions: this.questions.length,
+      session: this.buildSessionResult(rankings)
     });
   }
 

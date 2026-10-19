@@ -426,10 +426,23 @@
                 <button type="button" class="btn btn-outline btn-sm hidden" id="btn-edit-saved-quiz">
                   ✏️ Editar perguntas
                 </button>
+                <button type="button" class="btn btn-outline btn-sm hidden" id="btn-duplicate-saved-quiz">
+                  ⎘ Duplicar
+                </button>
+                <button type="button" class="btn btn-outline btn-sm" id="btn-preview-saved-quiz">
+                  👁️ Ver perguntas
+                </button>
                 <button type="button" class="btn btn-outline btn-sm hidden" id="btn-delete-saved-quiz" style="color: var(--color-danger); border-color: var(--color-danger);">
                   🗑️ Apagar quiz
                 </button>
               </div>
+              <div style="display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap; margin-top: 0.6rem;">
+                <button type="button" class="btn btn-outline btn-sm" id="btn-export-quizzes">⬇️ Exportar quizzes (ficheiro)</button>
+                <button type="button" class="btn btn-outline btn-sm" id="btn-import-quizzes">⬆️ Importar quizzes (ficheiro)</button>
+                <input type="file" id="arena-quiz-import-file" accept="application/json,.json" class="hidden">
+              </div>
+              <p id="arena-quiz-sync-status" style="margin: 0.6rem 0 0; font-size: 0.85rem; color: var(--text-secondary);"></p>
+              <div id="arena-quiz-preview" class="hidden" style="margin-top: 0.75rem; max-height: 320px; overflow-y: auto; font-size: 0.88rem; border-top: 1px solid var(--border-color, #e5e7eb); padding-top: 0.6rem;"></div>
             </div>
 
             <!-- SEÇÃO DE SELEÇÃO MANUAL DE PERGUNTAS (REQUER PIN) -->
@@ -808,6 +821,11 @@
               <div class="arena-hardest-list" id="arena-hardest-list">
                 <!-- Perguntas mais erradas da turma com distratores -->
               </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+              <button class="btn btn-outline" id="btn-arena-export-csv">⬇️ Exportar resultados (CSV)</button>
+              <p id="arena-podium-save-status" style="font-size: 0.85rem; color: var(--text-secondary); margin: 0.5rem 0 0;"></p>
             </div>
 
             <div style="text-align: center; margin-top: 2rem;">
@@ -1488,9 +1506,10 @@
   <script src="js/lib/paho-mqtt.min.js"></script>
   <script src="js/lib/qrcode-generator.js"></script>
   <script src="js/arena-network.js?v=3.5"></script>
-  <script src="js/arena-engine.js?v=3.5"></script>
-  <script src="js/arena-ui.js?v=3.5"></script>
+  <script src="js/arena-engine.js?v=3.6"></script>
+  <script src="js/arena-ui.js?v=3.7"></script>
   <script src="js/teacher-manager.js?v=3.5"></script>
+  <script src="js/quiz-sync.js?v=1.0"></script>
   <script src="js/metrics.js?v=1.0"></script>
   <script src="js/app.js?v=3.5"></script>
 </body>
