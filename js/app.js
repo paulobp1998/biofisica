@@ -1795,7 +1795,10 @@ document.addEventListener('DOMContentLoaded', () => {
         pinFromUrl = hash.split('pin=')[1].split('&')[0];
       }
 
-      if (pinFromUrl) {
+      // Telemóvel que recarregou a meio do jogo: voltar à mesma equipa sem pedir os dados outra vez
+      if (window.arenaUI.tryResumeClient(pinFromUrl)) {
+        showView(arenaView);
+      } else if (pinFromUrl) {
         showView(arenaView);
         window.arenaUI.showScreen('clientJoin');
         const pinInput = document.getElementById('client-input-pin');
