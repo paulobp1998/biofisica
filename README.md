@@ -13,7 +13,7 @@ Estado atual do banco de perguntas:
 | Tópico | Conteúdo | Estado |
 |---|---|---|
 | 1 | Força, estado de equilíbrio, equilíbrio de forças e alavancas | 200 perguntas ativas |
-| 2 | Elasticidade dos corpos, resistência dos materiais e sistema osteomedular | 100 perguntas (bloqueadas aos alunos; visíveis ao docente com PIN) |
+| 2 | Elasticidade dos corpos, resistência dos materiais e sistema osteomedular | 200 perguntas (bloqueadas aos alunos; visíveis ao docente com PIN) |
 | 3 a 8 | Restantes módulos | Em preparação (bloqueados pelo docente) |
 
 Total atual: **300 perguntas** (200 ativas para os alunos), de escolha múltipla com 4 opções e explicação científica e de aplicação em enfermagem.
