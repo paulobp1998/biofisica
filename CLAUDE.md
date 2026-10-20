@@ -29,7 +29,7 @@ Question banks live in `js/data/topicN.js` (topics 1–8), each a `const TOPIC_N
 }
 ```
 
-- IDs: topic N uses the range N001–N999, consecutive, never reused. Topics 1 and 2 have 200 questions each (up to 1200 and 2200). Topics 3–8 are empty (`[]`), so start them at N001. Always confirm the last ID with `tail` before adding.
+- IDs: topic N uses the range N001–N999, consecutive, never reused. Topics 1 and 2 have 200 questions each (topic 1: 1001–1200; topic 2: 2201–2400). Topics 3–8 are empty (`[]`), so start them at N001. Always confirm the last ID with `tail` before adding.
 - Exactly 4 options. Exactly 3 entries in `distractorAnalysis`, one per WRONG option, **in the same order as the wrong options appear** (skip the correct index).
 - Each distractor entry starts with "Está incorreta:" and says *why* that option is wrong. It must not just restate the option.
 - `correctIndex` must be balanced across a batch (roughly equal counts of 0, 1, 2, 3).

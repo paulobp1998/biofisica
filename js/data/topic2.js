@@ -3,7 +3,7 @@
  * Elasticidade dos Corpos e Resistência dos Materiais
  * Alinhado estritamente com os conceitos de Biofísica (Prof. Paulo Pereira)
  * Perguntas autónomas e focadas em princípios físicos e biomecânicos
- * Total de Questões: 100 (IDs 2201 a 2300)
+ * Total de Questões: 200 (IDs 2201 a 2400)
  */
 
 const TOPIC_2_QUESTIONS = [
@@ -119,7 +119,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: deformar-se sob qualquer força, com recuperação imediata, não é o comportamento de um corpo plástico, mas sim de um corpo elástico ideal.",
       "Está incorreta: a dependência do tempo e a ausência de recuperação descrevem os corpos viscosos, e não o limiar de tensão dos plásticos."
     ],
-    "nursingApplication": "A deformação permanente de um material plástico é um bom modelo para compreender a deformação que fica em tecidos sujeitos a pressões fortes e prolongadas."
+    "nursingApplication": "As talas termoplásticas, moldadas ao membro do doente depois de aquecidas, conservam a nova forma quando arrefecem, à semelhança de um corpo plástico."
   },
   {
     "id": 2207,
@@ -176,7 +176,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: o corpo viscoso flui sob qualquer tensão, não existindo um comportamento elástico para pequenas tensões.",
       "Está incorreta: um sólido indeformável nunca se deforma, o que contradiz a deformação permanente observada na massa."
     ],
-    "nursingApplication": "A massa de pão, pela sua combinação de comportamentos, é uma boa analogia para compreender a resposta de alguns tecidos a pressões fortes e prolongadas."
+    "nursingApplication": "Um líquido espessado para disfagia com consistência de pudim mantém a forma na colher, mas flui quando a língua o pressiona com força suficiente, um comportamento com tensão mínima de escoamento."
   },
   {
     "id": 2210,
@@ -305,7 +305,7 @@ const TOPIC_2_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "Num corpo viscoso a deformação cresce com o tempo enquanto atuar a tensão, e não é restituída quando a tensão cessa.",
     "distractorAnalysis": [
-      "Está incorreta: num corpo viscoso a deformação depende do tempo de aplicação, por isso não fica constante com a tensão.",
+      "Está incorreta: num corpo viscoso sob tensão constante é a velocidade de deformação que se mantém; a deformação continua a crescer com o tempo de aplicação.",
       "Está incorreta: a recuperação completa corresponde a um sólido elástico, e não a um fluido viscoso.",
       "Está incorreta: a oscilação em torno de um valor fixo é típica de um oscilador elástico, e não de um corpo viscoso."
     ],
@@ -325,10 +325,10 @@ const TOPIC_2_QUESTIONS = [
     "explanation": "O corpo plástico só acusa deformação a partir de um limiar de tensão, enquanto o corpo viscoso se deforma sob qualquer tensão tangencial não nula, com dependência do tempo.",
     "distractorAnalysis": [
       "Está incorreta: inverte as duas definições, pois o corpo viscoso não tem limiar de tensão e o plástico não depende do tempo.",
-      "Está incorreta: ambos não recuperam a forma original, ao contrário do que a afirmação indica.",
+      "Está incorreta: nenhum dos dois recupera a forma original quando a tensão é removida; esse comportamento é o dos corpos elásticos.",
       "Está incorreta: a proporcionalidade simples sem dependência do tempo é a do sólido de Hooke, que não se aplica a nenhum dos dois."
     ],
-    "nursingApplication": "A distinção entre plástico e viscoso ajuda a interpretar porque é que um tecido pode ficar com marca permanente após pressão forte (plástico) ou ceder progressivamente com a duração da pressão (viscoso)."
+    "nursingApplication": "Explica porque é que um xarope escorre da colher apenas sob o seu próprio peso, enquanto a massa terapêutica usada na reabilitação da mão só muda de forma quando o doente aperta com força suficiente."
   },
   {
     "id": 2218,
@@ -362,11 +362,11 @@ const TOPIC_2_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "O corpo plastoviscoelástico combina propriedades elásticas, viscosas e plásticas: abaixo de uma tensão mínima comporta-se como elástico e, acima dela, flui e fica com deformação permanente dependente do tempo.",
     "distractorAnalysis": [
-      "Está incorreta: inverte a ordem, pois a deformação permanente surge acima do limiar e não abaixo dele.",
+      "Está incorreta: inverte os dois regimes; abaixo da tensão mínima o corpo comporta-se como elástico e só acima dela flui, ficando com deformação permanente.",
       "Está incorreta: a ausência de tensão mínima é característica dos corpos viscosos, e não dos plastoviscoelásticos.",
-      "Está incorreta: a ausência de deformação permanente contraria a definição de corpo plástico, que mantém a deformação máxima."
+      "Está incorreta: acima da tensão mínima o corpo plastoviscoelástico flui e fica com deformação permanente, como a massa de pão amassada."
     ],
-    "nursingApplication": "A massa de pão é o exemplo clássico; como analogia, nos tecidos moles uma pressão pequena deixa uma marca que desaparece, enquanto uma pressão elevada e mantida deixa uma marca que persiste muito mais tempo."
+    "nursingApplication": "Uma pasta de barreira de óxido de zinco não escorre da pele nem da bisnaga, mas sai e espalha-se quando a pressão aplicada ultrapassa a tensão mínima de escoamento."
   },
   {
     "id": 2220,
@@ -515,7 +515,7 @@ const TOPIC_2_QUESTIONS = [
     "explanation": "Pelo efeito de Poisson, quando um corpo é comprimido numa direção, dilata-se nas direções perpendiculares, pelo que a área da secção aumenta.",
     "distractorAnalysis": [
       "Está incorreta: o comprimento diminui, mas as dimensões transversais não diminuem juntas; na compressão a secção aumenta.",
-      "Está incorreta: a força atua no eixo, mas a deformação transversal existe sempre que há deformação longitudinal.",
+      "Está incorreta: a força atua ao longo do eixo, mas a deformação longitudinal é, em geral, acompanhada de deformação transversal (efeito de Poisson).",
       "Está incorreta: na tração é a secção que diminui; o aumento da secção ocorre na compressão, e não na tração."
     ],
     "nursingApplication": "Ao comprimir um tecido mole, como a pele sobre uma saliência óssea, o tecido tende a expandir-se lateralmente, o que deve ser considerado na avaliação da pressão exercida."
@@ -542,7 +542,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2229,
     "topicId": 2,
-    "question": "Num gráfico de tensão em função da deformação relativa de um tecido, a parte inicial é uma reta. O que representa esta reta?",
+    "question": "Num gráfico de tensão em função da deformação relativa de uma amostra de osso cortical, a parte inicial é uma reta. O que representa esta reta?",
     "options": [
       "Zona de proporcionalidade, em que σ = E · ε.",
       "Zona de escoamento, em que a deformação cresce sem aumento da tensão.",
@@ -556,7 +556,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: a rutura é o limite final do material, e não a parte linear inicial do gráfico.",
       "Está incorreta: o material reage à força, porque a tensão é não nula, e a reta tem declive não nulo."
     ],
-    "nursingApplication": "Dentro da zona linear, a resposta de um tendão ou de um osso é previsível e reversível, enquanto ultrapassar esse limite pode deixar a estrutura danificada."
+    "nursingApplication": "Dentro da zona linear, a resposta de um osso à carga é previsível e reversível, enquanto ultrapassar esse limite pode deixar a estrutura danificada ou fraturada."
   },
   {
     "id": 2230,
@@ -689,7 +689,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: divide apenas os valores numéricos (4,0 / 2,0 = 2), esquecendo as potências de dez.",
       "Está incorreta: divide a tensão pelo fator 2 de E, esquecendo a potência de dez de E (10⁹)."
     ],
-    "nursingApplication": "A partir da tensão e do módulo de Young de um tecido, é possível estimar a deformação relativa esperada, o que ajuda a interpretar a resposta de uma estrutura a uma carga clínica."
+    "nursingApplication": "O cimento ósseo (PMMA) usado na fixação de próteses tem um módulo de Young da ordem de 2 × 10⁹ Pa, cerca de dez vezes inferior ao do osso cortical, pelo que se deforma mais sob a mesma tensão."
   },
   {
     "id": 2237,
@@ -708,24 +708,24 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: dividir a compressão pela constante dá 0,00008 N, em vez de 20 N.",
       "Está incorreta: não converte 4 cm para metros, multiplicando 500 por 4, o que dá 2000 N."
     ],
-    "nursingApplication": "Uma mola de compressão de um dispositivo de aplicação de carga deve ser calibrada com unidades coerentes, para que a força indicada corresponda à força real aplicada."
+    "nursingApplication": "Num exercitador de preensão com mola, usado na reabilitação da mão, comprimir a mola 4 cm em vez de 2 cm duplica a força que o doente tem de fazer."
   },
   {
     "id": 2238,
     "topicId": 2,
-    "question": "Uma força de 9 N alonga uma mola de 0,15 m, dentro do limite de proporcionalidade. Qual é a constante elástica da mola?",
+    "question": "Uma força de 9 N alonga uma mola 15 cm, dentro do limite de proporcionalidade. Qual é a constante elástica da mola?",
     "options": [
       "60 N/m",
       "0,0167 N/m",
       "1,35 N/m",
-      "9,15 N/m"
+      "600 N/m"
     ],
     "correctIndex": 0,
-    "explanation": "Da lei de Hooke, k = F / x = 9 N / 0,15 m = 60 N/m.",
+    "explanation": "Da lei de Hooke, k = F / x, com x = 15 cm = 0,15 m. Logo k = 9 N / 0,15 m = 60 N/m.",
     "distractorAnalysis": [
       "Está incorreta: inverte a relação, dividindo o alongamento pela força, o que dá 0,0167 N/m.",
       "Está incorreta: multiplica a força pelo alongamento, em vez de dividir, o que dá 1,35 N/m.",
-      "Está incorreta: soma a força e o alongamento, em vez de os dividir, o que dá 9,15 N/m."
+      "Está incorreta: converte mal o alongamento, usando 15 cm = 0,015 m, o que dá 9 / 0,015 = 600 N/m."
     ],
     "nursingApplication": "Calcular a constante elástica de uma mola de reabilitação a partir de uma força conhecida permite escolher o aparelho adequado ao nível de carga pretendido."
   },
@@ -841,7 +841,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: forças convergentes ao longo do eixo produzem compressão, e não flexão.",
       "Está incorreta: um momento torsor em torno do eixo produz torção, e não flexão."
     ],
-    "nursingApplication": "Um osso longo como a tíbia pode fletir sob um impacto lateral, o que deve ser pensado quando se avalia um doente após uma queda ou um traumatismo."
+    "nursingApplication": "Um osso longo como a tíbia pode fletir sob um impacto lateral, por exemplo contra o para-choques de um carro, mecanismo a considerar na avaliação de um doente após um atropelamento ou uma queda."
   },
   {
     "id": 2245,
@@ -879,7 +879,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: a tensão de corte é máxima na periferia e nula no centro, pelo que não é igual em toda a secção.",
       "Está incorreta: o momento torsor cria uma tensão tangencial, e não uma tensão normal uniforme em toda a secção."
     ],
-    "nursingApplication": "Ao rodar um membro durante a mobilização ou ao fazer uma rotação excessiva, as fibras mais afastadas do eixo do osso são as mais solicitadas."
+    "nursingApplication": "Numa rotação forçada de um membro, é a camada cortical mais periférica do osso que suporta as maiores tensões de corte, e é aí que tende a iniciar-se a fratura em espiral."
   },
   {
     "id": 2247,
@@ -924,17 +924,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Porque é que levantar uma carga com os braços afastados do tronco sobrecarrega a coluna lombar?",
     "options": [
-      "Porque aumenta o momento fletor na coluna, equilibrado pelos extensores.",
-      "Porque a carga passa a pesar menos quando é segurada longe do tronco, aliviando a coluna lombar.",
-      "Porque o braço da carga em relação à coluna se torna nulo.",
-      "Porque o momento torsor sobre a coluna se torna nulo."
+      "Porque aumenta o momento fletor na coluna, equilibrado pelos músculos extensores.",
+      "Porque o peso da carga aumenta à medida que esta se afasta do tronco.",
+      "Porque cria um momento extensor na coluna lombar, equilibrado pelos músculos abdominais.",
+      "Porque a carga deixa de comprimir a coluna lombar e passa a tracioná-la."
     ],
     "correctIndex": 0,
     "explanation": "Afastar a carga do tronco aumenta o seu braço em relação à coluna lombar, e o momento fletor resultante é equilibrado pela ação dos músculos extensores.",
     "distractorAnalysis": [
-      "Está incorreta: a carga mantém o seu peso; é a distância ao tronco (o braço do momento) que aumenta.",
-      "Está incorreta: o braço da carga em relação à coluna aumenta, e não se torna nulo.",
-      "Está incorreta: a carga afastada do tronco cria um momento fletor, e não um momento torsor nulo."
+      "Está incorreta: o peso da carga (m·g) não depende da distância ao tronco; o que aumenta é o braço do momento em relação à coluna.",
+      "Está incorreta: a carga à frente do tronco tende a fletir a coluna, criando um momento fletor que é equilibrado pelos extensores, e não pelos abdominais.",
+      "Está incorreta: a força dos extensores que equilibra o momento fletor soma-se à carga e aumenta a compressão dos discos lombares, em vez de a substituir por tração."
     ],
     "nursingApplication": "Na mobilização e no levantamento de doentes, o enfermeiro deve manter a carga próxima do tronco para reduzir o momento fletor sobre a coluna lombar."
   },
@@ -1012,7 +1012,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: a flexão é um tipo de deformação, produzida por forças perpendiculares ao eixo do sólido.",
       "Está incorreta: o cisalhamento é um tipo de deformação, produzido por forças tangenciais opostas."
     ],
-    "nursingApplication": "Distinguir a área de estudo (reologia) dos tipos de deformação ajuda a organizar a análise de uma lesão, primeiro identificando o tipo de força e só depois a resposta do tecido."
+    "nursingApplication": "Ao avaliar uma lesão cutânea num doente acamado, identificar se resultou sobretudo de compressão ou de cisalhamento orienta a escolha entre aliviar a pressão ou reduzir o deslizamento."
   },
   {
     "id": 2254,
@@ -1050,7 +1050,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: a tensão de corte não é uniforme; cresce com a distância ao eixo.",
       "Está incorreta: o centro de massa não é relevante para a tensão de torção, que depende da distância ao eixo."
     ],
-    "nursingApplication": "As fibras mais exteriores de um osso ou de um tendão são as mais solicitadas numa torção, o que explica porque é que as lesões costumam começar na periferia."
+    "nursingApplication": "Quando o pé fica fixo e o corpo roda, a tíbia sofre torção e é o osso cortical da periferia que suporta as maiores tensões de corte."
   },
   {
     "id": 2256,
@@ -1131,21 +1131,21 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2260,
     "topicId": 2,
-    "question": "Quanto ao grau de elasticidade, como podem classificar-se os sólidos reais?",
+    "question": "Uma pasta (como a pasta de dentes) não sai do tubo enquanto a pressão aplicada é pequena; quando se aperta mais, flui e fica com deformação permanente. Que tipo de corpo é?",
     "options": [
-      "Sólidos de Euclides, sólidos de Hooke e corpos plásticos, consoante a sua reação a forças.",
-      "Perfeitamente elásticos, imperfeitamente elásticos e inelásticos.",
-      "Viscosos, viscoelásticos e plastoviscoelásticos.",
-      "Elásticos, plásticos e indeformáveis, sem subdivisão."
+      "Corpo viscoso",
+      "Corpo plastoviscoelástico",
+      "Corpo viscoelástico",
+      "Sólido de Hooke"
     ],
     "correctIndex": 1,
-    "explanation": "Quanto ao grau de elasticidade, os sólidos reais podem ser perfeitamente elásticos, imperfeitamente elásticos ou inelásticos.",
+    "explanation": "O corpo plastoviscoelástico comporta-se como elástico abaixo de uma tensão mínima; acima dela flui e fica com deformação permanente, como a massa de pão ou a pasta de dentes.",
     "distractorAnalysis": [
-      "Está incorreta: estes são tipos de corpos segundo o comportamento reológico, e não a classificação quanto ao grau de elasticidade.",
-      "Está incorreta: estes são corpos de comportamento reológico em que a deformação depende do tempo, e não a classificação pelo grau de elasticidade.",
-      "Está incorreta: os indeformáveis são um modelo teórico, e a lista não inclui os inelásticos, que são um dos graus de elasticidade."
+      "Está incorreta: um corpo viscoso deforma-se sob qualquer tensão, por pequena que seja, e não precisa de uma tensão mínima para fluir.",
+      "Está incorreta: um corpo viscoelástico recupera a forma, ainda que com atraso, e não fica com deformação permanente depois de fluir.",
+      "Está incorreta: um sólido de Hooke deforma-se proporcionalmente à tensão e recupera a forma, sem fluir nem ficar deformado."
     ],
-    "nursingApplication": "Saber em que grau de elasticidade se encaixa um tecido ajuda a prever se ele recupera a forma após uma compressão ou se fica com deformação permanente."
+    "nursingApplication": "Uma pomada em bisnaga só sai quando se aperta o suficiente e não volta a entrar, o que permite dosear a quantidade aplicada sobre a pele."
   },
   {
     "id": 2261,
@@ -1335,7 +1335,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: o corpo viscoso deforma-se sob qualquer tensão, com dependência do tempo, e não tem um limiar de deformação.",
       "Está incorreta: um sólido indeformável nunca se deforma, pelo que não apresentaria qualquer deformação acima de 50 N."
     ],
-    "nursingApplication": "A deformação permanente dos corpos plásticos serve de modelo para compreender porque é que certas pressões acima de um limiar deixam marca mesmo depois de a força cessar."
+    "nursingApplication": "Uma tala de material termomoldável, depois de aquecida, só se deforma com força suficiente e mantém a forma moldada ao membro quando a força cessa."
   },
   {
     "id": 2271,
@@ -1345,14 +1345,14 @@ const TOPIC_2_QUESTIONS = [
       "Constante elástica, em N/m.",
       "Deformação relativa, sem unidades.",
       "Tensão mecânica normal de compressão, em pascal.",
-      "Módulo de Young, em newton, por cada metro de comprimento."
+      "Módulo de Young, em pascal."
     ],
     "correctIndex": 2,
     "explanation": "A pressão de interface é uma força normal por unidade de área, ou seja, uma tensão mecânica de compressão, expressa em pascal (N/m²).",
     "distractorAnalysis": [
       "Está incorreta: a constante elástica, em N/m, caracteriza uma mola e não uma força por unidade de área.",
       "Está incorreta: a deformação relativa é um quociente de comprimentos e não uma força por unidade de área.",
-      "Está incorreta: o módulo de Young é expresso em pascal, e não em newton, pois é a razão entre tensão e deformação."
+      "Está incorreta: o módulo de Young também se exprime em pascal, mas é uma propriedade do material (razão entre tensão e deformação), e não a força por unidade de área que atua sobre a pele."
     ],
     "nursingApplication": "Comparar superfícies de apoio pela pressão de interface, e não apenas pelo peso do doente, ajuda a planear o alívio das zonas de risco, como o sacro e os calcanhares."
   },
@@ -1426,9 +1426,9 @@ const TOPIC_2_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "Com x = 2,0 cm = 0,020 m, a força é F = k · x = 2,5 × 10⁴ N/m × 0,020 m = 5,0 × 10² N.",
     "distractorAnalysis": [
-      "Está incorreta: divide a constante pelo alongamento, em vez de multiplicar, o que dá 1,25 × 10⁶ N.",
-      "Está incorreta: divide o alongamento pela constante, o que dá 8,0 × 10⁻⁷ N.",
-      "Está incorreta: usa apenas a constante, esquecendo o alongamento, o que dá 2,5 × 10⁴ N."
+      "Está incorreta: divide a constante pela compressão, em vez de multiplicar, o que dá 1,25 × 10⁶ N.",
+      "Está incorreta: divide a compressão pela constante, o que dá 8,0 × 10⁻⁷ N.",
+      "Está incorreta: usa apenas a constante, esquecendo a compressão, o que dá 2,5 × 10⁴ N."
     ],
     "nursingApplication": "Ao escolher um aparelho com mola de compressão, a força depende da constante e da compressão efetiva, pelo que a calibração deve ser verificada antes de o usar com o doente."
   },
@@ -1459,14 +1459,14 @@ const TOPIC_2_QUESTIONS = [
       "5,0 × 10⁷ Pa",
       "8,0 × 10² Pa",
       "2,0 × 10⁻⁸ Pa",
-      "2,0 × 10⁹ Pa"
+      "5,0 × 10⁸ Pa"
     ],
     "correctIndex": 0,
     "explanation": "Da relação σ = E · ε resulta E = σ / ε = 2,0 × 10⁵ / 0,004 = 5,0 × 10⁷ Pa.",
     "distractorAnalysis": [
       "Está incorreta: multiplica a tensão pela deformação, em vez de dividir, o que dá 8,0 × 10² Pa.",
       "Está incorreta: inverte a relação, calculando ε / σ = 2,0 × 10⁻⁸, em vez de σ / ε.",
-      "Está incorreta: lê 0,004 como 0,0001, o que dá 2,0 × 10⁹ Pa."
+      "Está incorreta: lê 0,004 como 0,0004, acrescentando um zero, o que dá 5,0 × 10⁸ Pa."
     ],
     "nursingApplication": "A partir de uma tensão e de uma deformação medidas, é possível calcular o módulo de Young de um tecido, o que permite comparar a sua rigidez entre doentes ou ao longo do tempo."
   },
@@ -1484,7 +1484,7 @@ const TOPIC_2_QUESTIONS = [
     "explanation": "ε = ΔL / L0, com ΔL = 3,0 mm = 0,0030 m e L0 = 1,5 m. Logo ε = 0,0030 / 1,5 = 0,002, sem unidades.",
     "distractorAnalysis": [
       "Está incorreta: divide o alongamento por 15 em vez de por 1,5, o que dá 0,0002.",
-      "Está incorreta: divide 1,5 m por 3,0 mm sem converter unidades, o que dá 0,5.",
+      "Está incorreta: inverte a divisão e não converte unidades, calculando 1,5 / 3,0 = 0,5.",
       "Está incorreta: inverte a divisão, calculando L0 / ΔL com ΔL em metros, o que dá 500."
     ],
     "nursingApplication": "Converter as unidades antes de calcular a deformação relativa evita erros ao comparar medições de alongamento feitas em diferentes instrumentos ou em diferentes sessões de fisioterapia."
@@ -1563,7 +1563,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: o diâmetro varia com a tração, pelo efeito de Poisson, e não se mantém.",
       "Está incorreta: a tração contrai as direções perpendiculares, e não dilata todas as direções."
     ],
-    "nursingApplication": "Ao enrolar uma ligadura elástica sobre um membro, esta fica mais estreita ao ser esticada, o que deve ser considerado para não aplicar uma compressão excessiva."
+    "nursingApplication": "Ao esticar uma ligadura elástica para a aplicar num membro, a sua largura diminui, pelo que a sobreposição entre voltas deve ser ajustada para manter a cobertura pretendida."
   },
   {
     "id": 2283,
@@ -1599,7 +1599,7 @@ const TOPIC_2_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: troca a unidade, pois 0,016 m equivalem a 1,6 cm e não a 0,016 cm.",
       "Está incorreta: confunde centímetros com metros, o que multiplica o resultado por 100.",
-      "Está incorreta: comete um erro de potência de dez no cálculo da deformação relativa, o que dá 0,0016 m."
+      "Está incorreta: usa L0 = 0,080 m em vez de 0,80 m, o que dá 0,020 × 0,080 = 0,0016 m."
     ],
     "nursingApplication": "Estimar o alongamento de uma estrutura a partir da força e das suas dimensões permite prever a sua resposta antes de a sujeitar a uma carga real."
   },
@@ -1682,21 +1682,21 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2289,
     "topicId": 2,
-    "question": "Uma mola com constante elástica 150 N/m é alongada 6 cm, dentro do limite de proporcionalidade. Qual é a força elástica exercida pela mola?",
+    "question": "Uma banda elástica alonga 4,0 cm quando puxada com 6,0 N. Dentro do limite de proporcionalidade, quanto alonga quando puxada com 15 N?",
     "options": [
-      "0,0004 N",
-      "900 N",
-      "9 N",
-      "2500 N"
+      "1,6 cm",
+      "2,5 cm",
+      "10 cm",
+      "13 cm"
     ],
     "correctIndex": 2,
-    "explanation": "F = k · x = 150 N/m × 0,06 m = 9 N.",
+    "explanation": "k = F / x = 6,0 N / 0,040 m = 150 N/m. Com 15 N, x = F / k = 15 / 150 = 0,10 m = 10 cm (o alongamento é proporcional à força: 4,0 × 15 / 6,0).",
     "distractorAnalysis": [
-      "Está incorreta: divide o alongamento pela constante, em vez de multiplicar, o que dá 0,0004 N.",
-      "Está incorreta: não converte 6 cm para metros, multiplicando 150 por 6, o que dá 900 N.",
-      "Está incorreta: divide a constante pelo alongamento, em vez de multiplicar, o que dá 2500 N."
+      "Está incorreta: inverte a razão entre as forças, calculando 4,0 × 6,0 / 15 = 1,6 cm.",
+      "Está incorreta: divide apenas as forças, 15 / 6,0 = 2,5, esquecendo o alongamento inicial de 4,0 cm.",
+      "Está incorreta: soma a diferença de forças ao alongamento, como se cada newton desse 1 cm: 4,0 + 9 = 13 cm."
     ],
-    "nursingApplication": "Um dispositivo de reabilitação com mola deve ser usado com a força indicada pelo fabricante, pelo que a relação entre alongamento e força deve ser conhecida pelo enfermeiro."
+    "nursingApplication": "Dentro da zona linear, a resistência de uma banda elástica de reabilitação cresce na proporção do alongamento, o que permite graduar a carga de um exercício."
   },
   {
     "id": 2290,
@@ -1713,7 +1713,7 @@ const TOPIC_2_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: inverte a relação, calculando E / σ = 5,0 × 10³, em vez de σ / E.",
       "Está incorreta: lê o módulo de Young como 1,5 × 10¹¹ Pa, o que dá 2,0 × 10⁻⁵.",
-      "Está incorreta: lê o módulo de Young como 1,0 × 10¹⁰ Pa, o que dá 3,0 × 10⁻⁴."
+      "Está incorreta: considera só a potência de dez do módulo, esquecendo o fator 1,5, o que dá 3,0 × 10⁶ / 10¹⁰ = 3,0 × 10⁻⁴."
     ],
     "nursingApplication": "Conhecer o módulo de Young e a tensão a que um osso está sujeito permite estimar a sua deformação, o que ajuda a interpretar a resposta a uma carga clínica."
   },
@@ -1796,21 +1796,21 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2295,
     "topicId": 2,
-    "question": "Uma mola com constante elástica 75 N/m é comprimida 8 mm, dentro do limite de proporcionalidade. Qual é a força elástica exercida pela mola?",
+    "question": "Uma carga de 0,50 kg suspensa de uma mola, em equilíbrio, alonga-a 4,9 cm, dentro do limite de proporcionalidade. Qual é a constante elástica da mola? (g = 9,8 m/s²)",
     "options": [
-      "0,6 N",
-      "600 N",
-      "0,0001 N",
-      "9375 N"
+      "100 N/m",
+      "10,2 N/m",
+      "1,0 N/m",
+      "0,010 N/m"
     ],
     "correctIndex": 0,
-    "explanation": "Converte-se primeiro a compressão: 8 mm = 0,008 m. Então F = k · x = 75 N/m × 0,008 m = 0,6 N.",
+    "explanation": "Em equilíbrio, a força elástica iguala o peso: P = m · g = 0,50 × 9,8 = 4,9 N. Logo k = F / x = 4,9 N / 0,049 m = 100 N/m.",
     "distractorAnalysis": [
-      "Está incorreta: não converte 8 mm para metros, multiplicando 75 por 8, o que dá 600 N.",
-      "Está incorreta: divide a compressão pela constante, em vez de multiplicar, o que dá cerca de 0,0001 N.",
-      "Está incorreta: divide a constante pela compressão, em vez de multiplicar, o que dá 9375 N."
+      "Está incorreta: usa a massa como se fosse força, esquecendo g, e calcula 0,50 / 0,049 = 10,2 N/m.",
+      "Está incorreta: não converte 4,9 cm para metros, calculando 4,9 / 4,9 = 1,0 N/m.",
+      "Está incorreta: inverte a relação, calculando x / F = 0,049 / 4,9 = 0,010."
     ],
-    "nursingApplication": "Ao ajustar um aparelho com mola de compressão, a força depende da constante e da compressão efetiva em metros, e não do valor lido em milímetros na escala."
+    "nursingApplication": "Para verificar a calibração de um dinamómetro de mola, pode suspender-se uma carga de massa conhecida e comparar a leitura com o peso calculado com g = 9,8 m/s²."
   },
   {
     "id": 2296,
@@ -1829,7 +1829,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: só o plastoviscoelástico tem uma tensão mínima para fluir; o viscoelástico não tem limiar de escoamento.",
       "Está incorreta: inverte a atribuição da tensão mínima para fluir, que é característica do plastoviscoelástico."
     ],
-    "nursingApplication": "Distinguir os dois comportamentos ajuda a perceber porque é que alguns tecidos recuperam com o repouso, enquanto outros ficam marcados quando a pressão ultrapassa um certo valor."
+    "nursingApplication": "Uma almofada de espuma de posicionamento recupera a forma com atraso depois de retirado o apoio, ao passo que uma pasta espalhada sobre a pele fica com a forma que lhe foi dada."
   },
   {
     "id": 2297,
@@ -1906,5 +1906,1905 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: converte 1 cm² como 10⁻⁶ m², o que dá 3,0 × 10⁷ Pa."
     ],
     "nursingApplication": "Converter corretamente a área de contacto para metros quadrados é necessário para expressar em pascal a pressão exercida sobre a pele por um aparelho ou por um apoio."
+  },
+  {
+    "id": 2301,
+    "topicId": 2,
+    "question": "Qual é o principal constituinte da fase mineral do osso?",
+    "options": [
+      "Hidroxiapatite, um fosfato de cálcio cristalino",
+      "Colagénio tipo I, uma proteína fibrosa",
+      "Elastina, uma proteína elástica",
+      "Queratina, uma proteína estrutural da pele"
+    ],
+    "correctIndex": 0,
+    "explanation": "A fase mineral do osso é constituída sobretudo por cristais de hidroxiapatite (fosfato de cálcio), que conferem rigidez e resistência à compressão.",
+    "distractorAnalysis": [
+      "Está incorreta: o colagénio tipo I é o principal componente da matriz orgânica, e não da fase mineral.",
+      "Está incorreta: a elastina é abundante nas artérias elásticas e não constitui a fase mineral do osso.",
+      "Está incorreta: a queratina forma a epiderme e os seus anexos, e não faz parte da fase mineral do osso."
+    ],
+    "nursingApplication": "Saber que o cálcio do osso está na hidroxiapatite ajuda a perceber porque a ingestão de cálcio e vitamina D é incluída na prevenção da perda de massa óssea em utentes idosos."
+  },
+  {
+    "id": 2302,
+    "topicId": 2,
+    "question": "Num osso, a quantidade de colagénio tipo I diminui, mantendo-se a fase mineral. Que consequência é expectável?",
+    "options": [
+      "Osso mais flexível e menos propenso a fraturar",
+      "Menor resistência à compressão, por perda de hidroxiapatite",
+      "Osso mais frágil, com menor resistência à tração",
+      "Maior resistência à tração, por maior proporção mineral"
+    ],
+    "correctIndex": 2,
+    "explanation": "O colagénio tipo I confere resistência à tração e evita a fragilidade; sem ele, o osso mineralizado torna-se rígido mas quebradiço.",
+    "distractorAnalysis": [
+      "Está incorreta: menos colagénio retira ao osso a capacidade de absorver tração, o que o torna quebradiço e mais propenso a fraturar, e não menos.",
+      "Está incorreta: a fase mineral manteve-se, pelo que a resistência à compressão, que depende da hidroxiapatite, não diminui por esta razão.",
+      "Está incorreta: uma maior proporção mineral relativa torna o osso mais rígido mas mais frágil, e não mais resistente à tração."
+    ],
+    "nursingApplication": "Compreender o papel do colagénio ajuda a explicar a fragilidade óssea observada em utentes com doenças que alteram o colagénio, como a osteogénese imperfeita."
+  },
+  {
+    "id": 2303,
+    "topicId": 2,
+    "question": "Segundo o esquema da aula, que percentagem aproximada do osso corresponde à fase mineral?",
+    "options": [
+      "≈ 22 %",
+      "≈ 90 %",
+      "≈ 69 %",
+      "≈ 9 %"
+    ],
+    "correctIndex": 2,
+    "explanation": "O osso tem cerca de 69 % de fase mineral (hidroxiapatite) e cerca de 22 % de matriz orgânica, dos quais cerca de 90 % são colagénio tipo I.",
+    "distractorAnalysis": [
+      "Está incorreta: 22 % é o valor aproximado da matriz orgânica, e não o da fase mineral.",
+      "Está incorreta: 90 % é a fração do colagénio tipo I dentro da matriz orgânica, e não a percentagem de fase mineral no osso.",
+      "Está incorreta: 9 % é o valor aproximado que sobra depois de somar a fase mineral e a matriz orgânica."
+    ],
+    "nursingApplication": "Estas proporções permitem interpretar a densitometria óssea, que estima sobretudo o conteúdo mineral do osso de um utente em risco de osteoporose."
+  },
+  {
+    "id": 2304,
+    "topicId": 2,
+    "question": "Que propriedade mecânica justifica a presença de colagénio tipo I no osso e nos tendões?",
+    "options": [
+      "Resistência à tração",
+      "Resistência à compressão",
+      "Comportamento de sólido indeformável",
+      "Recuperação total e imediata da forma, sem deformação residual"
+    ],
+    "correctIndex": 0,
+    "explanation": "O colagénio tipo I, disposto em feixes, resiste bem à tração, e é o mesmo tipo que forma os tendões, sujeitos sobretudo a forças de tração.",
+    "distractorAnalysis": [
+      "Está incorreta: a resistência à compressão do osso deve-se sobretudo à fase mineral, e não ao colagénio.",
+      "Está incorreta: nenhum tecido biológico é um sólido indeformável, que é apenas um modelo teórico.",
+      "Está incorreta: os tecidos biológicos são viscoelásticos, pelo que a recuperação da forma não é imediata nem totalmente isenta de deformação residual."
+    ],
+    "nursingApplication": "Esta propriedade explica porque, após a reparação de um tendão, a mobilização é progressiva, já que forças de tração excessivas podem romper as fibras de colagénio em cicatrização."
+  },
+  {
+    "id": 2305,
+    "topicId": 2,
+    "question": "Num osso longo, como se designa a região de osso compacto que rodeia a cavidade medular?",
+    "options": [
+      "Epífise",
+      "Diáfise",
+      "Cartilagem articular",
+      "Plano neutro"
+    ],
+    "correctIndex": 1,
+    "explanation": "A diáfise é o corpo do osso longo, de osso compacto à volta da cavidade medular; as epífises são as extremidades.",
+    "distractorAnalysis": [
+      "Está incorreta: as epífises são as extremidades do osso longo, formadas por osso esponjoso com fina camada compacta.",
+      "Está incorreta: a cartilagem articular reveste as superfícies articulares e não rodeia a cavidade medular.",
+      "Está incorreta: o plano neutro é uma região de tensão normal nula na flexão, e não uma parte anatómica do osso."
+    ],
+    "nursingApplication": "Identificar a diáfise é útil na descrição de fraturas do fémur ou da tíbia, frequentemente classificadas conforme o terço da diáfise atingido."
+  },
+  {
+    "id": 2306,
+    "topicId": 2,
+    "question": "Como são constituídas as epífises dos ossos longos?",
+    "options": [
+      "Por osso compacto espesso à volta de uma cavidade medular",
+      "Por duas lâminas de osso compacto com osso esponjoso entre elas",
+      "Apenas por osso esponjoso, sem qualquer revestimento",
+      "Por osso esponjoso revestido por uma fina camada de osso compacto"
+    ],
+    "correctIndex": 3,
+    "explanation": "As epífises, extremidades dos ossos longos, têm osso esponjoso por dentro e uma fina camada de osso compacto por fora.",
+    "distractorAnalysis": [
+      "Está incorreta: essa descrição corresponde à diáfise, e não às epífises.",
+      "Está incorreta: essa descrição corresponde aos ossos planos, como os do crânio.",
+      "Está incorreta: as epífises têm uma fina camada compacta a revesti-las, pelo que não são apenas esponjosas."
+    ],
+    "nursingApplication": "A estrutura esponjosa das epífises explica porque as fraturas perto das articulações, como a do colo do fémur em idosos, são frequentes quando há perda de trabéculas."
+  },
+  {
+    "id": 2307,
+    "topicId": 2,
+    "question": "Qual das estruturas descreve os ossos planos, como os do crânio?",
+    "options": [
+      "Duas lâminas de osso compacto com osso esponjoso entre elas",
+      "Um tubo de osso compacto com cavidade medular central",
+      "Apenas osso esponjoso, sem lâminas compactas",
+      "Apenas osso compacto maciço, sem osso esponjoso"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os ossos planos têm duas lâminas de osso compacto com osso esponjoso entre elas, o que dá leveza com boa resistência.",
+    "distractorAnalysis": [
+      "Está incorreta: essa é a estrutura da diáfise dos ossos longos, e não a dos ossos planos.",
+      "Está incorreta: os ossos planos têm osso esponjoso entre as lâminas compactas, e não são apenas esponjosos.",
+      "Está incorreta: os ossos planos têm osso esponjoso entre duas lâminas compactas, e não são só compactos."
+    ],
+    "nursingApplication": "Esta estrutura em sanduíche ajuda a perceber como os ossos do crânio absorvem parte do impacto num traumatismo craniano de um utente."
+  },
+  {
+    "id": 2308,
+    "topicId": 2,
+    "question": "Dois cilindros têm a mesma quantidade do mesmo material: um é maciço e o outro é um tubo oco de maior diâmetro. Qual resiste melhor à flexão?",
+    "options": [
+      "O cilindro maciço, porque tem também material no centro do corpo",
+      "Resistem igualmente, porque têm a mesma quantidade de material",
+      "Resistem igualmente, porque têm o mesmo módulo de Young",
+      "O tubo oco, porque o material está mais longe do eixo"
+    ],
+    "correctIndex": 3,
+    "explanation": "Para a mesma quantidade de material, o tubo oco resiste mais à flexão do que o cilindro maciço, porque a periferia suporta as maiores tensões.",
+    "distractorAnalysis": [
+      "Está incorreta: na flexão o centro está perto do plano neutro, onde a tensão é nula, pelo que o material central pouco contribui.",
+      "Está incorreta: a resistência à flexão depende também de como o material está distribuído em relação ao eixo, e não só da quantidade.",
+      "Está incorreta: o módulo de Young é igual, mas o tubo tem melhor distribuição do material e, por isso, maior resistência à flexão."
+    ],
+    "nursingApplication": "Esta ideia explica o uso de canas de apoio de tubo oco, leves mas resistentes à flexão, em utentes com dificuldade de marcha."
+  },
+  {
+    "id": 2309,
+    "topicId": 2,
+    "question": "Porque é que o material do centro de um osso longo contribui pouco para a resistência à flexão e à torção?",
+    "options": [
+      "Porque as tensões são máximas na periferia e muito baixas junto do eixo",
+      "Porque as forças só atuam na superfície e nunca chegam ao centro",
+      "Porque o centro suporta a carga em compressão e deixa de contribuir quando a carga é de tração",
+      "Porque a tensão é igual em toda a secção e o centro é dispensável"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na flexão e na torção, as tensões são máximas na periferia e baixas junto do eixo; por isso, as camadas periféricas dão a maior parte da resistência.",
+    "distractorAnalysis": [
+      "Está incorreta: as forças são transmitidas por todo o material; o que acontece é que as tensões são menores junto do eixo.",
+      "Está incorreta: no centro, junto do plano neutro, a tensão normal é praticamente nula, tanto em tração como em compressão.",
+      "Está incorreta: a tensão não é uniforme na flexão e na torção, e é por não o ser que a periferia é a zona mais importante."
+    ],
+    "nursingApplication": "Compreender a distribuição das tensões ajuda a enfermagem a perceber porque um osso cortical fino da diáfise pode fraturar por torção durante uma queda com rotação do membro."
+  },
+  {
+    "id": 2310,
+    "topicId": 2,
+    "question": "Porque é vantajoso para os vertebrados terem ossos longos tubulares?",
+    "options": [
+      "Porque dão leveza e boa resistência à flexão e à torção",
+      "Porque aumentam o módulo de Young do osso compacto",
+      "Porque anulam as tensões na periferia do osso",
+      "Porque dispensam a fase mineral e tornam o osso mais leve"
+    ],
+    "correctIndex": 0,
+    "explanation": "A estrutura tubular coloca o material onde as tensões são maiores e poupa massa no centro, o que dá resistência à flexão e à torção com menor peso.",
+    "distractorAnalysis": [
+      "Está incorreta: o módulo de Young depende do material e não da forma tubular do osso.",
+      "Está incorreta: as tensões de flexão e de torção são máximas na periferia; a forma tubular coloca material nessa zona, mas não as anula.",
+      "Está incorreta: a fase mineral é essencial para a rigidez e a resistência à compressão do osso, pelo que não é dispensada."
+    ],
+    "nursingApplication": "O mesmo princípio de leveza com resistência é aproveitado no desenho de andarilhos e canadianas de tubo oco, que o utente consegue mover sem esforço excessivo."
+  },
+  {
+    "id": 2311,
+    "topicId": 2,
+    "question": "Um osso longo resiste de forma diferente a uma carga aplicada ao longo do eixo e a uma carga aplicada perpendicularmente ao eixo. Que propriedade descreve este comportamento?",
+    "options": [
+      "Isotropia",
+      "Superelasticidade",
+      "Plasticidade perfeita",
+      "Anisotropia"
+    ],
+    "correctIndex": 3,
+    "explanation": "O osso é heterogéneo e anisotrópico: as suas propriedades mecânicas variam com a direção em que a carga é aplicada.",
+    "distractorAnalysis": [
+      "Está incorreta: um material isotrópico comportar-se-ia da mesma forma em todas as direções, o que não acontece no osso.",
+      "Está incorreta: a superelasticidade não é uma propriedade do osso, que não recupera grandes deformações.",
+      "Está incorreta: a plasticidade refere-se à deformação permanente acima de uma tensão limiar, e não à dependência da direção da carga."
+    ],
+    "nursingApplication": "A anisotropia contribui para explicar porque um osso longo suporta bem o peso do corpo ao longo do eixo e é mais vulnerável a pancadas laterais, como numa queda de lado."
+  },
+  {
+    "id": 2312,
+    "topicId": 2,
+    "question": "Qual é a função dos osteócitos descrita na aula?",
+    "options": [
+      "Formar osso novo orientado segundo as forças",
+      "Detetar as cargas mecânicas (mecanotransdução)",
+      "Reabsorver o osso",
+      "Produzir fibras elásticas na matriz óssea"
+    ],
+    "correctIndex": 1,
+    "explanation": "Os osteócitos detetam as cargas mecânicas (mecanotransdução), os osteoblastos formam osso novo e os osteoclastos reabsorvem-no.",
+    "distractorAnalysis": [
+      "Está incorreta: a formação de osso novo é feita pelos osteoblastos.",
+      "Está incorreta: a reabsorção do osso é feita pelos osteoclastos.",
+      "Está incorreta: as fibras elásticas são características das artérias elásticas, e não são produzidas pelos osteócitos para a matriz óssea."
+    ],
+    "nursingApplication": "A deteção das cargas pelos osteócitos justifica a prescrição de exercício com carga na prevenção da perda de massa óssea em utentes idosos."
+  },
+  {
+    "id": 2313,
+    "topicId": 2,
+    "question": "Um utente passa várias semanas acamado, sem carregar peso nos membros inferiores. O que predomina no osso destes membros?",
+    "options": [
+      "A reabsorção óssea, com perda de massa",
+      "A formação óssea, porque o repouso poupa o osso",
+      "A suspensão total da remodelação, sem alteração da massa óssea",
+      "O aumento da mineralização, porque o osso deixa de ser comprimido"
+    ],
+    "correctIndex": 0,
+    "explanation": "A carga mecânica estimula os osteoblastos; com repouso prolongado ou imobilização, os osteoclastos reabsorvem osso e a massa óssea diminui.",
+    "distractorAnalysis": [
+      "Está incorreta: sem carga mecânica, os osteoclastos reabsorvem osso; a formação óssea depende do estímulo da carga.",
+      "Está incorreta: a remodelação é contínua; sem carga, o equilíbrio desloca-se para a reabsorção e a massa óssea diminui.",
+      "Está incorreta: a falta de compressão não aumenta a mineralização, e a massa óssea diminui em vez de aumentar."
+    ],
+    "nursingApplication": "Por isso, a mobilização precoce e o levante progressivo do utente acamado ajudam a preservar a massa óssea."
+  },
+  {
+    "id": 2314,
+    "topicId": 2,
+    "question": "Segundo a lei de Wolff, o que acontece à estrutura do osso?",
+    "options": [
+      "Mantém-se inalterada desde o nascimento",
+      "Adapta-se apenas às forças de tração",
+      "Adapta-se às forças a que está sujeito",
+      "Só se adapta durante o crescimento e deixa de o fazer no adulto"
+    ],
+    "correctIndex": 2,
+    "explanation": "A lei de Wolff diz que a estrutura do osso se adapta às forças a que está sujeito, através de uma remodelação contínua.",
+    "distractorAnalysis": [
+      "Está incorreta: o osso é um tecido dinâmico, continuamente remodelado, e não uma estrutura fixa.",
+      "Está incorreta: o osso adapta-se tanto à compressão como à tração, e as trabéculas seguem as linhas de tensão máxima de ambas.",
+      "Está incorreta: a remodelação ocorre ao longo de toda a vida, incluindo no adulto, e é também ela que reorienta o osso após uma fratura."
+    ],
+    "nursingApplication": "Esta adaptação é a base da recomendação de carga progressiva sobre o membro após a consolidação de uma fratura, orientada pelo fisioterapeuta e pela equipa."
+  },
+  {
+    "id": 2315,
+    "topicId": 2,
+    "question": "Porque estão as trabéculas do osso esponjoso da extremidade proximal do fémur dispostas em leque?",
+    "options": [
+      "Porque aumentam o módulo de Young do osso esponjoso",
+      "Porque seguem as linhas de tensão máxima e poupam massa",
+      "Porque a sua disposição é aleatória e independente da carga",
+      "Porque impedem qualquer deformação, como num sólido indeformável"
+    ],
+    "correctIndex": 1,
+    "explanation": "As trabéculas em leque acompanham as linhas de tensão máxima, o que dá resistência com pouca massa, em linha com a lei de Wolff.",
+    "distractorAnalysis": [
+      "Está incorreta: a disposição das trabéculas melhora a resposta às cargas, mas o módulo de Young depende do material e não do leque.",
+      "Está incorreta: a orientação das trabéculas resulta da remodelação e acompanha as linhas de força a que o osso está sujeito.",
+      "Está incorreta: o osso deforma-se sempre ligeiramente sob carga; o sólido indeformável é apenas um modelo teórico."
+    ],
+    "nursingApplication": "Este conhecimento ajuda a perceber porque a fratura do colo do fémur é frequente em idosos com trabéculas rarefeitas."
+  },
+  {
+    "id": 2316,
+    "topicId": 2,
+    "question": "Na extremidade superior do fémur, o peso corporal comprime a cabeça e a face inferior do colo. Que tipo de tensão sofre a face superior do colo?",
+    "options": [
+      "Compressão",
+      "Tração",
+      "Cisalhamento puro, sem tração nem compressão",
+      "Nenhuma tensão, por estar no plano neutro"
+    ],
+    "correctIndex": 1,
+    "explanation": "O colo do fémur está sujeito a flexão: a face inferior é comprimida e a face superior é tracionada.",
+    "distractorAnalysis": [
+      "Está incorreta: a compressão atua na face inferior do colo, e não na superior.",
+      "Está incorreta: o cisalhamento não explica o par compressão–tração que se observa quando o colo é fletido pelo peso do corpo.",
+      "Está incorreta: a face superior está na periferia, onde as tensões são máximas, e não no plano neutro."
+    ],
+    "nursingApplication": "Este padrão ajuda a perceber porque as fraturas do colo do fémur, após uma queda, são frequentes nos idosos com osso fragilizado."
+  },
+  {
+    "id": 2317,
+    "topicId": 2,
+    "question": "Que alteração estrutural caracteriza a osteoporose?",
+    "options": [
+      "Aumento da massa óssea, com trabéculas espessas",
+      "Morte do osso por falta de irrigação sanguínea",
+      "Consolidação de uma fratura com deformidade mantida",
+      "Diminuição da massa óssea, com trabéculas finas e frágeis"
+    ],
+    "correctIndex": 3,
+    "explanation": "Na osteoporose, a massa óssea diminui e as trabéculas ficam finas e frágeis, o que aumenta o risco de fratura.",
+    "distractorAnalysis": [
+      "Está incorreta: na osteoporose a massa óssea diminui, e não aumenta.",
+      "Está incorreta: essa é a necrose avascular e não a osteoporose.",
+      "Está incorreta: essa é a consolidação viciosa e não a osteoporose."
+    ],
+    "nursingApplication": "Perante um idoso com osteoporose, a equipa de enfermagem reforça a prevenção de quedas, por exemplo com remoção de tapetes soltos e boa iluminação."
+  },
+  {
+    "id": 2318,
+    "topicId": 2,
+    "question": "Porque pode uma fratura do colo do fémur levar ao colapso da cabeça femoral?",
+    "options": [
+      "Porque o colo fraturado deixa de produzir colagénio tipo I",
+      "Porque a fratura aumenta a mineralização da cabeça",
+      "Porque a cabeça passa a suportar apenas forças de tração",
+      "Porque pode interromper a irrigação sanguínea e o osso morre"
+    ],
+    "correctIndex": 3,
+    "explanation": "A fratura do colo pode cortar a irrigação da cabeça do fémur; sem sangue, o osso morre (necrose avascular) e a cabeça colapsa.",
+    "distractorAnalysis": [
+      "Está incorreta: a causa do colapso é a perda de irrigação, e não a síntese de colagénio.",
+      "Está incorreta: o colapso resulta da morte do osso por falta de sangue, e não de um aumento de mineralização.",
+      "Está incorreta: a cabeça do fémur é sobretudo comprimida pelo peso, e o colapso não resulta de tração."
+    ],
+    "nursingApplication": "Esta complicação justifica a vigilância após fraturas do colo do fémur, nomeadamente a persistência ou o agravamento da dor da anca."
+  },
+  {
+    "id": 2319,
+    "topicId": 2,
+    "question": "Uma fratura consolida com desvio do eixo. A remodelação reorienta as trabéculas segundo as novas forças, mas a deformidade permanece. Como se designa esta situação?",
+    "options": [
+      "Consolidação viciosa",
+      "Necrose avascular",
+      "Osteoporose",
+      "Mecanotransdução"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na consolidação viciosa, a arquitetura interna do osso adapta-se às novas forças, mas a deformidade mantém-se.",
+    "distractorAnalysis": [
+      "Está incorreta: na necrose avascular o osso morre por falta de irrigação, o que não está descrito.",
+      "Está incorreta: a osteoporose é uma perda de massa óssea, e não a consolidação com deformidade.",
+      "Está incorreta: a mecanotransdução é a deteção das cargas pelos osteócitos, e não uma complicação de fratura."
+    ],
+    "nursingApplication": "O alinhamento correto do membro durante a imobilização, verificado pela equipa, ajuda a evitar uma consolidação viciosa."
+  },
+  {
+    "id": 2320,
+    "topicId": 2,
+    "question": "O osso cortical tem rigidez semelhante em tração e em compressão (≈ 18 GPa), mas suporta ≈ 200 MPa em compressão e ≈ 135 MPa em tração. O que se conclui?",
+    "options": [
+      "É mais rígido em compressão, por isso suporta mais tensão antes de fraturar",
+      "Suporta mais tração, porque o módulo de Young é igual",
+      "Deforma-se de modo semelhante, mas fratura mais cedo em tração",
+      "A rigidez igual implica a mesma tensão de rotura nos dois casos"
+    ],
+    "correctIndex": 2,
+    "explanation": "O módulo de Young mede a rigidez e é semelhante em tração e compressão; já a resistência (tensão suportada) é maior em compressão do que em tração.",
+    "distractorAnalysis": [
+      "Está incorreta: a rigidez é semelhante nos dois casos (≈ 18 GPa); o que difere é a tensão que o osso suporta antes de fraturar.",
+      "Está incorreta: o osso suporta menos tensão em tração (≈ 135 MPa) do que em compressão (≈ 200 MPa).",
+      "Está incorreta: rigidez e resistência são grandezas diferentes: o módulo de Young não determina a tensão de rotura."
+    ],
+    "nursingApplication": "Isto explica porque uma pancada lateral que flete a diáfise, tracionando o lado convexo, pode fraturar o osso com menos carga do que uma compressão axial."
+  },
+  {
+    "id": 2321,
+    "topicId": 2,
+    "question": "Uma força perpendicular ao eixo de um osso longo curva-o. De que lado começa geralmente a fratura e porquê?",
+    "options": [
+      "Do lado côncavo (em compressão), porque o osso resiste menos à compressão",
+      "No plano neutro, porque aí a tensão é máxima",
+      "Do lado convexo (em tração), porque o osso resiste menos à tração",
+      "Do lado côncavo (em compressão), porque aí as tensões são menores"
+    ],
+    "correctIndex": 2,
+    "explanation": "Na flexão, o lado côncavo fica em compressão e o convexo em tração; como o osso resiste menos à tração, a fratura começa geralmente do lado convexo.",
+    "distractorAnalysis": [
+      "Está incorreta: o osso resiste mais à compressão do que à tração, pelo que não começa a ceder no lado comprimido.",
+      "Está incorreta: no plano neutro a tensão normal é nula, e não máxima.",
+      "Está incorreta: a fratura começa no lado em tração, que é o mais fraco; o lado côncavo está em compressão, que o osso suporta melhor."
+    ],
+    "nursingApplication": "Esta noção ajuda a interpretar o padrão de uma fratura por flexão, observado na radiografia de um utente após um traumatismo."
+  },
+  {
+    "id": 2322,
+    "topicId": 2,
+    "question": "Num fémur, a força de compressão é 1800 N e a secção é 6 cm². Qual é a tensão no osso?",
+    "options": [
+      "3 × 10⁴ Pa",
+      "3 × 10⁸ Pa",
+      "3 × 10⁶ Pa",
+      "1,08 Pa"
+    ],
+    "correctIndex": 2,
+    "explanation": "σ = F / S, com S = 6 cm² = 6 × 10⁻⁴ m². Logo σ = 1800 / (6 × 10⁻⁴) = 3 × 10⁶ Pa.",
+    "distractorAnalysis": [
+      "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 3 × 10⁴ Pa.",
+      "Está incorreta: converte 1 cm² como 10⁻⁶ m², o que dá 3 × 10⁸ Pa.",
+      "Está incorreta: multiplica a força pela área (1800 × 6 × 10⁻⁴), em vez de dividir."
+    ],
+    "nursingApplication": "Calcular a tensão no osso ajuda a perceber quanto aumenta a carga sobre o fémur quando um utente obeso se levanta ou caminha."
+  },
+  {
+    "id": 2323,
+    "topicId": 2,
+    "question": "Um fémur com E = 2 × 10¹⁰ Pa e comprimento inicial L0 = 0,40 m suporta uma tensão de 3 × 10⁶ Pa, dentro do regime elástico. Qual é o encurtamento ΔL?",
+    "options": [
+      "0,6 mm",
+      "0,06 mm",
+      "6 × 10⁻⁵ mm",
+      "2,7 × 10³ m"
+    ],
+    "correctIndex": 1,
+    "explanation": "ε = σ / E = 3 × 10⁶ / 2 × 10¹⁰ = 1,5 × 10⁻⁴; ΔL = ε · L0 = 1,5 × 10⁻⁴ × 0,40 = 6 × 10⁻⁵ m = 0,06 mm.",
+    "distractorAnalysis": [
+      "Está incorreta: converte metros em milímetros multiplicando por 10⁴, em vez de 10³.",
+      "Está incorreta: indica o valor em metros (6 × 10⁻⁵) mas com a unidade milímetro.",
+      "Está incorreta: divide L0 por ε, em vez de multiplicar (ΔL = L0 / ε)."
+    ],
+    "nursingApplication": "O encurtamento é minúsculo, o que mostra porque o osso, com módulo de Young elevado, suporta o peso do corpo sem deformação visível."
+  },
+  {
+    "id": 2324,
+    "topicId": 2,
+    "question": "Uma deformação relativa de 2 × 10⁻⁴ corresponde a que percentagem, para efeitos de representação num gráfico?",
+    "options": [
+      "0,2 %",
+      "0,02 %",
+      "2 %",
+      "0,0002 %"
+    ],
+    "correctIndex": 1,
+    "explanation": "Para converter em percentagem multiplica-se por 100: 2 × 10⁻⁴ × 100 = 0,02 %. A deformação relativa em si é adimensional.",
+    "distractorAnalysis": [
+      "Está incorreta: multiplica por 10³ em vez de 10², o que dá 0,2 %.",
+      "Está incorreta: multiplica por 10⁴ em vez de 10², o que dá 2 %.",
+      "Está incorreta: trata o valor 2 × 10⁻⁴ como se já fosse uma percentagem."
+    ],
+    "nursingApplication": "Na avaliação do alongamento de um tendão ou de uma artéria, exprimir a deformação em percentagem facilita a comparação entre tecidos."
+  },
+  {
+    "id": 2325,
+    "topicId": 2,
+    "question": "Qual é a unidade da deformação relativa ε no Sistema Internacional?",
+    "options": [
+      "Metro (m), a unidade de comprimento",
+      "Pascal (Pa), a unidade de tensão",
+      "N/m, a unidade da constante elástica",
+      "Não tem unidade (é adimensional)"
+    ],
+    "correctIndex": 3,
+    "explanation": "A deformação relativa é o quociente de dois comprimentos (ΔL / L0), logo é adimensional; a percentagem é usada apenas para representação.",
+    "distractorAnalysis": [
+      "Está incorreta: o metro é a unidade do alongamento absoluto ΔL, e não da deformação relativa, que é ΔL / L0.",
+      "Está incorreta: o pascal é a unidade da tensão mecânica e do módulo de Young.",
+      "Está incorreta: N/m é a unidade da constante elástica k."
+    ],
+    "nursingApplication": "Reconhecer que a deformação é adimensional evita erros de unidades quando se comparam alongamentos de tecidos de tamanhos diferentes."
+  },
+  {
+    "id": 2326,
+    "topicId": 2,
+    "question": "Como se designa o fenómeno em que um corpo esticado numa direção se contrai nas direções perpendiculares?",
+    "options": [
+      "Lei de Wolff",
+      "Efeito de Poisson",
+      "Lei de Hooke",
+      "Mecanotransdução"
+    ],
+    "correctIndex": 1,
+    "explanation": "Pelo efeito de Poisson, um corpo esticado numa direção contrai-se nas direções perpendiculares e, se for comprimido, dilata-se.",
+    "distractorAnalysis": [
+      "Está incorreta: a lei de Wolff descreve a adaptação do osso às forças, e não a contração transversal de um corpo esticado.",
+      "Está incorreta: a lei de Hooke relaciona a tensão com a deformação, e não descreve a contração nas direções perpendiculares.",
+      "Está incorreta: a mecanotransdução é a deteção das cargas mecânicas pelas células do osso."
+    ],
+    "nursingApplication": "Este efeito é visível numa ligadura elástica, cuja largura diminui quando é esticada, o que o enfermeiro deve ter em conta ao aplicar compressão."
+  },
+  {
+    "id": 2327,
+    "topicId": 2,
+    "question": "Uma barra tem módulo de Young E, secção S e comprimento inicial L0, com k = E·S / L0. Se a secção duplicar, mantendo o material e o comprimento, o que acontece a k?",
+    "options": [
+      "Mantém-se, porque depende só do material",
+      "Reduz-se a metade",
+      "Duplica",
+      "Quadruplica"
+    ],
+    "correctIndex": 2,
+    "explanation": "Como k = E·S / L0, duplicar S (com E e L0 constantes) duplica a constante elástica: um corpo mais grosso é mais rígido.",
+    "distractorAnalysis": [
+      "Está incorreta: k depende também das dimensões do corpo, e não apenas do material.",
+      "Está incorreta: k é diretamente proporcional a S, pelo que aumenta e não diminui.",
+      "Está incorreta: k é proporcional a S e não a S², pelo que duplicar a secção duplica k."
+    ],
+    "nursingApplication": "Esta relação explica porque um cabo de tração mais espesso, usado em aparelhos de reabilitação, se deforma menos sob a mesma carga."
+  },
+  {
+    "id": 2328,
+    "topicId": 2,
+    "question": "Uma barra tem E = 1,5 × 10⁹ Pa, secção S = 2,0 cm² e comprimento inicial L0 = 0,30 m. Qual é a sua constante elástica k = E·S / L0?",
+    "options": [
+      "1,0 × 10⁸ N/m",
+      "9,0 × 10⁴ N/m",
+      "2,3 × 10¹² N/m",
+      "1,0 × 10⁶ N/m"
+    ],
+    "correctIndex": 3,
+    "explanation": "S = 2,0 cm² = 2,0 × 10⁻⁴ m². Logo k = (1,5 × 10⁹ × 2,0 × 10⁻⁴) / 0,30 = 1,0 × 10⁶ N/m.",
+    "distractorAnalysis": [
+      "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 1,0 × 10⁸ N/m.",
+      "Está incorreta: multiplica por L0 em vez de dividir, o que dá 9,0 × 10⁴ N/m.",
+      "Está incorreta: usa E·L0 / S, trocando S e L0 na fórmula."
+    ],
+    "nursingApplication": "Calcular k permite estimar quanto um tendão ou um cabo se alonga sob uma dada carga, por exemplo num sistema de tração."
+  },
+  {
+    "id": 2329,
+    "topicId": 2,
+    "question": "Porque é preferível usar σ = E·ε, e não F = k·x, para comparar a rigidez de tecidos de tamanhos diferentes?",
+    "options": [
+      "Porque k depende só do material e E depende das dimensões",
+      "Porque E varia com o comprimento e com a secção do corpo testado",
+      "Porque E depende só do material e k depende também das dimensões",
+      "Porque k é adimensional e E tem unidades de N/m"
+    ],
+    "correctIndex": 2,
+    "explanation": "O módulo de Young E caracteriza o material, ao passo que k = E·S / L0 também depende da forma; por isso E permite comparar corpos de qualquer tamanho.",
+    "distractorAnalysis": [
+      "Está incorreta: acontece o inverso: k = E·S / L0 depende das dimensões, e E depende só do material.",
+      "Está incorreta: o módulo de Young é uma propriedade do material e não varia com o comprimento nem com a secção.",
+      "Está incorreta: k tem unidades de N/m e E tem unidades de Pa (N/m²), e nenhum dos dois é adimensional."
+    ],
+    "nursingApplication": "Esta distinção permite comparar tendões de utentes diferentes, ou de segmentos diferentes, sem que o tamanho do tendão interfira na comparação."
+  },
+  {
+    "id": 2330,
+    "topicId": 2,
+    "question": "Dois fios de nylon, do mesmo material e do mesmo comprimento, têm secções diferentes: o fio A é grosso e o fio B é fino. Que se pode dizer sobre a constante elástica k?",
+    "options": [
+      "k é igual, porque o material é o mesmo",
+      "k é maior no fio B, porque é mais fino",
+      "k é maior no fio B, porque se deforma mais",
+      "k é maior no fio A, porque a secção é maior"
+    ],
+    "correctIndex": 3,
+    "explanation": "Como k = E·S / L0, com E e L0 iguais, o fio de maior secção (A) tem maior constante elástica.",
+    "distractorAnalysis": [
+      "Está incorreta: k depende também das dimensões do corpo, e não apenas do material; a secção diferente altera k.",
+      "Está incorreta: k = E·S / L0 aumenta com a secção, pelo que o fio fino tem menor k.",
+      "Está incorreta: o fio B deforma-se mais por ter menor k, e não maior; um k maior significa que se deforma menos."
+    ],
+    "nursingApplication": "Isto explica porque, entre bandas elásticas de exercício do mesmo material e comprimento, a mais grossa oferece mais resistência ao utente durante a reabilitação."
+  },
+  {
+    "id": 2331,
+    "topicId": 2,
+    "question": "Qual é a ordem crescente do módulo de Young dos materiais borracha, osso, vidro e aço?",
+    "options": [
+      "Borracha < vidro < osso < aço",
+      "Borracha < osso < vidro < aço",
+      "Osso < borracha < vidro < aço",
+      "Aço < vidro < osso < borracha"
+    ],
+    "correctIndex": 1,
+    "explanation": "Os valores são: borracha (0,1 a 10 × 10⁷ Pa) < osso (2 × 10¹⁰) < vidro (7 × 10¹⁰) < aço (20 × 10¹⁰).",
+    "distractorAnalysis": [
+      "Está incorreta: troca o osso (≈ 2 × 10¹⁰ Pa) com o vidro (≈ 7 × 10¹⁰ Pa), que tem módulo de Young maior.",
+      "Está incorreta: coloca o osso abaixo da borracha, que é muito menos rígida (≈ 0,1 a 10 × 10⁷ Pa).",
+      "Está incorreta: inverte a ordem: é a borracha que tem o menor módulo de Young e o aço o maior (≈ 20 × 10¹⁰ Pa)."
+    ],
+    "nursingApplication": "Saber que o osso é muito mais rígido do que os tecidos moles ajuda a compreender porque o osso protege órgãos e suporta o peso do corpo."
+  },
+  {
+    "id": 2332,
+    "topicId": 2,
+    "question": "O vidro (E ≈ 7 × 10¹⁰ Pa) tem módulo de Young maior do que o osso (E ≈ 2 × 10¹⁰ Pa). Pode concluir-se que o vidro resiste a maior tensão antes de se partir?",
+    "options": [
+      "Não, porque o módulo de Young mede a rigidez e não a resistência",
+      "Sim, porque maior módulo de Young significa maior resistência",
+      "Sim, porque o vidro se deforma mais antes de fraturar",
+      "Não, porque a rigidez do vidro é menor do que a do osso"
+    ],
+    "correctIndex": 0,
+    "explanation": "O módulo de Young mede a rigidez, ou seja, a oposição à deformação elástica; não indica a resistência à tração ou à compressão.",
+    "distractorAnalysis": [
+      "Está incorreta: rigidez e resistência são grandezas diferentes: o módulo de Young não indica a tensão de rotura.",
+      "Está incorreta: um maior módulo de Young significa que o vidro se deforma menos, e não mais, para a mesma tensão.",
+      "Está incorreta: o vidro tem módulo de Young maior e, portanto, rigidez maior do que o osso."
+    ],
+    "nursingApplication": "Esta diferença explica porque um material muito rígido, como o vidro, pode partir-se enquanto o osso, menos rígido, absorve mais deformação sem se romper."
+  },
+  {
+    "id": 2333,
+    "topicId": 2,
+    "question": "Uma mola com k = 200 N/m é alongada 0,05 m para a direita. Qual é a força elástica (restauradora), tomando o sentido para a direita como positivo?",
+    "options": [
+      "+10 N",
+      "−4000 N",
+      "−2,5 × 10⁻⁴ N",
+      "−10 N"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = −k·x = −200 × 0,05 = −10 N. O sinal negativo indica que a força restauradora tem sentido oposto ao do alongamento.",
+    "distractorAnalysis": [
+      "Está incorreta: ignora o sinal negativo: a força restauradora tem sentido oposto ao do alongamento.",
+      "Está incorreta: divide k por x (200 / 0,05) em vez de multiplicar.",
+      "Está incorreta: divide x por k (0,05 / 200) em vez de multiplicar."
+    ],
+    "nursingApplication": "O sentido oposto da força restauradora explica porque uma banda elástica de exercício puxa de volta a mão do utente quando este a estica."
+  },
+  {
+    "id": 2334,
+    "topicId": 2,
+    "question": "Uma mola está em equilíbrio com um alongamento constante. Qual é a relação entre a força aplicada e a força restauradora?",
+    "options": [
+      "Têm o mesmo módulo e o mesmo sentido",
+      "A força restauradora é maior do que a aplicada",
+      "A força aplicada é maior do que a restauradora",
+      "Têm o mesmo módulo e sentidos opostos"
+    ],
+    "correctIndex": 3,
+    "explanation": "Como F = k·x e F_elástica = −k·x, a força restauradora exercida pela mola tem o mesmo módulo da força aplicada e sentido oposto, opondo-se à deformação.",
+    "distractorAnalysis": [
+      "Está incorreta: a força restauradora opõe-se à deformação, pelo que tem sentido oposto ao da força aplicada.",
+      "Está incorreta: ambas valem k·x; se a restauradora fosse maior, a mola não manteria o alongamento e voltaria a encurtar.",
+      "Está incorreta: ambas valem k·x; se a aplicada fosse maior, o alongamento aumentaria e não se manteria constante."
+    ],
+    "nursingApplication": "Num dinamómetro de mola, esta igualdade permite ler a força exercida por um utente a partir do alongamento da mola."
+  },
+  {
+    "id": 2335,
+    "topicId": 2,
+    "question": "Admita que o módulo de compressão do osso (1,4 × 10¹⁰ Pa) é inferior ao de tração (1,7 × 10¹⁰ Pa). Sob a mesma tensão, o que acontece?",
+    "options": [
+      "O osso deforma-se mais em compressão",
+      "O osso deforma-se mais em tração",
+      "O osso deforma-se por igual nos dois casos",
+      "O osso não se deforma em nenhum dos casos"
+    ],
+    "correctIndex": 0,
+    "explanation": "Como ε = σ / E, o menor módulo (compressão) dá a maior deformação relativa para a mesma tensão.",
+    "distractorAnalysis": [
+      "Está incorreta: como ε = σ / E, o menor módulo (compressão) dá a maior deformação, e não o maior (tração).",
+      "Está incorreta: módulos diferentes implicam deformações diferentes para a mesma tensão.",
+      "Está incorreta: o osso é elástico e deforma-se sempre ligeiramente sob qualquer tensão, pois não é um sólido indeformável."
+    ],
+    "nursingApplication": "Na marcha de um utente, a diáfise da tíbia é sobretudo comprimida, e é o módulo de compressão que determina o seu pequeno encurtamento a cada passo."
+  },
+  {
+    "id": 2336,
+    "topicId": 2,
+    "question": "Uma barra apoiada nas duas extremidades suporta uma carga de 600 N ao centro. Qual é a reação em cada apoio?",
+    "options": [
+      "300 N",
+      "600 N",
+      "1200 N",
+      "150 N"
+    ],
+    "correctIndex": 0,
+    "explanation": "Como a carga está ao centro, as duas reações são iguais e R = F / 2 = 600 / 2 = 300 N.",
+    "distractorAnalysis": [
+      "Está incorreta: atribui a carga toda a cada apoio, esquecendo que se divide pelos dois.",
+      "Está incorreta: soma as duas reações em vez de repartir a carga entre os apoios.",
+      "Está incorreta: divide a carga por quatro em vez de por dois."
+    ],
+    "nursingApplication": "O mesmo raciocínio permite estimar a força suportada por cada um dos dois profissionais que transportam uma maca com o utente ao centro."
+  },
+  {
+    "id": 2337,
+    "topicId": 2,
+    "question": "Numa barra fletida, qual é a tensão normal no plano neutro?",
+    "options": [
+      "Máxima e de tração",
+      "Nula",
+      "Máxima e de compressão",
+      "Igual à da periferia"
+    ],
+    "correctIndex": 1,
+    "explanation": "No plano neutro, o material não está nem tracionado nem comprimido, pelo que a tensão normal é nula.",
+    "distractorAnalysis": [
+      "Está incorreta: a tração máxima ocorre na periferia do lado convexo, e não no plano neutro.",
+      "Está incorreta: a compressão máxima ocorre na periferia do lado côncavo, e não no plano neutro.",
+      "Está incorreta: as tensões aumentam do plano neutro para a periferia; não são iguais nas duas zonas."
+    ],
+    "nursingApplication": "Saber que o centro de um osso fletido suporta pouca tensão ajuda a compreender porque as fraturas por flexão começam na superfície."
+  },
+  {
+    "id": 2338,
+    "topicId": 2,
+    "question": "Como varia a tensão normal ao longo da secção de uma barra fletida?",
+    "options": [
+      "É igual em toda a secção, de uma face à oposta",
+      "É máxima no plano neutro e nula nas duas faces",
+      "É de compressão em todas as camadas da secção",
+      "Tração numa face, nula no plano neutro, compressão na outra"
+    ],
+    "correctIndex": 3,
+    "explanation": "Numa barra fletida, uma face é tracionada, a oposta é comprimida e, entre elas, o plano neutro tem tensão nula.",
+    "distractorAnalysis": [
+      "Está incorreta: na flexão a tensão varia ao longo da secção; só seria uniforme com tração ou compressão axiais.",
+      "Está incorreta: ocorre o inverso: a tensão é nula no plano neutro e máxima na periferia.",
+      "Está incorreta: uma face da barra fletida é tracionada e a outra é comprimida."
+    ],
+    "nursingApplication": "É este padrão que explica porque uma fratura por flexão do osso começa do lado tracionado."
+  },
+  {
+    "id": 2339,
+    "topicId": 2,
+    "question": "Que grandeza mede o grau de deformação por cisalhamento?",
+    "options": [
+      "O ângulo Φ de rotação da face superior em torno do eixo da barra",
+      "O ângulo α de deslizamento entre as camadas",
+      "O alongamento ΔL das fibras ao longo do eixo",
+      "A posição do plano neutro na secção"
+    ],
+    "correctIndex": 1,
+    "explanation": "No cisalhamento, as camadas deslizam umas sobre as outras e o grau de deformação é medido pelo ângulo α.",
+    "distractorAnalysis": [
+      "Está incorreta: o ângulo Φ mede o grau de torção e não o de cisalhamento.",
+      "Está incorreta: ΔL mede o alongamento na tração ou na compressão, em que o comprimento varia.",
+      "Está incorreta: o plano neutro é uma noção da flexão e não mede o grau de cisalhamento."
+    ],
+    "nursingApplication": "O deslizamento das camadas da pele sobre os planos profundos, quando o utente escorrega na cama, é um exemplo de cisalhamento."
+  },
+  {
+    "id": 2340,
+    "topicId": 2,
+    "question": "Que grandeza mede o grau de deformação por torção de uma barra com a base fixa?",
+    "options": [
+      "O ângulo α de deslizamento entre camadas paralelas",
+      "O alongamento ΔL da barra ao longo do eixo",
+      "O ângulo de rotação Φ entre as faces da barra",
+      "A tensão normal no plano neutro"
+    ],
+    "correctIndex": 2,
+    "explanation": "Na torção, a deformação é medida pelo ângulo de rotação Φ da face superior relativamente à face inferior, que está fixa.",
+    "distractorAnalysis": [
+      "Está incorreta: o ângulo α mede o grau de cisalhamento e não o de torção.",
+      "Está incorreta: ΔL mede a variação de comprimento, que não é a característica da torção.",
+      "Está incorreta: a tensão normal no plano neutro é uma noção da flexão e não mede o grau de torção."
+    ],
+    "nursingApplication": "A torção de um membro, com o pé fixo no solo e o corpo a rodar, é um mecanismo conhecido de lesão que o enfermeiro encontra em fraturas espirais."
+  },
+  {
+    "id": 2341,
+    "topicId": 2,
+    "question": "O que é um binário de forças?",
+    "options": [
+      "Duas forças iguais, de sentidos opostos e com a mesma linha de ação, que não produzem rotação",
+      "Um par de forças iguais, de sentidos opostos e com linhas de ação paralelas, que produz rotação",
+      "Duas forças de sentidos convergentes que comprimem uma barra ao longo do eixo",
+      "Duas forças iguais e do mesmo sentido, com linhas de ação paralelas"
+    ],
+    "correctIndex": 1,
+    "explanation": "Um binário é um par de forças iguais e de sentidos opostos, com linhas de ação paralelas; a resultante é nula, mas há momento e, portanto, rotação.",
+    "distractorAnalysis": [
+      "Está incorreta: com a mesma linha de ação, as forças anulam-se também em termos de rotação, e isso não produz binário.",
+      "Está incorreta: essa descrição corresponde à compressão, e não ao binário, cujas linhas de ação são paralelas e não coincidentes.",
+      "Está incorreta: forças do mesmo sentido somam-se numa força resultante; num binário, os sentidos são opostos."
+    ],
+    "nursingApplication": "O enfermeiro aplica um binário com os dedos quando roda o botão de um debitómetro de oxigénio para ajustar o fluxo."
+  },
+  {
+    "id": 2342,
+    "topicId": 2,
+    "question": "Uma barra tem a base fixa e o topo é rodado por um binário. Que reação surge na base?",
+    "options": [
+      "Um binário igual e de sentido oposto",
+      "Uma força de compressão ao longo do eixo",
+      "Uma força de cisalhamento paralela à base",
+      "Nenhuma, porque a base está fixa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na face fixa surge, por reação, um binário igual e de sentido oposto ao aplicado, o que mantém a barra em equilíbrio de rotação.",
+    "distractorAnalysis": [
+      "Está incorreta: a torção não exige uma força axial de compressão; a reação é um binário.",
+      "Está incorreta: o cisalhamento envolve forças tangenciais opostas, e não a rotação em torno do eixo.",
+      "Está incorreta: a base fixa exerce precisamente a reação que equilibra o binário aplicado."
+    ],
+    "nursingApplication": "O mesmo princípio explica porque, ao desenroscar uma tampa de um frasco, é preciso segurar o frasco para o impedir de rodar."
+  },
+  {
+    "id": 2343,
+    "topicId": 2,
+    "question": "Uma tesoura corta uma gaze. Que deformação predomina no material cortado?",
+    "options": [
+      "Tração",
+      "Flexão",
+      "Cisalhamento",
+      "Torção"
+    ],
+    "correctIndex": 2,
+    "explanation": "As lâminas aplicam forças opostas e tangenciais a superfícies paralelas do material, o que provoca cisalhamento.",
+    "distractorAnalysis": [
+      "Está incorreta: na tração as forças divergem ao longo do eixo; na tesoura as forças são tangenciais e opostas.",
+      "Está incorreta: a flexão exige uma força perpendicular ao eixo com apoios nas extremidades, e não forças tangenciais opostas.",
+      "Está incorreta: a torção exige binários de sentidos opostos em torno do eixo, o que não acontece numa tesoura."
+    ],
+    "nursingApplication": "Este mecanismo ajuda a perceber porque o corte de uma ligadura é mais fácil com uma tesoura bem afiada, que aplica a força numa área menor e aumenta a tensão no material."
+  },
+  {
+    "id": 2344,
+    "topicId": 2,
+    "question": "Num esquiador, o pé fica preso na fixação e o corpo roda, aplicando um binário à tíbia. Que tipo de deformação predomina no osso?",
+    "options": [
+      "Flexão",
+      "Torção",
+      "Compressão",
+      "Cisalhamento"
+    ],
+    "correctIndex": 1,
+    "explanation": "Um binário aplicado em torno do eixo longitudinal, com uma extremidade fixa, provoca torção; as tensões são máximas na periferia do osso.",
+    "distractorAnalysis": [
+      "Está incorreta: a flexão resulta de uma força perpendicular ao eixo do osso, e não de uma rotação em torno do eixo.",
+      "Está incorreta: a compressão exige forças convergentes ao longo do eixo do osso.",
+      "Está incorreta: o cisalhamento envolve forças tangenciais opostas a superfícies paralelas, e não um binário em torno do eixo."
+    ],
+    "nursingApplication": "Este mecanismo é típico das fraturas espirais da tíbia, que o enfermeiro reconhece na história de uma lesão desportiva."
+  },
+  {
+    "id": 2345,
+    "topicId": 2,
+    "question": "Uma vértebra suporta uma força de compressão de 700 N numa área de 15 cm². Qual é a tensão de compressão?",
+    "options": [
+      "4,7 × 10³ Pa",
+      "4,7 × 10⁷ Pa",
+      "4,7 × 10⁵ Pa",
+      "1,05 Pa"
+    ],
+    "correctIndex": 2,
+    "explanation": "S = 15 cm² = 15 × 10⁻⁴ m² = 1,5 × 10⁻³ m². Logo σ = 700 / (1,5 × 10⁻³) = 4,7 × 10⁵ Pa.",
+    "distractorAnalysis": [
+      "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 4,7 × 10³ Pa.",
+      "Está incorreta: converte 1 cm² como 10⁻⁶ m², o que dá 4,7 × 10⁷ Pa.",
+      "Está incorreta: multiplica a força pela área (700 × 15 × 10⁻⁴), em vez de dividir."
+    ],
+    "nursingApplication": "Este cálculo ilustra a carga sobre a coluna de um utente em pé, que aumenta quando este transporta um objeto pesado."
+  },
+  {
+    "id": 2346,
+    "topicId": 2,
+    "question": "Um tendão de 20 cm tem E = 1,2 × 10⁹ Pa e suporta uma tensão de 6,0 × 10⁶ Pa, no regime elástico. Qual é o seu alongamento?",
+    "options": [
+      "1,0 mm",
+      "1,0 cm",
+      "0,10 mm",
+      "4,0 × 10⁴ mm"
+    ],
+    "correctIndex": 0,
+    "explanation": "ε = σ / E = 6,0 × 10⁶ / 1,2 × 10⁹ = 5,0 × 10⁻³; ΔL = ε · L0 = 5,0 × 10⁻³ × 0,20 m = 1,0 × 10⁻³ m = 1,0 mm.",
+    "distractorAnalysis": [
+      "Está incorreta: o resultado é 1,0 × 10⁻³ m; confunde milímetros com centímetros na conversão.",
+      "Está incorreta: converte 20 cm em 0,02 m em vez de 0,20 m.",
+      "Está incorreta: usa ΔL = L0 · E / σ, em vez de L0 · σ / E."
+    ],
+    "nursingApplication": "Valores destes mostram que o tendão de Aquiles se alonga apenas alguns milímetros na marcha, e que alongamentos muito maiores, num salto ou numa queda, o podem lesionar."
+  },
+  {
+    "id": 2347,
+    "topicId": 2,
+    "question": "Uma força de 2400 N atua num fémur de secção 6 cm², produzindo uma tensão de 4 × 10⁶ Pa. Se a mesma força atuasse numa secção de 3 cm² (osso mais fino), o que aconteceria à tensão?",
+    "options": [
+      "Mantinha-se em 4 × 10⁶ Pa",
+      "Reduzia-se a metade, para 2 × 10⁶ Pa",
+      "Duplicava, para 8 × 10⁶ Pa",
+      "Quadruplicava, para 1,6 × 10⁷ Pa"
+    ],
+    "correctIndex": 2,
+    "explanation": "Como σ = F / S, reduzir a secção a metade, com a mesma força, duplica a tensão: 2400 / (3 × 10⁻⁴) = 8 × 10⁶ Pa.",
+    "distractorAnalysis": [
+      "Está incorreta: a tensão é F / S, pelo que depende da área; ao reduzir S, a tensão muda.",
+      "Está incorreta: reduzir a área aumenta a tensão, em vez de a diminuir, pois σ = F / S.",
+      "Está incorreta: a tensão é inversamente proporcional a S e não a S², pelo que reduzir a área para metade duplica a tensão."
+    ],
+    "nursingApplication": "Por isso, um osso mais fino ou desmineralizado suporta pior a mesma carga, e a prevenção de quedas é importante em utentes com osso frágil."
+  },
+  {
+    "id": 2348,
+    "topicId": 2,
+    "question": "Num fémur, a força de compressão de 2400 N corresponde a cerca de 3 vezes o peso corporal. Qual é, aproximadamente, a massa da pessoa (g = 9,8 m/s²)?",
+    "options": [
+      "82 kg",
+      "245 kg",
+      "735 kg",
+      "800 kg"
+    ],
+    "correctIndex": 0,
+    "explanation": "O peso é 2400 / 3 = 800 N, e a massa é m = P / g = 800 / 9,8 ≈ 82 kg.",
+    "distractorAnalysis": [
+      "Está incorreta: esquece o fator 3 e divide os 2400 N diretamente por g.",
+      "Está incorreta: multiplica por 3 em vez de dividir, e depois divide por g.",
+      "Está incorreta: confunde o peso em N com a massa em kg."
+    ],
+    "nursingApplication": "Estimar o peso a partir de uma força permite perceber a sobrecarga que o corpo de um utente com excesso de peso impõe às articulações."
+  },
+  {
+    "id": 2349,
+    "topicId": 2,
+    "question": "Que transformação de energia realizam as fibras musculares?",
+    "options": [
+      "Convertem energia mecânica em energia química para armazenar",
+      "Convertem energia térmica em energia elétrica para conduzir",
+      "Convertem energia química (ATP) em energia mecânica",
+      "Convertem energia elétrica do impulso nervoso em energia mecânica"
+    ],
+    "correctIndex": 2,
+    "explanation": "As fibras musculares transformam a energia química do ATP em energia mecânica, ou seja, em força e movimento.",
+    "distractorAnalysis": [
+      "Está incorreta: o sentido está invertido: o músculo gasta energia química na forma de ATP para produzir força e movimento.",
+      "Está incorreta: o músculo não converte calor em eletricidade; o calor é um subproduto da contração e não a fonte de energia.",
+      "Está incorreta: o impulso nervoso desencadeia a contração, mas a energia para a força vem da hidrólise do ATP, e não do sinal elétrico."
+    ],
+    "nursingApplication": "Esta ligação entre ATP e força explica porque o utente em jejum prolongado ou desnutrido se cansa mais facilmente durante a mobilização."
+  },
+  {
+    "id": 2350,
+    "topicId": 2,
+    "question": "Qual dos seguintes tipos de músculo é de controlo voluntário?",
+    "options": [
+      "Músculo estriado cardíaco",
+      "Músculo estriado esquelético",
+      "Músculo liso das paredes de órgãos ocos",
+      "Músculo liso das paredes dos vasos"
+    ],
+    "correctIndex": 1,
+    "explanation": "O músculo estriado esquelético, como o bíceps, é voluntário; o cardíaco e o liso são involuntários.",
+    "distractorAnalysis": [
+      "Está incorreta: o músculo cardíaco é de controlo involuntário.",
+      "Está incorreta: o músculo liso das paredes dos órgãos ocos é de controlo involuntário.",
+      "Está incorreta: o músculo liso dos vasos é de controlo involuntário."
+    ],
+    "nursingApplication": "Esta distinção é útil quando o enfermeiro avalia a capacidade de um utente mobilizar voluntariamente os membros após um acidente vascular cerebral."
+  },
+  {
+    "id": 2351,
+    "topicId": 2,
+    "question": "Porque razão as células do músculo estriado cardíaco estão ligadas entre si?",
+    "options": [
+      "Para que cada célula se contraia de modo independente das vizinhas",
+      "Para aumentar o módulo de Young de cada célula isolada",
+      "Para conduzirem o estímulo e se contraírem de forma coordenada",
+      "Para impedir que o miocárdio se estique durante o enchimento"
+    ],
+    "correctIndex": 2,
+    "explanation": "As células do miocárdio estão ligadas para o estímulo passar de célula a célula, de modo que o músculo cardíaco se contraia como um conjunto coordenado.",
+    "distractorAnalysis": [
+      "Está incorreta: a contração do miocárdio é coordenada, e não independente, para que o coração bombeie o sangue de forma eficaz.",
+      "Está incorreta: a ligação entre células não altera o módulo de Young de cada célula; serve para a transmissão do estímulo.",
+      "Está incorreta: o miocárdio distende-se durante o enchimento; a ligação das células tem a função de coordenar a contração."
+    ],
+    "nursingApplication": "Quando esta coordenação falha, surgem arritmias, que o enfermeiro pode identificar no eletrocardiograma de um utente monitorizado."
+  },
+  {
+    "id": 2352,
+    "topicId": 2,
+    "question": "Qual é o papel das fibras de colagénio e das fibras elásticas no tecido conjuntivo muscular?",
+    "options": [
+      "O colagénio dá elasticidade e as fibras elásticas dão resistência à distensão",
+      "As duas conferem apenas rigidez mineral ao músculo",
+      "O colagénio dá resistência à distensão e as fibras elásticas dão elasticidade",
+      "As duas produzem a força de contração do músculo"
+    ],
+    "correctIndex": 2,
+    "explanation": "No tecido conjuntivo, as fibras de colagénio resistem à distensão e as fibras elásticas conferem elasticidade.",
+    "distractorAnalysis": [
+      "Está incorreta: os papéis estão trocados: o colagénio é que resiste à distensão e as fibras elásticas é que dão elasticidade.",
+      "Está incorreta: a rigidez mineral é função da hidroxiapatite do osso, e não do tecido conjuntivo muscular.",
+      "Está incorreta: a força de contração é produzida pelas fibras musculares a partir do ATP, e não pelo tecido conjuntivo."
+    ],
+    "nursingApplication": "Estas fibras explicam porque um músculo ou tendão estirado com cuidado recupera, ao passo que uma distensão brusca pode lesionar o tecido conjuntivo."
+  },
+  {
+    "id": 2353,
+    "topicId": 2,
+    "question": "Um músculo esquelético é alongado e, depois de retirada a carga, não regressa por completo à posição inicial, com um alongamento residual que recupera lentamente. Que comportamento reológico revela?",
+    "options": [
+      "Sólido de Hooke",
+      "Viscoelástico",
+      "Sólido indeformável",
+      "Plástico, com deformação permanente imediata"
+    ],
+    "correctIndex": 1,
+    "explanation": "A recuperação retardada, com alongamento residual lento, caracteriza um corpo viscoelástico.",
+    "distractorAnalysis": [
+      "Está incorreta: um sólido de Hooke recuperaria a forma de imediato e por completo dentro da zona de proporcionalidade.",
+      "Está incorreta: um sólido indeformável nunca se deforma, e o músculo claramente se alonga.",
+      "Está incorreta: o alongamento residual recupera lentamente, e não é uma deformação permanente imediata como num corpo plástico."
+    ],
+    "nursingApplication": "Por ser viscoelástico, o músculo beneficia de alongamentos lentos e mantidos, e não de movimentos bruscos, na reabilitação do utente."
+  },
+  {
+    "id": 2354,
+    "topicId": 2,
+    "question": "O que pode acontecer se um músculo for sujeito a uma carga excessiva?",
+    "options": [
+      "Aumento permanente do módulo de Young do músculo",
+      "Transformação do músculo em sólido indeformável",
+      "Rotura de fibras musculares e do tecido conjuntivo",
+      "Aumento da fase mineral das suas fibras"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cargas excessivas podem causar rotura de fibras musculares e do tecido conjuntivo, além do seu limite de resistência.",
+    "distractorAnalysis": [
+      "Está incorreta: uma carga excessiva lesiona o tecido, e não aumenta o módulo de Young de modo permanente.",
+      "Está incorreta: nenhum tecido biológico se torna um sólido indeformável, que é apenas um modelo teórico.",
+      "Está incorreta: a fase mineral é característica do osso e não do músculo."
+    ],
+    "nursingApplication": "Por isso, o enfermeiro ensina o utente a levantar cargas com a técnica correta e a evitar esforços bruscos, para prevenir lesões musculares."
+  },
+  {
+    "id": 2355,
+    "topicId": 2,
+    "question": "Quando a bexiga enche lentamente, a tensão na sua parede não aumenta tanto como se esperaria de uma mola. Que comportamento justifica isto?",
+    "options": [
+      "Comportamento de sólido de Hooke ideal, sem alongamento residual",
+      "Comportamento de sólido indeformável, sem alteração de comprimento",
+      "Comportamento de corpo viscoso puro, sem qualquer elasticidade",
+      "Viscoelasticidade, com relaxamento da tensão e adaptação do comprimento"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sob estiramento mantido, a tensão relaxa e o comprimento adapta-se, o que é típico de um tecido viscoelástico como a bexiga.",
+    "distractorAnalysis": [
+      "Está incorreta: um sólido de Hooke ideal mantém a tensão proporcional à deformação, sem relaxamento com o tempo.",
+      "Está incorreta: a bexiga aumenta de volume ao encher, pelo que não é indeformável.",
+      "Está incorreta: a bexiga recupera a forma após o esvaziamento, pelo que tem componente elástica e não é viscosa pura."
+    ],
+    "nursingApplication": "Esta adaptação permite que a bexiga acumule urina a baixa pressão, o que o enfermeiro tem em conta ao avaliar utentes com disfunção vesical."
+  },
+  {
+    "id": 2356,
+    "topicId": 2,
+    "question": "Qual dos componentes seguintes é abundante na parede das grandes artérias elásticas, como a aorta?",
+    "options": [
+      "Fibras elásticas",
+      "Cristais de hidroxiapatite",
+      "Queratina",
+      "Fibras musculares estriadas esqueléticas"
+    ],
+    "correctIndex": 0,
+    "explanation": "A parede das grandes artérias elásticas tem músculo liso, fibras de colagénio e abundantes fibras elásticas.",
+    "distractorAnalysis": [
+      "Está incorreta: a hidroxiapatite é o mineral do osso e não faz parte da parede arterial.",
+      "Está incorreta: a queratina é a proteína da epiderme e dos seus anexos, e não da parede das artérias.",
+      "Está incorreta: a parede arterial tem músculo liso, e não músculo estriado esquelético."
+    ],
+    "nursingApplication": "A elasticidade da aorta permite-lhe acomodar o sangue ejetado pelo coração, o que o enfermeiro nota na palpação do pulso de um utente."
+  },
+  {
+    "id": 2357,
+    "topicId": 2,
+    "question": "O que acontece à distensibilidade das artérias com a idade?",
+    "options": [
+      "Diminui, ficando as artérias mais rígidas",
+      "Aumenta, ficando as artérias mais elásticas",
+      "Mantém-se igual durante toda a vida",
+      "Desaparece por completo aos 40 anos"
+    ],
+    "correctIndex": 0,
+    "explanation": "Com a idade, há perda de distensibilidade e as artérias ficam mais rígidas.",
+    "distractorAnalysis": [
+      "Está incorreta: com a idade as artérias perdem elasticidade e tornam-se mais rígidas, e não mais elásticas.",
+      "Está incorreta: a distensibilidade das artérias diminui progressivamente com a idade e não se mantém constante.",
+      "Está incorreta: a diminuição é gradual e não desaparece por completo numa idade específica."
+    ],
+    "nursingApplication": "Esta rigidez arterial é uma das razões para o enfermeiro acompanhar com atenção a pressão arterial dos utentes idosos."
+  },
+  {
+    "id": 2358,
+    "topicId": 2,
+    "question": "Qual das alterações contribui para a maior rigidez das artérias com a idade?",
+    "options": [
+      "Fragmentação da elastina",
+      "Aumento da quantidade de elastina",
+      "Diminuição do colagénio",
+      "Desmineralização da parede arterial"
+    ],
+    "correctIndex": 0,
+    "explanation": "A rigidez arterial deve-se à fragmentação da elastina, ao aumento do colagénio e à calcificação (arteriosclerose).",
+    "distractorAnalysis": [
+      "Está incorreta: a elastina fragmenta-se e perde função, em vez de aumentar.",
+      "Está incorreta: ocorre aumento do colagénio, e não a sua diminuição.",
+      "Está incorreta: a parede arterial sofre calcificação, e não desmineralização."
+    ],
+    "nursingApplication": "Compreender estes mecanismos ajuda o enfermeiro a explicar a um utente porque o controlo da pressão arterial é importante com o avançar da idade."
+  },
+  {
+    "id": 2359,
+    "topicId": 2,
+    "question": "Uma artéria com maior rigidez (módulo de Young maior), sujeita à mesma tensão, apresenta que deformação relativa?",
+    "options": [
+      "Menor",
+      "Maior",
+      "Igual",
+      "Nula, por se tornar indeformável"
+    ],
+    "correctIndex": 0,
+    "explanation": "Como ε = σ / E, um módulo de Young maior significa menor deformação relativa para a mesma tensão.",
+    "distractorAnalysis": [
+      "Está incorreta: como ε = σ / E, um maior E dá uma menor deformação para a mesma tensão.",
+      "Está incorreta: a deformação depende de E; com E maior, ε é menor.",
+      "Está incorreta: a artéria continua a deformar-se, apenas menos; nenhum tecido é um sólido indeformável."
+    ],
+    "nursingApplication": "É por isso que uma artéria rígida acomoda pior o sangue ejetado a cada batimento do que uma artéria elástica."
+  },
+  {
+    "id": 2360,
+    "topicId": 2,
+    "question": "A parede de uma artéria tem E = 1,0 × 10⁶ Pa e está sujeita a uma tensão de 5,0 × 10⁴ Pa, no regime elástico. Qual é a deformação relativa?",
+    "options": [
+      "20 (2000 %)",
+      "0,50 (50 %)",
+      "5,0 × 10¹⁰",
+      "0,050 (5,0 %)"
+    ],
+    "correctIndex": 3,
+    "explanation": "ε = σ / E = 5,0 × 10⁴ / 1,0 × 10⁶ = 0,050, ou seja, 5,0 % (valor adimensional).",
+    "distractorAnalysis": [
+      "Está incorreta: divide E por σ (E / σ), em vez de σ por E.",
+      "Está incorreta: erra o expoente ao dividir as potências de 10 (10⁴ / 10⁶ tomado como 10⁻¹ em vez de 10⁻²), o que dá um valor 10 vezes maior.",
+      "Está incorreta: multiplica σ por E, em vez de dividir."
+    ],
+    "nursingApplication": "Um valor desta ordem mostra como as artérias elásticas se distendem apreciavelmente a cada batimento, ao contrário do osso."
+  },
+  {
+    "id": 2361,
+    "topicId": 2,
+    "question": "Uma artéria jovem tem E = 1,0 × 10⁶ Pa e a de um idoso tem E = 4,0 × 10⁶ Pa. Sob a mesma tensão, como se comparam as deformações?",
+    "options": [
+      "A artéria do idoso deforma-se 4 vezes mais",
+      "As duas deformam-se igualmente",
+      "A artéria jovem deforma-se 4 vezes mais",
+      "A artéria jovem deforma-se 16 vezes mais"
+    ],
+    "correctIndex": 2,
+    "explanation": "Como ε = σ / E, com σ igual, ε_jovem / ε_idoso = E_idoso / E_jovem = 4.",
+    "distractorAnalysis": [
+      "Está incorreta: inverte a relação: como ε = σ / E, o maior módulo (idoso) dá menor deformação.",
+      "Está incorreta: módulos de Young diferentes implicam deformações diferentes para a mesma tensão.",
+      "Está incorreta: ε é inversamente proporcional a E e não a E², pelo que a razão é 4 e não 16."
+    ],
+    "nursingApplication": "Este exemplo ilustra a perda de distensibilidade que contribui para o aumento da pressão arterial sistólica nos utentes idosos."
+  },
+  {
+    "id": 2362,
+    "topicId": 2,
+    "question": "A pasta de dentes mantém a forma quando está na escova, mas flui quando é espremida do tubo. Que tipo de corpo é?",
+    "options": [
+      "Plastoviscoelástico",
+      "Viscoso puro",
+      "Sólido de Hooke",
+      "Sólido indeformável"
+    ],
+    "correctIndex": 0,
+    "explanation": "Abaixo de uma tensão mínima, comporta-se como elástico; acima dela, flui e fica com deformação permanente: é um corpo plastoviscoelástico.",
+    "distractorAnalysis": [
+      "Está incorreta: um corpo viscoso puro, como o mel, flui sob qualquer tensão, e a pasta mantém a forma em repouso.",
+      "Está incorreta: um sólido de Hooke não flui nem fica deformado de forma permanente quando se aplica uma tensão elevada.",
+      "Está incorreta: o sólido indeformável nunca se deforma, e a pasta flui quando é espremida."
+    ],
+    "nursingApplication": "Pastas e géis de uso clínico, aplicados sobre a pele, têm um comportamento semelhante: ficam no sítio e espalham-se quando se faz pressão."
+  },
+  {
+    "id": 2363,
+    "topicId": 2,
+    "question": "A maionese não escorre de uma colher inclinada, mas espalha-se facilmente com uma faca. Que comportamento explica isto?",
+    "options": [
+      "Flui sob qualquer tensão, como um corpo viscoso puro",
+      "Só flui acima de uma tensão mínima (plastoviscoelástico)",
+      "Recupera sempre a forma original, como um sólido de Hooke",
+      "Não se deforma nunca, como um sólido indeformável"
+    ],
+    "correctIndex": 1,
+    "explanation": "O seu peso é uma tensão inferior à tensão mínima para fluir; a faca aplica uma tensão superior, e a maionese flui.",
+    "distractorAnalysis": [
+      "Está incorreta: se fluísse sob qualquer tensão, como o mel, escorreria da colher inclinada devido ao seu peso.",
+      "Está incorreta: a maionese espalhada fica com a nova forma, e não recupera a original.",
+      "Está incorreta: a maionese deforma-se, e muito, quando é espalhada."
+    ],
+    "nursingApplication": "Esta ideia aplica-se a pomadas e géis: ficam no local em repouso e espalham-se quando o enfermeiro faz pressão com a espátula."
+  },
+  {
+    "id": 2364,
+    "topicId": 2,
+    "question": "Qual dos pares seguintes contém apenas exemplos de corpos viscoelásticos?",
+    "options": [
+      "Água e mel",
+      "Plasticina e argila",
+      "Mola e fio de nylon",
+      "Cartilagem e menisco"
+    ],
+    "correctIndex": 3,
+    "explanation": "Esponja, cartilagem, gelatina e menisco são exemplos de corpos viscoelásticos, com recuperação retardada da forma.",
+    "distractorAnalysis": [
+      "Está incorreta: a água e o mel são corpos viscosos e não viscoelásticos.",
+      "Está incorreta: a plasticina e a argila são corpos plásticos.",
+      "Está incorreta: a mola e o fio de nylon aproximam-se de sólidos de Hooke."
+    ],
+    "nursingApplication": "Por ser viscoelástico, o menisco deforma-se sob carga e recupera lentamente a forma, o que ajuda a distribuir as cargas no joelho durante a marcha."
+  },
+  {
+    "id": 2365,
+    "topicId": 2,
+    "question": "Sob tensão constante, a deformação de um material aumenta com o tempo. Ao retirar a tensão, a deformação mantém-se constante, sem recuperação. Que corpo é?",
+    "options": [
+      "Viscoelástico",
+      "Sólido de Hooke",
+      "Sólido indeformável",
+      "Viscoso"
+    ],
+    "correctIndex": 3,
+    "explanation": "Num corpo viscoso, a deformação cresce com a tensão e o tempo de aplicação e não é recuperada quando a tensão cessa.",
+    "distractorAnalysis": [
+      "Está incorreta: num corpo viscoelástico, a deformação recupera lentamente após se retirar a tensão.",
+      "Está incorreta: num sólido de Hooke a deformação é constante sob tensão constante e recupera totalmente.",
+      "Está incorreta: o sólido indeformável não apresenta deformação."
+    ],
+    "nursingApplication": "A glicerina, usada em preparações farmacêuticas, e a água são exemplos de corpos viscosos, o que importa para a forma como escoam em seringas e tubos."
+  },
+  {
+    "id": 2366,
+    "topicId": 2,
+    "question": "Um material comporta-se como elástico abaixo de 30 Pa e flui acima desse valor. O que se espera ao aplicar 20 Pa e depois 50 Pa?",
+    "options": [
+      "Com 20 Pa o material flui, e com 50 Pa recupera a forma",
+      "Com 20 Pa e com 50 Pa o material flui e fica deformado",
+      "Com 20 Pa e com 50 Pa a deformação é recuperável",
+      "Com 20 Pa recupera a forma; com 50 Pa flui e fica deformado"
+    ],
+    "correctIndex": 3,
+    "explanation": "Abaixo da tensão mínima o material é elástico (20 Pa); acima dela (50 Pa) flui e fica com deformação permanente.",
+    "distractorAnalysis": [
+      "Está incorreta: a relação está invertida: abaixo da tensão mínima (30 Pa) o comportamento é elástico, e acima dela o material flui.",
+      "Está incorreta: aos 20 Pa, abaixo da tensão mínima, o material comporta-se como elástico e não flui.",
+      "Está incorreta: aos 50 Pa, acima da tensão mínima, o material flui e a deformação não é totalmente recuperada."
+    ],
+    "nursingApplication": "Este comportamento explica porque uma pomada espessa fica no sítio e só se espalha quando o enfermeiro aplica pressão suficiente."
+  },
+  {
+    "id": 2367,
+    "topicId": 2,
+    "question": "Porque é que uma bigorna de aço é apresentada como exemplo do modelo de sólido indeformável?",
+    "options": [
+      "Porque nunca se deforma, seja qual for a força aplicada",
+      "Porque a sua deformação é desprezável, mas nunca exatamente nula",
+      "Porque o seu módulo de Young é igual a zero",
+      "Porque se deforma de forma permanente acima de uma tensão limiar"
+    ],
+    "correctIndex": 1,
+    "explanation": "O aço deforma-se muito pouco, pelo que a bigorna é um bom modelo, embora o sólido indeformável seja uma idealização que não existe na natureza.",
+    "distractorAnalysis": [
+      "Está incorreta: nenhum corpo real é perfeitamente indeformável; o modelo é uma idealização.",
+      "Está incorreta: um módulo de Young nulo significaria deformação enorme, e não nula; o sólido indeformável corresponderia a um módulo muito elevado.",
+      "Está incorreta: essa é a descrição de um corpo plástico e não de uma bigorna de aço."
+    ],
+    "nursingApplication": "Saber que as idealizações têm limites ajuda a perceber que mesmo o osso, muito rígido, se deforma ligeiramente quando suporta o peso do corpo."
+  },
+  {
+    "id": 2368,
+    "topicId": 2,
+    "question": "Uma banda elástica de reabilitação foi esticada em excesso e ficou permanentemente mais comprida. O que aconteceu?",
+    "options": [
+      "A constante elástica k aumentou durante o esticamento da banda",
+      "Ultrapassou a zona reversível e ficou com deformação permanente",
+      "O módulo de Young passou a ser infinito com o esticamento",
+      "A banda comportou-se como um sólido indeformável ao ser esticada"
+    ],
+    "correctIndex": 1,
+    "explanation": "A lei de Hooke só é válida até ao limite de proporcionalidade; muito além, o material fica com deformação permanente e já não segue σ = E · ε.",
+    "distractorAnalysis": [
+      "Está incorreta: a deformação permanente não resulta de um aumento de k, mas de a banda ter ultrapassado a sua zona de comportamento elástico.",
+      "Está incorreta: um módulo de Young infinito corresponderia a deformação nula, e a banda ficou mais comprida.",
+      "Está incorreta: um sólido indeformável não se alonga, e a banda ficou permanentemente mais comprida."
+    ],
+    "nursingApplication": "Por isso, o enfermeiro ou o fisioterapeuta verifica o estado das bandas de resistência e substitui as que estão muito esticadas ou rasgadas."
+  },
+  {
+    "id": 2369,
+    "topicId": 2,
+    "question": "Uma mola alonga 3,0 cm quando é puxada por uma força de 12 N, dentro do limite de proporcionalidade. Qual é a sua constante elástica?",
+    "options": [
+      "4,0 N/m",
+      "0,36 N/m",
+      "2,5 × 10⁻³ N/m",
+      "400 N/m"
+    ],
+    "correctIndex": 3,
+    "explanation": "Pela lei de Hooke, k = F / x, com x = 3,0 cm = 0,030 m; k = 12 / 0,030 = 400 N/m.",
+    "distractorAnalysis": [
+      "Está incorreta: usa 3,0 em vez de 0,030 m no denominador (12 / 3,0), esquecendo-se de converter cm em m.",
+      "Está incorreta: multiplica a força pelo alongamento em metros (12 × 0,030), em vez de dividir.",
+      "Está incorreta: divide o alongamento em metros pela força (0,030 / 12), em vez de F / x."
+    ],
+    "nursingApplication": "Conhecer k permite calibrar um dinamómetro de mola usado para medir a força de preensão de um utente em reabilitação."
+  },
+  {
+    "id": 2370,
+    "topicId": 2,
+    "question": "Uma mola com k = 250 N/m é comprimida 6 cm, dentro do limite de proporcionalidade. Qual é o módulo da força elástica?",
+    "options": [
+      "1500 N",
+      "15 N",
+      "41,7 N",
+      "0,024 N"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = k · x = 250 × 0,06 = 15 N.",
+    "distractorAnalysis": [
+      "Está incorreta: usa 6 em vez de 0,06 m, esquecendo-se de converter cm em m.",
+      "Está incorreta: divide k por x (250 / 6), em vez de multiplicar.",
+      "Está incorreta: divide x por k (6 / 250), em vez de multiplicar."
+    ],
+    "nursingApplication": "O cálculo de forças elásticas é útil para escolher a mola de um dispositivo de apoio com a rigidez adequada ao utente."
+  },
+  {
+    "id": 2371,
+    "topicId": 2,
+    "question": "Uma mola com k = 600 N/m é puxada por uma força de 30 N, dentro do limite de proporcionalidade. Qual é o alongamento?",
+    "options": [
+      "20 m",
+      "1,8 × 10⁴ m",
+      "5,0 cm",
+      "0,50 cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "x = F / k = 30 / 600 = 0,050 m = 5,0 cm.",
+    "distractorAnalysis": [
+      "Está incorreta: divide k por F (600 / 30), em vez de F / k.",
+      "Está incorreta: multiplica F por k, em vez de dividir.",
+      "Está incorreta: calcula 0,050 m corretamente mas converte-o em 0,50 cm, em vez de 5,0 cm."
+    ],
+    "nursingApplication": "Este tipo de cálculo ajuda a prever o alongamento de uma banda ou mola usada em exercícios de reabilitação sob uma dada carga."
+  },
+  {
+    "id": 2372,
+    "topicId": 2,
+    "question": "Uma força de 800 N atua sobre uma secção de 2 cm². Qual é a tensão mecânica?",
+    "options": [
+      "4 × 10⁴ Pa",
+      "4 × 10⁶ Pa",
+      "4 × 10⁸ Pa",
+      "0,16 Pa"
+    ],
+    "correctIndex": 1,
+    "explanation": "σ = F / S, com S = 2 cm² = 2 × 10⁻⁴ m². Logo σ = 800 / (2 × 10⁻⁴) = 4 × 10⁶ Pa.",
+    "distractorAnalysis": [
+      "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 4 × 10⁴ Pa.",
+      "Está incorreta: converte 1 cm² como 10⁻⁶ m², o que dá 4 × 10⁸ Pa.",
+      "Está incorreta: multiplica a força pela área (800 × 2 × 10⁻⁴), em vez de dividir."
+    ],
+    "nursingApplication": "Uma agulha de pequena secção concentra a força numa área muito reduzida, o que explica a tensão elevada na pele durante uma punção."
+  },
+  {
+    "id": 2373,
+    "topicId": 2,
+    "question": "Um material sofre uma tensão de 3,0 × 10⁶ Pa e uma deformação relativa de 0,0020, no regime elástico. Qual é o seu módulo de Young?",
+    "options": [
+      "6,0 × 10³ Pa",
+      "6,7 × 10⁻¹⁰ Pa",
+      "1,5 × 10⁹ Pa",
+      "1,5 × 10⁶ Pa"
+    ],
+    "correctIndex": 2,
+    "explanation": "E = σ / ε = 3,0 × 10⁶ / 0,0020 = 1,5 × 10⁹ Pa.",
+    "distractorAnalysis": [
+      "Está incorreta: multiplica a tensão pela deformação (σ · ε), em vez de dividir.",
+      "Está incorreta: divide a deformação pela tensão (ε / σ), em vez de σ / ε.",
+      "Está incorreta: usa ε = 2,0 em vez de 0,0020, enganando-se na vírgula."
+    ],
+    "nursingApplication": "Calcular E a partir de um ensaio permite comparar tecidos, como o tendão e o ligamento, quanto à sua rigidez."
+  },
+  {
+    "id": 2374,
+    "topicId": 2,
+    "question": "Um tecido com E = 1,0 × 10⁹ Pa e secção de 3,0 cm² sofre uma deformação relativa de 0,010, no regime elástico. Qual é a força aplicada?",
+    "options": [
+      "3,0 × 10⁵ N",
+      "3,0 × 10³ N",
+      "3,0 × 10⁷ N",
+      "3,3 × 10¹⁰ N"
+    ],
+    "correctIndex": 1,
+    "explanation": "σ = E · ε = 1,0 × 10⁹ × 0,010 = 1,0 × 10⁷ Pa; F = σ · S = 1,0 × 10⁷ × 3,0 × 10⁻⁴ = 3,0 × 10³ N.",
+    "distractorAnalysis": [
+      "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 3,0 × 10⁵ N.",
+      "Está incorreta: usa a área como 3,0 m², esquecendo-se de converter cm² em m².",
+      "Está incorreta: divide a tensão pela área (σ / S), em vez de multiplicar."
+    ],
+    "nursingApplication": "Este cálculo mostra que um tecido rico em colagénio, como um ligamento ou um tendão, suporta forças de milhares de newtons com deformações de apenas 1 %."
+  },
+  {
+    "id": 2375,
+    "topicId": 2,
+    "question": "Um ligamento de 4,0 cm alonga 0,2 cm e tem E = 2,0 × 10⁷ Pa, no regime elástico. Qual é a tensão aplicada?",
+    "options": [
+      "1,0 × 10⁶ Pa",
+      "4,0 × 10⁸ Pa",
+      "1,0 × 10⁷ Pa",
+      "1,0 × 10⁵ Pa"
+    ],
+    "correctIndex": 0,
+    "explanation": "ε = ΔL / L0 = 0,2 / 4,0 = 0,05; σ = E · ε = 2,0 × 10⁷ × 0,05 = 1,0 × 10⁶ Pa.",
+    "distractorAnalysis": [
+      "Está incorreta: divide E por ε (E / ε), em vez de multiplicar.",
+      "Está incorreta: mistura unidades no quociente, usando ΔL em mm (2 mm) e L0 em cm (4,0), o que dá ε = 0,5.",
+      "Está incorreta: mistura unidades no quociente, usando ΔL em cm (0,2) e L0 em mm (40 mm), o que dá ε = 5 × 10⁻³."
+    ],
+    "nursingApplication": "Estes valores ajudam a compreender que, numa entorse, o ligamento pode ser alongado para lá do regime elástico e ficar lesionado, o que o enfermeiro tem em conta ao orientar a recuperação do utente."
+  },
+  {
+    "id": 2376,
+    "topicId": 2,
+    "question": "Uma carga de 15 kg está suspensa de uma mola com k = 490 N/m, dentro do limite de proporcionalidade (g = 9,8 m/s²). Qual é o alongamento da mola?",
+    "options": [
+      "3,1 cm",
+      "0,30 m",
+      "3,3 m",
+      "7,2 × 10⁴ m"
+    ],
+    "correctIndex": 1,
+    "explanation": "P = m · g = 15 × 9,8 = 147 N; x = F / k = 147 / 490 = 0,30 m.",
+    "distractorAnalysis": [
+      "Está incorreta: usa a massa (15 kg) em vez do peso (147 N), esquecendo-se de multiplicar por g.",
+      "Está incorreta: divide k pela força (490 / 147), em vez de F / k.",
+      "Está incorreta: multiplica a força por k, em vez de dividir."
+    ],
+    "nursingApplication": "O mesmo princípio é usado nos dinamómetros e balanças de mola suspensas, em que o alongamento da mola indica o peso da carga."
+  },
+  {
+    "id": 2377,
+    "topicId": 2,
+    "question": "Uma mola alonga 2,0 cm sob uma força de 10 N. Qual será o alongamento sob 25 N, dentro do limite de proporcionalidade?",
+    "options": [
+      "0,80 cm",
+      "12,5 cm",
+      "17 cm",
+      "5,0 cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Como F é proporcional a x, x₂ = x₁ · (F₂ / F₁) = 2,0 × (25 / 10) = 5,0 cm.",
+    "distractorAnalysis": [
+      "Está incorreta: inverte a proporção (2,0 × 10 / 25), em vez de multiplicar pela razão 25 / 10.",
+      "Está incorreta: divide 25 por 2,0, em vez de usar a proporcionalidade entre F e x.",
+      "Está incorreta: soma a diferença de forças (15) ao alongamento inicial, em vez de usar a proporcionalidade."
+    ],
+    "nursingApplication": "A proporcionalidade permite ao enfermeiro prever como varia o alongamento de um elástico de exercício quando o utente aumenta a força."
+  },
+  {
+    "id": 2378,
+    "topicId": 2,
+    "question": "O módulo de Young do osso cortical é cerca de 18 GPa. A quanto corresponde, em Pa?",
+    "options": [
+      "1,8 × 10¹⁰ Pa",
+      "1,8 × 10⁷ Pa",
+      "1,8 × 10¹³ Pa",
+      "1,8 × 10⁻⁸ Pa"
+    ],
+    "correctIndex": 0,
+    "explanation": "1 GPa = 10⁹ Pa, logo 18 GPa = 18 × 10⁹ Pa = 1,8 × 10¹⁰ Pa.",
+    "distractorAnalysis": [
+      "Está incorreta: confunde GPa com MPa (10⁶), em vez de 10⁹.",
+      "Está incorreta: toma o prefixo G como 10¹², em vez de 10⁹.",
+      "Está incorreta: inverte o sinal do expoente ao converter (18 × 10⁻⁹ Pa = 1,8 × 10⁻⁸ Pa)."
+    ],
+    "nursingApplication": "Converter prefixos corretamente evita erros ao comparar o módulo de Young do osso com o de tecidos moles em tabelas."
+  },
+  {
+    "id": 2379,
+    "topicId": 2,
+    "question": "O osso cortical suporta cerca de 200 MPa em compressão. Qual é a força máxima de compressão numa secção de 3 cm²?",
+    "options": [
+      "6 × 10⁶ N",
+      "6 × 10² N",
+      "6,7 × 10¹¹ N",
+      "6 × 10⁴ N"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = σ · S = 200 × 10⁶ × 3 × 10⁻⁴ = 6 × 10⁴ N.",
+    "distractorAnalysis": [
+      "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 6 × 10⁶ N.",
+      "Está incorreta: converte 1 cm² como 10⁻⁶ m², o que dá 6 × 10² N.",
+      "Está incorreta: divide a tensão pela área (σ / S), em vez de multiplicar."
+    ],
+    "nursingApplication": "Estes valores indicam que um osso normal suporta com ampla margem o peso do corpo, e justificam a preocupação quando a secção óssea diminui, como na osteoporose."
+  },
+  {
+    "id": 2380,
+    "topicId": 2,
+    "question": "Em que condições se pode tratar o osso como sólido de Hooke?",
+    "options": [
+      "Para qualquer valor de tensão, até à fratura do osso",
+      "Só depois de ocorrer uma fratura do osso, nunca antes",
+      "Apenas em tração, nunca quando o osso é comprimido",
+      "Se a tensão for inferior ao limite de proporcionalidade"
+    ],
+    "correctIndex": 3,
+    "explanation": "A lei de Hooke só descreve o osso enquanto a tensão não ultrapassa o limite de proporcionalidade.",
+    "distractorAnalysis": [
+      "Está incorreta: acima do limite de proporcionalidade a relação entre tensão e deformação deixa de ser linear.",
+      "Está incorreta: o comportamento de Hooke aplica-se antes da fratura, enquanto a tensão é baixa, e não depois dela.",
+      "Está incorreta: a lei de Hooke aplica-se tanto à tração como à compressão, dentro do limite de proporcionalidade."
+    ],
+    "nursingApplication": "Acima desse limite, cargas repetidas podem causar microlesões no osso, o que ajuda a perceber as fraturas de stress em pessoas sujeitas a marchas prolongadas."
+  },
+  {
+    "id": 2381,
+    "topicId": 2,
+    "question": "Porque se diz que o osso é um material heterogéneo?",
+    "options": [
+      "Porque tem vários componentes, como a fase mineral e o colagénio",
+      "Porque tem as mesmas propriedades em todas as direções",
+      "Porque é constituído apenas por hidroxiapatite cristalina",
+      "Porque é constituído apenas por osso compacto, sem cavidades"
+    ],
+    "correctIndex": 0,
+    "explanation": "O osso é heterogéneo porque tem vários componentes (mineral, colagénio e outros) e é também anisotrópico e poroso.",
+    "distractorAnalysis": [
+      "Está incorreta: ter as mesmas propriedades em todas as direções é a isotropia, e o osso é anisotrópico.",
+      "Está incorreta: o osso inclui também colagénio tipo I e outros componentes, para além da hidroxiapatite.",
+      "Está incorreta: o osso inclui osso esponjoso, cavidades e vasos, para além de osso compacto."
+    ],
+    "nursingApplication": "A heterogeneidade explica porque duas zonas do mesmo osso, uma compacta e outra esponjosa, suportam cargas diferentes."
+  },
+  {
+    "id": 2382,
+    "topicId": 2,
+    "question": "O que ocupa as cavidades do osso poroso e que vantagem estrutural isso traz?",
+    "options": [
+      "Medula óssea e vasos, o que torna o osso mais leve",
+      "Hidroxiapatite compacta, o que aumenta a rigidez",
+      "Ar, o que torna o osso facilmente compressível",
+      "Cartilagem, o que o torna mais rígido"
+    ],
+    "correctIndex": 0,
+    "explanation": "As cavidades estão preenchidas por medula óssea e vasos, o que torna o osso leve sem perder a resistência necessária.",
+    "distractorAnalysis": [
+      "Está incorreta: as cavidades não estão preenchidas por hidroxiapatite compacta; contêm medula e vasos.",
+      "Está incorreta: as cavidades do osso estão ocupadas por medula óssea e vasos, e não por ar.",
+      "Está incorreta: a cartilagem não ocupa as cavidades do osso e não confere rigidez adicional."
+    ],
+    "nursingApplication": "A presença de vasos e medula no osso é a razão pela qual as fraturas se acompanham de hemorragia, que o enfermeiro vigia no utente."
+  },
+  {
+    "id": 2383,
+    "topicId": 2,
+    "question": "Uma vértebra lombar é um osso irregular. Que organização estrutural apresenta?",
+    "options": [
+      "Osso esponjoso revestido por osso compacto",
+      "Um tubo de osso compacto com cavidade medular",
+      "Osso esponjoso sem qualquer revestimento de osso compacto",
+      "Osso compacto maciço, sem osso esponjoso"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os ossos curtos e irregulares, como as vértebras, têm osso esponjoso por dentro e osso compacto por fora.",
+    "distractorAnalysis": [
+      "Está incorreta: essa descrição corresponde à diáfise dos ossos longos.",
+      "Está incorreta: os ossos curtos e irregulares têm uma camada exterior de osso compacto a revestir o esponjoso.",
+      "Está incorreta: os ossos curtos e irregulares têm um interior esponjoso."
+    ],
+    "nursingApplication": "Como o corpo vertebral é sobretudo esponjoso, é muito afetado pela perda de trabéculas na osteoporose, o que explica a frequência de fraturas vertebrais por compressão em utentes idosos."
+  },
+  {
+    "id": 2384,
+    "topicId": 2,
+    "question": "Num gráfico de tensão em função da deformação, como se representa um sólido indeformável?",
+    "options": [
+      "Por uma reta oblíqua que passa pela origem do gráfico",
+      "Por uma reta horizontal acima de uma tensão limiar",
+      "Por uma curva que sobe até um máximo e depois desce",
+      "Por um segmento sobre o eixo da tensão, sem deformação"
+    ],
+    "correctIndex": 3,
+    "explanation": "Num sólido indeformável a deformação é nula seja qual for a tensão, pelo que o gráfico se sobrepõe ao eixo da tensão.",
+    "distractorAnalysis": [
+      "Está incorreta: essa reta representa um sólido de Hooke dentro do limite de proporcionalidade.",
+      "Está incorreta: essa representação corresponde a um corpo plástico, que se deforma sob tensão limiar.",
+      "Está incorreta: um sólido indeformável não se deforma, pelo que o gráfico não é uma curva com deformação."
+    ],
+    "nursingApplication": "Reconhecer as formas dos gráficos σ(ε) ajuda a interpretar resultados de ensaios de materiais usados em dispositivos médicos."
+  },
+  {
+    "id": 2385,
+    "topicId": 2,
+    "question": "Sob a mesma tensão de 4 MPa, quantas vezes mais se deforma um tendão (E ≈ 1 × 10⁹ Pa) do que o osso (E ≈ 2 × 10¹⁰ Pa)?",
+    "options": [
+      "2 vezes mais",
+      "200 vezes mais",
+      "20 vezes mais",
+      "20 vezes menos"
+    ],
+    "correctIndex": 2,
+    "explanation": "ε = σ / E, logo ε_tendão / ε_osso = E_osso / E_tendão = 2 × 10¹⁰ / 1 × 10⁹ = 20.",
+    "distractorAnalysis": [
+      "Está incorreta: divide 2 × 10¹⁰ por 1 × 10⁹ e obtém 2, esquecendo-se da diferença entre as potências de 10.",
+      "Está incorreta: interpreta 10¹⁰ / 10⁹ como 10², obtendo 200.",
+      "Está incorreta: inverte a razão: o tendão tem E menor e, por isso, deforma-se mais, e não menos."
+    ],
+    "nursingApplication": "Esta diferença explica porque, sob a mesma tensão, o tendão se alonga bastante mais do que o osso e consegue armazenar energia elástica durante a marcha."
+  },
+  {
+    "id": 2386,
+    "topicId": 2,
+    "question": "Substituindo σ = F / S e ε = ΔL / L0 em σ = E · ε, qual é a expressão da constante elástica k da barra?",
+    "options": [
+      "k = E · L0 / S",
+      "k = E · S / L0",
+      "k = E / (S · L0)",
+      "k = S · L0 / E"
+    ],
+    "correctIndex": 1,
+    "explanation": "De F / S = E · ΔL / L0 resulta F = (E · S / L0) · ΔL, logo k = E · S / L0.",
+    "distractorAnalysis": [
+      "Está incorreta: troca S e L0: k é proporcional à secção S e inversamente proporcional ao comprimento L0.",
+      "Está incorreta: k é diretamente proporcional a S, e não inversamente proporcional.",
+      "Está incorreta: k é diretamente proporcional ao módulo de Young E, e não inversamente."
+    ],
+    "nursingApplication": "Esta expressão mostra porque um tendão curto e espesso é mais rígido do que um longo e fino do mesmo material."
+  },
+  {
+    "id": 2387,
+    "topicId": 2,
+    "question": "Uma mola tem k = 0,50 N/cm. Qual é o valor de k em N/m?",
+    "options": [
+      "0,0050 N/m",
+      "0,50 N/m",
+      "50 N/m",
+      "5,0 × 10³ N/m"
+    ],
+    "correctIndex": 2,
+    "explanation": "Como 1 cm = 0,01 m, 1 N/cm = 100 N/m; logo 0,50 N/cm = 50 N/m.",
+    "distractorAnalysis": [
+      "Está incorreta: divide por 100 em vez de multiplicar, ao converter cm em m.",
+      "Está incorreta: não converte a unidade: 0,50 N/cm não é igual a 0,50 N/m.",
+      "Está incorreta: multiplica por 10⁴, em vez de 10², na conversão."
+    ],
+    "nursingApplication": "Escalas e dinamómetros de uso clínico indicam por vezes a rigidez em N/cm, e é preciso converter para N/m nos cálculos."
+  },
+  {
+    "id": 2388,
+    "topicId": 2,
+    "question": "Duas ligaduras elásticas têm o mesmo comprimento. A ligadura A tem constante elástica maior do que a B. Esticadas ambas 5 cm, qual exerce maior força?",
+    "options": [
+      "A ligadura A",
+      "A ligadura B",
+      "Exercem a mesma força",
+      "Depende só do comprimento inicial"
+    ],
+    "correctIndex": 0,
+    "explanation": "Como F = k · x, com x igual, a ligadura com maior k exerce maior força.",
+    "distractorAnalysis": [
+      "Está incorreta: com o mesmo alongamento, F = k · x é maior para o maior k, que é o da A.",
+      "Está incorreta: forças iguais exigiriam constantes elásticas iguais, e as ligaduras têm k diferentes.",
+      "Está incorreta: a força elástica depende de k e do alongamento, e não apenas do comprimento inicial."
+    ],
+    "nursingApplication": "Esta ideia é a base da escolha entre ligaduras elásticas de compressão fraca ou forte, conforme o objetivo terapêutico definido para o utente."
+  },
+  {
+    "id": 2389,
+    "topicId": 2,
+    "question": "Se o alongamento de uma ligadura elástica duplicar, dentro do limite de proporcionalidade, o que acontece à força que ela exerce?",
+    "options": [
+      "Quadruplica",
+      "Duplica",
+      "Mantém-se",
+      "Reduz-se a metade"
+    ],
+    "correctIndex": 1,
+    "explanation": "Pela lei de Hooke, F é proporcional a x; duplicando x, duplica F.",
+    "distractorAnalysis": [
+      "Está incorreta: F = k · x é linear em x, e não quadrática, pelo que duplicar x apenas duplica F.",
+      "Está incorreta: a força elástica aumenta com o alongamento e não se mantém constante.",
+      "Está incorreta: a força elástica aumenta, e não diminui, quando o alongamento aumenta."
+    ],
+    "nursingApplication": "Por isso, uma ligadura aplicada com tensão excessiva exerce uma compressão desnecessariamente elevada sobre o membro do utente."
+  },
+  {
+    "id": 2390,
+    "topicId": 2,
+    "question": "Uma carga de 4,0 kg está suspensa de um fio de secção 2,0 mm² (g = 9,8 m/s²). Qual é a tensão no fio?",
+    "options": [
+      "2,0 × 10⁶ Pa",
+      "2,0 × 10⁴ Pa",
+      "2,0 × 10¹⁰ Pa",
+      "2,0 × 10⁷ Pa"
+    ],
+    "correctIndex": 3,
+    "explanation": "P = m · g = 4,0 × 9,8 = 39,2 N; S = 2,0 mm² = 2,0 × 10⁻⁶ m²; σ = 39,2 / (2,0 × 10⁻⁶) ≈ 2,0 × 10⁷ Pa.",
+    "distractorAnalysis": [
+      "Está incorreta: usa a massa (4,0 kg) em vez do peso (39,2 N), esquecendo-se de multiplicar por g.",
+      "Está incorreta: converte 1 mm² como 10⁻³ m², o que dá 2,0 × 10⁴ Pa.",
+      "Está incorreta: converte 1 mm² como 10⁻⁹ m², o que dá 2,0 × 10¹⁰ Pa."
+    ],
+    "nursingApplication": "O cálculo é análogo ao de um peso suspenso numa tração ortopédica: a tensão no cabo depende da carga e da secção do cabo."
+  },
+  {
+    "id": 2391,
+    "topicId": 2,
+    "question": "Quantas vezes é o osso (E ≈ 2 × 10¹⁰ Pa) mais rígido do que uma borracha com E ≈ 1 × 10⁷ Pa?",
+    "options": [
+      "200 vezes",
+      "20 000 vezes",
+      "2000 vezes",
+      "É 2000 vezes menos rígido"
+    ],
+    "correctIndex": 2,
+    "explanation": "A razão é 2 × 10¹⁰ / 1 × 10⁷ = 2 × 10³ = 2000: quanto maior o módulo de Young, maior a rigidez.",
+    "distractorAnalysis": [
+      "Está incorreta: perde uma potência de 10 ao dividir 2 × 10¹⁰ por 1 × 10⁷.",
+      "Está incorreta: ganha uma potência de 10 ao dividir 2 × 10¹⁰ por 1 × 10⁷.",
+      "Está incorreta: inverte a razão: o osso tem o módulo de Young maior, pelo que é mais rígido e não menos."
+    ],
+    "nursingApplication": "Esta diferença enorme de rigidez explica o comportamento muito diferente dos tecidos duros e dos tecidos moles quando sujeitos a cargas."
+  },
+  {
+    "id": 2392,
+    "topicId": 2,
+    "question": "Argila, plasticina e papel de alumínio amachucado têm em comum que tipo de comportamento?",
+    "options": [
+      "Deformam-se proporcionalmente à tensão e recuperam a forma",
+      "Escoam sob qualquer tensão aplicada e não recuperam a forma",
+      "Recuperam lentamente a forma depois de retirada a tensão",
+      "Só se deformam acima de uma tensão limiar e ficam deformados"
+    ],
+    "correctIndex": 3,
+    "explanation": "Os corpos plásticos só se deformam a partir de uma tensão limiar e conservam a deformação depois de a tensão cessar.",
+    "distractorAnalysis": [
+      "Está incorreta: essa descrição corresponde a um sólido de Hooke, e não a corpos plásticos.",
+      "Está incorreta: essa descrição corresponde a um corpo viscoso, que flui sob qualquer tensão.",
+      "Está incorreta: essa descrição corresponde a um corpo viscoelástico, com recuperação retardada."
+    ],
+    "nursingApplication": "A deformação permanente de um material plástico é aproveitada, por exemplo, na modelação de talas termoplásticas para imobilizar um dedo."
+  },
+  {
+    "id": 2393,
+    "topicId": 2,
+    "question": "Num corpo viscoso, a deformação é proporcional à tensão e ao tempo de aplicação. Se a tensão e o tempo duplicarem, o que acontece à deformação?",
+    "options": [
+      "Duplica",
+      "Quadruplica",
+      "Mantém-se",
+      "Octuplica"
+    ],
+    "correctIndex": 1,
+    "explanation": "Como a deformação é proporcional ao produto da tensão pelo tempo, duplicar ambos multiplica a deformação por 2 × 2 = 4.",
+    "distractorAnalysis": [
+      "Está incorreta: duplicar só um dos fatores duplicaria a deformação, mas aqui duplicam ambos.",
+      "Está incorreta: a deformação aumenta com a tensão e com o tempo, e não se mantém.",
+      "Está incorreta: a deformação é proporcional ao produto de dois fatores, e não de três, pelo que o fator é 2 × 2 = 4."
+    ],
+    "nursingApplication": "A dependência do tempo, também presente nos tecidos moles viscoelásticos, ajuda a perceber porque a duração da pressão de interface sobre o sacro, e não só a sua intensidade, influencia o risco de lesão por pressão."
+  },
+  {
+    "id": 2394,
+    "topicId": 2,
+    "question": "Num sólido de Hooke, o alongamento depende do tempo durante o qual a força é aplicada?",
+    "options": [
+      "Sim, aumenta progressivamente com o tempo de aplicação da força",
+      "Sim, diminui progressivamente com o tempo de aplicação da força",
+      "Não, depende só da intensidade da força, dentro do limite",
+      "Sim, depende só do tempo e não da força aplicada ao corpo"
+    ],
+    "correctIndex": 2,
+    "explanation": "Num sólido de Hooke, a deformação é proporcional à tensão e não depende do tempo de aplicação.",
+    "distractorAnalysis": [
+      "Está incorreta: o aumento progressivo com o tempo é característico de corpos viscosos e viscoelásticos, e não de sólidos de Hooke.",
+      "Está incorreta: uma diminuição progressiva não é característica de um sólido de Hooke, cujo alongamento é constante.",
+      "Está incorreta: o alongamento depende da força aplicada (x = F / k), e não só do tempo."
+    ],
+    "nursingApplication": "Esta independência do tempo distingue uma mola de um tecido biológico, onde o tempo de carga altera a deformação."
+  },
+  {
+    "id": 2395,
+    "topicId": 2,
+    "question": "Qual dos pares seguintes contém apenas exemplos próximos de sólidos de Hooke?",
+    "options": [
+      "Mola e fio de nylon",
+      "Água e mel",
+      "Plasticina e argila",
+      "Esponja e cartilagem"
+    ],
+    "correctIndex": 0,
+    "explanation": "A mola, o elástico de borracha e o fio de nylon aproximam-se de sólidos de Hooke, dentro do limite de proporcionalidade.",
+    "distractorAnalysis": [
+      "Está incorreta: a água e o mel são corpos viscosos.",
+      "Está incorreta: a plasticina e a argila são corpos plásticos.",
+      "Está incorreta: a esponja e a cartilagem são corpos viscoelásticos."
+    ],
+    "nursingApplication": "Estes materiais são úteis no fabrico de dispositivos de reabilitação com resposta previsível, como as bandas elásticas de exercício."
+  },
+  {
+    "id": 2396,
+    "topicId": 2,
+    "question": "Em que estruturas se encontra o músculo liso?",
+    "options": [
+      "Nos músculos ligados aos ossos, como o bíceps",
+      "Na parede do coração (miocárdio)",
+      "Nos músculos da mastigação, como o masséter",
+      "Nas paredes de órgãos ocos e de sistemas tubulares"
+    ],
+    "correctIndex": 3,
+    "explanation": "O músculo liso reveste as paredes de órgãos ocos e de sistemas tubulares, com contrações lentas, sustentadas e ondulatórias.",
+    "distractorAnalysis": [
+      "Está incorreta: os músculos ligados aos ossos, como o bíceps, são de músculo estriado esquelético.",
+      "Está incorreta: o miocárdio é músculo estriado cardíaco.",
+      "Está incorreta: o masséter é um músculo estriado esquelético."
+    ],
+    "nursingApplication": "As contrações ondulatórias do músculo liso intestinal (peristaltismo) produzem os ruídos hidroaéreos que o enfermeiro ausculta ao avaliar o trânsito intestinal de um utente."
+  },
+  {
+    "id": 2397,
+    "topicId": 2,
+    "question": "Em geral, como é que um osso longo suporta a carga aplicada ao longo do seu eixo, em comparação com uma carga perpendicular ao eixo?",
+    "options": [
+      "Suporta melhor a carga ao longo do eixo",
+      "Suporta melhor a carga perpendicular ao eixo",
+      "Suporta ambas da mesma forma",
+      "Só suporta cargas de tração, nunca de compressão"
+    ],
+    "correctIndex": 0,
+    "explanation": "O osso é anisotrópico: em geral, resiste melhor à carga ao longo do eixo do que a cargas transversais.",
+    "distractorAnalysis": [
+      "Está incorreta: o osso é anisotrópico e, em geral, resiste menos a cargas transversais do que a cargas longitudinais.",
+      "Está incorreta: por ser anisotrópico, o osso responde de modo diferente conforme a direção da carga.",
+      "Está incorreta: o osso suporta tanto tração como compressão, e até resiste mais à compressão."
+    ],
+    "nursingApplication": "Por isso, os impactos laterais, como uma queda de lado sobre a anca, são especialmente perigosos para o osso do idoso."
+  },
+  {
+    "id": 2398,
+    "topicId": 2,
+    "question": "Qual das associações entre tipo de deformação e forças aplicadas está correta?",
+    "options": [
+      "Flexão: duas forças divergentes nas extremidades, ao longo do eixo",
+      "Cisalhamento: duas forças convergentes nas extremidades, ao longo do eixo",
+      "Torção: dois binários de sentidos opostos nas extremidades, em torno do eixo",
+      "Compressão: forças opostas, tangenciais a superfícies paralelas"
+    ],
+    "correctIndex": 2,
+    "explanation": "Na torção, dois binários de sentidos opostos atuam nas extremidades, em torno do eixo, e as camadas rodam umas em relação às outras.",
+    "distractorAnalysis": [
+      "Está incorreta: forças divergentes ao longo do eixo correspondem à tração; a flexão resulta de uma força perpendicular ao eixo, com apoios nas extremidades.",
+      "Está incorreta: forças convergentes ao longo do eixo correspondem à compressão, e não ao cisalhamento.",
+      "Está incorreta: forças opostas e tangenciais a superfícies paralelas correspondem ao cisalhamento."
+    ],
+    "nursingApplication": "Saber associar cada tipo de deformação às forças que o causam ajuda a interpretar o mecanismo de lesão descrito na admissão de um utente."
+  },
+  {
+    "id": 2399,
+    "topicId": 2,
+    "question": "Qual das afirmações sobre a rigidez de um material está correta?",
+    "options": [
+      "Quanto maior o módulo de Young, maior a resistência à rotura",
+      "Quanto maior o módulo de Young, menor a deformação para a mesma tensão",
+      "A rigidez depende só das dimensões do corpo",
+      "Quanto maior o módulo de Young, maior a deformação para a mesma tensão"
+    ],
+    "correctIndex": 1,
+    "explanation": "A rigidez é a capacidade de um corpo se opor à deformação elástica: quanto maior E, menor ε para a mesma tensão.",
+    "distractorAnalysis": [
+      "Está incorreta: o módulo de Young mede a rigidez e não indica a resistência à rotura.",
+      "Está incorreta: a rigidez intrínseca do material depende do módulo de Young; as dimensões afetam apenas a constante elástica k.",
+      "Está incorreta: ε = σ / E: um maior E dá uma menor deformação para a mesma tensão."
+    ],
+    "nursingApplication": "Esta noção ajuda a escolher dispositivos mais rígidos, como talas e coletes, quando se pretende limitar o movimento de um segmento do corpo."
+  },
+  {
+    "id": 2400,
+    "topicId": 2,
+    "question": "Qual das unidades seguintes NÃO pode ser usada para exprimir a tensão mecânica?",
+    "options": [
+      "Pa",
+      "N/m²",
+      "N/m",
+      "MPa"
+    ],
+    "correctIndex": 2,
+    "explanation": "A tensão é força por unidade de área (Pa = N/m²); N/m é a unidade da constante elástica k.",
+    "distractorAnalysis": [
+      "Está incorreta: o pascal é a unidade SI da tensão mecânica e pode ser usado.",
+      "Está incorreta: N/m² é equivalente ao pascal e pode ser usado.",
+      "Está incorreta: o megapascal é um múltiplo do pascal e pode ser usado."
+    ],
+    "nursingApplication": "Saber que 1 Pa = 1 N/m² ajuda a interpretar valores em kPa indicados nas fichas técnicas de dispositivos, como manómetros ou colchões de pressão alternada."
   }
 ];
