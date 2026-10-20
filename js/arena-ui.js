@@ -134,6 +134,7 @@ class ArenaUI {
     this.initDOMElements();
     this.initEventListeners();
     this.initEngineListeners();
+    this.net.on('connection_status', (s) => this.showConnectionBanner(s.connected));
     this.updateHostConfigCustomBadge();
   }
 
@@ -371,6 +372,37 @@ class ArenaUI {
       this.teacherPinError.classList.remove('hidden');
       this.teacherPinError.style.display = 'flex';
     }
+  }
+
+  // Retoma automaticamente a equipa se o telemóvel recarregou a página a meio do jogo.
+  // Devolve true se retomou (não retoma se o link/QR aponta para outra sala).
+  tryResumeClient(pinFromUrl) {
+    const saved = arenaLoadClientSession();
+    if (!saved) return false;
+    if (pinFromUrl && pinFromUrl.toUpperCase() !== saved.roomPin) return false;
+    this.selectedAvatar = saved.avatar || this.selectedAvatar;
+    this.engine.joinClientSession({
+      roomPin: saved.roomPin,
+      teamName: saved.teamName,
+      avatar: this.selectedAvatar
+    });
+    return true;
+  }
+
+  // Aviso discreto no telemóvel enquanto a ligação está a ser recuperada
+  showConnectionBanner(isUp) {
+    if (this.engine.role !== 'client') return;
+    let banner = document.getElementById('arena-connection-banner');
+    if (!banner) {
+      banner = document.createElement('div');
+      banner.id = 'arena-connection-banner';
+      banner.setAttribute('role', 'status');
+      banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:9999;padding:0.5rem 1rem;text-align:center;font-weight:700;font-size:0.9rem;background:var(--color-warning, #f59e0b);color:#1f2937;';
+      banner.textContent = '📡 Sem ligação. A reconectar... a vossa equipa continua na sala.';
+      document.body.appendChild(banner);
+    }
+    banner.classList.toggle('hidden', !!isUp);
+    banner.style.display = isUp ? 'none' : 'block';
   }
 
   showScreen(screenId) {
@@ -1129,8 +1161,13 @@ class ArenaUI {
       this.showScreen('clientLobby');
     });
 
+    this.engine.onUI('client_room_full', (data) => {
+      this.showScreen('clientJoin');
+      alert(`A sala já tem o máximo de ${data.maxTeams} equipas. Peçam ao docente para libertar um lugar ou criar outra sala.`);
+    });
+
     this.engine.onUI('client_question_ready', (data) => {
-      this.myCurrentVote = null;
+      this.myCurrentVote = Number.isInteger(data.myVote) ? data.myVote : null;
       if (this.clientVotingTeamBadge) this.clientVotingTeamBadge.textContent = `${this.net.avatar} ${this.net.teamName}`;
       if (this.clientVotingQBadge) this.clientVotingQBadge.textContent = data.id ? `P${data.questionIndex}/${data.totalQuestions} • ${questionLabel(data.id)}` : `P${data.questionIndex}/${data.totalQuestions}`;
       if (this.clientVotingTimer) this.clientVotingTimer.textContent = `⏱️ ${data.timeRemaining}s`;
@@ -1141,7 +1178,7 @@ class ArenaUI {
       const letters = ['A', 'B', 'C', 'D'];
       this.tactileBtns.forEach((btn, idx) => {
         if (btn) {
-          btn.classList.remove('selected');
+          btn.classList.toggle('selected', idx === this.myCurrentVote);
           const labelSpan = btn.querySelector('.btn-tactile-label');
           if (labelSpan) {
             // Texto completo da opção no telemóvel, sem truncagem
@@ -1151,8 +1188,14 @@ class ArenaUI {
       });
 
       if (this.clientVoteStatus) {
-        this.clientVoteStatus.innerHTML = `👆 Toquem na opção consensual da vossa equipa`;
-        this.clientVoteStatus.classList.remove('voted');
+        if (this.myCurrentVote !== null) {
+          // Voto já registado antes de a ligação cair: mostrar de novo
+          this.clientVoteStatus.innerHTML = `✅ <strong>Opção ${letters[this.myCurrentVote]} registada!</strong> Podem mudar até o tempo terminar.`;
+          this.clientVoteStatus.classList.add('voted');
+        } else {
+          this.clientVoteStatus.innerHTML = `👆 Toquem na opção consensual da vossa equipa`;
+          this.clientVoteStatus.classList.remove('voted');
+        }
       }
 
       this.showScreen('clientQuestion');
@@ -1284,7 +1327,7 @@ class ArenaUI {
   }
 
   renderLobbyTeams(teams) {
-    if (this.arenaTeamsCount) this.arenaTeamsCount.textContent = teams.length;
+    if (this.arenaTeamsCount) this.arenaTeamsCount.textContent = `${teams.length}/${ARENA_MAX_TEAMS}`;
     if (this.arenaLobbyTeamsGrid) {
       this.arenaLobbyTeamsGrid.innerHTML = '';
       if (teams.length === 0) {

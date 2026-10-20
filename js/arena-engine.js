@@ -4,6 +4,8 @@
  * Placar ao Vivo, Pódio Final e Relatório de Dificuldade da Turma ("Raio-X da Aula").
  */
 
+const ARENA_MAX_TEAMS = 50;
+
 class ArenaEngine {
   constructor(network) {
     this.net = network;
@@ -21,6 +23,8 @@ class ArenaEngine {
     this.isPaused = false;
     
     // Dados das Equipas
+    this.lastSyncAt = {}; // { teamId: instante da última sincronização enviada }
+    this.questionSeq = -1; // seq da mensagem de estado da pergunta atual
     this.teams = {}; // { teamId: { teamId, teamName, avatar, score, streak, correctCount, answers: {} } }
     this.currentAnswers = {}; // { teamId: { optionIndex, timeRemaining, points, isCorrect } }
     
@@ -117,30 +121,40 @@ class ArenaEngine {
   // Listeners de Rede
   // =========================================================================
   initNetworkListeners() {
+    // Entrada de uma equipa, e também o "sinal de vida" que cada telemóvel envia de 12 em 12 s
     this.net.on('team_joined', (data) => {
-      if (this.role !== 'host') return;
-      if (!this.teams[data.teamId]) {
-        this.teams[data.teamId] = {
-          teamId: data.teamId,
-          teamName: String(data.teamName || '').slice(0, 25) || 'Equipa ' + (Object.keys(this.teams).length + 1),
-          avatar: data.avatar || '🩺',
-          score: 0,
-          streak: 0,
-          correctCount: 0,
-          answers: {}
-        };
-        this.emitUI('teams_updated', this.getTeamsList());
-        this.broadcastLobbyState();
+      if (this.role !== 'host' || !data) return;
+      const isKnown = !!this.teams[data.teamId];
+      const team = this.registerTeam(data);
+      if (!team) {
+        if (typeof data.seq === 'number') {
+          this.net.sendSyncResponse(data.teamId, { phase: 'FULL', maxTeams: ARENA_MAX_TEAMS });
+        }
+        return;
+      }
+
+      // Equipa nova, ou telemóvel com o estado desatualizado (ligação perdida, página recarregada):
+      // reenviar o estado atual para que volte ao ponto certo do jogo
+      if (typeof data.seq === 'number' && (!isKnown || data.seq !== this.net.stateSeq)) {
+        const now = Date.now();
+        if (now - (this.lastSyncAt[data.teamId] || 0) > 2500) {
+          this.lastSyncAt[data.teamId] = now;
+          this.sendSyncStateToTeam(data.teamId);
+        }
       }
     });
 
     this.net.on('answer_received', (data) => {
-      if (this.role !== 'host' || this.phase !== 'QUESTION') return;
+      if (this.role !== 'host' || this.phase !== 'QUESTION' || !data) return;
       // O anfitrião não confia nos valores enviados pelos telemóveis
       if (!Number.isInteger(data.optionIndex) || data.optionIndex < 0 || data.optionIndex > 3) return;
-      const timeRemaining = Math.min(Math.max(Number(data.timeRemaining) || 0, 0), this.timePerQuestion);
+      // Voto tardio de uma pergunta anterior (reenviado após reconexão): ignorar
+      if (typeof data.qSeq === 'number' && data.qSeq !== this.questionSeq) return;
+      // Relógio do docente: o tempo restante não vem do telemóvel (que não tem contagem decrescente)
+      const timeRemaining = Math.min(Math.max(this.timeRemaining, 0), this.timePerQuestion);
 
-      const team = this.teams[data.teamId];
+      // Se o registo de entrada se perdeu, o voto regista a equipa em vez de ser descartado
+      const team = this.teams[data.teamId] || this.registerTeam(data);
       if (team) {
         this.currentAnswers[data.teamId] = {
           optionIndex: data.optionIndex,
@@ -161,7 +175,8 @@ class ArenaEngine {
     });
 
     this.net.on('sync_requested', (data) => {
-      if (this.role !== 'host') return;
+      if (this.role !== 'host' || !data) return;
+      if (!this.registerTeam(data)) return;
       this.sendSyncStateToTeam(data.teamId);
     });
 
@@ -189,6 +204,8 @@ class ArenaEngine {
     this.timePerQuestion = timePerQuestion;
     this.currentQuestionIndex = 0;
     this.teams = {};
+    this.lastSyncAt = {};
+    this.questionSeq = -1;
     this.currentAnswers = {};
     this.questionStats = [];
     this.sessionLog = []; // uma linha por equipa e por pergunta (exportação CSV)
@@ -267,12 +284,24 @@ class ArenaEngine {
     return Object.values(this.teams).sort((a, b) => b.score - a.score);
   }
 
-  broadcastLobbyState() {
-    this.net.broadcastState({
-      phase: 'LOBBY',
-      teamsCount: Object.keys(this.teams).length,
-      teams: this.getTeamsList().map(t => ({ teamId: t.teamId, teamName: t.teamName, avatar: t.avatar }))
-    });
+  // Regista uma equipa (ou devolve a que já existe). Devolve null se a sala estiver cheia ou os dados forem inválidos.
+  registerTeam(data) {
+    const id = data && typeof data.teamId === 'string' ? data.teamId : '';
+    if (!id || id.length > 64) return null;
+    if (this.teams[id]) return this.teams[id];
+    if (Object.keys(this.teams).length >= ARENA_MAX_TEAMS) return null;
+
+    this.teams[id] = {
+      teamId: id,
+      teamName: String(data.teamName || '').slice(0, 25) || 'Equipa ' + (Object.keys(this.teams).length + 1),
+      avatar: Array.from(String(data.avatar || '')).slice(0, 6).join('') || '🩺',
+      score: 0,
+      streak: 0,
+      correctCount: 0,
+      answers: {}
+    };
+    this.emitUI('teams_updated', this.getTeamsList());
+    return this.teams[id];
   }
 
   // Iniciar a primeira pergunta
@@ -317,6 +346,7 @@ class ArenaEngine {
     };
 
     this.net.broadcastState(publicQuestionPayload);
+    this.questionSeq = this.net.stateSeq;
 
     this.emitUI('question_started', {
       questionIndex: index + 1,
@@ -560,12 +590,19 @@ class ArenaEngine {
 
   submitClientAnswer(optionIndex) {
     if (this.role !== 'client') return;
-    this.net.sendAnswer(optionIndex, this.timeRemaining);
+    this.net.sendAnswer(optionIndex);
     this.playSound('tick');
     this.emitUI('client_answer_submitted', { optionIndex });
   }
 
   handleClientStateUpdate(state) {
+    if (state.phase === 'FULL') {
+      // Sala com o número máximo de equipas: deixar de tentar entrar
+      arenaClearClientSession();
+      this.net.disconnect();
+      this.emitUI('client_room_full', { maxTeams: state.maxTeams || ARENA_MAX_TEAMS });
+      return;
+    }
     this.phase = state.phase;
 
     if (state.phase === 'LOBBY') {
@@ -578,7 +615,8 @@ class ArenaEngine {
         id: state.id,
         question: state.question,
         options: state.options,
-        timeRemaining: state.timeRemaining
+        timeRemaining: state.timeRemaining,
+        myVote: Number.isInteger(state.myVote) ? state.myVote : null
       });
     } else if (state.phase === 'REVEAL') {
       const myTeamId = this.net.teamId;
@@ -611,24 +649,28 @@ class ArenaEngine {
         winners: state.winners,
         myFinalRank: myFinalRank > 0 ? myFinalRank : null
       });
+      arenaClearClientSession(); // jogo terminado: não retomar na próxima visita
       this.playSound('fanfare');
     }
   }
 
   sendSyncStateToTeam(targetTeamId) {
-    // Envia o estado atual caso uma equipa tenha recarregado a página
-    const currentQ = this.questions[this.currentQuestionIndex];
-    this.net.sendSyncResponse(targetTeamId, {
-      phase: this.phase,
-      questionIndex: this.currentQuestionIndex + 1,
-      totalQuestions: this.questions.length,
-      question: currentQ ? currentQ.question : '',
-      options: currentQ ? currentQ.options : [],
-      timeRemaining: this.timeRemaining
-    });
+    // Reenvia a última mensagem de estado (completa) a uma equipa que perdeu a ligação ou recarregou a página
+    const last = this.net.lastState;
+    if (!last) return;
+    const payload = { ...last };
+    if (payload.phase === 'LOBBY') {
+      payload.teamsCount = Object.keys(this.teams).length;
+    } else if (payload.phase === 'QUESTION') {
+      payload.timeRemaining = Math.max(this.timeRemaining, 0);
+      const answer = this.currentAnswers[targetTeamId];
+      if (answer) payload.myVote = answer.optionIndex;
+    }
+    this.net.sendSyncResponse(targetTeamId, payload);
   }
 
   cleanup() {
+    if (this.role === 'client') arenaClearClientSession();
     clearInterval(this.timerInterval);
     this.net.disconnect();
     this.phase = 'IDLE';
