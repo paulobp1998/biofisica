@@ -109,17 +109,17 @@ const STUDY_BLOCKS = [
     title: 'Momento de uma força e alavancas',
     formulas: [
       { expr: 'M = F · b', note: 'momento (N·m); b = braço da força' },
-      { expr: 'F<sub>P</sub> · b<sub>P</sub> = F<sub>R</sub> · b<sub>R</sub>', note: 'equilíbrio de rotação (∑M = 0)' },
+      { expr: 'F<sub>P</sub> · b<sub>P</sub> = F<sub>Resis.</sub> · b<sub>R</sub>', note: 'equilíbrio de rotação (∑M = 0)' },
       { expr: 'VM = b<sub>P</sub> / b<sub>R</sub>', note: 'vantagem mecânica' }
     ],
-    example: 'Carga F<sub>R</sub> = 10 N a b<sub>R</sub> = 0,4 m do fulcro, equilibrada a b<sub>P</sub> = 0,1 m: F<sub>P</sub> = (10 × 0,4) / 0,1 = 40 N.',
+    example: 'Carga F<sub>Resis.</sub> = 10 N a b<sub>R</sub> = 0,4 m do fulcro, equilibrada a b<sub>P</sub> = 0,1 m: F<sub>P</sub> = (10 × 0,4) / 0,1 = 40 N.',
     body: `
       <ul>
         <li><strong>Momento de uma força (torque):</strong> mede a capacidade de uma força provocar rotação em torno de um eixo. O <strong>braço</strong> (b) é a distância perpendicular da linha de ação da força ao eixo. Se a linha de ação passar pelo eixo, M = 0.</li>
-        <li><strong>Alavanca:</strong> barra rígida que roda em torno de um <strong>fulcro</strong> (ponto de apoio), sob a ação de uma <strong>força potente</strong> F<sub>P</sub> (no corpo, a força muscular) e de uma <strong>força resistente</strong> F<sub>R</sub> (peso do segmento ou da carga).</li>
-        <li><strong>1.ª classe, interfixa</strong> (F<sub>P</sub> – apoio – F<sub>R</sub>): o apoio fica no meio. Ex.: articulação atlanto-occipital, onde os músculos extensores da nuca equilibram a tendência de queda da cabeça para a frente.</li>
-        <li><strong>2.ª classe, inter-resistente</strong> (apoio – F<sub>R</sub> – F<sub>P</sub>): a resistência fica no meio e b<sub>P</sub> &gt; b<sub>R</sub> (VM &gt; 1). Ex.: elevação na ponta dos pés. É um exemplo discutível, porque a tensão no tendão de Aquiles ronda 2 a 2,5 vezes o peso corporal (com uma perna): não exige «pouco esforço».</li>
-        <li><strong>3.ª classe, interpotente</strong> (apoio – F<sub>P</sub> – F<sub>R</sub>): a potência fica no meio e b<sub>P</sub> &lt; b<sub>R</sub> (VM &lt; 1). É a mais comum no corpo humano (bíceps a fletir o antebraço, com o cotovelo como fulcro): sacrifica força a favor da velocidade e da amplitude de movimento.</li>
+        <li><strong>Alavanca:</strong> barra rígida que roda em torno de um <strong>fulcro</strong> (ponto de apoio), sob a ação de uma <strong>força potente</strong> F<sub>P</sub> (no corpo, a força muscular) e de uma <strong>força resistente</strong> F<sub>Resis.</sub> (peso do segmento ou da carga).</li>
+        <li><strong>1.ª classe, interfixa</strong> (F<sub>P</sub> – apoio – F<sub>Resis.</sub>): o apoio fica no meio. Ex.: articulação atlanto-occipital, onde os músculos extensores da nuca equilibram a tendência de queda da cabeça para a frente.</li>
+        <li><strong>2.ª classe, inter-resistente</strong> (apoio – F<sub>Resis.</sub> – F<sub>P</sub>): a resistência fica no meio e b<sub>P</sub> &gt; b<sub>R</sub> (VM &gt; 1). Ex.: elevação na ponta dos pés. É um exemplo discutível, porque a tensão no tendão de Aquiles ronda 2 a 2,5 vezes o peso corporal (com uma perna): não exige «pouco esforço».</li>
+        <li><strong>3.ª classe, interpotente</strong> (apoio – F<sub>P</sub> – F<sub>Resis.</sub>): a potência fica no meio e b<sub>P</sub> &lt; b<sub>R</sub> (VM &lt; 1). É a mais comum no corpo humano (bíceps a fletir o antebraço, com o cotovelo como fulcro): sacrifica força a favor da velocidade e da amplitude de movimento.</li>
       </ul>`,
     pitfall: 'O braço é a distância perpendicular da linha de ação ao fulcro, e não o comprimento do osso. Truque para as classes: a que fica «no meio» dá o nome (1.ª apoio, 2.ª resistência, 3.ª potência).',
     nursing: 'Uma carga mantida afastada do tronco aumenta o braço da resistência e cria um momento flexor sobre a coluna lombar, que os músculos extensores têm de equilibrar. Segurar o utente ou o material junto ao corpo reduz essa sobrecarga.'
@@ -280,7 +280,7 @@ const GLOSSARY = [
   { t: 'Momento de uma força', a: ['torque', 'M = F·b'], d: 'M = F · b, em N·m: capacidade de uma força para provocar rotação em torno de um eixo.', c: 't1-alavancas' },
   { t: 'Braço da força', a: ['braço de alavanca', 'b'], d: 'Distância perpendicular da linha de ação da força ao eixo de rotação.', c: 't1-alavancas' },
   { t: 'Alavanca', a: ['fulcro', 'ponto de apoio'], d: 'Barra rígida que roda em torno de um fulcro sob ação de uma força potente e de uma força resistente.', c: 't1-alavancas' },
-  { t: 'Força potente e força resistente', a: ['F<sub>P</sub>', 'F<sub>R</sub>', 'potência', 'resistência'], d: 'F<sub>P</sub> é a força que move a alavanca (no corpo, a muscular); F<sub>R</sub> é a que se opõe (peso do segmento ou da carga).', c: 't1-alavancas' },
+  { t: 'Força potente e força resistente', a: ['F<sub>P</sub>', 'F<sub>Resis.</sub>', 'potência', 'resistência'], d: 'F<sub>P</sub> é a força que move a alavanca (no corpo, a muscular); F<sub>Resis.</sub> é a que se opõe (peso do segmento ou da carga).', c: 't1-alavancas' },
   { t: 'Vantagem mecânica', a: ['VM'], d: 'VM = b<sub>P</sub> / b<sub>R</sub>. Maior que 1 favorece a força; menor que 1 favorece a velocidade e a amplitude.', c: 't1-alavancas' },
   { t: 'Alavanca interfixa (1.ª classe)', a: ['1.ª classe', 'interfixa'], d: 'O apoio fica entre a potência e a resistência. Ex.: articulação atlanto-occipital.', c: 't1-alavancas' },
   { t: 'Alavanca inter-resistente (2.ª classe)', a: ['2.ª classe', 'inter-resistente'], d: 'A resistência fica entre o apoio e a potência (b<sub>P</sub> &gt; b<sub>R</sub>). Ex.: carrinho de mão; elevação na ponta dos pés.', c: 't1-alavancas' },
