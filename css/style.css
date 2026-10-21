@@ -4804,3 +4804,6 @@ mark {
 .study-block-body ul { padding-left: 1.4rem; margin: 0.25rem 0 0.5rem; }
 .study-block-body li { margin-bottom: 0.5rem; line-height: 1.6; }
 .study-block-body li ul { margin-top: 0.4rem; }
+
+/* Índices e expoentes de fórmulas (F<sub>P</sub>): não alteram a altura da linha */
+sub, sup { line-height: 0; }

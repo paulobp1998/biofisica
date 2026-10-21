@@ -607,7 +607,7 @@ const TOPIC_2_QUESTIONS = [
       "−20"
     ],
     "correctIndex": 1,
-    "explanation": "ΔL = L_f − L0 = 38 cm − 40 cm = −2 cm. Logo ε = ΔL / L0 = −2 / 40 = −0,05, sem unidades; o sinal negativo indica encurtamento.",
+    "explanation": "ΔL = L<sub>f</sub> − L0 = 38 cm − 40 cm = −2 cm. Logo ε = ΔL / L0 = −2 / 40 = −0,05, sem unidades; o sinal negativo indica encurtamento.",
     "distractorAnalysis": [
       "Está incorreta: não divide a variação de comprimento pelo comprimento inicial, ficando apenas com −2 cm.",
       "Está incorreta: esquece o sinal negativo, o que ignora que a barra encurtou.",
@@ -2545,7 +2545,7 @@ const TOPIC_2_QUESTIONS = [
       "Têm o mesmo módulo e sentidos opostos"
     ],
     "correctIndex": 3,
-    "explanation": "Como F = k·x e F_elástica = −k·x, a força restauradora exercida pela mola tem o mesmo módulo da força aplicada e sentido oposto, opondo-se à deformação.",
+    "explanation": "Como F = k·x e F<sub>elástica</sub> = −k·x, a força restauradora exercida pela mola tem o mesmo módulo da força aplicada e sentido oposto, opondo-se à deformação.",
     "distractorAnalysis": [
       "Está incorreta: a força restauradora opõe-se à deformação, pelo que tem sentido oposto ao da força aplicada.",
       "Está incorreta: ambas valem k·x; se a restauradora fosse maior, a mola não manteria o alongamento e voltaria a encurtar.",
@@ -3058,7 +3058,7 @@ const TOPIC_2_QUESTIONS = [
       "A artéria jovem deforma-se 16 vezes mais"
     ],
     "correctIndex": 2,
-    "explanation": "Como ε = σ / E, com σ igual, ε_jovem / ε_idoso = E_idoso / E_jovem = 4.",
+    "explanation": "Como ε = σ / E, com σ igual, ε<sub>jovem</sub> / ε<sub>idoso</sub> = E<sub>idoso</sub> / E<sub>jovem</sub> = 4.",
     "distractorAnalysis": [
       "Está incorreta: inverte a relação: como ε = σ / E, o maior módulo (idoso) dá menor deformação.",
       "Está incorreta: módulos de Young diferentes implicam deformações diferentes para a mesma tensão.",
@@ -3514,7 +3514,7 @@ const TOPIC_2_QUESTIONS = [
       "20 vezes menos"
     ],
     "correctIndex": 2,
-    "explanation": "ε = σ / E, logo ε_tendão / ε_osso = E_osso / E_tendão = 2 × 10¹⁰ / 1 × 10⁹ = 20.",
+    "explanation": "ε = σ / E, logo ε<sub>tendão</sub> / ε<sub>osso</sub> = E<sub>osso</sub> / E<sub>tendão</sub> = 2 × 10¹⁰ / 1 × 10⁹ = 20.",
     "distractorAnalysis": [
       "Está incorreta: divide 2 × 10¹⁰ por 1 × 10⁹ e obtém 2, esquecendo-se da diferença entre as potências de 10.",
       "Está incorreta: interpreta 10¹⁰ / 10⁹ como 10², obtendo 200.",

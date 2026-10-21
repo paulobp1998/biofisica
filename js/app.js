@@ -1111,7 +1111,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Enunciado
-    questionText.textContent = state.question;
+    questionText.innerHTML = richText(state.question);
 
     // Opções
     optionsContainer.innerHTML = '';
@@ -1781,14 +1781,16 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   function normalizeSearchText(text) {
-    return String(text || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    // Ignora índices (F<sub>P</sub> = FP) e sublinhados, para «F_P» e «FP» encontrarem o mesmo
+    return plainMathText(text).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f_]/g, '');
   }
 
   // Função de destaque de termos encontrados
   function highlightText(text, query) {
     if (!query) return text;
     const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
-    return text.replace(regex, '<mark>$1</mark>');
+    // Só realça fora das etiquetas (<sub>, <sup>), para não as estragar
+    return text.split(/(<\/?(?:sub|sup)>)/).map((part, i) => (i % 2 === 1 ? part : part.replace(regex, '<mark>$1</mark>'))).join('');
   }
 
   // Executa a pesquisa em tempo real
@@ -1842,7 +1844,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (matches.length === 0) {
         searchResultsList.innerHTML = glossaryHtml + `
           <div class="empty-state">
-            <p>Nenhuma pergunta encontrada com o termo "<strong>${searchInput.value.trim()}</strong>".</p>
+            <p>Nenhuma pergunta encontrada com o termo "<strong>${richText(searchInput.value.trim())}</strong>".</p>
             ${glossaryMatches.length === 0 ? '<p>Tenta termos como <em>atrito, momento, alavanca, inércia, Hooke, módulo de Young</em>.</p>' : ''}
           </div>
         `;

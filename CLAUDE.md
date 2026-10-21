@@ -40,6 +40,7 @@ Question banks live in `js/data/topicN.js` (topics 1–8), each a `const TOPIC_N
 - PT-PT, post-1990 spelling (Acordo Ortográfico): "ação", "direção", "deem", "facto", "utente", "equipa", "ecrã".
 - Decimal comma: 9,8 m/s², 0,15 m, 82,75 N. Never 9.8.
 - Physics symbols keep their case: m, g, F, P, N, b, M, p. Never capitalise the first letter of a formula ("G = 9,8" is wrong: G is the universal gravitational constant).
+- Subscripts: write `F<sub>P</sub>`, `b<sub>R</sub>`, `P<sub>t</sub>` (HTML `<sub>`), never `F_P` or `b_R`. Superscripts use `<sup>`. Multi-letter subscripts too (`M<sub>total</sub>`).
 - Units: N, kg, m, s, Pa, N·m. Forces always in N, never "quilos" or "kg". Say "carga de 15 kg", not "peso de 15 kg".
 - Use g = 9,8 m/s² (course convention).
 - Round results consistently (e.g. 20/1,2 = 16,7, not 16,6).
@@ -97,6 +98,7 @@ for q in Q:
     L = [len(o) for o in q["options"]]
     longest += L[q["correctIndex"]] == max(L)
     if re.search(r"\d\.\d", json.dumps(q, ensure_ascii=False)): print("decimal point:", q["id"])
+    if re.search(r"(?<![A-Za-z0-9_])[A-Za-zα-ω]_[A-Za-z0-9]", json.dumps(q, ensure_ascii=False)): print("underscore subscript:", q["id"])
 print(f"{len(Q)} questions, correctIndex {dist}, correct=longest {longest/max(len(Q),1):.0%}")
 EOF
 ```

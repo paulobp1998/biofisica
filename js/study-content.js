@@ -38,8 +38,8 @@ const STUDY_BLOCKS = [
     title: 'Leis de Newton',
     formulas: [
       { expr: '∑F = 0  ⇒  repouso ou MRU', note: '1.ª lei (inércia)' },
-      { expr: 'F_R = m · a', note: '2.ª lei; a = F_R / m' },
-      { expr: 'F_AB = −F_BA', note: '3.ª lei: ação e reação, em corpos diferentes' }
+      { expr: 'F<sub>R</sub> = m · a', note: '2.ª lei; a = F<sub>R</sub> / m' },
+      { expr: 'F<sub>AB</sub> = −F<sub>BA</sub>', note: '3.ª lei: ação e reação, em corpos diferentes' }
     ],
     example: 'Uma força resultante de 100 N sobre um carrinho de 20 kg dá a = 100 / 20 = 5 m/s².',
     body: `
@@ -59,9 +59,9 @@ const STUDY_BLOCKS = [
     title: 'Força normal, atrito e plano inclinado',
     formulas: [
       { expr: 'N = P', note: 'em plano horizontal, sem outras forças verticais' },
-      { expr: 'F_a ≤ μe · N', note: 'atrito estático (máximo: μe · N)' },
-      { expr: 'F_a = μc · N', note: 'atrito cinético (em deslizamento)' },
-      { expr: 'P_n = P · cos θ  e  P_t = P · sin θ', note: 'componentes do peso perpendicular e paralela ao plano' }
+      { expr: 'F<sub>a</sub> ≤ μe · N', note: 'atrito estático (máximo: μe · N)' },
+      { expr: 'F<sub>a</sub> = μc · N', note: 'atrito cinético (em deslizamento)' },
+      { expr: 'P<sub>n</sub> = P · cos θ  e  P<sub>t</sub> = P · sin θ', note: 'componentes do peso perpendicular e paralela ao plano' }
     ],
     example: 'Utente de 70 kg em plano horizontal: N = P = 70 × 9,8 = 686 N. Com μe = 0,3, o atrito estático máximo é 0,3 × 686 ≈ 206 N.',
     body: `
@@ -69,11 +69,11 @@ const STUDY_BLOCKS = [
         <li><strong>Força normal (N):</strong> força de contacto exercida pela superfície, perpendicular a ela. É a reação do apoio à ação do corpo sobre a superfície, e não a reação ao peso (esse par seria a atração do corpo sobre a Terra).</li>
         <li><strong>Atrito estático:</strong> opõe-se ao início do deslizamento e <em>adapta-se</em> à força aplicada, até ao valor máximo μe · N. Se não houver tendência para deslizar, vale zero.</li>
         <li><strong>Atrito cinético:</strong> atua durante o deslizamento, com sentido oposto ao do movimento relativo, e vale μc · N.</li>
-        <li><strong>Plano inclinado:</strong> o peso decompõe-se numa componente perpendicular ao plano (P_n, equilibrada por N) e numa componente paralela ao plano (P_t). O corpo só desliza se P_t exceder o atrito estático máximo.</li>
+        <li><strong>Plano inclinado:</strong> o peso decompõe-se numa componente perpendicular ao plano (P<sub>n</sub>, equilibrada por N) e numa componente paralela ao plano (P<sub>t</sub>). O corpo só desliza se P<sub>t</sub> exceder o atrito estático máximo.</li>
         <li><strong>Reduzir o atrito:</strong> lençóis de transferência ou folhas deslizantes diminuem o esforço ao deslocar um utente acamado.</li>
       </ul>`,
-    pitfall: 'O que é maior do que o atrito cinético é o atrito estático máximo (μe · N), e não o atrito estático em qualquer situação. P_n e P_t são perpendicular e paralela ao plano, não «vertical» e «horizontal».',
-    nursing: 'Ao elevar a cabeceira da cama, P_t tende a fazer o utente deslizar para os pés da cama, com atrito e cisalhamento na pele. O calçado antiderrapante assegura um bom coeficiente de atrito estático com o piso.'
+    pitfall: 'O que é maior do que o atrito cinético é o atrito estático máximo (μe · N), e não o atrito estático em qualquer situação. P<sub>n</sub> e P<sub>t</sub> são perpendicular e paralela ao plano, não «vertical» e «horizontal».',
+    nursing: 'Ao elevar a cabeceira da cama, P<sub>t</sub> tende a fazer o utente deslizar para os pés da cama, com atrito e cisalhamento na pele. O calçado antiderrapante assegura um bom coeficiente de atrito estático com o piso.'
   },
   {
     id: 't1-equilibrio',
@@ -99,7 +99,7 @@ const STUDY_BLOCKS = [
         </li>
         <li><strong>Dispositivos de apoio</strong> (andarilhos, canadianas) ampliam a base de sustentação.</li>
       </ul>`,
-    pitfall: 'F_R = 0 não garante equilíbrio: um binário de forças tem F_R = 0 mas M ≠ 0, e faz o corpo rodar. É preciso ∑F = 0 e ∑M = 0.',
+    pitfall: 'F<sub>R</sub> = 0 não garante equilíbrio: um binário de forças tem F<sub>R</sub> = 0 mas M ≠ 0, e faz o corpo rodar. É preciso ∑F = 0 e ∑M = 0.',
     nursing: 'Ao mobilizar utentes, o enfermeiro afasta os pés e fleta os joelhos para baixar o CG e alargar a base de sustentação, e mantém a carga junto ao corpo para a linha de gravidade ficar dentro da base.'
   },
   {
@@ -109,17 +109,17 @@ const STUDY_BLOCKS = [
     title: 'Momento de uma força e alavancas',
     formulas: [
       { expr: 'M = F · b', note: 'momento (N·m); b = braço da força' },
-      { expr: 'F_P · b_P = F_R · b_R', note: 'equilíbrio de rotação (∑M = 0)' },
-      { expr: 'VM = b_P / b_R', note: 'vantagem mecânica' }
+      { expr: 'F<sub>P</sub> · b<sub>P</sub> = F<sub>R</sub> · b<sub>R</sub>', note: 'equilíbrio de rotação (∑M = 0)' },
+      { expr: 'VM = b<sub>P</sub> / b<sub>R</sub>', note: 'vantagem mecânica' }
     ],
-    example: 'Carga F_R = 10 N a b_R = 0,4 m do fulcro, equilibrada a b_P = 0,1 m: F_P = (10 × 0,4) / 0,1 = 40 N.',
+    example: 'Carga F<sub>R</sub> = 10 N a b<sub>R</sub> = 0,4 m do fulcro, equilibrada a b<sub>P</sub> = 0,1 m: F<sub>P</sub> = (10 × 0,4) / 0,1 = 40 N.',
     body: `
       <ul>
         <li><strong>Momento de uma força (torque):</strong> mede a capacidade de uma força provocar rotação em torno de um eixo. O <strong>braço</strong> (b) é a distância perpendicular da linha de ação da força ao eixo. Se a linha de ação passar pelo eixo, M = 0.</li>
-        <li><strong>Alavanca:</strong> barra rígida que roda em torno de um <strong>fulcro</strong> (ponto de apoio), sob a ação de uma <strong>força potente</strong> F_P (no corpo, a força muscular) e de uma <strong>força resistente</strong> F_R (peso do segmento ou da carga).</li>
-        <li><strong>1.ª classe, interfixa</strong> (F_P – apoio – F_R): o apoio fica no meio. Ex.: articulação atlanto-occipital, onde os músculos extensores da nuca equilibram a tendência de queda da cabeça para a frente.</li>
-        <li><strong>2.ª classe, inter-resistente</strong> (apoio – F_R – F_P): a resistência fica no meio e b_P &gt; b_R (VM &gt; 1). Ex.: elevação na ponta dos pés. É um exemplo discutível, porque a tensão no tendão de Aquiles ronda 2 a 2,5 vezes o peso corporal (com uma perna): não exige «pouco esforço».</li>
-        <li><strong>3.ª classe, interpotente</strong> (apoio – F_P – F_R): a potência fica no meio e b_P &lt; b_R (VM &lt; 1). É a mais comum no corpo humano (bíceps a fletir o antebraço, com o cotovelo como fulcro): sacrifica força a favor da velocidade e da amplitude de movimento.</li>
+        <li><strong>Alavanca:</strong> barra rígida que roda em torno de um <strong>fulcro</strong> (ponto de apoio), sob a ação de uma <strong>força potente</strong> F<sub>P</sub> (no corpo, a força muscular) e de uma <strong>força resistente</strong> F<sub>R</sub> (peso do segmento ou da carga).</li>
+        <li><strong>1.ª classe, interfixa</strong> (F<sub>P</sub> – apoio – F<sub>R</sub>): o apoio fica no meio. Ex.: articulação atlanto-occipital, onde os músculos extensores da nuca equilibram a tendência de queda da cabeça para a frente.</li>
+        <li><strong>2.ª classe, inter-resistente</strong> (apoio – F<sub>R</sub> – F<sub>P</sub>): a resistência fica no meio e b<sub>P</sub> &gt; b<sub>R</sub> (VM &gt; 1). Ex.: elevação na ponta dos pés. É um exemplo discutível, porque a tensão no tendão de Aquiles ronda 2 a 2,5 vezes o peso corporal (com uma perna): não exige «pouco esforço».</li>
+        <li><strong>3.ª classe, interpotente</strong> (apoio – F<sub>P</sub> – F<sub>R</sub>): a potência fica no meio e b<sub>P</sub> &lt; b<sub>R</sub> (VM &lt; 1). É a mais comum no corpo humano (bíceps a fletir o antebraço, com o cotovelo como fulcro): sacrifica força a favor da velocidade e da amplitude de movimento.</li>
       </ul>`,
     pitfall: 'O braço é a distância perpendicular da linha de ação ao fulcro, e não o comprimento do osso. Truque para as classes: a que fica «no meio» dá o nome (1.ª apoio, 2.ª resistência, 3.ª potência).',
     nursing: 'Uma carga mantida afastada do tronco aumenta o braço da resistência e cria um momento flexor sobre a coluna lombar, que os músculos extensores têm de equilibrar. Segurar o utente ou o material junto ao corpo reduz essa sobrecarga.'
@@ -263,28 +263,28 @@ const GLOSSARY = [
   { t: 'Dinamómetro', d: 'Instrumento que mede forças; baseia-se na lei de Hooke (alongamento proporcional de uma mola).', c: 't1-forca' },
   { t: 'Inércia', a: ['1.ª lei de Newton'], d: 'Tendência de um corpo a manter o repouso ou o MRU, sem força resultante. A massa mede-a.', c: 't1-newton' },
   { t: 'MRU', a: ['movimento retilíneo e uniforme'], d: 'Movimento retilíneo e uniforme: velocidade vetorial constante, aceleração nula e força resultante nula.', c: 't1-newton' },
-  { t: 'Força resultante', a: ['F_R', 'resultante'], d: 'Soma vetorial de todas as forças que atuam sobre um corpo. Determina a aceleração (F_R = m · a).', c: 't1-newton' },
-  { t: '2.ª lei de Newton', a: ['F = m·a', 'aceleração'], d: 'A aceleração é proporcional à força resultante e inversamente proporcional à massa: a = F_R / m.', c: 't1-newton' },
+  { t: 'Força resultante', a: ['F<sub>R</sub>', 'resultante'], d: 'Soma vetorial de todas as forças que atuam sobre um corpo. Determina a aceleração (F<sub>R</sub> = m · a).', c: 't1-newton' },
+  { t: '2.ª lei de Newton', a: ['F = m·a', 'aceleração'], d: 'A aceleração é proporcional à força resultante e inversamente proporcional à massa: a = F<sub>R</sub> / m.', c: 't1-newton' },
   { t: 'Ação-reação', a: ['3.ª lei de Newton'], d: 'Forças de igual intensidade e sentidos opostos, aplicadas em corpos diferentes. Por isso não se anulam.', c: 't1-newton' },
   { t: 'Força normal', a: ['N', 'reação do apoio'], d: 'Força de contacto exercida por uma superfície, perpendicular a ela.', c: 't1-atrito' },
   { t: 'Atrito estático', d: 'Opõe-se ao início do deslizamento e adapta-se à força aplicada até ao máximo μe · N.', c: 't1-atrito' },
-  { t: 'Atrito cinético', a: ['atrito dinâmico'], d: 'Atua durante o deslizamento: F_a = μc · N. É em geral inferior ao atrito estático máximo.', c: 't1-atrito' },
+  { t: 'Atrito cinético', a: ['atrito dinâmico'], d: 'Atua durante o deslizamento: F<sub>a</sub> = μc · N. É em geral inferior ao atrito estático máximo.', c: 't1-atrito' },
   { t: 'Coeficiente de atrito', a: ['μ', 'mu'], d: 'Número sem unidades que depende das superfícies em contacto (μe para estático, μc para cinético).', c: 't1-atrito' },
-  { t: 'Plano inclinado', a: ['rampa', 'P_n', 'P_t', 'componentes do peso'], d: 'O peso decompõe-se em P_n = P · cos θ (perpendicular ao plano) e P_t = P · sin θ (paralela ao plano).', c: 't1-atrito' },
+  { t: 'Plano inclinado', a: ['rampa', 'P<sub>n</sub>', 'P<sub>t</sub>', 'componentes do peso'], d: 'O peso decompõe-se em P<sub>n</sub> = P · cos θ (perpendicular ao plano) e P<sub>t</sub> = P · sin θ (paralela ao plano).', c: 't1-atrito' },
   { t: 'Equilíbrio mecânico', a: ['equilíbrio', 'estática'], d: 'Condição de ∑F = 0 e ∑M = 0. O repouso é um caso particular.', c: 't1-equilibrio' },
   { t: 'Equilíbrio estável, instável e indiferente', a: ['estável', 'instável', 'indiferente'], d: 'Estável: regressa à posição inicial. Instável: afasta-se mais. Indiferente: mantém a nova posição.', c: 't1-equilibrio' },
-  { t: 'Binário de forças', a: ['binário', 'par de forças'], d: 'Duas forças paralelas, iguais e de sentidos opostos, com linhas de ação distintas: F_R = 0, mas M ≠ 0, e produz rotação.', c: 't1-equilibrio' },
+  { t: 'Binário de forças', a: ['binário', 'par de forças'], d: 'Duas forças paralelas, iguais e de sentidos opostos, com linhas de ação distintas: F<sub>R</sub> = 0, mas M ≠ 0, e produz rotação.', c: 't1-equilibrio' },
   { t: 'Centro de gravidade (CG)', a: ['centro de massa'], d: 'Ponto de aplicação do peso de um corpo. No adulto em pé fica anterior a S2.', c: 't1-equilibrio' },
   { t: 'Base de sustentação', a: ['BS', 'polígono de apoio'], d: 'Região delimitada pelos pontos de apoio no solo, incluindo o espaço entre eles.', c: 't1-equilibrio' },
   { t: 'Linha de gravidade', d: 'Vertical que passa pelo CG. Para haver estabilidade tem de cair dentro da base de sustentação.', c: 't1-equilibrio' },
   { t: 'Momento de uma força', a: ['torque', 'M = F·b'], d: 'M = F · b, em N·m: capacidade de uma força para provocar rotação em torno de um eixo.', c: 't1-alavancas' },
   { t: 'Braço da força', a: ['braço de alavanca', 'b'], d: 'Distância perpendicular da linha de ação da força ao eixo de rotação.', c: 't1-alavancas' },
   { t: 'Alavanca', a: ['fulcro', 'ponto de apoio'], d: 'Barra rígida que roda em torno de um fulcro sob ação de uma força potente e de uma força resistente.', c: 't1-alavancas' },
-  { t: 'Força potente e força resistente', a: ['F_P', 'F_R', 'potência', 'resistência'], d: 'F_P é a força que move a alavanca (no corpo, a muscular); F_R é a que se opõe (peso do segmento ou da carga).', c: 't1-alavancas' },
-  { t: 'Vantagem mecânica', a: ['VM'], d: 'VM = b_P / b_R. Maior que 1 favorece a força; menor que 1 favorece a velocidade e a amplitude.', c: 't1-alavancas' },
+  { t: 'Força potente e força resistente', a: ['F<sub>P</sub>', 'F<sub>R</sub>', 'potência', 'resistência'], d: 'F<sub>P</sub> é a força que move a alavanca (no corpo, a muscular); F<sub>R</sub> é a que se opõe (peso do segmento ou da carga).', c: 't1-alavancas' },
+  { t: 'Vantagem mecânica', a: ['VM'], d: 'VM = b<sub>P</sub> / b<sub>R</sub>. Maior que 1 favorece a força; menor que 1 favorece a velocidade e a amplitude.', c: 't1-alavancas' },
   { t: 'Alavanca interfixa (1.ª classe)', a: ['1.ª classe', 'interfixa'], d: 'O apoio fica entre a potência e a resistência. Ex.: articulação atlanto-occipital.', c: 't1-alavancas' },
-  { t: 'Alavanca inter-resistente (2.ª classe)', a: ['2.ª classe', 'inter-resistente'], d: 'A resistência fica entre o apoio e a potência (b_P > b_R). Ex.: carrinho de mão; elevação na ponta dos pés.', c: 't1-alavancas' },
-  { t: 'Alavanca interpotente (3.ª classe)', a: ['3.ª classe', 'interpotente'], d: 'A potência fica entre o apoio e a resistência (b_P < b_R). Ex.: bíceps no cotovelo. É a mais comum no corpo.', c: 't1-alavancas' },
+  { t: 'Alavanca inter-resistente (2.ª classe)', a: ['2.ª classe', 'inter-resistente'], d: 'A resistência fica entre o apoio e a potência (b<sub>P</sub> &gt; b<sub>R</sub>). Ex.: carrinho de mão; elevação na ponta dos pés.', c: 't1-alavancas' },
+  { t: 'Alavanca interpotente (3.ª classe)', a: ['3.ª classe', 'interpotente'], d: 'A potência fica entre o apoio e a resistência (b<sub>P</sub> &lt; b<sub>R</sub>). Ex.: bíceps no cotovelo. É a mais comum no corpo.', c: 't1-alavancas' },
   { t: 'Reologia', d: 'Estudo das reações dos corpos às forças deformadoras (deformação e escoamento).', c: 't2-reologia' },
   { t: 'Elasticidade', a: ['elástico'], d: 'Propriedade de um corpo recuperar a forma original quando a força deformadora cessa.', c: 't2-reologia' },
   { t: 'Sólido de Euclides', a: ['indeformável'], d: 'Modelo teórico de sólido indeformável.', c: 't2-reologia' },
@@ -296,7 +296,7 @@ const GLOSSARY = [
   { t: 'Deformação relativa', a: ['ε', 'extensão'], d: 'ε = ΔL / L₀: grandeza sem unidades.', c: 't2-hooke' },
   { t: 'Lei de Hooke', a: ['Ut tensio, sic vis', 'F = k·ΔL'], d: 'No regime elástico, a deformação é proporcional à força: F = k · ΔL, ou σ = E · ε.', c: 't2-hooke' },
   { t: 'Constante elástica (k)', a: ['k', 'rigidez da mola'], d: 'Rigidez de um corpo concreto, em N/m. Depende do material e da geometria.', c: 't2-hooke' },
-  { t: 'Módulo de Young (E)', a: ['E', 'módulo de elasticidade'], d: 'Rigidez do material, em Pa: σ = E · ε. Borracha < osso < vidro < aço.', c: 't2-hooke' },
+  { t: 'Módulo de Young (E)', a: ['E', 'módulo de elasticidade'], d: 'Rigidez do material, em Pa: σ = E · ε. Borracha &lt; osso &lt; vidro &lt; aço.', c: 't2-hooke' },
   { t: 'Compressão', d: 'Forças convergentes ao longo do eixo: o comprimento diminui e a secção aumenta.', c: 't2-deformacoes' },
   { t: 'Tração', a: ['tensão axial'], d: 'Forças divergentes ao longo do eixo: o comprimento aumenta e a secção diminui.', c: 't2-deformacoes' },
   { t: 'Flexão', d: 'Forças transversais curvam a barra: comprime um lado e traciona o outro.', c: 't2-deformacoes' },
