@@ -895,14 +895,14 @@ document.addEventListener('DOMContentLoaded', () => {
           <span class="session-icon">🎓</span>
           <div class="session-info">
             <strong>20 Questões (0 a 20 Val.)</strong>
-            <span>2 a 3 perguntas por tópico ativo • ~20 min</span>
+            <span>${Math.floor(20 / UNLOCKED_TOPIC_IDS.length)} perguntas por tópico ativo • ~20 min</span>
           </div>
         </button>
         <button class="session-option-card" data-count="40">
           <span class="session-icon">🏆</span>
           <div class="session-info">
             <strong>40 Questões (Exame Alargado)</strong>
-            <span>5 perguntas por tópico ativo • ~40 min</span>
+            <span>${Math.floor(40 / UNLOCKED_TOPIC_IDS.length)} perguntas por tópico ativo • ~40 min</span>
           </div>
         </button>
       `;
