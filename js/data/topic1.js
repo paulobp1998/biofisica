@@ -2767,13 +2767,13 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a formulação da Lei das Alavancas em situação de equilíbrio?",
     "options": [
-      "F<sub>Potente</sub> + b<sub>P</sub> = F<sub>Resis.</sub> + b<sub>Resis.</sub>",
-      "F<sub>Potente</sub> / b<sub>P</sub> = F<sub>Resis.</sub> / b<sub>Resis.</sub>",
-      "F<sub>Potente</sub> · b<sub>P</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub>",
-      "F<sub>Potente</sub> · F<sub>Resis.</sub> = b<sub>P</sub> · b<sub>Resis.</sub>"
+      "F<sub>Potente</sub> + b<sub>Potente</sub> = F<sub>Resis.</sub> + b<sub>Resis.</sub>",
+      "F<sub>Potente</sub> / b<sub>Potente</sub> = F<sub>Resis.</sub> / b<sub>Resis.</sub>",
+      "F<sub>Potente</sub> · b<sub>Potente</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub>",
+      "F<sub>Potente</sub> · F<sub>Resis.</sub> = b<sub>Potente</sub> · b<sub>Resis.</sub>"
     ],
     "correctIndex": 2,
-    "explanation": "Apresenta-se a clássica Lei das Alavancas: 'Em equilíbrio: F<sub>Potente</sub> · b<sub>P</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub>' (o produto da força potente pelo seu braço é igual ao produto da força resistente pelo seu braço).",
+    "explanation": "Apresenta-se a clássica Lei das Alavancas: 'Em equilíbrio: F<sub>Potente</sub> · b<sub>Potente</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub>' (o produto da força potente pelo seu braço é igual ao produto da força resistente pelo seu braço).",
     "distractorAnalysis": [
       "Está incorreta: Não se somam forças com distâncias por terem grandezas físicas e unidades diferentes (N vs m).",
       "Está incorreta: A relação física é um produto de fatores (momentos), não uma razão de quocientes.",
@@ -2784,15 +2784,15 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1147,
     "topicId": 1,
-    "question": "O que traduz fisicamente a igualdade F<sub>Potente</sub> · b<sub>P</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub> em termos da teoria dos momentos?",
+    "question": "O que traduz fisicamente a igualdade F<sub>Potente</sub> · b<sub>Potente</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub> em termos da teoria dos momentos?",
     "options": [
       "Que a força potente é igual à força resistente (F<sub>Potente</sub> = F<sub>Resis.</sub>).",
       "Que a massa do fulcro é igual à soma das massas potentes e resistentes.",
       "Que a alavanca deixa de sofrer a força da gravidade durante o equilíbrio.",
-      "Que o momento potente iguala o momento resistente (M<sub>P</sub> = M<sub>Resis.</sub>) em torno do fulcro."
+      "Que o momento potente iguala o momento resistente em torno do fulcro."
     ],
     "correctIndex": 3,
-    "explanation": "Como M = F · b, a Lei das Alavancas afirma simplesmente que o momento de rotação no sentido potente anula o momento de rotação no sentido resistente: M<sub>P</sub> = M<sub>Resis.</sub>, resultando em equilíbrio de rotação (aceleração angular nula).",
+    "explanation": "Como M = F · b, a Lei das Alavancas afirma simplesmente que o momento de rotação no sentido potente anula o momento de rotação no sentido resistente: M<sub>Potente</sub> = M<sub>Resis.</sub>, resultando em equilíbrio de rotação (aceleração angular nula).",
     "distractorAnalysis": [
       "Está incorreta: As forças só são iguais se os braços forem iguais; o que se iguala são os momentos (F · b).",
       "Está incorreta: O fulcro não tem massa relevante para o equilíbrio de momentos.",
@@ -2803,7 +2803,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1148,
     "topicId": 1,
-    "question": "Se o braço da força potente (b<sub>P</sub>) for 4 vezes maior do que o braço da força resistente (b<sub>Resis.</sub>), qual a força potente F<sub>Potente</sub> necessária para equilibrar a carga?",
+    "question": "Se o braço da força potente (b<sub>Potente</sub>) for 4 vezes maior do que o braço da força resistente (b<sub>Resis.</sub>), qual a força potente F<sub>Potente</sub> necessária para equilibrar a carga?",
     "options": [
       "Uma força 4 vezes menor do que a resistente (F<sub>Potente</sub> = F<sub>Resis.</sub> / 4).",
       "Uma força potente 4 vezes maior do que a resistente, por a alavanca amplificar o esforço.",
@@ -2815,7 +2815,7 @@ const TOPIC_1_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: Um braço potente maior reduz a força necessária; não a aumenta.",
       "Está incorreta: A lei do inverso do quadrado não se aplica às alavancas; a relação é F · b.",
-      "Está incorreta: A distância altera o esforço necessário, pois F<sub>Potente</sub> · b<sub>P</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub>."
+      "Está incorreta: A distância altera o esforço necessário, pois F<sub>Potente</sub> · b<sub>Potente</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub>."
     ],
     "nursingApplication": "Explica por que cabos compridos e barras de elevação longas facilitam a manipulação de cargas pesadas."
   },
@@ -2957,19 +2957,19 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Numa alavanca Inter-resistente (ex.: carrinho de mão ou pontas dos pés), qual é a relação geométrica entre os braços de momento?",
     "options": [
-      "O braço potente é maior que o braço resistente (b<sub>P</sub> > b<sub>Resis.</sub>), dando vantagem de força.",
+      "O braço potente é maior que o braço resistente, dando vantagem de força.",
       "O braço resistente é o dobro do braço potente.",
-      "Os dois braços são iguais (b<sub>P</sub> = b<sub>Resis.</sub>) quando a carga fica a meio da barra.",
+      "Os dois braços são iguais (b<sub>Potente</sub> = b<sub>Resis.</sub>) quando a carga fica a meio da barra.",
       "O braço potente é nulo, porque a carga fica entre o fulcro e a força."
     ],
     "correctIndex": 0,
-    "explanation": "Como a resistência está entre o fulcro e a força potente (Fulcro — F<sub>Resis.</sub> — F<sub>Potente</sub>), a distância do fulcro à força potente (b<sub>P</sub>) é necessariamente superior à distância à carga (b<sub>Resis.</sub>). Assim, F<sub>Potente</sub> < F<sub>Resis.</sub>: há multiplicação de força.",
+    "explanation": "Como a resistência está entre o fulcro e a força potente (Fulcro — F<sub>Resis.</sub> — F<sub>Potente</sub>), a distância do fulcro à força potente (b<sub>Potente</sub>) é necessariamente superior à distância à carga (b<sub>Resis.</sub>). Assim, F<sub>Potente</sub> < F<sub>Resis.</sub>: há multiplicação de força.",
     "distractorAnalysis": [
-      "Está incorreta: b<sub>Resis.</sub> é menor que b<sub>P</sub> na alavanca inter-resistente, e não o dobro.",
-      "Está incorreta: Os dois braços medem-se a partir do fulcro; com a carga a meio, b<sub>Resis.</sub> é metade de b<sub>P</sub>.",
+      "Está incorreta: b<sub>Resis.</sub> é menor que b<sub>Potente</sub> na alavanca inter-resistente, e não o dobro.",
+      "Está incorreta: Os dois braços medem-se a partir do fulcro; com a carga a meio, b<sub>Resis.</sub> é metade de b<sub>Potente</sub>.",
       "Está incorreta: O braço potente é o maior dos dois braços e vai do fulcro até ao ponto de aplicação da força potente."
     ],
-    "nursingApplication": "Explica a vantagem mecânica de dispositivos como o carrinho de mão: com a carga entre o eixo e as mãos (b<sub>P</sub> > b<sub>Resis.</sub>), transporta-se uma carga pesada com uma força inferior ao seu peso."
+    "nursingApplication": "Explica a vantagem mecânica de dispositivos como o carrinho de mão: com a carga entre o eixo e as mãos (b<sub>Potente</sub> > b<sub>Resis.</sub>), transporta-se uma carga pesada com uma força inferior ao seu peso."
   },
   {
     "id": 1157,
@@ -2977,16 +2977,16 @@ const TOPIC_1_QUESTIONS = [
     "question": "Numa alavanca Interpotente (ex.: bíceps braquial no cotovelo), qual é a consequência biomecânica de a força potente estar situada entre o fulcro e a carga?",
     "options": [
       "A força muscular necessária é muito menor do que o peso da carga que se segura.",
-      "O braço potente é menor que o resistente (b<sub>P</sub> < b<sub>Resis.</sub>), exigindo mais força que a carga.",
+      "O braço potente é menor que o resistente, exigindo mais força que a carga.",
       "A alavanca não consegue produzir movimento nem rotação da mão.",
       "A força muscular é igual ao peso da carga, porque o sistema está em equilíbrio."
     ],
     "correctIndex": 1,
-    "explanation": "Sendo a alavanca interpotente (Fulcro — F<sub>Potente</sub> — F<sub>Resis.</sub>), b<sub>P</sub> é mais curto que b<sub>Resis.</sub>. Pela Lei das Alavancas, para equilibrar o sistema o músculo tem de exercer uma força potente F<sub>Potente</sub> muito superior à força resistente F<sub>Resis.</sub>.",
+    "explanation": "Sendo a alavanca interpotente (Fulcro — F<sub>Potente</sub> — F<sub>Resis.</sub>), b<sub>Potente</sub> é mais curto que b<sub>Resis.</sub>. Pela Lei das Alavancas, para equilibrar o sistema o músculo tem de exercer uma força potente F<sub>Potente</sub> muito superior à força resistente F<sub>Resis.</sub>.",
     "distractorAnalysis": [
-      "Está incorreta: Com b<sub>P</sub> < b<sub>Resis.</sub>, a força muscular é maior do que a carga, e não menor.",
+      "Está incorreta: Com b<sub>Potente</sub> < b<sub>Resis.</sub>, a força muscular é maior do que a carga, e não menor.",
       "Está incorreta: A alavanca produz rotação do antebraço em torno do cotovelo, com ganho de amplitude e velocidade.",
-      "Está incorreta: No equilíbrio igualam-se os momentos, e não as forças; como b<sub>P</sub> < b<sub>Resis.</sub>, a força muscular é maior do que a carga."
+      "Está incorreta: No equilíbrio igualam-se os momentos, e não as forças; como b<sub>Potente</sub> < b<sub>Resis.</sub>, a força muscular é maior do que a carga."
     ],
     "nursingApplication": "Alerta para o facto de que muitos músculos e tendões suportam forças várias vezes superiores aos pesos que carregamos."
   },
@@ -3058,7 +3058,7 @@ const TOPIC_1_QUESTIONS = [
       "x = 0,6 m"
     ],
     "correctIndex": 1,
-    "explanation": "Como b<sub>P</sub> + b<sub>Resis.</sub> = 3,6 m e b<sub>P</sub> = 2x, obtém-se 3x = 3,6 (=) x = 1,2 m. O braço resistente b<sub>Resis.</sub> é 1,2 m e o potente b<sub>P</sub> é 2,4 m.",
+    "explanation": "Como b<sub>Potente</sub> + b<sub>Resis.</sub> = 3,6 m e b<sub>Potente</sub> = 2x, obtém-se 3x = 3,6 (=) x = 1,2 m. O braço resistente b<sub>Resis.</sub> é 1,2 m e o potente b<sub>Potente</sub> é 2,4 m.",
     "distractorAnalysis": [
       "Está incorreta: 3,6 m é o comprimento total da barra da alavanca, não o valor de x.",
       "Está incorreta: 2,4 m é o valor do braço potente (2x = 2 × 1,2), não de x.",
@@ -3088,7 +3088,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1163,
     "topicId": 1,
-    "question": "Estando o sistema em equilíbrio com M<sub>Resis.</sub> = 24 N·m e braço potente b<sub>P</sub> = 2,4 m, qual é a Força Potente (F<sub>Potente</sub>) necessária para equilibrar a alavanca?",
+    "question": "Estando o sistema em equilíbrio com M<sub>Resis.</sub> = 24 N·m e braço potente b<sub>Potente</sub> = 2,4 m, qual é a Força Potente (F<sub>Potente</sub>) necessária para equilibrar a alavanca?",
     "options": [
       "F<sub>Potente</sub> = 24 N",
       "F<sub>Potente</sub> = 57,6 N",
@@ -3096,7 +3096,7 @@ const TOPIC_1_QUESTIONS = [
       "F<sub>Potente</sub> = 10 N"
     ],
     "correctIndex": 3,
-    "explanation": "A resolução determina: 'Momento da força potente: M<sub>P</sub> = F<sub>Potente</sub> · b<sub>P</sub> (=) 24 = F<sub>Potente</sub> × 2,4 (=) F<sub>Potente</sub> = 10 N'.",
+    "explanation": "A resolução determina: 'Momento da força potente: M<sub>Potente</sub> = F<sub>Potente</sub> · b<sub>Potente</sub> (=) 24 = F<sub>Potente</sub> × 2,4 (=) F<sub>Potente</sub> = 10 N'.",
     "distractorAnalysis": [
       "Está incorreta: 24 N seria a força potente se o braço potente fosse de apenas 1 metro.",
       "Está incorreta: 57,6 N resultaria de multiplicar 24 por 2,4 em vez de dividir.",
@@ -3145,15 +3145,15 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1166,
     "topicId": 1,
-    "question": "Para equilibrar um Momento Resistente M<sub>Resis.</sub> = 1470 N·m através de uma Força Potente de 294 N (igual ao peso de uma massa de 30 kg, com g = 9,8 m/s²), que comprimento deve ter o braço potente (b<sub>P</sub>)?",
+    "question": "Para equilibrar um Momento Resistente M<sub>Resis.</sub> = 1470 N·m através de uma Força Potente de 294 N (igual ao peso de uma massa de 30 kg, com g = 9,8 m/s²), que comprimento deve ter o braço potente (b<sub>Potente</sub>)?",
     "options": [
-      "b<sub>P</sub> = 1,47 m",
-      "b<sub>P</sub> = 30 m",
-      "b<sub>P</sub> = 5 m",
-      "b<sub>P</sub> = 0,2 m"
+      "b<sub>Potente</sub> = 1,47 m",
+      "b<sub>Potente</sub> = 30 m",
+      "b<sub>Potente</sub> = 5 m",
+      "b<sub>Potente</sub> = 0,2 m"
     ],
     "correctIndex": 2,
-    "explanation": "Conclui-se com rigor: 'M<sub>P</sub> = F<sub>Potente</sub> · b<sub>P</sub> (=) 1470 = (30 × 9,8) × b<sub>P</sub> (=) b<sub>P</sub> = 5 m'.",
+    "explanation": "Conclui-se com rigor: 'M<sub>Potente</sub> = F<sub>Potente</sub> · b<sub>Potente</sub> (=) 1470 = (30 × 9,8) × b<sub>Potente</sub> (=) b<sub>Potente</sub> = 5 m'.",
     "distractorAnalysis": [
       "Está incorreta: 1,47 m seria insuficiente: geraria apenas 294 × 1,47 = 432 N·m, e a alavanca não equilibraria.",
       "Está incorreta: 30 é o valor numérico da massa (kg), e não uma distância.",
@@ -3183,7 +3183,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1168,
     "topicId": 1,
-    "question": "Num baloiço (alavanca interfixa) com M<sub>Resis.</sub> = 24 N·m, se uma pessoa aplicar uma força potente de 15 N com um braço b<sub>P</sub> = 2,4 m, o que acontecerá ao sistema?",
+    "question": "Num baloiço (alavanca interfixa) com M<sub>Resis.</sub> = 24 N·m, se uma pessoa aplicar uma força potente de 15 N com um braço b<sub>Potente</sub> = 2,4 m, o que acontecerá ao sistema?",
     "options": [
       "O momento potente seria 36 N·m, superando M<sub>Resis.</sub> (24 N·m) e fazendo a alavanca girar.",
       "A alavanca permaneceria em repouso, sem movimento, como se as forças se anulassem.",
@@ -3191,7 +3191,7 @@ const TOPIC_1_QUESTIONS = [
       "A força resistente aumentaria instantaneamente para 36 N para impedir a rotação."
     ],
     "correctIndex": 0,
-    "explanation": "Com F<sub>Potente</sub> = 15 N, M<sub>P</sub> = 36 N·m. Como 36 N·m > 24 N·m, o momento resultante não é nulo (36 − 24 = 12 N·m, no sentido do momento potente) e a alavanca entra em rotação acelerada nesse sentido.",
+    "explanation": "Com F<sub>Potente</sub> = 15 N, M<sub>Potente</sub> = 36 N·m. Como 36 N·m > 24 N·m, o momento resultante não é nulo (36 − 24 = 12 N·m, no sentido do momento potente) e a alavanca entra em rotação acelerada nesse sentido.",
     "distractorAnalysis": [
       "Está incorreta: A alavanca só ficaria em repouso se os momentos fossem iguais (F<sub>Potente</sub> = 10 N).",
       "Está incorreta: O momento potente não se anula por si; só um momento de sentido oposto o pode compensar, e M<sub>Resis.</sub> (24 N·m) é inferior a 36 N·m.",
@@ -3223,13 +3223,13 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Em sistemas mecânicos de alavancas, qual é a condição matemática necessária para garantir o equilíbrio estático rotacional em torno do fulcro?",
     "options": [
-      "F<sub>Potente</sub> + F<sub>Resis.</sub> = 0",
-      "b<sub>P</sub> / b<sub>Resis.</sub> = 9,8",
-      "M<sub>P</sub> = M<sub>Resis.</sub> (ou F<sub>Potente</sub> · b<sub>P</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub>)",
-      "F<sub>Potente</sub> · b<sub>Resis.</sub> = F<sub>Resis.</sub> · b<sub>P</sub>"
+      "F<sub>Potente</sub> + F<sub>Resis.</sub> = 0 (soma nula das forças)",
+      "b<sub>Potente</sub> / b<sub>Resis.</sub> = 9,8 (razão igual a g)",
+      "M<sub>Potente</sub> = M<sub>Resis.</sub> (igualdade dos momentos)",
+      "F<sub>Potente</sub> · b<sub>Resis.</sub> = F<sub>Resis.</sub> · b<sub>Potente</sub>"
     ],
     "correctIndex": 2,
-    "explanation": "A igualdade entre o Momento Potente e o Momento Resistente (M<sub>P</sub> = M<sub>Resis.</sub>) é a base para resolver problemas de alavancas em equilíbrio estático.",
+    "explanation": "A igualdade entre o Momento Potente e o Momento Resistente (M<sub>Potente</sub> = M<sub>Resis.</sub>) é a base para resolver problemas de alavancas em equilíbrio estático.",
     "distractorAnalysis": [
       "Está incorreta: Somar forças ignora os braços de momento e o efeito de rotação em torno do fulcro.",
       "Está incorreta: A razão entre braços depende da geometria do sistema e não da constante g.",
@@ -3375,9 +3375,9 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Um antebraço está fletido em equilíbrio em torno do cotovelo, com um objeto seguro na mão. Sendo F<sub>E</sub> a força do bíceps, d<sub>E</sub> o seu braço de momento, F<sub>objeto</sub> o peso do objeto, d<sub>Resis.</sub> a sua distância ao cotovelo, F<sub>antebraço+mão</sub> o peso do antebraço com a mão e d<sub>antebraço</sub> a distância do seu centro de gravidade ao cotovelo, qual é a equação de equilíbrio de momentos em torno do cotovelo?",
     "options": [
-      "F<sub>objeto</sub> + F<sub>antebraço</sub> = F<sub>E</sub>, ou seja, a soma das forças iguala a força muscular.",
-      "F<sub>E</sub> · d<sub>Resis.</sub> = F<sub>objeto</sub> · d<sub>E</sub>, em que o braço do objeto é o do bíceps.",
-      "Em equilíbrio: (F<sub>objeto</sub> · d<sub>Resis.</sub>) + (F<sub>antebraço+mão</sub> · d<sub>antebraço</sub>) = F<sub>E</sub> · d<sub>E</sub>",
+      "F<sub>objeto</sub> + F<sub>antebraço+mão</sub> = F<sub>E</sub>, ou seja, a força do bíceps iguala a soma dos pesos que está a segurar.",
+      "F<sub>E</sub> · d<sub>Resis.</sub> = F<sub>objeto</sub> · d<sub>E</sub>, com os braços do bíceps e do objeto trocados.",
+      "(F<sub>objeto</sub> · d<sub>Resis.</sub>) + (F<sub>antebraço+mão</sub> · d<sub>antebraço</sub>) = F<sub>E</sub> · d<sub>E</sub>",
       "F<sub>E</sub> = m · g · a, em que a força muscular depende da aceleração do antebraço."
     ],
     "correctIndex": 2,
