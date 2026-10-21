@@ -13,10 +13,10 @@ Estado atual do banco de perguntas:
 | Tópico | Conteúdo | Estado |
 |---|---|---|
 | 1 | Força, estado de equilíbrio, equilíbrio de forças e alavancas | 200 perguntas ativas |
-| 2 | Elasticidade dos corpos, resistência dos materiais e sistema osteomedular | 200 perguntas (bloqueadas aos alunos; visíveis ao docente com PIN) |
+| 2 | Elasticidade dos corpos, resistência dos materiais e sistema osteomedular | 200 perguntas ativas |
 | 3 a 8 | Restantes módulos | Em preparação (bloqueados pelo docente) |
 
-Total atual: **300 perguntas** (200 ativas para os alunos), de escolha múltipla com 4 opções e explicação científica e de aplicação em enfermagem.
+Total atual: **400 perguntas** (todas ativas para os alunos, Tópicos 1 e 2). Os tópicos ativos definem-se em `UNLOCKED_TOPIC_IDS` (`js/questions-data.js`), de escolha múltipla com 4 opções e explicação científica e de aplicação em enfermagem.
 
 **Tópico 1:** grandezas vetoriais, leis de Newton, força normal e atrito, condições de equilíbrio (∑F = 0 e ∑M = 0), centro de gravidade e base de sustentação, alavancas biomecânicas (1.ª, 2.ª e 3.ª classe) e momentos de força.
 

@@ -225,9 +225,9 @@ const CONCEPT_RANGES = {
 const T2_CONCEPT_ALLOCATION = (() => {
   const expand = list => list.flatMap(x => Array.isArray(x) ? Array.from({ length: x[1] - x[0] + 1 }, (_, i) => x[0] + i) : [x]);
   return {
-    't2-reologia': expand([[1, 12], 14, [16, 19], 59, 60, 70, 74, 79, 83, 86, 96, [162, 168], [192, 195]]),
-    't2-deformacoes': expand([15, 27, [41, 55], 57, 68, 69, [136, 144], 198]),
-    't2-osso': expand([[101, 121], 135, [145, 161], [178, 183], 197])
+    't2-reologia': expand([[1, 11], [16, 19], 59, 60, 70, 74, 79, 83, 86, 96, [162, 168], 184, [192, 195]]),
+    't2-deformacoes': expand([15, 27, [41, 55], 57, 68, 69, 82, 126, [136, 144], 198]),
+    't2-osso': expand([14, [101, 121], 135, 145, [147, 161], [178, 183], 196, 197])
   };
 })();
 

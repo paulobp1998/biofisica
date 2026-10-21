@@ -1000,7 +1000,10 @@ class ArenaUI {
     // 3. Início de Pergunta no Projetor
     this.engine.onUI('question_started', (data) => {
       if (this.arenaLiveQIndex) this.arenaLiveQIndex.textContent = `Pergunta ${data.questionIndex} de ${data.totalQuestions} • Tópico ${Math.floor(data.question.id / 1000)}`;
-      if (this.arenaLiveQTopic) this.arenaLiveQTopic.textContent = `Tópico ${data.question.topicId}: Biomecânica`;
+      if (this.arenaLiveQTopic) this.arenaLiveQTopic.textContent = (() => {
+        const meta = TOPICS_DATA.find(t => t.id === data.question.topicId);
+        return `Tópico ${data.question.topicId}${meta ? `: ${meta.shortTitle}` : ''}`;
+      })();
       if (this.arenaLiveQuestionText) this.arenaLiveQuestionText.innerHTML = arenaRichText(data.question.question);
       if (this.arenaLiveTimer) this.arenaLiveTimer.textContent = `⏱️ ${data.timeRemaining}s`;
       if (this.arenaTimerFill) this.arenaTimerFill.style.width = '100%';

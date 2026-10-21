@@ -77,9 +77,9 @@ const TOPICS_DATA = [
 // CONTROLO DE ACESSO DO DOCENTE POR TÓPICO
 // =========================================================================
 // Define quais os tópicos atualmente acessíveis aos estudantes (1 a 8).
-// Tópico 1 ativo e disponibilizado com 200 questões de biofísica.
-// Tópicos 2 a 8 temporariamente bloqueados pelo docente para foco do estudo.
-const UNLOCKED_TOPIC_IDS = [1];
+// Tópicos 1 e 2 ativos e disponibilizados (200 questões cada).
+// Tópicos 3 a 8 temporariamente bloqueados pelo docente.
+const UNLOCKED_TOPIC_IDS = [1, 2];
 
 // Banco integral de questões por tópico (totalmente preservado para desbloqueio futuro)
 const ALL_TOPIC_COLLECTIONS = {
