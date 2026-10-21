@@ -28,8 +28,12 @@ Total atual: **300 perguntas** (200 ativas para os alunos), de escolha múltipla
 
 - **Modo Treino:** explicação imediata e detalhada após cada resposta.
 - **Modo Simulação Real:** sem consulta durante a prova, temporizador configurável e classificação de 0 a 20 valores com revisão no final.
-- **Caderno de Erros e ⭐ Favoritos:** as perguntas erradas ficam guardadas no navegador para treino dirigido.
-- **Pesquisa rápida** (`Ctrl+K` ou `Cmd+K`) nas perguntas e no glossário.
+- **Caderno de Erros com revisão espaçada e ⭐ Favoritos:** as perguntas erradas ficam guardadas no navegador. Voltam a aparecer ao fim de alguns dias ("Hoje tens N perguntas para rever") e só saem depois de 2 respostas certas em dias diferentes.
+- **Confiança (opcional) no Modo Treino:** o aluno indica se tem certeza, se acha que sim ou se está a adivinhar. Os resultados e as estatísticas mostram a confiança vs. os acertos, e os erros com certeza voltam logo ao caderno.
+- **Teoria em conceitos** (Tópicos 1 e 2): fórmulas, erro comum e aplicação em enfermagem. A partir de qualquer pergunta há o botão "Rever esta parte da teoria", e cada conceito tem "Praticar este conceito". Conteúdo em `js/study-content.js`.
+- **Resultados e estatísticas com orientação:** ponto fraco da sessão, desempenho por conceito e evolução das notas.
+- **Pesquisa rápida** (`Ctrl+K` ou `Cmd+K`) no glossário (definições curtas, sem distinção de acentos) e nas perguntas.
+- **Atalhos no quiz:** `A`–`D` ou `1`–`4` para responder, `Enter` para avançar.
 - **Sessões configuráveis:** 10, 25, 50 perguntas ou o tópico completo; exames de 20 ou 40 perguntas.
 - **Ordem baralhada:** a ordem das perguntas e das opções muda em cada tentativa.
 - **Ficha de trabalho imprimível** (A4 ou PDF através de `window.print()`).

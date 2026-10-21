@@ -443,12 +443,15 @@ class TeacherManager {
 
       // 3. Pesquisa por Texto ou ID
       if (query) {
+        // Índices (F<sub>P</sub>) pesquisam-se como «FP» ou «F_P»
+        const plain = (text) => plainMathText(text || '').toLowerCase();
+        const queryPlain = query.replace(/_/g, '');
         const idMatch = String(q.id).toLowerCase().includes(query);
-        const qMatch = (q.question || '').toLowerCase().includes(query);
-        const expMatch = (q.explanation || '').toLowerCase().includes(query);
-        const nursingMatch = (q.nursingApplication || '').toLowerCase().includes(query);
-        const optMatch = Array.isArray(q.options) && q.options.some(opt => (opt || '').toLowerCase().includes(query));
-        const daMatch = Array.isArray(q.distractorAnalysis) && q.distractorAnalysis.some(da => (da || '').toLowerCase().includes(query));
+        const qMatch = plain(q.question).includes(queryPlain);
+        const expMatch = plain(q.explanation).includes(queryPlain);
+        const nursingMatch = plain(q.nursingApplication).includes(queryPlain);
+        const optMatch = Array.isArray(q.options) && q.options.some(opt => plain(opt).includes(queryPlain));
+        const daMatch = Array.isArray(q.distractorAnalysis) && q.distractorAnalysis.some(da => plain(da).includes(queryPlain));
 
         if (!idMatch && !qMatch && !expMatch && !nursingMatch && !optMatch && !daMatch) {
           return false;
@@ -786,8 +789,8 @@ class TeacherManager {
         const q = this.allQuestions.find(item => item.id === id);
         if (q) {
           report += `[${idx + 1}] ${questionLabel(q.id)}\n`;
-          report += `Enunciado: ${q.question}\n`;
-          report += `Resposta Correta: (${['A', 'B', 'C', 'D'][q.correctIndex]}) ${q.options[q.correctIndex]}\n`;
+          report += `Enunciado: ${plainMathText(q.question, true)}\n`;
+          report += `Resposta Correta: (${['A', 'B', 'C', 'D'][q.correctIndex]}) ${plainMathText(q.options[q.correctIndex], true)}\n`;
           report += `Motivo da Eliminação: Decisão Docente de Auditoria\n\n`;
         }
       });

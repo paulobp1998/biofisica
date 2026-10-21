@@ -151,10 +151,10 @@ const TOPIC_1_QUESTIONS = [
       "Ganha uma aceleração constante, porque a ausência de força deixa o corpo sem resistência."
     ],
     "correctIndex": 0,
-    "explanation": "Quando a força resultante é nula (Fr = 0), o corpo mantém o seu estado de repouso ou continua em movimento retilíneo uniforme (MRU), de acordo com a 1.ª Lei de Newton.",
+    "explanation": "Quando a força resultante é nula (F<sub>R</sub> = 0), o corpo mantém o seu estado de repouso ou continua em movimento retilíneo uniforme (MRU), de acordo com a 1.ª Lei de Newton.",
     "distractorAnalysis": [
       "Está incorreta: Sem força resultante, o corpo não abranda; mantém a velocidade.",
-      "Está incorreta: A rotação não resulta da ausência de forças: depende do momento resultante (ΣM). Fr = 0 garante apenas que a translação não se altera.",
+      "Está incorreta: A rotação não resulta da ausência de forças: depende do momento resultante (ΣM). F<sub>R</sub> = 0 garante apenas que a translação não se altera.",
       "Está incorreta: A aceleração exige força resultante não nula (F = m · a); se F = 0, a aceleração é nula."
     ],
     "nursingApplication": "Explica porque é que uma maca parada numa superfície horizontal nivelada não se move sem intervenção externa."
@@ -303,7 +303,7 @@ const TOPIC_1_QUESTIONS = [
       "3600 N, por multiplicação das intensidades das duas forças aplicadas."
     ],
     "correctIndex": 2,
-    "explanation": "Na mesma direção com sentidos opostos, os vetores subtraem-se: Fr = 60 N - 60 N = 0 N. A força resultante é nula; a maca mantém o seu estado: se estava parada, continua parada; se se movia, mantém velocidade constante (1.ª Lei).",
+    "explanation": "Na mesma direção com sentidos opostos, os vetores subtraem-se: F<sub>R</sub> = 60 N - 60 N = 0 N. A força resultante é nula; a maca mantém o seu estado: se estava parada, continua parada; se se movia, mantém velocidade constante (1.ª Lei).",
     "distractorAnalysis": [
       "Está incorreta: Forças opostas subtraem-se; não se somam.",
       "Está incorreta: Com forças iguais e opostas, nenhuma prevalece; a resultante é nula.",
@@ -379,7 +379,7 @@ const TOPIC_1_QUESTIONS = [
       "2400 N, por multiplicação das intensidades."
     ],
     "correctIndex": 1,
-    "explanation": "Com a mesma direção e o mesmo sentido, somam-se as intensidades: Fr = 60 N + 40 N = 100 N, no sentido do movimento. Esta é a força que determina a aceleração da maca, segundo a 2.ª Lei de Newton.",
+    "explanation": "Com a mesma direção e o mesmo sentido, somam-se as intensidades: F<sub>R</sub> = 60 N + 40 N = 100 N, no sentido do movimento. Esta é a força que determina a aceleração da maca, segundo a 2.ª Lei de Newton.",
     "distractorAnalysis": [
       "Está incorreta: As forças só se anulam quando têm sentidos opostos; aqui têm o mesmo sentido.",
       "Está incorreta: Forças com o mesmo sentido somam-se, e não se subtraem.",
@@ -474,7 +474,7 @@ const TOPIC_1_QUESTIONS = [
       "Porque a pressão atmosférica exerce uma força descendente sobre o assento."
     ],
     "correctIndex": 1,
-    "explanation": "Peso e normal equilibram-se (Fr = 0); em repouso, a cadeira mantém esse estado até que uma força externa resultante não nula atue sobre ela.",
+    "explanation": "Peso e normal equilibram-se (F<sub>R</sub> = 0); em repouso, a cadeira mantém esse estado até que uma força externa resultante não nula atue sobre ela.",
     "distractorAnalysis": [
       "Está incorreta: Num piso horizontal sem força aplicada, o atrito estático é nulo; o atrito só surge contra uma tendência de movimento e não 'cola' a cadeira ao chão.",
       "Está incorreta: A massa não se converte em energia gravitacional; a cadeira fica parada por inércia.",
@@ -525,13 +525,13 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Um utente está confortavelmente deitado no seu leito hospitalar. Qual é a força resultante que atua sobre o seu corpo?",
     "options": [
-      "Zero newtons (Fr = 0 N), porque o corpo está em equilíbrio estático.",
+      "Zero newtons (F<sub>R</sub> = 0 N), porque o corpo está em equilíbrio estático.",
       "Igual à força normal exercida pelo colchão, dirigida para cima.",
       "Igual ao peso do utente, porque a gravidade é a única força que atua sobre ele.",
       "Igual à força muscular dos membros superiores do profissional de saúde."
     ],
     "correctIndex": 0,
-    "explanation": "Estando em repouso estático, a aceleração é nula e a soma vetorial de todas as forças que nele atuam (peso do doente e força normal exercida pelo colchão) é nula: Fr = 0 N.",
+    "explanation": "Estando em repouso estático, a aceleração é nula e a soma vetorial de todas as forças que nele atuam (peso do doente e força normal exercida pelo colchão) é nula: F<sub>R</sub> = 0 N.",
     "distractorAnalysis": [
       "Está incorreta: A normal é apenas uma das forças; equilibra o peso, pelo que a resultante é nula.",
       "Está incorreta: A gravidade atua, mas a força de apoio da cama anula-a; a resultante é nula.",
@@ -772,13 +772,13 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a representação matemática do par ação-reação da 3.ª Lei de Newton?",
     "options": [
-      "F<sub>A->B</sub> + F<sub>B->A</sub> = m · a, com a massa dos dois corpos somada.",
-      "F<sub>A->B</sub> = - F<sub>B->A</sub>, com a mesma intensidade e sentidos opostos.",
-      "F<sub>A->B</sub> / F<sub>B->A</sub> = 0, com as forças a anularem-se mutuamente.",
-      "F<sub>A->B</sub> = F<sub>B->A</sub>², com a intensidade elevada ao quadrado."
+      "F<sub>A→B</sub> + F<sub>B→A</sub> = m · a, com a massa dos dois corpos somada.",
+      "F<sub>A→B</sub> = - F<sub>B→A</sub>, com a mesma intensidade e sentidos opostos.",
+      "F<sub>A→B</sub> / F<sub>B→A</sub> = 0, com as forças a anularem-se mutuamente.",
+      "F<sub>A→B</sub> = F<sub>B→A</sub>², com a intensidade elevada ao quadrado."
     ],
     "correctIndex": 1,
-    "explanation": "Apresenta-se a formulação clássica vetorial: F<sub>A->B</sub> = - F<sub>B->A</sub>, significando que as forças têm a mesma intensidade e direção, mas sentidos opostos.",
+    "explanation": "Apresenta-se a formulação clássica vetorial: F<sub>A→B</sub> = - F<sub>B→A</sub>, significando que as forças têm a mesma intensidade e direção, mas sentidos opostos.",
     "distractorAnalysis": [
       "Está incorreta: As forças atuam em corpos distintos, pelo que somá-las para obter m·a de um único corpo é incorreto.",
       "Está incorreta: O quociente entre as intensidades seria 1, e não 0; as forças atuam em corpos distintos.",
@@ -801,7 +801,7 @@ const TOPIC_1_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: Pela 3.ª Lei, a reação tem a mesma intensidade da ação; não é menor, nem se perde parte no contacto.",
       "Está incorreta: A força de atrito é tangencial e paralela à superfície, não perpendicular.",
-      "Está incorreta: Num corpo acelerado a força resultante é não nula (Fr = m · a), e a 3.ª Lei trata de forças entre corpos distintos."
+      "Está incorreta: Num corpo acelerado a força resultante é não nula (F<sub>R</sub> = m · a), e a 3.ª Lei trata de forças entre corpos distintos."
     ],
     "nursingApplication": "Ensina a ter consciência de que a força que a mão do enfermeiro exerce sobre o utente tem a mesma intensidade da força que o utente exerce sobre a mão."
   },
@@ -998,15 +998,15 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1053,
     "topicId": 1,
-    "question": "Qual é o valor da força resultante (Fr) que atua sobre um corpo em Movimento Retilíneo e Uniforme?",
+    "question": "Qual é o valor da força resultante (F<sub>R</sub>) que atua sobre um corpo em Movimento Retilíneo e Uniforme?",
     "options": [
       "É positiva e superior ao peso do corpo.",
-      "É nula (Fr = 0 N), pois a aceleração também é nula.",
+      "É nula (F<sub>R</sub> = 0 N), pois a aceleração também é nula.",
       "É igual à força de atrito multiplicada pela velocidade.",
       "É variável e depende do valor da velocidade em cada instante."
     ],
     "correctIndex": 1,
-    "explanation": "Como a aceleração é nula (a = 0), pela 2.ª Lei de Newton (Fr = m · a) a força resultante é obrigatoriamente nula: Fr = 0 N.",
+    "explanation": "Como a aceleração é nula (a = 0), pela 2.ª Lei de Newton (F<sub>R</sub> = m · a) a força resultante é obrigatoriamente nula: F<sub>R</sub> = 0 N.",
     "distractorAnalysis": [
       "Está incorreta: Uma força resultante positiva e superior ao peso provocaria aceleração, contrariando o MRU.",
       "Está incorreta: A força não se multiplica pela velocidade; em MRU a força resultante é nula.",
@@ -1021,11 +1021,11 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "A força que o enfermeiro exerce é muito maior do que a força de atrito das rodas.",
       "A maca está a acelerar no sentido do movimento, de forma crescente.",
-      "A força do profissional equilibra a força de atrito, pelo que Fr = 0 N.",
+      "A força do profissional equilibra a força de atrito, pelo que F<sub>R</sub> = 0 N.",
       "A maca deixa de sofrer a força da gravidade durante o trajeto."
     ],
     "correctIndex": 2,
-    "explanation": "Como a velocidade é constante e o movimento é retilíneo, a aceleração é zero. Portanto, a força aplicada para a frente equilibra perfeitamente a resistência de atrito para trás: Fr = 0 N.",
+    "explanation": "Como a velocidade é constante e o movimento é retilíneo, a aceleração é zero. Portanto, a força aplicada para a frente equilibra perfeitamente a resistência de atrito para trás: F<sub>R</sub> = 0 N.",
     "distractorAnalysis": [
       "Está incorreta: Se a força do enfermeiro fosse muito maior que o atrito, a maca aceleraria, contrariando a velocidade constante.",
       "Está incorreta: Com velocidade constante a aceleração é nula; não há aceleração crescente.",
@@ -1041,10 +1041,10 @@ const TOPIC_1_QUESTIONS = [
       "Ambos possuem velocidade diferente de zero e aceleração elevada.",
       "Ambos sofrem forças resultantes elevadas no sentido do movimento.",
       "Ambos têm peso nulo por se encontrarem em superfícies horizontais.",
-      "Em ambos a aceleração é nula (a = 0) e a força resultante é nula (Fr = 0)."
+      "Em ambos a aceleração é nula (a = 0) e a força resultante é nula (F<sub>R</sub> = 0)."
     ],
     "correctIndex": 3,
-    "explanation": "Tanto no repouso estático (v = 0) como no MRU (v = constante), a aceleração é nula (a = 0) e a força resultante é nula (Fr = 0). Ambos constituem estados de equilíbrio translacional.",
+    "explanation": "Tanto no repouso estático (v = 0) como no MRU (v = constante), a aceleração é nula (a = 0) e a força resultante é nula (F<sub>R</sub> = 0). Ambos constituem estados de equilíbrio translacional.",
     "distractorAnalysis": [
       "Está incorreta: Num corpo em repouso a velocidade é nula, e a aceleração não é elevada.",
       "Está incorreta: No equilíbrio a força resultante é nula, e não elevada.",
@@ -1097,15 +1097,15 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "A velocidade tem de ser crescente a uma taxa constante de 1 m/s².",
       "O corpo tem de estar em repouso, com velocidade nula em relação ao solo.",
-      "A resultante de todas as forças que atuam sobre o corpo tem de ser nula (Fr = 0 N).",
+      "A resultante de todas as forças que atuam sobre o corpo tem de ser nula (F<sub>R</sub> = 0 N).",
       "O peso do corpo tem de ser o dobro da força normal de apoio."
     ],
     "correctIndex": 2,
-    "explanation": "O equilíbrio de translação define-se estritamente pela anulação da força resultante: Fr = 0 N (o que engloba tanto o repouso como o MRU).",
+    "explanation": "O equilíbrio de translação define-se estritamente pela anulação da força resultante: F<sub>R</sub> = 0 N (o que engloba tanto o repouso como o MRU).",
     "distractorAnalysis": [
       "Está incorreta: Uma aceleração constante aumenta a velocidade; o equilíbrio de translação exige aceleração nula.",
       "Está incorreta: Um corpo em MRU também está em equilíbrio de translação; a velocidade nula não é necessária.",
-      "Está incorreta: Um corpo apoiado numa superfície horizontal, sem outras forças verticais, tem N = P, e não o dobro; a condição geral é Fr = 0."
+      "Está incorreta: Um corpo apoiado numa superfície horizontal, sem outras forças verticais, tem N = P, e não o dobro; a condição geral é F<sub>R</sub> = 0."
     ],
     "nursingApplication": "Base de análise da segurança postural e estática em suportes terapêuticos e macas."
   },
@@ -1117,10 +1117,10 @@ const TOPIC_1_QUESTIONS = [
       "0 N, pois o carrinho se move sem auxílio no corredor.",
       "36 N, para que a velocidade aumente de forma contínua.",
       "9 N, pois a inércia do carrinho reduz para metade a força necessária.",
-      "18 N, no sentido do movimento, para que a força resultante seja nula (Fr = 0 N)."
+      "18 N, no sentido do movimento, para que a força resultante seja nula (F<sub>R</sub> = 0 N)."
     ],
     "correctIndex": 3,
-    "explanation": "Para manter MRU (aceleração zero e velocidade constante), a força aplicada deve anular exatamente a resistência: F_aplicada - F_atrito = 0 => F_aplicada = 18 N.",
+    "explanation": "Para manter MRU (aceleração zero e velocidade constante), a força aplicada deve anular exatamente a resistência: F<sub>aplicada</sub> - F<sub>atrito</sub> = 0 => F<sub>aplicada</sub> = 18 N.",
     "distractorAnalysis": [
       "Está incorreta: Sem força aplicada, o atrito faria o carrinho abrandar até parar.",
       "Está incorreta: Uma força de 36 N produziria aceleração, contrariando o MRU.",
@@ -1131,7 +1131,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1060,
     "topicId": 1,
-    "question": "Se a força resultante sobre uma maca for nula (Fr = 0 N), o que podemos concluir com certeza?",
+    "question": "Se a força resultante sobre uma maca for nula (F<sub>R</sub> = 0 N), o que podemos concluir com certeza?",
     "options": [
       "A maca está em repouso ou em movimento retilíneo e uniforme.",
       "A maca está a acelerar 9,8 m/s² para a frente, devido ao peso.",
@@ -1139,11 +1139,11 @@ const TOPIC_1_QUESTIONS = [
       "A maca perdeu o contacto com o chão, mas mantém-se em equilíbrio."
     ],
     "correctIndex": 0,
-    "explanation": "Força resultante nula (Fr = 0) é a condição exata que dita que o corpo ou está parado (repouso) ou se desloca em linha reta com velocidade invariável (MRU).",
+    "explanation": "Força resultante nula (F<sub>R</sub> = 0) é a condição exata que dita que o corpo ou está parado (repouso) ou se desloca em linha reta com velocidade invariável (MRU).",
     "distractorAnalysis": [
-      "Está incorreta: Com Fr = 0 não há aceleração; a maca não acelera 9,8 m/s² para a frente.",
+      "Está incorreta: Com F<sub>R</sub> = 0 não há aceleração; a maca não acelera 9,8 m/s² para a frente.",
       "Está incorreta: A massa de um corpo é constante e não se reduz por aplicar uma força.",
-      "Está incorreta: Fr = 0 não implica perda de contacto; a maca continua apoiada no chão."
+      "Está incorreta: F<sub>R</sub> = 0 não implica perda de contacto; a maca continua apoiada no chão."
     ],
     "nursingApplication": "Mostra como interpretar a ausência de força resultante numa maca parada com o travão aplicado."
   },
@@ -1477,11 +1477,11 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Aumenta proporcionalmente para o triplo do peso original.",
       "Permanece inalterada, mesmo com a cama inclinada.",
-      "Diminui, pois a normal equilibra a componente perpendicular do peso (P_n = P · cos θ).",
+      "Diminui, pois a normal equilibra a componente perpendicular do peso (P<sub>n</sub> = P · cos θ).",
       "Transforma-se numa força eletromagnética que atrai o doente para a parede."
     ],
     "correctIndex": 2,
-    "explanation": "No plano inclinado, a força normal equilibra apenas a componente perpendicular do peso (N = P_n = P · cos θ). À medida que a cama inclina, P_n diminui e a componente tangencial P_t aumenta; o corpo só desliza se P_t ultrapassar o atrito estático máximo.",
+    "explanation": "No plano inclinado, a força normal equilibra apenas a componente perpendicular do peso (N = P<sub>n</sub> = P · cos θ). À medida que a cama inclina, P<sub>n</sub> diminui e a componente tangencial P<sub>t</sub> aumenta; o corpo só desliza se P<sub>t</sub> ultrapassar o atrito estático máximo.",
     "distractorAnalysis": [
       "Está incorreta: A força normal não excede o peso num plano inclinado sem forças externas adicionais.",
       "Está incorreta: A força normal varia com o cosseno da inclinação, diminuindo com o aumento do ângulo.",
@@ -1614,7 +1614,7 @@ const TOPIC_1_QUESTIONS = [
       "196 N, resultante de multiplicar a força pela gravidade local."
     ],
     "correctIndex": 1,
-    "explanation": "Enquanto o corpo permanece em repouso, o atrito estático ajusta-se exatamente ao valor da força aplicada para manter o equilíbrio: F_atrito = 20 N (Fr = 0). Os 50 N representam apenas o limite máximo antes de romper o repouso.",
+    "explanation": "Enquanto o corpo permanece em repouso, o atrito estático ajusta-se exatamente ao valor da força aplicada para manter o equilíbrio: F<sub>atrito</sub> = 20 N (F<sub>R</sub> = 0). Os 50 N representam apenas o limite máximo antes de romper o repouso.",
     "distractorAnalysis": [
       "Está incorreta: O atrito estático não atinge o máximo de 50 N; ajusta-se à força aplicada, e a maca não se move.",
       "Está incorreta: O atrito estático existe com o corpo parado e ajusta-se à força aplicada.",
@@ -1705,13 +1705,13 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "A maca vai acelerar continuamente, ganhando 10 m/s em cada segundo.",
       "A maca vai travar e parar em menos de um segundo.",
-      "A força resultante é nula (Fr = 0 N) e a maca prossegue em MRU.",
+      "A força resultante é nula (F<sub>R</sub> = 0 N) e a maca prossegue em MRU.",
       "O atrito desaparece, pois a maca deixa de tocar no chão durante a viagem."
     ],
     "correctIndex": 2,
-    "explanation": "A força resultante é F_aplicada - F_atrito = 25 N - 25 N = 0 N. Com Fr = 0 N, o corpo em movimento mantém a sua velocidade constante em Movimento Retilíneo e Uniforme (MRU).",
+    "explanation": "A força resultante é F<sub>aplicada</sub> - F<sub>atrito</sub> = 25 N - 25 N = 0 N. Com F<sub>R</sub> = 0 N, o corpo em movimento mantém a sua velocidade constante em Movimento Retilíneo e Uniforme (MRU).",
     "distractorAnalysis": [
-      "Está incorreta: Com Fr = 0 N não há aceleração; a maca não ganha velocidade.",
+      "Está incorreta: Com F<sub>R</sub> = 0 N não há aceleração; a maca não ganha velocidade.",
       "Está incorreta: Sem força resultante contrária, a maca não trava; mantém a velocidade.",
       "Está incorreta: O atrito não desaparece; a maca continua em contacto com o chão."
     ],
@@ -1994,7 +1994,7 @@ const TOPIC_1_QUESTIONS = [
       "A intensidade de ambas as forças é nula, porque a colisão é instantânea."
     ],
     "correctIndex": 1,
-    "explanation": "A 3.ª Lei de Newton impõe igualdade estrita de intensidade para qualquer par de forças de interação: F_enfermeiro->divisória = F_divisória->enfermeiro.",
+    "explanation": "A 3.ª Lei de Newton impõe igualdade estrita de intensidade para qualquer par de forças de interação: F<sub>enfermeiro→divisória</sub> = F<sub>divisória→enfermeiro</sub>.",
     "distractorAnalysis": [
       "Está incorreta: A 3.ª Lei impõe igualdade de intensidade entre as forças de ação e de reação.",
       "Está incorreta: A massa do enfermeiro não altera a igualdade entre as forças de ação e reação; altera a aceleração de cada corpo.",
@@ -2168,7 +2168,7 @@ const TOPIC_1_QUESTIONS = [
     "explanation": "Destaca-se que o equilíbrio exige apenas força resultante nula, e não a ausência de forças sobre o corpo.",
     "distractorAnalysis": [
       "Está incorreta: Um corpo em equilíbrio pode ter várias forças a atuar sobre ele, com resultante nula.",
-      "Está incorreta: Em movimento retilíneo uniforme também Fr = 0, pelo que há equilíbrio sem repouso.",
+      "Está incorreta: Em movimento retilíneo uniforme também F<sub>R</sub> = 0, pelo que há equilíbrio sem repouso.",
       "Está incorreta: A relação entre a normal e o atrito não é condição geral de equilíbrio."
     ],
     "nursingApplication": "Ensina a identificar que um doente em repouso no leito tem várias forças a atuar sobre ele, cuja resultante é nula."
@@ -2233,18 +2233,18 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1118,
     "topicId": 1,
-    "question": "Se a força resultante Fr sobre um corpo for diferente de zero, o que acontece obrigatoriamente ao corpo segundo as Leis de Newton?",
+    "question": "Se a força resultante F<sub>R</sub> sobre um corpo for diferente de zero, o que acontece obrigatoriamente ao corpo segundo as Leis de Newton?",
     "options": [
       "Permanece em equilíbrio, mantendo a velocidade constante.",
       "Entra em equilíbrio estável, pois a força resultante é compensada.",
-      "Não está em equilíbrio e sofre aceleração (a = Fr / m).",
+      "Não está em equilíbrio e sofre aceleração (a = F<sub>R</sub> / m).",
       "Mantém a sua velocidade, mas a sua massa aumenta por efeito da força."
     ],
     "correctIndex": 2,
-    "explanation": "Por definição, estar em equilíbrio exige Fr = 0 N. Se a força resultante não for nula, o corpo é acelerado pela 2.ª Lei de Newton (Fr = m · a), rompendo o equilíbrio.",
+    "explanation": "Por definição, estar em equilíbrio exige F<sub>R</sub> = 0 N. Se a força resultante não for nula, o corpo é acelerado pela 2.ª Lei de Newton (F<sub>R</sub> = m · a), rompendo o equilíbrio.",
     "distractorAnalysis": [
-      "Está incorreta: Com Fr diferente de zero há aceleração: a velocidade varia e não há equilíbrio.",
-      "Está incorreta: Com Fr diferente de zero, não há compensação; o equilíbrio não se estabelece.",
+      "Está incorreta: Com F<sub>R</sub> diferente de zero há aceleração: a velocidade varia e não há equilíbrio.",
+      "Está incorreta: Com F<sub>R</sub> diferente de zero, não há compensação; o equilíbrio não se estabelece.",
       "Está incorreta: A massa é uma propriedade constante e não aumenta por efeito de uma força."
     ],
     "nursingApplication": "Permite analisar as acelerações do corpo durante a marcha de doentes em reabilitação, que não estão em equilíbrio."
@@ -2260,7 +2260,7 @@ const TOPIC_1_QUESTIONS = [
       "A força resultante e o momento resultante têm de ser nulos."
     ],
     "correctIndex": 3,
-    "explanation": "O equilíbrio mecânico total de um corpo rígido exige que não haja aceleração linear (Fr = 0 N) nem aceleração angular de rotação (Momento resultante Mr = 0 N·m).",
+    "explanation": "O equilíbrio mecânico total de um corpo rígido exige que não haja aceleração linear (F<sub>R</sub> = 0 N) nem aceleração angular de rotação (Momento resultante M<sub>R</sub> = 0 N·m).",
     "distractorAnalysis": [
       "Está incorreta: Com força resultante nula mas momento resultante não nulo (por exemplo, um binário), o corpo roda; também é necessário M = 0.",
       "Está incorreta: As forças podem ter intensidades diferentes; o que importa é que a força resultante e o momento resultante sejam nulos.",
@@ -2273,7 +2273,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Um utente sentado numa poltrona hospitalar com os pés apoiados no chão e as costas encostadas encontra-se numa situação de equilíbrio mecânico estável porque:",
     "options": [
-      "Fr = 0 e M = 0; se ligeiramente desviado, o corpo regressa à posição inicial.",
+      "F<sub>R</sub> = 0 e M = 0; se ligeiramente desviado, o corpo regressa à posição inicial.",
       "A força de gravidade deixou de puxar o seu corpo em direção ao chão.",
       "A força normal exercida pelo assento tem intensidade muito superior ao peso.",
       "O utente perde a sua inércia quando se encosta aos braços da cadeira."
@@ -2290,19 +2290,19 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1121,
     "topicId": 1,
-    "question": "Um corpo está em repouso sobre um plano inclinado, sujeito ao seu peso P, à força normal N e à força de atrito F_a. Como se definem as componentes P_n e P_t do peso?",
+    "question": "Um corpo está em repouso sobre um plano inclinado, sujeito ao seu peso P, à força normal N e à força de atrito F<sub>a</sub>. Como se definem as componentes P<sub>n</sub> e P<sub>t</sub> do peso?",
     "options": [
-      "P = Peso; P_n e P_t = componentes vertical e horizontal do peso; N = Força normal; F_a = Força de atrito.",
-      "P = Peso; P_n e P_t = componentes do peso perpendicular e paralela ao plano; N = Força normal; F_a = Força de atrito.",
-      "P = Potência mecânica; P_n = Ponto neutro da articulação; P_t = Ponto de tração; N = Núcleo; F_a = Fulcro articular.",
-      "P = Pressão; P_n e P_t = pressões normal e tangencial; N = newton (unidade); F_a = Força aplicada."
+      "P = Peso; P<sub>n</sub> e P<sub>t</sub> = componentes vertical e horizontal do peso; N = Força normal; F<sub>a</sub> = Força de atrito.",
+      "P = Peso; P<sub>n</sub> e P<sub>t</sub> = componentes do peso perpendicular e paralela ao plano; N = Força normal; F<sub>a</sub> = Força de atrito.",
+      "P = Potência mecânica; P<sub>n</sub> = Ponto neutro da articulação; P<sub>t</sub> = Ponto de tração; N = Núcleo; F<sub>a</sub> = Fulcro articular.",
+      "P = Pressão; P<sub>n</sub> e P<sub>t</sub> = pressões normal e tangencial; N = newton (unidade); F<sub>a</sub> = Força aplicada."
     ],
     "correctIndex": 1,
-    "explanation": "P_n e P_t são as componentes do peso perpendicular e paralela ao plano inclinado (não vertical e horizontal, que só coincidem com estas num plano horizontal). Legenda: P = peso do corpo | N = força normal | F_a = força de atrito.",
+    "explanation": "P<sub>n</sub> e P<sub>t</sub> são as componentes do peso perpendicular e paralela ao plano inclinado (não vertical e horizontal, que só coincidem com estas num plano horizontal). Legenda: P = peso do corpo | N = força normal | F<sub>a</sub> = força de atrito.",
     "distractorAnalysis": [
-      "Está incorreta: Num plano inclinado, P_n e P_t são as componentes perpendicular e paralela ao plano, e não vertical e horizontal.",
+      "Está incorreta: Num plano inclinado, P<sub>n</sub> e P<sub>t</sub> são as componentes perpendicular e paralela ao plano, e não vertical e horizontal.",
       "Está incorreta: Potência e fulcro articular não constam no diagrama de forças do bloco no plano inclinado.",
-      "Está incorreta: P é o peso (uma força), N é a força normal, e não a unidade newton, e F_a é a força de atrito."
+      "Está incorreta: P é o peso (uma força), N é a força normal, e não a unidade newton, e F<sub>a</sub> é a força de atrito."
     ],
     "nursingApplication": "Garante a correta leitura e interpretação de diagramas de forças em rampas de acesso para macas e cadeiras de rodas."
   },
@@ -2311,35 +2311,35 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Quais são as relações de igualdade que traduzem o equilíbrio do corpo no plano inclinado?",
     "options": [
-      "P = N e P_n = P_t",
-      "F_a = N e P = 0",
-      "P_n = N e P_t = F_a",
-      "P_t = N e P_n = F_a"
+      "P = N e P<sub>n</sub> = P<sub>t</sub>",
+      "F<sub>a</sub> = N e P = 0",
+      "P<sub>n</sub> = N e P<sub>t</sub> = F<sub>a</sub>",
+      "P<sub>t</sub> = N e P<sub>n</sub> = F<sub>a</sub>"
     ],
     "correctIndex": 2,
-    "explanation": "Em equilíbrio, P_n = N e P_t = F_a (a componente perpendicular do peso iguala a força normal, e a componente paralela do peso iguala a força de atrito).",
+    "explanation": "Em equilíbrio, P<sub>n</sub> = N e P<sub>t</sub> = F<sub>a</sub> (a componente perpendicular do peso iguala a força normal, e a componente paralela do peso iguala a força de atrito).",
     "distractorAnalysis": [
-      "Está incorreta: Num plano inclinado P não é igual a N (N equilibra apenas P_n); P_n = P_t só ocorre a 45°.",
-      "Está incorreta: O atrito equilibra P_t, não N; e P = 0 não é condição de equilíbrio.",
-      "Está incorreta: As correspondências estão trocadas: a normal N atua na direção de P_n e o atrito F_a na direção de P_t."
+      "Está incorreta: Num plano inclinado P não é igual a N (N equilibra apenas P<sub>n</sub>); P<sub>n</sub> = P<sub>t</sub> só ocorre a 45°.",
+      "Está incorreta: O atrito equilibra P<sub>t</sub>, não N; e P = 0 não é condição de equilíbrio.",
+      "Está incorreta: As correspondências estão trocadas: a normal N atua na direção de P<sub>n</sub> e o atrito F<sub>a</sub> na direção de P<sub>t</sub>."
     ],
     "nursingApplication": "Essencial para calcular a força de travagem necessária para manter uma cadeira de rodas imobilizada numa rampa."
   },
   {
     "id": 1123,
     "topicId": 1,
-    "question": "Qual é o papel biomecânico da força de atrito (F_a) no equilíbrio de uma cadeira de rodas numa rampa hospitalar inclinada?",
+    "question": "Qual é o papel biomecânico da força de atrito (F<sub>a</sub>) no equilíbrio de uma cadeira de rodas numa rampa hospitalar inclinada?",
     "options": [
-      "Atuar paralelamente à rampa, no sentido descendente, somando-se a P_t.",
-      "Aumentar a componente do peso P_n para colar os pneus ao piso.",
+      "Atuar paralelamente à rampa, no sentido descendente, somando-se a P<sub>t</sub>.",
+      "Aumentar a componente do peso P<sub>n</sub> para colar os pneus ao piso.",
       "Reduzir a massa inercial do passageiro, tornando-o mais leve na rampa.",
-      "Atuar paralelamente à rampa, no sentido ascendente, equilibrando P_t."
+      "Atuar paralelamente à rampa, no sentido ascendente, equilibrando P<sub>t</sub>."
     ],
     "correctIndex": 3,
-    "explanation": "A gravidade tende a puxar a cadeira rampa abaixo com a componente P_t do peso. A força de atrito (pneus/travões) atua em sentido contrário (rampa acima) equilibrando P_t (F_a = P_t) para impedir a descida descontrolada.",
+    "explanation": "A gravidade tende a puxar a cadeira rampa abaixo com a componente P<sub>t</sub> do peso. A força de atrito (pneus/travões) atua em sentido contrário (rampa acima) equilibrando P<sub>t</sub> (F<sub>a</sub> = P<sub>t</sub>) para impedir a descida descontrolada.",
     "distractorAnalysis": [
-      "Está incorreta: O atrito opõe-se à tendência de deslizamento; como P_t aponta rampa abaixo, o atrito aponta rampa acima.",
-      "Está incorreta: A componente P_n não depende do atrito; a força que se opõe ao deslizamento é a de atrito.",
+      "Está incorreta: O atrito opõe-se à tendência de deslizamento; como P<sub>t</sub> aponta rampa abaixo, o atrito aponta rampa acima.",
+      "Está incorreta: A componente P<sub>n</sub> não depende do atrito; a força que se opõe ao deslizamento é a de atrito.",
       "Está incorreta: A massa do passageiro não se altera numa rampa."
     ],
     "nursingApplication": "Sublinha a necessidade imperativa de verificar o funcionamento dos travões de estacionamento antes de largar uma cadeira na rampa."
@@ -2347,7 +2347,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1124,
     "topicId": 1,
-    "question": "Qual é a orientação geométrica da componente P_n do peso num corpo apoiado num plano inclinado?",
+    "question": "Qual é a orientação geométrica da componente P<sub>n</sub> do peso num corpo apoiado num plano inclinado?",
     "options": [
       "Perpendicular ao plano inclinado, apontando contra a superfície.",
       "Paralela à rampa inclinada, apontando para a base da rampa.",
@@ -2355,10 +2355,10 @@ const TOPIC_1_QUESTIONS = [
       "Vertical ascendente, afastando o corpo do chão da rampa."
     ],
     "correctIndex": 0,
-    "explanation": "A componente normal P_n atua perpendicularmente à superfície inclinada pressionando o corpo contra a rampa, sendo exatamente contrabalançada pela Força Normal N exercida pela rampa.",
+    "explanation": "A componente normal P<sub>n</sub> atua perpendicularmente à superfície inclinada pressionando o corpo contra a rampa, sendo exatamente contrabalançada pela Força Normal N exercida pela rampa.",
     "distractorAnalysis": [
-      "Está incorreta: A componente paralela é P_t, e aponta para a base da rampa.",
-      "Está incorreta: A direção vertical é a do peso total P; a componente P_n é perpendicular ao plano e só coincide com P num plano horizontal.",
+      "Está incorreta: A componente paralela é P<sub>t</sub>, e aponta para a base da rampa.",
+      "Está incorreta: A direção vertical é a do peso total P; a componente P<sub>n</sub> é perpendicular ao plano e só coincide com P num plano horizontal.",
       "Está incorreta: O peso aponta para baixo, e não para cima."
     ],
     "nursingApplication": "Permite entender porque a pressão sobre a superfície de apoio diminui à medida que o plano fica mais empinado."
@@ -2366,37 +2366,37 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1125,
     "topicId": 1,
-    "question": "O que acontece à componente tangencial do peso P_t se a inclinação de uma rampa hospitalar for aumentada de 5 graus para 20 graus?",
+    "question": "O que acontece à componente tangencial do peso P<sub>t</sub> se a inclinação de uma rampa hospitalar for aumentada de 5 graus para 20 graus?",
     "options": [
       "Diminui para metade, o que facilita a retenção da maca no plano.",
-      "Aumenta, exigindo maior atrito (F_a) para evitar que o corpo deslize.",
+      "Aumenta, exigindo maior atrito (F<sub>a</sub>) para evitar que o corpo deslize.",
       "Permanece inalterada, porque a massa do doente não muda.",
       "Anula-se, transformando-se em força normal N, sem alterar o deslizamento."
     ],
     "correctIndex": 1,
-    "explanation": "À medida que o ângulo de inclinação sobe, a componente tangencial ao longo do plano P_t aumenta substancialmente (P_t = P · sen θ: de sen 5° ≈ 0,09 para sen 20° ≈ 0,34, quase 4 vezes mais). Para manter o equilíbrio (P_t = F_a), a força de atrito ou a força exercida pelo profissional tem de ser muito maior.",
+    "explanation": "À medida que o ângulo de inclinação sobe, a componente tangencial ao longo do plano P<sub>t</sub> aumenta substancialmente (P<sub>t</sub> = P · sen θ: de sen 5° ≈ 0,09 para sen 20° ≈ 0,34, quase 4 vezes mais). Para manter o equilíbrio (P<sub>t</sub> = F<sub>a</sub>), a força de atrito ou a força exercida pelo profissional tem de ser muito maior.",
     "distractorAnalysis": [
-      "Está incorreta: Ao aumentar a inclinação, P_t aumenta; não diminui para metade.",
-      "Está incorreta: P_t depende da inclinação e varia com ela, mesmo com a massa constante.",
-      "Está incorreta: P_t não se transforma em força normal; é a componente tangencial do peso."
+      "Está incorreta: Ao aumentar a inclinação, P<sub>t</sub> aumenta; não diminui para metade.",
+      "Está incorreta: P<sub>t</sub> depende da inclinação e varia com ela, mesmo com a massa constante.",
+      "Está incorreta: P<sub>t</sub> não se transforma em força normal; é a componente tangencial do peso."
     ],
     "nursingApplication": "Explica porque as rampas de acesso devem ter a inclinação mais suave possível, para reduzir a força de atrito ou de travagem necessária para manter a cadeira ou a maca parada."
   },
   {
     "id": 1126,
     "topicId": 1,
-    "question": "Se uma maca for deixada numa rampa inclinada com os travões soltos num piso molhado sem atrito (F_a = 0 N):",
+    "question": "Se uma maca for deixada numa rampa inclinada com os travões soltos num piso molhado sem atrito (F<sub>a</sub> = 0 N):",
     "options": [
       "A maca fica parada, em equilíbrio indiferente, sem tendência para descer.",
-      "A maca sobe a rampa, impulsionada pela componente normal P_n.",
-      "A maca fica com Fr = P_t e desce a rampa com movimento acelerado.",
+      "A maca sobe a rampa, impulsionada pela componente normal P<sub>n</sub>.",
+      "A maca fica com F<sub>R</sub> = P<sub>t</sub> e desce a rampa com movimento acelerado.",
       "A maca mantém o peso, mas passa a ter força normal nula na rampa."
     ],
     "correctIndex": 2,
-    "explanation": "Sem atrito (F_a = 0), a componente P_t ao longo da rampa não tem oposição. Pela 2.ª Lei de Newton (Fr = m · a), a força resultante Fr = P_t acelera a maca rampa abaixo.",
+    "explanation": "Sem atrito (F<sub>a</sub> = 0), a componente P<sub>t</sub> ao longo da rampa não tem oposição. Pela 2.ª Lei de Newton (F<sub>R</sub> = m · a), a força resultante F<sub>R</sub> = P<sub>t</sub> acelera a maca rampa abaixo.",
     "distractorAnalysis": [
-      "Está incorreta: Sem atrito, a componente P_t não é equilibrada, e a maca não fica parada.",
-      "Está incorreta: A componente normal P_n é perpendicular à rampa e não a faz subir.",
+      "Está incorreta: Sem atrito, a componente P<sub>t</sub> não é equilibrada, e a maca não fica parada.",
+      "Está incorreta: A componente normal P<sub>n</sub> é perpendicular à rampa e não a faz subir.",
       "Está incorreta: A força normal existe enquanto a maca estiver apoiada na rampa; não se anula."
     ],
     "nursingApplication": "Regra crítica de segurança de enfermagem: nunca deixar macas ou cadeiras paradas em rampas sem ativar os travões."
@@ -2404,15 +2404,15 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1127,
     "topicId": 1,
-    "question": "Num plano perfeitamente horizontal (inclinação de zero graus), qual é a relação entre o peso P e as componentes P_n e P_t?",
+    "question": "Num plano perfeitamente horizontal (inclinação de zero graus), qual é a relação entre o peso P e as componentes P<sub>n</sub> e P<sub>t</sub>?",
     "options": [
-      "P_t é igual a P e P_n é nula, pois não há inclinação a considerar.",
-      "P_n e P_t têm o mesmo valor, igual a metade do peso, por simetria do plano.",
-      "Tanto P_n como P_t anulam-se, ficando o peso nulo, sem força que o equilibre.",
-      "P_n é igual ao peso P (P_n = P = N), e a componente tangencial P_t é nula."
+      "P<sub>t</sub> é igual a P e P<sub>n</sub> é nula, pois não há inclinação a considerar.",
+      "P<sub>n</sub> e P<sub>t</sub> têm o mesmo valor, igual a metade do peso, por simetria do plano.",
+      "Tanto P<sub>n</sub> como P<sub>t</sub> anulam-se, ficando o peso nulo, sem força que o equilibre.",
+      "P<sub>n</sub> é igual ao peso P (P<sub>n</sub> = P = N), e a componente tangencial P<sub>t</sub> é nula."
     ],
     "correctIndex": 3,
-    "explanation": "Na horizontal, a gravidade atua estritamente perpendicular ao plano: todo o peso coincide com a componente normal (P_n = P), sendo suportado pela força normal N, enquanto a tendência de deslizamento é nula (P_t = 0).",
+    "explanation": "Na horizontal, a gravidade atua estritamente perpendicular ao plano: todo o peso coincide com a componente normal (P<sub>n</sub> = P), sendo suportado pela força normal N, enquanto a tendência de deslizamento é nula (P<sub>t</sub> = 0).",
     "distractorAnalysis": [
       "Está incorreta: Na horizontal, a componente tangencial é nula, e não igual ao peso.",
       "Está incorreta: Na horizontal, toda a componente do peso fica perpendicular à superfície.",
@@ -2425,17 +2425,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Ao descer uma rampa inclinada com um doente na cadeira de rodas com velocidade constante, que esforço realiza o enfermeiro?",
     "options": [
-      "Aplica uma força rampa acima, para equilibrar P_t e descer sem acelerar.",
+      "Aplica uma força rampa acima, para equilibrar P<sub>t</sub> e descer sem acelerar.",
       "Empurra a cadeira com força máxima rampa abaixo, para acelerar a chegada ao serviço.",
       "Não aplica força, pois velocidade constante significa que não atuam forças na cadeira.",
       "Caminha de costas, sem olhar para o doente, confiando no atrito do piso."
     ],
     "correctIndex": 0,
-    "explanation": "Para que a descida ocorra com velocidade constante (MRU com Fr = 0 N), a força de retenção aplicada pelo profissional somada ao atrito deve equilibrar a componente P_t do peso que puxa a cadeira rampa abaixo.",
+    "explanation": "Para que a descida ocorra com velocidade constante (MRU com F<sub>R</sub> = 0 N), a força de retenção aplicada pelo profissional somada ao atrito deve equilibrar a componente P<sub>t</sub> do peso que puxa a cadeira rampa abaixo.",
     "distractorAnalysis": [
       "Está incorreta: Empurrar com força máxima rampa abaixo acelera a cadeira, contrariando a velocidade constante.",
-      "Está incorreta: Velocidade constante significa força resultante nula, e não ausência de forças; P_t continua a atuar e tem de ser equilibrada.",
-      "Está incorreta: Descer de marcha-atrás pode ser adequado, mas exige vigiar o percurso e aplicar força de retenção rampa acima; o atrito, por si só, não equilibra P_t."
+      "Está incorreta: Velocidade constante significa força resultante nula, e não ausência de forças; P<sub>t</sub> continua a atuar e tem de ser equilibrada.",
+      "Está incorreta: Descer de marcha-atrás pode ser adequado, mas exige vigiar o percurso e aplicar força de retenção rampa acima; o atrito, por si só, não equilibra P<sub>t</sub>."
     ],
     "nursingApplication": "Técnica ergonómica recomendada de condução de cadeiras de rodas em rampas íngremes: descer de marcha-atrás com apoio do corpo para retenção."
   },
@@ -2444,15 +2444,15 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual das forças no diagrama do plano inclinado é perpendicular à força normal N?",
     "options": [
-      "A componente normal do peso P_n, que pressiona o corpo contra a rampa.",
-      "A força de atrito F_a (e a componente P_t), paralela à superfície.",
+      "A componente normal do peso P<sub>n</sub>, que pressiona o corpo contra a rampa.",
+      "A força de atrito F<sub>a</sub> (e a componente P<sub>t</sub>), paralela à superfície.",
       "O peso total P, que mantém a mesma direção em todas as inclinações.",
       "Não há força perpendicular, pois todas as forças são paralelas entre si."
     ],
     "correctIndex": 1,
-    "explanation": "A Força Normal N é perpendicular à superfície de apoio; a força de atrito F_a e a componente P_t atuam paralelamente à superfície de apoio. Logo, a direção de N e a de F_a formam um ângulo de 90 graus (são perpendiculares).",
+    "explanation": "A Força Normal N é perpendicular à superfície de apoio; a força de atrito F<sub>a</sub> e a componente P<sub>t</sub> atuam paralelamente à superfície de apoio. Logo, a direção de N e a de F<sub>a</sub> formam um ângulo de 90 graus (são perpendiculares).",
     "distractorAnalysis": [
-      "Está incorreta: P_n é paralela à normal N, pois ambas são perpendiculares à superfície.",
+      "Está incorreta: P<sub>n</sub> é paralela à normal N, pois ambas são perpendiculares à superfície.",
       "Está incorreta: O peso total tem direção vertical, e não é perpendicular a N numa rampa inclinada.",
       "Está incorreta: As forças do diagrama não são todas paralelas entre si."
     ],
@@ -2465,15 +2465,15 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Pela força de atrito entre a pele e o lençol, que arrasta o corpo para os pés.",
       "Pela força eletromagnética gerada pelo motor elétrico do leito.",
-      "Pela componente tangencial do peso (P_t), paralela ao colchão e dirigida para os pés.",
-      "Pela componente normal P_n, perpendicular ao colchão, que empurra o corpo para baixo."
+      "Pela componente tangencial do peso (P<sub>t</sub>), paralela ao colchão e dirigida para os pés.",
+      "Pela componente normal P<sub>n</sub>, perpendicular ao colchão, que empurra o corpo para baixo."
     ],
     "correctIndex": 2,
-    "explanation": "A elevação da cabeceira cria um plano inclinado onde a gravidade se projeta na componente P_t ao longo da cama. P_t tende a deslocar o esqueleto para os pés; o atrito pele–lençol retém a pele, e a diferença deforma os tecidos profundos (cisalhamento sacrococcígeo). Se P_t exceder o atrito estático máximo, o doente escorrega.",
+    "explanation": "A elevação da cabeceira cria um plano inclinado onde a gravidade se projeta na componente P<sub>t</sub> ao longo da cama. P<sub>t</sub> tende a deslocar o esqueleto para os pés; o atrito pele–lençol retém a pele, e a diferença deforma os tecidos profundos (cisalhamento sacrococcígeo). Se P<sub>t</sub> exceder o atrito estático máximo, o doente escorrega.",
     "distractorAnalysis": [
       "Está incorreta: O atrito pele–lençol opõe-se ao deslizamento e retém a pele; não é a força que desloca o corpo para os pés.",
       "Está incorreta: O motor do leito não é a origem do deslizamento; a origem é a componente do peso.",
-      "Está incorreta: A componente normal P_n é perpendicular ao colchão e não provoca deslizamento."
+      "Está incorreta: A componente normal P<sub>n</sub> é perpendicular ao colchão e não provoca deslizamento."
     ],
     "nursingApplication": "Identifica o mecanismo biofísico na génese de forças de cisalhamento e lesões sacrococcígeas em camas articuladas."
   },
@@ -2708,7 +2708,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1143,
     "topicId": 1,
-    "question": "Como se define a 'Força Potente' (F_P) no funcionamento mecânico de uma alavanca?",
+    "question": "Como se define a 'Força Potente' (F<sub>Potente</sub>) no funcionamento mecânico de uma alavanca?",
     "options": [
       "Força exercida pela atração da gravidade sobre a barra.",
       "Força contrária que dificulta o movimento da carga.",
@@ -2727,7 +2727,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1144,
     "topicId": 1,
-    "question": "Como se define a 'Força Resistente' (F_R) no funcionamento mecânico de uma alavanca?",
+    "question": "Como se define a 'Força Resistente' (F<sub>Resis.</sub>) no funcionamento mecânico de uma alavanca?",
     "options": [
       "Força contrária que dificulta o movimento da carga.",
       "Força motora aplicada pelo músculo para acelerar o membro.",
@@ -2767,13 +2767,13 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a formulação da Lei das Alavancas em situação de equilíbrio?",
     "options": [
-      "F_P + b_P = F_R + b_R",
-      "F_P / b_P = F_R / b_R",
-      "F_P · b_P = F_R · b_R",
-      "F_P · F_R = b_P · b_R"
+      "F<sub>Potente</sub> + b<sub>Potente</sub> = F<sub>Resis.</sub> + b<sub>Resis.</sub>",
+      "F<sub>Potente</sub> / b<sub>Potente</sub> = F<sub>Resis.</sub> / b<sub>Resis.</sub>",
+      "F<sub>Potente</sub> · b<sub>Potente</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub>",
+      "F<sub>Potente</sub> · F<sub>Resis.</sub> = b<sub>Potente</sub> · b<sub>Resis.</sub>"
     ],
     "correctIndex": 2,
-    "explanation": "Apresenta-se a clássica Lei das Alavancas: 'Em equilíbrio: F_P · b_P = F_R · b_R' (o produto da força potente pelo seu braço é igual ao produto da força resistente pelo seu braço).",
+    "explanation": "Apresenta-se a clássica Lei das Alavancas: 'Em equilíbrio: F<sub>Potente</sub> · b<sub>Potente</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub>' (o produto da força potente pelo seu braço é igual ao produto da força resistente pelo seu braço).",
     "distractorAnalysis": [
       "Está incorreta: Não se somam forças com distâncias por terem grandezas físicas e unidades diferentes (N vs m).",
       "Está incorreta: A relação física é um produto de fatores (momentos), não uma razão de quocientes.",
@@ -2784,15 +2784,15 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1147,
     "topicId": 1,
-    "question": "O que traduz fisicamente a igualdade F_P · b_P = F_R · b_R em termos da teoria dos momentos?",
+    "question": "O que traduz fisicamente a igualdade F<sub>Potente</sub> · b<sub>Potente</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub> em termos da teoria dos momentos?",
     "options": [
-      "Que a força potente é igual à força resistente (F_P = F_R).",
+      "Que a força potente é igual à força resistente (F<sub>Potente</sub> = F<sub>Resis.</sub>).",
       "Que a massa do fulcro é igual à soma das massas potentes e resistentes.",
       "Que a alavanca deixa de sofrer a força da gravidade durante o equilíbrio.",
-      "Que o momento potente iguala o momento resistente (M_P = M_R) em torno do fulcro."
+      "Que o momento potente iguala o momento resistente em torno do fulcro."
     ],
     "correctIndex": 3,
-    "explanation": "Como M = F · b, a Lei das Alavancas afirma simplesmente que o momento de rotação no sentido potente anula o momento de rotação no sentido resistente: M_P = M_R, resultando em equilíbrio de rotação (aceleração angular nula).",
+    "explanation": "Como M = F · b, a Lei das Alavancas afirma simplesmente que o momento de rotação no sentido potente anula o momento de rotação no sentido resistente: M<sub>Potente</sub> = M<sub>Resis.</sub>, resultando em equilíbrio de rotação (aceleração angular nula).",
     "distractorAnalysis": [
       "Está incorreta: As forças só são iguais se os braços forem iguais; o que se iguala são os momentos (F · b).",
       "Está incorreta: O fulcro não tem massa relevante para o equilíbrio de momentos.",
@@ -2803,19 +2803,19 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1148,
     "topicId": 1,
-    "question": "Se o braço da força potente (b_P) for 4 vezes maior do que o braço da força resistente (b_R), qual a força potente F_P necessária para equilibrar a carga?",
+    "question": "Se o braço da força potente (b<sub>Potente</sub>) for 4 vezes maior do que o braço da força resistente (b<sub>Resis.</sub>), qual a força potente F<sub>Potente</sub> necessária para equilibrar a carga?",
     "options": [
-      "Uma força 4 vezes menor do que a resistente (F_P = F_R / 4).",
+      "Uma força 4 vezes menor do que a resistente (F<sub>Potente</sub> = F<sub>Resis.</sub> / 4).",
       "Uma força potente 4 vezes maior do que a resistente, por a alavanca amplificar o esforço.",
       "Uma força potente 16 vezes maior, devido à lei do inverso do quadrado.",
       "Uma força igual à resistente, pois a distância não altera o esforço necessário."
     ],
     "correctIndex": 0,
-    "explanation": "Pela Lei das Alavancas: F_P · (4 b_R) = F_R · b_R => F_P = F_R / 4. Ao multiplicar o braço potente por 4, a força necessária para suster a carga reduz-se a um quarto.",
+    "explanation": "Pela Lei das Alavancas: F<sub>Potente</sub> · (4 b<sub>Resis.</sub>) = F<sub>Resis.</sub> · b<sub>Resis.</sub> => F<sub>Potente</sub> = F<sub>Resis.</sub> / 4. Ao multiplicar o braço potente por 4, a força necessária para suster a carga reduz-se a um quarto.",
     "distractorAnalysis": [
       "Está incorreta: Um braço potente maior reduz a força necessária; não a aumenta.",
       "Está incorreta: A lei do inverso do quadrado não se aplica às alavancas; a relação é F · b.",
-      "Está incorreta: A distância altera o esforço necessário, pois F_P · b_P = F_R · b_R."
+      "Está incorreta: A distância altera o esforço necessário, pois F<sub>Potente</sub> · b<sub>Potente</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub>."
     ],
     "nursingApplication": "Explica por que cabos compridos e barras de elevação longas facilitam a manipulação de cargas pesadas."
   },
@@ -2841,7 +2841,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1150,
     "topicId": 1,
-    "question": "Qual é a origem da Força Potente (F_P) no sistema musculoesquelético humano durante o levantamento de uma carga?",
+    "question": "Qual é a origem da Força Potente (F<sub>Potente</sub>) no sistema musculoesquelético humano durante o levantamento de uma carga?",
     "options": [
       "A atração gravitacional do planeta Terra sobre a articulação do utente.",
       "O peso da carga a levantar, transmitido aos ossos através das mãos.",
@@ -2868,7 +2868,7 @@ const TOPIC_1_QUESTIONS = [
       "O fulcro encontra-se entre a força potente e a força resistente."
     ],
     "correctIndex": 3,
-    "explanation": "Na alavanca interfixa, o fulcro encontra-se entre a força potente e a força resistente (F_P — fulcro — F_R).",
+    "explanation": "Na alavanca interfixa, o fulcro encontra-se entre a força potente e a força resistente (F<sub>Potente</sub> — fulcro — F<sub>Resis.</sub>).",
     "distractorAnalysis": [
       "Está incorreta: A força potente no meio define a alavanca Interpotente.",
       "Está incorreta: A força resistente no meio define a alavanca Inter-resistente.",
@@ -2887,7 +2887,7 @@ const TOPIC_1_QUESTIONS = [
       "A força potente e a resistente atuam no mesmo ponto e com o mesmo sentido."
     ],
     "correctIndex": 0,
-    "explanation": "Na alavanca inter-resistente, a força resistente encontra-se entre o fulcro e a força potente (fulcro — F_R — F_P).",
+    "explanation": "Na alavanca inter-resistente, a força resistente encontra-se entre o fulcro e a força potente (fulcro — F<sub>Resis.</sub> — F<sub>Potente</sub>).",
     "distractorAnalysis": [
       "Está incorreta: O fulcro no meio caracteriza a alavanca interfixa.",
       "Está incorreta: A força potente no meio caracteriza a alavanca interpotente.",
@@ -2906,7 +2906,7 @@ const TOPIC_1_QUESTIONS = [
       "A alavanca funciona sem gasto de força potente."
     ],
     "correctIndex": 1,
-    "explanation": "Na alavanca interpotente, a força potente encontra-se entre o fulcro e a força resistente (fulcro — F_P — F_R).",
+    "explanation": "Na alavanca interpotente, a força potente encontra-se entre o fulcro e a força resistente (fulcro — F<sub>Potente</sub> — F<sub>Resis.</sub>).",
     "distractorAnalysis": [
       "Está incorreta: Força resistente no meio define a alavanca inter-resistente.",
       "Está incorreta: Com o fulcro entre as forças, a alavanca é interfixa, e não interpotente.",
@@ -2925,7 +2925,7 @@ const TOPIC_1_QUESTIONS = [
       "A elevação do calcanhar ao apoiar-se nas pontas dos pés."
     ],
     "correctIndex": 2,
-    "explanation": "Na flexão do cotovelo, o fulcro é a articulação do cotovelo, a força potente é a do bíceps, inserido no rádio a poucos centímetros do fulcro, e a resistência é o peso do antebraço e do objeto na mão (Fulcro — F_P — F_R): alavanca interpotente.",
+    "explanation": "Na flexão do cotovelo, o fulcro é a articulação do cotovelo, a força potente é a do bíceps, inserido no rádio a poucos centímetros do fulcro, e a resistência é o peso do antebraço e do objeto na mão (Fulcro — F<sub>Potente</sub> — F<sub>Resis.</sub>): alavanca interpotente.",
     "distractorAnalysis": [
       "Está incorreta: A articulação atlanto-occipital é o exemplo clássico de alavanca interfixa.",
       "Está incorreta: Os ossículos do ouvido formam uma alavanca de ganho de força (o martelo tem braço maior), o oposto de uma interpotente.",
@@ -2957,19 +2957,19 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Numa alavanca Inter-resistente (ex.: carrinho de mão ou pontas dos pés), qual é a relação geométrica entre os braços de momento?",
     "options": [
-      "O braço potente é maior que o braço resistente (b_P > b_R), dando vantagem de força.",
+      "O braço potente é maior que o braço resistente, dando vantagem de força.",
       "O braço resistente é o dobro do braço potente.",
-      "Os dois braços são iguais (b_P = b_R) quando a carga fica a meio da barra.",
+      "Os dois braços são iguais (b<sub>Potente</sub> = b<sub>Resis.</sub>) quando a carga fica a meio da barra.",
       "O braço potente é nulo, porque a carga fica entre o fulcro e a força."
     ],
     "correctIndex": 0,
-    "explanation": "Como a resistência está entre o fulcro e a força potente (Fulcro — F_R — F_P), a distância do fulcro à força potente (b_P) é necessariamente superior à distância à carga (b_R). Assim, F_P < F_R: há multiplicação de força.",
+    "explanation": "Como a resistência está entre o fulcro e a força potente (Fulcro — F<sub>Resis.</sub> — F<sub>Potente</sub>), a distância do fulcro à força potente (b<sub>Potente</sub>) é necessariamente superior à distância à carga (b<sub>Resis.</sub>). Assim, F<sub>Potente</sub> < F<sub>Resis.</sub>: há multiplicação de força.",
     "distractorAnalysis": [
-      "Está incorreta: b_R é menor que b_P na alavanca inter-resistente, e não o dobro.",
-      "Está incorreta: Os dois braços medem-se a partir do fulcro; com a carga a meio, b_R é metade de b_P.",
+      "Está incorreta: b<sub>Resis.</sub> é menor que b<sub>Potente</sub> na alavanca inter-resistente, e não o dobro.",
+      "Está incorreta: Os dois braços medem-se a partir do fulcro; com a carga a meio, b<sub>Resis.</sub> é metade de b<sub>Potente</sub>.",
       "Está incorreta: O braço potente é o maior dos dois braços e vai do fulcro até ao ponto de aplicação da força potente."
     ],
-    "nursingApplication": "Explica a vantagem mecânica de dispositivos como o carrinho de mão: com a carga entre o eixo e as mãos (b_P > b_R), transporta-se uma carga pesada com uma força inferior ao seu peso."
+    "nursingApplication": "Explica a vantagem mecânica de dispositivos como o carrinho de mão: com a carga entre o eixo e as mãos (b<sub>Potente</sub> > b<sub>Resis.</sub>), transporta-se uma carga pesada com uma força inferior ao seu peso."
   },
   {
     "id": 1157,
@@ -2977,16 +2977,16 @@ const TOPIC_1_QUESTIONS = [
     "question": "Numa alavanca Interpotente (ex.: bíceps braquial no cotovelo), qual é a consequência biomecânica de a força potente estar situada entre o fulcro e a carga?",
     "options": [
       "A força muscular necessária é muito menor do que o peso da carga que se segura.",
-      "O braço potente é menor que o resistente (b_P < b_R), exigindo mais força que a carga.",
+      "O braço potente é menor que o resistente, exigindo mais força que a carga.",
       "A alavanca não consegue produzir movimento nem rotação da mão.",
       "A força muscular é igual ao peso da carga, porque o sistema está em equilíbrio."
     ],
     "correctIndex": 1,
-    "explanation": "Sendo a alavanca interpotente (Fulcro — F_P — F_R), b_P é mais curto que b_R. Pela Lei das Alavancas, para equilibrar o sistema o músculo tem de exercer uma força potente F_P muito superior à força resistente F_R.",
+    "explanation": "Sendo a alavanca interpotente (Fulcro — F<sub>Potente</sub> — F<sub>Resis.</sub>), b<sub>Potente</sub> é mais curto que b<sub>Resis.</sub>. Pela Lei das Alavancas, para equilibrar o sistema o músculo tem de exercer uma força potente F<sub>Potente</sub> muito superior à força resistente F<sub>Resis.</sub>.",
     "distractorAnalysis": [
-      "Está incorreta: Com b_P < b_R, a força muscular é maior do que a carga, e não menor.",
+      "Está incorreta: Com b<sub>Potente</sub> < b<sub>Resis.</sub>, a força muscular é maior do que a carga, e não menor.",
       "Está incorreta: A alavanca produz rotação do antebraço em torno do cotovelo, com ganho de amplitude e velocidade.",
-      "Está incorreta: No equilíbrio igualam-se os momentos, e não as forças; como b_P < b_R, a força muscular é maior do que a carga."
+      "Está incorreta: No equilíbrio igualam-se os momentos, e não as forças; como b<sub>Potente</sub> < b<sub>Resis.</sub>, a força muscular é maior do que a carga."
     ],
     "nursingApplication": "Alerta para o facto de que muitos músculos e tendões suportam forças várias vezes superiores aos pesos que carregamos."
   },
@@ -3058,7 +3058,7 @@ const TOPIC_1_QUESTIONS = [
       "x = 0,6 m"
     ],
     "correctIndex": 1,
-    "explanation": "Como b_P + b_R = 3,6 m e b_P = 2x, obtém-se 3x = 3,6 (=) x = 1,2 m. O braço resistente b_R é 1,2 m e o potente b_P é 2,4 m.",
+    "explanation": "Como b<sub>Potente</sub> + b<sub>Resis.</sub> = 3,6 m e b<sub>Potente</sub> = 2x, obtém-se 3x = 3,6 (=) x = 1,2 m. O braço resistente b<sub>Resis.</sub> é 1,2 m e o potente b<sub>Potente</sub> é 2,4 m.",
     "distractorAnalysis": [
       "Está incorreta: 3,6 m é o comprimento total da barra da alavanca, não o valor de x.",
       "Está incorreta: 2,4 m é o valor do braço potente (2x = 2 × 1,2), não de x.",
@@ -3069,15 +3069,15 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1162,
     "topicId": 1,
-    "question": "Numa alavanca interfixa com Força Resistente F_R = 20 N e braço b_R = 1,2 m, qual é o valor calculado para o Momento da Força Resistente (M_R)?",
+    "question": "Numa alavanca interfixa com Força Resistente F<sub>Resis.</sub> = 20 N e braço b<sub>Resis.</sub> = 1,2 m, qual é o valor calculado para o Momento da Força Resistente (M<sub>Resis.</sub>)?",
     "options": [
-      "M_R = 16,7 N·m",
-      "M_R = 21,2 N·m",
-      "M_R = 24 N·m",
-      "M_R = 240 N·m"
+      "M<sub>Resis.</sub> = 16,7 N·m",
+      "M<sub>Resis.</sub> = 21,2 N·m",
+      "M<sub>Resis.</sub> = 24 N·m",
+      "M<sub>Resis.</sub> = 240 N·m"
     ],
     "correctIndex": 2,
-    "explanation": "O cálculo determina textualmente: 'Momento da força resistente: M_R = F_R · b_R (=) M_R = 20 × 1,2 (=) M_R = 24 N·m'.",
+    "explanation": "O cálculo determina textualmente: 'Momento da força resistente: M<sub>Resis.</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub> (=) M<sub>Resis.</sub> = 20 × 1,2 (=) M<sub>Resis.</sub> = 24 N·m'.",
     "distractorAnalysis": [
       "Está incorreta: 16,7 resultaria de dividir 20 por 1,2, o que é um erro de cálculo.",
       "Está incorreta: 21,2 resultaria de somar 20 com 1,2 em vez de multiplicar.",
@@ -3088,15 +3088,15 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1163,
     "topicId": 1,
-    "question": "Estando o sistema em equilíbrio com M_R = 24 N·m e braço potente b_P = 2,4 m, qual é a Força Potente (F_P) necessária para equilibrar a alavanca?",
+    "question": "Estando o sistema em equilíbrio com M<sub>Resis.</sub> = 24 N·m e braço potente b<sub>Potente</sub> = 2,4 m, qual é a Força Potente (F<sub>Potente</sub>) necessária para equilibrar a alavanca?",
     "options": [
-      "F_P = 24 N",
-      "F_P = 57,6 N",
-      "F_P = 2,4 N",
-      "F_P = 10 N"
+      "F<sub>Potente</sub> = 24 N",
+      "F<sub>Potente</sub> = 57,6 N",
+      "F<sub>Potente</sub> = 2,4 N",
+      "F<sub>Potente</sub> = 10 N"
     ],
     "correctIndex": 3,
-    "explanation": "A resolução determina: 'Momento da força potente: M_P = F_P · b_P (=) 24 = F_P × 2,4 (=) F_P = 10 N'.",
+    "explanation": "A resolução determina: 'Momento da força potente: M<sub>Potente</sub> = F<sub>Potente</sub> · b<sub>Potente</sub> (=) 24 = F<sub>Potente</sub> × 2,4 (=) F<sub>Potente</sub> = 10 N'.",
     "distractorAnalysis": [
       "Está incorreta: 24 N seria a força potente se o braço potente fosse de apenas 1 metro.",
       "Está incorreta: 57,6 N resultaria de multiplicar 24 por 2,4 em vez de dividir.",
@@ -3107,7 +3107,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1164,
     "topicId": 1,
-    "question": "Num sistema de alavanca interfixa, qual é o peso ou Força Resistente (F_R) exercida por uma carga com massa de 500 kg (adotando g = 9,8 m/s²)?",
+    "question": "Num sistema de alavanca interfixa, qual é o peso ou Força Resistente (F<sub>Resis.</sub>) exercida por uma carga com massa de 500 kg (adotando g = 9,8 m/s²)?",
     "options": [
       "4900 N",
       "500 N",
@@ -3115,7 +3115,7 @@ const TOPIC_1_QUESTIONS = [
       "49 000 N"
     ],
     "correctIndex": 0,
-    "explanation": "O cálculo determina: P = F_R = m · g = 500 kg × 9,8 m/s² = 4900 N.",
+    "explanation": "O cálculo determina: P = F<sub>Resis.</sub> = m · g = 500 kg × 9,8 m/s² = 4900 N.",
     "distractorAnalysis": [
       "Está incorreta: 500 é a massa em quilogramas (kg), que tem de ser multiplicada por g para obter o peso em newtons.",
       "Está incorreta: 51,02 resultaria de dividir a massa pela gravidade, o que viola P = m · g.",
@@ -3126,15 +3126,15 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1165,
     "topicId": 1,
-    "question": "Se uma carga resistente de 4900 N for colocada a uma distância de b_R = 0,3 m do fulcro, qual é o Momento da Força Resistente (M_R) produzido em relação ao ponto de apoio?",
+    "question": "Se uma carga resistente de 4900 N for colocada a uma distância de b<sub>Resis.</sub> = 0,3 m do fulcro, qual é o Momento da Força Resistente (M<sub>Resis.</sub>) produzido em relação ao ponto de apoio?",
     "options": [
-      "M_R = 147 N·m",
-      "M_R = 1470 N·m",
-      "M_R = 4900 N·m",
-      "M_R = 16 333 N·m"
+      "M<sub>Resis.</sub> = 147 N·m",
+      "M<sub>Resis.</sub> = 1470 N·m",
+      "M<sub>Resis.</sub> = 4900 N·m",
+      "M<sub>Resis.</sub> = 16 333 N·m"
     ],
     "correctIndex": 1,
-    "explanation": "Apresenta-se formalmente: 'M_R = F_R · b_R (=) M_R = (500 × 9,8) × 0,3 (=) M_R = 1470 N·m'.",
+    "explanation": "Apresenta-se formalmente: 'M<sub>Resis.</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub> (=) M<sub>Resis.</sub> = (500 × 9,8) × 0,3 (=) M<sub>Resis.</sub> = 1470 N·m'.",
     "distractorAnalysis": [
       "Está incorreta: 147 N·m resultaria de usar braço de 0,03 m em vez de 0,3 m.",
       "Está incorreta: 4900 N·m seria o momento se o braço fosse de 1 metro.",
@@ -3145,15 +3145,15 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1166,
     "topicId": 1,
-    "question": "Para equilibrar um Momento Resistente M_R = 1470 N·m através de uma Força Potente de 294 N (igual ao peso de uma massa de 30 kg, com g = 9,8 m/s²), que comprimento deve ter o braço potente (b_P)?",
+    "question": "Para equilibrar um Momento Resistente M<sub>Resis.</sub> = 1470 N·m através de uma Força Potente de 294 N (igual ao peso de uma massa de 30 kg, com g = 9,8 m/s²), que comprimento deve ter o braço potente (b<sub>Potente</sub>)?",
     "options": [
-      "b_P = 1,47 m",
-      "b_P = 30 m",
-      "b_P = 5 m",
-      "b_P = 0,2 m"
+      "b<sub>Potente</sub> = 1,47 m",
+      "b<sub>Potente</sub> = 30 m",
+      "b<sub>Potente</sub> = 5 m",
+      "b<sub>Potente</sub> = 0,2 m"
     ],
     "correctIndex": 2,
-    "explanation": "Conclui-se com rigor: 'M_P = F_P · b_P (=) 1470 = (30 × 9,8) × b_P (=) b_P = 5 m'.",
+    "explanation": "Conclui-se com rigor: 'M<sub>Potente</sub> = F<sub>Potente</sub> · b<sub>Potente</sub> (=) 1470 = (30 × 9,8) × b<sub>Potente</sub> (=) b<sub>Potente</sub> = 5 m'.",
     "distractorAnalysis": [
       "Está incorreta: 1,47 m seria insuficiente: geraria apenas 294 × 1,47 = 432 N·m, e a alavanca não equilibraria.",
       "Está incorreta: 30 é o valor numérico da massa (kg), e não uma distância.",
@@ -3183,18 +3183,18 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1168,
     "topicId": 1,
-    "question": "Num baloiço (alavanca interfixa) com M_R = 24 N·m, se uma pessoa aplicar uma força potente de 15 N com um braço b_P = 2,4 m, o que acontecerá ao sistema?",
+    "question": "Num baloiço (alavanca interfixa) com M<sub>Resis.</sub> = 24 N·m, se uma pessoa aplicar uma força potente de 15 N com um braço b<sub>Potente</sub> = 2,4 m, o que acontecerá ao sistema?",
     "options": [
-      "O momento potente seria 36 N·m, superando M_R (24 N·m) e fazendo a alavanca girar.",
+      "O momento potente seria 36 N·m, superando M<sub>Resis.</sub> (24 N·m) e fazendo a alavanca girar.",
       "A alavanca permaneceria em repouso, sem movimento, como se as forças se anulassem.",
       "O momento potente anular-se-ia por si, sem intervenção de forças externas.",
       "A força resistente aumentaria instantaneamente para 36 N para impedir a rotação."
     ],
     "correctIndex": 0,
-    "explanation": "Com F_P = 15 N, M_P = 36 N·m. Como 36 N·m > 24 N·m, o momento resultante não é nulo (36 − 24 = 12 N·m, no sentido do momento potente) e a alavanca entra em rotação acelerada nesse sentido.",
+    "explanation": "Com F<sub>Potente</sub> = 15 N, M<sub>Potente</sub> = 36 N·m. Como 36 N·m > 24 N·m, o momento resultante não é nulo (36 − 24 = 12 N·m, no sentido do momento potente) e a alavanca entra em rotação acelerada nesse sentido.",
     "distractorAnalysis": [
-      "Está incorreta: A alavanca só ficaria em repouso se os momentos fossem iguais (F_P = 10 N).",
-      "Está incorreta: O momento potente não se anula por si; só um momento de sentido oposto o pode compensar, e M_R (24 N·m) é inferior a 36 N·m.",
+      "Está incorreta: A alavanca só ficaria em repouso se os momentos fossem iguais (F<sub>Potente</sub> = 10 N).",
+      "Está incorreta: O momento potente não se anula por si; só um momento de sentido oposto o pode compensar, e M<sub>Resis.</sub> (24 N·m) é inferior a 36 N·m.",
       "Está incorreta: A carga resistente tem massa e braço fixos, e o seu momento permanece em 24 N·m."
     ],
     "nursingApplication": "Explica como se inicia o movimento articular ativo quando o momento muscular supera o momento resistente da carga."
@@ -3223,13 +3223,13 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Em sistemas mecânicos de alavancas, qual é a condição matemática necessária para garantir o equilíbrio estático rotacional em torno do fulcro?",
     "options": [
-      "F_P + F_R = 0",
-      "b_P / b_R = 9,8",
-      "M_P = M_R (ou F_P · b_P = F_R · b_R)",
-      "F_P · b_R = F_R · b_P"
+      "F<sub>Potente</sub> + F<sub>Resis.</sub> = 0 (soma nula das forças)",
+      "b<sub>Potente</sub> / b<sub>Resis.</sub> = 9,8 (razão igual a g)",
+      "M<sub>Potente</sub> = M<sub>Resis.</sub> (igualdade dos momentos)",
+      "F<sub>Potente</sub> · b<sub>Resis.</sub> = F<sub>Resis.</sub> · b<sub>Potente</sub>"
     ],
     "correctIndex": 2,
-    "explanation": "A igualdade entre o Momento Potente e o Momento Resistente (M_P = M_R) é a base para resolver problemas de alavancas em equilíbrio estático.",
+    "explanation": "A igualdade entre o Momento Potente e o Momento Resistente (M<sub>Potente</sub> = M<sub>Resis.</sub>) é a base para resolver problemas de alavancas em equilíbrio estático.",
     "distractorAnalysis": [
       "Está incorreta: Somar forças ignora os braços de momento e o efeito de rotação em torno do fulcro.",
       "Está incorreta: A razão entre braços depende da geometria do sistema e não da constante g.",
@@ -3278,15 +3278,15 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1173,
     "topicId": 1,
-    "question": "Para um objeto com massa de 1,0 kg segurado na mão a uma distância de 30 cm (0,3 m) do cotovelo, qual é o Momento Resistente (M_R) gerado (com g = 9,8 m/s²)?",
+    "question": "Para um objeto com massa de 1,0 kg segurado na mão a uma distância de 30 cm (0,3 m) do cotovelo, qual é o Momento Resistente (M<sub>Resis.</sub>) gerado (com g = 9,8 m/s²)?",
     "options": [
-      "M_R = 30 N·m",
-      "M_R = 2,94 N·m",
-      "M_R = 0,3 N·m",
-      "M_R = 9,8 N·m"
+      "M<sub>Resis.</sub> = 30 N·m",
+      "M<sub>Resis.</sub> = 2,94 N·m",
+      "M<sub>Resis.</sub> = 0,3 N·m",
+      "M<sub>Resis.</sub> = 9,8 N·m"
     ],
     "correctIndex": 1,
-    "explanation": "O cálculo determina textualmente: 'M_R = F_R · b_R (=) M_R = (1 × 9,8) × 0,3 (=) M_R = 2,94 N·m'.",
+    "explanation": "O cálculo determina textualmente: 'M<sub>Resis.</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub> (=) M<sub>Resis.</sub> = (1 × 9,8) × 0,3 (=) M<sub>Resis.</sub> = 2,94 N·m'.",
     "distractorAnalysis": [
       "Está incorreta: 30 N·m resultaria de multiplicar 1 por 30 ignorando a gravidade e os centímetros.",
       "Está incorreta: 0,3 N·m resultaria de multiplicar apenas a massa pelo braço sem aplicar g = 9,8.",
@@ -3299,13 +3299,13 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Para o segmento antebraço+mão com massa de 2,5 kg cujo centro de massa dista 15 cm (0,15 m) do cotovelo, qual é o Momento gerado pelo seu peso anatómico (com g = 9,8 m/s²)?",
     "options": [
-      "M_antebraço = 2,5 N·m",
-      "M_antebraço = 36,8 N·m",
-      "M_antebraço = 3,68 N·m",
-      "M_antebraço = 0,375 N·m"
+      "M<sub>antebraço</sub> = 2,5 N·m",
+      "M<sub>antebraço</sub> = 36,8 N·m",
+      "M<sub>antebraço</sub> = 3,68 N·m",
+      "M<sub>antebraço</sub> = 0,375 N·m"
     ],
     "correctIndex": 2,
-    "explanation": "Apresenta-se: 'M antebraço+mão = F · b (=) M = (2,5 × 9,8) × 0,15 (=) M = 3,68 N·m' (valor exato 3,675 N·m, arredondado a 3,68 N·m).",
+    "explanation": "Apresenta-se: 'M<sub>antebraço+mão</sub> = F · b (=) M = (2,5 × 9,8) × 0,15 (=) M = 3,68 N·m' (valor exato 3,675 N·m, arredondado a 3,68 N·m).",
     "distractorAnalysis": [
       "Está incorreta: 2,5 é apenas o valor da massa em kg, sem multiplicar por g nem pelo braço.",
       "Está incorreta: 36,8 N·m resultaria de um erro de vírgula decimal na conversão de unidades.",
@@ -3318,13 +3318,13 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Somando o momento gerado pelo peso do antebraço (3,68 N·m) com o momento gerado pelo objeto na mão (2,94 N·m), qual é o Momento Resistente Total no cotovelo?",
     "options": [
-      "M_total = 2,94 N·m",
-      "M_total = 3,68 N·m",
-      "M_total = 0,74 N·m",
-      "M_total = 6,62 N·m"
+      "M<sub>total</sub> = 2,94 N·m",
+      "M<sub>total</sub> = 3,68 N·m",
+      "M<sub>total</sub> = 0,74 N·m",
+      "M<sub>total</sub> = 6,62 N·m"
     ],
     "correctIndex": 3,
-    "explanation": "Efetua-se a soma dos dois momentos de resistência no mesmo sentido horário: 'M antebraço+mão + M_R = 3,68 + 2,94 = 6,62 N·m'.",
+    "explanation": "Efetua-se a soma dos dois momentos de resistência no mesmo sentido horário: 'M<sub>antebraço+mão</sub> + M<sub>Resis.</sub> = 3,68 + 2,94 = 6,62 N·m'.",
     "distractorAnalysis": [
       "Está incorreta: 2,94 N·m considera apenas o objeto externo, esquecendo o peso do próprio membro.",
       "Está incorreta: 3,68 N·m considera apenas o antebraço, esquecendo o objeto transportado na mão.",
@@ -3335,15 +3335,15 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1176,
     "topicId": 1,
-    "question": "Com um Momento Resistente Total de 6,62 N·m e braço de inserção do bíceps de 8 cm (0,08 m), que Força Muscular (F_E) o bíceps exerce para manter o antebraço a 90°?",
+    "question": "Com um Momento Resistente Total de 6,62 N·m e braço de inserção do bíceps de 8 cm (0,08 m), que Força Muscular (F<sub>E</sub>) o bíceps exerce para manter o antebraço a 90°?",
     "options": [
-      "F_E = 82,75 N",
-      "F_E = 6,62 N",
-      "F_E = 0,53 N",
-      "F_E = 34,3 N"
+      "F<sub>E</sub> = 82,75 N",
+      "F<sub>E</sub> = 6,62 N",
+      "F<sub>E</sub> = 0,53 N",
+      "F<sub>E</sub> = 34,3 N"
     ],
     "correctIndex": 0,
-    "explanation": "Conclui-se o exercício resolvendo a equação de equilíbrio: 'M_E = F_E · b_E (=) 6,62 = F_E × 0,08 (=) F_E = 82,75 N'.",
+    "explanation": "Conclui-se o exercício resolvendo a equação de equilíbrio: 'M<sub>E</sub> = F<sub>E</sub> · b<sub>E</sub> (=) 6,62 = F<sub>E</sub> × 0,08 (=) F<sub>E</sub> = 82,75 N'.",
     "distractorAnalysis": [
       "Está incorreta: 6,62 N seria a força se o braço do bíceps medisse 1 metro inteiro.",
       "Está incorreta: 0,53 N resultaria de multiplicar 6,62 por 0,08 em vez de dividir.",
@@ -3373,15 +3373,15 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1178,
     "topicId": 1,
-    "question": "Um antebraço está fletido em equilíbrio em torno do cotovelo, com um objeto seguro na mão. Sendo F_E a força do bíceps, d_E o seu braço de momento, F_objeto o peso do objeto, d_R a sua distância ao cotovelo, F_antebraço+mão o peso do antebraço com a mão e d_antebraço a distância do seu centro de gravidade ao cotovelo, qual é a equação de equilíbrio de momentos em torno do cotovelo?",
+    "question": "Um antebraço está fletido em equilíbrio em torno do cotovelo, com um objeto seguro na mão. Sendo F<sub>E</sub> a força do bíceps, d<sub>E</sub> o seu braço de momento, F<sub>objeto</sub> o peso do objeto, d<sub>Resis.</sub> a sua distância ao cotovelo, F<sub>antebraço+mão</sub> o peso do antebraço com a mão e d<sub>antebraço</sub> a distância do seu centro de gravidade ao cotovelo, qual é a equação de equilíbrio de momentos em torno do cotovelo?",
     "options": [
-      "F_objeto + F_antebraço = F_E, ou seja, a soma das forças iguala a força muscular.",
-      "F_E · d_R = F_objeto · d_E, em que o braço do objeto é o do bíceps.",
-      "Em equilíbrio: (F_objeto · d_R) + (F_antebraço+mão · d_antebraço) = F_E · d_E",
-      "F_E = m · g · a, em que a força muscular depende da aceleração do antebraço."
+      "F<sub>objeto</sub> + F<sub>antebraço+mão</sub> = F<sub>E</sub>, ou seja, a força do bíceps iguala a soma dos pesos que está a segurar.",
+      "F<sub>E</sub> · d<sub>Resis.</sub> = F<sub>objeto</sub> · d<sub>E</sub>, com os braços do bíceps e do objeto trocados.",
+      "(F<sub>objeto</sub> · d<sub>Resis.</sub>) + (F<sub>antebraço+mão</sub> · d<sub>antebraço</sub>) = F<sub>E</sub> · d<sub>E</sub>",
+      "F<sub>E</sub> = m · g · a, em que a força muscular depende da aceleração do antebraço."
     ],
     "correctIndex": 2,
-    "explanation": "Em equilíbrio, o momento potente iguala o momento resistente total. No antebraço, a soma dos momentos da carga na mão e do antebraço iguala o momento do bíceps: (F_objeto · d_R) + (F_antebraço+mão · d_antebraço) = F_E · d_E.",
+    "explanation": "Em equilíbrio, o momento potente iguala o momento resistente total. No antebraço, a soma dos momentos da carga na mão e do antebraço iguala o momento do bíceps: (F<sub>objeto</sub> · d<sub>Resis.</sub>) + (F<sub>antebraço+mão</sub> · d<sub>antebraço</sub>) = F<sub>E</sub> · d<sub>E</sub>.",
     "distractorAnalysis": [
       "Está incorreta: Ignorar os braços de momento viola frontalmente a Lei das Alavancas de Arquimedes.",
       "Está incorreta: Os braços anatómicos associados a cada força estão incorretamente atribuídos nesta opção.",
@@ -3400,7 +3400,7 @@ const TOPIC_1_QUESTIONS = [
       "Aumentaria, pois o momento do objeto triplicaria, de 2,94 para 8,82 N·m."
     ],
     "correctIndex": 3,
-    "explanation": "Com o objeto a pesar 3 kg, M_objeto = (3 × 9,8) × 0,3 = 8,82 N·m. Somando aos 3,68 N·m do antebraço dá 12,50 N·m. A força do bíceps passaria para 12,50 / 0,08 = 156,25 N: quase duplica, mas não triplica, porque o momento do antebraço (3,68 N·m) se mantém.",
+    "explanation": "Com o objeto a pesar 3 kg, M<sub>objeto</sub> = (3 × 9,8) × 0,3 = 8,82 N·m. Somando aos 3,68 N·m do antebraço dá 12,50 N·m. A força do bíceps passaria para 12,50 / 0,08 = 156,25 N: quase duplica, mas não triplica, porque o momento do antebraço (3,68 N·m) se mantém.",
     "distractorAnalysis": [
       "Está incorreta: A força muscular não é constante; varia com o momento resistente total.",
       "Está incorreta: O peso da mão aumenta o momento resistente, e não o diminui.",

@@ -8,6 +8,26 @@ function questionLabel(id) {
   return `Pergunta ${id % 1000} · Tópico ${Math.floor(id / 1000)}`;
 }
 
+// Texto de perguntas com índices (<sub>) e expoentes (<sup>): escapa tudo o resto.
+// Os índices escrevem-se F<sub>P</sub> nos dados, nunca F_P.
+function richText(str) {
+  if (typeof str !== 'string') return '';
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;')
+    .replace(/&lt;(\/?)(sub|sup)&gt;/g, '<$1$2>');
+}
+
+// Versão em texto simples (pesquisa, exportações): F<sub>P</sub> -> FP, ou F_P com marker = true.
+function plainMathText(str, marker = false) {
+  return String(str == null ? '' : str)
+    .replace(/<sub>(.*?)<\/sub>/g, marker ? '_$1' : '$1')
+    .replace(/<sup>(.*?)<\/sup>/g, marker ? '^$1' : '$1');
+}
+
 class QuizEngine {
   constructor() {
     this.currentQuestions = [];
@@ -349,7 +369,7 @@ class QuizEngine {
       gradeClassification = "Suficiente (10 a 13 valores) - Aprovado, mas recomenda-se rever as explicações.";
       badgeClass = "badge-pass";
     } else {
-      gradeClassification = "Não Aprovado (< 9.5 valores) - Necessita de reforçar o estudo com os resumos.";
+      gradeClassification = "Não Aprovado (< 9,5 valores) - Necessita de reforçar o estudo com os resumos.";
       badgeClass = "badge-fail";
     }
 

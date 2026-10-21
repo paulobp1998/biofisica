@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BioFísica Interativa | Enfermagem (1.º Ano)</title>
   <meta name="description" content="Plataforma interativa e 100% gratuita para estudantes do 1.º ano de Licenciatura em Enfermagem praticarem os conteúdos de Biofísica com questões de escolha múltipla e aplicações clínicas.">
-  <link rel="stylesheet" href="css/style.css?v=4.2">
+  <link rel="stylesheet" href="css/style.css?v=4.4">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🩺</text></svg>">
 </head>
 <body>
@@ -85,9 +85,9 @@
       </div>
 
       <div class="hero-section">
-        <span class="hero-tag">✨ 100% Gratuito • 200 Questões de Biofísica Ativas (Tópico 1) • Ensino Superior</span>
+        <span class="hero-tag" id="hero-tag">✨ 100% Gratuito • 200 Questões de Biofísica Ativas (Tópico 1) • Ensino Superior</span>
         <h1 class="hero-title">Prática Interativa de Biofísica Médica</h1>
-        <p class="hero-desc">
+        <p class="hero-desc" id="hero-desc">
           Consolida os conteúdos das tuas aulas com <strong>200 questões de Biofísica</strong> rigorosas do <strong>Tópico 1 (Força, Estado de Equilíbrio e Alavancas)</strong>, com justificações científicas completas, análise detalhada de distratores e notas de aplicação prática.
         </p>
         <div class="hero-actions">
@@ -103,9 +103,6 @@
           <button class="btn btn-primary" id="btn-open-arena" style="background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%); border-color: #6366f1;">
             ⚔️ Arena BioFísica (Batalha em Grupo ao Vivo)
           </button>
-          <button class="btn btn-outline" id="btn-open-teacher-audit" style="border-color: #f59e0b; color: #d97706; font-weight: 700;">
-            🔒 Gestão & Auditoria do Banco (Docente)
-          </button>
         </div>
 
         <!-- 1A & 3G: Ações Rápidas do Estudante -->
@@ -119,10 +116,19 @@
           <button class="btn-hero-quick" id="btn-open-worksheet" title="Gerar ficha de perguntas formatada para impressão ou PDF">
             📄 Ficha de Trabalho em PDF
           </button>
-          <button class="btn-hero-quick" id="btn-hero-search" title="Pesquisar no banco ativo de 200 questões">
+          <button class="btn-hero-quick" id="btn-hero-search" title="Pesquisar no glossário e nas perguntas ativas (Ctrl+K)">
             🔍 Glossário & Pesquisa
           </button>
         </div>
+      </div>
+
+      <!-- Revisão espaçada: perguntas do Caderno de Erros que já é altura de rever -->
+      <div class="review-due-card hidden" id="review-due-card" role="region" aria-label="Revisão de hoje">
+        <div class="review-due-text">
+          <strong id="review-due-title">📅 Hoje tens perguntas para rever</strong>
+          <span id="review-due-sub">As perguntas do Caderno de Erros voltam a aparecer ao fim de alguns dias, para fixares melhor.</span>
+        </div>
+        <button type="button" class="btn btn-primary btn-sm" id="btn-review-due">Rever agora ➔</button>
       </div>
 
       <!-- Comunicado Oficial aos Estudantes sobre Inteligência Artificial -->
@@ -138,7 +144,11 @@
           <p class="notice-ps">
             <strong>PS:</strong> Estão a ser efetuadas melhorias diárias ao site para que, num futuro próximo, todas as perguntas e respostas estejam corretas. Obrigado pela vossa atenção e bom estudo!
           </p>
+          <button type="button" class="notice-toggle" id="btn-notice-collapse">Percebi, minimizar aviso</button>
         </div>
+        <button type="button" class="notice-collapsed-bar" id="btn-notice-expand" aria-label="Mostrar o comunicado completo">
+          📢 Perguntas geradas com apoio de IA: se encontrares erros, informa o docente. <span class="notice-expand-hint">Ler aviso completo ▾</span>
+        </button>
       </div>
 
       <h2 class="section-title">
@@ -198,6 +208,15 @@
           <h3 class="question-text" id="question-text">Enunciado da pergunta científica aqui...</h3>
         </div>
 
+        <!-- Autoavaliação de confiança (apenas Modo Treino) -->
+        <div class="confidence-row hidden" id="confidence-row" role="group" aria-label="Grau de confiança na resposta">
+          <span class="confidence-label">Quão seguro estás?</span>
+          <button type="button" class="confidence-chip" data-conf="high">Tenho a certeza</button>
+          <button type="button" class="confidence-chip" data-conf="mid">Acho que sim</button>
+          <button type="button" class="confidence-chip" data-conf="low">Estou a adivinhar</button>
+          <span class="confidence-optional">(opcional)</span>
+        </div>
+
         <!-- Opções A, B, C, D -->
         <div class="options-container" id="options-container">
           <!-- Inserido dinamicamente via JS -->
@@ -216,6 +235,7 @@
         </div>
 
         <div class="quiz-footer">
+          <span class="quiz-shortcuts-hint">Atalhos: <kbd>A</kbd>–<kbd>D</kbd> ou <kbd>1</kbd>–<kbd>4</kbd> para responder · <kbd>Enter</kbd> para avançar</span>
           <button class="btn btn-primary hidden" id="btn-next">
             Próxima Pergunta ➔
           </button>
@@ -242,6 +262,10 @@
 
         <div id="result-topic-breakdown">
           <!-- Barra de aproveitamento por tópico -->
+        </div>
+
+        <div id="result-focus">
+          <!-- Ponto fraco, conceitos e calibração de confiança -->
         </div>
 
         <div class="result-review-list" id="result-review-list">
@@ -1476,7 +1500,7 @@
         <div class="modal-header">
           <div>
             <h3>🔍 Pesquisa Rápida & Glossário de Biofísica</h3>
-            <p class="modal-subtitle">Pesquisa direta no banco ativo do Tópico 1 (200 questões), resumos teóricos, leis físicas e notas clínicas:</p>
+            <p class="modal-subtitle" id="search-modal-subtitle">Procura termos no glossário (definições curtas) e nas perguntas ativas, com justificações e notas clínicas:</p>
           </div>
           <button class="modal-close" id="btn-close-search-modal" aria-label="Fechar">✕</button>
         </div>
@@ -1495,6 +1519,24 @@
         </div>
         <div class="modal-footer">
           <button class="btn btn-outline" id="btn-cancel-search-modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal de revisão teórica (aberto a partir do quiz, resultados, estatísticas e glossário) -->
+    <div id="modal-theory" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modal-theory-title">
+      <div class="modal-card modal-theory-card">
+        <div class="modal-header">
+          <div>
+            <h3 id="modal-theory-title">📖 Rever a teoria</h3>
+            <p class="modal-subtitle" id="modal-theory-sub"></p>
+          </div>
+          <button class="modal-close" id="btn-close-theory-modal" aria-label="Fechar">✕</button>
+        </div>
+        <div class="modal-body" id="modal-theory-body"></div>
+        <div class="modal-footer">
+          <button class="btn btn-outline" id="btn-cancel-theory-modal">Fechar</button>
+          <button class="btn btn-primary hidden" id="btn-theory-practice">🎯 Praticar este conceito</button>
         </div>
       </div>
     </div>
@@ -1559,7 +1601,7 @@
 
   <!-- Rodapé -->
   <footer class="footer">
-    <p><strong>BioFísica Médica para o 1.º Ano de Enfermagem</strong> • 200 Questões de Biofísica Ativas (Tópico 1) • Tópicos 2 a 8 Temporariamente Bloqueados aos Alunos</p>
+    <p><strong>BioFísica Médica para o 1.º Ano de Enfermagem</strong><span id="footer-info"> • 200 Questões de Biofísica Ativas (Tópico 1) • Os restantes tópicos estão temporariamente bloqueados aos alunos</span></p>
     <p style="margin-top: 0.35rem; font-size: 0.8rem;">Plataforma Educativa 100% Gratuita e Acessível • Sem custos de alojamento nem subscrição • Desenvolvido para apoio ao estudo universitário</p>
     <p style="margin-top: 0.45rem; font-size: 0.82rem;">
       <a href="#" id="link-footer-teacher" style="color: #d97706; text-decoration: underline; font-weight: 700;">🔒 Área Reservada ao Docente (Gestão e Auditoria das 300 Questões)</a>
@@ -1567,26 +1609,27 @@
   </footer>
 
   <!-- Banco de Questões por Tópico (300 questões certificadas nos Tópicos 1 e 2) -->
-  <script src="js/data/topic1.js?v=4.0"></script>
-  <script src="js/data/topic2.js?v=4.1"></script>
+  <script src="js/data/topic1.js?v=4.4"></script>
+  <script src="js/data/topic2.js?v=4.2"></script>
   <script src="js/data/topic3.js?v=3.5"></script>
   <script src="js/data/topic4.js?v=3.5"></script>
   <script src="js/data/topic5.js?v=3.5"></script>
   <script src="js/data/topic6.js?v=3.5"></script>
   <script src="js/data/topic7.js?v=3.5"></script>
   <script src="js/data/topic8.js?v=3.5"></script>
-  <script src="js/questions-data.js?v=3.5"></script>
-  <script src="js/quiz-engine.js?v=3.5"></script>
+  <script src="js/questions-data.js?v=3.7"></script>
+  <script src="js/study-content.js?v=1.4"></script>
+  <script src="js/quiz-engine.js?v=3.6"></script>
 
   <!-- Arena BioFísica (Multiplayer em Tempo Real na Aula - 100% Gratuito) -->
   <script src="js/lib/paho-mqtt.min.js"></script>
   <script src="js/lib/qrcode-generator.js"></script>
   <script src="js/arena-network.js?v=3.6"></script>
   <script src="js/arena-engine.js?v=3.8"></script>
-  <script src="js/arena-ui.js?v=4.0"></script>
-  <script src="js/teacher-manager.js?v=3.5"></script>
+  <script src="js/arena-ui.js?v=4.1"></script>
+  <script src="js/teacher-manager.js?v=3.6"></script>
   <script src="js/quiz-sync.js?v=1.2"></script>
   <script src="js/metrics.js?v=1.0"></script>
-  <script src="js/app.js?v=3.6"></script>
+  <script src="js/app.js?v=3.8"></script>
 </body>
 </html>

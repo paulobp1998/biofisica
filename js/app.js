@@ -121,6 +121,23 @@ document.addEventListener('DOMContentLoaded', () => {
   // Contentor de Notificações Toasts
   const toastContainer = document.getElementById('toast-container');
 
+  // Revisão espaçada, confiança, resultados e teoria
+  const reviewDueCard = document.getElementById('review-due-card');
+  const reviewDueTitle = document.getElementById('review-due-title');
+  const reviewDueSub = document.getElementById('review-due-sub');
+  const btnReviewDue = document.getElementById('btn-review-due');
+  const confidenceRow = document.getElementById('confidence-row');
+  const resultFocus = document.getElementById('result-focus');
+  const modalTheory = document.getElementById('modal-theory');
+  const modalTheoryTitle = document.getElementById('modal-theory-title');
+  const modalTheorySub = document.getElementById('modal-theory-sub');
+  const modalTheoryBody = document.getElementById('modal-theory-body');
+  const btnTheoryPractice = document.getElementById('btn-theory-practice');
+  const btnCloseTheoryModal = document.getElementById('btn-close-theory-modal');
+  const btnCancelTheoryModal = document.getElementById('btn-cancel-theory-modal');
+  const heroTag = document.getElementById('hero-tag');
+  const heroDesc = document.getElementById('hero-desc');
+
   // Variáveis de Estado
   let pendingSession = {
     mode: 'topic',
@@ -137,6 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let timerInterval = null;
   let timerSecondsRemaining = 0;
   let currentQuestionId = null;
+  let currentConfidence = null;
 
   // =========================================================================
   // Aviso Temporário do Docente (Plataforma Cluny) - Validade: 72 Horas
@@ -291,11 +309,54 @@ document.addEventListener('DOMContentLoaded', () => {
     return JSON.parse(localStorage.getItem('biofisica_mistakes') || '[]');
   }
 
-  function addMistakes(ids) {
+  // Revisão espaçada do Caderno de Erros.
+  // Errar volta a agendar a pergunta para o dia seguinte (ou para hoje, se havia certeza).
+  // A pergunta só sai do caderno depois de 2 respostas certas em dias diferentes,
+  // a primeira reagendando a revisão para daí a 3 dias.
+  const SRS_REVIEW_DAYS = 3;
+  const SRS_CORRECT_TO_MASTER = 2;
+
+  function localDateStr(date = new Date()) {
+    const y = date.getFullYear();
+    const m = String(date.getMonth() + 1).padStart(2, '0');
+    const d = String(date.getDate()).padStart(2, '0');
+    return `${y}-${m}-${d}`;
+  }
+
+  function addDaysStr(dateStr, days) {
+    const [y, m, d] = dateStr.split('-').map(Number);
+    return localDateStr(new Date(y, m - 1, d + days));
+  }
+
+  function getSrs() {
+    try {
+      return JSON.parse(localStorage.getItem('biofisica_srs') || '{}') || {};
+    } catch (e) {
+      return {};
+    }
+  }
+
+  function saveSrs(srs) {
+    localStorage.setItem('biofisica_srs', JSON.stringify(srs));
+  }
+
+  function isMistakeDue(id) {
+    const entry = getSrs()[id];
+    return !entry || entry.due <= localDateStr();
+  }
+
+  function addMistakes(ids, urgentIds = []) {
     if (!ids || ids.length === 0) return;
     const current = getMistakes();
     const set = new Set([...current, ...ids]);
     localStorage.setItem('biofisica_mistakes', JSON.stringify(Array.from(set)));
+
+    const srs = getSrs();
+    const today = localDateStr();
+    ids.forEach(id => {
+      srs[id] = { box: 0, due: urgentIds.includes(id) ? today : addDaysStr(today, 1), lastCorrect: null };
+    });
+    saveSrs(srs);
     updateQuickActionCounters();
   }
 
@@ -303,7 +364,36 @@ document.addEventListener('DOMContentLoaded', () => {
     const current = getMistakes();
     const filtered = current.filter(qId => qId !== id);
     localStorage.setItem('biofisica_mistakes', JSON.stringify(filtered));
+    const srs = getSrs();
+    delete srs[id];
+    saveSrs(srs);
     updateQuickActionCounters();
+  }
+
+  // Regista uma resposta certa a uma pergunta do caderno. Devolve true se a pergunta ficou dominada.
+  function recordCorrectReview(id) {
+    if (!getMistakes().includes(id)) return false;
+    const srs = getSrs();
+    const today = localDateStr();
+    const entry = srs[id] || { box: 0, due: today, lastCorrect: null };
+    if (entry.lastCorrect === today) return false; // só conta um acerto por dia
+    entry.box += 1;
+    entry.lastCorrect = today;
+    if (entry.box >= SRS_CORRECT_TO_MASTER) {
+      resolveMistake(id);
+      return true;
+    }
+    entry.due = addDaysStr(today, SRS_REVIEW_DAYS);
+    srs[id] = entry;
+    saveSrs(srs);
+    return false;
+  }
+
+  function getActiveMistakeQuestions() {
+    const ids = new Set(getMistakes());
+    const active = QUESTIONS_DATA.filter(q => ids.has(q.id));
+    // As que já é altura de rever vêm primeiro
+    return [...active.filter(q => isMistakeDue(q.id)), ...active.filter(q => !isMistakeDue(q.id))];
   }
 
   function getStarred() {
@@ -329,10 +419,19 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function updateQuickActionCounters() {
-    const mCount = getMistakes().length;
+    const mistakeQuestions = getActiveMistakeQuestions();
     const sCount = getStarred().length;
-    countMistakes.textContent = mCount;
+    countMistakes.textContent = mistakeQuestions.length;
     countStarred.textContent = sCount;
+
+    const dueCount = mistakeQuestions.filter(q => isMistakeDue(q.id)).length;
+    if (dueCount > 0) {
+      reviewDueTitle.textContent = `📅 Hoje tens ${dueCount} ${dueCount === 1 ? 'pergunta' : 'perguntas'} para rever`;
+      reviewDueSub.textContent = 'O Caderno de Erros volta a testar o que erraste ao fim de alguns dias. Uma pergunta só sai do caderno depois de 2 respostas certas em dias diferentes.';
+      reviewDueCard.classList.remove('hidden');
+    } else {
+      reviewDueCard.classList.add('hidden');
+    }
   }
 
   updateQuickActionCounters();
@@ -389,15 +488,22 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Abertura do Caderno de Erros
-  btnOpenMistakes.addEventListener('click', () => {
-    const mistakes = getMistakes();
-    if (mistakes.length === 0) {
+  function openMistakesSession(onlyDue = false) {
+    const all = getActiveMistakeQuestions();
+    if (all.length === 0) {
       showToast('🎉 O teu Caderno de Erros está vazio! Parabéns pelo excelente aproveitamento.', 'toast-success');
       return;
     }
-    const questions = QUESTIONS_DATA.filter(q => mistakes.includes(q.id));
-    openCustomSessionModal('📕 Caderno de Erros', questions, `Tens ${questions.length} questões erradas guardadas para rever:`);
-  });
+    const due = all.filter(q => isMistakeDue(q.id));
+    const questions = onlyDue && due.length > 0 ? due : all;
+    const subtitle = due.length > 0
+      ? `Tens ${all.length} questões guardadas, ${due.length} para rever hoje (aparecem primeiro):`
+      : `Tens ${all.length} questões guardadas. Nenhuma está agendada para hoje, mas podes treinar à vontade:`;
+    openCustomSessionModal('📕 Caderno de Erros', questions, subtitle);
+  }
+
+  btnOpenMistakes.addEventListener('click', () => openMistakesSession(false));
+  btnReviewDue.addEventListener('click', () => openMistakesSession(true));
 
   // Abertura das Perguntas Marcadas
   btnOpenStarred.addEventListener('click', () => {
@@ -468,6 +574,136 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // =========================================================================
+  // 7b. Textos dinâmicos, aviso minimizável e conceitos de estudo
+  // =========================================================================
+  function activeFocusPhrase() {
+    const ids = typeof UNLOCKED_TOPIC_IDS !== 'undefined' ? UNLOCKED_TOPIC_IDS : [1];
+    const n = QUESTIONS_DATA.length;
+    return ids.length === 1
+      ? `Foca o teu estudo nas ${n} questões ativas do Tópico ${ids[0]}!`
+      : `Foca o teu estudo nas ${n} questões dos tópicos ativos!`;
+  }
+
+  function renderDynamicTexts() {
+    const ids = typeof UNLOCKED_TOPIC_IDS !== 'undefined' ? UNLOCKED_TOPIC_IDS : [1];
+    const n = QUESTIONS_DATA.length;
+    const topics = ids.map(id => TOPICS_DATA.find(t => t.id === id)).filter(Boolean);
+    const topicsShort = ids.length === 1 ? `Tópico ${ids[0]}` : `Tópicos ${ids.slice(0, -1).join(', ')} e ${ids[ids.length - 1]}`;
+    const topicsLong = topics.map(t => `Tópico ${t.id} (${t.shortTitle})`).join(' e ');
+
+    if (heroTag) heroTag.textContent = `✨ 100% Gratuito • ${n} Questões de Biofísica Ativas (${topicsShort}) • Ensino Superior`;
+    if (heroDesc) {
+      heroDesc.innerHTML = `Consolida os conteúdos das tuas aulas com <strong>${n} questões de Biofísica</strong> rigorosas do <strong>${topicsLong}</strong>, com justificações científicas completas, análise detalhada de distratores e notas de aplicação prática.`;
+    }
+    const footerInfo = document.getElementById('footer-info');
+    if (footerInfo) {
+      footerInfo.textContent = ` • ${n} Questões de Biofísica Ativas (${topicsShort}) • Os restantes tópicos estão temporariamente bloqueados aos alunos`;
+    }
+  }
+
+  renderDynamicTexts();
+
+  // Comunicado sobre IA: depois de lido, fica numa linha só (a preferência fica guardada no navegador)
+  function initAiNotice() {
+    const notice = document.getElementById('site-notice-banner');
+    const btnCollapse = document.getElementById('btn-notice-collapse');
+    const btnExpand = document.getElementById('btn-notice-expand');
+    if (!notice || !btnCollapse || !btnExpand) return;
+    const KEY = 'biofisica_ai_notice_collapsed';
+    let collapsed = false;
+    try { collapsed = localStorage.getItem(KEY) === '1'; } catch (e) { /* sem armazenamento */ }
+    const apply = (value) => {
+      notice.classList.toggle('collapsed', value);
+      btnExpand.setAttribute('aria-expanded', String(!value));
+      try { localStorage.setItem(KEY, value ? '1' : '0'); } catch (e) { /* sem armazenamento */ }
+    };
+    notice.classList.toggle('collapsed', collapsed);
+    btnCollapse.addEventListener('click', () => apply(true));
+    btnExpand.addEventListener('click', () => apply(false));
+  }
+
+  initAiNotice();
+
+  function conceptQuestions(conceptId) {
+    return QUESTIONS_DATA.filter(q => getConceptId(q.id) === conceptId);
+  }
+
+  function renderBlockHtml(block) {
+    const formulas = block.formulas && block.formulas.length
+      ? `<div class="formula-box"><div class="formula-box-title">Fórmulas</div>${block.formulas.map(f =>
+          `<div class="formula-row"><code>${f.expr}</code><span>${f.note}</span></div>`).join('')}</div>`
+      : '';
+    const example = block.example ? `<div class="study-example"><strong>Exemplo:</strong> ${block.example}</div>` : '';
+    return `
+      ${formulas}
+      <div class="study-block-body">${block.body}</div>
+      ${example}
+      <div class="study-pitfall"><strong>⚠️ Erro comum:</strong> ${block.pitfall}</div>
+      <div class="study-nursing"><strong>🩺 Em enfermagem:</strong> ${block.nursing}</div>
+    `;
+  }
+
+  let theoryConceptId = null;
+
+  function openTheoryModal(conceptId) {
+    const block = getStudyBlock(conceptId);
+    if (!block) return;
+    theoryConceptId = conceptId;
+    const topicMeta = TOPICS_DATA.find(t => t.id === block.topicId);
+    modalTheoryTitle.textContent = `${block.icon} ${block.title}`;
+    modalTheorySub.textContent = topicMeta ? `Tópico ${topicMeta.id}: ${topicMeta.shortTitle}` : '';
+    modalTheoryBody.innerHTML = renderBlockHtml(block);
+    const count = conceptQuestions(conceptId).length;
+    btnTheoryPractice.classList.toggle('hidden', count === 0);
+    btnTheoryPractice.textContent = `🎯 Praticar este conceito (${count})`;
+    modalTheory.classList.remove('hidden');
+    modalTheoryBody.scrollTop = 0;
+  }
+
+  function closeTheoryModal() {
+    modalTheory.classList.add('hidden');
+  }
+
+  function openConceptSession(conceptId) {
+    const block = getStudyBlock(conceptId);
+    const questions = conceptQuestions(conceptId);
+    if (!block || questions.length === 0) {
+      showToast('Ainda não há perguntas ativas para este conceito.', 'toast-info', 2500);
+      return;
+    }
+    openCustomSessionModal(
+      `${block.icon} ${block.title}`,
+      quiz.shuffleArray(questions),
+      `${questions.length} questões sobre este conceito:`
+    );
+  }
+
+  btnCloseTheoryModal.addEventListener('click', closeTheoryModal);
+  btnCancelTheoryModal.addEventListener('click', closeTheoryModal);
+  modalTheory.addEventListener('click', (e) => {
+    if (e.target === modalTheory) closeTheoryModal();
+  });
+  btnTheoryPractice.addEventListener('click', () => {
+    const id = theoryConceptId;
+    closeTheoryModal();
+    if (typeof closeSearchModal === 'function') closeSearchModal();
+    if (id) openConceptSession(id);
+  });
+
+  // Delegação de eventos para botões gerados dinamicamente (quiz, resultados, estatísticas, pesquisa)
+  document.addEventListener('click', (e) => {
+    const theoryBtn = e.target.closest('[data-open-theory]');
+    if (theoryBtn) {
+      openTheoryModal(theoryBtn.getAttribute('data-open-theory'));
+      return;
+    }
+    const practiceBtn = e.target.closest('[data-practice-concept]');
+    if (practiceBtn) {
+      openConceptSession(practiceBtn.getAttribute('data-practice-concept'));
+    }
+  });
+
+  // =========================================================================
   // 8. Renderização dos Tópicos no Dashboard
   // =========================================================================
   function renderTopicCards() {
@@ -522,7 +758,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.btn-locked-topic, .topic-card-locked').forEach(el => {
       el.addEventListener('click', (e) => {
         e.stopPropagation();
-        showToast('🔒 <strong>Tópico Bloqueado pelo Professor</strong><br>O acesso às questões deste tópico está suspenso até nova indicação do docente. Foca o teu estudo nas 200 questões ativas do Tópico 1!', 'toast-info', 4500);
+        showToast(`🔒 <strong>Tópico Bloqueado pelo Professor</strong><br>O acesso às questões deste tópico está suspenso até nova indicação do docente. ${activeFocusPhrase()}`, 'toast-info', 4500);
       });
     });
   }
@@ -560,7 +796,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function openTopicSessionModal(topicId) {
     if (typeof UNLOCKED_TOPIC_IDS !== 'undefined' && !UNLOCKED_TOPIC_IDS.includes(topicId)) {
-      showToast('🔒 <strong>Acesso Bloqueado</strong><br>Este tópico está temporariamente bloqueado pelo professor. Estuda o Tópico 1!', 'toast-warning', 4000);
+      showToast('🔒 <strong>Acesso Bloqueado</strong><br>Este tópico está temporariamente bloqueado pelo professor. Estuda os tópicos ativos!', 'toast-warning', 4000);
       return;
     }
     const topic = TOPICS_DATA.find(t => t.id === topicId);
@@ -632,7 +868,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const isSingleTopic = typeof UNLOCKED_TOPIC_IDS !== 'undefined' && UNLOCKED_TOPIC_IDS.length === 1;
     if (isSingleTopic) {
       modalSessionTitle.textContent = `🎯 Simulação de Exame: Tópico 1`;
-      modalSessionSubtitle.textContent = `20 ou 40 questões sorteadas das 200 questões ativas do Tópico 1 (Tópicos 2 a 8 temporariamente bloqueados pelo docente):`;
+      modalSessionSubtitle.textContent = `20 ou 40 questões sorteadas das ${QUESTIONS_DATA.length} questões ativas do Tópico 1 (os restantes tópicos estão temporariamente bloqueados pelo docente):`;
 
       sessionOptionsGrid.innerHTML = `
         <button class="session-option-card selected" data-count="20">
@@ -875,7 +1111,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Enunciado
-    questionText.textContent = state.question;
+    questionText.innerHTML = richText(state.question);
 
     // Opções
     optionsContainer.innerHTML = '';
@@ -891,11 +1127,32 @@ document.addEventListener('DOMContentLoaded', () => {
       optionsContainer.appendChild(btn);
     });
 
+    // Autoavaliação de confiança (só no Modo Treino)
+    currentConfidence = null;
+    confidenceRow.querySelectorAll('.confidence-chip').forEach(chip => {
+      chip.classList.remove('selected');
+      chip.setAttribute('aria-pressed', 'false');
+    });
+    confidenceRow.classList.toggle('hidden', state.feedbackMode === 'delayed');
+
     // Resetar feedback
     feedbackCard.classList.add('hidden');
     feedbackCard.classList.remove('feedback-correct', 'feedback-incorrect');
     btnNext.classList.add('hidden');
   }
+
+  confidenceRow.querySelectorAll('.confidence-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      if (quiz.isAnswered) return;
+      const value = chip.getAttribute('data-conf');
+      currentConfidence = currentConfidence === value ? null : value;
+      confidenceRow.querySelectorAll('.confidence-chip').forEach(c => {
+        const on = c.getAttribute('data-conf') === currentConfidence;
+        c.classList.toggle('selected', on);
+        c.setAttribute('aria-pressed', String(on));
+      });
+    });
+  });
 
   function formatDistractorText(rawText) {
     if (!rawText) return 'Está incorreta no contexto desta questão.';
@@ -906,6 +1163,10 @@ document.addEventListener('DOMContentLoaded', () => {
     t = t.replace(/^(?:A\s+)?Opção\s+[A-D]\s*/i, '');
     t = t.replace(/^(?:Opção\s+incorreta\s*:?\s*)/i, '');
     t = t.replace(/^[:\-\s]+/, '');
+
+    // Formato do banco: «Está incorreta: motivo». Mantém-se tal como está (sem «porque :»).
+    const matchColon = t.match(/^está\s+(?:in)?correta\s*:\s*([\s\S]+)$/i);
+    if (matchColon) return `Está incorreta: ${matchColon[1].trim()}`;
 
     const matchPq = t.match(/^(?:está\s+(?:in)?correta|está\s+errada|é\s+(?:in)?correta|é\s+falsa|é\s+errada)\s*(?:porque\s+|pois\s+|já\s+que\s+)?(.*)/i);
     if (matchPq) {
@@ -960,6 +1221,27 @@ document.addEventListener('DOMContentLoaded', () => {
     return explanation;
   }
 
+  // Análise dos distratores: a opção escolhida pelo aluno aparece à vista,
+  // as restantes ficam recolhidas (quando acerta, ficam todas recolhidas).
+  function buildDistractorsHtml(result, letters, selectedIndex, startOpen = false) {
+    const item = idx => `<li><strong>Opção ${letters[idx]}:</strong> ${formatDistractorText(getOptionDistractorExplanation(result, idx))}</li>`;
+    const wrongIdx = result.options.map((_, i) => i).filter(i => i !== result.correctIndex);
+    const picked = selectedIndex !== result.correctIndex && selectedIndex >= 0 ? selectedIndex : null;
+    const others = wrongIdx.filter(i => i !== picked);
+
+    let html = '';
+    if (picked !== null) {
+      html += `<div class="picked-analysis"><strong>A tua escolha, opção ${letters[picked]}:</strong> ${formatDistractorText(getOptionDistractorExplanation(result, picked))}</div>`;
+    }
+    if (others.length > 0) {
+      const label = picked !== null
+        ? `Ver porque é que ${others.length === 1 ? 'a outra opção está errada' : `as outras ${others.length} opções estão erradas`}`
+        : 'Porque é que as outras 3 opções estão erradas?';
+      html += `<details class="distractor-fold"${startOpen ? ' open' : ''}><summary>${label}</summary><ul>${others.map(item).join('')}</ul></details>`;
+    }
+    return html;
+  }
+
   // Trata a seleção de uma opção
   function handleOptionClick(selectedIndex) {
     const isDelayed = quiz.feedbackMode === 'delayed';
@@ -995,31 +1277,33 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
+    result.confidence = currentConfidence;
+
     feedbackCard.classList.remove('hidden');
     const letters = ['A', 'B', 'C', 'D'];
     const correctLetter = letters[result.correctIndex];
     if (result.isCorrect) {
       feedbackCard.classList.add('feedback-correct');
-      feedbackTitle.innerHTML = '✅ <strong>Resposta Correta!</strong> Excelente raciocínio científico.';
+      feedbackTitle.innerHTML = currentConfidence === 'low'
+        ? '✅ <strong>Resposta Correta!</strong> Acertaste, mas sem certeza: lê a justificação para a fixares.'
+        : '✅ <strong>Resposta Correta!</strong> Excelente raciocínio científico.';
     } else {
       feedbackCard.classList.add('feedback-incorrect');
-      feedbackTitle.innerHTML = '❌ <strong>Resposta Incorreta.</strong> Consulta a justificação abaixo para consolidar:';
+      feedbackTitle.innerHTML = currentConfidence === 'high'
+        ? '❌ <strong>Resposta Incorreta,</strong> e estavas com certeza. É um bom sinal de um conceito a rever com atenção:'
+        : '❌ <strong>Resposta Incorreta.</strong> Consulta a justificação abaixo para consolidar:';
     }
 
     feedbackExplanation.innerHTML = `
       <p><strong>Por que está certa a opção ${correctLetter}:</strong> ${result.explanation}</p>
     `;
 
-    let distractorsHtml = '<strong>Análise detalhada das restantes opções:</strong><ul>';
-    result.options.forEach((opt, idx) => {
-      if (idx !== result.correctIndex) {
-        const daText = getOptionDistractorExplanation(result, idx);
-        const cleanExplanation = formatDistractorText(daText);
-        distractorsHtml += `<li><strong>Opção ${letters[idx]}:</strong> ${cleanExplanation}</li>`;
-      }
-    });
-    distractorsHtml += '</ul>';
-    feedbackDistractors.innerHTML = distractorsHtml;
+    feedbackDistractors.innerHTML = buildDistractorsHtml(result, letters, selectedIndex);
+
+    const conceptId = getConceptId(currentQuestionId);
+    const theoryButton = conceptId && getStudyBlock(conceptId)
+      ? `<button type="button" class="btn btn-sm ${result.isCorrect ? 'btn-outline' : 'btn-primary'} btn-theory-link" data-open-theory="${conceptId}">📖 Rever esta parte da teoria</button>`
+      : '';
 
     feedbackNursing.innerHTML = `
       <div class="nursing-tip-box">
@@ -1029,6 +1313,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <p>${result.nursingApplication}</p>
         </div>
       </div>
+      ${theoryButton ? `<div class="feedback-theory-row">${theoryButton}</div>` : ''}
     `;
 
     const isLast = quiz.currentIndex === quiz.currentQuestions.length - 1;
@@ -1055,6 +1340,102 @@ document.addEventListener('DOMContentLoaded', () => {
   // =========================================================================
   // 11. Ecrã de Resultados e Relatório Completo (1A, 1B, 3F)
   // =========================================================================
+  // Desempenho por conceito (para o ponto fraco e as estatísticas): { conceptId: [certas, total] }
+  function conceptStatsFromAnswers(answers) {
+    const stats = {};
+    answers.forEach(a => {
+      const cid = getConceptId(a.questionId);
+      if (!cid) return;
+      stats[cid] = stats[cid] || [0, 0];
+      stats[cid][1] += 1;
+      if (a.isCorrect) stats[cid][0] += 1;
+    });
+    return stats;
+  }
+
+  // Confiança declarada vs. acerto: { high|mid|low: [certas, total] } (só respostas com confiança indicada)
+  function confidenceStatsFromAnswers(answers) {
+    const stats = { high: [0, 0], mid: [0, 0], low: [0, 0] };
+    answers.forEach(a => {
+      if (!a.confidence || !stats[a.confidence]) return;
+      stats[a.confidence][1] += 1;
+      if (a.isCorrect) stats[a.confidence][0] += 1;
+    });
+    return stats;
+  }
+
+  const CONFIDENCE_LABELS = { high: 'Tenho a certeza', mid: 'Acho que sim', low: 'Estou a adivinhar' };
+
+  function conceptBarColor(pct) {
+    return pct >= 70 ? 'var(--color-success)' : pct >= 50 ? 'var(--color-warning)' : 'var(--color-danger)';
+  }
+
+  function renderResultFocus(summary) {
+    const conceptStats = conceptStatsFromAnswers(summary.answers);
+    const entries = Object.entries(conceptStats)
+      .map(([id, [c, t]]) => ({ id, c, t, wrong: t - c, pct: Math.round((c / t) * 100), block: getStudyBlock(id) }))
+      .filter(e => e.block);
+    let html = '';
+
+    const withErrors = entries.filter(e => e.wrong > 0);
+    const solid = withErrors.filter(e => e.t >= 2);
+    const weak = (solid.length ? solid : withErrors).sort((a, b) => (a.pct - b.pct) || (b.t - a.t))[0];
+
+    if (weak) {
+      const available = conceptQuestions(weak.id).length;
+      html += `
+        <div class="focus-card focus-weak">
+          <h4>🎯 Ponto fraco desta sessão</h4>
+          <p><strong>${weak.block.icon} ${weak.block.title}</strong>: ${weak.c} de ${weak.t} certas (${weak.pct}%).</p>
+          <div class="focus-actions">
+            <button type="button" class="btn btn-sm btn-primary" data-open-theory="${weak.id}">📖 Rever a teoria</button>
+            ${available > 0 ? `<button type="button" class="btn btn-sm btn-outline" data-practice-concept="${weak.id}">🎯 Praticar este conceito (${available})</button>` : ''}
+          </div>
+        </div>`;
+    } else if (entries.length > 0) {
+      html += '<div class="focus-card focus-good"><h4>✅ Sem pontos fracos nesta sessão</h4><p>Acertaste tudo o que foi perguntado em cada conceito.</p></div>';
+    }
+
+    if (entries.length > 1) {
+      html += '<h4>Desempenho por conceito:</h4><div class="topic-breakdown-list">';
+      entries.sort((a, b) => a.pct - b.pct).forEach(e => {
+        html += `
+          <div class="breakdown-item">
+            <div class="breakdown-info"><span>${e.block.icon} ${e.block.title}</span><span>${e.c}/${e.t} (${e.pct}%)</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width: ${e.pct}%; background-color: ${conceptBarColor(e.pct)};"></div></div>
+          </div>`;
+      });
+      html += '</div>';
+    }
+
+    const conf = confidenceStatsFromAnswers(summary.answers);
+    const confTotal = conf.high[1] + conf.mid[1] + conf.low[1];
+    if (confTotal > 0) {
+      const rows = ['high', 'mid', 'low'].filter(k => conf[k][1] > 0)
+        .map(k => `<li><strong>${CONFIDENCE_LABELS[k]}:</strong> ${conf[k][0]} de ${conf[k][1]} certas</li>`).join('');
+      const overconfident = summary.answers.filter(a => !a.isCorrect && a.confidence === 'high');
+      html += `
+        <div class="focus-card">
+          <h4>🧭 A tua confiança vs. os resultados</h4>
+          <ul class="focus-list">${rows}</ul>
+          ${overconfident.length > 0 ? `<p class="focus-note">Erraste ${overconfident.length} ${overconfident.length === 1 ? 'pergunta' : 'perguntas'} com certeza (${overconfident.map(a => questionLabel(a.questionId)).join('; ')}). São as que mais vale rever, e voltam hoje ao Caderno de Erros.</p>` : ''}
+        </div>`;
+    }
+
+    const notes = [];
+    if (summary.masteredCount > 0) {
+      notes.push(`📕 ${summary.masteredCount} ${summary.masteredCount === 1 ? 'pergunta saiu' : 'perguntas saíram'} do Caderno de Erros (2 acertos em dias diferentes).`);
+    }
+    if (summary.incorrectCount > 0) {
+      notes.push(`📕 ${summary.incorrectCount} ${summary.incorrectCount === 1 ? 'pergunta guardada' : 'perguntas guardadas'} no Caderno de Erros para rever nos próximos dias.`);
+    }
+    if (notes.length) {
+      html += `<div class="focus-card focus-note-card">${notes.map(n => `<p>${n}</p>`).join('')}</div>`;
+    }
+
+    resultFocus.innerHTML = html;
+  }
+
   function showResults(summary) {
     clearInterval(timerInterval);
     quizTimerBadge.classList.add('hidden');
@@ -1063,14 +1444,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // Guardar histórico e atualizar erros
     saveAttemptHistory(summary);
     Metrics.trackSession(quiz, summary, false);
-    if (summary.incorrectIds && summary.incorrectIds.length > 0) {
-      addMistakes(summary.incorrectIds);
-    }
 
-    // Se estiver a treinar o Caderno de Erros, remove as que acertou!
-    if (quiz.mode === 'custom' && quiz.customTitle === '📕 Caderno de Erros') {
-      summary.answers.filter(a => a.isCorrect).forEach(a => resolveMistake(a.questionId));
+    // Caderno de Erros com revisão espaçada: os acertos às perguntas do caderno contam
+    // (em qualquer sessão); os erros voltam a ser agendados.
+    const masteredIds = summary.answers
+      .filter(a => a.isCorrect && recordCorrectReview(a.questionId))
+      .map(a => a.questionId);
+    if (summary.incorrectIds && summary.incorrectIds.length > 0) {
+      const overconfident = summary.answers
+        .filter(a => !a.isCorrect && a.confidence === 'high')
+        .map(a => a.questionId);
+      addMistakes(summary.incorrectIds, overconfident);
     }
+    summary.masteredCount = masteredIds.length;
 
     // Avaliar conquistas
     checkAndAwardBadges(summary);
@@ -1079,7 +1465,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Nota 0-20 e Classificação
     resultGrade.innerHTML = `
       <div class="grade-circle ${summary.badgeClass}">
-        <span class="grade-number">${summary.grade20}</span>
+        <span class="grade-number">${String(summary.grade20).replace('.', ',')}</span>
         <span class="grade-scale">/ 20 valores</span>
       </div>
     `;
@@ -1115,6 +1501,7 @@ document.addEventListener('DOMContentLoaded', () => {
       breakdownList.appendChild(itemDiv);
     });
     resultTopicBreakdown.appendChild(breakdownList);
+    renderResultFocus(summary);
 
     // Folha de Revisão Completa com botão estrela
     resultReviewList.innerHTML = '<h4>Revisão Completa do Teste (com explicações científicas):</h4>';
@@ -1124,6 +1511,7 @@ document.addEventListener('DOMContentLoaded', () => {
     summary.answers.forEach((ans, i) => {
       const isStarred = starredList.includes(ans.questionId);
       const qidLabel = questionLabel(ans.questionId);
+      const reviewConceptId = getConceptId(ans.questionId);
       const reviewItem = document.createElement('div');
       reviewItem.className = `review-card ${ans.isCorrect ? 'review-correct' : 'review-incorrect'}`;
       reviewItem.innerHTML = `
@@ -1147,20 +1535,13 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="review-explanation">
           <p><strong>Por que está certa a opção ${letters[ans.correctIndex]}:</strong> ${ans.explanation}</p>
         </div>
-        <div class="review-distractors" style="margin-top: 0.5rem; padding-top: 0.5rem; border-top: 1px dashed var(--border-subtle); font-size: 0.88rem; color: var(--text-secondary);">
-          <strong style="color: var(--text-primary); display: block; margin-bottom: 0.35rem;">Por que estão incorretas as restantes 3 opções:</strong>
-          <ul style="margin: 0 0 0 1.25rem; padding: 0;">
-            ${ans.options.map((opt, oIdx) => {
-              if (oIdx === ans.correctIndex) return '';
-              const daText = getOptionDistractorExplanation(ans, oIdx);
-              const cleanExplanation = formatDistractorText(daText);
-              return `<li style="margin-bottom: 0.25rem;"><strong>Opção ${letters[oIdx]}:</strong> ${cleanExplanation}</li>`;
-            }).join('')}
-          </ul>
+        <div class="review-distractors">
+          ${buildDistractorsHtml(ans, letters, ans.selectedIndex)}
         </div>
         <div class="review-nursing">
           <p><strong>💡 Relevância em Enfermagem:</strong> ${ans.nursingApplication}</p>
         </div>
+        ${reviewConceptId && getStudyBlock(reviewConceptId) ? `<div class="feedback-theory-row"><button type="button" class="btn btn-sm btn-outline btn-theory-link" data-open-theory="${reviewConceptId}">📖 Rever esta parte da teoria</button></div>` : ''}
       `;
       resultReviewList.appendChild(reviewItem);
     });
@@ -1198,7 +1579,9 @@ document.addEventListener('DOMContentLoaded', () => {
       grade20: summary.grade20,
       percentage: summary.percentage,
       correct: summary.correctCount,
-      total: summary.totalQuestions
+      total: summary.totalQuestions,
+      concepts: conceptStatsFromAnswers(summary.answers),
+      confidence: confidenceStatsFromAnswers(summary.answers)
     };
     history.unshift(attempt);
     localStorage.setItem('biofisica_history', JSON.stringify(history.slice(0, 30)));
@@ -1313,6 +1696,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // =========================================================================
   // 13. Funcionalidade 2E: Motor de Pesquisa Rápida e Glossário
   // =========================================================================
+  const SEARCH_SUGGESTIONS = ['atrito', 'momento', 'alavanca', 'centro de gravidade', 'inércia', 'binário'];
+
   function openSearchModal() {
     modalSearch.classList.remove('hidden');
     searchInput.value = '';
@@ -1320,9 +1705,19 @@ document.addEventListener('DOMContentLoaded', () => {
     searchCountBadge.classList.add('hidden');
     searchResultsList.innerHTML = `
       <div class="empty-state" style="padding: 2rem 1rem;">
-        <p>💡 Podes pesquisar por fórmulas (ex: <em>Poiseuille, Reynolds, Young</em>), conceitos (<em>isótopos, atrito, radiação</em>) ou aplicações clínicas de enfermagem.</p>
+        <p>💡 Procura um termo para ver a <strong>definição curta</strong> e as <strong>perguntas</strong> relacionadas.</p>
+        <div class="search-suggestions">
+          ${SEARCH_SUGGESTIONS.map(t => `<button type="button" class="search-chip" data-term="${t}">${t}</button>`).join('')}
+        </div>
       </div>
     `;
+    searchResultsList.querySelectorAll('.search-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        searchInput.value = chip.getAttribute('data-term');
+        searchInput.dispatchEvent(new Event('input'));
+        searchInput.focus();
+      });
+    });
     setTimeout(() => searchInput.focus(), 150);
   }
 
@@ -1349,17 +1744,53 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
     if (e.key === 'Escape') {
+      // A teoria pode estar aberta por cima da pesquisa: fecha-se primeiro
+      if (!modalTheory.classList.contains('hidden')) {
+        closeTheoryModal();
+        return;
+      }
       if (!modalSearch.classList.contains('hidden')) closeSearchModal();
       if (!modalSession.classList.contains('hidden')) closeSessionModal();
       if (!modalWorksheet.classList.contains('hidden')) closeWorksheetModal();
     }
   });
 
+  // Atalhos do quiz: A–D ou 1–4 escolhem a opção, Enter avança
+  document.addEventListener('keydown', (e) => {
+    if (quizView.classList.contains('hidden')) return;
+    if (e.ctrlKey || e.metaKey || e.altKey) return;
+    if (document.querySelector('.modal-backdrop:not(.hidden)')) return;
+    const tag = (e.target && e.target.tagName) || '';
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+
+    const key = e.key.toLowerCase();
+    const optionIdx = ['a', 'b', 'c', 'd'].indexOf(key) !== -1 ? ['a', 'b', 'c', 'd'].indexOf(key) : ['1', '2', '3', '4'].indexOf(key);
+    if (optionIdx !== -1) {
+      const btn = optionsContainer.querySelectorAll('.option-btn')[optionIdx];
+      if (btn && !btn.disabled) {
+        e.preventDefault();
+        btn.click();
+      }
+      return;
+    }
+
+    if ((e.key === 'Enter' || e.key === 'ArrowRight') && !btnNext.classList.contains('hidden')) {
+      e.preventDefault();
+      btnNext.click();
+    }
+  });
+
+  function normalizeSearchText(text) {
+    // Ignora índices (F<sub>P</sub> = FP) e sublinhados, para «F_P» e «FP» encontrarem o mesmo
+    return plainMathText(text).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f_]/g, '');
+  }
+
   // Função de destaque de termos encontrados
   function highlightText(text, query) {
     if (!query) return text;
     const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
-    return text.replace(regex, '<mark>$1</mark>');
+    // Só realça fora das etiquetas (<sub>, <sup>), para não as estragar
+    return text.split(/(<\/?(?:sub|sup)>)/).map((part, i) => (i % 2 === 1 ? part : part.replace(regex, '<mark>$1</mark>'))).join('');
   }
 
   // Executa a pesquisa em tempo real
@@ -1375,22 +1806,46 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
+      const nq = normalizeSearchText(q);
       const matches = QUESTIONS_DATA.filter(item => {
-        return item.question.toLowerCase().includes(q) ||
-               item.explanation.toLowerCase().includes(q) ||
-               item.nursingApplication.toLowerCase().includes(q) ||
-               item.options.some(opt => opt.toLowerCase().includes(q));
+        return normalizeSearchText(item.question).includes(nq) ||
+               normalizeSearchText(item.explanation).includes(nq) ||
+               normalizeSearchText(item.nursingApplication).includes(nq) ||
+               item.options.some(opt => normalizeSearchText(opt).includes(nq));
       });
+      const glossaryMatches = GLOSSARY.filter(g =>
+        normalizeSearchText(g.t).includes(nq) ||
+        (g.a || []).some(alias => normalizeSearchText(alias).includes(nq)) ||
+        normalizeSearchText(g.d).includes(nq)
+      ).sort((x, y) => {
+        // Termos cujo nome corresponde à pesquisa vêm primeiro
+        const rx = normalizeSearchText(x.t).includes(nq) ? 0 : 1;
+        const ry = normalizeSearchText(y.t).includes(nq) ? 0 : 1;
+        return rx - ry;
+      }).slice(0, 6);
+
+      const glossaryHtml = glossaryMatches.length === 0 ? '' : `
+        <div class="glossary-section">
+          <h4 class="search-section-title">📘 Glossário</h4>
+          ${glossaryMatches.map(g => `
+            <div class="glossary-card">
+              <div class="glossary-head">
+                <strong>${highlightText(g.t, q)}</strong>
+                ${getStudyBlock(g.c) ? `<button type="button" class="btn-link" data-open-theory="${g.c}">📖 Ver na teoria</button>` : ''}
+              </div>
+              <p>${highlightText(g.d, q)}</p>
+            </div>`).join('')}
+        </div>`;
 
       searchStatusText.textContent = `Resultados para "${searchInput.value.trim()}":`;
-      searchCountBadge.textContent = `${matches.length} encontradas`;
+      searchCountBadge.textContent = `${glossaryMatches.length} no glossário • ${matches.length} perguntas`;
       searchCountBadge.classList.remove('hidden');
 
       if (matches.length === 0) {
-        searchResultsList.innerHTML = `
+        searchResultsList.innerHTML = glossaryHtml + `
           <div class="empty-state">
-            <p>Nenhuma questão encontrada com o termo "<strong>${searchInput.value.trim()}</strong>".</p>
-            <p>Tenta termos como <em>viscosidade, Reynolds, Bergonié, Poiseuille, iodo, atrito</em>.</p>
+            <p>Nenhuma pergunta encontrada com o termo "<strong>${richText(searchInput.value.trim())}</strong>".</p>
+            ${glossaryMatches.length === 0 ? '<p>Tenta termos como <em>atrito, momento, alavanca, inércia, Hooke, módulo de Young</em>.</p>' : ''}
           </div>
         `;
         return;
@@ -1401,7 +1856,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const starredList = getStarred();
       const letters = ['A', 'B', 'C', 'D'];
 
-      searchResultsList.innerHTML = rendered.map(item => {
+      searchResultsList.innerHTML = glossaryHtml + (glossaryHtml ? '<h4 class="search-section-title">❓ Perguntas</h4>' : '') + rendered.map(item => {
         const topicMeta = TOPICS_DATA.find(t => t.id === item.topicId);
         const isStarred = starredList.includes(item.id);
         const highlightedQ = highlightText(item.question, q);
@@ -1527,7 +1982,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       const tId = parseInt(selectedTopic, 10);
       if (typeof UNLOCKED_TOPIC_IDS !== 'undefined' && !UNLOCKED_TOPIC_IDS.includes(tId)) {
-        showToast('🔒 <strong>Tópico Bloqueado pelo Professor</strong><br>O acesso às questões deste tópico está suspenso temporariamente. Foca o teu estudo nas 200 questões ativas do Tópico 1!', 'toast-warning', 4000);
+        showToast(`🔒 <strong>Tópico Bloqueado pelo Professor</strong><br>O acesso às questões deste tópico está suspenso temporariamente. ${activeFocusPhrase()}`, 'toast-warning', 4000);
         return;
       }
       pool = QUESTIONS_DATA.filter(q => q.topicId === tId);
@@ -1615,6 +2070,18 @@ document.addEventListener('DOMContentLoaded', () => {
     TOPIC_SUMMARIES.forEach(item => {
       const topicMeta = TOPICS_DATA.find(t => t.id === item.topicId);
       const isUnlocked = typeof UNLOCKED_TOPIC_IDS !== 'undefined' ? UNLOCKED_TOPIC_IDS.includes(item.topicId) : (item.topicId === 1);
+      const blocks = STUDY_BLOCKS.filter(b => b.topicId === item.topicId);
+      const bodyHtml = blocks.length
+        ? blocks.map(b => {
+            const count = isUnlocked ? conceptQuestions(b.id).length : 0;
+            return `
+              <article class="study-block" id="study-block-${b.id}">
+                <h4 class="study-block-title">${b.icon} ${b.title}</h4>
+                ${renderBlockHtml(b)}
+                ${count > 0 ? `<div class="study-block-actions"><button type="button" class="btn btn-sm btn-outline" data-practice-concept="${b.id}">🎯 Praticar este conceito (${count} ${count === 1 ? 'pergunta' : 'perguntas'})</button></div>` : ''}
+              </article>`;
+          }).join('')
+        : item.summary;
       const accordionItem = document.createElement('div');
       accordionItem.className = 'accordion-item';
       accordionItem.innerHTML = `
@@ -1623,7 +2090,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <span class="accordion-arrow">▼</span>
         </div>
         <div class="accordion-body">
-          ${item.summary}
+          ${bodyHtml}
           <div style="margin-top: 1rem; text-align: right;">
             ${isUnlocked ? `
               <button class="btn btn-sm btn-primary btn-study-practice" data-topic="${item.topicId}">
@@ -1660,7 +2127,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.btn-study-locked').forEach(btn => {
       btn.addEventListener('click', () => {
-        showToast('🔒 <strong>Tópico Bloqueado pelo Professor</strong><br>O treino prático deste tópico está suspenso temporariamente. Foca o teu estudo nas 200 questões ativas do Tópico 1!', 'toast-info', 4500);
+        showToast(`🔒 <strong>Tópico Bloqueado pelo Professor</strong><br>O treino prático deste tópico está suspenso temporariamente. ${activeFocusPhrase()}`, 'toast-info', 4500);
       });
     });
   }
@@ -1677,6 +2144,103 @@ document.addEventListener('DOMContentLoaded', () => {
   // =========================================================================
   // 16. Estatísticas e Histórico
   // =========================================================================
+  // Evolução das notas (últimas 15 tentativas, da mais antiga para a mais recente)
+  function buildTrendChartHtml(history) {
+    const points = history.slice(0, 15).reverse();
+    if (points.length < 2) {
+      return '<div class="stats-panel"><h4>📈 Evolução das notas</h4><p class="stats-hint">Faz pelo menos dois testes para ver aqui a evolução das tuas notas.</p></div>';
+    }
+    const W = 600, H = 210, left = 34, right = 14, top = 14, bottom = 28;
+    const plotW = W - left - right, plotH = H - top - bottom;
+    const x = i => left + (i * plotW) / (points.length - 1);
+    const y = v => top + (1 - v / 20) * plotH;
+    const grid = [0, 5, 10, 15, 20].map(v =>
+      `<line x1="${left}" y1="${y(v)}" x2="${W - right}" y2="${y(v)}" class="trend-grid"/><text x="${left - 6}" y="${y(v) + 4}" text-anchor="end" class="trend-axis">${v}</text>`).join('');
+    const pass = `<line x1="${left}" y1="${y(9.5)}" x2="${W - right}" y2="${y(9.5)}" class="trend-pass"/><text x="${W - right}" y="${y(9.5) - 4}" text-anchor="end" class="trend-axis">9,5 (aprovação)</text>`;
+    const poly = points.map((h, i) => `${x(i).toFixed(1)},${y(h.grade20).toFixed(1)}`).join(' ');
+    const dots = points.map((h, i) =>
+      `<circle cx="${x(i).toFixed(1)}" cy="${y(h.grade20).toFixed(1)}" r="4" class="trend-dot"><title>${h.date}: ${String(h.grade20).replace('.', ',')} / 20</title></circle>`).join('');
+    const first = points[0].date.split(',')[0].split(' ')[0];
+    const last = points[points.length - 1].date.split(',')[0].split(' ')[0];
+    const avgFirst = points.slice(0, Math.ceil(points.length / 2));
+    const avgLast = points.slice(Math.floor(points.length / 2));
+    const mean = arr => arr.reduce((a, h) => a + h.grade20, 0) / arr.length;
+    const delta = mean(avgLast) - mean(avgFirst);
+    const trendText = Math.abs(delta) < 0.5
+      ? 'As tuas notas mantêm-se estáveis.'
+      : delta > 0 ? `As notas mais recentes estão, em média, ${String(delta.toFixed(1)).replace('.', ',')} valores acima das iniciais. Bom caminho!`
+        : `As notas mais recentes estão, em média, ${String(Math.abs(delta).toFixed(1)).replace('.', ',')} valores abaixo das iniciais: vale a pena rever o Caderno de Erros.`;
+    return `
+      <div class="stats-panel">
+        <h4>📈 Evolução das notas (últimas ${points.length} tentativas)</h4>
+        <svg viewBox="0 0 ${W} ${H}" class="trend-chart" role="img" aria-label="Gráfico da evolução das notas, de ${first} a ${last}">
+          ${grid}${pass}
+          <polyline points="${poly}" class="trend-line"/>
+          ${dots}
+          <text x="${left}" y="${H - 6}" class="trend-axis">${first}</text>
+          <text x="${W - right}" y="${H - 6}" text-anchor="end" class="trend-axis">${last}</text>
+        </svg>
+        <p class="stats-hint">${trendText}</p>
+      </div>`;
+  }
+
+  // Desempenho acumulado por conceito, calculado a partir das tentativas guardadas
+  function buildConceptStatsHtml(history) {
+    const totals = {};
+    history.forEach(h => {
+      Object.entries(h.concepts || {}).forEach(([id, [c, t]]) => {
+        totals[id] = totals[id] || [0, 0];
+        totals[id][0] += c;
+        totals[id][1] += t;
+      });
+    });
+    const rows = Object.entries(totals)
+      .map(([id, [c, t]]) => ({ id, c, t, pct: Math.round((c / t) * 100), block: getStudyBlock(id) }))
+      .filter(r => r.block && r.t > 0)
+      .sort((a, b) => a.pct - b.pct);
+    if (rows.length === 0) return '';
+    return `
+      <div class="stats-panel">
+        <h4>🧩 Desempenho por conceito</h4>
+        <p class="stats-hint">Dos conceitos mais fracos para os mais fortes, com base nas tentativas guardadas.</p>
+        <div class="topic-breakdown-list">
+          ${rows.map(r => `
+            <div class="breakdown-item concept-row">
+              <div class="breakdown-info"><span>${r.block.icon} ${r.block.title}</span><span>${r.c}/${r.t} (${r.pct}%)</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: ${r.pct}%; background-color: ${conceptBarColor(r.pct)};"></div></div>
+              <div class="concept-row-actions">
+                <button type="button" class="btn-link" data-open-theory="${r.id}">📖 Teoria</button>
+                <button type="button" class="btn-link" data-practice-concept="${r.id}">🎯 Praticar</button>
+              </div>
+            </div>`).join('')}
+        </div>
+      </div>`;
+  }
+
+  function buildConfidenceStatsHtml(history) {
+    const total = { high: [0, 0], mid: [0, 0], low: [0, 0] };
+    history.forEach(h => {
+      if (!h.confidence) return;
+      ['high', 'mid', 'low'].forEach(k => {
+        const v = h.confidence[k];
+        if (v) { total[k][0] += v[0]; total[k][1] += v[1]; }
+      });
+    });
+    if (total.high[1] + total.mid[1] + total.low[1] === 0) return '';
+    const rows = ['high', 'mid', 'low'].filter(k => total[k][1] > 0).map(k => {
+      const pct = Math.round((total[k][0] / total[k][1]) * 100);
+      return `<tr><td>${CONFIDENCE_LABELS[k]}</td><td>${total[k][0]} / ${total[k][1]}</td><td><strong>${pct}%</strong></td></tr>`;
+    }).join('');
+    return `
+      <div class="stats-panel">
+        <h4>🧭 Confiança vs. acertos</h4>
+        <div class="history-table-container">
+          <table class="history-table"><thead><tr><th>Quando disseste…</th><th>Acertos</th><th>Taxa</th></tr></thead><tbody>${rows}</tbody></table>
+        </div>
+        <p class="stats-hint">Se a taxa de «Tenho a certeza» for baixa, há conceitos que pareces dominar e ainda não dominas. Ideal: mais acertos quanto maior a confiança.</p>
+      </div>`;
+  }
+
   function renderStatsSection() {
     renderBadgesSection();
 
@@ -1692,9 +2256,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const totalTests = history.length;
-    const avgGrade = (history.reduce((acc, h) => acc + h.grade20, 0) / totalTests).toFixed(1);
+    const avgGrade = (history.reduce((acc, h) => acc + h.grade20, 0) / totalTests).toFixed(1).replace('.', ',');
     const passedTests = history.filter(h => h.grade20 >= 9.5).length;
     const passRate = Math.round((passedTests / totalTests) * 100);
+
+    const trendHtml = buildTrendChartHtml(history);
+    const conceptHtml = buildConceptStatsHtml(history);
+    const confidenceHtml = buildConfidenceStatsHtml(history);
 
     let html = `
       <div class="stats-cards-grid">
@@ -1711,6 +2279,10 @@ document.addEventListener('DOMContentLoaded', () => {
           <span class="stat-label">Taxa de Aprovação</span>
         </div>
       </div>
+
+      ${trendHtml}
+      ${conceptHtml}
+      ${confidenceHtml}
 
       <h4 style="margin-top: 2rem;">Histórico das Últimas Tentativas:</h4>
       <div class="history-table-container">
@@ -1745,7 +2317,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <td>${modeLabel}</td>
           <td><span style="font-size: 0.75rem; font-weight: 600;">${feedbackPill}</span></td>
           <td>${h.correct} / ${h.total} (${h.percentage}%)</td>
-          <td><strong>${h.grade20}</strong></td>
+          <td><strong>${String(h.grade20).replace('.', ',')}</strong></td>
           <td><span class="status-pill ${isPassed ? 'status-pass' : 'status-fail'}">${isPassed ? 'Aprovado' : 'Rever'}</span></td>
         </tr>
       `;

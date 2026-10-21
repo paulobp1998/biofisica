@@ -1001,7 +1001,7 @@ class ArenaUI {
     this.engine.onUI('question_started', (data) => {
       if (this.arenaLiveQIndex) this.arenaLiveQIndex.textContent = `Pergunta ${data.questionIndex} de ${data.totalQuestions} • Tópico ${Math.floor(data.question.id / 1000)}`;
       if (this.arenaLiveQTopic) this.arenaLiveQTopic.textContent = `Tópico ${data.question.topicId}: Biomecânica`;
-      if (this.arenaLiveQuestionText) this.arenaLiveQuestionText.textContent = data.question.question;
+      if (this.arenaLiveQuestionText) this.arenaLiveQuestionText.innerHTML = arenaRichText(data.question.question);
       if (this.arenaLiveTimer) this.arenaLiveTimer.textContent = `⏱️ ${data.timeRemaining}s`;
       if (this.arenaTimerFill) this.arenaTimerFill.style.width = '100%';
       if (this.arenaAnswersCounter) {
@@ -1059,7 +1059,7 @@ class ArenaUI {
 
       // Pergunta no Ecrã de Revelação do Anfitrião
       if (this.arenaRevealQText) {
-        this.arenaRevealQText.textContent = data.question.question;
+        this.arenaRevealQText.innerHTML = arenaRichText(data.question.question);
       }
 
       // As 4 opções A, B, C, D no Ecrã de Revelação do Anfitrião
@@ -1072,7 +1072,7 @@ class ArenaUI {
           optCard.className = `arena-reveal-option-card ${isCorrect ? 'is-correct' : 'is-wrong'}`;
           optCard.innerHTML = `
             <div class="arena-reveal-option-badge opt-badge-bg-${ltr.toLowerCase()}">${ltr}</div>
-            <div class="arena-reveal-option-text">${optText}</div>
+            <div class="arena-reveal-option-text">${arenaRichText(optText)}</div>
             ${isCorrect ? '<span class="arena-reveal-correct-tag">✓ Correta</span>' : ''}
           `;
           this.arenaRevealOptionsGrid.appendChild(optCard);
@@ -1109,7 +1109,7 @@ class ArenaUI {
         data.question.options.forEach((opt, idx) => {
           if (idx !== data.question.correctIndex) {
             const daText = this.getOptionDistractorExplanation(data.question, idx);
-            daHtml += `<li><strong>Opção ${letters[idx]}:</strong> ${daText}</li>`;
+            daHtml += `<li><strong>Opção ${letters[idx]}:</strong> ${arenaRichText(daText)}</li>`;
           }
         });
         daHtml += '</ul>';
@@ -1172,7 +1172,7 @@ class ArenaUI {
       if (this.clientVotingQBadge) this.clientVotingQBadge.textContent = data.id ? `P${data.questionIndex}/${data.totalQuestions} • ${questionLabel(data.id)}` : `P${data.questionIndex}/${data.totalQuestions}`;
       if (this.clientVotingTimer) this.clientVotingTimer.textContent = `⏱️ ${data.timeRemaining}s`;
       if (this.clientQPreview) {
-        this.clientQPreview.textContent = data.question || 'Olhem para o projetor da sala para ler o enunciado!';
+        this.clientQPreview.innerHTML = arenaRichText(data.question || 'Olhem para o projetor da sala para ler o enunciado!');
       }
 
       const letters = ['A', 'B', 'C', 'D'];
@@ -1182,7 +1182,7 @@ class ArenaUI {
           const labelSpan = btn.querySelector('.btn-tactile-label');
           if (labelSpan) {
             // Texto completo da opção no telemóvel, sem truncagem
-            labelSpan.innerHTML = data.options && data.options[idx] ? data.options[idx] : `Opção ${letters[idx]}`;
+            labelSpan.innerHTML = data.options && data.options[idx] ? arenaRichText(data.options[idx]) : `Opção ${letters[idx]}`;
           }
         }
       });
@@ -1224,7 +1224,7 @@ class ArenaUI {
 
       // Pergunta no Telemóvel do Aluno
       if (this.clientRevealQText) {
-        this.clientRevealQText.textContent = data.question || '';
+        this.clientRevealQText.innerHTML = arenaRichText(data.question || '');
       }
 
       // As 4 opções A, B, C, D com a correta em verde no Telemóvel
@@ -1239,7 +1239,7 @@ class ArenaUI {
             optDiv.className = `arena-client-opt-item ${isThisCorrect ? 'is-correct' : (isMyChoice && !isCorrect ? 'is-my-wrong' : '')}`;
             optDiv.innerHTML = `
               <span class="arena-client-opt-badge opt-badge-bg-${ltr.toLowerCase()}">${ltr}</span>
-              <span class="arena-client-opt-text" style="flex: 1;">${optText}</span>
+              <span class="arena-client-opt-text" style="flex: 1;">${arenaRichText(optText)}</span>
               ${isThisCorrect ? '<span style="color: var(--color-success); font-weight: 700; font-size: 0.8rem; margin-left: 0.35rem;">✓ Correta</span>' : ''}
               ${isMyChoice && !isCorrect ? '<span style="color: var(--color-danger); font-weight: 700; font-size: 0.8rem; margin-left: 0.35rem;">✗ A vossa</span>' : ''}
             `;
@@ -1250,7 +1250,7 @@ class ArenaUI {
 
       // Explicação Científica no Telemóvel
       if (this.clientRevealExpText) {
-        this.clientRevealExpText.innerHTML = data.explanation || '';
+        this.clientRevealExpText.innerHTML = arenaRichText(data.explanation || '');
       }
 
       // Distratores no Telemóvel do Aluno
@@ -1259,7 +1259,7 @@ class ArenaUI {
         data.options.forEach((opt, idx) => {
           if (idx !== data.correctIndex) {
             const daText = this.getOptionDistractorExplanation(data, idx);
-            daHtml += `<li style="margin-bottom: 0.3rem;"><strong>Opção ${letters[idx]}:</strong> ${daText}</li>`;
+            daHtml += `<li style="margin-bottom: 0.3rem;"><strong>Opção ${letters[idx]}:</strong> ${arenaRichText(daText)}</li>`;
           }
         });
         daHtml += '</ul>';
@@ -1794,7 +1794,7 @@ class ArenaUI {
     }
     this.quizPreview.innerHTML = ids.map((id, i) => {
       const q = byId.get(id);
-      const text = q ? (q.question || '') : '(pergunta não encontrada)';
+      const text = q ? plainMathText(q.question || '') : '(pergunta não encontrada)';
       const short = text.length > 110 ? text.slice(0, 110) + '…' : text;
       return `<div style="padding: 0.3rem 0; border-bottom: 1px solid rgba(128,128,128,0.2);">
         <strong>${i + 1}.</strong> <span style="color: var(--text-secondary);">#${id}</span> ${arenaEscapeHtml(short)}
@@ -1991,9 +1991,12 @@ class ArenaUI {
       // 3. Pesquisa por Texto ou ID
       if (query) {
         const idMatch = String(q.id).toLowerCase().includes(query);
-        const textMatch = (q.question || '').toLowerCase().includes(query);
-        const nursingMatch = (q.nursingApplication || '').toLowerCase().includes(query);
-        const optionsMatch = Array.isArray(q.options) && q.options.some(opt => (opt || '').toLowerCase().includes(query));
+        // Índices (F<sub>P</sub>) pesquisam-se como «FP» ou «F_P»
+        const plain = (t) => plainMathText(t || '').toLowerCase();
+        const queryPlain = query.replace(/_/g, '');
+        const textMatch = plain(q.question).includes(queryPlain);
+        const nursingMatch = plain(q.nursingApplication).includes(queryPlain);
+        const optionsMatch = Array.isArray(q.options) && q.options.some(opt => plain(opt).includes(queryPlain));
         if (!idMatch && !textMatch && !nursingMatch && !optionsMatch) {
           return false;
         }
