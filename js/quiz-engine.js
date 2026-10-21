@@ -349,7 +349,7 @@ class QuizEngine {
       gradeClassification = "Suficiente (10 a 13 valores) - Aprovado, mas recomenda-se rever as explicações.";
       badgeClass = "badge-pass";
     } else {
-      gradeClassification = "Não Aprovado (< 9.5 valores) - Necessita de reforçar o estudo com os resumos.";
+      gradeClassification = "Não Aprovado (< 9,5 valores) - Necessita de reforçar o estudo com os resumos.";
       badgeClass = "badge-fail";
     }
 

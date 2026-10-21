@@ -4401,3 +4401,406 @@ mark {
     line-height: 1.45;
   }
 }
+
+/* ==========================================================================
+   Refinamentos de estudo: revisão espaçada, confiança, teoria em blocos,
+   resultados, estatísticas e glossário
+   ========================================================================== */
+
+/* Cartão de revisão do dia (home) */
+.review-due-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 920px;
+  margin: 0 auto 1.75rem;
+  padding: 1rem 1.25rem;
+  background: var(--color-warning-light);
+  border: 1px solid var(--color-warning);
+  border-left: 5px solid var(--color-warning);
+  border-radius: var(--radius-md);
+}
+
+.review-due-card.hidden { display: none; }
+
+.review-due-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.review-due-text strong { font-size: 1.02rem; }
+.review-due-text span { color: var(--text-secondary); }
+
+/* Comunicado sobre IA minimizável */
+.notice-toggle,
+.btn-link {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-brand);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.notice-toggle { margin-top: 0.6rem; }
+.notice-toggle:hover,
+.btn-link:hover { color: var(--color-brand-hover); }
+
+.notice-collapsed-bar { display: none; }
+
+.site-notice-banner.collapsed {
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.site-notice-banner.collapsed .notice-icon-wrapper,
+.site-notice-banner.collapsed .notice-content { display: none; }
+
+.site-notice-banner.collapsed .notice-collapsed-bar {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0.7rem 1.25rem;
+  font: inherit;
+  font-size: 0.88rem;
+  line-height: 1.4;
+  text-align: left;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.notice-expand-hint {
+  color: var(--color-brand);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Autoavaliação de confiança */
+.confidence-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+  font-size: 0.88rem;
+}
+
+.confidence-row.hidden { display: none; }
+
+.confidence-label { font-weight: 600; color: var(--text-secondary); }
+.confidence-optional { color: var(--text-muted); font-size: 0.8rem; }
+
+.confidence-chip {
+  min-height: 36px;
+  padding: 0.35rem 0.85rem;
+  background: var(--bg-surface);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  color: var(--text-primary);
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: border-color 0.15s, background-color 0.15s;
+}
+
+.confidence-chip:hover { border-color: var(--color-brand); }
+
+.confidence-chip.selected {
+  background: var(--color-brand-light);
+  border-color: var(--color-brand);
+  color: var(--color-brand);
+  font-weight: 700;
+}
+
+/* Feedback: análise da opção escolhida e recolha das restantes */
+.picked-analysis {
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.6rem;
+  background: var(--bg-subtle);
+  border-left: 3px solid var(--color-danger);
+  border-radius: var(--radius-sm);
+}
+
+.distractor-fold > summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--color-brand);
+  padding: 0.25rem 0;
+}
+
+.distractor-fold[open] > summary { margin-bottom: 0.35rem; }
+.distractor-fold ul { padding-left: 1.25rem; }
+.distractor-fold li { margin-bottom: 0.4rem; }
+
+.review-distractors {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed var(--border-subtle);
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.feedback-theory-row {
+  margin-top: 0.85rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.quiz-footer {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quiz-shortcuts-hint {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.quiz-shortcuts-hint kbd {
+  padding: 0.05rem 0.35rem;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  font: inherit;
+  font-size: 0.72rem;
+}
+
+@media (hover: none) {
+  .quiz-shortcuts-hint { display: none; }
+  .quiz-footer { justify-content: flex-end; }
+}
+
+/* Teoria em blocos (Resumos e modal de revisão) */
+.study-block {
+  padding: 1.1rem 0;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.study-block:first-child { border-top: none; padding-top: 0; }
+
+.study-block-title {
+  font-size: 1.05rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+}
+
+.formula-box {
+  margin: 0 0 0.9rem;
+  padding: 0.75rem 1rem;
+  background: var(--color-brand-light);
+  border: 1px solid var(--color-brand);
+  border-radius: var(--radius-sm);
+}
+
+.formula-box-title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-brand);
+  margin-bottom: 0.4rem;
+}
+
+.formula-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.9rem;
+  padding: 0.2rem 0;
+}
+
+.formula-row code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.formula-row span { font-size: 0.85rem; color: var(--text-secondary); }
+
+.study-example,
+.study-pitfall,
+.study-nursing {
+  margin-top: 0.75rem;
+  padding: 0.65rem 0.9rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--text-primary);
+}
+
+.study-example { background: var(--bg-subtle); border-left: 4px solid var(--text-muted); }
+.study-pitfall { background: var(--color-warning-light); border-left: 4px solid var(--color-warning); }
+.study-nursing { background: var(--color-success-light); border-left: 4px solid var(--color-success); }
+
+.study-block-actions { margin-top: 0.9rem; text-align: right; }
+
+.modal-theory-card {
+  max-width: 760px;
+  width: 95%;
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-theory-card .modal-body {
+  overflow-y: auto;
+  flex: 1;
+}
+
+/* Resultados: ponto fraco, conceitos e confiança */
+#result-focus { margin-top: 1.5rem; }
+#result-focus:empty { display: none; }
+
+#result-focus h4 { margin: 1.25rem 0 0.6rem; }
+
+.focus-card {
+  margin-top: 1rem;
+  padding: 1rem 1.15rem;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  font-size: 0.93rem;
+  line-height: 1.55;
+}
+
+.focus-card h4 { margin: 0 0 0.4rem; font-size: 1rem; }
+.focus-weak { background: var(--color-warning-light); border-color: var(--color-warning); }
+.focus-good { background: var(--color-success-light); border-color: var(--color-success); }
+
+.focus-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+}
+
+.focus-list { padding-left: 1.2rem; }
+.focus-note { margin-top: 0.5rem; color: var(--text-secondary); }
+.focus-note-card p + p { margin-top: 0.25rem; }
+
+/* Estatísticas */
+.stats-panel {
+  margin-top: 2rem;
+  padding: 1.1rem 1.25rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+}
+
+.stats-panel h4 { margin-bottom: 0.5rem; }
+.stats-hint { margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary); }
+
+.trend-chart { width: 100%; height: auto; display: block; margin-top: 0.5rem; }
+.trend-grid { stroke: var(--border-subtle); stroke-width: 1; }
+.trend-pass { stroke: var(--color-warning); stroke-width: 1.25; stroke-dasharray: 5 4; }
+.trend-axis { fill: var(--text-muted); font-size: 11px; }
+.trend-line { fill: none; stroke: var(--color-brand); stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
+.trend-dot { fill: var(--bg-surface); stroke: var(--color-brand); stroke-width: 2.5; }
+
+.concept-row-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.3rem;
+  font-size: 0.82rem;
+}
+
+/* Glossário e pesquisa */
+.search-section-title {
+  margin: 0.25rem 0 0.6rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.glossary-card {
+  padding: 0.7rem 0.9rem;
+  margin-bottom: 0.6rem;
+  background: var(--color-brand-light);
+  border-left: 4px solid var(--color-brand);
+  border-radius: var(--radius-sm);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.glossary-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.glossary-section { margin-bottom: 1.25rem; }
+
+.search-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+}
+
+.search-chip {
+  min-height: 36px;
+  padding: 0.3rem 0.85rem;
+  background: var(--bg-surface);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  color: var(--text-primary);
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.search-chip:hover { border-color: var(--color-brand); color: var(--color-brand); }
+
+/* Telemóvel: alvos de toque confortáveis e menos espaço perdido */
+@media (max-width: 640px) {
+  .option-btn {
+    min-height: 48px;
+    padding: 0.9rem 1rem;
+    gap: 0.75rem;
+  }
+
+  .feedback-card { padding: 1.1rem; }
+
+  .results-container { padding: 1.5rem 1rem; }
+
+  .review-header { flex-wrap: wrap; gap: 0.5rem; }
+
+  .review-due-card { flex-direction: column; align-items: stretch; text-align: left; }
+
+  .hero-actions .btn { width: 100%; justify-content: center; }
+
+  .btn-hero-quick { min-height: 44px; }
+
+  .modal-theory-card,
+  .modal-search-card { max-height: 92vh; }
+
+  .formula-row code { font-size: 0.92rem; }
+
+  .stats-panel { padding: 0.9rem; }
+
+  .accordion-header { padding: 0.9rem 1rem; font-size: 1rem; }
+  .accordion-body { padding: 1rem; }
+
+  .view-header { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+
+  .confidence-label { flex-basis: 100%; }
+  .confidence-optional { display: none; }
+}
+
+.study-block-body ul { padding-left: 1.4rem; margin: 0.25rem 0 0.5rem; }
+.study-block-body li { margin-bottom: 0.5rem; line-height: 1.6; }
+.study-block-body li ul { margin-top: 0.4rem; }
