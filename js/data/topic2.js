@@ -381,7 +381,7 @@ const TOPIC_2_QUESTIONS = [
     "correctIndex": 0,
     "explanation": "Na zona de proporcionalidade a tensão é proporcional à deformação relativa, com E como constante de proporcionalidade: σ = E · ε.",
     "distractorAnalysis": [
-      "Está incorreta: dividir a tensão pela deformação dá o módulo de Young (E = σ/ε), e não a tensão.",
+      "Está incorreta: o módulo de Young é E = σ / ε, pelo que a tensão é o produto E · ε; dividir E por ε não dá a tensão.",
       "Está incorreta: a deformação relativa é ε = σ / E; multiplicar E por σ inverte a relação e daria uma grandeza em Pa², e não uma deformação sem unidades.",
       "Está incorreta: a tensão não é o quociente de ε por E, mas sim o produto de E pela deformação relativa."
     ],
@@ -455,18 +455,18 @@ const TOPIC_2_QUESTIONS = [
       "50"
     ],
     "correctIndex": 2,
-    "explanation": "A deformação relativa é ΔL/L0. Com ΔL = 2 mm = 0,002 m e L0 = 10 cm = 0,10 m, obtém-se ε = 0,002 / 0,10 = 0,02, sem unidades.",
+    "explanation": "A deformação relativa é ΔL/L<sub>0</sub>. Com ΔL = 2 mm = 0,002 m e L<sub>0</sub> = 10 cm = 0,10 m, obtém-se ε = 0,002 / 0,10 = 0,02, sem unidades.",
     "distractorAnalysis": [
       "Está incorreta: não converte as unidades, dividindo 2 mm por 10 cm e obtendo 0,2.",
       "Está incorreta: dá apenas o alongamento em metros, sem dividir pelo comprimento inicial.",
-      "Está incorreta: inverte a divisão, calculando L0/ΔL = 0,10 / 0,002 = 50."
+      "Está incorreta: inverte a divisão, calculando L<sub>0</sub>/ΔL = 0,10 / 0,002 = 50."
     ],
     "nursingApplication": "A deformação relativa permite comparar o alongamento de tendões de comprimentos diferentes, algo útil na avaliação da mobilidade e da recuperação de uma lesão."
   },
   {
     "id": 2225,
     "topicId": 2,
-    "question": "Uma barra elástica tem módulo de Young E = 2,0 × 10⁹ Pa, secção S = 1,0 × 10⁻⁴ m² e comprimento inicial L0 = 0,50 m. Qual é a sua constante elástica k?",
+    "question": "Uma barra elástica tem módulo de Young E = 2,0 × 10⁹ Pa, secção S = 1,0 × 10⁻⁴ m² e comprimento inicial L<sub>0</sub> = 0,50 m. Qual é a sua constante elástica k?",
     "options": [
       "2,0 × 10⁵ N/m",
       "4,0 × 10⁵ N/m",
@@ -474,11 +474,11 @@ const TOPIC_2_QUESTIONS = [
       "1,0 × 10⁹ N/m"
     ],
     "correctIndex": 1,
-    "explanation": "A constante elástica é k = E · S / L0 = (2,0 × 10⁹ × 1,0 × 10⁻⁴) / 0,50 = 4,0 × 10⁵ N/m.",
+    "explanation": "A constante elástica é k = E · S / L<sub>0</sub> = (2,0 × 10⁹ × 1,0 × 10⁻⁴) / 0,50 = 4,0 × 10⁵ N/m.",
     "distractorAnalysis": [
-      "Está incorreta: esquece a divisão por L0, ficando apenas com E · S = 2,0 × 10⁵ N/m.",
-      "Está incorreta: inverte a fração, calculando L0 / (E · S) = 2,5 × 10⁻⁶ N/m.",
-      "Está incorreta: multiplica E por L0 em vez de S / L0, o que dá 1,0 × 10⁹ N/m."
+      "Está incorreta: esquece a divisão por L<sub>0</sub>, ficando apenas com E · S = 2,0 × 10⁵ N/m.",
+      "Está incorreta: inverte a fração, calculando L<sub>0</sub> / (E · S) = 2,5 × 10⁻⁶ N/m.",
+      "Está incorreta: multiplica E por L<sub>0</sub> em vez de S / L<sub>0</sub>, o que dá 1,0 × 10⁹ N/m."
     ],
     "nursingApplication": "A constante elástica de um segmento de tecido mole depende das suas dimensões, pelo que um tecido mais curto e com maior secção é mais rígido."
   },
@@ -607,11 +607,11 @@ const TOPIC_2_QUESTIONS = [
       "−20"
     ],
     "correctIndex": 1,
-    "explanation": "ΔL = L<sub>f</sub> − L0 = 38 cm − 40 cm = −2 cm. Logo ε = ΔL / L0 = −2 / 40 = −0,05, sem unidades; o sinal negativo indica encurtamento.",
+    "explanation": "ΔL = L<sub>f</sub> − L<sub>0</sub> = 38 cm − 40 cm = −2 cm. Logo ε = ΔL / L<sub>0</sub> = −2 / 40 = −0,05, sem unidades; o sinal negativo indica encurtamento.",
     "distractorAnalysis": [
       "Está incorreta: não divide a variação de comprimento pelo comprimento inicial, ficando apenas com −2 cm.",
       "Está incorreta: esquece o sinal negativo, o que ignora que a barra encurtou.",
-      "Está incorreta: inverte a divisão, calculando L0 / ΔL = −20, que não é uma deformação relativa."
+      "Está incorreta: inverte a divisão, calculando L<sub>0</sub> / ΔL = −20, que não é uma deformação relativa."
     ],
     "nursingApplication": "O encurtamento relativo de um osso ou de um músculo, medido em radiografias ou ecografias, é expresso em relação ao comprimento inicial, para comparar casos diferentes."
   },
@@ -645,7 +645,7 @@ const TOPIC_2_QUESTIONS = [
       "A constante de Y é quatro vezes maior do que a de X."
     ],
     "correctIndex": 0,
-    "explanation": "Como k = E · S / L0, com E e S iguais, o dobro do comprimento reduz a constante elástica para metade.",
+    "explanation": "Como k = E · S / L<sub>0</sub>, com E e S iguais, o dobro do comprimento reduz a constante elástica para metade.",
     "distractorAnalysis": [
       "Está incorreta: como k é inversamente proporcional ao comprimento, o dobro do comprimento reduz k para metade, e não a duplica.",
       "Está incorreta: a constante k depende das dimensões do corpo, e não apenas do material.",
@@ -664,10 +664,10 @@ const TOPIC_2_QUESTIONS = [
       "B, porque a constante elástica é inversamente proporcional a E."
     ],
     "correctIndex": 2,
-    "explanation": "Como k = E · S / L0, com S e L0 iguais, a constante elástica é diretamente proporcional a E. A barra A, com E quinze vezes maior, tem maior constante elástica.",
+    "explanation": "Como k = E · S / L<sub>0</sub>, com S e L<sub>0</sub> iguais, a constante elástica é diretamente proporcional a E. A barra A, com E quinze vezes maior, tem maior constante elástica.",
     "distractorAnalysis": [
       "Está incorreta: uma barra que se deforma mais, para a mesma força, tem menor constante elástica, e não maior.",
-      "Está incorreta: k = E · S / L0 depende de E, pelo que, com módulos diferentes, as constantes também diferem.",
+      "Está incorreta: k = E · S / L<sub>0</sub> depende de E, pelo que, com módulos diferentes, as constantes também diferem.",
       "Está incorreta: a constante elástica é diretamente proporcional a E, e não inversamente proporcional."
     ],
     "nursingApplication": "Um osso cortical, com módulo de Young muito superior ao de um tendão, transmite cargas de forma mais rígida, o que explica a diferença de comportamento entre estes tecidos."
@@ -732,7 +732,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2239,
     "topicId": 2,
-    "question": "Um osso com secção de 3,0 cm² suporta uma compressão de 6,0 × 10³ N, dentro do limite de proporcionalidade. Qual é a tensão mecânica no osso?",
+    "question": "Um osso com secção de 3,0 cm² suporta uma força de compressão de 6,0 × 10³ N, dentro do limite de proporcionalidade. Qual é a tensão mecânica no osso?",
     "options": [
       "2,0 × 10⁷ Pa",
       "2,0 × 10³ Pa",
@@ -1150,7 +1150,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2261,
     "topicId": 2,
-    "question": "Um músculo é modelado como uma barra com módulo de Young E = 2,0 × 10⁵ Pa, secção S = 4,0 × 10⁻³ m² e comprimento inicial L0 = 0,40 m. Qual é a sua constante elástica k?",
+    "question": "Um músculo é modelado como uma barra com módulo de Young E = 2,0 × 10⁵ Pa, secção S = 4,0 × 10⁻³ m² e comprimento inicial L<sub>0</sub> = 0,40 m. Qual é a sua constante elástica k?",
     "options": [
       "8,0 × 10² N/m",
       "5,0 × 10⁻⁴ N/m",
@@ -1158,11 +1158,11 @@ const TOPIC_2_QUESTIONS = [
       "8,0 × 10⁴ N/m"
     ],
     "correctIndex": 2,
-    "explanation": "A constante elástica é k = E · S / L0 = (2,0 × 10⁵ × 4,0 × 10⁻³) / 0,40 = 800 / 0,40 = 2,0 × 10³ N/m.",
+    "explanation": "A constante elástica é k = E · S / L<sub>0</sub> = (2,0 × 10⁵ × 4,0 × 10⁻³) / 0,40 = 800 / 0,40 = 2,0 × 10³ N/m.",
     "distractorAnalysis": [
-      "Está incorreta: esquece a divisão por L0, ficando apenas com E · S = 8,0 × 10² N/m.",
-      "Está incorreta: inverte a fração, calculando L0 / (E · S) = 5,0 × 10⁻⁴ N/m.",
-      "Está incorreta: multiplica E por L0 em vez de S / L0, o que dá 8,0 × 10⁴ N/m."
+      "Está incorreta: esquece a divisão por L<sub>0</sub>, ficando apenas com E · S = 8,0 × 10² N/m.",
+      "Está incorreta: inverte a fração, calculando L<sub>0</sub> / (E · S) = 5,0 × 10⁻⁴ N/m.",
+      "Está incorreta: multiplica E por L<sub>0</sub> em vez de S / L<sub>0</sub>, o que dá 8,0 × 10⁴ N/m."
     ],
     "nursingApplication": "A rigidez de um músculo depende da sua área e do seu comprimento, o que ajuda a perceber porque é que um músculo mais curto e mais espesso responde de forma diferente à mesma carga."
   },
@@ -1196,11 +1196,11 @@ const TOPIC_2_QUESTIONS = [
       "3,75 m"
     ],
     "correctIndex": 0,
-    "explanation": "ΔL = ε · L0 = 0,04 × 15 cm = 0,6 cm = 6 mm.",
+    "explanation": "ΔL = ε · L<sub>0</sub> = 0,04 × 15 cm = 0,6 cm = 6 mm.",
     "distractorAnalysis": [
       "Está incorreta: toma 15 cm como se fossem 15 mm, o que dá 0,04 × 15 mm = 0,6 mm.",
       "Está incorreta: confunde 15 cm com 1,5 m, o que dá 0,06 m.",
-      "Está incorreta: inverte a relação, dividindo L0 por ε, o que dá 3,75 m."
+      "Está incorreta: inverte a relação, dividindo L<sub>0</sub> por ε, o que dá 3,75 m."
     ],
     "nursingApplication": "Converter corretamente as unidades de um alongamento medido em centímetros ou milímetros é indispensável ao comparar a elasticidade de um tendão antes e depois de um programa de reabilitação."
   },
@@ -1386,10 +1386,10 @@ const TOPIC_2_QUESTIONS = [
       "A de borracha, porque a constante elástica é inversamente proporcional a E."
     ],
     "correctIndex": 1,
-    "explanation": "Como k = E · S / L0, com S e L0 iguais, a constante elástica é diretamente proporcional a E. O aço, com E muito superior, tem maior k.",
+    "explanation": "Como k = E · S / L<sub>0</sub>, com S e L<sub>0</sub> iguais, a constante elástica é diretamente proporcional a E. O aço, com E muito superior, tem maior k.",
     "distractorAnalysis": [
       "Está incorreta: deformar-se mais, para a mesma força, corresponde a menor constante elástica, e não a maior.",
-      "Está incorreta: k depende de E, S e L0; com módulos de Young diferentes, as constantes também diferem.",
+      "Está incorreta: k depende de E, S e L<sub>0</sub>; com módulos de Young diferentes, as constantes também diferem.",
       "Está incorreta: a constante elástica é diretamente proporcional a E, e não inversamente proporcional."
     ],
     "nursingApplication": "Um osso cortical é muito mais rígido do que um tecido mole com a mesma geometria, o que explica porque é que as cargas se distribuem de forma muito diferente entre estes tecidos."
@@ -1481,11 +1481,11 @@ const TOPIC_2_QUESTIONS = [
       "500"
     ],
     "correctIndex": 2,
-    "explanation": "ε = ΔL / L0, com ΔL = 3,0 mm = 0,0030 m e L0 = 1,5 m. Logo ε = 0,0030 / 1,5 = 0,002, sem unidades.",
+    "explanation": "ε = ΔL / L<sub>0</sub>, com ΔL = 3,0 mm = 0,0030 m e L<sub>0</sub> = 1,5 m. Logo ε = 0,0030 / 1,5 = 0,002, sem unidades.",
     "distractorAnalysis": [
       "Está incorreta: divide o alongamento por 15 em vez de por 1,5, o que dá 0,0002.",
       "Está incorreta: inverte a divisão e não converte unidades, calculando 1,5 / 3,0 = 0,5.",
-      "Está incorreta: inverte a divisão, calculando L0 / ΔL com ΔL em metros, o que dá 500."
+      "Está incorreta: inverte a divisão, calculando L<sub>0</sub> / ΔL com ΔL em metros, o que dá 500."
     ],
     "nursingApplication": "Converter as unidades antes de calcular a deformação relativa evita erros ao comparar medições de alongamento feitas em diferentes instrumentos ou em diferentes sessões de fisioterapia."
   },
@@ -1595,11 +1595,11 @@ const TOPIC_2_QUESTIONS = [
       "1,6 cm"
     ],
     "correctIndex": 3,
-    "explanation": "σ = F / S = 2,0 × 10⁷ Pa; ε = σ / E = 0,020; ΔL = ε · L0 = 0,020 × 0,80 m = 0,016 m = 1,6 cm.",
+    "explanation": "σ = F / S = 2,0 × 10⁷ Pa; ε = σ / E = 0,020; ΔL = ε · L<sub>0</sub> = 0,020 × 0,80 m = 0,016 m = 1,6 cm.",
     "distractorAnalysis": [
       "Está incorreta: troca a unidade, pois 0,016 m equivalem a 1,6 cm e não a 0,016 cm.",
       "Está incorreta: confunde centímetros com metros, o que multiplica o resultado por 100.",
-      "Está incorreta: usa L0 = 0,080 m em vez de 0,80 m, o que dá 0,020 × 0,080 = 0,0016 m."
+      "Está incorreta: usa L<sub>0</sub> = 0,080 m em vez de 0,80 m, o que dá 0,020 × 0,080 = 0,0016 m."
     ],
     "nursingApplication": "Estimar o alongamento de uma estrutura a partir da força e das suas dimensões permite prever a sua resposta antes de a sujeitar a uma carga real."
   },
@@ -1728,7 +1728,7 @@ const TOPIC_2_QUESTIONS = [
       "2,0 × 10¹² Pa"
     ],
     "correctIndex": 2,
-    "explanation": "σ = F / S = 200 / 1,0 × 10⁻⁴ = 2,0 × 10⁶ Pa; ε = ΔL / L0 = 1,0 × 10⁻³ / 1,0 = 1,0 × 10⁻³; logo E = σ / ε = 2,0 × 10⁹ Pa.",
+    "explanation": "σ = F / S = 200 / 1,0 × 10⁻⁴ = 2,0 × 10⁶ Pa; ε = ΔL / L<sub>0</sub> = 1,0 × 10⁻³ / 1,0 = 1,0 × 10⁻³; logo E = σ / ε = 2,0 × 10⁹ Pa.",
     "distractorAnalysis": [
       "Está incorreta: usa a tensão como se fosse o módulo de Young, sem a dividir pela deformação relativa, o que dá 2,0 × 10⁶ Pa.",
       "Está incorreta: inverte a relação, calculando ε / σ, o que dá 5,0 × 10⁻¹⁰ Pa.",
@@ -1785,7 +1785,7 @@ const TOPIC_2_QUESTIONS = [
       "5"
     ],
     "correctIndex": 0,
-    "explanation": "ε = ΔL / L0 = 5 mm / 25 cm = 0,005 m / 0,25 m = 0,02, sem unidades.",
+    "explanation": "ε = ΔL / L<sub>0</sub> = 5 mm / 25 cm = 0,005 m / 0,25 m = 0,02, sem unidades.",
     "distractorAnalysis": [
       "Está incorreta: não converte as unidades, dividindo 5 mm por 25 cm e obtendo 0,2.",
       "Está incorreta: divide o alongamento em metros por 2,5 m em vez de 0,25 m, o que dá 0,002.",
@@ -1861,11 +1861,11 @@ const TOPIC_2_QUESTIONS = [
       "Diminui para um nono."
     ],
     "correctIndex": 2,
-    "explanation": "Como k = E · S / L0, ao triplicar L0 a constante elástica fica dividida por três.",
+    "explanation": "Como k = E · S / L<sub>0</sub>, ao triplicar L<sub>0</sub> a constante elástica fica dividida por três.",
     "distractorAnalysis": [
       "Está incorreta: triplicar k ignora que a constante elástica é inversamente proporcional ao comprimento inicial.",
       "Está incorreta: a constante depende do comprimento, pelo que não se mantém quando o comprimento muda.",
-      "Está incorreta: a dependência de k em L0 é inversa e linear, pelo que o fator é 1/3 e não 1/9."
+      "Está incorreta: a dependência de k em L<sub>0</sub> é inversa e linear, pelo que o fator é 1/3 e não 1/9."
     ],
     "nursingApplication": "Uma banda elástica de reabilitação do mesmo material e espessura, mas três vezes mais comprida, alonga três vezes mais com a mesma força, ou seja, oferece menos resistência."
   },
@@ -1979,7 +1979,7 @@ const TOPIC_2_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: a resistência à compressão do osso deve-se sobretudo à fase mineral, e não ao colagénio.",
       "Está incorreta: nenhum tecido biológico é um sólido indeformável, que é apenas um modelo teórico.",
-      "Está incorreta: os tecidos biológicos são viscoelásticos, pelo que a recuperação da forma não é imediata nem totalmente isenta de deformação residual."
+      "Está incorreta: os tecidos biológicos são viscoelásticos, pelo que a recuperação da forma não é imediata; além disso, esta propriedade não explica a função do colagénio, que é resistir à tração."
     ],
     "nursingApplication": "Esta propriedade explica porque, após a reparação de um tendão, a mobilização é progressiva, já que forças de tração excessivas podem romper as fibras de colagénio em cicatrização."
   },
@@ -2073,7 +2073,7 @@ const TOPIC_2_QUESTIONS = [
     "explanation": "Na flexão e na torção, as tensões são máximas na periferia e baixas junto do eixo; por isso, as camadas periféricas dão a maior parte da resistência.",
     "distractorAnalysis": [
       "Está incorreta: as forças são transmitidas por todo o material; o que acontece é que as tensões são menores junto do eixo.",
-      "Está incorreta: no centro, junto do plano neutro, a tensão normal é praticamente nula, tanto em tração como em compressão.",
+      "Está incorreta: numa carga axial o centro contribui tanto em compressão como em tração; na flexão e na torção, contribui pouco porque a tensão junto do eixo é muito baixa, seja qual for o sentido da carga.",
       "Está incorreta: a tensão não é uniforme na flexão e na torção, e é por não o ser que a periferia é a zona mais importante."
     ],
     "nursingApplication": "Compreender a distribuição das tensões ajuda a enfermagem a perceber porque um osso cortical fino da diáfise pode fraturar por torção durante uma queda com rotação do membro."
@@ -2328,7 +2328,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2323,
     "topicId": 2,
-    "question": "Um fémur com E = 2 × 10¹⁰ Pa e comprimento inicial L0 = 0,40 m suporta uma tensão de 3 × 10⁶ Pa, dentro do regime elástico. Qual é o encurtamento ΔL?",
+    "question": "Um fémur com E = 2 × 10¹⁰ Pa e comprimento inicial L<sub>0</sub> = 0,40 m suporta uma tensão de 3 × 10⁶ Pa, dentro do regime elástico. Qual é o encurtamento ΔL?",
     "options": [
       "0,6 mm",
       "0,06 mm",
@@ -2336,11 +2336,11 @@ const TOPIC_2_QUESTIONS = [
       "2,7 × 10³ m"
     ],
     "correctIndex": 1,
-    "explanation": "ε = σ / E = 3 × 10⁶ / 2 × 10¹⁰ = 1,5 × 10⁻⁴; ΔL = ε · L0 = 1,5 × 10⁻⁴ × 0,40 = 6 × 10⁻⁵ m = 0,06 mm.",
+    "explanation": "ε = σ / E = 3 × 10⁶ / 2 × 10¹⁰ = 1,5 × 10⁻⁴; ΔL = ε · L<sub>0</sub> = 1,5 × 10⁻⁴ × 0,40 = 6 × 10⁻⁵ m = 0,06 mm.",
     "distractorAnalysis": [
       "Está incorreta: converte metros em milímetros multiplicando por 10⁴, em vez de 10³.",
       "Está incorreta: indica o valor em metros (6 × 10⁻⁵) mas com a unidade milímetro.",
-      "Está incorreta: divide L0 por ε, em vez de multiplicar (ΔL = L0 / ε)."
+      "Está incorreta: divide L<sub>0</sub> por ε, em vez de multiplicar (ΔL = L<sub>0</sub> / ε)."
     ],
     "nursingApplication": "O encurtamento é minúsculo, o que mostra porque o osso, com módulo de Young elevado, suporta o peso do corpo sem deformação visível."
   },
@@ -2374,9 +2374,9 @@ const TOPIC_2_QUESTIONS = [
       "Não tem unidade (é adimensional)"
     ],
     "correctIndex": 3,
-    "explanation": "A deformação relativa é o quociente de dois comprimentos (ΔL / L0), logo é adimensional; a percentagem é usada apenas para representação.",
+    "explanation": "A deformação relativa é o quociente de dois comprimentos (ΔL / L<sub>0</sub>), logo é adimensional; a percentagem é usada apenas para representação.",
     "distractorAnalysis": [
-      "Está incorreta: o metro é a unidade do alongamento absoluto ΔL, e não da deformação relativa, que é ΔL / L0.",
+      "Está incorreta: o metro é a unidade do alongamento absoluto ΔL, e não da deformação relativa, que é ΔL / L<sub>0</sub>.",
       "Está incorreta: o pascal é a unidade da tensão mecânica e do módulo de Young.",
       "Está incorreta: N/m é a unidade da constante elástica k."
     ],
@@ -2404,7 +2404,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2327,
     "topicId": 2,
-    "question": "Uma barra tem módulo de Young E, secção S e comprimento inicial L0, com k = E·S / L0. Se a secção duplicar, mantendo o material e o comprimento, o que acontece a k?",
+    "question": "Uma barra tem módulo de Young E, secção S e comprimento inicial L<sub>0</sub>, com k = E·S / L<sub>0</sub>. Se a secção duplicar, mantendo o material e o comprimento, o que acontece a k?",
     "options": [
       "Mantém-se, porque depende só do material",
       "Reduz-se a metade",
@@ -2412,7 +2412,7 @@ const TOPIC_2_QUESTIONS = [
       "Quadruplica"
     ],
     "correctIndex": 2,
-    "explanation": "Como k = E·S / L0, duplicar S (com E e L0 constantes) duplica a constante elástica: um corpo mais grosso é mais rígido.",
+    "explanation": "Como k = E·S / L<sub>0</sub>, duplicar S (com E e L<sub>0</sub> constantes) duplica a constante elástica: um corpo mais grosso é mais rígido.",
     "distractorAnalysis": [
       "Está incorreta: k depende também das dimensões do corpo, e não apenas do material.",
       "Está incorreta: k é diretamente proporcional a S, pelo que aumenta e não diminui.",
@@ -2423,7 +2423,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2328,
     "topicId": 2,
-    "question": "Uma barra tem E = 1,5 × 10⁹ Pa, secção S = 2,0 cm² e comprimento inicial L0 = 0,30 m. Qual é a sua constante elástica k = E·S / L0?",
+    "question": "Uma barra tem E = 1,5 × 10⁹ Pa, secção S = 2,0 cm² e comprimento inicial L<sub>0</sub> = 0,30 m. Qual é a sua constante elástica k = E·S / L<sub>0</sub>?",
     "options": [
       "1,0 × 10⁸ N/m",
       "9,0 × 10⁴ N/m",
@@ -2434,8 +2434,8 @@ const TOPIC_2_QUESTIONS = [
     "explanation": "S = 2,0 cm² = 2,0 × 10⁻⁴ m². Logo k = (1,5 × 10⁹ × 2,0 × 10⁻⁴) / 0,30 = 1,0 × 10⁶ N/m.",
     "distractorAnalysis": [
       "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 1,0 × 10⁸ N/m.",
-      "Está incorreta: multiplica por L0 em vez de dividir, o que dá 9,0 × 10⁴ N/m.",
-      "Está incorreta: usa E·L0 / S, trocando S e L0 na fórmula."
+      "Está incorreta: multiplica por L<sub>0</sub> em vez de dividir, o que dá 9,0 × 10⁴ N/m.",
+      "Está incorreta: usa E·L<sub>0</sub> / S, trocando S e L<sub>0</sub> na fórmula."
     ],
     "nursingApplication": "Calcular k permite estimar quanto um tendão ou um cabo se alonga sob uma dada carga, por exemplo num sistema de tração."
   },
@@ -2450,9 +2450,9 @@ const TOPIC_2_QUESTIONS = [
       "Porque k é adimensional e E tem unidades de N/m"
     ],
     "correctIndex": 2,
-    "explanation": "O módulo de Young E caracteriza o material, ao passo que k = E·S / L0 também depende da forma; por isso E permite comparar corpos de qualquer tamanho.",
+    "explanation": "O módulo de Young E caracteriza o material, ao passo que k = E·S / L<sub>0</sub> também depende da forma; por isso E permite comparar corpos de qualquer tamanho.",
     "distractorAnalysis": [
-      "Está incorreta: acontece o inverso: k = E·S / L0 depende das dimensões, e E depende só do material.",
+      "Está incorreta: acontece o inverso: k = E·S / L<sub>0</sub> depende das dimensões, e E depende só do material.",
       "Está incorreta: o módulo de Young é uma propriedade do material e não varia com o comprimento nem com a secção.",
       "Está incorreta: k tem unidades de N/m e E tem unidades de Pa (N/m²), e nenhum dos dois é adimensional."
     ],
@@ -2469,10 +2469,10 @@ const TOPIC_2_QUESTIONS = [
       "k é maior no fio A, porque a secção é maior"
     ],
     "correctIndex": 3,
-    "explanation": "Como k = E·S / L0, com E e L0 iguais, o fio de maior secção (A) tem maior constante elástica.",
+    "explanation": "Como k = E·S / L<sub>0</sub>, com E e L<sub>0</sub> iguais, o fio de maior secção (A) tem maior constante elástica.",
     "distractorAnalysis": [
       "Está incorreta: k depende também das dimensões do corpo, e não apenas do material; a secção diferente altera k.",
-      "Está incorreta: k = E·S / L0 aumenta com a secção, pelo que o fio fino tem menor k.",
+      "Está incorreta: k = E·S / L<sub>0</sub> aumenta com a secção, pelo que o fio fino tem menor k.",
       "Está incorreta: o fio B deforma-se mais por ter menor k, e não maior; um k maior significa que se deforma menos."
     ],
     "nursingApplication": "Isto explica porque, entre bandas elásticas de exercício do mesmo material e comprimento, a mais grossa oferece mais resistência ao utente durante a reabilitação."
@@ -2586,7 +2586,7 @@ const TOPIC_2_QUESTIONS = [
     "explanation": "Como a carga está ao centro, as duas reações são iguais e R = F / 2 = 600 / 2 = 300 N.",
     "distractorAnalysis": [
       "Está incorreta: atribui a carga toda a cada apoio, esquecendo que se divide pelos dois.",
-      "Está incorreta: soma as duas reações em vez de repartir a carga entre os apoios.",
+      "Está incorreta: multiplica a carga por dois em vez de a dividir pelos dois apoios.",
       "Está incorreta: divide a carga por quatro em vez de por dois."
     ],
     "nursingApplication": "O mesmo raciocínio permite estimar a força suportada por cada um dos dois profissionais que transportam uma maca com o utente ao centro."
@@ -2678,7 +2678,7 @@ const TOPIC_2_QUESTIONS = [
       "Duas forças iguais e do mesmo sentido, com linhas de ação paralelas"
     ],
     "correctIndex": 1,
-    "explanation": "Um binário é um par de forças iguais e de sentidos opostos, com linhas de ação paralelas; a resultante é nula, mas há momento e, portanto, rotação.",
+    "explanation": "Um binário é um par de forças iguais e de sentidos opostos, com linhas de ação paralelas; a resultante é nula, mas o momento não é nulo, pelo que o binário tende a produzir rotação.",
     "distractorAnalysis": [
       "Está incorreta: com a mesma linha de ação, as forças anulam-se também em termos de rotação, e isso não produz binário.",
       "Está incorreta: essa descrição corresponde à compressão, e não ao binário, cujas linhas de ação são paralelas e não coincidentes.",
@@ -2719,7 +2719,7 @@ const TOPIC_2_QUESTIONS = [
     "explanation": "As lâminas aplicam forças opostas e tangenciais a superfícies paralelas do material, o que provoca cisalhamento.",
     "distractorAnalysis": [
       "Está incorreta: na tração as forças divergem ao longo do eixo; na tesoura as forças são tangenciais e opostas.",
-      "Está incorreta: a flexão exige uma força perpendicular ao eixo com apoios nas extremidades, e não forças tangenciais opostas.",
+      "Está incorreta: a flexão resulta de uma força perpendicular ao eixo que curva o corpo, e não de forças tangenciais opostas muito próximas.",
       "Está incorreta: a torção exige binários de sentidos opostos em torno do eixo, o que não acontece numa tesoura."
     ],
     "nursingApplication": "Este mecanismo ajuda a perceber porque o corte de uma ligadura é mais fácil com uma tesoura bem afiada, que aplica a força numa área menor e aumenta a tensão no material."
@@ -2773,11 +2773,11 @@ const TOPIC_2_QUESTIONS = [
       "4,0 × 10⁴ mm"
     ],
     "correctIndex": 0,
-    "explanation": "ε = σ / E = 6,0 × 10⁶ / 1,2 × 10⁹ = 5,0 × 10⁻³; ΔL = ε · L0 = 5,0 × 10⁻³ × 0,20 m = 1,0 × 10⁻³ m = 1,0 mm.",
+    "explanation": "ε = σ / E = 6,0 × 10⁶ / 1,2 × 10⁹ = 5,0 × 10⁻³; ΔL = ε · L<sub>0</sub> = 5,0 × 10⁻³ × 0,20 m = 1,0 × 10⁻³ m = 1,0 mm.",
     "distractorAnalysis": [
       "Está incorreta: o resultado é 1,0 × 10⁻³ m; confunde milímetros com centímetros na conversão.",
       "Está incorreta: converte 20 cm em 0,02 m em vez de 0,20 m.",
-      "Está incorreta: usa ΔL = L0 · E / σ, em vez de L0 · σ / E."
+      "Está incorreta: usa ΔL = L<sub>0</sub> · E / σ, em vez de L<sub>0</sub> · σ / E."
     ],
     "nursingApplication": "Valores destes mostram que o tendão de Aquiles se alonga apenas alguns milímetros na marcha, e que alongamentos muito maiores, num salto ou numa queda, o podem lesionar."
   },
@@ -2817,7 +2817,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: multiplica por 3 em vez de dividir, e depois divide por g.",
       "Está incorreta: confunde o peso em N com a massa em kg."
     ],
-    "nursingApplication": "Estimar o peso a partir de uma força permite perceber a sobrecarga que o corpo de um utente com excesso de peso impõe às articulações."
+    "nursingApplication": "Relacionar a força no fémur com o peso corporal permite perceber a sobrecarga que o corpo de um utente com excesso de peso impõe às articulações."
   },
   {
     "id": 2349,
@@ -2860,7 +2860,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2351,
     "topicId": 2,
-    "question": "Porque razão as células do músculo estriado cardíaco estão ligadas entre si?",
+    "question": "Por que razão as células do músculo estriado cardíaco estão ligadas entre si?",
     "options": [
       "Para que cada célula se contraia de modo independente das vizinhas",
       "Para aumentar o módulo de Young de cada célula isolada",
@@ -2969,7 +2969,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: a queratina é a proteína da epiderme e dos seus anexos, e não da parede das artérias.",
       "Está incorreta: a parede arterial tem músculo liso, e não músculo estriado esquelético."
     ],
-    "nursingApplication": "A elasticidade da aorta permite-lhe acomodar o sangue ejetado pelo coração, o que o enfermeiro nota na palpação do pulso de um utente."
+    "nursingApplication": "A elasticidade da aorta permite-lhe distender-se com o sangue ejetado na sístole e devolvê-lo na diástole, o que ajuda a manter a pressão diastólica que o enfermeiro mede num utente."
   },
   {
     "id": 2357,
@@ -3096,7 +3096,7 @@ const TOPIC_2_QUESTIONS = [
       "Não se deforma nunca, como um sólido indeformável"
     ],
     "correctIndex": 1,
-    "explanation": "O seu peso é uma tensão inferior à tensão mínima para fluir; a faca aplica uma tensão superior, e a maionese flui.",
+    "explanation": "A tensão causada pelo seu próprio peso é inferior à tensão mínima para fluir; a faca aplica uma tensão superior, e a maionese flui.",
     "distractorAnalysis": [
       "Está incorreta: se fluísse sob qualquer tensão, como o mel, escorreria da colher inclinada devido ao seu peso.",
       "Está incorreta: a maionese espalhada fica com a nova forma, e não recupera a original.",
@@ -3324,11 +3324,11 @@ const TOPIC_2_QUESTIONS = [
       "1,0 × 10⁵ Pa"
     ],
     "correctIndex": 0,
-    "explanation": "ε = ΔL / L0 = 0,2 / 4,0 = 0,05; σ = E · ε = 2,0 × 10⁷ × 0,05 = 1,0 × 10⁶ Pa.",
+    "explanation": "ε = ΔL / L<sub>0</sub> = 0,2 / 4,0 = 0,05; σ = E · ε = 2,0 × 10⁷ × 0,05 = 1,0 × 10⁶ Pa.",
     "distractorAnalysis": [
       "Está incorreta: divide E por ε (E / ε), em vez de multiplicar.",
-      "Está incorreta: mistura unidades no quociente, usando ΔL em mm (2 mm) e L0 em cm (4,0), o que dá ε = 0,5.",
-      "Está incorreta: mistura unidades no quociente, usando ΔL em cm (0,2) e L0 em mm (40 mm), o que dá ε = 5 × 10⁻³."
+      "Está incorreta: mistura unidades no quociente, usando ΔL em mm (2 mm) e L<sub>0</sub> em cm (4,0), o que dá ε = 0,5.",
+      "Está incorreta: mistura unidades no quociente, usando ΔL em cm (0,2) e L<sub>0</sub> em mm (40 mm), o que dá ε = 5 × 10⁻³."
     ],
     "nursingApplication": "Estes valores ajudam a compreender que, numa entorse, o ligamento pode ser alongado para lá do regime elástico e ficar lesionado, o que o enfermeiro tem em conta ao orientar a recuperação do utente."
   },
@@ -3425,7 +3425,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: o comportamento de Hooke aplica-se antes da fratura, enquanto a tensão é baixa, e não depois dela.",
       "Está incorreta: a lei de Hooke aplica-se tanto à tração como à compressão, dentro do limite de proporcionalidade."
     ],
-    "nursingApplication": "Acima desse limite, cargas repetidas podem causar microlesões no osso, o que ajuda a perceber as fraturas de stress em pessoas sujeitas a marchas prolongadas."
+    "nursingApplication": "Mesmo abaixo desse limite, cargas repetidas podem acumular microlesões no osso (fadiga), o que ajuda a perceber as fraturas de stress em pessoas sujeitas a marchas prolongadas."
   },
   {
     "id": 2381,
@@ -3525,17 +3525,17 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2386,
     "topicId": 2,
-    "question": "Substituindo σ = F / S e ε = ΔL / L0 em σ = E · ε, qual é a expressão da constante elástica k da barra?",
+    "question": "Substituindo σ = F / S e ε = ΔL / L<sub>0</sub> em σ = E · ε, qual é a expressão da constante elástica k da barra?",
     "options": [
-      "k = E · L0 / S",
-      "k = E · S / L0",
-      "k = E / (S · L0)",
-      "k = S · L0 / E"
+      "k = E · L<sub>0</sub> / S",
+      "k = E · S / L<sub>0</sub>",
+      "k = E / (S · L<sub>0</sub>)",
+      "k = S · L<sub>0</sub> / E"
     ],
     "correctIndex": 1,
-    "explanation": "De F / S = E · ΔL / L0 resulta F = (E · S / L0) · ΔL, logo k = E · S / L0.",
+    "explanation": "De F / S = E · ΔL / L<sub>0</sub> resulta F = (E · S / L<sub>0</sub>) · ΔL, logo k = E · S / L<sub>0</sub>.",
     "distractorAnalysis": [
-      "Está incorreta: troca S e L0: k é proporcional à secção S e inversamente proporcional ao comprimento L0.",
+      "Está incorreta: troca S e L<sub>0</sub>: k é proporcional à secção S e inversamente proporcional ao comprimento L<sub>0</sub>.",
       "Está incorreta: k é diretamente proporcional a S, e não inversamente proporcional.",
       "Está incorreta: k é diretamente proporcional ao módulo de Young E, e não inversamente."
     ],
