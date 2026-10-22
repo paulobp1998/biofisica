@@ -249,7 +249,7 @@ const TOPIC_2_QUESTIONS = [
     "explanation": "O módulo de Young é a constante de proporcionalidade entre tensão e deformação relativa. Como a tensão se mede em pascal (Pa = N/m²) e a deformação relativa não tem unidades, E expressa-se em Pa.",
     "distractorAnalysis": [
       "Está incorreta: o metro é uma unidade de comprimento, enquanto o módulo de Young tem as unidades de uma tensão.",
-      "Está incorreta: N/m é a unidade da constante elástica k, que depende das dimensões do corpo, e não do módulo de Young.",
+      "Está incorreta: N/m é a unidade da constante elástica k de uma mola, e não do módulo de Young.",
       "Está incorreta: a deformação relativa é adimensional, mas o módulo de Young é a razão entre a tensão e essa deformação, logo tem unidades."
     ],
     "nursingApplication": "Os valores do módulo de Young dos tecidos são expressos em pascal, o que permite comparar a rigidez de materiais biológicos e não biológicos, como as próteses."
@@ -466,21 +466,21 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2225,
     "topicId": 2,
-    "question": "Uma barra elástica tem módulo de Young E = 2,0 × 10⁹ Pa, secção S = 1,0 × 10⁻⁴ m² e comprimento inicial L<sub>0</sub> = 0,50 m. Qual é a sua constante elástica k?",
+    "question": "Um alongamento de 4,0 cm é produzido numa mola por uma força de 10 N. Qual é o alongamento produzido por uma força de 25 N, dentro do limite de proporcionalidade?",
     "options": [
-      "2,0 × 10⁵ N/m",
-      "4,0 × 10⁵ N/m",
-      "2,5 × 10⁻⁶ N/m",
-      "1,0 × 10⁹ N/m"
+      "1,6 cm",
+      "10 cm",
+      "19 cm",
+      "100 cm"
     ],
     "correctIndex": 1,
-    "explanation": "A constante elástica é k = E · S / L<sub>0</sub> = (2,0 × 10⁹ × 1,0 × 10⁻⁴) / 0,50 = 4,0 × 10⁵ N/m.",
+    "explanation": "Dentro do limite de proporcionalidade, F = k · x: k = 10 N / 0,040 m = 250 N/m, logo x = 25 N / 250 N/m = 0,10 m = 10 cm.",
     "distractorAnalysis": [
-      "Está incorreta: esquece a divisão por L<sub>0</sub>, ficando apenas com E · S = 2,0 × 10⁵ N/m.",
-      "Está incorreta: inverte a fração, calculando L<sub>0</sub> / (E · S) = 2,5 × 10⁻⁶ N/m.",
-      "Está incorreta: multiplica E por L<sub>0</sub> em vez de S / L<sub>0</sub>, o que dá 1,0 × 10⁹ N/m."
+      "Está incorreta: inverte a proporção, calculando 4,0 × 10 / 25 = 1,6 cm, quando uma força maior produz um alongamento maior.",
+      "Está incorreta: soma a diferença de forças (15 N) ao alongamento inicial, como se a relação entre F e x fosse aditiva e não proporcional.",
+      "Está incorreta: multiplica o alongamento pela força (4,0 × 25), o que não tem significado físico."
     ],
-    "nursingApplication": "A constante elástica de um segmento de tecido mole depende das suas dimensões, pelo que um tecido mais curto e com maior secção é mais rígido."
+    "nursingApplication": "Num dinamómetro de mola, a escala é linear porque o alongamento é proporcional à força aplicada, dentro do limite de proporcionalidade."
   },
   {
     "id": 2226,
@@ -645,7 +645,7 @@ const TOPIC_2_QUESTIONS = [
       "A constante de Y é quatro vezes maior do que a de X."
     ],
     "correctIndex": 0,
-    "explanation": "Como k = E · S / L<sub>0</sub>, com E e S iguais, o dobro do comprimento reduz a constante elástica para metade.",
+    "explanation": "Com o mesmo material e a mesma secção, uma barra com o dobro do comprimento alonga-se o dobro para a mesma força, pelo que a sua constante elástica é metade.",
     "distractorAnalysis": [
       "Está incorreta: como k é inversamente proporcional ao comprimento, o dobro do comprimento reduz k para metade, e não a duplica.",
       "Está incorreta: a constante k depende das dimensões do corpo, e não apenas do material.",
@@ -664,10 +664,10 @@ const TOPIC_2_QUESTIONS = [
       "B, porque a constante elástica é inversamente proporcional a E."
     ],
     "correctIndex": 2,
-    "explanation": "Como k = E · S / L<sub>0</sub>, com S e L<sub>0</sub> iguais, a constante elástica é diretamente proporcional a E. A barra A, com E quinze vezes maior, tem maior constante elástica.",
+    "explanation": "Com o mesmo comprimento e a mesma secção, a barra com maior módulo de Young deforma-se menos para a mesma força, logo tem maior constante elástica. A barra A, com E quinze vezes maior, é a mais rígida.",
     "distractorAnalysis": [
       "Está incorreta: uma barra que se deforma mais, para a mesma força, tem menor constante elástica, e não maior.",
-      "Está incorreta: k = E · S / L<sub>0</sub> depende de E, pelo que, com módulos diferentes, as constantes também diferem.",
+      "Está incorreta: a constante elástica depende do módulo de Young, pelo que, com módulos diferentes, as constantes também diferem.",
       "Está incorreta: a constante elástica é diretamente proporcional a E, e não inversamente proporcional."
     ],
     "nursingApplication": "Um osso cortical, com módulo de Young muito superior ao de um tendão, transmite cargas de forma mais rígida, o que explica a diferença de comportamento entre estes tecidos."
@@ -1150,21 +1150,21 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2261,
     "topicId": 2,
-    "question": "Um músculo é modelado como uma barra com módulo de Young E = 2,0 × 10⁵ Pa, secção S = 4,0 × 10⁻³ m² e comprimento inicial L<sub>0</sub> = 0,40 m. Qual é a sua constante elástica k?",
+    "question": "Um tendão com comprimento inicial de 8,0 cm sofre um alongamento de 0,16 cm. Qual é a sua deformação relativa, em percentagem?",
     "options": [
-      "8,0 × 10² N/m",
-      "5,0 × 10⁻⁴ N/m",
-      "2,0 × 10³ N/m",
-      "8,0 × 10⁴ N/m"
+      "0,020 %",
+      "50 %",
+      "0,16 %",
+      "2,0 %"
     ],
-    "correctIndex": 2,
-    "explanation": "A constante elástica é k = E · S / L<sub>0</sub> = (2,0 × 10⁵ × 4,0 × 10⁻³) / 0,40 = 800 / 0,40 = 2,0 × 10³ N/m.",
+    "correctIndex": 3,
+    "explanation": "A deformação relativa é ε = ΔL / L<sub>0</sub> = 0,16 / 8,0 = 0,020, ou seja, 2,0 %.",
     "distractorAnalysis": [
-      "Está incorreta: esquece a divisão por L<sub>0</sub>, ficando apenas com E · S = 8,0 × 10² N/m.",
-      "Está incorreta: inverte a fração, calculando L<sub>0</sub> / (E · S) = 5,0 × 10⁻⁴ N/m.",
-      "Está incorreta: multiplica E por L<sub>0</sub> em vez de S / L<sub>0</sub>, o que dá 8,0 × 10⁴ N/m."
+      "Está incorreta: toma a fração 0,020 como se já fosse uma percentagem, esquecendo-se de a multiplicar por 100.",
+      "Está incorreta: inverte a razão, calculando L<sub>0</sub> / ΔL = 8,0 / 0,16 = 50.",
+      "Está incorreta: usa o alongamento em cm como se fosse uma percentagem, sem o dividir pelo comprimento inicial."
     ],
-    "nursingApplication": "A rigidez de um músculo depende da sua área e do seu comprimento, o que ajuda a perceber porque é que um músculo mais curto e mais espesso responde de forma diferente à mesma carga."
+    "nursingApplication": "Exprimir a deformação relativa em percentagem permite comparar o alongamento de tendões de comprimentos diferentes, por exemplo ao avaliar o esforço no tendão de Aquiles."
   },
   {
     "id": 2262,
@@ -1386,10 +1386,10 @@ const TOPIC_2_QUESTIONS = [
       "A de borracha, porque a constante elástica é inversamente proporcional a E."
     ],
     "correctIndex": 1,
-    "explanation": "Como k = E · S / L<sub>0</sub>, com S e L<sub>0</sub> iguais, a constante elástica é diretamente proporcional a E. O aço, com E muito superior, tem maior k.",
+    "explanation": "Com a mesma secção e o mesmo comprimento, a barra com maior módulo de Young deforma-se menos para a mesma força, logo tem maior constante elástica. O aço, com E muito superior, tem maior k.",
     "distractorAnalysis": [
       "Está incorreta: deformar-se mais, para a mesma força, corresponde a menor constante elástica, e não a maior.",
-      "Está incorreta: k depende de E, S e L<sub>0</sub>; com módulos de Young diferentes, as constantes também diferem.",
+      "Está incorreta: k depende do módulo de Young; com módulos diferentes, as constantes também diferem.",
       "Está incorreta: a constante elástica é diretamente proporcional a E, e não inversamente proporcional."
     ],
     "nursingApplication": "Um osso cortical é muito mais rígido do que um tecido mole com a mesma geometria, o que explica porque é que as cargas se distribuem de forma muito diferente entre estes tecidos."
@@ -1861,7 +1861,7 @@ const TOPIC_2_QUESTIONS = [
       "Diminui para um nono."
     ],
     "correctIndex": 2,
-    "explanation": "Como k = E · S / L<sub>0</sub>, ao triplicar L<sub>0</sub> a constante elástica fica dividida por três.",
+    "explanation": "Com o mesmo material e a mesma secção, uma barra três vezes mais comprida alonga-se o triplo para a mesma força, pelo que a constante elástica fica dividida por três.",
     "distractorAnalysis": [
       "Está incorreta: triplicar k ignora que a constante elástica é inversamente proporcional ao comprimento inicial.",
       "Está incorreta: a constante depende do comprimento, pelo que não se mantém quando o comprimento muda.",
@@ -2404,78 +2404,78 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2327,
     "topicId": 2,
-    "question": "Uma barra tem módulo de Young E, secção S e comprimento inicial L<sub>0</sub>, com k = E·S / L<sub>0</sub>. Se a secção duplicar, mantendo o material e o comprimento, o que acontece a k?",
+    "question": "Uma mola é esticada dentro do limite de proporcionalidade. Se a força aplicada duplicar, o que acontece ao alongamento e à constante elástica k da mola?",
     "options": [
-      "Mantém-se, porque depende só do material",
-      "Reduz-se a metade",
-      "Duplica",
-      "Quadruplica"
+      "O alongamento duplica e k duplica",
+      "O alongamento mantém-se e k duplica",
+      "O alongamento duplica e k mantém-se",
+      "O alongamento duplica e k reduz-se a metade"
     ],
     "correctIndex": 2,
-    "explanation": "Como k = E·S / L<sub>0</sub>, duplicar S (com E e L<sub>0</sub> constantes) duplica a constante elástica: um corpo mais grosso é mais rígido.",
+    "explanation": "Pela lei de Hooke, F = k · x: o alongamento é proporcional à força, pelo que duplica, enquanto k é característico da mola e mantém-se constante.",
     "distractorAnalysis": [
-      "Está incorreta: k depende também das dimensões do corpo, e não apenas do material.",
-      "Está incorreta: k é diretamente proporcional a S, pelo que aumenta e não diminui.",
-      "Está incorreta: k é proporcional a S e não a S², pelo que duplicar a secção duplica k."
+      "Está incorreta: o alongamento duplica, mas k não depende da força aplicada: é a razão F / x, que se mantém constante.",
+      "Está incorreta: k não varia com a força, e o alongamento é proporcional a F, pelo que não se mantém quando a força duplica.",
+      "Está incorreta: k = F / x mantém-se porque F e x duplicam na mesma proporção, e não se reduz a metade."
     ],
-    "nursingApplication": "Esta relação explica porque um cabo de tração mais espesso, usado em aparelhos de reabilitação, se deforma menos sob a mesma carga."
+    "nursingApplication": "Numa mola de reabilitação, a resistência aumenta com o alongamento, mas a constante da mola mantém-se, o que permite prever a força para cada extensão."
   },
   {
     "id": 2328,
     "topicId": 2,
-    "question": "Uma barra tem E = 1,5 × 10⁹ Pa, secção S = 2,0 cm² e comprimento inicial L<sub>0</sub> = 0,30 m. Qual é a sua constante elástica k = E·S / L<sub>0</sub>?",
+    "question": "Um tecido é sujeito a uma tensão de 3,0 MPa e sofre uma deformação relativa de 1,5 %, dentro do limite de proporcionalidade. Qual é o seu módulo de Young?",
     "options": [
-      "1,0 × 10⁸ N/m",
-      "9,0 × 10⁴ N/m",
-      "2,3 × 10¹² N/m",
-      "1,0 × 10⁶ N/m"
+      "4,5 × 10⁴ Pa",
+      "2,0 × 10⁶ Pa",
+      "2,0 × 10⁸ Pa",
+      "5,0 × 10⁻⁹ Pa"
     ],
-    "correctIndex": 3,
-    "explanation": "S = 2,0 cm² = 2,0 × 10⁻⁴ m². Logo k = (1,5 × 10⁹ × 2,0 × 10⁻⁴) / 0,30 = 1,0 × 10⁶ N/m.",
+    "correctIndex": 2,
+    "explanation": "E = σ / ε, com σ = 3,0 × 10⁶ Pa e ε = 1,5 % = 0,015. Logo E = 3,0 × 10⁶ / 0,015 = 2,0 × 10⁸ Pa.",
     "distractorAnalysis": [
-      "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 1,0 × 10⁸ N/m.",
-      "Está incorreta: multiplica por L<sub>0</sub> em vez de dividir, o que dá 9,0 × 10⁴ N/m.",
-      "Está incorreta: usa E·L<sub>0</sub> / S, trocando S e L<sub>0</sub> na fórmula."
+      "Está incorreta: multiplica a tensão pela deformação relativa em vez de as dividir, o que dá 4,5 × 10⁴ Pa.",
+      "Está incorreta: usa 1,5 em vez de 0,015 para a deformação relativa, esquecendo-se de converter a percentagem, o que dá 2,0 × 10⁶ Pa.",
+      "Está incorreta: inverte a razão, calculando ε / σ = 0,015 / 3,0 × 10⁶ = 5,0 × 10⁻⁹."
     ],
-    "nursingApplication": "Calcular k permite estimar quanto um tendão ou um cabo se alonga sob uma dada carga, por exemplo num sistema de tração."
+    "nursingApplication": "O módulo de Young de um tecido, obtido a partir de ensaios de tração, ajuda a escolher materiais de sutura ou enxertos com rigidez semelhante à do tecido a reparar."
   },
   {
     "id": 2329,
     "topicId": 2,
-    "question": "Porque é preferível usar σ = E·ε, e não F = k·x, para comparar a rigidez de tecidos de tamanhos diferentes?",
+    "question": "Uma força de 36 N comprime uma mola 4,5 cm, dentro do limite de proporcionalidade. Qual é a constante elástica da mola?",
     "options": [
-      "Porque k depende só do material e E depende das dimensões",
-      "Porque E varia com o comprimento e com a secção do corpo testado",
-      "Porque E depende só do material e k depende também das dimensões",
-      "Porque k é adimensional e E tem unidades de N/m"
+      "8,0 × 10² N/m",
+      "1,6 N/m",
+      "8,0 N/m",
+      "1,3 × 10⁻³ N/m"
     ],
-    "correctIndex": 2,
-    "explanation": "O módulo de Young E caracteriza o material, ao passo que k = E·S / L<sub>0</sub> também depende da forma; por isso E permite comparar corpos de qualquer tamanho.",
+    "correctIndex": 0,
+    "explanation": "Da lei de Hooke, k = F / x, com x = 4,5 cm = 0,045 m. Logo k = 36 / 0,045 = 8,0 × 10² N/m.",
     "distractorAnalysis": [
-      "Está incorreta: acontece o inverso: k = E·S / L<sub>0</sub> depende das dimensões, e E depende só do material.",
-      "Está incorreta: o módulo de Young é uma propriedade do material e não varia com o comprimento nem com a secção.",
-      "Está incorreta: k tem unidades de N/m e E tem unidades de Pa (N/m²), e nenhum dos dois é adimensional."
+      "Está incorreta: multiplica a força pelo alongamento em vez de os dividir, o que dá 36 × 0,045 = 1,6 N/m.",
+      "Está incorreta: não converte o alongamento para metros, dividindo 36 por 4,5, o que dá 8,0 N/cm e não N/m.",
+      "Está incorreta: inverte a razão, calculando x / F = 0,045 / 36 = 1,3 × 10⁻³."
     ],
-    "nursingApplication": "Esta distinção permite comparar tendões de utentes diferentes, ou de segmentos diferentes, sem que o tamanho do tendão interfira na comparação."
+    "nursingApplication": "Conhecer a constante elástica de uma mola de compressão permite estimar a força que um dispositivo, como um apoio ortopédico com amortecimento, exerce para um dado encurtamento."
   },
   {
     "id": 2330,
     "topicId": 2,
-    "question": "Dois fios de nylon, do mesmo material e do mesmo comprimento, têm secções diferentes: o fio A é grosso e o fio B é fino. Que se pode dizer sobre a constante elástica k?",
+    "question": "Dois fios de nylon, do mesmo material e do mesmo comprimento, têm secções diferentes: o fio A é grosso e o fio B é fino. Que se pode dizer sobre o módulo de Young E dos fios?",
     "options": [
-      "k é igual, porque o material é o mesmo",
-      "k é maior no fio B, porque é mais fino",
-      "k é maior no fio B, porque se deforma mais",
-      "k é maior no fio A, porque a secção é maior"
+      "E é maior no fio A, porque suporta uma força maior",
+      "E é maior no fio B, porque se alonga mais",
+      "E é maior no fio B, porque é mais fino",
+      "E é igual nos dois fios, porque o material é o mesmo"
     ],
     "correctIndex": 3,
-    "explanation": "Como k = E·S / L<sub>0</sub>, com E e L<sub>0</sub> iguais, o fio de maior secção (A) tem maior constante elástica.",
+    "explanation": "O módulo de Young é uma propriedade do material (razão entre tensão e deformação relativa), pelo que é igual nos dois fios.",
     "distractorAnalysis": [
-      "Está incorreta: k depende também das dimensões do corpo, e não apenas do material; a secção diferente altera k.",
-      "Está incorreta: k = E·S / L<sub>0</sub> aumenta com a secção, pelo que o fio fino tem menor k.",
-      "Está incorreta: o fio B deforma-se mais por ter menor k, e não maior; um k maior significa que se deforma menos."
+      "Está incorreta: a força que o fio suporta depende também da secção, mas E é uma propriedade do material e não da força suportada.",
+      "Está incorreta: o fio fino alonga-se mais para a mesma força, mas também fica sujeito a uma tensão maior; a razão σ / ε, isto é, E, mantém-se.",
+      "Está incorreta: a espessura altera a tensão para uma dada força, mas não altera o módulo de Young, que é característico do material."
     ],
-    "nursingApplication": "Isto explica porque, entre bandas elásticas de exercício do mesmo material e comprimento, a mais grossa oferece mais resistência ao utente durante a reabilitação."
+    "nursingApplication": "Por isso, fios de sutura do mesmo material têm o mesmo módulo de Young, qualquer que seja o seu calibre."
   },
   {
     "id": 2331,
@@ -3525,21 +3525,21 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2386,
     "topicId": 2,
-    "question": "Substituindo σ = F / S e ε = ΔL / L<sub>0</sub> em σ = E · ε, qual é a expressão da constante elástica k da barra?",
+    "question": "Um osso comporta-se elasticamente, com E = 2,0 × 10¹⁰ Pa, e está sujeito a uma tensão de compressão de 4,0 × 10⁶ Pa. Qual é a sua deformação relativa?",
     "options": [
-      "k = E · L<sub>0</sub> / S",
-      "k = E · S / L<sub>0</sub>",
-      "k = E / (S · L<sub>0</sub>)",
-      "k = S · L<sub>0</sub> / E"
+      "2,0 × 10⁻⁴",
+      "8,0 × 10¹⁶",
+      "5,0 × 10³",
+      "2,0 × 10⁴"
     ],
-    "correctIndex": 1,
-    "explanation": "De F / S = E · ΔL / L<sub>0</sub> resulta F = (E · S / L<sub>0</sub>) · ΔL, logo k = E · S / L<sub>0</sub>.",
+    "correctIndex": 0,
+    "explanation": "Da lei σ = E · ε, ε = σ / E = 4,0 × 10⁶ / 2,0 × 10¹⁰ = 2,0 × 10⁻⁴ (adimensional).",
     "distractorAnalysis": [
-      "Está incorreta: troca S e L<sub>0</sub>: k é proporcional à secção S e inversamente proporcional ao comprimento L<sub>0</sub>.",
-      "Está incorreta: k é diretamente proporcional a S, e não inversamente proporcional.",
-      "Está incorreta: k é diretamente proporcional ao módulo de Young E, e não inversamente."
+      "Está incorreta: multiplica σ por E em vez de os dividir, o que dá 8,0 × 10¹⁶.",
+      "Está incorreta: inverte a razão, calculando E / σ = 2,0 × 10¹⁰ / 4,0 × 10⁶ = 5,0 × 10³.",
+      "Está incorreta: erra o sinal do expoente ao dividir as potências de 10, obtendo 10⁴ em vez de 10⁻⁴."
     ],
-    "nursingApplication": "Esta expressão mostra porque um tendão curto e espesso é mais rígido do que um longo e fino do mesmo material."
+    "nursingApplication": "Um osso submetido a cargas fisiológicas sofre deformações relativas muito pequenas, o que explica porque não se nota a sua deformação em condições normais de apoio."
   },
   {
     "id": 2387,
@@ -3783,7 +3783,7 @@ const TOPIC_2_QUESTIONS = [
     "explanation": "A rigidez é a capacidade de um corpo se opor à deformação elástica: quanto maior E, menor ε para a mesma tensão.",
     "distractorAnalysis": [
       "Está incorreta: o módulo de Young mede a rigidez e não indica a resistência à rotura.",
-      "Está incorreta: a rigidez intrínseca do material depende do módulo de Young; as dimensões afetam apenas a constante elástica k.",
+      "Está incorreta: a rigidez intrínseca do material depende do módulo de Young, e não apenas das dimensões do corpo.",
       "Está incorreta: ε = σ / E: um maior E dá uma menor deformação para a mesma tensão."
     ],
     "nursingApplication": "Esta noção ajuda a escolher dispositivos mais rígidos, como talas e coletes, quando se pretende limitar o movimento de um segmento do corpo."
