@@ -1525,7 +1525,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A reação atua sobre o colchão, na superfície de contacto, e não no centro de massa do doente.",
       "Está incorreta: O par ação-reação envolve só o doente e o colchão; o pavimento não faz parte dele."
     ],
-    "nursingApplication": "Consolida a aplicação rigorosa da 3.ª Lei de Newton e a identificação correta dos pares de forças em contacto."
+    "nursingApplication": "Ao avaliar o risco de lesões por pressão num utente em decúbito dorsal, a normal que o colchão exerce sobre o sacro tem como reação a força que o utente exerce sobre o colchão; a pressão de interface sobre o sacro depende dessa força e da área de contacto."
   },
   {
     "id": 1081,
@@ -2955,7 +2955,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1156,
     "topicId": 1,
-    "question": "Numa alavanca Inter-resistente (ex.: carrinho de mão ou pontas dos pés), qual é a relação geométrica entre os braços de momento?",
+    "question": "Numa alavanca Inter-resistente (ex.: carrinho de mão), qual é a relação geométrica entre os braços de momento?",
     "options": [
       "O braço potente é maior que o braço resistente, dando vantagem de força.",
       "O braço resistente é o dobro do braço potente.",
