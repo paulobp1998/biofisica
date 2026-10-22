@@ -232,6 +232,43 @@ class QuizEngine {
     return this.getCurrentState();
   }
 
+  // Instantâneo do teste em curso (para o retomar após recarregar a página)
+  serialize() {
+    return {
+      mode: this.mode,
+      feedbackMode: this.feedbackMode,
+      activeTopicId: this.activeTopicId,
+      customTitle: this.customTitle,
+      timerDuration: this.timerDuration,
+      elapsedMs: this.startTime ? Date.now() - this.startTime : 0,
+      currentQuestions: this.currentQuestions,
+      currentIndex: this.currentIndex,
+      userAnswers: this.userAnswers,
+      isAnswered: this.isAnswered
+    };
+  }
+
+  // Repõe um instantâneo; devolve false se estiver incompleto ou corrompido
+  restore(snap) {
+    if (!snap || !Array.isArray(snap.currentQuestions) || !snap.currentQuestions.length ||
+        !Array.isArray(snap.userAnswers) || !Number.isInteger(snap.currentIndex) ||
+        snap.currentIndex < 0 || snap.currentIndex >= snap.currentQuestions.length) {
+      return false;
+    }
+    this.mode = snap.mode;
+    this.feedbackMode = snap.feedbackMode;
+    this.activeTopicId = snap.activeTopicId;
+    this.customTitle = snap.customTitle;
+    this.timerDuration = snap.timerDuration || 0;
+    this.startTime = Date.now() - (snap.elapsedMs || 0);
+    this.currentQuestions = snap.currentQuestions;
+    this.currentIndex = snap.currentIndex;
+    // JSON transforma posições vazias em null: normaliza para undefined
+    this.userAnswers = snap.userAnswers.map(a => a || undefined);
+    this.isAnswered = !!snap.isAnswered && !!this.userAnswers[this.currentIndex];
+    return true;
+  }
+
   getCurrentState() {
     if (this.currentIndex >= this.currentQuestions.length) {
       return {
