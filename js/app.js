@@ -153,6 +153,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let lastSessionConfig = { ...pendingSession };
   let timerInterval = null;
   let timerSecondsRemaining = 0;
+  let timerRemainingMs = 0;
+  let timerLastTick = 0;
   let currentQuestionId = null;
   let currentConfidence = null;
 
@@ -531,6 +533,7 @@ document.addEventListener('DOMContentLoaded', () => {
       view.classList.add('active-view');
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    renderResumeBanner();
   }
   window.showView = showView;
 
@@ -1029,32 +1032,180 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Gestão do Temporizador
     if (config.timerSeconds > 0) {
-      timerSecondsRemaining = config.timerSeconds;
-      quizTimerBadge.classList.remove('hidden', 'warning');
-      updateTimerDisplay();
-
-      timerInterval = setInterval(() => {
-        timerSecondsRemaining--;
-        updateTimerDisplay();
-
-        if (timerSecondsRemaining <= 60) {
-          quizTimerBadge.classList.add('warning');
-        }
-
-        if (timerSecondsRemaining <= 0) {
-          clearInterval(timerInterval);
-          showToast('⏱️ Tempo limite esgotado! O exame foi finalizado automaticamente.', 'toast-badge', 5000);
-          const summary = quiz.forceFinishExam();
-          showResults(summary);
-        }
-      }, 1000);
+      startQuizTimer(config.timerSeconds);
     } else {
       quizTimerBadge.classList.add('hidden');
     }
 
+    acquireWakeLock();
+    saveQuizProgress();
     showView(quizView);
     renderQuestion(state);
   }
+
+  // O cronómetro só corre enquanto a página está visível: se o aluno trocar de separador,
+  // bloquear o telemóvel ou fechar a página, o tempo fica parado e retoma onde ficou.
+  function startQuizTimer(seconds) {
+    clearInterval(timerInterval);
+    timerRemainingMs = seconds * 1000;
+    timerLastTick = Date.now();
+    timerSecondsRemaining = Math.ceil(timerRemainingMs / 1000);
+    quizTimerBadge.classList.remove('hidden');
+    quizTimerBadge.classList.toggle('warning', timerSecondsRemaining <= 60);
+    updateTimerDisplay();
+    timerInterval = setInterval(tickQuizTimer, 1000);
+  }
+
+  function tickQuizTimer() {
+    const now = Date.now();
+    if (!document.hidden) timerRemainingMs -= now - timerLastTick;
+    timerLastTick = now;
+    timerSecondsRemaining = Math.ceil(timerRemainingMs / 1000);
+    updateTimerDisplay();
+
+    if (timerSecondsRemaining <= 60) {
+      quizTimerBadge.classList.add('warning');
+    }
+
+    if (timerRemainingMs <= 0) {
+      clearInterval(timerInterval);
+      showToast('⏱️ Tempo limite esgotado! O exame foi finalizado automaticamente.', 'toast-badge', 5000);
+      const summary = quiz.forceFinishExam();
+      showResults(summary);
+    } else if (timerSecondsRemaining % 5 === 0) {
+      saveQuizProgress();
+    }
+  }
+
+  // ---- Persistência do teste em curso (sobrevive a recarregar, fechar o separador ou perder rede) ----
+  const QUIZ_PROGRESS_KEY = 'biofisica_quiz_progress';
+  const QUIZ_PROGRESS_MAX_AGE = 14 * 24 * 3600 * 1000;
+
+  function saveQuizProgress() {
+    if (!quiz.currentQuestions.length || quiz.currentIndex >= quiz.currentQuestions.length) return;
+    try {
+      localStorage.setItem(QUIZ_PROGRESS_KEY, JSON.stringify({
+        v: 1,
+        savedAt: Date.now(),
+        config: lastSessionConfig,
+        timerRemainingMs: quiz.timerDuration > 0 ? Math.max(0, timerRemainingMs) : 0,
+        quiz: quiz.serialize()
+      }));
+    } catch (e) { /* sem armazenamento: o teste continua a funcionar em memória */ }
+  }
+
+  function clearQuizProgress() {
+    try { localStorage.removeItem(QUIZ_PROGRESS_KEY); } catch (e) {}
+    releaseWakeLock();
+    renderResumeBanner();
+  }
+
+  function loadQuizProgress() {
+    try {
+      const snap = JSON.parse(localStorage.getItem(QUIZ_PROGRESS_KEY) || 'null');
+      if (!snap || snap.v !== 1 || Date.now() - snap.savedAt > QUIZ_PROGRESS_MAX_AGE) return null;
+      return snap;
+    } catch (e) { return null; }
+  }
+
+  let wakeLock = null;
+  async function acquireWakeLock() {
+    try {
+      if ('wakeLock' in navigator && !wakeLock && !document.hidden) {
+        wakeLock = await navigator.wakeLock.request('screen');
+        wakeLock.addEventListener('release', () => { wakeLock = null; });
+      }
+    } catch (e) { wakeLock = null; }
+  }
+  function releaseWakeLock() {
+    try { if (wakeLock) wakeLock.release(); } catch (e) {}
+    wakeLock = null;
+  }
+
+  // Repõe o teste guardado e mostra a pergunta onde o aluno ficou
+  function resumeQuizSession() {
+    const snap = loadQuizProgress();
+    if (!snap || !quiz.restore(snap.quiz)) {
+      clearQuizProgress();
+      return false;
+    }
+    lastSessionConfig = snap.config || lastSessionConfig;
+    clearInterval(timerInterval);
+    if (quiz.timerDuration > 0) startQuizTimer(Math.max(1, Math.ceil(snap.timerRemainingMs / 1000)));
+    else quizTimerBadge.classList.add('hidden');
+
+    showView(quizView);
+    const state = quiz.getCurrentState();
+    renderQuestion(state);
+    const answer = quiz.userAnswers[quiz.currentIndex];
+    if (quiz.isAnswered && answer) {
+      const isLast = quiz.currentIndex === quiz.currentQuestions.length - 1;
+      if (quiz.feedbackMode === 'delayed') {
+        optionsContainer.querySelectorAll('.option-btn').forEach((btn, idx) => {
+          btn.classList.toggle('exam-selected', idx === answer.selectedIndex);
+        });
+        btnNext.textContent = isLast ? 'Finalizar Exame e Ver Resultados ➔' : 'Próxima Pergunta ➔';
+        btnNext.classList.remove('hidden');
+      } else {
+        currentConfidence = answer.confidence || null;
+        showTrainingFeedback(answer, answer.selectedIndex);
+      }
+    }
+    acquireWakeLock();
+    return true;
+  }
+
+  // Aviso no início quando há um teste por terminar (ex.: o aluno foi ao início a meio)
+  function renderResumeBanner() {
+    let banner = document.getElementById('resume-quiz-banner');
+    const snap = loadQuizProgress();
+    const onQuiz = quizView && quizView.classList.contains('active-view');
+    if (!snap || onQuiz) {
+      if (banner) banner.remove();
+      return;
+    }
+    if (!banner) {
+      banner = document.createElement('div');
+      banner.id = 'resume-quiz-banner';
+      banner.className = 'focus-card';
+      banner.style.cssText = 'display:flex;flex-wrap:wrap;gap:0.75rem;align-items:center;justify-content:space-between;margin-bottom:1rem;';
+      homeView.insertBefore(banner, homeView.firstChild);
+    }
+    const total = snap.quiz.currentQuestions.length;
+    const done = snap.quiz.userAnswers.filter(Boolean).length;
+    banner.innerHTML = '';
+    const text = document.createElement('span');
+    text.innerHTML = `📝 Tens um teste por terminar (<strong>${done} de ${total}</strong> respondidas). O progresso está guardado.`;
+    const actions = document.createElement('span');
+    actions.style.cssText = 'display:flex;gap:0.5rem;';
+    const btnResume = document.createElement('button');
+    btnResume.className = 'btn btn-primary btn-sm';
+    btnResume.textContent = 'Continuar teste ➔';
+    btnResume.addEventListener('click', resumeQuizSession);
+    const btnDiscard = document.createElement('button');
+    btnDiscard.className = 'btn btn-outline btn-sm';
+    btnDiscard.textContent = 'Descartar';
+    btnDiscard.addEventListener('click', () => {
+      if (confirm('Descartar o teste por terminar? O progresso será perdido.')) {
+        Metrics.trackSession(quiz, null, true);
+        clearQuizProgress();
+      }
+    });
+    actions.append(btnResume, btnDiscard);
+    banner.append(text, actions);
+  }
+
+  document.addEventListener('visibilitychange', () => {
+    timerLastTick = Date.now();
+    if (document.hidden) {
+      if (quizView.classList.contains('active-view')) saveQuizProgress();
+    } else if (quizView.classList.contains('active-view')) {
+      acquireWakeLock();
+    }
+  });
+  window.addEventListener('pagehide', () => {
+    if (quizView.classList.contains('active-view')) saveQuizProgress();
+  });
 
   function updateTimerDisplay() {
     const mins = Math.floor(Math.max(0, timerSecondsRemaining) / 60);
@@ -1257,6 +1408,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const isLast = quiz.currentIndex === quiz.currentQuestions.length - 1;
       btnNext.textContent = isLast ? 'Finalizar Exame e Ver Resultados ➔' : 'Próxima Pergunta ➔';
       btnNext.classList.remove('hidden');
+      saveQuizProgress();
       return;
     }
 
@@ -1266,6 +1418,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const result = quiz.submitAnswer(selectedIndex);
     if (!result) return;
 
+    result.confidence = currentConfidence;
+    showTrainingFeedback(result, selectedIndex);
+    saveQuizProgress();
+  }
+
+  // Mostra o feedback imediato (Modo Treino); também usado ao retomar um teste guardado
+  function showTrainingFeedback(result, selectedIndex) {
     const optionButtons = optionsContainer.querySelectorAll('.option-btn');
     optionButtons.forEach((btn, idx) => {
       btn.disabled = true;
@@ -1276,8 +1435,6 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.classList.add('incorrect');
       }
     });
-
-    result.confidence = currentConfidence;
 
     feedbackCard.classList.remove('hidden');
     const letters = ['A', 'B', 'C', 'D'];
@@ -1325,6 +1482,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextState = quiz.nextQuestion();
     if (nextState) {
       renderQuestion(nextState);
+      saveQuizProgress();
     }
   });
 
@@ -1333,6 +1491,7 @@ document.addEventListener('DOMContentLoaded', () => {
       Metrics.trackSession(quiz, null, true);
       clearInterval(timerInterval);
       quizTimerBadge.classList.add('hidden');
+      clearQuizProgress();
       showView(homeView);
     }
   });
@@ -1439,6 +1598,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function showResults(summary) {
     clearInterval(timerInterval);
     quizTimerBadge.classList.add('hidden');
+    clearQuizProgress();
     showView(resultsView);
 
     // Guardar histórico e atualizar erros
@@ -2391,5 +2551,11 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch (err) {
       console.warn("Aviso ao inicializar TeacherManager:", err);
     }
+  }
+
+  // Teste por terminar (página recarregada ou fechada a meio): volta à pergunta onde o aluno ficou,
+  // a menos que tenha aberto a Arena (ligação por PIN/hash)
+  if (!arenaView || arenaView.classList.contains('hidden')) {
+    resumeQuizSession();
   }
 });
