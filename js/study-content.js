@@ -100,7 +100,7 @@ const STUDY_BLOCKS = [
         <li><strong>Dispositivos de apoio</strong> (andarilhos, canadianas) ampliam a base de sustentação.</li>
       </ul>`,
     pitfall: 'F<sub>R</sub> = 0 não garante equilíbrio: um binário de forças tem F<sub>R</sub> = 0 mas M<sub>R</sub> ≠ 0, e faz o corpo rodar. É preciso F<sub>R</sub> = 0 e M<sub>R</sub> = 0.',
-    nursing: 'Ao mobilizar utentes, o enfermeiro afasta os pés e fleta os joelhos para baixar o CG e alargar a base de sustentação, e mantém a carga junto ao corpo para a linha de gravidade ficar dentro da base.'
+    nursing: 'Ao mobilizar utentes, o enfermeiro afasta os pés e flete os joelhos para baixar o CG e alargar a base de sustentação, e mantém a carga junto ao corpo para a linha de gravidade ficar dentro da base.'
   },
   {
     id: 't1-alavancas',

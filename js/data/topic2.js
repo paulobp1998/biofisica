@@ -309,7 +309,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: a recuperação completa corresponde a um sólido elástico, e não a um fluido viscoso.",
       "Está incorreta: a oscilação em torno de um valor fixo é típica de um oscilador elástico, e não de um corpo viscoso."
     ],
-    "nursingApplication": "Um líquido espessado para um doente com disfagia continua a escoar da colher enquanto atua o seu peso, apenas mais devagar do que a água, o que dá tempo para uma deglutição mais segura."
+    "nursingApplication": "Ao preparar um líquido espessado até à consistência de mel para um doente com disfagia, o enfermeiro tem em conta que o fluido continua a escoar sob a ação do seu peso, apenas mais devagar do que a água, o que dá mais tempo para a deglutição."
   },
   {
     "id": 2217,

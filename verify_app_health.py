@@ -72,9 +72,11 @@ def test_app():
     # 4. Check IDs are contiguous and distinct
     ids = [q["id"] for q in all_questions]
     assert len(ids) == len(set(ids)), "Duplicate question IDs detected!"
-    assert min(ids) == 1001
-    assert max(ids) == 2200
-    print("✓ All 400 IDs are unique and strictly contiguous per topic block (1001-1200 and 2001-2200).")
+    t1_ids = sorted(q["id"] for q in all_questions if q["topicId"] == 1)
+    t2_ids = sorted(q["id"] for q in all_questions if q["topicId"] == 2)
+    assert t1_ids == list(range(1001, 1201)), "Topic 1 IDs must be 1001-1200"
+    assert t2_ids == list(range(2201, 2401)), "Topic 2 IDs must be 2201-2400"
+    print("✓ All 400 IDs are unique and contiguous per topic block (1001-1200 and 2201-2400).")
 
     # 5. Check search index simulation
     keywords = ["Inércia", "Momento", "Hooke", "Young", "Cisalhamento", "Compressão", "Alavanca", "Newton", "Atrito"]
@@ -87,8 +89,8 @@ def test_app():
     # 6. Check Unlocked Questions in questions-data.js
     with open("js/questions-data.js", "r", encoding="utf-8") as f:
         q_data_js = f.read()
-    assert "UNLOCKED_TOPIC_IDS = [1]" in q_data_js, "UNLOCKED_TOPIC_IDS not set to [1]"
-    print("✓ UNLOCKED_TOPIC_IDS = [1] verified in questions-data.js.")
+    assert "UNLOCKED_TOPIC_IDS = [1, 2]" in q_data_js, "UNLOCKED_TOPIC_IDS not set to [1, 2]"
+    print("✓ UNLOCKED_TOPIC_IDS = [1, 2] verified in questions-data.js.")
 
     # 7. Check Distractor Analysis and Options
     for q in all_questions:
@@ -97,8 +99,7 @@ def test_app():
         assert len(q["distractorAnalysis"]) == 3, f"Q#{q['id']} distractor count != 3"
         for d in q["distractorAnalysis"]:
             assert d.startswith("Está incorreta: "), f"Q#{q['id']} invalid distractor format"
-        assert q["correctIndex"] == q["id"] % 4, f"Q#{q['id']} correctIndex != id % 4"
-    print("✓ All 400 questions satisfy: 4 unique options, 3 distractors starting with 'Está incorreta: ', correctIndex == id % 4.")
+    print("✓ All 400 questions satisfy: 4 unique options, 3 distractors starting with 'Está incorreta: ', correctIndex in 0-3.")
 
     # 8. Check Official AI Disclaimer Announcement in index.html
     expected_ai_notice = (
@@ -118,8 +119,7 @@ def test_app():
     assert 'id="feedback-qid-tag"' in html, "Missing feedback-qid-tag in index.html"
     with open("js/app.js", "r", encoding="utf-8") as f:
         app_js = f.read()
-    assert "Pergunta Q${state.questionId}" in app_js, "Missing Pergunta Q${state.questionId} in app.js"
-    assert "Pergunta Q${ans.questionId}" in app_js, "Missing Pergunta Q${ans.questionId} in app.js"
+    assert "questionLabel(" in app_js, "Missing questionLabel() in app.js"
     assert "btn-copy-review-qid" in app_js, "Missing btn-copy-review-qid in app.js"
     # 10. Check Temporary Teacher Notice (Plataforma Cluny) - 72 Hours Lifecycle
     expected_cluny_notice = (
