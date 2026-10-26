@@ -2386,6 +2386,7 @@ const TOPIC_1_QUESTIONS = [
     "id": 1126,
     "topicId": 1,
     "question": "Se uma maca for deixada numa rampa inclinada com os travões soltos, desprezando o atrito e a resistência ao rolamento (F<sub>a</sub> = 0 N):",
+    "figure": {"type": "incline", "angle": 25, "angleLabel": "θ", "body": "maca", "notes": ["Sem atrito (F<sub>a</sub> = 0 N)"]},
     "options": [
       "A maca fica parada, em equilíbrio indiferente, sem tendência para descer.",
       "A maca sobe a rampa, impulsionada pela componente normal P<sub>n</sub>.",
@@ -2462,6 +2463,7 @@ const TOPIC_1_QUESTIONS = [
     "id": 1130,
     "topicId": 1,
     "question": "Num doente com risco de escorregar para os pés da cama ao elevar a cabeceira a 45° (plano inclinado), o deslizamento tecidual é provocado por qual componente de força?",
+    "figure": {"type": "incline", "angle": 45, "angleLabel": "θ = 45°", "body": "doente"},
     "options": [
       "Pela força de atrito entre a pele e o lençol, que arrasta o corpo para os pés.",
       "Pela força eletromagnética gerada pelo motor elétrico do leito.",
@@ -2576,6 +2578,7 @@ const TOPIC_1_QUESTIONS = [
     "id": 1136,
     "topicId": 1,
     "question": "Se uma força de 30 N for aplicada perpendicularmente a uma alavanca a uma distância de 0,5 m do eixo de rotação, qual é o Momento da Força produzido?",
+    "figure": {"type": "moment", "items": [{"len": 1, "F": "F = 30 N", "b": "b = 0,5 m"}]},
     "options": [
       "15 N·m",
       "60 N·m",
@@ -2652,6 +2655,7 @@ const TOPIC_1_QUESTIONS = [
     "id": 1140,
     "topicId": 1,
     "question": "Duas forças de 10 N atuam em duas alavancas distintas: a Força 1 tem um braço b1 = 2 m e a Força 2 tem um braço b2 = 1 m. Quais são os respetivos momentos?",
+    "figure": {"type": "moment", "items": [{"len": 1, "F": "Força 1 = 10 N", "b": "b1 = 2 m"}, {"len": 0.5, "F": "Força 2 = 10 N", "b": "b2 = 1 m"}]},
     "options": [
       "Momento 1 = 20 N·m e Momento 2 = 10 N·m.",
       "Momento 1 = 5 N·m e Momento 2 = 10 N·m.",
@@ -3051,6 +3055,7 @@ const TOPIC_1_QUESTIONS = [
     "id": 1161,
     "topicId": 1,
     "question": "Numa alavanca interfixa de 3,6 m de comprimento total, o braço potente é o dobro do braço resistente, medidos a partir do fulcro. Qual é o valor de x, em metros, sendo x o braço resistente?",
+    "figure": {"type": "lever", "cls": 1, "a": 2, "r": 1, "fPot": "F<sub>Potente</sub>", "fRes": "F<sub>Resis.</sub>", "bPot": "b<sub>Potente</sub> = 2x", "bRes": "b<sub>Resis.</sub> = x", "total": "3,6 m"},
     "options": [
       "x = 3,6 m",
       "x = 1,2 m",
@@ -3070,6 +3075,7 @@ const TOPIC_1_QUESTIONS = [
     "id": 1162,
     "topicId": 1,
     "question": "Numa alavanca interfixa com Força Resistente F<sub>Resis.</sub> = 20 N e braço b<sub>Resis.</sub> = 1,2 m, qual é o valor calculado para o Momento da Força Resistente (M<sub>Resis.</sub>)?",
+    "figure": {"type": "lever", "cls": 1, "a": 1.5, "r": 1, "fPot": "F<sub>Potente</sub>", "fRes": "F<sub>Resis.</sub> = 20 N", "bPot": "b<sub>Potente</sub>", "bRes": "b<sub>Resis.</sub> = 1,2 m"},
     "options": [
       "M<sub>Resis.</sub> = 16,7 N·m",
       "M<sub>Resis.</sub> = 21,2 N·m",
@@ -3089,6 +3095,7 @@ const TOPIC_1_QUESTIONS = [
     "id": 1163,
     "topicId": 1,
     "question": "Estando o sistema em equilíbrio com M<sub>Resis.</sub> = 24 N·m e braço potente b<sub>Potente</sub> = 2,4 m, qual é a Força Potente (F<sub>Potente</sub>) necessária para equilibrar a alavanca?",
+    "figure": {"type": "lever", "cls": 1, "a": 2, "r": 1, "fPot": "F<sub>Potente</sub> = ?", "fRes": "F<sub>Resis.</sub>", "bPot": "b<sub>Potente</sub> = 2,4 m", "bRes": "b<sub>Resis.</sub>"},
     "options": [
       "F<sub>Potente</sub> = 24 N",
       "F<sub>Potente</sub> = 57,6 N",
@@ -3184,6 +3191,7 @@ const TOPIC_1_QUESTIONS = [
     "id": 1168,
     "topicId": 1,
     "question": "Num baloiço (alavanca interfixa) com M<sub>Resis.</sub> = 24 N·m, se uma pessoa aplicar uma força potente de 15 N com um braço b<sub>Potente</sub> = 2,4 m, o que acontecerá ao sistema?",
+    "figure": {"type": "lever", "cls": 1, "a": 2, "r": 1, "fPot": "F<sub>Potente</sub> = 15 N", "fRes": "F<sub>Resis.</sub>", "bPot": "b<sub>Potente</sub> = 2,4 m", "bRes": "b<sub>Resis.</sub>"},
     "options": [
       "O momento potente seria 36 N·m, superando M<sub>Resis.</sub> (24 N·m) e fazendo a alavanca girar.",
       "A alavanca permaneceria em repouso, sem movimento, como se as forças se anulassem.",

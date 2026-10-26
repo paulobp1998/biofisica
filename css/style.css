@@ -4833,3 +4833,11 @@ sub, sup { line-height: 0; }
 .study-figure .f-fill-neu { fill: var(--text-muted); }
 .study-figure .f-fill-pot { fill: var(--color-brand); }
 .study-figure .f-fill-ok { fill: var(--color-success); }
+
+/* Esquemas das perguntas (js/question-figures.js) */
+.question-figure { margin: 0.75rem 0 0; }
+.question-figure svg { max-width: 440px; }
+@media print {
+  .question-figure { break-inside: avoid; margin: 4pt 0; }
+  .question-figure svg { max-width: 260pt; color: #1e293b; }
+}

@@ -429,6 +429,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2223,
     "topicId": 2,
     "question": "Uma barra de secção transversal de 2,5 cm² é tracionada por uma força de 500 N, dentro do limite de proporcionalidade. Qual é a tensão mecânica na barra?",
+    "figure": {"type": "bar", "mode": "traction", "F": "F = 500 N", "inside": ["A = 2,5 cm²", "σ = ?"]},
     "options": [
       "2,0 × 10⁶ N/m²",
       "1,25 × 10⁻¹ N/m²",
@@ -486,6 +487,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2226,
     "topicId": 2,
     "question": "Uma barra com secção de 5,0 cm² suporta uma tensão mecânica de 4,0 × 10⁶ N/m². Qual é a força aplicada?",
+    "figure": {"type": "bar", "mode": "traction", "F": "F = ?", "inside": ["A = 5,0 cm²", "σ = 4,0 × 10⁶ N/m²"]},
     "options": [
       "200 N",
       "2,0 × 10³ N",
@@ -600,6 +602,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2232,
     "topicId": 2,
     "question": "Uma barra de 40 cm de comprimento inicial é comprimida até 38 cm. Qual é a deformação relativa da barra?",
+    "figure": {"type": "bar", "mode": "compression", "F": "F", "L0": "L<sub>0</sub> = 40 cm", "L": "L = 38 cm"},
     "options": [
       "−2",
       "−0,05",
@@ -1436,6 +1439,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2276,
     "topicId": 2,
     "question": "Uma barra com secção de 1,2 cm² tem uma tensão mecânica de 9,0 × 10⁶ N/m². Qual é a força aplicada?",
+    "figure": {"type": "bar", "mode": "traction", "F": "F = ?", "inside": ["A = 1,2 cm²", "σ = 9,0 × 10⁶ N/m²"]},
     "options": [
       "7,5 × 10¹⁰ N",
       "1,08 × 10¹ N",
@@ -1474,6 +1478,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2278,
     "topicId": 2,
     "question": "Uma barra de 1,5 m de comprimento inicial é alongada 3,0 mm, dentro do limite de proporcionalidade. Qual é a sua deformação relativa?",
+    "figure": {"type": "bar", "mode": "traction", "F": "F", "L0": "L<sub>0</sub> = 1,5 m", "dL": "ΔL = 3,0 mm"},
     "options": [
       "0,0002",
       "0,5",
@@ -1588,6 +1593,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2284,
     "topicId": 2,
     "question": "Uma barra de 0,80 m de comprimento inicial tem módulo de Young E = 1,0 × 10⁹ N/m² e secção de 2,0 × 10⁻⁴ m². Sob uma força de 4,0 × 10³ N, dentro do limite de proporcionalidade, qual é o seu alongamento?",
+    "figure": {"type": "bar", "mode": "traction", "F": "F = 4,0 × 10³ N", "inside": ["A = 2,0 × 10⁻⁴ m²", "E = 1,0 × 10⁹ N/m²"], "L0": "L<sub>0</sub> = 0,80 m", "dL": "ΔL = ?"},
     "options": [
       "0,016 cm",
       "1,6 m",
@@ -1721,6 +1727,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2291,
     "topicId": 2,
     "question": "Uma barra com secção de 1,0 × 10⁻⁴ m² e comprimento inicial de 1,0 m alonga 1,0 mm quando sujeita a uma força de 200 N, dentro do limite de proporcionalidade. Qual é o seu módulo de Young?",
+    "figure": {"type": "bar", "mode": "traction", "F": "F = 200 N", "inside": ["A = 1,0 × 10⁻⁴ m²", "E = ?"], "L0": "L<sub>0</sub> = 1,0 m", "dL": "ΔL = 1,0 mm"},
     "options": [
       "2,0 × 10⁶ N/m²",
       "5,0 × 10⁻¹⁰ N/m²",
@@ -2576,6 +2583,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2336,
     "topicId": 2,
     "question": "Uma barra apoiada nas duas extremidades suporta uma carga de 600 N ao centro. Qual é a reação em cada apoio?",
+    "figure": {"type": "beam", "load": "600 N", "react": "R = ?"},
     "options": [
       "300 N",
       "600 N",

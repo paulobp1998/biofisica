@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const quizQidBadge = document.getElementById('quiz-qid-badge');
   const btnCopyQid = document.getElementById('btn-copy-qid');
   const questionText = document.getElementById('question-text');
+  const questionFigure = document.getElementById('question-figure');
   const optionsContainer = document.getElementById('options-container');
   const feedbackCard = document.getElementById('feedback-card');
   const feedbackQidTag = document.getElementById('feedback-qid-tag');
@@ -1267,6 +1268,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Enunciado
     questionText.innerHTML = richText(state.question);
+    questionFigure.innerHTML = QUESTION_FIGURES.render(state.figure);
 
     // Opções
     optionsContainer.innerHTML = '';
@@ -1711,6 +1713,7 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
         <p class="review-question"><strong>${ans.questionText}</strong></p>
+        ${QUESTION_FIGURES.render(ans.figure)}
         <div class="review-choices">
           <p><strong>A sua escolha:</strong> ${ans.selectedIndex >= 0 ? `Opção ${letters[ans.selectedIndex]} - ${ans.options[ans.selectedIndex]}` : '<span style="color: var(--color-danger);">(Sem resposta selecionada)</span>'}</p>
           ${!ans.isCorrect ? `<p class="correct-highlight"><strong>Resposta correta:</strong> Opção ${letters[ans.correctIndex]} - ${ans.options[ans.correctIndex]}</p>` : ''}
@@ -2206,6 +2209,7 @@ document.addEventListener('DOMContentLoaded', () => {
       printHtml += `
         <div class="print-q-card">
           <p class="print-q-title">${idx + 1}. <span style="font-size: 0.85em; font-weight: 600; color: #475569;">[${questionLabel(q.id)}]</span> ${q.question}</p>
+          ${QUESTION_FIGURES.render(q.figure)}
           <div class="print-options-grid">
             ${q.options.map((opt, oIdx) => `
               <div class="print-option-row">
