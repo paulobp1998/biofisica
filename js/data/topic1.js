@@ -86,21 +86,21 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1005,
     "topicId": 1,
-    "question": "Segundo o programa da unidade curricular, qual é um dos principais objetivos da Biofísica ao estudar a Mecânica?",
+    "question": "Um utente acamado apoia o calcanhar no colchão. A força de contacto do calcanhar sobre o colchão é de 40 N e a área de contacto é de 20 cm². Qual é a pressão de interface sobre o calcanhar, em kPa?",
     "options": [
-      "Sintetizar novos compostos farmacológicos em laboratório, com fins terapêuticos.",
-      "Aplicar princípios da mecânica à anatomia humana e à terapêutica.",
-      "Calcular a dosagem de fármacos com base no pH dos fluidos gastrointestinais.",
-      "Analisar as sequências genéticas de microrganismos patogénicos hospitalares."
+      "0,2 kPa",
+      "20 kPa",
+      "0,002 kPa",
+      "0,00008 kPa"
     ],
     "correctIndex": 1,
-    "explanation": "Define-se que um dos objetivos é 'Conhecer os princípios científicos nos campos da Mecânica (...) e aplicar esses princípios à anatomia humana e terapêutica'.",
+    "explanation": "A pressão é a força por unidade de área: p = F / A. Convertendo a área para o SI, 20 cm² = 20 × 10<sup>-4</sup> m² = 0,0020 m². Logo p = 40 N / 0,0020 m² = 20 000 Pa = 20 kPa. Para a mesma força, quanto menor for a área de contacto, maior é a pressão, razão pela qual proeminências ósseas com pouca área de apoio, como o calcanhar, estão particularmente expostas.",
     "distractorAnalysis": [
-      "Está incorreta: A síntese de fármacos pertence à química farmacêutica, e não à biofísica mecânica.",
-      "Está incorreta: O cálculo de doses pertence à farmacologia, e não aos princípios mecânicos.",
-      "Está incorreta: A análise genética de microrganismos pertence à microbiologia e à genética."
+      "Está incorreta: resulta de converter 20 cm² em 0,20 m², usando 1 cm = 0,01 m sem elevar ao quadrado (40 / 0,20 = 200 Pa); como 1 cm² = 10<sup>-4</sup> m², a área correta é 0,0020 m².",
+      "Está incorreta: resulta de dividir 40 N por 20 sem converter cm² em m² (40 / 20 = 2 Pa = 0,002 kPa); no SI, a área tem de estar em m² para a pressão vir em pascal.",
+      "Está incorreta: resulta de multiplicar a força pela área (40 × 0,0020 = 0,08 Pa); a pressão é a força a dividir pela área, p = F / A."
     ],
-    "nursingApplication": "Fundamenta as boas práticas de ergonomia e prevenção de lesões musculoesqueléticas na equipa de saúde."
+    "nursingApplication": "Num utente acamado, saber que a mesma força concentrada numa área pequena gera uma pressão de interface elevada fundamenta o uso de dispositivos que deixam o calcanhar sem apoio direto no colchão."
   },
   {
     "id": 1006,
@@ -219,21 +219,21 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1012,
     "topicId": 1,
-    "question": "Qual é a definição exata de 'Tendão' na biomecânica articular?",
+    "question": "Para deslocar um utente sobre um lençol de transferência, um enfermeiro puxa com 30 N em direção à cabeceira e outro puxa com 40 N para o lado, perpendicularmente à primeira força. Qual é a intensidade da força resultante das duas forças aplicadas?",
     "options": [
-      "Tecido epitelial impermeável que reveste as cavidades das articulações.",
-      "Bainha de mielina que conduz os impulsos elétricos entre nervos e músculos.",
-      "Tecido conjuntivo fibroso que liga um músculo a um osso.",
-      "Estrutura óssea esponjosa, onde se produzem as células do sangue."
+      "50 N",
+      "70 N",
+      "10 N",
+      "2500 N"
     ],
-    "correctIndex": 2,
-    "explanation": "O tendão é um tecido conjuntivo fibroso que liga um músculo a um osso.",
+    "correctIndex": 0,
+    "explanation": "As forças são grandezas vetoriais: a resultante depende da direção e do sentido de cada força, e não apenas das intensidades. Com duas forças perpendiculares, a resultante é a hipotenusa do triângulo retângulo que formam: F<sub>R</sub> = √(30<sup>2</sup> + 40<sup>2</sup>) = √(900 + 1600) = √2500 = 50 N, com direção oblíqua entre as duas forças.",
     "distractorAnalysis": [
-      "Está incorreta: As cavidades articulares são revestidas por membrana sinovial, de tecido conjuntivo, e não por epitélio.",
-      "Está incorreta: A bainha de mielina isola as fibras nervosas; não une músculo e osso.",
-      "Está incorreta: O osso esponjoso é tecido ósseo, e não une um músculo ao osso."
+      "Está incorreta: somar as intensidades (30 + 40 = 70 N) só é válido para forças com a mesma direção e o mesmo sentido; aqui as forças são perpendiculares.",
+      "Está incorreta: subtrair as intensidades (40 − 30 = 10 N) só é válido para forças com a mesma direção e sentidos opostos.",
+      "Está incorreta: resulta de esquecer a raiz quadrada (30<sup>2</sup> + 40<sup>2</sup> = 2500); a intensidade da resultante é √2500 = 50 N."
     ],
-    "nursingApplication": "O tendão transmite a força gerada pelas fibras musculares ao esqueleto, viabilizando o movimento humano."
+    "nursingApplication": "Quando dois enfermeiros puxam um lençol de transferência em direções diferentes, a força útil é menor do que a soma das suas forças, pelo que devem coordenar-se para puxar na mesma direção e sentido."
   },
   {
     "id": 1013,
@@ -485,21 +485,21 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1026,
     "topicId": 1,
-    "question": "Que célebre físico formulou as Leis do Movimento e da Gravitação e proferiu a frase: 'Se vi mais longe, foi por estar de pé sobre os ombros de gigantes'?",
+    "question": "Um saco de soro está pendurado num suporte com rodas, em repouso. O enfermeiro empurra bruscamente o suporte para a frente e o saco inclina-se para trás em relação ao suporte. Qual é a explicação correta?",
     "options": [
-      "Galileu Galilei, autor dos estudos sobre a queda dos corpos e o movimento.",
-      "Robert Hooke, autor da lei da elasticidade e de estudos de microscopia.",
-      "Isaac Newton, autor das leis do movimento e da gravitação universal.",
-      "Arquimedes, autor do princípio da flutuação dos corpos em fluidos."
+      "Porque uma força de inércia, dirigida para trás, atua sobre o saco.",
+      "Porque o peso do saco aumenta enquanto o suporte está a acelerar.",
+      "Porque a reação à força do enfermeiro atua no saco, para trás.",
+      "Porque o saco tende a manter o repouso enquanto o suporte acelera."
     ],
-    "correctIndex": 2,
-    "explanation": "Introduzem-se as Leis do Movimento com a célebre citação de Isaac Newton: 'Se vi mais longe, foi por estar de pé sobre os ombros de gigantes'.",
+    "correctIndex": 3,
+    "explanation": "Pela 1.ª Lei de Newton, um corpo em repouso mantém o repouso a menos que atue sobre ele uma força resultante não nula. O enfermeiro aplica força ao suporte, que acelera; o saco só é acelerado quando o gancho, já inclinado, lhe aplica uma força resultante para a frente. Até lá, por inércia, o saco fica para trás em relação ao suporte. Não existe nenhuma força a empurrar o saco para trás.",
     "distractorAnalysis": [
-      "Está incorreta: Galileu estudou a queda dos corpos, mas não formulou as leis do movimento e da gravitação universal.",
-      "Está incorreta: Hooke formulou a lei da elasticidade, e não as leis do movimento e da gravitação.",
-      "Está incorreta: Arquimedes formulou o princípio da flutuação, e não as leis do movimento."
+      "Está incorreta: a inércia é uma propriedade da matéria, não uma força; no referencial do chão, nenhuma força empurra o saco para trás, ele apenas tende a manter o seu estado de repouso.",
+      "Está incorreta: o peso do saco (P = m · g) não depende da aceleração horizontal do suporte; a massa e g mantêm-se.",
+      "Está incorreta: a reação à força do enfermeiro atua sobre o enfermeiro (exercida pelo suporte), não sobre o saco; ação e reação atuam em corpos diferentes."
     ],
-    "nursingApplication": "Contextualiza historicamente a evolução da física clássica aplicada às ciências da vida e saúde."
+    "nursingApplication": "Ao deslocar um suporte de soro com sacos e bombas de perfusão, arrancar e travar de forma gradual reduz a oscilação do material e o risco de o suporte tombar."
   },
   {
     "id": 1027,
@@ -656,21 +656,21 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1035,
     "topicId": 1,
-    "question": "Qual é a definição de 'utente bariátrico'?",
+    "question": "Uma cama hospitalar transporta um utente bariátrico; a massa total (cama + utente) é de 160 kg. Desprezando atritos e a resistência ao rolamento, que força resultante horizontal é necessária para lhe imprimir uma aceleração de 0,25 m/s²?",
     "options": [
-      "Utente com desnutrição calórica grave e baixa densidade óssea.",
-      "Utente sujeito a tração ortopédica contínua nos membros inferiores.",
-      "Utente que utiliza cadeira de rodas com rodas de diâmetro reduzido.",
-      "Utente com obesidade severa, cuja massa corporal é muito elevada."
+      "640 N",
+      "392 N",
+      "40 N",
+      "0,0016 N"
     ],
-    "correctIndex": 3,
-    "explanation": "Um utente bariátrico é um utente com obesidade severa.",
+    "correctIndex": 2,
+    "explanation": "Pela 2.ª Lei de Newton, F<sub>R</sub> = m · a = 160 kg × 0,25 m/s² = 40 N. Para a mesma aceleração, uma massa total de 80 kg exigiria apenas 20 N: a força necessária é proporcional à massa. Na prática, o atrito e a resistência ao rolamento aumentam ainda mais a força a aplicar, tanto para arrancar como para travar.",
     "distractorAnalysis": [
-      "Está incorreta: A desnutrição grave corresponde a massa reduzida, o oposto de um utente bariátrico.",
-      "Está incorreta: A tração ortopédica é um tratamento de imobilização, e não uma definição de utente bariátrico.",
-      "Está incorreta: O diâmetro das rodas da cadeira não define o utente bariátrico."
+      "Está incorreta: resulta de dividir a massa pela aceleração (160 / 0,25 = 640); pela 2.ª Lei, F = m · a, pelo que se multiplica e não se divide.",
+      "Está incorreta: resulta de usar o peso em vez da massa (160 × 9,8 × 0,25 = 392 N); a força resultante horizontal depende da massa (inércia), não de g.",
+      "Está incorreta: resulta de dividir a aceleração pela massa (0,25 / 160 ≈ 0,0016); essa inversão da fórmula não dá uma força."
     ],
-    "nursingApplication": "Contextualiza as necessidades especiais de equipamentos de transferência reforçados e apoio de mais elementos da equipa."
+    "nursingApplication": "No transporte de um utente bariátrico numa cama, a massa elevada exige mais força para arrancar e para travar, o que justifica recorrer a camas com motor de tração ou a mais elementos da equipa."
   },
   {
     "id": 1036,
@@ -1207,21 +1207,21 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1064,
     "topicId": 1,
-    "question": "Qual é a descrição expressiva utilizada para caracterizar a Força Nuclear Forte?",
+    "question": "A força nuclear forte é a mais intensa das quatro forças fundamentais. Porque é que não intervém diretamente quando um enfermeiro empurra uma cadeira de rodas?",
     "options": [
-      "“Cola” que mantém os protões e os neutrões unidos no interior do núcleo atómico.",
-      "“Força de atrito” que impede a rotação das órbitas eletrónicas.",
-      "“Tensão ligamentar” que mantém as vértebras unidas na coluna vertebral.",
-      "“Pressão capilar” exercida pelo fluxo arterial na pele do sacro."
+      "Porque tem alcance muito curto, limitado às dimensões do núcleo atómico.",
+      "Porque só atua entre corpos com carga elétrica, e o corpo humano é neutro.",
+      "Porque é anulada pela gravidade terrestre, que é uma interação mais intensa.",
+      "Porque só existe no interior das estrelas e dos reatores nucleares."
     ],
     "correctIndex": 0,
-    "explanation": "A força nuclear forte é a «cola» que mantém os protões e os neutrões unidos no interior do núcleo atómico.",
+    "explanation": "A força nuclear forte mantém protões e neutrões unidos no núcleo, mas só atua a distâncias da ordem de 10<sup>-15</sup> m. Entre a mão do enfermeiro e a cadeira, a distâncias atómicas e maiores, atuam forças de contacto (normal e atrito), cuja origem microscópica é a força eletromagnética. Ser a mais intensa não significa atuar à escala dos objetos do dia a dia.",
     "distractorAnalysis": [
-      "Está incorreta: Não existe força de atrito em órbitas quânticas de eletrões.",
-      "Está incorreta: Tensão ligamentar é um esforço mecânico tissular macroscópico, não uma força subatómica nuclear.",
-      "Está incorreta: É uma pressão macroscópica sobre tecidos, e não uma força subatómica de coesão nuclear."
+      "Está incorreta: depender da carga elétrica é característico da força eletromagnética; a força forte atua também entre neutrões, que não têm carga.",
+      "Está incorreta: a gravidade é a mais fraca das quatro forças fundamentais e não anula as outras; a força forte não atua entre corpos separados por ter alcance muito curto.",
+      "Está incorreta: a força forte existe em todos os núcleos atómicos, incluindo os do corpo humano e da cadeira; simplesmente não atua entre corpos distintos."
     ],
-    "nursingApplication": "Permite aos alunos reter a função de coesão do núcleo atómico antes de abordarem a radioatividade médica."
+    "nursingApplication": "Ao mobilizar um utente, as forças de contacto que o enfermeiro aplica e sente são de origem eletromagnética, ao passo que a força nuclear forte só é relevante na estabilidade dos núcleos usados em medicina nuclear."
   },
   {
     "id": 1065,
@@ -2043,21 +2043,21 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1108,
     "topicId": 1,
-    "question": "Que princípio fundamental de física e segurança resulta da análise biomecânica do impacto durante uma travagem de emergência?",
+    "question": "Numa colisão, o corpo de um enfermeiro de 70 kg, preso pelo cinto de segurança, passa de 20 m/s a 0 m/s em 0,4 s (o cinto prolonga o tempo de paragem do corpo). Qual é a intensidade da força média que trava o seu corpo?",
     "options": [
-      "Que as três Leis de Newton atuam em conjunto e explicam os aspetos essenciais de uma colisão.",
-      "Que a 1.ª Lei se aplica sobretudo aos veículos, e a 2.ª sobretudo aos seres vivos.",
-      "Que a Biofísica se desliga da prática clínica e serve para cálculos teóricos.",
-      "Que a gravidade terrestre é anulada durante movimentos de travagem de emergência."
+      "1400 N",
+      "3500 N",
+      "560 N",
+      "686 N"
     ],
-    "correctIndex": 0,
-    "explanation": "O cenário da colisão mostra a união das 3 leis: a 1.ª Lei explica por que o corpo é projetado (inércia), a 2.ª Lei quantifica a magnitude da força de travagem (F = m · a) e a 3.ª Lei explica a deformação da divisória (ação-reação).",
+    "correctIndex": 1,
+    "explanation": "A desaceleração média do corpo é a = Δv / Δt = 20 / 0,4 = 50 m/s². Pela 2.ª Lei, F = m · a = 70 × 50 = 3500 N. Se o corpo parasse contra a divisória em 0,04 s (sem cinto), a desaceleração seria 500 m/s² e a força 35 000 N, dez vezes maior: para a mesma variação de velocidade, prolongar o tempo de paragem reduz a força média.",
     "distractorAnalysis": [
-      "Está incorreta: As leis de Newton aplicam-se a veículos e a seres vivos da mesma forma.",
-      "Está incorreta: A Biofísica está ligada à prática clínica, e não é apenas teórica.",
-      "Está incorreta: A gravidade não é anulada numa travagem; continua a atuar sobre o corpo."
+      "Está incorreta: resulta de multiplicar a massa pela velocidade (70 × 20 = 1400) sem dividir pelo tempo de paragem; a força depende da desaceleração, a = Δv / Δt.",
+      "Está incorreta: resulta de multiplicar a velocidade pelo tempo (20 × 0,4 = 8 m/s²) em vez de dividir, e depois 70 × 8 = 560 N; a desaceleração é 20 / 0,4 = 50 m/s².",
+      "Está incorreta: corresponde ao peso do enfermeiro (70 × 9,8 = 686 N); a força de travagem horizontal depende da desaceleração do corpo, não de g."
     ],
-    "nursingApplication": "Promove o pensamento crítico e a integração de conceitos biofísicos em incidentes do quotidiano profissional."
+    "nursingApplication": "Usar o cinto de segurança na célula sanitária da ambulância prolonga o tempo de paragem do corpo numa travagem brusca e reduz a força média que atua sobre o profissional."
   },
   {
     "id": 1109,
@@ -2670,21 +2670,21 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1141,
     "topicId": 1,
-    "question": "Qual é a definição de Alavanca atribuída a Arquimedes (século III a.C.)?",
+    "question": "Uma tesoura funciona como alavanca interfixa, com o eixo como fulcro. Ao cortar uma ligadura espessa, o enfermeiro coloca o material junto ao eixo, mantendo as mãos na mesma posição nos aros. Porque é que o corte exige menos força nas mãos?",
     "options": [
-      "Ponto fixo em torno do qual uma barra rígida pode girar.",
-      "Barra rígida que pode girar em torno de um ponto de apoio fixo.",
-      "Barra rígida que se desloca em translação, sem ponto de apoio fixo.",
-      "Estrutura elástica deformável que dissipa energia por histerese."
+      "Porque a resistência do material diminui quando fica junto ao eixo.",
+      "Porque o braço potente aumenta quando o material se aproxima do eixo.",
+      "Porque, assim, a tesoura passa a funcionar como alavanca inter-resistente.",
+      "Porque o braço resistente diminui, logo basta um momento potente menor."
     ],
-    "correctIndex": 1,
-    "explanation": "Definição: 'Arquimedes, século III a.C.: Barra rígida que pode girar em torno de um ponto de apoio fixo'.",
+    "correctIndex": 3,
+    "explanation": "Em equilíbrio, F<sub>Potente</sub> · b<sub>Potente</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub>, logo F<sub>Potente</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub> / b<sub>Potente</sub>. A força necessária para cortar o material é a mesma, mas aproximá-lo do eixo reduz b<sub>Resis.</sub>. Por exemplo, com as mãos a 6 cm do eixo, passar o material de 6 cm para 2 cm do eixo reduz a força potente para um terço.",
     "distractorAnalysis": [
-      "Está incorreta: Isso define o ponto de apoio (fulcro), que é apenas um dos componentes da alavanca.",
-      "Está incorreta: A alavanca roda em torno de um ponto de apoio fixo; não se desloca em translação.",
-      "Está incorreta: Corpos com histerese são viscoelásticos (Tópico 2), enquanto a alavanca de Arquimedes é modelada como barra rígida."
+      "Está incorreta: a força necessária para cortar o material (força resistente) não muda com a posição; o que muda é a distância dessa força ao fulcro, b<sub>Resis.</sub>.",
+      "Está incorreta: o braço potente é a distância do eixo às mãos, que não se alterou; só o braço resistente mudou.",
+      "Está incorreta: o eixo continua entre as mãos e o material, pelo que a tesoura continua a ser interfixa; a classe depende da posição relativa do fulcro, não das distâncias."
     ],
-    "nursingApplication": "Conceito estruturante para a biomecânica esquelética, onde os ossos funcionam como barras rígidas."
+    "nursingApplication": "Ao cortar ligaduras espessas ou um penso volumoso, colocar o material junto ao eixo da tesoura reduz a força exigida à mão e melhora o controlo do corte junto à pele do utente."
   },
   {
     "id": 1142,
@@ -2936,21 +2936,21 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1155,
     "topicId": 1,
-    "question": "Quais são os três ossos que se articulam no cotovelo, o fulcro da alavanca interpotente do bíceps?",
+    "question": "Num exercício de reabilitação, um utente estende o cotovelo contra a resistência de uma banda elástica presa ao punho. O tríceps braquial puxa o olecrânio do cúbito, que fica do lado oposto do eixo do cotovelo em relação ao punho. Que tipo de alavanca é?",
     "options": [
-      "Clavícula, Escápula e Esterno.",
-      "Fémur, Rótula e Tíbia.",
-      "Tarso, Metatarso e Falanges.",
-      "Úmero, Rádio e Cúbito."
+      "Interpotente, porque o tríceps se insere muito perto do cotovelo, como o bíceps.",
+      "Inter-resistente, porque a resistência da banda fica entre o músculo e o eixo.",
+      "Interfixa, porque o eixo do cotovelo fica entre a inserção e a resistência.",
+      "Não é alavanca, porque o tríceps empurra o osso em vez de o puxar."
     ],
-    "correctIndex": 3,
-    "explanation": "Na alavanca interpotente do cotovelo, o úmero (braço) articula com o rádio e o cúbito (antebraço); o bíceps insere-se na tuberosidade do rádio.",
+    "correctIndex": 2,
+    "explanation": "A classe de uma alavanca depende da posição relativa do fulcro, da força potente e da força resistente. Aqui o fulcro é o eixo do cotovelo, a força potente atua no olecrânio (atrás do eixo) e a resistência atua no punho (à frente do eixo). Como o fulcro fica entre as duas forças, é uma alavanca interfixa (1.ª classe). O mesmo cotovelo funciona como alavanca interpotente na flexão pelo bíceps: a classe depende do músculo e da carga, não só da articulação.",
     "distractorAnalysis": [
-      "Está incorreta: Estes são ossos da cintura escapular e tórax anterior, não do cotovelo e antebraço.",
-      "Está incorreta: Estes são ossos do membro inferior (articulação do joelho).",
-      "Está incorreta: Estes são ossos constituintes do pé humano."
+      "Está incorreta: a classe não depende da distância da inserção ao eixo, mas da ordem dos três elementos; no tríceps, o fulcro fica entre a força potente e a resistente.",
+      "Está incorreta: a banda está presa ao punho, na extremidade do antebraço, e não entre a inserção e o eixo; para ser inter-resistente, a resistência teria de ficar entre o fulcro e a força potente.",
+      "Está incorreta: os músculos só exercem tração; o tríceps puxa o olecrânio através do tendão e faz rodar o antebraço em torno do cotovelo, atuando como força potente."
     ],
-    "nursingApplication": "Integração anatómica direta com os conceitos de alavancas do aparelho locomotor."
+    "nursingApplication": "Na reabilitação do membro superior, prender a banda elástica mais perto do cotovelo reduz o braço resistente e a força exigida ao tríceps, permitindo progredir a carga de forma gradual."
   },
   {
     "id": 1156,

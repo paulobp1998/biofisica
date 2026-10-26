@@ -1530,21 +1530,21 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2281,
     "topicId": 2,
-    "question": "Qual é o significado da expressão latina «Ut tensio, sic vis», associada à lei de Hooke?",
+    "question": "Num ensaio com uma mola registaram-se os pares (força; alongamento): 4,0 N e 2,0 cm; 8,0 N e 4,0 cm; 12 N e 7,0 cm. O que se pode concluir à luz da lei de Hooke?",
     "options": [
-      "Quanto maior a força, menor a extensão.",
-      "A tensão é igual à força em todos os corpos.",
-      "Como a extensão, assim a força.",
-      "A força é independente da extensão."
+      "A lei verifica-se nos três ensaios, pois o alongamento aumenta com a força",
+      "A mola ficou mais rígida no último ensaio, porque k aumentou",
+      "O limite de proporcionalidade foi ultrapassado entre 8,0 N e 12 N",
+      "k vale 0,5 N/cm nos dois primeiros ensaios, calculado como ΔL / F"
     ],
     "correctIndex": 2,
-    "explanation": "«Ut tensio, sic vis» significa «como a extensão, assim a força»: a força elástica é proporcional à extensão do corpo.",
+    "explanation": "A lei de Hooke exige proporcionalidade, isto é, F / ΔL constante. Nos dois primeiros ensaios, k = 4,0 / 2,0 = 8,0 / 4,0 = 2,0 N/cm (200 N/m). Com 12 N, a proporcionalidade preveria ΔL = 12 / 2,0 = 6,0 cm, mas mediu-se 7,0 cm (F / ΔL ≈ 1,7 N/cm). A relação deixou de ser linear: entre 8,0 N e 12 N foi ultrapassado o limite de proporcionalidade.",
     "distractorAnalysis": [
-      "Está incorreta: inverte a proporcionalidade, pois na lei de Hooke a força cresce com a extensão.",
-      "Está incorreta: a tensão é força por unidade de área, e não é igual à força em todos os corpos.",
-      "Está incorreta: contradiz a lei de Hooke, que relaciona diretamente a força com a extensão."
+      "Está incorreta: não basta o alongamento crescer com a força; tem de crescer na mesma proporção, e com 12 N esperavam-se 6,0 cm e não 7,0 cm.",
+      "Está incorreta: no último ensaio F / ΔL = 12 / 7,0 ≈ 1,7 N/cm, menor do que 2,0 N/cm; a mola alongou mais do que o previsto, logo não ficou mais rígida.",
+      "Está incorreta: ΔL / F = 0,5 cm/N é o inverso da constante elástica; k = F / ΔL = 2,0 N/cm, ou seja, 200 N/m."
     ],
-    "nursingApplication": "Esta proporcionalidade simples é a base da leitura de um dinamómetro de mola usado em reabilitação, em que a força indicada cresce com a extensão imposta."
+    "nursingApplication": "Num dinamómetro de mola, a leitura só é fiável dentro da zona linear; acima do limite de proporcionalidade a mola alonga mais do que o previsto e a escala deixa de ser válida."
   },
   {
     "id": 2282,
@@ -1948,21 +1948,21 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2303,
     "topicId": 2,
-    "question": "Que percentagem aproximada do osso corresponde à fase mineral?",
+    "question": "Um osso de galinha é deixado vários dias em vinagre, que dissolve a fase mineral (hidroxiapatite) e preserva o colagénio. Como se comporta depois o osso ao ser dobrado?",
     "options": [
-      "≈ 22 %",
-      "≈ 90 %",
-      "≈ 69 %",
-      "≈ 9 %"
+      "Dobra-se com facilidade sem partir, pois o colagénio se mantém",
+      "Parte-se como vidro, porque o vinagre removeu o colagénio do osso",
+      "Fica mais rígido, porque perder mineral aumenta o módulo de Young",
+      "Não muda, porque a rigidez do osso se deve sobretudo ao colagénio"
     ],
-    "correctIndex": 2,
-    "explanation": "O osso tem cerca de 69 % de fase mineral (hidroxiapatite) e cerca de 22 % de matriz orgânica, dos quais cerca de 90 % são colagénio tipo I.",
+    "correctIndex": 0,
+    "explanation": "O osso é um material compósito: a fase mineral dá dureza, rigidez e resistência à compressão; o colagénio dá flexibilidade, tenacidade e resistência à tração. Sem mineral, o osso perde rigidez e dobra-se (pode até dar-se um nó) sem partir, porque o colagénio se mantém. A experiência inversa (calcinação, que destrói o colagénio) deixa um osso rígido mas quebradiço.",
     "distractorAnalysis": [
-      "Está incorreta: 22 % é o valor aproximado da matriz orgânica, e não o da fase mineral.",
-      "Está incorreta: 90 % é a fração do colagénio tipo I dentro da matriz orgânica, e não a percentagem de fase mineral no osso.",
-      "Está incorreta: 9 % é o valor aproximado que sobra depois de somar a fase mineral e a matriz orgânica."
+      "Está incorreta: o vinagre remove a fase mineral e não o colagénio; o comportamento quebradiço é o do osso calcinado, que perdeu o colagénio.",
+      "Está incorreta: é a fase mineral que dá rigidez ao osso; ao removê-la, o módulo de Young diminui e o osso torna-se mais flexível.",
+      "Está incorreta: a rigidez do osso deve-se sobretudo à fase mineral; o colagénio contribui para a tenacidade e a resistência à tração."
     ],
-    "nursingApplication": "Estas proporções permitem interpretar a densitometria óssea, que estima sobretudo o conteúdo mineral do osso de um utente em risco de osteoporose."
+    "nursingApplication": "Na osteomalacia, com mineralização deficiente, os ossos longos dos membros inferiores podem encurvar sob o peso do corpo, o que justifica vigiar deformidades e dor ao apoiar."
   },
   {
     "id": 2304,
@@ -1986,59 +1986,59 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2305,
     "topicId": 2,
-    "question": "Num osso longo, como se designa a região de osso compacto que rodeia a cavidade medular?",
+    "question": "A secção da diáfise de um fémur tem 5,0 cm² no total, dos quais 1,5 cm² são cavidade medular. Uma força de compressão de 2100 N atua ao longo do eixo. Admitindo que só o osso compacto suporta a carga, qual é a tensão média nele?",
     "options": [
-      "Epífise",
-      "Diáfise",
-      "Cartilagem articular",
-      "Plano neutro"
+      "4,2 × 10⁶ Pa",
+      "6,0 × 10⁶ Pa",
+      "1,4 × 10⁷ Pa",
+      "6,0 × 10⁴ Pa"
     ],
     "correctIndex": 1,
-    "explanation": "A diáfise é o corpo do osso longo, de osso compacto à volta da cavidade medular; as epífises são as extremidades.",
+    "explanation": "A carga é suportada pelo anel de osso compacto, cuja área é 5,0 − 1,5 = 3,5 cm² = 3,5 × 10⁻⁴ m² (1 cm² = 10⁻⁴ m²). Então σ = F / A = 2100 / 3,5 × 10⁻⁴ = 6,0 × 10⁶ Pa. A cavidade medular, com medula, não contribui para suportar a carga.",
     "distractorAnalysis": [
-      "Está incorreta: as epífises são as extremidades do osso longo, formadas por osso esponjoso com fina camada compacta.",
-      "Está incorreta: a cartilagem articular reveste as superfícies articulares e não rodeia a cavidade medular.",
-      "Está incorreta: o plano neutro é uma região de tensão normal nula na flexão, e não uma parte anatómica do osso."
+      "Está incorreta: resulta de usar a área total (5,0 cm²), incluindo a cavidade medular, que não suporta carga: 2100 / 5,0 × 10⁻⁴ = 4,2 × 10⁶ Pa.",
+      "Está incorreta: resulta de usar apenas a área da cavidade medular (1,5 cm²) em vez da área de osso compacto: 2100 / 1,5 × 10⁻⁴ = 1,4 × 10⁷ Pa.",
+      "Está incorreta: resulta de converter 1 cm² em 10⁻² m² em vez de 10⁻⁴ m², obtendo uma tensão 100 vezes menor."
     ],
-    "nursingApplication": "Identificar a diáfise é útil na descrição de fraturas do fémur ou da tíbia, frequentemente classificadas conforme o terço da diáfise atingido."
+    "nursingApplication": "Num idoso com cortical adelgaçada, a área de osso compacto é menor e a mesma carga da marcha produz maior tensão na diáfise, o que aumenta o risco de fratura numa queda."
   },
   {
     "id": 2306,
     "topicId": 2,
-    "question": "Como são constituídas as epífises dos ossos longos?",
+    "question": "As epífises dos ossos longos são formadas sobretudo por osso trabecular, revestido por uma fina camada cortical. Na marcha, uma região trabecular (E ≈ 5,0 × 10⁸ Pa) fica sujeita a uma tensão de compressão de 2,0 MPa. Qual é a deformação relativa, no regime elástico?",
     "options": [
-      "Por osso compacto espesso à volta de uma cavidade medular",
-      "Por duas lâminas de osso compacto com osso esponjoso entre elas",
-      "Apenas por osso esponjoso, sem qualquer revestimento",
-      "Por osso esponjoso revestido por uma fina camada de osso compacto"
+      "2,5 × 10²",
+      "1,0 × 10⁻⁴",
+      "4,0 × 10⁻⁶",
+      "4,0 × 10⁻³"
     ],
     "correctIndex": 3,
-    "explanation": "As epífises, extremidades dos ossos longos, têm osso esponjoso por dentro e uma fina camada de osso compacto por fora.",
+    "explanation": "Pela lei de Hooke generalizada, ε = σ / E = 2,0 × 10⁶ / 5,0 × 10⁸ = 4,0 × 10⁻³ (0,4 %). O osso cortical (E ≈ 2,0 × 10¹⁰ Pa) sob a mesma tensão deformar-se-ia apenas 1,0 × 10⁻⁴, ou seja, 40 vezes menos. Por ser menos rígido, o osso trabecular das epífises deforma-se mais e ajuda a amortecer os impactos transmitidos às articulações.",
     "distractorAnalysis": [
-      "Está incorreta: essa descrição corresponde à diáfise, e não às epífises.",
-      "Está incorreta: essa descrição corresponde aos ossos planos, como os do crânio.",
-      "Está incorreta: as epífises têm uma fina camada compacta a revesti-las, pelo que não são apenas esponjosas."
+      "Está incorreta: resulta de inverter a fórmula (E / σ); a deformação relativa é σ / E e, num osso, é um número muito menor do que 1.",
+      "Está incorreta: resulta de usar o módulo de Young do osso cortical (2,0 × 10¹⁰ Pa) em vez do do osso trabecular indicado no enunciado.",
+      "Está incorreta: resulta de converter 1 MPa em 10³ Pa em vez de 10⁶ Pa, obtendo uma deformação mil vezes menor."
     ],
-    "nursingApplication": "A estrutura esponjosa das epífises explica porque as fraturas perto das articulações, como a do colo do fémur em idosos, são frequentes quando há perda de trabéculas."
+    "nursingApplication": "Ajuda a compreender porque o calcâneo e as epífises, ricos em osso trabecular, absorvem o impacto da marcha, e porque a perda de trabéculas na osteoporose aumenta o risco de fratura nestas zonas."
   },
   {
     "id": 2307,
     "topicId": 2,
-    "question": "Qual das estruturas descreve os ossos planos, como os do crânio?",
+    "question": "Os ossos planos do crânio têm duas lâminas de osso compacto separadas por uma camada de osso esponjoso. Quando um impacto faz fletir o osso, porque é vantajosa esta organização?",
     "options": [
-      "Duas lâminas de osso compacto com osso esponjoso entre elas",
-      "Um tubo de osso compacto com cavidade medular central",
-      "Apenas osso esponjoso, sem lâminas compactas",
-      "Apenas osso compacto maciço, sem osso esponjoso"
+      "O osso compacto fica nas faces, onde a flexão gera mais tensão",
+      "O osso esponjoso fica no centro, onde a tensão de compressão é máxima",
+      "As lâminas compactas ficam no plano neutro, onde a tensão é máxima",
+      "O conjunto não se deforma, comportando-se como um sólido de Euclides"
     ],
     "correctIndex": 0,
-    "explanation": "Os ossos planos têm duas lâminas de osso compacto com osso esponjoso entre elas, o que dá leveza com boa resistência.",
+    "explanation": "Na flexão, uma face fica em tração e a outra em compressão, e a tensão normal aumenta com a distância ao plano neutro, que passa a meio da espessura. Colocar o osso compacto, rígido, nas faces, onde as tensões são maiores, e osso esponjoso, leve, no centro, onde as tensões são baixas, dá grande resistência à flexão com pouca massa: é o mesmo princípio dos ossos longos tubulares.",
     "distractorAnalysis": [
-      "Está incorreta: essa é a estrutura da diáfise dos ossos longos, e não a dos ossos planos.",
-      "Está incorreta: os ossos planos têm osso esponjoso entre as lâminas compactas, e não são apenas esponjosos.",
-      "Está incorreta: os ossos planos têm osso esponjoso entre duas lâminas compactas, e não são só compactos."
+      "Está incorreta: no centro da espessura passa o plano neutro, onde a tensão normal é nula ou mínima; as tensões máximas estão nas faces.",
+      "Está incorreta: as lâminas compactas estão nas faces, afastadas do plano neutro; e no plano neutro a tensão normal é nula, não máxima.",
+      "Está incorreta: nenhum osso real é indeformável; o osso flete sob o impacto, e a vantagem da estrutura é resistir à flexão com pouca massa."
     ],
-    "nursingApplication": "Esta estrutura em sanduíche ajuda a perceber como os ossos do crânio absorvem parte do impacto num traumatismo craniano de um utente."
+    "nursingApplication": "Num traumatismo craniano, a ausência de lesão na superfície externa não exclui fratura, porque a flexão para dentro coloca em tração a lâmina interna, onde o osso resiste menos."
   },
   {
     "id": 2308,
@@ -2119,21 +2119,21 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2312,
     "topicId": 2,
-    "question": "Qual é a função dos osteócitos no osso?",
+    "question": "Duas utentes de 60 anos com osteopenia querem preservar a massa óssea do colo do fémur: uma faz natação e a outra caminhada rápida diária. Segundo a lei de Wolff, qual atividade estimula mais o colo do fémur?",
     "options": [
-      "Formar osso novo orientado segundo as forças",
-      "Detetar as cargas mecânicas (mecanotransdução)",
-      "Reabsorver o osso",
-      "Produzir fibras elásticas na matriz óssea"
+      "A natação, porque a impulsão alivia a carga e o osso remodela-se em repouso",
+      "Ambas por igual, porque o estímulo ósseo depende só do esforço muscular",
+      "A caminhada, porque o peso do corpo impõe cargas repetidas ao fémur",
+      "Nenhuma, porque a partir dos 50 anos o osso deixa de responder à carga"
     ],
-    "correctIndex": 1,
-    "explanation": "Os osteócitos detetam as cargas mecânicas (mecanotransdução), os osteoblastos formam osso novo e os osteoclastos reabsorvem-no.",
+    "correctIndex": 2,
+    "explanation": "Pela lei de Wolff, o osso adapta a sua massa e arquitetura às tensões a que é sujeito: as deformações produzidas pela carga são detetadas pelas células ósseas (mecanotransdução) e estimulam a formação de osso. Na caminhada, o peso corporal e as forças musculares comprimem e fletem o colo do fémur em cada passo. Na água, a impulsão reduz muito a carga sobre o fémur, pelo que a natação, embora benéfica, dá pouco estímulo a este osso.",
     "distractorAnalysis": [
-      "Está incorreta: a formação de osso novo é feita pelos osteoblastos.",
-      "Está incorreta: a reabsorção do osso é feita pelos osteoclastos.",
-      "Está incorreta: as fibras elásticas são características das artérias elásticas, e não são produzidas pelos osteócitos para a matriz óssea."
+      "Está incorreta: a ausência de carga favorece a reabsorção óssea (como no acamamento); a impulsão reduz o estímulo mecânico em vez de o aumentar.",
+      "Está incorreta: o estímulo depende das tensões no próprio osso, que na caminhada incluem o peso do corpo, quase ausente na água.",
+      "Está incorreta: o osso continua a responder às cargas mecânicas ao longo da vida, embora a resposta seja menor com a idade."
     ],
-    "nursingApplication": "A deteção das cargas pelos osteócitos justifica a prescrição de exercício com carga na prevenção da perda de massa óssea em utentes idosos."
+    "nursingApplication": "Na educação de uma utente com osteopenia, o enfermeiro pode incentivar, conforme indicação clínica, atividade com carga como a marcha, além da natação."
   },
   {
     "id": 2313,
@@ -2252,21 +2252,21 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2319,
     "topicId": 2,
-    "question": "Uma fratura consolida com desvio do eixo. A remodelação reorienta as trabéculas segundo as novas forças, mas a deformidade permanece. Como se designa esta situação?",
+    "question": "Uma fratura da tíbia consolidou com desvio angular, de modo que o eixo do osso deixou de ser retilíneo. Ao apoiar o peso, que solicitação passa a surgir na diáfise, além da compressão?",
     "options": [
-      "Consolidação viciosa",
-      "Necrose avascular",
-      "Osteoporose",
-      "Mecanotransdução"
+      "Torção, porque o desvio angular faz rodar as secções em torno do eixo",
+      "Flexão, porque a carga deixa de atuar ao longo do eixo de todo o osso",
+      "Nenhuma, porque o peso é vertical e por isso só produz compressão",
+      "Cisalhamento puro, porque as camadas deslizam no antigo foco de fratura"
     ],
-    "correctIndex": 0,
-    "explanation": "Na consolidação viciosa, a arquitetura interna do osso adapta-se às novas forças, mas a deformidade mantém-se.",
+    "correctIndex": 1,
+    "explanation": "Num osso retilíneo, a carga do peso atua ao longo do eixo e produz sobretudo compressão. Com desvio angular, a linha de ação da carga afasta-se do eixo na zona encurvada e cria um momento fletor: o lado côncavo fica mais comprimido e o lado convexo fica em tração. Como o osso resiste menos à tração, esta flexão adicional é desfavorável, e a remodelação (lei de Wolff) adapta as trabéculas às novas forças.",
     "distractorAnalysis": [
-      "Está incorreta: na necrose avascular o osso morre por falta de irrigação, o que não está descrito.",
-      "Está incorreta: a osteoporose é uma perda de massa óssea, e não a consolidação com deformidade.",
-      "Está incorreta: a mecanotransdução é a deteção das cargas pelos osteócitos, e não uma complicação de fratura."
+      "Está incorreta: a torção exige um momento em torno do eixo longitudinal; um desvio angular no plano do osso desloca a carga do eixo e produz flexão.",
+      "Está incorreta: o peso ser vertical não basta; como o osso já não é retilíneo, a carga deixa de passar pelo eixo de cada secção e surge um momento fletor.",
+      "Está incorreta: o desvio do eixo não produz deslizamento entre camadas; a carga descentrada produz flexão, com tração de um lado e compressão do outro."
     ],
-    "nursingApplication": "O alinhamento correto do membro durante a imobilização, verificado pela equipa, ajuda a evitar uma consolidação viciosa."
+    "nursingApplication": "Uma tíbia consolidada em varo sobrecarrega o compartimento interno do joelho, o que justifica vigiar dor no joelho durante a reabilitação da marcha."
   },
   {
     "id": 2320,
@@ -2841,40 +2841,40 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2350,
     "topicId": 2,
-    "question": "Qual dos seguintes tipos de músculo é de controlo voluntário?",
+    "question": "Um tendão de Aquiles tem secção de 0,80 cm² e rompe quando a tensão de tração atinge cerca de 1,0 × 10⁸ Pa. Qual é, aproximadamente, a força de tração máxima que suporta?",
     "options": [
-      "Músculo estriado cardíaco",
-      "Músculo estriado esquelético",
-      "Músculo liso das paredes de órgãos ocos",
-      "Músculo liso das paredes dos vasos"
+      "8,0 × 10⁵ N",
+      "1,25 × 10¹² N",
+      "8,0 × 10¹ N",
+      "8,0 × 10³ N"
     ],
-    "correctIndex": 1,
-    "explanation": "O músculo estriado esquelético, como o bíceps, é voluntário; o cardíaco e o liso são involuntários.",
+    "correctIndex": 3,
+    "explanation": "Como σ = F / A, a força é F = σ · A. Convertendo a área: 0,80 cm² = 0,80 × 10⁻⁴ m². Então F = 1,0 × 10⁸ × 0,80 × 10⁻⁴ = 8,0 × 10³ N, o que corresponde a cerca de 10 vezes o peso de um adulto de 80 kg (≈ 784 N).",
     "distractorAnalysis": [
-      "Está incorreta: o músculo cardíaco é de controlo involuntário.",
-      "Está incorreta: o músculo liso das paredes dos órgãos ocos é de controlo involuntário.",
-      "Está incorreta: o músculo liso dos vasos é de controlo involuntário."
+      "Está incorreta: resulta de converter 1 cm² em 10⁻² m² em vez de 10⁻⁴ m², obtendo uma força 100 vezes maior.",
+      "Está incorreta: resulta de dividir a tensão pela área (σ / A) em vez de multiplicar; F = σ · A.",
+      "Está incorreta: resulta de tratar a área como se estivesse em mm² (1 mm² = 10⁻⁶ m²), obtendo uma força 100 vezes menor."
     ],
-    "nursingApplication": "Esta distinção é útil quando o enfermeiro avalia a capacidade de um utente mobilizar voluntariamente os membros após um acidente vascular cerebral."
+    "nursingApplication": "Explica porque o tendão de Aquiles pode romper num arranque brusco, como ao correr para apanhar um autocarro, quando a força no tendão chega a vários múltiplos do peso corporal."
   },
   {
     "id": 2351,
     "topicId": 2,
-    "question": "Por que razão as células do músculo estriado cardíaco estão ligadas entre si?",
+    "question": "Na mobilização passiva, o joelho de um utente é fletido até ao mesmo ângulo, primeiro de forma rápida e depois lenta. Os músculos e tendões resistem mais no movimento rápido. Que propriedade explica esta diferença?",
     "options": [
-      "Para que cada célula se contraia de modo independente das vizinhas",
-      "Para aumentar o módulo de Young de cada célula isolada",
-      "Para conduzirem o estímulo e se contraírem de forma coordenada",
-      "Para impedir que o miocárdio se estique durante o enchimento"
+      "A viscoelasticidade, porque a resistência depende da velocidade de deformação",
+      "A elasticidade de Hooke, porque a resistência depende só do alongamento final",
+      "A plasticidade, porque o tecido fica deformado de modo permanente no movimento",
+      "A indeformabilidade, porque os tecidos não chegam a deformar-se no movimento"
     ],
-    "correctIndex": 2,
-    "explanation": "As células do miocárdio estão ligadas para o estímulo passar de célula a célula, de modo que o músculo cardíaco se contraia como um conjunto coordenado.",
+    "correctIndex": 0,
+    "explanation": "Os músculos e tendões são viscoelásticos: têm uma componente elástica, que depende da deformação, e uma componente viscosa, em que a tensão é proporcional à velocidade de deformação. Com o mesmo ângulo final, a parte elástica é igual nos dois casos, mas no movimento rápido a componente viscosa acrescenta resistência. Por isso o mesmo alongamento custa mais quando é feito depressa.",
     "distractorAnalysis": [
-      "Está incorreta: a contração do miocárdio é coordenada, e não independente, para que o coração bombeie o sangue de forma eficaz.",
-      "Está incorreta: a ligação entre células não altera o módulo de Young de cada célula; serve para a transmissão do estímulo.",
-      "Está incorreta: o miocárdio distende-se durante o enchimento; a ligação das células tem a função de coordenar a contração."
+      "Está incorreta: num sólido de Hooke a força depende só do alongamento; como o ângulo final é o mesmo, não explicaria a diferença entre movimento rápido e lento.",
+      "Está incorreta: a plasticidade refere-se a deformação permanente acima de um limiar, o que não explica a diferença de resistência com a velocidade.",
+      "Está incorreta: os músculos e tendões alongam-se durante a flexão; um corpo indeformável é apenas um modelo teórico."
     ],
-    "nursingApplication": "Quando esta coordenação falha, surgem arritmias, que o enfermeiro pode identificar no eletrocardiograma de um utente monitorizado."
+    "nursingApplication": "Na mobilização passiva de um utente acamado, movimentos lentos e graduais reduzem a resistência dos tecidos e o desconforto do utente."
   },
   {
     "id": 2352,
@@ -3715,21 +3715,21 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2396,
     "topicId": 2,
-    "question": "Em que estruturas se encontra o músculo liso?",
+    "question": "Num corpo vertebral, a área de osso que suporta a carga diminui de 10 cm² para 7,0 cm² por osteoporose. A força de compressão mantém-se em 700 N. Qual passa a ser a tensão média no osso?",
     "options": [
-      "Nos músculos ligados aos ossos, como o bíceps",
-      "Na parede do coração (miocárdio)",
-      "Nos músculos da mastigação, como o masséter",
-      "Nas paredes de órgãos ocos e de sistemas tubulares"
+      "4,9 × 10⁵ Pa",
+      "7,0 × 10⁵ Pa",
+      "1,0 × 10⁶ Pa",
+      "1,0 × 10⁴ Pa"
     ],
-    "correctIndex": 3,
-    "explanation": "O músculo liso reveste as paredes de órgãos ocos e de sistemas tubulares, com contrações lentas, sustentadas e ondulatórias.",
+    "correctIndex": 2,
+    "explanation": "Com σ = F / A e 7,0 cm² = 7,0 × 10⁻⁴ m²: σ = 700 / 7,0 × 10⁻⁴ = 1,0 × 10⁶ Pa. Antes, com 10 cm², era 700 / 1,0 × 10⁻³ = 7,0 × 10⁵ Pa. Com a mesma força e menos osso, a tensão aumenta cerca de 1,4 vezes.",
     "distractorAnalysis": [
-      "Está incorreta: os músculos ligados aos ossos, como o bíceps, são de músculo estriado esquelético.",
-      "Está incorreta: o miocárdio é músculo estriado cardíaco.",
-      "Está incorreta: o masséter é um músculo estriado esquelético."
+      "Está incorreta: resulta de multiplicar a tensão inicial pela fração de osso restante (7,0 × 10⁵ × 0,7), como se menos osso desse menos tensão; a tensão é inversamente proporcional à área.",
+      "Está incorreta: é a tensão inicial, com 10 cm²; ignora que a mesma força passa a atuar sobre uma área menor.",
+      "Está incorreta: resulta de converter 1 cm² em 10⁻² m² em vez de 10⁻⁴ m², obtendo uma tensão 100 vezes menor."
     ],
-    "nursingApplication": "As contrações ondulatórias do músculo liso intestinal (peristaltismo) produzem os ruídos hidroaéreos que o enfermeiro ausculta ao avaliar o trânsito intestinal de um utente."
+    "nursingApplication": "Num idoso com osteoporose, uma carga do dia a dia, como levantar um saco de compras, produz maior tensão nas vértebras, o que ajuda a explicar as fraturas vertebrais por compressão."
   },
   {
     "id": 2397,

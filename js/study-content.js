@@ -174,20 +174,19 @@ const STUDY_BLOCKS = [
       { expr: 'F = k · ΔL', note: 'lei de Hooke para uma mola (k em N/m)' },
       { expr: 'σ = F / A', note: 'tensão mecânica (Pa)' },
       { expr: 'ε = ΔL / L₀', note: 'deformação relativa (sem unidades)' },
-      { expr: 'σ = E · ε', note: 'lei de Hooke generalizada (E em Pa)' },
-      { expr: 'k = E · A / L₀', note: 'relação entre k e E' }
+      { expr: 'σ = E · ε', note: 'lei de Hooke generalizada (E em Pa)' }
     ],
     example: 'Mola com k = 200 N/m e F = 10 N: ΔL = 10 / 200 = 0,05 m (5 cm). Força de 600 N sobre 2,0 × 10⁻⁴ m²: σ = 600 / 2,0×10⁻⁴ = 3,0 × 10⁶ Pa.',
     body: `
       <ul>
         <li><strong>Lei de Hooke (1678), «Ut tensio, sic vis»:</strong> o alongamento (ΔL) é proporcional à força aplicada, até ao limite de proporcionalidade (zona linear do regime elástico).</li>
-        <li><strong>k</strong> mede a rigidez de um <em>corpo</em> com geometria definida: depende do material, do comprimento e da secção.</li>
+        <li><strong>k</strong> (constante elástica, em N/m) mede a rigidez de um <em>corpo</em> concreto, como uma mola: quanto maior k, menor o alongamento para a mesma força.</li>
         <li><strong>E (módulo de Young)</strong> mede a rigidez do <em>material</em>, independentemente da forma. Ordem crescente: borracha &lt; osso &lt; vidro &lt; aço.</li>
         <li><strong>Valores de referência:</strong> aço 20 × 10¹⁰ Pa; vidro 7 × 10¹⁰ Pa; prata 7,5 × 10¹⁰ Pa; osso cortical (longitudinal) cerca de 2 × 10¹⁰ Pa (cerca de dez vezes menor que o aço); borracha 0,1 a 10 × 10⁷ Pa.</li>
         <li><strong>Gráfico σ–ε:</strong> na zona linear, o declive é E. Ultrapassado o limite de proporcionalidade, a relação deixa de ser linear, mas o corpo pode ainda recuperar a forma até ao limite elástico. Acima deste fica com deformação permanente e, por fim, rompe.</li>
         <li><strong>Comparação:</strong> com a mesma tensão, o material de menor E deforma mais. Com a mesma força, uma secção menor dá tensão maior.</li>
       </ul>`,
-    pitfall: 'k depende da geometria do corpo e E é uma propriedade do material. Ao converter: 1 cm² = 10⁻⁴ m², 1 MPa = 10⁶ Pa e 1 GPa = 10⁹ Pa. Não esquecer de passar cm para m.',
+    pitfall: 'k caracteriza um corpo concreto (em N/m) e E é uma propriedade do material (em Pa). Ao converter: 1 cm² = 10⁻⁴ m², 1 MPa = 10⁶ Pa e 1 GPa = 10⁹ Pa. Não esquecer de passar cm para m.',
     nursing: 'Nas próteses e fixações procura-se, quando possível, uma rigidez mais próxima da do osso, para reduzir a blindagem de tensões (as ligas de titânio, com cerca de 110 GPa, são várias vezes mais rígidas do que o osso cortical). As meias de compressão e as ligaduras elásticas funcionam no regime elástico: se forem esticadas em excesso, deixam de recuperar a forma.'
   },
   {
@@ -225,9 +224,9 @@ const CONCEPT_RANGES = {
 const T2_CONCEPT_ALLOCATION = (() => {
   const expand = list => list.flatMap(x => Array.isArray(x) ? Array.from({ length: x[1] - x[0] + 1 }, (_, i) => x[0] + i) : [x]);
   return {
-    't2-reologia': expand([[1, 11], [16, 19], 59, 60, 70, 74, 79, 83, 86, 96, [162, 168], 184, [192, 195]]),
+    't2-reologia': expand([[1, 11], [16, 19], 59, 60, 70, 74, 79, 83, 86, 96, 151, [162, 168], 184, [192, 195]]),
     't2-deformacoes': expand([15, 27, [41, 55], 57, 68, 69, 82, 126, [136, 144], 198]),
-    't2-osso': expand([14, [101, 121], 135, 145, [147, 161], [178, 183], 196, 197])
+    't2-osso': expand([14, [101, 121], 135, 145, [147, 150], [152, 161], [178, 183], 196, 197])
   };
 })();
 
@@ -297,7 +296,7 @@ const GLOSSARY = [
   { t: 'Tensão mecânica', a: ['σ', 'stress'], d: 'σ = F / A, em Pa: força por unidade de área da secção.', c: 't2-hooke' },
   { t: 'Deformação relativa', a: ['ε', 'deformação específica'], d: 'ε = ΔL / L₀: grandeza sem unidades.', c: 't2-hooke' },
   { t: 'Lei de Hooke', a: ['Ut tensio, sic vis', 'F = k·ΔL'], d: 'Até ao limite de proporcionalidade, a deformação é proporcional à força: F = k · ΔL, ou σ = E · ε.', c: 't2-hooke' },
-  { t: 'Constante elástica (k)', a: ['k', 'rigidez da mola'], d: 'Rigidez de um corpo concreto, em N/m. Depende do material e da geometria.', c: 't2-hooke' },
+  { t: 'Constante elástica (k)', a: ['k', 'rigidez da mola'], d: 'Rigidez de um corpo concreto (por exemplo, uma mola), em N/m: quanto maior k, menor o alongamento para a mesma força.', c: 't2-hooke' },
   { t: 'Módulo de Young (E)', a: ['E', 'módulo de elasticidade'], d: 'Rigidez do material, em Pa: σ = E · ε. Borracha &lt; osso &lt; vidro &lt; aço.', c: 't2-hooke' },
   { t: 'Compressão', d: 'Forças convergentes ao longo do eixo: o comprimento diminui e a secção aumenta.', c: 't2-deformacoes' },
   { t: 'Tração', a: ['esforço de tração'], d: 'Forças divergentes ao longo do eixo: o comprimento aumenta e a secção diminui.', c: 't2-deformacoes' },
