@@ -1245,7 +1245,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1066,
     "topicId": 1,
-    "question": "A leitura de uma balança hospitalar, que deteta a força que o utente exerce sobre a plataforma, depende diretamente de qual das 4 forças fundamentais?",
+    "question": "A leitura de uma balança hospitalar resulta do peso do utente. Este peso deve-se a qual das 4 forças fundamentais?",
     "options": [
       "Da força nuclear forte que une o núcleo das células da pele.",
       "Da força nuclear fraca que causa decaimento radioativo ósseo.",
@@ -2282,7 +2282,7 @@ const TOPIC_1_QUESTIONS = [
     "explanation": "A ampla base delimitada pelos pés e assento e o centro de gravidade rebaixado garantem que qualquer pequena perturbação mantenha a linha de gravidade dentro da base, restaurando a postura estável.",
     "distractorAnalysis": [
       "Está incorreta: A gravidade continua a atuar sobre o corpo; é equilibrada pelas reações do assento e do chão.",
-      "Está incorreta: A força normal do assento é menor do que o peso; o peso é equilibrado pelas reações do chão, do assento e do encosto.",
+      "Está incorreta: a força normal do assento é menor do que o peso, porque parte do peso é suportada pelo chão através dos pés.",
       "Está incorreta: A inércia é uma propriedade da massa e não se perde ao encostar-se."
     ],
     "nursingApplication": "Justifica a recomendação ergonómica de sentar doentes em poltronas estáveis em vez de mantê-los na beira da cama."
@@ -2385,7 +2385,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1126,
     "topicId": 1,
-    "question": "Se uma maca for deixada numa rampa inclinada com os travões soltos e se desprezarem o atrito e a resistência ao rolamento (F<sub>a</sub> = 0 N):",
+    "question": "Se uma maca for deixada numa rampa inclinada com os travões soltos, desprezando o atrito e a resistência ao rolamento (F<sub>a</sub> = 0 N):",
     "options": [
       "A maca fica parada, em equilíbrio indiferente, sem tendência para descer.",
       "A maca sobe a rampa, impulsionada pela componente normal P<sub>n</sub>.",
@@ -2503,15 +2503,15 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "O momento da força tende a fazer o corpo rodar.",
       "O momento da força faz o corpo deslocar-se em linha reta.",
-      "A força de rotação gera calor, sem produzir movimento.",
-      "O atrito dispensa o fulcro na alavanca."
+      "O momento da força depende apenas da intensidade da força.",
+      "O momento da força é máximo quando a linha de ação passa pelo eixo."
     ],
     "correctIndex": 0,
     "explanation": "Um momento resultante não nulo altera o estado de rotação do corpo em torno do eixo; a força resultante, por sua vez, altera a translação.",
     "distractorAnalysis": [
       "Está incorreta: A translação em linha reta resulta da força resultante; o momento da força produz rotação.",
-      "Está incorreta: A força de rotação produz movimento de rotação, e não apenas calor.",
-      "Está incorreta: O atrito não dispensa o fulcro; a alavanca continua a girar em torno do ponto de apoio."
+      "Está incorreta: o momento depende também do braço (M = F · b); a mesma força produz momentos diferentes a distâncias diferentes do eixo.",
+      "Está incorreta: se a linha de ação passa pelo eixo, o braço é nulo e o momento da força é zero."
     ],
     "nursingApplication": "Permite associar imediatamente qualquer movimento de flexão, extensão ou rotação articular ao momento de força."
   },
@@ -3140,7 +3140,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: 4900 N·m seria o momento se o braço fosse de 1 metro.",
       "Está incorreta: 16 333 N·m resultaria de dividir a força pelo braço (4900 / 0,3)."
     ],
-    "nursingApplication": "Mostra que uma carga elevada próxima do fulcro pode gerar um momento moderado, como em elevadores de doentes com braço curto."
+    "nursingApplication": "Mostra que aproximar a carga do fulcro reduz o momento que ela produz, como em elevadores de doentes com braço curto."
   },
   {
     "id": 1166,

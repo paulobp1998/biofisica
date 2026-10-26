@@ -328,7 +328,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: nenhum dos dois recupera a forma original quando a tensão é removida; esse comportamento é o dos corpos elásticos.",
       "Está incorreta: a proporcionalidade simples sem dependência do tempo é a do sólido de Hooke, que não se aplica a nenhum dos dois."
     ],
-    "nursingApplication": "Explica porque é que um xarope escorre da colher apenas sob o seu próprio peso, enquanto a argila só muda de forma quando se aplica uma força suficiente."
+    "nursingApplication": "Ajuda a distinguir uma pomada espessa, que só se espalha quando se aplica força suficiente, de um xarope, que escorre sob o próprio peso."
   },
   {
     "id": 2218,
