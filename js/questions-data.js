@@ -33,7 +33,7 @@ const TOPICS_DATA = [
     title: "Leis Fundamentais da Hidrostática",
     shortTitle: "Hidrostática",
     icon: "💧",
-    description: "Pressão hidrostática fundamental (P = ρ·g·h), Princípio de Pascal, Princípio de Arquimedes e aplicações clínicas à pressão arterial e venosa, coluna hidrostática gravitacional, fluidoterapia e punções."
+    description: "Pressão hidrostática fundamental (Δp = ρ·g·h), Princípio de Pascal, Princípio de Arquimedes e aplicações clínicas à pressão arterial e venosa, coluna hidrostática gravitacional, fluidoterapia e punções."
   },
   {
     id: 4,
@@ -140,15 +140,15 @@ const TOPIC_SUMMARIES = [
     title: "Tópico 3: Leis Fundamentais da Hidrostática",
     summary: `
       <ul>
-        <li><strong>Conceito Fundamental de Pressão:</strong> Relação entre a intensidade da força perpendicular aplicada e a área da superfície de contacto: <strong>P = F / A</strong>. Unidade no SI: N/m². Em contextos clínicos utiliza-se frequentemente o milímetro de mercúrio (1 mmHg ≈ 133,32 N/m²) ou o centímetro de água (1 cmH₂O ≈ 98,06 N/m²).</li>
-        <li><strong>Lei Fundamental da Hidrostática (Pressão Hidrostática, P = ρ · g · h):</strong> A pressão no seio de um líquido incompressível em repouso aumenta linearmente com a profundidade (h), sendo diretamente proporcional à densidade do fluido (ρ), à aceleração da gravidade (g) e à altura da coluna líquida.</li>
+        <li><strong>Conceito Fundamental de Pressão:</strong> Relação entre a intensidade da força perpendicular aplicada e a área da superfície de contacto: <strong>p = F / A</strong>. Unidade no SI: N/m². Em contextos clínicos utiliza-se frequentemente o milímetro de mercúrio (1 mmHg ≈ 133,32 N/m²) ou o centímetro de água (1 cmH₂O ≈ 98,06 N/m²).</li>
+        <li><strong>Lei Fundamental da Hidrostática (Pressão Hidrostática, Δp = ρ · g · h):</strong> A pressão no seio de um líquido incompressível em repouso aumenta linearmente com a profundidade: a diferença de pressão entre dois pontos separados por um desnível h é Δp = ρ · g · h, proporcional à massa volúmica do fluido (ρ), à aceleração da gravidade (g) e ao desnível (h).</li>
         <li><strong>Princípio de Pascal:</strong> O acréscimo de pressão aplicado a um ponto de um fluido incompressível em repouso transmite-se integralmente e com igual intensidade a todos os pontos do líquido e às paredes do recipiente que o contém. Fundamenta o funcionamento de sistemas hidráulicos, seringas médicas e bombas de infusão.</li>
         <li><strong>Princípio de Arquimedes (Impulsão):</strong> Qualquer corpo imerso total ou parcialmente num fluido em repouso sofre a ação de uma força vertical de baixo para cima (impulsão, I = ρ<sub>fluido</sub> · V<sub>deslocado</sub> · g) igual ao peso do volume de fluido deslocado. Aplicação em hidroterapia e reabilitação motora para diminuir a sobrecarga mecânica articular dos utentes.</li>
         <li><strong>Aplicações Clínicas aos Cuidados de Enfermagem:</strong>
           <ul>
-            <li><em>Efeito da Gravidade na Pressão Venosa:</em> Em decúbito dorsal horizontal, a pressão venosa sistémica é homogénea (~5 a 10 mmHg). Em ortostatismo (em pé), a coluna hidrostática de sangue (~1,3 m) adiciona um gradiente hidrostático (P = ρ·g·h) que eleva a pressão venosa nos membros inferiores para cerca de 90 mmHg, predispondo a estase venosa, edema e hipotensão ortostática na bipedestação súbita.</li>
-            <li><em>Altura da Bolsa de Perfusão Intravenosa:</em> Para que uma infusão endovenosa ocorra por gravidade, a bolsa de soro deve ser suspensa a uma altura vertical (~80 a 100 cm acima do ponto de punção venosa) cuja pressão hidrostática exercida (ΔP = ρ·g·h) supere a pressão intravascular da veia periférica (~10 a 15 mmHg), garantindo o fluxo anterógrado e prevenindo o refluxo de sangue na linha de infusão.</li>
-            <li><em>Dinâmica de Pressão em Seringas de Menor Calibre:</em> Pela relação P = F / A, para uma mesma força manual (F) exercida pelo polegar do enfermeiro no êmbolo, quanto menor for a área transversal (A) do êmbolo, inversamente maior será a pressão gerada no líquido (a pressão é inversamente proporcional à área). Por isso, uma seringa pequena (ex: 1 mL ou 3 mL) gera pressões bastante superiores às de uma seringa de 10 mL com a mesma força, o que obriga a cuidado redobrado na lavagem (*flush*) de acessos vasculares centrais, em que se recomenda seringas de 10 mL ou superiores, conforme o protocolo da instituição.</li>
+            <li><em>Efeito da Gravidade na Pressão Venosa:</em> Em decúbito dorsal horizontal, quase não há diferenças hidrostáticas entre a cabeça e os pés: a pressão venosa periférica ronda 10 a 15 mmHg e desce até cerca de 0 a 5 mmHg na aurícula direita. Em ortostatismo (em pé), a coluna hidrostática de sangue (~1,3 m) adiciona um gradiente hidrostático (Δp = ρ·g·h) que eleva a pressão venosa nos membros inferiores para cerca de 90 mmHg, predispondo a estase venosa, edema e hipotensão ortostática na bipedestação súbita.</li>
+            <li><em>Altura da Bolsa de Perfusão Intravenosa:</em> Para que uma infusão endovenosa ocorra por gravidade, a bolsa de soro deve ser suspensa a uma altura vertical (~80 a 100 cm acima do ponto de punção venosa) cuja pressão hidrostática exercida (Δp = ρ·g·h) supere a pressão intravascular da veia periférica (~10 a 15 mmHg), garantindo o fluxo anterógrado e prevenindo o refluxo de sangue na linha de infusão.</li>
+            <li><em>Dinâmica de Pressão em Seringas de Menor Calibre:</em> Pela relação p = F / A, para uma mesma força manual (F) exercida pelo polegar do enfermeiro no êmbolo, quanto menor for a área transversal (A) do êmbolo, inversamente maior será a pressão gerada no líquido (a pressão é inversamente proporcional à área). Por isso, uma seringa pequena (ex: 1 mL ou 3 mL) gera pressões bastante superiores às de uma seringa de 10 mL com a mesma força, o que obriga a cuidado redobrado na lavagem (*flush*) de acessos vasculares centrais, em que se recomenda seringas de 10 mL ou superiores, conforme o protocolo da instituição.</li>
           </ul>
         </li>
       </ul>
@@ -165,7 +165,7 @@ const TOPIC_SUMMARIES = [
             <li><em>Turbulento:</em> Formação de turbilhões e vórtices desordenados. Ruidoso e com grande dissipação de energia sob forma de calor e som.</li>
           </ul>
         </li>
-        <li><strong>Número de Reynolds (Re = (ρ · v · d) / η):</strong> Adimensional. Re > 2000 favorece a turbulência. Aumenta com maior velocidade (v), maior diâmetro (d), maior densidade (ρ) e <em>menor viscosidade (η)</em>.</li>
+        <li><strong>Número de Reynolds (Re = (ρ · v · d) / η):</strong> Adimensional. Re > 2000 favorece a turbulência. Aumenta com maior velocidade (v), maior diâmetro (d), maior massa volúmica (ρ) e <em>menor viscosidade (η)</em>.</li>
         <li><strong>Viscosidade Sanguínea e Hematócrito:</strong> A viscosidade do sangue é ~3 a 4 vezes superior à da água, dependendo essencialmente do hematócrito (volume globular) e proteínas plasmáticas.</li>
         <li><strong>Lei de Poiseuille (R ∝ 1 / r⁴):</strong> A resistência vascular depende inversamente da 4.ª potência do raio. Reduzir o raio a metade aumenta a resistência vascular periférica 16 vezes!</li>
         <li><strong>Ruídos de Korotkoff na Medição da PA:</strong> Quando a braçadeira do esfigmomanómetro comprime a artéria, o jato de sangue a alta velocidade gera turbulência audível no estetoscópio entre a pressão sistólica e diastólica.</li>
@@ -196,7 +196,7 @@ const TOPIC_SUMMARIES = [
     summary: `
       <ul>
         <li><strong>Constituição do Átomo:</strong> Núcleo com protões (Z, carga +1) e neutrões (N, neutros). Número de Massa A = Z + N. Eletrões na nuvem orbital.</li>
-        <li><strong>Força Nuclear Forte:</strong> Força extremamente intensa de curto alcance (< 10⁻¹³ cm) que mantém os nucleões unidos, superando a potente repulsão eletrostática de Coulomb entre protões. É atrativa e independente da carga.</li>
+        <li><strong>Força Nuclear Forte:</strong> Força extremamente intensa e de curto alcance (da ordem de 10⁻¹⁵ m, cerca de 1 a 3 fm) que mantém os nucleões unidos, superando a potente repulsão eletrostática de Coulomb entre protões. É atrativa a essas distâncias (torna-se repulsiva a distâncias ainda menores) e independente da carga.</li>
         <li><strong>Defeito de Massa e Energia de Ligação (E = Δm · c²):</strong> A massa de um núcleo ligado é menor que a soma dos nucleões livres. A energia equivalente é a energia necessária para desagregar o núcleo.</li>
         <li><strong>Estabilidade Nuclear:</strong> Em átomos com Z > 20, a relação de estabilidade N/Z cresce até ~1,5 para fornecer atração nuclear forte adicional contra a repulsão elétrica dos protões.</li>
         <li><strong>Postulados de Bohr:</strong> Transições eletrónicas entre órbitas quantizadas emitem ou absorvem fotões de energia E = h · f. Saltos para camadas internas no ânodo geram Raios X Característicos.</li>
@@ -229,9 +229,9 @@ const TOPIC_SUMMARIES = [
         </li>
         <li><strong>Radioisótopos Clínicos Chave:</strong>
           <ul>
-            <li><strong>Iodo-131 (¹³¹I):</strong> Emissor beta e gama. Tratamento e rastreio de cancro da tiroide e hipertiroidismo. Requer isolamento do doente e gestão estrita de urina/saliva.</li>
+            <li><strong>Iodo-131 (¹³¹I):</strong> Emissor beta e gama. Tratamento (ablação) e seguimento do carcinoma diferenciado da tiroide e tratamento do hipertiroidismo. Requer isolamento do doente e gestão estrita de urina/saliva.</li>
             <li><strong>Tecnécio-99m (⁹⁹ᵐTc):</strong> Emissor gama puro ideal (140 keV), meia-vida perfeita de 6 horas, sem partículas beta lesivas. Padrão de ouro em cintigrafias diagnósticas.</li>
-            <li><strong>Flúor-18 (¹⁸F / ¹⁸F-FDG):</strong> Emissor de positrões (β⁺). A aniquilação com eletrões teciduais produz dois fotões opostos de 511 keV para tomografia PET no rastreio oncológico.</li>
+            <li><strong>Flúor-18 (¹⁸F / ¹⁸F-FDG):</strong> Emissor de positrões (β⁺). A aniquilação com eletrões teciduais produz dois fotões opostos de 511 keV para tomografia PET no diagnóstico, estadiamento e avaliação da resposta ao tratamento oncológico.</li>
           </ul>
         </li>
       </ul>

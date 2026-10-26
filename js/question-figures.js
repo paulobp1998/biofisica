@@ -54,6 +54,8 @@ const QUESTION_FIGURES = (() => {
   // Alavanca de 1.ª, 2.ª ou 3.ª classe. a, r: braços potente e resistente (só para a proporção do desenho).
   function lever(s) {
     const cls = s.cls, a = s.a, rr = s.r;
+    // Na 2.ª classe a resistência fica entre o apoio e a potência (r < a); na 3.ª é o contrário (a < r)
+    if ((cls === 2 && rr >= a) || (cls === 3 && a >= rr)) console.warn('Esquema de alavanca incoerente com a classe', s);
     const left = cls === 1 ? -a : 0;
     const span = (cls === 1 ? rr : Math.max(a, rr)) - left;
     const u = 250 / span, x0 = 55;
@@ -141,14 +143,16 @@ const QUESTION_FIGURES = (() => {
     return svg(360, y + 4, s.alt || 'Barra sujeita a uma força axial', b);
   }
 
-  // Viga apoiada nas duas extremidades com uma carga.
+  // Viga apoiada nas duas extremidades com uma carga. Com a carga fora do centro as reações
+  // são diferentes: usar reactL e reactR (react serve só para a carga ao centro).
   function beam(s) {
     const xL = 60, xR = 300, xc = s.pos ? xL + (xR - xL) * s.pos : 180;
     let b = `<rect x="40" y="70" width="280" height="8" rx="2" class="f-body"/>`;
     b += `<polygon points="${xL},78 ${xL - 10},96 ${xL + 10},96" class="f-fill-neu"/><polygon points="${xR},78 ${xR - 10},96 ${xR + 10},96" class="f-fill-neu"/>`;
     b += arrow(xc, 22, xc, 68, 'res') + text(xc, 14, s.load);
-    b += arrow(xL, 140, xL, 100, 'ok') + text(xL, 154, s.react);
-    b += arrow(xR, 140, xR, 100, 'ok') + text(xR, 154, s.react);
+    const offCentre = s.pos !== undefined && s.pos !== 0.5;
+    b += arrow(xL, 140, xL, 100, 'ok') + text(xL, 154, s.reactL || (offCentre ? 'R<sub>1</sub>' : s.react));
+    b += arrow(xR, 140, xR, 100, 'ok') + text(xR, 154, s.reactR || (offCentre ? 'R<sub>2</sub>' : s.react));
     return svg(360, 162, s.alt || 'Viga apoiada nas duas extremidades com uma carga', b);
   }
 

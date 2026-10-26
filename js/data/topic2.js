@@ -176,7 +176,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: o corpo viscoso flui sob qualquer tensão, não existindo um comportamento elástico para pequenas tensões.",
       "Está incorreta: um sólido indeformável nunca se deforma, o que contradiz a deformação permanente observada na massa."
     ],
-    "nursingApplication": "Um líquido espessado para disfagia com consistência de pudim mantém a forma na colher, mas flui quando a língua o pressiona com força suficiente, um comportamento com tensão mínima de escoamento."
+    "nursingApplication": "Um líquido extremamente espessado (nível 4 da IDDSI, antes designado «pudim») mantém a forma na colher, mas flui quando a língua o pressiona com força suficiente, um comportamento com tensão mínima de escoamento."
   },
   {
     "id": 2210,
@@ -309,7 +309,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: a recuperação completa corresponde a um sólido elástico, e não a um fluido viscoso.",
       "Está incorreta: a oscilação em torno de um valor fixo é típica de um oscilador elástico, e não de um corpo viscoso."
     ],
-    "nursingApplication": "Ao preparar um líquido espessado até à consistência de mel para um doente com disfagia, o enfermeiro tem em conta que o fluido continua a escoar sob a ação do seu peso, apenas mais devagar do que a água, o que dá mais tempo para a deglutição."
+    "nursingApplication": "Ao preparar um líquido espessado de nível 3 da IDDSI (moderadamente espessado, antes designado «mel») para um doente com disfagia, o enfermeiro tem em conta que o fluido continua a escoar sob a ação do seu peso, apenas mais devagar do que a água, o que dá mais tempo para a deglutição."
   },
   {
     "id": 2217,
@@ -382,7 +382,7 @@ const TOPIC_2_QUESTIONS = [
     "explanation": "Na zona de proporcionalidade a tensão é proporcional à deformação relativa, com E como constante de proporcionalidade: σ = E · ε.",
     "distractorAnalysis": [
       "Está incorreta: o módulo de Young é E = σ / ε, pelo que a tensão é o produto E · ε; dividir E por ε não dá a tensão.",
-      "Está incorreta: a deformação relativa é ε = σ / E; multiplicar E por σ inverte a relação e daria uma grandeza em N/m²², e não uma deformação sem unidades.",
+      "Está incorreta: a deformação relativa é ε = σ / E; multiplicar E por σ inverte a relação e daria uma grandeza em N²/m⁴, e não uma deformação sem unidades.",
       "Está incorreta: a tensão não é o quociente de ε por E, mas sim o produto de E pela deformação relativa."
     ],
     "nursingApplication": "Permite estimar a tensão num tendão ou num osso a partir da deformação medida, o que é uma base para compreender as cargas suportadas pelo aparelho locomotor."
@@ -2450,11 +2450,11 @@ const TOPIC_2_QUESTIONS = [
       "Cisalhamento puro, porque as camadas deslizam no antigo foco de fratura"
     ],
     "correctIndex": 1,
-    "explanation": "Num osso retilíneo, a carga do peso atua ao longo do eixo e produz sobretudo compressão. Com desvio angular, a linha de ação da carga afasta-se do eixo na zona encurvada e cria um momento fletor: o lado côncavo fica mais comprimido e o lado convexo fica em tração. Como o osso resiste menos à tração, esta flexão adicional é desfavorável, e a remodelação (lei de Wolff) tende a reforçar a cortical do lado côncavo, mais comprimido.",
+    "explanation": "Num osso retilíneo, a carga do peso atua ao longo do eixo e produz sobretudo compressão. Com desvio angular, a linha de ação da carga afasta-se do eixo na zona encurvada e cria um momento fletor: o lado côncavo fica mais comprimido e o lado convexo fica menos comprimido ou mesmo em tração. Como o osso resiste menos à tração, esta flexão adicional é desfavorável, e a remodelação (lei de Wolff) tende a reforçar a cortical do lado côncavo, mais comprimido.",
     "distractorAnalysis": [
       "Está incorreta: a torção exige um momento em torno do eixo longitudinal; um desvio angular no plano do osso desloca a carga do eixo e produz flexão.",
       "Está incorreta: o peso ser vertical não basta; como o osso já não é retilíneo, a carga deixa de passar pelo eixo de cada secção e surge um momento fletor.",
-      "Está incorreta: o desvio do eixo não produz deslizamento entre camadas; a carga descentrada produz flexão, com tração de um lado e compressão do outro."
+      "Está incorreta: o desvio do eixo não produz deslizamento entre camadas; a carga descentrada produz flexão, que aumenta a compressão de um lado e a reduz (podendo gerar tração) do outro."
     ],
     "nursingApplication": "Uma tíbia consolidada em varo sobrecarrega o compartimento interno do joelho, o que justifica vigiar dor no joelho durante a reabilitação da marcha."
   },
@@ -3641,7 +3641,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: usa a área como 3,0 m², esquecendo-se de converter cm² em m².",
       "Está incorreta: divide a tensão pela área (σ / S), em vez de multiplicar."
     ],
-    "nursingApplication": "Este cálculo mostra que um tecido rico em colagénio, como um ligamento ou um tendão, suporta forças de milhares de newtons com deformações de apenas 1 %."
+    "nursingApplication": "Este cálculo mostra que um tecido rico em colagénio e de secção ampla pode suportar forças de milhares de newtons com deformações relativas pequenas, o que ajuda a compreender a resistência de tendões e ligamentos às cargas da marcha."
   },
   {
     "id": 2375,
