@@ -2019,7 +2019,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: resulta de usar o módulo de Young do osso cortical (2,0 × 10¹⁰ Pa) em vez do do osso trabecular indicado no enunciado.",
       "Está incorreta: resulta de converter 1 MPa em 10³ Pa em vez de 10⁶ Pa, obtendo uma deformação mil vezes menor."
     ],
-    "nursingApplication": "Ajuda a compreender porque o calcâneo e as epífises, ricos em osso trabecular, absorvem o impacto da marcha, e porque a perda de trabéculas na osteoporose aumenta o risco de fratura nestas zonas."
+    "nursingApplication": "Na osteoporose, a perda de trabéculas afeta sobretudo regiões ricas em osso trabecular, como os corpos vertebrais e o colo do fémur, o que explica a frequência de fraturas nestes locais após quedas ou cargas do dia a dia."
   },
   {
     "id": 2307,
@@ -2038,7 +2038,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: as lâminas compactas estão nas faces, afastadas do plano neutro; e no plano neutro a tensão normal é nula, não máxima.",
       "Está incorreta: nenhum osso real é indeformável; o osso flete sob o impacto, e a vantagem da estrutura é resistir à flexão com pouca massa."
     ],
-    "nursingApplication": "Num traumatismo craniano, a ausência de lesão na superfície externa não exclui fratura, porque a flexão para dentro coloca em tração a lâmina interna, onde o osso resiste menos."
+    "nursingApplication": "Num traumatismo craniano, a ausência de lesão na tábua externa não exclui fratura, porque a flexão para dentro coloca em tração a lâmina interna, e o osso resiste menos à tração do que à compressão."
   },
   {
     "id": 2308,
@@ -2260,7 +2260,7 @@ const TOPIC_2_QUESTIONS = [
       "Cisalhamento puro, porque as camadas deslizam no antigo foco de fratura"
     ],
     "correctIndex": 1,
-    "explanation": "Num osso retilíneo, a carga do peso atua ao longo do eixo e produz sobretudo compressão. Com desvio angular, a linha de ação da carga afasta-se do eixo na zona encurvada e cria um momento fletor: o lado côncavo fica mais comprimido e o lado convexo fica em tração. Como o osso resiste menos à tração, esta flexão adicional é desfavorável, e a remodelação (lei de Wolff) adapta as trabéculas às novas forças.",
+    "explanation": "Num osso retilíneo, a carga do peso atua ao longo do eixo e produz sobretudo compressão. Com desvio angular, a linha de ação da carga afasta-se do eixo na zona encurvada e cria um momento fletor: o lado côncavo fica mais comprimido e o lado convexo fica em tração. Como o osso resiste menos à tração, esta flexão adicional é desfavorável, e a remodelação (lei de Wolff) tende a reforçar a cortical do lado côncavo, mais comprimido.",
     "distractorAnalysis": [
       "Está incorreta: a torção exige um momento em torno do eixo longitudinal; um desvio angular no plano do osso desloca a carga do eixo e produz flexão.",
       "Está incorreta: o peso ser vertical não basta; como o osso já não é retilíneo, a carga deixa de passar pelo eixo de cada secção e surge um momento fletor.",
@@ -2855,7 +2855,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: resulta de dividir a tensão pela área (σ / A) em vez de multiplicar; F = σ · A.",
       "Está incorreta: resulta de tratar a área como se estivesse em mm² (1 mm² = 10⁻⁶ m²), obtendo uma força 100 vezes menor."
     ],
-    "nursingApplication": "Explica porque o tendão de Aquiles pode romper num arranque brusco, como ao correr para apanhar um autocarro, quando a força no tendão chega a vários múltiplos do peso corporal."
+    "nursingApplication": "Explica porque o tendão de Aquiles pode romper num arranque brusco, como ao correr para apanhar um autocarro, sobretudo se estiver degenerado (tendinopatia), quando a força no tendão se aproxima de cerca de 10 vezes o peso corporal."
   },
   {
     "id": 2351,

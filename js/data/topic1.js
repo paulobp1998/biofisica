@@ -1221,7 +1221,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: a gravidade é a mais fraca das quatro forças fundamentais e não anula as outras; a força forte não atua entre corpos separados por ter alcance muito curto.",
       "Está incorreta: a força forte existe em todos os núcleos atómicos, incluindo os do corpo humano e da cadeira; simplesmente não atua entre corpos distintos."
     ],
-    "nursingApplication": "Ao mobilizar um utente, as forças de contacto que o enfermeiro aplica e sente são de origem eletromagnética, ao passo que a força nuclear forte só é relevante na estabilidade dos núcleos usados em medicina nuclear."
+    "nursingApplication": "Ao mobilizar um utente, as forças de contacto que o enfermeiro aplica e sente são de origem eletromagnética; a força nuclear forte atua apenas no interior dos núcleos atómicos, incluindo os dos radionuclídeos usados em medicina nuclear."
   },
   {
     "id": 1065,
@@ -2043,21 +2043,21 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1108,
     "topicId": 1,
-    "question": "Numa colisão, o corpo de um enfermeiro de 70 kg, preso pelo cinto de segurança, passa de 20 m/s a 0 m/s em 0,4 s (o cinto prolonga o tempo de paragem do corpo). Qual é a intensidade da força média que trava o seu corpo?",
+    "question": "Numa colisão, o corpo de um enfermeiro de 70 kg, preso pelo cinto de segurança, passa de 10 m/s a 0 m/s em 0,2 s (o cinto prolonga o tempo de paragem do corpo). Qual é a intensidade da força média que trava o seu corpo?",
     "options": [
-      "1400 N",
+      "700 N",
       "3500 N",
-      "560 N",
+      "140 N",
       "686 N"
     ],
     "correctIndex": 1,
-    "explanation": "A desaceleração média do corpo é a = Δv / Δt = 20 / 0,4 = 50 m/s². Pela 2.ª Lei, F = m · a = 70 × 50 = 3500 N. Se o corpo parasse contra a divisória em 0,04 s (sem cinto), a desaceleração seria 500 m/s² e a força 35 000 N, dez vezes maior: para a mesma variação de velocidade, prolongar o tempo de paragem reduz a força média.",
+    "explanation": "A desaceleração média do corpo é a = Δv / Δt = 10 / 0,2 = 50 m/s². Pela 2.ª Lei, F = m · a = 70 × 50 = 3500 N. Se o corpo parasse contra a divisória em 0,02 s (sem cinto), a desaceleração seria 500 m/s² e a força 35 000 N, dez vezes maior: para a mesma variação de velocidade, prolongar o tempo de paragem reduz a força média.",
     "distractorAnalysis": [
-      "Está incorreta: resulta de multiplicar a massa pela velocidade (70 × 20 = 1400) sem dividir pelo tempo de paragem; a força depende da desaceleração, a = Δv / Δt.",
-      "Está incorreta: resulta de multiplicar a velocidade pelo tempo (20 × 0,4 = 8 m/s²) em vez de dividir, e depois 70 × 8 = 560 N; a desaceleração é 20 / 0,4 = 50 m/s².",
+      "Está incorreta: resulta de multiplicar a massa pela velocidade (70 × 10 = 700) sem dividir pelo tempo de paragem; a força depende da desaceleração, a = Δv / Δt.",
+      "Está incorreta: resulta de multiplicar a velocidade pelo tempo (10 × 0,2 = 2 m/s²) em vez de dividir, e depois 70 × 2 = 140 N; a desaceleração é 10 / 0,2 = 50 m/s².",
       "Está incorreta: corresponde ao peso do enfermeiro (70 × 9,8 = 686 N); a força de travagem horizontal depende da desaceleração do corpo, não de g."
     ],
-    "nursingApplication": "Usar o cinto de segurança na célula sanitária da ambulância prolonga o tempo de paragem do corpo numa travagem brusca e reduz a força média que atua sobre o profissional."
+    "nursingApplication": "Usar o cinto de segurança na célula sanitária da ambulância prolonga o tempo de paragem do corpo numa colisão e reduz a força média que atua sobre o profissional."
   },
   {
     "id": 1109,
@@ -2675,7 +2675,7 @@ const TOPIC_1_QUESTIONS = [
       "Porque a resistência do material diminui quando fica junto ao eixo.",
       "Porque o braço potente aumenta quando o material se aproxima do eixo.",
       "Porque, assim, a tesoura passa a funcionar como alavanca inter-resistente.",
-      "Porque o braço resistente diminui, logo basta um momento potente menor."
+      "Porque o braço resistente diminui, logo basta menos momento potente."
     ],
     "correctIndex": 3,
     "explanation": "Em equilíbrio, F<sub>Potente</sub> · b<sub>Potente</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub>, logo F<sub>Potente</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub> / b<sub>Potente</sub>. A força necessária para cortar o material é a mesma, mas aproximá-lo do eixo reduz b<sub>Resis.</sub>. Por exemplo, com as mãos a 6 cm do eixo, passar o material de 6 cm para 2 cm do eixo reduz a força potente para um terço.",
