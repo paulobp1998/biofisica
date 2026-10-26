@@ -242,17 +242,17 @@ const TOPIC_2_QUESTIONS = [
     "options": [
       "m",
       "N/m",
-      "Pa",
+      "N/m²",
       "Adimensional"
     ],
     "correctIndex": 2,
-    "explanation": "O módulo de Young é a constante de proporcionalidade entre tensão e deformação relativa. Como a tensão se mede em pascal (Pa = N/m²) e a deformação relativa não tem unidades, E expressa-se em Pa.",
+    "explanation": "O módulo de Young é a constante de proporcionalidade entre tensão e deformação relativa. Como a tensão se mede em newton por metro quadrado (N/m²) e a deformação relativa não tem unidades, E expressa-se em N/m².",
     "distractorAnalysis": [
       "Está incorreta: o metro é uma unidade de comprimento, enquanto o módulo de Young tem as unidades de uma tensão.",
       "Está incorreta: N/m é a unidade da constante elástica k de uma mola, e não do módulo de Young.",
       "Está incorreta: a deformação relativa é adimensional, mas o módulo de Young é a razão entre a tensão e essa deformação, logo tem unidades."
     ],
-    "nursingApplication": "Os valores do módulo de Young dos tecidos são expressos em pascal, o que permite comparar a rigidez de materiais biológicos e não biológicos, como as próteses."
+    "nursingApplication": "Os valores do módulo de Young dos tecidos são expressos em N/m², o que permite comparar a rigidez de materiais biológicos e não biológicos, como as próteses."
   },
   {
     "id": 2214,
@@ -382,7 +382,7 @@ const TOPIC_2_QUESTIONS = [
     "explanation": "Na zona de proporcionalidade a tensão é proporcional à deformação relativa, com E como constante de proporcionalidade: σ = E · ε.",
     "distractorAnalysis": [
       "Está incorreta: o módulo de Young é E = σ / ε, pelo que a tensão é o produto E · ε; dividir E por ε não dá a tensão.",
-      "Está incorreta: a deformação relativa é ε = σ / E; multiplicar E por σ inverte a relação e daria uma grandeza em Pa², e não uma deformação sem unidades.",
+      "Está incorreta: a deformação relativa é ε = σ / E; multiplicar E por σ inverte a relação e daria uma grandeza em N/m²², e não uma deformação sem unidades.",
       "Está incorreta: a tensão não é o quociente de ε por E, mas sim o produto de E pela deformação relativa."
     ],
     "nursingApplication": "Permite estimar a tensão num tendão ou num osso a partir da deformação medida, o que é uma base para compreender as cargas suportadas pelo aparelho locomotor."
@@ -430,17 +430,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Uma barra de secção transversal de 2,5 cm² é tracionada por uma força de 500 N, dentro do limite de proporcionalidade. Qual é a tensão mecânica na barra?",
     "options": [
-      "2,0 × 10⁶ Pa",
-      "1,25 × 10⁻¹ Pa",
-      "2,0 × 10² Pa",
-      "2,0 × 10⁴ Pa"
+      "2,0 × 10⁶ N/m²",
+      "1,25 × 10⁻¹ N/m²",
+      "2,0 × 10² N/m²",
+      "2,0 × 10⁴ N/m²"
     ],
     "correctIndex": 0,
-    "explanation": "σ = F/S, com S = 2,5 cm² = 2,5 × 10⁻⁴ m². Logo σ = 500 / (2,5 × 10⁻⁴) = 2,0 × 10⁶ Pa.",
+    "explanation": "σ = F/S, com S = 2,5 cm² = 2,5 × 10⁻⁴ m². Logo σ = 500 / (2,5 × 10⁻⁴) = 2,0 × 10⁶ N/m².",
     "distractorAnalysis": [
-      "Está incorreta: multiplica a força pela área em vez de dividir, o que dá 0,125 Pa.",
-      "Está incorreta: usa a área em cm² sem a converter para m², o que dá 200 Pa.",
-      "Está incorreta: converte 1 cm² como 10⁻² m², esquecendo que a área é uma grandeza quadrática, o que dá 2,0 × 10⁴ Pa."
+      "Está incorreta: multiplica a força pela área em vez de dividir, o que dá 0,125 N/m².",
+      "Está incorreta: usa a área em cm² sem a converter para m², o que dá 200 N/m².",
+      "Está incorreta: converte 1 cm² como 10⁻² m², esquecendo que a área é uma grandeza quadrática, o que dá 2,0 × 10⁴ N/m²."
     ],
     "nursingApplication": "Compreender a tensão, e não apenas a força, explica porque é que a mesma carga pode ser muito mais perigosa para um osso com secção reduzida."
   },
@@ -485,7 +485,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2226,
     "topicId": 2,
-    "question": "Uma barra com secção de 5,0 cm² suporta uma tensão mecânica de 4,0 × 10⁶ Pa. Qual é a força aplicada?",
+    "question": "Uma barra com secção de 5,0 cm² suporta uma tensão mecânica de 4,0 × 10⁶ N/m². Qual é a força aplicada?",
     "options": [
       "200 N",
       "2,0 × 10³ N",
@@ -493,7 +493,7 @@ const TOPIC_2_QUESTIONS = [
       "2,0 × 10⁷ N"
     ],
     "correctIndex": 1,
-    "explanation": "Da definição σ = F/S resulta F = σ · S = 4,0 × 10⁶ Pa × 5,0 × 10⁻⁴ m² = 2,0 × 10³ N.",
+    "explanation": "Da definição σ = F/S resulta F = σ · S = 4,0 × 10⁶ N/m² × 5,0 × 10⁻⁴ m² = 2,0 × 10³ N.",
     "distractorAnalysis": [
       "Está incorreta: converte a área de forma errada, usando 5,0 × 10⁻⁵ m², o que dá 200 N.",
       "Está incorreta: divide a tensão pela área em vez de multiplicar, o que dá 8,0 × 10⁹ N.",
@@ -656,7 +656,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2235,
     "topicId": 2,
-    "question": "Duas barras têm o mesmo comprimento e a mesma secção. A barra A tem módulo de Young 1,5 × 10¹⁰ Pa e a barra B tem 1,0 × 10⁹ Pa. Qual delas tem maior constante elástica?",
+    "question": "Duas barras têm o mesmo comprimento e a mesma secção. A barra A tem módulo de Young 1,5 × 10¹⁰ N/m² e a barra B tem 1,0 × 10⁹ N/m². Qual delas tem maior constante elástica?",
     "options": [
       "B, porque tem um módulo de Young menor e deforma mais, logo é mais rígida.",
       "Ambas, porque têm o mesmo comprimento e a mesma secção.",
@@ -675,7 +675,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2236,
     "topicId": 2,
-    "question": "Um corpo elástico com módulo de Young E = 2,0 × 10⁹ Pa é sujeito a uma tensão de 4,0 × 10⁶ Pa, dentro do limite de proporcionalidade. Qual é a deformação relativa?",
+    "question": "Um corpo elástico com módulo de Young E = 2,0 × 10⁹ N/m² é sujeito a uma tensão de 4,0 × 10⁶ N/m², dentro do limite de proporcionalidade. Qual é a deformação relativa?",
     "options": [
       "500",
       "2",
@@ -689,7 +689,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: divide apenas os valores numéricos (4,0 / 2,0 = 2), esquecendo as potências de dez.",
       "Está incorreta: divide a tensão pelo fator 2 de E, esquecendo a potência de dez de E (10⁹)."
     ],
-    "nursingApplication": "O cimento ósseo (PMMA) usado na fixação de próteses tem um módulo de Young da ordem de 2 × 10⁹ Pa, cerca de dez vezes inferior ao do osso cortical, pelo que se deforma mais sob a mesma tensão."
+    "nursingApplication": "O cimento ósseo (PMMA) usado na fixação de próteses tem um módulo de Young da ordem de 2 × 10⁹ N/m², cerca de dez vezes inferior ao do osso cortical, pelo que se deforma mais sob a mesma tensão."
   },
   {
     "id": 2237,
@@ -734,17 +734,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Um osso com secção de 3,0 cm² suporta uma força de compressão de 6,0 × 10³ N, dentro do limite de proporcionalidade. Qual é a tensão mecânica no osso?",
     "options": [
-      "2,0 × 10⁷ Pa",
-      "2,0 × 10³ Pa",
-      "6,0 × 10³ Pa",
-      "1,8 Pa"
+      "2,0 × 10⁷ N/m²",
+      "2,0 × 10³ N/m²",
+      "6,0 × 10³ N/m²",
+      "1,8 N/m²"
     ],
     "correctIndex": 0,
-    "explanation": "σ = F / S, com S = 3,0 cm² = 3,0 × 10⁻⁴ m². Logo σ = 6,0 × 10³ / 3,0 × 10⁻⁴ = 2,0 × 10⁷ Pa.",
+    "explanation": "σ = F / S, com S = 3,0 cm² = 3,0 × 10⁻⁴ m². Logo σ = 6,0 × 10³ / 3,0 × 10⁻⁴ = 2,0 × 10⁷ N/m².",
     "distractorAnalysis": [
-      "Está incorreta: não converte a área para m², dividindo 6,0 × 10³ por 3,0, o que dá 2,0 × 10³ Pa.",
+      "Está incorreta: não converte a área para m², dividindo 6,0 × 10³ por 3,0, o que dá 2,0 × 10³ N/m².",
       "Está incorreta: confunde tensão com força, esquecendo a área de secção.",
-      "Está incorreta: multiplica a força pela área, em vez de dividir, o que dá 1,8 Pa."
+      "Está incorreta: multiplica a força pela área, em vez de dividir, o que dá 1,8 N/m²."
     ],
     "nursingApplication": "Para a mesma força de compressão, um osso com menor área de secção, como numa zona de afilamento, fica sujeito a uma tensão maior, o que aumenta o risco de fratura."
   },
@@ -1169,7 +1169,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2262,
     "topicId": 2,
-    "question": "Um osso com secção de 2,0 cm² suporta uma tensão mecânica de compressão de 3,0 × 10⁶ Pa, dentro do limite de proporcionalidade. Qual é a força de compressão suportada pelo osso?",
+    "question": "Um osso com secção de 2,0 cm² suporta uma tensão mecânica de compressão de 3,0 × 10⁶ N/m², dentro do limite de proporcionalidade. Qual é a força de compressão suportada pelo osso?",
     "options": [
       "1,5 × 10¹⁰ N",
       "6,0 N",
@@ -1177,7 +1177,7 @@ const TOPIC_2_QUESTIONS = [
       "3,0 × 10⁶ N"
     ],
     "correctIndex": 2,
-    "explanation": "Da definição σ = F / S resulta F = σ · S = 3,0 × 10⁶ Pa × 2,0 × 10⁻⁴ m² = 6,0 × 10² N.",
+    "explanation": "Da definição σ = F / S resulta F = σ · S = 3,0 × 10⁶ N/m² × 2,0 × 10⁻⁴ m² = 6,0 × 10² N.",
     "distractorAnalysis": [
       "Está incorreta: divide a tensão pela área, em vez de multiplicar, o que dá 1,5 × 10¹⁰ N.",
       "Está incorreta: converte a área de forma errada, usando 2,0 × 10⁻⁶ m², o que dá 6,0 N.",
@@ -1209,24 +1209,24 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Um tendão com secção de 0,50 cm² é tracionado por uma força de 300 N, dentro do limite de proporcionalidade. Qual é a tensão mecânica no tendão?",
     "options": [
-      "6,0 × 10² Pa",
-      "0,015 Pa",
-      "6,0 × 10⁴ Pa",
-      "6,0 × 10⁶ Pa"
+      "6,0 × 10² N/m²",
+      "0,015 N/m²",
+      "6,0 × 10⁴ N/m²",
+      "6,0 × 10⁶ N/m²"
     ],
     "correctIndex": 3,
-    "explanation": "σ = F / S, com S = 0,50 cm² = 5,0 × 10⁻⁵ m². Logo σ = 300 / (5,0 × 10⁻⁵) = 6,0 × 10⁶ Pa.",
+    "explanation": "σ = F / S, com S = 0,50 cm² = 5,0 × 10⁻⁵ m². Logo σ = 300 / (5,0 × 10⁻⁵) = 6,0 × 10⁶ N/m².",
     "distractorAnalysis": [
-      "Está incorreta: usa a área em cm² sem a converter, o que dá 300 / 0,50 = 6,0 × 10² Pa.",
-      "Está incorreta: multiplica a força pela área, em vez de dividir, o que dá 0,015 Pa.",
-      "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 6,0 × 10⁴ Pa."
+      "Está incorreta: usa a área em cm² sem a converter, o que dá 300 / 0,50 = 6,0 × 10² N/m².",
+      "Está incorreta: multiplica a força pela área, em vez de dividir, o que dá 0,015 N/m².",
+      "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 6,0 × 10⁴ N/m²."
     ],
     "nursingApplication": "A tensão no tendão é a grandeza que se compara com a sua capacidade de suporte, e não apenas a força total, pelo que a mesma carga é mais exigente num tendão de secção pequena."
   },
   {
     "id": 2265,
     "topicId": 2,
-    "question": "Um ligamento tem módulo de Young E = 5,0 × 10⁸ Pa e é sujeito a uma tensão de 1,0 × 10⁷ Pa, dentro do limite de proporcionalidade. Qual é a sua deformação relativa?",
+    "question": "Um ligamento tem módulo de Young E = 5,0 × 10⁸ N/m² e é sujeito a uma tensão de 1,0 × 10⁷ N/m², dentro do limite de proporcionalidade. Qual é a sua deformação relativa?",
     "options": [
       "50",
       "0,2",
@@ -1237,7 +1237,7 @@ const TOPIC_2_QUESTIONS = [
     "explanation": "Da relação σ = E · ε resulta ε = σ / E = 1,0 × 10⁷ / 5,0 × 10⁸ = 0,02, sem unidades.",
     "distractorAnalysis": [
       "Está incorreta: inverte a relação, calculando E / σ = 50, em vez de σ / E.",
-      "Está incorreta: escreve o módulo de Young como 5,0 × 10⁷ Pa, trocando a potência de dez, e obtém 0,2.",
+      "Está incorreta: escreve o módulo de Young como 5,0 × 10⁷ N/m², trocando a potência de dez, e obtém 0,2.",
       "Está incorreta: multiplica a tensão pelo módulo, em vez de dividir, o que dá 5,0 × 10¹⁵."
     ],
     "nursingApplication": "Comparar a deformação relativa de um ligamento com a da sua zona linear ajuda a perceber se uma carga, como a de uma entorse, se manteve na zona elástica ou se a ultrapassou, com risco de rotura de fibras."
@@ -1344,15 +1344,15 @@ const TOPIC_2_QUESTIONS = [
     "options": [
       "Constante elástica, em N/m.",
       "Deformação relativa, sem unidades.",
-      "Tensão mecânica normal de compressão, em pascal.",
-      "Módulo de Young, em pascal."
+      "Tensão mecânica normal de compressão, em N/m².",
+      "Módulo de Young, em N/m²."
     ],
     "correctIndex": 2,
-    "explanation": "A pressão de interface é uma força normal por unidade de área, ou seja, uma tensão mecânica de compressão, expressa em pascal (N/m²).",
+    "explanation": "A pressão de interface é uma força normal por unidade de área, ou seja, uma tensão mecânica de compressão, expressa em newton por metro quadrado (N/m²).",
     "distractorAnalysis": [
       "Está incorreta: a constante elástica, em N/m, caracteriza uma mola e não uma força por unidade de área.",
       "Está incorreta: a deformação relativa é um quociente de comprimentos e não uma força por unidade de área.",
-      "Está incorreta: o módulo de Young também se exprime em pascal, mas é uma propriedade do material (razão entre tensão e deformação), e não a força por unidade de área que atua sobre a pele."
+      "Está incorreta: o módulo de Young também se exprime em N/m², mas é uma propriedade do material (razão entre tensão e deformação), e não a força por unidade de área que atua sobre a pele."
     ],
     "nursingApplication": "Comparar superfícies de apoio pela pressão de interface, e não apenas pelo peso do doente, ajuda a planear o alívio das zonas de risco, como o sacro e os calcanhares."
   },
@@ -1435,7 +1435,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2276,
     "topicId": 2,
-    "question": "Uma barra com secção de 1,2 cm² tem uma tensão mecânica de 9,0 × 10⁶ Pa. Qual é a força aplicada?",
+    "question": "Uma barra com secção de 1,2 cm² tem uma tensão mecânica de 9,0 × 10⁶ N/m². Qual é a força aplicada?",
     "options": [
       "7,5 × 10¹⁰ N",
       "1,08 × 10¹ N",
@@ -1443,7 +1443,7 @@ const TOPIC_2_QUESTIONS = [
       "1,08 × 10³ N"
     ],
     "correctIndex": 3,
-    "explanation": "F = σ · S = 9,0 × 10⁶ Pa × 1,2 × 10⁻⁴ m² = 1,08 × 10³ N.",
+    "explanation": "F = σ · S = 9,0 × 10⁶ N/m² × 1,2 × 10⁻⁴ m² = 1,08 × 10³ N.",
     "distractorAnalysis": [
       "Está incorreta: divide a tensão pela área, em vez de multiplicar, o que dá 7,5 × 10¹⁰ N.",
       "Está incorreta: converte a área como 1,2 × 10⁻⁶ m², o que dá 1,08 × 10¹ N.",
@@ -1454,19 +1454,19 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2277,
     "topicId": 2,
-    "question": "Um material sofre uma tensão de 2,0 × 10⁵ Pa e uma deformação relativa de 0,004, dentro do limite de proporcionalidade. Qual é o seu módulo de Young?",
+    "question": "Um material sofre uma tensão de 2,0 × 10⁵ N/m² e uma deformação relativa de 0,004, dentro do limite de proporcionalidade. Qual é o seu módulo de Young?",
     "options": [
-      "5,0 × 10⁷ Pa",
-      "8,0 × 10² Pa",
-      "2,0 × 10⁻⁸ Pa",
-      "5,0 × 10⁸ Pa"
+      "5,0 × 10⁷ N/m²",
+      "8,0 × 10² N/m²",
+      "2,0 × 10⁻⁸ N/m²",
+      "5,0 × 10⁸ N/m²"
     ],
     "correctIndex": 0,
-    "explanation": "Da relação σ = E · ε resulta E = σ / ε = 2,0 × 10⁵ / 0,004 = 5,0 × 10⁷ Pa.",
+    "explanation": "Da relação σ = E · ε resulta E = σ / ε = 2,0 × 10⁵ / 0,004 = 5,0 × 10⁷ N/m².",
     "distractorAnalysis": [
-      "Está incorreta: multiplica a tensão pela deformação, em vez de dividir, o que dá 8,0 × 10² Pa.",
+      "Está incorreta: multiplica a tensão pela deformação, em vez de dividir, o que dá 8,0 × 10² N/m².",
       "Está incorreta: inverte a relação, calculando ε / σ = 2,0 × 10⁻⁸, em vez de σ / ε.",
-      "Está incorreta: lê 0,004 como 0,0004, acrescentando um zero, o que dá 5,0 × 10⁸ Pa."
+      "Está incorreta: lê 0,004 como 0,0004, acrescentando um zero, o que dá 5,0 × 10⁸ N/m²."
     ],
     "nursingApplication": "A partir de uma tensão e de uma deformação medidas, é possível calcular o módulo de Young de um tecido, o que permite comparar a sua rigidez entre doentes ou ao longo do tempo."
   },
@@ -1587,7 +1587,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2284,
     "topicId": 2,
-    "question": "Uma barra de 0,80 m de comprimento inicial tem módulo de Young E = 1,0 × 10⁹ Pa e secção de 2,0 × 10⁻⁴ m². Sob uma força de 4,0 × 10³ N, dentro do limite de proporcionalidade, qual é o seu alongamento?",
+    "question": "Uma barra de 0,80 m de comprimento inicial tem módulo de Young E = 1,0 × 10⁹ N/m² e secção de 2,0 × 10⁻⁴ m². Sob uma força de 4,0 × 10³ N, dentro do limite de proporcionalidade, qual é o seu alongamento?",
     "options": [
       "0,016 cm",
       "1,6 m",
@@ -1595,7 +1595,7 @@ const TOPIC_2_QUESTIONS = [
       "1,6 cm"
     ],
     "correctIndex": 3,
-    "explanation": "σ = F / S = 2,0 × 10⁷ Pa; ε = σ / E = 0,020; ΔL = ε · L<sub>0</sub> = 0,020 × 0,80 m = 0,016 m = 1,6 cm.",
+    "explanation": "σ = F / S = 2,0 × 10⁷ N/m²; ε = σ / E = 0,020; ΔL = ε · L<sub>0</sub> = 0,020 × 0,80 m = 0,016 m = 1,6 cm.",
     "distractorAnalysis": [
       "Está incorreta: troca a unidade, pois 0,016 m equivalem a 1,6 cm e não a 0,016 cm.",
       "Está incorreta: confunde centímetros com metros, o que multiplica o resultado por 100.",
@@ -1606,7 +1606,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2285,
     "topicId": 2,
-    "question": "Um tendão tem módulo de Young E = 1,2 × 10⁹ Pa e secção de 0,40 cm². Sofre uma deformação relativa de 0,01, dentro do limite de proporcionalidade. Qual é a força que o tendão suporta?",
+    "question": "Um tendão tem módulo de Young E = 1,2 × 10⁹ N/m² e secção de 0,40 cm². Sofre uma deformação relativa de 0,01, dentro do limite de proporcionalidade. Qual é a força que o tendão suporta?",
     "options": [
       "3,0 × 10¹¹ N",
       "4,8 N",
@@ -1614,7 +1614,7 @@ const TOPIC_2_QUESTIONS = [
       "4,8 × 10² N"
     ],
     "correctIndex": 3,
-    "explanation": "σ = E · ε = 1,2 × 10⁹ × 0,01 = 1,2 × 10⁷ Pa. Com S = 0,40 cm² = 4,0 × 10⁻⁵ m², F = σ · S = 4,8 × 10² N.",
+    "explanation": "σ = E · ε = 1,2 × 10⁹ × 0,01 = 1,2 × 10⁷ N/m². Com S = 0,40 cm² = 4,0 × 10⁻⁵ m², F = σ · S = 4,8 × 10² N.",
     "distractorAnalysis": [
       "Está incorreta: divide a tensão pela área, em vez de multiplicar, o que dá 3,0 × 10¹¹ N.",
       "Está incorreta: converte a área como 4,0 × 10⁻⁷ m², o que dá 4,8 N.",
@@ -1665,17 +1665,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Uma força de 300 N distribui-se por uma área de contacto de 0,02 m². Qual é a pressão de interface?",
     "options": [
-      "6,0 Pa",
-      "1,5 × 10² Pa",
-      "1,5 × 10⁴ Pa",
-      "1,5 × 10³ Pa"
+      "6,0 N/m²",
+      "1,5 × 10² N/m²",
+      "1,5 × 10⁴ N/m²",
+      "1,5 × 10³ N/m²"
     ],
     "correctIndex": 2,
-    "explanation": "p = F / S = 300 N / 0,02 m² = 1,5 × 10⁴ Pa.",
+    "explanation": "p = F / S = 300 N / 0,02 m² = 1,5 × 10⁴ N/m².",
     "distractorAnalysis": [
-      "Está incorreta: multiplica a força pela área, em vez de dividir, o que dá 6,0 Pa.",
-      "Está incorreta: lê 0,02 m² como 2 m², o que dá 1,5 × 10² Pa.",
-      "Está incorreta: lê 0,02 m² como 0,2 m², deslocando a vírgula, o que dá 1,5 × 10³ Pa."
+      "Está incorreta: multiplica a força pela área, em vez de dividir, o que dá 6,0 N/m².",
+      "Está incorreta: lê 0,02 m² como 2 m², o que dá 1,5 × 10² N/m².",
+      "Está incorreta: lê 0,02 m² como 0,2 m², deslocando a vírgula, o que dá 1,5 × 10³ N/m²."
     ],
     "nursingApplication": "Calcular a pressão de interface a partir da força e da área de contacto permite comparar superfícies de apoio e escolher a superfície que melhor distribui a pressão sobre as zonas de risco."
   },
@@ -1701,7 +1701,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2290,
     "topicId": 2,
-    "question": "Um osso tem módulo de Young de 1,5 × 10¹⁰ Pa e suporta uma tensão de 3,0 × 10⁶ Pa, dentro do limite de proporcionalidade. Qual é a deformação relativa?",
+    "question": "Um osso tem módulo de Young de 1,5 × 10¹⁰ N/m² e suporta uma tensão de 3,0 × 10⁶ N/m², dentro do limite de proporcionalidade. Qual é a deformação relativa?",
     "options": [
       "5,0 × 10³",
       "2,0 × 10⁻⁵",
@@ -1712,7 +1712,7 @@ const TOPIC_2_QUESTIONS = [
     "explanation": "ε = σ / E = 3,0 × 10⁶ / 1,5 × 10¹⁰ = 2,0 × 10⁻⁴, sem unidades.",
     "distractorAnalysis": [
       "Está incorreta: inverte a relação, calculando E / σ = 5,0 × 10³, em vez de σ / E.",
-      "Está incorreta: lê o módulo de Young como 1,5 × 10¹¹ Pa, o que dá 2,0 × 10⁻⁵.",
+      "Está incorreta: lê o módulo de Young como 1,5 × 10¹¹ N/m², o que dá 2,0 × 10⁻⁵.",
       "Está incorreta: considera só a potência de dez do módulo, esquecendo o fator 1,5, o que dá 3,0 × 10⁶ / 10¹⁰ = 3,0 × 10⁻⁴."
     ],
     "nursingApplication": "Conhecer o módulo de Young e a tensão a que um osso está sujeito permite estimar a sua deformação, o que ajuda a interpretar a resposta a uma carga clínica."
@@ -1722,17 +1722,17 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Uma barra com secção de 1,0 × 10⁻⁴ m² e comprimento inicial de 1,0 m alonga 1,0 mm quando sujeita a uma força de 200 N, dentro do limite de proporcionalidade. Qual é o seu módulo de Young?",
     "options": [
-      "2,0 × 10⁶ Pa",
-      "5,0 × 10⁻¹⁰ Pa",
-      "2,0 × 10⁹ Pa",
-      "2,0 × 10¹² Pa"
+      "2,0 × 10⁶ N/m²",
+      "5,0 × 10⁻¹⁰ N/m²",
+      "2,0 × 10⁹ N/m²",
+      "2,0 × 10¹² N/m²"
     ],
     "correctIndex": 2,
-    "explanation": "σ = F / S = 200 / 1,0 × 10⁻⁴ = 2,0 × 10⁶ Pa; ε = ΔL / L<sub>0</sub> = 1,0 × 10⁻³ / 1,0 = 1,0 × 10⁻³; logo E = σ / ε = 2,0 × 10⁹ Pa.",
+    "explanation": "σ = F / S = 200 / 1,0 × 10⁻⁴ = 2,0 × 10⁶ N/m²; ε = ΔL / L<sub>0</sub> = 1,0 × 10⁻³ / 1,0 = 1,0 × 10⁻³; logo E = σ / ε = 2,0 × 10⁹ N/m².",
     "distractorAnalysis": [
-      "Está incorreta: usa a tensão como se fosse o módulo de Young, sem a dividir pela deformação relativa, o que dá 2,0 × 10⁶ Pa.",
-      "Está incorreta: inverte a relação, calculando ε / σ, o que dá 5,0 × 10⁻¹⁰ Pa.",
-      "Está incorreta: converte 1 mm como 1,0 × 10⁻⁶ m no cálculo de ε, o que dá 2,0 × 10¹² Pa."
+      "Está incorreta: usa a tensão como se fosse o módulo de Young, sem a dividir pela deformação relativa, o que dá 2,0 × 10⁶ N/m².",
+      "Está incorreta: inverte a relação, calculando ε / σ, o que dá 5,0 × 10⁻¹⁰ N/m².",
+      "Está incorreta: converte 1 mm como 1,0 × 10⁻⁶ m no cálculo de ε, o que dá 2,0 × 10¹² N/m²."
     ],
     "nursingApplication": "Os ensaios que determinam o módulo de Young de um material, como os de implantes ou de suturas, combinam a força aplicada, a área e o alongamento medido."
   },
@@ -1874,9 +1874,9 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Num ensaio com uma mola, a força aplicada é representada em função do alongamento, e obtém-se uma reta. Que grandeza corresponde ao declive desta reta?",
     "options": [
-      "E, o módulo de Young, em Pa",
+      "E, o módulo de Young, em N/m²",
       "k, constante elástica, em N/m",
-      "σ, a tensão mecânica, em Pa",
+      "σ, a tensão mecânica, em N/m²",
       "ε, a deformação relativa, sem unidades"
     ],
     "correctIndex": 1,
@@ -1893,19 +1893,19 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Uma compressão de 120 N atua sobre uma área de contacto de 4,0 cm². Qual é a tensão de compressão?",
     "options": [
-      "4,8 × 10⁻² Pa",
-      "3,0 × 10⁵ Pa",
-      "3,0 × 10³ Pa",
-      "3,0 × 10⁷ Pa"
+      "4,8 × 10⁻² N/m²",
+      "3,0 × 10⁵ N/m²",
+      "3,0 × 10³ N/m²",
+      "3,0 × 10⁷ N/m²"
     ],
     "correctIndex": 1,
-    "explanation": "σ = F / S, com S = 4,0 cm² = 4,0 × 10⁻⁴ m². Logo σ = 120 / (4,0 × 10⁻⁴) = 3,0 × 10⁵ Pa.",
+    "explanation": "σ = F / S, com S = 4,0 cm² = 4,0 × 10⁻⁴ m². Logo σ = 120 / (4,0 × 10⁻⁴) = 3,0 × 10⁵ N/m².",
     "distractorAnalysis": [
-      "Está incorreta: multiplica a força pela área, em vez de dividir, o que dá 4,8 × 10⁻² Pa.",
-      "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 3,0 × 10³ Pa.",
-      "Está incorreta: converte 1 cm² como 10⁻⁶ m², o que dá 3,0 × 10⁷ Pa."
+      "Está incorreta: multiplica a força pela área, em vez de dividir, o que dá 4,8 × 10⁻² N/m².",
+      "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 3,0 × 10³ N/m².",
+      "Está incorreta: converte 1 cm² como 10⁻⁶ m², o que dá 3,0 × 10⁷ N/m²."
     ],
-    "nursingApplication": "Converter corretamente a área de contacto para metros quadrados é necessário para expressar em pascal a pressão exercida sobre a pele por um aparelho ou por um apoio."
+    "nursingApplication": "Converter corretamente a área de contacto para metros quadrados é necessário para expressar em N/m² a pressão exercida sobre a pele por um aparelho ou por um apoio."
   },
   {
     "id": 2301,
@@ -1988,16 +1988,16 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "A secção da diáfise de um fémur tem 5,0 cm² no total, dos quais 1,5 cm² são cavidade medular. Uma força de compressão de 2100 N atua ao longo do eixo. Admitindo que só o osso compacto suporta a carga, qual é a tensão média nele?",
     "options": [
-      "4,2 × 10⁶ Pa",
-      "6,0 × 10⁶ Pa",
-      "1,4 × 10⁷ Pa",
-      "6,0 × 10⁴ Pa"
+      "4,2 × 10⁶ N/m²",
+      "6,0 × 10⁶ N/m²",
+      "1,4 × 10⁷ N/m²",
+      "6,0 × 10⁴ N/m²"
     ],
     "correctIndex": 1,
-    "explanation": "A carga é suportada pelo anel de osso compacto, cuja área é 5,0 − 1,5 = 3,5 cm² = 3,5 × 10⁻⁴ m² (1 cm² = 10⁻⁴ m²). Então σ = F / A = 2100 / 3,5 × 10⁻⁴ = 6,0 × 10⁶ Pa. A cavidade medular, com medula, não contribui para suportar a carga.",
+    "explanation": "A carga é suportada pelo anel de osso compacto, cuja área é 5,0 − 1,5 = 3,5 cm² = 3,5 × 10⁻⁴ m² (1 cm² = 10⁻⁴ m²). Então σ = F / A = 2100 / 3,5 × 10⁻⁴ = 6,0 × 10⁶ N/m². A cavidade medular, com medula, não contribui para suportar a carga.",
     "distractorAnalysis": [
-      "Está incorreta: resulta de usar a área total (5,0 cm²), incluindo a cavidade medular, que não suporta carga: 2100 / 5,0 × 10⁻⁴ = 4,2 × 10⁶ Pa.",
-      "Está incorreta: resulta de usar apenas a área da cavidade medular (1,5 cm²) em vez da área de osso compacto: 2100 / 1,5 × 10⁻⁴ = 1,4 × 10⁷ Pa.",
+      "Está incorreta: resulta de usar a área total (5,0 cm²), incluindo a cavidade medular, que não suporta carga: 2100 / 5,0 × 10⁻⁴ = 4,2 × 10⁶ N/m².",
+      "Está incorreta: resulta de usar apenas a área da cavidade medular (1,5 cm²) em vez da área de osso compacto: 2100 / 1,5 × 10⁻⁴ = 1,4 × 10⁷ N/m².",
       "Está incorreta: resulta de converter 1 cm² em 10⁻² m² em vez de 10⁻⁴ m², obtendo uma tensão 100 vezes menor."
     ],
     "nursingApplication": "Num idoso com cortical adelgaçada, a área de osso compacto é menor e a mesma carga da marcha produz maior tensão na diáfise, o que aumenta o risco de fratura numa queda."
@@ -2005,7 +2005,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2306,
     "topicId": 2,
-    "question": "As epífises dos ossos longos são formadas sobretudo por osso trabecular, revestido por uma fina camada cortical. Na marcha, uma região trabecular (E ≈ 5,0 × 10⁸ Pa) fica sujeita a uma tensão de compressão de 2,0 MPa. Qual é a deformação relativa, no regime elástico?",
+    "question": "As epífises dos ossos longos são formadas sobretudo por osso trabecular, revestido por uma fina camada cortical. Na marcha, uma região trabecular (E ≈ 5,0 × 10⁸ N/m²) fica sujeita a uma tensão de compressão de 2,0 × 10⁶ N/m². Qual é a deformação relativa, no regime elástico?",
     "options": [
       "2,5 × 10²",
       "1,0 × 10⁻⁴",
@@ -2013,11 +2013,11 @@ const TOPIC_2_QUESTIONS = [
       "4,0 × 10⁻³"
     ],
     "correctIndex": 3,
-    "explanation": "Pela lei de Hooke generalizada, ε = σ / E = 2,0 × 10⁶ / 5,0 × 10⁸ = 4,0 × 10⁻³ (0,4 %). O osso cortical (E ≈ 2,0 × 10¹⁰ Pa) sob a mesma tensão deformar-se-ia apenas 1,0 × 10⁻⁴, ou seja, 40 vezes menos. Por ser menos rígido, o osso trabecular das epífises deforma-se mais e ajuda a amortecer os impactos transmitidos às articulações.",
+    "explanation": "Pela lei de Hooke generalizada, ε = σ / E = 2,0 × 10⁶ / 5,0 × 10⁸ = 4,0 × 10⁻³ (0,4 %). O osso cortical (E ≈ 2,0 × 10¹⁰ N/m²) sob a mesma tensão deformar-se-ia apenas 1,0 × 10⁻⁴, ou seja, 40 vezes menos. Por ser menos rígido, o osso trabecular das epífises deforma-se mais e ajuda a amortecer os impactos transmitidos às articulações.",
     "distractorAnalysis": [
       "Está incorreta: resulta de inverter a fórmula (E / σ); a deformação relativa é σ / E e, num osso, é um número muito menor do que 1.",
-      "Está incorreta: resulta de usar o módulo de Young do osso cortical (2,0 × 10¹⁰ Pa) em vez do do osso trabecular indicado no enunciado.",
-      "Está incorreta: resulta de converter 1 MPa em 10³ Pa em vez de 10⁶ Pa, obtendo uma deformação mil vezes menor."
+      "Está incorreta: resulta de usar o módulo de Young do osso cortical (2,0 × 10¹⁰ N/m²) em vez do do osso trabecular indicado no enunciado.",
+      "Está incorreta: resulta de usar 2,0 × 10³ N/m² em vez de 2,0 × 10⁶ N/m², obtendo uma deformação mil vezes menor."
     ],
     "nursingApplication": "Na osteoporose, a perda de trabéculas afeta sobretudo regiões ricas em osso trabecular, como os corpos vertebrais e o colo do fémur, o que explica a frequência de fraturas nestes locais após quedas ou cargas do dia a dia."
   },
@@ -2271,7 +2271,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2320,
     "topicId": 2,
-    "question": "O osso cortical tem rigidez semelhante em tração e em compressão (≈ 18 GPa), mas suporta ≈ 200 MPa em compressão e ≈ 135 MPa em tração. O que se conclui?",
+    "question": "O osso cortical tem rigidez semelhante em tração e em compressão (E ≈ 1,8 × 10¹⁰ N/m²), mas suporta ≈ 2,0 × 10⁸ N/m² em compressão e ≈ 1,35 × 10⁸ N/m² em tração. O que se conclui?",
     "options": [
       "É mais rígido em compressão, por isso suporta mais tensão antes de fraturar",
       "Suporta mais tração, porque o módulo de Young é igual",
@@ -2281,8 +2281,8 @@ const TOPIC_2_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "O módulo de Young mede a rigidez e é semelhante em tração e compressão; já a resistência (tensão suportada) é maior em compressão do que em tração.",
     "distractorAnalysis": [
-      "Está incorreta: a rigidez é semelhante nos dois casos (≈ 18 GPa); o que difere é a tensão que o osso suporta antes de fraturar.",
-      "Está incorreta: o osso suporta menos tensão em tração (≈ 135 MPa) do que em compressão (≈ 200 MPa).",
+      "Está incorreta: a rigidez é semelhante nos dois casos (≈ 1,8 × 10¹⁰ N/m²); o que difere é a tensão que o osso suporta antes de fraturar.",
+      "Está incorreta: o osso suporta menos tensão em tração (≈ 1,35 × 10⁸ N/m²) do que em compressão (≈ 2,0 × 10⁸ N/m²).",
       "Está incorreta: rigidez e resistência são grandezas diferentes: o módulo de Young não determina a tensão de rotura."
     ],
     "nursingApplication": "Isto ajuda a perceber porque, numa pancada lateral que flete a diáfise, a fratura começa geralmente no lado convexo, que fica tracionado."
@@ -2311,16 +2311,16 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Num fémur, a força de compressão é 1800 N e a secção é 6 cm². Qual é a tensão no osso?",
     "options": [
-      "3 × 10⁴ Pa",
-      "3 × 10⁸ Pa",
-      "3 × 10⁶ Pa",
-      "1,08 Pa"
+      "3 × 10⁴ N/m²",
+      "3 × 10⁸ N/m²",
+      "3 × 10⁶ N/m²",
+      "1,08 N/m²"
     ],
     "correctIndex": 2,
-    "explanation": "σ = F / S, com S = 6 cm² = 6 × 10⁻⁴ m². Logo σ = 1800 / (6 × 10⁻⁴) = 3 × 10⁶ Pa.",
+    "explanation": "σ = F / S, com S = 6 cm² = 6 × 10⁻⁴ m². Logo σ = 1800 / (6 × 10⁻⁴) = 3 × 10⁶ N/m².",
     "distractorAnalysis": [
-      "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 3 × 10⁴ Pa.",
-      "Está incorreta: converte 1 cm² como 10⁻⁶ m², o que dá 3 × 10⁸ Pa.",
+      "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 3 × 10⁴ N/m².",
+      "Está incorreta: converte 1 cm² como 10⁻⁶ m², o que dá 3 × 10⁸ N/m².",
       "Está incorreta: multiplica a força pela área (1800 × 6 × 10⁻⁴), em vez de dividir."
     ],
     "nursingApplication": "Calcular a tensão no osso ajuda a perceber quanto aumenta a carga sobre o fémur quando um utente obeso se levanta ou caminha."
@@ -2328,7 +2328,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2323,
     "topicId": 2,
-    "question": "Um fémur com E = 2 × 10¹⁰ Pa e comprimento inicial L<sub>0</sub> = 0,40 m suporta uma tensão de 3 × 10⁶ Pa, dentro do regime elástico. Qual é o encurtamento ΔL?",
+    "question": "Um fémur com E = 2 × 10¹⁰ N/m² e comprimento inicial L<sub>0</sub> = 0,40 m suporta uma tensão de 3 × 10⁶ N/m², dentro do regime elástico. Qual é o encurtamento ΔL?",
     "options": [
       "0,6 mm",
       "0,06 mm",
@@ -2369,7 +2369,7 @@ const TOPIC_2_QUESTIONS = [
     "question": "Qual é a unidade da deformação relativa ε no Sistema Internacional?",
     "options": [
       "Metro (m), a unidade de comprimento",
-      "Pascal (Pa), a unidade de tensão",
+      "Newton por metro quadrado (N/m²), a unidade de tensão",
       "N/m, a unidade da constante elástica",
       "Não tem unidade (é adimensional)"
     ],
@@ -2377,7 +2377,7 @@ const TOPIC_2_QUESTIONS = [
     "explanation": "A deformação relativa é o quociente de dois comprimentos (ΔL / L<sub>0</sub>), logo é adimensional; a percentagem é usada apenas para representação.",
     "distractorAnalysis": [
       "Está incorreta: o metro é a unidade do alongamento absoluto ΔL, e não da deformação relativa, que é ΔL / L<sub>0</sub>.",
-      "Está incorreta: o pascal é a unidade da tensão mecânica e do módulo de Young.",
+      "Está incorreta: o N/m² é a unidade da tensão mecânica e do módulo de Young.",
       "Está incorreta: N/m é a unidade da constante elástica k."
     ],
     "nursingApplication": "Reconhecer que a deformação é adimensional evita erros de unidades quando se comparam alongamentos de tecidos de tamanhos diferentes."
@@ -2423,18 +2423,18 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2328,
     "topicId": 2,
-    "question": "Um tecido é sujeito a uma tensão de 3,0 MPa e sofre uma deformação relativa de 1,5 %, dentro do limite de proporcionalidade. Qual é o seu módulo de Young?",
+    "question": "Um tecido é sujeito a uma tensão de 3,0 × 10⁶ N/m² e sofre uma deformação relativa de 1,5 %, dentro do limite de proporcionalidade. Qual é o seu módulo de Young?",
     "options": [
-      "4,5 × 10⁴ Pa",
-      "2,0 × 10⁶ Pa",
-      "2,0 × 10⁸ Pa",
-      "5,0 × 10⁻⁹ Pa"
+      "4,5 × 10⁴ N/m²",
+      "2,0 × 10⁶ N/m²",
+      "2,0 × 10⁸ N/m²",
+      "5,0 × 10⁻⁹ N/m²"
     ],
     "correctIndex": 2,
-    "explanation": "E = σ / ε, com σ = 3,0 × 10⁶ Pa e ε = 1,5 % = 0,015. Logo E = 3,0 × 10⁶ / 0,015 = 2,0 × 10⁸ Pa.",
+    "explanation": "E = σ / ε, com σ = 3,0 × 10⁶ N/m² e ε = 1,5 % = 0,015. Logo E = 3,0 × 10⁶ / 0,015 = 2,0 × 10⁸ N/m².",
     "distractorAnalysis": [
-      "Está incorreta: multiplica a tensão pela deformação relativa em vez de as dividir, o que dá 4,5 × 10⁴ Pa.",
-      "Está incorreta: usa 1,5 em vez de 0,015 para a deformação relativa, esquecendo-se de converter a percentagem, o que dá 2,0 × 10⁶ Pa.",
+      "Está incorreta: multiplica a tensão pela deformação relativa em vez de as dividir, o que dá 4,5 × 10⁴ N/m².",
+      "Está incorreta: usa 1,5 em vez de 0,015 para a deformação relativa, esquecendo-se de converter a percentagem, o que dá 2,0 × 10⁶ N/m².",
       "Está incorreta: inverte a razão, calculando ε / σ = 0,015 / 3,0 × 10⁶ = 5,0 × 10⁻⁹."
     ],
     "nursingApplication": "O módulo de Young de um tecido, obtido a partir de ensaios de tração, ajuda a escolher materiais de sutura ou enxertos com rigidez semelhante à do tecido a reparar."
@@ -2488,18 +2488,18 @@ const TOPIC_2_QUESTIONS = [
       "Aço < vidro < osso < borracha"
     ],
     "correctIndex": 1,
-    "explanation": "Os valores são: borracha (0,1 a 10 × 10⁷ Pa) < osso (2 × 10¹⁰) < vidro (7 × 10¹⁰) < aço (20 × 10¹⁰).",
+    "explanation": "Os valores são: borracha (0,1 a 10 × 10⁷ N/m²) < osso (2 × 10¹⁰) < vidro (7 × 10¹⁰) < aço (20 × 10¹⁰).",
     "distractorAnalysis": [
-      "Está incorreta: troca o osso (≈ 2 × 10¹⁰ Pa) com o vidro (≈ 7 × 10¹⁰ Pa), que tem módulo de Young maior.",
-      "Está incorreta: coloca o osso abaixo da borracha, que é muito menos rígida (≈ 0,1 a 10 × 10⁷ Pa).",
-      "Está incorreta: inverte a ordem: é a borracha que tem o menor módulo de Young e o aço o maior (≈ 20 × 10¹⁰ Pa)."
+      "Está incorreta: troca o osso (≈ 2 × 10¹⁰ N/m²) com o vidro (≈ 7 × 10¹⁰ N/m²), que tem módulo de Young maior.",
+      "Está incorreta: coloca o osso abaixo da borracha, que é muito menos rígida (≈ 0,1 a 10 × 10⁷ N/m²).",
+      "Está incorreta: inverte a ordem: é a borracha que tem o menor módulo de Young e o aço o maior (≈ 20 × 10¹⁰ N/m²)."
     ],
     "nursingApplication": "Saber que o osso é muito mais rígido do que os tecidos moles ajuda a compreender porque o osso protege órgãos e suporta o peso do corpo."
   },
   {
     "id": 2332,
     "topicId": 2,
-    "question": "O vidro (E ≈ 7 × 10¹⁰ Pa) tem módulo de Young maior do que o osso (E ≈ 2 × 10¹⁰ Pa). Pode concluir-se que o vidro resiste a maior tensão antes de se partir?",
+    "question": "O vidro (E ≈ 7 × 10¹⁰ N/m²) tem módulo de Young maior do que o osso (E ≈ 2 × 10¹⁰ N/m²). Pode concluir-se que o vidro resiste a maior tensão antes de se partir?",
     "options": [
       "Não, porque o módulo de Young mede a rigidez e não a resistência",
       "Sim, porque maior módulo de Young significa maior resistência",
@@ -2556,7 +2556,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2335,
     "topicId": 2,
-    "question": "Admita que o módulo de compressão do osso (1,4 × 10¹⁰ Pa) é inferior ao de tração (1,7 × 10¹⁰ Pa). Sob a mesma tensão, o que acontece?",
+    "question": "Admita que o módulo de compressão do osso (1,4 × 10¹⁰ N/m²) é inferior ao de tração (1,7 × 10¹⁰ N/m²). Sob a mesma tensão, o que acontece?",
     "options": [
       "O osso deforma-se mais em compressão",
       "O osso deforma-se mais em tração",
@@ -2748,16 +2748,16 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Uma vértebra suporta uma força de compressão de 700 N numa área de 15 cm². Qual é a tensão de compressão?",
     "options": [
-      "4,7 × 10³ Pa",
-      "4,7 × 10⁷ Pa",
-      "4,7 × 10⁵ Pa",
-      "1,05 Pa"
+      "4,7 × 10³ N/m²",
+      "4,7 × 10⁷ N/m²",
+      "4,7 × 10⁵ N/m²",
+      "1,05 N/m²"
     ],
     "correctIndex": 2,
-    "explanation": "S = 15 cm² = 15 × 10⁻⁴ m² = 1,5 × 10⁻³ m². Logo σ = 700 / (1,5 × 10⁻³) = 4,7 × 10⁵ Pa.",
+    "explanation": "S = 15 cm² = 15 × 10⁻⁴ m² = 1,5 × 10⁻³ m². Logo σ = 700 / (1,5 × 10⁻³) = 4,7 × 10⁵ N/m².",
     "distractorAnalysis": [
-      "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 4,7 × 10³ Pa.",
-      "Está incorreta: converte 1 cm² como 10⁻⁶ m², o que dá 4,7 × 10⁷ Pa.",
+      "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 4,7 × 10³ N/m².",
+      "Está incorreta: converte 1 cm² como 10⁻⁶ m², o que dá 4,7 × 10⁷ N/m².",
       "Está incorreta: multiplica a força pela área (700 × 15 × 10⁻⁴), em vez de dividir."
     ],
     "nursingApplication": "Este cálculo ilustra a carga sobre a coluna de um utente em pé, que aumenta quando este transporta um objeto pesado."
@@ -2765,7 +2765,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2346,
     "topicId": 2,
-    "question": "Um tendão de 20 cm tem E = 1,2 × 10⁹ Pa e suporta uma tensão de 6,0 × 10⁶ Pa, no regime elástico. Qual é o seu alongamento?",
+    "question": "Um tendão de 20 cm tem E = 1,2 × 10⁹ N/m² e suporta uma tensão de 6,0 × 10⁶ N/m², no regime elástico. Qual é o seu alongamento?",
     "options": [
       "1,0 mm",
       "1,0 cm",
@@ -2784,15 +2784,15 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2347,
     "topicId": 2,
-    "question": "Uma força de 2400 N atua num fémur de secção 6 cm², produzindo uma tensão de 4 × 10⁶ Pa. Se a mesma força atuasse numa secção de 3 cm² (osso mais fino), o que aconteceria à tensão?",
+    "question": "Uma força de 2400 N atua num fémur de secção 6 cm², produzindo uma tensão de 4 × 10⁶ N/m². Se a mesma força atuasse numa secção de 3 cm² (osso mais fino), o que aconteceria à tensão?",
     "options": [
-      "Mantinha-se em 4 × 10⁶ Pa",
-      "Reduzia-se a metade, para 2 × 10⁶ Pa",
-      "Duplicava, para 8 × 10⁶ Pa",
-      "Quadruplicava, para 1,6 × 10⁷ Pa"
+      "Mantinha-se em 4 × 10⁶ N/m²",
+      "Reduzia-se a metade, para 2 × 10⁶ N/m²",
+      "Duplicava, para 8 × 10⁶ N/m²",
+      "Quadruplicava, para 1,6 × 10⁷ N/m²"
     ],
     "correctIndex": 2,
-    "explanation": "Como σ = F / S, reduzir a secção a metade, com a mesma força, duplica a tensão: 2400 / (3 × 10⁻⁴) = 8 × 10⁶ Pa.",
+    "explanation": "Como σ = F / S, reduzir a secção a metade, com a mesma força, duplica a tensão: 2400 / (3 × 10⁻⁴) = 8 × 10⁶ N/m².",
     "distractorAnalysis": [
       "Está incorreta: a tensão é F / S, pelo que depende da área; ao reduzir S, a tensão muda.",
       "Está incorreta: reduzir a área aumenta a tensão, em vez de a diminuir, pois σ = F / S.",
@@ -2841,7 +2841,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2350,
     "topicId": 2,
-    "question": "Um tendão de Aquiles tem secção de 0,80 cm² e rompe quando a tensão de tração atinge cerca de 1,0 × 10⁸ Pa. Qual é, aproximadamente, a força de tração máxima que suporta?",
+    "question": "Um tendão de Aquiles tem secção de 0,80 cm² e rompe quando a tensão de tração atinge cerca de 1,0 × 10⁸ N/m². Qual é, aproximadamente, a força de tração máxima que suporta?",
     "options": [
       "8,0 × 10⁵ N",
       "1,25 × 10¹² N",
@@ -3031,7 +3031,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2360,
     "topicId": 2,
-    "question": "A parede de uma artéria tem E = 1,0 × 10⁶ Pa e está sujeita a uma tensão de 5,0 × 10⁴ Pa, no regime elástico. Qual é a deformação relativa?",
+    "question": "A parede de uma artéria tem E = 1,0 × 10⁶ N/m² e está sujeita a uma tensão de 5,0 × 10⁴ N/m², no regime elástico. Qual é a deformação relativa?",
     "options": [
       "20 (2000 %)",
       "0,50 (50 %)",
@@ -3050,7 +3050,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2361,
     "topicId": 2,
-    "question": "Uma artéria jovem tem E = 1,0 × 10⁶ Pa e a de um idoso tem E = 4,0 × 10⁶ Pa. Sob a mesma tensão, como se comparam as deformações?",
+    "question": "Uma artéria jovem tem E = 1,0 × 10⁶ N/m² e a de um idoso tem E = 4,0 × 10⁶ N/m². Sob a mesma tensão, como se comparam as deformações?",
     "options": [
       "A artéria do idoso deforma-se 4 vezes mais",
       "As duas deformam-se igualmente",
@@ -3145,19 +3145,19 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2366,
     "topicId": 2,
-    "question": "Um material comporta-se como elástico abaixo de 30 Pa e flui acima desse valor. O que se espera ao aplicar 20 Pa e depois 50 Pa?",
+    "question": "Um material comporta-se como elástico abaixo de 30 N/m² e flui acima desse valor. O que se espera ao aplicar 20 N/m² e depois 50 N/m²?",
     "options": [
-      "Com 20 Pa o material flui, e com 50 Pa recupera a forma",
-      "Com 20 Pa e com 50 Pa o material flui e fica deformado",
-      "Com 20 Pa e com 50 Pa a deformação é recuperável",
-      "Com 20 Pa recupera a forma; com 50 Pa flui e fica deformado"
+      "Com 20 N/m² o material flui, e com 50 N/m² recupera a forma",
+      "Com 20 N/m² e com 50 N/m² o material flui e fica deformado",
+      "Com 20 N/m² e com 50 N/m² a deformação é recuperável",
+      "Com 20 N/m² recupera a forma; com 50 N/m² flui e fica deformado"
     ],
     "correctIndex": 3,
-    "explanation": "Abaixo da tensão mínima o material é elástico (20 Pa); acima dela (50 Pa) flui e fica com deformação permanente.",
+    "explanation": "Abaixo da tensão mínima o material é elástico (20 N/m²); acima dela (50 N/m²) flui e fica com deformação permanente.",
     "distractorAnalysis": [
-      "Está incorreta: a relação está invertida: abaixo da tensão mínima (30 Pa) o comportamento é elástico, e acima dela o material flui.",
-      "Está incorreta: aos 20 Pa, abaixo da tensão mínima, o material comporta-se como elástico e não flui.",
-      "Está incorreta: aos 50 Pa, acima da tensão mínima, o material flui e a deformação não é totalmente recuperada."
+      "Está incorreta: a relação está invertida: abaixo da tensão mínima (30 N/m²) o comportamento é elástico, e acima dela o material flui.",
+      "Está incorreta: aos 20 N/m², abaixo da tensão mínima, o material comporta-se como elástico e não flui.",
+      "Está incorreta: aos 50 N/m², acima da tensão mínima, o material flui e a deformação não é totalmente recuperada."
     ],
     "nursingApplication": "Este comportamento explica porque uma pomada espessa fica no sítio e só se espalha quando o enfermeiro aplica pressão suficiente."
   },
@@ -3261,16 +3261,16 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Uma força de 800 N atua sobre uma secção de 2 cm². Qual é a tensão mecânica?",
     "options": [
-      "4 × 10⁴ Pa",
-      "4 × 10⁶ Pa",
-      "4 × 10⁸ Pa",
-      "0,16 Pa"
+      "4 × 10⁴ N/m²",
+      "4 × 10⁶ N/m²",
+      "4 × 10⁸ N/m²",
+      "0,16 N/m²"
     ],
     "correctIndex": 1,
-    "explanation": "σ = F / S, com S = 2 cm² = 2 × 10⁻⁴ m². Logo σ = 800 / (2 × 10⁻⁴) = 4 × 10⁶ Pa.",
+    "explanation": "σ = F / S, com S = 2 cm² = 2 × 10⁻⁴ m². Logo σ = 800 / (2 × 10⁻⁴) = 4 × 10⁶ N/m².",
     "distractorAnalysis": [
-      "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 4 × 10⁴ Pa.",
-      "Está incorreta: converte 1 cm² como 10⁻⁶ m², o que dá 4 × 10⁸ Pa.",
+      "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 4 × 10⁴ N/m².",
+      "Está incorreta: converte 1 cm² como 10⁻⁶ m², o que dá 4 × 10⁸ N/m².",
       "Está incorreta: multiplica a força pela área (800 × 2 × 10⁻⁴), em vez de dividir."
     ],
     "nursingApplication": "Uma agulha de pequena secção concentra a força numa área muito reduzida, o que explica a tensão elevada na pele durante uma punção."
@@ -3278,15 +3278,15 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2373,
     "topicId": 2,
-    "question": "Um material sofre uma tensão de 3,0 × 10⁶ Pa e uma deformação relativa de 0,0020, no regime elástico. Qual é o seu módulo de Young?",
+    "question": "Um material sofre uma tensão de 3,0 × 10⁶ N/m² e uma deformação relativa de 0,0020, no regime elástico. Qual é o seu módulo de Young?",
     "options": [
-      "6,0 × 10³ Pa",
-      "6,7 × 10⁻¹⁰ Pa",
-      "1,5 × 10⁹ Pa",
-      "1,5 × 10⁶ Pa"
+      "6,0 × 10³ N/m²",
+      "6,7 × 10⁻¹⁰ N/m²",
+      "1,5 × 10⁹ N/m²",
+      "1,5 × 10⁶ N/m²"
     ],
     "correctIndex": 2,
-    "explanation": "E = σ / ε = 3,0 × 10⁶ / 0,0020 = 1,5 × 10⁹ Pa.",
+    "explanation": "E = σ / ε = 3,0 × 10⁶ / 0,0020 = 1,5 × 10⁹ N/m².",
     "distractorAnalysis": [
       "Está incorreta: multiplica a tensão pela deformação (σ · ε), em vez de dividir.",
       "Está incorreta: divide a deformação pela tensão (ε / σ), em vez de σ / ε.",
@@ -3297,7 +3297,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2374,
     "topicId": 2,
-    "question": "Um tecido com E = 1,0 × 10⁹ Pa e secção de 3,0 cm² sofre uma deformação relativa de 0,010, no regime elástico. Qual é a força aplicada?",
+    "question": "Um tecido com E = 1,0 × 10⁹ N/m² e secção de 3,0 cm² sofre uma deformação relativa de 0,010, no regime elástico. Qual é a força aplicada?",
     "options": [
       "3,0 × 10⁵ N",
       "3,0 × 10³ N",
@@ -3305,7 +3305,7 @@ const TOPIC_2_QUESTIONS = [
       "3,3 × 10¹⁰ N"
     ],
     "correctIndex": 1,
-    "explanation": "σ = E · ε = 1,0 × 10⁹ × 0,010 = 1,0 × 10⁷ Pa; F = σ · S = 1,0 × 10⁷ × 3,0 × 10⁻⁴ = 3,0 × 10³ N.",
+    "explanation": "σ = E · ε = 1,0 × 10⁹ × 0,010 = 1,0 × 10⁷ N/m²; F = σ · S = 1,0 × 10⁷ × 3,0 × 10⁻⁴ = 3,0 × 10³ N.",
     "distractorAnalysis": [
       "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 3,0 × 10⁵ N.",
       "Está incorreta: usa a área como 3,0 m², esquecendo-se de converter cm² em m².",
@@ -3316,15 +3316,15 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2375,
     "topicId": 2,
-    "question": "Um ligamento de 4,0 cm alonga 0,2 cm e tem E = 2,0 × 10⁸ Pa, no regime elástico. Qual é a tensão aplicada?",
+    "question": "Um ligamento de 4,0 cm alonga 0,2 cm e tem E = 2,0 × 10⁸ N/m², no regime elástico. Qual é a tensão aplicada?",
     "options": [
-      "1,0 × 10⁷ Pa",
-      "4,0 × 10⁹ Pa",
-      "1,0 × 10⁸ Pa",
-      "1,0 × 10⁶ Pa"
+      "1,0 × 10⁷ N/m²",
+      "4,0 × 10⁹ N/m²",
+      "1,0 × 10⁸ N/m²",
+      "1,0 × 10⁶ N/m²"
     ],
     "correctIndex": 0,
-    "explanation": "ε = ΔL / L<sub>0</sub> = 0,2 / 4,0 = 0,05; σ = E · ε = 2,0 × 10⁸ × 0,05 = 1,0 × 10⁷ Pa.",
+    "explanation": "ε = ΔL / L<sub>0</sub> = 0,2 / 4,0 = 0,05; σ = E · ε = 2,0 × 10⁸ × 0,05 = 1,0 × 10⁷ N/m².",
     "distractorAnalysis": [
       "Está incorreta: divide E por ε (E / ε), em vez de multiplicar.",
       "Está incorreta: mistura unidades no quociente, usando ΔL em mm (2 mm) e L<sub>0</sub> em cm (4,0), o que dá ε = 0,5.",
@@ -3373,26 +3373,26 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2378,
     "topicId": 2,
-    "question": "O módulo de Young do osso cortical é cerca de 18 GPa. A quanto corresponde, em Pa?",
+    "question": "O módulo de Young do osso cortical é cerca de 18 × 10⁹ N/m². Como se escreve este valor em notação científica?",
     "options": [
-      "1,8 × 10¹⁰ Pa",
-      "1,8 × 10⁷ Pa",
-      "1,8 × 10¹³ Pa",
-      "1,8 × 10⁻⁸ Pa"
+      "1,8 × 10¹⁰ N/m²",
+      "1,8 × 10⁷ N/m²",
+      "1,8 × 10¹³ N/m²",
+      "1,8 × 10⁻⁸ N/m²"
     ],
     "correctIndex": 0,
-    "explanation": "1 GPa = 10⁹ Pa, logo 18 GPa = 18 × 10⁹ Pa = 1,8 × 10¹⁰ Pa.",
+    "explanation": "18 × 10⁹ = 1,8 × 10 × 10⁹ = 1,8 × 10¹⁰ N/m².",
     "distractorAnalysis": [
-      "Está incorreta: confunde GPa com MPa (10⁶), em vez de 10⁹.",
-      "Está incorreta: toma o prefixo G como 10¹², em vez de 10⁹.",
-      "Está incorreta: inverte o sinal do expoente ao converter (18 × 10⁻⁹ Pa = 1,8 × 10⁻⁸ Pa)."
+      "Está incorreta: troca 10⁹ por 10⁶ ao passar para notação científica (18 × 10⁶ = 1,8 × 10⁷).",
+      "Está incorreta: usa 10¹² em vez de 10⁹ (18 × 10¹² = 1,8 × 10¹³).",
+      "Está incorreta: inverte o sinal do expoente (18 × 10⁻⁹ = 1,8 × 10⁻⁸)."
     ],
-    "nursingApplication": "Converter prefixos corretamente evita erros ao comparar o módulo de Young do osso com o de tecidos moles em tabelas."
+    "nursingApplication": "Escrever corretamente as potências de dez evita erros ao comparar o módulo de Young do osso com o de tecidos moles em tabelas."
   },
   {
     "id": 2379,
     "topicId": 2,
-    "question": "O osso cortical suporta cerca de 200 MPa em compressão. Qual é a força máxima de compressão numa secção de 3 cm²?",
+    "question": "O osso cortical suporta cerca de 2,0 × 10⁸ N/m² em compressão. Qual é a força máxima de compressão numa secção de 3 cm²?",
     "options": [
       "6 × 10⁶ N",
       "6 × 10² N",
@@ -3400,7 +3400,7 @@ const TOPIC_2_QUESTIONS = [
       "6 × 10⁴ N"
     ],
     "correctIndex": 3,
-    "explanation": "F = σ · S = 200 × 10⁶ × 3 × 10⁻⁴ = 6 × 10⁴ N.",
+    "explanation": "F = σ · S = 2,0 × 10⁸ × 3 × 10⁻⁴ = 6 × 10⁴ N.",
     "distractorAnalysis": [
       "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 6 × 10⁶ N.",
       "Está incorreta: converte 1 cm² como 10⁻⁶ m², o que dá 6 × 10² N.",
@@ -3506,7 +3506,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2385,
     "topicId": 2,
-    "question": "Sob a mesma tensão de 4 MPa, quantas vezes mais se deforma um tendão (E ≈ 1 × 10⁹ Pa) do que o osso (E ≈ 2 × 10¹⁰ Pa)?",
+    "question": "Sob a mesma tensão de 4 × 10⁶ N/m², quantas vezes mais se deforma um tendão (E ≈ 1 × 10⁹ N/m²) do que o osso (E ≈ 2 × 10¹⁰ N/m²)?",
     "options": [
       "2 vezes mais",
       "200 vezes mais",
@@ -3525,7 +3525,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2386,
     "topicId": 2,
-    "question": "Um osso comporta-se elasticamente, com E = 2,0 × 10¹⁰ Pa, e está sujeito a uma tensão de compressão de 4,0 × 10⁶ Pa. Qual é a sua deformação relativa?",
+    "question": "Um osso comporta-se elasticamente, com E = 2,0 × 10¹⁰ N/m², e está sujeito a uma tensão de compressão de 4,0 × 10⁶ N/m². Qual é a sua deformação relativa?",
     "options": [
       "2,0 × 10⁻⁴",
       "8,0 × 10¹⁶",
@@ -3603,24 +3603,24 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Uma carga de 4,0 kg está suspensa de um fio de secção 2,0 mm² (g = 9,8 m/s²). Qual é a tensão no fio?",
     "options": [
-      "2,0 × 10⁶ Pa",
-      "2,0 × 10⁴ Pa",
-      "2,0 × 10¹⁰ Pa",
-      "2,0 × 10⁷ Pa"
+      "2,0 × 10⁶ N/m²",
+      "2,0 × 10⁴ N/m²",
+      "2,0 × 10¹⁰ N/m²",
+      "2,0 × 10⁷ N/m²"
     ],
     "correctIndex": 3,
-    "explanation": "P = m · g = 4,0 × 9,8 = 39,2 N; S = 2,0 mm² = 2,0 × 10⁻⁶ m²; σ = 39,2 / (2,0 × 10⁻⁶) ≈ 2,0 × 10⁷ Pa.",
+    "explanation": "P = m · g = 4,0 × 9,8 = 39,2 N; S = 2,0 mm² = 2,0 × 10⁻⁶ m²; σ = 39,2 / (2,0 × 10⁻⁶) ≈ 2,0 × 10⁷ N/m².",
     "distractorAnalysis": [
       "Está incorreta: usa a massa (4,0 kg) em vez do peso (39,2 N), esquecendo-se de multiplicar por g.",
-      "Está incorreta: converte 1 mm² como 10⁻³ m², o que dá 2,0 × 10⁴ Pa.",
-      "Está incorreta: converte 1 mm² como 10⁻⁹ m², o que dá 2,0 × 10¹⁰ Pa."
+      "Está incorreta: converte 1 mm² como 10⁻³ m², o que dá 2,0 × 10⁴ N/m².",
+      "Está incorreta: converte 1 mm² como 10⁻⁹ m², o que dá 2,0 × 10¹⁰ N/m²."
     ],
     "nursingApplication": "O cálculo é análogo ao de um peso suspenso numa tração ortopédica: a tensão no cabo depende da carga e da secção do cabo."
   },
   {
     "id": 2391,
     "topicId": 2,
-    "question": "Quantas vezes é o osso (E ≈ 2 × 10¹⁰ Pa) mais rígido do que uma borracha com E ≈ 1 × 10⁷ Pa?",
+    "question": "Quantas vezes é o osso (E ≈ 2 × 10¹⁰ N/m²) mais rígido do que uma borracha com E ≈ 1 × 10⁷ N/m²?",
     "options": [
       "200 vezes",
       "20 000 vezes",
@@ -3717,13 +3717,13 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Num corpo vertebral, a área de osso que suporta a carga diminui de 10 cm² para 7,0 cm² por osteoporose. A força de compressão mantém-se em 700 N. Qual passa a ser a tensão média no osso?",
     "options": [
-      "4,9 × 10⁵ Pa",
-      "7,0 × 10⁵ Pa",
-      "1,0 × 10⁶ Pa",
-      "1,0 × 10⁴ Pa"
+      "4,9 × 10⁵ N/m²",
+      "7,0 × 10⁵ N/m²",
+      "1,0 × 10⁶ N/m²",
+      "1,0 × 10⁴ N/m²"
     ],
     "correctIndex": 2,
-    "explanation": "Com σ = F / A e 7,0 cm² = 7,0 × 10⁻⁴ m²: σ = 700 / 7,0 × 10⁻⁴ = 1,0 × 10⁶ Pa. Antes, com 10 cm², era 700 / 1,0 × 10⁻³ = 7,0 × 10⁵ Pa. Com a mesma força e menos osso, a tensão aumenta cerca de 1,4 vezes.",
+    "explanation": "Com σ = F / A e 7,0 cm² = 7,0 × 10⁻⁴ m²: σ = 700 / 7,0 × 10⁻⁴ = 1,0 × 10⁶ N/m². Antes, com 10 cm², era 700 / 1,0 × 10⁻³ = 7,0 × 10⁵ N/m². Com a mesma força e menos osso, a tensão aumenta cerca de 1,4 vezes.",
     "distractorAnalysis": [
       "Está incorreta: resulta de multiplicar a tensão inicial pela fração de osso restante (7,0 × 10⁵ × 0,7), como se menos osso desse menos tensão; a tensão é inversamente proporcional à área.",
       "Está incorreta: é a tensão inicial, com 10 cm²; ignora que a mesma força passa a atuar sobre uma área menor.",
@@ -3793,18 +3793,18 @@ const TOPIC_2_QUESTIONS = [
     "topicId": 2,
     "question": "Qual das unidades seguintes NÃO pode ser usada para exprimir a tensão mecânica?",
     "options": [
-      "Pa",
       "N/m²",
+      "N/cm²",
       "N/m",
-      "MPa"
+      "N/mm²"
     ],
     "correctIndex": 2,
-    "explanation": "A tensão é força por unidade de área (Pa = N/m²); N/m é a unidade da constante elástica k.",
+    "explanation": "A tensão é força por unidade de área: N/m², N/cm² e N/mm² têm todas dimensão de força/área; N/m é a unidade da constante elástica k.",
     "distractorAnalysis": [
-      "Está incorreta: o pascal é a unidade SI da tensão mecânica e pode ser usado.",
-      "Está incorreta: N/m² é equivalente ao pascal e pode ser usado.",
-      "Está incorreta: o megapascal é um múltiplo do pascal e pode ser usado."
+      "Está incorreta: o N/m² é a unidade SI da tensão mecânica e pode ser usado.",
+      "Está incorreta: N/cm² é força por unidade de área e pode ser usado (1 N/cm² = 10⁴ N/m²).",
+      "Está incorreta: N/mm² é força por unidade de área e pode ser usado (1 N/mm² = 10⁶ N/m²)."
     ],
-    "nursingApplication": "Saber que 1 Pa = 1 N/m² ajuda a interpretar valores em kPa indicados nas fichas técnicas de dispositivos, como manómetros ou colchões de pressão alternada."
+    "nursingApplication": "Ao ler fichas técnicas de dispositivos de pressão, convém verificar sempre se a área está em m², cm² ou mm², porque os valores diferem por potências de dez."
   }
 ];
