@@ -268,7 +268,7 @@ const TOPIC_2_QUESTIONS = [
     "explanation": "As artérias são elásticas: distendem-se com a sístole e recuperam na diástole, o que amortece a pulsação gerada pelo coração.",
     "distractorAnalysis": [
       "Está incorreta: as artérias mantêm a elasticidade na idade adulta, embora esta diminua com o envelhecimento.",
-      "Está incorreta: o débito cardíaco depende da frequência cardíaca e do volume de ejeção, não da elasticidade arterial, que amortece a pulsação.",
+      "Está incorreta: o débito cardíaco é o produto da frequência cardíaca pelo volume de ejeção; a elasticidade arterial não o aumenta, mas amortece a pulsação e torna o fluxo mais contínuo.",
       "Está incorreta: a elasticidade arterial não substitui o coração; o bombeamento do sangue é gerado pelo miocárdio."
     ],
     "nursingApplication": "A perda de elasticidade das artérias com a idade faz aumentar a pressão de pulso, algo que o enfermeiro deve ter em conta na interpretação da tensão arterial de um idoso."
@@ -328,7 +328,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: nenhum dos dois recupera a forma original quando a tensão é removida; esse comportamento é o dos corpos elásticos.",
       "Está incorreta: a proporcionalidade simples sem dependência do tempo é a do sólido de Hooke, que não se aplica a nenhum dos dois."
     ],
-    "nursingApplication": "Explica porque é que um xarope escorre da colher apenas sob o seu próprio peso, enquanto a massa terapêutica usada na reabilitação da mão só muda de forma quando o doente aperta com força suficiente."
+    "nursingApplication": "Explica porque é que um xarope escorre da colher apenas sob o seu próprio peso, enquanto a argila só muda de forma quando se aplica uma força suficiente."
   },
   {
     "id": 2218,
@@ -565,11 +565,11 @@ const TOPIC_2_QUESTIONS = [
     "options": [
       "Vale para qualquer intensidade de força, em todos os materiais elásticos conhecidos.",
       "Vale apenas para corpos viscosos, como o mel, cuja deformação depende do tempo.",
-      "Só vale até ao limite de proporcionalidade; a borracha e o tendão são não lineares.",
+      "Só vale até ao limite de proporcionalidade; materiais como a borracha não são lineares.",
       "Vale apenas para a compressão, pois na tração a relação deixa de ser linear."
     ],
     "correctIndex": 2,
-    "explanation": "A relação linear σ = E · ε só é válida na zona de proporcionalidade. Há materiais elásticos não lineares, como a borracha e o tendão, em que E não é constante.",
+    "explanation": "A relação linear σ = E · ε só é válida na zona de proporcionalidade. Há materiais elásticos não lineares, como a borracha, e o tendão tem uma zona inicial não linear antes da zona aproximadamente linear, pelo que E não é constante em toda a curva.",
     "distractorAnalysis": [
       "Está incorreta: a proporcionalidade deixa de existir acima do limite, e vários materiais elásticos não são lineares.",
       "Está incorreta: os corpos viscosos não seguem a lei de Hooke, porque a sua deformação depende do tempo.",
@@ -1107,7 +1107,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: multiplica a força pela constante, em vez de dividir, o que dá 25 000 m.",
       "Está incorreta: confunde centímetros com metros, pois 2,5 cm são 0,025 m e não 2,5 m."
     ],
-    "nursingApplication": "A leitura de um dinamómetro de mola depende da sua calibração em newtons, pelo que o alongamento indicado na escala deve ser convertido corretamente antes de interpretar a força aplicada."
+    "nursingApplication": "Num dinamómetro de mola muito rígido, uma força de 25 N produz apenas 2,5 cm de alongamento, pelo que a escala tem de ser fina para medir forças pequenas com precisão."
   },
   {
     "id": 2259,
@@ -1278,7 +1278,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: a rigidez intrínseca é dada por E, uma propriedade do material, e não depende apenas da área da secção.",
       "Está incorreta: com maior declive, o material A suporta uma tensão maior para a mesma deformação, e não menor."
     ],
-    "nursingApplication": "Ao comparar a resposta de dois tecidos a uma mesma pressão, o que interessa é o declive da zona linear, porque indica quanto cada tecido cede."
+    "nursingApplication": "Ao comparar dois tecidos sujeitos à mesma tensão, o que interessa é o declive da zona linear (E), porque indica quanto cada tecido se deforma."
   },
   {
     "id": 2268,
@@ -1652,10 +1652,10 @@ const TOPIC_2_QUESTIONS = [
       "Duplica."
     ],
     "correctIndex": 3,
-    "explanation": "A pressão de interface é σ = F / S. Com a mesma força e metade da área, a pressão duplica.",
+    "explanation": "A pressão de interface é p = F / S. Com a mesma força e metade da área, a pressão duplica.",
     "distractorAnalysis": [
       "Está incorreta: a pressão é inversamente proporcional à área; reduzir a área aumenta a pressão, e não a reduz.",
-      "Está incorreta: ignora a área, que é o denominador de σ = F / S.",
+      "Está incorreta: ignora a área, que é o denominador de p = F / S.",
       "Está incorreta: a relação é inversa e linear, pelo que o fator é 2 e não 4."
     ],
     "nursingApplication": "Colchões de distribuição de pressão aumentam a área de contacto com o corpo, reduzindo a pressão de interface sobre as zonas de risco, como o sacro e os calcanhares."
@@ -1671,7 +1671,7 @@ const TOPIC_2_QUESTIONS = [
       "1,5 × 10³ Pa"
     ],
     "correctIndex": 2,
-    "explanation": "σ = F / S = 300 N / 0,02 m² = 1,5 × 10⁴ Pa.",
+    "explanation": "p = F / S = 300 N / 0,02 m² = 1,5 × 10⁴ Pa.",
     "distractorAnalysis": [
       "Está incorreta: multiplica a força pela área, em vez de dividir, o que dá 6,0 Pa.",
       "Está incorreta: lê 0,02 m² como 2 m², o que dá 1,5 × 10² Pa.",
@@ -1842,7 +1842,7 @@ const TOPIC_2_QUESTIONS = [
       "A elasticidade é perfeita, pelo que o tecido recupera de imediato, sem necessidade de alívio."
     ],
     "correctIndex": 2,
-    "explanation": "Num tecido viscoelástico, a deformação sob carga constante aumenta com o tempo, e a recuperação só ocorre quando a pressão é aliviada. Por isso, o reposicionamento deve ser planeado.",
+    "explanation": "Num tecido viscoelástico, a deformação sob carga constante aumenta com o tempo, e a recuperação só ocorre quando a pressão é aliviada. Além disso, a pressão e a deformação mantidas reduzem a perfusão local e podem causar isquemia; aliviar a carga permite a reperfusão e a recuperação do tecido. Por isso, o reposicionamento deve ser planeado.",
     "distractorAnalysis": [
       "Está incorreta: sob carga constante, a deformação dos tecidos viscoelásticos aumenta com o tempo, e não diminui.",
       "Está incorreta: a carga mantém-se enquanto o doente estiver apoiado, pelo que não desaparece com o tempo.",
@@ -1948,7 +1948,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2303,
     "topicId": 2,
-    "question": "Segundo o esquema da aula, que percentagem aproximada do osso corresponde à fase mineral?",
+    "question": "Que percentagem aproximada do osso corresponde à fase mineral?",
     "options": [
       "≈ 22 %",
       "≈ 90 %",
@@ -2100,7 +2100,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2311,
     "topicId": 2,
-    "question": "Um osso longo resiste de forma diferente a uma carga aplicada ao longo do eixo e a uma carga aplicada perpendicularmente ao eixo. Que propriedade descreve este comportamento?",
+    "question": "Amostras de osso cortical da diáfise têm módulo de Young e resistência maiores quando a carga é aplicada ao longo do eixo do osso do que quando é aplicada perpendicularmente a ele. Que propriedade descreve este comportamento?",
     "options": [
       "Isotropia",
       "Superelasticidade",
@@ -2114,12 +2114,12 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: a superelasticidade não é uma propriedade do osso, que não recupera grandes deformações.",
       "Está incorreta: a plasticidade refere-se à deformação permanente acima de uma tensão limiar, e não à dependência da direção da carga."
     ],
-    "nursingApplication": "A anisotropia contribui para explicar porque um osso longo suporta bem o peso do corpo ao longo do eixo e é mais vulnerável a pancadas laterais, como numa queda de lado."
+    "nursingApplication": "A anisotropia é uma das razões pelas quais o osso cortical, orientado segundo o eixo, suporta bem as cargas da marcha e é mais vulnerável a cargas noutras direções, como numa queda de lado."
   },
   {
     "id": 2312,
     "topicId": 2,
-    "question": "Qual é a função dos osteócitos descrita na aula?",
+    "question": "Qual é a função dos osteócitos no osso?",
     "options": [
       "Formar osso novo orientado segundo as forças",
       "Detetar as cargas mecânicas (mecanotransdução)",
@@ -2186,7 +2186,7 @@ const TOPIC_2_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "As trabéculas em leque acompanham as linhas de tensão máxima, o que dá resistência com pouca massa, em linha com a lei de Wolff.",
     "distractorAnalysis": [
-      "Está incorreta: a disposição das trabéculas melhora a resposta às cargas, mas o módulo de Young depende do material e não do leque.",
+      "Está incorreta: o objetivo da disposição em leque não é alterar o módulo de Young do material, mas alinhar as trabéculas com as linhas de tensão máxima, com o mínimo de massa.",
       "Está incorreta: a orientação das trabéculas resulta da remodelação e acompanha as linhas de força a que o osso está sujeito.",
       "Está incorreta: o osso deforma-se sempre ligeiramente sob carga; o sólido indeformável é apenas um modelo teórico."
     ],
@@ -2285,7 +2285,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: o osso suporta menos tensão em tração (≈ 135 MPa) do que em compressão (≈ 200 MPa).",
       "Está incorreta: rigidez e resistência são grandezas diferentes: o módulo de Young não determina a tensão de rotura."
     ],
-    "nursingApplication": "Isto explica porque uma pancada lateral que flete a diáfise, tracionando o lado convexo, pode fraturar o osso com menos carga do que uma compressão axial."
+    "nursingApplication": "Isto ajuda a perceber porque, numa pancada lateral que flete a diáfise, a fratura começa geralmente no lado convexo, que fica tracionado."
   },
   {
     "id": 2321,
@@ -2570,7 +2570,7 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: módulos diferentes implicam deformações diferentes para a mesma tensão.",
       "Está incorreta: o osso é elástico e deforma-se sempre ligeiramente sob qualquer tensão, pois não é um sólido indeformável."
     ],
-    "nursingApplication": "Na marcha de um utente, a diáfise da tíbia é sobretudo comprimida, e é o módulo de compressão que determina o seu pequeno encurtamento a cada passo."
+    "nursingApplication": "Este cálculo mostra que, para a mesma tensão, a deformação relativa é inversamente proporcional ao módulo de Young, o que permite comparar a resposta de tecidos diferentes à carga."
   },
   {
     "id": 2336,
@@ -2979,14 +2979,14 @@ const TOPIC_2_QUESTIONS = [
       "Diminui, ficando as artérias mais rígidas",
       "Aumenta, ficando as artérias mais elásticas",
       "Mantém-se igual durante toda a vida",
-      "Desaparece por completo aos 40 anos"
+      "Diminui apenas em utentes com hipertensão"
     ],
     "correctIndex": 0,
     "explanation": "Com a idade, há perda de distensibilidade e as artérias ficam mais rígidas.",
     "distractorAnalysis": [
       "Está incorreta: com a idade as artérias perdem elasticidade e tornam-se mais rígidas, e não mais elásticas.",
       "Está incorreta: a distensibilidade das artérias diminui progressivamente com a idade e não se mantém constante.",
-      "Está incorreta: a diminuição é gradual e não desaparece por completo numa idade específica."
+      "Está incorreta: a perda de distensibilidade com a idade ocorre também em pessoas sem hipertensão, embora esta a acelere."
     ],
     "nursingApplication": "Esta rigidez arterial é uma das razões para o enfermeiro acompanhar com atenção a pressão arterial dos utentes idosos."
   },
@@ -3316,15 +3316,15 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2375,
     "topicId": 2,
-    "question": "Um ligamento de 4,0 cm alonga 0,2 cm e tem E = 2,0 × 10⁷ Pa, no regime elástico. Qual é a tensão aplicada?",
+    "question": "Um ligamento de 4,0 cm alonga 0,2 cm e tem E = 2,0 × 10⁸ Pa, no regime elástico. Qual é a tensão aplicada?",
     "options": [
-      "1,0 × 10⁶ Pa",
-      "4,0 × 10⁸ Pa",
       "1,0 × 10⁷ Pa",
-      "1,0 × 10⁵ Pa"
+      "4,0 × 10⁹ Pa",
+      "1,0 × 10⁸ Pa",
+      "1,0 × 10⁶ Pa"
     ],
     "correctIndex": 0,
-    "explanation": "ε = ΔL / L<sub>0</sub> = 0,2 / 4,0 = 0,05; σ = E · ε = 2,0 × 10⁷ × 0,05 = 1,0 × 10⁶ Pa.",
+    "explanation": "ε = ΔL / L<sub>0</sub> = 0,2 / 4,0 = 0,05; σ = E · ε = 2,0 × 10⁸ × 0,05 = 1,0 × 10⁷ Pa.",
     "distractorAnalysis": [
       "Está incorreta: divide E por ε (E / ε), em vez de multiplicar.",
       "Está incorreta: mistura unidades no quociente, usando ΔL em mm (2 mm) e L<sub>0</sub> em cm (4,0), o que dá ε = 0,5.",
@@ -3704,13 +3704,13 @@ const TOPIC_2_QUESTIONS = [
       "Esponja e cartilagem"
     ],
     "correctIndex": 0,
-    "explanation": "A mola, o elástico de borracha e o fio de nylon aproximam-se de sólidos de Hooke, dentro do limite de proporcionalidade.",
+    "explanation": "A mola e o fio de nylon aproximam-se de sólidos de Hooke para pequenas deformações, dentro do limite de proporcionalidade.",
     "distractorAnalysis": [
       "Está incorreta: a água e o mel são corpos viscosos.",
       "Está incorreta: a plasticina e a argila são corpos plásticos.",
       "Está incorreta: a esponja e a cartilagem são corpos viscoelásticos."
     ],
-    "nursingApplication": "Estes materiais são úteis no fabrico de dispositivos de reabilitação com resposta previsível, como as bandas elásticas de exercício."
+    "nursingApplication": "As molas de aço com comportamento próximo do de Hooke são usadas em dinamómetros de preensão, porque a força medida é proporcional ao alongamento."
   },
   {
     "id": 2396,
@@ -3742,9 +3742,9 @@ const TOPIC_2_QUESTIONS = [
       "Só suporta cargas de tração, nunca de compressão"
     ],
     "correctIndex": 0,
-    "explanation": "O osso é anisotrópico: em geral, resiste melhor à carga ao longo do eixo do que a cargas transversais.",
+    "explanation": "Ao longo do eixo a carga produz sobretudo compressão, enquanto uma carga perpendicular flete o osso e gera tensões muito maiores na periferia; além disso, o osso cortical é anisotrópico e mais resistente na direção longitudinal.",
     "distractorAnalysis": [
-      "Está incorreta: o osso é anisotrópico e, em geral, resiste menos a cargas transversais do que a cargas longitudinais.",
+      "Está incorreta: uma carga perpendicular flete o osso, gerando tensões elevadas na periferia, e o osso cortical é também menos resistente na direção transversal.",
       "Está incorreta: por ser anisotrópico, o osso responde de modo diferente conforme a direção da carga.",
       "Está incorreta: o osso suporta tanto tração como compressão, e até resiste mais à compressão."
     ],

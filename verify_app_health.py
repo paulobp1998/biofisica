@@ -42,11 +42,11 @@ def test_app():
         assert exp_script in scripts, f"Missing script: {exp_script}"
     print("✓ All required script tags in index.html are present and ordered correctly.")
 
-    # 2. Check UI text reflects active Topic 1 (200 questions) and locked topics
-    assert "200 Questões de Biofísica Ativas (Tópico 1)" in html
+    # 2. Check UI text reflects active Topics 1 and 2 (400 questions) and locked topics
+    assert "400 Questões de Biofísica Ativas (Tópicos 1 e 2)" in html
     assert "400 perguntas" in html or "400 Questões" in html
     assert "bloqueados" in html.lower()
-    print("✓ UI metadata in index.html properly reflects active Topic 1 (200 questions) and teacher panel (400 questions).")
+    print("✓ UI metadata in index.html properly reflects active Topics 1 and 2 (400 questions) and teacher panel (400 questions).")
 
     # 3. Load Questions Data
     all_questions = []
