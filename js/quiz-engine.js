@@ -153,7 +153,9 @@ class QuizEngine {
       correctIndex: newCorrectIndex,
       explanation: q.explanation,
       distractorAnalysis: shuffledDistractorAnalysis,
-      nursingApplication: q.nursingApplication
+      solution: q.solution,
+      nursingApplication: q.nursingApplication,
+      optionOrder: shuffledIndices // posição original (no banco) de cada opção mostrada
     };
   }
 
@@ -300,6 +302,11 @@ class QuizEngine {
     };
   }
 
+  // Índice da opção escolhida no banco (antes de baralhar); -1 se não houver resposta ou mapeamento
+  originalOptionIndex(q, shownIndex) {
+    return shownIndex >= 0 && Array.isArray(q.optionOrder) ? q.optionOrder[shownIndex] : -1;
+  }
+
   submitAnswer(selectedIndex) {
     const currentQ = this.currentQuestions[this.currentIndex];
     const isCorrect = (selectedIndex === currentQ.correctIndex);
@@ -319,7 +326,9 @@ class QuizEngine {
         isCorrect: isCorrect,
         explanation: currentQ.explanation,
         distractorAnalysis: currentQ.distractorAnalysis,
+        solution: currentQ.solution,
         nursingApplication: currentQ.nursingApplication,
+        originalSelected: this.originalOptionIndex(currentQ, selectedIndex),
         isRetry: !!currentQ.isRetry
       };
       this.userAnswers[this.currentIndex] = answerRecord;
@@ -346,7 +355,9 @@ class QuizEngine {
       isCorrect: isCorrect,
       explanation: currentQ.explanation,
       distractorAnalysis: currentQ.distractorAnalysis,
+      solution: currentQ.solution,
       nursingApplication: currentQ.nursingApplication,
+      originalSelected: this.originalOptionIndex(currentQ, selectedIndex),
       isRetry: !!currentQ.isRetry
     };
 
@@ -389,7 +400,9 @@ class QuizEngine {
           isCorrect: false,
           explanation: q.explanation,
           distractorAnalysis: q.distractorAnalysis,
+          solution: q.solution,
           nursingApplication: q.nursingApplication,
+          originalSelected: -1,
           isRetry: !!q.isRetry
         };
       }

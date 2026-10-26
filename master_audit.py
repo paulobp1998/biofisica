@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Master Audit Script for the question bank (Topics 1 to 8)
-Active: Topic 1 (200 questions, IDs 1001-1200) and Topic 2 (200 questions, IDs 2201-2400).
+Active: Topic 1 (200 questions, IDs 1001-1200) and Topic 2 (200 questions, IDs 2201-2404; 2234, 2235, 2273 and 2298 removed).
 Topics 3-8 are empty and are skipped.
 """
 

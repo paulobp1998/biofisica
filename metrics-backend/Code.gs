@@ -3,6 +3,7 @@
    - Métricas de utilização (eventos anónimos dos alunos)
    - Biblioteca de quizzes pré-preparados do docente (folha "quizzes")
    - Resumo das sessões da Arena (folha "resultados")
+   - Reportes de problemas nas perguntas, enviados pelos alunos (folha "reportes")
    Ver README.md nesta pasta para a configuração (≈ 5 minutos).
    ========================================================================= */
 
@@ -13,13 +14,16 @@ const READ_KEY = 'TROQUE-ESTA-CHAVE-SECRETA';
 const SHEET_ID = 'COLE-AQUI-O-ID-DA-FOLHA';
 const SHEET_NAME = 'eventos';
 const HEADERS = ['timestamp', 'type', 'clientId', 'mode', 'title', 'topicId', 'feedbackMode',
-  'answered', 'correct', 'grade20', 'seconds', 'partial', 'answers'];
+  'answered', 'correct', 'grade20', 'seconds', 'partial', 'answers', 'choices'];
 const MODES = ['topic', 'exam', 'custom'];
 const QUIZ_SHEET = 'quizzes';
 const QUIZ_HEADERS = ['id', 'name', 'questionIds', 'updatedAt'];
 const QUIZ_SIZE = 20;
 const RESULT_SHEET = 'resultados';
 const RESULT_HEADERS = ['timestamp', 'sessionStart', 'roomPin', 'quizName', 'team', 'rank', 'score', 'correct', 'questionsTotal'];
+const REPORT_SHEET = 'reportes';
+const REPORT_HEADERS = ['timestamp', 'clientId', 'questionId', 'reason', 'comment'];
+const REPORT_REASONS = ['chave', 'enunciado', 'calculo', 'escrita', 'outro'];
 
 // Recebe eventos dos alunos (visita ou fim de sessão) e pedidos do docente
 function doPost(e) {
@@ -29,12 +33,20 @@ function doPost(e) {
       return teacherPost_(data);
     }
 
+    if (data && data.type === 'report') {
+      const reportError = validateReport_(data);
+      if (reportError) return json_({ ok: false, error: reportError });
+      getSheet_(REPORT_SHEET, REPORT_HEADERS).appendRow([new Date(), data.clientId, data.questionId, data.reason,
+        safeCell_(String(data.comment || '').slice(0, 300))]);
+      return json_({ ok: true });
+    }
+
     const error = validate_(data);
     if (error) return json_({ ok: false, error: error });
 
     const row = [new Date(), data.type, data.clientId];
     if (data.type === 'visit') {
-      row.push('', '', '', '', '', '', '', '', '', '');
+      row.push('', '', '', '', '', '', '', '', '', '', '');
     } else {
       row.push(
         data.mode,
@@ -46,7 +58,8 @@ function doPost(e) {
         data.grade20,
         data.seconds,
         data.partial === true,
-        data.answers
+        data.answers,
+        validChoices_(data.choices, data.answered) ? data.choices : ''
       );
     }
 
@@ -141,6 +154,22 @@ function validate_(d) {
   return null;
 }
 
+// Opções escolhidas (ordem do banco, -1 = sem resposta). Opcional: se vier mal formado, é ignorado.
+function validChoices_(choices, answered) {
+  if (typeof choices !== 'string' || choices.length > 1000) return false;
+  let list;
+  try { list = JSON.parse(choices); } catch (err) { return false; }
+  return Array.isArray(list) && list.length === answered && list.every(function (c) { return isInt_(c, -1, 3); });
+}
+
+function validateReport_(d) {
+  if (typeof d.clientId !== 'string' || !/^[a-f0-9]{24}$/.test(d.clientId)) return 'clientId inválido';
+  if (!isInt_(d.questionId, 1, 99999)) return 'questionId inválido';
+  if (REPORT_REASONS.indexOf(d.reason) < 0) return 'motivo inválido';
+  if (d.comment != null && (typeof d.comment !== 'string' || d.comment.length > 300)) return 'comentário inválido';
+  return null;
+}
+
 function isInt_(v, min, max) {
   return typeof v === 'number' && v === Math.floor(v) && v >= min && v <= max;
 }
@@ -159,6 +188,14 @@ function doGet(e) {
       return { id: String(r[0]), name: String(r[1]), questionIds: ids, updatedAt: String(r[3]) };
     });
     return json_({ ok: true, quizzes: quizzes });
+  }
+  if (e.parameter.action === 'reports') {
+    const values = getSheet_(REPORT_SHEET, REPORT_HEADERS).getDataRange().getValues();
+    values.shift();
+    const reports = values.filter(function (r) { return r[2]; }).map(function (r) {
+      return { timestamp: r[0], questionId: Number(r[2]), reason: String(r[3]), comment: String(r[4] || '') };
+    });
+    return json_({ ok: true, reports: reports });
   }
   const values = getSheet_().getDataRange().getValues();
   const headers = values.shift();
@@ -193,6 +230,9 @@ function getSheet_(name, headers) {
     sheet = ss.insertSheet(sheetName);
     sheet.appendRow(headers || HEADERS);
     sheet.setFrozenRows(1);
+  } else if (sheet.getLastColumn() < (headers || HEADERS).length) {
+    // Folha criada por uma versão anterior: acrescenta os cabeçalhos das colunas novas
+    sheet.getRange(1, 1, 1, (headers || HEADERS).length).setValues([headers || HEADERS]);
   }
   return sheet;
 }

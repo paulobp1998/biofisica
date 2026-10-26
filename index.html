@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BioFísica Interativa | Enfermagem (1.º Ano)</title>
   <meta name="description" content="Plataforma interativa e 100% gratuita para estudantes do 1.º ano de Licenciatura em Enfermagem praticarem os conteúdos de Biofísica com questões de escolha múltipla e aplicações clínicas.">
-  <link rel="stylesheet" href="css/style.css?v=4.4">
+  <link rel="stylesheet" href="css/style.css?v=4.5">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🩺</text></svg>">
 </head>
 <body>
@@ -189,7 +189,7 @@
         <div class="quiz-ai-banner" id="quiz-ai-banner">
           <span class="quiz-ai-icon">📢</span>
           <span class="quiz-ai-text">
-            Perguntas com auxílio de IA. Se encontrar incorreções, copie o número (<strong id="quiz-qid-banner-tag">Pergunta N · Tópico T</strong>) e informe o docente na próxima aula.
+            Perguntas com auxílio de IA. Se encontrar incorreções, use 🚩 Reportar problema depois de responder ou indique o número (<strong id="quiz-qid-banner-tag">Pergunta N · Tópico T</strong>) ao docente.
           </span>
         </div>
 
@@ -227,7 +227,8 @@
         <div class="feedback-card hidden" id="feedback-card">
           <div class="feedback-meta-header">
             <span class="feedback-qid-tag" id="feedback-qid-tag">🏷️ Pergunta N · Tópico T</span>
-            <span class="feedback-report-hint">Se discordar desta resposta, copie o número e informe o docente na próxima aula.</span>
+            <button type="button" class="btn btn-sm btn-outline btn-report-question hidden" id="btn-report-question" title="Avisar o docente de um possível erro nesta pergunta">🚩 Reportar problema</button>
+            <span class="feedback-report-hint" id="feedback-report-hint">Se discordar desta resposta, copie o número e informe o docente na próxima aula.</span>
           </div>
           <h4 class="feedback-title" id="feedback-title">Feedback</h4>
           <div class="feedback-explanation" id="feedback-explanation"></div>
@@ -1154,8 +1155,13 @@
         </div>
 
         <div class="metrics-card">
-          <h2>Perguntas mais difíceis</h2>
+          <h2>Perguntas a rever</h2>
           <div id="metrics-hardest"></div>
+        </div>
+
+        <div class="metrics-card">
+          <h2>Reportes dos alunos</h2>
+          <div id="metrics-reports"></div>
         </div>
 
         <div class="metrics-card">
@@ -1260,8 +1266,8 @@
             <div class="teacher-filter-group" style="flex: 1; min-width: 180px;">
               <label class="teacher-filter-label" for="teacher-sort-select">Ordenação:</label>
               <select id="teacher-sort-select" class="form-control">
-                <option value="id-asc" selected>ID Crescente (#1001 ➔ #2400)</option>
-                <option value="id-desc">ID Decrescente (#2400 ➔ #1001)</option>
+                <option value="id-asc" selected>ID Crescente (#1001 ➔ #2404)</option>
+                <option value="id-desc">ID Decrescente (#2404 ➔ #1001)</option>
               </select>
             </div>
           </div>
@@ -1524,6 +1530,37 @@
       </div>
     </div>
 
+    <!-- Modal para reportar um problema numa pergunta -->
+    <div id="modal-report" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modal-report-title">
+      <div class="modal-card" style="max-width: 480px;">
+        <div class="modal-header">
+          <div>
+            <h3 id="modal-report-title">🚩 Reportar problema · <span id="report-qid"></span></h3>
+            <p class="modal-subtitle">O reporte é anónimo e chega ao docente, que revê a pergunta.</p>
+          </div>
+          <button class="modal-close" id="btn-close-report-modal" aria-label="Fechar">✕</button>
+        </div>
+        <div class="modal-body">
+          <form id="form-report" class="report-form" onsubmit="return false;">
+            <fieldset class="report-reasons">
+              <legend>Qual é o problema?</legend>
+              <label><input type="radio" name="report-reason" value="chave" required> A resposta marcada como certa parece errada</label>
+              <label><input type="radio" name="report-reason" value="enunciado"> O enunciado é ambíguo ou faltam dados</label>
+              <label><input type="radio" name="report-reason" value="calculo"> Há um erro de cálculo ou de unidades</label>
+              <label><input type="radio" name="report-reason" value="escrita"> Gralha ou erro de português</label>
+              <label><input type="radio" name="report-reason" value="outro"> Outro</label>
+            </fieldset>
+            <label for="report-comment" class="report-comment-label">Explica em poucas palavras (opcional, sem dados pessoais):</label>
+            <textarea id="report-comment" class="report-comment" maxlength="300" rows="3" placeholder="Ex.: pela fórmula M = F · b obtenho 15 N·m e não 1,5 N·m."></textarea>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline" id="btn-cancel-report-modal">Cancelar</button>
+          <button class="btn btn-primary" id="btn-send-report">Enviar reporte</button>
+        </div>
+      </div>
+    </div>
+
     <!-- Modal de revisão teórica (aberto a partir do quiz, resultados, estatísticas e glossário) -->
     <div id="modal-theory" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modal-theory-title">
       <div class="modal-card modal-theory-card">
@@ -1610,8 +1647,8 @@
   </footer>
 
   <!-- Banco de Questões por Tópico (400 questões certificadas nos Tópicos 1 e 2) -->
-  <script src="js/data/topic1.js?v=5.0"></script>
-  <script src="js/data/topic2.js?v=4.7"></script>
+  <script src="js/data/topic1.js?v=5.1"></script>
+  <script src="js/data/topic2.js?v=4.9"></script>
   <script src="js/data/topic3.js?v=3.5"></script>
   <script src="js/data/topic4.js?v=3.5"></script>
   <script src="js/data/topic5.js?v=3.5"></script>
@@ -1619,10 +1656,10 @@
   <script src="js/data/topic7.js?v=3.5"></script>
   <script src="js/data/topic8.js?v=3.5"></script>
   <script src="js/questions-data.js?v=3.9"></script>
-  <script src="js/study-content.js?v=1.9"></script>
+  <script src="js/study-content.js?v=2.0"></script>
   <script src="js/study-figures.js?v=1.2"></script>
   <script src="js/question-figures.js?v=1.0"></script>
-  <script src="js/quiz-engine.js?v=4.0"></script>
+  <script src="js/quiz-engine.js?v=4.1"></script>
 
   <!-- Arena BioFísica (Multiplayer em Tempo Real na Aula - 100% Gratuito) -->
   <script src="js/lib/paho-mqtt.min.js"></script>
@@ -1632,7 +1669,7 @@
   <script src="js/arena-ui.js?v=4.2"></script>
   <script src="js/teacher-manager.js?v=3.6"></script>
   <script src="js/quiz-sync.js?v=1.2"></script>
-  <script src="js/metrics.js?v=1.1"></script>
-  <script src="js/app.js?v=4.2"></script>
+  <script src="js/metrics.js?v=1.2"></script>
+  <script src="js/app.js?v=4.3"></script>
 </body>
 </html>

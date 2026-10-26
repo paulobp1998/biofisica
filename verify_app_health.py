@@ -75,8 +75,10 @@ def test_app():
     t1_ids = sorted(q["id"] for q in all_questions if q["topicId"] == 1)
     t2_ids = sorted(q["id"] for q in all_questions if q["topicId"] == 2)
     assert t1_ids == list(range(1001, 1201)), "Topic 1 IDs must be 1001-1200"
-    assert t2_ids == list(range(2201, 2401)), "Topic 2 IDs must be 2201-2400"
-    print("✓ All 400 IDs are unique and contiguous per topic block (1001-1200 and 2201-2400).")
+    # 2234, 2235, 2273 e 2298 foram removidas (dependiam de k = E·A/L₀) e os IDs não se reutilizam
+    removed_t2 = {2234, 2235, 2273, 2298}
+    assert t2_ids == [i for i in range(2201, 2405) if i not in removed_t2], "Topic 2 IDs must be 2201-2404 without the removed ones"
+    print("✓ All 400 IDs are unique (1001-1200 and 2201-2404, without the 4 removed IDs).")
 
     # 5. Check search index simulation
     keywords = ["Inércia", "Momento", "Hooke", "Young", "Cisalhamento", "Compressão", "Alavanca", "Newton", "Atrito"]

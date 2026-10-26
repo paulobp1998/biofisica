@@ -77,8 +77,56 @@ const Metrics = (() => {
       seconds: seconds,
       partial: !!partial,
       // [id da pergunta, tópico, 1 = certa / 0 = errada]
-      answers: JSON.stringify(answered.map(a => [a.questionId, a.topicId, a.isCorrect ? 1 : 0]))
+      answers: JSON.stringify(answered.map(a => [a.questionId, a.topicId, a.isCorrect ? 1 : 0])),
+      // opção escolhida, na ordem do banco (0–3; -1 = sem resposta): mostra que distratores atraem mais
+      choices: JSON.stringify(answered.map(a => Number.isInteger(a.originalSelected) ? a.originalSelected : -1))
     });
+  }
+
+  // Reporte de um problema numa pergunta (anónimo). Devolve false se não puder ser enviado.
+  const REPORTS_KEY = 'biofisica_reports_sent';
+  const REPORTS_PER_DAY = 10;
+  const REPORT_REASONS = ['chave', 'enunciado', 'calculo', 'escrita', 'outro'];
+
+  function reportsSentToday() {
+    try {
+      const data = JSON.parse(localStorage.getItem(REPORTS_KEY) || '{}');
+      return data.day === dayKey(new Date()) ? data : { day: dayKey(new Date()), ids: [] };
+    } catch (e) {
+      return { day: dayKey(new Date()), ids: [] };
+    }
+  }
+
+  function canReport(questionId) {
+    if (!isEnabled()) return 'disabled';
+    const sent = reportsSentToday();
+    if (sent.ids.includes(questionId)) return 'duplicate';
+    if (sent.ids.length >= REPORTS_PER_DAY) return 'limit';
+    return 'ok';
+  }
+
+  function report(questionId, reason, comment) {
+    if (canReport(questionId) !== 'ok' || REPORT_REASONS.indexOf(reason) < 0) return false;
+    const sent = reportsSentToday();
+    sent.ids.push(questionId);
+    try { localStorage.setItem(REPORTS_KEY, JSON.stringify(sent)); } catch (e) {}
+    // Enviado mesmo com a sessão do docente aberta (útil para testar)
+    try {
+      fetch(METRICS_ENDPOINT, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify({
+          type: 'report',
+          clientId: clientId(),
+          questionId: questionId,
+          reason: reason,
+          comment: String(comment || '').trim().slice(0, 300)
+        }),
+        keepalive: true
+      }).catch(() => {});
+    } catch (e) { return false; }
+    return true;
   }
 
   // ---------- Painel do docente ----------
@@ -118,12 +166,16 @@ const Metrics = (() => {
     const perQ = {}, perTopic = {};
     let answered = 0, correct = 0;
     sessions.forEach(s => {
-      let list = [];
+      let list = [], choices = [];
       try { list = JSON.parse(s.answers || '[]'); } catch (e) {}
-      list.forEach(([qid, topic, ok]) => {
+      try { choices = JSON.parse(s.choices || '[]'); } catch (e) {}
+      if (!Array.isArray(choices) || choices.length !== list.length) choices = [];
+      list.forEach(([qid, topic, ok], i) => {
         answered++; correct += ok;
-        const q = perQ[qid] = perQ[qid] || { topic, n: 0, ok: 0 };
+        const q = perQ[qid] = perQ[qid] || { topic, n: 0, ok: 0, picks: [0, 0, 0, 0], nPicks: 0 };
         q.n++; q.ok += ok;
+        const c = choices[i];
+        if (Number.isInteger(c) && c >= 0 && c <= 3) { q.picks[c]++; q.nPicks++; }
         const t = perTopic[topic] = perTopic[topic] || { n: 0, ok: 0 };
         t.n++; t.ok += ok;
       });
@@ -153,7 +205,82 @@ const Metrics = (() => {
       </div>`).join('') || '<p class="metrics-empty">Ainda sem dados.</p>';
   }
 
-  function render(a) {
+  // Análise das perguntas: sinaliza as que convém rever (muito difíceis, muito fáceis,
+  // um distrator que atrai mais do que a resposta certa, ou com reportes dos alunos).
+  const MIN_ANSWERS = 10;
+  const REASON_LABELS = {
+    chave: 'A resposta marcada parece errada',
+    enunciado: 'Enunciado ambíguo ou com dados em falta',
+    calculo: 'Erro de cálculo ou de unidades',
+    escrita: 'Gralha ou erro de português',
+    outro: 'Outro'
+  };
+  const LETTERS = ['A', 'B', 'C', 'D'];
+  const questionById = id => (typeof ALL_UNLOCKED_RAW !== 'undefined' ? ALL_UNLOCKED_RAW : QUESTIONS_DATA).find(q => q.id === Number(id));
+  const short = (html, n) => {
+    const t = String(html || '').replace(/<[^>]+>/g, '');
+    return t.length > n ? t.slice(0, n - 1) + '…' : t;
+  };
+
+  function renderItemReview(a, reports) {
+    const reportCount = {};
+    (reports || []).forEach(r => { reportCount[r.questionId] = (reportCount[r.questionId] || 0) + 1; });
+    const ids = new Set([...Object.keys(a.perQ), ...Object.keys(reportCount)]);
+    const items = [];
+    ids.forEach(id => {
+      const st = a.perQ[id] || { n: 0, ok: 0, picks: [0, 0, 0, 0], nPicks: 0 };
+      const q = questionById(id);
+      const flags = [];
+      let score = 0;
+      if (reportCount[id]) { flags.push(`🚩 ${reportCount[id]} reporte(s)`); score += 3 * reportCount[id]; }
+      if (st.n >= MIN_ANSWERS) {
+        const p = st.ok / st.n;
+        if (p < 0.3) { flags.push('Muito difícil (< 30 %): confirmar a chave e o enunciado'); score += 2; }
+        if (p > 0.95) { flags.push('Muito fácil (> 95 %)'); score += 0.5; }
+        if (q && st.nPicks >= MIN_ANSWERS) {
+          const right = st.picks[q.correctIndex];
+          st.picks.forEach((k, i) => {
+            if (i !== q.correctIndex && k > 0 && (k >= right || k / st.nPicks >= 0.4)) {
+              flags.push(`Distrator ${LETTERS[i]} escolhido por ${Math.round(k / st.nPicks * 100)} % (certa: ${Math.round(right / st.nPicks * 100)} %): «${esc(short(q.options[i], 70))}»`);
+              score += 1.5;
+            }
+          });
+        }
+      }
+      if (flags.length) items.push({ id, q, st, flags, score });
+    });
+    items.sort((x, y) => y.score - x.score || x.st.ok / (x.st.n || 1) - y.st.ok / (y.st.n || 1));
+
+    $('metrics-hardest').innerHTML = items.length
+      ? `<p class="metrics-note">As letras referem-se à ordem das opções no banco de perguntas (no quiz aparecem baralhadas). Sinais calculados com pelo menos ${MIN_ANSWERS} respostas.</p>
+        <div class="metrics-table-wrap"><table class="metrics-table"><thead><tr><th>Pergunta</th><th>Respostas</th><th>Acerto</th><th>Porque rever</th></tr></thead><tbody>${
+          items.slice(0, 25).map(it => `<tr>
+            <td><strong>${esc(it.id)}</strong>${it.q ? `<br><span class="metrics-q-snippet">${esc(short(it.q.question, 90))}</span>` : ''}</td>
+            <td>${it.st.n}</td>
+            <td>${it.st.n ? Math.round(it.st.ok / it.st.n * 100) + ' %' : '—'}</td>
+            <td>${it.flags.map(f => `<div>${f.startsWith('Distrator') ? f : esc(f)}</div>`).join('')}</td></tr>`).join('')
+        }</tbody></table></div>`
+      : `<p class="metrics-empty">Nenhuma pergunta sinalizada (cada pergunta precisa de pelo menos ${MIN_ANSWERS} respostas).</p>`;
+
+    const box = $('metrics-reports');
+    if (!box) return;
+    if (reports === null) {
+      box.innerHTML = '<p class="metrics-empty">Para ver os reportes dos alunos, atualize o Apps Script (ver metrics-backend/README.md, "Nova versão").</p>';
+      return;
+    }
+    const recent = reports.slice().sort((x, y) => new Date(y.timestamp) - new Date(x.timestamp)).slice(0, 40);
+    box.innerHTML = recent.length
+      ? `<div class="metrics-table-wrap"><table class="metrics-table"><thead><tr><th>Data</th><th>Pergunta</th><th>Motivo</th><th>Comentário</th></tr></thead><tbody>${
+          recent.map(r => `<tr>
+            <td>${esc(new Date(r.timestamp).toLocaleString('pt-PT', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' }))}</td>
+            <td>${esc(r.questionId)}</td>
+            <td>${esc(REASON_LABELS[r.reason] || r.reason)}</td>
+            <td>${esc(r.comment) || '—'}</td></tr>`).join('')
+        }</tbody></table></div>`
+      : '<p class="metrics-empty">Ainda sem reportes.</p>';
+  }
+
+  function render(a, reports) {
     const today = dayKey(new Date());
     const last = [];
     for (let i = MONTHS - 1; i >= 0; i--) {
@@ -203,16 +330,7 @@ const Metrics = (() => {
         </div>`).join('')
       : '<p class="metrics-empty">Ainda sem respostas.</p>';
 
-    const hardest = Object.entries(a.perQ)
-      .filter(([, q]) => q.n >= 5)
-      .map(([id, q]) => ({ id, topic: q.topic, n: q.n, p: q.ok / q.n }))
-      .sort((x, y) => x.p - y.p || y.n - x.n)
-      .slice(0, 10);
-    $('metrics-hardest').innerHTML = hardest.length
-      ? `<div class="metrics-table-wrap"><table class="metrics-table"><thead><tr><th>Pergunta</th><th>Tópico</th><th>Respostas</th><th>Acerto</th></tr></thead><tbody>${
-          hardest.map(h => `<tr><td>${esc(h.id)}</td><td>${esc(h.topic)}</td><td>${h.n}</td><td>${Math.round(h.p * 100)} %</td></tr>`).join('')
-        }</tbody></table></div>`
-      : '<p class="metrics-empty">Precisa de pelo menos 5 respostas por pergunta.</p>';
+    renderItemReview(a, reports);
 
     const modeName = m => MODE_LABELS[m] || m;
     $('metrics-sessions').innerHTML = a.recent.length
@@ -244,7 +362,13 @@ const Metrics = (() => {
         if (data.error === 'unauthorized') try { localStorage.removeItem(READ_KEY_STORAGE); } catch (e) {}
         return;
       }
-      render(aggregate(data.rows));
+      // Reportes: um Apps Script antigo ignora "action" e não devolve "reports" (null = não disponível)
+      let reports = null;
+      try {
+        const r = await (await fetch(`${METRICS_ENDPOINT}?key=${encodeURIComponent(key)}&action=reports`)).json();
+        if (r.ok && Array.isArray(r.reports)) reports = r.reports;
+      } catch (e) {}
+      render(aggregate(data.rows), reports);
       note.textContent = `Atualizado às ${new Date().toLocaleTimeString('pt-PT', { hour: '2-digit', minute: '2-digit' })} · ${data.rows.length} registos.`;
     } catch (e) {
       note.textContent = 'Não foi possível contactar o servidor de métricas. Verifique a ligação à internet.';
@@ -278,5 +402,5 @@ const Metrics = (() => {
 
   document.addEventListener('DOMContentLoaded', bind);
 
-  return { trackVisit, trackSession, open };
+  return { trackVisit, trackSession, open, report, canReport };
 })();

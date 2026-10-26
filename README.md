@@ -32,8 +32,11 @@ Total atual: **400 perguntas** (todas ativas para os alunos, Tópicos 1 e 2). Os
 - **Confiança (opcional) no Modo Treino:** o aluno indica se tem certeza, se acha que sim ou se está a adivinhar. Os resultados e as estatísticas mostram a confiança vs. os acertos, e os erros com certeza voltam logo ao caderno.
 - **Repetição de erros na mesma sessão (Modo Treino):** uma pergunta errada volta a aparecer 4 perguntas depois, com as opções baralhadas (no máximo 10 por sessão). A repetição não conta para a nota nem para as métricas do docente.
 - **Revisão dos resultados "primeiro os erros":** a revisão abre pelos erros e pelas respostas certas sem certeza; as respostas certas ficam recolhidas.
+- **Esquemas nas perguntas:** nas perguntas em que o desenho ajuda a resolver (alavancas, momentos, plano inclinado, barras em tração ou compressão, vigas), um esquema SVG mostra só os dados do enunciado (`js/question-figures.js`).
 - **Esquemas dos conceitos:** 9 diagramas (vetor força, plano inclinado, alavancas, deformações, curva tensão–deformação…) em SVG no próprio código, sem imagens externas nem serviços (`js/study-figures.js`).
 - **Teoria em conceitos** (Tópicos 1 e 2): fórmulas, erro comum e aplicação em enfermagem. A partir de qualquer pergunta há o botão "Rever esta parte da teoria", e cada conceito tem "Praticar este conceito". Conteúdo em `js/study-content.js`.
+- **Resolução passo a passo** nas perguntas de cálculo: dados, conversões, fórmula, substituição e resultado, no feedback, na revisão e na ficha imprimível.
+- **🚩 Reportar problema:** depois de responder, o aluno pode avisar o docente de um possível erro na pergunta (anónimo, com motivo e comentário opcional). Os reportes aparecem no painel de métricas.
 - **Resultados e estatísticas com orientação:** ponto fraco da sessão, desempenho por conceito e evolução das notas.
 - **Pesquisa rápida** (`Ctrl+K` ou `Cmd+K`) no glossário (definições curtas, sem distinção de acentos) e nas perguntas.
 - **Atalhos no quiz:** `A`–`D` ou `1`–`4` para responder, `Enter` para avançar.
@@ -41,7 +44,7 @@ Total atual: **400 perguntas** (todas ativas para os alunos, Tópicos 1 e 2). Os
 - **Ordem baralhada:** a ordem das perguntas e das opções muda em cada tentativa.
 - **Ficha de trabalho imprimível** (A4 ou PDF através de `window.print()`).
 - **Tamanho de letra ajustável** (A- / A+) e **modo escuro**.
-- **Métricas do docente (área com PIN):** visitas diárias, perguntas respondidas, taxa de acerto por tópico e por pergunta, sessões e notas. Configuração em [`metrics-backend/README.md`](metrics-backend/README.md).
+- **Métricas do docente (área com PIN):** visitas diárias, perguntas respondidas, taxa de acerto por tópico, sessões e notas, e **Perguntas a rever** (acerto muito baixo ou muito alto, distratores que atraem mais do que a resposta certa, reportes dos alunos). Configuração em [`metrics-backend/README.md`](metrics-backend/README.md).
 - **Modo Arena (sala de aula):** quiz em tempo real com equipas. O docente cria uma sala com um PIN; as equipas entram com o PIN ou com o QR code.
 
 ---

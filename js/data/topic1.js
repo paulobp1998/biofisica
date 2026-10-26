@@ -15,7 +15,7 @@ const TOPIC_1_QUESTIONS = [
       "Estuda a composição química e a estrutura atómica dos tecidos biológicos.",
       "Estuda as trocas de calor e a regulação da temperatura corporal.",
       "Estuda a velocidade das reações químicas e a atividade enzimática celular.",
-      "Estuda as relações entre os movimentos dos corpos e as forças a eles associadas."
+      "Estuda os movimentos dos corpos e as forças a eles associadas."
     ],
     "correctIndex": 3,
     "explanation": "A Mecânica define-se formalmente como o ramo que 'estuda as relações entre os movimentos dos corpos e as forças a eles associadas'.",
@@ -95,6 +95,13 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "A pressão é a força por unidade de área: p = F / A. Convertendo a área para o SI, 20 cm² = 20 × 10<sup>-4</sup> m² = 0,0020 m². Logo p = 40 N / 0,0020 m² = 20 000 N/m² = 2,0 × 10⁴ N/m². Para a mesma força, quanto menor for a área de contacto, maior é a pressão, razão pela qual proeminências ósseas com pouca área de apoio, como o calcanhar, estão particularmente expostas.",
+    "solution": [
+      "Dados: F = 40 N; A = 20 cm²; p = ?",
+      "Conversão: 20 cm² = 20 × 10⁻⁴ m² = 2,0 × 10⁻³ m²",
+      "Fórmula: p = F / A",
+      "Substituição: p = 40 / (2,0 × 10⁻³)",
+      "Resultado: p = 2,0 × 10⁴ N/m²"
+    ],
     "distractorAnalysis": [
       "Está incorreta: resulta de converter 20 cm² em 0,20 m², usando 1 cm = 0,01 m sem elevar ao quadrado (40 / 0,20 = 200 N/m²); como 1 cm² = 10<sup>-4</sup> m², a área correta é 0,0020 m².",
       "Está incorreta: resulta de dividir 40 N por 20 sem converter cm² em m² (40 / 20 = 2 N/m²); no SI, a área tem de estar em m² para a pressão vir em N/m².",
@@ -228,6 +235,12 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 0,
     "explanation": "As forças são grandezas vetoriais: a resultante depende da direção e do sentido de cada força, e não apenas das intensidades. Com duas forças perpendiculares, a resultante é a hipotenusa do triângulo retângulo que formam: F<sub>R</sub> = √(30<sup>2</sup> + 40<sup>2</sup>) = √(900 + 1600) = √2500 = 50 N, com direção oblíqua entre as duas forças.",
+    "solution": [
+      "Dados: F<sub>1</sub> = 30 N; F<sub>2</sub> = 40 N, perpendiculares; F<sub>R</sub> = ?",
+      "Fórmula: F<sub>R</sub> = √(F<sub>1</sub>² + F<sub>2</sub>²) (forças perpendiculares: teorema de Pitágoras)",
+      "Substituição: F<sub>R</sub> = √(30² + 40²) = √(900 + 1600) = √2500",
+      "Resultado: F<sub>R</sub> = 50 N"
+    ],
     "distractorAnalysis": [
       "Está incorreta: somar as intensidades (30 + 40 = 70 N) só é válido para forças com a mesma direção e o mesmo sentido; aqui as forças são perpendiculares.",
       "Está incorreta: subtrair as intensidades (40 − 30 = 10 N) só é válido para forças com a mesma direção e sentidos opostos.",
@@ -304,6 +317,13 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "Na mesma direção com sentidos opostos, os vetores subtraem-se: F<sub>R</sub> = 60 N - 60 N = 0 N. A força resultante é nula; a maca mantém o seu estado: se estava parada, continua parada; se se movia, mantém velocidade constante (1.ª Lei).",
+    "solution": [
+      "Dados: F<sub>1</sub> = 60 N; F<sub>2</sub> = 60 N, mesma direção e sentidos opostos; F<sub>R</sub> = ?",
+      "Fórmula: F<sub>R</sub> = F<sub>1</sub> − F<sub>2</sub> (sentidos opostos: subtraem-se)",
+      "Substituição: F<sub>R</sub> = 60 − 60",
+      "Resultado: F<sub>R</sub> = 0 N",
+      "Conclusão: a maca mantém-se parada ou em movimento retilíneo uniforme."
+    ],
     "distractorAnalysis": [
       "Está incorreta: Forças opostas subtraem-se; não se somam.",
       "Está incorreta: Com forças iguais e opostas, nenhuma prevalece; a resultante é nula.",
@@ -338,7 +358,7 @@ const TOPIC_1_QUESTIONS = [
       "Gera contração ativa, independente, através de filamentos de actina.",
       "Substitui parcialmente a função das articulações na estabilidade dos ossos.",
       "Produz líquido sinovial que lubrifica as superfícies das vértebras lombares.",
-      "Transmite a tração gerada pelo músculo esquelético diretamente à alavanca óssea."
+      "Transmite a tração do músculo esquelético diretamente à alavanca óssea."
     ],
     "correctIndex": 3,
     "explanation": "O tendão funciona como o transmissor mecânico de tração entre o músculo (gerador de força ativa) e o osso (alavanca rígida que produz movimento articular).",
@@ -380,6 +400,12 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "Com a mesma direção e o mesmo sentido, somam-se as intensidades: F<sub>R</sub> = 60 N + 40 N = 100 N, no sentido do movimento. Esta é a força que determina a aceleração da maca, segundo a 2.ª Lei de Newton.",
+    "solution": [
+      "Dados: F<sub>1</sub> = 60 N; F<sub>2</sub> = 40 N, mesma direção e mesmo sentido; F<sub>R</sub> = ?",
+      "Fórmula: F<sub>R</sub> = F<sub>1</sub> + F<sub>2</sub> (mesmo sentido: somam-se)",
+      "Substituição: F<sub>R</sub> = 60 + 40",
+      "Resultado: F<sub>R</sub> = 100 N"
+    ],
     "distractorAnalysis": [
       "Está incorreta: As forças só se anulam quando têm sentidos opostos; aqui têm o mesmo sentido.",
       "Está incorreta: Forças com o mesmo sentido somam-se, e não se subtraem.",
@@ -545,7 +571,7 @@ const TOPIC_1_QUESTIONS = [
     "question": "Ao travar bruscamente um veículo, os passageiros desprovidos de cinto são projetados para a frente. Como se explica isto pela 1.ª Lei de Newton?",
     "options": [
       "Uma força para a frente, gerada pela travagem, empurra os passageiros.",
-      "Por inércia, o corpo mantém a velocidade que tinha até uma força o travar.",
+      "Por inércia, o corpo mantém a velocidade até uma força o travar.",
       "A gravidade deixa de atuar temporariamente durante o ato de travar.",
       "O veículo acelera subitamente para a frente, empurrando as pessoas."
     ],
@@ -665,6 +691,12 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "Pela 2.ª Lei de Newton, F<sub>R</sub> = m · a = 160 kg × 0,25 m/s² = 40 N. Para a mesma aceleração, uma massa total de 80 kg exigiria apenas 20 N: a força necessária é proporcional à massa. Na prática, o atrito e a resistência ao rolamento aumentam ainda mais a força a aplicar, tanto para arrancar como para travar.",
+    "solution": [
+      "Dados: m = 160 kg; a = 0,25 m/s²; F<sub>R</sub> = ?",
+      "Fórmula: F<sub>R</sub> = m · a",
+      "Substituição: F<sub>R</sub> = 160 × 0,25",
+      "Resultado: F<sub>R</sub> = 40 N"
+    ],
     "distractorAnalysis": [
       "Está incorreta: resulta de dividir a massa pela aceleração (160 / 0,25 = 640); pela 2.ª Lei, F = m · a, pelo que se multiplica e não se divide.",
       "Está incorreta: resulta de usar o peso em vez da massa (160 × 9,8 × 0,25 = 392 N); a força resultante horizontal depende da massa (inércia), não de g.",
@@ -684,6 +716,12 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 0,
     "explanation": "Pela 2.ª Lei (F = m · a), com a constante, duplicando a massa (2m) é indispensável duplicar a força (2F): 'Essa força será tanto maior quanto maior for a massa do corpo'.",
+    "solution": [
+      "Dados: m<sub>2</sub> = 2 · m<sub>1</sub>; a<sub>2</sub> = a<sub>1</sub>; F<sub>2</sub> = ?",
+      "Fórmula: F = m · a",
+      "Substituição: F<sub>2</sub> = (2 · m<sub>1</sub>) · a<sub>1</sub> = 2 · (m<sub>1</sub> · a<sub>1</sub>) = 2 · F<sub>1</sub>",
+      "Resultado: F<sub>2</sub> = 2 · F<sub>1</sub> (o dobro da força)"
+    ],
     "distractorAnalysis": [
       "Está incorreta: Com a mesma força, a aceleração diminui quando a massa aumenta (a = F/m).",
       "Está incorreta: Corpos mais pesados exigem mais força para a mesma aceleração, e não menos.",
@@ -703,6 +741,13 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "Usando a = F / m: no vazio a = 100 / 10 = 10 m/s²; no carregado a = 100 / 50 = 2 m/s². A aceleração do carrinho pesado é 5 vezes menor para a mesma força.",
+    "solution": [
+      "Dados: F = 100 N; m<sub>vazio</sub> = 10 kg; m<sub>carregado</sub> = 50 kg; a = ?",
+      "Fórmula: a = F / m",
+      "Substituição: a<sub>vazio</sub> = 100 / 10; a<sub>carregado</sub> = 100 / 50",
+      "Resultado: a<sub>vazio</sub> = 10 m/s²; a<sub>carregado</sub> = 2 m/s²",
+      "Conclusão: com a mesma força, o carrinho com 5 vezes mais massa tem 5 vezes menos aceleração."
+    ],
     "distractorAnalysis": [
       "Está incorreta: A aceleração depende da massa; com massas diferentes, as acelerações também são diferentes.",
       "Está incorreta: O carregado tem maior massa e, por isso, menor aceleração: 5 vezes menor, e não maior.",
@@ -741,6 +786,12 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "Aplicando a = F / m: a = 40 N / 8 kg = 5 m/s².",
+    "solution": [
+      "Dados: F<sub>R</sub> = 40 N; m = 8 kg; a = ?",
+      "Fórmula: a = F<sub>R</sub> / m",
+      "Substituição: a = 40 / 8",
+      "Resultado: a = 5 m/s²"
+    ],
     "distractorAnalysis": [
       "Está incorreta: Multiplicar F por m contraria a 2.ª Lei, que dá a = F / m.",
       "Está incorreta: Dividir m por F inverte a relação correta.",
@@ -793,7 +844,7 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "A reação a uma força é menor do que a própria força, porque parte se perde no contacto.",
       "A força de atrito é perpendicular à superfície que suporta o peso do corpo.",
-      "Quando um corpo A exerce uma força sobre B, B exerce sobre A uma força igual e de sentido oposto.",
+      "Se A exerce uma força sobre B, B exerce sobre A uma força igual e de sentido oposto.",
       "A soma de todas as forças que atuam num corpo em movimento acelerado é nula."
     ],
     "correctIndex": 2,
@@ -963,9 +1014,9 @@ const TOPIC_1_QUESTIONS = [
     "question": "No Movimento Retilíneo e Uniforme (MRU), o que acontece à velocidade (v) no decorrer do tempo?",
     "options": [
       "Aumenta de forma linear a cada segundo que o corpo se desloca.",
-      "Diminui de forma linear até o corpo parar.",
+      "Diminui de forma linear até o corpo parar por completo.",
       "Oscila periodicamente entre valores positivos e negativos.",
-      "Mantém-se constante ao longo do tempo, com o mesmo módulo, direção e sentido."
+      "Mantém-se constante, em módulo, direção e sentido."
     ],
     "correctIndex": 3,
     "explanation": "A propriedade basilar do MRU é a velocidade (v) constante ao longo do tempo.",
@@ -1038,16 +1089,16 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Tanto um corpo em repouso como um corpo em Movimento Retilíneo e Uniforme (MRU) encontram-se em equilíbrio mecânico. O que têm ambos obrigatoriamente em comum em termos dinâmicos?",
     "options": [
-      "Ambos possuem velocidade diferente de zero e aceleração elevada.",
-      "Ambos sofrem forças resultantes elevadas no sentido do movimento.",
+      "Ambos têm velocidade nula, pois o equilíbrio exige que o corpo esteja parado.",
+      "Ambos sofrem uma força resultante constante no sentido do movimento.",
       "Ambos têm peso nulo por se encontrarem em superfícies horizontais.",
-      "Em ambos a aceleração é nula e a força resultante é nula (F<sub>R</sub> = 0)."
+      "Em ambos, a aceleração e a força resultante são nulas (F<sub>R</sub> = 0)."
     ],
     "correctIndex": 3,
     "explanation": "Tanto no repouso estático (v = 0) como no MRU (v = constante), a aceleração é nula (a = 0) e a força resultante é nula (F<sub>R</sub> = 0). Ambos constituem estados de equilíbrio translacional.",
     "distractorAnalysis": [
-      "Está incorreta: Num corpo em repouso a velocidade é nula, e a aceleração não é elevada.",
-      "Está incorreta: No equilíbrio a força resultante é nula, e não elevada.",
+      "Está incorreta: No MRU a velocidade é constante e diferente de zero; o equilíbrio exige aceleração nula, e não velocidade nula.",
+      "Está incorreta: Uma força resultante não nula produziria aceleração; no equilíbrio a força resultante é nula.",
       "Está incorreta: O peso não é nulo: é a força da gravidade, presente em qualquer corpo com massa."
     ],
     "nursingApplication": "Mostra que um doente em repouso na cama e um doente transportado em linha reta a velocidade constante partilham a ausência de aceleração."
@@ -1057,7 +1108,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Para que um corpo continue em Movimento Retilíneo e Uniforme no vácuo sem atrito, é necessário continuar a empurrá-lo com uma força resultante?",
     "options": [
-      "Não, pois pela 1.ª Lei de Newton o corpo mantém a sua velocidade constante por inércia.",
+      "Não, pela 1.ª Lei de Newton o corpo mantém a velocidade constante por inércia.",
       "Sim, uma força constante no sentido do movimento, sem a qual a velocidade diminui.",
       "Sim, porque o movimento consome gradualmente a massa do objeto em deslocamento.",
       "Sim, uma força de intensidade igual ao peso do corpo, para vencer a sua inércia."
@@ -1097,7 +1148,7 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "A velocidade tem de ser crescente a uma taxa constante de 1 m/s².",
       "O corpo tem de estar em repouso, com velocidade nula em relação ao solo.",
-      "A resultante de todas as forças sobre o corpo tem de ser nula (F<sub>R</sub> = 0 N).",
+      "A força resultante sobre o corpo tem de ser nula (F<sub>R</sub> = 0).",
       "O peso do corpo tem de ser o dobro da força normal de apoio."
     ],
     "correctIndex": 2,
@@ -1121,6 +1172,12 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 3,
     "explanation": "Para manter MRU (aceleração zero e velocidade constante), a força aplicada deve anular exatamente a resistência: F<sub>aplicada</sub> - F<sub>atrito</sub> = 0 => F<sub>aplicada</sub> = 18 N.",
+    "solution": [
+      "Dados: MRU (a = 0); F<sub>a</sub> = 18 N; F<sub>aplicada</sub> = ?",
+      "Fórmula: F<sub>R</sub> = F<sub>aplicada</sub> − F<sub>a</sub> = 0, logo F<sub>aplicada</sub> = F<sub>a</sub>",
+      "Substituição: F<sub>aplicada</sub> = 18 N",
+      "Resultado: F<sub>aplicada</sub> = 18 N, no sentido do movimento"
+    ],
     "distractorAnalysis": [
       "Está incorreta: Sem força aplicada, o atrito faria o carrinho abrandar até parar.",
       "Está incorreta: Uma força de 36 N produziria aceleração, contrariando o MRU.",
@@ -1153,7 +1210,7 @@ const TOPIC_1_QUESTIONS = [
     "question": "Quantas são as forças fundamentais da natureza reconhecidas pela física moderna?",
     "options": [
       "2 forças: o peso e o atrito, presentes no dia a dia.",
-      "4 forças fundamentais: gravítica, eletromagnética, nuclear forte e nuclear fraca.",
+      "4 forças: gravítica, eletromagnética, nuclear forte e nuclear fraca.",
       "7 forças, correspondentes às 7 unidades de base do Sistema Internacional.",
       "Muitas forças distintas, sem uma categorização científica comum."
     ],
@@ -1361,7 +1418,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Numa cama hospitalar perfeitamente horizontal, qual é a direção da Força Normal exercida pelo colchão sobre o doente?",
     "options": [
-      "Vertical, perpendicular à superfície do colchão e dirigida para cima.",
+      "Vertical e para cima, perpendicular à superfície do colchão.",
       "Horizontal, paralela ao chão, apontando para os pés da cama.",
       "Inclinada a 45 graus, no sentido oblíquo em direção à cabeceira.",
       "Circular, rodando em torno do centro de massa do doente."
@@ -1401,7 +1458,7 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "A força normal anula o atrito, o que evita lesões na pele dos doentes.",
       "A força normal estimula a proliferação celular, acelerando a cicatrização de feridas.",
-      "A força normal comprime os tecidos moles contra as proeminências ósseas e pode ocluir capilares.",
+      "A força normal comprime os tecidos contra as proeminências ósseas e pode ocluir capilares.",
       "A força normal provoca alterações atómicas nos tecidos da pele, de forma progressiva."
     ],
     "correctIndex": 2,
@@ -1444,6 +1501,12 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 0,
     "explanation": "Num leito horizontal em equilíbrio estático, a força normal equilibra exatamente o peso do corpo: N = P = m · g = 70 kg × 9,8 m/s² = 686 N.",
+    "solution": [
+      "Dados: m = 70 kg; g = 9,8 m/s²; leito horizontal, repouso; N = ?",
+      "Fórmula: N = P = m · g (equilíbrio: F<sub>R</sub> = 0)",
+      "Substituição: N = 70 × 9,8",
+      "Resultado: N = 686 N"
+    ],
     "distractorAnalysis": [
       "Está incorreta: 70 é a massa em quilogramas (kg), que tem de ser multiplicada por g (9,8) para obter a força em newtons.",
       "Está incorreta: 7,14 resultaria de dividir 70 por 9,8, o que é fisicamente incorreto, porque N = m · g.",
@@ -1457,7 +1520,7 @@ const TOPIC_1_QUESTIONS = [
     "question": "Qual é o objetivo biomecânico do uso de colchões viscoelásticos ou de ar estático?",
     "options": [
       "Reduzir a massa inercial do doente, aliviando assim a força normal exercida.",
-      "Aumentar a área de contacto, diminuindo a pressão nos pontos de apoio (p = F / A).",
+      "Aumentar a área de contacto para reduzir a pressão nos apoios (p = F / A).",
       "Aumentar a força normal, concentrando-a num único ponto ósseo do doente.",
       "Acelerar o doente, com movimentos periódicos contínuos e de alta velocidade."
     ],
@@ -1551,17 +1614,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Como se distinguem o 'Atrito estático' e o 'Atrito cinético' no estudo das forças mecânicas?",
     "options": [
-      "O atrito estático atua na água, e o atrito cinético atua no ar.",
+      "O atrito estático atua entre sólidos, e o atrito cinético entre um sólido e um fluido.",
       "O atrito estático atua no plano vertical, e o atrito cinético no plano oblíquo.",
-      "Não há distinção física entre ambos, sendo termos equivalentes.",
-      "Atrito estático impede o movimento de começar; atrito cinético resiste durante o movimento."
+      "Não há distinção física entre ambos; são dois nomes para a mesma força de contacto.",
+      "O estático opõe-se ao início do deslizamento; o cinético, ao deslizamento em curso."
     ],
     "correctIndex": 3,
     "explanation": "Categoriza-se: o atrito estático impede o movimento de começar; o atrito cinético é a força de resistência durante o movimento.",
     "distractorAnalysis": [
-      "Está incorreta: Os dois atritos atuam entre superfícies sólidas em contacto, e não na água ou no ar.",
+      "Está incorreta: Ambos atuam entre superfícies sólidas em contacto; a resistência de um fluido é outro fenómeno (resistência viscosa).",
       "Está incorreta: A força de atrito é tangencial à superfície de contacto, e não se define por planos verticais ou oblíquos.",
-      "Está incorreta: Os dois atritos distinguem-se pelo estado de movimento do corpo, o que é uma diferença física."
+      "Está incorreta: Os dois atritos distinguem-se pelo estado de movimento do corpo e têm coeficientes diferentes (o estático máximo é maior)."
     ],
     "nursingApplication": "Ajuda a planear manobras de mobilização sabendo que o arranque inicial requer a maior força."
   },
@@ -1589,7 +1652,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é um exemplo prático de enfermagem que ilustra que o atrito estático é superior ao cinético?",
     "options": [
-      "É mais difícil pôr um utente a deslizar sobre o lençol do que mantê-lo a deslizar.",
+      "Custa mais iniciar o deslizamento do utente no lençol do que mantê-lo.",
       "É mais difícil pesar um doente sentado do que um doente em pé.",
       "A velocidade de infusão do soro é mais rápida com agulha de menor calibre.",
       "A temperatura da pele diminui quando o utente caminha descalço no hospital."
@@ -1615,6 +1678,12 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "Enquanto o corpo permanece em repouso, o atrito estático ajusta-se exatamente ao valor da força aplicada para manter o equilíbrio: F<sub>atrito</sub> = 20 N (F<sub>R</sub> = 0). Os 50 N representam apenas o limite máximo antes de romper o repouso.",
+    "solution": [
+      "Dados: F<sub>aplicada</sub> = 20 N; F<sub>a,máx</sub> = 50 N; maca parada; F<sub>a</sub> = ?",
+      "Fórmula: em repouso, F<sub>R</sub> = 0, logo F<sub>a</sub> = F<sub>aplicada</sub> (desde que F<sub>aplicada</sub> < F<sub>a,máx</sub>)",
+      "Substituição: 20 N < 50 N, portanto F<sub>a</sub> = 20 N",
+      "Resultado: F<sub>a</sub> = 20 N, em sentido oposto à força aplicada"
+    ],
     "distractorAnalysis": [
       "Está incorreta: O atrito estático não atinge o máximo de 50 N; ajusta-se à força aplicada, e a maca não se move.",
       "Está incorreta: O atrito estático existe com o corpo parado e ajusta-se à força aplicada.",
@@ -1665,15 +1734,15 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Para transferir um utente acamado da cama para a maca com menor esforço físico e maior segurança, que dispositivo de auxílio reduz significativamente a força de atrito?",
     "options": [
-      "Lençóis ou tábuas de deslizamento (transferência) com baixo atrito de contacto.",
-      "Colocar sacos de areia adicionais sobre os pés do doente.",
+      "Lençóis ou tábuas de deslizamento, de baixo coeficiente de atrito.",
+      "Aumentar a área de contacto do utente com o lençol, distribuindo o peso.",
       "Aumentar a aspereza dos lençóis utilizando tecidos rugosos e secos.",
       "Travar firmemente as rodas da maca durante a marcha no corredor."
     ],
     "correctIndex": 0,
     "explanation": "Os lençóis ou pranchas de deslizamento utilizam materiais com coeficientes de atrito extremamente baixos, reduzindo a força de atrito tangencial que a equipa tem de vencer para transferir o utente.",
     "distractorAnalysis": [
-      "Está incorreta: Aumentar a carga aumenta a força normal e consequentemente aumenta o atrito, dificultando a transferência.",
+      "Está incorreta: A força de atrito depende do coeficiente de atrito e da força normal, e não da área de contacto; distribuir o peso não a reduz.",
       "Está incorreta: Tecidos rugosos aumentam o atrito e o cisalhamento da pele, elevando o risco de lesões.",
       "Está incorreta: Travar as rodas aumenta a resistência ao movimento da maca; é útil para imobilizar cama e maca durante a transferência, mas não reduz o atrito sobre o doente."
     ],
@@ -1710,6 +1779,13 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "A força resultante é F<sub>aplicada</sub> - F<sub>atrito</sub> = 25 N - 25 N = 0 N. Com F<sub>R</sub> = 0 N, o corpo em movimento mantém a sua velocidade constante em Movimento Retilíneo e Uniforme (MRU).",
+    "solution": [
+      "Dados: F<sub>aplicada</sub> = 25 N; F<sub>a</sub> = 25 N, sentidos opostos; F<sub>R</sub> = ?",
+      "Fórmula: F<sub>R</sub> = F<sub>aplicada</sub> − F<sub>a</sub>",
+      "Substituição: F<sub>R</sub> = 25 − 25",
+      "Resultado: F<sub>R</sub> = 0 N",
+      "Conclusão: a maca, já em movimento, prossegue em MRU."
+    ],
     "distractorAnalysis": [
       "Está incorreta: Com F<sub>R</sub> = 0 N não há aceleração; a maca não ganha velocidade.",
       "Está incorreta: Sem força resultante contrária, a maca não trava; mantém a velocidade.",
@@ -1779,10 +1855,10 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Como se caracteriza a grandeza física pressão?",
     "options": [
-      "Tipo: Vetorial; Unidade SI: newton (N); Definição: Interação entre corpos; Exemplo: Tendão do bíceps.",
-      "Tipo: Escalar; Unidade SI: quilograma (kg); Definição: Medida de inércia; Exemplo: Doente bariátrico.",
+      "Tipo: Vetorial; Unidade SI: newton (N); Definição: Interação entre dois corpos; Exemplo: Tração do tendão do bíceps no rádio, na flexão.",
+      "Tipo: Escalar; Unidade SI: quilograma (kg); Definição: Medida da inércia de um corpo; Exemplo: Doente bariátrico no leito.",
       "Tipo: Escalar; Unidade SI: newton por metro quadrado (N/m²); Definição: Força por unidade de área; Exemplo: Pressão de interface sobre o sacro.",
-      "Tipo: Vetorial; Unidade SI: joule (J); Definição: Trabalho muscular; Exemplo: Elevação de carga."
+      "Tipo: Vetorial; Unidade SI: joule (J); Definição: Trabalho realizado pelo músculo; Exemplo: Elevação de uma carga de 15 kg."
     ],
     "correctIndex": 2,
     "explanation": "A pressão é uma grandeza escalar, medida em newton por metro quadrado (N/m²): é a força por unidade de área, por exemplo, a pressão de interface sobre o sacro.",
@@ -1817,7 +1893,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a equivalência do newton por metro quadrado (N/m²), a unidade da pressão, em unidades de base do SI (kg, m, s)?",
     "options": [
-      "1 N/m² = 1 kg / (m · s²), pois 1 N = 1 kg · m / s² e a força é dividida pela área.",
+      "1 N/m² = 1 kg / (m · s²), pois 1 N = 1 kg · m / s² e divide-se por m².",
       "1 N/m² = 1 kg · m / s, equivalente a uma unidade de momento linear.",
       "1 N/m² = 1 N · m, um newton multiplicado por um metro de distância.",
       "1 N/m² = 1 kg / s², equivalente a uma unidade de tensão superficial."
@@ -1953,7 +2029,7 @@ const TOPIC_1_QUESTIONS = [
       "Porque o enfermeiro, em movimento, exerce sobre a divisória mais força do que recebe dela.",
       "Porque só o enfermeiro exerce força; a divisória, por estar fixa, limita-se a recebê-la.",
       "Porque o peso da ambulância é transferido na totalidade para o painel de separação.",
-      "Pela 3.ª Lei de Newton (par ação-reação), as duas forças têm a mesma intensidade e sentidos opostos."
+      "Pela 3.ª Lei de Newton, a divisória recebe uma força igual à que exerce no enfermeiro."
     ],
     "correctIndex": 3,
     "explanation": "Justifica-se: 'Pela 3.ª Lei de Newton (par ação-reação), a intensidade da força que a divisória exerce sobre o enfermeiro é a mesma que o enfermeiro exerce sobre a divisória'. As forças têm igual intensidade e sentidos opostos, e são aplicadas em corpos diferentes.",
@@ -1969,19 +2045,19 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Como pode a equipa de emergência médica prevenir o desfecho traumático decorrente de uma desaceleração brusca da viatura?",
     "options": [
-      "Pelo uso do cinto de segurança por todos os ocupantes, também em marcha de socorro.",
+      "Com o cinto de segurança colocado por todos, mesmo em marcha de socorro.",
       "Viajando em pé, com calçado antiderrapante e os pés bem afastados.",
       "Segurando-se firmemente com uma mão na maçaneta da porta, a meio da viagem.",
-      "Abrindo as janelas para reduzir a pressão atmosférica dentro do veículo."
+      "Mantendo os músculos contraídos para o corpo resistir à desaceleração."
     ],
     "correctIndex": 0,
     "explanation": "Refere-se explicitamente: 'Sem cinto de segurança, o enfermeiro colidirá com a divisória'. O cinto aplica a força externa gradual necessária para desacelerar o corpo solidariamente com a ambulância.",
     "distractorAnalysis": [
       "Está incorreta: O atrito do calçado e uma base alargada não geram força suficiente para travar o corpo numa travagem brusca.",
       "Está incorreta: Segurar-se com uma só mão não impede a projeção numa travagem brusca.",
-      "Está incorreta: A pressão atmosférica não influencia a projeção do corpo durante a travagem."
+      "Está incorreta: A contração muscular não aplica ao corpo uma força externa capaz de o travar; sem cinto, o corpo continua em movimento por inércia."
     ],
-    "nursingApplication": "Regra de ouro de segurança e saúde ocupacional no trabalho em serviços de emergência pré-hospitalar."
+    "nursingApplication": "Na célula sanitária da ambulância, o enfermeiro mantém o cinto colocado sempre que o cuidado ao doente não exija levantar-se, e volta a colocá-lo logo a seguir."
   },
   {
     "id": 1105,
@@ -2014,6 +2090,12 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "Realizar a mesma variação de velocidade em metade do tempo duplica a desaceleração média (a = Δv/Δt). Pela 2.ª Lei (F = m · a), com a massa m constante, a força de impacto duplica.",
+    "solution": [
+      "Dados: Δv igual; Δt<sub>2</sub> = Δt<sub>1</sub> / 2; m constante; F<sub>2</sub> = ?",
+      "Fórmula: a = Δv / Δt; F = m · a",
+      "Substituição: a<sub>2</sub> = Δv / (Δt<sub>1</sub> / 2) = 2 · a<sub>1</sub>, logo F<sub>2</sub> = m · 2 · a<sub>1</sub>",
+      "Resultado: F<sub>2</sub> = 2 · F<sub>1</sub> (a força média duplica)"
+    ],
     "distractorAnalysis": [
       "Está incorreta: Com um tempo menor a desaceleração aumenta; a força não diminui para metade.",
       "Está incorreta: Se a desaceleração duplica, a força também duplica, pela 2.ª Lei.",
@@ -2033,6 +2115,13 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "1 km/h = 1000 m / 3600 s = 1/3,6 m/s. Logo, 80 km/h = 80 / 3,6 ≈ 22,2 m/s.",
+    "solution": [
+      "Dados: v = 80 km/h; v em m/s = ?",
+      "Conversão: 1 km/h = 1000 m / 3600 s = 1 / 3,6 m/s",
+      "Fórmula: v (m/s) = v (km/h) / 3,6",
+      "Substituição: v = 80 / 3,6",
+      "Resultado: v = 22,2 m/s"
+    ],
     "distractorAnalysis": [
       "Está incorreta: Dividir por 10 não é a conversão correta; 1 km/h = 1/3,6 m/s.",
       "Está incorreta: 80 km/h não são 80 m/s; a conversão divide por 3,6.",
@@ -2052,6 +2141,12 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "A desaceleração média do corpo é a = Δv / Δt = 10 / 0,2 = 50 m/s². Pela 2.ª Lei, F = m · a = 70 × 50 = 3500 N. Se o corpo parasse contra a divisória em 0,02 s (sem cinto), a desaceleração seria 500 m/s² e a força 35 000 N, dez vezes maior: para a mesma variação de velocidade, prolongar o tempo de paragem reduz a força média.",
+    "solution": [
+      "Dados: m = 70 kg; v<sub>i</sub> = 10 m/s; v<sub>f</sub> = 0 m/s; Δt = 0,2 s; F = ?",
+      "Fórmula: a = Δv / Δt; F = m · a",
+      "Substituição: a = 10 / 0,2 = 50 m/s²; F = 70 × 50",
+      "Resultado: F = 3500 N"
+    ],
     "distractorAnalysis": [
       "Está incorreta: resulta de multiplicar a massa pela velocidade (70 × 10 = 700) sem dividir pelo tempo de paragem; a força depende da desaceleração, a = Δv / Δt.",
       "Está incorreta: resulta de multiplicar a velocidade pelo tempo (10 × 0,2 = 2 m/s²) em vez de dividir, e depois 70 × 2 = 140 N; a desaceleração é 10 / 0,2 = 50 m/s².",
@@ -2161,7 +2256,7 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Um corpo em equilíbrio não pode ter forças a atuar sobre ele.",
       "Um corpo só está em equilíbrio se estiver em repouso.",
-      "Um corpo em equilíbrio pode ter forças a atuar, desde que a resultante seja nula.",
+      "Pode haver forças a atuar no corpo, desde que a resultante seja nula.",
       "Para haver equilíbrio, a força normal tem de ser o dobro da força de atrito."
     ],
     "correctIndex": 2,
@@ -2197,7 +2292,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Um bastão ou caneta colocado na vertical apoiado na sua ponta fina e afiada sobre uma mesa representa que tipo de equilíbrio mecânico?",
     "options": [
-      "Equilíbrio instável: um pequeno desvio gera um momento que faz o corpo tombar.",
+      "Equilíbrio instável: qualquer pequeno desvio faz o bastão tombar.",
       "Equilíbrio estável, que se mantém mesmo com grandes desvios.",
       "Equilíbrio indiferente, seja qual for a inclinação do bastão.",
       "Estado de translação retilínea e uniforme, com velocidade constante."
@@ -2273,13 +2368,13 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Um utente sentado numa poltrona hospitalar com os pés apoiados no chão e as costas encostadas encontra-se numa situação de equilíbrio mecânico estável porque:",
     "options": [
-      "F<sub>R</sub> = 0 e M<sub>R</sub> = 0; se ligeiramente desviado, o corpo regressa à posição inicial.",
-      "A força de gravidade deixou de puxar o seu corpo em direção ao chão.",
-      "A força normal exercida pelo assento tem intensidade muito superior ao peso.",
-      "O utente perde a sua inércia quando se encosta aos braços da cadeira."
+      "F<sub>R</sub> = 0 e M<sub>R</sub> = 0; se ligeiramente desviado, regressa à posição inicial.",
+      "A força da gravidade deixou de puxar o seu corpo em direção ao chão quando se sentou.",
+      "A força normal exercida pelo assento tem intensidade muito superior ao peso do utente.",
+      "O utente perde a sua inércia quando se encosta às costas e aos braços da poltrona."
     ],
     "correctIndex": 0,
-    "explanation": "A ampla base delimitada pelos pés e assento e o centro de gravidade rebaixado garantem que qualquer pequena perturbação mantenha a linha de gravidade dentro da base, restaurando a postura estável.",
+    "explanation": "Há equilíbrio porque F<sub>R</sub> = 0 e M<sub>R</sub> = 0. É estável porque, perante um pequeno desvio, a base ampla (pés e assento) e o centro de gravidade baixo mantêm a linha de gravidade dentro da base, e o momento do peso faz o corpo regressar à posição inicial.",
     "distractorAnalysis": [
       "Está incorreta: A gravidade continua a atuar sobre o corpo; é equilibrada pelas reações do assento e do chão.",
       "Está incorreta: a força normal do assento é menor do que o peso, porque parte do peso é suportada pelo chão através dos pés.",
@@ -2369,7 +2464,7 @@ const TOPIC_1_QUESTIONS = [
     "question": "O que acontece à componente tangencial do peso P<sub>t</sub> se a inclinação de uma rampa hospitalar for aumentada de 5 graus para 20 graus?",
     "options": [
       "Diminui para metade, o que facilita a retenção da maca no plano.",
-      "Aumenta, exigindo maior atrito (F<sub>a</sub>) para evitar que o corpo deslize.",
+      "Aumenta, exigindo mais atrito para evitar que o corpo deslize.",
       "Permanece inalterada, porque a massa do doente não muda.",
       "Anula-se, transformando-se em força normal N, sem alterar o deslizamento."
     ],
@@ -2390,7 +2485,7 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "A maca fica parada, em equilíbrio indiferente, sem tendência para descer.",
       "A maca sobe a rampa, impulsionada pela componente normal P<sub>n</sub>.",
-      "A maca fica com F<sub>R</sub> = P<sub>t</sub> e desce a rampa com movimento acelerado.",
+      "F<sub>R</sub> = P<sub>t</sub> e a maca desce com movimento acelerado.",
       "A maca mantém o peso, mas passa a ter força normal nula na rampa."
     ],
     "correctIndex": 2,
@@ -2410,7 +2505,7 @@ const TOPIC_1_QUESTIONS = [
       "P<sub>t</sub> é igual a P e P<sub>n</sub> é nula, pois não há inclinação a considerar.",
       "P<sub>n</sub> e P<sub>t</sub> têm o mesmo valor, igual a metade do peso, por simetria do plano.",
       "Tanto P<sub>n</sub> como P<sub>t</sub> anulam-se, ficando o peso nulo, sem força que o equilibre.",
-      "P<sub>n</sub> é igual ao peso P (P<sub>n</sub> = P = N), e a componente tangencial P<sub>t</sub> é nula."
+      "P<sub>n</sub> = P (igual a N), e a componente tangencial P<sub>t</sub> é nula."
     ],
     "correctIndex": 3,
     "explanation": "Na horizontal, a gravidade atua estritamente perpendicular ao plano: todo o peso coincide com a componente normal (P<sub>n</sub> = P), sendo suportado pela força normal N, enquanto a tendência de deslizamento é nula (P<sub>t</sub> = 0).",
@@ -2443,10 +2538,10 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1129,
     "topicId": 1,
-    "question": "Qual das forças no diagrama do plano inclinado é perpendicular à força normal N?",
+    "question": "Num corpo apoiado num plano inclinado, qual das seguintes forças é perpendicular à força normal N?",
     "options": [
       "A componente normal do peso P<sub>n</sub>, que pressiona o corpo contra a rampa.",
-      "A força de atrito F<sub>a</sub> (e a componente P<sub>t</sub>), paralela à superfície.",
+      "A força de atrito F<sub>a</sub> (e P<sub>t</sub>), paralela à superfície.",
       "O peso total P, que mantém a mesma direção em todas as inclinações.",
       "Não há força perpendicular, pois todas as forças são paralelas entre si."
     ],
@@ -2587,6 +2682,12 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 0,
     "explanation": "Aplicando diretamente M = F · b: M = 30 N × 0,5 m = 15 N·m.",
+    "solution": [
+      "Dados: F = 30 N; b = 0,5 m; M = ?",
+      "Fórmula: M = F · b",
+      "Substituição: M = 30 × 0,5",
+      "Resultado: M = 15 N·m"
+    ],
     "distractorAnalysis": [
       "Está incorreta: 60 N·m resultaria de dividir 30 por 0,5 (F / b), o que viola a fórmula M = F · b.",
       "Está incorreta: 0,017 resultaria da divisão 0,5 / 30, que dá m/N e não N·m.",
@@ -2640,7 +2741,7 @@ const TOPIC_1_QUESTIONS = [
       "Porque a massa do objeto aumenta quando é afastada do peito.",
       "Porque o atrito do pavimento desaparece, desestabilizando o esqueleto.",
       "Porque a gravidade diminui quando a carga é afastada do tronco.",
-      "Porque o braço da força resistente aumenta, gerando um momento flexor elevado."
+      "Porque aumenta o braço da carga e, com ele, o momento flexor."
     ],
     "correctIndex": 3,
     "explanation": "A força resistente (peso da carga) é constante. Contudo, ao afastar a carga do tronco, a distância horizontal b até ao fulcro lombar aumenta grandemente, aumentando o momento flexor M = F · b, que os músculos extensores da coluna têm de equilibrar com forças muito elevadas (o seu braço é de poucos centímetros).",
@@ -2664,6 +2765,12 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 0,
     "explanation": "Calculando M = F · b para cada uma: M1 = 10 N × 2 m = 20 N·m; M2 = 10 N × 1 m = 10 N·m. A força com o dobro do braço produz o dobro do momento rotativo.",
+    "solution": [
+      "Dados: F<sub>1</sub> = F<sub>2</sub> = 10 N; b<sub>1</sub> = 2 m; b<sub>2</sub> = 1 m; M<sub>1</sub> = ?; M<sub>2</sub> = ?",
+      "Fórmula: M = F · b",
+      "Substituição: M<sub>1</sub> = 10 × 2; M<sub>2</sub> = 10 × 1",
+      "Resultado: Momento 1 = 20 N·m e Momento 2 = 10 N·m"
+    ],
     "distractorAnalysis": [
       "Está incorreta: Com F = 10 N e b = 2 m, o momento é 10 × 2 = 20 N·m, e não 5 N·m.",
       "Está incorreta: Os braços são diferentes (2 m e 1 m), pelo que os momentos também são diferentes.",
@@ -2816,6 +2923,12 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 0,
     "explanation": "Pela Lei das Alavancas: F<sub>Potente</sub> · (4 b<sub>Resis.</sub>) = F<sub>Resis.</sub> · b<sub>Resis.</sub> => F<sub>Potente</sub> = F<sub>Resis.</sub> / 4. Ao multiplicar o braço potente por 4, a força necessária para suster a carga reduz-se a um quarto.",
+    "solution": [
+      "Dados: b<sub>Potente</sub> = 4 · b<sub>Resis.</sub>; F<sub>Potente</sub> = ?",
+      "Fórmula: F<sub>Potente</sub> · b<sub>Potente</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub>, logo F<sub>Potente</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub> / b<sub>Potente</sub>",
+      "Substituição: F<sub>Potente</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub> / (4 · b<sub>Resis.</sub>)",
+      "Resultado: F<sub>Potente</sub> = F<sub>Resis.</sub> / 4 (4 vezes menor do que a resistente)"
+    ],
     "distractorAnalysis": [
       "Está incorreta: Um braço potente maior reduz a força necessária; não a aumenta.",
       "Está incorreta: A lei do inverso do quadrado não se aplica às alavancas; a relação é F · b.",
@@ -2925,7 +3038,7 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "A articulação da cabeça com a primeira vértebra cervical (atlanto-occipital).",
       "O movimento dos ossos do ouvido médio (martelo e bigorna).",
-      "A flexão do cotovelo, em que o bíceps atua entre o fulcro e a resistência na mão.",
+      "A flexão do cotovelo: o bíceps atua entre o fulcro e a carga na mão.",
       "A elevação do calcanhar ao apoiar-se nas pontas dos pés."
     ],
     "correctIndex": 2,
@@ -3021,7 +3134,7 @@ const TOPIC_1_QUESTIONS = [
       "Permitem reduzir a necessidade de aporte sanguíneo aos músculos em repouso.",
       "Reduzem o atrito no interior da cápsula articular, evitando o desgaste.",
       "Fazem com que o peso do corpo diminua durante o movimento articular.",
-      "Proporcionam ganho de amplitude e de velocidade na extremidade distal (mão ou pé)."
+      "Dão ganho de amplitude e de velocidade na extremidade distal (mão ou pé)."
     ],
     "correctIndex": 3,
     "explanation": "Nas alavancas interpotentes (3.ª classe), a força muscular potente atua entre o fulcro e a carga. Como o braço potente é menor que o braço resistente (VM < 1), o músculo tem de produzir maior tensão; em contrapartida, como o músculo se insere perto do fulcro, um pequeno encurtamento muscular traduz-se numa rotação ampla e num deslocamento amplo e rápido da extremidade distal. Assim, estas alavancas privilegiam a amplitude e a velocidade do movimento em detrimento da vantagem de força.",
@@ -3038,16 +3151,16 @@ const TOPIC_1_QUESTIONS = [
     "question": "A articulação da cabeça com a coluna cervical (onde os músculos posteriores da nuca equilibram o peso da cabeça em torno do côndilo occipital) funciona como:",
     "options": [
       "Uma alavanca interfixa, com o apoio entre a força muscular e o peso da cabeça.",
-      "Uma alavanca interpotente, sem ponto de apoio definido.",
-      "Um corpo viscoso, sem restituição elástica.",
-      "Uma alavanca inter-resistente, com a carga nas vértebras lombares."
+      "Uma alavanca interpotente, com o músculo entre o apoio e o peso da cabeça.",
+      "Uma alavanca inter-resistente, com o peso da cabeça entre o apoio e os músculos.",
+      "Um apoio simples, sem alavanca, porque o peso da cabeça passa pelo côndilo."
     ],
     "correctIndex": 0,
     "explanation": "O côndilo occipital (fulcro) situa-se entre a musculatura extensora da nuca (força potente, atrás) e o centro de gravidade da cabeça/face (força resistente, à frente): Alavanca Interfixa.",
     "distractorAnalysis": [
-      "Está incorreta: A articulação atlanto-occipital é um fulcro ósseo de rotação bem definido.",
-      "Está incorreta: A cabeça e a coluna cervical comportam-se como alavancas, com fulcro definido no côndilo.",
-      "Está incorreta: A carga craniana atua sobre o pescoço e a coluna cervical, não sobre as vértebras lombares."
+      "Está incorreta: Na nuca, o fulcro (côndilo occipital) fica entre a força muscular, atrás, e o peso da cabeça, à frente; o músculo não está no meio.",
+      "Está incorreta: A carga (peso da cabeça) não está entre o apoio e o músculo; é o côndilo occipital que separa as duas forças.",
+      "Está incorreta: O centro de gravidade da cabeça situa-se à frente do côndilo, pelo que o peso cria um momento flexor que os músculos da nuca equilibram."
     ],
     "nursingApplication": "Explica por que adormecer sentado faz a cabeça tombar para a frente: ao relaxar os músculos posteriores, o peso da cabeça faz a alavanca girar."
   },
@@ -3064,6 +3177,12 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "Como b<sub>Potente</sub> + b<sub>Resis.</sub> = 3,6 m e b<sub>Potente</sub> = 2x, obtém-se 3x = 3,6 (=) x = 1,2 m. O braço resistente b<sub>Resis.</sub> é 1,2 m e o potente b<sub>Potente</sub> é 2,4 m.",
+    "solution": [
+      "Dados: alavanca interfixa; comprimento total = 3,6 m; b<sub>Potente</sub> = 2x; b<sub>Resis.</sub> = x; x = ?",
+      "Fórmula: b<sub>Potente</sub> + b<sub>Resis.</sub> = 3,6 m (o fulcro fica entre as duas forças)",
+      "Substituição: 2x + x = 3,6, logo 3x = 3,6 e x = 3,6 / 3",
+      "Resultado: x = 1,2 m"
+    ],
     "distractorAnalysis": [
       "Está incorreta: 3,6 m é o comprimento total da barra da alavanca, não o valor de x.",
       "Está incorreta: 2,4 m é o valor do braço potente (2x = 2 × 1,2), não de x.",
@@ -3084,6 +3203,12 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "Resolução: 'Momento da força resistente: M<sub>Resis.</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub> (=) M<sub>Resis.</sub> = 20 × 1,2 (=) M<sub>Resis.</sub> = 24 N·m'.",
+    "solution": [
+      "Dados: F<sub>Resis.</sub> = 20 N; b<sub>Resis.</sub> = 1,2 m; M<sub>Resis.</sub> = ?",
+      "Fórmula: M<sub>Resis.</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub>",
+      "Substituição: M<sub>Resis.</sub> = 20 × 1,2",
+      "Resultado: M<sub>Resis.</sub> = 24 N·m"
+    ],
     "distractorAnalysis": [
       "Está incorreta: 16,7 resultaria de dividir 20 por 1,2, o que é um erro de cálculo.",
       "Está incorreta: 21,2 resultaria de somar 20 com 1,2 em vez de multiplicar.",
@@ -3104,6 +3229,12 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 3,
     "explanation": "A resolução determina: 'Momento da força potente: M<sub>Potente</sub> = F<sub>Potente</sub> · b<sub>Potente</sub> (=) 24 = F<sub>Potente</sub> × 2,4 (=) F<sub>Potente</sub> = 10 N'.",
+    "solution": [
+      "Dados: M<sub>Resis.</sub> = 24 N·m; b<sub>Potente</sub> = 2,4 m; equilíbrio; F<sub>Potente</sub> = ?",
+      "Fórmula: M<sub>Potente</sub> = M<sub>Resis.</sub>, com M<sub>Potente</sub> = F<sub>Potente</sub> · b<sub>Potente</sub>, logo F<sub>Potente</sub> = M<sub>Resis.</sub> / b<sub>Potente</sub>",
+      "Substituição: F<sub>Potente</sub> = 24 / 2,4",
+      "Resultado: F<sub>Potente</sub> = 10 N"
+    ],
     "distractorAnalysis": [
       "Está incorreta: 24 N seria a força potente se o braço potente fosse de apenas 1 metro.",
       "Está incorreta: 57,6 N resultaria de multiplicar 24 por 2,4 em vez de dividir.",
@@ -3123,6 +3254,12 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 0,
     "explanation": "O cálculo determina: P = F<sub>Resis.</sub> = m · g = 500 kg × 9,8 m/s² = 4900 N.",
+    "solution": [
+      "Dados: m = 500 kg; g = 9,8 m/s²; F<sub>Resis.</sub> = ?",
+      "Fórmula: F<sub>Resis.</sub> = P = m · g",
+      "Substituição: F<sub>Resis.</sub> = 500 × 9,8",
+      "Resultado: F<sub>Resis.</sub> = 4900 N"
+    ],
     "distractorAnalysis": [
       "Está incorreta: 500 é a massa em quilogramas (kg), que tem de ser multiplicada por g para obter o peso em newtons.",
       "Está incorreta: 51,02 resultaria de dividir a massa pela gravidade, o que viola P = m · g.",
@@ -3134,6 +3271,7 @@ const TOPIC_1_QUESTIONS = [
     "id": 1165,
     "topicId": 1,
     "question": "Se uma carga resistente de 4900 N for colocada a uma distância de b<sub>Resis.</sub> = 0,3 m do fulcro, qual é o Momento da Força Resistente (M<sub>Resis.</sub>) produzido em relação ao ponto de apoio?",
+    "figure": {"type": "moment", "items": [{"len": 0.6, "F": "F<sub>Resis.</sub> = 4900 N", "b": "b<sub>Resis.</sub> = 0,3 m"}], "alt": "Carga resistente de 4900 N a 0,3 m do eixo de rotação"},
     "options": [
       "M<sub>Resis.</sub> = 147 N·m",
       "M<sub>Resis.</sub> = 1470 N·m",
@@ -3142,6 +3280,12 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "Apresenta-se formalmente: 'M<sub>Resis.</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub> (=) M<sub>Resis.</sub> = (500 × 9,8) × 0,3 (=) M<sub>Resis.</sub> = 1470 N·m'.",
+    "solution": [
+      "Dados: F<sub>Resis.</sub> = 4900 N; b<sub>Resis.</sub> = 0,3 m; M<sub>Resis.</sub> = ?",
+      "Fórmula: M<sub>Resis.</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub>",
+      "Substituição: M<sub>Resis.</sub> = 4900 × 0,3",
+      "Resultado: M<sub>Resis.</sub> = 1470 N·m"
+    ],
     "distractorAnalysis": [
       "Está incorreta: 147 N·m resultaria de usar braço de 0,03 m em vez de 0,3 m.",
       "Está incorreta: 4900 N·m seria o momento se o braço fosse de 1 metro.",
@@ -3161,6 +3305,12 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 3,
     "explanation": "Resolução: 'M<sub>Potente</sub> = F<sub>Potente</sub> · b<sub>Potente</sub> (=) 1470 = (30 × 9,8) × b<sub>Potente</sub> (=) b<sub>Potente</sub> = 5 m'.",
+    "solution": [
+      "Dados: M<sub>Resis.</sub> = 1470 N·m; F<sub>Potente</sub> = 294 N; equilíbrio; b<sub>Potente</sub> = ?",
+      "Fórmula: F<sub>Potente</sub> · b<sub>Potente</sub> = M<sub>Resis.</sub>, logo b<sub>Potente</sub> = M<sub>Resis.</sub> / F<sub>Potente</sub>",
+      "Substituição: b<sub>Potente</sub> = 1470 / 294",
+      "Resultado: b<sub>Potente</sub> = 5 m"
+    ],
     "distractorAnalysis": [
       "Está incorreta: 1,47 m seria insuficiente: geraria apenas 294 × 1,47 = 432 N·m, e a alavanca não equilibraria.",
       "Está incorreta: 30 é o valor numérico da massa (kg), e não uma distância.",
@@ -3173,17 +3323,17 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "O que comprova biomecanicamente o dimensionamento de uma alavanca interfixa que permite a uma pessoa equilibrar uma carga de 500 kg (4900 N) com uma força de 294 N (o peso de uma massa de 30 kg)?",
     "options": [
-      "Que a gravidade terrestre deixa de atuar quando as barras têm mais de 3 metros.",
-      "Que é impossível erguer cargas superiores à massa corporal de um indivíduo.",
-      "Que os dinamómetros medem forças até cerca de 30 newtons.",
-      "Que, aumentando o braço potente, se vencem resistências muito elevadas com forças modestas."
+      "Que o fulcro suporta toda a carga, pelo que a força potente só tem de vencer o atrito.",
+      "Que um braço potente curto aumenta a força que a alavanca transmite à carga.",
+      "Que, numa alavanca, a força potente tem de igualar o peso da carga para a equilibrar.",
+      "Que um braço potente longo permite vencer grandes resistências com forças pequenas."
     ],
     "correctIndex": 3,
     "explanation": "A essência das máquinas simples de Arquimedes ('Deem-me uma alavanca e um ponto de apoio e moverei o mundo'): aumentando o braço potente, multiplicamos o efeito de rotação e reduzimos a força necessária.",
     "distractorAnalysis": [
-      "Está incorreta: A gravidade mantém-se ativa ao longo de todo o sistema.",
-      "Está incorreta: É possível mover grandes massas com auxílio mecânico de alavancas.",
-      "Está incorreta: Existem dinamómetros calibrados para forças muito superiores a 30 newtons."
+      "Está incorreta: O apoio exerce uma reação, mas o equilíbrio de rotação exige que o momento potente iguale o momento resistente; a força potente não serve só para vencer o atrito.",
+      "Está incorreta: Com um braço potente curto, o momento potente diminui e seria necessária uma força maior para equilibrar a carga.",
+      "Está incorreta: O equilíbrio exige igualdade de momentos (F · b), e não de forças; 294 N equilibram 4900 N porque o braço potente é muito maior."
     ],
     "nursingApplication": "Fundamento de dispositivos com braço longo (manivelas de camas e macas, travões) que reduzem a força a aplicar."
   },
@@ -3193,13 +3343,20 @@ const TOPIC_1_QUESTIONS = [
     "question": "Num baloiço (alavanca interfixa) com M<sub>Resis.</sub> = 24 N·m, se uma pessoa aplicar uma força potente de 15 N com um braço b<sub>Potente</sub> = 2,4 m, o que acontecerá ao sistema?",
     "figure": {"type": "lever", "cls": 1, "a": 2, "r": 1, "fPot": "F<sub>Potente</sub> = 15 N", "fRes": "F<sub>Resis.</sub>", "bPot": "b<sub>Potente</sub> = 2,4 m", "bRes": "b<sub>Resis.</sub>"},
     "options": [
-      "O momento potente seria 36 N·m, superando M<sub>Resis.</sub> (24 N·m) e fazendo a alavanca girar.",
+      "A alavanca roda, pois o momento potente (36 N·m) supera M<sub>Resis.</sub>.",
       "A alavanca permaneceria em repouso, sem movimento, como se as forças se anulassem.",
       "O momento potente anular-se-ia por si, sem intervenção de forças externas.",
       "A força resistente aumentaria instantaneamente para 36 N para impedir a rotação."
     ],
     "correctIndex": 0,
     "explanation": "Com F<sub>Potente</sub> = 15 N, M<sub>Potente</sub> = 36 N·m. Como 36 N·m > 24 N·m, o momento resultante não é nulo (36 − 24 = 12 N·m, no sentido do momento potente) e a alavanca entra em rotação acelerada nesse sentido.",
+    "solution": [
+      "Dados: M<sub>Resis.</sub> = 24 N·m; F<sub>Potente</sub> = 15 N; b<sub>Potente</sub> = 2,4 m",
+      "Fórmula: M<sub>Potente</sub> = F<sub>Potente</sub> · b<sub>Potente</sub>",
+      "Substituição: M<sub>Potente</sub> = 15 × 2,4",
+      "Resultado: M<sub>Potente</sub> = 36 N·m",
+      "Conclusão: 36 N·m > 24 N·m, o momento resultante não é nulo e a alavanca gira no sentido do momento potente."
+    ],
     "distractorAnalysis": [
       "Está incorreta: A alavanca só ficaria em repouso se os momentos fossem iguais (F<sub>Potente</sub> = 10 N).",
       "Está incorreta: O momento potente não se anula por si; só um momento de sentido oposto o pode compensar, e M<sub>Resis.</sub> (24 N·m) é inferior a 36 N·m.",
@@ -3257,6 +3414,12 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "P = m · g = 2,5 kg × 9,8 m/s² = 24,5 N. A massa (em kg) e o peso (em N) são grandezas diferentes.",
+    "solution": [
+      "Dados: m = 2,5 kg; g = 9,8 m/s²; P = ?",
+      "Fórmula: P = m · g",
+      "Substituição: P = 2,5 × 9,8",
+      "Resultado: P = 24,5 N"
+    ],
     "distractorAnalysis": [
       "Está incorreta: 2,5 é a massa em quilogramas; o peso é P = m · g, em newtons.",
       "Está incorreta: 2,5 / 9,8 ≈ 0,26 resultaria de dividir, e não de multiplicar, a massa pela gravidade.",
@@ -3276,6 +3439,13 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 0,
     "explanation": "1 cm = 0,01 m. Logo, 15 cm = 0,15 m, 8 cm = 0,08 m e 30 cm = 0,30 m.",
+    "solution": [
+      "Dados: 15 cm; 8 cm; 30 cm",
+      "Conversão: 1 cm = 0,01 m (dividir por 100)",
+      "Fórmula: d (m) = d (cm) / 100",
+      "Substituição: 15 / 100; 8 / 100; 30 / 100",
+      "Resultado: 0,15 m; 0,08 m; 0,30 m"
+    ],
     "distractorAnalysis": [
       "Está incorreta: Confunde centímetros com decímetros: 15 cm são 0,15 m, e não 1,5 m.",
       "Está incorreta: Divide por 1000 em vez de 100: 15 cm são 0,15 m, e não 0,015 m.",
@@ -3287,6 +3457,7 @@ const TOPIC_1_QUESTIONS = [
     "id": 1173,
     "topicId": 1,
     "question": "Para um objeto com massa de 1,0 kg segurado na mão a uma distância de 30 cm (0,3 m) do cotovelo, qual é o Momento Resistente (M<sub>Resis.</sub>) gerado (com g = 9,8 m/s²)?",
+    "figure": {"type": "moment", "items": [{"len": 1, "F": "F<sub>Resis.</sub> (m = 1,0 kg)", "b": "b<sub>Resis.</sub> = 0,3 m"}], "alt": "Objeto de 1,0 kg seguro na mão, a 0,3 m do eixo do cotovelo"},
     "options": [
       "M<sub>Resis.</sub> = 30 N·m",
       "M<sub>Resis.</sub> = 2,94 N·m",
@@ -3295,6 +3466,12 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "Resolução: 'M<sub>Resis.</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub> (=) M<sub>Resis.</sub> = (1 × 9,8) × 0,3 (=) M<sub>Resis.</sub> = 2,94 N·m'.",
+    "solution": [
+      "Dados: m = 1,0 kg; b<sub>Resis.</sub> = 0,3 m; g = 9,8 m/s²; M<sub>Resis.</sub> = ?",
+      "Fórmula: F<sub>Resis.</sub> = m · g; M<sub>Resis.</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub>",
+      "Substituição: F<sub>Resis.</sub> = 1,0 × 9,8 = 9,8 N; M<sub>Resis.</sub> = 9,8 × 0,3",
+      "Resultado: M<sub>Resis.</sub> = 2,94 N·m"
+    ],
     "distractorAnalysis": [
       "Está incorreta: 30 N·m resultaria de multiplicar 1 por 30 ignorando a gravidade e os centímetros.",
       "Está incorreta: 0,3 N·m resultaria de multiplicar apenas a massa pelo braço sem aplicar g = 9,8.",
@@ -3306,6 +3483,7 @@ const TOPIC_1_QUESTIONS = [
     "id": 1174,
     "topicId": 1,
     "question": "Para o segmento antebraço+mão com massa de 2,5 kg cujo centro de massa dista 15 cm (0,15 m) do cotovelo, qual é o Momento gerado pelo seu peso anatómico (com g = 9,8 m/s²)?",
+    "figure": {"type": "moment", "items": [{"len": 0.5, "F": "P (m = 2,5 kg)", "b": "b = 0,15 m"}], "alt": "Peso do antebraço e mão, de massa 2,5 kg, aplicado a 0,15 m do eixo do cotovelo"},
     "options": [
       "M<sub>antebraço</sub> = 2,5 N·m",
       "M<sub>antebraço</sub> = 36,8 N·m",
@@ -3314,6 +3492,12 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "Apresenta-se: 'M<sub>antebraço+mão</sub> = F · b (=) M = (2,5 × 9,8) × 0,15 (=) M = 3,68 N·m' (valor exato 3,675 N·m, arredondado a 3,68 N·m).",
+    "solution": [
+      "Dados: m = 2,5 kg; b = 0,15 m; g = 9,8 m/s²; M<sub>antebraço</sub> = ?",
+      "Fórmula: P = m · g; M<sub>antebraço</sub> = P · b",
+      "Substituição: P = 2,5 × 9,8 = 24,5 N; M<sub>antebraço</sub> = 24,5 × 0,15 = 3,675",
+      "Resultado: M<sub>antebraço</sub> = 3,68 N·m"
+    ],
     "distractorAnalysis": [
       "Está incorreta: 2,5 é apenas o valor da massa em kg, sem multiplicar por g nem pelo braço.",
       "Está incorreta: 36,8 N·m resultaria de converter 15 cm em 1,5 m em vez de 0,15 m (24,5 × 1,5).",
@@ -3333,6 +3517,12 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 3,
     "explanation": "Os dois momentos tendem a rodar o antebraço no mesmo sentido (extensão do cotovelo), pelo que se somam: 3,68 + 2,94 = 6,62 N·m.",
+    "solution": [
+      "Dados: M<sub>antebraço</sub> = 3,68 N·m; M<sub>objeto</sub> = 2,94 N·m, no mesmo sentido; M<sub>total</sub> = ?",
+      "Fórmula: M<sub>total</sub> = M<sub>antebraço</sub> + M<sub>objeto</sub>",
+      "Substituição: M<sub>total</sub> = 3,68 + 2,94",
+      "Resultado: M<sub>total</sub> = 6,62 N·m"
+    ],
     "distractorAnalysis": [
       "Está incorreta: 2,94 N·m considera apenas o objeto externo, esquecendo o peso do próprio membro.",
       "Está incorreta: 3,68 N·m considera apenas o antebraço, esquecendo o objeto transportado na mão.",
@@ -3352,6 +3542,13 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 0,
     "explanation": "Equação de equilíbrio: 'M<sub>E</sub> = F<sub>E</sub> · b<sub>E</sub> (=) 6,62 = F<sub>E</sub> × 0,08 (=) F<sub>E</sub> = 82,75 N'.",
+    "solution": [
+      "Dados: M<sub>total</sub> = 6,62 N·m; b<sub>E</sub> = 8 cm; F<sub>E</sub> = ?",
+      "Conversão: 8 cm = 0,08 m",
+      "Fórmula: F<sub>E</sub> · b<sub>E</sub> = M<sub>total</sub>, logo F<sub>E</sub> = M<sub>total</sub> / b<sub>E</sub>",
+      "Substituição: F<sub>E</sub> = 6,62 / 0,08",
+      "Resultado: F<sub>E</sub> = 82,75 N"
+    ],
     "distractorAnalysis": [
       "Está incorreta: 6,62 N seria a força se o braço do bíceps medisse 1 metro inteiro.",
       "Está incorreta: 0,53 N resultaria de multiplicar 6,62 por 0,08 em vez de dividir.",
@@ -3409,6 +3606,13 @@ const TOPIC_1_QUESTIONS = [
     ],
     "correctIndex": 3,
     "explanation": "Com o objeto a pesar 3 kg, M<sub>objeto</sub> = (3 × 9,8) × 0,3 = 8,82 N·m. Somando aos 3,68 N·m do antebraço dá 12,50 N·m. A força do bíceps passaria para 12,50 / 0,08 = 156,25 N: quase duplica, mas não triplica, porque o momento do antebraço (3,68 N·m) se mantém.",
+    "solution": [
+      "Dados: m<sub>objeto</sub> = 3 kg (antes 1 kg); d<sub>Resis.</sub> = 0,3 m; g = 9,8 m/s²; M<sub>objeto</sub> = ?",
+      "Fórmula: M<sub>objeto</sub> = m · g · d<sub>Resis.</sub>",
+      "Substituição: M<sub>objeto</sub> = 3 × 9,8 × 0,3",
+      "Resultado: M<sub>objeto</sub> = 8,82 N·m (o triplo de 2,94 N·m)",
+      "Conclusão: o esforço do bíceps aumenta: (3,68 + 8,82) / 0,08 = 156,25 N, quase o dobro de 82,75 N."
+    ],
     "distractorAnalysis": [
       "Está incorreta: A força muscular não é constante; varia com o momento resistente total.",
       "Está incorreta: O peso da mão aumenta o momento resistente, e não o diminui.",
@@ -3421,7 +3625,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Que conclusão biomecânica geral se extrai da análise da alavanca interpotente do bíceps no corpo humano?",
     "options": [
-      "As alavancas interpotentes operam em desvantagem mecânica, exigindo forças musculares elevadas.",
+      "Operam em desvantagem mecânica, exigindo forças musculares elevadas.",
       "Os ossos humanos são alavancas ideais, que exigem pouca força para mover cargas.",
       "O bíceps humano dispensa as leis da física clássica quando segura cargas.",
       "O antebraço é uma alavanca interfixa, em que o cotovelo se situa na ponta dos dedos."
@@ -3440,15 +3644,15 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a definição exata de Centro de Gravidade (CG) na Biofísica e Biomecânica do corpo humano?",
     "options": [
-      "Ponto anatómico onde se mede a tensão arterial sistólica, no braço.",
-      "Ponto onde se considera concentrada toda a massa e atua a resultante das forças gravíticas.",
+      "Ponto fixo à frente da 2.ª vértebra sagrada, que não muda com a postura do corpo.",
+      "Ponto onde se considera aplicado o peso, a resultante das forças gravíticas.",
       "Área geométrica de contacto entre a sola do calçado e o solo da enfermaria.",
       "Linha imaginária que divide o corpo humano em metades direita e esquerda."
     ],
     "correctIndex": 1,
     "explanation": "O centro de gravidade é o ponto imaginário onde se considera concentrada toda a massa do corpo e onde atua a resultante das forças gravíticas.",
     "distractorAnalysis": [
-      "Está incorreta: A tensão arterial mede-se no braço, mas não define o centro de gravidade.",
+      "Está incorreta: A posição do centro de gravidade depende da postura; a 2.ª vértebra sagrada é apenas a sua localização aproximada no adulto em pé.",
       "Está incorreta: A área de contacto dos pés é a base de sustentação, e não o centro de gravidade.",
       "Está incorreta: Essa é a linha média do corpo; o centro de gravidade é um ponto, e não uma linha."
     ],
@@ -3481,7 +3685,7 @@ const TOPIC_1_QUESTIONS = [
       "Permanece imóvel e fixo à 2.ª vértebra sagrada, mesmo que a pessoa salte ou corra.",
       "Desaparece durante a marcha, como se o corpo deixasse de ter massa.",
       "Passa a situar-se no chão, entre os dois pés, onde o corpo se apoia.",
-      "Desloca-se com o movimento (por exemplo, sobe ao elevar os braços e avança ao inclinar o tronco)."
+      "Muda de posição com a postura (sobe ao elevar os braços, por exemplo)."
     ],
     "correctIndex": 3,
     "explanation": "Define-se o princípio da Mobilidade do CG: 'O centro de gravidade desloca-se com o movimento (por exemplo, sobe ao elevar os braços e avança ao inclinar o tronco)'.",
@@ -3497,7 +3701,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a definição exata de 'Base de sustentação' na estabilidade postural humana?",
     "options": [
-      "Área delimitada pelos pontos de contacto do corpo com a superfície de apoio.",
+      "Área delimitada pelos pontos de contacto do corpo com o apoio.",
       "A altura em metros medida desde o chão até à 2.ª vértebra sagrada.",
       "Soma das áreas de contacto das plantas dos pés, sem o espaço entre eles.",
       "O momento de força exercido pelo bíceps sobre a tuberosidade do rádio."
@@ -3517,7 +3721,7 @@ const TOPIC_1_QUESTIONS = [
     "question": "Como difere a localização do Centro de Gravidade de uma criança pequena comparativamente à de um adulto?",
     "options": [
       "Na criança pequena situa-se nos calcanhares e no adulto no pescoço.",
-      "Na criança pequena situa-se mais alto (região toraco-abdominal); no adulto situa-se à frente de S2.",
+      "Na criança está mais alto (região toraco-abdominal); no adulto, à frente de S2.",
       "É idêntico em todas as idades, pois a proporção corporal não muda com o crescimento.",
       "A criança pequena não possui centro de gravidade até aos 18 anos de idade."
     ],
@@ -3557,7 +3761,7 @@ const TOPIC_1_QUESTIONS = [
       "Desloca-se para a sola dos sapatos, aumentando a estabilidade, porque o peso fica mais baixo.",
       "Desloca-se para trás, ficando mais próximo da parede do corredor, sem alterar a postura.",
       "Permanece na 2.ª vértebra sagrada, sem se deslocar, mesmo quando o corpo se estica.",
-      "O centro de gravidade sobe alguns centímetros, reduzindo temporariamente a margem de estabilidade."
+      "Sobe alguns centímetros, reduzindo temporariamente a margem de estabilidade."
     ],
     "correctIndex": 3,
     "explanation": "Indica-se claramente: 'sobe ao elevar os braços'. Elevar os membros superiores desloca massa para cima, subindo o CG e aumentando a distância até à base de sustentação, o que reduz a estabilidade postural.",
@@ -3573,10 +3777,10 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Quando uma pessoa inclina o tronco para a frente ao tentar apanhar algo no chão:",
     "options": [
-      "O centro de gravidade avança, aproximando a linha de gravidade do bordo anterior da base.",
+      "O centro de gravidade avança e a linha de gravidade aproxima-se dos dedos.",
       "O centro de gravidade recua para os calcanhares, o que aumenta a segurança.",
       "A base de sustentação alarga-se para o dobro, sem alterar a posição dos pés.",
-      "O peso do corpo diminui até o tronco voltar à vertical."
+      "O peso do corpo diminui enquanto o tronco não volta à posição vertical."
     ],
     "correctIndex": 0,
     "explanation": "Refere-se explicitamente: 'avança ao inclinar o tronco'. A projeção vertical do CG (Linha de Gravidade) aproxima-se dos dedos dos pés; se ultrapassar os limites da base, o indivíduo desequilibra-se e cai para a frente.",
@@ -3613,7 +3817,7 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Que o centro de gravidade se mantenha fixo à frente da 2.ª vértebra sagrada.",
       "Que a força potente exercida pelo quadríceps seja igual a zero newtons, em repouso total.",
-      "Que a linha de gravidade (projeção vertical do centro de gravidade) fique dentro da base de sustentação.",
+      "Que a linha de gravidade (projeção vertical do CG) caia dentro da base de sustentação.",
       "Que o atrito com o piso seja igual à força normal do leito, em todas as posições do corpo."
     ],
     "correctIndex": 2,
@@ -3633,7 +3837,7 @@ const TOPIC_1_QUESTIONS = [
       "Condição: Mais alto (pontas dos pés); Intervenção: Manter o tronco esticado e rígido.",
       "Condição: CG no pescoço; Intervenção: Manter a cama no nível mais alto possível.",
       "Condição: CG elevado; Intervenção: Afastar-se do doente durante a mobilização.",
-      "Condição: Mais baixo (joelhos e ancas fletidos); Intervenção: Fletir os joelhos ao esforçar-se."
+      "Condição: CG mais baixo; Intervenção: Fletir joelhos e ancas ao esforçar-se."
     ],
     "correctIndex": 3,
     "explanation": "Um centro de gravidade mais baixo aumenta a estabilidade: fletir os joelhos e as ancas ao esforçar-se ou ao mobilizar um doente baixa o centro de gravidade. Pelo contrário, ficar nas pontas dos pés ou com o tronco esticado eleva-o e torna a postura instável.",
@@ -3725,7 +3929,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Que medida preventiva de enfermagem reduz o risco de queda relacionado com o atrito entre o solo e o calçado?",
     "options": [
-      "Evitar meias sem sola antiderrapante; preferir calçado de sola de borracha com relevo.",
+      "Usar calçado de sola de borracha com relevo, e não meias lisas.",
       "Encerar os corredores com cera líquida pouco antes da marcha dos doentes.",
       "Incentivar os doentes operados a caminhar de meias de seda em piso molhado.",
       "Usar calçado de sola lisa para acelerar as deslocações pelos corredores."
@@ -3745,16 +3949,16 @@ const TOPIC_1_QUESTIONS = [
     "question": "Qual é o efeito biomecânico da utilização de dispositivos de apoio (como andarilho ou bengala) sobre a estabilidade postural do doente?",
     "options": [
       "Reduzem a base de sustentação, para estimular o equilíbrio cerebral.",
-      "Aumentam a base de sustentação, e o andarilho alarga-a mais do que a bengala.",
+      "Aumentam a base de sustentação; o andarilho alarga-a mais do que a bengala.",
       "Reduzem o peso do doente, permitindo-lhe andar sem apoio do solo.",
-      "Aumentam a velocidade da marcha de forma significativa."
+      "Aumentam a velocidade da marcha, porque o doente passa a apoiar-se nos braços."
     ],
     "correctIndex": 1,
     "explanation": "Os dispositivos de apoio aumentam a área da base de sustentação: o andarilho, com quatro apoios no solo, alarga-a mais do que a bengala, que acrescenta um único ponto de apoio. Assim alargam-se os limites dentro dos quais a linha de gravidade pode oscilar sem queda.",
     "distractorAnalysis": [
       "Está incorreta: Reduzir a base aumenta a instabilidade; os dispositivos de apoio fazem o contrário.",
       "Está incorreta: O peso do doente não se altera com um andarilho ou bengala.",
-      "Está incorreta: Os dispositivos de apoio destinam-se a dar estabilidade, e não a aumentar a velocidade da marcha."
+      "Está incorreta: Os dispositivos de apoio destinam-se a dar estabilidade, e não a aumentar a velocidade; em geral a marcha fica mais lenta."
     ],
     "nursingApplication": "Explica aos doentes e familiares a razão biomecânica pela qual o andarilho devolve a segurança ao caminhar."
   },
