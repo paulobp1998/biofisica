@@ -611,14 +611,14 @@ const TOPIC_1_QUESTIONS = [
       "P = m / g, com P em newtons e g em metros por segundo ao quadrado.",
       "M = F / b, com M em newton-metros e b em metros.",
       "F = m · a, com F em newtons, m em quilogramas e a em m/s².",
-      "P = F · A, com P em N/m² e A em metros quadrados."
+      "p = F · A, com p em N/m² e A em metros quadrados."
     ],
     "correctIndex": 2,
     "explanation": "A expressão clássica da 2.ª Lei de Newton (Lei fundamental da dinâmica) na biomecânica é F = m · a (força igual a massa multiplicada pela aceleração).",
     "distractorAnalysis": [
       "Está incorreta: O peso é P = m · g (produto, e não quociente).",
       "Está incorreta: O momento de uma força é M = F · b, e não um quociente.",
-      "Está incorreta: A pressão é P = F / A, e não um produto de força por área."
+      "Está incorreta: A pressão é p = F / A, e não um produto de força por área."
     ],
     "nursingApplication": "Permite calcular a força necessária para acelerar ou desacelerar equipamentos clínicos em movimento."
   },
@@ -1044,7 +1044,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A aceleração não depende da massa; num MRU é nula para qualquer corpo.",
       "Está incorreta: Uma aceleração elevada implicaria variação da velocidade, o que o MRU não tem."
     ],
-    "nursingApplication": "Contribui para o conforto do utente em transporte, reduzindo as forças de inércia sentidas pelo corpo."
+    "nursingApplication": "Contribui para o conforto do utente em transporte: sem acelerações nem travagens bruscas, o corpo não é projetado contra a maca ou os cintos."
   },
   {
     "id": 1053,
@@ -1087,7 +1087,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1055,
     "topicId": 1,
-    "question": "Tanto um corpo em repouso como um corpo em Movimento Retilíneo e Uniforme (MRU) encontram-se em equilíbrio mecânico. O que têm ambos obrigatoriamente em comum em termos dinâmicos?",
+    "question": "Tanto um corpo em repouso como um corpo em Movimento Retilíneo e Uniforme (MRU) encontram-se em equilíbrio de translação. O que têm ambos obrigatoriamente em comum em termos dinâmicos?",
     "options": [
       "Ambos têm velocidade nula, pois o equilíbrio exige que o corpo esteja parado.",
       "Ambos sofrem uma força resultante constante no sentido do movimento.",
@@ -1173,8 +1173,8 @@ const TOPIC_1_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "Para manter MRU (aceleração zero e velocidade constante), a força aplicada deve anular exatamente a resistência: F<sub>aplicada</sub> - F<sub>atrito</sub> = 0 => F<sub>aplicada</sub> = 18 N.",
     "solution": [
-      "Dados: MRU (a = 0); F<sub>a</sub> = 18 N; F<sub>aplicada</sub> = ?",
-      "Fórmula: F<sub>R</sub> = F<sub>aplicada</sub> − F<sub>a</sub> = 0, logo F<sub>aplicada</sub> = F<sub>a</sub>",
+      "Dados: MRU (a = 0); F<sub>atrito</sub> = 18 N; F<sub>aplicada</sub> = ?",
+      "Fórmula: F<sub>R</sub> = F<sub>aplicada</sub> − F<sub>atrito</sub> = 0, logo F<sub>aplicada</sub> = F<sub>atrito</sub>",
       "Substituição: F<sub>aplicada</sub> = 18 N",
       "Resultado: F<sub>aplicada</sub> = 18 N, no sentido do movimento"
     ],
@@ -1188,7 +1188,7 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1060,
     "topicId": 1,
-    "question": "Se a força resultante sobre uma maca for nula (F<sub>R</sub> = 0 N), o que podemos concluir com certeza?",
+    "question": "Se a força resultante sobre uma maca for nula (F<sub>R</sub> = 0 N), o que podemos concluir com certeza sobre o seu movimento de translação?",
     "options": [
       "A maca está em repouso ou em movimento retilíneo e uniforme.",
       "A maca está a acelerar 9,8 m/s² para a frente, devido ao peso.",
@@ -1596,7 +1596,7 @@ const TOPIC_1_QUESTIONS = [
     "question": "Qual é a definição exata de Força de Atrito no estudo da mecânica e do movimento?",
     "options": [
       "Força perpendicular exercida por uma superfície que suporta um corpo em repouso.",
-      "Força tangencial à superfície de contacto, que se opõe ao movimento.",
+      "Força tangencial ao contacto, que se opõe ao deslizamento relativo.",
       "Atração gravítica exercida pela Terra sobre corpos com grande quantidade de matéria.",
       "Energia radiante emitida por núcleos atómicos instáveis durante a transição."
     ],
@@ -1679,10 +1679,10 @@ const TOPIC_1_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "Enquanto o corpo permanece em repouso, o atrito estático ajusta-se exatamente ao valor da força aplicada para manter o equilíbrio: F<sub>atrito</sub> = 20 N (F<sub>R</sub> = 0). Os 50 N representam apenas o limite máximo antes de romper o repouso.",
     "solution": [
-      "Dados: F<sub>aplicada</sub> = 20 N; F<sub>a,máx</sub> = 50 N; maca parada; F<sub>a</sub> = ?",
-      "Fórmula: em repouso, F<sub>R</sub> = 0, logo F<sub>a</sub> = F<sub>aplicada</sub> (desde que F<sub>aplicada</sub> < F<sub>a,máx</sub>)",
-      "Substituição: 20 N < 50 N, portanto F<sub>a</sub> = 20 N",
-      "Resultado: F<sub>a</sub> = 20 N, em sentido oposto à força aplicada"
+      "Dados: F<sub>aplicada</sub> = 20 N; F<sub>atrito,máx</sub> = 50 N; maca parada; F<sub>atrito</sub> = ?",
+      "Fórmula: em repouso, F<sub>R</sub> = 0, logo F<sub>atrito</sub> = F<sub>aplicada</sub> (desde que F<sub>aplicada</sub> < F<sub>atrito,máx</sub>)",
+      "Substituição: 20 N < 50 N, portanto F<sub>atrito</sub> = 20 N",
+      "Resultado: F<sub>atrito</sub> = 20 N, em sentido oposto à força aplicada"
     ],
     "distractorAnalysis": [
       "Está incorreta: O atrito estático não atinge o máximo de 50 N; ajusta-se à força aplicada, e a maca não se move.",
@@ -1698,7 +1698,7 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Direção perpendicular à superfície, com sentido para o interior do solo.",
       "Direção vertical ascendente, oposta à força da gravidade.",
-      "Direção paralela à superfície de contacto, com sentido oposto ao movimento.",
+      "Direção paralela à superfície, oposta ao deslizamento relativo.",
       "Direção circular oblíqua, rodando no sentido dos ponteiros do relógio."
     ],
     "correctIndex": 2,
@@ -1780,8 +1780,8 @@ const TOPIC_1_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "A força resultante é F<sub>aplicada</sub> - F<sub>atrito</sub> = 25 N - 25 N = 0 N. Com F<sub>R</sub> = 0 N, o corpo em movimento mantém a sua velocidade constante em Movimento Retilíneo e Uniforme (MRU).",
     "solution": [
-      "Dados: F<sub>aplicada</sub> = 25 N; F<sub>a</sub> = 25 N, sentidos opostos; F<sub>R</sub> = ?",
-      "Fórmula: F<sub>R</sub> = F<sub>aplicada</sub> − F<sub>a</sub>",
+      "Dados: F<sub>aplicada</sub> = 25 N; F<sub>atrito</sub> = 25 N, sentidos opostos; F<sub>R</sub> = ?",
+      "Fórmula: F<sub>R</sub> = F<sub>aplicada</sub> − F<sub>atrito</sub>",
       "Substituição: F<sub>R</sub> = 25 − 25",
       "Resultado: F<sub>R</sub> = 0 N",
       "Conclusão: a maca, já em movimento, prossegue em MRU."
@@ -2149,7 +2149,7 @@ const TOPIC_1_QUESTIONS = [
     ],
     "distractorAnalysis": [
       "Está incorreta: resulta de multiplicar a massa pela velocidade (70 × 10 = 700) sem dividir pelo tempo de paragem; a força depende da desaceleração, a = Δv / Δt.",
-      "Está incorreta: resulta de multiplicar a velocidade pelo tempo (10 × 0,2 = 2 m/s²) em vez de dividir, e depois 70 × 2 = 140 N; a desaceleração é 10 / 0,2 = 50 m/s².",
+      "Está incorreta: resulta de multiplicar a velocidade pelo tempo (10 × 0,2 = 2) em vez de dividir, e depois 70 × 2 = 140 N; a desaceleração é a = Δv / Δt = 10 / 0,2 = 50 m/s².",
       "Está incorreta: corresponde ao peso do enfermeiro (70 × 9,8 = 686 N); a força de travagem horizontal depende da desaceleração do corpo, não de g."
     ],
     "nursingApplication": "Usar o cinto de segurança na célula sanitária da ambulância prolonga o tempo de paragem do corpo numa colisão e reduz a força média que atua sobre o profissional."
@@ -2260,7 +2260,7 @@ const TOPIC_1_QUESTIONS = [
       "Para haver equilíbrio, a força normal tem de ser o dobro da força de atrito."
     ],
     "correctIndex": 2,
-    "explanation": "Destaca-se que o equilíbrio exige apenas força resultante nula, e não a ausência de forças sobre o corpo.",
+    "explanation": "Destaca-se que o equilíbrio exige força resultante nula (e, num corpo extenso, também momento resultante nulo), e não a ausência de forças sobre o corpo.",
     "distractorAnalysis": [
       "Está incorreta: Um corpo em equilíbrio pode ter várias forças a atuar sobre ele, com resultante nula.",
       "Está incorreta: Em movimento retilíneo uniforme também F<sub>R</sub> = 0, pelo que há equilíbrio sem repouso.",
@@ -2527,11 +2527,11 @@ const TOPIC_1_QUESTIONS = [
       "Caminha de costas, sem olhar para o doente, confiando no atrito do piso."
     ],
     "correctIndex": 0,
-    "explanation": "Para que a descida ocorra com velocidade constante (MRU com F<sub>R</sub> = 0 N), a força de retenção aplicada pelo profissional somada ao atrito deve equilibrar a componente P<sub>t</sub> do peso que puxa a cadeira rampa abaixo.",
+    "explanation": "Para que a descida ocorra com velocidade constante (MRU com F<sub>R</sub> = 0 N), a força de retenção aplicada pelo profissional, somada à resistência ao rolamento, deve equilibrar a componente P<sub>t</sub> do peso que puxa a cadeira rampa abaixo.",
     "distractorAnalysis": [
       "Está incorreta: Empurrar com força máxima rampa abaixo acelera a cadeira, contrariando a velocidade constante.",
       "Está incorreta: Velocidade constante significa força resultante nula, e não ausência de forças; P<sub>t</sub> continua a atuar e tem de ser equilibrada.",
-      "Está incorreta: Descer de marcha-atrás pode ser adequado, mas exige vigiar o percurso e aplicar força de retenção rampa acima; o atrito, por si só, não equilibra P<sub>t</sub>."
+      "Está incorreta: Descer de marcha-atrás pode ser adequado, mas exige vigiar o percurso e aplicar força de retenção rampa acima; a resistência ao rolamento, por si só, não equilibra P<sub>t</sub>."
     ],
     "nursingApplication": "Técnica ergonómica recomendada de condução de cadeiras de rodas em rampas íngremes: descer de marcha-atrás com apoio do corpo para retenção."
   },
@@ -3046,7 +3046,7 @@ const TOPIC_1_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: A articulação atlanto-occipital é o exemplo clássico de alavanca interfixa.",
       "Está incorreta: Os ossículos do ouvido formam uma alavanca de ganho de força (o martelo tem braço maior), o oposto de uma interpotente.",
-      "Está incorreta: A elevação na ponta dos pés pelo tendão de Aquiles é uma alavanca inter-resistente."
+      "Está incorreta: A elevação na ponta dos pés é apresentada classicamente como alavanca inter-resistente (classificação discutível; com o fulcro no tornozelo seria interfixa), mas em nenhum dos modelos é interpotente."
     ],
     "nursingApplication": "Permite aos alunos reconhecer o tipo de alavanca mais abundante e comum no esqueleto apendicular humano."
   },
@@ -3240,7 +3240,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: 57,6 N resultaria de multiplicar 24 por 2,4 em vez de dividir.",
       "Está incorreta: 2,4 é a medida do braço em metros, não o valor da força em newtons."
     ],
-    "nursingApplication": "Demonstra que uma força de apenas 10 N consegue equilibrar uma força resistente de 20 N devido à duplicação do braço."
+    "nursingApplication": "Mostra que, com um braço potente longo, uma força pequena (10 N) basta para equilibrar um momento resistente de 24 N·m, como ao usar a manivela comprida de uma cama."
   },
   {
     "id": 1164,
@@ -3652,7 +3652,7 @@ const TOPIC_1_QUESTIONS = [
     "correctIndex": 1,
     "explanation": "O centro de gravidade é o ponto imaginário onde se considera concentrada toda a massa do corpo e onde atua a resultante das forças gravíticas.",
     "distractorAnalysis": [
-      "Está incorreta: A posição do centro de gravidade depende da postura; a 2.ª vértebra sagrada é apenas a sua localização aproximada no adulto em pé.",
+      "Está incorreta: A posição do centro de gravidade depende da postura; a região à frente da 2.ª vértebra sagrada é apenas a sua localização aproximada no adulto em pé.",
       "Está incorreta: A área de contacto dos pés é a base de sustentação, e não o centro de gravidade.",
       "Está incorreta: Essa é a linha média do corpo; o centro de gravidade é um ponto, e não uma linha."
     ],
@@ -3692,7 +3692,7 @@ const TOPIC_1_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: O centro de gravidade desloca-se com os movimentos do corpo; não fica fixo.",
       "Está incorreta: O centro de gravidade não desaparece; existe em todos os corpos com massa.",
-      "Está incorreta: No chão situa-se a projeção do centro de gravidade (linha de gravidade), e não o próprio centro de gravidade."
+      "Está incorreta: No chão situa-se apenas a projeção do centro de gravidade (o ponto onde a linha de gravidade, a vertical que passa pelo CG, toca o solo), e não o próprio centro de gravidade."
     ],
     "nursingApplication": "Permite antecipar como gestos simples (como esticar os braços para alcançar um objeto) alteram o equilíbrio do doente."
   },
