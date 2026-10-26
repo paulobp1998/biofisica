@@ -26,7 +26,7 @@ const STUDY_BLOCKS = [
         <li><strong>Efeitos de uma força:</strong> uma força pode deformar um corpo; se a resultante não for nula, altera também o seu estado de movimento.</li>
         <li><strong>Forças colineares:</strong> com o mesmo sentido somam-se; com sentidos opostos subtraem-se.</li>
         <li><strong>Massa</strong> (kg, escalar) mede a inércia de um corpo (a sua resistência à variação do movimento) e não depende do local. O <strong>peso</strong> (N, vetor) é a força com que a Terra atrai o corpo e varia com g (na Lua é cerca de 1/6 do peso na Terra).</li>
-        <li><strong>Pressão</strong> é uma grandeza escalar: p = F / A, em pascal (Pa = N/m²). Em p = F / A, F é a componente da força perpendicular à superfície; a pressão não tem direção própria.</li>
+        <li><strong>Pressão</strong> é uma grandeza escalar: p = F / A, em N/m². Em p = F / A, F é a componente da força perpendicular à superfície; a pressão não tem direção própria.</li>
       </ul>`,
     pitfall: 'Massa e peso não são a mesma grandeza: a massa mede-se em kg e o peso em N. Diz-se «carga de 15 kg», nunca «peso de 15 kg».',
     nursing: 'O dinamómetro manual mede a força de preensão do utente: o valor lido é uma força (em N; alguns aparelhos apresentam-na em kgf), com direção e sentido.'
@@ -132,7 +132,7 @@ const STUDY_BLOCKS = [
     icon: '🧪',
     title: 'Reologia: como os materiais respondem à força',
     formulas: [
-      { expr: 'τ = η · γ̇', note: 'corpo viscoso: τ = tensão de corte (Pa); η = viscosidade (Pa·s); γ̇ = velocidade de deformação de corte (s⁻¹)' }
+      { expr: 'τ = η · γ̇', note: 'corpo viscoso: τ = tensão de corte (N/m²); η = viscosidade (N·s/m²); γ̇ = velocidade de deformação de corte (s⁻¹)' }
     ],
     body: `
       <ul>
@@ -172,22 +172,22 @@ const STUDY_BLOCKS = [
     title: 'Lei de Hooke e módulo de Young',
     formulas: [
       { expr: 'F = k · ΔL', note: 'lei de Hooke para uma mola (k em N/m)' },
-      { expr: 'σ = F / A', note: 'tensão mecânica (Pa)' },
+      { expr: 'σ = F / A', note: 'tensão mecânica (N/m²)' },
       { expr: 'ε = ΔL / L₀', note: 'deformação relativa (sem unidades)' },
-      { expr: 'σ = E · ε', note: 'lei de Hooke generalizada (E em Pa)' }
+      { expr: 'σ = E · ε', note: 'lei de Hooke generalizada (E em N/m²)' }
     ],
-    example: 'Mola com k = 200 N/m e F = 10 N: ΔL = 10 / 200 = 0,05 m (5 cm). Força de 600 N sobre 2,0 × 10⁻⁴ m²: σ = 600 / 2,0×10⁻⁴ = 3,0 × 10⁶ Pa.',
+    example: 'Mola com k = 200 N/m e F = 10 N: ΔL = 10 / 200 = 0,05 m (5 cm). Força de 600 N sobre 2,0 × 10⁻⁴ m²: σ = 600 / 2,0×10⁻⁴ = 3,0 × 10⁶ N/m².',
     body: `
       <ul>
         <li><strong>Lei de Hooke (1678), «Ut tensio, sic vis»:</strong> o alongamento (ΔL) é proporcional à força aplicada, até ao limite de proporcionalidade (zona linear do regime elástico).</li>
         <li><strong>k</strong> (constante elástica, em N/m) mede a rigidez de um <em>corpo</em> concreto, como uma mola: quanto maior k, menor o alongamento para a mesma força.</li>
         <li><strong>E (módulo de Young)</strong> mede a rigidez do <em>material</em>, independentemente da forma. Ordem crescente: borracha &lt; osso &lt; vidro &lt; aço.</li>
-        <li><strong>Valores de referência:</strong> aço 20 × 10¹⁰ Pa; vidro 7 × 10¹⁰ Pa; prata 7,5 × 10¹⁰ Pa; osso cortical (longitudinal) cerca de 2 × 10¹⁰ Pa (cerca de dez vezes menor que o aço); borracha 0,1 a 10 × 10⁷ Pa.</li>
+        <li><strong>Valores de referência:</strong> aço 20 × 10¹⁰ N/m²; vidro 7 × 10¹⁰ N/m²; prata 7,5 × 10¹⁰ N/m²; osso cortical (longitudinal) cerca de 2 × 10¹⁰ N/m² (cerca de dez vezes menor que o aço); borracha 0,1 a 10 × 10⁷ N/m².</li>
         <li><strong>Gráfico σ–ε:</strong> na zona linear, o declive é E. Ultrapassado o limite de proporcionalidade, a relação deixa de ser linear, mas o corpo pode ainda recuperar a forma até ao limite elástico. Acima deste fica com deformação permanente e, por fim, rompe.</li>
         <li><strong>Comparação:</strong> com a mesma tensão, o material de menor E deforma mais. Com a mesma força, uma secção menor dá tensão maior.</li>
       </ul>`,
-    pitfall: 'k caracteriza um corpo concreto (em N/m) e E é uma propriedade do material (em Pa). Ao converter: 1 cm² = 10⁻⁴ m², 1 MPa = 10⁶ Pa e 1 GPa = 10⁹ Pa. Não esquecer de passar cm para m.',
-    nursing: 'Nas próteses e fixações procura-se, quando possível, uma rigidez mais próxima da do osso, para reduzir a blindagem de tensões (as ligas de titânio, com cerca de 110 GPa, são várias vezes mais rígidas do que o osso cortical). As meias de compressão e as ligaduras elásticas funcionam no regime elástico: se forem esticadas em excesso, deixam de recuperar a forma.'
+    pitfall: 'k caracteriza um corpo concreto (em N/m) e E é uma propriedade do material (em N/m²). Ao converter: 1 cm² = 10⁻⁴ m² e 1 mm² = 10⁻⁶ m². Não esquecer de passar cm para m.',
+    nursing: 'Nas próteses e fixações procura-se, quando possível, uma rigidez mais próxima da do osso, para reduzir a blindagem de tensões (as ligas de titânio, com E de cerca de 1,1 × 10¹¹ N/m², são várias vezes mais rígidas do que o osso cortical). As meias de compressão e as ligaduras elásticas funcionam no regime elástico: se forem esticadas em excesso, deixam de recuperar a forma.'
   },
   {
     id: 't2-osso',
@@ -199,9 +199,9 @@ const STUDY_BLOCKS = [
       <ul>
         <li><strong>Osso, material compósito:</strong> a fase mineral (hidroxiapatite, cerca de 65% da massa seca) dá dureza e resistência à <strong>compressão</strong>; a matriz orgânica (sobretudo colagénio tipo I, cerca de 35%) dá elasticidade, tenacidade e resistência à <strong>tração</strong>.</li>
         <li><strong>Anisotropia:</strong> as propriedades do osso dependem da direção da carga: o osso cortical é mais rígido e resistente segundo o eixo longitudinal do que na direção transversal.</li>
-        <li><strong>Resistência consoante o tipo de carga:</strong> o osso cortical resiste melhor à compressão longitudinal (130 a 190 MPa), menos à tração axial (80 a 130 MPa) e menos ao cisalhamento e à torção (rotura a 50 a 70 MPa). Daí as fraturas espiroidais da tíbia em torções com o pé bloqueado, cuja linha helicoidal, a cerca de 45° do eixo, é perpendicular à direção da tração máxima (a rotura inicia-se por tração).</li>
+        <li><strong>Resistência consoante o tipo de carga:</strong> o osso cortical resiste melhor à compressão longitudinal (1,3 a 1,9 × 10⁸ N/m²), menos à tração axial (0,8 a 1,3 × 10⁸ N/m²) e menos ao cisalhamento e à torção (rotura a 0,5 a 0,7 × 10⁸ N/m²). Daí as fraturas espiroidais da tíbia em torções com o pé bloqueado, cuja linha helicoidal, a cerca de 45° do eixo, é perpendicular à direção da tração máxima (a rotura inicia-se por tração).</li>
         <li><strong>Ossos longos tubulares:</strong> o osso concentra-se na periferia, onde as tensões de flexão e torção são máximas, e falta junto ao eixo central (cavidade medular), por onde passa o plano neutro e onde estas tensões são mínimas ou nulas. Obtém-se grande resistência com pouca massa.</li>
-        <li><strong>Cortical vs. trabecular:</strong> o osso cortical é compacto e rígido (E cerca de 14 a 20 GPa); o trabecular é poroso (E aparente cerca de 0,1 a 4 GPa) e amortece os impactos nas epífises.</li>
+        <li><strong>Cortical vs. trabecular:</strong> o osso cortical é compacto e rígido (E cerca de 1,4 a 2,0 × 10¹⁰ N/m²); o trabecular é poroso (E aparente cerca de 1 × 10⁸ a 4 × 10⁹ N/m²) e amortece os impactos nas epífises.</li>
         <li><strong>Lei de Wolff:</strong> o osso remodela-se em resposta às solicitações mecânicas. Sem carga (ex.: acamamento prolongado) perde massa; as trabéculas orientam-se segundo as linhas de força.</li>
         <li><strong>Osteoporose e prótese de anca:</strong> a perda trabecular fragiliza o colo do fémur. Uma haste metálica muito rígida pode absorver a carga que caberia ao osso (<em>blindagem de tensões</em>), com reabsorção óssea à volta da prótese.</li>
       </ul>`,
@@ -260,7 +260,7 @@ const GLOSSARY = [
   { t: 'Newton (N)', a: ['unidade de força'], d: '1 N = 1 kg · m/s²: a força que comunica a um corpo de 1 kg a aceleração de 1 m/s².', c: 't1-forca' },
   { t: 'Massa', d: 'Medida da inércia de um corpo (a sua resistência à variação do movimento). Grandeza escalar, em kg, que não depende do local.', c: 't1-forca' },
   { t: 'Peso', a: ['P = m·g', 'gravidade'], d: 'Força com que a Terra atrai um corpo: P = m · g, em N (com g = 9,8 m/s²). Varia com o local, ao contrário da massa.', c: 't1-forca' },
-  { t: 'Pressão', a: ['pascal'], d: 'p = F / A, em pascal (Pa = N/m²). É uma grandeza escalar.', c: 't1-forca' },
+  { t: 'Pressão', a: ['pascal'], d: 'p = F / A, em N/m². É uma grandeza escalar.', c: 't1-forca' },
   { t: 'Dinamómetro', d: 'Instrumento que mede forças. Os de mola baseiam-se na lei de Hooke (alongamento proporcional da mola); os de preensão podem ser hidráulicos ou eletrónicos.', c: 't1-forca' },
   { t: 'Inércia', a: ['1.ª lei de Newton'], d: 'Tendência de um corpo a manter o repouso ou o MRU, sem força resultante. A massa mede-a.', c: 't1-newton' },
   { t: 'MRU', a: ['movimento retilíneo e uniforme'], d: 'Movimento retilíneo e uniforme: velocidade vetorial constante, aceleração nula e força resultante nula.', c: 't1-newton' },
@@ -293,11 +293,11 @@ const GLOSSARY = [
   { t: 'Corpo plástico', a: ['plasticidade', 'limiar de escoamento'], d: 'Acima de um limiar de escoamento, sofre deformação permanente.', c: 't2-reologia' },
   { t: 'Corpo viscoso', a: ['viscosidade'], d: 'A velocidade de deformação é proporcional à tensão e a deformação não é recuperada.', c: 't2-reologia' },
   { t: 'Corpo viscoelástico', a: ['viscoelasticidade', 'histerese'], d: 'Responde de forma elástica e viscosa em simultâneo, dependente do tempo, e dissipa energia em calor (histerese).', c: 't2-reologia' },
-  { t: 'Tensão mecânica', a: ['σ', 'stress'], d: 'σ = F / A, em Pa: força por unidade de área da secção.', c: 't2-hooke' },
+  { t: 'Tensão mecânica', a: ['σ', 'stress'], d: 'σ = F / A, em N/m²: força por unidade de área da secção.', c: 't2-hooke' },
   { t: 'Deformação relativa', a: ['ε', 'deformação específica'], d: 'ε = ΔL / L₀: grandeza sem unidades.', c: 't2-hooke' },
   { t: 'Lei de Hooke', a: ['Ut tensio, sic vis', 'F = k·ΔL'], d: 'Até ao limite de proporcionalidade, a deformação é proporcional à força: F = k · ΔL, ou σ = E · ε.', c: 't2-hooke' },
   { t: 'Constante elástica (k)', a: ['k', 'rigidez da mola'], d: 'Rigidez de um corpo concreto (por exemplo, uma mola), em N/m: quanto maior k, menor o alongamento para a mesma força.', c: 't2-hooke' },
-  { t: 'Módulo de Young (E)', a: ['E', 'módulo de elasticidade'], d: 'Rigidez do material, em Pa: σ = E · ε. Borracha &lt; osso &lt; vidro &lt; aço.', c: 't2-hooke' },
+  { t: 'Módulo de Young (E)', a: ['E', 'módulo de elasticidade'], d: 'Rigidez do material, em N/m²: σ = E · ε. Borracha &lt; osso &lt; vidro &lt; aço.', c: 't2-hooke' },
   { t: 'Compressão', d: 'Forças convergentes ao longo do eixo: o comprimento diminui e a secção aumenta.', c: 't2-deformacoes' },
   { t: 'Tração', a: ['esforço de tração'], d: 'Forças divergentes ao longo do eixo: o comprimento aumenta e a secção diminui.', c: 't2-deformacoes' },
   { t: 'Flexão', d: 'Forças transversais curvam a barra: comprime um lado e traciona o outro.', c: 't2-deformacoes' },

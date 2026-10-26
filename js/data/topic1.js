@@ -86,19 +86,19 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1005,
     "topicId": 1,
-    "question": "Um utente acamado apoia o calcanhar no colchão. A força de contacto do calcanhar sobre o colchão é de 40 N e a área de contacto é de 20 cm². Qual é a pressão de interface sobre o calcanhar, em kPa?",
+    "question": "Um utente acamado apoia o calcanhar no colchão. A força de contacto do calcanhar sobre o colchão é de 40 N e a área de contacto é de 20 cm². Qual é a pressão de interface sobre o calcanhar, em N/m²?",
     "options": [
-      "0,2 kPa",
-      "20 kPa",
-      "0,002 kPa",
-      "0,00008 kPa"
+      "2,0 × 10² N/m²",
+      "2,0 × 10⁴ N/m²",
+      "2,0 N/m²",
+      "8,0 × 10⁻² N/m²"
     ],
     "correctIndex": 1,
-    "explanation": "A pressão é a força por unidade de área: p = F / A. Convertendo a área para o SI, 20 cm² = 20 × 10<sup>-4</sup> m² = 0,0020 m². Logo p = 40 N / 0,0020 m² = 20 000 Pa = 20 kPa. Para a mesma força, quanto menor for a área de contacto, maior é a pressão, razão pela qual proeminências ósseas com pouca área de apoio, como o calcanhar, estão particularmente expostas.",
+    "explanation": "A pressão é a força por unidade de área: p = F / A. Convertendo a área para o SI, 20 cm² = 20 × 10<sup>-4</sup> m² = 0,0020 m². Logo p = 40 N / 0,0020 m² = 20 000 N/m² = 2,0 × 10⁴ N/m². Para a mesma força, quanto menor for a área de contacto, maior é a pressão, razão pela qual proeminências ósseas com pouca área de apoio, como o calcanhar, estão particularmente expostas.",
     "distractorAnalysis": [
-      "Está incorreta: resulta de converter 20 cm² em 0,20 m², usando 1 cm = 0,01 m sem elevar ao quadrado (40 / 0,20 = 200 Pa); como 1 cm² = 10<sup>-4</sup> m², a área correta é 0,0020 m².",
-      "Está incorreta: resulta de dividir 40 N por 20 sem converter cm² em m² (40 / 20 = 2 Pa = 0,002 kPa); no SI, a área tem de estar em m² para a pressão vir em pascal.",
-      "Está incorreta: resulta de multiplicar a força pela área (40 × 0,0020 = 0,08 Pa); a pressão é a força a dividir pela área, p = F / A."
+      "Está incorreta: resulta de converter 20 cm² em 0,20 m², usando 1 cm = 0,01 m sem elevar ao quadrado (40 / 0,20 = 200 N/m²); como 1 cm² = 10<sup>-4</sup> m², a área correta é 0,0020 m².",
+      "Está incorreta: resulta de dividir 40 N por 20 sem converter cm² em m² (40 / 20 = 2 N/m²); no SI, a área tem de estar em m² para a pressão vir em N/m².",
+      "Está incorreta: resulta de multiplicar a força pela área (40 × 0,0020 = 0,08 N/m²); a pressão é a força a dividir pela área, p = F / A."
     ],
     "nursingApplication": "Num utente acamado, saber que a mesma força concentrada numa área pequena gera uma pressão de interface elevada fundamenta o uso de dispositivos que deixam o calcanhar sem apoio direto no colchão."
   },
@@ -127,7 +127,7 @@ const TOPIC_1_QUESTIONS = [
     "question": "Qual é a unidade do Sistema Internacional (SI) utilizada para quantificar a grandeza Força medida por um dinamómetro?",
     "options": [
       "Quilograma (kg).",
-      "Pascal (Pa).",
+      "Newton por metro quadrado (N/m²).",
       "Joule (J).",
       "Newton (N)."
     ],
@@ -135,7 +135,7 @@ const TOPIC_1_QUESTIONS = [
     "explanation": "No Sistema Internacional (SI), a unidade padrão de força é o newton (N).",
     "distractorAnalysis": [
       "Está incorreta: O quilograma é unidade de massa, e não de força.",
-      "Está incorreta: O pascal é unidade de pressão, que é força por área.",
+      "Está incorreta: O N/m² é unidade de pressão, que é força por área.",
       "Está incorreta: O joule é unidade de energia e de trabalho."
     ],
     "nursingApplication": "Ajuda a interpretar uma tração ortopédica: a carga suspensa indica-se em kg (massa), mas a força que exerce expressa-se em newtons (P = m · g)."
@@ -184,7 +184,7 @@ const TOPIC_1_QUESTIONS = [
     "question": "Ao utilizar um dinamómetro manual para avaliar um utente, o visor regista 50 N. O que indica fisicamente este valor?",
     "options": [
       "Que a massa do utente é de cerca de 50 quilogramas, medida pela força da mão.",
-      "Que a pressão exercida pela mola sobre a palma da mão do utente é de 50 pascal.",
+      "Que a pressão exercida pela mola sobre a palma da mão do utente é de 50 N/m².",
       "Que a força exercida na mola do dinamómetro tem a intensidade de 50 newtons.",
       "Que a mão do utente se fechou com uma velocidade de 50 metros por segundo."
     ],
@@ -585,7 +585,7 @@ const TOPIC_1_QUESTIONS = [
       "P = m / g, com P em newtons e g em metros por segundo ao quadrado.",
       "M = F / b, com M em newton-metros e b em metros.",
       "F = m · a, com F em newtons, m em quilogramas e a em m/s².",
-      "P = F · A, com P em pascal e A em metros quadrados."
+      "P = F · A, com P em N/m² e A em metros quadrados."
     ],
     "correctIndex": 2,
     "explanation": "A expressão clássica da 2.ª Lei de Newton (Lei fundamental da dinâmica) na biomecânica é F = m · a (força igual a massa multiplicada pela aceleração).",
@@ -1495,14 +1495,14 @@ const TOPIC_1_QUESTIONS = [
     "question": "Qual é a unidade padrão no Sistema Internacional para expressar a Força Normal?",
     "options": [
       "Newton (N), unidade de força do Sistema Internacional.",
-      "Pascal (Pa), unidade de pressão do Sistema Internacional.",
+      "Newton por metro quadrado (N/m²), unidade de pressão do Sistema Internacional.",
       "Quilograma (kg), unidade de massa do Sistema Internacional.",
       "Newton-metro (N·m), unidade de momento de força do Sistema Internacional."
     ],
     "correctIndex": 0,
     "explanation": "A Força Normal é uma força, pelo que a sua unidade no Sistema Internacional é o newton (N).",
     "distractorAnalysis": [
-      "Está incorreta: O pascal é unidade de pressão, força por área, e não de força.",
+      "Está incorreta: O N/m² é unidade de pressão, força por área, e não de força.",
       "Está incorreta: O quilograma é unidade de massa, e não de força.",
       "Está incorreta: O newton-metro é unidade de momento de força, e não de força normal."
     ],
@@ -1686,14 +1686,14 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Quilograma por metro quadrado (kg/m²).",
       "Newton (N).",
-      "Pascal (Pa).",
+      "Newton por metro quadrado (N/m²).",
       "Joule por segundo (J/s)."
     ],
     "correctIndex": 1,
     "explanation": "Como qualquer outra força física (peso, normal, tensão muscular), a força de atrito quantifica-se em newtons (N) no Sistema Internacional.",
     "distractorAnalysis": [
       "Está incorreta: kg/m² é unidade de densidade superficial, não de força.",
-      "Está incorreta: pascal (Pa) é unidade de pressão.",
+      "Está incorreta: newton por metro quadrado (N/m²) é unidade de pressão.",
       "Está incorreta: Joule por segundo (J/s) corresponde ao watt (W), unidade de potência."
     ],
     "nursingApplication": "Ao somar a força aplicada e o atrito numa maca, ambos têm de estar em newtons para calcular corretamente a força resultante."
@@ -1723,7 +1723,7 @@ const TOPIC_1_QUESTIONS = [
     "question": "Como se caracteriza a grandeza física força?",
     "options": [
       "Tipo: Escalar; Unidade SI: quilograma (kg); Definição: Medida da inércia; Exemplo: Massa corporal.",
-      "Tipo: Escalar; Unidade SI: pascal (Pa); Definição: Força por área; Exemplo: Pressão capilar.",
+      "Tipo: Escalar; Unidade SI: newton por metro quadrado (N/m²); Definição: Força por área; Exemplo: Pressão capilar.",
       "Tipo: Vetorial; Unidade SI: newton por metro quadrado (N/m²); Definição: Atração entre polos magnéticos; Exemplo: Peso na balança.",
       "Tipo: Vetorial; Unidade SI: newton (N); Definição: Produz aceleração ou deformação; Exemplo: Força muscular do quadríceps."
     ],
@@ -1731,7 +1731,7 @@ const TOPIC_1_QUESTIONS = [
     "explanation": "A força é uma grandeza vetorial, medida em newtons (N), que produz aceleração ou deformação. Por exemplo, a força muscular do quadríceps.",
     "distractorAnalysis": [
       "Está incorreta: A força é vetorial e mede-se em newtons, e não em quilogramas.",
-      "Está incorreta: O pascal é unidade de pressão (força por área), e não de força.",
+      "Está incorreta: O N/m² é unidade de pressão (força por área), e não de força.",
       "Está incorreta: N/m² é unidade de pressão, e a atração entre polos não define a força em geral."
     ],
     "nursingApplication": "Permite relacionar o conceito físico de força com a contração do quadríceps na marcha e extensão do joelho."
@@ -1743,14 +1743,14 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Tipo: Escalar; Unidade SI: quilograma (kg); Definição: Medida da inércia do corpo; Exemplo: Massa corporal do doente.",
       "Tipo: Vetorial; Unidade SI: newton (N); Definição: Atração gravítica; Exemplo: Força muscular.",
-      "Tipo: Escalar; Unidade SI: pascal (Pa); Definição: Deformação do sacro; Exemplo: Lesão de pressão.",
+      "Tipo: Escalar; Unidade SI: newton por metro quadrado (N/m²); Definição: Deformação do sacro; Exemplo: Lesão de pressão.",
       "Tipo: Vetorial; Unidade SI: quilograma (kg); Definição: Produz aceleração centrípeta; Exemplo: Andarilho."
     ],
     "correctIndex": 0,
     "explanation": "A massa é uma grandeza escalar, medida em quilogramas (kg): é a medida da inércia do corpo. Por exemplo, a massa corporal do doente.",
     "distractorAnalysis": [
       "Está incorreta: A massa é escalar e mede-se em quilogramas, e não em newtons.",
-      "Está incorreta: O pascal é unidade de pressão, e a massa não é uma deformação.",
+      "Está incorreta: O N/m² é unidade de pressão, e a massa não é uma deformação.",
       "Está incorreta: A massa é escalar e não produz aceleração centrípeta; o andarilho não define a massa."
     ],
     "nursingApplication": "Clarifica a linguagem técnica ao referir a massa corporal aferida nas balanças hospitalares."
@@ -1762,14 +1762,14 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Tipo: Escalar; Unidade SI: quilograma (kg); Definição: Quantidade de água corporal; Exemplo: Hidratação.",
       "Tipo: Vetorial; Unidade SI: newton (N); Definição: Força de atração gravítica; Exemplo: Peso do doente.",
-      "Tipo: Vetorial; Unidade SI: pascal (Pa); Definição: Tensão nos tendões; Exemplo: Marcha.",
+      "Tipo: Vetorial; Unidade SI: newton por metro quadrado (N/m²); Definição: Tensão nos tendões; Exemplo: Marcha.",
       "Tipo: Escalar; Unidade SI: newton (N); Definição: Aceleração da maca; Exemplo: Ambulância."
     ],
     "correctIndex": 1,
     "explanation": "O peso é uma grandeza vetorial, medida em newtons (N): é a força de atração gravítica exercida sobre um corpo, por exemplo, o peso de um doente.",
     "distractorAnalysis": [
       "Está incorreta: O peso é uma força vetorial medida em newtons, não uma grandeza escalar em kg.",
-      "Está incorreta: Pascal é unidade de pressão (N/m²), enquanto o peso é uma força expressa em newtons.",
+      "Está incorreta: o N/m² é unidade de pressão, enquanto o peso é uma força expressa em newtons.",
       "Está incorreta: O peso é uma força vetorial (vertical, dirigida para o centro da Terra), e não uma grandeza escalar nem uma aceleração."
     ],
     "nursingApplication": "Ao pesar um utente, a balança mede uma força e apresenta o resultado em kg (massa); para obter o peso em newtons multiplica-se por g."
@@ -1781,11 +1781,11 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Tipo: Vetorial; Unidade SI: newton (N); Definição: Interação entre corpos; Exemplo: Tendão do bíceps.",
       "Tipo: Escalar; Unidade SI: quilograma (kg); Definição: Medida de inércia; Exemplo: Doente bariátrico.",
-      "Tipo: Escalar; Unidade SI: pascal (N/m²); Definição: Força por unidade de área; Exemplo: Pressão de interface sobre o sacro.",
+      "Tipo: Escalar; Unidade SI: newton por metro quadrado (N/m²); Definição: Força por unidade de área; Exemplo: Pressão de interface sobre o sacro.",
       "Tipo: Vetorial; Unidade SI: joule (J); Definição: Trabalho muscular; Exemplo: Elevação de carga."
     ],
     "correctIndex": 2,
-    "explanation": "A pressão é uma grandeza escalar, medida em pascal (N/m²): é a força por unidade de área, por exemplo, a pressão de interface sobre o sacro.",
+    "explanation": "A pressão é uma grandeza escalar, medida em newton por metro quadrado (N/m²): é a força por unidade de área, por exemplo, a pressão de interface sobre o sacro.",
     "distractorAnalysis": [
       "Está incorreta: A pressão é escalar e não se mede em newtons; o tendão do bíceps não a define.",
       "Está incorreta: A medida de inércia é a massa, e não a pressão.",
@@ -1815,21 +1815,21 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1096,
     "topicId": 1,
-    "question": "Qual é a equivalência dimensional de 1 pascal (Pa) em unidades do SI?",
+    "question": "Qual é a equivalência do newton por metro quadrado (N/m²), a unidade da pressão, em unidades de base do SI (kg, m, s)?",
     "options": [
-      "1 Pa = 1 N/m², um newton por cada metro quadrado de área.",
-      "1 Pa = 1 kg · m / s, equivalente a uma unidade de momento linear.",
-      "1 Pa = 1 N · m, um newton multiplicado por um metro de distância.",
-      "1 Pa = 1 kg / s², equivalente a uma unidade de tensão superficial."
+      "1 N/m² = 1 kg / (m · s²), pois 1 N = 1 kg · m / s² e a força é dividida pela área.",
+      "1 N/m² = 1 kg · m / s, equivalente a uma unidade de momento linear.",
+      "1 N/m² = 1 N · m, um newton multiplicado por um metro de distância.",
+      "1 N/m² = 1 kg / s², equivalente a uma unidade de tensão superficial."
     ],
     "correctIndex": 0,
-    "explanation": "1 Pa corresponde à pressão exercida por uma força de 1 N distribuída uniformemente por uma área de 1 m².",
+    "explanation": "Como 1 N = 1 kg · m / s², resulta 1 N/m² = 1 kg · m / (s² · m²) = 1 kg / (m · s²): é a força por unidade de área.",
     "distractorAnalysis": [
       "Está incorreta: kg · m / s é unidade de momento linear (quantidade de movimento), e não de pressão.",
       "Está incorreta: N · m é a unidade de momento de força ou de energia, e não de pressão.",
-      "Está incorreta: kg / s² é unidade de tensão superficial, dimensionalmente distinta do pascal."
+      "Está incorreta: kg / s² é unidade de tensão superficial, dimensionalmente distinta do N/m²."
     ],
-    "nursingApplication": "Permite calcular a pressão sobre a pele (em Pa) a partir da carga em newtons e da área de apoio em metros quadrados."
+    "nursingApplication": "Permite calcular a pressão sobre a pele (em N/m²) a partir da carga em newtons e da área de apoio em metros quadrados."
   },
   {
     "id": 1097,
@@ -1875,7 +1875,7 @@ const TOPIC_1_QUESTIONS = [
     "question": "Porque é que a pressão é uma grandeza escalar?",
     "options": [
       "Porque a pressão atua no sentido horizontal, para a esquerda.",
-      "Porque se mede em pascal, e não em newton, como as grandezas vetoriais.",
+      "Porque se mede em N/m², e não em newton, como as grandezas vetoriais.",
       "Porque a pressão deixa de existir quando o corpo humano se encontra em repouso.",
       "Porque fica caracterizada por um valor numérico e uma unidade, sem direção."
     ],
@@ -1899,11 +1899,11 @@ const TOPIC_1_QUESTIONS = [
       "Pressão (p), força exercida por unidade de área."
     ],
     "correctIndex": 0,
-    "explanation": "A massa é a única destas grandezas expressa em quilogramas (kg). A força e o peso medem-se em newtons (N), e a pressão em pascal (N/m²).",
+    "explanation": "A massa é a única destas grandezas expressa em quilogramas (kg). A força e o peso medem-se em newtons (N), e a pressão em newton por metro quadrado (N/m²).",
     "distractorAnalysis": [
       "Está incorreta: A força mede-se em newtons, e não em quilogramas.",
       "Está incorreta: O peso é uma força e mede-se em newtons.",
-      "Está incorreta: A pressão mede-se em pascal, e não em quilogramas."
+      "Está incorreta: A pressão mede-se em N/m², e não em quilogramas."
     ],
     "nursingApplication": "Reforça que a massa corporal registada em kg (por exemplo, para o cálculo de doses por quilograma) não se confunde com o peso, que é uma força em newtons."
   },
@@ -2558,7 +2558,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a unidade padrão do Momento de uma Força (torque) no Sistema Internacional de Unidades (SI)?",
     "options": [
-      "Pascal (Pa).",
+      "Newton (N).",
       "Newton por metro (N/m).",
       "Newton por metro quadrado (N/m²).",
       "Newton-metro (N·m)."
@@ -2566,9 +2566,9 @@ const TOPIC_1_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "Como o momento resulta da multiplicação de uma Força em newtons (N) por uma distância de braço em metros (m), a sua unidade SI é o newton-metro (N·m).",
     "distractorAnalysis": [
-      "Está incorreta: O pascal é a unidade de pressão (N/m²), não de momento rotativo.",
+      "Está incorreta: o newton é a unidade de força; o momento multiplica a força pelo braço, pelo que a unidade inclui o metro (N·m).",
       "Está incorreta: N/m é a unidade da constante elástica (força por unidade de comprimento); o momento é um produto, N·m.",
-      "Está incorreta: N/m² equivale ao pascal (pressão), não a N·m (multiplicação)."
+      "Está incorreta: o N/m² é a unidade de pressão (força por área); o momento é um produto, N·m, e não um quociente por área."
     ],
     "nursingApplication": "Garante a correta identificação dimensional das respostas em exercícios de biomecânica articular."
   },
