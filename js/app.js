@@ -490,6 +490,63 @@ document.addEventListener('DOMContentLoaded', () => {
     quizQidBadge.addEventListener('click', handleCopyCurrentQid);
   }
 
+  // Reportar um problema numa pergunta (anónimo, para a folha de métricas do docente)
+  const modalReport = document.getElementById('modal-report');
+  const reportQidLabel = document.getElementById('report-qid');
+  const formReport = document.getElementById('form-report');
+  const reportComment = document.getElementById('report-comment');
+  const btnReportQuestion = document.getElementById('btn-report-question');
+  const reportsEnabled = Metrics.canReport(-1) !== 'disabled';
+  let reportQuestionId = null;
+
+  if (reportsEnabled) {
+    btnReportQuestion.classList.remove('hidden');
+    document.getElementById('feedback-report-hint').classList.add('hidden');
+  }
+
+  function openReportModal(questionId) {
+    const status = Metrics.canReport(questionId);
+    if (status === 'duplicate') {
+      showToast('Já reportaste esta pergunta hoje. Obrigado!', 'toast-info');
+      return;
+    }
+    if (status === 'limit') {
+      showToast('Atingiste o limite de reportes por hoje. Fala com o docente na próxima aula.', 'toast-info');
+      return;
+    }
+    if (status !== 'ok') return;
+    reportQuestionId = questionId;
+    reportQidLabel.textContent = questionLabel(questionId);
+    formReport.reset();
+    modalReport.classList.remove('hidden');
+  }
+
+  function closeReportModal() {
+    modalReport.classList.add('hidden');
+    reportQuestionId = null;
+  }
+
+  btnReportQuestion.addEventListener('click', () => {
+    if (currentQuestionId) openReportModal(currentQuestionId);
+  });
+  document.getElementById('btn-close-report-modal').addEventListener('click', closeReportModal);
+  document.getElementById('btn-cancel-report-modal').addEventListener('click', closeReportModal);
+  modalReport.addEventListener('click', (e) => { if (e.target === modalReport) closeReportModal(); });
+  document.getElementById('btn-send-report').addEventListener('click', () => {
+    const reason = formReport.querySelector('input[name="report-reason"]:checked');
+    if (!reason) {
+      showToast('Escolhe qual é o problema.', 'toast-info');
+      return;
+    }
+    if (!navigator.onLine) {
+      showToast('Sem ligação à internet: tenta mais tarde ou copia o número da pergunta.', 'toast-info');
+      return;
+    }
+    const sent = Metrics.report(reportQuestionId, reason.value, reportComment.value);
+    closeReportModal();
+    showToast(sent ? '🚩 Obrigado! O reporte foi enviado ao docente.' : 'Não foi possível enviar o reporte.', sent ? 'toast-success' : 'toast-info');
+  });
+
   // Abertura do Caderno de Erros
   function openMistakesSession(onlyDue = false) {
     const all = getActiveMistakeQuestions();
@@ -1430,6 +1487,18 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Mostra o feedback imediato (Modo Treino); também usado ao retomar um teste guardado
+  // Resolução passo a passo (perguntas de cálculo): cada passo começa por "Rótulo: …"
+  function buildSolutionHtml(steps) {
+    if (!Array.isArray(steps) || steps.length === 0) return '';
+    const items = steps.map(step => {
+      const m = String(step).match(/^([A-Za-zÀ-ÿ]+):\s*(.*)$/);
+      return m
+        ? `<li><span class="solution-label">${m[1]}</span> <span class="solution-text">${m[2]}</span></li>`
+        : `<li><span class="solution-text">${step}</span></li>`;
+    }).join('');
+    return `<div class="solution-box"><p class="solution-title">🧮 Resolução passo a passo</p><ol class="solution-steps">${items}</ol></div>`;
+  }
+
   function showTrainingFeedback(result, selectedIndex) {
     const optionButtons = optionsContainer.querySelectorAll('.option-btn');
     optionButtons.forEach((btn, idx) => {
@@ -1464,6 +1533,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     feedbackExplanation.innerHTML = `
       <p><strong>Por que está certa a opção ${correctLetter}:</strong> ${result.explanation}</p>
+      ${buildSolutionHtml(result.solution)}
     `;
 
     feedbackDistractors.innerHTML = buildDistractorsHtml(result, letters, selectedIndex);
@@ -1710,6 +1780,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <button type="button" class="btn-copy-review-qid btn-outline btn-sm" data-qid="${qidLabel}" title="Copiar número desta pergunta para informar o docente" style="padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: var(--radius-sm);">
               📋 Copiar ID
             </button>
+            ${reportsEnabled ? `<button type="button" class="btn-report-review btn-outline btn-sm" data-qid="${ans.questionId}" title="Avisar o docente de um possível erro nesta pergunta" style="padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: var(--radius-sm);">🚩 Reportar</button>` : ''}
           </div>
         </div>
         <p class="review-question"><strong>${ans.questionText}</strong></p>
@@ -1720,6 +1791,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <div class="review-explanation">
           <p><strong>Por que está certa a opção ${letters[ans.correctIndex]}:</strong> ${ans.explanation}</p>
+          ${buildSolutionHtml(ans.solution)}
         </div>
         <div class="review-distractors">
           ${buildDistractorsHtml(ans, letters, ans.selectedIndex)}
@@ -1748,6 +1820,10 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.textContent = starred ? '⭐' : '☆';
         btn.classList.toggle('active', starred);
       });
+    });
+
+    resultReviewList.querySelectorAll('.btn-report-review').forEach(btn => {
+      btn.addEventListener('click', () => openReportModal(Number(btn.getAttribute('data-qid'))));
     });
 
     // Ouvinte para cópia rápida do número da pergunta na revisão
@@ -1938,6 +2014,10 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
     if (e.key === 'Escape') {
+      if (!modalReport.classList.contains('hidden')) {
+        closeReportModal();
+        return;
+      }
       // A teoria pode estar aberta por cima da pesquisa: fecha-se primeiro
       if (!modalTheory.classList.contains('hidden')) {
         closeTheoryModal();
@@ -2240,6 +2320,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p class="print-sol-q">Questão ${idx + 1} (${questionLabel(q.id)}):</p>
             <p class="print-sol-ans">✓ Resposta Correta: Opção (${letters[q.correctIndex]}) - ${q.options[q.correctIndex]}</p>
             <p class="print-sol-exp"><strong>Por que está certa a opção ${letters[q.correctIndex]}:</strong> ${q.explanation}</p>
+            ${buildSolutionHtml(q.solution)}
             <p class="print-sol-exp"><strong>💡 Relevância Clínica:</strong> ${q.nursingApplication}</p>
           </div>
         `;

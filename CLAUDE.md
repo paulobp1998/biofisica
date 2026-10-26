@@ -29,11 +29,13 @@ Question banks live in `js/data/topicN.js` (topics 1–8), each a `const TOPIC_N
 }
 ```
 
-- IDs: topic N uses the range N001–N999, consecutive, never reused. Topics 1 and 2 have 200 questions each (topic 1: 1001–1200; topic 2: 2201–2400). Topics 3–8 are empty (`[]`), so start them at N001. Always confirm the last ID with `tail` before adding.
+- IDs: topic N uses the range N001–N999, consecutive, never reused. Topic 1 has 200 questions (1001–1200); topic 2 has 200 (2201–2404; 2234, 2235, 2273 and 2298 were removed because they relied on k = E·A/L₀, and their IDs stay unused). Topics 3–8 are empty (`[]`), so start them at N001. Always confirm the last ID with `tail` before adding.
 - Exactly 4 options. Exactly 3 entries in `distractorAnalysis`, one per WRONG option, **in the same order as the wrong options appear** (skip the correct index).
 - Each distractor entry starts with "Está incorreta:" and says *why* that option is wrong. It must not just restate the option.
 - `correctIndex` must be balanced across a batch (roughly equal counts of 0, 1, 2, 3).
 - Valid JSON-style syntax: double quotes, no trailing commas, no unescaped quotes inside strings.
+- Calculation questions also get `"solution"` (after `explanation`): 3–6 steps, each starting with `Dados:`, `Conversão:` (optional), `Fórmula:`, `Substituição:`, `Resultado:` (must match the correct option), `Conclusão:` (optional).
+- Optional `"figure"` (after `question`; types in `js/question-figures.js`): only where the drawing helps to solve the item. It shows only stem data (unknown as `?`) and must never give the answer away (e.g. no figure when the question asks for the lever class).
 
 ## Language (European Portuguese)
 

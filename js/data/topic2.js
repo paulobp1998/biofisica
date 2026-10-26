@@ -3,7 +3,7 @@
  * Elasticidade dos Corpos e Resistência dos Materiais
  * Alinhado estritamente com os conceitos de Biofísica (Prof. Paulo Pereira)
  * Perguntas autónomas e focadas em princípios físicos e biomecânicos
- * Total de Questões: 200 (IDs 2201 a 2400)
+ * Total de Questões: 200 (IDs 2201 a 2404; 2234, 2235, 2273 e 2298 removidas e não reutilizadas)
  */
 
 const TOPIC_2_QUESTIONS = [
@@ -399,6 +399,12 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "Pela lei de Hooke, F = k · x, logo x = F/k = 10 N / 200 N/m = 0,05 m (5 cm).",
+    "solution": [
+      "Dados: k = 200 N/m; F = 10 N; x = ?",
+      "Fórmula: x = F / k",
+      "Substituição: x = 10 / 200",
+      "Resultado: x = 0,05 m"
+    ],
     "distractorAnalysis": [
       "Está incorreta: multiplicar F por k dá 2000, mas a lei de Hooke isola x dividindo F por k.",
       "Está incorreta: inverte a divisão, calculando k/F = 20, que não é uma deformação.",
@@ -418,6 +424,12 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 3,
     "explanation": "F = k · x = 50 N/m × 0,20 m = 10 N.",
+    "solution": [
+      "Dados: k = 50 N/m; x = 0,20 m; F = ?",
+      "Fórmula: F = k · x",
+      "Substituição: F = 50 × 0,20",
+      "Resultado: F = 10 N"
+    ],
     "distractorAnalysis": [
       "Está incorreta: dividir k por x dá 250, mas a força elástica é o produto de k pelo alongamento.",
       "Está incorreta: esquece a constante elástica e usa apenas o alongamento, o que não respeita a lei de Hooke.",
@@ -429,7 +441,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2223,
     "topicId": 2,
     "question": "Uma barra de secção transversal de 2,5 cm² é tracionada por uma força de 500 N, dentro do limite de proporcionalidade. Qual é a tensão mecânica na barra?",
-    "figure": {"type": "bar", "mode": "traction", "F": "F = 500 N", "inside": ["A = 2,5 cm²", "σ = ?"]},
+    "figure": {"type": "bar", "mode": "traction", "F": "F = 500 N", "inside": ["S = 2,5 cm²", "σ = ?"]},
     "options": [
       "2,0 × 10⁶ N/m²",
       "1,25 × 10⁻¹ N/m²",
@@ -438,6 +450,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 0,
     "explanation": "σ = F/S, com S = 2,5 cm² = 2,5 × 10⁻⁴ m². Logo σ = 500 / (2,5 × 10⁻⁴) = 2,0 × 10⁶ N/m².",
+    "solution": [
+      "Dados: S = 2,5 cm²; F = 500 N; σ = ?",
+      "Conversão: 2,5 cm² = 2,5 × 10⁻⁴ m²",
+      "Fórmula: σ = F / S",
+      "Substituição: σ = 500 / (2,5 × 10⁻⁴)",
+      "Resultado: σ = 2,0 × 10⁶ N/m²"
+    ],
     "distractorAnalysis": [
       "Está incorreta: multiplica a força pela área em vez de dividir, o que dá 0,125 N/m².",
       "Está incorreta: usa a área em cm² sem a converter para m², o que dá 200 N/m².",
@@ -449,6 +468,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2224,
     "topicId": 2,
     "question": "Um segmento de tendão com 10 cm de comprimento inicial alonga 2 mm sob carga. Qual é a deformação relativa do tendão?",
+    "figure": {"type": "bar", "mode": "traction", "F": "F", "inside": ["ε = ?"], "L0": "L<sub>0</sub> = 10 cm", "dL": "ΔL = 2 mm", "alt": "Tendão tracionado com comprimento inicial de 10 cm e alongamento de 2 mm; pede-se a deformação relativa."},
     "options": [
       "0,2",
       "0,002",
@@ -457,6 +477,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "A deformação relativa é ΔL/L<sub>0</sub>. Com ΔL = 2 mm = 0,002 m e L<sub>0</sub> = 10 cm = 0,10 m, obtém-se ε = 0,002 / 0,10 = 0,02, sem unidades.",
+    "solution": [
+      "Dados: L<sub>0</sub> = 10 cm; ΔL = 2 mm; ε = ?",
+      "Conversão: ΔL = 2 mm = 0,002 m; L<sub>0</sub> = 10 cm = 0,10 m",
+      "Fórmula: ε = ΔL / L<sub>0</sub>",
+      "Substituição: ε = 0,002 / 0,10",
+      "Resultado: ε = 0,02"
+    ],
     "distractorAnalysis": [
       "Está incorreta: não converte as unidades, dividindo 2 mm por 10 cm e obtendo 0,2.",
       "Está incorreta: dá apenas o alongamento em metros, sem dividir pelo comprimento inicial.",
@@ -476,6 +503,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "Dentro do limite de proporcionalidade, F = k · x: k = 10 N / 0,040 m = 250 N/m, logo x = 25 N / 250 N/m = 0,10 m = 10 cm.",
+    "solution": [
+      "Dados: x<sub>1</sub> = 4,0 cm; F<sub>1</sub> = 10 N; F<sub>2</sub> = 25 N; x<sub>2</sub> = ?",
+      "Conversão: x<sub>1</sub> = 4,0 cm = 0,040 m",
+      "Fórmula: k = F<sub>1</sub> / x<sub>1</sub>; x<sub>2</sub> = F<sub>2</sub> / k",
+      "Substituição: k = 10 / 0,040 = 250 N/m; x<sub>2</sub> = 25 / 250 = 0,10 m",
+      "Resultado: x<sub>2</sub> = 0,10 m = 10 cm"
+    ],
     "distractorAnalysis": [
       "Está incorreta: inverte a proporção, calculando 4,0 × 10 / 25 = 1,6 cm, quando uma força maior produz um alongamento maior.",
       "Está incorreta: soma a diferença de forças (15 N) ao alongamento inicial, como se a relação entre F e x fosse aditiva e não proporcional.",
@@ -487,7 +521,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2226,
     "topicId": 2,
     "question": "Uma barra com secção de 5,0 cm² suporta uma tensão mecânica de 4,0 × 10⁶ N/m². Qual é a força aplicada?",
-    "figure": {"type": "bar", "mode": "traction", "F": "F = ?", "inside": ["A = 5,0 cm²", "σ = 4,0 × 10⁶ N/m²"]},
+    "figure": {"type": "bar", "mode": "traction", "F": "F = ?", "inside": ["S = 5,0 cm²", "σ = 4,0 × 10⁶ N/m²"]},
     "options": [
       "200 N",
       "2,0 × 10³ N",
@@ -496,6 +530,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "Da definição σ = F/S resulta F = σ · S = 4,0 × 10⁶ N/m² × 5,0 × 10⁻⁴ m² = 2,0 × 10³ N.",
+    "solution": [
+      "Dados: S = 5,0 cm²; σ = 4,0 × 10⁶ N/m²; F = ?",
+      "Conversão: 5,0 cm² = 5,0 × 10⁻⁴ m²",
+      "Fórmula: F = σ · S",
+      "Substituição: F = 4,0 × 10⁶ × 5,0 × 10⁻⁴",
+      "Resultado: F = 2,0 × 10³ N"
+    ],
     "distractorAnalysis": [
       "Está incorreta: converte a área de forma errada, usando 5,0 × 10⁻⁵ m², o que dá 200 N.",
       "Está incorreta: divide a tensão pela área em vez de multiplicar, o que dá 8,0 × 10⁹ N.",
@@ -534,6 +575,14 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "A força restauradora tem módulo F = k · x = 120 N/m × 0,03 m = 3,6 N e opõe-se ao alongamento, tendendo a repor a mola na sua posição inicial.",
+    "solution": [
+      "Dados: k = 120 N/m; x = 3 cm; F = ?",
+      "Conversão: x = 3 cm = 0,03 m",
+      "Fórmula: F = −k · x (módulo: F = k · x)",
+      "Substituição: F = 120 × 0,03",
+      "Resultado: F = 3,6 N",
+      "Conclusão: o sinal negativo de F = −k · x indica que a força se opõe ao alongamento."
+    ],
     "distractorAnalysis": [
       "Está incorreta: o módulo está certo, mas a força restauradora opõe-se ao alongamento, e não tem o mesmo sentido.",
       "Está incorreta: dividir o alongamento pela constante, em vez de multiplicar, dá 0,00025 N.",
@@ -591,6 +640,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "Como x = F/k, a deformação é inversamente proporcional a k. Com k de A quatro vezes menor do que o de B, a deformação de A é quatro vezes maior.",
+    "solution": [
+      "Dados: k<sub>A</sub> = 100 N/m; k<sub>B</sub> = 400 N/m; mesma força F",
+      "Fórmula: x = F / k, logo x<sub>A</sub> / x<sub>B</sub> = k<sub>B</sub> / k<sub>A</sub>",
+      "Substituição: x<sub>A</sub> / x<sub>B</sub> = 400 / 100",
+      "Resultado: x<sub>A</sub> / x<sub>B</sub> = 4",
+      "Conclusão: A deforma-se 4 vezes mais do que B."
+    ],
     "distractorAnalysis": [
       "Está incorreta: com k menor, a mola A deforma-se mais, e não menos, para a mesma força.",
       "Está incorreta: as deformações só seriam iguais se as constantes elásticas fossem iguais, o que não é o caso.",
@@ -602,7 +658,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2232,
     "topicId": 2,
     "question": "Uma barra de 40 cm de comprimento inicial é comprimida até 38 cm. Qual é a deformação relativa da barra?",
-    "figure": {"type": "bar", "mode": "compression", "F": "F", "L0": "L<sub>0</sub> = 40 cm", "L": "L = 38 cm"},
+    "figure": {"type": "bar", "mode": "compression", "F": "F", "L0": "L<sub>0</sub> = 40 cm", "L": "L<sub>f</sub> = 38 cm"},
     "options": [
       "−2",
       "−0,05",
@@ -611,6 +667,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "ΔL = L<sub>f</sub> − L<sub>0</sub> = 38 cm − 40 cm = −2 cm. Logo ε = ΔL / L<sub>0</sub> = −2 / 40 = −0,05, sem unidades; o sinal negativo indica encurtamento.",
+    "solution": [
+      "Dados: L<sub>0</sub> = 40 cm; L<sub>f</sub> = 38 cm; ε = ?",
+      "Fórmula: ΔL = L<sub>f</sub> − L<sub>0</sub>; ε = ΔL / L<sub>0</sub>",
+      "Substituição: ΔL = 38 − 40 = −2 cm; ε = −2 / 40",
+      "Resultado: ε = −0,05",
+      "Conclusão: o sinal negativo indica encurtamento da barra."
+    ],
     "distractorAnalysis": [
       "Está incorreta: não divide a variação de comprimento pelo comprimento inicial, ficando apenas com −2 cm.",
       "Está incorreta: esquece o sinal negativo, o que ignora que a barra encurtou.",
@@ -638,44 +701,6 @@ const TOPIC_2_QUESTIONS = [
     "nursingApplication": "Como a força elástica cresce linearmente com o alongamento, o valor medido num dinamómetro de mola permite quantificar a força aplicada num exercício de reabilitação."
   },
   {
-    "id": 2234,
-    "topicId": 2,
-    "question": "Duas barras têm o mesmo material e a mesma secção. A barra Y tem o dobro do comprimento inicial da barra X. Qual é a relação entre as suas constantes elásticas?",
-    "options": [
-      "A constante de Y é metade da constante de X.",
-      "A constante de Y é o dobro da constante de X.",
-      "A constante de Y é igual à de X, pois é o mesmo material.",
-      "A constante de Y é quatro vezes maior do que a de X."
-    ],
-    "correctIndex": 0,
-    "explanation": "Com o mesmo material e a mesma secção, uma barra com o dobro do comprimento alonga-se o dobro para a mesma força, pelo que a sua constante elástica é metade.",
-    "distractorAnalysis": [
-      "Está incorreta: como k é inversamente proporcional ao comprimento, o dobro do comprimento reduz k para metade, e não a duplica.",
-      "Está incorreta: a constante k depende das dimensões do corpo, e não apenas do material.",
-      "Está incorreta: o efeito do comprimento sobre k é inverso e linear, e não quadrático."
-    ],
-    "nursingApplication": "Com o mesmo material e a mesma secção, um tendão mais comprido alonga mais sob a mesma força, o que se deve ter em conta ao comparar tendões de comprimentos diferentes."
-  },
-  {
-    "id": 2235,
-    "topicId": 2,
-    "question": "Duas barras têm o mesmo comprimento e a mesma secção. A barra A tem módulo de Young 1,5 × 10¹⁰ N/m² e a barra B tem 1,0 × 10⁹ N/m². Qual delas tem maior constante elástica?",
-    "options": [
-      "B, porque tem um módulo de Young menor e deforma mais, logo é mais rígida.",
-      "Ambas, porque têm o mesmo comprimento e a mesma secção.",
-      "A, porque tem um módulo de Young maior e, portanto, maior k.",
-      "B, porque a constante elástica é inversamente proporcional a E."
-    ],
-    "correctIndex": 2,
-    "explanation": "Com o mesmo comprimento e a mesma secção, a barra com maior módulo de Young deforma-se menos para a mesma força, logo tem maior constante elástica. A barra A, com E quinze vezes maior, é a mais rígida.",
-    "distractorAnalysis": [
-      "Está incorreta: uma barra que se deforma mais, para a mesma força, tem menor constante elástica, e não maior.",
-      "Está incorreta: a constante elástica depende do módulo de Young, pelo que, com módulos diferentes, as constantes também diferem.",
-      "Está incorreta: a constante elástica é diretamente proporcional a E, e não inversamente proporcional."
-    ],
-    "nursingApplication": "Um osso cortical, com módulo de Young muito superior ao de um tendão, transmite cargas de forma mais rígida, o que explica a diferença de comportamento entre estes tecidos."
-  },
-  {
     "id": 2236,
     "topicId": 2,
     "question": "Um corpo elástico com módulo de Young E = 2,0 × 10⁹ N/m² é sujeito a uma tensão de 4,0 × 10⁶ N/m², dentro do limite de proporcionalidade. Qual é a deformação relativa?",
@@ -687,6 +712,12 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 3,
     "explanation": "Da relação σ = E · ε resulta ε = σ / E = 4,0 × 10⁶ / 2,0 × 10⁹ = 2,0 × 10⁻³ = 0,002, sem unidades.",
+    "solution": [
+      "Dados: E = 2,0 × 10⁹ N/m²; σ = 4,0 × 10⁶ N/m²; ε = ?",
+      "Fórmula: ε = σ / E",
+      "Substituição: ε = 4,0 × 10⁶ / (2,0 × 10⁹)",
+      "Resultado: ε = 2,0 × 10⁻³ = 0,002"
+    ],
     "distractorAnalysis": [
       "Está incorreta: inverte a relação, calculando E / σ = 500, em vez de σ / E.",
       "Está incorreta: divide apenas os valores numéricos (4,0 / 2,0 = 2), esquecendo as potências de dez.",
@@ -706,6 +737,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 3,
     "explanation": "F = k · x = 500 N/m × 0,04 m = 20 N.",
+    "solution": [
+      "Dados: k = 500 N/m; x = 4 cm; F = ?",
+      "Conversão: x = 4 cm = 0,04 m",
+      "Fórmula: F = k · x",
+      "Substituição: F = 500 × 0,04",
+      "Resultado: F = 20 N"
+    ],
     "distractorAnalysis": [
       "Está incorreta: dividir a constante pela compressão, em vez de multiplicar, dá 12 500 N.",
       "Está incorreta: dividir a compressão pela constante dá 0,00008 N, em vez de 20 N.",
@@ -725,6 +763,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 0,
     "explanation": "Da lei de Hooke, k = F / x, com x = 15 cm = 0,15 m. Logo k = 9 N / 0,15 m = 60 N/m.",
+    "solution": [
+      "Dados: F = 9 N; x = 15 cm; k = ?",
+      "Conversão: x = 15 cm = 0,15 m",
+      "Fórmula: k = F / x",
+      "Substituição: k = 9 / 0,15",
+      "Resultado: k = 60 N/m"
+    ],
     "distractorAnalysis": [
       "Está incorreta: inverte a relação, dividindo o alongamento pela força, o que dá 0,0167 N/m.",
       "Está incorreta: multiplica a força pelo alongamento, em vez de dividir, o que dá 1,35 N/m.",
@@ -736,6 +781,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2239,
     "topicId": 2,
     "question": "Um osso com secção de 3,0 cm² suporta uma força de compressão de 6,0 × 10³ N, dentro do limite de proporcionalidade. Qual é a tensão mecânica no osso?",
+    "figure": {"type": "bar", "mode": "compression", "F": "F = 6,0 × 10³ N", "inside": ["S = 3,0 cm²", "σ = ?"], "alt": "Osso comprimido por 6,0 × 10³ N numa secção de 3,0 cm²; pede-se a tensão."},
     "options": [
       "2,0 × 10⁷ N/m²",
       "2,0 × 10³ N/m²",
@@ -744,6 +790,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 0,
     "explanation": "σ = F / S, com S = 3,0 cm² = 3,0 × 10⁻⁴ m². Logo σ = 6,0 × 10³ / 3,0 × 10⁻⁴ = 2,0 × 10⁷ N/m².",
+    "solution": [
+      "Dados: S = 3,0 cm²; F = 6,0 × 10³ N; σ = ?",
+      "Conversão: 3,0 cm² = 3,0 × 10⁻⁴ m²",
+      "Fórmula: σ = F / S",
+      "Substituição: σ = 6,0 × 10³ / (3,0 × 10⁻⁴)",
+      "Resultado: σ = 2,0 × 10⁷ N/m²"
+    ],
     "distractorAnalysis": [
       "Está incorreta: não converte a área para m², dividindo 6,0 × 10³ por 3,0, o que dá 2,0 × 10³ N/m².",
       "Está incorreta: confunde tensão com força, esquecendo a área de secção.",
@@ -1067,6 +1120,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "Converte-se primeiro o alongamento para metros: 2,5 cm = 0,025 m. Então F = k · x = 80 N/m × 0,025 m = 2,0 N.",
+    "solution": [
+      "Dados: k = 80 N/m; x = 2,5 cm; F = ?",
+      "Conversão: x = 2,5 cm = 0,025 m",
+      "Fórmula: F = k · x",
+      "Substituição: F = 80 × 0,025",
+      "Resultado: F = 2,0 N"
+    ],
     "distractorAnalysis": [
       "Está incorreta: não converte 2,5 cm para metros, multiplicando 80 por 2,5, o que dá 200 N.",
       "Está incorreta: divide o alongamento pela constante, em vez de multiplicar, o que dá cerca de 0,0003 N.",
@@ -1105,6 +1165,12 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "Da lei de Hooke, x = F / k = 25 N / 1,0 × 10³ N/m = 0,025 m, ou seja, 2,5 cm.",
+    "solution": [
+      "Dados: k = 1,0 × 10³ N/m; F = 25 N; x = ?",
+      "Fórmula: x = F / k",
+      "Substituição: x = 25 / (1,0 × 10³)",
+      "Resultado: x = 0,025 m"
+    ],
     "distractorAnalysis": [
       "Está incorreta: inverte a divisão, calculando k / F = 40, que não é um alongamento.",
       "Está incorreta: multiplica a força pela constante, em vez de dividir, o que dá 25 000 m.",
@@ -1162,6 +1228,12 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 3,
     "explanation": "A deformação relativa é ε = ΔL / L<sub>0</sub> = 0,16 / 8,0 = 0,020, ou seja, 2,0 %.",
+    "solution": [
+      "Dados: L<sub>0</sub> = 8,0 cm; ΔL = 0,16 cm; ε = ? (em %)",
+      "Fórmula: ε = ΔL / L<sub>0</sub>; ε (%) = ε × 100",
+      "Substituição: ε = 0,16 / 8,0 = 0,020; 0,020 × 100 = 2,0",
+      "Resultado: ε = 2,0 %"
+    ],
     "distractorAnalysis": [
       "Está incorreta: toma a fração 0,020 como se já fosse uma percentagem, esquecendo-se de a multiplicar por 100.",
       "Está incorreta: inverte a razão, calculando L<sub>0</sub> / ΔL = 8,0 / 0,16 = 50.",
@@ -1173,6 +1245,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2262,
     "topicId": 2,
     "question": "Um osso com secção de 2,0 cm² suporta uma tensão mecânica de compressão de 3,0 × 10⁶ N/m², dentro do limite de proporcionalidade. Qual é a força de compressão suportada pelo osso?",
+    "figure": {"type": "bar", "mode": "compression", "F": "F = ?", "inside": ["S = 2,0 cm²", "σ = 3,0 × 10⁶ N/m²"], "alt": "Osso comprimido com secção de 2,0 cm² e tensão de 3,0 × 10⁶ N/m²; pede-se a força."},
     "options": [
       "1,5 × 10¹⁰ N",
       "6,0 N",
@@ -1181,6 +1254,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "Da definição σ = F / S resulta F = σ · S = 3,0 × 10⁶ N/m² × 2,0 × 10⁻⁴ m² = 6,0 × 10² N.",
+    "solution": [
+      "Dados: S = 2,0 cm²; σ = 3,0 × 10⁶ N/m²; F = ?",
+      "Conversão: 2,0 cm² = 2,0 × 10⁻⁴ m²",
+      "Fórmula: F = σ · S",
+      "Substituição: F = 3,0 × 10⁶ × 2,0 × 10⁻⁴",
+      "Resultado: F = 6,0 × 10² N"
+    ],
     "distractorAnalysis": [
       "Está incorreta: divide a tensão pela área, em vez de multiplicar, o que dá 1,5 × 10¹⁰ N.",
       "Está incorreta: converte a área de forma errada, usando 2,0 × 10⁻⁶ m², o que dá 6,0 N.",
@@ -1192,6 +1272,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2263,
     "topicId": 2,
     "question": "Um tendão com 15 cm de comprimento inicial é tracionado até apresentar uma deformação relativa de 0,04. Qual é o seu alongamento?",
+    "figure": {"type": "bar", "mode": "traction", "F": "F", "inside": ["ε = 0,04"], "L0": "L<sub>0</sub> = 15 cm", "dL": "ΔL = ?", "alt": "Tendão tracionado com comprimento inicial de 15 cm e deformação relativa de 0,04; pede-se o alongamento."},
     "options": [
       "6 mm",
       "0,6 mm",
@@ -1200,6 +1281,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 0,
     "explanation": "ΔL = ε · L<sub>0</sub> = 0,04 × 15 cm = 0,6 cm = 6 mm.",
+    "solution": [
+      "Dados: L<sub>0</sub> = 15 cm; ε = 0,04; ΔL = ?",
+      "Conversão: L<sub>0</sub> = 15 cm = 150 mm",
+      "Fórmula: ΔL = ε · L<sub>0</sub>",
+      "Substituição: ΔL = 0,04 × 150 mm",
+      "Resultado: ΔL = 6 mm"
+    ],
     "distractorAnalysis": [
       "Está incorreta: toma 15 cm como se fossem 15 mm, o que dá 0,04 × 15 mm = 0,6 mm.",
       "Está incorreta: confunde 15 cm com 1,5 m, o que dá 0,06 m.",
@@ -1211,6 +1299,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2264,
     "topicId": 2,
     "question": "Um tendão com secção de 0,50 cm² é tracionado por uma força de 300 N, dentro do limite de proporcionalidade. Qual é a tensão mecânica no tendão?",
+    "figure": {"type": "bar", "mode": "traction", "F": "F = 300 N", "inside": ["S = 0,50 cm²", "σ = ?"], "alt": "Tendão tracionado por 300 N com secção de 0,50 cm²; pede-se a tensão."},
     "options": [
       "6,0 × 10² N/m²",
       "0,015 N/m²",
@@ -1219,6 +1308,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 3,
     "explanation": "σ = F / S, com S = 0,50 cm² = 5,0 × 10⁻⁵ m². Logo σ = 300 / (5,0 × 10⁻⁵) = 6,0 × 10⁶ N/m².",
+    "solution": [
+      "Dados: S = 0,50 cm²; F = 300 N; σ = ?",
+      "Conversão: 0,50 cm² = 5,0 × 10⁻⁵ m²",
+      "Fórmula: σ = F / S",
+      "Substituição: σ = 300 / (5,0 × 10⁻⁵)",
+      "Resultado: σ = 6,0 × 10⁶ N/m²"
+    ],
     "distractorAnalysis": [
       "Está incorreta: usa a área em cm² sem a converter, o que dá 300 / 0,50 = 6,0 × 10² N/m².",
       "Está incorreta: multiplica a força pela área, em vez de dividir, o que dá 0,015 N/m².",
@@ -1238,6 +1334,12 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 3,
     "explanation": "Da relação σ = E · ε resulta ε = σ / E = 1,0 × 10⁷ / 5,0 × 10⁸ = 0,02, sem unidades.",
+    "solution": [
+      "Dados: E = 5,0 × 10⁸ N/m²; σ = 1,0 × 10⁷ N/m²; ε = ?",
+      "Fórmula: ε = σ / E",
+      "Substituição: ε = 1,0 × 10⁷ / (5,0 × 10⁸)",
+      "Resultado: ε = 0,02"
+    ],
     "distractorAnalysis": [
       "Está incorreta: inverte a relação, calculando E / σ = 50, em vez de σ / E.",
       "Está incorreta: escreve o módulo de Young como 5,0 × 10⁷ N/m², trocando a potência de dez, e obtém 0,2.",
@@ -1257,6 +1359,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 0,
     "explanation": "F = k · x = 300 N/m × 0,08 m = 24 N.",
+    "solution": [
+      "Dados: k = 300 N/m; x = 8 cm; F = ?",
+      "Conversão: x = 8 cm = 0,08 m",
+      "Fórmula: F = k · x",
+      "Substituição: F = 300 × 0,08",
+      "Resultado: F = 24 N"
+    ],
     "distractorAnalysis": [
       "Está incorreta: não converte 8 cm para metros, multiplicando 300 por 8, o que dá 2400 N.",
       "Está incorreta: divide o alongamento pela constante, em vez de multiplicar, o que dá cerca de 0,00027 N.",
@@ -1379,25 +1488,6 @@ const TOPIC_2_QUESTIONS = [
     "nursingApplication": "Em zonas de afilamento de um osso ou de uma tala, a tensão concentra-se numa área menor, o que aumenta o risco de fratura ou de lesão cutânea se a carga não for distribuída."
   },
   {
-    "id": 2273,
-    "topicId": 2,
-    "question": "Uma barra de aço e uma barra de borracha têm a mesma secção e o mesmo comprimento. Qual delas tem maior constante elástica?",
-    "options": [
-      "A de borracha, porque se deforma mais e, por isso, é mais rígida.",
-      "A de aço, porque tem um módulo de Young muito superior.",
-      "Ambas, porque a constante elástica depende apenas do comprimento.",
-      "A de borracha, porque a constante elástica é inversamente proporcional a E."
-    ],
-    "correctIndex": 1,
-    "explanation": "Com a mesma secção e o mesmo comprimento, a barra com maior módulo de Young deforma-se menos para a mesma força, logo tem maior constante elástica. O aço, com E muito superior, tem maior k.",
-    "distractorAnalysis": [
-      "Está incorreta: deformar-se mais, para a mesma força, corresponde a menor constante elástica, e não a maior.",
-      "Está incorreta: k depende do módulo de Young; com módulos diferentes, as constantes também diferem.",
-      "Está incorreta: a constante elástica é diretamente proporcional a E, e não inversamente proporcional."
-    ],
-    "nursingApplication": "Um osso cortical é muito mais rígido do que um tecido mole com a mesma geometria, o que explica porque é que as cargas se distribuem de forma muito diferente entre estes tecidos."
-  },
-  {
     "id": 2274,
     "topicId": 2,
     "question": "Um corpo viscoelástico é sujeito a uma carga constante durante vários minutos e, depois, a carga é retirada. Como evolui a sua deformação?",
@@ -1428,6 +1518,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "Com x = 2,0 cm = 0,020 m, a força é F = k · x = 2,5 × 10⁴ N/m × 0,020 m = 5,0 × 10² N.",
+    "solution": [
+      "Dados: k = 2,5 × 10⁴ N/m; x = 2,0 cm; F = ?",
+      "Conversão: x = 2,0 cm = 0,020 m",
+      "Fórmula: F = k · x",
+      "Substituição: F = 2,5 × 10⁴ × 0,020",
+      "Resultado: F = 5,0 × 10² N"
+    ],
     "distractorAnalysis": [
       "Está incorreta: divide a constante pela compressão, em vez de multiplicar, o que dá 1,25 × 10⁶ N.",
       "Está incorreta: divide a compressão pela constante, o que dá 8,0 × 10⁻⁷ N.",
@@ -1439,7 +1536,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2276,
     "topicId": 2,
     "question": "Uma barra com secção de 1,2 cm² tem uma tensão mecânica de 9,0 × 10⁶ N/m². Qual é a força aplicada?",
-    "figure": {"type": "bar", "mode": "traction", "F": "F = ?", "inside": ["A = 1,2 cm²", "σ = 9,0 × 10⁶ N/m²"]},
+    "figure": {"type": "bar", "mode": "traction", "F": "F = ?", "inside": ["S = 1,2 cm²", "σ = 9,0 × 10⁶ N/m²"]},
     "options": [
       "7,5 × 10¹⁰ N",
       "1,08 × 10¹ N",
@@ -1448,6 +1545,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 3,
     "explanation": "F = σ · S = 9,0 × 10⁶ N/m² × 1,2 × 10⁻⁴ m² = 1,08 × 10³ N.",
+    "solution": [
+      "Dados: S = 1,2 cm²; σ = 9,0 × 10⁶ N/m²; F = ?",
+      "Conversão: 1,2 cm² = 1,2 × 10⁻⁴ m²",
+      "Fórmula: F = σ · S",
+      "Substituição: F = 9,0 × 10⁶ × 1,2 × 10⁻⁴",
+      "Resultado: F = 1,08 × 10³ N"
+    ],
     "distractorAnalysis": [
       "Está incorreta: divide a tensão pela área, em vez de multiplicar, o que dá 7,5 × 10¹⁰ N.",
       "Está incorreta: converte a área como 1,2 × 10⁻⁶ m², o que dá 1,08 × 10¹ N.",
@@ -1467,6 +1571,12 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 0,
     "explanation": "Da relação σ = E · ε resulta E = σ / ε = 2,0 × 10⁵ / 0,004 = 5,0 × 10⁷ N/m².",
+    "solution": [
+      "Dados: σ = 2,0 × 10⁵ N/m²; ε = 0,004; E = ?",
+      "Fórmula: E = σ / ε",
+      "Substituição: E = 2,0 × 10⁵ / 0,004",
+      "Resultado: E = 5,0 × 10⁷ N/m²"
+    ],
     "distractorAnalysis": [
       "Está incorreta: multiplica a tensão pela deformação, em vez de dividir, o que dá 8,0 × 10² N/m².",
       "Está incorreta: inverte a relação, calculando ε / σ = 2,0 × 10⁻⁸, em vez de σ / ε.",
@@ -1487,6 +1597,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "ε = ΔL / L<sub>0</sub>, com ΔL = 3,0 mm = 0,0030 m e L<sub>0</sub> = 1,5 m. Logo ε = 0,0030 / 1,5 = 0,002, sem unidades.",
+    "solution": [
+      "Dados: L<sub>0</sub> = 1,5 m; ΔL = 3,0 mm; ε = ?",
+      "Conversão: ΔL = 3,0 mm = 0,0030 m",
+      "Fórmula: ε = ΔL / L<sub>0</sub>",
+      "Substituição: ε = 0,0030 / 1,5",
+      "Resultado: ε = 0,002"
+    ],
     "distractorAnalysis": [
       "Está incorreta: divide o alongamento por 15 em vez de por 1,5, o que dá 0,0002.",
       "Está incorreta: inverte a divisão e não converte unidades, calculando 1,5 / 3,0 = 0,5.",
@@ -1544,6 +1661,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "A lei de Hooke exige proporcionalidade, isto é, F / ΔL constante. Nos dois primeiros ensaios, k = 4,0 / 2,0 = 8,0 / 4,0 = 2,0 N/cm (200 N/m). Com 12 N, a proporcionalidade preveria ΔL = 12 / 2,0 = 6,0 cm, mas mediu-se 7,0 cm (F / ΔL ≈ 1,7 N/cm). A relação deixou de ser linear: entre 8,0 N e 12 N foi ultrapassado o limite de proporcionalidade.",
+    "solution": [
+      "Dados: (4,0 N; 2,0 cm), (8,0 N; 4,0 cm), (12 N; 7,0 cm)",
+      "Fórmula: k = F / ΔL, constante enquanto se verifica a lei de Hooke",
+      "Substituição: 4,0 / 2,0 = 2,0 N/cm; 8,0 / 4,0 = 2,0 N/cm; 12 / 7,0 ≈ 1,7 N/cm",
+      "Resultado: k = 2,0 N/cm nos dois primeiros ensaios e ≈ 1,7 N/cm no terceiro",
+      "Conclusão: F / ΔL deixou de ser constante: o limite de proporcionalidade foi ultrapassado entre 8,0 N e 12 N."
+    ],
     "distractorAnalysis": [
       "Está incorreta: não basta o alongamento crescer com a força; tem de crescer na mesma proporção, e com 12 N esperavam-se 6,0 cm e não 7,0 cm.",
       "Está incorreta: no último ensaio F / ΔL = 12 / 7,0 ≈ 1,7 N/cm, menor do que 2,0 N/cm; a mola alongou mais do que o previsto, logo não ficou mais rígida.",
@@ -1593,7 +1717,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2284,
     "topicId": 2,
     "question": "Uma barra de 0,80 m de comprimento inicial tem módulo de Young E = 1,0 × 10⁹ N/m² e secção de 2,0 × 10⁻⁴ m². Sob uma força de 4,0 × 10³ N, dentro do limite de proporcionalidade, qual é o seu alongamento?",
-    "figure": {"type": "bar", "mode": "traction", "F": "F = 4,0 × 10³ N", "inside": ["A = 2,0 × 10⁻⁴ m²", "E = 1,0 × 10⁹ N/m²"], "L0": "L<sub>0</sub> = 0,80 m", "dL": "ΔL = ?"},
+    "figure": {"type": "bar", "mode": "traction", "F": "F = 4,0 × 10³ N", "inside": ["S = 2,0 × 10⁻⁴ m²", "E = 1,0 × 10⁹ N/m²"], "L0": "L<sub>0</sub> = 0,80 m", "dL": "ΔL = ?"},
     "options": [
       "0,016 cm",
       "1,6 m",
@@ -1602,6 +1726,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 3,
     "explanation": "σ = F / S = 2,0 × 10⁷ N/m²; ε = σ / E = 0,020; ΔL = ε · L<sub>0</sub> = 0,020 × 0,80 m = 0,016 m = 1,6 cm.",
+    "solution": [
+      "Dados: L<sub>0</sub> = 0,80 m; E = 1,0 × 10⁹ N/m²; S = 2,0 × 10⁻⁴ m²; F = 4,0 × 10³ N; ΔL = ?",
+      "Fórmula: σ = F / S; ε = σ / E; ΔL = ε · L<sub>0</sub>",
+      "Substituição: σ = 4,0 × 10³ / (2,0 × 10⁻⁴) = 2,0 × 10⁷ N/m²; ε = 2,0 × 10⁷ / (1,0 × 10⁹) = 0,020",
+      "Substituição: ΔL = 0,020 × 0,80 = 0,016 m",
+      "Resultado: ΔL = 0,016 m = 1,6 cm"
+    ],
     "distractorAnalysis": [
       "Está incorreta: troca a unidade, pois 0,016 m equivalem a 1,6 cm e não a 0,016 cm.",
       "Está incorreta: confunde centímetros com metros, o que multiplica o resultado por 100.",
@@ -1613,6 +1744,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2285,
     "topicId": 2,
     "question": "Um tendão tem módulo de Young E = 1,2 × 10⁹ N/m² e secção de 0,40 cm². Sofre uma deformação relativa de 0,01, dentro do limite de proporcionalidade. Qual é a força que o tendão suporta?",
+    "figure": {"type": "bar", "mode": "traction", "F": "F = ?", "inside": ["S = 0,40 cm²; ε = 0,01", "E = 1,2 × 10⁹ N/m²"], "alt": "Tendão tracionado com secção de 0,40 cm², deformação relativa de 0,01 e módulo de Young de 1,2 × 10⁹ N/m²; pede-se a força."},
     "options": [
       "3,0 × 10¹¹ N",
       "4,8 N",
@@ -1621,6 +1753,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 3,
     "explanation": "σ = E · ε = 1,2 × 10⁹ × 0,01 = 1,2 × 10⁷ N/m². Com S = 0,40 cm² = 4,0 × 10⁻⁵ m², F = σ · S = 4,8 × 10² N.",
+    "solution": [
+      "Dados: E = 1,2 × 10⁹ N/m²; S = 0,40 cm²; ε = 0,01; F = ?",
+      "Conversão: 0,40 cm² = 4,0 × 10⁻⁵ m²",
+      "Fórmula: σ = E · ε; F = σ · S",
+      "Substituição: σ = 1,2 × 10⁹ × 0,01 = 1,2 × 10⁷ N/m²; F = 1,2 × 10⁷ × 4,0 × 10⁻⁵",
+      "Resultado: F = 4,8 × 10² N"
+    ],
     "distractorAnalysis": [
       "Está incorreta: divide a tensão pela área, em vez de multiplicar, o que dá 3,0 × 10¹¹ N.",
       "Está incorreta: converte a área como 4,0 × 10⁻⁷ m², o que dá 4,8 N.",
@@ -1678,6 +1817,12 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "p = F / S = 300 N / 0,02 m² = 1,5 × 10⁴ N/m².",
+    "solution": [
+      "Dados: F = 300 N; S = 0,02 m²; p = ?",
+      "Fórmula: p = F / S",
+      "Substituição: p = 300 / 0,02",
+      "Resultado: p = 1,5 × 10⁴ N/m²"
+    ],
     "distractorAnalysis": [
       "Está incorreta: multiplica a força pela área, em vez de dividir, o que dá 6,0 N/m².",
       "Está incorreta: lê 0,02 m² como 2 m², o que dá 1,5 × 10² N/m².",
@@ -1697,6 +1842,12 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "k = F / x = 6,0 N / 0,040 m = 150 N/m. Com 15 N, x = F / k = 15 / 150 = 0,10 m = 10 cm (o alongamento é proporcional à força: 4,0 × 15 / 6,0).",
+    "solution": [
+      "Dados: x<sub>1</sub> = 4,0 cm; F<sub>1</sub> = 6,0 N; F<sub>2</sub> = 15 N; x<sub>2</sub> = ?",
+      "Fórmula: x proporcional a F: x<sub>2</sub> = x<sub>1</sub> · F<sub>2</sub> / F<sub>1</sub>",
+      "Substituição: x<sub>2</sub> = 4,0 × 15 / 6,0",
+      "Resultado: x<sub>2</sub> = 10 cm"
+    ],
     "distractorAnalysis": [
       "Está incorreta: inverte a razão entre as forças, calculando 4,0 × 6,0 / 15 = 1,6 cm.",
       "Está incorreta: divide apenas as forças, 15 / 6,0 = 2,5, esquecendo o alongamento inicial de 4,0 cm.",
@@ -1716,6 +1867,12 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "ε = σ / E = 3,0 × 10⁶ / 1,5 × 10¹⁰ = 2,0 × 10⁻⁴, sem unidades.",
+    "solution": [
+      "Dados: E = 1,5 × 10¹⁰ N/m²; σ = 3,0 × 10⁶ N/m²; ε = ?",
+      "Fórmula: ε = σ / E",
+      "Substituição: ε = 3,0 × 10⁶ / (1,5 × 10¹⁰)",
+      "Resultado: ε = 2,0 × 10⁻⁴"
+    ],
     "distractorAnalysis": [
       "Está incorreta: inverte a relação, calculando E / σ = 5,0 × 10³, em vez de σ / E.",
       "Está incorreta: lê o módulo de Young como 1,5 × 10¹¹ N/m², o que dá 2,0 × 10⁻⁵.",
@@ -1727,7 +1884,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2291,
     "topicId": 2,
     "question": "Uma barra com secção de 1,0 × 10⁻⁴ m² e comprimento inicial de 1,0 m alonga 1,0 mm quando sujeita a uma força de 200 N, dentro do limite de proporcionalidade. Qual é o seu módulo de Young?",
-    "figure": {"type": "bar", "mode": "traction", "F": "F = 200 N", "inside": ["A = 1,0 × 10⁻⁴ m²", "E = ?"], "L0": "L<sub>0</sub> = 1,0 m", "dL": "ΔL = 1,0 mm"},
+    "figure": {"type": "bar", "mode": "traction", "F": "F = 200 N", "inside": ["S = 1,0 × 10⁻⁴ m²", "E = ?"], "L0": "L<sub>0</sub> = 1,0 m", "dL": "ΔL = 1,0 mm"},
     "options": [
       "2,0 × 10⁶ N/m²",
       "5,0 × 10⁻¹⁰ N/m²",
@@ -1736,6 +1893,14 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "σ = F / S = 200 / 1,0 × 10⁻⁴ = 2,0 × 10⁶ N/m²; ε = ΔL / L<sub>0</sub> = 1,0 × 10⁻³ / 1,0 = 1,0 × 10⁻³; logo E = σ / ε = 2,0 × 10⁹ N/m².",
+    "solution": [
+      "Dados: S = 1,0 × 10⁻⁴ m²; L<sub>0</sub> = 1,0 m; ΔL = 1,0 mm; F = 200 N; E = ?",
+      "Conversão: ΔL = 1,0 mm = 1,0 × 10⁻³ m",
+      "Fórmula: σ = F / S; ε = ΔL / L<sub>0</sub>; E = σ / ε",
+      "Substituição: σ = 200 / (1,0 × 10⁻⁴) = 2,0 × 10⁶ N/m²; ε = 1,0 × 10⁻³ / 1,0 = 1,0 × 10⁻³",
+      "Substituição: E = 2,0 × 10⁶ / (1,0 × 10⁻³)",
+      "Resultado: E = 2,0 × 10⁹ N/m²"
+    ],
     "distractorAnalysis": [
       "Está incorreta: usa a tensão como se fosse o módulo de Young, sem a dividir pela deformação relativa, o que dá 2,0 × 10⁶ N/m².",
       "Está incorreta: inverte a relação, calculando ε / σ, o que dá 5,0 × 10⁻¹⁰ N/m².",
@@ -1785,6 +1950,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2294,
     "topicId": 2,
     "question": "Um segmento de tecido com 25 cm de comprimento inicial alonga 5 mm. Qual é a sua deformação relativa?",
+    "figure": {"type": "bar", "mode": "traction", "F": "F", "inside": ["ε = ?"], "L0": "L<sub>0</sub> = 25 cm", "dL": "ΔL = 5 mm", "alt": "Segmento de tecido tracionado com comprimento inicial de 25 cm e alongamento de 5 mm; pede-se a deformação relativa."},
     "options": [
       "0,02",
       "0,2",
@@ -1793,6 +1959,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 0,
     "explanation": "ε = ΔL / L<sub>0</sub> = 5 mm / 25 cm = 0,005 m / 0,25 m = 0,02, sem unidades.",
+    "solution": [
+      "Dados: L<sub>0</sub> = 25 cm; ΔL = 5 mm; ε = ?",
+      "Conversão: ΔL = 5 mm = 0,005 m; L<sub>0</sub> = 25 cm = 0,25 m",
+      "Fórmula: ε = ΔL / L<sub>0</sub>",
+      "Substituição: ε = 0,005 / 0,25",
+      "Resultado: ε = 0,02"
+    ],
     "distractorAnalysis": [
       "Está incorreta: não converte as unidades, dividindo 5 mm por 25 cm e obtendo 0,2.",
       "Está incorreta: divide o alongamento em metros por 2,5 m em vez de 0,25 m, o que dá 0,002.",
@@ -1812,6 +1985,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 0,
     "explanation": "Em equilíbrio, a força elástica iguala o peso: P = m · g = 0,50 × 9,8 = 4,9 N. Logo k = F / x = 4,9 N / 0,049 m = 100 N/m.",
+    "solution": [
+      "Dados: m = 0,50 kg; x = 4,9 cm; g = 9,8 m/s²; k = ?",
+      "Conversão: x = 4,9 cm = 0,049 m",
+      "Fórmula: P = m · g; em equilíbrio F = P, logo k = P / x",
+      "Substituição: P = 0,50 × 9,8 = 4,9 N; k = 4,9 / 0,049",
+      "Resultado: k = 100 N/m"
+    ],
     "distractorAnalysis": [
       "Está incorreta: usa a massa como se fosse força, esquecendo g, e calcula 0,50 / 0,049 = 10,2 N/m.",
       "Está incorreta: não converte 4,9 cm para metros, calculando 4,9 / 4,9 = 1,0 N/m.",
@@ -1858,25 +2038,6 @@ const TOPIC_2_QUESTIONS = [
     "nursingApplication": "O reposicionamento de doentes acamados deve ser individualizado, de acordo com a avaliação da pele e do risco de lesão por pressão, e não fixado por um intervalo rígido."
   },
   {
-    "id": 2298,
-    "topicId": 2,
-    "question": "Duas barras têm o mesmo material e a mesma secção. Se o comprimento inicial de uma barra for triplicado, como varia a sua constante elástica?",
-    "options": [
-      "Triplica, aumentando a rigidez do corpo.",
-      "Mantém-se.",
-      "Diminui para um terço.",
-      "Diminui para um nono."
-    ],
-    "correctIndex": 2,
-    "explanation": "Com o mesmo material e a mesma secção, uma barra três vezes mais comprida alonga-se o triplo para a mesma força, pelo que a constante elástica fica dividida por três.",
-    "distractorAnalysis": [
-      "Está incorreta: triplicar k ignora que a constante elástica é inversamente proporcional ao comprimento inicial.",
-      "Está incorreta: a constante depende do comprimento, pelo que não se mantém quando o comprimento muda.",
-      "Está incorreta: a dependência de k em L<sub>0</sub> é inversa e linear, pelo que o fator é 1/3 e não 1/9."
-    ],
-    "nursingApplication": "Uma banda elástica de reabilitação do mesmo material e espessura, mas três vezes mais comprida, alonga três vezes mais com a mesma força, ou seja, oferece menos resistência."
-  },
-  {
     "id": 2299,
     "topicId": 2,
     "question": "Num ensaio com uma mola, a força aplicada é representada em função do alongamento, e obtém-se uma reta. Que grandeza corresponde ao declive desta reta?",
@@ -1899,6 +2060,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2300,
     "topicId": 2,
     "question": "Uma compressão de 120 N atua sobre uma área de contacto de 4,0 cm². Qual é a tensão de compressão?",
+    "figure": {"type": "bar", "mode": "compression", "F": "F = 120 N", "inside": ["S = 4,0 cm²", "σ = ?"], "alt": "Compressão de 120 N sobre uma área de 4,0 cm²; pede-se a tensão."},
     "options": [
       "4,8 × 10⁻² N/m²",
       "3,0 × 10⁵ N/m²",
@@ -1907,6 +2069,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "σ = F / S, com S = 4,0 cm² = 4,0 × 10⁻⁴ m². Logo σ = 120 / (4,0 × 10⁻⁴) = 3,0 × 10⁵ N/m².",
+    "solution": [
+      "Dados: F = 120 N; S = 4,0 cm²; σ = ?",
+      "Conversão: 4,0 cm² = 4,0 × 10⁻⁴ m²",
+      "Fórmula: σ = F / S",
+      "Substituição: σ = 120 / (4,0 × 10⁻⁴)",
+      "Resultado: σ = 3,0 × 10⁵ N/m²"
+    ],
     "distractorAnalysis": [
       "Está incorreta: multiplica a força pela área, em vez de dividir, o que dá 4,8 × 10⁻² N/m².",
       "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 3,0 × 10³ N/m².",
@@ -1994,6 +2163,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2305,
     "topicId": 2,
     "question": "A secção da diáfise de um fémur tem 5,0 cm² no total, dos quais 1,5 cm² são cavidade medular. Uma força de compressão de 2100 N atua ao longo do eixo. Admitindo que só o osso compacto suporta a carga, qual é a tensão média nele?",
+    "figure": {"type": "bar", "mode": "compression", "F": "F = 2100 N", "inside": ["A<sub>total</sub> = 5,0 cm²", "A<sub>cavidade</sub> = 1,5 cm²"], "alt": "Diáfise do fémur comprimida por 2100 N, com secção total de 5,0 cm² e cavidade medular de 1,5 cm²."},
     "options": [
       "4,2 × 10⁶ N/m²",
       "6,0 × 10⁶ N/m²",
@@ -2002,6 +2172,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "A carga é suportada pelo anel de osso compacto, cuja área é 5,0 − 1,5 = 3,5 cm² = 3,5 × 10⁻⁴ m² (1 cm² = 10⁻⁴ m²). Então σ = F / A = 2100 / 3,5 × 10⁻⁴ = 6,0 × 10⁶ N/m². A cavidade medular, com medula, não contribui para suportar a carga.",
+    "solution": [
+      "Dados: A<sub>total</sub> = 5,0 cm²; A<sub>cavidade</sub> = 1,5 cm²; F = 2100 N; σ = ?",
+      "Conversão: 1 cm² = 10⁻⁴ m²: A<sub>total</sub> = 5,0 × 10⁻⁴ m²; A<sub>cavidade</sub> = 1,5 × 10⁻⁴ m²",
+      "Fórmula: A = A<sub>total</sub> − A<sub>cavidade</sub>; σ = F / A",
+      "Substituição: A = 5,0 × 10⁻⁴ − 1,5 × 10⁻⁴ = 3,5 × 10⁻⁴ m²; σ = 2100 / (3,5 × 10⁻⁴)",
+      "Resultado: σ = 6,0 × 10⁶ N/m²"
+    ],
     "distractorAnalysis": [
       "Está incorreta: resulta de usar a área total (5,0 cm²), incluindo a cavidade medular, que não suporta carga: 2100 / 5,0 × 10⁻⁴ = 4,2 × 10⁶ N/m².",
       "Está incorreta: resulta de usar apenas a área da cavidade medular (1,5 cm²) em vez da área de osso compacto: 2100 / 1,5 × 10⁻⁴ = 1,4 × 10⁷ N/m².",
@@ -2021,6 +2198,12 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 3,
     "explanation": "Pela lei de Hooke generalizada, ε = σ / E = 2,0 × 10⁶ / 5,0 × 10⁸ = 4,0 × 10⁻³ (0,4 %). O osso cortical (E ≈ 2,0 × 10¹⁰ N/m²) sob a mesma tensão deformar-se-ia apenas 1,0 × 10⁻⁴, ou seja, 40 vezes menos. Por ser menos rígido, o osso trabecular das epífises deforma-se mais e ajuda a amortecer os impactos transmitidos às articulações.",
+    "solution": [
+      "Dados: E = 5,0 × 10⁸ N/m²; σ = 2,0 × 10⁶ N/m²; ε = ?",
+      "Fórmula: ε = σ / E",
+      "Substituição: ε = 2,0 × 10⁶ / (5,0 × 10⁸)",
+      "Resultado: ε = 4,0 × 10⁻³"
+    ],
     "distractorAnalysis": [
       "Está incorreta: resulta de inverter a fórmula (E / σ); a deformação relativa é σ / E e, num osso, é um número muito menor do que 1.",
       "Está incorreta: resulta de usar o módulo de Young do osso cortical (2,0 × 10¹⁰ N/m²) em vez do do osso trabecular indicado no enunciado.",
@@ -2317,6 +2500,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2322,
     "topicId": 2,
     "question": "Num fémur, a força de compressão é 1800 N e a secção é 6 cm². Qual é a tensão no osso?",
+    "figure": {"type": "bar", "mode": "compression", "F": "F = 1800 N", "inside": ["S = 6 cm²", "σ = ?"], "alt": "Fémur comprimido por 1800 N numa secção de 6 cm²; pede-se a tensão."},
     "options": [
       "3 × 10⁴ N/m²",
       "3 × 10⁸ N/m²",
@@ -2325,6 +2509,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "σ = F / S, com S = 6 cm² = 6 × 10⁻⁴ m². Logo σ = 1800 / (6 × 10⁻⁴) = 3 × 10⁶ N/m².",
+    "solution": [
+      "Dados: F = 1800 N; S = 6 cm²; σ = ?",
+      "Conversão: 6 cm² = 6 × 10⁻⁴ m²",
+      "Fórmula: σ = F / S",
+      "Substituição: σ = 1800 / (6 × 10⁻⁴)",
+      "Resultado: σ = 3 × 10⁶ N/m²"
+    ],
     "distractorAnalysis": [
       "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 3 × 10⁴ N/m².",
       "Está incorreta: converte 1 cm² como 10⁻⁶ m², o que dá 3 × 10⁸ N/m².",
@@ -2336,6 +2527,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2323,
     "topicId": 2,
     "question": "Um fémur com E = 2 × 10¹⁰ N/m² e comprimento inicial L<sub>0</sub> = 0,40 m suporta uma tensão de 3 × 10⁶ N/m², dentro do regime elástico. Qual é o encurtamento ΔL?",
+    "figure": {"type": "bar", "mode": "compression", "F": "F", "inside": ["E = 2 × 10¹⁰ N/m²", "σ = 3 × 10⁶ N/m²"], "L0": "L<sub>0</sub> = 0,40 m", "dL": "ΔL = ?", "alt": "Fémur comprimido com comprimento inicial de 0,40 m, módulo de Young de 2 × 10¹⁰ N/m² e tensão de 3 × 10⁶ N/m²; pede-se o encurtamento."},
     "options": [
       "0,6 mm",
       "0,06 mm",
@@ -2344,6 +2536,12 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "ε = σ / E = 3 × 10⁶ / 2 × 10¹⁰ = 1,5 × 10⁻⁴; ΔL = ε · L<sub>0</sub> = 1,5 × 10⁻⁴ × 0,40 = 6 × 10⁻⁵ m = 0,06 mm.",
+    "solution": [
+      "Dados: E = 2 × 10¹⁰ N/m²; L<sub>0</sub> = 0,40 m; σ = 3 × 10⁶ N/m²; ΔL = ?",
+      "Fórmula: ε = σ / E; ΔL = ε · L<sub>0</sub>",
+      "Substituição: ε = 3 × 10⁶ / (2 × 10¹⁰) = 1,5 × 10⁻⁴; ΔL = 1,5 × 10⁻⁴ × 0,40 = 6 × 10⁻⁵ m",
+      "Resultado: ΔL = 6 × 10⁻⁵ m = 0,06 mm"
+    ],
     "distractorAnalysis": [
       "Está incorreta: converte metros em milímetros multiplicando por 10⁴, em vez de 10³.",
       "Está incorreta: indica o valor em metros (6 × 10⁻⁵) mas com a unidade milímetro.",
@@ -2363,6 +2561,12 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "Para converter em percentagem multiplica-se por 100: 2 × 10⁻⁴ × 100 = 0,02 %. A deformação relativa em si é adimensional.",
+    "solution": [
+      "Dados: ε = 2 × 10⁻⁴; ε em % = ?",
+      "Fórmula: ε (%) = ε × 100",
+      "Substituição: ε (%) = 2 × 10⁻⁴ × 100 = 2 × 10⁻²",
+      "Resultado: ε = 0,02 %"
+    ],
     "distractorAnalysis": [
       "Está incorreta: multiplica por 10³ em vez de 10², o que dá 0,2 %.",
       "Está incorreta: multiplica por 10⁴ em vez de 10², o que dá 2 %.",
@@ -2439,6 +2643,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "E = σ / ε, com σ = 3,0 × 10⁶ N/m² e ε = 1,5 % = 0,015. Logo E = 3,0 × 10⁶ / 0,015 = 2,0 × 10⁸ N/m².",
+    "solution": [
+      "Dados: σ = 3,0 × 10⁶ N/m²; ε = 1,5 %; E = ?",
+      "Conversão: ε = 1,5 % = 0,015",
+      "Fórmula: E = σ / ε",
+      "Substituição: E = 3,0 × 10⁶ / 0,015",
+      "Resultado: E = 2,0 × 10⁸ N/m²"
+    ],
     "distractorAnalysis": [
       "Está incorreta: multiplica a tensão pela deformação relativa em vez de as dividir, o que dá 4,5 × 10⁴ N/m².",
       "Está incorreta: usa 1,5 em vez de 0,015 para a deformação relativa, esquecendo-se de converter a percentagem, o que dá 2,0 × 10⁶ N/m².",
@@ -2458,6 +2669,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 0,
     "explanation": "Da lei de Hooke, k = F / x, com x = 4,5 cm = 0,045 m. Logo k = 36 / 0,045 = 8,0 × 10² N/m.",
+    "solution": [
+      "Dados: F = 36 N; x = 4,5 cm; k = ?",
+      "Conversão: x = 4,5 cm = 0,045 m",
+      "Fórmula: k = F / x",
+      "Substituição: k = 36 / 0,045",
+      "Resultado: k = 8,0 × 10² N/m"
+    ],
     "distractorAnalysis": [
       "Está incorreta: multiplica a força pelo alongamento em vez de os dividir, o que dá 36 × 0,045 = 1,6 N/m.",
       "Está incorreta: não converte o alongamento para metros, dividindo 36 por 4,5, o que dá 8,0 N/cm e não N/m.",
@@ -2534,6 +2752,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 3,
     "explanation": "F = −k·x = −200 × 0,05 = −10 N. O sinal negativo indica que a força restauradora tem sentido oposto ao do alongamento.",
+    "solution": [
+      "Dados: k = 200 N/m; x = +0,05 m (para a direita); F = ?",
+      "Fórmula: F = −k · x",
+      "Substituição: F = −200 × 0,05",
+      "Resultado: F = −10 N",
+      "Conclusão: o sinal negativo indica que a força aponta para a esquerda, opondo-se ao alongamento."
+    ],
     "distractorAnalysis": [
       "Está incorreta: ignora o sinal negativo: a força restauradora tem sentido oposto ao do alongamento.",
       "Está incorreta: divide k por x (200 / 0,05) em vez de multiplicar.",
@@ -2563,7 +2788,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2335,
     "topicId": 2,
-    "question": "Admita que o módulo de compressão do osso (1,4 × 10¹⁰ N/m²) é inferior ao de tração (1,7 × 10¹⁰ N/m²). Sob a mesma tensão, o que acontece?",
+    "question": "Admita que o módulo de Young do osso em compressão (1,4 × 10¹⁰ N/m²) é inferior ao módulo em tração (1,7 × 10¹⁰ N/m²). Sob a mesma tensão, o que acontece?",
     "options": [
       "O osso deforma-se mais em compressão",
       "O osso deforma-se mais em tração",
@@ -2592,6 +2817,12 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 0,
     "explanation": "Como a carga está ao centro, as duas reações são iguais e R = F / 2 = 600 / 2 = 300 N.",
+    "solution": [
+      "Dados: F = 600 N, ao centro da barra; R = ?",
+      "Fórmula: carga ao centro: reações iguais, 2R = F, logo R = F / 2",
+      "Substituição: R = 600 / 2",
+      "Resultado: R = 300 N"
+    ],
     "distractorAnalysis": [
       "Está incorreta: atribui a carga toda a cada apoio, esquecendo que se divide pelos dois.",
       "Está incorreta: multiplica a carga por dois em vez de a dividir pelos dois apoios.",
@@ -2755,6 +2986,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2345,
     "topicId": 2,
     "question": "Uma vértebra suporta uma força de compressão de 700 N numa área de 15 cm². Qual é a tensão de compressão?",
+    "figure": {"type": "bar", "mode": "compression", "F": "F = 700 N", "inside": ["S = 15 cm²", "σ = ?"], "alt": "Vértebra comprimida por 700 N numa área de 15 cm²; pede-se a tensão."},
     "options": [
       "4,7 × 10³ N/m²",
       "4,7 × 10⁷ N/m²",
@@ -2763,6 +2995,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "S = 15 cm² = 15 × 10⁻⁴ m² = 1,5 × 10⁻³ m². Logo σ = 700 / (1,5 × 10⁻³) = 4,7 × 10⁵ N/m².",
+    "solution": [
+      "Dados: F = 700 N; S = 15 cm²; σ = ?",
+      "Conversão: 15 cm² = 15 × 10⁻⁴ m² = 1,5 × 10⁻³ m²",
+      "Fórmula: σ = F / S",
+      "Substituição: σ = 700 / (1,5 × 10⁻³)",
+      "Resultado: σ ≈ 4,7 × 10⁵ N/m²"
+    ],
     "distractorAnalysis": [
       "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 4,7 × 10³ N/m².",
       "Está incorreta: converte 1 cm² como 10⁻⁶ m², o que dá 4,7 × 10⁷ N/m².",
@@ -2774,6 +3013,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2346,
     "topicId": 2,
     "question": "Um tendão de 20 cm tem E = 1,2 × 10⁹ N/m² e suporta uma tensão de 6,0 × 10⁶ N/m², no regime elástico. Qual é o seu alongamento?",
+    "figure": {"type": "bar", "mode": "traction", "F": "F", "inside": ["E = 1,2 × 10⁹ N/m²", "σ = 6,0 × 10⁶ N/m²"], "L0": "L<sub>0</sub> = 20 cm", "dL": "ΔL = ?", "alt": "Tendão tracionado com comprimento inicial de 20 cm, módulo de Young de 1,2 × 10⁹ N/m² e tensão de 6,0 × 10⁶ N/m²; pede-se o alongamento."},
     "options": [
       "1,0 mm",
       "1,0 cm",
@@ -2782,6 +3022,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 0,
     "explanation": "ε = σ / E = 6,0 × 10⁶ / 1,2 × 10⁹ = 5,0 × 10⁻³; ΔL = ε · L<sub>0</sub> = 5,0 × 10⁻³ × 0,20 m = 1,0 × 10⁻³ m = 1,0 mm.",
+    "solution": [
+      "Dados: L<sub>0</sub> = 20 cm; E = 1,2 × 10⁹ N/m²; σ = 6,0 × 10⁶ N/m²; ΔL = ?",
+      "Conversão: L<sub>0</sub> = 20 cm = 0,20 m",
+      "Fórmula: ε = σ / E; ΔL = ε · L<sub>0</sub>",
+      "Substituição: ε = 6,0 × 10⁶ / (1,2 × 10⁹) = 5,0 × 10⁻³; ΔL = 5,0 × 10⁻³ × 0,20 = 1,0 × 10⁻³ m",
+      "Resultado: ΔL = 1,0 mm"
+    ],
     "distractorAnalysis": [
       "Está incorreta: o resultado é 1,0 × 10⁻³ m; confunde milímetros com centímetros na conversão.",
       "Está incorreta: converte 20 cm em 0,02 m em vez de 0,20 m.",
@@ -2801,6 +3048,14 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "Como σ = F / S, reduzir a secção a metade, com a mesma força, duplica a tensão: 2400 / (3 × 10⁻⁴) = 8 × 10⁶ N/m².",
+    "solution": [
+      "Dados: F = 2400 N; S<sub>1</sub> = 6 cm² (σ<sub>1</sub> = 4 × 10⁶ N/m²); S<sub>2</sub> = 3 cm²; σ<sub>2</sub> = ?",
+      "Conversão: S<sub>2</sub> = 3 cm² = 3 × 10⁻⁴ m²",
+      "Fórmula: σ<sub>2</sub> = F / S<sub>2</sub>",
+      "Substituição: σ<sub>2</sub> = 2400 / (3 × 10⁻⁴)",
+      "Resultado: σ<sub>2</sub> = 8 × 10⁶ N/m²",
+      "Conclusão: com a mesma força e metade da área, a tensão duplica."
+    ],
     "distractorAnalysis": [
       "Está incorreta: a tensão é F / S, pelo que depende da área; ao reduzir S, a tensão muda.",
       "Está incorreta: reduzir a área aumenta a tensão, em vez de a diminuir, pois σ = F / S.",
@@ -2820,6 +3075,12 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 0,
     "explanation": "O peso é 2400 / 3 = 800 N, e a massa é m = P / g = 800 / 9,8 ≈ 82 kg.",
+    "solution": [
+      "Dados: F = 2400 N = 3 × P; g = 9,8 m/s²; m = ?",
+      "Fórmula: P = F / 3; m = P / g",
+      "Substituição: P = 2400 / 3 = 800 N; m = 800 / 9,8",
+      "Resultado: m ≈ 82 kg"
+    ],
     "distractorAnalysis": [
       "Está incorreta: esquece o fator 3 e divide os 2400 N diretamente por g.",
       "Está incorreta: multiplica por 3 em vez de dividir, e depois divide por g.",
@@ -2850,6 +3111,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2350,
     "topicId": 2,
     "question": "Um tendão de Aquiles tem secção de 0,80 cm² e rompe quando a tensão de tração atinge cerca de 1,0 × 10⁸ N/m². Qual é, aproximadamente, a força de tração máxima que suporta?",
+    "figure": {"type": "bar", "mode": "traction", "F": "F = ?", "inside": ["A = 0,80 cm²", "σ = 1,0 × 10⁸ N/m²"], "alt": "Tendão de Aquiles tracionado, com secção de 0,80 cm² e tensão de rotura de 1,0 × 10⁸ N/m²; pede-se a força máxima."},
     "options": [
       "8,0 × 10⁵ N",
       "1,25 × 10¹² N",
@@ -2858,6 +3120,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 3,
     "explanation": "Como σ = F / A, a força é F = σ · A. Convertendo a área: 0,80 cm² = 0,80 × 10⁻⁴ m². Então F = 1,0 × 10⁸ × 0,80 × 10⁻⁴ = 8,0 × 10³ N, o que corresponde a cerca de 10 vezes o peso de um adulto de 80 kg (≈ 784 N).",
+    "solution": [
+      "Dados: A = 0,80 cm²; σ = 1,0 × 10⁸ N/m²; F = ?",
+      "Conversão: 0,80 cm² = 0,80 × 10⁻⁴ m² = 8,0 × 10⁻⁵ m²",
+      "Fórmula: F = σ · A",
+      "Substituição: F = 1,0 × 10⁸ × 8,0 × 10⁻⁵",
+      "Resultado: F = 8,0 × 10³ N"
+    ],
     "distractorAnalysis": [
       "Está incorreta: resulta de converter 1 cm² em 10⁻² m² em vez de 10⁻⁴ m², obtendo uma força 100 vezes maior.",
       "Está incorreta: resulta de dividir a tensão pela área (σ / A) em vez de multiplicar; F = σ · A.",
@@ -3048,6 +3317,12 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 3,
     "explanation": "ε = σ / E = 5,0 × 10⁴ / 1,0 × 10⁶ = 0,050, ou seja, 5,0 % (valor adimensional).",
+    "solution": [
+      "Dados: E = 1,0 × 10⁶ N/m²; σ = 5,0 × 10⁴ N/m²; ε = ?",
+      "Fórmula: ε = σ / E",
+      "Substituição: ε = 5,0 × 10⁴ / (1,0 × 10⁶)",
+      "Resultado: ε = 0,050 (5,0 %)"
+    ],
     "distractorAnalysis": [
       "Está incorreta: divide E por σ (E / σ), em vez de σ por E.",
       "Está incorreta: erra o expoente ao dividir as potências de 10 (10⁴ / 10⁶ tomado como 10⁻¹ em vez de 10⁻²), o que dá um valor 10 vezes maior.",
@@ -3067,6 +3342,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "Como ε = σ / E, com σ igual, ε<sub>jovem</sub> / ε<sub>idoso</sub> = E<sub>idoso</sub> / E<sub>jovem</sub> = 4.",
+    "solution": [
+      "Dados: E<sub>jovem</sub> = 1,0 × 10⁶ N/m²; E<sub>idoso</sub> = 4,0 × 10⁶ N/m²; mesma σ",
+      "Fórmula: ε = σ / E, logo ε<sub>jovem</sub> / ε<sub>idoso</sub> = E<sub>idoso</sub> / E<sub>jovem</sub>",
+      "Substituição: ε<sub>jovem</sub> / ε<sub>idoso</sub> = 4,0 × 10⁶ / (1,0 × 10⁶)",
+      "Resultado: ε<sub>jovem</sub> / ε<sub>idoso</sub> = 4",
+      "Conclusão: a artéria jovem deforma-se 4 vezes mais."
+    ],
     "distractorAnalysis": [
       "Está incorreta: inverte a relação: como ε = σ / E, o maior módulo (idoso) dá menor deformação.",
       "Está incorreta: módulos de Young diferentes implicam deformações diferentes para a mesma tensão.",
@@ -3219,6 +3501,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 3,
     "explanation": "Pela lei de Hooke, k = F / x, com x = 3,0 cm = 0,030 m; k = 12 / 0,030 = 400 N/m.",
+    "solution": [
+      "Dados: x = 3,0 cm; F = 12 N; k = ?",
+      "Conversão: x = 3,0 cm = 0,030 m",
+      "Fórmula: k = F / x",
+      "Substituição: k = 12 / 0,030",
+      "Resultado: k = 400 N/m"
+    ],
     "distractorAnalysis": [
       "Está incorreta: usa 3,0 em vez de 0,030 m no denominador (12 / 3,0), esquecendo-se de converter cm em m.",
       "Está incorreta: multiplica a força pelo alongamento em metros (12 × 0,030), em vez de dividir.",
@@ -3238,6 +3527,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "F = k · x = 250 × 0,06 = 15 N.",
+    "solution": [
+      "Dados: k = 250 N/m; x = 6 cm; F = ?",
+      "Conversão: x = 6 cm = 0,06 m",
+      "Fórmula: F = k · x",
+      "Substituição: F = 250 × 0,06",
+      "Resultado: F = 15 N"
+    ],
     "distractorAnalysis": [
       "Está incorreta: usa 6 em vez de 0,06 m, esquecendo-se de converter cm em m.",
       "Está incorreta: divide k por x (250 / 6), em vez de multiplicar.",
@@ -3257,6 +3553,12 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "x = F / k = 30 / 600 = 0,050 m = 5,0 cm.",
+    "solution": [
+      "Dados: k = 600 N/m; F = 30 N; x = ?",
+      "Fórmula: x = F / k",
+      "Substituição: x = 30 / 600 = 0,050 m",
+      "Resultado: x = 0,050 m = 5,0 cm"
+    ],
     "distractorAnalysis": [
       "Está incorreta: divide k por F (600 / 30), em vez de F / k.",
       "Está incorreta: multiplica F por k, em vez de dividir.",
@@ -3276,6 +3578,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "σ = F / S, com S = 2 cm² = 2 × 10⁻⁴ m². Logo σ = 800 / (2 × 10⁻⁴) = 4 × 10⁶ N/m².",
+    "solution": [
+      "Dados: F = 800 N; S = 2 cm²; σ = ?",
+      "Conversão: 2 cm² = 2 × 10⁻⁴ m²",
+      "Fórmula: σ = F / S",
+      "Substituição: σ = 800 / (2 × 10⁻⁴)",
+      "Resultado: σ = 4 × 10⁶ N/m²"
+    ],
     "distractorAnalysis": [
       "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 4 × 10⁴ N/m².",
       "Está incorreta: converte 1 cm² como 10⁻⁶ m², o que dá 4 × 10⁸ N/m².",
@@ -3295,6 +3604,12 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "E = σ / ε = 3,0 × 10⁶ / 0,0020 = 1,5 × 10⁹ N/m².",
+    "solution": [
+      "Dados: σ = 3,0 × 10⁶ N/m²; ε = 0,0020; E = ?",
+      "Fórmula: E = σ / ε",
+      "Substituição: E = 3,0 × 10⁶ / 0,0020",
+      "Resultado: E = 1,5 × 10⁹ N/m²"
+    ],
     "distractorAnalysis": [
       "Está incorreta: multiplica a tensão pela deformação (σ · ε), em vez de dividir.",
       "Está incorreta: divide a deformação pela tensão (ε / σ), em vez de σ / ε.",
@@ -3314,6 +3629,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "σ = E · ε = 1,0 × 10⁹ × 0,010 = 1,0 × 10⁷ N/m²; F = σ · S = 1,0 × 10⁷ × 3,0 × 10⁻⁴ = 3,0 × 10³ N.",
+    "solution": [
+      "Dados: E = 1,0 × 10⁹ N/m²; S = 3,0 cm²; ε = 0,010; F = ?",
+      "Conversão: 3,0 cm² = 3,0 × 10⁻⁴ m²",
+      "Fórmula: σ = E · ε; F = σ · S",
+      "Substituição: σ = 1,0 × 10⁹ × 0,010 = 1,0 × 10⁷ N/m²; F = 1,0 × 10⁷ × 3,0 × 10⁻⁴",
+      "Resultado: F = 3,0 × 10³ N"
+    ],
     "distractorAnalysis": [
       "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 3,0 × 10⁵ N.",
       "Está incorreta: usa a área como 3,0 m², esquecendo-se de converter cm² em m².",
@@ -3325,6 +3647,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2375,
     "topicId": 2,
     "question": "Um ligamento de 4,0 cm alonga 0,2 cm e tem E = 2,0 × 10⁸ N/m², no regime elástico. Qual é a tensão aplicada?",
+    "figure": {"type": "bar", "mode": "traction", "F": "F", "inside": ["E = 2,0 × 10⁸ N/m²", "σ = ?"], "L0": "L<sub>0</sub> = 4,0 cm", "dL": "ΔL = 0,2 cm", "alt": "Ligamento tracionado com comprimento inicial de 4,0 cm, alongamento de 0,2 cm e módulo de Young de 2,0 × 10⁸ N/m²; pede-se a tensão."},
     "options": [
       "1,0 × 10⁷ N/m²",
       "4,0 × 10⁹ N/m²",
@@ -3333,6 +3656,12 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 0,
     "explanation": "ε = ΔL / L<sub>0</sub> = 0,2 / 4,0 = 0,05; σ = E · ε = 2,0 × 10⁸ × 0,05 = 1,0 × 10⁷ N/m².",
+    "solution": [
+      "Dados: L<sub>0</sub> = 4,0 cm; ΔL = 0,2 cm; E = 2,0 × 10⁸ N/m²; σ = ?",
+      "Fórmula: ε = ΔL / L<sub>0</sub>; σ = E · ε",
+      "Substituição: ε = 0,2 / 4,0 = 0,05; σ = 2,0 × 10⁸ × 0,05",
+      "Resultado: σ = 1,0 × 10⁷ N/m²"
+    ],
     "distractorAnalysis": [
       "Está incorreta: divide E por ε (E / ε), em vez de multiplicar.",
       "Está incorreta: mistura unidades no quociente, usando ΔL em mm (2 mm) e L<sub>0</sub> em cm (4,0), o que dá ε = 0,5.",
@@ -3352,6 +3681,12 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 1,
     "explanation": "P = m · g = 15 × 9,8 = 147 N; x = F / k = 147 / 490 = 0,30 m.",
+    "solution": [
+      "Dados: m = 15 kg; k = 490 N/m; g = 9,8 m/s²; x = ?",
+      "Fórmula: P = m · g; em equilíbrio F = P, logo x = P / k",
+      "Substituição: P = 15 × 9,8 = 147 N; x = 147 / 490",
+      "Resultado: x = 0,30 m"
+    ],
     "distractorAnalysis": [
       "Está incorreta: usa a massa (15 kg) em vez do peso (147 N), esquecendo-se de multiplicar por g.",
       "Está incorreta: divide k pela força (490 / 147), em vez de F / k.",
@@ -3370,7 +3705,13 @@ const TOPIC_2_QUESTIONS = [
       "5,0 cm"
     ],
     "correctIndex": 3,
-    "explanation": "Como F é proporcional a x, x₂ = x₁ · (F₂ / F₁) = 2,0 × (25 / 10) = 5,0 cm.",
+    "explanation": "Como F é proporcional a x, x<sub>2</sub> = x<sub>1</sub> · (F<sub>2</sub> / F<sub>1</sub>) = 2,0 × (25 / 10) = 5,0 cm.",
+    "solution": [
+      "Dados: x<sub>1</sub> = 2,0 cm; F<sub>1</sub> = 10 N; F<sub>2</sub> = 25 N; x<sub>2</sub> = ?",
+      "Fórmula: x proporcional a F: x<sub>2</sub> = x<sub>1</sub> · F<sub>2</sub> / F<sub>1</sub>",
+      "Substituição: x<sub>2</sub> = 2,0 × 25 / 10",
+      "Resultado: x<sub>2</sub> = 5,0 cm"
+    ],
     "distractorAnalysis": [
       "Está incorreta: inverte a proporção (2,0 × 10 / 25), em vez de multiplicar pela razão 25 / 10.",
       "Está incorreta: divide 25 por 2,0, em vez de usar a proporcionalidade entre F e x.",
@@ -3390,6 +3731,12 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 0,
     "explanation": "18 × 10⁹ = 1,8 × 10 × 10⁹ = 1,8 × 10¹⁰ N/m².",
+    "solution": [
+      "Dados: E = 18 × 10⁹ N/m²",
+      "Fórmula: 18 = 1,8 × 10¹; 10<sup>a</sup> × 10<sup>b</sup> = 10<sup>a+b</sup>",
+      "Substituição: E = 1,8 × 10¹ × 10⁹ N/m²",
+      "Resultado: E = 1,8 × 10¹⁰ N/m²"
+    ],
     "distractorAnalysis": [
       "Está incorreta: troca 10⁹ por 10⁶ ao passar para notação científica (18 × 10⁶ = 1,8 × 10⁷).",
       "Está incorreta: usa 10¹² em vez de 10⁹ (18 × 10¹² = 1,8 × 10¹³).",
@@ -3401,6 +3748,7 @@ const TOPIC_2_QUESTIONS = [
     "id": 2379,
     "topicId": 2,
     "question": "O osso cortical suporta cerca de 2,0 × 10⁸ N/m² em compressão. Qual é a força máxima de compressão numa secção de 3 cm²?",
+    "figure": {"type": "bar", "mode": "compression", "F": "F = ?", "inside": ["S = 3 cm²", "σ = 2,0 × 10⁸ N/m²"], "alt": "Osso cortical comprimido com secção de 3 cm² e tensão máxima de 2,0 × 10⁸ N/m²; pede-se a força máxima."},
     "options": [
       "6 × 10⁶ N",
       "6 × 10² N",
@@ -3409,6 +3757,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 3,
     "explanation": "F = σ · S = 2,0 × 10⁸ × 3 × 10⁻⁴ = 6 × 10⁴ N.",
+    "solution": [
+      "Dados: σ = 2,0 × 10⁸ N/m²; S = 3 cm²; F = ?",
+      "Conversão: 3 cm² = 3 × 10⁻⁴ m²",
+      "Fórmula: F = σ · S",
+      "Substituição: F = 2,0 × 10⁸ × 3 × 10⁻⁴",
+      "Resultado: F = 6 × 10⁴ N"
+    ],
     "distractorAnalysis": [
       "Está incorreta: converte 1 cm² como 10⁻² m², o que dá 6 × 10⁶ N.",
       "Está incorreta: converte 1 cm² como 10⁻⁶ m², o que dá 6 × 10² N.",
@@ -3523,6 +3878,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "ε = σ / E, logo ε<sub>tendão</sub> / ε<sub>osso</sub> = E<sub>osso</sub> / E<sub>tendão</sub> = 2 × 10¹⁰ / 1 × 10⁹ = 20.",
+    "solution": [
+      "Dados: σ = 4 × 10⁶ N/m²; E<sub>tendão</sub> = 1 × 10⁹ N/m²; E<sub>osso</sub> = 2 × 10¹⁰ N/m²",
+      "Fórmula: ε = σ / E, logo ε<sub>tendão</sub> / ε<sub>osso</sub> = E<sub>osso</sub> / E<sub>tendão</sub>",
+      "Substituição: ε<sub>tendão</sub> / ε<sub>osso</sub> = 2 × 10¹⁰ / (1 × 10⁹)",
+      "Resultado: ε<sub>tendão</sub> / ε<sub>osso</sub> = 20",
+      "Conclusão: o tendão deforma-se 20 vezes mais do que o osso."
+    ],
     "distractorAnalysis": [
       "Está incorreta: divide 2 × 10¹⁰ por 1 × 10⁹ e obtém 2, esquecendo-se da diferença entre as potências de 10.",
       "Está incorreta: interpreta 10¹⁰ / 10⁹ como 10², obtendo 200.",
@@ -3542,6 +3904,12 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 0,
     "explanation": "Da lei σ = E · ε, ε = σ / E = 4,0 × 10⁶ / 2,0 × 10¹⁰ = 2,0 × 10⁻⁴ (adimensional).",
+    "solution": [
+      "Dados: E = 2,0 × 10¹⁰ N/m²; σ = 4,0 × 10⁶ N/m²; ε = ?",
+      "Fórmula: ε = σ / E",
+      "Substituição: ε = 4,0 × 10⁶ / (2,0 × 10¹⁰)",
+      "Resultado: ε = 2,0 × 10⁻⁴"
+    ],
     "distractorAnalysis": [
       "Está incorreta: multiplica σ por E em vez de os dividir, o que dá 8,0 × 10¹⁶.",
       "Está incorreta: inverte a razão, calculando E / σ = 2,0 × 10¹⁰ / 4,0 × 10⁶ = 5,0 × 10³.",
@@ -3561,6 +3929,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "Como 1 cm = 0,01 m, 1 N/cm = 100 N/m; logo 0,50 N/cm = 50 N/m.",
+    "solution": [
+      "Dados: k = 0,50 N/cm",
+      "Conversão: 1 cm = 0,01 m, logo 1 N/cm = 1 N / 0,01 m = 100 N/m",
+      "Fórmula: k (N/m) = k (N/cm) × 100",
+      "Substituição: k = 0,50 × 100",
+      "Resultado: k = 50 N/m"
+    ],
     "distractorAnalysis": [
       "Está incorreta: divide por 100 em vez de multiplicar, ao converter cm em m.",
       "Está incorreta: não converte a unidade: 0,50 N/cm não é igual a 0,50 N/m.",
@@ -3618,6 +3993,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 3,
     "explanation": "P = m · g = 4,0 × 9,8 = 39,2 N; S = 2,0 mm² = 2,0 × 10⁻⁶ m²; σ = 39,2 / (2,0 × 10⁻⁶) ≈ 2,0 × 10⁷ N/m².",
+    "solution": [
+      "Dados: m = 4,0 kg; S = 2,0 mm²; g = 9,8 m/s²; σ = ?",
+      "Conversão: 2,0 mm² = 2,0 × 10⁻⁶ m²",
+      "Fórmula: P = m · g; σ = P / S",
+      "Substituição: P = 4,0 × 9,8 = 39,2 N; σ = 39,2 / (2,0 × 10⁻⁶)",
+      "Resultado: σ ≈ 2,0 × 10⁷ N/m²"
+    ],
     "distractorAnalysis": [
       "Está incorreta: usa a massa (4,0 kg) em vez do peso (39,2 N), esquecendo-se de multiplicar por g.",
       "Está incorreta: converte 1 mm² como 10⁻³ m², o que dá 2,0 × 10⁴ N/m².",
@@ -3637,6 +4019,12 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "A razão é 2 × 10¹⁰ / 1 × 10⁷ = 2 × 10³ = 2000: quanto maior o módulo de Young, maior a rigidez.",
+    "solution": [
+      "Dados: E<sub>osso</sub> = 2 × 10¹⁰ N/m²; E<sub>borracha</sub> = 1 × 10⁷ N/m²",
+      "Fórmula: razão = E<sub>osso</sub> / E<sub>borracha</sub>",
+      "Substituição: razão = 2 × 10¹⁰ / (1 × 10⁷)",
+      "Resultado: razão = 2 × 10³ = 2000 vezes"
+    ],
     "distractorAnalysis": [
       "Está incorreta: perde uma potência de 10 ao dividir 2 × 10¹⁰ por 1 × 10⁷.",
       "Está incorreta: ganha uma potência de 10 ao dividir 2 × 10¹⁰ por 1 × 10⁷.",
@@ -3732,6 +4120,13 @@ const TOPIC_2_QUESTIONS = [
     ],
     "correctIndex": 2,
     "explanation": "Com σ = F / A e 7,0 cm² = 7,0 × 10⁻⁴ m²: σ = 700 / 7,0 × 10⁻⁴ = 1,0 × 10⁶ N/m². Antes, com 10 cm², era 700 / 1,0 × 10⁻³ = 7,0 × 10⁵ N/m². Com a mesma força e menos osso, a tensão aumenta cerca de 1,4 vezes.",
+    "solution": [
+      "Dados: F = 700 N; A = 7,0 cm² (antes, 10 cm²); σ = ?",
+      "Conversão: 7,0 cm² = 7,0 × 10⁻⁴ m²",
+      "Fórmula: σ = F / A",
+      "Substituição: σ = 700 / (7,0 × 10⁻⁴)",
+      "Resultado: σ = 1,0 × 10⁶ N/m²"
+    ],
     "distractorAnalysis": [
       "Está incorreta: resulta de multiplicar a tensão inicial pela fração de osso restante (7,0 × 10⁵ × 0,7), como se menos osso desse menos tensão; a tensão é inversamente proporcional à área.",
       "Está incorreta: é a tensão inicial, com 10 cm²; ignora que a mesma força passa a atuar sobre uma área menor.",
@@ -3814,5 +4209,96 @@ const TOPIC_2_QUESTIONS = [
       "Está incorreta: N/mm² é força por unidade de área e pode ser usado (1 N/mm² = 10⁶ N/m²)."
     ],
     "nursingApplication": "Ao ler fichas técnicas de dispositivos de pressão, convém verificar sempre se a área está em m², cm² ou mm², porque os valores diferem por potências de dez."
+  },
+  {
+    "id": 2401,
+    "topicId": 2,
+    "question": "A diáfise da tíbia de um adulto tem uma secção de osso cortical de 4,0 cm². Em apoio unipodal, atua sobre ela uma força de compressão de 800 N. Qual é a tensão de compressão no osso?",
+    "figure": {"type": "bar", "mode": "compression", "F": "F = 800 N", "inside": ["S = 4,0 cm²", "σ = ?"], "alt": "Diáfise da tíbia comprimida por 800 N numa secção de 4,0 cm²; pede-se a tensão."},
+    "options": [
+      "2,0 × 10² N/m²",
+      "2,0 × 10⁶ N/m²",
+      "2,0 × 10⁴ N/m²",
+      "3,2 × 10⁻¹ N/m²"
+    ],
+    "correctIndex": 1,
+    "explanation": "A tensão é a força por unidade de área: σ = F / S. Com S = 4,0 cm² = 4,0 × 10⁻⁴ m², obtém-se σ = 800 / (4,0 × 10⁻⁴) = 2,0 × 10⁶ N/m².",
+    "solution": [
+      "Dados: F = 800 N; S = 4,0 cm²; σ = ?",
+      "Conversão: 4,0 cm² = 4,0 × 10⁻⁴ m²",
+      "Fórmula: σ = F / S",
+      "Substituição: σ = 800 / (4,0 × 10⁻⁴)",
+      "Resultado: σ = 2,0 × 10⁶ N/m²"
+    ],
+    "distractorAnalysis": [
+      "Está incorreta: resulta de dividir 800 por 4,0 sem converter a área; no SI a área tem de estar em m².",
+      "Está incorreta: resulta de converter 4,0 cm² como 4,0 × 10⁻² m²; como 1 cm = 10⁻² m, 1 cm² = 10⁻⁴ m².",
+      "Está incorreta: resulta de multiplicar a força pela área (800 × 4,0 × 10⁻⁴) em vez de dividir; a tensão é σ = F / S."
+    ],
+    "nursingApplication": "Na marcha com carga parcial após fratura da tíbia, o enfermeiro ensina o uso de canadianas, que reduzem a força de compressão e, assim, a tensão sobre o osso em consolidação."
+  },
+  {
+    "id": 2402,
+    "topicId": 2,
+    "question": "Um exercitador de mão com mola é apertado com uma força de 45 N e a mola encurta 1,5 cm, dentro do limite de proporcionalidade. Qual é a constante elástica da mola?",
+    "options": [
+      "30 N/m",
+      "6,8 × 10⁻¹ N/m",
+      "3,0 × 10⁵ N/m",
+      "3,0 × 10³ N/m"
+    ],
+    "correctIndex": 3,
+    "explanation": "Pela lei de Hooke, F = k · x, logo k = F / x. Com x = 1,5 cm = 0,015 m, obtém-se k = 45 / 0,015 = 3,0 × 10³ N/m.",
+    "solution": [
+      "Dados: F = 45 N; x = 1,5 cm; k = ?",
+      "Conversão: x = 1,5 cm = 0,015 m",
+      "Fórmula: k = F / x",
+      "Substituição: k = 45 / 0,015",
+      "Resultado: k = 3,0 × 10³ N/m"
+    ],
+    "distractorAnalysis": [
+      "Está incorreta: resulta de dividir 45 por 1,5 sem converter o encurtamento para metros; k exprime-se em N/m.",
+      "Está incorreta: resulta de multiplicar a força pelo encurtamento; pela lei de Hooke, k = F / x.",
+      "Está incorreta: resulta de converter 1,5 cm como 1,5 × 10⁻⁴ m; como 1 cm = 10⁻² m, 1,5 cm = 1,5 × 10⁻² m."
+    ],
+    "nursingApplication": "Na reabilitação da mão, exercitadores com molas de constante elástica diferente permitem graduar a força de preensão pedida ao utente."
+  },
+  {
+    "id": 2403,
+    "topicId": 2,
+    "question": "Com a cabeceira elevada, um utente desliza ligeiramente para os pés da cama: a pele do sacro fica retida no lençol pelo atrito, enquanto o esqueleto desliza com o tronco. Que tipo de deformação sofrem os tecidos moles da região sacral?",
+    "options": [
+      "Cisalhamento, com forças paralelas à superfície em sentidos opostos.",
+      "Tração, com forças que esticam os tecidos ao longo do seu eixo.",
+      "Compressão pura, porque só atua a força normal exercida pelo colchão.",
+      "Torção, porque a pele roda em torno do eixo longitudinal do corpo."
+    ],
+    "correctIndex": 0,
+    "explanation": "No cisalhamento, forças paralelas à superfície e de sentidos opostos fazem deslizar camadas umas sobre as outras: o lençol retém a pele pelo atrito e o esqueleto desliza com o peso do tronco, deformando os tecidos profundos e distorcendo os vasos.",
+    "distractorAnalysis": [
+      "Está incorreta: na tração as forças atuam ao longo do eixo e afastam as extremidades; aqui as forças são paralelas à superfície e fazem deslizar as camadas.",
+      "Está incorreta: a força normal do colchão comprime os tecidos, mas o deslizamento do esqueleto em relação à pele acrescenta forças paralelas à superfície.",
+      "Está incorreta: a torção resulta de momentos que rodam o corpo em torno do seu eixo; aqui as camadas deslizam paralelamente umas às outras, sem rotação."
+    ],
+    "nursingApplication": "Limitar a elevação da cabeceira a 30°, quando a situação clínica o permite, e usar dispositivos de deslizamento no reposicionamento reduz o cisalhamento sobre o sacro (EPUAP/NPIAP 2019)."
+  },
+  {
+    "id": 2404,
+    "topicId": 2,
+    "question": "Uma ligadura de compressão elástica é aplicada num membro e mantida com o mesmo alongamento durante várias horas. Ao fim desse tempo, a força que exerce diminuiu, embora o alongamento se tenha mantido. Que comportamento do material explica esta observação?",
+    "options": [
+      "Sólido de Hooke: a força mantém-se constante para o mesmo alongamento.",
+      "Sólido de Euclides: o material é rígido e não se deforma sob a força.",
+      "Viscoelástico: a tensão diminui com o tempo, sem mudar a deformação.",
+      "Corpo plástico: deixa de exercer qualquer força assim que é deformado."
+    ],
+    "correctIndex": 2,
+    "explanation": "Os materiais viscoelásticos combinam comportamento elástico e viscoso: mantidos com a mesma deformação, a tensão, e com ela a força exercida, diminui progressivamente com o tempo (relaxação de tensões).",
+    "distractorAnalysis": [
+      "Está incorreta: num sólido de Hooke a força depende só do alongamento e manter-se-ia constante; a diminuição com o tempo revela comportamento viscoso.",
+      "Está incorreta: um sólido de Euclides é indeformável, mas a ligadura foi alongada e exerce uma força elástica.",
+      "Está incorreta: um corpo plástico não recupera a forma, mas a ligadura continua a exercer força; esta diminui gradualmente, e não de imediato."
+    ],
+    "nursingApplication": "As ligaduras de compressão perdem pressão ao longo do tempo, pelo que a pressão de interface e o membro devem ser reavaliados e a ligadura reaplicada quando necessário."
   }
 ];

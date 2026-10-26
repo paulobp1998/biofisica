@@ -22,6 +22,13 @@ Os alunos enviam apenas dados **anónimos**: um identificador aleatório por nav
 
 Para ver o painel: área do docente (PIN) → **📊 Métricas de Utilização** → introduza a chave do passo 3. Fica guardada só no seu computador (botão **🔑 Alterar chave** para a mudar).
 
+## Reportes e perguntas a rever
+
+- Os alunos podem carregar em **🚩 Reportar problema** depois de responder (ou na revisão dos resultados). Escolhem o motivo e, se quiserem, escrevem um comentário curto. O reporte é anónimo e fica na folha `reportes`. Cada navegador pode enviar no máximo 10 reportes por dia, um por pergunta.
+- No painel, **Perguntas a rever** sinaliza as perguntas com reportes, com acerto abaixo de 30 % ou acima de 95 %, ou com um distrator escolhido por tanta gente como a resposta certa (ou por 40 % ou mais). Os sinais de acerto e de distratores só aparecem com pelo menos 10 respostas por pergunta.
+- Para os distratores, cada sessão envia também a opção escolhida (coluna `choices` da folha `eventos`, na ordem das opções no banco de perguntas).
+- **Depois de atualizar o `Code.gs`, é preciso criar uma nova versão da implementação** (ver a nota abaixo). Até lá, os reportes não ficam guardados e a coluna `choices` não é preenchida; o resto das métricas continua a funcionar.
+
 ## Notas
 
 - Os dados em bruto estão também diretamente na folha `eventos`, se quiser exportar para Excel.
