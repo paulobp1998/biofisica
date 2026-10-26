@@ -58,7 +58,7 @@ const Metrics = (() => {
 
   // Chamado no fim do teste (ou ao interromper, com partial = true)
   function trackSession(quiz, summary, partial) {
-    const answered = (quiz.userAnswers || []).filter(Boolean);
+    const answered = (quiz.userAnswers || []).filter(a => a && !a.isRetry);
     if (!answered.length || quiz.userAnswers === lastSentAnswers) return;
     lastSentAnswers = quiz.userAnswers;
 

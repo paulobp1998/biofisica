@@ -4807,3 +4807,29 @@ mark {
 
 /* Índices e expoentes de fórmulas (F<sub>P</sub>): não alteram a altura da linha */
 sub, sup { line-height: 0; }
+
+/* Revisão dos resultados: respostas certas recolhidas */
+.review-correct-fold { margin-top: 1rem; }
+.review-correct-fold > summary { cursor: pointer; font-weight: 600; color: var(--text-secondary); padding: 0.6rem 0; }
+.review-correct-fold[open] > summary { margin-bottom: 0.75rem; }
+
+/* Esquemas SVG dos conceitos (js/study-figures.js) */
+.study-figure { margin: 0.9rem 0; text-align: center; }
+.study-figure svg { width: 100%; max-width: 520px; height: auto; color: var(--text-primary); }
+.study-figure svg text { fill: currentColor; }
+.study-figure figcaption { font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.35rem; }
+.study-figure .f-line { stroke: currentColor; fill: none; }
+.study-figure .f-body { fill: var(--bg-subtle); stroke: currentColor; stroke-width: 1.4; }
+.study-figure .f-ground { fill: var(--bg-subtle); stroke: currentColor; stroke-width: 1.4; }
+.study-figure .f-cortical { fill: var(--color-warning-light); stroke: currentColor; stroke-width: 1.4; }
+.study-figure .f-beam { fill: none; stroke: currentColor; stroke-width: 6; stroke-linecap: round; }
+.study-figure .f-loop { fill: var(--color-brand-light); stroke: var(--color-brand); stroke-width: 2.2; }
+.study-figure .f-st-pot { stroke: var(--color-brand); }
+.study-figure .f-st-res { stroke: var(--color-danger); }
+.study-figure .f-st-ok { stroke: var(--color-success); }
+.study-figure .f-st-neu { stroke: var(--text-muted); }
+.study-figure .f-st-warn { stroke: var(--color-warning); }
+.study-figure .f-fill-res { fill: var(--color-danger); }
+.study-figure .f-fill-neu { fill: var(--text-muted); }
+.study-figure .f-fill-pot { fill: var(--color-brand); }
+.study-figure .f-fill-ok { fill: var(--color-success); }
