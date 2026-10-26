@@ -25,8 +25,8 @@ const STUDY_BLOCKS = [
         <li><strong>Força:</strong> grandeza vetorial caracterizada por quatro elementos: módulo (intensidade), direção, sentido e ponto de aplicação. Unidade SI: newton (N).</li>
         <li><strong>Efeitos de uma força:</strong> uma força pode deformar um corpo; se a resultante não for nula, altera também o seu estado de movimento.</li>
         <li><strong>Forças colineares:</strong> com o mesmo sentido somam-se; com sentidos opostos subtraem-se.</li>
-        <li><strong>Massa</strong> (kg, escalar) mede a quantidade de matéria e a inércia de um corpo e não depende do local. O <strong>peso</strong> (N, vetor) é a força com que a Terra atrai o corpo e varia com g (na Lua é cerca de 1/6 do peso na Terra).</li>
-        <li><strong>Pressão</strong> é uma grandeza escalar: p = F / A, em pascal (Pa = N/m²). A força é perpendicular à superfície, mas a pressão não tem direção própria.</li>
+        <li><strong>Massa</strong> (kg, escalar) mede a inércia de um corpo (a sua resistência à variação do movimento) e não depende do local. O <strong>peso</strong> (N, vetor) é a força com que a Terra atrai o corpo e varia com g (na Lua é cerca de 1/6 do peso na Terra).</li>
+        <li><strong>Pressão</strong> é uma grandeza escalar: p = F / A, em pascal (Pa = N/m²). Em p = F / A, F é a componente da força perpendicular à superfície; a pressão não tem direção própria.</li>
       </ul>`,
     pitfall: 'Massa e peso não são a mesma grandeza: a massa mede-se em kg e o peso em N. Diz-se «carga de 15 kg», nunca «peso de 15 kg».',
     nursing: 'O dinamómetro manual mede a força de preensão do utente: o valor lido é uma força (em N; alguns aparelhos apresentam-na em kgf), com direção e sentido.'
@@ -73,7 +73,7 @@ const STUDY_BLOCKS = [
         <li><strong>Reduzir o atrito:</strong> lençóis de transferência ou folhas deslizantes diminuem o esforço ao deslocar um utente acamado.</li>
       </ul>`,
     pitfall: 'O que é maior do que o atrito cinético é o atrito estático máximo (μ<sub>e</sub> · N), e não o atrito estático em qualquer situação. P<sub>n</sub> e P<sub>t</sub> são perpendicular e paralela ao plano, não «vertical» e «horizontal».',
-    nursing: 'Ao elevar a cabeceira da cama, P<sub>t</sub> tende a fazer o utente deslizar para os pés da cama, com atrito e cisalhamento na pele. O calçado antiderrapante assegura um bom coeficiente de atrito estático com o piso.'
+    nursing: 'Ao elevar a cabeceira da cama, P<sub>t</sub> tende a fazer o utente deslizar para os pés da cama, com atrito e cisalhamento na pele. O calçado antiderrapante aumenta o coeficiente de atrito estático com o piso e reduz o risco de escorregar.'
   },
   {
     id: 't1-equilibrio',
@@ -88,7 +88,7 @@ const STUDY_BLOCKS = [
       <ul>
         <li><strong>Equilíbrio mecânico:</strong> um corpo extenso só está em equilíbrio quando a resultante das forças <em>e</em> a soma dos momentos são nulas.</li>
         <li><strong>Equilíbrio estável:</strong> ao ser afastado, o corpo regressa à posição inicial (esfera no fundo de uma taça). <strong>Instável:</strong> afasta-se ainda mais (caneta apoiada na ponta). <strong>Indiferente:</strong> mantém a nova posição (bola num piso plano).</li>
-        <li><strong>Centro de gravidade (CG):</strong> ponto de aplicação do peso do corpo. Num adulto em pé situa-se anterior à 2.ª vértebra sagrada (S2), e nas crianças pequenas é mais alto, porque a cabeça é proporcionalmente maior.</li>
+        <li><strong>Centro de gravidade (CG):</strong> ponto de aplicação do peso do corpo. Num adulto em pé situa-se anterior à 2.ª vértebra sagrada (S2), e nas crianças pequenas situa-se proporcionalmente mais alto (em relação à estatura), porque a cabeça é proporcionalmente maior.</li>
         <li><strong>Base de sustentação (BS):</strong> região delimitada pelos pontos de apoio no solo, incluindo o espaço entre eles.</li>
         <li><strong>Maior margem de estabilidade:</strong>
           <ul>
@@ -100,7 +100,7 @@ const STUDY_BLOCKS = [
         <li><strong>Dispositivos de apoio</strong> (andarilhos, canadianas) ampliam a base de sustentação.</li>
       </ul>`,
     pitfall: 'F<sub>R</sub> = 0 não garante equilíbrio: um binário de forças tem F<sub>R</sub> = 0 mas M<sub>R</sub> ≠ 0, e faz o corpo rodar. É preciso F<sub>R</sub> = 0 e M<sub>R</sub> = 0.',
-    nursing: 'Ao mobilizar utentes, o enfermeiro afasta os pés e flete os joelhos para baixar o CG e alargar a base de sustentação, e mantém a carga junto ao corpo para a linha de gravidade ficar dentro da base.'
+    nursing: 'Ao mobilizar utentes, o enfermeiro afasta os pés e flete os joelhos para baixar o CG e alargar a base de sustentação, e mantém a carga junto ao corpo para que a linha de gravidade do conjunto enfermeiro + carga fique dentro da base de sustentação.'
   },
   {
     id: 't1-alavancas',
@@ -118,7 +118,7 @@ const STUDY_BLOCKS = [
         <li><strong>Momento de uma força (torque):</strong> mede a capacidade de uma força provocar rotação em torno de um eixo. O <strong>braço</strong> (b) é a distância perpendicular da linha de ação da força ao eixo. Se a linha de ação passar pelo eixo, M = 0.</li>
         <li><strong>Alavanca:</strong> barra rígida que roda em torno de um <strong>fulcro</strong> (ponto de apoio), sob a ação de uma <strong>força potente</strong> F<sub>Potente</sub> (no corpo, a força muscular) e de uma <strong>força resistente</strong> F<sub>Resis.</sub> (peso do segmento ou da carga).</li>
         <li><strong>1.ª classe, interfixa</strong> (F<sub>Potente</sub> – apoio – F<sub>Resis.</sub>): o apoio fica no meio. Ex.: articulação atlanto-occipital, onde os músculos extensores da nuca equilibram a tendência de queda da cabeça para a frente.</li>
-        <li><strong>2.ª classe, inter-resistente</strong> (apoio – F<sub>Resis.</sub> – F<sub>Potente</sub>): a resistência fica no meio e b<sub>Potente</sub> &gt; b<sub>Resis.</sub> (VM &gt; 1). Ex.: elevação na ponta dos pés. É um exemplo discutível: neste modelo a resistência é a força da tíbia sobre o tálus, que é maior do que o peso. Em relação ao tornozelo, o braço do tendão de Aquiles é bem menor do que o do peso, e a tensão no tendão ronda 2 a 2,5 vezes o peso corporal (com uma perna). Apesar de VM &gt; 1, não exige «pouco esforço».</li>
+        <li><strong>2.ª classe, inter-resistente</strong> (apoio – F<sub>Resis.</sub> – F<sub>Potente</sub>): a resistência fica no meio e b<sub>Potente</sub> &gt; b<sub>Resis.</sub> (VM &gt; 1). Ex.: elevação na ponta dos pés (apoio nas cabeças dos metatarsos). É um exemplo discutível: neste modelo a resistência é a força da tíbia sobre o tálus, que é maior do que o peso, e a tensão no tendão de Aquiles ronda 2 a 2,5 vezes o peso corporal (com uma perna). Apesar de VM &gt; 1, não exige «pouco esforço».</li>
         <li><strong>3.ª classe, interpotente</strong> (apoio – F<sub>Potente</sub> – F<sub>Resis.</sub>): a potência fica no meio e b<sub>Potente</sub> &lt; b<sub>Resis.</sub> (VM &lt; 1). É a mais comum no corpo humano (bíceps a fletir o antebraço, com o cotovelo como fulcro): sacrifica força a favor da velocidade e da amplitude de movimento.</li>
       </ul>`,
     pitfall: 'O braço é a distância perpendicular da linha de ação ao fulcro, e não o comprimento do osso. Truque para as classes: a que fica «no meio» dá o nome (1.ª apoio, 2.ª resistência, 3.ª potência).',
@@ -158,9 +158,9 @@ const STUDY_BLOCKS = [
       <ul>
         <li><strong>1. Compressão:</strong> forças convergentes ao longo do eixo; o comprimento diminui e a secção aumenta. Ex.: fémur e corpos vertebrais a suportar o peso do corpo.</li>
         <li><strong>2. Tração:</strong> forças divergentes ao longo do eixo; o comprimento aumenta e a secção diminui. Ex.: tendão durante a contração muscular.</li>
-        <li><strong>3. Flexão:</strong> forças transversais curvam a barra; o lado côncavo fica comprimido e o convexo traciona-se. No <strong>plano neutro</strong>, a meio da espessura, a tensão normal é nula.</li>
+        <li><strong>3. Flexão:</strong> forças transversais curvam a barra; o lado côncavo fica comprimido e o convexo traciona-se. No <strong>plano neutro</strong> (que passa pelo centroide da secção; a meio da espessura numa secção simétrica), a tensão normal é nula.</li>
         <li><strong>4. Cisalhamento (corte):</strong> deformação angular entre camadas paralelas por forças tangenciais de sentidos opostos.</li>
-        <li><strong>5. Torção:</strong> deformação rotacional em torno do eixo longitudinal por um momento torsor; a tensão é nula no eixo e máxima na periferia.</li>
+        <li><strong>5. Torção:</strong> deformação rotacional em torno do eixo longitudinal por um momento torsor; a tensão de corte é nula no eixo e máxima na periferia.</li>
       </ul>`,
     pitfall: 'Tração e compressão são ao longo do eixo; cisalhamento é paralelo às camadas. Forças divergentes = tração, forças convergentes = compressão.',
     nursing: 'Quando o utente desliza na cama com a cabeceira elevada, o atrito e o cisalhamento na interface pele-lençol deformam os tecidos e comprometem a microcirculação da pele, sendo um fator de risco para lesões por pressão.'
@@ -174,21 +174,20 @@ const STUDY_BLOCKS = [
       { expr: 'F = k · ΔL', note: 'lei de Hooke para uma mola (k em N/m)' },
       { expr: 'σ = F / A', note: 'tensão mecânica (Pa)' },
       { expr: 'ε = ΔL / L₀', note: 'deformação relativa (sem unidades)' },
-      { expr: 'σ = E · ε', note: 'lei de Hooke generalizada (E em Pa)' },
-      { expr: 'k = E · A / L₀', note: 'relação entre k e E' }
+      { expr: 'σ = E · ε', note: 'lei de Hooke generalizada (E em Pa)' }
     ],
     example: 'Mola com k = 200 N/m e F = 10 N: ΔL = 10 / 200 = 0,05 m (5 cm). Força de 600 N sobre 2,0 × 10⁻⁴ m²: σ = 600 / 2,0×10⁻⁴ = 3,0 × 10⁶ Pa.',
     body: `
       <ul>
         <li><strong>Lei de Hooke (1678), «Ut tensio, sic vis»:</strong> o alongamento (ΔL) é proporcional à força aplicada, até ao limite de proporcionalidade (zona linear do regime elástico).</li>
-        <li><strong>k</strong> mede a rigidez de um <em>corpo</em> com geometria definida: depende do material, do comprimento e da secção.</li>
+        <li><strong>k</strong> (constante elástica, em N/m) mede a rigidez de um <em>corpo</em> concreto, como uma mola: quanto maior k, menor o alongamento para a mesma força.</li>
         <li><strong>E (módulo de Young)</strong> mede a rigidez do <em>material</em>, independentemente da forma. Ordem crescente: borracha &lt; osso &lt; vidro &lt; aço.</li>
-        <li><strong>Valores de referência:</strong> aço 20 × 10¹⁰ Pa; vidro 7 × 10¹⁰ Pa; prata 7,5 × 10¹⁰ Pa; osso 2 × 10¹⁰ Pa (cerca de dez vezes menor que o aço); borracha 0,1 a 10 × 10⁷ Pa.</li>
+        <li><strong>Valores de referência:</strong> aço 20 × 10¹⁰ Pa; vidro 7 × 10¹⁰ Pa; prata 7,5 × 10¹⁰ Pa; osso cortical (longitudinal) cerca de 2 × 10¹⁰ Pa (cerca de dez vezes menor que o aço); borracha 0,1 a 10 × 10⁷ Pa.</li>
         <li><strong>Gráfico σ–ε:</strong> na zona linear, o declive é E. Ultrapassado o limite de proporcionalidade, a relação deixa de ser linear, mas o corpo pode ainda recuperar a forma até ao limite elástico. Acima deste fica com deformação permanente e, por fim, rompe.</li>
         <li><strong>Comparação:</strong> com a mesma tensão, o material de menor E deforma mais. Com a mesma força, uma secção menor dá tensão maior.</li>
       </ul>`,
-    pitfall: 'k depende da geometria do corpo e E é uma propriedade do material. Ao converter: 1 cm² = 10⁻⁴ m², 1 MPa = 10⁶ Pa e 1 GPa = 10⁹ Pa. Não esquecer de passar cm para m.',
-    nursing: 'Os materiais de próteses e fixações devem ter rigidez o mais próxima possível da do osso (o titânio, por exemplo, é bastante mais rígido). As meias de compressão e as ligaduras elásticas funcionam no regime elástico: se forem esticadas em excesso, deixam de recuperar a forma.'
+    pitfall: 'k caracteriza um corpo concreto (em N/m) e E é uma propriedade do material (em Pa). Ao converter: 1 cm² = 10⁻⁴ m², 1 MPa = 10⁶ Pa e 1 GPa = 10⁹ Pa. Não esquecer de passar cm para m.',
+    nursing: 'Nas próteses e fixações procura-se, quando possível, uma rigidez mais próxima da do osso, para reduzir a blindagem de tensões (as ligas de titânio, com cerca de 110 GPa, são várias vezes mais rígidas do que o osso cortical). As meias de compressão e as ligaduras elásticas funcionam no regime elástico: se forem esticadas em excesso, deixam de recuperar a forma.'
   },
   {
     id: 't2-osso',
@@ -198,10 +197,10 @@ const STUDY_BLOCKS = [
     formulas: [],
     body: `
       <ul>
-        <li><strong>Osso, material compósito:</strong> a fase mineral (hidroxiapatite, cerca de 65% do peso seco) dá dureza e resistência à <strong>compressão</strong>; a matriz orgânica (sobretudo colagénio tipo I, cerca de 35%) dá elasticidade, tenacidade e resistência à <strong>tração</strong>.</li>
+        <li><strong>Osso, material compósito:</strong> a fase mineral (hidroxiapatite, cerca de 65% da massa seca) dá dureza e resistência à <strong>compressão</strong>; a matriz orgânica (sobretudo colagénio tipo I, cerca de 35%) dá elasticidade, tenacidade e resistência à <strong>tração</strong>.</li>
         <li><strong>Anisotropia:</strong> as propriedades do osso dependem da direção da carga: o osso cortical é mais rígido e resistente segundo o eixo longitudinal do que na direção transversal.</li>
-        <li><strong>Resistência consoante o tipo de carga:</strong> o osso cortical resiste melhor à compressão longitudinal (130 a 190 MPa), menos à tração axial (80 a 130 MPa) e muito pouco ao cisalhamento e à torção (rotura a 50 a 70 MPa). Daí as fraturas espiroidais da tíbia em torções com o pé bloqueado.</li>
-        <li><strong>Ossos longos tubulares:</strong> o osso concentra-se na periferia, onde as tensões de flexão e torção são máximas, e falta junto ao plano neutro (flexão) e ao eixo central (torção), onde a tensão é nula. Obtém-se grande resistência com pouca massa.</li>
+        <li><strong>Resistência consoante o tipo de carga:</strong> o osso cortical resiste melhor à compressão longitudinal (130 a 190 MPa), menos à tração axial (80 a 130 MPa) e menos ao cisalhamento e à torção (rotura a 50 a 70 MPa). Daí as fraturas espiroidais da tíbia em torções com o pé bloqueado, cuja linha helicoidal, a cerca de 45° do eixo, é perpendicular à direção da tração máxima (a rotura inicia-se por tração).</li>
+        <li><strong>Ossos longos tubulares:</strong> o osso concentra-se na periferia, onde as tensões de flexão e torção são máximas, e falta junto ao eixo central (cavidade medular), por onde passa o plano neutro e onde estas tensões são mínimas ou nulas. Obtém-se grande resistência com pouca massa.</li>
         <li><strong>Cortical vs. trabecular:</strong> o osso cortical é compacto e rígido (E cerca de 14 a 20 GPa); o trabecular é poroso (E aparente cerca de 0,1 a 4 GPa) e amortece os impactos nas epífises.</li>
         <li><strong>Lei de Wolff:</strong> o osso remodela-se em resposta às solicitações mecânicas. Sem carga (ex.: acamamento prolongado) perde massa; as trabéculas orientam-se segundo as linhas de força.</li>
         <li><strong>Osteoporose e prótese de anca:</strong> a perda trabecular fragiliza o colo do fémur. Uma haste metálica muito rígida pode absorver a carga que caberia ao osso (<em>blindagem de tensões</em>), com reabsorção óssea à volta da prótese.</li>
@@ -225,9 +224,9 @@ const CONCEPT_RANGES = {
 const T2_CONCEPT_ALLOCATION = (() => {
   const expand = list => list.flatMap(x => Array.isArray(x) ? Array.from({ length: x[1] - x[0] + 1 }, (_, i) => x[0] + i) : [x]);
   return {
-    't2-reologia': expand([[1, 11], [16, 19], 59, 60, 70, 74, 79, 83, 86, 96, [162, 168], 184, [192, 195]]),
+    't2-reologia': expand([[1, 11], [16, 19], 59, 60, 70, 74, 79, 83, 86, 96, 151, [162, 168], 184, [192, 195]]),
     't2-deformacoes': expand([15, 27, [41, 55], 57, 68, 69, 82, 126, [136, 144], 198]),
-    't2-osso': expand([14, [101, 121], 135, 145, [147, 161], [178, 183], 196, 197])
+    't2-osso': expand([14, [101, 121], 135, 145, [147, 150], [152, 161], [178, 183], 196, 197])
   };
 })();
 
@@ -259,7 +258,7 @@ const GLOSSARY = [
   { t: 'Mecânica', d: 'Ramo da física que estuda as relações entre os movimentos dos corpos e as forças a eles associadas.', c: 't1-forca' },
   { t: 'Força', a: ['vetor', 'grandeza vetorial'], d: 'Grandeza vetorial, caracterizada por módulo, direção, sentido e ponto de aplicação. Unidade SI: newton (N).', c: 't1-forca' },
   { t: 'Newton (N)', a: ['unidade de força'], d: '1 N = 1 kg · m/s²: a força que comunica a um corpo de 1 kg a aceleração de 1 m/s².', c: 't1-forca' },
-  { t: 'Massa', d: 'Medida da quantidade de matéria e da inércia de um corpo. Grandeza escalar, em kg, que não depende do local.', c: 't1-forca' },
+  { t: 'Massa', d: 'Medida da inércia de um corpo (a sua resistência à variação do movimento). Grandeza escalar, em kg, que não depende do local.', c: 't1-forca' },
   { t: 'Peso', a: ['P = m·g', 'gravidade'], d: 'Força com que a Terra atrai um corpo: P = m · g, em N (com g = 9,8 m/s²). Varia com o local, ao contrário da massa.', c: 't1-forca' },
   { t: 'Pressão', a: ['pascal'], d: 'p = F / A, em pascal (Pa = N/m²). É uma grandeza escalar.', c: 't1-forca' },
   { t: 'Dinamómetro', d: 'Instrumento que mede forças. Os de mola baseiam-se na lei de Hooke (alongamento proporcional da mola); os de preensão podem ser hidráulicos ou eletrónicos.', c: 't1-forca' },
@@ -285,7 +284,7 @@ const GLOSSARY = [
   { t: 'Força potente e força resistente', a: ['F<sub>Potente</sub>', 'F<sub>Resis.</sub>', 'potência', 'resistência'], d: 'F<sub>Potente</sub> é a força que move a alavanca (no corpo, a muscular); F<sub>Resis.</sub> é a que se opõe (peso do segmento ou da carga).', c: 't1-alavancas' },
   { t: 'Vantagem mecânica', a: ['VM'], d: 'VM = b<sub>Potente</sub> / b<sub>Resis.</sub>. Maior que 1 favorece a força; menor que 1 favorece a velocidade e a amplitude.', c: 't1-alavancas' },
   { t: 'Alavanca interfixa (1.ª classe)', a: ['1.ª classe', 'interfixa'], d: 'O apoio fica entre a potência e a resistência. Ex.: articulação atlanto-occipital.', c: 't1-alavancas' },
-  { t: 'Alavanca inter-resistente (2.ª classe)', a: ['2.ª classe', 'inter-resistente'], d: 'A resistência fica entre o apoio e a potência (b<sub>Potente</sub> &gt; b<sub>Resis.</sub>). Ex.: carrinho de mão; elevação na ponta dos pés.', c: 't1-alavancas' },
+  { t: 'Alavanca inter-resistente (2.ª classe)', a: ['2.ª classe', 'inter-resistente'], d: 'A resistência fica entre o apoio e a potência (b<sub>Potente</sub> &gt; b<sub>Resis.</sub>). Ex.: carrinho de mão; a elevação na ponta dos pés é um exemplo discutível (a tensão no tendão de Aquiles ronda 2 a 2,5 vezes o peso corporal).', c: 't1-alavancas' },
   { t: 'Alavanca interpotente (3.ª classe)', a: ['3.ª classe', 'interpotente'], d: 'A potência fica entre o apoio e a resistência (b<sub>Potente</sub> &lt; b<sub>Resis.</sub>). Ex.: bíceps no cotovelo. É a mais comum no corpo.', c: 't1-alavancas' },
   { t: 'Reologia', d: 'Estudo das reações dos corpos às forças deformadoras (deformação e escoamento).', c: 't2-reologia' },
   { t: 'Elasticidade', a: ['elástico'], d: 'Propriedade de um corpo recuperar a forma original quando a força deformadora cessa.', c: 't2-reologia' },
@@ -297,14 +296,14 @@ const GLOSSARY = [
   { t: 'Tensão mecânica', a: ['σ', 'stress'], d: 'σ = F / A, em Pa: força por unidade de área da secção.', c: 't2-hooke' },
   { t: 'Deformação relativa', a: ['ε', 'deformação específica'], d: 'ε = ΔL / L₀: grandeza sem unidades.', c: 't2-hooke' },
   { t: 'Lei de Hooke', a: ['Ut tensio, sic vis', 'F = k·ΔL'], d: 'Até ao limite de proporcionalidade, a deformação é proporcional à força: F = k · ΔL, ou σ = E · ε.', c: 't2-hooke' },
-  { t: 'Constante elástica (k)', a: ['k', 'rigidez da mola'], d: 'Rigidez de um corpo concreto, em N/m. Depende do material e da geometria.', c: 't2-hooke' },
+  { t: 'Constante elástica (k)', a: ['k', 'rigidez da mola'], d: 'Rigidez de um corpo concreto (por exemplo, uma mola), em N/m: quanto maior k, menor o alongamento para a mesma força.', c: 't2-hooke' },
   { t: 'Módulo de Young (E)', a: ['E', 'módulo de elasticidade'], d: 'Rigidez do material, em Pa: σ = E · ε. Borracha &lt; osso &lt; vidro &lt; aço.', c: 't2-hooke' },
   { t: 'Compressão', d: 'Forças convergentes ao longo do eixo: o comprimento diminui e a secção aumenta.', c: 't2-deformacoes' },
   { t: 'Tração', a: ['esforço de tração'], d: 'Forças divergentes ao longo do eixo: o comprimento aumenta e a secção diminui.', c: 't2-deformacoes' },
   { t: 'Flexão', d: 'Forças transversais curvam a barra: comprime um lado e traciona o outro.', c: 't2-deformacoes' },
   { t: 'Plano neutro', d: 'Na flexão, camada onde a tensão normal é nula.', c: 't2-deformacoes' },
   { t: 'Cisalhamento', a: ['corte', 'forças tangenciais'], d: 'Deformação angular entre camadas paralelas, por forças tangenciais de sentidos opostos.', c: 't2-deformacoes' },
-  { t: 'Torção', a: ['momento torsor'], d: 'Deformação rotacional em torno do eixo longitudinal; a tensão é máxima na periferia.', c: 't2-deformacoes' },
+  { t: 'Torção', a: ['momento torsor'], d: 'Deformação rotacional em torno do eixo longitudinal; a tensão de corte é máxima na periferia.', c: 't2-deformacoes' },
   { t: 'Anisotropia', d: 'Propriedades que dependem da direção da carga. O osso cortical é mais rígido e resistente segundo o eixo longitudinal do que na direção transversal.', c: 't2-osso' },
   { t: 'Hidroxiapatite', a: ['fase mineral'], d: 'Mineral do osso (fosfato de cálcio) que dá dureza e resistência à compressão.', c: 't2-osso' },
   { t: 'Colagénio tipo I', a: ['colagénio', 'matriz orgânica'], d: 'Proteína da matriz óssea que dá elasticidade, tenacidade e resistência à tração.', c: 't2-osso' },
