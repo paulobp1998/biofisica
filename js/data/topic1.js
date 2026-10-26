@@ -13,11 +13,11 @@ const TOPIC_1_QUESTIONS = [
     "question": "Qual é a definição de Mecânica?",
     "options": [
       "Estuda a composição química e a estrutura atómica dos tecidos biológicos.",
-      "Estuda as relações entre os movimentos dos corpos e as forças a eles associadas.",
       "Estuda as trocas de calor e a regulação da temperatura corporal.",
-      "Estuda a velocidade das reações químicas e a atividade enzimática celular."
+      "Estuda a velocidade das reações químicas e a atividade enzimática celular.",
+      "Estuda as relações entre os movimentos dos corpos e as forças a eles associadas."
     ],
-    "correctIndex": 1,
+    "correctIndex": 3,
     "explanation": "A Mecânica define-se formalmente como o ramo que 'estuda as relações entre os movimentos dos corpos e as forças a eles associadas'.",
     "distractorAnalysis": [
       "Está incorreta: A composição e a estrutura atómica pertencem à química e à bioquímica, não à mecânica.",
@@ -33,10 +33,10 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Medida da inércia de um organismo ou de um objeto, expressa em quilogramas.",
       "Taxa de variação, no tempo, do metabolismo energético basal do organismo.",
-      "Interação entre corpos que pode alterar o seu estado de movimento ou de forma.",
-      "Energia térmica acumulada num corpo que se encontra em repouso absoluto."
+      "Energia térmica acumulada num corpo que se encontra em repouso absoluto.",
+      "Interação entre corpos que pode alterar o seu estado de movimento ou de forma."
     ],
-    "correctIndex": 2,
+    "correctIndex": 3,
     "explanation": "Estabelece-se explicitamente que a Força é a 'interação entre corpos capaz de alterar o seu estado' de repouso ou de movimento, ou de lhe provocar deformação.",
     "distractorAnalysis": [
       "Está incorreta: Esta é a definição de massa, grandeza escalar medida em kg, e não de força.",
@@ -337,10 +337,10 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Gera contração ativa, independente, através de filamentos de actina.",
       "Substitui parcialmente a função das articulações na estabilidade dos ossos.",
-      "Transmite a tração gerada pelo músculo esquelético diretamente à alavanca óssea.",
-      "Produz líquido sinovial que lubrifica as superfícies das vértebras lombares."
+      "Produz líquido sinovial que lubrifica as superfícies das vértebras lombares.",
+      "Transmite a tração gerada pelo músculo esquelético diretamente à alavanca óssea."
     ],
-    "correctIndex": 2,
+    "correctIndex": 3,
     "explanation": "O tendão funciona como o transmissor mecânico de tração entre o músculo (gerador de força ativa) e o osso (alavanca rígida que produz movimento articular).",
     "distractorAnalysis": [
       "Está incorreta: A contração ativa é função do ventre muscular; o tendão é passivo.",
@@ -374,7 +374,7 @@ const TOPIC_1_QUESTIONS = [
     "question": "Dois enfermeiros puxam uma maca na mesma direção e no mesmo sentido, com forças de 60 N e 40 N. Qual é a força resultante?",
     "options": [
       "0 N, porque as duas forças se anulam.",
-      "100 N, no mesmo sentido, porque as intensidades se somam.",
+      "100 N, porque as intensidades se somam.",
       "20 N, porque as intensidades se subtraem.",
       "2400 N, por multiplicação das intensidades."
     ],
@@ -641,10 +641,10 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "m = F · a, ou seja, a massa é a força multiplicada pela aceleração.",
       "m = a / F, ou seja, a massa é a aceleração a dividir pela força.",
-      "m = F / a, ou seja, a massa é a força a dividir pela aceleração.",
-      "m = F - a, ou seja, a massa é a diferença entre a força e a aceleração."
+      "m = F - a, ou seja, a massa é a diferença entre a força e a aceleração.",
+      "m = F / a, ou seja, a massa é a força a dividir pela aceleração."
     ],
-    "correctIndex": 2,
+    "correctIndex": 3,
     "explanation": "Estabelece-se que, isolando a massa na equação fundamental da dinâmica, obtém-se m = F / a.",
     "distractorAnalysis": [
       "Está incorreta: Multiplicar F por a não isola a massa; a 2.ª Lei dá m = F / a.",
@@ -848,12 +848,12 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual das seguintes afirmações traduz, em linguagem quotidiana e pedagógica, o princípio fundamental da 3.ª Lei de Newton?",
     "options": [
-      "Quanto maior for a força aplicada a um corpo, maior será a sua aceleração.",
       "Toda a ação tem a sua reação de igual intensidade e sentido oposto.",
+      "Quanto maior for a força aplicada a um corpo, maior será a sua aceleração.",
       "Um corpo mantém o seu estado de movimento enquanto a força resultante for nula.",
       "Toda a ação provoca uma reação de menor intensidade, que a vai anulando."
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "explanation": "Conclui-se de forma pedagógica: 'Por outras palavras: Toda a ação tem a sua reação de igual intensidade e sentido oposto'.",
     "distractorAnalysis": [
       "Está incorreta: A relação entre força e aceleração é a 2.ª Lei de Newton, e não a 3.ª.",
@@ -1021,10 +1021,10 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "A força que o enfermeiro exerce é muito maior do que a força de atrito das rodas.",
       "A maca está a acelerar no sentido do movimento, de forma crescente.",
-      "A força do profissional equilibra a força de atrito, pelo que F<sub>R</sub> = 0 N.",
-      "A maca deixa de sofrer a força da gravidade durante o trajeto."
+      "A maca deixa de sofrer a força da gravidade durante o trajeto.",
+      "A força do profissional equilibra a força de atrito, pelo que F<sub>R</sub> = 0 N."
     ],
-    "correctIndex": 2,
+    "correctIndex": 3,
     "explanation": "Como a velocidade é constante e o movimento é retilíneo, a aceleração é zero. Portanto, a força aplicada para a frente equilibra perfeitamente a resistência de atrito para trás: F<sub>R</sub> = 0 N.",
     "distractorAnalysis": [
       "Está incorreta: Se a força do enfermeiro fosse muito maior que o atrito, a maca aceleraria, contrariando a velocidade constante.",
@@ -1041,7 +1041,7 @@ const TOPIC_1_QUESTIONS = [
       "Ambos possuem velocidade diferente de zero e aceleração elevada.",
       "Ambos sofrem forças resultantes elevadas no sentido do movimento.",
       "Ambos têm peso nulo por se encontrarem em superfícies horizontais.",
-      "Em ambos a aceleração é nula (a = 0) e a força resultante é nula (F<sub>R</sub> = 0)."
+      "Em ambos a aceleração é nula e a força resultante é nula (F<sub>R</sub> = 0)."
     ],
     "correctIndex": 3,
     "explanation": "Tanto no repouso estático (v = 0) como no MRU (v = constante), a aceleração é nula (a = 0) e a força resultante é nula (F<sub>R</sub> = 0). Ambos constituem estados de equilíbrio translacional.",
@@ -1097,7 +1097,7 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "A velocidade tem de ser crescente a uma taxa constante de 1 m/s².",
       "O corpo tem de estar em repouso, com velocidade nula em relação ao solo.",
-      "A resultante de todas as forças que atuam sobre o corpo tem de ser nula (F<sub>R</sub> = 0 N).",
+      "A resultante de todas as forças sobre o corpo tem de ser nula (F<sub>R</sub> = 0 N).",
       "O peso do corpo tem de ser o dobro da força normal de apoio."
     ],
     "correctIndex": 2,
@@ -1117,7 +1117,7 @@ const TOPIC_1_QUESTIONS = [
       "0 N, pois o carrinho se move sem auxílio no corredor.",
       "36 N, para que a velocidade aumente de forma contínua.",
       "9 N, pois a inércia do carrinho reduz para metade a força necessária.",
-      "18 N, no sentido do movimento, para que a força resultante seja nula (F<sub>R</sub> = 0 N)."
+      "18 N, no sentido do movimento, para que F<sub>R</sub> = 0 N."
     ],
     "correctIndex": 3,
     "explanation": "Para manter MRU (aceleração zero e velocidade constante), a força aplicada deve anular exatamente a resistência: F<sub>aplicada</sub> - F<sub>atrito</sub> = 0 => F<sub>aplicada</sub> = 18 N.",
@@ -1285,7 +1285,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "As forças de atrito entre a pele e os lençóis e a resistência mecânica de contacto têm origem microscópica em qual força fundamental?",
     "options": [
-      "Na força eletromagnética, por interações eletrostáticas entre os átomos das superfícies.",
+      "Na força eletromagnética, entre os átomos das superfícies em contacto.",
       "Na força gravitacional entre as massas dos átomos do tecido do lençol.",
       "Na força nuclear fraca, que atua sobre as fibras têxteis do lençol.",
       "Na força nuclear forte, que une a pele ao colchão hospitalar."
@@ -1477,7 +1477,7 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Aumenta proporcionalmente para o triplo do peso original.",
       "Permanece inalterada, mesmo com a cama inclinada.",
-      "Diminui, pois a normal equilibra a componente perpendicular do peso (P<sub>n</sub> = P · cos θ).",
+      "Diminui, pois N equilibra a componente P<sub>n</sub> = P · cos θ.",
       "Transforma-se numa força eletromagnética que atrai o doente para a parede."
     ],
     "correctIndex": 2,
@@ -1553,10 +1553,10 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "O atrito estático atua na água, e o atrito cinético atua no ar.",
       "O atrito estático atua no plano vertical, e o atrito cinético no plano oblíquo.",
-      "Atrito estático impede o movimento de começar; atrito cinético resiste durante o movimento.",
-      "Não há distinção física entre ambos, sendo termos equivalentes."
+      "Não há distinção física entre ambos, sendo termos equivalentes.",
+      "Atrito estático impede o movimento de começar; atrito cinético resiste durante o movimento."
     ],
-    "correctIndex": 2,
+    "correctIndex": 3,
     "explanation": "Categoriza-se: o atrito estático impede o movimento de começar; o atrito cinético é a força de resistência durante o movimento.",
     "distractorAnalysis": [
       "Está incorreta: Os dois atritos atuam entre superfícies sólidas em contacto, e não na água ou no ar.",
@@ -1912,12 +1912,12 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Durante a marcha de uma ambulância em socorro a 80 km/h, por que razão um enfermeiro que viaja de pé é projetado para a frente quando a viatura trava bruscamente?",
     "options": [
-      "Porque a travagem acelera o corpo do enfermeiro para a frente, em relação à estrada.",
       "Pela 1.ª Lei de Newton, o corpo tende a manter a velocidade de 80 km/h.",
+      "Porque a travagem acelera o corpo do enfermeiro para a frente, em relação à estrada.",
       "Porque o peso do enfermeiro aumenta durante a travagem, por efeito da inércia.",
       "Porque a pressão do ar diminui na cabina, criando um vácuo à frente do enfermeiro."
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "explanation": "Explica-se que, pela 1.ª Lei de Newton (Lei da Inércia), o corpo do enfermeiro tende a manter a velocidade de 80 km/h; como o atrito nos pés não chega para o travar ao ritmo da ambulância, é projetado para a frente em relação ao veículo.",
     "distractorAnalysis": [
       "Está incorreta: Em relação à estrada, o enfermeiro não é acelerado para a frente; é a ambulância que trava, e o corpo, por inércia, tende a manter a velocidade.",
@@ -2085,10 +2085,10 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Multiplicando a massa corporal pela velocidade da ambulância.",
       "Dividindo a massa corporal pelo tempo de paragem, sem ter em conta a aceleração.",
-      "Multiplicando a massa corporal do indivíduo pela desaceleração sofrida (F = m · a).",
-      "Dividindo a massa corporal pela distância percorrida até à divisória."
+      "Dividindo a massa corporal pela distância percorrida até à divisória.",
+      "Multiplicando a massa corporal do indivíduo pela desaceleração sofrida (F = m · a)."
     ],
-    "correctIndex": 2,
+    "correctIndex": 3,
     "explanation": "A força média de impacto é a massa corporal multiplicada pela desaceleração que o corpo sofre durante o impacto contra a divisória (F = m · a), e não pela desaceleração de travagem do veículo; como o impacto dura muito pouco, essa desaceleração é muito elevada.",
     "distractorAnalysis": [
       "Está incorreta: O produto da massa pela velocidade é a quantidade de movimento, e não a força.",
@@ -2617,10 +2617,10 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "É igual à força multiplicada pelo comprimento total da alavanca.",
       "É igual a 9,8 N·m, independentemente da intensidade da força.",
-      "É zero (M = 0 N·m), porque o braço é nulo (b = 0 m).",
-      "Produz uma rotação muito rápida, por a força estar concentrada."
+      "Produz uma rotação muito rápida, por a força estar concentrada.",
+      "É zero (M = 0 N·m), porque o braço é nulo (b = 0 m)."
     ],
-    "correctIndex": 2,
+    "correctIndex": 3,
     "explanation": "Se a linha de ação da força interseta o eixo, a distância perpendicular b entre a linha e o eixo é zero (b = 0). Pela fórmula M = F · b = F × 0 = 0 N·m. A força não gera qualquer efeito rotativo.",
     "distractorAnalysis": [
       "Está incorreta: O braço é a distância perpendicular do eixo à linha de ação, e não o comprimento da alavanca; se a linha passa pelo eixo, b = 0 e M = 0.",
@@ -2900,12 +2900,12 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Qual é a característica biomecânica e estrutural que define uma alavanca 'Interpotente' (3.ª classe) no corpo humano?",
     "options": [
-      "A força resistente situa-se entre o fulcro e a força potente.",
       "A força potente encontra-se entre o fulcro e a força resistente.",
+      "A força resistente situa-se entre o fulcro e a força potente.",
       "O fulcro situa-se entre a força potente e a resistente.",
       "A alavanca funciona sem gasto de força potente."
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "explanation": "Na alavanca interpotente, a força potente encontra-se entre o fulcro e a força resistente (fulcro — F<sub>Potente</sub> — F<sub>Resis.</sub>).",
     "distractorAnalysis": [
       "Está incorreta: Força resistente no meio define a alavanca inter-resistente.",
@@ -3033,7 +3033,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "A articulação da cabeça com a coluna cervical (onde os músculos posteriores da nuca equilibram o peso da face em torno do côndilo occipital) funciona como:",
     "options": [
-      "Uma alavanca interfixa, com o fulcro entre a força potente muscular e o peso da face.",
+      "Uma alavanca interfixa, com o apoio entre a força muscular e o peso da face.",
       "Uma alavanca interpotente, sem ponto de apoio definido.",
       "Um corpo viscoso, sem restituição elástica.",
       "Uma alavanca inter-resistente, com a carga nas vértebras lombares."
@@ -3149,10 +3149,10 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "b<sub>Potente</sub> = 1,47 m",
       "b<sub>Potente</sub> = 30 m",
-      "b<sub>Potente</sub> = 5 m",
-      "b<sub>Potente</sub> = 0,2 m"
+      "b<sub>Potente</sub> = 0,2 m",
+      "b<sub>Potente</sub> = 5 m"
     ],
-    "correctIndex": 2,
+    "correctIndex": 3,
     "explanation": "Conclui-se com rigor: 'M<sub>Potente</sub> = F<sub>Potente</sub> · b<sub>Potente</sub> (=) 1470 = (30 × 9,8) × b<sub>Potente</sub> (=) b<sub>Potente</sub> = 5 m'.",
     "distractorAnalysis": [
       "Está incorreta: 1,47 m seria insuficiente: geraria apenas 294 × 1,47 = 432 N·m, e a alavanca não equilibraria.",
@@ -3737,7 +3737,7 @@ const TOPIC_1_QUESTIONS = [
     "question": "Qual é o efeito biomecânico da utilização de dispositivos de apoio (como andarilho ou bengala) sobre a estabilidade postural do doente?",
     "options": [
       "Reduzem a base de sustentação, para estimular o equilíbrio cerebral.",
-      "Aumentam a área da base de sustentação, sobretudo o andarilho, que a alarga mais do que a bengala.",
+      "Aumentam a base de sustentação, e o andarilho alarga-a mais do que a bengala.",
       "Reduzem o peso do doente, permitindo-lhe andar sem apoio do solo.",
       "Aumentam a velocidade da marcha de forma significativa."
     ],

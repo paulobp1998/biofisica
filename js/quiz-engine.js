@@ -147,6 +147,7 @@ class QuizEngine {
       originalId: q.id,
       topicId: q.topicId,
       question: q.question,
+      isRetry: !!q.isRetry,
       options: shuffledOptions,
       correctIndex: newCorrectIndex,
       explanation: q.explanation,
@@ -289,6 +290,7 @@ class QuizEngine {
       customTitle: this.customTitle,
       topic: topic,
       questionId: q.originalId,
+      isRetry: !!q.isRetry,
       question: q.question,
       options: q.options,
       isAnswered: this.isAnswered,
@@ -314,7 +316,8 @@ class QuizEngine {
         isCorrect: isCorrect,
         explanation: currentQ.explanation,
         distractorAnalysis: currentQ.distractorAnalysis,
-        nursingApplication: currentQ.nursingApplication
+        nursingApplication: currentQ.nursingApplication,
+        isRetry: !!currentQ.isRetry
       };
       this.userAnswers[this.currentIndex] = answerRecord;
       return {
@@ -339,11 +342,24 @@ class QuizEngine {
       isCorrect: isCorrect,
       explanation: currentQ.explanation,
       distractorAnalysis: currentQ.distractorAnalysis,
-      nursingApplication: currentQ.nursingApplication
+      nursingApplication: currentQ.nursingApplication,
+      isRetry: !!currentQ.isRetry
     };
 
     this.userAnswers[this.currentIndex] = answerRecord;
+    if (!isCorrect && !currentQ.isRetry && this.mode !== 'exam') this.scheduleRetry(currentQ);
     return answerRecord;
+  }
+
+  // Modo Treino: uma pergunta errada volta a aparecer daqui a poucas perguntas (opções baralhadas
+  // de novo), para o aluno a tentar outra vez enquanto a explicação ainda está fresca.
+  // Só repete uma vez (no máximo 10 por sessão) e não conta para a nota nem para as métricas.
+  scheduleRetry(q) {
+    const original = QUESTIONS_DATA.find(x => x.id === q.originalId);
+    if (!original || this.currentQuestions.filter(x => x.isRetry).length >= 10) return;
+    const retry = this.prepareQuestion({ ...original, isRetry: true });
+    const at = Math.min(this.currentIndex + 4, this.currentQuestions.length);
+    this.currentQuestions.splice(at, 0, retry);
   }
 
   nextQuestion() {
@@ -368,7 +384,8 @@ class QuizEngine {
           isCorrect: false,
           explanation: q.explanation,
           distractorAnalysis: q.distractorAnalysis,
-          nursingApplication: q.nursingApplication
+          nursingApplication: q.nursingApplication,
+          isRetry: !!q.isRetry
         };
       }
     }
@@ -377,8 +394,11 @@ class QuizEngine {
   }
 
   calculateSummary() {
-    const total = this.userAnswers.length;
-    const correctCount = this.userAnswers.filter(a => a.isCorrect).length;
+    const allAnswers = this.userAnswers.filter(Boolean);
+    const retries = allAnswers.filter(a => a.isRetry);
+    const answers = allAnswers.filter(a => !a.isRetry);
+    const total = answers.length;
+    const correctCount = answers.filter(a => a.isCorrect).length;
     const percentage = total > 0 ? Math.round((correctCount / total) * 100) : 0;
     
     // Escala Portuguesa do Ensino Superior: 0 a 20 valores
@@ -389,7 +409,7 @@ class QuizEngine {
     const seconds = elapsedSeconds % 60;
     const timeFormatted = `${minutes}m ${seconds.toString().padStart(2, '0')}s`;
 
-    const incorrectIds = this.userAnswers.filter(a => !a.isCorrect).map(a => a.questionId);
+    const incorrectIds = answers.filter(a => !a.isCorrect).map(a => a.questionId);
 
     let gradeClassification = "";
     let badgeClass = "";
@@ -413,7 +433,7 @@ class QuizEngine {
     // Desempenho detalhado por tópico
     const topicBreakdown = {};
     TOPICS_DATA.forEach(t => {
-      const topicAnswers = this.userAnswers.filter(a => a.topicId === t.id);
+      const topicAnswers = answers.filter(a => a.topicId === t.id);
       if (topicAnswers.length > 0) {
         const c = topicAnswers.filter(a => a.isCorrect).length;
         topicBreakdown[t.id] = {
@@ -435,7 +455,9 @@ class QuizEngine {
       classification: gradeClassification,
       badgeClass: badgeClass,
       topicBreakdown: topicBreakdown,
-      answers: this.userAnswers,
+      answers: answers,
+      retryTotal: retries.length,
+      retryCorrect: retries.filter(a => a.isCorrect).length,
       feedbackMode: this.feedbackMode,
       mode: this.mode,
       customTitle: this.customTitle,

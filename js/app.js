@@ -637,8 +637,12 @@ document.addEventListener('DOMContentLoaded', () => {
           `<div class="formula-row"><code>${f.expr}</code><span>${f.note}</span></div>`).join('')}</div>`
       : '';
     const example = block.example ? `<div class="study-example"><strong>Exemplo:</strong> ${block.example}</div>` : '';
+    const fig = (typeof STUDY_FIGURES !== 'undefined' && STUDY_FIGURES[block.id])
+      ? `<figure class="study-figure">${STUDY_FIGURES[block.id].svg}<figcaption>${STUDY_FIGURES[block.id].caption}</figcaption></figure>`
+      : '';
     return `
       ${formulas}
+      ${fig}
       <div class="study-block-body">${block.body}</div>
       ${example}
       <div class="study-pitfall"><strong>⚠️ Erro comum:</strong> ${block.pitfall}</div>
@@ -1246,7 +1250,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     quizTopicBadge.textContent = titleText;
-    quizProgressText.textContent = `Pergunta ${currNum} de ${totalNum} • ${state.feedbackMode === 'delayed' ? '⏱️ Frequência Real' : '🟢 Modo Treino'}`;
+    quizProgressText.textContent = `Pergunta ${currNum} de ${totalNum} • ${state.isRetry ? '🔁 Repetição de um erro' : state.feedbackMode === 'delayed' ? '⏱️ Frequência Real' : '🟢 Modo Treino'}`;
     quizProgressBar.style.width = `${progressPercent}%`;
 
     // Atualizar indicadores visuais com o número da pergunta
@@ -1439,7 +1443,12 @@ document.addEventListener('DOMContentLoaded', () => {
     feedbackCard.classList.remove('hidden');
     const letters = ['A', 'B', 'C', 'D'];
     const correctLetter = letters[result.correctIndex];
-    if (result.isCorrect) {
+    if (result.isRetry) {
+      feedbackCard.classList.add(result.isCorrect ? 'feedback-correct' : 'feedback-incorrect');
+      feedbackTitle.innerHTML = result.isCorrect
+        ? '✅ <strong>Corrigiste o erro de há pouco!</strong> Esta repetição não conta para a nota.'
+        : '❌ <strong>Ainda não.</strong> Lê a justificação com calma e abre a teoria; a pergunta fica no Caderno de Erros.';
+    } else if (result.isCorrect) {
       feedbackCard.classList.add('feedback-correct');
       feedbackTitle.innerHTML = currentConfidence === 'low'
         ? '✅ <strong>Resposta Correta!</strong> Acertaste, mas sem certeza: lê a justificação para a fixares.'
@@ -1585,6 +1594,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (summary.masteredCount > 0) {
       notes.push(`📕 ${summary.masteredCount} ${summary.masteredCount === 1 ? 'pergunta saiu' : 'perguntas saíram'} do Caderno de Erros (2 acertos em dias diferentes).`);
     }
+    if (summary.retryTotal > 0) {
+      notes.push(`🔁 Repetição de erros: acertaste ${summary.retryCorrect} de ${summary.retryTotal} ao tentar outra vez (não conta para a nota).`);
+    }
+    const guessed = summary.answers.filter(a => a.isCorrect && a.confidence === 'low').length;
+    if (guessed > 0) {
+      notes.push(`🎲 ${guessed} ${guessed === 1 ? 'resposta certa foi dada' : 'respostas certas foram dadas'} sem certeza: estão assinaladas na revisão, logo a seguir aos erros.`);
+    }
     if (summary.incorrectCount > 0) {
       notes.push(`📕 ${summary.incorrectCount} ${summary.incorrectCount === 1 ? 'pergunta guardada' : 'perguntas guardadas'} no Caderno de Erros para rever nos próximos dias.`);
     }
@@ -1664,11 +1680,18 @@ document.addEventListener('DOMContentLoaded', () => {
     renderResultFocus(summary);
 
     // Folha de Revisão Completa com botão estrela
-    resultReviewList.innerHTML = '<h4>Revisão Completa do Teste (com explicações científicas):</h4>';
+    const isGuess = a => a.isCorrect && a.confidence === 'low';
+    const nWrong = summary.answers.filter(a => !a.isCorrect).length;
+    const nGuess = summary.answers.filter(isGuess).length;
+    resultReviewList.innerHTML = `<h4>Revisão do teste: começa pelos erros${nGuess ? ' e pelas respostas incertas' : ''}</h4>`;
+    const correctFold = document.createElement('details');
+    correctFold.className = 'review-correct-fold';
     const letters = ['A', 'B', 'C', 'D'];
     const starredList = getStarred();
 
-    summary.answers.forEach((ans, i) => {
+    const rank = a => (!a.isCorrect ? 0 : isGuess(a) ? 1 : 2);
+    const order = summary.answers.map((ans, i) => ({ ans, i })).sort((x, y) => rank(x.ans) - rank(y.ans) || x.i - y.i);
+    order.forEach(({ ans, i }) => {
       const isStarred = starredList.includes(ans.questionId);
       const qidLabel = questionLabel(ans.questionId);
       const reviewConceptId = getConceptId(ans.questionId);
@@ -1676,7 +1699,7 @@ document.addEventListener('DOMContentLoaded', () => {
       reviewItem.className = `review-card ${ans.isCorrect ? 'review-correct' : 'review-incorrect'}`;
       reviewItem.innerHTML = `
         <div class="review-header">
-          <span class="review-status">${ans.isCorrect ? '✅ Acertou' : '❌ Errou'}</span>
+          <span class="review-status">${ans.isCorrect ? (isGuess(ans) ? '✅ Acertou, mas sem certeza' : '✅ Acertou') : '❌ Errou'}</span>
           <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
             <button class="btn-star ${isStarred ? 'active' : ''}" data-qid="${ans.questionId}" title="Marcar / Desmarcar com estrela">
               ${isStarred ? '⭐' : '☆'}
@@ -1703,8 +1726,16 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         ${reviewConceptId && getStudyBlock(reviewConceptId) ? `<div class="feedback-theory-row"><button type="button" class="btn btn-sm btn-outline btn-theory-link" data-open-theory="${reviewConceptId}">📖 Rever esta parte da teoria</button></div>` : ''}
       `;
-      resultReviewList.appendChild(reviewItem);
+      (rank(ans) === 2 ? correctFold : resultReviewList).appendChild(reviewItem);
     });
+    const nCertain = summary.answers.length - nWrong - nGuess;
+    if (nCertain > 0) {
+      const sum = document.createElement('summary');
+      sum.textContent = `Ver as ${nCertain} ${nCertain === 1 ? 'resposta certa' : 'respostas certas'}`;
+      correctFold.prepend(sum);
+      if (nWrong + nGuess === 0) correctFold.open = true;
+      resultReviewList.appendChild(correctFold);
+    }
 
     // Ouvinte para as estrelas na revisão
     resultReviewList.querySelectorAll('.btn-star').forEach(btn => {

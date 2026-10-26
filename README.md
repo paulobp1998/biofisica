@@ -30,6 +30,9 @@ Total atual: **400 perguntas** (todas ativas para os alunos, Tópicos 1 e 2). Os
 - **Modo Simulação Real:** sem consulta durante a prova, temporizador configurável e classificação de 0 a 20 valores com revisão no final.
 - **Caderno de Erros com revisão espaçada e ⭐ Favoritos:** as perguntas erradas ficam guardadas no navegador. Voltam a aparecer ao fim de alguns dias ("Hoje tens N perguntas para rever") e só saem depois de 2 respostas certas em dias diferentes.
 - **Confiança (opcional) no Modo Treino:** o aluno indica se tem certeza, se acha que sim ou se está a adivinhar. Os resultados e as estatísticas mostram a confiança vs. os acertos, e os erros com certeza voltam logo ao caderno.
+- **Repetição de erros na mesma sessão (Modo Treino):** uma pergunta errada volta a aparecer 4 perguntas depois, com as opções baralhadas (no máximo 10 por sessão). A repetição não conta para a nota nem para as métricas do docente.
+- **Revisão dos resultados "primeiro os erros":** a revisão abre pelos erros e pelas respostas certas sem certeza; as respostas certas ficam recolhidas.
+- **Esquemas dos conceitos:** 9 diagramas (vetor força, plano inclinado, alavancas, deformações, curva tensão–deformação…) em SVG no próprio código, sem imagens externas nem serviços (`js/study-figures.js`).
 - **Teoria em conceitos** (Tópicos 1 e 2): fórmulas, erro comum e aplicação em enfermagem. A partir de qualquer pergunta há o botão "Rever esta parte da teoria", e cada conceito tem "Praticar este conceito". Conteúdo em `js/study-content.js`.
 - **Resultados e estatísticas com orientação:** ponto fraco da sessão, desempenho por conceito e evolução das notas.
 - **Pesquisa rápida** (`Ctrl+K` ou `Cmd+K`) no glossário (definições curtas, sem distinção de acentos) e nas perguntas.
