@@ -29,7 +29,7 @@ Question banks live in `js/data/topicN.js` (topics 1–5: 1 Força/Equilíbrio/A
 }
 ```
 
-- IDs: topic N uses the range N001–N999, consecutive, never reused. Topic 1 has 200 questions (1001–1200); topic 2 has 200 (2201–2404; 2234, 2235, 2273 and 2298 were removed because they relied on k = E·A/L₀, and their IDs stay unused). Topics 3–5 are empty (`[]`), so start them at N001. Always confirm the last ID with `tail` before adding.
+- IDs: topic N uses the range N001–N999, consecutive, never reused. Topic 1 has 200 questions (1001–1200); topic 2 has 200 (2201–2404; 2234, 2235, 2273 and 2298 were removed because they relied on k = E·A/L₀, and their IDs stay unused). Topic 3 has 200 (3001–3200). Topics 4–5 are empty (`[]`), so start them at N001. Always confirm the last ID with `tail` before adding.
 - Exactly 4 options. Exactly 3 entries in `distractorAnalysis`, one per WRONG option, **in the same order as the wrong options appear** (skip the correct index).
 - Each distractor entry starts with "Está incorreta:" and says *why* that option is wrong. It must not just restate the option.
 - `correctIndex` must be balanced across a batch (roughly equal counts of 0, 1, 2, 3).
@@ -45,6 +45,7 @@ Question banks live in `js/data/topicN.js` (topics 1–5: 1 Força/Equilíbrio/A
 - Subscripts: write `F<sub>E</sub>`, `P<sub>t</sub>`, `P<sub>n</sub>` (HTML `<sub>`), never `F_E` or `P_t`. Superscripts use `<sup>`. Multi-letter subscripts too (`M<sub>total</sub>`). Resultant force/moment: `F<sub>R</sub>`, `M<sub>R</sub>`. In lever questions: potent force `F<sub>Potente</sub>`, resistive force `F<sub>Resis.</sub>`, resistive moment/arm `M<sub>Resis.</sub>`, `b<sub>Resis.</sub>`, `d<sub>Resis.</sub>` potent-side arm/moment `b<sub>Potente</sub>`, `M<sub>Potente</sub>`; effort side `F<sub>E</sub>`, `d<sub>E</sub>`.
 - Units: N, kg, m, s, N·m. Stress, pressure and Young's modulus are always in N/m² (course convention): never write Pa, kPa, MPa, GPa or "pascal"; write powers of ten instead (e.g. 3,0 × 10⁶ N/m²). Do not use k = E·A/L₀ (not in the course). Forces always in N, never "quilos" or "kg". Say "carga de 15 kg", not "peso de 15 kg".
 - Use g = 9,8 m/s² (course convention).
+- Topic 3 (Hidrodinâmica) follows the lecture's c.g.s. units: v in cm/s, ρ in g/cm³, d and R in cm, η in poise, ΔP in dyn/cm², D in cm³/s or mL/h, R<sub>h</sub> in poise/cm³; π ≈ 3,14. Caudal is D (never Q). Reynolds uses the diameter d; Poiseuille uses the radius R. Thresholds: Re < 2000 laminar, 2000–4000 transição, > 4000 turbulento.
 - Round results consistently (e.g. 20/1,2 = 16,7, not 16,6).
 
 ## Scientific rules (errors already found in this bank; do not repeat them)

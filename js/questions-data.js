@@ -33,7 +33,7 @@ const TOPICS_DATA = [
     title: "Hidrodinâmica",
     shortTitle: "Hidrodinâmica",
     icon: "❤️",
-    description: "Regimes laminar e turbulento, Número de Reynolds, viscosidade/hematócrito, Lei de Poiseuille e génese dos ruídos de Korotkoff."
+    description: "Viscosidade e viscosidade do sangue (hematócrito), regimes laminar e turbulento, número de Reynolds, regimes no sistema circulatório, caudal, lei de Poiseuille e resistência hidráulica, cateteres e sons de Korotkoff."
   },
   {
     id: 4,
@@ -56,9 +56,9 @@ const TOPICS_DATA = [
 // CONTROLO DE ACESSO DO DOCENTE POR TÓPICO
 // =========================================================================
 // Define quais os tópicos atualmente acessíveis aos estudantes (1 a 5).
-// Tópicos 1 e 2 ativos e disponibilizados (200 questões cada).
-// Tópicos 3 a 5 temporariamente bloqueados pelo docente.
-const UNLOCKED_TOPIC_IDS = [1, 2];
+// Tópicos 1 a 3 ativos e disponibilizados (200 questões cada).
+// Tópicos 4 e 5 temporariamente bloqueados pelo docente.
+const UNLOCKED_TOPIC_IDS = [1, 2, 3];
 
 // Banco integral de questões por tópico (totalmente preservado para desbloqueio futuro)
 const ALL_TOPIC_COLLECTIONS = {
@@ -114,20 +114,8 @@ const TOPIC_SUMMARIES = [
   {
     topicId: 3,
     title: "Tópico 3: Hidrodinâmica",
-    summary: `
-      <ul>
-        <li><strong>Regime Laminar vs Turbulento:</strong>
-          <ul>
-            <li><em>Laminar:</em> Escoamento em lâminas concêntricas sem mistura, perfil parabólico com velocidade máxima no centro e nula na parede. Silencioso e de baixo gasto energético.</li>
-            <li><em>Turbulento:</em> Formação de turbilhões e vórtices desordenados. Ruidoso e com grande dissipação de energia sob forma de calor e som.</li>
-          </ul>
-        </li>
-        <li><strong>Número de Reynolds (Re = (ρ · v · d) / η):</strong> Adimensional. Re > 2000 favorece a turbulência. Aumenta com maior velocidade (v), maior diâmetro (d), maior massa volúmica (ρ) e <em>menor viscosidade (η)</em>.</li>
-        <li><strong>Viscosidade Sanguínea e Hematócrito:</strong> A viscosidade do sangue é ~3 a 4 vezes superior à da água, dependendo essencialmente do hematócrito (volume globular) e proteínas plasmáticas.</li>
-        <li><strong>Lei de Poiseuille (R ∝ 1 / r⁴):</strong> A resistência vascular depende inversamente da 4.ª potência do raio. Reduzir o raio a metade aumenta a resistência vascular periférica 16 vezes!</li>
-        <li><strong>Ruídos de Korotkoff na Medição da PA:</strong> Quando a braçadeira do esfigmomanómetro comprime a artéria, o jato de sangue a alta velocidade gera turbulência audível no estetoscópio entre a pressão sistólica e diastólica.</li>
-      </ul>
-    `
+    // Conteúdo estruturado em blocos: ver STUDY_BLOCKS em js/study-content.js
+    summary: ''
   },
   {
     topicId: 4,

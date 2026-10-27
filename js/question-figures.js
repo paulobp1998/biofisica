@@ -156,7 +156,37 @@ const QUESTION_FIGURES = (() => {
     return svg(360, 162, s.alt || 'Viga apoiada nas duas extremidades com uma carga', b);
   }
 
-  const builders = { lever, moment, incline, bar, beam };
+  // Um ou mais tubos cilíndricos (vaso, cateter) com os dados do enunciado e o sentido do escoamento.
+  // Cada item: r (0,3 a 1, raio relativo só para o desenho), name, flow, inside (linhas de texto), L (cota do comprimento).
+  // Não desenha o perfil de velocidades nem as linhas de corrente, para não dar a resposta.
+  function tube(s) {
+    const x0 = 80, x1 = 318;
+    let b = '', y = 0;
+    s.items.forEach(it => {
+      const lines = it.inside || [];
+      // Com um só tubo, a altura cresce para os dados caberem lá dentro; com dois, mantém a proporção dos raios.
+      const rel = Math.min(1, Math.max(0.3, it.r || 0.7));
+      const h = r(s.items.length === 1 ? Math.max(18 + 46 * rel, lines.length * 13 + 10) : Math.max(20, 64 * rel));
+      const top = y + 20, ym = top + h / 2, ex = r(Math.max(4, h * 0.16));
+      const fits = lines.length * 14 + 4 <= h;
+      if (it.name) b += text(x0, y + 13, it.name, { anchor: 'start', bold: true });
+      if (it.flow) b += text(x1, y + 13, it.flow, { anchor: 'end' });
+      b += `<path d="M ${x0},${top} L ${x1},${top} A ${ex} ${r(h / 2)} 0 0 1 ${x1},${r(top + h)} L ${x0},${r(top + h)}" class="f-body"/>`;
+      b += `<ellipse cx="${x0}" cy="${r(ym)}" rx="${ex}" ry="${r(h / 2)}" class="f-body"/>`;
+      b += arrow(16, ym, x0 - ex - 4, ym, 'pot');
+      y = top + h;
+      if (fits) {
+        lines.forEach((l, i) => { b += text((x0 + x1) / 2, ym + 4 + (i - (lines.length - 1) / 2) * 14, l, { size: 10 }); });
+      } else {
+        lines.forEach(l => { y += 14; b += text((x0 + x1) / 2, y, l, { size: 10 }); });
+      }
+      if (it.L) { b += dim(x0, x1, y + 20, it.L, 'neu'); y += 28; } else y += 8;
+      y += 6;
+    });
+    return svg(360, y, s.alt || 'Esquema de um tubo cilíndrico com o sentido do escoamento e os dados do enunciado', b);
+  }
+
+  const builders = { lever, moment, incline, bar, beam, tube };
 
   function render(spec) {
     if (!spec || !builders[spec.type]) return '';

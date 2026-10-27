@@ -14,15 +14,17 @@ Estado atual do banco de perguntas:
 |---|---|---|
 | 1 | Força, estado de equilíbrio, equilíbrio de forças e alavancas | 200 perguntas ativas |
 | 2 | Elasticidade dos corpos, resistência dos materiais e sistema osteomedular | 200 perguntas ativas |
-| 3 | Hidrodinâmica | Em preparação (bloqueado pelo docente) |
+| 3 | Hidrodinâmica | 200 perguntas ativas |
 | 4 | Hidrostática | Em preparação (bloqueado pelo docente) |
 | 5 | Física atómica e nuclear | Em preparação (bloqueado pelo docente) |
 
-Total atual: **400 perguntas** (todas ativas para os alunos, Tópicos 1 e 2). Os tópicos ativos definem-se em `UNLOCKED_TOPIC_IDS` (`js/questions-data.js`), de escolha múltipla com 4 opções e explicação científica e de aplicação em enfermagem.
+Total atual: **600 perguntas** (todas ativas para os alunos, Tópicos 1 a 3). Os tópicos ativos definem-se em `UNLOCKED_TOPIC_IDS` (`js/questions-data.js`), de escolha múltipla com 4 opções e explicação científica e de aplicação em enfermagem.
 
 **Tópico 1:** grandezas vetoriais, leis de Newton, força normal e atrito, condições de equilíbrio (∑F = 0 e ∑M = 0), centro de gravidade e base de sustentação, alavancas biomecânicas (1.ª, 2.ª e 3.ª classe) e momentos de força.
 
 **Tópico 2:** reologia (sólidos de Hooke e de Euclides, corpos plásticos e viscoelásticos), as cinco deformações (compressão, tração, flexão, cisalhamento e torção), lei de Hooke, módulo de Young, composição do osso (hidroxiapatite e colagénio) e anisotropia mecânica do sistema osteomedular.
+
+**Tópico 3:** viscosidade e viscosidade do sangue (hematócrito, anemia e desidratação), regimes laminar e turbulento, experiência e número de Reynolds, regimes no sistema circulatório, caudal e caudal crítico, lei de Poiseuille, resistência hidráulica, cateteres (gauge) e sons de Korotkoff.
 
 ---
 
@@ -34,9 +36,9 @@ Total atual: **400 perguntas** (todas ativas para os alunos, Tópicos 1 e 2). Os
 - **Confiança (opcional) no Modo Treino:** o aluno indica se tem certeza, se acha que sim ou se está a adivinhar. Os resultados e as estatísticas mostram a confiança vs. os acertos, e os erros com certeza voltam logo ao caderno.
 - **Repetição de erros na mesma sessão (Modo Treino):** uma pergunta errada volta a aparecer 4 perguntas depois, com as opções baralhadas (no máximo 10 por sessão). A repetição não conta para a nota nem para as métricas do docente.
 - **Revisão dos resultados "primeiro os erros":** a revisão abre pelos erros e pelas respostas certas sem certeza; as respostas certas ficam recolhidas.
-- **Esquemas nas perguntas:** nas perguntas em que o desenho ajuda a resolver (alavancas, momentos, plano inclinado, barras em tração ou compressão, vigas), um esquema SVG mostra só os dados do enunciado (`js/question-figures.js`).
+- **Esquemas nas perguntas:** nas perguntas em que o desenho ajuda a resolver (alavancas, momentos, plano inclinado, barras em tração ou compressão, vigas, tubos e cateteres), um esquema SVG mostra só os dados do enunciado (`js/question-figures.js`).
 - **Esquemas dos conceitos:** 9 diagramas (vetor força, plano inclinado, alavancas, deformações, curva tensão–deformação…) em SVG no próprio código, sem imagens externas nem serviços (`js/study-figures.js`).
-- **Teoria em conceitos** (Tópicos 1 e 2): fórmulas, erro comum e aplicação em enfermagem. A partir de qualquer pergunta há o botão "Rever esta parte da teoria", e cada conceito tem "Praticar este conceito". Conteúdo em `js/study-content.js`.
+- **Teoria em conceitos** (Tópicos 1 a 3): fórmulas, erro comum e aplicação em enfermagem. A partir de qualquer pergunta há o botão "Rever esta parte da teoria", e cada conceito tem "Praticar este conceito". Conteúdo em `js/study-content.js`.
 - **Resolução passo a passo** nas perguntas de cálculo: dados, conversões, fórmula, substituição e resultado, no feedback, na revisão e na ficha imprimível.
 - **🚩 Reportar problema:** depois de responder, o aluno pode avisar o docente de um possível erro na pergunta (anónimo, com motivo e comentário opcional). Os reportes aparecem no painel de métricas.
 - **Resultados e estatísticas com orientação:** ponto fraco da sessão, desempenho por conceito e evolução das notas.

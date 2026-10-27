@@ -650,7 +650,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const n = QUESTIONS_DATA.length;
     const topics = ids.map(id => TOPICS_DATA.find(t => t.id === id)).filter(Boolean);
     const topicsShort = ids.length === 1 ? `Tópico ${ids[0]}` : `Tópicos ${ids.slice(0, -1).join(', ')} e ${ids[ids.length - 1]}`;
-    const topicsLong = topics.map(t => `Tópico ${t.id} (${t.shortTitle})`).join(' e ');
+    const longNames = topics.map(t => `Tópico ${t.id} (${t.shortTitle})`);
+    const topicsLong = longNames.length > 1 ? `${longNames.slice(0, -1).join(', ')} e ${longNames[longNames.length - 1]}` : longNames.join('');
 
     if (heroTag) heroTag.textContent = `✨ 100% Gratuito • ${n} Questões de Biofísica Ativas (${topicsShort}) • Ensino Superior`;
     if (heroDesc) {
