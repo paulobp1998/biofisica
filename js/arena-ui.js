@@ -1961,7 +1961,7 @@ class ArenaUI {
     if (this.allQuestionsPool && this.allQuestionsPool.length > 0) return;
     let all = [];
     if (typeof ALL_TOPIC_COLLECTIONS !== 'undefined') {
-      for (let t = 1; t <= 8; t++) {
+      for (let t = 1; t <= 5; t++) {
         if (ALL_TOPIC_COLLECTIONS[t] && Array.isArray(ALL_TOPIC_COLLECTIONS[t])) {
           all.push(...ALL_TOPIC_COLLECTIONS[t]);
         }

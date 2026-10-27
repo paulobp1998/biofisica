@@ -56,7 +56,7 @@ class TeacherManager {
     if (this.allQuestions.length > 0) return;
     const pool = [];
     if (typeof ALL_TOPIC_COLLECTIONS !== 'undefined') {
-      for (let t = 1; t <= 8; t++) {
+      for (let t = 1; t <= 5; t++) {
         if (ALL_TOPIC_COLLECTIONS[t] && Array.isArray(ALL_TOPIC_COLLECTIONS[t])) {
           pool.push(...ALL_TOPIC_COLLECTIONS[t]);
         }
@@ -722,7 +722,7 @@ class TeacherManager {
 
     // Agrupar por Tópico
     const byTopic = {};
-    for (let t = 1; t <= 8; t++) byTopic[t] = [];
+    for (let t = 1; t <= 5; t++) byTopic[t] = [];
 
     excludedArray.forEach(id => {
       const q = this.allQuestions.find(item => item.id === id);
@@ -733,7 +733,7 @@ class TeacherManager {
 
     let text = `Por favor elimina do repositório as seguintes perguntas selecionadas no Painel do Docente:\n\n`;
     let totalCount = 0;
-    for (let t = 1; t <= 8; t++) {
+    for (let t = 1; t <= 5; t++) {
       if (byTopic[t] && byTopic[t].length > 0) {
         text += `- Tópico ${t} (${byTopic[t].length} perguntas): [${byTopic[t].join(', ')}]\n`;
         totalCount += byTopic[t].length;
