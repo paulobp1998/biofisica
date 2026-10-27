@@ -14,7 +14,9 @@ Estado atual do banco de perguntas:
 |---|---|---|
 | 1 | Força, estado de equilíbrio, equilíbrio de forças e alavancas | 200 perguntas ativas |
 | 2 | Elasticidade dos corpos, resistência dos materiais e sistema osteomedular | 200 perguntas ativas |
-| 3 a 8 | Restantes módulos | Em preparação (bloqueados pelo docente) |
+| 3 | Hidrodinâmica | Em preparação (bloqueado pelo docente) |
+| 4 | Hidrostática | Em preparação (bloqueado pelo docente) |
+| 5 | Física atómica e nuclear | Em preparação (bloqueado pelo docente) |
 
 Total atual: **400 perguntas** (todas ativas para os alunos, Tópicos 1 e 2). Os tópicos ativos definem-se em `UNLOCKED_TOPIC_IDS` (`js/questions-data.js`), de escolha múltipla com 4 opções e explicação científica e de aplicação em enfermagem.
 

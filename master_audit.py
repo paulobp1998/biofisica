@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Master Audit Script for the question bank (Topics 1 to 8)
+Master Audit Script for the question bank (Topics 1 to 5)
 Active: Topic 1 (200 questions, IDs 1001-1200) and Topic 2 (200 questions, IDs 2201-2404; 2234, 2235, 2273 and 2298 removed).
-Topics 3-8 are empty and are skipped.
+Topics 3-5 are empty and are skipped.
 """
 
 import json
@@ -22,12 +22,12 @@ global_flagged = []
 global_da_issues = []
 
 print("=" * 80)
-print("MASTER AUDIT: BIOFÍSICA QUESTION BANK (TOPICS 1 - 8)")
+print("MASTER AUDIT: BIOFÍSICA QUESTION BANK (TOPICS 1 - 5)")
 print("=" * 80)
 
 topics_summary = []
 
-for t in range(1, 9):
+for t in range(1, 6):
     path = f"js/data/topic{t}.js"
     with open(path, "r", encoding="utf-8") as f:
         content = f.read()

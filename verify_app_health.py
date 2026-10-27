@@ -2,7 +2,7 @@
 """
 Comprehensive verification test suite for the Biofísica Enfermagem Web App.
 Verifies Topic 1 (200 qs) + Topic 2 (200 qs) [400 questions total],
-Empty Topics 3-8 (0 qs each, waiting for teacher's future request).
+Empty Topics 3-5 (0 qs each, waiting for teacher's future request).
 UNLOCKED_TOPIC_IDS = [1] (Topic 1 active for students, Topic 2 locked for students and accessible to teacher).
 """
 
@@ -25,9 +25,6 @@ def test_app():
         'js/data/topic3.js',
         'js/data/topic4.js',
         'js/data/topic5.js',
-        'js/data/topic6.js',
-        'js/data/topic7.js',
-        'js/data/topic8.js',
         'js/questions-data.js',
         'js/quiz-engine.js',
         'js/lib/paho-mqtt.min.js',
@@ -51,7 +48,7 @@ def test_app():
     # 3. Load Questions Data
     all_questions = []
     topic_counts = {}
-    for t in range(1, 9):
+    for t in range(1, 6):
         path = f"js/data/topic{t}.js"
         with open(path, "r", encoding="utf-8") as f:
             content = f.read()
@@ -64,10 +61,10 @@ def test_app():
     print(f"✓ Topic counts: {topic_counts}")
     assert topic_counts[1] == 200, f"Topic 1 has {topic_counts[1]} questions (expected 200)"
     assert topic_counts[2] == 200, f"Topic 2 has {topic_counts[2]} questions (expected 200)"
-    for t in range(3, 9):
+    for t in range(3, 6):
         assert topic_counts[t] == 0, f"Topic {t} has {topic_counts[t]} questions (expected 0)"
     assert len(all_questions) == 400, f"Total questions is {len(all_questions)} (expected 400)"
-    print("✓ Question count verified: 200 in Topic 1, 200 in Topic 2, 0 in Topics 3-8 (Total: 400 questions).")
+    print("✓ Question count verified: 200 in Topic 1, 200 in Topic 2, 0 in Topics 3-5 (Total: 400 questions).")
 
     # 4. Check IDs are contiguous and distinct
     ids = [q["id"] for q in all_questions]

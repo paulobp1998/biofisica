@@ -1874,10 +1874,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // =========================================================================
   const BADGES_DEFINITIONS = [
     { id: 'first_quiz', icon: '🎓', title: 'Primeiro Passo', desc: 'Completou o primeiro teste na plataforma' },
-    { id: 'topic4_master', icon: '🌊', title: 'Mestre da Hemodinâmica', desc: 'Aproveitamento ≥ 80% no Tópico 4 (Hidrodinâmica)' },
-    { id: 'radiation_pro', icon: '🛡️', title: 'Guardião da Radioproteção', desc: 'Aproveitamento ≥ 80% no Tópico 5 ou 7 (Radiações)' },
-    { id: 'biomech_expert', icon: '🦴', title: 'Biólogo Biomecânico', desc: 'Aproveitamento ≥ 80% no Tópico 1, 2 ou 3 (Mecânica)' },
-    { id: 'nuclear_expert', icon: '⚛️', title: 'Físico Nuclear Clínico', desc: 'Aproveitamento ≥ 80% no Tópico 6 ou 8 (Física Nuclear)' },
+    { id: 'topic4_master', icon: '🌊', title: 'Mestre dos Fluidos', desc: 'Aproveitamento ≥ 80% no Tópico 3 ou 4 (Hidrodinâmica e Hidrostática)' },
+    { id: 'biomech_expert', icon: '🦴', title: 'Biólogo Biomecânico', desc: 'Aproveitamento ≥ 80% no Tópico 1 ou 2 (Mecânica)' },
+    { id: 'nuclear_expert', icon: '⚛️', title: 'Físico Nuclear Clínico', desc: 'Aproveitamento ≥ 80% no Tópico 5 (Física Atómica e Nuclear)' },
     { id: 'honor_roll', icon: '🌟', title: 'Aluno de Honra', desc: 'Nota ≥ 18,0 valores num teste de 20 ou mais questões' },
     { id: 'real_exam_pass', icon: '⏱️', title: 'Prova de Fogo', desc: 'Aprovado em Simulação Real de Frequência (≥ 9,5 val.)' },
     { id: 'clean_mistakes', icon: '🧹', title: 'Caderno Imaculado', desc: 'Treino de erros completado com 100% de acertos' },
@@ -1924,20 +1923,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Tópicos específicos
     if (summary.topicBreakdown) {
-      if (summary.topicBreakdown[4] && summary.topicBreakdown[4].percentage >= 80) {
+      if ((summary.topicBreakdown[3] && summary.topicBreakdown[3].percentage >= 80) ||
+          (summary.topicBreakdown[4] && summary.topicBreakdown[4].percentage >= 80)) {
         unlockBadge('topic4_master');
       }
-      if ((summary.topicBreakdown[5] && summary.topicBreakdown[5].percentage >= 80) ||
-          (summary.topicBreakdown[7] && summary.topicBreakdown[7].percentage >= 80)) {
-        unlockBadge('radiation_pro');
-      }
       if ((summary.topicBreakdown[1] && summary.topicBreakdown[1].percentage >= 80) ||
-          (summary.topicBreakdown[2] && summary.topicBreakdown[2].percentage >= 80) ||
-          (summary.topicBreakdown[3] && summary.topicBreakdown[3].percentage >= 80)) {
+          (summary.topicBreakdown[2] && summary.topicBreakdown[2].percentage >= 80)) {
         unlockBadge('biomech_expert');
       }
-      if ((summary.topicBreakdown[6] && summary.topicBreakdown[6].percentage >= 80) ||
-          (summary.topicBreakdown[8] && summary.topicBreakdown[8].percentage >= 80)) {
+      if (summary.topicBreakdown[5] && summary.topicBreakdown[5].percentage >= 80) {
         unlockBadge('nuclear_expert');
       }
     }
