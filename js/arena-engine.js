@@ -4,7 +4,7 @@
  * Placar ao Vivo, Pódio Final e Relatório de Dificuldade da Turma ("Raio-X da Aula").
  */
 
-const ARENA_MAX_TEAMS = 50;
+const ARENA_MAX_TEAMS = 80;
 
 class ArenaEngine {
   constructor(network) {
