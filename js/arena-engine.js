@@ -252,6 +252,10 @@ class ArenaEngine {
     let pool = [];
     if ((topicId === 'all' || topicId === 'all-unlocked') && typeof QUESTIONS_DATA !== 'undefined') {
       pool = [...QUESTIONS_DATA];
+    } else if (String(topicId).includes(',') && typeof QUESTIONS_DATA !== 'undefined') {
+      // Combinação de tópicos (ex.: "1,2")
+      const ids = String(topicId).split(',').map(Number);
+      pool = QUESTIONS_DATA.filter(q => ids.includes(q.topicId));
     } else if (typeof ALL_TOPIC_COLLECTIONS !== 'undefined' && ALL_TOPIC_COLLECTIONS[topicId]) {
       pool = [...ALL_TOPIC_COLLECTIONS[topicId]];
     } else if (typeof TOPIC_1_QUESTIONS !== 'undefined') {
@@ -272,6 +276,10 @@ class ArenaEngine {
   getTopicName(topicId) {
     if (topicId === 'all' || topicId === 'all-unlocked') {
       return 'Todos os Tópicos Ativos';
+    }
+    if (String(topicId).includes(',')) {
+      const ids = String(topicId).split(',');
+      return 'Tópicos ' + ids.slice(0, -1).join(', ') + ' e ' + ids[ids.length - 1];
     }
     if (typeof TOPICS_DATA !== 'undefined') {
       const t = TOPICS_DATA.find(item => item.id == topicId);
