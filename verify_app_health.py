@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 """
 Comprehensive verification test suite for the Biofísica Enfermagem Web App.
-Verifies Topic 1 (200 qs) + Topic 2 (200 qs) [400 questions total],
-Empty Topics 3-5 (0 qs each, waiting for teacher's future request).
-UNLOCKED_TOPIC_IDS = [1] (Topic 1 active for students, Topic 2 locked for students and accessible to teacher).
+Verifies Topic 1 (200 qs) + Topic 2 (200 qs) + Topic 3 (200 qs) [600 questions total],
+Empty Topics 4-5 (0 qs each, waiting for teacher's future request).
+UNLOCKED_TOPIC_IDS = [1, 2, 3] (Topics 1 to 3 active for students).
 """
 
 import json
@@ -39,11 +39,11 @@ def test_app():
         assert exp_script in scripts, f"Missing script: {exp_script}"
     print("✓ All required script tags in index.html are present and ordered correctly.")
 
-    # 2. Check UI text reflects active Topics 1 and 2 (400 questions) and locked topics
-    assert "400 Questões de Biofísica Ativas (Tópicos 1 e 2)" in html
-    assert "400 perguntas" in html or "400 Questões" in html
+    # 2. Check UI text reflects active Topics 1 to 3 (600 questions) and locked topics
+    assert "600 Questões de Biofísica Ativas (Tópicos 1 a 3)" in html
+    assert "600 perguntas" in html or "600 Questões" in html
     assert "bloqueados" in html.lower()
-    print("✓ UI metadata in index.html properly reflects active Topics 1 and 2 (400 questions) and teacher panel (400 questions).")
+    print("✓ UI metadata in index.html properly reflects active Topics 1 to 3 (600 questions) and teacher panel (600 questions).")
 
     # 3. Load Questions Data
     all_questions = []
@@ -61,10 +61,11 @@ def test_app():
     print(f"✓ Topic counts: {topic_counts}")
     assert topic_counts[1] == 200, f"Topic 1 has {topic_counts[1]} questions (expected 200)"
     assert topic_counts[2] == 200, f"Topic 2 has {topic_counts[2]} questions (expected 200)"
-    for t in range(3, 6):
+    assert topic_counts[3] == 200, f"Topic 3 has {topic_counts[3]} questions (expected 200)"
+    for t in range(4, 6):
         assert topic_counts[t] == 0, f"Topic {t} has {topic_counts[t]} questions (expected 0)"
-    assert len(all_questions) == 400, f"Total questions is {len(all_questions)} (expected 400)"
-    print("✓ Question count verified: 200 in Topic 1, 200 in Topic 2, 0 in Topics 3-5 (Total: 400 questions).")
+    assert len(all_questions) == 600, f"Total questions is {len(all_questions)} (expected 600)"
+    print("✓ Question count verified: 200 in Topics 1, 2 and 3, 0 in Topics 4-5 (Total: 600 questions).")
 
     # 4. Check IDs are contiguous and distinct
     ids = [q["id"] for q in all_questions]
@@ -75,7 +76,9 @@ def test_app():
     # 2234, 2235, 2273 e 2298 foram removidas (dependiam de k = E·A/L₀) e os IDs não se reutilizam
     removed_t2 = {2234, 2235, 2273, 2298}
     assert t2_ids == [i for i in range(2201, 2405) if i not in removed_t2], "Topic 2 IDs must be 2201-2404 without the removed ones"
-    print("✓ All 400 IDs are unique (1001-1200 and 2201-2404, without the 4 removed IDs).")
+    t3_ids = sorted(q["id"] for q in all_questions if q["topicId"] == 3)
+    assert t3_ids == list(range(3001, 3201)), "Topic 3 IDs must be 3001-3200"
+    print("✓ All 600 IDs are unique (1001-1200, 2201-2404 without the 4 removed IDs, 3001-3200).")
 
     # 5. Check search index simulation
     keywords = ["Inércia", "Momento", "Hooke", "Young", "Cisalhamento", "Compressão", "Alavanca", "Newton", "Atrito"]
@@ -83,13 +86,13 @@ def test_app():
         matches = [q for q in all_questions if kw.lower() in q["question"].lower() or kw.lower() in q["explanation"].lower() or any(kw.lower() in opt.lower() for opt in q["options"])]
         print(f"  • Search '{kw}': {len(matches)} matching questions found.")
         assert len(matches) > 0, f"Expected matches for keyword '{kw}'"
-    print("✓ Search capability simulation successful across 400 questions.")
+    print("✓ Search capability simulation successful across 600 questions.")
 
     # 6. Check Unlocked Questions in questions-data.js
     with open("js/questions-data.js", "r", encoding="utf-8") as f:
         q_data_js = f.read()
-    assert "UNLOCKED_TOPIC_IDS = [1, 2]" in q_data_js, "UNLOCKED_TOPIC_IDS not set to [1, 2]"
-    print("✓ UNLOCKED_TOPIC_IDS = [1, 2] verified in questions-data.js.")
+    assert "UNLOCKED_TOPIC_IDS = [1, 2, 3]" in q_data_js, "UNLOCKED_TOPIC_IDS not set to [1, 2, 3]"
+    print("✓ UNLOCKED_TOPIC_IDS = [1, 2, 3] verified in questions-data.js.")
 
     # 7. Check Distractor Analysis and Options
     for q in all_questions:
@@ -98,7 +101,7 @@ def test_app():
         assert len(q["distractorAnalysis"]) == 3, f"Q#{q['id']} distractor count != 3"
         for d in q["distractorAnalysis"]:
             assert d.startswith("Está incorreta: "), f"Q#{q['id']} invalid distractor format"
-    print("✓ All 400 questions satisfy: 4 unique options, 3 distractors starting with 'Está incorreta: ', correctIndex in 0-3.")
+    print("✓ All 600 questions satisfy: 4 unique options, 3 distractors starting with 'Está incorreta: ', correctIndex in 0-3.")
 
     # 8. Check Official AI Disclaimer Announcement in index.html
     expected_ai_notice = (

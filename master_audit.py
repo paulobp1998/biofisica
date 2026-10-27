@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 Master Audit Script for the question bank (Topics 1 to 5)
-Active: Topic 1 (200 questions, IDs 1001-1200) and Topic 2 (200 questions, IDs 2201-2404; 2234, 2235, 2273 and 2298 removed).
-Topics 3-5 are empty and are skipped.
+Active: Topic 1 (200 questions, IDs 1001-1200), Topic 2 (200 questions, IDs 2201-2404; 2234, 2235, 2273 and 2298 removed)
+and Topic 3 (200 questions, IDs 3001-3200). Topics 4-5 are empty and are skipped.
 """
 
 import json
@@ -37,7 +37,7 @@ for t in range(1, 6):
 
     data = json.loads(match.group(1))
     t_count = len(data)
-    expected_count = 200 if t in (1, 2) else 0
+    expected_count = 200 if t in (1, 2, 3) else 0
     assert t_count == expected_count, f"Topic {t} has {t_count} questions instead of {expected_count}"
     if t_count == 0:
         print(f"Topic {t:02d}: empty (locked)")
@@ -114,8 +114,8 @@ for t in range(1, 6):
     assert len(t_da_issues) == 0, f"Topic {t} DA issues: {t_da_issues}"
 
 print("-" * 80)
-print(f"TOTAL QUESTIONS AUDITED: {total_questions} (Expected: 400)")
-print(f"GLOBAL ANSWER DISTRIBUTION: {global_counts} (target 100 of each)")
+print(f"TOTAL QUESTIONS AUDITED: {total_questions} (Expected: 600)")
+print(f"GLOBAL ANSWER DISTRIBUTION: {global_counts} (target 150 of each)")
 print(f"GLOBAL AVERAGE LENGTH RATIO: {sum(global_ratios)/len(global_ratios):.2f}")
 print(f"GLOBAL MIN RATIO: {min(global_ratios):.2f}, GLOBAL MAX RATIO: {max(global_ratios):.2f}")
 print(f"QUESTIONS WITH RATIO > 1.35: {sum(1 for r in global_ratios if r > 1.35)}")
@@ -124,7 +124,7 @@ print(f"QUESTIONS WITH FLAGGED WORDS: {len(global_flagged)}")
 print(f"QUESTIONS WITH DA COUNT/PREFIX ISSUES: {len(global_da_issues)}")
 print("=" * 80)
 
-assert total_questions == 400
+assert total_questions == 600
 assert len(global_da_issues) == 0
 
 print("RESULT: STRUCTURE OK (warnings above are quality hints, not failures).")

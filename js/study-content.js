@@ -1,5 +1,5 @@
 /**
- * Conteúdo de estudo estruturado (Tópicos 1 e 2) e glossário de termos.
+ * Conteúdo de estudo estruturado (Tópicos 1 a 3) e glossário de termos.
  *
  * - STUDY_BLOCKS: resumo teórico dividido em conceitos. Cada conceito tem fórmulas,
  *   corpo, erro comum e aplicação em enfermagem. Os conceitos são ligados às perguntas
@@ -207,6 +207,101 @@ const STUDY_BLOCKS = [
       </ul>`,
     pitfall: 'Mineral = compressão e dureza; colagénio = tração e tenacidade. Um osso sem colagénio fica rígido mas frágil, e um osso com pouco mineral fica flexível.',
     nursing: 'No utente acamado há perda de massa óssea por ausência de carga: o levante precoce e o apoio gradual, conforme indicação clínica, estimulam o osso. Em idosos com osteoporose, uma queda da própria altura pode fraturar o colo do fémur.'
+  },
+  // ---------------------------------------------------------------- Tópico 3
+  {
+    id: 't3-viscosidade',
+    topicId: 3,
+    icon: '🍯',
+    title: 'Líquidos, viscosidade e viscosidade do sangue',
+    formulas: [
+      { expr: '1 poiseuille = 10 poise', note: 'unidades de viscosidade (η)' }
+    ],
+    body: `
+      <ul>
+        <li><strong>Líquidos:</strong> não têm forma própria (tomam a forma do recipiente) e têm volume constante.</li>
+        <li><strong>Hidrodinâmica</strong> (do grego <em>hydor</em>, água): estuda os líquidos em movimento; aqui, dentro de condutores cilíndricos, para a aplicar ao sistema circulatório.</li>
+        <li><strong>Viscosidade (η):</strong> resistência que um fluido oferece ao seu escoamento. Resulta das forças intermoleculares entre moléculas vizinhas e varia com a temperatura e com a composição.</li>
+        <li><strong>Sangue:</strong> viscosidade cerca de 3 vezes a da água. Plasma ≈ 55% e elementos figurados ≈ 45% do volume; os glóbulos vermelhos são os que mais contribuem para a viscosidade (a camada leucoplaquetária é cerca de 1%).</li>
+        <li><strong>Hematócrito:</strong> percentagem do volume de sangue ocupada pelos glóbulos vermelhos. Hematócrito elevado (ou muitas plaquetas) aumenta a viscosidade; com fluxo muito lento, os glóbulos vermelhos agregam-se em «pilhas» e a viscosidade também aumenta.</li>
+      </ul>`,
+    pitfall: 'Viscosidade não é densidade: a viscosidade mede a resistência ao escoamento, a densidade (ρ) mede a massa por unidade de volume. Na anemia há menos glóbulos vermelhos, por isso a viscosidade diminui (não aumenta).',
+    nursing: 'Na desidratação o hematócrito sobe e o sangue fica mais viscoso, o que aumenta o esforço do coração; na anemia o hematócrito desce e a viscosidade diminui.'
+  },
+  {
+    id: 't3-regimes',
+    topicId: 3,
+    icon: '🌊',
+    title: 'Regime laminar e regime turbulento',
+    formulas: [],
+    body: `
+      <ul>
+        <li><strong>Regime laminar:</strong> o fluido desloca-se em camadas concêntricas, sem mistura entre elas; as linhas de corrente são paralelas e não se cruzam. A camada aderente à parede tem velocidade nula e a velocidade é máxima no eixo do tubo (perfil parabólico). Gasta menos energia e é silencioso.</li>
+        <li><strong>Regime turbulento:</strong> movimento desorganizado, com turbilhões que misturam as camadas; as linhas de corrente cruzam-se e as partículas passam de uma linha para outra. A velocidade é semelhante em quase toda a secção (perfil quase plano). Gasta mais energia e produz ruído.</li>
+        <li><strong>Experiência de Reynolds (1883):</strong> num tubo de vidro com água, injeta-se um fio fino de corante no centro do fluxo. Com caudal baixo, o fio mantém-se contínuo (laminar); com caudal elevado, o corante dispersa-se (turbulento).</li>
+        <li><strong>Favorecem a turbulência:</strong> maior velocidade, maior diâmetro, maior densidade, menor viscosidade; curvaturas, ângulos e bifurcações; parede interna áspera ou variações de calibre.</li>
+      </ul>`,
+    pitfall: 'No regime laminar a velocidade não é igual em toda a secção: é nula junto à parede e máxima no eixo. O perfil quase plano é característico do regime turbulento.',
+    nursing: 'Como o regime turbulento gasta mais energia, o organismo repõe o regime laminar sempre que possível; uma variação de calibre, como uma placa de ateroma, favorece a turbulência local.'
+  },
+  {
+    id: 't3-reynolds',
+    topicId: 3,
+    icon: '🔢',
+    title: 'Número de Reynolds e caudal crítico',
+    formulas: [
+      { expr: 'Re = v · ρ · d / η', note: 'adimensional; v em cm/s, ρ em g/cm³, d (diâmetro) em cm, η em poise' }
+    ],
+    example: 'Artéria com d = 0,4 cm, ρ = 1,06 g/cm³, η = 0,04 poise e v = 20 cm/s: Re = 20 × 1,06 × 0,4 / 0,04 = 212 (laminar). Para Re = 2000: v = 2000 × 0,04 / (1,06 × 0,4) ≈ 189 cm/s.',
+    body: `
+      <ul>
+        <li><strong>Re &lt; 2000:</strong> regime laminar. <strong>2000 &lt; Re &lt; 4000:</strong> zona de transição. <strong>Re &gt; 4000:</strong> regime turbulento.</li>
+        <li>Re aumenta com a velocidade, a densidade e o diâmetro, e diminui com a viscosidade. Como é proporcional a cada um destes fatores, duplicar v duplica Re; reduzir η para metade também duplica Re.</li>
+        <li><strong>Caudal crítico:</strong> caudal a partir do qual Re atinge o valor crítico e o regime passa de laminar a turbulento. Para o mesmo fluido, varia diretamente com o raio: quanto menor o vaso, menor o caudal crítico.</li>
+      </ul>`,
+    pitfall: 'Em Re entra o diâmetro (d), não o raio. Se só for dado o raio, d = 2 · R. As unidades têm de ser coerentes (c.g.s.): passar mm para cm antes de calcular.',
+    nursing: 'Na anemia a viscosidade do sangue diminui, o que, para a mesma velocidade e o mesmo vaso, aumenta Re e a tendência para a turbulência.'
+  },
+  {
+    id: 't3-circulacao',
+    topicId: 3,
+    icon: '🫀',
+    title: 'Sistema circulatório e medição da pressão arterial',
+    formulas: [],
+    body: `
+      <ul>
+        <li><strong>Regime laminar (a regra):</strong> arteríolas, vénulas e capilares, com baixa velocidade e baixo calibre. Nos capilares, o escoamento laminar e lento favorece as trocas entre o sangue e os tecidos.</li>
+        <li><strong>Turbulência mais provável:</strong> aorta, artéria pulmonar e seios de Valsalva, sobretudo durante as sístoles (alta velocidade e grande calibre).</li>
+        <li><strong>Exceções:</strong> nas veias cavas (grande calibre, velocidade baixa) pode haver regime laminar; na aorta abdominal, em zonas de velocidade baixa, também. No exercício físico pode surgir turbulência transitória.</li>
+        <li><strong>Controlo do caudal:</strong> sobretudo por vasoconstrição e vasodilatação (músculo liso, por ação nervosa e hormonal), sem praticamente gerar turbulência.</li>
+        <li><strong>Pressão e resistência:</strong> a pressão é máxima nas artérias e diminui até às veias (onde pode ser negativa); a resistência é máxima nas arteríolas.</li>
+        <li><strong>Sons de Korotkoff:</strong> com a braçadeira insuflada a artéria fica comprimida e não há fluxo; ao desinsuflar, o sangue passa na artéria parcialmente comprimida, a maior velocidade, em regime turbulento, e ouvem-se sons no estetoscópio; com a artéria livre, o fluxo volta a laminar e os sons desaparecem.</li>
+      </ul>`,
+    pitfall: 'Os sons de Korotkoff não surgem com a artéria totalmente ocluída (não há fluxo) nem com a artéria livre (regime laminar, silencioso): surgem quando a artéria está parcialmente comprimida.',
+    nursing: 'Na medição auscultatória da pressão arterial, a desinsuflação lenta da braçadeira permite identificar o aparecimento e o desaparecimento dos sons de Korotkoff.'
+  },
+  {
+    id: 't3-poiseuille',
+    topicId: 3,
+    icon: '💉',
+    title: 'Caudal, lei de Poiseuille e resistência hidráulica',
+    formulas: [
+      { expr: 'D = V / t', note: 'caudal (débito); 1 cm³ = 1 mL' },
+      { expr: 'D = π · ΔP · R⁴ / (8 · η · L)', note: 'lei de Poiseuille (regime laminar; R = raio)' },
+      { expr: 'ΔP = R<sub>h</sub> · D', note: 'diferença de pressão e caudal' },
+      { expr: 'R<sub>h</sub> = 8 · η · L / (π · R⁴)', note: 'resistência hidráulica (poise/cm³)' }
+    ],
+    example: '750 mL em 5 h: D = 750 / 5 = 150 mL/h = 2,5 mL/min. Dois cateteres iguais exceto no raio (0,5 mm e 0,25 mm): o de raio duplo tem caudal 2⁴ = 16 vezes maior.',
+    body: `
+      <ul>
+        <li><strong>Caudal (D):</strong> volume de líquido que passa numa secção do condutor por unidade de tempo.</li>
+        <li><strong>Lei de Poiseuille:</strong> descreve o escoamento laminar de um fluido viscoso num tubo cilíndrico, horizontal, reto e rígido. O caudal aumenta quando a diferença de pressão aumenta, quando a viscosidade ou o comprimento diminuem e, sobretudo, quando o raio aumenta (4.ª potência).</li>
+        <li><strong>Efeito do raio:</strong> raio a dobrar → caudal 16 vezes maior; raio a metade → caudal 16 vezes menor. Uma pequena constrição provoca uma grande alteração do caudal.</li>
+        <li><strong>Cateteres:</strong> em gauge (G), quanto menor o número, maior o diâmetro (14G tem maior diâmetro do que 22G). Um cateter de maior raio e mais curto permite um caudal muito superior; um líquido mais viscoso (ex.: sangue) reduz o caudal.</li>
+        <li><strong>Resistência hidráulica:</strong> ΔP = R<sub>h</sub> · D, com R<sub>h</sub> = 8 · η · L / (π · R⁴). Aumenta com η e L e diminui fortemente com o raio. Só é válida em regime laminar.</li>
+      </ul>`,
+    pitfall: 'Na lei de Poiseuille entra o raio à 4.ª potência, não o diâmetro nem R². Para comparar dois tubos, basta a razão dos raios elevada à 4.ª potência.',
+    nursing: 'Para perfundir rapidamente, um cateter de maior calibre (menor número G) e mais curto permite maior caudal; a escolha segue sempre a prescrição e o protocolo da instituição.'
   }
 ];
 
@@ -230,6 +325,15 @@ const T2_CONCEPT_ALLOCATION = (() => {
   };
 })();
 
+// Tópico 3: IDs 3001 a 3200 (posição = id - 3000).
+const T3_CONCEPT_RANGES = {
+  't3-viscosidade': [[1, 12], [101, 120]],
+  't3-regimes': [[13, 50]],
+  't3-reynolds': [[51, 88], [143, 150]],
+  't3-circulacao': [[89, 100], [121, 142]],
+  't3-poiseuille': [[151, 200]]
+};
+
 function getConceptId(questionId) {
   const topic = Math.floor(questionId / 1000);
   if (topic === 1) {
@@ -245,6 +349,13 @@ function getConceptId(questionId) {
       if (list.includes(pos)) return cid;
     }
     return 't2-hooke';
+  }
+  if (topic === 3) {
+    const pos = questionId - 3000;
+    for (const [cid, ranges] of Object.entries(T3_CONCEPT_RANGES)) {
+      if (ranges.some(([a, b]) => pos >= a && pos <= b)) return cid;
+    }
+    return null;
   }
   return null;
 }
@@ -308,5 +419,19 @@ const GLOSSARY = [
   { t: 'Hidroxiapatite', a: ['fase mineral'], d: 'Mineral do osso (fosfato de cálcio) que dá dureza e resistência à compressão.', c: 't2-osso' },
   { t: 'Colagénio tipo I', a: ['colagénio', 'matriz orgânica'], d: 'Proteína da matriz óssea que dá elasticidade, tenacidade e resistência à tração.', c: 't2-osso' },
   { t: 'Osso cortical e trabecular', a: ['compacto', 'esponjoso', 'cortical', 'trabecular'], d: 'O cortical é compacto e rígido; o trabecular é poroso e amortece impactos.', c: 't2-osso' },
-  { t: 'Lei de Wolff', a: ['remodelação óssea'], d: 'O osso remodela-se em resposta às solicitações mecânicas a que está sujeito.', c: 't2-osso' }
+  { t: 'Lei de Wolff', a: ['remodelação óssea'], d: 'O osso remodela-se em resposta às solicitações mecânicas a que está sujeito.', c: 't2-osso' },
+  { t: 'Hidrodinâmica', d: 'Estudo dos líquidos em movimento; aqui, dentro de condutores cilíndricos, com aplicação ao sistema circulatório.', c: 't3-viscosidade' },
+  { t: 'Viscosidade (η)', a: ['η', 'poise', 'poiseuille'], d: 'Resistência que um fluido oferece ao seu escoamento, devida às forças intermoleculares. Varia com a temperatura e a composição. 1 poiseuille = 10 poise.', c: 't3-viscosidade' },
+  { t: 'Hematócrito', d: 'Percentagem do volume de sangue ocupada pelos glóbulos vermelhos. Hematócrito alto aumenta a viscosidade do sangue; baixo (anemia) diminui-a.', c: 't3-viscosidade' },
+  { t: 'Regime laminar', a: ['laminar', 'perfil parabólico'], d: 'Escoamento em camadas paralelas, sem mistura; velocidade nula na parede e máxima no eixo do tubo.', c: 't3-regimes' },
+  { t: 'Regime turbulento', a: ['turbulento', 'turbilhões'], d: 'Escoamento desorganizado, com turbilhões e mistura entre camadas; perfil de velocidades quase plano e maior gasto de energia.', c: 't3-regimes' },
+  { t: 'Linhas de corrente', d: 'Trajetórias das partículas do fluido: paralelas no regime laminar, cruzam-se no regime turbulento.', c: 't3-regimes' },
+  { t: 'Número de Reynolds (Re)', a: ['Re', 'Reynolds'], d: 'Re = v · ρ · d / η, sem unidades. Re < 2000: laminar; 2000 a 4000: transição; Re > 4000: turbulento.', c: 't3-reynolds' },
+  { t: 'Caudal crítico', d: 'Caudal a partir do qual Re atinge o valor crítico e o regime passa de laminar a turbulento. Para o mesmo fluido, varia diretamente com o raio do vaso.', c: 't3-reynolds' },
+  { t: 'Vasoconstrição e vasodilatação', a: ['vasoconstrição', 'vasodilatação', 'músculo liso'], d: 'Diminuição e aumento do calibre dos vasos pelo músculo liso. São o principal meio de controlo do caudal.', c: 't3-circulacao' },
+  { t: 'Sons de Korotkoff', a: ['Korotkoff', 'pressão arterial'], d: 'Sons ouvidos na medição da pressão arterial, produzidos pelo fluxo turbulento na artéria parcialmente comprimida pela braçadeira.', c: 't3-circulacao' },
+  { t: 'Caudal (D)', a: ['débito', 'D = V/t'], d: 'Volume de líquido que passa numa secção do condutor por unidade de tempo: D = V / t (1 cm³ = 1 mL).', c: 't3-poiseuille' },
+  { t: 'Lei de Poiseuille', a: ['Poiseuille', 'R⁴'], d: 'D = π · ΔP · R⁴ / (8 · η · L), em regime laminar: o caudal é proporcional à 4.ª potência do raio.', c: 't3-poiseuille' },
+  { t: 'Resistência hidráulica (R<sub>h</sub>)', a: ['resistência hidráulica', 'R<sub>h</sub>', 'Rh'], d: 'R<sub>h</sub> = 8 · η · L / (π · R⁴), com ΔP = R<sub>h</sub> · D. Em poise/cm³ (c.g.s.).', c: 't3-poiseuille' },
+  { t: 'Gauge (G)', a: ['cateter', 'calibre do cateter'], d: 'Escala do calibre dos cateteres: quanto menor o número, maior o diâmetro (14G tem maior raio do que 22G).', c: 't3-poiseuille' }
 ];
