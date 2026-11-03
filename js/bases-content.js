@@ -76,9 +76,9 @@ const BASES_LESSONS = [
           <tr><td>10<sup>6</sup></td><td>1&nbsp;000&nbsp;000</td><td>um milhão</td></tr>
           <tr><td>10<sup>3</sup></td><td>1000</td><td>mil</td></tr>
           <tr><td>10<sup>0</sup></td><td>1</td><td>um</td></tr>
-          <tr><td>10<sup>−1</sup></td><td>0,1</td><td>uma décima</td></tr>
-          <tr><td>10<sup>−3</sup></td><td>0,001</td><td>uma milésima</td></tr>
-          <tr><td>10<sup>−6</sup></td><td>0,000&nbsp;001</td><td>uma milionésima</td></tr>
+          <tr><td>10<sup>−1</sup></td><td>0,1</td><td>um décimo</td></tr>
+          <tr><td>10<sup>−3</sup></td><td>0,001</td><td>um milésimo</td></tr>
+          <tr><td>10<sup>−6</sup></td><td>0,000&nbsp;001</td><td>um milionésimo</td></tr>
         </tbody>
       </table></div>
       <div class="formula-box"><div class="formula-box-title">Regras de cálculo</div>
@@ -130,9 +130,9 @@ const BASES_LESSONS = [
       </div>
       <p><strong>Como escrever um número em notação científica (3 passos):</strong></p>
       <ol>
-        <li>Desloca a vírgula até ficar <strong>um só algarismo diferente de zero</strong> antes dela (esse é o a).</li>
+        <li>Desloca a vírgula até ficar <strong>exatamente um algarismo antes dela, diferente de zero</strong> (o número resultante é o a, entre 1 e 10).</li>
         <li>Conta quantas casas a vírgula andou: esse é o valor de n (sem sinal).</li>
-        <li>Se o número era <strong>grande</strong> (a vírgula andou para a esquerda), n é <strong>positivo</strong>; se era <strong>pequeno</strong>, menor do que 1 (a vírgula andou para a direita), n é <strong>negativo</strong>.</li>
+        <li>Se o número é <strong>maior ou igual a 10</strong> (a vírgula andou para a esquerda), n é <strong>positivo</strong>; se é <strong>menor do que 1</strong> (a vírgula andou para a direita), n é <strong>negativo</strong>; se já está entre 1 e 10, n = 0.</li>
       </ol>
       <p><strong>Para voltar à forma decimal</strong> faz o caminho inverso: n positivo, a vírgula anda n casas para a direita; n negativo, anda n casas para a esquerda (acrescentando zeros se for preciso).</p>`,
     examples: [
@@ -184,7 +184,7 @@ const BASES_LESSONS = [
         <li><strong>Multiplicar:</strong> multiplicam-se os números da frente e <strong>somam-se</strong> os expoentes.</li>
         <li><strong>Dividir:</strong> dividem-se os números da frente e <strong>subtraem-se</strong> os expoentes.</li>
         <li><strong>Somar ou subtrair:</strong> primeiro põem-se os dois números com o <strong>mesmo expoente</strong>; só depois se somam os números da frente.</li>
-        <li><strong>No fim, confirma:</strong> se o número da frente ficou maior do que 10 (ou menor do que 1), acerta-o e corrige o expoente.</li>
+        <li><strong>No fim, confirma:</strong> se o número da frente ficou igual ou maior do que 10 (ou menor do que 1), acerta-o e corrige o expoente.</li>
       </ul>
       <p><strong>Na calculadora</strong> usa a tecla <code>EXP</code>, <code>EE</code> ou <code>×10<sup>x</sup></code>, que já significa «vezes 10 elevado a». Para 3,2 × 10<sup>−4</sup> carrega: <code>3.2</code> <code>EXP</code> <code>(−)</code> <code>4</code>. Não escrevas «× 10» antes da tecla EXP: obterias um valor 10 vezes maior.</p>`,
     examples: [
@@ -302,8 +302,10 @@ const BASES_LESSONS = [
       <div class="bases-table-wrap"><table class="bases-table">
         <thead><tr><th>Grandeza derivada (exemplos)</th><th>Unidade SI</th></tr></thead>
         <tbody>
-          <tr><td>área / volume</td><td>m² / m³</td></tr>
-          <tr><td>velocidade / aceleração</td><td>m/s / m/s²</td></tr>
+          <tr><td>área</td><td>m²</td></tr>
+          <tr><td>volume</td><td>m³</td></tr>
+          <tr><td>velocidade</td><td>m/s</td></tr>
+          <tr><td>aceleração</td><td>m/s²</td></tr>
           <tr><td>força (e peso)</td><td>newton, N (1 N = 1 kg · m/s²)</td></tr>
           <tr><td>momento de uma força</td><td>N · m</td></tr>
           <tr><td>pressão e tensão</td><td>N/m²</td></tr>
@@ -381,7 +383,7 @@ const BASES_LESSONS = [
       }
     ],
     pitfall: 'Confundir mg com µg: a diferença é de 1000 vezes. Um erro destes numa prescrição é um erro de dose de 1000×.',
-    nursing: 'Em prescrições, os microgramas escrevem-se muitas vezes «mcg» em vez de «µg», precisamente para não serem confundidos com mg; a hemoglobina aparece nas análises em g/dL.',
+    nursing: 'Nas prescrições recomenda-se escrever «microgramas» por extenso (ou «mcg») e não «µg», que, manuscrito, se confunde facilmente com «mg»; a hemoglobina aparece nas análises em g/dL.',
     exercises: [
       {
         q: 'Quanto são 500 mg, em gramas?',
@@ -435,7 +437,7 @@ const BASES_LESSONS = [
         steps: ['1 cm² = 10<sup>−4</sup> m²', '150 cm² = 150 × 10<sup>−4</sup> m²', '= 1,5 × 10<sup>−2</sup> m² (= 0,015 m²)']
       },
       {
-        title: 'Um débito: 500 mL em 4 h',
+        title: 'Um caudal (débito de perfusão): 500 mL em 4 h',
         steps: ['Em mL/h: 500 / 4 = 125 mL/h', 'Em cm³/s: 4 h = 4 × 3600 s = 14&nbsp;400 s', '500 cm³ / 14&nbsp;400 s ≈ 3,5 × 10<sup>−2</sup> cm³/s']
       },
       {
@@ -477,14 +479,14 @@ const BASES_LESSONS = [
       <ul>
         <li><strong>Diretamente proporcional:</strong> quando uma grandeza duplica, a outra também duplica. Exemplo: P = m · g (o dobro da massa tem o dobro do peso).</li>
         <li><strong>Inversamente proporcional:</strong> quando uma grandeza duplica, a outra passa para metade. Exemplo: em p = F/A, com a mesma força, o dobro da área dá metade da pressão.</li>
-        <li><strong>Proporcional a uma potência:</strong> na lei de Poiseuille, o caudal D é proporcional a R<sup>4</sup>. Se o raio passar para metade, D fica multiplicado por (1/2)<sup>4</sup> = 1/16.</li>
+        <li><strong>Proporcional a uma potência:</strong> na lei de Poiseuille, mantendo ΔP, η e o comprimento, o caudal D é proporcional a R<sup>4</sup>. Se o raio passar para metade, D fica multiplicado por (1/2)<sup>4</sup> = 1/16.</li>
       </ul>
       <div class="formula-box"><div class="formula-box-title">Regra de três simples (relação direta)</div>
         <div class="formula-row"><code>a → b</code><span>valor conhecido</span></div>
         <div class="formula-row"><code>c → x</code><span>valor procurado</span></div>
         <div class="formula-row"><code>x = (b × c) / a</code><span>multiplica em cruz e divide</span></div>
       </div>
-      <p>Antes de aplicar a regra de três, pergunta-te: «se uma aumenta, a outra aumenta ou diminui?». A regra de três direta só serve quando as duas aumentam juntas.</p>`,
+      <p>Antes de aplicar a regra de três, pergunta-te: «se uma aumenta, a outra aumenta ou diminui?». A regra de três direta só serve quando as duas são diretamente proporcionais (o dobro de uma dá o dobro da outra).</p>`,
     examples: [
       {
         title: 'Volume de medicamento a administrar',
@@ -496,7 +498,7 @@ const BASES_LESSONS = [
       }
     ],
     pitfall: 'Aplicar a regra de três direta a uma relação inversa (por exemplo, concluir que mais área dá mais pressão).',
-    nursing: 'As superfícies de redistribuição de pressão aumentam a área de contacto com o corpo, o que reduz a pressão de interface sobre o sacro e os calcâneos para o mesmo peso.',
+    nursing: 'As superfícies de redistribuição de pressão aumentam a área de contacto com o corpo, o que reduz a pressão de interface sobre o sacro para o mesmo peso.',
     exercises: [
       {
         q: 'Um xarope tem 120 mg de fármaco em 5 mL. Que volume corresponde a uma dose de 300 mg?',
@@ -590,7 +592,7 @@ const BASES_LESSONS = [
       </ul>
       <div class="formula-box"><div class="formula-box-title">Somar duas forças</div>
         <div class="formula-row"><code>F<sub>R</sub> = F<sub>1</sub> + F<sub>2</sub></code><span>mesma direção, mesmo sentido</span></div>
-        <div class="formula-row"><code>F<sub>R</sub> = F<sub>1</sub> − F<sub>2</sub></code><span>mesma direção, sentidos opostos (fica o sentido da maior)</span></div>
+        <div class="formula-row"><code>F<sub>R</sub> = F<sub>maior</sub> − F<sub>menor</sub></code><span>mesma direção, sentidos opostos (fica o sentido da maior)</span></div>
         <div class="formula-row"><code>F<sub>R</sub> = √(F<sub>1</sub>² + F<sub>2</sub>²)</code><span>forças perpendiculares (teorema de Pitágoras)</span></div>
       </div>`,
     examples: [
@@ -604,7 +606,7 @@ const BASES_LESSONS = [
       }
     ],
     pitfall: 'Somar forças perpendiculares como números simples: 30 N e 40 N perpendiculares dão 50 N, não 70 N.',
-    nursing: 'Numa tração cutânea, a carga suspensa e a direção da corda definem a intensidade, a direção e o sentido da força aplicada ao membro.',
+    nursing: 'Numa tração cutânea, o peso da carga suspensa (P = m · g, em N) define a intensidade da força aplicada ao membro, e a corda define a sua direção e sentido.',
     exercises: [
       {
         q: 'Qual destas grandezas é vetorial?',
@@ -635,7 +637,7 @@ const BASES_LESSONS = [
     goal: 'Usar o seno e o cosseno para decompor uma força, por exemplo o peso num plano inclinado.',
     body: `
       <ul>
-        <li><strong>Triângulo retângulo:</strong> tem um ângulo de 90°. O lado maior, oposto ao ângulo reto, é a <strong>hipotenusa</strong>. Para um ângulo θ, o <strong>cateto oposto</strong> fica em frente a θ e o <strong>cateto adjacente</strong> fica encostado a θ.</li>
+        <li><strong>Triângulo retângulo:</strong> tem um ângulo de 90°. O lado maior, oposto ao ângulo reto, é a <strong>hipotenusa</strong>. Para um ângulo θ, o <strong>cateto oposto</strong> fica em frente a θ e o <strong>cateto adjacente</strong> é o cateto (não a hipotenusa) que forma o ângulo θ.</li>
         <li><strong>Calculadora em graus:</strong> confirma que aparece «D» ou «DEG» no ecrã. Em modo «RAD», sin 30 dá −0,988 em vez de 0,5.</li>
       </ul>
       <div class="formula-box"><div class="formula-box-title">Definições</div>
@@ -649,7 +651,7 @@ const BASES_LESSONS = [
           <tr><td>cos θ</td><td>1</td><td>0,866</td><td>0,707</td><td>0,5</td><td>0</td></tr>
         </tbody>
       </table></div>
-      <p><strong>Plano inclinado:</strong> o peso P decompõe-se em duas componentes, uma <strong>paralela ao plano</strong>, P<sub>t</sub> = P · sin θ (a que faz o corpo tender a deslizar), e outra <strong>perpendicular ao plano</strong>, P<sub>n</sub> = P · cos θ (a que comprime a superfície). Quanto maior o ângulo, maior P<sub>t</sub> e menor P<sub>n</sub>.</p>`,
+      <p><strong>Plano inclinado</strong> (θ é o ângulo entre o plano e a horizontal): o peso P decompõe-se em duas componentes, uma <strong>paralela ao plano</strong>, P<sub>t</sub> = P · sin θ (a que faz o corpo tender a deslizar), e outra <strong>perpendicular ao plano</strong>, P<sub>n</sub> = P · cos θ (a que comprime a superfície). Quanto maior o ângulo, maior P<sub>t</sub> e menor P<sub>n</sub>.</p>`,
     examples: [
       {
         title: 'Utente de 60 kg num plano a 30°',
@@ -657,7 +659,7 @@ const BASES_LESSONS = [
       }
     ],
     pitfall: 'Trocar o seno pelo cosseno. Num plano inclinado, a componente paralela ao plano usa o seno e a perpendicular usa o cosseno, quando θ é a inclinação do plano.',
-    nursing: 'Elevar a cabeceira da cama aumenta a componente do peso paralela ao colchão, que faz o utente escorregar para os pés da cama e aumenta as forças de cisalhamento sobre o sacro.',
+    nursing: 'Elevar a cabeceira da cama aumenta a componente do peso paralela ao colchão, que tende a fazer o utente deslizar para os pés da cama; como o atrito retém a pele, aumentam as forças de cisalhamento sobre o sacro.',
     exercises: [
       {
         q: 'Num triângulo retângulo, o seno de um ângulo θ é igual a:',
