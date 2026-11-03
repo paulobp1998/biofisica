@@ -3,7 +3,7 @@
  * Hidrodinâmica: viscosidade, regimes laminar e turbulento, número de Reynolds,
  * sistema circulatório, caudal, lei de Poiseuille, resistência hidráulica e sons de Korotkoff
  * Revisto por especialista (validade científica)
- * Total de Questões: 200 (IDs 3001 a 3200)
+ * Total de Questões: 200 (IDs 3001 a 3208; 3096, 3097, 3098, 3100, 3110, 3144, 3145 e 3147 removidas por não serem respondíveis com os diapositivos)
  */
 
 const TOPIC_3_QUESTIONS = [
@@ -2125,63 +2125,6 @@ const TOPIC_3_QUESTIONS = [
     "nursingApplication": "Este aumento de Re no ponto comprimido explica porque é que os sons só se ouvem durante a desinsuflação da braçadeira sobre a artéria braquial."
   },
   {
-    "id": 3096,
-    "topicId": 3,
-    "question": "Em cada batimento cardíaco, a pressão no interior da artéria oscila entre um valor máximo e um valor mínimo. Com a pressão da braçadeira entre esses dois valores, os sons de Korotkoff ouvem-se como batidas ritmadas e não como um ruído contínuo. Porquê?",
-    "options": [
-      "O sangue só passa, turbulento, quando a pressão arterial supera a da braçadeira.",
-      "O ar sai da braçadeira em pequenos jatos, um por cada batimento do coração.",
-      "Em cada batimento o sangue alterna entre regime laminar com som e turbulento sem som.",
-      "O sangue escoa continuamente em regime turbulento, mas o som só se propaga na sístole."
-    ],
-    "correctIndex": 0,
-    "explanation": "Em cada ciclo, só quando a pressão arterial ultrapassa a da braçadeira a artéria se abre parcialmente e o sangue passa, depressa e em regime turbulento, produzindo um som. No resto do ciclo a artéria volta a fechar, não há fluxo e não há som.",
-    "distractorAnalysis": [
-      "Está incorreta: os sons de Korotkoff têm origem no escoamento turbulento do sangue na artéria, e não no ar da braçadeira.",
-      "Está incorreta: troca os regimes; o regime laminar é silencioso e é a turbulência que produz som.",
-      "Está incorreta: no resto do ciclo a braçadeira fecha a artéria e não há fluxo; o silêncio entre batidas deve-se à ausência de escoamento."
-    ],
-    "nursingApplication": "Durante a medição, o enfermeiro ouve uma batida por cada batimento cardíaco, o que o ajuda a distinguir os sons de Korotkoff de outros ruídos."
-  },
-  {
-    "id": 3097,
-    "topicId": 3,
-    "question": "A pressão da braçadeira desce lentamente. O primeiro som surge quando essa pressão fica ligeiramente abaixo do valor máximo da pressão no interior da artéria, de modo que o sangue consegue passar, por instantes, no ponto comprimido, em regime turbulento. O primeiro som permite identificar:",
-    "options": [
-      "a pressão arterial mínima (diastólica).",
-      "a pressão atmosférica no local da medição.",
-      "a pressão a que o sangue deixa de circular.",
-      "a pressão arterial máxima (sistólica)."
-    ],
-    "correctIndex": 3,
-    "explanation": "Antes do primeiro som a braçadeira impede a passagem do sangue. O som surge quando a pressão da braçadeira desce ao valor da pressão máxima da artéria, o que permite uma passagem turbulenta de sangue.",
-    "distractorAnalysis": [
-      "Está incorreta: a pressão mínima é atingida mais tarde, quando a artéria deixa de estar comprimida e os sons desaparecem.",
-      "Está incorreta: a pressão atmosférica não tem relação com o momento em que o sangue começa a passar pela artéria comprimida.",
-      "Está incorreta: o primeiro som marca o início da passagem do sangue e não o seu bloqueio."
-    ],
-    "nursingApplication": "Ao medir a pressão arterial, o enfermeiro regista a pressão a que ouve o primeiro som como valor máximo, mantendo a desinsuflação lenta e regular."
-  },
-  {
-    "id": 3098,
-    "topicId": 3,
-    "question": "A pressão da braçadeira continua a descer. Quando fica igual ao valor mínimo da pressão na artéria, a artéria deixa de estar comprimida, o escoamento torna-se laminar e os sons desaparecem. O desaparecimento dos sons corresponde, portanto:",
-    "options": [
-      "à pressão arterial máxima (sistólica).",
-      "à pressão arterial mínima (diastólica).",
-      "ao momento em que o sangue deixa de circular.",
-      "ao valor em que a artéria fica totalmente comprimida."
-    ],
-    "correctIndex": 1,
-    "explanation": "Quando a artéria já não está comprimida em nenhum momento do ciclo, o fluxo é laminar e silencioso. Isso ocorre quando a pressão da braçadeira baixa até ao valor mínimo da pressão arterial.",
-    "distractorAnalysis": [
-      "Está incorreta: a pressão máxima corresponde ao aparecimento do primeiro som, no início da desinsuflação.",
-      "Está incorreta: o sangue continua a circular; o que desaparece é a turbulência e, por isso, o som.",
-      "Está incorreta: a compressão total ocorre com a braçadeira cheia, e não quando a pressão desce até ao mínimo."
-    ],
-    "nursingApplication": "O enfermeiro regista como pressão mínima o valor a que os sons deixam de se ouvir, mantendo a desinsuflação lenta e regular."
-  },
-  {
     "id": 3099,
     "topicId": 3,
     "question": "Ao desinsuflar a braçadeira, o enfermeiro ouve sons apenas num intervalo de valores de pressão, com silêncio acima e abaixo desse intervalo. Como se explica o silêncio nas duas situações?",
@@ -2199,25 +2142,6 @@ const TOPIC_3_QUESTIONS = [
       "Está incorreta: as duas situações de silêncio não têm turbulência: numa não há fluxo e na outra o fluxo é laminar."
     ],
     "nursingApplication": "O enfermeiro sabe que o intervalo em que ouve sons é limitado pelo valor de pressão a que surge o primeiro som e pelo valor a que os sons desaparecem."
-  },
-  {
-    "id": 3100,
-    "topicId": 3,
-    "question": "Imagine que a braçadeira é insuflada o suficiente para que a artéria seja apenas muito ligeiramente comprimida. O que se espera ouvir com o estetoscópio e porquê?",
-    "options": [
-      "Sons intensos, porque o sangue é turbulento em todas as artérias do braço.",
-      "Nada, porque a velocidade e Re quase não aumentam e o fluxo se mantém laminar.",
-      "Sons intensos, porque a compressão ligeira diminui a velocidade e aumenta Re.",
-      "Nada, porque a compressão ligeira impede a passagem do sangue."
-    ],
-    "correctIndex": 1,
-    "explanation": "Com uma compressão ligeira, o aumento de velocidade é pequeno e Re mantém-se baixo, pelo que o escoamento é laminar e silencioso. Só uma compressão suficiente para elevar Re gera turbulência.",
-    "distractorAnalysis": [
-      "Está incorreta: com a artéria quase livre o regime mantém-se laminar e, portanto, silencioso.",
-      "Está incorreta: uma compressão aumenta a velocidade e não a diminui; com uma compressão ligeira o aumento é pequeno e Re não atinge valores turbulentos.",
-      "Está incorreta: uma compressão ligeira não impede a passagem do sangue, que continua a escoar em regime laminar."
-    ],
-    "nursingApplication": "Se a braçadeira for insuflada só até um valor baixo, o enfermeiro pode não ouvir sons nem identificar a pressão máxima, pelo que deve repetir a medição insuflando-a mais."
   },
   {
     "id": 3101,
@@ -2389,25 +2313,6 @@ const TOPIC_3_QUESTIONS = [
       "Está incorreta: A agregação não retira células ao sangue; apenas as junta em pilhas, o que aumenta a resistência ao escoamento."
     ],
     "nursingApplication": "Num utente imobilizado com circulação muito lenta nos membros inferiores, o enfermeiro tem presente que o sangue parado ou muito lento tende a ficar mais viscoso."
-  },
-  {
-    "id": 3110,
-    "topicId": 3,
-    "question": "O hemograma de um utente revela um número de plaquetas muito acima do normal, sem alteração do hematócrito. O que se espera acontecer à viscosidade do sangue?",
-    "options": [
-      "Diminuir, porque as plaquetas são fragmentos pequenos.",
-      "Manter-se, porque só os glóbulos vermelhos alteram a viscosidade.",
-      "Diminuir, porque o plasma fica mais diluído.",
-      "Aumentar, porque um excesso de plaquetas eleva a viscosidade."
-    ],
-    "correctIndex": 3,
-    "explanation": "Hematócrito elevado e/ou muitas plaquetas aumentam a viscosidade do sangue.",
-    "distractorAnalysis": [
-      "Está incorreta: Um excesso de plaquetas tende a aumentar a viscosidade, não a diminuí-la.",
-      "Está incorreta: Os glóbulos vermelhos são o fator principal, mas muitas plaquetas também aumentam a viscosidade.",
-      "Está incorreta: Mais plaquetas não diluem o plasma; acrescentam elementos figurados, o que aumenta a viscosidade."
-    ],
-    "nursingApplication": "Perante um utente com contagem de plaquetas muito elevada, o enfermeiro reconhece que o sangue pode estar mais viscoso e comunica o resultado à equipa."
   },
   {
     "id": 3111,
@@ -3043,50 +2948,6 @@ const TOPIC_3_QUESTIONS = [
     "nursingApplication": "Perante um sopro detetado na auscultação, o enfermeiro reconhece que pode traduzir turbulência, que surge quando o caudal ultrapassa o caudal crítico do vaso."
   },
   {
-    "id": 3144,
-    "topicId": 3,
-    "question": "Como varia o caudal crítico de um vaso com o seu raio?",
-    "options": [
-      "Varia diretamente com o raio: quanto maior o raio, maior o caudal crítico.",
-      "Varia inversamente com o raio: quanto maior o raio, menor o caudal crítico.",
-      "Não depende do raio, apenas da viscosidade do sangue.",
-      "Varia com o quadrado do raio, tal como a área da secção do vaso."
-    ],
-    "correctIndex": 0,
-    "explanation": "O caudal crítico é diretamente proporcional ao raio do vaso: vasos menores têm caudal crítico menor.",
-    "distractorAnalysis": [
-      "Está incorreta: É o contrário: nos vasos maiores é preciso um caudal maior para atingir o Re crítico.",
-      "Está incorreta: Re depende do diâmetro do vaso, pelo que o caudal crítico varia com o raio.",
-      "Está incorreta: A relação é direta com o raio e não com o seu quadrado."
-    ],
-    "nursingApplication": "Ao saber que vasos mais finos têm caudal crítico menor, o enfermeiro compreende porque um estreitamento arterial pode originar um sopro audível na auscultação."
-  },
-  {
-    "id": 3145,
-    "topicId": 3,
-    "question": "Uma artéria tem caudal crítico de 20 cm³/s e conduz 14 cm³/s, em regime laminar. Uma placa reduz para metade o raio de um segmento, mantendo-se o mesmo sangue e o mesmo caudal. O que se prevê nesse segmento?",
-    "options": [
-      "Caudal crítico de 40 cm³/s; o regime mantém-se laminar",
-      "Caudal crítico de 10 cm³/s; o regime tende a turbulento",
-      "Caudal crítico de 1,25 cm³/s; o regime tende a turbulento",
-      "Caudal crítico de 20 cm³/s; o regime mantém-se laminar"
-    ],
-    "correctIndex": 1,
-    "explanation": "O caudal crítico é diretamente proporcional ao raio: com metade do raio passa a 20 / 2 = 10 cm³/s. Como o caudal de 14 cm³/s excede este valor, o regime tende a passar a turbulento no segmento estreitado.",
-    "solution": [
-      "Dados: caudal crítico inicial = 20 cm³/s; D = 14 cm³/s; raio do segmento = metade do inicial",
-      "Fórmula: o caudal crítico é diretamente proporcional ao raio",
-      "Substituição: caudal crítico no segmento = 20 × 1/2 = 10 cm³/s; 14 cm³/s > 10 cm³/s",
-      "Resultado: Caudal crítico de 10 cm³/s; o regime tende a turbulento"
-    ],
-    "distractorAnalysis": [
-      "Está incorreta: inverte a relação; um raio menor dá um caudal crítico menor, e não maior.",
-      "Está incorreta: dividiu por 2⁴ = 16, como na lei de Poiseuille; o caudal crítico varia diretamente com o raio e não com R⁴.",
-      "Está incorreta: o caudal crítico depende do raio do vaso, pelo que muda quando o raio passa a metade."
-    ],
-    "nursingApplication": "Na medição da pressão arterial, a braçadeira estreita a artéria de modo semelhante, baixando o caudal crítico local e favorecendo a turbulência que gera os sons de Korotkoff."
-  },
-  {
     "id": 3146,
     "topicId": 3,
     "question": "Considerando o mesmo sangue em todos os vasos, qual dos seguintes tem o menor caudal crítico?",
@@ -3104,53 +2965,6 @@ const TOPIC_3_QUESTIONS = [
       "Está incorreta: As veias cavas são de grande calibre e têm caudal crítico elevado."
     ],
     "nursingApplication": "Na microcirculação, de vasos muito finos, o enfermeiro tem presente que o escoamento se mantém laminar e lento, o que permite as trocas com os tecidos."
-  },
-  {
-    "id": 3147,
-    "topicId": 3,
-    "question": "Dois vasos conduzem o mesmo sangue. O vaso A tem raio de 0,2 cm e caudal crítico de 8 cm³/s. O vaso B tem raio de 0,6 cm. Qual é o caudal crítico do vaso B?",
-    "figure": {
-      "type": "tube",
-      "items": [
-        {
-          "name": "Vaso A",
-          "r": 0.33,
-          "inside": [
-            "r = 0,2 cm",
-            "Caudal crítico = 8 cm³/s"
-          ]
-        },
-        {
-          "name": "Vaso B",
-          "r": 1.0,
-          "inside": [
-            "r = 0,6 cm",
-            "Caudal crítico = ?"
-          ]
-        }
-      ],
-      "alt": "Dois vasos que conduzem o mesmo sangue: o vaso A, de raio 0,2 cm, tem caudal crítico de 8 cm³/s; o vaso B, de raio 0,6 cm, tem caudal crítico desconhecido."
-    },
-    "options": [
-      "72 cm³/s",
-      "648 cm³/s",
-      "2,7 cm³/s",
-      "24 cm³/s"
-    ],
-    "correctIndex": 3,
-    "explanation": "O raio de B é 3 vezes o de A; como o caudal crítico varia diretamente com o raio, o de B é 3 vezes o de A.",
-    "solution": [
-      "Dados: raio de A = 0,2 cm; caudal crítico de A = 8 cm³/s; raio de B = 0,6 cm.",
-      "Fórmula: o caudal crítico é diretamente proporcional ao raio, logo D<sub>crít,B</sub> / D<sub>crít,A</sub> = r<sub>B</sub> / r<sub>A</sub>.",
-      "Substituição: r<sub>B</sub> / r<sub>A</sub> = 0,6 / 0,2 = 3; D<sub>crít,B</sub> = 3 × 8.",
-      "Resultado: 24 cm³/s"
-    ],
-    "distractorAnalysis": [
-      "Está incorreta: Considera o caudal crítico proporcional ao quadrado do raio (3² × 8).",
-      "Está incorreta: Considera o caudal crítico proporcional à quarta potência do raio (3⁴ × 8), como na lei de Poiseuille.",
-      "Está incorreta: Divide por 3 em vez de multiplicar; o vaso de maior raio tem maior caudal crítico."
-    ],
-    "nursingApplication": "Ao comparar vasos de calibres diferentes, o enfermeiro percebe que o mesmo caudal pode ser laminar num vaso largo e turbulento num vaso fino."
   },
   {
     "id": 3148,
@@ -4543,5 +4357,172 @@ const TOPIC_3_QUESTIONS = [
       "Está incorreta: usou R³ (1 / 0,8³ ≈ 1,95) em vez de R⁴."
     ],
     "nursingApplication": "A vasoconstrição aumenta a resistência dos vasos de pequeno calibre e é um mecanismo de controlo do caudal local."
+  },
+  {
+    "id": 3201,
+    "topicId": 3,
+    "question": "Na medição da pressão arterial, o sangue escoa na artéria braquial livre com Re = 900. Durante a desinsuflação, no ponto parcialmente comprimido, o diâmetro passa para metade e a velocidade média para 10 vezes o valor inicial (valores ilustrativos, mesmo sangue). Qual é o Re nesse ponto e que regime se espera?",
+    "options": [
+      "9000, regime turbulento",
+      "2250, zona de transição",
+      "450, regime laminar",
+      "4500, regime turbulento"
+    ],
+    "correctIndex": 3,
+    "explanation": "Re = v · ρ · d / η é diretamente proporcional a v e a d. No ponto comprimido, v fica 10 vezes maior e d fica metade, pelo que Re fica 10 × 0,5 = 5 vezes maior: 5 × 900 = 4500. Como 4500 > 4000, o regime é turbulento, o que explica os sons de Korotkoff.",
+    "solution": [
+      "Dados: Re inicial = 900; velocidade 10 vezes maior; diâmetro reduzido a metade; ρ e η iguais",
+      "Fórmula: Re = v · ρ · d / η, logo Re varia na mesma proporção que o produto v · d",
+      "Substituição: fator = 10 × 0,5 = 5; Re = 5 × 900",
+      "Resultado: 4500, regime turbulento",
+      "Conclusão: 4500 > 4000, pelo que o fluxo no ponto comprimido é turbulento e produz sons."
+    ],
+    "distractorAnalysis": [
+      "Está incorreta: só considera o aumento da velocidade (10 × 900) e esquece que o diâmetro passou para metade, o que reduz Re para metade.",
+      "Está incorreta: trata o diâmetro como se Re dependesse de d² (10 × 0,25 × 900); na fórmula de Reynolds, d aparece à primeira potência.",
+      "Está incorreta: só considera a redução do diâmetro (900 / 2) e esquece que a velocidade aumentou 10 vezes."
+    ],
+    "nursingApplication": "Ao auscultar a artéria braquial durante a desinsuflação da braçadeira, o enfermeiro ouve os sons de Korotkoff porque o aumento de velocidade no ponto comprimido eleva Re acima de 4000."
+  },
+  {
+    "id": 3202,
+    "topicId": 3,
+    "question": "Um estudante afirma que os sons de Korotkoff surgem porque a braçadeira, ao comprimir o braço, torna o sangue mais viscoso. Qual é a correção adequada?",
+    "options": [
+      "A braçadeira torna o sangue menos viscoso, o que faz aumentar Re e gera turbulência.",
+      "A viscosidade não se altera; a velocidade aumenta no ponto comprimido e Re aumenta.",
+      "A viscosidade aumenta de facto, e um sangue mais viscoso tem maior tendência para turbulência.",
+      "A viscosidade não se altera; os sons resultam do ar que sai da braçadeira."
+    ],
+    "correctIndex": 1,
+    "explanation": "A braçadeira não altera a temperatura nem a composição do sangue, pelo que a viscosidade se mantém. Na artéria parcialmente comprimida a velocidade do sangue aumenta, Re = v · ρ · d / η aumenta e o fluxo torna-se turbulento, produzindo os sons ouvidos no estetoscópio.",
+    "distractorAnalysis": [
+      "Está incorreta: a braçadeira não altera a viscosidade, que depende da temperatura e da composição do sangue; o que faz aumentar Re é a maior velocidade no ponto comprimido.",
+      "Está incorreta: além de a viscosidade não aumentar, um η maior faria diminuir Re e, portanto, a tendência para a turbulência.",
+      "Está incorreta: os sons de Korotkoff têm origem no fluxo turbulento do sangue na artéria parcialmente comprimida, e não no ar da braçadeira."
+    ],
+    "nursingApplication": "Na medição manual da pressão arterial, o enfermeiro interpreta os sons auscultados como sinal de fluxo turbulento na artéria parcialmente comprimida, e não como uma alteração do próprio sangue."
+  },
+  {
+    "id": 3203,
+    "topicId": 3,
+    "question": "A pressão arterial medida no braço de um adulto é de cerca de 120/80 mmHg. Comparada com esta, como é a pressão na pequena circulação (pulmonar)?",
+    "options": [
+      "Mais baixa (cerca de 25/10 mmHg), num trajeto que começa no ventrículo direito",
+      "Igual (cerca de 120/80 mmHg), porque o mesmo coração impulsiona as duas",
+      "Mais baixa (cerca de 25/10 mmHg), num trajeto que começa no ventrículo esquerdo",
+      "Mais alta, porque o sangue tem de atravessar os capilares dos alvéolos"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na pequena circulação, o sangue sai do ventrículo direito pela artéria pulmonar até aos pulmões e regressa à aurícula esquerda pelas veias pulmonares, com pressão baixa, cerca de 25/10 mmHg. Os cerca de 120/80 mmHg correspondem à grande circulação, que começa no ventrículo esquerdo.",
+    "distractorAnalysis": [
+      "Está incorreta: as duas circulações partem de ventrículos diferentes e têm pressões diferentes; 120/80 mmHg corresponde apenas à grande circulação.",
+      "Está incorreta: o valor da pressão está certo, mas o ventrículo esquerdo inicia a grande circulação (aorta); a pequena circulação começa no ventrículo direito.",
+      "Está incorreta: a pressão na pequena circulação é mais baixa, e não mais alta, do que na grande circulação (cerca de 25/10 mmHg contra 120/80 mmHg)."
+    ],
+    "nursingApplication": "Ao medir a pressão arterial no braço com esfigmomanómetro, o enfermeiro avalia a grande circulação; a pressão pulmonar, muito mais baixa, não se obtém por este método."
+  },
+  {
+    "id": 3204,
+    "topicId": 3,
+    "question": "O coração bombeia o sangue de forma pulsátil, mas nos capilares o fluxo é contínuo e de baixa pressão. Que segmento da circulação é o principal responsável por esta transformação?",
+    "options": [
+      "As artérias, onde a pressão é máxima e a resistência é baixa",
+      "Os capilares, onde o sangue corre devagar e em regime laminar",
+      "As veias, onde a pressão é mais baixa e pode ser negativa",
+      "As arteríolas, onde a resistência é máxima e a pressão desce"
+    ],
+    "correctIndex": 3,
+    "explanation": "Nas arteríolas a resistência ao escoamento é máxima e é aí que a pressão mais desce. Esta queda de pressão transforma o fluxo pulsátil das artérias num fluxo contínuo e de baixa pressão, o que protege os capilares.",
+    "distractorAnalysis": [
+      "Está incorreta: nas artérias a resistência é baixa e a pressão ainda é máxima e pulsátil; a grande queda de pressão só ocorre a seguir, nas arteríolas.",
+      "Está incorreta: o escoamento lento e contínuo dos capilares é consequência da queda de pressão a montante, nas arteríolas, e não a sua causa.",
+      "Está incorreta: as veias ficam depois dos capilares, pelo que não podem transformar o fluxo que chega aos capilares."
+    ],
+    "nursingApplication": "Num choque séptico, a vasodilatação arteriolar reduz a resistência a jusante das artérias, o que ajuda a explicar a hipotensão que o enfermeiro monitoriza."
+  },
+  {
+    "id": 3205,
+    "topicId": 3,
+    "question": "Num vaso, os glóbulos vermelhos podem agregar-se em «pilhas». Que condições favorecem esta agregação e qual é o seu efeito na viscosidade do sangue?",
+    "options": [
+      "Fluxo muito rápido e turbulento, como na aorta; a viscosidade diminui",
+      "Fluxo muito lento e/ou proteínas no plasma; a viscosidade aumenta",
+      "Fluxo muito lento e/ou proteínas no plasma; a viscosidade diminui",
+      "Hematócrito baixo, como na anemia; a viscosidade aumenta"
+    ],
+    "correctIndex": 1,
+    "explanation": "A agregação dos glóbulos vermelhos em «pilhas» é favorecida por fluxo muito lento e/ou por proteínas no plasma. Os agregados oferecem maior resistência ao escoamento, pelo que a viscosidade do sangue aumenta.",
+    "distractorAnalysis": [
+      "Está incorreta: a agregação em pilhas ocorre com fluxo muito lento, e não rápido; além disso, aumenta a viscosidade em vez de a diminuir.",
+      "Está incorreta: as condições estão certas, mas os agregados aumentam a resistência ao escoamento, isto é, aumentam a viscosidade.",
+      "Está incorreta: a agregação em pilhas não resulta da anemia; com hematócrito baixo, a viscosidade do sangue diminui."
+    ],
+    "nursingApplication": "Nas análises de um utente com inflamação, a velocidade de sedimentação elevada reflete, em grande parte, esta agregação dos glóbulos vermelhos favorecida pelas proteínas do plasma."
+  },
+  {
+    "id": 3206,
+    "topicId": 3,
+    "question": "O mesmo soro escoa num cateter fino e num tubo de maior calibre. Aumentando progressivamente o caudal em ambos, em qual o regime passa primeiro a turbulento, isto é, com menor caudal?",
+    "options": [
+      "No cateter fino, porque um tubo de menor calibre tem menor caudal crítico",
+      "No tubo largo, porque um tubo de maior calibre tem menor caudal crítico",
+      "Nos dois ao mesmo caudal, porque o soro, a densidade e a viscosidade são iguais",
+      "No tubo largo, porque o regime turbulento depende só do diâmetro"
+    ],
+    "correctIndex": 0,
+    "explanation": "O caudal crítico é o caudal a partir do qual o regime passa de laminar a turbulento e é tanto menor quanto menor for o calibre do tubo. Assim, ao aumentar o caudal, o cateter fino atinge primeiro o seu caudal crítico.",
+    "distractorAnalysis": [
+      "Está incorreta: inverte a relação; quanto menor o calibre, menor o caudal crítico, pelo que o tubo largo exige um caudal maior para ficar turbulento.",
+      "Está incorreta: o caudal crítico depende também do calibre do tubo, e não só das propriedades do líquido.",
+      "Está incorreta: o regime não depende só do diâmetro (Re inclui também v, ρ e η) e, em termos de caudal, é o tubo fino que tem menor caudal crítico."
+    ],
+    "nursingApplication": "Numa perfusão rápida sob pressão, é no cateter de menor calibre que o caudal crítico é mais baixo, pelo que é aí que a turbulência surge com menor caudal."
+  },
+  {
+    "id": 3207,
+    "topicId": 3,
+    "question": "Na experiência de Reynolds, o caudal de água aumenta progressivamente até que o fio de corante, até aí contínuo, se rompe e se mistura com a água. A que corresponde o caudal a que isto acontece?",
+    "options": [
+      "Ao caudal máximo que o tubo de vidro consegue transportar, em qualquer regime",
+      "Ao caudal crítico, a partir do qual o regime passa de laminar a turbulento",
+      "Ao caudal a partir do qual o regime passa de turbulento a laminar",
+      "Ao caudal a que a viscosidade da água se anula e as camadas se misturam"
+    ],
+    "correctIndex": 1,
+    "explanation": "Com caudal baixo, o fio de corante mantém-se contínuo (regime laminar); quando o caudal atinge um certo valor, o fio rompe-se e mistura-se (regime turbulento). Esse valor é o caudal crítico: o caudal a partir do qual o regime passa de laminar a turbulento.",
+    "distractorAnalysis": [
+      "Está incorreta: o tubo continua a transportar caudais maiores depois de o fio se romper; o que muda é o regime, que passa a turbulento.",
+      "Está incorreta: inverte o sentido da mudança; com caudal crescente, o regime passa de laminar a turbulento, e não o contrário.",
+      "Está incorreta: a viscosidade é uma propriedade da água que não se anula; a mistura deve-se aos turbilhões do regime turbulento."
+    ],
+    "nursingApplication": "Tal como no tubo de Reynolds, aumentar muito o caudal numa linha de perfusão de pequeno calibre pode fazê-lo ultrapassar o caudal crítico e tornar o escoamento turbulento."
+  },
+  {
+    "id": 3208,
+    "topicId": 3,
+    "question": "Num modelo de laboratório, um tubo de perfusão tem caudal crítico de 6 cm³/s. Pretende-se fazer passar 900 cm³ de soro em 2 min. Qual é o caudal e que regime se espera?",
+    "options": [
+      "15 cm³/s, regime turbulento",
+      "0,13 cm³/s, regime laminar",
+      "450 cm³/s, regime turbulento",
+      "7,5 cm³/s, regime turbulento"
+    ],
+    "correctIndex": 3,
+    "explanation": "O caudal é D = V / t. Com t = 2 min = 120 s, D = 900 / 120 = 7,5 cm³/s. Como 7,5 cm³/s é superior ao caudal crítico (6 cm³/s), o regime passa de laminar a turbulento.",
+    "solution": [
+      "Dados: V = 900 cm³; t = 2 min; caudal crítico = 6 cm³/s",
+      "Conversão: t = 2 × 60 = 120 s",
+      "Fórmula: D = V / t",
+      "Substituição: D = 900 / 120",
+      "Resultado: 7,5 cm³/s, regime turbulento",
+      "Conclusão: 7,5 cm³/s > 6 cm³/s, pelo que o caudal ultrapassa o caudal crítico."
+    ],
+    "distractorAnalysis": [
+      "Está incorreta: dividiu 900 por 60 s, como se a passagem durasse 1 min; em 2 min, t = 120 s.",
+      "Está incorreta: inverteu a fórmula (t / V = 120 / 900); o caudal é D = V / t.",
+      "Está incorreta: 900 / 2 = 450 cm³ por minuto, e não por segundo; faltou converter os minutos em segundos."
+    ],
+    "nursingApplication": "Ao programar uma administração rápida de soro, o enfermeiro calcula o caudal a partir do volume e do tempo prescritos, confirmando se o tempo está em minutos ou em segundos."
   }
 ];
