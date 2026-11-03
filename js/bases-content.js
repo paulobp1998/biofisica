@@ -627,58 +627,5 @@ const BASES_LESSONS = [
         explanation: 'F<sub>R</sub> = √(60² + 80²) = √(3600 + 6400) = √10&nbsp;000 = 100 N. 140 N soma as intensidades como se tivessem o mesmo sentido; 20 N subtrai-as.'
       }
     ]
-  },
-
-  // ------------------------------------------------------------------ 12
-  {
-    id: 'trigonometria',
-    icon: '📐',
-    title: 'Ângulos, seno e cosseno',
-    goal: 'Usar o seno e o cosseno para decompor uma força, por exemplo o peso num plano inclinado.',
-    body: `
-      <ul>
-        <li><strong>Triângulo retângulo:</strong> tem um ângulo de 90°. O lado maior, oposto ao ângulo reto, é a <strong>hipotenusa</strong>. Para um ângulo θ, o <strong>cateto oposto</strong> fica em frente a θ e o <strong>cateto adjacente</strong> é o cateto (não a hipotenusa) que forma o ângulo θ.</li>
-        <li><strong>Calculadora em graus:</strong> confirma que aparece «D» ou «DEG» no ecrã. Em modo «RAD», sin 30 dá −0,988 em vez de 0,5.</li>
-      </ul>
-      <div class="formula-box"><div class="formula-box-title">Definições</div>
-        <div class="formula-row"><code>sin θ = cateto oposto / hipotenusa</code><span></span></div>
-        <div class="formula-row"><code>cos θ = cateto adjacente / hipotenusa</code><span></span></div>
-      </div>
-      <div class="bases-table-wrap"><table class="bases-table">
-        <thead><tr><th>θ</th><th>0°</th><th>30°</th><th>45°</th><th>60°</th><th>90°</th></tr></thead>
-        <tbody>
-          <tr><td>sin θ</td><td>0</td><td>0,5</td><td>0,707</td><td>0,866</td><td>1</td></tr>
-          <tr><td>cos θ</td><td>1</td><td>0,866</td><td>0,707</td><td>0,5</td><td>0</td></tr>
-        </tbody>
-      </table></div>
-      <p><strong>Plano inclinado</strong> (θ é o ângulo entre o plano e a horizontal): o peso P decompõe-se em duas componentes, uma <strong>paralela ao plano</strong>, P<sub>t</sub> = P · sin θ (a que faz o corpo tender a deslizar), e outra <strong>perpendicular ao plano</strong>, P<sub>n</sub> = P · cos θ (a que comprime a superfície). Quanto maior o ângulo, maior P<sub>t</sub> e menor P<sub>n</sub>.</p>`,
-    examples: [
-      {
-        title: 'Utente de 60 kg num plano a 30°',
-        steps: ['Dados: m = 60 kg; θ = 30°; g = 9,8 m/s²', 'P = m · g = 60 × 9,8 = 588 N', 'P<sub>t</sub> = P · sin 30° = 588 × 0,5 = 294 N', 'P<sub>n</sub> = P · cos 30° = 588 × 0,866 ≈ 509 N']
-      }
-    ],
-    pitfall: 'Trocar o seno pelo cosseno. Num plano inclinado, a componente paralela ao plano usa o seno e a perpendicular usa o cosseno, quando θ é a inclinação do plano.',
-    nursing: 'Elevar a cabeceira da cama aumenta a componente do peso paralela ao colchão, que tende a fazer o utente deslizar para os pés da cama; como o atrito retém a pele, aumentam as forças de cisalhamento sobre o sacro.',
-    exercises: [
-      {
-        q: 'Num triângulo retângulo, o seno de um ângulo θ é igual a:',
-        options: ['cateto adjacente / hipotenusa', 'cateto oposto / cateto adjacente', 'hipotenusa / cateto oposto', 'cateto oposto / hipotenusa'],
-        correctIndex: 3,
-        explanation: 'sin θ = cateto oposto / hipotenusa. Cateto adjacente / hipotenusa é o cosseno; cateto oposto / cateto adjacente é a tangente.'
-      },
-      {
-        q: 'Um corpo com 500 N de peso está num plano inclinado a 30°. Qual é a componente do peso paralela ao plano?',
-        options: ['250 N', '433 N', '500 N', '15&nbsp;000 N'],
-        correctIndex: 0,
-        explanation: 'P<sub>t</sub> = P · sin 30° = 500 × 0,5 = 250 N. 433 N usa o cosseno (é a componente perpendicular); 15&nbsp;000 N multiplica pelo ângulo em vez de pelo seno.'
-      },
-      {
-        q: 'Se a inclinação de um plano passar de 20° para 40°, o que acontece à componente do peso paralela ao plano?',
-        options: ['Diminui, porque o cosseno diminui', 'Aumenta, porque o seno aumenta', 'Mantém-se, porque o peso não muda', 'Duplica, porque o ângulo duplica'],
-        correctIndex: 1,
-        explanation: 'P<sub>t</sub> = P · sin θ e o seno aumenta entre 0° e 90° (sin 20° ≈ 0,34; sin 40° ≈ 0,64). Aumenta, mas não duplica: o seno não é proporcional ao ângulo.'
-      }
-    ]
   }
 ];
