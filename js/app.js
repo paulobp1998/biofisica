@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const quizView = document.getElementById('view-quiz');
   const resultsView = document.getElementById('view-results');
   const studyView = document.getElementById('view-study');
+  const basesView = document.getElementById('view-bases');
   const statsView = document.getElementById('view-stats');
   const arenaView = document.getElementById('view-arena');
   const teacherView = document.getElementById('view-teacher');
@@ -580,7 +581,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 7. Navegação entre Vistas
   // =========================================================================
   function showView(view) {
-    [homeView, quizView, resultsView, studyView, statsView, arenaView, teacherView].forEach(v => {
+    [homeView, quizView, resultsView, studyView, basesView, statsView, arenaView, teacherView].forEach(v => {
       if (v) {
         v.classList.add('hidden');
         v.classList.remove('active-view');
@@ -2409,6 +2410,156 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   btnHomeFromStudy.addEventListener('click', () => {
+    showView(homeView);
+  });
+
+  // =========================================================================
+  // 15B. Bases de matemática e unidades (lições progressivas)
+  // =========================================================================
+  const BASES_DONE_KEY = 'biofisica_bases_done';
+  const BASES_LAST_KEY = 'biofisica_bases_last';
+  const basesPath = document.getElementById('bases-path');
+  const basesLesson = document.getElementById('bases-lesson');
+  const basesProgressText = document.getElementById('bases-progress-text');
+  const basesProgressFill = document.getElementById('bases-progress-fill');
+  let basesIndex = 0;
+  // Estado das respostas da lição aberta: tentativas erradas e se já ficou resolvido
+  let basesAnswers = [];
+
+  function loadBasesDone() {
+    try { return JSON.parse(localStorage.getItem(BASES_DONE_KEY) || '[]') || []; } catch (e) { return []; }
+  }
+
+  function markBasesDone(id) {
+    const done = loadBasesDone();
+    if (done.includes(id)) return;
+    done.push(id);
+    try { localStorage.setItem(BASES_DONE_KEY, JSON.stringify(done)); } catch (e) { /* sem armazenamento */ }
+  }
+
+  function renderBasesProgress() {
+    const done = loadBasesDone();
+    const total = BASES_LESSONS.length;
+    const n = BASES_LESSONS.filter(l => done.includes(l.id)).length;
+    basesProgressText.textContent = `${n} de ${total} lições concluídas`;
+    basesProgressFill.style.width = `${Math.round((n / total) * 100)}%`;
+    basesPath.innerHTML = BASES_LESSONS.map((l, i) => `
+      <li><button type="button" class="bases-step${i === basesIndex ? ' current' : ''}${done.includes(l.id) ? ' done' : ''}" data-bases-index="${i}" aria-current="${i === basesIndex ? 'step' : 'false'}">
+        <span class="bases-step-num">${done.includes(l.id) ? '✓' : i + 1}</span>
+        <span class="bases-step-title">${l.title}</span>
+      </button></li>`).join('');
+  }
+
+  function renderBasesLesson() {
+    const l = BASES_LESSONS[basesIndex];
+    const total = BASES_LESSONS.length;
+    basesAnswers = l.exercises.map(() => ({ wrong: 0, solved: false }));
+    const examples = l.examples.map(ex => `
+      <div class="bases-example">
+        <div class="bases-example-title">${ex.title}</div>
+        <ol class="bases-steps">${ex.steps.map(s => `<li>${s}</li>`).join('')}</ol>
+      </div>`).join('');
+    const exercises = l.exercises.map((ex, i) => `
+      <div class="bases-exercise" data-ex="${i}">
+        <p class="bases-exercise-q"><strong>${i + 1}.</strong> ${ex.q}</p>
+        <div class="bases-options">${ex.options.map((o, j) =>
+          `<button type="button" class="bases-option" data-ex="${i}" data-opt="${j}">${o}</button>`).join('')}</div>
+        <div class="bases-feedback" id="bases-feedback-${i}" hidden></div>
+      </div>`).join('');
+    basesLesson.innerHTML = `
+      <div class="bases-lesson-kicker">Lição ${basesIndex + 1} de ${total}</div>
+      <h3 class="bases-lesson-title">${l.icon} ${l.title}</h3>
+      <div class="bases-goal"><strong>🎯 Objetivo:</strong> ${l.goal}</div>
+      <div class="study-block-body">${l.body}</div>
+      <h4 class="bases-subtitle">Exemplos resolvidos</h4>
+      ${examples}
+      <div class="study-pitfall"><strong>⚠️ Erro comum:</strong> ${l.pitfall}</div>
+      <div class="study-nursing"><strong>🩺 Em enfermagem:</strong> ${l.nursing}</div>
+      <h4 class="bases-subtitle">Verifica se percebeste</h4>
+      ${exercises}
+      <div class="bases-nav">
+        <button type="button" class="btn btn-outline btn-sm" id="btn-bases-prev" ${basesIndex === 0 ? 'disabled' : ''}>⬅ Lição anterior</button>
+        ${basesIndex < total - 1
+          ? '<button type="button" class="btn btn-primary btn-sm" id="btn-bases-next">Lição seguinte ➔</button>'
+          : '<button type="button" class="btn btn-primary btn-sm" id="btn-bases-study">📖 Seguir para os Resumos ➔</button>'}
+      </div>`;
+  }
+
+  function openBasesLesson(index, scroll) {
+    basesIndex = Math.max(0, Math.min(index, BASES_LESSONS.length - 1));
+    try { localStorage.setItem(BASES_LAST_KEY, String(basesIndex)); } catch (e) { /* sem armazenamento */ }
+    renderBasesProgress();
+    renderBasesLesson();
+    scrollBasesPathToCurrent();
+    if (scroll) basesPath.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // Em ecrãs estreitos a lista de lições desliza na horizontal: mostra a lição atual
+  function scrollBasesPathToCurrent() {
+    const cur = basesPath.querySelector('.bases-step.current');
+    if (cur) basesPath.scrollLeft += cur.getBoundingClientRect().left - basesPath.getBoundingClientRect().left;
+  }
+
+  function answerBasesExercise(i, j) {
+    const l = BASES_LESSONS[basesIndex];
+    const ex = l.exercises[i];
+    const state = basesAnswers[i];
+    if (state.solved) return;
+    const box = basesLesson.querySelector(`.bases-exercise[data-ex="${i}"]`);
+    const feedback = document.getElementById(`bases-feedback-${i}`);
+    const btn = box.querySelector(`.bases-option[data-opt="${j}"]`);
+    feedback.hidden = false;
+    if (j === ex.correctIndex || state.wrong >= 1) {
+      // Certo, ou segunda tentativa errada: mostra a resposta e a explicação
+      state.solved = true;
+      if (j !== ex.correctIndex) btn.classList.add('wrong');
+      box.querySelector(`.bases-option[data-opt="${ex.correctIndex}"]`).classList.add('correct');
+      box.querySelectorAll('.bases-option').forEach(b => { b.disabled = true; });
+      feedback.className = `bases-feedback ${j === ex.correctIndex ? 'ok' : 'reveal'}`;
+      feedback.innerHTML = `<strong>${j === ex.correctIndex ? '✅ Certo!' : '💡 A resposta certa está assinalada a verde.'}</strong> ${ex.explanation}`;
+    } else {
+      state.wrong += 1;
+      btn.classList.add('wrong');
+      btn.disabled = true;
+      feedback.className = 'bases-feedback retry';
+      feedback.innerHTML = '<strong>Ainda não.</strong> Revê os exemplos resolvidos acima e tenta outra vez.';
+    }
+    if (basesAnswers.every(a => a.solved)) {
+      markBasesDone(l.id);
+      renderBasesProgress();
+    }
+  }
+
+  basesPath.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-bases-index]');
+    if (btn) openBasesLesson(parseInt(btn.dataset.basesIndex, 10), false);
+  });
+
+  basesLesson.addEventListener('click', (e) => {
+    const opt = e.target.closest('.bases-option');
+    if (opt) {
+      answerBasesExercise(parseInt(opt.dataset.ex, 10), parseInt(opt.dataset.opt, 10));
+      return;
+    }
+    if (e.target.closest('#btn-bases-prev')) openBasesLesson(basesIndex - 1, true);
+    else if (e.target.closest('#btn-bases-next')) openBasesLesson(basesIndex + 1, true);
+    else if (e.target.closest('#btn-bases-study')) {
+      renderStudySection();
+      showView(studyView);
+    }
+  });
+
+  function openBasesView() {
+    let last = 0;
+    try { last = parseInt(localStorage.getItem(BASES_LAST_KEY) || '0', 10) || 0; } catch (e) { /* sem armazenamento */ }
+    openBasesLesson(last, false);
+    showView(basesView);
+    scrollBasesPathToCurrent();
+  }
+
+  document.getElementById('btn-view-bases').addEventListener('click', openBasesView);
+  document.getElementById('btn-study-to-bases').addEventListener('click', openBasesView);
+  document.getElementById('btn-home-from-bases').addEventListener('click', () => {
     showView(homeView);
   });
 
