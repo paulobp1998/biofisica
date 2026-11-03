@@ -219,7 +219,7 @@ class QuizEngine {
     return this.getCurrentState();
   }
 
-  // Inicia um teste customizado (ex: Caderno de Erros ou Marcadas)
+  // Inicia um teste customizado (ex.: Perguntas Marcadas)
   startCustomQuiz(questions, title = 'Treino Personalizado', feedbackMode = 'immediate', timerSeconds = 0) {
     this.mode = 'custom';
     this.feedbackMode = feedbackMode;

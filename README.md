@@ -32,7 +32,7 @@ Total atual: **600 perguntas** (todas ativas para os alunos, Tópicos 1 a 3). Os
 
 - **Modo Treino:** explicação imediata e detalhada após cada resposta.
 - **Modo Simulação Real:** sem consulta durante a prova, temporizador configurável e classificação de 0 a 20 valores com revisão no final.
-- **Caderno de Erros com revisão espaçada e ⭐ Favoritos:** as perguntas erradas ficam guardadas no navegador. Voltam a aparecer ao fim de alguns dias ("Hoje tens N perguntas para rever") e só saem depois de 2 respostas certas em dias diferentes.
+- **⭐ Perguntas Marcadas:** o aluno marca perguntas com estrela para as rever mais tarde; ficam guardadas no navegador.
 - **Confiança (opcional) no Modo Treino:** o aluno indica se tem certeza, se acha que sim ou se está a adivinhar. Os resultados e as estatísticas mostram a confiança vs. os acertos, e os erros com certeza voltam logo ao caderno.
 - **Repetição de erros na mesma sessão (Modo Treino):** uma pergunta errada volta a aparecer 4 perguntas depois, com as opções baralhadas (no máximo 10 por sessão). A repetição não conta para a nota nem para as métricas do docente.
 - **Revisão dos resultados "primeiro os erros":** a revisão abre pelos erros e pelas respostas certas sem certeza; as respostas certas ficam recolhidas.
@@ -97,7 +97,7 @@ css/style.css           Estilos (inclui modo escuro e impressão)
 js/data/topic*.js       Banco de perguntas por tópico
 js/questions-data.js    Ligação dos tópicos ao motor de quiz
 js/quiz-engine.js       Lógica do quiz (treino e simulação)
-js/app.js               Navegação, caderno de erros, medalhas e pesquisa
+js/app.js               Navegação, perguntas marcadas, medalhas e pesquisa
 js/arena-*.js           Modo Arena (rede, motor e interface)
 js/teacher-manager.js   Gestão de perguntas pelo docente
 js/lib/                 Bibliotecas de terceiros (Paho MQTT, QR code)

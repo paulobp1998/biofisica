@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BioFísica Interativa | Enfermagem (1.º Ano)</title>
   <meta name="description" content="Plataforma interativa e 100% gratuita para estudantes do 1.º ano de Licenciatura em Enfermagem praticarem os conteúdos de Biofísica com questões de escolha múltipla e aplicações clínicas.">
-  <link rel="stylesheet" href="css/style.css?v=4.7">
+  <link rel="stylesheet" href="css/style.css?v=4.8">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🩺</text></svg>">
 </head>
 <body>
@@ -110,9 +110,6 @@
 
         <!-- 1A & 3G: Ações Rápidas do Estudante -->
         <div class="hero-secondary-actions">
-          <button class="btn-hero-quick" id="btn-open-mistakes" title="Praticar apenas as perguntas que errou anteriormente">
-            📕 Caderno de Erros <span class="btn-hero-count count-danger" id="count-mistakes">0</span>
-          </button>
           <button class="btn-hero-quick" id="btn-open-starred" title="Rever as perguntas que marcou com estrela">
             ⭐ Perguntas Marcadas <span class="btn-hero-count count-gold" id="count-starred">0</span>
           </button>
@@ -123,15 +120,6 @@
             🔍 Glossário & Pesquisa
           </button>
         </div>
-      </div>
-
-      <!-- Revisão espaçada: perguntas do Caderno de Erros que já é altura de rever -->
-      <div class="review-due-card hidden" id="review-due-card" role="region" aria-label="Revisão de hoje">
-        <div class="review-due-text">
-          <strong id="review-due-title">📅 Hoje tens perguntas para rever</strong>
-          <span id="review-due-sub">As perguntas do Caderno de Erros voltam a aparecer ao fim de alguns dias, para fixares melhor.</span>
-        </div>
-        <button type="button" class="btn btn-primary btn-sm" id="btn-review-due">Rever agora ➔</button>
       </div>
 
       <!-- Comunicado Oficial aos Estudantes sobre Inteligência Artificial -->
@@ -1630,7 +1618,6 @@
               <option value="3">Tópico 3: Hidrodinâmica (Ativo - 200 Questões)</option>
               <option value="4" disabled>🔒 Tópico 4: Hidrostática (Bloqueado)</option>
               <option value="5" disabled>🔒 Tópico 5: Física Atómica e Nuclear (Bloqueado)</option>
-              <option value="mistakes">📕 Apenas Perguntas do Meu Caderno de Erros</option>
               <option value="starred">⭐ Apenas Perguntas Marcadas com Estrela</option>
             </select>
           </div>
@@ -1685,7 +1672,7 @@
   <script src="js/study-figures.js?v=1.4"></script>
   <script src="js/bases-content.js?v=1.1"></script>
   <script src="js/question-figures.js?v=1.3"></script>
-  <script src="js/quiz-engine.js?v=4.1"></script>
+  <script src="js/quiz-engine.js?v=4.2"></script>
 
   <!-- Arena BioFísica (Multiplayer em Tempo Real na Aula - 100% Gratuito) -->
   <script src="js/lib/paho-mqtt.min.js"></script>
@@ -1696,6 +1683,6 @@
   <script src="js/teacher-manager.js?v=3.7"></script>
   <script src="js/quiz-sync.js?v=1.2"></script>
   <script src="js/metrics.js?v=1.2"></script>
-  <script src="js/app.js?v=4.8"></script>
+  <script src="js/app.js?v=4.9"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 /**
  * Aplicação Principal - BioFísica Enfermagem Hub
  * Controlador de interface, navegação de vistas, motor de quiz, persistência local,
- * pesquisa rápida, conquistas, impressão de fichas e caderno de erros.
+ * pesquisa rápida, conquistas e impressão de fichas.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -42,8 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnViewStudy = document.getElementById('btn-view-study');
   const btnViewStats = document.getElementById('btn-view-stats');
   const btnOpenArena = document.getElementById('btn-open-arena');
-  const btnOpenMistakes = document.getElementById('btn-open-mistakes');
-  const countMistakes = document.getElementById('count-mistakes');
   const btnOpenStarred = document.getElementById('btn-open-starred');
   const countStarred = document.getElementById('count-starred');
   const btnOpenWorksheet = document.getElementById('btn-open-worksheet');
@@ -124,10 +122,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const toastContainer = document.getElementById('toast-container');
 
   // Revisão espaçada, confiança, resultados e teoria
-  const reviewDueCard = document.getElementById('review-due-card');
-  const reviewDueTitle = document.getElementById('review-due-title');
-  const reviewDueSub = document.getElementById('review-due-sub');
-  const btnReviewDue = document.getElementById('btn-review-due');
   const confidenceRow = document.getElementById('confidence-row');
   const resultFocus = document.getElementById('result-focus');
   const modalTheory = document.getElementById('modal-theory');
@@ -307,98 +301,13 @@ document.addEventListener('DOMContentLoaded', () => {
   updateStreak();
 
   // =========================================================================
-  // 6. Funcionalidade 1A: Caderno de Erros & Perguntas Marcadas (⭐)
+  // 6. Funcionalidade 1A: Perguntas Marcadas (⭐)
   // =========================================================================
-  function getMistakes() {
-    return JSON.parse(localStorage.getItem('biofisica_mistakes') || '[]');
-  }
-
-  // Revisão espaçada do Caderno de Erros.
-  // Errar volta a agendar a pergunta para o dia seguinte (ou para hoje, se havia certeza).
-  // A pergunta só sai do caderno depois de 2 respostas certas em dias diferentes,
-  // a primeira reagendando a revisão para daí a 3 dias.
-  const SRS_REVIEW_DAYS = 3;
-  const SRS_CORRECT_TO_MASTER = 2;
-
-  function localDateStr(date = new Date()) {
-    const y = date.getFullYear();
-    const m = String(date.getMonth() + 1).padStart(2, '0');
-    const d = String(date.getDate()).padStart(2, '0');
-    return `${y}-${m}-${d}`;
-  }
-
-  function addDaysStr(dateStr, days) {
-    const [y, m, d] = dateStr.split('-').map(Number);
-    return localDateStr(new Date(y, m - 1, d + days));
-  }
-
-  function getSrs() {
-    try {
-      return JSON.parse(localStorage.getItem('biofisica_srs') || '{}') || {};
-    } catch (e) {
-      return {};
-    }
-  }
-
-  function saveSrs(srs) {
-    localStorage.setItem('biofisica_srs', JSON.stringify(srs));
-  }
-
-  function isMistakeDue(id) {
-    const entry = getSrs()[id];
-    return !entry || entry.due <= localDateStr();
-  }
-
-  function addMistakes(ids, urgentIds = []) {
-    if (!ids || ids.length === 0) return;
-    const current = getMistakes();
-    const set = new Set([...current, ...ids]);
-    localStorage.setItem('biofisica_mistakes', JSON.stringify(Array.from(set)));
-
-    const srs = getSrs();
-    const today = localDateStr();
-    ids.forEach(id => {
-      srs[id] = { box: 0, due: urgentIds.includes(id) ? today : addDaysStr(today, 1), lastCorrect: null };
-    });
-    saveSrs(srs);
-    updateQuickActionCounters();
-  }
-
-  function resolveMistake(id) {
-    const current = getMistakes();
-    const filtered = current.filter(qId => qId !== id);
-    localStorage.setItem('biofisica_mistakes', JSON.stringify(filtered));
-    const srs = getSrs();
-    delete srs[id];
-    saveSrs(srs);
-    updateQuickActionCounters();
-  }
-
-  // Regista uma resposta certa a uma pergunta do caderno. Devolve true se a pergunta ficou dominada.
-  function recordCorrectReview(id) {
-    if (!getMistakes().includes(id)) return false;
-    const srs = getSrs();
-    const today = localDateStr();
-    const entry = srs[id] || { box: 0, due: today, lastCorrect: null };
-    if (entry.lastCorrect === today) return false; // só conta um acerto por dia
-    entry.box += 1;
-    entry.lastCorrect = today;
-    if (entry.box >= SRS_CORRECT_TO_MASTER) {
-      resolveMistake(id);
-      return true;
-    }
-    entry.due = addDaysStr(today, SRS_REVIEW_DAYS);
-    srs[id] = entry;
-    saveSrs(srs);
-    return false;
-  }
-
-  function getActiveMistakeQuestions() {
-    const ids = new Set(getMistakes());
-    const active = QUESTIONS_DATA.filter(q => ids.has(q.id));
-    // As que já é altura de rever vêm primeiro
-    return [...active.filter(q => isMistakeDue(q.id)), ...active.filter(q => !isMistakeDue(q.id))];
-  }
+  // O antigo Caderno de Erros foi removido: limpar os dados que ficaram guardados
+  try {
+    localStorage.removeItem('biofisica_mistakes');
+    localStorage.removeItem('biofisica_srs');
+  } catch (e) { /* sem armazenamento */ }
 
   function getStarred() {
     return JSON.parse(localStorage.getItem('biofisica_starred') || '[]');
@@ -423,19 +332,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function updateQuickActionCounters() {
-    const mistakeQuestions = getActiveMistakeQuestions();
-    const sCount = getStarred().length;
-    countMistakes.textContent = mistakeQuestions.length;
-    countStarred.textContent = sCount;
-
-    const dueCount = mistakeQuestions.filter(q => isMistakeDue(q.id)).length;
-    if (dueCount > 0) {
-      reviewDueTitle.textContent = `📅 Hoje tens ${dueCount} ${dueCount === 1 ? 'pergunta' : 'perguntas'} para rever`;
-      reviewDueSub.textContent = 'O Caderno de Erros volta a testar o que erraste ao fim de alguns dias. Uma pergunta só sai do caderno depois de 2 respostas certas em dias diferentes.';
-      reviewDueCard.classList.remove('hidden');
-    } else {
-      reviewDueCard.classList.add('hidden');
-    }
+    countStarred.textContent = getStarred().length;
   }
 
   updateQuickActionCounters();
@@ -547,24 +444,6 @@ document.addEventListener('DOMContentLoaded', () => {
     closeReportModal();
     showToast(sent ? '🚩 Obrigado! O reporte foi enviado ao docente.' : 'Não foi possível enviar o reporte.', sent ? 'toast-success' : 'toast-info');
   });
-
-  // Abertura do Caderno de Erros
-  function openMistakesSession(onlyDue = false) {
-    const all = getActiveMistakeQuestions();
-    if (all.length === 0) {
-      showToast('🎉 O teu Caderno de Erros está vazio! Parabéns pelo excelente aproveitamento.', 'toast-success');
-      return;
-    }
-    const due = all.filter(q => isMistakeDue(q.id));
-    const questions = onlyDue && due.length > 0 ? due : all;
-    const subtitle = due.length > 0
-      ? `Tens ${all.length} questões guardadas, ${due.length} para rever hoje (aparecem primeiro):`
-      : `Tens ${all.length} questões guardadas. Nenhuma está agendada para hoje, mas podes treinar à vontade:`;
-    openCustomSessionModal('📕 Caderno de Erros', questions, subtitle);
-  }
-
-  btnOpenMistakes.addEventListener('click', () => openMistakesSession(false));
-  btnReviewDue.addEventListener('click', () => openMistakesSession(true));
 
   // Abertura das Perguntas Marcadas
   btnOpenStarred.addEventListener('click', () => {
@@ -1520,7 +1399,7 @@ document.addEventListener('DOMContentLoaded', () => {
       feedbackCard.classList.add(result.isCorrect ? 'feedback-correct' : 'feedback-incorrect');
       feedbackTitle.innerHTML = result.isCorrect
         ? '✅ <strong>Corrigiste o erro de há pouco!</strong> Esta repetição não conta para a nota.'
-        : '❌ <strong>Ainda não.</strong> Lê a justificação com calma e abre a teoria; a pergunta fica no Caderno de Erros.';
+        : '❌ <strong>Ainda não.</strong> Lê a justificação com calma e abre a teoria.';
     } else if (result.isCorrect) {
       feedbackCard.classList.add('feedback-correct');
       feedbackTitle.innerHTML = currentConfidence === 'low'
@@ -1660,23 +1539,17 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="focus-card">
           <h4>🧭 A tua confiança vs. os resultados</h4>
           <ul class="focus-list">${rows}</ul>
-          ${overconfident.length > 0 ? `<p class="focus-note">Erraste ${overconfident.length} ${overconfident.length === 1 ? 'pergunta' : 'perguntas'} com certeza (${overconfident.map(a => questionLabel(a.questionId)).join('; ')}). São as que mais vale rever, e voltam hoje ao Caderno de Erros.</p>` : ''}
+          ${overconfident.length > 0 ? `<p class="focus-note">Erraste ${overconfident.length} ${overconfident.length === 1 ? 'pergunta' : 'perguntas'} com certeza (${overconfident.map(a => questionLabel(a.questionId)).join('; ')}). São as que mais vale rever.</p>` : ''}
         </div>`;
     }
 
     const notes = [];
-    if (summary.masteredCount > 0) {
-      notes.push(`📕 ${summary.masteredCount} ${summary.masteredCount === 1 ? 'pergunta saiu' : 'perguntas saíram'} do Caderno de Erros (2 acertos em dias diferentes).`);
-    }
     if (summary.retryTotal > 0) {
       notes.push(`🔁 Repetição de erros: acertaste ${summary.retryCorrect} de ${summary.retryTotal} ao tentar outra vez (não conta para a nota).`);
     }
     const guessed = summary.answers.filter(a => a.isCorrect && a.confidence === 'low').length;
     if (guessed > 0) {
       notes.push(`🎲 ${guessed} ${guessed === 1 ? 'resposta certa foi dada' : 'respostas certas foram dadas'} sem certeza: estão assinaladas na revisão, logo a seguir aos erros.`);
-    }
-    if (summary.incorrectCount > 0) {
-      notes.push(`📕 ${summary.incorrectCount} ${summary.incorrectCount === 1 ? 'pergunta guardada' : 'perguntas guardadas'} no Caderno de Erros para rever nos próximos dias.`);
     }
     if (notes.length) {
       html += `<div class="focus-card focus-note-card">${notes.map(n => `<p>${n}</p>`).join('')}</div>`;
@@ -1691,22 +1564,9 @@ document.addEventListener('DOMContentLoaded', () => {
     clearQuizProgress();
     showView(resultsView);
 
-    // Guardar histórico e atualizar erros
+    // Guardar histórico
     saveAttemptHistory(summary);
     Metrics.trackSession(quiz, summary, false);
-
-    // Caderno de Erros com revisão espaçada: os acertos às perguntas do caderno contam
-    // (em qualquer sessão); os erros voltam a ser agendados.
-    const masteredIds = summary.answers
-      .filter(a => a.isCorrect && recordCorrectReview(a.questionId))
-      .map(a => a.questionId);
-    if (summary.incorrectIds && summary.incorrectIds.length > 0) {
-      const overconfident = summary.answers
-        .filter(a => !a.isCorrect && a.confidence === 'high')
-        .map(a => a.questionId);
-      addMistakes(summary.incorrectIds, overconfident);
-    }
-    summary.masteredCount = masteredIds.length;
 
     // Avaliar conquistas
     checkAndAwardBadges(summary);
@@ -1881,7 +1741,6 @@ document.addEventListener('DOMContentLoaded', () => {
     { id: 'nuclear_expert', icon: '⚛️', title: 'Físico Nuclear Clínico', desc: 'Aproveitamento ≥ 80% no Tópico 5 (Física Atómica e Nuclear)' },
     { id: 'honor_roll', icon: '🌟', title: 'Aluno de Honra', desc: 'Nota ≥ 18,0 valores num teste de 20 ou mais questões' },
     { id: 'real_exam_pass', icon: '⏱️', title: 'Prova de Fogo', desc: 'Aprovado em Simulação Real de Frequência (≥ 9,5 val.)' },
-    { id: 'clean_mistakes', icon: '🧹', title: 'Caderno Imaculado', desc: 'Treino de erros completado com 100% de acertos' },
     { id: 'marathon', icon: '🏃', title: 'Maratonista Clínico', desc: 'Completou 50 ou mais questões numa única sessão' },
     { id: 'streak_3', icon: '🔥', title: 'Dedicação Contínua', desc: 'Estudou durante 3 ou mais dias consecutivos' }
   ];
@@ -1917,10 +1776,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (summary.feedbackMode === 'delayed' && summary.grade20 >= 9.5) {
       unlockBadge('real_exam_pass');
-    }
-
-    if (quiz.mode === 'custom' && quiz.customTitle === '📕 Caderno de Erros' && summary.percentage === 100) {
-      unlockBadge('clean_mistakes');
     }
 
     // Tópicos específicos
@@ -2233,14 +2088,6 @@ document.addEventListener('DOMContentLoaded', () => {
       pool = quiz.shuffleArray(QUESTIONS_DATA);
       const isSingleTopic = typeof UNLOCKED_TOPIC_IDS !== 'undefined' && UNLOCKED_TOPIC_IDS.length === 1;
       sheetTitle = isSingleTopic ? 'Ficha de Avaliação e Treino: Tópico 1' : 'Simulação Geral Abrangente de Biofísica';
-    } else if (selectedTopic === 'mistakes') {
-      const mistakes = getMistakes();
-      if (mistakes.length === 0) {
-        showToast('Não tem erros registados no Caderno de Erros para gerar a ficha.', 'toast-info');
-        return;
-      }
-      pool = QUESTIONS_DATA.filter(q => mistakes.includes(q.id));
-      sheetTitle = 'Ficha Especial: Caderno de Erros';
     } else if (selectedTopic === 'starred') {
       const starred = getStarred();
       if (starred.length === 0) {
@@ -2591,7 +2438,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const trendText = Math.abs(delta) < 0.5
       ? 'As tuas notas mantêm-se estáveis.'
       : delta > 0 ? `As notas mais recentes estão, em média, ${String(delta.toFixed(1)).replace('.', ',')} valores acima das iniciais. Bom caminho!`
-        : `As notas mais recentes estão, em média, ${String(Math.abs(delta).toFixed(1)).replace('.', ',')} valores abaixo das iniciais: vale a pena rever o Caderno de Erros.`;
+        : `As notas mais recentes estão, em média, ${String(Math.abs(delta).toFixed(1)).replace('.', ',')} valores abaixo das iniciais: vale a pena rever os resumos teóricos.`;
     return `
       <div class="stats-panel">
         <h4>📈 Evolução das notas (últimas ${points.length} tentativas)</h4>

@@ -4483,33 +4483,6 @@ mark {
    resultados, estatísticas e glossário
    ========================================================================== */
 
-/* Cartão de revisão do dia (home) */
-.review-due-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  max-width: 920px;
-  margin: 0 auto 1.75rem;
-  padding: 1rem 1.25rem;
-  background: var(--color-warning-light);
-  border: 1px solid var(--color-warning);
-  border-left: 5px solid var(--color-warning);
-  border-radius: var(--radius-md);
-}
-
-.review-due-card.hidden { display: none; }
-
-.review-due-text {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-  font-size: 0.9rem;
-  color: var(--text-primary);
-}
-
-.review-due-text strong { font-size: 1.02rem; }
-.review-due-text span { color: var(--text-secondary); }
 
 /* Comunicado sobre IA minimizável */
 .notice-toggle,
@@ -4855,7 +4828,6 @@ mark {
 
   .review-header { flex-wrap: wrap; gap: 0.5rem; }
 
-  .review-due-card { flex-direction: column; align-items: stretch; text-align: left; }
 
   .hero-actions .btn { width: 100%; justify-content: center; }
 
