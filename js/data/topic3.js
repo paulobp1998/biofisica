@@ -586,11 +586,11 @@ const TOPIC_3_QUESTIONS = [
   {
     "id": 3031,
     "topicId": 3,
-    "question": "Numa artéria que se divide em dois ramos (bifurcação), o que se espera, em termos qualitativos, para o escoamento junto ao local de divisão?",
+    "question": "Numa artéria que se divide em dois ramos (bifurcação), que efeito tem, qualitativamente, a bifurcação no escoamento junto ao local de divisão?",
     "options": [
       "Impõe o perfil parabólico em todo o vaso, sem turbilhões.",
       "Não tem efeito, pois o regime só depende da velocidade média.",
-      "Maior tendência para a turbulência, devido à mudança de direção.",
+      "Aumenta a tendência para a turbulência, por mudar a direção.",
       "Elimina os turbilhões existentes, por dividir o líquido em ramos."
     ],
     "correctIndex": 2,
@@ -610,14 +610,14 @@ const TOPIC_3_QUESTIONS = [
       "Favorece a turbulência, por perturbar as camadas junto à parede.",
       "Favorece o regime laminar, por aumentar o atrito junto à parede.",
       "Aumenta a viscosidade do líquido, tornando-o mais laminar.",
-      "Não influencia o regime, que só depende da cor do líquido."
+      "Não influencia o regime, que só depende da velocidade do líquido."
     ],
     "correctIndex": 0,
     "explanation": "Uma parede interna áspera é um dos fatores que favorece a turbulência. As irregularidades perturbam as camadas de líquido junto à parede.",
     "distractorAnalysis": [
       "Está incorreta: a parede áspera perturba o escoamento e favorece a turbulência, e não o regime laminar.",
       "Está incorreta: a rugosidade da parede não altera a viscosidade do líquido; perturba o escoamento.",
-      "Está incorreta: a rugosidade da parede interna favorece a turbulência; a cor do líquido é irrelevante."
+      "Está incorreta: a velocidade é um dos fatores, mas não o único; a rugosidade da parede interna também favorece a turbulência."
     ],
     "nursingApplication": "Uma superfície interna irregular num vaso, como a causada por uma placa de ateroma, pode tornar o escoamento mais perturbado e ruidoso."
   },
@@ -914,14 +914,14 @@ const TOPIC_3_QUESTIONS = [
       "Na linha A, porque o escoamento reto exige mais energia.",
       "Na linha B, porque o ângulo e o estreitamento favorecem a turbulência.",
       "É igual nas duas, porque o líquido e a velocidade são os mesmos.",
-      "Em nenhuma, porque o gasto só depende da cor do líquido."
+      "Em nenhuma, porque o escoamento de um líquido não gasta energia."
     ],
     "correctIndex": 1,
     "explanation": "Ângulos e variações de calibre favorecem a turbulência, que gasta mais energia do que o regime laminar. Por isso, o gasto é maior na linha B.",
     "distractorAnalysis": [
       "Está incorreta: a linha reta e lisa favorece o regime laminar, que gasta menos energia.",
       "Está incorreta: o ângulo e o estreitamento favorecem a turbulência, aumentando o gasto de energia na linha B.",
-      "Está incorreta: a cor é irrelevante: o gasto de energia depende do regime de escoamento."
+      "Está incorreta: qualquer escoamento real gasta energia, por causa da viscosidade, e o gasto é maior na linha B, onde a turbulência é favorecida."
     ],
     "nursingApplication": "Evitar dobras e ângulos apertados nas linhas de perfusão mantém o escoamento menos perturbado."
   },
@@ -980,7 +980,7 @@ const TOPIC_3_QUESTIONS = [
       "Está incorreta: coloca a velocidade no denominador; aumentar a velocidade favorece a turbulência, logo Re tem de aumentar com v.",
       "Está incorreta: coloca o diâmetro no denominador; um tubo de maior diâmetro favorece a turbulência, por isso d multiplica no numerador."
     ],
-    "nursingApplication": "Ao avaliar a perfusão de um líquido numa linha de infusão, é esta relação que permite perceber que mais velocidade ou maior calibre aumentam a tendência para a turbulência, sempre conforme prescrição e protocolo da instituição."
+    "nursingApplication": "Ao avaliar a perfusão de um líquido numa linha de infusão, é esta relação que permite perceber que mais velocidade ou maior calibre aumentam a tendência para a turbulência."
   },
   {
     "id": 3052,
@@ -1574,7 +1574,7 @@ const TOPIC_3_QUESTIONS = [
       "Resultado: 300 cm/s"
     ],
     "distractorAnalysis": [
-      "Está incorreta: supõe que a velocidade limite diminui com o diâmetro; como v e d são inversamente proporcionais a Re fixo, diminuir d permite aumentar v.",
+      "Está incorreta: supõe que a velocidade limite diminui com o diâmetro; como, para Re fixo, v e d são inversamente proporcionais, diminuir d permite aumentar v.",
       "Está incorreta: considera uma relação com o quadrado do diâmetro (fator 4); d aparece à primeira potência.",
       "Está incorreta: supõe que o limite não depende do diâmetro, mas v · d tem de se manter constante para Re = 2000."
     ],
@@ -1597,7 +1597,7 @@ const TOPIC_3_QUESTIONS = [
       "Está incorreta: o perfil parabólico é característico do regime laminar; no regime turbulento o perfil é quase plano.",
       "Está incorreta: a zona de transição situa-se entre 2000 e 4000; acima de 4000 o regime é turbulento."
     ],
-    "nursingApplication": "A turbulência produz ruído e exige mais energia, e daí a tendência fisiológica para repor o regime laminar sempre que possível."
+    "nursingApplication": "Um sopro auscultado sobre uma artéria estenosada, como a carótida, resulta do escoamento turbulento no estreitamento, onde a velocidade e Re aumentam."
   },
   {
     "id": 3076,
@@ -1675,7 +1675,7 @@ const TOPIC_3_QUESTIONS = [
       "O escoamento já não é claramente laminar, mas ainda não é plenamente turbulento.",
       "O escoamento é claramente laminar, com as camadas totalmente paralelas.",
       "O escoamento é claramente turbulento, com perfil de velocidades quase plano.",
-      "O escoamento pára, porque o líquido fica sem velocidade no tubo."
+      "O escoamento para, porque o líquido fica sem velocidade no tubo."
     ],
     "correctIndex": 0,
     "explanation": "Abaixo de 2000 o regime é laminar e acima de 4000 é turbulento. Entre estes valores, o regime não é nitidamente nenhum dos dois.",
@@ -2733,7 +2733,7 @@ const TOPIC_3_QUESTIONS = [
     "explanation": "Com a velocidade elevada da sístole e o grande calibre da aorta, Re sobe e a turbulência torna-se mais provável.",
     "distractorAnalysis": [
       "Está incorreta: A elasticidade não impede a turbulência; com velocidade elevada e grande calibre a turbulência é mais provável.",
-      "Está incorreta: A velocidade não altera a viscosidade; o seu aumento faz subir Re.",
+      "Está incorreta: Uma velocidade elevada não aumenta a viscosidade do sangue; o seu aumento faz subir Re e favorece a turbulência.",
       "Está incorreta: O regime depende de Re, que aumenta com a velocidade."
     ],
     "nursingApplication": "Ao palpar o pulso e auscultar o coração de um utente, o enfermeiro tem em conta que a sístole é o momento em que a velocidade do sangue é maior."
@@ -3298,7 +3298,7 @@ const TOPIC_3_QUESTIONS = [
       "Está incorreta: inverteu a fração (8 / 600); o volume fica no numerador.",
       "Está incorreta: dividiu 75 mL/h por 60 como se fosse converter para mL/min, mas o resultado pedido está em mL/h (1,25 seria o valor em mL/min)."
     ],
-    "nursingApplication": "A velocidade de perfusão de um soro é programada conforme prescrição e protocolo da instituição, em mL/h."
+    "nursingApplication": "O caudal de um soro é programado em mL/h, conforme a prescrição e o protocolo da instituição."
   },
   {
     "id": 3154,
@@ -3590,7 +3590,7 @@ const TOPIC_3_QUESTIONS = [
       "Está incorreta: esta expressão é o inverso do caudal; η e L estão no denominador da lei de Poiseuille.",
       "Está incorreta: a viscosidade está no denominador, pois o caudal diminui quando η aumenta."
     ],
-    "nursingApplication": "Reconhecer de que variáveis depende o caudal ajuda a perceber porque é que o calibre do cateter pesa tanto na velocidade de administração."
+    "nursingApplication": "Reconhecer de que variáveis depende o caudal ajuda a perceber porque é que o calibre do cateter pesa tanto no caudal de administração."
   },
   {
     "id": 3166,
@@ -3831,7 +3831,7 @@ const TOPIC_3_QUESTIONS = [
   {
     "id": 3176,
     "topicId": 3,
-    "question": "Dois cateteres iguais em comprimento têm raios r<sub>A</sub> = 0,9 mm e r<sub>B</sub> = 0,6 mm. Com a mesma ΔP e o mesmo líquido, o caudal em B é 16 mL/min. Qual é o caudal em A?",
+    "question": "Dois cateteres iguais em comprimento têm raios R<sub>A</sub> = 0,9 mm e R<sub>B</sub> = 0,6 mm. Com a mesma ΔP e o mesmo líquido, o caudal em B é 16 mL/min. Qual é o caudal em A?",
     "figure": {
       "type": "tube",
       "items": [
@@ -3840,7 +3840,7 @@ const TOPIC_3_QUESTIONS = [
           "r": 1.0,
           "flow": "D = ?",
           "inside": [
-            "r = 0,9 mm"
+            "R = 0,9 mm"
           ],
           "L": "mesmo L"
         },
@@ -3849,7 +3849,7 @@ const TOPIC_3_QUESTIONS = [
           "r": 0.67,
           "flow": "D = 16 mL/min",
           "inside": [
-            "r = 0,6 mm"
+            "R = 0,6 mm"
           ],
           "L": "mesmo L"
         }
@@ -3865,8 +3865,8 @@ const TOPIC_3_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "A razão dos raios é 0,9 / 0,6 = 1,5. O caudal é proporcional a R⁴, logo D<sub>A</sub> / D<sub>B</sub> = 1,5⁴ ≈ 5,06.",
     "solution": [
-      "Dados: r<sub>A</sub> = 0,9 mm; r<sub>B</sub> = 0,6 mm; D<sub>B</sub> = 16 mL/min",
-      "Fórmula: D<sub>A</sub> / D<sub>B</sub> = (r<sub>A</sub> / r<sub>B</sub>)⁴",
+      "Dados: R<sub>A</sub> = 0,9 mm; R<sub>B</sub> = 0,6 mm; D<sub>B</sub> = 16 mL/min",
+      "Fórmula: D<sub>A</sub> / D<sub>B</sub> = (R<sub>A</sub> / R<sub>B</sub>)⁴",
       "Substituição: D<sub>A</sub> = 16 × (0,9 / 0,6)⁴ = 16 × 1,5⁴ = 16 × 5,0625",
       "Resultado: 81 mL/min"
     ],

@@ -161,7 +161,7 @@ const TOPIC_1_QUESTIONS = [
     "explanation": "Quando a força resultante é nula (F<sub>R</sub> = 0), o corpo mantém o seu estado de repouso ou continua em movimento retilíneo uniforme (MRU), de acordo com a 1.ª Lei de Newton.",
     "distractorAnalysis": [
       "Está incorreta: Sem força resultante, o corpo não abranda; mantém a velocidade.",
-      "Está incorreta: A rotação não resulta da ausência de forças: depende do momento resultante (ΣM). F<sub>R</sub> = 0 garante apenas que a translação não se altera.",
+      "Está incorreta: A rotação não resulta da ausência de forças: depende do momento resultante (M<sub>R</sub>). F<sub>R</sub> = 0 garante apenas que a translação não se altera.",
       "Está incorreta: A aceleração exige força resultante não nula (F = m · a); se F = 0, a aceleração é nula."
     ],
     "nursingApplication": "Explica porque é que uma maca parada numa superfície horizontal nivelada não se move sem intervenção externa."
@@ -468,7 +468,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: O tempo, por si só, não altera a velocidade; é preciso uma força.",
       "Está incorreta: O isolamento térmico não influencia o movimento do corpo."
     ],
-    "nursingApplication": "Explica porque é necessária uma força externa, como a do profissional ou o atrito do piso, para abrandar ou parar uma cadeira de rodas; os travões imobilizam-na quando parada."
+    "nursingApplication": "Explica porque é necessária uma força externa, como a do profissional ou a resistência ao rolamento das rodas, para abrandar ou parar uma cadeira de rodas; os travões imobilizam-na quando parada."
   },
   {
     "id": 1024,
@@ -658,7 +658,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A aceleração diminui quando a massa aumenta; m/F inverte esta relação.",
       "Está incorreta: Força e massa não se somam; a 2.ª Lei relaciona-as por quociente."
     ],
-    "nursingApplication": "Mostra que para uma mesma força aplicada, quanto maior for a massa m, menor será a aceleração adquirida a."
+    "nursingApplication": "Ao empurrar com a mesma força um carrinho de pensos vazio e outro carregado, o enfermeiro verifica que o carregado arranca mais devagar, porque a = F / m."
   },
   {
     "id": 1034,
@@ -677,7 +677,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: a/F inverte a relação; a massa é F dividido por a.",
       "Está incorreta: Força e aceleração não se subtraem para obter a massa."
     ],
-    "nursingApplication": "Permite deduzir a massa inercial de um corpo a partir da medição da força e da aceleração produzida."
+    "nursingApplication": "Explica porque um carrinho de medicação carregado responde menos ao mesmo empurrão: para a mesma força, uma aceleração menor corresponde a uma massa maior (m = F / a)."
   },
   {
     "id": 1035,
@@ -690,7 +690,7 @@ const TOPIC_1_QUESTIONS = [
       "0,0016 N"
     ],
     "correctIndex": 2,
-    "explanation": "Pela 2.ª Lei de Newton, F<sub>R</sub> = m · a = 160 kg × 0,25 m/s² = 40 N. Para a mesma aceleração, uma massa total de 80 kg exigiria apenas 20 N: a força necessária é proporcional à massa. Na prática, o atrito e a resistência ao rolamento aumentam ainda mais a força a aplicar, tanto para arrancar como para travar.",
+    "explanation": "Pela 2.ª Lei de Newton, F<sub>R</sub> = m · a = 160 kg × 0,25 m/s² = 40 N. Para a mesma aceleração, uma massa total de 80 kg exigiria apenas 20 N: a força necessária é proporcional à massa. Na prática, o atrito e a resistência ao rolamento aumentam a força a aplicar para arrancar; ao travar, contribuem para abrandar a cama.",
     "solution": [
       "Dados: m = 160 kg; a = 0,25 m/s²; F<sub>R</sub> = ?",
       "Fórmula: F<sub>R</sub> = m · a",
@@ -949,7 +949,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A reação surge no mesmo instante da ação, mesmo sem deformação visível do corpo atingido.",
       "Está incorreta: A ação e a reação existem em qualquer interação, mesmo com os corpos em repouso."
     ],
-    "nursingApplication": "Importante para entender o impacto imediato de colisões e forças aplicadas em contexto clínico."
+    "nursingApplication": "Ao amparar um utente que se levanta, o enfermeiro sente de imediato a força que o utente exerce sobre as suas mãos, porque ação e reação surgem no mesmo instante."
   },
   {
     "id": 1048,
@@ -1129,7 +1129,7 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "O movimento é retilíneo e uniforme, porque o módulo da velocidade, 30 km/h, é constante.",
       "O movimento não é retilíneo e uniforme, pois a direção da velocidade muda.",
-      "A força resultante sobre o veículo é igual a zero newtons, pois o módulo se mantém.",
+      "A força resultante sobre o veículo é igual a zero newtons, pois o módulo mantém-se.",
       "O veículo perde parte da sua inércia durante a curva, devido à mudança de direção."
     ],
     "correctIndex": 1,
@@ -1139,7 +1139,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: Numa curva há aceleração centrípeta e, portanto, força resultante não nula.",
       "Está incorreta: A inércia é uma propriedade da massa e não se perde durante a curva."
     ],
-    "nursingApplication": "Explica por que os doentes sentem forças laterais quando uma ambulância faz curvas, mesmo em velocidade moderada."
+    "nursingApplication": "Explica porque os doentes sentem forças laterais quando uma ambulância faz curvas, mesmo em velocidade moderada."
   },
   {
     "id": 1058,
@@ -1165,7 +1165,7 @@ const TOPIC_1_QUESTIONS = [
     "topicId": 1,
     "question": "Um carrinho de medicação desloca-se em MRU num piso horizontal. Se a força de atrito contrária ao movimento for de 18 N, que força horizontal aplica o enfermeiro?",
     "options": [
-      "0 N, pois o carrinho se move sem auxílio no corredor.",
+      "0 N, pois o carrinho move-se sem auxílio no corredor.",
       "36 N, para que a velocidade aumente de forma contínua.",
       "9 N, pois a inércia do carrinho reduz para metade a força necessária.",
       "18 N, no sentido do movimento, para que F<sub>R</sub> = 0 N."
@@ -1316,7 +1316,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: O decaimento radioativo não se relaciona com a medição do peso.",
       "Está incorreta: O solo não gera forças magnéticas repulsivas que determinem o peso do utente."
     ],
-    "nursingApplication": "Ajuda a clarificar por que o peso varia com a gravidade local enquanto a massa se mantém invariável."
+    "nursingApplication": "Ajuda a clarificar porque o peso varia com a gravidade local enquanto a massa se mantém invariável."
   },
   {
     "id": 1067,
@@ -2076,7 +2076,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A massa do enfermeiro não altera a igualdade entre as forças de ação e reação; altera a aceleração de cada corpo.",
       "Está incorreta: As forças de colisão não são nulas, mesmo que a colisão seja rápida."
     ],
-    "nursingApplication": "Explica por que, numa colisão, o corpo do profissional e a estrutura que o trava sofrem forças de igual intensidade, mas com efeitos diferentes."
+    "nursingApplication": "Explica porque, numa colisão, o corpo do profissional e a estrutura que o trava sofrem forças de igual intensidade, mas com efeitos diferentes."
   },
   {
     "id": 1106,
@@ -2171,7 +2171,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A inércia não se transforma em energia térmica; a divisória exerce uma força de paragem.",
       "Está incorreta: A divisória trava o enfermeiro e não o acelera."
     ],
-    "nursingApplication": "Evidencia por que os sistemas de retenção e airbags prolongam o tempo de paragem e distribuem a força por uma área maior."
+    "nursingApplication": "Evidencia porque os sistemas de retenção e airbags prolongam o tempo de paragem e distribuem a força por uma área maior."
   },
   {
     "id": 1110,
@@ -2247,7 +2247,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: Afastar-se cada vez mais da posição inicial caracteriza o equilíbrio instável.",
       "Está incorreta: Retornar à posição de origem é o equilíbrio estável."
     ],
-    "nursingApplication": "Exemplificado por uma bola ou roda num piso plano horizontal, que encontra novo equilíbrio onde quer que pare."
+    "nursingApplication": "Por analogia, uma cadeira de rodas destravada num corredor plano e horizontal fica parada na posição em que é deixada, sem tendência para regressar nem para se afastar."
   },
   {
     "id": 1114,
@@ -2323,7 +2323,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: Uma bola numa superfície horizontal não regressa ao ponto de partida sem forças.",
       "Está incorreta: A bola não para sem força: é a resistência ao rolamento que a trava, por isso não há violação da 1.ª Lei."
     ],
-    "nursingApplication": "Demonstra a ausência de momento restaurador ou desestabilizador em superfícies horizontais lisas."
+    "nursingApplication": "Por analogia, um carro de medicação num corredor horizontal fica onde é deixado, mas numa rampa tende a descer, pelo que aí deve ficar travado."
   },
   {
     "id": 1118,
@@ -2514,7 +2514,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: Na horizontal, toda a componente do peso fica perpendicular à superfície.",
       "Está incorreta: O peso não fica nulo; é equilibrado pela força normal."
     ],
-    "nursingApplication": "Explica por que num corredor horizontal não é necessária força adicional para travar a componente de descida da gravidade."
+    "nursingApplication": "Explica porque num corredor horizontal não é necessária força adicional para travar a componente de descida da gravidade."
   },
   {
     "id": 1128,
@@ -2552,7 +2552,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: O peso total tem direção vertical, e não é perpendicular a N numa rampa inclinada.",
       "Está incorreta: As forças do diagrama não são todas paralelas entre si."
     ],
-    "nursingApplication": "Permite aos estudantes orientar mentalmente os eixos ortogonais ao analisar esforços mecânicos."
+    "nursingApplication": "Ao analisar uma cadeira de rodas travada numa rampa, permite separar as forças perpendiculares ao piso (N e P<sub>n</sub>) das forças paralelas a ele (F<sub>a</sub> e P<sub>t</sub>)."
   },
   {
     "id": 1130,
@@ -2648,7 +2648,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: O termo braço na mecânica é uma distância geométrica perpendicular, não o membro anatómico pesado.",
       "Está incorreta: Distância perpendicular mede-se em metros, enquanto velocidade mede-se em m/s."
     ],
-    "nursingApplication": "Compreender que o braço é a distância perpendicular é crucial para perceber por que carregar peso longe do corpo sobrecarrega a coluna."
+    "nursingApplication": "Compreender que o braço é a distância perpendicular é crucial para perceber porque transportar uma carga longe do corpo sobrecarrega a coluna."
   },
   {
     "id": 1135,
@@ -2667,7 +2667,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: N/m é a unidade da constante elástica (força por unidade de comprimento); o momento é um produto, N·m.",
       "Está incorreta: o N/m² é a unidade de pressão (força por área); o momento é um produto, N·m, e não um quociente por área."
     ],
-    "nursingApplication": "Garante a correta identificação dimensional das respostas em exercícios de biomecânica articular."
+    "nursingApplication": "Ao calcular o momento que o peso do antebraço e de uma carga criam no cotovelo, permite confirmar que o resultado se exprime em N·m, e não em N ou em N/m²."
   },
   {
     "id": 1136,
@@ -2731,7 +2731,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: O momento depende da força e do braço; não é fixo em 9,8 N·m.",
       "Está incorreta: Um momento nulo não produz rotação, por mais concentrada que a força esteja."
     ],
-    "nursingApplication": "Explica por que a componente da força muscular dirigida ao longo do osso, em direção à articulação, a comprime e estabiliza mas não produz rotação."
+    "nursingApplication": "Explica porque a componente da força muscular dirigida ao longo do osso, em direção à articulação, a comprime e estabiliza mas não produz rotação."
   },
   {
     "id": 1139,
@@ -2755,8 +2755,8 @@ const TOPIC_1_QUESTIONS = [
   {
     "id": 1140,
     "topicId": 1,
-    "question": "Duas forças de 10 N atuam em duas alavancas distintas: a Força 1 tem um braço b1 = 2 m e a Força 2 tem um braço b2 = 1 m. Quais são os respetivos momentos?",
-    "figure": {"type": "moment", "items": [{"len": 1, "F": "Força 1 = 10 N", "b": "b1 = 2 m"}, {"len": 0.5, "F": "Força 2 = 10 N", "b": "b2 = 1 m"}]},
+    "question": "Duas forças de 10 N atuam em duas alavancas distintas: a Força 1 tem um braço b<sub>1</sub> = 2 m e a Força 2 tem um braço b<sub>2</sub> = 1 m. Quais são os respetivos momentos?",
+    "figure": {"type": "moment", "items": [{"len": 1, "F": "Força 1 = 10 N", "b": "b<sub>1</sub> = 2 m"}, {"len": 0.5, "F": "Força 2 = 10 N", "b": "b<sub>2</sub> = 1 m"}]},
     "options": [
       "Momento 1 = 20 N·m e Momento 2 = 10 N·m.",
       "Momento 1 = 5 N·m e Momento 2 = 10 N·m.",
@@ -2764,7 +2764,7 @@ const TOPIC_1_QUESTIONS = [
       "Momento 1 = 200 N·m e Momento 2 = 100 N·m."
     ],
     "correctIndex": 0,
-    "explanation": "Calculando M = F · b para cada uma: M1 = 10 N × 2 m = 20 N·m; M2 = 10 N × 1 m = 10 N·m. A força com o dobro do braço produz o dobro do momento rotativo.",
+    "explanation": "Calculando M = F · b para cada uma: M<sub>1</sub> = 10 N × 2 m = 20 N·m; M<sub>2</sub> = 10 N × 1 m = 10 N·m. A força com o dobro do braço produz o dobro do momento rotativo.",
     "solution": [
       "Dados: F<sub>1</sub> = F<sub>2</sub> = 10 N; b<sub>1</sub> = 2 m; b<sub>2</sub> = 1 m; M<sub>1</sub> = ?; M<sub>2</sub> = ?",
       "Fórmula: M = F · b",
@@ -2776,7 +2776,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: Os braços são diferentes (2 m e 1 m), pelo que os momentos também são diferentes.",
       "Está incorreta: Com F = 10 N, os momentos são 20 e 10 N·m; 200 e 100 N·m resultariam de um erro de um fator de 10 no cálculo."
     ],
-    "nursingApplication": "Demonstração quantitativa clara do efeito multiplicador da distância de alavanca."
+    "nursingApplication": "Explica porque segurar um saco de soro com o braço estendido exige mais esforço ao ombro do que segurá-lo junto ao corpo: o mesmo peso, com o dobro do braço, produz o dobro do momento."
   },
   {
     "id": 1141,
@@ -2934,7 +2934,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A lei do inverso do quadrado não se aplica às alavancas; a relação é F · b.",
       "Está incorreta: A distância altera o esforço necessário, pois F<sub>Potente</sub> · b<sub>Potente</sub> = F<sub>Resis.</sub> · b<sub>Resis.</sub>."
     ],
-    "nursingApplication": "Explica por que cabos compridos e barras de elevação longas facilitam a manipulação de cargas pesadas."
+    "nursingApplication": "Explica porque cabos compridos e barras de elevação longas facilitam a manipulação de cargas pesadas."
   },
   {
     "id": 1149,
@@ -2953,7 +2953,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: As articulações são os fulcros e os músculos geram a força potente, e não o inverso.",
       "Está incorreta: A pele não é uma barra rígida; a barra do membro é o osso."
     ],
-    "nursingApplication": "Base conceptual indispensável para toda a biomecânica articular e análise da marcha."
+    "nursingApplication": "Permite modelar o cotovelo como fulcro, o antebraço como barra e o bíceps braquial como força potente, por exemplo ao avaliar a força de flexão de um utente em reabilitação."
   },
   {
     "id": 1150,
@@ -2991,7 +2991,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A força resistente no meio define a alavanca Inter-resistente.",
       "Está incorreta: Todas as alavancas de Arquimedes possuem obrigatoriamente um fulcro de rotação."
     ],
-    "nursingApplication": "Exemplos: o baloiço, a tesoura hospitalar e a articulação atlanto-occipital da cabeça."
+    "nursingApplication": "Ao usar uma tesoura de pensos, o parafuso central é o fulcro: as mãos aplicam a força potente de um lado e o material a cortar oferece a resistência do outro."
   },
   {
     "id": 1152,
@@ -3048,7 +3048,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: Os ossículos do ouvido formam uma alavanca de ganho de força (o martelo tem braço maior), o oposto de uma interpotente.",
       "Está incorreta: A elevação na ponta dos pés é apresentada classicamente como alavanca inter-resistente (classificação discutível; com o fulcro no tornozelo seria interfixa), mas em nenhum dos modelos é interpotente."
     ],
-    "nursingApplication": "Permite aos alunos reconhecer o tipo de alavanca mais abundante e comum no esqueleto apendicular humano."
+    "nursingApplication": "Num exercício de reabilitação com um haltere leve, explica porque o bíceps tem de exercer uma força várias vezes superior ao peso segurado na mão."
   },
   {
     "id": 1155,
@@ -3124,7 +3124,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: Na tesoura e no baloiço, a força potente não está no meio; é o fulcro que fica entre as duas forças.",
       "Está incorreta: Uma alavanca precisa de um fulcro em torno do qual roda, e não de um eixo fixo ao solo; o parafuso da tesoura é o fulcro."
     ],
-    "nursingApplication": "Compreensão do funcionamento de instrumentos cirúrgicos articulados comuns na prática diária de enfermagem."
+    "nursingApplication": "Ao cortar uma ligadura espessa com a tesoura de pensos, colocá-la junto ao parafuso (fulcro) reduz o braço resistente e a força que a mão tem de aplicar."
   },
   {
     "id": 1159,
@@ -3162,7 +3162,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A carga (peso da cabeça) não está entre o apoio e o músculo; é o côndilo occipital que separa as duas forças.",
       "Está incorreta: O centro de gravidade da cabeça situa-se à frente do côndilo, pelo que o peso cria um momento flexor que os músculos da nuca equilibram."
     ],
-    "nursingApplication": "Explica por que adormecer sentado faz a cabeça tombar para a frente: ao relaxar os músculos posteriores, o peso da cabeça faz a alavanca girar."
+    "nursingApplication": "Explica porque adormecer sentado faz a cabeça tombar para a frente: ao relaxar os músculos posteriores, o peso da cabeça faz a alavanca girar."
   },
   {
     "id": 1161,
@@ -3188,7 +3188,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: 2,4 m é o valor do braço potente (2x = 2 × 1,2), não de x.",
       "Está incorreta: 0,6 m resultaria de dividir 3,6 por 6, o que não reflete a equação 3x = 3,6."
     ],
-    "nursingApplication": "Aplicação da relação entre os braços de uma alavanca e o seu comprimento total, usando apenas os dados do enunciado."
+    "nursingApplication": "Numa tesoura de pensos, deslocar o material para mais perto do parafuso altera a razão entre os braços e, por isso, a força que a mão tem de aplicar."
   },
   {
     "id": 1162,
@@ -3265,7 +3265,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: 51,02 resultaria de dividir a massa pela gravidade, o que viola P = m · g.",
       "Está incorreta: 49 000 N corresponderia a uma gravidade de 98 m/s², dez vezes superior à da Terra."
     ],
-    "nursingApplication": "Cálculo da força gravítica real associada a cargas pesadas em ambiente de logística hospitalar."
+    "nursingApplication": "Ajuda a distinguir massa de peso ao ler a carga máxima de camas elétricas e elevadores de doentes, que os fabricantes indicam em kg."
   },
   {
     "id": 1165,
@@ -3316,7 +3316,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: 30 é o valor numérico da massa (kg), e não uma distância.",
       "Está incorreta: Com 0,2 m, 294 × 0,2 = 58,8 N·m, muito abaixo de 1470 N·m: a força não chega."
     ],
-    "nursingApplication": "Demonstração prática de como alavancas longas permitem a uma pessoa mover cargas de grande massa (500 kg)."
+    "nursingApplication": "Explica porque os pedais e manivelas de camas e macas têm braços longos: com um braço potente maior, o profissional equilibra o mesmo momento com menos força."
   },
   {
     "id": 1167,
@@ -3451,7 +3451,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: Divide por 1000 em vez de 100: 15 cm são 0,15 m, e não 0,015 m.",
       "Está incorreta: 15 cm não são 15 m; a conversão de centímetros para metros divide por 100."
     ],
-    "nursingApplication": "Fixa a conversão de unidades de centímetros para metros indispensável para o cálculo de momentos em N·m."
+    "nursingApplication": "Ao medir com fita métrica, em cm, a distância de um haltere ao cotovelo, é preciso convertê-la para metros antes de calcular o momento em N·m."
   },
   {
     "id": 1173,
@@ -3477,7 +3477,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: 0,3 N·m resultaria de multiplicar apenas a massa pelo braço sem aplicar g = 9,8.",
       "Está incorreta: 9,8 N·m seria o momento se o braço fosse de 1 metro completo em vez de 0,30 m."
     ],
-    "nursingApplication": "Determinação do momento resistente gerado por uma carga externa de 1 kg segurada na mão."
+    "nursingApplication": "Num exercício de reabilitação, um haltere de 1 kg seguro na mão com o cotovelo a 90° cria um momento de cerca de 2,9 N·m que o bíceps tem de equilibrar."
   },
   {
     "id": 1174,
@@ -3528,7 +3528,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: 3,68 N·m considera apenas o antebraço, esquecendo o objeto transportado na mão.",
       "Está incorreta: 0,74 N·m resultaria de subtrair os momentos (3,68 − 2,94); como ambos tendem a rodar o antebraço no mesmo sentido, somam-se."
     ],
-    "nursingApplication": "Exemplifica o princípio da sobreposição de momentos na análise biomecânica articular."
+    "nursingApplication": "Em exercícios de reabilitação com halteres após imobilização do membro superior, o peso do próprio antebraço também contribui para o momento no cotovelo."
   },
   {
     "id": 1176,
@@ -3618,14 +3618,14 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: O peso da mão aumenta o momento resistente, e não o diminui.",
       "Está incorreta: O objeto continua a exercer momento, que aumenta com a massa."
     ],
-    "nursingApplication": "Explica por que carregar materiais pesados na mão em flexão do cotovelo pode contribuir para fadiga e dor muscular."
+    "nursingApplication": "Explica porque carregar materiais pesados na mão em flexão do cotovelo pode contribuir para fadiga e dor muscular."
   },
   {
     "id": 1180,
     "topicId": 1,
     "question": "Que conclusão biomecânica geral se extrai da análise da alavanca interpotente do bíceps no corpo humano?",
     "options": [
-      "Operam em desvantagem mecânica, exigindo forças musculares elevadas.",
+      "A alavanca opera em desvantagem mecânica e exige forças musculares elevadas.",
       "Os ossos humanos são alavancas ideais, que exigem pouca força para mover cargas.",
       "O bíceps humano dispensa as leis da física clássica quando segura cargas.",
       "O antebraço é uma alavanca interfixa, em que o cotovelo se situa na ponta dos dedos."
@@ -3656,7 +3656,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A área de contacto dos pés é a base de sustentação, e não o centro de gravidade.",
       "Está incorreta: Essa é a linha média do corpo; o centro de gravidade é um ponto, e não uma linha."
     ],
-    "nursingApplication": "Conceito primordial para a avaliação do equilíbrio postural e risco de queda em geriatria."
+    "nursingApplication": "Na avaliação do risco de queda, o enfermeiro observa se as alterações posturais do utente deslocam o centro de gravidade para perto dos limites da base de sustentação."
   },
   {
     "id": 1182,
@@ -3669,7 +3669,7 @@ const TOPIC_1_QUESTIONS = [
       "Na articulação do joelho ao nível dos meniscos."
     ],
     "correctIndex": 2,
-    "explanation": "Localização: 'Localização: Em posição anatómica ereta, situa-se na linha média anterior à 2.ª vértebra sagrada (S2)'.",
+    "explanation": "Em posição anatómica ereta, o centro de gravidade do adulto situa-se na linha média, à frente da 2.ª vértebra sagrada (S2), na região pélvica.",
     "distractorAnalysis": [
       "Está incorreta: C7 localiza-se na transição cérvico-dorsal, muito acima do CG corporal total.",
       "Está incorreta: No crânio situa-se apenas o CG da cabeça isolada, não do corpo humano completo.",
@@ -3827,7 +3827,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: O quadríceps atua na marcha e no equilíbrio; zero newtons não garante estabilidade.",
       "Está incorreta: O atrito e a força normal não definem a condição geométrica de equilíbrio."
     ],
-    "nursingApplication": "Pilar científico da prevenção de quedas e treino de equilíbrio em contexto hospitalar e comunitário."
+    "nursingApplication": "Ao levantar um utente da cama, o enfermeiro confirma que o tronco fica alinhado sobre os pés (linha de gravidade dentro da base) antes de iniciar a marcha."
   },
   {
     "id": 1191,
@@ -3846,7 +3846,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: Uma cama alta não é a intervenção que estabiliza o centro de gravidade; a altura deve ajustar-se à cintura do profissional.",
       "Está incorreta: Afastar-se do doente aumenta o braço da carga e o momento sobre a coluna lombar, e não a estabilidade."
     ],
-    "nursingApplication": "Regra biomecânica de ouro para a postura dos enfermeiros durante a prestação de cuidados no leito."
+    "nursingApplication": "Ao mobilizar um utente no leito, o enfermeiro ajusta a cama à altura da sua cintura e flete joelhos e ancas, baixando o centro de gravidade."
   },
   {
     "id": 1192,
@@ -3855,14 +3855,14 @@ const TOPIC_1_QUESTIONS = [
     "options": [
       "Base ampla, com pés afastados à largura dos ombros.",
       "Base estreita, mantendo os pés juntos ou equilibrando-se num pé.",
-      "Pés afastados a 60 cm, com o tronco inclinado para a frente.",
+      "Pés afastados, mas com os calcanhares levantados do chão.",
       "Apoiar as mãos no solo, sem contacto dos pés, durante a mobilização."
     ],
     "correctIndex": 0,
     "explanation": "Uma base ampla, com os pés afastados à largura dos ombros, alarga a área de sustentação e aumenta a estabilidade.",
     "distractorAnalysis": [
       "Está incorreta: Uma base estreita reduz a estabilidade.",
-      "Está incorreta: Inclinar o tronco para a frente aproxima a linha de gravidade do bordo anterior da base e aumenta a carga lombar.",
+      "Está incorreta: Com os calcanhares levantados, só a parte anterior dos pés contacta o solo, o que reduz a base e eleva o centro de gravidade.",
       "Está incorreta: Apoiar só as mãos não constitui uma base de sustentação estável dos pés."
     ],
     "nursingApplication": "Ao reposicionar um utente no leito, o profissional afasta os pés, colocando um deles no sentido do movimento, e flete os joelhos."
@@ -3884,7 +3884,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: Um impulso súbito do tronco pode levar a linha de gravidade para fora da base, com risco de queda.",
       "Está incorreta: Elevar as mãos e apoiar-se na ponta dos pés eleva o centro de gravidade e reduz a base."
     ],
-    "nursingApplication": "Comunicação terapêutica clara e segura durante procedimentos de reabilitação e mobilidade."
+    "nursingApplication": "Antes de passar um utente da cama para a cadeira de rodas, o enfermeiro pede-lhe que afaste os pés e os apoie bem no chão."
   },
   {
     "id": 1194,
@@ -3903,7 +3903,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A linha de gravidade é uma linha vertical que passa pelo centro de gravidade; não oscila entre calcanhares e orelhas, e quanto mais se afasta do centro da base, menor é a estabilidade.",
       "Está incorreta: A linha de gravidade é sempre vertical (direção da aceleração da gravidade), nunca horizontal."
     ],
-    "nursingApplication": "Manter a linha de gravidade centrada no polígono de apoio previne o tombamento involuntário do corpo."
+    "nursingApplication": "Ao ensinar um utente com hemiparesia a pôr-se de pé, o enfermeiro orienta-o a distribuir o peso pelos dois pés, mantendo a linha de gravidade perto do centro da base."
   },
   {
     "id": 1195,
@@ -3973,7 +3973,7 @@ const TOPIC_1_QUESTIONS = [
       "Usar o andarilho para transportar objetos pelo quarto, sem se apoiar nele."
     ],
     "correctIndex": 2,
-    "explanation": "Recomenda-se: 'Intervenção de enfermagem recomendada: Ensinar a usar o andarilho mantendo-se dentro dele'.",
+    "explanation": "O andarilho só alarga a base de sustentação de forma útil se o utente se mantiver dentro dele, entre os apoios: assim a linha de gravidade fica no interior da base alargada. Com o andarilho muito à frente, o utente inclina o tronco e a linha de gravidade aproxima-se do bordo da base.",
     "distractorAnalysis": [
       "Está incorreta: Com o andarilho muito à frente, o doente inclina o tronco e sai do interior do apoio, o que aumenta o risco de queda.",
       "Está incorreta: Doentes com marcha atáxica precisam mais de apoio, e não menos.",
@@ -3998,7 +3998,7 @@ const TOPIC_1_QUESTIONS = [
       "Está incorreta: A base mais ampla não elimina a necessidade de força muscular para levantar.",
       "Está incorreta: A posição dos pés não altera a pressão arterial média."
     ],
-    "nursingApplication": "Aplicação clínica diária de promoção de autonomia com segurança durante a reabilitação funcional."
+    "nursingApplication": "No primeiro levante após uma cirurgia, o utente senta-se na beira da cama com os pés afastados e bem apoiados no chão antes de se pôr de pé."
   },
   {
     "id": 1200,
