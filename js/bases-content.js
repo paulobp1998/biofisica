@@ -58,6 +58,137 @@ const BASES_LESSONS = [
 
   // ------------------------------------------------------------------ 2
   {
+    id: 'operacoes',
+    icon: '🧩',
+    title: 'Ordem das operações e parênteses',
+    goal: 'Saber por que ordem se fazem as contas numa fórmula e escrevê-las corretamente na calculadora.',
+    body: `
+      <p>Numa expressão com várias operações, as contas fazem-se sempre por esta ordem:</p>
+      <ol>
+        <li><strong>Parênteses</strong> ( ): primeiro o que está dentro deles.</li>
+        <li><strong>Potências</strong> (R<sup>2</sup>, R<sup>4</sup>).</li>
+        <li><strong>Multiplicações e divisões</strong>, da esquerda para a direita.</li>
+        <li><strong>Somas e subtrações</strong>, da esquerda para a direita.</li>
+      </ol>
+      <ul>
+        <li><strong>O traço de fração funciona como parênteses:</strong> calcula-se tudo o que está em cima (numerador), tudo o que está em baixo (denominador) e só no fim se divide um pelo outro.</li>
+        <li><strong>Na calculadora não há traço de fração:</strong> o denominador tem de ir entre parênteses. 600 / (2 × 0,03) escreve-se <code>600 ÷ ( 2 × 0.03 )</code>.</li>
+        <li><strong>Alternativa segura:</strong> calcula o numerador, depois o denominador, escreve os dois resultados no papel e só então divide.</li>
+      </ul>
+      <div class="formula-box"><div class="formula-box-title">Exemplo rápido</div>
+        <div class="formula-row"><code>20 + 6 ÷ 2 = 20 + 3 = 23</code><span>a divisão vem antes da soma (não dá 13)</span></div>
+        <div class="formula-row"><code>(20 + 6) ÷ 2 = 26 ÷ 2 = 13</code><span>com parênteses, a soma faz-se primeiro</span></div>
+      </div>`,
+    examples: [
+      {
+        title: 'Somar antes de dividir (alavanca do antebraço)',
+        steps: ['Momentos a equilibrar: 3,68 N·m (antebraço e mão) + 2,94 N·m (objeto) = 6,62 N·m', 'Braço da força do músculo: 0,08 m', 'F<sub>E</sub> = (3,68 + 2,94) / 0,08 = 6,62 / 0,08 = 82,75 N', 'Sem parênteses, 3,68 + 2,94 ÷ 0,08 daria 3,68 + 36,75 = 40,43 N (errado)']
+      },
+      {
+        title: 'Um denominador com produtos (lei de Poiseuille)',
+        steps: ['D = 3,14 × 120 × 0,2<sup>4</sup> / (8 × 0,004 × 10)', 'Numerador: primeiro a potência, 0,2<sup>4</sup> = 0,0016; depois 3,14 × 120 × 0,0016 = 0,602&nbsp;88', 'Denominador: 8 × 0,004 × 10 = 0,32', 'D = 0,602&nbsp;88 / 0,32 ≈ 1,88 cm³/s']
+      },
+      {
+        title: 'O mesmo cálculo na calculadora',
+        steps: ['Certo: <code>3.14 × 120 × 0.2^4 ÷ ( 8 × 0.004 × 10 )</code> → 1,884', 'Errado: <code>3.14 × 120 × 0.2^4 ÷ 8 × 0.004 × 10</code> → cerca de 0,003', 'Sem parênteses, a calculadora divide só por 8 e depois <em>multiplica</em> por 0,004 e por 10']
+      }
+    ],
+    pitfall: 'Escrever na calculadora a ÷ b × c quando se quer a ÷ (b × c). Sem parênteses, o c passa a multiplicar o resultado em vez de ficar no denominador.',
+    nursing: 'Ao confirmar de cabeça uma perfusão de 1000 mL em 8 h, 1000 / (8 × 60) ≈ 2,1 mL/min (= 125 mL/h, o valor a programar na bomba); sem parênteses, 1000 ÷ 8 × 60 daria 7500, um valor absurdo que uma estimativa rápida deteta.',
+    exercises: [
+      {
+        q: 'Quanto é 10 + 20 ÷ 5?',
+        options: ['6', '14', '30', '4'],
+        correctIndex: 1,
+        explanation: 'A divisão faz-se antes da soma: 20 ÷ 5 = 4 e 10 + 4 = 14. O valor 6 resulta de somar primeiro ((10 + 20) ÷ 5).'
+      },
+      {
+        q: 'Quanto é 120 / (4 × 3)?',
+        options: ['10', '90', '40', '360'],
+        correctIndex: 0,
+        explanation: 'O denominador calcula-se primeiro: 4 × 3 = 12, e 120 / 12 = 10. O valor 90 resulta de fazer 120 ÷ 4 × 3 sem parênteses; 40 de esquecer o 4.'
+      },
+      {
+        q: 'Qual é a forma correta de introduzir 300 / (5 × 0,2) na calculadora?',
+        options: ['<code>300 ÷ 5 × 0.2</code>', '<code>( 300 ÷ 5 ) × 0.2</code>', '<code>300 × 5 ÷ 0.2</code>', '<code>300 ÷ ( 5 × 0.2 )</code>'],
+        correctIndex: 3,
+        explanation: 'O denominador inteiro tem de ficar entre parênteses: 5 × 0,2 = 1 e 300 ÷ 1 = 300. As duas primeiras formas dão 12, porque dividem só por 5 e depois multiplicam por 0,2.'
+      }
+    ]
+  },
+
+  // ------------------------------------------------------------------ 3
+  {
+    id: 'fracoes',
+    icon: '➗',
+    title: 'Frações nas fórmulas: numerador e denominador',
+    goal: 'Perceber o que acontece ao resultado de uma fórmula quando muda o que está em cima (numerador) ou em baixo (denominador) do traço de fração.',
+    body: `
+      <p>Muitas fórmulas da Biofísica são frações: p = F/A, σ = F/S, ε = ΔL/L<sub>0</sub>, D = V/t, Re = v · ρ · d / η. O que está em cima do traço chama-se <strong>numerador</strong>; o que está em baixo chama-se <strong>denominador</strong>.</p>
+      <div class="formula-box"><div class="formula-box-title">Regra de ouro</div>
+        <div class="formula-row"><code>numerador ↑ → resultado ↑</code><span>o que está em cima aumenta o resultado (relação direta)</span></div>
+        <div class="formula-row"><code>denominador ↑ → resultado ↓</code><span>o que está em baixo diminui o resultado (relação inversa)</span></div>
+      </div>
+      <ul>
+        <li><strong>Em cima:</strong> em p = F/A, o dobro da força dá o dobro da pressão.</li>
+        <li><strong>Em baixo:</strong> em p = F/A, o dobro da área dá metade da pressão.</li>
+        <li><strong>Dividir por um número menor do que 1 dá um resultado MAIOR:</strong> 6 / 0,5 = 12, porque 0,5 «cabe» 12 vezes em 6. Por isso, áreas pequenas em m² dão pressões e tensões grandes.</li>
+        <li><strong>Dividir por uma fração é multiplicar pela fração invertida:</strong> 6 / (1/2) = 6 × 2 = 12.</li>
+        <li><strong>Unidades iguais em cima e em baixo cancelam-se:</strong> em ε = ΔL/L<sub>0</sub> fica m/m, por isso a deformação não tem unidades (e pode escrever-se em %).</li>
+        <li><strong>O denominador nunca pode ser zero:</strong> a divisão por zero não tem significado.</li>
+      </ul>
+      <div class="bases-table-wrap"><table class="bases-table">
+        <thead><tr><th>Fórmula</th><th>Em cima (se aumentar, o resultado aumenta)</th><th>Em baixo (se aumentar, o resultado diminui)</th></tr></thead>
+        <tbody>
+          <tr><td>p = F / A</td><td>F</td><td>A</td></tr>
+          <tr><td>σ = F / S</td><td>F</td><td>S</td></tr>
+          <tr><td>ε = σ / E</td><td>σ</td><td>E</td></tr>
+          <tr><td>D = V / t</td><td>V</td><td>t</td></tr>
+          <tr><td>Re = v · ρ · d / η</td><td>v, ρ, d</td><td>η</td></tr>
+          <tr><td>D = π · ΔP · R<sup>4</sup> / (8 · η · L)</td><td>ΔP, R (à 4.ª potência)</td><td>η, L</td></tr>
+          <tr><td>R<sub>h</sub> = 8 · η · L / (π · R<sup>4</sup>)</td><td>η, L</td><td>R (à 4.ª potência)</td></tr>
+        </tbody>
+      </table></div>`,
+    examples: [
+      {
+        title: 'Dividir por um número pequeno',
+        steps: ['600 N sobre 0,02 m²: p = 600 / 0,02', '0,02 cabe 50 vezes em 1, logo 600 / 0,02 = 600 × 50', 'p = 30&nbsp;000 N/m² = 3 × 10<sup>4</sup> N/m² (maior do que 600, como esperado)']
+      },
+      {
+        title: 'Ler a fórmula de Reynolds sem fazer contas',
+        steps: ['Re = v · ρ · d / η', 'v, ρ e d estão em cima: se aumentarem, Re aumenta (mais tendência para a turbulência)', 'η está em baixo: se a viscosidade aumentar, Re diminui', 'Na anemia a viscosidade do sangue diminui, logo Re aumenta']
+      },
+      {
+        title: 'Uma deformação sem unidades',
+        steps: ['L<sub>0</sub> = 0,40 m; ΔL = 8 × 10<sup>−5</sup> m', 'ε = ΔL / L<sub>0</sub> = 8 × 10<sup>−5</sup> / 0,40 = 2 × 10<sup>−4</sup>', 'm/m cancelam-se: ε não tem unidades; em percentagem, 2 × 10<sup>−4</sup> × 100 = 0,02 %']
+      }
+    ],
+    pitfall: 'Pensar que dividir torna sempre o número mais pequeno. Dividir por um número entre 0 e 1 aumenta o resultado: 3 / 0,1 = 30.',
+    nursing: 'Para a mesma força de apoio, uma área de contacto menor (o calcanhar, em vez de toda a planta do pé) fica no denominador de p = F/A e dá uma pressão de interface maior.',
+    exercises: [
+      {
+        q: 'Em σ = F/S, mantendo a força, a área da secção S passa para o triplo. O que acontece à tensão?',
+        options: ['Fica 3 vezes maior', 'Fica igual', 'Fica 3 vezes menor', 'Fica 9 vezes menor'],
+        correctIndex: 2,
+        explanation: 'S está no denominador: o triplo da área dá um terço da tensão. Ficar 3 vezes maior seria o efeito de triplicar a força, que está no numerador.'
+      },
+      {
+        q: 'Quanto é 12 / 0,4?',
+        options: ['4,8', '30', '3', '0,03'],
+        correctIndex: 1,
+        explanation: '0,4 cabe 2,5 vezes em 1, logo 12 / 0,4 = 12 × 2,5 = 30. Como 0,4 é menor do que 1, o resultado é maior do que 12. O valor 4,8 resulta de multiplicar (12 × 0,4); 3 de ignorar a vírgula (12 / 4).'
+      },
+      {
+        q: 'Na fórmula Re = v · ρ · d / η, qual das alterações faz DIMINUIR o número de Reynolds?',
+        options: ['Aumentar a velocidade v', 'Aumentar o diâmetro d', 'Aumentar a densidade ρ', 'Aumentar a viscosidade η'],
+        correctIndex: 3,
+        explanation: 'η está no denominador: se aumentar, Re diminui. v, d e ρ estão no numerador: se aumentarem, Re aumenta.'
+      }
+    ]
+  },
+
+  // ------------------------------------------------------------------ 4
+  {
     id: 'potencias',
     icon: '🔟',
     title: 'Potências de 10',
@@ -117,7 +248,72 @@ const BASES_LESSONS = [
     ]
   },
 
-  // ------------------------------------------------------------------ 3
+  // ------------------------------------------------------------------ 5
+  {
+    id: 'quadrados',
+    icon: '🟦',
+    title: 'Quadrados, potências e raízes (R<sup>2</sup>, R<sup>4</sup>, √)',
+    goal: 'Calcular quadrados e outras potências de qualquer número (como o R<sup>4</sup> da lei de Poiseuille) e usar a raiz quadrada.',
+    body: `
+      <ul>
+        <li><strong>O expoente diz quantas vezes o número se multiplica por si próprio:</strong> 3<sup>2</sup> = 3 × 3 = 9; 2<sup>4</sup> = 2 × 2 × 2 × 2 = 16. Não é «3 × 2» nem «2 × 4».</li>
+        <li><strong>Um número maior do que 1 cresce depressa:</strong> 2<sup>4</sup> = 16 e 3<sup>4</sup> = 81. É por isso que, na lei de Poiseuille, pequenas variações do raio mudam muito o caudal.</li>
+        <li><strong>Um número entre 0 e 1 fica mais pequeno:</strong> 0,5<sup>2</sup> = 0,25 e 0,2<sup>4</sup> = 0,0016. Atenção quando o raio está em cm e é menor do que 1 cm.</li>
+        <li><strong>Potência de uma fração:</strong> elevam-se o numerador e o denominador: (1/2)<sup>4</sup> = 1/16; (3/4)<sup>4</sup> = 81/256 ≈ 0,32.</li>
+        <li><strong>A potência só se aplica ao número a que está colada:</strong> em 3,14 × 0,2<sup>4</sup>, só o 0,2 é elevado à 4.ª potência; (3,14 × 0,2)<sup>4</sup> é outra conta.</li>
+        <li><strong>A raiz quadrada (√) desfaz o quadrado:</strong> √49 = 7, porque 7<sup>2</sup> = 49. Usa-se no teorema de Pitágoras, para somar forças perpendiculares.</li>
+        <li><strong>Na calculadora:</strong> usa a tecla <code>x²</code> para quadrados e <code>^</code> (ou <code>x<sup>y</sup></code>) para as outras potências: 0,2<sup>4</sup> escreve-se <code>0.2 ^ 4</code>.</li>
+      </ul>
+      <div class="bases-table-wrap"><table class="bases-table">
+        <thead><tr><th>Número</th><th>Quadrado (n<sup>2</sup>)</th><th>4.ª potência (n<sup>4</sup>)</th></tr></thead>
+        <tbody>
+          <tr><td>0,5</td><td>0,25</td><td>0,0625</td></tr>
+          <tr><td>0,8</td><td>0,64</td><td>≈ 0,41</td></tr>
+          <tr><td>1,2</td><td>1,44</td><td>≈ 2,07</td></tr>
+          <tr><td>1,5</td><td>2,25</td><td>≈ 5,06</td></tr>
+          <tr><td>2</td><td>4</td><td>16</td></tr>
+          <tr><td>3</td><td>9</td><td>81</td></tr>
+        </tbody>
+      </table></div>`,
+    examples: [
+      {
+        title: 'Calcular 0,2<sup>4</sup> à mão',
+        steps: ['0,2 × 0,2 = 0,04', '0,04 × 0,2 = 0,008', '0,008 × 0,2 = 0,0016', 'Atalho: 2<sup>4</sup> = 16; cada fator 0,2 tem 1 casa decimal e são 4 fatores, logo 4 casas decimais → 0,0016']
+      },
+      {
+        title: 'Raio a metade (lei de Poiseuille)',
+        steps: ['O caudal é proporcional a R<sup>4</sup>', 'Raio a metade: (1/2)<sup>4</sup> = 1/16', 'O caudal fica 16 vezes menor (e não 2 vezes menor)']
+      },
+      {
+        title: 'Raio 20 % maior',
+        steps: ['Novo raio = 1,2 × R (aumentar 20 % é multiplicar por 1,2)', '1,2<sup>4</sup> = 1,2 × 1,2 × 1,2 × 1,2 ≈ 2,07', 'O caudal passa para cerca de 2,07 vezes o inicial (e não 1,2 vezes)']
+      }
+    ],
+    pitfall: 'Confundir R<sup>2</sup> com 2 × R, ou R<sup>4</sup> com 4 × R. Com R = 3, R<sup>2</sup> = 9 (e não 6) e R<sup>4</sup> = 81 (e não 12).',
+    nursing: 'Como o caudal depende de R<sup>4</sup>, um cateter de 14G, com raio interno maior do que o de um 22G, permite um caudal muitas vezes superior, mesmo que a diferença de raio pareça pequena.',
+    exercises: [
+      {
+        q: 'Quanto é 3<sup>4</sup>?',
+        options: ['81', '12', '27', '64'],
+        correctIndex: 0,
+        explanation: '3<sup>4</sup> = 3 × 3 × 3 × 3 = 81. 12 resulta de fazer 3 × 4; 27 é 3<sup>3</sup>; 64 é 4<sup>3</sup> (base e expoente trocados).'
+      },
+      {
+        q: 'Quanto é 0,1<sup>4</sup>?',
+        options: ['0,4', '0,001', '0,000&nbsp;4', '0,0001'],
+        correctIndex: 3,
+        explanation: '0,1 × 0,1 × 0,1 × 0,1 = 0,0001 (= 10<sup>−4</sup>): cada fator 0,1 acrescenta uma casa decimal. 0,4 resulta de fazer 0,1 × 4; 0,001 é 0,1<sup>3</sup>.'
+      },
+      {
+        q: 'O raio de um vaso passa para 3/4 do valor inicial. Por quanto fica multiplicado R<sup>4</sup>?',
+        options: ['0,75', '0,56', '0,32', '0,42'],
+        correctIndex: 2,
+        explanation: '(3/4)<sup>4</sup> = 3<sup>4</sup>/4<sup>4</sup> = 81/256 ≈ 0,32. 0,75 ignora o expoente; 0,56 é (3/4)<sup>2</sup>; 0,42 é (3/4)<sup>3</sup>.'
+      }
+    ]
+  },
+
+  // ------------------------------------------------------------------ 6
   {
     id: 'notacao',
     icon: '🔬',
@@ -173,7 +369,7 @@ const BASES_LESSONS = [
     ]
   },
 
-  // ------------------------------------------------------------------ 4
+  // ------------------------------------------------------------------ 7
   {
     id: 'calculos-nc',
     icon: '🧮',
@@ -229,7 +425,7 @@ const BASES_LESSONS = [
     ]
   },
 
-  // ------------------------------------------------------------------ 5
+  // ------------------------------------------------------------------ 8
   {
     id: 'arredondar',
     icon: '🎯',
@@ -276,7 +472,7 @@ const BASES_LESSONS = [
     ]
   },
 
-  // ------------------------------------------------------------------ 6
+  // ------------------------------------------------------------------ 9
   {
     id: 'si',
     icon: '📏',
@@ -346,7 +542,7 @@ const BASES_LESSONS = [
     ]
   },
 
-  // ------------------------------------------------------------------ 7
+  // ------------------------------------------------------------------ 10
   {
     id: 'prefixos',
     icon: '🔠',
@@ -406,7 +602,7 @@ const BASES_LESSONS = [
     ]
   },
 
-  // ------------------------------------------------------------------ 8
+  // ------------------------------------------------------------------ 11
   {
     id: 'conversoes',
     icon: '🔁',
@@ -425,12 +621,20 @@ const BASES_LESSONS = [
           <tr><td>área</td><td>1 m² = 10<sup>4</sup> cm²; 1 cm² = 10<sup>−4</sup> m²</td></tr>
           <tr><td>volume</td><td>1 L = 1000 mL = 1000 cm³; 1 mL = 1 cm³; 1 m³ = 1000 L</td></tr>
           <tr><td>tempo</td><td>1 h = 60 min = 3600 s</td></tr>
+          <tr><td>velocidade</td><td>1 m/s = 3,6 km/h (de km/h para m/s divide-se por 3,6)</td></tr>
           <tr><td>massa volúmica</td><td>1 g/cm³ = 1000 kg/m³</td></tr>
           <tr><td>força (c.g.s.)</td><td>1 N = 10<sup>5</sup> dyn</td></tr>
           <tr><td>pressão</td><td>1 N/m² = 10 dyn/cm²; 1 mmHg ≈ 133 N/m²</td></tr>
+          <tr><td>viscosidade</td><td>1 poiseuille = 10 poise</td></tr>
         </tbody>
       </table></div>
-      <p>No Tópico 3 (Hidrodinâmica) trabalha-se no sistema c.g.s. (centímetro, grama, segundo): velocidades em cm/s, massas volúmicas em g/cm³ e pressões em dyn/cm². Converte <strong>todos</strong> os dados para o mesmo sistema antes de os pôr na fórmula.</p>`,
+      <p>No Tópico 3 (Hidrodinâmica) usam-se sobretudo unidades c.g.s. (centímetro, grama, segundo):</p>
+      <ul>
+        <li><strong>Número de Reynolds:</strong> v em cm/s, ρ em g/cm³, d em cm e η em poise. Assim, Re não tem unidades.</li>
+        <li><strong>Lei de Poiseuille:</strong> com R e L em cm, o caudal sai em cm³/s, desde que ΔP e η venham do mesmo sistema: dyn/cm² com poise, ou N/m² com poiseuille (como no exercício da aula).</li>
+        <li><strong>Diâmetro ou raio:</strong> Reynolds usa o diâmetro d; Poiseuille usa o raio R = d/2.</li>
+      </ul>
+      <p>Converte <strong>todos</strong> os dados antes de os pôr na fórmula.</p>`,
     examples: [
       {
         title: 'Uma área: 150 cm² em m²',
@@ -443,6 +647,14 @@ const BASES_LESSONS = [
       {
         title: 'Uma pressão arterial: 120 mmHg em N/m²',
         steps: ['1 mmHg ≈ 133 N/m²', '120 × 133 = 15&nbsp;960 N/m²', '≈ 1,6 × 10<sup>4</sup> N/m²']
+      },
+      {
+        title: 'Uma velocidade: 72 km/h em m/s',
+        steps: ['72 km/h = 72&nbsp;000 m em 3600 s', '72&nbsp;000 / 3600 = 20 m/s', 'Atalho: 72 / 3,6 = 20 m/s']
+      },
+      {
+        title: 'Um diâmetro para a fórmula de Reynolds: 1,2 mm em cm',
+        steps: ['1 cm = 10 mm: de mm (menor) para cm (maior) divide-se por 10', '1,2 mm = 1,2 / 10 = 0,12 cm', 'O raio correspondente, para a lei de Poiseuille, é R = 0,12 / 2 = 0,06 cm']
       }
     ],
     pitfall: 'Converter áreas com o fator do comprimento: 20 cm² não são 0,2 m² (isso seria dividir só por 100). São 20 × 10<sup>−4</sup> = 2 × 10<sup>−3</sup> m².',
@@ -469,7 +681,64 @@ const BASES_LESSONS = [
     ]
   },
 
-  // ------------------------------------------------------------------ 9
+  // ------------------------------------------------------------------ 12
+  {
+    id: 'variacoes',
+    icon: '📈',
+    title: 'Variações (Δ): valor final menos valor inicial',
+    goal: 'Ler o símbolo Δ e calcular variações como ΔL, Δv ou ΔP, incluindo a variação relativa em percentagem.',
+    body: `
+      <ul>
+        <li><strong>Δ (letra grega «delta») significa «variação»:</strong> a variação de uma grandeza é o valor final menos o valor inicial.</li>
+        <li><strong>Exemplos do curso:</strong> alongamento ΔL = L<sub>f</sub> − L<sub>0</sub> (Tópico 2); variação de velocidade Δv, usada em a = Δv / Δt (Tópico 1); diferença de pressão ΔP entre os extremos de um tubo (Tópico 3).</li>
+        <li><strong>O sinal tem significado:</strong> positivo, a grandeza aumentou (alongamento, aceleração); negativo, diminuiu (compressão, travagem). Quando se pede só a intensidade (o «módulo»), usa-se o valor sem sinal.</li>
+        <li><strong>Variação relativa:</strong> compara a variação com o valor inicial, como em ε = ΔL / L<sub>0</sub>. As unidades cancelam-se, por isso pode escrever-se em percentagem (× 100).</li>
+        <li><strong>Mesma unidade antes de subtrair:</strong> só se subtraem valores na mesma unidade (25 cm − 20 cm, e não 0,25 m − 20 cm).</li>
+      </ul>
+      <div class="formula-box"><div class="formula-box-title">Três fórmulas para reter</div>
+        <div class="formula-row"><code>ΔX = X<sub>final</sub> − X<sub>inicial</sub></code><span>variação</span></div>
+        <div class="formula-row"><code>ΔX / X<sub>inicial</sub></code><span>variação relativa (sem unidades)</span></div>
+        <div class="formula-row"><code>(ΔX / X<sub>inicial</sub>) × 100</code><span>variação em percentagem</span></div>
+      </div>`,
+    examples: [
+      {
+        title: 'Alongamento de uma mola',
+        steps: ['L<sub>0</sub> = 20 cm; L<sub>f</sub> = 25 cm', 'x = ΔL = 25 − 20 = 5 cm = 0,05 m', 'Com k = 200 N/m: F = k · x = 200 × 0,05 = 10 N']
+      },
+      {
+        title: 'Deformação em percentagem',
+        steps: ['L<sub>0</sub> = 40 cm; L<sub>f</sub> = 40,2 cm', 'ΔL = 40,2 − 40 = 0,2 cm', 'ε = 0,2 / 40 = 0,005; em percentagem, 0,005 × 100 = 0,5 %']
+      },
+      {
+        title: 'Uma travagem (Δv negativo)',
+        steps: ['Uma maca passa de 2 m/s para 0 m/s em 4 s', 'Δv = 0 − 2 = −2 m/s; Δt = 4 s', 'a = Δv / Δt = −2 / 4 = −0,5 m/s² (o sinal menos indica que a velocidade diminui)']
+      }
+    ],
+    pitfall: 'Fazer valor inicial − valor final (troca o sinal) ou dividir pelo valor final em vez do inicial: em ε = ΔL / L<sub>0</sub> divide-se pelo comprimento inicial.',
+    nursing: 'Na vigilância nutricional, a variação percentual da massa corporal (de 70 kg para 66,5 kg: −3,5 / 70 × 100 = −5 %) é mais informativa do que a diferença em kg.',
+    exercises: [
+      {
+        q: 'Um tendão com 10 cm de comprimento inicial fica com 10,3 cm sob tração. Qual é a deformação relativa, em percentagem?',
+        options: ['3 %', '0,3 %', '30 %', '0,03 %'],
+        correctIndex: 0,
+        explanation: 'ΔL = 10,3 − 10 = 0,3 cm; ε = 0,3 / 10 = 0,03; em percentagem, 0,03 × 100 = 3 %. 0,03 % esquece a multiplicação por 100; 0,3 % confunde o alongamento (0,3 cm) com a percentagem; 30 % multiplica por 1000.'
+      },
+      {
+        q: 'Uma mola passa de 30 cm para 24 cm quando é comprimida. Qual é ΔL?',
+        options: ['+6 cm', '−6 cm', '54 cm', '−24 cm'],
+        correctIndex: 1,
+        explanation: 'ΔL = L<sub>f</sub> − L<sub>0</sub> = 24 − 30 = −6 cm. O sinal menos indica que o comprimento diminuiu (compressão). +6 cm resulta de fazer inicial − final; 54 cm de somar.'
+      },
+      {
+        q: 'Num tubo, a pressão é de 1200 N/m² numa extremidade e de 900 N/m² na outra. Qual é a diferença de pressão ΔP entre os extremos, em módulo?',
+        options: ['2100 N/m²', '1,33 N/m²', '300 N/m²', '900 N/m²'],
+        correctIndex: 2,
+        explanation: 'ΔP = 1200 − 900 = 300 N/m². 2100 N/m² resulta de somar as pressões; 1,33 de dividir uma pela outra.'
+      }
+    ]
+  },
+
+  // ------------------------------------------------------------------ 13
   {
     id: 'proporcoes',
     icon: '⚖️',
@@ -521,7 +790,7 @@ const BASES_LESSONS = [
     ]
   },
 
-  // ------------------------------------------------------------------ 10
+  // ------------------------------------------------------------------ 14
   {
     id: 'formulas',
     icon: '✏️',
@@ -537,10 +806,14 @@ const BASES_LESSONS = [
         <li><strong>Substituição e resultado:</strong> substitui os valores, calcula e escreve a unidade.</li>
       </ol>
       <p><strong>Como isolar:</strong> o que está a <em>multiplicar</em> passa para o outro lado a <em>dividir</em>, e vice-versa; o que está a <em>somar</em> passa a <em>subtrair</em>.</p>
+      <p><strong>Se a incógnita está no denominador</strong> (como t em D = V / t), multiplica ambos os lados por t (D · t = V) e depois divide por D: t = V / D.</p>
       <div class="formula-box"><div class="formula-box-title">Exemplos de fórmulas isoladas</div>
         <div class="formula-row"><code>P = m · g</code><span>m = P / g&nbsp;&nbsp;·&nbsp;&nbsp;g = P / m</span></div>
         <div class="formula-row"><code>p = F / A</code><span>F = p · A&nbsp;&nbsp;·&nbsp;&nbsp;A = F / p</span></div>
         <div class="formula-row"><code>M = F · b</code><span>F = M / b&nbsp;&nbsp;·&nbsp;&nbsp;b = M / F</span></div>
+        <div class="formula-row"><code>σ = F / S</code><span>F = σ · S&nbsp;&nbsp;·&nbsp;&nbsp;S = F / σ</span></div>
+        <div class="formula-row"><code>F = k · x</code><span>k = F / x&nbsp;&nbsp;·&nbsp;&nbsp;x = F / k</span></div>
+        <div class="formula-row"><code>D = V / t</code><span>V = D · t&nbsp;&nbsp;·&nbsp;&nbsp;t = V / D</span></div>
       </div>
       <p><strong>Verificação pelas unidades:</strong> se isolaste bem, as unidades do resultado batem certo. Em m = P / g: N ÷ (m/s²) = kg.</p>`,
     examples: [
@@ -551,6 +824,10 @@ const BASES_LESSONS = [
       {
         title: 'Força a partir da pressão',
         steps: ['Dados: p = 2 × 10<sup>4</sup> N/m²; A = 0,03 m²; F = ?', 'Fórmula: p = F / A, logo F = p · A', 'Substituição: F = 2 × 10<sup>4</sup> × 0,03', 'Resultado: F = 600 N']
+      },
+      {
+        title: 'Braço de uma força numa alavanca em equilíbrio',
+        steps: ['Dados (exemplo da aula: levantar uma carga de 500 kg com uma alavanca): M<sub>Resis.</sub> = (500 × 9,8) × 0,3 = 1470 N·m; F<sub>Potente</sub> = peso de uma massa de 30 kg = 30 × 9,8 = 294 N; b<sub>Potente</sub> = ?', 'Fórmula: em equilíbrio, F<sub>Potente</sub> · b<sub>Potente</sub> = M<sub>Resis.</sub>, logo 294 × b<sub>Potente</sub> = 1470', 'O 294 está a multiplicar: passa para o outro lado a dividir, b<sub>Potente</sub> = 1470 / 294', 'Resultado: b<sub>Potente</sub> = 5 m (confirmação: N·m ÷ N = m)']
       }
     ],
     pitfall: 'Isolar ao contrário, por exemplo m = g / P. A verificação pelas unidades apanha o erro: (m/s²) ÷ N não dá kg.',
@@ -577,7 +854,66 @@ const BASES_LESSONS = [
     ]
   },
 
-  // ------------------------------------------------------------------ 11
+  // ------------------------------------------------------------------ 15
+  {
+    id: 'comparar',
+    icon: '🔍',
+    title: 'Quantas vezes maior? Comparar duas situações com a mesma fórmula',
+    goal: 'Descobrir quantas vezes muda o resultado de uma fórmula quando alguns dados mudam, sem precisar de conhecer todos os valores.',
+    body: `
+      <p>Muitas perguntas dizem só «o raio passa para o dobro» ou «a velocidade triplica». Não é preciso saber os valores: basta seguir o <strong>fator</strong> de cada grandeza que muda.</p>
+      <ol>
+        <li><strong>Escreve o fator</strong> de cada grandeza que muda: dobro = × 2; metade = × 1/2; triplo = × 3; aumenta 20 % = × 1,2; diminui 20 % = × 0,8.</li>
+        <li><strong>Se a grandeza tem expoente</strong> na fórmula, eleva o fator a esse expoente (R<sup>4</sup> com o raio a dobrar: 2<sup>4</sup> = 16).</li>
+        <li><strong>Fatores do numerador multiplicam; fatores do denominador dividem.</strong></li>
+        <li><strong>Grandezas que não mudam</strong> têm fator 1 e podem ignorar-se.</li>
+      </ol>
+      <div class="formula-box"><div class="formula-box-title">Fator total</div>
+        <div class="formula-row"><code>fator = (fatores de cima) / (fatores de baixo)</code><span>maior do que 1: aumenta; menor do que 1: diminui; igual a 1: mantém-se</span></div>
+      </div>`,
+    examples: [
+      {
+        title: 'Reynolds: velocidade × 3 e diâmetro a metade',
+        steps: ['Re = v · ρ · d / η: v e d estão em cima', 'Fator = 3 × 1/2 = 1,5', 'Re fica 1,5 vezes maior: se era 400, passa a 600']
+      },
+      {
+        title: 'Poiseuille: o raio e o comprimento duplicam',
+        steps: ['D = π · ΔP · R<sup>4</sup> / (8 · η · L): R<sup>4</sup> está em cima e L em baixo', 'Fator do raio: 2<sup>4</sup> = 16; fator do comprimento: 2 (divide)', 'Fator total = 16 / 2 = 8: o caudal fica 8 vezes maior']
+      },
+      {
+        title: 'Resistência hidráulica: o raio diminui 20 %',
+        steps: ['R<sub>h</sub> = 8 · η · L / (π · R<sup>4</sup>): R<sup>4</sup> está em baixo', 'Fator do raio: 0,8<sup>4</sup> ≈ 0,41', 'Fator total = 1 / 0,41 ≈ 2,44: a resistência fica cerca de 2,44 vezes maior']
+      },
+      {
+        title: 'Tensão: a força duplica e a área quadruplica',
+        steps: ['σ = F / S: F em cima, S em baixo', 'Fator = 2 / 4 = 0,5', 'A tensão passa para metade']
+      }
+    ],
+    pitfall: 'Esquecer o expoente (o raio a dobrar não duplica o caudal: multiplica-o por 16) ou multiplicar por um fator que está no denominador, em vez de dividir por ele.',
+    nursing: 'Ao trocar um cateter por outro com o dobro do raio interno (mesmo comprimento, mesma diferença de pressão e mesmo soro), o modelo de Poiseuille prevê um caudal 16 vezes maior, o que ajuda a perceber porque se escolhem calibres maiores para perfusões rápidas.',
+    exercises: [
+      {
+        q: 'Em Re = v · ρ · d / η, a velocidade duplica e a viscosidade também duplica. O que acontece a Re?',
+        options: ['Fica 4 vezes maior', 'Fica 2 vezes maior', 'Mantém-se', 'Fica 4 vezes menor'],
+        correctIndex: 2,
+        explanation: 'v está em cima (× 2) e η em baixo (÷ 2): fator = 2 / 2 = 1, logo Re mantém-se. «4 vezes maior» resulta de multiplicar os dois fatores, esquecendo que η está no denominador.'
+      },
+      {
+        q: 'Na lei de Poiseuille, o raio e o comprimento do tubo passam ambos para o triplo. Por quanto fica multiplicado o caudal?',
+        options: ['27', '81', '1', '3'],
+        correctIndex: 0,
+        explanation: 'R<sup>4</sup> está em cima: 3<sup>4</sup> = 81; L está em baixo: ÷ 3. Fator = 81 / 3 = 27. 81 esquece o comprimento; 3 usa R<sup>2</sup> em vez de R<sup>4</sup> (9 / 3); 1 supõe que os dois efeitos se anulam.'
+      },
+      {
+        q: 'Em σ = F / S, a força passa para o dobro e a área da secção para metade. Como varia a tensão?',
+        options: ['Mantém-se', 'Fica 2 vezes maior', 'Fica 4 vezes menor', 'Fica 4 vezes maior'],
+        correctIndex: 3,
+        explanation: 'F está em cima: × 2. S está em baixo: dividir por 1/2 é multiplicar por 2. Fator = 2 × 2 = 4. «Mantém-se» resulta de pensar que o dobro e a metade se anulam.'
+      }
+    ]
+  },
+
+  // ------------------------------------------------------------------ 16
   {
     id: 'vetores',
     icon: '➡️',
