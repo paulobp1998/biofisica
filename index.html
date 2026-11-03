@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BioFísica Interativa | Enfermagem (1.º Ano)</title>
   <meta name="description" content="Plataforma interativa e 100% gratuita para estudantes do 1.º ano de Licenciatura em Enfermagem praticarem os conteúdos de Biofísica com questões de escolha múltipla e aplicações clínicas.">
-  <link rel="stylesheet" href="css/style.css?v=4.5">
+  <link rel="stylesheet" href="css/style.css?v=4.7">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🩺</text></svg>">
 </head>
 <body>
@@ -96,6 +96,9 @@
           </button>
           <button class="btn btn-outline" id="btn-view-study">
             📖 Resumos Teóricos & Fórmulas
+          </button>
+          <button class="btn btn-outline" id="btn-view-bases" title="Notação científica, unidades SI, conversões e outras bases de matemática, passo a passo">
+            🧮 Bases: Notação Científica & Unidades
           </button>
           <button class="btn btn-outline" id="btn-view-stats">
             📊 As Minhas Estatísticas & Conquistas
@@ -301,9 +304,41 @@
           </button>
         </div>
 
+        <button type="button" class="bases-callout" id="btn-study-to-bases">
+          <span class="bases-callout-icon">🧮</span>
+          <span><strong>Dificuldades com potências de 10, unidades ou conversões?</strong> Começa pelas Bases: 12 lições curtas, passo a passo.</span>
+          <span class="bases-callout-arrow">➔</span>
+        </button>
+
         <div class="accordion-list" id="study-topics-accordion">
           <!-- Inserido dinamicamente via JS -->
         </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- VISTA 4B: BASES DE MATEMÁTICA E UNIDADES -->
+    <!-- ================================================================= -->
+    <section id="view-bases" class="hidden">
+      <div class="study-container bases-container">
+        <div class="view-header">
+          <div>
+            <h2>🧮 Bases para a Biofísica</h2>
+            <p style="color: var(--text-secondary);">Para quem vem de Economia, Línguas e Humanidades ou de outro agrupamento: a matemática e as unidades de que vais precisar, uma lição de cada vez.</p>
+          </div>
+          <button class="btn btn-outline btn-sm" id="btn-home-from-bases">
+            🏠 Voltar ao Início
+          </button>
+        </div>
+
+        <div class="bases-progress">
+          <div class="bases-progress-text" id="bases-progress-text"></div>
+          <div class="bases-progress-track"><div class="bases-progress-fill" id="bases-progress-fill"></div></div>
+        </div>
+
+        <ol class="bases-path" id="bases-path" aria-label="Lições"></ol>
+
+        <article class="bases-lesson" id="bases-lesson" aria-live="polite"></article>
       </div>
     </section>
 
@@ -1648,6 +1683,7 @@
   <script src="js/questions-data.js?v=4.2"></script>
   <script src="js/study-content.js?v=2.1"></script>
   <script src="js/study-figures.js?v=1.3"></script>
+  <script src="js/bases-content.js?v=1.0"></script>
   <script src="js/question-figures.js?v=1.3"></script>
   <script src="js/quiz-engine.js?v=4.1"></script>
 
@@ -1660,6 +1696,6 @@
   <script src="js/teacher-manager.js?v=3.7"></script>
   <script src="js/quiz-sync.js?v=1.2"></script>
   <script src="js/metrics.js?v=1.2"></script>
-  <script src="js/app.js?v=4.5"></script>
+  <script src="js/app.js?v=4.8"></script>
 </body>
 </html>
