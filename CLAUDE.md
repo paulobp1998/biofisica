@@ -29,7 +29,7 @@ Question banks live in `js/data/topicN.js` (topics 1–5: 1 Força/Equilíbrio/A
 }
 ```
 
-- IDs: topic N uses the range N001–N999, consecutive, never reused. Topic 1 has 200 questions (1001–1200); topic 2 has 200 (2201–2404; 2234, 2235, 2273 and 2298 were removed because they relied on k = E·A/L₀, and their IDs stay unused). Topic 3 has 200 (3001–3200). Topics 4–5 are empty (`[]`), so start them at N001. Always confirm the last ID with `tail` before adding.
+- IDs: topic N uses the range N001–N999, consecutive, never reused. Topic 1 has 200 questions (1001–1200); topic 2 has 200 (2201–2404; 2234, 2235, 2273 and 2298 were removed because they relied on k = E·A/L₀, and their IDs stay unused). Topic 3 has 200 (3001–3208; 3096, 3097, 3098, 3100, 3110, 3144, 3145 and 3147 were removed because the lecture slides do not cover them, and their IDs stay unused). Topics 4–5 are empty (`[]`), so start them at N001. Always confirm the last ID with `tail` before adding.
 - Exactly 4 options. Exactly 3 entries in `distractorAnalysis`, one per WRONG option, **in the same order as the wrong options appear** (skip the correct index).
 - Each distractor entry starts with "Está incorreta:" and says *why* that option is wrong. It must not just restate the option.
 - `correctIndex` must be balanced across a batch (roughly equal counts of 0, 1, 2, 3).
