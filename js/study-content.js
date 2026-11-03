@@ -199,7 +199,7 @@ const STUDY_BLOCKS = [
       <ul>
         <li><strong>Osso, material compósito:</strong> a fase mineral (hidroxiapatite, cerca de 65% da massa seca) dá dureza e resistência à <strong>compressão</strong>; a matriz orgânica (sobretudo colagénio tipo I, cerca de 35%) dá elasticidade, tenacidade e resistência à <strong>tração</strong>.</li>
         <li><strong>Anisotropia:</strong> as propriedades do osso dependem da direção da carga: o osso cortical é mais rígido e resistente segundo o eixo longitudinal do que na direção transversal.</li>
-        <li><strong>Resistência consoante o tipo de carga:</strong> o osso cortical resiste melhor à compressão longitudinal (1,3 a 1,9 × 10⁸ N/m²), menos à tração axial (0,8 a 1,3 × 10⁸ N/m²) e menos ao cisalhamento e à torção (rotura a 0,5 a 0,7 × 10⁸ N/m²). Daí as fraturas espiroidais da tíbia em torções com o pé bloqueado, cuja linha helicoidal, a cerca de 45° do eixo, é perpendicular à direção da tração máxima (a rotura inicia-se por tração).</li>
+        <li><strong>Resistência consoante o tipo de carga:</strong> o osso cortical resiste melhor à compressão longitudinal (1,3 a 2,0 × 10⁸ N/m²), menos à tração axial (0,8 a 1,35 × 10⁸ N/m²) e menos ao cisalhamento e à torção (rotura a 0,5 a 0,7 × 10⁸ N/m²). Daí as fraturas espiroidais da tíbia em torções com o pé bloqueado, cuja linha helicoidal, a cerca de 45° do eixo, é perpendicular à direção da tração máxima (a rotura inicia-se por tração).</li>
         <li><strong>Ossos longos tubulares:</strong> o osso concentra-se na periferia, onde as tensões de flexão e torção são máximas, e falta junto ao eixo central (cavidade medular), por onde passa o plano neutro e onde estas tensões são mínimas ou nulas. Obtém-se grande resistência com pouca massa.</li>
         <li><strong>Cortical vs. trabecular:</strong> o osso cortical é compacto e rígido (E cerca de 1,4 a 2,0 × 10¹⁰ N/m²); o trabecular é poroso (E aparente cerca de 1 × 10⁸ a 4 × 10⁹ N/m²) e amortece os impactos nas epífises.</li>
         <li><strong>Lei de Wolff:</strong> o osso remodela-se em resposta às solicitações mecânicas. Sem carga (ex.: acamamento prolongado) perde massa; as trabéculas orientam-se segundo as linhas de força.</li>
@@ -256,7 +256,7 @@ const STUDY_BLOCKS = [
     body: `
       <ul>
         <li><strong>Re &lt; 2000:</strong> regime laminar. <strong>2000 &lt; Re &lt; 4000:</strong> zona de transição. <strong>Re &gt; 4000:</strong> regime turbulento.</li>
-        <li>Re aumenta com a velocidade, a densidade e o diâmetro, e diminui com a viscosidade. Como é proporcional a cada um destes fatores, duplicar v duplica Re; reduzir η para metade também duplica Re.</li>
+        <li>Re aumenta com a velocidade, a densidade e o diâmetro, e diminui com a viscosidade. Como é diretamente proporcional a v, ρ e d e inversamente proporcional a η, duplicar v duplica Re; reduzir η para metade também duplica Re.</li>
         <li><strong>Caudal crítico:</strong> caudal a partir do qual Re atinge o valor crítico e o regime passa de laminar a turbulento. Para o mesmo fluido, varia diretamente com o raio: quanto menor o vaso, menor o caudal crítico.</li>
       </ul>`,
     pitfall: 'Em Re entra o diâmetro (d), não o raio. Se só for dado o raio, d = 2 · R. As unidades têm de ser coerentes (c.g.s.): passar mm para cm antes de calcular.',

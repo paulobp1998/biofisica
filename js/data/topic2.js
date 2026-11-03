@@ -711,7 +711,7 @@ const TOPIC_2_QUESTIONS = [
       "0,002"
     ],
     "correctIndex": 3,
-    "explanation": "Da relação σ = E · ε resulta ε = σ / E = 4,0 × 10⁶ / 2,0 × 10⁹ = 2,0 × 10⁻³ = 0,002, sem unidades.",
+    "explanation": "Da relação σ = E · ε resulta ε = σ / E = 4,0 × 10⁶ / (2,0 × 10⁹) = 2,0 × 10⁻³ = 0,002, sem unidades.",
     "solution": [
       "Dados: E = 2,0 × 10⁹ N/m²; σ = 4,0 × 10⁶ N/m²; ε = ?",
       "Fórmula: ε = σ / E",
@@ -789,7 +789,7 @@ const TOPIC_2_QUESTIONS = [
       "1,8 N/m²"
     ],
     "correctIndex": 0,
-    "explanation": "σ = F / S, com S = 3,0 cm² = 3,0 × 10⁻⁴ m². Logo σ = 6,0 × 10³ / 3,0 × 10⁻⁴ = 2,0 × 10⁷ N/m².",
+    "explanation": "σ = F / S, com S = 3,0 cm² = 3,0 × 10⁻⁴ m². Logo σ = 6,0 × 10³ / (3,0 × 10⁻⁴) = 2,0 × 10⁷ N/m².",
     "solution": [
       "Dados: S = 3,0 cm²; F = 6,0 × 10³ N; σ = ?",
       "Conversão: 3,0 cm² = 3,0 × 10⁻⁴ m²",
@@ -1164,7 +1164,7 @@ const TOPIC_2_QUESTIONS = [
       "2,5 m"
     ],
     "correctIndex": 1,
-    "explanation": "Da lei de Hooke, x = F / k = 25 N / 1,0 × 10³ N/m = 0,025 m, ou seja, 2,5 cm.",
+    "explanation": "Da lei de Hooke, x = F / k = 25 N / (1,0 × 10³ N/m) = 0,025 m, ou seja, 2,5 cm.",
     "solution": [
       "Dados: k = 1,0 × 10³ N/m; F = 25 N; x = ?",
       "Fórmula: x = F / k",
@@ -1333,7 +1333,7 @@ const TOPIC_2_QUESTIONS = [
       "0,02"
     ],
     "correctIndex": 3,
-    "explanation": "Da relação σ = E · ε resulta ε = σ / E = 1,0 × 10⁷ / 5,0 × 10⁸ = 0,02, sem unidades.",
+    "explanation": "Da relação σ = E · ε resulta ε = σ / E = 1,0 × 10⁷ / (5,0 × 10⁸) = 0,02, sem unidades.",
     "solution": [
       "Dados: E = 5,0 × 10⁸ N/m²; σ = 1,0 × 10⁷ N/m²; ε = ?",
       "Fórmula: ε = σ / E",
@@ -1789,7 +1789,7 @@ const TOPIC_2_QUESTIONS = [
   {
     "id": 2287,
     "topicId": 2,
-    "question": "Um doente acamado tem um peso que se distribui por uma certa área de contacto com o colchão. Se a área de contacto for reduzida para metade, mantendo o mesmo peso, o que acontece à pressão de interface?",
+    "question": "Um doente acamado exerce sobre o colchão uma força de contacto, igual em módulo ao seu peso, distribuída por uma certa área de contacto. Se a área de contacto for reduzida para metade, mantendo-se a mesma força, o que acontece à pressão de interface?",
     "options": [
       "Reduz-se para metade.",
       "Mantém-se, porque a força é a mesma.",
@@ -1866,7 +1866,7 @@ const TOPIC_2_QUESTIONS = [
       "3,0 × 10⁻⁴"
     ],
     "correctIndex": 2,
-    "explanation": "ε = σ / E = 3,0 × 10⁶ / 1,5 × 10¹⁰ = 2,0 × 10⁻⁴, sem unidades.",
+    "explanation": "ε = σ / E = 3,0 × 10⁶ / (1,5 × 10¹⁰) = 2,0 × 10⁻⁴, sem unidades.",
     "solution": [
       "Dados: E = 1,5 × 10¹⁰ N/m²; σ = 3,0 × 10⁶ N/m²; ε = ?",
       "Fórmula: ε = σ / E",
@@ -1892,7 +1892,7 @@ const TOPIC_2_QUESTIONS = [
       "2,0 × 10¹² N/m²"
     ],
     "correctIndex": 2,
-    "explanation": "σ = F / S = 200 / 1,0 × 10⁻⁴ = 2,0 × 10⁶ N/m²; ε = ΔL / L<sub>0</sub> = 1,0 × 10⁻³ / 1,0 = 1,0 × 10⁻³; logo E = σ / ε = 2,0 × 10⁹ N/m².",
+    "explanation": "σ = F / S = 200 / (1,0 × 10⁻⁴) = 2,0 × 10⁶ N/m²; ε = ΔL / L<sub>0</sub> = 1,0 × 10⁻³ / 1,0 = 1,0 × 10⁻³; logo E = σ / ε = 2,0 × 10⁹ N/m².",
     "solution": [
       "Dados: S = 1,0 × 10⁻⁴ m²; L<sub>0</sub> = 1,0 m; ΔL = 1,0 mm; F = 200 N; E = ?",
       "Conversão: ΔL = 1,0 mm = 1,0 × 10⁻³ m",
@@ -2171,7 +2171,7 @@ const TOPIC_2_QUESTIONS = [
       "6,0 × 10⁴ N/m²"
     ],
     "correctIndex": 1,
-    "explanation": "A carga é suportada pelo anel de osso compacto, cuja área é 5,0 − 1,5 = 3,5 cm² = 3,5 × 10⁻⁴ m² (1 cm² = 10⁻⁴ m²). Então σ = F / A = 2100 / 3,5 × 10⁻⁴ = 6,0 × 10⁶ N/m². A cavidade medular, com medula, não contribui para suportar a carga.",
+    "explanation": "A carga é suportada pelo anel de osso compacto, cuja área é 5,0 − 1,5 = 3,5 cm² = 3,5 × 10⁻⁴ m² (1 cm² = 10⁻⁴ m²). Então σ = F / A = 2100 / (3,5 × 10⁻⁴) = 6,0 × 10⁶ N/m². A cavidade medular, com medula, não contribui para suportar a carga.",
     "solution": [
       "Dados: A<sub>total</sub> = 5,0 cm²; A<sub>cavidade</sub> = 1,5 cm²; F = 2100 N; σ = ?",
       "Conversão: 1 cm² = 10⁻⁴ m²: A<sub>total</sub> = 5,0 × 10⁻⁴ m²; A<sub>cavidade</sub> = 1,5 × 10⁻⁴ m²",
@@ -2180,8 +2180,8 @@ const TOPIC_2_QUESTIONS = [
       "Resultado: σ = 6,0 × 10⁶ N/m²"
     ],
     "distractorAnalysis": [
-      "Está incorreta: resulta de usar a área total (5,0 cm²), incluindo a cavidade medular, que não suporta carga: 2100 / 5,0 × 10⁻⁴ = 4,2 × 10⁶ N/m².",
-      "Está incorreta: resulta de usar apenas a área da cavidade medular (1,5 cm²) em vez da área de osso compacto: 2100 / 1,5 × 10⁻⁴ = 1,4 × 10⁷ N/m².",
+      "Está incorreta: resulta de usar a área total (5,0 cm²), incluindo a cavidade medular, que não suporta carga: 2100 / (5,0 × 10⁻⁴) = 4,2 × 10⁶ N/m².",
+      "Está incorreta: resulta de usar apenas a área da cavidade medular (1,5 cm²) em vez da área de osso compacto: 2100 / (1,5 × 10⁻⁴) = 1,4 × 10⁷ N/m².",
       "Está incorreta: resulta de converter 1 cm² em 10⁻² m² em vez de 10⁻⁴ m², obtendo uma tensão 100 vezes menor."
     ],
     "nursingApplication": "Num idoso com cortical adelgaçada, a área de osso compacto é menor e a mesma carga da marcha produz maior tensão na diáfise, o que aumenta o risco de fratura numa queda."
@@ -2197,7 +2197,7 @@ const TOPIC_2_QUESTIONS = [
       "4,0 × 10⁻³"
     ],
     "correctIndex": 3,
-    "explanation": "Pela lei de Hooke generalizada, ε = σ / E = 2,0 × 10⁶ / 5,0 × 10⁸ = 4,0 × 10⁻³ (0,4 %). O osso cortical (E ≈ 2,0 × 10¹⁰ N/m²) sob a mesma tensão deformar-se-ia apenas 1,0 × 10⁻⁴, ou seja, 40 vezes menos. Por ser menos rígido, o osso trabecular das epífises deforma-se mais e ajuda a amortecer os impactos transmitidos às articulações.",
+    "explanation": "Pela lei de Hooke generalizada, ε = σ / E = 2,0 × 10⁶ / (5,0 × 10⁸) = 4,0 × 10⁻³ (0,4 %). O osso cortical (E ≈ 2,0 × 10¹⁰ N/m²) sob a mesma tensão deformar-se-ia apenas 1,0 × 10⁻⁴, ou seja, 40 vezes menos. Por ser menos rígido, o osso trabecular das epífises deforma-se mais e ajuda a amortecer os impactos transmitidos às articulações.",
     "solution": [
       "Dados: E = 5,0 × 10⁸ N/m²; σ = 2,0 × 10⁶ N/m²; ε = ?",
       "Fórmula: ε = σ / E",
@@ -2535,7 +2535,7 @@ const TOPIC_2_QUESTIONS = [
       "2,7 × 10³ m"
     ],
     "correctIndex": 1,
-    "explanation": "ε = σ / E = 3 × 10⁶ / 2 × 10¹⁰ = 1,5 × 10⁻⁴; ΔL = ε · L<sub>0</sub> = 1,5 × 10⁻⁴ × 0,40 = 6 × 10⁻⁵ m = 0,06 mm.",
+    "explanation": "ε = σ / E = 3 × 10⁶ / (2 × 10¹⁰) = 1,5 × 10⁻⁴; ΔL = ε · L<sub>0</sub> = 1,5 × 10⁻⁴ × 0,40 = 6 × 10⁻⁵ m = 0,06 mm.",
     "solution": [
       "Dados: E = 2 × 10¹⁰ N/m²; L<sub>0</sub> = 0,40 m; σ = 3 × 10⁶ N/m²; ΔL = ?",
       "Fórmula: ε = σ / E; ΔL = ε · L<sub>0</sub>",
@@ -2653,7 +2653,7 @@ const TOPIC_2_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: multiplica a tensão pela deformação relativa em vez de as dividir, o que dá 4,5 × 10⁴ N/m².",
       "Está incorreta: usa 1,5 em vez de 0,015 para a deformação relativa, esquecendo-se de converter a percentagem, o que dá 2,0 × 10⁶ N/m².",
-      "Está incorreta: inverte a razão, calculando ε / σ = 0,015 / 3,0 × 10⁶ = 5,0 × 10⁻⁹."
+      "Está incorreta: inverte a razão, calculando ε / σ = 0,015 / (3,0 × 10⁶) = 5,0 × 10⁻⁹."
     ],
     "nursingApplication": "O módulo de Young de um tecido, obtido a partir de ensaios de tração, ajuda a escolher materiais de sutura ou enxertos com rigidez semelhante à do tecido a reparar."
   },
@@ -2677,8 +2677,8 @@ const TOPIC_2_QUESTIONS = [
       "Resultado: k = 8,0 × 10² N/m"
     ],
     "distractorAnalysis": [
-      "Está incorreta: multiplica a força pelo alongamento em vez de os dividir, o que dá 36 × 0,045 = 1,6 N/m.",
-      "Está incorreta: não converte o alongamento para metros, dividindo 36 por 4,5, o que dá 8,0 N/cm e não N/m.",
+      "Está incorreta: multiplica a força pelo encurtamento em vez de os dividir, o que dá 36 × 0,045 = 1,6 N/m.",
+      "Está incorreta: não converte o encurtamento para metros, dividindo 36 por 4,5, o que dá 8,0 N/cm e não N/m.",
       "Está incorreta: inverte a razão, calculando x / F = 0,045 / 36 = 1,3 × 10⁻³."
     ],
     "nursingApplication": "Conhecer a constante elástica de uma mola de compressão permite estimar a força que um dispositivo, como um apoio ortopédico com amortecimento, exerce para um dado encurtamento."
@@ -3021,7 +3021,7 @@ const TOPIC_2_QUESTIONS = [
       "4,0 × 10⁴ mm"
     ],
     "correctIndex": 0,
-    "explanation": "ε = σ / E = 6,0 × 10⁶ / 1,2 × 10⁹ = 5,0 × 10⁻³; ΔL = ε · L<sub>0</sub> = 5,0 × 10⁻³ × 0,20 m = 1,0 × 10⁻³ m = 1,0 mm.",
+    "explanation": "ε = σ / E = 6,0 × 10⁶ / (1,2 × 10⁹) = 5,0 × 10⁻³; ΔL = ε · L<sub>0</sub> = 5,0 × 10⁻³ × 0,20 m = 1,0 × 10⁻³ m = 1,0 mm.",
     "solution": [
       "Dados: L<sub>0</sub> = 20 cm; E = 1,2 × 10⁹ N/m²; σ = 6,0 × 10⁶ N/m²; ΔL = ?",
       "Conversão: L<sub>0</sub> = 20 cm = 0,20 m",
@@ -3316,7 +3316,7 @@ const TOPIC_2_QUESTIONS = [
       "0,050 (5,0 %)"
     ],
     "correctIndex": 3,
-    "explanation": "ε = σ / E = 5,0 × 10⁴ / 1,0 × 10⁶ = 0,050, ou seja, 5,0 % (valor adimensional).",
+    "explanation": "ε = σ / E = 5,0 × 10⁴ / (1,0 × 10⁶) = 0,050, ou seja, 5,0 % (valor adimensional).",
     "solution": [
       "Dados: E = 1,0 × 10⁶ N/m²; σ = 5,0 × 10⁴ N/m²; ε = ?",
       "Fórmula: ε = σ / E",
@@ -3877,7 +3877,7 @@ const TOPIC_2_QUESTIONS = [
       "20 vezes menos"
     ],
     "correctIndex": 2,
-    "explanation": "ε = σ / E, logo ε<sub>tendão</sub> / ε<sub>osso</sub> = E<sub>osso</sub> / E<sub>tendão</sub> = 2 × 10¹⁰ / 1 × 10⁹ = 20.",
+    "explanation": "ε = σ / E, logo ε<sub>tendão</sub> / ε<sub>osso</sub> = E<sub>osso</sub> / E<sub>tendão</sub> = 2 × 10¹⁰ / (1 × 10⁹) = 20.",
     "solution": [
       "Dados: σ = 4 × 10⁶ N/m²; E<sub>tendão</sub> = 1 × 10⁹ N/m²; E<sub>osso</sub> = 2 × 10¹⁰ N/m²",
       "Fórmula: ε = σ / E, logo ε<sub>tendão</sub> / ε<sub>osso</sub> = E<sub>osso</sub> / E<sub>tendão</sub>",
@@ -3903,7 +3903,7 @@ const TOPIC_2_QUESTIONS = [
       "2,0 × 10⁴"
     ],
     "correctIndex": 0,
-    "explanation": "Da lei σ = E · ε, ε = σ / E = 4,0 × 10⁶ / 2,0 × 10¹⁰ = 2,0 × 10⁻⁴ (adimensional).",
+    "explanation": "Da lei σ = E · ε, ε = σ / E = 4,0 × 10⁶ / (2,0 × 10¹⁰) = 2,0 × 10⁻⁴ (adimensional).",
     "solution": [
       "Dados: E = 2,0 × 10¹⁰ N/m²; σ = 4,0 × 10⁶ N/m²; ε = ?",
       "Fórmula: ε = σ / E",
@@ -3912,7 +3912,7 @@ const TOPIC_2_QUESTIONS = [
     ],
     "distractorAnalysis": [
       "Está incorreta: multiplica σ por E em vez de os dividir, o que dá 8,0 × 10¹⁶.",
-      "Está incorreta: inverte a razão, calculando E / σ = 2,0 × 10¹⁰ / 4,0 × 10⁶ = 5,0 × 10³.",
+      "Está incorreta: inverte a razão, calculando E / σ = 2,0 × 10¹⁰ / (4,0 × 10⁶) = 5,0 × 10³.",
       "Está incorreta: erra o sinal do expoente ao dividir as potências de 10, obtendo 10⁴ em vez de 10⁻⁴."
     ],
     "nursingApplication": "Um osso submetido a cargas fisiológicas sofre deformações relativas muito pequenas, o que explica porque não se nota a sua deformação em condições normais de apoio."
@@ -4018,7 +4018,7 @@ const TOPIC_2_QUESTIONS = [
       "É 2000 vezes menos rígido"
     ],
     "correctIndex": 2,
-    "explanation": "A razão é 2 × 10¹⁰ / 1 × 10⁷ = 2 × 10³ = 2000: quanto maior o módulo de Young, maior a rigidez.",
+    "explanation": "A razão é 2 × 10¹⁰ / (1 × 10⁷) = 2 × 10³ = 2000: quanto maior o módulo de Young, maior a rigidez.",
     "solution": [
       "Dados: E<sub>osso</sub> = 2 × 10¹⁰ N/m²; E<sub>borracha</sub> = 1 × 10⁷ N/m²",
       "Fórmula: razão = E<sub>osso</sub> / E<sub>borracha</sub>",
@@ -4119,7 +4119,7 @@ const TOPIC_2_QUESTIONS = [
       "1,0 × 10⁴ N/m²"
     ],
     "correctIndex": 2,
-    "explanation": "Com σ = F / A e 7,0 cm² = 7,0 × 10⁻⁴ m²: σ = 700 / 7,0 × 10⁻⁴ = 1,0 × 10⁶ N/m². Antes, com 10 cm², era 700 / 1,0 × 10⁻³ = 7,0 × 10⁵ N/m². Com a mesma força e menos osso, a tensão aumenta cerca de 1,4 vezes.",
+    "explanation": "Com σ = F / A e 7,0 cm² = 7,0 × 10⁻⁴ m²: σ = 700 / (7,0 × 10⁻⁴) = 1,0 × 10⁶ N/m². Antes, com 10 cm², era 700 / (1,0 × 10⁻³) = 7,0 × 10⁵ N/m². Com a mesma força e menos osso, a tensão aumenta cerca de 1,4 vezes.",
     "solution": [
       "Dados: F = 700 N; A = 7,0 cm² (antes, 10 cm²); σ = ?",
       "Conversão: 7,0 cm² = 7,0 × 10⁻⁴ m²",
