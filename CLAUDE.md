@@ -111,3 +111,26 @@ Change the path for other topics. If the file does not parse as JSON (e.g. trail
 ## Review before finishing
 
 For every new question, check: (1) the marked answer is correct; (2) no other option is also correct; (3) formulas, units, numbers and signs in the explanation and distractor analysis are right; (4) the nursing application is plausible.
+
+## Owner rules (apply to every session, local or cloud)
+
+### Billing guardrail (overrides everything)
+The owner pays only for Claude Pro and must never be billed beyond it.
+- Subagents run only on `haiku`, `sonnet` or `opus`, set explicitly on every spawn.
+- Never use, select, configure or suggest `fable`, `best`, any Fable or Mythos model, fast mode (`/fast`), a Fable advisor, usage credits or extra usage, or any new model until it is confirmed as included in Pro.
+- If anything reports that it requires usage credits, stop and say so.
+- Everything stays 100% free: no paid services, plans, APIs or add-ons.
+
+### Working mode
+- Load and follow the `token-efficient` skill if available. Otherwise: correctness and quality first, minimal tokens second; answer first, no recaps; read only what's needed; edit instead of rewriting; test before delivering.
+- Subagents: haiku for search/extraction/reformatting, sonnet for normal code, opus for subtle bugs or scientific/clinical rigor. Verify what they return.
+- Talk to the owner in English.
+
+### Git: finish what you change (standing authorization)
+After changing this repo, without asking:
+1. Run its tests/build/validation if any; never commit broken code.
+2. Commit with a clear message (never commit secrets, .env files or keys).
+3. Push to GitHub.
+4. If the work is on a branch other than the default, open a PR and merge it into the default branch.
+- Stop and report instead of forcing it if tests fail, there are merge conflicts, CI fails, or a push is rejected. Never force-push or rewrite history.
+- Skip only if the owner says "don't push" / "don't commit" for that task.
