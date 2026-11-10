@@ -116,14 +116,31 @@ For every new question, check: (1) the marked answer is correct; (2) no other op
 
 ### Billing guardrail (overrides everything)
 The owner pays only for Claude Pro and must never be billed beyond it.
-- Subagents run only on `haiku`, `sonnet` or `opus`, set explicitly on every spawn.
-- Never use, select, configure or suggest `fable`, `best`, any Fable or Mythos model, fast mode (`/fast`), a Fable advisor, usage credits or extra usage, or any new model until it is confirmed as included in Pro.
-- If anything reports that it requires usage credits, stop and say so.
+
+Included in Pro (the only models and modes to use or suggest):
+- `haiku`, `sonnet`, `opus`: always.
+- All Fable models: 2026-11-09 to 2026-11-16 (launch offer). Cap: 50% of the weekly limit. Past the cap or the end date, Fable bills usage credits.
+
+Rules:
+- A dated entry is void after its end date: compare it with today's date before relying on it.
+- Anything not listed is not included: Mythos, any other model or tier, the `best` alias, fast mode (`/fast`), an advisor on a model that is not included, usage credits, extra usage. Never use or suggest it. A new model counts only once it is confirmed as included in Pro.
+- Subagents: set the model explicitly on every spawn, from the included list.
+- If the session runs on a model that is not included today, say so before doing any work.
+- If anything reports usage credits, extra usage or overage, stop and say so.
 - Everything stays 100% free: no paid services, plans, APIs or add-ons.
+
+### Session start
+- First request of every session, before any work: ask the owner which model lineup to use, as one set of presets that names today's models, recommended first. Ask once per session and reuse the answer.
+  1. Quality-first (recommended): the strongest included model orchestrates at high effort; sonnet and haiku subagents take routine and bulk work; opus reviews high-stakes work.
+  2. Balanced: sonnet orchestrates at high effort; opus advises on the plan and reviews the result; haiku takes bulk work.
+  3. Economy: sonnet orchestrates at medium effort; haiku takes bulk work; no reviewer unless asked.
+- If the chosen orchestrator is not the session's model, switch before working, or give the owner the `/model` command and wait.
+- Before any non-trivial task (multi-step, changes files, produces a deliverable, or is ambiguous): ask the questions whose answers would change the result, together with the lineup question (four at most), then work without check-ins. Quick questions and one-step fixes: answer directly.
+- Unattended runs (scheduled tasks, headless) and subagents never ask: use Quality-first, or the model assigned.
 
 ### Working mode
 - Load and follow the `token-efficient` skill if available. Otherwise: correctness and quality first, minimal tokens second; answer first, no recaps; read only what's needed; edit instead of rewriting; test before delivering.
-- Subagents: haiku for search/extraction/reformatting, sonnet for normal code, opus for subtle bugs or scientific/clinical rigor. Verify what they return.
+- Subagents: haiku for search/extraction/reformatting, sonnet for normal code, opus for subtle bugs or scientific/clinical rigor. Where the owner's `scout` (haiku), `worker` (sonnet) and `reviewer` (opus) agents exist, use them. Verify what they return.
 - Talk to the owner in English.
 
 ### Git: finish what you change (standing authorization)
