@@ -77,8 +77,10 @@ def test_app():
     removed_t2 = {2234, 2235, 2273, 2298}
     assert t2_ids == [i for i in range(2201, 2405) if i not in removed_t2], "Topic 2 IDs must be 2201-2404 without the removed ones"
     t3_ids = sorted(q["id"] for q in all_questions if q["topicId"] == 3)
-    assert t3_ids == list(range(3001, 3201)), "Topic 3 IDs must be 3001-3200"
-    print("✓ All 600 IDs are unique (1001-1200, 2201-2404 without the 4 removed IDs, 3001-3200).")
+    # 3096, 3097, 3098, 3100, 3110, 3144, 3145 e 3147 foram removidas (não constam dos diapositivos) e os IDs não se reutilizam
+    removed_t3 = {3096, 3097, 3098, 3100, 3110, 3144, 3145, 3147}
+    assert t3_ids == [i for i in range(3001, 3209) if i not in removed_t3], "Topic 3 IDs must be 3001-3208 without the removed ones"
+    print("✓ All 600 IDs are unique (1001-1200, 2201-2404 without the 4 removed IDs, 3001-3208 without the 8 removed IDs).")
 
     # 5. Check search index simulation
     keywords = ["Inércia", "Momento", "Hooke", "Young", "Cisalhamento", "Compressão", "Alavanca", "Newton", "Atrito"]
