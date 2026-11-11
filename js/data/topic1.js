@@ -2531,7 +2531,7 @@ const TOPIC_1_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: Empurrar com força máxima rampa abaixo acelera a cadeira, contrariando a velocidade constante.",
       "Está incorreta: Velocidade constante significa força resultante nula, e não ausência de forças; P<sub>t</sub> continua a atuar e tem de ser equilibrada.",
-      "Está incorreta: Descer de marcha-atrás pode ser adequado, mas exige vigiar o percurso e aplicar força de retenção rampa acima; a resistência ao rolamento, por si só, não equilibra P<sub>t</sub>."
+      "Está incorreta: Descer de marcha-atrás pode ser adequado, mas exige vigiar o percurso e aplicar força de retenção rampa acima; o atrito do piso e a resistência ao rolamento, por si sós, não equilibram P<sub>t</sub>."
     ],
     "nursingApplication": "Técnica ergonómica recomendada de condução de cadeiras de rodas em rampas íngremes: descer de marcha-atrás com apoio do corpo para retenção."
   },

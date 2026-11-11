@@ -1104,7 +1104,7 @@ const TOPIC_2_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: no eixo central a tensão de corte é nula, e não máxima.",
       "Está incorreta: a tensão de corte não é uniforme; cresce com a distância ao eixo.",
-      "Está incorreta: o centro de massa não é relevante para a tensão de torção, que depende da distância ao eixo."
+      "Está incorreta: numa barra cilíndrica homogénea o centro de massa fica sobre o eixo, onde a tensão de corte é nula, e não máxima."
     ],
     "nursingApplication": "Quando o pé fica fixo e o corpo roda, a tíbia sofre torção e é o osso cortical da periferia que suporta as maiores tensões de corte."
   },

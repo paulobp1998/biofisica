@@ -222,7 +222,7 @@ const STUDY_BLOCKS = [
         <li><strong>Líquidos:</strong> não têm forma própria (tomam a forma do recipiente) e têm volume constante.</li>
         <li><strong>Hidrodinâmica</strong> (do grego <em>hydor</em>, água): estuda os líquidos em movimento; aqui, dentro de condutores cilíndricos, para a aplicar ao sistema circulatório.</li>
         <li><strong>Viscosidade (η):</strong> resistência que um fluido oferece ao seu escoamento. Resulta das forças intermoleculares entre moléculas vizinhas e varia com a temperatura e com a composição.</li>
-        <li><strong>Sangue:</strong> viscosidade cerca de 3 vezes a da água. Plasma ≈ 55% e elementos figurados ≈ 45% do volume; os glóbulos vermelhos são os que mais contribuem para a viscosidade (a camada leucoplaquetária é cerca de 1%).</li>
+        <li><strong>Sangue:</strong> viscosidade cerca de 3 a 4 vezes a da água. Plasma ≈ 55% e elementos figurados ≈ 45% do volume; os glóbulos vermelhos são os que mais contribuem para a viscosidade (a camada leucoplaquetária é cerca de 1%).</li>
         <li><strong>Hematócrito:</strong> percentagem do volume de sangue ocupada pelos glóbulos vermelhos. Hematócrito elevado (ou muitas plaquetas) aumenta a viscosidade; com fluxo muito lento, os glóbulos vermelhos agregam-se em «pilhas» e a viscosidade também aumenta.</li>
       </ul>`,
     pitfall: 'Viscosidade não é densidade: a viscosidade mede a resistência ao escoamento, a densidade (ρ) mede a massa por unidade de volume. Na anemia há menos glóbulos vermelhos, por isso a viscosidade diminui (não aumenta).',

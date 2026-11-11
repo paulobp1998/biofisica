@@ -1232,7 +1232,7 @@ const TOPIC_3_QUESTIONS = [
     ],
     "distractorAnalysis": [
       "Está incorreta: usa o raio (0,25 cm) em vez do diâmetro.",
-      "Está incorreta: multiplica por η em vez de dividir, calculando Re · ρ · d / η.",
+      "Está incorreta: inverte a fórmula, dividindo por η e multiplicando por ρ · d: calcula Re · ρ · d / η em vez de Re · η / (ρ · d).",
       "Está incorreta: esquece a densidade e calcula Re · η / d."
     ],
     "nursingApplication": "Num vaso de calibre médio, só velocidades muito elevadas, como as que surgem num estreitamento, ultrapassam este limite e favorecem a turbulência."
@@ -1323,7 +1323,7 @@ const TOPIC_3_QUESTIONS = [
     },
     "options": [
       "2650, zona de transição",
-      "1330, regime laminar",
+      "1325, regime laminar",
       "424, regime laminar",
       "2500, zona de transição"
     ],
@@ -2150,17 +2150,17 @@ const TOPIC_3_QUESTIONS = [
     "options": [
       "praticamente igual à da água, porque o sangue é sobretudo líquido",
       "cerca de 30 vezes maior do que a da água",
-      "cerca de 3 vezes maior do que a da água",
-      "cerca de 3 vezes menor do que a da água"
+      "cerca de 3 a 4 vezes maior do que a da água",
+      "cerca de 3 a 4 vezes menor do que a da água"
     ],
     "correctIndex": 2,
-    "explanation": "O sangue tem uma viscosidade cerca de 3 vezes superior à da água, devido sobretudo aos elementos figurados em suspensão no plasma.",
+    "explanation": "O sangue tem uma viscosidade cerca de 3 a 4 vezes superior à da água, devido sobretudo aos elementos figurados em suspensão no plasma.",
     "distractorAnalysis": [
       "Está incorreta: O sangue contém elementos figurados em suspensão, que aumentam a resistência ao escoamento; a sua viscosidade não é igual à da água.",
-      "Está incorreta: O valor é muito exagerado; a viscosidade do sangue é da ordem de 3 vezes a da água.",
+      "Está incorreta: O valor é muito exagerado; a viscosidade do sangue é da ordem de 3 a 4 vezes a da água.",
       "Está incorreta: Inverte a relação: o sangue é mais viscoso do que a água, não menos."
     ],
-    "nursingApplication": "Ao colher sangue por um cateter fino, o enfermeiro conta com um escoamento mais lento do que o de uma solução aquosa, porque o sangue é cerca de 3 vezes mais viscoso do que a água."
+    "nursingApplication": "Ao colher sangue por um cateter fino, o enfermeiro conta com um escoamento mais lento do que o de uma solução aquosa, porque o sangue é cerca de 3 a 4 vezes mais viscoso do que a água."
   },
   {
     "id": 3102,
@@ -2234,7 +2234,7 @@ const TOPIC_3_QUESTIONS = [
     "distractorAnalysis": [
       "Está incorreta: O plasma ocupa cerca de 55% do volume; o hematócrito refere-se aos glóbulos vermelhos.",
       "Está incorreta: O hematócrito não mede agregação; é a percentagem do volume ocupada pelos glóbulos vermelhos.",
-      "Está incorreta: Confunde hematócrito com viscosidade; o sangue é cerca de 3 vezes mais viscoso do que a água."
+      "Está incorreta: Confunde hematócrito com viscosidade; o sangue é cerca de 3 a 4 vezes mais viscoso do que a água."
     ],
     "nursingApplication": "Quando o enfermeiro regista o hematócrito de um utente, está a anotar a fração do volume sanguíneo ocupada pelos glóbulos vermelhos."
   },
@@ -3719,7 +3719,7 @@ const TOPIC_3_QUESTIONS = [
   {
     "id": 3178,
     "topicId": 3,
-    "question": "Com o mesmo cateter e a mesma diferença de pressão, o sangue (viscosidade cerca de 3 vezes a da água) escoa com menor caudal do que o soro. Qual a razão, segundo a lei de Poiseuille?",
+    "question": "Com o mesmo cateter e a mesma diferença de pressão, o sangue (viscosidade cerca de 3 a 4 vezes a da água) escoa com menor caudal do que o soro. Qual a razão, segundo a lei de Poiseuille?",
     "options": [
       "A maior viscosidade do sangue: o caudal é inversamente proporcional a η",
       "A menor viscosidade do sangue: o caudal diminui quando η diminui",
@@ -4010,7 +4010,7 @@ const TOPIC_3_QUESTIONS = [
       "Está incorreta: R<sub>h</sub> depende fortemente do raio (R⁴).",
       "Está incorreta: o sangue tem uma viscosidade definida e pode ser usada, desde que o regime seja laminar."
     ],
-    "nursingApplication": "Em territórios de grande calibre e velocidade, como a aorta, o regime tende a ser turbulento e os modelos laminares não se aplicam diretamente."
+    "nursingApplication": "Na aorta, durante a sístole, pode surgir turbulência e, nessas condições, os modelos laminares não se aplicam diretamente."
   },
   {
     "id": 3189,
@@ -4435,7 +4435,7 @@ const TOPIC_3_QUESTIONS = [
     "correctIndex": 3,
     "explanation": "Nas arteríolas a resistência ao escoamento é máxima e é aí que a pressão mais desce. Esta queda de pressão transforma o fluxo pulsátil das artérias num fluxo contínuo e de baixa pressão, o que protege os capilares.",
     "distractorAnalysis": [
-      "Está incorreta: nas artérias a resistência é baixa e a pressão ainda é máxima e pulsátil; a grande queda de pressão só ocorre a seguir, nas arteríolas.",
+      "Está incorreta: a elasticidade das grandes artérias amortece as pulsações, mas nelas a pressão ainda é elevada e pulsátil; é nas arteríolas, de resistência máxima, que a pressão mais desce e o fluxo se torna contínuo.",
       "Está incorreta: o escoamento lento e contínuo dos capilares é consequência da queda de pressão a montante, nas arteríolas, e não a sua causa.",
       "Está incorreta: as veias ficam depois dos capilares, pelo que não podem transformar o fluxo que chega aos capilares."
     ],
