@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 """
 Comprehensive verification test suite for the Biofísica Enfermagem Web App.
-Verifies Topic 1 (200 qs) + Topic 2 (200 qs) + Topic 3 (200 qs) [600 questions total],
-Empty Topics 4-5 (0 qs each, waiting for teacher's future request).
-UNLOCKED_TOPIC_IDS = [1, 2, 3] (Topics 1 to 3 active for students).
+Verifies Topics 1 to 5 (200 qs each, 1000 questions in the bank).
+UNLOCKED_TOPIC_IDS = [1, 2, 3]: Topics 1 to 3 are active for students (600 questions);
+Topics 4-5 are written but stay locked until the teacher unlocks them.
 """
 
 import json
@@ -63,9 +63,11 @@ def test_app():
     assert topic_counts[2] == 200, f"Topic 2 has {topic_counts[2]} questions (expected 200)"
     assert topic_counts[3] == 200, f"Topic 3 has {topic_counts[3]} questions (expected 200)"
     for t in range(4, 6):
-        assert topic_counts[t] == 0, f"Topic {t} has {topic_counts[t]} questions (expected 0)"
-    assert len(all_questions) == 600, f"Total questions is {len(all_questions)} (expected 600)"
-    print("✓ Question count verified: 200 in Topics 1, 2 and 3, 0 in Topics 4-5 (Total: 600 questions).")
+        assert topic_counts[t] == 200, f"Topic {t} has {topic_counts[t]} questions (expected 200)"
+    assert len(all_questions) == 1000, f"Total questions is {len(all_questions)} (expected 1000)"
+    active_questions = [q for q in all_questions if q["topicId"] in (1, 2, 3)]
+    assert len(active_questions) == 600, f"Active questions: {len(active_questions)} (expected 600)"
+    print("✓ Question count verified: 200 in each of Topics 1-5 (Total: 1000 questions; 600 active in Topics 1-3).")
 
     # 4. Check IDs are contiguous and distinct
     ids = [q["id"] for q in all_questions]
@@ -80,7 +82,13 @@ def test_app():
     # 3096, 3097, 3098, 3100, 3110, 3144, 3145 e 3147 foram removidas (não constam dos diapositivos) e os IDs não se reutilizam
     removed_t3 = {3096, 3097, 3098, 3100, 3110, 3144, 3145, 3147}
     assert t3_ids == [i for i in range(3001, 3209) if i not in removed_t3], "Topic 3 IDs must be 3001-3208 without the removed ones"
-    print("✓ All 600 IDs are unique (1001-1200, 2201-2404 without the 4 removed IDs, 3001-3208 without the 8 removed IDs).")
+    t4_ids = sorted(q["id"] for q in all_questions if q["topicId"] == 4)
+    t5_ids = sorted(q["id"] for q in all_questions if q["topicId"] == 5)
+    assert t4_ids == list(range(4001, 4201)), "Topic 4 IDs must be 4001-4200"
+    assert t5_ids == list(range(5001, 5201)), "Topic 5 IDs must be 5001-5200"
+    for t in range(1, 6):
+        assert all(q["id"] // 1000 == q["topicId"] for q in all_questions), "Question ID does not match its topicId"
+    print("✓ All 1000 IDs are unique (1001-1200, 2201-2404 without the 4 removed IDs, 3001-3208 without the 8 removed IDs, 4001-4200, 5001-5200).")
 
     # 5. Check search index simulation
     keywords = ["Inércia", "Momento", "Hooke", "Young", "Cisalhamento", "Compressão", "Alavanca", "Newton", "Atrito"]
@@ -88,7 +96,7 @@ def test_app():
         matches = [q for q in all_questions if kw.lower() in q["question"].lower() or kw.lower() in q["explanation"].lower() or any(kw.lower() in opt.lower() for opt in q["options"])]
         print(f"  • Search '{kw}': {len(matches)} matching questions found.")
         assert len(matches) > 0, f"Expected matches for keyword '{kw}'"
-    print("✓ Search capability simulation successful across 600 questions.")
+    print("✓ Search capability simulation successful across 1000 questions.")
 
     # 6. Check Unlocked Questions in questions-data.js
     with open("js/questions-data.js", "r", encoding="utf-8") as f:
@@ -101,9 +109,10 @@ def test_app():
         assert len(q["options"]) == 4, f"Q#{q['id']} does not have 4 options"
         assert len(set(q["options"])) == 4, f"Q#{q['id']} has duplicate options"
         assert len(q["distractorAnalysis"]) == 3, f"Q#{q['id']} distractor count != 3"
+        assert q["correctIndex"] in (0, 1, 2, 3), f"Q#{q['id']} correctIndex out of range"
         for d in q["distractorAnalysis"]:
             assert d.startswith("Está incorreta: "), f"Q#{q['id']} invalid distractor format"
-    print("✓ All 600 questions satisfy: 4 unique options, 3 distractors starting with 'Está incorreta: ', correctIndex in 0-3.")
+    print("✓ All 1000 questions satisfy: 4 unique options, 3 distractors starting with 'Está incorreta: ', correctIndex in 0-3.")
 
     # 8. Check Official AI Disclaimer Announcement in index.html
     expected_ai_notice = (

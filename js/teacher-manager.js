@@ -1,6 +1,6 @@
 /**
  * Painel do Docente: Gestão e Auditoria do Banco de Questões de Biofísica Médica
- * Permite ao docente rever as perguntas do repositório (Tópicos 1 a 3 - 600 questões)
+ * Permite ao docente rever as perguntas do repositório (Tópicos 1 a 5 - 1000 questões; 600 ativas nos Tópicos 1 a 3)
  * e selecionar questões para eliminação, com proteção obrigatória por PIN Mestre.
  */
 

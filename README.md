@@ -15,16 +15,20 @@ Estado atual do banco de perguntas:
 | 1 | Força, estado de equilíbrio, equilíbrio de forças e alavancas | 200 perguntas ativas |
 | 2 | Elasticidade dos corpos, resistência dos materiais e sistema osteomedular | 200 perguntas ativas |
 | 3 | Hidrodinâmica | 200 perguntas ativas |
-| 4 | Hidrostática | Em preparação (bloqueado pelo docente) |
-| 5 | Física atómica e nuclear | Em preparação (bloqueado pelo docente) |
+| 4 | Hidrostática | 200 perguntas (bloqueado pelo docente) |
+| 5 | Física atómica e nuclear | 200 perguntas (bloqueado pelo docente) |
 
-Total atual: **600 perguntas** (todas ativas para os alunos, Tópicos 1 a 3). Os tópicos ativos definem-se em `UNLOCKED_TOPIC_IDS` (`js/questions-data.js`), de escolha múltipla com 4 opções e explicação científica e de aplicação em enfermagem.
+Total atual: **1000 perguntas**, das quais **600 ativas** para os alunos (Tópicos 1 a 3); as 400 dos Tópicos 4 e 5 ficam visíveis apenas no painel do docente até serem desbloqueadas. Os tópicos ativos definem-se em `UNLOCKED_TOPIC_IDS` (`js/questions-data.js`), de escolha múltipla com 4 opções e explicação científica e de aplicação em enfermagem.
 
 **Tópico 1:** grandezas vetoriais, leis de Newton, força normal e atrito, condições de equilíbrio (∑F = 0 e ∑M = 0), centro de gravidade e base de sustentação, alavancas biomecânicas (1.ª, 2.ª e 3.ª classe) e momentos de força.
 
 **Tópico 2:** reologia (sólidos de Hooke e de Euclides, corpos plásticos e viscoelásticos), as cinco deformações (compressão, tração, flexão, cisalhamento e torção), lei de Hooke, módulo de Young, composição do osso (hidroxiapatite e colagénio) e anisotropia mecânica do sistema osteomedular.
 
 **Tópico 3:** viscosidade e viscosidade do sangue (hematócrito, anemia e desidratação), regimes laminar e turbulento, experiência e número de Reynolds, regimes no sistema circulatório, caudal e caudal crítico, lei de Poiseuille, resistência hidráulica, cateteres (gauge) e sons de Korotkoff.
+
+**Tópico 4 (bloqueado):** equilíbrio hidrostático, pressão (P = F/S) e unidades, experiência de Torricelli, lei fundamental da hidrostática, sistema circulatório e bolsa de soro, vasos comunicantes, manómetro de mercúrio, lei de Pascal e prensa hidráulica, princípio de Torricelli, trabalho e pressão (trabalho sistólico), pressão atmosférica, ouvido médio, mergulho e embolias.
+
+**Tópico 5 (bloqueado):** modelos atómicos e postulados de Bohr, constituição do átomo, número atómico e número de massa, forças nucleares, isótopos, isóbaros e isótonos, radioatividade (emissões α, β e γ), ondas eletromagnéticas, raios X, efeitos biológicos das radiações ionizantes e técnicas de imagem (TAC, cintigrafia, PET e ressonância magnética).
 
 ---
 
