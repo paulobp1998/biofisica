@@ -7,6 +7,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   const quiz = new QuizEngine();
 
+  const store = {get(k,d=null){try{const v=localStorage.getItem(k);return v===null?d:v}catch(e){return d}},getJSON(k,d){try{const v=localStorage.getItem(k);return v===null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+
   // =========================================================================
   // 1. Elementos do DOM
   // =========================================================================
@@ -25,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const navBrand = document.getElementById('nav-brand');
   const btnNavArena = document.getElementById('btn-nav-arena');
   const btnNavTeacher = document.getElementById('btn-nav-teacher');
-  const btnOpenTeacherAudit = document.getElementById('btn-open-teacher-audit');
   const linkFooterTeacher = document.getElementById('link-footer-teacher');
   const themeToggle = document.getElementById('theme-toggle');
   const audioToggle = document.getElementById('audio-toggle');
@@ -170,6 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
       banner.remove();
       return;
     }
+    banner.classList.remove('hidden');
 
     // Permitir fechar o aviso na sessão atual
     const btnClose = document.getElementById('btn-close-cluny-notice');
@@ -213,13 +215,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // =========================================================================
   // 3. Funcionalidade 4H: Controlo de Tamanho de Fonte
   // =========================================================================
-  let currentFontScale = parseFloat(localStorage.getItem('biofisica_font_scale') || '1.0');
+  let currentFontScale = parseFloat(store.get('biofisica_font_scale') || '1.0');
   applyFontScale(currentFontScale);
 
   function applyFontScale(scale) {
     currentFontScale = Math.min(1.35, Math.max(0.85, scale));
     document.documentElement.style.setProperty('--font-scale', currentFontScale);
-    localStorage.setItem('biofisica_font_scale', currentFontScale.toString());
+    store.set('biofisica_font_scale', currentFontScale.toString());
   }
 
   btnFontDecrease.addEventListener('click', () => {
@@ -237,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // =========================================================================
   // 4. Gestão de Tema Escuro / Claro e Áudio
   // =========================================================================
-  const savedTheme = localStorage.getItem('biofisica_theme') || 'light';
+  const savedTheme = store.get('biofisica_theme') || document.documentElement.getAttribute('data-theme') || 'light';
   if (savedTheme === 'dark') {
     document.documentElement.setAttribute('data-theme', 'dark');
     themeToggle.textContent = '☀️';
@@ -250,7 +252,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentTheme = document.documentElement.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('biofisica_theme', newTheme);
+    store.set('biofisica_theme', newTheme);
     themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
   });
 
@@ -265,8 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // =========================================================================
   function updateStreak() {
     const today = new Date().toISOString().slice(0, 10);
-    const raw = localStorage.getItem('biofisica_streak');
-    let streakData = raw ? JSON.parse(raw) : { lastDate: '', count: 0 };
+    let streakData = store.getJSON('biofisica_streak', null) || { lastDate: '', count: 0 };
 
     if (streakData.lastDate) {
       const last = new Date(streakData.lastDate);
@@ -290,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
       streakData.lastDate = today;
     }
 
-    localStorage.setItem('biofisica_streak', JSON.stringify(streakData));
+    store.set('biofisica_streak', JSON.stringify(streakData));
     streakText.textContent = `${streakData.count} ${streakData.count === 1 ? 'Dia' : 'Dias'}`;
 
     if (streakData.count >= 3) {
@@ -310,7 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
   } catch (e) { /* sem armazenamento */ }
 
   function getStarred() {
-    return JSON.parse(localStorage.getItem('biofisica_starred') || '[]');
+    return store.getJSON('biofisica_starred', null) || [];
   }
 
   function toggleStar(id) {
@@ -326,7 +327,7 @@ document.addEventListener('DOMContentLoaded', () => {
       isStarred = false;
       showToast(`Pergunta #${id} removida das Marcadas.`, 'toast-info', 2000);
     }
-    localStorage.setItem('biofisica_starred', JSON.stringify(current));
+    store.set('biofisica_starred', JSON.stringify(current));
     updateQuickActionCounters();
     return isStarred;
   }
@@ -459,8 +460,54 @@ document.addEventListener('DOMContentLoaded', () => {
   // =========================================================================
   // 7. Navegação entre Vistas
   // =========================================================================
+  // Acessibilidade dos modais: foco inicial, restauro de foco e armadilha de Tab
+  const FOCUSABLE_SEL = 'a[href], button:not([disabled]), input:not([disabled]):not([type="hidden"]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+  function getFocusable(root) {
+    return Array.from(root.querySelectorAll(FOCUSABLE_SEL)).filter(el => el.offsetParent !== null || el === document.activeElement);
+  }
+  document.querySelectorAll('.modal-backdrop').forEach(backdrop => {
+    let wasOpen = !backdrop.classList.contains('hidden');
+    let lastFocused = null;
+    new MutationObserver(() => {
+      const isOpen = !backdrop.classList.contains('hidden');
+      if (isOpen === wasOpen) return;
+      wasOpen = isOpen;
+      if (isOpen) {
+        lastFocused = document.activeElement;
+        const card = backdrop.querySelector('.modal-card') || backdrop;
+        if (!card.contains(document.activeElement)) {
+          const first = getFocusable(card)[0];
+          if (first) first.focus();
+        }
+      } else if (lastFocused && document.contains(lastFocused) && typeof lastFocused.focus === 'function') {
+        lastFocused.focus();
+        lastFocused = null;
+      }
+    }).observe(backdrop, { attributes: true, attributeFilter: ['class'] });
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Tab') return;
+    const open = document.querySelectorAll('.modal-backdrop:not(.hidden)');
+    if (!open.length) return;
+    const top = open[open.length - 1];
+    const card = top.querySelector('.modal-card') || top;
+    const items = getFocusable(card);
+    if (!items.length) return;
+    const first = items[0], last = items[items.length - 1];
+    if (!card.contains(document.activeElement)) {
+      e.preventDefault();
+      first.focus();
+    } else if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  });
+
   function showView(view) {
-    [homeView, quizView, resultsView, studyView, basesView, statsView, arenaView, teacherView].forEach(v => {
+    document.querySelectorAll('main > section').forEach(v => {
       if (v) {
         v.classList.add('hidden');
         v.classList.remove('active-view');
@@ -503,9 +550,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (btnNavTeacher) {
     btnNavTeacher.addEventListener('click', openTeacherPanel);
-  }
-  if (btnOpenTeacherAudit) {
-    btnOpenTeacherAudit.addEventListener('click', openTeacherPanel);
   }
   if (linkFooterTeacher) {
     linkFooterTeacher.addEventListener('click', (e) => {
@@ -1438,6 +1482,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const isLast = quiz.currentIndex === quiz.currentQuestions.length - 1;
     btnNext.textContent = isLast ? 'Finalizar e Ver Resultados ➔' : 'Próxima Pergunta ➔';
     btnNext.classList.remove('hidden');
+
+    // Garante que o início do feedback fica visível sem esconder as opções marcadas
+    const fr = feedbackCard.getBoundingClientRect();
+    const peek = window.innerHeight - 180;
+    if (fr.top > peek) window.scrollBy({ top: fr.top - peek });
   }
 
   btnNext.addEventListener('click', () => {
@@ -1445,6 +1494,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (nextState) {
       renderQuestion(nextState);
       saveQuizProgress();
+      if (!nextState.isFinished) {
+        const nav=document.querySelector('.navbar');const off=nav&&getComputedStyle(nav).position==='sticky'?nav.offsetHeight:0;window.scrollTo({top:Math.max(0,quizView.getBoundingClientRect().top+window.scrollY-off-8)});
+      }
     }
   });
 
@@ -1700,7 +1752,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function saveAttemptHistory(summary) {
-    const history = JSON.parse(localStorage.getItem('biofisica_history') || '[]');
+    const history = (store.getJSON('biofisica_history', null) || []);
     const attempt = {
       date: new Date().toLocaleDateString('pt-PT', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' }),
       mode: quiz.mode,
@@ -1716,7 +1768,7 @@ document.addEventListener('DOMContentLoaded', () => {
       confidence: confidenceStatsFromAnswers(summary.answers)
     };
     history.unshift(attempt);
-    localStorage.setItem('biofisica_history', JSON.stringify(history.slice(0, 30)));
+    store.set('biofisica_history', JSON.stringify(history.slice(0, 30)));
   }
 
   btnRetryQuiz.addEventListener('click', () => {
@@ -1746,7 +1798,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ];
 
   function getUnlockedBadges() {
-    return JSON.parse(localStorage.getItem('biofisica_badges') || '{}');
+    return (store.getJSON('biofisica_badges', null) || {});
   }
 
   function unlockBadge(badgeId) {
@@ -1865,6 +1917,10 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
     if (e.key === 'Escape') {
+      for (const [m, b] of [['modal-teacher-auth', 'btn-close-teacher-modal'], ['modal-repo-ids', 'btn-close-repo-ids-modal']]) {
+        const el = document.getElementById(m);
+        if (el && !el.classList.contains('hidden')) { document.getElementById(b).click(); return; }
+      }
       if (!modalReport.classList.contains('hidden')) {
         closeReportModal();
         return;
@@ -2204,10 +2260,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const accordionItem = document.createElement('div');
       accordionItem.className = 'accordion-item';
       accordionItem.innerHTML = `
-        <div class="accordion-header">
+        <button type="button" class="accordion-header" aria-expanded="false">
           <span>${topicMeta ? topicMeta.icon : '📖'} ${item.title} ${isUnlocked ? '' : '<span style="font-size:0.75rem; background:rgba(148,163,184,0.18); padding:2px 8px; border-radius:12px; margin-left:8px; color:var(--text-muted); border:1px solid rgba(148,163,184,0.3);">🔒 Questões Bloqueadas</span>'}</span>
           <span class="accordion-arrow">▼</span>
-        </div>
+        </button>
         <div class="accordion-body">
           ${bodyHtml}
           <div style="margin-top: 1rem; text-align: right;">
@@ -2230,11 +2286,14 @@ document.addEventListener('DOMContentLoaded', () => {
       hdr.addEventListener('click', () => {
         const item = hdr.parentElement;
         item.classList.toggle('active');
+        hdr.setAttribute('aria-expanded', item.classList.contains('active') ? 'true' : 'false');
       });
     });
 
     if (studyTopicsAccordion.firstElementChild) {
       studyTopicsAccordion.firstElementChild.classList.add('active');
+      const firstHdr = studyTopicsAccordion.firstElementChild.querySelector('.accordion-header');
+      if (firstHdr) firstHdr.setAttribute('aria-expanded', 'true');
     }
 
     document.querySelectorAll('.btn-study-practice').forEach(btn => {
@@ -2513,7 +2572,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function renderStatsSection() {
     renderBadgesSection();
 
-    const history = JSON.parse(localStorage.getItem('biofisica_history') || '[]');
+    const history = (store.getJSON('biofisica_history', null) || []);
     if (history.length === 0) {
       statsContent.innerHTML = `
         <div class="empty-state">

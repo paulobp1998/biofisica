@@ -34,6 +34,7 @@ const Metrics = (() => {
   }
 
   function send(payload) {
+    if (!/\.github\.io$/.test(location.hostname)) return;
     if (!isEnabled() || isTeacher()) return;
     try {
       fetch(METRICS_ENDPOINT, {

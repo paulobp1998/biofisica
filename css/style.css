@@ -14,8 +14,11 @@
   --text-secondary: #475569;
   --text-muted: #64748b;
   
-  --color-brand: #0284c7; /* Azul clínico moderno */
-  --color-brand-hover: #0369a1;
+  --color-brand: #0369a1; /* Azul clínico moderno */
+  --color-brand-hover: #075985;
+  --border-color: var(--border-subtle);
+  --bg-card: var(--bg-surface);
+  --radius-xs: 6px;
   --color-brand-light: #e0f2fe;
   
   --color-success: #059669; /* Verde esmeralda */
@@ -86,7 +89,7 @@
 }
 
 html {
-  font-size: calc(16px * var(--font-scale, 1));
+  font-size: calc(100% * var(--font-scale, 1));
 }
 
 body {
@@ -1252,6 +1255,11 @@ body {
   align-items: center;
   user-select: none;
   transition: background-color 0.2s;
+  width: 100%;
+  border: 0;
+  text-align: left;
+  color: inherit;
+  font-family: inherit;
 }
 
 .accordion-header:hover {
@@ -1680,10 +1688,6 @@ body {
   padding: 0.15rem 0.55rem;
   font-size: 0.75rem;
   font-weight: 700;
-}
-
-.btn-hero-count.count-danger {
-  background-color: var(--color-danger);
 }
 
 .btn-hero-count.count-gold {
@@ -5007,4 +5011,46 @@ sub, sup { line-height: 0; }
   .bases-step-title { font-size: 0.78rem; }
   .bases-options { grid-template-columns: 1fr; }
   .bases-lesson-title { font-size: 1.2rem; }
+}
+
+/* ==========================================================================
+   Revisão de UX/acessibilidade (modais, navbar móvel, contraste, foco)
+   ========================================================================== */
+.modal-card { max-height: calc(100vh - 2rem); max-height: calc(100dvh - 2rem); display: flex; flex-direction: column; }
+.modal-card > .modal-body { overflow-y: auto; min-height: 0; flex: 1 1 auto; }
+.modal-header, .modal-footer { flex-shrink: 0; }
+
+.btn-secondary { background: var(--bg-subtle); color: var(--text-secondary); border-color: var(--border-subtle); }
+.form-control { width: 100%; padding: 0.6rem 0.8rem; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); background: var(--bg-surface); color: var(--text-primary); font-size: 1rem; }
+
+button, input, select, textarea { font-family: inherit; }
+:focus-visible { outline: 3px solid var(--border-focus); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+
+#btn-nav-arena { border-color: #8b5cf6; color: #6d28d9; font-weight: 700; }
+[data-theme="dark"] #btn-nav-arena { color: #c4b5fd; }
+#btn-nav-teacher { display: inline-flex; align-items: center; gap: 0.35rem; border-color: #f59e0b; }
+#btn-nav-teacher, #link-footer-teacher { color: #b45309; }
+[data-theme="dark"] #btn-nav-teacher, [data-theme="dark"] #link-footer-teacher { color: #fbbf24; }
+
+@media (max-width: 640px) {
+  .session-options-grid, .mode-switch-grid { grid-template-columns: 1fr; }
+  .modal-header, .modal-body { padding: 1rem; }
+
+  .navbar { position: static; }
+  .brand-subtitle, .kbd-shortcut, #btn-nav-teacher { display: none; }
+  .nav-container { padding: 0.5rem 0.75rem; }
+  .nav-actions { gap: 0.35rem; }
+  .nav-actions .btn-pill, .btn-search-nav, .streak-badge { padding: 0.45rem 0.6rem; font-size: 0.8rem; }
+  .quiz-ai-banner { font-size: 0.75rem; padding: 0.35rem 0.6rem; }
+
+  .btn-star, .modal-close, .cluny-notice-close { min-width: 44px; min-height: 44px; }
+  .btn-font-scale { min-width: 40px; min-height: 40px; }
+  .confidence-chip, .btn-sm { min-height: 44px; }
+  .report-comment, .timer-select, .worksheet-select { font-size: 16px; }
+  .timer-config-row { flex-wrap: wrap; gap: 0.5rem; }
+  .timer-select { max-width: 100%; }
 }
