@@ -58,7 +58,7 @@ const TOPICS_DATA = [
 // Define quais os tópicos atualmente acessíveis aos estudantes (1 a 5).
 // Tópicos 1 a 3 ativos e disponibilizados (200 questões cada).
 // Tópicos 4 e 5 temporariamente bloqueados pelo docente.
-const UNLOCKED_TOPIC_IDS = [1, 2, 3];
+const UNLOCKED_TOPIC_IDS = [1, 2, 3, 4];
 
 // Banco integral de questões por tópico (totalmente preservado para desbloqueio futuro)
 const ALL_TOPIC_COLLECTIONS = {
