@@ -132,6 +132,7 @@ class ArenaUI {
     this.quizSyncing = false;
 
     this.initDOMElements();
+    this.populateTopicSelects();
     this.initEventListeners();
     this.initEngineListeners();
     this.net.on('connection_status', (s) => this.showConnectionBanner(s.connected));
@@ -405,7 +406,62 @@ class ArenaUI {
     banner.style.display = isUp ? 'none' : 'block';
   }
 
+  // Preenche os seletores de tópico da Arena a partir de UNLOCKED_TOPIC_IDS,
+  // para que acompanhem automaticamente os tópicos abertos aos alunos.
+  populateTopicSelects() {
+    if (typeof TOPICS_DATA === 'undefined') return;
+    const unlocked = typeof UNLOCKED_TOPIC_IDS !== 'undefined' ? UNLOCKED_TOPIC_IDS : [1];
+    const active = typeof QUESTIONS_DATA !== 'undefined' ? QUESTIONS_DATA : [];
+    const countFor = (id) => active.filter(q => q.topicId === id).length;
+    const list = unlocked.length > 1
+      ? `${unlocked.slice(0, -1).join(', ')} e ${unlocked[unlocked.length - 1]}`
+      : String(unlocked[0]);
+    const opt = (value, text, selected = false) => {
+      const o = document.createElement('option');
+      o.value = value;
+      o.textContent = text;
+      if (selected) o.selected = true;
+      return o;
+    };
+
+    // Configuração da sala: sorteio só dos tópicos ativos, em partes iguais
+    if (this.arenaConfigTopic) {
+      const prev = this.arenaConfigTopic.value;
+      this.arenaConfigTopic.innerHTML = '';
+      if (unlocked.length > 1) {
+        this.arenaConfigTopic.appendChild(opt('all',
+          `🎯 Todos os Tópicos Ativos (${list}) - ${active.length} Questões, em partes iguais por tópico`));
+      }
+      unlocked.forEach(id => {
+        const t = TOPICS_DATA.find(item => item.id === id);
+        if (t) this.arenaConfigTopic.appendChild(opt(String(id), `Tópico ${id}: ${t.shortTitle} (${countFor(id)} Questões)`));
+      });
+      const values = Array.from(this.arenaConfigTopic.options, o => o.value);
+      this.arenaConfigTopic.value = values.includes(prev) ? prev : values[0];
+    }
+
+    // Filtro da seleção manual de perguntas
+    if (this.arenaCustomFilterTopic) {
+      const prev = this.customFilterTopic || 'all-unlocked';
+      const all = typeof ALL_TOPIC_COLLECTIONS !== 'undefined'
+        ? Object.values(ALL_TOPIC_COLLECTIONS).reduce((n, arr) => n + (arr ? arr.length : 0), 0)
+        : 0;
+      this.arenaCustomFilterTopic.innerHTML = '';
+      this.arenaCustomFilterTopic.appendChild(opt('all-unlocked', `🎯 Tópicos Ativos (Tópicos ${list} - ${active.length} Questões)`));
+      TOPICS_DATA.forEach(t => {
+        const open = unlocked.includes(t.id);
+        const n = typeof ALL_TOPIC_COLLECTIONS !== 'undefined' && ALL_TOPIC_COLLECTIONS[t.id] ? ALL_TOPIC_COLLECTIONS[t.id].length : 0;
+        this.arenaCustomFilterTopic.appendChild(opt(String(t.id),
+          open ? `Tópico ${t.id}: ${t.shortTitle} (${n})` : `🔒 Tópico ${t.id}: ${t.shortTitle} (${n}, bloqueado aos alunos)`));
+      });
+      this.arenaCustomFilterTopic.appendChild(opt('all', `🌐 Banco Integral (Tópicos 1 a ${TOPICS_DATA.length} - ${all} Questões)`));
+      const values = Array.from(this.arenaCustomFilterTopic.options, o => o.value);
+      this.arenaCustomFilterTopic.value = values.includes(prev) ? prev : 'all-unlocked';
+    }
+  }
+
   showScreen(screenId) {
+    if (screenId === 'hostConfig') this.populateTopicSelects();
     Object.values(this.screens).forEach(scr => {
       if (scr) scr.classList.add('hidden');
     });
