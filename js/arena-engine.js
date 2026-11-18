@@ -248,29 +248,65 @@ class ArenaEngine {
     });
   }
 
+  // Sorteio aleatório: com vários tópicos, as perguntas repartem-se em partes iguais
+  // pelos tópicos ativos (ex.: 20 perguntas e 4 tópicos = 5 por tópico). Se a divisão
+  // não for exata, as perguntas a mais vão para tópicos sorteados (no máximo +1 cada).
   pickQuestions(topicId, count) {
-    let pool = [];
-    if ((topicId === 'all' || topicId === 'all-unlocked') && typeof QUESTIONS_DATA !== 'undefined') {
-      pool = [...QUESTIONS_DATA];
-    } else if (String(topicId).includes(',') && typeof QUESTIONS_DATA !== 'undefined') {
-      // Combinação de tópicos (ex.: "1,2")
-      const ids = String(topicId).split(',').map(Number);
-      pool = QUESTIONS_DATA.filter(q => ids.includes(q.topicId));
-    } else if (typeof ALL_TOPIC_COLLECTIONS !== 'undefined' && ALL_TOPIC_COLLECTIONS[topicId]) {
-      pool = [...ALL_TOPIC_COLLECTIONS[topicId]];
-    } else if (typeof TOPIC_1_QUESTIONS !== 'undefined') {
-      pool = [...TOPIC_1_QUESTIONS];
+    const unlocked = typeof UNLOCKED_TOPIC_IDS !== 'undefined' ? UNLOCKED_TOPIC_IDS : [1];
+    let topicIds;
+    if (topicId === 'all' || topicId === 'all-unlocked') {
+      topicIds = [...unlocked];
+    } else if (String(topicId).includes(',')) {
+      topicIds = String(topicId).split(',').map(Number);
+    } else {
+      topicIds = [Number(topicId)];
     }
 
-    if (pool.length === 0) return [];
+    const shuffle = (arr) => {
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    };
 
-    // Embaralhar com algoritmo Fisher-Yates
-    for (let i = pool.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [pool[i], pool[j]] = [pool[j], pool[i]];
+    // Banco de cada tópico (sem as perguntas eliminadas pelo docente)
+    const poolFor = (id) => {
+      if (typeof QUESTIONS_DATA !== 'undefined' && unlocked.includes(id)) {
+        return QUESTIONS_DATA.filter(q => q.topicId === id);
+      }
+      if (typeof ALL_TOPIC_COLLECTIONS !== 'undefined' && Array.isArray(ALL_TOPIC_COLLECTIONS[id])) {
+        const excluded = typeof getExcludedQuestionIds === 'function' ? getExcludedQuestionIds() : new Set();
+        return ALL_TOPIC_COLLECTIONS[id].filter(q => !excluded.has(q.id));
+      }
+      return [];
+    };
+
+    let pools = topicIds.map(id => shuffle([...poolFor(id)])).filter(p => p.length > 0);
+    if (pools.length === 0 && typeof TOPIC_1_QUESTIONS !== 'undefined') {
+      pools = [shuffle([...TOPIC_1_QUESTIONS])];
+    }
+    if (pools.length === 0) return [];
+
+    // Quota igual por tópico; o resto vai para tópicos sorteados
+    shuffle(pools);
+    const base = Math.floor(count / pools.length);
+    const extra = count % pools.length;
+    const picked = [];
+    pools.forEach((pool, i) => {
+      picked.push(...pool.splice(0, base + (i < extra ? 1 : 0)));
+    });
+
+    // Se algum tópico não tiver perguntas suficientes, completa com os restantes, à vez
+    let missing = count - picked.length;
+    while (missing > 0 && pools.some(p => p.length > 0)) {
+      for (const pool of pools) {
+        if (missing === 0) break;
+        if (pool.length > 0) { picked.push(pool.shift()); missing--; }
+      }
     }
 
-    return pool.slice(0, Math.min(count, pool.length));
+    return shuffle(picked);
   }
 
   getTopicName(topicId) {
