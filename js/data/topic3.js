@@ -143,17 +143,17 @@ const TOPIC_3_QUESTIONS = [
   {
     "id": 3008,
     "topicId": 3,
-    "question": "Qual é a unidade de viscosidade no sistema c.g.s.?",
+    "question": "Qual destas unidades é uma unidade de viscosidade?",
     "options": [
-      "O dyn/cm².",
+      "O N/m².",
       "O cm³/s.",
       "O g/cm³.",
       "O poise."
     ],
     "correctIndex": 3,
-    "explanation": "No sistema c.g.s., a viscosidade exprime-se em poise. As outras opções são unidades de pressão, caudal e densidade.",
+    "explanation": "A viscosidade exprime-se em poise (sistema c.g.s.) ou em poiseuille (1 poiseuille = 10 poise). As outras opções são unidades de pressão, caudal e densidade.",
     "distractorAnalysis": [
-      "Está incorreta: o dyn/cm² mede pressão e não viscosidade.",
+      "Está incorreta: o N/m² mede pressão (força por unidade de área) e não viscosidade.",
       "Está incorreta: o cm³/s mede caudal, isto é, volume por unidade de tempo.",
       "Está incorreta: o g/cm³ mede densidade, grandeza diferente da viscosidade."
     ],
@@ -988,7 +988,7 @@ const TOPIC_3_QUESTIONS = [
     "question": "Na fórmula de Reynolds, Re = v · ρ · d / η, usam-se as unidades c.g.s. da aula. Qual é a combinação correta de unidades para v, ρ, d e η, por esta ordem?",
     "options": [
       "cm³/s, g/cm³, cm e poise",
-      "cm/s, g/cm³, cm e dyn/cm²",
+      "cm/s, g/cm³, cm e N/m²",
       "cm/s, g/cm³, cm e poise",
       "cm/s, g/cm³, cm² e poise"
     ],
@@ -996,7 +996,7 @@ const TOPIC_3_QUESTIONS = [
     "explanation": "Em unidades c.g.s., a velocidade mede-se em cm/s, a densidade em g/cm³, o diâmetro em cm e a viscosidade em poise. Os valores devem ser todos usados nestas unidades para que o resultado de Re seja correto.",
     "distractorAnalysis": [
       "Está incorreta: cm³/s é a unidade de caudal e não de velocidade; v é a velocidade média do líquido, em cm/s.",
-      "Está incorreta: dyn/cm² é unidade de pressão; a viscosidade mede-se em poise.",
+      "Está incorreta: N/m² é unidade de pressão; a viscosidade mede-se em poise.",
       "Está incorreta: d é um comprimento (o diâmetro do tubo) e mede-se em cm; cm² seria uma área."
     ],
     "nursingApplication": "Antes de calcular Re para um cateter, o diâmetro indicado em milímetros tem de ser convertido para centímetros, para ser coerente com as restantes unidades."
@@ -3052,7 +3052,7 @@ const TOPIC_3_QUESTIONS = [
     "options": [
       "A velocidade do fluido, v = V / t, que se exprime em cm/s",
       "A viscosidade, η = V / t, que se exprime em poise",
-      "A diferença de pressão, ΔP = V / t, que se exprime em dyn/cm²",
+      "A diferença de pressão, ΔP = V / t, que se exprime em N/m²",
       "O caudal, D = V / t, que se pode exprimir em mL/h"
     ],
     "correctIndex": 3,
@@ -3224,14 +3224,14 @@ const TOPIC_3_QUESTIONS = [
       "20 mL/min",
       "20 cm/s",
       "20 poise",
-      "20 dyn/cm²"
+      "20 N/m²"
     ],
     "correctIndex": 0,
     "explanation": "O caudal é um volume por unidade de tempo (mL/min, mL/h, cm³/s). A velocidade (cm/s) descreve a rapidez com que as partículas avançam, que é outra grandeza.",
     "distractorAnalysis": [
       "Está incorreta: cm/s é uma unidade de velocidade (deslocamento por tempo), não de caudal.",
       "Está incorreta: o poise é a unidade c.g.s. de viscosidade.",
-      "Está incorreta: dyn/cm² é uma unidade de pressão (força por área)."
+      "Está incorreta: N/m² é uma unidade de pressão (força por área)."
     ],
     "nursingApplication": "Distinguir caudal (mL/h) de velocidade evita erros ao interpretar a programação de uma bomba infusora."
   },
@@ -3829,7 +3829,7 @@ const TOPIC_3_QUESTIONS = [
   {
     "id": 3182,
     "topicId": 3,
-    "question": "Um líquido de viscosidade 0,04 poise escoa em regime laminar num tubo horizontal de raio 0,1 cm e comprimento 8 cm, com ΔP = 640 dyn/cm². Qual o caudal? (π ≈ 3,14)",
+    "question": "Um líquido de viscosidade 0,004 poiseuille escoa em regime laminar num tubo horizontal de raio 0,1 cm e comprimento 8 cm, com ΔP = 64 N/m². Qual o caudal? (π ≈ 3,14)",
     "figure": {
       "type": "tube",
       "items": [
@@ -3839,13 +3839,13 @@ const TOPIC_3_QUESTIONS = [
           "flow": "D = ?",
           "inside": [
             "R = 0,1 cm",
-            "η = 0,04 poise",
-            "ΔP = 640 dyn/cm²"
+            "η = 0,004 poiseuille",
+            "ΔP = 64 N/m²"
           ],
           "L": "L = 8 cm"
         }
       ],
-      "alt": "Tubo cilíndrico horizontal de raio 0,1 cm e comprimento 8 cm, com líquido de viscosidade 0,04 poise, diferença de pressão 640 dyn/cm² e caudal desconhecido."
+      "alt": "Tubo cilíndrico horizontal de raio 0,1 cm e comprimento 8 cm, com líquido de viscosidade 0,004 poiseuille, diferença de pressão 64 N/m² e caudal desconhecido."
     },
     "options": [
       "1,26 cm³/s",
@@ -3854,11 +3854,11 @@ const TOPIC_3_QUESTIONS = [
       "0,628 cm³/s"
     ],
     "correctIndex": 1,
-    "explanation": "Aplica-se D = π · ΔP · R⁴ / (8 · η · L) com tudo em unidades c.g.s.; o caudal vem em cm³/s. O raio, e não o diâmetro, é elevado à 4.ª potência.",
+    "explanation": "Aplica-se D = π · ΔP · R⁴ / (8 · η · L) com ΔP em N/m² e η em poiseuille (o mesmo sistema), com R e L em cm; assim, o caudal vem em cm³/s. O raio, e não o diâmetro, é elevado à 4.ª potência.",
     "solution": [
-      "Dados: η = 0,04 poise; R = 0,1 cm; L = 8 cm; ΔP = 640 dyn/cm²; π ≈ 3,14",
+      "Dados: η = 0,004 poiseuille; R = 0,1 cm; L = 8 cm; ΔP = 64 N/m²; π ≈ 3,14",
       "Fórmula: D = π · ΔP · R⁴ / (8 · η · L)",
-      "Substituição: D = 3,14 × 640 × 0,1⁴ / (8 × 0,04 × 8) = 0,201 / 2,56",
+      "Substituição: D = 3,14 × 64 × 0,1⁴ / (8 × 0,004 × 8) = 0,0201 / 0,256",
       "Resultado: 0,0785 cm³/s"
     ],
     "distractorAnalysis": [
@@ -3871,7 +3871,7 @@ const TOPIC_3_QUESTIONS = [
   {
     "id": 3183,
     "topicId": 3,
-    "question": "Um cateter fino tem raio 0,5 mm e comprimento 4 cm. Um líquido de viscosidade 0,03 poise escoa em regime laminar com ΔP = 800 dyn/cm². Qual o caudal em cm³/s? (π ≈ 3,14; 1 mm = 0,1 cm)",
+    "question": "Um cateter fino tem raio 0,5 mm e comprimento 4 cm. Um líquido de viscosidade 0,003 poiseuille escoa em regime laminar com ΔP = 80 N/m². Qual o caudal em cm³/s? (π ≈ 3,14; 1 mm = 0,1 cm)",
     "figure": {
       "type": "tube",
       "items": [
@@ -3881,13 +3881,13 @@ const TOPIC_3_QUESTIONS = [
           "flow": "D = ?",
           "inside": [
             "R = 0,5 mm",
-            "η = 0,03 poise",
-            "ΔP = 800 dyn/cm²"
+            "η = 0,003 poiseuille",
+            "ΔP = 80 N/m²"
           ],
           "L": "L = 4 cm"
         }
       ],
-      "alt": "Cateter cilíndrico de raio 0,5 mm e comprimento 4 cm, com líquido de viscosidade 0,03 poise, diferença de pressão 800 dyn/cm² e caudal desconhecido."
+      "alt": "Cateter cilíndrico de raio 0,5 mm e comprimento 4 cm, com líquido de viscosidade 0,003 poiseuille, diferença de pressão 80 N/m² e caudal desconhecido."
     },
     "options": [
       "164 cm³/s",
@@ -3896,12 +3896,12 @@ const TOPIC_3_QUESTIONS = [
       "0,327 cm³/s"
     ],
     "correctIndex": 1,
-    "explanation": "Primeiro converte-se o raio: 0,5 mm = 0,05 cm. Depois aplica-se D = π · ΔP · R⁴ / (8 · η · L) em unidades c.g.s.",
+    "explanation": "Primeiro converte-se o raio: 0,5 mm = 0,05 cm. Depois aplica-se D = π · ΔP · R⁴ / (8 · η · L), com ΔP em N/m² e η em poiseuille (o mesmo sistema), com R e L em cm.",
     "solution": [
-      "Dados: R = 0,5 mm; L = 4 cm; η = 0,03 poise; ΔP = 800 dyn/cm²; π ≈ 3,14",
+      "Dados: R = 0,5 mm; L = 4 cm; η = 0,003 poiseuille; ΔP = 80 N/m²; π ≈ 3,14",
       "Conversão: R = 0,5 mm = 0,05 cm",
       "Fórmula: D = π · ΔP · R⁴ / (8 · η · L)",
-      "Substituição: D = 3,14 × 800 × 0,05⁴ / (8 × 0,03 × 4) = 0,0157 / 0,96",
+      "Substituição: D = 3,14 × 80 × 0,05⁴ / (8 × 0,003 × 4) = 0,00157 / 0,096",
       "Resultado: 0,0164 cm³/s"
     ],
     "distractorAnalysis": [
@@ -3977,19 +3977,19 @@ const TOPIC_3_QUESTIONS = [
   {
     "id": 3187,
     "topicId": 3,
-    "question": "Em unidades c.g.s. (ΔP em dyn/cm², D em cm³/s, η em poise), em que unidade se exprime a resistência hidráulica?",
+    "question": "Com as unidades do exercício da aula (ΔP em N/m², D em cm³/s, η em poiseuille, R e L em cm), em que unidade se exprime a resistência hidráulica?",
     "options": [
-      "dyn/cm²",
-      "poise/cm³",
+      "N/m²",
+      "poiseuille/cm³",
       "cm³/s",
-      "poise · cm³"
+      "poiseuille · cm³"
     ],
     "correctIndex": 1,
-    "explanation": "R<sub>h</sub> = 8 · η · L / (π · R⁴) tem unidades de poise · cm / cm⁴, ou seja, poise/cm³.",
+    "explanation": "R<sub>h</sub> = 8 · η · L / (π · R⁴) tem unidades de poiseuille · cm / cm⁴, ou seja, poiseuille/cm³ (o mesmo que (N/m²) / (cm³/s), de R<sub>h</sub> = ΔP / D).",
     "distractorAnalysis": [
       "Está incorreta: é a unidade de pressão, não de resistência hidráulica.",
       "Está incorreta: é a unidade de caudal.",
-      "Está incorreta: R<sub>h</sub> = 8 · η · L / (π · R⁴) tem poise·cm / cm⁴ = poise/cm³; o cm³ está no denominador."
+      "Está incorreta: R<sub>h</sub> = 8 · η · L / (π · R⁴) tem poiseuille · cm / cm⁴ = poiseuille/cm³; o cm³ está no denominador."
     ],
     "nursingApplication": "Perceber as unidades da resistência hidráulica ajuda a verificar se um cálculo de ΔP a partir de R<sub>h</sub> e D está dimensionalmente correto."
   },
@@ -4059,14 +4059,14 @@ const TOPIC_3_QUESTIONS = [
   {
     "id": 3191,
     "topicId": 3,
-    "question": "Um vaso tem resistência hidráulica de 400 poise/cm³. O raio dilata-se para o dobro (L e η iguais). Qual passa a ser a resistência hidráulica?",
+    "question": "Um vaso tem resistência hidráulica de 400 poiseuille/cm³. O raio dilata-se para o dobro (L e η iguais). Qual passa a ser a resistência hidráulica?",
     "figure": {
       "type": "tube",
       "items": [
         {
           "name": "Antes",
           "r": 0.5,
-          "flow": "R<sub>h</sub> = 400 poise/cm³",
+          "flow": "R<sub>h</sub> = 400 poiseuille/cm³",
           "inside": [
             "raio R"
           ]
@@ -4080,21 +4080,21 @@ const TOPIC_3_QUESTIONS = [
           ]
         }
       ],
-      "alt": "Dois segmentos de vaso com igual comprimento: antes, com raio R e resistência hidráulica de 400 poise/cm³; depois, com raio 2R e resistência desconhecida."
+      "alt": "Dois segmentos de vaso com igual comprimento: antes, com raio R e resistência hidráulica de 400 poiseuille/cm³; depois, com raio 2R e resistência desconhecida."
     },
     "options": [
-      "200 poise/cm³",
-      "100 poise/cm³",
-      "50 poise/cm³",
-      "25 poise/cm³"
+      "200 poiseuille/cm³",
+      "100 poiseuille/cm³",
+      "50 poiseuille/cm³",
+      "25 poiseuille/cm³"
     ],
     "correctIndex": 3,
     "explanation": "R<sub>h</sub> é inversamente proporcional a R⁴. Com o dobro do raio, R<sub>h</sub> fica dividida por 2⁴ = 16.",
     "solution": [
-      "Dados: R<sub>h1</sub> = 400 poise/cm³; R<sub>2</sub> = 2 · R<sub>1</sub>",
+      "Dados: R<sub>h1</sub> = 400 poiseuille/cm³; R<sub>2</sub> = 2 · R<sub>1</sub>",
       "Fórmula: R<sub>h2</sub> = R<sub>h1</sub> · (R<sub>1</sub> / R<sub>2</sub>)⁴",
       "Substituição: R<sub>h2</sub> = 400 / 2⁴ = 400 / 16",
-      "Resultado: 25 poise/cm³"
+      "Resultado: 25 poiseuille/cm³"
     ],
     "distractorAnalysis": [
       "Está incorreta: dividiu apenas por 2, tratando R<sub>h</sub> como inversamente proporcional ao raio.",
@@ -4106,7 +4106,7 @@ const TOPIC_3_QUESTIONS = [
   {
     "id": 3192,
     "topicId": 3,
-    "question": "Num segmento de tubo em regime laminar, a diferença de pressão entre os extremos é de 900 dyn/cm² e o caudal é de 0,45 cm³/s. Qual é a resistência hidráulica?",
+    "question": "Num segmento de tubo em regime laminar, a diferença de pressão entre os extremos é de 900 N/m² e o caudal é de 0,45 cm³/s. Qual é a resistência hidráulica?",
     "figure": {
       "type": "tube",
       "items": [
@@ -4115,26 +4115,26 @@ const TOPIC_3_QUESTIONS = [
           "r": 0.5,
           "flow": "D = 0,45 cm³/s",
           "inside": [
-            "ΔP = 900 dyn/cm²",
+            "ΔP = 900 N/m²",
             "R<sub>h</sub> = ?"
           ]
         }
       ],
-      "alt": "Segmento de tubo com diferença de pressão de 900 dyn/cm², caudal de 0,45 cm³/s e resistência hidráulica desconhecida."
+      "alt": "Segmento de tubo com diferença de pressão de 900 N/m², caudal de 0,45 cm³/s e resistência hidráulica desconhecida."
     },
     "options": [
-      "2000 poise/cm³",
-      "405 poise/cm³",
-      "0,0005 poise/cm³",
-      "20 poise/cm³"
+      "2000 poiseuille/cm³",
+      "405 poiseuille/cm³",
+      "0,0005 poiseuille/cm³",
+      "20 poiseuille/cm³"
     ],
     "correctIndex": 0,
-    "explanation": "De ΔP = R<sub>h</sub> · D resulta R<sub>h</sub> = ΔP / D, em poise/cm³ se ΔP estiver em dyn/cm² e D em cm³/s.",
+    "explanation": "De ΔP = R<sub>h</sub> · D resulta R<sub>h</sub> = ΔP / D, em poiseuille/cm³ se ΔP estiver em N/m² e D em cm³/s.",
     "solution": [
-      "Dados: ΔP = 900 dyn/cm²; D = 0,45 cm³/s",
+      "Dados: ΔP = 900 N/m²; D = 0,45 cm³/s",
       "Fórmula: R<sub>h</sub> = ΔP / D",
       "Substituição: R<sub>h</sub> = 900 / 0,45",
-      "Resultado: 2000 poise/cm³"
+      "Resultado: 2000 poiseuille/cm³"
     ],
     "distractorAnalysis": [
       "Está incorreta: multiplicou ΔP por D (900 × 0,45); R<sub>h</sub> = ΔP / D.",
@@ -4146,20 +4146,20 @@ const TOPIC_3_QUESTIONS = [
   {
     "id": 3193,
     "topicId": 3,
-    "question": "Um segmento tem resistência hidráulica de 500 poise/cm³ e é percorrido por um caudal de 0,6 cm³/s em regime laminar. Qual a diferença de pressão entre os extremos?",
+    "question": "Um segmento tem resistência hidráulica de 500 poiseuille/cm³ e é percorrido por um caudal de 0,6 cm³/s em regime laminar. Qual a diferença de pressão entre os extremos?",
     "options": [
-      "833 dyn/cm²",
-      "300 dyn/cm²",
-      "0,0012 dyn/cm²",
-      "3000 dyn/cm²"
+      "833 N/m²",
+      "300 N/m²",
+      "0,0012 N/m²",
+      "3000 N/m²"
     ],
     "correctIndex": 1,
     "explanation": "ΔP = R<sub>h</sub> · D: o produto da resistência hidráulica pelo caudal dá a diferença de pressão necessária.",
     "solution": [
-      "Dados: R<sub>h</sub> = 500 poise/cm³; D = 0,6 cm³/s",
+      "Dados: R<sub>h</sub> = 500 poiseuille/cm³; D = 0,6 cm³/s",
       "Fórmula: ΔP = R<sub>h</sub> · D",
       "Substituição: ΔP = 500 × 0,6",
-      "Resultado: 300 dyn/cm²"
+      "Resultado: 300 N/m²"
     ],
     "distractorAnalysis": [
       "Está incorreta: dividiu R<sub>h</sub> por D (500 / 0,6); ΔP = R<sub>h</sub> · D.",
@@ -4171,7 +4171,7 @@ const TOPIC_3_QUESTIONS = [
   {
     "id": 3194,
     "topicId": 3,
-    "question": "Entre os extremos de um segmento com resistência hidráulica de 750 poise/cm³ existe uma diferença de pressão de 1500 dyn/cm² (regime laminar). Qual é o caudal?",
+    "question": "Entre os extremos de um segmento com resistência hidráulica de 750 poiseuille/cm³ existe uma diferença de pressão de 1500 N/m² (regime laminar). Qual é o caudal?",
     "options": [
       "1 125 000 cm³/s",
       "0,5 cm³/s",
@@ -4181,7 +4181,7 @@ const TOPIC_3_QUESTIONS = [
     "correctIndex": 2,
     "explanation": "De ΔP = R<sub>h</sub> · D resulta D = ΔP / R<sub>h</sub>. A mesma ΔP produz um caudal menor se R<sub>h</sub> for maior.",
     "solution": [
-      "Dados: R<sub>h</sub> = 750 poise/cm³; ΔP = 1500 dyn/cm²",
+      "Dados: R<sub>h</sub> = 750 poiseuille/cm³; ΔP = 1500 N/m²",
       "Fórmula: D = ΔP / R<sub>h</sub>",
       "Substituição: D = 1500 / 750",
       "Resultado: 2 cm³/s"
@@ -4196,7 +4196,7 @@ const TOPIC_3_QUESTIONS = [
   {
     "id": 3195,
     "topicId": 3,
-    "question": "Um líquido de viscosidade 0,05 poise escoa em regime laminar num tubo de raio 0,15 cm e comprimento 12 cm. Qual a resistência hidráulica? (π ≈ 3,14)",
+    "question": "Um líquido de viscosidade 0,005 poiseuille escoa em regime laminar num tubo de raio 0,15 cm e comprimento 12 cm. Qual a resistência hidráulica? (π ≈ 3,14)",
     "figure": {
       "type": "tube",
       "items": [
@@ -4205,27 +4205,27 @@ const TOPIC_3_QUESTIONS = [
           "r": 0.6,
           "inside": [
             "R = 0,15 cm",
-            "η = 0,05 poise",
+            "η = 0,005 poiseuille",
             "R<sub>h</sub> = ?"
           ],
           "L": "L = 12 cm"
         }
       ],
-      "alt": "Tubo cilíndrico de raio 0,15 cm e comprimento 12 cm, com líquido de viscosidade 0,05 poise e resistência hidráulica desconhecida."
+      "alt": "Tubo cilíndrico de raio 0,15 cm e comprimento 12 cm, com líquido de viscosidade 0,005 poiseuille e resistência hidráulica desconhecida."
     },
     "options": [
-      "189 poise/cm³",
-      "67,9 poise/cm³",
-      "377 poise/cm³",
-      "3020 poise/cm³"
+      "18,9 poiseuille/cm³",
+      "6,79 poiseuille/cm³",
+      "37,7 poiseuille/cm³",
+      "302 poiseuille/cm³"
     ],
     "correctIndex": 3,
-    "explanation": "Aplica-se R<sub>h</sub> = 8 · η · L / (π · R⁴) em unidades c.g.s.; o raio, e não o diâmetro, é elevado à 4.ª potência.",
+    "explanation": "Aplica-se R<sub>h</sub> = 8 · η · L / (π · R⁴), com η em poiseuille e R e L em cm (resultado em poiseuille/cm³); o raio, e não o diâmetro, é elevado à 4.ª potência.",
     "solution": [
-      "Dados: η = 0,05 poise; R = 0,15 cm; L = 12 cm; π ≈ 3,14",
+      "Dados: η = 0,005 poiseuille; R = 0,15 cm; L = 12 cm; π ≈ 3,14",
       "Fórmula: R<sub>h</sub> = 8 · η · L / (π · R⁴)",
-      "Substituição: R<sub>h</sub> = 8 × 0,05 × 12 / (3,14 × 0,15⁴) = 4,8 / 0,00159",
-      "Resultado: 3020 poise/cm³"
+      "Substituição: R<sub>h</sub> = 8 × 0,005 × 12 / (3,14 × 0,15⁴) = 0,48 / 0,00159",
+      "Resultado: 302 poiseuille/cm³"
     ],
     "distractorAnalysis": [
       "Está incorreta: usou o diâmetro (0,3 cm) em vez do raio.",
@@ -4237,7 +4237,7 @@ const TOPIC_3_QUESTIONS = [
   {
     "id": 3196,
     "topicId": 3,
-    "question": "Um líquido de viscosidade 0,04 poise escoa em regime laminar com caudal de 0,02 cm³/s num tubo de raio 0,1 cm e comprimento 5 cm. Qual a diferença de pressão entre os extremos? (π ≈ 3,14)",
+    "question": "Um líquido de viscosidade 0,004 poiseuille escoa em regime laminar com caudal de 0,02 cm³/s num tubo de raio 0,1 cm e comprimento 5 cm. Qual a diferença de pressão entre os extremos? (π ≈ 3,14)",
     "figure": {
       "type": "tube",
       "items": [
@@ -4247,27 +4247,27 @@ const TOPIC_3_QUESTIONS = [
           "flow": "D = 0,02 cm³/s",
           "inside": [
             "R = 0,1 cm",
-            "η = 0,04 poise",
+            "η = 0,004 poiseuille",
             "ΔP = ?"
           ],
           "L": "L = 5 cm"
         }
       ],
-      "alt": "Tubo cilíndrico de raio 0,1 cm e comprimento 5 cm, com líquido de viscosidade 0,04 poise, caudal de 0,02 cm³/s e diferença de pressão desconhecida."
+      "alt": "Tubo cilíndrico de raio 0,1 cm e comprimento 5 cm, com líquido de viscosidade 0,004 poiseuille, caudal de 0,02 cm³/s e diferença de pressão desconhecida."
     },
     "options": [
-      "6,37 dyn/cm²",
-      "102 dyn/cm²",
-      "1,02 dyn/cm²",
-      "254 777 dyn/cm²"
+      "0,637 N/m²",
+      "10,2 N/m²",
+      "0,102 N/m²",
+      "25 478 N/m²"
     ],
     "correctIndex": 1,
     "explanation": "Calcula-se primeiro R<sub>h</sub> = 8 · η · L / (π · R⁴) e depois ΔP = R<sub>h</sub> · D.",
     "solution": [
-      "Dados: η = 0,04 poise; R = 0,1 cm; L = 5 cm; D = 0,02 cm³/s; π ≈ 3,14",
+      "Dados: η = 0,004 poiseuille; R = 0,1 cm; L = 5 cm; D = 0,02 cm³/s; π ≈ 3,14",
       "Fórmula: R<sub>h</sub> = 8 · η · L / (π · R⁴); ΔP = R<sub>h</sub> · D",
-      "Substituição: R<sub>h</sub> = 8 × 0,04 × 5 / (3,14 × 0,1⁴) ≈ 5096 poise/cm³; ΔP = 5096 × 0,02",
-      "Resultado: 102 dyn/cm²"
+      "Substituição: R<sub>h</sub> = 8 × 0,004 × 5 / (3,14 × 0,1⁴) ≈ 510 poiseuille/cm³; ΔP = 510 × 0,02",
+      "Resultado: 10,2 N/m²"
     ],
     "distractorAnalysis": [
       "Está incorreta: usou o diâmetro (0,2 cm) em vez do raio no cálculo de R<sub>h</sub>.",
