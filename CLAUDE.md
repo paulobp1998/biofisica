@@ -118,9 +118,8 @@ Change the path for other topics. If the file does not parse as JSON (e.g. trail
 
 For every new question, check: (1) the marked answer is correct; (2) no other option is also correct; (3) formulas, units, numbers and signs in the explanation and distractor analysis are right; (4) the nursing application is plausible.
 
-## Owner rules (apply to every session, local or cloud)
+## Owner rules (for cloud sessions; locally the owner's global CLAUDE.md also applies)
 
-- Billing: the owner pays only for Claude Pro and must never be billed beyond it. Use or suggest only `haiku`, `sonnet`, `opus`, plus any model with an unexpired dated entry in the owner's global CLAUDE.md. Never: Mythos, Fable (offer ended 2026-11-16), the `best` alias, fast mode, usage credits, extra usage. Set the model explicitly on every subagent. If the session runs on a non-included model, or anything mentions usage credits, extra usage or overage, stop and say so. Everything stays 100% free.
-- Session start: ask the lineup question (Quality-first recommended / Balanced / Economy) only when the first task is non-trivial, together with up to four clarifying questions in one card; otherwise use Quality-first silently. Before a large task, restate it in 1–2 lines and list assumptions. Unattended runs and subagents never ask.
-- Working mode: follow the `token-efficient` skill if available. Subagents: `scout` (haiku), `worker` (sonnet), `reviewer` (opus; use it to fact-check new questions). Talk to the owner in English.
+- Claude Pro only: `haiku`, `sonnet`, `opus`, set explicitly on every subagent (`reviewer` fact-checks new questions). If anything mentions usage credits, extra usage or overage, stop and say so. Everything stays 100% free.
+- Follow the `token-efficient` skill; ask its lineup question only when the first task is non-trivial. Talk to the owner in English.
 - Git (standing authorization): after changing this repo, run the validation above, commit (never secrets or .env), push, and if on a branch, open a PR and merge it into `main`. Stop and report on failing checks, conflicts or a rejected push. Never force-push.
