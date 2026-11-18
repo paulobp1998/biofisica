@@ -623,15 +623,14 @@ const BASES_LESSONS = [
           <tr><td>tempo</td><td>1 h = 60 min = 3600 s</td></tr>
           <tr><td>velocidade</td><td>1 m/s = 3,6 km/h (de km/h para m/s divide-se por 3,6)</td></tr>
           <tr><td>massa volúmica</td><td>1 g/cm³ = 1000 kg/m³</td></tr>
-          <tr><td>força (c.g.s.)</td><td>1 N = 10<sup>5</sup> dyn</td></tr>
-          <tr><td>pressão</td><td>1 N/m² = 10 dyn/cm²; 1 mmHg ≈ 133 N/m²</td></tr>
+          <tr><td>pressão</td><td>1 mmHg ≈ 133 N/m²</td></tr>
           <tr><td>viscosidade</td><td>1 poiseuille = 10 poise</td></tr>
         </tbody>
       </table></div>
-      <p>No Tópico 3 (Hidrodinâmica) usam-se sobretudo unidades c.g.s. (centímetro, grama, segundo):</p>
+      <p>No Tópico 3 (Hidrodinâmica) usam-se as unidades dos exercícios da aula:</p>
       <ul>
         <li><strong>Número de Reynolds:</strong> v em cm/s, ρ em g/cm³, d em cm e η em poise. Assim, Re não tem unidades.</li>
-        <li><strong>Lei de Poiseuille:</strong> com R e L em cm, o caudal sai em cm³/s, desde que ΔP e η venham do mesmo sistema: dyn/cm² com poise, ou N/m² com poiseuille (como no exercício da aula).</li>
+        <li><strong>Lei de Poiseuille:</strong> como no exercício da aula, ΔP em N/m², η em poiseuille (1 poiseuille = 10 poise), R e L em cm; o caudal sai em cm³/s e R<sub>h</sub> em poiseuille/cm³.</li>
         <li><strong>Diâmetro ou raio:</strong> Reynolds usa o diâmetro d; Poiseuille usa o raio R = d/2.</li>
       </ul>
       <p>Converte <strong>todos</strong> os dados antes de os pôr na fórmula.</p>`,

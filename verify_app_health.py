@@ -2,8 +2,8 @@
 """
 Comprehensive verification test suite for the Biofísica Enfermagem Web App.
 Verifies Topics 1 to 5 (200 qs each, 1000 questions in the bank).
-UNLOCKED_TOPIC_IDS = [1, 2, 3]: Topics 1 to 3 are active for students (600 questions);
-Topics 4-5 are written but stay locked until the teacher unlocks them.
+UNLOCKED_TOPIC_IDS = [1, 2, 3, 4]: Topics 1 to 4 are active for students (800 questions);
+Topic 5 is written but stays locked until the teacher unlocks it.
 """
 
 import json
@@ -101,8 +101,8 @@ def test_app():
     # 6. Check Unlocked Questions in questions-data.js
     with open("js/questions-data.js", "r", encoding="utf-8") as f:
         q_data_js = f.read()
-    assert "UNLOCKED_TOPIC_IDS = [1, 2, 3]" in q_data_js, "UNLOCKED_TOPIC_IDS not set to [1, 2, 3]"
-    print("✓ UNLOCKED_TOPIC_IDS = [1, 2, 3] verified in questions-data.js.")
+    assert "UNLOCKED_TOPIC_IDS = [1, 2, 3, 4]" in q_data_js, "UNLOCKED_TOPIC_IDS not set to [1, 2, 3, 4]"
+    print("✓ UNLOCKED_TOPIC_IDS = [1, 2, 3, 4] verified in questions-data.js.")
 
     # 7. Check Distractor Analysis and Options
     for q in all_questions:

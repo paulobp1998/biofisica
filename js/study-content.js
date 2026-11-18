@@ -289,7 +289,7 @@ const STUDY_BLOCKS = [
       { expr: 'D = V / t', note: 'caudal (débito); 1 cm³ = 1 mL' },
       { expr: 'D = π · ΔP · R⁴ / (8 · η · L)', note: 'lei de Poiseuille (regime laminar; R = raio)' },
       { expr: 'ΔP = R<sub>h</sub> · D', note: 'diferença de pressão e caudal' },
-      { expr: 'R<sub>h</sub> = 8 · η · L / (π · R⁴)', note: 'resistência hidráulica (poise/cm³)' }
+      { expr: 'R<sub>h</sub> = 8 · η · L / (π · R⁴)', note: 'resistência hidráulica (poiseuille/cm³)' }
     ],
     example: '750 mL em 5 h: D = 750 / 5 = 150 mL/h = 2,5 mL/min. Dois cateteres iguais exceto no raio (0,5 mm e 0,25 mm): o de raio duplo tem caudal 2⁴ = 16 vezes maior.',
     body: `
@@ -432,6 +432,6 @@ const GLOSSARY = [
   { t: 'Sons de Korotkoff', a: ['Korotkoff', 'pressão arterial'], d: 'Sons ouvidos na medição da pressão arterial, produzidos pelo fluxo turbulento na artéria parcialmente comprimida pela braçadeira.', c: 't3-circulacao' },
   { t: 'Caudal (D)', a: ['débito', 'D = V/t'], d: 'Volume de líquido que passa numa secção do condutor por unidade de tempo: D = V / t (1 cm³ = 1 mL).', c: 't3-poiseuille' },
   { t: 'Lei de Poiseuille', a: ['Poiseuille', 'R⁴'], d: 'D = π · ΔP · R⁴ / (8 · η · L), em regime laminar: o caudal é proporcional à 4.ª potência do raio.', c: 't3-poiseuille' },
-  { t: 'Resistência hidráulica (R<sub>h</sub>)', a: ['resistência hidráulica', 'R<sub>h</sub>', 'Rh'], d: 'R<sub>h</sub> = 8 · η · L / (π · R⁴), com ΔP = R<sub>h</sub> · D. Em poise/cm³ (c.g.s.).', c: 't3-poiseuille' },
+  { t: 'Resistência hidráulica (R<sub>h</sub>)', a: ['resistência hidráulica', 'R<sub>h</sub>', 'Rh'], d: 'R<sub>h</sub> = 8 · η · L / (π · R⁴), com ΔP = R<sub>h</sub> · D. Em poiseuille/cm³ (ΔP em N/m², D em cm³/s).', c: 't3-poiseuille' },
   { t: 'Gauge (G)', a: ['cateter', 'calibre do cateter'], d: 'Escala do calibre dos cateteres: quanto menor o número, maior o diâmetro (14G tem maior raio do que 22G).', c: 't3-poiseuille' }
 ];
