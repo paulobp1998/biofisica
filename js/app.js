@@ -589,6 +589,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
   renderDynamicTexts();
 
+  // Seletor de tópicos da ficha, gerado a partir dos tópicos abertos aos alunos
+  function renderWorksheetTopicOptions() {
+    if (!worksheetTopicSelect) return;
+    const ids = typeof UNLOCKED_TOPIC_IDS !== 'undefined' ? UNLOCKED_TOPIC_IDS : [1];
+    const prev = worksheetTopicSelect.value;
+    const list = ids.length > 1 ? `${ids.slice(0, -1).join(', ')} e ${ids[ids.length - 1]}` : String(ids[0]);
+    const opts = [];
+    if (ids.length > 1) {
+      opts.push(['all', `🎯 Simulação Geral (Tópicos ${list} - ${QUESTIONS_DATA.length} Questões, em partes iguais por tópico)`, false]);
+    }
+    TOPICS_DATA.forEach(t => {
+      const open = ids.includes(t.id);
+      const n = QUESTIONS_DATA.filter(q => q.topicId === t.id).length;
+      opts.push([String(t.id), open ? `Tópico ${t.id}: ${t.shortTitle} (Ativo - ${n} Questões)` : `🔒 Tópico ${t.id}: ${t.shortTitle} (Bloqueado)`, !open]);
+    });
+    opts.push(['starred', '⭐ Apenas Perguntas Marcadas com Estrela', false]);
+    worksheetTopicSelect.innerHTML = '';
+    opts.forEach(([value, text, disabled]) => {
+      const o = document.createElement('option');
+      o.value = value;
+      o.textContent = text;
+      o.disabled = disabled;
+      worksheetTopicSelect.appendChild(o);
+    });
+    const valid = opts.filter(o => !o[2]).map(o => o[0]);
+    worksheetTopicSelect.value = valid.includes(prev) ? prev : valid[0];
+  }
+  renderWorksheetTopicOptions();
+
   // Comunicado sobre IA: depois de lido, fica numa linha só (a preferência fica guardada no navegador)
   function initAiNotice() {
     const notice = document.getElementById('site-notice-banner');
@@ -2141,9 +2170,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let sheetTitle = 'Simulação Geral Abrangente de Biofísica';
 
     if (selectedTopic === 'all') {
-      pool = quiz.shuffleArray(QUESTIONS_DATA);
-      const isSingleTopic = typeof UNLOCKED_TOPIC_IDS !== 'undefined' && UNLOCKED_TOPIC_IDS.length === 1;
-      sheetTitle = isSingleTopic ? 'Ficha de Avaliação e Treino: Tópico 1' : 'Simulação Geral Abrangente de Biofísica';
+      // Partes iguais por tópico ativo (ex.: 20 questões e 4 tópicos = 5 por tópico)
+      pool = pickBalancedQuestions(UNLOCKED_TOPIC_IDS, count);
+      const isSingleTopic = UNLOCKED_TOPIC_IDS.length === 1;
+      sheetTitle = isSingleTopic ? `Ficha de Avaliação e Treino: Tópico ${UNLOCKED_TOPIC_IDS[0]}` : 'Simulação Geral Abrangente de Biofísica';
     } else if (selectedTopic === 'starred') {
       const starred = getStarred();
       if (starred.length === 0) {

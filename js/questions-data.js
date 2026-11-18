@@ -97,6 +97,41 @@ function refreshQuestionsDataExclusions() {
   });
 }
 
+// Sorteio equilibrado: reparte "count" perguntas em partes iguais pelos tópicos indicados
+// (ex.: 20 perguntas e 4 tópicos = 5 por tópico). Se a divisão não for exata, as perguntas
+// a mais vão para tópicos sorteados (no máximo +1 cada); se um tópico não tiver perguntas
+// suficientes, completa-se com os restantes. Usa só perguntas não eliminadas pelo docente.
+function pickBalancedQuestions(topicIds, count) {
+  const shuffle = (arr) => {
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  };
+  const excluded = getExcludedQuestionIds();
+  const poolFor = (id) => UNLOCKED_TOPIC_IDS.includes(id)
+    ? QUESTIONS_DATA.filter(q => q.topicId === id)
+    : (ALL_TOPIC_COLLECTIONS[id] || []).filter(q => !excluded.has(q.id));
+
+  const pools = shuffle(topicIds.map(id => shuffle([...poolFor(id)])).filter(p => p.length > 0));
+  if (pools.length === 0) return [];
+
+  const base = Math.floor(count / pools.length);
+  const extra = count % pools.length;
+  const picked = [];
+  pools.forEach((pool, i) => picked.push(...pool.splice(0, base + (i < extra ? 1 : 0))));
+
+  let missing = count - picked.length;
+  while (missing > 0 && pools.some(p => p.length > 0)) {
+    for (const pool of pools) {
+      if (missing === 0) break;
+      if (pool.length > 0) { picked.push(pool.shift()); missing--; }
+    }
+  }
+  return shuffle(picked);
+}
+
 // Resumo conciso de cada tópico para revisão rápida do estudante
 const TOPIC_SUMMARIES = [
   {

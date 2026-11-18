@@ -1270,12 +1270,8 @@
             <div class="teacher-filter-group" style="flex: 1.5; min-width: 250px;">
               <label class="teacher-filter-label" for="teacher-select-topic">Filtrar por Tópico Curricular:</label>
               <select id="teacher-select-topic" class="form-control" style="font-weight: 600;">
-                <option value="all" selected>Todos os Tópicos (1000 Questões nos Tópicos 1 a 5)</option>
-                <option value="1">Tópico 1: Força, Estado de Equilíbrio e Alavancas (200 Questões)</option>
-                <option value="2">Tópico 2: Elasticidade dos Corpos e Sistema Osteomedular (200 Questões)</option>
-                <option value="3">Tópico 3: Hidrodinâmica (200 Questões)</option>
-                <option value="4">🔒 Tópico 4: Hidrostática (200 Questões, bloqueado aos alunos)</option>
-                <option value="5">🔒 Tópico 5: Física Atómica e Nuclear (200 Questões, bloqueado aos alunos)</option>
+                <!-- Opções geradas em JS a partir de UNLOCKED_TOPIC_IDS -->
+                <option value="all" selected>Todos os Tópicos</option>
               </select>
             </div>
 
@@ -1619,13 +1615,8 @@
           <div class="worksheet-form-group">
             <label for="worksheet-topic-select">Conteúdo / Tópico da Ficha:</label>
             <select id="worksheet-topic-select" class="worksheet-select">
-              <option value="1" selected>Tópico 1: Força, Estado de Equilíbrio e Alavancas (Ativo - 200 Questões)</option>
-              <option value="2">Tópico 2: Elasticidade dos Corpos e Sistema Osteomedular (Ativo - 200 Questões)</option>
-              <option value="all">🎯 Simulação Geral (Tópicos 1 a 3 Ativos - 600 Questões)</option>
-              <option value="3">Tópico 3: Hidrodinâmica (Ativo - 200 Questões)</option>
-              <option value="4" disabled>🔒 Tópico 4: Hidrostática (Bloqueado)</option>
-              <option value="5" disabled>🔒 Tópico 5: Física Atómica e Nuclear (Bloqueado)</option>
-              <option value="starred">⭐ Apenas Perguntas Marcadas com Estrela</option>
+              <!-- Opções geradas em JS a partir de UNLOCKED_TOPIC_IDS -->
+              <option value="all" selected>🎯 Simulação Geral (tópicos ativos)</option>
             </select>
           </div>
           <div class="worksheet-form-group">
@@ -1674,7 +1665,7 @@
   <script src="js/data/topic3.js?v=3.9"></script>
   <script src="js/data/topic4.js?v=4.0"></script>
   <script src="js/data/topic5.js?v=4.0"></script>
-  <script src="js/questions-data.js?v=4.3"></script>
+  <script src="js/questions-data.js?v=4.4"></script>
   <script src="js/study-content.js?v=2.2"></script>
   <script src="js/study-figures.js?v=1.4"></script>
   <script src="js/bases-content.js?v=1.3"></script>
@@ -1685,11 +1676,11 @@
   <script src="js/lib/paho-mqtt.min.js"></script>
   <script src="js/lib/qrcode-generator.js"></script>
   <script src="js/arena-network.js?v=3.6"></script>
-  <script src="js/arena-engine.js?v=3.9"></script>
+  <script src="js/arena-engine.js?v=4.0"></script>
   <script src="js/arena-ui.js?v=4.4"></script>
-  <script src="js/teacher-manager.js?v=3.7"></script>
+  <script src="js/teacher-manager.js?v=3.8"></script>
   <script src="js/quiz-sync.js?v=1.2"></script>
   <script src="js/metrics.js?v=1.3"></script>
-  <script src="js/app.js?v=5.0"></script>
+  <script src="js/app.js?v=5.1"></script>
 </body>
 </html>
