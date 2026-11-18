@@ -241,6 +241,26 @@ class TeacherManager {
     }
 
     // Filtros
+    if (this.topicSelect && typeof TOPICS_DATA !== 'undefined' && typeof ALL_TOPIC_COLLECTIONS !== 'undefined') {
+      // Opções geradas a partir do banco e de UNLOCKED_TOPIC_IDS (tópicos abertos/bloqueados)
+      const unlocked = typeof UNLOCKED_TOPIC_IDS !== 'undefined' ? UNLOCKED_TOPIC_IDS : [1];
+      const sizeOf = (id) => (ALL_TOPIC_COLLECTIONS[id] || []).length;
+      const total = TOPICS_DATA.reduce((n, t) => n + sizeOf(t.id), 0);
+      const opts = [['all', `Todos os Tópicos (${total} Questões nos Tópicos 1 a ${TOPICS_DATA.length})`]];
+      TOPICS_DATA.forEach(t => {
+        opts.push([String(t.id), unlocked.includes(t.id)
+          ? `Tópico ${t.id}: ${t.shortTitle} (${sizeOf(t.id)} Questões)`
+          : `🔒 Tópico ${t.id}: ${t.shortTitle} (${sizeOf(t.id)} Questões, bloqueado aos alunos)`]);
+      });
+      this.topicSelect.innerHTML = '';
+      opts.forEach(([value, text]) => {
+        const o = document.createElement('option');
+        o.value = value;
+        o.textContent = text;
+        this.topicSelect.appendChild(o);
+      });
+      this.topicSelect.value = String(this.currentTopic || 'all');
+    }
     if (this.topicSelect) {
       this.topicSelect.addEventListener('change', () => {
         this.currentTopic = this.topicSelect.value;
