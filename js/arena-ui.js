@@ -1624,13 +1624,37 @@ class ArenaUI {
     } catch (e) {}
   }
 
+  // Quizzes fixos da aula (Quiz A, B, …), definidos em js/data/class-quizzes.js.
+  // Só de leitura: não são guardados no navegador nem enviados ao servidor.
+  getBuiltinQuizzes() {
+    if (this.builtinQuizzes) return this.builtinQuizzes;
+    const groups = new Map();
+    if (typeof CLASS_QUIZ_QUESTIONS !== 'undefined') {
+      CLASS_QUIZ_QUESTIONS.forEach(q => {
+        if (!groups.has(q.quiz)) groups.set(q.quiz, []);
+        groups.get(q.quiz).push(q.id);
+      });
+    }
+    this.builtinQuizzes = [...groups.keys()].sort().map(letter => ({
+      id: 'builtin_quiz_' + letter,
+      name: 'Quiz ' + letter,
+      builtin: true,
+      questionIds: groups.get(letter)
+    }));
+    return this.builtinQuizzes;
+  }
+
+  getAllQuizzes() {
+    return [...this.getBuiltinQuizzes(), ...this.loadSavedQuizzes()];
+  }
+
   getActiveSavedQuiz() {
-    return this.loadSavedQuizzes().find(q => q.id === this.activeSavedQuizId) || null;
+    return this.getAllQuizzes().find(q => q.id === this.activeSavedQuizId) || null;
   }
 
   // Carrega um quiz guardado para o rascunho usado pela sala
   applySavedQuiz(id) {
-    const quiz = this.loadSavedQuizzes().find(q => q.id === id);
+    const quiz = this.getAllQuizzes().find(q => q.id === id);
     if (!quiz) return;
     this.selectedCustomQuestionIds = new Set(quiz.questionIds);
     this.saveCustomQuestionIds();
@@ -1971,7 +1995,7 @@ class ArenaUI {
 
   updateActiveSavedQuiz() {
     const active = this.getActiveSavedQuiz();
-    if (!active || !this.isDraftQuizComplete()) return;
+    if (!active || active.builtin || !this.isDraftQuizComplete()) return;
     const list = this.loadSavedQuizzes().map(q =>
       q.id === active.id ? { ...q, questionIds: [...this.selectedCustomQuestionIds], updatedAt: new Date().toISOString(), dirty: true } : q
     );
@@ -2003,13 +2027,19 @@ class ArenaUI {
     if (!active && this.selectedCustomQuestionIds.size > 0) {
       html += `<option value="__draft__" disabled selected>✏️ Seleção manual atual (não guardada)</option>`;
     }
-    list.forEach(q => {
-      html += `<option value="${arenaEscapeHtml(q.id)}">${arenaEscapeHtml(q.name)} (${q.questionIds.length} perguntas)</option>`;
-    });
+    const option = q => `<option value="${arenaEscapeHtml(q.id)}">${arenaEscapeHtml(q.name)} (${q.questionIds.length} perguntas)</option>`;
+    const builtins = this.getBuiltinQuizzes();
+    if (builtins.length > 0) {
+      html += `<optgroup label="Quizzes da aula (fixos, sem cálculos)">${builtins.map(option).join('')}</optgroup>`;
+    }
+    if (list.length > 0) {
+      html += `<optgroup label="Os meus quizzes">${list.map(option).join('')}</optgroup>`;
+    }
     this.arenaSavedQuizSelect.innerHTML = html;
     this.arenaSavedQuizSelect.value = active ? active.id : (this.selectedCustomQuestionIds.size > 0 ? '__draft__' : '');
-    if (this.btnDeleteSavedQuiz) this.btnDeleteSavedQuiz.classList.toggle('hidden', !active);
-    if (this.btnEditSavedQuiz) this.btnEditSavedQuiz.classList.toggle('hidden', !active);
+    const editable = !!active && !active.builtin;
+    if (this.btnDeleteSavedQuiz) this.btnDeleteSavedQuiz.classList.toggle('hidden', !editable);
+    if (this.btnEditSavedQuiz) this.btnEditSavedQuiz.classList.toggle('hidden', !editable);
     if (this.btnDuplicateSavedQuiz) this.btnDuplicateSavedQuiz.classList.toggle('hidden', !active);
   }
 
@@ -2025,6 +2055,8 @@ class ArenaUI {
     } else if (typeof TOPIC_1_QUESTIONS !== 'undefined') {
       all = [...TOPIC_1_QUESTIONS];
     }
+    // Perguntas dos quizzes fixos da aula (não fazem parte do banco de estudo dos alunos)
+    if (typeof CLASS_QUIZ_QUESTIONS !== 'undefined') all.push(...CLASS_QUIZ_QUESTIONS);
     this.allQuestionsPool = all;
   }
 
@@ -2108,6 +2140,12 @@ class ArenaUI {
   updateHostConfigCustomBadge() {
     const count = this.selectedCustomQuestionIds.size;
     if (count === 0 && this.activeSavedQuizId) this.setActiveSavedQuizId('');
+    // Um quiz fixo alterado deixa de ser esse quiz: passa a seleção manual (não guardada)
+    const current = this.getActiveSavedQuiz();
+    if (current && current.builtin && (count !== current.questionIds.length ||
+        !current.questionIds.every(id => this.selectedCustomQuestionIds.has(id)))) {
+      this.setActiveSavedQuizId('');
+    }
     const active = this.getActiveSavedQuiz();
     // Com perguntas escolhidas, a quantidade é a do quiz (o sorteio não é usado)
     const countBox = document.getElementById('arena-config-count-container');
@@ -2116,7 +2154,7 @@ class ArenaUI {
       this.arenaCustomFooterBadge.textContent = `${count}/${ARENA_QUIZ_SIZE} ${count === 1 ? 'pergunta selecionada' : 'perguntas selecionadas'}`;
     }
     if (this.btnCustomQuizUpdate) {
-      this.btnCustomQuizUpdate.classList.toggle('hidden', !active);
+      this.btnCustomQuizUpdate.classList.toggle('hidden', !active || !!active.builtin);
       if (active) this.btnCustomQuizUpdate.textContent = `🔄 Atualizar "${active.name}"`;
     }
     this.renderSavedQuizSelect();

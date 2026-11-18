@@ -10,6 +10,10 @@ Question banks live in `js/data/topicN.js` (topics 1–5: 1 Força/Equilíbrio/A
 - Work in batches of 10–20 questions.
 - Run the validation script below after each batch.
 
+## Class quizzes (Arena)
+
+`js/data/class-quizzes.js` (`CLASS_QUIZ_QUESTIONS`) holds 5 fixed quizzes (A–E) × 20 conceptual, no-calculation questions (45 s each), 5 per topic 1–4. IDs 9001–9100; the extra `"quiz"` field groups them. They are separate from the student bank and appear in the Arena as read-only built-in quizzes (never stored or synced). Same object rules as below.
+
 ## Question object
 
 ```js
@@ -29,7 +33,7 @@ Question banks live in `js/data/topicN.js` (topics 1–5: 1 Força/Equilíbrio/A
 }
 ```
 
-- IDs: topic N uses the range N001–N999, consecutive, never reused. Topic 1 has 200 questions (1001–1200); topic 2 has 200 (2201–2404; 2234, 2235, 2273 and 2298 were removed because they relied on k = E·A/L₀, and their IDs stay unused). Topic 3 has 200 (3001–3208; 3096, 3097, 3098, 3100, 3110, 3144, 3145 and 3147 were removed because the lecture slides do not cover them, and their IDs stay unused). Topic 4 has 200 (4001–4200) and topic 5 has 200 (5001–5200); both stay locked for students until the teacher adds them to `UNLOCKED_TOPIC_IDS` in `js/questions-data.js`. Always confirm the last ID with `tail` before adding.
+- IDs: topic N uses the range N001–N999, consecutive, never reused. Topic 1 has 200 questions (1001–1200); topic 2 has 200 (2201–2404; 2234, 2235, 2273 and 2298 were removed because they relied on k = E·A/L₀, and their IDs stay unused). Topic 3 has 200 (3001–3208; 3096, 3097, 3098, 3100, 3110, 3144, 3145 and 3147 were removed because the lecture slides do not cover them, and their IDs stay unused). Topic 4 has 200 (4001–4200) and topic 5 has 200 (5001–5200). Students see only topics listed in `UNLOCKED_TOPIC_IDS` in `js/questions-data.js` (currently 1–4; topic 5 stays locked until the teacher adds it). Always confirm the last ID with `tail` before adding.
 - Exactly 4 options. Exactly 3 entries in `distractorAnalysis`, one per WRONG option, **in the same order as the wrong options appear** (skip the correct index).
 - Each distractor entry starts with "Está incorreta:" and says *why* that option is wrong. It must not just restate the option.
 - `correctIndex` must be balanced across a batch (roughly equal counts of 0, 1, 2, 3).
